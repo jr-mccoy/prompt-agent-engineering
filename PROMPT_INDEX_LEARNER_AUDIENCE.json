@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "generated": "2026-05-13",
+    "schema_version": "1.0",
+    "description": "Audience enrichment for PROMPT_INDEX.json, mapping prompt paths to learner audiences (college, adult-returning, career-changer). Read alongside PROMPT_INDEX.json; join on path. The human-browsable companion is domain-education-teaching/guides/shared/prompt_index_for_learners.md.",
+    "audiences": {
+      "college": "Traditional college students (undergrad and grad, 18-22 typical, full-time enrollment)",
+      "adult-returning": "Adults returning to formal education after 1+ years away, often working with family responsibilities",
+      "career-changer": "Adults pivoting careers via self-study, certificate, bootcamp, degree, or hybrid pathway"
+    },
+    "total_tagged_prompts": 98,
+    "source_guides": [
+      "domain-education-teaching/guides/college-students/",
+      "domain-education-teaching/guides/adult-returning/",
+      "domain-education-teaching/guides/career-changers/",
+      "domain-education-teaching/guides/shared/"
+    ]
+  },
+  "audience_tags": {
+    "domain-education-teaching/learner-writing/learnwrite_thesis_with_critique.md": ["college", "adult-returning", "career-changer"],
+    "domain-education-teaching/learner-writing/learnwrite_counterargument_generator.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-writing/learnwrite_outline_generator.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-writing/learnwrite_revision_socratic_coach.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-writing/learnwrite_peer_review_template.md": ["college"],
+    "domain-education-teaching/learner-writing/learnwrite_citation_helper.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-writing/learnwrite_source_credibility_evaluator.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-writing/learnwrite_academic_integrity_self_check.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-writing/learnwrite_annotated_bibliography_helper.md": ["college", "adult-returning"],
+
+    "domain-education-teaching/learner-reading/learnread_annotation_coach.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-reading/learnread_chapter_summary_tool.md": ["college"],
+    "domain-education-teaching/learner-reading/learnread_vocabulary_in_context_decoder.md": ["college"],
+    "domain-education-teaching/learner-reading/learnread_authors_craft_analyzer.md": ["college"],
+    "domain-education-teaching/learner-reading/learnread_book_report_scaffold.md": ["college"],
+
+    "domain-education-teaching/learner-research/learnresearch_question_refinement.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-research/learnresearch_keyword_search_strategy.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-research/learnresearch_source_synthesis_chart.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-research/learnresearch_interview_question_critique.md": ["college", "adult-returning"],
+
+    "domain-education-teaching/learner-math-science/learnmath_word_problem_decoder.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-math-science/learnmath_socratic_step_by_step_solver.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-math-science/learnmath_error_analyzer_own_work.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-math-science/learnsci_lab_report_scaffold.md": ["college"],
+    "domain-education-teaching/learner-math-science/learnsci_experimental_design_helper.md": ["college"],
+    "domain-education-teaching/learner-math-science/learnsci_data_interpreter.md": ["college", "adult-returning", "career-changer"],
+    "domain-education-teaching/learner-math-science/learnsci_concept_map_builder.md": ["college", "adult-returning", "career-changer"],
+
+    "domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-study-skills/learnstudy_cornell_notes_converter.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-study-skills/learnstudy_feynman_teach_back_coach.md": ["college", "adult-returning", "career-changer"],
+    "domain-education-teaching/learner-study-skills/learnstudy_mistake_log_reviewer.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-study-skills/learnstudy_finals_week_plan.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-study-skills/learnstudy_test_day_strategy.md": ["college", "adult-returning"],
+
+    "domain-education-teaching/learner-time-discussion/learndisc_office_hours_question_prep.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-time-discussion/learndisc_class_discussion_prep.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-time-discussion/learntime_assignment_tracker_planner.md": ["college", "adult-returning"],
+    "domain-education-teaching/learner-time-discussion/learntime_big_project_decomposer.md": ["college", "adult-returning", "career-changer"],
+
+    "domain-education-teaching/learner-language/learnlang_daily_conversation_drill.md": ["college", "adult-returning", "career-changer"],
+    "domain-education-teaching/learner-language/learnlang_topical_vocabulary_builder.md": ["college", "adult-returning", "career-changer"],
+    "domain-education-teaching/learner-language/learnlang_l2_grammar_explainer.md": ["college", "adult-returning", "career-changer"],
+    "domain-education-teaching/learner-language/learnlang_idiom_decoder.md": ["college", "adult-returning", "career-changer"],
+    "domain-education-teaching/learner-language/learnlang_pronunciation_coach_text.md": ["college", "adult-returning", "career-changer"],
+
+    "domain-education-teaching/adult-learner/adult_cold_start_return_to_school.md": ["adult-returning"],
+    "domain-education-teaching/adult-learner/adult_working_learner_time_architecture.md": ["adult-returning", "career-changer"],
+    "domain-education-teaching/adult-learner/adult_writing_rust_recovery.md": ["adult-returning"],
+    "domain-education-teaching/adult-learner/adult_imposter_age_cohort_calibration.md": ["adult-returning"],
+    "domain-education-teaching/adult-learner/adult_prior_learning_articulation.md": ["adult-returning", "career-changer"],
+    "domain-education-teaching/adult-learner/adult_skill_pivot_self_study_plan.md": ["career-changer"],
+    "domain-education-teaching/adult-learner/adult_credential_pathway_decision.md": ["career-changer"],
+    "domain-education-teaching/adult-learner/adult_portfolio_while_learning.md": ["career-changer"],
+    "domain-education-teaching/adult-learner/adult_andragogy_study_workflow.md": ["adult-returning", "career-changer"],
+
+    "domain-productivity/deep-work/deepwork_focus_parameters_estimator.md": ["college", "adult-returning", "career-changer"],
+    "domain-productivity/deep-work/deepwork_calendar_audit.md": ["college", "adult-returning", "career-changer"],
+    "domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md": ["college", "adult-returning", "career-changer"],
+    "domain-productivity/deep-work/deepwork_match_tasks_to_calendar.md": ["college", "adult-returning", "career-changer"],
+    "domain-productivity/deep-work/deepwork_block_end_context_capture.md": ["college", "adult-returning", "career-changer"],
+    "domain-productivity/deep-work/deepwork_future_self_handoff.md": ["adult-returning", "career-changer"],
+    "domain-productivity/deep-work/deepwork_message_triage_system.md": ["adult-returning", "career-changer"],
+    "domain-productivity/deep-work/deepwork_reload_ritual_design.md": ["adult-returning", "career-changer"],
+    "domain-productivity/deep-work/deepwork_decompose_complex_task.md": ["college", "adult-returning", "career-changer"],
+
+    "domain-productivity/bottlenecks/bottleneck_locator.md": ["college", "adult-returning", "career-changer"],
+    "domain-productivity/bottlenecks/bottleneck_procrastination_systems_diagnostic.md": ["college", "adult-returning", "career-changer"],
+    "domain-productivity/bottlenecks/bottleneck_perfectionism_ship_threshold.md": ["college", "adult-returning", "career-changer"],
+    "domain-productivity/bottlenecks/bottleneck_capture_triage_system_design.md": ["adult-returning", "career-changer"],
+    "domain-productivity/bottlenecks/bottleneck_distribution_constraint_finder.md": ["career-changer"],
+    "domain-productivity/bottlenecks/bottleneck_pkm_second_brain_architecture.md": ["adult-returning", "career-changer"],
+    "domain-productivity/bottlenecks/bottleneck_daily_execution_habits.md": ["adult-returning", "career-changer"],
+    "domain-productivity/bottlenecks/bottleneck_clarity_ambition_surfacer.md": ["career-changer"],
+
+    "domain-personal-development/prompts/identity/identity_values_clarification.md": ["adult-returning", "career-changer"],
+    "domain-personal-development/prompts/identity/identity_confidence_calibration.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/identity/identity_comparison_envy_diagnostic.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/identity/identity_purpose_reignition.md": ["adult-returning", "career-changer"],
+    "domain-personal-development/prompts/identity/identity_life_audit_reckoning.md": ["adult-returning", "career-changer"],
+    "domain-personal-development/prompts/identity/identity_taste_development.md": ["career-changer"],
+    "domain-personal-development/prompts/identity/identity_self_talk_audit.md": ["adult-returning", "career-changer"],
+
+    "domain-personal-development/prompts/agency/agency_project_ownership_converter.md": ["adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_next_action_spec.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_stuck_diagnosis.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_rapid_start_mode.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_planning_masquerade_detector.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_ship_sprint_design.md": ["career-changer"],
+    "domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md": ["career-changer"],
+    "domain-personal-development/prompts/agency/agency_feedback_extraction.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_end_of_session_review.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_skill_gap_reframe.md": ["career-changer"],
+    "domain-personal-development/prompts/agency/agency_foundation_session.md": ["adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_habit_loop_repair.md": ["adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_burnout_recovery.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_decision_post_mortem.md": ["college", "adult-returning", "career-changer"],
+    "domain-personal-development/prompts/agency/agency_weekly_review.md": ["college", "adult-returning", "career-changer"],
+
+    "domain-productivity/reviews/reviews_weekly_systems_review.md": ["college", "adult-returning", "career-changer"],
+    "domain-productivity/reviews/reviews_time_audit_evidence_based.md": ["adult-returning", "career-changer"],
+    "domain-productivity/reviews/reviews_monthly_quarterly_cadence.md": ["adult-returning", "career-changer"],
+
+    "domain-personal-development/career-transformation/career_role_structural_vulnerability.md": ["career-changer"],
+    "domain-personal-development/career-transformation/career_residual_skills_inventory.md": ["adult-returning", "career-changer"],
+    "domain-personal-development/career-transformation/career_coordination_tax_audit.md": ["career-changer"],
+    "domain-personal-development/career-transformation/career_90_day_repositioning_plan.md": ["career-changer"],
+
+    "domain-decision-making/decisioning_blind_spot_identifier.md": ["adult-returning", "career-changer"],
+    "domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md": ["adult-returning", "career-changer"],
+    "domain-decision-making/decisioning_interrogative_mode.md": ["adult-returning", "career-changer"]
+  },
+  "audience_counts": {
+    "college": 61,
+    "adult-returning": 79,
+    "career-changer": 65
+  },
+  "usage_examples": {
+    "python_join": "import json\nwith open('PROMPT_INDEX.json') as f:\n    index = json.load(f)\nwith open('PROMPT_INDEX_LEARNER_AUDIENCE.json') as f:\n    audience = json.load(f)['audience_tags']\nfor p in index['prompts']:\n    if p['path'] in audience:\n        p['learner_audience'] = audience[p['path']]\n# Filter to college-only prompts\ncollege_prompts = [p for p in index['prompts'] if 'college' in p.get('learner_audience', [])]",
+    "jq_filter": "jq -r '.audience_tags | to_entries[] | select(.value | contains([\"career-changer\"])) | .key' PROMPT_INDEX_LEARNER_AUDIENCE.json"
+  }
+}

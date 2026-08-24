@@ -1,0 +1,51 @@
+# Citation Styles
+# Render configs for Stage 6 (assembly). Stage 0 picks one; the manuscript's
+# inline citations and reference list are produced in that style.
+#
+# The internal claim<->source binding always uses a stable token (e.g. [S3])
+# regardless of render style; these configs only control the FINAL rendering.
+# `UNVERIFIED` and `REFRAMED` markers are never rendered as normal citations —
+# they surface in the risk report and inline as author-facing flags.
+
+version: 1
+
+internal_token:
+  format: "[S{n}]"          # e.g. [S1], [S2] — the audit-trail key in the matrix
+  orphan_rule: "Every KEEP claim in the manuscript must carry at least one [S{n}] token that resolves to a matrix row with a real source. Enforced by scripts/check_citations.py."
+
+styles:
+
+  inline_numbered:
+    label: "Inline numbered (default) — [1], [2] with a References list"
+    inline: "[{n}]"
+    reference_list_heading: "References"
+    reference_format: "{n}. {authors}. {title}. {publisher_or_site}, {year}. {url_or_doi}"
+    best_for: "web articles, trade nonfiction, blog-to-book"
+
+  apa:
+    label: "APA 7th"
+    inline: "({author_last}, {year})"
+    reference_list_heading: "References"
+    reference_format: "{authors} ({year}). {title}. {source}. {doi_or_url}"
+    best_for: "social science, psychology, education, health"
+
+  mla:
+    label: "MLA 9th"
+    inline: "({author_last} {page})"
+    reference_list_heading: "Works Cited"
+    reference_format: "{authors}. \"{title}.\" {container}, {year}, {url_or_doi}."
+    best_for: "humanities, literature, general essays"
+
+  chicago_notes:
+    label: "Chicago (notes-bibliography)"
+    inline: "footnote {n}"
+    reference_list_heading: "Bibliography"
+    reference_format: "{authors}. {title}. {city}: {publisher}, {year}. {url_or_doi}."
+    best_for: "history, long-form nonfiction, books"
+
+defaults:
+  style: inline_numbered
+  # If the author names a target publication, prefer that outlet's house style
+  # and record the override in the matrix header.
+  unresolved_marker: "[UNVERIFIED]"   # rendered inline next to any claim kept without a resolvable source (should be rare; Gate A prefers SOFTEN/REFRAME/CUT)
+  reframed_marker: "[author's professional judgment]"  # label for REFRAMED experiential claims

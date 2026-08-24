@@ -1,0 +1,113 @@
+version: '3.8'
+
+services:
+  # Application
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4318
+      - OTEL_SERVICE_NAME=my-service
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=development
+    depends_on:
+      - otel-collector
+
+  # OpenTelemetry Collector
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:latest
+    command: ['--config=/etc/otel-collector-config.yaml']
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otel-collector-config.yaml
+    ports:
+      - '4317:4317'   # OTLP gRPC
+      - '4318:4318'   # OTLP HTTP
+      - '8888:8888'   # Prometheus metrics (collector)
+      - '8889:8889'   # Prometheus exporter
+    depends_on:
+      - jaeger
+      - prometheus
+
+  # Jaeger (Traces)
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - '16686:16686' # Jaeger UI
+      - '14268:14268' # Accept traces directly
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+
+  # Prometheus (Metrics)
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - '9090:9090'
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.enable-remote-write-receiver'
+
+  # Grafana (Visualization)
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - '3001:3000'
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    depends_on:
+      - jaeger
+      - prometheus
+
+  # Loki (Logs) - Optional
+  loki:
+    image: grafana/loki:latest
+    ports:
+      - '3100:3100'
+    command: -config.file=/etc/loki/local-config.yaml
+
+# ---
+# otel-collector-config.yaml contents:
+# ---
+# receivers:
+#   otlp:
+#     protocols:
+#       grpc:
+#         endpoint: 0.0.0.0:4317
+#       http:
+#         endpoint: 0.0.0.0:4318
+#
+# processors:
+#   batch:
+#     timeout: 1s
+#     send_batch_size: 1024
+#
+# exporters:
+#   jaeger:
+#     endpoint: jaeger:14250
+#     tls:
+#       insecure: true
+#
+#   prometheus:
+#     endpoint: "0.0.0.0:8889"
+#     namespace: otel
+#
+#   logging:
+#     loglevel: debug
+#
+# service:
+#   pipelines:
+#     traces:
+#       receivers: [otlp]
+#       processors: [batch]
+#       exporters: [jaeger, logging]
+#     metrics:
+#       receivers: [otlp]
+#       processors: [batch]
+#       exporters: [prometheus, logging]

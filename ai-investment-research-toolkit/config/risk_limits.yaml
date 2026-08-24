@@ -1,0 +1,26 @@
+# risk_limits.yaml — Gate B caps (§5). NO order (even paper) may pass Stage 6
+# without position-sizing output, a pre-mortem, AND a passing check against these
+# limits. Defaults are deliberately conservative; tune to your mandate. Tighter
+# caps apply to higher-risk classes (see per_asset_class overrides).
+#
+# *For informational and research purposes only. Not financial advice.*
+
+# --- Portfolio-wide caps (fractions of simulated capital) ---
+max_position_pct: 0.02          # ≤ 2% of capital in any single position
+max_asset_class_pct: 0.20       # ≤ 20% of capital in any one asset class
+max_deployed_pct: 0.60          # ≤ 60% of capital deployed at once
+
+# --- Per-asset-class tightening (override the portfolio caps; lower wins) ---
+# Options and crypto carry non-linear / custody risk → smaller per-position caps.
+per_asset_class:
+  equity:
+    max_position_pct: 0.02
+  crypto:
+    max_position_pct: 0.01
+  options:
+    max_position_pct: 0.005     # non-linear payoff + time decay → tightest
+
+# --- Hard stops checked at order time ---
+require_stop_loss: true         # every order must declare a stop / exit trigger
+reject_if_unsized: true         # no order without position-sizing output
+reject_if_no_premortem: true    # no order without a pre-mortem

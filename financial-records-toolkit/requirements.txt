@@ -1,0 +1,26 @@
+# Financial Records Toolkit dependencies
+#
+# Core data layer is the Python standard library — the pipeline runs with almost
+# nothing installed. Install extras as your inputs/outputs require.
+
+# Required for reading PDF statements (skip if you only feed .txt/.csv exports):
+pdfplumber>=0.10.0
+
+# Required for the formatted .xlsx workbook (CSV fallback works without it):
+openpyxl>=3.1.0
+
+# Required for categorize/flag rules files:
+pyyaml>=6.0
+
+# Optional: better fuzzy merchant matching (falls back to stdlib difflib):
+rapidfuzz>=3.0.0
+
+# Optional: OCR for scanned/image PDFs (also needs the Tesseract system package).
+#   Install separately if needed:  pip install ocrmypdf
+# ocrmypdf>=15.0.0
+
+# Optional: extra table-extraction engine for ruled/bordered tables.
+# camelot-py[cv]>=0.11.0
+
+# NOTE: PyMuPDF (fitz) is faster than pdfplumber but is AGPL-3.0 licensed; this
+# toolkit deliberately uses pdfplumber (MIT) to stay permissively licensed.

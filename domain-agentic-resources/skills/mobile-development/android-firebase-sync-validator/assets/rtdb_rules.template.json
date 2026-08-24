@@ -1,0 +1,195 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "users": {
+      "$userId": {
+        ".read": "auth != null",
+        ".write": "auth.uid == $userId",
+        ".validate": "newData.hasChildren(['displayName', 'email'])",
+
+        "displayName": {
+          ".validate": "newData.isString() && newData.val().length >= 2 && newData.val().length <= 50"
+        },
+        "email": {
+          ".validate": "newData.isString() && newData.val().matches(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$/i)"
+        },
+        "photoURL": {
+          ".validate": "newData.isString()"
+        },
+        "bio": {
+          ".validate": "newData.isString() && newData.val().length <= 500"
+        },
+
+        "private": {
+          ".read": "auth.uid == $userId",
+          ".write": "auth.uid == $userId"
+        },
+
+        "settings": {
+          ".read": "auth.uid == $userId",
+          ".write": "auth.uid == $userId"
+        },
+
+        "notifications": {
+          "$notificationId": {
+            ".read": "auth.uid == $userId",
+            ".write": "false",
+            "read": {
+              ".write": "auth.uid == $userId",
+              ".validate": "newData.isBoolean()"
+            }
+          }
+        }
+      }
+    },
+
+    "posts": {
+      "$postId": {
+        ".read": "auth != null",
+        ".write": "auth.uid == data.child('authorId').val() || !data.exists()",
+        ".validate": "newData.hasChildren(['title', 'content', 'authorId', 'timestamp'])",
+
+        "title": {
+          ".validate": "newData.isString() && newData.val().length >= 3 && newData.val().length <= 200"
+        },
+        "content": {
+          ".validate": "newData.isString() && newData.val().length <= 10000"
+        },
+        "authorId": {
+          ".validate": "newData.val() == auth.uid && (!data.exists() || data.val() == newData.val())"
+        },
+        "timestamp": {
+          ".validate": "newData.val() == now && (!data.exists() || data.val() == newData.val())"
+        },
+        "likesCount": {
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+
+        "comments": {
+          "$commentId": {
+            ".read": "auth != null",
+            ".write": "auth.uid == newData.child('authorId').val() || auth.uid == data.child('authorId').val()",
+            ".validate": "newData.hasChildren(['text', 'authorId', 'timestamp'])",
+
+            "text": {
+              ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 2000"
+            },
+            "authorId": {
+              ".validate": "newData.val() == auth.uid && (!data.exists() || data.val() == newData.val())"
+            },
+            "timestamp": {
+              ".validate": "newData.val() == now && (!data.exists() || data.val() == newData.val())"
+            }
+          }
+        }
+      }
+    },
+
+    "chats": {
+      "$chatId": {
+        ".read": "root.child('chats').child($chatId).child('participants').child(auth.uid).exists()",
+
+        "participants": {
+          ".read": "auth != null",
+          "$userId": {
+            ".write": "auth.uid == $userId || root.child('chats').child($chatId).child('participants').child(auth.uid).exists()",
+            ".validate": "newData.isBoolean()"
+          }
+        },
+
+        "messages": {
+          ".indexOn": ["timestamp"],
+          "$messageId": {
+            ".write": "root.child('chats').child($chatId).child('participants').child(auth.uid).exists()",
+            ".validate": "newData.hasChildren(['senderId', 'text', 'timestamp'])",
+
+            "senderId": {
+              ".validate": "newData.val() == auth.uid && (!data.exists() || data.val() == newData.val())"
+            },
+            "text": {
+              ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 5000"
+            },
+            "timestamp": {
+              ".validate": "newData.val() == now && (!data.exists() || data.val() == newData.val())"
+            },
+            "imageUrl": {
+              ".validate": "newData.isString()"
+            }
+          }
+        },
+
+        "lastMessage": {
+          ".write": "false"
+        },
+        "unreadCount": {
+          "$userId": {
+            ".write": "false"
+          }
+        }
+      }
+    },
+
+    "groups": {
+      "$groupId": {
+        ".read": "root.child('groups').child($groupId).child('members').child(auth.uid).exists()",
+        ".write": "root.child('groups').child($groupId).child('admins').child(auth.uid).exists() || root.child('groups').child($groupId).child('ownerId').val() == auth.uid",
+        ".validate": "newData.hasChildren(['name', 'ownerId', 'createdAt'])",
+
+        "name": {
+          ".validate": "newData.isString() && newData.val().length >= 2 && newData.val().length <= 100"
+        },
+        "ownerId": {
+          ".validate": "newData.val() == auth.uid && (!data.exists() || data.val() == newData.val())"
+        },
+        "createdAt": {
+          ".validate": "newData.val() == now && (!data.exists() || data.val() == newData.val())"
+        },
+
+        "members": {
+          "$userId": {
+            ".validate": "newData.isBoolean()"
+          }
+        },
+        "admins": {
+          "$userId": {
+            ".validate": "newData.isBoolean()"
+          }
+        },
+
+        "messages": {
+          ".indexOn": ["timestamp"],
+          "$messageId": {
+            ".write": "root.child('groups').child($groupId).child('members').child(auth.uid).exists()",
+            ".validate": "newData.hasChildren(['senderId', 'text', 'timestamp'])",
+
+            "senderId": {
+              ".validate": "newData.val() == auth.uid && (!data.exists() || data.val() == newData.val())"
+            },
+            "text": {
+              ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 5000"
+            },
+            "timestamp": {
+              ".validate": "newData.val() == now && (!data.exists() || data.val() == newData.val())"
+            }
+          }
+        }
+      }
+    },
+
+    "presence": {
+      "$userId": {
+        ".read": "auth != null",
+        ".write": "auth.uid == $userId",
+
+        "status": {
+          ".validate": "newData.isString() && (newData.val() == 'online' || newData.val() == 'offline' || newData.val() == 'away')"
+        },
+        "lastSeen": {
+          ".validate": "newData.val() == now"
+        }
+      }
+    }
+  }
+}

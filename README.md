@@ -1,0 +1,529 @@
+# Prompt & Agent Engineering
+
+**Frameworks, techniques, prompts, agents, skills, and workflows for engineering reliable, reusable AI and agentic systems.**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Prompts](https://img.shields.io/badge/prompts-5%2C600%2B-orange.svg)](PROMPT_INDEX.md)
+[![Techniques](https://img.shields.io/badge/techniques-327-purple.svg)](techniques/MASTER_TECHNIQUE_INDEX.md)
+[![Agentic Resources](https://img.shields.io/badge/agentic_resources-640%2B-blue.svg)](domain-agentic-resources/README.md)
+
+**Prompt & Agent Engineering** is a structured engineering repository for designing, evaluating, and assembling AI behavior.
+
+It is both a **large reusable resource library** and an **authoring system for creating new resources**. The repository combines prompt-engineering methodology, a formal technique catalog, thousands of domain prompts, reusable agents and skills, composition patterns, quality rubrics, validation tooling, and an end-to-end factory for designing agentic AI systems.
+
+> **This is not just a prompt collection.**
+>
+> The library is one layer of a larger system: techniques inform authoring methods; authoring methods produce prompts, skills, agents, commands, and systems; those resources can then be composed into reusable workflows and full agentic architectures.
+
+---
+
+## Start Here
+
+| I want to… | Start with |
+|---|---|
+| **Find a ready-to-use prompt** | [`PROMPT_INDEX.md`](PROMPT_INDEX.md) or the [`domain-*/`](#domain-library) directories |
+| **Build a high-quality prompt** | [`authoring/`](authoring/) and [`AI_AGENT_QUICK_START.md`](AI_AGENT_QUICK_START.md) |
+| **Learn or select prompting techniques** | [`techniques/MASTER_TECHNIQUE_INDEX.md`](techniques/MASTER_TECHNIQUE_INDEX.md) and [`techniques/USE_CASE_LOOKUP.md`](techniques/USE_CASE_LOOKUP.md) |
+| **Create a reusable skill** | [`authoring/skill-patterns/`](authoring/skill-patterns/) |
+| **Create a specialized agent** | [`authoring/agent-patterns/`](authoring/agent-patterns/) |
+| **Create an orchestration command/workflow** | [`authoring/command-patterns/`](authoring/command-patterns/) |
+| **Design an agentic AI system** | [`authoring/system-patterns/`](authoring/system-patterns/) |
+| **Generate a full agentic system from a use case** | [`agentic-system-factory/`](agentic-system-factory/) |
+| **Browse reusable skills, agents, commands, and personas** | [`domain-agentic-resources/`](domain-agentic-resources/) |
+| **Understand the repository layout** | [`REPO_MAP.md`](REPO_MAP.md) |
+| **Route an AI assistant through the repository** | [`START_HERE_FOR_AI.md`](START_HERE_FOR_AI.md) |
+| **Contribute** | [`EXTERNAL_CONTRIBUTOR_GUIDE.md`](EXTERNAL_CONTRIBUTOR_GUIDE.md) |
+
+---
+
+## What This Repository Provides
+
+### 1. Prompt Authoring System
+
+The repository contains a structured system for **creating prompts**, not merely storing them.
+
+The authoring layer provides:
+
+- reusable prompt templates;
+- technique-selection guidance;
+- quality standards and checklists;
+- metadata conventions;
+- naming and organization rules;
+- coding and non-coding authoring paths;
+- validation scripts; and
+- examples of production-quality resources.
+
+Start with:
+
+- [`authoring/README.md`](authoring/README.md)
+- [`authoring/NEW_PROMPT_TEMPLATE.md`](authoring/NEW_PROMPT_TEMPLATE.md)
+- [`PROMPT_QUALITY_STANDARDS.md`](PROMPT_QUALITY_STANDARDS.md)
+- [`AI_AGENT_QUICK_START.md`](AI_AGENT_QUICK_START.md)
+- [`NON_CODING_QUICK_START.md`](NON_CODING_QUICK_START.md)
+
+### 2. Prompt-Engineering Technique Catalog
+
+The [`techniques/`](techniques/) system is a formal reference library of **327 active prompt-engineering techniques**.
+
+Rather than treating techniques as isolated tricks, the catalog organizes them into functional categories and connects them to concrete use cases.
+
+| Resource | Purpose |
+|---|---|
+| [`MASTER_TECHNIQUE_INDEX.md`](techniques/MASTER_TECHNIQUE_INDEX.md) | Full technique catalog |
+| [`USE_CASE_LOOKUP.md`](techniques/USE_CASE_LOOKUP.md) | Find techniques by task or problem |
+| [`authoring/TECHNIQUE_PICKER_FAST.md`](authoring/TECHNIQUE_PICKER_FAST.md) | Fast technique selection during authoring |
+| [`authoring/TECHNIQUE_CONTRIBUTION_GUIDE.md`](authoring/TECHNIQUE_CONTRIBUTION_GUIDE.md) | Add or propose techniques |
+
+The catalog covers structure, reasoning, output control, quality assurance, context management, decomposition, perspective control, meta-prompting, agentic patterns, interaction design, verification, delegation, and specialized domain techniques.
+
+### 3. Prompt Library
+
+The repository contains **5,600+ indexed prompts** spanning **40+ domains**, from software engineering and AI/ML to education, research, healthcare, business, writing, decision-making, finance, law, and specialized workflows.
+
+Prompts are discoverable through:
+
+- [`PROMPT_INDEX.md`](PROMPT_INDEX.md) — human-readable catalog;
+- [`PROMPT_INDEX.json`](PROMPT_INDEX.json) — machine-readable catalog;
+- [`PROMPT_INDEX_GUIDE.md`](PROMPT_INDEX_GUIDE.md) — integration and usage guide; and
+- the domain directories themselves.
+
+Where structured metadata is present, entries can expose fields such as domain, category, keywords, description, difficulty, technique references, related prompts, and repository path.
+
+Regenerate the index with:
+
+```bash
+python3 scripts/generate_prompt_index.py
+```
+
+### 4. Agentic Resource Library
+
+[`domain-agentic-resources/`](domain-agentic-resources/) contains **hundreds of reusable resources** for coding agents and agentic workflows:
+
+- **skills** — packaged capabilities with instructions and optional scripts, references, and assets;
+- **agents** — specialized task-focused roles;
+- **commands** — task workflows and multi-agent orchestration;
+- **personas** — reusable identities for pipeline-oriented workflows.
+
+These resources are not simply copy/paste prompts. Many use structured metadata, bundled files, scripts, tool integrations, or composition patterns.
+
+See [`domain-agentic-resources/README.md`](domain-agentic-resources/README.md) for the library structure.
+
+### 5. Agent, Skill, Command, and System Authoring
+
+The [`authoring/`](authoring/) directory contains separate but interoperable authoring systems for multiple resource types.
+
+| Resource type | Authoring system |
+|---|---|
+| **Prompt** | [`authoring/NEW_PROMPT_TEMPLATE.md`](authoring/NEW_PROMPT_TEMPLATE.md) |
+| **Skill** | [`authoring/skill-patterns/`](authoring/skill-patterns/) |
+| **Agent** | [`authoring/agent-patterns/`](authoring/agent-patterns/) |
+| **Command / workflow** | [`authoring/command-patterns/`](authoring/command-patterns/) |
+| **Agentic system** | [`authoring/system-patterns/`](authoring/system-patterns/) |
+
+The systems include pattern catalogs, use-case lookup guides, quick-start workflows, quality rubrics, templates, worked examples, composition guidance, and validation requirements.
+
+For understanding how skills, agents, and commands compose, start with [`authoring/INTEGRATION_PATTERNS.md`](authoring/INTEGRATION_PATTERNS.md).
+
+---
+
+## Agentic System Factory
+
+[`agentic-system-factory/`](agentic-system-factory/) is the repository's guided system for turning a use case into a designed agentic architecture.
+
+> **Give it a use case; the factory guides the design process, enforces gates, and produces a reusable system bundle.**
+
+It can be used in three modes:
+
+- **Guided** — an orchestrator walks through the authoring process;
+- **Manual** — follow the pipeline and stage prompts directly;
+- **Surgical** — enter at a specific design stage when only one part of the system is needed.
+
+The factory begins by asking whether an agent is warranted at all. Its complexity ladder favors the simplest architecture that can solve the problem:
+
+```text
+function → workflow → agent → multi-agent system
+```
+
+A completed run can produce a **framework-agnostic design bundle** containing system design documentation, per-agent specifications, tool/ACI specifications, policy and gate definitions, safety controls, capability and safety evaluations, observability plans, disclosure manifests, and operational runbooks.
+
+Optional Stage-7 transforms can generate stack-specific scaffolding for:
+
+- Claude Agent SDK;
+- LangGraph;
+- OpenAI Agents SDK;
+- Google ADK;
+- Microsoft Agent Framework; and
+- LlamaIndex.
+
+The factory uses runnable validation gates rather than relying only on prose instructions.
+
+Start with [`agentic-system-factory/README.md`](agentic-system-factory/README.md).
+
+---
+
+## How the Pieces Fit Together
+
+```text
+Prompting Technique Catalog
+          │
+          ▼
+    Authoring Systems
+          │
+          ├── prompts
+          ├── skills
+          ├── agents
+          ├── commands
+          └── agentic systems
+          │
+          ▼
+  Reusable Resource Libraries
+          │
+          ├───────────────┐
+          ▼               ▼
+  Workflow Composition   Agentic System Factory
+          │               │
+          └───────┬───────┘
+                  ▼
+       Reusable AI Workflows
+       and Agentic Systems
+```
+
+The repository can be used progressively:
+
+```text
+learn a technique
+      ↓
+write a prompt
+      ↓
+package a capability as a skill
+      ↓
+specialize behavior as an agent
+      ↓
+orchestrate resources into a workflow
+      ↓
+design and validate a complete agentic system
+```
+
+You can enter at any level. You do not need to use the entire stack.
+
+---
+
+## At a Glance
+
+| Capability | Scale |
+|---|---:|
+| Indexed prompts | **5,600+** |
+| Prompt-engineering techniques | **327 active techniques** |
+| Domain coverage | **40+ domains** |
+| Agentic resources | **640+ skills, agents, commands, and personas** |
+| Prompt index | Human-readable **and** machine-readable |
+| Authoring systems | Prompts, skills, agents, commands, agentic systems |
+| Agentic-system output stacks | **6** |
+| Validation | Metadata, naming, catalog, link, inventory, and system-gate tooling |
+
+> Repository counts evolve as the library grows. For current machine-generated prompt counts, use [`PROMPT_INDEX.json`](PROMPT_INDEX.json). Technique definitions are tracked by [`techniques/MASTER_TECHNIQUE_INDEX.md`](techniques/MASTER_TECHNIQUE_INDEX.md), and agentic inventory is maintained inside [`domain-agentic-resources/`](domain-agentic-resources/).
+
+---
+
+## Quick Paths by Use Case
+
+```text
+"I need a prompt"
+    → PROMPT_INDEX.md
+    → domain-*/
+
+"I want to engineer a better prompt"
+    → authoring/
+    → techniques/
+
+"I need a reusable capability"
+    → authoring/skill-patterns/
+    → domain-agentic-resources/skills/
+
+"I need a specialized AI role"
+    → authoring/agent-patterns/
+    → domain-agentic-resources/agents/
+
+"I need a multi-step or multi-agent workflow"
+    → authoring/command-patterns/
+    → domain-agentic-resources/commands/
+
+"I need to design a production-oriented agentic system"
+    → authoring/system-patterns/
+
+"I want the repository to guide me through the whole system design"
+    → agentic-system-factory/
+
+"I am an AI assistant trying to navigate this repository"
+    → START_HERE_FOR_AI.md
+```
+
+---
+
+## Domain Library
+
+The domain library is intentionally broad. Most reusable prompts live in `domain-*` directories, while several larger pipelines and factories live at the repository root.
+
+<details>
+<summary><strong>Software, engineering, AI, and agentic systems</strong></summary>
+
+| Directory | Focus |
+|---|---|
+| [`domain-software-engineering/`](domain-software-engineering/) | Code analysis, testing, DevOps, cloud, APIs, mobile, security, bug bounty |
+| [`domain-engineering-workflows/`](domain-engineering-workflows/) | Sprint planning, debugging, postmortems, AI-native engineering workflows |
+| [`domain-frontend-development/`](domain-frontend-development/) | Frontend frameworks, accessibility, performance, testing |
+| [`domain-game-development/`](domain-game-development/) | Game design, engines, multiplayer, graphics, economies |
+| [`domain-AI-ML/`](domain-AI-ML/) | AI/ML lifecycle, GenAI/LLM engineering, MLOps, evaluation, agentic systems, governance |
+| [`domain-agentic-resources/`](domain-agentic-resources/) | Skills, agents, commands, personas |
+| [`domain-prompt-engineering/`](domain-prompt-engineering/) | Prompt improvement, model behavior, evaluation, meta-prompting |
+| [`domain-reasoning-craft/`](domain-reasoning-craft/) | Reasoning, forecasting, systems thinking, epistemics |
+| [`agentic-system-factory/`](agentic-system-factory/) | Guided end-to-end authoring of agentic systems |
+
+</details>
+
+<details>
+<summary><strong>Business, productivity, decisions, and risk</strong></summary>
+
+| Directory | Focus |
+|---|---|
+| [`domain-productivity/`](domain-productivity/) | Automation, deep work, bottlenecks, reviews, prototyping |
+| [`domain-business-strategy/`](domain-business-strategy/) | Analysis, startups, research, chief-of-staff workflows, AI strategy |
+| [`domain-personal-development/`](domain-personal-development/) | Goals, agency, identity, career development |
+| [`domain-professional-writing/`](domain-professional-writing/) | Field-specific professional and business writing |
+| [`domain-professional-communication/`](domain-professional-communication/) | Product and stakeholder communication |
+| [`domain-hr-management/`](domain-hr-management/) | Reviews, assessment, peer/360 feedback, calibration |
+| [`domain-decision-making/`](domain-decision-making/) | Decision frameworks, scenarios, tradeoffs, documentation |
+| [`domain-deep-analysis/`](domain-deep-analysis/) | Multi-phase and multi-perspective analysis systems |
+| [`domain-ideation/`](domain-ideation/) | Divergent and convergent ideation |
+| [`domain-risk/`](domain-risk/) | Risk registers, FMEA, heat maps, tail risk, dependency analysis |
+| [`domain-negotiation/`](domain-negotiation/) | Negotiation preparation, execution, difficult conversations |
+| [`domain-policy/`](domain-policy/) | Policy framing, options, stakeholder analysis |
+| [`domain-psy-ops/`](domain-psy-ops/) | Defensive cognitive-security and manipulation analysis |
+| [`domain-written-advocacy/`](domain-written-advocacy/) | Structured self-advocacy and complaint/appeal drafting |
+
+</details>
+
+<details>
+<summary><strong>Writing, creative work, and media</strong></summary>
+
+| Directory | Focus |
+|---|---|
+| [`domain-creative-writing/`](domain-creative-writing/) | Fiction, genre, poetry, scripts, craft |
+| [`domain-childrens-writing/`](domain-childrens-writing/) | Children's fiction and nonfiction |
+| [`domain-conversation-practice/`](domain-conversation-practice/) | Language conversation practice |
+| [`domain-image-generation/`](domain-image-generation/) | Image-generation prompting and visual workflows |
+| [`domain-presentations/`](domain-presentations/) | Presentation and board-deck workflows |
+| [`domain-voice-conversational-ui/`](domain-voice-conversational-ui/) | Voice and conversational interfaces |
+| [`domain-advertising/`](domain-advertising/) | Advertising and campaign image prompts |
+| [`childrens-book-studio/`](childrens-book-studio/) | Idea-to-book authoring and submission pipeline |
+
+</details>
+
+<details>
+<summary><strong>Education, research, health, and specialized professional domains</strong></summary>
+
+| Directory | Focus |
+|---|---|
+| [`domain-education-teaching/`](domain-education-teaching/) | Lesson plans, curriculum, outcomes, accreditation, faculty development |
+| [`domain-medical-education/`](domain-medical-education/) | Health-professions education |
+| [`domain-science/`](domain-science/) | Scientific practice and reasoning |
+| [`domain-learning-coding/`](domain-learning-coding/) | Coding education and tutorials |
+| [`domain-research-academic/`](domain-research-academic/) | Literature review, methodology, research instruments |
+| [`domain-learning/`](domain-learning/) | Domain-general self-directed learning |
+| [`domain-psychology/`](domain-psychology/) | Psychology and behavioral-health resources |
+| [`domain-healthcare-clinical/`](domain-healthcare-clinical/) | Clinical, nursing, specialty, and perianesthesia resources |
+| [`domain-finance/`](domain-finance/) | Finance, economics, quantitative and fintech workflows |
+| [`domain-legal/`](domain-legal/) | Legal-practice and self-advocacy resources |
+| [`domain-parenting/`](domain-parenting/) | Parenting and family-context resources |
+| [`domain-biblical-studies/`](domain-biblical-studies/) | Bible study and research workflows |
+| [`domain-discipleship/`](domain-discipleship/) | Mentorship and discipleship program resources |
+| [`domain-specialized-fields/`](domain-specialized-fields/) | Specialized professional guides |
+
+</details>
+
+<details>
+<summary><strong>Self-contained pipelines and toolkits</strong></summary>
+
+| Directory | Focus |
+|---|---|
+| [`portable-prompt-system/`](portable-prompt-system/) | Portable reusable prompt system |
+| [`ai-investment-research-toolkit/`](ai-investment-research-toolkit/) | Paper-first AI investment research workflow |
+| [`domain-idea-to-product/`](domain-idea-to-product/) | Idea-to-shippable-software pipeline |
+| [`financial-records-toolkit/`](financial-records-toolkit/) | Financial statement processing and verification |
+| [`childrens-book-studio/`](childrens-book-studio/) | End-to-end children's book production workflow |
+| [`sourced-nonfiction-studio/`](sourced-nonfiction-studio/) | Uncited expert knowledge to sourced, legally screened nonfiction |
+| [`continuity-kit/`](continuity-kit/) | Repo-local project continuity memory for human-agent work |
+
+</details>
+
+For the repository's navigational view, see [`REPO_MAP.md`](REPO_MAP.md).
+
+---
+
+## Machine-Readable Prompt Index
+
+The repository ships a regeneratable prompt catalog for both human and programmatic use.
+
+| File | Format | Use |
+|---|---|---|
+| [`PROMPT_INDEX.json`](PROMPT_INDEX.json) | JSON | Scripts, tooling, integrations, programmatic search |
+| [`PROMPT_INDEX.md`](PROMPT_INDEX.md) | Markdown | Human browsing and GitHub search |
+| [`PROMPT_INDEX_GUIDE.md`](PROMPT_INDEX_GUIDE.md) | Documentation | Usage and integration examples |
+
+Example:
+
+```python
+import json
+
+with open("PROMPT_INDEX.json", encoding="utf-8") as f:
+    index = json.load(f)
+
+security_prompts = [
+    prompt
+    for prompt in index["prompts"]
+    if "security" in prompt.get("keywords", [])
+]
+```
+
+Or from the command line:
+
+```bash
+grep -i "react" PROMPT_INDEX.md
+```
+
+---
+
+## Repository Quality Infrastructure
+
+This repository includes tooling intended to keep a collection of this size navigable and internally consistent.
+
+Examples include checks for:
+
+- prompt metadata;
+- naming conventions;
+- technique-catalog integrity;
+- relative links;
+- generated indexes;
+- agentic-resource inventory; and
+- agentic-system validation gates.
+
+Common local validation entry points include:
+
+```bash
+python3 scripts/generate_prompt_index.py
+python3 scripts/validate_naming_conventions.py
+python3 scripts/check_relative_links.py
+python3 scripts/validate_technique_catalog.py
+```
+
+Individual subsystems may define additional validators and self-checks.
+
+---
+
+## Tool and Model Compatibility
+
+### Prompts
+
+Most general prompts are designed to be **model-agnostic** and can be adapted for modern LLM interfaces such as ChatGPT, Claude, Gemini, and similar systems.
+
+Model behavior varies. Treat technique selection, context limits, tool access, structured-output support, and reasoning behavior as model-dependent.
+
+### Agentic resources
+
+Agentic resources vary in portability.
+
+Many resources in [`domain-agentic-resources/`](domain-agentic-resources/) are designed for Claude Code or similar coding-agent environments. Skills, commands, agents, or tool integrations may require adaptation for Codex, Cursor, GitHub Copilot, or other agent runtimes.
+
+The [`agentic-system-factory/`](agentic-system-factory/) intentionally separates its framework-agnostic design bundle from stack-specific implementation transforms.
+
+---
+
+## For AI Agents
+
+This repository is designed to be navigable by both humans and AI agents.
+
+Start with [`START_HERE_FOR_AI.md`](START_HERE_FOR_AI.md), then use:
+
+- [`REPO_MAP.md`](REPO_MAP.md) for repository structure;
+- [`PROMPT_INDEX.json`](PROMPT_INDEX.json) for programmatic prompt discovery;
+- [`techniques/USE_CASE_LOOKUP.md`](techniques/USE_CASE_LOOKUP.md) for technique selection;
+- [`authoring/`](authoring/) when generating a new resource; and
+- subsystem `README.md`, `CLAUDE.md`, or `AGENTS.md` files when present.
+
+---
+
+## Contributing
+
+Contributions can include new prompts, improvements, techniques, skills, agents, commands, authoring patterns, documentation, validation tooling, and metadata corrections.
+
+Start with:
+
+1. [`EXTERNAL_CONTRIBUTOR_GUIDE.md`](EXTERNAL_CONTRIBUTOR_GUIDE.md)
+2. [`CONTRIBUTING.md`](CONTRIBUTING.md)
+3. [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+
+For new resources, use the matching authoring system rather than copying an existing file blindly.
+
+| Creating… | Start with |
+|---|---|
+| Prompt | [`authoring/NEW_PROMPT_TEMPLATE.md`](authoring/NEW_PROMPT_TEMPLATE.md) |
+| Technique | [`authoring/TECHNIQUE_CONTRIBUTION_GUIDE.md`](authoring/TECHNIQUE_CONTRIBUTION_GUIDE.md) |
+| Skill | [`authoring/skill-patterns/README.md`](authoring/skill-patterns/README.md) |
+| Agent | [`authoring/agent-patterns/AGENT_QUICK_START.md`](authoring/agent-patterns/AGENT_QUICK_START.md) |
+| Command | [`authoring/command-patterns/COMMAND_QUICK_START.md`](authoring/command-patterns/COMMAND_QUICK_START.md) |
+| Agentic system | [`authoring/system-patterns/SYSTEM_QUICK_START.md`](authoring/system-patterns/SYSTEM_QUICK_START.md) |
+
+Before opening a pull request, run the relevant repository validators.
+
+---
+
+## Security and Responsible Use
+
+To report a security, privacy, or safety issue privately, see [`SECURITY.md`](SECURITY.md).
+
+This repository includes material for clinical, legal, financial, psychological, security, and other high-stakes domains. Those resources are **educational, research, authoring, or drafting aids**. They are not a substitute for qualified professional judgment or current authoritative sources.
+
+For high-stakes use:
+
+- verify outputs against current authoritative sources;
+- follow applicable professional, organizational, and legal requirements;
+- do not assume an LLM-generated answer is correct because it is well written;
+- do not paste private patient, client, employee, customer, or other sensitive records into a prompt unless the system and workflow are explicitly approved for that data; and
+- preserve human review for consequential decisions.
+
+Some domains impose stricter local conventions. Read the relevant domain `README.md` before use.
+
+---
+
+## License and Provenance
+
+Unless otherwise noted, original repository content is licensed under the root [`LICENSE`](LICENSE) under the MIT License.
+
+Third-party or vendored components retain their own licenses. The root MIT license does **not** relicense third-party material.
+
+See:
+
+- [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)
+- license files distributed with individual components
+
+Contributors should verify provenance and licensing before adding externally derived material.
+
+---
+
+## Community and Project Navigation
+
+| Need | Resource |
+|---|---|
+| Contribution guide | [`EXTERNAL_CONTRIBUTOR_GUIDE.md`](EXTERNAL_CONTRIBUTOR_GUIDE.md) |
+| Full contribution rules | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
+| Code of conduct | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) |
+| Security reporting | [`SECURITY.md`](SECURITY.md) |
+| Third-party licensing | [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) |
+| Repository map | [`REPO_MAP.md`](REPO_MAP.md) |
+| AI-agent entry point | [`START_HERE_FOR_AI.md`](START_HERE_FOR_AI.md) |
+| Legacy-path migration | [`authoring/MIGRATION_GUIDE.md`](authoring/MIGRATION_GUIDE.md) |
+
+---
+
+**Prompt & Agent Engineering** is intended to function as a reusable engineering knowledge base: a place to **find AI resources, understand the techniques behind them, author better ones, compose them into workflows, and design complete agentic systems.**

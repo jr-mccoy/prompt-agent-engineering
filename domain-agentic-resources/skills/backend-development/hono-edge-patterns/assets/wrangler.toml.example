@@ -1,0 +1,104 @@
+# Cloudflare Workers Configuration
+# https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "my-api"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Account configuration (optional, can use CLOUDFLARE_ACCOUNT_ID env var)
+# account_id = "your-account-id"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "development"
+LOG_LEVEL = "debug"
+
+# KV Namespace bindings
+[[kv_namespaces]]
+binding = "CACHE"
+id = "your-kv-namespace-id"
+# preview_id = "your-preview-kv-namespace-id"  # For wrangler dev
+
+# D1 Database bindings
+[[d1_databases]]
+binding = "DB"
+database_name = "my-database"
+database_id = "your-d1-database-id"
+
+# R2 Bucket bindings
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "my-bucket"
+
+# Durable Objects
+[[durable_objects.bindings]]
+name = "COUNTER"
+class_name = "Counter"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Counter"]
+
+# Queue bindings
+[[queues.producers]]
+queue = "my-queue"
+binding = "QUEUE"
+
+[[queues.consumers]]
+queue = "my-queue"
+max_batch_size = 10
+max_batch_timeout = 30
+
+# Service bindings (call other Workers)
+[[services]]
+binding = "AUTH_SERVICE"
+service = "auth-worker"
+
+# Secrets (use `wrangler secret put SECRET_NAME`)
+# These are referenced as c.env.SECRET_NAME
+# - API_KEY
+# - DATABASE_URL
+# - JWT_SECRET
+
+# Routes (optional, for custom domains)
+# routes = [
+#   { pattern = "api.example.com/*", zone_name = "example.com" }
+# ]
+
+# Custom domain
+# [custom_domain]
+# zone_name = "example.com"
+# hostname = "api.example.com"
+
+# Cron triggers
+[triggers]
+crons = ["0 * * * *"]  # Every hour
+
+# Build configuration
+[build]
+command = "npm run build"
+watch_dir = "src"
+
+# Development settings
+[dev]
+port = 8787
+local_protocol = "http"
+
+# Staging environment
+[env.staging]
+name = "my-api-staging"
+vars = { ENVIRONMENT = "staging", LOG_LEVEL = "info" }
+
+[[env.staging.kv_namespaces]]
+binding = "CACHE"
+id = "staging-kv-namespace-id"
+
+# Production environment
+[env.production]
+name = "my-api-production"
+vars = { ENVIRONMENT = "production", LOG_LEVEL = "warn" }
+
+[[env.production.kv_namespaces]]
+binding = "CACHE"
+id = "production-kv-namespace-id"

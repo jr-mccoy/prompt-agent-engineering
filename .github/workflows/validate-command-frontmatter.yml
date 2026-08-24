@@ -1,0 +1,30 @@
+name: Validate Command Frontmatter
+
+on:
+  pull_request:
+    paths:
+      - 'domain-agentic-resources/commands/**/*.md'
+      - 'domain-agentic-resources/commands/validate_command_frontmatter.py'
+  push:
+    branches: [ main ]
+    paths:
+      - 'domain-agentic-resources/commands/**/*.md'
+      - 'domain-agentic-resources/commands/validate_command_frontmatter.py'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Validate frontmatter
+        run: python3 domain-agentic-resources/commands/validate_command_frontmatter.py

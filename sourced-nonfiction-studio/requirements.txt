@@ -1,0 +1,13 @@
+# Sourced Nonfiction Studio — dependencies
+#
+# The prompts, orchestrator, agents, and commands need NO Python dependencies.
+# scripts/check_citations.py is standard-library only (Python 3.8+).
+#
+# Live source discovery (Stage 2) uses the host agent's own tools:
+#   - WebSearch / WebFetch            (general nonfiction)
+#   - PubMed MCP                      (medical/health/scientific claims)
+#   - Consensus MCP                   (scientific-literature claims)
+# These are provided by the runtime, not installed here. Where none are
+# available, the studio degrades to the plan-only flow (see PROMPT_PACK_PLAN.md).
+#
+# No pip installs required.

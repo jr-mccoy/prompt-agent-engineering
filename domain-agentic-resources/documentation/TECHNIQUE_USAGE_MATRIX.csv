@@ -1,0 +1,16 @@
+Resource Name,Resource Type,Category,ST Techniques,RT Techniques,DS Techniques,IT Techniques,OT Techniques,AG Techniques,CM Techniques,QA Techniques,NE Techniques,Novel Patterns Count,Technique Combination Score,Notes
+full-stack-feature,Command,Orchestration,"ST-02, ST-03, ST-05","RT-01 (extended)","DS-02, DS-03","IT-14 (NEW)","OT-06 (NEW)","AG-01, AG-05, AG-07 (extended), AG-08, AG-13 (NEW)","CM-05 (NEW)","","",5,5,"Most complex orchestration: 12-phase workflow with parallel execution. Novel: Extended Thinking, Context Accumulation, Architecture-First, Parallel-Converge, Configuration-Driven"
+multi-agent-optimize,Command,Orchestration,"ST-02, ST-05","","DS-02, DS-14 (NEW)","","OT (code examples)","AG-07, AG-14 (NEW)","","","",2,4,"Cost-aware optimization with layer-specific agents. Novel: Cost-Aware Orchestration, Layer-Specific Specialization"
+issue (GitHub),Command,Orchestration,"ST-02","","DS-02, DS-03 (extended), DS-06, DS-15 (NEW), DS-16 (NEW), DS-17 (NEW), DS-18 (NEW)","","OC-01 (extended), OT (embedded code)","","","QA-01 (via checklist)","",4,5,"Complete issue-to-PR lifecycle with code archaeology. Novel: Code Archaeology, Issue-to-PR Lifecycle, Tool Integration, Branch Naming"
+improve-agent,Command,Orchestration,"","RT-01","DS-02","","","AG-09, AG-15 (NEW), AG-16 (NEW)","","QA-01 (extended), QA-03, QA-06 (NEW), QA-07 (NEW)","",4,5,"Systematic agent improvement with A/B testing. Novel: Constitutional AI, Statistical A/B Testing, Staged Rollout, Continuous Improvement"
+context-save-restore,Command,Orchestration,"","","","","OC-02, OT-06 (NEW)","AG-06","CM-04 (extended), CM-06 (NEW), CM-07 (NEW), CM-08 (NEW), CM-09 (NEW)","","",5,5,"Advanced context management with vector databases. Novel: Semantic Vectors, Token-Budget Loading, Fingerprinting, Knowledge Graphs, Multi-Format Serialization"
+standup-notes,Command,Orchestration,"","","DS-02, DS-19 (NEW), DS-20 (NEW), DS-21 (NEW)","","OC-01","AG-07","","","NE-01, NE-02, NE-09, NE-13 (NEW), NE-14 (NEW)",5,5,"Multi-source standup generation for async teams. Novel: Technical-to-Business Translation, Multi-Source Synthesis, Blocker Escalation, Async-First Design, Task Derivation"
+context-restore,Command,Orchestration,"","","DS-02, DS-22 (NEW)","IT-15 (NEW)","","AG-06","CM-04 (extended), CM-06 (from save/restore), CM-10 (NEW)","QA-01 (extended)","",3,5,"Intelligent context retrieval with semantic search and token budgets. Novel: Composite Relevance Scoring, Cross-Project Knowledge Transfer, Dynamic Context Expansion"
+
+SUMMARY STATISTICS:
+Total Resources Analyzed,7
+Total Novel Patterns Identified,28
+Average Technique Combination Score,4.9
+Most Common Existing Category,DS (Domain-Specific)
+Most Novel Patterns in Category,CM (Context Management) - 6 patterns
+Resources with Score 5,6 of 7

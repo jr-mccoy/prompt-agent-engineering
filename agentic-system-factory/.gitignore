@@ -1,0 +1,6 @@
+# User run output — bundles a user generates with the factory are theirs, not tracked here.
+bundle/
+output/
+*.local.md
+__pycache__/
+*.pyc

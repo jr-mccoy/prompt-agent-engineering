@@ -1,0 +1,30 @@
+name: Inventory Count Consistency
+
+on:
+  pull_request:
+    paths:
+      - 'domain-agentic-resources/**'
+      - '.github/workflows/inventory-counts.yml'
+  push:
+    branches: [ main ]
+    paths:
+      - 'domain-agentic-resources/**'
+      - '.github/workflows/inventory-counts.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  inventory-counts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Validate declared inventory counts
+        run: python domain-agentic-resources/inventory_counts.py --check

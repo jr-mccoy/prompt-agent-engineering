@@ -1,0 +1,20 @@
+# institutions.yaml — optional per-bank parsing hints for extract_statement.py.
+#
+# The generic parser handles most statements. Add an entry here ONLY when a
+# statement fails to parse (0 transactions) or the verifier reports coverage
+# gaps. Pass it with: extract_statement.py FILE --config config/institutions.yaml --institution KEY
+#
+# See skills/pdf-statement-extractor/references/statement_formats.md for details.
+
+# Example (uncomment and adapt):
+#
+# chase_checking:
+#   account_type: bank
+#   date_formats: ["%m/%d/%Y"]
+#   line_regex: '^(?P<date>\d{2}/\d{2}/\d{4})\s+(?P<desc>.+?)\s+(?P<amount>[-(]?\$?[\d,]+\.\d{2}\)?)\s+(?P<balance>[\d,]+\.\d{2})$'
+#   skip_patterns: ["DAILY BALANCE", "TOTALS", "INTEREST RATE"]
+#
+# amex_card:
+#   account_type: credit
+#   date_formats: ["%m/%d/%y"]
+#   skip_patterns: ["MINIMUM PAYMENT", "PAYMENT DUE"]

@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "created": "2025-01-01T00:00:00Z",
+  "last_updated": "2025-01-01T00:00:00Z",
+  "data_points": [
+    {
+      "id": "example_user_profile",
+      "data_model": "User",
+      "code_location": {
+        "file": "app/src/main/java/com/example/models/User.kt",
+        "lines": [15, 42]
+      },
+      "firebase_paths": {
+        "firestore": "users/{uid}",
+        "rtdb": null
+      },
+      "privacy": "private",
+      "required_rules": {
+        "firestore": [
+          "allow read, write: if request.auth.uid == uid"
+        ]
+      },
+      "required_functions": [
+        "onUserCreate",
+        "onUserUpdate",
+        "onUserDelete"
+      ],
+      "coverage_status": {
+        "firestore_rules": "unknown",
+        "rtdb_rules": "n/a",
+        "cloud_functions": "unknown"
+      }
+    },
+    {
+      "id": "example_chat_message",
+      "data_model": "ChatMessage",
+      "code_location": {
+        "file": "app/src/main/java/com/example/chat/ChatMessage.kt",
+        "lines": [20, 35]
+      },
+      "firebase_paths": {
+        "firestore": null,
+        "rtdb": "/chats/{chatId}/messages/{messageId}"
+      },
+      "privacy": "shared",
+      "required_rules": {
+        "rtdb": [
+          "\".read\": \"root.child('chats').child($chatId).child('participants').child(auth.uid).exists()\"",
+          "\".write\": \"root.child('chats').child($chatId).child('participants').child(auth.uid).exists()\""
+        ]
+      },
+      "required_functions": [
+        "onMessageCreate",
+        "onMessageDelete"
+      ],
+      "coverage_status": {
+        "firestore_rules": "n/a",
+        "rtdb_rules": "unknown",
+        "cloud_functions": "unknown"
+      }
+    }
+  ],
+  "metadata": {
+    "app_name": "YourApp",
+    "package_name": "com.example.yourapp",
+    "firebase_project": "your-firebase-project",
+    "total_data_points": 2,
+    "coverage_percentage": 0
+  }
+}

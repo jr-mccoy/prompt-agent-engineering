@@ -1,0 +1,37 @@
+# The tooling is versioned; your market data, snapshots, and outputs are NOT.
+# knowledge-base/ (patterns + journal) IS tracked on purpose — it is durable,
+# no-secret memory. Keep secrets and live working data out of git.
+
+# Working tree — raw pulls and generated artifacts (keep the dirs, not the data):
+data/input/*
+data/snapshots/*
+data/output/*
+!data/input/.gitkeep
+!data/snapshots/.gitkeep
+!data/output/.gitkeep
+
+# Common market-data / export / output file types anywhere in the tree:
+*.csv
+*.parquet
+*.xlsx
+*_snapshot.json
+*_universe.csv
+*_dossier.md
+*_orders.md
+
+# ...but DO keep the tracked memory + config artifacts:
+!knowledge-base/**
+!config/*.yaml
+
+# Secrets — API keys for data/broker adapters NEVER belong in the repo:
+.env
+.env.*
+secrets.yaml
+*_secret.yaml
+config/*.local.yaml
+
+# Python / editor noise:
+__pycache__/
+*.pyc
+.venv/
+.DS_Store

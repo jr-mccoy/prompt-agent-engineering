@@ -1,0 +1,1428 @@
+{
+  "total_commands": 115,
+  "total_categories": 24,
+  "commands_by_category": {
+    "accessibility": [
+      {
+        "name": "accessibility-audit",
+        "file_path": "commands/accessibility/accessibility_audit.md",
+        "category": "accessibility",
+        "syntax": "/accessibility-audit",
+        "description": "You are an accessibility expert specializing in WCAG compliance, inclusive design, and assistive...",
+        "agents": [],
+        "skills": [],
+        "content_length": 15264
+      },
+      {
+        "name": "component-scaffold",
+        "file_path": "commands/accessibility/component_scaffold.md",
+        "category": "accessibility",
+        "syntax": "/component-scaffold",
+        "description": "You are a React component architecture expert specializing in scaffolding production-ready,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 11242
+      }
+    ],
+    "architecture": [
+      {
+        "name": "c4-architecture",
+        "file_path": "commands/architecture/c4_architecture.md",
+        "category": "architecture",
+        "syntax": "/c4-architecture:c4-architecture",
+        "description": "Generate comprehensive C4 architecture documentation for an existing repository/codebase using a...",
+        "agents": [
+          "c4-code",
+          "c4-component",
+          "c4-container",
+          "c4-context"
+        ],
+        "skills": [],
+        "content_length": 16079
+      },
+      {
+        "name": "data-pipeline",
+        "file_path": "commands/architecture/data_pipeline.md",
+        "category": "architecture",
+        "syntax": "/data-pipeline",
+        "description": "You are a data pipeline architecture expert specializing in scalable, reliable, and cost-effective...",
+        "agents": [],
+        "skills": [],
+        "content_length": 6670
+      }
+    ],
+    "code-quality": [
+      {
+        "name": "ai-review",
+        "file_path": "commands/code-quality/ai_review.md",
+        "category": "code-quality",
+        "syntax": "/ai-review",
+        "description": "You are an expert AI-powered code review specialist combining automated static analysis,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 14958
+      },
+      {
+        "name": "codebase-health-check",
+        "file_path": "commands/code-quality/codebase_health_check.md",
+        "category": "code-quality",
+        "syntax": "/codebase-health-check",
+        "description": "Orchestrate a comprehensive codebase health assessment across security, dependencies, code quality, architecture, and test coverage using multiple specialized agents",
+        "agents": [
+          "tech-debt-reducer",
+          "security-auditor",
+          "test-automator",
+          "backend-architect"
+        ],
+        "skills": [],
+        "content_length": 8108
+      },
+      {
+        "name": "context-restore",
+        "file_path": "commands/code-quality/context_restore.md",
+        "category": "code-quality",
+        "syntax": "/context-restore",
+        "description": "Expert Context Restoration Specialist focused on intelligent, semantic-aware context retrieval and...",
+        "agents": [],
+        "skills": [],
+        "content_length": 5691
+      },
+      {
+        "name": "refactor-clean",
+        "file_path": "commands/code-quality/refactor_clean.md",
+        "category": "code-quality",
+        "syntax": "/refactor-clean",
+        "description": "You are a code refactoring expert specializing in clean code principles, SOLID design patterns, and...",
+        "agents": [],
+        "skills": [],
+        "content_length": 22959
+      },
+      {
+        "name": "tech-debt",
+        "file_path": "commands/code-quality/tech_debt.md",
+        "category": "code-quality",
+        "syntax": "/tech-debt",
+        "description": "You are a technical debt expert specializing in identifying, quantifying, and prioritizing...",
+        "agents": [],
+        "skills": [],
+        "content_length": 9771
+      }
+    ],
+    "data-analysis": [
+      {
+        "name": "process-financials",
+        "file_path": "commands/data-analysis/process_financials.md",
+        "category": "data-analysis",
+        "syntax": "/process-financials",
+        "description": "Run the full financial-records pipeline over a folder of bank/credit-card statements \u2014 extract PDFs to spreadsheets, verify every transaction transferred, categorize (researching unknown merchants), and flag for divorce/custody review \u2014 producing a master Excel workbook and a prioritized attorney review queue.",
+        "agents": [
+          "financial-records-orchestrator",
+          "transaction-research-agent"
+        ],
+        "skills": [],
+        "content_length": 4180
+      }
+    ],
+    "database": [
+      {
+        "name": "cost-optimize",
+        "file_path": "commands/database/cost_optimize.md",
+        "category": "database",
+        "syntax": "/cost-optimize",
+        "description": "You are a cloud cost optimization expert specializing in reducing infrastructure expenses while...",
+        "agents": [],
+        "skills": [],
+        "content_length": 50993
+      },
+      {
+        "name": "sql-migrations",
+        "file_path": "commands/database/sql_migrations.md",
+        "category": "database",
+        "syntax": "/sql_migrations",
+        "description": "SQL Database Migration Strategy and Implementation",
+        "agents": [],
+        "skills": [],
+        "content_length": 14214
+      }
+    ],
+    "deployment": [
+      {
+        "name": "config-validate",
+        "file_path": "commands/deployment/config_validate.md",
+        "category": "deployment",
+        "syntax": "/config-validate",
+        "description": "You are a configuration management expert specializing in validating, testing, and ensuring the...",
+        "agents": [],
+        "skills": [],
+        "content_length": 13846
+      },
+      {
+        "name": "migration-observability",
+        "file_path": "commands/deployment/migration_observability.md",
+        "category": "deployment",
+        "syntax": "/migration_observability",
+        "description": "Migration Observability and Real-time Monitoring",
+        "agents": [],
+        "skills": [],
+        "content_length": 12896
+      }
+    ],
+    "devops": [
+      {
+        "name": "ai-assistant",
+        "file_path": "commands/devops/ai_assistant.md",
+        "category": "devops",
+        "syntax": "/ai-assistant",
+        "description": "You are an AI assistant development expert specializing in creating intelligent conversational...",
+        "agents": [],
+        "skills": [],
+        "content_length": 41043
+      },
+      {
+        "name": "deps-audit",
+        "file_path": "commands/devops/deps_audit.md",
+        "category": "devops",
+        "syntax": "/deps-audit",
+        "description": "You are a dependency security expert specializing in vulnerability scanning, license compliance,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 24898
+      },
+      {
+        "name": "langchain-agent",
+        "file_path": "commands/devops/langchain_agent.md",
+        "category": "devops",
+        "syntax": "/langchain-agent",
+        "description": "You are an expert LangChain agent developer specializing in production-grade AI systems using...",
+        "agents": [],
+        "skills": [],
+        "content_length": 7233
+      },
+      {
+        "name": "monitor-setup",
+        "file_path": "commands/devops/monitor_setup.md",
+        "category": "devops",
+        "syntax": "/monitor-setup",
+        "description": "You are a monitoring and observability expert specializing in implementing comprehensive monitoring...",
+        "agents": [],
+        "skills": [],
+        "content_length": 14477
+      },
+      {
+        "name": "prompt-optimize",
+        "file_path": "commands/devops/prompt_optimize.md",
+        "category": "devops",
+        "syntax": "/prompt-optimize",
+        "description": "You are an expert prompt engineer specializing in crafting effective prompts for LLMs through...",
+        "agents": [],
+        "skills": [],
+        "content_length": 12868
+      },
+      {
+        "name": "slo-implement",
+        "file_path": "commands/devops/slo_implement.md",
+        "category": "devops",
+        "syntax": "/slo-implement",
+        "description": "You are an SLO (Service Level Objective) expert specializing in implementing reliability standards...",
+        "agents": [],
+        "skills": [],
+        "content_length": 35795
+      },
+      {
+        "name": "typescript-scaffold",
+        "file_path": "commands/devops/typescript_scaffold.md",
+        "category": "devops",
+        "syntax": "/typescript-scaffold",
+        "description": "You are a TypeScript project architecture expert specializing in scaffolding production-ready...",
+        "agents": [],
+        "skills": [],
+        "content_length": 7817
+      },
+      {
+        "name": "workflow-automate",
+        "file_path": "commands/devops/workflow_automate.md",
+        "category": "devops",
+        "syntax": "/workflow-automate",
+        "description": "You are a workflow automation expert specializing in creating efficient CI/CD pipelines, GitHub...",
+        "agents": [],
+        "skills": [],
+        "content_length": 36788
+      }
+    ],
+    "documentation": [
+      {
+        "name": "doc-generate",
+        "file_path": "commands/documentation/doc_generate.md",
+        "category": "documentation",
+        "syntax": "/doc-generate",
+        "description": "You are a documentation expert specializing in creating comprehensive, maintainable documentation...",
+        "agents": [],
+        "skills": [],
+        "content_length": 17258
+      }
+    ],
+    "framework-migration": [
+      {
+        "name": "code-migrate",
+        "file_path": "commands/framework-migration/code_migrate.md",
+        "category": "framework-migration",
+        "syntax": "/code-migrate",
+        "description": "You are a code migration expert specializing in transitioning codebases between frameworks,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 33948
+      },
+      {
+        "name": "deps-upgrade",
+        "file_path": "commands/framework-migration/deps_upgrade.md",
+        "category": "framework-migration",
+        "syntax": "/deps-upgrade",
+        "description": "You are a dependency management expert specializing in safe, incremental upgrades of project...",
+        "agents": [],
+        "skills": [],
+        "content_length": 22216
+      },
+      {
+        "name": "legacy-modernize",
+        "file_path": "commands/framework-migration/legacy_modernize.md",
+        "category": "framework-migration",
+        "syntax": "/legacy-modernize",
+        "description": "Orchestrate a comprehensive legacy system modernization using the strangler fig pattern, enabling...",
+        "agents": [
+          "architect-review",
+          "backend-architect",
+          "business-analyst",
+          "data-engineer",
+          "deployment-engineer",
+          "docs-architect",
+          "legacy-modernizer",
+          "performance-engineer",
+          "python-pro",
+          "security-auditor",
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 10575
+      }
+    ],
+    "git-workflows": [
+      {
+        "name": "git-workflow",
+        "file_path": "commands/git-workflows/git_workflow.md",
+        "category": "git-workflows",
+        "syntax": "/git-workflow",
+        "description": "Orchestrate a comprehensive git workflow from code review through PR creation, leveraging...",
+        "agents": [
+          "code-reviewer",
+          "deployment-engineer",
+          "docs-architect",
+          "prompt-engineer",
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 9515
+      },
+      {
+        "name": "onboard",
+        "file_path": "commands/git-workflows/onboard.md",
+        "category": "git-workflows",
+        "syntax": "/onboard",
+        "description": "You are an expert onboarding specialist and knowledge transfer architect with deep experience in...",
+        "agents": [],
+        "skills": [],
+        "content_length": 14290
+      },
+      {
+        "name": "pr-enhance",
+        "file_path": "commands/git-workflows/pr_enhance.md",
+        "category": "git-workflows",
+        "syntax": "/pr-enhance",
+        "description": "You are a PR optimization expert specializing in creating high-quality pull requests that...",
+        "agents": [],
+        "skills": [],
+        "content_length": 20211
+      }
+    ],
+    "mobile-development": [
+      {
+        "name": "android-adb-health-check",
+        "file_path": "commands/mobile-development/android_adb_health_check.md",
+        "category": "mobile-development",
+        "syntax": "/android-adb-health-check",
+        "description": "Quick device and app health check via ADB. Captures device state, app memory usage, running services, battery impact, and recent crash logs in a single report. Designed to run in under 60 seconds.",
+        "agents": [
+          "android-adb-specialist",
+          "mobile-developer"
+        ],
+        "skills": [],
+        "content_length": 5957
+      },
+      {
+        "name": "android-behavior-audit",
+        "file_path": "commands/mobile-development/android_behavior_audit.md",
+        "category": "mobile-development",
+        "syntax": "/android-behavior-audit",
+        "description": "Orchestrate comprehensive Android app behavior audit across survey, deep code tracing, behavioral scrutiny, developer clarification, and fix planning to align actual code behavior with developer intent",
+        "agents": [
+          "android-app-surveyor",
+          "android-behavior-tracer",
+          "android-behavior-auditor",
+          "android-behavior-fix-planner"
+        ],
+        "skills": [],
+        "content_length": 16575
+      },
+      {
+        "name": "android-beta-launch",
+        "file_path": "commands/mobile-development/android_beta_launch.md",
+        "category": "mobile-development",
+        "syntax": "/android-beta-launch",
+        "description": "Orchestrate comprehensive Android beta launch preparation across security, performance, Firebase validation, test coverage, and Play Store compliance with go/no-go release decision",
+        "agents": [
+          "android-release-manager",
+          "security-auditor",
+          "performance-engineer",
+          "tdd-orchestrator",
+          "test-automator",
+          "mobile-developer"
+        ],
+        "skills": [],
+        "content_length": 10217
+      },
+      {
+        "name": "android-daily-standup",
+        "file_path": "commands/mobile-development/android_daily_standup.md",
+        "category": "mobile-development",
+        "syntax": "/android-daily-standup",
+        "description": "Morning startup command that reviews last session's changes, checks CI status, pulls latest crash reports, reviews support inbox, and suggests daily priorities based on impact and urgency",
+        "agents": [
+          "android-release-manager",
+          "mobile-developer",
+          "firebase-cost-analyst"
+        ],
+        "skills": [],
+        "content_length": 6178
+      },
+      {
+        "name": "android-gradle-upgrade",
+        "file_path": "commands/mobile-development/android_gradle_upgrade.md",
+        "category": "mobile-development",
+        "syntax": "/android-gradle-upgrade",
+        "description": "Upgrade Android Gradle Plugin (AGP) and dependencies with compatibility verification and migration...",
+        "agents": [],
+        "skills": [],
+        "content_length": 9932
+      },
+      {
+        "name": "android-init",
+        "file_path": "commands/mobile-development/android_init.md",
+        "category": "mobile-development",
+        "syntax": "/android-init",
+        "description": "Initialize a modern Android project with MVVM architecture, Hilt dependency injection, Jetpack...",
+        "agents": [],
+        "skills": [],
+        "content_length": 19244
+      },
+      {
+        "name": "android-monetization-setup",
+        "file_path": "commands/mobile-development/android_monetization_setup.md",
+        "category": "mobile-development",
+        "syntax": "/android-monetization-setup",
+        "description": "Orchestrate complete Android monetization implementation including Google Play Billing, subscriptions, AdMob, paywalls, server-side verification, and policy compliance",
+        "agents": [
+          "android-monetization-architect",
+          "android-release-manager",
+          "mobile-developer",
+          "security-auditor",
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 11824
+      },
+      {
+        "name": "android-ship-check",
+        "file_path": "commands/mobile-development/android_ship_check.md",
+        "category": "mobile-development",
+        "syntax": "/android-ship-check",
+        "description": "Pre-release verification command that runs the full test suite, checks for regressions, validates ProGuard rules, verifies Play Store policy compliance, checks Firebase security rules, and produces a go/no-go report",
+        "agents": [
+          "android-release-manager",
+          "firebase-security-auditor",
+          "compliance-scanner",
+          "mobile-developer",
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 8793
+      },
+      {
+        "name": "android-weekly-review",
+        "file_path": "commands/mobile-development/android_weekly_review.md",
+        "category": "mobile-development",
+        "syntax": "/android-weekly-review",
+        "description": "Weekly review command that pulls metrics from Play Console, Firebase, and codebase to produce a weekly summary with key metrics, trend analysis, and next-week recommendations",
+        "agents": [
+          "android-release-manager",
+          "firebase-cost-analyst",
+          "mobile-developer"
+        ],
+        "skills": [],
+        "content_length": 7640
+      },
+      {
+        "name": "mobile-ui-addictiveness-audit",
+        "file_path": "commands/mobile-development/mobile_ui_addictiveness_audit.md",
+        "category": "mobile-development",
+        "syntax": "/mobile-ui-addictiveness-audit",
+        "description": "Orchestrate a comprehensive audit of an app's engagement and habit-forming potential across behavioral psychology frameworks, analyzing triggers, core loops, reward systems, retention mechanics, and emotional design to produce an actionable engagement improvement plan",
+        "agents": [
+          "mobile-ui-addiction-architect",
+          "mobile-ui-element-analyzer",
+          "mobile-ui-competitive-teardown"
+        ],
+        "skills": [],
+        "content_length": 16703
+      },
+      {
+        "name": "mobile-ui-element-audit",
+        "file_path": "commands/mobile-development/mobile_ui_element_audit.md",
+        "category": "mobile-development",
+        "syntax": "/mobile-ui-element-audit",
+        "description": "Orchestrate a comprehensive UI element audit across trend research, element-level analysis, engagement optimization, and implementation planning to transform specific mobile UI elements from functional to exceptional",
+        "agents": [
+          "mobile-ui-trend-researcher",
+          "mobile-ui-element-analyzer",
+          "mobile-ui-addiction-architect"
+        ],
+        "skills": [],
+        "content_length": 12051
+      },
+      {
+        "name": "mobile-ui-trend-report",
+        "file_path": "commands/mobile-development/mobile_ui_trend_report.md",
+        "category": "mobile-development",
+        "syntax": "/mobile-ui-trend-report",
+        "description": "Generate a comprehensive mobile UI trend report covering visual design, interaction patterns, engagement mechanics, and platform-specific innovations with actionable recommendations tailored to the user's app category and tech stack",
+        "agents": [
+          "mobile-ui-trend-researcher",
+          "mobile-ui-competitive-teardown",
+          "mobile-ui-addiction-architect"
+        ],
+        "skills": [],
+        "content_length": 11433
+      }
+    ],
+    "multi-agent": [
+      {
+        "name": "multiagent-coordination-choke-point-analysis",
+        "file_path": "commands/multi-agent/multiagent_coordination_choke_point_analysis.md",
+        "category": "multi-agent",
+        "syntax": "/multiagent-coordination-choke-point-analysis",
+        "description": "Map where a multi-agent system serializes, where agents wait on each other, and where they collide on shared resources (files, context, rate limits, external state). Produces a prioritized list of the contention points that actually matter.",
+        "agents": [],
+        "skills": [],
+        "content_length": 9116
+      },
+      {
+        "name": "multiagent-coordination-via-tests-and-policy",
+        "file_path": "commands/multi-agent/multiagent_coordination_via_tests_and_policy.md",
+        "category": "multi-agent",
+        "syntax": "/multiagent-coordination-via-tests-and-policy",
+        "description": "Use a shared test suite as the coordination surface between parallel agents, and pair it with a conflict-resolution policy for when agents produce conflicting changes. Replaces chatty inter-agent negotiation with executable contracts.",
+        "agents": [],
+        "skills": [],
+        "content_length": 11124
+      },
+      {
+        "name": "multiagent-good-enough-gate-design",
+        "file_path": "commands/multi-agent/multiagent_good_enough_gate_design.md",
+        "category": "multi-agent",
+        "syntax": "/multiagent-good-enough-gate-design",
+        "description": "Translate fuzzy acceptance into a mix of pass/fail gates (must-pass) and graded criteria (scored). Prevents the two failure modes: ship-on-vibes and never-ship-because-perfect.",
+        "agents": [],
+        "skills": [],
+        "content_length": 10035
+      },
+      {
+        "name": "multiagent-graceful-session-endings",
+        "file_path": "commands/multi-agent/multiagent_graceful_session_endings.md",
+        "category": "multi-agent",
+        "syntax": "/multiagent-graceful-session-endings",
+        "description": "Design a session-end protocol: what to checkpoint, what to discard, what the next session needs to restart productively. Prevents lost context and wasted restart time.",
+        "agents": [],
+        "skills": [],
+        "content_length": 10259
+      },
+      {
+        "name": "multiagent-scaling-vs-single-agent-diagnosis",
+        "file_path": "commands/multi-agent/multiagent_scaling_vs_single_agent_diagnosis.md",
+        "category": "multi-agent",
+        "syntax": "/multiagent-scaling-vs-single-agent-diagnosis",
+        "description": "Before adding more agents, diagnose whether the single-agent case is actually failing on capacity, on context, or on task design. Most 'needs multi-agent' problems turn out to be single-agent tasks with a bad spec.",
+        "agents": [],
+        "skills": [],
+        "content_length": 9536
+      },
+      {
+        "name": "multiagent-tool-set-minimization",
+        "file_path": "commands/multi-agent/multiagent_tool_set_minimization.md",
+        "category": "multi-agent",
+        "syntax": "/multiagent-tool-set-minimization",
+        "description": "Audit an agent's tool set, classify each tool as always-on / on-demand / remove, and produce the minimal always-on set. Smaller tool sets reduce drift, context bloat, and failure surface.",
+        "agents": [],
+        "skills": [],
+        "content_length": 8828
+      },
+      {
+        "name": "multiagent-two-tier-architecture-template",
+        "file_path": "commands/multi-agent/multiagent_two_tier_architecture_template.md",
+        "category": "multi-agent",
+        "syntax": "/multiagent-two-tier-architecture-template",
+        "description": "Produce a concrete two-tier architecture \u2014 planner, one or more workers, and a judge \u2014 with named interfaces, handoff contracts, and fallback behavior. Forces the split to be load-bearing rather than decorative.",
+        "agents": [],
+        "skills": [],
+        "content_length": 9736
+      },
+      {
+        "name": "multiagent-worker-isolation-boundaries",
+        "file_path": "commands/multi-agent/multiagent_worker_isolation_boundaries.md",
+        "category": "multi-agent",
+        "syntax": "/multiagent-worker-isolation-boundaries",
+        "description": "Draw tight, checkable boundaries around a worker agent: what it may read, write, invoke, and spend. Produces a worker spec that is hard to violate and easy to audit.",
+        "agents": [],
+        "skills": [],
+        "content_length": 9417
+      }
+    ],
+    "non-coding/business": [
+      {
+        "name": "action-item-audit",
+        "file_path": "commands/non-coding/business/action_item_audit.md",
+        "category": "non-coding/business",
+        "syntax": "/action-item-audit",
+        "description": "Run when project action lists need quality control before execution tracking.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1084
+      },
+      {
+        "name": "decision-memo-generator",
+        "file_path": "commands/non-coding/business/decision_memo_generator.md",
+        "category": "non-coding/business",
+        "syntax": "/decision-memo-generator",
+        "description": "Run when stakeholders need a concise decision memo with options, tradeoffs, and recommendation.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1176
+      },
+      {
+        "name": "stakeholder-risk-map",
+        "file_path": "commands/non-coding/business/stakeholder_risk_map.md",
+        "category": "non-coding/business",
+        "syntax": "/stakeholder-risk-map",
+        "description": "Run when planning change initiatives that require proactive stakeholder risk management.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1137
+      }
+    ],
+    "non-coding/creative": [
+      {
+        "name": "beat-sheet-generator",
+        "file_path": "commands/non-coding/creative/beat_sheet_generator.md",
+        "category": "non-coding/creative",
+        "syntax": "/beat-sheet-generator",
+        "description": "Run when creators need a structured narrative beat sheet from a concept or draft.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1094
+      },
+      {
+        "name": "genre-consistency-check",
+        "file_path": "commands/non-coding/creative/genre_consistency_check.md",
+        "category": "non-coding/creative",
+        "syntax": "/genre-consistency-check",
+        "description": "Run when a story draft must be checked for adherence to genre expectations and conventions.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1120
+      },
+      {
+        "name": "idea-variation-batch",
+        "file_path": "commands/non-coding/creative/idea_variation_batch.md",
+        "category": "non-coding/creative",
+        "syntax": "/idea-variation-batch",
+        "description": "Run when multiple distinct concept variations are needed from a single creative brief.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1081
+      }
+    ],
+    "non-coding/education": [
+      {
+        "name": "learning-outcome-retrospective",
+        "file_path": "commands/non-coding/education/learning_outcome_retrospective.md",
+        "category": "non-coding/education",
+        "syntax": "/learning-outcome-retrospective",
+        "description": "Run after instruction to analyze outcome data and refine future teaching cycles.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1249
+      },
+      {
+        "name": "lesson-objective-alignment",
+        "file_path": "commands/non-coding/education/lesson_objective_alignment.md",
+        "category": "non-coding/education",
+        "syntax": "/lesson-objective-alignment",
+        "description": "Run when a lesson plan needs explicit alignment between activities, assessments, and stated learning objectives.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1297
+      },
+      {
+        "name": "worksheet-difficulty-calibration",
+        "file_path": "commands/non-coding/education/worksheet_difficulty_calibration.md",
+        "category": "non-coding/education",
+        "syntax": "/worksheet-difficulty-calibration",
+        "description": "Run when a worksheet must be tuned to a target proficiency band before classroom use.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1237
+      }
+    ],
+    "non-coding/healthcare": [
+      {
+        "name": "pacu-resource-router",
+        "file_path": "commands/non-coding/healthcare/pacu_resource_router.md",
+        "category": "non-coding/healthcare",
+        "syntax": "/pacu-resource TURP postop",
+        "description": "Route a PACU topic to the right combination of skills, prompts, and image meta-prompts. Asks 2-3 clarifying questions, assembles a package (e.g., comprehensive guide + matching algorithm + image prompt + quick-ref), and returns all artifacts in one response.",
+        "agents": [],
+        "skills": [],
+        "content_length": 9514
+      },
+      {
+        "name": "patient-qa-summarize",
+        "file_path": "commands/non-coding/healthcare/patient_qa_summarize.md",
+        "category": "non-coding/healthcare",
+        "syntax": "/patient-qa-summarize",
+        "description": "Run after patient Q&A interactions to produce concise, accurate visit communication summaries.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1191
+      },
+      {
+        "name": "plain-language-discharge-instructions",
+        "file_path": "commands/non-coding/healthcare/plain_language_discharge_instructions.md",
+        "category": "non-coding/healthcare",
+        "syntax": "/plain-language-discharge-instructions",
+        "description": "Run when discharge instructions must be rewritten for patient-friendly comprehension.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1211
+      },
+      {
+        "name": "symptom-information-safety-check",
+        "file_path": "commands/non-coding/healthcare/symptom_information_safety_check.md",
+        "category": "non-coding/healthcare",
+        "syntax": "/symptom-information-safety-check",
+        "description": "Run when reviewing symptom guidance content for safety, triage clarity, and harm prevention.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1154
+      }
+    ],
+    "non-coding/research": [
+      {
+        "name": "claim-evidence-mapping",
+        "file_path": "commands/non-coding/research/claim_evidence_mapping.md",
+        "category": "non-coding/research",
+        "syntax": "/claim-evidence-mapping",
+        "description": "Run when claims in a report or draft need explicit traceability to supporting evidence.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1122
+      },
+      {
+        "name": "methodology-risk-check",
+        "file_path": "commands/non-coding/research/methodology_risk_check.md",
+        "category": "non-coding/research",
+        "syntax": "/methodology-risk-check",
+        "description": "Run before fielding a study or analysis plan to identify methodological failure points early.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1172
+      },
+      {
+        "name": "source-quality-triage",
+        "file_path": "commands/non-coding/research/source_quality_triage.md",
+        "category": "non-coding/research",
+        "syntax": "/source-quality-triage",
+        "description": "Run when collecting references and deciding which sources are credible enough for synthesis.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1135
+      }
+    ],
+    "non-coding/writing": [
+      {
+        "name": "audience-tailored-rewrite",
+        "file_path": "commands/non-coding/writing/audience_tailored_rewrite.md",
+        "category": "non-coding/writing",
+        "syntax": "/audience-tailored-rewrite",
+        "description": "Run when the same message must be rewritten for a specific audience segment.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1042
+      },
+      {
+        "name": "fact-claim-verification-pass",
+        "file_path": "commands/non-coding/writing/fact_claim_verification_pass.md",
+        "category": "non-coding/writing",
+        "syntax": "/fact-claim-verification-pass",
+        "description": "Run before publication when factual assertions must be checked and confidence-labeled.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1132
+      },
+      {
+        "name": "readability-and-structure-pass",
+        "file_path": "commands/non-coding/writing/readability_and_structure_pass.md",
+        "category": "non-coding/writing",
+        "syntax": "/readability-and-structure-pass",
+        "description": "Run when a draft needs clarity improvements without changing core meaning or intent.",
+        "agents": [],
+        "skills": [],
+        "content_length": 1054
+      }
+    ],
+    "orchestration": [
+      {
+        "name": "context-restore",
+        "file_path": "commands/orchestration/context_restore.md",
+        "category": "orchestration",
+        "syntax": "/context-restore",
+        "description": "Expert Context Restoration Specialist focused on intelligent, semantic-aware context retrieval and...",
+        "agents": [],
+        "skills": [],
+        "content_length": 5693
+      },
+      {
+        "name": "context-save",
+        "file_path": "commands/orchestration/context_save.md",
+        "category": "orchestration",
+        "syntax": "/context-save",
+        "description": "An elite context engineering specialist focused on comprehensive, semantic, and dynamically...",
+        "agents": [],
+        "skills": [],
+        "content_length": 5259
+      },
+      {
+        "name": "full-stack-feature",
+        "file_path": "commands/orchestration/full_stack_feature.md",
+        "category": "orchestration",
+        "syntax": "/full-stack-feature",
+        "description": "Orchestrate full-stack feature development across backend, frontend, and infrastructure layers with API-first approach",
+        "agents": [
+          "backend-architect",
+          "database-architect",
+          "deployment-engineer",
+          "frontend-developer",
+          "performance-engineer",
+          "python-pro",
+          "security-auditor",
+          "sql-pro",
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 10070
+      },
+      {
+        "name": "improve-agent",
+        "file_path": "commands/orchestration/improve_agent.md",
+        "category": "orchestration",
+        "syntax": "/improve-agent",
+        "description": "Systematic improvement of existing agents through performance analysis, prompt engineering, and continuous iteration.",
+        "agents": [],
+        "skills": [],
+        "content_length": 9334
+      },
+      {
+        "name": "issue",
+        "file_path": "commands/orchestration/issue.md",
+        "category": "orchestration",
+        "syntax": "/issue",
+        "description": "You are a GitHub issue resolution expert specializing in systematic bug investigation, feature...",
+        "agents": [],
+        "skills": [],
+        "content_length": 18258
+      },
+      {
+        "name": "multi-agent-optimize",
+        "file_path": "commands/orchestration/multi_agent_optimize.md",
+        "category": "orchestration",
+        "syntax": "/multi-agent-optimize",
+        "description": "The Multi-Agent Optimization Tool is an advanced AI-driven framework designed to holistically...",
+        "agents": [],
+        "skills": [],
+        "content_length": 5942
+      },
+      {
+        "name": "solo-dev-retro",
+        "file_path": "commands/orchestration/solo_dev_retro.md",
+        "category": "orchestration",
+        "syntax": "/solo-dev-retro",
+        "description": "Solo developer retrospective that reviews the past sprint/week. Analyzes git history, VIBE-TODOs, decision log, and codebase health to produce a \"state of the project\" report with prioritized action items for the next sprint.",
+        "agents": [
+          "solo-dev-architect",
+          "solo-dev-reviewer",
+          "mobile-developer"
+        ],
+        "skills": [],
+        "content_length": 8284
+      },
+      {
+        "name": "solo-dev-sprint-plan",
+        "file_path": "commands/orchestration/solo_dev_sprint_plan.md",
+        "category": "orchestration",
+        "syntax": "/solo-dev-sprint-plan",
+        "description": "Sprint planning optimized for a team of one. Analyzes current project state, backlog, past velocity, and available capacity to produce a realistic 1-2 week plan using half-day estimates instead of story points.",
+        "agents": [
+          "solo-dev-architect",
+          "mobile-developer"
+        ],
+        "skills": [],
+        "content_length": 8787
+      },
+      {
+        "name": "standup-notes",
+        "file_path": "commands/orchestration/standup_notes.md",
+        "category": "orchestration",
+        "syntax": "/standup-notes",
+        "description": "You are an expert team communication specialist focused on async-first standup practices,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 29137
+      }
+    ],
+    "other": [
+      {
+        "name": "api-mock",
+        "file_path": "commands/other/api_mock.md",
+        "category": "other",
+        "syntax": "/api-mock",
+        "description": "You are an API mocking expert specializing in creating realistic mock services for development,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 43767
+      },
+      {
+        "name": "code-explain",
+        "file_path": "commands/other/code_explain.md",
+        "category": "other",
+        "syntax": "/code-explain",
+        "description": "You are a code education expert specializing in explaining complex code through clear narratives,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 22911
+      },
+      {
+        "name": "data-driven-feature",
+        "file_path": "commands/other/data_driven_feature.md",
+        "category": "other",
+        "syntax": "/data-driven-feature",
+        "description": "Build features guided by data insights, A/B testing, and continuous measurement using specialized...",
+        "agents": [
+          "backend-architect",
+          "business-analyst",
+          "data-engineer",
+          "data-scientist",
+          "deployment-engineer",
+          "frontend-developer",
+          "ml-engineer",
+          "observability-engineer"
+        ],
+        "skills": [],
+        "content_length": 11655
+      },
+      {
+        "name": "debug-trace",
+        "file_path": "commands/other/debug_trace.md",
+        "category": "other",
+        "syntax": "/debug-trace",
+        "description": "You are a debugging expert specializing in setting up comprehensive debugging environments,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 41174
+      },
+      {
+        "name": "deps-audit",
+        "file_path": "commands/other/deps_audit.md",
+        "category": "other",
+        "syntax": "/deps-audit",
+        "description": "You are a dependency security expert specializing in vulnerability scanning, license compliance,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 24893
+      },
+      {
+        "name": "doc-generate",
+        "file_path": "commands/other/doc_generate.md",
+        "category": "other",
+        "syntax": "/doc-generate",
+        "description": "You are a documentation expert specializing in creating comprehensive, maintainable documentation...",
+        "agents": [],
+        "skills": [],
+        "content_length": 17250
+      },
+      {
+        "name": "error-analysis",
+        "file_path": "commands/other/error_analysis.md",
+        "category": "other",
+        "syntax": "/health",
+        "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 35947
+      },
+      {
+        "name": "error-trace",
+        "file_path": "commands/other/error_trace.md",
+        "category": "other",
+        "syntax": "/error-trace",
+        "description": "You are an error tracking and observability expert specializing in implementing comprehensive error...",
+        "agents": [],
+        "skills": [],
+        "content_length": 43386
+      },
+      {
+        "name": "feature-development",
+        "file_path": "commands/other/feature_development.md",
+        "category": "other",
+        "syntax": "/feature-development",
+        "description": "Orchestrate end-to-end feature development from requirements to production deployment",
+        "agents": [
+          "architect-review",
+          "backend-architect",
+          "business-analyst",
+          "data-engineer",
+          "deployment-engineer",
+          "docs-architect",
+          "frontend-developer",
+          "observability-engineer",
+          "performance-engineer",
+          "security-auditor",
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 10506
+      },
+      {
+        "name": "full-review",
+        "file_path": "commands/other/full_review.md",
+        "category": "other",
+        "syntax": "/full-review",
+        "description": "Orchestrate comprehensive multi-dimensional code review using specialized review agents",
+        "agents": [
+          "architect-review",
+          "code-reviewer",
+          "deployment-engineer",
+          "docs-architect",
+          "legacy-modernizer",
+          "performance-engineer",
+          "security-auditor",
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 9583
+      },
+      {
+        "name": "ml-pipeline",
+        "file_path": "commands/other/ml_pipeline.md",
+        "category": "other",
+        "syntax": "/ml-pipeline",
+        "description": "Design and implement a complete ML pipeline for $ARGUMENTS. This workflow orchestrates multiple agents.",
+        "agents": [],
+        "skills": [],
+        "content_length": 9967
+      },
+      {
+        "name": "multi-platform",
+        "file_path": "commands/other/multi_platform.md",
+        "category": "other",
+        "syntax": "/multi-platform",
+        "description": "Build and deploy the same feature consistently across web, mobile, and desktop platforms using...",
+        "agents": [
+          "api-documenter",
+          "architect-review",
+          "backend-architect",
+          "frontend-developer",
+          "ios-developer",
+          "mobile-developer",
+          "performance-engineer",
+          "test-automator",
+          "ui-ux-designer"
+        ],
+        "skills": [],
+        "content_length": 9447
+      },
+      {
+        "name": "pr-enhance",
+        "file_path": "commands/other/pr_enhance.md",
+        "category": "other",
+        "syntax": "/pr-enhance",
+        "description": "You are a PR optimization expert specializing in creating high-quality pull requests that...",
+        "agents": [],
+        "skills": [],
+        "content_length": 20203
+      },
+      {
+        "name": "python-scaffold",
+        "file_path": "commands/other/python_scaffold.md",
+        "category": "other",
+        "syntax": "/python-scaffold",
+        "description": "You are a Python project architecture expert specializing in scaffolding production-ready Python...",
+        "agents": [],
+        "skills": [],
+        "content_length": 7126
+      },
+      {
+        "name": "refactor-clean",
+        "file_path": "commands/other/refactor_clean.md",
+        "category": "other",
+        "syntax": "/refactor-clean",
+        "description": "You are a code refactoring expert specializing in clean code principles, SOLID design patterns, and...",
+        "agents": [],
+        "skills": [],
+        "content_length": 22944
+      },
+      {
+        "name": "rust-project",
+        "file_path": "commands/other/rust_project.md",
+        "category": "other",
+        "syntax": "/rust-project",
+        "description": "You are a Rust project architecture expert specializing in scaffolding production-ready Rust...",
+        "agents": [],
+        "skills": [],
+        "content_length": 8422
+      },
+      {
+        "name": "smart-debug",
+        "file_path": "commands/other/smart_debug.md",
+        "category": "other",
+        "syntax": "/smart-debug",
+        "description": "Process issue from $ARGUMENTS. Parse for error messages, stack traces, reproduction steps.",
+        "agents": [
+          "debugger"
+        ],
+        "skills": [],
+        "content_length": 5643
+      },
+      {
+        "name": "tech-debt",
+        "file_path": "commands/other/tech_debt.md",
+        "category": "other",
+        "syntax": "/tech-debt",
+        "description": "You are a technical debt expert specializing in identifying, quantifying, and prioritizing...",
+        "agents": [],
+        "skills": [],
+        "content_length": 9765
+      }
+    ],
+    "performance": [
+      {
+        "name": "ai-review",
+        "file_path": "commands/performance/ai_review.md",
+        "category": "performance",
+        "syntax": "/ai-review",
+        "description": "You are an expert AI-powered code review specialist combining automated static analysis,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 14953
+      },
+      {
+        "name": "multi-agent-review",
+        "file_path": "commands/performance/multi_agent_review.md",
+        "category": "performance",
+        "syntax": "/multi-agent-review",
+        "description": "A sophisticated AI-powered code review system designed to provide comprehensive, multi-perspective...",
+        "agents": [],
+        "skills": [],
+        "content_length": 6263
+      },
+      {
+        "name": "performance-optimization",
+        "file_path": "commands/performance/performance_optimization.md",
+        "category": "performance",
+        "syntax": "/performance-optimization",
+        "description": "Optimize application performance end-to-end using specialized performance and optimization agents",
+        "agents": [
+          "backend-architect",
+          "cloud-architect",
+          "database-optimizer",
+          "frontend-developer",
+          "mobile-developer",
+          "observability-engineer",
+          "performance-engineer",
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 10356
+      }
+    ],
+    "security": [
+      {
+        "name": "android-pre-release-security-audit",
+        "file_path": "commands/security/android_pre_release_security_audit.md",
+        "category": "security",
+        "syntax": "/android-pre-release-security-audit",
+        "description": "Android-specific security audit covering OWASP MASVS, Firebase security rules, local data protection, network security, authentication, billing security, location privacy, and Play Store data safety compliance",
+        "agents": [
+          "security-auditor",
+          "threat-modeling-expert",
+          "mobile-developer"
+        ],
+        "skills": [],
+        "content_length": 12557
+      },
+      {
+        "name": "compliance-check",
+        "file_path": "commands/security/compliance_check.md",
+        "category": "security",
+        "syntax": "/compliance-check",
+        "description": "You are a compliance expert specializing in regulatory requirements for software systems including...",
+        "agents": [],
+        "skills": [],
+        "content_length": 30487
+      },
+      {
+        "name": "security-dependencies",
+        "file_path": "commands/security/security_dependencies.md",
+        "category": "security",
+        "syntax": "/security-dependencies",
+        "description": "You are a security expert specializing in dependency vulnerability analysis, SBOM generation, and...",
+        "agents": [],
+        "skills": [],
+        "content_length": 16583
+      },
+      {
+        "name": "security-hardening",
+        "file_path": "commands/security/security_hardening.md",
+        "category": "security",
+        "syntax": "/security-hardening",
+        "description": "Implement comprehensive security hardening with defense-in-depth strategy through multi-agent orchestration",
+        "agents": [
+          "backend-architect",
+          "backend-security-coder",
+          "deployment-engineer",
+          "devops-troubleshooter",
+          "domain-specific",
+          "frontend-security-coder",
+          "mobile-security-coder",
+          "security-auditor"
+        ],
+        "skills": [],
+        "content_length": 10296
+      },
+      {
+        "name": "security-sast",
+        "file_path": "commands/security/security_sast.md",
+        "category": "security",
+        "syntax": "/security_sast",
+        "description": "SAST Security Plugin",
+        "agents": [],
+        "skills": [],
+        "content_length": 13737
+      },
+      {
+        "name": "xss-scan",
+        "file_path": "commands/security/xss_scan.md",
+        "category": "security",
+        "syntax": "/xss-scan",
+        "description": "You are a frontend security specialist focusing on Cross-Site Scripting (XSS) vulnerability...",
+        "agents": [],
+        "skills": [],
+        "content_length": 8866
+      }
+    ],
+    "testing": [
+      {
+        "name": "android-test-matrix",
+        "file_path": "commands/testing/android_test_matrix.md",
+        "category": "testing",
+        "syntax": "/android-test-matrix",
+        "description": "Configures and executes a test matrix across multiple Android API levels and screen configurations. Sets up emulators or Gradle Managed Devices, runs instrumented tests, aggregates results, and highlights device-specific failures.",
+        "agents": [
+          "android-device-farm-operator",
+          "test-automator",
+          "android-adb-specialist"
+        ],
+        "skills": [],
+        "content_length": 8552
+      },
+      {
+        "name": "tdd-cycle",
+        "file_path": "commands/testing/tdd_cycle.md",
+        "category": "testing",
+        "syntax": "/tdd-cycle",
+        "description": "Execute comprehensive Test-Driven Development workflow with strict red-green-refactor discipline",
+        "agents": [
+          "architect-review",
+          "backend-architect",
+          "code-reviewer",
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 8305
+      },
+      {
+        "name": "tdd-green",
+        "file_path": "commands/testing/tdd_green.md",
+        "category": "testing",
+        "syntax": "/tdd-green",
+        "description": "Use Task tool with subagenttype=\"unit-testing::test-automator\" to implement minimal passing code....",
+        "agents": [
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 23304
+      },
+      {
+        "name": "tdd-red",
+        "file_path": "commands/testing/tdd_red.md",
+        "category": "testing",
+        "syntax": "/tdd-red",
+        "description": "Generate failing tests using Task tool with subagenttype=\"unit-testing::test-automator\". \"Generate...",
+        "agents": [
+          "test-automator"
+        ],
+        "skills": [],
+        "content_length": 4055
+      },
+      {
+        "name": "tdd-refactor",
+        "file_path": "commands/testing/tdd_refactor.md",
+        "category": "testing",
+        "syntax": "/tdd-refactor",
+        "description": "Use Task tool with subagent_type tdd-orchestrator to perform safe refactoring of the target code.",
+        "agents": [
+          "tdd-orchestrator"
+        ],
+        "skills": [],
+        "content_length": 5601
+      },
+      {
+        "name": "test-generate",
+        "file_path": "commands/testing/test_generate.md",
+        "category": "testing",
+        "syntax": "/test-generate",
+        "description": "You are a test automation expert specializing in generating comprehensive, maintainable unit tests...",
+        "agents": [],
+        "skills": [],
+        "content_length": 10482
+      }
+    ],
+    "troubleshooting": [
+      {
+        "name": "error-analysis",
+        "file_path": "commands/troubleshooting/error_analysis.md",
+        "category": "troubleshooting",
+        "syntax": "/health",
+        "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems,...",
+        "agents": [],
+        "skills": [],
+        "content_length": 35957
+      },
+      {
+        "name": "error-trace",
+        "file_path": "commands/troubleshooting/error_trace.md",
+        "category": "troubleshooting",
+        "syntax": "/error-trace",
+        "description": "You are an error tracking and observability expert specializing in implementing comprehensive error...",
+        "agents": [],
+        "skills": [],
+        "content_length": 43396
+      },
+      {
+        "name": "incident-response",
+        "file_path": "commands/troubleshooting/incident_response.md",
+        "category": "troubleshooting",
+        "syntax": "/incident-response",
+        "description": "Orchestrate multi-agent incident response with modern SRE practices for rapid resolution and learning",
+        "agents": [
+          "backend-architect",
+          "content-marketer",
+          "debugger",
+          "deployment-engineer",
+          "docs-architect",
+          "incident-responder",
+          "observability-engineer",
+          "performance-engineer",
+          "security-auditor"
+        ],
+        "skills": [],
+        "content_length": 10440
+      },
+      {
+        "name": "multi-agent-review",
+        "file_path": "commands/troubleshooting/multi_agent_review.md",
+        "category": "troubleshooting",
+        "syntax": "/multi-agent-review",
+        "description": "A sophisticated AI-powered code review system designed to provide comprehensive, multi-perspective...",
+        "agents": [],
+        "skills": [],
+        "content_length": 6267
+      },
+      {
+        "name": "smart-fix",
+        "file_path": "commands/troubleshooting/smart_fix.md",
+        "category": "troubleshooting",
+        "syntax": "/smart-fix",
+        "description": "Multi-agent debugging pipeline using error-detective and debugger agents for intelligent issue resolution.",
+        "agents": [
+          "backend-architect",
+          "code-reviewer",
+          "database-optimizer",
+          "debugger",
+          "devops-troubleshooter",
+          "error-detective",
+          "golang-pro",
+          "performance-engineer",
+          "python-pro",
+          "rust-pro",
+          "security-auditor",
+          "test-automator",
+          "typescript-pro"
+        ],
+        "skills": [],
+        "content_length": 31923
+      }
+    ]
+  },
+  "categories": [
+    "accessibility",
+    "architecture",
+    "code-quality",
+    "data-analysis",
+    "database",
+    "deployment",
+    "devops",
+    "documentation",
+    "framework-migration",
+    "git-workflows",
+    "mobile-development",
+    "multi-agent",
+    "non-coding/business",
+    "non-coding/creative",
+    "non-coding/education",
+    "non-coding/healthcare",
+    "non-coding/research",
+    "non-coding/writing",
+    "orchestration",
+    "other",
+    "performance",
+    "security",
+    "testing",
+    "troubleshooting"
+  ]
+}

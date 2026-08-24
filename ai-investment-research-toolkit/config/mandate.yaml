@@ -1,0 +1,51 @@
+# mandate.yaml — the rules of engagement. Every later stage is bounded by this
+# file; the orchestrator refuses to run action stages if required fields are
+# missing. Copy any field into a config/mandate.local.yaml override (git-ignored)
+# to tune per-run without editing this tracked default.
+#
+# *For informational and research purposes only. Not financial, investment, or
+# tax advice. Nothing here places real-money trades.*
+
+objective: >
+  Paper-first research loop: discover and validate patterns, screen a universe,
+  monitor for catalysts, and record calibrated predictions. Learning + track
+  record FIRST; capital LAST.
+
+# --- Account (SIMULATED until Gate C is met) ---
+capital:
+  simulated_usd: 50000      # paper account size used for position sizing
+  currency: USD
+
+# --- Cadence (§14 default: dual) ---
+cadence:
+  monitor: daily            # Stage 5 tripwire/catalyst sweep (handles crypto 24/7)
+  research: weekly          # Stages 1-4 deep research + screen
+
+# --- KILL SWITCH (design principle 6) ---
+# Set halt: true to immediately stop all ACTION stages (4-6). Research and
+# journaling may continue read-only. This is your single global off switch.
+halt: false
+
+# --- Gate C: real-money unlock (§5) ---
+# LiveBrokerAdapter stays disabled until ALL THREE are true. This is deliberate.
+live_enabled: false                 # (3) the manual switch — you flip it, nothing else
+gate_c:
+  min_resolved_predictions: 100     # (1) ≥100 resolved, journaled predictions
+  max_brier_score: 0.18             # (2) running Brier score at or below this
+  require_manual_enable: true       # live_enabled must be set by hand
+  # Gate C also requires an integrity-clean journal (no tampered probabilities,
+  # no resolutions without provenance). Enforced by score_brier.py via
+  # journal_integrity.py — see FAILURE_MODES.md F12/F13 and SECURITY.md §4e.
+
+# --- Run limits (loop / cost safety — FAILURE_MODES.md F1/F2/F3/F6) ---
+# Bounds on a single cadence pass so a runaway loop or deep-research fan-out
+# aborts with a partial report instead of spinning or overspending. The
+# orchestrator and agents enforce these (no runtime harness sits above them).
+run_limits:
+  max_stage_reentries: 2            # F1: abort a stage re-entered more than this in one run
+  max_unavailable_retries: 1        # F2: retry a queued UNAVAILABLE input at most this often, then advance read-only
+  max_dossiers_per_run: 25          # F3: cap the Stage 2 deep-research fan-out; degrade to top-N and abort the rest
+  nonzero_exit_is_hard_stop: true   # F6: any non-zero gate-script exit is a STOP, never a silent retry
+
+# --- Asset-class scope is defined in asset_classes.yaml ---
+# --- Risk limits (Gate B) are defined in risk_limits.yaml ---

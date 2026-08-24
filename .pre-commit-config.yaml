@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: validate-command-frontmatter
+        name: validate command frontmatter
+        entry: python3 domain-agentic-resources/commands/validate_command_frontmatter.py
+        language: system
+        files: ^domain-agentic-resources/commands/.+\.md$

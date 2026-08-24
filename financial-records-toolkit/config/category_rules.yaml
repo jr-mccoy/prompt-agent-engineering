@@ -1,0 +1,73 @@
+# category_rules.example.yaml
+# Seed rules for categorize_transactions.py, built on the Plaid personal-finance
+# taxonomy (16 primary categories). Copy to category_rules.yaml and extend.
+#
+# Matching order: mcc_mappings -> merchant_whitelist (exact, then substring)
+# -> regex_patterns -> fuzzy. First hit wins. Anything unmatched becomes UNKNOWN
+# and is routed to the research queue.
+#
+# Plaid primary categories (use these EXACT strings as `category`):
+#   INCOME, TRANSFER_IN, TRANSFER_OUT, LOAN_PAYMENTS, BANK_FEES, ENTERTAINMENT,
+#   FOOD_AND_DRINK, GENERAL_MERCHANDISE, HOME_IMPROVEMENT, MEDICAL, PERSONAL_CARE,
+#   GENERAL_SERVICES, GOVERNMENT_AND_NON_PROFIT, TRANSPORTATION, TRAVEL,
+#   RENT_AND_UTILITIES
+# Full taxonomy CSV (free): https://plaid.com/documents/transactions-personal-finance-category-taxonomy.csv
+
+taxonomy:
+  - INCOME
+  - TRANSFER_IN
+  - TRANSFER_OUT
+  - LOAN_PAYMENTS
+  - BANK_FEES
+  - ENTERTAINMENT
+  - FOOD_AND_DRINK
+  - GENERAL_MERCHANDISE
+  - HOME_IMPROVEMENT
+  - MEDICAL
+  - PERSONAL_CARE
+  - GENERAL_SERVICES
+  - GOVERNMENT_AND_NON_PROFIT
+  - TRANSPORTATION
+  - TRAVEL
+  - RENT_AND_UTILITIES
+
+# Exact or substring match on a known payee (description_clean is uppercased).
+merchant_whitelist:
+  "WHOLE FOODS": {category: FOOD_AND_DRINK, subcategory: GROCERIES}
+  "TRADER JOE": {category: FOOD_AND_DRINK, subcategory: GROCERIES}
+  "SAFEWAY": {category: FOOD_AND_DRINK, subcategory: GROCERIES}
+  "AMAZON": {category: GENERAL_MERCHANDISE, subcategory: ONLINE_MARKETPLACES}
+  "WALMART": {category: GENERAL_MERCHANDISE, subcategory: SUPERSTORES}
+  "TARGET": {category: GENERAL_MERCHANDISE, subcategory: SUPERSTORES}
+  "HOME DEPOT": {category: HOME_IMPROVEMENT, subcategory: HARDWARE}
+  "NETFLIX": {category: ENTERTAINMENT, subcategory: STREAMING}
+  "SPOTIFY": {category: ENTERTAINMENT, subcategory: STREAMING}
+  "CVS": {category: MEDICAL, subcategory: PHARMACY}
+  "WALGREENS": {category: MEDICAL, subcategory: PHARMACY}
+
+# Bank-descriptor regex patterns (case-insensitive). Good for chains/families.
+regex_patterns:
+  - {pattern: "STARBUCKS|PEETS|DUNKIN|COFFEE", category: FOOD_AND_DRINK, subcategory: COFFEE}
+  - {pattern: "MCDONALD|CHIPOTLE|SUBWAY|RESTAURANT|GRILL|PIZZA|TACO", category: FOOD_AND_DRINK, subcategory: RESTAURANT}
+  - {pattern: "CHEVRON|\\bSHELL\\b|EXXON|\\bMOBIL\\b|\\bARCO\\b|\\b76\\b|\\bBP\\b|GAS STATION|\\bFUEL\\b", category: TRANSPORTATION, subcategory: GAS}
+  - {pattern: "UBER|LYFT", category: TRANSPORTATION, subcategory: RIDESHARE}
+  - {pattern: "DELTA|UNITED|AMERICAN AIR|SOUTHWEST|HOTEL|MARRIOTT|HILTON|AIRBNB", category: TRAVEL, subcategory: TRAVEL}
+  - {pattern: "PG&E|PGE|EDISON|COMCAST|XFINITY|VERIZON|AT&T|T-MOBILE|WATER DEPT", category: RENT_AND_UTILITIES, subcategory: UTILITIES}
+  - {pattern: "RENT|LANDLORD|PROPERTY MGMT|MORTGAGE", category: RENT_AND_UTILITIES, subcategory: RENT}
+  - {pattern: "PAYROLL|DIRECT DEP|DIR DEP|ACH CREDIT.*PAYROLL|SALARY", category: INCOME, subcategory: WAGES}
+  - {pattern: "IRS|FRANCHISE TAX|TAX PYMT|DMV|USPS|GOV", category: GOVERNMENT_AND_NON_PROFIT, subcategory: GOVERNMENT}
+  - {pattern: "TRANSFER|XFER|ONLINE TRANSFER TO|WIRE OUT", category: TRANSFER_OUT, subcategory: ACCOUNT_TRANSFER}
+  - {pattern: "DEPOSIT|TRANSFER FROM|WIRE IN", category: TRANSFER_IN, subcategory: ACCOUNT_TRANSFER}
+  - {pattern: "ATM|CASH WITHDRAWAL|WITHDRAWAL", category: TRANSFER_OUT, subcategory: CASH_WITHDRAWAL}
+  - {pattern: "OVERDRAFT|NSF|SERVICE FEE|MONTHLY FEE|ATM FEE", category: BANK_FEES, subcategory: FEES}
+  - {pattern: "LOAN|CARD PAYMENT|AUTO PAY.*LOAN|STUDENT LN", category: LOAN_PAYMENTS, subcategory: LOAN}
+  - {pattern: "DAYCARE|CHILDCARE|KINDERCARE|PRESCHOOL|TUITION", category: GENERAL_SERVICES, subcategory: CHILDCARE}
+  - {pattern: "GYM|FITNESS|SALON|BARBER|HAIR", category: PERSONAL_CARE, subcategory: PERSONAL_CARE}
+
+# Optional MCC -> category map (if your descriptors include "MCC:1234").
+mcc_mappings:
+  "5411": {category: FOOD_AND_DRINK, subcategory: GROCERIES}
+  "5541": {category: TRANSPORTATION, subcategory: GAS}
+  "5812": {category: FOOD_AND_DRINK, subcategory: RESTAURANT}
+  "5912": {category: MEDICAL, subcategory: PHARMACY}
+  "7011": {category: TRAVEL, subcategory: LODGING}

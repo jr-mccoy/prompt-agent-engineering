@@ -1,0 +1,28 @@
+# asset_classes.yaml — which asset classes are active and the universe filters
+# that define each hunting ground (Stage 1). Turn a class off by setting
+# active: false. Crypto and options need net-new research prompts (ARCHITECTURE
+# §8) that ship in a later phase; options is therefore off by default.
+#
+# *For informational and research purposes only. Not financial advice.*
+
+equity:
+  active: true
+  universe_filters:
+    max_market_cap_usd: 300000000   # micro/small-cap focus; raise to widen
+    min_market_cap_usd: 10000000
+    min_avg_daily_dollar_volume: 100000   # liquidity floor (microcap risk)
+    exchanges: [NYSE, NASDAQ]
+
+crypto:
+  active: true
+  universe_filters:
+    min_market_cap_usd: 5000000
+    min_token_age_days: 90          # avoid brand-new tokens
+    require_onchain_data: true      # needs OnChainAdapter (later phase)
+
+options:
+  active: false                     # enable once §8 options prompts exist
+  universe_filters:
+    underlyings_from: equity        # only write options on active equity universe
+    min_open_interest: 100
+    max_days_to_expiry: 90

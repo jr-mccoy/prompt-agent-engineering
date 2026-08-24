@@ -1,0 +1,39 @@
+# data_sources.yaml — which implementation backs each adapter SEAM. Everything
+# external is a stubbable seam (ARCHITECTURE §10) so the loop runs on sample /
+# manual data before you buy anything. Default = stub for all seams; the loop
+# then reads from data/input/ and the built-in paper simulator (manual-only mode).
+#
+# To go live on a seam, set implementation to your provider id and put the API
+# key in an environment variable or a git-ignored config/*.local.yaml — NEVER here.
+#
+# *For informational and research purposes only. Not financial advice.*
+
+# implementation: stub | <provider-id>
+# manual_input:   where the stub reads pasted data from, in manual-only mode
+
+MarketDataAdapter:                  # prices / volume (Stages 1, 5)
+  implementation: stub
+  manual_input: data/input/prices/
+
+FundamentalsAdapter:               # financials / ratios (Stage 2)
+  implementation: stub
+  manual_input: data/input/fundamentals/
+
+FilingsAdapter:                    # 10-K / 10-Q / news (Stages 2, 5)
+  implementation: stub
+  manual_input: data/input/filings/
+
+OnChainAdapter:                    # token metrics (Stages 2, 5) — crypto only
+  implementation: stub
+  manual_input: data/input/onchain/
+
+OptionsChainAdapter:               # chains / IV / Greeks (Stages 2, 6) — options only
+  implementation: stub
+  manual_input: data/input/options/
+
+PaperBrokerAdapter:                # simulated fills (Stage 6)
+  implementation: builtin_simulator # default paper engine; no account needed
+
+LiveBrokerAdapter:                 # real orders (Stage 6)
+  implementation: stub
+  enabled: false                   # DISABLED — gated behind mandate.yaml Gate C (§5)

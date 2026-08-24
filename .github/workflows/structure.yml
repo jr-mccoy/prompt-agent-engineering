@@ -1,0 +1,67 @@
+name: Structure
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structure:
+    name: Repository structure
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      # The allowlist is derived from the layout rather than hardcoded, so it
+      # cannot drift behind the repository the way the previous fixed list did.
+      # Only the *shape* of a top-level entry is asserted.
+      - name: Top-level layout
+        run: |
+          status=0
+          while IFS= read -r dir; do
+            case "$dir" in
+              .claude|.github) ;;
+              domain-*) ;;
+              *-toolkit|*-kit|*-studio|*-library|*-system|*-system-design|*-factory) ;;
+              authoring|scripts|techniques|tests) ;;
+              *)
+                echo "::error::unexpected top-level directory: $dir"
+                echo "  (allowed: domain-*, *-toolkit, *-kit, *-studio, *-library,"
+                echo "   *-system, *-factory, authoring, scripts, techniques, tests,"
+                echo "   .claude, .github)"
+                status=1 ;;
+            esac
+          done < <(find . -maxdepth 1 -type d ! -name '.' ! -name '.git' -printf '%f\n' | sort)
+          exit "$status"
+
+      - name: Required READMEs present
+        run: |
+          status=0
+          for readme in \
+            README.md \
+            domain-agentic-resources/README.md \
+            domain-agentic-resources/skills/README.md \
+            domain-agentic-resources/agents/README.md \
+            domain-agentic-resources/commands/README.md \
+            domain-agentic-resources/personas/README.md \
+            techniques/README.md \
+            authoring/README.md \
+            authoring/skill-patterns/README.md ; do
+            if [ ! -f "$readme" ]; then
+              echo "::error::missing required README: $readme"; status=1
+            fi
+          done
+          exit "$status"
+
+      - name: No filenames with spaces
+        run: |
+          hits=$(find . -path ./.git -prune -o -name '* *' -print)
+          if [ -n "$hits" ]; then
+            echo "::error::filenames containing spaces:"; echo "$hits"; exit 1
+          fi

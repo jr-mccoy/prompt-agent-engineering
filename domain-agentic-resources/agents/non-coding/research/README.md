@@ -1,0 +1,17 @@
+# Research
+
+## Scope
+This folder contains non-coding agent resources for research workflows.
+
+## Inclusion criteria
+- Focuses on domain-specific planning, analysis, communication, or execution tasks.
+- Avoids code-generation-centric instructions unless incidental support is required.
+- Uses patterns that can be applied repeatedly by practitioners in this domain.
+
+## Examples
+- Literature synthesis planner.
+- Interview protocol designer.
+- Evidence gap mapper.
+
+## Quality gates checklist
+Use the [Non-Coding Quality Gates Checklist Template](../../../documentation/templates/non_coding_quality_gates.md) before publishing or promoting any non-coding resource from this folder.

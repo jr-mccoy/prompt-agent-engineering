@@ -1,0 +1,32 @@
+# NEVER commit personal financial data. The tooling is versioned; your data is not.
+
+# Raw statements and all generated outputs:
+data/input_pdfs/*
+data/output/*
+!data/input_pdfs/.gitkeep
+!data/output/.gitkeep
+
+# Common statement / export locations anywhere in the tree:
+*.pdf
+*.ofx
+*.qfx
+*_transactions.csv
+*_raw.txt
+*_meta.json
+*_reconciliation.json
+*_research_queue.csv
+*_review_queue.csv
+*.xlsx
+
+# Researched-merchant findings may reveal spending; ignore by default:
+researched.yaml
+research/
+
+# Python / editor noise:
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# Keep the example/seed configs tracked, but ignore any *.local.yaml overrides:
+config/*.local.yaml

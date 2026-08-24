@@ -1,0 +1,10 @@
+# Working tree — author material and generated outputs stay out of version control.
+# These can contain unpublished manuscripts, private drafts, and PII (named people).
+data/input/*
+data/output/*
+!data/input/.gitkeep
+!data/output/.gitkeep
+
+# Python
+__pycache__/
+*.pyc

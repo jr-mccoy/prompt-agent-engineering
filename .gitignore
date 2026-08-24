@@ -1,0 +1,51 @@
+# Root .gitignore for the AI Prompting Guides Collection.
+#
+# This is a documentation/prompt repository — most content is markdown and is
+# meant to be tracked. This file keeps OS/editor noise and (as a safety net)
+# secrets and local working data out of git.
+#
+# NOTE: the self-contained toolkits (ai-investment-research-toolkit/,
+# financial-records-toolkit/, etc.) ship their OWN nested .gitignore files that
+# exclude their personal/financial data (PDFs, statements, snapshots, outputs).
+# Those remain authoritative for their trees — do not remove them.
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# --- Python tooling (scripts/) ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+
+# --- Node (if any tooling is added) ---
+node_modules/
+
+# --- Secrets safety net (should never be committed anywhere) ---
+.env
+.env.*
+secrets.yaml
+*_secret.yaml
+*.local.yaml
+
+# --- Generic temporary files ---
+*.tmp
+*.log
+
+# --- Claude Code local / machine state ---
+# Tracked and shared: .claude/settings.json, .claude/skills/, .claude/output-styles/
+# Everything below is per-machine or vendored third-party code and must stay local.
+# Plugins listed in settings.json `enabledPlugins` install themselves from the
+# marketplace on first run — the cache does not need to be committed.
+.claude/settings.local.json
+.claude/plugins/cache/
+.claude/plugins/installed_plugins.json
+.claude/plugins/known_marketplaces.json

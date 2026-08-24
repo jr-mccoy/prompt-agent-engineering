@@ -1,0 +1,104 @@
+name: Validate
+
+# Read-only validation. This workflow never writes to the repository: it runs the
+# repository's own generators and validators and fails if committed outputs are
+# stale or a check does not pass.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Repository validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install validator dependencies
+        run: python3 -m pip install --disable-pip-version-check -r requirements-ci.txt
+
+      # --- Generated outputs must match what the generators produce ----------
+      # The generator stamps the current date into its output, so the freshness
+      # check ignores that one line (-I) and fails on any real content drift.
+      - name: Prompt index is current
+        run: |
+          python3 scripts/generate_prompt_index.py
+          git diff --exit-code \
+            -I'"generated"' \
+            -I'^\*\*Generated:\*\*' \
+            -- PROMPT_INDEX.json PROMPT_INDEX.md
+
+      - name: Agentic inventory counts are current
+        run: python3 domain-agentic-resources/inventory_counts.py --check
+
+      # --- Catalog / metadata integrity --------------------------------------
+      - name: Technique index integrity
+        working-directory: techniques
+        run: python3 audit_technique_index.py
+
+      - name: Technique catalog claims match reality
+        run: python3 scripts/validate_technique_catalog.py
+
+      - name: Command frontmatter
+        run: python3 domain-agentic-resources/commands/validate_command_frontmatter.py
+
+      - name: Naming conventions
+        run: python3 scripts/validate_naming_conventions.py --ci
+
+      # --- Content integrity --------------------------------------------------
+      - name: Relative Markdown links resolve
+        run: python3 scripts/check_relative_links.py
+
+      - name: Shell script syntax
+        run: |
+          status=0
+          while IFS= read -r -d '' f; do
+            bash -n "$f" || { echo "syntax error: $f"; status=1; }
+          done < <(find . -name '*.sh' -not -path './.git/*' -print0)
+          exit "$status"
+
+      - name: Python syntax
+        run: |
+          status=0
+          while IFS= read -r -d '' f; do
+            python3 -m py_compile "$f" || { echo "syntax error: $f"; status=1; }
+          done < <(find . -name '*.py' -not -path './.git/*' -print0)
+          exit "$status"
+
+  toolkit-tests:
+    name: Self-contained toolkit tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: continuity-kit unit tests
+        working-directory: continuity-kit
+        run: python3 -m unittest discover -s tests -v
+
+      - name: ai-investment-research-toolkit tests
+        working-directory: ai-investment-research-toolkit
+        run: python3 -m unittest discover -s tests -v

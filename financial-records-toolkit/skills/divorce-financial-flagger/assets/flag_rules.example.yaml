@@ -1,0 +1,61 @@
+# flag_rules.example.yaml
+# Rules for flag_transactions.py. Copy to flag_rules.yaml and tune thresholds to
+# your situation (talk to your attorney about what matters for your case).
+#
+# A flag means "a reviewer may want to look at this row." It is NOT a legal
+# conclusion and says NOTHING about anyone's intent. Tune amounts to your normal
+# spending so the review queue stays signal-rich.
+#
+# Each rule supports:
+#   code            short stable identifier (REQUIRED)
+#   description     human explanation (for your reference)
+#   regex           case-insensitive pattern matched against description_clean
+#   match_categories list of categories the row must be in
+#   direction       credit | debit | any   (default any)
+#   min_amount      signed amount >= this (use for credits/inflows)
+#   min_abs_amount  absolute amount >= this
+#   max_amount      signed amount <= this
+#   round_amount    true to require a round multiple of round_step
+#   round_step      default 100
+#   not_regex        pattern that, if matched, EXCLUDES the row (e.g. keep a
+#                    recognized paycheck out of "large non-payroll deposit")
+#   exclude_categories list of categories that should NOT trigger this rule
+#   priority        HIGH | MEDIUM | LOW | INFO   (HIGH sets needs_review=TRUE)
+
+dimensions:
+
+  # 1) Asset & property tracing: transfers, large purchases, asset movements.
+  asset_property:
+    - {code: ACCOUNT_TRANSFER, description: "Transfer/wire between accounts", regex: "TRANSFER|XFER|WIRE", priority: MEDIUM}
+    - {code: LARGE_TRANSFER, description: "Large transfer/wire", regex: "TRANSFER|XFER|WIRE", min_abs_amount: 5000, priority: HIGH}
+    - {code: LARGE_PURCHASE, description: "Large single purchase", min_abs_amount: 3000, direction: debit, priority: MEDIUM}
+    - {code: CRYPTO_EXCHANGE, description: "Cryptocurrency exchange activity", regex: "COINBASE|KRAKEN|BINANCE|GEMINI|CRYPTO|BLOCKCHAIN", priority: HIGH}
+    - {code: BROKERAGE_INVESTMENT, description: "Brokerage/investment movement", regex: "SCHWAB|FIDELITY|VANGUARD|ETRADE|ROBINHOOD|MERRILL", priority: MEDIUM}
+    - {code: PRECIOUS_LUXURY, description: "Jewelry/luxury/precious metals", regex: "JEWEL|DIAMOND|ROLEX|GOLD|COIN DEALER|PAWN", priority: MEDIUM}
+
+  # 2) Income tracing: deposits, payroll, irregular inflows.
+  income:
+    - {code: PAYROLL, description: "Payroll / direct deposit", regex: "PAYROLL|DIRECT DEP|DIR DEP|SALARY", direction: credit, priority: INFO}
+    # LARGE_DEPOSIT = a large NON-payroll inflow. not_regex keeps a recognized
+    # paycheck out of this flag, so a biweekly paycheck over the threshold is
+    # logged as INCOME:PAYROLL|INFO only, not flagged as a large deposit.
+    # Set min_amount above your normal paycheck and add your employer's
+    # descriptor to not_regex if it isn't caught by the patterns below.
+    - {code: LARGE_DEPOSIT, description: "Large NON-payroll deposit/inflow", direction: credit, min_amount: 2500, not_regex: "PAYROLL|DIRECT DEP|DIR DEP|SALARY|PENSION|SOC SEC|SSA|IRS|TAX REF", exclude_categories: [INCOME], priority: MEDIUM}
+    - {code: CASH_DEPOSIT, description: "Cash deposit (source to confirm)", regex: "CASH DEPOSIT|DEPOSIT CASH|ATM DEPOSIT", direction: credit, priority: MEDIUM}
+    - {code: SIDE_INCOME, description: "Payment-platform inflow (possible side income)", regex: "VENMO|ZELLE|PAYPAL|CASH APP|SQUARE|STRIPE", direction: credit, priority: MEDIUM}
+
+  # 3) Child & custody expenses: childcare, school, pediatric, activities.
+  child_custody:
+    - {code: CHILDCARE, description: "Daycare/childcare/preschool", regex: "DAYCARE|CHILDCARE|KINDERCARE|PRESCHOOL|NANNY|AU PAIR", priority: MEDIUM}
+    - {code: SCHOOL_TUITION, description: "School / tuition", regex: "TUITION|SCHOOL|ACADEMY|PTA|COLLEGE", priority: LOW}
+    - {code: CHILD_MEDICAL, description: "Pediatric / children's medical", regex: "PEDIATRIC|CHILDREN'S|ORTHODONT|DENTAL.*KIDS", priority: LOW}
+    - {code: CHILD_ACTIVITY, description: "Kids' activities / sports / camp", regex: "SOCCER|GYMNASTICS|KARATE|DANCE|SCOUTS|CAMP|LITTLE LEAGUE", priority: LOW}
+
+  # 4) Cash & undocumented flows: ATM, cash, round-dollar, checks to cash.
+  cash_undocumented:
+    - {code: ATM_WITHDRAWAL, description: "ATM / cash withdrawal", regex: "ATM|CASH WITHDRAWAL|WITHDRAWAL", direction: debit, priority: MEDIUM}
+    - {code: LARGE_CASH, description: "Large cash withdrawal", regex: "ATM|CASH|WITHDRAWAL", direction: debit, min_abs_amount: 500, priority: HIGH}
+    - {code: ROUND_CASH, description: "Round-dollar cash withdrawal", regex: "ATM|CASH|WITHDRAWAL", direction: debit, round_amount: true, round_step: 100, min_abs_amount: 200, priority: MEDIUM}
+    - {code: CHECK_TO_CASH, description: "Check written to cash/self", regex: "CHECK.*CASH|CASH CHECK|CHK.*CASH", priority: MEDIUM}
+    - {code: P2P_OUT, description: "Peer-to-peer money out (untraced)", regex: "VENMO|ZELLE|PAYPAL|CASH APP", direction: debit, min_abs_amount: 200, priority: LOW}

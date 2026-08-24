@@ -1,0 +1,106 @@
+# Source-Standards Profiles
+# Per-field credibility hierarchies used by Stage 2 (source discovery) and Stage 3
+# (matching & weighting). Each profile ranks source TYPES from most to least
+# authoritative for that field, names preferred discovery tools, and sets the
+# minimum bar a source must clear to *anchor a load-bearing factual claim*.
+#
+# Usage: Stage 0 selects a profile by field. Stage 3 uses `tiers` to weight
+# candidate sources and `minimum_anchor_tier` as the floor for a KEEP disposition.
+# These are DEFAULTS — the orchestrator may override per project with the user.
+#
+# No profile guarantees a source is correct; it ranks *credibility signals*.
+# Final "does this source actually support the claim" is always a Stage-3 judgment.
+
+version: 1
+
+# Applied to every profile unless overridden.
+global:
+  # A source used to anchor a factual claim must be:
+  anchor_requirements:
+    - "independently accessible (resolvable URL, DOI, ISBN, or stable citation)"
+    - "attributable to a named author/organization (no anonymous content as sole anchor)"
+    - "dated (publication or last-updated date present)"
+  # Never allowed to anchor a claim by itself:
+  never_sole_anchor:
+    - "AI-generated content (including this system's own output)"
+    - "content-farm / SEO-spam pages"
+    - "unattributed wiki revisions (use the wiki's cited primary source instead)"
+    - "a source that merely restates the claim without its own evidence"
+  # Recency: fields differ; see per-profile `recency_caution_years`.
+  conflict_rule: "When credible sources disagree, surface the disagreement (do not average it away); prefer higher-tier + more recent + more specific."
+
+profiles:
+
+  general:
+    label: "General nonfiction (default)"
+    description: "Field-agnostic fallback. Use when no specialized profile fits."
+    tiers:  # tier 1 = most authoritative
+      1: ["peer-reviewed research", "official statistics / government data", "primary documents"]
+      2: ["books from established publishers", "reputable long-form journalism", "expert-authored reference works"]
+      3: ["trade press", "reputable magazines", "named-expert blogs with citations"]
+      4: ["general news aggregation", "encyclopedias (as a pointer to primary sources)"]
+    minimum_anchor_tier: 3
+    recency_caution_years: 10
+    preferred_tools: ["WebSearch", "WebFetch"]
+
+  medical_health:
+    label: "Medical / health / clinical"
+    description: "Highest-stakes factual bar. Health claims carry real harm risk."
+    tiers:
+      1: ["systematic reviews / meta-analyses", "clinical practice guidelines (named body)", "RCTs"]
+      2: ["cohort / case-control studies", "government health agency pages (CDC/NIH/WHO/FDA)"]
+      3: ["review articles", "textbook chapters", "professional-society patient materials"]
+      4: ["reputable health journalism citing primary studies"]
+    minimum_anchor_tier: 2
+    recency_caution_years: 5
+    preferred_tools: ["PubMed", "Consensus", "WebSearch"]
+    extra_guard: "Never state a health claim as established without a tier-1/2 anchor; flag any claim that could influence a treatment/diagnosis decision for professional verification."
+
+  legal:
+    label: "Legal"
+    description: "Primary law outranks commentary. Jurisdiction is load-bearing."
+    tiers:
+      1: ["statutes / regulations", "binding case law (correct jurisdiction)", "constitutional text"]
+      2: ["persuasive case law", "official agency guidance", "Restatements / uniform codes"]
+      3: ["law-review articles", "treatises", "bar-association practice guides"]
+      4: ["reputable legal journalism", "named-attorney analysis"]
+    minimum_anchor_tier: 2
+    recency_caution_years: 5
+    preferred_tools: ["WebSearch", "WebFetch"]
+    extra_guard: "Verify jurisdiction and current validity (not overturned/superseded). This system does not give legal advice."
+
+  business_economics:
+    label: "Business / economics / finance"
+    tiers:
+      1: ["official economic data (BLS/Fed/Eurostat/etc.)", "audited filings (SEC/EDGAR)", "peer-reviewed economics"]
+      2: ["reputable industry research (named methodology)", "central-bank / IMF / World Bank reports"]
+      3: ["established business press", "analyst reports (disclose COI)"]
+      4: ["trade blogs with data", "company self-reported (label as such)"]
+    minimum_anchor_tier: 3
+    recency_caution_years: 5
+    preferred_tools: ["WebSearch", "WebFetch"]
+    extra_guard: "Label company self-reported figures as such; watch conflicts of interest in analyst/vendor sources."
+
+  science_technical:
+    label: "Science / engineering / technical"
+    tiers:
+      1: ["peer-reviewed research", "official standards (ISO/IEEE/RFC/W3C)", "primary technical specs"]
+      2: ["reputable preprints (label as not-yet-reviewed)", "authoritative reference works", "vendor primary docs"]
+      3: ["well-regarded technical books", "conference materials", "named-expert technical writing with sources"]
+      4: ["reputable technical journalism"]
+    minimum_anchor_tier: 3
+    recency_caution_years: 7
+    preferred_tools: ["Consensus", "WebSearch", "WebFetch"]
+    extra_guard: "Label preprints as not-yet-peer-reviewed; prefer the versioned/official spec over a summary."
+
+  history_humanities:
+    label: "History / humanities / social science"
+    tiers:
+      1: ["primary sources (documents, records, archives)", "peer-reviewed scholarship"]
+      2: ["university-press monographs", "reputable edited volumes"]
+      3: ["established general histories", "museum / archive institutional pages"]
+      4: ["reputable long-form journalism / documentaries with sourcing"]
+    minimum_anchor_tier: 3
+    recency_caution_years: 25   # older scholarship can remain authoritative
+    preferred_tools: ["WebSearch", "WebFetch"]
+    extra_guard: "Distinguish primary sources from interpretation; note historiographical disagreement rather than picking one reading."

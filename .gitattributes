@@ -1,0 +1,15 @@
+# Normalize line endings. Text files are stored with LF in the repository and
+# checked out with the platform's native endings, so a Windows contributor does
+# not reintroduce CRLF into tracked content.
+* text=auto eol=lf
+
+# Executable scripts must always be LF: CRLF breaks the shebang and produces
+# "syntax error near unexpected token $'\r'" at runtime.
+*.sh   text eol=lf
+*.bash text eol=lf
+*.py   text eol=lf
+
+# Windows-native files keep CRLF.
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
