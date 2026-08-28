@@ -132,6 +132,26 @@ These errors apply across the entire medical education subdomain:
 
 ---
 
+## Common Failure Modes
+
+Educators using these prompts should watch for:
+
+1. **Level mismatch:** Case or question calibrated to wrong learner level. A PBL case for M3 students written at M1 complexity insults learners; at fellow complexity, it frustrates them.
+
+2. **Missing facilitator guide:** Producing only learner-facing materials. Every case, scenario, and exercise requires a parallel educator guide with facilitation moves and common tangents.
+
+3. **Omitting standard-setting:** Assessment instruments without passing criteria are unusable in high-stakes contexts. Always specify how the pass score is set.
+
+4. **Conflating formative and summative:** Using summative language (grades, pass/fail) in a formative tool, or omitting judgment in a summative tool.
+
+5. **One-size assessments:** Using a single OSCE checklist for M3 students AND residents. Calibration to level is required.
+
+6. **Passive faculty development:** Designing a module that transmits information rather than practices the educator behavior. Kirkpatrick Level 3 (behavior change) requires active skill rehearsal.
+
+---
+
+---
+
 ## Routing Within This Subdomain
 
 | Educator Need | Prompt |

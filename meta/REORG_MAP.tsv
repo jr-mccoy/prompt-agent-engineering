@@ -1,3 +1,18 @@
+# Reorganization map: old_path<TAB>new_path
+#
+# Every file this reorganization moved or removed, one line each.
+# scripts/apply_reorg_map.py reads this to repoint references at new homes.
+#
+# A removal still records a destination -- the file that absorbed it -- because a
+# reader following an old reference wants that file:
+#   old\tDELETED superseded-by:surviving/path.md   the survivor of a duplicate pair
+#   old\tDELETED merged-into:surviving/path.md     content folded into another file
+#   old\tDELETED split-into:surviving/directory/   content split across a directory
+#
+# The reorganization ran in phases, so some entries chain: a file absorbed into a
+# second file in phase 1, which phase 2 then moved. Each line records what
+# happened at that step, so an intermediate destination may itself appear as a
+# later line's source. Follow chains to the end -- apply_reorg_map.py does.
 domain-AI-ML/learning-ai-ml/mllearn_reproduce_a_paper_plan.md	domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md
 domain-AI-ML/problem-framing-scoping/mlframe_is_this_an_ml_problem.md	domain-AI-ML/problem-framing-scoping/mlframe_is_this_ml_problem.md
 domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_multi_service_teaching_coordination.md	domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_multi_service_coordination.md
@@ -80,7 +95,7 @@ domain-engineering-workflows/tasks/task_sorting_algorithm_designer.md	domain-sof
 domain-engineering-workflows/tasks/task_sorting_algorithm_reviewer.md	domain-software-engineering/analysis/feature-design/task_sorting_algorithm_reviewer.md
 domain-engineering-workflows/tasks/task_sorting_kotlin_implementation_verifier.md	domain-software-engineering/analysis/feature-design/task_sorting_kotlin_implementation_verifier.md
 domain-engineering-workflows/tasks/task_sorting_workflow_guide.md	domain-software-engineering/analysis/feature-design/task_sorting_workflow_guide.md
-domain-engineering-workflows/tasks/workflow_driven_prompts.md	DELETED source-mega-file:all-12-prompts-extracted-to-domain-engineering-workflows/workflows/
+domain-engineering-workflows/tasks/workflow_driven_prompts.md	DELETED split-into:domain-engineering-workflows/workflows/
 domain-engineering-workflows/workflows/engineering_24_hour_leader_pulse.md	domain-business-strategy/research/research_24_hour_leader_pulse.md
 domain-engineering-workflows/workflows/engineering_goal_system_designer.md	DELETED merged-into:domain-personal-development/prompts/goals/goals_goal_system_designer.md
 domain-engineering-workflows/workflows/engineering_stakeholder_navigation_guide.md	DELETED merged-into:domain-personal-development/prompts/stakeholder/stakeholder_navigation_guide.md

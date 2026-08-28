@@ -15,6 +15,12 @@ tracks (see [Which domain does this belong in?](../CLAUDE.md)):
 | **Product** | **this domain** |
 | Org / company | `domain-business-strategy/` |
 
+> **The craft guide that lived here moved.** The dissolved domain's README was a
+> 1,100-line field guide — document anti-patterns, a certainty framework for
+> business projections, and skeleton templates for five recurring document types.
+> It now sits beside the business-writing prompts it supports:
+> [`domain-professional-writing/field_guide.md`](../domain-professional-writing/field_guide.md).
+
 > **Renamed from `domain-professional-communication`.** That name described
 > nothing the directory contained: every prompt was prefixed `product_` or
 > `design_`, and six of ten duplicated prompts in two other domains. The
