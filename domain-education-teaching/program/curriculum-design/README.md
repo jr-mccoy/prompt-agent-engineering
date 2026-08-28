@@ -1,55 +1,40 @@
 # Curriculum Design
 
-**18 prompts** for program-level curriculum design across K-12, higher education, workforce/CTE, and medical education. These prompts produce structured planning artifacts (maps, matrices, sequences, frameworks) — not vague advice.
+*18 prompts · part of [`domain-education-teaching`](../../README.md)*
 
-## When to Use These vs. Existing Classroom Prompts
+## Use these when
 
-These are **program- and system-level** prompts. For single-unit or single-lesson work, see the root `domain-education-teaching/` directory (e.g., `teaching_unit_curriculum_planner.md`, `teaching_lesson_plan_creator.md`).
+Programme-level curriculum architecture: maps, scope and sequence for K-12, higher ed and workforce, backward design, standards alignment and crosswalks, competency frameworks, vertical and horizontal alignment, learning progressions, milestones, and remediation pathways.
 
-## Prompt Index
+## Go elsewhere when
 
-### Foundation (use first)
+- **Planning a single unit or lesson** → [`../../instructor/lesson-planning/`](../../instructor/lesson-planning/)
+- **Defining what graduates should be able to do** → [`../outcomes-assessment/`](../outcomes-assessment/)
+- **Health-professions curriculum** → [`../../../domain-healthcare-clinical/prompts/medical-education/curriculum-design/`](../../../domain-healthcare-clinical/prompts/medical-education/curriculum-design/)
 
-| Prompt | What It Produces |
+## Prompts
+
+| File | Purpose |
 |---|---|
-| [`program_learning_objectives_writer_blooms.md`](program_learning_objectives_writer_blooms.md) | ABCD + SMART learning objectives at specified Bloom's level, with DOK tagging and assessment evidence pointer |
-| [`program_blooms_taxonomy_calibrator.md`](program_blooms_taxonomy_calibrator.md) | Audit of existing objectives or items for Bloom's level + Webb's DOK alignment, with rewrite recommendations |
-| [`program_competency_framework_designer.md`](program_competency_framework_designer.md) | Domains, sub-competencies, performance indicators, and progression levels parameterized by sector |
-| [`program_backward_program_design.md`](program_backward_program_design.md) | UbD at program scale: Stage 1 (Desired Results) → Stage 2 (Acceptable Evidence) → Stage 3 (Learning Plan) |
-| [`program_curriculum_map_builder.md`](program_curriculum_map_builder.md) | Course × outcome × standard × assessment matrix with I/D/M depth coding |
-| [`program_standards_alignment_audit.md`](program_standards_alignment_audit.md) | Audit existing curriculum against a specified framework with evidence quality and gap diagnostics |
-| [`program_standards_crosswalk_generator.md`](program_standards_crosswalk_generator.md) | Two-framework crosswalk with Full/Partial/None/Conflict tagging |
+| [`program_backward_program_design.md`](program_backward_program_design.md) | Design or substantially redesign a complete educational or training program using Understanding by Design… |
+| [`program_blooms_taxonomy_calibrator.md`](program_blooms_taxonomy_calibrator.md) | Audit a set of existing learning objectives, assessment items, or curriculum components against the… |
+| [`program_competency_framework_designer.md`](program_competency_framework_designer.md) | Build a competency framework for a program — domains, sub-competencies, observable performance indicators,… |
+| [`program_competency_mapping_workforce.md`](program_competency_mapping_workforce.md) | Map a workforce-training curriculum to occupational competency sources — O*NET KSAs and work activities,… |
+| [`program_course_design_he.md`](program_course_design_he.md) | Design a higher-education course using Biggs' constructive alignment — intended learning outcomes (ILOs)… |
+| [`program_curriculum_map_builder.md`](program_curriculum_map_builder.md) | Build an evidence-traceable program curriculum map linking courses or modules to program outcomes,… |
+| [`program_horizontal_alignment_mapper.md`](program_horizontal_alignment_mapper.md) | Map opportunities for cross-disciplinary alignment within a single grade or program level — coordinating… |
+| [`program_learning_objectives_writer_blooms.md`](program_learning_objectives_writer_blooms.md) | Generate, revise, and validate observable learning objectives using ABCD construction, SMART quality… |
+| [`program_milestone_alignment_designer.md`](program_milestone_alignment_designer.md) | Design a milestone or checkpoint architecture for a competency-based program — progression checkpoints,… |
+| [`program_progression_map_designer.md`](program_progression_map_designer.md) | Design an evidence-based learning progression for a single concept, skill, or competency — sequencing… |
+| [`program_remediation_pathway_designer.md`](program_remediation_pathway_designer.md) | Design a remediation pathway for learners who haven't reached an expected level — K-12 MTSS/RTI tiered… |
+| [`program_scope_sequence_he.md`](program_scope_sequence_he.md) | Design a higher-education program's scope and sequence — courses by term across the credential length,… |
+| [`program_scope_sequence_k12.md`](program_scope_sequence_k12.md) | Design a K-12 multi-year scope-and-sequence for a subject area — grade-by-grade and unit-by-unit, with… |
+| [`program_scope_sequence_workforce.md`](program_scope_sequence_workforce.md) | Design an evidence-anchored workforce, career and technical education (CTE), pre-apprenticeship, or… |
+| [`program_standards_alignment_audit.md`](program_standards_alignment_audit.md) | Audit an existing curriculum against a specified standards framework (CCSS, NGSS, state standards, AP, IB,… |
+| [`program_standards_crosswalk_generator.md`](program_standards_crosswalk_generator.md) | Generate a crosswalk between two standards frameworks — e.g., state standards ↔ CCSS, CCSS ↔ AP, NGSS ↔… |
+| [`program_unit_design_advanced.md`](program_unit_design_advanced.md) | Design a coherent, accessible instructional unit using Understanding by Design, Universal Design for… |
+| [`program_vertical_alignment_auditor.md`](program_vertical_alignment_auditor.md) | Audit a subject's curriculum across grades or program levels for vertical alignment — confirming that… |
 
-### Sector Scope & Sequence
+---
 
-| Prompt | Sector |
-|---|---|
-| [`program_scope_sequence_k12.md`](program_scope_sequence_k12.md) | K-12 multi-year, multi-grade scope and sequence with pacing |
-| [`program_scope_sequence_he.md`](program_scope_sequence_he.md) | HE program course sequence with prerequisites, gateway, capstone |
-| [`program_scope_sequence_workforce.md`](program_scope_sequence_workforce.md) | Workforce/CTE/apprenticeship pathway with RI + OJL |
-| [`program_course_design_he.md`](program_course_design_he.md) | Constructive alignment course shell (Biggs) for HE |
-
-### Alignment & Coordination
-
-| Prompt | What It Produces |
-|---|---|
-| [`program_vertical_alignment_auditor.md`](program_vertical_alignment_auditor.md) | Cross-grade/level depth-progression audit with pattern diagnostics |
-| [`program_horizontal_alignment_mapper.md`](program_horizontal_alignment_mapper.md) | Same-level cross-disciplinary coordination map |
-
-### Specialized Design
-
-| Prompt | What It Produces |
-|---|---|
-| [`program_progression_map_designer.md`](program_progression_map_designer.md) | Developmental progression with waypoints, misconceptions, diagnostic probes |
-| [`program_milestone_alignment_designer.md`](program_milestone_alignment_designer.md) | Milestone/checkpoint architecture with evidence, decisions, remediation |
-| [`program_remediation_pathway_designer.md`](program_remediation_pathway_designer.md) | MTSS/RTI or competency-based remediation with tiered response |
-| [`program_unit_design_advanced.md`](program_unit_design_advanced.md) | UbD + UDL + scaffolding + accessibility unit design |
-| [`program_competency_mapping_workforce.md`](program_competency_mapping_workforce.md) | O*NET + industry credential + apprenticeship mapping |
-
-## Related
-
-- `../program-outcomes-assessment/` — outcomes-evidence design
-- `../accreditation-program-review/` — accreditation self-study and program review
-- `../faculty-development/` — capacity building for these designs
-- `../program-evaluation-analytics/` — measuring whether the design works
-- `../../domain-healthcare-clinical/prompts/medical-education/curriculum-design/` — medical-education program-level prompts (CBME, EPAs, ACGME)
+Adding a prompt here? It takes the `program` track's prefix (`program_`), `category: education-teaching/program/curriculum-design`, and the full eight-field frontmatter. See [`EXPANSION_ROADMAP.md`](../../EXPANSION_ROADMAP.md) for the conventions.

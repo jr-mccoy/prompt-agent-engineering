@@ -1,22 +1,30 @@
-# Program Outcomes & Assessment
+# Programme Outcomes & Assessment
 
-**8 prompts** for designing program-level student learning outcomes architecture, mapping outcomes to assessment evidence, building assessment blueprints, and auditing the resulting evidence plan. Across K-12, higher ed, workforce, and medical education.
+*8 prompts · part of [`domain-education-teaching`](../../README.md)*
 
-## Prompt Index
+## Use these when
 
-| Prompt | What It Produces |
+What the programme claims graduates can do, and the evidence for it: PSLO/ISLO/CSLO architecture, outcome-to-assessment mapping, assessment blueprints, signature assignments, capstones, competency evidence plans, and gap analysis.
+
+## Go elsewhere when
+
+- **Classroom assessment** → [`../../instructor/assessment-design/`](../../instructor/assessment-design/)
+- **Sequencing the courses that deliver the outcomes** → [`../curriculum-design/`](../curriculum-design/)
+- **Presenting the evidence to an accreditor** → [`../accreditation-review/`](../accreditation-review/)
+
+## Prompts
+
+| File | Purpose |
 |---|---|
-| [`program_program_outcomes_framework.md`](program_program_outcomes_framework.md) | ISLO / PSLO / CSLO architecture with parent-child mapping and audit |
-| [`program_outcomes_to_assessment_mapper.md`](program_outcomes_to_assessment_mapper.md) | Multi-source evidence plan with direct/indirect distinction and sufficiency audit |
-| [`program_assessment_blueprint_builder.md`](program_assessment_blueprint_builder.md) | Objectives × Bloom's × item count blueprint with feasibility check |
-| [`program_program_gap_analysis.md`](program_program_gap_analysis.md) | Taught-vs-required gap table with root cause and tiered fill plans |
-| [`program_signature_assignment_designer.md`](program_signature_assignment_designer.md) | Course-embedded assignment producing PSLO evidence with GRASPS + rubric |
-| [`program_capstone_assessment_designer.md`](program_capstone_assessment_designer.md) | Culminating capstone with public artifact + defense + external review |
-| [`program_rubric_alignment_to_outcomes.md`](program_rubric_alignment_to_outcomes.md) | Audit existing rubric for outcome alignment with revision recommendations |
-| [`program_competency_assessment_evidence_design.md`](program_competency_assessment_evidence_design.md) | CBME-style multi-source, multi-occasion evidence plan with entrustment decisions |
+| [`program_assessment_blueprint_builder.md`](program_assessment_blueprint_builder.md) | Build an assessment blueprint (test specification table) for a course or program assessment: objectives ×… |
+| [`program_capstone_assessment_designer.md`](program_capstone_assessment_designer.md) | Design a culminating capstone assessment — research project, design challenge, portfolio defense,… |
+| [`program_competency_assessment_evidence_design.md`](program_competency_assessment_evidence_design.md) | Design a multi-source, multi-occasion evidence plan for competency-based assessment — direct observations,… |
+| [`program_outcomes_to_assessment_mapper.md`](program_outcomes_to_assessment_mapper.md) | Map every program outcome (PSLO / competency / graduate-profile element) to the assessment evidence that… |
+| [`program_program_gap_analysis.md`](program_program_gap_analysis.md) | Diagnose gaps between what a program currently delivers and what is required (by standards, accreditor,… |
+| [`program_program_outcomes_framework.md`](program_program_outcomes_framework.md) | Design a coherent program-outcomes architecture — Institutional Student Learning Outcomes, Program Student… |
+| [`program_rubric_alignment_to_outcomes.md`](program_rubric_alignment_to_outcomes.md) | Audit a rubric for alignment with the learning outcomes it is supposed to assess — checking that every… |
+| [`program_signature_assignment_designer.md`](program_signature_assignment_designer.md) | Design a signature assignment — an embedded course-level assessment that produces program-outcome evidence… |
 
-## Related
+---
 
-- `../curriculum-design/` — designing the program structure these outcomes describe
-- `../accreditation-program-review/` — packaging this evidence for accreditation
-- `../program-evaluation-analytics/` — interpreting the evidence
+Adding a prompt here? It takes the `program` track's prefix (`program_`), `category: education-teaching/program/outcomes-assessment`, and the full eight-field frontmatter. See [`EXPANSION_ROADMAP.md`](../../EXPANSION_ROADMAP.md) for the conventions.

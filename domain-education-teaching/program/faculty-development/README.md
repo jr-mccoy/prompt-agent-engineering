@@ -1,19 +1,26 @@
 # Faculty Development
 
-**5 prompts** for building faculty / teacher / instructor capacity at program, department, or institutional scale. Covers planning, professional learning communities, coaching, assessment-literacy curriculum, and new-faculty onboarding.
+*5 prompts · part of [`domain-education-teaching`](../../README.md)*
 
-## Prompt Index
+## Use these when
 
-| Prompt | What It Produces |
+Building instructor capability at programme scale: multi-semester development plans, professional learning communities, instructional coaching programmes, assessment literacy curricula, and new-faculty onboarding.
+
+## Go elsewhere when
+
+- **Teaching a class yourself** → [`../../instructor/`](../../instructor/)
+- **Measuring whether development changed outcomes** → [`../evaluation-analytics/`](../evaluation-analytics/)
+
+## Prompts
+
+| File | Purpose |
 |---|---|
-| [`program_faculty_development_plan_designer.md`](program_faculty_development_plan_designer.md) | Multi-semester FD plan: needs assessment, topics, modalities, evaluation |
-| [`program_professional_learning_community_designer.md`](program_professional_learning_community_designer.md) | PLC cycle, norms, protocols, year arc, accountability |
-| [`program_instructional_coaching_program.md`](program_instructional_coaching_program.md) | Coaching model, cycle, observation tools, coach training, evaluation |
-| [`program_assessment_literacy_curriculum.md`](program_assessment_literacy_curriculum.md) | Six-module FD curriculum: purposes / item writing / rubrics / data / equity / closing the loop |
-| [`program_faculty_onboarding_program.md`](program_faculty_onboarding_program.md) | New-faculty onboarding: milestones, mentoring, equity-minded design |
+| [`program_assessment_literacy_curriculum.md`](program_assessment_literacy_curriculum.md) | Design a faculty development curriculum that builds assessment literacy — assessment purposes, item… |
+| [`program_faculty_development_plan_designer.md`](program_faculty_development_plan_designer.md) | Design a multi-semester faculty development plan — needs assessment, topic sequence, modality mix,… |
+| [`program_faculty_onboarding_program.md`](program_faculty_onboarding_program.md) | Design a new-faculty onboarding program — first-year milestones, mentor structure, required and… |
+| [`program_instructional_coaching_program.md`](program_instructional_coaching_program.md) | Design an instructional coaching program — coaching model, cycle, observation tools, coach training,… |
+| [`program_professional_learning_community_designer.md`](program_professional_learning_community_designer.md) | Design a Professional Learning Community structure — cycle, norms, protocols, artifacts, and… |
 
-## Related
+---
 
-- `../curriculum-design/` — the program work faculty are developing capacity to do
-- `../program-outcomes-assessment/` — assessment-literacy outputs
-- `../program-evaluation-analytics/` — measuring FD impact
+Adding a prompt here? It takes the `program` track's prefix (`program_`), `category: education-teaching/program/faculty-development`, and the full eight-field frontmatter. See [`EXPANSION_ROADMAP.md`](../../EXPANSION_ROADMAP.md) for the conventions.
