@@ -84,6 +84,12 @@ EXCLUDE_FILES = {
     # across 12 domains were indexed as if they were prompts.
     "EXPANSION_ROADMAP.md",
     "field_guide.md",
+    # Per-domain meta docs (audits, backlogs, test reviews, reorganization
+    # records). These describe the prompts; they are not prompts themselves.
+    "GUIDE_SECTION_AUDIT.md",
+    "MAINTENANCE_BACKLOG.md",
+    "PROMPT_TEST_REVIEW.md",
+    "REORG_MAP.tsv",
     "MASTER_TECHNIQUE_INDEX.md",
     "USE_CASE_LOOKUP.md",
     "SKILL_PATTERN_INDEX.md",
