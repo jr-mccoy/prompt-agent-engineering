@@ -2,11 +2,11 @@
 title: "Workflow: Office Hours & Class Discussion Prep"
 category: education-teaching/learner/guides/college-students
 description: "Turn vague confusion into specific productive questions for office hours; prepare a defensible claim and textual evidence for class discussion. Two short related workflows that share the underlying skill — converting fuzzy thinking into something you can act on."
+updated: "2026-05-13"
 audience: college-students
 chain_length: 2
 estimated_time: "20-45 min"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Office Hours & Class Discussion Prep

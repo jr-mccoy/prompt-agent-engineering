@@ -3,11 +3,11 @@ title: "Common Formative Assessment for PLC"
 category: education-teaching/instructor/assessment-design
 description: "Build a PLC-aligned common formative assessment (CFA): essential standard, item bank, scoring agreement, data-meeting protocol, and tiered instructional response — designed to drive collaborative inquiry, not grading uniformity."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (PLC inquiry cycle, DOK)
-  - OC-01  # Output Templates
-  - QA-01  # Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-01
 difficulty: advanced
 tags:
   - assessment

@@ -3,11 +3,11 @@ title: "World Language Communicative Task Designer"
 category: education-teaching/instructor/subject-pedagogy/world-languages
 description: "Design a task-based world-language activity built around a real communicative purpose — information gap, decision-making, problem-solving, or opinion exchange — with proficiency-targeted scaffolds and outcome-based assessment."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (TBLT, ACTFL proficiency)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - world-languages

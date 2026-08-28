@@ -2,11 +2,11 @@
 title: "Workflow: STEM Problem Solving"
 category: education-teaching/learner/guides/college-students
 description: "Per-problem chain for math, physics, chemistry, engineering: decode the problem, Socratic step-by-step (no final answer given by AI), error analysis on your work, concept map for the unit. Builds skill instead of getting the answer."
+updated: "2026-05-13"
 audience: college-students
 chain_length: 4
 estimated_time: "20-60 min per problem"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: STEM Problem Solving

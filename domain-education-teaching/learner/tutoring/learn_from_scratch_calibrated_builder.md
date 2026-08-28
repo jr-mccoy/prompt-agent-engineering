@@ -3,14 +3,18 @@ title: "Teach Me From Scratch: Calibrated Concept Builder"
 category: education-teaching/learner/tutoring
 description: "Learner-facing tutoring workflow that starts from zero, calibrates prerequisites, and adaptively teaches in layered checkpoints."
 techniques:
-  - ED-01  # Iterative Scaffolding
-  - RP-02  # Audience-Specific Framing
-  - MP-03  # Task Clarification
-  - NE-01  # Single-Question Pacing
-  - QA-08  # Gate-Based Verification
-  - RT-04  # Analogical Reasoning
+  - ED-01
+  - RP-02
+  - MP-03
+  - NE-01
+  - QA-08
+  - RT-04
 difficulty: intermediate
-tags: [learner-facing, tutoring, concept-clarification, adaptive-learning]
+tags:
+  - learner-facing
+  - tutoring
+  - concept-clarification
+  - adaptive-learning
 updated: "2026-05-15"
 ---
 

@@ -3,11 +3,11 @@ title: "Math Error Analysis Task Designer"
 category: education-teaching/instructor/subject-pedagogy/math
 description: "Design a task in which students analyze a fictional student's wrong solution — locating the error, classifying the misconception, and writing the correction with reasoning — to convert misconception data into instructional leverage."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (error taxonomy)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - math

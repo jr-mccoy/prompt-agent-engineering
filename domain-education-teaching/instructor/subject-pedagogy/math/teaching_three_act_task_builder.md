@@ -3,11 +3,11 @@ title: "3-Act Math Task Builder"
 category: education-teaching/instructor/subject-pedagogy/math
 description: "Design a complete 3-act math task — Act 1 (hook + question), Act 2 (information release), Act 3 (reveal + sequel) — anchored to a specific standard, with anticipated student approaches."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application
-  - RT-04  # Emotional Intelligence
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - RT-04
+  - QA-02
 difficulty: intermediate
 tags:
   - math

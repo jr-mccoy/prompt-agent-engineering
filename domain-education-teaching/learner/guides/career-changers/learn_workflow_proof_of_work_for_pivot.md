@@ -2,11 +2,11 @@
 title: "Workflow: Proof-of-Work for the Pivot"
 category: education-teaching/learner/guides/career-changers
 description: "Position your portfolio and accumulated work for the target role's application context. Adapts the general proof-of-work portfolio prompt for the pivot-specific case where you need to make career-change make sense to a hiring manager."
+updated: "2026-05-13"
 audience: career-changers
 chain_length: 3
 estimated_time: "3-6 hours"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Proof-of-Work for the Pivot

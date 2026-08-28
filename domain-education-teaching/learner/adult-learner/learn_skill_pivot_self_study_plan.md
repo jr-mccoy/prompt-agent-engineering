@@ -9,7 +9,6 @@ techniques:
   - QA-01
   - CM-01
 difficulty: advanced
-audience: career-changers
 tags:
   - career-change
   - self-study
@@ -17,7 +16,6 @@ tags:
   - adult-learner
   - planning
   - reskilling
-intended_use: production
 updated: "2026-05-13"
 related_prompts:
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
@@ -25,6 +23,8 @@ related_prompts:
   - domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md
   - domain-education-teaching/learner/adult-learner/learn_credential_pathway_decision.md
   - domain-education-teaching/learner/adult-learner/learn_portfolio_while_learning.md
+audience: career-changers
+intended_use: production
 ---
 
 # Skill-Pivot Self-Study Plan Designer

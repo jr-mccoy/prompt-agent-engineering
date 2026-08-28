@@ -3,11 +3,11 @@ title: "ELA K–2 Phonics Scope and Sequence"
 category: education-teaching/instructor/subject-pedagogy/ela
 description: "Build a K–2 phonics scope and sequence aligned with structured-literacy / Science-of-Reading principles — sequencing phonemes, sound-spelling correspondences, and high-frequency words across a year with explicit assessment checkpoints."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (structured literacy / SoR)
-  - OC-01  # Output Templates
-  - QA-01  # Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-01
 difficulty: advanced
 tags:
   - ela

@@ -9,23 +9,23 @@ techniques:
   - RT-04
   - QA-01
 difficulty: intermediate
-audience:
-  - adult-learners-returning
-  - career-changers
-  - self-directed-adult-learners
 tags:
   - adult-learner
   - study-workflow
   - andragogy
   - self-directed
   - learning-strategy
-intended_use: production
 updated: "2026-05-13"
 related_prompts:
   - domain-education-teaching/learner/guides/shared/learn_andragogy_principles.md
   - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
   - domain-education-teaching/learner/memory-and-recall/learn_feynman_teach_back_coach.md
   - domain-education-teaching/learner/self-assessment/learn_mistake_log_reviewer.md
+audience:
+  - adult-learners-returning
+  - career-changers
+  - self-directed-adult-learners
+intended_use: production
 ---
 
 # Andragogy-Aware Study Workflow for Adult Learners

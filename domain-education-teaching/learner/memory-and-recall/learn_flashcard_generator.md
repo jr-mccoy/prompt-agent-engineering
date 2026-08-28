@@ -3,11 +3,11 @@ title: "Study Session: Flashcard Generator"
 category: education-teaching/learner/memory-and-recall
 description: "Generates tiered study flashcards (Q&A pairs) for college students, organized by difficulty and optimized for export to Anki, Quizlet, or manual review."
 techniques:
-  - ED-02  # Progressive Exercise Generation
-  - ST-04  # Delimited Sections
-  - RP-02  # Audience-Specific Framing
-  - DS-06  # Prioritization Guidance
-  - NE-01  # Single-Question Pacing
+  - ED-02
+  - ST-04
+  - RP-02
+  - DS-06
+  - NE-01
 difficulty: intermediate
 tags:
   - college

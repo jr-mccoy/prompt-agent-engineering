@@ -3,11 +3,11 @@ title: "Study Session: Study Guide Builder"
 category: education-teaching/learner/memory-and-recall
 description: "Creates a comprehensive, exam-ready study guide for college students — with key concepts, relationships, common exam questions, mnemonics, and a self-assessment checklist calibrated to their current knowledge."
 techniques:
-  - ST-04  # Delimited Sections
-  - RP-02  # Audience-Specific Framing
-  - DS-06  # Prioritization Guidance
-  - RT-04  # Analogical Reasoning
-  - NE-01  # Single-Question Pacing
+  - ST-04
+  - RP-02
+  - DS-06
+  - RT-04
+  - NE-01
 difficulty: intermediate
 tags:
   - college

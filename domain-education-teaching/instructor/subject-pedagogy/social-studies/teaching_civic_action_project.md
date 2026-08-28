@@ -3,11 +3,11 @@ title: "Social Studies Civic Action Project"
 category: education-teaching/instructor/subject-pedagogy/social-studies
 description: "Design a multi-week student-led civic action project: issue selection, root-cause research, stakeholder analysis, action planning, execution, and reflection — with explicit non-partisan framing and feasibility constraints."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (action civics + project-based learning)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: advanced
 tags:
   - social-studies

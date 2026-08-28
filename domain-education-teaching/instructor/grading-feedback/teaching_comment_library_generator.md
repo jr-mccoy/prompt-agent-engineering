@@ -3,11 +3,11 @@ title: "Reusable Comment Library Generator"
 category: education-teaching/instructor/grading-feedback
 description: "Build a personal comment library indexed by rubric criterion and severity tier — so high-leverage feedback can be deployed quickly across a stack while staying specific enough to drive revision."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (rubric criterion × severity matrix)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - grading

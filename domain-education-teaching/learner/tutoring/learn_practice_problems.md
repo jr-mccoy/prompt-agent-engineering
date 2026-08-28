@@ -3,11 +3,11 @@ title: "Study Session: Practice Problems"
 category: education-teaching/learner/tutoring
 description: "Generates graduated practice problems with progressive hints and fully worked solutions for college students, adapted to their demonstrated skill level."
 techniques:
-  - ED-02  # Progressive Exercise Generation
-  - ED-01  # Iterative Scaffolding
-  - RT-01  # Chain-of-Thought
-  - ED-03  # Guided Discovery
-  - NE-01  # Single-Question Pacing
+  - ED-02
+  - ED-01
+  - RT-01
+  - ED-03
+  - NE-01
 difficulty: intermediate
 tags:
   - college

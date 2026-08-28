@@ -3,11 +3,11 @@ title: "Science Claim-Evidence-Reasoning Scaffold"
 category: education-teaching/instructor/subject-pedagogy/science
 description: "Build CER scaffolds at three tiers (heavy, medium, light) for a specific science task — pushing students from sentence frames to independent argument from evidence over the year."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (CER as scientific argument)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - science

@@ -2,11 +2,11 @@
 title: "Workflow: Writing Rust Recovery"
 category: education-teaching/learner/guides/adult-returning
 description: "Diagnose which specific academic-writing skills have rusted during years of professional writing, then rehearse the rusty ones before the first graded paper. Treats professional writing experience as a resource."
+updated: "2026-05-13"
 audience: adult-learners-returning
 chain_length: 3
 estimated_time: "2-4 hours"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Writing Rust Recovery

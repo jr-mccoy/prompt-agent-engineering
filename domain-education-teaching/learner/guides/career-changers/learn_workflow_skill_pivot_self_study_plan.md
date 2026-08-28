@@ -2,11 +2,11 @@
 title: "Workflow: Skill-Pivot Self-Study Plan"
 category: education-teaching/learner/guides/career-changers
 description: "Design a 3, 6, or 12-month self-study plan calibrated to the target role's actual hiring bar. Chains the pivot plan prompt with time architecture, portfolio strategy, and checkpoint design. Output: an end-to-end pivot plan you can defend."
+updated: "2026-05-13"
 audience: career-changers
 chain_length: 5
 estimated_time: "4-8 hours over 1-2 weeks"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Skill-Pivot Self-Study Plan

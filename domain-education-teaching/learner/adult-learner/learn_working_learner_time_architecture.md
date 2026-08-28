@@ -9,7 +9,6 @@ techniques:
   - QA-02
   - NE-01
 difficulty: intermediate
-audience: adult-learners-returning
 tags:
   - adult-learner
   - working-student
@@ -17,7 +16,6 @@ tags:
   - calendar
   - non-traditional
   - parents
-intended_use: production
 updated: "2026-05-13"
 related_prompts:
   - domain-education-teaching/learner/adult-learner/learn_cold_start_return_to_school.md
@@ -25,6 +23,8 @@ related_prompts:
   - domain-productivity/deep-work/deepwork_match_tasks_to_calendar.md
   - domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md
   - domain-productivity/reviews/reviews_time_audit_evidence_based.md
+audience: adult-learners-returning
+intended_use: production
 ---
 
 # Working Learner: Time Architecture Under Real Constraints

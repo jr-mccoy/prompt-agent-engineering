@@ -3,11 +3,11 @@ title: "Lab Report Feedback (CER-Anchored)"
 category: education-teaching/instructor/grading-feedback
 description: "Generate feedback on a student lab report keyed to CER components — claim, evidence, reasoning — plus procedure, data quality, and limitations, naming a single highest-leverage revision rather than rewriting the report."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (CER as scientific argument)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - grading

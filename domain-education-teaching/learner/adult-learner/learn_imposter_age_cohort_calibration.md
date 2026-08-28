@@ -9,7 +9,6 @@ techniques:
   - ED-03
   - CM-02
 difficulty: intermediate
-audience: adult-learners-returning
 tags:
   - adult-learner
   - imposter
@@ -18,13 +17,14 @@ tags:
   - non-traditional
   - returning-student
   - identity
-intended_use: production
 updated: "2026-05-13"
 related_prompts:
   - domain-personal-development/prompts/identity/identity_confidence_calibration.md
   - domain-personal-development/prompts/identity/identity_comparison_envy_diagnostic.md
   - domain-education-teaching/learner/adult-learner/learn_prior_learning_articulation.md
   - domain-education-teaching/learner/adult-learner/learn_writing_rust_recovery.md
+audience: adult-learners-returning
+intended_use: production
 ---
 
 # Imposter Calibration for Adults in Age-Mixed Classrooms

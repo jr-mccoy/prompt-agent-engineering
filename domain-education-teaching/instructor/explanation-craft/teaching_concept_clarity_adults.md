@@ -2,6 +2,11 @@
 title: "Concept Clarity for Adults"
 category: education-teaching/instructor/explanation-craft
 description: "Make complex concepts genuinely intuitive for adults using mental models, structured analogies, and the 'explain it to a smart friend' approach"
+techniques:
+  - CM-02
+  - RT-02
+  - ST-02
+  - OC-04
 tags:
   - education
   - teaching
@@ -12,12 +17,6 @@ tags:
   - memory
   - professional-development
   - lifelong-learning
-techniques:
-  - CM-02 Audience Adaptation
-  - CT-01 Perspective Shifting
-  - RT-02 Multi-Dimensional Analysis
-  - ST-02 Sequential Steps
-  - OC-04 Comprehensive Example Outputs
 updated: "2026-02-27"
 ---
 
@@ -224,7 +223,7 @@ Next time someone says "I don't want to put that mRNA in my body," you can expla
 
 **Techniques Used:**
 - CM-02 (Audience Adaptation) — Language and depth calibrated for educated non-specialists
-- CT-01 (Perspective Shifting) — Multiple analogy systems (wanted poster, fax machine, software update)
+- Perspective shifting (no catalog ID) — Multiple analogy systems (wanted poster, fax machine, software update)
 - RT-02 (Multi-Dimensional Analysis) — Mechanism, misconception, debate, and application all addressed
 - ST-02 (Sequential Steps) — Six-step mechanism walkthrough with clear causal chain
 - OC-04 (Comprehensive Example Outputs) — Full worked example demonstrates the complete format

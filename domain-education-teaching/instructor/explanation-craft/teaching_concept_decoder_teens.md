@@ -2,6 +2,11 @@
 title: "Concept Decoder for Teenagers (Ages 11-17)"
 category: education-teaching/instructor/explanation-craft
 description: "Break down complex concepts into sharp, relatable explanations for teens using real-world parallels, thought experiments, and 'aha moment' engineering"
+techniques:
+  - CM-02
+  - ED-01
+  - ED-03
+  - RP-04
 tags:
   - education
   - teaching
@@ -11,12 +16,6 @@ tags:
   - critical-thinking
   - memory
   - engagement
-techniques:
-  - CM-02 Audience Adaptation
-  - CT-01 Perspective Shifting
-  - ED-01 Iterative Scaffolding
-  - ED-03 Guided Discovery
-  - RP-04 Socratic Dialogue
 updated: "2026-02-27"
 ---
 
@@ -243,7 +242,7 @@ Here's a dark application: antibiotic resistance. You take antibiotics for an in
 
 **Techniques Used:**
 - CM-02 (Audience Adaptation) — Tone, references, and complexity calibrated for teenage engagement
-- CT-01 (Perspective Shifting) — Multiple angles: escape room, bacteria, moths, giraffes
+- Perspective shifting (no catalog ID) — Multiple angles: escape room, bacteria, moths, giraffes
 - ED-01 (Iterative Scaffolding) — Stakes → Parallel → Mechanism → Misconception → Edge case
 - ED-03 (Guided Discovery) — Self-tests invite teens to construct understanding, not just consume it
 - RP-04 (Socratic Dialogue) — Prediction and explain-back tests simulate the Socratic method

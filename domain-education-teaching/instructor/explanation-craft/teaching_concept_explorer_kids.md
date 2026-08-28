@@ -2,6 +2,11 @@
 title: "Concept Explorer for Kids (Ages 5-10)"
 category: education-teaching/instructor/explanation-craft
 description: "Transform complex concepts into magical, memorable adventures that kids can see, feel, and retell — using characters, sensory imagery, and mini-stories"
+techniques:
+  - CM-02
+  - ED-01
+  - RP-02
+  - OC-04
 tags:
   - education
   - teaching
@@ -12,12 +17,6 @@ tags:
   - memory
   - storytelling
   - simplification
-techniques:
-  - CM-02 Audience Adaptation
-  - CT-01 Perspective Shifting
-  - ED-01 Iterative Scaffolding
-  - RP-02 Audience-Specific Framing
-  - OC-04 Comprehensive Example Outputs
 updated: "2026-02-27"
 ---
 
@@ -222,7 +221,7 @@ Bones don't heal like glue sticking two pieces back together. They actually GROW
 
 **Techniques Used:**
 - CM-02 (Audience Adaptation) — Language, imagery, and complexity calibrated to age 5-10
-- CT-01 (Perspective Shifting) — Shrinks to body-level perspective with named characters
+- Perspective shifting (no catalog ID) — Shrinks to body-level perspective with named characters
 - ED-01 (Iterative Scaffolding) — Hook → Picture → Core Idea → Proof → Summary
 - RP-02 (Audience-Specific Framing) — Kid-world anchors (playground, body, food)
 - OC-04 (Comprehensive Example Outputs) — Full worked example demonstrates the format

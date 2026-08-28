@@ -2,9 +2,9 @@
 title: "College Students: Cross-Domain Prompt Kit"
 category: education-teaching/learner/guides/college-students
 description: "Curated index of non-education-domain prompts that traditional college students will find useful: time management, focus, procrastination, perfectionism, confidence, stuckness, and weekly review."
+updated: "2026-05-13"
 audience: college-students
 status: active
-updated: "2026-05-13"
 ---
 
 # College Students: Cross-Domain Prompt Kit

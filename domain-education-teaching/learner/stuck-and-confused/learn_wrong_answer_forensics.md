@@ -2,9 +2,16 @@
 title: "Wrong-Answer Forensics and Recovery"
 category: education-teaching/learner/stuck-and-confused
 description: "Post-error tutoring workflow that reconstructs reasoning divergence and builds anti-error cues."
-techniques: [RT-05, RT-09, QA-08, ED-01]
+techniques:
+  - RT-05
+  - RT-09
+  - QA-08
+  - ED-01
 difficulty: intermediate
-tags: [error-analysis, exam-review, misconceptions]
+tags:
+  - error-analysis
+  - exam-review
+  - misconceptions
 updated: "2026-05-15"
 ---
 

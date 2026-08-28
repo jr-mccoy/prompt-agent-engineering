@@ -2,11 +2,11 @@
 title: "Workflow: Portfolio While Learning"
 category: education-teaching/learner/guides/career-changers
 description: "Ship public artifacts that signal your skill at the level it actually is, while you're still building. Compounds into a portfolio that lands the destination role without misrepresenting your level."
+updated: "2026-05-13"
 audience: career-changers
 chain_length: 4
 estimated_time: "2-3 hours setup + ongoing shipping"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Portfolio While Learning

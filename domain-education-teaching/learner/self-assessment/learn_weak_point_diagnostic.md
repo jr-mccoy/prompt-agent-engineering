@@ -17,12 +17,12 @@ tags:
   - gap-analysis
   - study-skills
   - exam-prep
-audience: learner
 updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/learner/self-assessment/learn_quiz_to_mastery.md
   - domain-education-teaching/learner/self-assessment/learn_wrong_answers_study_plan.md
   - domain-education-teaching/instructor/assessment-design/teaching_diagnostic_quiz_knowledge_map.md
+audience: learner
 ---
 
 # Diagnose My Weak Points

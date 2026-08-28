@@ -2,9 +2,18 @@
 title: "Clinical Reasoning Differential Coach"
 category: education-teaching/learner/stuck-and-confused
 description: "Guides learners through differential diagnosis prioritization, evidence weighing, and bias checks."
-techniques: [RT-05, DS-01, ED-02, QA-08, QA-12]
+techniques:
+  - RT-05
+  - DS-01
+  - ED-02
+  - QA-08
+  - QA-12
 difficulty: advanced
-tags: [clinical-reasoning, nursing, medicine, differential-diagnosis]
+tags:
+  - clinical-reasoning
+  - nursing
+  - medicine
+  - differential-diagnosis
 updated: "2026-05-15"
 ---
 

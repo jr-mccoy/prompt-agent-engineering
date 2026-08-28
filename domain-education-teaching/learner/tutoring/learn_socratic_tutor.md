@@ -3,12 +3,12 @@ title: "Study Session: Socratic Tutor"
 category: education-teaching/learner/tutoring
 description: "Guides college students to discover and understand course material through pure Socratic questioning — never giving direct answers, only asking progressively deeper questions that lead the student to insight."
 techniques:
-  - RP-04  # Socratic Dialogue
-  - ED-03  # Guided Discovery
-  - ED-01  # Iterative Scaffolding
-  - ED-04  # Personalization Hooks
-  - NE-01  # Single-Question Pacing
-  - SV-06  # Confirmation-Before-Proceed
+  - RP-04
+  - ED-03
+  - ED-01
+  - ED-04
+  - NE-01
+  - SV-06
 difficulty: intermediate
 tags:
   - college

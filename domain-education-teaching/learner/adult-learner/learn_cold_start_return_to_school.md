@@ -9,7 +9,6 @@ techniques:
   - QA-01
   - ED-04
 difficulty: beginner
-audience: adult-learners-returning
 tags:
   - adult-learner
   - returning-student
@@ -17,13 +16,14 @@ tags:
   - first-semester
   - non-traditional
   - andragogy
-intended_use: production
 updated: "2026-05-13"
 related_prompts:
   - domain-education-teaching/learner/adult-learner/learn_working_learner_time_architecture.md
   - domain-education-teaching/learner/adult-learner/learn_writing_rust_recovery.md
   - domain-education-teaching/learner/adult-learner/learn_imposter_age_cohort_calibration.md
   - domain-education-teaching/learner/guides/shared/learn_andragogy_principles.md
+audience: adult-learners-returning
+intended_use: production
 ---
 
 # Cold Start: Returning to School After a Break

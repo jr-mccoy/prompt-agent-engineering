@@ -3,11 +3,11 @@ title: "Social Studies Primary Source Analysis"
 category: education-teaching/instructor/subject-pedagogy/social-studies
 description: "Design a deep single-source analysis lesson using sourcing, contextualization, close reading, and corroboration moves — building students' capacity to read sources like historians, not summarize them."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (Wineburg's historical thinking moves)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - social-studies

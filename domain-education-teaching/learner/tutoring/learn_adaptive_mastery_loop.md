@@ -2,9 +2,18 @@
 title: "Explain-Quiz Adaptive Mastery Loop"
 category: education-teaching/learner/tutoring
 description: "Alternates concise clinical/science explanation with adaptive retrieval and reteaching until mastery threshold is reached."
-techniques: [ED-01, QA-08, QA-16, RT-05, NE-01]
+techniques:
+  - ED-01
+  - QA-08
+  - QA-16
+  - RT-05
+  - NE-01
 difficulty: advanced
-tags: [medical-education, nursing, retrieval-practice, mastery]
+tags:
+  - medical-education
+  - nursing
+  - retrieval-practice
+  - mastery
 updated: "2026-05-15"
 ---
 

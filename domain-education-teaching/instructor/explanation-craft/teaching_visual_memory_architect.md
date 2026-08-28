@@ -2,6 +2,11 @@
 title: "Visual Memory Architect"
 category: education-teaching/instructor/explanation-craft
 description: "Transform any concept into a spatial, visual memory structure — memory palaces, mental maps, journey pegs, and scene-based encoding — so learners remember by SEEING, not repeating"
+techniques:
+  - CM-02
+  - ED-01
+  - OC-04
+  - RT-02
 tags:
   - education
   - teaching
@@ -11,12 +16,6 @@ tags:
   - spatial-learning
   - retention
   - study-skills
-techniques:
-  - CM-02 Audience Adaptation
-  - CT-01 Perspective Shifting
-  - ED-01 Iterative Scaffolding
-  - OC-04 Comprehensive Example Outputs
-  - RT-02 Multi-Dimensional Analysis
 updated: "2026-03-06"
 ---
 
@@ -258,7 +257,7 @@ Now translate back: What scientific method step does each location represent?
 
 **Techniques Used:**
 - CM-02 (Audience Adaptation) — Familiar locations and image intensity adapted to learner level
-- CT-01 (Perspective Shifting) — First-person immersion in the spatial journey
+- Perspective shifting (no catalog ID) — First-person immersion in the spatial journey
 - ED-01 (Iterative Scaffolding) — Analysis → Architecture → Encoding → Assembly → Review
 - OC-04 (Comprehensive Example Outputs) — Full 7-step memory palace with walkthrough and review protocol
 - RT-02 (Multi-Dimensional Analysis) — Memory type classification and technique matching

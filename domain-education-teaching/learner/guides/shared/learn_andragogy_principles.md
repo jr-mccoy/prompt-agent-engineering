@@ -2,12 +2,12 @@
 title: "Andragogy Principles for Adult Learners"
 category: education-teaching/learner/guides/shared
 description: "Adult learning theory (Knowles, Mezirow, Brookfield) applied to prompt design. Why prompts for adults differ from prompts for traditional students, and what the difference looks like in practice."
+updated: "2026-05-13"
 audience:
   - adult-learners
   - prompt-authors
   - educators-of-adults
 status: active
-updated: "2026-05-13"
 ---
 
 # Andragogy Principles for Adult Learners

@@ -2,11 +2,11 @@
 title: "Workflow: Credential Pathway Decision"
 category: education-teaching/learner/guides/career-changers
 description: "Decide between degree, certificate, bootcamp, MOOC, on-the-job training, and self-study for a career pivot. Anchors on the target field's actual hiring signals, not the field's discourse. Output: a defensible recommendation with reasoning shown."
+updated: "2026-05-13"
 audience: career-changers
 chain_length: 3
 estimated_time: "2-4 hours"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Credential Pathway Decision

@@ -3,11 +3,11 @@ title: "ELA Book Club Discussion Guide (4–6 Week)"
 category: education-teaching/instructor/subject-pedagogy/ela
 description: "Design a 4–6 week book-club facilitation plan: pacing, discussion protocols by week, role rotation, accountable-talk moves, and a culminating task that lets students compare across books."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (literature circles / accountable talk)
-  - OC-01  # Output Templates
-  - RT-04  # Relational Tone
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - RT-04
 difficulty: intermediate
 tags:
   - ela

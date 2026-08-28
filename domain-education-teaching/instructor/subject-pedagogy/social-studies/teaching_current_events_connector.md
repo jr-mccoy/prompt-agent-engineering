@@ -3,11 +3,11 @@ title: "Social Studies Current Events Connector"
 category: education-teaching/instructor/subject-pedagogy/social-studies
 description: "Connect a current news event to a unit of study via a structured analysis: source vetting, parallel framing, evidence-based connection, and a discussion protocol that protects classroom climate around politically charged topics."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (analogical reasoning + media literacy)
-  - OC-01  # Output Templates
-  - RT-04  # Relational Tone
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - RT-04
 difficulty: intermediate
 tags:
   - social-studies

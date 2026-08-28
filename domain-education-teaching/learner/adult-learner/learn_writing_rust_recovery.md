@@ -9,7 +9,6 @@ techniques:
   - ED-01
   - QA-01
 difficulty: intermediate
-audience: adult-learners-returning
 tags:
   - adult-learner
   - returning-student
@@ -17,13 +16,14 @@ tags:
   - academic-writing
   - skill-recovery
   - non-traditional
-intended_use: production
 updated: "2026-05-13"
 related_prompts:
   - domain-education-teaching/learner/adult-learner/learn_cold_start_return_to_school.md
   - domain-education-teaching/learner/adult-learner/learn_prior_learning_articulation.md
   - domain-education-teaching/learner/writing/learn_thesis_with_critique.md
   - domain-education-teaching/learner/writing/learn_revision_socratic_coach.md
+audience: adult-learners-returning
+intended_use: production
 ---
 
 # Writing Rust Recovery for Returning Adult Learners

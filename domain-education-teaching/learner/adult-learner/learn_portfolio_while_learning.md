@@ -9,7 +9,6 @@ techniques:
   - ED-04
   - NE-04
 difficulty: intermediate
-audience: career-changers
 tags:
   - portfolio
   - career-change
@@ -17,13 +16,14 @@ tags:
   - ship-early
   - adult-learner
   - reskilling
-intended_use: production
 updated: "2026-05-13"
 related_prompts:
   - domain-education-teaching/learner/adult-learner/learn_skill_pivot_self_study_plan.md
   - domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md
   - domain-personal-development/prompts/agency/agency_ship_sprint_design.md
   - domain-engineering-workflows/ai-native-rollouts/airollout_ship_without_writing_code.md
+audience: career-changers
+intended_use: production
 ---
 
 # Portfolio While Learning: Ship Public Artifacts Before Mastery

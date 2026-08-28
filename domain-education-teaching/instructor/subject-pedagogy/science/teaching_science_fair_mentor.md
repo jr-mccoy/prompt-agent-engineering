@@ -3,11 +3,11 @@ title: "Science Fair Project Mentor (Student-Facing)"
 category: education-teaching/instructor/subject-pedagogy/science
 description: "Coach a student through the full science fair arc — question, hypothesis, design, data, analysis, board, presentation — with Socratic guidance that keeps the work the student's, not the AI's."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (scientific method + Socratic stance)
-  - OC-01  # Output Templates
-  - RT-04  # Relational Tone
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - RT-04
 difficulty: intermediate
 tags:
   - science

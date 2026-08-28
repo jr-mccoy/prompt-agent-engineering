@@ -3,11 +3,11 @@ title: "Student Presentation / Video Feedback"
 category: education-teaching/instructor/grading-feedback
 description: "Generate timestamped feedback on a student presentation or video — content, structure, delivery, and visual aids — that names a single highest-leverage revision while protecting the relational stakes of giving public-performance feedback."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (presentation rubric components)
-  - OC-01  # Output Templates
-  - RT-04  # Relational Tone
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - RT-04
 difficulty: intermediate
 tags:
   - grading

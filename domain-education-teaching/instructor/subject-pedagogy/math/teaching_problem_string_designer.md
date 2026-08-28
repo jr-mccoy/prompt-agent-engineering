@@ -3,11 +3,11 @@ title: "Math Problem String Designer"
 category: education-teaching/instructor/subject-pedagogy/math
 description: "Sequence a 4–6 problem string warm-up that uses the first problems as a helper for the later ones — surfacing a target strategy or relationship rather than drilling random computation."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (problem-string design)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - math

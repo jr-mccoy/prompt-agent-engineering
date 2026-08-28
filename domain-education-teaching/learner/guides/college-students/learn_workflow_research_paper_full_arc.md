@@ -2,11 +2,11 @@
 title: "Workflow: Research Paper — Full Arc"
 category: education-teaching/learner/guides/college-students
 description: "Full chain for a college research paper (10+ pages, multiple sources, 2–4 week timeline): question to search to source synthesis to outline to draft to bibliography. Socratic stance throughout — AI does not write."
+updated: "2026-05-13"
 audience: college-students
 chain_length: 10
 estimated_time: "15-40 hours over 2-4 weeks"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Research Paper — Full Arc

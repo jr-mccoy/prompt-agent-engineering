@@ -3,11 +3,11 @@ title: "DOK Item Generator (All 4 Levels)"
 category: education-teaching/instructor/assessment-items
 description: "Generate a coordinated set of items at all 4 Depth of Knowledge levels on a single standard — recall, skill/concept, strategic thinking, and extended thinking — with item-design analysis showing why each item lives at its DOK."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (Webb's Depth of Knowledge)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - assessment

@@ -3,11 +3,11 @@ title: "ELA Grammar Minilesson (10 Minutes, One Concept)"
 category: education-teaching/instructor/subject-pedagogy/ela
 description: "Teach a single grammar concept in a 10-minute minilesson grounded in mentor sentences and student writing — not isolated drill — so students can apply the move in revision today."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (grammar-in-context inquiry)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: beginner
 tags:
   - ela

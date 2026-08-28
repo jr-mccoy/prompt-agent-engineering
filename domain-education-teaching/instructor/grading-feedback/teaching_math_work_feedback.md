@@ -3,11 +3,11 @@ title: "Math Work Feedback (Process + Answer)"
 category: education-teaching/instructor/grading-feedback
 description: "Generate feedback on student math work that addresses the process — strategy choice, representation, reasoning, computation — not just the final answer, while pointing the student to the next move without solving the problem for them."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (math discourse + error taxonomy)
-  - OC-01  # Output Templates
-  - RT-04  # Relational Tone
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - RT-04
 difficulty: intermediate
 tags:
   - grading

@@ -2,6 +2,11 @@
 title: "Analogy Engine"
 category: education-teaching/instructor/explanation-craft
 description: "Construct precise, testable analogies that make unfamiliar concepts instantly intuitive — with explicit mapping, stated limits, and anti-mislead safeguards"
+techniques:
+  - CM-02
+  - RT-02
+  - ST-02
+  - OC-04
 tags:
   - education
   - teaching
@@ -11,12 +16,6 @@ tags:
   - mental-models
   - cross-domain
   - comprehension
-techniques:
-  - CM-02 Audience Adaptation
-  - CT-01 Perspective Shifting
-  - RT-02 Multi-Dimensional Analysis
-  - ST-02 Sequential Steps
-  - OC-04 Comprehensive Example Outputs
 updated: "2026-03-06"
 ---
 
@@ -178,7 +177,7 @@ To push further: imagine 1,000 blindfolded sorters in a chain, where each sorter
 
 **Techniques Used:**
 - CM-02 (Audience Adaptation) — Source domain selected for general audience familiarity (office mail sorting)
-- CT-01 (Perspective Shifting) — Concept viewed through the lens of a familiar workplace scenario
+- Perspective shifting (no catalog ID) — Concept viewed through the lens of a familiar workplace scenario
 - RT-02 (Multi-Dimensional Analysis) — Systematic decomposition of entities, relationships, processes, constraints
 - ST-02 (Sequential Steps) — Six-step analogy construction process (internal method)
 - OC-04 (Comprehensive Example Outputs) — Full analogy with structural map, limits, and upgrade

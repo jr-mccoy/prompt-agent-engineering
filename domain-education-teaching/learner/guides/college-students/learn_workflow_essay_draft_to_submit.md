@@ -2,11 +2,11 @@
 title: "Workflow: Essay — Draft to Submit"
 category: education-teaching/learner/guides/college-students
 description: "Full chain for writing a college essay (3–10 pages): topic to thesis to outline to draft to revision to integrity self-check. Uses existing Socratic prompts only — AI does not write the essay."
+updated: "2026-05-13"
 audience: college-students
 chain_length: 7
 estimated_time: "4-10 hours over 3-5 sessions"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Essay — Draft to Submit

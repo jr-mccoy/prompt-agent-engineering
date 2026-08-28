@@ -2,11 +2,11 @@
 title: "Workflow: Cold Start Return to School"
 category: education-teaching/learner/guides/adult-returning
 description: "First-four-weeks ramp for adults returning to school after years away: syllabus decoding, time-on-task calibration, what's changed in higher ed, weekly tasks, questions to ask instructors. Anchors the rest of the semester."
+updated: "2026-05-13"
 audience: adult-learners-returning
 chain_length: 3
 estimated_time: "2-4 hours total"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Cold Start Return to School

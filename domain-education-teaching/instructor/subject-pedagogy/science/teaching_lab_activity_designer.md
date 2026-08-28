@@ -3,11 +3,11 @@ title: "Science Lab Activity Designer with CER Scaffold"
 category: education-teaching/instructor/subject-pedagogy/science
 description: "Design a full hands-on science lab — investigation question, procedure, data collection, and Claim-Evidence-Reasoning scaffold — that has students do science rather than verify a known answer."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (CER, NGSS three-dimensional learning)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - science

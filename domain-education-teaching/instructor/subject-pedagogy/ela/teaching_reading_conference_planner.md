@@ -3,11 +3,11 @@ title: "ELA Reading Conference Planner"
 category: education-teaching/instructor/subject-pedagogy/ela
 description: "Plan a 5–7 minute 1:1 reading conference: research stance, decide one teaching point, deliver one named strategy, and capture notes the teacher can act on next time."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (research–decide–teach conferring stance)
-  - OC-01  # Output Templates
-  - RT-04  # Relational Tone
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - RT-04
 difficulty: intermediate
 tags:
   - ela

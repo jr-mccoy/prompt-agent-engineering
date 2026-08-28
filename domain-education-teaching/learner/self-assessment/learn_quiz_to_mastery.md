@@ -18,12 +18,12 @@ tags:
   - formative
   - metacognition
   - study-skills
-audience: learner
 updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/learner/self-assessment/learn_weak_point_diagnostic.md
   - domain-education-teaching/learner/self-assessment/learn_wrong_answers_study_plan.md
   - domain-education-teaching/instructor/assessment-design/teaching_mastery_check_designer.md
+audience: learner
 ---
 
 # Quiz Me Until I Master This

@@ -2,9 +2,17 @@
 title: "Step-Level Confusion Repair"
 category: education-teaching/learner/stuck-and-confused
 description: "Repairs a single confusing step in a solution or explanation, then reintegrates it into the full task."
-techniques: [ED-01, RT-09, DT-01, NE-01, QA-08]
+techniques:
+  - ED-01
+  - RT-09
+  - DT-01
+  - NE-01
+  - QA-08
 difficulty: intermediate
-tags: [confusion-repair, tutoring, problem-solving]
+tags:
+  - confusion-repair
+  - tutoring
+  - problem-solving
 updated: "2026-05-15"
 ---
 

@@ -2,9 +2,17 @@
 title: "Argument Writing Socratic Coach"
 category: education-teaching/learner/tutoring
 description: "Learner-facing writing tutor that strengthens claim-evidence-reasoning through guided questioning and revision cycles."
-techniques: [ED-02, RP-02, QA-16, IT-23]
+techniques:
+  - ED-02
+  - RP-02
+  - QA-16
+  - IT-23
 difficulty: intermediate
-tags: [writing, revision, argumentation, feedback]
+tags:
+  - writing
+  - revision
+  - argumentation
+  - feedback
 updated: "2026-05-15"
 ---
 

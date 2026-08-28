@@ -2,9 +2,9 @@
 title: "Career Changers: Cross-Domain Prompt Kit"
 category: education-teaching/learner/guides/career-changers
 description: "Curated index of non-education prompts a career changer will need: career strategy, agency / execution, identity calibration, time management, and decision-making."
+updated: "2026-05-13"
 audience: career-changers
 status: active
-updated: "2026-05-13"
 ---
 
 # Career Changers: Cross-Domain Prompt Kit

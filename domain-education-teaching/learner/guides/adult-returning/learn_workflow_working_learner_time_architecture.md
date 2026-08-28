@@ -2,11 +2,11 @@
 title: "Workflow: Working-Learner Time Architecture"
 category: education-teaching/learner/guides/adult-returning
 description: "Design a defensible weekly time architecture for working adults in school — accounting for actual work hours, family floor, sleep, maintenance, and the higher per-credit-hour estimates that apply to returning learners. Forces explicit tradeoffs."
+updated: "2026-05-13"
 audience: adult-learners-returning
 chain_length: 4
 estimated_time: "2-3 hours"
 status: active
-updated: "2026-05-13"
 ---
 
 # Workflow: Working-Learner Time Architecture

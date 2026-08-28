@@ -3,11 +3,11 @@ title: "Bloom's Question Stem Bank by Subject"
 category: education-teaching/instructor/assessment-items
 description: "Build a leveled bank of question stems across all six Bloom's revised levels, customized to a specific subject and grade — so teachers can move a class up the cognitive ladder during discussion, exit tickets, or cold-call cycles."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (Bloom's revised taxonomy)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - assessment

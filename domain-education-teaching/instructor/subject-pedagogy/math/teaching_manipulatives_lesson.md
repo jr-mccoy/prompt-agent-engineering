@@ -3,11 +3,11 @@ title: "Math Manipulatives Lesson — Concrete-Pictorial-Abstract"
 category: education-teaching/instructor/subject-pedagogy/math
 description: "Design a math lesson that moves students through the concrete → pictorial → abstract (CPA) sequence so the symbolic representation grows out of physical action — not the other way around."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (CPA / Bruner's modes)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - math

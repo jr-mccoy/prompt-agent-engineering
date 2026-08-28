@@ -9,7 +9,6 @@ techniques:
   - QA-02
   - NE-04
 difficulty: advanced
-audience: adult-learners-returning
 tags:
   - adult-learner
   - prior-learning-assessment
@@ -18,13 +17,14 @@ tags:
   - graduate-school
   - portfolio
   - returning-student
-intended_use: production
 updated: "2026-05-13"
 related_prompts:
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
   - domain-education-teaching/learner/adult-learner/learn_writing_rust_recovery.md
   - domain-education-teaching/learner/adult-learner/learn_cold_start_return_to_school.md
+audience: adult-learners-returning
+intended_use: production
 ---
 
 # Prior Learning Articulation: From Career Experience to Academic Currency

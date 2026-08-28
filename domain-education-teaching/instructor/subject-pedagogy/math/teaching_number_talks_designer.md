@@ -3,11 +3,11 @@ title: "Math Number Talk Designer"
 category: education-teaching/instructor/subject-pedagogy/math
 description: "Design a 5–15 minute number talk that builds mental computation, reasoning, and discourse around a single computation or visual prompt — with anticipated student strategies and teacher moves."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - OC-01  # Output Templates
-  - DS-01  # Framework Application (Bloom's, DOK)
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - OC-01
+  - DS-01
+  - QA-02
 difficulty: intermediate
 tags:
   - math

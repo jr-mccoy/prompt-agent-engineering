@@ -3,11 +3,11 @@ title: "Study Session: Knowledge Tester"
 category: education-teaching/learner/self-assessment
 description: "Interactive quiz session that tests college students on course material with multi-format questions, immediate feedback, score tracking, and targeted review recommendations."
 techniques:
-  - ED-02  # Progressive Exercise Generation
-  - RP-02  # Audience-Specific Framing
-  - SV-08  # Tiered Discovery Questions
-  - ED-03  # Guided Discovery
-  - NE-01  # Single-Question Pacing
+  - ED-02
+  - RP-02
+  - SV-08
+  - ED-03
+  - NE-01
 difficulty: intermediate
 tags:
   - college

@@ -3,11 +3,11 @@ title: "Portfolio Assessment Designer"
 category: education-teaching/instructor/assessment-design
 description: "Design a portfolio assessment system: criteria for inclusion, curation rationale by the student, reflection scaffolds, calibration anchors, and a defensible scoring approach that rewards growth without losing rigor."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (curation + reflection model)
-  - OC-01  # Output Templates
-  - QA-01  # Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-01
 difficulty: advanced
 tags:
   - assessment

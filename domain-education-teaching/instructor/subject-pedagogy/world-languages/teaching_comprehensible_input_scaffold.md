@@ -3,11 +3,11 @@ title: "World Language Comprehensible Input Scaffold (TPRS-Style)"
 category: education-teaching/instructor/subject-pedagogy/world-languages
 description: "Plan a comprehensible-input lesson — TPRS, story-listening, or PQA — that delivers compelling, contextualized target-language input at students' i+1 level, with circling, comprehension checks, and gradual production."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (Krashen, TPRS, comprehensible input)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - world-languages

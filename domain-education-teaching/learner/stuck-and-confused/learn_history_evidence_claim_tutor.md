@@ -2,9 +2,17 @@
 title: "History Evidence-Claim Reasoning Tutor"
 category: education-teaching/learner/stuck-and-confused
 description: "Teaches historical argumentation by mapping evidence to claims and testing causal reasoning quality."
-techniques: [DS-01, RT-05, ED-01, QA-08]
+techniques:
+  - DS-01
+  - RT-05
+  - ED-01
+  - QA-08
 difficulty: advanced
-tags: [history, argumentation, causation, source-analysis]
+tags:
+  - history
+  - argumentation
+  - causation
+  - source-analysis
 updated: "2026-05-15"
 ---
 

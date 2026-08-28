@@ -9,7 +9,6 @@ techniques:
   - ED-04
   - NE-04
 difficulty: advanced
-audience: career-changers
 tags:
   - career-change
   - credential
@@ -18,13 +17,14 @@ tags:
   - bootcamp
   - certification
   - adult-learner
-intended_use: production
 updated: "2026-05-13"
 related_prompts:
   - domain-education-teaching/learner/adult-learner/learn_skill_pivot_self_study_plan.md
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
   - domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md
+audience: career-changers
+intended_use: production
 ---
 
 # Credential Pathway Decision: Degree, Cert, Bootcamp, MOOC, OJT, or Self-Study

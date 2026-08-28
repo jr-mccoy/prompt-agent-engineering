@@ -3,12 +3,12 @@ title: "Study Session: Concept Teacher"
 category: education-teaching/learner/tutoring
 description: "Interactive study session that teaches college students course material through scaffolded explanation, analogies, and understanding checks — adapted to their current knowledge level."
 techniques:
-  - ED-01  # Iterative Scaffolding
-  - RT-04  # Analogical Reasoning
-  - RP-02  # Audience-Specific Framing
-  - IT-20  # Progressive Example Complexity
-  - SV-06  # Confirmation-Before-Proceed
-  - NE-01  # Single-Question Pacing
+  - ED-01
+  - RT-04
+  - RP-02
+  - IT-20
+  - SV-06
+  - NE-01
 difficulty: intermediate
 tags:
   - college

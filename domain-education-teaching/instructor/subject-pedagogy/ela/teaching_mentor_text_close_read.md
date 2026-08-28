@@ -3,11 +3,11 @@ title: "ELA Mentor Text Close Read for Craft"
 category: education-teaching/instructor/subject-pedagogy/ela
 description: "Use a mentor text excerpt to teach a single craft move — naming what the author did, why it works, and how students can try it in their own writing — without turning the mentor text into a comprehension test."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (mentor-text inquiry stance)
-  - OC-01  # Output Templates
-  - QA-02  # Adversarial Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-02
 difficulty: intermediate
 tags:
   - ela

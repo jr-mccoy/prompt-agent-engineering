@@ -3,13 +3,17 @@ title: "Socratic Error Probe for Quantitative Reasoning"
 category: education-teaching/learner/stuck-and-confused
 description: "Socratic tutoring routine that diagnoses conceptual and procedural errors in math/science problem solving."
 techniques:
-  - ED-02  # Socratic Dialogue
-  - RT-05  # Evidence-Based Reasoning
-  - DT-01  # Task Decomposition
-  - QA-16  # Quality Rubric with Auto-Iteration
-  - NE-01  # Single-Question Pacing
+  - ED-02
+  - RT-05
+  - DT-01
+  - QA-16
+  - NE-01
 difficulty: advanced
-tags: [math, physics, misconception-diagnosis, socratic]
+tags:
+  - math
+  - physics
+  - misconception-diagnosis
+  - socratic
 updated: "2026-05-15"
 ---
 

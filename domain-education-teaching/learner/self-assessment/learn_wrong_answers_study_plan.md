@@ -17,12 +17,12 @@ tags:
   - study-plan
   - exam-prep
   - metacognition
-audience: learner
 updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/learner/self-assessment/learn_quiz_to_mastery.md
   - domain-education-teaching/learner/self-assessment/learn_weak_point_diagnostic.md
   - domain-education-teaching/instructor/assessment-analysis/teaching_item_analysis_report.md
+audience: learner
 ---
 
 # Turn My Wrong Answers Into a Study Plan

@@ -3,11 +3,11 @@ title: "Standards-Based Grading Converter"
 category: education-teaching/instructor/assessment-analysis
 description: "Convert a traditional points-based grading system into standards-based grading: identify priority standards, design proficiency scales, plan reassessment policy, and translate SBG marks back to a transcript grade if required."
 techniques:
-  - CM-01  # Context Framing
-  - ST-02  # Sequential Steps
-  - DS-01  # Framework Application (SBG / proficiency-scale design)
-  - OC-01  # Output Templates
-  - QA-01  # Verification
+  - CM-01
+  - ST-02
+  - DS-01
+  - OC-01
+  - QA-01
 difficulty: advanced
 tags:
   - assessment

@@ -2,6 +2,11 @@
 title: "Story-Based Explainer"
 category: education-teaching/instructor/explanation-craft
 description: "Transform any concept into a memorable narrative — allegory, origin story, character journey, or dramatic scenario — that teaches through story structure rather than lecture"
+techniques:
+  - CM-02
+  - ED-01
+  - ED-03
+  - OC-04
 tags:
   - education
   - teaching
@@ -11,12 +16,6 @@ tags:
   - engagement
   - retention
   - explanation
-techniques:
-  - CM-02 Audience Adaptation
-  - CT-01 Perspective Shifting
-  - ED-01 Iterative Scaffolding
-  - ED-03 Guided Discovery
-  - OC-04 Comprehensive Example Outputs
 updated: "2026-03-06"
 ---
 
@@ -234,7 +233,7 @@ Public-key encryption uses a pair of mathematically linked keys: one public (any
 
 **Techniques Used:**
 - CM-02 (Audience Adaptation) — Story tone and vocabulary matched to general adult audience
-- CT-01 (Perspective Shifting) — Concept viewed through the lens of characters with goals and obstacles
+- Perspective shifting (no catalog ID) — Concept viewed through the lens of characters with goals and obstacles
 - ED-01 (Iterative Scaffolding) — Problem → Simple solution → Complication → Full mechanism → Extension
 - ED-03 (Guided Discovery) — Transfer checks guide the learner to apply the concept independently
 - OC-04 (Comprehensive Example Outputs) — Full story with all beats, concept key, and transfer prompts
