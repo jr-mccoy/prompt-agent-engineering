@@ -2,6 +2,14 @@
 title: "Differentiation Strategy Planner"
 category: education-teaching/instructor/lesson-planning
 description: "Design differentiated instruction for diverse learners with varying readiness, interests, and learning profiles"
+techniques:
+  - CM-01
+  - DS-01
+  - QA-01
+  - RP-02
+  - ST-02
+  - ST-03
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -9,6 +17,10 @@ tags:
   - special-education
   - gifted
 updated: "2026-01-29"
+related_prompts:
+  - domain-education-teaching/instructor/lesson-planning/teaching_unit_curriculum_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_standards_alignment_mapper.md
 ---
 
 **Purpose:** Create differentiated learning experiences that meet students where they are while maintaining high expectations and common learning goals.

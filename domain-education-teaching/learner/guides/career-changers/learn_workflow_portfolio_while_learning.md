@@ -2,7 +2,23 @@
 title: "Workflow: Portfolio While Learning"
 category: education-teaching/learner/guides/career-changers
 description: "Ship public artifacts that signal your skill at the level it actually is, while you're still building. Compounds into a portfolio that lands the destination role without misrepresenting your level."
+techniques:
+  - CM-01
+  - DT-01
+  - NE-02
+  - RP-02
+  - ST-02
+difficulty: intermediate
+tags:
+  - education
+  - career-change
+  - reskilling
+  - workflow-chain
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_proof_of_work_for_pivot.md
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_cross_domain_kit.md
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_credential_pathway_decision.md
 audience: career-changers
 chain_length: 4
 estimated_time: "2-3 hours setup + ongoing shipping"

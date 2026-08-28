@@ -2,6 +2,14 @@
 title: "Behavior Support & SEL Planner"
 category: education-teaching/instructor/student-support
 description: "Design behavior intervention plans, SEL activities, and restorative practice guides for classroom communities"
+techniques:
+  - CM-01
+  - DS-01
+  - DS-06
+  - QA-01
+  - ST-02
+  - ST-03
+difficulty: advanced
 tags:
   - education
   - teaching
@@ -10,6 +18,10 @@ tags:
   - restorative-practices
   - classroom-community
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/student-support/teaching_504_accommodation_menu.md
+  - domain-education-teaching/instructor/student-support/teaching_graduation_tracker.md
+  - domain-education-teaching/instructor/student-support/teaching_dyslexia_structured_literacy_plan.md
 ---
 
 **Purpose:** Design proactive behavior support strategies, social-emotional learning (SEL) activities, behavior intervention plans, and restorative practice conversation guides — building classroom communities where students develop self-regulation, empathy, and responsible decision-making.

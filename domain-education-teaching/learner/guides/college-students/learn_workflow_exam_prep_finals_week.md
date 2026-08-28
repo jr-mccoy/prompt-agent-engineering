@@ -2,7 +2,23 @@
 title: "Workflow: Exam Prep & Finals Week"
 category: education-teaching/learner/guides/college-students
 description: "Triage, spaced retrieval, mistake review, and test-day strategy for finals or a major exam. Chains study-skills and time-management prompts. Works for one exam or a full finals week."
+techniques:
+  - CM-01
+  - DT-01
+  - NE-02
+  - RP-02
+  - ST-02
+difficulty: intermediate
+tags:
+  - education
+  - college
+  - undergraduate
+  - workflow-chain
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_cross_domain_kit.md
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_research_paper_full_arc.md
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_stem_problem_solving.md
 audience: college-students
 chain_length: 8
 estimated_time: "6-20 hours over 1-2 weeks"

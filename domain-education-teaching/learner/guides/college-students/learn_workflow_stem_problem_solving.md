@@ -2,7 +2,23 @@
 title: "Workflow: STEM Problem Solving"
 category: education-teaching/learner/guides/college-students
 description: "Per-problem chain for math, physics, chemistry, engineering: decode the problem, Socratic step-by-step (no final answer given by AI), error analysis on your work, concept map for the unit. Builds skill instead of getting the answer."
+techniques:
+  - CM-01
+  - DT-01
+  - NE-02
+  - RP-02
+  - ST-02
+difficulty: intermediate
+tags:
+  - education
+  - college
+  - undergraduate
+  - workflow-chain
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_office_hours_and_class_discussion.md
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_cross_domain_kit.md
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_research_paper_full_arc.md
 audience: college-students
 chain_length: 4
 estimated_time: "20-60 min per problem"

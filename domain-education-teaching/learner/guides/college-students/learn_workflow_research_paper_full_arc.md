@@ -2,7 +2,23 @@
 title: "Workflow: Research Paper — Full Arc"
 category: education-teaching/learner/guides/college-students
 description: "Full chain for a college research paper (10+ pages, multiple sources, 2–4 week timeline): question to search to source synthesis to outline to draft to bibliography. Socratic stance throughout — AI does not write."
+techniques:
+  - CM-01
+  - DT-01
+  - NE-02
+  - RP-02
+  - ST-02
+difficulty: intermediate
+tags:
+  - education
+  - college
+  - undergraduate
+  - workflow-chain
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_essay_draft_to_submit.md
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_office_hours_and_class_discussion.md
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_stem_problem_solving.md
 audience: college-students
 chain_length: 10
 estimated_time: "15-40 hours over 2-4 weeks"

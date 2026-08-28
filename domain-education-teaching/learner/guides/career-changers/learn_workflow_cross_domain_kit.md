@@ -2,7 +2,21 @@
 title: "Career Changers: Cross-Domain Prompt Kit"
 category: education-teaching/learner/guides/career-changers
 description: "Curated index of non-education prompts a career changer will need: career strategy, agency / execution, identity calibration, time management, and decision-making."
+techniques:
+  - CM-01
+  - OC-12
+  - RP-02
+difficulty: beginner
+tags:
+  - education
+  - career-change
+  - reskilling
+  - reference
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_skill_pivot_self_study_plan.md
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_credential_pathway_decision.md
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_proof_of_work_for_pivot.md
 audience: career-changers
 status: active
 ---

@@ -23,7 +23,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/evaluation-analytics/program_program_evaluation_framework.md
   - domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md
-  - ../program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
 ---
 
 # Logic Model & Theory of Change Designer

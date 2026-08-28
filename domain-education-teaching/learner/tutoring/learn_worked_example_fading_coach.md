@@ -15,6 +15,10 @@ tags:
   - coding
   - math
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
+  - domain-education-teaching/learner/tutoring/learn_stepwise_problem_coaching.md
 ---
 
 # Worked-Example Fading Coach

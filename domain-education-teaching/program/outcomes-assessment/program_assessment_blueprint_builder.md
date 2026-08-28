@@ -23,7 +23,7 @@ tags:
 updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
-  - ../curriculum-design/teaching_blooms_taxonomy_calibrator.md
+  - domain-education-teaching/program/curriculum-design/program_blooms_taxonomy_calibrator.md
   - domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
   - domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md
 ---

@@ -16,6 +16,10 @@ tags:
   - concept-clarification
   - adaptive-learning
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
+  - domain-education-teaching/learner/tutoring/learn_adaptive_mastery_loop.md
+  - domain-education-teaching/learner/tutoring/learn_worked_example_fading_coach.md
 ---
 
 # Teach Me From Scratch: Calibrated Concept Builder

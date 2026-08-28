@@ -14,6 +14,10 @@ tags:
   - tutoring
   - problem-solving
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/stuck-and-confused/learn_wrong_answer_forensics.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_multi_representation_unpacking.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_history_evidence_claim_tutor.md
 ---
 
 # Step-Level Confusion Repair

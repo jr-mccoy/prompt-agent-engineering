@@ -2,7 +2,23 @@
 title: "Workflow: Credential Pathway Decision"
 category: education-teaching/learner/guides/career-changers
 description: "Decide between degree, certificate, bootcamp, MOOC, on-the-job training, and self-study for a career pivot. Anchors on the target field's actual hiring signals, not the field's discourse. Output: a defensible recommendation with reasoning shown."
+techniques:
+  - CM-01
+  - DT-01
+  - NE-02
+  - RP-02
+  - ST-02
+difficulty: intermediate
+tags:
+  - education
+  - career-change
+  - reskilling
+  - workflow-chain
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_proof_of_work_for_pivot.md
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_skill_pivot_self_study_plan.md
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_portfolio_while_learning.md
 audience: career-changers
 chain_length: 3
 estimated_time: "2-4 hours"

@@ -2,6 +2,14 @@
 title: "Report Card Comment Generator"
 category: education-teaching/instructor/reporting-communication
 description: "Generate personalized, strengths-based report card comments by subject and development area"
+techniques:
+  - CM-01
+  - DS-01
+  - QA-01
+  - RP-02
+  - ST-02
+  - ST-03
+difficulty: beginner
 tags:
   - education
   - teaching
@@ -9,6 +17,10 @@ tags:
   - progress-reports
   - grading
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/grading-feedback/teaching_presentation_video_feedback.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
+  - domain-education-teaching/instructor/ed-tech/teaching_instructional_video_script.md
 ---
 
 **Purpose:** Generate thoughtful, individualized report card comments that communicate academic progress, social development, and growth areas with strengths-based language calibrated to grade level and school culture.

@@ -13,6 +13,10 @@ tags:
   - concept-clarification
   - tutoring
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/stuck-and-confused/learn_metacognitive_debrief.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_wrong_answer_forensics.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_multi_representation_unpacking.md
 ---
 
 # Analogy and Representation Switcher

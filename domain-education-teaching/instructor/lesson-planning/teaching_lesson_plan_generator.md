@@ -2,12 +2,24 @@
 title: "Lesson Plan Generator"
 category: education-teaching/instructor/lesson-planning
 description: "Create comprehensive, standards-aligned lesson plans with differentiation and assessment"
+techniques:
+  - CM-01
+  - DS-01
+  - QA-01
+  - RP-02
+  - ST-02
+  - ST-03
+difficulty: intermediate
 tags:
   - education
   - teaching
   - lesson-planning
   - curriculum
 updated: "2026-01-29"
+related_prompts:
+  - domain-education-teaching/instructor/lesson-planning/teaching_standards_alignment_mapper.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_project_based_learning_designer.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md
 ---
 
 **Purpose:** Generate complete, classroom-ready lesson plans with clear objectives, engaging activities, differentiation strategies, and aligned assessments.

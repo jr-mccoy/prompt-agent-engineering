@@ -2,7 +2,23 @@
 title: "Workflow: Imposter Calibration in Age-Mixed Classrooms"
 category: education-teaching/learner/guides/adult-returning
 description: "Separate real skill-gap signal from age-anchored impostor noise. Use when 'I don't belong here' shows up for an adult learner surrounded by younger peers. Produces an action plan for real gaps and a reframe for the noise."
+techniques:
+  - CM-01
+  - DT-01
+  - NE-02
+  - RP-02
+  - ST-02
+difficulty: intermediate
+tags:
+  - education
+  - adult-learner
+  - returning-student
+  - workflow-chain
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_working_learner_time_architecture.md
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_cross_domain_kit.md
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_writing_rust_recovery.md
 audience: adult-learners-returning
 chain_length: 2
 estimated_time: "45-90 min"

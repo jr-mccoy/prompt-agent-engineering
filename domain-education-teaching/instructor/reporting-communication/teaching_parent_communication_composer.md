@@ -2,6 +2,13 @@
 title: "Parent & Family Communication Composer"
 category: education-teaching/instructor/reporting-communication
 description: "Create professional, empathetic parent communications including newsletters, conference notes, and progress updates"
+techniques:
+  - CM-01
+  - QA-01
+  - RP-02
+  - ST-02
+  - ST-03
+difficulty: beginner
 tags:
   - education
   - teaching
@@ -9,6 +16,10 @@ tags:
   - newsletters
   - conferences
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_ta_discussion_section_prep.md
+  - domain-education-teaching/instructor/student-support/teaching_course_selection_advising.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_syllabus_course_designer.md
 ---
 
 **Purpose:** Generate professional, empathetic, and actionable parent/family communications across multiple formats — newsletters, conference notes, progress updates, behavior notices, and event announcements — with tone calibration and multilingual support guidance.

@@ -25,8 +25,8 @@ updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/evaluation-analytics/program_logic_model_designer.md
   - domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md
-  - ../program-outcomes-assessment/teaching_program_gap_analysis.md
-  - ../accreditation-program-review/teaching_program_review_cycle_designer.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_gap_analysis.md
+  - domain-education-teaching/program/accreditation-review/program_program_review_cycle_designer.md
 ---
 
 # Program Evaluation Framework Designer

@@ -2,6 +2,14 @@
 title: "Unit & Curriculum Planner (Backward Design)"
 category: education-teaching/instructor/lesson-planning
 description: "Design multi-week instructional units using Understanding by Design framework with scope and sequence"
+techniques:
+  - CM-01
+  - DS-01
+  - DT-01
+  - QA-01
+  - ST-02
+  - ST-03
+difficulty: advanced
 tags:
   - education
   - teaching
@@ -9,6 +17,10 @@ tags:
   - backward-design
   - unit-planning
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/lesson-planning/teaching_substitute_plan_generator.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_standards_alignment_mapper.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
 ---
 
 **Purpose:** Design comprehensive multi-week instructional units using the Understanding by Design (UbD) backward design framework — starting with desired results, then designing assessments, then planning learning experiences.

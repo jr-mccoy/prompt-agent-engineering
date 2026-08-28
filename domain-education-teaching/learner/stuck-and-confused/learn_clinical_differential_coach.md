@@ -15,6 +15,10 @@ tags:
   - medicine
   - differential-diagnosis
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/stuck-and-confused/learn_history_evidence_claim_tutor.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_confusion_repair_step_level.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_metacognitive_debrief.md
 ---
 
 # Clinical Reasoning Differential Coach

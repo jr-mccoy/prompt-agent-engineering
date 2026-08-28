@@ -14,6 +14,10 @@ tags:
   - argumentation
   - feedback
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
+  - domain-education-teaching/learner/tutoring/learn_practice_problems.md
+  - domain-education-teaching/learner/tutoring/learn_stepwise_problem_coaching.md
 ---
 
 # Argument Writing Socratic Coach

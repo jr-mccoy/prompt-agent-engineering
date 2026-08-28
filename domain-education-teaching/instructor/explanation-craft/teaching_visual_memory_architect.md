@@ -7,6 +7,7 @@ techniques:
   - ED-01
   - OC-04
   - RT-02
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -17,6 +18,10 @@ tags:
   - retention
   - study-skills
 updated: "2026-03-06"
+related_prompts:
+  - domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_reading_level_adapter.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_story_based_explainer.md
 ---
 
 **Purpose:** Convert any concept, list, process, or framework into a vivid spatial-visual memory structure that leverages the brain's strongest encoding system — spatial memory. Uses memory palace construction, journey methods, scene-based encoding, and mental map design to make information retrievable on demand, not just recognizable on a page.

@@ -2,6 +2,14 @@
 title: "Student Feedback Composer"
 category: education-teaching/instructor/grading-feedback
 description: "Create specific, actionable, growth-oriented feedback that motivates improvement"
+techniques:
+  - CM-01
+  - DS-01
+  - QA-01
+  - RP-02
+  - ST-02
+  - ST-03
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -9,6 +17,10 @@ tags:
   - assessment
   - growth-mindset
 updated: "2026-01-29"
+related_prompts:
+  - domain-education-teaching/instructor/grading-feedback/teaching_comment_library_generator.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_presentation_video_feedback.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
 ---
 
 **Purpose:** Transform assessment results and observations into constructive, specific feedback that students can use to improve while maintaining motivation and growth mindset.

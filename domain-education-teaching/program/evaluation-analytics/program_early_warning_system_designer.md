@@ -23,7 +23,7 @@ tags:
 updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/evaluation-analytics/program_learning_analytics_interpreter.md
-  - ../curriculum-design/teaching_remediation_pathway_designer.md
+  - domain-education-teaching/program/curriculum-design/program_remediation_pathway_designer.md
   - domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md
 ---
 

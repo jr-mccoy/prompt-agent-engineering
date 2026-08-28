@@ -26,7 +26,7 @@ related_prompts:
   - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_he.md
   - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_meded.md
   - domain-education-teaching/program/accreditation-review/program_accreditation_evidence_compiler.md
-  - ../program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
 ---
 
 # Programmatic Accreditation Self-Study Builder

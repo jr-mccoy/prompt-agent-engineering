@@ -24,7 +24,7 @@ related_prompts:
   - domain-education-teaching/program/outcomes-assessment/program_signature_assignment_designer.md
   - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
   - domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md
-  - ../curriculum-design/teaching_backward_program_design.md
+  - domain-education-teaching/program/curriculum-design/program_backward_program_design.md
 ---
 
 # Capstone Assessment Designer

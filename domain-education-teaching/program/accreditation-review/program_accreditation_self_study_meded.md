@@ -25,7 +25,7 @@ related_prompts:
   - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_he.md
   - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_programmatic.md
   - domain-education-teaching/program/accreditation-review/program_accreditation_evidence_compiler.md
-  - ../../domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_cbme_implementation_program.md
+  - domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_cbme_implementation_program.md
 ---
 
 # Medical Education Accreditation Self-Study Builder

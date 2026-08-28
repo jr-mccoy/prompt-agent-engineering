@@ -2,6 +2,15 @@
 title: "Standards Alignment & Crosswalk Mapper"
 category: education-teaching/instructor/lesson-planning
 description: "Map curriculum to standards, identify coverage gaps, and generate cross-standard alignment documents"
+techniques:
+  - CM-01
+  - DS-01
+  - DS-02
+  - OC-03
+  - QA-01
+  - ST-02
+  - ST-03
+difficulty: advanced
 tags:
   - education
   - teaching
@@ -10,6 +19,10 @@ tags:
   - common-core
   - ngss
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_unit_curriculum_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_project_based_learning_designer.md
 ---
 
 **Purpose:** Map existing curriculum content, lessons, and assessments to educational standards — identifying coverage gaps, creating crosswalk documents between standard sets, and generating standards-tagged activity suggestions to fill gaps. Essential for curriculum planning, accreditation, and instructional coherence.

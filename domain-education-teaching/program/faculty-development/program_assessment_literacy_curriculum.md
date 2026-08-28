@@ -22,9 +22,9 @@ tags:
 updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/faculty-development/program_faculty_development_plan_designer.md
-  - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
-  - ../program-outcomes-assessment/teaching_rubric_alignment_to_outcomes.md
-  - ../curriculum-design/teaching_blooms_taxonomy_calibrator.md
+  - domain-education-teaching/program/outcomes-assessment/program_assessment_blueprint_builder.md
+  - domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md
+  - domain-education-teaching/program/curriculum-design/program_blooms_taxonomy_calibrator.md
 ---
 
 # Assessment Literacy Faculty Development Curriculum

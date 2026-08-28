@@ -25,7 +25,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/curriculum-design/program_milestone_alignment_designer.md
   - domain-education-teaching/program/curriculum-design/program_progression_map_designer.md
-  - ../program-outcomes-assessment/teaching_program_gap_analysis.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_gap_analysis.md
   - domain-education-teaching/program/curriculum-design/program_unit_design_advanced.md
 ---
 

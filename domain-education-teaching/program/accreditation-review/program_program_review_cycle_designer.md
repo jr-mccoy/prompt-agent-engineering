@@ -21,8 +21,8 @@ updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_he.md
   - domain-education-teaching/program/accreditation-review/program_accreditation_evidence_compiler.md
-  - ../program-outcomes-assessment/teaching_program_gap_analysis.md
-  - ../program-evaluation-analytics/teaching_continuous_improvement_cycle.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_gap_analysis.md
+  - domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md
 ---
 
 # Program Review Cycle Designer

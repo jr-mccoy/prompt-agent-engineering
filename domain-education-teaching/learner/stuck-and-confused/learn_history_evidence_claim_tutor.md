@@ -14,6 +14,10 @@ tags:
   - causation
   - source-analysis
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/stuck-and-confused/learn_socratic_error_probe_quant.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_metacognitive_debrief.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_confusion_repair_step_level.md
 ---
 
 # History Evidence-Claim Reasoning Tutor

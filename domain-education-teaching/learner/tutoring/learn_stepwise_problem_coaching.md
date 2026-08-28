@@ -14,6 +14,10 @@ tags:
   - tutoring
   - computer-science
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/tutoring/learn_adaptive_input_output_loop.md
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
+  - domain-education-teaching/learner/tutoring/learn_practice_problems.md
 ---
 
 # Stepwise Problem Coaching (Hint Ladder)

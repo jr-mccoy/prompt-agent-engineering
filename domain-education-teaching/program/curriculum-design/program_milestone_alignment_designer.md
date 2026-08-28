@@ -26,7 +26,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
   - domain-education-teaching/program/curriculum-design/program_progression_map_designer.md
-  - ../program-outcomes-assessment/teaching_competency_assessment_evidence_design.md
+  - domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
   - domain-education-teaching/program/curriculum-design/program_competency_mapping_workforce.md
 ---
 

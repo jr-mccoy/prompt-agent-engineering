@@ -14,6 +14,10 @@ tags:
   - study-skills
   - retention
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/stuck-and-confused/learn_socratic_error_probe_quant.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_history_evidence_claim_tutor.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_clinical_differential_coach.md
 ---
 
 # Metacognitive Debrief After Learning

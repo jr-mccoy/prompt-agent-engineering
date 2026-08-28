@@ -2,6 +2,13 @@
 title: "Substitute Teacher Plan Generator"
 category: education-teaching/instructor/lesson-planning
 description: "Create comprehensive substitute teacher plans for emergency and planned absences"
+techniques:
+  - CM-01
+  - NE-20
+  - QA-01
+  - ST-02
+  - ST-03
+difficulty: beginner
 tags:
   - education
   - teaching
@@ -9,6 +16,10 @@ tags:
   - classroom-management
   - emergency-plans
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_standards_alignment_mapper.md
 ---
 
 **Purpose:** Generate comprehensive, self-contained substitute teacher plans that enable a substitute to run your classroom effectively — covering daily schedule, procedures, lesson activities, student information, and emergency protocols for both planned and emergency absences.

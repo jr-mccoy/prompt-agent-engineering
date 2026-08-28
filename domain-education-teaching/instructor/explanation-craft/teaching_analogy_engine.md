@@ -7,6 +7,7 @@ techniques:
   - RT-02
   - ST-02
   - OC-04
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -17,6 +18,10 @@ tags:
   - cross-domain
   - comprehension
 updated: "2026-03-06"
+related_prompts:
+  - domain-education-teaching/instructor/explanation-craft/teaching_concept_decoder_teens.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
 ---
 
 **Purpose:** Build precise, testable analogies that make unfamiliar concepts click instantly — not vague comparisons ("it's kind of like..."), but engineered mappings between a known domain and an unknown domain with explicit correspondences, stated limits, and anti-mislead safeguards. A good analogy doesn't just illustrate — it becomes a thinking tool the learner uses to reason about the new concept on their own.

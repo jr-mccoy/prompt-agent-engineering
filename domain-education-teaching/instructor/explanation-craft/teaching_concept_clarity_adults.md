@@ -7,6 +7,7 @@ techniques:
   - RT-02
   - ST-02
   - OC-04
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -18,6 +19,10 @@ tags:
   - professional-development
   - lifelong-learning
 updated: "2026-02-27"
+related_prompts:
+  - domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_concept_decoder_teens.md
 ---
 
 **Purpose:** Make complex concepts — technical, scientific, financial, legal, philosophical, or professional — genuinely clear to adults who are smart but unfamiliar with the domain. Uses mental models, structured analogies, visual frameworks, and "unlearning" techniques to build lasting understanding that transfers to real decisions and conversations.

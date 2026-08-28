@@ -2,6 +2,14 @@
 title: "Vocabulary & Academic Language Builder"
 category: education-teaching/instructor/explanation-craft
 description: "Design subject-specific vocabulary instruction with tiered word selection and multi-modal activities"
+techniques:
+  - CM-01
+  - DS-01
+  - ED-01
+  - QA-01
+  - ST-02
+  - ST-03
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -10,6 +18,10 @@ tags:
   - ell
   - content-literacy
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/explanation-craft/teaching_story_based_explainer.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_concept_clarity_adults.md
 ---
 
 **Purpose:** Design systematic vocabulary instruction plans that build academic language across content areas — including tiered word selection, student-friendly definitions, multi-modal learning activities, ELL scaffolding, and vocabulary assessment aligned to how words are actually used in the discipline.

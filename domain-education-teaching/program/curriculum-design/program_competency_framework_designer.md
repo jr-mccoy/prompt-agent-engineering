@@ -27,8 +27,8 @@ updated: "2026-07-18"
 related_prompts:
   - domain-education-teaching/program/curriculum-design/program_competency_mapping_workforce.md
   - domain-education-teaching/program/curriculum-design/program_milestone_alignment_designer.md
-  - ../program-outcomes-assessment/teaching_program_outcomes_framework.md
-  - ../program-outcomes-assessment/teaching_competency_assessment_evidence_design.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md
+  - domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
 ---
 
 # Competency Framework Designer

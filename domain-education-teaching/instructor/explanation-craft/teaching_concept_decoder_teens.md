@@ -7,6 +7,7 @@ techniques:
   - ED-01
   - ED-03
   - RP-04
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -17,6 +18,10 @@ tags:
   - memory
   - engagement
 updated: "2026-02-27"
+related_prompts:
+  - domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_vocabulary_builder.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_reading_level_adapter.md
 ---
 
 **Purpose:** Transform any complex concept — academic, scientific, philosophical, or practical — into an explanation that a teenager actually *wants* to read, genuinely understands, and remembers because it connects to something they care about. Uses real-world relevance, thought experiments, controlled controversy, and "aha moment" engineering to bypass the "why do I need to know this?" barrier.

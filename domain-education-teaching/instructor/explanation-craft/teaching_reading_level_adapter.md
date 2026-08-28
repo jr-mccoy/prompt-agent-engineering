@@ -2,6 +2,14 @@
 title: "Reading Level & Text Adapter"
 category: education-teaching/instructor/explanation-craft
 description: "Adapt texts to different reading levels while preserving core content and academic rigor"
+techniques:
+  - CM-01
+  - ED-01
+  - QA-01
+  - RP-02
+  - ST-02
+  - ST-03
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -10,6 +18,10 @@ tags:
   - ell
   - lexile
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/explanation-craft/teaching_concept_clarity_adults.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md
 ---
 
 **Purpose:** Adapt existing texts to multiple reading levels (above, on, and below grade level) while preserving core content, academic vocabulary, and instructional value — including ELL-specific adaptations by language proficiency level.

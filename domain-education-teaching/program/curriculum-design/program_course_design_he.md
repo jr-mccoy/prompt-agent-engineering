@@ -24,8 +24,8 @@ updated: "2026-07-18"
 related_prompts:
   - domain-education-teaching/program/curriculum-design/program_scope_sequence_he.md
   - domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md
-  - ../program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md
-  - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_assessment_blueprint_builder.md
 ---
 
 # Higher-Ed Course Design (Constructive Alignment)

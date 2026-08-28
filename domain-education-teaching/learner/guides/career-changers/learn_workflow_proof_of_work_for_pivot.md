@@ -2,7 +2,23 @@
 title: "Workflow: Proof-of-Work for the Pivot"
 category: education-teaching/learner/guides/career-changers
 description: "Position your portfolio and accumulated work for the target role's application context. Adapts the general proof-of-work portfolio prompt for the pivot-specific case where you need to make career-change make sense to a hiring manager."
+techniques:
+  - CM-01
+  - DT-01
+  - NE-02
+  - RP-02
+  - ST-02
+difficulty: intermediate
+tags:
+  - education
+  - career-change
+  - reskilling
+  - workflow-chain
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_credential_pathway_decision.md
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_portfolio_while_learning.md
+  - domain-education-teaching/learner/guides/career-changers/learn_workflow_cross_domain_kit.md
 audience: career-changers
 chain_length: 3
 estimated_time: "3-6 hours"

@@ -25,7 +25,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md
   - domain-education-teaching/program/outcomes-assessment/program_assessment_blueprint_builder.md
-  - ../curriculum-design/teaching_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
   - domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
 ---
 

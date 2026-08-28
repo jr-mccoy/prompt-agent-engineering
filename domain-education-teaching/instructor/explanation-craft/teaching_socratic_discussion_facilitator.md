@@ -2,6 +2,15 @@
 title: "Socratic Discussion Facilitator"
 category: education-teaching/instructor/explanation-craft
 description: "Design and facilitate Socratic seminars and discussion-based learning experiences"
+techniques:
+  - CM-01
+  - ED-01
+  - ED-03
+  - QA-01
+  - RP-04
+  - ST-02
+  - ST-03
+difficulty: advanced
 tags:
   - education
   - teaching
@@ -9,6 +18,10 @@ tags:
   - discussion
   - critical-thinking
 updated: "2026-03-07"
+related_prompts:
+  - domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_visual_memory_architect.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_reading_level_adapter.md
 ---
 
 **Purpose:** Design discussion-based lessons that develop critical thinking through strategic questioning, student dialogue, and collaborative inquiry rather than direct instruction.

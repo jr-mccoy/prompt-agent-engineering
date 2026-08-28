@@ -14,6 +14,10 @@ tags:
   - physics
   - chemistry
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/stuck-and-confused/learn_clinical_differential_coach.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_analogy_representation_switcher.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_wrong_answer_forensics.md
 ---
 
 # Multi-Representation Concept Unpacking

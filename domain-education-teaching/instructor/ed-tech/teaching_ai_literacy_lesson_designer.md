@@ -2,6 +2,14 @@
 title: "AI Literacy Lesson Designer"
 category: education-teaching/instructor/ed-tech
 description: "Design age-appropriate lessons teaching students about AI concepts, critical evaluation, and ethical reasoning"
+techniques:
+  - CM-01
+  - DS-01
+  - QA-01
+  - RP-02
+  - ST-02
+  - ST-03
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -10,6 +18,10 @@ tags:
   - critical-thinking
   - prompt-engineering
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/ed-tech/teaching_blended_hyflex_lesson_designer.md
+  - domain-education-teaching/instructor/ed-tech/teaching_lms_course_shell_setup.md
+  - domain-education-teaching/instructor/ed-tech/teaching_class_slide_deck_designer.md
 ---
 
 **Purpose:** Design age-appropriate AI literacy lessons that teach students how AI works, how to evaluate AI outputs critically, how to use AI tools responsibly, and how to reason about the ethical implications of AI — aligned to emerging AI literacy frameworks (UNESCO, ISTE, CSTA).

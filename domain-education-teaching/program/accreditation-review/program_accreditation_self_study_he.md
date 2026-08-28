@@ -26,7 +26,7 @@ related_prompts:
   - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_programmatic.md
   - domain-education-teaching/program/accreditation-review/program_accreditation_evidence_compiler.md
   - domain-education-teaching/program/accreditation-review/program_program_review_cycle_designer.md
-  - ../program-outcomes-assessment/teaching_program_gap_analysis.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_gap_analysis.md
 ---
 
 # Higher-Ed Accreditation Self-Study Builder

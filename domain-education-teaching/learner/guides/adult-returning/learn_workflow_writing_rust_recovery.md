@@ -2,7 +2,23 @@
 title: "Workflow: Writing Rust Recovery"
 category: education-teaching/learner/guides/adult-returning
 description: "Diagnose which specific academic-writing skills have rusted during years of professional writing, then rehearse the rusty ones before the first graded paper. Treats professional writing experience as a resource."
+techniques:
+  - CM-01
+  - DT-01
+  - NE-02
+  - RP-02
+  - ST-02
+difficulty: intermediate
+tags:
+  - education
+  - adult-learner
+  - returning-student
+  - workflow-chain
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_working_learner_time_architecture.md
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_imposter_calibration_age_cohort.md
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_cross_domain_kit.md
 audience: adult-learners-returning
 chain_length: 3
 estimated_time: "2-4 hours"

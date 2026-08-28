@@ -14,6 +14,10 @@ tags:
   - speaking
   - writing
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
+  - domain-education-teaching/learner/tutoring/learn_worked_example_fading_coach.md
+  - domain-education-teaching/learner/tutoring/learn_stepwise_problem_coaching.md
 ---
 
 # Adaptive Language Input-Output Loop

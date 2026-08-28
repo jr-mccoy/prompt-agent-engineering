@@ -21,10 +21,10 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - ../curriculum-design/teaching_standards_alignment_audit.md
-  - ../curriculum-design/teaching_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_standards_alignment_audit.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
   - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
-  - ../accreditation-program-review/teaching_program_review_cycle_designer.md
+  - domain-education-teaching/program/accreditation-review/program_program_review_cycle_designer.md
 ---
 
 # Program Gap Analysis

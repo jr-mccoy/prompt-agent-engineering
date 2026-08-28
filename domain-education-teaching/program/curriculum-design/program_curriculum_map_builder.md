@@ -24,11 +24,11 @@ tags:
   - medical-education
 updated: "2026-07-20"
 related_prompts:
-  - "../program-outcomes-assessment/teaching_program_outcomes_framework.md"
-  - "../program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md"
-  - "../program-outcomes-assessment/teaching_program_gap_analysis.md"
-  - "teaching_standards_alignment_audit.md"
-  - "teaching_vertical_alignment_auditor.md"
+  - domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_gap_analysis.md
+  - domain-education-teaching/program/curriculum-design/program_standards_alignment_audit.md
+  - domain-education-teaching/program/curriculum-design/program_vertical_alignment_auditor.md
 ---
 
 # Curriculum Map Builder

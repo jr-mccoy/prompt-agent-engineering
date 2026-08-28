@@ -22,7 +22,7 @@ related_prompts:
   - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
   - domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md
   - domain-education-teaching/program/outcomes-assessment/program_capstone_assessment_designer.md
-  - ../curriculum-design/teaching_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
 ---
 
 # Signature Assignment Designer

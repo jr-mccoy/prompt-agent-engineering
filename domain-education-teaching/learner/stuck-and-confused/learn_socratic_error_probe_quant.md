@@ -15,6 +15,10 @@ tags:
   - misconception-diagnosis
   - socratic
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/stuck-and-confused/learn_clinical_differential_coach.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_wrong_answer_forensics.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_multi_representation_unpacking.md
 ---
 
 # Socratic Error Probe for Quantitative Reasoning

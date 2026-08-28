@@ -13,6 +13,10 @@ tags:
   - exam-review
   - misconceptions
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/stuck-and-confused/learn_analogy_representation_switcher.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_history_evidence_claim_tutor.md
+  - domain-education-teaching/learner/stuck-and-confused/learn_metacognitive_debrief.md
 ---
 
 # Wrong-Answer Forensics and Recovery

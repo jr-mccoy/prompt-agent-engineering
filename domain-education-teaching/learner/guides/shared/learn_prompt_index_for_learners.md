@@ -2,7 +2,21 @@
 title: "Prompt Index for Learners (Cross-Domain)"
 category: education-teaching/learner/guides/shared
 description: "Curated cross-domain index of ~115 prompts relevant to college students, adult returning learners, and career changers. Organized by job-to-be-done. The human-browsable companion to PROMPT_INDEX.json's audience-tag enrichment."
+techniques:
+  - OC-03
+  - OC-12
+  - RP-02
+difficulty: beginner
+tags:
+  - education
+  - learner-guidance
+  - cross-cutting
+  - reference
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/shared/learn_ai_as_study_partner_integrity.md
+  - domain-education-teaching/learner/guides/shared/learn_andragogy_principles.md
+  - domain-education-teaching/learner/guides/shared/learn_socratic_vs_direct_decision.md
 audience:
   - college-students
   - adult-learners-returning

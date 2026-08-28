@@ -2,6 +2,14 @@
 title: "Project-Based Learning Designer"
 category: education-teaching/instructor/lesson-planning
 description: "Design authentic PBL units with driving questions, sustained inquiry, and public products"
+techniques:
+  - CM-01
+  - DS-01
+  - DT-01
+  - QA-01
+  - ST-02
+  - ST-03
+difficulty: advanced
 tags:
   - education
   - teaching
@@ -10,6 +18,10 @@ tags:
   - inquiry
   - authentic-learning
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/lesson-planning/teaching_unit_curriculum_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_substitute_plan_generator.md
 ---
 
 **Purpose:** Design rigorous project-based learning (PBL) units using the Gold Standard PBL framework — featuring driving questions, sustained inquiry, authentic audiences, student voice and choice, and public products that demonstrate deep understanding.

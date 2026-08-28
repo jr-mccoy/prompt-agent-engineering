@@ -25,7 +25,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/evaluation-analytics/program_early_warning_system_designer.md
   - domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md
-  - ../program-outcomes-assessment/teaching_program_gap_analysis.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_gap_analysis.md
 ---
 
 # Learning Analytics Interpreter

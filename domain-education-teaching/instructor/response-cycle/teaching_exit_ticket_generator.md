@@ -2,6 +2,14 @@
 title: "Exit Ticket & Formative Check Generator"
 category: education-teaching/instructor/response-cycle
 description: "Create quick formative assessment items aligned to Bloom's taxonomy with data analysis guidance"
+techniques:
+  - CM-01
+  - DS-01
+  - DS-02
+  - QA-01
+  - ST-02
+  - ST-03
+difficulty: beginner
 tags:
   - education
   - teaching
@@ -9,6 +17,10 @@ tags:
   - exit-tickets
   - checks-for-understanding
 updated: "2026-03-07"
+related_prompts:
+  - domain-education-teaching/instructor/response-cycle/teaching_preassessment_designer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_reteach_intervention_planner.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 **Purpose:** Generate quick, targeted exit tickets and formative check-for-understanding items (2-5 minutes) that reveal student thinking, identify misconceptions, and inform next-day instruction — aligned to specific Bloom's taxonomy levels.

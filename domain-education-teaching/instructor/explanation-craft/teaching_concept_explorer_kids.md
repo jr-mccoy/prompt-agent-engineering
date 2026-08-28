@@ -7,6 +7,7 @@ techniques:
   - ED-01
   - RP-02
   - OC-04
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -18,6 +19,10 @@ tags:
   - storytelling
   - simplification
 updated: "2026-02-27"
+related_prompts:
+  - domain-education-teaching/instructor/explanation-craft/teaching_visual_memory_architect.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_concept_clarity_adults.md
 ---
 
 **Purpose:** Turn any complex concept — from science to history to math to emotions — into a vivid, kid-friendly explanation that a child can picture, retell to a friend, and remember weeks later. Uses characters, sensory imagery, mini-adventures, and physical analogies to make abstract ideas concrete and sticky.

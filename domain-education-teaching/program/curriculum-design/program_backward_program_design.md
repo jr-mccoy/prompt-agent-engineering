@@ -28,11 +28,11 @@ tags:
 updated: "2026-07-20"
 related_prompts:
   - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
-  - ../program-outcomes-assessment/teaching_program_outcomes_framework.md
-  - ../program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
   - domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
   - domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md
-  - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
+  - domain-education-teaching/program/outcomes-assessment/program_assessment_blueprint_builder.md
 ---
 
 # Backward Program Design (UbD at Program Scale)

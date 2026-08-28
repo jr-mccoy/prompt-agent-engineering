@@ -15,6 +15,10 @@ tags:
   - retrieval-practice
   - mastery
 updated: "2026-05-15"
+related_prompts:
+  - domain-education-teaching/learner/tutoring/learn_adaptive_input_output_loop.md
+  - domain-education-teaching/learner/tutoring/learn_argument_writing_coach.md
+  - domain-education-teaching/learner/tutoring/learn_from_scratch_calibrated_builder.md
 ---
 
 # Explain-Quiz Adaptive Mastery Loop

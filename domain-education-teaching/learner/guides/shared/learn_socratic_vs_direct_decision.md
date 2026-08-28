@@ -2,7 +2,21 @@
 title: "Socratic vs. Direct: When to Use Which Mode"
 category: education-teaching/learner/guides/shared
 description: "Decision rule for when AI should coach Socratically (refuse to answer, ask diagnostic questions) and when it should answer directly. Resolves the live tension adult learners feel under time pressure."
+techniques:
+  - CM-02
+  - DS-01
+  - OC-03
+difficulty: intermediate
+tags:
+  - education
+  - learner-guidance
+  - cross-cutting
+  - reference
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/shared/learn_ai_as_study_partner_integrity.md
+  - domain-education-teaching/learner/guides/shared/learn_andragogy_principles.md
+  - domain-education-teaching/learner/guides/shared/learn_prompt_index_for_learners.md
 audience:
   - all-learners
   - prompt-authors

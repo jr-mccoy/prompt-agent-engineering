@@ -29,7 +29,7 @@ updated: "2026-07-20"
 related_prompts:
   - domain-education-teaching/program/curriculum-design/program_standards_crosswalk_generator.md
   - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
-  - ../program-outcomes-assessment/teaching_program_gap_analysis.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_gap_analysis.md
 ---
 
 # Standards Alignment Audit

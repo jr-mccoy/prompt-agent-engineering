@@ -27,7 +27,7 @@ updated: "2026-07-18"
 related_prompts:
   - domain-education-teaching/program/curriculum-design/program_backward_program_design.md
   - domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md
-  - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
+  - domain-education-teaching/program/outcomes-assessment/program_assessment_blueprint_builder.md
   - domain-education-teaching/program/curriculum-design/program_remediation_pathway_designer.md
 ---
 

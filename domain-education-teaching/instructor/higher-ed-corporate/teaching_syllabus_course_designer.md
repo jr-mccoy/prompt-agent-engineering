@@ -2,6 +2,14 @@
 title: "Syllabus & Course Designer (Higher Ed)"
 category: education-teaching/instructor/higher-ed-corporate
 description: "Design comprehensive course syllabi with learning outcomes, AI policies, and inclusive design for higher education"
+techniques:
+  - CM-01
+  - CM-02
+  - DS-01
+  - QA-01
+  - ST-02
+  - ST-03
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -10,6 +18,10 @@ tags:
   - course-design
   - ai-policy
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_microlearning_module.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_online_course_conversion.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_corporate_onboarding_program.md
 ---
 
 **Purpose:** Design comprehensive course syllabi for college and university courses — including learning outcomes aligned to program goals, weekly schedules, assessment plans, AI use policies, accessibility statements, and inclusive course design elements.

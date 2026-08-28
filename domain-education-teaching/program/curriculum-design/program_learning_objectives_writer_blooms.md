@@ -27,10 +27,10 @@ tags:
   - "medical-education"
 updated: "2026-07-20"
 related_prompts:
-  - "teaching_blooms_taxonomy_calibrator.md"
-  - "teaching_competency_framework_designer.md"
-  - "teaching_backward_program_design.md"
-  - "../program-outcomes-assessment/teaching_program_outcomes_framework.md"
+  - domain-education-teaching/program/curriculum-design/program_blooms_taxonomy_calibrator.md
+  - domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
+  - domain-education-teaching/program/curriculum-design/program_backward_program_design.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md
 ---
 
 # Learning Objectives Writer  

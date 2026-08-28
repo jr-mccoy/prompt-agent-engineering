@@ -2,6 +2,14 @@
 title: "IEP & 504 Plan Goal Writer"
 category: education-teaching/instructor/student-support
 description: "Generate measurable, compliant IEP and 504 plan goals with progress monitoring frameworks"
+techniques:
+  - CM-01
+  - DS-01
+  - QA-01
+  - QA-12
+  - ST-02
+  - ST-03
+difficulty: advanced
 tags:
   - education
   - special-education
@@ -9,6 +17,10 @@ tags:
   - 504-plan
   - accommodations
 updated: "2026-02-20"
+related_prompts:
+  - domain-education-teaching/instructor/student-support/teaching_ell_wida_scaffolding.md
+  - domain-education-teaching/instructor/student-support/teaching_dyslexia_structured_literacy_plan.md
+  - domain-education-teaching/instructor/student-support/teaching_course_selection_advising.md
 ---
 
 **Purpose:** Generate SMART IEP and 504 plan goals across academic, behavioral, social-emotional, and functional domains with aligned accommodations, modifications, and progress monitoring plans.

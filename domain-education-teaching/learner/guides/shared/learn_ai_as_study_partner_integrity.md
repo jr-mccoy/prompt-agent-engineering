@@ -2,7 +2,21 @@
 title: "AI as Study Partner: Academic Integrity for Self-Directed Adult Learners"
 category: education-teaching/learner/guides/shared
 description: "How to use AI as a learning partner without producing submittable work. Aimed at college students, returning adults, and self-directed career changers. Covers what integrity policies mean for each audience, how the learner-facing prompts are designed to comply, and practical patterns for using AI ethically across coursework."
+techniques:
+  - CM-02
+  - OC-09
+  - RP-02
+difficulty: beginner
+tags:
+  - education
+  - learner-guidance
+  - cross-cutting
+  - reference
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/shared/learn_andragogy_principles.md
+  - domain-education-teaching/learner/guides/shared/learn_prompt_index_for_learners.md
+  - domain-education-teaching/learner/guides/shared/learn_socratic_vs_direct_decision.md
 audience:
   - college-students
   - adult-learners

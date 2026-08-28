@@ -2,7 +2,21 @@
 title: "Adult Returning to School: Cross-Domain Prompt Kit"
 category: education-teaching/learner/guides/adult-returning
 description: "Curated index of non-education prompts that returning adult learners need: deep work and time management, identity calibration, bottleneck diagnosis, agency / execution, and career-transformation prompts when the return is pivot-related."
+techniques:
+  - CM-01
+  - OC-12
+  - RP-02
+difficulty: beginner
+tags:
+  - education
+  - adult-learner
+  - returning-student
+  - reference
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_cold_start_return.md
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_writing_rust_recovery.md
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_prior_learning_articulation.md
 audience: adult-learners-returning
 status: active
 ---

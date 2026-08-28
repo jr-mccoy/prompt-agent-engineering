@@ -22,7 +22,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/evaluation-analytics/program_program_evaluation_framework.md
   - domain-education-teaching/program/evaluation-analytics/program_logic_model_designer.md
-  - ../accreditation-program-review/teaching_program_review_cycle_designer.md
+  - domain-education-teaching/program/accreditation-review/program_program_review_cycle_designer.md
 ---
 
 # Continuous Improvement Cycle Designer

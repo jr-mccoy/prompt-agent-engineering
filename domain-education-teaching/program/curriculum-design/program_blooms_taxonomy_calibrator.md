@@ -25,7 +25,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md
   - domain-education-teaching/program/curriculum-design/program_standards_alignment_audit.md
-  - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
+  - domain-education-teaching/program/outcomes-assessment/program_assessment_blueprint_builder.md
 ---
 
 # Bloom's Taxonomy Calibrator (Revised Taxonomy + Webb's DOK Audit)

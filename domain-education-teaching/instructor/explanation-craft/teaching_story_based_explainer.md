@@ -7,6 +7,7 @@ techniques:
   - ED-01
   - ED-03
   - OC-04
+difficulty: intermediate
 tags:
   - education
   - teaching
@@ -17,6 +18,10 @@ tags:
   - retention
   - explanation
 updated: "2026-03-06"
+related_prompts:
+  - domain-education-teaching/instructor/explanation-craft/teaching_concept_clarity_adults.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_vocabulary_builder.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
 ---
 
 **Purpose:** Transform any concept — scientific, historical, mathematical, philosophical, or practical — into a story that teaches. Uses narrative structure (characters, conflict, resolution) to encode information in the format the brain is most naturally wired to absorb and retain. Stories are not decoration added to learning — they ARE the most ancient and effective learning technology humans have.

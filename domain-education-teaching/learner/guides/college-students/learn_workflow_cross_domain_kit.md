@@ -2,7 +2,21 @@
 title: "College Students: Cross-Domain Prompt Kit"
 category: education-teaching/learner/guides/college-students
 description: "Curated index of non-education-domain prompts that traditional college students will find useful: time management, focus, procrastination, perfectionism, confidence, stuckness, and weekly review."
+techniques:
+  - CM-01
+  - OC-12
+  - RP-02
+difficulty: beginner
+tags:
+  - education
+  - college
+  - undergraduate
+  - reference
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_office_hours_and_class_discussion.md
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_essay_draft_to_submit.md
+  - domain-education-teaching/learner/guides/college-students/learn_workflow_exam_prep_finals_week.md
 audience: college-students
 status: active
 ---

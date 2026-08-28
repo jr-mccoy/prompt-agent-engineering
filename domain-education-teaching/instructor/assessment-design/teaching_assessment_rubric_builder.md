@@ -2,6 +2,15 @@
 title: "Assessment and Rubric Builder"
 category: education-teaching/instructor/assessment-design
 description: "Create aligned assessments with clear rubrics and scoring guides"
+techniques:
+  - CM-01
+  - DS-01
+  - OC-03
+  - QA-01
+  - RP-02
+  - ST-02
+  - ST-03
+difficulty: advanced
 tags:
   - education
   - teaching
@@ -9,6 +18,10 @@ tags:
   - rubrics
   - evaluation
 updated: "2026-03-07"
+related_prompts:
+  - domain-education-teaching/instructor/assessment-design/teaching_portfolio_assessment_designer.md
+  - domain-education-teaching/instructor/assessment-design/teaching_diagnostic_quiz_knowledge_map.md
+  - domain-education-teaching/instructor/assessment-design/teaching_peer_review_protocol_designer.md
 ---
 
 **Purpose:** Design valid, reliable assessments with clear rubrics that accurately measure learning objectives and provide actionable feedback.

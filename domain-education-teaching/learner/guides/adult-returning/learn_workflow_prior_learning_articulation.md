@@ -2,7 +2,23 @@
 title: "Workflow: Prior Learning Articulation"
 category: education-teaching/learner/guides/adult-returning
 description: "Translate career and life experience into academic currency — CPL portfolios, graduate-school SOPs, application essays, course-equivalency petitions. Treats experience as a resource without inflating it."
+techniques:
+  - CM-01
+  - DT-01
+  - NE-02
+  - RP-02
+  - ST-02
+difficulty: intermediate
+tags:
+  - education
+  - adult-learner
+  - returning-student
+  - workflow-chain
 updated: "2026-05-13"
+related_prompts:
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_cross_domain_kit.md
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_working_learner_time_architecture.md
+  - domain-education-teaching/learner/guides/adult-returning/learn_workflow_writing_rust_recovery.md
 audience: adult-learners-returning
 chain_length: 3
 estimated_time: "3-6 hours per artifact"
