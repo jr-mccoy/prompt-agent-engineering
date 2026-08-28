@@ -19,7 +19,7 @@ tags:
 updated: "2026-04-21"
 related_prompts:
   - domain-engineering-workflows/ai-patterns/ai_pattern_agent_task_first_delegation_spec.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_engineering_manager_stance.md
+  - domain-personal-development/prompts/identity/identity_engineering_manager_stance.md
   - domain-engineering-workflows/ai-patterns/ai_pattern_intent_and_verification_first.md
   - domain-engineering-workflows/ai-patterns/ai_review_outcome_level_code_review.md
   - domain-engineering-workflows/ai-native-rollouts/airollout_delegate_like_parallel_coworker.md

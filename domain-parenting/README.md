@@ -137,7 +137,7 @@ The emotional and relational side of separation/divorce for children and the par
 
 | Prompt | Focus |
 |---|---|
-| `parenting_divorce_telling_the_kids_script.md` | Age-tiered "we're separating" conversation; core messages; first reactions |
+| `domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_kids_script.md` | Age-tiered "we're separating" conversation; core messages; first reactions |
 | `parenting_divorce_child_reaction_by_age_guide.md` | Expected reactions by stage; normal vs. concerning; adjustment timeline |
 | `parenting_divorce_hard_questions_answer_bank.md` | Honest, age-appropriate answers to the recurring hard questions |
 | `parenting_divorce_two_homes_transition_support.md` | Adjusting to two homes; transition rituals; "I miss the other parent" |
@@ -145,7 +145,7 @@ The emotional and relational side of separation/divorce for children and the par
 | `parenting_divorce_shield_kids_from_conflict.md` | Keeping children out of the middle; loyalty binds; not disparaging |
 | `parenting_divorce_telling_others_and_privacy.md` | What to tell teachers/family; the child's own narrative and privacy |
 | `parenting_divorce_new_partner_introduction_timing.md` | When/how to introduce dating and a new partner |
-| `parenting_divorce_milestones_and_holidays_emotional_plan.md` | Birthdays/holidays/milestones across two homes (emotionally) |
+| `domain-parenting/caregiver-facing/divorce/parenting_divorce_milestones_and_holidays_plan.md` | Birthdays/holidays/milestones across two homes (emotionally) |
 | `parenting_divorce_signs_child_needs_more_support.md` | Warning signs a child needs a therapist; escalation pathway |
 
 ### `caregiver-facing/custody/` (11 prompts)
@@ -164,7 +164,7 @@ Court-presentable resource & document builders — **not legal advice.** Factual
 | `parenting_custody_exchange_and_transition_protocol.md` | Low-conflict exchange/handoff protocol document |
 | `parenting_custody_common_plan_provisions_explainer.md` | Light legal-literacy: common provisions in plain language |
 | `parenting_custody_special_needs_plan_addendum.md` | Plan addendum for a child with disability/medical/ND needs |
-| `parenting_custody_changed_circumstances_documentation_organizer.md` | Organize a factual record when circumstances change |
+| `domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_organizer.md` | Organize a factual record when circumstances change |
 
 ### `caregiver-facing/co-parenting/` (11 prompts)
 
@@ -177,11 +177,11 @@ The ongoing two-home working relationship between parents. See [`co-parenting/RE
 | `parenting_coparenting_consistency_across_homes.md` | Align rules/routines where possible; accept the rest |
 | `parenting_coparenting_shared_decision_framework.md` | Make joint decisions; resolve disagreement at impasse |
 | `parenting_coparenting_information_handoff_brief.md` | Share what the receiving parent needs about the kids |
-| `parenting_coparenting_new_partners_and_blended_coordination.md` | Coordinate new partners/stepfamily; roles and boundaries |
+| `domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_blended_family_coordination.md` | Coordinate new partners/stepfamily; roles and boundaries |
 | `parenting_coparenting_deescalation_in_front_of_kids.md` | Disengage from a flare-up in front of the kids |
 | `parenting_coparenting_relationship_reset_proposal.md` | Propose an improved working relationship to a co-parent |
 | `parenting_coparenting_long_distance_protocol.md` | Maintain the parent-child relationship across distance |
-| `parenting_coparenting_self_audit_am_i_the_problem.md` | Honest self-audit of one's own contribution to conflict |
+| `domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit.md` | Honest self-audit of one's own contribution to conflict |
 | `parenting_coparenting_with_unsafe_or_absent_parent.md` | Safety-first navigation of an unsafe/absent co-parent |
 
 ## Cross-Cutting Conventions
@@ -232,7 +232,7 @@ The library will expand in waves; current state is Wave 1.
 - **Teacher-side of the school conversation:** `domain-education-teaching/`.
 - **Clinical reasoning:** `domain-healthcare-clinical/`.
 - **Personal development / parent self-care:** `domain-personal-development/`.
-- **Hard-conversation communication (general):** `domain-professional-communication/`.
+- **Hard-conversation communication (general):** `domain-product-management/`.
 - **Psychology / therapy / behavioral health:** `domain-psychology/`.
 
 ---

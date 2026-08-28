@@ -14,7 +14,7 @@
 |---|---|
 | Generic research methodology (lit search strategy, qualitative coding, survey instruments) usable across all academic fields | [`domain-research-academic/`](../domain-research-academic/) |
 | A health-professions clinical practitioner workflow (differential dx, SOAP, prior auth, etc.) | [`domain-healthcare-clinical/`](../domain-healthcare-clinical/) |
-| Health-professions education (curriculum, OSCE, milestone narratives, CBME, learner self-study) | [`domain-healthcare-clinical/prompts/medical-education/`](../domain-healthcare-clinical/prompts/medical-education/) |
+| Health-professions education (curriculum, OSCE, milestone narratives, CBME, learner self-study) | [`domain-medical-education/`](../domain-medical-education/) |
 | Academic K-12 / higher-ed teaching workflows, accreditation, faculty development | [`domain-education-teaching/`](../domain-education-teaching/) |
 | Psychology / therapy / behavioral health *practice* (clinical) | [`domain-psychology/`](../domain-psychology/) |
 | Image generation for science (figure mockup, conceptual diagram, infographic) | [`domain-image-generation/`](../domain-image-generation/) — pair with science prompts from this domain for the figure planning step |

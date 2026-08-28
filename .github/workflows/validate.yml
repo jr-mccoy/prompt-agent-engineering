@@ -67,6 +67,15 @@ jobs:
       - name: Relative Markdown links resolve
         run: python3 scripts/check_relative_links.py
 
+      # Self-contained bundles carry copies of canonical prompts on purpose.
+      # This fails when an original was edited and its copies were not.
+      - name: Vendored copies match their canonicals
+        run: python3 scripts/check_vendored_copies.py
+
+      # Every reference to a moved or removed file must point at its new home.
+      - name: Reorg map fully applied
+        run: python3 scripts/apply_reorg_map.py --check
+
       - name: Shell script syntax
         run: |
           status=0

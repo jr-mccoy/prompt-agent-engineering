@@ -21,7 +21,7 @@ related_prompts:
   - domain-discipleship/session-and-lesson/discipleship_session_plan_builder.md
   - domain-discipleship/pairing-and-relationship/discipleship_relationship_covenant.md
   - domain-discipleship/mentor-equipping/discipleship_mentor_support_and_sustainability.md
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
 ---
 
 # Hard Conversation Navigation
@@ -301,5 +301,5 @@ here states what the law requires.
   where the confidentiality limits were stated in advance
 - [`../mentor-equipping/discipleship_mentor_support_and_sustainability.md`](../mentor-equipping/discipleship_mentor_support_and_sustainability.md) —
   the supervision route for what the mentor now carries
-- [`domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md) —
+- [`domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md) —
   the ministry-setting foundations for lay care conversations

@@ -17,8 +17,8 @@ tags:
   - reference
 updated: "2026-06-07"
 related_prompts:
-  - domain-engineering-workflows/improvement/improvement_best_practice_analysis.md
-  - domain-engineering-workflows/improvement/improvement_refactoring.md
+  - domain-software-engineering/improvement/improvement_best_practice_analysis.md
+  - domain-software-engineering/improvement/improvement_refactoring.md
   - domain-engineering-workflows/workflows/engineering_debugging_root_cause.md
 ---
 
@@ -756,6 +756,6 @@ Each issue has detection methods and solutions, making this catalog a practical 
 
 ## Related Prompts
 
-- `domain-engineering-workflows/improvement/improvement_best_practice_analysis.md` — Full evidence-anchored audit using this taxonomy.
-- `domain-engineering-workflows/improvement/improvement_refactoring.md` — Remediate the issues this catalog surfaces.
+- `domain-software-engineering/improvement/improvement_best_practice_analysis.md` — Full evidence-anchored audit using this taxonomy.
+- `domain-software-engineering/improvement/improvement_refactoring.md` — Remediate the issues this catalog surfaces.
 - `domain-engineering-workflows/workflows/engineering_debugging_root_cause.md` — Diagnose a single live defect to root cause.

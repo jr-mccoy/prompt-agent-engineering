@@ -88,7 +88,7 @@ Artifacts church staff actually produce — the operational backbone behind teac
 | `biblical_churchstaff_curriculum_scope_sequence.md` | P, G | intermediate | Multi-quarter scope-and-sequence for a church teaching program |
 | `biblical_churchstaff_curriculum_selection_evaluation.md` | P, G | intermediate | Evaluate published curriculum against criteria (STRONG-GUARD: no fabricated product claims) |
 | `biblical_churchstaff_teacher_training_plan.md` | P, G | intermediate | Train Bible-study volunteers: hermeneutics basics, classroom mgmt, child safety |
-| `biblical_churchstaff_multi_service_teaching_coordination.md` | P | intermediate | Coordinate consistent teaching across services/campuses/communicators |
+| `domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_multi_service_coordination.md` | P | intermediate | Coordinate consistent teaching across services/campuses/communicators |
 | `biblical_churchstaff_annual_teaching_calendar.md` | P | beginner | Map preaching/teaching year integrating series, holidays, guest speakers |
 | `biblical_churchstaff_volunteer_recruitment_role_design.md` | P, G | beginner | Design volunteer roles with descriptions, onboarding, time commitments |
 | `biblical_churchstaff_small_group_launch_system.md` | P, G | intermediate | System design: group formation, leader training, curriculum cycle, reporting |

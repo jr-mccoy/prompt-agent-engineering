@@ -33,5 +33,5 @@ Running the brief first without the upstream analyses produces generic AI-strate
 ## Relationship to adjacent clusters
 
 - **[ambition-leverage/](../ambition-leverage/)** — once AI strategy is framed, ambition-leverage prompts turn that into organizational moves (expansion vs savings, domain-expert-as-builder, workflow compression).
-- **[analysis/](../analysis/)** — traditional business-model, financial, and competitive analyses. AI strategy usually needs to plug into these, not replace them.
-- **[chief-of-staff/](../chief-of-staff/)** — operationalizes decisions from AI strategy into the user's personal working cadence.
+- **[domain-software-engineering/analysis/business/](../../domain-software-engineering/analysis/business/)** — traditional business-model, financial, and competitive analyses. AI strategy usually needs to plug into these, not replace them.
+- **[domain-productivity/operating-cadence/](../../domain-productivity/operating-cadence/)** — operationalizes decisions from AI strategy into the user's personal working cadence.

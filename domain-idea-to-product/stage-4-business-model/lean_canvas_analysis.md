@@ -18,9 +18,9 @@ tags:
   - product-strategy
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/business_model_canvas_analysis.md
-  - domain-business-strategy/analysis/product_market_fit_analysis.md
-  - domain-business-strategy/analysis/value_proposition_canvas_analysis.md
+  - domain-software-engineering/analysis/business/business_model_canvas_analysis.md
+  - domain-software-engineering/analysis/business/product_market_fit_analysis.md
+  - domain-software-engineering/analysis/business/value_proposition_canvas_analysis.md
 ---
 
 # Lean Canvas Analysis for Codebase

@@ -60,6 +60,23 @@ When refusing, name exactly which of the inputs above is missing and ask one tar
 
 ---
 
+## Constraints
+
+### Must
+- Distill the situation to a core issue, key tensions, and urgency.
+- Separate facts everyone agrees on from explicit points of disagreement (with sides).
+- Build a stakeholder matrix: power, current position, underlying interests, levers, relationship, pressure points, best approach.
+- Present exactly three strategic options with actions, timeline, pros, cons, and second-order effects.
+- Recommend one path with a 72-hour action plan and risk mitigations.
+
+### Must Not
+- State a stakeholder's private motivations as fact — label inferences as assumptions.
+- Recommend actions that violate the user's stated constraints.
+- Assign success probabilities as if precise — present them as rough judgments with reasoning.
+- Invent emails, quotes, or events not in the provided context.
+
+---
+
 ## Instructions
 
 Navigate this political situation through systematic analysis:
@@ -208,4 +225,4 @@ Before delivering the analysis, confirm each of the following:
 - [thinking_fresh_perspective_generator.md](../thinking/thinking_fresh_perspective_generator.md) — Generate alternative viewpoints on the conflict.
 - [agency_feedback_extraction.md](../agency/agency_feedback_extraction.md) — Extract useful signal from stakeholder reactions after you act.
 
-> For interest-based bargaining mechanics (BATNA, ZOPA, concession sequencing), use `domain-negotiation/`. For drafting the actual stakeholder-facing message, use `domain-professional-communication/`. This prompt is for the *strategy*, not the negotiation tactics or the written deliverable.
+> For interest-based bargaining mechanics (BATNA, ZOPA, concession sequencing), use `domain-negotiation/`. For drafting the actual stakeholder-facing message, use `domain-professional-writing/business-writing/`. This prompt is for the *strategy*, not the negotiation tactics or the written deliverable.

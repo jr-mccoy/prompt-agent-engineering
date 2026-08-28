@@ -36,7 +36,7 @@ Route to this domain when the request mentions:
 - **Actual legal/financial advice** - This domain helps with DOCUMENTS, not advice
 - **Clinical healthcare** → domain-healthcare-clinical
 - **Academic research** → domain-research-academic
-- **General business communication** → domain-professional-communication
+- **General business communication** → domain-product-management
 
 ---
 
@@ -696,7 +696,7 @@ Client Signature: ___________________________ Date: ___________
 |----------|---------|
 | [NON_CODING_QUICK_START.md](../NON_CODING_QUICK_START.md) | Universal non-coding principles |
 | [domain-professional-writing/domain-specific/](../domain-professional-writing/domain-specific/) | 26 professional field prompts |
-| [domain-professional-communication/](../domain-professional-communication/) | General business documents |
+| [domain-product-management/](../domain-product-management/) | General business documents |
 | [PROMPT_QUALITY_STANDARDS.md](../PROMPT_QUALITY_STANDARDS.md) | Quality tier definitions |
 
 ---

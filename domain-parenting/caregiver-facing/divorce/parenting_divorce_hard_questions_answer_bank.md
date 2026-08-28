@@ -18,7 +18,7 @@ tags:
   - scripts
 updated: "2026-06-01"
 related_prompts:
-  - domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_the_kids_script.md
+  - domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_kids_script.md
   - domain-parenting/caregiver-facing/divorce/parenting_divorce_shield_kids_from_conflict.md
   - domain-parenting/caregiver-facing/divorce/parenting_divorce_child_reaction_by_age_guide.md
   - domain-parenting/caregiver-facing/cross-age/parenting_hard_topics_age_appropriate_scripts.md
@@ -209,7 +209,7 @@ Where you and the co-parent can agree on consistent answers (especially "why" an
 
 ## Cross-References
 
-- `parenting_divorce_telling_the_kids_script.md` — the first conversation these questions follow.
+- `parenting_divorce_telling_kids_script.md` — the first conversation these questions follow.
 - `parenting_divorce_shield_kids_from_conflict.md` — answering without badmouthing, even under pressure.
 - `parenting_divorce_child_reaction_by_age_guide.md` — what the questions are telling you about how they're coping.
 - `domain-parenting/caregiver-facing/cross-age/parenting_hard_topics_age_appropriate_scripts.md` — general scripts for hard topics with kids.

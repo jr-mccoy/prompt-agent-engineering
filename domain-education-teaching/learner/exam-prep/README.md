@@ -10,7 +10,7 @@ The run-up to a dated test: practice test generation, review planning, finals we
 
 - **No exam date, just learning the material** → [`../memory-and-recall/`](../memory-and-recall/)
 - **Discipline-specific drilling** → [`../study-by-discipline/`](../study-by-discipline/)
-- **Health-professions board exams** → [`../../../domain-healthcare-clinical/prompts/medical-education/learner-self-study/`](../../../domain-healthcare-clinical/prompts/medical-education/learner-self-study/)
+- **Health-professions board exams** → [`../../../domain-medical-education/`](../../../domain-medical-education/)
 
 ## Prompts
 

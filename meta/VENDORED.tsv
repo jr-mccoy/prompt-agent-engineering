@@ -1,0 +1,178 @@
+# Vendored copies: canonical<TAB>copy
+#
+# Directories that are self-contained by design carry copies of files that also
+# live in a canonical location. Copying is the intended trade; silent drift is
+# not. scripts/check_vendored_copies.py compares each pair, accepting the
+# differences a copy is supposed to have -- see that script's docstring.
+#
+# Two vendoring styles are registered here:
+#   subtree mirror  portable-prompt-system/resource-patterns/ mirrors authoring/,
+#                   portable-prompt-system/techniques/ mirrors techniques/,
+#                   financial-records-toolkit/skills/ mirrors the skills under
+#                   domain-agentic-resources/. Directory shape is reproduced, so
+#                   these stay byte-identical.
+#   flat re-file    domain-idea-to-product/stage-N/ and the research toolkit
+#                   gather prompts from many domains into stage directories, so
+#                   their links are re-pointed for the new depth.
+#
+# Deliberately NOT registered, because they are adapted rather than copied and a
+# strict sync would break them:
+#   portable-prompt-system/guides/  - flattens link paths and drops
+#                   repo-specific guidance so the folder works standalone.
+#   agentic-system-factory/templates/  - extends the authoring templates with
+#                   machine-readable markers its own scripts/check_gate.py parses.
+# Both still go stale; refreshing them is a judgement call, not a sync.
+authoring/INTEGRATION_PATTERNS.md	portable-prompt-system/resource-patterns/INTEGRATION_PATTERNS.md
+authoring/TECHNIQUE_PICKER_FAST.md	portable-prompt-system/guides/TECHNIQUE_PICKER_FAST.md
+authoring/skill-patterns/SKILL_PATTERN_INDEX.md	portable-prompt-system/resource-patterns/skill-patterns/SKILL_PATTERN_INDEX.md
+authoring/skill-patterns/SKILL_QUALITY_RUBRIC.md	portable-prompt-system/resource-patterns/skill-patterns/SKILL_QUALITY_RUBRIC.md
+authoring/skill-patterns/SKILL_USE_CASE_LOOKUP.md	portable-prompt-system/resource-patterns/skill-patterns/SKILL_USE_CASE_LOOKUP.md
+authoring/skill-patterns/templates/GOLD_STANDARD_SKILL.md	portable-prompt-system/resource-patterns/skill-patterns/templates/GOLD_STANDARD_SKILL.md
+authoring/skill-patterns/templates/skill-templates/ANALYSIS_SKILL_TEMPLATE.md	portable-prompt-system/resource-patterns/skill-patterns/templates/skill-templates/ANALYSIS_SKILL_TEMPLATE.md
+authoring/skill-patterns/templates/skill-templates/CREATION_SKILL_TEMPLATE.md	portable-prompt-system/resource-patterns/skill-patterns/templates/skill-templates/CREATION_SKILL_TEMPLATE.md
+authoring/skill-patterns/templates/skill-templates/DOMAIN_SKILL_TEMPLATE.md	portable-prompt-system/resource-patterns/skill-patterns/templates/skill-templates/DOMAIN_SKILL_TEMPLATE.md
+authoring/skill-patterns/templates/skill-templates/INTEGRATION_SKILL_TEMPLATE.md	portable-prompt-system/resource-patterns/skill-patterns/templates/skill-templates/INTEGRATION_SKILL_TEMPLATE.md
+authoring/skill-patterns/templates/skill-templates/README.md	portable-prompt-system/resource-patterns/skill-patterns/templates/skill-templates/README.md
+authoring/skill-patterns/templates/skill-templates/TOOL_SKILL_TEMPLATE.md	portable-prompt-system/resource-patterns/skill-patterns/templates/skill-templates/TOOL_SKILL_TEMPLATE.md
+authoring/skill-patterns/templates/skill-templates/WORKFLOW_SKILL_TEMPLATE.md	portable-prompt-system/resource-patterns/skill-patterns/templates/skill-templates/WORKFLOW_SKILL_TEMPLATE.md
+authoring/system-patterns/templates/AGENT_SPEC_TEMPLATE.md	agentic-system-factory/templates/AGENT_SPEC_TEMPLATE.md
+authoring/system-patterns/templates/TOOL_SPEC_TEMPLATE.md	agentic-system-factory/templates/TOOL_SPEC_TEMPLATE.md
+authoring/templates/GOLD_STANDARD_AGENT.md	portable-prompt-system/resource-patterns/templates/GOLD_STANDARD_AGENT.md
+authoring/templates/GOLD_STANDARD_COMMAND.md	portable-prompt-system/resource-patterns/templates/GOLD_STANDARD_COMMAND.md
+authoring/templates/agent-templates/haiku_fast_agent_template.md	portable-prompt-system/resource-patterns/templates/agent-templates/haiku_fast_agent_template.md
+authoring/templates/agent-templates/inherit_user_choice_agent_template.md	portable-prompt-system/resource-patterns/templates/agent-templates/inherit_user_choice_agent_template.md
+authoring/templates/agent-templates/opus_critical_agent_template.md	portable-prompt-system/resource-patterns/templates/agent-templates/opus_critical_agent_template.md
+authoring/templates/command-templates/multi_agent_orchestration_template.md	portable-prompt-system/resource-patterns/templates/command-templates/multi_agent_orchestration_template.md
+authoring/templates/command-templates/parallel_execution_template.md	portable-prompt-system/resource-patterns/templates/command-templates/parallel_execution_template.md
+authoring/templates/command-templates/sequential_workflow_template.md	portable-prompt-system/resource-patterns/templates/command-templates/sequential_workflow_template.md
+authoring/templates/command-templates/validation_gate_template.md	portable-prompt-system/resource-patterns/templates/command-templates/validation_gate_template.md
+authoring/templates/worked-examples/README.md	portable-prompt-system/resource-patterns/templates/worked-examples/README.md
+authoring/templates/worked-examples/example_01_opus_security_agent.md	portable-prompt-system/resource-patterns/templates/worked-examples/example_01_opus_security_agent.md
+authoring/templates/worked-examples/example_02_haiku_diagram_agent.md	portable-prompt-system/resource-patterns/templates/worked-examples/example_02_haiku_diagram_agent.md
+authoring/templates/worked-examples/example_03_sequential_testing_command.md	portable-prompt-system/resource-patterns/templates/worked-examples/example_03_sequential_testing_command.md
+authoring/templates/worked-examples/example_04_parallel_analysis_command.md	portable-prompt-system/resource-patterns/templates/worked-examples/example_04_parallel_analysis_command.md
+authoring/templates/worked-examples/example_05_agent_skill_integration.md	portable-prompt-system/resource-patterns/templates/worked-examples/example_05_agent_skill_integration.md
+authoring/templates/worked-examples/example_06_command_multi_agent.md	portable-prompt-system/resource-patterns/templates/worked-examples/example_06_command_multi_agent.md
+authoring/templates/worked-examples/example_07_full_workflow_integration.md	portable-prompt-system/resource-patterns/templates/worked-examples/example_07_full_workflow_integration.md
+domain-agentic-resources/agents/business-operations/financial-records-orchestrator.md	financial-records-toolkit/agents/financial-records-orchestrator.md
+domain-agentic-resources/agents/business-operations/transaction-research-agent.md	financial-records-toolkit/agents/transaction-research-agent.md
+domain-agentic-resources/commands/data-analysis/process_financials.md	financial-records-toolkit/commands/process_financials.md
+domain-agentic-resources/skills/financial-records/divorce-financial-flagger/SKILL.md	financial-records-toolkit/skills/divorce-financial-flagger/SKILL.md
+domain-agentic-resources/skills/financial-records/divorce-financial-flagger/references/divorce_flag_framework.md	financial-records-toolkit/skills/divorce-financial-flagger/references/divorce_flag_framework.md
+domain-agentic-resources/skills/financial-records/divorce-financial-flagger/references/privacy_and_handling.md	financial-records-toolkit/skills/divorce-financial-flagger/references/privacy_and_handling.md
+domain-agentic-resources/skills/financial-records/pdf-statement-extractor/SKILL.md	financial-records-toolkit/skills/pdf-statement-extractor/SKILL.md
+domain-agentic-resources/skills/financial-records/pdf-statement-extractor/references/statement_formats.md	financial-records-toolkit/skills/pdf-statement-extractor/references/statement_formats.md
+domain-agentic-resources/skills/financial-records/pdf-statement-extractor/references/transaction_schema.md	financial-records-toolkit/skills/pdf-statement-extractor/references/transaction_schema.md
+domain-agentic-resources/skills/financial-records/statement-reconciliation-verifier/SKILL.md	financial-records-toolkit/skills/statement-reconciliation-verifier/SKILL.md
+domain-agentic-resources/skills/financial-records/statement-reconciliation-verifier/references/reconciliation_methods.md	financial-records-toolkit/skills/statement-reconciliation-verifier/references/reconciliation_methods.md
+domain-agentic-resources/skills/financial-records/transaction-categorizer/SKILL.md	financial-records-toolkit/skills/transaction-categorizer/SKILL.md
+domain-agentic-resources/skills/financial-records/transaction-categorizer/references/category_taxonomy.md	financial-records-toolkit/skills/transaction-categorizer/references/category_taxonomy.md
+domain-agentic-resources/skills/financial-records/transaction-categorizer/references/merchant_research_protocol.md	financial-records-toolkit/skills/transaction-categorizer/references/merchant_research_protocol.md
+domain-business-strategy/go-to-market/marketing_competitive_differentiation.md	domain-idea-to-product/stage-5-strategy-positioning/marketing_competitive_differentiation.md
+domain-business-strategy/research/research_competitive_landscape.md	domain-idea-to-product/stage-3-market-research/research_competitive_landscape.md
+domain-business-strategy/startup/brand-identity/startup_brand_strategy.md	domain-idea-to-product/stage-5-strategy-positioning/startup_brand_strategy.md
+domain-business-strategy/startup/copy/startup_value_proposition.md	domain-idea-to-product/stage-5-strategy-positioning/startup_value_proposition.md
+domain-business-strategy/startup/monetization_model_selector.md	domain-idea-to-product/stage-4-business-model/monetization_model_selector.md
+domain-business-strategy/startup/monetization_pricing_strategy.md	domain-idea-to-product/stage-4-business-model/monetization_pricing_strategy.md
+domain-business-strategy/startup/monetization_subscription_design.md	domain-idea-to-product/stage-4-business-model/monetization_subscription_design.md
+domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md	domain-idea-to-product/stage-6-decision-validation/decisioning_blind_spot_mirror_see_what_im_missing.md
+domain-decision-making/decisioning_shift_fresh_latent_corner.md	domain-idea-to-product/stage-1-ideation/decisioning_shift_fresh_latent_corner.md
+domain-deep-analysis/deepthink_decision.md	domain-idea-to-product/stage-6-decision-validation/deepthink_decision.md
+domain-deep-analysis/deepthink_design.md	domain-idea-to-product/stage-8-architecture-design/deepthink_design.md
+domain-deep-analysis/deepthink_plan.md	domain-idea-to-product/stage-9-phased-build-plan/deepthink_plan.md
+domain-deep-analysis/deepthink_problem_analysis.md	domain-idea-to-product/stage-1-ideation/deepthink_problem_analysis.md
+domain-engineering-workflows/ai-native-rollouts/airollout_delegate_like_parallel_coworker.md	domain-idea-to-product/stage-10-ai-agent-handoff/airollout_delegate_like_parallel_coworker.md
+domain-engineering-workflows/ai-native-rollouts/airollout_long_running_project_memory.md	domain-idea-to-product/stage-10-ai-agent-handoff/airollout_long_running_project_memory.md
+domain-engineering-workflows/ai-patterns/ai_pattern_agent_code_footgun_detector.md	domain-idea-to-product/stage-10-ai-agent-handoff/ai_pattern_agent_code_footgun_detector.md
+domain-engineering-workflows/ai-patterns/ai_pattern_agent_task_code_distance_scorer.md	domain-idea-to-product/stage-10-ai-agent-handoff/ai_pattern_agent_task_code_distance_scorer.md
+domain-engineering-workflows/ai-patterns/ai_pattern_agent_task_first_delegation_spec.md	domain-idea-to-product/stage-10-ai-agent-handoff/ai_pattern_agent_task_first_delegation_spec.md
+domain-engineering-workflows/ai-patterns/ai_pattern_agent_work_loop_design.md	domain-idea-to-product/stage-10-ai-agent-handoff/ai_pattern_agent_work_loop_design.md
+domain-engineering-workflows/ai-patterns/ai_review_failure_mode_premortem.md	domain-idea-to-product/stage-11-build-risk-premortem/ai_review_failure_mode_premortem.md
+domain-engineering-workflows/workflows/engineering_delivery_sprint_planner.md	domain-idea-to-product/stage-9-phased-build-plan/engineering_delivery_sprint_planner.md
+domain-finance/crypto/finance_onchain_metrics_analysis.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/crypto/finance_onchain_metrics_analysis.md
+domain-finance/crypto/finance_smart_contract_risk_review.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/crypto/finance_smart_contract_risk_review.md
+domain-finance/crypto/finance_token_valuation_framework.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/crypto/finance_token_valuation_framework.md
+domain-finance/investing-research/finance_catalyst_map_builder.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/investing-research/finance_catalyst_map_builder.md
+domain-finance/investing-research/finance_competitive_moat_analyzer.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/investing-research/finance_competitive_moat_analyzer.md
+domain-finance/investing-research/finance_investment_thesis_builder.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/investing-research/finance_investment_thesis_builder.md
+domain-finance/investing-research/finance_position_sizing_framework.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/investing-research/finance_position_sizing_framework.md
+domain-finance/investing-research/finance_short_thesis_constructor.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/investing-research/finance_short_thesis_constructor.md
+domain-finance/markets-macro/finance_sector_rotation_framework.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/markets-macro/finance_sector_rotation_framework.md
+domain-finance/options/finance_implied_vol_greeks_analysis.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/options/finance_implied_vol_greeks_analysis.md
+domain-finance/options/finance_options_structure_selector.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/options/finance_options_structure_selector.md
+domain-finance/personal-finance-planning/solo_dev_financial_planning.md	domain-idea-to-product/stage-4-business-model/solo_dev_financial_planning.md
+domain-finance/quant-fintech-data/finance_alt_data_thesis_evaluator.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/quant-fintech-data/finance_alt_data_thesis_evaluator.md
+domain-finance/quant-fintech-data/finance_backtest_design_critique.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/quant-fintech-data/finance_backtest_design_critique.md
+domain-finance/quant-fintech-data/finance_signal_decay_monitor.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/quant-fintech-data/finance_signal_decay_monitor.md
+domain-finance/quant-fintech-data/finance_trading_strategy_premortem.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/quant-fintech-data/finance_trading_strategy_premortem.md
+domain-finance/valuation/finance_reverse_dcf_expectations.md	ai-investment-research-toolkit/referenced-prompts/domain-finance/valuation/finance_reverse_dcf_expectations.md
+domain-ideation/ideation_cross_domain_analogy_mining.md	domain-idea-to-product/stage-1-ideation/ideation_cross_domain_analogy_mining.md
+domain-ideation/ideation_forced_quantity_100_ideas.md	domain-idea-to-product/stage-1-ideation/ideation_forced_quantity_100_ideas.md
+domain-ideation/ideation_inverse_problem.md	domain-idea-to-product/stage-1-ideation/ideation_inverse_problem.md
+domain-product-management/prompts/product_create_prd.md	domain-idea-to-product/stage-7-prd-authoring/product_create_prd.md
+domain-product-management/prompts/product_delivery_sprint_planner.md	domain-idea-to-product/stage-9-phased-build-plan/product_delivery_sprint_planner.md
+domain-product-management/prompts/product_market_size_calculator.md	domain-idea-to-product/stage-3-market-research/product_market_size_calculator.md
+domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md	domain-idea-to-product/stage-7-prd-authoring/product_rigorous_prd_evaluation_and_scoring.md
+domain-productivity/validation/validation_am_i_being_nuts.md	domain-idea-to-product/stage-6-decision-validation/validation_am_i_being_nuts.md
+domain-productivity/validation/validation_reality_check.md	domain-idea-to-product/stage-6-decision-validation/validation_reality_check.md
+domain-professional-writing/content-quality/quality_slop_prd.md	domain-idea-to-product/stage-7-prd-authoring/quality_slop_prd.md
+domain-prompt-engineering/delegation/delegation_intent_specification.md	domain-idea-to-product/stage-10-ai-agent-handoff/delegation_intent_specification.md
+domain-prompt-engineering/evaluation/correctness_pre_mortem.md	domain-idea-to-product/stage-6-decision-validation/correctness_pre_mortem.md
+domain-prompt-engineering/goal-orientation/goalorientation_right_problem_diagnostic.md	domain-idea-to-product/stage-2-problem-validation/goalorientation_right_problem_diagnostic.md
+domain-reasoning-craft/forecasting/forecasting_base_rate_establishment.md	ai-investment-research-toolkit/referenced-prompts/domain-reasoning-craft/forecasting/forecasting_base_rate_establishment.md
+domain-reasoning-craft/forecasting/forecasting_brier_tracker_design.md	ai-investment-research-toolkit/referenced-prompts/domain-reasoning-craft/forecasting/forecasting_brier_tracker_design.md
+domain-reasoning-craft/forecasting/forecasting_calibration_self_audit.md	ai-investment-research-toolkit/referenced-prompts/domain-reasoning-craft/forecasting/forecasting_calibration_self_audit.md
+domain-reasoning-craft/forecasting/forecasting_signal_vs_noise_filter.md	ai-investment-research-toolkit/referenced-prompts/domain-reasoning-craft/forecasting/forecasting_signal_vs_noise_filter.md
+domain-reasoning-craft/forecasting/forecasting_what_would_change_my_mind.md	ai-investment-research-toolkit/referenced-prompts/domain-reasoning-craft/forecasting/forecasting_what_would_change_my_mind.md
+domain-software-engineering/analysis/architecture/architecture_design_pattern_identification.md	domain-idea-to-product/stage-8-architecture-design/architecture_design_pattern_identification.md
+domain-software-engineering/analysis/architecture/architecture_layer_identification.md	domain-idea-to-product/stage-8-architecture-design/architecture_layer_identification.md
+domain-software-engineering/analysis/business/blue_ocean_strategy_analysis.md	domain-idea-to-product/stage-3-market-research/blue_ocean_strategy_analysis.md
+domain-software-engineering/analysis/business/business_model_canvas_analysis.md	domain-idea-to-product/stage-4-business-model/business_model_canvas_analysis.md
+domain-software-engineering/analysis/business/competitive_positioning_map.md	domain-idea-to-product/stage-3-market-research/competitive_positioning_map.md
+domain-software-engineering/analysis/business/jobs_to_be_done_analysis.md	domain-idea-to-product/stage-2-problem-validation/jobs_to_be_done_analysis.md
+domain-software-engineering/analysis/business/lean_canvas_analysis.md	domain-idea-to-product/stage-4-business-model/lean_canvas_analysis.md
+domain-software-engineering/analysis/business/pestel_analysis.md	domain-idea-to-product/stage-3-market-research/pestel_analysis.md
+domain-software-engineering/analysis/business/porters_five_forces_analysis.md	domain-idea-to-product/stage-3-market-research/porters_five_forces_analysis.md
+domain-software-engineering/analysis/business/product_market_fit_analysis.md	domain-idea-to-product/stage-2-problem-validation/product_market_fit_analysis.md
+domain-software-engineering/analysis/business/swot_analysis.md	domain-idea-to-product/stage-5-strategy-positioning/swot_analysis.md
+domain-software-engineering/analysis/business/value_proposition_canvas_analysis.md	domain-idea-to-product/stage-2-problem-validation/value_proposition_canvas_analysis.md
+domain-software-engineering/analysis/database/database_schema_design_normalization.md	domain-idea-to-product/stage-8-architecture-design/database_schema_design_normalization.md
+domain-software-engineering/api/api_design_workflow_guide.md	domain-idea-to-product/stage-8-architecture-design/api_design_workflow_guide.md
+domain-software-engineering/api/api_rest_design_review.md	domain-idea-to-product/stage-8-architecture-design/api_rest_design_review.md
+domain-software-engineering/vibe-coding-rescue/viberescue_decompose_stuck_task.md	domain-idea-to-product/stage-10-ai-agent-handoff/viberescue_decompose_stuck_task.md
+domain-software-engineering/vibe-coding-rescue/viberescue_rules_file_design.md	domain-idea-to-product/stage-10-ai-agent-handoff/viberescue_rules_file_design.md
+techniques/IMAGE_JSON_PROMPT_TRANSLATOR.md	portable-prompt-system/techniques/IMAGE_JSON_PROMPT_TRANSLATOR.md
+techniques/advanced_prompting_techniques.md	portable-prompt-system/techniques/advanced_prompting_techniques.md
+techniques/adversarial_stress_test.md	portable-prompt-system/techniques/adversarial_stress_test.md
+techniques/chain_of_verification.md	portable-prompt-system/techniques/chain_of_verification.md
+techniques/comprehensive_prompting_patterns.md	portable-prompt-system/techniques/comprehensive_prompting_patterns.md
+techniques/deliberate_over_instruction.md	portable-prompt-system/techniques/deliberate_over_instruction.md
+techniques/failure_modes.md	portable-prompt-system/techniques/failure_modes.md
+techniques/json_image_prompt_generator.md	portable-prompt-system/techniques/json_image_prompt_generator.md
+techniques/meta_iteration_refinement.md	portable-prompt-system/techniques/meta_iteration_refinement.md
+techniques/meta_mission_planning_template.md	portable-prompt-system/techniques/meta_mission_planning_template.md
+techniques/meta_output_verification.md	portable-prompt-system/techniques/meta_output_verification.md
+techniques/model_quirks.md	portable-prompt-system/techniques/model_quirks.md
+techniques/multi_persona_debate.md	portable-prompt-system/techniques/multi_persona_debate.md
+techniques/new-techniques/AG_13.md	portable-prompt-system/techniques/new-techniques/AG_13.md
+techniques/new-techniques/AG_14.md	portable-prompt-system/techniques/new-techniques/AG_14.md
+techniques/new-techniques/AG_15.md	portable-prompt-system/techniques/new-techniques/AG_15.md
+techniques/new-techniques/CM_05.md	portable-prompt-system/techniques/new-techniques/CM_05.md
+techniques/new-techniques/CM_06.md	portable-prompt-system/techniques/new-techniques/CM_06.md
+techniques/new-techniques/CM_07.md	portable-prompt-system/techniques/new-techniques/CM_07.md
+techniques/new-techniques/DS_13.md	portable-prompt-system/techniques/new-techniques/DS_13.md
+techniques/new-techniques/DS_19.md	portable-prompt-system/techniques/new-techniques/DS_19.md
+techniques/new-techniques/MP_05.md	portable-prompt-system/techniques/new-techniques/MP_05.md
+techniques/new-techniques/NE_13.md	portable-prompt-system/techniques/new-techniques/NE_13.md
+techniques/new-techniques/QA_06.md	portable-prompt-system/techniques/new-techniques/QA_06.md
+techniques/new-techniques/QA_07.md	portable-prompt-system/techniques/new-techniques/QA_07.md
+techniques/orchestration_patterns.md	portable-prompt-system/techniques/orchestration_patterns.md
+techniques/recursive_optimization.md	portable-prompt-system/techniques/recursive_optimization.md
+techniques/reference_class_priming.md	portable-prompt-system/techniques/reference_class_priming.md
+techniques/reverse_prompting.md	portable-prompt-system/techniques/reverse_prompting.md
+techniques/security_checklist.md	portable-prompt-system/techniques/security_checklist.md
+techniques/strategic_edge_case.md	portable-prompt-system/techniques/strategic_edge_case.md
+techniques/summary_expand_loop.md	portable-prompt-system/techniques/summary_expand_loop.md
+techniques/temperature_simulation.md	portable-prompt-system/techniques/temperature_simulation.md
+techniques/tool_comparison.md	portable-prompt-system/techniques/tool_comparison.md
+techniques/zero_shot_chain_of_thought.md	portable-prompt-system/techniques/zero_shot_chain_of_thought.md

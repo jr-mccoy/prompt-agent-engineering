@@ -536,7 +536,7 @@ Future: Implement automated checks for:
 
 - **Finding 2.1:** REPOSITORY_IMPROVEMENT_ANALYSIS.md - Quality Hierarchy Across Categories
 - **Tier 1 Exemplar:** `domain-software-engineering/analysis/security/security_vulnerability_analysis.md`
-- **Tier 2 Exemplar:** `domain-business-strategy/analysis/swot_analysis.md`
+- **Tier 2 Exemplar:** `domain-software-engineering/analysis/business/swot_analysis.md`
 - **Technique Reference:** `techniques/MASTER_TECHNIQUE_INDEX.md`
 
 ---

@@ -18,10 +18,10 @@ tags:
   - customer-research
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/jobs_to_be_done_analysis.md
-  - domain-business-strategy/analysis/business_model_canvas_analysis.md
-  - domain-business-strategy/analysis/product_market_fit_analysis.md
-  - domain-business-strategy/analysis/lean_canvas_analysis.md
+  - domain-software-engineering/analysis/business/jobs_to_be_done_analysis.md
+  - domain-software-engineering/analysis/business/business_model_canvas_analysis.md
+  - domain-software-engineering/analysis/business/product_market_fit_analysis.md
+  - domain-software-engineering/analysis/business/lean_canvas_analysis.md
 ---
 
 # Value Proposition Canvas Analysis for Codebase

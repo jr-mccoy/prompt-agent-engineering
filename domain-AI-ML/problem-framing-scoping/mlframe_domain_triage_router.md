@@ -17,7 +17,7 @@ tags:
   - workflow
 updated: "2026-08-22"
 related_prompts:
-  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_an_ml_problem.md
+  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_ml_problem.md
   - domain-AI-ML/model-evaluation-validation/mleval_eval_result_skepticism_audit.md
   - domain-AI-ML/data-for-ml/mldata_data_leakage_detector.md
   - domain-AI-ML/production-monitoring/mlmonitor_performance_degradation_triage.md
@@ -34,7 +34,7 @@ related_prompts:
 
 **When NOT to Use:**
 - You already know the specific question — go directly to the prompt; this router is overhead.
-- The question is whether to use ML at all — that is `mlframe_is_this_an_ml_problem.md`, and this router will send you there anyway.
+- The question is whether to use ML at all — that is `mlframe_is_this_ml_problem.md`, and this router will send you there anyway.
 - The problem is not about a model — check the boundary table in the domain README first.
 
 ## Inputs / Context
@@ -51,7 +51,7 @@ related_prompts:
 **Must:**
 - Distinguish the **presenting complaint** from the **underlying problem**; they differ often enough that routing on the complaint is the main way people end up in the wrong subdirectory.
 - Emit **at most three prompts, ordered**, with the reason each comes where it does. A list of everything relevant is what the README already provides, and it is not a route.
-- Route to `mlframe_is_this_an_ml_problem.md` whenever the situation may not need a model at all, regardless of how far along the project is.
+- Route to `mlframe_is_this_ml_problem.md` whenever the situation may not need a model at all, regardless of how far along the project is.
 - Check for the two failures that masquerade as other problems — **data leakage** and **train/serve skew** — before routing to modelling or serving work, because both present as something else.
 - Route outside the domain when the boundary table says so, and name the destination.
 
@@ -208,7 +208,7 @@ features, then degrades as they drift further.
 - **DS-06 (Prioritization and Severity Guidance):** ordering is by what would invalidate what, not by apparent severity.
 
 **Related Prompts:**
-- `mlframe_is_this_an_ml_problem.md` — where this routes when the situation may not need a model.
+- `mlframe_is_this_ml_problem.md` — where this routes when the situation may not need a model.
 - `../model-evaluation-validation/mleval_eval_result_skepticism_audit.md` — the standard second stop when offline and live disagree.
 - `../data-for-ml/mldata_data_leakage_detector.md` — ruled out early because it invalidates everything downstream.
 - `../production-monitoring/mlmonitor_performance_degradation_triage.md` — the production-side diagnostic this most often routes to.

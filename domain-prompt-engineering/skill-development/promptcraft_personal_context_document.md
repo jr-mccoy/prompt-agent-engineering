@@ -17,7 +17,7 @@ tags:
   - persistent-memory
 updated: "2026-04-20"
 related_prompts:
-  - domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md
+  - domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md
   - domain-prompt-engineering/escape-median/escapemedian_bootstrap_instruction_file.md
   - domain-prompt-engineering/skill-development/promptcraft_rewrite_vague_ask.md
   - domain-prompt-engineering/skill-development/promptcraft_constraint_architecture_design.md

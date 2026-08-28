@@ -58,11 +58,7 @@ If items 1–3 are missing, ask before starting Phase 1.
 
 ## Operating Mode
 
-This prompt is **gated and interactive**. After every phase, stop and ask the user a focused question. Do not run all five phases in one shot.
-
-**Primary I/O mechanism:** When `AskUserQuestion` is available, use it at every gate with 2–4 specific options plus the implicit "Other." When unavailable (plain chat), use a clearly-labeled `**GATE:**` block and wait for the user's reply.
-
-**Use `AskUserQuestion` liberally throughout each phase**, not just at gates — for clarifying requirements, prioritizing design dimensions, surfacing implicit constraints, and confirming tradeoff weightings.
+Inherit the shared deep-think operating model from [`BACKBONE.md`](../../domain-deep-analysis/BACKBONE.md): run the five phases in order, stop at every gate, use `AskUserQuestion` when available, and fall back to a labeled `**GATE:**` block in plain chat. For designs, use in-phase questions for clarifying requirements, prioritizing design dimensions, surfacing implicit constraints, and confirming tradeoff weightings.
 
 ---
 
@@ -132,41 +128,13 @@ Options:
 
 **Goal:** Run the design through perspectives the user couldn't easily generate alone, especially for the load-bearing dimensions.
 
-#### 3a. Run the core roster (always)
+#### 3a. Run the mandatory roster (always)
 
-For each of the six core perspectives, produce:
-- **Lens:** What this perspective is looking for in one sentence.
-- **Take on the design:** 3–6 sentences. Specific to *this* design, not generic.
-- **The single dimension this lens has the strongest opinion on, and what that opinion is** — or "no strong opinion, but here's what this lens flags."
-
-Core perspectives:
-
-1. **Red team** — actively trying to break the leading design. How does it fail under load, attack, or weird inputs? What edge case wasn't considered?
-2. **Steel-man (alternative architecture)** — strongest version of "design this differently." If a senior practitioner with different priors designed for the same requirements, what would they build?
-3. **Blind-spot scan** — what is the user not seeing because of their stack history, recent reading, or aesthetic preferences? Which "obvious" choice is doing real load-bearing work that hasn't been examined?
-4. **Future-self (after building)** — looking back from after the system is in production, what does the user wish they'd designed differently? Which tradeoff did they get wrong?
-5. **Naive newcomer** — what questions does someone with no context ask? Which embedded assumptions of the domain or stack are doing real work?
-6. **Affected party** — whoever interacts with the design other than the designer. Users, operators, downstream systems, neighboring teams. What does the design look like from inside their experience?
+Run the Phase 3 mandatory perspective roster defined in [`BACKBONE.md`](../../domain-deep-analysis/BACKBONE.md): red team, steel-man, blind-spot scan, future-self, naive newcomer, and affected party. For designs, each lens must include its lens statement, its take on the design, and the load-bearing dimension it most strongly flags.
 
 #### 3b. Propose scope-specific additions
 
-For designs, candidates include:
-- **Maintainer two years from now** — someone who didn't build this is debugging it at 2am. Can they figure out what's happening? Which design choice will they curse?
-- **End user (specific persona)** — for the user-facing aspects of the design, what does it actually feel like to use? Does it match the workflow, or does it require workflow adaptation?
-- **Operator** — whoever runs / deploys / monitors the system. What's the operational footprint? What can they observe? What can they fix without escalating?
-- **Security / compliance reviewer** — what does the design look like to someone whose job is to find data exposure, attack surface, or regulatory gaps?
-- **Cost-of-change analyst** — for each load-bearing dimension, how expensive is it to change later? Are we baking in choices that will become regret?
-
-Use `AskUserQuestion`:
-
-```
-Question: "Which of these design-specific perspectives would add the most for your situation?"
-Options:
-- "[Specific perspective 1] — most relevant"
-- "[Specific perspective 2]"
-- "All of them"
-- "None — the core six are enough"
-```
+Use the design/architecture candidate pool in [`BACKBONE.md`](../../domain-deep-analysis/BACKBONE.md) to propose 2–4 additional perspectives tailored to the user's design context. Confirm the additions with `AskUserQuestion`/`**GATE:**` and run only the perspectives the user picks.
 
 #### 3c. After running all perspectives
 

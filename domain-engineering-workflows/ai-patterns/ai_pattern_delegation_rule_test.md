@@ -19,7 +19,7 @@ updated: "2026-04-20"
 related_prompts:
   - domain-engineering-workflows/ai-patterns/ai_pattern_rule_extraction_from_decisions.md
   - domain-engineering-workflows/ai-patterns/ai_verification_architectural_taste_gate.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_engineering_manager_stance.md
+  - domain-personal-development/prompts/identity/identity_engineering_manager_stance.md
 ---
 
 # Delegation Rule Test (Can This Decision Be Written as a Rule?)

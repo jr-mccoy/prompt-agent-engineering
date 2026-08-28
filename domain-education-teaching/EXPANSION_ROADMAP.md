@@ -119,8 +119,8 @@ Four decisions in that map were judgement calls rather than mechanical moves:
 
 | Looks missing here | Actually lives at |
 |---|---|
-| Health-professions education, OSCEs, PBL cases, ACGME milestones | `domain-healthcare-clinical/prompts/medical-education/` — including its own 37-prompt learner-self-study track |
-| Programme-level CBME, EPAs, residency curriculum mapping | `domain-healthcare-clinical/prompts/medical-education/curriculum-design/` |
+| Health-professions education, OSCEs, PBL cases, ACGME milestones | `domain-medical-education/` — including its own 37-prompt learner-self-study track |
+| Programme-level CBME, EPAs, residency curriculum mapping | `domain-medical-education/educator-curriculum-design/` |
 | Teaching research methods, journal clubs, undergraduate lab courses | `domain-science/teaching-research-methods/` |
 | Self-directed learning with no institution attached | `domain-learning/` |
 | Learning and teaching programming | `domain-learning-coding/` |

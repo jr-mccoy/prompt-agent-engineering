@@ -17,8 +17,8 @@ tags:
   - quality-gate
 updated: "2026-04-23"
 related_prompts:
-  - domain-professional-communication/prompts/product_create_prd.md
-  - domain-professional-communication/prompts/product_delivery_sprint_planner.md
+  - domain-product-management/prompts/product_create_prd.md
+  - domain-product-management/prompts/product_delivery_sprint_planner.md
   - domain-prompt-engineering/evaluation/correctness_prompt_specification_audit.md
 ---
 

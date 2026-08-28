@@ -33,5 +33,5 @@ Skipping the audit and jumping to the roadmap is how these rollouts produce thea
 ## Relationship to adjacent clusters
 
 - **[ai-strategy/](../ai-strategy/)** — frames the platform decisions ambition-leverage prompts depend on.
-- **[chief-of-staff/](../chief-of-staff/)** — operationalizes downstream of ambition decisions: fuzzy-goal clarification and sub-agent authority boundaries turn leadership ambition into workable scopes.
+- **[domain-productivity/operating-cadence/](../../domain-productivity/operating-cadence/)** — operationalizes downstream of ambition decisions: fuzzy-goal clarification and sub-agent authority boundaries turn leadership ambition into workable scopes.
 - **[bottlenecks/](../../domain-productivity/bottlenecks/)** — bottleneck-locator at the individual level mirrors the insight-to-action workflow redesign at the organizational level.

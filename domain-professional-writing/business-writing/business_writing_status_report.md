@@ -19,7 +19,7 @@ updated: "2026-06-07"
 related_prompts:
   - domain-professional-writing/business-writing/business_writing_executive_brief.md
   - domain-professional-writing/business-writing/business_writing_meeting_notes.md
-  - domain-business-strategy/organization/organization_project_status_summary.md
+  - domain-engineering-workflows/workflows/engineering_project_status_summary.md
 ---
 
 # Status Report Writer

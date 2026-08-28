@@ -21,7 +21,7 @@ related_prompts:
   - domain-engineering-workflows/ai-native-rollouts/airollout_ambient_code_review.md
   - domain-engineering-workflows/ai-native-rollouts/airollout_delegate_like_parallel_coworker.md
   - domain-engineering-workflows/ai-native-rollouts/airollout_bottleneck_migration_plan.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_engineering_manager_stance.md
+  - domain-personal-development/prompts/identity/identity_engineering_manager_stance.md
 ---
 
 # Design a Tiered AI-Adoption Rollout (Ignore / Use / Build With)

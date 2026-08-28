@@ -20,7 +20,7 @@ updated: "2026-06-07"
 related_prompts:
   - domain-professional-writing/writing/writing_thesis_builder_essay.md
   - domain-professional-writing/writing/writing_voice_print_extractor.md
-  - domain-professional-communication/prompts/product_create_prd.md
+  - domain-product-management/prompts/product_create_prd.md
 ---
 
 # Narrative Arc Builder
@@ -122,7 +122,7 @@ Provide whatever you have; the prompt works from a single line and improves with
 - **Act 2** = why existing solutions fail and the stakes of staying put; the wedge your product opens.
 - **Act 3** = the product as the resolution, the differentiated "after," and the single next step (demo, trial, deal).
 - Central change = the customer's before/after; quantify with `[EVIDENCE NEEDED]` if metrics aren't supplied.
-- For deeper product framing, cross-reference `domain-professional-communication/prompts/`.
+- For deeper product framing, cross-reference `domain-product-management/prompts/`.
 
 ### Launch Story
 - **Act 1** = the world before this thing existed and why it mattered to people.

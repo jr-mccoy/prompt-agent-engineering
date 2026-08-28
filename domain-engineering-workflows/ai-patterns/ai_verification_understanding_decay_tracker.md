@@ -19,7 +19,7 @@ updated: "2026-04-20"
 related_prompts:
   - domain-engineering-workflows/ai-patterns/ai_verification_mental_model_audit.md
   - domain-engineering-workflows/ai-patterns/ai_review_outcome_level_code_review.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_observation_capture_habits.md
+  - domain-productivity/bottlenecks/bottleneck_observation_capture_habits.md
 ---
 
 # Understanding-Decay Tracker and Refresh Gate

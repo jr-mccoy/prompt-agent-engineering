@@ -18,7 +18,7 @@ tags:
   - adjustment
 updated: "2026-06-01"
 related_prompts:
-  - domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_the_kids_script.md
+  - domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_kids_script.md
   - domain-parenting/caregiver-facing/divorce/parenting_divorce_signs_child_needs_more_support.md
   - domain-parenting/caregiver-facing/divorce/parenting_divorce_two_homes_transition_support.md
   - domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md
@@ -201,7 +201,7 @@ For each child, give the parent two or three concrete moves: what to keep doing 
 ## Cross-References
 
 - `parenting_divorce_signs_child_needs_more_support.md` — the detailed line for when a reaction needs a therapist.
-- `parenting_divorce_telling_the_kids_script.md` — the conversation these reactions follow.
+- `parenting_divorce_telling_kids_script.md` — the conversation these reactions follow.
 - `parenting_divorce_two_homes_transition_support.md` — supporting the transition-related flare-ups.
 - `parenting_divorce_shield_kids_from_conflict.md` — reducing the conflict exposure that worsens reactions.
 - `domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md` — general help-seeking guidance.

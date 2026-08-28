@@ -17,7 +17,7 @@ tags:
   - baseline
 updated: "2026-05-29"
 related_prompts:
-  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_an_ml_problem.md
+  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_ml_problem.md
   - domain-AI-ML/problem-framing-scoping/mlframe_success_metric_selection.md
   - domain-AI-ML/problem-framing-scoping/mlframe_data_readiness_assessment.md
 ---
@@ -32,7 +32,7 @@ related_prompts:
 - Triaging a backlog of ML ideas to a comparable format for prioritization.
 
 **When NOT to Use:**
-- The question is still "should this be ML at all?" (use `mlframe_is_this_an_ml_problem.md` first).
+- The question is still "should this be ML at all?" (use `mlframe_is_this_ml_problem.md` first).
 - You need a deep technical design — the canvas is a framing artifact, not an architecture.
 
 ## Inputs / Context
@@ -135,6 +135,6 @@ A single-page canvas (markdown table or labeled sections):
 - **RP-02 (Audience-Specific Framing):** one artifact readable by both business and technical stakeholders.
 
 **Related Prompts:**
-- `mlframe_is_this_an_ml_problem.md` — decide whether ML is warranted before filling the canvas.
+- `mlframe_is_this_ml_problem.md` — decide whether ML is warranted before filling the canvas.
 - `mlframe_success_metric_selection.md` — turn the value cell into a concrete metric.
 - `mlframe_data_readiness_assessment.md` — pressure-test the data cell in depth.

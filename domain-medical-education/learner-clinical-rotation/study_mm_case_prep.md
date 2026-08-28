@@ -26,7 +26,7 @@ updated: "2026-05-13"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_morning_report_case_prep.md
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
-  - domain-medical-education/learner-clinical-rotation/study_handoff_iPASS_rehearsal.md
+  - domain-medical-education/learner-clinical-rotation/study_handoff_ipass_rehearsal.md
 ---
 
 ## Objective

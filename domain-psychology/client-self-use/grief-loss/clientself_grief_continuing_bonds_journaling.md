@@ -20,7 +20,7 @@ updated: "2026-06-08"
 related_prompts:
   - domain-psychology/client-self-use/grief-loss/clientself_anniversary_reaction_plan.md
   - domain-psychology/client-self-use/grief-loss/clientself_complicated_vs_normal_grief_reflection.md
-  - domain-psychology/client-self-use/mood-journaling/clientself_journal_prompt_generator_anti_toxic_positivity.md
+  - domain-psychology/client-self-use/mood-journaling/clientself_journal_prompts_anti_toxic_positivity.md
 ---
 
 # Continuing-Bonds Grief Journaling

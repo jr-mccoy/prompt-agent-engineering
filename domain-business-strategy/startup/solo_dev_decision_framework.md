@@ -617,10 +617,10 @@ Review this journal quarterly. You'll notice patterns — maybe you overthink te
 
 ## Related Prompts
 
-- `solo_dev_roadmap_planner.md` — Apply feature decisions to a concrete product roadmap
+- `domain-engineering-workflows/workflows/engineering_solo_dev_roadmap_planner.md` — Apply feature decisions to a concrete product roadmap
 - `solo_dev_financial_planning.md` — Financial context for build vs. buy decisions
 - `solo_dev_metrics_dashboard.md` — Metrics that inform data-driven decisions
-- `solo_dev_weekly_operating_rhythm.md` — Scheduling decision-making time ("CEO time")
+- `domain-productivity/reviews/reviews_solo_dev_weekly_operating_rhythm.md` — Scheduling decision-making time ("CEO time")
 - `solo_dev_contractor_management.md` — Executing "buy" decisions through outsourcing
 - `solo_dev_support_system.md` — Feature requests from support as decision inputs
 

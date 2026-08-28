@@ -676,7 +676,7 @@ Key insight for solo developers:
 - `monetization_pricing_strategy.md` — Set the prices that revenue analytics will track and validate
 - `monetization_subscription_design.md` — Design the subscription tiers that generate MRR
 - `monetization_paywall_optimization.md` — Optimize the paywall conversion funnel
-- `monetization_play_billing_implementation.md` — Implement the billing code that generates the revenue data
+- `domain-software-engineering/mobile/android/implementation/android_play_billing_implementation.md` — Implement the billing code that generates the revenue data
 - `monetization_ad_placement_strategy.md` — Track ad revenue alongside subscription revenue
 - `solo_dev_financial_planning.md` — Connect revenue analytics to personal financial planning
 

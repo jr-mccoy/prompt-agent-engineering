@@ -607,7 +607,7 @@ Example:
 - `monetization_subscription_design.md` — Design the subscription tiers that pricing applies to
 - `monetization_paywall_optimization.md` — Design the paywall that presents these prices
 - `monetization_revenue_analytics.md` — Track revenue metrics to validate pricing decisions
-- `monetization_play_billing_implementation.md` — Implement the pricing in Google Play Billing code
+- `domain-software-engineering/mobile/android/implementation/android_play_billing_implementation.md` — Implement the pricing in Google Play Billing code
 - `monetization_model_selector.md` — Choose the right monetization model before pricing it
 
 ---

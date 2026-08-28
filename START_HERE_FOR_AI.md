@@ -58,7 +58,7 @@ The canonical technique reference is [`techniques/MASTER_TECHNIQUE_INDEX.md`](te
 | `domain-engineering-workflows/` | Sprint planning, tasks, workflows (~58) |
 | `domain-presentations/` | Executive and board presentations (~24) |
 | `domain-professional-writing/` | Domain-specific professional guides (~46) |
-| `domain-professional-communication/` | PRDs, product management (~30) |
+| `domain-product-management/` | PRDs, product management (~30) |
 | `domain-personal-development/` | Goals, habits, career (~43) |
 | `domain-prompt-engineering/` | Meta-prompts for prompt improvement (~22) |
 | `domain-decision-making/` | Decision frameworks (~28) |

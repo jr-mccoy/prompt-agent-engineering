@@ -17,7 +17,7 @@ tags:
 updated: "2026-06-25"
 related_prompts:
   - domain-biblical-studies/sermon-devotional/biblical_expository_sermon_prep.md
-  - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_multi_service_teaching_coordination.md
+  - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_multi_service_coordination.md
   - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_annual_teaching_calendar.md
 ---
 
@@ -32,7 +32,7 @@ related_prompts:
 
 **When NOT to use:**
 - You are preparing a sermon (before delivery) — use `biblical_expository_sermon_prep.md`.
-- You are coordinating multiple communicators for the same message — use `biblical_churchstaff_multi_service_teaching_coordination.md`.
+- You are coordinating multiple communicators for the same message — use `biblical_churchstaff_multi_service_coordination.md`.
 
 **Audience:** Pastors (P) — both the preacher receiving feedback and the coach giving it.
 

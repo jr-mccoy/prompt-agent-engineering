@@ -21,7 +21,7 @@ related_prompts:
   - domain-prompt-engineering/goal-orientation/goalorientation_constraint_architecture_workshop.md
   - domain-prompt-engineering/delegation/delegation_intent_specification.md
   - domain-personal-development/prompts/agency/agency_project_ownership_converter.md
-  - domain-business-strategy/chief-of-staff/cos_clarify_fuzzy_goals.md
+  - domain-productivity/operating-cadence/cos_clarify_fuzzy_goals.md
 ---
 
 # Diagnostic for Whether the "Right Problem" Is Being Solved

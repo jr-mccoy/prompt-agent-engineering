@@ -18,7 +18,7 @@ tags:
 updated: "2026-06-25"
 related_prompts:
   - domain-biblical-studies/ministry-contexts/biblical_ministry_new_believer_discipleship_path.md
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
   - domain-biblical-studies/study-methods-teaching/biblical_smallgroup_discussion_guide.md
   - domain-biblical-studies/study-methods-teaching/biblical_lesson_plan_builder.md
   - domain-biblical-studies/sermon-devotional/biblical_meditation_reflection_guide.md
@@ -36,7 +36,7 @@ related_prompts:
 
 **When NOT to use:**
 - Your group is mixed-age and doesn't need age-specific framing — use `biblical_smallgroup_discussion_guide.md`.
-- You need a care-conversation framework for someone in crisis (grief, end-of-life) — use `biblical_ministry_biblical_care_conversation_foundations.md`.
+- You need a care-conversation framework for someone in crisis (grief, end-of-life) — use `biblical_ministry_care_conversation_foundations.md`.
 - You are building a lesson plan for children — use `biblical_ministry_kids_bible_lesson_builder.md`.
 
 **Audience:** Ministry-context teachers (M) and group leaders (G) — seniors' ministry leaders, retirement-community chaplains, older-adult Sunday school teachers.

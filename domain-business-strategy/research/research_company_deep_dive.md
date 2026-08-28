@@ -19,7 +19,7 @@ updated: "2026-06-07"
 related_prompts:
   - domain-business-strategy/research/research_competitive_landscape.md
   - domain-business-strategy/research/research_industry_trends.md
-  - domain-business-strategy/research/research_person_background.md
+  - domain-business-strategy/go-to-market/research_person_background.md
 ---
 
 # Company Deep Dive
@@ -216,4 +216,4 @@ The user should supply (or the research should flag what is missing):
 
 - `domain-business-strategy/research/research_competitive_landscape.md` — Compare this company against its direct competitors.
 - `domain-business-strategy/research/research_industry_trends.md` — Place the company within its market's trends.
-- `domain-business-strategy/research/research_person_background.md` — Profile a specific person at the company before a meeting.
+- `domain-business-strategy/go-to-market/research_person_background.md` — Profile a specific person at the company before a meeting.

@@ -21,8 +21,8 @@ tags:
 updated: "2026-04-26"
 related_prompts:
   - domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md
-  - domain-business-strategy/analysis/competitive_positioning_map.md
-  - domain-business-strategy/analysis/blue_ocean_strategy_analysis.md
+  - domain-software-engineering/analysis/business/competitive_positioning_map.md
+  - domain-software-engineering/analysis/business/blue_ocean_strategy_analysis.md
   - domain-business-strategy/research/research_competitive_landscape.md
 ---
 

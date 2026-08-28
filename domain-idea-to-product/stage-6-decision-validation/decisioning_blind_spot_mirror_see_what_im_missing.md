@@ -202,4 +202,4 @@ Engineering manager, 8 years experience, recently passed over for VP promotion. 
 ## Related Prompts
 
 - [validation_adversarial_mini_check.md](../../domain-productivity/validation/validation_adversarial_mini_check.md) - Quick pre-decision verification
-- [validation_am_i_being_nuts.md](validation_am_i_being_nuts.md) - Sanity check for emotional decisions
+- validation_am_i_being_nuts.md - Sanity check for emotional decisions

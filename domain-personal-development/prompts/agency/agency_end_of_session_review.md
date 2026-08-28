@@ -16,8 +16,8 @@ tags:
   - context-capture
 updated: "2026-04-20"
 related_prompts:
-  - domain-engineering-workflows/ai-patterns/ai_pattern_weekly_reflection_session.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_observation_capture_habits.md
+  - domain-personal-development/prompts/agency/agency_ai_session_weekly_reflection.md
+  - domain-productivity/bottlenecks/bottleneck_observation_capture_habits.md
   - domain-personal-development/prompts/agency/agency_rapid_start_mode.md
   - domain-personal-development/prompts/agency/agency_weekly_review.md
 ---

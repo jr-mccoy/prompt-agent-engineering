@@ -34,7 +34,7 @@ when you are designing a **church's teaching program** — services, classes, qu
 |---|---|
 | [`discipleship_material_evaluation.md`](discipleship_material_evaluation.md) | **STRONG-GUARD.** Criterion-by-criterion evaluation of supplied material, with every product claim marked verify-required |
 | [`discipleship_multiplication_design.md`](discipleship_multiplication_design.md) | A reproduction design: what a disciple must be able to hand on, and the generational depth test |
-| [`discipleship_multiplication_governance_and_material_drift.md`](discipleship_multiplication_governance_and_material_drift.md) | An audit of what generation three is actually running, with local adaptation as the default reading — and no licence, approval process, or fidelity score |
+| [`discipleship_multiplication_governance_drift.md`](discipleship_multiplication_governance_drift.md) | An audit of what generation three is actually running, with local adaptation as the default reading — and no licence, approval process, or fidelity score |
 
 ## Related
 

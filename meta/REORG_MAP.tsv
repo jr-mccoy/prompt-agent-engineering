@@ -1,0 +1,302 @@
+# Reorganization map: old_path<TAB>new_path
+#
+# Every file this reorganization moved or removed, one line each.
+# scripts/apply_reorg_map.py reads this to repoint references at new homes.
+#
+# A removal still records a destination -- the file that absorbed it -- because a
+# reader following an old reference wants that file:
+#   old\tDELETED superseded-by:surviving/path.md   the survivor of a duplicate pair
+#   old\tDELETED merged-into:surviving/path.md     content folded into another file
+#   old\tDELETED split-into:surviving/directory/   content split across a directory
+#
+# The reorganization ran in phases, so some entries chain: a file absorbed into a
+# second file in phase 1, which phase 2 then moved. Each line records what
+# happened at that step, so an intermediate destination may itself appear as a
+# later line's source. Follow chains to the end -- apply_reorg_map.py does.
+domain-AI-ML/learning-ai-ml/mllearn_reproduce_a_paper_plan.md	domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md
+domain-AI-ML/problem-framing-scoping/mlframe_is_this_an_ml_problem.md	domain-AI-ML/problem-framing-scoping/mlframe_is_this_ml_problem.md
+domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_multi_service_teaching_coordination.md	domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_multi_service_coordination.md
+domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md	domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
+domain-biblical-studies/original-languages/biblical_language_hebrew_accents_greek_accentuation_analysis.md	domain-biblical-studies/original-languages/biblical_language_hebrew_greek_accentuation.md
+domain-biblical-studies/original-languages/biblical_language_koine_inscriptions_papyri_register_analysis.md	domain-biblical-studies/original-languages/biblical_language_koine_papyri_register.md
+domain-biblical-studies/original-languages/biblical_language_semantic_domains_componential_analysis.md	domain-biblical-studies/original-languages/biblical_language_semantic_domains_analysis.md
+domain-business-strategy/analysis/README.md	domain-software-engineering/analysis/business/README.md
+domain-business-strategy/analysis/ansoff_matrix_analysis.md	domain-software-engineering/analysis/business/ansoff_matrix_analysis.md
+domain-business-strategy/analysis/bcg_matrix_analysis.md	domain-software-engineering/analysis/business/bcg_matrix_analysis.md
+domain-business-strategy/analysis/blue_ocean_strategy_analysis.md	domain-software-engineering/analysis/business/blue_ocean_strategy_analysis.md
+domain-business-strategy/analysis/business_impact_analysis.md	domain-software-engineering/analysis/business/business_impact_analysis.md
+domain-business-strategy/analysis/business_model_canvas_analysis.md	domain-software-engineering/analysis/business/business_model_canvas_analysis.md
+domain-business-strategy/analysis/competitive_positioning_map.md	domain-software-engineering/analysis/business/competitive_positioning_map.md
+domain-business-strategy/analysis/customer_journey_map_analysis.md	domain-software-engineering/analysis/business/customer_journey_map_analysis.md
+domain-business-strategy/analysis/jobs_to_be_done_analysis.md	domain-software-engineering/analysis/business/jobs_to_be_done_analysis.md
+domain-business-strategy/analysis/kano_model_analysis.md	domain-software-engineering/analysis/business/kano_model_analysis.md
+domain-business-strategy/analysis/lean_canvas_analysis.md	domain-software-engineering/analysis/business/lean_canvas_analysis.md
+domain-business-strategy/analysis/mckinsey_7s_analysis.md	domain-software-engineering/analysis/business/mckinsey_7s_analysis.md
+domain-business-strategy/analysis/okr_analysis.md	domain-software-engineering/analysis/business/okr_analysis.md
+domain-business-strategy/analysis/pestel_analysis.md	domain-software-engineering/analysis/business/pestel_analysis.md
+domain-business-strategy/analysis/porters_five_forces_analysis.md	domain-software-engineering/analysis/business/porters_five_forces_analysis.md
+domain-business-strategy/analysis/product_market_fit_analysis.md	domain-software-engineering/analysis/business/product_market_fit_analysis.md
+domain-business-strategy/analysis/stakeholder_persona_generation.md	domain-software-engineering/analysis/business/stakeholder_persona_generation.md
+domain-business-strategy/analysis/swot_analysis.md	domain-software-engineering/analysis/business/swot_analysis.md
+domain-business-strategy/analysis/tech_adoption_lifecycle_analysis.md	domain-software-engineering/analysis/business/tech_adoption_lifecycle_analysis.md
+domain-business-strategy/analysis/value_chain_analysis.md	domain-software-engineering/analysis/business/value_chain_analysis.md
+domain-business-strategy/analysis/value_proposition_canvas_analysis.md	domain-software-engineering/analysis/business/value_proposition_canvas_analysis.md
+domain-business-strategy/browser-automation/README.md	DELETED merged-into:domain-productivity/automation/README.md
+domain-business-strategy/browser-automation/browserauto_multi_tab_intel.md	domain-productivity/automation/browserauto_multi_tab_intel.md
+domain-business-strategy/browser-automation/browserauto_recording_blueprint.md	domain-productivity/automation/browserauto_recording_blueprint.md
+domain-business-strategy/browser-automation/browserauto_safety_check.md	domain-productivity/automation/browserauto_safety_check.md
+domain-business-strategy/browser-automation/browserauto_weekly_audit.md	domain-productivity/automation/browserauto_weekly_audit.md
+domain-business-strategy/chief-of-staff/README.md	domain-productivity/operating-cadence/README.md
+domain-business-strategy/chief-of-staff/cos_authority_boundaries.md	domain-productivity/operating-cadence/cos_authority_boundaries.md
+domain-business-strategy/chief-of-staff/cos_brain_dump_to_tasks.md	domain-productivity/operating-cadence/cos_brain_dump_to_tasks.md
+domain-business-strategy/chief-of-staff/cos_clarify_fuzzy_goals.md	domain-productivity/operating-cadence/cos_clarify_fuzzy_goals.md
+domain-business-strategy/chief-of-staff/cos_end_of_day_reconciliation.md	domain-productivity/operating-cadence/cos_end_of_day_reconciliation.md
+domain-business-strategy/chief-of-staff/cos_meeting_prep_and_process.md	domain-productivity/operating-cadence/cos_meeting_prep_and_process.md
+domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md	domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md
+domain-business-strategy/chief-of-staff/cos_morning_briefing.md	domain-productivity/operating-cadence/cos_morning_briefing.md
+domain-business-strategy/chief-of-staff/cos_specify_subagent_task.md	domain-productivity/operating-cadence/cos_specify_subagent_task.md
+domain-business-strategy/chief-of-staff/cos_weekly_review.md	domain-productivity/operating-cadence/cos_weekly_review.md
+domain-business-strategy/chief-of-staff/meeting_pre_read_drafter.md	domain-productivity/operating-cadence/meeting_pre_read_drafter.md
+domain-business-strategy/organization/organization_content_audit.md	domain-productivity/bottlenecks/bottleneck_content_audit.md
+domain-business-strategy/organization/organization_knowledge_base_gap_analysis.md	domain-productivity/bottlenecks/bottleneck_knowledge_base_gap_analysis.md
+domain-business-strategy/organization/organization_project_status_summary.md	domain-engineering-workflows/workflows/engineering_project_status_summary.md
+domain-business-strategy/research/research_content_research.md	domain-professional-writing/writing/writing_content_research.md
+domain-business-strategy/research/research_person_background.md	domain-business-strategy/go-to-market/research_person_background.md
+domain-business-strategy/startup/marketing_build_in_public_strategy.md	domain-business-strategy/go-to-market/marketing_build_in_public_strategy.md
+domain-business-strategy/startup/marketing_community_building.md	domain-business-strategy/go-to-market/marketing_community_building.md
+domain-business-strategy/startup/marketing_competitive_differentiation.md	domain-business-strategy/go-to-market/marketing_competitive_differentiation.md
+domain-business-strategy/startup/marketing_content_strategy_solo_dev.md	domain-business-strategy/go-to-market/marketing_content_strategy_solo_dev.md
+domain-business-strategy/startup/marketing_email_lifecycle.md	domain-business-strategy/go-to-market/marketing_email_lifecycle.md
+domain-business-strategy/startup/marketing_landing_page_conversion.md	domain-business-strategy/go-to-market/marketing_landing_page_conversion.md
+domain-business-strategy/startup/marketing_pr_outreach_solo_dev.md	domain-business-strategy/go-to-market/marketing_pr_outreach_solo_dev.md
+domain-business-strategy/startup/marketing_referral_program_design.md	domain-business-strategy/go-to-market/marketing_referral_program_design.md
+domain-business-strategy/startup/marketing_social_media_playbook.md	domain-business-strategy/go-to-market/marketing_social_media_playbook.md
+domain-business-strategy/startup/marketing_zero_budget_launch_plan.md	domain-business-strategy/go-to-market/marketing_zero_budget_launch_plan.md
+domain-business-strategy/startup/monetization_play_billing_implementation.md	domain-software-engineering/mobile/android/implementation/android_play_billing_implementation.md
+domain-business-strategy/startup/solo_dev_business_formation.md	domain-legal/corporate-ma/solo_dev_business_formation.md
+domain-business-strategy/startup/solo_dev_contractor_management.md	domain-legal/employment-labor/solo_dev_contractor_management.md
+domain-business-strategy/startup/solo_dev_financial_planning.md	domain-finance/personal-finance-planning/solo_dev_financial_planning.md
+domain-business-strategy/startup/solo_dev_roadmap_planner.md	domain-engineering-workflows/workflows/engineering_solo_dev_roadmap_planner.md
+domain-business-strategy/startup/solo_dev_tax_strategy.md	domain-finance/tax-planning/solo_dev_tax_strategy.md
+domain-business-strategy/startup/solo_dev_weekly_operating_rhythm.md	domain-productivity/reviews/reviews_solo_dev_weekly_operating_rhythm.md
+domain-discipleship/after-harm/discipleship_after_a_mentor_is_removed.md	domain-discipleship/after-harm/discipleship_after_mentor_is_removed.md
+domain-discipleship/curriculum-architecture/discipleship_multiplication_governance_and_material_drift.md	domain-discipleship/curriculum-architecture/discipleship_multiplication_governance_drift.md
+domain-discipleship/pairing-and-relationship/discipleship_informal_pairing_without_a_program.md	domain-discipleship/pairing-and-relationship/discipleship_informal_pairing_no_program.md
+domain-discipleship/pairing-and-relationship/discipleship_what_to_expect_as_a_mentee.md	domain-discipleship/pairing-and-relationship/discipleship_what_to_expect_as_mentee.md
+domain-engineering-workflows/ai-patterns/ai_pattern_engineering_manager_stance.md	domain-personal-development/prompts/identity/identity_engineering_manager_stance.md
+domain-engineering-workflows/ai-patterns/ai_pattern_observation_capture_habits.md	domain-productivity/bottlenecks/bottleneck_observation_capture_habits.md
+domain-engineering-workflows/ai-patterns/ai_pattern_weekly_reflection_session.md	domain-personal-development/prompts/agency/agency_ai_session_weekly_reflection.md
+domain-engineering-workflows/improvement/improvement_best_practice_analysis.md	domain-software-engineering/improvement/improvement_best_practice_analysis.md
+domain-engineering-workflows/improvement/improvement_language_translation.md	domain-software-engineering/improvement/improvement_language_translation.md
+domain-engineering-workflows/improvement/improvement_refactoring.md	domain-software-engineering/improvement/improvement_refactoring.md
+domain-engineering-workflows/improvement/improvement_repo_audit_master_prompt.md	domain-software-engineering/improvement/improvement_repo_audit_master_prompt.md
+domain-engineering-workflows/tasks/ai_workflow_architect.md	domain-productivity/operating-cadence/cos_ai_workflow_architect.md
+domain-engineering-workflows/tasks/task_sorting_algorithm_designer.md	domain-software-engineering/analysis/feature-design/task_sorting_algorithm_designer.md
+domain-engineering-workflows/tasks/task_sorting_algorithm_reviewer.md	domain-software-engineering/analysis/feature-design/task_sorting_algorithm_reviewer.md
+domain-engineering-workflows/tasks/task_sorting_kotlin_implementation_verifier.md	domain-software-engineering/analysis/feature-design/task_sorting_kotlin_implementation_verifier.md
+domain-engineering-workflows/tasks/task_sorting_workflow_guide.md	domain-software-engineering/analysis/feature-design/task_sorting_workflow_guide.md
+domain-engineering-workflows/tasks/workflow_driven_prompts.md	DELETED split-into:domain-engineering-workflows/workflows/
+domain-engineering-workflows/workflows/engineering_24_hour_leader_pulse.md	domain-business-strategy/research/research_24_hour_leader_pulse.md
+domain-engineering-workflows/workflows/engineering_goal_system_designer.md	DELETED merged-into:domain-personal-development/prompts/goals/goals_goal_system_designer.md
+domain-engineering-workflows/workflows/engineering_stakeholder_navigation_guide.md	DELETED merged-into:domain-personal-development/prompts/stakeholder/stakeholder_navigation_guide.md
+domain-engineering-workflows/workflows/engineering_teach_me_to_code.md	domain-learning-coding/learning_teach_me_to_code_workflow.md
+domain-engineering-workflows/workflows/workflow_cs_account_health.md	domain-business-strategy/go-to-market/workflow_cs_account_health.md
+domain-engineering-workflows/workflows/workflow_cs_account_health_risk.md	DELETED superseded-by:domain-engineering-workflows/workflows/workflow_cs_account_health.md
+domain-engineering-workflows/workflows/workflow_cs_onboarding_90day.md	DELETED superseded-by:domain-engineering-workflows/workflows/workflow_customer_success_onboarding_plan.md
+domain-engineering-workflows/workflows/workflow_customer_success_onboarding_plan.md	domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md
+domain-engineering-workflows/workflows/workflow_engineering_api_review.md	DELETED superseded-by:domain-engineering-workflows/workflows/workflow_engineering_api_design_review.md
+domain-engineering-workflows/workflows/workflow_engineering_incident_rca.md	DELETED superseded-by:domain-engineering-workflows/workflows/workflow_engineering_incident_root_cause_analysis.md
+domain-engineering-workflows/workflows/workflow_engineering_tech_debt.md	DELETED superseded-by:domain-engineering-workflows/workflows/workflow_engineering_technical_debt_assessment.md
+domain-engineering-workflows/workflows/workflow_marketing_campaign_brief.md	DELETED superseded-by:domain-engineering-workflows/workflows/workflow_marketing_campaign_brief_development.md
+domain-engineering-workflows/workflows/workflow_marketing_campaign_brief_development.md	domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md
+domain-engineering-workflows/workflows/workflow_marketing_content_gaps.md	DELETED superseded-by:domain-engineering-workflows/workflows/workflow_marketing_content_performance_analysis.md
+domain-engineering-workflows/workflows/workflow_marketing_content_performance_analysis.md	domain-business-strategy/go-to-market/workflow_marketing_content_performance_analysis.md
+domain-engineering-workflows/workflows/workflow_operations_budget_variance_analysis.md	domain-finance/corporate-finance-fpa/workflow_operations_budget_variance_analysis.md
+domain-engineering-workflows/workflows/workflow_pm_competitive_feature_analysis.md	DELETED superseded-by:domain-product-management/prompts/product_competitor_feature_teardown.md
+domain-engineering-workflows/workflows/workflow_pm_feature_requirements_extraction.md	domain-product-management/prompts/product_feature_requirements_extraction.md
+domain-engineering-workflows/workflows/workflow_sales_discovery_call_preparation.md	domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md
+domain-engineering-workflows/workflows/workflow_sales_discovery_prep.md	DELETED superseded-by:domain-engineering-workflows/workflows/workflow_sales_discovery_call_preparation.md
+domain-engineering-workflows/workflows/workflow_sales_pipeline_risk.md	DELETED superseded-by:domain-engineering-workflows/workflows/workflow_sales_pipeline_risk_assessment.md
+domain-engineering-workflows/workflows/workflow_sales_pipeline_risk_assessment.md	domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md
+domain-healthcare-clinical/prompts/medical-education/README.md	DELETED merged-into:domain-medical-education/README.md
+domain-healthcare-clinical/prompts/medical-education/assessment-tools/meded_assessment_rubric_builder.md	domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md
+domain-healthcare-clinical/prompts/medical-education/assessment-tools/meded_clinical_skills_checklist_designer.md	domain-medical-education/educator-rubrics-wba/assess_clinical_skills_checklist_designer.md
+domain-healthcare-clinical/prompts/medical-education/assessment-tools/meded_milestone_narrative_writer.md	domain-medical-education/educator-rubrics-wba/assess_milestone_narrative_writer.md
+domain-healthcare-clinical/prompts/medical-education/assessment-tools/meded_nbme_style_mcq_writer.md	domain-medical-education/educator-assessment-items/assess_nbme_style_mcq_writer.md
+domain-healthcare-clinical/prompts/medical-education/assessment-tools/meded_oral_exam_case_designer.md	domain-medical-education/educator-assessment-items/assess_oral_exam_case_designer.md
+domain-healthcare-clinical/prompts/medical-education/assessment-tools/meded_workplace_based_assessment_tools.md	domain-medical-education/educator-rubrics-wba/assess_workplace_based_assessment_tools.md
+domain-healthcare-clinical/prompts/medical-education/case-scenario-design/meded_osce_station_designer.md	domain-medical-education/educator-simulation-design/sim_osce_station_designer.md
+domain-healthcare-clinical/prompts/medical-education/case-scenario-design/meded_pbl_case_writer.md	domain-medical-education/educator-case-writing/case_pbl_author.md
+domain-healthcare-clinical/prompts/medical-education/case-scenario-design/meded_progressive_disclosure_case_designer.md	domain-medical-education/educator-case-writing/case_progressive_disclosure_designer.md
+domain-healthcare-clinical/prompts/medical-education/case-scenario-design/meded_simulation_scenario_designer.md	domain-medical-education/educator-simulation-design/sim_scenario_designer.md
+domain-healthcare-clinical/prompts/medical-education/case-scenario-design/meded_standardized_patient_scenario_writer.md	domain-medical-education/educator-case-writing/case_standardized_patient_author.md
+domain-healthcare-clinical/prompts/medical-education/case-scenario-design/meded_tbl_application_exercise_designer.md	domain-medical-education/educator-case-writing/case_tbl_application_exercise_designer.md
+domain-healthcare-clinical/prompts/medical-education/case-scenario-design/meded_virtual_patient_case_builder.md	domain-medical-education/educator-case-writing/case_virtual_patient_builder.md
+domain-healthcare-clinical/prompts/medical-education/curriculum-design/README.md	DELETED merged-into:domain-medical-education/README.md
+domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_cbme_implementation_program.md	domain-medical-education/educator-curriculum-design/curric_cbme_implementation_program.md
+domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_epa_implementation_designer.md	domain-medical-education/educator-curriculum-design/curric_epa_implementation_designer.md
+domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_program_competency_framework_acgme.md	domain-medical-education/educator-curriculum-design/curric_program_competency_framework_acgme.md
+domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_residency_curriculum_mapper.md	domain-medical-education/educator-curriculum-design/curric_residency_curriculum_mapper.md
+domain-healthcare-clinical/prompts/medical-education/feedback-remediation/meded_debriefing_guide_designer.md	domain-medical-education/educator-simulation-design/sim_debriefing_guide_designer.md
+domain-healthcare-clinical/prompts/medical-education/feedback-remediation/meded_learner_feedback_composer.md	domain-medical-education/educator-remediation/remed_learner_feedback_composer.md
+domain-healthcare-clinical/prompts/medical-education/feedback-remediation/meded_remediation_plan_designer.md	domain-medical-education/educator-remediation/remed_plan_designer.md
+domain-healthcare-clinical/prompts/medical-education/field_guide.md	domain-medical-education/field_guide.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/README.md	DELETED merged-into:domain-medical-education/README.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-prep/learner_handoff_practice.md	domain-medical-education/learner-clinical-rotation/study_handoff_practice.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-prep/learner_pre_clinic_patient_prep.md	domain-medical-education/learner-clinical-rotation/study_pre_clinic_patient_prep.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-prep/learner_pre_rounding_prep.md	domain-medical-education/learner-clinical-rotation/study_pre_rounding_prep.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-reasoning/learner_clinical_case_walkthrough.md	domain-medical-education/learner-clinical-reasoning/reason_clinical_case_walkthrough.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-reasoning/learner_clinical_reasoning_schema_practice.md	domain-medical-education/learner-clinical-reasoning/reason_schema_practice.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-reasoning/learner_differential_diagnosis_drill.md	domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-reasoning/learner_hypothesis_driven_workup_drill.md	domain-medical-education/learner-clinical-reasoning/reason_hypothesis_driven_workup_drill.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-reasoning/learner_illness_script_builder.md	DELETED superseded-by:domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-reasoning/learner_problem_representation_rehearsal.md	DELETED superseded-by:domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-skills/learner_h_and_p_writing_practice.md	domain-medical-education/learner-clinical-rotation/study_h_and_p_writing_practice.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-skills/learner_history_taking_rehearsal.md	DELETED superseded-by:domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-skills/learner_oral_presentation_practice.md	domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-skills/learner_osce_self_rehearsal.md	domain-medical-education/learner-osce-skills/osce_self_rehearsal.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-skills/learner_physical_exam_checklist_generator.md	domain-medical-education/learner-osce-skills/osce_physical_exam_checklist_generator.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-skills/learner_soap_note_writing_practice.md	domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/discipline-specific/learner_allied_health_scope_and_reasoning_drill.md	domain-medical-education/profession-specific/allied/allied_scope_and_reasoning_drill.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/discipline-specific/learner_dental_treatment_planning_practice.md	domain-medical-education/profession-specific/dental/dental_treatment_planning_practice.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/discipline-specific/learner_ems_protocol_decision_drill.md	domain-medical-education/profession-specific/ems-paramedic/ems_protocol_decision_drill.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/discipline-specific/learner_nursing_care_plan_practice.md	domain-medical-education/profession-specific/nursing/nursing_care_plan_practice.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/discipline-specific/learner_pharmacy_therapeutics_soap_practice.md	domain-medical-education/profession-specific/pharmacy/pharmacy_therapeutics_soap_practice.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/exam-prep/learner_board_style_question_review.md	domain-medical-education/learner-boards/boards_style_question_review.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/exam-prep/learner_distractor_analysis_drill.md	domain-medical-education/learner-boards/boards_distractor_analysis_drill.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/exam-prep/learner_high_yield_topic_compressor.md	domain-medical-education/learner-boards/boards_high_yield_topic_compressor.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/exam-prep/learner_qbank_session_debriefer.md	domain-medical-education/learner-boards/boards_qbank_session_debriefer.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/foundational-sciences/learner_anatomy_drill_generator.md	domain-medical-education/learner-foundational-sciences/study_anatomy_drill_generator.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/foundational-sciences/learner_immunology_concept_clarifier.md	domain-medical-education/learner-foundational-sciences/study_immunology_concept_clarifier.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/foundational-sciences/learner_microbiology_bug_drill.md	domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drill.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/foundational-sciences/learner_pathophysiology_chain_builder.md	domain-medical-education/learner-foundational-sciences/study_pathophysiology_chain_builder.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/foundational-sciences/learner_pharmacology_mechanism_explainer.md	domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_explainer.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/foundational-sciences/learner_physiology_concept_clarifier.md	domain-medical-education/learner-foundational-sciences/study_physiology_concept_clarifier.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/procedures-emergencies/learner_code_algorithm_rehearsal.md	domain-medical-education/learner-procedures/study_code_algorithm_rehearsal.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/procedures-emergencies/learner_critical_event_recognition_drill.md	domain-medical-education/learner-procedures/study_critical_event_recognition_drill.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/procedures-emergencies/learner_procedure_prep_briefing.md	domain-medical-education/learner-procedures/study_procedure_prep_briefing.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/procedures-emergencies/learner_simulation_pre_briefing.md	domain-medical-education/learner-procedures/study_simulation_pre_briefing.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/study-planning/learner_spaced_repetition_deck_generator.md	domain-medical-education/learner-study-systems/study_spaced_repetition_deck_generator.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/study-planning/learner_study_plan_designer.md	domain-medical-education/learner-study-systems/study_plan_designer.md
+domain-healthcare-clinical/prompts/medical-education/learner-self-study/study-planning/learner_weekly_study_review.md	domain-medical-education/learner-study-systems/study_weekly_review.md
+domain-healthcare-clinical/prompts/medical-education/teaching-methods/meded_faculty_development_module_designer.md	domain-medical-education/educator-curriculum-design/curric_faculty_development_module_designer.md
+domain-healthcare-clinical/prompts/medical-education/teaching-methods/meded_flipped_classroom_module_designer.md	domain-medical-education/educator-curriculum-design/curric_flipped_classroom_module_designer.md
+domain-healthcare-clinical/prompts/medical-education/teaching-methods/meded_journal_club_teaching_guide.md	domain-medical-education/educator-curriculum-design/curric_journal_club_teaching_guide.md
+domain-healthcare-clinical/prompts/medical-education/teaching-methods/meded_lecture_redesign_planner.md	domain-medical-education/educator-curriculum-design/curric_lecture_redesign_planner.md
+domain-healthcare-clinical/prompts/medical-education/teaching-methods/meded_preceptor_teaching_script_writer.md	domain-medical-education/educator-curriculum-design/curric_preceptor_teaching_script_writer.md
+domain-healthcare-clinical/prompts/medical-education/teaching-methods/meded_small_group_facilitation_guide.md	domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md
+domain-legal/custody/legal_grandparent_third_party_custody_visitation_analysis.md	domain-legal/custody/legal_third_party_custody_visitation_analysis.md
+domain-legal/personal-self-advocacy/defamation-reputation/legalprep_online_content_removal_platform_report_preparer.md	domain-legal/personal-self-advocacy/defamation-reputation/legalprep_content_removal_platform_report.md
+domain-legal/personal-self-advocacy/identity-theft/legalprep_identity_theft_documentation_and_report_preparer.md	domain-legal/personal-self-advocacy/identity-theft/legalprep_identity_theft_report_preparer.md
+domain-legal/personal-self-advocacy/small-claims/legalprep_small_claims_hearing_preparation_and_testimony_practice.md	domain-legal/personal-self-advocacy/small-claims/legalprep_small_claims_hearing_and_testimony.md
+domain-medical-education/learner-clinical-rotation/study_handoff_iPASS_rehearsal.md	domain-medical-education/learner-clinical-rotation/study_handoff_ipass_rehearsal.md
+domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_new_partners_and_blended_coordination.md	domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_blended_family_coordination.md
+domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit_am_i_the_problem.md	domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit.md
+domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_documentation_organizer.md	domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_organizer.md
+domain-parenting/caregiver-facing/divorce/parenting_divorce_milestones_and_holidays_emotional_plan.md	domain-parenting/caregiver-facing/divorce/parenting_divorce_milestones_and_holidays_plan.md
+domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_the_kids_script.md	domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_kids_script.md
+domain-personal-development/prompts/career/career_assessment_ai_change_management.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_change_management.md
+domain-personal-development/prompts/career/career_assessment_ai_coach.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_coach.md
+domain-personal-development/prompts/career/career_assessment_ai_compliance.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_compliance.md
+domain-personal-development/prompts/career/career_assessment_ai_content_creator.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_content_creator.md
+domain-personal-development/prompts/career/career_assessment_ai_data_annotator.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_data_annotator_trainer.md
+domain-personal-development/prompts/career/career_assessment_ai_ethics_officer.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_ethics_officer.md
+domain-personal-development/prompts/career/career_assessment_ai_governance.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_governance.md
+domain-personal-development/prompts/career/career_assessment_ai_product_adoption.md	DELETED superseded-by:domain-personal-development/prompts/career/career_product_adoption_cs.md
+domain-personal-development/prompts/career/career_assessment_ai_product_management.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_product_management.md
+domain-personal-development/prompts/career/career_assessment_ai_prompt_engineering.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_prompt_engineering.md
+domain-personal-development/prompts/career/career_assessment_ai_research_scientist.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_research_scientist.md
+domain-personal-development/prompts/career/career_assessment_ai_strategist.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ai_strategist.md
+domain-personal-development/prompts/career/career_assessment_computer_vision.md	DELETED superseded-by:domain-personal-development/prompts/career/career_computer_vision_engineering.md
+domain-personal-development/prompts/career/career_assessment_conversational_ai_ux.md	DELETED superseded-by:domain-personal-development/prompts/career/career_conversational_ai_ux.md
+domain-personal-development/prompts/career/career_assessment_deep_learning.md	DELETED superseded-by:domain-personal-development/prompts/career/career_deep_learning_engineering.md
+domain-personal-development/prompts/career/career_assessment_ml_engineering.md	DELETED superseded-by:domain-personal-development/prompts/career/career_ml_engineering.md
+domain-personal-development/prompts/career/career_assessment_nlp_engineering.md	DELETED superseded-by:domain-personal-development/prompts/career/career_nlp_engineering.md
+domain-personal-development/prompts/productivity/README.md	DELETED merged-into:domain-productivity/README.md
+domain-personal-development/prompts/productivity/productivity_automation_gold_mine.md	domain-productivity/automation/automation_gold_mine.md
+domain-personal-development/prompts/productivity/productivity_energy_by_task_type.md	domain-productivity/daily-planning/daily_energy_by_task_type.md
+domain-personal-development/prompts/productivity/productivity_focus_ritual_design.md	domain-productivity/deep-work/deepwork_focus_ritual_design.md
+domain-personal-development/prompts/productivity/productivity_meeting_killer_prompt.md	domain-productivity/deep-work/deepwork_meeting_killer.md
+domain-personal-development/prompts/productivity/productivity_open_loop_audit.md	domain-productivity/bottlenecks/bottleneck_open_loop_audit.md
+domain-personal-development/prompts/productivity/productivity_overcommitment_saying_no.md	domain-productivity/workplace/work_overcommitment_saying_no.md
+domain-personal-development/prompts/productivity/productivity_personal_energy_audit.md	domain-productivity/deep-work/deepwork_personal_energy_audit.md
+domain-personal-development/prompts/productivity/productivity_zombie_meeting_detector.md	domain-productivity/deep-work/deepwork_zombie_meeting_detector.md
+domain-productivity/career/README.md	DELETED superseded-by:domain-personal-development/prompts/career/README.md
+domain-productivity/career/career_ai_change_management.md	domain-personal-development/prompts/career/career_ai_change_management.md
+domain-productivity/career/career_ai_coach.md	domain-personal-development/prompts/career/career_ai_coach.md
+domain-productivity/career/career_ai_compliance.md	domain-personal-development/prompts/career/career_ai_compliance.md
+domain-productivity/career/career_ai_content_creator.md	domain-personal-development/prompts/career/career_ai_content_creator.md
+domain-productivity/career/career_ai_data_annotator_trainer.md	domain-personal-development/prompts/career/career_ai_data_annotator_trainer.md
+domain-productivity/career/career_ai_ethics_officer.md	domain-personal-development/prompts/career/career_ai_ethics_officer.md
+domain-productivity/career/career_ai_governance.md	domain-personal-development/prompts/career/career_ai_governance.md
+domain-productivity/career/career_ai_product_management.md	domain-personal-development/prompts/career/career_ai_product_management.md
+domain-productivity/career/career_ai_prompt_engineering.md	domain-personal-development/prompts/career/career_ai_prompt_engineering.md
+domain-productivity/career/career_ai_research_scientist.md	domain-personal-development/prompts/career/career_ai_research_scientist.md
+domain-productivity/career/career_ai_strategist.md	domain-personal-development/prompts/career/career_ai_strategist.md
+domain-productivity/career/career_computer_vision_engineering.md	domain-personal-development/prompts/career/career_computer_vision_engineering.md
+domain-productivity/career/career_conversational_ai_ux.md	domain-personal-development/prompts/career/career_conversational_ai_ux.md
+domain-productivity/career/career_deep_learning_engineering.md	domain-personal-development/prompts/career/career_deep_learning_engineering.md
+domain-productivity/career/career_ml_engineering.md	domain-personal-development/prompts/career/career_ml_engineering.md
+domain-productivity/career/career_nlp_engineering.md	domain-personal-development/prompts/career/career_nlp_engineering.md
+domain-productivity/career/career_product_adoption_cs.md	domain-personal-development/prompts/career/career_product_adoption_cs.md
+domain-productivity/prototyping/README.md	domain-software-engineering/prototyping/README.md
+domain-productivity/prototyping/prototyping_event_registration.md	domain-software-engineering/prototyping/prototyping_event_registration.md
+domain-productivity/prototyping/prototyping_habit_tracker.md	domain-software-engineering/prototyping/prototyping_habit_tracker.md
+domain-productivity/prototyping/prototyping_inventory_tracker.md	domain-software-engineering/prototyping/prototyping_inventory_tracker.md
+domain-productivity/prototyping/prototyping_landing_page.md	domain-software-engineering/prototyping/prototyping_landing_page.md
+domain-productivity/prototyping/prototyping_personal_crm.md	domain-software-engineering/prototyping/prototyping_personal_crm.md
+domain-productivity/prototyping/prototyping_request_management.md	domain-software-engineering/prototyping/prototyping_request_management.md
+domain-productivity/validation/quality_slop_ad_copy.md	domain-professional-writing/content-quality/quality_slop_ad_copy.md
+domain-productivity/validation/quality_slop_blog_post.md	domain-professional-writing/content-quality/quality_slop_blog_post.md
+domain-productivity/validation/quality_slop_case_study.md	domain-professional-writing/content-quality/quality_slop_case_study.md
+domain-productivity/validation/quality_slop_client_deliverable.md	domain-professional-writing/content-quality/quality_slop_client_deliverable.md
+domain-productivity/validation/quality_slop_email_campaign.md	domain-professional-writing/content-quality/quality_slop_email_campaign.md
+domain-productivity/validation/quality_slop_email_newsletter.md	domain-professional-writing/content-quality/quality_slop_email_newsletter.md
+domain-productivity/validation/quality_slop_executive_memo.md	domain-professional-writing/content-quality/quality_slop_executive_memo.md
+domain-productivity/validation/quality_slop_follow_up_email.md	domain-professional-writing/content-quality/quality_slop_follow_up_email.md
+domain-productivity/validation/quality_slop_internal_communication.md	domain-professional-writing/content-quality/quality_slop_internal_communication.md
+domain-productivity/validation/quality_slop_landing_page.md	domain-professional-writing/content-quality/quality_slop_landing_page.md
+domain-productivity/validation/quality_slop_meeting_summary.md	domain-professional-writing/content-quality/quality_slop_meeting_summary.md
+domain-productivity/validation/quality_slop_prd.md	domain-professional-writing/content-quality/quality_slop_prd.md
+domain-productivity/validation/quality_slop_product_description.md	domain-professional-writing/content-quality/quality_slop_product_description.md
+domain-productivity/validation/quality_slop_sales_outreach.md	domain-professional-writing/content-quality/quality_slop_sales_outreach.md
+domain-productivity/validation/quality_slop_seo_content_brief.md	domain-professional-writing/content-quality/quality_slop_seo_content_brief.md
+domain-productivity/validation/quality_slop_social_media.md	domain-professional-writing/content-quality/quality_slop_social_media.md
+domain-productivity/validation/quality_slop_support_response.md	domain-professional-writing/content-quality/quality_slop_support_response.md
+domain-productivity/validation/quality_slop_technical_documentation.md	domain-professional-writing/content-quality/quality_slop_technical_documentation.md
+domain-productivity/validation/quality_slop_video_script.md	domain-professional-writing/content-quality/quality_slop_video_script.md
+domain-professional-communication/README.md	domain-product-management/README.md
+domain-professional-communication/design/design_frontend_look_feel_hunt.md	domain-frontend-development/design-direction/frontend_look_and_feel_hunt.md
+domain-professional-communication/design/design_hiring_screen_challenge_designer.md	domain-hr-management/hiring/hr_hiring_screen_challenge_designer.md
+domain-professional-communication/examples/building_investment_proposal.md	domain-professional-writing/business-writing/business_writing_investment_proposal_example.md
+domain-professional-communication/prompts/product_automation_gold_mine.md	DELETED superseded-by:domain-personal-development/prompts/productivity/productivity_automation_gold_mine.md
+domain-professional-communication/prompts/product_competitor_feature_teardown.md	domain-product-management/prompts/product_competitor_feature_teardown.md
+domain-professional-communication/prompts/product_create_prd.md	domain-product-management/prompts/product_create_prd.md
+domain-professional-communication/prompts/product_delivery_sprint_planner.md	domain-product-management/prompts/product_delivery_sprint_planner.md
+domain-professional-communication/prompts/product_market_size_calculator.md	domain-product-management/prompts/product_market_size_calculator.md
+domain-professional-communication/prompts/product_planning_coding_roadmap.md	domain-product-management/prompts/product_planning_coding_roadmap.md
+domain-professional-communication/prompts/product_product_idea_vetting_will_it_fly_or_flop.md	domain-product-management/prompts/product_product_idea_vetting_will_it_fly_or_flop.md
+domain-professional-communication/prompts/product_rigorous_prd_evaluation_and_scoring.md	domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md
+domain-professional-communication/prompts/product_visual_design_direction_finder.md	domain-frontend-development/design-direction/frontend_visual_design_direction_finder.md
+domain-professional-communication/prompts/product_zombie_meeting_detector.md	DELETED superseded-by:domain-personal-development/prompts/productivity/productivity_zombie_meeting_detector.md
+domain-professional-communication/templates/executive_proposal_template.md	domain-professional-writing/business-writing/business_writing_executive_proposal_template.md
+domain-professional-communication/templates/prd_template.md	domain-product-management/templates/prd_template.md
+domain-professional-writing/business-documents/business_writing_executive_brief.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_executive_brief.md
+domain-professional-writing/business-documents/business_writing_meeting_notes.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_meeting_notes.md
+domain-professional-writing/business-documents/business_writing_post_mortem.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_post_mortem.md
+domain-professional-writing/business-documents/business_writing_postmortem.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_post_mortem.md
+domain-professional-writing/business-documents/business_writing_prd.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_prd_document.md
+domain-professional-writing/business-documents/business_writing_project_proposal.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_proposal.md
+domain-professional-writing/business-documents/business_writing_sop.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_sop.md
+domain-professional-writing/business-documents/business_writing_status_report.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_status_report.md
+domain-professional-writing/business-documents/business_writing_technical_documentation.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_technical_doc.md
+domain-professional-writing/domain-specific/domain_writing_pm_prd.md	DELETED superseded-by:domain-professional-writing/business-writing/business_writing_prd_document.md
+domain-psychology/client-self-use/coping-by-concern/clientself_anxiety_self_designed_exposure_with_therapist.md	domain-psychology/client-self-use/coping-by-concern/clientself_anxiety_exposure_with_therapist.md
+domain-psychology/client-self-use/coping-by-concern/clientself_ocd_erp_self_designed_exercise_with_therapist.md	domain-psychology/client-self-use/coping-by-concern/clientself_ocd_erp_exercise_with_therapist.md
+domain-psychology/client-self-use/mood-journaling/clientself_journal_prompt_generator_anti_toxic_positivity.md	domain-psychology/client-self-use/mood-journaling/clientself_journal_prompts_anti_toxic_positivity.md
+domain-psychology/client-self-use/pre-therapy/clientself_finding_a_therapist_search_criteria.md	domain-psychology/client-self-use/pre-therapy/clientself_finding_therapist_search_criteria.md
+domain-psychology/modalities/schema-psychodynamic/psychology_psychodynamic_transference_focused_formulation.md	domain-psychology/modalities/schema-psychodynamic/psychology_transference_focused_formulation.md
+domain-psychology/populations/geriatric/psychology_geriatric_depression_vs_dementia_differential.md	domain-psychology/populations/geriatric/psychology_geriatric_depression_vs_dementia.md
+domain-psychology/populations/perinatal/psychology_perinatal_treatment_options_with_pregnancy_lactation.md	domain-psychology/populations/perinatal/psychology_perinatal_options_pregnancy_lactation.md
+domain-psychology/populations/perinatal/psychology_postpartum_psychosis_recognition_and_referral.md	domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md
+domain-psychology/populations/severe-mental-illness/psychology_assertive_community_treatment_engagement_plan.md	domain-psychology/populations/severe-mental-illness/psychology_assertive_community_engagement_plan.md

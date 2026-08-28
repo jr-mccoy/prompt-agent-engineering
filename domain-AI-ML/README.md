@@ -405,7 +405,7 @@ Security in this domain is deep on both sides: `model-security/` covers the mode
 | "Help me read / digest this paper" | `learning-ai-ml/mllearn_paper_reading_guide.md`, `mllearn_paper_digest_generator.md` |
 | "Plan how I learn ML" | `learning-ai-ml/mllearn_study_path_designer.md` |
 | "Give me a full CV / NLP-LLM / RL / MLOps curriculum" | `learning-ai-ml/study-tracks/mllearn_study_track_*.md` |
-| "Reproduce ResNet / the Transformer / word2vec / DQN" | `learning-ai-ml/paper-reproductions/mllearn_reproduce_*.md`; to plan your own: `mllearn_reproduce_a_paper_plan.md` |
+| "Reproduce ResNet / the Transformer / word2vec / DQN" | `learning-ai-ml/paper-reproductions/mllearn_reproduce_*.md`; to plan your own: `domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md` |
 | "Prep me for an ML interview" | `learning-ai-ml/mllearn_ml_interview_prep.md`, `mllearn_ml_system_design_interview.md` |
 | "Graded system-design question bank + rubric" | `learning-ai-ml/interview-bank/mllearn_interview_bank_*.md`, `mllearn_interview_scoring_rubric.md` |
 | "Design a portfolio project / compete on Kaggle" | `learning-ai-ml/mllearn_portfolio_project_designer.md`, `mllearn_kaggle_competition_strategy.md` |

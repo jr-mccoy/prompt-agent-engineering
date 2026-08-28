@@ -19,7 +19,7 @@ updated: "2026-08-04"
 related_prompts:
   - domain-discipleship/program-operations/discipleship_program_design_blueprint.md
   - domain-discipleship/program-operations/discipleship_safeguarding_and_conduct_policy.md
-  - domain-discipleship/pairing-and-relationship/discipleship_informal_pairing_without_a_program.md
+  - domain-discipleship/pairing-and-relationship/discipleship_informal_pairing_no_program.md
   - domain-discipleship/mentor-equipping/discipleship_mentor_support_and_sustainability.md
   - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_discipleship_pathway_design.md
 ---
@@ -48,7 +48,7 @@ have.
 - You have staff, a budget, and a cohort — use `discipleship_program_design_blueprint.md`, which this
   prompt reduces rather than replaces.
 - There is no program and no intention of one, just two people meeting — use
-  `../pairing-and-relationship/discipleship_informal_pairing_without_a_program.md`.
+  `../pairing-and-relationship/discipleship_informal_pairing_no_program.md`.
 - You are writing the safeguarding policy itself — use
   `discipleship_safeguarding_and_conduct_policy.md`. Its output is not optional at any size and is not
   reduced here.
@@ -313,7 +313,7 @@ Everything below is sized to this. If it doesn't fit, pairs come down — not th
   the full program this reduces; read it first and use this to decide what genuinely applies
 - [`discipleship_safeguarding_and_conduct_policy.md`](discipleship_safeguarding_and_conduct_policy.md) —
   the floor's actual content, which is not reduced at any size
-- [`../pairing-and-relationship/discipleship_informal_pairing_without_a_program.md`](../pairing-and-relationship/discipleship_informal_pairing_without_a_program.md) —
+- [`../pairing-and-relationship/discipleship_informal_pairing_no_program.md`](../pairing-and-relationship/discipleship_informal_pairing_no_program.md) —
   below this scale entirely, where there is no program and no intention of one
 - [`../mentor-equipping/discipleship_mentor_support_and_sustainability.md`](../mentor-equipping/discipleship_mentor_support_and_sustainability.md) —
   keeping two or three volunteer mentors going, which at this size is the leader's main recurring job

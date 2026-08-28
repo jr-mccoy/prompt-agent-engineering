@@ -1,3 +1,26 @@
+---
+title: "Production Incident Root Cause Analysis"
+category: engineering-workflows/workflows
+description: "Work a production incident from timeline to root cause, quantify customer and business impact, and produce owned action items plus executive and customer communication drafts."
+techniques:
+  - ST-01
+  - ST-02
+  - CM-01
+  - DS-06
+  - QA-04
+difficulty: intermediate
+tags:
+  - incident-response
+  - root-cause-analysis
+  - postmortem
+  - blameless
+  - action-items
+updated: "2026-08-28"
+related_prompts:
+  - domain-engineering-workflows/workflows/engineering_post_mortem_root_cause_ladder.md
+  - domain-engineering-workflows/workflows/engineering_postmortem_blueprint.md
+---
+
 # Production Incident Root Cause Analysis
 
 **Source:** WORKFLOW_DRIVEN_PROMPTS.md

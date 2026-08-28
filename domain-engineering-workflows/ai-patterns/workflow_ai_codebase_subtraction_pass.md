@@ -20,7 +20,7 @@ updated: "2026-03-25"
 related_prompts:
   - domain-engineering-workflows/ai-patterns/workflow_ai_prelaunch_overengineering_audit.md
   - domain-engineering-workflows/ai-patterns/workflow_ai_comment_narration_cleanup.md
-  - domain-engineering-workflows/improvement/improvement_refactoring.md
+  - domain-software-engineering/improvement/improvement_refactoring.md
   - domain-software-engineering/analysis/evolution/evolution_technical_debt_estimation.md
   - domain-software-engineering/analysis/quality/quality_code_duplication_analysis.md
 ---

@@ -96,7 +96,7 @@ For each session: faithful teaching of the passage (by address), the activity, d
 State per-session and overall takeaways. Catalog needed supplies/resources by type (verify specifics), assign roles, and add a "if running short/long" flex note.
 
 ### Step 7 — Care & illustration routing
-Add leader notes routing care/crisis concerns to qualified adults/professionals (`biblical_ministry_biblical_care_conversation_foundations.md`) and illustration needs to the illustration-finder.
+Add leader notes routing care/crisis concerns to qualified adults/professionals (`biblical_ministry_care_conversation_foundations.md`) and illustration needs to the illustration-finder.
 
 ---
 
@@ -134,7 +134,7 @@ Add leader notes routing care/crisis concerns to qualified adults/professionals 
 - Roles / flex note: [..]
 
 ## Routing
-- Care/crisis concerns → biblical_ministry_biblical_care_conversation_foundations.md
+- Care/crisis concerns → biblical_ministry_care_conversation_foundations.md
 - Illustrations → biblical_sermon_illustration_finder.md
 ```
 

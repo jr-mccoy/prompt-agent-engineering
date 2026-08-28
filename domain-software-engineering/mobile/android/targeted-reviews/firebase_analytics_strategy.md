@@ -438,7 +438,7 @@ WHERE _TABLE_SUFFIX BETWEEN '20260101' AND '20260131';
 
 - `firestore_data_model_design.md` - Data model that generates analytics events
 - `firebase_cost_monitor_setup.md` - Cost monitoring including BigQuery export costs
-- `solo_dev_weekly_operating_rhythm.md` - Weekly analytics review cadence
+- `domain-productivity/reviews/reviews_solo_dev_weekly_operating_rhythm.md` - Weekly analytics review cadence
 - `monetization_model_selector.md` - Monetization metrics to track
 - `solo_dev_metrics_dashboard.md` - Dashboard design for key metrics (planned)
 

@@ -24,7 +24,7 @@ tags:
 updated: "2026-06-08"
 related_prompts:
   - domain-psychology/populations/severe-mental-illness/psychology_smi_recovery_oriented_treatment_plan.md
-  - domain-psychology/populations/severe-mental-illness/psychology_assertive_community_treatment_engagement_plan.md
+  - domain-psychology/populations/severe-mental-illness/psychology_assertive_community_engagement_plan.md
   - domain-psychology/modalities/motivational-interviewing/psychology_mi_change_talk_coder.md
   - domain-psychology/modalities/motivational-interviewing/psychology_mi_decisional_balance_facilitator.md
 ---
@@ -50,7 +50,7 @@ Produce a motivational-interviewing–based plan to support medication adherence
 ## When NOT to Use
 
 - In an acute crisis where medication is needed urgently for safety and capacity is impaired — manage safety/capacity first.
-- When the core issue is total disengagement from care rather than medication ambivalence — engage first (`psychology_assertive_community_treatment_engagement_plan.md`).
+- When the core issue is total disengagement from care rather than medication ambivalence — engage first (`psychology_assertive_community_engagement_plan.md`).
 - As a vehicle to coerce or pressure a decision; MI is incompatible with the righting reflex and persuasion-by-pressure.
 
 ## Inputs / Context Required

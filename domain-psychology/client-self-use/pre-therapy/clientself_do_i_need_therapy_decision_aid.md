@@ -17,7 +17,7 @@ tags:
 intended_use: model-testing
 updated: "2026-06-08"
 related_prompts:
-  - domain-psychology/client-self-use/pre-therapy/clientself_finding_a_therapist_search_criteria.md
+  - domain-psychology/client-self-use/pre-therapy/clientself_finding_therapist_search_criteria.md
   - domain-psychology/client-self-use/pre-therapy/clientself_insurance_eap_sliding_scale_navigation.md
   - domain-psychology/client-self-use/symptom-understanding/clientself_anxiety_depression_burnout_differentiator.md
 ---

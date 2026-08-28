@@ -20,7 +20,7 @@ tags:
   - consumer
 updated: "2026-07-23"
 related_prompts:
-  - domain-legal/personal-self-advocacy/identity-theft/legalprep_identity_theft_documentation_and_report_preparer.md
+  - domain-legal/personal-self-advocacy/identity-theft/legalprep_identity_theft_report_preparer.md
   - domain-legal/personal-self-advocacy/debt-collection/legalprep_debt_validation_dispute_letter_preparer.md
   - domain-legal/family-self-advocacy/legalprep_my_account_factual_statement.md
   - domain-legal/family-self-advocacy/legalprep_attorney_consultation_question_builder.md
@@ -28,7 +28,7 @@ related_prompts:
 
 **Purpose:** Help you draft your own factual dispute letters and statements to a credit bureau, bank, or creditor about accounts or charges that resulted from identity theft. Each letter states, in your own words, what is being disputed and why, points to your supporting documents, and can reference your FTC Identity Theft Report from **IdentityTheft.gov**, which supports identity-theft disputes. This prepares **your own** correspondence — it does **not** tell you what legal rights you have, promise the item will be removed or reversed, or send anything for you.
 
-**When to use:** You have already documented the identity theft (see `legalprep_identity_theft_documentation_and_report_preparer.md`) and now need to write to a bureau, bank, or creditor to dispute a fraudulent account, charge, or inquiry — either your first dispute or a follow-up.
+**When to use:** You have already documented the identity theft (see `legalprep_identity_theft_report_preparer.md`) and now need to write to a bureau, bank, or creditor to dispute a fraudulent account, charge, or inquiry — either your first dispute or a follow-up.
 
 **When NOT to use:** You want to know whether a dispute is legally required to succeed, whether you are liable, or whether to sue → that is legal analysis; route it to an attorney or legal aid. You still need to compile the underlying facts → start with the documentation preparer. A debt collector (not the original creditor) is involved → pair with `../debt-collection/legalprep_debt_validation_dispute_letter_preparer.md`. There is a safety dimension → Safety Block first.
 
@@ -233,7 +233,7 @@ to do if this dispute is denied in [jurisdiction]. *Confirm with the institution
 
 ## Related Prompts
 
-- `legalprep_identity_theft_documentation_and_report_preparer.md` — build the factual record and FTC report these letters reference.
+- `legalprep_identity_theft_report_preparer.md` — build the factual record and FTC report these letters reference.
 - `../debt-collection/legalprep_debt_validation_dispute_letter_preparer.md` — when a fraudulent debt has been sent to a collector.
 - `../../family-self-advocacy/legalprep_my_account_factual_statement.md` — for composing a neutral first-person factual account to accompany a dispute.
 - `../../family-self-advocacy/legalprep_attorney_consultation_question_builder.md` — build questions for an attorney if a dispute is denied.

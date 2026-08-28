@@ -19,7 +19,7 @@ tags:
 updated: "2026-06-01"
 related_prompts:
   - domain-parenting/caregiver-facing/divorce/parenting_divorce_shield_kids_from_conflict.md
-  - domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_the_kids_script.md
+  - domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_kids_script.md
   - domain-parenting/caregiver-facing/cross-age/parenting_parent_coregulation_reset.md
   - domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md
 ---
@@ -197,6 +197,6 @@ For the inevitable slip, draft a short, age-appropriate repair: "I was upset ear
 ## Cross-References
 
 - `parenting_divorce_shield_kids_from_conflict.md` — keeping the kids out of the conflict your feelings can drive.
-- `parenting_divorce_telling_the_kids_script.md` — regulating before you deliver hard news.
+- `parenting_divorce_telling_kids_script.md` — regulating before you deliver hard news.
 - `domain-parenting/caregiver-facing/cross-age/parenting_parent_coregulation_reset.md` — calming yourself in the flooded moment.
 - `domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md` — when you or your child needs more.

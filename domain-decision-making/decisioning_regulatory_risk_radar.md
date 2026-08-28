@@ -25,7 +25,7 @@ related_prompts:
   - domain-decision-making/decisioning_chained_alignment_evaluator.md
   - domain-decision-making/decisioning_competitive_intelligence_scanner.md
   - domain-decision-making/decisioning_crisis_severity_triage.md
-  - domain-business-strategy/analysis/pestel_analysis.md
+  - domain-software-engineering/analysis/business/pestel_analysis.md
 ---
 
 # Regulatory Risk Radar

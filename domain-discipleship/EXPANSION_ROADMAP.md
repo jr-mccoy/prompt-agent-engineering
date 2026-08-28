@@ -73,7 +73,7 @@ subdirectories.**
 ### `after-harm/` (4) — Wave 3
 `discipleship_harmed_by_previous_discipling.md` (STRONG-GUARD) ·
 `discipleship_dependency_and_over_attachment.md` · `discipleship_mentor_own_mistake_repair.md` ·
-`discipleship_after_a_mentor_is_removed.md` (STRONG-GUARD)
+`domain-discipleship/after-harm/discipleship_after_mentor_is_removed.md` (STRONG-GUARD)
 
 ### Wave 3 additions to existing subdirectories (9)
 `mentor-equipping/discipleship_mentor_case_consultation.md` ·
@@ -126,11 +126,11 @@ any future wave in these subdirectories should follow:
 | Bible-study group facilitation dynamics | `domain-biblical-studies/group-leader-facilitation/` | Group mechanics |
 | Personal Bible reading plans, study methods, self-quiz | `domain-biblical-studies/study-methods-teaching/`, `learner-self-study/` | Scripture intake |
 | Exegesis, word study, doctrine comparison, genre | `domain-biblical-studies/exegesis-interpretation/`, `theology-research/` | All Scripture work hands off |
-| Lay care-conversation boundaries in a ministry setting | `domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md` | Our boundaries prompt is mentor-relationship-specific and pairs with it |
+| Lay care-conversation boundaries in a ministry setting | `domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md` | Our boundaries prompt is mentor-relationship-specific and pairs with it |
 | Generic habit design | `domain-personal-development/prompts/habits/` | Non-religious frame |
 | Burnout diagnosis and recovery | `domain-personal-development/prompts/agency/agency_burnout_recovery.md` | Our sustainability prompt is mentor-role-specific |
 | Therapy, trauma, clinical distress | `domain-psychology/` | Hard boundary — never handled here |
-| Software platform design, PRDs, matching algorithms, ToS | `domain-idea-to-product/`, `domain-professional-communication/`, `domain-legal/` | Out of scope by design |
+| Software platform design, PRDs, matching algorithms, ToS | `domain-idea-to-product/`, `domain-product-management/`, `domain-legal/` | Out of scope by design |
 | General difficult-conversation craft | `domain-negotiation/difficult-conversations/` | Secular, relationship-general |
 
 ---
@@ -230,8 +230,8 @@ convention with no audit, or an audience line that assumed an institution.
 **A prompt may refuse to produce its own artifact.** Wave 2 established that structure precedes content
 and that "cannot be designed yet" is a legitimate deliverable. Wave 3 extends this to a gate that stops
 the prompt outright: `discipleship_mentor_own_mistake_repair.md` returns a reporting route instead of an
-apology; `discipleship_informal_pairing_without_a_program.md` returns "not like this" with no consolation
-plan attached; `discipleship_after_a_mentor_is_removed.md` refuses to run before a referral has been
+apology; `domain-discipleship/pairing-and-relationship/discipleship_informal_pairing_no_program.md` returns "not like this" with no consolation
+plan attached; `domain-discipleship/after-harm/discipleship_after_mentor_is_removed.md` refuses to run before a referral has been
 made. In each the gate is a table with a yes/no per row rather than a prose judgement, because prose is
 where a motivated reading gets in.
 

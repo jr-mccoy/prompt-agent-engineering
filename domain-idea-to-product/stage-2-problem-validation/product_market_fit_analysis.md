@@ -18,10 +18,10 @@ tags:
   - retention
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/lean_canvas_analysis.md
-  - domain-business-strategy/analysis/jobs_to_be_done_analysis.md
-  - domain-business-strategy/analysis/value_proposition_canvas_analysis.md
-  - domain-business-strategy/analysis/kano_model_analysis.md
+  - domain-software-engineering/analysis/business/lean_canvas_analysis.md
+  - domain-software-engineering/analysis/business/jobs_to_be_done_analysis.md
+  - domain-software-engineering/analysis/business/value_proposition_canvas_analysis.md
+  - domain-software-engineering/analysis/business/kano_model_analysis.md
 ---
 
 # Product/Market Fit Analysis for Codebase
@@ -623,4 +623,4 @@ ScheduleBot has **strong PMF with SDRs** but only **emerging PMF with the broade
 - [Lean Canvas Analysis](../stage-4-business-model/lean_canvas_analysis.md) - Pre-launch business model validation
 - [Jobs to be Done Analysis](jobs_to_be_done_analysis.md) - Understanding customer needs driving PMF
 - [Value Proposition Canvas Analysis](value_proposition_canvas_analysis.md) - Value alignment assessment
-- [Kano Model Analysis](../../domain-business-strategy/analysis/kano_model_analysis.md) - Feature prioritization for PMF improvement
+- [Kano Model Analysis](../../domain-software-engineering/analysis/business/kano_model_analysis.md) - Feature prioritization for PMF improvement

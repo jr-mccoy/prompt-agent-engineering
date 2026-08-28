@@ -20,7 +20,7 @@ related_prompts:
   - domain-learning-coding/learning_code_review_checklist.md
   - domain-learning-coding/learning_code_refactoring_exercises.md
   - domain-software-engineering/analysis/quality/quality_code_complexity_analysis.md
-  - domain-engineering-workflows/improvement/improvement_refactoring.md
+  - domain-software-engineering/improvement/improvement_refactoring.md
 ---
 
 # Code Style and Readability Analysis
@@ -252,4 +252,4 @@ setTimeout(cb, ONE_DAY_MS);
 - `domain-learning-coding/learning_code_review_checklist.md` — Encode these standards into a review checklist.
 - `domain-learning-coding/learning_code_refactoring_exercises.md` — Turn findings into practice exercises.
 - `domain-software-engineering/analysis/quality/quality_code_complexity_analysis.md` — Quantitative complexity metrics.
-- `domain-engineering-workflows/improvement/improvement_refactoring.md` — Execute the refactors in production.
+- `domain-software-engineering/improvement/improvement_refactoring.md` — Execute the refactors in production.

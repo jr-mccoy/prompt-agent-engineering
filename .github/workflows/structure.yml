@@ -29,12 +29,12 @@ jobs:
               .claude|.github) ;;
               domain-*) ;;
               *-toolkit|*-kit|*-studio|*-library|*-system|*-system-design|*-factory) ;;
-              authoring|scripts|techniques|tests) ;;
+              authoring|scripts|techniques|tests|meta) ;;
               *)
                 echo "::error::unexpected top-level directory: $dir"
                 echo "  (allowed: domain-*, *-toolkit, *-kit, *-studio, *-library,"
                 echo "   *-system, *-factory, authoring, scripts, techniques, tests,"
-                echo "   .claude, .github)"
+                echo "   meta, .claude, .github)"
                 status=1 ;;
             esac
           done < <(find . -maxdepth 1 -type d ! -name '.' ! -name '.git' -printf '%f\n' | sort)

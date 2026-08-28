@@ -128,9 +128,9 @@ These prompts leverage techniques from the repository's [Master Technique Index]
 
 ## Related Collections
 
-- [Business Analysis](../analysis/) - Strategic analysis frameworks
+- [Codebase Business Analysis](../../domain-software-engineering/analysis/business/) - Strategic analysis frameworks
 - [Agentic Resources](../../domain-agentic-resources/) - AI agent resources
-- [Professional Communication](../../domain-professional-communication/) - Product and business prompts
+- [Product Management](../../domain-product-management/) - Product and business prompts
 
 ---
 

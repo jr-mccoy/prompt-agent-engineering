@@ -26,7 +26,7 @@ related_prompts:
   - domain-legal/family-self-advocacy/legalprep_incident_documentation_organizer.md
   - domain-legal/family-self-advocacy/legalprep_witness_and_source_map.md
   - domain-legal/divorce/legal_divorce_intake_and_case_assessment.md
-  - domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_documentation_organizer.md
+  - domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_organizer.md
 ---
 
 **Purpose:** Help you build one clean, neutrally worded, dated chronology of your case — a master timeline of your relationship, separation, and the events that are in dispute. Each row names what happened, when it happened, and the document that backs it. It strips motive language and editorializing so what remains is a factual record that is useful to your attorney and credible to a court. It organizes **your own information** — it does **not** assess your case, predict outcomes, tell you which events "matter" legally, or claim your timeline "proves" anything. Those are your attorney's job.
@@ -217,4 +217,4 @@ what additional records I should obtain, and how to use this chronology.
 - `legalprep_incident_documentation_organizer.md` — turn a single recalled incident into a factual record that plugs into this timeline.
 - `legalprep_witness_and_source_map.md` — maps witnesses and sources to the facts in this chronology.
 - `../divorce/legal_divorce_intake_and_case_assessment.md` — the attorney-side intake your lawyer may use.
-- `../../domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_documentation_organizer.md` — for custody-modification chronologies.
+- `../../domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_organizer.md` — for custody-modification chronologies.

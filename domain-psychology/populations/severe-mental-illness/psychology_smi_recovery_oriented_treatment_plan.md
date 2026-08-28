@@ -24,7 +24,7 @@ tags:
 updated: "2026-06-08"
 related_prompts:
   - domain-psychology/populations/severe-mental-illness/psychology_first_episode_psychosis_intake.md
-  - domain-psychology/populations/severe-mental-illness/psychology_assertive_community_treatment_engagement_plan.md
+  - domain-psychology/populations/severe-mental-illness/psychology_assertive_community_engagement_plan.md
   - domain-psychology/documentation/psychology_initial_treatment_plan.md
   - domain-psychology/treatment-planning/psychology_modality_selection_decision_aid.md
 ---
@@ -53,7 +53,7 @@ Produce a person-centered, recovery-oriented treatment plan for an adult with se
 
 - During an acute psychotic, manic, or suicidal crisis requiring stabilization first — stabilize, then build the recovery plan.
 - For first-presentation/early psychosis still being differentiated: use `psychology_first_episode_psychosis_intake.md` first.
-- As a substitute for an ACT engagement/outreach plan when the core problem is disengagement — use `psychology_assertive_community_treatment_engagement_plan.md`.
+- As a substitute for an ACT engagement/outreach plan when the core problem is disengagement — use `psychology_assertive_community_engagement_plan.md`.
 
 ## Inputs / Context Required
 

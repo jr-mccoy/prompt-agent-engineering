@@ -21,7 +21,7 @@ related_prompts:
   - domain-software-engineering/analysis/evolution/evolution_technical_debt_estimation.md
   - domain-software-engineering/analysis/quality/quality_code_duplication_analysis.md
   - domain-engineering-workflows/ai-patterns/workflow_agent_footgun_detector.md
-  - domain-engineering-workflows/improvement/improvement_refactoring.md
+  - domain-software-engineering/improvement/improvement_refactoring.md
 ---
 
 # Pre-Launch Over-Engineering Audit

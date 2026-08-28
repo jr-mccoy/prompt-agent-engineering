@@ -19,7 +19,7 @@ updated: "2026-06-07"
 related_prompts:
   - domain-business-strategy/research/research_competitive_landscape.md
   - domain-business-strategy/research/research_company_deep_dive.md
-  - domain-business-strategy/research/research_content_research.md
+  - domain-professional-writing/writing/writing_content_research.md
 ---
 
 # Industry Trend Report
@@ -195,4 +195,4 @@ The user should supply (or the research should flag what is missing):
 
 - `domain-business-strategy/research/research_competitive_landscape.md` — Map the competitors moving within these trends.
 - `domain-business-strategy/research/research_company_deep_dive.md` — Profile a specific player driving a trend.
-- `domain-business-strategy/research/research_content_research.md` — Turn trend findings into sourced writing material.
+- `domain-professional-writing/writing/writing_content_research.md` — Turn trend findings into sourced writing material.

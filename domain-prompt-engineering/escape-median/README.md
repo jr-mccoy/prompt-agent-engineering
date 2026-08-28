@@ -52,5 +52,5 @@ Skipping steps is common and expensive: bootstrapping a file without evidence pr
 
 - `domain-prompt-engineering/model-behavior/` — for *instruction-level* behavior deviations (different failure mode).
 - `domain-prompt-engineering/goal-orientation/` — for deciding whether you're asking the right question at all.
-- `domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md` — broader CLAUDE.md scaffold that covers role, priorities, authority boundaries on top of the preference rules produced here.
+- `domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md` — broader CLAUDE.md scaffold that covers role, priorities, authority boundaries on top of the preference rules produced here.
 - `domain-engineering-workflows/ai-patterns/ai_pattern_rule_extraction_from_decisions.md` — for extracting rules from engineering decisions rather than model corrections.

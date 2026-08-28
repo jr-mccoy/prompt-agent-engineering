@@ -21,7 +21,7 @@ updated: "2026-04-20"
 related_prompts:
   - domain-business-strategy/ambition-leverage/ambition_leadership_audit.md
   - domain-business-strategy/ai-strategy/aistrategy_platform_brief.md
-  - domain-business-strategy/analysis/business_model_canvas_analysis.md
+  - domain-software-engineering/analysis/business/business_model_canvas_analysis.md
 ---
 
 # Expansion vs Pocketing AI Savings: A Board-Ready Brief

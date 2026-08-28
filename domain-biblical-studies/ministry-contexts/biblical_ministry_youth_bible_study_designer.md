@@ -28,7 +28,7 @@ related_prompts:
 
 **Objective:** Build a youth/teen Bible study on a chosen passage that respects both the text and the students — pairing real textual depth with honest engagement of adolescent questions, inviting hard questions rather than shutting them down, and landing application without being preachy.
 
-> **Child-safety note.** Teens are minors. Keep content age-appropriate; handle sensitive topics (doubt, identity, suffering, sexuality, mental health) honestly but without graphic, shaming, or inappropriate framing. Route mental-health, abuse, self-harm, or crisis concerns to trusted adults and licensed professionals — see `biblical_ministry_biblical_care_conversation_foundations.md`.
+> **Child-safety note.** Teens are minors. Keep content age-appropriate; handle sensitive topics (doubt, identity, suffering, sexuality, mental health) honestly but without graphic, shaming, or inappropriate framing. Route mental-health, abuse, self-harm, or crisis concerns to trusted adults and licensed professionals — see `biblical_ministry_care_conversation_foundations.md`.
 
 **When to use:**
 - Designing a youth-group or teen small-group study on a specific passage or theme.
@@ -130,7 +130,7 @@ Brief notes: sensitive-topic flags, adaptations for maturity range, and where to
 
 ## Leader notes & care flags
 - Sensitive-topic flags: [..]
-- Care routing: → biblical_ministry_biblical_care_conversation_foundations.md
+- Care routing: → biblical_ministry_care_conversation_foundations.md
 - Illustrations needed? → biblical_sermon_illustration_finder.md
 ```
 

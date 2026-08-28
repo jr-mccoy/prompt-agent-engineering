@@ -192,4 +192,4 @@ Show the original (or escalated draft) and the BIFF version side by side, with a
 - `parenting_coparenting_information_handoff_brief.md` — for structured factual updates between homes.
 - `parenting_coparenting_deescalation_in_front_of_kids.md` — when the conflict is live and in person, not in writing.
 - `parenting_coparenting_relationship_reset_proposal.md` — when you want to propose a better working relationship, not just send one message.
-- `parenting_coparenting_self_audit_am_i_the_problem.md` — to check whether your own messages are part of the pattern.
+- `parenting_coparenting_self_audit.md` — to check whether your own messages are part of the pattern.

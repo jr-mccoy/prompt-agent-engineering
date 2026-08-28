@@ -15,7 +15,7 @@ Use this subfolder when:
 **Not the right subfolder when:**
 
 - You need bargaining mechanics — BATNA, ZOPA, concession sequencing → see `domain-negotiation/`.
-- You need to *write* the message, email, update, or proposal → see `domain-professional-communication/`.
+- You need to *write* the message, email, update, or proposal → see `domain-product-management/`.
 - The situation is a single 1:1 difficult conversation (firing, hard feedback, a breakup) → see `domain-negotiation/difficult-conversations/`.
 - You're a manager assigning or coordinating work → see `domain-engineering-workflows/workflows/` or `domain-business-strategy/`.
 - The problem is interpersonal-emotional rather than political/structural → see `domain-personal-development/prompts/identity/` or `domain-psychology/`.
@@ -67,7 +67,7 @@ After you act, use `../agency/agency_feedback_extraction.md` to convert the reac
 ## Related domains in this repo
 
 - `domain-negotiation/` — BATNA/ZOPA, interest mapping, multi-party concession sequencing (the *bargaining* layer; cross-link, don't duplicate).
-- `domain-professional-communication/` — drafting the stakeholder-facing artifact (the *written* layer).
+- `domain-product-management/` — drafting the stakeholder-facing artifact (the *written* layer).
 - `domain-decision-making/` — `tradeoff_*` and `scenario_*` prompts for the decision underneath the politics.
 - `domain-personal-development/prompts/thinking/` — blind-spot and fresh-perspective checks on your situation read.
 - `domain-personal-development/prompts/agency/` — extracting signal from reactions after you act; `agency_proof_of_work_portfolio.md` pairs with the visibility prompt.

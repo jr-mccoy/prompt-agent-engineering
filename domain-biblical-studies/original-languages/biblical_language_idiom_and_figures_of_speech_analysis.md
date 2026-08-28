@@ -20,7 +20,7 @@ tags:
 updated: "2026-06-26"
 related_prompts:
   - domain-biblical-studies/exegesis-interpretation/biblical_word_study_original_language.md
-  - domain-biblical-studies/original-languages/biblical_language_semantic_domains_componential_analysis.md
+  - domain-biblical-studies/original-languages/biblical_language_semantic_domains_analysis.md
   - domain-biblical-studies/original-languages/biblical_language_hebrew_syntax_analysis.md
   - domain-biblical-studies/exegesis-interpretation/biblical_rhetorical_analysis.md
   - domain-biblical-studies/exegesis-interpretation/biblical_historical_cultural_context.md
@@ -38,7 +38,7 @@ related_prompts:
 - You are checking a commentary's or translation's claim that a phrase is "a Hebrew/Greek idiom for X."
 
 **When NOT to use:**
-- Your question is the semantic range of a single word — use the word-study prompt, or `biblical_language_semantic_domains_componential_analysis.md` for sense-disambiguation method.
+- Your question is the semantic range of a single word — use the word-study prompt, or `biblical_language_semantic_domains_analysis.md` for sense-disambiguation method.
 - Your question is the *rhetorical strategy* of a passage at the discourse/argument level (English-text rhetoric) rather than a figure in the original-language wording — use `biblical_rhetorical_analysis.md` in `exegesis-interpretation/`.
 - Your question is the historical/cultural background behind a practice or image — use `biblical_historical_cultural_context.md`.
 - You need the syntax of the clause — use the Greek/Hebrew syntax prompts.

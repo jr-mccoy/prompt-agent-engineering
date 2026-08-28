@@ -20,7 +20,7 @@ related_prompts:
   - domain-prompt-engineering/escape-median/escapemedian_correction_compounder.md
   - domain-prompt-engineering/escape-median/escapemedian_default_position_mapper.md
   - domain-prompt-engineering/escape-median/escapemedian_instruction_sharpener.md
-  - domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md
+  - domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md
 ---
 
 # Bootstrap a Personal Instruction File from Observed Preferences

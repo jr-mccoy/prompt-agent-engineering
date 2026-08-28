@@ -30,7 +30,7 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 - **Learning or teaching programming specifically** →
   [`domain-learning-coding/`](../domain-learning-coding/).
 - **Health-professions education** (PBL cases, OSCEs, ACGME milestones, clinical
-  reasoning drills) → [`domain-healthcare-clinical/prompts/medical-education/`](../domain-healthcare-clinical/prompts/medical-education/).
+  reasoning drills) → [`domain-medical-education/`](../domain-medical-education/).
   That directory owns its own learner-self-study track; do not duplicate it here.
 - **Teaching research methods, journal clubs, lab courses** →
   [`domain-science/teaching-research-methods/`](../domain-science/teaching-research-methods/).
@@ -193,7 +193,7 @@ works on from the other side of the desk.
 
 - [`domain-learning/`](../domain-learning/) — self-directed skill acquisition with no
   institution attached.
-- [`domain-healthcare-clinical/prompts/medical-education/`](../domain-healthcare-clinical/prompts/medical-education/) — health-professions education, including its own learner track.
+- [`domain-medical-education/`](../domain-medical-education/) — health-professions education, including its own learner track.
 - [`domain-science/teaching-research-methods/`](../domain-science/teaching-research-methods/) — teaching research craft.
 - [`domain-parenting/`](../domain-parenting/) — the same child, from the caregiver's side.
 - [`domain-personal-development/`](../domain-personal-development/) — the identity,

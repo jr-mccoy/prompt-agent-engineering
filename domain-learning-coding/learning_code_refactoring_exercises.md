@@ -19,7 +19,7 @@ updated: "2026-06-07"
 related_prompts:
   - domain-learning-coding/learning_code_pattern_recognition.md
   - domain-learning-coding/learning_code_style_readability_analysis.md
-  - domain-engineering-workflows/improvement/improvement_refactoring.md
+  - domain-software-engineering/improvement/improvement_refactoring.md
   - domain-software-engineering/testing/testing_unit_test_generation.md
 ---
 
@@ -314,5 +314,5 @@ function processPayment(payment) { return registry.get(payment.type).process(pay
 
 - `domain-learning-coding/learning_code_pattern_recognition.md` — Identify the patterns to refactor toward.
 - `domain-learning-coding/learning_code_style_readability_analysis.md` — Find the readability issues to fix.
-- `domain-engineering-workflows/improvement/improvement_refactoring.md` — Production refactoring guidance.
+- `domain-software-engineering/improvement/improvement_refactoring.md` — Production refactoring guidance.
 - `domain-software-engineering/testing/testing_unit_test_generation.md` — Generate the tests that lock behavior.

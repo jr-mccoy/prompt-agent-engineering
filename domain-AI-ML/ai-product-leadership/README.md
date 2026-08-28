@@ -11,7 +11,7 @@ The decisions made about ML work rather than inside it — which use cases to fu
 - Choosing a vendor, structuring a team, or writing an AI policy.
 
 **Not here:**
-- The question is whether a specific problem needs ML at all — [`../problem-framing-scoping/mlframe_is_this_an_ml_problem.md`](../problem-framing-scoping/mlframe_is_this_an_ml_problem.md).
+- The question is whether a specific problem needs ML at all — [`../problem-framing-scoping/mlframe_is_this_ml_problem.md`](../problem-framing-scoping/mlframe_is_this_ml_problem.md).
 - The question is enterprise or board-level AI strategy → `domain-business-strategy/ai-strategy/`.
 - You need a regulatory assessment rather than an executive summary of one → [`../responsible-ai-governance/`](../responsible-ai-governance/README.md).
 

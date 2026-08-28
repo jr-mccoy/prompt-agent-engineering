@@ -610,9 +610,9 @@ With small numbers, metrics fluctuate wildly:
 
 ## Related Prompts
 
-- `solo_dev_roadmap_planner.md` — Use metrics to prioritize features and validate roadmap decisions
+- `domain-engineering-workflows/workflows/engineering_solo_dev_roadmap_planner.md` — Use metrics to prioritize features and validate roadmap decisions
 - `solo_dev_financial_planning.md` — Revenue metrics feeding into financial planning and milestone tracking
-- `solo_dev_weekly_operating_rhythm.md` — Embed the Monday metrics review into your weekly rhythm
+- `domain-productivity/reviews/reviews_solo_dev_weekly_operating_rhythm.md` — Embed the Monday metrics review into your weekly rhythm
 - `solo_dev_decision_framework.md` — Data-driven feature decisions using dashboard insights
 - `solo_dev_support_system.md` — Correlation between support volume and product metrics
 - `monetization_paywall_optimization.md` — Deep dive when trial-to-paid conversion needs improvement

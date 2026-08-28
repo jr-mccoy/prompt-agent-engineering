@@ -33,7 +33,7 @@ related_prompts:
 
 **When NOT to Use:**
 - You need to hunt for leakage specifically in an existing pipeline (use `mldata_data_leakage_detector.md`).
-- The question is whether ML is warranted at all (use `mlframe_is_this_an_ml_problem.md`).
+- The question is whether ML is warranted at all (use `mlframe_is_this_ml_problem.md`).
 
 ## Inputs / Context
 

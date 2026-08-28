@@ -565,7 +565,7 @@ Assign confidence levels to claims and recommendations:
 | **Healthcare/Clinical** | [domain-healthcare-clinical/](domain-healthcare-clinical/) | Clinical decision support, patient education | Safety, evidence, uncertainty, shared decision-making |
 | **Research/Academic** | [domain-research-academic/](domain-research-academic/) | Literature review, methodology, analysis | Sources, rigor, bias awareness |
 | **Personal Development** | [domain-personal-development/](domain-personal-development/) | Goal setting, habit building, career planning | Individual constraints, emotional sensitivity |
-| **Professional Communication** | [domain-professional-communication/](domain-professional-communication/) | PRDs, presentations, proposals, stakeholder communication | Formality, politics, action orientation |
+| **Professional Communication** | [domain-product-management/](domain-product-management/) | PRDs, presentations, proposals, stakeholder communication | Formality, politics, action orientation |
 | **Specialized Fields** | [domain-specialized-fields/](domain-specialized-fields/) | Legal, trades, real estate, marketing | Field-specific norms, regulations, terminology |
 | **Finance** | [domain-finance/](domain-finance/) | Finance & economics field guide | Not investment advice, disclosures, individual circumstances |
 | **Psychology** | [domain-psychology/](domain-psychology/) | Psychology, therapy & behavioral health | Clinical fidelity (model-testing), ethical boundaries |
@@ -1112,7 +1112,7 @@ Before executing any non-coding prompt:
 | [domain-creative-writing/](domain-creative-writing/) | Creative writing prompts |
 | [domain-healthcare-clinical/](domain-healthcare-clinical/) | Healthcare/clinical prompts |
 | [domain-personal-development/](domain-personal-development/) | Personal development prompts |
-| [domain-professional-communication/](domain-professional-communication/) | Professional communication prompts |
+| [domain-product-management/](domain-product-management/) | Professional communication prompts |
 
 ---
 

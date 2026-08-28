@@ -19,7 +19,7 @@ tags:
 updated: "2026-06-25"
 related_prompts:
   - domain-biblical-studies/sermon-devotional/biblical_evangelistic_message_prep.md
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
   - domain-biblical-studies/learner-self-study/biblical_learner_honest_questions_doubt_explorer.md
 ---
 

@@ -17,9 +17,9 @@ tags:
   - postgresql
 updated: "2026-06-07"
 related_prompts:
-  - domain-engineering-workflows/tasks/task_sorting_algorithm_designer.md
+  - domain-software-engineering/analysis/feature-design/task_sorting_algorithm_designer.md
   - domain-engineering-workflows/workflows/coding_problems_catalog.md
-  - domain-engineering-workflows/improvement/improvement_best_practice_analysis.md
+  - domain-software-engineering/improvement/improvement_best_practice_analysis.md
 ---
 
 # Data Schema Draft from Requirements
@@ -617,6 +617,6 @@ Structure your response as JSON:
 
 ## Related Prompts
 
-- `domain-engineering-workflows/tasks/task_sorting_algorithm_designer.md` — Design algorithms over the entities you model.
+- `domain-software-engineering/analysis/feature-design/task_sorting_algorithm_designer.md` — Design algorithms over the entities you model.
 - `domain-engineering-workflows/workflows/coding_problems_catalog.md` — Reference database/architecture defect taxonomy.
-- `domain-engineering-workflows/improvement/improvement_best_practice_analysis.md` — Audit the implementation built on this schema.
+- `domain-software-engineering/improvement/improvement_best_practice_analysis.md` — Audit the implementation built on this schema.

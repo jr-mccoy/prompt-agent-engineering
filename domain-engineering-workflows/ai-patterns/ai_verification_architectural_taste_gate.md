@@ -19,7 +19,7 @@ updated: "2026-04-20"
 related_prompts:
   - domain-engineering-workflows/ai-patterns/ai_pattern_delegation_rule_test.md
   - domain-engineering-workflows/ai-patterns/ai_pattern_rule_extraction_from_decisions.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_engineering_manager_stance.md
+  - domain-personal-development/prompts/identity/identity_engineering_manager_stance.md
 ---
 
 # Architectural Taste vs Pattern Gate

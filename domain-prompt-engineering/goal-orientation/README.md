@@ -51,7 +51,7 @@ For one-off, low-stakes tasks, just run step 1 — and only if the task costs en
 - `domain-prompt-engineering/model-behavior/` — for fixing how the model behaves *after* you've verified you're asking the right thing.
 - `domain-prompt-engineering/escape-median/` — for personalizing the output *after* you've verified the question.
 - `domain-prompt-engineering/delegation/delegation_intent_specification.md` — for spec-writing when the task passes diagnosis and needs a formal brief for a colleague or a sub-agent.
-- `domain-business-strategy/chief-of-staff/cos_clarify_fuzzy_goals.md` — related upstream work: turning fuzzy personal goals into actionable intent before any AI task is framed.
+- `domain-productivity/operating-cadence/cos_clarify_fuzzy_goals.md` — related upstream work: turning fuzzy personal goals into actionable intent before any AI task is framed.
 - `domain-personal-development/prompts/agency/agency_project_ownership_converter.md` — related upstream work at the project ownership level.
 - `domain-business-strategy/ai-strategy/aistrategy_context_accumulation_map.md` — companion at the org / enterprise level when the team audit is part of a broader AI strategy conversation.
 - `domain-engineering-workflows/ai-patterns/ai_pattern_intent_and_verification_first.md` — companion pattern in engineering workflows: write task intent and verification criteria before starting.

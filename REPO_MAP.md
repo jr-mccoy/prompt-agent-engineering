@@ -1,227 +1,157 @@
 # Repository Map
 
-**Purpose:** Visual overview of folder structure for quick navigation.
+**Purpose:** Every top-level directory, with a real file count, for quick navigation.
+
+Counts are Markdown files per tree (prompts plus that tree's own READMEs and
+guides), taken from the filesystem. For routing by *task* — "I need X, where do I
+go" — use [`CLAUDE.md`](CLAUDE.md); this file answers "what exists and how big is it."
 
 ---
 
-## Top-Level Structure
+## Entry points
 
-```
-prompting-guides/
-│
-├── START_HERE_FOR_AI.md     # AI assistant entry point
-├── AI_AGENT_QUICK_START.md  # Build coding/technical prompts
-├── NON_CODING_QUICK_START.md # Build non-coding prompts
-├── CLAUDE.md                 # Detailed agent instructions
-├── README.md                 # Full documentation
-│
-├── techniques/               # Prompt engineering reference
-│   ├── MASTER_TECHNIQUE_INDEX.md  # Canonical technique catalog (250)
-│   └── USE_CASE_LOOKUP.md         # Find techniques by task type
-│
-├── authoring/                # Resource creation guides
-│   ├── skill-patterns/       # How to create skills
-│   ├── agent-patterns/       # How to create agents
-│   └── command-patterns/     # How to create commands
-│
-└── domain-*/                 # 20 domain directories (see below)
-```
+| File | For |
+|---|---|
+| [`START_HERE_FOR_AI.md`](START_HERE_FOR_AI.md) | AI assistant entry point |
+| [`CLAUDE.md`](CLAUDE.md) | Full routing table and agent instructions |
+| [`README.md`](README.md) | Human-facing documentation |
+| [`AI_AGENT_QUICK_START.md`](AI_AGENT_QUICK_START.md) | Build a new coding/technical prompt |
+| [`NON_CODING_QUICK_START.md`](NON_CODING_QUICK_START.md) | Build a new non-coding prompt |
+| [`PROMPT_INDEX.md`](PROMPT_INDEX.md) / [`PROMPT_INDEX.json`](PROMPT_INDEX.json) | Machine-readable catalog of every prompt |
+| [`PROMPT_QUALITY_STANDARDS.md`](PROMPT_QUALITY_STANDARDS.md) | What a Tier 1 prompt looks like |
 
 ---
 
-## Domain Directories
+## Technical
 
-### Technical Domains
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-software-engineering/`](domain-software-engineering/) | 611 | Analysis (security, performance, quality, architecture, evolution, **business**, feature-design), testing, devops, cloud, api, mobile, algorithms, bug-bounty, vibe-coding-rescue, improvement, prototyping |
+| [`domain-AI-ML/`](domain-AI-ML/) | 356 | The full ML lifecycle: framing, data, features, modelling, deep learning, evaluation, optimization, MLOps, monitoring, governance, GenAI/LLM, agentic systems, model security, verticals, leadership, learning |
+| [`domain-frontend-development/`](domain-frontend-development/) | 68 | Frameworks, styling, TypeScript, forms, animation, architecture, build tooling, a11y, performance, testing, design-direction |
+| [`domain-voice-conversational-ui/`](domain-voice-conversational-ui/) | 29 | Voice UI, chatbots, dialog architecture, NLU training, multimodal, analytics |
+| [`domain-game-development/`](domain-game-development/) | 25 | Design, architecture, engines, testing, multiplayer, performance, graphics, audio, level design, economy |
+| [`domain-learning-coding/`](domain-learning-coding/) | 18 | Learning to code |
 
-```
-domain-software-engineering/     (~483 prompts)
-├── analysis/
-│   ├── security/               # Vulnerability scanning, SQL injection, XSS
-│   ├── performance/            # Bottleneck identification, optimization
-│   ├── quality/                # Code complexity, duplication, smells
-│   ├── architecture/           # Layer identification, patterns, coupling
-│   └── evolution/              # Tech debt, churn, hotspots
-├── testing/                    # Unit, E2E, accessibility tests
-├── devops/                     # CI/CD, Docker, Kubernetes, GitOps
-├── cloud/                      # AWS, Azure, GCP, serverless
-├── api/                        # REST, GraphQL design
-├── mobile/                     # iOS, Android, React Native, Flutter
-└── algorithms/                 # Algorithm design and analysis
+## Agentic resources & authoring
 
-domain-frontend-development/     (~33 prompts)
-├── react/                      # Component patterns, hooks, state, testing
-├── vue/                        # Composition API, Pinia, testing
-├── accessibility/              # WCAG, ARIA, screen readers
-├── performance/                # Core Web Vitals, bundle optimization
-└── testing/                    # Jest, Playwright
-```
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-agentic-resources/`](domain-agentic-resources/) | 1565 | Skills, agents, commands, personas — the implementation library you *use* |
+| [`domain-prompt-engineering/`](domain-prompt-engineering/) | 242 | Meta-prompts: improvement, model behavior, escaping the median, goal orientation, skill development, delegation, evaluation |
+| [`continuity-kit/`](continuity-kit/) | 186 | Project Continuity Memory — a repo-local ledger of durable project state (self-contained package with its own tests) |
+| [`agentic-system-factory/`](agentic-system-factory/) | 118 | Use case → production-ready agentic system design bundle |
+| [`portable-prompt-system/`](portable-prompt-system/) | 99 | Self-contained, drop-in export of the technique library and authoring guides |
+| [`authoring/`](authoring/) | 64 | The authoring systems: skill, agent, command, and system patterns — how to *create* resources |
+| [`techniques/`](techniques/) | 44 | Canonical technique catalog and use-case lookup |
 
-### Coding Agent Resources
+## Work — the five audience tracks
 
-```
-domain-agentic-resources/        (~821 resources)
-├── skills/                     # 186 reusable capabilities
-│   ├── cloud-infrastructure/   # Helm, Terraform, K8s, AWS, GCP
-│   ├── developer-tools/        # GitHub ops, git workflows
-│   ├── testing-qa/             # Test generation, E2E, performance
-│   ├── security/               # Audits, vulnerability scanning
-│   ├── documentation/          # API docs, technical writing
-│   └── ...                     # 10+ more categories
-├── agents/                     # 99 task-specific agents
-├── commands/                   # 80 multi-agent workflows
-└── personas/                   # 52 pipeline identities
-```
+One axis: whose work is it, at what scope. Subject stays orthogonal (code goes to
+software-engineering, money to finance, contracts to legal).
 
-### Business & Strategy
+| Track | Directory | Files | Holds |
+|---|---|---|---|
+| Self | [`domain-personal-development/`](domain-personal-development/) | 177 | Identity, values, habits, goals, resilience, relationships, agency, life transitions, emotional fitness, career, stakeholder |
+| Individual execution | [`domain-productivity/`](domain-productivity/) | 121 | Daily planning, deep work, reviews, operating cadence, automation, bottlenecks, workplace, validation, home life, school |
+| Team delivery | [`domain-engineering-workflows/`](domain-engineering-workflows/) | 59 | Workflows, definition-of-done, AI patterns, AI-native rollouts |
+| Product | [`domain-product-management/`](domain-product-management/) | 10 | PRDs, market sizing, competitor teardown, sprint planning (renamed from `domain-professional-communication`) |
+| Org / company | [`domain-business-strategy/`](domain-business-strategy/) | 68 | AI strategy, ambition & leverage, go-to-market, research, startup |
 
-```
-domain-business-strategy/        (~124 prompts)
-├── analysis/                   # SWOT, BCG, competitive, financial, OKR
-├── startup/                    # Naming, branding, go-to-market
-├── research/                   # Competitive landscape, market sizing
-└── organization/               # Content audit, gap analysis, project status
+## Thinking & decisions
 
-domain-productivity/             (~84 prompts)
-├── validation/                 # Decision validation, sanity checks
-├── career/                     # Career development, exploration
-├── deep-work/                  # Focus strategies
-├── automation/                 # Zapier, Make workflows
-└── prototyping/                # App building with AI
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-negotiation/`](domain-negotiation/) | 48 | Preparation, at-the-table, channels, multi-party, after-the-deal, contexts, difficult conversations, craft |
+| [`domain-decision-making/`](domain-decision-making/) | 45 | Decision frameworks, scenario planning, tradeoff analysis, decision documentation |
+| [`domain-reasoning-craft/`](domain-reasoning-craft/) | 42 | Reasoning moves, forecasting, systems thinking, epistemics |
+| [`domain-psy-ops/`](domain-psy-ops/) | 34 | Cognitive security: influence analysis and manipulation defense (analytic/defensive only) |
+| [`domain-deep-analysis/`](domain-deep-analysis/) | 22 | Multi-phase deep-think systems for problems, decisions, plans, designs |
+| [`domain-ideation/`](domain-ideation/) | 13 | Divergent and convergent ideation |
+| [`domain-risk/`](domain-risk/) | 8 | Register, FMEA, heat map, tail risk, dependency chains, AAR |
+| [`domain-policy/`](domain-policy/) | 5 | Policy options, framing, stakeholder maps, feasibility |
 
-domain-decision-making/          (~28 prompts)
-└── [decisioning frameworks, tradeoff analyzers, blind spot checks]
-```
+## Writing & communication
 
-### Professional Communication
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-professional-writing/`](domain-professional-writing/) | 64 | Business writing, **content quality**, per-profession writing |
+| [`domain-presentations/`](domain-presentations/) | 49 | Board decks, visual planning |
+| [`domain-written-advocacy/`](domain-written-advocacy/) | 36 | Layperson self-advocacy letters |
+| [`domain-creative-writing/`](domain-creative-writing/) | 28 | Adult fiction, craft tools, genre, creative nonfiction, poetry, script, publishing |
+| [`domain-childrens-writing/`](domain-childrens-writing/) | 24 | Authoring for young readers |
+| [`domain-advertising/`](domain-advertising/) | 18 | Industry-specific advertising creative |
 
-```
-domain-professional-communication/ (~29 prompts)
-├── prompts/                    # PRDs, market sizing, stakeholder updates
-└── design/                     # Design-related prompts
+## Education & research
 
-domain-presentations/            (~24 prompts)
-# Executive and board presentations (PowerPoint formats)
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-education-teaching/`](domain-education-teaching/) | 317 | Three audience tracks: `instructor/`, `program/`, `learner/` |
+| [`domain-medical-education/`](domain-medical-education/) | 215 | Health-professions education: `educator-*` and `learner-*` tracks, plus `profession-specific/` |
+| [`domain-science/`](domain-science/) | 155 | The practice of science: methods, bench, computational, statistics, writing, peer review, grants, ethics, lab ops, engagement, disciplines |
+| [`domain-research-academic/`](domain-research-academic/) | 18 | Cross-field research methodology |
+| [`domain-learning/`](domain-learning/) | 6 | Self-directed skill acquisition |
 
-domain-professional-writing/     (~46 prompts)
-├── domain-specific/            # CPAs, attorneys, contractors (26 fields)
-└── writing/                    # Business writing
-```
+## Regulated & professional
 
-### Specialized Domains
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-healthcare-clinical/`](domain-healthcare-clinical/) | 344 | Clinical decision support, specialties, pharmacy, nursing, allied health |
+| [`domain-psychology/`](domain-psychology/) | 270 | Documentation, risk/crisis, modalities, client self-use, practice operations |
+| [`domain-legal/`](domain-legal/) | 175 | Practitioner legal work, family law, and two litigant-facing self-advocacy sections |
+| [`domain-finance/`](domain-finance/) | 148 | Corporate finance, markets, valuation, tax, risk, crypto, options, quant |
+| [`domain-hr-management/`](domain-hr-management/) | 8 | Performance reviews, hiring |
+| [`domain-specialized-fields/`](domain-specialized-fields/) | 3 | Legal research planning and IP landscape (hub; finance and psychology were promoted out) |
 
-```
-domain-image-generation/         (~15 prompts)
-├── branding/                   # Logos, icons, illustrations
-├── coloring-book/              # Coloring book illustrations
-└── healthcare/                 # Medical infographics
+## Life & faith
 
-domain-healthcare-clinical/      (~55 prompts)
-└── prompts/                    # Clinical decision support, patient comm
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-biblical-studies/`](domain-biblical-studies/) | 142 | Exegesis, study methods, sermon, theology, learner, ministry, church staff, languages, apologetics |
+| [`domain-parenting/`](domain-parenting/) | 110 | Ages 4–8, neurodivergence, divorce/custody/co-parenting |
+| [`domain-discipleship/`](domain-discipleship/) | 88 | One-to-one formation and the programs that pair people |
+| [`domain-conversation-practice/`](domain-conversation-practice/) | 9 | Language conversation practice |
 
-domain-discipleship/             (73 prompts — TRADITION-NEUTRAL, FORMATION IS NOT A METRIC)
-├── curriculum-architecture/    # Multi-stage blueprint, outcomes, sequence, balance audit, materials, multiplication, multi-generation governance (7)
-├── learner-pathways/           # Self-assessment, growth plan, practices, stalls, returning, life constraints (6)
-├── mentor-equipping/           # Readiness, training, conversation skill, boundaries & referral, sustainability, debrief, case consultation, doubt & deconstruction posture (8)
-├── pairing-and-relationship/   # Matching criteria, covenant, first meeting, cadence, ending well, re-contracting, informal pairing, mentee expectations (8)
-├── session-and-lesson/         # Session shape, lessons, question bank, hard disclosures, small groups, accessibility design (6)
-├── program-operations/         # Program blueprint, safeguarding, onboarding, health review, mentor pipeline, minimum viable program, control-drift audit (7)
-├── topical-modules/            # Money, work, sexuality (STRONG-GUARD), forgiveness, suffering, anger, digital, hostile witness (8)
-├── life-stage-tracks/          # Youth (STRONG-GUARD), college/young adult, married couples, parents, seniors (5)
-├── context-variants/           # Prison & re-entry, campus, workplace, remote & diaspora (4)
-├── initiation-and-catechesis/  # Baptism prep, membership prep, catechesis design — multi-view (3)
-├── cross-cultural/             # Cross-cultural discipling, oral-preference learners, translated material (3)
-├── peer-and-accountability/    # Mentor peer cohort (curriculum + facilitation), accountability partnership (design + conversation) (4)
-└── after-harm/                 # Harmed by a previous relationship (STRONG-GUARD), dependency, mentor's own rupture, after a removal (STRONG-GUARD) (4)
+## Visual
 
-domain-research-academic/        (~15 prompts)
-└── prompts/                    # Literature review, methodology
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-image-generation/`](domain-image-generation/) | 186 | Model guides plus branding, coloring, healthcare, e-commerce, social, covers, events, merch, illustration, comics, scientific |
 
-domain-personal-development/     (~43 prompts)
-└── prompts/                    # Goals, habits, career, self-improvement
+## Pipelines & toolkits
 
-domain-learning-coding/          (~17 prompts)
-└── [coding education, tutorials, exercises]
+Self-contained bundles. Several deliberately vendor copies of prompts that live
+elsewhere; those copies are registered in [`meta/VENDORED.tsv`](meta/VENDORED.tsv)
+and checked for drift by `scripts/check_vendored_copies.py`.
 
-domain-education-teaching/       (Guide) — 267 prompts, routed by audience
-├── instructor/  (104) [teaching a class: lesson planning, explanation craft, response
-│                       cycle, assessment items/design/analysis, grading & feedback,
-│                       family reporting, student support, classroom ops, ed-tech,
-│                       higher-ed & corporate, subject pedagogy]
-├── program/      (41) [running a programme: curriculum design, outcomes assessment,
-│                       accreditation review, faculty development, evaluation analytics]
-└── learner/     (122) [studying yourself, Socratic stance: note-taking, memory & recall,
-                        self-assessment, exam prep, study by discipline, tutoring,
-                        stuck-and-confused, writing, reading, math/science, language,
-                        research, time & discussion, adult learners, chained guides]
+| Directory | Files | Holds |
+|---|---|---|
+| [`ai-investment-research-toolkit/`](ai-investment-research-toolkit/) | 74 | Paper-first investment research loop |
+| [`domain-idea-to-product/`](domain-idea-to-product/) | 63 | Idea → shippable software, 11 stages |
+| [`childrens-book-studio/`](childrens-book-studio/) | 35 | Idea → finished children's book |
+| [`sourced-nonfiction-studio/`](sourced-nonfiction-studio/) | 27 | Uncited expertise → sourced, publishable nonfiction |
+| [`financial-records-toolkit/`](financial-records-toolkit/) | 19 | Statements → verified, categorized spreadsheets |
 
-domain-creative-writing/         (Guide)
-└── [fiction, essays, narrative, poetry]
+## Repository infrastructure
 
-domain-specialized-fields/       (Guide)
-└── [legal, trades, real estate, marketing]
-
-domain-finance/                  (Guide)
-└── [finance & economics field guide]
-
-domain-psychology/               (Library)
-└── [psychology, therapy & behavioral health (~99)]
-
-domain-psy-ops/                  (32 prompts — ANALYTIC / DEFENSIVE ONLY)
-├── technique-analysis/         # Propaganda technique, emotional levers, framing, pressure, provenance, stats (7)
-├── influence-operations/       # ABCDE assessment, coordination, astroturf, laundering, attribution (7)
-├── personal-defense/           # Manipulation, coercive control, high-control groups, pretexting (7, safety-gated)
-├── organizational-red-team/    # Threat model, narrative vulnerability, personnel exposure, community (4)
-├── counter-messaging/          # Prebunking, corrections, response triage, crisis integrity (4)
-└── case-studies-taxonomies/    # Framework crosswalk, historical case study, media literacy (3)
-
-domain-written-advocacy/         (35 prompts — LAYPERSON SELF-ADVOCACY LETTERS)
-├── cross-cutting/              # Request-letter architect, channel & record strategy, escalation ladder, log, response analyzer, follow-up (6)
-├── accounts-and-billing/       # Cancellation, account closure, recurring charge, utility/telecom, price increase (5)
-├── privacy-and-data/           # Deletion, access (DSAR), marketing opt-out, broker removal, escalation (5)
-├── products-and-warranty/      # Warranty claim, defect remedy, service non-performance, safety defect report (4)
-├── financial-hardship/         # Hardship, payment plan, fee waiver, goodwill, rate reduction, credit dispute (6)
-├── insurance-and-medical/      # Denial appeal, external review, medical bill dispute, charity care (4)
-└── institutions-and-records/   # Public records, benefits appeal, regulator complaint, workplace, school (5)
-```
-
-### Engineering Workflows
-
-```
-domain-engineering-workflows/    (~58 prompts)
-├── workflows/                  # Sprint planning, debugging, postmortems
-├── tasks/                      # Task management, prioritization
-├── improvement/                # Refactoring guidance
-└── ai-patterns/                # AI-specific development workflows
-```
-
-### Meta & Reference
-
-```
-domain-prompt-engineering/       (~22 prompts)
-├── prompt-improvement/         # Improve existing prompts
-├── model-optimization/         # GPT/model-specific optimization
-└── evaluation/                 # AI correctness, eval design
-
-techniques/                      (Reference)
-├── MASTER_TECHNIQUE_INDEX.md   # 327 active techniques (canonical)
-└── USE_CASE_LOOKUP.md          # Find by task type
-```
+| Directory | Holds |
+|---|---|
+| [`scripts/`](scripts/) | Index generation, naming and link validation, reorg tooling, vendored-copy drift check |
+| [`tests/`](tests/) | Integration tests and the prompting-technique comparison harness |
+| [`meta/`](meta/) | [`REORG_MAP.tsv`](meta/REORG_MAP.tsv) (every move and deletion) and [`VENDORED.tsv`](meta/VENDORED.tsv) (canonical → copy) |
 
 ---
 
-## Quick Navigation by Intent
+## Keeping this file honest
 
-| I want to... | Go to... |
-|--------------|----------|
-| Use an existing prompt | `domain-*/` matching my need |
-| Build a new coding prompt | `AI_AGENT_QUICK_START.md` |
-| Build a new non-coding prompt | `NON_CODING_QUICK_START.md` |
-| Build an image generation prompt | `domain-image-generation/IMAGE_GENERATION_GUIDE.md` |
-| Create a reusable skill | `authoring/skill-patterns/` |
-| Find technique definitions | `techniques/MASTER_TECHNIQUE_INDEX.md` |
-| Find techniques by use case | `techniques/USE_CASE_LOOKUP.md` |
-| Use Claude Code skills/agents | `domain-agentic-resources/` |
+Counts drift. To regenerate them:
 
----
+```bash
+for d in */; do d=${d%/}; [ "$d" = ".git" ] && continue
+  printf "%-38s %s\n" "$d" "$(find "$d" -name '*.md' | wc -l)"
+done
+```
 
-**Last Updated:** 2026-04-20
+CI (`.github/workflows/structure.yml`) enforces the top-level naming shape:
+`domain-*`, `*-toolkit`, `*-kit`, `*-studio`, `*-library`, `*-system`, `*-factory`,
+plus `authoring`, `scripts`, `techniques`, `tests`, `meta`.

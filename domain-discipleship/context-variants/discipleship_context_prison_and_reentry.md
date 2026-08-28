@@ -21,7 +21,7 @@ related_prompts:
   - domain-discipleship/program-operations/discipleship_safeguarding_and_conduct_policy.md
   - domain-discipleship/mentor-equipping/discipleship_mentor_boundaries_and_referral.md
   - domain-discipleship/pairing-and-relationship/discipleship_relationship_covenant.md
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
 ---
 
 # Prison and Re-Entry Program Variant
@@ -352,5 +352,5 @@ Produce exactly this structure. Use `[..]` where a value depends on user input.
   the standing scope framework, which this setting stresses hardest
 - [`../pairing-and-relationship/discipleship_relationship_covenant.md`](../pairing-and-relationship/discipleship_relationship_covenant.md) —
   the written agreement, adapted to a setting where confidentiality limits are set by the facility
-- [`domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md) —
+- [`domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md) —
   lay care-conversation foundations, which this setting relies on constantly

@@ -239,4 +239,4 @@ Before delivering the analysis, confirm each of the following:
 - [thinking_blind_spot_mirror_see_what_im_missing.md](../thinking/thinking_blind_spot_mirror_see_what_im_missing.md) — Check what you're missing in the political landscape.
 - [thinking_regret_minimization.md](../thinking/thinking_regret_minimization.md) — Apply a future-self perspective to a high-stakes political decision.
 
-> For BATNA/ZOPA and concession-sequencing mechanics, use `domain-negotiation/`. For drafting the stakeholder-facing message itself, use `domain-professional-communication/`. This prompt produces the *power read and strategy*, not the negotiation plan or the written artifact.
+> For BATNA/ZOPA and concession-sequencing mechanics, use `domain-negotiation/`. For drafting the stakeholder-facing message itself, use `domain-product-management/`. This prompt produces the *power read and strategy*, not the negotiation plan or the written artifact.

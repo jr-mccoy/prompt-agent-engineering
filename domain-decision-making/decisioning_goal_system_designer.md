@@ -23,8 +23,8 @@ updated: "2026-04-26"
 related_prompts:
   - domain-decision-making/decisioning_chained_alignment_evaluator.md
   - domain-decision-making/decisioning_multi_constraint_optimizer.md
-  - domain-business-strategy/chief-of-staff/cos_clarify_fuzzy_goals.md
-  - domain-business-strategy/analysis/okr_analysis.md
+  - domain-productivity/operating-cadence/cos_clarify_fuzzy_goals.md
+  - domain-software-engineering/analysis/business/okr_analysis.md
 ---
 
 # Goal System Designer
@@ -41,7 +41,7 @@ related_prompts:
 - The user only needs a single goal stated more clearly. Use `cos_clarify_fuzzy_goals.md`.
 - The user already has goals and wants to evaluate progress mid-cycle. Use `decisioning_chained_alignment_evaluator.md`.
 - The user wants OKR theory or templates only. Use `okr_analysis.md`.
-- The user is designing engineering-team OKRs in a single-team scope. The legacy `engineering_goal_system_designer.md` covers that narrower case.
+- The user is designing engineering-team OKRs in a single-team scope. The legacy `domain-personal-development/prompts/goals/goals_goal_system_designer.md` covers that narrower case.
 
 **Audience:** Founders, CEOs, function heads, team leads, chiefs of staff, anyone responsible for getting an org to row in one direction.
 

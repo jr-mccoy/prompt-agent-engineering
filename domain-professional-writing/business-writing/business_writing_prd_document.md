@@ -17,7 +17,7 @@ tags:
   - success-metrics
 updated: "2026-06-07"
 related_prompts:
-  - domain-professional-communication/prompts/product_create_prd.md
+  - domain-product-management/prompts/product_create_prd.md
   - domain-professional-writing/business-writing/business_writing_proposal.md
   - domain-professional-writing/business-writing/business_writing_technical_doc.md
 ---
@@ -26,7 +26,7 @@ related_prompts:
 
 **Objective:** Write the prose of a product requirements document that a general business audience — not just engineers — can read and align on: a crisp problem statement, explicit goals and non-goals, clear requirements, measurable success metrics, and named risks, all in plain, unambiguous language.
 
-> **Distinction from the interrogative builder.** This prompt is the **writing-craft companion** to `domain-professional-communication/prompts/product_create_prd.md`. That prompt **elicits** requirements through interrogation (it figures out *what* to build, MVP-first). This prompt **polishes the written artifact** — it assumes the substance is known or supplied and focuses on making the PRD clear, complete, and readable for a mixed business audience. Use the builder to discover requirements; use this to write them up well.
+> **Distinction from the interrogative builder.** This prompt is the **writing-craft companion** to `domain-product-management/prompts/product_create_prd.md`. That prompt **elicits** requirements through interrogation (it figures out *what* to build, MVP-first). This prompt **polishes the written artifact** — it assumes the substance is known or supplied and focuses on making the PRD clear, complete, and readable for a mixed business audience. Use the builder to discover requirements; use this to write them up well.
 
 **When to Use:**
 - You have the substance of a PRD (from discovery, the interrogative builder, or your own notes) and need to turn it into a clean document.

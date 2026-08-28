@@ -27,7 +27,7 @@ updated: "2026-05-13"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
   - domain-medical-education/learner-clinical-rotation/study_soap_note_rehearsal_with_feedback.md
-  - domain-medical-education/learner-clinical-rotation/study_handoff_iPASS_rehearsal.md
+  - domain-medical-education/learner-clinical-rotation/study_handoff_ipass_rehearsal.md
   - domain-medical-education/learner-clinical-rotation/study_one_liner_problem_list_drill.md
 ---
 

@@ -18,8 +18,8 @@ tags:
   - acceptance-criteria
 updated: "2026-04-23"
 related_prompts:
-  - domain-professional-communication/prompts/product_create_prd.md
-  - domain-professional-communication/prompts/product_rigorous_prd_evaluation_and_scoring.md
+  - domain-product-management/prompts/product_create_prd.md
+  - domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md
   - domain-engineering-workflows/workflows/engineering_delivery_sprint_planner.md
 ---
 

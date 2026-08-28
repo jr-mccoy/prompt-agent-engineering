@@ -23,7 +23,7 @@ related_prompts:
   - domain-parenting/caregiver-facing/custody/parenting_custody_parenting_plan_builder.md
   - domain-parenting/caregiver-facing/custody/parenting_custody_holiday_vacation_schedule_builder.md
   - domain-parenting/caregiver-facing/custody/parenting_custody_special_needs_plan_addendum.md
-  - domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_documentation_organizer.md
+  - domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_organizer.md
 ---
 
 **Purpose:** Give a parent plain-language literacy on the provisions that commonly appear in parenting plans — so they can read a draft, understand what each clause does, and have an informed conversation with a mediator or attorney. This is a *literacy* tool: it explains concepts in everyday words, says why parents often include them, and names what to think about. It is explicitly **not legal advice**, does not draft binding terms, and flags every concept *confirm with counsel for your jurisdiction.*
@@ -208,4 +208,4 @@ Every provision below: *confirm with counsel for your jurisdiction.*
 - `parenting_custody_parenting_plan_builder.md` — where these provisions actually go in a plan.
 - `parenting_custody_holiday_vacation_schedule_builder.md` — travel-notice/consent in the holiday context.
 - `parenting_custody_special_needs_plan_addendum.md` — decision-making and records access for special needs.
-- `parenting_custody_changed_circumstances_documentation_organizer.md` — when a relocation provision becomes relevant.
+- `parenting_custody_changed_circumstances_organizer.md` — when a relocation provision becomes relevant.

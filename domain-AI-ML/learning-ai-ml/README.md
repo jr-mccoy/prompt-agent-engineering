@@ -33,7 +33,7 @@ The learner track: twelve standalone generators that adapt to whatever you are l
 |---|---|
 | [`mllearn_paper_reading_guide.md`](mllearn_paper_reading_guide.md) | Guide a structured, critical read of an ML paper — what to extract, in what order, and how to interrogate claims — building the learner's ability to read papers independently. |
 | [`mllearn_paper_digest_generator.md`](mllearn_paper_digest_generator.md) | Produce a structured digest of a paper the user provides — problem, method, results, limitations, and relevance — grounded strictly in the paper's content with no fabricated numbers. |
-| [`mllearn_reproduce_a_paper_plan.md`](mllearn_reproduce_a_paper_plan.md) | Plan a faithful reproduction of an ML paper — scoping what to reproduce, surfacing ambiguities, defining baselines and success criteria, and budgeting realistically. |
+| [`mllearn_reproduce_paper_plan.md`](mllearn_reproduce_paper_plan.md) | Plan a faithful reproduction of an ML paper — scoping what to reproduce, surfacing ambiguities, defining baselines and success criteria, and budgeting realistically. |
 
 **Plan and practise**
 

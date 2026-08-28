@@ -291,7 +291,7 @@ The domain library is intentionally broad. Most reusable prompts live in `domain
 | [`domain-business-strategy/`](domain-business-strategy/) | Analysis, startups, research, chief-of-staff workflows, AI strategy |
 | [`domain-personal-development/`](domain-personal-development/) | Goals, agency, identity, career development |
 | [`domain-professional-writing/`](domain-professional-writing/) | Field-specific professional and business writing |
-| [`domain-professional-communication/`](domain-professional-communication/) | Product and stakeholder communication |
+| [`domain-product-management/`](domain-product-management/) | Product and stakeholder communication |
 | [`domain-hr-management/`](domain-hr-management/) | Reviews, assessment, peer/360 feedback, calibration |
 | [`domain-decision-making/`](domain-decision-making/) | Decision frameworks, scenarios, tradeoffs, documentation |
 | [`domain-deep-analysis/`](domain-deep-analysis/) | Multi-phase and multi-perspective analysis systems |

@@ -1,226 +1,286 @@
 ---
-title: "Flipped Classroom Module Designer — Pre-Work, In-Class Application, Reinforcement"
+title: "Flipped Classroom Module Designer"
 category: medical-education/educator-curriculum-design
-description: "Design a flipped-classroom module: pre-class self-paced resources (videos, readings, foundational MCQ check), in-class application session (case-based / TBL / problem-solving), and post-class reinforcement (spaced retrieval, application to clinical work). Output includes pre-work spec with time budget, accountability mechanism (entry quiz / iRAT), in-class facilitation script, and reinforcement schedule. Refuses to ship without pre-work accountability mechanism or with content duplication between pre-class and in-class."
+description: "Design complete flipped classroom modules with pre-class materials specification, readiness assurance activities, in-class application design, and learner accountability structures for health professions education."
 techniques:
   - ST-02
-  - ST-03
-  - DS-01
+  - ED-01
+  - ED-02
   - CM-02
-  - DT-05
-  - DS-29
-difficulty: advanced
-intended_use: model-testing
-target_users:
-  - clinical-educator
-  - course-director
-  - curriculum-designer
-  - faculty-developer
+  - QA-01
+difficulty: intermediate
 tags:
   - flipped-classroom
   - pre-class
+  - readiness-assurance
   - active-learning
-  - tbl
-  - spaced-repetition
-updated: "2026-05-18"
+  - medical-education
+  - curriculum-design
+updated: "2026-05-15"
 related_prompts:
-  - domain-medical-education/educator-curriculum-design/curric_lecture_outline_designer.md
-  - domain-medical-education/educator-curriculum-design/curric_microlecture_script_author.md
-  - domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md
-  - domain-medical-education/educator-case-writing/case_tbl_application_exercise_author.md
+  - domain-medical-education/educator-curriculum-design/curric_lecture_redesign_planner.md
+  - domain-medical-education/teaching-methods/meded_tbl_application_exercise_designer.md
+  - domain-medical-education/educator-curriculum-design/curric_faculty_development_module_designer.md
 ---
 
-## Objective
+# Flipped Classroom Module Designer
 
-Design a complete flipped-classroom module covering pre-class, in-class, and post-class phases: pre-work content + time budget + accountability mechanism (entry quiz / iRAT); in-class application script (TBL / case-based / problem-solving) with facilitator moves; post-class spaced retrieval + application-to-practice plan. Refuse to ship modules without pre-work accountability or with content duplicated across phases (pre-class teaches what's repeated in-class).
+**Objective:** Design a complete flipped classroom module—specifying pre-class materials, readiness assurance activities, in-class application exercises, and learner accountability structures—so that class time is devoted entirely to higher-order application rather than information delivery.
 
-## Your Role
+## When to Use
+- ✅ Faculty who have an existing lecture and want to convert it to a flipped format with pre-class delivery and in-class application
+- ✅ Curriculum planners building a new module from scratch and choosing flipped as the delivery model
+- ✅ Program directors who want to use limited faculty-learner contact time for active application rather than content delivery
+- ✅ Faculty development programs demonstrating flipped classroom design with a real worked example
+- ❌ Do NOT use when learner self-preparation compliance is consistently below 50%—the flipped model breaks down without pre-class preparation; address the compliance problem first (see rescue plan in Step 8)
+- ❌ Do NOT use for highly procedural or skills-based content that requires direct demonstration before practice (e.g., suturing technique, lumbar puncture)—those require a modified observed-practice model, not a flipped classroom
 
-Flipped-classroom module architect. You design modules where pre-class builds foundation, in-class applies, post-class consolidates. You'd rather kill a beloved slide than repeat content between phases.
+## Inputs Required
+- **Module topic:** (e.g., Interpretation of the 12-lead ECG, Fluid Resuscitation in Sepsis, AKI Diagnostic Framework)
+- **Learner level:** M2 / M3 / M4 / Resident PGY-X / Fellow
+- **Pre-class delivery format available:** Video (LMS) / Reading / Podcast / Combination
+- **Class duration:** (e.g., 60 minutes, 90 minutes)
+- **Class size:** Small (< 30) / Medium (30-80) / Large (> 80)
+- **LMS / tech available:** Yes / No (if yes, specify platform and polling tool)
 
-## Inputs
+## Constraints
 
-- `learner_level`: as before
-- `topic`: e.g., "Heart failure pharmacology — GDMT"
-- `LOs`: 3–5 ABCD LOs
-- `total_module_hours`: e.g., 3 h (typical: 1.5 h pre-class + 1.5 h in-class + 30 min/wk × 4 wk post-class)
-- `class_size`: small group (6–10) / medium (20–40) / large (≥ 50) — affects in-class format
-- `tbl_or_case_based`: TBL / case-based / problem-solving (default TBL for medium-large, case-based for small)
-- `accountability_mechanism`: `iRAT + tRAT (TBL)` / `entry-quiz` / `pre-class write-up`
-- `pre_class_resource_types`: subset of [microlecture, reading, podcast, animated explainer, simulator]
-- `post_class_reinforcement_window`: e.g., 4 weeks of spaced retrieval
+**Must:**
+- Specify dual learning objectives: pre-class objectives (Bloom's Remember/Understand) and in-class objectives (Bloom's Apply/Analyze/Evaluate)
+- Keep total pre-class time commitment at ≤ 30 minutes
+- Design readiness assurance activities at Bloom's Apply level—they must confirm comprehension, not just completion
+- Specify an accountability structure that gives the educator evidence that pre-class preparation was completed before class begins
 
-## Method
+**Must Not:**
+- Design in-class activities that can be completed without the pre-class material—the application must require pre-class knowledge plus something learners cannot do alone
+- Re-lecture on pre-class content during class time (this rewards non-preparation and defeats the flip)
+- Design readiness assurance as simple recall questions at the Remember level—these confirm compliance, not comprehension
+- Plan in-class time > 30 minutes for readiness assurance—it should take 10-15 minutes maximum, then transition to application
 
-1. **Lock LOs (CM-02 — no content drift).** All three phases (pre-class, in-class, post-class) trace to the same LOs.
+## Instructions
 
-2. **Phase 1 — Pre-class self-paced (DS-01 — pre-class shell).**
-   - Time budget for learner: 45–90 minutes total (state per LO).
-   - Content: microlecture(s) + reading(s) + optional animated explainer.
-   - Each resource tagged to specific LO.
-   - Accountability mechanism specified:
-     - **iRAT (TBL):** 10-item individual MCQ at start of in-class.
-     - **Entry quiz:** online MCQ due 24 h pre-class; counts toward grade.
-     - **Pre-class write-up:** 1-paragraph commit on assigned case.
-   - State sufficiency: pre-class should not include content that will be repeated in-class.
+### Step 1: Collect Module Inputs
+Confirm all six inputs above. If the topic is too broad for a single module (e.g., "ECG interpretation"), scope it: "12-lead ECG interpretation" should be split into (1) axis, rate, rhythm and (2) ischemia pattern recognition. A flipped module works best when it has a single, coherent in-class application task.
 
-3. **Phase 2 — In-class application (DS-29 — triggered application sequence).**
-   - Open with brief accountability check (review iRAT / quiz results; address common gaps).
-   - Application activities ordered:
-     - **TBL format:** iRAT (10 min) → tRAT team RAT (10 min) → application exercise sequence (1–3 cases, 4S — same problem, specific choice, simultaneous report, significant problem) → inter-team discussion → wrap.
-     - **Case-based:** 1 progressive-disclosure case with 3–5 triggers; facilitator probes; group commits before reveal.
-     - **Problem-solving:** structured worked examples → fading scaffolds → independent practice.
-   - Per activity: time budget, facilitator script, expected wrong turns + redirects, scoring (if competitive).
+### Step 2: Draft Dual Learning Objectives
+Design two sets of objectives with a structural division by cognitive level:
 
-4. **Phase 3 — Post-class reinforcement (DS-01 — spaced-retrieval shell).**
-   - Spaced retrieval schedule: day 1, day 3, day 7, day 14, day 30 (or similar).
-   - Items: 4–8 spaced-retrieval MCQs at application-or-analysis Bloom level.
-   - Application-to-practice prompt: "In the next 7 days, when you encounter a patient with [LO topic], apply [specific behavior] and log one example."
-   - Reinforcement check: brief quiz at week 4 or rotation transition.
+**Pre-Class Objectives (Bloom's Remember / Understand):**
+What learners must know and understand before arriving in class. These are the knowledge inputs required for the in-class application.
+- Format: "After completing the pre-class materials, learners will be able to [Remember/Understand verb] [specific content]."
+- Example: "Name the five components of the systematic ECG interpretation sequence." / "Describe the pathophysiological mechanism that produces ST elevation in STEMI."
+- Limit to 3-5 pre-class objectives.
 
-5. **Duplication audit (CM-02 — no-content-duplication rule).** Sweep pre-class against in-class slides / content. If any specific concept is taught in both, flag and refuse. The rule: pre-class teaches concepts; in-class applies them.
+**In-Class Objectives (Bloom's Apply / Analyze / Evaluate):**
+What learners will DO with pre-class knowledge when they arrive. These cannot be achieved through content delivery alone—they require judgment, discrimination, or synthesis.
+- Format: "After the in-class session, learners will be able to [Apply/Analyze/Evaluate verb] [specific task]."
+- Example: "Apply a systematic ECG interpretation framework to correctly identify STEMI, LBBB, and Wolff-Parkinson-White in five ECG strips." / "Evaluate two ECGs with similar presentations and justify which patient requires emergent intervention."
+- Limit to 2-3 in-class objectives.
 
-6. **Refusal guard.** No accountability mechanism → refuse. Duplication ≥ 25% of in-class repeating pre-class → refuse.
+**Test of the division:** If the in-class objective can be met by watching the pre-class video alone, the division has failed. The in-class objective must require a novel application that the content alone cannot supply.
 
-7. **Source-fidelity audit (QA-12).** Clinical content cited. TBL framework cited (Michaelsen). Spaced-repetition reference cited (Cepeda 2008 meta-analysis).
+### Step 3: Design the Pre-Class Package
+Specify the complete pre-class learning package. Keep total time ≤ 30 minutes.
+
+**Component 1 — Content Delivery:**
+Select format and specify:
+- **Video (recommended):** Duration < 15 minutes. Title, source, or creation plan. If creating: topic outline for the video (what the first 5 minutes cover, middle 5 minutes, final 5 minutes).
+- **Reading:** Page count ≤ 15 pages. Source, chapter, pages. Annotate if the full reading is not required (e.g., "Read pp. 142-156; skip the figures on 150-151").
+- **Podcast:** Duration < 20 minutes. Episode title, platform, access link.
+- **Combination:** Total time ≤ 30 minutes for all components together.
+
+**Component 2 — Focus Questions:**
+Generate 3-5 questions learners must be able to answer after consuming the pre-class materials. These are not graded but are essential for orienting attention during self-study.
+- Frame as: "After completing the pre-class materials, you should be able to answer: ..."
+- Target Bloom's Understand level—these prime schemas, not test them. Save Apply-level for readiness assurance.
+- Example for ECG module: "What is the normal PR interval range and what happens physiologically during that time?" / "What are the two criteria required to call a Q-wave pathological?"
+
+**Component 3 — Access and Logistics:**
+Specify where the material lives and how learners access it:
+- LMS link (include path)
+- QR code (include target URL)
+- Email distribution (confirm learner list)
+- **Deadline:** Specify when pre-class must be completed (e.g., "Complete by midnight before class day")
+
+**Worked specification for ECG module:**
+- Video: "ECG Systematic Interpretation" (12 min), posted to course LMS > Module 4 > Pre-Class Materials > Week 6
+- Focus questions distributed as a one-page PDF alongside the video link
+- Deadline: 11:59 PM the evening before class
+
+### Step 4: Design the Readiness Assurance Activity
+The readiness assurance (RA) activity opens the class session. It serves two functions: (1) confirms that pre-class preparation occurred, and (2) gives the educator real-time data on class comprehension to calibrate the application activity.
+
+**RA Design Specifications:**
+- **Question count:** 3-5 MCQs or short answers
+- **Bloom's level:** Apply (not Remember)—the learner must use the pre-class knowledge in a novel context, not just recall it
+- **Time:** 5-10 minutes maximum
+- **Format:** Individual → group discussion if time allows; or individual only with immediate answer display
+- **Feedback:** Display class results immediately (anonymous aggregate). Do not move to application until ≥ 70% of the class passes the RA.
+
+**Sample RA questions for ECG module (Apply level):**
+1. "A 58-year-old has an ECG with ST elevation in leads II, III, and aVF and ST depression in leads I and aVL. Which coronary artery territory is most likely affected? (A) LAD (B) RCA (C) LCx (D) Diagonal"
+2. "An ECG shows a wide QRS complex with a left bundle branch block pattern. Which one additional feature would make you call this STEMI equivalently to a classic STEMI?" [Short answer]
+3. "Which of the following QTc values in an adult on azithromycin requires immediate escalation? (A) 420 ms (B) 445 ms (C) 480 ms (D) 510 ms"
+
+**Scoring approach:** Specify whether RA is graded for accuracy, completion only, or participation:
+- **Accuracy grade (recommended):** Motivates careful pre-class preparation; sets expectations
+- **Completion only:** Appropriate when psychological safety with errors is the priority
+- **Participation:** Minimum accountability; use only when accuracy grading would be punitive for the learner population
+
+### Step 5: Design the In-Class Application Activity
+The in-class application is the core deliverable of the flipped module. It must:
+1. Require pre-class knowledge as an input
+2. Require something the learner cannot do alone—judgment, synthesis, clinical decision-making, peer discussion
+3. Be solvable in class with facilitation, not simply through re-reading the pre-class video
+
+**Application Activity Options:**
+
+**Option A — Case-Based Application (most common):**
+Present a 1-2 paragraph clinical case with 3-4 tasks of ascending complexity. Learners work individually, then in pairs or groups, then compare with whole class.
+- Task 1: Apply pre-class framework to the case (Bloom's Apply)
+- Task 2: Identify what doesn't fit—a discrepant finding that requires analysis (Bloom's Analyze)
+- Task 3: Make a clinical decision and defend it (Bloom's Evaluate)
+
+**Option B — Comparative Case Pair:**
+Present two cases side-by-side. Learners must explain: "These two patients have similar presentations. What is different about their ECGs that changes your management?" Requires discrimination rather than pattern matching.
+
+**Option C — Diagnostic Puzzle:**
+Present an ECG (or lab panel, imaging study, or clinical scenario) without clinical context. Learners must generate a differential from the finding alone, then receive clinical context and revise. Requires generative reasoning, not recognition.
+
+**Option D — Decision Simulation:**
+Learners receive a real-time scenario with serial information (initial ECG → repeat ECG 15 minutes later → troponin result → patient clinical change). They make decisions at each stage. Simulates clinical judgment under evolving uncertainty.
+
+For the selected option, provide:
+- Complete case/task text
+- Facilitator guide with expected learner responses and discussion anchors
+- Timing allocation for each task stage
+- Group vs. individual format specification with rationale
+
+### Step 6: Specify the Learner Accountability Structure
+Without accountability for pre-class preparation, compliance drops to 40-60% and the in-class application collapses. Specify the minimum accountability structure:
+
+**Tier 1 — Completion Evidence (minimum):**
+- LMS completion tracking (video viewed to completion, page visited)
+- Pre-class quiz score (even if only 2 questions)
+- Written focus question responses submitted before class
+
+**Tier 2 — Comprehension Evidence (stronger):**
+- Readiness assurance quiz grade (accuracy, not just completion)
+- Short written prediction submitted before class ("Before watching the video, write your best answer to: [question]"; compare before/after)
+
+**Tier 3 — Performance-Linked Accountability:**
+- Readiness assurance counts toward course grade (e.g., 10% of total grade)
+- In-class application performance is explicitly tied to pre-class preparation ("If you didn't prepare, the cases won't make sense and that will show")
+
+**Recommended for most programs:** Tier 2. Readiness assurance quiz graded for accuracy, worth a modest percentage of the course grade (enough to matter, not enough to be punitive).
+
+### Step 7: Design the Closing Integration
+Final 5-10 minutes of the class session. Learners synthesize pre-class content + in-class application.
+
+**Integration options:**
+- **One-sentence synthesis:** "Complete this sentence in writing: 'After today's ECG session, I can now do _____ that I couldn't do before, because I now understand ___.'"
+- **Teach-back:** In pairs, one learner teaches the other one concept from the session; roles switch.
+- **Error autopsy:** Display one common wrong answer from the RA and ask the group to explain what reasoning error it reflects.
+
+### Step 8: Design the Rescue Plan
+What the educator does if readiness assurance scores reveal that < 50% of the class completed or understood the pre-class materials.
+
+**Trigger:** < 50% pass the RA at a pre-specified threshold (e.g., < 3/5 correct).
+
+**Rescue protocol:**
+1. Do not re-lecture the full pre-class content. This punishes those who prepared.
+2. Address only the specific RA questions that were most missed (bottom 1-2 items).
+3. Provide a 5-minute focused explanation of those concepts only.
+4. Proceed to a simplified version of the in-class application with more scaffolding.
+5. Assign a consequence for non-preparation (e.g., RA score of 0 for the session; additional pre-class quiz before next session).
+
+**Prevention:** If RA scores are low two sessions in a row, the pre-class materials are too difficult, too long, or not well-accessed. Investigate before concluding non-compliance.
+
+---
+
+## Worked Example
+
+**Module:** "Interpretation of the 12-lead ECG" for M3 students / 60-minute class / 30 students / LMS available (Canvas + Poll Everywhere)
+
+**Pre-Class Objectives:**
+1. Name the 5-step systematic ECG interpretation sequence
+2. Describe the pathophysiology of STEMI and how it produces ST elevation
+3. Identify the coronary artery territory associated with each lead group
+
+**In-Class Objectives:**
+1. Apply a systematic framework to correctly interpret 4 ECGs representing STEMI, LBBB, Wolff-Parkinson-White, and normal sinus rhythm
+2. Evaluate which of two patients with chest pain requires emergent catheterization based on ECG findings alone
+
+**Pre-Class Package:**
+- Video: "ECG Interpretation: The 5-Step Framework" (13 min) — posted Canvas > M3 Cardiology Module > Week 3 Pre-Class
+- Focus questions: PDF with 4 questions including "What is the significance of a pathological Q-wave and in which leads would you expect to find it in an inferior STEMI?"
+- Deadline: 11:59 PM night before class
+
+**Readiness Assurance (4 MCQs, Poll Everywhere, 8 min):**
+1. "Which territory does the RCA supply? (A) Anteroseptal (B) Inferior (C) Lateral (D) Apical"
+2. "ST elevation in leads V1-V4 suggests involvement of which artery? [short answer]"
+3. "A patient has LBBB. When is LBBB alone an indication for emergent catheterization? (A) Never (B) Always (C) New LBBB with chest pain and hemodynamic instability (D) Old LBBB with any chest pain"
+4. "Which delta wave finding suggests Wolff-Parkinson-White? [short answer]"
+
+Scoring: accuracy grade, counts 5% of module grade.
+
+**In-Class Application (Case-Based, 40 min):**
+Present 4 ECG strips (unlabeled). Groups of 3 apply systematic framework. Tasks:
+1. "Interpret each ECG using the 5-step framework. Write your diagnosis."
+2. "For the two 'pathological' ECGs: which patient needs the emergent phone call right now, and why?"
+3. "Group debate: Patient in ECG strip 3 also has a troponin of 0.04 and LBBB. Do you activate the cath lab?"
+
+**Closing Integration (7 min):** "Error autopsy—most groups missed the Sgarbossa criteria in strip 3. Let's spend 5 minutes on that specific reasoning error. What criterion did most people skip?"
+
+**Accountability:** Canvas completion tracking (video) + RA accuracy grade.
+
+**Rescue Plan:** If < 50% pass RA: address only the two worst-missed RA items (5 min), then proceed with ECG strip #1 only (simplified application), assign additional RA quiz before next session for those who scored < 60%.
+
+---
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Designing in-class application as continuation of lecture ("Now I'll explain the rest of the content we didn't cover in the video") | In-class must require pre-class knowledge PLUS judgment or synthesis that content delivery alone cannot provide. If learners could complete the in-class task by re-watching the video, it's not an application—it's a review |
+| Pre-class materials exceeding 30 minutes | Learners face competing pre-class demands across multiple sessions. Exceeding 30 minutes guarantees non-compliance. Cut content; prioritize ruthlessly. The video teaches what's essential; class provides what's irreplaceable |
+| Re-lecturing pre-class content in response to low RA scores | This rewards non-preparation. Address only specific RA misses (5 min max), then continue with the application with additional scaffolding. Non-preparers should feel the consequence, not be rescued |
+| Designing readiness assurance at Bloom's Remember level ("What is the normal PR interval?") | Remember-level RA confirms the learner read the material; it does not confirm they understood it. Apply-level RA ("Given this ECG, which territory is at risk?") confirms comprehension and is a stronger predictor of in-class performance |
+| No accountability structure | Without any consequence for non-preparation, compliance drops to 40-60% and the in-class application breaks down. Even minimal accountability (LMS completion tracking + RA grade) dramatically improves preparation rates |
 
 ## Output Format
 
-```
-FLIPPED MODULE — [topic] — Learner: [...] — Total: [N h]
+**Section 1 — Module Overview**
+- Topic, learner level, duration, class size, LMS/tech available
 
->>> LOs
-LO1 [Bloom]: [ABCD] → Competency: [...]
-LO2 [...]
-LO3 [...]
-[3–5]
+**Section 2 — Dual Learning Objectives**
+- Pre-class objectives (Bloom's Remember/Understand)
+- In-class objectives (Bloom's Apply/Analyze/Evaluate)
 
->>> PHASE 1 — PRE-CLASS (target learner time: [M] min)
+**Section 3 — Pre-Class Package Specification**
+- Format, duration, content outline, focus questions, access method, deadline
 
-Resource 1: [type] — [title]
-Time: [N] min
-LO: [...]
-Content brief: [2–3 sentences]
+**Section 4 — Readiness Assurance Activity**
+- 3-5 MCQs or short answers at Bloom's Apply level; scoring approach; real-time feedback plan
 
-Resource 2: [type] — [title]
-[...]
+**Section 5 — In-Class Application Activity**
+- Complete case/task text; facilitator guide; timing allocation; group/individual format
 
-Resource 3: [...]
+**Section 6 — Learner Accountability Structure**
+- Tier specification (1/2/3); implementation details; grade weight
 
-Accountability:
-- Mechanism: [iRAT / entry-quiz / write-up]
-- Sample item:
-  Q: [...]
-  Options / response format: [...]
-  Key: [...]
-- Submission deadline: [...]
-- Weight in grade: [%]
+**Section 7 — Closing Integration Activity**
+- Format and facilitation script
 
->>> PHASE 2 — IN-CLASS APPLICATION (target time: [M] min)
-Format: [TBL / case-based / problem-solving]
-
-[00:00–10:00] Accountability check
-- Review iRAT / quiz histograms.
-- Address top-3 common errors (named).
-- 1-slide synthesis.
-
-[10:00–20:00] tRAT (if TBL) or initial-case open
-- Same MCQs, teams discuss + commit.
-- Facilitator captures distribution; surfaces dissent.
-
-[20:00–60:00] Application sequence
-Activity 1: [name] — [time]
-  Same problem (4S): [...]
-  Specific choice: [...]
-  Simultaneous report: scratch-off or vote-cards
-  Significant problem: [...]
-  Facilitator script (verbatim): "[...]"
-  Common wrong turn: [...]
-  Redirect: [open question]
-
-Activity 2: [...]
-
-Activity 3 (optional): [...]
-
-[60:00–75:00] Wrap
-- Synthesis of application activities.
-- Surface application-to-practice prompt.
-
->>> PHASE 3 — POST-CLASS REINFORCEMENT (over [N] weeks)
-
-Spaced retrieval schedule:
-| Day | Item count | Bloom level | Delivery |
-|---|---|---|---|
-| 1 | 3 | application | LMS quiz |
-| 3 | 3 | application | LMS quiz |
-| 7 | 4 | analysis | LMS quiz |
-| 14 | 4 | analysis | LMS quiz |
-| 30 | 6 | analysis + evaluation | LMS quiz |
-
-Sample items (3 of N):
-SR1 [→ LO1]: [stem + options + key + rationale]
-SR2 [→ LO2]: [...]
-SR3 [→ LO3]: [...]
-
-Application-to-practice prompt: "[Specific clinical behavior tied to LO; log 1 instance in EHR comment field; review with attending or in continuity clinic in 7 days]."
-
-Reinforcement check at week 4: 6-item brief quiz + 1 reflective prompt.
-
->>> DUPLICATION AUDIT
-| Pre-class concept | In-class concept | Duplication % | Status |
-|---|---|---|---|
-| [GDMT drug classes named] | [GDMT drug classes named again] | 30% | fail → in-class drops re-listing; opens directly with case |
-| ... |
-
->>> CROSS-MODULE AUDIT
-| Risk | Status |
-|---|---|
-| Accountability mechanism specified | pass |
-| Pre-class time budget within 45–90 min | pass |
-| In-class blocks tied to LOs | pass |
-| Post-class schedule includes spacing intervals | pass |
-| No content duplicated > 25% across phases | pass |
-
->>> SOURCE-FIDELITY AUDIT
-| Reference | Source | Status |
-|---|---|---|
-| Clinical content | [...] | verified |
-| TBL framework (4S, RAT) | Michaelsen 2008 | verified |
-| Spaced retrieval | Cepeda 2008 Psychol Sci | verified |
-| Flipped-classroom evidence in med ed | Hew 2018 BMC Med Educ systematic review | verified |
-
->>> REJECTED ELEMENT (minimum 1)
-Considered: 30-minute in-class lecture re-explaining GDMT classes.
-Rejected: duplicates pre-class microlecture.
-Replaced with: 8-minute accountability check + immediate move to application activities.
-```
-
-## Variation Hooks
-
-| Knob | Effect |
-|---|---|
-| `total_module_hours` | Adjusts phase distribution; minimum viable = 30 min pre + 60 min in-class + 4 wk reinforcement |
-| `class_size` | Small → case-based / Socratic; medium → TBL; large → TBL + ARS |
-| `accountability_mechanism` | TBL → iRAT; non-TBL → entry-quiz or pre-class write-up |
-| `pre_class_resource_types` | Microlecture preferred for procedural; reading for conceptual; animated for mechanisms |
-| `post_class_reinforcement_window` | Default 4 weeks; longer for high-yield / boards material |
-| `include_continuous_assessment_link` | Ties post-class application prompt to portfolio entry |
+**Section 8 — Rescue Plan**
+- Trigger threshold; rescue protocol; prevention note
 
 ## Verification Checklist
-
-- [ ] All 3 phases present (pre, in, post).
-- [ ] LOs traced across all phases.
-- [ ] Pre-class time budget 45–90 min stated.
-- [ ] Accountability mechanism named.
-- [ ] In-class format matches `class_size`.
-- [ ] In-class activities tagged to LOs and time-budgeted.
-- [ ] Post-class spaced-retrieval schedule defined.
-- [ ] Application-to-practice prompt present.
-- [ ] Duplication audit shows ≤ 25% overlap.
-- [ ] At least one rejected element shown.
-
-## Worked Example (compact)
-
-**Input:** `learner_level = PGY1 IM`, `topic = "HF GDMT titration"`, `total_module_hours = 3`, `class_size = medium (24)`, `tbl_or_case_based = TBL`, `pre_class_resource_types = [microlecture, reading]`, `post_class_reinforcement_window = 4 weeks`.
-
-**Output:** see Output Format block above — instantiated with HF GDMT case + iRAT/tRAT structure + 5-point spaced retrieval over 4 wk.
+- [ ] Pre-class and in-class objectives are structurally separated by Bloom's level (Remember/Understand vs. Apply/Analyze/Evaluate)
+- [ ] Total pre-class time commitment ≤ 30 minutes
+- [ ] Readiness assurance questions are at Bloom's Apply level (not Remember)
+- [ ] In-class application cannot be completed by re-watching the pre-class video alone
+- [ ] Accountability structure is specified with at minimum Tier 1 implementation
+- [ ] Rescue plan specifies trigger threshold and explicit steps
+- [ ] In-class plan does not include re-lecturing pre-class content
+- [ ] Closing integration activity requires learner generation, not facilitator summary

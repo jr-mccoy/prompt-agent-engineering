@@ -22,7 +22,7 @@ related_prompts:
   - domain-business-strategy/ai-strategy/aistrategy_vendor_switch_cost.md
   - domain-business-strategy/ai-strategy/aistrategy_context_accumulation_map.md
   - domain-business-strategy/ai-strategy/aistrategy_capability_compounding_evaluation.md
-  - domain-business-strategy/analysis/business_model_canvas_analysis.md
+  - domain-software-engineering/analysis/business/business_model_canvas_analysis.md
 ---
 
 # Build an Enterprise AI Platform Strategy Brief

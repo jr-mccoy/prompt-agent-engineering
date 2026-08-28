@@ -497,7 +497,7 @@ Keep this for your own reference when deciding what goes in each tier:
 - `monetization_model_selector.md` — Choose the right monetization model before designing subscriptions
 - `monetization_paywall_optimization.md` — Design the paywall screen that sells subscriptions
 - `monetization_pricing_strategy.md` — Deep dive into pricing research and regional pricing
-- `monetization_play_billing_implementation.md` — Implement the subscription billing code in Kotlin
+- `domain-software-engineering/mobile/android/implementation/android_play_billing_implementation.md` — Implement the subscription billing code in Kotlin
 - `monetization_revenue_analytics.md` — Track and analyze subscription metrics (MRR, churn, LTV)
 
 ---

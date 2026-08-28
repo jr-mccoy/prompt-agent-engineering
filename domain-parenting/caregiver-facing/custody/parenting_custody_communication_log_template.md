@@ -22,7 +22,7 @@ updated: "2026-06-01"
 related_prompts:
   - domain-parenting/caregiver-facing/custody/parenting_custody_parenting_plan_builder.md
   - domain-parenting/caregiver-facing/custody/parenting_custody_expense_and_logistics_tracker.md
-  - domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_documentation_organizer.md
+  - domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_organizer.md
   - domain-parenting/caregiver-facing/custody/parenting_custody_exchange_and_transition_protocol.md
 ---
 
@@ -186,5 +186,5 @@ NOT A LEGAL FILING. A factual record subject to review by counsel/mediator.
 
 - `parenting_custody_parenting_plan_builder.md` — the plan terms a log measures against.
 - `parenting_custody_expense_and_logistics_tracker.md` — the financial counterpart to this record.
-- `parenting_custody_changed_circumstances_documentation_organizer.md` — when a log feeds a larger factual record of change.
+- `parenting_custody_changed_circumstances_organizer.md` — when a log feeds a larger factual record of change.
 - `parenting_custody_exchange_and_transition_protocol.md` — the exchange design that reduces what there is to log.
