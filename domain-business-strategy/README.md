@@ -58,8 +58,8 @@ These prompts demonstrate best practices for business analysis:
 
 | Prompt | Why It's Exemplary |
 |--------|-------------------|
-| [`swot_analysis.md`](analysis/swot_analysis.md) | Comprehensive framework with evidence-based reasoning requirements |
-| [`business_model_canvas_analysis.md`](analysis/business_model_canvas_analysis.md) | Multi-dimensional analysis with clear output structure |
+| [`swot_analysis.md`](../domain-software-engineering/analysis/business/swot_analysis.md) | Comprehensive framework with evidence-based reasoning requirements |
+| [`business_model_canvas_analysis.md`](../domain-software-engineering/analysis/business/business_model_canvas_analysis.md) | Multi-dimensional analysis with clear output structure |
 | [`research_competitive_landscape.md`](research/research_competitive_landscape.md) | Structured research methodology with verification steps |
 
 ---

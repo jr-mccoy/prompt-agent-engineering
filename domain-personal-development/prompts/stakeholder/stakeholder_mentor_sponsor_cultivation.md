@@ -28,7 +28,7 @@ related_prompts:
 
 **Objective:** Correctly classify the people who could help your career as potential mentors (give advice) or sponsors (spend their own capital advancing you), then produce one specific ask to one person, paired with the concrete value you offer back.
 
-**When to use:** You have "mentors" but your career isn't moving; you're told to "find a sponsor" and don't know how; or you have relationships with senior people and want to convert one into active advocacy. Not for the actual outreach message — that's `domain-professional-communication/`. Not for building peer relationships across teams — use `stakeholder_cross_team_alliance.md`.
+**When to use:** You have "mentors" but your career isn't moving; you're told to "find a sponsor" and don't know how; or you have relationships with senior people and want to convert one into active advocacy. Not for the actual outreach message — that's `domain-product-management/`. Not for building peer relationships across teams — use `stakeholder_cross_team_alliance.md`.
 
 **Audience:** An individual cultivating their own mentors and sponsors. Not for assigning mentors to others or running a mentorship program, not clinical. If the underlying issue is chronic isolation or belief that no one would help you, that read may be distorted — see `domain-psychology/` if it's persistent.
 

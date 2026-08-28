@@ -17,9 +17,9 @@ tags:
   - monetization
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/lean_canvas_analysis.md
-  - domain-business-strategy/analysis/value_proposition_canvas_analysis.md
-  - domain-business-strategy/analysis/customer_journey_map_analysis.md
+  - domain-software-engineering/analysis/business/lean_canvas_analysis.md
+  - domain-software-engineering/analysis/business/value_proposition_canvas_analysis.md
+  - domain-software-engineering/analysis/business/customer_journey_map_analysis.md
 ---
 
 # Business Model Canvas Analysis for Codebase
@@ -297,6 +297,6 @@ const integrations = {
 
 - [lean_canvas_analysis.md](lean_canvas_analysis.md) - Simplified canvas for startups focusing on problem-solution fit
 - [value_proposition_canvas_analysis.md](../stage-2-problem-validation/value_proposition_canvas_analysis.md) - Deep dive on value propositions and customer jobs
-- [customer_journey_map_analysis.md](../../domain-business-strategy/analysis/customer_journey_map_analysis.md) - Understand customer touchpoints from codebase
+- [customer_journey_map_analysis.md](../../domain-software-engineering/analysis/business/customer_journey_map_analysis.md) - Understand customer touchpoints from codebase
 - [swot_analysis.md](../stage-5-strategy-positioning/swot_analysis.md) - Strategic assessment complementing business model analysis
 - [competitive_positioning_map.md](../stage-3-market-research/competitive_positioning_map.md) - Position your product against competitors

@@ -19,7 +19,7 @@ related_prompts:
   - domain-personal-development/prompts/solo-dev/solo_dev_context_switching_reducer.md
   - domain-personal-development/prompts/solo-dev/solo_dev_burnout_prevention.md
   - domain-personal-development/prompts/solo-dev/solo_dev_skill_gap_assessment.md
-  - domain-personal-development/prompts/productivity/productivity_automation_gold_mine.md
+  - domain-productivity/automation/automation_gold_mine.md
 ---
 
 # Solo Developer Automation Audit
@@ -187,4 +187,4 @@ Before delivering the plan, confirm each of the following:
 - [solo_dev_context_switching_reducer.md](../solo-dev/solo_dev_context_switching_reducer.md) — Reduce switching overhead; automation removes the tasks, batching schedules what remains.
 - [solo_dev_burnout_prevention.md](../solo-dev/solo_dev_burnout_prevention.md) — Automation is a primary lever on the "stop doing" list when workload is unsustainable.
 - [solo_dev_skill_gap_assessment.md](../solo-dev/solo_dev_skill_gap_assessment.md) — Decide whether to learn, outsource, or automate a given responsibility.
-- [productivity_automation_gold_mine.md](../productivity/productivity_automation_gold_mine.md) — General (non-dev-specific) automation opportunity finder.
+- [domain-productivity/automation/automation_gold_mine.md](../../../domain-productivity/automation/automation_gold_mine.md) — General (non-dev-specific) automation opportunity finder.

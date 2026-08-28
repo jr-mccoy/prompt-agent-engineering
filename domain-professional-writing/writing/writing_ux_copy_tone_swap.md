@@ -20,7 +20,7 @@ updated: "2026-06-07"
 related_prompts:
   - domain-professional-writing/writing/writing_voice_print_extractor.md
   - domain-professional-writing/writing/writing_precision_doc_edit.md
-  - domain-professional-communication/design/design_frontend_look_feel_hunt.md
+  - domain-frontend-development/design-direction/frontend_look_and_feel_hunt.md
 ---
 
 # UX Copy Tone Swap

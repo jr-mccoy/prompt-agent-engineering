@@ -17,9 +17,9 @@ tags:
   - risk-analysis
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/swot_analysis.md
-  - domain-business-strategy/analysis/porters_five_forces_analysis.md
-  - domain-business-strategy/analysis/business_impact_analysis.md
+  - domain-software-engineering/analysis/business/swot_analysis.md
+  - domain-software-engineering/analysis/business/porters_five_forces_analysis.md
+  - domain-software-engineering/analysis/business/business_impact_analysis.md
 ---
 
 # PESTEL Analysis for Codebase
@@ -381,5 +381,5 @@ src/gdpr/
 
 - [swot_analysis.md](../stage-5-strategy-positioning/swot_analysis.md) - Internal analysis to complement external PESTEL factors
 - [porters_five_forces_analysis.md](porters_five_forces_analysis.md) - Industry-level competitive analysis
-- [business_impact_analysis.md](../../domain-business-strategy/analysis/business_impact_analysis.md) - Quantify business impact of environmental factors
-- [value_chain_analysis.md](../../domain-business-strategy/analysis/value_chain_analysis.md) - Understand value creation in context of environment
+- [business_impact_analysis.md](../../domain-software-engineering/analysis/business/business_impact_analysis.md) - Quantify business impact of environmental factors
+- [value_chain_analysis.md](../../domain-software-engineering/analysis/business/value_chain_analysis.md) - Understand value creation in context of environment

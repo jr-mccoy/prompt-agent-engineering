@@ -17,9 +17,9 @@ tags:
   - system-building
 updated: "2026-04-20"
 related_prompts:
-  - domain-engineering-workflows/ai-patterns/ai_pattern_weekly_reflection_session.md
+  - domain-personal-development/prompts/agency/agency_ai_session_weekly_reflection.md
   - domain-engineering-workflows/ai-patterns/ai_pattern_rule_extraction_from_decisions.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_observation_capture_habits.md
+  - domain-productivity/bottlenecks/bottleneck_observation_capture_habits.md
   - domain-personal-development/prompts/agency/agency_end_of_session_review.md
 ---
 

@@ -19,7 +19,7 @@ tags:
 updated: "2026-04-20"
 related_prompts:
   - domain-prompt-engineering/model-behavior/modelbehavior_refactor_system_prompt.md
-  - domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md
+  - domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md
   - domain-prompt-engineering/goal-orientation/goalorientation_constraint_architecture_workshop.md
 ---
 

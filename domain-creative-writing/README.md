@@ -35,8 +35,8 @@ Route to this domain when the request mentions:
 
 - **Technical documentation** → Coding prompts
 - **Academic papers** → domain-research-academic
-- **Business documents** → domain-professional-communication
-- **Marketing copy (pure persuasion)** → domain-professional-communication
+- **Business documents** → domain-product-management
+- **Marketing copy (pure persuasion)** → domain-product-management
 
 ---
 

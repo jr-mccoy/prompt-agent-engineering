@@ -417,7 +417,7 @@ Revisit this decision if:
 
 - `firebase_analytics_strategy.md` - Track monetization events and funnels
 - `marketing_zero_budget_launch_plan.md` - User acquisition to feed the monetization funnel
-- `solo_dev_weekly_operating_rhythm.md` - Time allocation for monetization work
+- `domain-productivity/reviews/reviews_solo_dev_weekly_operating_rhythm.md` - Time allocation for monetization work
 - `play_store_policy_compliance_check.md` - Billing policy compliance
 - `solo_dev_financial_planning.md` - Financial planning with revenue projections (planned)
 

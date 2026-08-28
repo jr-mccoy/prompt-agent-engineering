@@ -23,7 +23,7 @@ patterns, and out-of-scope boundaries.
 | [`thinking/`](./thinking/README.md) | 9 | Cognitive tools: blind spots, fresh perspective, interrogative/question modes, reframing, regret minimization, memory palace, simplification, constraint analysis |
 | [`productivity/`](./productivity/README.md) | 5 | Work effectiveness: automation, meeting killer, zombie-meeting detector, open-loop audit, energy audit (cross-links `domain-productivity/deep-work/`) |
 | [`solo-dev/`](./solo-dev/README.md) | 5 | Solo founders/freelancers: automation audit, burnout prevention, context-switching, network building, skill-gap assessment |
-| [`stakeholder/`](./stakeholder/README.md) | 2 | Workplace dynamics: stakeholder navigation, org politics (cross-links `domain-negotiation/`, `domain-professional-communication/`) |
+| [`stakeholder/`](./stakeholder/README.md) | 2 | Workplace dynamics: stakeholder navigation, org politics (cross-links `domain-negotiation/`, `domain-product-management/`) |
 | [`career/`](./career/README.md) | 17 | Interactive qualification assessments for AI/ML career paths |
 
 Two sibling clusters live one level up (not under `prompts/`):

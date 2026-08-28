@@ -52,4 +52,4 @@ Most behavior problems are resolved at step 1 or 2. Steps 3 and 4 are for accumu
 
 - `domain-prompt-engineering/escape-median/` — for steering the model off its default *position* on a topic (complementary; different failure mode).
 - `domain-prompt-engineering/prompt-improvement/` — for general prompt quality improvement when no specific behavior is the target.
-- `domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md` — for authoring the broader CLAUDE.md that persistent rules live inside.
+- `domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md` — for authoring the broader CLAUDE.md that persistent rules live inside.

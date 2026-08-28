@@ -20,7 +20,7 @@ updated: "2026-04-20"
 related_prompts:
   - domain-business-strategy/ambition-leverage/ambition_leadership_audit.md
   - domain-business-strategy/ambition-leverage/ambition_insight_to_action_workflow.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_engineering_manager_stance.md
+  - domain-personal-development/prompts/identity/identity_engineering_manager_stance.md
 ---
 
 # Roadmap for Turning Domain Experts into Builders

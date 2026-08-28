@@ -18,7 +18,7 @@ updated: "2026-06-21"
 related_prompts:
   - domain-personal-development/prompts/solo-dev/solo_dev_automation_audit.md
   - domain-personal-development/prompts/solo-dev/solo_dev_burnout_prevention.md
-  - domain-personal-development/prompts/productivity/productivity_personal_energy_audit.md
+  - domain-productivity/deep-work/deepwork_personal_energy_audit.md
 ---
 
 # Solo Developer Context Switching Reducer
@@ -189,6 +189,6 @@ Before delivering the schedule, confirm each of the following:
 
 - [solo_dev_automation_audit.md](../solo-dev/solo_dev_automation_audit.md) — Eliminate switch-inducing tasks entirely rather than just scheduling them.
 - [solo_dev_burnout_prevention.md](../solo-dev/solo_dev_burnout_prevention.md) — Constant switching is a structural burnout source; pair the two.
-- [productivity_personal_energy_audit.md](../productivity/productivity_personal_energy_audit.md) — Identify peak-energy windows to anchor deep-work blocks.
+- [domain-productivity/deep-work/deepwork_personal_energy_audit.md](../../../domain-productivity/deep-work/deepwork_personal_energy_audit.md) — Identify peak-energy windows to anchor deep-work blocks.
 
 > For team-level focus norms and meeting reduction, see `domain-productivity/deep-work/`. This prompt is scoped to a *solo* operator's day.

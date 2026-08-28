@@ -20,7 +20,7 @@ updated: "2026-05-12"
 related_prompts:
   - domain-productivity/workplace/work_follow_up_email_drafter.md
   - domain-productivity/reviews/reviews_weekly_systems_review.md
-  - domain-professional-communication/prompts/product_delivery_sprint_planner.md
+  - domain-product-management/prompts/product_delivery_sprint_planner.md
   - domain-productivity/workplace/work_meeting_agenda_builder.md
 ---
 

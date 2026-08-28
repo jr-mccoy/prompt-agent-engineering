@@ -1,3 +1,26 @@
+---
+title: "API Design Review & Standards Compliance"
+category: engineering-workflows/workflows
+description: "Review an API specification against standards, scalability, and developer experience, flag breaking changes with a migration path, and return an approval status with conditions."
+techniques:
+  - ST-01
+  - ST-02
+  - CM-01
+  - DS-06
+  - QA-04
+difficulty: intermediate
+tags:
+  - api-review
+  - standards-compliance
+  - breaking-changes
+  - developer-experience
+  - approval-gate
+updated: "2026-08-28"
+related_prompts:
+  - domain-software-engineering/api/api_rest_design_review.md
+  - domain-software-engineering/api/api_design_workflow_guide.md
+---
+
 # API Design Review & Standards Compliance
 
 **Source:** WORKFLOW_DRIVEN_PROMPTS.md

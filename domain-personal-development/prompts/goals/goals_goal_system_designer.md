@@ -22,7 +22,7 @@ related_prompts:
   - domain-personal-development/prompts/goals/goals_goal_setting_and_reflection_loop.md
   - domain-personal-development/prompts/goals/goals_skill_breakdown_blueprint.md
   - domain-personal-development/prompts/agency/agency_project_ownership_converter.md
-  - domain-personal-development/prompts/productivity/productivity_personal_energy_audit.md
+  - domain-productivity/deep-work/deepwork_personal_energy_audit.md
 ---
 
 # Goal System Designer
@@ -35,6 +35,10 @@ related_prompts:
 - Use when: you're doing quarterly planning, current goals aren't driving action, or past goals fizzled and you want a different structure.
 - **Use this over its sibling `goals_goal_setting_and_reflection_loop.md` when** you are building the system for the first time (raw aspirations → structured system). Use the reflection loop instead once the system already exists and you only need to review/adjust it on a cadence.
 - Don't use when: the goal is really a single skill to learn — route to `goals_skill_breakdown_blueprint.md`.
+- Don't use when: you're planning a fixed-scope delivery project with known work items — route to `domain-engineering-workflows/workflows/engineering_delivery_sprint_planner.md`.
+- Don't use when: you need deep identity or values work rather than a tracking system — route to `domain-personal-development/prompts/identity/identity_values_clarification.md`.
+
+**Audience:** An individual, or a team lead, designing a goal-tracking system for a quarter.
 
 ---
 
@@ -171,4 +175,4 @@ Before delivering the goal system, confirm each of these. If any fails, fix it b
 - [goals_goal_setting_and_reflection_loop.md](../goals/goals_goal_setting_and_reflection_loop.md) — Sibling: the ongoing review/adjust loop for the system this prompt builds.
 - [goals_skill_breakdown_blueprint.md](../goals/goals_skill_breakdown_blueprint.md) — Break skill-based goals into learnable sub-skills.
 - [agency_project_ownership_converter.md](../agency/agency_project_ownership_converter.md) — Convert goals into controllable, owned projects.
-- [productivity_personal_energy_audit.md](../productivity/productivity_personal_energy_audit.md) — Optimize *when* you work on goals.
+- [domain-productivity/deep-work/deepwork_personal_energy_audit.md](../../../domain-productivity/deep-work/deepwork_personal_energy_audit.md) — Optimize *when* you work on goals.

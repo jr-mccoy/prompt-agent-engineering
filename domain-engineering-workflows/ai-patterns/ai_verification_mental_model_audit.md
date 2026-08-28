@@ -20,7 +20,7 @@ related_prompts:
   - domain-engineering-workflows/ai-patterns/ai_review_outcome_level_code_review.md
   - domain-engineering-workflows/ai-patterns/ai_review_failure_mode_premortem.md
   - domain-engineering-workflows/ai-patterns/ai_verification_understanding_decay_tracker.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_engineering_manager_stance.md
+  - domain-personal-development/prompts/identity/identity_engineering_manager_stance.md
 ---
 
 # Post-Build Mental-Model Audit

@@ -1,3 +1,26 @@
+---
+title: "Technical Debt Assessment & Prioritization"
+category: engineering-workflows/workflows
+description: "Inventory technical debt, score each item by business impact and remediation cost, and produce a three-tier remediation plan that fits a stated engineering capacity."
+techniques:
+  - ST-01
+  - ST-02
+  - CM-01
+  - DS-06
+  - QA-04
+difficulty: intermediate
+tags:
+  - technical-debt
+  - prioritization
+  - remediation
+  - capacity-planning
+  - roadmap
+updated: "2026-08-28"
+related_prompts:
+  - domain-engineering-workflows/workflows/engineering_delivery_sprint_planner.md
+  - domain-software-engineering/analysis/evolution/evolution_technical_debt_estimation.md
+---
+
 # Technical Debt Assessment & Prioritization
 
 **Source:** WORKFLOW_DRIVEN_PROMPTS.md

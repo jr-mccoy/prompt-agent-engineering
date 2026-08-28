@@ -16,8 +16,8 @@ tags:
   - codebase-evaluation
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/competitive_positioning_map.md
-  - domain-business-strategy/analysis/business_impact_analysis.md
+  - domain-software-engineering/analysis/business/competitive_positioning_map.md
+  - domain-software-engineering/analysis/business/business_impact_analysis.md
   - domain-software-engineering/analysis/architecture/architecture_layer_identification.md
 ---
 
@@ -251,6 +251,6 @@ for (const order of orders) {
 ## Related Prompts
 
 - [competitive_positioning_map.md](../stage-3-market-research/competitive_positioning_map.md) - Map competitive landscape
-- [business_impact_analysis.md](../../domain-business-strategy/analysis/business_impact_analysis.md) - Quantify business impact of technical decisions
+- [business_impact_analysis.md](../../domain-software-engineering/analysis/business/business_impact_analysis.md) - Quantify business impact of technical decisions
 - [architecture_layer_identification.md](../../domain-software-engineering/analysis/architecture/architecture_layer_identification.md) - Deep dive on architecture strengths/weaknesses
 - [evolution_technical_debt_estimation.md](../../domain-software-engineering/analysis/evolution/evolution_technical_debt_estimation.md) - Quantify technical debt for Weaknesses section

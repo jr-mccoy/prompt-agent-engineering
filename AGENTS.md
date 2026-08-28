@@ -44,7 +44,7 @@ Create a **prompt** when it’s one-off, simple, and task-specific without exter
 - Image generation → `domain-image-generation/`
 - Prompt improvement/meta work → `domain-prompt-engineering/`
 - Parenting → `domain-parenting/`
-- Professional communication → `domain-professional-communication/`
+- Professional communication → `domain-product-management/`
 
 ## Operating Rules (Token & Workflow Efficiency)
 1. Don’t re-read files already read unless changed or a new section is required.

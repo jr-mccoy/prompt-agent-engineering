@@ -21,7 +21,7 @@ related_prompts:
   - domain-productivity/workplace/work_1on1_prep.md
   - domain-productivity/workplace/work_deadline_juggler.md
   - domain-personal-development/prompts/agency/agency_next_action_spec.md
-  - domain-professional-communication/prompts/product_delivery_sprint_planner.md
+  - domain-product-management/prompts/product_delivery_sprint_planner.md
 ---
 
 # Task Delegation Spec

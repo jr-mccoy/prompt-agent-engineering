@@ -592,7 +592,7 @@ For detecting a 50% relative improvement:
 - `monetization_subscription_design.md` — Design the subscription tiers and pricing the paywall will sell
 - `monetization_pricing_strategy.md` — Deep dive into optimal pricing and regional pricing
 - `monetization_revenue_analytics.md` — Track paywall funnel metrics and conversion rates
-- `monetization_play_billing_implementation.md` — Implement the purchase flow the paywall triggers
+- `domain-software-engineering/mobile/android/implementation/android_play_billing_implementation.md` — Implement the purchase flow the paywall triggers
 - `monetization_model_selector.md` — Choose the right monetization model before designing the paywall
 
 ---

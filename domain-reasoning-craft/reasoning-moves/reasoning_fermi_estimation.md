@@ -30,7 +30,7 @@ reasoning:
   mode: [forecast, audit]
 related_prompts:
   - domain-reasoning-craft/reasoning-moves/reasoning_reference_class_forecast.md
-  - domain-professional-communication/prompts/product_market_size_calculator.md
+  - domain-product-management/prompts/product_market_size_calculator.md
   - domain-reasoning-craft/forecasting/forecasting_super_forecaster_decomposition.md
 ---
 

@@ -95,7 +95,7 @@ domain-decision-making/          (~28 prompts)
 ### Professional Communication
 
 ```
-domain-professional-communication/ (~29 prompts)
+domain-product-management/ (~29 prompts)
 ├── prompts/                    # PRDs, market sizing, stakeholder updates
 └── design/                     # Design-related prompts
 

@@ -522,7 +522,7 @@ fun calculateVersionCode(): Int {
 - `play_store_pre_launch_checklist.md` - Pre-launch requirements (CI/CD helps automate many of these)
 - `android_target_sdk_migration.md` - SDK migration that CI/CD validates
 - `firebase_cloud_functions_design.md` - Cloud Functions deployment automation
-- `solo_dev_weekly_operating_rhythm.md` - CI/CD frees time in the weekly schedule
+- `domain-productivity/reviews/reviews_solo_dev_weekly_operating_rhythm.md` - CI/CD frees time in the weekly schedule
 - `devops_cicd_pipeline_analysis.md` - General CI/CD pipeline analysis
 
 ---

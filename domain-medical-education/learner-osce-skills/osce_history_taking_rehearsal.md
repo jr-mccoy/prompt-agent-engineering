@@ -136,6 +136,15 @@ Single highest-yield improvement: [...]
 | `language_barrier` | SP speaks limited English; learner must work with interpreter or simplified language |
 | `coaching_after` | Whether to add the coaching paragraph |
 
+## Discipline-Specific Anchors
+
+- **Medicine / PA:** focus on HPI depth, pertinent positives/negatives, social determinants, ICE
+- **Nursing:** focus on functional assessment, patient priorities, pain assessment, safety screen, teaching readiness
+- **Pharmacy:** focus on medication history accuracy (name, dose, route, frequency, indication), adherence, side effects experienced, OTCs and supplements, allergies, alcohol
+- **EMS:** SAMPLE + OPQRST, scene safety, witness/bystander history, time-critical recognition
+- **Allied health:** functional history relevant to the role (ADLs for OT, gait/falls for PT, swallow/communication for SLP, diet recall for RD)
+- **Dental:** chief complaint, dental history, medical conditions affecting dental care, medications including bisphosphonates and anticoagulants, allergies including latex and local anesthetic agents
+
 ## Verification Checklist
 
 - [ ] SP stayed in character through entire encounter; no coaching breaks.

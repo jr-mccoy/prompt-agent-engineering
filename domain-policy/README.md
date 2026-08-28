@@ -15,7 +15,7 @@ The current prompt is a documentation instrument — it communicates analysis al
 
 - **The "policy" is internal operations, not public policy** → `domain-decision-making/documentation/decisiondoc_options_memo.md`.
 - **The recommendation is binary (do / don't)** → a simpler decision memo from `domain-decision-making/documentation/`.
-- **Persuasion is the goal rather than auditable analysis** → `domain-professional-communication/` or `domain-professional-writing/`.
+- **Persuasion is the goal rather than auditable analysis** → `domain-product-management/` or `domain-professional-writing/`.
 - **Regulatory risk monitoring for a business** → `domain-decision-making/decisioning_regulatory_risk_radar.md`.
 
 ## Prompts in this domain

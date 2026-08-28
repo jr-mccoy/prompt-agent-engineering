@@ -4831,7 +4831,7 @@ logging:
 - `project-management/project_manager_senior.md` - Spec-to-task conversion
 
 ### Non-Engineering Prompts
-**Location:** Distributed across `domain-decision-making/`, `domain-professional-communication/`, `domain-professional-writing/`, `domain-personal-development/`, `domain-research-academic/`, and related domain directories.
+**Location:** Distributed across `domain-decision-making/`, `domain-product-management/`, `domain-professional-writing/`, `domain-personal-development/`, `domain-research-academic/`, and related domain directories.
 **Primary Techniques:** NE-01 through NE-12 (all non-engineering techniques)
 **Current canonical exemplars:**
 - `work_better_skill_breakdown_blueprint.md` - Skill decomposition framework

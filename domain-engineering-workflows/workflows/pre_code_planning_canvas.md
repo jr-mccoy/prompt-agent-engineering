@@ -17,7 +17,7 @@ tags:
   - architecture-sketch
 updated: "2026-06-07"
 related_prompts:
-  - domain-professional-communication/prompts/product_planning_coding_roadmap.md
+  - domain-product-management/prompts/product_planning_coding_roadmap.md
   - domain-engineering-workflows/workflows/engineering_delivery_sprint_planner.md
   - domain-engineering-workflows/workflows/engineering_debugging_root_cause.md
 ---
@@ -35,7 +35,7 @@ related_prompts:
 **When NOT to use:**
 - The change is trivial and fully understood (a typo, a copy tweak, a one-line config flip) — the canvas is overhead.
 - You need a *team-facing* artifact with stakeholders, milestones, and estimates — use a PRD or the sprint planner ([engineering_delivery_sprint_planner.md](engineering_delivery_sprint_planner.md)) instead. This canvas is personal-scale and fits on one page.
-- You need a multi-week roadmap across many features — use [product_planning_coding_roadmap.md](../../domain-professional-communication/prompts/product_planning_coding_roadmap.md), the heavier sibling to this prompt.
+- You need a multi-week roadmap across many features — use [product_planning_coding_roadmap.md](../../domain-product-management/prompts/product_planning_coding_roadmap.md), the heavier sibling to this prompt.
 
 ---
 

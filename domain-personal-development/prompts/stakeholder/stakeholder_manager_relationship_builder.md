@@ -28,7 +28,7 @@ related_prompts:
 
 **Objective:** Determine the real trust state of one manager relationship, pinpoint the specific misfires that shaped it, and produce one calibrated relationship-building move — repair if trust is damaged, deepen if it's merely functional.
 
-**When to use:** A specific manager relationship feels stuck, cool, or strained; you sense you've lost ground and don't know exactly where; or the relationship is fine but shallow and you want it to carry more weight before review season or a stretch ask. Not for a general "how's my career" audit — use `career-transformation/`. Not for drafting the repair conversation itself — use `domain-professional-communication/` or `domain-negotiation/difficult-conversations/`.
+**When to use:** A specific manager relationship feels stuck, cool, or strained; you sense you've lost ground and don't know exactly where; or the relationship is fine but shallow and you want it to carry more weight before review season or a stretch ask. Not for a general "how's my career" audit — use `career-transformation/`. Not for drafting the repair conversation itself — use `domain-product-management/` or `domain-negotiation/difficult-conversations/`.
 
 **Audience:** An individual working on their own relationship with their own manager. Not for coaching someone else's relationship, not clinical. If the strain involves harassment, discrimination, or a pattern that's affecting your health, this prompt is out of scope — route to HR, and to `domain-psychology/` and professional support.
 

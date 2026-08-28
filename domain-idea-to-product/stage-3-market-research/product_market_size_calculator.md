@@ -18,9 +18,9 @@ tags:
   - estimation
 updated: "2026-04-23"
 related_prompts:
-  - domain-professional-communication/prompts/product_create_prd.md
+  - domain-product-management/prompts/product_create_prd.md
   - domain-business-strategy/research/research_competitive_landscape.md
-  - domain-business-strategy/analysis/business_model_canvas_analysis.md
+  - domain-software-engineering/analysis/business/business_model_canvas_analysis.md
 ---
 
 # Market Size (TAM/SAM/SOM) — Rapid or Comprehensive Mode

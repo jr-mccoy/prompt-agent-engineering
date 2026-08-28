@@ -18,10 +18,10 @@ tags:
   - product-development
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/value_proposition_canvas_analysis.md
-  - domain-business-strategy/analysis/product_market_fit_analysis.md
-  - domain-business-strategy/analysis/kano_model_analysis.md
-  - domain-business-strategy/analysis/customer_journey_map_analysis.md
+  - domain-software-engineering/analysis/business/value_proposition_canvas_analysis.md
+  - domain-software-engineering/analysis/business/product_market_fit_analysis.md
+  - domain-software-engineering/analysis/business/kano_model_analysis.md
+  - domain-software-engineering/analysis/business/customer_journey_map_analysis.md
 ---
 
 # Jobs to be Done (JTBD) Analysis for Codebase
@@ -488,5 +488,5 @@ FORCES RESISTING CHANGE:
 
 - [Value Proposition Canvas Analysis](value_proposition_canvas_analysis.md) - Maps jobs to product value delivery
 - [Product-Market Fit Analysis](product_market_fit_analysis.md) - Evaluates how well product serves jobs
-- [Kano Model Analysis](../../domain-business-strategy/analysis/kano_model_analysis.md) - Feature categorization by job importance
-- [Customer Journey Map Analysis](../../domain-business-strategy/analysis/customer_journey_map_analysis.md) - Jobs across the customer lifecycle
+- [Kano Model Analysis](../../domain-software-engineering/analysis/business/kano_model_analysis.md) - Feature categorization by job importance
+- [Customer Journey Map Analysis](../../domain-software-engineering/analysis/business/customer_journey_map_analysis.md) - Jobs across the customer lifecycle

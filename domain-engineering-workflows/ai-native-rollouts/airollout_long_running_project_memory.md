@@ -18,7 +18,7 @@ tags:
   - context-management
 updated: "2026-04-21"
 related_prompts:
-  - domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md
+  - domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md
   - domain-engineering-workflows/ai-native-rollouts/airollout_delegate_like_parallel_coworker.md
   - domain-engineering-workflows/ai-native-rollouts/airollout_ship_without_writing_code.md
   - domain-prompt-engineering/skill-development/promptcraft_personal_context_document.md

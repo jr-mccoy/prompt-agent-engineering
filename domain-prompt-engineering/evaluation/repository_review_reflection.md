@@ -38,7 +38,7 @@ prompting-guides/
 ├── domain-decision-making/         # Decision frameworks (~19)
 ├── domain-advertising/             # Industry-specific advertising (~18)
 ├── domain-professional-writing/    # Professional domain guides (~44)
-├── domain-professional-communication/ # PRDs, stakeholder updates (~29)
+├── domain-product-management/ # PRDs, stakeholder updates (~29)
 ├── domain-personal-development/    # Goals, habits, career (~26)
 ├── domain-healthcare-clinical/     # Clinical decision support (~17)
 ├── domain-learning-coding/         # Coding education (~17)

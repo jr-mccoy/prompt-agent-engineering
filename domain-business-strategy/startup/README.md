@@ -130,7 +130,7 @@ These prompts leverage techniques from the repository's [Master Technique Index]
 
 - [Business Analysis](../analysis/) - Strategic analysis frameworks
 - [Agentic Resources](../../domain-agentic-resources/) - AI agent resources
-- [Professional Communication](../../domain-professional-communication/) - Product and business prompts
+- [Professional Communication](../../domain-product-management/) - Product and business prompts
 
 ---
 

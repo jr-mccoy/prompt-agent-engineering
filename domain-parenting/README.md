@@ -232,7 +232,7 @@ The library will expand in waves; current state is Wave 1.
 - **Teacher-side of the school conversation:** `domain-education-teaching/`.
 - **Clinical reasoning:** `domain-healthcare-clinical/`.
 - **Personal development / parent self-care:** `domain-personal-development/`.
-- **Hard-conversation communication (general):** `domain-professional-communication/`.
+- **Hard-conversation communication (general):** `domain-product-management/`.
 - **Psychology / therapy / behavioral health:** `domain-psychology/`.
 
 ---

@@ -17,14 +17,14 @@ Prompts for software engineering workflows including debugging, planning, design
 | `engineering_enhanced_postmortem_blueprint_with_root_cause_audit.md` | Comprehensive post-mortem template |
 | `engineering_delivery_sprint_planner.md` | Sprint planning and estimation |
 | `engineering_pre_code_planning_canvas.md` | Pre-implementation planning |
-| `engineering_goal_system_designer.md` | Design goal-tracking systems |
+| `domain-personal-development/prompts/goals/goals_goal_system_designer.md` | Design goal-tracking systems |
 | `engineering_data_schema_draft.md` | Draft data schemas |
-| `engineering_teach_me_to_code.md` | Code learning assistance |
+| `domain-learning-coding/learning_teach_me_to_code_workflow.md` | Code learning assistance |
 | `engineering_prompt_improver.md` | Improve existing prompts |
 | `engineering_visual_design_direction_finder.md` | UI/UX direction guidance |
-| `engineering_stakeholder_navigation_guide.md` | Navigate stakeholder dynamics |
+| `domain-personal-development/prompts/stakeholder/stakeholder_navigation_guide.md` | Navigate stakeholder dynamics |
 | `engineering_hidden_meeting_pattern_detector_zombie_calendar.md` | Identify meeting inefficiencies |
-| `engineering_24_hour_leader_pulse.md` | Daily leadership check-in |
+| `domain-business-strategy/research/research_24_hour_leader_pulse.md` | Daily leadership check-in |
 | `CODING_PROBLEMS_CATALOG.md` | Catalog of coding challenges |
 | `TODO_APP_UI_POLISH_IMPLEMENTATION_PLAN.md` | UI polish planning example |
 
@@ -44,19 +44,19 @@ Prompts for software engineering workflows including debugging, planning, design
 ### Planning & Estimation
 - `engineering_delivery_sprint_planner.md` - Sprint planning
 - `engineering_pre_code_planning_canvas.md` - Pre-coding analysis
-- `engineering_goal_system_designer.md` - Goal system design
+- `domain-personal-development/prompts/goals/goals_goal_system_designer.md` - Goal system design
 
 ### Design & Architecture
 - `engineering_data_schema_draft.md` - Data modeling
 - `engineering_visual_design_direction_finder.md` - UI direction
 
 ### Team & Process
-- `engineering_stakeholder_navigation_guide.md` - Stakeholder management
+- `domain-personal-development/prompts/stakeholder/stakeholder_navigation_guide.md` - Stakeholder management
 - `engineering_hidden_meeting_pattern_detector_zombie_calendar.md` - Meeting optimization
-- `engineering_24_hour_leader_pulse.md` - Leadership pulse check
+- `domain-business-strategy/research/research_24_hour_leader_pulse.md` - Leadership pulse check
 
 ### Learning & Improvement
-- `engineering_teach_me_to_code.md` - Learning assistance
+- `domain-learning-coding/learning_teach_me_to_code_workflow.md` - Learning assistance
 - `engineering_prompt_improver.md` - Prompt optimization
 
 ---
@@ -71,7 +71,7 @@ Prompts for software engineering workflows including debugging, planning, design
 
 **"Design data model"** → `engineering_data_schema_draft.md`
 
-**"Navigate stakeholders"** → `engineering_stakeholder_navigation_guide.md`
+**"Navigate stakeholders"** → `domain-personal-development/prompts/stakeholder/stakeholder_navigation_guide.md`
 
 **"Too many meetings"** → `engineering_hidden_meeting_pattern_detector_zombie_calendar.md`
 

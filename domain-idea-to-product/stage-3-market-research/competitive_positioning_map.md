@@ -18,10 +18,10 @@ tags:
   - visualization
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/blue_ocean_strategy_analysis.md
-  - domain-business-strategy/analysis/porters_five_forces_analysis.md
-  - domain-business-strategy/analysis/swot_analysis.md
-  - domain-business-strategy/analysis/value_proposition_canvas_analysis.md
+  - domain-software-engineering/analysis/business/blue_ocean_strategy_analysis.md
+  - domain-software-engineering/analysis/business/porters_five_forces_analysis.md
+  - domain-software-engineering/analysis/business/swot_analysis.md
+  - domain-software-engineering/analysis/business/value_proposition_canvas_analysis.md
 ---
 
 # Competitive Positioning Map for Codebase

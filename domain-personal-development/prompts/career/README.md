@@ -28,23 +28,23 @@ Paste any assessment into a conversation with an AI assistant (Claude, ChatGPT, 
 
 | # | Career Path | File | Entry Barrier |
 |---|------------|------|---------------|
-| 1 | ML Engineering | [career_assessment_ml_engineering.md](career_assessment_ml_engineering.md) | High |
-| 2 | AI Prompt Engineering | [career_assessment_ai_prompt_engineering.md](career_assessment_ai_prompt_engineering.md) | Low-Medium |
-| 3 | AI Ethics Officer | [career_assessment_ai_ethics_officer.md](career_assessment_ai_ethics_officer.md) | Medium-High |
-| 4 | AI Product Management | [career_assessment_ai_product_management.md](career_assessment_ai_product_management.md) | Medium-High |
-| 5 | AI Data Annotator / Trainer | [career_assessment_ai_data_annotator.md](career_assessment_ai_data_annotator.md) | Low |
-| 6 | Computer Vision Engineering | [career_assessment_computer_vision.md](career_assessment_computer_vision.md) | High |
-| 7 | NLP Engineering | [career_assessment_nlp_engineering.md](career_assessment_nlp_engineering.md) | High |
-| 8 | AI Research Scientist | [career_assessment_ai_research_scientist.md](career_assessment_ai_research_scientist.md) | Very High |
-| 9 | Deep Learning Engineering | [career_assessment_deep_learning.md](career_assessment_deep_learning.md) | High |
-| 10 | AI Content Creator | [career_assessment_ai_content_creator.md](career_assessment_ai_content_creator.md) | Low-Medium |
-| 11 | AI Governance | [career_assessment_ai_governance.md](career_assessment_ai_governance.md) | Medium-High |
-| 12 | AI Coach | [career_assessment_ai_coach.md](career_assessment_ai_coach.md) | Medium |
-| 13 | AI Strategist | [career_assessment_ai_strategist.md](career_assessment_ai_strategist.md) | High |
-| 14 | AI Change Management | [career_assessment_ai_change_management.md](career_assessment_ai_change_management.md) | Medium |
-| 15 | AI Compliance | [career_assessment_ai_compliance.md](career_assessment_ai_compliance.md) | Medium-High |
-| 16 | Conversational AI & UX Designer | [career_assessment_conversational_ai_ux.md](career_assessment_conversational_ai_ux.md) | Medium |
-| 17 | AI Product Adoption & CS | [career_assessment_ai_product_adoption.md](career_assessment_ai_product_adoption.md) | Medium |
+| 1 | ML Engineering | [career_ml_engineering.md](career_ml_engineering.md) | High |
+| 2 | AI Prompt Engineering | [career_ai_prompt_engineering.md](career_ai_prompt_engineering.md) | Low-Medium |
+| 3 | AI Ethics Officer | [career_ai_ethics_officer.md](career_ai_ethics_officer.md) | Medium-High |
+| 4 | AI Product Management | [career_ai_product_management.md](career_ai_product_management.md) | Medium-High |
+| 5 | AI Data Annotator / Trainer | [career_ai_data_annotator_trainer.md](career_ai_data_annotator_trainer.md) | Low |
+| 6 | Computer Vision Engineering | [career_computer_vision_engineering.md](career_computer_vision_engineering.md) | High |
+| 7 | NLP Engineering | [career_nlp_engineering.md](career_nlp_engineering.md) | High |
+| 8 | AI Research Scientist | [career_ai_research_scientist.md](career_ai_research_scientist.md) | Very High |
+| 9 | Deep Learning Engineering | [career_deep_learning_engineering.md](career_deep_learning_engineering.md) | High |
+| 10 | AI Content Creator | [career_ai_content_creator.md](career_ai_content_creator.md) | Low-Medium |
+| 11 | AI Governance | [career_ai_governance.md](career_ai_governance.md) | Medium-High |
+| 12 | AI Coach | [career_ai_coach.md](career_ai_coach.md) | Medium |
+| 13 | AI Strategist | [career_ai_strategist.md](career_ai_strategist.md) | High |
+| 14 | AI Change Management | [career_ai_change_management.md](career_ai_change_management.md) | Medium |
+| 15 | AI Compliance | [career_ai_compliance.md](career_ai_compliance.md) | Medium-High |
+| 16 | Conversational AI & UX Designer | [career_conversational_ai_ux.md](career_conversational_ai_ux.md) | Medium |
+| 17 | AI Product Adoption & CS | [career_product_adoption_cs.md](career_product_adoption_cs.md) | Medium |
 
 ## Choosing an Assessment
 

@@ -18,10 +18,10 @@ tags:
   - differentiation
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/competitive_positioning_map.md
-  - domain-business-strategy/analysis/value_proposition_canvas_analysis.md
-  - domain-business-strategy/analysis/porters_five_forces_analysis.md
-  - domain-business-strategy/analysis/ansoff_matrix_analysis.md
+  - domain-software-engineering/analysis/business/competitive_positioning_map.md
+  - domain-software-engineering/analysis/business/value_proposition_canvas_analysis.md
+  - domain-software-engineering/analysis/business/porters_five_forces_analysis.md
+  - domain-software-engineering/analysis/business/ansoff_matrix_analysis.md
 ---
 
 # Blue Ocean Strategy Analysis for Codebase
@@ -528,4 +528,4 @@ Before committing to full implementation:
 - [Competitive Positioning Map](competitive_positioning_map.md) - Visual competitive analysis foundation for Blue Ocean
 - [Value Proposition Canvas Analysis](../stage-2-problem-validation/value_proposition_canvas_analysis.md) - Deep dive on customer value alignment
 - [Porter's Five Forces Analysis](porters_five_forces_analysis.md) - Red ocean industry structure analysis
-- [Ansoff Matrix Analysis](../../domain-business-strategy/analysis/ansoff_matrix_analysis.md) - Growth strategy alternatives to Blue Ocean
+- [Ansoff Matrix Analysis](../../domain-software-engineering/analysis/business/ansoff_matrix_analysis.md) - Growth strategy alternatives to Blue Ocean

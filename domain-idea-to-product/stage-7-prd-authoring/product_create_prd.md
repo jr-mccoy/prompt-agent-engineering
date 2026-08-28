@@ -19,10 +19,10 @@ tags:
   - stakeholder-alignment
 updated: "2026-04-23"
 related_prompts:
-  - domain-professional-communication/prompts/product_rigorous_prd_evaluation_and_scoring.md
-  - domain-professional-communication/prompts/product_delivery_sprint_planner.md
-  - domain-professional-communication/prompts/product_market_size_calculator.md
-  - domain-professional-communication/templates/prd_template.md
+  - domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md
+  - domain-product-management/prompts/product_delivery_sprint_planner.md
+  - domain-product-management/prompts/product_market_size_calculator.md
+  - domain-product-management/templates/prd_template.md
 ---
 
 # Create a PRD via Interrogation (MVP-First)

@@ -688,11 +688,11 @@ Set up Google Play Console notifications for new reviews. Check reviews at least
 
 ## Related Prompts
 
-- `solo_dev_weekly_operating_rhythm.md` — Scheduling support batch time in your weekly rhythm
+- `domain-productivity/reviews/reviews_solo_dev_weekly_operating_rhythm.md` — Scheduling support batch time in your weekly rhythm
 - `solo_dev_metrics_dashboard.md` — Tracking support volume and response time as business metrics
 - `solo_dev_decision_framework.md` — Deciding when to invest in support tools vs. development time
 - `solo_dev_contractor_management.md` — Hiring a part-time support contractor when volume justifies it
-- `solo_dev_roadmap_planner.md` — Incorporating support-driven feature requests into your roadmap
+- `domain-engineering-workflows/workflows/engineering_solo_dev_roadmap_planner.md` — Incorporating support-driven feature requests into your roadmap
 
 ---
 

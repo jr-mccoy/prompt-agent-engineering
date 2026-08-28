@@ -8,7 +8,7 @@ This is the human-operations layer, not the software layer. It designs roles, in
 review cadence, and mentor supply. Product and platform design (PRDs, matching algorithms, onboarding
 UX, terms of service) is deliberately out of scope and routes to
 [`domain-idea-to-product/`](../../domain-idea-to-product/),
-[`domain-professional-communication/`](../../domain-professional-communication/), and
+[`domain-product-management/`](../../domain-product-management/), and
 [`domain-legal/`](../../domain-legal/).
 
 [`discipleship_safeguarding_and_conduct_policy.md`](discipleship_safeguarding_and_conduct_policy.md)

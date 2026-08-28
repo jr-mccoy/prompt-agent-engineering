@@ -10,7 +10,7 @@ Programme-level curriculum architecture: maps, scope and sequence for K-12, high
 
 - **Planning a single unit or lesson** → [`../../instructor/lesson-planning/`](../../instructor/lesson-planning/)
 - **Defining what graduates should be able to do** → [`../outcomes-assessment/`](../outcomes-assessment/)
-- **Health-professions curriculum** → [`../../../domain-healthcare-clinical/prompts/medical-education/curriculum-design/`](../../../domain-healthcare-clinical/prompts/medical-education/curriculum-design/)
+- **Health-professions curriculum** → [`../../../domain-medical-education/educator-curriculum-design/`](../../../domain-medical-education/educator-curriculum-design/)
 
 ## Prompts
 

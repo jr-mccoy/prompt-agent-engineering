@@ -28,7 +28,7 @@ related_prompts:
 
 **Objective:** Turn scattered observations of your manager into a concrete model of what they prioritize, what pressures they're under, how they process information, and what they reward — then produce one specific change to how you surface your work.
 
-**When to use:** You keep getting surprised by your manager's reactions; your good work isn't landing the way you expect; you have a new manager and want to calibrate fast; or reviews feel misaligned with what you thought mattered. Not for drafting the actual update or message — that's `domain-professional-communication/`. Not for a broken-trust repair — use `stakeholder_manager_relationship_builder.md`.
+**When to use:** You keep getting surprised by your manager's reactions; your good work isn't landing the way you expect; you have a new manager and want to calibrate fast; or reviews feel misaligned with what you thought mattered. Not for drafting the actual update or message — that's `domain-product-management/`. Not for a broken-trust repair — use `stakeholder_manager_relationship_builder.md`.
 
 **Audience:** An individual calibrating to their own manager for their own effectiveness. Not for managing someone below you, not for HR assessment, not clinical. If the relationship is a source of persistent anxiety or dread rather than friction, that is not a managing-up problem — see `domain-psychology/` and a licensed professional.
 

@@ -22,7 +22,7 @@ related_prompts:
   - domain-engineering-workflows/ai-native-rollouts/airollout_long_running_project_memory.md
   - domain-engineering-workflows/ai-patterns/ai_pattern_agent_task_first_delegation_spec.md
   - domain-engineering-workflows/ai-patterns/ai_pattern_intent_and_verification_first.md
-  - domain-business-strategy/chief-of-staff/cos_specify_subagent_task.md
+  - domain-productivity/operating-cadence/cos_specify_subagent_task.md
 ---
 
 # Delegate to AI the Way You'd Delegate to a Parallel Coworker

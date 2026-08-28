@@ -20,7 +20,7 @@ related_prompts:
   - domain-prompt-engineering/skill-development/promptcraft_rewrite_vague_ask.md
   - domain-prompt-engineering/skill-development/promptcraft_specification_defines_done.md
   - domain-prompt-engineering/goal-orientation/goalorientation_right_problem_diagnostic.md
-  - domain-business-strategy/chief-of-staff/cos_clarify_fuzzy_goals.md
+  - domain-productivity/operating-cadence/cos_clarify_fuzzy_goals.md
 ---
 
 # Pre-AI Thinking Exercise Captured Off-Screen Before Opening a Chat

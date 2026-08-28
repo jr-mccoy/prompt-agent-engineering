@@ -19,7 +19,7 @@ updated: "2026-03-25"
 related_prompts:
   - domain-software-engineering/analysis/quality/quality_code_documentation_coverage_analysis.md
   - domain-engineering-workflows/ai-patterns/workflow_agent_footgun_detector.md
-  - domain-engineering-workflows/improvement/improvement_refactoring.md
+  - domain-software-engineering/improvement/improvement_refactoring.md
 ---
 
 # AI Comment Narration Cleanup

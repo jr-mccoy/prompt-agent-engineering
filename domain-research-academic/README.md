@@ -32,7 +32,7 @@ Route to this domain when the request mentions:
 ### Out of Scope
 
 - **Clinical research specifics** - Trial design, medical studies → domain-healthcare-clinical
-- **Market research** - Business analysis → domain-professional-communication
+- **Market research** - Business analysis → domain-product-management
 - **Creative writing** - Fiction, essays → domain-creative-writing
 - **Educational curriculum** - Teaching materials → domain-education-teaching
 

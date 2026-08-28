@@ -43,7 +43,7 @@ passage worked, this domain names the passage by address and hands off.
   not a lay mentor.
 - **You're building the software platform** (PRD, onboarding flows, matching algorithm, terms of
   service) → [`domain-idea-to-product/`](../domain-idea-to-product/),
-  [`domain-professional-communication/`](../domain-professional-communication/),
+  [`domain-product-management/`](../domain-product-management/),
   [`domain-legal/`](../domain-legal/)
 - **You want general secular curriculum or learning-design machinery** →
   [`domain-education-teaching/program/curriculum-design/`](../domain-education-teaching/program/curriculum-design/),

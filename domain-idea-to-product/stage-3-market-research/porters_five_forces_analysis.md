@@ -17,9 +17,9 @@ tags:
   - market-analysis
 updated: "2026-01-25"
 related_prompts:
-  - domain-business-strategy/analysis/competitive_positioning_map.md
-  - domain-business-strategy/analysis/swot_analysis.md
-  - domain-business-strategy/analysis/blue_ocean_strategy_analysis.md
+  - domain-software-engineering/analysis/business/competitive_positioning_map.md
+  - domain-software-engineering/analysis/business/swot_analysis.md
+  - domain-software-engineering/analysis/business/blue_ocean_strategy_analysis.md
 ---
 
 # Porter's Five Forces Analysis for Codebase
@@ -321,4 +321,4 @@ const automations = [
 - [swot_analysis.md](../stage-5-strategy-positioning/swot_analysis.md) - Internal strengths/weaknesses to complement external forces analysis
 - [blue_ocean_strategy_analysis.md](blue_ocean_strategy_analysis.md) - Finding uncontested market spaces
 - [business_model_canvas_analysis.md](../stage-4-business-model/business_model_canvas_analysis.md) - Understand how codebase supports business model
-- [value_chain_analysis.md](../../domain-business-strategy/analysis/value_chain_analysis.md) - Identify competitive advantages in value creation
+- [value_chain_analysis.md](../../domain-software-engineering/analysis/business/value_chain_analysis.md) - Identify competitive advantages in value creation

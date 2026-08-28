@@ -19,7 +19,7 @@ updated: "2026-06-07"
 related_prompts:
   - domain-professional-writing/business-writing/business_writing_executive_brief.md
   - domain-professional-writing/business-writing/business_writing_prd_document.md
-  - domain-business-strategy/analysis/business_model_canvas_analysis.md
+  - domain-software-engineering/analysis/business/business_model_canvas_analysis.md
 ---
 
 # Business Proposal Writer

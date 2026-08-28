@@ -21,7 +21,7 @@ related_prompts:
   - domain-decision-making/decisioning_first_principles_problem_decomposition.md
   - domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md
   - domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md
-  - domain-business-strategy/chief-of-staff/cos_weekly_review.md
+  - domain-productivity/operating-cadence/cos_weekly_review.md
 ---
 
 # Chained Decision Alignment Evaluator

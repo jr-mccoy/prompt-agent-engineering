@@ -20,7 +20,7 @@ updated: "2026-04-20"
 related_prompts:
   - domain-productivity/deep-work/deepwork_block_end_context_capture.md
   - domain-productivity/deep-work/deepwork_reload_ritual_design.md
-  - domain-business-strategy/organization/organization_project_status_summary.md
+  - domain-engineering-workflows/workflows/engineering_project_status_summary.md
 ---
 
 # Synthesize Project State From Multiple Sources for Reload

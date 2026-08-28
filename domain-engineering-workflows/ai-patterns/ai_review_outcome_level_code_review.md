@@ -20,7 +20,7 @@ related_prompts:
   - domain-engineering-workflows/ai-patterns/ai_pattern_verification_depth_calibrator.md
   - domain-engineering-workflows/ai-patterns/ai_review_failure_mode_premortem.md
   - domain-engineering-workflows/ai-patterns/ai_verification_mental_model_audit.md
-  - domain-engineering-workflows/ai-patterns/ai_pattern_engineering_manager_stance.md
+  - domain-personal-development/prompts/identity/identity_engineering_manager_stance.md
 ---
 
 # Outcome-Level Code Review for AI-Generated Diffs

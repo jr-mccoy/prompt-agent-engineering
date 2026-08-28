@@ -130,7 +130,7 @@ any future wave in these subdirectories should follow:
 | Generic habit design | `domain-personal-development/prompts/habits/` | Non-religious frame |
 | Burnout diagnosis and recovery | `domain-personal-development/prompts/agency/agency_burnout_recovery.md` | Our sustainability prompt is mentor-role-specific |
 | Therapy, trauma, clinical distress | `domain-psychology/` | Hard boundary — never handled here |
-| Software platform design, PRDs, matching algorithms, ToS | `domain-idea-to-product/`, `domain-professional-communication/`, `domain-legal/` | Out of scope by design |
+| Software platform design, PRDs, matching algorithms, ToS | `domain-idea-to-product/`, `domain-product-management/`, `domain-legal/` | Out of scope by design |
 | General difficult-conversation craft | `domain-negotiation/difficult-conversations/` | Secular, relationship-general |
 
 ---

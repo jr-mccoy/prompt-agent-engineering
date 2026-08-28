@@ -17,8 +17,8 @@ tags:
   - project-management
 updated: "2026-06-07"
 related_prompts:
-  - domain-engineering-workflows/workflows/engineering_goal_system_designer.md
-  - domain-engineering-workflows/workflows/engineering_stakeholder_navigation_guide.md
+  - domain-personal-development/prompts/goals/goals_goal_system_designer.md
+  - domain-personal-development/prompts/stakeholder/stakeholder_navigation_guide.md
   - domain-engineering-workflows/workflows/engineering_data_schema_draft.md
 ---
 
@@ -33,8 +33,8 @@ related_prompts:
 
 **When NOT to use:**
 - Open-ended backlog grooming with no fixed end date.
-- Personal/quarterly goal systems — use `engineering_goal_system_designer.md`.
-- Navigating multi-party political decisions — use `engineering_stakeholder_navigation_guide.md`.
+- Personal/quarterly goal systems — use `domain-personal-development/prompts/goals/goals_goal_system_designer.md`.
+- Navigating multi-party political decisions — use `domain-personal-development/prompts/stakeholder/stakeholder_navigation_guide.md`.
 
 **Audience:** Delivery managers, tech leads, and consultants planning a time-boxed project.
 
@@ -176,6 +176,6 @@ If capacity is clearly insufficient for the scope, say so and propose a cut or e
 
 ## Related Prompts
 
-- `domain-engineering-workflows/workflows/engineering_goal_system_designer.md` — Convert sprint goals into a tracked goal system.
-- `domain-engineering-workflows/workflows/engineering_stakeholder_navigation_guide.md` — Manage client/stakeholder dynamics around the plan.
+- `domain-personal-development/prompts/goals/goals_goal_system_designer.md` — Convert sprint goals into a tracked goal system.
+- `domain-personal-development/prompts/stakeholder/stakeholder_navigation_guide.md` — Manage client/stakeholder dynamics around the plan.
 - `domain-engineering-workflows/workflows/engineering_data_schema_draft.md` — Produce the technical artifacts a sprint delivers.

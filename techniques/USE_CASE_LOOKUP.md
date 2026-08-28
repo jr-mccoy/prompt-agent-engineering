@@ -207,8 +207,8 @@
 > **Fallback:** If the analysis lacks actionable insights, add DS-40 (Follow-Up Action Extraction) to force concrete next steps. If the analysis is too broad, add NE-09 (Scope Reduction Pressure) to focus on the 2-3 most impactful findings.
 
 **Example Prompts:**
-- `domain-business-strategy/analysis/swot_analysis.md`
-- `domain-business-strategy/analysis/business_model_canvas_analysis.md`
+- `domain-software-engineering/analysis/business/swot_analysis.md`
+- `domain-software-engineering/analysis/business/business_model_canvas_analysis.md`
 
 **Template Pattern:**
 ```
@@ -570,7 +570,7 @@ Based on the context provided, [Approach X] is recommended because:
 
 **Example Prompts:**
 - `domain-business-strategy/analysis/`
-- `domain-engineering-workflows/workflows/engineering_goal_system_designer.md`
+- `domain-personal-development/prompts/goals/goals_goal_system_designer.md`
 
 ---
 
@@ -643,7 +643,7 @@ Think through this step-by-step.
 
 **Example Prompts:**
 - `domain-software-engineering/analysis/performance/performance_code_optimization_suggestions.md`
-- `domain-engineering-workflows/improvement/improvement_refactoring.md`
+- `domain-software-engineering/improvement/improvement_refactoring.md`
 
 ---
 
@@ -1138,7 +1138,7 @@ Think through this step-by-step.
 > **Fallback:** If the communication is too long for the audience, add NE-05 (Token Budget) to control length. If it serves multiple audiences, add NE-14 (Multi-Audience Documentation Targeting) to layer for different reader needs.
 
 **Example Prompts:**
-- `domain-professional-communication/prompts/`
+- `domain-product-management/prompts/`
 
 ---
 

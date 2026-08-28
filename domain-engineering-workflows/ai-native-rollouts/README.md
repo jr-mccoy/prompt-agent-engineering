@@ -23,7 +23,7 @@ Prompts for the organizational work of rolling out AI tools and agentic workflow
 ## Cross-References
 
 - AI-augmented development at the individual-workflow level: [`../ai-patterns/`](../ai-patterns/)
-- Memory scaffolds at the personal / role level: [`../../domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md`](../../domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md)
+- Memory scaffolds at the personal / role level: [`../../domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md`](../../domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md)
 - Agent task design: [`../ai-patterns/ai_pattern_agent_task_first_delegation_spec.md`](../ai-patterns/ai_pattern_agent_task_first_delegation_spec.md)
 - Multi-agent architecture: [`../../domain-agentic-resources/commands/multi-agent/`](../../domain-agentic-resources/commands/multi-agent/)
 - AI strategy & capability compounding: [`../../domain-business-strategy/ai-strategy/`](../../domain-business-strategy/ai-strategy/)

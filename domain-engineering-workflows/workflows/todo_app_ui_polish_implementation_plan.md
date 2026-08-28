@@ -17,8 +17,8 @@ tags:
   - design-system
 updated: "2026-06-07"
 related_prompts:
-  - domain-engineering-workflows/tasks/task_sorting_kotlin_implementation_verifier.md
-  - domain-engineering-workflows/improvement/improvement_refactoring.md
+  - domain-software-engineering/analysis/feature-design/task_sorting_kotlin_implementation_verifier.md
+  - domain-software-engineering/improvement/improvement_refactoring.md
   - domain-engineering-workflows/workflows/debug_prompt.md
 ---
 
@@ -1070,6 +1070,6 @@ Priority Star:       #7C4DFF (keep existing purple)
 
 ## Related Prompts
 
-- `domain-engineering-workflows/tasks/task_sorting_kotlin_implementation_verifier.md` — Verify the Kotlin quality of the changes.
-- `domain-engineering-workflows/improvement/improvement_refactoring.md` — Refactor underlying components surfaced during polish.
+- `domain-software-engineering/analysis/feature-design/task_sorting_kotlin_implementation_verifier.md` — Verify the Kotlin quality of the changes.
+- `domain-software-engineering/improvement/improvement_refactoring.md` — Refactor underlying components surfaced during polish.
 - `domain-engineering-workflows/workflows/debug_prompt.md` — Fix functional bugs uncovered while polishing.

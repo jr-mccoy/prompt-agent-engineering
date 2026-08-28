@@ -24,7 +24,7 @@ related_prompts:
   - domain-personal-development/prompts/solo-dev/solo_dev_automation_audit.md
   - domain-personal-development/prompts/solo-dev/solo_dev_context_switching_reducer.md
   - domain-personal-development/prompts/agency/agency_burnout_recovery.md
-  - domain-personal-development/prompts/productivity/productivity_personal_energy_audit.md
+  - domain-productivity/deep-work/deepwork_personal_energy_audit.md
 ---
 
 # Solo Developer Burnout Prevention
@@ -409,7 +409,7 @@ Before delivering the sustainability plan, confirm each of the following:
 - [solo_dev_automation_audit.md](../solo-dev/solo_dev_automation_audit.md) — Automate or eliminate tasks to reduce the workload driving burnout.
 - [solo_dev_context_switching_reducer.md](../solo-dev/solo_dev_context_switching_reducer.md) — Reduce context-switching overhead, a common hidden burnout source.
 - [agency_burnout_recovery.md](../agency/agency_burnout_recovery.md) — General (non-solo-dev-specific) burnout stage diagnosis and recovery path.
-- [productivity_personal_energy_audit.md](../productivity/productivity_personal_energy_audit.md) — Map where your energy actually goes before redesigning your pace.
+- [domain-productivity/deep-work/deepwork_personal_energy_audit.md](../../../domain-productivity/deep-work/deepwork_personal_energy_audit.md) — Map where your energy actually goes before redesigning your pace.
 - [validation_am_i_being_nuts.md](../../../domain-productivity/validation/validation_am_i_being_nuts.md) — Reality-check a major decision made under burnout.
 
 ---

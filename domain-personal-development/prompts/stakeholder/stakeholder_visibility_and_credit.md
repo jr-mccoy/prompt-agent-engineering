@@ -21,14 +21,14 @@ related_prompts:
   - domain-personal-development/prompts/stakeholder/stakeholder_mentor_sponsor_cultivation.md
   - domain-personal-development/prompts/career-transformation/career_residual_skills_inventory.md
   - domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md
-  - domain-professional-communication/prompts/product_delivery_sprint_planner.md
+  - domain-product-management/prompts/product_delivery_sprint_planner.md
 ---
 
 # Audit Where Your Credit Leaks and Design Honest Visibility
 
 **Objective:** Find the specific points where your real contributions fail to reach the people who allocate recognition, then produce one visibility move that makes true work legible — grounded in things you actually did.
 
-**When to use:** Your work is solid but you're passed over, surprised by lukewarm reviews, or watching less-productive peers get noticed; a decision-maker seems unaware of what you actually contributed; or you're about to enter a review/promotion cycle and your impact isn't documented. Not for fabricating impact you didn't have, and not for drafting the brag doc or update itself — that's `domain-professional-communication/`.
+**When to use:** Your work is solid but you're passed over, surprised by lukewarm reviews, or watching less-productive peers get noticed; a decision-maker seems unaware of what you actually contributed; or you're about to enter a review/promotion cycle and your impact isn't documented. Not for fabricating impact you didn't have, and not for drafting the brag doc or update itself — that's `domain-product-management/`.
 
 **Audience:** An individual making their own real work visible for their own advancement. Not for assessing whether someone else deserves credit, not clinical. If invisibility at work has tipped into chronic worthlessness or hopelessness, that's beyond a visibility problem — see `domain-psychology/` and a licensed professional.
 

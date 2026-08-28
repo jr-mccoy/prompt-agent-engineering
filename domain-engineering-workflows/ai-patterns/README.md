@@ -20,7 +20,7 @@
 ### Orientation
 | File | What it does |
 |------|--------------|
-| [`ai_pattern_engineering_manager_stance.md`](ai_pattern_engineering_manager_stance.md) | Reorients from writer to manager: diagnoses current stance, reallocates time, names failure modes, sets a one-week experiment |
+| [`../../domain-personal-development/prompts/identity/identity_engineering_manager_stance.md`](../../domain-personal-development/prompts/identity/identity_engineering_manager_stance.md) | Reorients from writer to manager: diagnoses current stance, reallocates time, names failure modes, sets a one-week experiment |
 
 ### Task opening (before the agent starts)
 | File | What it does |
@@ -52,8 +52,8 @@
 ### Reflection and capture (the compounding layer)
 | File | What it does |
 |------|--------------|
-| [`ai_pattern_weekly_reflection_session.md`](ai_pattern_weekly_reflection_session.md) | 30-minute structured weekly reflection: session inventory, friction log, pattern findings, ≤3 actions |
-| [`ai_pattern_observation_capture_habits.md`](ai_pattern_observation_capture_habits.md) | Designs a low-friction in-session capture habit tailored to the developer's actual environment |
+| [`../../domain-personal-development/prompts/agency/agency_ai_session_weekly_reflection.md`](../../domain-personal-development/prompts/agency/agency_ai_session_weekly_reflection.md) | 30-minute structured weekly reflection: session inventory, friction log, pattern findings, ≤3 actions |
+| [`../../domain-productivity/bottlenecks/bottleneck_observation_capture_habits.md`](../../domain-productivity/bottlenecks/bottleneck_observation_capture_habits.md) | Designs a low-friction in-session capture habit tailored to the developer's actual environment |
 
 ---
 
@@ -87,12 +87,12 @@
 
 ## Typical flow
 
-1. **Stance check** — `ai_pattern_engineering_manager_stance.md`. Set the frame once; revisit every few months.
+1. **Stance check** — `../../domain-personal-development/prompts/identity/identity_engineering_manager_stance.md`. Set the frame once; revisit every few months.
 2. **Per-task opening** — `ai_pattern_intent_and_verification_first.md` (with `ai_pattern_outcome_language_translator.md` if your first draft of the prompt leaked implementation). For novel problems, swap to `ai_pattern_unstructured_start_exploration.md`.
 3. **Calibrate verification** — `ai_pattern_verification_depth_calibrator.md` before the agent starts; escalate to `ai_review_failure_mode_premortem.md` for high-stakes changes.
 4. **Review the diff** — `ai_review_outcome_level_code_review.md`, followed by `ai_verification_mental_model_audit.md` for code you intend to own.
-5. **Ship, then capture** — `ai_pattern_observation_capture_habits.md` feeds the reflection pipeline.
-6. **Weekly** — `ai_pattern_weekly_reflection_session.md` and `ai_pattern_rule_extraction_from_decisions.md`.
+5. **Ship, then capture** — `../../domain-productivity/bottlenecks/bottleneck_observation_capture_habits.md` feeds the reflection pipeline.
+6. **Weekly** — `../../domain-personal-development/prompts/agency/agency_ai_session_weekly_reflection.md` and `ai_pattern_rule_extraction_from_decisions.md`.
 7. **When codifying** — `ai_pattern_delegation_rule_test.md` stress-tests candidate rules; `ai_verification_architectural_taste_gate.md` draws the line between delegable pattern and human-only taste.
 8. **Before modifying older code** — `ai_verification_understanding_decay_tracker.md` gates the edit on a refresh appropriate to the decay.
 

@@ -19,7 +19,7 @@ updated: "2026-06-07"
 related_prompts:
   - domain-engineering-workflows/workflows/engineering_debugging_root_cause.md
   - domain-engineering-workflows/workflows/engineering_prompt_for_debugging_code.md
-  - domain-engineering-workflows/tasks/task_sorting_kotlin_implementation_verifier.md
+  - domain-software-engineering/analysis/feature-design/task_sorting_kotlin_implementation_verifier.md
 ---
 
 # Android Jetpack Compose Debugging & Root Cause Fix
@@ -632,4 +632,4 @@ Next Steps:
 
 - `domain-engineering-workflows/workflows/engineering_debugging_root_cause.md` — Language-agnostic root-cause workflow.
 - `domain-engineering-workflows/workflows/engineering_prompt_for_debugging_code.md` — Stuck-bug brainstorming with tracking metrics.
-- `domain-engineering-workflows/tasks/task_sorting_kotlin_implementation_verifier.md` — Verify Kotlin/Android implementation quality.
+- `domain-software-engineering/analysis/feature-design/task_sorting_kotlin_implementation_verifier.md` — Verify Kotlin/Android implementation quality.

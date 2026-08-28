@@ -233,11 +233,11 @@ Prompts are organized into subdirectories by function:
 - `goals_decompose_learning_task.md` - Learning task breakdown
 
 **Productivity & Focus (`prompts/productivity/`)** - 5 prompts for work effectiveness
-- `productivity_personal_energy_audit.md` - Personal energy management
-- `productivity_meeting_killer_prompt.md` - Meeting effectiveness optimization
-- `productivity_zombie_meeting_detector.md` - Calendar audit and optimization
-- `productivity_automation_gold_mine.md` - Workflow automation opportunities
-- `productivity_open_loop_audit.md` - Mental clarity and open loop closure
+- `domain-productivity/deep-work/deepwork_personal_energy_audit.md` - Personal energy management
+- `domain-productivity/deep-work/deepwork_meeting_killer.md` - Meeting effectiveness optimization
+- `domain-productivity/deep-work/deepwork_zombie_meeting_detector.md` - Calendar audit and optimization
+- `domain-productivity/automation/automation_gold_mine.md` - Workflow automation opportunities
+- `domain-productivity/bottlenecks/bottleneck_open_loop_audit.md` - Mental clarity and open loop closure
 
 **Thinking & Analysis (`prompts/thinking/`)** - 9 prompts for cognitive tools
 - `thinking_mindset_shift_reframe.md` - Limiting belief reframing

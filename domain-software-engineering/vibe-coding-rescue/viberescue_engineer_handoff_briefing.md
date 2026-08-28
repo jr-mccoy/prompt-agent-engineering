@@ -22,7 +22,7 @@ related_prompts:
   - domain-software-engineering/vibe-coding-rescue/viberescue_security_audit.md
   - domain-software-engineering/vibe-coding-rescue/viberescue_rules_file_design.md
   - domain-engineering-workflows/ai-native-rollouts/airollout_long_running_project_memory.md
-  - domain-business-strategy/chief-of-staff/cos_memory_scaffold_claude_md.md
+  - domain-productivity/operating-cadence/cos_memory_scaffold_claude_md.md
 ---
 
 # Generate a Handoff Briefing So a Real Engineer Can Take Over

@@ -32,9 +32,9 @@ This directory covers individual knowledge-worker mechanics: running a meeting, 
 
 This directory covers the day-to-day execution mechanics that apply regardless of whether your work is strategic: how to run a meeting, how to write an update, how to hand off a task. These prompts assume you already know what to work on — they help you work on it effectively.
 
-### This directory vs. `domain-professional-communication/`
+### This directory vs. `domain-product-management/`
 
-`domain-professional-communication/` covers external-facing documents and product deliverables: PRDs, product specs, stakeholder briefings, and market communications.
+`domain-product-management/` covers external-facing documents and product deliverables: PRDs, product specs, stakeholder briefings, and market communications.
 
 This directory covers the internal operational communication that runs an organization: meeting agendas, project status updates, follow-up emails, 1:1 prep. The audience is internal or ongoing client relationships, not new external audiences.
 

@@ -10,7 +10,7 @@ Study moves that only work in one field — maths drills and proof practice, sci
 
 - **The technique is field-agnostic** → [`../memory-and-recall/`](../memory-and-recall/)
 - **You are stuck rather than drilling** → [`../stuck-and-confused/`](../stuck-and-confused/)
-- **Full health-professions learner track** → [`../../../domain-healthcare-clinical/prompts/medical-education/learner-self-study/`](../../../domain-healthcare-clinical/prompts/medical-education/learner-self-study/)
+- **Full health-professions learner track** → [`../../../domain-medical-education/`](../../../domain-medical-education/)
 
 ## Prompts
 

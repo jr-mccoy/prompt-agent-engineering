@@ -139,7 +139,7 @@ prompting-guides/
 │   ├── domain-specific/            # CPAs, attorneys, contractors, etc.
 │   └── writing/                    # Business writing
 │
-├── domain-professional-communication/ # PRDs, stakeholder updates (~29)
+├── domain-product-management/ # PRDs, stakeholder updates (~29)
 │   ├── prompts/                    # Product management prompts
 │   └── design/                     # Design-related prompts
 │
@@ -598,9 +598,9 @@ When users need **help with tasks** (not asking for new prompts), map their requ
 
 ### Workspace Organization
 - **Document organization** → `domain-business-strategy/organization/` (3 prompts)
-  - Example: "Content audit" → `organization_content_audit.md`
-  - Example: "Knowledge base gap analysis" → `organization_knowledge_base_gap_analysis.md`
-  - Example: "Project status summary" → `organization_project_status_summary.md`
+  - Example: "Content audit" → `domain-productivity/bottlenecks/bottleneck_content_audit.md`
+  - Example: "Knowledge base gap analysis" → `domain-productivity/bottlenecks/bottleneck_knowledge_base_gap_analysis.md`
+  - Example: "Project status summary" → `domain-engineering-workflows/workflows/engineering_project_status_summary.md`
 
 ### App Prototyping
 - **Build apps** → `domain-productivity/prototyping/` (~6 prompts)
@@ -776,7 +776,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
 - **Technical due diligence plan (acquisition / investment / procurement)** → `domain-business-strategy/research/technical_due_diligence_plan.md`
 - **Synthesize 10–30 user interviews into themes / tensions / decisions** → `domain-business-strategy/research/user_research_synthesis.md`
 - **Structured competitor teardown (product / strategy / org)** → `domain-business-strategy/research/competitor_teardown.md`
-- **Decision-forcing meeting pre-read** → `domain-business-strategy/chief-of-staff/meeting_pre_read_drafter.md`
+- **Decision-forcing meeting pre-read** → `domain-productivity/operating-cadence/meeting_pre_read_drafter.md`
 
 ### Idea-to-Product Pipeline (full idea → shippable software → AI-agent build)
 - **End-to-end pipeline** for taking a software/platform idea from raw brainstorm to a Claude-Code-ready build package → `domain-idea-to-product/` (~63 prompts in 11 stages, self-contained directory; copies of upstream prompts + 8 net-new gap-fill prompts + master orchestrator).
@@ -808,7 +808,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Design what to build (system / feature / structure / process)" → `deepthink_design.md` / `/deepthink-design` (plain English: `deepthink_design_plain.md` / `/deepthink-design-plain`)
 
 ### Product Management
-- **PRDs and product work** → `domain-professional-communication/prompts/`
+- **PRDs and product work** → `domain-product-management/prompts/`
   - Example: "Build a PRD via interrogation (MVP-first)" → `product_create_prd.md`
   - Example: "Score a PRD against a rigorous rubric" → `product_rigorous_prd_evaluation_and_scoring.md`
   - Example: "Plan a cross-functional delivery sprint" → `product_delivery_sprint_planner.md`
@@ -903,7 +903,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "Help me write this essay without writing it for me" → `learner/writing/learn_thesis_with_critique.md`
   - Example: "I'm 38 and going back to school" → `learner/adult-learner/learn_cold_start_return_to_school.md`
   - Example: "Just tell me what to run, in what order" → `learner/guides/` (pick audience, then workflow)
-- **Boundary:** self-directed skill acquisition with no institution → `domain-learning/`; programming → `domain-learning-coding/`; health-professions education incl. its own learner track → `domain-healthcare-clinical/prompts/medical-education/`; teaching research methods → `domain-science/teaching-research-methods/`; the parent's side of school → `domain-parenting/`.
+- **Boundary:** self-directed skill acquisition with no institution → `domain-learning/`; programming → `domain-learning-coding/`; health-professions education incl. its own learner track → `domain-medical-education/`; teaching research methods → `domain-science/teaching-research-methods/`; the parent's side of school → `domain-parenting/`.
   - **Domain guide:** [domain-education-teaching/README.md](domain-education-teaching/README.md) · **Craft reference & templates:** [field_guide.md](domain-education-teaching/field_guide.md) · **Roadmap:** [EXPANSION_ROADMAP.md](domain-education-teaching/EXPANSION_ROADMAP.md)
 
 ### Curriculum Design & Program-Level Educational Planning (2026-05-15)
@@ -954,11 +954,11 @@ When users need help with **non-coding tasks**, first determine the domain:
     - Example: "Interpret LMS / formative / dashboard data" → `teaching_learning_analytics_interpreter.md`
     - Example: "Early-warning system designer" → `teaching_early_warning_system_designer.md`
     - Example: "PDSA / continuous improvement cycle" → `teaching_continuous_improvement_cycle.md`
-  - **Medical-education program-level (CBME, EPAs, ACGME)** → `domain-healthcare-clinical/prompts/medical-education/curriculum-design/` (4 prompts):
-    - Example: "CBME implementation roadmap (program-level)" → `meded_cbme_implementation_program.md`
-    - Example: "Residency curriculum mapper (ACGME Milestones + EPAs)" → `meded_residency_curriculum_mapper.md`
-    - Example: "EPA implementation designer (entrustment + evidence)" → `meded_epa_implementation_designer.md`
-    - Example: "Program competency framework (ACGME six core competencies)" → `meded_program_competency_framework_acgme.md`
+  - **Medical-education program-level (CBME, EPAs, ACGME)** → `domain-medical-education/educator-curriculum-design/` (4 prompts):
+    - Example: "CBME implementation roadmap (program-level)" → `domain-medical-education/educator-curriculum-design/curric_cbme_implementation_program.md`
+    - Example: "Residency curriculum mapper (ACGME Milestones + EPAs)" → `domain-medical-education/educator-curriculum-design/curric_residency_curriculum_mapper.md`
+    - Example: "EPA implementation designer (entrustment + evidence)" → `domain-medical-education/educator-curriculum-design/curric_epa_implementation_designer.md`
+    - Example: "Program competency framework (ACGME six core competencies)" → `domain-medical-education/educator-curriculum-design/curric_program_competency_framework_acgme.md`
 
 ### Creative Writing (Adult/Mature — 27 prompts across 7 subdirs)
 - **Fiction, essays, poetry, scripts (adult)** → `domain-creative-writing/` — see [README](domain-creative-writing/README.md) for the full routing table. **Audience boundary:** kids/teens → `domain-childrens-writing/`; professional/business prose → `domain-professional-writing/`.
@@ -1001,7 +1001,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "SDOH screen response" → `allied_health_sdoh_screening_response.md`
   - **Domain guide:** [domain-healthcare-clinical/](domain-healthcare-clinical/)
 
-- **Medical education (HPE) — clinical educators, faculty, preceptors, curriculum designers** → `domain-healthcare-clinical/prompts/medical-education/` (~22 prompts)
+- **Medical education (HPE) — clinical educators, faculty, preceptors, curriculum designers** → `domain-medical-education/` (~22 prompts)
   - Example: "Write a PBL case" → `case-scenario-design/meded_pbl_case_writer.md`
   - Example: "Design an OSCE station" → `case-scenario-design/meded_osce_station_designer.md`
   - Example: "Simulation scenario" → `case-scenario-design/meded_simulation_scenario_designer.md`
@@ -1013,9 +1013,9 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "Preceptor teaching script (OMP/SNAPPS)" → `teaching-methods/meded_preceptor_teaching_script_writer.md`
   - Example: "Lecture redesign / active learning" → `teaching-methods/meded_lecture_redesign_planner.md`
   - Example: "Faculty development module" → `teaching-methods/meded_faculty_development_module_designer.md`
-  - **Routing guide + competency frameworks:** `domain-healthcare-clinical/prompts/medical-education/README.md`
+  - **Routing guide + competency frameworks:** `domain-medical-education/README.md`
 
-- **Medical education (HPE) — LEARNERS themselves (medical, nursing, PA, pharmacy, EMS, allied health, dental students/residents) using these prompts for study, practice, rehearsal, and self-assessment** → `domain-healthcare-clinical/prompts/medical-education/learner-self-study/` (37 prompts, added 2026-05-15)
+- **Medical education (HPE) — LEARNERS themselves (medical, nursing, PA, pharmacy, EMS, allied health, dental students/residents) using these prompts for study, practice, rehearsal, and self-assessment** → `domain-medical-education/` (37 prompts, added 2026-05-15)
   - **Boundary:** these are study/practice tools, NOT real-time clinical decision support. Every prompt redirects real-patient questions to clinical resources / supervisor.
   - Example: "Build me an illness script for [disease]" → `clinical-reasoning/learner_illness_script_builder.md`
   - Example: "Quiz me on differentials for chest pain" → `clinical-reasoning/learner_differential_diagnosis_drill.md`
@@ -1054,7 +1054,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "EMS protocol drill / NREMT scenario" → `discipline-specific/learner_ems_protocol_decision_drill.md`
   - Example: "Dental treatment-plan practice" → `discipline-specific/learner_dental_treatment_planning_practice.md`
   - Example: "PT/OT/SLP/RT/RD/SW scope + plan" → `discipline-specific/learner_allied_health_scope_and_reasoning_drill.md`
-  - **Routing guide:** `domain-healthcare-clinical/prompts/medical-education/learner-self-study/README.md`
+  - **Routing guide:** `domain-medical-education/README.md`
 
 ### Research & Academic
 - **Literature review, methodology, analysis** → `domain-research-academic/` (15 prompts + framework & field guide)
@@ -1143,7 +1143,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - **Thinking & cognitive tools (`prompts/thinking/`, 12 prompts):** blind-spot mirror, fresh perspective, interrogative/question modes, mindset reframe, regret minimization, memory palace, explain-like-I'm-nine, tight-constraint analyzer, decision-journal designer, mental-models application, assumption surfacing. See `prompts/thinking/README.md`.
   - **Productivity (`prompts/productivity/`, 8 prompts):** automation gold mine, meeting killer, zombie-meeting detector, open-loop audit, energy audit, overcommitment/saying-no, energy-by-task-type, focus-ritual design (overlaps `domain-productivity/deep-work/` — cross-link). See `prompts/productivity/README.md`.
   - **Solo-dev / solopreneur (`prompts/solo-dev/`, 10 prompts):** automation audit, burnout prevention, context-switching, network building, skill-gap, pricing-value confidence, deciding alone, accountability system, sustainable-pace design, isolation-motivation. See `prompts/solo-dev/README.md`.
-  - **Stakeholder & org politics (`prompts/stakeholder/`, 7 prompts):** navigation guide, politics navigator, managing up, manager-relationship builder, visibility & credit, mentor/sponsor cultivation, cross-team alliance (overlaps `domain-negotiation/` + `domain-professional-communication/` — cross-link). See `prompts/stakeholder/README.md`.
+  - **Stakeholder & org politics (`prompts/stakeholder/`, 7 prompts):** navigation guide, politics navigator, managing up, manager-relationship builder, visibility & credit, mentor/sponsor cultivation, cross-team alliance (overlaps `domain-negotiation/` + `domain-product-management/` — cross-link). See `prompts/stakeholder/README.md`.
   - **Life transitions (`prompts/life-transitions/`, 10 prompts, non-clinical):** living through a change already underway — new role, relocation adjustment, new-parenthood identity, empty nest, retirement purpose, job-loss recovery, post-breakup rebuild, return-from-leave, identity-after-change, transition map. The DURING/AFTER complement to `major-decisions/` (BEFORE). Clinical grief/depression/trauma → `domain-psychology/`. See `prompts/life-transitions/README.md`.
   - **Emotional fitness (`prompts/emotional-fitness/`, 10 prompts, NON-CLINICAL everyday skills):** emotion labeling, disappointment processing, jealousy channeling, worry-vs-action sorter, reactivity-trigger audit, ambivalence, self-compassion reset, emotional reset ritual, shame-vs-guilt sorter, charged-event debrief. **Boundary:** not therapy — anyone in/considering therapy, in distress, or with a safety concern → `domain-psychology/client-self-use/` + professional help. See `prompts/emotional-fitness/README.md`.
   - **AI-role career assessments (`prompts/career/`, 17 prompts):** interactive qualification assessments for AI/ML roles (ML eng, prompt eng, product, ethics, research scientist, CV, NLP, etc.). See `prompts/career/README.md`.
@@ -1164,14 +1164,14 @@ When users need help with **non-coding tasks**, first determine the domain:
   - **Domain guide:** [domain-personal-development/](domain-personal-development/)
 
 ### Professional Communication
-- **PRDs, presentations, proposals, stakeholder communication** → `domain-professional-communication/`
-  - Example: "Interrogative PRD builder (MVP-first)" → `domain-professional-communication/prompts/product_create_prd.md`
-  - Example: "Score a PRD against a rubric" → `domain-professional-communication/prompts/product_rigorous_prd_evaluation_and_scoring.md`
-  - Example: "Cross-functional sprint planner" → `domain-professional-communication/prompts/product_delivery_sprint_planner.md`
-  - Example: "Market size (TAM/SAM/SOM) rapid or comprehensive" → `domain-professional-communication/prompts/product_market_size_calculator.md`
+- **PRDs, presentations, proposals, stakeholder communication** → `domain-product-management/`
+  - Example: "Interrogative PRD builder (MVP-first)" → `domain-product-management/prompts/product_create_prd.md`
+  - Example: "Score a PRD against a rubric" → `domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md`
+  - Example: "Cross-functional sprint planner" → `domain-product-management/prompts/product_delivery_sprint_planner.md`
+  - Example: "Market size (TAM/SAM/SOM) rapid or comprehensive" → `domain-product-management/prompts/product_market_size_calculator.md`
   - Stakeholder-navigation and org-politics prompts → `domain-personal-development/prompts/stakeholder/` (7 prompts)
   - **Presentations** → `domain-presentations/` (~23 prompts)
-  - **Domain guide:** [domain-professional-communication/](domain-professional-communication/)
+  - **Domain guide:** [domain-product-management/](domain-product-management/)
 
 ### Parenting (Ages 4–8, with Neurodivergence Support)
 - **Parenting children ages 4–8 (including ADHD, strong-willed, autistic / ASD Level 1 / "HFA")** → `domain-parenting/` (~18 prompts)
@@ -1935,7 +1935,7 @@ Examples:
 | "Teach me this" | `domain-learning-coding/` |
 | "Plan project/sprint" | `domain-engineering-workflows/workflows/` |
 | "Business analysis" | `domain-business-strategy/analysis/` |
-| "Create PRD" | `domain-professional-communication/prompts/` |
+| "Create PRD" | `domain-product-management/prompts/` |
 | "Make decision" | `domain-decision-making/` |
 | "Multi-agent pipeline" | `domain-agentic-resources/personas/` |
 | **Idea-to-Product Pipeline (idea → shippable software, AI-agent build)** | **Use `domain-idea-to-product/` — see [`README`](domain-idea-to-product/README.md). Start with `orchestrator_idea_to_product.md` for guided mode.** |
@@ -2200,7 +2200,7 @@ Examples:
 | "Technical due diligence plan" | `domain-business-strategy/research/technical_due_diligence_plan.md` |
 | "Synthesize user interviews into themes" | `domain-business-strategy/research/user_research_synthesis.md` |
 | "Competitor teardown" | `domain-business-strategy/research/competitor_teardown.md` |
-| "Decision-forcing meeting pre-read" | `domain-business-strategy/chief-of-staff/meeting_pre_read_drafter.md` |
+| "Decision-forcing meeting pre-read" | `domain-productivity/operating-cadence/meeting_pre_read_drafter.md` |
 | "Helm charts/K8s" | `domain-agentic-resources/skills/cloud-infrastructure/` |
 | "GitHub operations" | `domain-agentic-resources/skills/developer-tools/github-ops/` |
 | "Create a skill" | `authoring/skill-patterns/README.md` |
@@ -2398,10 +2398,10 @@ Examples:
 | "Learning analytics interpreter (LMS/dashboards)" | `domain-education-teaching/program/evaluation-analytics/program_learning_analytics_interpreter.md` |
 | "Early warning system designer" | `domain-education-teaching/program/evaluation-analytics/program_early_warning_system_designer.md` |
 | "PDSA / continuous improvement cycle" | `domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md` |
-| "CBME implementation roadmap (program-level)" | `domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_cbme_implementation_program.md` |
-| "Residency curriculum mapper (ACGME Milestones + EPAs)" | `domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_residency_curriculum_mapper.md` |
-| "EPA implementation designer" | `domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_epa_implementation_designer.md` |
-| "Program competency framework (ACGME six core)" | `domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_program_competency_framework_acgme.md` |
+| "CBME implementation roadmap (program-level)" | `domain-medical-education/educator-curriculum-design/curric_cbme_implementation_program.md` |
+| "Residency curriculum mapper (ACGME Milestones + EPAs)" | `domain-medical-education/educator-curriculum-design/curric_residency_curriculum_mapper.md` |
+| "EPA implementation designer" | `domain-medical-education/educator-curriculum-design/curric_epa_implementation_designer.md` |
+| "Program competency framework (ACGME six core)" | `domain-medical-education/educator-curriculum-design/curric_program_competency_framework_acgme.md` |
 | "Creative writing/story (adult)" | `domain-creative-writing/` — see [README](domain-creative-writing/README.md) routing table |
 | "Build/fix a scene; POV; pacing" | `domain-creative-writing/fiction/` |
 | "Show-don't-tell / description / theme / openings / endings" | `domain-creative-writing/craft-tools/` |
@@ -2433,12 +2433,12 @@ Examples:
 | "Write my synopsis / assemble submission package" | `domain-childrens-writing/publishing-business/childrens_synopsis_submission_package.md` |
 | "Logline / comp titles / market positioning" | `domain-childrens-writing/publishing-business/childrens_pitch_comps_market_positioning.md` |
 | "Patient communication" | `domain-healthcare-clinical/` |
-| "Write a PBL case / TBL exercise / OSCE station" | `domain-healthcare-clinical/prompts/medical-education/` |
-| "Simulation scenario / debriefing guide" | `domain-healthcare-clinical/prompts/medical-education/` |
-| "NBME MCQ / oral exam / milestone narrative" | `domain-healthcare-clinical/prompts/medical-education/` |
-| "Feedback for residents / remediation plan" | `domain-healthcare-clinical/prompts/medical-education/` |
-| "Faculty development module / lecture redesign" | `domain-healthcare-clinical/prompts/medical-education/` |
-| **Health-professions LEARNER (student/resident/PA/pharmacy/EMS/AH/dental) self-study tools** | **Use `domain-healthcare-clinical/prompts/medical-education/learner-self-study/` — see [README](domain-healthcare-clinical/prompts/medical-education/learner-self-study/README.md)** |
+| "Write a PBL case / TBL exercise / OSCE station" | `domain-medical-education/` |
+| "Simulation scenario / debriefing guide" | `domain-medical-education/` |
+| "NBME MCQ / oral exam / milestone narrative" | `domain-medical-education/` |
+| "Feedback for residents / remediation plan" | `domain-medical-education/` |
+| "Faculty development module / lecture redesign" | `domain-medical-education/` |
+| **Health-professions LEARNER (student/resident/PA/pharmacy/EMS/AH/dental) self-study tools** | **Use `domain-medical-education/` — see [README](domain-medical-education/README.md)** |
 | "Build me an illness script" / "atypical variants" | `learner-self-study/clinical-reasoning/learner_illness_script_builder.md` |
 | "Quiz me on differentials for [complaint]" | `learner-self-study/clinical-reasoning/learner_differential_diagnosis_drill.md` |
 | "Sharpen my one-liner / problem representation" | `learner-self-study/clinical-reasoning/learner_problem_representation_rehearsal.md` |
