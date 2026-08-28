@@ -1,6 +1,6 @@
 ---
 title: "Test Blueprint / Table of Specifications"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-design
 description: "Build a test blueprint mapping items to objectives, DOK levels, and weights — producing a defensible content-validity matrix and an item-write order with target counts per cell."
 techniques:
   - CM-01
@@ -19,9 +19,9 @@ tags:
   - psychometrics
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_mc_item_writer_with_distractors.md
-  - domain-education-teaching/assessment/assessment_performance_task_designer.md
-  - domain-education-teaching/teaching_standards_alignment_mapper.md
+  - domain-education-teaching/instructor/assessment-items/teaching_mc_item_writer_with_distractors.md
+  - domain-education-teaching/instructor/assessment-design/teaching_performance_task_designer.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_standards_alignment_mapper.md
 ---
 
 # Test Blueprint / Table of Specifications

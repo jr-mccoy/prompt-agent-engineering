@@ -21,11 +21,11 @@ Five of the workflows below ship through net-new prompts in [`../../adult-learne
 
 | Stage | Workflow | Time |
 |-------|----------|------|
-| 1–2 weeks before classes | [`workflow_cold_start_return.md`](workflow_cold_start_return.md) — first-4-weeks plan | 1–2 hours |
-| Week 1 (or whenever it breaks) | [`workflow_working_learner_time_architecture.md`](workflow_working_learner_time_architecture.md) — weekly time blocks | 1.5–2 hours |
-| Before the first major paper | [`workflow_writing_rust_recovery.md`](workflow_writing_rust_recovery.md) — diagnose & rehearse rust | 1–2 hours |
-| When the feeling hits | [`workflow_imposter_calibration_age_cohort.md`](workflow_imposter_calibration_age_cohort.md) — signal vs. noise | 30–60 min |
-| Application essays, CPL portfolio, SOP | [`workflow_prior_learning_articulation.md`](workflow_prior_learning_articulation.md) | 2–4 hours per artifact |
+| 1–2 weeks before classes | [`learn_workflow_cold_start_return.md`](learn_workflow_cold_start_return.md) — first-4-weeks plan | 1–2 hours |
+| Week 1 (or whenever it breaks) | [`learn_workflow_working_learner_time_architecture.md`](learn_workflow_working_learner_time_architecture.md) — weekly time blocks | 1.5–2 hours |
+| Before the first major paper | [`learn_workflow_writing_rust_recovery.md`](learn_workflow_writing_rust_recovery.md) — diagnose & rehearse rust | 1–2 hours |
+| When the feeling hits | [`learn_workflow_imposter_calibration_age_cohort.md`](learn_workflow_imposter_calibration_age_cohort.md) — signal vs. noise | 30–60 min |
+| Application essays, CPL portfolio, SOP | [`learn_workflow_prior_learning_articulation.md`](learn_workflow_prior_learning_articulation.md) | 2–4 hours per artifact |
 
 Run in this approximate order, but workflows 3, 4, and 5 are situational — run them when triggered, not on a schedule.
 
@@ -39,12 +39,12 @@ Adults bring 10–30+ years of life and work experience. The 40 existing learner
 - Distinguish real skill gaps from age-anchored impostor noise
 - Help you turn what you already know into academic currency where the program allows
 
-If you're new to AI as a study partner, also read [`../shared/ai_as_study_partner_integrity.md`](../shared/ai_as_study_partner_integrity.md) first — many adult learners have policy and integrity concerns that traditional students don't.
+If you're new to AI as a study partner, also read [`../shared/learn_ai_as_study_partner_integrity.md`](../shared/learn_ai_as_study_partner_integrity.md) first — many adult learners have policy and integrity concerns that traditional students don't.
 
 ## Two Other Important Reads
 
-- [`../shared/andragogy_principles.md`](../shared/andragogy_principles.md) — why adult learning is different from traditional pedagogy, and what that means for how the prompts work
-- [`../shared/socratic_vs_direct_decision.md`](../shared/socratic_vs_direct_decision.md) — when AI should coach Socratically vs. answer directly. Returning adults often need direct mode more than the strict Socratic stance allows; the decision rule resolves the tension.
+- [`../shared/learn_andragogy_principles.md`](../shared/learn_andragogy_principles.md) — why adult learning is different from traditional pedagogy, and what that means for how the prompts work
+- [`../shared/learn_socratic_vs_direct_decision.md`](../shared/learn_socratic_vs_direct_decision.md) — when AI should coach Socratically vs. answer directly. Returning adults often need direct mode more than the strict Socratic stance allows; the decision rule resolves the tension.
 
 ## What Returning Looks Like Honestly
 
@@ -67,11 +67,11 @@ Before starting these workflows, you should have:
 - At least one syllabus
 - An honest read on your work, family, and time constraints
 
-If you're not yet enrolled and trying to decide, see [`../career-changers/workflow_credential_pathway_decision.md`](../career-changers/workflow_credential_pathway_decision.md).
+If you're not yet enrolled and trying to decide, see [`../career-changers/learn_workflow_credential_pathway_decision.md`](../career-changers/learn_workflow_credential_pathway_decision.md).
 
 ## When to Use Cross-Domain Prompts
 
-Returning adults touch at least 6 domains of this repo. The [`cross_domain_kit.md`](cross_domain_kit.md) file is the curated index. Key categories:
+Returning adults touch at least 6 domains of this repo. The [`learn_workflow_cross_domain_kit.md`](learn_workflow_cross_domain_kit.md) file is the curated index. Key categories:
 
 - **Deep work** for working-learner time and focus
 - **Bottlenecks** for procrastination and perfectionism patterns
@@ -84,7 +84,7 @@ Returning adults touch at least 6 domains of this repo. The [`cross_domain_kit.m
 - **Financial aid math** — see your program's financial aid office
 - **Specific academic advising** — that requires your program's advisors
 - **Mental health concerns** about returning — talk to a counselor; your school has them
-- **Decisions about whether to enroll at all** — see [`../career-changers/workflow_credential_pathway_decision.md`](../career-changers/workflow_credential_pathway_decision.md)
+- **Decisions about whether to enroll at all** — see [`../career-changers/learn_workflow_credential_pathway_decision.md`](../career-changers/learn_workflow_credential_pathway_decision.md)
 - **K-12 child education support** — different domain entirely
 
 ---

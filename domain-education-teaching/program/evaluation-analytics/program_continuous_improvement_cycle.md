@@ -1,6 +1,6 @@
 ---
 title: "Continuous Improvement Cycle Designer (PDSA / Improvement Science)"
-category: education-teaching/program-evaluation-analytics
+category: education-teaching/program/evaluation-analytics
 description: "Design a Plan-Do-Study-Act (PDSA) or improvement-science cycle for an educational program — specifying the change idea, measures (outcome / process / balancing), test scale, data plan, and decision rules for scaling, adapting, or abandoning."
 techniques:
   - ST-02
@@ -20,8 +20,8 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_program_evaluation_framework.md
-  - teaching_logic_model_designer.md
+  - domain-education-teaching/program/evaluation-analytics/program_program_evaluation_framework.md
+  - domain-education-teaching/program/evaluation-analytics/program_logic_model_designer.md
   - ../accreditation-program-review/teaching_program_review_cycle_designer.md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Concept Explorer for Kids (Ages 5-10)"
-category: education-teaching
+category: education-teaching/instructor/explanation-craft
 description: "Transform complex concepts into magical, memorable adventures that kids can see, feel, and retell — using characters, sensory imagery, and mini-stories"
 tags:
   - education
@@ -228,14 +228,14 @@ Bones don't heal like glue sticking two pieces back together. They actually GROW
 - OC-04 (Comprehensive Example Outputs) — Full worked example demonstrates the format
 
 **Related Prompts:**
-- `domain-education-teaching/teaching_reading_level_adapter.md` — Adapt text complexity for different reading levels
-- `domain-education-teaching/teaching_vocabulary_builder.md` — Build age-appropriate vocabulary
-- `domain-education-teaching/teaching_lesson_plan_generator.md` — Full lesson plans incorporating these explanations
-- `domain-education-teaching/teaching_concept_decoder_teens.md` — Teen version of concept explanation
-- `domain-education-teaching/teaching_concept_clarity_adults.md` — Adult version of concept explanation
-- `domain-education-teaching/teaching_story_based_explainer.md` — Full narrative/allegory approach
-- `domain-education-teaching/teaching_analogy_engine.md` — Systematic analogy construction
-- `domain-education-teaching/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
+- `domain-education-teaching/instructor/explanation-craft/teaching_reading_level_adapter.md` — Adapt text complexity for different reading levels
+- `domain-education-teaching/instructor/explanation-craft/teaching_vocabulary_builder.md` — Build age-appropriate vocabulary
+- `domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md` — Full lesson plans incorporating these explanations
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_decoder_teens.md` — Teen version of concept explanation
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_clarity_adults.md` — Adult version of concept explanation
+- `domain-education-teaching/instructor/explanation-craft/teaching_story_based_explainer.md` — Full narrative/allegory approach
+- `domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md` — Systematic analogy construction
+- `domain-education-teaching/instructor/explanation-craft/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
 
 **Customization Guide:**
 - **For very young children (5-6):** Use only the Character Adventure or Body Analogy vehicle. Keep to 3-4 sentences for The Picture. Use hand motions as the primary memory anchor.

@@ -1,6 +1,6 @@
 ---
 title: "Working Learner: Time Architecture Under Real Constraints"
-category: education-teaching/adult-learner
+category: education-teaching/learner/adult-learner
 description: "Weekly time architecture for an adult enrolled in school while working full-time, often with family responsibilities. Honest about tradeoffs; designs around the actual week, not the idealized one. Outputs a defensible weekly block plan."
 techniques:
   - CM-01
@@ -20,7 +20,7 @@ tags:
 intended_use: production
 updated: "2026-05-13"
 related_prompts:
-  - domain-education-teaching/adult-learner/adult_cold_start_return_to_school.md
+  - domain-education-teaching/learner/adult-learner/learn_cold_start_return_to_school.md
   - domain-productivity/deep-work/deepwork_calendar_audit.md
   - domain-productivity/deep-work/deepwork_match_tasks_to_calendar.md
   - domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md
@@ -245,4 +245,4 @@ The output is the architecture for *this learner's* week, not a generic template
 
 ---
 
-*Part of [`../guides/adult-returning/`](../guides/adult-returning/). Run after [`adult_cold_start_return_to_school.md`](adult_cold_start_return_to_school.md). Re-run mid-semester if disruption breaks the original architecture.*
+*Part of [`../guides/adult-returning/`](../guides/adult-returning/). Run after [`learn_cold_start_return_to_school.md`](learn_cold_start_return_to_school.md). Re-run mid-semester if disruption breaks the original architecture.*

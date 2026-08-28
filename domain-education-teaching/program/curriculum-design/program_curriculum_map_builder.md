@@ -1,6 +1,6 @@
 ---
 title: "Curriculum Map Builder (Course → Outcome → Standard → Assessment Matrix)"
-category: "education-teaching/curriculum-design"
+category: education-teaching/program/curriculum-design
 description: "Build an evidence-traceable program curriculum map linking courses or modules to program outcomes, external standards or competencies, and assessment evidence, with Introduced–Developed–Mastered depth coding, progression analysis, and gap, redundancy, and assessment-alignment audits."
 techniques:
   - ST-02

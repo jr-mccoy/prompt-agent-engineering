@@ -1,6 +1,6 @@
 ---
 title: "Performance Support Job Aid Designer"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Design an at-the-moment-of-need job aid (decision tree, checklist, quick reference card, or embedded helper) that solves a workflow problem in under 60 seconds without requiring training."
 techniques:
   - ST-02
@@ -18,9 +18,9 @@ tags:
   - moment-of-need
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_microlearning_module.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_train_trainer_guide.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_compliance_training_module.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_microlearning_module.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_train_trainer_guide.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_compliance_training_module.md
 ---
 
 # Performance Support Job Aid Designer

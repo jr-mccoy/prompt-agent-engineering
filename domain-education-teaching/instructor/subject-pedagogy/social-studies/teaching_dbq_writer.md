@@ -1,6 +1,6 @@
 ---
 title: "Document-Based Question (DBQ) Writer"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/social-studies
 description: "Build a complete DBQ assessment — historical question, 5–7 sourced documents with attribution and context, scaffolded organizer, scoring rubric, and exemplar essay outline."
 techniques:
   - CM-01
@@ -20,9 +20,9 @@ tags:
   - ap
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/teaching_socratic_discussion_facilitator.md
-  - domain-education-teaching/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
 ---
 
 # Document-Based Question (DBQ) Writer

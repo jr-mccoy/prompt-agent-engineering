@@ -1,6 +1,6 @@
 ---
 title: "Quiz-to-Reteach Plan"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-analysis
 description: "Convert quiz results directly into a differentiated reteach lesson — grouping students by error pattern (not score), assigning each group a targeted intervention, and producing a 20-minute differentiated sequence."
 techniques:
   - ST-01
@@ -19,10 +19,10 @@ tags:
   - intervention
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_item_analysis_report.md
-  - domain-education-teaching/assessment/assessment_mastery_check_designer.md
-  - domain-education-teaching/assessment/assessment_diagnostic_quiz_knowledge_map.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_item_analysis_report.md
+  - domain-education-teaching/instructor/assessment-design/teaching_mastery_check_designer.md
+  - domain-education-teaching/instructor/assessment-design/teaching_diagnostic_quiz_knowledge_map.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # Quiz-to-Reteach Plan

@@ -1,6 +1,6 @@
 ---
 title: "ELA Mentor Text Close Read for Craft"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/ela
 description: "Use a mentor text excerpt to teach a single craft move — naming what the author did, why it works, and how students can try it in their own writing — without turning the mentor text into a comprehension test."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - high-school
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_close_reading_minilesson.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_writers_workshop_minilesson.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_grammar_minilesson.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_close_reading_minilesson.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_writers_workshop_minilesson.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_grammar_minilesson.md
 ---
 
 # ELA Mentor Text Close Read for Craft

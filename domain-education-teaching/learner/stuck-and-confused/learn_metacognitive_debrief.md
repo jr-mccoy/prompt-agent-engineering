@@ -1,6 +1,6 @@
 ---
 title: "Metacognitive Debrief After Learning"
-category: education-teaching/learner-tutoring/professional-training
+category: education-teaching/learner/stuck-and-confused
 description: "Post-study reflection prompt that calibrates perceived vs actual mastery and prescribes next study actions."
 techniques: [MP-07, QA-17, ED-01, DD-04]
 difficulty: intermediate

@@ -1,6 +1,6 @@
 ---
 title: "AI as Study Partner: Academic Integrity for Self-Directed Adult Learners"
-category: education-teaching/guides/shared
+category: education-teaching/learner/guides/shared
 description: "How to use AI as a learning partner without producing submittable work. Aimed at college students, returning adults, and self-directed career changers. Covers what integrity policies mean for each audience, how the learner-facing prompts are designed to comply, and practical patterns for using AI ethically across coursework."
 audience:
   - college-students
@@ -31,7 +31,7 @@ The learner-facing prompts in this repo are designed so a learner using them wit
 
 ## How the Strict Socratic Stance Protects You
 
-The 40 learner-facing prompts in `domain-education-teaching/learner-*/` enforce a strict stance: AI does not write theses, paragraphs, citations, finished outlines, final numerical answers, or any artifact you could submit as your own. The 9 new adult-learner prompts in `domain-education-teaching/adult-learner/` extend this for adult contexts.
+The 40 learner-facing prompts in `domain-education-teaching/learner/` enforce a strict stance: AI does not write theses, paragraphs, citations, finished outlines, final numerical answers, or any artifact you could submit as your own. The 9 new adult-learner prompts in `domain-education-teaching/learner/adult-learner/` extend this for adult contexts.
 
 This stance means:
 
@@ -95,7 +95,7 @@ This is the dominant pattern in this guide section. It's safe almost everywhere.
 
 AI explains prerequisite concepts you won't be tested on (the background statistics you need to follow your sociology paper). You do all foreground work yourself (the sociology paper itself).
 
-This is the direct-mode use case described in [`socratic_vs_direct_decision.md`](socratic_vs_direct_decision.md). Safe in most policies; very useful for adult learners with prerequisite gaps.
+This is the direct-mode use case described in [`learn_socratic_vs_direct_decision.md`](learn_socratic_vs_direct_decision.md). Safe in most policies; very useful for adult learners with prerequisite gaps.
 
 ### Pattern 3: AI for Tooling, Human for Thinking
 
@@ -164,4 +164,4 @@ For self-directed adult learners, the same principle applies even without an ext
 
 ---
 
-*Part of [`../README.md`](../README.md). Paired with [`andragogy_principles.md`](andragogy_principles.md) and [`socratic_vs_direct_decision.md`](socratic_vs_direct_decision.md).*
+*Part of [`../README.md`](../README.md). Paired with [`learn_andragogy_principles.md`](learn_andragogy_principles.md) and [`learn_socratic_vs_direct_decision.md`](learn_socratic_vs_direct_decision.md).*

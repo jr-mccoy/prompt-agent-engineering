@@ -1,6 +1,6 @@
 ---
 title: "Imposter Calibration for Adults in Age-Mixed Classrooms"
-category: education-teaching/adult-learner
+category: education-teaching/learner/adult-learner
 description: "Calibrate impostor feelings or out-of-place feelings for adult learners in classrooms dominated by younger students. Distinguishes real signal (gaps to close) from age-anchored false signal (you don't belong here). Andragogy-aware."
 techniques:
   - RP-04
@@ -23,8 +23,8 @@ updated: "2026-05-13"
 related_prompts:
   - domain-personal-development/prompts/identity/identity_confidence_calibration.md
   - domain-personal-development/prompts/identity/identity_comparison_envy_diagnostic.md
-  - domain-education-teaching/adult-learner/adult_prior_learning_articulation.md
-  - domain-education-teaching/adult-learner/adult_writing_rust_recovery.md
+  - domain-education-teaching/learner/adult-learner/learn_prior_learning_articulation.md
+  - domain-education-teaching/learner/adult-learner/learn_writing_rust_recovery.md
 ---
 
 # Imposter Calibration for Adults in Age-Mixed Classrooms
@@ -223,4 +223,4 @@ A 44-year-old former HR director enrolled in a second bachelor's in computer sci
 
 ---
 
-*Part of [`../guides/adult-returning/`](../guides/adult-returning/). Pair with [`identity_confidence_calibration.md`](../../domain-personal-development/prompts/identity/identity_confidence_calibration.md) for deeper / broader calibration beyond the classroom.*
+*Part of [`../guides/adult-returning/`](../guides/adult-returning/). Pair with [`../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md`](../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md) for deeper / broader calibration beyond the classroom.*

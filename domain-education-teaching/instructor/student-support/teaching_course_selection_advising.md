@@ -1,6 +1,6 @@
 ---
 title: "Student Course-Selection Advising Conversation"
-category: education-teaching/advising
+category: education-teaching/instructor/student-support
 description: "Guide a one-on-one course-selection conversation with a student: clarify goals, surface constraints, weigh options against requirements, and produce a defensible schedule with decision rationale."
 techniques:
   - ST-02
@@ -18,9 +18,9 @@ tags:
   - student-conversation
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/advising/advising_graduation_tracker.md
-  - domain-education-teaching/teaching_syllabus_course_designer.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_office_hours_prep.md
+  - domain-education-teaching/instructor/student-support/teaching_graduation_tracker.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_syllabus_course_designer.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_office_hours_prep.md
 ---
 
 # Student Course-Selection Advising Conversation

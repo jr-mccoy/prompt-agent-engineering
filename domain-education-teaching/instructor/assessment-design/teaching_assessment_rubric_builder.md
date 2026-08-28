@@ -1,6 +1,6 @@
 ---
 title: "Assessment and Rubric Builder"
-category: education-teaching
+category: education-teaching/instructor/assessment-design
 description: "Create aligned assessments with clear rubrics and scoring guides"
 tags:
   - education

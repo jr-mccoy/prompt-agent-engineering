@@ -1,6 +1,6 @@
 ---
 title: "Book Report Scaffold (Student-Driven, No Substitution)"
-category: education-teaching/learner-reading
+category: education-teaching/learner/reading
 description: "Guide a student through every section of a book report — summary, character analysis, theme, personal response — through diagnostic questions, without writing any section for them."
 techniques:
   - RP-04
@@ -19,9 +19,9 @@ tags:
   - high-school
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-reading/learnread_chapter_summary_tool.md
-  - domain-education-teaching/learner-reading/learnread_authors_craft_analyzer.md
-  - domain-education-teaching/learner-writing/learnwrite_thesis_with_critique.md
+  - domain-education-teaching/learner/reading/learn_chapter_summary_tool.md
+  - domain-education-teaching/learner/reading/learn_authors_craft_analyzer.md
+  - domain-education-teaching/learner/writing/learn_thesis_with_critique.md
 ---
 
 # Book Report Scaffold (Student-Driven, No Substitution)

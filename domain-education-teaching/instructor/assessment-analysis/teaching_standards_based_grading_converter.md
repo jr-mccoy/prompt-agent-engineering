@@ -1,6 +1,6 @@
 ---
 title: "Standards-Based Grading Converter"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-analysis
 description: "Convert a traditional points-based grading system into standards-based grading: identify priority standards, design proficiency scales, plan reassessment policy, and translate SBG marks back to a transcript grade if required."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - high-school
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_test_blueprint_table_of_specs.md
-  - domain-education-teaching/teaching_standards_alignment_mapper.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/assessment-design/teaching_test_blueprint_table_of_specs.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_standards_alignment_mapper.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
 ---
 
 # Standards-Based Grading Converter

@@ -1,6 +1,6 @@
 ---
 title: "Program Outcomes Framework (PSLO / ISLO / CSLO / PLO Architecture)"
-category: education-teaching/program-outcomes-assessment
+category: education-teaching/program/outcomes-assessment
 description: "Design a coherent program-outcomes architecture — Institutional Student Learning Outcomes, Program Student Learning Outcomes, and Course-Level Outcomes — with parent–child relationships, coverage mapping, and assessment-evidence alignment."
 techniques:
   - ST-02
@@ -24,8 +24,8 @@ tags:
   - accreditation
 updated: "2026-05-15"
 related_prompts:
-  - teaching_outcomes_to_assessment_mapper.md
-  - teaching_program_gap_analysis.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_gap_analysis.md
   - ../curriculum-design/teaching_competency_framework_designer.md
   - ../curriculum-design/teaching_learning_objectives_writer_blooms.md
   - ../curriculum-design/teaching_curriculum_map_builder.md

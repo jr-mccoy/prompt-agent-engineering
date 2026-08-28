@@ -1,6 +1,6 @@
 ---
 title: "Classroom Routines & Transitions Designer"
-category: education-teaching/classroom-ops
+category: education-teaching/instructor/classroom-ops
 description: "Engineer the high-leverage classroom routines and transitions — entry, materials, group switches, exit, technology — with signal, sequence, and re-teach protocol that reclaims minutes per day."
 techniques:
   - CM-01
@@ -19,9 +19,9 @@ tags:
   - procedures
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/classroom-ops/classops_management_plan_and_norms.md
-  - domain-education-teaching/teaching_substitute_plan_generator.md
-  - domain-education-teaching/teaching_small_group_rotation_planner.md
+  - domain-education-teaching/instructor/classroom-ops/teaching_management_plan_and_norms.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_substitute_plan_generator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_small_group_rotation_planner.md
 ---
 
 # Classroom Routines & Transitions Designer

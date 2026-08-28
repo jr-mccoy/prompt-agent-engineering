@@ -1,6 +1,6 @@
 ---
 title: "Office Hours Prep"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Prepare an instructor or TA for office hours: anticipate the questions, pre-build worked examples, structure the room, and end with a one-page recap that benefits students who couldn't attend."
 techniques:
   - ST-02
@@ -17,9 +17,9 @@ tags:
   - help-room
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_ta_discussion_section_prep.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
-  - domain-education-teaching/teaching_reteach_intervention_planner.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_ta_discussion_section_prep.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/response-cycle/teaching_reteach_intervention_planner.md
 ---
 
 # Office Hours Prep

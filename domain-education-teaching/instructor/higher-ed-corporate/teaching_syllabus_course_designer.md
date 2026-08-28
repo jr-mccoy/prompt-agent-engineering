@@ -1,6 +1,6 @@
 ---
 title: "Syllabus & Course Designer (Higher Ed)"
-category: education-teaching
+category: education-teaching/instructor/higher-ed-corporate
 description: "Design comprehensive course syllabi with learning outcomes, AI policies, and inclusive design for higher education"
 tags:
   - education

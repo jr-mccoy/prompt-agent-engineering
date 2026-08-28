@@ -1,6 +1,6 @@
 ---
 title: "ELA K–2 Phonics Scope and Sequence"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/ela
 description: "Build a K–2 phonics scope and sequence aligned with structured-literacy / Science-of-Reading principles — sequencing phonemes, sound-spelling correspondences, and high-frequency words across a year with explicit assessment checkpoints."
 techniques:
   - CM-01  # Context Framing
@@ -21,9 +21,9 @@ tags:
   - scope-and-sequence
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/inclusive/inclusive_dyslexia_structured_literacy_plan.md
-  - domain-education-teaching/teaching_unit_curriculum_planner.md
-  - domain-education-teaching/teaching_standards_alignment_mapper.md
+  - domain-education-teaching/instructor/student-support/teaching_dyslexia_structured_literacy_plan.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_unit_curriculum_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_standards_alignment_mapper.md
 ---
 
 # ELA K–2 Phonics Scope and Sequence

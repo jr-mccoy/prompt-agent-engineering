@@ -1,6 +1,6 @@
 ---
 title: "Essay Outline Coach (Student-Driven Structure)"
-category: education-teaching/learner-writing
+category: education-teaching/learner/writing
 description: "Help a student build their own essay outline through structured prompts and slot-fill protocols — no pre-written content, no template the student can copy and submit."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_thesis_with_critique.md
-  - domain-education-teaching/learner-writing/learnwrite_revision_socratic_coach.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
+  - domain-education-teaching/learner/writing/learn_thesis_with_critique.md
+  - domain-education-teaching/learner/writing/learn_revision_socratic_coach.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
 ---
 
 # Essay Outline Coach (Student-Driven Structure)

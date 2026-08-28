@@ -1,6 +1,6 @@
 ---
 title: "3-Act Math Task Builder"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/math
 description: "Design a complete 3-act math task — Act 1 (hook + question), Act 2 (information release), Act 3 (reveal + sequel) — anchored to a specific standard, with anticipated student approaches."
 techniques:
   - CM-01  # Context Framing
@@ -19,9 +19,9 @@ tags:
   - elementary
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_math_number_talks_designer.md
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/subject-pedagogy/math/teaching_number_talks_designer.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # 3-Act Math Task Builder

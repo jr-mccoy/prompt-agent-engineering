@@ -1,6 +1,6 @@
 ---
 title: "Standards Alignment Audit (Parameterized by Standards Body)"
-category: "education-teaching/curriculum-design"
+category: education-teaching/program/curriculum-design
 description: "Audit an existing curriculum against a specified standards framework (CCSS, NGSS, state standards, AP, IB, industry credentials, accreditor standards, ACGME, and similar frameworks), producing a standards-level coverage matrix, cognitive-demand analysis, evidence-quality ratings, gap diagnostics, and a prioritized remediation and verification plan."
 techniques:
   - ST-02
@@ -27,8 +27,8 @@ tags:
   - medical-education
 updated: "2026-07-20"
 related_prompts:
-  - teaching_standards_crosswalk_generator.md
-  - teaching_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_standards_crosswalk_generator.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
   - ../program-outcomes-assessment/teaching_program_gap_analysis.md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Analogy and Representation Switcher"
-category: education-teaching/learner-tutoring/cross-disciplinary
+category: education-teaching/learner/stuck-and-confused
 description: "Clarifies difficult concepts by generating and testing multiple analogies and representational forms."
 techniques: [RT-04, RP-02, ED-01, QA-08]
 difficulty: intermediate

@@ -1,6 +1,6 @@
 ---
 title: "Program Evaluation Framework Designer (Parameterized: Kirkpatrick / CIPP / Logic Model / Theory of Change)"
-category: education-teaching/program-evaluation-analytics
+category: education-teaching/program/evaluation-analytics
 description: "Design a program evaluation framework — parameterized by approach (Kirkpatrick four-level / CIPP / logic model / theory of change / utilization-focused) — with evaluation questions, indicators, methods, data sources, timeline, and reporting plan."
 techniques:
   - ST-02
@@ -23,8 +23,8 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_logic_model_designer.md
-  - teaching_continuous_improvement_cycle.md
+  - domain-education-teaching/program/evaluation-analytics/program_logic_model_designer.md
+  - domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md
   - ../program-outcomes-assessment/teaching_program_gap_analysis.md
   - ../accreditation-program-review/teaching_program_review_cycle_designer.md
 ---

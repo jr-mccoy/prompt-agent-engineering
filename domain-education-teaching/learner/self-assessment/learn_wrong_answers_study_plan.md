@@ -1,6 +1,6 @@
 ---
 title: "Turn My Wrong Answers Into a Study Plan"
-category: education-teaching/learner-assessment
+category: education-teaching/learner/self-assessment
 description: "Paste in your wrong answers from any quiz or practice test — the model analyzes what each error reveals about your mental model, groups errors into themes, and produces a targeted study plan with specific remediation steps."
 techniques:
   - RT-03
@@ -20,9 +20,9 @@ tags:
 audience: learner
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-assessment/learner_quiz_to_mastery.md
-  - domain-education-teaching/learner-assessment/learner_weak_point_diagnostic.md
-  - domain-education-teaching/assessment/assessment_item_analysis_report.md
+  - domain-education-teaching/learner/self-assessment/learn_quiz_to_mastery.md
+  - domain-education-teaching/learner/self-assessment/learn_weak_point_diagnostic.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_item_analysis_report.md
 ---
 
 # Turn My Wrong Answers Into a Study Plan

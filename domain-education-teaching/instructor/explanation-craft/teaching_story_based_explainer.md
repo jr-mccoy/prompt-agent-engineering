@@ -1,6 +1,6 @@
 ---
 title: "Story-Based Explainer"
-category: education-teaching
+category: education-teaching/instructor/explanation-craft
 description: "Transform any concept into a memorable narrative — allegory, origin story, character journey, or dramatic scenario — that teaches through story structure rather than lecture"
 tags:
   - education
@@ -240,12 +240,12 @@ Public-key encryption uses a pair of mathematically linked keys: one public (any
 - OC-04 (Comprehensive Example Outputs) — Full story with all beats, concept key, and transfer prompts
 
 **Related Prompts:**
-- `domain-education-teaching/teaching_concept_explorer_kids.md` — Kid-friendly concept explanation (5-10)
-- `domain-education-teaching/teaching_concept_decoder_teens.md` — Teen concept decoding (11-17)
-- `domain-education-teaching/teaching_concept_clarity_adults.md` — Adult concept clarity
-- `domain-education-teaching/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
-- `domain-education-teaching/teaching_analogy_engine.md` — Systematic analogy construction
-- `domain-education-teaching/teaching_lesson_plan_generator.md` — Full lesson plans incorporating story-based explanations
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md` — Kid-friendly concept explanation (5-10)
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_decoder_teens.md` — Teen concept decoding (11-17)
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_clarity_adults.md` — Adult concept clarity
+- `domain-education-teaching/instructor/explanation-craft/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
+- `domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md` — Systematic analogy construction
+- `domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md` — Full lesson plans incorporating story-based explanations
 - `domain-creative-writing/creative_writing_worldbuilding.md` — Worldbuilding techniques for richer story settings
 
 **Customization Guide:**

@@ -6,11 +6,11 @@
 
 | Prompt | Coverage |
 |---|---|
-| [`teaching_accreditation_self_study_he.md`](teaching_accreditation_self_study_he.md) | Regional HE accreditors: HLC, MSCHE, SACSCOC, WSCUC, NWCCU |
-| [`teaching_accreditation_self_study_programmatic.md`](teaching_accreditation_self_study_programmatic.md) | Programmatic: ABET, AACSB, CAEP, CCNE, ACPE, NAEYC, NASAD, NASM, NAAB, etc. |
-| [`teaching_accreditation_self_study_meded.md`](teaching_accreditation_self_study_meded.md) | Med-ed: LCME, ACGME, COCA, CODA, specialty boards |
-| [`teaching_program_review_cycle_designer.md`](teaching_program_review_cycle_designer.md) | Periodic program review timeline, artifacts, committee, decisions, follow-up |
-| [`teaching_accreditation_evidence_compiler.md`](teaching_accreditation_evidence_compiler.md) | Translate raw evidence + criterion into response section drafts |
+| [`program_accreditation_self_study_he.md`](program_accreditation_self_study_he.md) | Regional HE accreditors: HLC, MSCHE, SACSCOC, WSCUC, NWCCU |
+| [`program_accreditation_self_study_programmatic.md`](program_accreditation_self_study_programmatic.md) | Programmatic: ABET, AACSB, CAEP, CCNE, ACPE, NAEYC, NASAD, NASM, NAAB, etc. |
+| [`program_accreditation_self_study_meded.md`](program_accreditation_self_study_meded.md) | Med-ed: LCME, ACGME, COCA, CODA, specialty boards |
+| [`program_program_review_cycle_designer.md`](program_program_review_cycle_designer.md) | Periodic program review timeline, artifacts, committee, decisions, follow-up |
+| [`program_accreditation_evidence_compiler.md`](program_accreditation_evidence_compiler.md) | Translate raw evidence + criterion into response section drafts |
 
 ## Notes on Accreditor Versions
 

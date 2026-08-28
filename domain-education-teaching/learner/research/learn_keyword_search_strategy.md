@@ -1,6 +1,6 @@
 ---
 title: "Keyword Search Strategy Builder"
-category: education-teaching/learner-research
+category: education-teaching/learner/research
 description: "Coach a student to develop an effective database search strategy — identifying keywords, Boolean operators, synonyms, and scope filters — without doing the search for them."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-research/learnresearch_question_refinement.md
-  - domain-education-teaching/learner-research/learnresearch_source_synthesis_chart.md
-  - domain-education-teaching/learner-reading/learnread_annotation_coach.md
+  - domain-education-teaching/learner/research/learn_question_refinement.md
+  - domain-education-teaching/learner/research/learn_source_synthesis_chart.md
+  - domain-education-teaching/learner/reading/learn_annotation_coach.md
 ---
 
 # Keyword Search Strategy Builder

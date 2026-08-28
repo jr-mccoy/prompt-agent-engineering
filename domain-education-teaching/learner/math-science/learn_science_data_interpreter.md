@@ -1,6 +1,6 @@
 ---
 title: "Science Data Interpreter (Student Draws Conclusions)"
-category: education-teaching/learner-math-science
+category: education-teaching/learner/math-science
 description: "Guide a student through interpreting their own experimental data — patterns, trends, anomalies, and conclusions — without drawing conclusions for them."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-math-science/learnsci_experimental_design_helper.md
-  - domain-education-teaching/learner-math-science/learnsci_lab_report_scaffold.md
-  - domain-education-teaching/learner-math-science/learnmath_socratic_step_by_step_solver.md
+  - domain-education-teaching/learner/math-science/learn_experimental_design_helper.md
+  - domain-education-teaching/learner/math-science/learn_lab_report_scaffold.md
+  - domain-education-teaching/learner/math-science/learn_math_socratic_solver.md
 ---
 
 # Science Data Interpreter (Student Draws Conclusions)

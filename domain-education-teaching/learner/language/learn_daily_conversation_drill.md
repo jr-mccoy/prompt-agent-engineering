@@ -1,6 +1,6 @@
 ---
 title: "Daily L2 Conversation Drill (Partner Mode)"
-category: education-teaching/learner-language
+category: education-teaching/learner/language
 description: "Run a scenario-based conversation drill with an L2 learner — acting as a natural conversation partner at calibrated difficulty, then delivering structured per-exchange feedback without interrupting flow."
 techniques:
   - RP-04
@@ -23,9 +23,9 @@ tags:
   - adult
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-language/learnlang_topical_vocabulary_builder.md
-  - domain-education-teaching/learner-language/learnlang_idiom_decoder.md
-  - domain-education-teaching/learner-language/learnlang_pronunciation_coach_text.md
+  - domain-education-teaching/learner/language/learn_topical_vocabulary_builder.md
+  - domain-education-teaching/learner/language/learn_idiom_decoder.md
+  - domain-education-teaching/learner/language/learn_pronunciation_coach_text.md
 ---
 
 # Daily L2 Conversation Drill (Partner Mode)

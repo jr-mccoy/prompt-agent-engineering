@@ -1,6 +1,6 @@
 ---
 title: "Misconception Diagnoser"
-category: education-teaching
+category: education-teaching/instructor/response-cycle
 description: "Analyze student work to classify misconceptions and produce targeted reteach priorities"
 techniques:
   - ST-01
@@ -18,11 +18,11 @@ tags:
   - intervention
 updated: "2026-05-05"
 related_prompts:
-  - domain-education-teaching/teaching_preassessment_designer.md
-  - domain-education-teaching/teaching_reteach_intervention_planner.md
-  - domain-education-teaching/teaching_small_group_rotation_planner.md
-  - domain-education-teaching/teaching_exit_ticket_generator.md
-  - domain-education-teaching/teaching_differentiation_planner.md
+  - domain-education-teaching/instructor/response-cycle/teaching_preassessment_designer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_reteach_intervention_planner.md
+  - domain-education-teaching/instructor/response-cycle/teaching_small_group_rotation_planner.md
+  - domain-education-teaching/instructor/response-cycle/teaching_exit_ticket_generator.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md
 ---
 
 **Purpose:** Diagnose patterns in student errors using a structured misconception taxonomy, connect patterns to objectives, and generate a focused reteaching sequence.

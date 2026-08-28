@@ -1,6 +1,6 @@
 ---
 title: "Compliance Training Module Designer (Generic)"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Design a compliance training module that satisfies legal/regulatory documentation requirements (which the user must supply for their jurisdiction) while still producing actual behavior change — not just a click-through."
 techniques:
   - ST-02
@@ -19,9 +19,9 @@ tags:
   - safety
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_microlearning_module.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_corporate_onboarding_program.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_async_lms_module_designer.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_microlearning_module.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_corporate_onboarding_program.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_async_lms_module_designer.md
 ---
 
 # Compliance Training Module Designer (Generic)

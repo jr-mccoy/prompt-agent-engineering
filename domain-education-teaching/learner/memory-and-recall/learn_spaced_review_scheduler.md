@@ -1,6 +1,6 @@
 ---
 title: "Spaced Review Scheduler"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/memory-and-recall
 description: "Builds a personalized spaced repetition schedule from a concept or card list, assigning review intervals based on difficulty and exam timeline, and producing a dated calendar the learner can follow."
 techniques:
   - ST-01
@@ -17,9 +17,9 @@ tags:
   - retrieval-practice
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/teaching_study_flashcard_generator.md
-  - domain-education-teaching/learner-study-skills/learnstudy_confidence_calibration.md
-  - domain-education-teaching/learner-study-skills/learnstudy_study_next_advisor.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_generator.md
+  - domain-education-teaching/learner/self-assessment/learn_confidence_calibration.md
+  - domain-education-teaching/learner/exam-prep/learn_study_next_advisor.md
 ---
 
 ## Objective

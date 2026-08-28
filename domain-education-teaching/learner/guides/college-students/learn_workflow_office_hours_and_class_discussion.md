@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Office Hours & Class Discussion Prep"
-category: education-teaching/guides/college-students
+category: education-teaching/learner/guides/college-students
 description: "Turn vague confusion into specific productive questions for office hours; prepare a defensible claim and textual evidence for class discussion. Two short related workflows that share the underlying skill — converting fuzzy thinking into something you can act on."
 audience: college-students
 chain_length: 2
@@ -34,7 +34,7 @@ For class discussion: a specific claim, the textual evidence supporting it, the 
 
 ### Step 1 — Convert confusion into specific question
 
-**Prompt:** [`../../learner-time-discussion/learndisc_office_hours_question_prep.md`](../../learner-time-discussion/learndisc_office_hours_question_prep.md)
+**Prompt:** [`../../time-and-discussion/learn_office_hours_question_prep.md`](../../time-and-discussion/learn_office_hours_question_prep.md)
 
 **Input:** "I'm confused about [X]" + the relevant readings or problem
 
@@ -57,7 +57,7 @@ The Socratic prompt forces you to identify the boundary of your understanding. T
 
 ### Step 1 — Build a defensible discussion contribution
 
-**Prompt:** [`../../learner-time-discussion/learndisc_class_discussion_prep.md`](../../learner-time-discussion/learndisc_class_discussion_prep.md)
+**Prompt:** [`../../time-and-discussion/learn_class_discussion_prep.md`](../../time-and-discussion/learn_class_discussion_prep.md)
 
 **Input:** the assigned reading + your initial reaction or interest
 
@@ -90,7 +90,7 @@ If you're doing both for the same class, run them in sequence — many of the sa
 |-----------|---------------|
 | Walk-in office hours for a quick "can you sign this form" | Don't run this workflow |
 | Discussion section where participation isn't graded and you have nothing to add | Read the material; if no real thought emerges, that's information about whether the material engaged you |
-| You're stuck on a STEM problem | Use [`workflow_stem_problem_solving.md`](workflow_stem_problem_solving.md) first; only escalate to office hours if Socratic step 2 doesn't unblock you |
+| You're stuck on a STEM problem | Use [`learn_workflow_stem_problem_solving.md`](learn_workflow_stem_problem_solving.md) first; only escalate to office hours if Socratic step 2 doesn't unblock you |
 
 ## Common Failure Modes
 
@@ -110,8 +110,8 @@ If your class includes 1:1 reading conferences with the instructor (common in wr
 - One genuine question about the author's choices
 - One connection to another text in the course
 
-This workflow's prep is good preparation for those conferences. The instructor-side equivalent is [`../../subject-pedagogy/teachsubj_ela_reading_conference_planner.md`](../../subject-pedagogy/teachsubj_ela_reading_conference_planner.md) — read it for context on what a conferencing instructor is looking for.
+This workflow's prep is good preparation for those conferences. The instructor-side equivalent is [`../../../instructor/subject-pedagogy/ela/teaching_reading_conference_planner.md`](../../../instructor/subject-pedagogy/ela/teaching_reading_conference_planner.md) — read it for context on what a conferencing instructor is looking for.
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). For broader research and writing chains, see [`workflow_essay_draft_to_submit.md`](workflow_essay_draft_to_submit.md) and [`workflow_research_paper_full_arc.md`](workflow_research_paper_full_arc.md).*
+*Part of [`GUIDE.md`](GUIDE.md). For broader research and writing chains, see [`learn_workflow_essay_draft_to_submit.md`](learn_workflow_essay_draft_to_submit.md) and [`learn_workflow_research_paper_full_arc.md`](learn_workflow_research_paper_full_arc.md).*

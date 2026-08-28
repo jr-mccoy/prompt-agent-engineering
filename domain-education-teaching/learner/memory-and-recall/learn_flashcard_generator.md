@@ -1,6 +1,6 @@
 ---
 title: "Study Session: Flashcard Generator"
-category: education-teaching/study
+category: education-teaching/learner/memory-and-recall
 description: "Generates tiered study flashcards (Q&A pairs) for college students, organized by difficulty and optimized for export to Anki, Quizlet, or manual review."
 techniques:
   - ED-02  # Progressive Exercise Generation
@@ -19,11 +19,11 @@ tags:
   - quizlet
 updated: "2026-03-07"
 related_prompts:
-  - domain-education-teaching/teaching_study_concept_teacher.md
-  - domain-education-teaching/teaching_study_knowledge_tester.md
-  - domain-education-teaching/teaching_study_practice_problems.md
-  - domain-education-teaching/teaching_study_guide_builder.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
+  - domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md
+  - domain-education-teaching/learner/tutoring/learn_practice_problems.md
+  - domain-education-teaching/learner/memory-and-recall/learn_study_guide_builder.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
 ---
 
 # Study Session: Flashcard Generator

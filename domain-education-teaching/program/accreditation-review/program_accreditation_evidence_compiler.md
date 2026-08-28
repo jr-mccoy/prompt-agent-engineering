@@ -1,6 +1,6 @@
 ---
 title: "Accreditation Evidence Compiler (Criteria + Raw Evidence → Response Drafts)"
-category: education-teaching/accreditation-program-review
+category: education-teaching/program/accreditation-review
 description: "Compile response narratives from accreditation criteria + raw evidence inputs — translating unstructured policies, reports, and data into accreditor-aligned response sections with evidence cross-references and gap surfacing."
 techniques:
   - ST-02
@@ -19,10 +19,10 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_accreditation_self_study_he.md
-  - teaching_accreditation_self_study_programmatic.md
-  - teaching_accreditation_self_study_meded.md
-  - teaching_program_review_cycle_designer.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_he.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_programmatic.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_meded.md
+  - domain-education-teaching/program/accreditation-review/program_program_review_cycle_designer.md
 ---
 
 # Accreditation Evidence Compiler

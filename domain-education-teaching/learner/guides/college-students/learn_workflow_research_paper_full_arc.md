@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Research Paper — Full Arc"
-category: education-teaching/guides/college-students
+category: education-teaching/learner/guides/college-students
 description: "Full chain for a college research paper (10+ pages, multiple sources, 2–4 week timeline): question to search to source synthesis to outline to draft to bibliography. Socratic stance throughout — AI does not write."
 audience: college-students
 chain_length: 10
@@ -18,7 +18,7 @@ updated: "2026-05-13"
 - Original argument with literature engagement
 - 2–4 week timeline (sometimes a semester)
 
-For shorter essays with limited research, use [`workflow_essay_draft_to_submit.md`](workflow_essay_draft_to_submit.md).
+For shorter essays with limited research, use [`learn_workflow_essay_draft_to_submit.md`](learn_workflow_essay_draft_to_submit.md).
 
 ## What You'll Have at the End
 
@@ -45,7 +45,7 @@ For shorter essays with limited research, use [`workflow_essay_draft_to_submit.m
 
 #### Step 1 — Refine your research question
 
-**Prompt:** [`../../learner-research/learnresearch_question_refinement.md`](../../learner-research/learnresearch_question_refinement.md)
+**Prompt:** [`../../research/learn_question_refinement.md`](../../research/learn_question_refinement.md)
 
 **Input:** rough topic + assignment requirements
 
@@ -59,7 +59,7 @@ For shorter essays with limited research, use [`workflow_essay_draft_to_submit.m
 
 #### Step 2 — Build a search strategy
 
-**Prompt:** [`../../learner-research/learnresearch_keyword_search_strategy.md`](../../learner-research/learnresearch_keyword_search_strategy.md)
+**Prompt:** [`../../research/learn_keyword_search_strategy.md`](../../research/learn_keyword_search_strategy.md)
 
 **Input:** your refined question
 
@@ -81,7 +81,7 @@ You actually go to the databases, run your searches, and pull 10–25 promising 
 
 #### Step 4 — Vet source credibility
 
-**Prompt:** [`../../learner-writing/learnwrite_source_credibility_evaluator.md`](../../learner-writing/learnwrite_source_credibility_evaluator.md)
+**Prompt:** [`../../writing/learn_source_credibility_evaluator.md`](../../writing/learn_source_credibility_evaluator.md)
 
 **Input:** each candidate source (or a batch)
 
@@ -97,7 +97,7 @@ You actually go to the databases, run your searches, and pull 10–25 promising 
 
 Read every vetted source. Take notes by source. Mark direct quotes you might use. **Do not paste full source text into AI to "summarize" it** — the paper requires that you actually engage with the sources, not that you read a summary.
 
-If your professor permits AI summary assistance, see the discussion in [`../shared/socratic_vs_direct_decision.md`](../shared/socratic_vs_direct_decision.md). Default: read the sources yourself.
+If your professor permits AI summary assistance, see the discussion in [`../shared/learn_socratic_vs_direct_decision.md`](../shared/learn_socratic_vs_direct_decision.md). Default: read the sources yourself.
 
 **Time:** 4–10 hours depending on source count and length
 
@@ -105,7 +105,7 @@ If your professor permits AI summary assistance, see the discussion in [`../shar
 
 #### Step 6 — Build a source synthesis chart
 
-**Prompt:** [`../../learner-research/learnresearch_source_synthesis_chart.md`](../../learner-research/learnresearch_source_synthesis_chart.md)
+**Prompt:** [`../../research/learn_source_synthesis_chart.md`](../../research/learn_source_synthesis_chart.md)
 
 **Input:** your reading notes across all sources
 
@@ -119,7 +119,7 @@ If your professor permits AI summary assistance, see the discussion in [`../shar
 
 #### Step 7 — Develop your thesis from the synthesis
 
-**Prompt:** [`../../learner-writing/learnwrite_thesis_with_critique.md`](../../learner-writing/learnwrite_thesis_with_critique.md)
+**Prompt:** [`../../writing/learn_thesis_with_critique.md`](../../writing/learn_thesis_with_critique.md)
 
 **Input:** your synthesis chart + a draft thesis
 
@@ -133,7 +133,7 @@ If your professor permits AI summary assistance, see the discussion in [`../shar
 
 #### Step 8 — Generate counterarguments
 
-**Prompt:** [`../../learner-writing/learnwrite_counterargument_generator.md`](../../learner-writing/learnwrite_counterargument_generator.md)
+**Prompt:** [`../../writing/learn_counterargument_generator.md`](../../writing/learn_counterargument_generator.md)
 
 **Input:** your thesis + synthesis chart
 
@@ -147,7 +147,7 @@ If your professor permits AI summary assistance, see the discussion in [`../shar
 
 #### Step 9 — Outline and draft
 
-**Outline prompt:** [`../../learner-writing/learnwrite_outline_generator.md`](../../learner-writing/learnwrite_outline_generator.md)
+**Outline prompt:** [`../../writing/learn_outline_generator.md`](../../writing/learn_outline_generator.md)
 
 **Input:** thesis + counterargument + synthesis chart
 
@@ -159,7 +159,7 @@ Then draft sections by yourself, in order or non-linearly (intro often last). Qu
 
 #### Step 10 — Revise
 
-**Prompt:** [`../../learner-writing/learnwrite_revision_socratic_coach.md`](../../learner-writing/learnwrite_revision_socratic_coach.md)
+**Prompt:** [`../../writing/learn_revision_socratic_coach.md`](../../writing/learn_revision_socratic_coach.md)
 
 **Input:** complete draft
 
@@ -173,7 +173,7 @@ Then draft sections by yourself, in order or non-linearly (intro often last). Qu
 
 #### Step 11 — Annotated bibliography
 
-**Prompt:** [`../../learner-writing/learnwrite_annotated_bibliography_helper.md`](../../learner-writing/learnwrite_annotated_bibliography_helper.md)
+**Prompt:** [`../../writing/learn_annotated_bibliography_helper.md`](../../writing/learn_annotated_bibliography_helper.md)
 
 **Input:** each source
 
@@ -185,7 +185,7 @@ Then draft sections by yourself, in order or non-linearly (intro often last). Qu
 
 #### Step 12 — Format citations
 
-**Prompt:** [`../../learner-writing/learnwrite_citation_helper.md`](../../learner-writing/learnwrite_citation_helper.md)
+**Prompt:** [`../../writing/learn_citation_helper.md`](../../writing/learn_citation_helper.md)
 
 **Input:** source elements (author, title, date, publisher, etc.) you supply
 
@@ -197,7 +197,7 @@ Then draft sections by yourself, in order or non-linearly (intro often last). Qu
 
 #### Step 13 — Integrity self-check
 
-**Prompt:** [`../../learner-writing/learnwrite_academic_integrity_self_check.md`](../../learner-writing/learnwrite_academic_integrity_self_check.md)
+**Prompt:** [`../../writing/learn_academic_integrity_self_check.md`](../../writing/learn_academic_integrity_self_check.md)
 
 **Input:** final paper + bibliography
 
@@ -207,9 +207,9 @@ Then draft sections by yourself, in order or non-linearly (intro often last). Qu
 
 ## Project Management
 
-For a 2–4 week paper, run [`../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md`](../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md) at the start — not for the paper itself, but to think about whether this paper is worth doing well as a portfolio piece for grad school / future writing samples.
+For a 2–4 week paper, run [`../../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md`](../../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md) at the start — not for the paper itself, but to think about whether this paper is worth doing well as a portfolio piece for grad school / future writing samples.
 
-For the week-by-week schedule, see [`../../../domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md`](../../../domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md). Run it after step 1 (you'll know roughly what you're researching) and before step 5 (so you protect the reading time).
+For the week-by-week schedule, see [`../../../../domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md`](../../../../domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md). Run it after step 1 (you'll know roughly what you're researching) and before step 5 (so you protect the reading time).
 
 ## Time Budget
 
@@ -249,8 +249,8 @@ A 10-page paper at the low end is about 15 hr. A 25-page paper at the high end i
 - **Lit review papers** — emphasize steps 5–8 heavily; the synthesis IS most of the paper.
 - **Empirical papers** with original data — the research-question, draft-revise, and bibliography steps apply; the data collection is outside this workflow.
 - **Case study papers** — use the workflow but treat the case material as a primary source the AI never summarizes.
-- **Capstone or thesis-length** (40+ pages) — break into 3–4 cycles of this workflow per chapter. Run [`../../../domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md`](../../../domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md) for the multi-month schedule.
+- **Capstone or thesis-length** (40+ pages) — break into 3–4 cycles of this workflow per chapter. Run [`../../../../domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md`](../../../../domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md) for the multi-month schedule.
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). For shorter essays, see [`workflow_essay_draft_to_submit.md`](workflow_essay_draft_to_submit.md).*
+*Part of [`GUIDE.md`](GUIDE.md). For shorter essays, see [`learn_workflow_essay_draft_to_submit.md`](learn_workflow_essay_draft_to_submit.md).*

@@ -1,6 +1,6 @@
 ---
 title: "Analogy Engine"
-category: education-teaching
+category: education-teaching/instructor/explanation-craft
 description: "Construct precise, testable analogies that make unfamiliar concepts instantly intuitive — with explicit mapping, stated limits, and anti-mislead safeguards"
 tags:
   - education
@@ -184,11 +184,11 @@ To push further: imagine 1,000 blindfolded sorters in a chain, where each sorter
 - OC-04 (Comprehensive Example Outputs) — Full analogy with structural map, limits, and upgrade
 
 **Related Prompts:**
-- `domain-education-teaching/teaching_concept_explorer_kids.md` — Kid-friendly concept explanation (5-10)
-- `domain-education-teaching/teaching_concept_decoder_teens.md` — Teen concept decoding (11-17)
-- `domain-education-teaching/teaching_concept_clarity_adults.md` — Adult concept clarity with mental models
-- `domain-education-teaching/teaching_story_based_explainer.md` — Full narrative/allegory approach
-- `domain-education-teaching/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md` — Kid-friendly concept explanation (5-10)
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_decoder_teens.md` — Teen concept decoding (11-17)
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_clarity_adults.md` — Adult concept clarity with mental models
+- `domain-education-teaching/instructor/explanation-craft/teaching_story_based_explainer.md` — Full narrative/allegory approach
+- `domain-education-teaching/instructor/explanation-craft/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
 - `domain-learning-coding/learning_code_analogies_metaphors.md` — Code-specific analogy construction
 - `domain-prompt-engineering/prompt-improvement/prompt_improvement_analogy_check.md` — Verify analogy quality in existing prompts
 

@@ -1,6 +1,6 @@
 ---
 title: "Classroom Management Plan & Norms Builder"
-category: education-teaching/classroom-ops
+category: education-teaching/instructor/classroom-ops
 description: "Build a complete classroom management plan — co-constructed norms, response continuum, restorative protocols, communication systems, and a first-30-days rollout — anchored in proactive design rather than reactive consequences."
 techniques:
   - CM-01
@@ -21,9 +21,9 @@ tags:
   - high-school
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_behavior_support_planner.md
-  - domain-education-teaching/classroom-ops/classops_routines_and_transitions_designer.md
-  - domain-education-teaching/classroom-ops/classops_restorative_conversation_script.md
+  - domain-education-teaching/instructor/student-support/teaching_behavior_support_planner.md
+  - domain-education-teaching/instructor/classroom-ops/teaching_routines_and_transitions.md
+  - domain-education-teaching/instructor/classroom-ops/teaching_restorative_conversation_script.md
 ---
 
 # Classroom Management Plan & Norms Builder

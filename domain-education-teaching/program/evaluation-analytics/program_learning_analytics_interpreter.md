@@ -1,6 +1,6 @@
 ---
 title: "Learning Analytics Interpreter (LMS, Formative Data, Dashboards)"
-category: education-teaching/program-evaluation-analytics
+category: education-teaching/program/evaluation-analytics
 description: "Interpret learning-analytics data — LMS engagement, formative assessment results, completion/grade dashboards — producing structured analysis: pattern detection, equity audit, plausible-cause hypotheses, and instructional/program action plan."
 techniques:
   - ST-02
@@ -23,8 +23,8 @@ tags:
   - equity
 updated: "2026-05-15"
 related_prompts:
-  - teaching_early_warning_system_designer.md
-  - teaching_continuous_improvement_cycle.md
+  - domain-education-teaching/program/evaluation-analytics/program_early_warning_system_designer.md
+  - domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md
   - ../program-outcomes-assessment/teaching_program_gap_analysis.md
 ---
 

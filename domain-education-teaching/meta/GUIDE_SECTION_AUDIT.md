@@ -55,7 +55,7 @@ A college-or-adult learner's actual needs span four domains. Inventory:
 | `domain-productivity/bottlenecks/` | 8 | Procrastination diagnostic, perfectionism ship threshold, capture/triage, PKM — **personal constraint diagnosis** |
 | `domain-productivity/reviews/` | 3 | Weekly systems review, monthly cadence, time audit — **academic semester cadence** |
 | `domain-prompt-engineering/skill-development/` | ~8 | Eval harness, four-discipline diagnostic, spec writing — **for adults learning how to use AI as a study partner** |
-| `domain-education-teaching/higher-ed-corporate/` | 10 | Mostly instructor-side, but `hecorp_microlearning_module.md` and `hecorp_performance_support_job_aid.md` have learner-side application patterns |
+| `domain-education-teaching/instructor/higher-ed-corporate/` | 10 | Mostly instructor-side, but `hecorp_microlearning_module.md` and `hecorp_performance_support_job_aid.md` have learner-side application patterns |
 
 **Net cross-domain count of directly relevant prompts: ~115 across 9 paths.**
 
@@ -193,7 +193,7 @@ domain-education-teaching/
 **Outcome:** 7 files, 5 new prompts. ~5 days of work.
 
 **Suggested authoring locations for the new prompts (a decision point):**
-- Option A: All 5 in `domain-education-teaching/adult-learner/` (new subdir)
+- Option A: All 5 in `domain-education-teaching/learner/adult-learner/` (new subdir)
 - Option B: Some in `domain-education-teaching/`, time-architecture one in `domain-productivity/deep-work/`, imposter one in `domain-personal-development/prompts/identity/`, prior-learning one in `domain-personal-development/career-transformation/`
 - Option A is more discoverable for the target audience; Option B is more idiomatically organized. Recommend **Option A** for cohesion and ease of cross-referencing.
 
@@ -256,7 +256,7 @@ If green-lit, the recommended sequence:
 Three calls would unblock construction:
 
 1. **Build all three audience folders + shared, or start with one audience to validate the structure?** (Recommend: start with `college-students/` since it ships fastest with zero new prompts and proves the pattern.)
-2. **Place the 9 new prompts inside `domain-education-teaching/adult-learner/` (new subdir, cohesive) or spread them across the idiomatic domains (productivity, identity, career-transformation)?** (Recommend: cohesive subdir for discoverability.)
+2. **Place the 9 new prompts inside `domain-education-teaching/learner/adult-learner/` (new subdir, cohesive) or spread them across the idiomatic domains (productivity, identity, career-transformation)?** (Recommend: cohesive subdir for discoverability.)
 3. **Should the cross-domain index file ship as a markdown doc, or as an enrichment to `PROMPT_INDEX.json`?** (Recommend: both — markdown for human browsing in the guide, JSON enrichment for programmatic access.)
 
 ---

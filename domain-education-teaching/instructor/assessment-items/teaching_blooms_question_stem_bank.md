@@ -1,6 +1,6 @@
 ---
 title: "Bloom's Question Stem Bank by Subject"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-items
 description: "Build a leveled bank of question stems across all six Bloom's revised levels, customized to a specific subject and grade — so teachers can move a class up the cognitive ladder during discussion, exit tickets, or cold-call cycles."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - high-school
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_dok_item_generator.md
-  - domain-education-teaching/teaching_socratic_discussion_facilitator.md
-  - domain-education-teaching/teaching_exit_ticket_generator.md
+  - domain-education-teaching/instructor/assessment-items/teaching_dok_item_generator.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_exit_ticket_generator.md
 ---
 
 # Bloom's Question Stem Bank by Subject

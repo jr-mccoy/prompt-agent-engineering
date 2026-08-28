@@ -20,7 +20,7 @@ related_prompts:
   - domain-biblical-studies/study-methods-teaching/biblical_lesson_plan_builder.md
   - domain-biblical-studies/ministry-contexts/biblical_ministry_kids_bible_lesson_builder.md
   - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_volunteer_recruitment_role_design.md
-  - domain-education-teaching/faculty-development/teaching_faculty_development_plan_designer.md
+  - domain-education-teaching/program/faculty-development/program_faculty_development_plan_designer.md
 ---
 
 # Teacher & Volunteer Training Plan

@@ -1,6 +1,6 @@
 ---
 title: "Student Feedback Composer"
-category: education-teaching
+category: education-teaching/instructor/grading-feedback
 description: "Create specific, actionable, growth-oriented feedback that motivates improvement"
 tags:
   - education

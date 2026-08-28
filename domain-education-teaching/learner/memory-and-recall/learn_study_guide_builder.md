@@ -1,6 +1,6 @@
 ---
 title: "Study Session: Study Guide Builder"
-category: education-teaching/study
+category: education-teaching/learner/memory-and-recall
 description: "Creates a comprehensive, exam-ready study guide for college students — with key concepts, relationships, common exam questions, mnemonics, and a self-assessment checklist calibrated to their current knowledge."
 techniques:
   - ST-04  # Delimited Sections
@@ -18,11 +18,11 @@ tags:
   - review
 updated: "2026-03-06"
 related_prompts:
-  - domain-education-teaching/teaching_study_concept_teacher.md
-  - domain-education-teaching/teaching_study_knowledge_tester.md
-  - domain-education-teaching/teaching_study_flashcard_generator.md
-  - domain-education-teaching/teaching_study_practice_problems.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
+  - domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_generator.md
+  - domain-education-teaching/learner/tutoring/learn_practice_problems.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
 ---
 
 # Study Session: Study Guide Builder

@@ -1,6 +1,6 @@
 ---
 title: "Social Studies Current Events Connector"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/social-studies
 description: "Connect a current news event to a unit of study via a structured analysis: source vetting, parallel framing, evidence-based connection, and a discussion protocol that protects classroom climate around politically charged topics."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - analogical-reasoning
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_socialstudies_primary_source_analysis.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_socialstudies_civic_action_project.md
-  - domain-education-teaching/learner-writing/learnwrite_source_credibility_evaluator.md
+  - domain-education-teaching/instructor/subject-pedagogy/social-studies/teaching_primary_source_analysis.md
+  - domain-education-teaching/instructor/subject-pedagogy/social-studies/teaching_civic_action_project.md
+  - domain-education-teaching/learner/writing/learn_source_credibility_evaluator.md
 ---
 
 # Social Studies Current Events Connector

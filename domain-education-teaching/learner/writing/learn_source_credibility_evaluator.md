@@ -1,6 +1,6 @@
 ---
 title: "Source Credibility Evaluator (Student-Driven)"
-category: education-teaching/learner-writing
+category: education-teaching/learner/writing
 description: "Walk a student through evaluating whether a source is credible enough to cite — using lateral reading, SIFT, and CRAAP-style questions — without making the credibility judgment for them."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_citation_helper.md
-  - domain-education-teaching/learner-writing/learnwrite_outline_generator.md
-  - domain-education-teaching/teaching_ai_literacy_lesson_designer.md
+  - domain-education-teaching/learner/writing/learn_citation_helper.md
+  - domain-education-teaching/learner/writing/learn_outline_generator.md
+  - domain-education-teaching/instructor/ed-tech/teaching_ai_literacy_lesson_designer.md
 ---
 
 # Source Credibility Evaluator (Student-Driven)

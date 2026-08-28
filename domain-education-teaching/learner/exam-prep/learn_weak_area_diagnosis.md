@@ -1,6 +1,6 @@
 ---
 title: "Weak Area Diagnosis and Drill Plan"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/exam-prep
 description: "Systematically diagnoses knowledge gaps from quiz scores, self-ratings, or error logs and outputs a ranked weakness map with a targeted drill plan for each gap."
 techniques:
   - ST-01
@@ -17,10 +17,10 @@ tags:
   - metacognition
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_mistake_log_reviewer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_error_correction_cycle.md
-  - domain-education-teaching/learner-study-skills/learnstudy_study_next_advisor.md
-  - domain-education-teaching/learner-study-skills/learnstudy_confidence_calibration.md
+  - domain-education-teaching/learner/self-assessment/learn_mistake_log_reviewer.md
+  - domain-education-teaching/learner/self-assessment/learn_error_correction_cycle.md
+  - domain-education-teaching/learner/exam-prep/learn_study_next_advisor.md
+  - domain-education-teaching/learner/self-assessment/learn_confidence_calibration.md
 ---
 
 ## Objective

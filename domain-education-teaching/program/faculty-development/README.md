@@ -6,11 +6,11 @@
 
 | Prompt | What It Produces |
 |---|---|
-| [`teaching_faculty_development_plan_designer.md`](teaching_faculty_development_plan_designer.md) | Multi-semester FD plan: needs assessment, topics, modalities, evaluation |
-| [`teaching_professional_learning_community_designer.md`](teaching_professional_learning_community_designer.md) | PLC cycle, norms, protocols, year arc, accountability |
-| [`teaching_instructional_coaching_program.md`](teaching_instructional_coaching_program.md) | Coaching model, cycle, observation tools, coach training, evaluation |
-| [`teaching_assessment_literacy_curriculum.md`](teaching_assessment_literacy_curriculum.md) | Six-module FD curriculum: purposes / item writing / rubrics / data / equity / closing the loop |
-| [`teaching_faculty_onboarding_program.md`](teaching_faculty_onboarding_program.md) | New-faculty onboarding: milestones, mentoring, equity-minded design |
+| [`program_faculty_development_plan_designer.md`](program_faculty_development_plan_designer.md) | Multi-semester FD plan: needs assessment, topics, modalities, evaluation |
+| [`program_professional_learning_community_designer.md`](program_professional_learning_community_designer.md) | PLC cycle, norms, protocols, year arc, accountability |
+| [`program_instructional_coaching_program.md`](program_instructional_coaching_program.md) | Coaching model, cycle, observation tools, coach training, evaluation |
+| [`program_assessment_literacy_curriculum.md`](program_assessment_literacy_curriculum.md) | Six-module FD curriculum: purposes / item writing / rubrics / data / equity / closing the loop |
+| [`program_faculty_onboarding_program.md`](program_faculty_onboarding_program.md) | New-faculty onboarding: milestones, mentoring, equity-minded design |
 
 ## Related
 

@@ -1,6 +1,6 @@
 ---
 title: "Faculty Onboarding Program Designer"
-category: education-teaching/faculty-development
+category: education-teaching/program/faculty-development
 description: "Design a new-faculty onboarding program — first-year milestones, mentor structure, required and recommended development, signaling and culture-building elements — across HE, K-12, or medical education contexts."
 techniques:
   - ST-02
@@ -21,8 +21,8 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_faculty_development_plan_designer.md
-  - teaching_instructional_coaching_program.md
+  - domain-education-teaching/program/faculty-development/program_faculty_development_plan_designer.md
+  - domain-education-teaching/program/faculty-development/program_instructional_coaching_program.md
 ---
 
 # Faculty Onboarding Program Designer

@@ -1,6 +1,6 @@
 ---
 title: "Speed-Grading Triage"
-category: education-teaching/grading-feedback
+category: education-teaching/instructor/grading-feedback
 description: "Sort a stack of student work into grade-deeply / grade-lightly / grade-quickly piles based on a triage protocol — protecting feedback quality where it matters and reclaiming hours where it doesn't."
 techniques:
   - CM-01
@@ -18,9 +18,9 @@ tags:
   - sustainable-teaching
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/grading-feedback/grading_essay_feedback_by_rubric_criterion.md
-  - domain-education-teaching/grading-feedback/grading_whole_class_feedback_memo.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_whole_class_feedback_memo.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
 ---
 
 # Speed-Grading Triage

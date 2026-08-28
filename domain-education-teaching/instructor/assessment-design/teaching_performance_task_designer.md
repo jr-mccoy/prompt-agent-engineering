@@ -1,6 +1,6 @@
 ---
 title: "Performance Task Designer"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-design
 description: "Design an authentic performance task with GRASPS framing, multi-day workflow, scaffolded student-facing prompt, analytic rubric, and exemplar response — assessing transfer, not recall."
 techniques:
   - CM-01
@@ -18,9 +18,9 @@ tags:
   - rubric
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/teaching_project_based_learning_designer.md
-  - domain-education-teaching/assessment/assessment_anchor_paper_exemplar_generator.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_project_based_learning_designer.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_anchor_paper_exemplar_generator.md
 ---
 
 # Performance Task Designer

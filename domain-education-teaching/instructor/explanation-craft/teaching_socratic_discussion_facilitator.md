@@ -1,6 +1,6 @@
 ---
 title: "Socratic Discussion Facilitator"
-category: education-teaching
+category: education-teaching/instructor/explanation-craft
 description: "Design and facilitate Socratic seminars and discussion-based learning experiences"
 tags:
   - education

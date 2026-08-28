@@ -42,5 +42,5 @@ when you are designing a **church's teaching program** — services, classes, qu
 - `../session-and-lesson/` — turning a module into an actual meeting
 - `../program-operations/` — running many people through the curriculum at once
 - `../../domain-biblical-studies/study-methods-teaching/` — Bible-study method inside a module
-- `../../domain-education-teaching/curriculum-design/` — the secular curriculum-mapping and
+- `../../domain-education-teaching/program/curriculum-design/` — the secular curriculum-mapping and
   backward-design machinery these prompts adapt

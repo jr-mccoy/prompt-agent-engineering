@@ -1,6 +1,6 @@
 ---
 title: "Logic Model & Theory of Change Designer"
-category: education-teaching/program-evaluation-analytics
+category: education-teaching/program/evaluation-analytics
 description: "Design a program logic model or theory of change — inputs / activities / outputs / short-mid-long outcomes — with assumptions surfaced, indicators specified, and external factors documented."
 techniques:
   - ST-02
@@ -21,8 +21,8 @@ tags:
   - grant-evaluation
 updated: "2026-05-15"
 related_prompts:
-  - teaching_program_evaluation_framework.md
-  - teaching_continuous_improvement_cycle.md
+  - domain-education-teaching/program/evaluation-analytics/program_program_evaluation_framework.md
+  - domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md
   - ../program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Oral Questioning Plan"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-items
 description: "Design a structured diagnostic oral questioning sequence — with opening questions, follow-up probes, and branching paths for correct and incorrect responses — so classroom questioning reveals thinking in real time."
 techniques:
   - ST-01
@@ -19,9 +19,9 @@ tags:
   - think-aloud
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_hinge_question_designer.md
-  - domain-education-teaching/teaching_exit_ticket_generator.md
-  - domain-education-teaching/assessment/assessment_diagnostic_quiz_knowledge_map.md
+  - domain-education-teaching/instructor/assessment-items/teaching_hinge_question_designer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_exit_ticket_generator.md
+  - domain-education-teaching/instructor/assessment-design/teaching_diagnostic_quiz_knowledge_map.md
 ---
 
 # Oral Questioning Plan

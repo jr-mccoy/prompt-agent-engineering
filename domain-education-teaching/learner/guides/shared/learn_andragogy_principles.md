@@ -1,6 +1,6 @@
 ---
 title: "Andragogy Principles for Adult Learners"
-category: education-teaching/guides/shared
+category: education-teaching/learner/guides/shared
 description: "Adult learning theory (Knowles, Mezirow, Brookfield) applied to prompt design. Why prompts for adults differ from prompts for traditional students, and what the difference looks like in practice."
 audience:
   - adult-learners
@@ -14,7 +14,7 @@ updated: "2026-05-13"
 
 ## Why This Document Exists
 
-The 40 learner-facing prompts in `domain-education-teaching/learner-*/` were designed for a "middle school / high school / college" audience — a default that effectively means traditional pedagogy. Adult learners, especially those returning to school after years away or pivoting careers, differ in ways that matter for how prompts should be structured. This document names those differences and shows how they shape the new `adult-learner/` prompts.
+The 40 learner-facing prompts in `domain-education-teaching/learner/` were designed for a "middle school / high school / college" audience — a default that effectively means traditional pedagogy. Adult learners, especially those returning to school after years away or pivoting careers, differ in ways that matter for how prompts should be structured. This document names those differences and shows how they shape the new `adult-learner/` prompts.
 
 It is **not** a research paper. It is a working translation of adult learning theory into prompt-design choices.
 
@@ -114,7 +114,7 @@ Here's the live tension this guide section addresses:
 
 Pedagogy almost always defaults Socratic. Andragogy says: respect the adult's self-direction; let them choose the mode.
 
-For the decision rule, see [`socratic_vs_direct_decision.md`](socratic_vs_direct_decision.md). The new adult-learner prompts default Socratic but include an "if you're under time pressure, here's the direct version" escape hatch on appropriate steps.
+For the decision rule, see [`learn_socratic_vs_direct_decision.md`](learn_socratic_vs_direct_decision.md). The new adult-learner prompts default Socratic but include an "if you're under time pressure, here's the direct version" escape hatch on appropriate steps.
 
 ## When Pedagogical Defaults Are Still Right
 
@@ -141,7 +141,7 @@ When writing a prompt aimed at adults, run it through this checklist:
 - [ ] Does the prompt avoid infantilizing language ("Great job!", "Let's learn together!", emoji)?
 - [ ] Would a 45-year-old with a graduate degree and 20 years of work experience feel respected by this prompt?
 
-The 9 new adult-learner prompts in `domain-education-teaching/adult-learner/` all pass this checklist by construction.
+The 9 new adult-learner prompts in `domain-education-teaching/learner/adult-learner/` all pass this checklist by construction.
 
 ## References (for the curious)
 
@@ -153,4 +153,4 @@ These are pointers, not citations the prompts depend on. The principles above ar
 
 ---
 
-*Part of [`../README.md`](../README.md). Paired with [`socratic_vs_direct_decision.md`](socratic_vs_direct_decision.md) and [`ai_as_study_partner_integrity.md`](ai_as_study_partner_integrity.md).*
+*Part of [`../README.md`](../README.md). Paired with [`learn_socratic_vs_direct_decision.md`](learn_socratic_vs_direct_decision.md) and [`learn_ai_as_study_partner_integrity.md`](learn_ai_as_study_partner_integrity.md).*

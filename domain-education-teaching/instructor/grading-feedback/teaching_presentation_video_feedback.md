@@ -1,6 +1,6 @@
 ---
 title: "Student Presentation / Video Feedback"
-category: education-teaching/grading-feedback
+category: education-teaching/instructor/grading-feedback
 description: "Generate timestamped feedback on a student presentation or video — content, structure, delivery, and visual aids — that names a single highest-leverage revision while protecting the relational stakes of giving public-performance feedback."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - high-school
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/grading-feedback/grading_essay_feedback_by_rubric_criterion.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/grading-feedback/grading_comment_library_generator.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_comment_library_generator.md
 ---
 
 # Student Presentation / Video Feedback

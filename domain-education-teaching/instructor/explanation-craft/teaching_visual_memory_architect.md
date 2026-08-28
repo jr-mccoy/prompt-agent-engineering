@@ -1,6 +1,6 @@
 ---
 title: "Visual Memory Architect"
-category: education-teaching
+category: education-teaching/instructor/explanation-craft
 description: "Transform any concept into a spatial, visual memory structure — memory palaces, mental maps, journey pegs, and scene-based encoding — so learners remember by SEEING, not repeating"
 tags:
   - education
@@ -264,13 +264,13 @@ Now translate back: What scientific method step does each location represent?
 - RT-02 (Multi-Dimensional Analysis) — Memory type classification and technique matching
 
 **Related Prompts:**
-- `domain-education-teaching/teaching_concept_explorer_kids.md` — Kid-friendly concept explanation (5-10)
-- `domain-education-teaching/teaching_concept_decoder_teens.md` — Teen concept decoding (11-17)
-- `domain-education-teaching/teaching_concept_clarity_adults.md` — Adult concept clarity
-- `domain-education-teaching/teaching_story_based_explainer.md` — Narrative-driven concept teaching
-- `domain-education-teaching/teaching_analogy_engine.md` — Systematic analogy construction
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md` — Kid-friendly concept explanation (5-10)
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_decoder_teens.md` — Teen concept decoding (11-17)
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_clarity_adults.md` — Adult concept clarity
+- `domain-education-teaching/instructor/explanation-craft/teaching_story_based_explainer.md` — Narrative-driven concept teaching
+- `domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md` — Systematic analogy construction
 - `domain-learning-coding/learning_flashcard_generator.md` — Spaced repetition card creation
-- `domain-education-teaching/teaching_study_guide_generator.md` — Comprehensive study guide creation
+- `domain-education-teaching/learner/memory-and-recall/learn_study_guide_builder.md` — Comprehensive study guide creation
 
 **Customization Guide:**
 - **For younger learners (10-13):** Use simpler, sillier images. Limit to 5-7 locations per palace. Emphasize the "gross/funny" angle for vividness — kids remember disgusting and hilarious scenes best.

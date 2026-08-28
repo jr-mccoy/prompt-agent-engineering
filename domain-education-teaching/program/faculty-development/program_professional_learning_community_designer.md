@@ -1,6 +1,6 @@
 ---
 title: "Professional Learning Community (PLC) Designer"
-category: education-teaching/faculty-development
+category: education-teaching/program/faculty-development
 description: "Design a Professional Learning Community structure — cycle, norms, protocols, artifacts, and accountability — for a teacher team, faculty group, or cross-program cohort, producing a sustained inquiry-and-improvement community rather than a meeting."
 techniques:
   - ST-02
@@ -20,9 +20,9 @@ tags:
   - collaborative-learning
 updated: "2026-05-15"
 related_prompts:
-  - teaching_faculty_development_plan_designer.md
-  - teaching_instructional_coaching_program.md
-  - teaching_assessment_literacy_curriculum.md
+  - domain-education-teaching/program/faculty-development/program_faculty_development_plan_designer.md
+  - domain-education-teaching/program/faculty-development/program_instructional_coaching_program.md
+  - domain-education-teaching/program/faculty-development/program_assessment_literacy_curriculum.md
 ---
 
 # Professional Learning Community (PLC) Designer

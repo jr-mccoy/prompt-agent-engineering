@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Credential Pathway Decision"
-category: education-teaching/guides/career-changers
+category: education-teaching/learner/guides/career-changers
 description: "Decide between degree, certificate, bootcamp, MOOC, on-the-job training, and self-study for a career pivot. Anchors on the target field's actual hiring signals, not the field's discourse. Output: a defensible recommendation with reasoning shown."
 audience: career-changers
 chain_length: 3
@@ -35,8 +35,8 @@ A specific credential pathway recommendation with the reasoning shown — includ
 ### Step 1 — Pre-work: Confirm the pivot is the right move (skip if already done)
 
 **Prompts:**
-- [`../../../domain-personal-development/career-transformation/career_role_structural_vulnerability.md`](../../../domain-personal-development/career-transformation/career_role_structural_vulnerability.md) — assess your current role's risk
-- [`../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md`](../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md) — inventory what transfers
+- [`../../../../domain-personal-development/career-transformation/career_role_structural_vulnerability.md`](../../../../domain-personal-development/career-transformation/career_role_structural_vulnerability.md) — assess your current role's risk
+- [`../../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md`](../../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md) — inventory what transfers
 
 **Skip if:** you've already done strategic pivot work and just need the credential decision.
 
@@ -46,7 +46,7 @@ A specific credential pathway recommendation with the reasoning shown — includ
 
 ### Step 2 — Run the credential pathway decision prompt
 
-**Prompt:** [`../../adult-learner/adult_credential_pathway_decision.md`](../../adult-learner/adult_credential_pathway_decision.md)
+**Prompt:** [`../../adult-learner/learn_credential_pathway_decision.md`](../../adult-learner/learn_credential_pathway_decision.md)
 
 **Input:** target role, postings, current situation, time horizon, financial constraints
 
@@ -114,14 +114,14 @@ Spread over 1–3 weeks. Don't rush a decision that costs $20K+ or 12+ months.
 
 Once the credential pathway is chosen, the next workflow depends on which pathway:
 
-- **Self-study** → [`workflow_skill_pivot_self_study_plan.md`](workflow_skill_pivot_self_study_plan.md)
+- **Self-study** → [`learn_workflow_skill_pivot_self_study_plan.md`](learn_workflow_skill_pivot_self_study_plan.md)
 - **Bootcamp** → enroll; supplement with self-study plan during; portfolio workflow in parallel
 - **Degree** → enroll; supplement with portfolio workflow during
 - **Cert** → study for the exam; pair with portfolio workflow
 - **OJT** → negotiate the lateral; portfolio workflow during
 
-In all cases, the portfolio workflow ([`workflow_portfolio_while_learning.md`](workflow_portfolio_while_learning.md)) runs in parallel.
+In all cases, the portfolio workflow ([`learn_workflow_portfolio_while_learning.md`](learn_workflow_portfolio_while_learning.md)) runs in parallel.
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). For the actual decision prompt, see [`../../adult-learner/adult_credential_pathway_decision.md`](../../adult-learner/adult_credential_pathway_decision.md).*
+*Part of [`GUIDE.md`](GUIDE.md). For the actual decision prompt, see [`../../adult-learner/learn_credential_pathway_decision.md`](../../adult-learner/learn_credential_pathway_decision.md).*

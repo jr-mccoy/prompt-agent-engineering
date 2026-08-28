@@ -13,11 +13,11 @@ This guide is for traditional college students (undergrad and grad, 18–22 typi
 
 ## What This Guide Does
 
-It tells you **which prompt to run, in what order, for the academic job in front of you.** Every workflow chains existing prompts from `domain-education-teaching/learner-*/` plus selected cross-domain prompts. Zero new prompts are required to use this section.
+It tells you **which prompt to run, in what order, for the academic job in front of you.** Every workflow chains existing prompts from `domain-education-teaching/learner/` plus selected cross-domain prompts. Zero new prompts are required to use this section.
 
 ## The Stance: AI as Study Partner, Not Ghostwriter
 
-Every prompt this guide points you to enforces a strict Socratic stance: AI quotes your text, asks diagnostic questions, names patterns, points to where revision is needed. **It does not write theses, paragraphs, citations, final answers, or finished outlines you could submit as your own work.** If you want to understand why that matters, read [`../shared/ai_as_study_partner_integrity.md`](../shared/ai_as_study_partner_integrity.md).
+Every prompt this guide points you to enforces a strict Socratic stance: AI quotes your text, asks diagnostic questions, names patterns, points to where revision is needed. **It does not write theses, paragraphs, citations, final answers, or finished outlines you could submit as your own work.** If you want to understand why that matters, read [`../shared/learn_ai_as_study_partner_integrity.md`](../shared/learn_ai_as_study_partner_integrity.md).
 
 This isn't an accident or a limitation. The prompts are designed this way because what an undergrad needs from AI in 2026 is calibrated practice and feedback — not a finished product that they didn't build the thinking for.
 
@@ -25,15 +25,15 @@ This isn't an accident or a limitation. The prompts are designed this way becaus
 
 | Your job | Workflow | Time |
 |----------|----------|------|
-| Write an essay (3–10 pages) | [`workflow_essay_draft_to_submit.md`](workflow_essay_draft_to_submit.md) | 4–10 hr over 3–5 sessions |
-| Write a research paper (10+ pages, multiple sources) | [`workflow_research_paper_full_arc.md`](workflow_research_paper_full_arc.md) | 15–40 hr over 2–4 weeks |
-| Prep for finals or a major exam | [`workflow_exam_prep_finals_week.md`](workflow_exam_prep_finals_week.md) | 6–20 hr over 1–2 weeks |
-| Solve STEM problem sets | [`workflow_stem_problem_solving.md`](workflow_stem_problem_solving.md) | Per problem |
-| Prep for office hours or class discussion | [`workflow_office_hours_and_class_discussion.md`](workflow_office_hours_and_class_discussion.md) | 20–45 min |
+| Write an essay (3–10 pages) | [`learn_workflow_essay_draft_to_submit.md`](learn_workflow_essay_draft_to_submit.md) | 4–10 hr over 3–5 sessions |
+| Write a research paper (10+ pages, multiple sources) | [`learn_workflow_research_paper_full_arc.md`](learn_workflow_research_paper_full_arc.md) | 15–40 hr over 2–4 weeks |
+| Prep for finals or a major exam | [`learn_workflow_exam_prep_finals_week.md`](learn_workflow_exam_prep_finals_week.md) | 6–20 hr over 1–2 weeks |
+| Solve STEM problem sets | [`learn_workflow_stem_problem_solving.md`](learn_workflow_stem_problem_solving.md) | Per problem |
+| Prep for office hours or class discussion | [`learn_workflow_office_hours_and_class_discussion.md`](learn_workflow_office_hours_and_class_discussion.md) | 20–45 min |
 
 ## Cross-Domain Prompts You'll Want
 
-College students need more than academic-task prompts. The [`cross_domain_kit.md`](cross_domain_kit.md) file points you to:
+College students need more than academic-task prompts. The [`learn_workflow_cross_domain_kit.md`](learn_workflow_cross_domain_kit.md) file points you to:
 
 - **Time and focus** — calendar audit, project chunking, focus-block context capture (from `domain-productivity/deep-work/`)
 - **Procrastination and perfectionism** — diagnostics that aren't just "stop procrastinating" (from `domain-productivity/bottlenecks/`)
@@ -44,7 +44,7 @@ College students need more than academic-task prompts. The [`cross_domain_kit.md
 
 The learner-facing prompts are strictly Socratic. That's right most of the time. But occasionally — when you're under hard deadline and you genuinely need information, not coaching — direct-answer mode is the right tool.
 
-See [`../shared/socratic_vs_direct_decision.md`](../shared/socratic_vs_direct_decision.md) for the decision rule. Short version: if the deliverable is graded work you're going to submit, stay Socratic. If you're trying to understand a concept you'll use later (and won't paste anything into a submission), direct is fine.
+See [`../shared/learn_socratic_vs_direct_decision.md`](../shared/learn_socratic_vs_direct_decision.md) for the decision rule. Short version: if the deliverable is graded work you're going to submit, stay Socratic. If you're trying to understand a concept you'll use later (and won't paste anything into a submission), direct is fine.
 
 ## Starting a Workflow
 

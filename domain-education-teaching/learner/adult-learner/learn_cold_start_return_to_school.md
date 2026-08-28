@@ -1,6 +1,6 @@
 ---
 title: "Cold Start: Returning to School After a Break"
-category: education-teaching/adult-learner
+category: education-teaching/learner/adult-learner
 description: "Structured ramp for adults returning to formal education after years away. Handles syllabus decoding, time-on-task recalibration, academic-tone rehearsal, and what to expect in the first 4 weeks. Andragogy-aware; respects the learner's experience."
 techniques:
   - CM-01
@@ -20,10 +20,10 @@ tags:
 intended_use: production
 updated: "2026-05-13"
 related_prompts:
-  - domain-education-teaching/adult-learner/adult_working_learner_time_architecture.md
-  - domain-education-teaching/adult-learner/adult_writing_rust_recovery.md
-  - domain-education-teaching/adult-learner/adult_imposter_age_cohort_calibration.md
-  - domain-education-teaching/guides/shared/andragogy_principles.md
+  - domain-education-teaching/learner/adult-learner/learn_working_learner_time_architecture.md
+  - domain-education-teaching/learner/adult-learner/learn_writing_rust_recovery.md
+  - domain-education-teaching/learner/adult-learner/learn_imposter_age_cohort_calibration.md
+  - domain-education-teaching/learner/guides/shared/learn_andragogy_principles.md
 ---
 
 # Cold Start: Returning to School After a Break
@@ -212,4 +212,4 @@ A 41-year-old returning to community college for an associate's in nursing after
 
 ---
 
-*Part of [`../guides/adult-returning/`](../guides/adult-returning/). Run this prompt 1–2 weeks before the term starts, or in week 1 if you've already started. Follow up with [`adult_working_learner_time_architecture.md`](adult_working_learner_time_architecture.md) once your schedule stabilizes.*
+*Part of [`../guides/adult-returning/`](../guides/adult-returning/). Run this prompt 1–2 weeks before the term starts, or in week 1 if you've already started. Follow up with [`learn_working_learner_time_architecture.md`](learn_working_learner_time_architecture.md) once your schedule stabilizes.*

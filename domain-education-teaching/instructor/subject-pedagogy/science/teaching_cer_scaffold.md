@@ -1,6 +1,6 @@
 ---
 title: "Science Claim-Evidence-Reasoning Scaffold"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/science
 description: "Build CER scaffolds at three tiers (heavy, medium, light) for a specific science task — pushing students from sentence frames to independent argument from evidence over the year."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - writing-in-science
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_science_lab_activity_designer.md
-  - domain-education-teaching/learner-math-science/learnsci_lab_report_scaffold.md
-  - domain-education-teaching/grading-feedback/grading_lab_report_feedback.md
+  - domain-education-teaching/instructor/subject-pedagogy/science/teaching_lab_activity_designer.md
+  - domain-education-teaching/learner/math-science/learn_lab_report_scaffold.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_lab_report_feedback.md
 ---
 
 # Science CER Scaffold (Three-Tier)

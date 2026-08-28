@@ -1,6 +1,6 @@
 ---
 title: "In-Person to Online Course Conversion"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Convert an existing in-person course (semester or quarter) into an online or hybrid version with realistic faculty workload, assessment-aligned redesign, and a release-ready module sequence."
 techniques:
   - ST-02
@@ -18,10 +18,10 @@ tags:
   - faculty-development
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_async_lms_module_designer.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_lecture_to_active_learning_converter.md
-  - domain-education-teaching/teaching_syllabus_course_designer.md
-  - domain-education-teaching/ed-tech/edtech_blended_hyflex_lesson_designer.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_async_lms_module_designer.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_lecture_to_active_learning.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_syllabus_course_designer.md
+  - domain-education-teaching/instructor/ed-tech/teaching_blended_hyflex_lesson_designer.md
 ---
 
 # In-Person to Online Course Conversion

@@ -1,6 +1,6 @@
 ---
 title: "Competency Framework Designer (Parameterized by Sector)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Build a competency framework for a program — domains, sub-competencies, observable performance indicators, and progression levels — parameterized for K-12, higher-ed, workforce/CTE, or medical-education contexts. Uses a two-phase workflow (architecture approval, then full descriptors) with a fix-then-report self-audit."
 techniques:
   - ST-02
@@ -25,8 +25,8 @@ tags:
   - onet
 updated: "2026-07-18"
 related_prompts:
-  - teaching_competency_mapping_workforce.md
-  - teaching_milestone_alignment_designer.md
+  - domain-education-teaching/program/curriculum-design/program_competency_mapping_workforce.md
+  - domain-education-teaching/program/curriculum-design/program_milestone_alignment_designer.md
   - ../program-outcomes-assessment/teaching_program_outcomes_framework.md
   - ../program-outcomes-assessment/teaching_competency_assessment_evidence_design.md
 ---

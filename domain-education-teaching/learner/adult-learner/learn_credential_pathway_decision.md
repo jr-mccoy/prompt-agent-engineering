@@ -1,6 +1,6 @@
 ---
 title: "Credential Pathway Decision: Degree, Cert, Bootcamp, MOOC, OJT, or Self-Study"
-category: education-teaching/adult-learner
+category: education-teaching/learner/adult-learner
 description: "Help an adult learner decide which credentialing pathway fits their target role, time horizon, financial situation, and existing skill base. Honest about cost, time, opportunity cost, and signal value per field. Not a sales pitch for any pathway."
 techniques:
   - DS-02
@@ -21,7 +21,7 @@ tags:
 intended_use: production
 updated: "2026-05-13"
 related_prompts:
-  - domain-education-teaching/adult-learner/adult_skill_pivot_self_study_plan.md
+  - domain-education-teaching/learner/adult-learner/learn_skill_pivot_self_study_plan.md
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
   - domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md
@@ -277,4 +277,4 @@ The recommendation rejects the most common impulse (MBA) for the right reason gi
 
 ---
 
-*Part of [`../guides/career-changers/`](../guides/career-changers/). Run before [`adult_skill_pivot_self_study_plan.md`](adult_skill_pivot_self_study_plan.md) if the pathway is still undecided.*
+*Part of [`../guides/career-changers/`](../guides/career-changers/). Run before [`learn_skill_pivot_self_study_plan.md`](learn_skill_pivot_self_study_plan.md) if the pathway is still undecided.*

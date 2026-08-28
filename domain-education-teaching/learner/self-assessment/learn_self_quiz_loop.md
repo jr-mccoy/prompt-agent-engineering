@@ -1,6 +1,6 @@
 ---
 title: "Self-Quizzing Loop"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/self-assessment
 description: "Runs a structured self-quizzing protocol across multiple concepts: predict → attempt → reveal → evaluate → log. Generates a session summary with pass/fail per concept and recommended next session focus."
 techniques:
   - ST-01
@@ -17,10 +17,10 @@ tags:
   - active-recall
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_confidence_calibration.md
-  - domain-education-teaching/learner-study-skills/learnstudy_weak_area_diagnosis.md
-  - domain-education-teaching/teaching_study_knowledge_tester.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/self-assessment/learn_confidence_calibration.md
+  - domain-education-teaching/learner/exam-prep/learn_weak_area_diagnosis.md
+  - domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md
 ---
 
 ## Objective

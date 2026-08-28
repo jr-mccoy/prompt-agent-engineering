@@ -1,6 +1,6 @@
 ---
 title: "Retrieval Drill Designer"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/memory-and-recall
 description: "Designs a multi-round retrieval practice drill sequence: generates questions at increasing difficulty, alternates formats (cued recall, free recall, application, transfer), and tracks which concepts have been tested."
 techniques:
   - ST-01
@@ -17,9 +17,9 @@ tags:
   - interleaving
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/learner-study-skills/learnstudy_practice_test_generator.md
-  - domain-education-teaching/learner-study-skills/learnstudy_self_quiz_loop.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/learner/exam-prep/learn_practice_test_generator.md
+  - domain-education-teaching/learner/self-assessment/learn_self_quiz_loop.md
 ---
 
 ## Objective

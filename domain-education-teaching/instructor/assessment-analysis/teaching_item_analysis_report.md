@@ -1,6 +1,6 @@
 ---
 title: "Item Analysis Report"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-analysis
 description: "Take class quiz results and produce a diagnostic item analysis — difficulty indices, distractor frequency patterns, items to flag, student error clusters, and a prioritized reteach agenda — designed for classroom teachers, not psychometricians."
 techniques:
   - ST-01
@@ -19,10 +19,10 @@ tags:
   - instructional-response
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_quiz_to_reteach_plan.md
-  - domain-education-teaching/assessment/assessment_item_difficulty_calibrator.md
-  - domain-education-teaching/assessment/assessment_diagnostic_quiz_knowledge_map.md
-  - domain-education-teaching/assessment/assessment_mastery_check_designer.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_quiz_to_reteach_plan.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_item_difficulty_calibrator.md
+  - domain-education-teaching/instructor/assessment-design/teaching_diagnostic_quiz_knowledge_map.md
+  - domain-education-teaching/instructor/assessment-design/teaching_mastery_check_designer.md
 ---
 
 # Item Analysis Report

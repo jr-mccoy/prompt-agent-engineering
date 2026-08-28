@@ -1,6 +1,6 @@
 ---
 title: "Pronunciation Coach (Text Mode)"
-category: education-teaching/learner-language
+category: education-teaching/learner/language
 description: "Coach an L2 learner through specific pronunciation challenges using phonetic notation, placement descriptions, minimal pairs, stress patterns, and connected-speech rules — entirely in text."
 techniques:
   - ST-02
@@ -25,9 +25,9 @@ tags:
   - adult
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-language/learnlang_daily_conversation_drill.md
-  - domain-education-teaching/learner-language/learnlang_l2_grammar_explainer.md
-  - domain-education-teaching/learner-language/learnlang_topical_vocabulary_builder.md
+  - domain-education-teaching/learner/language/learn_daily_conversation_drill.md
+  - domain-education-teaching/learner/language/learn_l2_grammar_explainer.md
+  - domain-education-teaching/learner/language/learn_topical_vocabulary_builder.md
 ---
 
 # Pronunciation Coach (Text Mode)

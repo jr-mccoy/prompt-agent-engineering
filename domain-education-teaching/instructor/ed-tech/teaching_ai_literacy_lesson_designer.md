@@ -1,6 +1,6 @@
 ---
 title: "AI Literacy Lesson Designer"
-category: education-teaching
+category: education-teaching/instructor/ed-tech
 description: "Design age-appropriate lessons teaching students about AI concepts, critical evaluation, and ethical reasoning"
 tags:
   - education

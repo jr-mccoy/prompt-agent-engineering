@@ -1,6 +1,6 @@
 ---
 title: "Concept Map Builder"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/memory-and-recall
 description: "Generates a structured concept map from a topic or set of notes: labeled nodes, typed relationship edges, hierarchy levels, and cross-links — output as a text tree and a drawing description for manual or tool-based rendering."
 techniques:
   - ST-01
@@ -17,9 +17,9 @@ tags:
   - exam-prep
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_textbook_chapter_breakdown.md
-  - domain-education-teaching/learner-study-skills/learnstudy_lecture_to_study_guide.md
-  - domain-education-teaching/learner-study-skills/learnstudy_mnemonic_designer.md
+  - domain-education-teaching/learner/note-taking/learn_textbook_chapter_breakdown.md
+  - domain-education-teaching/learner/note-taking/learn_lecture_to_study_guide.md
+  - domain-education-teaching/learner/memory-and-recall/learn_mnemonic_designer.md
 ---
 
 ## Objective

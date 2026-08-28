@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Writing Rust Recovery"
-category: education-teaching/guides/adult-returning
+category: education-teaching/learner/guides/adult-returning
 description: "Diagnose which specific academic-writing skills have rusted during years of professional writing, then rehearse the rusty ones before the first graded paper. Treats professional writing experience as a resource."
 audience: adult-learners-returning
 chain_length: 3
@@ -37,7 +37,7 @@ updated: "2026-05-13"
 
 ### Step 1 — Run the writing-rust recovery prompt
 
-**Prompt:** [`../../adult-learner/adult_writing_rust_recovery.md`](../../adult-learner/adult_writing_rust_recovery.md)
+**Prompt:** [`../../adult-learner/learn_writing_rust_recovery.md`](../../adult-learner/learn_writing_rust_recovery.md)
 
 **Input:** professional sample + assignment context + years since academic writing
 
@@ -72,7 +72,7 @@ Do them in a notebook or doc you won't submit. The purpose is calibration, not o
 
 Use the general essay workflow:
 
-**Workflow:** [`../college-students/workflow_essay_draft_to_submit.md`](../college-students/workflow_essay_draft_to_submit.md)
+**Workflow:** [`../college-students/learn_workflow_essay_draft_to_submit.md`](../college-students/learn_workflow_essay_draft_to_submit.md)
 
 Keep the carry-forward notes from Step 1 visible while drafting. Refer to them before each paragraph.
 
@@ -129,13 +129,13 @@ Professional writing skills that transfer directly:
 - **Returning STEM / engineering:** rust is often in narrative scientific writing (intro/discussion sections of papers) more than in formal lab reports. Pay attention to the move-pattern of academic introductions.
 - **Returning legal:** professional legal writing translates surprisingly well to academic law; the harder rust is humanities-style argumentation if entering an interdisciplinary program.
 - **Returning to a doctoral program after years away:** the rust applies; also re-read 3–5 papers in your sub-field to absorb the rhythm and vocabulary before drafting anything.
-- **First essay is a personal-statement / SOP:** different genre entirely — use [`workflow_prior_learning_articulation.md`](workflow_prior_learning_articulation.md) instead.
+- **First essay is a personal-statement / SOP:** different genre entirely — use [`learn_workflow_prior_learning_articulation.md`](learn_workflow_prior_learning_articulation.md) instead.
 
 ## After the First Paper
 
 After feedback on the first paper:
 
-**Prompt:** [`../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md`](../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md)
+**Prompt:** [`../../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md`](../../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md)
 
 Extract signal from the feedback. By paper 2, address 1–2 of the specific patterns. By paper 3, the rust is mostly gone.
 
@@ -143,4 +143,4 @@ Each subsequent paper uses the regular essay workflow without needing rust-speci
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). Run before the first graded paper. Pair with the general [`../college-students/workflow_essay_draft_to_submit.md`](../college-students/workflow_essay_draft_to_submit.md) for the actual draft.*
+*Part of [`GUIDE.md`](GUIDE.md). Run before the first graded paper. Pair with the general [`../college-students/learn_workflow_essay_draft_to_submit.md`](../college-students/learn_workflow_essay_draft_to_submit.md) for the actual draft.*

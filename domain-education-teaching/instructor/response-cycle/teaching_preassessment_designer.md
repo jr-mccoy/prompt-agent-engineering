@@ -1,6 +1,6 @@
 ---
 title: "Pre-Assessment Designer"
-category: education-teaching
+category: education-teaching/instructor/response-cycle
 description: "Design objective-aligned pre-assessments that surface misconceptions and drive instructional decisions"
 techniques:
   - ST-01
@@ -18,12 +18,12 @@ tags:
   - formative-assessment
 updated: "2026-05-05"
 related_prompts:
-  - domain-education-teaching/teaching_misconception_diagnoser.md
-  - domain-education-teaching/teaching_reteach_intervention_planner.md
-  - domain-education-teaching/teaching_small_group_rotation_planner.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/teaching_exit_ticket_generator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/response-cycle/teaching_reteach_intervention_planner.md
+  - domain-education-teaching/instructor/response-cycle/teaching_small_group_rotation_planner.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_exit_ticket_generator.md
 ---
 
 **Purpose:** Build high-leverage pre-assessments that align to unit objectives, reveal student readiness, classify misconceptions, and produce an immediate instructional response plan.

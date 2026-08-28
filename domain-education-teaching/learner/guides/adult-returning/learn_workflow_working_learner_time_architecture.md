@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Working-Learner Time Architecture"
-category: education-teaching/guides/adult-returning
+category: education-teaching/learner/guides/adult-returning
 description: "Design a defensible weekly time architecture for working adults in school — accounting for actual work hours, family floor, sleep, maintenance, and the higher per-credit-hour estimates that apply to returning learners. Forces explicit tradeoffs."
 audience: adult-learners-returning
 chain_length: 4
@@ -42,7 +42,7 @@ updated: "2026-05-13"
 
 ### Step 1 — Run the time architecture prompt
 
-**Prompt:** [`../../adult-learner/adult_working_learner_time_architecture.md`](../../adult-learner/adult_working_learner_time_architecture.md)
+**Prompt:** [`../../adult-learner/learn_working_learner_time_architecture.md`](../../adult-learner/learn_working_learner_time_architecture.md)
 
 **Input:** your full constraints (work, family, sleep, commitments) + course load
 
@@ -67,7 +67,7 @@ updated: "2026-05-13"
 
 After Step 1, the plan is theoretical. Validate it against the actual calendar:
 
-**Prompt:** [`../../../domain-productivity/deep-work/deepwork_calendar_audit.md`](../../../domain-productivity/deep-work/deepwork_calendar_audit.md)
+**Prompt:** [`../../../../domain-productivity/deep-work/deepwork_calendar_audit.md`](../../../../domain-productivity/deep-work/deepwork_calendar_audit.md)
 
 **Input:** your actual calendar for the next 2 weeks + the plan from Step 1
 
@@ -96,7 +96,7 @@ The conversations are not optional. People notice when you pull back; if you don
 
 ### Step 4 — Set up the weekly review
 
-**Prompt:** [`../../../domain-productivity/reviews/reviews_weekly_systems_review.md`](../../../domain-productivity/reviews/reviews_weekly_systems_review.md)
+**Prompt:** [`../../../../domain-productivity/reviews/reviews_weekly_systems_review.md`](../../../../domain-productivity/reviews/reviews_weekly_systems_review.md)
 
 **Cadence:** Sunday evening or Monday morning, 20–30 minutes
 
@@ -168,4 +168,4 @@ The architecture runs. The weekly review catches drift. If something fundamental
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). Run after [`workflow_cold_start_return.md`](workflow_cold_start_return.md). Re-run if the architecture breaks.*
+*Part of [`GUIDE.md`](GUIDE.md). Run after [`learn_workflow_cold_start_return.md`](learn_workflow_cold_start_return.md). Re-run if the architecture breaks.*

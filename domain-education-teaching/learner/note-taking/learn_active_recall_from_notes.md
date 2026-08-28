@@ -1,6 +1,6 @@
 ---
 title: "Active Recall Question Generator from Notes"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/note-taking
 description: "Convert a student's notes, slides, or readings into active-recall practice questions at multiple cognitive levels — for spaced retrieval study rather than passive re-reading."
 techniques:
   - CM-01
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_study_flashcard_generator.md
-  - domain-education-teaching/teaching_study_knowledge_tester.md
-  - domain-education-teaching/learner-study-skills/learnstudy_mistake_log_reviewer.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_generator.md
+  - domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md
+  - domain-education-teaching/learner/self-assessment/learn_mistake_log_reviewer.md
 ---
 
 # Active Recall Question Generator from Notes

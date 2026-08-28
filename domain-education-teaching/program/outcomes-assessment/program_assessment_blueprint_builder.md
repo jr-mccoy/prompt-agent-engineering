@@ -1,6 +1,6 @@
 ---
 title: "Assessment Blueprint Builder (Test Specification Table)"
-category: education-teaching/program-outcomes-assessment
+category: education-teaching/program/outcomes-assessment
 description: "Build an assessment blueprint (test specification table) for a course or program assessment: objectives × cognitive level × item count + weight, ensuring proportional coverage of learning outcomes and Bloom's distribution match instructional emphasis."
 techniques:
   - ST-02
@@ -22,10 +22,10 @@ tags:
   - blooms-taxonomy
 updated: "2026-05-15"
 related_prompts:
-  - teaching_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
   - ../curriculum-design/teaching_blooms_taxonomy_calibrator.md
-  - teaching_competency_assessment_evidence_design.md
-  - teaching_rubric_alignment_to_outcomes.md
+  - domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
+  - domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md
 ---
 
 # Assessment Blueprint Builder

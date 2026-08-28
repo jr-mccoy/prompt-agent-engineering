@@ -1,6 +1,6 @@
 ---
 title: "Portfolio Assessment Designer"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-design
 description: "Design a portfolio assessment system: criteria for inclusion, curation rationale by the student, reflection scaffolds, calibration anchors, and a defensible scoring approach that rewards growth without losing rigor."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - capstone
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_anchor_paper_exemplar_generator.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/assessment/assessment_performance_task_designer.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_anchor_paper_exemplar_generator.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/assessment-design/teaching_performance_task_designer.md
 ---
 
 # Portfolio Assessment Designer

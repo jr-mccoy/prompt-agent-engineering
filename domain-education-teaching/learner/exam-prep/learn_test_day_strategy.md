@@ -1,6 +1,6 @@
 ---
 title: "Test Day Strategy Coach"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/exam-prep
 description: "Coach a student through pre-test preparation and during-test strategy — question prioritization, time allocation, and anxiety management — for a specific upcoming test."
 techniques:
   - ST-02
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_finals_week_plan.md
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/learner-study-skills/learnstudy_feynman_teach_back_coach.md
+  - domain-education-teaching/learner/exam-prep/learn_finals_week_plan.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/learner/memory-and-recall/learn_feynman_teach_back_coach.md
 ---
 
 # Test Day Strategy Coach

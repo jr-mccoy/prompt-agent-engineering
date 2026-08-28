@@ -1,6 +1,6 @@
 ---
 title: "Science Mechanism Drill"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Generates mechanism-focused retrieval drills for science courses (Physics, Chemistry, Biology): produces 'explain the mechanism of...' prompts at four depth levels, pairs each with a model answer, flags common causal errors, and tracks which mechanistic steps were missed."
 techniques:
   - ST-01
@@ -19,9 +19,9 @@ tags:
   - biology
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_science_problem_interleaver.md
-  - domain-education-teaching/learner-study-skills/learnstudy_error_correction_cycle.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/study-by-discipline/learn_science_problem_interleaver.md
+  - domain-education-teaching/learner/self-assessment/learn_error_correction_cycle.md
 ---
 
 ## Objective

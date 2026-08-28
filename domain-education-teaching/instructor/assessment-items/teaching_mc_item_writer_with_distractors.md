@@ -1,6 +1,6 @@
 ---
 title: "Multiple-Choice Item Writer with Distractor Analysis"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-items
 description: "Generate psychometrically defensible multiple-choice items — stem, key, and 3 distractors — each anchored to a specific objective, DOK level, and named misconception, with distractor rationale and item card."
 techniques:
   - CM-01
@@ -19,9 +19,9 @@ tags:
   - test-design
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
-  - domain-education-teaching/assessment/assessment_test_blueprint_table_of_specs.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/assessment-design/teaching_test_blueprint_table_of_specs.md
 ---
 
 # Multiple-Choice Item Writer with Distractor Analysis

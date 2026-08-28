@@ -1,6 +1,6 @@
 ---
 title: "Assignment Tracker and Weekly Planner"
-category: education-teaching/learner-time-discussion
+category: education-teaching/learner/time-and-discussion
 description: "Help a student build a personal assignment tracking system and map their current workload to their available hours — so nothing slips and they know what to work on each day."
 techniques:
   - ST-02
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-time-discussion/learntime_big_project_decomposer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_finals_week_plan.md
-  - domain-education-teaching/learner-study-skills/learnstudy_test_day_strategy.md
+  - domain-education-teaching/learner/time-and-discussion/learn_big_project_decomposer.md
+  - domain-education-teaching/learner/exam-prep/learn_finals_week_plan.md
+  - domain-education-teaching/learner/exam-prep/learn_test_day_strategy.md
 ---
 
 # Assignment Tracker and Weekly Planner

@@ -1,6 +1,6 @@
 ---
 title: "Differentiation Strategy Planner"
-category: education-teaching
+category: education-teaching/instructor/lesson-planning
 description: "Design differentiated instruction for diverse learners with varying readiness, interests, and learning profiles"
 tags:
   - education

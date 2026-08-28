@@ -1,6 +1,6 @@
 ---
 title: "Math Error Analysis Task Designer"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/math
 description: "Design a task in which students analyze a fictional student's wrong solution — locating the error, classifying the misconception, and writing the correction with reasoning — to convert misconception data into instructional leverage."
 techniques:
   - CM-01  # Context Framing
@@ -19,9 +19,9 @@ tags:
   - formative
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/teaching_misconception_diagnoser.md
-  - domain-education-teaching/learner-math-science/learnmath_error_analyzer_own_work.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_math_problem_string_designer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
+  - domain-education-teaching/learner/math-science/learn_math_error_analyzer.md
+  - domain-education-teaching/instructor/subject-pedagogy/math/teaching_problem_string_designer.md
 ---
 
 # Math Error Analysis Task Designer

@@ -1,6 +1,6 @@
 ---
 title: "Programmatic Accreditation Self-Study Builder (Parameterized)"
-category: education-teaching/accreditation-program-review
+category: education-teaching/program/accreditation-review
 description: "Build a programmatic-accreditation self-study (ABET, AACSB, CAEP, CCNE, ACPE, NAEYC, NASAD, NASM, etc.) — parameterized by accreditor — translating program evidence into criterion-aligned response sections with outcomes evidence, continuous improvement loop, and action plan."
 techniques:
   - ST-02
@@ -23,9 +23,9 @@ tags:
   - higher-ed
 updated: "2026-05-15"
 related_prompts:
-  - teaching_accreditation_self_study_he.md
-  - teaching_accreditation_self_study_meded.md
-  - teaching_accreditation_evidence_compiler.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_he.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_meded.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_evidence_compiler.md
   - ../program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md
 ---
 

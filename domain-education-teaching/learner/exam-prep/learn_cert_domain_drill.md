@@ -1,6 +1,6 @@
 ---
 title: "Technical Certification Domain Drill"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/exam-prep
 description: "Domain-weighted retrieval drill for IT/cloud/professional certifications: generates question sets proportional to actual exam domain percentages, tracks performance by domain, flags knowledge gaps, and produces a targeted re-study agenda aligned to exam weighting."
 techniques:
   - ST-01
@@ -22,9 +22,9 @@ tags:
   - exam-prep
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_professional_mcq_drill.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_exam_review_planner.md
+  - domain-education-teaching/learner/exam-prep/learn_professional_mcq_drill.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/exam-prep/learn_exam_review_planner.md
 ---
 
 ## Objective

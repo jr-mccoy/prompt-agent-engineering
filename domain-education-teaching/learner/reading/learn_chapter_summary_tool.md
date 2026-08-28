@@ -1,6 +1,6 @@
 ---
 title: "Chapter Summary Coach (Student Writes, AI Diagnoses)"
-category: education-teaching/learner-reading
+category: education-teaching/learner/reading
 description: "Coach a student to write their own chapter summary by asking what they understood, what they missed, and what matters — without summarizing the chapter for them."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-reading/learnread_annotation_coach.md
-  - domain-education-teaching/learner-reading/learnread_book_report_scaffold.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
+  - domain-education-teaching/learner/reading/learn_annotation_coach.md
+  - domain-education-teaching/learner/reading/learn_book_report_scaffold.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
 ---
 
 # Chapter Summary Coach (Student Writes, AI Diagnoses)

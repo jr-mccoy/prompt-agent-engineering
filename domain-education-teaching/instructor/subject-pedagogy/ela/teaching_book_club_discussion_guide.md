@@ -1,6 +1,6 @@
 ---
 title: "ELA Book Club Discussion Guide (4–6 Week)"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/ela
 description: "Design a 4–6 week book-club facilitation plan: pacing, discussion protocols by week, role rotation, accountable-talk moves, and a culminating task that lets students compare across books."
 techniques:
   - CM-01  # Context Framing
@@ -19,9 +19,9 @@ tags:
   - independent-reading
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_reading_conference_planner.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_close_reading_minilesson.md
-  - domain-education-teaching/teaching_socratic_discussion_facilitator.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_reading_conference_planner.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_close_reading_minilesson.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
 ---
 
 # ELA Book Club Discussion Guide (4–6 Week)

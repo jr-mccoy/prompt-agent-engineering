@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Cold Start Return to School"
-category: education-teaching/guides/adult-returning
+category: education-teaching/learner/guides/adult-returning
 description: "First-four-weeks ramp for adults returning to school after years away: syllabus decoding, time-on-task calibration, what's changed in higher ed, weekly tasks, questions to ask instructors. Anchors the rest of the semester."
 audience: adult-learners-returning
 chain_length: 3
@@ -37,7 +37,7 @@ updated: "2026-05-13"
 
 ### Step 1 — Run the cold-start prompt
 
-**Prompt:** [`../../adult-learner/adult_cold_start_return_to_school.md`](../../adult-learner/adult_cold_start_return_to_school.md)
+**Prompt:** [`../../adult-learner/learn_cold_start_return_to_school.md`](../../adult-learner/learn_cold_start_return_to_school.md)
 
 **Input:** course list, syllabi, time situation, specific worries
 
@@ -90,7 +90,7 @@ Why: a 15-minute introduction radically changes the rest of the semester. The in
 
 ### Step 4 — Run a weekly review starting week 2
 
-**Prompt:** [`../../../domain-productivity/reviews/reviews_weekly_systems_review.md`](../../../domain-productivity/reviews/reviews_weekly_systems_review.md)
+**Prompt:** [`../../../../domain-productivity/reviews/reviews_weekly_systems_review.md`](../../../../domain-productivity/reviews/reviews_weekly_systems_review.md)
 
 **Input:** your week — what was planned, what happened, what surprised you
 
@@ -127,8 +127,8 @@ This is the operating cadence for the rest of the semester. Don't skip.
 | Skipped instructor intros because you felt "too old" or "too senior" | Do them. Instructors love returning adults; you're not imposing. |
 | Didn't actually configure the LMS — figured it out as you go | This works for two weeks, then you miss a quiz buried in a Canvas module. Set up early. |
 | Didn't set up citation management because you'll "figure it out for the first paper" | Setting up Zotero takes 30 min. Doing it the night before a paper is due takes 3 hours and is miserable. |
-| Mid-week 2 panic: "I'm behind, this isn't working" | Normal. Run [`workflow_imposter_calibration_age_cohort.md`](workflow_imposter_calibration_age_cohort.md). Calibrate before concluding. |
-| Decided to "wait and see" before scheduling time blocks | Run [`workflow_working_learner_time_architecture.md`](workflow_working_learner_time_architecture.md). The week structures itself; you don't get to "wait and see." |
+| Mid-week 2 panic: "I'm behind, this isn't working" | Normal. Run [`learn_workflow_imposter_calibration_age_cohort.md`](learn_workflow_imposter_calibration_age_cohort.md). Calibrate before concluding. |
+| Decided to "wait and see" before scheduling time blocks | Run [`learn_workflow_working_learner_time_architecture.md`](learn_workflow_working_learner_time_architecture.md). The week structures itself; you don't get to "wait and see." |
 
 ## After the Cold Start
 
@@ -143,11 +143,11 @@ The cold start is one workflow. The rest of the semester runs on the systems it 
 
 ## Special Cases
 
-- **Returning to grad school after a master's gap:** the cold start still applies; the rust is usually in formal academic writing more than in study habits. Run [`workflow_writing_rust_recovery.md`](workflow_writing_rust_recovery.md) in parallel.
+- **Returning to grad school after a master's gap:** the cold start still applies; the rust is usually in formal academic writing more than in study habits. Run [`learn_workflow_writing_rust_recovery.md`](learn_workflow_writing_rust_recovery.md) in parallel.
 - **Returning to a different field than your prior degree:** combine this workflow with [`../career-changers/`](../career-changers/) workflows. The pivot context changes some of the questions to ask instructors.
 - **Online / async-only program:** the LMS and tools setup is even more important. Add 1–2 hours to step 2.
 - **Professional school (law, med, business):** the syllabus spine especially matters; these programs have lockstep curricula where falling behind compounds fast.
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). Run 1–2 weeks before classes start, or in week 1. Workflow chain continues with [`workflow_working_learner_time_architecture.md`](workflow_working_learner_time_architecture.md).*
+*Part of [`GUIDE.md`](GUIDE.md). Run 1–2 weeks before classes start, or in week 1. Workflow chain continues with [`learn_workflow_working_learner_time_architecture.md`](learn_workflow_working_learner_time_architecture.md).*

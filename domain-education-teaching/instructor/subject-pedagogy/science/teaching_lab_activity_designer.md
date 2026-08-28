@@ -1,6 +1,6 @@
 ---
 title: "Science Lab Activity Designer with CER Scaffold"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/science
 description: "Design a full hands-on science lab — investigation question, procedure, data collection, and Claim-Evidence-Reasoning scaffold — that has students do science rather than verify a known answer."
 techniques:
   - CM-01  # Context Framing
@@ -21,9 +21,9 @@ tags:
   - inquiry
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_science_cer_scaffold.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_science_ngss_phenomenon_selector.md
-  - domain-education-teaching/learner-math-science/learnsci_lab_report_scaffold.md
+  - domain-education-teaching/instructor/subject-pedagogy/science/teaching_cer_scaffold.md
+  - domain-education-teaching/instructor/subject-pedagogy/science/teaching_ngss_phenomenon_selector.md
+  - domain-education-teaching/learner/math-science/learn_lab_report_scaffold.md
 ---
 
 # Science Lab Activity Designer with CER Scaffold

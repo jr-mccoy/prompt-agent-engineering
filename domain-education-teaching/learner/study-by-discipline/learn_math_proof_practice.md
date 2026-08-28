@@ -1,6 +1,6 @@
 ---
 title: "Math Proof Practice"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Generates proof-construction practice with step-level prompts: produces a claim to prove, guides through proof strategy selection, prompts each logical step without giving it away, flags common logical errors for the proof type, and provides a self-evaluation rubric for assessing proof quality."
 techniques:
   - ST-01
@@ -18,9 +18,9 @@ tags:
   - self-evaluation
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_math_drill_sequencer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_feynman_teach_back_coach.md
-  - domain-education-teaching/learner-study-skills/learnstudy_error_correction_cycle.md
+  - domain-education-teaching/learner/study-by-discipline/learn_math_drill_sequencer.md
+  - domain-education-teaching/learner/memory-and-recall/learn_feynman_teach_back_coach.md
+  - domain-education-teaching/learner/self-assessment/learn_error_correction_cycle.md
 ---
 
 ## Objective

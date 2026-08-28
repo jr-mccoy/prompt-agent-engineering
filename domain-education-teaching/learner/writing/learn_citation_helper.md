@@ -1,6 +1,6 @@
 ---
 title: "Citation Format Helper (MLA / APA / Chicago)"
-category: education-teaching/learner-writing
+category: education-teaching/learner/writing
 description: "Help a student format citations and in-text references in MLA, APA 7, or Chicago style — by walking them through the source elements they need to identify, then formatting from those exact inputs."
 techniques:
   - CM-01
@@ -20,9 +20,9 @@ tags:
   - academic-integrity
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_source_credibility_evaluator.md
-  - domain-education-teaching/learner-writing/learnwrite_outline_generator.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
+  - domain-education-teaching/learner/writing/learn_source_credibility_evaluator.md
+  - domain-education-teaching/learner/writing/learn_outline_generator.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
 ---
 
 # Citation Format Helper (MLA / APA / Chicago)

@@ -1,6 +1,6 @@
 ---
 title: "Project-Based Learning Designer"
-category: education-teaching
+category: education-teaching/instructor/lesson-planning
 description: "Design authentic PBL units with driving questions, sustained inquiry, and public products"
 tags:
   - education

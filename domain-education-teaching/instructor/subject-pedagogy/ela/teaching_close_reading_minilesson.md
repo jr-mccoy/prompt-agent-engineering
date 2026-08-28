@@ -1,6 +1,6 @@
 ---
 title: "ELA Close Reading Minilesson Designer"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/ela
 description: "Design a 20–30 minute close reading minilesson on a short text passage — text-dependent questions across three reads, evidence-based discussion moves, and a written response prompt."
 techniques:
   - CM-01
@@ -19,9 +19,9 @@ tags:
   - high-school
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/teaching_socratic_discussion_facilitator.md
-  - domain-education-teaching/teaching_reading_level_adapter.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_reading_level_adapter.md
 ---
 
 # ELA Close Reading Minilesson Designer

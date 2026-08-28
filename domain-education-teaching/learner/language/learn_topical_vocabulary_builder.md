@@ -1,6 +1,6 @@
 ---
 title: "Topical Vocabulary Builder (L2, Context-First)"
-category: education-teaching/learner-language
+category: education-teaching/learner/language
 description: "Help an L2 learner acquire and produce vocabulary around a specific topic — using contextual presentation, meaning inference, production practice, and spaced recall — without simply handing them a word list."
 techniques:
   - ED-03
@@ -23,9 +23,9 @@ tags:
   - adult
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-language/learnlang_daily_conversation_drill.md
-  - domain-education-teaching/learner-language/learnlang_idiom_decoder.md
-  - domain-education-teaching/learner-reading/learnread_vocabulary_in_context_decoder.md
+  - domain-education-teaching/learner/language/learn_daily_conversation_drill.md
+  - domain-education-teaching/learner/language/learn_idiom_decoder.md
+  - domain-education-teaching/learner/reading/learn_vocabulary_in_context_decoder.md
 ---
 
 # Topical Vocabulary Builder (L2, Context-First)

@@ -1,6 +1,6 @@
 ---
 title: "Counterargument Coach (Socratic, No Writing)"
-category: education-teaching/learner-writing
+category: education-teaching/learner/writing
 description: "Help a student surface, evaluate, and integrate the strongest counterarguments to their own thesis through diagnostic questioning — the AI does not write the counterargument paragraph."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_thesis_with_critique.md
-  - domain-education-teaching/learner-writing/learnwrite_revision_socratic_coach.md
-  - domain-education-teaching/learner-writing/learnwrite_outline_generator.md
+  - domain-education-teaching/learner/writing/learn_thesis_with_critique.md
+  - domain-education-teaching/learner/writing/learn_revision_socratic_coach.md
+  - domain-education-teaching/learner/writing/learn_outline_generator.md
 ---
 
 # Counterargument Coach (Socratic, No Writing)

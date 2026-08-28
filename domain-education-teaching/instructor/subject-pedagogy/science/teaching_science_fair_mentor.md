@@ -1,6 +1,6 @@
 ---
 title: "Science Fair Project Mentor (Student-Facing)"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/science
 description: "Coach a student through the full science fair arc — question, hypothesis, design, data, analysis, board, presentation — with Socratic guidance that keeps the work the student's, not the AI's."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - mentor
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/learner-math-science/learnsci_lab_report_scaffold.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_science_cer_scaffold.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_science_lab_activity_designer.md
+  - domain-education-teaching/learner/math-science/learn_lab_report_scaffold.md
+  - domain-education-teaching/instructor/subject-pedagogy/science/teaching_cer_scaffold.md
+  - domain-education-teaching/instructor/subject-pedagogy/science/teaching_lab_activity_designer.md
 ---
 
 # Science Fair Project Mentor (Student-Facing)

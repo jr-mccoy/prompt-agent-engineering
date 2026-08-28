@@ -1,6 +1,6 @@
 ---
 title: "DOK Item Generator (All 4 Levels)"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-items
 description: "Generate a coordinated set of items at all 4 Depth of Knowledge levels on a single standard — recall, skill/concept, strategic thinking, and extended thinking — with item-design analysis showing why each item lives at its DOK."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - test-design
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_test_blueprint_table_of_specs.md
-  - domain-education-teaching/assessment/assessment_blooms_question_stem_bank.md
-  - domain-education-teaching/assessment/assessment_mc_item_writer_with_distractors.md
+  - domain-education-teaching/instructor/assessment-design/teaching_test_blueprint_table_of_specs.md
+  - domain-education-teaching/instructor/assessment-items/teaching_blooms_question_stem_bank.md
+  - domain-education-teaching/instructor/assessment-items/teaching_mc_item_writer_with_distractors.md
 ---
 
 # DOK Item Generator (All 4 Levels)

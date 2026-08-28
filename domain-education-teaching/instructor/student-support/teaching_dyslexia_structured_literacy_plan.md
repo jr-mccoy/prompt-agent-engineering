@@ -1,6 +1,6 @@
 ---
 title: "Dyslexia Structured Literacy Plan"
-category: education-teaching/inclusive
+category: education-teaching/instructor/student-support
 description: "Build a structured-literacy intervention plan for a student with dyslexia or characteristics of dyslexia — sequenced phonological, decoding, fluency, and comprehension components, progress monitoring, and classroom accommodations."
 techniques:
   - CM-01
@@ -19,9 +19,9 @@ tags:
   - special-education
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_iep_goal_writer.md
-  - domain-education-teaching/inclusive/inclusive_504_accommodation_menu.md
-  - domain-education-teaching/teaching_reading_level_adapter.md
+  - domain-education-teaching/instructor/student-support/teaching_iep_goal_writer.md
+  - domain-education-teaching/instructor/student-support/teaching_504_accommodation_menu.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_reading_level_adapter.md
 ---
 
 # Dyslexia Structured Literacy Plan

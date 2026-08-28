@@ -1,6 +1,6 @@
 ---
 title: "High-School Graduation Tracker & Intervention Planner"
-category: education-teaching/advising
+category: education-teaching/instructor/student-support
 description: "Track a high-school student's progress toward graduation requirements, surface gaps, and design specific interventions — anchored on the user's jurisdiction's requirements (which the user supplies)."
 techniques:
   - ST-02
@@ -18,9 +18,9 @@ tags:
   - student-support
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/advising/advising_course_selection_advisor.md
-  - domain-education-teaching/teaching_iep_goal_writer.md
-  - domain-education-teaching/teaching_reteach_intervention_planner.md
+  - domain-education-teaching/instructor/student-support/teaching_course_selection_advising.md
+  - domain-education-teaching/instructor/student-support/teaching_iep_goal_writer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_reteach_intervention_planner.md
 ---
 
 # High-School Graduation Tracker & Intervention Planner

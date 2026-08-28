@@ -1,6 +1,6 @@
 ---
 title: "Nursing NCLEX Drill"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Generates NCLEX-style alternate-format questions: SATA (Select All That Apply), ordered response, priority/delegation questions, and hot-spot descriptions. Includes rationale for correct and incorrect options and test-taking strategy notes for each question type."
 techniques:
   - ST-01
@@ -19,9 +19,9 @@ tags:
   - test-taking-strategy
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_med_clinical_reasoning_drill.md
-  - domain-education-teaching/learner-study-skills/learnstudy_practice_test_generator.md
-  - domain-education-teaching/learner-study-skills/learnstudy_error_correction_cycle.md
+  - domain-education-teaching/learner/study-by-discipline/learn_med_clinical_reasoning_drill.md
+  - domain-education-teaching/learner/exam-prep/learn_practice_test_generator.md
+  - domain-education-teaching/learner/self-assessment/learn_error_correction_cycle.md
 ---
 
 ## Objective

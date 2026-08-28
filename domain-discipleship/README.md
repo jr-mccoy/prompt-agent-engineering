@@ -46,7 +46,7 @@ passage worked, this domain names the passage by address and hands off.
   [`domain-professional-communication/`](../domain-professional-communication/),
   [`domain-legal/`](../domain-legal/)
 - **You want general secular curriculum or learning-design machinery** →
-  [`domain-education-teaching/curriculum-design/`](../domain-education-teaching/curriculum-design/),
+  [`domain-education-teaching/program/curriculum-design/`](../domain-education-teaching/program/curriculum-design/),
   [`domain-learning/`](../domain-learning/)
 
 ---

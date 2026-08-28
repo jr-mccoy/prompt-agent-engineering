@@ -1,6 +1,6 @@
 ---
 title: "Learning Progression Map Designer"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Design an evidence-based learning progression for a single concept, skill, or competency — sequencing developmental waypoints from naive understanding through expert performance, with level-discriminating diagnostic probes, misconceptions framed as learner reasoning, and instructional moves at each level."
 techniques:
   - ST-02
@@ -21,10 +21,10 @@ tags:
   - medical-education
 updated: "2026-07-18"
 related_prompts:
-  - teaching_milestone_alignment_designer.md
-  - teaching_competency_framework_designer.md
-  - teaching_vertical_alignment_auditor.md
-  - teaching_remediation_pathway_designer.md
+  - domain-education-teaching/program/curriculum-design/program_milestone_alignment_designer.md
+  - domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
+  - domain-education-teaching/program/curriculum-design/program_vertical_alignment_auditor.md
+  - domain-education-teaching/program/curriculum-design/program_remediation_pathway_designer.md
 ---
 
 # Learning Progression Map Designer

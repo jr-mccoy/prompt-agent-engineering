@@ -1,6 +1,6 @@
 ---
 title: "Study Session: Practice Problems"
-category: education-teaching/study
+category: education-teaching/learner/tutoring
 description: "Generates graduated practice problems with progressive hints and fully worked solutions for college students, adapted to their demonstrated skill level."
 techniques:
   - ED-02  # Progressive Exercise Generation
@@ -18,11 +18,11 @@ tags:
   - exam-prep
 updated: "2026-03-06"
 related_prompts:
-  - domain-education-teaching/teaching_study_concept_teacher.md
-  - domain-education-teaching/teaching_study_knowledge_tester.md
-  - domain-education-teaching/teaching_study_flashcard_generator.md
-  - domain-education-teaching/teaching_study_guide_builder.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
+  - domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_generator.md
+  - domain-education-teaching/learner/memory-and-recall/learn_study_guide_builder.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
 ---
 
 # Study Session: Practice Problems

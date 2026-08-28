@@ -1,6 +1,6 @@
 ---
 title: "Lecture-to-Study-Guide Converter"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/note-taking
 description: "Converts raw lecture notes or transcripts into a structured, exam-ready study guide with learning objectives, key claims, examples, and self-check questions."
 techniques:
   - ST-01
@@ -17,9 +17,9 @@ tags:
   - exam-prep
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/learner-study-skills/learnstudy_textbook_chapter_breakdown.md
-  - domain-education-teaching/teaching_study_guide_builder.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/learner/note-taking/learn_textbook_chapter_breakdown.md
+  - domain-education-teaching/learner/memory-and-recall/learn_study_guide_builder.md
 ---
 
 ## Objective

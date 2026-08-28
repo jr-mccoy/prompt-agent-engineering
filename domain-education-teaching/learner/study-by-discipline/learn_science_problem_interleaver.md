@@ -1,6 +1,6 @@
 ---
 title: "Science Problem Interleaver"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Generates interleaved problem sets for science courses that deliberately mix related topics to prevent false fluency from blocked practice. Produces sets with diagnostic tagging, a problem-type disclosure step, and a post-set analysis of which topic pairings caused errors."
 techniques:
   - ST-01
@@ -19,9 +19,9 @@ tags:
   - false-fluency
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_science_mechanism_drill.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_math_drill_sequencer.md
+  - domain-education-teaching/learner/study-by-discipline/learn_science_mechanism_drill.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/study-by-discipline/learn_math_drill_sequencer.md
 ---
 
 ## Objective

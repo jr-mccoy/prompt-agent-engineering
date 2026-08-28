@@ -1,6 +1,6 @@
 ---
 title: "Whole-Class Feedback Memo"
-category: education-teaching/grading-feedback
+category: education-teaching/instructor/grading-feedback
 description: "Synthesize a stack of student work into a single class-facing feedback memo — patterns, exemplar moves, common errors, and a next-action menu — saving hours over individual comments."
 techniques:
   - CM-01
@@ -18,9 +18,9 @@ tags:
   - efficiency
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/grading-feedback/grading_essay_feedback_by_rubric_criterion.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
-  - domain-education-teaching/teaching_reteach_intervention_planner.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/response-cycle/teaching_reteach_intervention_planner.md
 ---
 
 # Whole-Class Feedback Memo

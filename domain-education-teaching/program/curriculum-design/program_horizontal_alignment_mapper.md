@@ -1,6 +1,6 @@
 ---
 title: "Horizontal Alignment Mapper (Cross-Disciplinary, Same Level)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Map opportunities for cross-disciplinary alignment within a single grade or program level — coordinating timing of related content across subjects, identifying shared cognitive demands, and surfacing redundancies and contradictions across the curriculum experienced by the same learner."
 techniques:
   - ST-02
@@ -18,9 +18,9 @@ tags:
   - higher-ed
 updated: "2026-05-15"
 related_prompts:
-  - teaching_vertical_alignment_auditor.md
-  - teaching_scope_sequence_k12.md
-  - teaching_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_vertical_alignment_auditor.md
+  - domain-education-teaching/program/curriculum-design/program_scope_sequence_k12.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
 ---
 
 # Horizontal Alignment Mapper

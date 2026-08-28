@@ -1,6 +1,6 @@
 ---
 title: "Practice Test Generator"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/exam-prep
 description: "Produces a full-format, standalone practice test: mixed question types, point values, timing guidance, answer key, and a post-test self-score rubric — suitable for printing or independent use."
 techniques:
   - ST-01
@@ -17,9 +17,9 @@ tags:
   - timed-practice
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_self_quiz_loop.md
-  - domain-education-teaching/teaching_study_knowledge_tester.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/self-assessment/learn_self_quiz_loop.md
+  - domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md
 ---
 
 ## Objective

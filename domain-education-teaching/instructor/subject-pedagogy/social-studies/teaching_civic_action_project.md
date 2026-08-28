@@ -1,6 +1,6 @@
 ---
 title: "Social Studies Civic Action Project"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/social-studies
 description: "Design a multi-week student-led civic action project: issue selection, root-cause research, stakeholder analysis, action planning, execution, and reflection — with explicit non-partisan framing and feasibility constraints."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - service-learning
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_socialstudies_current_events_connector.md
-  - domain-education-teaching/teaching_project_based_learning_designer.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_socialstudies_primary_source_analysis.md
+  - domain-education-teaching/instructor/subject-pedagogy/social-studies/teaching_current_events_connector.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_project_based_learning_designer.md
+  - domain-education-teaching/instructor/subject-pedagogy/social-studies/teaching_primary_source_analysis.md
 ---
 
 # Social Studies Civic Action Project

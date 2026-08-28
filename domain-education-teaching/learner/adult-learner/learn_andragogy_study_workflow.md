@@ -1,6 +1,6 @@
 ---
 title: "Andragogy-Aware Study Workflow for Adult Learners"
-category: education-teaching/adult-learner
+category: education-teaching/learner/adult-learner
 description: "A general study workflow tuned for how adult learners actually learn — problem-centered, experience-anchored, autonomy-respecting. Different from traditional study guides; assumes the learner can self-direct and brings prior context. Works across subjects."
 techniques:
   - CM-01
@@ -22,10 +22,10 @@ tags:
 intended_use: production
 updated: "2026-05-13"
 related_prompts:
-  - domain-education-teaching/guides/shared/andragogy_principles.md
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/learner-study-skills/learnstudy_feynman_teach_back_coach.md
-  - domain-education-teaching/learner-study-skills/learnstudy_mistake_log_reviewer.md
+  - domain-education-teaching/learner/guides/shared/learn_andragogy_principles.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/learner/memory-and-recall/learn_feynman_teach_back_coach.md
+  - domain-education-teaching/learner/self-assessment/learn_mistake_log_reviewer.md
 ---
 
 # Andragogy-Aware Study Workflow for Adult Learners
@@ -157,7 +157,7 @@ After each load-bearing concept, verify with teach-back:
 
 If the learner can't, the concept hasn't landed. Re-engage with Phase 4 (anchor in prior experience) or Phase 5 (apply to a different real problem).
 
-Use [`learnstudy_feynman_teach_back_coach.md`](../learner-study-skills/learnstudy_feynman_teach_back_coach.md) for deeper teach-back work.
+Use [`../memory-and-recall/learn_feynman_teach_back_coach.md`](../memory-and-recall/learn_feynman_teach_back_coach.md) for deeper teach-back work.
 
 ### Phase 7 — Mistake Capture (Direct)
 
@@ -238,4 +238,4 @@ A 47-year-old engineering manager learning organizational design as part of an e
 
 ---
 
-*Part of [`../guides/adult-returning/`](../guides/adult-returning/) and [`../guides/career-changers/`](../guides/career-changers/). Use as the meta-workflow over subject-specific study prompts. Pair with [`adult_working_learner_time_architecture.md`](adult_working_learner_time_architecture.md) for time allocation.*
+*Part of [`../guides/adult-returning/`](../guides/adult-returning/) and [`../guides/career-changers/`](../guides/career-changers/). Use as the meta-workflow over subject-specific study prompts. Pair with [`learn_working_learner_time_architecture.md`](learn_working_learner_time_architecture.md) for time allocation.*

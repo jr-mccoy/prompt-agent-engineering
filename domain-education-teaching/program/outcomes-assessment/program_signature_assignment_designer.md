@@ -1,6 +1,6 @@
 ---
 title: "Signature Assignment Designer (HE Program-Level Evidence)"
-category: education-teaching/program-outcomes-assessment
+category: education-teaching/program/outcomes-assessment
 description: "Design a signature assignment — an embedded course-level assessment that produces program-outcome evidence — including the task, rubric, scoring protocol, sampling plan, and PSLO traceability for accreditation and continuous improvement."
 techniques:
   - ST-02
@@ -19,9 +19,9 @@ tags:
   - psloevidence
 updated: "2026-05-15"
 related_prompts:
-  - teaching_outcomes_to_assessment_mapper.md
-  - teaching_rubric_alignment_to_outcomes.md
-  - teaching_capstone_assessment_designer.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md
+  - domain-education-teaching/program/outcomes-assessment/program_capstone_assessment_designer.md
   - ../curriculum-design/teaching_curriculum_map_builder.md
 ---
 

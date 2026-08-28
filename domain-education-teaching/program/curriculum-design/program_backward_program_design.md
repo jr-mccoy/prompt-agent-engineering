@@ -1,6 +1,6 @@
 ---
 title: "Backward Program Design (UbD at Program Scale)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Design or substantially redesign a complete educational or training program using Understanding by Design at program scale: define desired graduate capabilities, specify acceptable graduation-level evidence, and construct a coherent curriculum that produces that evidence with traceable alignment from transfer goals through program outcomes, assessments, courses, and learning experiences."
 techniques:
   - ST-02
@@ -27,11 +27,11 @@ tags:
   - medical-education
 updated: "2026-07-20"
 related_prompts:
-  - teaching_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
   - ../program-outcomes-assessment/teaching_program_outcomes_framework.md
   - ../program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md
-  - teaching_competency_framework_designer.md
-  - teaching_learning_objectives_writer_blooms.md
+  - domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
+  - domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md
   - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
 ---
 

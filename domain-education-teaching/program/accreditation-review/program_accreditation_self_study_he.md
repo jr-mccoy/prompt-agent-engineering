@@ -1,6 +1,6 @@
 ---
 title: "Higher-Ed Accreditation Self-Study Builder (Parameterized by Regional Accreditor)"
-category: education-teaching/accreditation-program-review
+category: education-teaching/program/accreditation-review
 description: "Build a regional higher-ed accreditation self-study narrative — parameterized for HLC, MSCHE, SACSCOC, WSCUC, or NWCCU — translating institutional evidence into criterion-aligned response sections with strength/weakness assessment, evidence inventory, and quality-enhancement plan."
 techniques:
   - ST-02
@@ -23,9 +23,9 @@ tags:
   - regional-accreditation
 updated: "2026-05-15"
 related_prompts:
-  - teaching_accreditation_self_study_programmatic.md
-  - teaching_accreditation_evidence_compiler.md
-  - teaching_program_review_cycle_designer.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_programmatic.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_evidence_compiler.md
+  - domain-education-teaching/program/accreditation-review/program_program_review_cycle_designer.md
   - ../program-outcomes-assessment/teaching_program_gap_analysis.md
 ---
 

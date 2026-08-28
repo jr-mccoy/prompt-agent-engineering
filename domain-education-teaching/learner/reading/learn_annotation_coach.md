@@ -1,6 +1,6 @@
 ---
 title: "Text Annotation Coach (Socratic, Student Does the Work)"
-category: education-teaching/learner-reading
+category: education-teaching/learner/reading
 description: "Guide a student through a productive close-annotation routine — margin notes, markings, and questions — through prompting and modeling, never annotating the text for them."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-reading/learnread_authors_craft_analyzer.md
-  - domain-education-teaching/learner-reading/learnread_chapter_summary_tool.md
-  - domain-education-teaching/teaching_socratic_discussion_facilitator.md
+  - domain-education-teaching/learner/reading/learn_authors_craft_analyzer.md
+  - domain-education-teaching/learner/reading/learn_chapter_summary_tool.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
 ---
 
 # Text Annotation Coach (Socratic, Student Does the Work)

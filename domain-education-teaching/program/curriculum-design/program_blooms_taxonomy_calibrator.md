@@ -1,6 +1,6 @@
 ---
 title: "Bloom's Taxonomy Calibrator (Revised Taxonomy + Webb's DOK Audit)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Audit a set of existing learning objectives, assessment items, or curriculum components against the Revised Bloom's Taxonomy and Webb's Depth of Knowledge, flagging miscalibration and producing a recalibrated set with rewrite recommendations."
 techniques:
   - ST-02
@@ -23,8 +23,8 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_learning_objectives_writer_blooms.md
-  - teaching_standards_alignment_audit.md
+  - domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md
+  - domain-education-teaching/program/curriculum-design/program_standards_alignment_audit.md
   - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
 ---
 

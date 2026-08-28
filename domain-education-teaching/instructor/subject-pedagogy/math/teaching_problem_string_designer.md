@@ -1,6 +1,6 @@
 ---
 title: "Math Problem String Designer"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/math
 description: "Sequence a 4–6 problem string warm-up that uses the first problems as a helper for the later ones — surfacing a target strategy or relationship rather than drilling random computation."
 techniques:
   - CM-01  # Context Framing
@@ -19,9 +19,9 @@ tags:
   - warm-up
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_math_number_talks_designer.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_math_three_act_task_builder.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_math_error_analysis_task.md
+  - domain-education-teaching/instructor/subject-pedagogy/math/teaching_number_talks_designer.md
+  - domain-education-teaching/instructor/subject-pedagogy/math/teaching_three_act_task_builder.md
+  - domain-education-teaching/instructor/subject-pedagogy/math/teaching_math_error_analysis_task.md
 ---
 
 # Math Problem String Designer

@@ -1,6 +1,6 @@
 ---
 title: "Word Problem Decoder (Socratic, Student Solves)"
-category: education-teaching/learner-math-science
+category: education-teaching/learner/math-science
 description: "Coach a student to decode what a word problem is asking — identify given information, the unknown, and the right strategy — without setting up or solving the problem for them."
 techniques:
   - RP-04
@@ -19,9 +19,9 @@ tags:
   - high-school
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-math-science/learnmath_socratic_step_by_step_solver.md
-  - domain-education-teaching/learner-math-science/learnmath_error_analyzer_own_work.md
-  - domain-education-teaching/teaching_study_concept_teacher.md
+  - domain-education-teaching/learner/math-science/learn_math_socratic_solver.md
+  - domain-education-teaching/learner/math-science/learn_math_error_analyzer.md
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
 ---
 
 # Word Problem Decoder (Socratic, Student Solves)

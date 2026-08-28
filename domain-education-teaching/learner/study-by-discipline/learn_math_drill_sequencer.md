@@ -1,6 +1,6 @@
 ---
 title: "Math Drill Sequencer"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Designs a spaced, interleaved math problem sequence from a skill list: maps prerequisite dependencies, assigns problem difficulty tiers, schedules spacing based on recent performance, flags prerequisite gaps before drilling dependent skills, and generates the complete problem set."
 techniques:
   - ST-01
@@ -18,10 +18,10 @@ tags:
   - drill
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_math_proof_practice.md
-  - domain-education-teaching/learner-study-skills/learnstudy_science_problem_interleaver.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_weak_area_diagnosis.md
+  - domain-education-teaching/learner/study-by-discipline/learn_math_proof_practice.md
+  - domain-education-teaching/learner/study-by-discipline/learn_science_problem_interleaver.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/exam-prep/learn_weak_area_diagnosis.md
 ---
 
 ## Objective

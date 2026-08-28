@@ -1,6 +1,6 @@
 ---
 title: "Law Issue Spotting Drill"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Issue-spotting practice from fact patterns: generates hypothetical scenarios, prompts the learner to identify all legal issues, then compares coverage against a model issue checklist with gap analysis and IRAC scaffold for each identified issue."
 techniques:
   - ST-01
@@ -20,9 +20,9 @@ tags:
   - legal-analysis
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_law_rule_application.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_practice_test_generator.md
+  - domain-education-teaching/learner/study-by-discipline/learn_law_rule_application.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/exam-prep/learn_practice_test_generator.md
 ---
 
 ## Objective

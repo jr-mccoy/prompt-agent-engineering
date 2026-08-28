@@ -1,6 +1,6 @@
 ---
 title: "Short-Answer Item Writer with Response Spectrum"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-items
 description: "Generate short-answer assessment items with model answers, an annotated response spectrum (strong → misconception), a 0–3 scoring rubric, and feedback templates for each response tier — so wrong answers become diagnostic information."
 techniques:
   - ST-01
@@ -19,10 +19,10 @@ tags:
   - diagnostic
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_mc_item_writer_with_distractors.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/assessment/assessment_answer_key_generator.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/assessment-items/teaching_mc_item_writer_with_distractors.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/assessment-items/teaching_answer_key_generator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # Short-Answer Item Writer with Response Spectrum

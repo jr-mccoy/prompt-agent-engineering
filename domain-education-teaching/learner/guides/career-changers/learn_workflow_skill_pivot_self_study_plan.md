@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Skill-Pivot Self-Study Plan"
-category: education-teaching/guides/career-changers
+category: education-teaching/learner/guides/career-changers
 description: "Design a 3, 6, or 12-month self-study plan calibrated to the target role's actual hiring bar. Chains the pivot plan prompt with time architecture, portfolio strategy, and checkpoint design. Output: an end-to-end pivot plan you can defend."
 audience: career-changers
 chain_length: 5
@@ -27,13 +27,13 @@ A complete pivot plan: target definition, quarter-by-quarter milestones, weekly 
 - Time horizon (3, 6, or 12 months)
 - Hours per week available (5–25 typical for working adult)
 - Existing related skills
-- Current pathway decision (done [`workflow_credential_pathway_decision.md`](workflow_credential_pathway_decision.md))
+- Current pathway decision (done [`learn_workflow_credential_pathway_decision.md`](learn_workflow_credential_pathway_decision.md))
 
 ## The Chain
 
 ### Step 1 — Run the self-study plan prompt
 
-**Prompt:** [`../../adult-learner/adult_skill_pivot_self_study_plan.md`](../../adult-learner/adult_skill_pivot_self_study_plan.md)
+**Prompt:** [`../../adult-learner/learn_skill_pivot_self_study_plan.md`](../../adult-learner/learn_skill_pivot_self_study_plan.md)
 
 **Input:** target role, postings, time horizon, hours/week, existing skills, financial situation
 
@@ -55,7 +55,7 @@ A complete pivot plan: target definition, quarter-by-quarter milestones, weekly 
 
 ### Step 2 — Build the time architecture
 
-**Prompt:** [`../../adult-learner/adult_working_learner_time_architecture.md`](../../adult-learner/adult_working_learner_time_architecture.md)
+**Prompt:** [`../../adult-learner/learn_working_learner_time_architecture.md`](../../adult-learner/learn_working_learner_time_architecture.md)
 
 **Input:** your full week (work, family, sleep, other commitments) + the weekly hours from Step 1
 
@@ -71,7 +71,7 @@ A complete pivot plan: target definition, quarter-by-quarter milestones, weekly 
 
 ### Step 3 — Design the portfolio strategy
 
-**Prompt:** [`../../adult-learner/adult_portfolio_while_learning.md`](../../adult-learner/adult_portfolio_while_learning.md)
+**Prompt:** [`../../adult-learner/learn_portfolio_while_learning.md`](../../adult-learner/learn_portfolio_while_learning.md)
 
 **Input:** target role, current skill level, time per week, where the field's audience lives, your specific fears about shipping
 
@@ -85,7 +85,7 @@ A complete pivot plan: target definition, quarter-by-quarter milestones, weekly 
 
 ### Step 4 — Set up the andragogy-aware study workflow as your default
 
-**Prompt:** [`../../adult-learner/adult_andragogy_study_workflow.md`](../../adult-learner/adult_andragogy_study_workflow.md)
+**Prompt:** [`../../adult-learner/learn_andragogy_study_workflow.md`](../../adult-learner/learn_andragogy_study_workflow.md)
 
 **Input:** the first topic in your study plan
 
@@ -148,9 +148,9 @@ Total: 360 hours over 6 months. Portfolio: 5 artifacts. Applications: 20+ in las
 ## After Completion
 
 When the plan completes (and especially when the 100% milestone is hit):
-- Run [`workflow_proof_of_work_for_pivot.md`](workflow_proof_of_work_for_pivot.md) to position the work for applications
-- Run [`../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md`](../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md) on each application response (rejection, interview, offer) to extract signal for the next round
+- Run [`learn_workflow_proof_of_work_for_pivot.md`](learn_workflow_proof_of_work_for_pivot.md) to position the work for applications
+- Run [`../../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md`](../../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md) on each application response (rejection, interview, offer) to extract signal for the next round
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). Pair with [`workflow_portfolio_while_learning.md`](workflow_portfolio_while_learning.md) and [`workflow_proof_of_work_for_pivot.md`](workflow_proof_of_work_for_pivot.md).*
+*Part of [`GUIDE.md`](GUIDE.md). Pair with [`learn_workflow_portfolio_while_learning.md`](learn_workflow_portfolio_while_learning.md) and [`learn_workflow_proof_of_work_for_pivot.md`](learn_workflow_proof_of_work_for_pivot.md).*

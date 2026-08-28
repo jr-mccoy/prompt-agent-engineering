@@ -1,6 +1,6 @@
 ---
 title: "Reteach Intervention Planner"
-category: education-teaching
+category: education-teaching/instructor/response-cycle
 description: "Design targeted reteach interventions from diagnostic data with clear success criteria and reassessment gates"
 techniques:
   - ST-01
@@ -18,12 +18,12 @@ tags:
   - mastery
 updated: "2026-05-05"
 related_prompts:
-  - domain-education-teaching/teaching_misconception_diagnoser.md
-  - domain-education-teaching/teaching_preassessment_designer.md
-  - domain-education-teaching/teaching_small_group_rotation_planner.md
-  - domain-education-teaching/teaching_differentiation_planner.md
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/response-cycle/teaching_preassessment_designer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_small_group_rotation_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
 ---
 
 **Purpose:** Convert diagnostic evidence into high-impact reteach interventions aligned to objectives, misconception categories, and measurable mastery checkpoints.

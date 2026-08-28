@@ -1,6 +1,6 @@
 ---
 title: "Source Synthesis Chart Builder"
-category: education-teaching/learner-research
+category: education-teaching/learner/research
 description: "Guide a student to synthesize 3–5 sources across common themes, agreements, and disagreements — building a synthesis chart through diagnostic questions, without summarizing sources for them."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-research/learnresearch_question_refinement.md
-  - domain-education-teaching/learner-research/learnresearch_keyword_search_strategy.md
-  - domain-education-teaching/learner-writing/learnwrite_annotated_bibliography_helper.md
+  - domain-education-teaching/learner/research/learn_question_refinement.md
+  - domain-education-teaching/learner/research/learn_keyword_search_strategy.md
+  - domain-education-teaching/learner/writing/learn_annotated_bibliography_helper.md
 ---
 
 # Source Synthesis Chart Builder

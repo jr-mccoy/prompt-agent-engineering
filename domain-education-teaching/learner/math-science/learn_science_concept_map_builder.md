@@ -1,6 +1,6 @@
 ---
 title: "Science Concept Map Builder (Student Builds, AI Coaches)"
-category: education-teaching/learner-math-science
+category: education-teaching/learner/math-science
 description: "Coach a student to build a science concept map by identifying key concepts, relationships, and hierarchy — without drawing or completing the map for them."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - high-school
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/learner-study-skills/learnstudy_feynman_teach_back_coach.md
-  - domain-education-teaching/teaching_visual_memory_architect.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/learner/memory-and-recall/learn_feynman_teach_back_coach.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_visual_memory_architect.md
 ---
 
 # Science Concept Map Builder (Student Builds, AI Coaches)

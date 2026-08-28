@@ -1,6 +1,6 @@
 ---
 title: "Peer Review Protocol Designer"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-design
 description: "Design a structured peer review protocol — with a calibration activity, criteria-anchored reviewer checklist, sentence starters, reviewee response guide, and a feedback quality rubric — so peer review produces revision, not just reaction."
 techniques:
   - ST-01
@@ -19,9 +19,9 @@ tags:
   - student-agency
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_self_assessment_checklist_builder.md
-  - domain-education-teaching/assessment/assessment_feedback_drafting_coach.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/assessment-design/teaching_self_assessment_checklist_builder.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_feedback_drafting_coach.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
 ---
 
 # Peer Review Protocol Designer

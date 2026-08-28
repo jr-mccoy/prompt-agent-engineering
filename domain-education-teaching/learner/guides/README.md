@@ -43,7 +43,7 @@ If you're not sure, the table below maps common situations to the right path.
 
 ### `college-students/` — Workflow Kit (no new prompts)
 
-All workflows here chain **existing prompts** from `domain-education-teaching/learner-*/` plus selected productivity/identity prompts. Aimed at traditional 18–22 undergrads and grad students.
+All workflows here chain **existing prompts** from `domain-education-teaching/learner/` plus selected productivity/identity prompts. Aimed at traditional 18–22 undergrads and grad students.
 
 - `GUIDE.md` — overview, when to use which workflow
 - `workflow_essay_draft_to_submit.md` — topic → thesis → outline → draft → revise → integrity self-check
@@ -51,11 +51,11 @@ All workflows here chain **existing prompts** from `domain-education-teaching/le
 - `workflow_exam_prep_finals_week.md` — triage → spaced retrieval → mistake review → test-day strategy
 - `workflow_stem_problem_solving.md` — word problem decode → Socratic solve → error analysis
 - `workflow_office_hours_and_class_discussion.md` — turn confusion into productive questions
-- `cross_domain_kit.md` — productivity, identity, agency prompts useful at college
+- `learn_workflow_cross_domain_kit.md` — productivity, identity, agency prompts useful at college
 
 ### `adult-returning/` — Cold Start + Net-New Tooling
 
-For adults coming back to higher ed after a break — often working, often with families. **Some workflows here ship new prompts** (in `domain-education-teaching/adult-learner/`) that don't exist anywhere else in the repo yet.
+For adults coming back to higher ed after a break — often working, often with families. **Some workflows here ship new prompts** (in `domain-education-teaching/learner/adult-learner/`) that don't exist anywhere else in the repo yet.
 
 - `GUIDE.md` — overview, first-four-weeks ramp
 - `workflow_cold_start_return.md` — syllabus decoding, time-on-task recalibration, academic tone rehearsal
@@ -63,7 +63,7 @@ For adults coming back to higher ed after a break — often working, often with 
 - `workflow_writing_rust_recovery.md` — diagnose what's rusty and rehearse it
 - `workflow_imposter_calibration_age_cohort.md` — being 30/40/50+ in age-mixed classes
 - `workflow_prior_learning_articulation.md` — turn career experience into CPL portfolio or SOP language
-- `cross_domain_kit.md` — deep-work, identity, agency, career-transformation kit
+- `learn_workflow_cross_domain_kit.md` — deep-work, identity, agency, career-transformation kit
 
 ### `career-changers/` — Self-Directed Skill Pivot
 
@@ -74,7 +74,7 @@ For adults pivoting to a new field via degree, cert, bootcamp, MOOC, or self-stu
 - `workflow_credential_pathway_decision.md` — degree vs. cert vs. bootcamp vs. MOOC vs. OJT
 - `workflow_portfolio_while_learning.md` — ship public artifacts before mastery
 - `workflow_proof_of_work_for_pivot.md` — adapts existing proof-of-work portfolio prompt for pivot context
-- `cross_domain_kit.md` — career-transformation, agency, identity, bottlenecks kit
+- `learn_workflow_cross_domain_kit.md` — career-transformation, agency, identity, bottlenecks kit
 
 ### `shared/` — Cross-Cutting Foundations
 
@@ -93,8 +93,8 @@ A typical college student's needs touch **3 domains** in this repo. A typical ad
 
 | Domain / Path | What it covers | Prompts |
 |---------------|----------------|--------:|
-| `domain-education-teaching/learner-*/` | Writing, research, study, time, reading, math/science | 40 |
-| `domain-education-teaching/adult-learner/` | Adult-specific: cold-start, time architecture, writing rust, imposter, prior learning, skill-pivot, credential pathway, portfolio-while-learning, andragogy workflow | 9 (new) |
+| `domain-education-teaching/learner/` | Writing, research, study, time, reading, math/science | 40 |
+| `domain-education-teaching/learner/adult-learner/` | Adult-specific: cold-start, time architecture, writing rust, imposter, prior learning, skill-pivot, credential pathway, portfolio-while-learning, andragogy workflow | 9 (new) |
 | `domain-personal-development/career-transformation/` | Coordination tax, role vulnerability, residual skills, 90-day repositioning | 4 |
 | `domain-personal-development/prompts/agency/` | Ownership, execution, skill-gap reframe, foundation session, proof-of-work, weekly review | 15 |
 | `domain-personal-development/prompts/identity/` | Confidence, comparison, values, life audit, purpose, taste | 7 |
@@ -125,10 +125,10 @@ You can run a workflow in one sitting or spread it across days. Each step names 
 
 ## Related Resources
 
-- [`../README.md`](../README.md) — full education domain catalog (130+ prompts including K-12, instructor-side, and corporate)
-- [`../field_guide.md`](../field_guide.md) — prompt engineering techniques specific to education
-- [`../../NON_CODING_QUICK_START.md`](../../NON_CODING_QUICK_START.md) — universal non-coding prompt principles
-- [`../../PROMPT_INDEX.md`](../../PROMPT_INDEX.md) — searchable index across all 2000+ prompts
+- [`../../README.md`](../../README.md) — full education domain catalog (130+ prompts including K-12, instructor-side, and corporate)
+- [`../../field_guide.md`](../../field_guide.md) — prompt engineering techniques specific to education
+- [`../../../NON_CODING_QUICK_START.md`](../../../NON_CODING_QUICK_START.md) — universal non-coding prompt principles
+- [`../../../PROMPT_INDEX.md`](../../../PROMPT_INDEX.md) — searchable index across all 2000+ prompts
 
 ---
 

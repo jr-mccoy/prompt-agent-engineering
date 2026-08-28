@@ -1,6 +1,6 @@
 ---
 title: "Concept Decoder for Teenagers (Ages 11-17)"
-category: education-teaching
+category: education-teaching/instructor/explanation-craft
 description: "Break down complex concepts into sharp, relatable explanations for teens using real-world parallels, thought experiments, and 'aha moment' engineering"
 tags:
   - education
@@ -249,14 +249,14 @@ Here's a dark application: antibiotic resistance. You take antibiotics for an in
 - RP-04 (Socratic Dialogue) — Prediction and explain-back tests simulate the Socratic method
 
 **Related Prompts:**
-- `domain-education-teaching/teaching_concept_explorer_kids.md` — Kids version (ages 5-10)
-- `domain-education-teaching/teaching_concept_clarity_adults.md` — Adult version
-- `domain-education-teaching/teaching_socratic_discussion_facilitator.md` — Build Socratic discussions around concepts
-- `domain-education-teaching/teaching_story_based_explainer.md` — Full narrative/allegory approach
-- `domain-education-teaching/teaching_analogy_engine.md` — Systematic analogy construction
-- `domain-education-teaching/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
-- `domain-education-teaching/teaching_exit_ticket_generator.md` — Assessment checks after explanation
-- `domain-education-teaching/teaching_vocabulary_builder.md` — Build domain vocabulary
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md` — Kids version (ages 5-10)
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_clarity_adults.md` — Adult version
+- `domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md` — Build Socratic discussions around concepts
+- `domain-education-teaching/instructor/explanation-craft/teaching_story_based_explainer.md` — Full narrative/allegory approach
+- `domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md` — Systematic analogy construction
+- `domain-education-teaching/instructor/explanation-craft/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
+- `domain-education-teaching/instructor/response-cycle/teaching_exit_ticket_generator.md` — Assessment checks after explanation
+- `domain-education-teaching/instructor/explanation-craft/teaching_vocabulary_builder.md` — Build domain vocabulary
 
 **Customization Guide:**
 - **For younger teens (11-13):** Lean more on concrete parallels (games, sports, school). Keep mechanism section to 4-5 sentences. Use more vivid imagery.

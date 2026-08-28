@@ -1,6 +1,6 @@
 ---
 title: "Stepwise Problem Coaching (Hint Ladder)"
-category: education-teaching/learner-tutoring/computer-science
+category: education-teaching/learner/tutoring
 description: "Problem-solving tutor that provides progressively stronger hints while preserving learner agency."
 techniques: [ED-01, NE-01, QA-08, DT-01]
 difficulty: intermediate

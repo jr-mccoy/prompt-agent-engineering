@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Portfolio While Learning"
-category: education-teaching/guides/career-changers
+category: education-teaching/learner/guides/career-changers
 description: "Ship public artifacts that signal your skill at the level it actually is, while you're still building. Compounds into a portfolio that lands the destination role without misrepresenting your level."
 audience: career-changers
 chain_length: 4
@@ -38,7 +38,7 @@ updated: "2026-05-13"
 
 ### Step 1 — Run the portfolio strategy prompt
 
-**Prompt:** [`../../adult-learner/adult_portfolio_while_learning.md`](../../adult-learner/adult_portfolio_while_learning.md)
+**Prompt:** [`../../adult-learner/learn_portfolio_while_learning.md`](../../adult-learner/learn_portfolio_while_learning.md)
 
 **Input:** target field, current skill level, time budget, platforms, existing work, specific fears
 
@@ -79,7 +79,7 @@ The first artifact should be small. The goal of Week 1 is to break the "I haven'
 
 After the first artifact ships:
 
-**Prompt:** [`../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md`](../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md)
+**Prompt:** [`../../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md`](../../../../domain-personal-development/prompts/agency/agency_feedback_extraction.md)
 
 **Input:** any responses, comments, DMs, silence
 
@@ -157,9 +157,9 @@ If it's not visible to people in the target field, it's not shipped.
 
 ## After the Workflow Runs
 
-- Use [`workflow_proof_of_work_for_pivot.md`](workflow_proof_of_work_for_pivot.md) when applying for target roles — your portfolio becomes the spine of the application story.
-- Run [`../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md`](../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md) every 90 days to re-evaluate what the portfolio is saying about you.
+- Use [`learn_workflow_proof_of_work_for_pivot.md`](learn_workflow_proof_of_work_for_pivot.md) when applying for target roles — your portfolio becomes the spine of the application story.
+- Run [`../../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md`](../../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md) every 90 days to re-evaluate what the portfolio is saying about you.
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). Pair with [`workflow_skill_pivot_self_study_plan.md`](workflow_skill_pivot_self_study_plan.md) — they're meant to run in parallel, not sequentially.*
+*Part of [`GUIDE.md`](GUIDE.md). Pair with [`learn_workflow_skill_pivot_self_study_plan.md`](learn_workflow_skill_pivot_self_study_plan.md) — they're meant to run in parallel, not sequentially.*

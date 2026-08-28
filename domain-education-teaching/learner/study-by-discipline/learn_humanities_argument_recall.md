@@ -1,6 +1,6 @@
 ---
 title: "Humanities Argument Recall"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Converts humanities readings into argument-structure recall drills: extracts claim → evidence → counterargument → rebuttal from each text, then runs answer-first retrieval practice where the learner reconstructs the argument without the text visible."
 techniques:
   - ST-01
@@ -20,10 +20,10 @@ tags:
   - literary-criticism
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/learner-study-skills/learnstudy_history_causal_drill.md
-  - domain-education-teaching/learner-study-skills/learnstudy_feynman_teach_back_coach.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/learner/study-by-discipline/learn_history_causal_drill.md
+  - domain-education-teaching/learner/memory-and-recall/learn_feynman_teach_back_coach.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
 ---
 
 ## Objective

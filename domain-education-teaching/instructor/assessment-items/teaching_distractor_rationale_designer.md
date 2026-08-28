@@ -1,6 +1,6 @@
 ---
 title: "Distractor Rationale Designer"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-items
 description: "Take any MC question and generate distractors where every wrong option is tied to a named, teachable misconception — with a teacher-facing rationale card and a targeted teaching move for each."
 techniques:
   - RT-03
@@ -18,9 +18,9 @@ tags:
   - test-design
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_mc_item_writer_with_distractors.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
-  - domain-education-teaching/assessment/assessment_answer_key_generator.md
+  - domain-education-teaching/instructor/assessment-items/teaching_mc_item_writer_with_distractors.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/assessment-items/teaching_answer_key_generator.md
 ---
 
 # Distractor Rationale Designer

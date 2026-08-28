@@ -1,6 +1,6 @@
 ---
 title: "Lab Report Scaffold (Student-Driven, Section by Section)"
-category: education-teaching/learner-math-science
+category: education-teaching/learner/math-science
 description: "Coach a student through writing their own lab report — purpose, hypothesis, methods, data, analysis (CER), conclusion, and sources of error — with structural scaffolds and diagnostic questions, never substituting student content."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_outline_generator.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_science_ngss_phenomenon_selector.md
+  - domain-education-teaching/learner/writing/learn_outline_generator.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
+  - domain-education-teaching/instructor/subject-pedagogy/science/teaching_ngss_phenomenon_selector.md
 ---
 
 # Lab Report Scaffold (Student-Driven, Section by Section)

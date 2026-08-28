@@ -1,6 +1,6 @@
 ---
 title: "Math Number Talk Designer"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/math
 description: "Design a 5–15 minute number talk that builds mental computation, reasoning, and discourse around a single computation or visual prompt — with anticipated student strategies and teacher moves."
 techniques:
   - CM-01  # Context Framing
@@ -19,9 +19,9 @@ tags:
   - formative
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_math_three_act_task_builder.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/subject-pedagogy/math/teaching_three_act_task_builder.md
 ---
 
 # Math Number Talk Designer

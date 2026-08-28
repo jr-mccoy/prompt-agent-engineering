@@ -1,6 +1,6 @@
 ---
 title: "Mnemonic and Memory Palace Designer"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/memory-and-recall
 description: "Designs custom memory aids for hard-to-retain material: acronyms, acrostics, method-of-loci (memory palace) instructions, peg systems, and elaborative encoding stories."
 techniques:
   - ST-01
@@ -18,9 +18,9 @@ tags:
   - retrieval-practice
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_concept_map_builder.md
-  - domain-education-teaching/learner-study-skills/learnstudy_lecture_to_study_guide.md
-  - domain-education-teaching/learner-study-skills/learnstudy_med_pharmacology_recall.md
+  - domain-education-teaching/learner/memory-and-recall/learn_concept_map_builder.md
+  - domain-education-teaching/learner/note-taking/learn_lecture_to_study_guide.md
+  - domain-education-teaching/learner/study-by-discipline/learn_med_pharmacology_recall.md
 ---
 
 ## Objective

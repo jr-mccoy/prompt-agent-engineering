@@ -1,6 +1,6 @@
 ---
 title: "Train-the-Trainer Guide"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Prepare internal subject-matter experts to deliver a training reliably — facilitator skills, content mastery, common-question pre-builds, and a confidence-and-quality calibration plan."
 techniques:
   - ST-02
@@ -18,9 +18,9 @@ tags:
   - learning-development
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_corporate_onboarding_program.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_compliance_training_module.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_lecture_to_active_learning_converter.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_corporate_onboarding_program.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_compliance_training_module.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_lecture_to_active_learning.md
 ---
 
 # Train-the-Trainer Guide

@@ -1,6 +1,6 @@
 ---
 title: "Medical Clinical Reasoning Drill"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Case-based clinical reasoning practice for medical students: generates chief complaint vignettes at increasing complexity, guides through the diagnostic reasoning chain (chief complaint → history → exam findings → DDx → workup → diagnosis), and includes self-scoring against a reference reasoning chain."
 techniques:
   - ST-01
@@ -19,9 +19,9 @@ tags:
   - diagnostics
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_med_pharmacology_recall.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_practice_test_generator.md
+  - domain-education-teaching/learner/study-by-discipline/learn_med_pharmacology_recall.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/exam-prep/learn_practice_test_generator.md
 ---
 
 ## Objective

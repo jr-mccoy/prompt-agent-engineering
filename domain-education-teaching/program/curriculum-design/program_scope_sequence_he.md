@@ -1,6 +1,6 @@
 ---
 title: "Higher-Ed Program Scope & Sequence (Course Sequencing & Prerequisites)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Design a higher-education program's scope and sequence — courses by term across the credential length, with prerequisites, gateway courses, capstone placement, credit-hour distribution, and Quality Matters or accreditor-aligned coherence checks."
 techniques:
   - ST-02
@@ -22,10 +22,10 @@ tags:
   - accreditation
 updated: "2026-05-15"
 related_prompts:
-  - teaching_curriculum_map_builder.md
-  - teaching_backward_program_design.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_backward_program_design.md
   - ../program-outcomes-assessment/teaching_program_outcomes_framework.md
-  - teaching_course_design_he.md
+  - domain-education-teaching/program/curriculum-design/program_course_design_he.md
 ---
 
 # Higher-Ed Program Scope & Sequence

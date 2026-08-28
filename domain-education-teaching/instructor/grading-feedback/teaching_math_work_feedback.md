@@ -1,6 +1,6 @@
 ---
 title: "Math Work Feedback (Process + Answer)"
-category: education-teaching/grading-feedback
+category: education-teaching/instructor/grading-feedback
 description: "Generate feedback on student math work that addresses the process — strategy choice, representation, reasoning, computation — not just the final answer, while pointing the student to the next move without solving the problem for them."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - misconceptions
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/grading-feedback/grading_essay_feedback_by_rubric_criterion.md
-  - domain-education-teaching/learner-math-science/learnmath_error_analyzer_own_work.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
+  - domain-education-teaching/learner/math-science/learn_math_error_analyzer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # Math Work Feedback (Process + Answer)

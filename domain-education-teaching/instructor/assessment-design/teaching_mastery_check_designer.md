@@ -1,6 +1,6 @@
 ---
 title: "Mastery Check Designer"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-design
 description: "Design a binary pass/retry mini-assessment for a single skill — with a mastery threshold, a parallel retry version, and a teacher note on what 'not yet' means instructionally."
 techniques:
   - ST-01
@@ -19,10 +19,10 @@ tags:
   - competency
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_quiz_to_reteach_plan.md
-  - domain-education-teaching/assessment/assessment_item_difficulty_calibrator.md
-  - domain-education-teaching/teaching_exit_ticket_generator.md
-  - domain-education-teaching/assessment/assessment_standards_based_grading_converter.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_quiz_to_reteach_plan.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_item_difficulty_calibrator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_exit_ticket_generator.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_standards_based_grading_converter.md
 ---
 
 # Mastery Check Designer

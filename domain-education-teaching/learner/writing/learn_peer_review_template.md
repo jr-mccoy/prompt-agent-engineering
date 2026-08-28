@@ -1,6 +1,6 @@
 ---
 title: "Peer Review Coach (Student-Driven Framework)"
-category: education-teaching/learner-writing
+category: education-teaching/learner/writing
 description: "Guide a student through giving structured, criterion-based peer feedback on a classmate's draft — without telling the student what to say or rewriting the peer's work."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_revision_socratic_coach.md
-  - domain-education-teaching/learner-writing/learnwrite_thesis_with_critique.md
-  - domain-education-teaching/teaching_student_feedback_composer.md
+  - domain-education-teaching/learner/writing/learn_revision_socratic_coach.md
+  - domain-education-teaching/learner/writing/learn_thesis_with_critique.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_student_feedback_composer.md
 ---
 
 # Peer Review Coach (Student-Driven Framework)

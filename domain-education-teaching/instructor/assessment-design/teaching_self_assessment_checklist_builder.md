@@ -1,6 +1,6 @@
 ---
 title: "Self-Assessment Checklist Builder"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-design
 description: "Build student self-assessment tools calibrated to rubric criteria — with observable behavioral indicators at each performance level, a self-rating scale, reflection prompts, and a teacher guide for using them before or after submission."
 techniques:
   - RT-05
@@ -19,9 +19,9 @@ tags:
   - revision
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/assessment/assessment_peer_review_protocol_designer.md
-  - domain-education-teaching/assessment/assessment_feedback_drafting_coach.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/assessment-design/teaching_peer_review_protocol_designer.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_feedback_drafting_coach.md
 ---
 
 # Self-Assessment Checklist Builder

@@ -1,6 +1,6 @@
 ---
 title: "Worked-Example Fading Coach"
-category: education-teaching/learner-tutoring/computer-science
+category: education-teaching/learner/tutoring
 description: "Guides learners from full worked examples to independent problem-solving through staged scaffold fading."
 techniques: [ED-01, IT-20, DT-01, QA-08, DD-06]
 difficulty: advanced

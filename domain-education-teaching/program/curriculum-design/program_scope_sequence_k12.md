@@ -1,6 +1,6 @@
 ---
 title: "K-12 Scope & Sequence Architect (Multi-Year, Multi-Grade)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Design a K-12 multi-year scope-and-sequence for a subject area — grade-by-grade and unit-by-unit, with standards anchoring, prerequisite logic, spiraling/revisiting patterns, and pacing windows accounting for testing calendars."
 techniques:
   - ST-02
@@ -21,11 +21,11 @@ tags:
   - pacing
 updated: "2026-05-15"
 related_prompts:
-  - teaching_curriculum_map_builder.md
-  - teaching_vertical_alignment_auditor.md
-  - teaching_horizontal_alignment_mapper.md
-  - teaching_standards_alignment_audit.md
-  - teaching_progression_map_designer.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_vertical_alignment_auditor.md
+  - domain-education-teaching/program/curriculum-design/program_horizontal_alignment_mapper.md
+  - domain-education-teaching/program/curriculum-design/program_standards_alignment_audit.md
+  - domain-education-teaching/program/curriculum-design/program_progression_map_designer.md
 ---
 
 # K-12 Scope & Sequence Architect

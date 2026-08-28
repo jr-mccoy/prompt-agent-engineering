@@ -1,6 +1,6 @@
 ---
 title: "Corporate Onboarding Program Designer"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Design a multi-week onboarding program (typically 30–90 days) covering role readiness, systems access, culture orientation, and milestone checks — with manager and peer roles defined."
 techniques:
   - ST-02
@@ -17,9 +17,9 @@ tags:
   - employee-experience
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_compliance_training_module.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_microlearning_module.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_train_trainer_guide.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_compliance_training_module.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_microlearning_module.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_train_trainer_guide.md
 ---
 
 # Corporate Onboarding Program Designer

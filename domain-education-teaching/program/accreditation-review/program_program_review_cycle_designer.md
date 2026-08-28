@@ -1,6 +1,6 @@
 ---
 title: "Program Review Cycle Designer"
-category: education-teaching/accreditation-program-review
+category: education-teaching/program/accreditation-review
 description: "Design a periodic program review cycle — timeline, artifacts, data sources, review-committee process, and decision points — that meets institutional / accreditor expectations and feeds continuous improvement rather than producing shelf-ware reports."
 techniques:
   - ST-02
@@ -19,8 +19,8 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_accreditation_self_study_he.md
-  - teaching_accreditation_evidence_compiler.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_he.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_evidence_compiler.md
   - ../program-outcomes-assessment/teaching_program_gap_analysis.md
   - ../program-evaluation-analytics/teaching_continuous_improvement_cycle.md
 ---

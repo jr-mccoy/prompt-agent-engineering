@@ -1,6 +1,6 @@
 ---
 title: "Essay Feedback by Rubric Criterion"
-category: education-teaching/grading-feedback
+category: education-teaching/instructor/grading-feedback
 description: "Generate criterion-by-criterion essay feedback that quotes specific student evidence, names a single highest-leverage revision, and produces a one-line warm + cool summary — without rewriting the student's work."
 techniques:
   - CM-01
@@ -18,9 +18,9 @@ tags:
   - revision
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_student_feedback_composer.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/grading-feedback/grading_whole_class_feedback_memo.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_student_feedback_composer.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_whole_class_feedback_memo.md
 ---
 
 # Essay Feedback by Rubric Criterion

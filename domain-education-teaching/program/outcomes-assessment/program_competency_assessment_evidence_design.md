@@ -1,6 +1,6 @@
 ---
 title: "Competency Assessment Evidence Design (CBME-Style Evidence Plan)"
-category: education-teaching/program-outcomes-assessment
+category: education-teaching/program/outcomes-assessment
 description: "Design a multi-source, multi-occasion evidence plan for competency-based assessment — direct observations, work products, simulation, multi-source feedback, and learner artifacts — with sampling frequency, scoring guidance, and an entrustment/progression decision framework."
 techniques:
   - ST-02
@@ -26,8 +26,8 @@ updated: "2026-05-15"
 related_prompts:
   - ../curriculum-design/teaching_competency_framework_designer.md
   - ../curriculum-design/teaching_milestone_alignment_designer.md
-  - teaching_outcomes_to_assessment_mapper.md
-  - teaching_rubric_alignment_to_outcomes.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md
 ---
 
 # Competency Assessment Evidence Design

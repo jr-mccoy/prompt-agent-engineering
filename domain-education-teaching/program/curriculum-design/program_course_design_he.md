@@ -1,6 +1,6 @@
 ---
 title: "Higher-Ed Course Design (Constructive Alignment, Biggs)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Design a higher-education course using Biggs' constructive alignment — intended learning outcomes (ILOs) directly aligned with teaching/learning activities and assessment tasks — producing a full course shell including module sequence, assessment plan, workload computation, and accessibility review. Use whenever the user mentions course design, course redesign, syllabus creation, constructive alignment, ILOs, modality conversion, or aligning a course to program outcomes — even if they don't name Biggs explicitly."
 techniques:
   - ST-02
@@ -22,8 +22,8 @@ tags:
   - workload
 updated: "2026-07-18"
 related_prompts:
-  - teaching_scope_sequence_he.md
-  - teaching_learning_objectives_writer_blooms.md
+  - domain-education-teaching/program/curriculum-design/program_scope_sequence_he.md
+  - domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md
   - ../program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md
   - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
 ---

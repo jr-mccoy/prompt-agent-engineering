@@ -1,6 +1,6 @@
 ---
 title: "Teach Me From Scratch: Calibrated Concept Builder"
-category: education-teaching/learner-tutoring/cross-disciplinary
+category: education-teaching/learner/tutoring
 description: "Learner-facing tutoring workflow that starts from zero, calibrates prerequisites, and adaptively teaches in layered checkpoints."
 techniques:
   - ED-01  # Iterative Scaffolding

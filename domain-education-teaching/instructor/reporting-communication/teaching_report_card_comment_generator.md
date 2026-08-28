@@ -1,6 +1,6 @@
 ---
 title: "Report Card Comment Generator"
-category: education-teaching
+category: education-teaching/instructor/reporting-communication
 description: "Generate personalized, strengths-based report card comments by subject and development area"
 tags:
   - education

@@ -1,6 +1,6 @@
 ---
 title: "Language Vocabulary Acquisition"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Spaced vocabulary acquisition system for language learners: generates definition, example sentence, cognate analysis, anti-confusion pairs, usage register notes, and a review interval recommendation for each target word."
 techniques:
   - ST-01
@@ -18,9 +18,9 @@ tags:
   - register
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_language_grammar_drill.md
-  - domain-education-teaching/learner-study-skills/learnstudy_spaced_review_scheduler.md
-  - domain-education-teaching/learner-study-skills/learnstudy_flashcard_quality_auditor.md
+  - domain-education-teaching/learner/study-by-discipline/learn_language_grammar_drill.md
+  - domain-education-teaching/learner/memory-and-recall/learn_spaced_review_scheduler.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_quality_auditor.md
 ---
 
 ## Objective

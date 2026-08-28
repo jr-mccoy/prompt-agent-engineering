@@ -1,6 +1,6 @@
 ---
 title: "Medical Education Accreditation Self-Study Builder (Parameterized)"
-category: education-teaching/accreditation-program-review
+category: education-teaching/program/accreditation-review
 description: "Build a med-ed program self-study — parameterized for LCME, ACGME, COCA, or CODA — translating program evidence into element-aligned response sections with CQI data, learner outcomes, faculty/resource adequacy, and action plan."
 techniques:
   - ST-02
@@ -22,9 +22,9 @@ tags:
   - cqi
 updated: "2026-05-15"
 related_prompts:
-  - teaching_accreditation_self_study_he.md
-  - teaching_accreditation_self_study_programmatic.md
-  - teaching_accreditation_evidence_compiler.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_he.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_self_study_programmatic.md
+  - domain-education-teaching/program/accreditation-review/program_accreditation_evidence_compiler.md
   - ../../domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_cbme_implementation_program.md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Common Formative Assessment for PLC"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-design
 description: "Build a PLC-aligned common formative assessment (CFA): essential standard, item bank, scoring agreement, data-meeting protocol, and tiered instructional response — designed to drive collaborative inquiry, not grading uniformity."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - teacher-collaboration
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_test_blueprint_table_of_specs.md
-  - domain-education-teaching/assessment/assessment_anchor_paper_exemplar_generator.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/assessment-design/teaching_test_blueprint_table_of_specs.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_anchor_paper_exemplar_generator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # Common Formative Assessment for PLC

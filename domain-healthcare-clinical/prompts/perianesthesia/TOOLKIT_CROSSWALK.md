@@ -131,7 +131,7 @@ The three spine prompts and two maps are built from **education-design** donors 
 
 | Spine artifact | Design donor |
 |---|---|
-| `COMPETENCY_PROGRESSION_MAP.md` | `domain-education-teaching/curriculum-design/teaching_progression_map_designer.md` · `teaching_competency_framework_designer.md` · `teaching_milestone_alignment_designer.md` |
+| `COMPETENCY_PROGRESSION_MAP.md` | `domain-education-teaching/program/curriculum-design/program_progression_map_designer.md` · `teaching_competency_framework_designer.md` · `teaching_milestone_alignment_designer.md` |
 | `TOOLKIT_CROSSWALK.md` (this file) | toolkit's `pacu_aspan_competency_domain_crosswalk` concept |
 | `spine/pacu_self_assessment_blueprint.md` | `teaching_assessment_blueprint_builder.md` · `teaching_competency_assessment_evidence_design.md` |
 | `spine/pacu_growth_remediation_pathway.md` | `teaching_remediation_pathway_designer.md` |

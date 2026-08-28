@@ -1,6 +1,6 @@
 ---
 title: "Math Problem Coach (Socratic, No Final Answer)"
-category: education-teaching/learner-math-science
+category: education-teaching/learner/math-science
 description: "Guide a student through solving a math problem they're stuck on — through diagnostic questions, partial reveals, and stepping-stone prompts — without giving the final answer or computing the result for them."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/learner-math-science/learnmath_error_analyzer_own_work.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
-  - domain-education-teaching/teaching_study_concept_teacher.md
+  - domain-education-teaching/learner/math-science/learn_math_error_analyzer.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
 ---
 
 # Math Problem Coach (Socratic, No Final Answer)

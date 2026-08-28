@@ -1,6 +1,6 @@
 ---
 title: "NGSS Phenomenon Selector & Storyline Anchor"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/science
 description: "Select and frame an anchoring phenomenon for an NGSS unit — vetted against NGSS criteria, mapped to performance expectations and DCI/SEP/CCC, with student-question driver lines and a storyline arc."
 techniques:
   - CM-01
@@ -20,9 +20,9 @@ tags:
   - elementary
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_unit_curriculum_planner.md
-  - domain-education-teaching/teaching_standards_alignment_mapper.md
-  - domain-education-teaching/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_unit_curriculum_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_standards_alignment_mapper.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
 ---
 
 # NGSS Phenomenon Selector & Storyline Anchor

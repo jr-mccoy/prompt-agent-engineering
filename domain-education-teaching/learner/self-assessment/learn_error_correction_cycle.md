@@ -1,6 +1,6 @@
 ---
 title: "Error Correction Cycle"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/self-assessment
 description: "Transforms an error log into an active correction workflow: classifies error types (conceptual, procedural, careless), generates targeted remediation drills for each, and produces a do-over problem set to confirm correction."
 techniques:
   - ST-01
@@ -17,9 +17,9 @@ tags:
   - exam-prep
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_mistake_log_reviewer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_weak_area_diagnosis.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
+  - domain-education-teaching/learner/self-assessment/learn_mistake_log_reviewer.md
+  - domain-education-teaching/learner/exam-prep/learn_weak_area_diagnosis.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
 ---
 
 ## Objective

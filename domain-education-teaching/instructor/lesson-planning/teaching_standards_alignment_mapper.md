@@ -1,6 +1,6 @@
 ---
 title: "Standards Alignment & Crosswalk Mapper"
-category: education-teaching
+category: education-teaching/instructor/lesson-planning
 description: "Map curriculum to standards, identify coverage gaps, and generate cross-standard alignment documents"
 tags:
   - education

@@ -1,6 +1,6 @@
 ---
 title: "Item Difficulty Calibrator"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-analysis
 description: "Estimate and adjust the difficulty of a draft item set so the final assessment has an intentional difficulty distribution — flagging items that are too easy (no diagnostic value) or too hard (demoralizing), and suggesting rewrites to hit target difficulty bands."
 techniques:
   - QA-05
@@ -19,10 +19,10 @@ tags:
   - psychometrics
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_mc_item_writer_with_distractors.md
-  - domain-education-teaching/assessment/assessment_item_analysis_report.md
-  - domain-education-teaching/assessment/assessment_mastery_check_designer.md
-  - domain-education-teaching/assessment/assessment_test_blueprint_table_of_specs.md
+  - domain-education-teaching/instructor/assessment-items/teaching_mc_item_writer_with_distractors.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_item_analysis_report.md
+  - domain-education-teaching/instructor/assessment-design/teaching_mastery_check_designer.md
+  - domain-education-teaching/instructor/assessment-design/teaching_test_blueprint_table_of_specs.md
 ---
 
 # Item Difficulty Calibrator

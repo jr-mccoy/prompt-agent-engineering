@@ -1,6 +1,6 @@
 ---
 title: "Workforce Competency Mapping (O*NET, Industry Credentials, Apprenticeship)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Map a workforce-training curriculum to occupational competency sources — O*NET KSAs and work activities, industry credential body-of-knowledge, registered apprenticeship work-process schedule, and stackable credential frameworks — producing a competency × experience matrix and a labor-market alignment audit."
 techniques:
   - ST-02
@@ -21,10 +21,10 @@ tags:
   - labor-market-alignment
 updated: "2026-07-18"
 related_prompts:
-  - teaching_scope_sequence_workforce.md
-  - teaching_competency_framework_designer.md
-  - teaching_milestone_alignment_designer.md
-  - teaching_standards_crosswalk_generator.md
+  - domain-education-teaching/program/curriculum-design/program_scope_sequence_workforce.md
+  - domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
+  - domain-education-teaching/program/curriculum-design/program_milestone_alignment_designer.md
+  - domain-education-teaching/program/curriculum-design/program_standards_crosswalk_generator.md
 ---
 
 # Workforce Competency Mapping

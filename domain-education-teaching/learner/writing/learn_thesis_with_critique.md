@@ -1,6 +1,6 @@
 ---
 title: "Thesis Statement Coach (Socratic, No Rewriting)"
-category: education-teaching/learner-writing
+category: education-teaching/learner/writing
 description: "Coach a student to develop and sharpen their own thesis statement through diagnostic questions and structured critique — the AI never writes a thesis the student can copy."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_outline_generator.md
-  - domain-education-teaching/learner-writing/learnwrite_revision_socratic_coach.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
+  - domain-education-teaching/learner/writing/learn_outline_generator.md
+  - domain-education-teaching/learner/writing/learn_revision_socratic_coach.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
 ---
 
 # Thesis Statement Coach (Socratic, No Rewriting)

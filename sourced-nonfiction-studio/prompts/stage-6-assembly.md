@@ -4,7 +4,7 @@
 
 **Objective:** Emit (1) the fact→source matrix (audit trail), (2) the publish-ready cited manuscript, and (3) the risk report, in the chosen citation style.
 
-**Orchestrates:** `domain-research-academic/research_secondary_source_synthesis.md` (drafting engine), `domain-education-teaching/learner-writing/learnwrite_citation_helper.md` (style formatting), `config/citation-styles.yaml`.
+**Orchestrates:** `domain-research-academic/research_secondary_source_synthesis.md` (drafting engine), `domain-education-teaching/learner/writing/learn_citation_helper.md` (style formatting), `config/citation-styles.yaml`.
 
 **Precondition:** Gate A (Stage 5) = PASS. If FAIL, do not assemble — return to Stage 4 for the offending claims.
 

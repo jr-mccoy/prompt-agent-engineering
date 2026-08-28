@@ -1,6 +1,6 @@
 ---
 title: "Outcomes-to-Assessment Mapper (Program Evidence Plan)"
-category: education-teaching/program-outcomes-assessment
+category: education-teaching/program/outcomes-assessment
 description: "Map every program outcome (PSLO / competency / graduate-profile element) to the assessment evidence that produces signal for it — direct measures, indirect measures, single-source vs. triangulated — and audit the resulting evidence plan for sufficiency, alignment, and feasibility."
 techniques:
   - ST-02
@@ -23,10 +23,10 @@ tags:
   - accreditation
 updated: "2026-05-15"
 related_prompts:
-  - teaching_program_outcomes_framework.md
-  - teaching_assessment_blueprint_builder.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md
+  - domain-education-teaching/program/outcomes-assessment/program_assessment_blueprint_builder.md
   - ../curriculum-design/teaching_curriculum_map_builder.md
-  - teaching_competency_assessment_evidence_design.md
+  - domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
 ---
 
 # Outcomes-to-Assessment Mapper

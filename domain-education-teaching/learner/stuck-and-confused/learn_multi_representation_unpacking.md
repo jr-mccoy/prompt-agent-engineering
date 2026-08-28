@@ -1,6 +1,6 @@
 ---
 title: "Multi-Representation Concept Unpacking"
-category: education-teaching/learner-tutoring/math-science
+category: education-teaching/learner/stuck-and-confused
 description: "Explains abstract concepts through verbal, symbolic, graphical, and real-world forms with translation checks."
 techniques: [RT-04, ED-01, RP-02, QA-08]
 difficulty: intermediate

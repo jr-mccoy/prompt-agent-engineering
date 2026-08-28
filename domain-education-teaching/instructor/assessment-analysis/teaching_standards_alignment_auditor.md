@@ -1,6 +1,6 @@
 ---
 title: "Standards Alignment Auditor"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-analysis
 description: "Audit an existing assessment for alignment to stated standards — identifying misaligned items, over-tested standards, and uncovered standards — and produce a gap-repair list with replacement item suggestions."
 techniques:
   - DS-01
@@ -19,9 +19,9 @@ tags:
   - standards-based
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_test_blueprint_table_of_specs.md
-  - domain-education-teaching/assessment/assessment_standards_based_grading_converter.md
-  - domain-education-teaching/assessment/assessment_mc_item_writer_with_distractors.md
+  - domain-education-teaching/instructor/assessment-design/teaching_test_blueprint_table_of_specs.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_standards_based_grading_converter.md
+  - domain-education-teaching/instructor/assessment-items/teaching_mc_item_writer_with_distractors.md
 ---
 
 # Standards Alignment Auditor

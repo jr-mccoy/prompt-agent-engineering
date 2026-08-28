@@ -1,6 +1,6 @@
 ---
 title: "ELA Reading Conference Planner"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/ela
 description: "Plan a 5–7 minute 1:1 reading conference: research stance, decide one teaching point, deliver one named strategy, and capture notes the teacher can act on next time."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - middle-school
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_book_club_discussion_guide.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_close_reading_minilesson.md
-  - domain-education-teaching/teaching_student_feedback_composer.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_book_club_discussion_guide.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_close_reading_minilesson.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_student_feedback_composer.md
 ---
 
 # ELA Reading Conference Planner

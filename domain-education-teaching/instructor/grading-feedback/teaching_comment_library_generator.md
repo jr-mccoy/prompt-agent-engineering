@@ -1,6 +1,6 @@
 ---
 title: "Reusable Comment Library Generator"
-category: education-teaching/grading-feedback
+category: education-teaching/instructor/grading-feedback
 description: "Build a personal comment library indexed by rubric criterion and severity tier — so high-leverage feedback can be deployed quickly across a stack while staying specific enough to drive revision."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - high-school
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/grading-feedback/grading_essay_feedback_by_rubric_criterion.md
-  - domain-education-teaching/grading-feedback/grading_speed_grading_triage.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_speed_grading_triage.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
 ---
 
 # Reusable Comment Library Generator

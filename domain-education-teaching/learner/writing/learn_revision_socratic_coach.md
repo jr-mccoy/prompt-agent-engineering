@@ -1,6 +1,6 @@
 ---
 title: "Revision Coach (Socratic, No Rewriting)"
-category: education-teaching/learner-writing
+category: education-teaching/learner/writing
 description: "Coach a student to revise their own draft through diagnostic questions and pointed observations — never rewriting sentences, paragraphs, or sections that the student could substitute into their paper."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_thesis_with_critique.md
-  - domain-education-teaching/learner-writing/learnwrite_outline_generator.md
-  - domain-education-teaching/grading-feedback/grading_essay_feedback_by_rubric_criterion.md
+  - domain-education-teaching/learner/writing/learn_thesis_with_critique.md
+  - domain-education-teaching/learner/writing/learn_outline_generator.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
 ---
 
 # Revision Coach (Socratic, No Rewriting)

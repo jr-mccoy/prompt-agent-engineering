@@ -1,6 +1,6 @@
 ---
 title: "UDL Lesson Redesign"
-category: education-teaching/inclusive
+category: education-teaching/instructor/student-support
 description: "Audit and redesign an existing lesson against the three Universal Design for Learning principles — engagement, representation, action & expression — producing a per-component options menu and a learner-variability audit."
 techniques:
   - CM-01
@@ -18,9 +18,9 @@ tags:
   - lesson-design
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/teaching_differentiation_planner.md
-  - domain-education-teaching/inclusive/inclusive_504_accommodation_menu.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md
+  - domain-education-teaching/instructor/student-support/teaching_504_accommodation_menu.md
 ---
 
 # UDL Lesson Redesign

@@ -1,6 +1,6 @@
 ---
 title: "Social Studies Primary Source Analysis"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/social-studies
 description: "Design a deep single-source analysis lesson using sourcing, contextualization, close reading, and corroboration moves — building students' capacity to read sources like historians, not summarize them."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - high-school
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_socialstudies_dbq_writer.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_socialstudies_current_events_connector.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_close_reading_minilesson.md
+  - domain-education-teaching/instructor/subject-pedagogy/social-studies/teaching_dbq_writer.md
+  - domain-education-teaching/instructor/subject-pedagogy/social-studies/teaching_current_events_connector.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_close_reading_minilesson.md
 ---
 
 # Social Studies Primary Source Analysis

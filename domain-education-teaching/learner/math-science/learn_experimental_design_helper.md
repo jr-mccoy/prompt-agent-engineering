@@ -1,6 +1,6 @@
 ---
 title: "Experimental Design Helper (Socratic, Student Designs)"
-category: education-teaching/learner-math-science
+category: education-teaching/learner/math-science
 description: "Guide a student through designing their own experiment — question, hypothesis, variables, procedure, controls — through diagnostic questions, without designing the experiment for them."
 techniques:
   - RP-04
@@ -22,9 +22,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-math-science/learnsci_data_interpreter.md
-  - domain-education-teaching/learner-math-science/learnsci_lab_report_scaffold.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_science_fair_mentor.md
+  - domain-education-teaching/learner/math-science/learn_science_data_interpreter.md
+  - domain-education-teaching/learner/math-science/learn_lab_report_scaffold.md
+  - domain-education-teaching/instructor/subject-pedagogy/science/teaching_science_fair_mentor.md
 ---
 
 # Experimental Design Helper (Socratic, Student Designs)

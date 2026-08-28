@@ -1,6 +1,6 @@
 ---
 title: "Quiz Me Until I Master This"
-category: education-teaching/learner-assessment
+category: education-teaching/learner/self-assessment
 description: "An adaptive quiz loop that quizzes the learner, evaluates answers (requiring reasoning, not just selections), targets follow-up questions at identified gaps, and continues until a mastery threshold is reached — with a final summary of what was mastered and what residual gaps remain."
 techniques:
   - ED-01
@@ -21,9 +21,9 @@ tags:
 audience: learner
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-assessment/learner_weak_point_diagnostic.md
-  - domain-education-teaching/learner-assessment/learner_wrong_answers_study_plan.md
-  - domain-education-teaching/assessment/assessment_mastery_check_designer.md
+  - domain-education-teaching/learner/self-assessment/learn_weak_point_diagnostic.md
+  - domain-education-teaching/learner/self-assessment/learn_wrong_answers_study_plan.md
+  - domain-education-teaching/instructor/assessment-design/teaching_mastery_check_designer.md
 ---
 
 # Quiz Me Until I Master This

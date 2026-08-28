@@ -1,6 +1,6 @@
 ---
 title: "ELA Grammar Minilesson (10 Minutes, One Concept)"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/ela
 description: "Teach a single grammar concept in a 10-minute minilesson grounded in mentor sentences and student writing — not isolated drill — so students can apply the move in revision today."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - mechanics
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_writers_workshop_minilesson.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_mentor_text_close_read.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_writers_workshop_minilesson.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_mentor_text_close_read.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # ELA Grammar Minilesson (10 Minutes, One Concept)

@@ -1,6 +1,6 @@
 ---
 title: "Language Grammar Drill"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Pattern-based grammar internalization for language learners: generates transformation drills, error-identification sets, and production prompts for a target grammar rule. Focuses on the underlying pattern, not rote paradigm memorization."
 techniques:
   - ST-01
@@ -18,9 +18,9 @@ tags:
   - transformation
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_language_vocab_acquisition.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_error_correction_cycle.md
+  - domain-education-teaching/learner/study-by-discipline/learn_language_vocab_acquisition.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/self-assessment/learn_error_correction_cycle.md
 ---
 
 ## Objective

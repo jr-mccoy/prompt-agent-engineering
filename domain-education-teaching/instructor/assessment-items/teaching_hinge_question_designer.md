@@ -1,6 +1,6 @@
 ---
 title: "Hinge Question Designer"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-items
 description: "Design a single pivotal diagnostic question with a branching response-distribution decision tree — so the teacher knows whether to advance, regroup, or reteach the moment results come in."
 techniques:
   - ST-01
@@ -19,10 +19,10 @@ tags:
   - whole-class-response
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/teaching_exit_ticket_generator.md
-  - domain-education-teaching/assessment/assessment_mc_item_writer_with_distractors.md
-  - domain-education-teaching/assessment/assessment_distractor_rationale_designer.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/response-cycle/teaching_exit_ticket_generator.md
+  - domain-education-teaching/instructor/assessment-items/teaching_mc_item_writer_with_distractors.md
+  - domain-education-teaching/instructor/assessment-items/teaching_distractor_rationale_designer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # Hinge Question Designer

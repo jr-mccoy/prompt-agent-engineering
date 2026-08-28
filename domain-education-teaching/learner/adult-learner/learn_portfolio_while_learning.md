@@ -1,6 +1,6 @@
 ---
 title: "Portfolio While Learning: Ship Public Artifacts Before Mastery"
-category: education-teaching/adult-learner
+category: education-teaching/learner/adult-learner
 description: "Design a portfolio strategy for an adult learner pivoting careers: which artifacts to build while you're still learning, how to ship public work that signals correctly without misrepresenting your level, and how each artifact compounds into the next."
 techniques:
   - ST-02
@@ -20,7 +20,7 @@ tags:
 intended_use: production
 updated: "2026-05-13"
 related_prompts:
-  - domain-education-teaching/adult-learner/adult_skill_pivot_self_study_plan.md
+  - domain-education-teaching/learner/adult-learner/learn_skill_pivot_self_study_plan.md
   - domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md
   - domain-personal-development/prompts/agency/agency_ship_sprint_design.md
   - domain-engineering-workflows/ai-native-rollouts/airollout_ship_without_writing_code.md
@@ -229,4 +229,4 @@ A 39-year-old senior associate at a law firm pivoting to legal tech / contract a
 
 ---
 
-*Part of [`../guides/career-changers/`](../guides/career-changers/). Pair with [`adult_skill_pivot_self_study_plan.md`](adult_skill_pivot_self_study_plan.md) for the underlying skill plan and [`agency_proof_of_work_portfolio.md`](../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md) for the broader proof-of-work principles.*
+*Part of [`../guides/career-changers/`](../guides/career-changers/). Pair with [`learn_skill_pivot_self_study_plan.md`](learn_skill_pivot_self_study_plan.md) for the underlying skill plan and [`../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md`](../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md) for the broader proof-of-work principles.*

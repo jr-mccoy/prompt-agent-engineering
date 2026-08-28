@@ -23,7 +23,7 @@ related_prompts:
   - domain-parenting/caregiver-facing/ages-4-8/parenting_developmental_expectations_4_to_8.md
   - domain-parenting/caregiver-facing/ages-4-8/parenting_meltdown_response_script.md
   - domain-parenting/caregiver-facing/ages-4-8/parenting_when_to_seek_professional_help.md
-  - domain-education-teaching/teaching_behavior_support_planner.md
+  - domain-education-teaching/instructor/student-support/teaching_behavior_support_planner.md
 ---
 
 **Purpose:** Help a parent move from *"Why is my kid doing this?!"* to a concrete, function-based hypothesis they can act on. The decoder walks the parent through a plain-language ABC analysis, names the likely function of the behavior (escape / attention / sensory / tangible / autonomy), and produces 2–3 tailored strategies that replace the behavior instead of just suppressing it.

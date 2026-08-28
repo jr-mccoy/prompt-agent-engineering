@@ -1,6 +1,6 @@
 ---
 title: "Graduate TA Discussion Section Prep"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Prepare a graduate teaching assistant to lead a discussion or recitation section: clarify the section's purpose relative to lecture, structure 50–75 minutes with active moves, and run a defensible grading and equity protocol."
 techniques:
   - ST-02
@@ -18,9 +18,9 @@ tags:
   - faculty-development
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_office_hours_prep.md
-  - domain-education-teaching/teaching_socratic_discussion_facilitator.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_lecture_to_active_learning_converter.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_office_hours_prep.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_socratic_discussion_facilitator.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_lecture_to_active_learning.md
 ---
 
 # Graduate TA Discussion Section Prep

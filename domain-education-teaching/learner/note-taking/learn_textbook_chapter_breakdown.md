@@ -1,6 +1,6 @@
 ---
 title: "Textbook Chapter Breakdown"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/note-taking
 description: "Systematically decomposes a textbook chapter into a hierarchical learning structure: stated objectives, concept hierarchy, key terms, supporting evidence, and integration questions."
 techniques:
   - ST-01
@@ -17,9 +17,9 @@ tags:
   - active-reading
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_lecture_to_study_guide.md
-  - domain-education-teaching/learner-study-skills/learnstudy_concept_map_builder.md
-  - domain-education-teaching/teaching_study_guide_builder.md
+  - domain-education-teaching/learner/note-taking/learn_lecture_to_study_guide.md
+  - domain-education-teaching/learner/memory-and-recall/learn_concept_map_builder.md
+  - domain-education-teaching/learner/memory-and-recall/learn_study_guide_builder.md
 ---
 
 ## Objective

@@ -1,6 +1,6 @@
 ---
 title: "Law Rule Application Drill"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Black-letter law retrieval and application drill: prompts the learner to state the rule precisely, then applies it to a short fact set. Covers MBE and MEE subjects. Separates rule recall from rule application to diagnose which skill is weak."
 techniques:
   - ST-01
@@ -20,9 +20,9 @@ tags:
   - IRAC
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_law_issue_spotting.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_practice_test_generator.md
+  - domain-education-teaching/learner/study-by-discipline/learn_law_issue_spotting.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/exam-prep/learn_practice_test_generator.md
 ---
 
 ## Objective

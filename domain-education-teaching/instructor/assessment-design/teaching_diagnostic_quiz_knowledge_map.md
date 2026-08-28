@@ -1,6 +1,6 @@
 ---
 title: "Diagnostic Quiz + Knowledge Map"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-design
 description: "Build a pre-unit diagnostic quiz that outputs not just items but a knowledge map of prerequisite concepts — and an instructional routing guide that translates score patterns into specific starting points."
 techniques:
   - ST-01
@@ -19,10 +19,10 @@ tags:
   - prerequisite
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/teaching_preassessment_designer.md
-  - domain-education-teaching/assessment/assessment_item_analysis_report.md
-  - domain-education-teaching/assessment/assessment_quiz_to_reteach_plan.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/response-cycle/teaching_preassessment_designer.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_item_analysis_report.md
+  - domain-education-teaching/instructor/assessment-analysis/teaching_quiz_to_reteach_plan.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # Diagnostic Quiz + Knowledge Map

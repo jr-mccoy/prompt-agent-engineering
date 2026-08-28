@@ -1,6 +1,6 @@
 ---
 title: "Error Analyzer (Student's Own Math Work)"
-category: education-teaching/learner-math-science
+category: education-teaching/learner/math-science
 description: "Help a student analyze their own returned math work — locate where the error happened, name the error type, understand why it happened, and plan how to avoid it next time — without re-solving the problem for them."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/learner-math-science/learnmath_socratic_step_by_step_solver.md
-  - domain-education-teaching/learner-study-skills/learnstudy_mistake_log_reviewer.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/learner/math-science/learn_math_socratic_solver.md
+  - domain-education-teaching/learner/self-assessment/learn_mistake_log_reviewer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # Error Analyzer (Student's Own Math Work)

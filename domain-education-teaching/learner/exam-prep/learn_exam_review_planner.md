@@ -1,6 +1,6 @@
 ---
 title: "Exam Review Planner"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/exam-prep
 description: "Creates a prioritized, content-based exam review plan: classifies topics by yield, assigns daily coverage based on available days and mastery gaps, and builds a contingency buffer."
 techniques:
   - ST-01
@@ -17,10 +17,10 @@ tags:
   - high-yield
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_spaced_review_scheduler.md
-  - domain-education-teaching/learner-study-skills/learnstudy_study_next_advisor.md
-  - domain-education-teaching/learner-study-skills/learnstudy_weak_area_diagnosis.md
-  - domain-education-teaching/learner-study-skills/learnstudy_finals_week_plan.md
+  - domain-education-teaching/learner/memory-and-recall/learn_spaced_review_scheduler.md
+  - domain-education-teaching/learner/exam-prep/learn_study_next_advisor.md
+  - domain-education-teaching/learner/exam-prep/learn_weak_area_diagnosis.md
+  - domain-education-teaching/learner/exam-prep/learn_finals_week_plan.md
 ---
 
 ## Objective

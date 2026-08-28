@@ -1,6 +1,6 @@
 ---
 title: "Idiom Decoder (Context-First)"
-category: education-teaching/learner-language
+category: education-teaching/learner/language
 description: "Decode idioms an L2 learner has encountered — guiding inference from context before explaining literal vs. figurative meaning, usage contexts, and register — then coaching production."
 techniques:
   - ED-03
@@ -23,9 +23,9 @@ tags:
   - adult
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-language/learnlang_topical_vocabulary_builder.md
-  - domain-education-teaching/learner-language/learnlang_daily_conversation_drill.md
-  - domain-education-teaching/learner-reading/learnread_vocabulary_in_context_decoder.md
+  - domain-education-teaching/learner/language/learn_topical_vocabulary_builder.md
+  - domain-education-teaching/learner/language/learn_daily_conversation_drill.md
+  - domain-education-teaching/learner/reading/learn_vocabulary_in_context_decoder.md
 ---
 
 # Idiom Decoder (Context-First)

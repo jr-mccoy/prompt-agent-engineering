@@ -1,6 +1,6 @@
 ---
 title: "Instructional Video Script"
-category: education-teaching/ed-tech
+category: education-teaching/instructor/ed-tech
 description: "Write a script for an instructional video (typically 3–10 minutes) with hook, segmented explanation, on-screen text plan, and embedded retrieval cues — designed for replayable learning."
 techniques:
   - ST-02
@@ -17,9 +17,9 @@ tags:
   - online-learning
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_microlearning_module.md
-  - domain-education-teaching/ed-tech/edtech_class_slide_deck_designer.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_async_lms_module_designer.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_microlearning_module.md
+  - domain-education-teaching/instructor/ed-tech/teaching_class_slide_deck_designer.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_async_lms_module_designer.md
 ---
 
 # Instructional Video Script

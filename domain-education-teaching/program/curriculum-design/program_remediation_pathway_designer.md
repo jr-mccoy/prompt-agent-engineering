@@ -1,6 +1,6 @@
 ---
 title: "Remediation Pathway Designer (MTSS/RTI + Competency-Based)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Design a remediation pathway for learners who haven't reached an expected level — K-12 MTSS/RTI tiered intervention, HE/workforce competency-based remediation, or med-ed milestone remediation — with diagnostic logic, intervention dose, monitoring cadence, and exit criteria."
 techniques:
   - ST-02
@@ -23,10 +23,10 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_milestone_alignment_designer.md
-  - teaching_progression_map_designer.md
+  - domain-education-teaching/program/curriculum-design/program_milestone_alignment_designer.md
+  - domain-education-teaching/program/curriculum-design/program_progression_map_designer.md
   - ../program-outcomes-assessment/teaching_program_gap_analysis.md
-  - teaching_unit_design_advanced.md
+  - domain-education-teaching/program/curriculum-design/program_unit_design_advanced.md
 ---
 
 # Remediation Pathway Designer

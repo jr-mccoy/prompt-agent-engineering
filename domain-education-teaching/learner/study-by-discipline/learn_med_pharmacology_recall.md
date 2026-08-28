@@ -1,6 +1,6 @@
 ---
 title: "Medical Pharmacology Recall"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Drug-class retrieval system for medical students: generates mechanism → indication → adverse effects → contraindications → monitoring recall drills for drug classes, with anti-confusion pairs for commonly confused drugs and prototype-first scaffolding."
 techniques:
   - ST-01
@@ -19,9 +19,9 @@ tags:
   - retrieval-practice
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_med_clinical_reasoning_drill.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_flashcard_quality_auditor.md
+  - domain-education-teaching/learner/study-by-discipline/learn_med_clinical_reasoning_drill.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_quality_auditor.md
 ---
 
 ## Objective

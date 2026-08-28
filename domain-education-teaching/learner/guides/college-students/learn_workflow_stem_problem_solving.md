@@ -1,6 +1,6 @@
 ---
 title: "Workflow: STEM Problem Solving"
-category: education-teaching/guides/college-students
+category: education-teaching/learner/guides/college-students
 description: "Per-problem chain for math, physics, chemistry, engineering: decode the problem, Socratic step-by-step (no final answer given by AI), error analysis on your work, concept map for the unit. Builds skill instead of getting the answer."
 audience: college-students
 chain_length: 4
@@ -17,7 +17,7 @@ updated: "2026-05-13"
 - Stuck on a specific problem and tempted to look up the answer
 - Wants to build durable skill, not just finish the assignment
 
-If you genuinely just need the answer for a take-home graded problem set, this workflow will refuse to give it to you — by design. That's a feature, not a bug. If your problem is "I don't understand the unit," see step 4 (concept map). If your problem is "I have 6 hours of work in a 2-hour window," that's a scheduling problem, not a STEM problem — run [`../../../domain-productivity/deep-work/deepwork_calendar_audit.md`](../../../domain-productivity/deep-work/deepwork_calendar_audit.md).
+If you genuinely just need the answer for a take-home graded problem set, this workflow will refuse to give it to you — by design. That's a feature, not a bug. If your problem is "I don't understand the unit," see step 4 (concept map). If your problem is "I have 6 hours of work in a 2-hour window," that's a scheduling problem, not a STEM problem — run [`../../../../domain-productivity/deep-work/deepwork_calendar_audit.md`](../../../../domain-productivity/deep-work/deepwork_calendar_audit.md).
 
 ## What You'll Have at the End
 
@@ -36,7 +36,7 @@ If you genuinely just need the answer for a take-home graded problem set, this w
 
 ### Step 1 — Decode the problem
 
-**Prompt:** [`../../learner-math-science/learnmath_word_problem_decoder.md`](../../learner-math-science/learnmath_word_problem_decoder.md)
+**Prompt:** [`../../math-science/learn_word_problem_decoder.md`](../../math-science/learn_word_problem_decoder.md)
 
 **Input:** the problem statement
 
@@ -52,7 +52,7 @@ If you genuinely just need the answer for a take-home graded problem set, this w
 
 ### Step 2 — Socratic step-by-step
 
-**Prompt:** [`../../learner-math-science/learnmath_socratic_step_by_step_solver.md`](../../learner-math-science/learnmath_socratic_step_by_step_solver.md)
+**Prompt:** [`../../math-science/learn_math_socratic_solver.md`](../../math-science/learn_math_socratic_solver.md)
 
 **Input:** decoded problem + your current attempt or block
 
@@ -68,7 +68,7 @@ If you genuinely just need the answer for a take-home graded problem set, this w
 
 ### Step 3 — Error analysis (if you got it wrong)
 
-**Prompt:** [`../../learner-math-science/learnmath_error_analyzer_own_work.md`](../../learner-math-science/learnmath_error_analyzer_own_work.md)
+**Prompt:** [`../../math-science/learn_math_error_analyzer.md`](../../math-science/learn_math_error_analyzer.md)
 
 **Input:** your wrong answer + the correct answer + your work
 
@@ -86,7 +86,7 @@ If you genuinely just need the answer for a take-home graded problem set, this w
 
 ### Step 4 — Concept map (after several problems in a unit)
 
-**Prompt:** [`../../learner-math-science/learnsci_concept_map_builder.md`](../../learner-math-science/learnsci_concept_map_builder.md)
+**Prompt:** [`../../math-science/learn_science_concept_map_builder.md`](../../math-science/learn_science_concept_map_builder.md)
 
 **Input:** the key terms from the unit, your sense of how they connect
 
@@ -115,7 +115,7 @@ The Socratic prompts above are designed for skill-building. There are three legi
 2. **Understanding a concept you'll never be tested on** (the prereq from a course you're not taking; background context). Direct explanation is fine.
 3. **Diagnostic time-pressure check** during exam practice: if you can't make progress in 5 minutes on a problem, look at the solution, study it, then re-solve from scratch from memory.
 
-In all other cases (graded problem sets, exam study, skill you'll actually need), stay Socratic. See [`../shared/socratic_vs_direct_decision.md`](../shared/socratic_vs_direct_decision.md).
+In all other cases (graded problem sets, exam study, skill you'll actually need), stay Socratic. See [`../shared/learn_socratic_vs_direct_decision.md`](../shared/learn_socratic_vs_direct_decision.md).
 
 ## Common Failure Modes
 
@@ -124,7 +124,7 @@ In all other cases (graded problem sets, exam study, skill you'll actually need)
 | **"Just tell me the answer."** | The prompt refuses. If you're truly out of time, step away and ask the professor or TA. Pasting an answer you don't understand is worse than leaving the problem blank. |
 | **Got "AI" to give the answer by rephrasing.** | You won't be able to do the next problem either. Re-engage with step 1. |
 | **Stuck mid-problem and the Socratic questions feel unhelpful.** | Means you're missing a prerequisite. Run step 4 (concept map) on the unit; the missing piece will likely surface. Or check the textbook section the problem is from — there's usually a worked example. |
-| **Got it right but couldn't explain why.** | Run [`../../learner-study-skills/learnstudy_feynman_teach_back_coach.md`](../../learner-study-skills/learnstudy_feynman_teach_back_coach.md) on the problem. If you can't teach the solution, you don't yet own it. |
+| **Got it right but couldn't explain why.** | Run [`../../memory-and-recall/learn_feynman_teach_back_coach.md`](../../memory-and-recall/learn_feynman_teach_back_coach.md) on the problem. If you can't teach the solution, you don't yet own it. |
 | **Spending 90+ minutes per problem.** | Either the problem is genuinely above your level (talk to TA), or you're missing prerequisites. Don't burn an evening on one problem; move on, learn the unit, return. |
 | **Test scores low despite good problem-set scores.** | Almost certainly an error-classification gap. Run step 3 on every wrong test answer. Patterns will emerge. |
 
@@ -135,16 +135,16 @@ Step 3 is most valuable if its output goes somewhere you'll see again. One worka
 - One page per unit in a dedicated notebook
 - Each entry: problem (or summary), my wrong answer, correct answer, error category, what I'll do differently
 - Review the log at the start of each study session for that unit
-- Run [`../../learner-study-skills/learnstudy_mistake_log_reviewer.md`](../../learner-study-skills/learnstudy_mistake_log_reviewer.md) before midterms and finals
+- Run [`../../self-assessment/learn_mistake_log_reviewer.md`](../../self-assessment/learn_mistake_log_reviewer.md) before midterms and finals
 
 ## Lab Reports (Special Case)
 
-For lab courses, problem-solving is paired with lab report writing. Use [`../../learner-math-science/learnsci_lab_report_scaffold.md`](../../learner-math-science/learnsci_lab_report_scaffold.md) for the report; this workflow handles the underlying problem-solving.
+For lab courses, problem-solving is paired with lab report writing. Use [`../../math-science/learn_lab_report_scaffold.md`](../../math-science/learn_lab_report_scaffold.md) for the report; this workflow handles the underlying problem-solving.
 
 For experimental design and data interpretation:
-- [`../../learner-math-science/learnsci_experimental_design_helper.md`](../../learner-math-science/learnsci_experimental_design_helper.md)
-- [`../../learner-math-science/learnsci_data_interpreter.md`](../../learner-math-science/learnsci_data_interpreter.md)
+- [`../../math-science/learn_experimental_design_helper.md`](../../math-science/learn_experimental_design_helper.md)
+- [`../../math-science/learn_science_data_interpreter.md`](../../math-science/learn_science_data_interpreter.md)
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). For exam prep that uses STEM mistake logs, see [`workflow_exam_prep_finals_week.md`](workflow_exam_prep_finals_week.md).*
+*Part of [`GUIDE.md`](GUIDE.md). For exam prep that uses STEM mistake logs, see [`learn_workflow_exam_prep_finals_week.md`](learn_workflow_exam_prep_finals_week.md).*

@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Proof-of-Work for the Pivot"
-category: education-teaching/guides/career-changers
+category: education-teaching/learner/guides/career-changers
 description: "Position your portfolio and accumulated work for the target role's application context. Adapts the general proof-of-work portfolio prompt for the pivot-specific case where you need to make career-change make sense to a hiring manager."
 audience: career-changers
 chain_length: 3
@@ -36,7 +36,7 @@ updated: "2026-05-13"
 
 ### Step 1 — Run the proof-of-work portfolio prompt
 
-**Prompt:** [`../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md`](../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md)
+**Prompt:** [`../../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md`](../../../../domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md)
 
 **Input:** your shipped portfolio + target role + prior career arc
 
@@ -50,7 +50,7 @@ updated: "2026-05-13"
 
 ### Step 2 — Articulate the pivot narrative
 
-**Prompt:** [`../../adult-learner/adult_prior_learning_articulation.md`](../../adult-learner/adult_prior_learning_articulation.md)
+**Prompt:** [`../../adult-learner/learn_prior_learning_articulation.md`](../../adult-learner/learn_prior_learning_articulation.md)
 
 **Input:** target role description + prior career + pivot learning + portfolio
 
@@ -64,7 +64,7 @@ updated: "2026-05-13"
 
 ### Step 3 — Design the application sprint
 
-**Prompt:** [`../../../domain-personal-development/prompts/agency/agency_ship_sprint_design.md`](../../../domain-personal-development/prompts/agency/agency_ship_sprint_design.md)
+**Prompt:** [`../../../../domain-personal-development/prompts/agency/agency_ship_sprint_design.md`](../../../../domain-personal-development/prompts/agency/agency_ship_sprint_design.md)
 
 **Adaptation:** instead of shipping a product, you're shipping applications. Treat each application as an artifact with quality criteria.
 
@@ -82,7 +82,7 @@ updated: "2026-05-13"
 
 Each week during the application sprint:
 
-**Prompt:** [`../../../domain-personal-development/prompts/agency/agency_weekly_review.md`](../../../domain-personal-development/prompts/agency/agency_weekly_review.md)
+**Prompt:** [`../../../../domain-personal-development/prompts/agency/agency_weekly_review.md`](../../../../domain-personal-development/prompts/agency/agency_weekly_review.md)
 
 **Track:**
 - Applications sent (target: 5–10/week sustainable)
@@ -138,18 +138,18 @@ The structure: trigger → pivot → evidence → asset prior career provides.
 | Portfolio is strong but hidden in resume | Lead with portfolio links. Resume is secondary signal once portfolio exists. |
 | Applications are scattered (50 random) | Sprint plan focuses on top 10–20 targets with tailored applications. Quality beats quantity by 5x for career changers. |
 | No referrals | Career changers who get hired typically get there through 1–2 strong referrals plus public work. Build the referrals during the sprint (info interviews, community work). |
-| Discouragement after 3 weeks of rejections | Normal. Most pivots include 20+ rejections. Run [`../../../domain-personal-development/prompts/agency/agency_burnout_recovery.md`](../../../domain-personal-development/prompts/agency/agency_burnout_recovery.md) if it's affecting health, but otherwise this is the work. |
+| Discouragement after 3 weeks of rejections | Normal. Most pivots include 20+ rejections. Run [`../../../../domain-personal-development/prompts/agency/agency_burnout_recovery.md`](../../../../domain-personal-development/prompts/agency/agency_burnout_recovery.md) if it's affecting health, but otherwise this is the work. |
 | Tempted to lie about timeline ("I have 3 years of Python experience") | Don't. It surfaces in interviews. Be honest about the timeline; the portfolio carries the credibility. |
 
 ## After Landing the Role
 
 Career-change roles are often a year-long transition. The first 90 days matter disproportionately.
 
-- Run [`../../../domain-personal-development/career-transformation/career_90_day_repositioning_plan.md`](../../../domain-personal-development/career-transformation/career_90_day_repositioning_plan.md) day 1 of the new role
-- Use [`../../../domain-personal-development/prompts/agency/agency_foundation_session.md`](../../../domain-personal-development/prompts/agency/agency_foundation_session.md) to rebuild your operating cadence in the new context
+- Run [`../../../../domain-personal-development/career-transformation/career_90_day_repositioning_plan.md`](../../../../domain-personal-development/career-transformation/career_90_day_repositioning_plan.md) day 1 of the new role
+- Use [`../../../../domain-personal-development/prompts/agency/agency_foundation_session.md`](../../../../domain-personal-development/prompts/agency/agency_foundation_session.md) to rebuild your operating cadence in the new context
 
 The pivot completes when the new role feels normal. Usually 12–18 months in.
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). Final workflow in the career-changers chain. Pair with [`workflow_portfolio_while_learning.md`](workflow_portfolio_while_learning.md) since that workflow's outputs feed this one.*
+*Part of [`GUIDE.md`](GUIDE.md). Final workflow in the career-changers chain. Pair with [`learn_workflow_portfolio_while_learning.md`](learn_workflow_portfolio_while_learning.md) since that workflow's outputs feed this one.*

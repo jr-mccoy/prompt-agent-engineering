@@ -1,6 +1,6 @@
 ---
 title: "History Causal Chain Drill"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/study-by-discipline
 description: "Retrieval drill on historical causal chains and chronology: generates 'What caused X?', 'What followed X?', and 'What was happening simultaneously?' prompts, maps causal chains as directed graphs, and produces counterfactual perturbation questions to test depth of causal understanding."
 techniques:
   - ST-01
@@ -19,9 +19,9 @@ tags:
   - political-history
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_humanities_argument_recall.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
+  - domain-education-teaching/learner/study-by-discipline/learn_humanities_argument_recall.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
 ---
 
 ## Objective

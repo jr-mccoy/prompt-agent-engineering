@@ -1,6 +1,6 @@
 ---
 title: "Study Session: Knowledge Tester"
-category: education-teaching/study
+category: education-teaching/learner/self-assessment
 description: "Interactive quiz session that tests college students on course material with multi-format questions, immediate feedback, score tracking, and targeted review recommendations."
 techniques:
   - ED-02  # Progressive Exercise Generation
@@ -18,11 +18,11 @@ tags:
   - self-evaluation
 updated: "2026-03-06"
 related_prompts:
-  - domain-education-teaching/teaching_study_concept_teacher.md
-  - domain-education-teaching/teaching_study_flashcard_generator.md
-  - domain-education-teaching/teaching_study_practice_problems.md
-  - domain-education-teaching/teaching_study_guide_builder.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_generator.md
+  - domain-education-teaching/learner/tutoring/learn_practice_problems.md
+  - domain-education-teaching/learner/memory-and-recall/learn_study_guide_builder.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
 ---
 
 # Study Session: Knowledge Tester

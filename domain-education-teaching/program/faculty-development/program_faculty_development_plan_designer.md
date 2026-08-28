@@ -1,6 +1,6 @@
 ---
 title: "Faculty Development Plan Designer (Multi-Semester)"
-category: education-teaching/faculty-development
+category: education-teaching/program/faculty-development
 description: "Design a multi-semester faculty development plan — needs assessment, topic sequence, modality mix, expected outcomes, and evaluation — for an institution, program, or department, tailored to faculty career stage and identified instructional priorities."
 techniques:
   - ST-02
@@ -20,10 +20,10 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_professional_learning_community_designer.md
-  - teaching_instructional_coaching_program.md
-  - teaching_assessment_literacy_curriculum.md
-  - teaching_faculty_onboarding_program.md
+  - domain-education-teaching/program/faculty-development/program_professional_learning_community_designer.md
+  - domain-education-teaching/program/faculty-development/program_instructional_coaching_program.md
+  - domain-education-teaching/program/faculty-development/program_assessment_literacy_curriculum.md
+  - domain-education-teaching/program/faculty-development/program_faculty_onboarding_program.md
 ---
 
 # Faculty Development Plan Designer

@@ -1,6 +1,6 @@
 ---
 title: "Annotated Bibliography Coach (Entry-by-Entry, No Writing)"
-category: education-teaching/learner-writing
+category: education-teaching/learner/writing
 description: "Coach a student through writing each annotated bibliography entry — summary, evaluation, and reflection — through diagnostic questions, without writing the annotation for them."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_citation_helper.md
-  - domain-education-teaching/learner-writing/learnwrite_source_credibility_evaluator.md
-  - domain-education-teaching/learner-research/learnresearch_source_synthesis_chart.md
+  - domain-education-teaching/learner/writing/learn_citation_helper.md
+  - domain-education-teaching/learner/writing/learn_source_credibility_evaluator.md
+  - domain-education-teaching/learner/research/learn_source_synthesis_chart.md
 ---
 
 # Annotated Bibliography Coach (Entry-by-Entry, No Writing)

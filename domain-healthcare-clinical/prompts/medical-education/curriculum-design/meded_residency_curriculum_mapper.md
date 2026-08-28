@@ -23,7 +23,7 @@ related_prompts:
   - meded_cbme_implementation_program.md
   - meded_epa_implementation_designer.md
   - meded_program_competency_framework_acgme.md
-  - ../../../../domain-education-teaching/curriculum-design/teaching_curriculum_map_builder.md
+  - ../../../../domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
 ---
 
 # Residency Curriculum Mapper

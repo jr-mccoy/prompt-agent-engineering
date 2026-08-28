@@ -1,6 +1,6 @@
 ---
 title: "Prior Learning Articulation: From Career Experience to Academic Currency"
-category: education-teaching/adult-learner
+category: education-teaching/learner/adult-learner
 description: "Turn an adult learner's career experience into academic currency: credit-for-prior-learning (CPL) portfolios, graduate-school SOP language, application essays, or course-by-course petition narratives. Treats experience as a resource without inflating it."
 techniques:
   - CM-01
@@ -23,8 +23,8 @@ updated: "2026-05-13"
 related_prompts:
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
-  - domain-education-teaching/adult-learner/adult_writing_rust_recovery.md
-  - domain-education-teaching/adult-learner/adult_cold_start_return_to_school.md
+  - domain-education-teaching/learner/adult-learner/learn_writing_rust_recovery.md
+  - domain-education-teaching/learner/adult-learner/learn_cold_start_return_to_school.md
 ---
 
 # Prior Learning Articulation: From Career Experience to Academic Currency
@@ -211,4 +211,4 @@ A 51-year-old applying to a master's in public administration with 25 years in c
 
 ---
 
-*Part of [`../guides/adult-returning/`](../guides/adult-returning/) and [`../guides/career-changers/`](../guides/career-changers/). Pair with [`career_residual_skills_inventory.md`](../../domain-personal-development/career-transformation/career_residual_skills_inventory.md) if you need to first identify what your transferable skills are.*
+*Part of [`../guides/adult-returning/`](../guides/adult-returning/) and [`../guides/career-changers/`](../guides/career-changers/). Pair with [`../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md`](../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md) if you need to first identify what your transferable skills are.*

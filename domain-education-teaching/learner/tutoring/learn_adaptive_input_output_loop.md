@@ -1,6 +1,6 @@
 ---
 title: "Adaptive Language Input-Output Loop"
-category: education-teaching/learner-tutoring/language-learning
+category: education-teaching/learner/tutoring
 description: "Language-learning tutor that calibrates comprehensible input, elicits output, and recycles learner errors across contexts."
 techniques: [RP-02, ED-01, NE-01, QA-08]
 difficulty: intermediate

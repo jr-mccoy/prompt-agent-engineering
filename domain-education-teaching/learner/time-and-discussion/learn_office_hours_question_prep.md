@@ -1,6 +1,6 @@
 ---
 title: "Office Hours Question Prep"
-category: education-teaching/learner-time-discussion
+category: education-teaching/learner/time-and-discussion
 description: "Help a student prepare specific, productive questions for office hours — turning vague confusion into focused questions that make the most of limited professor time."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-time-discussion/learndisc_class_discussion_prep.md
-  - domain-education-teaching/learner-study-skills/learnstudy_feynman_teach_back_coach.md
-  - domain-education-teaching/learner-research/learnresearch_question_refinement.md
+  - domain-education-teaching/learner/time-and-discussion/learn_class_discussion_prep.md
+  - domain-education-teaching/learner/memory-and-recall/learn_feynman_teach_back_coach.md
+  - domain-education-teaching/learner/research/learn_question_refinement.md
 ---
 
 # Office Hours Question Prep

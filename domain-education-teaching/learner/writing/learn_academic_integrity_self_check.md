@@ -1,6 +1,6 @@
 ---
 title: "Academic Integrity Self-Check (Paraphrase and Citation Audit)"
-category: education-teaching/learner-writing
+category: education-teaching/learner/writing
 description: "Help a student audit their own draft for paraphrasing problems and citation gaps — through guided self-examination — before submitting graded work."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-writing/learnwrite_citation_helper.md
-  - domain-education-teaching/learner-writing/learnwrite_annotated_bibliography_helper.md
-  - domain-education-teaching/learner-writing/learnwrite_source_credibility_evaluator.md
+  - domain-education-teaching/learner/writing/learn_citation_helper.md
+  - domain-education-teaching/learner/writing/learn_annotated_bibliography_helper.md
+  - domain-education-teaching/learner/writing/learn_source_credibility_evaluator.md
 ---
 
 # Academic Integrity Self-Check (Paraphrase and Citation Audit)

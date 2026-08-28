@@ -1,6 +1,6 @@
 ---
 title: "Research Question Refinement (Socratic, Student Refines)"
-category: education-teaching/learner-research
+category: education-teaching/learner/research
 description: "Guide a student to narrow and sharpen a research question — moving from too broad, to focused, to researchable — through diagnostic questions, without writing the final question for them."
 techniques:
   - RP-04
@@ -19,9 +19,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-research/learnresearch_keyword_search_strategy.md
-  - domain-education-teaching/learner-research/learnresearch_source_synthesis_chart.md
-  - domain-education-teaching/learner-writing/learnwrite_thesis_with_critique.md
+  - domain-education-teaching/learner/research/learn_keyword_search_strategy.md
+  - domain-education-teaching/learner/research/learn_source_synthesis_chart.md
+  - domain-education-teaching/learner/writing/learn_thesis_with_critique.md
 ---
 
 # Research Question Refinement (Socratic, Student Refines)

@@ -1,6 +1,6 @@
 ---
 title: "Substitute Teacher Plan Generator"
-category: education-teaching
+category: education-teaching/instructor/lesson-planning
 description: "Create comprehensive substitute teacher plans for emergency and planned absences"
 tags:
   - education

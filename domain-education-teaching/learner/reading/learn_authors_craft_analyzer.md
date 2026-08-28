@@ -1,6 +1,6 @@
 ---
 title: "Author's Craft Analyzer (Diagnostic Questions, No Answers)"
-category: education-teaching/learner-reading
+category: education-teaching/learner/reading
 description: "Guide a student through analyzing how an author uses craft elements — structure, diction, imagery, tone, syntax — through diagnostic questions, without telling them what the craft choices mean."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-reading/learnread_annotation_coach.md
-  - domain-education-teaching/learner-writing/learnwrite_thesis_with_critique.md
-  - domain-education-teaching/learner-writing/learnwrite_revision_socratic_coach.md
+  - domain-education-teaching/learner/reading/learn_annotation_coach.md
+  - domain-education-teaching/learner/writing/learn_thesis_with_critique.md
+  - domain-education-teaching/learner/writing/learn_revision_socratic_coach.md
 ---
 
 # Author's Craft Analyzer (Diagnostic Questions, No Answers)

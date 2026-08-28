@@ -1,6 +1,6 @@
 ---
 title: "Study Session: Concept Teacher"
-category: education-teaching/study
+category: education-teaching/learner/tutoring
 description: "Interactive study session that teaches college students course material through scaffolded explanation, analogies, and understanding checks — adapted to their current knowledge level."
 techniques:
   - ED-01  # Iterative Scaffolding
@@ -18,11 +18,11 @@ tags:
   - concept-explanation
 updated: "2026-03-06"
 related_prompts:
-  - domain-education-teaching/teaching_study_knowledge_tester.md
-  - domain-education-teaching/teaching_study_flashcard_generator.md
-  - domain-education-teaching/teaching_study_practice_problems.md
-  - domain-education-teaching/teaching_study_guide_builder.md
-  - domain-education-teaching/teaching_study_socratic_tutor.md
+  - domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_generator.md
+  - domain-education-teaching/learner/tutoring/learn_practice_problems.md
+  - domain-education-teaching/learner/memory-and-recall/learn_study_guide_builder.md
+  - domain-education-teaching/learner/tutoring/learn_socratic_tutor.md
 ---
 
 # Study Session: Concept Teacher

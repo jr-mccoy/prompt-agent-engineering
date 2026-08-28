@@ -1,6 +1,6 @@
 ---
 title: "Capstone Assessment Designer (HE + Workforce)"
-category: education-teaching/program-outcomes-assessment
+category: education-teaching/program/outcomes-assessment
 description: "Design a culminating capstone assessment — research project, design challenge, portfolio defense, integrated performance task, or industry-credential preparation — that integrates and demonstrates multiple program outcomes with public artifact, rubric, defense, and feedback loop."
 techniques:
   - ST-02
@@ -21,9 +21,9 @@ tags:
   - program-outcomes
 updated: "2026-05-15"
 related_prompts:
-  - teaching_signature_assignment_designer.md
-  - teaching_outcomes_to_assessment_mapper.md
-  - teaching_rubric_alignment_to_outcomes.md
+  - domain-education-teaching/program/outcomes-assessment/program_signature_assignment_designer.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md
   - ../curriculum-design/teaching_backward_program_design.md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Confidence Calibration Trainer"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/self-assessment
 description: "Runs a structured confidence calibration session: learners predict their performance per topic before being tested, compare predictions to actuals, compute calibration score, and identify over/under-confidence zones with targeted exercises."
 techniques:
   - ST-01
@@ -17,9 +17,9 @@ tags:
   - retrieval-practice
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_weak_area_diagnosis.md
-  - domain-education-teaching/learner-study-skills/learnstudy_self_quiz_loop.md
-  - domain-education-teaching/learner-study-skills/learnstudy_study_next_advisor.md
+  - domain-education-teaching/learner/exam-prep/learn_weak_area_diagnosis.md
+  - domain-education-teaching/learner/self-assessment/learn_self_quiz_loop.md
+  - domain-education-teaching/learner/exam-prep/learn_study_next_advisor.md
 ---
 
 ## Objective

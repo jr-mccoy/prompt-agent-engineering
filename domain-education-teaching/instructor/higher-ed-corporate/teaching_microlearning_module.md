@@ -1,6 +1,6 @@
 ---
 title: "Microlearning Module Designer (5–15 min)"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Design a tight 5–15 minute microlearning module focused on a single skill or decision, with a hook, single concept, one practice rep, and a transfer cue."
 techniques:
   - ST-02
@@ -17,9 +17,9 @@ tags:
   - performance-support
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_performance_support_job_aid.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_async_lms_module_designer.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_compliance_training_module.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_performance_support_job_aid.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_async_lms_module_designer.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_compliance_training_module.md
 ---
 
 # Microlearning Module Designer (5–15 min)

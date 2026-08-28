@@ -1,6 +1,6 @@
 ---
 title: "Writing Rust Recovery for Returning Adult Learners"
-category: education-teaching/adult-learner
+category: education-teaching/learner/adult-learner
 description: "Diagnose which specific academic writing skills have rusted during years of professional writing, then rehearse the rusty ones with low-stakes exercises before the first graded paper. Andragogy-aware; treats professional writing experience as a resource."
 techniques:
   - CM-02
@@ -20,10 +20,10 @@ tags:
 intended_use: production
 updated: "2026-05-13"
 related_prompts:
-  - domain-education-teaching/adult-learner/adult_cold_start_return_to_school.md
-  - domain-education-teaching/adult-learner/adult_prior_learning_articulation.md
-  - domain-education-teaching/learner-writing/learnwrite_thesis_with_critique.md
-  - domain-education-teaching/learner-writing/learnwrite_revision_socratic_coach.md
+  - domain-education-teaching/learner/adult-learner/learn_cold_start_return_to_school.md
+  - domain-education-teaching/learner/adult-learner/learn_prior_learning_articulation.md
+  - domain-education-teaching/learner/writing/learn_thesis_with_critique.md
+  - domain-education-teaching/learner/writing/learn_revision_socratic_coach.md
 ---
 
 # Writing Rust Recovery for Returning Adult Learners
@@ -198,4 +198,4 @@ A 47-year-old former corporate communications director starting an MA in History
 
 ---
 
-*Part of [`../guides/adult-returning/`](../guides/adult-returning/). Run before the first graded paper of the semester. Subsequent papers can use [`learnwrite_revision_socratic_coach.md`](../learner-writing/learnwrite_revision_socratic_coach.md) directly.*
+*Part of [`../guides/adult-returning/`](../guides/adult-returning/). Run before the first graded paper of the semester. Subsequent papers can use [`../writing/learn_revision_socratic_coach.md`](../writing/learn_revision_socratic_coach.md) directly.*

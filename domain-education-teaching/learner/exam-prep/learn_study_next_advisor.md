@@ -1,6 +1,6 @@
 ---
 title: "Study Next Advisor"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/exam-prep
 description: "Answers 'what should I study next?' by integrating exam date, current mastery estimates, topic dependencies, and available time to output a prioritized session agenda."
 techniques:
   - ST-01
@@ -17,9 +17,9 @@ tags:
   - session-design
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_weak_area_diagnosis.md
-  - domain-education-teaching/learner-study-skills/learnstudy_spaced_review_scheduler.md
-  - domain-education-teaching/learner-study-skills/learnstudy_exam_review_planner.md
+  - domain-education-teaching/learner/exam-prep/learn_weak_area_diagnosis.md
+  - domain-education-teaching/learner/memory-and-recall/learn_spaced_review_scheduler.md
+  - domain-education-teaching/learner/exam-prep/learn_exam_review_planner.md
 ---
 
 ## Objective

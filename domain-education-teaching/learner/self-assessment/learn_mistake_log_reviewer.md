@@ -1,6 +1,6 @@
 ---
 title: "Mistake Log Reviewer"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/self-assessment
 description: "Review a student's accumulated mistake log — across tests, problem sets, or assignments — to surface patterns, prioritize the highest-leverage errors to address, and design targeted practice without solving problems for the student."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/learner-math-science/learnmath_error_analyzer_own_work.md
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/learner/math-science/learn_math_error_analyzer.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # Mistake Log Reviewer

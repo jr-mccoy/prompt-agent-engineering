@@ -1,6 +1,6 @@
 ---
 title: "Interview Question Critique (Student Designs, AI Diagnoses)"
-category: education-teaching/learner-research
+category: education-teaching/learner/research
 description: "Critique a student's self-designed interview questions for a research project — testing for bias, leading language, vagueness, and scope — without rewriting the questions for them."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-research/learnresearch_question_refinement.md
-  - domain-education-teaching/learner-research/learnresearch_source_synthesis_chart.md
-  - domain-education-teaching/learner-writing/learnwrite_annotated_bibliography_helper.md
+  - domain-education-teaching/learner/research/learn_question_refinement.md
+  - domain-education-teaching/learner/research/learn_source_synthesis_chart.md
+  - domain-education-teaching/learner/writing/learn_annotated_bibliography_helper.md
 ---
 
 # Interview Question Critique (Student Designs, AI Diagnoses)

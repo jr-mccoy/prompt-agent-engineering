@@ -1,6 +1,6 @@
 ---
 title: "Study Session: Socratic Tutor"
-category: education-teaching/study
+category: education-teaching/learner/tutoring
 description: "Guides college students to discover and understand course material through pure Socratic questioning — never giving direct answers, only asking progressively deeper questions that lead the student to insight."
 techniques:
   - RP-04  # Socratic Dialogue
@@ -19,11 +19,11 @@ tags:
   - active-learning
 updated: "2026-03-06"
 related_prompts:
-  - domain-education-teaching/teaching_study_concept_teacher.md
-  - domain-education-teaching/teaching_study_knowledge_tester.md
-  - domain-education-teaching/teaching_study_flashcard_generator.md
-  - domain-education-teaching/teaching_study_practice_problems.md
-  - domain-education-teaching/teaching_study_guide_builder.md
+  - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
+  - domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_generator.md
+  - domain-education-teaching/learner/tutoring/learn_practice_problems.md
+  - domain-education-teaching/learner/memory-and-recall/learn_study_guide_builder.md
 ---
 
 # Study Session: Socratic Tutor

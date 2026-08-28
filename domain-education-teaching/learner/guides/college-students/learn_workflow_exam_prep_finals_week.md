@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Exam Prep & Finals Week"
-category: education-teaching/guides/college-students
+category: education-teaching/learner/guides/college-students
 description: "Triage, spaced retrieval, mistake review, and test-day strategy for finals or a major exam. Chains study-skills and time-management prompts. Works for one exam or a full finals week."
 audience: college-students
 chain_length: 8
@@ -38,7 +38,7 @@ updated: "2026-05-13"
 
 #### Step 1 — Build the finals-week triage matrix
 
-**Prompt:** [`../../learner-study-skills/learnstudy_finals_week_plan.md`](../../learner-study-skills/learnstudy_finals_week_plan.md)
+**Prompt:** [`../../exam-prep/learn_finals_week_plan.md`](../../exam-prep/learn_finals_week_plan.md)
 
 **Input:** all exam dates, weights, formats, your current confidence level per course
 
@@ -54,7 +54,7 @@ updated: "2026-05-13"
 
 #### Step 2 — Audit the calendar
 
-**Prompt:** [`../../../domain-productivity/deep-work/deepwork_calendar_audit.md`](../../../domain-productivity/deep-work/deepwork_calendar_audit.md)
+**Prompt:** [`../../../../domain-productivity/deep-work/deepwork_calendar_audit.md`](../../../../domain-productivity/deep-work/deepwork_calendar_audit.md)
 
 **Input:** your actual calendar for the next 1–2 weeks
 
@@ -70,7 +70,7 @@ updated: "2026-05-13"
 
 #### Step 3 — Convert notes into recall questions
 
-**Prompt:** [`../../learner-study-skills/learnstudy_active_recall_from_notes.md`](../../learner-study-skills/learnstudy_active_recall_from_notes.md)
+**Prompt:** [`../../note-taking/learn_active_recall_from_notes.md`](../../note-taking/learn_active_recall_from_notes.md)
 
 **Input:** your notes for each course (one course at a time)
 
@@ -86,7 +86,7 @@ updated: "2026-05-13"
 
 #### Step 4 — Convert raw notes to Cornell format (if your notes are messy)
 
-**Prompt:** [`../../learner-study-skills/learnstudy_cornell_notes_converter.md`](../../learner-study-skills/learnstudy_cornell_notes_converter.md)
+**Prompt:** [`../../note-taking/learn_cornell_notes_converter.md`](../../note-taking/learn_cornell_notes_converter.md)
 
 **Input:** the messiest set of course notes
 
@@ -100,7 +100,7 @@ updated: "2026-05-13"
 
 #### Step 5 — Review your mistake log
 
-**Prompt:** [`../../learner-study-skills/learnstudy_mistake_log_reviewer.md`](../../learner-study-skills/learnstudy_mistake_log_reviewer.md)
+**Prompt:** [`../../self-assessment/learn_mistake_log_reviewer.md`](../../self-assessment/learn_mistake_log_reviewer.md)
 
 **Input:** every wrong answer, missed problem, and feedback comment from the semester
 
@@ -116,9 +116,9 @@ updated: "2026-05-13"
 
 #### Step 6 — Targeted re-practice on weak areas
 
-For STEM: re-run problems similar to the ones on your mistake log. Use [`../../learner-math-science/learnmath_socratic_step_by_step_solver.md`](../../learner-math-science/learnmath_socratic_step_by_step_solver.md) or [`../../learner-math-science/learnmath_error_analyzer_own_work.md`](../../learner-math-science/learnmath_error_analyzer_own_work.md) on your past wrong attempts.
+For STEM: re-run problems similar to the ones on your mistake log. Use [`../../math-science/learn_math_socratic_solver.md`](../../math-science/learn_math_socratic_solver.md) or [`../../math-science/learn_math_error_analyzer.md`](../../math-science/learn_math_error_analyzer.md) on your past wrong attempts.
 
-For humanities/social science: re-read the source you misinterpreted; use [`../../learner-research/learnresearch_source_synthesis_chart.md`](../../learner-research/learnresearch_source_synthesis_chart.md) if the exam is synthesis-heavy.
+For humanities/social science: re-read the source you misinterpreted; use [`../../research/learn_source_synthesis_chart.md`](../../research/learn_source_synthesis_chart.md) if the exam is synthesis-heavy.
 
 **Time:** 2–4 hours
 
@@ -126,7 +126,7 @@ For humanities/social science: re-read the source you misinterpreted; use [`../.
 
 #### Step 7 — Feynman teach-back on the shakiest topics
 
-**Prompt:** [`../../learner-study-skills/learnstudy_feynman_teach_back_coach.md`](../../learner-study-skills/learnstudy_feynman_teach_back_coach.md)
+**Prompt:** [`../../memory-and-recall/learn_feynman_teach_back_coach.md`](../../memory-and-recall/learn_feynman_teach_back_coach.md)
 
 **Input:** the topic you understand least confidently
 
@@ -140,7 +140,7 @@ For humanities/social science: re-read the source you misinterpreted; use [`../.
 
 #### Step 8 — Test-day strategy
 
-**Prompt:** [`../../learner-study-skills/learnstudy_test_day_strategy.md`](../../learner-study-skills/learnstudy_test_day_strategy.md)
+**Prompt:** [`../../exam-prep/learn_test_day_strategy.md`](../../exam-prep/learn_test_day_strategy.md)
 
 **Input:** exam format, point distribution, your anxiety vs. time-management profile
 
@@ -170,7 +170,7 @@ For humanities/social science: re-read the source you misinterpreted; use [`../.
 | You're already past day 1 of finals week | Run step 1 anyway; even one day of better triage helps |
 | No mistake log exists | Step 5 turns into "look through every graded assignment from the semester" — slower but valuable |
 | Open-book exam | Skip step 3 (active recall); emphasize step 7 (you need to understand, not memorize) |
-| Take-home final | Use [`workflow_essay_draft_to_submit.md`](workflow_essay_draft_to_submit.md) or [`workflow_research_paper_full_arc.md`](workflow_research_paper_full_arc.md) instead |
+| Take-home final | Use [`learn_workflow_essay_draft_to_submit.md`](learn_workflow_essay_draft_to_submit.md) or [`learn_workflow_research_paper_full_arc.md`](learn_workflow_research_paper_full_arc.md) instead |
 
 ## Common Failure Modes
 
@@ -180,7 +180,7 @@ For humanities/social science: re-read the source you misinterpreted; use [`../.
 | **Studying what you know because it feels good.** | Step 5 (mistake log) exists to break this loop. Force yourself onto the weak material. |
 | **Cramming the night before with no sleep.** | Sleep matters more than 3 more hours of study. Run step 8 the evening before, then sleep. |
 | **No mistake log because you threw away returned work.** | Lesson for next semester: keep a mistake log all term. For now, ask the professor for past exam questions or look in the syllabus for sample problems and use those. |
-| **Anxiety derailing the schedule.** | Run [`../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md`](../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md) or [`../../../domain-personal-development/prompts/agency/agency_stuck_diagnosis.md`](../../../domain-personal-development/prompts/agency/agency_stuck_diagnosis.md) before continuing. |
+| **Anxiety derailing the schedule.** | Run [`../../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md`](../../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md) or [`../../../../domain-personal-development/prompts/agency/agency_stuck_diagnosis.md`](../../../../domain-personal-development/prompts/agency/agency_stuck_diagnosis.md) before continuing. |
 | **Feel under-prepared 2 days out.** | Triage harder: pick the 2 topics worth most points and go deep on those; let lower-weighted topics slide. Better to ace 70% of the exam than half-ace 100%. |
 
 ## Maintaining the System Across Semesters
@@ -189,10 +189,10 @@ If exam-week prep is consistently chaotic, the fix is during the semester:
 
 1. Build a running mistake log (one notebook page per course, add to it weekly)
 2. Convert notes to Cornell format the week you take them, not the week before finals
-3. Run a monthly [`../../../domain-productivity/reviews/reviews_weekly_systems_review.md`](../../../domain-productivity/reviews/reviews_weekly_systems_review.md) on your study system
+3. Run a monthly [`../../../../domain-productivity/reviews/reviews_weekly_systems_review.md`](../../../../domain-productivity/reviews/reviews_weekly_systems_review.md) on your study system
 
 By the time finals come, this workflow takes 6–10 hours instead of 20.
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). For ongoing time management, see [`cross_domain_kit.md`](cross_domain_kit.md).*
+*Part of [`GUIDE.md`](GUIDE.md). For ongoing time management, see [`learn_workflow_cross_domain_kit.md`](learn_workflow_cross_domain_kit.md).*

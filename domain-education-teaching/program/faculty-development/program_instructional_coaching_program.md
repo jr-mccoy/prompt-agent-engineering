@@ -1,6 +1,6 @@
 ---
 title: "Instructional Coaching Program Designer"
-category: education-teaching/faculty-development
+category: education-teaching/program/faculty-development
 description: "Design an instructional coaching program — coaching model, cycle, observation tools, coach training, fidelity protocols, and program evaluation — for K-12 or higher-ed contexts producing measurable teaching-practice changes."
 techniques:
   - ST-02
@@ -19,8 +19,8 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_faculty_development_plan_designer.md
-  - teaching_professional_learning_community_designer.md
+  - domain-education-teaching/program/faculty-development/program_faculty_development_plan_designer.md
+  - domain-education-teaching/program/faculty-development/program_professional_learning_community_designer.md
 ---
 
 # Instructional Coaching Program Designer

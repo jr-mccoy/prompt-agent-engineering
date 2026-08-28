@@ -1,6 +1,6 @@
 ---
 title: "World Language Communicative Task Designer"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/world-languages
 description: "Design a task-based world-language activity built around a real communicative purpose — information gap, decision-making, problem-solving, or opinion exchange — with proficiency-targeted scaffolds and outcome-based assessment."
 techniques:
   - CM-01  # Context Framing
@@ -21,8 +21,8 @@ tags:
   - task-based
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_worldlang_comprehensible_input_scaffold.md
-  - domain-education-teaching/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/subject-pedagogy/world-languages/teaching_comprehensible_input_scaffold.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
   - domain-conversation-practice/
 ---
 

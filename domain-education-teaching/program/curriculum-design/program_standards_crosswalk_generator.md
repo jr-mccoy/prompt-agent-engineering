@@ -1,6 +1,6 @@
 ---
 title: "Standards Crosswalk Generator (Two-Framework Alignment)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Generate a crosswalk between two standards frameworks — e.g., state standards ↔ CCSS, CCSS ↔ AP, NGSS ↔ state science, O*NET ↔ industry credential, ACGME ↔ AAMC EPAs — showing matches, partial fits, gaps, and conflicts."
 techniques:
   - ST-02
@@ -29,9 +29,9 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_standards_alignment_audit.md
-  - teaching_competency_mapping_workforce.md
-  - teaching_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_standards_alignment_audit.md
+  - domain-education-teaching/program/curriculum-design/program_competency_mapping_workforce.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
 ---
 
 # Standards Crosswalk Generator

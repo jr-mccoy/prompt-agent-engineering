@@ -1,6 +1,6 @@
 ---
 title: "Milestone & Checkpoint Architecture Designer"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Design a milestone or checkpoint architecture for a competency-based program — progression checkpoints, evidence requirements, decision rules, and the relationship between milestones and stackable credentials or graduation requirements."
 techniques:
   - ST-02
@@ -24,10 +24,10 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_competency_framework_designer.md
-  - teaching_progression_map_designer.md
+  - domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
+  - domain-education-teaching/program/curriculum-design/program_progression_map_designer.md
   - ../program-outcomes-assessment/teaching_competency_assessment_evidence_design.md
-  - teaching_competency_mapping_workforce.md
+  - domain-education-teaching/program/curriculum-design/program_competency_mapping_workforce.md
 ---
 
 # Milestone & Checkpoint Architecture Designer

@@ -1,6 +1,6 @@
 ---
 title: "Skill-Pivot Self-Study Plan Designer"
-category: education-teaching/adult-learner
+category: education-teaching/learner/adult-learner
 description: "Design a 3, 6, or 12-month self-study plan for an adult learner pivoting careers or building a new skill domain — with milestones, evals, evidence artifacts, and an explicit definition of 'ready.' Anchored on real target roles, not aspirational learning."
 techniques:
   - ST-02
@@ -23,8 +23,8 @@ related_prompts:
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
   - domain-personal-development/prompts/agency/agency_proof_of_work_portfolio.md
-  - domain-education-teaching/adult-learner/adult_credential_pathway_decision.md
-  - domain-education-teaching/adult-learner/adult_portfolio_while_learning.md
+  - domain-education-teaching/learner/adult-learner/learn_credential_pathway_decision.md
+  - domain-education-teaching/learner/adult-learner/learn_portfolio_while_learning.md
 ---
 
 # Skill-Pivot Self-Study Plan Designer
@@ -250,4 +250,4 @@ A 38-year-old high school teacher pivoting to UX design, 12-month timeline, 12 h
 
 ---
 
-*Part of [`../guides/career-changers/`](../guides/career-changers/). Pair with [`adult_credential_pathway_decision.md`](adult_credential_pathway_decision.md) if undecided whether self-study is the right route. Pair with [`adult_portfolio_while_learning.md`](adult_portfolio_while_learning.md) for the portfolio strategy.*
+*Part of [`../guides/career-changers/`](../guides/career-changers/). Pair with [`learn_credential_pathway_decision.md`](learn_credential_pathway_decision.md) if undecided whether self-study is the right route. Pair with [`learn_portfolio_while_learning.md`](learn_portfolio_while_learning.md) for the portfolio strategy.*

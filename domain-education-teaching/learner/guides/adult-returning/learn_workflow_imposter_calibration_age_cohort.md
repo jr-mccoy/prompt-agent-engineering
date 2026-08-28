@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Imposter Calibration in Age-Mixed Classrooms"
-category: education-teaching/guides/adult-returning
+category: education-teaching/learner/guides/adult-returning
 description: "Separate real skill-gap signal from age-anchored impostor noise. Use when 'I don't belong here' shows up for an adult learner surrounded by younger peers. Produces an action plan for real gaps and a reframe for the noise."
 audience: adult-learners-returning
 chain_length: 2
@@ -37,7 +37,7 @@ updated: "2026-05-13"
 
 ### Step 1 — Run the calibration prompt
 
-**Prompt:** [`../../adult-learner/adult_imposter_age_cohort_calibration.md`](../../adult-learner/adult_imposter_age_cohort_calibration.md)
+**Prompt:** [`../../adult-learner/learn_imposter_age_cohort_calibration.md`](../../adult-learner/learn_imposter_age_cohort_calibration.md)
 
 **Input:** specific incident + age context + program + recent results + worries
 
@@ -75,7 +75,7 @@ The calibration is for *specific incidents*. If you keep needing to run it:
 
 - Pattern: every class, every week → the issue may be broader than this workflow. Talk to a counselor.
 - Pattern: one specific class or instructor → it may be that instructor's dynamic, not impostor. Consider a frank conversation, advisor consultation, or section change.
-- Pattern: one specific peer comparison → run [`../../../domain-personal-development/prompts/identity/identity_comparison_envy_diagnostic.md`](../../../domain-personal-development/prompts/identity/identity_comparison_envy_diagnostic.md) on what the comparison is pointing at.
+- Pattern: one specific peer comparison → run [`../../../../domain-personal-development/prompts/identity/identity_comparison_envy_diagnostic.md`](../../../../domain-personal-development/prompts/identity/identity_comparison_envy_diagnostic.md) on what the comparison is pointing at.
 - Pattern: tied to financial / family / health stress, not academics → address the underlying stress; the imposter feeling is a symptom.
 
 ## When the Feeling Is Real Signal
@@ -140,4 +140,4 @@ These are gaps. They're closable. The calibration distinguishes them from the no
 
 ---
 
-*Part of [`GUIDE.md`](GUIDE.md). Run when the feeling hits, not on a schedule. Pair with [`../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md`](../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md) for broader / non-classroom confidence work.*
+*Part of [`GUIDE.md`](GUIDE.md). Run when the feeling hits, not on a schedule. Pair with [`../../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md`](../../../../domain-personal-development/prompts/identity/identity_confidence_calibration.md) for broader / non-classroom confidence work.*

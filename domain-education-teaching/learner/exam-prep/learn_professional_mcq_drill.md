@@ -1,6 +1,6 @@
 ---
 title: "Professional Licensing Exam MCQ Drill"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/exam-prep
 description: "Exam-style multiple-choice question drill for professional licensing exams (CPA, CFA, LSAT, GMAT, GRE, MCAT): generates questions in the house style of the target exam, collects confidence ratings per question, tracks over- and under-confidence, and produces a targeted review agenda weighted by both performance and confidence calibration."
 techniques:
   - ST-01
@@ -22,10 +22,10 @@ tags:
   - exam-prep
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_cert_domain_drill.md
-  - domain-education-teaching/learner-study-skills/learnstudy_confidence_calibration.md
-  - domain-education-teaching/learner-study-skills/learnstudy_retrieval_drill_designer.md
-  - domain-education-teaching/learner-study-skills/learnstudy_practice_test_generator.md
+  - domain-education-teaching/learner/exam-prep/learn_cert_domain_drill.md
+  - domain-education-teaching/learner/self-assessment/learn_confidence_calibration.md
+  - domain-education-teaching/learner/memory-and-recall/learn_retrieval_drill_designer.md
+  - domain-education-teaching/learner/exam-prep/learn_practice_test_generator.md
 ---
 
 ## Objective

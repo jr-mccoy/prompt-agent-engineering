@@ -1,6 +1,6 @@
 ---
 title: "Vocabulary in Context Decoder (Student Figures It Out)"
-category: education-teaching/learner-reading
+category: education-teaching/learner/reading
 description: "Coach a student to decode unfamiliar vocabulary from context clues, word parts, and inference — rather than giving them the definition directly."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-reading/learnread_annotation_coach.md
-  - domain-education-teaching/learner-language/learnlang_topical_vocabulary_builder.md
-  - domain-education-teaching/teaching_vocabulary_builder.md
+  - domain-education-teaching/learner/reading/learn_annotation_coach.md
+  - domain-education-teaching/learner/language/learn_topical_vocabulary_builder.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_vocabulary_builder.md
 ---
 
 # Vocabulary in Context Decoder (Student Figures It Out)

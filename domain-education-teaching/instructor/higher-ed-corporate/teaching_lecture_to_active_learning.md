@@ -1,6 +1,6 @@
 ---
 title: "Lecture to Active Learning Converter"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Convert an existing lecture (slides, recording, or transcript) into an active-learning session with interleaved retrieval, application, and discussion structures while preserving the original learning goals."
 techniques:
   - ST-02
@@ -18,9 +18,9 @@ tags:
   - instructional-design
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_async_lms_module_designer.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_microlearning_module.md
-  - domain-education-teaching/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_async_lms_module_designer.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_microlearning_module.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
 ---
 
 # Lecture to Active Learning Converter

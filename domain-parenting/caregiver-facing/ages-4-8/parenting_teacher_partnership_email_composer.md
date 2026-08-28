@@ -26,7 +26,7 @@ related_prompts:
   - domain-parenting/caregiver-facing/ages-4-8/parenting_hfa_social_situation_decoder.md
   - domain-parenting/caregiver-facing/ages-4-8/parenting_adhd_executive_function_scaffold.md
   - domain-parenting/caregiver-facing/ages-4-8/parenting_when_to_seek_professional_help.md
-  - domain-education-teaching/teaching_parent_communication_composer.md
+  - domain-education-teaching/instructor/reporting-communication/teaching_parent_communication_composer.md
 ---
 
 # Parent-to-Teacher Email Composer — Concerns, Requests, and Celebrations
@@ -343,4 +343,4 @@ Return:
 - **For strong-willed temperament context:** `parenting_strong_willed_power_struggle_defuser.md`
 - **For parent capacity before writing:** `parenting_parent_coregulation_reset.md`
 - **When concern exceeds teacher-level:** `parenting_when_to_seek_professional_help.md`
-- **For the teacher's side of this conversation:** `domain-education-teaching/teaching_parent_communication_composer.md`
+- **For the teacher's side of this conversation:** `domain-education-teaching/instructor/reporting-communication/teaching_parent_communication_composer.md`

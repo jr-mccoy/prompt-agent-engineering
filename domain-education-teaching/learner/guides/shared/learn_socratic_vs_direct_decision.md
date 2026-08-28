@@ -1,6 +1,6 @@
 ---
 title: "Socratic vs. Direct: When to Use Which Mode"
-category: education-teaching/guides/shared
+category: education-teaching/learner/guides/shared
 description: "Decision rule for when AI should coach Socratically (refuse to answer, ask diagnostic questions) and when it should answer directly. Resolves the live tension adult learners feel under time pressure."
 audience:
   - all-learners
@@ -108,7 +108,7 @@ A few existing prompts model this well:
 - **`learnmath_socratic_step_by_step_solver.md`** — pure Socratic, refuses to give numerical answers.
 - **`learnwrite_citation_helper.md`** — pure direct, because citation format is mechanical.
 
-The new adult-learner prompts in `domain-education-teaching/adult-learner/` follow the patterns established here:
+The new adult-learner prompts in `domain-education-teaching/learner/adult-learner/` follow the patterns established here:
 - Time-architecture, schedule, decision: direct
 - Identity, calibration, reflection: Socratic
 - Skill-pivot study plan: mixed (Socratic on what you commit to; direct on the plan format)
@@ -137,4 +137,4 @@ The Socratic vs. direct decision is itself a learnable skill. An adult learner w
 
 ---
 
-*Part of [`../README.md`](../README.md). Paired with [`andragogy_principles.md`](andragogy_principles.md) and [`ai_as_study_partner_integrity.md`](ai_as_study_partner_integrity.md).*
+*Part of [`../README.md`](../README.md). Paired with [`learn_andragogy_principles.md`](learn_andragogy_principles.md) and [`learn_ai_as_study_partner_integrity.md`](learn_ai_as_study_partner_integrity.md).*

@@ -1,6 +1,6 @@
 ---
 title: "Restorative Conversation Script"
-category: education-teaching/classroom-ops
+category: education-teaching/instructor/classroom-ops
 description: "Generate a structured restorative conversation script after harm or broken agreement — teacher-student or student-student — using the five restorative questions, with preparation, conversation, and follow-through phases."
 techniques:
   - CM-01
@@ -18,9 +18,9 @@ tags:
   - classroom-management
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/classroom-ops/classops_management_plan_and_norms.md
-  - domain-education-teaching/teaching_behavior_support_planner.md
-  - domain-education-teaching/teaching_parent_communication_composer.md
+  - domain-education-teaching/instructor/classroom-ops/teaching_management_plan_and_norms.md
+  - domain-education-teaching/instructor/student-support/teaching_behavior_support_planner.md
+  - domain-education-teaching/instructor/reporting-communication/teaching_parent_communication_composer.md
 ---
 
 # Restorative Conversation Script

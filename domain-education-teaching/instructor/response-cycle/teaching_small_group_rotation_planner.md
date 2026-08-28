@@ -1,6 +1,6 @@
 ---
 title: "Small-Group Rotation Planner"
-category: education-teaching
+category: education-teaching/instructor/response-cycle
 description: "Plan objective-aligned small-group rotations based on misconception data, timing constraints, and reassessment goals"
 techniques:
   - ST-01
@@ -18,11 +18,11 @@ tags:
   - differentiation
 updated: "2026-05-05"
 related_prompts:
-  - domain-education-teaching/teaching_misconception_diagnoser.md
-  - domain-education-teaching/teaching_reteach_intervention_planner.md
-  - domain-education-teaching/teaching_preassessment_designer.md
-  - domain-education-teaching/teaching_differentiation_planner.md
-  - domain-education-teaching/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/response-cycle/teaching_reteach_intervention_planner.md
+  - domain-education-teaching/instructor/response-cycle/teaching_preassessment_designer.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
 ---
 
 **Purpose:** Build structured small-group rotations that target specific misconceptions, maximize instructional minutes, and lead to clear reassessment readiness.

@@ -1,6 +1,6 @@
 ---
 title: "Vertical Alignment Auditor (Cross-Grade / Cross-Level)"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Audit a subject's curriculum across grades or program levels for vertical alignment — confirming that learning progressions, prerequisite logic, and depth advancement (Introduced → Developed → Mastered) actually compound across levels rather than repeat or skip."
 techniques:
   - ST-02
@@ -20,10 +20,10 @@ tags:
   - audit
 updated: "2026-05-15"
 related_prompts:
-  - teaching_horizontal_alignment_mapper.md
-  - teaching_scope_sequence_k12.md
-  - teaching_progression_map_designer.md
-  - teaching_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_horizontal_alignment_mapper.md
+  - domain-education-teaching/program/curriculum-design/program_scope_sequence_k12.md
+  - domain-education-teaching/program/curriculum-design/program_progression_map_designer.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
 ---
 
 # Vertical Alignment Auditor

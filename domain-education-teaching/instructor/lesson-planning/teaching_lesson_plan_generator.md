@@ -1,6 +1,6 @@
 ---
 title: "Lesson Plan Generator"
-category: education-teaching
+category: education-teaching/instructor/lesson-planning
 description: "Create comprehensive, standards-aligned lesson plans with differentiation and assessment"
 tags:
   - education

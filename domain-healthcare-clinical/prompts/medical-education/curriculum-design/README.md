@@ -25,6 +25,6 @@ All ACGME-related content (Common Program Requirements, specialty Milestones, EP
 
 ## Related
 
-- `../../../../domain-education-teaching/curriculum-design/` — sector-agnostic program design prompts
-- `../../../../domain-education-teaching/program-outcomes-assessment/` — outcomes evidence design including CBME-style evidence
-- `../../../../domain-education-teaching/accreditation-program-review/teaching_accreditation_self_study_meded.md` — LCME/ACGME/COCA/CODA self-study builder
+- `../../../../domain-education-teaching/program/curriculum-design/` — sector-agnostic program design prompts
+- `../../../../domain-education-teaching/program/outcomes-assessment/` — outcomes evidence design including CBME-style evidence
+- `../../../../domain-education-teaching/program/accreditation-review/program_accreditation_self_study_meded.md` — LCME/ACGME/COCA/CODA self-study builder

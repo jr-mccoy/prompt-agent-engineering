@@ -1,6 +1,6 @@
 ---
 title: "Socratic Error Probe for Quantitative Reasoning"
-category: education-teaching/learner-tutoring/math-science
+category: education-teaching/learner/stuck-and-confused
 description: "Socratic tutoring routine that diagnoses conceptual and procedural errors in math/science problem solving."
 techniques:
   - ED-02  # Socratic Dialogue

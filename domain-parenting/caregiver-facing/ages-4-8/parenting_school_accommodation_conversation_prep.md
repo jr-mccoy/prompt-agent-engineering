@@ -28,8 +28,8 @@ related_prompts:
   - domain-parenting/caregiver-facing/ages-4-8/parenting_behavior_function_decoder.md
   - domain-parenting/caregiver-facing/ages-4-8/parenting_sensory_at_home_toolkit.md
   - domain-parenting/caregiver-facing/ages-4-8/parenting_when_to_seek_professional_help.md
-  - domain-education-teaching/teaching_iep_goal_writer.md
-  - domain-education-teaching/teaching_behavior_support_planner.md
+  - domain-education-teaching/instructor/student-support/teaching_iep_goal_writer.md
+  - domain-education-teaching/instructor/student-support/teaching_behavior_support_planner.md
 ---
 
 # School Accommodation Conversation Prep — For Kids Who Excel Academically but Struggle Behaviorally or Socially
@@ -353,5 +353,5 @@ Return a single document with these labeled sections, in order:
 - **For sensory-load language and tools:** `parenting_sensory_at_home_toolkit.md`
 - **For parent capacity before a high-stakes meeting:** `parenting_parent_coregulation_reset.md`
 - **When pattern exceeds school scope:** `parenting_when_to_seek_professional_help.md`
-- **For the school-side view of IEP goals:** `domain-education-teaching/teaching_iep_goal_writer.md`
-- **For the school-side behavior-support framework:** `domain-education-teaching/teaching_behavior_support_planner.md`
+- **For the school-side view of IEP goals:** `domain-education-teaching/instructor/student-support/teaching_iep_goal_writer.md`
+- **For the school-side behavior-support framework:** `domain-education-teaching/instructor/student-support/teaching_behavior_support_planner.md`

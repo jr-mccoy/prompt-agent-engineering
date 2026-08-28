@@ -1,6 +1,6 @@
 ---
 title: "Advanced Instructional Unit Designer: UbD + UDL + Scaffolding + Accessibility"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Design a coherent, accessible instructional unit using Understanding by Design, Universal Design for Learning, deliberate scaffolding and fading, assessment alignment, learner variability planning, and accessibility-by-design."
 techniques:
   - ST-02
@@ -25,10 +25,10 @@ tags:
   - higher-ed
 updated: "2026-07-18"
 related_prompts:
-  - teaching_backward_program_design.md
-  - teaching_learning_objectives_writer_blooms.md
+  - domain-education-teaching/program/curriculum-design/program_backward_program_design.md
+  - domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md
   - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
-  - teaching_remediation_pathway_designer.md
+  - domain-education-teaching/program/curriculum-design/program_remediation_pathway_designer.md
 ---
 
 # Advanced Instructional Unit Designer

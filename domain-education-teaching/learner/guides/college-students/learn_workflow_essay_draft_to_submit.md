@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Essay — Draft to Submit"
-category: education-teaching/guides/college-students
+category: education-teaching/learner/guides/college-students
 description: "Full chain for writing a college essay (3–10 pages): topic to thesis to outline to draft to revision to integrity self-check. Uses existing Socratic prompts only — AI does not write the essay."
 audience: college-students
 chain_length: 7
@@ -17,7 +17,7 @@ updated: "2026-05-13"
 - Single thesis, single argument, supported by 3–8 sources (or a few course readings)
 - Submission is graded
 
-If you have 10+ pages with extensive research, use [`workflow_research_paper_full_arc.md`](workflow_research_paper_full_arc.md) instead.
+If you have 10+ pages with extensive research, use [`learn_workflow_research_paper_full_arc.md`](learn_workflow_research_paper_full_arc.md) instead.
 
 ## What You'll Have at the End
 
@@ -40,7 +40,7 @@ If you have 10+ pages with extensive research, use [`workflow_research_paper_ful
 
 ### Step 1 — Refine your thesis
 
-**Prompt:** [`../../learner-writing/learnwrite_thesis_with_critique.md`](../../learner-writing/learnwrite_thesis_with_critique.md)
+**Prompt:** [`../../writing/learn_thesis_with_critique.md`](../../writing/learn_thesis_with_critique.md)
 
 **Input:** assignment prompt + your rough thesis attempt
 
@@ -54,7 +54,7 @@ If you have 10+ pages with extensive research, use [`workflow_research_paper_ful
 
 ### Step 2 — Surface counterarguments
 
-**Prompt:** [`../../learner-writing/learnwrite_counterargument_generator.md`](../../learner-writing/learnwrite_counterargument_generator.md)
+**Prompt:** [`../../writing/learn_counterargument_generator.md`](../../writing/learn_counterargument_generator.md)
 
 **Input:** your refined thesis
 
@@ -68,7 +68,7 @@ If you have 10+ pages with extensive research, use [`workflow_research_paper_ful
 
 ### Step 3 — Build an outline
 
-**Prompt:** [`../../learner-writing/learnwrite_outline_generator.md`](../../learner-writing/learnwrite_outline_generator.md)
+**Prompt:** [`../../writing/learn_outline_generator.md`](../../writing/learn_outline_generator.md)
 
 **Input:** thesis + counterargument
 
@@ -82,7 +82,7 @@ If you have 10+ pages with extensive research, use [`workflow_research_paper_ful
 
 ### Step 4 — Source credibility check (if research-based)
 
-**Prompt:** [`../../learner-writing/learnwrite_source_credibility_evaluator.md`](../../learner-writing/learnwrite_source_credibility_evaluator.md)
+**Prompt:** [`../../writing/learn_source_credibility_evaluator.md`](../../writing/learn_source_credibility_evaluator.md)
 
 **Input:** the sources you plan to cite
 
@@ -100,13 +100,13 @@ Do this without AI assistance for the first pass. Fill the outline with your pro
 
 **Time estimate:** 2–4 hours for a 3–5 page essay; 4–6 hours for an 8–10 page essay.
 
-**If you get stuck:** run [`../../../domain-personal-development/prompts/agency/agency_stuck_diagnosis.md`](../../../domain-personal-development/prompts/agency/agency_stuck_diagnosis.md) — diagnose whether you're stuck on understanding, structure, or execution.
+**If you get stuck:** run [`../../../../domain-personal-development/prompts/agency/agency_stuck_diagnosis.md`](../../../../domain-personal-development/prompts/agency/agency_stuck_diagnosis.md) — diagnose whether you're stuck on understanding, structure, or execution.
 
 ---
 
 ### Step 6 — Revise with Socratic coaching
 
-**Prompt:** [`../../learner-writing/learnwrite_revision_socratic_coach.md`](../../learner-writing/learnwrite_revision_socratic_coach.md)
+**Prompt:** [`../../writing/learn_revision_socratic_coach.md`](../../writing/learn_revision_socratic_coach.md)
 
 **Input:** your complete draft
 
@@ -120,7 +120,7 @@ Do this without AI assistance for the first pass. Fill the outline with your pro
 
 ### Step 7 — Integrity self-check before submission
 
-**Prompt:** [`../../learner-writing/learnwrite_academic_integrity_self_check.md`](../../learner-writing/learnwrite_academic_integrity_self_check.md)
+**Prompt:** [`../../writing/learn_academic_integrity_self_check.md`](../../writing/learn_academic_integrity_self_check.md)
 
 **Input:** your final draft
 
@@ -170,4 +170,4 @@ The workflow is faster than writing without AI **on the thinking-clarification a
 
 ---
 
-*Part of [`../college-students/GUIDE.md`](GUIDE.md). For research papers, see [`workflow_research_paper_full_arc.md`](workflow_research_paper_full_arc.md).*
+*Part of [`GUIDE.md`](GUIDE.md). For research papers, see [`learn_workflow_research_paper_full_arc.md`](learn_workflow_research_paper_full_arc.md).*

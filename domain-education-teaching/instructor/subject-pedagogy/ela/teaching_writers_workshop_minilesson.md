@@ -1,6 +1,6 @@
 ---
 title: "Writer's Workshop Minilesson Designer"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/ela
 description: "Design a focused 10–15 minute writer's workshop minilesson on a single craft move — connection, teaching point, mentor text demonstration, active engagement, and link to independent writing."
 techniques:
   - CM-01
@@ -19,9 +19,9 @@ tags:
   - high-school
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_ela_close_reading_minilesson.md
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/teaching_student_feedback_composer.md
+  - domain-education-teaching/instructor/subject-pedagogy/ela/teaching_close_reading_minilesson.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_student_feedback_composer.md
 ---
 
 # Writer's Workshop Minilesson Designer

@@ -1,6 +1,6 @@
 ---
 title: "L2 Grammar Concept Explainer"
-category: education-teaching/learner-language
+category: education-teaching/learner/language
 description: "Explain an L2 grammar concept clearly — rule, examples, common errors, and comprehension check — then coach the student through targeted production practice."
 techniques:
   - ED-01
@@ -23,9 +23,9 @@ tags:
   - adult
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-language/learnlang_daily_conversation_drill.md
-  - domain-education-teaching/learner-language/learnlang_topical_vocabulary_builder.md
-  - domain-education-teaching/learner-language/learnlang_idiom_decoder.md
+  - domain-education-teaching/learner/language/learn_daily_conversation_drill.md
+  - domain-education-teaching/learner/language/learn_topical_vocabulary_builder.md
+  - domain-education-teaching/learner/language/learn_idiom_decoder.md
 ---
 
 # L2 Grammar Concept Explainer

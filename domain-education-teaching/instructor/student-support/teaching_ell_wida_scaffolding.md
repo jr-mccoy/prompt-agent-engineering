@@ -1,6 +1,6 @@
 ---
 title: "ELL Scaffolding by WIDA Proficiency Level"
-category: education-teaching/inclusive
+category: education-teaching/instructor/student-support
 description: "Adapt a content lesson with WIDA-aligned scaffolds at each of six proficiency levels — language objectives, sentence frames, modified output expectations, and assessment accommodations that preserve grade-level content rigor."
 techniques:
   - CM-01
@@ -19,9 +19,9 @@ tags:
   - inclusive
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_differentiation_planner.md
-  - domain-education-teaching/teaching_reading_level_adapter.md
-  - domain-education-teaching/teaching_vocabulary_builder.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_reading_level_adapter.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_vocabulary_builder.md
 ---
 
 # ELL Scaffolding by WIDA Proficiency Level

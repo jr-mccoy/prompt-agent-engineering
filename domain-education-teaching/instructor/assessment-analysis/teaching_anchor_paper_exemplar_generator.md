@@ -1,6 +1,6 @@
 ---
 title: "Anchor Paper / Exemplar Generator"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-analysis
 description: "Generate a calibration set of anchor papers — one per rubric performance level — with annotated scoring rationale, for norming teacher scoring on constructed-response or performance items."
 techniques:
   - CM-01
@@ -19,9 +19,9 @@ tags:
   - rubric
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/assessment/assessment_performance_task_designer.md
-  - domain-education-teaching/teaching_assessment_rubric_builder.md
-  - domain-education-teaching/grading-feedback/grading_essay_feedback_by_rubric_criterion.md
+  - domain-education-teaching/instructor/assessment-design/teaching_performance_task_designer.md
+  - domain-education-teaching/instructor/assessment-design/teaching_assessment_rubric_builder.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
 ---
 
 # Anchor Paper / Exemplar Generator

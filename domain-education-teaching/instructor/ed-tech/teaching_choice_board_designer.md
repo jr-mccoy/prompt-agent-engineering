@@ -1,6 +1,6 @@
 ---
 title: "Student Choice Board / HyperDoc Designer"
-category: education-teaching/ed-tech
+category: education-teaching/instructor/ed-tech
 description: "Design a student choice board (HyperDoc-style) where learners select from differentiated tasks aligned to a single learning objective — including must-do, may-do, and challenge tiers."
 techniques:
   - ST-02
@@ -19,9 +19,9 @@ tags:
   - secondary
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_differentiation_planner.md
-  - domain-education-teaching/ed-tech/edtech_blended_hyflex_lesson_designer.md
-  - domain-education-teaching/teaching_small_group_rotation_planner.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md
+  - domain-education-teaching/instructor/ed-tech/teaching_blended_hyflex_lesson_designer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_small_group_rotation_planner.md
 ---
 
 # Student Choice Board / HyperDoc Designer

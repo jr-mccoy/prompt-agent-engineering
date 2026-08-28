@@ -1,6 +1,6 @@
 ---
 title: "Unit & Curriculum Planner (Backward Design)"
-category: education-teaching
+category: education-teaching/instructor/lesson-planning
 description: "Design multi-week instructional units using Understanding by Design framework with scope and sequence"
 tags:
   - education

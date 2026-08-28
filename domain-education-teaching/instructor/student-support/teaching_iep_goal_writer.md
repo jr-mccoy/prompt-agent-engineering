@@ -1,6 +1,6 @@
 ---
 title: "IEP & 504 Plan Goal Writer"
-category: education-teaching
+category: education-teaching/instructor/student-support
 description: "Generate measurable, compliant IEP and 504 plan goals with progress monitoring frameworks"
 tags:
   - education

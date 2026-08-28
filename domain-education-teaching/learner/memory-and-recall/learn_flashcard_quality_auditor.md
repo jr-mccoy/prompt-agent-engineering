@@ -1,6 +1,6 @@
 ---
 title: "Flashcard Quality Auditor"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/memory-and-recall
 description: "Audits an existing flashcard deck for quality issues: atomicity violations, ambiguous answers, recognition vs. recall imbalance, minimum-information principle failures, and cloze vs. Q&A misuse."
 techniques:
   - ST-01
@@ -17,8 +17,8 @@ tags:
   - retrieval-practice
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/teaching_study_flashcard_generator.md
-  - domain-education-teaching/learner-study-skills/learnstudy_spaced_review_scheduler.md
+  - domain-education-teaching/learner/memory-and-recall/learn_flashcard_generator.md
+  - domain-education-teaching/learner/memory-and-recall/learn_spaced_review_scheduler.md
 ---
 
 ## Objective

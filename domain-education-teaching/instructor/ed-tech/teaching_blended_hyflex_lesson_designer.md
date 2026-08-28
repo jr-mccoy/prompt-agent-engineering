@@ -1,6 +1,6 @@
 ---
 title: "Blended / HyFlex Lesson Designer"
-category: education-teaching/ed-tech
+category: education-teaching/instructor/ed-tech
 description: "Design a single blended or HyFlex lesson where in-person, sync online, and async learners get equivalent experience and outcomes — not 'in-person plus afterthoughts.'"
 techniques:
   - ST-02
@@ -19,9 +19,9 @@ tags:
   - lesson-design
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_online_course_conversion.md
-  - domain-education-teaching/ed-tech/edtech_class_slide_deck_designer.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_online_course_conversion.md
+  - domain-education-teaching/instructor/ed-tech/teaching_class_slide_deck_designer.md
 ---
 
 # Blended / HyFlex Lesson Designer

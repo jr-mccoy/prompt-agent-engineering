@@ -1,6 +1,6 @@
 ---
 title: "Async LMS Module Designer"
-category: education-teaching/higher-ed-corporate
+category: education-teaching/instructor/higher-ed-corporate
 description: "Design a fully asynchronous online module ready to drop into Canvas, Blackboard, Brightspace, or Moodle — with sequenced content, embedded checks, discussion structure, and accessibility baseline."
 techniques:
   - ST-02
@@ -19,9 +19,9 @@ tags:
   - course-design
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/higher-ed-corporate/hecorp_online_course_conversion.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_lecture_to_active_learning_converter.md
-  - domain-education-teaching/ed-tech/edtech_lms_course_shell_setup.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_online_course_conversion.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_lecture_to_active_learning.md
+  - domain-education-teaching/instructor/ed-tech/teaching_lms_course_shell_setup.md
 ---
 
 # Async LMS Module Designer

@@ -1,6 +1,6 @@
 ---
 title: "Lab Report Feedback (CER-Anchored)"
-category: education-teaching/grading-feedback
+category: education-teaching/instructor/grading-feedback
 description: "Generate feedback on a student lab report keyed to CER components — claim, evidence, reasoning — plus procedure, data quality, and limitations, naming a single highest-leverage revision rather than rewriting the report."
 techniques:
   - CM-01  # Context Framing
@@ -20,9 +20,9 @@ tags:
   - revision
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/subject-pedagogy/teachsubj_science_cer_scaffold.md
-  - domain-education-teaching/grading-feedback/grading_essay_feedback_by_rubric_criterion.md
-  - domain-education-teaching/learner-math-science/learnsci_lab_report_scaffold.md
+  - domain-education-teaching/instructor/subject-pedagogy/science/teaching_cer_scaffold.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
+  - domain-education-teaching/learner/math-science/learn_lab_report_scaffold.md
 ---
 
 # Lab Report Feedback (CER-Anchored)

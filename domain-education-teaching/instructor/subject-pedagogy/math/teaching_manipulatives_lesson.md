@@ -1,6 +1,6 @@
 ---
 title: "Math Manipulatives Lesson — Concrete-Pictorial-Abstract"
-category: education-teaching/subject-pedagogy
+category: education-teaching/instructor/subject-pedagogy/math
 description: "Design a math lesson that moves students through the concrete → pictorial → abstract (CPA) sequence so the symbolic representation grows out of physical action — not the other way around."
 techniques:
   - CM-01  # Context Framing
@@ -19,9 +19,9 @@ tags:
   - representations
 updated: "2026-05-10"
 related_prompts:
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/subject-pedagogy/teachsubj_math_problem_string_designer.md
-  - domain-education-teaching/teaching_misconception_diagnoser.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/subject-pedagogy/math/teaching_problem_string_designer.md
+  - domain-education-teaching/instructor/response-cycle/teaching_misconception_diagnoser.md
 ---
 
 # Math Manipulatives Lesson — Concrete-Pictorial-Abstract

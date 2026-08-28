@@ -1,6 +1,6 @@
 ---
 title: "Parent & Family Communication Composer"
-category: education-teaching
+category: education-teaching/instructor/reporting-communication
 description: "Create professional, empathetic parent communications including newsletters, conference notes, and progress updates"
 tags:
   - education

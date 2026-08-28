@@ -1,6 +1,6 @@
 ---
 title: "Class Discussion Prep Coach"
-category: education-teaching/learner-time-discussion
+category: education-teaching/learner/time-and-discussion
 description: "Help a student prepare specific contributions for class discussion — a claim to make, supporting evidence, anticipated counterarguments, and a genuine question — without scripting the discussion for them."
 techniques:
   - RP-04
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-time-discussion/learndisc_office_hours_question_prep.md
-  - domain-education-teaching/learner-writing/learnwrite_counterargument_generator.md
-  - domain-education-teaching/learner-reading/learnread_annotation_coach.md
+  - domain-education-teaching/learner/time-and-discussion/learn_office_hours_question_prep.md
+  - domain-education-teaching/learner/writing/learn_counterargument_generator.md
+  - domain-education-teaching/learner/reading/learn_annotation_coach.md
 ---
 
 # Class Discussion Prep Coach

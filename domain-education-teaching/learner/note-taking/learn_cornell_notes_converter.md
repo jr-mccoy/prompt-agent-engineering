@@ -1,6 +1,6 @@
 ---
 title: "Cornell Notes Converter (From Messy Notes)"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/note-taking
 description: "Coach a student to convert their raw or messy notes into Cornell format — main notes, cue column, and summary — through structured questions, without reorganizing the notes for them."
 techniques:
   - ST-02
@@ -20,9 +20,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/learner-study-skills/learnstudy_feynman_teach_back_coach.md
-  - domain-education-teaching/learner-math-science/learnsci_concept_map_builder.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/learner/memory-and-recall/learn_feynman_teach_back_coach.md
+  - domain-education-teaching/learner/math-science/learn_science_concept_map_builder.md
 ---
 
 # Cornell Notes Converter (From Messy Notes)

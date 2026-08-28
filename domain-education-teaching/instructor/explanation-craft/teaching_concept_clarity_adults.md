@@ -1,6 +1,6 @@
 ---
 title: "Concept Clarity for Adults"
-category: education-teaching
+category: education-teaching/instructor/explanation-craft
 description: "Make complex concepts genuinely intuitive for adults using mental models, structured analogies, and the 'explain it to a smart friend' approach"
 tags:
   - education
@@ -230,11 +230,11 @@ Next time someone says "I don't want to put that mRNA in my body," you can expla
 - OC-04 (Comprehensive Example Outputs) — Full worked example demonstrates the complete format
 
 **Related Prompts:**
-- `domain-education-teaching/teaching_concept_explorer_kids.md` — Kids version (ages 5-10)
-- `domain-education-teaching/teaching_concept_decoder_teens.md` — Teen version (ages 11-17)
-- `domain-education-teaching/teaching_story_based_explainer.md` — Full narrative/allegory approach
-- `domain-education-teaching/teaching_analogy_engine.md` — Systematic analogy construction
-- `domain-education-teaching/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md` — Kids version (ages 5-10)
+- `domain-education-teaching/instructor/explanation-craft/teaching_concept_decoder_teens.md` — Teen version (ages 11-17)
+- `domain-education-teaching/instructor/explanation-craft/teaching_story_based_explainer.md` — Full narrative/allegory approach
+- `domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md` — Systematic analogy construction
+- `domain-education-teaching/instructor/explanation-craft/teaching_visual_memory_architect.md` — Memory palace and spatial techniques
 - `domain-learning-coding/learning_code_analogies_metaphors.md` — Code-specific analogy building
 - `domain-learning-coding/learning_mini_lesson_generation.md` — Structured mini-lesson format
 

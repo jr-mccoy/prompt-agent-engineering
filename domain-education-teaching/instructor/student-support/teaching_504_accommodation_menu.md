@@ -1,6 +1,6 @@
 ---
 title: "504 Plan Accommodation Menu"
-category: education-teaching/inclusive
+category: education-teaching/instructor/student-support
 description: "Generate a categorized menu of 504-style classroom accommodations matched to a student's documented impairment, ranked by leverage and feasibility — with implementation specifics and progress-monitoring notes."
 techniques:
   - CM-01
@@ -20,9 +20,9 @@ tags:
   - chronic-condition
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_iep_goal_writer.md
-  - domain-education-teaching/inclusive/inclusive_udl_lesson_redesign.md
-  - domain-education-teaching/teaching_behavior_support_planner.md
+  - domain-education-teaching/instructor/student-support/teaching_iep_goal_writer.md
+  - domain-education-teaching/instructor/student-support/teaching_udl_lesson_redesign.md
+  - domain-education-teaching/instructor/student-support/teaching_behavior_support_planner.md
 ---
 
 # 504 Plan Accommodation Menu

@@ -1,6 +1,6 @@
 ---
 title: "Instructional Slide Deck Designer"
-category: education-teaching/ed-tech
+category: education-teaching/instructor/ed-tech
 description: "Design a class slide deck that supports learning rather than substituting for it: cognitive-load-aware slide structure, segmented activities, and a teacher-facing speaker-note layer."
 techniques:
   - ST-02
@@ -18,9 +18,9 @@ tags:
   - cognitive-load
 updated: "2026-05-09"
 related_prompts:
-  - domain-education-teaching/teaching_lesson_plan_generator.md
-  - domain-education-teaching/ed-tech/edtech_instructional_video_script.md
-  - domain-education-teaching/higher-ed-corporate/hecorp_lecture_to_active_learning_converter.md
+  - domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md
+  - domain-education-teaching/instructor/ed-tech/teaching_instructional_video_script.md
+  - domain-education-teaching/instructor/higher-ed-corporate/teaching_lecture_to_active_learning.md
 ---
 
 # Instructional Slide Deck Designer

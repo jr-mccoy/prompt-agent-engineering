@@ -890,7 +890,7 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### Curriculum Design & Program-Level Educational Planning (2026-05-15)
 - **Program-level curriculum, standards alignment, outcomes, accreditation, faculty development, program evaluation** → `domain-education-teaching/` subdirectories (45 new prompts):
-  - **Curriculum design** → `domain-education-teaching/curriculum-design/` (18 prompts):
+  - **Curriculum design** → `domain-education-teaching/program/curriculum-design/` (18 prompts):
     - Example: "Build a curriculum map (course → outcome → standard → assessment)" → `teaching_curriculum_map_builder.md`
     - Example: "K-12 multi-year scope and sequence" → `teaching_scope_sequence_k12.md`
     - Example: "Higher-ed program scope and sequence" → `teaching_scope_sequence_he.md`
@@ -909,7 +909,7 @@ When users need help with **non-coding tasks**, first determine the domain:
     - Example: "Remediation pathway (MTSS/RTI or competency-based)" → `teaching_remediation_pathway_designer.md`
     - Example: "Advanced unit design (UbD + UDL + accessibility)" → `teaching_unit_design_advanced.md`
     - Example: "Workforce competency mapping (O*NET + credentials)" → `teaching_competency_mapping_workforce.md`
-  - **Program outcomes & assessment** → `domain-education-teaching/program-outcomes-assessment/` (8 prompts):
+  - **Program outcomes & assessment** → `domain-education-teaching/program/outcomes-assessment/` (8 prompts):
     - Example: "Build PSLO / ISLO / CSLO architecture" → `teaching_program_outcomes_framework.md`
     - Example: "Map outcomes to assessment evidence" → `teaching_outcomes_to_assessment_mapper.md`
     - Example: "Build assessment blueprint (test specification)" → `teaching_assessment_blueprint_builder.md`
@@ -918,19 +918,19 @@ When users need help with **non-coding tasks**, first determine the domain:
     - Example: "Capstone assessment design" → `teaching_capstone_assessment_designer.md`
     - Example: "Audit rubric for outcomes alignment" → `teaching_rubric_alignment_to_outcomes.md`
     - Example: "Competency-based assessment evidence plan (CBME)" → `teaching_competency_assessment_evidence_design.md`
-  - **Accreditation & program review** → `domain-education-teaching/accreditation-program-review/` (5 prompts, parameterized):
+  - **Accreditation & program review** → `domain-education-teaching/program/accreditation-review/` (5 prompts, parameterized):
     - Example: "Build a regional HE accreditation self-study (HLC / MSCHE / SACSCOC / WSCUC / NWCCU)" → `teaching_accreditation_self_study_he.md`
     - Example: "Programmatic accreditation self-study (ABET / AACSB / CAEP / CCNE / ACPE / etc.)" → `teaching_accreditation_self_study_programmatic.md`
     - Example: "Med-ed accreditation self-study (LCME / ACGME / COCA / CODA)" → `teaching_accreditation_self_study_meded.md`
     - Example: "Program review cycle designer" → `teaching_program_review_cycle_designer.md`
     - Example: "Compile criteria + evidence into response drafts" → `teaching_accreditation_evidence_compiler.md`
-  - **Faculty development** → `domain-education-teaching/faculty-development/` (5 prompts):
+  - **Faculty development** → `domain-education-teaching/program/faculty-development/` (5 prompts):
     - Example: "Multi-semester faculty development plan" → `teaching_faculty_development_plan_designer.md`
     - Example: "Professional learning community design" → `teaching_professional_learning_community_designer.md`
     - Example: "Instructional coaching program design" → `teaching_instructional_coaching_program.md`
     - Example: "Assessment literacy faculty curriculum" → `teaching_assessment_literacy_curriculum.md`
     - Example: "New faculty onboarding program" → `teaching_faculty_onboarding_program.md`
-  - **Program evaluation & analytics** → `domain-education-teaching/program-evaluation-analytics/` (5 prompts):
+  - **Program evaluation & analytics** → `domain-education-teaching/program/evaluation-analytics/` (5 prompts):
     - Example: "Build a program evaluation framework (Kirkpatrick / CIPP / logic model / theory of change)" → `teaching_program_evaluation_framework.md`
     - Example: "Logic model / theory of change with assumptions" → `teaching_logic_model_designer.md`
     - Example: "Interpret LMS / formative / dashboard data" → `teaching_learning_analytics_interpreter.md`
@@ -2310,48 +2310,48 @@ Examples:
 | "Production monitoring for output correctness drift" | `domain-prompt-engineering/evaluation/correctness_production_monitoring_setup.md` |
 | **Non-Coding Prompts** | **Use NON_CODING_QUICK_START.md** |
 | "Lesson plan/worksheet" | `domain-education-teaching/` |
-| **Program-level curriculum, standards, accreditation, faculty dev, program evaluation** | **See `domain-education-teaching/curriculum-design/` and sibling subdirectories** |
-| "Curriculum map (course-outcome-standard-assessment)" | `domain-education-teaching/curriculum-design/teaching_curriculum_map_builder.md` |
-| "K-12 multi-year scope & sequence" | `domain-education-teaching/curriculum-design/teaching_scope_sequence_k12.md` |
-| "HE program scope & sequence" | `domain-education-teaching/curriculum-design/teaching_scope_sequence_he.md` |
-| "Workforce / CTE / apprenticeship scope & sequence" | `domain-education-teaching/curriculum-design/teaching_scope_sequence_workforce.md` |
-| "Backward program design (UbD at program scale)" | `domain-education-teaching/curriculum-design/teaching_backward_program_design.md` |
-| "Standards alignment audit" | `domain-education-teaching/curriculum-design/teaching_standards_alignment_audit.md` |
-| "Crosswalk between two standards frameworks" | `domain-education-teaching/curriculum-design/teaching_standards_crosswalk_generator.md` |
-| "Competency framework (parameterized by sector)" | `domain-education-teaching/curriculum-design/teaching_competency_framework_designer.md` |
-| "Workforce competency mapping (O*NET / industry creds)" | `domain-education-teaching/curriculum-design/teaching_competency_mapping_workforce.md` |
-| "Vertical alignment audit" | `domain-education-teaching/curriculum-design/teaching_vertical_alignment_auditor.md` |
-| "Horizontal alignment (cross-disciplinary, same level)" | `domain-education-teaching/curriculum-design/teaching_horizontal_alignment_mapper.md` |
-| "HE course design (constructive alignment, Biggs)" | `domain-education-teaching/curriculum-design/teaching_course_design_he.md` |
-| "Advanced unit design (UbD + UDL + accessibility)" | `domain-education-teaching/curriculum-design/teaching_unit_design_advanced.md` |
-| "Learning objectives writer (Bloom's, ABCD, SMART)" | `domain-education-teaching/curriculum-design/teaching_learning_objectives_writer_blooms.md` |
-| "Bloom's taxonomy calibrator (audit objectives or items)" | `domain-education-teaching/curriculum-design/teaching_blooms_taxonomy_calibrator.md` |
-| "Learning progression map" | `domain-education-teaching/curriculum-design/teaching_progression_map_designer.md` |
-| "Milestone / checkpoint architecture" | `domain-education-teaching/curriculum-design/teaching_milestone_alignment_designer.md` |
-| "Remediation pathway (MTSS/RTI or competency-based)" | `domain-education-teaching/curriculum-design/teaching_remediation_pathway_designer.md` |
-| "PSLO / ISLO / CSLO architecture" | `domain-education-teaching/program-outcomes-assessment/teaching_program_outcomes_framework.md` |
-| "Outcomes-to-assessment evidence mapper" | `domain-education-teaching/program-outcomes-assessment/teaching_outcomes_to_assessment_mapper.md` |
-| "Assessment blueprint (test specification)" | `domain-education-teaching/program-outcomes-assessment/teaching_assessment_blueprint_builder.md` |
-| "Program gap analysis (taught vs required)" | `domain-education-teaching/program-outcomes-assessment/teaching_program_gap_analysis.md` |
-| "Signature assignment design (HE)" | `domain-education-teaching/program-outcomes-assessment/teaching_signature_assignment_designer.md` |
-| "Capstone assessment design" | `domain-education-teaching/program-outcomes-assessment/teaching_capstone_assessment_designer.md` |
-| "Rubric alignment audit" | `domain-education-teaching/program-outcomes-assessment/teaching_rubric_alignment_to_outcomes.md` |
-| "Competency-based assessment evidence plan" | `domain-education-teaching/program-outcomes-assessment/teaching_competency_assessment_evidence_design.md` |
-| "Regional HE accreditation self-study (HLC/MSCHE/SACSCOC/WSCUC/NWCCU)" | `domain-education-teaching/accreditation-program-review/teaching_accreditation_self_study_he.md` |
-| "Programmatic accreditation self-study (ABET/AACSB/CAEP/CCNE/ACPE/etc.)" | `domain-education-teaching/accreditation-program-review/teaching_accreditation_self_study_programmatic.md` |
-| "Med-ed accreditation self-study (LCME/ACGME/COCA/CODA)" | `domain-education-teaching/accreditation-program-review/teaching_accreditation_self_study_meded.md` |
-| "Program review cycle design" | `domain-education-teaching/accreditation-program-review/teaching_program_review_cycle_designer.md` |
-| "Accreditation evidence compiler" | `domain-education-teaching/accreditation-program-review/teaching_accreditation_evidence_compiler.md` |
-| "Multi-semester faculty development plan" | `domain-education-teaching/faculty-development/teaching_faculty_development_plan_designer.md` |
-| "Professional learning community design" | `domain-education-teaching/faculty-development/teaching_professional_learning_community_designer.md` |
-| "Instructional coaching program design" | `domain-education-teaching/faculty-development/teaching_instructional_coaching_program.md` |
-| "Assessment literacy faculty curriculum" | `domain-education-teaching/faculty-development/teaching_assessment_literacy_curriculum.md` |
-| "New faculty onboarding program" | `domain-education-teaching/faculty-development/teaching_faculty_onboarding_program.md` |
-| "Program evaluation framework (Kirkpatrick/CIPP/logic model/ToC)" | `domain-education-teaching/program-evaluation-analytics/teaching_program_evaluation_framework.md` |
-| "Logic model / theory of change designer" | `domain-education-teaching/program-evaluation-analytics/teaching_logic_model_designer.md` |
-| "Learning analytics interpreter (LMS/dashboards)" | `domain-education-teaching/program-evaluation-analytics/teaching_learning_analytics_interpreter.md` |
-| "Early warning system designer" | `domain-education-teaching/program-evaluation-analytics/teaching_early_warning_system_designer.md` |
-| "PDSA / continuous improvement cycle" | `domain-education-teaching/program-evaluation-analytics/teaching_continuous_improvement_cycle.md` |
+| **Program-level curriculum, standards, accreditation, faculty dev, program evaluation** | **See `domain-education-teaching/program/curriculum-design/` and sibling subdirectories** |
+| "Curriculum map (course-outcome-standard-assessment)" | `domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md` |
+| "K-12 multi-year scope & sequence" | `domain-education-teaching/program/curriculum-design/program_scope_sequence_k12.md` |
+| "HE program scope & sequence" | `domain-education-teaching/program/curriculum-design/program_scope_sequence_he.md` |
+| "Workforce / CTE / apprenticeship scope & sequence" | `domain-education-teaching/program/curriculum-design/program_scope_sequence_workforce.md` |
+| "Backward program design (UbD at program scale)" | `domain-education-teaching/program/curriculum-design/program_backward_program_design.md` |
+| "Standards alignment audit" | `domain-education-teaching/program/curriculum-design/program_standards_alignment_audit.md` |
+| "Crosswalk between two standards frameworks" | `domain-education-teaching/program/curriculum-design/program_standards_crosswalk_generator.md` |
+| "Competency framework (parameterized by sector)" | `domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md` |
+| "Workforce competency mapping (O*NET / industry creds)" | `domain-education-teaching/program/curriculum-design/program_competency_mapping_workforce.md` |
+| "Vertical alignment audit" | `domain-education-teaching/program/curriculum-design/program_vertical_alignment_auditor.md` |
+| "Horizontal alignment (cross-disciplinary, same level)" | `domain-education-teaching/program/curriculum-design/program_horizontal_alignment_mapper.md` |
+| "HE course design (constructive alignment, Biggs)" | `domain-education-teaching/program/curriculum-design/program_course_design_he.md` |
+| "Advanced unit design (UbD + UDL + accessibility)" | `domain-education-teaching/program/curriculum-design/program_unit_design_advanced.md` |
+| "Learning objectives writer (Bloom's, ABCD, SMART)" | `domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md` |
+| "Bloom's taxonomy calibrator (audit objectives or items)" | `domain-education-teaching/program/curriculum-design/program_blooms_taxonomy_calibrator.md` |
+| "Learning progression map" | `domain-education-teaching/program/curriculum-design/program_progression_map_designer.md` |
+| "Milestone / checkpoint architecture" | `domain-education-teaching/program/curriculum-design/program_milestone_alignment_designer.md` |
+| "Remediation pathway (MTSS/RTI or competency-based)" | `domain-education-teaching/program/curriculum-design/program_remediation_pathway_designer.md` |
+| "PSLO / ISLO / CSLO architecture" | `domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md` |
+| "Outcomes-to-assessment evidence mapper" | `domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md` |
+| "Assessment blueprint (test specification)" | `domain-education-teaching/program/outcomes-assessment/program_assessment_blueprint_builder.md` |
+| "Program gap analysis (taught vs required)" | `domain-education-teaching/program/outcomes-assessment/program_program_gap_analysis.md` |
+| "Signature assignment design (HE)" | `domain-education-teaching/program/outcomes-assessment/program_signature_assignment_designer.md` |
+| "Capstone assessment design" | `domain-education-teaching/program/outcomes-assessment/program_capstone_assessment_designer.md` |
+| "Rubric alignment audit" | `domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md` |
+| "Competency-based assessment evidence plan" | `domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md` |
+| "Regional HE accreditation self-study (HLC/MSCHE/SACSCOC/WSCUC/NWCCU)" | `domain-education-teaching/program/accreditation-review/program_accreditation_self_study_he.md` |
+| "Programmatic accreditation self-study (ABET/AACSB/CAEP/CCNE/ACPE/etc.)" | `domain-education-teaching/program/accreditation-review/program_accreditation_self_study_programmatic.md` |
+| "Med-ed accreditation self-study (LCME/ACGME/COCA/CODA)" | `domain-education-teaching/program/accreditation-review/program_accreditation_self_study_meded.md` |
+| "Program review cycle design" | `domain-education-teaching/program/accreditation-review/program_program_review_cycle_designer.md` |
+| "Accreditation evidence compiler" | `domain-education-teaching/program/accreditation-review/program_accreditation_evidence_compiler.md` |
+| "Multi-semester faculty development plan" | `domain-education-teaching/program/faculty-development/program_faculty_development_plan_designer.md` |
+| "Professional learning community design" | `domain-education-teaching/program/faculty-development/program_professional_learning_community_designer.md` |
+| "Instructional coaching program design" | `domain-education-teaching/program/faculty-development/program_instructional_coaching_program.md` |
+| "Assessment literacy faculty curriculum" | `domain-education-teaching/program/faculty-development/program_assessment_literacy_curriculum.md` |
+| "New faculty onboarding program" | `domain-education-teaching/program/faculty-development/program_faculty_onboarding_program.md` |
+| "Program evaluation framework (Kirkpatrick/CIPP/logic model/ToC)" | `domain-education-teaching/program/evaluation-analytics/program_program_evaluation_framework.md` |
+| "Logic model / theory of change designer" | `domain-education-teaching/program/evaluation-analytics/program_logic_model_designer.md` |
+| "Learning analytics interpreter (LMS/dashboards)" | `domain-education-teaching/program/evaluation-analytics/program_learning_analytics_interpreter.md` |
+| "Early warning system designer" | `domain-education-teaching/program/evaluation-analytics/program_early_warning_system_designer.md` |
+| "PDSA / continuous improvement cycle" | `domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md` |
 | "CBME implementation roadmap (program-level)" | `domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_cbme_implementation_program.md` |
 | "Residency curriculum mapper (ACGME Milestones + EPAs)" | `domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_residency_curriculum_mapper.md` |
 | "EPA implementation designer" | `domain-healthcare-clinical/prompts/medical-education/curriculum-design/meded_epa_implementation_designer.md` |

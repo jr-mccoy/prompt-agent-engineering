@@ -1,6 +1,6 @@
 ---
 title: "Reading Level & Text Adapter"
-category: education-teaching
+category: education-teaching/instructor/explanation-craft
 description: "Adapt texts to different reading levels while preserving core content and academic rigor"
 tags:
   - education

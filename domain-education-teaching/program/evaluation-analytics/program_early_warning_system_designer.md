@@ -1,6 +1,6 @@
 ---
 title: "Early Warning System Designer (Indicator-Threshold-Intervention)"
-category: education-teaching/program-evaluation-analytics
+category: education-teaching/program/evaluation-analytics
 description: "Design an early-warning system for learner risk — indicator selection, threshold setting, intervention triggers, owner assignment, and feedback loops — for K-12 dropout prevention, HE retention, or workforce attrition mitigation."
 techniques:
   - ST-02
@@ -22,9 +22,9 @@ tags:
   - equity
 updated: "2026-05-15"
 related_prompts:
-  - teaching_learning_analytics_interpreter.md
+  - domain-education-teaching/program/evaluation-analytics/program_learning_analytics_interpreter.md
   - ../curriculum-design/teaching_remediation_pathway_designer.md
-  - teaching_continuous_improvement_cycle.md
+  - domain-education-teaching/program/evaluation-analytics/program_continuous_improvement_cycle.md
 ---
 
 # Early Warning System Designer

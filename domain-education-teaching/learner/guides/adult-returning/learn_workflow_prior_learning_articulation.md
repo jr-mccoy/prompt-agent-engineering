@@ -1,6 +1,6 @@
 ---
 title: "Workflow: Prior Learning Articulation"
-category: education-teaching/guides/adult-returning
+category: education-teaching/learner/guides/adult-returning
 description: "Translate career and life experience into academic currency — CPL portfolios, graduate-school SOPs, application essays, course-equivalency petitions. Treats experience as a resource without inflating it."
 audience: adult-learners-returning
 chain_length: 3
@@ -40,7 +40,7 @@ updated: "2026-05-13"
 
 ### Step 1 — Inventory residual skills (if not done)
 
-**Prompt:** [`../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md`](../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md)
+**Prompt:** [`../../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md`](../../../../domain-personal-development/career-transformation/career_residual_skills_inventory.md)
 
 **Input:** career history + life experience
 
@@ -56,7 +56,7 @@ updated: "2026-05-13"
 
 ### Step 2 — Run the prior-learning articulation prompt
 
-**Prompt:** [`../../adult-learner/adult_prior_learning_articulation.md`](../../adult-learner/adult_prior_learning_articulation.md)
+**Prompt:** [`../../adult-learner/learn_prior_learning_articulation.md`](../../adult-learner/learn_prior_learning_articulation.md)
 
 **Input:** target artifact + institution's requirements + career history + specific accomplishments + your *why*
 

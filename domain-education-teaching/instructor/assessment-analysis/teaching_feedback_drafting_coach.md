@@ -1,6 +1,6 @@
 ---
 title: "Feedback Drafting Coach"
-category: education-teaching/assessment
+category: education-teaching/instructor/assessment-analysis
 description: "Draft actionable, evidence-cited feedback for any student assignment — not a template, but a coach that ensures every comment names specific evidence, offers a concrete next step, and passes a tone check before the teacher sends it."
 techniques:
   - RT-04
@@ -19,10 +19,10 @@ tags:
   - revision
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/teaching_student_feedback_composer.md
-  - domain-education-teaching/grading-feedback/grading_essay_feedback_by_rubric_criterion.md
-  - domain-education-teaching/assessment/assessment_self_assessment_checklist_builder.md
-  - domain-education-teaching/assessment/assessment_peer_review_protocol_designer.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_student_feedback_composer.md
+  - domain-education-teaching/instructor/grading-feedback/teaching_essay_feedback_by_rubric.md
+  - domain-education-teaching/instructor/assessment-design/teaching_self_assessment_checklist_builder.md
+  - domain-education-teaching/instructor/assessment-design/teaching_peer_review_protocol_designer.md
 ---
 
 # Feedback Drafting Coach

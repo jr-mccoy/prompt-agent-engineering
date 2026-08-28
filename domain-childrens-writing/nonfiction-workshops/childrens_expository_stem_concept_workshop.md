@@ -19,7 +19,7 @@ updated: "2026-07-02"
 related_prompts:
   - domain-childrens-writing/nonfiction-workshops/childrens_narrative_nonfiction_workshop.md
   - domain-childrens-writing/craft-tools/childrens_age_reading_level_calibrator.md
-  - domain-education-teaching/teaching_concept_explorer_kids.md
+  - domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md
 ---
 
 **Purpose:** Help a writer create expository nonfiction for kids — how things work, what something is, why it happens — that is clear, accurate, and genuinely fun to read, using a deliberate text structure, strong text features, kid-true analogies, and credible back matter.
@@ -242,4 +242,4 @@ Round out the book with features curious kids and educators expect:
 
 - [childrens_narrative_nonfiction_workshop.md](childrens_narrative_nonfiction_workshop.md) — For true *stories* (biography, history)
 - [childrens_age_reading_level_calibrator.md](../craft-tools/childrens_age_reading_level_calibrator.md) — Tune vocabulary and sentences to the age band
-- [../../domain-education-teaching/teaching_concept_explorer_kids.md](../../domain-education-teaching/teaching_concept_explorer_kids.md) — For *teaching* a concept to a class (vs. authoring a book)
+- [../../domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md](../../domain-education-teaching/instructor/explanation-craft/teaching_concept_explorer_kids.md) — For *teaching* a concept to a class (vs. authoring a book)

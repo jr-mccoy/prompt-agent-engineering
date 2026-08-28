@@ -1,6 +1,6 @@
 ---
 title: "Finals Week Study Planner"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/exam-prep
 description: "Help a student build a realistic, prioritized finals week study schedule — mapping exams to available hours, sequencing subjects by date and difficulty, and building in buffer and recovery time."
 techniques:
   - ST-02
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_test_day_strategy.md
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/learner-time-discussion/learntime_big_project_decomposer.md
+  - domain-education-teaching/learner/exam-prep/learn_test_day_strategy.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/learner/time-and-discussion/learn_big_project_decomposer.md
 ---
 
 # Finals Week Study Planner

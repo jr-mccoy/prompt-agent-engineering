@@ -1,6 +1,6 @@
 ---
 title: "Feynman Teach-Back Coach"
-category: education-teaching/learner-study-skills
+category: education-teaching/learner/memory-and-recall
 description: "Coach a student to explain a concept in their own words, identify where their explanation breaks down, and diagnose what they actually don't understand — without filling the gaps for them."
 techniques:
   - RP-04
@@ -21,9 +21,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-study-skills/learnstudy_active_recall_from_notes.md
-  - domain-education-teaching/learner-study-skills/learnstudy_cornell_notes_converter.md
-  - domain-education-teaching/learner-math-science/learnsci_concept_map_builder.md
+  - domain-education-teaching/learner/note-taking/learn_active_recall_from_notes.md
+  - domain-education-teaching/learner/note-taking/learn_cornell_notes_converter.md
+  - domain-education-teaching/learner/math-science/learn_science_concept_map_builder.md
 ---
 
 # Feynman Teach-Back Coach

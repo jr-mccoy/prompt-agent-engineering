@@ -1,6 +1,6 @@
 ---
 title: "Diagnose My Weak Points"
-category: education-teaching/learner-assessment
+category: education-teaching/learner/self-assessment
 description: "A diagnostic conversation that probes beneath surface knowledge to find where understanding actually breaks down — producing a prioritized gap map with study recommendations ranked by impact on the learner's upcoming goal."
 techniques:
   - RT-02
@@ -20,9 +20,9 @@ tags:
 audience: learner
 updated: "2026-05-15"
 related_prompts:
-  - domain-education-teaching/learner-assessment/learner_quiz_to_mastery.md
-  - domain-education-teaching/learner-assessment/learner_wrong_answers_study_plan.md
-  - domain-education-teaching/assessment/assessment_diagnostic_quiz_knowledge_map.md
+  - domain-education-teaching/learner/self-assessment/learn_quiz_to_mastery.md
+  - domain-education-teaching/learner/self-assessment/learn_wrong_answers_study_plan.md
+  - domain-education-teaching/instructor/assessment-design/teaching_diagnostic_quiz_knowledge_map.md
 ---
 
 # Diagnose My Weak Points

@@ -1,6 +1,6 @@
 ---
 title: "Big Project Decomposer"
-category: education-teaching/learner-time-discussion
+category: education-teaching/learner/time-and-discussion
 description: "Help a student break a large, multi-week school project into manageable tasks, milestones, and a working timeline — so the project has a structure they can actually follow."
 techniques:
   - ST-02
@@ -19,9 +19,9 @@ tags:
   - college
 updated: "2026-05-11"
 related_prompts:
-  - domain-education-teaching/learner-time-discussion/learntime_assignment_tracker_planner.md
-  - domain-education-teaching/learner-study-skills/learnstudy_finals_week_plan.md
-  - domain-education-teaching/learner-research/learnresearch_question_refinement.md
+  - domain-education-teaching/learner/time-and-discussion/learn_assignment_tracker_planner.md
+  - domain-education-teaching/learner/exam-prep/learn_finals_week_plan.md
+  - domain-education-teaching/learner/research/learn_question_refinement.md
 ---
 
 # Big Project Decomposer

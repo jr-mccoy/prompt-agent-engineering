@@ -1,6 +1,6 @@
 ---
 title: "Workforce / CTE / Apprenticeship Scope & Sequence"
-category: education-teaching/curriculum-design
+category: education-teaching/program/curriculum-design
 description: "Design an evidence-anchored workforce, career and technical education (CTE), pre-apprenticeship, or Registered Apprenticeship training pathway that aligns related instruction, work-based learning, on-the-job learning, competency demonstrations, credential gates, stackable credentials, employer capacity, and regulatory requirements."
 techniques:
   - ST-02
@@ -27,10 +27,10 @@ tags:
   - on-the-job-learning
 updated: "2026-07-20"
 related_prompts:
-  - teaching_competency_mapping_workforce.md
-  - teaching_curriculum_map_builder.md
-  - teaching_competency_framework_designer.md
-  - teaching_milestone_alignment_designer.md
+  - domain-education-teaching/program/curriculum-design/program_competency_mapping_workforce.md
+  - domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md
+  - domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
+  - domain-education-teaching/program/curriculum-design/program_milestone_alignment_designer.md
 ---
 
 # Workforce / CTE / Apprenticeship Scope & Sequence

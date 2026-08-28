@@ -1,6 +1,6 @@
 ---
 title: "Exit Ticket & Formative Check Generator"
-category: education-teaching
+category: education-teaching/instructor/response-cycle
 description: "Create quick formative assessment items aligned to Bloom's taxonomy with data analysis guidance"
 tags:
   - education

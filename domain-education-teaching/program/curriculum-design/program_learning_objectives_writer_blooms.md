@@ -1,6 +1,6 @@
 ---
 title: "Learning Objectives Writer (Bloom's-Aligned, SMART + ABCD)"
-category: "education-teaching/curriculum-design"
+category: education-teaching/program/curriculum-design
 description: "Generate, revise, and validate observable learning objectives using ABCD construction, SMART quality criteria, the Revised Bloom's Taxonomy, optional knowledge-dimension and Webb's Depth of Knowledge calibration, and traceable assessment evidence."
 techniques:
   - "ST-02"

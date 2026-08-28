@@ -1,6 +1,6 @@
 ---
 title: "Vocabulary & Academic Language Builder"
-category: education-teaching
+category: education-teaching/instructor/explanation-craft
 description: "Design subject-specific vocabulary instruction with tiered word selection and multi-modal activities"
 tags:
   - education

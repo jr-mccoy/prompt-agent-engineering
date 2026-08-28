@@ -6,14 +6,14 @@
 
 | Prompt | What It Produces |
 |---|---|
-| [`teaching_program_outcomes_framework.md`](teaching_program_outcomes_framework.md) | ISLO / PSLO / CSLO architecture with parent-child mapping and audit |
-| [`teaching_outcomes_to_assessment_mapper.md`](teaching_outcomes_to_assessment_mapper.md) | Multi-source evidence plan with direct/indirect distinction and sufficiency audit |
-| [`teaching_assessment_blueprint_builder.md`](teaching_assessment_blueprint_builder.md) | Objectives × Bloom's × item count blueprint with feasibility check |
-| [`teaching_program_gap_analysis.md`](teaching_program_gap_analysis.md) | Taught-vs-required gap table with root cause and tiered fill plans |
-| [`teaching_signature_assignment_designer.md`](teaching_signature_assignment_designer.md) | Course-embedded assignment producing PSLO evidence with GRASPS + rubric |
-| [`teaching_capstone_assessment_designer.md`](teaching_capstone_assessment_designer.md) | Culminating capstone with public artifact + defense + external review |
-| [`teaching_rubric_alignment_to_outcomes.md`](teaching_rubric_alignment_to_outcomes.md) | Audit existing rubric for outcome alignment with revision recommendations |
-| [`teaching_competency_assessment_evidence_design.md`](teaching_competency_assessment_evidence_design.md) | CBME-style multi-source, multi-occasion evidence plan with entrustment decisions |
+| [`program_program_outcomes_framework.md`](program_program_outcomes_framework.md) | ISLO / PSLO / CSLO architecture with parent-child mapping and audit |
+| [`program_outcomes_to_assessment_mapper.md`](program_outcomes_to_assessment_mapper.md) | Multi-source evidence plan with direct/indirect distinction and sufficiency audit |
+| [`program_assessment_blueprint_builder.md`](program_assessment_blueprint_builder.md) | Objectives × Bloom's × item count blueprint with feasibility check |
+| [`program_program_gap_analysis.md`](program_program_gap_analysis.md) | Taught-vs-required gap table with root cause and tiered fill plans |
+| [`program_signature_assignment_designer.md`](program_signature_assignment_designer.md) | Course-embedded assignment producing PSLO evidence with GRASPS + rubric |
+| [`program_capstone_assessment_designer.md`](program_capstone_assessment_designer.md) | Culminating capstone with public artifact + defense + external review |
+| [`program_rubric_alignment_to_outcomes.md`](program_rubric_alignment_to_outcomes.md) | Audit existing rubric for outcome alignment with revision recommendations |
+| [`program_competency_assessment_evidence_design.md`](program_competency_assessment_evidence_design.md) | CBME-style multi-source, multi-occasion evidence plan with entrustment decisions |
 
 ## Related
 

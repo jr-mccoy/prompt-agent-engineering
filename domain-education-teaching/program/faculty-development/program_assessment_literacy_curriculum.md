@@ -1,6 +1,6 @@
 ---
 title: "Assessment Literacy Faculty Development Curriculum"
-category: education-teaching/faculty-development
+category: education-teaching/program/faculty-development
 description: "Design a faculty development curriculum that builds assessment literacy — assessment purposes, item writing, rubric design, data interpretation, equity audits, and closing the loop — sequenced and modular for K-12, HE, or workforce educators."
 techniques:
   - ST-02
@@ -21,7 +21,7 @@ tags:
   - workforce
 updated: "2026-05-15"
 related_prompts:
-  - teaching_faculty_development_plan_designer.md
+  - domain-education-teaching/program/faculty-development/program_faculty_development_plan_designer.md
   - ../program-outcomes-assessment/teaching_assessment_blueprint_builder.md
   - ../program-outcomes-assessment/teaching_rubric_alignment_to_outcomes.md
   - ../curriculum-design/teaching_blooms_taxonomy_calibrator.md

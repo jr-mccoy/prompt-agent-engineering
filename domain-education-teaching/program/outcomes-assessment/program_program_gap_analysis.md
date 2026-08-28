@@ -1,6 +1,6 @@
 ---
 title: "Program Gap Analysis (Taught vs. Required Coverage)"
-category: education-teaching/program-outcomes-assessment
+category: education-teaching/program/outcomes-assessment
 description: "Diagnose gaps between what a program currently delivers and what is required (by standards, accreditor, employer demand, or stated outcomes) — producing a severity-ranked gap table with root-cause hypotheses and fill plans."
 techniques:
   - ST-02
@@ -23,7 +23,7 @@ updated: "2026-05-15"
 related_prompts:
   - ../curriculum-design/teaching_standards_alignment_audit.md
   - ../curriculum-design/teaching_curriculum_map_builder.md
-  - teaching_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
   - ../accreditation-program-review/teaching_program_review_cycle_designer.md
 ---
 

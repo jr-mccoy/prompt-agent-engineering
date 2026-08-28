@@ -1,6 +1,6 @@
 ---
 title: "Rubric Alignment to Outcomes (Audit & Repair)"
-category: education-teaching/program-outcomes-assessment
+category: education-teaching/program/outcomes-assessment
 description: "Audit a rubric for alignment with the learning outcomes it is supposed to assess — checking that every criterion ties to an outcome, levels are observable and discriminating, and the rubric produces outcome-level signal (not just generic quality)."
 techniques:
   - ST-02
@@ -21,10 +21,10 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - teaching_outcomes_to_assessment_mapper.md
+  - domain-education-teaching/program/outcomes-assessment/program_outcomes_to_assessment_mapper.md
   - ../curriculum-design/teaching_blooms_taxonomy_calibrator.md
-  - teaching_signature_assignment_designer.md
-  - teaching_competency_assessment_evidence_design.md
+  - domain-education-teaching/program/outcomes-assessment/program_signature_assignment_designer.md
+  - domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
 ---
 
 # Rubric Alignment to Outcomes

@@ -11,7 +11,7 @@
 
 The rest of `domain-biblical-studies/` helps a person *study, teach, or preach* the Bible. This subdirectory helps the person who *organizes* Bible teaching at a church or ministry level: curriculum planning, volunteer systems, teaching coordination, and discipleship pathways. The gap was identified by audit — no prompt in the domain addressed the operational layer.
 
-Modeled on the practitioner-workflow expansions in `domain-legal/` (litigation, discovery, contracts) and `domain-education-teaching/curriculum-design/` — each prompt maps to a real artifact or system the user actually produces.
+Modeled on the practitioner-workflow expansions in `domain-legal/` (litigation, discovery, contracts) and `domain-education-teaching/program/curriculum-design/` — each prompt maps to a real artifact or system the user actually produces.
 
 ---
 

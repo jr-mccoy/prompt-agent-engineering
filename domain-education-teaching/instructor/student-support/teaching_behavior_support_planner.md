@@ -1,6 +1,6 @@
 ---
 title: "Behavior Support & SEL Planner"
-category: education-teaching
+category: education-teaching/instructor/student-support
 description: "Design behavior intervention plans, SEL activities, and restorative practice guides for classroom communities"
 tags:
   - education
