@@ -30,7 +30,7 @@ reasoning:
 related_prompts:
   - domain-psy-ops/technique-analysis/psyops_propaganda_technique_identification.md
   - domain-psy-ops/counter-messaging/psyops_prebunking_inoculation_design.md
-  - domain-education-teaching/curriculum-design/teaching_learning_objectives_writer_blooms.md
+  - domain-education-teaching/program/curriculum-design/program_learning_objectives_writer_blooms.md
 ---
 
 # Media Literacy Curriculum Designer

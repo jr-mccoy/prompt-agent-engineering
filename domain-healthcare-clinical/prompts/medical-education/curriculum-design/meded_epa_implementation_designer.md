@@ -23,7 +23,7 @@ related_prompts:
   - meded_cbme_implementation_program.md
   - meded_residency_curriculum_mapper.md
   - meded_program_competency_framework_acgme.md
-  - ../../../../domain-education-teaching/program-outcomes-assessment/teaching_competency_assessment_evidence_design.md
+  - ../../../../domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
 ---
 
 # EPA Implementation Designer

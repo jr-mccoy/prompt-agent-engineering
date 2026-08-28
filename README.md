@@ -325,7 +325,7 @@ The domain library is intentionally broad. Most reusable prompts live in `domain
 
 | Directory | Focus |
 |---|---|
-| [`domain-education-teaching/`](domain-education-teaching/) | Lesson plans, curriculum, outcomes, accreditation, faculty development |
+| [`domain-education-teaching/`](domain-education-teaching/) | 267 prompts in 3 audience tracks — `instructor/` (lesson plans, assessment, grading, student support), `program/` (curriculum, outcomes, accreditation, faculty development), `learner/` (study skills, tutoring, exam prep) |
 | [`domain-medical-education/`](domain-medical-education/) | Health-professions education |
 | [`domain-science/`](domain-science/) | Scientific practice and reasoning |
 | [`domain-learning-coding/`](domain-learning-coding/) | Coding education and tutorials |

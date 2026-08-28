@@ -21,7 +21,7 @@ related_prompts:
   - domain-discipleship/curriculum-architecture/discipleship_curriculum_balance_audit.md
   - domain-discipleship/learner-pathways/discipleship_growth_self_assessment.md
   - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_discipleship_pathway_design.md
-  - domain-education-teaching/program-outcomes-assessment/teaching_program_outcomes_framework.md
+  - domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md
 ---
 
 # Formation Outcomes Framework
@@ -46,7 +46,7 @@ are forming people toward with enough precision that modules can be built agains
 - You want one person to reflect on where they are — use
   `../learner-pathways/discipleship_growth_self_assessment.md`.
 - You want academic or program-level learning outcomes in a secular frame — use
-  `domain-education-teaching/program-outcomes-assessment/teaching_program_outcomes_framework.md`.
+  `domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md`.
 
 **Audience:** Curriculum designers, discipleship pastors, and program leads who need a shared
 definition of growth before content decisions get made.
@@ -282,5 +282,5 @@ Produce exactly this structure. Use `[..]` where a value depends on user input.
   the participant-facing counterpart
 - [`domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_discipleship_pathway_design.md`](../../domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_discipleship_pathway_design.md) —
   congregation-wide stage design
-- [`domain-education-teaching/program-outcomes-assessment/teaching_program_outcomes_framework.md`](../../domain-education-teaching/program-outcomes-assessment/teaching_program_outcomes_framework.md) —
+- [`domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md`](../../domain-education-teaching/program/outcomes-assessment/program_program_outcomes_framework.md) —
   the secular outcomes-architecture pattern this adapts

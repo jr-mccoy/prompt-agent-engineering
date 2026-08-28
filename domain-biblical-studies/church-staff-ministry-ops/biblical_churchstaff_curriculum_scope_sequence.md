@@ -21,7 +21,7 @@ related_prompts:
   - domain-biblical-studies/study-methods-teaching/biblical_reading_plan_designer.md
   - domain-biblical-studies/sermon-devotional/biblical_sermon_series_planner.md
   - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_annual_teaching_calendar.md
-  - domain-education-teaching/curriculum-design/teaching_scope_sequence_k12.md
+  - domain-education-teaching/program/curriculum-design/program_scope_sequence_k12.md
 ---
 
 # Church Curriculum Scope & Sequence

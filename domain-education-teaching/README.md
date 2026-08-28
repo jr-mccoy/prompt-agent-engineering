@@ -1,1145 +1,675 @@
-# Education & Teaching: Comprehensive Guide
+# Domain: Education & Teaching
 
-> Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
-> This domain covers lesson planning, curriculum design, assessment creation, educational materials, and teaching methodology.
+267 prompts for the three people who show up in an educational setting, each with a
+different job and a different question. A **teacher, lecturer or corporate trainer**
+planning and running instruction. A **dean, curriculum director or accreditation
+liaison** working a level up, on the programme rather than the class. And the
+**learner** themselves, studying alone and needing a study partner rather than a
+lesson plan. The three tracks below are those three people; pick yours first, and the
+subdirectory second.
 
----
+`instructor/` runs the arc of teaching a class: plan it, explain it, check what landed,
+respond to what did not, assess it, grade it, and talk to families about it.
+`program/` runs the arc of owning a programme: design the curriculum, define outcomes,
+evidence them for accreditors, develop the faculty, and evaluate whether any of it
+worked. `learner/` runs the arc of learning something: take notes on it, commit it to
+memory, test yourself, get unstuck, and prepare for the exam — with a strong Socratic
+stance throughout, because these prompts coach rather than hand over answers.
 
-## Program-Level Curriculum Design (New, 2026-05-15)
-
-If you are a **curriculum director, dean, program coordinator, accreditation liaison, instructional coach lead, CTE administrator, residency program director, or institutional assessment officer** — start with the subdirectories below. They contain **45 new prompts** for program-level work (vs. the classroom/course-level prompts that fill the rest of this domain):
-
-- **[`curriculum-design/`](curriculum-design/)** (18 prompts) — Curriculum maps, scope-and-sequence (K-12 / HE / workforce), backward program design, standards alignment audit + crosswalks, competency frameworks, vertical/horizontal alignment, progression maps, milestones, remediation pathways, advanced unit design, learning objectives writer, Bloom's calibrator
-- **[`program-outcomes-assessment/`](program-outcomes-assessment/)** (8 prompts) — PSLO/ISLO/CSLO architecture, outcomes-to-assessment mapper, assessment blueprints, program gap analysis, signature assignments, capstones, rubric alignment, CBME-style evidence design
-- **[`accreditation-program-review/`](accreditation-program-review/)** (5 prompts) — Parameterized self-study builders for regional HE (HLC/MSCHE/SACSCOC/WSCUC/NWCCU), programmatic (ABET/AACSB/CAEP/CCNE/ACPE/etc.), and med-ed (LCME/ACGME/COCA/CODA); program review cycle designer; evidence compiler
-- **[`faculty-development/`](faculty-development/)** (5 prompts) — Multi-semester FD plan, PLC design, instructional coaching program, assessment-literacy curriculum, faculty onboarding
-- **[`program-evaluation-analytics/`](program-evaluation-analytics/)** (5 prompts) — Program evaluation framework (Kirkpatrick/CIPP/logic model), logic model designer, learning analytics interpreter, early warning system, PDSA continuous-improvement cycle
-
-For **medical education program-level work** (CBME, EPAs, ACGME), see also [`../domain-healthcare-clinical/prompts/medical-education/curriculum-design/`](../domain-healthcare-clinical/prompts/medical-education/curriculum-design/) (4 prompts).
-
----
-
-## Learner Guides (2026-05-13)
-
-If you're a **college student, adult returning to school, or career changer**, start here — not the rest of this README:
-
-- **[`guides/`](guides/)** — workflow guides for learners, with cross-domain prompt kits. Three audience folders:
-  - [`guides/college-students/`](guides/college-students/) — essay arc, research paper arc, finals prep, STEM problem solving
-  - [`guides/adult-returning/`](guides/adult-returning/) — cold start, working-learner time architecture, writing rust, imposter calibration, prior-learning articulation
-  - [`guides/career-changers/`](guides/career-changers/) — credential pathway decision, self-study plan, portfolio while learning, proof-of-work for the pivot
-  - [`guides/shared/`](guides/shared/) — andragogy principles, Socratic vs. direct mode, academic integrity, cross-domain prompt index
-
-- **[`adult-learner/`](adult-learner/)** — 9 net-new prompts authored for adult learners specifically (cold-start, time architecture, writing-rust, imposter calibration, prior-learning articulation, skill-pivot plan, credential decision, portfolio-while-learning, andragogy-aware study workflow)
-
-- **[`../PROMPT_INDEX_LEARNER_AUDIENCE.json`](../PROMPT_INDEX_LEARNER_AUDIENCE.json)** — programmatic audience tags across ~115 cross-domain learner-relevant prompts. Companion to [`guides/shared/prompt_index_for_learners.md`](guides/shared/prompt_index_for_learners.md).
-
-The rest of this README covers the broader education domain (K-12, instructor-side, curriculum, assessment, etc.). Learners can scroll past those sections.
+**Not sure which track?** Ask who is holding the prompt. If it produces something you
+hand to students, it is `instructor/`. If it produces something you hand to a committee,
+it is `program/`. If it produces something only you will use to learn, it is `learner/`.
 
 ---
 
-## When This Domain Applies
+## When NOT to use this domain (use a different one)
 
-### Trigger Phrases
-
-Route to this domain when the request mentions:
-
-| Category | Trigger Phrases |
-|----------|----------------|
-| **Lesson Planning** | "lesson plan", "teaching", "classroom activity", "instructional design" |
-| **Assessment** | "quiz", "test", "rubric", "assessment", "grading", "evaluation" |
-| **Materials** | "worksheet", "handout", "study guide", "educational materials" |
-| **Curriculum** | "curriculum", "unit plan", "scope and sequence", "learning objectives" |
-| **Students** | "grade level", "students", "learners", "classroom", "differentiation" |
-| **Standards** | "Common Core", "NGSS", "state standards", "learning outcomes" |
-
-### User Personas
-
-| Persona | Typical Needs |
-|---------|--------------|
-| **K-12 Teachers** | Lesson plans, worksheets, assessments, differentiation strategies |
-| **College Instructors** | Syllabi, assignments, rubrics, lecture materials |
-| **Curriculum Developers** | Unit plans, scope and sequence, standards alignment |
-| **Tutors** | Targeted practice, concept explanations, progress assessment |
-| **Homeschool Parents** | Comprehensive lesson plans, age-appropriate activities |
-| **Corporate Trainers** | Training modules, skill assessments, learning activities |
-
-### Out of Scope
-
-- **Academic research methodology** → domain-research-academic
-- **Student counseling/mental health** → Professional support
-- **Administrative tasks** → General productivity
-- **Coding education specifically** → domain-learning-coding/
+- **Learning a skill on your own, outside any course or institution** →
+  [`domain-learning/`](../domain-learning/) — domain-agnostic curriculum design,
+  deliberate practice, reading lists.
+- **Learning or teaching programming specifically** →
+  [`domain-learning-coding/`](../domain-learning-coding/).
+- **Health-professions education** (PBL cases, OSCEs, ACGME milestones, clinical
+  reasoning drills) → [`domain-healthcare-clinical/prompts/medical-education/`](../domain-healthcare-clinical/prompts/medical-education/).
+  That directory owns its own learner-self-study track; do not duplicate it here.
+- **Teaching research methods, journal clubs, lab courses** →
+  [`domain-science/teaching-research-methods/`](../domain-science/teaching-research-methods/).
+- **Talking to your own child about school** (homework battles, 504 meetings as the
+  parent, teacher emails) → [`domain-parenting/`](../domain-parenting/).
+- **Bible study, Sunday school, catechesis** →
+  [`domain-biblical-studies/`](../domain-biblical-studies/) and
+  [`domain-discipleship/`](../domain-discipleship/).
+- **Writing for children as an author** (rather than teaching them) →
+  [`domain-childrens-writing/`](../domain-childrens-writing/).
+- **Worksheet *images*** (printable art, not the text) →
+  [`domain-image-generation/worksheet-generators/`](../domain-image-generation/).
 
 ---
 
-## Domain-Specific Considerations
+## Subdirectory map
 
-### What Makes Education Unique
+### `instructor/` — 104 prompts
 
-Educational prompts operate in environments where:
+| Subdirectory | What it covers | Prompts |
+|---|---|---|
+| `lesson-planning/` | Lesson plans, UbD units, PBL, differentiation, sub plans, standards mapping | 6 |
+| `explanation-craft/` | Making a concept land: analogies, stories, memory structures, age-pitched explanations, vocabulary, reading level, Socratic seminar | 9 |
+| `response-cycle/` | The diagnose-and-respond loop: pre-assess, spot the misconception, reteach, regroup, exit ticket | 5 |
+| `assessment-items/` | Writing the items themselves: MC with distractors, short answer, DOK, Bloom's stems, hinge questions, answer keys | 8 |
+| `assessment-design/` | Designing the instrument: blueprints, performance tasks, portfolios, rubrics, mastery checks | 9 |
+| `assessment-analysis/` | Reading the results: item analysis, difficulty calibration, alignment audits, standards-based conversion | 7 |
+| `grading-feedback/` | Getting through a stack of work: comment libraries, rubric-criterion feedback, triage, whole-class memos | 8 |
+| `reporting-communication/` | Writing to families: newsletters, conference notes, report card comments | 2 |
+| `student-support/` | Individual students beyond core instruction: IEP/504 goals, behaviour and SEL, UDL, dyslexia, ELL, advising | 8 |
+| `classroom-ops/` | Running the room: norms, routines and transitions, restorative conversations | 3 |
+| `ed-tech/` | Producing the artefacts: slide decks, video scripts, choice boards, LMS shells, blended/HyFlex, AI literacy | 6 |
+| `higher-ed-corporate/` | University and workplace delivery: syllabi, async modules, microlearning, onboarding, compliance, train-the-trainer | 11 |
+| `subject-pedagogy/` | Subject-specific moves — `ela/` (7), `math/` (5), `science/` (4), `social-studies/` (4), `world-languages/` (2) | 22 |
 
-1. **Learner Diversity** - Same content, different readiness levels, learning styles, and needs
-2. **Developmental Appropriateness** - Age matters for vocabulary, complexity, and examples
-3. **Standards Alignment** - External requirements constrain what must be taught
-4. **Time Constraints** - Fixed class periods, semester lengths, curriculum pacing
-5. **Assessment Balance** - Formative vs. summative, authentic vs. standardized
-6. **Engagement Matters** - Learning requires attention and motivation
-7. **Scaffolding is Key** - Building from known to unknown systematically
+### `program/` — 41 prompts
 
-### The Educational Content Difference
+| Subdirectory | What it covers | Prompts |
+|---|---|---|
+| `curriculum-design/` | Curriculum maps, scope and sequence (K-12 / HE / workforce), backward design, standards alignment and crosswalks, competency frameworks, progressions, remediation pathways | 18 |
+| `outcomes-assessment/` | PSLO/ISLO/CSLO architecture, outcome-to-evidence mapping, assessment blueprints, signature assignments, capstones, gap analysis | 8 |
+| `accreditation-review/` | Self-studies (regional, programmatic, med-ed), programme review cycles, evidence compilation | 5 |
+| `faculty-development/` | Development plans, PLCs, instructional coaching, assessment literacy, new-faculty onboarding | 5 |
+| `evaluation-analytics/` | Programme evaluation frameworks, logic models, learning analytics, early-warning systems, PDSA cycles | 5 |
 
-| Dimension | Generic Content | Educational Content |
-|-----------|-----------------|---------------------|
-| **Audience** | Assumed capable adult | Specific developmental level |
-| **Structure** | Logical flow | Pedagogical sequence (engage, explain, elaborate, evaluate) |
-| **Assessment** | Optional | Integrated and aligned with objectives |
-| **Differentiation** | One version | Multiple entry points and extensions |
-| **Standards** | N/A | Explicitly aligned and referenced |
-| **Timing** | Flexible | Designed for specific time constraints |
+### `learner/` — 122 prompts
 
-### Critical Success Factors
-
-1. **Grade-Level Appropriateness** - Vocabulary, complexity, examples match learners
-2. **Clear Learning Objectives** - What students will know/do by end
-3. **Assessment Alignment** - Activities and assessments measure stated objectives
-4. **Engagement Design** - Active learning, not passive receipt
-5. **Differentiation** - Accommodations for diverse learners
-6. **Time Realism** - Activities fit available class time
-7. **Standards Connection** - Explicit alignment when required
-
-### Common Failure Modes
-
-| Failure | Example | Prevention |
-|---------|---------|------------|
-| **Grade mismatch** | College vocabulary for 5th graders | Specify grade level, reading level targets |
-| **Objective/assessment misalignment** | Teaching concepts, testing facts | Design assessment first, then instruction |
-| **Time unrealism** | 45-minute activity for 30-minute period | Include time estimates, have backup plans |
-| **No differentiation** | Same worksheet for all learners | Include scaffolds and extensions |
-| **Passive learning** | Lecture-only design | Include active engagement strategies |
-| **Missing scaffolding** | Jumping to complex without building blocks | Sequence from simple to complex |
-
----
-
-## Recommended Techniques
-
-### Core Techniques (Always Use)
-
-| Technique | Application in Education | Example |
-|-----------|-------------------------|---------|
-| **CM-01 Context Framing** | Grade level, prior knowledge, time available | "7th grade, 45-minute period, have covered fractions" |
-| **ST-02 Sequential Steps** | Lesson phases (engage, explore, explain, evaluate) | 5E model, gradual release |
-| **OC-01 Output Templates** | Structured lesson plan format | Objectives, materials, procedure, assessment |
-| **CM-02 Audience Adaptation** | Differentiation for varied learners | Scaffolds, extensions, accommodations |
-| **QA-01 Verification** | Assessment alignment check | "Does this activity measure the objective?" |
-
-### Situational Techniques
-
-| Situation | Add Technique | Why |
-|-----------|--------------|-----|
-| Standards-based | DS-01 Framework | Apply Bloom's Taxonomy, Webb's DOK |
-| Diverse learners | RT-02 Multi-Dimensional | Multiple modalities, learning styles |
-| Complex concepts | RT-03 Tree of Thoughts | Misconception mapping, prerequisite chains |
-| Assessment design | QA-02 Adversarial | Anticipate where students will struggle |
-| Engagement | RT-04 Emotional Intelligence | Connect content to student interests/lives |
+| Subdirectory | What it covers | Prompts |
+|---|---|---|
+| `note-taking/` | Turning a lecture, textbook or your own notes into study material | 4 |
+| `memory-and-recall/` | Getting it in and getting it back out: retrieval drills, spacing, flashcards, Feynman, mnemonics, concept maps | 8 |
+| `self-assessment/` | Checking yourself honestly and acting on the result: self-quizzing, confidence calibration, mistake logs, wrong-answer plans | 8 |
+| `exam-prep/` | The run-up to a test: practice tests, review planning, finals week, test-day strategy, certification drills | 8 |
+| `study-by-discipline/` | Study moves that only make sense in one field — maths proofs, science mechanisms, historical causation, legal issue-spotting, pharmacology, NCLEX | 13 |
+| `tutoring/` | "Teach me this": Socratic tutoring, worked-example fading, stepwise coaching, adaptive mastery loops | 9 |
+| `stuck-and-confused/` | "I'm stuck / I got it wrong": step-level confusion repair, wrong-answer forensics, switching representations, metacognitive debriefs | 8 |
+| `writing/` | Coaching your own essay without it being written for you: thesis, counterargument, outline, revision, citation, integrity self-check | 9 |
+| `reading/` | Annotation, chapter summary, author's craft, vocabulary in context | 5 |
+| `math-science/` | Word problems, error analysis of your own work, lab reports, data interpretation, experimental design | 7 |
+| `language/` | L2 learning: conversation drills, grammar, idiom, pronunciation, topical vocabulary | 5 |
+| `research/` | Question refinement, search strategy, source synthesis, interview critique | 4 |
+| `time-and-discussion/` | Assignment tracking, big-project decomposition, office hours and class discussion prep | 4 |
+| `adult-learner/` | Returning to study as an adult: cold starts, prior-learning credit, working-learner time, writing rust, credential pathways | 9 |
+| `guides/` | Multi-prompt **chain workflows** for three audiences — `college-students/` (6), `adult-returning/` (6), `career-changers/` (5), plus `shared/` (4) foundations | 21 |
 
 ---
 
-## Quality Indicators for Education
+## Quick routing
 
-### What "Good" Looks Like
-
-**A high-quality educational prompt output:**
-
-1. **Clear, Measurable Objectives**
-   - Written as "Students will be able to..." (SWBAT)
-   - Observable and assessable
-   - Aligned to standards when applicable
-
-2. **Grade-Appropriate Content**
-   - Vocabulary matches developmental level
-   - Examples relevant to learners' experience
-   - Complexity appropriate for prior knowledge
-
-3. **Pedagogically Sound Sequence**
-   - Activates prior knowledge
-   - Builds from simple to complex
-   - Includes practice with feedback
-   - Provides opportunity for synthesis/application
-
-4. **Built-in Assessment**
-   - Checks for understanding throughout
-   - Summative assessment aligned to objectives
-   - Clear success criteria
-
-5. **Differentiation Ready**
-   - Scaffolds for struggling learners
-   - Extensions for advanced learners
-   - Multiple modalities when possible
-
-### Learning Objective Quality Criteria
-
-```markdown
-## Strong Learning Objectives (Bloom's Aligned)
-
-**Weak (Vague):**
-- "Students will understand photosynthesis"
-- "Students will learn about the Civil War"
-
-**Strong (Observable, Measurable):**
-- "Students will be able to diagram the process of photosynthesis, labeling inputs, outputs, and energy transformation"
-- "Students will be able to analyze three causes of the Civil War and argue which was most significant using textual evidence"
-
-**Bloom's Taxonomy Verbs by Level:**
-- Remember: list, define, identify, recall
-- Understand: explain, summarize, classify, compare
-- Apply: use, implement, solve, demonstrate
-- Analyze: differentiate, examine, compare, contrast
-- Evaluate: judge, justify, critique, defend
-- Create: design, construct, develop, formulate
-```
-
-### False-Positive Prevention for Education
-
-**DON'T:**
-
-- Assume grade level equals ability level (wide variation within grades)
-- Ignore time constraints (activities must fit class period)
-- Skip scaffolding (build bridges, don't assume leaps)
-- Create assessments that don't match instruction
-- Use vocabulary without considering reading level
-- Design for "average" student only (differentiate)
-- Forget engagement (content must connect to learners)
-- Assume access to materials/technology
-
-**DO:**
-
-- Ask about specific learner context (IEPs, ELLs, mixed abilities)
-- Include time estimates for all activities
-- Provide scaffolds AND extensions
-- Align assessments directly to stated objectives
-- Check vocabulary against grade-level standards
-- Include active learning strategies
-- Connect to student interests and real-world applications
-- Note required materials and alternatives
+| You're saying | Use |
+|---|---|
+| "I need a lesson for Tuesday" | `instructor/lesson-planning/teaching_lesson_plan_generator.md` |
+| "Half the class didn't get it" | `instructor/response-cycle/teaching_misconception_diagnoser.md` → `teaching_reteach_intervention_planner.md` |
+| "I need to explain this so a 7-year-old gets it" | `instructor/explanation-craft/teaching_concept_explorer_kids.md` |
+| "Write me a quiz with real distractors" | `instructor/assessment-items/teaching_mc_item_writer_with_distractors.md` |
+| "Is this test actually aligned to the standards?" | `instructor/assessment-analysis/teaching_standards_alignment_auditor.md` |
+| "I have 90 essays to grade by Friday" | `instructor/grading-feedback/teaching_speed_grading_triage.md` |
+| "I have to write 28 report card comments" | `instructor/reporting-communication/teaching_report_card_comment_generator.md` |
+| "I need IEP goals that will survive review" | `instructor/student-support/teaching_iep_goal_writer.md` |
+| "I'm out sick tomorrow" | `instructor/lesson-planning/teaching_substitute_plan_generator.md` |
+| "Turn my lecture course into an online one" | `instructor/higher-ed-corporate/teaching_online_course_conversion.md` |
+| "Map our whole curriculum to the standards" | `program/curriculum-design/program_curriculum_map_builder.md` |
+| "What are we actually claiming our graduates can do?" | `program/outcomes-assessment/program_program_outcomes_framework.md` |
+| "The accreditor visit is in eight months" | `program/accreditation-review/program_accreditation_self_study_he.md` |
+| "Are we teaching what we say we teach?" | `program/outcomes-assessment/program_program_gap_analysis.md` |
+| "Which students are about to fail, and can we tell early?" | `program/evaluation-analytics/program_early_warning_system_designer.md` |
+| "I have a lecture and no idea what to study" | `learner/note-taking/learn_lecture_to_study_guide.md` |
+| "I read it four times and remember nothing" | `learner/memory-and-recall/learn_retrieval_drill_designer.md` |
+| "I think I know it but I'm not sure" | `learner/self-assessment/learn_confidence_calibration.md` |
+| "Finals are in a week" | `learner/exam-prep/learn_finals_week_plan.md` |
+| "Teach me this, don't just tell me" | `learner/tutoring/learn_socratic_tutor.md` |
+| "I got it wrong and I don't know why" | `learner/stuck-and-confused/learn_wrong_answer_forensics.md` |
+| "Help me write this essay without writing it for me" | `learner/writing/learn_thesis_with_critique.md` |
+| "I'm 38 and going back to school" | `learner/adult-learner/learn_cold_start_return_to_school.md` |
+| "Just tell me what to run, in what order" | `learner/guides/` — pick your audience, then the workflow |
 
 ---
 
-## Wave 1 Expansion (2026-05-09) — 30 New Prompts in 8 Subdirectories
+## How prompts in this domain compose
 
-A 30-prompt expansion organized into role-based subdirectories. Subject-pedagogy, assessment engineering, grading workflows, inclusive instruction, classroom operations, and learner-facing prompts (writing, math/science, study skills). Learner-facing prompts use a strict Socratic stance — they do not produce answers students could submit.
+The three tracks chain **within** themselves and hand off **between** themselves at two
+seams.
 
-### `subject-pedagogy/` (6) — Subject-Specific Pedagogy
+Inside `instructor/`, the spine is the response cycle: `response-cycle/` pre-assesses,
+names the misconception, and plans the reteach; `assessment-items/` and
+`assessment-design/` build the instrument that produces the evidence;
+`assessment-analysis/` reads it and feeds the next reteach. `lesson-planning/` sets up
+the loop and `grading-feedback/` closes it.
 
-| Prompt | Description |
-|--------|-------------|
-| [`teachsubj_math_number_talks_designer.md`](subject-pedagogy/teachsubj_math_number_talks_designer.md) | 5–15 minute math number talk with anticipated strategies and teacher moves |
-| [`teachsubj_math_three_act_task_builder.md`](subject-pedagogy/teachsubj_math_three_act_task_builder.md) | Complete 3-act math task — hook, info release, reveal, sequel |
-| [`teachsubj_ela_close_reading_minilesson.md`](subject-pedagogy/teachsubj_ela_close_reading_minilesson.md) | 20–30 minute close reading with three reads and text-dependent questions |
-| [`teachsubj_ela_writers_workshop_minilesson.md`](subject-pedagogy/teachsubj_ela_writers_workshop_minilesson.md) | 10–15 minute writer's workshop minilesson — one craft move |
-| [`teachsubj_science_ngss_phenomenon_selector.md`](subject-pedagogy/teachsubj_science_ngss_phenomenon_selector.md) | NGSS anchoring phenomenon vetting and storyline arc |
-| [`teachsubj_socialstudies_dbq_writer.md`](subject-pedagogy/teachsubj_socialstudies_dbq_writer.md) | Document-based question with sourced documents and rubric |
+Inside `program/`, the spine runs outcomes → curriculum → evidence → judgement:
+`outcomes-assessment/` states what graduates should be able to do,
+`curriculum-design/` sequences courses to get them there, `accreditation-review/`
+evidences it to an external body, `evaluation-analytics/` asks whether it worked, and
+`faculty-development/` is how the answer changes practice.
 
-### `assessment/` (4) — Assessment Engineering
+Inside `learner/`, the spine is a study loop: `note-taking/` produces the material,
+`memory-and-recall/` works it, `self-assessment/` tests it, `stuck-and-confused/`
+repairs what the test exposed, and `exam-prep/` stages it against a deadline.
+`guides/` sits above all of this — its 16 workflows are **chain wrappers** that
+sequence the other prompts for a specific job (write a research paper, survive finals,
+pivot careers) rather than doing the work themselves.
 
-| Prompt | Description |
-|--------|-------------|
-| [`assessment_mc_item_writer_with_distractors.md`](assessment/assessment_mc_item_writer_with_distractors.md) | MC items with distractor analysis tied to named misconceptions |
-| [`assessment_test_blueprint_table_of_specs.md`](assessment/assessment_test_blueprint_table_of_specs.md) | Test blueprint mapping items to objectives, DOK, and weights |
-| [`assessment_performance_task_designer.md`](assessment/assessment_performance_task_designer.md) | Authentic performance task with GRASPS, rubric, and exemplar |
-| [`assessment_anchor_paper_exemplar_generator.md`](assessment/assessment_anchor_paper_exemplar_generator.md) | Calibration anchor papers per rubric level for norming |
-
-### `grading-feedback/` (3) — Grading Workflows
-
-| Prompt | Description |
-|--------|-------------|
-| [`grading_essay_feedback_by_rubric_criterion.md`](grading-feedback/grading_essay_feedback_by_rubric_criterion.md) | Criterion-by-criterion essay feedback that quotes student evidence |
-| [`grading_whole_class_feedback_memo.md`](grading-feedback/grading_whole_class_feedback_memo.md) | Single class-facing memo synthesizing patterns across a stack |
-| [`grading_speed_grading_triage.md`](grading-feedback/grading_speed_grading_triage.md) | Triage protocol sorting stacks into deep/light/quick feedback tiers |
-
-### `inclusive/` (4) — Inclusive Instruction
-
-| Prompt | Description |
-|--------|-------------|
-| [`inclusive_ell_wida_scaffolding.md`](inclusive/inclusive_ell_wida_scaffolding.md) | WIDA-aligned scaffolds across 6 proficiency levels |
-| [`inclusive_udl_lesson_redesign.md`](inclusive/inclusive_udl_lesson_redesign.md) | UDL audit and redesign across engagement, representation, action |
-| [`inclusive_504_accommodation_menu.md`](inclusive/inclusive_504_accommodation_menu.md) | Categorized 504 accommodation menu with leverage/feasibility ranking |
-| [`inclusive_dyslexia_structured_literacy_plan.md`](inclusive/inclusive_dyslexia_structured_literacy_plan.md) | Science-of-Reading-grounded structured literacy intervention plan |
-
-### `classroom-ops/` (3) — Classroom Operations
-
-| Prompt | Description |
-|--------|-------------|
-| [`classops_management_plan_and_norms.md`](classroom-ops/classops_management_plan_and_norms.md) | Year-long classroom management plan with norms, response continuum, restorative integration |
-| [`classops_routines_and_transitions_designer.md`](classroom-ops/classops_routines_and_transitions_designer.md) | High-leverage routines with signal, sequence, re-teach protocol |
-| [`classops_restorative_conversation_script.md`](classroom-ops/classops_restorative_conversation_script.md) | Structured restorative conversation script with 5 questions and follow-through |
-
-### `learner-writing/` (5) — Learner Writing Coach (Socratic, No Rewriting)
-
-| Prompt | Description |
-|--------|-------------|
-| [`learnwrite_thesis_with_critique.md`](learner-writing/learnwrite_thesis_with_critique.md) | Coach a student to develop their own thesis through diagnostic critique |
-| [`learnwrite_outline_generator.md`](learner-writing/learnwrite_outline_generator.md) | Genre-specific essay skeleton; student fills every content slot |
-| [`learnwrite_citation_helper.md`](learner-writing/learnwrite_citation_helper.md) | Format MLA/APA/Chicago citations from student-supplied source elements |
-| [`learnwrite_revision_socratic_coach.md`](learner-writing/learnwrite_revision_socratic_coach.md) | Quote student text, ask diagnostic questions, never substitute prose |
-| [`learnwrite_source_credibility_evaluator.md`](learner-writing/learnwrite_source_credibility_evaluator.md) | Lateral reading + SIFT + CRAAP walkthrough; student decides credibility |
-
-### `learner-math-science/` (3) — Learner Math/Science Coach (Socratic, No Final Answer)
-
-| Prompt | Description |
-|--------|-------------|
-| [`learnmath_socratic_step_by_step_solver.md`](learner-math-science/learnmath_socratic_step_by_step_solver.md) | Stepping-stone questions for stuck math problems; student computes |
-| [`learnmath_error_analyzer_own_work.md`](learner-math-science/learnmath_error_analyzer_own_work.md) | Locate, classify, and plan fix for errors on returned math work |
-| [`learnsci_lab_report_scaffold.md`](learner-math-science/learnsci_lab_report_scaffold.md) | Section-by-section lab report coaching using CER framework |
-
-### `learner-study-skills/` (2) — Learner Study Skills
-
-| Prompt | Description |
-|--------|-------------|
-| [`learnstudy_mistake_log_reviewer.md`](learner-study-skills/learnstudy_mistake_log_reviewer.md) | Surface patterns across an accumulated mistake log; prioritize practice |
-| [`learnstudy_active_recall_from_notes.md`](learner-study-skills/learnstudy_active_recall_from_notes.md) | Convert student notes into multi-level active-recall questions for spaced retrieval |
+**The two seams.** `program/curriculum-design/` outputs are the input to
+`instructor/lesson-planning/` — a scope and sequence becomes units becomes lessons.
+And `instructor/` assessment output is the raw material `learner/self-assessment/`
+works on from the other side of the desk.
 
 ---
 
-## Wave 2 Expansion (2026-05-10) — 25 New Prompts Across 3 Subdirectories
+## Frontmatter conventions specific to this domain
 
-Wave 2 deepens subject pedagogy (16), expands assessment engineering (5), and extends grading workflows (4). Subject-pedagogy prompts cover problem strings and error analysis in math, mentor-text and conferring moves in ELA, CER and inquiry in science, primary-source and civic-action work in social studies, and TBLT + comprehensible-input in world languages. Assessment prompts target portfolios, SBG conversion, PLC common formative cycles, DOK leveling, and Bloom's stem banks. Grading prompts focus on math process feedback, lab reports, presentation/video critique, and reusable comment libraries.
-
-### `subject-pedagogy/` (+16) — Subject-Specific Pedagogy
-
-| Prompt | Description |
-|--------|-------------|
-| [`teachsubj_math_problem_string_designer.md`](subject-pedagogy/teachsubj_math_problem_string_designer.md) | 4–6 problem string warm-up with anchor → helper → bridge → stretch sequence |
-| [`teachsubj_math_error_analysis_task.md`](subject-pedagogy/teachsubj_math_error_analysis_task.md) | Student analyzes a fictional wrong solution; locate, explain, correct, generalize |
-| [`teachsubj_math_manipulatives_lesson.md`](subject-pedagogy/teachsubj_math_manipulatives_lesson.md) | Concrete-Pictorial-Abstract lesson sequence with bridges between representations |
-| [`teachsubj_ela_mentor_text_close_read.md`](subject-pedagogy/teachsubj_ela_mentor_text_close_read.md) | Mentor-text lesson teaching one named craft move; notice → name → try |
-| [`teachsubj_ela_reading_conference_planner.md`](subject-pedagogy/teachsubj_ela_reading_conference_planner.md) | 5–7 minute 1:1 reading conference using research → decide → teach → link |
-| [`teachsubj_ela_book_club_discussion_guide.md`](subject-pedagogy/teachsubj_ela_book_club_discussion_guide.md) | 4–6 week book-club facilitation with rotating roles and culminating cross-book task |
-| [`teachsubj_ela_grammar_minilesson.md`](subject-pedagogy/teachsubj_ela_grammar_minilesson.md) | 10-minute single-concept grammar lesson grounded in mentor sentences and live revision |
-| [`teachsubj_ela_phonics_scope_sequence.md`](subject-pedagogy/teachsubj_ela_phonics_scope_sequence.md) | K–2 structured-literacy / Science-of-Reading phonics scope and sequence |
-| [`teachsubj_science_lab_activity_designer.md`](subject-pedagogy/teachsubj_science_lab_activity_designer.md) | Full hands-on lab with investigation question, procedure, data, safety, and CER |
-| [`teachsubj_science_cer_scaffold.md`](subject-pedagogy/teachsubj_science_cer_scaffold.md) | Three-tier CER scaffold (heavy / medium / light) with cross-tier rubric |
-| [`teachsubj_science_fair_mentor.md`](subject-pedagogy/teachsubj_science_fair_mentor.md) | Student-facing Socratic mentor for the full science-fair arc — never writes for the student |
-| [`teachsubj_socialstudies_primary_source_analysis.md`](subject-pedagogy/teachsubj_socialstudies_primary_source_analysis.md) | Single-source deep analysis using sourcing, contextualization, close reading, corroboration |
-| [`teachsubj_socialstudies_current_events_connector.md`](subject-pedagogy/teachsubj_socialstudies_current_events_connector.md) | Connect a unit to current news with parallel framing and climate-protective discussion |
-| [`teachsubj_socialstudies_civic_action_project.md`](subject-pedagogy/teachsubj_socialstudies_civic_action_project.md) | 4–8 week student-led civic action project with non-partisan framing and stakeholder analysis |
-| [`teachsubj_worldlang_communicative_task.md`](subject-pedagogy/teachsubj_worldlang_communicative_task.md) | Task-based language teaching with proficiency-targeted scaffolds and outcome-based assessment |
-| [`teachsubj_worldlang_comprehensible_input_scaffold.md`](subject-pedagogy/teachsubj_worldlang_comprehensible_input_scaffold.md) | TPRS-style comprehensible-input lesson with circling, PQA, and reading extension |
-
-### `assessment/` (+5) — Assessment Engineering
-
-| Prompt | Description |
-|--------|-------------|
-| [`assessment_portfolio_assessment_designer.md`](assessment/assessment_portfolio_assessment_designer.md) | Portfolio system: inclusion criteria, student curation, reflection scaffolds, anchor calibration |
-| [`assessment_standards_based_grading_converter.md`](assessment/assessment_standards_based_grading_converter.md) | Convert traditional points to SBG with proficiency scales and reassessment policy |
-| [`assessment_common_formative_assessment_plc.md`](assessment/assessment_common_formative_assessment_plc.md) | PLC-built CFA with item bank, calibration, data-meeting protocol, and tiered response |
-| [`assessment_dok_item_generator.md`](assessment/assessment_dok_item_generator.md) | Coordinated items at all 4 Webb's DOK levels with per-item analysis defending the level |
-| [`assessment_blooms_question_stem_bank.md`](assessment/assessment_blooms_question_stem_bank.md) | Topic-anchored question-stem bank across all 6 Bloom's levels with escalation sequence |
-
-### `grading-feedback/` (+4) — Grading Workflows
-
-| Prompt | Description |
-|--------|-------------|
-| [`grading_math_work_feedback.md`](grading-feedback/grading_math_work_feedback.md) | Process + answer feedback on math work with pattern-matched next moves |
-| [`grading_lab_report_feedback.md`](grading-feedback/grading_lab_report_feedback.md) | CER-anchored lab-report feedback with quoted evidence and one revision call |
-| [`grading_presentation_video_feedback.md`](grading-feedback/grading_presentation_video_feedback.md) | Timestamped feedback on student presentations / videos with relational tone calibration |
-| [`grading_comment_library_generator.md`](grading-feedback/grading_comment_library_generator.md) | Reusable comment library by criterion × severity tier with personalization placeholders |
+- **One prefix per track**, and the subdirectory carries the finer signal:
+  `teaching_*` under `instructor/`, `program_*` under `program/`, `learn_*` under
+  `learner/`. The one exception is `learn_workflow_*` in `learner/guides/`, which
+  marks a chain wrapper that composes other prompts rather than standing alone.
+- `category` always equals the file's directory, as `education-teaching/<track>/<subdir>`.
+- `related_prompts` are repo-absolute paths, never relative and never bare filenames —
+  those silently break the moment a file moves.
+- `techniques` are bare catalogue IDs with no trailing names or comments, and every ID
+  validates against [`techniques/MASTER_TECHNIQUE_INDEX.md`](../techniques/MASTER_TECHNIQUE_INDEX.md).
+- Chain wrappers in `guides/` additionally carry `audience`, `chain_length`,
+  `estimated_time` and `status`. These are load-bearing for that layer and sit after
+  the standard fields.
 
 ---
 
-## Wave 5 Expansion (2026-05-09) — 17 New Prompts in 3 Subdirectories
+## Companion documents
 
-A 17-prompt expansion adding higher-education and corporate-training scope, ed-tech production prompts, and advising prompts. Compliance and graduation-tracking prompts deliberately do not assert specific regulatory or jurisdictional requirements — the user supplies the controlling authoritative source.
-
-### `higher-ed-corporate/` (10) — Higher Education & Corporate Training
-
-| Prompt | Description |
-|--------|-------------|
-| [`hecorp_lecture_to_active_learning_converter.md`](higher-ed-corporate/hecorp_lecture_to_active_learning_converter.md) | Convert a lecture into an active-learning session, preserving objectives |
-| [`hecorp_async_lms_module_designer.md`](higher-ed-corporate/hecorp_async_lms_module_designer.md) | Async online module ready to drop into Canvas / Blackboard / Brightspace / Moodle |
-| [`hecorp_microlearning_module.md`](higher-ed-corporate/hecorp_microlearning_module.md) | 5–15 minute single-skill microlearning with practice rep and job aid |
-| [`hecorp_office_hours_prep.md`](higher-ed-corporate/hecorp_office_hours_prep.md) | Instructor / TA prep for office hours, including triage by attendance and a recap for non-attendees |
-| [`hecorp_ta_discussion_section_prep.md`](higher-ed-corporate/hecorp_ta_discussion_section_prep.md) | Graduate TA prep for discussion / recitation section, with equity moves and grading protocol |
-| [`hecorp_online_course_conversion.md`](higher-ed-corporate/hecorp_online_course_conversion.md) | Whole in-person course converted to online or hybrid with phased build plan |
-| [`hecorp_corporate_onboarding_program.md`](higher-ed-corporate/hecorp_corporate_onboarding_program.md) | Multi-week 30/60/90-day onboarding program with manager, buddy, and feedback loops |
-| [`hecorp_compliance_training_module.md`](higher-ed-corporate/hecorp_compliance_training_module.md) | Generic compliance module that anchors on user-supplied authoritative source — no invented citations |
-| [`hecorp_performance_support_job_aid.md`](higher-ed-corporate/hecorp_performance_support_job_aid.md) | At-the-moment-of-need job aid (decision tree, checklist, script card) tested in situ |
-| [`hecorp_train_trainer_guide.md`](higher-ed-corporate/hecorp_train_trainer_guide.md) | Prepare internal SMEs to deliver training reliably — content, facilitation, and design fidelity |
-
-### `ed-tech/` (5) — Educational Technology Production
-
-| Prompt | Description |
-|--------|-------------|
-| [`edtech_class_slide_deck_designer.md`](ed-tech/edtech_class_slide_deck_designer.md) | Cognitive-load-aware instructional slide deck with speaker-notes layer |
-| [`edtech_instructional_video_script.md`](ed-tech/edtech_instructional_video_script.md) | 3–10 min instructional video script with two-column narration / on-screen plan |
-| [`edtech_choice_board_designer.md`](ed-tech/edtech_choice_board_designer.md) | Student choice board / HyperDoc anchored on one objective with must-do floor |
-| [`edtech_blended_hyflex_lesson_designer.md`](ed-tech/edtech_blended_hyflex_lesson_designer.md) | Blended / HyFlex lesson where in-person, sync, and async paths are equivalent |
-| [`edtech_lms_course_shell_setup.md`](ed-tech/edtech_lms_course_shell_setup.md) | End-to-end LMS course-shell setup checklist with student-view test |
-
-### `advising/` (2) — Advising & School Counseling
-
-| Prompt | Description |
-|--------|-------------|
-| [`advising_graduation_tracker.md`](advising/advising_graduation_tracker.md) | High-school graduation tracker + intervention plan; user supplies jurisdiction's requirements |
-| [`advising_course_selection_advisor.md`](advising/advising_course_selection_advisor.md) | One-on-one course-selection conversation with goals, constraints, scenarios, and fallback |
+- [`field_guide.md`](field_guide.md) — the craft half. What good educational output
+  looks like, the lesson-plan / assessment / worksheet templates, Bloom's-aligned
+  objective criteria, and the anti-patterns (grade-level mismatch, time unrealism,
+  objective-assessment misalignment) that this domain's prompts are built to avoid.
+- [`EXPANSION_ROADMAP.md`](EXPANSION_ROADMAP.md) — what shipped when, what moved where
+  in the 2026-08-28 reorganization, and what is deliberately not a gap.
+- [`meta/`](meta/) — the audit, backlog and test-review records behind the above.
 
 ---
 
-## Wave 6 Expansion (2026-05-11) — 30 New Learner-Facing Prompts Across 7 Subdirectories
+## Companion domains
 
-A 30-prompt expansion focused entirely on learner-facing prompts — conversational coaching tools students use directly to build skills. All prompts touching graded work (writing, research, math/science) enforce a strict Socratic stance: the AI never writes theses, paragraphs, citations, final answers, or substitution prose. Time-management and language-learning prompts use a lighter, more direct approach appropriate to skill development.
-
-### `learner-writing/` (+4) — Learner Writing Coach
-
-| Prompt | Description |
-|--------|-------------|
-| [`learnwrite_counterargument_generator.md`](learner-writing/learnwrite_counterargument_generator.md) | Develop counterarguments to a thesis through Socratic questioning — student generates all objections and rebuttals |
-| [`learnwrite_peer_review_template.md`](learner-writing/learnwrite_peer_review_template.md) | Structured peer review using specific criteria; coach quotes student text and asks diagnostic questions |
-| [`learnwrite_annotated_bibliography_helper.md`](learner-writing/learnwrite_annotated_bibliography_helper.md) | Guide each annotation element (summary, credibility, relevance) without summarizing sources for the student |
-| [`learnwrite_academic_integrity_self_check.md`](learner-writing/learnwrite_academic_integrity_self_check.md) | Pre-submission integrity audit using targeted self-examination questions — no AI rewriting |
-
-### `learner-reading/` (+5) — Learner Reading Coach
-
-| Prompt | Description |
-|--------|-------------|
-| [`learnread_annotation_coach.md`](learner-reading/learnread_annotation_coach.md) | Build active annotation habits across three layers: comprehension, analysis, personal connection |
-| [`learnread_chapter_summary_tool.md`](learner-reading/learnread_chapter_summary_tool.md) | Identify main ideas and chapter structure through guided questions — student writes every summary |
-| [`learnread_vocabulary_in_context_decoder.md`](learner-reading/learnread_vocabulary_in_context_decoder.md) | Decode unfamiliar words from context before consulting a dictionary; inference first |
-| [`learnread_authors_craft_analyzer.md`](learner-reading/learnread_authors_craft_analyzer.md) | Analyze authorial craft choices through guided questioning — name the technique, find the evidence, argue the effect |
-| [`learnread_book_report_scaffold.md`](learner-reading/learnread_book_report_scaffold.md) | Section-by-section book report scaffolding; student produces all content through guided questioning |
-
-### `learner-math-science/` (+4) — Learner Math/Science Coach
-
-| Prompt | Description |
-|--------|-------------|
-| [`learnmath_word_problem_decoder.md`](learner-math-science/learnmath_word_problem_decoder.md) | Decode word problems by identifying what's being asked, what's given, and what strategy fits — student solves |
-| [`learnsci_experimental_design_helper.md`](learner-math-science/learnsci_experimental_design_helper.md) | Coach experimental design (question, hypothesis, variables, procedure) without writing any component for the student |
-| [`learnsci_data_interpreter.md`](learner-math-science/learnsci_data_interpreter.md) | Guide student interpretation of data, graphs, and results through questions — student draws all conclusions |
-| [`learnsci_concept_map_builder.md`](learner-math-science/learnsci_concept_map_builder.md) | Build concept map connections through Socratic questioning about relationships between terms |
-
-### `learner-language/` (5 new) — L2 Language Learning
-
-| Prompt | Description |
-|--------|-------------|
-| [`learnlang_daily_conversation_drill.md`](learner-language/learnlang_daily_conversation_drill.md) | Scenario-based L2 conversation drill; AI stays in target language with per-exchange feedback and single error pattern debrief |
-| [`learnlang_topical_vocabulary_builder.md`](learner-language/learnlang_topical_vocabulary_builder.md) | Context-first L2 vocabulary: context sentence → inference → confirm → production → spaced recall gap-fill |
-| [`learnlang_l2_grammar_explainer.md`](learner-language/learnlang_l2_grammar_explainer.md) | Grammar rule in 1–2 sentences with example pairs, tricky cases, comprehension check, and 5 practice prompts |
-| [`learnlang_idiom_decoder.md`](learner-language/learnlang_idiom_decoder.md) | Context-first idiom decoding: inference before explanation → literal vs. figurative → register → student production |
-| [`learnlang_pronunciation_coach_text.md`](learner-language/learnlang_pronunciation_coach_text.md) | Text-mode pronunciation coaching with IPA, plain phonetic spelling, articulation placement, and minimal pairs |
-
-### `learner-research/` (4 new) — Research Skills Coach
-
-| Prompt | Description |
-|--------|-------------|
-| [`learnresearch_question_refinement.md`](learner-research/learnresearch_question_refinement.md) | Diagnostic four-test research question critique (statement vs. question, scope, researchability, debatability) — AI never rewrites |
-| [`learnresearch_keyword_search_strategy.md`](learner-research/learnresearch_keyword_search_strategy.md) | Build Boolean search strategies through concept extraction and synonym clustering — student constructs every query |
-| [`learnresearch_source_synthesis_chart.md`](learner-research/learnresearch_source_synthesis_chart.md) | Map agreement, disagreement, and outliers across sources to identify themes — student summarizes and names all themes |
-| [`learnresearch_interview_question_critique.md`](learner-research/learnresearch_interview_question_critique.md) | Five-test critique of interview questions (open/closed, leading language, double-barreled, vagueness, scope) — AI never rewrites |
-
-### `learner-study-skills/` (+4) — Study Skills Coach
-
-| Prompt | Description |
-|--------|-------------|
-| [`learnstudy_cornell_notes_converter.md`](learner-study-skills/learnstudy_cornell_notes_converter.md) | Convert raw notes to Cornell format; student identifies main points, generates cue questions, and writes summary from memory |
-| [`learnstudy_feynman_teach_back_coach.md`](learner-study-skills/learnstudy_feynman_teach_back_coach.md) | Teach-back coaching using the Feynman technique; AI probes for gaps but never explains the concept itself |
-| [`learnstudy_test_day_strategy.md`](learner-study-skills/learnstudy_test_day_strategy.md) | Direct test-day strategy tailored to format, point distribution, and anxiety vs. time-management diagnosis |
-| [`learnstudy_finals_week_plan.md`](learner-study-skills/learnstudy_finals_week_plan.md) | Collaborative finals week schedule with triage matrix (weight × difficulty × deadline), session goals, and buffer time |
-
-### `learner-time-discussion/` (4 new) — Time Management & Discussion Prep
-
-| Prompt | Description |
-|--------|-------------|
-| [`learntime_assignment_tracker_planner.md`](learner-time-discussion/learntime_assignment_tracker_planner.md) | Full-capture weekly planner: brain dump → due dates + estimates → urgency triage → daily plan → first action today |
-| [`learntime_big_project_decomposer.md`](learner-time-discussion/learntime_big_project_decomposer.md) | Break a multi-week project into phases, tasks, time estimates, and a backward-planned milestone calendar |
-| [`learndisc_office_hours_question_prep.md`](learner-time-discussion/learndisc_office_hours_question_prep.md) | Convert vague confusion into specific, productive office-hours questions; AI never answers the academic content |
-| [`learndisc_class_discussion_prep.md`](learner-time-discussion/learndisc_class_discussion_prep.md) | Prepare a specific claim, textual evidence, counterargument, and genuine question for class discussion |
+- [`domain-learning/`](../domain-learning/) — self-directed skill acquisition with no
+  institution attached.
+- [`domain-healthcare-clinical/prompts/medical-education/`](../domain-healthcare-clinical/prompts/medical-education/) — health-professions education, including its own learner track.
+- [`domain-science/teaching-research-methods/`](../domain-science/teaching-research-methods/) — teaching research craft.
+- [`domain-parenting/`](../domain-parenting/) — the same child, from the caregiver's side.
+- [`domain-personal-development/`](../domain-personal-development/) — the identity,
+  agency and habit work that `learner/guides/` cross-links into.
+- [`domain-productivity/deep-work/`](../domain-productivity/deep-work/) — focus and
+  time architecture underneath any study plan.
 
 ---
 
-## Maintenance
-
-- [Prompt Maintenance Backlog](MAINTENANCE_BACKLOG.md)
-- [Prompt Test Review](PROMPT_TEST_REVIEW.md)
-
----
-
-## Prompts in This Domain (19)
-
-### Core Teaching Prompts (Original)
-
-| Prompt | Description | Best For |
-|--------|-------------|----------|
-| [`teaching_lesson_plan_generator.md`](teaching_lesson_plan_generator.md) | Create comprehensive, standards-aligned lesson plans with differentiation | Daily planning, substitute materials, observation prep |
-| [`teaching_assessment_rubric_builder.md`](teaching_assessment_rubric_builder.md) | Design valid assessments with clear rubrics and scoring guides | Unit tests, performance tasks, project rubrics |
-| [`teaching_differentiation_planner.md`](teaching_differentiation_planner.md) | Design differentiated instruction for diverse learners | Mixed-ability classrooms, IEP support, ELL adaptation |
-| [`teaching_socratic_discussion_facilitator.md`](teaching_socratic_discussion_facilitator.md) | Design and facilitate discussion-based learning experiences | Seminars, critical thinking, text analysis |
-| [`teaching_student_feedback_composer.md`](teaching_student_feedback_composer.md) | Create specific, actionable, growth-oriented student feedback | Report cards, written comments, feedback conversations |
-| [`field_guide.md`](field_guide.md) | Prompt engineering techniques curated for educators | Learning about techniques for education prompts |
-
-### Special Education & Student Support
-
-| Prompt | Description | Best For |
-|--------|-------------|----------|
-| [`teaching_iep_goal_writer.md`](teaching_iep_goal_writer.md) | Generate SMART IEP and 504 plan goals with progress monitoring frameworks | Annual IEP goals, 504 plans, PLAAFP summaries, progress monitoring |
-| [`teaching_behavior_support_planner.md`](teaching_behavior_support_planner.md) | Design behavior intervention plans, SEL activities, and restorative practice guides | Behavior plans, SEL integration, de-escalation, community building |
-
-### Communication & Reporting
-
-| Prompt | Description | Best For |
-|--------|-------------|----------|
-| [`teaching_parent_communication_composer.md`](teaching_parent_communication_composer.md) | Create professional, empathetic parent communications across multiple formats | Newsletters, conference prep, progress updates, behavior notices |
-| [`teaching_report_card_comment_generator.md`](teaching_report_card_comment_generator.md) | Generate personalized, strengths-based report card comments by subject | End-of-term comments, progress reports, batch generation |
-
-### Curriculum & Planning
-
-| Prompt | Description | Best For |
-|--------|-------------|----------|
-| [`teaching_unit_curriculum_planner.md`](teaching_unit_curriculum_planner.md) | Design multi-week units using Understanding by Design backward design framework | Unit planning, scope and sequence, backward design |
-| [`teaching_standards_alignment_mapper.md`](teaching_standards_alignment_mapper.md) | Map curriculum to standards, identify gaps, and generate crosswalk documents | Curriculum audits, standards mapping, vertical alignment |
-| [`teaching_syllabus_course_designer.md`](teaching_syllabus_course_designer.md) | Design comprehensive higher-ed syllabi with AI policies and inclusive design | College course design, AI use policies, accreditation prep |
-| [`teaching_project_based_learning_designer.md`](teaching_project_based_learning_designer.md) | Design authentic PBL units with driving questions and public products | Multi-week projects, inquiry learning, exhibitions |
-
-### Daily Classroom Tools
-
-| Prompt | Description | Best For |
-|--------|-------------|----------|
-| [`teaching_exit_ticket_generator.md`](teaching_exit_ticket_generator.md) | Create quick formative assessments aligned to Bloom's with data analysis guidance | End-of-lesson checks, misconception identification, instructional response |
-| [`teaching_reading_level_adapter.md`](teaching_reading_level_adapter.md) | Adapt texts to multiple reading levels while preserving content and rigor | Differentiated reading, ELL adaptations, text sets |
-| [`teaching_vocabulary_builder.md`](teaching_vocabulary_builder.md) | Design subject-specific vocabulary instruction with tiered words and multi-modal activities | Academic language, content vocabulary, ELL vocabulary support |
-| [`teaching_substitute_plan_generator.md`](teaching_substitute_plan_generator.md) | Create comprehensive substitute plans for emergency and planned absences | Sub plans, emergency binder, long-term absence |
-
-
-### Instructional Response Cycle
-
-| Prompt | Description | Best For |
-|--------|-------------|----------|
-| [`teaching_preassessment_designer.md`](teaching_preassessment_designer.md) | Design objective-aligned pre-assessments with misconception coding and action-ready analysis | Unit launches, baseline checks, PLC prep |
-| [`teaching_misconception_diagnoser.md`](teaching_misconception_diagnoser.md) | Diagnose error patterns with a misconception taxonomy and prioritize instructional response | Post-quiz analysis, data meetings, targeted grouping |
-| [`teaching_reteach_intervention_planner.md`](teaching_reteach_intervention_planner.md) | Build time-boxed reteach interventions tied to objective gaps and reassessment gates | Intervention blocks, MTSS/RTI cycles, mastery recovery |
-| [`teaching_small_group_rotation_planner.md`](teaching_small_group_rotation_planner.md) | Plan misconception-driven small-group rotations with station evidence and follow-up rules | Workshop rotations, station teaching, mixed-readiness support |
-
-### Emerging Areas
-
-| Prompt | Description | Best For |
-|--------|-------------|----------|
-| [`teaching_ai_literacy_lesson_designer.md`](teaching_ai_literacy_lesson_designer.md) | Design age-appropriate AI literacy lessons covering concepts, ethics, and critical evaluation | AI education K-12, digital citizenship, prompt engineering for students |
-
-### Exemplar Prompts (Study These)
-
-| Prompt | Location | What It Demonstrates |
-|--------|----------|---------------------|
-| `learning_code_refactoring_exercises.md` | [domain-learning-coding/](../domain-learning-coding/) | Excellent scaffolding, progressive difficulty |
-| `learning_mini_lesson_generation.md` | [domain-learning-coding/](../domain-learning-coding/) | Structured lesson format, time-bounded |
-
-### Related Education Resources
-
-**Image Generation for Education:**
-See `domain-image-generation/` for general image-generation guides. Worksheet-specific generators are not currently bundled in this repo.
-- Writing prompts and graphic organizers
-
-**Coding Education (17 prompts):**
-Located in `domain-learning-coding/`
-- Concept explanations
-- Refactoring exercises
-- Debugging practice
-- Mini lesson generation
-
----
-
-## Templates
-
-### Template 1: Complete Lesson Plan
-
-```markdown
-# Lesson Plan: [Topic]
-
-**Subject:** [Subject area]
-**Grade Level:** [Grade(s)]
-**Duration:** [Time - e.g., 45 minutes]
-**Standards:** [Applicable standards - Common Core, NGSS, state]
-
----
-
-## Learning Objectives
-
-By the end of this lesson, students will be able to:
-1. [Observable, measurable objective using Bloom's verb]
-2. [Observable, measurable objective using Bloom's verb]
-
----
-
-## Prior Knowledge Required
-
-Students should already:
-- [Prerequisite skill/knowledge 1]
-- [Prerequisite skill/knowledge 2]
-
-**Prerequisite Check:** [How you'll verify students are ready]
-
----
-
-## Materials
-
-**Teacher Materials:**
-- [Item 1]
-- [Item 2]
-
-**Student Materials:**
-- [Item 1 - per student or per group]
-- [Item 2]
-
-**Technology Requirements:** [If applicable]
-
----
-
-## Lesson Procedure
-
-### Engage (5-7 minutes)
-**Purpose:** Activate prior knowledge, hook interest
-
-**Activity:**
-[Specific opening activity - question, video clip, demonstration, etc.]
-
-**Teacher Actions:**
-- [What teacher does]
-
-**Student Actions:**
-- [What students do]
-
-**Transition:** [How to move to next phase]
-
----
-
-### Explore (10-15 minutes)
-**Purpose:** Students interact with concept before formal instruction
-
-**Activity:**
-[Hands-on exploration, inquiry task, or guided discovery]
-
-**Teacher Actions:**
-- [Circulate, observe, ask probing questions]
-- [Note common misconceptions to address]
-
-**Student Actions:**
-- [Active engagement with materials/concepts]
-- [Record observations/thinking]
-
-**Differentiation:**
-- Scaffold: [For struggling learners]
-- Extension: [For advanced learners]
-
----
-
-### Explain (10-12 minutes)
-**Purpose:** Direct instruction, concept clarification
-
-**Key Concepts:**
-1. [Concept 1 with explanation]
-2. [Concept 2 with explanation]
-
-**Vocabulary:**
-- [Term 1]: [Student-friendly definition]
-- [Term 2]: [Student-friendly definition]
-
-**Check for Understanding:**
-- [Quick formative check - thumbs up, whiteboard response, etc.]
-
----
-
-### Elaborate (10-15 minutes)
-**Purpose:** Apply learning to new situations
-
-**Activity:**
-[Application task, problem-solving, or extension activity]
-
-**Success Criteria:**
-- [ ] [What successful completion looks like]
-
-**Differentiation:**
-- Scaffold: [Modified version for support]
-- Extension: [Challenge version for advanced]
-
----
-
-### Evaluate (5-10 minutes)
-**Purpose:** Assess learning, provide closure
-
-**Assessment:**
-[Exit ticket, quiz, performance task - aligned to objectives]
-
-**Closure:**
-[Summary activity, reflection prompt, connection to next lesson]
-
----
-
-## Assessment Alignment
-
-| Objective | Formative Assessment | Summative Assessment |
-|-----------|---------------------|---------------------|
-| [Objective 1] | [How checked during lesson] | [How measured at end] |
-| [Objective 2] | [How checked during lesson] | [How measured at end] |
-
----
-
-## Differentiation Strategies
-
-**For Struggling Learners:**
-- [Specific accommodation 1]
-- [Specific accommodation 2]
-
-**For Advanced Learners:**
-- [Specific extension 1]
-- [Specific extension 2]
-
-**For English Language Learners:**
-- [Specific support 1]
-- [Specific support 2]
-
----
-
-## Reflection (Post-Lesson)
-
-**What worked well:**
-[To be filled after teaching]
-
-**What to modify:**
-[To be filled after teaching]
-
-**Student misconceptions observed:**
-[To be filled after teaching]
-```
-
-### Template 2: Assessment/Rubric Creation
-
-```markdown
-# Assessment: [Topic/Skill]
-
-**Type:** [Formative/Summative]
-**Subject:** [Subject]
-**Grade Level:** [Grade]
-**Time:** [Duration]
-**Standards:** [Aligned standards]
-
----
-
-## Objectives Assessed
-
-This assessment measures:
-1. [Objective 1]
-2. [Objective 2]
-
----
-
-## Assessment Items
-
-### Section A: [Question Type - e.g., Multiple Choice]
-**Objective Assessed:** [Which objective]
-**Points:** [Value]
-
-1. [Question]
-   a) [Option - correct]
-   b) [Option - common misconception]
-   c) [Option - distractor]
-   d) [Option - distractor]
-
-   *Rationale for correct answer: [Why A is right]*
-   *Common error: [Why students might choose B]*
-
-[Continue questions...]
-
----
-
-### Section B: [Question Type - e.g., Short Answer]
-**Objective Assessed:** [Which objective]
-**Points:** [Value]
-
-1. [Question]
-
-   **Exemplary Response:** [What an excellent answer includes]
-
-   **Scoring Guide:**
-   - 3 points: [Full credit criteria]
-   - 2 points: [Partial credit criteria]
-   - 1 point: [Minimal credit criteria]
-   - 0 points: [No credit criteria]
-
----
-
-### Section C: [Question Type - e.g., Extended Response/Performance]
-**Objective Assessed:** [Which objective]
-**Points:** [Value]
-
-**Prompt:**
-[Extended task description]
-
-**Rubric:**
-
-| Criterion | Exemplary (4) | Proficient (3) | Developing (2) | Beginning (1) |
-|-----------|---------------|----------------|----------------|---------------|
-| [Criterion 1] | [Description] | [Description] | [Description] | [Description] |
-| [Criterion 2] | [Description] | [Description] | [Description] | [Description] |
-| [Criterion 3] | [Description] | [Description] | [Description] | [Description] |
-
----
-
-## Answer Key
-
-[Complete answer key with explanations]
-
----
-
-## Accommodations
-
-**Extended Time:** [Which students, how much]
-**Modified Version:** [What's different]
-**Read Aloud:** [Which sections permitted]
-```
-
-### Template 3: Worksheet Generator
-
-```markdown
-# Worksheet: [Topic]
-
-**Subject:** [Subject]
-**Grade Level:** [Grade]
-**Objective:** [What students will practice]
-**Time:** [Estimated completion time]
-
----
-
-## Instructions
-
-[Clear, grade-appropriate instructions]
-
----
-
-## Practice Problems
-
-### Part 1: [Skill Level - Basic/Foundational]
-
-[Problems 1-5: Entry-level practice]
-
-### Part 2: [Skill Level - Intermediate]
-
-[Problems 6-10: Application of skill]
-
-### Part 3: [Skill Level - Challenge]
-
-[Problems 11-15: Extension/complex application]
-
----
-
-## Self-Check
-
-**Check Your Understanding:**
-After completing this worksheet, you should be able to:
-- [ ] [Self-assessment item 1]
-- [ ] [Self-assessment item 2]
-
-**If you struggled with Part 1:** [Recommendation for review]
-**If you completed Part 3 easily:** [Extension recommendation]
-
----
-
-## Answer Key (Separate page or teacher version)
-
-[Complete answers with work shown for complex problems]
-```
-
----
-
-## Worked Example
-
-### Scenario: Creating a History Worksheet
-
-**User says:** "I need a worksheet on the causes of World War I for my 10th grade class"
-
-**Step 1: Classification**
-
-- Task Type: CREATE
-- Domain: Education/Teaching
-- Specific Type: Worksheet creation
-
-**Step 2: Context Gathering**
-
-**Known:**
-- Topic: Causes of WWI
-- Grade: 10th
-- Format: Worksheet
-
-**Need to determine:**
-- What aspect of WWI causes (MAIN, assassination, alliances)?
-- How much time for completion?
-- Prior knowledge (what have they already learned)?
-- Standards alignment needed?
-- Mix of question types?
-- Purpose (formative check, homework, test prep)?
-
-**Step 3: Apply Template**
-
-Use **Template 3: Worksheet Generator** with history-specific adaptations
-
-**Step 4: Build Prompt**
-
-```markdown
-# Create WWI Causes Worksheet
-
-**Objective:** Create a worksheet assessing understanding of the causes of World War I
-
-## Context
-
-**Grade Level:** 10th grade (ages 15-16)
-**Subject:** World History / US History
-**Topic:** Causes of World War I
-
-**Prior Knowledge:**
-- Students have completed a unit on late 19th century imperialism
-- Students have been introduced to the alliance system
-- Students have learned about nationalism in Europe
-- Most recent lesson covered the assassination of Archduke Franz Ferdinand
-
-**Standards Alignment:**
-[Specify state standards or Common Core RH.9-10 for history]
-
-**Time:** 20-25 minutes completion time
-
-## Requirements
-
-**Content Coverage:**
-- MAIN causes (Militarism, Alliances, Imperialism, Nationalism)
-- The spark (assassination)
-- How factors interconnected
-
-**Question Types:**
-- Multiple choice (4-5 questions) - basic recall and identification
-- Matching (1 section) - alliances/countries
-- Short answer (2-3 questions) - explain connections
-- Document analysis (1 primary source excerpt) - historical thinking
-- Extended response (1 question) - argue which cause was most significant
-
-**Bloom's Levels:**
-- 40% Remember/Understand (identify, describe)
-- 40% Apply/Analyze (explain connections, interpret document)
-- 20% Evaluate (argue, justify)
-
-**Differentiation:**
-- Include word bank option for struggling students
-- Include extension question for advanced students
-- Ensure reading level appropriate for 10th grade (Flesch-Kincaid 9-10)
-
-## Output Format
-
-1. Student worksheet (clean, printer-friendly)
-2. Teacher answer key with:
-   - Correct answers
-   - Rationale for correct answers
-   - Common misconceptions to watch for
-   - Rubric for extended response
-
-## Quality Criteria
-
-- [ ] All MAIN causes addressed
-- [ ] Questions progress from simple to complex
-- [ ] Primary source is age-appropriate and relevant
-- [ ] Extended response has clear rubric
-- [ ] Answer key includes teaching notes
-- [ ] Time estimate is realistic (test with reading time)
-```
-
----
-
-## Anti-Patterns for Education
-
-### Mistake 1: Grade-Level Mismatch
-
-**Problem:** Content too advanced or too simple for stated grade
-
-**Bad:**
-```
-Create a worksheet on cell division for 5th grade:
-"Analyze the role of cyclin-dependent kinases in regulating the G1/S checkpoint"
-```
-
-**Good:**
-```
-Create a worksheet on cell division for 5th grade:
-"Draw a cell before and after it divides. Label the parts you can see."
-(With scaffolding: diagram outline, word bank of parts)
-```
-
----
-
-### Mistake 2: Time Unrealism
-
-**Problem:** Activities don't fit available time
-
-**Bad:**
-```
-"Create a 45-minute lesson" that includes:
-- 15-minute lecture
-- 20-minute group project
-- 15-minute presentations
-- 10-minute assessment
-```
-
-**Good:**
-```
-"Create a 45-minute lesson with realistic timing:
-- 5-min warm-up/hook
-- 10-min direct instruction
-- 15-min guided practice
-- 10-min independent practice
-- 5-min closure/exit ticket
-
-Note: Built-in 2-minute transitions between phases"
-```
-
----
-
-### Mistake 3: Objective-Assessment Misalignment
-
-**Problem:** Assessing different things than taught
-
-**Bad:**
-```
-Objective: "Students will analyze the causes of the French Revolution"
-Assessment: "List three facts about the French Revolution"
-(Teaching analysis, testing recall)
-```
-
-**Good:**
-```
-Objective: "Students will analyze the causes of the French Revolution"
-Assessment: "Read this primary source. Explain how it shows one cause of the French Revolution. Use evidence from the text."
-(Teaching and testing analysis)
-```
-
----
-
-## Quick Reference Card
-
-```
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                 EDUCATION QUICK REFERENCE                                  ║
-╠═══════════════════════════════════════════════════════════════════════════╣
-║                                                                           ║
-║  ALWAYS SPECIFY:                                                          ║
-║  □ Grade level (and actual abilities if different)                       ║
-║  □ Time available                                                         ║
-║  □ Prior knowledge assumed                                                ║
-║  □ Standards alignment (if required)                                      ║
-║  □ Differentiation needs (IEPs, ELLs, advanced)                          ║
-║                                                                           ║
-║  LEARNING OBJECTIVES MUST BE:                                             ║
-║  □ Observable (can see/hear students doing it)                           ║
-║  □ Measurable (can assess if achieved)                                   ║
-║  □ Student-centered ("Students will be able to...")                      ║
-║  □ Aligned to what you'll teach AND assess                               ║
-║                                                                           ║
-║  LESSON STRUCTURE (5E MODEL):                                             ║
-║  1. Engage - Hook interest, activate prior knowledge                      ║
-║  2. Explore - Students interact with concept                              ║
-║  3. Explain - Direct instruction, clarification                           ║
-║  4. Elaborate - Apply to new situations                                   ║
-║  5. Evaluate - Check learning, provide closure                            ║
-║                                                                           ║
-║  DIFFERENTIATION CHECKLIST:                                               ║
-║  □ Scaffold for struggling (word banks, graphic organizers, models)      ║
-║  □ Extend for advanced (deeper questions, additional challenge)          ║
-║  □ Multiple modalities (visual, auditory, kinesthetic)                   ║
-║  □ ELL supports (visuals, simplified language, native language)          ║
-║                                                                           ║
-║  BLOOM'S QUICK VERBS:                                                     ║
-║  Remember: list, define, identify, recall, name                           ║
-║  Understand: explain, summarize, classify, compare                        ║
-║  Apply: use, demonstrate, solve, implement                                ║
-║  Analyze: compare, contrast, examine, differentiate                       ║
-║  Evaluate: judge, justify, defend, critique                               ║
-║  Create: design, develop, construct, produce                              ║
-║                                                                           ║
-║  WORKSHEET PROMPTS TO STUDY:                                              ║
-║  • domain-image-generation/ (general image-gen guides)                    ║
-║  • domain-learning-coding/ (scaffolded practice, mini lessons)           ║
-║                                                                           ║
-╚═══════════════════════════════════════════════════════════════════════════╝
-```
-
----
-
-## Field Guide
-
-For comprehensive prompt engineering techniques specifically tailored to education:
-
-| Field Guide | Purpose |
-|-------------|---------|
-| [`field_guide.md`](field_guide.md) | Detailed guide on prompt techniques for educators, instructional designers, and tutors |
-
----
-
-## Related Resources
-
-| Resource | Purpose |
-|----------|---------|
-| [NON_CODING_QUICK_START.md](../NON_CODING_QUICK_START.md) | Universal non-coding principles |
-| [domain-learning-coding/](../domain-learning-coding/) | Coding education prompts |
-| [domain-image-generation/](../domain-image-generation/) | Image generation guides |
-| [PROMPT_QUALITY_STANDARDS.md](../PROMPT_QUALITY_STANDARDS.md) | Quality tier definitions |
-
----
-
-## Quick Start
-
-**For lesson planning:**
-```
-Use: teaching_lesson_plan_generator.md
-Input: Subject, topic, grade, time, standards
-Output: Complete lesson plan with 5E model
-```
-
-**For assessment creation:**
-```
-Use: teaching_assessment_rubric_builder.md
-Input: Learning objectives, assessment type, grade
-Output: Complete assessment with rubrics
-```
-
-**For differentiation:**
-```
-Use: teaching_differentiation_planner.md
-Input: Learning objective, student population
-Output: Tiered activities for all learners
-```
-
-**For IEP/504 goals:**
-```
-Use: teaching_iep_goal_writer.md
-Input: Disability category, present levels, goal domain, grade
-Output: SMART goals, benchmarks, accommodations, progress monitoring
-```
-
-**For parent communication:**
-```
-Use: teaching_parent_communication_composer.md
-Input: Communication type, grade, key content, tone
-Output: Drafted communication ready to personalize
-```
-
-**For unit planning:**
-```
-Use: teaching_unit_curriculum_planner.md
-Input: Subject, topic, grade, duration, standards
-Output: Complete backward design unit with scope and sequence
-```
-
-**For AI literacy:**
-```
-Use: teaching_ai_literacy_lesson_designer.md
-Input: Grade band, focus area, tools available
-Output: Age-appropriate AI literacy lesson with activities
-```
-
----
-
-*Document Version: 2.0*
-*Created: 2026-01-26*
-*Updated: 2026-02-20 - Added 13 new teaching prompts (IEP goals, parent communication, report cards, unit planning, reading level adaptation, exit tickets, substitute plans, behavior/SEL, AI literacy, syllabus design, PBL, vocabulary, standards alignment)*
-*Domain: Education & Teaching*
+## Prompts in this domain
+
+Generated from the directory tree; every prompt appears exactly once.
+
+#### `instructor/assessment-analysis/` (7)
+
+| File | Purpose |
+|---|---|
+| [`teaching_anchor_paper_exemplar_generator.md`](instructor/assessment-analysis/teaching_anchor_paper_exemplar_generator.md) | Generate a calibration set of anchor papers — one per rubric performance level — with annotated scoring… |
+| [`teaching_feedback_drafting_coach.md`](instructor/assessment-analysis/teaching_feedback_drafting_coach.md) | Draft actionable, evidence-cited feedback for any student assignment — not a template, but a coach that ensures… |
+| [`teaching_item_analysis_report.md`](instructor/assessment-analysis/teaching_item_analysis_report.md) | Take class quiz results and produce a diagnostic item analysis — difficulty indices, distractor frequency… |
+| [`teaching_item_difficulty_calibrator.md`](instructor/assessment-analysis/teaching_item_difficulty_calibrator.md) | Estimate and adjust the difficulty of a draft item set so the final assessment has an intentional difficulty… |
+| [`teaching_quiz_to_reteach_plan.md`](instructor/assessment-analysis/teaching_quiz_to_reteach_plan.md) | Convert quiz results directly into a differentiated reteach lesson — grouping students by error pattern (not… |
+| [`teaching_standards_alignment_auditor.md`](instructor/assessment-analysis/teaching_standards_alignment_auditor.md) | Audit an existing assessment for alignment to stated standards — identifying misaligned items, over-tested… |
+| [`teaching_standards_based_grading_converter.md`](instructor/assessment-analysis/teaching_standards_based_grading_converter.md) | Convert a traditional points-based grading system into standards-based grading: identify priority standards,… |
+
+#### `instructor/assessment-design/` (9)
+
+| File | Purpose |
+|---|---|
+| [`teaching_assessment_rubric_builder.md`](instructor/assessment-design/teaching_assessment_rubric_builder.md) | Create aligned assessments with clear rubrics and scoring guides |
+| [`teaching_common_formative_assessment_plc.md`](instructor/assessment-design/teaching_common_formative_assessment_plc.md) | Build a PLC-aligned common formative assessment (CFA): essential standard, item bank, scoring agreement,… |
+| [`teaching_diagnostic_quiz_knowledge_map.md`](instructor/assessment-design/teaching_diagnostic_quiz_knowledge_map.md) | Build a pre-unit diagnostic quiz that outputs not just items but a knowledge map of prerequisite concepts — and… |
+| [`teaching_mastery_check_designer.md`](instructor/assessment-design/teaching_mastery_check_designer.md) | Design a binary pass/retry mini-assessment for a single skill — with a mastery threshold, a parallel retry… |
+| [`teaching_peer_review_protocol_designer.md`](instructor/assessment-design/teaching_peer_review_protocol_designer.md) | Design a structured peer review protocol — with a calibration activity, criteria-anchored reviewer checklist,… |
+| [`teaching_performance_task_designer.md`](instructor/assessment-design/teaching_performance_task_designer.md) | Design an authentic performance task with GRASPS framing, multi-day workflow, scaffolded student-facing prompt,… |
+| [`teaching_portfolio_assessment_designer.md`](instructor/assessment-design/teaching_portfolio_assessment_designer.md) | Design a portfolio assessment system: criteria for inclusion, curation rationale by the student, reflection… |
+| [`teaching_self_assessment_checklist_builder.md`](instructor/assessment-design/teaching_self_assessment_checklist_builder.md) | Build student self-assessment tools calibrated to rubric criteria — with observable behavioral indicators at… |
+| [`teaching_test_blueprint_table_of_specs.md`](instructor/assessment-design/teaching_test_blueprint_table_of_specs.md) | Build a test blueprint mapping items to objectives, DOK levels, and weights — producing a defensible… |
+
+#### `instructor/assessment-items/` (8)
+
+| File | Purpose |
+|---|---|
+| [`teaching_answer_key_generator.md`](instructor/assessment-items/teaching_answer_key_generator.md) | Take any existing assessment and produce a complete scoring guide — correct answers, full and partial credit… |
+| [`teaching_blooms_question_stem_bank.md`](instructor/assessment-items/teaching_blooms_question_stem_bank.md) | Build a leveled bank of question stems across all six Bloom's revised levels, customized to a specific subject… |
+| [`teaching_distractor_rationale_designer.md`](instructor/assessment-items/teaching_distractor_rationale_designer.md) | Take any MC question and generate distractors where every wrong option is tied to a named, teachable… |
+| [`teaching_dok_item_generator.md`](instructor/assessment-items/teaching_dok_item_generator.md) | Generate a coordinated set of items at all 4 Depth of Knowledge levels on a single standard — recall,… |
+| [`teaching_hinge_question_designer.md`](instructor/assessment-items/teaching_hinge_question_designer.md) | Design a single pivotal diagnostic question with a branching response-distribution decision tree — so the… |
+| [`teaching_mc_item_writer_with_distractors.md`](instructor/assessment-items/teaching_mc_item_writer_with_distractors.md) | Generate psychometrically defensible multiple-choice items — stem, key, and 3 distractors — each anchored to a… |
+| [`teaching_oral_questioning_plan.md`](instructor/assessment-items/teaching_oral_questioning_plan.md) | Design a structured diagnostic oral questioning sequence — with opening questions, follow-up probes, and… |
+| [`teaching_short_answer_item_writer.md`](instructor/assessment-items/teaching_short_answer_item_writer.md) | Generate short-answer assessment items with model answers, an annotated response spectrum (strong →… |
+
+#### `instructor/classroom-ops/` (3)
+
+| File | Purpose |
+|---|---|
+| [`teaching_management_plan_and_norms.md`](instructor/classroom-ops/teaching_management_plan_and_norms.md) | Build a complete classroom management plan — co-constructed norms, response continuum, restorative protocols,… |
+| [`teaching_restorative_conversation_script.md`](instructor/classroom-ops/teaching_restorative_conversation_script.md) | Generate a structured restorative conversation script after harm or broken agreement — teacher-student or… |
+| [`teaching_routines_and_transitions.md`](instructor/classroom-ops/teaching_routines_and_transitions.md) | Engineer the high-leverage classroom routines and transitions — entry, materials, group switches, exit,… |
+
+#### `instructor/ed-tech/` (6)
+
+| File | Purpose |
+|---|---|
+| [`teaching_ai_literacy_lesson_designer.md`](instructor/ed-tech/teaching_ai_literacy_lesson_designer.md) | Design age-appropriate lessons teaching students about AI concepts, critical evaluation, and ethical reasoning |
+| [`teaching_blended_hyflex_lesson_designer.md`](instructor/ed-tech/teaching_blended_hyflex_lesson_designer.md) | Design a single blended or HyFlex lesson where in-person, sync online, and async learners get equivalent… |
+| [`teaching_choice_board_designer.md`](instructor/ed-tech/teaching_choice_board_designer.md) | Design a student choice board (HyperDoc-style) where learners select from differentiated tasks aligned to a… |
+| [`teaching_class_slide_deck_designer.md`](instructor/ed-tech/teaching_class_slide_deck_designer.md) | Design a class slide deck that supports learning rather than substituting for it: cognitive-load-aware slide… |
+| [`teaching_instructional_video_script.md`](instructor/ed-tech/teaching_instructional_video_script.md) | Write a script for an instructional video (typically 3–10 minutes) with hook, segmented explanation, on-screen… |
+| [`teaching_lms_course_shell_setup.md`](instructor/ed-tech/teaching_lms_course_shell_setup.md) | Stand up an LMS course shell (Canvas / Blackboard / Brightspace / Moodle) end-to-end before the term opens —… |
+
+#### `instructor/explanation-craft/` (9)
+
+| File | Purpose |
+|---|---|
+| [`teaching_analogy_engine.md`](instructor/explanation-craft/teaching_analogy_engine.md) | Construct precise, testable analogies that make unfamiliar concepts instantly intuitive — with explicit… |
+| [`teaching_concept_clarity_adults.md`](instructor/explanation-craft/teaching_concept_clarity_adults.md) | Make complex concepts genuinely intuitive for adults using mental models, structured analogies, and the… |
+| [`teaching_concept_decoder_teens.md`](instructor/explanation-craft/teaching_concept_decoder_teens.md) | Break down complex concepts into sharp, relatable explanations for teens using real-world parallels, thought… |
+| [`teaching_concept_explorer_kids.md`](instructor/explanation-craft/teaching_concept_explorer_kids.md) | Transform complex concepts into magical, memorable adventures that kids can see, feel, and retell — using… |
+| [`teaching_reading_level_adapter.md`](instructor/explanation-craft/teaching_reading_level_adapter.md) | Adapt texts to different reading levels while preserving core content and academic rigor |
+| [`teaching_socratic_discussion_facilitator.md`](instructor/explanation-craft/teaching_socratic_discussion_facilitator.md) | Design and facilitate Socratic seminars and discussion-based learning experiences |
+| [`teaching_story_based_explainer.md`](instructor/explanation-craft/teaching_story_based_explainer.md) | Transform any concept into a memorable narrative — allegory, origin story, character journey, or dramatic… |
+| [`teaching_visual_memory_architect.md`](instructor/explanation-craft/teaching_visual_memory_architect.md) | Transform any concept into a spatial, visual memory structure — memory palaces, mental maps, journey pegs, and… |
+| [`teaching_vocabulary_builder.md`](instructor/explanation-craft/teaching_vocabulary_builder.md) | Design subject-specific vocabulary instruction with tiered word selection and multi-modal activities |
+
+#### `instructor/grading-feedback/` (8)
+
+| File | Purpose |
+|---|---|
+| [`teaching_comment_library_generator.md`](instructor/grading-feedback/teaching_comment_library_generator.md) | Build a personal comment library indexed by rubric criterion and severity tier — so high-leverage feedback can… |
+| [`teaching_essay_feedback_by_rubric.md`](instructor/grading-feedback/teaching_essay_feedback_by_rubric.md) | Generate criterion-by-criterion essay feedback that quotes specific student evidence, names a single… |
+| [`teaching_lab_report_feedback.md`](instructor/grading-feedback/teaching_lab_report_feedback.md) | Generate feedback on a student lab report keyed to CER components — claim, evidence, reasoning — plus… |
+| [`teaching_math_work_feedback.md`](instructor/grading-feedback/teaching_math_work_feedback.md) | Generate feedback on student math work that addresses the process — strategy choice, representation, reasoning,… |
+| [`teaching_presentation_video_feedback.md`](instructor/grading-feedback/teaching_presentation_video_feedback.md) | Generate timestamped feedback on a student presentation or video — content, structure, delivery, and visual… |
+| [`teaching_speed_grading_triage.md`](instructor/grading-feedback/teaching_speed_grading_triage.md) | Sort a stack of student work into grade-deeply / grade-lightly / grade-quickly piles based on a triage protocol… |
+| [`teaching_student_feedback_composer.md`](instructor/grading-feedback/teaching_student_feedback_composer.md) | Create specific, actionable, growth-oriented feedback that motivates improvement |
+| [`teaching_whole_class_feedback_memo.md`](instructor/grading-feedback/teaching_whole_class_feedback_memo.md) | Synthesize a stack of student work into a single class-facing feedback memo — patterns, exemplar moves, common… |
+
+#### `instructor/higher-ed-corporate/` (11)
+
+| File | Purpose |
+|---|---|
+| [`teaching_async_lms_module_designer.md`](instructor/higher-ed-corporate/teaching_async_lms_module_designer.md) | Design a fully asynchronous online module ready to drop into Canvas, Blackboard, Brightspace, or Moodle — with… |
+| [`teaching_compliance_training_module.md`](instructor/higher-ed-corporate/teaching_compliance_training_module.md) | Design a compliance training module that satisfies legal/regulatory documentation requirements (which the user… |
+| [`teaching_corporate_onboarding_program.md`](instructor/higher-ed-corporate/teaching_corporate_onboarding_program.md) | Design a multi-week onboarding program (typically 30–90 days) covering role readiness, systems access, culture… |
+| [`teaching_lecture_to_active_learning.md`](instructor/higher-ed-corporate/teaching_lecture_to_active_learning.md) | Convert an existing lecture (slides, recording, or transcript) into an active-learning session with interleaved… |
+| [`teaching_microlearning_module.md`](instructor/higher-ed-corporate/teaching_microlearning_module.md) | Design a tight 5–15 minute microlearning module focused on a single skill or decision, with a hook, single… |
+| [`teaching_office_hours_prep.md`](instructor/higher-ed-corporate/teaching_office_hours_prep.md) | Prepare an instructor or TA for office hours: anticipate the questions, pre-build worked examples, structure… |
+| [`teaching_online_course_conversion.md`](instructor/higher-ed-corporate/teaching_online_course_conversion.md) | Convert an existing in-person course (semester or quarter) into an online or hybrid version with realistic… |
+| [`teaching_performance_support_job_aid.md`](instructor/higher-ed-corporate/teaching_performance_support_job_aid.md) | Design an at-the-moment-of-need job aid (decision tree, checklist, quick reference card, or embedded helper)… |
+| [`teaching_syllabus_course_designer.md`](instructor/higher-ed-corporate/teaching_syllabus_course_designer.md) | Design comprehensive course syllabi with learning outcomes, AI policies, and inclusive design for higher education |
+| [`teaching_ta_discussion_section_prep.md`](instructor/higher-ed-corporate/teaching_ta_discussion_section_prep.md) | Prepare a graduate teaching assistant to lead a discussion or recitation section: clarify the section's purpose… |
+| [`teaching_train_trainer_guide.md`](instructor/higher-ed-corporate/teaching_train_trainer_guide.md) | Prepare internal subject-matter experts to deliver a training reliably — facilitator skills, content mastery,… |
+
+#### `instructor/lesson-planning/` (6)
+
+| File | Purpose |
+|---|---|
+| [`teaching_differentiation_planner.md`](instructor/lesson-planning/teaching_differentiation_planner.md) | Design differentiated instruction for diverse learners with varying readiness, interests, and learning profiles |
+| [`teaching_lesson_plan_generator.md`](instructor/lesson-planning/teaching_lesson_plan_generator.md) | Create comprehensive, standards-aligned lesson plans with differentiation and assessment |
+| [`teaching_project_based_learning_designer.md`](instructor/lesson-planning/teaching_project_based_learning_designer.md) | Design authentic PBL units with driving questions, sustained inquiry, and public products |
+| [`teaching_standards_alignment_mapper.md`](instructor/lesson-planning/teaching_standards_alignment_mapper.md) | Map curriculum to standards, identify coverage gaps, and generate cross-standard alignment documents |
+| [`teaching_substitute_plan_generator.md`](instructor/lesson-planning/teaching_substitute_plan_generator.md) | Create comprehensive substitute teacher plans for emergency and planned absences |
+| [`teaching_unit_curriculum_planner.md`](instructor/lesson-planning/teaching_unit_curriculum_planner.md) | Design multi-week instructional units using Understanding by Design framework with scope and sequence |
+
+#### `instructor/reporting-communication/` (2)
+
+| File | Purpose |
+|---|---|
+| [`teaching_parent_communication_composer.md`](instructor/reporting-communication/teaching_parent_communication_composer.md) | Create professional, empathetic parent communications including newsletters, conference notes, and progress updates |
+| [`teaching_report_card_comment_generator.md`](instructor/reporting-communication/teaching_report_card_comment_generator.md) | Generate personalized, strengths-based report card comments by subject and development area |
+
+#### `instructor/response-cycle/` (5)
+
+| File | Purpose |
+|---|---|
+| [`teaching_exit_ticket_generator.md`](instructor/response-cycle/teaching_exit_ticket_generator.md) | Create quick formative assessment items aligned to Bloom's taxonomy with data analysis guidance |
+| [`teaching_misconception_diagnoser.md`](instructor/response-cycle/teaching_misconception_diagnoser.md) | Analyze student work to classify misconceptions and produce targeted reteach priorities |
+| [`teaching_preassessment_designer.md`](instructor/response-cycle/teaching_preassessment_designer.md) | Design objective-aligned pre-assessments that surface misconceptions and drive instructional decisions |
+| [`teaching_reteach_intervention_planner.md`](instructor/response-cycle/teaching_reteach_intervention_planner.md) | Design targeted reteach interventions from diagnostic data with clear success criteria and reassessment gates |
+| [`teaching_small_group_rotation_planner.md`](instructor/response-cycle/teaching_small_group_rotation_planner.md) | Plan objective-aligned small-group rotations based on misconception data, timing constraints, and reassessment… |
+
+#### `instructor/student-support/` (8)
+
+| File | Purpose |
+|---|---|
+| [`teaching_504_accommodation_menu.md`](instructor/student-support/teaching_504_accommodation_menu.md) | Generate a categorized menu of 504-style classroom accommodations matched to a student's documented impairment,… |
+| [`teaching_behavior_support_planner.md`](instructor/student-support/teaching_behavior_support_planner.md) | Design behavior intervention plans, SEL activities, and restorative practice guides for classroom communities |
+| [`teaching_course_selection_advising.md`](instructor/student-support/teaching_course_selection_advising.md) | Guide a one-on-one course-selection conversation with a student: clarify goals, surface constraints, weigh… |
+| [`teaching_dyslexia_structured_literacy_plan.md`](instructor/student-support/teaching_dyslexia_structured_literacy_plan.md) | Build a structured-literacy intervention plan for a student with dyslexia or characteristics of dyslexia —… |
+| [`teaching_ell_wida_scaffolding.md`](instructor/student-support/teaching_ell_wida_scaffolding.md) | Adapt a content lesson with WIDA-aligned scaffolds at each of six proficiency levels — language objectives,… |
+| [`teaching_graduation_tracker.md`](instructor/student-support/teaching_graduation_tracker.md) | Track a high-school student's progress toward graduation requirements, surface gaps, and design specific… |
+| [`teaching_iep_goal_writer.md`](instructor/student-support/teaching_iep_goal_writer.md) | Generate measurable, compliant IEP and 504 plan goals with progress monitoring frameworks |
+| [`teaching_udl_lesson_redesign.md`](instructor/student-support/teaching_udl_lesson_redesign.md) | Audit and redesign an existing lesson against the three Universal Design for Learning principles — engagement,… |
+
+#### `instructor/subject-pedagogy/ela/` (7)
+
+| File | Purpose |
+|---|---|
+| [`teaching_book_club_discussion_guide.md`](instructor/subject-pedagogy/ela/teaching_book_club_discussion_guide.md) | Design a 4–6 week book-club facilitation plan: pacing, discussion protocols by week, role rotation,… |
+| [`teaching_close_reading_minilesson.md`](instructor/subject-pedagogy/ela/teaching_close_reading_minilesson.md) | Design a 20–30 minute close reading minilesson on a short text passage — text-dependent questions across three… |
+| [`teaching_grammar_minilesson.md`](instructor/subject-pedagogy/ela/teaching_grammar_minilesson.md) | Teach a single grammar concept in a 10-minute minilesson grounded in mentor sentences and student writing — not… |
+| [`teaching_mentor_text_close_read.md`](instructor/subject-pedagogy/ela/teaching_mentor_text_close_read.md) | Use a mentor text excerpt to teach a single craft move — naming what the author did, why it works, and how… |
+| [`teaching_phonics_scope_sequence.md`](instructor/subject-pedagogy/ela/teaching_phonics_scope_sequence.md) | Build a K–2 phonics scope and sequence aligned with structured-literacy / Science-of-Reading principles —… |
+| [`teaching_reading_conference_planner.md`](instructor/subject-pedagogy/ela/teaching_reading_conference_planner.md) | Plan a 5–7 minute 1:1 reading conference: research stance, decide one teaching point, deliver one named… |
+| [`teaching_writers_workshop_minilesson.md`](instructor/subject-pedagogy/ela/teaching_writers_workshop_minilesson.md) | Design a focused 10–15 minute writer's workshop minilesson on a single craft move — connection, teaching point,… |
+
+#### `instructor/subject-pedagogy/math/` (5)
+
+| File | Purpose |
+|---|---|
+| [`teaching_manipulatives_lesson.md`](instructor/subject-pedagogy/math/teaching_manipulatives_lesson.md) | Design a math lesson that moves students through the concrete → pictorial → abstract (CPA) sequence so the… |
+| [`teaching_math_error_analysis_task.md`](instructor/subject-pedagogy/math/teaching_math_error_analysis_task.md) | Design a task in which students analyze a fictional student's wrong solution — locating the error, classifying… |
+| [`teaching_number_talks_designer.md`](instructor/subject-pedagogy/math/teaching_number_talks_designer.md) | Design a 5–15 minute number talk that builds mental computation, reasoning, and discourse around a single… |
+| [`teaching_problem_string_designer.md`](instructor/subject-pedagogy/math/teaching_problem_string_designer.md) | Sequence a 4–6 problem string warm-up that uses the first problems as a helper for the later ones — surfacing a… |
+| [`teaching_three_act_task_builder.md`](instructor/subject-pedagogy/math/teaching_three_act_task_builder.md) | Design a complete 3-act math task — Act 1 (hook + question), Act 2 (information release), Act 3 (reveal +… |
+
+#### `instructor/subject-pedagogy/science/` (4)
+
+| File | Purpose |
+|---|---|
+| [`teaching_cer_scaffold.md`](instructor/subject-pedagogy/science/teaching_cer_scaffold.md) | Build CER scaffolds at three tiers (heavy, medium, light) for a specific science task — pushing students from… |
+| [`teaching_lab_activity_designer.md`](instructor/subject-pedagogy/science/teaching_lab_activity_designer.md) | Design a full hands-on science lab — investigation question, procedure, data collection, and… |
+| [`teaching_ngss_phenomenon_selector.md`](instructor/subject-pedagogy/science/teaching_ngss_phenomenon_selector.md) | Select and frame an anchoring phenomenon for an NGSS unit — vetted against NGSS criteria, mapped to performance… |
+| [`teaching_science_fair_mentor.md`](instructor/subject-pedagogy/science/teaching_science_fair_mentor.md) | Coach a student through the full science fair arc — question, hypothesis, design, data, analysis, board,… |
+
+#### `instructor/subject-pedagogy/social-studies/` (4)
+
+| File | Purpose |
+|---|---|
+| [`teaching_civic_action_project.md`](instructor/subject-pedagogy/social-studies/teaching_civic_action_project.md) | Design a multi-week student-led civic action project: issue selection, root-cause research, stakeholder… |
+| [`teaching_current_events_connector.md`](instructor/subject-pedagogy/social-studies/teaching_current_events_connector.md) | Connect a current news event to a unit of study via a structured analysis: source vetting, parallel framing,… |
+| [`teaching_dbq_writer.md`](instructor/subject-pedagogy/social-studies/teaching_dbq_writer.md) | Build a complete DBQ assessment — historical question, 5–7 sourced documents with attribution and context,… |
+| [`teaching_primary_source_analysis.md`](instructor/subject-pedagogy/social-studies/teaching_primary_source_analysis.md) | Design a deep single-source analysis lesson using sourcing, contextualization, close reading, and corroboration… |
+
+#### `instructor/subject-pedagogy/world-languages/` (2)
+
+| File | Purpose |
+|---|---|
+| [`teaching_communicative_task.md`](instructor/subject-pedagogy/world-languages/teaching_communicative_task.md) | Design a task-based world-language activity built around a real communicative purpose — information gap,… |
+| [`teaching_comprehensible_input_scaffold.md`](instructor/subject-pedagogy/world-languages/teaching_comprehensible_input_scaffold.md) | Plan a comprehensible-input lesson — TPRS, story-listening, or PQA — that delivers compelling, contextualized… |
+
+#### `learner/adult-learner/` (9)
+
+| File | Purpose |
+|---|---|
+| [`learn_andragogy_study_workflow.md`](learner/adult-learner/learn_andragogy_study_workflow.md) | A general study workflow tuned for how adult learners actually learn — problem-centered, experience-anchored,… |
+| [`learn_cold_start_return_to_school.md`](learner/adult-learner/learn_cold_start_return_to_school.md) | Structured ramp for adults returning to formal education after years away. Handles syllabus decoding,… |
+| [`learn_credential_pathway_decision.md`](learner/adult-learner/learn_credential_pathway_decision.md) | Help an adult learner decide which credentialing pathway fits their target role, time horizon, financial… |
+| [`learn_imposter_age_cohort_calibration.md`](learner/adult-learner/learn_imposter_age_cohort_calibration.md) | Calibrate impostor feelings or out-of-place feelings for adult learners in classrooms dominated by younger… |
+| [`learn_portfolio_while_learning.md`](learner/adult-learner/learn_portfolio_while_learning.md) | Design a portfolio strategy for an adult learner pivoting careers: which artifacts to build while you're still… |
+| [`learn_prior_learning_articulation.md`](learner/adult-learner/learn_prior_learning_articulation.md) | Turn an adult learner's career experience into academic currency: credit-for-prior-learning (CPL) portfolios,… |
+| [`learn_skill_pivot_self_study_plan.md`](learner/adult-learner/learn_skill_pivot_self_study_plan.md) | Design a 3, 6, or 12-month self-study plan for an adult learner pivoting careers or building a new skill domain… |
+| [`learn_working_learner_time_architecture.md`](learner/adult-learner/learn_working_learner_time_architecture.md) | Weekly time architecture for an adult enrolled in school while working full-time, often with family… |
+| [`learn_writing_rust_recovery.md`](learner/adult-learner/learn_writing_rust_recovery.md) | Diagnose which specific academic writing skills have rusted during years of professional writing, then rehearse… |
+
+#### `learner/exam-prep/` (8)
+
+| File | Purpose |
+|---|---|
+| [`learn_cert_domain_drill.md`](learner/exam-prep/learn_cert_domain_drill.md) | Domain-weighted retrieval drill for IT/cloud/professional certifications: generates question sets proportional… |
+| [`learn_exam_review_planner.md`](learner/exam-prep/learn_exam_review_planner.md) | Creates a prioritized, content-based exam review plan: classifies topics by yield, assigns daily coverage based… |
+| [`learn_finals_week_plan.md`](learner/exam-prep/learn_finals_week_plan.md) | Help a student build a realistic, prioritized finals week study schedule — mapping exams to available hours,… |
+| [`learn_practice_test_generator.md`](learner/exam-prep/learn_practice_test_generator.md) | Produces a full-format, standalone practice test: mixed question types, point values, timing guidance, answer… |
+| [`learn_professional_mcq_drill.md`](learner/exam-prep/learn_professional_mcq_drill.md) | Exam-style multiple-choice question drill for professional licensing exams (CPA, CFA, LSAT, GMAT, GRE, MCAT):… |
+| [`learn_study_next_advisor.md`](learner/exam-prep/learn_study_next_advisor.md) | Answers 'what should I study next?' by integrating exam date, current mastery estimates, topic dependencies,… |
+| [`learn_test_day_strategy.md`](learner/exam-prep/learn_test_day_strategy.md) | Coach a student through pre-test preparation and during-test strategy — question prioritization, time… |
+| [`learn_weak_area_diagnosis.md`](learner/exam-prep/learn_weak_area_diagnosis.md) | Systematically diagnoses knowledge gaps from quiz scores, self-ratings, or error logs and outputs a ranked… |
+
+#### `learner/guides/adult-returning/` (6)
+
+| File | Purpose |
+|---|---|
+| [`learn_workflow_cold_start_return.md`](learner/guides/adult-returning/learn_workflow_cold_start_return.md) | First-four-weeks ramp for adults returning to school after years away: syllabus decoding, time-on-task… |
+| [`learn_workflow_cross_domain_kit.md`](learner/guides/adult-returning/learn_workflow_cross_domain_kit.md) | Curated index of non-education prompts that returning adult learners need: deep work and time management,… |
+| [`learn_workflow_imposter_calibration_age_cohort.md`](learner/guides/adult-returning/learn_workflow_imposter_calibration_age_cohort.md) | Separate real skill-gap signal from age-anchored impostor noise. Use when 'I don't belong here' shows up for an… |
+| [`learn_workflow_prior_learning_articulation.md`](learner/guides/adult-returning/learn_workflow_prior_learning_articulation.md) | Translate career and life experience into academic currency — CPL portfolios, graduate-school SOPs, application… |
+| [`learn_workflow_working_learner_time_architecture.md`](learner/guides/adult-returning/learn_workflow_working_learner_time_architecture.md) | Design a defensible weekly time architecture for working adults in school — accounting for actual work hours,… |
+| [`learn_workflow_writing_rust_recovery.md`](learner/guides/adult-returning/learn_workflow_writing_rust_recovery.md) | Diagnose which specific academic-writing skills have rusted during years of professional writing, then rehearse… |
+
+#### `learner/guides/career-changers/` (5)
+
+| File | Purpose |
+|---|---|
+| [`learn_workflow_credential_pathway_decision.md`](learner/guides/career-changers/learn_workflow_credential_pathway_decision.md) | Decide between degree, certificate, bootcamp, MOOC, on-the-job training, and self-study for a career pivot.… |
+| [`learn_workflow_cross_domain_kit.md`](learner/guides/career-changers/learn_workflow_cross_domain_kit.md) | Curated index of non-education prompts a career changer will need: career strategy, agency / execution,… |
+| [`learn_workflow_portfolio_while_learning.md`](learner/guides/career-changers/learn_workflow_portfolio_while_learning.md) | Ship public artifacts that signal your skill at the level it actually is, while you're still building.… |
+| [`learn_workflow_proof_of_work_for_pivot.md`](learner/guides/career-changers/learn_workflow_proof_of_work_for_pivot.md) | Position your portfolio and accumulated work for the target role's application context. Adapts the general… |
+| [`learn_workflow_skill_pivot_self_study_plan.md`](learner/guides/career-changers/learn_workflow_skill_pivot_self_study_plan.md) | Design a 3, 6, or 12-month self-study plan calibrated to the target role's actual hiring bar. Chains the pivot… |
+
+#### `learner/guides/college-students/` (6)
+
+| File | Purpose |
+|---|---|
+| [`learn_workflow_cross_domain_kit.md`](learner/guides/college-students/learn_workflow_cross_domain_kit.md) | Curated index of non-education-domain prompts that traditional college students will find useful: time… |
+| [`learn_workflow_essay_draft_to_submit.md`](learner/guides/college-students/learn_workflow_essay_draft_to_submit.md) | Full chain for writing a college essay (3–10 pages): topic to thesis to outline to draft to revision to… |
+| [`learn_workflow_exam_prep_finals_week.md`](learner/guides/college-students/learn_workflow_exam_prep_finals_week.md) | Triage, spaced retrieval, mistake review, and test-day strategy for finals or a major exam. Chains study-skills… |
+| [`learn_workflow_office_hours_and_class_discussion.md`](learner/guides/college-students/learn_workflow_office_hours_and_class_discussion.md) | Turn vague confusion into specific productive questions for office hours; prepare a defensible claim and… |
+| [`learn_workflow_research_paper_full_arc.md`](learner/guides/college-students/learn_workflow_research_paper_full_arc.md) | Full chain for a college research paper (10+ pages, multiple sources, 2–4 week timeline): question to search to… |
+| [`learn_workflow_stem_problem_solving.md`](learner/guides/college-students/learn_workflow_stem_problem_solving.md) | Per-problem chain for math, physics, chemistry, engineering: decode the problem, Socratic step-by-step (no… |
+
+#### `learner/guides/shared/` (4)
+
+| File | Purpose |
+|---|---|
+| [`learn_ai_as_study_partner_integrity.md`](learner/guides/shared/learn_ai_as_study_partner_integrity.md) | How to use AI as a learning partner without producing submittable work. Aimed at college students, returning… |
+| [`learn_andragogy_principles.md`](learner/guides/shared/learn_andragogy_principles.md) | Adult learning theory (Knowles, Mezirow, Brookfield) applied to prompt design. Why prompts for adults differ… |
+| [`learn_prompt_index_for_learners.md`](learner/guides/shared/learn_prompt_index_for_learners.md) | Curated cross-domain index of ~115 prompts relevant to college students, adult returning learners, and career… |
+| [`learn_socratic_vs_direct_decision.md`](learner/guides/shared/learn_socratic_vs_direct_decision.md) | Decision rule for when AI should coach Socratically (refuse to answer, ask diagnostic questions) and when it… |
+
+#### `learner/language/` (5)
+
+| File | Purpose |
+|---|---|
+| [`learn_daily_conversation_drill.md`](learner/language/learn_daily_conversation_drill.md) | Run a scenario-based conversation drill with an L2 learner — acting as a natural conversation partner at… |
+| [`learn_idiom_decoder.md`](learner/language/learn_idiom_decoder.md) | Decode idioms an L2 learner has encountered — guiding inference from context before explaining literal vs.… |
+| [`learn_l2_grammar_explainer.md`](learner/language/learn_l2_grammar_explainer.md) | Explain an L2 grammar concept clearly — rule, examples, common errors, and comprehension check — then coach the… |
+| [`learn_pronunciation_coach_text.md`](learner/language/learn_pronunciation_coach_text.md) | Coach an L2 learner through specific pronunciation challenges using phonetic notation, placement descriptions,… |
+| [`learn_topical_vocabulary_builder.md`](learner/language/learn_topical_vocabulary_builder.md) | Help an L2 learner acquire and produce vocabulary around a specific topic — using contextual presentation,… |
+
+#### `learner/math-science/` (7)
+
+| File | Purpose |
+|---|---|
+| [`learn_experimental_design_helper.md`](learner/math-science/learn_experimental_design_helper.md) | Guide a student through designing their own experiment — question, hypothesis, variables, procedure, controls —… |
+| [`learn_lab_report_scaffold.md`](learner/math-science/learn_lab_report_scaffold.md) | Coach a student through writing their own lab report — purpose, hypothesis, methods, data, analysis (CER),… |
+| [`learn_math_error_analyzer.md`](learner/math-science/learn_math_error_analyzer.md) | Help a student analyze their own returned math work — locate where the error happened, name the error type,… |
+| [`learn_math_socratic_solver.md`](learner/math-science/learn_math_socratic_solver.md) | Guide a student through solving a math problem they're stuck on — through diagnostic questions, partial… |
+| [`learn_science_concept_map_builder.md`](learner/math-science/learn_science_concept_map_builder.md) | Coach a student to build a science concept map by identifying key concepts, relationships, and hierarchy —… |
+| [`learn_science_data_interpreter.md`](learner/math-science/learn_science_data_interpreter.md) | Guide a student through interpreting their own experimental data — patterns, trends, anomalies, and conclusions… |
+| [`learn_word_problem_decoder.md`](learner/math-science/learn_word_problem_decoder.md) | Coach a student to decode what a word problem is asking — identify given information, the unknown, and the… |
+
+#### `learner/memory-and-recall/` (8)
+
+| File | Purpose |
+|---|---|
+| [`learn_concept_map_builder.md`](learner/memory-and-recall/learn_concept_map_builder.md) | Generates a structured concept map from a topic or set of notes: labeled nodes, typed relationship edges,… |
+| [`learn_feynman_teach_back_coach.md`](learner/memory-and-recall/learn_feynman_teach_back_coach.md) | Coach a student to explain a concept in their own words, identify where their explanation breaks down, and… |
+| [`learn_flashcard_generator.md`](learner/memory-and-recall/learn_flashcard_generator.md) | Generates tiered study flashcards (Q&A pairs) for college students, organized by difficulty and optimized for… |
+| [`learn_flashcard_quality_auditor.md`](learner/memory-and-recall/learn_flashcard_quality_auditor.md) | Audits an existing flashcard deck for quality issues: atomicity violations, ambiguous answers, recognition vs.… |
+| [`learn_mnemonic_designer.md`](learner/memory-and-recall/learn_mnemonic_designer.md) | Designs custom memory aids for hard-to-retain material: acronyms, acrostics, method-of-loci (memory palace)… |
+| [`learn_retrieval_drill_designer.md`](learner/memory-and-recall/learn_retrieval_drill_designer.md) | Designs a multi-round retrieval practice drill sequence: generates questions at increasing difficulty,… |
+| [`learn_spaced_review_scheduler.md`](learner/memory-and-recall/learn_spaced_review_scheduler.md) | Builds a personalized spaced repetition schedule from a concept or card list, assigning review intervals based… |
+| [`learn_study_guide_builder.md`](learner/memory-and-recall/learn_study_guide_builder.md) | Creates a comprehensive, exam-ready study guide for college students — with key concepts, relationships, common… |
+
+#### `learner/note-taking/` (4)
+
+| File | Purpose |
+|---|---|
+| [`learn_active_recall_from_notes.md`](learner/note-taking/learn_active_recall_from_notes.md) | Convert a student's notes, slides, or readings into active-recall practice questions at multiple cognitive… |
+| [`learn_cornell_notes_converter.md`](learner/note-taking/learn_cornell_notes_converter.md) | Coach a student to convert their raw or messy notes into Cornell format — main notes, cue column, and summary —… |
+| [`learn_lecture_to_study_guide.md`](learner/note-taking/learn_lecture_to_study_guide.md) | Converts raw lecture notes or transcripts into a structured, exam-ready study guide with learning objectives,… |
+| [`learn_textbook_chapter_breakdown.md`](learner/note-taking/learn_textbook_chapter_breakdown.md) | Systematically decomposes a textbook chapter into a hierarchical learning structure: stated objectives, concept… |
+
+#### `learner/reading/` (5)
+
+| File | Purpose |
+|---|---|
+| [`learn_annotation_coach.md`](learner/reading/learn_annotation_coach.md) | Guide a student through a productive close-annotation routine — margin notes, markings, and questions — through… |
+| [`learn_authors_craft_analyzer.md`](learner/reading/learn_authors_craft_analyzer.md) | Guide a student through analyzing how an author uses craft elements — structure, diction, imagery, tone, syntax… |
+| [`learn_book_report_scaffold.md`](learner/reading/learn_book_report_scaffold.md) | Guide a student through every section of a book report — summary, character analysis, theme, personal response… |
+| [`learn_chapter_summary_tool.md`](learner/reading/learn_chapter_summary_tool.md) | Coach a student to write their own chapter summary by asking what they understood, what they missed, and what… |
+| [`learn_vocabulary_in_context_decoder.md`](learner/reading/learn_vocabulary_in_context_decoder.md) | Coach a student to decode unfamiliar vocabulary from context clues, word parts, and inference — rather than… |
+
+#### `learner/research/` (4)
+
+| File | Purpose |
+|---|---|
+| [`learn_interview_question_critique.md`](learner/research/learn_interview_question_critique.md) | Critique a student's self-designed interview questions for a research project — testing for bias, leading… |
+| [`learn_keyword_search_strategy.md`](learner/research/learn_keyword_search_strategy.md) | Coach a student to develop an effective database search strategy — identifying keywords, Boolean operators,… |
+| [`learn_question_refinement.md`](learner/research/learn_question_refinement.md) | Guide a student to narrow and sharpen a research question — moving from too broad, to focused, to researchable… |
+| [`learn_source_synthesis_chart.md`](learner/research/learn_source_synthesis_chart.md) | Guide a student to synthesize 3–5 sources across common themes, agreements, and disagreements — building a… |
+
+#### `learner/self-assessment/` (8)
+
+| File | Purpose |
+|---|---|
+| [`learn_confidence_calibration.md`](learner/self-assessment/learn_confidence_calibration.md) | Runs a structured confidence calibration session: learners predict their performance per topic before being… |
+| [`learn_error_correction_cycle.md`](learner/self-assessment/learn_error_correction_cycle.md) | Transforms an error log into an active correction workflow: classifies error types (conceptual, procedural,… |
+| [`learn_knowledge_tester.md`](learner/self-assessment/learn_knowledge_tester.md) | Interactive quiz session that tests college students on course material with multi-format questions, immediate… |
+| [`learn_mistake_log_reviewer.md`](learner/self-assessment/learn_mistake_log_reviewer.md) | Review a student's accumulated mistake log — across tests, problem sets, or assignments — to surface patterns,… |
+| [`learn_quiz_to_mastery.md`](learner/self-assessment/learn_quiz_to_mastery.md) | An adaptive quiz loop that quizzes the learner, evaluates answers (requiring reasoning, not just selections),… |
+| [`learn_self_quiz_loop.md`](learner/self-assessment/learn_self_quiz_loop.md) | Runs a structured self-quizzing protocol across multiple concepts: predict → attempt → reveal → evaluate → log.… |
+| [`learn_weak_point_diagnostic.md`](learner/self-assessment/learn_weak_point_diagnostic.md) | A diagnostic conversation that probes beneath surface knowledge to find where understanding actually breaks… |
+| [`learn_wrong_answers_study_plan.md`](learner/self-assessment/learn_wrong_answers_study_plan.md) | Paste in your wrong answers from any quiz or practice test — the model analyzes what each error reveals about… |
+
+#### `learner/stuck-and-confused/` (8)
+
+| File | Purpose |
+|---|---|
+| [`learn_analogy_representation_switcher.md`](learner/stuck-and-confused/learn_analogy_representation_switcher.md) | Clarifies difficult concepts by generating and testing multiple analogies and representational forms. |
+| [`learn_clinical_differential_coach.md`](learner/stuck-and-confused/learn_clinical_differential_coach.md) | Guides learners through differential diagnosis prioritization, evidence weighing, and bias checks. |
+| [`learn_confusion_repair_step_level.md`](learner/stuck-and-confused/learn_confusion_repair_step_level.md) | Repairs a single confusing step in a solution or explanation, then reintegrates it into the full task. |
+| [`learn_history_evidence_claim_tutor.md`](learner/stuck-and-confused/learn_history_evidence_claim_tutor.md) | Teaches historical argumentation by mapping evidence to claims and testing causal reasoning quality. |
+| [`learn_metacognitive_debrief.md`](learner/stuck-and-confused/learn_metacognitive_debrief.md) | Post-study reflection prompt that calibrates perceived vs actual mastery and prescribes next study actions. |
+| [`learn_multi_representation_unpacking.md`](learner/stuck-and-confused/learn_multi_representation_unpacking.md) | Explains abstract concepts through verbal, symbolic, graphical, and real-world forms with translation checks. |
+| [`learn_socratic_error_probe_quant.md`](learner/stuck-and-confused/learn_socratic_error_probe_quant.md) | Socratic tutoring routine that diagnoses conceptual and procedural errors in math/science problem solving. |
+| [`learn_wrong_answer_forensics.md`](learner/stuck-and-confused/learn_wrong_answer_forensics.md) | Post-error tutoring workflow that reconstructs reasoning divergence and builds anti-error cues. |
+
+#### `learner/study-by-discipline/` (13)
+
+| File | Purpose |
+|---|---|
+| [`learn_history_causal_drill.md`](learner/study-by-discipline/learn_history_causal_drill.md) | Retrieval drill on historical causal chains and chronology: generates 'What caused X?', 'What followed X?', and… |
+| [`learn_humanities_argument_recall.md`](learner/study-by-discipline/learn_humanities_argument_recall.md) | Converts humanities readings into argument-structure recall drills: extracts claim → evidence → counterargument… |
+| [`learn_language_grammar_drill.md`](learner/study-by-discipline/learn_language_grammar_drill.md) | Pattern-based grammar internalization for language learners: generates transformation drills,… |
+| [`learn_language_vocab_acquisition.md`](learner/study-by-discipline/learn_language_vocab_acquisition.md) | Spaced vocabulary acquisition system for language learners: generates definition, example sentence, cognate… |
+| [`learn_law_issue_spotting.md`](learner/study-by-discipline/learn_law_issue_spotting.md) | Issue-spotting practice from fact patterns: generates hypothetical scenarios, prompts the learner to identify… |
+| [`learn_law_rule_application.md`](learner/study-by-discipline/learn_law_rule_application.md) | Black-letter law retrieval and application drill: prompts the learner to state the rule precisely, then applies… |
+| [`learn_math_drill_sequencer.md`](learner/study-by-discipline/learn_math_drill_sequencer.md) | Designs a spaced, interleaved math problem sequence from a skill list: maps prerequisite dependencies, assigns… |
+| [`learn_math_proof_practice.md`](learner/study-by-discipline/learn_math_proof_practice.md) | Generates proof-construction practice with step-level prompts: produces a claim to prove, guides through proof… |
+| [`learn_med_clinical_reasoning_drill.md`](learner/study-by-discipline/learn_med_clinical_reasoning_drill.md) | Case-based clinical reasoning practice for medical students: generates chief complaint vignettes at increasing… |
+| [`learn_med_pharmacology_recall.md`](learner/study-by-discipline/learn_med_pharmacology_recall.md) | Drug-class retrieval system for medical students: generates mechanism → indication → adverse effects →… |
+| [`learn_nursing_nclex_drill.md`](learner/study-by-discipline/learn_nursing_nclex_drill.md) | Generates NCLEX-style alternate-format questions: SATA (Select All That Apply), ordered response,… |
+| [`learn_science_mechanism_drill.md`](learner/study-by-discipline/learn_science_mechanism_drill.md) | Generates mechanism-focused retrieval drills for science courses (Physics, Chemistry, Biology): produces… |
+| [`learn_science_problem_interleaver.md`](learner/study-by-discipline/learn_science_problem_interleaver.md) | Generates interleaved problem sets for science courses that deliberately mix related topics to prevent false… |
+
+#### `learner/time-and-discussion/` (4)
+
+| File | Purpose |
+|---|---|
+| [`learn_assignment_tracker_planner.md`](learner/time-and-discussion/learn_assignment_tracker_planner.md) | Help a student build a personal assignment tracking system and map their current workload to their available… |
+| [`learn_big_project_decomposer.md`](learner/time-and-discussion/learn_big_project_decomposer.md) | Help a student break a large, multi-week school project into manageable tasks, milestones, and a working… |
+| [`learn_class_discussion_prep.md`](learner/time-and-discussion/learn_class_discussion_prep.md) | Help a student prepare specific contributions for class discussion — a claim to make, supporting evidence,… |
+| [`learn_office_hours_question_prep.md`](learner/time-and-discussion/learn_office_hours_question_prep.md) | Help a student prepare specific, productive questions for office hours — turning vague confusion into focused… |
+
+#### `learner/tutoring/` (9)
+
+| File | Purpose |
+|---|---|
+| [`learn_adaptive_input_output_loop.md`](learner/tutoring/learn_adaptive_input_output_loop.md) | Language-learning tutor that calibrates comprehensible input, elicits output, and recycles learner errors… |
+| [`learn_adaptive_mastery_loop.md`](learner/tutoring/learn_adaptive_mastery_loop.md) | Alternates concise clinical/science explanation with adaptive retrieval and reteaching until mastery threshold… |
+| [`learn_argument_writing_coach.md`](learner/tutoring/learn_argument_writing_coach.md) | Learner-facing writing tutor that strengthens claim-evidence-reasoning through guided questioning and revision… |
+| [`learn_concept_teacher.md`](learner/tutoring/learn_concept_teacher.md) | Interactive study session that teaches college students course material through scaffolded explanation,… |
+| [`learn_from_scratch_calibrated_builder.md`](learner/tutoring/learn_from_scratch_calibrated_builder.md) | Learner-facing tutoring workflow that starts from zero, calibrates prerequisites, and adaptively teaches in… |
+| [`learn_practice_problems.md`](learner/tutoring/learn_practice_problems.md) | Generates graduated practice problems with progressive hints and fully worked solutions for college students,… |
+| [`learn_socratic_tutor.md`](learner/tutoring/learn_socratic_tutor.md) | Guides college students to discover and understand course material through pure Socratic questioning — never… |
+| [`learn_stepwise_problem_coaching.md`](learner/tutoring/learn_stepwise_problem_coaching.md) | Problem-solving tutor that provides progressively stronger hints while preserving learner agency. |
+| [`learn_worked_example_fading_coach.md`](learner/tutoring/learn_worked_example_fading_coach.md) | Guides learners from full worked examples to independent problem-solving through staged scaffold fading. |
+
+#### `learner/writing/` (9)
+
+| File | Purpose |
+|---|---|
+| [`learn_academic_integrity_self_check.md`](learner/writing/learn_academic_integrity_self_check.md) | Help a student audit their own draft for paraphrasing problems and citation gaps — through guided… |
+| [`learn_annotated_bibliography_helper.md`](learner/writing/learn_annotated_bibliography_helper.md) | Coach a student through writing each annotated bibliography entry — summary, evaluation, and reflection —… |
+| [`learn_citation_helper.md`](learner/writing/learn_citation_helper.md) | Help a student format citations and in-text references in MLA, APA 7, or Chicago style — by walking them… |
+| [`learn_counterargument_generator.md`](learner/writing/learn_counterargument_generator.md) | Help a student surface, evaluate, and integrate the strongest counterarguments to their own thesis through… |
+| [`learn_outline_generator.md`](learner/writing/learn_outline_generator.md) | Help a student build their own essay outline through structured prompts and slot-fill protocols — no… |
+| [`learn_peer_review_template.md`](learner/writing/learn_peer_review_template.md) | Guide a student through giving structured, criterion-based peer feedback on a classmate's draft — without… |
+| [`learn_revision_socratic_coach.md`](learner/writing/learn_revision_socratic_coach.md) | Coach a student to revise their own draft through diagnostic questions and pointed observations — never… |
+| [`learn_source_credibility_evaluator.md`](learner/writing/learn_source_credibility_evaluator.md) | Walk a student through evaluating whether a source is credible enough to cite — using lateral reading, SIFT,… |
+| [`learn_thesis_with_critique.md`](learner/writing/learn_thesis_with_critique.md) | Coach a student to develop and sharpen their own thesis statement through diagnostic questions and structured… |
+
+#### `program/accreditation-review/` (5)
+
+| File | Purpose |
+|---|---|
+| [`program_accreditation_evidence_compiler.md`](program/accreditation-review/program_accreditation_evidence_compiler.md) | Compile response narratives from accreditation criteria + raw evidence inputs — translating unstructured… |
+| [`program_accreditation_self_study_he.md`](program/accreditation-review/program_accreditation_self_study_he.md) | Build a regional higher-ed accreditation self-study narrative — parameterized for HLC, MSCHE, SACSCOC, WSCUC,… |
+| [`program_accreditation_self_study_meded.md`](program/accreditation-review/program_accreditation_self_study_meded.md) | Build a med-ed program self-study — parameterized for LCME, ACGME, COCA, or CODA — translating program evidence… |
+| [`program_accreditation_self_study_programmatic.md`](program/accreditation-review/program_accreditation_self_study_programmatic.md) | Build a programmatic-accreditation self-study (ABET, AACSB, CAEP, CCNE, ACPE, NAEYC, NASAD, NASM, etc.) —… |
+| [`program_program_review_cycle_designer.md`](program/accreditation-review/program_program_review_cycle_designer.md) | Design a periodic program review cycle — timeline, artifacts, data sources, review-committee process, and… |
+
+#### `program/curriculum-design/` (18)
+
+| File | Purpose |
+|---|---|
+| [`program_backward_program_design.md`](program/curriculum-design/program_backward_program_design.md) | Design or substantially redesign a complete educational or training program using Understanding by Design at… |
+| [`program_blooms_taxonomy_calibrator.md`](program/curriculum-design/program_blooms_taxonomy_calibrator.md) | Audit a set of existing learning objectives, assessment items, or curriculum components against the Revised… |
+| [`program_competency_framework_designer.md`](program/curriculum-design/program_competency_framework_designer.md) | Build a competency framework for a program — domains, sub-competencies, observable performance indicators, and… |
+| [`program_competency_mapping_workforce.md`](program/curriculum-design/program_competency_mapping_workforce.md) | Map a workforce-training curriculum to occupational competency sources — O*NET KSAs and work activities,… |
+| [`program_course_design_he.md`](program/curriculum-design/program_course_design_he.md) | Design a higher-education course using Biggs' constructive alignment — intended learning outcomes (ILOs)… |
+| [`program_curriculum_map_builder.md`](program/curriculum-design/program_curriculum_map_builder.md) | Build an evidence-traceable program curriculum map linking courses or modules to program outcomes, external… |
+| [`program_horizontal_alignment_mapper.md`](program/curriculum-design/program_horizontal_alignment_mapper.md) | Map opportunities for cross-disciplinary alignment within a single grade or program level — coordinating timing… |
+| [`program_learning_objectives_writer_blooms.md`](program/curriculum-design/program_learning_objectives_writer_blooms.md) | Generate, revise, and validate observable learning objectives using ABCD construction, SMART quality criteria,… |
+| [`program_milestone_alignment_designer.md`](program/curriculum-design/program_milestone_alignment_designer.md) | Design a milestone or checkpoint architecture for a competency-based program — progression checkpoints,… |
+| [`program_progression_map_designer.md`](program/curriculum-design/program_progression_map_designer.md) | Design an evidence-based learning progression for a single concept, skill, or competency — sequencing… |
+| [`program_remediation_pathway_designer.md`](program/curriculum-design/program_remediation_pathway_designer.md) | Design a remediation pathway for learners who haven't reached an expected level — K-12 MTSS/RTI tiered… |
+| [`program_scope_sequence_he.md`](program/curriculum-design/program_scope_sequence_he.md) | Design a higher-education program's scope and sequence — courses by term across the credential length, with… |
+| [`program_scope_sequence_k12.md`](program/curriculum-design/program_scope_sequence_k12.md) | Design a K-12 multi-year scope-and-sequence for a subject area — grade-by-grade and unit-by-unit, with… |
+| [`program_scope_sequence_workforce.md`](program/curriculum-design/program_scope_sequence_workforce.md) | Design an evidence-anchored workforce, career and technical education (CTE), pre-apprenticeship, or Registered… |
+| [`program_standards_alignment_audit.md`](program/curriculum-design/program_standards_alignment_audit.md) | Audit an existing curriculum against a specified standards framework (CCSS, NGSS, state standards, AP, IB,… |
+| [`program_standards_crosswalk_generator.md`](program/curriculum-design/program_standards_crosswalk_generator.md) | Generate a crosswalk between two standards frameworks — e.g., state standards ↔ CCSS, CCSS ↔ AP, NGSS ↔ state… |
+| [`program_unit_design_advanced.md`](program/curriculum-design/program_unit_design_advanced.md) | Design a coherent, accessible instructional unit using Understanding by Design, Universal Design for Learning,… |
+| [`program_vertical_alignment_auditor.md`](program/curriculum-design/program_vertical_alignment_auditor.md) | Audit a subject's curriculum across grades or program levels for vertical alignment — confirming that learning… |
+
+#### `program/evaluation-analytics/` (5)
+
+| File | Purpose |
+|---|---|
+| [`program_continuous_improvement_cycle.md`](program/evaluation-analytics/program_continuous_improvement_cycle.md) | Design a Plan-Do-Study-Act (PDSA) or improvement-science cycle for an educational program — specifying the… |
+| [`program_early_warning_system_designer.md`](program/evaluation-analytics/program_early_warning_system_designer.md) | Design an early-warning system for learner risk — indicator selection, threshold setting, intervention… |
+| [`program_learning_analytics_interpreter.md`](program/evaluation-analytics/program_learning_analytics_interpreter.md) | Interpret learning-analytics data — LMS engagement, formative assessment results, completion/grade dashboards —… |
+| [`program_logic_model_designer.md`](program/evaluation-analytics/program_logic_model_designer.md) | Design a program logic model or theory of change — inputs / activities / outputs / short-mid-long outcomes —… |
+| [`program_program_evaluation_framework.md`](program/evaluation-analytics/program_program_evaluation_framework.md) | Design a program evaluation framework — parameterized by approach (Kirkpatrick four-level / CIPP / logic model… |
+
+#### `program/faculty-development/` (5)
+
+| File | Purpose |
+|---|---|
+| [`program_assessment_literacy_curriculum.md`](program/faculty-development/program_assessment_literacy_curriculum.md) | Design a faculty development curriculum that builds assessment literacy — assessment purposes, item writing,… |
+| [`program_faculty_development_plan_designer.md`](program/faculty-development/program_faculty_development_plan_designer.md) | Design a multi-semester faculty development plan — needs assessment, topic sequence, modality mix, expected… |
+| [`program_faculty_onboarding_program.md`](program/faculty-development/program_faculty_onboarding_program.md) | Design a new-faculty onboarding program — first-year milestones, mentor structure, required and recommended… |
+| [`program_instructional_coaching_program.md`](program/faculty-development/program_instructional_coaching_program.md) | Design an instructional coaching program — coaching model, cycle, observation tools, coach training, fidelity… |
+| [`program_professional_learning_community_designer.md`](program/faculty-development/program_professional_learning_community_designer.md) | Design a Professional Learning Community structure — cycle, norms, protocols, artifacts, and accountability —… |
+
+#### `program/outcomes-assessment/` (8)
+
+| File | Purpose |
+|---|---|
+| [`program_assessment_blueprint_builder.md`](program/outcomes-assessment/program_assessment_blueprint_builder.md) | Build an assessment blueprint (test specification table) for a course or program assessment: objectives ×… |
+| [`program_capstone_assessment_designer.md`](program/outcomes-assessment/program_capstone_assessment_designer.md) | Design a culminating capstone assessment — research project, design challenge, portfolio defense, integrated… |
+| [`program_competency_assessment_evidence_design.md`](program/outcomes-assessment/program_competency_assessment_evidence_design.md) | Design a multi-source, multi-occasion evidence plan for competency-based assessment — direct observations, work… |
+| [`program_outcomes_to_assessment_mapper.md`](program/outcomes-assessment/program_outcomes_to_assessment_mapper.md) | Map every program outcome (PSLO / competency / graduate-profile element) to the assessment evidence that… |
+| [`program_program_gap_analysis.md`](program/outcomes-assessment/program_program_gap_analysis.md) | Diagnose gaps between what a program currently delivers and what is required (by standards, accreditor,… |
+| [`program_program_outcomes_framework.md`](program/outcomes-assessment/program_program_outcomes_framework.md) | Design a coherent program-outcomes architecture — Institutional Student Learning Outcomes, Program Student… |
+| [`program_rubric_alignment_to_outcomes.md`](program/outcomes-assessment/program_rubric_alignment_to_outcomes.md) | Audit a rubric for alignment with the learning outcomes it is supposed to assess — checking that every… |
+| [`program_signature_assignment_designer.md`](program/outcomes-assessment/program_signature_assignment_designer.md) | Design a signature assignment — an embedded course-level assessment that produces program-outcome evidence —… |

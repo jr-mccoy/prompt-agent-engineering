@@ -118,6 +118,8 @@ STANDARD_PREFIXES = {
     # Other domain prefixes
     'image', 'presentation', 'prompt', 'decisioning', 'advertising',
     'writing', 'product', 'design', 'learning', 'medicine', 'education',
+    # domain-education-teaching audience tracks: instructor/ program/ learner/
+    'teaching', 'program', 'learn',
     'work_better', 'board', 'nano_banana', 'nursing', 'healthcare',
     # Agentic resource types
     'skill', 'agent', 'command', 'persona',

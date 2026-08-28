@@ -24,8 +24,8 @@ related_prompts:
   - meded_residency_curriculum_mapper.md
   - meded_epa_implementation_designer.md
   - meded_program_competency_framework_acgme.md
-  - ../../../../domain-education-teaching/curriculum-design/teaching_competency_framework_designer.md
-  - ../../../../domain-education-teaching/program-outcomes-assessment/teaching_competency_assessment_evidence_design.md
+  - ../../../../domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
+  - ../../../../domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
 ---
 
 # CBME Implementation Roadmap (Program-Level)
