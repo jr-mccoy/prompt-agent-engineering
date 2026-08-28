@@ -333,7 +333,7 @@ For healthcare prompts to be valuable, they must:
 
 #### Medical Education / Health Professions Education (New — 2026-05)
 
-> **For health professions educators, faculty, and curriculum designers.** Full routing guide, competency frameworks, and technique recommendations: [`prompts/medical-education/README.md`](./prompts/medical-education/README.md)
+> **For health professions educators, faculty, and curriculum designers.** Full routing guide, competency frameworks, and technique recommendations: [`domain-medical-education/README.md`](../domain-medical-education/README.md)
 
 **Case & Scenario Design (7 prompts)**
 | Prompt | Purpose |

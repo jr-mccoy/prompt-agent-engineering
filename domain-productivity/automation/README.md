@@ -26,4 +26,4 @@ Each prompt includes:
 ## Related Resources
 
 - [Productivity Domain](../README.md) - Full domain index
-- [Business Strategy - Organization](../../domain-business-strategy/organization/) - Meeting notes and organization prompts
+- [Bottlenecks](../bottlenecks/) - Content audit and knowledge-base gap analysis

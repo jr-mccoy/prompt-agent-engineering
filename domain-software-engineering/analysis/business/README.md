@@ -93,10 +93,10 @@ Strategic business analysis frameworks and tools for market analysis, competitiv
 
 ## Related Categories
 
-- **[Research](../research/)** - Competitive and market research
-- **[Professional Communication](../../domain-product-management/)** - Product and decision-making
-- **[Validation](../../domain-productivity/validation/)** - Decision validation prompts
-- **[Engineering Workflows](../../domain-engineering-workflows/)** - Project management and workflows
+- **[Research](../../../domain-business-strategy/research/)** - Competitive and market research
+- **[Product Management](../../../domain-product-management/)** - Product and decision-making
+- **[Validation](../../../domain-productivity/validation/)** - Decision validation prompts
+- **[Engineering Workflows](../../../domain-engineering-workflows/)** - Project management and workflows
 
 ---
 

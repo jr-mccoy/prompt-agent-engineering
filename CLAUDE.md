@@ -210,15 +210,92 @@ prompting-guides/
 ├── domain-finance/                 # Finance & economics field guide (promoted from domain-specialized-fields/finance)
 ├── domain-psychology/              # Psychology, therapy & behavioral health (~99; promoted from domain-specialized-fields/psychology)
 │
+├── domain-medical-education/       # Health-professions education (213): educator-* tracks (case writing, assessment items,
+│                                   # rubrics/WBA, simulation, curriculum, remediation) + learner-* tracks (clinical reasoning,
+│                                   # foundational sciences, OSCE skills, clinical rotation, boards, procedures, study systems)
+│                                   # + profession-specific/ (nursing, pharmacy, EMS, dental, PA, allied).
+│                                   # Teaches and assesses clinicians; real-patient questions → domain-healthcare-clinical/
+├── domain-voice-conversational-ui/ # Voice & conversational UI (28): voice design, chatbot design, dialog architecture,
+│                                   # NLU training, voice UX, multimodal, platform-specific, analytics
+│
 ├── techniques/                     # Prompt engineering reference
 │   ├── MASTER_TECHNIQUE_INDEX.md
 │   └── USE_CASE_LOOKUP.md
 │
-└── authoring/                      # Resource creation guides
-    ├── skill-patterns/             # Skill authoring system
-    ├── agent-patterns/             # Agent authoring patterns
-    └── command-patterns/           # Command authoring patterns
+├── authoring/                      # Resource creation guides
+│   ├── skill-patterns/             # Skill authoring system
+│   ├── agent-patterns/             # Agent authoring patterns
+│   ├── command-patterns/           # Command authoring patterns
+│   └── system-patterns/            # Agentic-system authoring manual
+│
+├── portable-prompt-system/         # Self-contained, drop-in export of the technique library + authoring guides.
+│                                   # Copy the folder into any project to author prompts at this repo's quality.
+│                                   # Vendors copies of techniques/ and authoring/ — registered in meta/VENDORED.tsv
+│
+├── continuity-kit/                 # Project Continuity Memory: a repo-local, human-readable ledger of durable project
+│                                   # state (decisions, failures, open threads) so agents and humans resume across
+│                                   # sessions. Installable package with its own CLI and test suite.
+│
+├── scripts/                        # Index generation, naming/link validation, reorg tooling, vendored-copy drift check
+│
+└── meta/                           # REORG_MAP.tsv (every move and deletion) + VENDORED.tsv (canonical → copy)
 ```
+
+---
+
+## Which domain does this belong in?
+
+Most mis-filing in this repository has come from one cause: several domains
+carving the same territory on different axes. That is now settled. **Subject
+decides first; audience decides among the work domains.**
+
+### 1. Does the prompt have a subject-matter home?
+
+If the prompt's *input or object* belongs to a discipline, it goes there
+regardless of who runs it:
+
+| The prompt's object is… | Domain |
+|---|---|
+| A codebase, repo, API, or app build spec | `domain-software-engineering/` (business frameworks applied to code live in `analysis/business/`) |
+| Money, tax, valuation, markets | `domain-finance/` |
+| A contract, entity, dispute, or filing | `domain-legal/` |
+| A patient, or a clinician in training | `domain-healthcare-clinical/` / `domain-medical-education/` |
+| A model, dataset, agent, or LLM system | `domain-AI-ML/` |
+| A manuscript, letter, or piece of prose | `domain-professional-writing/` and the writing domains |
+
+### 2. Otherwise: whose work is it, at what scope?
+
+The five work domains sit on one axis. Pick by who holds the prompt:
+
+| Scope | Domain | The question it answers |
+|---|---|---|
+| **Self** | `domain-personal-development/` | Who am I becoming? Identity, values, habits, goals, resilience, relationships, career |
+| **Individual execution** | `domain-productivity/` | How do I get my own work done? Daily planning, deep work, reviews, operating cadence, automation |
+| **Team delivery** | `domain-engineering-workflows/` | How does my team ship? Sprints, incidents, definition-of-done, AI adoption |
+| **Product** | `domain-product-management/` | What should we build, and is the spec good enough? |
+| **Org / company** | `domain-business-strategy/` | What should the company do? Strategy, positioning, go-to-market |
+
+**Worked examples of the axis doing real work:**
+
+- A weekly review exists in several domains and that is correct — they review
+  different things. `domain-productivity/reviews/` reviews your *systems*;
+  `domain-personal-development/prompts/agency/` reviews your *direction*;
+  `domain-productivity/operating-cadence/` closes your *week's state*. When you
+  add another, say in its description what it is distinct from.
+- A prompt that takes a codebase and produces a SWOT is **software engineering**,
+  not business strategy — the input decides.
+- A "chief of staff" cadence for one person is **individual execution**, not org
+  strategy — the scope decides.
+- Sales, marketing, and customer-success workflows are **org**, not engineering,
+  even when an engineering team wrote them.
+
+### 3. Before adding a prompt, check it does not already exist
+
+Search `PROMPT_INDEX.json` by keyword first. If a near-neighbour exists, either
+extend it or state in your new prompt's `## When to Use` what it is **distinct
+from** — the pattern `domain-productivity/reviews/` uses. Two prompts doing the
+same job for the same reader in two domains is the defect this structure exists
+to prevent.
 
 ---
 
@@ -538,13 +615,15 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Scan for cascade effects of this capability" → `visualplan_cascade_effects_scan.md`
 
 ### Business & Strategy
-- **Business analysis** → `domain-business-strategy/analysis/` (~77 prompts)
-  - Example: "SWOT analysis" → `swot_analysis.md`
-  - Example: "Business model" → `business_model_canvas_analysis.md`
-  - Example: "OKR analysis" → `okr_analysis.md`
+- **Company strategy** → `domain-business-strategy/` (64 prompts across ai-strategy, ambition-leverage, go-to-market, research, startup)
+- **Business frameworks applied to a codebase** → `domain-software-engineering/analysis/business/` (20 prompts)
+  - These take a *repository* as input and infer business meaning from code; every one is titled "… for Codebase".
+  - Example: "SWOT analysis of this codebase" → `swot_analysis.md`
+  - Example: "Business model canvas from the code" → `business_model_canvas_analysis.md`
+  - Example: "Infer OKRs from what the code does" → `okr_analysis.md`
 
 ### Chief-of-Staff / Personal Operating Cadence
-- **Self-directed exec-level operating rhythm** → `domain-business-strategy/chief-of-staff/` (9 prompts)
+- **Self-directed exec-level operating rhythm** → `domain-productivity/operating-cadence/` (11 prompts)
   - Example: "Clarify a fuzzy goal into actionable intent" → `cos_clarify_fuzzy_goals.md`
   - Example: "Parse a brain dump into tasks / decisions / worries / waiting-fors" → `cos_brain_dump_to_tasks.md`
   - Example: "Spec a delegation brief for a sub-agent" → `cos_specify_subagent_task.md`
@@ -570,19 +649,22 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Compress insight-to-action lead time in a workflow" → `ambition_insight_to_action_workflow.md`
 
 ### Browser / Workflow Automation Readiness
-- **Per-user or per-team browser-automation operating cycle** → `domain-business-strategy/browser-automation/` (4 prompts)
+- **Per-user or per-team browser-automation operating cycle** → `domain-productivity/automation/` (4 `browserauto_*` prompts)
   - Example: "Weekly automation audit of repetitive browser tasks" → `browserauto_weekly_audit.md`
   - Example: "Design a recording blueprint before opening a recorder" → `browserauto_recording_blueprint.md`
   - Example: "Design a multi-tab intelligence-gathering operation" → `browserauto_multi_tab_intel.md`
   - Example: "Pre-flight safety check before activating an automation" → `browserauto_safety_check.md`
 
 ### Task Management
-- **Task prioritization** → `domain-engineering-workflows/tasks/` (~6 prompts)
-  - Example: "Design task sorting" → `task_sorting_algorithm_designer.md`
+- **Prioritizing your own work** → `domain-productivity/daily-planning/` (`daily_priority_triage.md`, `daily_task_list_builder.md`) or `domain-productivity/workplace/work_deadline_juggler.md`
+- **Choosing a prioritization framework** (RICE / ICE / WSJF / MoSCoW / Kano) → `domain-decision-making/decisioning_prioritization_framework_selector.md`
+- **Building a task-sorting *feature*** → `domain-software-engineering/analysis/feature-design/` (3 prompts)
+  - Example: "Design the sorting algorithm for my to-do app" → `task_sorting_algorithm_designer.md`
 
 ### Improvement
-- **General code improvement** → `domain-engineering-workflows/improvement/` (~3 prompts)
+- **General code improvement** → `domain-software-engineering/improvement/` (4 prompts)
   - Example: "Refactor this" → `improvement_refactoring.md`
+  - Example: "Audit this repo end to end" → `improvement_repo_audit_master_prompt.md`
 
 ### Validation & Self-Check
 - **Decision validation** → `domain-productivity/validation/` (~35 prompts)
@@ -603,7 +685,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Project status summary" → `domain-engineering-workflows/workflows/engineering_project_status_summary.md`
 
 ### App Prototyping
-- **Build apps** → `domain-productivity/prototyping/` (~6 prompts)
+- **Build apps** → `domain-software-engineering/prototyping/` (6 prompts)
   - Example: "Build a CRM" → `prototyping_personal_crm.md`
   - Example: "Create landing page" → `prototyping_landing_page.md`
   - Example: "Event registration" → `prototyping_event_registration.md`
@@ -1934,7 +2016,8 @@ Examples:
 | "Game economy" | `domain-game-development/economy/` |
 | "Teach me this" | `domain-learning-coding/` |
 | "Plan project/sprint" | `domain-engineering-workflows/workflows/` |
-| "Business analysis" | `domain-business-strategy/analysis/` |
+| "Business analysis of a codebase" | `domain-software-engineering/analysis/business/` |
+| "Company strategy / positioning / go-to-market" | `domain-business-strategy/` |
 | "Create PRD" | `domain-product-management/prompts/` |
 | "Make decision" | `domain-decision-making/` |
 | "Multi-agent pipeline" | `domain-agentic-resources/personas/` |
@@ -2236,7 +2319,7 @@ Examples:
 | "Check my decision" | `domain-productivity/validation/` |
 | "Research competitors" | `domain-business-strategy/research/` |
 | "Organize my notes" | `domain-business-strategy/organization/` |
-| "Build an app" | `domain-productivity/prototyping/` |
+| "Build an app" | `domain-software-engineering/prototyping/` |
 | "Automate workflow" | `domain-productivity/automation/` |
 | **Deep Work & Focus** | **Use `domain-productivity/deep-work/` — see README for full map** |
 | "Estimate my focus parameters" | `domain-productivity/deep-work/deepwork_focus_parameters_estimator.md` |
@@ -2549,6 +2632,10 @@ Examples:
 | "Flag transactions for divorce/custody review" | `financial-records/divorce-financial-flagger/` |
 | "Run whole statement pipeline" | `/process-financials` (agent `financial-records-orchestrator`) |
 | "Psychology / therapy / behavioral health" | `domain-psychology/` (see [PROMPT_INDEX.md](domain-psychology/PROMPT_INDEX.md)) |
+| **Medical / health-professions education (teach or study)** | **`domain-medical-education/` — see [README](domain-medical-education/README.md). `educator-*` to teach and assess; `learner-*` to study. Real-patient questions → `domain-healthcare-clinical/`** |
+| "Design a voice assistant, chatbot, or dialog system" | `domain-voice-conversational-ui/` — voice design, chatbot design, dialog architecture, NLU training, voice UX, multimodal, analytics |
+| "Give my project memory that survives across sessions" | `continuity-kit/` — a repo-local ledger of decisions, failures, and open threads (see also `domain-AI-ML/agentic-ai-systems/aiagent_project_continuity_memory_design.md` for the design decision) |
+| "Drop this prompt system into another project" | `portable-prompt-system/` — self-contained export of the technique library and authoring guides |
 | **Discipleship & mentorship (one-to-one formation, 73 prompts, TRADITION-NEUTRAL)** | **Use `domain-discipleship/` — see [README](domain-discipleship/README.md). Formation is never scored; all Scripture work routes to `domain-biblical-studies/`.** |
 | "Build me a full discipleship curriculum" | `domain-discipleship/curriculum-architecture/discipleship_curriculum_architecture.md` |
 | "What should growth actually look like at each stage?" | `domain-discipleship/curriculum-architecture/discipleship_formation_outcomes_framework.md` |

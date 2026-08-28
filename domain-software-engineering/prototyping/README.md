@@ -26,5 +26,5 @@ Each prompt includes:
 ## Related Resources
 
 - [Productivity Domain](../README.md) - Full domain index
-- [Automation](../automation/) - Workflow automation prompts to enhance prototypes
+- [Automation](../../domain-productivity/automation/) - Workflow automation prompts to enhance prototypes
 - [Software Engineering](../../domain-software-engineering/) - Code quality and architecture prompts
