@@ -172,7 +172,7 @@ prompting-guides/
 │
 ├── domain-creative-writing/        # Adult/mature creative writing across 7 subdirs (fiction, craft-tools, genre-workshops, creative-nonfiction, poetry, script-stage, publishing-career): story structure, scene/POV/pacing, character/voice/dialogue, show-don't-tell, description, theme, openings/endings, revision, beta-reader synthesis, genre + mystery/speculative deep-dives, memoir + narrative nonfiction, poetry/imagery, screenplay, query/synopsis/pitch (27). Adult only — kids → domain-childrens-writing; business prose → domain-professional-writing
 ├── domain-childrens-writing/       # Authoring kid-friendly material across 5 subdirs (fiction-workshops, nonfiction-workshops, craft-tools, representation-collaboration, publishing-business): board→picture→early/chapter→middle-grade→YA-crossover fiction, verse novel, graphic novel, narrative + STEM nonfiction, craft tools (openings, dialogue, character, revision, reading-level, rhythm, sensitive topics), representation/illustrator, query/synopsis/pitch (22)
-├── domain-education-teaching/      # Lesson plans, worksheets, assessments
+├── domain-education-teaching/      # 267 prompts in 3 audience tracks — instructor/ (104: lesson planning, explanation craft, response cycle, assessment items/design/analysis, grading, reporting, student support, classroom ops, ed-tech, higher-ed & corporate, subject pedagogy), program/ (41: curriculum design, outcomes assessment, accreditation, faculty development, evaluation analytics), learner/ (122: note-taking, memory & recall, self-assessment, exam prep, study by discipline, tutoring, stuck-and-confused, writing, reading, math/science, language, research, time & discussion, adult learners, chained guides)
 ├── domain-parenting/               # Parenting prompts ages 4-8, ADHD/autism/strong-willed adaptations (~18)
 ├── domain-legal/                   # Practitioner legal prompts: research, litigation, discovery, depositions,
 │                                   # contracts/transactional, M&A, employment, IP, client intake, in-house/legal-ops (~67);
@@ -884,9 +884,27 @@ When users need **help with tasks** (not asking for new prompts), map their requ
 
 When users need help with **non-coding tasks**, first determine the domain:
 
-### Education & Teaching
-- **Lesson plans, worksheets, assessments** → `domain-education-teaching/`
-  - **Domain guide:** [domain-education-teaching/](domain-education-teaching/)
+### Education & Teaching (267 prompts, 3 audience tracks)
+**Route by who is holding the prompt**, then by subdirectory — see [`domain-education-teaching/README.md`](domain-education-teaching/README.md). If it produces something you hand to students it is `instructor/`; something you hand to a committee, `program/`; something only you will use to learn, `learner/`. One prefix per track (`teaching_`, `program_`, `learn_`); the subdirectory carries the finer signal.
+
+- **`instructor/` (104)** — teacher, lecturer, corporate trainer. `lesson-planning/` (6), `explanation-craft/` (9), `response-cycle/` (5), `assessment-items/` (8), `assessment-design/` (9), `assessment-analysis/` (7), `grading-feedback/` (8), `reporting-communication/` (2), `student-support/` (8), `classroom-ops/` (3), `ed-tech/` (6), `higher-ed-corporate/` (11), `subject-pedagogy/` (22, split `ela/` `math/` `science/` `social-studies/` `world-languages/`)
+  - Example: "I need a lesson for Tuesday" → `instructor/lesson-planning/teaching_lesson_plan_generator.md`
+  - Example: "Half the class didn't get it" → `instructor/response-cycle/teaching_misconception_diagnoser.md` → `teaching_reteach_intervention_planner.md`
+  - Example: "Explain this so a 7-year-old gets it" → `instructor/explanation-craft/teaching_concept_explorer_kids.md`
+  - Example: "Quiz with real distractors" → `instructor/assessment-items/teaching_mc_item_writer_with_distractors.md`
+  - Example: "90 essays to grade by Friday" → `instructor/grading-feedback/teaching_speed_grading_triage.md`
+  - Example: "IEP goals that survive review" → `instructor/student-support/teaching_iep_goal_writer.md`
+- **`program/` (41)** — dean, curriculum director, accreditation liaison. See the section below.
+- **`learner/` (122)** — the student, studying alone. Socratic stance throughout: these coach and refuse to produce submittable work. `note-taking/` (4), `memory-and-recall/` (8), `self-assessment/` (8), `exam-prep/` (8), `study-by-discipline/` (13), `tutoring/` (9), `stuck-and-confused/` (8), `writing/` (9), `reading/` (5), `math-science/` (7), `language/` (5), `research/` (4), `time-and-discussion/` (4), `adult-learner/` (9), `guides/` (21 chained workflows)
+  - Example: "Teach me this, don't just tell me" → `learner/tutoring/learn_socratic_tutor.md`
+  - Example: "I got it wrong and don't know why" → `learner/stuck-and-confused/learn_wrong_answer_forensics.md`
+  - Example: "I read it four times and remember nothing" → `learner/memory-and-recall/learn_retrieval_drill_designer.md`
+  - Example: "Finals are in a week" → `learner/exam-prep/learn_finals_week_plan.md`
+  - Example: "Help me write this essay without writing it for me" → `learner/writing/learn_thesis_with_critique.md`
+  - Example: "I'm 38 and going back to school" → `learner/adult-learner/learn_cold_start_return_to_school.md`
+  - Example: "Just tell me what to run, in what order" → `learner/guides/` (pick audience, then workflow)
+- **Boundary:** self-directed skill acquisition with no institution → `domain-learning/`; programming → `domain-learning-coding/`; health-professions education incl. its own learner track → `domain-healthcare-clinical/prompts/medical-education/`; teaching research methods → `domain-science/teaching-research-methods/`; the parent's side of school → `domain-parenting/`.
+  - **Domain guide:** [domain-education-teaching/README.md](domain-education-teaching/README.md) · **Craft reference & templates:** [field_guide.md](domain-education-teaching/field_guide.md) · **Roadmap:** [EXPANSION_ROADMAP.md](domain-education-teaching/EXPANSION_ROADMAP.md)
 
 ### Curriculum Design & Program-Level Educational Planning (2026-05-15)
 - **Program-level curriculum, standards alignment, outcomes, accreditation, faculty development, program evaluation** → `domain-education-teaching/` subdirectories (45 new prompts):
@@ -2309,7 +2327,35 @@ Examples:
 | "Design an evaluation set for correctness" | `domain-prompt-engineering/evaluation/correctness_eval_design_prompt.md` |
 | "Production monitoring for output correctness drift" | `domain-prompt-engineering/evaluation/correctness_production_monitoring_setup.md` |
 | **Non-Coding Prompts** | **Use NON_CODING_QUICK_START.md** |
-| "Lesson plan/worksheet" | `domain-education-teaching/` |
+| **Education & teaching (267 prompts)** | **Route by audience: `domain-education-teaching/instructor/` (teaching a class), `program/` (running a programme), `learner/` (studying yourself) — see [README](domain-education-teaching/README.md)** |
+| "Lesson plan / unit / PBL / sub plan" | `domain-education-teaching/instructor/lesson-planning/` |
+| "Explain this so a kid / teen / adult gets it" | `domain-education-teaching/instructor/explanation-craft/` |
+| "Half the class didn't get it / reteach" | `domain-education-teaching/instructor/response-cycle/` |
+| "Write quiz items / distractors / DOK / Bloom's stems" | `domain-education-teaching/instructor/assessment-items/` |
+| "Test blueprint / performance task / rubric / portfolio" | `domain-education-teaching/instructor/assessment-design/` |
+| "Item analysis / alignment audit / standards-based grading" | `domain-education-teaching/instructor/assessment-analysis/` |
+| "Grade a stack of essays / write feedback" | `domain-education-teaching/instructor/grading-feedback/` |
+| "Newsletter / conference notes / report card comments" | `domain-education-teaching/instructor/reporting-communication/` |
+| "IEP / 504 / behaviour plan / UDL / ELL / advising" | `domain-education-teaching/instructor/student-support/` |
+| "Classroom norms / routines / restorative conversation" | `domain-education-teaching/instructor/classroom-ops/` |
+| "Slide deck / video script / choice board / LMS shell / AI literacy" | `domain-education-teaching/instructor/ed-tech/` |
+| "Syllabus / online course conversion / microlearning / onboarding / compliance training" | `domain-education-teaching/instructor/higher-ed-corporate/` |
+| "ELA / math / science / social studies / world language teaching moves" | `domain-education-teaching/instructor/subject-pedagogy/` |
+| "Turn a lecture or textbook into study material" | `domain-education-teaching/learner/note-taking/` |
+| "Retrieval practice / spaced review / flashcards / Feynman / mnemonics" | `domain-education-teaching/learner/memory-and-recall/` |
+| "Self-quiz / confidence calibration / mistake log" | `domain-education-teaching/learner/self-assessment/` |
+| "Practice test / finals week / test-day strategy / cert drill" | `domain-education-teaching/learner/exam-prep/` |
+| "Drill maths proofs / pharmacology / legal issue-spotting / NCLEX" | `domain-education-teaching/learner/study-by-discipline/` |
+| "Teach me this (Socratic, no answers given)" | `domain-education-teaching/learner/tutoring/` |
+| "I'm stuck / I got it wrong and don't know why" | `domain-education-teaching/learner/stuck-and-confused/` |
+| "Coach my essay without writing it / thesis / citations / integrity check" | `domain-education-teaching/learner/writing/` |
+| "Annotate / summarize / analyse assigned reading" | `domain-education-teaching/learner/reading/` |
+| "Word problems / my own error analysis / lab report / data interpretation" | `domain-education-teaching/learner/math-science/` |
+| "L2 conversation / grammar / idiom / pronunciation" | `domain-education-teaching/learner/language/` |
+| "Refine a research question / search strategy / synthesize sources" | `domain-education-teaching/learner/research/` |
+| "Assignment tracking / big project / office hours / discussion prep" | `domain-education-teaching/learner/time-and-discussion/` |
+| "Going back to school as an adult / prior learning / writing rust" | `domain-education-teaching/learner/adult-learner/` |
+| "Just tell me what to run, in what order (chained workflows)" | `domain-education-teaching/learner/guides/` |
 | **Program-level curriculum, standards, accreditation, faculty dev, program evaluation** | **See `domain-education-teaching/program/curriculum-design/` and sibling subdirectories** |
 | "Curriculum map (course-outcome-standard-assessment)" | `domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md` |
 | "K-12 multi-year scope & sequence" | `domain-education-teaching/program/curriculum-design/program_scope_sequence_k12.md` |

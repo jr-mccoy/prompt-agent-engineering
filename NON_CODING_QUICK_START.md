@@ -560,7 +560,7 @@ Assign confidence levels to claims and recommendations:
 
 | Domain | Guide | Key Prompts | Key Considerations |
 |--------|-------|-------------|-------------------|
-| **Education/Teaching** | [domain-education-teaching/](domain-education-teaching/) | Worksheet generators, lesson plans, assessments | Grade level, learning objectives, accessibility |
+| **Education/Teaching** | [domain-education-teaching/](domain-education-teaching/) | 3 audience tracks — `instructor/` (lesson plans, assessments, grading, student support), `program/` (curriculum, outcomes, accreditation), `learner/` (study skills, tutoring, exam prep) | Route by who holds the prompt first. Grade level, learning objectives, accessibility. `learner/` prompts coach Socratically and never produce submittable work |
 | **Creative Writing** | [domain-creative-writing/](domain-creative-writing/) | Story builders, character development, narrative arcs | Genre, tone, audience, length |
 | **Healthcare/Clinical** | [domain-healthcare-clinical/](domain-healthcare-clinical/) | Clinical decision support, patient education | Safety, evidence, uncertainty, shared decision-making |
 | **Research/Academic** | [domain-research-academic/](domain-research-academic/) | Literature review, methodology, analysis | Sources, rigor, bias awareness |

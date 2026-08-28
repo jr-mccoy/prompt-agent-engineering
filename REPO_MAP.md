@@ -142,8 +142,17 @@ domain-personal-development/     (~43 prompts)
 domain-learning-coding/          (~17 prompts)
 └── [coding education, tutorials, exercises]
 
-domain-education-teaching/       (Guide)
-└── [lesson plans, worksheets, assessments]
+domain-education-teaching/       (Guide) — 267 prompts, routed by audience
+├── instructor/  (104) [teaching a class: lesson planning, explanation craft, response
+│                       cycle, assessment items/design/analysis, grading & feedback,
+│                       family reporting, student support, classroom ops, ed-tech,
+│                       higher-ed & corporate, subject pedagogy]
+├── program/      (41) [running a programme: curriculum design, outcomes assessment,
+│                       accreditation review, faculty development, evaluation analytics]
+└── learner/     (122) [studying yourself, Socratic stance: note-taking, memory & recall,
+                        self-assessment, exam prep, study by discipline, tutoring,
+                        stuck-and-confused, writing, reading, math/science, language,
+                        research, time & discussion, adult learners, chained guides]
 
 domain-creative-writing/         (Guide)
 └── [fiction, essays, narrative, poetry]
