@@ -17,7 +17,7 @@ tags:
   - scoping
 updated: "2026-05-29"
 related_prompts:
-  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_an_ml_problem.md
+  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_ml_problem.md
   - domain-AI-ML/problem-framing-scoping/mlframe_success_metric_selection.md
   - domain-AI-ML/problem-framing-scoping/mlframe_ml_use_case_canvas.md
 ---
@@ -32,7 +32,7 @@ related_prompts:
 - Before designing labels, splits, or metrics — all of which depend on the task formulation.
 
 **When NOT to Use:**
-- The decision to use ML is unsettled (use `mlframe_is_this_an_ml_problem.md`).
+- The decision to use ML is unsettled (use `mlframe_is_this_ml_problem.md`).
 - The task is already precisely formulated and you need a metric (use `mlframe_success_metric_selection.md`).
 
 ## Inputs / Context
@@ -147,6 +147,6 @@ Predicted using data available at end of day D; label measured over D+1..D+30.
 - **QA-12 (False Positives Identification):** guards against undefined targets and wrong task types.
 
 **Related Prompts:**
-- `mlframe_is_this_an_ml_problem.md` — confirm ML before formulating the task.
+- `mlframe_is_this_ml_problem.md` — confirm ML before formulating the task.
 - `mlframe_success_metric_selection.md` — the formulation sets which metrics are valid.
 - `mlframe_ml_use_case_canvas.md` — the prediction cell that this prompt makes precise.

@@ -24,7 +24,7 @@ tags:
 updated: "2026-06-08"
 related_prompts:
   - domain-psychology/populations/severe-mental-illness/psychology_smi_recovery_oriented_treatment_plan.md
-  - domain-psychology/populations/severe-mental-illness/psychology_assertive_community_treatment_engagement_plan.md
+  - domain-psychology/populations/severe-mental-illness/psychology_assertive_community_engagement_plan.md
   - domain-psychology/risk-crisis/psychology_civil_commitment_narrative.md
   - domain-psychology/documentation/psychology_intake_assessment_note.md
 ---

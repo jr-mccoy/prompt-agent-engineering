@@ -20,7 +20,7 @@ tags:
 updated: "2026-06-26"
 related_prompts:
   - domain-biblical-studies/exegesis-interpretation/biblical_word_study_original_language.md
-  - domain-biblical-studies/original-languages/biblical_language_semantic_domains_componential_analysis.md
+  - domain-biblical-studies/original-languages/biblical_language_semantic_domains_analysis.md
   - domain-biblical-studies/original-languages/biblical_language_greek_hebrew_vocabulary_builder.md
   - domain-biblical-studies/original-languages/biblical_language_greek_syntax_analysis.md
   - domain-biblical-studies/exegesis-interpretation/biblical_historical_cultural_context.md
@@ -38,7 +38,7 @@ related_prompts:
 - You are weighing how documentary parallels illuminate a term's everyday sense, and want the method's controls and limits.
 
 **When NOT to use:**
-- You want the word's senses/usage within the NT/LXX corpus — start with `biblical_word_study_original_language.md` or `biblical_language_semantic_domains_componential_analysis.md`.
+- You want the word's senses/usage within the NT/LXX corpus — start with `biblical_word_study_original_language.md` or `biblical_language_semantic_domains_analysis.md`.
 - You are building a frequency-based vocabulary plan — use `biblical_language_greek_hebrew_vocabulary_builder.md`.
 - Your question is the cultural/historical background of a practice (not the linguistic register) — use `biblical_historical_cultural_context.md`.
 - Your question is the clause's syntax — use `biblical_language_greek_syntax_analysis.md`.

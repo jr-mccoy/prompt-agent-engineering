@@ -31,7 +31,7 @@ All prompts inherit the domain's two load-bearing conventions:
 | Design a multi-quarter/year scope-and-sequence for your church's teaching program | [`biblical_churchstaff_curriculum_scope_sequence.md`](biblical_churchstaff_curriculum_scope_sequence.md) |
 | Evaluate published curriculum materials against stated criteria | [`biblical_churchstaff_curriculum_selection_evaluation.md`](biblical_churchstaff_curriculum_selection_evaluation.md) |
 | Design a teacher/volunteer training program | [`biblical_churchstaff_teacher_training_plan.md`](biblical_churchstaff_teacher_training_plan.md) |
-| Coordinate consistent teaching across multiple services or campuses | [`biblical_churchstaff_multi_service_teaching_coordination.md`](biblical_churchstaff_multi_service_teaching_coordination.md) |
+| Coordinate consistent teaching across multiple services or campuses | [`biblical_churchstaff_multi_service_coordination.md`](biblical_churchstaff_multi_service_coordination.md) |
 | Map your annual preaching/teaching calendar | [`biblical_churchstaff_annual_teaching_calendar.md`](biblical_churchstaff_annual_teaching_calendar.md) |
 | Design volunteer roles for teaching ministries | [`biblical_churchstaff_volunteer_recruitment_role_design.md`](biblical_churchstaff_volunteer_recruitment_role_design.md) |
 | Launch or restructure a small-group system | [`biblical_churchstaff_small_group_launch_system.md`](biblical_churchstaff_small_group_launch_system.md) |

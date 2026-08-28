@@ -42,32 +42,27 @@ from collections import defaultdict
 # Maximum filename length (excluding .md extension)
 MAX_FILENAME_LENGTH = 55
 
-# Directories to check
-CHECK_DIRECTORIES = [
-    'domain-agentic-resources',
-    'domain-software-engineering',
-    'domain-business-strategy',
-    'domain-engineering-workflows',
-    'domain-productivity',
-    'domain-image-generation',
-    'domain-presentations',
-    'domain-prompt-engineering',
-    'domain-decision-making',
-    'domain-advertising',
-    'domain-professional-writing',
-    'domain-professional-communication',
-    'domain-personal-development',
-    'domain-healthcare-clinical',
-    'domain-learning-coding',
-    'domain-research-academic',
-    'domain-conversation-practice',
-    'domain-creative-writing',
-    'domain-education-teaching',
-    'domain-specialized-fields',
-    'domain-frontend-development',
-    'techniques',
-    'authoring',
-]
+# Directories to check.
+#
+# Derived from the layout rather than hardcoded, so it cannot fall behind the
+# repository the way the previous fixed list did: that list covered 23 of 55
+# top-level directories, leaving naming unvalidated in domain-legal,
+# domain-psychology, domain-medical-education, domain-science and 28 others, and
+# still named a domain that had since been renamed.
+def _check_directories():
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    bundle_suffixes = ('-toolkit', '-kit', '-studio', '-library', '-system', '-factory')
+    always = {'techniques', 'authoring'}
+    found = []
+    for name in sorted(os.listdir(root)):
+        if not os.path.isdir(os.path.join(root, name)) or name.startswith('.'):
+            continue
+        if name.startswith('domain-') or name.endswith(bundle_suffixes) or name in always:
+            found.append(name)
+    return found
+
+
+CHECK_DIRECTORIES = _check_directories()
 
 # Files to exclude from checks
 EXCLUDED_FILES = {
@@ -97,6 +92,15 @@ EXCLUDED_FILES = {
     # Deliberate placeholder marker: the leading _PLANNED_ prefix signals an
     # unimplemented slot and is referenced as such from the evaluation README.
     '_PLANNED_stresstest_orchestrator.md',
+    # The article here belongs to an established multi-word term, so the
+    # no-articles rule would produce a worse, less recognizable name -- the same
+    # reasoning that already exempts prepositions below. "Human in the loop",
+    # "sum of the parts", "book of the Bible"; and "at the table" is the name of
+    # domain-negotiation's own at-the-table/ subdirectory.
+    'aiagent_human_in_the_loop_design.md',
+    'finance_sum_of_the_parts_valuation.md',
+    'biblical_learner_book_of_the_bible_deep_dive.md',
+    'negotiation_emotional_flooding_at_the_table.md',
 }
 
 # Directory names to prune entirely (deprecated / not subject to conventions)
@@ -334,8 +338,29 @@ def is_doc_filename(name_without_ext):
 
 
 def in_skill_bundle(filepath):
-    """True for files inside a skills/ tree, which use kebab-case by convention."""
-    return '/skills/' in filepath.replace(os.sep, '/')
+    """
+    True for files that follow kebab-case rather than the prompt convention.
+
+    Skills, agents, and commands are addressed by a kebab-case identity in Claude
+    Code -- `/author-agentic-system`, `agents_used: system-architect` -- and are
+    referenced by that name from SKILL.md files, slash commands, and CLAUDE.md.
+    Renaming them to snake_case would break those references for no gain, so the
+    snake_case/lowercase rules do not apply inside those trees. Test fixtures are
+    exempt for the same reason: their names are data their tests assert on.
+
+    Genuine problems (illegal characters, spaces, over-length names) are still
+    checked everywhere.
+    """
+    normalized = filepath.replace(os.sep, '/').lstrip('./')
+    if any(seg in f'/{normalized}' for seg in ('/skills/', '/agents/', '/commands/', '/fixtures/')):
+        return True
+    # Self-contained bundles address their own files by kebab identity too --
+    # `stage-4-gates.md`, `openai-agents-sdk.md` -- and their orchestrators and
+    # pipeline docs reference those names. They are applications built from the
+    # library, not entries in it, so the prompt naming convention is not theirs
+    # to follow. `domain-*` remains fully checked.
+    top = normalized.split('/')[0]
+    return top.endswith(('-toolkit', '-kit', '-studio', '-library', '-system', '-factory'))
 
 
 def validate_file(filepath):

@@ -57,11 +57,7 @@ If any of items 1–4 are missing, ask for them before starting Phase 1.
 
 ## Operating Mode
 
-This prompt is **gated and interactive**. After every phase, stop and ask the user a focused question. Do not run all five phases in one shot.
-
-**Primary I/O mechanism:** When `AskUserQuestion` is available, use it at every gate with 2–4 specific options plus the implicit "Other." When unavailable (plain chat), use a clearly-labeled `**GATE:**` block and wait for the user's reply.
-
-**Use `AskUserQuestion` liberally throughout each phase**, not just at gates — for clarifying options, weighting criteria, confirming dynamic perspective additions, and probing whether the user's stated lean matches their revealed lean.
+Inherit the shared deep-think operating model from [`BACKBONE.md`](../../domain-deep-analysis/BACKBONE.md): run the five phases in order, stop at every gate, use `AskUserQuestion` when available, and fall back to a labeled `**GATE:**` block in plain chat. For decisions, use in-phase questions for clarifying options, weighting criteria, confirming added perspectives, and probing whether the stated lean matches the revealed lean.
 
 ---
 
@@ -124,40 +120,13 @@ Options:
 
 **Goal:** Run the decision through perspectives the user couldn't easily generate alone.
 
-#### 3a. Run the core roster (always)
+#### 3a. Run the mandatory roster (always)
 
-For each of the six core perspectives, produce:
-- **Lens:** What this perspective is looking for in one sentence.
-- **Take on the decision:** 3–6 sentences. Specific to *this* decision, not generic.
-- **Which option this lens would lean toward and why** (or: "this lens doesn't have a lean, here's what it surfaces instead").
-
-Core perspectives:
-
-1. **Red team** — actively trying to refute the user's lean. What would make the user's preferred option wrong? Where is the user being optimistic?
-2. **Steel-man** — the strongest version of the option the user is *not* leaning toward. If a smart person picked the other option, why?
-3. **Blind-spot scan** — what is the user not seeing because of their position, recent history, or sunk costs?
-4. **Future-self (6 months)** — looking back from six months after this decision, what does the user wish they'd weighted more or less? Which version of "future user" would each option produce?
-5. **Naive newcomer** — what questions does someone with no context ask? Which embedded assumptions are doing real work?
-6. **Affected party** — whoever bears consequences other than the user. What does each option look like from inside their experience?
+Run the Phase 3 mandatory perspective roster defined in [`BACKBONE.md`](../../domain-deep-analysis/BACKBONE.md): red team, steel-man, blind-spot scan, future-self, naive newcomer, and affected party. For decisions, each lens must include its lens statement, its take on the decision, and which option it leans toward and why — or what it surfaces if it does not lean.
 
 #### 3b. Propose scope-specific additions
 
-For decisions, candidates include:
-- **Skeptical board member** — would this decision survive a hostile review by someone whose job is to question?
-- **Advocate for the rejected option** — argue passionately for whatever the user is *least* leaning toward. Force a real engagement, not a strawman.
-- **Reversibility analyst** — what reversibility does each option preserve? What does each foreclose? Is there a smaller test that would yield 80% of the information at 20% of the commitment?
-- **Cost-of-being-wrong calculator** — for each option, what's the worst plausible outcome and how much does it cost? Compare worst-case-A vs. worst-case-B, not best-case-A vs. best-case-B.
-
-Use `AskUserQuestion`:
-
-```
-Question: "Which of these decision-specific perspectives would add the most for your situation?"
-Options:
-- "[Specific perspective 1] — most relevant"
-- "[Specific perspective 2]"
-- "All of them"
-- "None — the core six are enough"
-```
+Use the decision candidate pool in [`BACKBONE.md`](../../domain-deep-analysis/BACKBONE.md) to propose 2–4 additional perspectives tailored to the user's choice. Confirm the additions with `AskUserQuestion`/`**GATE:**` and run only the perspectives the user picks.
 
 #### 3c. After running all perspectives
 

@@ -150,7 +150,7 @@ These deepen the clinical-reasoning layer that Wave 1's documentation skeletons 
 | File | Objective | Difficulty |
 |------|-----------|------------|
 | `psychology_schema_mode_mapper.md` | Map active schema modes (vulnerable child, punitive parent, healthy adult) | advanced |
-| `psychology_psychodynamic_transference_focused_formulation.md` | TFP-style object-relations formulation | advanced |
+| `domain-psychology/modalities/schema-psychodynamic/psychology_transference_focused_formulation.md` | TFP-style object-relations formulation | advanced |
 | `psychology_psychodynamic_session_process_note.md` | Process-focused note capturing transference, defenses, enactments | advanced |
 
 ---
@@ -175,14 +175,14 @@ These deepen the clinical-reasoning layer that Wave 1's documentation skeletons 
 | File | Objective | Difficulty |
 |------|-----------|------------|
 | `psychology_perinatal_mood_anxiety_screen_interpretation.md` | EPDS / PHQ-9 / GAD-7 in perinatal population with cutoffs | intermediate |
-| `psychology_perinatal_treatment_options_with_pregnancy_lactation.md` | Therapy and medication considerations across pregnancy / lactation | advanced |
-| `psychology_postpartum_psychosis_recognition_and_referral.md` | Recognition, urgency, and disposition for postpartum psychosis | advanced |
+| `domain-psychology/populations/perinatal/psychology_perinatal_options_pregnancy_lactation.md` | Therapy and medication considerations across pregnancy / lactation | advanced |
+| `domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md` | Recognition, urgency, and disposition for postpartum psychosis | advanced |
 
 ### `populations/geriatric/` (3)
 
 | File | Objective | Difficulty |
 |------|-----------|------------|
-| `psychology_geriatric_depression_vs_dementia_differential.md` | Pseudodementia vs early dementia screening framework | advanced |
+| `domain-psychology/populations/geriatric/psychology_geriatric_depression_vs_dementia.md` | Pseudodementia vs early dementia screening framework | advanced |
 | `psychology_geriatric_intake_with_polypharmacy_review.md` | Geriatric intake including medication review and falls risk | intermediate |
 | `psychology_geriatric_grief_and_late_life_transitions.md` | Late-life grief, identity, role-loss work | intermediate |
 
@@ -209,7 +209,7 @@ These deepen the clinical-reasoning layer that Wave 1's documentation skeletons 
 |------|-----------|------------|
 | `psychology_first_episode_psychosis_intake.md` | First-episode psychosis intake with CHR / FEP differentiation | advanced |
 | `psychology_smi_recovery_oriented_treatment_plan.md` | Recovery-oriented plan: housing, work, social, symptom | advanced |
-| `psychology_assertive_community_treatment_engagement_plan.md` | ACT-team engagement and outreach plan | advanced |
+| `domain-psychology/populations/severe-mental-illness/psychology_assertive_community_engagement_plan.md` | ACT-team engagement and outreach plan | advanced |
 | `psychology_smi_med_adherence_motivational_plan.md` | Adherence work using MI for clients on antipsychotics / mood stabilizers | intermediate |
 
 ### `populations/veteran-military/` (3)
@@ -298,7 +298,7 @@ These deepen the clinical-reasoning layer that Wave 1's documentation skeletons 
 |------|-----------|------------|
 | `clientself_do_i_need_therapy_decision_aid.md` | Self-decision aid for whether to start therapy | beginner |
 | `clientself_modality_fit_selector.md` | Match modality (CBT / DBT / EMDR / psychodynamic / IFS) to my needs | intermediate |
-| `clientself_finding_a_therapist_search_criteria.md` | Build search criteria + therapist-interview questions | beginner |
+| `domain-psychology/client-self-use/pre-therapy/clientself_finding_therapist_search_criteria.md` | Build search criteria + therapist-interview questions | beginner |
 | `clientself_insurance_eap_sliding_scale_navigation.md` | How to find affordable therapy (insurance, EAP, sliding-scale, training clinics) | beginner |
 | `clientself_culturally_affirming_therapist_screening.md` | Screen for cultural / identity fit with prospective therapists | intermediate |
 

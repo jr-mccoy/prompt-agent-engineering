@@ -23,8 +23,8 @@ tags:
   - lactation
 updated: "2026-06-08"
 related_prompts:
-  - domain-psychology/populations/perinatal/psychology_perinatal_treatment_options_with_pregnancy_lactation.md
-  - domain-psychology/populations/perinatal/psychology_postpartum_psychosis_recognition_and_referral.md
+  - domain-psychology/populations/perinatal/psychology_perinatal_options_pregnancy_lactation.md
+  - domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md
   - domain-psychology/risk-crisis/psychology_columbia_suicide_risk_assessment.md
   - domain-psychology/documentation/psychology_intake_assessment_note.md
 ---
@@ -51,8 +51,8 @@ Interpret validated screening instruments for perinatal mood and anxiety disorde
 
 ## When NOT to Use
 
-- For acute psychosis, delirium, or rapidly waxing/waning sensorium: use `psychology_postpartum_psychosis_recognition_and_referral.md` — postpartum psychosis is a psychiatric emergency, not a screening interpretation.
-- For full medication/therapy treatment planning across pregnancy and lactation: use `psychology_perinatal_treatment_options_with_pregnancy_lactation.md`.
+- For acute psychosis, delirium, or rapidly waxing/waning sensorium: use `psychology_postpartum_psychosis_referral.md` — postpartum psychosis is a psychiatric emergency, not a screening interpretation.
+- For full medication/therapy treatment planning across pregnancy and lactation: use `psychology_perinatal_options_pregnancy_lactation.md`.
 - For a completed suicide risk formulation when item 10 is positive: escalate to `domain-psychology/risk-crisis/psychology_columbia_suicide_risk_assessment.md`.
 - For non-perinatal adult depression/anxiety screening (general PHQ-9/GAD-7 cutoffs apply without perinatal calibration).
 
@@ -177,7 +177,7 @@ Tier: [
 ]
 Follow-up interval: [Concrete date/interval]
 Referrals: [Psychiatry / therapy / lactation / OB / crisis line 988 / PSI HelpLine 1-833-852-6262]
-Routed to: [psychology_perinatal_treatment_options_with_pregnancy_lactation.md / C-SSRS / postpartum psychosis prompt — as applicable]
+Routed to: [psychology_perinatal_options_pregnancy_lactation.md / C-SSRS / postpartum psychosis prompt — as applicable]
 
 ─────────────────────────────────────────
 BILLING NOTE

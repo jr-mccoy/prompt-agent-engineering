@@ -21,7 +21,7 @@ related_prompts:
   - domain-discipleship/session-and-lesson/discipleship_hard_conversation_navigation.md
   - domain-discipleship/pairing-and-relationship/discipleship_relationship_covenant.md
   - domain-discipleship/program-operations/discipleship_safeguarding_and_conduct_policy.md
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
 ---
 
 # Mentor Boundaries and Referral
@@ -52,7 +52,7 @@ something belongs to them. This is a standing framework, worked once and re-read
 - You are writing program-level policy — use
   `../program-operations/discipleship_safeguarding_and_conduct_policy.md`.
 - You want the ministry-setting care-conversation foundations — use
-  `domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md`.
+  `domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md`.
 
 **Audience:** Lay mentors and disciplers; program leads writing the framework their mentors work inside.
 
@@ -311,5 +311,5 @@ Who you consult: [role, not name]
   where the confidentiality limits become a mutual written agreement
 - [`../program-operations/discipleship_safeguarding_and_conduct_policy.md`](../program-operations/discipleship_safeguarding_and_conduct_policy.md) —
   the program-level policy this framework sits inside
-- [`domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md) —
+- [`domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md) —
   the ministry-setting companion on lay care conversations

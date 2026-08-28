@@ -24,7 +24,7 @@ related_prompts:
   - domain-legal/custody/legal_custody_petition_or_motion_drafter.md
   - domain-legal/custody/legal_child_support_calculation_framework.md
   - domain-legal/custody/legal_custody_best_interests_analysis.md
-  - domain-legal/custody/legal_grandparent_third_party_custody_visitation_analysis.md
+  - domain-legal/custody/legal_third_party_custody_visitation_analysis.md
   - domain-legal/custody/legal_uccjea_jurisdiction_analysis.md
 ---
 

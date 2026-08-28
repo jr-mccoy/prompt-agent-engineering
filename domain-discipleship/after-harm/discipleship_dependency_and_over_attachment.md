@@ -21,7 +21,7 @@ related_prompts:
   - domain-discipleship/mentor-equipping/discipleship_mentor_boundaries_and_referral.md
   - domain-discipleship/pairing-and-relationship/discipleship_cadence_and_rhythm_design.md
   - domain-discipleship/after-harm/discipleship_mentor_own_mistake_repair.md
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
 ---
 
 # Dependency and Over-Attachment
@@ -328,5 +328,5 @@ Produce exactly this structure.
   fix the rhythm first; most suspected dependency is an unmanaged calendar
 - [`discipleship_mentor_own_mistake_repair.md`](discipleship_mentor_own_mistake_repair.md) —
   where the mentor's part needs owning to the mentee rather than only in a plan
-- [`domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md) —
+- [`domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md) —
   the limits of lay care, which this pattern has usually already exceeded

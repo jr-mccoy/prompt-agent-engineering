@@ -18,7 +18,7 @@ tags:
 intended_use: model-testing
 updated: "2026-06-08"
 related_prompts:
-  - domain-psychology/client-self-use/pre-therapy/clientself_finding_a_therapist_search_criteria.md
+  - domain-psychology/client-self-use/pre-therapy/clientself_finding_therapist_search_criteria.md
   - domain-psychology/client-self-use/pre-therapy/clientself_modality_fit_selector.md
   - domain-psychology/client-self-use/session-prep-integration/clientself_saying_hard_things_to_therapist_rehearsal.md
 ---

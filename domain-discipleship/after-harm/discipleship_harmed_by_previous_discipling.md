@@ -17,7 +17,7 @@ tags:
   - learner-voice
 updated: "2026-08-04"
 related_prompts:
-  - domain-discipleship/pairing-and-relationship/discipleship_what_to_expect_as_a_mentee.md
+  - domain-discipleship/pairing-and-relationship/discipleship_what_to_expect_as_mentee.md
   - domain-discipleship/learner-pathways/discipleship_returning_believer_reengagement.md
   - domain-discipleship/after-harm/discipleship_dependency_and_over_attachment.md
   - domain-psy-ops/personal-defense/psyops_high_control_group_dynamics_assessment.md
@@ -55,7 +55,7 @@ terms they set rather than terms they inherit.
 - You are in a relationship now that has become unhealthy but is not over — use
   `discipleship_dependency_and_over_attachment.md`.
 - You want to know what a healthy discipling relationship should look like in the first place — use
-  `../pairing-and-relationship/discipleship_what_to_expect_as_a_mentee.md`, which is the shorter and
+  `../pairing-and-relationship/discipleship_what_to_expect_as_mentee.md`, which is the shorter and
   often better starting point.
 - The harm involved a crime, a minor, or an ongoing risk to someone else — that routes to authorities
   and, for the person's own position, to `domain-legal/personal-self-advocacy/`.
@@ -332,7 +332,7 @@ owed to anyone for choosing them.]
 
 ## Related Prompts
 
-- [`../pairing-and-relationship/discipleship_what_to_expect_as_a_mentee.md`](../pairing-and-relationship/discipleship_what_to_expect_as_a_mentee.md) —
+- [`../pairing-and-relationship/discipleship_what_to_expect_as_mentee.md`](../pairing-and-relationship/discipleship_what_to_expect_as_mentee.md) —
   what normal looks like, which is often the better first read and the reference this document assumes
 - [`../learner-pathways/discipleship_returning_believer_reengagement.md`](../learner-pathways/discipleship_returning_believer_reengagement.md) —
   for returning to church or faith after an absence, rather than entering one specific relationship

@@ -43,11 +43,11 @@ Companion sets: **`../divorce/`** (the emotional/relational side for the child) 
 | `parenting_coparenting_consistency_across_homes.md` | Align rules/routines where possible; accept the rest |
 | `parenting_coparenting_shared_decision_framework.md` | Make joint decisions; resolve disagreement at impasse |
 | `parenting_coparenting_information_handoff_brief.md` | Share what the receiving parent needs about the kids |
-| `parenting_coparenting_new_partners_and_blended_coordination.md` | Coordinate new partners/stepfamily; roles and boundaries |
+| `parenting_coparenting_blended_family_coordination.md` | Coordinate new partners/stepfamily; roles and boundaries |
 | `parenting_coparenting_deescalation_in_front_of_kids.md` | Disengage from a flare-up at the exchange / in front of kids |
 | `parenting_coparenting_relationship_reset_proposal.md` | Propose an improved working relationship to a co-parent |
 | `parenting_coparenting_long_distance_protocol.md` | Maintain the parent-child relationship across distance |
-| `parenting_coparenting_self_audit_am_i_the_problem.md` | Honest self-audit of one's own contribution to conflict |
+| `parenting_coparenting_self_audit.md` | Honest self-audit of one's own contribution to conflict |
 | `parenting_coparenting_with_unsafe_or_absent_parent.md` | Safety-first navigation of an unsafe/absent co-parent |
 
 ---

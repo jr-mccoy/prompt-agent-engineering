@@ -17,7 +17,7 @@ tags:
   - rigor
 updated: "2026-06-19"
 related_prompts:
-  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_a_paper_plan.md
+  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md
   - domain-AI-ML/learning-ai-ml/mllearn_paper_reading_guide.md
   - domain-AI-ML/specialized-ml/computer-vision/cv_task_framing.md
 ---
@@ -33,7 +33,7 @@ related_prompts:
 
 **When NOT to Use:**
 - The learner just wants the paper summarized (use `mllearn_paper_digest_generator.md`).
-- They want the general reproduction method, not a ResNet-specific guide (use `mllearn_reproduce_a_paper_plan.md`).
+- They want the general reproduction method, not a ResNet-specific guide (use `domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md`).
 - They lack the CV/training basics to train a classifier at all (use the CV study track first).
 
 ## Inputs / Context
@@ -147,6 +147,6 @@ before reporting a probable non-reproduction with the specific gap.
 - **QA-01 (Self-Verification):** the divergence protocol is a built-in correctness check.
 
 **Related Prompts:**
-- `mllearn_reproduce_a_paper_plan.md` — the general reproduction method this guide instantiates.
+- `domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md` — the general reproduction method this guide instantiates.
 - `mllearn_paper_reading_guide.md` — read the paper critically to find the ambiguities first.
 - `cv_task_framing.md` — frame the classification task and dataset choice.

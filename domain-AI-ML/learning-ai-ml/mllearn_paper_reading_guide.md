@@ -18,7 +18,7 @@ tags:
 updated: "2026-05-29"
 related_prompts:
   - domain-AI-ML/learning-ai-ml/mllearn_paper_digest_generator.md
-  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_a_paper_plan.md
+  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md
   - domain-AI-ML/learning-ai-ml/mllearn_concept_explainer.md
 ---
 
@@ -33,7 +33,7 @@ related_prompts:
 
 **When NOT to Use:**
 - The learner wants the paper summarized for them (use `mllearn_paper_digest_generator.md`).
-- They want to reproduce the paper's results (use `mllearn_reproduce_a_paper_plan.md`).
+- They want to reproduce the paper's results (use `mllearn_reproduce_paper_plan.md`).
 
 ## Inputs / Context
 
@@ -142,5 +142,5 @@ the one question you'd ask the authors?
 
 **Related Prompts:**
 - `mllearn_paper_digest_generator.md` — when a structured summary (not skill-building) is wanted.
-- `mllearn_reproduce_a_paper_plan.md` — the next step after a critical read.
+- `mllearn_reproduce_paper_plan.md` — the next step after a critical read.
 - `mllearn_concept_explainer.md` — to shore up a prerequisite the paper assumes.

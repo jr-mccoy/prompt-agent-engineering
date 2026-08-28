@@ -22,7 +22,7 @@ related_prompts:
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_message_composer_biff.md
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_relationship_reset_proposal.md
   - domain-parenting/caregiver-facing/cross-age/parenting_household_constitution_designer.md
-  - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit_am_i_the_problem.md
+  - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit.md
 ---
 
 **Purpose:** Help a parent navigate the introduction and integration of a new partner (theirs or the co-parent's) in a way that protects the child and keeps co-parenting workable — defining the step/bonus parent's role and limits, clarifying who handles discipline and decisions, finding a neutral way to communicate about new partners with the co-parent, and supporting the child through the adjustment. The output is a role map, boundary script, communication plan, and child-support plan.
@@ -197,4 +197,4 @@ Help the parent and their partner get on the same page privately so the child se
 - `parenting_coparenting_message_composer_biff.md` — phrase new-partner logistics neutrally to the co-parent.
 - `parenting_coparenting_relationship_reset_proposal.md` — if a new partner has strained the co-parenting relationship.
 - `parenting_household_constitution_designer.md` — define the blended household's rules and roles.
-- `parenting_coparenting_self_audit_am_i_the_problem.md` — check whether your reaction to their partner is co-parenting or jealousy.
+- `parenting_coparenting_self_audit.md` — check whether your reaction to their partner is co-parenting or jealousy.

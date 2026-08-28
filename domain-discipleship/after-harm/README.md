@@ -38,7 +38,7 @@ mentor who caused it, and the program left holding everyone else.
 
 | Prompt | What It Produces |
 |---|---|
-| [`discipleship_after_a_mentor_is_removed.md`](discipleship_after_a_mentor_is_removed.md) | Care for the mentees, the cohort, and the community after a removal — ordered by proximity to harm, with the sayable / restricted / unknown line drawn honestly and the five hardest sentences written verbatim |
+| [`discipleship_after_mentor_is_removed.md`](discipleship_after_mentor_is_removed.md) | Care for the mentees, the cohort, and the community after a removal — ordered by proximity to harm, with the sayable / restricted / unknown line drawn honestly and the five hardest sentences written verbatim |
 
 ## The failure modes these are built against
 

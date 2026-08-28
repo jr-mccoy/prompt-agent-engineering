@@ -20,7 +20,7 @@ tags:
 intended_use: model-testing
 updated: "2026-06-08"
 related_prompts:
-  - domain-psychology/client-self-use/coping-by-concern/clientself_ocd_erp_self_designed_exercise_with_therapist.md
+  - domain-psychology/client-self-use/coping-by-concern/clientself_ocd_erp_exercise_with_therapist.md
   - domain-psychology/client-self-use/coping-by-concern/clientself_ocd_family_accommodation_reduction_plan.md
   - domain-psychology/modalities/cbt/psychology_cbt_panic_protocol_session_plan.md
 ---

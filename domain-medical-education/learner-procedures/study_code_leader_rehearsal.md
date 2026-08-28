@@ -27,7 +27,7 @@ related_prompts:
   - domain-medical-education/learner-procedures/study_acls_algorithm_drill.md
   - domain-medical-education/learner-procedures/study_pals_algorithm_drill.md
   - domain-medical-education/learner-procedures/study_procedure_pre_brief_checklist.md
-  - domain-medical-education/learner-clinical-rotation/study_handoff_iPASS_rehearsal.md
+  - domain-medical-education/learner-clinical-rotation/study_handoff_ipass_rehearsal.md
 ---
 
 ## Objective

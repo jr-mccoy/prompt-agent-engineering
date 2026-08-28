@@ -22,7 +22,7 @@ The stage before any modelling: deciding whether this is an ML problem at all, w
 | Prompt | Use it to |
 |---|---|
 | [`mlframe_domain_triage_router.md`](mlframe_domain_triage_router.md) | Classify what an ML situation actually is — a framing question, a data problem, a training failure, an evaluation doubt, a serving constraint, a production incident, or a governance requirement — and emit an ordered prompt sequence, so the domain is consumed by route rather than exhaustively. |
-| [`mlframe_is_this_an_ml_problem.md`](mlframe_is_this_an_ml_problem.md) | Decide whether a problem genuinely warrants machine learning versus rules, heuristics, or analytics — with an honest cost/benefit and the conditions under which ML is the wrong tool. |
+| [`mlframe_is_this_ml_problem.md`](mlframe_is_this_ml_problem.md) | Decide whether a problem genuinely warrants machine learning versus rules, heuristics, or analytics — with an honest cost/benefit and the conditions under which ML is the wrong tool. |
 
 **Frame the task**
 

@@ -15,16 +15,16 @@ Prompts for working with the biblical text in Greek, Hebrew, and Aramaic — par
 | `biblical_language_greek_voice_deponency_analysis.md` | Greek middle/passive voice semantics and the deponency debate (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_language_discourse_analysis.md` | Discourse/clause-flow — prominence, cohesion, paragraph/episode boundaries, information structure (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_language_idiom_and_figures_of_speech_analysis.md` | Original-language idioms and figures of speech where wooden parsing misleads (**STRONG-GUARD**) | A, P | advanced |
-| `biblical_language_semantic_domains_componential_analysis.md` | Sense disambiguation by semantic-domain/componential method (Louw-Nida/BDAG) (**STRONG-GUARD**) | A, P | intermediate |
+| `biblical_language_semantic_domains_analysis.md` | Sense disambiguation by semantic-domain/componential method (Louw-Nida/BDAG) (**STRONG-GUARD**) | A, P | intermediate |
 | `biblical_language_ot_in_nt_usage.md` | How a NT text uses an OT quotation/allusion; compare MT/LXX/NT wording, classify use (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_language_septuagint_usage.md` | LXX usage and Masoretic-Text divergences; translation technique (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_language_textual_criticism_primer.md` | Method + a user-supplied variant: external/internal evidence, positions (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_language_hebrew_masora_and_variants_analysis.md` | Reading the BHS/BHQ Masorah (Mp/Mm) and Qere/Ketiv (**STRONG-GUARD**) | A, P | advanced |
-| `biblical_language_hebrew_accents_greek_accentuation_analysis.md` | Hebrew cantillation (te'amim) and Greek accentuation as reading/division traditions (**STRONG-GUARD**) | A, P | advanced |
+| `biblical_language_hebrew_greek_accentuation.md` | Hebrew cantillation (te'amim) and Greek accentuation as reading/division traditions (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_language_aramaic_analysis.md` | Biblical Aramaic syntax, verb stems, noun states, dialect context (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_language_canon_versification_differences.md` | Canon, ordering, naming, and versification across traditions (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_language_comparative_semitics_cognate_analysis.md` | Evaluating cognate arguments (Ugaritic/Akkadian/Arabic) with method controls (**STRONG-GUARD**) | A, P | advanced |
-| `biblical_language_koine_inscriptions_papyri_register_analysis.md` | Documentary Greek — papyri/inscriptions and Koine register (**STRONG-GUARD**) | A | advanced |
+| `biblical_language_koine_papyri_register.md` | Documentary Greek — papyri/inscriptions and Koine register (**STRONG-GUARD**) | A | advanced |
 | `biblical_language_greek_hebrew_vocabulary_builder.md` | Frequency-based vocabulary study plan for learners (**STRONG-GUARD**) | A, P | intermediate |
 
 ## Which prompt for which question
@@ -40,16 +40,16 @@ Prompts for working with the biblical text in Greek, Hebrew, and Aramaic — par
 **Meaning, sense & figures**
 - **"How do the clauses flow / where are the boundaries / what's foregrounded?"** → `biblical_language_discourse_analysis.md`
 - **"Is this phrase an idiom or figure of speech?"** → `biblical_language_idiom_and_figures_of_speech_analysis.md`
-- **"Which sense fits here / what distinguishes this word from its synonyms?"** → `biblical_language_semantic_domains_componential_analysis.md`
+- **"Which sense fits here / what distinguishes this word from its synonyms?"** → `biblical_language_semantic_domains_analysis.md`
 - **"Does this cognate (Ugaritic/Akkadian/Arabic) argument hold up?"** → `biblical_language_comparative_semitics_cognate_analysis.md`
-- **"Is this word formal or everyday — what do the papyri/inscriptions show?"** → `biblical_language_koine_inscriptions_papyri_register_analysis.md`
+- **"Is this word formal or everyday — what do the papyri/inscriptions show?"** → `biblical_language_koine_papyri_register.md`
 
 **Text, transmission & versions**
 - **"How does this NT text use the OT, and why does the wording differ from the Hebrew or the Greek?"** → `biblical_language_ot_in_nt_usage.md`
 - **"How does the LXX differ from the Masoretic Text here?"** → `biblical_language_septuagint_usage.md`
 - **"How would a text critic evaluate this variant?"** → `biblical_language_textual_criticism_primer.md`
 - **"What does this Qere/Ketiv or Masoretic note mean?"** → `biblical_language_hebrew_masora_and_variants_analysis.md`
-- **"How do the te'amim divide this verse / what does this Greek accent tell me?"** → `biblical_language_hebrew_accents_greek_accentuation_analysis.md`
+- **"How do the te'amim divide this verse / what does this Greek accent tell me?"** → `biblical_language_hebrew_greek_accentuation.md`
 - **"Is this book in all canons / why is this verse numbered differently?"** → `biblical_language_canon_versification_differences.md`
 
 **Learning**

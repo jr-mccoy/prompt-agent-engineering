@@ -49,6 +49,6 @@ Companion sets: **`../divorce/`** (the emotional/relational side) and **`../co-p
 | `parenting_custody_exchange_and_transition_protocol.md` | Low-conflict exchange/handoff protocol document |
 | `parenting_custody_common_plan_provisions_explainer.md` | Light legal-literacy: common provisions in plain language |
 | `parenting_custody_special_needs_plan_addendum.md` | Plan addendum for a child with disability/medical/ND needs |
-| `parenting_custody_changed_circumstances_documentation_organizer.md` | Organize a factual record when circumstances change |
+| `parenting_custody_changed_circumstances_organizer.md` | Organize a factual record when circumstances change |
 
 ---

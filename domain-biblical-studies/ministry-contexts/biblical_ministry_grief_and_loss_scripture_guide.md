@@ -21,7 +21,7 @@ tags:
   - boundary
 updated: "2026-06-25"
 related_prompts:
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
   - domain-biblical-studies/sermon-devotional/biblical_daily_devotional_writer.md
   - domain-biblical-studies/theology-research/biblical_topical_theology_synthesis.md
   - domain-psychology/risk-crisis/psychology_crisis_de_escalation_session_plan.md
@@ -42,7 +42,7 @@ related_prompts:
 - You are preaching or teaching a series on suffering, grief, or lament.
 
 **When NOT to use:**
-- You need a general care conversation framework (not just Scripture selection) — use `biblical_ministry_biblical_care_conversation_foundations.md`.
+- You need a general care conversation framework (not just Scripture selection) — use `biblical_ministry_care_conversation_foundations.md`.
 - You need to study a specific passage's theology in depth — use `theology-research/biblical_topical_theology_synthesis.md`.
 - You need clinical grief assessment, counseling techniques, or crisis intervention — this prompt does not provide those. Route to licensed professionals.
 

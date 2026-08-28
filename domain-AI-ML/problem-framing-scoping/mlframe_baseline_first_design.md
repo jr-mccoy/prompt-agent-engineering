@@ -18,7 +18,7 @@ tags:
 updated: "2026-05-29"
 related_prompts:
   - domain-AI-ML/problem-framing-scoping/mlframe_success_metric_selection.md
-  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_an_ml_problem.md
+  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_ml_problem.md
   - domain-AI-ML/feature-engineering/mlfeature_ideation_workshop.md
 ---
 
@@ -32,7 +32,7 @@ related_prompts:
 - When a complex model is proposed and you want to know whether a trivial one would suffice.
 
 **When NOT to Use:**
-- You still aren't sure ML is warranted (use `mlframe_is_this_an_ml_problem.md`).
+- You still aren't sure ML is warranted (use `mlframe_is_this_ml_problem.md`).
 - You need the full metric contract first (use `mlframe_success_metric_selection.md`), then return to set the bar.
 
 ## Inputs / Context
@@ -142,5 +142,5 @@ and revisit only if richer behavioral data becomes available.
 
 **Related Prompts:**
 - `mlframe_success_metric_selection.md` — fixes the metric the baseline is measured in.
-- `mlframe_is_this_an_ml_problem.md` — if a baseline already suffices, ML may be unnecessary.
+- `mlframe_is_this_ml_problem.md` — if a baseline already suffices, ML may be unnecessary.
 - `mlfeature_ideation_workshop.md` — features to push a model past the bar.

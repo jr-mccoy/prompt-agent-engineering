@@ -19,7 +19,7 @@ tags:
 updated: "2026-06-01"
 related_prompts:
   - domain-parenting/caregiver-facing/divorce/parenting_divorce_child_reaction_by_age_guide.md
-  - domain-parenting/caregiver-facing/divorce/parenting_divorce_milestones_and_holidays_emotional_plan.md
+  - domain-parenting/caregiver-facing/divorce/parenting_divorce_milestones_and_holidays_plan.md
   - domain-parenting/caregiver-facing/divorce/parenting_divorce_shield_kids_from_conflict.md
   - domain-parenting/caregiver-facing/custody/parenting_custody_exchange_and_transition_protocol.md
 ---
@@ -196,6 +196,6 @@ Set rules for yourself at exchanges: brief, friendly, no messages passed through
 ## Cross-References
 
 - `parenting_divorce_child_reaction_by_age_guide.md` — reading transition distress in developmental context.
-- `parenting_divorce_milestones_and_holidays_emotional_plan.md` — the bigger transitions: split holidays and milestones.
+- `parenting_divorce_milestones_and_holidays_plan.md` — the bigger transitions: split holidays and milestones.
 - `parenting_divorce_shield_kids_from_conflict.md` — keeping exchanges free of adult conflict.
 - `parenting_custody_exchange_and_transition_protocol.md` — the logistics of a calm, low-conflict exchange.

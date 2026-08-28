@@ -20,7 +20,7 @@ tags:
 updated: "2026-06-26"
 related_prompts:
   - domain-biblical-studies/exegesis-interpretation/biblical_word_study_original_language.md
-  - domain-biblical-studies/original-languages/biblical_language_semantic_domains_componential_analysis.md
+  - domain-biblical-studies/original-languages/biblical_language_semantic_domains_analysis.md
   - domain-biblical-studies/original-languages/biblical_language_aramaic_analysis.md
   - domain-biblical-studies/theology-research/biblical_exegetical_fallacy_detector.md
   - domain-biblical-studies/exegesis-interpretation/biblical_ane_comparative_context.md
@@ -38,7 +38,7 @@ related_prompts:
 - You want the methodological controls (attestation, semantic fit, directionality) before trusting a cognate claim.
 
 **When NOT to use:**
-- You want the word's senses and usage *within* Biblical Hebrew/Aramaic — start with `biblical_word_study_original_language.md` or `biblical_language_semantic_domains_componential_analysis.md`; come here for the *cross-language* cognate evaluation.
+- You want the word's senses and usage *within* Biblical Hebrew/Aramaic — start with `biblical_word_study_original_language.md` or `biblical_language_semantic_domains_analysis.md`; come here for the *cross-language* cognate evaluation.
 - Your question is the cultural/ANE background of a practice or image (not the linguistics) — use `biblical_ane_comparative_context.md`.
 - You want to check whether an interpretation commits an exegetical fallacy in general — use `biblical_exegetical_fallacy_detector.md` (this prompt is the cognate-specific deep dive).
 - Your question is the Aramaic grammar of a passage — use `biblical_language_aramaic_analysis.md`.

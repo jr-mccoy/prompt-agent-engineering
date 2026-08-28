@@ -17,7 +17,7 @@ tags:
   - rigor
 updated: "2026-06-19"
 related_prompts:
-  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_a_paper_plan.md
+  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md
   - domain-AI-ML/learning-ai-ml/mllearn_paper_reading_guide.md
   - domain-AI-ML/specialized-ml/nlp-classical/nlp_tokenization_representation_strategy.md
 ---
@@ -33,7 +33,7 @@ related_prompts:
 
 **When NOT to Use:**
 - The learner just wants the paper summarized (use `mllearn_paper_digest_generator.md`).
-- They want the general reproduction method (use `mllearn_reproduce_a_paper_plan.md`).
+- They want the general reproduction method (use `domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md`).
 - They need contextual embeddings, not word2vec (a different study path).
 
 ## Inputs / Context
@@ -140,6 +140,6 @@ then corpus size, before reporting a specific-gap non-reproduction.
 - **QA-01 (Self-Verification):** the ordered divergence protocol is a built-in correctness check.
 
 **Related Prompts:**
-- `mllearn_reproduce_a_paper_plan.md` — the general reproduction method this guide instantiates.
+- `domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md` — the general reproduction method this guide instantiates.
 - `mllearn_paper_reading_guide.md` — read the paper critically to find the ambiguities first.
 - `nlp_tokenization_representation_strategy.md` — deepen the tokenization/representation decisions.

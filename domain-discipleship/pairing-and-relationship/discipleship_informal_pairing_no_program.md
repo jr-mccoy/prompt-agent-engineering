@@ -17,7 +17,7 @@ tags:
   - no-program
 updated: "2026-08-04"
 related_prompts:
-  - domain-discipleship/pairing-and-relationship/discipleship_what_to_expect_as_a_mentee.md
+  - domain-discipleship/pairing-and-relationship/discipleship_what_to_expect_as_mentee.md
   - domain-discipleship/pairing-and-relationship/discipleship_relationship_covenant.md
   - domain-discipleship/mentor-equipping/discipleship_mentor_boundaries_and_referral.md
   - domain-discipleship/program-operations/discipleship_minimum_viable_program.md
@@ -50,7 +50,7 @@ for discipleship and there is no program to join, no lead to tell, and no templa
 - You lead something small and are working out what structure you genuinely need — use
   `../program-operations/discipleship_minimum_viable_program.md`, which asks that question directly.
 - You are the person being discipled and want to know what normal looks like before agreeing to anything —
-  use `discipleship_what_to_expect_as_a_mentee.md`, which is shorter, is yours, and comes first.
+  use `discipleship_what_to_expect_as_mentee.md`, which is shorter, is yours, and comes first.
 - A minor, a young person, or a vulnerable adult is involved — this needs an organization; see the
   guardrail above.
 - You want the content of a first-steps path rather than its structure — use
@@ -319,7 +319,7 @@ softening it.]
 
 ## Related Prompts
 
-- [`discipleship_what_to_expect_as_a_mentee.md`](discipleship_what_to_expect_as_a_mentee.md) —
+- [`discipleship_what_to_expect_as_mentee.md`](discipleship_what_to_expect_as_mentee.md) —
   the shorter, learner-held companion; often the right thing to read before agreeing to any of this
 - [`discipleship_relationship_covenant.md`](discipleship_relationship_covenant.md) —
   the full mutual agreement, for where a program or template exists to produce one

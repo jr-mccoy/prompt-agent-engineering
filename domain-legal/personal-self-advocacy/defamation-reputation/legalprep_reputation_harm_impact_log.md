@@ -19,7 +19,7 @@ tags:
 updated: "2026-07-23"
 related_prompts:
   - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_defamation_concern_documentation_organizer.md
-  - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_online_content_removal_platform_report_preparer.md
+  - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_content_removal_platform_report.md
   - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_correction_retraction_request_preparer.md
   - domain-legal/ip/legal_defamation_publicity_risk_screen.md
 ---
@@ -209,6 +209,6 @@ compensable, how causation and valuation work in [jurisdiction], and next steps.
 ## Related Prompts
 
 - `legalprep_defamation_concern_documentation_organizer.md` — the statement record this harm log is tied to.
-- `legalprep_online_content_removal_platform_report_preparer.md` — to report the content to the platform under its policies.
+- `legalprep_content_removal_platform_report.md` — to report the content to the platform under its policies.
 - `legalprep_correction_retraction_request_preparer.md` — to ask the publisher directly for a correction or retraction.
 - `../../ip/legal_defamation_publicity_risk_screen.md` — the attorney-side screen your lawyer may use to assess the matter and any harm.

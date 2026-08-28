@@ -18,7 +18,7 @@ tags:
 updated: "2026-05-29"
 related_prompts:
   - domain-AI-ML/learning-ai-ml/mllearn_paper_reading_guide.md
-  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_a_paper_plan.md
+  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md
   - domain-AI-ML/learning-ai-ml/mllearn_glossary_builder.md
 ---
 
@@ -146,5 +146,5 @@ self-supervised pretraining, consistency regularization, low-resource learning.
 
 **Related Prompts:**
 - `mllearn_paper_reading_guide.md` — build the skill instead of consuming a digest.
-- `mllearn_reproduce_a_paper_plan.md` — plan a reproduction from the digest.
+- `mllearn_reproduce_paper_plan.md` — plan a reproduction from the digest.
 - `mllearn_glossary_builder.md` — turn the key terms into a personal glossary.

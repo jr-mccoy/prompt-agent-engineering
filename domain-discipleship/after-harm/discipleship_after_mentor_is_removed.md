@@ -21,7 +21,7 @@ related_prompts:
   - domain-discipleship/after-harm/discipleship_harmed_by_previous_discipling.md
   - domain-discipleship/pairing-and-relationship/discipleship_relationship_ending_or_transition.md
   - domain-discipleship/mentor-equipping/discipleship_mentor_support_and_sustainability.md
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
 ---
 
 # After a Mentor Is Removed
@@ -346,5 +346,5 @@ anything was raised earlier and what happened to it]
   ending one relationship well, including the ending-because-of-harm case
 - [`../mentor-equipping/discipleship_mentor_support_and_sustainability.md`](../mentor-equipping/discipleship_mentor_support_and_sustainability.md) —
   the cohort structure that has to absorb this, and often is not designed to
-- [`domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md) —
+- [`domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md) —
   the lay care conversation, and its limits, for the individual conversations this plan schedules

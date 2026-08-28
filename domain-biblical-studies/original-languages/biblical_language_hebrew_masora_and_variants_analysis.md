@@ -21,7 +21,7 @@ related_prompts:
   - domain-biblical-studies/original-languages/biblical_language_textual_criticism_primer.md
   - domain-biblical-studies/original-languages/biblical_language_hebrew_syntax_analysis.md
   - domain-biblical-studies/original-languages/biblical_language_parsing_morphology_helper.md
-  - domain-biblical-studies/original-languages/biblical_language_hebrew_accents_greek_accentuation_analysis.md
+  - domain-biblical-studies/original-languages/biblical_language_hebrew_greek_accentuation.md
   - domain-biblical-studies/original-languages/biblical_language_septuagint_usage.md
 ---
 
@@ -38,7 +38,7 @@ related_prompts:
 
 **When NOT to use:**
 - Your question is a manuscript variant evaluated by external/internal criteria (apparatus, text-types) — use `biblical_language_textual_criticism_primer.md`; Qere/Ketiv is a feature of the Masoretic reading tradition, not a manuscript apparatus.
-- Your question is the cantillation accents (te'amim) and their function — use `biblical_language_hebrew_accents_greek_accentuation_analysis.md`.
+- Your question is the cantillation accents (te'amim) and their function — use `biblical_language_hebrew_greek_accentuation.md`.
 - Your question is the parse or syntax of a form — use the parsing or Hebrew syntax prompts.
 - Your question is MT-vs-LXX divergence in content — use `biblical_language_septuagint_usage.md`.
 

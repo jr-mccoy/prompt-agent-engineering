@@ -24,7 +24,7 @@ tags:
 updated: "2026-06-08"
 related_prompts:
   - domain-psychology/populations/perinatal/psychology_perinatal_mood_anxiety_screen_interpretation.md
-  - domain-psychology/populations/perinatal/psychology_postpartum_psychosis_recognition_and_referral.md
+  - domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md
   - domain-psychology/treatment-planning/psychology_modality_selection_decision_aid.md
   - domain-psychology/documentation/psychology_initial_treatment_plan.md
 ---
@@ -54,7 +54,7 @@ This prompt is a decision-organizing aid for the treating clinician; it does not
 ## When NOT to Use
 
 - To obtain a specific medication safety rating or dose — that is a prescriber decision verified against current references; this prompt routes there.
-- For acute psychiatric emergencies (postpartum psychosis, acute suicidality, mania) — see `psychology_postpartum_psychosis_recognition_and_referral.md` and the risk-crisis prompts.
+- For acute psychiatric emergencies (postpartum psychosis, acute suicidality, mania) — see `psychology_postpartum_psychosis_referral.md` and the risk-crisis prompts.
 - For pure modality selection independent of the perinatal exposure question — use `psychology_modality_selection_decision_aid.md`.
 - For non-perinatal adults.
 

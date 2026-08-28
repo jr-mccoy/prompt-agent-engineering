@@ -33,7 +33,7 @@ subdirectory assumes the boundaries prompt has been worked.
 - `../pairing-and-relationship/` — the relationship the mentor is being equipped for
 - `../session-and-lesson/` — what they actually do in the meeting
 - `../program-operations/discipleship_mentor_pipeline_and_capacity.md` — growing mentor supply
-- `../../domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md`
+- `../../domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md`
   — the ministry-setting companion to the boundaries prompt
 - `../../domain-biblical-studies/group-leader-facilitation/` — facilitation skill for group settings
 - `../../domain-personal-development/prompts/agency/agency_burnout_recovery.md` — burnout recovery in a

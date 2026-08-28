@@ -42,7 +42,7 @@ These prompts compose. Common chains:
 
 | Prompt | Purpose |
 |---|---|
-| `parenting_divorce_telling_the_kids_script.md` | The age-tiered "we're separating" conversation |
+| `parenting_divorce_telling_kids_script.md` | The age-tiered "we're separating" conversation |
 | `parenting_divorce_child_reaction_by_age_guide.md` | Expected reactions by stage; normal vs. concerning; timeline |
 | `parenting_divorce_hard_questions_answer_bank.md` | Honest, age-appropriate answers to the recurring hard questions |
 | `parenting_divorce_two_homes_transition_support.md` | Adjusting to two homes; transitions; "I miss the other parent" |
@@ -50,7 +50,7 @@ These prompts compose. Common chains:
 | `parenting_divorce_shield_kids_from_conflict.md` | Keeping children out of the middle; loyalty binds |
 | `parenting_divorce_telling_others_and_privacy.md` | What to tell teachers/family; the child's own narrative |
 | `parenting_divorce_new_partner_introduction_timing.md` | When/how to introduce dating and a new partner |
-| `parenting_divorce_milestones_and_holidays_emotional_plan.md` | Birthdays, holidays, milestones across two homes (emotionally) |
+| `parenting_divorce_milestones_and_holidays_plan.md` | Birthdays, holidays, milestones across two homes (emotionally) |
 | `parenting_divorce_signs_child_needs_more_support.md` | Warning signs a child needs a therapist; escalation pathway |
 
 ---

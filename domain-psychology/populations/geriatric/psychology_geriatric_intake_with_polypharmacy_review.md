@@ -23,7 +23,7 @@ tags:
   - capacity
 updated: "2026-06-08"
 related_prompts:
-  - domain-psychology/populations/geriatric/psychology_geriatric_depression_vs_dementia_differential.md
+  - domain-psychology/populations/geriatric/psychology_geriatric_depression_vs_dementia.md
   - domain-psychology/populations/geriatric/psychology_geriatric_grief_and_late_life_transitions.md
   - domain-psychology/documentation/psychology_intake_assessment_note.md
   - domain-psychology/risk-crisis/psychology_columbia_suicide_risk_assessment.md
@@ -53,7 +53,7 @@ Produce a complete, age-calibrated biopsychosocial intake record for an older ad
 ## When NOT to Use
 
 - For adults under 65 without a geriatric presentation: use `psychology_intake_assessment_note.md`.
-- When the primary question is differentiating depression from dementia: pair with or route to `psychology_geriatric_depression_vs_dementia_differential.md`.
+- When the primary question is differentiating depression from dementia: pair with or route to `psychology_geriatric_depression_vs_dementia.md`.
 - As a substitute for a pharmacist medication-therapy-management review or a physician medication reconciliation — this prompt **flags** issues for those clinicians; it does not adjudicate drug-drug interactions.
 - When acute delirium is suspected: stabilize and obtain medical workup first; an intake conducted during delirium is not a valid baseline.
 

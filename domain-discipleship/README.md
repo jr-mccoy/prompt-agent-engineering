@@ -155,7 +155,7 @@ substitute for a congregation, or position the mentor as a replacement for pasto
 | `discipleship_curriculum_balance_audit.md` | Audit an existing curriculum for gaps, imbalance, and smuggled tradition-specific distinctives |
 | `discipleship_material_evaluation.md` | **STRONG-GUARD.** Evaluate third-party material without fabricating product, author, or review claims |
 | `discipleship_multiplication_design.md` | Design for reproduction — disciples who disciple — and generational depth |
-| `discipleship_multiplication_governance_and_material_drift.md` | What generation three is actually teaching, who owns the answer, and how a correction travels without becoming a licence |
+| `domain-discipleship/curriculum-architecture/discipleship_multiplication_governance_drift.md` | What generation three is actually teaching, who owns the answer, and how a correction travels without becoming a licence |
 
 ### `learner-pathways/`
 | File | Purpose |
@@ -188,8 +188,8 @@ substitute for a congregation, or position the mentor as a replacement for pasto
 | `discipleship_cadence_and_rhythm_design.md` | Sustainable frequency, format, and channel |
 | `discipleship_relationship_ending_or_transition.md` | Ending well: completion, mismatch, handoff, withdrawal |
 | `discipleship_long_relationship_recontracting.md` | The years-long relationship nobody decided to continue — renew, change shape, or release |
-| `discipleship_informal_pairing_without_a_program.md` | **STRONG-GUARD.** Two people, no program, no policy — and "not like this" where it can't be made safe |
-| `discipleship_what_to_expect_as_a_mentee.md` | What normal looks like, what is never owed, and who to tell — held by the person being discipled |
+| `domain-discipleship/pairing-and-relationship/discipleship_informal_pairing_no_program.md` | **STRONG-GUARD.** Two people, no program, no policy — and "not like this" where it can't be made safe |
+| `domain-discipleship/pairing-and-relationship/discipleship_what_to_expect_as_mentee.md` | What normal looks like, what is never owed, and who to tell — held by the person being discipled |
 
 ### `session-and-lesson/`
 | File | Purpose |
@@ -269,7 +269,7 @@ substitute for a congregation, or position the mentor as a replacement for pasto
 | `discipleship_harmed_by_previous_discipling.md` | **STRONG-GUARD.** Terms *they* set for entering a new relationship after a harmful one; safety and clinical screen first; "not now" kept available throughout |
 | `discipleship_dependency_and_over_attachment.md` | Unwinding a pair that has closed in — after ruling out safeguarding, clinical need, and an unset cadence, and with the mentor-is-dependent case on the table |
 | `discipleship_mentor_own_mistake_repair.md` | A gate deciding whether "mistake" is the right word, then an apology with every explanation stripped out and nothing asked in return |
-| `discipleship_after_a_mentor_is_removed.md` | **STRONG-GUARD.** Care for the mentees, cohort, and community after a removal — ordered by proximity to harm, never a communications strategy |
+| `domain-discipleship/after-harm/discipleship_after_mentor_is_removed.md` | **STRONG-GUARD.** Care for the mentees, cohort, and community after a removal — ordered by proximity to harm, never a communications strategy |
 
 ---
 

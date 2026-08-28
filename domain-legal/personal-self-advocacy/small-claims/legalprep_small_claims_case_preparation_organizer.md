@@ -19,7 +19,7 @@ tags:
   - documentation
 updated: "2026-07-23"
 related_prompts:
-  - domain-legal/personal-self-advocacy/small-claims/legalprep_small_claims_hearing_preparation_and_testimony_practice.md
+  - domain-legal/personal-self-advocacy/small-claims/legalprep_small_claims_hearing_and_testimony.md
   - domain-legal/family-self-advocacy/legalprep_evidence_inventory_organizer.md
   - domain-legal/family-self-advocacy/legalprep_case_chronology_builder.md
   - domain-legal/family-self-advocacy/legalprep_court_process_explainer.md
@@ -30,7 +30,7 @@ related_prompts:
 
 **When to use:** You are considering or have decided to file a small-claims case, or you have been served with one and need to organize your side. You want your facts, dates, evidence, and the amount straight before you go to the court's self-help center for the actual forms and filing.
 
-**When NOT to use:** You want the court claim form drafted, want to know the filing fee, deadline, service rules, or dollar limit, or want to know whether you should file → those are filing mechanics and legal questions; the **court self-help center** handles procedure and forms, and legal aid or an attorney handles whether-and-what. You want to know if your claim will win or what it is "worth" → that is legal assessment; route to legal aid or an attorney. You want to prepare for the hearing itself → use `legalprep_small_claims_hearing_preparation_and_testimony_practice.md`.
+**When NOT to use:** You want the court claim form drafted, want to know the filing fee, deadline, service rules, or dollar limit, or want to know whether you should file → those are filing mechanics and legal questions; the **court self-help center** handles procedure and forms, and legal aid or an attorney handles whether-and-what. You want to know if your claim will win or what it is "worth" → that is legal assessment; route to legal aid or an attorney. You want to prepare for the hearing itself → use `legalprep_small_claims_hearing_and_testimony.md`.
 
 ---
 
@@ -213,7 +213,7 @@ For legal aid or an attorney: whether I have a claim and what it may be worth.
 
 **By role:**
 - **Bringing the claim:** Foreground the itemized amount and the evidence that supports each item; confirm the correct defendant name with the self-help center.
-- **Responding to a claim:** Organize your side of the facts and your evidence; pair with `legalprep_small_claims_hearing_preparation_and_testimony_practice.md`; route any counterclaim question to the self-help center/legal aid.
+- **Responding to a claim:** Organize your side of the facts and your evidence; pair with `legalprep_small_claims_hearing_and_testimony.md`; route any counterclaim question to the self-help center/legal aid.
 
 **By dispute type:**
 - **Unpaid debt / loan:** Anchor to the loan record and payment history; each missed payment is a dated line.
@@ -228,7 +228,7 @@ For legal aid or an attorney: whether I have a claim and what it may be worth.
 
 ## Related Prompts
 
-- `legalprep_small_claims_hearing_preparation_and_testimony_practice.md` — prepare to present this packet and answer questions at the hearing.
+- `legalprep_small_claims_hearing_and_testimony.md` — prepare to present this packet and answer questions at the hearing.
 - `../../family-self-advocacy/legalprep_evidence_inventory_organizer.md` — build the exhibit index that feeds Section 4.
 - `../../family-self-advocacy/legalprep_case_chronology_builder.md` — build the dated timeline that feeds Section 2.
 - `../../family-self-advocacy/legalprep_court_process_explainer.md` — a plain-language explainer of court roles and process (confirm specifics with the self-help center).

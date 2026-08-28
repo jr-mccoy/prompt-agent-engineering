@@ -14,7 +14,7 @@ Prompts for **ministry-context teachers (M)** — people teaching the Bible to s
 | `biblical_ministry_seeker_intro_to_bible.md` | Honest, non-coercive Bible orientation for a curious skeptic/seeker | M | intermediate |
 | `biblical_ministry_family_devotions_designer.md` | Short, participatory, sustainable household devotions across mixed ages (**child-safety**) | M | beginner |
 | `biblical_ministry_special_program_session.md` | VBS/camp/retreat themed multi-session arc with energy/age scaling and takeaways (**child-safety**) | M | intermediate |
-| `biblical_ministry_biblical_care_conversation_foundations.md` | Scripture-rooted lay encouragement within non-clinical limits (**STRONG boundary guardrail**) | M | advanced |
+| `biblical_ministry_care_conversation_foundations.md` | Scripture-rooted lay encouragement within non-clinical limits (**STRONG boundary guardrail**) | M | advanced |
 
 ## Which prompt for which question
 
@@ -24,4 +24,4 @@ Prompts for **ministry-context teachers (M)** — people teaching the Bible to s
 - **"Introduce the Bible to a curious skeptic — honestly, no pressure"** → `biblical_ministry_seeker_intro_to_bible.md`
 - **"Make a short family devotion that works for all our ages and we can actually keep"** → `biblical_ministry_family_devotions_designer.md`
 - **"Plan a VBS / camp / retreat teaching arc"** → `biblical_ministry_special_program_session.md`
-- **"How do I bring Scripture into an encouragement conversation with someone struggling?"** → `biblical_ministry_biblical_care_conversation_foundations.md` (routes mental-health/abuse/self-harm/suicidality/crisis to licensed professionals and emergency services)
+- **"How do I bring Scripture into an encouragement conversation with someone struggling?"** → `biblical_ministry_care_conversation_foundations.md` (routes mental-health/abuse/self-harm/suicidality/crisis to licensed professionals and emergency services)

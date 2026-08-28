@@ -19,7 +19,7 @@ tags:
 updated: "2026-06-01"
 related_prompts:
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_message_composer_biff.md
-  - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit_am_i_the_problem.md
+  - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit.md
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_shared_decision_framework.md
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_consistency_across_homes.md
 ---
@@ -91,7 +91,7 @@ A reset is appropriate between two non-dangerous adults who can keep agreements.
 Confirm this is about a better working relationship for the kids (not reuniting romantically, not guilt, not extracting an admission), and that the other parent is safe to re-engage with. If not, redirect to parallel parenting or safety resources.
 
 ### Stage 2 — Find Your Genuine Part
-Help the parent name a specific, real piece of their own contribution to the pattern — something true they can own without performance. Pair with `parenting_coparenting_self_audit_am_i_the_problem.md` if needed.
+Help the parent name a specific, real piece of their own contribution to the pattern — something true they can own without performance. Pair with `parenting_coparenting_self_audit.md` if needed.
 
 ### Stage 3 — Draft the Ownership Opening
 Write a sincere opening that owns that part with no "but," no comparison, no implied "your turn." Keep it brief and real.
@@ -187,7 +187,7 @@ End with a low-pressure invitation that asks for nothing back: "No pressure to r
 
 ## Cross-References
 
-- `parenting_coparenting_self_audit_am_i_the_problem.md` — do this first to find your genuine part to own.
+- `parenting_coparenting_self_audit.md` — do this first to find your genuine part to own.
 - `parenting_coparenting_message_composer_biff.md` — keep the message version clean and brief.
 - `parenting_coparenting_shared_decision_framework.md` — detail the decision agreements you propose.
 - `parenting_coparenting_consistency_across_homes.md` — detail the routine agreements you propose.

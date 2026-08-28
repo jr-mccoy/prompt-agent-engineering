@@ -20,7 +20,7 @@ tags:
 updated: "2026-07-23"
 related_prompts:
   - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_defamation_concern_documentation_organizer.md
-  - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_online_content_removal_platform_report_preparer.md
+  - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_content_removal_platform_report.md
   - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_reputation_harm_impact_log.md
   - domain-legal/ip/legal_defamation_publicity_risk_screen.md
 ---
@@ -29,7 +29,7 @@ related_prompts:
 
 **When to use:** You want to ask the author, reviewer, publication, or outlet directly and reasonably to fix or take down a specific inaccurate statement, in plain language, before or instead of escalating — and you want the request to be factual and hard to dismiss.
 
-**When NOT to use:** You want to send a cease-and-desist, threaten a lawsuit, or demand money → that is a legal demand; route to an attorney (this prompt does not draft threats). You want the platform to remove it under its rules → use `legalprep_online_content_removal_platform_report_preparer.md`. You want to know whether you have a legal claim → route to an attorney (`legalprep_defamation_concern_documentation_organizer.md` organizes the facts). There is a safety threat or the publisher is someone you should not contact → Safety Block first; do not contact them directly.
+**When NOT to use:** You want to send a cease-and-desist, threaten a lawsuit, or demand money → that is a legal demand; route to an attorney (this prompt does not draft threats). You want the platform to remove it under its rules → use `legalprep_content_removal_platform_report.md`. You want to know whether you have a legal claim → route to an attorney (`legalprep_defamation_concern_documentation_organizer.md` organizes the facts). There is a safety threat or the publisher is someone you should not contact → Safety Block first; do not contact them directly.
 
 ---
 
@@ -196,7 +196,7 @@ For any legal demand or next step, I will consult an attorney.
 **By recipient:**
 - **News outlet / publication:** Use the outlet's correction/ombudsman channel if it has one; keep it short and point to the specific line and the fact; editors handle these routinely.
 - **Individual author / reviewer:** Keep it especially civil and low-conflict; a reasonable person-to-person request is often the fastest fix.
-- **Business / review platform poster:** Ask for the specific factual correction; if they refuse, the platform's factual-error channel is a separate track (`legalprep_online_content_removal_platform_report_preparer.md`).
+- **Business / review platform poster:** Ask for the specific factual correction; if they refuse, the platform's factual-error channel is a separate track (`legalprep_content_removal_platform_report.md`).
 
 **By situation/profile:**
 - **You have strong documentation:** Reference (do not over-argue) the supporting fact; offer to share the document — one clean fact is more persuasive than many.
@@ -208,6 +208,6 @@ For any legal demand or next step, I will consult an attorney.
 ## Related Prompts
 
 - `legalprep_defamation_concern_documentation_organizer.md` — organizes the verbatim statement and inaccuracy that feed this request.
-- `legalprep_online_content_removal_platform_report_preparer.md` — the platform-report track if the publisher refuses or is unreachable.
+- `legalprep_content_removal_platform_report.md` — the platform-report track if the publisher refuses or is unreachable.
 - `legalprep_reputation_harm_impact_log.md` — the dated harm log to keep alongside your records.
 - `../../ip/legal_defamation_publicity_risk_screen.md` — the attorney-side screen for whether a formal demand or claim is warranted.

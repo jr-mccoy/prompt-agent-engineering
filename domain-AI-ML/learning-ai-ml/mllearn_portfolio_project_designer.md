@@ -18,7 +18,7 @@ tags:
 updated: "2026-05-29"
 related_prompts:
   - domain-AI-ML/learning-ai-ml/mllearn_study_path_designer.md
-  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_a_paper_plan.md
+  - domain-AI-ML/learning-ai-ml/mllearn_reproduce_paper_plan.md
   - domain-AI-ML/learning-ai-ml/mllearn_kaggle_competition_strategy.md
 ---
 
@@ -32,7 +32,7 @@ related_prompts:
 - Choosing among project ideas for the strongest signal per unit of effort.
 
 **When NOT to Use:**
-- The project is a paper reproduction (use `mllearn_reproduce_a_paper_plan.md`).
+- The project is a paper reproduction (use `mllearn_reproduce_paper_plan.md`).
 - The goal is a competition strategy (use `mllearn_kaggle_competition_strategy.md`).
 
 ## Inputs / Context
@@ -146,5 +146,5 @@ Stretch: add the drift-monitoring dashboard for an MLOps signal.
 
 **Related Prompts:**
 - `mllearn_study_path_designer.md` — where this project fits in the learning sequence.
-- `mllearn_reproduce_a_paper_plan.md` — a reproduction as an alternative portfolio piece.
+- `mllearn_reproduce_paper_plan.md` — a reproduction as an alternative portfolio piece.
 - `mllearn_kaggle_competition_strategy.md` — a competition as a different skill signal.

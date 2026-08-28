@@ -24,7 +24,7 @@ tags:
 updated: "2026-06-08"
 related_prompts:
   - domain-psychology/populations/perinatal/psychology_perinatal_mood_anxiety_screen_interpretation.md
-  - domain-psychology/populations/perinatal/psychology_perinatal_treatment_options_with_pregnancy_lactation.md
+  - domain-psychology/populations/perinatal/psychology_perinatal_options_pregnancy_lactation.md
   - domain-psychology/risk-crisis/psychology_columbia_suicide_risk_assessment.md
   - domain-psychology/risk-crisis/psychology_civil_commitment_narrative.md
 ---

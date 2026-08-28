@@ -21,7 +21,7 @@ related_prompts:
   - domain-discipleship/mentor-equipping/discipleship_mentor_boundaries_and_referral.md
   - domain-discipleship/peer-and-accountability/discipleship_peer_cohort_facilitation.md
   - domain-discipleship/pairing-and-relationship/discipleship_relationship_covenant.md
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
 ---
 
 # Mentor Case Consultation
@@ -313,5 +313,5 @@ Produce exactly this structure. Held by the mentor and the third party; never gi
   the mentors' own room, which keeps mentees out; this is the bounded exception that rule creates
 - [`../pairing-and-relationship/discipleship_relationship_covenant.md`](../pairing-and-relationship/discipleship_relationship_covenant.md) —
   where the mentee is told in advance that consultation happens, which is what makes it permissible
-- [`domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md) —
+- [`domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md) —
   the lay care conversation and its limits, which is usually what the consultation is really about

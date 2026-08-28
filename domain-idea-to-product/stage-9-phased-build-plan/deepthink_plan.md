@@ -58,11 +58,7 @@ If items 1–4 are missing, ask before starting Phase 1.
 
 ## Operating Mode
 
-This prompt is **gated and interactive**. After every phase, stop and ask the user a focused question. Do not run all five phases in one shot.
-
-**Primary I/O mechanism:** When `AskUserQuestion` is available, use it at every gate with 2–4 specific options plus the implicit "Other." When unavailable (plain chat), use a clearly-labeled `**GATE:**` block and wait for the user's reply.
-
-**Use `AskUserQuestion` liberally throughout each phase**, not just at gates — for clarifying scope, prioritizing milestones, surfacing dependencies the user hasn't named, confirming risk tolerance, and pruning the plan to what fits actual capacity.
+Inherit the shared deep-think operating model from [`BACKBONE.md`](../../domain-deep-analysis/BACKBONE.md): run the five phases in order, stop at every gate, use `AskUserQuestion` when available, and fall back to a labeled `**GATE:**` block in plain chat. For plans, use in-phase questions for clarifying scope, prioritizing milestones, surfacing dependencies, confirming risk tolerance, and pruning to real capacity.
 
 ---
 
@@ -129,40 +125,13 @@ Options:
 
 **Goal:** Run the plan through perspectives the user couldn't easily generate alone.
 
-#### 3a. Run the core roster (always)
+#### 3a. Run the mandatory roster (always)
 
-For each of the six core perspectives, produce:
-- **Lens:** What this perspective is looking for in one sentence.
-- **Take on the plan:** 3–6 sentences. Specific to *this* plan, not generic.
-- **The single change to the plan this lens would push for** — or "no change, but here's what this lens flags."
-
-Core perspectives:
-
-1. **Red team** — actively trying to break the plan. Where does it fail under stress? What if a key assumption is false?
-2. **Steel-man (alternative path)** — strongest version of "do this differently or not at all." If someone proposed a sharply different plan, what's its best version?
-3. **Blind-spot scan** — what is the user not seeing? What history of similar plans is being ignored? What's politically or organizationally invisible to them?
-4. **Future-self (after execution)** — looking back from completion, what does the user wish they'd built into the plan from day one? What did they regret cutting?
-5. **Naive newcomer** — what questions does someone with no context ask about this plan? Which embedded assumptions are doing real work?
-6. **Affected party** — whoever is affected by execution other than the user (team, customers, downstream systems). What does the plan look like from inside their experience?
+Run the Phase 3 mandatory perspective roster defined in [`BACKBONE.md`](../../domain-deep-analysis/BACKBONE.md): red team, steel-man, blind-spot scan, future-self, naive newcomer, and affected party. For plans, each lens must include its lens statement, its take on the plan, and the single change or flag it would push for.
 
 #### 3b. Propose scope-specific additions
 
-For plans, candidates include:
-- **Implementer (executor)** — the person who has to actually do the work. Is the plan executable, or is it a strategy doc with implementation magic-handwaved? Where will they get stuck?
-- **Dependency owner** — for each external dependency, the person who controls it. Will they prioritize this when the user needs them to? What's their incentive?
-- **Scope-creep resister** — what scope additions will be tempting at week 4, week 8? Which ones are real (worth absorbing) and which are mission-drift?
-- **Abort-condition designer** — under what observable conditions should the user pull the plug rather than push through? (Most plans don't have abort conditions, which is why most plans get extended past usefulness.)
-
-Use `AskUserQuestion`:
-
-```
-Question: "Which of these plan-specific perspectives would add the most for your situation?"
-Options:
-- "[Specific perspective 1] — most relevant"
-- "[Specific perspective 2]"
-- "All of them"
-- "None — the core six are enough"
-```
+Use the plan/strategy candidate pool in [`BACKBONE.md`](../../domain-deep-analysis/BACKBONE.md) to propose 2–4 additional perspectives tailored to the user's execution context. Confirm the additions with `AskUserQuestion`/`**GATE:**` and run only the perspectives the user picks.
 
 #### 3c. After running all perspectives
 

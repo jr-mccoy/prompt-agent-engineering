@@ -31,8 +31,8 @@ anything what a mentor is obliged to pass on.
 |---|---|
 | [`discipleship_relationship_ending_or_transition.md`](discipleship_relationship_ending_or_transition.md) | A closing plan differentiated by reason: completion, mismatch, handoff, or withdrawal |
 | [`discipleship_long_relationship_recontracting.md`](discipleship_long_relationship_recontracting.md) | Renew, change shape, or release, for the relationship nobody decided to continue — with release requiring no justification |
-| [`discipleship_informal_pairing_without_a_program.md`](discipleship_informal_pairing_without_a_program.md) | **STRONG-GUARD.** Third party, floor, agreement, and escalation route where there is no institution — and a **"not like this"** output where the arrangement cannot be made safe |
-| [`discipleship_what_to_expect_as_a_mentee.md`](discipleship_what_to_expect_as_a_mentee.md) | The one-page account the person being discipled holds themselves: ordinary versus concerning side by side, what is never owed, and who to tell |
+| [`discipleship_informal_pairing_no_program.md`](discipleship_informal_pairing_no_program.md) | **STRONG-GUARD.** Third party, floor, agreement, and escalation route where there is no institution — and a **"not like this"** output where the arrangement cannot be made safe |
+| [`discipleship_what_to_expect_as_mentee.md`](discipleship_what_to_expect_as_mentee.md) | The one-page account the person being discipled holds themselves: ordinary versus concerning side by side, what is never owed, and who to tell |
 
 ## Related
 

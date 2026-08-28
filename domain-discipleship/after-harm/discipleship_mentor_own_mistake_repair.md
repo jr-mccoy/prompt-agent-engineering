@@ -21,7 +21,7 @@ related_prompts:
   - domain-discipleship/mentor-equipping/discipleship_mentor_boundaries_and_referral.md
   - domain-discipleship/after-harm/discipleship_dependency_and_over_attachment.md
   - domain-discipleship/pairing-and-relationship/discipleship_relationship_ending_or_transition.md
-  - domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md
+  - domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md
 ---
 
 # When the Mentor Got It Wrong
@@ -315,5 +315,5 @@ Produce exactly this structure. The mentor holds this; the mentee receives only 
   where the problem is the relationship's shape rather than a specific act
 - [`../pairing-and-relationship/discipleship_relationship_ending_or_transition.md`](../pairing-and-relationship/discipleship_relationship_ending_or_transition.md) —
   where the mentee chooses to end it, which is an ordinary outcome and not a verdict
-- [`domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md) —
+- [`domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md`](../../domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md) —
   the lay care conversation and its limits, for the conversation this repair sits inside

@@ -21,7 +21,7 @@ updated: "2026-06-01"
 related_prompts:
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_high_conflict_response_strategy.md
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_message_composer_biff.md
-  - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit_am_i_the_problem.md
+  - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit.md
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_with_unsafe_or_absent_parent.md
 ---
 
@@ -187,5 +187,5 @@ Give a non-blaming repair script: acknowledge the tension ("That felt a little t
 
 - `parenting_coparenting_high_conflict_response_strategy.md` — the broader disengagement strategy this moment fits into.
 - `parenting_coparenting_message_composer_biff.md` — handle the disputed logistic in writing afterward, calmly.
-- `parenting_coparenting_self_audit_am_i_the_problem.md` — check whether you're contributing to the flare-ups.
+- `parenting_coparenting_self_audit.md` — check whether you're contributing to the flare-ups.
 - `parenting_coparenting_with_unsafe_or_absent_parent.md` — when exchanges involve real danger.

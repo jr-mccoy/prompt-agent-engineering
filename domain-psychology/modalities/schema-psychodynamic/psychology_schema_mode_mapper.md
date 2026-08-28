@@ -21,7 +21,7 @@ tags:
 intended_use: model-testing
 updated: "2026-05-19"
 related_prompts:
-  - domain-psychology/modalities/schema-psychodynamic/psychology_psychodynamic_transference_focused_formulation.md
+  - domain-psychology/modalities/schema-psychodynamic/psychology_transference_focused_formulation.md
   - domain-psychology/modalities/schema-psychodynamic/psychology_psychodynamic_session_process_note.md
   - domain-psychology/modalities/ifs-parts/psychology_ifs_parts_mapping.md
 ---

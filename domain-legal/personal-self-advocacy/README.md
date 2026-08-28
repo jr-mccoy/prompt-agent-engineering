@@ -91,7 +91,7 @@ the legal questions to an attorney or the right authority.
 | File | Use |
 |---|---|
 | `legalprep_defamation_concern_documentation_organizer.md` | Capture the exact false statement, publication, audience, and harm for counsel to assess |
-| `legalprep_online_content_removal_platform_report_preparer.md` | Draft *your own* platform/search content report (self-submit) |
+| `domain-legal/personal-self-advocacy/defamation-reputation/legalprep_content_removal_platform_report.md` | Draft *your own* platform/search content report (self-submit) |
 | `legalprep_correction_retraction_request_preparer.md` | Draft *your own* plain correction/retraction request (self-submit; not a legal demand) |
 | `legalprep_reputation_harm_impact_log.md` | Dated, sourced log of concrete reputational harms |
 
@@ -120,7 +120,7 @@ the legal questions to an attorney or the right authority.
 ### `identity-theft/`
 | File | Use |
 |---|---|
-| `legalprep_identity_theft_documentation_and_report_preparer.md` | Document the theft and prepare your IdentityTheft.gov / police / creditor reports (self-submit) |
+| `domain-legal/personal-self-advocacy/identity-theft/legalprep_identity_theft_report_preparer.md` | Document the theft and prepare your IdentityTheft.gov / police / creditor reports (self-submit) |
 | `legalprep_fraud_dispute_narrative_preparer.md` | Draft *your own* dispute letters to bureaus/banks/creditors (self-submit) |
 
 ### `debt-collection/`
@@ -133,7 +133,7 @@ the legal questions to an attorney or the right authority.
 | File | Use |
 |---|---|
 | `legalprep_small_claims_case_preparation_organizer.md` | Organize facts, evidence, amount, and a "what to bring" checklist |
-| `legalprep_small_claims_hearing_preparation_and_testimony_practice.md` | Prepare exhibits and practice answering factual questions calmly |
+| `domain-legal/personal-self-advocacy/small-claims/legalprep_small_claims_hearing_and_testimony.md` | Prepare exhibits and practice answering factual questions calmly |
 
 ## How These Compose — the "Organize / Prepare → Route" Pipeline
 

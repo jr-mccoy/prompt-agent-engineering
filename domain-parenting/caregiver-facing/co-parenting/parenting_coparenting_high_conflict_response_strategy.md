@@ -21,7 +21,7 @@ updated: "2026-06-01"
 related_prompts:
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_message_composer_biff.md
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_deescalation_in_front_of_kids.md
-  - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit_am_i_the_problem.md
+  - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit.md
   - domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_with_unsafe_or_absent_parent.md
 ---
 
@@ -206,6 +206,6 @@ Parallel / Cooperative — because [reasoning tied to inputs]
 
 - `parenting_coparenting_message_composer_biff.md` — write the individual messages this strategy routes through.
 - `parenting_coparenting_deescalation_in_front_of_kids.md` — for live, in-person flare-ups at exchanges.
-- `parenting_coparenting_self_audit_am_i_the_problem.md` — check that your own behavior isn't feeding the loop.
+- `parenting_coparenting_self_audit.md` — check that your own behavior isn't feeding the loop.
 - `parenting_coparenting_with_unsafe_or_absent_parent.md` — when "high-conflict" is actually unsafe.
 - `parenting_custody_parenting_plan_builder.md` — make the plan specific enough to remove discretion.

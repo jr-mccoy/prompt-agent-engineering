@@ -17,7 +17,7 @@ tags:
   - problem-framing
 updated: "2026-05-29"
 related_prompts:
-  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_an_ml_problem.md
+  - domain-AI-ML/problem-framing-scoping/mlframe_is_this_ml_problem.md
   - domain-AI-ML/problem-framing-scoping/mlframe_feasibility_risk_assessment.md
   - domain-AI-ML/problem-framing-scoping/mlframe_data_readiness_assessment.md
 ---
@@ -32,7 +32,7 @@ related_prompts:
 - A team is debating "just use the API" versus "fine-tune our own."
 
 **When NOT to Use:**
-- You haven't confirmed ML is the right approach (use `mlframe_is_this_an_ml_problem.md`).
+- You haven't confirmed ML is the right approach (use `mlframe_is_this_ml_problem.md`).
 - The choice is purely a model-architecture question within "build" — out of scope here.
 
 ## Inputs / Context
@@ -151,6 +151,6 @@ Private-vendor per-doc quote; OSS model quality on a 500-doc labeled sample; ser
 - **RP-02 (Audience-Specific Framing):** TCO framing serves both eng and budget owners.
 
 **Related Prompts:**
-- `mlframe_is_this_an_ml_problem.md` — confirm ML is warranted before sourcing it.
+- `mlframe_is_this_ml_problem.md` — confirm ML is warranted before sourcing it.
 - `mlframe_feasibility_risk_assessment.md` — surface execution risks for the chosen path.
 - `mlframe_data_readiness_assessment.md` — confirm data suffices before choosing fine-tune.

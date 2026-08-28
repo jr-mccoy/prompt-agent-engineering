@@ -18,7 +18,7 @@ updated: "2026-06-25"
 related_prompts:
   - domain-biblical-studies/sermon-devotional/biblical_sermon_series_planner.md
   - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_curriculum_scope_sequence.md
-  - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_multi_service_teaching_coordination.md
+  - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_multi_service_coordination.md
 ---
 
 # Annual Teaching Calendar

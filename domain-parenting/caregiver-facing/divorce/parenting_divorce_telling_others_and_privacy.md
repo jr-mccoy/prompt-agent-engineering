@@ -18,7 +18,7 @@ tags:
   - narrative
 updated: "2026-06-01"
 related_prompts:
-  - domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_the_kids_script.md
+  - domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_kids_script.md
   - domain-parenting/caregiver-facing/divorce/parenting_divorce_hard_questions_answer_bank.md
   - domain-parenting/caregiver-facing/divorce/parenting_divorce_shield_kids_from_conflict.md
   - domain-parenting/caregiver-facing/cross-age/parenting_teacher_partnership_email_composer.md
@@ -186,7 +186,7 @@ Commit to keeping your disclosures non-disparaging and need-to-know, because the
 
 ## Cross-References
 
-- `parenting_divorce_telling_the_kids_script.md` — tell the kids first; then plan telling others.
+- `parenting_divorce_telling_kids_script.md` — tell the kids first; then plan telling others.
 - `parenting_divorce_hard_questions_answer_bank.md` — language the child (and you) can use.
 - `parenting_divorce_shield_kids_from_conflict.md` — keeping the village out of the conflict.
 - `domain-parenting/caregiver-facing/cross-age/parenting_teacher_partnership_email_composer.md` — drafting the heads-up note to school.

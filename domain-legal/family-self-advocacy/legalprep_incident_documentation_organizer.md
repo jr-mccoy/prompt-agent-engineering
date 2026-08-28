@@ -24,7 +24,7 @@ related_prompts:
   - domain-legal/family-self-advocacy/legalprep_evidence_inventory_organizer.md
   - domain-legal/family-self-advocacy/legalprep_witness_and_source_map.md
   - domain-legal/family-self-advocacy/legalprep_attorney_handoff_brief.md
-  - domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_documentation_organizer.md
+  - domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_organizer.md
 ---
 
 **Purpose:** Help you turn a recalled incident into a structured, factual write-up that your attorney can use and a court can credit. The write-up captures the date and time, location, who was present, what you observed directly (first-hand), what you heard from others (hearsay — clearly labeled), supporting documents, and potential witnesses. The single most important skill this prompt teaches is **separating what you saw and heard yourself from what someone else told you** — courts treat those two categories very differently, and mixing them damages credibility. This organizes **your own recollection** — it does **not** assess the legal significance of the incident, predict how a court will view it, or tell you whether it "proves" anything.
@@ -226,4 +226,4 @@ raise hearsay or foundation concerns, and next steps.
 - `legalprep_evidence_inventory_organizer.md` — each incident record and its supporting documents become entries in the exhibit index.
 - `legalprep_witness_and_source_map.md` — the witnesses listed here are mapped to corroborating facts in the witness/source map.
 - `legalprep_attorney_handoff_brief.md` — incident records feed the evidence section of the handoff package.
-- `parenting_custody_changed_circumstances_documentation_organizer.md` — for organizing a series of incidents into a changed-circumstances record for post-order modification work.
+- `domain-parenting/caregiver-facing/custody/parenting_custody_changed_circumstances_organizer.md` — for organizing a series of incidents into a changed-circumstances record for post-order modification work.

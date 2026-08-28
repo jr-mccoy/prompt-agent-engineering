@@ -18,7 +18,7 @@ tags:
   - evidence
 updated: "2026-07-23"
 related_prompts:
-  - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_online_content_removal_platform_report_preparer.md
+  - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_content_removal_platform_report.md
   - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_correction_retraction_request_preparer.md
   - domain-legal/personal-self-advocacy/defamation-reputation/legalprep_reputation_harm_impact_log.md
   - domain-legal/ip/legal_defamation_publicity_risk_screen.md
@@ -218,7 +218,7 @@ truth / opinion / public-figure standards apply in [jurisdiction], and any next 
 
 ## Related Prompts
 
-- `legalprep_online_content_removal_platform_report_preparer.md` — to draft your own factual report of the content to the platform under its policies (separate from any legal remedy).
+- `legalprep_content_removal_platform_report.md` — to draft your own factual report of the content to the platform under its policies (separate from any legal remedy).
 - `legalprep_correction_retraction_request_preparer.md` — to draft your own plain correction/retraction request to the person or outlet.
 - `legalprep_reputation_harm_impact_log.md` — the dated harm log that feeds the "concrete harm" section here.
 - `../../ip/legal_defamation_publicity_risk_screen.md` — the attorney-side screen your lawyer may use to assess the matter.

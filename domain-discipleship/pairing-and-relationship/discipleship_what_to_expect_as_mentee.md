@@ -18,7 +18,7 @@ tags:
 updated: "2026-08-04"
 related_prompts:
   - domain-discipleship/pairing-and-relationship/discipleship_relationship_covenant.md
-  - domain-discipleship/pairing-and-relationship/discipleship_informal_pairing_without_a_program.md
+  - domain-discipleship/pairing-and-relationship/discipleship_informal_pairing_no_program.md
   - domain-discipleship/after-harm/discipleship_harmed_by_previous_discipling.md
   - domain-discipleship/initiation-and-catechesis/discipleship_membership_preparation.md
   - domain-biblical-studies/learner-self-study/biblical_learner_self_directed_study_plan.md
@@ -48,7 +48,7 @@ find yourself wondering whether something is normal.
   `discipleship_relationship_covenant.md`, which is the artifact you both sign; this one is yours alone and
   comes before it.
 - You are setting up a relationship where there is no program at all — use
-  `discipleship_informal_pairing_without_a_program.md`, which handles the structure; this handles what you
+  `discipleship_informal_pairing_no_program.md`, which handles the structure; this handles what you
   should expect inside it.
 - You were harmed in a previous discipling relationship and are deciding about a new one — use
   `../after-harm/discipleship_harmed_by_previous_discipling.md`.
@@ -301,7 +301,7 @@ A good mentor will be glad you have this. If someone isn't, that's worth noticin
 
 - [`discipleship_relationship_covenant.md`](discipleship_relationship_covenant.md) —
   the mutual written agreement; this document is what you read before agreeing to one
-- [`discipleship_informal_pairing_without_a_program.md`](discipleship_informal_pairing_without_a_program.md) —
+- [`discipleship_informal_pairing_no_program.md`](discipleship_informal_pairing_no_program.md) —
   setting up the relationship where there is no program, policy, or lead
 - [`../after-harm/discipleship_harmed_by_previous_discipling.md`](../after-harm/discipleship_harmed_by_previous_discipling.md) —
   where a previous relationship caused harm and you are deciding about a new one; this is its reference

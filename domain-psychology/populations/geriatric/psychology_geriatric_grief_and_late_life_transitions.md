@@ -24,7 +24,7 @@ tags:
 updated: "2026-06-08"
 related_prompts:
   - domain-psychology/populations/geriatric/psychology_geriatric_intake_with_polypharmacy_review.md
-  - domain-psychology/populations/geriatric/psychology_geriatric_depression_vs_dementia_differential.md
+  - domain-psychology/populations/geriatric/psychology_geriatric_depression_vs_dementia.md
   - domain-psychology/populations/cross-population/psychology_grief_complicated_vs_normal_assessment.md
   - domain-psychology/risk-crisis/psychology_columbia_suicide_risk_assessment.md
 ---
@@ -50,7 +50,7 @@ Produce a structured assessment-and-treatment scaffold for an older adult (65+) 
 
 ## When NOT to Use
 
-- For the differential between depression and dementia: route to `psychology_geriatric_depression_vs_dementia_differential.md`.
+- For the differential between depression and dementia: route to `psychology_geriatric_depression_vs_dementia.md`.
 - For a full intake/medication-falls baseline: pair with `psychology_geriatric_intake_with_polypharmacy_review.md`.
 - For the general (non-geriatric) complicated-vs-normal grief differential, or when population-general structure is sufficient: use `psychology_grief_complicated_vs_normal_assessment.md`.
 - When acute suicidality or a safety crisis is present: stabilize and route to the risk-crisis prompts first; this scaffold is not a crisis protocol.
