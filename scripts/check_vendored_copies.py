@@ -122,6 +122,52 @@ def comparable(text: str, path: str, copy_to_canonical: dict[str, str] | None = 
     return text.strip() + "\n"
 
 
+def is_subtree_mirror(canonical: str, copy: str) -> bool:
+    """
+    True when the copy reproduces the canonical's directory shape.
+
+    `authoring/templates/X.md` -> `portable-prompt-system/resource-patterns/templates/X.md`
+    keeps its parent directory name, so relative links still resolve unchanged.
+    `domain-deep-analysis/X.md` -> `domain-idea-to-product/stage-6-.../X.md` does
+    not, so its links have to be rewritten.
+    """
+    return posixpath.basename(posixpath.dirname(canonical)) == posixpath.basename(
+        posixpath.dirname(copy)
+    )
+
+
+def literal(text: str) -> str:
+    """Normalize for the subtree-mirror case: only `category:` may differ."""
+    return CATEGORY_RE.sub("category: <normalized>", text).strip() + "\n"
+
+
+def in_sync(
+    ctext: str, canonical: str, ptext: str, copy: str, copy_to_canonical: dict[str, str]
+) -> bool:
+    """
+    True when a copy still matches its canonical, under either vendoring style.
+
+    A copy is vendored one of two ways, and each keeps its links valid
+    differently:
+
+    - **Subtree mirror** (``portable-prompt-system/resource-patterns/`` mirrors
+      ``authoring/``): the whole directory shape is reproduced, so relative links
+      are correct *unchanged* and the file is byte-identical.
+    - **Flat re-file** (``domain-idea-to-product/stage-N/`` gathers prompts from
+      many domains): the file lands at a different depth, so its links must be
+      rewritten to still resolve.
+
+    Comparing only resolved links would flag every subtree mirror; comparing only
+    raw text would flag every flat re-file. A pair is in sync if it matches under
+    either reading.
+    """
+    if literal(ctext) == literal(ptext):
+        return True
+    return comparable(ctext, canonical, copy_to_canonical) == comparable(
+        ptext, copy, copy_to_canonical
+    )
+
+
 def category_of(text: str) -> str | None:
     match = CATEGORY_RE.search(text)
     return match.group(0) if match else None
@@ -145,7 +191,7 @@ def main() -> int:
 
         ctext = cpath.read_text(encoding="utf-8")
         ptext = ppath.read_text(encoding="utf-8")
-        if comparable(ctext, canonical, copy_to_canonical) == comparable(ptext, copy, copy_to_canonical):
+        if in_sync(ctext, canonical, ptext, copy, copy_to_canonical):
             continue
 
         drifted.append((canonical, copy))
@@ -159,7 +205,11 @@ def main() -> int:
                 print(f"    {line}")
 
         if args.fix:
-            rebuilt = rewrite_links(ctext, canonical, copy)
+            # Restore the copy in its own vendoring style: a subtree mirror keeps
+            # the canonical's links verbatim (its directory shape matches), a flat
+            # re-file needs them re-pointed for its new depth. Rewriting a
+            # mirror's links would break exactly what makes it a mirror.
+            rebuilt = ctext if is_subtree_mirror(canonical, copy) else rewrite_links(ctext, canonical, copy)
             copy_category = category_of(ptext)
             if copy_category:
                 rebuilt = CATEGORY_RE.sub(lambda _: copy_category, rebuilt, count=1)
