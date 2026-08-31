@@ -692,6 +692,6 @@ AGENTS (parallel workers) invoke → SKILLS (domain containers) contain → COMM
 
 ---
 
-**Repository:** jr-mccoy/Prompting-guides-public
+**Repository:** jr-mccoy/prompt-agent-engineering
 **Last Updated:** 2025-12-27
 **Version:** 1.0.0

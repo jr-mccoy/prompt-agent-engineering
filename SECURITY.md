@@ -11,7 +11,7 @@ If you find any of the following, please report it **privately** rather than ope
 - A prompt that could materially mislead in a high-stakes domain (e.g. clinical, legal, financial) in a way that looks like a genuine safety problem
 - Any vulnerability in the helper scripts under `scripts/` or the toolkits
 
-**Contact:** Report privately via GitHub's [Security Advisories](https://github.com/jr-mccoy/Prompting-guides-public/security/advisories/new) (Security → Report a vulnerability).
+**Contact:** Report privately via GitHub's [Security Advisories](https://github.com/jr-mccoy/prompt-agent-engineering/security/advisories/new) (Security → Report a vulnerability).
 
 Please include the file path(s), a short description, and (if relevant) how to reproduce. We aim to acknowledge reports within a few days. Public disclosure of an accidentally committed secret should be avoided until it has been rotated and purged.
 

@@ -1,29 +1,41 @@
-# Claude Agent Guide for Prompting-Guides Repository
+# Prompt & Agent Engineering — Agent Guide
 
-**Purpose:** This guide helps AI agents (like Claude Code) work effectively with this repository of ~2000 AI prompts and coding agent resources.
+**Purpose:** This guide helps AI agents (like Claude Code) work effectively with the Prompt & Agent Engineering (PAE) repository.
+
+> **This file is the interim canonical routing reference for the repository.**
+> `AGENTS.md`, `START_HERE_FOR_AI.md`, and other client bootstrap files point
+> here rather than maintaining their own routing tables. Executable routing
+> (`pae route`) does not exist yet; see [`ROADMAP.md`](ROADMAP.md).
 
 ---
 
 ## Repository Overview
 
-This is a comprehensive collection of AI prompts and coding agent resources designed for:
+This is a governed collection of AI prompts and agentic resources — the **PAE Registry** — designed for:
 - **AI coding agents** (Claude Code, Cursor, GitHub Copilot)
 - **Developers** building with AI
 - **Teams** standardizing prompt quality
 - **Learners** studying prompt engineering
 
-**Total Resources:**
-- ~2000 prompts across 22 domain directories
-- 327 active prompt engineering techniques across 18 categories
-- Coding agent skills, agents, commands, and personas under `domain-agentic-resources/`
-- 41 skill-building patterns
+**Total resources** (generated — do not hand-edit; run `python3 scripts/generate_repo_facts.py --write`):
+
+<!-- REPO_FACTS:BEGIN name=counts -->
+<!-- REPO_FACTS_DECLARATION: {"active_techniques": 327, "agentic_resource_artifacts": 799, "agents": 143, "bundled_component_files": 667, "commands": 115, "domain_command_artifacts": 10, "domain_directories": 44, "domain_prompt_artifacts": 4121, "indexed_artifacts": 5597, "personas": 53, "skills": 330, "technique_categories": 18, "unindexed_domain_directories": 0} -->
+- **4121 domain prompts** across 44 `domain-*` directories.
+- **330 skills, 143 agents, 115 commands, 53 personas** under `domain-agentic-resources/`.
+- **327 active techniques** across 18 categories in `techniques/MASTER_TECHNIQUE_INDEX.md`.
+- `PROMPT_INDEX.json` holds **5597 indexed artifacts**. That total is not a prompt count: it mixes the 4121 domain prompts with 10 domain slash commands, 799 agentic resources, and 667 bundled component files (a parent resource's `references/`, `assets/`, `cards/` and similar).
+- All 44 `domain-*` directories are covered by the index allowlist (`DOMAIN_DIRS` in `scripts/generate_prompt_index.py`).
+<!-- REPO_FACTS:END name=counts -->
+
+Membership rules for each category live in [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json).
 
 ---
 
 ## Repository Structure
 
 ```
-prompting-guides/
+prompt-agent-engineering/
 ├── domain-software-engineering/    # Code analysis, testing, DevOps, cloud, API, mobile, .NET, Java/Spring, embedded, Electron/SmartTV, localization, algorithms, vibe-coding rescue (~452)
 │   ├── analysis/                   # Security, performance, quality, architecture
 │   ├── testing/                    # Unit, E2E, accessibility testing
@@ -3089,7 +3101,7 @@ Examples:
 
 **Remember:** `authoring/` = authoring system (how to build), `domain-agentic-resources/` = implementation library (what's built), `domain-*/` = organized prompts by domain
 
-This approach maximizes the value of the ~2000 prompts and coding agent resources while maintaining flexibility to build custom solutions when truly needed.
+This approach maximizes the value of the existing registry (see the generated counts at the top of this file) while maintaining flexibility to build custom solutions when truly needed.
 
 ---
 

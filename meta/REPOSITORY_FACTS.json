@@ -1,0 +1,39 @@
+{
+  "schema": "repository-facts-v1",
+  "definitions": {
+    "indexed_artifacts": "Every entry in PROMPT_INDEX.json. A mixed population: domain prompts, agentic resources, and bundled component files. Not a prompt count.",
+    "bundled_component_files": "Indexed entries with a assets/, cards/, evals/, fixtures/, references/, resources/, scripts/ directory between the top-level root and the filename. These are attachments of a parent resource, not resources in their own right.",
+    "agentic_resource_artifacts": "Indexed entries under domain-agentic-resources/ that are not inside a bundled-component directory: skills, agents, commands, personas and the directory's own documentation.",
+    "domain_command_artifacts": "Indexed entries outside domain-agentic-resources/ that sit in a commands/ directory. These are slash commands filed alongside a domain's prompts.",
+    "domain_prompt_artifacts": "Indexed entries outside domain-agentic-resources/ that are neither inside a bundled-component directory nor inside a commands/ directory.",
+    "skills": "Files matching domain-agentic-resources/skills/**/SKILL.md.",
+    "agents": "Markdown files under domain-agentic-resources/agents/**, excluding README.md.",
+    "commands": "Markdown files under domain-agentic-resources/commands/**, excluding README.md.",
+    "personas": "Markdown files under domain-agentic-resources/personas/**, excluding README.md.",
+    "active_techniques": "Non-deprecated technique IDs structurally defined in techniques/MASTER_TECHNIQUE_INDEX.md, as parsed by scripts/validate_technique_catalog.py.",
+    "catalogued_technique_ids": "All technique IDs defined in the master index, active or deprecated.",
+    "deprecated_technique_stubs": "Catalogued technique IDs marked deprecated or merged.",
+    "technique_categories": "Distinct technique ID prefixes in the master index.",
+    "domain_directories": "Top-level directories named domain-*.",
+    "indexed_domain_directories": "domain-* directories present in the DOMAIN_DIRS allowlist of scripts/generate_prompt_index.py, and therefore covered by PROMPT_INDEX.json.",
+    "unindexed_domain_directories": "domain-* directories absent from that allowlist. Their content does not appear in PROMPT_INDEX.json and is excluded from every indexed count above."
+  },
+  "facts": {
+    "indexed_artifacts": 5597,
+    "bundled_component_files": 667,
+    "agentic_resource_artifacts": 799,
+    "domain_command_artifacts": 10,
+    "domain_prompt_artifacts": 4121,
+    "skills": 330,
+    "agents": 143,
+    "commands": 115,
+    "personas": 53,
+    "active_techniques": 327,
+    "catalogued_technique_ids": 336,
+    "deprecated_technique_stubs": 9,
+    "technique_categories": 18,
+    "domain_directories": 44,
+    "indexed_domain_directories": 44,
+    "unindexed_domain_directories": 0
+  }
+}

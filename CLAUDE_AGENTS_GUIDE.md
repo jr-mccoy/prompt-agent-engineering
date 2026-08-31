@@ -1,4 +1,4 @@
-# Claude & AI Agents Guide for Prompting-Guides Repository
+# Claude & AI Agents Guide for Prompt & Agent Engineering
 
 **A comprehensive guide for using this repository with Claude Code, Claude Chat, and other AI agents**
 
@@ -70,8 +70,8 @@ This repository works with any LLM-powered coding assistant:
 
 ```bash
 # Clone this repository
-git clone https://github.com/jr-mccoy/Prompting-guides-public.git
-cd Prompting-guides
+git clone https://github.com/jr-mccoy/prompt-agent-engineering.git
+cd prompt-agent-engineering
 
 # Start Claude Code
 claude-code
@@ -1070,7 +1070,7 @@ This repository is more than a collection of prompts—it's a **comprehensive sy
 **Happy Coding with Claude!** 🚀
 
 *For issues, questions, or contributions, visit:*
-*https://github.com/jr-mccoy/Prompting-guides-public*
+*https://github.com/jr-mccoy/prompt-agent-engineering*
 
 ---
 

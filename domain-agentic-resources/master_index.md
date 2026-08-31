@@ -552,7 +552,7 @@ See `documentation/INTEGRATION_WITH_PROMPTS.md` for 40-60% cost savings strategi
 
 ---
 
-**Repository:** jr-mccoy/Prompting-guides-public
+**Repository:** jr-mccoy/prompt-agent-engineering
 **Directory:** domain-agentic-resources/
 **Last Updated:** 2025-12-27
 **Version:** 1.0.0

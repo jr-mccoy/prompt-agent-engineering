@@ -14,6 +14,13 @@ secrets; **manual token upload** is the fallback if you want to publish by hand.
 No API tokens are stored anywhere. GitHub mints a short-lived OIDC token per run.
 The workflow lives at [`.github/workflows/release.yml`](.github/workflows/release.yml).
 
+> **Not currently executable as-is.** GitHub only runs workflows found in the
+> **repository root** `.github/workflows/`. This file sits in
+> `continuity-kit/.github/workflows/`, so GitHub never schedules it. Publishing
+> via Path A requires promoting it (or an equivalent) to the repository-root
+> workflow directory first. It is kept here as the reviewed release recipe, not
+> as a live pipeline. Nothing has been published from it.
+
 ### One-time setup (per index)
 
 1. Go to **https://pypi.org/manage/account/publishing/** (and, for the dry-run,
@@ -21,7 +28,7 @@ The workflow lives at [`.github/workflows/release.yml`](.github/workflows/releas
 2. Add a **pending publisher** with:
    - **PyPI project name:** `continuity-kit`
    - **Owner:** `jr-mccoy`
-   - **Repository:** `prompting-guides`
+   - **Repository:** `prompt-agent-engineering`
    - **Workflow name:** `release.yml`
    - **Environment:** `pypi` (on PyPI) / `testpypi` (on TestPyPI)
 3. (Optional but recommended) In the GitHub repo, create matching

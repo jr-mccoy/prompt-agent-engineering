@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Naming Convention Validator for Prompting-Guides Repository
+Naming Convention Validator for the Prompt & Agent Engineering repository
 
 This script validates that markdown files follow the repository's naming conventions.
 

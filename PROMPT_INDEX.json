@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated": "2026-08-28",
-    "total_prompts": 5588,
-    "domains": 43,
-    "prompts_with_frontmatter": 4653,
-    "prompts_without_frontmatter": 935
+    "generated": "2026-08-31",
+    "total_prompts": 5597,
+    "domains": 44,
+    "prompts_with_frontmatter": 4661,
+    "prompts_without_frontmatter": 936
   },
   "prompts": [
     {
@@ -117225,6 +117225,277 @@
         "domain-business-strategy/ambition-leverage/ambition_insight_to_action_workflow.md"
       ],
       "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_planning_coding_roadmap.md",
+      "filename": "product_planning_coding_roadmap.md",
+      "title": "Coding Roadmap — Meta-Scaffolding Bridge from Approved Spec to First Commit",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Draft a coding roadmap before writing any code: architecture sketch, module boundaries, build sequencing, interface contracts, and a risk list. The bridge between an approved spec/PRD and the first commit — narrower than a PRD, broader than a sprint plan.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "DT-01",
+        "CM-02",
+        "DS-06",
+        "QA-01"
+      ],
+      "keywords": [
+        "technical-planning",
+        "architecture",
+        "build-sequencing",
+        "interface-contracts",
+        "pre-implementation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-06-07",
+      "related_prompts": [
+        "domain-product-management/prompts/product_create_prd.md",
+        "domain-product-management/prompts/product_delivery_sprint_planner.md",
+        "domain-idea-to-product/stage-8-architecture-design/architecture_tech_stack_selector.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_competitor_feature_teardown.md",
+      "filename": "product_competitor_feature_teardown.md",
+      "title": "Competitor Feature Teardown — Comparison Matrix, Pattern Surfacing, and Defensible Differentiation",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Run a feature-by-feature teardown across 3+ named competitors: build a comparison matrix, surface patterns and table-stakes vs. differentiators, identify gaps, and recommend a defensible position. Requires real named competitors; never fabricates competitor features and flags every claim the user must verify.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-06",
+        "CM-02",
+        "QA-04"
+      ],
+      "keywords": [
+        "competitive-analysis",
+        "feature-comparison",
+        "product-strategy",
+        "differentiation",
+        "market-positioning"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-06-07",
+      "related_prompts": [
+        "domain-business-strategy/research/research_competitive_landscape.md",
+        "domain-product-management/prompts/product_product_idea_vetting_will_it_fly_or_flop.md",
+        "domain-software-engineering/analysis/business/swot_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_create_prd.md",
+      "filename": "product_create_prd.md",
+      "title": "Create a PRD via Interrogation (MVP-First)",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Interrogative PRD builder that gathers requirements through disciplined questioning, pushes back on scope, and produces an MVP-centric Product Requirements Document with explicit out-of-scope calls.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-01",
+        "CM-02",
+        "DS-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "product-management",
+        "prd",
+        "requirements",
+        "mvp",
+        "scope-control",
+        "stakeholder-alignment"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-04-23",
+      "related_prompts": [
+        "domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md",
+        "domain-product-management/prompts/product_delivery_sprint_planner.md",
+        "domain-product-management/prompts/product_market_size_calculator.md",
+        "domain-product-management/templates/prd_template.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_feature_requirements_extraction.md",
+      "filename": "product_feature_requirements_extraction.md",
+      "title": "Feature Requirements Extraction from Stakeholder Conversations",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Turn raw stakeholder conversation notes into structured functional and non-functional requirements, with open questions, explicit out-of-scope cuts, and a PRD-readiness check.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "CM-01",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "requirements",
+        "stakeholder-input",
+        "prd",
+        "scope",
+        "product-management"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-08-28",
+      "related_prompts": [
+        "domain-product-management/prompts/product_create_prd.md",
+        "domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_market_size_calculator.md",
+      "filename": "product_market_size_calculator.md",
+      "title": "Market Size (TAM/SAM/SOM) — Rapid or Comprehensive Mode",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Calculate Total / Serviceable / Obtainable market sizes using three independent methodologies (top-down, bottom-up, value-based) and triangulate. Runs in rapid mode (time-boxed, single-source-per-method) or comprehensive mode (multi-source, explicit sensitivity analysis).",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "product-management",
+        "market-sizing",
+        "tam-sam-som",
+        "business-strategy",
+        "estimation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-04-23",
+      "related_prompts": [
+        "domain-product-management/prompts/product_create_prd.md",
+        "domain-business-strategy/research/research_competitive_landscape.md",
+        "domain-software-engineering/analysis/business/business_model_canvas_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_delivery_sprint_planner.md",
+      "filename": "product_delivery_sprint_planner.md",
+      "title": "Product Delivery Sprint Planner",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Plan a cross-functional product delivery sprint from an approved PRD: decompose into user stories with acceptance criteria, map dependencies, assign owners, surface risks, and produce a daily-standup-ready backlog with an explicit definition of done.",
+      "techniques": [
+        "ST-02",
+        "DS-02",
+        "CM-02",
+        "RT-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "product-management",
+        "sprint-planning",
+        "user-stories",
+        "delivery",
+        "dependencies",
+        "acceptance-criteria"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-04-23",
+      "related_prompts": [
+        "domain-product-management/prompts/product_create_prd.md",
+        "domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md",
+        "domain-engineering-workflows/workflows/engineering_delivery_sprint_planner.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_product_idea_vetting_will_it_fly_or_flop.md",
+      "filename": "product_product_idea_vetting_will_it_fly_or_flop.md",
+      "title": "Product Idea Vetting — Will It Fly or Flop? Fast Structured Gut-Check",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Fast solo vetting of a raw product idea against demand, feasibility, risk, and timing dimensions. Outputs a FLY / FLOP / RESHAPE verdict with explicit reasoning and the single biggest kill-risk. A structured gut-check, not a full validation study.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "idea-validation",
+        "product-strategy",
+        "go-no-go",
+        "risk-assessment",
+        "early-stage"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-06-07",
+      "related_prompts": [
+        "domain-idea-to-product/stage-1-ideation/ideation_concept_legs_test.md",
+        "domain-product-management/prompts/product_competitor_feature_teardown.md",
+        "domain-product-management/prompts/product_create_prd.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md",
+      "filename": "product_rigorous_prd_evaluation_and_scoring.md",
+      "title": "Score a PRD Against a Rigorous Rubric",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Evaluate an existing Product Requirements Document against a weighted rubric (clarity, problem framing, scope discipline, testability, risk surfacing, alignment), return per-dimension scores with evidence citations, and produce a prioritized revision list.",
+      "techniques": [
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "DS-01",
+        "QA-01"
+      ],
+      "keywords": [
+        "product-management",
+        "prd",
+        "review",
+        "rubric",
+        "quality-gate"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-04-23",
+      "related_prompts": [
+        "domain-product-management/prompts/product_create_prd.md",
+        "domain-product-management/prompts/product_delivery_sprint_planner.md",
+        "domain-prompt-engineering/evaluation/correctness_prompt_specification_audit.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/templates/prd_template.md",
+      "filename": "prd_template.md",
+      "title": "Product Requirements Document (PRD) Template",
+      "domain": "product-management",
+      "category": "product-management/templates",
+      "description": "> Copy this template for feature specifications, product initiatives, and capability development.",
+      "techniques": [],
+      "keywords": [
+        "document",
+        "history",
+        "metrics",
+        "overview",
+        "prd",
+        "problem",
+        "solution",
+        "statement",
+        "success",
+        "summary"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": false
     },
     {
       "path": "domain-productivity/automation/automation_content_monitoring.md",

@@ -43,8 +43,8 @@ continuity = "continuity_kit.cli:main"
 continuity-mcp = "continuity_kit.mcp_server:main"
 
 [project.urls]
-Homepage = "https://github.com/jr-mccoy/Prompting-guides-public/tree/main/continuity-kit"
-Documentation = "https://github.com/jr-mccoy/Prompting-guides-public/tree/main/continuity-kit/docs"
+Homepage = "https://github.com/jr-mccoy/prompt-agent-engineering/tree/main/continuity-kit"
+Documentation = "https://github.com/jr-mccoy/prompt-agent-engineering/tree/main/continuity-kit/docs"
 
 [tool.setuptools.packages.find]
 include = ["continuity_kit*"]

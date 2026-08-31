@@ -33,7 +33,7 @@ DOMAIN_DIRS = [
     "domain-decision-making",
     "domain-advertising",
     "domain-professional-writing",
-    "domain-professional-communication",
+    "domain-product-management",
     "domain-personal-development",
     "domain-healthcare-clinical",
     "domain-learning-coding",

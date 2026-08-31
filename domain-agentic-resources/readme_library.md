@@ -370,6 +370,6 @@ When adding new Claude Code resources:
 
 ---
 
-**Repository:** jr-mccoy/Prompting-guides-public
+**Repository:** jr-mccoy/prompt-agent-engineering
 **Last Updated:** 2025-12-31
 **Phase 1-3 Status:** ✅ COMPLETE (Agent & Command creation systems established)
