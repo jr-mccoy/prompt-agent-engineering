@@ -1,12 +1,16 @@
-# Comprehensive Prompt Index
+# Comprehensive Indexed Artifact Catalog
+
+> **The filename `PROMPT_INDEX.md` is retained for compatibility.** This catalog lists every indexed Markdown artifact, and that is not the same thing as a list of prompts: alongside domain prompts it contains agentic resources (skills, agents, commands, personas) and bundled component files belonging to a parent resource (`references/`, `assets/`, `cards/` and similar).
+>
+> For classified counts with stated membership rules, see [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json). Normalized resource kinds are planned for the PAE Registry and do not exist yet — see [`ROADMAP.md`](ROADMAP.md).
 
 **Generated:** 2026-08-31
 
-**Total Prompts:** 5597
+**Total Indexed Artifacts:** 5597
 
-**Prompts with Frontmatter:** 4661
+**Artifacts with Frontmatter:** 4661
 
-**Prompts without Frontmatter:** 936
+**Artifacts without Frontmatter:** 936
 
 ---
 

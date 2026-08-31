@@ -1,8 +1,20 @@
 {
   "metadata": {
     "generated": "2026-08-31",
-    "total_prompts": 5597,
+    "schema_version": 1,
+    "index_semantics": "mixed_artifacts",
+    "total_indexed_artifacts": 5597,
+    "artifacts_with_frontmatter": 4661,
+    "artifacts_without_frontmatter": 936,
     "domains": 44,
+    "canonical_facts": "meta/REPOSITORY_FACTS.json",
+    "deprecated_aliases": {
+      "total_prompts": "total_indexed_artifacts",
+      "prompts_with_frontmatter": "artifacts_with_frontmatter",
+      "prompts_without_frontmatter": "artifacts_without_frontmatter",
+      "prompts": "top-level array of indexed artifacts (mixed kinds)"
+    },
+    "total_prompts": 5597,
     "prompts_with_frontmatter": 4661,
     "prompts_without_frontmatter": 936
   },

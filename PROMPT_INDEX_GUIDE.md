@@ -20,17 +20,12 @@ The Prompting-Guides repository includes **machine-readable prompt indexes** tha
 
 ## Index Statistics
 
-- **Total Prompts:** ~1,821
-- **Domains:** 20 domain directories
-- **Most Used Techniques:** ST-02 (~444 prompts), RT-02 (~421 prompts), DS-06 (~186 prompts)
+Do not quote statistics from this guide. Counts change with every regeneration,
+and the raw index total is a **mixed artifact** total, not a prompt count.
 
-### Largest Domains
-
-1. **agentic-resources** - ~821 resources (agents, skills, commands, personas)
-2. **software-engineering** - ~483 prompts (analysis, testing, DevOps, cloud, API, mobile)
-3. **business-strategy** - ~124 prompts (analysis, research, startup)
-4. **productivity** - ~84 prompts (automation, career, validation, prototyping)
-5. **engineering-workflows** - ~58 prompts (workflows, tasks, improvement)
+- **Current classified counts:** [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json) — each category with its membership rule, generated and verified in CI.
+- **Current raw total:** `metadata.total_indexed_artifacts` in [`PROMPT_INDEX.json`](PROMPT_INDEX.json).
+- **Largest domains and technique distribution:** printed by `python3 scripts/generate_prompt_index.py`.
 
 ---
 
@@ -38,14 +33,43 @@ The Prompting-Guides repository includes **machine-readable prompt indexes** tha
 
 ### Structure
 
+> **What this index actually contains.** Despite the filename, the index is a
+> **mixed artifact population**: domain prompt artifacts, agentic resources
+> (skills, agents, commands, personas), and bundled component files belonging to
+> a parent resource. Its raw total is *not* a prompt count. Read
+> [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json) for classified
+> counts with stated membership rules. Normalized resource kinds are planned for
+> the PAE Registry and do not exist yet — see [`ROADMAP.md`](ROADMAP.md).
+>
+> Prefer the canonical metadata fields (`total_indexed_artifacts`,
+> `index_semantics`, `schema_version`). The prompt-named fields below
+> (`total_prompts`, `prompts_with_frontmatter`, `prompts_without_frontmatter`,
+> and the top-level `prompts` array) are **deprecated aliases** retained so
+> existing consumers keep working; they are enumerated in
+> `metadata.deprecated_aliases`. Values shown here are illustrative — read the
+> live file for current numbers.
+
 ```json
 {
   "metadata": {
-    "generated": "2026-02-07",
-    "total_prompts": 1490,
-    "domains": 21,
-    "prompts_with_frontmatter": 765,
-    "prompts_without_frontmatter": 725
+    "generated": "2026-08-31",
+    "schema_version": 1,
+    "index_semantics": "mixed_artifacts",
+    "total_indexed_artifacts": 5597,
+    "artifacts_with_frontmatter": 4661,
+    "artifacts_without_frontmatter": 936,
+    "domains": 44,
+    "canonical_facts": "meta/REPOSITORY_FACTS.json",
+
+    "deprecated_aliases": {
+      "total_prompts": "total_indexed_artifacts",
+      "prompts_with_frontmatter": "artifacts_with_frontmatter",
+      "prompts_without_frontmatter": "artifacts_without_frontmatter",
+      "prompts": "top-level array of indexed artifacts (mixed kinds)"
+    },
+    "total_prompts": 5597,
+    "prompts_with_frontmatter": 4661,
+    "prompts_without_frontmatter": 936
   },
   "prompts": [
     {
@@ -431,7 +455,7 @@ print(f"Found {len(structured)} prompts using ST-02")
 
 # Get stats
 stats = searcher.get_stats()
-print(f"Total prompts: {stats['total_prompts']}")
+print(f"Total indexed artifacts: {stats['total_indexed_artifacts']}")
 ```
 
 ### Building a Prompt Recommender

@@ -21,10 +21,10 @@ This is a governed collection of AI prompts and agentic resources — the **PAE 
 
 <!-- REPO_FACTS:BEGIN name=counts -->
 <!-- REPO_FACTS_DECLARATION: {"active_techniques": 327, "agentic_resource_artifacts": 799, "agents": 143, "bundled_component_files": 667, "commands": 115, "domain_command_artifacts": 10, "domain_directories": 44, "domain_prompt_artifacts": 4121, "indexed_artifacts": 5597, "personas": 53, "skills": 330, "technique_categories": 18, "unindexed_domain_directories": 0} -->
-- **4121 domain prompts** across 44 `domain-*` directories.
+- **4121 indexed domain prompt artifacts** across 44 `domain-*` directories. This is the index's structural classification, not a normalized resource-kind count.
 - **330 skills, 143 agents, 115 commands, 53 personas** under `domain-agentic-resources/`.
 - **327 active techniques** across 18 categories in `techniques/MASTER_TECHNIQUE_INDEX.md`.
-- `PROMPT_INDEX.json` holds **5597 indexed artifacts**. That total is not a prompt count: it mixes the 4121 domain prompts with 10 domain slash commands, 799 agentic resources, and 667 bundled component files (a parent resource's `references/`, `assets/`, `cards/` and similar).
+- `PROMPT_INDEX.json` holds **5597 indexed artifacts**. That total is not a prompt count: it mixes the 4121 domain prompt artifacts with 10 domain slash commands, 799 agentic resources, and 667 bundled component files (a parent resource's `references/`, `assets/`, `cards/` and similar).
 - All 44 `domain-*` directories are covered by the index allowlist (`DOMAIN_DIRS` in `scripts/generate_prompt_index.py`).
 <!-- REPO_FACTS:END name=counts -->
 
