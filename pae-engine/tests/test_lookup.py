@@ -148,6 +148,93 @@ class TestRegistryDefects(EngineTestCase):
         self.assertEqual(registry.get("prompt:fixtures/ok").uid, "pae_0000000000aa")
 
 
+class TestForwardCompatibility(EngineTestCase):
+    def test_additive_keys_within_v1_are_carried_not_rejected(self) -> None:
+        """Schema v1 may gain keys. A consumer must not break on them.
+
+        The typed attributes ignore what they do not know, and ``raw`` keeps
+        everything, so a later phase can read a new field without waiting for
+        it to be promoted to an attribute here.
+        """
+        root = self.tmp_path()
+        fx.build_repo(
+            root,
+            [
+                fx.record(
+                    "pae_0000000000aa",
+                    "prompt:fixtures/future",
+                    a_field_from_a_later_producer={"nested": [1, 2, 3]},
+                )
+            ],
+        )
+        record = Repository.at(root).registry().get("prompt:fixtures/future")
+        self.assertEqual(record.id, "prompt:fixtures/future")
+        self.assertEqual(
+            record.raw["a_field_from_a_later_producer"]["nested"], (1, 2, 3)
+        )
+        self.assertEqual(
+            record.to_json_obj()["a_field_from_a_later_producer"],
+            {"nested": [1, 2, 3]},
+        )
+
+    def test_public_models_are_immutable(self) -> None:
+        root = fx.standard_repo(self.tmp_path("frozen"))
+        record = Repository.at(root).registry().get(fx.STANDARD_ID)
+        with self.assertRaises(Exception):
+            record.uid = "pae_000000000000"  # type: ignore[misc]
+        # A caller owns the JSON it is handed; mutating it cannot reach back.
+        obj = record.to_json_obj()
+        obj["uid"] = "tampered"
+        self.assertNotEqual(record.to_json_obj()["uid"], "tampered")
+
+
+class TestScanDiscipline(EngineTestCase):
+    def test_a_miss_reads_the_registry_exactly_once(self) -> None:
+        """Streaming, single pass. A miss is the worst case and must stay bounded."""
+        import builtins
+        from unittest import mock
+
+        root = fx.standard_repo(self.tmp_path())
+        registry = Repository.at(root).registry()
+        registry_path = str(Repository.at(root).registry_path)
+
+        real_open = builtins.open
+        opens = []
+
+        def counting_open(file, *args, **kwargs):
+            opens.append(str(file))
+            return real_open(file, *args, **kwargs)
+
+        with mock.patch("builtins.open", counting_open):
+            with self.assertRaises(ResourceNotFound):
+                registry.get("prompt:fixtures/definitely-absent")
+
+        self.assertEqual(
+            [p for p in opens if p == registry_path],
+            [registry_path],
+            "a miss must scan the registry once, not repeatedly",
+        )
+
+    def test_opening_the_registry_reads_nothing(self) -> None:
+        """``Registry.open()`` is free; the cost is deferred to the question."""
+        import builtins
+        from unittest import mock
+
+        root = fx.standard_repo(self.tmp_path())
+        repository = Repository.at(root)
+
+        real_open = builtins.open
+        opens = []
+
+        with mock.patch(
+            "builtins.open",
+            lambda file, *a, **k: (opens.append(str(file)), real_open(file, *a, **k))[1],
+        ):
+            repository.registry()
+
+        self.assertEqual(opens, [])
+
+
 class TestLookupCli(EngineTestCase):
     def setUp(self) -> None:
         super().setUp()
