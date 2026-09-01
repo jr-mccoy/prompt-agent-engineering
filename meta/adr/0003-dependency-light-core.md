@@ -2,7 +2,8 @@
 
 ## Status
 
-Accepted. Not yet implemented.
+Accepted. The core layer is implemented in Phase 3, tightened as recorded in
+the amendment below. The optional extras remain unimplemented.
 
 ## Context
 
@@ -47,3 +48,28 @@ them, belong in an evaluation extra — never in the core runtime.
 - Ranked retrieval must be designed to work without embeddings. If semantic
   retrieval is later added, it is an extra, and the deterministic path remains
   the default.
+
+## Amendment (Phase 3) — the installed core is standard library only
+
+The original decision put PyYAML in the core, because repository metadata is
+YAML frontmatter. Phase 2 removed the need: the registry normalizes every
+source schema into JSONL, so the Engine reads JSON and never sees frontmatter.
+
+The installed core is therefore **standard library only**:
+
+```toml
+dependencies = []
+```
+
+PyYAML remains a *repository-maintenance* dependency — `requirements-ci.txt`,
+`scripts/pae_registry/` and the generators still need it — but it is not an
+Engine dependency and is never installed by `pip install
+prompt-agent-engineering`.
+
+CI asserts this rather than trusting it: after installing the built wheel into
+a clean virtual environment, the workflow fails if `Requires-Dist` is non-empty
+or if anything beyond pip/setuptools/wheel appears in the environment.
+
+The layering above is otherwise unchanged. Extras (`[mcp]`, `[eval]`,
+`[tokenizers]`, `[dev]`) are still the mechanism for anything heavier, and none
+of them exists yet.

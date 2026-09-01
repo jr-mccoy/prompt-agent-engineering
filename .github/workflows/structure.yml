@@ -30,11 +30,16 @@ jobs:
               domain-*) ;;
               *-toolkit|*-kit|*-studio|*-library|*-system|*-system-design|*-factory) ;;
               authoring|scripts|techniques|tests|meta) ;;
+              # The installable engine. Permitted as one literal name, not as a
+              # `pae-*` or `*-engine` pattern: the gate is the repository's
+              # contract, and relaxing it into a catch-all would retire the
+              # contract to save one line. See meta/adr/0001-engine-location.md.
+              pae-engine) ;;
               *)
                 echo "::error::unexpected top-level directory: $dir"
                 echo "  (allowed: domain-*, *-toolkit, *-kit, *-studio, *-library,"
                 echo "   *-system, *-factory, authoring, scripts, techniques, tests,"
-                echo "   meta, .claude, .github)"
+                echo "   meta, pae-engine, .claude, .github)"
                 status=1 ;;
             esac
           done < <(find . -maxdepth 1 -type d ! -name '.' ! -name '.git' -printf '%f\n' | sort)

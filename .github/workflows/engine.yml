@@ -1,0 +1,153 @@
+name: Engine
+
+# The installable PAE Engine: unit tests, packaging, and a fresh-wheel install
+# driven from outside the repository.
+#
+# Registry and generator changes trigger this too. The Engine's whole resource
+# contract is meta/registry/, so a change there can break the runtime without
+# touching a line of pae-engine/.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'pae-engine/**'
+      - 'meta/registry/**'
+      - 'scripts/pae_registry/**'
+      - 'scripts/generate_registry.py'
+      - 'LICENSE'
+      - '.github/workflows/engine.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'pae-engine/**'
+      - 'meta/registry/**'
+      - 'scripts/pae_registry/**'
+      - 'scripts/generate_registry.py'
+      - 'LICENSE'
+      - '.github/workflows/engine.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: engine-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit:
+    name: Engine unit tests (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The declared floor and the current default. A package that claims
+        # >=3.10 and is only ever run on 3.12 is claiming something untested.
+        python-version: ['3.10', '3.12']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Deliberately no `pip install` of anything: the Engine declares zero
+      # runtime dependencies, and the suite must pass without a package index.
+      - name: Unit tests
+        working-directory: pae-engine
+        env:
+          PYTHONPATH: src:tests
+        run: python3 -m unittest discover -s tests -t tests -v
+
+  package:
+    name: Build, install and smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      # build and twine are CI tooling, never package dependencies.
+      - name: Install build tooling
+        run: python3 -m pip install --disable-pip-version-check build twine
+
+      - name: Build wheel and sdist
+        working-directory: pae-engine
+        run: python3 -m build
+
+      - name: twine check
+        working-directory: pae-engine
+        run: python3 -m twine check dist/*
+
+      - name: Engine licence matches the repository licence
+        run: |
+          if ! cmp -s LICENSE pae-engine/LICENSE; then
+            echo "::error::pae-engine/LICENSE has drifted from the repository LICENSE"
+            diff -u LICENSE pae-engine/LICENSE || true
+            exit 1
+          fi
+
+      - name: Licence ships in both artifacts
+        working-directory: pae-engine
+        run: |
+          status=0
+          unzip -l dist/*.whl | grep -q 'LICENSE' \
+            || { echo "::error::wheel does not contain LICENSE"; status=1; }
+          tar -tzf dist/*.tar.gz | grep -q 'LICENSE' \
+            || { echo "::error::sdist does not contain LICENSE"; status=1; }
+          exit "$status"
+
+      - name: No corpus or registry is packaged
+        working-directory: pae-engine
+        run: |
+          status=0
+          if unzip -l dist/*.whl | grep -Eq 'registry\.jsonl|registry-summary\.json'; then
+            echo "::error::registry data must not be bundled in the wheel"; status=1
+          fi
+          if tar -tzf dist/*.tar.gz | grep -Eq 'registry\.jsonl|registry-summary\.json'; then
+            echo "::error::registry data must not be bundled in the sdist"; status=1
+          fi
+          exit "$status"
+
+      - name: Install the built wheel into a clean environment
+        run: |
+          python3 -m venv /tmp/pae-smoke
+          /tmp/pae-smoke/bin/pip install --disable-pip-version-check \
+            pae-engine/dist/*.whl
+
+      - name: No runtime dependencies were installed
+        run: |
+          /tmp/pae-smoke/bin/pip check
+          extra=$(/tmp/pae-smoke/bin/pip list --format=freeze \
+            | grep -Ev '^(pip|setuptools|wheel|prompt-agent-engineering)==' || true)
+          if [ -n "$extra" ]; then
+            echo "::error::the engine pulled in runtime dependencies:"
+            echo "$extra"
+            exit 1
+          fi
+          /tmp/pae-smoke/bin/python -c "
+          import importlib.metadata as md
+          requires = md.distribution('prompt-agent-engineering').requires
+          assert not requires, f'Requires-Dist must be empty, got {requires}'
+          print('Requires-Dist: none')
+          "
+
+      # Run from outside the checkout, against the checkout, using the console
+      # script. This is the only step that would catch a missing entry point.
+      - name: Installed-package smoke tests
+        run: |
+          /tmp/pae-smoke/bin/python pae-engine/tests/smoke_install.py \
+            --repo "$GITHUB_WORKSPACE" \
+            --pae /tmp/pae-smoke/bin/pae
+
+      - name: Committed registry passes consumer validation
+        run: |
+          /tmp/pae-smoke/bin/pae validate-registry \
+            --repo "$GITHUB_WORKSPACE" --verify-checksums

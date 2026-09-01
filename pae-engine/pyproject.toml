@@ -1,0 +1,69 @@
+# PAE Engine — the installable runtime for the PAE Registry.
+#
+# Two rules govern this file:
+#   1. `dependencies` stays empty. The runtime is standard library only, so the
+#      Engine installs and runs offline, in air-gapped environments, and inside
+#      locked-down CI. See meta/adr/0003-dependency-light-core.md.
+#   2. No corpus and no registry are packaged. The Engine reads a local PAE
+#      checkout discovered at runtime. See meta/adr/0017-engine-package-identity.md
+#      and meta/adr/0018-checkout-required-runtime.md.
+
+[build-system]
+# setuptools >= 77 is required for PEP 639 `license` / `license-files`.
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# The import namespace `pae` is owned by an unrelated PyPI project, so the
+# distribution name is spelled out and the import namespace is `pae_engine`.
+# The console command stays short: `pae`.
+name = "prompt-agent-engineering"
+version = "0.1.0"
+description = "Read-only runtime and CLI for the PAE Registry: resolve, inspect and serve governed prompt-engineering resources from a local checkout."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "PAE Registry maintainers" }]
+keywords = [
+    "prompt-engineering",
+    "registry",
+    "ai-agents",
+    "prompts",
+    "cli",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+# Intentionally empty. Adding a runtime dependency here is an architecture
+# change, not a convenience; the zero-dependency assertion is enforced in CI.
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/jr-mccoy/prompt-agent-engineering"
+Repository = "https://github.com/jr-mccoy/prompt-agent-engineering"
+Issues = "https://github.com/jr-mccoy/prompt-agent-engineering/issues"
+Changelog = "https://github.com/jr-mccoy/prompt-agent-engineering/blob/main/CHANGELOG.md"
+
+[project.scripts]
+pae = "pae_engine.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pae_engine = ["py.typed"]

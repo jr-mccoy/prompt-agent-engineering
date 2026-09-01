@@ -2,7 +2,9 @@
 
 ## Status
 
-Accepted. Not yet implemented — the directory does not exist.
+Accepted. Implemented in Phase 3, with the import-path amendment recorded
+below. See [ADR-0017](0017-engine-package-identity.md) for the naming that
+superseded the illustrative `src/pae/` layout.
 
 ## Context
 
@@ -50,3 +52,30 @@ inspects depth 1 only.
 - Product dependencies stay isolated from the corpus validators, whose only
   third-party dependency is PyYAML.
 - The corpus keeps root `tests/` unchanged.
+
+## Amendment (Phase 3) — the import path is `src/pae_engine/`
+
+The layout above was illustrative and used `src/pae/`. That import namespace is
+owned by an unrelated project on PyPI, so it is not available to this one. The
+directory decision is unchanged; only the package name inside it moves:
+
+```text
+pae-engine/
+├── pyproject.toml
+├── LICENSE            # byte-identical to the repository LICENSE, checked in CI
+├── README.md
+├── src/pae_engine/
+├── tests/
+└── docs/
+```
+
+`benchmarks/` was not created: Phase 3 measures performance during
+implementation and reports the numbers, rather than standing up a benchmark
+suite whose access patterns search has not yet defined.
+
+`structure.yml` was amended as this ADR required — one literal `pae-engine`
+case, not a `pae-*` or `*-engine` pattern. The reasoning holds: a catch-all
+would retire the contract to save a line.
+
+The naming decision itself is recorded separately in
+[ADR-0017](0017-engine-package-identity.md).
