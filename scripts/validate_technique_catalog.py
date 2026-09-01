@@ -58,8 +58,20 @@ CLAIM_DOCS = [
     "techniques/MASTER_TECHNIQUE_INDEX.md",
 ]
 
-ID_PREFIXES = "AG|CM|DD|DP|DS|DT|ED|IT|MP|NE|OC|QA|RP|RT|ST|SV"
-ID_TOKEN = re.compile(rf"\b(?:{ID_PREFIXES})-\d{{1,3}}\b")
+# Technique ID prefixes are DERIVED from the parsed catalog, never hand-listed.
+# A hardcoded literal here previously omitted GT and IPC, which silently exempted
+# 25 catalogued technique IDs from phantom-reference checking. Deriving the
+# prefixes means a new category is covered the moment it is defined in the master
+# index, with no second list to remember to edit.
+ID_TOKEN_ANY = re.compile(r"\b([A-Z]{2,4})-\d{1,3}\b")
+
+
+def id_token_pattern(prefixes):
+    """Build the reference-scanning pattern from the catalog's own prefixes."""
+    if not prefixes:
+        raise ValueError("no technique ID prefixes were parsed from the master index")
+    alternation = "|".join(sorted(prefixes, key=lambda p: (-len(p), p)))
+    return re.compile(rf"\b(?:{alternation})-\d{{1,3}}\b")
 HEADING_DEF = re.compile(r"^#{3,4} ([A-Z]{2,4}-\d+[a-z]?)(.*)$", re.M)
 BOLD_DEF = re.compile(
     r"^\*\*((?:[A-Z]{2,4}-\d+)(?:/[A-Z]{2,4}-\d+)*)(?::| \()(.*)$", re.M
@@ -116,6 +128,10 @@ def parse_index():
         "active": len(all_ids) - len(deprecated),
         "total": len(all_ids),
         "categories": len({tid.split("-")[0] for tid in all_ids}),
+        # Every prefix the catalog actually defines, for reference scanning.
+        "prefixes": {tid.split("-")[0] for tid in all_ids},
+        "heading_ids": heading_ids,
+        "bold_ids": bold_ids,
     }
 
 
@@ -168,8 +184,9 @@ def check_satellite_claims(idx, errors):
 
 def check_id_references(idx, errors):
     known = idx["all_ids"] | idx["aliases"]
+    token = id_token_pattern(idx["prefixes"])
     for path in REFERENCE_DOCS:
-        refs = set(ID_TOKEN.findall(read(path)))
+        refs = set(token.findall(read(path)))
         missing = sorted(refs - known)
         if missing:
             errors.append(f"{path}: references undefined technique IDs: {', '.join(missing)}")

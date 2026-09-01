@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jr-mccoy/prompt-agent-engineering/meta/registry/schemas/registry-record.v1.schema.json",
+  "title": "PAE Registry record, version 1",
+  "description": "One normalized first-class resource. Absence of a key means 'not applicable to this kind'; the string 'unknown' means 'applicable, but no evidence exists'; [] and null mean 'known empty'.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "uid",
+    "kind",
+    "id",
+    "aliases",
+    "lifecycle",
+    "title",
+    "derived_fields",
+    "metadata_completeness",
+    "native",
+    "governance",
+    "quality",
+    "provenance",
+    "license",
+    "serving_policy",
+    "relationships",
+    "diagnostics"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "pae-registry-record/1" },
+    "uid": { "$ref": "#/$defs/uid" },
+    "kind": { "$ref": "#/$defs/kind" },
+    "id": { "$ref": "#/$defs/publicId" },
+    "aliases": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/publicId" } },
+    "lifecycle": {
+      "description": "'tombstone' means the artifact no longer exists on disk. A deprecated but still catalogued resource stays 'live' and says so via governance.maturity.",
+      "enum": ["live", "tombstone"]
+    },
+    "source": {
+      "description": "Present for file-backed resources. Omitted for techniques, which are defined in the master technique index rather than by a file of their own.",
+      "type": "object",
+      "required": ["birth_path", "previous_paths"],
+      "additionalProperties": false,
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "birth_path": { "type": "string", "minLength": 1 },
+        "previous_paths": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "content_sha256": { "$ref": "#/$defs/sha256" },
+        "checksum_payload": { "enum": ["raw_source_bytes"] },
+        "bundle_sha256": { "$ref": "#/$defs/sha256" },
+        "bundle_file_count": { "type": "integer" }
+      }
+    },
+    "defined_in": { "type": "string" },
+    "content_sha256": { "$ref": "#/$defs/sha256" },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "derived_fields": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "metadata_completeness": { "enum": ["full", "minimal", "degraded"] },
+    "native": { "type": "object" },
+    "governance": {
+      "type": "object",
+      "required": ["maturity", "review_status", "eval_status", "eval_artifacts"],
+      "additionalProperties": false,
+      "properties": {
+        "maturity": { "enum": ["experimental", "candidate", "stable", "deprecated"] },
+        "review_status": { "enum": ["unknown", "unreviewed", "reviewed", "needs_review"] },
+        "eval_status": { "enum": ["unknown", "untested", "passing", "failing", "partial"] },
+        "eval_artifacts": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "quality": {
+      "description": "Typed assertions in independent scheme namespaces. Never an ordered scale: Tier 1, Gold Standard, STRONG-GUARD and model-testing are unrelated concepts and the repository defines no ordering among them.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["scheme", "value", "evidence"],
+        "additionalProperties": false,
+        "properties": {
+          "scheme": { "type": "string" },
+          "value": { "type": "string" },
+          "evidence": { "type": "string" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["origin"],
+      "additionalProperties": false,
+      "properties": {
+        "origin": { "enum": ["project_native", "vendored", "adapted", "unknown"] },
+        "upstream": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "repository": { "type": "string" },
+            "path": { "type": "string" },
+            "revision": { "type": "string" },
+            "synced": { "type": "string" },
+            "author": { "type": "string" }
+          }
+        },
+        "notes_ref": { "type": "string" }
+      }
+    },
+    "license": {
+      "type": "object",
+      "required": ["status", "basis"],
+      "additionalProperties": false,
+      "properties": {
+        "spdx": { "type": "string" },
+        "status": { "enum": ["resolved", "inherited", "unresolved"] },
+        "basis": { "type": "string" },
+        "attribution": { "type": "string" },
+        "redistribution_note": { "type": "string" }
+      }
+    },
+    "serving_policy": {
+      "type": "object",
+      "required": ["value", "basis"],
+      "additionalProperties": false,
+      "properties": {
+        "value": { "enum": ["standard", "safety_gated", "metadata_only", "excluded"] },
+        "basis": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "guard_preservation": {
+          "type": "object",
+          "required": ["must_not_truncate"],
+          "additionalProperties": false,
+          "properties": {
+            "must_not_truncate": { "type": "boolean" },
+            "note": { "type": "string" }
+          }
+        }
+      }
+    },
+    "relationships": {
+      "type": "object",
+      "required": [
+        "copy_of",
+        "copies",
+        "superseded_by",
+        "supersedes",
+        "merged_into",
+        "merges",
+        "split_into",
+        "attachments"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "copy_of": { "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/uid" }] },
+        "copies": { "type": "array", "items": { "$ref": "#/$defs/uid" }, "uniqueItems": true },
+        "superseded_by": { "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/edge" }] },
+        "supersedes": { "type": "array", "items": { "$ref": "#/$defs/uid" }, "uniqueItems": true },
+        "merged_into": { "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/edge" }] },
+        "merges": { "type": "array", "items": { "$ref": "#/$defs/uid" }, "uniqueItems": true },
+        "split_into": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+        "attachments": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "code", "detail"],
+        "additionalProperties": false,
+        "properties": {
+          "severity": { "enum": ["info", "warning", "error"] },
+          "code": { "type": "string" },
+          "detail": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "uid": {
+      "description": "Immutable internal key. sha256(kind + NUL + birth_path), first 60 bits, Crockford base32, lowercased.",
+      "type": "string",
+      "pattern": "^pae_[0-9abcdefghjkmnpqrstvwxyz]{12}$"
+    },
+    "publicId": {
+      "description": "Human-readable handle. May change on a semantic move; the retired value becomes a permanent alias.",
+      "type": "string",
+      "pattern": "^[a-z]+:[A-Za-z0-9]+([.-][A-Za-z0-9]+)*(/[A-Za-z0-9]+([.-][A-Za-z0-9]+)*)*$"
+    },
+    "kind": { "enum": ["prompt", "technique", "skill", "agent", "command", "persona"] },
+    "sha256": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+    "edge": {
+      "type": "object",
+      "required": ["ref", "object_kind"],
+      "additionalProperties": false,
+      "properties": {
+        "ref": { "type": "string", "minLength": 1 },
+        "object_kind": { "enum": ["resource", "document", "collection"] }
+      }
+    }
+  }
+}

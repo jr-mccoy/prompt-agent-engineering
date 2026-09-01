@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jr-mccoy/prompt-agent-engineering/meta/registry/schemas/overrides.v1.schema.json",
+  "title": "PAE Registry governance overrides, version 1",
+  "description": "Hand-maintained, reviewed governance for resources whose generated defaults are wrong or incomplete. One file per kind under meta/registry/overrides/, keyed by public ID. Overrides are the ONLY way a resource leaves the migration defaults: generation never promotes maturity, never asserts a review or evaluation, and never infers a quality tier.",
+  "type": "object",
+  "required": ["schema", "overrides"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "pae-registry-overrides/1" },
+    "overrides": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "governance": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "maturity": { "enum": ["experimental", "candidate", "stable", "deprecated"] },
+              "review_status": { "enum": ["unknown", "unreviewed", "reviewed", "needs_review"] },
+              "eval_status": { "enum": ["unknown", "untested", "passing", "failing", "partial"] },
+              "eval_artifacts": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "origin": { "enum": ["project_native", "vendored", "adapted", "unknown"] },
+              "upstream": { "type": "object" },
+              "notes_ref": { "type": "string" }
+            }
+          },
+          "license": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "spdx": { "type": "string" },
+              "status": { "enum": ["resolved", "inherited", "unresolved"] },
+              "basis": { "type": "string" },
+              "attribution": { "type": "string" },
+              "redistribution_note": { "type": "string" }
+            }
+          },
+          "serving_policy": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "value": { "enum": ["standard", "safety_gated", "metadata_only", "excluded"] },
+              "basis": { "type": "array", "items": { "type": "string" } },
+              "guard_preservation": { "type": "object" }
+            }
+          },
+          "quality": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["scheme", "value", "evidence"],
+              "additionalProperties": false,
+              "properties": {
+                "scheme": { "type": "string" },
+                "value": { "type": "string" },
+                "evidence": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

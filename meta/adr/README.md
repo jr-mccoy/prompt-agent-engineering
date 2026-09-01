@@ -24,6 +24,13 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0007](0007-index-is-not-the-registry.md) | `PROMPT_INDEX.json` is not the registry, and its entry count is not a prompt count | Accepted |
 | [0008](0008-generated-counts-control-plane.md) | Every published repository count is generated and declared in a CI-verified marker | Accepted |
 | [0009](0009-engine-docs-naming-conventions.md) | `pae-engine/` is intentionally outside the corpus Markdown naming conventions | Accepted |
+| [0010](0010-uid-and-public-id.md) | Identity is an immutable UID plus a mutable public ID | Accepted |
+| [0011](0011-explicit-roots-and-shape-detection.md) | Membership is explicit roots plus shape detection; exclusions are anchored prefixes | Accepted |
+| [0012](0012-one-record-per-copy.md) | One record per physical copy; copy edges require explicit evidence | Accepted |
+| [0013](0013-layered-ledger-and-generated-jsonl.md) | Identity lives in reviewed ledgers; the registry is generated JSONL | Accepted |
+| [0014](0014-degraded-records-not-global-failure.md) | Metadata may degrade; identity may not | Accepted |
+| [0015](0015-serving-policy-metadata.md) | The registry carries serving-policy metadata with a fail-closed default | Accepted |
+| [0016](0016-sha256-checksum-contract.md) | Checksums are SHA-256 over a clearly defined payload | Accepted |
 
 ## Related
 
