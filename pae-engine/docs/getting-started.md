@@ -2,8 +2,8 @@
 
 A copy-paste walkthrough, from an empty directory to a verified resource body.
 
-The Engine is not on PyPI. Version `0.1.0` is the in-tree pre-release version,
-so every step below installs from a checkout.
+The Engine is not on PyPI. Version `0.2.0.dev0` is the in-tree development
+version, so every step below installs from a checkout.
 
 ## 1. Clone and install
 
@@ -22,7 +22,7 @@ Nothing else is downloaded: the Engine declares no runtime dependencies.
 ```bash
 pip check                          # no requirements to satisfy
 pae --version
-# pae 0.1.0 (registry contract pae-registry-record/1)
+# pae 0.2.0.dev0 (registry contract pae-registry-record/1)
 ```
 
 ## 2. Point the Engine at a checkout
@@ -158,8 +158,71 @@ esac
 On any nonzero exit, stdout is empty and the explanation is on stderr — as one
 JSON object when `--json` is set.
 
+## 8. Find something without knowing its name
+
+Everything above needs a reference. `pae search` does not.
+
+```bash
+pae search "android security audit"
+pae search "helm chart" --kind skill --limit 5
+pae search "core web vitals" --scope frontend-development
+pae search "android security audit" --json | python3 -m json.tool | head -30
+```
+
+Each hit says *why* it ranked, in observable terms:
+
+```text
+ 1. command:agentic-resources/security/android-pre-release-security-audit
+    command · agentic-resources/security · score 7.411
+    android_pre_release_security_audit
+    title: android audit security
+    tags: android audit security
+```
+
+A query that matches nothing is a normal answer, not an error:
+
+```bash
+pae search "zzzzqqq wobblegonk"; echo "exit $?"
+# no results for 'zzzzqqq wobblegonk'
+# terms: zzzzqqq wobblegonk
+# exit 0
+```
+
+## 9. Ask where a task belongs
+
+```bash
+pae route "my model drifted in production and accuracy dropped"
+```
+
+```text
+status:   matched
+scope:    ai-ml
+kind:     prompt
+coverage: 0.60   margin: 0.31
+```
+
+`status` is the field to branch on. It is one of `matched`, `ambiguous`,
+`weak` or `no_route`, and **all four exit 0** — ambiguity is a result, not a
+failure. When the status is not `matched`, `selected_scope` and
+`selected_kind` are `null` and the ranked alternatives are returned instead:
+
+```bash
+pae route "curriculum design" --json | python3 -c "
+import json,sys
+d = json.load(sys.stdin)
+print(d['status'], '->', [c['name'] for c in d['candidate_scopes'][:4]])
+"
+# ambiguous -> ['education-teaching', 'medical-education', 'discipleship', ...]
+```
+
+Scores order results within one query. They are not confidence values, and
+there is no `confidence` field anywhere in the output.
+
+Neither command reads a resource body, and neither prints one. See
+[search-routing.md](search-routing.md) for the ranking formula, the eligibility
+rules and the known limitations.
+
 ## What is not here yet
 
-`pae search`, task routing, ranking, context compilation, token counting and
-MCP are later phases. Nothing in this release stubs them out or guesses at
-their shape.
+Context compilation, token counting and MCP are later phases. Nothing in this
+release stubs them out or guesses at their shape.

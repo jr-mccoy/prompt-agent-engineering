@@ -56,6 +56,22 @@ jobs:
 
       # Deliberately no `pip install` of anything: the Engine declares zero
       # runtime dependencies, and the suite must pass without a package index.
+      # Prints the authoritative search/routing metric table into the build log
+      # alongside the two rejected ranking baselines, so a regression is
+      # visible as a number and not only as a failed assertion. The floors
+      # themselves are asserted in tests/test_search_regression.py.
+      #
+      # These numbers come from an internal tuning and regression set. They are
+      # not an independently authored benchmark and must not be published as
+      # evidence of general search quality.
+      - name: Search and routing diagnostics
+        working-directory: pae-engine
+        env:
+          PYTHONPATH: src:tests
+        run: |
+          python3 tests/run_search_routing_diagnostics.py \
+            --repo "$GITHUB_WORKSPACE" --compare
+
       - name: Unit tests
         working-directory: pae-engine
         env:

@@ -302,16 +302,40 @@ class TestPublicApiSurface(unittest.TestCase):
         for name in (
             "Repository", "Registry", "Record", "Resolution", "Content", "Summary",
             "validate_registry", "PaeError", "IncompatibleRegistry", "ResourceExcluded",
+            "SearchEngine", "Router", "SearchHit", "SearchResults",
+            "RouteCandidate", "RouteDecision",
         ):
             self.assertIn(name, pae_engine.__all__)
             self.assertTrue(hasattr(pae_engine, name))
 
-    def test_no_search_or_ranking_surface_exists_yet(self) -> None:
-        """Phase 4's shape is not guessed at in Phase 3."""
+    def test_the_registry_stays_a_lookup_surface(self) -> None:
+        """Search and routing are separate objects, not Registry methods.
+
+        Keeping them apart is what lets ``Registry`` stay lazy and lets a
+        caller reason about identity without loading a search index.
+        """
         from pae_engine import Registry
 
         for name in ("search", "rank", "score", "query", "embed", "route", "bundle"):
-            self.assertFalse(hasattr(Registry, name), f"Registry.{name} is a Phase 4 concern")
+            self.assertFalse(hasattr(Registry, name), f"Registry.{name} belongs elsewhere")
+
+    def test_context_compilation_and_mcp_are_still_absent(self) -> None:
+        """Phase 5's shape is not guessed at in Phase 4."""
+        for name in ("compile_context", "bundle", "ContextBundle", "MCPServer", "serve"):
+            self.assertFalse(hasattr(pae_engine, name), f"{name} is a later phase")
+
+    def test_search_and_routing_never_reach_for_a_body(self) -> None:
+        """A source-level guard to back the behavioural test in
+        ``test_search_regression.py``: neither module may name ``content``."""
+        from _codescan import code_only
+
+        for module in (pae_engine.search, pae_engine.routing, pae_engine._lexical):
+            source = code_only(module)
+            self.assertNotIn(
+                ".content(",
+                source,
+                f"{module.__name__} must not call Registry.content()",
+            )
 
     def test_exit_codes_are_stable_and_distinct(self) -> None:
         from pae_engine import errors

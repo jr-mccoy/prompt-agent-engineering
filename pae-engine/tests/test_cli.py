@@ -29,8 +29,8 @@ class TestVersion(EngineTestCase):
 
 
 class TestCommandSurface(EngineTestCase):
-    def test_only_the_phase_three_commands_exist(self) -> None:
-        """Search, routing, bundling and MCP are later phases."""
+    def test_the_command_surface_is_exactly_what_is_shipped(self) -> None:
+        """Context compilation and MCP are later phases."""
         import argparse
 
         from pae_engine import cli
@@ -41,16 +41,17 @@ class TestCommandSurface(EngineTestCase):
         ]
         self.assertEqual(len(subparsers), 1)
         self.assertEqual(
-            set(subparsers[0].choices), {"where", "stats", "get", "validate-registry"}
+            set(subparsers[0].choices),
+            {"where", "stats", "get", "search", "route", "validate-registry"},
         )
 
-    def test_the_phase_four_commands_are_rejected(self) -> None:
+    def test_the_later_phase_commands_are_rejected(self) -> None:
         """A behavioural pair for the introspection above.
 
         If argparse internals ever shift under the test, this still fails when
         a future command is quietly added.
         """
-        for future in ("search", "route", "bundle", "mcp", "compose"):
+        for future in ("bundle", "mcp", "compose", "serve"):
             with self.subTest(command=future):
                 self.assertEqual(self.run_cli([future], env={}).code, 2)
 
@@ -60,7 +61,7 @@ class TestCommandSurface(EngineTestCase):
         self.assertIn("usage", result.stderr.lower())
 
     def test_unknown_command_exits_2(self) -> None:
-        result = self.run_cli(["search", "anything"], env={})
+        result = self.run_cli(["no-such-command", "anything"], env={})
         self.assertEqual(result.code, 2)
 
 

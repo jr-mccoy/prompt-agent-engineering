@@ -11,13 +11,14 @@ PAE Registry  →  pae_engine (Python API)  →  pae (CLI)
 
 ## Status
 
-**Version 0.1.0 is the in-tree pre-release package version. The project has not
-been published to PyPI.** Install it from a checkout; `pip install
-prompt-agent-engineering` does not work yet and this document will say so until
-a release actually exists.
+**Version 0.2.0.dev0 is the in-tree development version. The project has not
+been published to PyPI, and no release has been tagged.** Install it from a
+checkout; `pip install prompt-agent-engineering` does not work yet and this
+document will say so until a release actually exists.
 
-Search, routing, context compilation and MCP are later phases. They are
-deliberately absent rather than stubbed.
+Deterministic lexical search and task routing ship in this version. Context
+compilation and MCP are later phases and are deliberately absent rather than
+stubbed.
 
 ## What it does
 
@@ -28,7 +29,29 @@ deliberately absent rather than stubbed.
 | `pae stats` | what is in the registry, by lifecycle, kind, maturity, serving policy |
 | `pae get <ref>` | resolve a UID, public ID or retired alias to its record |
 | `pae get <ref> --content` | return the whole verified source body |
+| `pae search "<query>"` | which resources match this description |
+| `pae route "<task>"` | which scope and kind should handle this task |
 | `pae validate-registry` | is this checkout's registry safe to serve from |
+
+```bash
+pae search "android security audit" --kind skill --limit 5
+pae route  "my model drifted in production and accuracy dropped"
+```
+
+**Search and routing read registry metadata only.** Neither calls
+`Registry.content()`, so what a resource says cannot influence where it ranks,
+and search can never become a way to read something serving policy withholds.
+Ranking is BM25F with uniform field weights — offline, deterministic, standard
+library only, no embeddings and no index on disk. A `score` orders results
+within one query; it is not a probability or a confidence value, and no output
+emits one. `pae route` answers `matched`, `ambiguous`, `weak` or `no_route`,
+and every one of those exits 0 — ambiguity is a result, not a failure.
+
+The first lexical search builds an in-memory index (about a second on the
+current 5,200-record registry); warm searches are sub-millisecond, and an exact
+UID or public ID resolves without building it at all. Full details, including
+the known limitations, are in
+[docs/search-routing.md](docs/search-routing.md).
 
 ## Design commitments
 
@@ -147,7 +170,7 @@ See [docs/getting-started.md](docs/getting-started.md) for the full walkthrough.
 ## Python API
 
 ```python
-from pae_engine import Repository
+from pae_engine import Repository, Router, SearchEngine
 
 repository = Repository.discover()          # --repo / PAE_REPO / ancestors
 registry = repository.registry()            # opens no registry data yet
@@ -160,6 +183,10 @@ registry.content("prompt:...").text()       # Content — whole, verified body
 for record in registry.records():           # streaming, bounded memory
     ...
 registry.load_all()                         # every record, memoized
+
+search = SearchEngine(registry)             # builds no index until first search
+search.search("android security audit")     # SearchResults — ranked hits
+Router(search).route("review my terraform") # RouteDecision — scope, kind, why
 ```
 
 Every public model exposes `to_json_obj()`, and the CLI uses those methods
@@ -172,12 +199,18 @@ Typed errors carry machine-readable detail: `MalformedReference`,
 
 ## Public API stability
 
-`0.1.0` is a pre-release. The surface below is stable enough to build later
-phases on, but is **not** covered by a 1.0 semantic-versioning promise:
+`0.2.0.dev0` is a development version. The surface below is stable enough to
+build later phases on, but is **not** covered by a 1.0 semantic-versioning
+promise:
 
 the `pae` command name · exit codes · `--json` field names · the `pae_engine`
 import namespace · `Repository`, `Registry`, `Record`, `Resolution`,
-`Content`, `Summary` · the typed exception hierarchy.
+`Content`, `Summary`, `SearchEngine`, `Router`, `SearchHit`, `SearchResults`,
+`RouteCandidate`, `RouteDecision` · the typed exception hierarchy.
+
+Ranking coefficients are **not** public API. `k1`, `b`, the field set and the
+per-term arithmetic live behind `matched_fields` and `match_terms` precisely so
+they can change without breaking a consumer.
 
 Underscore-prefixed modules and helpers are not public API.
 

@@ -2,10 +2,32 @@
 
 **Purpose:** This guide helps AI agents (like Claude Code) work effectively with the Prompt & Agent Engineering (PAE) repository.
 
-> **This file is the interim canonical routing reference for the repository.**
-> `AGENTS.md`, `START_HERE_FOR_AI.md`, and other client bootstrap files point
-> here rather than maintaining their own routing tables. Executable routing
-> (`pae route`) does not exist yet; see [`ROADMAP.md`](ROADMAP.md).
+> **This file is the canonical human-readable routing reference for the
+> repository.** `AGENTS.md`, `START_HERE_FOR_AI.md`, and other client bootstrap
+> files point here rather than maintaining their own routing tables.
+
+> **Executable routing now exists.** If the PAE Engine is installed, prefer it
+> for "which resource for this task?":
+>
+> ```bash
+> pae route  "<task>"     # which scope and kind should handle this, and why
+> pae search "<task>"     # ranked resources, with the matched terms shown
+> ```
+>
+> It is generated from `meta/registry/`, so unlike a hand-maintained table it
+> cannot drift from the corpus. It reports `ambiguous`, `weak` or `no_route`
+> rather than guessing, and every status exits 0. Details:
+> [`pae-engine/docs/search-routing.md`](pae-engine/docs/search-routing.md).
+>
+> **The tables below are not obsolete.** They remain the fallback wherever the
+> Engine is not installed, and they remain the *only* source for everything the
+> registry cannot represent — the authoring decision tree, the domain placement
+> axis, reuse-before-authoring, load-bearing domain conventions and safety
+> guards, negative boundaries ("X lives here, **not** there"), ordered
+> workflows, and the token-efficiency rules. A lexical router can rank
+> resources; it cannot tell you not to create a duplicate. Measured agreement
+> with these tables and the migration plan are recorded in
+> [ADR-0023](meta/adr/0023-executable-routing-migration.md).
 
 ---
 

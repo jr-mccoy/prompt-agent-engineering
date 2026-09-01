@@ -40,9 +40,15 @@ Available today, exercised by CI:
   registry's serving policy. See
   [`pae-engine/README.md`](pae-engine/README.md).
 
-Not available: search. There is no `pae search`, no routing code, no ranked
-retrieval, no MCP server, no context compiler, and no evaluation harness. The
-package is not published to PyPI and the repository has no tags.
+- **Deterministic search and routing** — `pae search` and `pae route`, BM25F
+  over registry metadata with an in-memory index, plus a committed 120-case
+  internal regression set. Offline, standard-library-only, no embeddings. See
+  [`pae-engine/docs/search-routing.md`](pae-engine/docs/search-routing.md).
+
+Not available: there is no MCP server, no context compiler, and no independent
+evaluation harness. The 120-case regression set is an internal tuning and
+regression corpus, not a benchmark. The package is not published to PyPI and
+the repository has no tags.
 
 ---
 

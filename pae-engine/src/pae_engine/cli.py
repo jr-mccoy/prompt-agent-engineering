@@ -19,11 +19,14 @@ import json
 import sys
 from typing import Any, Optional, Sequence, TextIO
 
+from ._lexical import DEFAULT_LIMIT, MAX_LIMIT
 from ._version import __version__
 from .errors import PaeError, UsageError
 from .models import RECORD_SCHEMA, SUMMARY_SCHEMA
 from .registry import Registry
 from .repository import REPO_ENV_VAR, Repository
+from .routing import DEFAULT_ROUTE_LIMIT, MAX_ROUTE_LIMIT, Router
+from .search import KINDS, SearchEngine
 from .validate import raise_if_invalid, validate_registry
 
 __all__ = ["main"]
@@ -133,6 +136,77 @@ def _build_parser() -> argparse.ArgumentParser:
         "--content",
         action="store_true",
         help="return the verified source body instead of metadata",
+    )
+
+    search = subparsers.add_parser(
+        "search",
+        parents=[common],
+        help="rank resources against a natural-language query",
+        description=(
+            "Deterministic lexical search over registry metadata. Resource bodies are "
+            "never read, so what a resource says cannot affect where it ranks. Scores "
+            "order results within one query and are not confidence values."
+        ),
+    )
+    search.add_argument("query", help="natural-language query, or an exact UID / public ID")
+    search.add_argument(
+        "--kind",
+        action="append",
+        dest="kinds",
+        metavar="KIND",
+        help=f"restrict to a kind ({', '.join(KINDS)}); repeatable",
+    )
+    search.add_argument(
+        "--scope",
+        action="append",
+        dest="scopes",
+        metavar="SCOPE",
+        help="restrict to a scope; repeatable",
+    )
+    search.add_argument(
+        "--limit",
+        type=int,
+        default=DEFAULT_LIMIT,
+        metavar="N",
+        help=f"maximum results (default {DEFAULT_LIMIT}, max {MAX_LIMIT})",
+    )
+    search.add_argument(
+        "--include-deprecated", action="store_true", help="include deprecated resources"
+    )
+    search.add_argument(
+        "--include-tombstones", action="store_true", help="include tombstoned identities"
+    )
+    search.add_argument(
+        "--include-copies",
+        action="store_true",
+        help="return every physical copy instead of one result per canonical cluster",
+    )
+
+    route = subparsers.add_parser(
+        "route",
+        parents=[common],
+        help="decide which scope and kind should handle a task",
+        description=(
+            "Route a task to a scope and resource kind, with candidate resources. "
+            "Reports 'ambiguous', 'weak' or 'no_route' rather than forcing a confident "
+            "answer out of thin evidence. Never executes a resource."
+        ),
+    )
+    route.add_argument("task", help="natural-language description of the task")
+    route.add_argument(
+        "--kind",
+        action="append",
+        dest="kinds",
+        metavar="KIND",
+        help=f"restrict candidates to a kind ({', '.join(KINDS)}); repeatable",
+    )
+    route.add_argument(
+        "--limit",
+        type=int,
+        default=DEFAULT_ROUTE_LIMIT,
+        metavar="N",
+        help=f"candidate resources to return (default {DEFAULT_ROUTE_LIMIT}, "
+        f"max {MAX_ROUTE_LIMIT})",
     )
 
     validate = subparsers.add_parser(
@@ -326,6 +400,85 @@ def _write_record_human(out: TextIO, record: Any, resolution: Any) -> None:
         out.write(f"replacement:   {resolution.replacement['relation']} -> {refs}\n")
 
 
+def _cmd_search(repository: Repository, args: Any, as_json: bool, out: TextIO) -> int:
+    engine = SearchEngine(
+        Registry.open(repository),
+        include_deprecated=bool(args.include_deprecated),
+        include_tombstones=bool(args.include_tombstones),
+    )
+    results = engine.search(
+        args.query,
+        kinds=args.kinds,
+        scopes=args.scopes,
+        limit=args.limit,
+        include_copies=bool(args.include_copies),
+    )
+    if as_json:
+        _emit_json(results.to_json_obj(), out)
+        return 0
+
+    for notice in results.notices:
+        out.write(f"note: {notice}\n")
+    if not results.hits:
+        out.write(f"no results for {results.query!r}\n")
+        out.write(f"terms: {' '.join(results.normalized_terms)}\n")
+        return 0
+
+    shown = len(results.hits)
+    out.write(f"{results.total_matched} result(s); showing {shown}\n")
+    out.write(f"terms: {' '.join(results.normalized_terms)}\n\n")
+    for hit in results.hits:
+        out.write(f"{hit.rank:>2}. {hit.id}\n")
+        out.write(
+            f"    {hit.kind} · {hit.scope} · score {hit.score:.3f}\n"
+            if hit.matched_fields != ("exact_reference",)
+            else f"    {hit.kind} · {hit.scope} · exact reference\n"
+        )
+        out.write(f"    {hit.title}\n")
+        for field in hit.matched_fields:
+            out.write(f"    {field}: {' '.join(hit.match_terms[field])}\n")
+        if hit.copy_uids:
+            out.write(f"    copies: {len(hit.copy_uids)} other member(s) of this cluster\n")
+        out.write("\n")
+    return 0
+
+
+def _cmd_route(repository: Repository, args: Any, as_json: bool, out: TextIO) -> int:
+    engine = SearchEngine(Registry.open(repository))
+    decision = Router(engine).route(args.task, kinds=args.kinds, limit=args.limit)
+    if as_json:
+        _emit_json(decision.to_json_obj(), out)
+        return 0
+
+    out.write(f"status:   {decision.status}\n")
+    out.write(f"scope:    {decision.selected_scope or '— none selected'}\n")
+    out.write(f"kind:     {decision.selected_kind or '— none selected'}\n")
+    out.write(f"coverage: {decision.coverage:.2f}   margin: {decision.margin:.2f}\n")
+
+    if decision.candidate_scopes:
+        out.write("\ncandidate scopes\n")
+        for candidate in decision.candidate_scopes[:5]:
+            out.write(
+                f"  {candidate.name:<34} {candidate.score:>8.3f}  "
+                f"({candidate.hit_count} hit(s))\n"
+            )
+    if decision.candidate_kinds:
+        out.write("\ncandidate kinds\n")
+        for candidate in decision.candidate_kinds:
+            out.write(
+                f"  {candidate.name:<34} {candidate.score:>8.3f}  "
+                f"({candidate.hit_count} hit(s))\n"
+            )
+    if decision.resources:
+        out.write("\nstart from\n")
+        for hit in decision.resources:
+            out.write(f"  {hit.id}\n      {hit.title}\n")
+    out.write("\nwhy\n")
+    for reason in decision.reasons:
+        out.write(f"  - {reason}\n")
+    return 0
+
+
 def _cmd_validate(
     repository: Repository, verify_checksums: bool, as_json: bool, out: TextIO
 ) -> int:
@@ -382,6 +535,10 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             return _cmd_stats(repository, bool(args.verify), as_json, out)
         if args.command == "get":
             return _cmd_get(repository, args.ref, bool(args.content), as_json, out)
+        if args.command == "search":
+            return _cmd_search(repository, args, as_json, out)
+        if args.command == "route":
+            return _cmd_route(repository, args, as_json, out)
         if args.command == "validate-registry":
             return _cmd_validate(repository, bool(args.verify_checksums), as_json, out)
 

@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from types import MappingProxyType
-from typing import Any, Mapping, Optional
+from typing import Any, Iterator, Mapping, Optional
 
 from .errors import ContentEncodingError, IncompatibleRegistry
 
@@ -23,10 +23,15 @@ __all__ = [
     "SUMMARY_SCHEMA",
     "SERVING_POLICIES",
     "FAIL_CLOSED_POLICY",
+    "ROUTE_STATUSES",
     "Record",
     "Resolution",
     "Content",
     "Summary",
+    "SearchHit",
+    "SearchResults",
+    "RouteCandidate",
+    "RouteDecision",
 ]
 
 #: The only registry contracts this Engine implements.
@@ -344,3 +349,164 @@ class Summary:
 
     def with_verified(self, verified: bool) -> "Summary":
         return Summary.from_raw(self.raw, verified=verified)
+
+
+# --------------------------------------------------------------------------
+# search
+# --------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class SearchHit:
+    """One ranked result.
+
+    ``uid`` is the durable identity a later phase resolves; the source path is
+    deliberately absent, because a file path is a location and not a name.
+    """
+
+    uid: str
+    id: str
+    kind: str
+    title: str
+    scope: str
+    rank: int
+    #: An unbounded deterministic lexical ranking score. It orders results
+    #: within one query and means nothing across queries. It is **not** a
+    #: probability, a percentage, or a calibrated confidence, and nothing in
+    #: the Engine presents it as one.
+    score: float
+    maturity: Optional[str]
+    serving_policy: str
+    metadata_completeness: Optional[str]
+    matched_fields: tuple[str, ...]
+    match_terms: Mapping[str, tuple[str, ...]]
+    #: The cluster this resource belongs to: its own UID when it is a canonical
+    #: (or unrelated), the canonical's UID when it is a registered copy.
+    canonical_uid: str
+    #: Search-visible sibling copies. Never includes an excluded record.
+    copy_uids: tuple[str, ...]
+
+    def to_json_obj(self) -> dict[str, Any]:
+        return {
+            "canonical_uid": self.canonical_uid,
+            "copy_uids": list(self.copy_uids),
+            "id": self.id,
+            "kind": self.kind,
+            "match_terms": {k: list(v) for k, v in self.match_terms.items()},
+            "matched_fields": list(self.matched_fields),
+            "maturity": self.maturity,
+            "metadata_completeness": self.metadata_completeness,
+            "rank": self.rank,
+            "score": self.score,
+            "scope": self.scope,
+            "serving_policy": self.serving_policy,
+            "title": self.title,
+            "uid": self.uid,
+        }
+
+
+@dataclass(frozen=True)
+class SearchResults:
+    """The answer to one search. Zero hits is a valid answer, not an error."""
+
+    query: str
+    normalized_terms: tuple[str, ...]
+    hits: tuple[SearchHit, ...]
+    #: Positive-score logical results after eligibility, query-time filters and
+    #: cluster deduplication, but before ``limit``. With ``include_copies`` it
+    #: counts physical results instead.
+    total_matched: int
+    filters: Mapping[str, Any]
+    #: Non-error conditions worth reporting — for example an exact reference
+    #: that exists but is hidden by the default eligibility rules.
+    notices: tuple[str, ...] = ()
+
+    def __iter__(self) -> Iterator[SearchHit]:
+        return iter(self.hits)
+
+    def __len__(self) -> int:
+        return len(self.hits)
+
+    def to_json_obj(self) -> dict[str, Any]:
+        return {
+            "filters": _plain(self.filters),
+            "hits": [hit.to_json_obj() for hit in self.hits],
+            "normalized_terms": list(self.normalized_terms),
+            "notices": list(self.notices),
+            "query": self.query,
+            "total_matched": self.total_matched,
+        }
+
+
+# --------------------------------------------------------------------------
+# routing
+# --------------------------------------------------------------------------
+
+#: The four outcomes of a route. ``ambiguous`` and ``weak`` are results, not
+#: failures: forcing a single confident answer out of thin evidence is the
+#: failure mode the Router is built to avoid.
+ROUTE_STATUSES = ("matched", "ambiguous", "weak", "no_route")
+
+
+@dataclass(frozen=True)
+class RouteCandidate:
+    """A scope or kind that the evidence points at, with its best hit."""
+
+    name: str
+    score: float
+    #: How many hits fell in this candidate. Informational only — it never
+    #: enters the score, because rewarding population would hand every route to
+    #: the largest kind.
+    hit_count: int
+    top_resource_uid: str
+
+    def to_json_obj(self) -> dict[str, Any]:
+        return {
+            "hit_count": self.hit_count,
+            "name": self.name,
+            "score": self.score,
+            "top_resource_uid": self.top_resource_uid,
+        }
+
+
+@dataclass(frozen=True)
+class RouteDecision:
+    """Where a task should go, and the observable evidence for it.
+
+    ``selected_scope`` and ``selected_kind`` are populated only when ``status``
+    is ``matched``. That is deliberately conservative: a consumer that ignores
+    ``status`` and reads the selection anyway gets nothing rather than a guess.
+    """
+
+    query: str
+    normalized_terms: tuple[str, ...]
+    status: str
+    selected_scope: Optional[str]
+    selected_kind: Optional[str]
+    candidate_scopes: tuple[RouteCandidate, ...]
+    candidate_kinds: tuple[RouteCandidate, ...]
+    resources: tuple[SearchHit, ...]
+    #: Fraction of normalized query terms the top hit matched in title, desc,
+    #: pid or tags. Not a confidence.
+    coverage: float
+    #: Relative gap between the best and second-best scope score. Not a
+    #: confidence.
+    margin: float
+    #: Concise deterministic evidence. The numeric fields above are
+    #: authoritative; no consumer should need to parse these strings.
+    reasons: tuple[str, ...]
+
+    def to_json_obj(self) -> dict[str, Any]:
+        return {
+            "candidate_kinds": [c.to_json_obj() for c in self.candidate_kinds],
+            "candidate_scopes": [c.to_json_obj() for c in self.candidate_scopes],
+            "coverage": self.coverage,
+            "margin": self.margin,
+            "normalized_terms": list(self.normalized_terms),
+            "query": self.query,
+            "reasons": list(self.reasons),
+            "resources": [hit.to_json_obj() for hit in self.resources],
+            "selected_kind": self.selected_kind,
+            "selected_scope": self.selected_scope,
+            "status": self.status,
+        }

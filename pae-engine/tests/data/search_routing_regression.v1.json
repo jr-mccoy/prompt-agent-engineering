@@ -1,0 +1,1660 @@
+{
+  "schema": "pae-search-routing-regression/1",
+  "disclosure": "This is an internal design and tuning regression set, not an independently authored benchmark and not evidence of general model or search quality. Its labels were written by the same process that selected the ranking algorithm, and the router thresholds were fitted on it. Do not publish these numbers as independent evaluation.",
+  "purpose": "Pin the behaviour of pae_engine.SearchEngine and pae_engine.Router against the live registry so a ranking or routing regression is caught in CI.",
+  "label_sources": {
+    "claude_md_routing_table": "Derived from the hand-written \"user phrase\" -> resource mappings that already existed in CLAUDE.md before Phase 4. Those mappings predate the search implementation and were not produced by any algorithm under test. Query text was paraphrased into natural user language so a case does not simply echo its target's title.",
+    "registry_record_sample": "Hand-authored during Phase 4 against a sampled registry record, because CLAUDE.md's tables target prompts almost exclusively and supply no labels for skills, agents, commands, personas or techniques.",
+    "registry_relationship": "Derived from an explicit copy_of relationship in the registry.",
+    "phase4_regression_judgment": "Hand-authored Phase 4 regression judgment. Acceptable scopes and kinds are deliberately permissive where the corpus genuinely supports several answers."
+  },
+  "notes": [
+    "acceptable_* lists are permissive: any listed value counts as correct.",
+    "An empty acceptable_* list means that dimension is not scored for the case.",
+    "Scopes are expressed in the Phase 4 scope vocabulary, in which agentic-resources is split one level deeper (agentic-resources/<category>).",
+    "expected_status applies to routing only."
+  ],
+  "cases": [
+    {
+      "id": "case-001",
+      "class": "task",
+      "query": "I'm brand new to bug bounty hunting and want a plan for my first three months",
+      "acceptable_resource_ids": [
+        "prompt:software-engineering/bug-bounty/bugbounty-getting-started-orientation"
+      ],
+      "acceptable_scopes": [
+        "software-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-002",
+      "class": "task",
+      "query": "my coworker keeps making comments and I need to write down what happened at work",
+      "acceptable_resource_ids": [
+        "prompt:legal/personal-self-advocacy/workplace/legalprep-workplace-concern-documentation-organizer"
+      ],
+      "acceptable_scopes": [
+        "legal"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-003",
+      "class": "task",
+      "query": "explain a machine learning concept to me at the right level",
+      "acceptable_resource_ids": [
+        "prompt:ai-ml/learning-ai-ml/mllearn-concept-explainer"
+      ],
+      "acceptable_scopes": [
+        "ai-ml"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-004",
+      "class": "task",
+      "query": "how should we match mentors to the people who want mentoring",
+      "acceptable_resource_ids": [
+        "prompt:discipleship/pairing-and-relationship/discipleship-pairing-criteria-design"
+      ],
+      "acceptable_scopes": [
+        "discipleship"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-005",
+      "class": "task",
+      "query": "put together the submission package and synopsis for my children's book",
+      "acceptable_resource_ids": [
+        "prompt:childrens-writing/publishing-business/childrens-synopsis-submission-package"
+      ],
+      "acceptable_scopes": [
+        "childrens-book-studio",
+        "childrens-writing"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-006",
+      "class": "task",
+      "query": "write a memo comparing several policy options for a decision maker",
+      "acceptable_resource_ids": [
+        "prompt:policy/policy-options-memo"
+      ],
+      "acceptable_scopes": [
+        "decision-making",
+        "policy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-007",
+      "class": "task",
+      "query": "look for the low probability disasters that would wreck this project",
+      "acceptable_resource_ids": [
+        "prompt:risk/risk-tail-risk-scan"
+      ],
+      "acceptable_scopes": [
+        "risk"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-008",
+      "class": "task",
+      "query": "my patient is in crisis right now in session and I need to de-escalate and decide disposition",
+      "acceptable_resource_ids": [
+        "prompt:psychology/risk-crisis/psychology-crisis-de-escalation-session-plan"
+      ],
+      "acceptable_scopes": [
+        "psychology"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-009",
+      "class": "task",
+      "query": "set up code review that happens automatically with AI for my team",
+      "acceptable_resource_ids": [
+        "prompt:engineering-workflows/ai-native-rollouts/airollout-ambient-code-review"
+      ],
+      "acceptable_scopes": [
+        "engineering-workflows"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-010",
+      "class": "task",
+      "query": "I have to give 360 feedback about a colleague",
+      "acceptable_resource_ids": [
+        "prompt:hr-management/performance-reviews/hr-peer-360-feedback"
+      ],
+      "acceptable_scopes": [
+        "hr-management"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-011",
+      "class": "task",
+      "query": "grade this product requirements document against a rubric",
+      "acceptable_resource_ids": [
+        "prompt:product-management/prompts/product-rigorous-prd-evaluation-and-scoring"
+      ],
+      "acceptable_scopes": [
+        "product-management"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-012",
+      "class": "task",
+      "query": "build a portfolio of shipped work over the next six months",
+      "acceptable_resource_ids": [
+        "prompt:personal-development/prompts/agency/agency-proof-of-work-portfolio"
+      ],
+      "acceptable_scopes": [
+        "personal-development"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-013",
+      "class": "task",
+      "query": "help me tell apart what was observed from what was concluded",
+      "acceptable_resource_ids": [
+        "prompt:reasoning-craft/epistemic/epistemic-claim-inference-separator"
+      ],
+      "acceptable_scopes": [
+        "reasoning-craft"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-014",
+      "class": "task",
+      "query": "should our church adopt this published Bible study curriculum",
+      "acceptable_resource_ids": [
+        "prompt:biblical-studies/church-staff-ministry-ops/biblical-churchstaff-curriculum-selection-evaluation"
+      ],
+      "acceptable_scopes": [
+        "biblical-studies"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-015",
+      "class": "task",
+      "query": "write a PRISMA style protocol for a systematic literature review",
+      "acceptable_resource_ids": [
+        "prompt:research-academic/research-systematic-review-protocol"
+      ],
+      "acceptable_scopes": [
+        "research-academic",
+        "science"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-016",
+      "class": "task",
+      "query": "design a cell culture protocol for the lab",
+      "acceptable_resource_ids": [
+        "prompt:science/bench-and-wetlab/science-cell-culture-protocol-designer"
+      ],
+      "acceptable_scopes": [
+        "science"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-017",
+      "class": "task",
+      "query": "build me a deliberate practice loop to get better at one narrow skill",
+      "acceptable_resource_ids": [
+        "prompt:learning/learning-deliberate-practice-designer"
+      ],
+      "acceptable_scopes": [
+        "learning"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-018",
+      "class": "task",
+      "query": "draft a biopsychosocial intake note for a new therapy client",
+      "acceptable_resource_ids": [
+        "prompt:psychology/documentation/psychology-intake-assessment-note"
+      ],
+      "acceptable_scopes": [
+        "psychology"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-019",
+      "class": "task",
+      "query": "the other side is using an exploding offer and hardball pressure tactics on me",
+      "acceptable_resource_ids": [
+        "prompt:negotiation/at-the-table/negotiation-hard-bargainer-defense"
+      ],
+      "acceptable_scopes": [
+        "negotiation"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-020",
+      "class": "task",
+      "query": "I need eight quick ideas in eight minutes",
+      "acceptable_resource_ids": [
+        "prompt:ideation/ideation-crazy-eights"
+      ],
+      "acceptable_scopes": [
+        "ideation"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-021",
+      "class": "task",
+      "query": "check my study design for confounders and threats to validity",
+      "acceptable_resource_ids": [
+        "prompt:science/methods-foundations/science-confound-and-bias-audit"
+      ],
+      "acceptable_scopes": [
+        "science"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-022",
+      "class": "task",
+      "query": "train our faculty to understand assessment better",
+      "acceptable_resource_ids": [
+        "prompt:education-teaching/program/faculty-development/program-assessment-literacy-curriculum"
+      ],
+      "acceptable_scopes": [
+        "education-teaching"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-023",
+      "class": "task",
+      "query": "take my software idea all the way to something a coding agent can build",
+      "acceptable_resource_ids": [
+        "prompt:idea-to-product/orchestrator-idea-to-product"
+      ],
+      "acceptable_scopes": [
+        "idea-to-product"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-024",
+      "class": "task",
+      "query": "design entrustable professional activities for our residency program",
+      "acceptable_resource_ids": [
+        "prompt:medical-education/educator-curriculum-design/curric-epa-implementation-designer"
+      ],
+      "acceptable_scopes": [
+        "medical-education"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-025",
+      "class": "task",
+      "query": "plan a cross functional delivery sprint for the product team",
+      "acceptable_resource_ids": [
+        "prompt:product-management/prompts/product-delivery-sprint-planner"
+      ],
+      "acceptable_scopes": [
+        "product-management"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-026",
+      "class": "task",
+      "query": "what early warning signals tell me which future is actually arriving",
+      "acceptable_resource_ids": [
+        "prompt:decision-making/scenario-signposts-and-triggers"
+      ],
+      "acceptable_scopes": [
+        "decision-making"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-027",
+      "class": "task",
+      "query": "work out the holiday and summer schedule between two households",
+      "acceptable_resource_ids": [
+        "prompt:legal/custody/legal-holiday-and-vacation-schedule-builder",
+        "prompt:parenting/caregiver-facing/custody/parenting-custody-holiday-vacation-schedule-builder"
+      ],
+      "acceptable_scopes": [
+        "legal",
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-028",
+      "class": "task",
+      "query": "check one claim against several different kinds of sources",
+      "acceptable_resource_ids": [
+        "prompt:research-academic/research-source-triangulation"
+      ],
+      "acceptable_scopes": [
+        "research-academic"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-029",
+      "class": "task",
+      "query": "interview protocol for talking to potential customers without leading them",
+      "acceptable_resource_ids": [
+        "prompt:idea-to-product/stage-2-problem-validation/validation-customer-discovery-interview-protocol"
+      ],
+      "acceptable_scopes": [
+        "idea-to-product"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-030",
+      "class": "task",
+      "query": "turn these vague requirements into something I can actually test",
+      "acceptable_resource_ids": [
+        "prompt:prompt-engineering/evaluation/correctness-vague-requirements-translator"
+      ],
+      "acceptable_scopes": [
+        "prompt-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-031",
+      "class": "task",
+      "query": "my android app was vibe coded and I need a rules file built from an audit",
+      "acceptable_resource_ids": [
+        "prompt:software-engineering/vibe-coding-rescue/android/android-viberescue-rules-file"
+      ],
+      "acceptable_scopes": [
+        "software-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-032",
+      "class": "task",
+      "query": "my co-parent and I cannot agree on a decision about our kid",
+      "acceptable_resource_ids": [
+        "prompt:parenting/caregiver-facing/co-parenting/parenting-coparenting-shared-decision-framework"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-033",
+      "class": "task",
+      "query": "fill out the financial disclosure form for my divorce",
+      "acceptable_resource_ids": [
+        "prompt:legal/divorce/legal-financial-affidavit-and-disclosure-builder",
+        "prompt:legal/family-self-advocacy/legalprep-financial-disclosure-organizer"
+      ],
+      "acceptable_scopes": [
+        "legal"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-034",
+      "class": "task",
+      "query": "which AI image model should I pick for this job",
+      "acceptable_resource_ids": [
+        "prompt:image-generation/image-model-selection-guide"
+      ],
+      "acceptable_scopes": [
+        "image-generation"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-035",
+      "class": "task",
+      "query": "the company ignored me so how do I escalate to a supervisor then a regulator",
+      "acceptable_resource_ids": [
+        "prompt:written-advocacy/cross-cutting/advocacy-escalation-ladder-designer"
+      ],
+      "acceptable_scopes": [
+        "written-advocacy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-036",
+      "class": "task",
+      "query": "write a query letter to an agent for my kids book",
+      "acceptable_resource_ids": [
+        "prompt:childrens-writing/publishing-business/childrens-query-letter-kidlit"
+      ],
+      "acceptable_scopes": [
+        "childrens-writing"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-037",
+      "class": "task",
+      "query": "I have a skill gap and want it turned into a study plan",
+      "acceptable_resource_ids": [
+        "prompt:learning/learning-skill-gap-to-curriculum"
+      ],
+      "acceptable_scopes": [
+        "learning"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-038",
+      "class": "task",
+      "query": "are these accounts actually coordinated or do they just agree with each other",
+      "acceptable_resource_ids": [
+        "prompt:psy-ops/influence-operations/psyops-coordinated-inauthentic-behavior-indicators"
+      ],
+      "acceptable_scopes": [
+        "psy-ops"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-039",
+      "class": "task",
+      "query": "tear down a competitor's product and positioning",
+      "acceptable_resource_ids": [
+        "prompt:business-strategy/research/competitor-teardown"
+      ],
+      "acceptable_scopes": [
+        "business-strategy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-040",
+      "class": "task",
+      "query": "give my long running project a memory that survives between sessions",
+      "acceptable_resource_ids": [
+        "prompt:ai-ml/agentic-ai-systems/aiagent-project-continuity-memory-design"
+      ],
+      "acceptable_scopes": [
+        "ai-ml"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "claude_md_routing_table (pre-existing hand-written mapping, paraphrased into natural language)"
+    },
+    {
+      "id": "case-041",
+      "class": "kind",
+      "query": "python asyncio and async await patterns",
+      "acceptable_resource_ids": [
+        "skill:agentic-resources/languages/async-python-patterns"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "skill"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-042",
+      "class": "kind",
+      "query": "go concurrency goroutines and channels",
+      "acceptable_resource_ids": [
+        "skill:agentic-resources/languages/go-concurrency-patterns"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "skill"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-043",
+      "class": "kind",
+      "query": "react state management with redux toolkit and zustand",
+      "acceptable_resource_ids": [
+        "skill:agentic-resources/web-development/react-state-management"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "skill"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-044",
+      "class": "kind",
+      "query": "android room database persistence",
+      "acceptable_resource_ids": [
+        "skill:agentic-resources/mobile-development/android-room-database"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "skill"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-045",
+      "class": "kind",
+      "query": "manage secrets in a CI CD pipeline with vault",
+      "acceptable_resource_ids": [
+        "skill:agentic-resources/cicd-automation/secrets-management"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "skill"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-046",
+      "class": "kind",
+      "query": "revenue operations and lead routing MQL to SQL handoff",
+      "acceptable_resource_ids": [
+        "skill:agentic-resources/marketing/revops"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "skill"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-047",
+      "class": "kind",
+      "query": "generate a helm chart for my service",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "agentic-resources/cloud-infrastructure"
+      ],
+      "acceptable_kinds": [
+        "skill"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-048",
+      "class": "kind",
+      "query": "I want an expert typescript agent with advanced types and generics",
+      "acceptable_resource_ids": [
+        "agent:agentic-resources/languages/typescript-pro"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "agent"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-049",
+      "class": "kind",
+      "query": "agent that writes native iOS apps in swift and swiftui",
+      "acceptable_resource_ids": [
+        "agent:agentic-resources/frontend-mobile/ios-developer"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "agent"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-050",
+      "class": "kind",
+      "query": "modern javascript es6 async and node APIs specialist",
+      "acceptable_resource_ids": [
+        "agent:agentic-resources/languages/javascript-pro"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "agent"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-051",
+      "class": "kind",
+      "query": "agent to scan an android codebase for data privacy compliance",
+      "acceptable_resource_ids": [
+        "agent:agentic-resources/security/compliance-scanner"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "agent"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-052",
+      "class": "kind",
+      "query": "prompt engineering specialist agent",
+      "acceptable_resource_ids": [
+        "agent:agentic-resources/ml-ai/prompt-engineer"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "agent"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-053",
+      "class": "kind",
+      "query": "slash command to generate unit tests",
+      "acceptable_resource_ids": [
+        "command:agentic-resources/testing/test-generate"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "command"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-054",
+      "class": "kind",
+      "query": "command to run an android pre release security audit",
+      "acceptable_resource_ids": [
+        "command:agentic-resources/security/android-pre-release-security-audit"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "command"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-055",
+      "class": "kind",
+      "query": "command that validates configuration files",
+      "acceptable_resource_ids": [
+        "command:agentic-resources/deployment/config-validate"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "command"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-056",
+      "class": "kind",
+      "query": "backend architect persona for scalable system design",
+      "acceptable_resource_ids": [
+        "persona:agentic-resources/engineering/engineering-backend-architect"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "persona"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-057",
+      "class": "kind",
+      "query": "tiktok marketing persona for viral content",
+      "acceptable_resource_ids": [
+        "persona:agentic-resources/marketing/marketing-tiktok-strategist"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "persona"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-058",
+      "class": "kind",
+      "query": "persona that evaluates and compares tools",
+      "acceptable_resource_ids": [
+        "persona:agentic-resources/testing/testing-tool-evaluator"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "persona"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-059",
+      "class": "kind",
+      "query": "delimited sections technique",
+      "acceptable_resource_ids": [
+        "technique:ST-04"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "technique"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-060",
+      "class": "kind",
+      "query": "citation requirements technique for prompts",
+      "acceptable_resource_ids": [
+        "technique:QA-05"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "technique"
+      ],
+      "expected_status": null,
+      "label_source": "registry_record_sample (hand-authored query against a sampled record)"
+    },
+    {
+      "id": "case-061",
+      "class": "route",
+      "query": "review my terraform and dockerfile setup",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "agentic-resources/cloud-infrastructure",
+        "agentic-resources/devops",
+        "software-engineering"
+      ],
+      "acceptable_kinds": [
+        "prompt",
+        "skill"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-062",
+      "class": "route",
+      "query": "my toddler melts down every single transition",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-063",
+      "class": "route",
+      "query": "write a sermon on this passage",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "biblical-studies"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-064",
+      "class": "route",
+      "query": "my model drifted in production and accuracy dropped",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "ai-ml"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-065",
+      "class": "route",
+      "query": "appeal a denied insurance claim in writing",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "written-advocacy"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-066",
+      "class": "route",
+      "query": "differential diagnosis for chest pain in a real patient",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "healthcare-clinical"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-067",
+      "class": "route",
+      "query": "quiz me before my nursing boards",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "medical-education"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-068",
+      "class": "route",
+      "query": "lesson plan for tuesday's class",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "education-teaching"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-069",
+      "class": "route",
+      "query": "value this company and model the cash flows",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "finance"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-070",
+      "class": "route",
+      "query": "draft a mutual NDA and redline theirs",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "legal"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-071",
+      "class": "route",
+      "query": "core web vitals and bundle size are bad",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "agentic-resources/performance",
+        "frontend-development",
+        "software-engineering"
+      ],
+      "acceptable_kinds": [
+        "prompt",
+        "skill"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-072",
+      "class": "route",
+      "query": "board deck for the quarterly business review",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "presentations"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-073",
+      "class": "route",
+      "query": "design the core gameplay loop and progression",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "game-development"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-074",
+      "class": "route",
+      "query": "build a logo and brand mark image prompt",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "image-generation"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-075",
+      "class": "route",
+      "query": "I keep planning instead of shipping anything",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "personal-development",
+        "productivity"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-076",
+      "class": "route",
+      "query": "prepare for a salary negotiation with my manager",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "negotiation"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-077",
+      "class": "route",
+      "query": "design a voice assistant dialog flow",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "voice-conversational-ui"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-078",
+      "class": "route",
+      "query": "write a scene with better point of view and pacing",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "creative-writing"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-079",
+      "class": "route",
+      "query": "is this message manipulating me",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "psy-ops"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-080",
+      "class": "route",
+      "query": "design a RAG system and evaluate retrieval quality",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "ai-ml"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-081",
+      "class": "ambig",
+      "query": "weekly review",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "personal-development",
+        "productivity"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-082",
+      "class": "ambig",
+      "query": "I need help with a difficult conversation",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "negotiation",
+        "parenting",
+        "personal-development",
+        "psychology"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-083",
+      "class": "ambig",
+      "query": "assessment design",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "education-teaching",
+        "medical-education"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-084",
+      "class": "ambig",
+      "query": "risk analysis",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "decision-making",
+        "finance",
+        "risk",
+        "software-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-085",
+      "class": "ambig",
+      "query": "curriculum design",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "discipleship",
+        "education-teaching",
+        "learning",
+        "medical-education"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-086",
+      "class": "ambig",
+      "query": "how do I improve my prompt",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "prompt-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "matched",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-087",
+      "class": "ambig",
+      "query": "security review",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "agentic-resources/security",
+        "ai-ml",
+        "software-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-088",
+      "class": "ambig",
+      "query": "testing strategy",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "agentic-resources/testing",
+        "agentic-resources/testing-qa",
+        "game-development",
+        "software-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-089",
+      "class": "ambig",
+      "query": "stakeholder communication",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "business-strategy",
+        "personal-development",
+        "product-management"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-090",
+      "class": "ambig",
+      "query": "grief and loss",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "biblical-studies",
+        "personal-development",
+        "psychology"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-091",
+      "class": "ambig",
+      "query": "documentation",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "agentic-resources/documentation",
+        "decision-making",
+        "psychology",
+        "software-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-092",
+      "class": "ambig",
+      "query": "pricing",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "business-strategy",
+        "finance",
+        "idea-to-product",
+        "negotiation"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-093",
+      "class": "ambig",
+      "query": "onboarding",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "discipleship",
+        "education-teaching",
+        "science"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-094",
+      "class": "ambig",
+      "query": "burnout",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "personal-development",
+        "psychology",
+        "science"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-095",
+      "class": "ambig",
+      "query": "memory",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "ai-ml",
+        "education-teaching",
+        "productivity"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-096",
+      "class": "fuzzy",
+      "query": "R8 and proguard shrinking on android",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "agentic-resources/mobile-development",
+        "software-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-097",
+      "class": "fuzzy",
+      "query": "PACU recovery nursing",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "healthcare-clinical",
+        "medical-education"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-098",
+      "class": "fuzzy",
+      "query": "MCP tool interface design",
+      "acceptable_resource_ids": [
+        "prompt:ai-ml/genai-llm-engineering/genai-mcp-tool-interface-design"
+      ],
+      "acceptable_scopes": [
+        "ai-ml"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-099",
+      "class": "fuzzy",
+      "query": "curriculum-architecture",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "discipleship"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-100",
+      "class": "fuzzy",
+      "query": "curriculum_architecture",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "discipleship"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-101",
+      "class": "fuzzy",
+      "query": "ST-01",
+      "acceptable_resource_ids": [
+        "technique:ST-01"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [
+        "technique"
+      ],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-102",
+      "class": "fuzzy",
+      "query": "ADHD executive function homework",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "parenting",
+        "psychology"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-103",
+      "class": "fuzzy",
+      "query": "CI/CD pipline review",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "agentic-resources/cicd-automation",
+        "agentic-resources/devops",
+        "software-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-104",
+      "class": "fuzzy",
+      "query": "API rate limitting and throttling design",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "software-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-105",
+      "class": "fuzzy",
+      "query": "accessibilty audit wcag",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "agentic-resources/accessibility",
+        "education-teaching",
+        "frontend-development"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-106",
+      "class": "norote",
+      "query": "what is the weather in reykjavik tomorrow",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-107",
+      "class": "norote",
+      "query": "zzzzqqq wobblegonk",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-108",
+      "class": "norote",
+      "query": "my sourdough starter is not rising",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-109",
+      "class": "norote",
+      "query": "best hiking boots for wet granite",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-110",
+      "class": "norote",
+      "query": "translate this sentence into old norse",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-111",
+      "class": "norote",
+      "query": "who won the 1994 world cup",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-112",
+      "class": "norote",
+      "query": "fix my car's transmission whine",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-113",
+      "class": "norote",
+      "query": "recipe for chicken tikka masala",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-114",
+      "class": "norote",
+      "query": "tune a guitar to drop D",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-115",
+      "class": "norote",
+      "query": "when is the next lunar eclipse visible",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "phase4_regression_judgment"
+    },
+    {
+      "id": "case-116",
+      "class": "dedup",
+      "query": "calculate TAM SAM SOM market size",
+      "acceptable_resource_ids": [
+        "prompt:idea-to-product/stage-3-market-research/product-market-size-calculator",
+        "prompt:product-management/prompts/product-market-size-calculator"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "registry_relationship (copy_of edge)"
+    },
+    {
+      "id": "case-117",
+      "class": "dedup",
+      "query": "review a REST API design",
+      "acceptable_resource_ids": [
+        "prompt:idea-to-product/stage-8-architecture-design/api-rest-design-review",
+        "prompt:software-engineering/api/api-rest-design-review"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "registry_relationship (copy_of edge)"
+    },
+    {
+      "id": "case-118",
+      "class": "dedup",
+      "query": "research the competitive landscape",
+      "acceptable_resource_ids": [
+        "prompt:business-strategy/research/research-competitive-landscape",
+        "prompt:idea-to-product/stage-3-market-research/research-competitive-landscape"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "registry_relationship (copy_of edge)"
+    },
+    {
+      "id": "case-119",
+      "class": "dedup",
+      "query": "categorize bank statement transactions",
+      "acceptable_resource_ids": [
+        "skill:agentic-resources/financial-records/transaction-categorizer",
+        "skill:financial-records-toolkit/transaction-categorizer"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "registry_relationship (copy_of edge)"
+    },
+    {
+      "id": "case-120",
+      "class": "dedup",
+      "query": "design an agent work loop",
+      "acceptable_resource_ids": [
+        "prompt:engineering-workflows/ai-patterns/ai-pattern-agent-work-loop-design",
+        "prompt:idea-to-product/stage-10-ai-agent-handoff/ai-pattern-agent-work-loop-design"
+      ],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "registry_relationship (copy_of edge)"
+    }
+  ]
+}

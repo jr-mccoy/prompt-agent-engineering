@@ -16,8 +16,8 @@ the repository is right — file an issue.
 | **PAE Registry** | The governed resource corpus, its indexes, schemas, and a normalized machine-readable metadata layer | Corpus, indexes and normalized registry records **exist** (`meta/registry/`) |
 | **PAE Engine** | An installable Python package: identity resolution, metadata retrieval, policy-gated content serving, and consumer-side registry validation | Package, Python API and `pae` CLI **exist** (`pae-engine/`) |
 
-The Engine is real but early. It resolves, inspects and serves; it does **not**
-search, route, compile context, or speak MCP. Those remain planned, and
+The Engine is real but early. It resolves, inspects, serves, searches and
+routes; it does **not** compile context or speak MCP. Those remain planned, and
 documentation must not imply otherwise. The package is not published to PyPI.
 
 ---
@@ -203,8 +203,18 @@ PAE Registry  →  pae_engine (Python API)  →  pae (CLI)
 | runtime dependencies | none |
 
 **Commands.** `pae --version`, `pae where`, `pae stats`, `pae get <ref>`
-(`--content`), `pae validate-registry` (`--verify-checksums`). There is no
-`pae search` yet.
+(`--content`), `pae search "<query>"`, `pae route "<task>"`,
+`pae validate-registry` (`--verify-checksums`). There is no context compiler
+and no MCP server yet.
+
+**Search and routing are deterministic and lexical.** BM25F with uniform field
+weights over registry metadata, built into an in-memory index on first use.
+No embeddings, no vector store, no network, no index on disk, no runtime
+dependency. Relevance never reads a resource body, and a ranking score is not
+a confidence value. `pae route` may answer `ambiguous`, `weak` or `no_route`
+rather than force a choice. See
+[`pae-engine/docs/search-routing.md`](pae-engine/docs/search-routing.md) and
+ADR-0021 through ADR-0023.
 
 **The registry is the boundary.** The Engine reads
 `meta/registry/registry.jsonl` and `meta/registry/registry-summary.json`, and
