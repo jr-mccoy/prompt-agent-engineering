@@ -31,15 +31,28 @@ class TestVersion(EngineTestCase):
 class TestCommandSurface(EngineTestCase):
     def test_only_the_phase_three_commands_exist(self) -> None:
         """Search, routing, bundling and MCP are later phases."""
+        import argparse
+
         from pae_engine import cli
 
         parser = cli._build_parser()
-        actions = [
-            a for a in parser._subparsers._group_actions  # noqa: SLF001 - introspection
-            if hasattr(a, "choices")
+        subparsers = [
+            a for a in parser._actions if isinstance(a, argparse._SubParsersAction)
         ]
-        commands = set(actions[0].choices)
-        self.assertEqual(commands, {"where", "stats", "get", "validate-registry"})
+        self.assertEqual(len(subparsers), 1)
+        self.assertEqual(
+            set(subparsers[0].choices), {"where", "stats", "get", "validate-registry"}
+        )
+
+    def test_the_phase_four_commands_are_rejected(self) -> None:
+        """A behavioural pair for the introspection above.
+
+        If argparse internals ever shift under the test, this still fails when
+        a future command is quietly added.
+        """
+        for future in ("search", "route", "bundle", "mcp", "compose"):
+            with self.subTest(command=future):
+                self.assertEqual(self.run_cli([future], env={}).code, 2)
 
     def test_no_command_prints_help_and_exits_2(self) -> None:
         result = self.run_cli([], env={})

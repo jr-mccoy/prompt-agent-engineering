@@ -55,8 +55,8 @@ before any future publication step, never assumed from this record.
   either shadowing the other.
 - Documentation must be explicit that the import name differs from the command
   name, because that is genuinely surprising.
-- The three names are public API from `0.1.0` onwards
-  (see [ADR-0018](0018-checkout-required-runtime.md) for what else is), so
-  changing any of them later is a breaking change and needs its own ADR.
+- The three names are public API from `0.1.0` onwards — the full pre-release
+  surface is listed in [`pae-engine/README.md`](../../pae-engine/README.md) —
+  so changing any of them later is a breaking change and needs its own ADR.
 - A future publication step must re-verify that `prompt-agent-engineering` is
   still free on PyPI. This ADR is not evidence that it is.
