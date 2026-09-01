@@ -1,7 +1,7 @@
 ---
 name: Prompt Curator
 description: >
-  Optimized for the Prompting-Guides repository. Focuses on prompt authoring,
+  Optimized for the Prompt & Agent Engineering repository. Focuses on prompt authoring,
   review, curation, and repository management rather than software engineering.
 keep-coding-instructions: false
 ---

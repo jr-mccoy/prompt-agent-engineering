@@ -1,4 +1,4 @@
-# Contributing to AI Prompting Guides Collection
+# Contributing to Prompt & Agent Engineering
 
 Thank you for your interest in contributing! This guide covers the rules and mechanics of contributing.
 

@@ -11,7 +11,7 @@ name: release
 # One-time setup on each index (PyPI + TestPyPI), done once before the first run:
 #   1. Create the project's "pending publisher" at
 #        https://pypi.org/manage/account/publishing/   (and the test.pypi.org twin)
-#      with: owner = jumbodaddystack, repo = prompting-guides,
+#      with: owner = jr-mccoy, repo = prompt-agent-engineering,
 #             workflow = release.yml, environment = pypi (or testpypi).
 #   2. That's it — no secrets. OIDC mints a short-lived token per run.
 #

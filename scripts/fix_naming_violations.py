@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to fix naming convention violations in the Prompting-Guides repository.
+Script to fix naming convention violations in the Prompt & Agent Engineering repository.
 
 This script:
 1. Renames files that violate naming conventions

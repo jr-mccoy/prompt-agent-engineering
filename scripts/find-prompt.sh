@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# find-prompt.sh - Search and filter prompts in the Prompting-Guides repository
+# find-prompt.sh - Search and filter prompts in the Prompt & Agent Engineering repository
 # Usage: ./scripts/find-prompt.sh [OPTIONS] [SEARCH_TERM]
 #
 # Options:
@@ -47,7 +47,7 @@ done < <(cd "$REPO_ROOT" && find . -maxdepth 1 -type d \
 
 # Function to show help
 show_help() {
-    echo -e "${BOLD}find-prompt.sh${NC} - Search and filter prompts in the Prompting-Guides repository"
+    echo -e "${BOLD}find-prompt.sh${NC} - Search and filter prompts in the Prompt & Agent Engineering repository"
     echo ""
     echo -e "${BOLD}USAGE:${NC}"
     echo "    ./scripts/find-prompt.sh [OPTIONS] [SEARCH_TERM]"

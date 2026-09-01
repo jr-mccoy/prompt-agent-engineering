@@ -49,6 +49,12 @@ jobs:
       - name: Agentic inventory counts are current
         run: python3 domain-agentic-resources/inventory_counts.py --check
 
+      # Canonical repository facts, plus every count published in a primary
+      # document. Fails on a missing generated block, a missing declaration, a
+      # stale value, or a hand-edited block — a missing match is never a pass.
+      - name: Repository facts and published counts are current
+        run: python3 scripts/generate_repo_facts.py --check
+
       # --- Catalog / metadata integrity --------------------------------------
       - name: Technique index integrity
         working-directory: techniques
@@ -66,6 +72,12 @@ jobs:
       # --- Content integrity --------------------------------------------------
       - name: Relative Markdown links resolve
         run: python3 scripts/check_relative_links.py
+
+      # Frontmatter cross-references (related_prompts and siblings), which the
+      # body-link checker never inspects. Existing debt is baselined in
+      # meta/xref_baseline.json; this fails only on NEW unresolved references.
+      - name: Frontmatter cross-references (ratchet)
+        run: python3 scripts/check_frontmatter_references.py --check
 
       # Self-contained bundles carry copies of canonical prompts on purpose.
       # This fails when an original was edited and its copies were not.

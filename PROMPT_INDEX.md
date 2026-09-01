@@ -1,12 +1,16 @@
-# Comprehensive Prompt Index
+# Comprehensive Indexed Artifact Catalog
 
-**Generated:** 2026-08-28
+> **The filename `PROMPT_INDEX.md` is retained for compatibility.** This catalog lists every indexed Markdown artifact, and that is not the same thing as a list of prompts: alongside domain prompts it contains agentic resources (skills, agents, commands, personas) and bundled component files belonging to a parent resource (`references/`, `assets/`, `cards/` and similar).
+>
+> For classified counts with stated membership rules, see [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json). Normalized resource kinds are planned for the PAE Registry and do not exist yet — see [`ROADMAP.md`](ROADMAP.md).
 
-**Total Prompts:** 5588
+**Generated:** 2026-08-31
 
-**Prompts with Frontmatter:** 4653
+**Total Indexed Artifacts:** 5597
 
-**Prompts without Frontmatter:** 935
+**Artifacts with Frontmatter:** 4661
+
+**Artifacts without Frontmatter:** 936
 
 ---
 
@@ -4275,6 +4279,22 @@
 | [Route a Workflow Through the Right Visual Modality](domain-presentations/visual-planning/visualplan_modality_router.md) | presentations/visual-planning | ST-01, ST-02, CM-02, DS-01, DS-25 | visual-planning, modality, chart-selection, communication, routing | Given a communication or thinking task, decide which visual modality actually serves it — table, cha... |
 | [Scan for Cascade Effects From a New Capability](domain-presentations/visual-planning/visualplan_cascade_effects_scan.md) | presentations/visual-planning | ST-01, ST-02, CM-02, DS-01, RT-07 | visual-planning, cascade-effects, second-order, systems-thinking, capability-impact | When a new capability or change arrives, systematically scan for the second- and third-order effects... |
 
+## Product Management
+
+**Total:** 9 prompts
+
+| Title | Category | Techniques | Keywords | Description |
+|-------|----------|------------|----------|-------------|
+| [Coding Roadmap — Meta-Scaffolding Bridge from Appr](domain-product-management/prompts/product_planning_coding_roadmap.md) | product-management/prompts | ST-01, ST-02, DT-01, CM-02, DS-06 | technical-planning, architecture, build-sequencing, interface-contracts, pre-implementation | Draft a coding roadmap before writing any code: architecture sketch, module boundaries, build sequen... |
+| [Competitor Feature Teardown — Comparison Matrix, P](domain-product-management/prompts/product_competitor_feature_teardown.md) | product-management/prompts | ST-01, ST-02, RT-02, DS-06, CM-02 | competitive-analysis, feature-comparison, product-strategy, differentiation, market-positioning | Run a feature-by-feature teardown across 3+ named competitors: build a comparison matrix, surface pa... |
+| [Create a PRD via Interrogation (MVP-First)](domain-product-management/prompts/product_create_prd.md) | product-management/prompts | ST-01, ST-02, RT-01, CM-02, DS-02 | product-management, prd, requirements, mvp, scope-control | Interrogative PRD builder that gathers requirements through disciplined questioning, pushes back on ... |
+| [Feature Requirements Extraction from Stakeholder C](domain-product-management/prompts/product_feature_requirements_extraction.md) | product-management/prompts | ST-01, ST-02, CM-01, DS-06, QA-04 | requirements, stakeholder-input, prd, scope, product-management | Turn raw stakeholder conversation notes into structured functional and non-functional requirements, ... |
+| [Market Size (TAM/SAM/SOM) — Rapid or Comprehensive](domain-product-management/prompts/product_market_size_calculator.md) | product-management/prompts | ST-01, ST-02, RT-02, DS-02, CM-02 | product-management, market-sizing, tam-sam-som, business-strategy, estimation | Calculate Total / Serviceable / Obtainable market sizes using three independent methodologies (top-d... |
+| [Product Delivery Sprint Planner](domain-product-management/prompts/product_delivery_sprint_planner.md) | product-management/prompts | ST-02, DS-02, CM-02, RT-02, QA-01 | product-management, sprint-planning, user-stories, delivery, dependencies | Plan a cross-functional product delivery sprint from an approved PRD: decompose into user stories wi... |
+| [Product Idea Vetting — Will It Fly or Flop? Fast S](domain-product-management/prompts/product_product_idea_vetting_will_it_fly_or_flop.md) | product-management/prompts | ST-01, ST-02, RT-02, DS-06, QA-04 | idea-validation, product-strategy, go-no-go, risk-assessment, early-stage | Fast solo vetting of a raw product idea against demand, feasibility, risk, and timing dimensions. Ou... |
+| [Score a PRD Against a Rigorous Rubric](domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md) | product-management/prompts | ST-02, RT-02, CM-02, DS-01, QA-01 | product-management, prd, review, rubric, quality-gate | Evaluate an existing Product Requirements Document against a weighted rubric (clarity, problem frami... |
+| [Product Requirements Document (PRD) Template](domain-product-management/templates/prd_template.md) | product-management/templates | — | document, history, metrics, overview, prd | > Copy this template for feature specifications, product initiatives, and capability development. |
+
 ## Productivity
 
 **Total:** 109 prompts
@@ -5901,7 +5921,7 @@
 
 ---
 
-## Prompts Without Frontmatter (935)
+## Prompts Without Frontmatter (936)
 
 These prompts need frontmatter metadata added:
 
@@ -6806,6 +6826,7 @@ These prompts need frontmatter metadata added:
 - `domain-presentations/powerpoint_quarterly_business_review_builder.md` - 3. Quarterly Business Review Builder
 - `domain-presentations/powerpoint_status_report.md` - Status Report Generator
 - `domain-presentations/powerpoint_status_report_generator.md` - 10. Status Report Generator
+- `domain-product-management/templates/prd_template.md` - Product Requirements Document (PRD) Template
 - `domain-professional-writing/business-writing/business_writing_executive_proposal_template.md` - Executive Proposal Template (BLUF Format)
 - `domain-professional-writing/business-writing/business_writing_investment_proposal_example.md` - Worked Example: Building an Investment Proposal
 - `domain-professional-writing/domain-specific/domain_writing_amazon_fba.md` - Amazon FBA Seller - Product Description
