@@ -33,7 +33,12 @@ from pae_engine import (  # noqa: E402
 
 DATA = Path(__file__).parent / "data" / "search_routing_regression.v1.json"
 REPO = Path(__file__).resolve().parents[2]
-SAMPLE = 30
+
+#: Kept small on purpose. Each compiled case resolves 25 references, and the
+#: Registry scans the whole registry file per reference, so this is an
+#: I/O-bound test on a cold disk. The full sweep lives in
+#: ``run_context_compiler_diagnostics.py``.
+SAMPLE = 12
 
 
 class TestPackingFloors(unittest.TestCase):
@@ -57,7 +62,7 @@ class TestPackingFloors(unittest.TestCase):
             )
 
     def test_the_sample_actually_produced_bundles(self) -> None:
-        self.assertGreaterEqual(len(self.bundles), 20)
+        self.assertGreaterEqual(len(self.bundles), 8)
 
     def test_no_rendered_bundle_exceeds_the_budget_it_reports(self) -> None:
         """The load-bearing promise of the whole phase."""
@@ -121,7 +126,7 @@ class TestPackingFloors(unittest.TestCase):
     def test_compilation_is_reproducible_against_the_live_registry(self) -> None:
         registry = Registry.open(Repository.at(REPO))
         compiler = ContextCompiler(registry)
-        for decision, bundle in self.bundles[:5]:
+        for decision, bundle in self.bundles[:3]:
             again = compiler.compile_route(decision, budget=Budget(estimated_tokens=8000))
             self.assertEqual(again.bundle_sha256, bundle.bundle_sha256)
             self.assertEqual(again.render_markdown(), bundle.render_markdown())

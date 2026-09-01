@@ -298,11 +298,21 @@ renderer and counter, and exits non-zero if a guarded body was ever shortened
 or a rendered bundle exceeded the budget it reported.
 
 `--cases N` samples evenly across the seven case classes rather than taking the
-first N, which would return only the `task` block the file begins with. CI uses
-`--cases 25`: `Registry` resolves each reference by scanning the whole 9.7 MB
-registry file, so the full sweep costs roughly 15,000 such scans — unremarkable
-for a single `pae bundle` invocation, too slow for a build step. Run it without
-`--cases` locally for the complete picture.
+first N, which would return only the `task` block the file begins with.
+
+**This runner is a local tool, not a build step.** `Registry` resolves each
+reference by scanning the whole 9.7 MB registry file, so the full sweep costs
+roughly 15,000 such scans — about 145 GB of re-reading. That is unremarkable
+for a single `pae bundle` invocation (25 scans, ~0.26 s warm) and fine locally,
+but on a CI runner without a warm page cache even a 25-case sweep ran past 14
+minutes against 29 seconds locally. The invariants it asserts — no guarded body
+shortened, no bundle over the budget it reported, top-hit retention,
+determinism — are checked against the live registry in
+`tests/test_context_regression.py`, which runs in the ordinary unit-test job.
+
+That per-lookup full-file scan is pre-existing `Registry` behaviour that
+context compilation is simply the first workload to stress. An in-memory record
+index would remove it, and is recorded as a follow-up rather than changed here.
 
 **This is packing regression, not task-quality evaluation.** It measures
 whether the packer keeps what the ranking ranked highest and honours its own

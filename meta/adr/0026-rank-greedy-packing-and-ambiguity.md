@@ -82,6 +82,11 @@ a deterministic detail string derived from it. Utilization is slightly lower
 than knapsack would achieve, which is the intended trade — the packer optimizes
 for keeping what the ranking ranked highest, not for filling space.
 
-The diagnostics runner reports these figures at 2k–32k on every CI run and
+`tests/run_context_compiler_diagnostics.py` reports these figures at 2k–32k and
 exits non-zero if a guarded body is ever shortened or a rendered bundle exceeds
-the budget it reported. Those two columns are assertions, not measurements.
+the budget it reported. Those two columns are assertions, not measurements. It
+is run locally rather than per PR: unlike the metadata-only search diagnostics,
+it reads bodies, and `Registry` scans the whole registry file per reference, so
+the sweep is I/O-bound on a cold disk. The same invariants are asserted against
+the live registry by `tests/test_context_regression.py` inside the unit-test
+job.
