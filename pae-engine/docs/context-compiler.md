@@ -290,11 +290,19 @@ a registry v2.
 
 ```bash
 PYTHONPATH=src python3 tests/run_context_compiler_diagnostics.py --repo ..
+PYTHONPATH=src python3 tests/run_context_compiler_diagnostics.py --repo .. --cases 25
 ```
 
 Packs the committed regression tasks at 2k/4k/8k/16k/32k using the production
 renderer and counter, and exits non-zero if a guarded body was ever shortened
 or a rendered bundle exceeded the budget it reported.
+
+`--cases N` samples evenly across the seven case classes rather than taking the
+first N, which would return only the `task` block the file begins with. CI uses
+`--cases 25`: `Registry` resolves each reference by scanning the whole 9.7 MB
+registry file, so the full sweep costs roughly 15,000 such scans — unremarkable
+for a single `pae bundle` invocation, too slow for a build step. Run it without
+`--cases` locally for the complete picture.
 
 **This is packing regression, not task-quality evaluation.** It measures
 whether the packer keeps what the ranking ranked highest and honours its own

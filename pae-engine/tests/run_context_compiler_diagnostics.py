@@ -2,7 +2,14 @@
 """Pack the committed regression tasks into real bundles at several budgets.
 
     PYTHONPATH=src python3 tests/run_context_compiler_diagnostics.py --repo ..
+    PYTHONPATH=src python3 tests/run_context_compiler_diagnostics.py --repo .. --cases 25
     PYTHONPATH=src python3 tests/run_context_compiler_diagnostics.py --repo .. --json
+
+``--cases N`` evenly samples the set across its seven case classes. CI uses it
+because ``Registry`` resolves each reference by scanning the whole registry
+file, so a full sweep costs roughly 15,000 lookups over a 9.7 MB file — fine
+for one ``pae bundle`` invocation, far too slow for a build step. The full
+sweep stays one command away for local work.
 
 A development tool. It is not part of the installed package, adds no
 dependency, and uses the production renderer and the production default
@@ -66,7 +73,19 @@ def percentile(values: Sequence[float], q: float) -> float:
     return ordered[low] + (ordered[high] - ordered[low]) * (k - low)
 
 
-def measure(repo: str | None) -> dict[str, Any]:
+def sample(cases: list[Any], limit: int | None) -> list[Any]:
+    """An even stride across the set, so every case class stays represented.
+
+    Taking the first N would return only the ``task`` block the file happens to
+    begin with, and the ambiguity and no-route behaviour would go unmeasured.
+    """
+    if limit is None or limit >= len(cases):
+        return cases
+    step = len(cases) / limit
+    return [cases[int(i * step)] for i in range(limit)]
+
+
+def measure(repo: str | None, limit: int | None = None) -> dict[str, Any]:
     started = time.perf_counter()
     repository = Repository.discover(repo)
     registry = Registry.open(repository)
@@ -75,7 +94,7 @@ def measure(repo: str | None) -> dict[str, Any]:
     compiler = ContextCompiler(registry)
     counter = ApproximateTokenCounterV1()
 
-    cases = json.loads(DATA.read_text(encoding="utf-8"))["cases"]
+    cases = sample(json.loads(DATA.read_text(encoding="utf-8"))["cases"], limit)
     decisions = []
     for case in cases:
         decision = router.route(case["query"], limit=25)
@@ -196,6 +215,7 @@ def measure(repo: str | None) -> dict[str, Any]:
         "renderer": "pae-context-markdown/1",
         "counter": f"{counter.name}/{counter.version} (exact={counter.exact})",
         "cases": len(cases),
+        "sampled": limit is not None,
         "rows": rows,
         "timing": {
             "route_all_seconds": round(routed_at - started, 2),
@@ -216,7 +236,8 @@ def render(report: dict[str, Any]) -> str:
         "PAE context compiler — packing diagnostics",
         f"  {report['disclosure']}",
         f"  renderer {report['renderer']}   counter {report['counter']}"
-        f"   cases {report['cases']}",
+        f"   cases {report['cases']}"
+        + ("  (sampled)" if report.get("sampled") else ""),
         "",
         f"  {'budget':>7} {'cases':>6} {'nonempty':>9} {'top1':>6} {'top3':>6} "
         f"{'inc':>5} {'util50':>7} {'util95':>7} {'over':>5} {'budg':>5} "
@@ -253,9 +274,11 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--repo", default=None, help="path to a PAE checkout")
     parser.add_argument("--json", action="store_true", help="machine-readable summary")
+    parser.add_argument("--cases", type=int, default=None, metavar="N",
+                        help="evenly sample N regression cases instead of all of them")
     args = parser.parse_args(list(sys.argv[1:] if argv is None else argv))
 
-    report = measure(args.repo)
+    report = measure(args.repo, args.cases)
     if args.json:
         print(json.dumps(report, sort_keys=True, separators=(",", ":")))
     else:
