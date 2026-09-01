@@ -35,7 +35,7 @@ The project is being productized in two layers:
 - **PAE Registry** — the governed resource corpus, plus the normalized machine-readable metadata layer built on top of it under [`meta/registry/`](meta/registry/).
 - **PAE Engine** — an installable package (`pae-engine/`) with a `pae` command that resolves resource identity, returns registry metadata, and serves verified resource bodies under the registry's serving policy.
 
-Both layers exist. The Engine is **early**: it resolves, inspects and serves, and it does **not** yet search, route, compile context, or speak MCP — those are later phases, and it is not published to PyPI. See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the current-versus-planned boundary and [`ROADMAP.md`](ROADMAP.md) for sequencing.
+Both layers exist. The Engine is **early**: it resolves, inspects, serves, searches and routes, and it does **not** yet compile context or speak MCP — those are later phases, and it is not published to PyPI. See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the current-versus-planned boundary and [`ROADMAP.md`](ROADMAP.md) for sequencing.
 
 It is both a **large reusable resource library** and an **authoring system for creating new resources**. The repository combines prompt-engineering methodology, a formal technique catalog, thousands of domain prompts, reusable agents and skills, composition patterns, quality rubrics, validation tooling, and an end-to-end factory for designing agentic AI systems.
 
@@ -446,8 +446,20 @@ downloaded. It is read-only, works offline, verifies every body against the
 registry's SHA-256, refuses to truncate a resource whose guards are
 load-bearing, and treats retrieved text as data rather than instructions.
 
-**There is no `pae search` yet.** Search, routing, context compilation and MCP
-are later phases; see [`ROADMAP.md`](ROADMAP.md).
+It also **searches and routes**:
+
+```bash
+pae search "android security audit" --kind skill --limit 5
+pae route  "my model drifted in production and accuracy dropped"
+```
+
+Ranking is deterministic and lexical (BM25F over registry metadata) — offline,
+no embeddings, no index on disk. Relevance never reads a resource body, and a
+score is not a confidence value. `pae route` will answer `ambiguous`, `weak` or
+`no_route` rather than force a choice, and every status exits 0.
+
+**Context compilation and MCP are later phases**; see
+[`ROADMAP.md`](ROADMAP.md).
 
 Full documentation: [`pae-engine/README.md`](pae-engine/README.md) ·
 [`pae-engine/docs/getting-started.md`](pae-engine/docs/getting-started.md)

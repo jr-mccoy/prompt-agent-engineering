@@ -28,9 +28,10 @@ CI. Each category's membership rule is stated in
 [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json) — read it before
 quoting a number anywhere.
 
-The **PAE Engine** (search, routing, context compilation, MCP) is **planned and
-not implemented**. There is no `pae` command. See [`ARCHITECTURE.md`](ARCHITECTURE.md)
-and [`ROADMAP.md`](ROADMAP.md).
+The **PAE Engine** at [`pae-engine/`](pae-engine/) is installable today and
+provides identity resolution, content serving, search and routing. Context
+compilation and MCP are still planned. See
+[`ARCHITECTURE.md`](ARCHITECTURE.md) and [`ROADMAP.md`](ROADMAP.md).
 
 ---
 
@@ -46,8 +47,22 @@ and [`ROADMAP.md`](ROADMAP.md).
 
 ## Routing
 
-**Use [`CLAUDE.md`](CLAUDE.md).** It carries the full task → resource map and is
-the only routing table maintained by hand. A duplicate table previously lived
+**If the PAE Engine is installed, start with the executable router:**
+
+```bash
+pae route  "<task>"     # which scope and kind should handle this, and why
+pae search "<task>"     # ranked resources, with the matched terms shown
+```
+
+It is generated from the registry, so it cannot drift from the corpus. It
+reports `ambiguous`, `weak` or `no_route` instead of guessing, and every status
+exits 0. Details: [`pae-engine/docs/search-routing.md`](pae-engine/docs/search-routing.md).
+
+**Otherwise — and for everything the registry cannot represent — use
+[`CLAUDE.md`](CLAUDE.md).** It carries the full task → resource map and is
+the only routing table maintained by hand. It also owns the authoring decision
+tree, domain placement rules, safety conventions and negative boundaries, none
+of which the executable router replaces. A duplicate table previously lived
 here and drifted out of agreement with it; the counts and folder inventory in
 that table were wrong, so it was removed rather than re-synchronised.
 

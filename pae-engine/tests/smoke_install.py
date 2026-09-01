@@ -90,12 +90,20 @@ def main() -> int:
     refs = pick_references(repo)
 
     print("no repository required")
+    # Derived, not hard-coded: the invariant is that the console script reports
+    # the same version the installed distribution declares. Pinning a literal
+    # here just means editing it on every bump, and forgetting once.
+    import importlib.metadata as _md
+
+    expected_version = _md.version("prompt-agent-engineering")
     version = run(pae, ["--version"], outside)
-    check("pae --version", version.returncode == 0 and "pae 0.1.0" in version.stdout,
-          version.stderr)
+    check("pae --version",
+          version.returncode == 0 and f"pae {expected_version}" in version.stdout,
+          f"expected {expected_version!r}; {version.stdout!r} {version.stderr}")
     version_json = run(pae, ["--version", "--json"], outside)
     payload = json.loads(version_json.stdout) if version_json.returncode == 0 else {}
-    check("pae --version --json", payload.get("engine_version") == "0.1.0")
+    check("pae --version --json", payload.get("engine_version") == expected_version,
+          f"expected {expected_version!r}, got {payload.get('engine_version')!r}")
     check("pae --help", run(pae, ["--help"], outside).returncode == 0)
     check(
         "module entry point",
@@ -168,6 +176,49 @@ def main() -> int:
     check("no checksum bypass flag exists",
           run(pae, ["get", refs["servable"], "--repo", str(repo), "--content",
                     "--no-verify"], outside).returncode == 2)
+
+    print("\nsearch")
+    searched = run(pae, ["search", "android security audit", "--repo", str(repo)], outside)
+    check("pae search", searched.returncode == 0, searched.stderr)
+    search_json = run(
+        pae, ["--json", "search", "android security audit", "--repo", str(repo)], outside
+    )
+    check("pae search --json", search_json.returncode == 0, search_json.stderr)
+    if search_json.returncode == 0:
+        payload = json.loads(search_json.stdout)
+        check("search returns ranked hits", len(payload["hits"]) > 0)
+        check("hits carry durable UIDs", payload["hits"][0]["uid"].startswith("pae_"))
+        check("hits explain themselves", bool(payload["hits"][0]["matched_fields"]))
+        check("no source path leaks into a hit", "source_path" not in search_json.stdout)
+        check("no confidence value is emitted", "confidence" not in search_json.stdout.lower())
+    empty = run(pae, ["search", "zzzzqqq wobblegonk", "--repo", str(repo)], outside)
+    check("a query matching nothing still exits 0", empty.returncode == 0, empty.stderr)
+    check("an empty query is a usage error",
+          run(pae, ["search", "   ", "--repo", str(repo)], outside).returncode == 2)
+    check("an unknown kind is a usage error",
+          run(pae, ["search", "widget", "--kind", "nonsense", "--repo", str(repo)],
+              outside).returncode == 2)
+    exact = run(pae, ["--json", "search", "technique:ST-01", "--repo", str(repo)], outside)
+    if exact.returncode == 0:
+        check("an exact reference resolves at rank 1",
+              json.loads(exact.stdout)["hits"][0]["id"] == "technique:ST-01")
+
+    print("\nrouting")
+    routed = run(pae, ["route", "my model drifted in production", "--repo", str(repo)], outside)
+    check("pae route", routed.returncode == 0, routed.stderr)
+    route_json = run(
+        pae, ["--json", "route", "my model drifted in production", "--repo", str(repo)], outside
+    )
+    check("pae route --json", route_json.returncode == 0, route_json.stderr)
+    if route_json.returncode == 0:
+        decision = json.loads(route_json.stdout)
+        check("route reports a declared status",
+              decision["status"] in ("matched", "ambiguous", "weak", "no_route"))
+        check("route explains itself", bool(decision["reasons"]))
+        check("no confidence value in a route",
+              "confidence" not in route_json.stdout.lower())
+    unroutable = run(pae, ["route", "zzzzqqq wobblegonk", "--repo", str(repo)], outside)
+    check("an unroutable task still exits 0", unroutable.returncode == 0, unroutable.stderr)
 
     print("\nvalidation")
     validated = run(pae, ["validate-registry", "--repo", str(repo)], outside)

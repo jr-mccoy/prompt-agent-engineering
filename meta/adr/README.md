@@ -20,13 +20,13 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0003](0003-dependency-light-core.md) | Engine core is dependency-light and offline-capable; extras carry the rest | Accepted (amended: core is stdlib-only) |
 | [0004](0004-normalize-not-rewrite.md) | The registry normalizes heterogeneous source schemas instead of rewriting the corpus | Accepted |
 | [0005](0005-quality-and-maturity-are-separate.md) | Quality and maturity are separate axes | Accepted |
-| [0006](0006-staged-router-migration.md) | Routing migration is staged; `CLAUDE.md` is the interim canonical router | Accepted |
+| [0006](0006-staged-router-migration.md) | Routing migration is staged; `CLAUDE.md` is the interim canonical router | Accepted (stage 2 begun in 0023) |
 | [0007](0007-index-is-not-the-registry.md) | `PROMPT_INDEX.json` is not the registry, and its entry count is not a prompt count | Accepted |
 | [0008](0008-generated-counts-control-plane.md) | Every published repository count is generated and declared in a CI-verified marker | Accepted |
 | [0009](0009-engine-docs-naming-conventions.md) | `pae-engine/` is intentionally outside the corpus Markdown naming conventions | Accepted |
 | [0010](0010-uid-and-public-id.md) | Identity is an immutable UID plus a mutable public ID | Accepted |
 | [0011](0011-explicit-roots-and-shape-detection.md) | Membership is explicit roots plus shape detection; exclusions are anchored prefixes | Accepted |
-| [0012](0012-one-record-per-copy.md) | One record per physical copy; copy edges require explicit evidence | Accepted |
+| [0012](0012-one-record-per-copy.md) | One record per physical copy; copy edges require explicit evidence | Accepted (search behaviour amended by 0021) |
 | [0013](0013-layered-ledger-and-generated-jsonl.md) | Identity lives in reviewed ledgers; the registry is generated JSONL | Accepted |
 | [0014](0014-degraded-records-not-global-failure.md) | Metadata may degrade; identity may not | Accepted |
 | [0015](0015-serving-policy-metadata.md) | The registry carries serving-policy metadata with a fail-closed default | Accepted |
@@ -35,6 +35,9 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0018](0018-checkout-required-runtime.md) | The Engine requires a local checkout and bundles no corpus | Accepted |
 | [0019](0019-runtime-serving-and-integrity.md) | Content is served whole, verified, and fails closed | Accepted |
 | [0020](0020-consumer-vs-generator-validation.md) | Consumer validation is distinct from the generator's check | Accepted |
+| [0021](0021-deterministic-lexical-search.md) | Search is deterministic, lexical, and reads metadata only | Accepted |
+| [0022](0022-routing-by-max-aggregation.md) | Routing aggregates by maximum, and ambiguity is a result | Accepted |
+| [0023](0023-executable-routing-migration.md) | Executable routing replaces table mechanics, not routing policy | Accepted |
 
 ## Related
 

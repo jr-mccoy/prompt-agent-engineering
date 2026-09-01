@@ -18,7 +18,7 @@ build-backend = "setuptools.build_meta"
 # distribution name is spelled out and the import namespace is `pae_engine`.
 # The console command stays short: `pae`.
 name = "prompt-agent-engineering"
-version = "0.1.0"
+version = "0.2.0.dev0"
 description = "Read-only runtime and CLI for the PAE Registry: resolve, inspect and serve governed prompt-engineering resources from a local checkout."
 readme = "README.md"
 requires-python = ">=3.10"
