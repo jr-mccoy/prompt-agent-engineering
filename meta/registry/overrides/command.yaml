@@ -1,0 +1,20 @@
+# Reviewed governance overrides for command resources.
+#
+# Keyed by public ID. A key here is a deliberate, human-reviewed statement that
+# the generated default is wrong or incomplete. Generation never writes to this
+# file, never promotes maturity, and never asserts a review, an evaluation or a
+# quality tier on its own.
+#
+# Schema: ../schemas/overrides.v1.schema.json
+#
+# Example:
+#   overrides:
+#     command:example/scope/slug:
+#       governance:
+#         review_status: reviewed
+#       license:
+#         spdx: Apache-2.0
+#         status: resolved
+#         basis: "upstream LICENSE verified 2026-09-01"
+schema: pae-registry-overrides/1
+overrides: {}

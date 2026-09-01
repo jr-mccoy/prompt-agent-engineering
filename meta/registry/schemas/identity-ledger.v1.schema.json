@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jr-mccoy/prompt-agent-engineering/meta/registry/schemas/identity-ledger.v1.schema.json",
+  "title": "PAE Registry identity ledger row, version 1",
+  "description": "One row of meta/registry/identity.tsv. This ledger is the frozen public identity of the corpus: after the freeze commit a UID and a birth path never change, and a row is never deleted or recycled.",
+  "type": "object",
+  "required": ["uid", "kind", "public_id", "birth_path"],
+  "additionalProperties": false,
+  "properties": {
+    "uid": {
+      "type": "string",
+      "pattern": "^pae_[0-9abcdefghjkmnpqrstvwxyz]{12}$"
+    },
+    "kind": { "enum": ["prompt", "technique", "skill", "agent", "command", "persona"] },
+    "public_id": {
+      "type": "string",
+      "pattern": "^[a-z]+:[A-Za-z0-9]+([.-][A-Za-z0-9]+)*(/[A-Za-z0-9]+([.-][A-Za-z0-9]+)*)*$"
+    },
+    "birth_path": {
+      "description": "Where the resource was first recorded. For techniques, the synthetic key 'technique:<ID>'.",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

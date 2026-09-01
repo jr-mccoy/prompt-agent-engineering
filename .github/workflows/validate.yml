@@ -55,6 +55,19 @@ jobs:
       - name: Repository facts and published counts are current
         run: python3 scripts/generate_repo_facts.py --check
 
+      # --- PAE Registry -------------------------------------------------------
+      # Identity is public API. This step fails if a UID or birth path changed,
+      # if a public ID changed without a retired alias, if a ledger row vanished,
+      # if a UID/public-ID/alias collides, if the ledger and the records are not
+      # bijective, if any record or ledger row violates its schema, or if a
+      # generated artifact was hand-edited or left stale.
+      - name: Registry identity, schemas and generated artifacts
+        run: python3 scripts/generate_registry.py --check
+
+      - name: Registry unit tests
+        working-directory: scripts
+        run: python3 -m unittest discover -s pae_registry/tests -t . -v
+
       # --- Catalog / metadata integrity --------------------------------------
       - name: Technique index integrity
         working-directory: techniques

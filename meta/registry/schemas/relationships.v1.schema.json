@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jr-mccoy/prompt-agent-engineering/meta/registry/schemas/relationships.v1.schema.json",
+  "title": "PAE Registry relationship row, version 1",
+  "description": "One row of meta/registry/relationships.tsv. The four reorganization semantics stay distinct: a move preserves identity (previous_path), while superseded_by / merged_into / split_into describe a DIFFERENT identity replacing or absorbing this one.",
+  "type": "object",
+  "required": ["subject_uid", "predicate", "object_ref", "object_kind", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "subject_uid": { "type": "string", "pattern": "^pae_[0-9abcdefghjkmnpqrstvwxyz]{12}$" },
+    "predicate": {
+      "enum": ["previous_path", "superseded_by", "merged_into", "split_into", "copy_of"]
+    },
+    "object_ref": {
+      "description": "A UID for resource targets; a repo-relative path for document, collection and previous_path targets.",
+      "type": "string",
+      "minLength": 1
+    },
+    "object_kind": { "enum": ["resource", "document", "collection", "path"] },
+    "evidence": {
+      "description": "The repository file this edge was derived from. Copy edges come only from meta/VENDORED.tsv, never from content similarity.",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
