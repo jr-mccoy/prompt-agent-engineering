@@ -34,8 +34,15 @@ Available today, exercised by CI:
 - **Documentation routing** — one canonical routing reference (`CLAUDE.md`) with
   thin bootstraps pointing at it.
 
-Not available: any executable engine. There is no `pae` command, no search, no
-routing code, no MCP server, no context compiler, and no evaluation harness.
+- **An installable engine** — `pae-engine/`, distribution
+  `prompt-agent-engineering`, import `pae_engine`, console `pae`. Zero runtime
+  dependencies, reads a local checkout, serves whole verified bodies under the
+  registry's serving policy. See
+  [`pae-engine/README.md`](pae-engine/README.md).
+
+Not available: search. There is no `pae search`, no routing code, no ranked
+retrieval, no MCP server, no context compiler, and no evaluation harness. The
+package is not published to PyPI and the repository has no tags.
 
 ---
 
@@ -72,12 +79,19 @@ ADR-0010 through ADR-0016.
 
 ## Later
 
-Sequenced after the registry exists.
+Sequenced after the registry and the engine exist.
 
-- **`pae-engine/` package** — conventional Python layout, dependency-light
-  offline-capable core, optional extras for MCP / evaluation / tokenizers.
+- ~~**`pae-engine/` package**~~ Done. Conventional Python layout, a
+  standard-library-only runtime (ADR-0003 as amended), and a `pae` CLI over a
+  public Python API: repository discovery, UID / public-ID / alias resolution,
+  metadata retrieval, policy-gated and integrity-verified content serving, and
+  consumer-side registry validation. Optional extras for MCP / evaluation /
+  tokenizers remain unimplemented. See ADR-0017 through ADR-0020.
 - **Deterministic search** — metadata filters, IDs, and structural queries that
-  need no model call.
+  need no model call. Built on the existing `Registry` object: search consumes
+  `records()`, `load_all()`, `get()`, `resolve()` and `stats()` rather than
+  opening `registry.jsonl` itself. Whether an index or cache is worth it is a
+  decision for that phase, once the access patterns are known.
 - **Task routing and ranked retrieval** over registry metadata.
 - **Token-budgeted context compilation**, with a serving-policy gate that
   refuses to emit a bundle rather than silently truncate required safety
@@ -97,13 +111,16 @@ Sequenced after the registry exists.
   Independently versioned suites (e.g. `routing-v1`).
 - **Security regression testing**, including adversarial resources.
 - **Case studies** drawn from real runs, not illustrations.
-- **Releases.** The repository has no tags and no released version; the first
-  public product release may begin at `0.1.0`. Preferred distribution name
-  `prompt-agent-engineering` (available on PyPI at the time of checking);
-  preferred import namespace and CLI `pae` — note the top-level import name
-  `pae` is already taken on PyPI by an unrelated package, an accepted and
-  recorded risk. `continuity-kit` keeps its own package version. Registry schema
-  and benchmark suites version independently of the distribution.
+- **Releases.** The repository still has no tags and no released version. The
+  package version is `0.1.0` **in tree only** — nothing is published, and no
+  release workflow or trusted-publishing configuration exists. The naming is
+  settled (ADR-0017): distribution `prompt-agent-engineering`, import
+  `pae_engine`, console `pae`. `import pae` was rejected rather than risked,
+  because an unrelated PyPI project owns that namespace. Distribution-name
+  availability must be rechecked immediately before any publication step, not
+  assumed from an earlier check. `continuity-kit` keeps its own package
+  version. Registry schema and benchmark suites version independently of the
+  distribution.
 
 ---
 

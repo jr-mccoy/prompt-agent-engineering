@@ -15,9 +15,9 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 
 | ADR | Decision | Status |
 |---|---|---|
-| [0001](0001-engine-location.md) | The PAE Engine lives at `pae-engine/`, and the structure gate is amended deliberately | Accepted |
+| [0001](0001-engine-location.md) | The PAE Engine lives at `pae-engine/`, and the structure gate is amended deliberately | Accepted (amended by 0017) |
 | [0002](0002-preserve-root-tests.md) | Root `tests/` stays the prompt/technique experimentation area | Accepted |
-| [0003](0003-dependency-light-core.md) | Engine core is dependency-light and offline-capable; extras carry the rest | Accepted |
+| [0003](0003-dependency-light-core.md) | Engine core is dependency-light and offline-capable; extras carry the rest | Accepted (amended: core is stdlib-only) |
 | [0004](0004-normalize-not-rewrite.md) | The registry normalizes heterogeneous source schemas instead of rewriting the corpus | Accepted |
 | [0005](0005-quality-and-maturity-are-separate.md) | Quality and maturity are separate axes | Accepted |
 | [0006](0006-staged-router-migration.md) | Routing migration is staged; `CLAUDE.md` is the interim canonical router | Accepted |
@@ -31,6 +31,10 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0014](0014-degraded-records-not-global-failure.md) | Metadata may degrade; identity may not | Accepted |
 | [0015](0015-serving-policy-metadata.md) | The registry carries serving-policy metadata with a fail-closed default | Accepted |
 | [0016](0016-sha256-checksum-contract.md) | Checksums are SHA-256 over a clearly defined payload | Accepted |
+| [0017](0017-engine-package-identity.md) | The Engine is `prompt-agent-engineering` / `pae_engine` / `pae` | Accepted |
+| [0018](0018-checkout-required-runtime.md) | The Engine requires a local checkout and bundles no corpus | Accepted |
+| [0019](0019-runtime-serving-and-integrity.md) | Content is served whole, verified, and fails closed | Accepted |
+| [0020](0020-consumer-vs-generator-validation.md) | Consumer validation is distinct from the generator's check | Accepted |
 
 ## Related
 

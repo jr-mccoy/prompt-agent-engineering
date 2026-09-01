@@ -14,10 +14,11 @@ the repository is right — file an issue.
 | Layer | What it is | Status |
 |---|---|---|
 | **PAE Registry** | The governed resource corpus, its indexes, schemas, and a normalized machine-readable metadata layer | Corpus, indexes and normalized registry records **exist** (`meta/registry/`) |
-| **PAE Engine** | An installable Python package for catalog loading, deterministic search, task routing, token-budgeted context compilation, validation orchestration, evaluation, and MCP access | **Planned** — no code exists |
+| **PAE Engine** | An installable Python package: identity resolution, metadata retrieval, policy-gated content serving, and consumer-side registry validation | Package, Python API and `pae` CLI **exist** (`pae-engine/`) |
 
-There is no `pae` command and no `pae-engine/` directory yet. Documentation must
-not imply otherwise.
+The Engine is real but early. It resolves, inspects and serves; it does **not**
+search, route, compile context, or speak MCP. Those remain planned, and
+documentation must not imply otherwise. The package is not published to PyPI.
 
 ---
 
@@ -74,6 +75,15 @@ All of these run in `.github/workflows/validate.yml`:
 `.github/workflows/structure.yml` additionally derives an allowlist of permitted
 top-level directory *shapes* from the layout and fails on anything unexpected.
 
+`.github/workflows/engine.yml` covers the Engine: unit tests on the declared
+Python floor and the current default, wheel and sdist builds, `twine check`,
+licence-sync between the repository and the packaged copy, an assertion that no
+registry data is bundled, a clean-environment wheel install with a
+zero-runtime-dependency check, and smoke tests driving the installed `pae`
+binary from outside the checkout. It triggers on changes to `pae-engine/**`,
+`meta/registry/**`, `scripts/pae_registry/**` and the workflow itself, so a
+registry change cannot break the runtime unnoticed.
+
 ### Routing
 
 Routing today is **documentation**, not code. `CLAUDE.md` is the single
@@ -122,8 +132,10 @@ that keep the self-contained toolkits standalone.
 
 **Top-level layout is gated.** `structure.yml` permits only `domain-*`, the
 bundle suffixes (`*-toolkit`, `*-kit`, `*-studio`, `*-library`, `*-system`,
-`*-factory`), and `authoring`/`scripts`/`techniques`/`tests`/`meta`. A new
-top-level product directory requires a deliberate, reviewed amendment.
+`*-factory`), `authoring`/`scripts`/`techniques`/`tests`/`meta`, and the one
+literal `pae-engine`. A new top-level product directory requires a deliberate,
+reviewed amendment — the `pae-engine` case was added as a single literal name
+rather than a `pae-*` pattern, so the gate stays a contract (ADR-0001).
 
 **Root `tests/` already means something.** It holds the prompting-technique
 comparison experiments (`established/`, `experimental/`, `results/`, scoring
@@ -173,21 +185,72 @@ See [`meta/registry/README.md`](meta/registry/README.md).
 
 ---
 
+## PAE Engine
+
+Built. `pae-engine/` holds an installable package that reads the registry and
+serves from it. It is the first executable PAE product.
+
+```text
+PAE Registry  →  pae_engine (Python API)  →  pae (CLI)
+```
+
+| | |
+|---|---|
+| distribution | `prompt-agent-engineering` (unpublished, `0.1.0`) |
+| import | `pae_engine` |
+| console | `pae` |
+| Python | `>= 3.10` |
+| runtime dependencies | none |
+
+**Commands.** `pae --version`, `pae where`, `pae stats`, `pae get <ref>`
+(`--content`), `pae validate-registry` (`--verify-checksums`). There is no
+`pae search` yet.
+
+**The registry is the boundary.** The Engine reads
+`meta/registry/registry.jsonl` and `meta/registry/registry-summary.json`, and
+nothing else. It never reads the reviewed ledgers, diagnostics, overrides,
+`PROMPT_INDEX.json`, `REORG_MAP.tsv` or `VENDORED.tsv`, and never imports
+`scripts/pae_registry/` — a test asserts the import boundary so it cannot
+regress into a second source of truth (ADR-0020).
+
+**A checkout is required** (ADR-0018). The wheel carries no corpus and no
+registry; discovery is `--repo`, then `PAE_REPO`, then the working directory
+and its ancestors, then failure. Nothing is downloaded, and an explicit source
+never silently falls through to another.
+
+**Read-only, offline, and data-not-instructions** (ADR-0019). Content is served
+whole or not at all, every read verifies the registry's SHA-256 with no bypass,
+unknown serving policies fail closed to `metadata_only`, and every registry
+path is treated as untrusted input before a file is opened. Tests walk the
+installed package's AST to assert there is no filesystem write, subprocess,
+socket or `eval` anywhere in the runtime.
+
+See [`pae-engine/README.md`](pae-engine/README.md) and
+[`pae-engine/docs/getting-started.md`](pae-engine/docs/getting-started.md).
+
+---
+
 ## Planned
 
-### PAE Engine (next)
+### Search and routing (next)
 
-An installable package at `pae-engine/` with a conventional Python layout
-(`src/pae/`, `tests/`, `docs/`), a dependency-light and offline-capable core
-(standard library plus PyYAML), and optional extras for MCP, evaluation, and
-tokenizers. Nothing that requires a model provider, vector database, or
-embedding service belongs in the core.
+Deterministic metadata search, task routing and ranked retrieval, built on the
+`Registry` object the Engine already exposes. Search consumes
+`Registry.records()`, `load_all()`, `get()`, `resolve()` and `stats()`; it does
+not open `registry.jsonl` itself, so there stays one implementation of reading
+the registry.
 
-Capabilities, in the order they are expected: catalog loading and identity
-resolution, deterministic metadata search, task routing, ranked retrieval,
-token-budgeted context compilation with a serving-policy gate that will not
-truncate required safety material, validation orchestration, a read-only MCP
-surface, and reproducible evaluation.
+Nothing in the Engine today guesses at that shape: there are no ranking
+methods, no index files and no caches, because the access patterns that would
+justify them are exactly what search has yet to establish.
+
+### Beyond search
+
+Token-budgeted context compilation, with a serving-policy gate that refuses to
+emit a bundle rather than truncate required safety material out of a
+safety-gated resource. A read-only MCP surface calling the same library
+functions as the CLI. Reproducible evaluation. Optional extras (`[mcp]`,
+`[eval]`, `[tokenizers]`) carry anything the standard library cannot.
 
 See [`ROADMAP.md`](ROADMAP.md) for sequencing and [`meta/adr/`](meta/adr/) for
 the decisions behind these choices.

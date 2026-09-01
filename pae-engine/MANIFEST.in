@@ -1,0 +1,12 @@
+# The sdist carries a runnable test suite: helpers and fixture builders, not
+# just the test_*.py files setuptools finds on its own. A half-included suite
+# in a source distribution is worse than none, because it fails on import.
+include LICENSE
+include README.md
+recursive-include tests *.py
+recursive-include docs *.md
+
+# Never the corpus or the registry: the Engine reads those from a checkout.
+prune dist
+prune build
+global-exclude __pycache__ *.py[cod]
