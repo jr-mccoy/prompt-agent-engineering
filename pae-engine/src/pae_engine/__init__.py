@@ -23,18 +23,37 @@ Deterministic lexical search and task routing are available too::
 
 Both read registry metadata only; neither ever calls ``Registry.content()``.
 
-Context compilation and MCP are later phases and are deliberately absent.
+Context compilation assembles whole verified bodies into a budgeted bundle::
+
+    from pae_engine import Budget, ContextCompiler
+
+    compiler = ContextCompiler(registry)
+    bundle = compiler.compile_route(decision, budget=Budget(estimated_tokens=8000))
+    print(bundle.render_markdown())
+
+MCP is a later phase and is deliberately absent.
 """
 
 from __future__ import annotations
 
 from ._version import __version__
+from .context import (
+    DEFAULT_MAX_RESOURCES,
+    LOW_TOKEN_BUDGET_THRESHOLD,
+    MAX_BUNDLE_BYTES,
+    ApproximateTokenCounterV1,
+    Budget,
+    ContextCompiler,
+    TokenCounter,
+)
 from .errors import (
     AccessRefused,
+    BudgetTooSmall,
     ChecksumMismatch,
     ContentEncodingError,
     ContentRefused,
     IncompatibleRegistry,
+    InvalidBudget,
     MalformedReference,
     NoAddressableContent,
     PaeError,
@@ -49,11 +68,20 @@ from .errors import (
     UsageError,
 )
 from .models import (
+    BUNDLE_SCHEMA,
+    MARKDOWN_RENDERER,
+    OMISSION_REASONS,
+    ORDERINGS,
     RECORD_SCHEMA,
     ROUTE_STATUSES,
     SERVING_POLICIES,
+    SOURCE_MODES,
     SUMMARY_SCHEMA,
+    BudgetReport,
+    BundleItem,
     Content,
+    ContextBundle,
+    OmittedItem,
     Record,
     Resolution,
     RouteCandidate,
@@ -80,6 +108,23 @@ __all__ = [
     "KINDS",
     "COVERAGE_THRESHOLD",
     "MARGIN_THRESHOLD",
+    # context compilation
+    "ContextCompiler",
+    "Budget",
+    "TokenCounter",
+    "ApproximateTokenCounterV1",
+    "MAX_BUNDLE_BYTES",
+    "DEFAULT_MAX_RESOURCES",
+    "LOW_TOKEN_BUDGET_THRESHOLD",
+    "ContextBundle",
+    "BundleItem",
+    "OmittedItem",
+    "BudgetReport",
+    "BUNDLE_SCHEMA",
+    "MARKDOWN_RENDERER",
+    "OMISSION_REASONS",
+    "ORDERINGS",
+    "SOURCE_MODES",
     # models
     "Record",
     "Resolution",
@@ -105,6 +150,8 @@ __all__ = [
     "PaeError",
     "UsageError",
     "MalformedReference",
+    "InvalidBudget",
+    "BudgetTooSmall",
     "RepositoryNotFound",
     "ResourceNotFound",
     "AccessRefused",

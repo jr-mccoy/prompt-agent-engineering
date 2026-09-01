@@ -38,6 +38,10 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0021](0021-deterministic-lexical-search.md) | Search is deterministic, lexical, and reads metadata only | Accepted |
 | [0022](0022-routing-by-max-aggregation.md) | Routing aggregates by maximum, and ambiguity is a result | Accepted |
 | [0023](0023-executable-routing-migration.md) | Executable routing replaces table mechanics, not routing policy | Accepted |
+| [0024](0024-bodies-only-through-registry-content.md) | Bundled bodies come only from `Registry.content()`, whole, with no expansion | Accepted |
+| [0025](0025-token-estimate-byte-guarantee.md) | The token count is an estimate; the byte ceiling is the guarantee | Accepted |
+| [0026](0026-rank-greedy-packing-and-ambiguity.md) | Rank-preserving greedy packing, with one promotion for an ambiguous route | Accepted |
+| [0027](0027-structured-bundle-and-deterministic-render.md) | The structured bundle is the artifact; Markdown is the budgeted rendering | Accepted |
 
 ## Related
 

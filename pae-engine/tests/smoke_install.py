@@ -68,7 +68,14 @@ def pick_references(repo: Path) -> dict[str, str]:
                 chosen["technique"] = record["id"]
             if "tombstone" not in chosen and record["lifecycle"] == "tombstone":
                 chosen["tombstone"] = record["id"]
-            if len(chosen) >= 5:
+            if (
+                "metadata_only" not in chosen
+                and record["lifecycle"] == "live"
+                and policy == "metadata_only"
+                and source.get("path")
+            ):
+                chosen["metadata_only"] = record["id"]
+            if len(chosen) >= 6:
                 break
     return chosen
 
@@ -219,6 +226,66 @@ def main() -> int:
               "confidence" not in route_json.stdout.lower())
     unroutable = run(pae, ["route", "zzzzqqq wobblegonk", "--repo", str(repo)], outside)
     check("an unroutable task still exits 0", unroutable.returncode == 0, unroutable.stderr)
+
+    print("\nbundling")
+    md = run(pae, ["bundle", "--task", "review my terraform setup",
+                   "--budget-tokens", "8000", "--repo", str(repo)], outside)
+    check("pae bundle --task", md.returncode == 0, md.stderr)
+    check("bundle renders the framing", "PAE context bundle" in md.stdout)
+    check("bundle states its provenance", "Source mode: route" in md.stdout)
+
+    bundle_json = run(pae, ["--json", "bundle", "--task", "review my terraform setup",
+                            "--budget-tokens", "8000", "--repo", str(repo)], outside)
+    check("pae bundle --json", bundle_json.returncode == 0, bundle_json.stderr)
+    if bundle_json.returncode == 0:
+        payload = json.loads(bundle_json.stdout)
+        check("bundle declares its schema",
+              payload["schema_version"] == "pae-context-bundle/1")
+        check("the token count is declared inexact",
+              payload["budget"]["estimator_exact"] is False)
+        check("the rendered bundle fits its byte ceiling",
+              payload["budget"]["used_bytes"] <= payload["budget"]["effective_byte_ceiling"])
+        check("no source path leaks into a bundle", "source_path" not in bundle_json.stdout)
+        check("json does not duplicate the markdown",
+              "PAE context bundle" not in bundle_json.stdout)
+
+    by_ref = run(pae, ["bundle", "--ref", refs["servable"],
+                       "--budget-tokens", "8000", "--repo", str(repo)], outside)
+    check("pae bundle --ref", by_ref.returncode == 0, by_ref.stderr)
+
+    byte_budget = run(pae, ["--json", "bundle", "--ref", refs["servable"],
+                            "--budget-bytes", "40000", "--repo", str(repo)], outside)
+    check("pae bundle --budget-bytes", byte_budget.returncode == 0, byte_budget.stderr)
+    if byte_budget.returncode == 0:
+        check("an explicit byte budget is reported as explicit",
+              json.loads(byte_budget.stdout)["budget"]["byte_ceiling_source"] == "explicit")
+
+    no_budget = run(pae, ["bundle", "--ref", refs["servable"], "--repo", str(repo)], outside)
+    check("a bundle without a budget is a usage error", no_budget.returncode == 2)
+    check("a failed bundle writes nothing to stdout", no_budget.stdout == "")
+
+    both = run(pae, ["bundle", "--task", "x", "--ref", refs["servable"],
+                     "--budget-tokens", "8000", "--repo", str(repo)], outside)
+    check("task and ref together are a usage error", both.returncode == 2)
+
+    if "metadata_only" in refs:
+        withheld = run(pae, ["bundle", "--ref", refs["metadata_only"],
+                             "--budget-tokens", "8000", "--repo", str(repo)], outside)
+        check("an explicitly named withheld body is refused", withheld.returncode == 5)
+
+    technique = run(pae, ["bundle", "--ref", refs["technique"],
+                          "--budget-tokens", "8000", "--repo", str(repo)], outside)
+    check("an explicit technique reference reports no addressable body",
+          technique.returncode == 6)
+
+    unknown = run(pae, ["bundle", "--ref", "prompt:nope/nope",
+                        "--budget-tokens", "8000", "--repo", str(repo)], outside)
+    check("an unknown reference is not found", unknown.returncode == 4)
+
+    tiny = run(pae, ["bundle", "--ref", refs["servable"],
+                     "--budget-bytes", "200", "--repo", str(repo)], outside)
+    check("a budget too small for the framing exits 2", tiny.returncode == 2)
+    check("a too-small budget writes nothing to stdout", tiny.stdout == "")
 
     print("\nvalidation")
     validated = run(pae, ["validate-registry", "--repo", str(repo)], outside)

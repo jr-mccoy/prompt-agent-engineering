@@ -11,14 +11,14 @@ PAE Registry  →  pae_engine (Python API)  →  pae (CLI)
 
 ## Status
 
-**Version 0.2.0.dev0 is the in-tree development version. The project has not
+**Version 0.3.0.dev0 is the in-tree development version. The project has not
 been published to PyPI, and no release has been tagged.** Install it from a
 checkout; `pip install prompt-agent-engineering` does not work yet and this
 document will say so until a release actually exists.
 
-Deterministic lexical search and task routing ship in this version. Context
-compilation and MCP are later phases and are deliberately absent rather than
-stubbed.
+Deterministic lexical search, task routing and budgeted context compilation
+ship in this version. MCP is a later phase and is deliberately absent rather
+than stubbed.
 
 ## What it does
 
@@ -31,12 +31,21 @@ stubbed.
 | `pae get <ref> --content` | return the whole verified source body |
 | `pae search "<query>"` | which resources match this description |
 | `pae route "<task>"` | which scope and kind should handle this task |
+| `pae bundle --task "<task>"` | give me the bodies for this task, inside a budget |
 | `pae validate-registry` | is this checkout's registry safe to serve from |
 
 ```bash
 pae search "android security audit" --kind skill --limit 5
 pae route  "my model drifted in production and accuracy dropped"
+pae bundle --task "review my terraform for security issues" --budget-tokens 8000
 ```
+
+**`pae bundle` serves whole bodies or none.** It compiles a task, search
+results or explicit references into a budgeted bundle, never truncating a
+resource and never re-running search. The token count is an **estimate** — the
+enforced guarantee is an exact UTF-8 byte ceiling on the rendered bundle — and
+a caller who needs an exact fit injects their own `TokenCounter`. Output goes
+to stdout only. See [`docs/context-compiler.md`](docs/context-compiler.md).
 
 **Search and routing read registry metadata only.** Neither calls
 `Registry.content()`, so what a resource says cannot influence where it ranks,
@@ -199,7 +208,7 @@ Typed errors carry machine-readable detail: `MalformedReference`,
 
 ## Public API stability
 
-`0.2.0.dev0` is a development version. The surface below is stable enough to
+`0.3.0.dev0` is a development version. The surface below is stable enough to
 build later phases on, but is **not** covered by a 1.0 semantic-versioning
 promise:
 

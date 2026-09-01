@@ -17,6 +17,8 @@ import unittest
 from pathlib import Path
 
 import pae_engine
+import pae_engine._context_render  # noqa: F401
+import pae_engine.context  # noqa: F401
 
 PACKAGE_ROOT = Path(pae_engine.__file__).resolve().parent
 ENGINE_ROOT = PACKAGE_ROOT.parent.parent
@@ -319,10 +321,24 @@ class TestPublicApiSurface(unittest.TestCase):
         for name in ("search", "rank", "score", "query", "embed", "route", "bundle"):
             self.assertFalse(hasattr(Registry, name), f"Registry.{name} belongs elsewhere")
 
-    def test_context_compilation_and_mcp_are_still_absent(self) -> None:
-        """Phase 5's shape is not guessed at in Phase 4."""
-        for name in ("compile_context", "bundle", "ContextBundle", "MCPServer", "serve"):
+    def test_mcp_is_still_absent(self) -> None:
+        """Phase 6's shape is not guessed at in Phase 5."""
+        for name in ("MCPServer", "serve", "mcp", "evaluate", "Evaluator"):
             self.assertFalse(hasattr(pae_engine, name), f"{name} is a later phase")
+
+    def test_context_compilation_is_exported(self) -> None:
+        """Phase 5's public surface, pinned so it cannot quietly shrink."""
+        for name in (
+            "ContextCompiler",
+            "ContextBundle",
+            "BundleItem",
+            "OmittedItem",
+            "BudgetReport",
+            "Budget",
+            "TokenCounter",
+            "ApproximateTokenCounterV1",
+        ):
+            self.assertTrue(hasattr(pae_engine, name), f"{name} must be exported")
 
     def test_search_and_routing_never_reach_for_a_body(self) -> None:
         """A source-level guard to back the behavioural test in
@@ -336,6 +352,70 @@ class TestPublicApiSurface(unittest.TestCase):
                 source,
                 f"{module.__name__} must not call Registry.content()",
             )
+
+    def test_the_compiler_owns_no_retrieval_machinery(self) -> None:
+        """A compiler that could re-run search could quietly disagree with the
+        ranking it was handed. It holds a Registry and a counter, nothing else."""
+        from _codescan import code_only
+
+        for module in (pae_engine.context, pae_engine._context_render):
+            source = code_only(module)
+            for forbidden in ("SearchEngine", "Router", "_lexical", "pae_registry"):
+                self.assertNotIn(
+                    forbidden,
+                    source,
+                    f"{module.__name__} must not reach for {forbidden}",
+                )
+
+    def test_the_compiler_never_opens_a_path_itself(self) -> None:
+        """Every body arrives through Registry.content(). Reading a source path,
+        an attachment or a technique catalog directly would bypass serving
+        policy and integrity verification in one step."""
+        from _codescan import code_only
+
+        for module in (pae_engine.context, pae_engine._context_render):
+            source = code_only(module)
+            for forbidden in (
+                "open (",
+                "open(",
+                "read_text",
+                "read_bytes",
+                "Path (",
+                "iterdir",
+                "glob",
+                "rglob",
+                "listdir",
+                "source_path",
+            ):
+                self.assertNotIn(
+                    forbidden,
+                    source,
+                    f"{module.__name__} must not use {forbidden!r}",
+                )
+
+    def test_the_compiler_has_no_truncation_vocabulary(self) -> None:
+        """Whole resource or absent. Phase 5 ships no slicing API at all."""
+        from _codescan import code_only
+
+        for module in (pae_engine.context, pae_engine._context_render):
+            source = code_only(module)
+            for forbidden in ("truncate", "excerpt", "summarize", "[:max", "textwrap"):
+                self.assertNotIn(forbidden, source, f"{module.__name__} must not {forbidden}")
+
+    def test_only_the_cli_is_allowed_to_build_a_router(self) -> None:
+        """The one-shot task convenience lives in the CLI, above the library."""
+        from _codescan import code_only
+
+        from pae_engine import cli
+
+        self.assertIn("Router", code_only(cli))
+
+    def test_the_compiler_reads_the_registry_only_through_public_methods(self) -> None:
+        from _codescan import code_only
+
+        source = code_only(pae_engine.context)
+        for forbidden in ("jsonl", "_raw_records", "_lookup", "load_all", "registry.jsonl"):
+            self.assertNotIn(forbidden, source)
 
     def test_exit_codes_are_stable_and_distinct(self) -> None:
         from pae_engine import errors

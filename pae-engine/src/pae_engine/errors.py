@@ -21,6 +21,8 @@ __all__ = [
     "PaeError",
     "UsageError",
     "MalformedReference",
+    "InvalidBudget",
+    "BudgetTooSmall",
     "RepositoryNotFound",
     "ResourceNotFound",
     "AccessRefused",
@@ -81,6 +83,30 @@ class MalformedReference(UsageError):
 
     exit_code = 2
     error = "malformed_reference"
+
+
+class InvalidBudget(UsageError):
+    """The requested budget is not a usable limit.
+
+    A missing, zero, negative or non-integer limit is a configuration mistake,
+    not an empty result: the caller gets exit 2 rather than a bundle that
+    silently ignored what they asked for.
+    """
+
+    exit_code = 2
+    error = "invalid_budget"
+
+
+class BudgetTooSmall(UsageError):
+    """The budget cannot hold even the framing and manifest, with zero bodies.
+
+    Distinct from a bundle that legitimately includes nothing: there, the
+    request was answerable and the answer was "nothing fit". Here the request
+    could never have been answered at all.
+    """
+
+    exit_code = 2
+    error = "budget_too_small"
 
 
 class RepositoryNotFound(PaeError):

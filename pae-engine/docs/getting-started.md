@@ -2,7 +2,7 @@
 
 A copy-paste walkthrough, from an empty directory to a verified resource body.
 
-The Engine is not on PyPI. Version `0.2.0.dev0` is the in-tree development
+The Engine is not on PyPI. Version `0.3.0.dev0` is the in-tree development
 version, so every step below installs from a checkout.
 
 ## 1. Clone and install
@@ -22,7 +22,7 @@ Nothing else is downloaded: the Engine declares no runtime dependencies.
 ```bash
 pip check                          # no requirements to satisfy
 pae --version
-# pae 0.2.0.dev0 (registry contract pae-registry-record/1)
+# pae 0.3.0.dev0 (registry contract pae-registry-record/1)
 ```
 
 ## 2. Point the Engine at a checkout
@@ -222,7 +222,23 @@ Neither command reads a resource body, and neither prints one. See
 [search-routing.md](search-routing.md) for the ranking formula, the eligibility
 rules and the known limitations.
 
+## Compiling a bundle
+
+`pae route` tells you where to look. `pae bundle` hands you the bodies.
+
+```bash
+pae bundle --task "review my terraform for security issues" --budget-tokens 8000
+pae bundle --ref technique:ST-01 --budget-tokens 4000     # exits 6: no addressable body
+pae bundle --ref prompt:decision-making/tradeoff-pugh-matrix --budget-bytes 20000
+pae bundle --task "curriculum design" --budget-tokens 8000 --json | python3 -m json.tool | head -40
+```
+
+Exactly one source — `--task` or one or more `--ref` — and at least one budget.
+Bodies are served whole or omitted with a reason; nothing is ever truncated.
+The token budget is an estimate and the byte ceiling is exact, which
+[context-compiler.md](context-compiler.md) explains in full.
+
 ## What is not here yet
 
-Context compilation, token counting and MCP are later phases. Nothing in this
-release stubs them out or guesses at their shape.
+MCP and reproducible evaluation are later phases. Nothing in this release stubs
+them out or guesses at their shape.

@@ -21,6 +21,7 @@ from typing import Any, Optional, Sequence, TextIO
 
 from ._lexical import DEFAULT_LIMIT, MAX_LIMIT
 from ._version import __version__
+from .context import DEFAULT_MAX_RESOURCES, Budget, ContextCompiler
 from .errors import PaeError, UsageError
 from .models import RECORD_SCHEMA, SUMMARY_SCHEMA
 from .registry import Registry
@@ -32,6 +33,10 @@ from .validate import raise_if_invalid, validate_registry
 __all__ = ["main"]
 
 CONSOLE_NAME = "pae"
+
+#: How many candidates `pae bundle --task` asks the Router for. The compiler
+#: needs depth to keep packing after an oversized or bodiless candidate.
+BUNDLE_ROUTE_LIMIT = MAX_ROUTE_LIMIT
 DISTRIBUTION_NAME = "prompt-agent-engineering"
 IMPORT_NAME = "pae_engine"
 
@@ -207,6 +212,69 @@ def _build_parser() -> argparse.ArgumentParser:
         metavar="N",
         help=f"candidate resources to return (default {DEFAULT_ROUTE_LIMIT}, "
         f"max {MAX_ROUTE_LIMIT})",
+    )
+
+    bundle = subparsers.add_parser(
+        "bundle",
+        parents=[common],
+        help="compile whole verified resource bodies into a budgeted context bundle",
+        description=(
+            "Assemble a budgeted context bundle from a task or from explicit references. "
+            "Bodies are served whole or not at all, never truncated or summarized. "
+            "The budget is measured against the canonical Markdown rendering, which is "
+            "what a model actually receives. Writes to stdout only."
+        ),
+        epilog=(
+            "With --task the Router runs exactly once and its decision is compiled; "
+            "search is never re-run. An ambiguous, weak or empty route is a valid "
+            "result and exits 0."
+        ),
+    )
+    bundle.add_argument(
+        "--task", metavar="TEXT", default=None, help="natural-language description of the task"
+    )
+    bundle.add_argument(
+        "--ref",
+        action="append",
+        dest="refs",
+        metavar="REF",
+        help="compile this reference exactly; repeatable. Mutually exclusive with --task",
+    )
+    bundle.add_argument(
+        "--budget-tokens",
+        type=int,
+        default=None,
+        metavar="N",
+        help="estimated-token limit for the rendered bundle (an estimate, not a "
+        "guaranteed model-token fit)",
+    )
+    bundle.add_argument(
+        "--budget-bytes",
+        type=int,
+        default=None,
+        metavar="N",
+        help="exact UTF-8 byte limit for the rendered bundle",
+    )
+    bundle.add_argument(
+        "--max-resources",
+        type=int,
+        default=DEFAULT_MAX_RESOURCES,
+        metavar="N",
+        help=f"inclusion ceiling (default and maximum {DEFAULT_MAX_RESOURCES})",
+    )
+    bundle.add_argument(
+        "--kind",
+        action="append",
+        dest="kinds",
+        metavar="KIND",
+        help=f"restrict routing to a kind ({', '.join(KINDS)}); repeatable, --task only",
+    )
+    bundle.add_argument(
+        "--scope",
+        action="append",
+        dest="scopes",
+        metavar="SCOPE",
+        help="restrict packing to a scope the decision already found; repeatable, --task only",
     )
 
     validate = subparsers.add_parser(
@@ -479,6 +547,46 @@ def _cmd_route(repository: Repository, args: Any, as_json: bool, out: TextIO) ->
     return 0
 
 
+def _cmd_bundle(repository: Repository, args: Any, as_json: bool, out: TextIO) -> int:
+    """Compile one bundle. Exactly one source mode, at least one budget."""
+    refs = list(args.refs or [])
+    task = args.task
+    if bool(task) == bool(refs):
+        raise UsageError(
+            "give exactly one source: --task TEXT, or one or more --ref REF",
+            task=task,
+            refs=refs or None,
+        )
+    if refs and (args.kinds or args.scopes):
+        raise UsageError("--kind and --scope apply to --task only")
+
+    budget = Budget(
+        estimated_tokens=args.budget_tokens,
+        bytes=args.budget_bytes,
+        max_resources=args.max_resources,
+    )
+
+    registry = Registry.open(repository)
+    compiler = ContextCompiler(registry)
+
+    if task:
+        # Deeper than the human-facing `pae route` default: the compiler packs
+        # until the budget is spent, so it needs a candidate pool rather than a
+        # shortlist. The Router still runs exactly once.
+        decision = Router(SearchEngine(registry)).route(
+            task, kinds=args.kinds, limit=BUNDLE_ROUTE_LIMIT
+        )
+        result = compiler.compile_route(decision, budget=budget, scopes=args.scopes)
+    else:
+        result = compiler.compile_refs(refs, budget=budget)
+
+    if as_json:
+        _emit_json(result.to_json_obj(), out)
+        return 0
+    out.write(result.render_markdown())
+    return 0
+
+
 def _cmd_validate(
     repository: Repository, verify_checksums: bool, as_json: bool, out: TextIO
 ) -> int:
@@ -539,6 +647,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             return _cmd_search(repository, args, as_json, out)
         if args.command == "route":
             return _cmd_route(repository, args, as_json, out)
+        if args.command == "bundle":
+            return _cmd_bundle(repository, args, as_json, out)
         if args.command == "validate-registry":
             return _cmd_validate(repository, bool(args.verify_checksums), as_json, out)
 

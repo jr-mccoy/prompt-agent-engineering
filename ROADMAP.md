@@ -87,6 +87,14 @@ ADR-0010 through ADR-0016.
 
 Sequenced after the registry and the engine exist.
 
+- ~~**Context compilation.**~~ Done. `pae bundle` compiles explicit
+  references, `SearchResults` or a `RouteDecision` into a budgeted bundle of
+  whole verified bodies. No truncation, no attachment or technique-fragment
+  serving, no relationship expansion, and no hidden retrieval — the compiler
+  owns neither a `SearchEngine` nor a `Router`. The token count is an estimate
+  from a pluggable counter; the exact guarantee is a UTF-8 byte ceiling on the
+  canonical Markdown rendering. See ADR-0024 through ADR-0027 and
+  [`pae-engine/docs/context-compiler.md`](pae-engine/docs/context-compiler.md).
 - ~~**`pae-engine/` package**~~ Done. Conventional Python layout, a
   standard-library-only runtime (ADR-0003 as amended), and a `pae` CLI over a
   public Python API: repository discovery, UID / public-ID / alias resolution,
