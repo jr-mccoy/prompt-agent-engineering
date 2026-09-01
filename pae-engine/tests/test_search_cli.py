@@ -205,7 +205,7 @@ class TestHelpSurface(CliCase):
 
     def test_version_reports_the_engine_version(self) -> None:
         payload = json.loads(self.run_cli(["--json", "--version"]).stdout)
-        self.assertEqual(payload["engine_version"], "0.2.0.dev0")
+        self.assertEqual(payload["engine_version"], "0.3.0.dev0")
 
 
 if __name__ == "__main__":  # pragma: no cover

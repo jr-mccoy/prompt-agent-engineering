@@ -16,9 +16,10 @@ the repository is right — file an issue.
 | **PAE Registry** | The governed resource corpus, its indexes, schemas, and a normalized machine-readable metadata layer | Corpus, indexes and normalized registry records **exist** (`meta/registry/`) |
 | **PAE Engine** | An installable Python package: identity resolution, metadata retrieval, policy-gated content serving, and consumer-side registry validation | Package, Python API and `pae` CLI **exist** (`pae-engine/`) |
 
-The Engine is real but early. It resolves, inspects, serves, searches and
-routes; it does **not** compile context or speak MCP. Those remain planned, and
-documentation must not imply otherwise. The package is not published to PyPI.
+The Engine is real but early. It resolves, inspects, serves, searches, routes
+and compiles budgeted context bundles; it does **not** speak MCP. That remains
+planned, and documentation must not imply otherwise. The package is not
+published to PyPI.
 
 ---
 
@@ -204,8 +205,17 @@ PAE Registry  →  pae_engine (Python API)  →  pae (CLI)
 
 **Commands.** `pae --version`, `pae where`, `pae stats`, `pae get <ref>`
 (`--content`), `pae search "<query>"`, `pae route "<task>"`,
-`pae validate-registry` (`--verify-checksums`). There is no context compiler
-and no MCP server yet.
+`pae bundle` (`--task` or `--ref`), `pae validate-registry`
+(`--verify-checksums`). There is no MCP server yet.
+
+**Context compilation is budgeted, whole-body and deterministic.**
+`ContextCompiler` accepts explicit references, `SearchResults` or a
+`RouteDecision`; it owns no `SearchEngine` and no `Router`, so it cannot re-run
+retrieval, and every body arrives through `Registry.content()`. Resources are
+served whole or omitted with one of nine closed reason codes — there is no
+truncation path. The token budget is an estimate from a pluggable
+`TokenCounter`; the enforced guarantee is an exact UTF-8 byte ceiling on the
+canonical Markdown rendering. See ADR-0024 through ADR-0027.
 
 **Search and routing are deterministic and lexical.** BM25F with uniform field
 weights over registry metadata, built into an in-memory index on first use.
@@ -254,13 +264,17 @@ Nothing in the Engine today guesses at that shape: there are no ranking
 methods, no index files and no caches, because the access patterns that would
 justify them are exactly what search has yet to establish.
 
-### Beyond search
+### Beyond compilation
 
-Token-budgeted context compilation, with a serving-policy gate that refuses to
-emit a bundle rather than truncate required safety material out of a
-safety-gated resource. A read-only MCP surface calling the same library
-functions as the CLI. Reproducible evaluation. Optional extras (`[mcp]`,
-`[eval]`, `[tokenizers]`) carry anything the standard library cannot.
+A read-only MCP surface calling the same library functions as the CLI —
+`search_resources`, `route_task`, `get_resource`, `compose_bundle` — serializing
+`ContextBundle.to_json_obj()` directly rather than parsing CLI output.
+Reproducible evaluation, which the structured bundle already preserves the
+inputs for: candidate identities, inclusion order, omission reasons, source
+checksums, budget and estimator identity. Registry-side technique fragments and
+verified attachment serving, both specified in ADR-0024 and both deliberately
+deferred. Optional extras (`[mcp]`, `[eval]`, `[tokenizers]`) carry anything the
+standard library cannot.
 
 See [`ROADMAP.md`](ROADMAP.md) for sequencing and [`meta/adr/`](meta/adr/) for
 the decisions behind these choices.

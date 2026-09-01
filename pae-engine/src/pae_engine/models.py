@@ -32,6 +32,15 @@ __all__ = [
     "SearchResults",
     "RouteCandidate",
     "RouteDecision",
+    "BUNDLE_SCHEMA",
+    "MARKDOWN_RENDERER",
+    "OMISSION_REASONS",
+    "ORDERINGS",
+    "SOURCE_MODES",
+    "BundleItem",
+    "OmittedItem",
+    "BudgetReport",
+    "ContextBundle",
 ]
 
 #: The only registry contracts this Engine implements.
@@ -510,3 +519,240 @@ class RouteDecision:
             "selected_scope": self.selected_scope,
             "status": self.status,
         }
+
+
+# --------------------------------------------------------------------------
+# context bundles (Phase 5)
+# --------------------------------------------------------------------------
+
+#: The structured bundle contract. Versioned independently of the Registry
+#: record schema and of the Engine itself: a bundle consumer pins this.
+BUNDLE_SCHEMA = "pae-context-bundle/1"
+
+#: The canonical Markdown rendering. The bundle's byte and token budgets are
+#: always measured against *this* artifact, even when the CLI emits JSON.
+MARKDOWN_RENDERER = "pae-context-markdown/1"
+
+#: Every reason a candidate can fail to reach the bundle. Finite and closed:
+#: a caller switches on the code, never on the prose in ``detail``. Integrity
+#: failures are deliberately absent — they abort the compile instead.
+OMISSION_REASONS = frozenset(
+    {
+        "budget",
+        "oversized",
+        "metadata_only",
+        "excluded",
+        "tombstone",
+        "no_addressable_body",
+        "duplicate",
+        "max_resources",
+        "filtered",
+    }
+)
+
+#: How the selection order was derived.
+ORDERINGS = frozenset(
+    {
+        "input",
+        "rank",
+        "rank+top2-scope-diversity",
+        "rank+scope-filter",
+    }
+)
+
+#: Where a bundle's candidates came from.
+SOURCE_MODES = frozenset({"refs", "search", "route"})
+
+
+@dataclass(frozen=True)
+class BundleItem:
+    """One whole, verified resource body inside a bundle.
+
+    There is no partial variant, mirroring ``Content``: a body that did not fit
+    is an ``OmittedItem``, never a shortened ``BundleItem``.
+    """
+
+    uid: str
+    id: str
+    kind: str
+    title: str
+    scope: Optional[str]
+    #: Rank and score as the upstream ranking produced them. ``None`` for
+    #: explicit references, which were never ranked. Never recomputed here.
+    source_rank: Optional[int]
+    source_score: Optional[float]
+    serving_policy: str
+    guard_preservation: Optional[Mapping[str, Any]]
+    content_sha256: str
+    byte_length: int
+    estimated_tokens: int
+    verified: bool
+    #: The logical cluster this body belongs to: its own UID unless it is a
+    #: registered copy, in which case the canonical's UID.
+    canonical_uid: str
+    content: str = field(repr=False)
+
+    def to_json_obj(self) -> dict[str, Any]:
+        return {
+            "byte_length": self.byte_length,
+            "canonical_uid": self.canonical_uid,
+            "content": self.content,
+            "content_sha256": self.content_sha256,
+            "estimated_tokens": self.estimated_tokens,
+            "guard_preservation": _plain(self.guard_preservation),
+            "id": self.id,
+            "kind": self.kind,
+            "scope": self.scope,
+            "serving_policy": self.serving_policy,
+            "source_rank": self.source_rank,
+            "source_score": self.source_score,
+            "title": self.title,
+            "uid": self.uid,
+            "verified": self.verified,
+        }
+
+
+@dataclass(frozen=True)
+class OmittedItem:
+    """A candidate that was considered and left out, with a closed reason code.
+
+    Identity here is only ever what serving policy already permits. An excluded
+    resource contributes its policy-safe stub and nothing more — no body, no
+    source checksum, no path.
+    """
+
+    uid: str
+    id: Optional[str]
+    kind: Optional[str]
+    title: Optional[str]
+    source_rank: Optional[int]
+    reason: str
+    #: Deterministic explanatory text derived from ``reason``. Never free-form.
+    detail: str
+    #: ``None`` when the resource has no addressable body to have measured.
+    estimated_tokens: Optional[int]
+
+    def __post_init__(self) -> None:
+        if self.reason not in OMISSION_REASONS:
+            raise ValueError(f"unknown omission reason: {self.reason!r}")
+
+    def to_json_obj(self) -> dict[str, Any]:
+        return {
+            "detail": self.detail,
+            "estimated_tokens": self.estimated_tokens,
+            "id": self.id,
+            "kind": self.kind,
+            "reason": self.reason,
+            "source_rank": self.source_rank,
+            "title": self.title,
+            "uid": self.uid,
+        }
+
+
+@dataclass(frozen=True)
+class BudgetReport:
+    """What was asked for, what was enforced, and what was actually used.
+
+    Token figures are whatever the configured counter produced. With the
+    default counter they are estimates, and ``estimator_exact`` says so.
+    """
+
+    requested_estimated_tokens: Optional[int]
+    requested_bytes: Optional[int]
+    #: The exact UTF-8 byte ceiling actually enforced on the rendered Markdown.
+    effective_byte_ceiling: int
+    #: ``explicit`` | ``derived_from_default_estimator`` | ``engine_safety_ceiling``
+    byte_ceiling_source: str
+    used_estimated_tokens: int
+    remaining_estimated_tokens: Optional[int]
+    used_bytes: int
+    remaining_bytes: int
+    body_estimated_tokens: int
+    wrapper_overhead_estimated_tokens: int
+    estimator_name: str
+    estimator_version: str
+    estimator_exact: bool
+
+    def to_json_obj(self) -> dict[str, Any]:
+        return {
+            "body_estimated_tokens": self.body_estimated_tokens,
+            "byte_ceiling_source": self.byte_ceiling_source,
+            "effective_byte_ceiling": self.effective_byte_ceiling,
+            "estimator_exact": self.estimator_exact,
+            "estimator_name": self.estimator_name,
+            "estimator_version": self.estimator_version,
+            "remaining_bytes": self.remaining_bytes,
+            "remaining_estimated_tokens": self.remaining_estimated_tokens,
+            "requested_bytes": self.requested_bytes,
+            "requested_estimated_tokens": self.requested_estimated_tokens,
+            "used_bytes": self.used_bytes,
+            "used_estimated_tokens": self.used_estimated_tokens,
+            "wrapper_overhead_estimated_tokens": self.wrapper_overhead_estimated_tokens,
+        }
+
+
+@dataclass(frozen=True)
+class ContextBundle:
+    """A compiled, budgeted, auditable set of whole resource bodies.
+
+    The structured object is authoritative. ``render_markdown()`` is the
+    canonical model-facing artifact and the thing the budget is measured
+    against; ``to_json_obj()`` is the audit and transport form. Neither
+    rewrites a body.
+    """
+
+    schema_version: str
+    compiler_version: str
+    renderer: str
+    task: Optional[str]
+    source_mode: str
+    route_status: Optional[str]
+    selected_scope: Optional[str]
+    selected_kind: Optional[str]
+    candidate_scopes: tuple[str, ...]
+    candidate_kinds: tuple[str, ...]
+    coverage: Optional[float]
+    margin: Optional[float]
+    #: Every durable UID considered, in the order it was considered.
+    candidates: tuple[str, ...]
+    included: tuple[BundleItem, ...]
+    omitted: tuple[OmittedItem, ...]
+    budget: BudgetReport
+    ordering: str
+    bundle_sha256: str
+    warnings: tuple[str, ...]
+
+    def to_json_obj(self) -> dict[str, Any]:
+        """The complete structured artifact.
+
+        Bodies appear once, inside ``included``. The Markdown rendering is
+        deliberately not embedded: duplicating it would double the payload and
+        create a second, divergeable description of the same bundle.
+        """
+        return {
+            "budget": self.budget.to_json_obj(),
+            "bundle_sha256": self.bundle_sha256,
+            "candidate_kinds": list(self.candidate_kinds),
+            "candidate_scopes": list(self.candidate_scopes),
+            "candidates": list(self.candidates),
+            "compiler_version": self.compiler_version,
+            "coverage": self.coverage,
+            "included": [item.to_json_obj() for item in self.included],
+            "margin": self.margin,
+            "omitted": [item.to_json_obj() for item in self.omitted],
+            "ordering": self.ordering,
+            "renderer": self.renderer,
+            "route_status": self.route_status,
+            "schema_version": self.schema_version,
+            "selected_kind": self.selected_kind,
+            "selected_scope": self.selected_scope,
+            "source_mode": self.source_mode,
+            "task": self.task,
+            "warnings": list(self.warnings),
+        }
+
+    def render_markdown(self) -> str:
+        """The canonical Markdown rendering this bundle's budget was measured against."""
+        from ._context_render import render_markdown
+
+        return render_markdown(self)

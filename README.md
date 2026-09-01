@@ -458,8 +458,20 @@ no embeddings, no index on disk. Relevance never reads a resource body, and a
 score is not a confidence value. `pae route` will answer `ambiguous`, `weak` or
 `no_route` rather than force a choice, and every status exits 0.
 
-**Context compilation and MCP are later phases**; see
-[`ROADMAP.md`](ROADMAP.md).
+And it **compiles budgeted context bundles**:
+
+```bash
+pae bundle --task "review my terraform for security issues" --budget-tokens 8000
+pae bundle --ref prompt:decision-making/tradeoff-pugh-matrix --budget-bytes 20000
+```
+
+Bodies are served whole or omitted with a reason — there is no truncation path
+at all — and the compiler never re-runs search. The token budget is an
+**estimate**; the enforced guarantee is an exact byte ceiling on the rendered
+bundle. Output goes to stdout only. See
+[`pae-engine/docs/context-compiler.md`](pae-engine/docs/context-compiler.md).
+
+**MCP is a later phase**; see [`ROADMAP.md`](ROADMAP.md).
 
 Full documentation: [`pae-engine/README.md`](pae-engine/README.md) ·
 [`pae-engine/docs/getting-started.md`](pae-engine/docs/getting-started.md)

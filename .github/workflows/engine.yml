@@ -72,6 +72,15 @@ jobs:
           python3 tests/run_search_routing_diagnostics.py \
             --repo "$GITHUB_WORKSPACE" --compare
 
+      # tests/run_context_compiler_diagnostics.py is deliberately NOT a build
+      # step. Search diagnostics are metadata-only and finish in seconds;
+      # packing diagnostics read bodies, and Registry resolves each reference
+      # by scanning the whole 9.7 MB registry file, so even a 25-case sweep is
+      # ~30 GB of re-reading — 29 s on a warm local disk, over 14 minutes on a
+      # runner. The invariants it asserts (no guarded body shortened, no bundle
+      # over the budget it reported, top-hit retention, determinism) are
+      # covered against the live registry by tests/test_context_regression.py
+      # below. The full sweep stays a local command.
       - name: Unit tests
         working-directory: pae-engine
         env:
