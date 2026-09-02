@@ -260,9 +260,39 @@ report that implies otherwise is wrong.
 
 ## Installation
 
+**Install into a dedicated environment, never the system one.** Phase 8A
+installed `mcp>=2.1.1` globally to exercise Condition D and broke an unrelated
+global `fastmcp`, which pins `mcp<2.0.0`. The harness has no business deciding
+what versions the rest of a machine runs, so it gets its own environment and
+the global one is left alone.
+
 ```bash
-pip install -e path/to/repo/pae-engine
-pip install -e "path/to/repo/pae-engine/evaluation[mcp,anthropic,openai,analysis]"
+# from the repository root
+python -m venv pae-engine/.venv-eval
+
+# Windows
+pae-engine\.venv-eval\Scripts\python.exe -m pip install -e pae-engine
+pae-engine\.venv-eval\Scripts\python.exe -m pip install -e "pae-engine/evaluation[all]"
+pae-engine\.venv-eval\Scripts\python.exe -m pip check
+
+# POSIX
+pae-engine/.venv-eval/bin/python -m pip install -e pae-engine
+pae-engine/.venv-eval/bin/python -m pip install -e "pae-engine/evaluation[all]"
+pae-engine/.venv-eval/bin/python -m pip check
+```
+
+`.venv-eval` is covered by the repository's existing `.venv*/` ignore rule.
+`pip check` must pass; an environment with a broken requirement graph is not
+one to attribute a measurement to.
+
+`[all]` pulls `mcp`, `anthropic`, `openai` and `scipy`. Installing the provider
+SDKs makes no request and needs no credential — they are imported lazily, and
+`run` dry-runs by default.
+
+Run everything through that interpreter explicitly rather than activating:
+
+```bash
+pae-engine/.venv-eval/bin/python -m pae_eval validate-benchmark --benchmark-root ...
 ```
 
 The Engine is installed from the local checkout — the distribution is not
@@ -271,6 +301,8 @@ on it. The harness records the imported Engine version at run time.
 
 The base install has no dependencies at all: `plan`, `validate-benchmark`,
 fake-provider runs, statistics and reporting all work with nothing installed.
+That property is what CI asserts; the dedicated environment is for actually
+running the pipeline.
 
 ## Provider SDK verification
 

@@ -82,8 +82,50 @@ STOPWORDS: frozenset[str] = frozenset(
     """.split()
 )
 
+#: Request-size ceiling. Unchanged: this bound is about how much text a caller
+#: may send, and nothing measured in Phase 8B argued for moving it.
 MAX_QUERY_CHARS = 2000
-MAX_QUERY_TOKENS = 64
+
+#: How many *normalized terms* a query may reach after stopwords and
+#: depluralization. Raised from 64 in Phase 8B, from measurement rather than
+#: from taste.
+#:
+#: 64 rejected realistic requests. A person describing a real problem in full
+#: prose — constraints, context, what they have already tried — normalizes to
+#: 90–130 terms: three of the thirty development benchmark tasks landed at 97,
+#: 106 and 113, and five independently written long requests spanned 92–125.
+#: Those are not abusive inputs, and rejecting them made the Engine unusable
+#: for exactly the requests context compilation is most valuable for.
+#:
+#: 256 is the smallest candidate that clears the largest realistic query
+#: measured (125 terms) with better than a 2x margin. 128 clears it by three
+#: terms, which is not a margin.
+#:
+#: The security case is that this bound was never the load-bearing control.
+#: ``MAX_QUERY_CHARS`` is. Against the true adversarial input — the terms with
+#: the highest document-frequency-per-character, which maximise posting-list
+#: work per byte sent — 2000 characters hold at most 340 distinct terms, so a
+#: cap of 512 could never bind at all. Measured worst case over the real
+#: corpus (5217 documents), search and route each:
+#:
+#:     terms      64      128      256      340 (char-bound maximum)
+#:     latency  ~99ms   ~124ms   ~153ms   ~173ms
+#:     peak      4.1MB    4.6MB    5.7MB    6.1MB
+#:
+#: Cost is strongly sublinear in term count because scoring against the corpus
+#: dominates: eight high-frequency terms already cost ~48ms. Moving 64 -> 256
+#: therefore buys realistic requests at +54ms and +1.6MB in the worst case,
+#: which is not a material change to the denial-of-service surface of a
+#: single-request read-only API that is already spending ~99ms on that input.
+#:
+#: The bound is kept rather than removed because term length is a property of
+#: this corpus's vocabulary, not an invariant. Short high-frequency tokens
+#: exist here in quantity ("md", "st", "01", "qa"), and 2000 characters of
+#: those pack 555 terms; a corpus that drifted shorter would raise the
+#: character bound's implied term ceiling without anyone noticing. An explicit
+#: term bound holds regardless.
+MAX_QUERY_TOKENS = 256
+
 DEFAULT_LIMIT = 10
 MAX_LIMIT = 100
 

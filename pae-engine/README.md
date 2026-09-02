@@ -11,7 +11,7 @@ PAE Registry  →  pae_engine (Python API)  →  pae (CLI)
 
 ## Status
 
-**Version 0.4.0.dev0 is the in-tree development version. The project has not
+**Version 0.5.0.dev0 is the in-tree development version. The project has not
 been published to PyPI, and no release has been tagged.** Install it from a
 checkout; `pip install prompt-agent-engineering` does not work yet and this
 document will say so until a release actually exists.
@@ -212,7 +212,7 @@ Typed errors carry machine-readable detail: `MalformedReference`,
 
 ## Public API stability
 
-`0.4.0.dev0` is a development version. The surface below is stable enough to
+`0.5.0.dev0` is a development version. The surface below is stable enough to
 build later phases on, but is **not** covered by a 1.0 semantic-versioning
 promise:
 

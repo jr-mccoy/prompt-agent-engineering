@@ -2,7 +2,7 @@
 
 A copy-paste walkthrough, from an empty directory to a verified resource body.
 
-The Engine is not on PyPI. Version `0.4.0.dev0` is the in-tree development
+The Engine is not on PyPI. Version `0.5.0.dev0` is the in-tree development
 version, so every step below installs from a checkout.
 
 ## 1. Clone and install
@@ -22,7 +22,7 @@ Nothing else is downloaded: the Engine declares no runtime dependencies.
 ```bash
 pip check                          # no requirements to satisfy
 pae --version
-# pae 0.4.0.dev0 (registry contract pae-registry-record/1)
+# pae 0.5.0.dev0 (registry contract pae-registry-record/1)
 ```
 
 ## 2. Point the Engine at a checkout

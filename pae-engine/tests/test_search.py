@@ -13,7 +13,12 @@ import unittest
 import fixtures
 from _support import EngineTestCase
 from pae_engine import Registry, Repository, SearchEngine, UsageError
-from pae_engine._lexical import MAX_LIMIT, MAX_QUERY_CHARS
+from pae_engine._lexical import (
+    MAX_LIMIT,
+    MAX_QUERY_CHARS,
+    MAX_QUERY_TOKENS,
+    normalize,
+)
 
 #: Crockford base32 omits i, l, o and u, so a readable mnemonic has to be
 #: transliterated before it can be a valid UID.
@@ -338,10 +343,102 @@ class TestFiltersAndBounds(SearchFixtureCase):
         with self.assertRaises(UsageError):
             engine.search("x" * (MAX_QUERY_CHARS + 1))
         with self.assertRaises(UsageError):
-            engine.search(" ".join(f"term{i}" for i in range(200)))
+            engine.search(" ".join(f"term{i}" for i in range(MAX_QUERY_TOKENS + 1)))
         for bad in (0, -1, MAX_LIMIT + 1):
             with self.assertRaises(UsageError):
                 engine.search("widget", limit=bad)
+
+
+class TestQueryTermBound(SearchFixtureCase):
+    """The bound is exact, and realistic prose sits well inside it (Phase 8B).
+
+    Phase 8A found the old 64-term bound rejecting ordinary long requests, and
+    the rejection propagated as a crash through Condition C and Layer A. These
+    tests pin the boundary itself so a future edit cannot quietly move it, and
+    pin a realistic request so a future edit cannot quietly re-break the case
+    the bound was raised for.
+    """
+
+    def _query(self, terms: int) -> str:
+        # ``term0 term1 …`` — every token distinct, none a stopword, none
+        # depluralized, so the normalized count equals the token count.
+        return " ".join(f"term{i}" for i in range(terms))
+
+    def test_one_below_the_bound_is_accepted(self) -> None:
+        engine = self.build()
+        engine.search(self._query(MAX_QUERY_TOKENS - 1))
+
+    def test_exactly_the_bound_is_accepted(self) -> None:
+        engine = self.build()
+        engine.search(self._query(MAX_QUERY_TOKENS))
+
+    def test_one_above_the_bound_is_refused(self) -> None:
+        engine = self.build()
+        with self.assertRaises(UsageError) as caught:
+            engine.search(self._query(MAX_QUERY_TOKENS + 1))
+        message = str(caught.exception)
+        self.assertIn(str(MAX_QUERY_TOKENS), message)
+        self.assertIn("term bound", message)
+
+    def test_the_error_reports_counts_not_the_query(self) -> None:
+        """A rejection says how many terms and what the ceiling is.
+
+        It must not echo the query back: the detail payload is what a caller
+        logs, and a 2000-character request in a log line is a different kind
+        of problem.
+        """
+        engine = self.build()
+        with self.assertRaises(UsageError) as caught:
+            engine.search(self._query(MAX_QUERY_TOKENS + 1))
+        details = getattr(caught.exception, "details", {}) or {}
+        self.assertEqual(details.get("terms"), MAX_QUERY_TOKENS + 1)
+        self.assertEqual(details.get("maximum"), MAX_QUERY_TOKENS)
+        self.assertNotIn("term0 term1", str(caught.exception))
+
+    def test_a_realistic_long_request_is_accepted(self) -> None:
+        """The shape that failed before Phase 8B: one person, one real problem.
+
+        119 normalized terms as written — inside 256, outside 64.
+        """
+        engine = self.build()
+        request = (
+            "We are moving forty internal services off a single shared Postgres "
+            "instance onto per-service databases, and I need a sequencing plan I "
+            "can hand to the team. No downtime window may exceed five minutes "
+            "because the checkout path is in the blast radius. We have two "
+            "engineers and roughly six months of calendar before the shared "
+            "instance runs out of headroom. The analytics team currently joins "
+            "across service boundaries in about a dozen dashboards and nobody has "
+            "told them this is happening. Three of the forty services were written "
+            "by contractors who are no longer available and their schemas use "
+            "triggers we do not fully understand. Tell me which services move "
+            "first and why, what the dual-write and backfill look like at each "
+            "step, where the rollback point is, and the three things most likely "
+            "to go wrong."
+        )
+        self.assertGreater(len(normalize(request)), 64)
+        self.assertLessEqual(len(normalize(request)), MAX_QUERY_TOKENS)
+        engine.search(request)  # must not raise
+
+    def test_the_character_ceiling_still_binds_first(self) -> None:
+        """A request over the character bound fails on characters, not terms.
+
+        The two bounds are independent and the character one is checked first,
+        so an oversized request cannot be normalized before it is refused.
+        """
+        engine = self.build()
+        with self.assertRaises(UsageError) as caught:
+            engine.search("alpha " * (MAX_QUERY_CHARS // 6 + 10))
+        self.assertIn("character bound", str(caught.exception))
+
+    def test_the_bound_cannot_silently_fall_back_below_realistic_use(self) -> None:
+        """Guards the decision, not just the constant.
+
+        Phase 8B measured the largest realistic request at 125 normalized
+        terms. A bound at or below that reintroduces the defect this change
+        exists to remove, so the floor is asserted rather than left to review.
+        """
+        self.assertGreaterEqual(MAX_QUERY_TOKENS, 250)
 
     def test_zero_results_is_a_normal_answer(self) -> None:
         engine = self.build()
