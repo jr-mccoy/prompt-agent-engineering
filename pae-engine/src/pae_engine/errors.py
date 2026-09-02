@@ -20,6 +20,7 @@ from typing import Any
 __all__ = [
     "PaeError",
     "UsageError",
+    "MissingExtra",
     "MalformedReference",
     "InvalidBudget",
     "BudgetTooSmall",
@@ -71,6 +72,19 @@ class UsageError(PaeError):
 
     exit_code = 2
     error = "usage_error"
+
+
+class MissingExtra(UsageError):
+    """An optional feature was invoked without the extra that provides it.
+
+    Deliberately a usage error rather than an import failure: nothing is broken,
+    the caller simply asked for a surface this install does not carry. The
+    message names the exact install command so the fix does not require reading
+    documentation.
+    """
+
+    exit_code = 2
+    error = "missing_extra"
 
 
 class MalformedReference(UsageError):

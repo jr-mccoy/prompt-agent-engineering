@@ -18,7 +18,7 @@ build-backend = "setuptools.build_meta"
 # distribution name is spelled out and the import namespace is `pae_engine`.
 # The console command stays short: `pae`.
 name = "prompt-agent-engineering"
-version = "0.3.0.dev0"
+version = "0.4.0.dev0"
 description = "Read-only runtime and CLI for the PAE Registry: resolve, inspect and serve governed prompt-engineering resources from a local checkout."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -46,9 +46,25 @@ classifiers = [
     "Typing :: Typed",
 ]
 
-# Intentionally empty. Adding a runtime dependency here is an architecture
-# change, not a convenience; the zero-dependency assertion is enforced in CI.
+# Intentionally empty, and enforced in CI. The base install has zero
+# *unconditional* runtime dependencies: `pip install prompt-agent-engineering`
+# still resolves to nothing but the standard library.
+#
+# Adding a line here is an architecture change, not a convenience. See
+# meta/adr/0003-dependency-light-core.md and meta/adr/0029-optional-mcp-dependency.md.
 dependencies = []
+
+[project.optional-dependencies]
+# The MCP server adapter, and the only conditional requirement the package is
+# permitted to declare. It installs a large graph (~29 packages) including a
+# full HTTP server stack and a JWT/crypto chain that stdio never uses, which is
+# precisely why it is opt-in rather than a base dependency.
+#
+# The floor is 2.1.1 because that is the release actually exercised in CI; the
+# ceiling is <3 because v2 was itself a breaking major. `mcp[cli]` is a
+# developer convenience for the MCP Inspector and is deliberately NOT declared
+# here — it is not a PAE runtime dependency.
+mcp = ["mcp>=2.1.1,<3"]
 
 [project.urls]
 Homepage = "https://github.com/jr-mccoy/prompt-agent-engineering"

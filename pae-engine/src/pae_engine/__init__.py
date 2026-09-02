@@ -31,7 +31,9 @@ Context compilation assembles whole verified bodies into a budgeted bundle::
     bundle = compiler.compile_route(decision, budget=Budget(estimated_tokens=8000))
     print(bundle.render_markdown())
 
-MCP is a later phase and is deliberately absent.
+An optional MCP server adapter ships in the ``mcp`` extra and is exposed
+only through ``pae mcp``. It is never imported from here: importing this
+package must stay dependency-free.
 """
 
 from __future__ import annotations
@@ -55,6 +57,7 @@ from .errors import (
     IncompatibleRegistry,
     InvalidBudget,
     MalformedReference,
+    MissingExtra,
     NoAddressableContent,
     PaeError,
     PathSecurityError,
@@ -150,6 +153,7 @@ __all__ = [
     "PaeError",
     "UsageError",
     "MalformedReference",
+    "MissingExtra",
     "InvalidBudget",
     "BudgetTooSmall",
     "RepositoryNotFound",

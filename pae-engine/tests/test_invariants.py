@@ -13,6 +13,9 @@ a blanket ban on it would be noise that future contributors learn to silence.
 from __future__ import annotations
 
 import ast
+import os
+import subprocess
+import sys
 import unittest
 from pathlib import Path
 
@@ -321,9 +324,39 @@ class TestPublicApiSurface(unittest.TestCase):
         for name in ("search", "rank", "score", "query", "embed", "route", "bundle"):
             self.assertFalse(hasattr(Registry, name), f"Registry.{name} belongs elsewhere")
 
-    def test_mcp_is_still_absent(self) -> None:
-        """Phase 6's shape is not guessed at in Phase 5."""
-        for name in ("MCPServer", "serve", "mcp", "evaluate", "Evaluator"):
+    def test_the_mcp_adapter_is_not_part_of_the_base_surface(self) -> None:
+        """Phase 6 shipped MCP as an opt-in adapter, not as Engine API.
+
+        ``pae_engine.mcp`` is a submodule reached through ``pae mcp``; nothing
+        from it is re-exported here. Importing the base package must not pull in
+        the adapter, and must not pull in the SDK — that is what keeps
+        ``pip install prompt-agent-engineering`` dependency-free.
+
+        Checked in a fresh interpreter because ``hasattr`` is not evidence: once
+        anything in the process has imported ``pae_engine.mcp``, the attribute
+        exists on the parent package as an ordinary import side effect.
+        """
+        for name in ("MCPServer", "serve", "serve_stdio", "evaluate", "Evaluator"):
+            self.assertFalse(hasattr(pae_engine, name), f"{name} is not base API")
+
+        code = (
+            "import sys, pae_engine; "
+            "bad = [m for m in sys.modules if m == 'mcp' or m.startswith('mcp.') "
+            "or m == 'pae_engine.mcp']; "
+            "assert not bad, bad; print('clean')"
+        )
+        result = subprocess.run(
+            [sys.executable, "-c", code],
+            capture_output=True,
+            text=True,
+            env={**os.environ, "PYTHONPATH": str(PACKAGE_ROOT.parent)},
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("clean", result.stdout)
+
+    def test_later_phases_are_still_absent(self) -> None:
+        """Evaluation is Phase 7. Its shape is not guessed at here."""
+        for name in ("evaluate", "Evaluator", "EvalHarness"):
             self.assertFalse(hasattr(pae_engine, name), f"{name} is a later phase")
 
     def test_context_compilation_is_exported(self) -> None:

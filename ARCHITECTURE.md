@@ -16,10 +16,10 @@ the repository is right — file an issue.
 | **PAE Registry** | The governed resource corpus, its indexes, schemas, and a normalized machine-readable metadata layer | Corpus, indexes and normalized registry records **exist** (`meta/registry/`) |
 | **PAE Engine** | An installable Python package: identity resolution, metadata retrieval, policy-gated content serving, and consumer-side registry validation | Package, Python API and `pae` CLI **exist** (`pae-engine/`) |
 
-The Engine is real but early. It resolves, inspects, serves, searches, routes
-and compiles budgeted context bundles; it does **not** speak MCP. That remains
-planned, and documentation must not imply otherwise. The package is not
-published to PyPI.
+The Engine is real but early. It resolves, inspects, serves, searches, routes,
+compiles budgeted context bundles, and speaks **MCP over stdio** through an
+optional extra. Reproducible evaluation remains planned, and documentation must
+not imply otherwise. The package is not published to PyPI.
 
 ---
 
@@ -206,7 +206,16 @@ PAE Registry  →  pae_engine (Python API)  →  pae (CLI)
 **Commands.** `pae --version`, `pae where`, `pae stats`, `pae get <ref>`
 (`--content`), `pae search "<query>"`, `pae route "<task>"`,
 `pae bundle` (`--task` or `--ref`), `pae validate-registry`
-(`--verify-checksums`). There is no MCP server yet.
+(`--verify-checksums`), `pae mcp` (stdio MCP server, optional `[mcp]` extra).
+
+**The MCP server is an adapter, not a second Engine.** Four read-only tools —
+`pae_search_resources`, `pae_route_task`, `pae_get_resource`,
+`pae_compose_bundle` — each validate transport input, call one existing Engine
+API, project the result and map errors. The repository is bound once at startup
+and is never a tool argument; a body crosses the wire exactly once; bundle text
+is byte-identical to `render_markdown()`. See
+[`pae-engine/docs/mcp.md`](pae-engine/docs/mcp.md) and ADR-0028 through
+ADR-0032.
 
 **Context compilation is budgeted, whole-body and deterministic.**
 `ContextCompiler` accepts explicit references, `SearchResults` or a
@@ -264,17 +273,15 @@ Nothing in the Engine today guesses at that shape: there are no ranking
 methods, no index files and no caches, because the access patterns that would
 justify them are exactly what search has yet to establish.
 
-### Beyond compilation
+### Beyond MCP
 
-A read-only MCP surface calling the same library functions as the CLI —
-`search_resources`, `route_task`, `get_resource`, `compose_bundle` — serializing
-`ContextBundle.to_json_obj()` directly rather than parsing CLI output.
 Reproducible evaluation, which the structured bundle already preserves the
 inputs for: candidate identities, inclusion order, omission reasons, source
 checksums, budget and estimator identity. Registry-side technique fragments and
 verified attachment serving, both specified in ADR-0024 and both deliberately
-deferred. Optional extras (`[mcp]`, `[eval]`, `[tokenizers]`) carry anything the
-standard library cannot.
+deferred. A network MCP transport, whose prerequisites are enumerated in
+ADR-0030. Optional extras carry anything the standard library cannot: `[mcp]`
+exists, `[eval]` and `[tokenizers]` do not yet.
 
 See [`ROADMAP.md`](ROADMAP.md) for sequencing and [`meta/adr/`](meta/adr/) for
 the decisions behind these choices.

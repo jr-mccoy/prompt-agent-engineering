@@ -35,7 +35,7 @@ The project is being productized in two layers:
 - **PAE Registry** — the governed resource corpus, plus the normalized machine-readable metadata layer built on top of it under [`meta/registry/`](meta/registry/).
 - **PAE Engine** — an installable package (`pae-engine/`) with a `pae` command that resolves resource identity, returns registry metadata, and serves verified resource bodies under the registry's serving policy.
 
-Both layers exist. The Engine is **early**: it resolves, inspects, serves, searches and routes, and it does **not** yet compile context or speak MCP — those are later phases, and it is not published to PyPI. See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the current-versus-planned boundary and [`ROADMAP.md`](ROADMAP.md) for sequencing.
+Both layers exist. The Engine is **early**: it resolves, inspects, serves, searches, routes, compiles budgeted context bundles, and speaks MCP over stdio through an optional extra. Reproducible evaluation is a later phase, and it is not published to PyPI. See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the current-versus-planned boundary and [`ROADMAP.md`](ROADMAP.md) for sequencing.
 
 It is both a **large reusable resource library** and an **authoring system for creating new resources**. The repository combines prompt-engineering methodology, a formal technique catalog, thousands of domain prompts, reusable agents and skills, composition patterns, quality rubrics, validation tooling, and an end-to-end factory for designing agentic AI systems.
 
@@ -471,7 +471,15 @@ at all — and the compiler never re-runs search. The token budget is an
 bundle. Output goes to stdout only. See
 [`pae-engine/docs/context-compiler.md`](pae-engine/docs/context-compiler.md).
 
-**MCP is a later phase**; see [`ROADMAP.md`](ROADMAP.md).
+**MCP.** `pae mcp --repo <checkout>` serves the Engine to an MCP client over
+stdio, behind the optional `[mcp]` extra — the base install stays
+dependency-free. Four read-only tools (`pae_search_resources`,
+`pae_route_task`, `pae_get_resource`, `pae_compose_bundle`) call the same Engine
+APIs the CLI does. The repository is bound at startup and is never a tool
+argument, and a resource body crosses the wire exactly once. See
+[`pae-engine/docs/mcp.md`](pae-engine/docs/mcp.md).
+
+**Reproducible evaluation is a later phase**; see [`ROADMAP.md`](ROADMAP.md).
 
 Full documentation: [`pae-engine/README.md`](pae-engine/README.md) ·
 [`pae-engine/docs/getting-started.md`](pae-engine/docs/getting-started.md)

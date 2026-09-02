@@ -2,7 +2,7 @@
 
 A copy-paste walkthrough, from an empty directory to a verified resource body.
 
-The Engine is not on PyPI. Version `0.3.0.dev0` is the in-tree development
+The Engine is not on PyPI. Version `0.4.0.dev0` is the in-tree development
 version, so every step below installs from a checkout.
 
 ## 1. Clone and install
@@ -22,7 +22,7 @@ Nothing else is downloaded: the Engine declares no runtime dependencies.
 ```bash
 pip check                          # no requirements to satisfy
 pae --version
-# pae 0.3.0.dev0 (registry contract pae-registry-record/1)
+# pae 0.4.0.dev0 (registry contract pae-registry-record/1)
 ```
 
 ## 2. Point the Engine at a checkout
@@ -238,7 +238,19 @@ Bodies are served whole or omitted with a reason; nothing is ever truncated.
 The token budget is an estimate and the byte ceiling is exact, which
 [context-compiler.md](context-compiler.md) explains in full.
 
+## Serving a checkout over MCP
+
+An MCP client can call the Engine directly. The server is an optional extra:
+
+```bash
+pip install "/path/to/prompt-agent-engineering/pae-engine[mcp]"
+pae mcp --repo /absolute/path/to/prompt-agent-engineering
+```
+
+Four read-only tools, stdio only, one checkout snapshot per process. Host
+configuration and the full tool contract are in [`mcp.md`](mcp.md).
+
 ## What is not here yet
 
-MCP and reproducible evaluation are later phases. Nothing in this release stubs
-them out or guesses at their shape.
+Reproducible evaluation is a later phase. Nothing in this release stubs it out
+or guesses at its shape.
