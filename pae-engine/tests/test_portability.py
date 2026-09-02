@@ -13,7 +13,6 @@ the original defect through.
 
 from __future__ import annotations
 
-import builtins
 import importlib
 import sys
 import unittest
@@ -27,31 +26,50 @@ GUARDED_MODULES = (
 )
 
 
+class _BlockingFinder:
+    """A meta-path finder that refuses one module name."""
+
+    def __init__(self, name: str) -> None:
+        self.name = name
+
+    def find_module(self, fullname, path=None):  # pragma: no cover - legacy API
+        return None
+
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname == self.name:
+            raise ImportError(f"No module named {self.name!r}")
+        return None
+
+
 class _BlockResource:
-    """Context manager making ``import resource`` raise, as on Windows."""
+    """Context manager making ``resource`` unimportable, as on Windows.
+
+    Implemented as a ``sys.meta_path`` finder rather than a patched
+    ``builtins.__import__``. Both intercept an ``import resource`` statement,
+    but ``importlib.import_module`` goes straight to the import machinery and
+    never touches ``builtins.__import__`` — so the patched version silently
+    stopped blocking anything the moment a test used ``import_module``, which
+    is exactly how this test passed on Windows (where ``resource`` genuinely
+    does not exist) while proving nothing on Linux.
+    """
 
     def __init__(self, name: str = "resource") -> None:
         self.name = name
 
     def __enter__(self) -> "_BlockResource":
-        self._real_import = builtins.__import__
         self._saved_module = sys.modules.pop(self.name, None)
         self._saved_targets = {
             name: sys.modules.pop(name) for name in GUARDED_MODULES if name in sys.modules
         }
-
-        blocked = self.name
-
-        def guarded(name, globals=None, locals=None, fromlist=(), level=0):
-            if name == blocked:
-                raise ImportError(f"No module named {blocked!r}")
-            return self._real_import(name, globals, locals, fromlist, level)
-
-        builtins.__import__ = guarded
+        self._finder = _BlockingFinder(self.name)
+        sys.meta_path.insert(0, self._finder)
         return self
 
     def __exit__(self, *exc) -> None:
-        builtins.__import__ = self._real_import
+        try:
+            sys.meta_path.remove(self._finder)
+        except ValueError:  # pragma: no cover - already removed
+            pass
         for name in GUARDED_MODULES:
             sys.modules.pop(name, None)
         if self._saved_module is not None:
@@ -65,6 +83,13 @@ class TestImportsWithoutResource(unittest.TestCase):
         with _BlockResource():
             with self.assertRaises(ImportError):
                 importlib.import_module("resource")
+
+    def test_the_block_also_defeats_a_plain_import_statement(self) -> None:
+        """Both import paths must be blocked, not just the one we happened
+        to use first."""
+        with _BlockResource():
+            with self.assertRaises(ImportError):
+                import resource  # noqa: F401, PLC0415
 
     def test_guarded_modules_import(self) -> None:
         with _BlockResource():

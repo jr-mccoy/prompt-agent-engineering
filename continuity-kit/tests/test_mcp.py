@@ -12,6 +12,7 @@ Run with:  python -m pytest tests/
 
 from __future__ import annotations
 
+import re
 import shutil
 import sys
 import tempfile
@@ -25,6 +26,13 @@ import continuity  # noqa: E402
 from continuity_kit import cli, mcp_core, mcp_server  # noqa: E402
 
 FIXTURES = REPO_ROOT / "fixtures"
+
+_GENERATED_AT = re.compile(r"generated_at: [^ |>]+")
+
+
+def _without_generated_at(text: str) -> str:
+    """Blank the build-time stamp so two renders can be compared."""
+    return _GENERATED_AT.sub("generated_at: <normalized>", text)
 
 ALL_FIXTURES = [
     "fixture-01-fresh-resume",
@@ -70,7 +78,16 @@ class ResourceParityTests(unittest.TestCase):
         root = root_of(name)
         packet = cli.build_resume_packet(mem_of(name), root)
         expected = cli.render_packet_markdown(packet)
-        self.assertEqual(mcp_core.resource_resume_packet(root), expected)
+        # `generated_at` is now_iso() at build time, so two independently built
+        # packets differ whenever the calls straddle a second boundary. That is
+        # the field working as designed; asserting byte equality across it made
+        # this test fail roughly one run in sixty. What the test is actually
+        # for is parity between the MCP resource and the CLI render, so the
+        # non-reproducible stamp is normalized on both sides.
+        self.assertEqual(
+            _without_generated_at(mcp_core.resource_resume_packet(root)),
+            _without_generated_at(expected),
+        )
 
     def test_decisions_index_lists_active_ids(self):
         name = "fixture-01-fresh-resume"

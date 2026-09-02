@@ -264,6 +264,38 @@ def write_manifest(snapshot: Snapshot, path: Path) -> str:
     return canonical.write_canonical(path, snapshot.to_json_obj())
 
 
+def load_snapshot(root: Path, manifest_path: Path) -> Snapshot:
+    """Reconstruct a snapshot from an existing manifest.
+
+    Resume needs this. A resumed run must bind to the *same* participant bytes
+    as the run it is continuing, so rebuilding into a fresh directory would be
+    wrong even when it produced an identical tree — and refusing outright would
+    make resume impossible after the first invocation.
+    """
+    import json
+
+    data = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
+    if data.get("schema_version") != SNAPSHOT_SCHEMA:
+        raise UsageError(
+            f"unsupported snapshot manifest schema {data.get('schema_version')!r}"
+        )
+    return Snapshot(
+        root=Path(root).resolve(),
+        commit=str(data["source_commit"]),
+        files=tuple(
+            SnapshotFile(
+                path=str(f["path"]), sha256=str(f["sha256"]),
+                size=int(f["size"]), executable=bool(f["executable"]),
+            )
+            for f in data.get("files", [])
+        ),
+        excluded_prefixes=tuple(data.get("excluded_infrastructure_prefixes") or ()),
+        excluded_count=int(data.get("excluded_file_count", 0)),
+        aggregate_sha256=str(data["aggregate_sha256"]),
+        refused=tuple(data.get("refused_entries") or ()),
+    )
+
+
 # --------------------------------------------------------------------------
 # equivalence and isolation checks (spec §17)
 # --------------------------------------------------------------------------

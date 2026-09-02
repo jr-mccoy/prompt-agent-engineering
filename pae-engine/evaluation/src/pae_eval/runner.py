@@ -35,7 +35,12 @@ from .constants import (
     CONDITION_D,
     HARNESS_VERSION,
 )
-from .errors import CostCeilingError, IsolationError, UsageError
+from .errors import (
+    CostCeilingError,
+    InfrastructureFailure,
+    IsolationError,
+    UsageError,
+)
 from .isolation import IsolationReport, preflight
 from .manifest import (
     RunManifest,
@@ -49,7 +54,13 @@ from .participant import HostLoop, LoopLimits, RetryPolicy
 from .plan import EvaluationPlan
 from .pricing import CostGuard, PricingSnapshot, cost_usd, estimate_trial_cost
 from .providers import get_adapter
-from .snapshot import Snapshot, build_snapshot, resolve_commit
+from .snapshot import (
+    Snapshot,
+    build_snapshot,
+    load_snapshot,
+    resolve_commit,
+)
+from .snapshot import write_manifest as write_snapshot_manifest
 from .trials import TrialRecord, TrialStore, model_config_hash, new_run_id, trial_id
 
 
@@ -129,19 +140,36 @@ def prepare(
     output_dir.mkdir(parents=True, exist_ok=True)
 
     snapshot_root = Path(snapshot_dir) if snapshot_dir else output_dir / "snapshot"
-    if snapshot_root.exists() and any(snapshot_root.iterdir()):
-        # A snapshot is content-addressed; reusing a populated directory would
-        # make the run depend on whatever was left there.
-        raise UsageError(
-            f"snapshot directory is not empty: {snapshot_root}. "
-            "Point --snapshot-dir at a fresh path, or delete it."
-        )
-
+    manifest_path = output_dir / "participant-snapshot.json"
     commit = plan.pae_commit or resolve_commit(Path(repo))
-    snapshot = build_snapshot(
-        Path(repo), snapshot_root, commit=commit,
-        require_clean=(mode == "sealed"),
-    )
+
+    if snapshot_root.exists() and any(snapshot_root.iterdir()):
+        # A populated snapshot directory is either a resume or a mistake. It is
+        # a resume when a manifest sits beside it describing this very tree at
+        # this very commit — in which case reusing it is not just allowed but
+        # required, since a resumed run must bind to the same participant bytes
+        # as the run it continues. Anything else is refused: a snapshot is
+        # content-addressed, and inheriting whatever was left in a directory
+        # would make the run depend on it.
+        if not manifest_path.exists():
+            raise UsageError(
+                f"snapshot directory is not empty and has no manifest beside it: "
+                f"{snapshot_root}. Point --snapshot-dir at a fresh path, or "
+                "delete it."
+            )
+        snapshot = load_snapshot(snapshot_root, manifest_path)
+        if snapshot.commit != commit:
+            raise UsageError(
+                f"existing snapshot is at commit {snapshot.commit[:12]} but this "
+                f"run targets {commit[:12]}. A different commit is a different "
+                "experiment — use a fresh --output-dir."
+            )
+    else:
+        snapshot = build_snapshot(
+            Path(repo), snapshot_root, commit=commit,
+            require_clean=(mode == "sealed"),
+        )
+        write_snapshot_manifest(snapshot, manifest_path)
 
     plan_hash = plan.sha256
     schedule = build_schedule(
@@ -174,6 +202,42 @@ def prepare(
         plan=plan, benchmark=benchmark, snapshot=snapshot, schedule=schedule,
         pricing=pricing, output_dir=output_dir, run_id=run_id,
         benchmark_root=benchmark_root, mode=mode,
+    )
+
+
+def _failed_record(*, scheduled: Any, task: Any, model: Any, context: RunContext,
+                   plan: EvaluationPlan, benchmark: Benchmark, state: str,
+                   error_class: str, detail: str, started_at: str,
+                   ended_at: str) -> TrialRecord:
+    """A trial record for a failure that happened before the model was reached.
+
+    Written rather than skipped: §81 requires every planned trial to be
+    accounted for, and a silently absent trial is indistinguishable from one
+    that was never scheduled.
+    """
+    from .pae_conditions import mcp_sdk_version
+
+    return TrialRecord(
+        trial_id=scheduled.trial_id, run_id=context.run_id,
+        task_id=task.task_id, condition=scheduled.condition,
+        repeat_index=scheduled.repeat_index, attempt_no=1,
+        evaluation_version=plan.evaluation_version,
+        benchmark_version=benchmark.version,
+        benchmark_sha256=benchmark.sha256, plan_sha256=plan.sha256,
+        participant_provider=scheduled.provider,
+        participant_model=scheduled.model,
+        model_parameters=model.to_json_obj(),
+        model_parameters_sha256=model.sha256,
+        system_prompt_sha256="", task_sha256=task.sha256,
+        pae_commit=context.snapshot.commit, pae_dirty=False,
+        engine_version=engine_version(), mcp_sdk_version=mcp_sdk_version(),
+        tool_catalog_sha256="",
+        participant_snapshot_sha256=context.snapshot.aggregate_sha256,
+        pricing_snapshot_sha256=context.pricing.sha256,
+        started_at=started_at, ended_at=ended_at, latency_ms=0.0,
+        state=state, stop_reason=error_class, final_answer="",
+        observable_tool_calls=[], usage={}, error_class=error_class,
+        retry_state={"detail": detail[:500]}, estimated_cost_usd=0.0,
     )
 
 
@@ -453,10 +517,8 @@ def execute(
     )
     manifest.write(context.output_dir / "run-manifest.json")
     context.schedule.write(context.output_dir / "trial-schedule.json")
-    from .snapshot import write_manifest as _write_snapshot_manifest
-
-    _write_snapshot_manifest(context.snapshot,
-                            context.output_dir / "participant-snapshot.json")
+    # participant-snapshot.json was written by prepare(), which is also what
+    # lets a resumed run rebind to the same bytes rather than rebuilding.
 
     limits = LoopLimits(
         max_tool_turns=int(plan.limits.get("max_tool_turns", 40)),
@@ -499,9 +561,31 @@ def execute(
             if scheduled.condition == CONDITION_D:
                 # One process per trial: a server that died mid-task must not
                 # carry state into the next one.
+                #
+                # A server that fails to start is one trial's infrastructure
+                # failure, not the end of the run. Letting it propagate would
+                # abandon every remaining trial — including the other three
+                # conditions, which do not need MCP at all — over a problem
+                # confined to this arm.
                 session = factory.mcp_session()
-                session.start()
-                session.assert_expected_tools()
+                try:
+                    session.start()
+                    session.assert_expected_tools()
+                except (InfrastructureFailure, IsolationError, UsageError) as exc:
+                    session.close()
+                    summary.attempted += 1
+                    error_class = getattr(exc, "error_class", "mcp_process_died")
+                    summary.failures_by_class[error_class] = (
+                        summary.failures_by_class.get(error_class, 0) + 1
+                    )
+                    now = _utc_now()
+                    store.append(_failed_record(
+                        scheduled=scheduled, task=task, model=model,
+                        context=context, plan=plan, benchmark=benchmark,
+                        state="infrastructure_failed", error_class=error_class,
+                        detail=str(exc), started_at=now, ended_at=now,
+                    ))
+                    continue
             elif scheduled.condition == CONDITION_B:
                 raw_tools = factory.raw_tools()
 
