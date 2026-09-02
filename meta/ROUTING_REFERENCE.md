@@ -256,7 +256,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
 
 - **Bug bounty hunting (offensive, AUTHORIZED, live targets)** → `domain-software-engineering/bug-bounty/` (20 prompts + README)
   - **Distinct from `analysis/security/`:** that directory is DEFENSIVE (review code you own); this is the bug-bounty HUNTER workflow — black-box testing of in-scope assets you've been granted permission to test, ending in a paid disclosure report.
-  - **Load-bearing convention** (see [README](domain-software-engineering/bug-bounty/README.md)): every prompt enforces an authorization/scope gate + responsible disclosure (no out-of-scope, destructive, DoS, or mass-targeting content).
+  - **Load-bearing convention** (see [README](../domain-software-engineering/bug-bounty/README.md)): every prompt enforces an authorization/scope gate + responsible disclosure (no out-of-scope, destructive, DoS, or mass-targeting content).
   - Example: "I'm new to bug bounties — orient me + first 90 days" → `bug-bounty/bugbounty_getting_started_orientation.md`
   - Example: "Parse a program's scope into a compliant test plan" → `bug-bounty/bugbounty_program_scope_analyzer.md`
   - Example: "Which programs are worth my time (ROI)?" → `bug-bounty/bugbounty_program_selection_roi.md`
@@ -332,7 +332,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "React Native performance" → `mobile_react_native_optimization.md`
 
 ### Frontend Development
-**Domain guide:** [`domain-frontend-development/README.md`](domain-frontend-development/README.md) — 47 prompts across 18 categories (frameworks + cross-cutting craft + build tooling + quality concerns). All Tier 1, fully cross-referenced via `related_prompts`.
+**Domain guide:** [`domain-frontend-development/README.md`](../domain-frontend-development/README.md) — 47 prompts across 18 categories (frameworks + cross-cutting craft + build tooling + quality concerns). All Tier 1, fully cross-referenced via `related_prompts`.
 
 **Frameworks:**
 - **React** → `domain-frontend-development/react/` (6): component patterns, hooks, state, testing, performance, `frontend_react_server_components_streaming.md` (RSC & streaming SSR)
@@ -592,7 +592,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "After-action report" → `decisiondoc_after_action_report.md`
 
 ### Reasoning Craft (Domain-General Reasoning Tools)
-- **Single named reasoning moves, forecasting practice, systems thinking, epistemics** → `domain-reasoning-craft/` (41 prompts; see [README](domain-reasoning-craft/README.md)). Content-agnostic: the same move works on product, policy, or personal questions. Every prompt carries a machine-readable `reasoning:` frontmatter block (styles, stakes, horizon, uncertainty, mode) indexed in PROMPT_INDEX.json.
+- **Single named reasoning moves, forecasting practice, systems thinking, epistemics** → `domain-reasoning-craft/` (41 prompts; see [README](../domain-reasoning-craft/README.md)). Content-agnostic: the same move works on product, policy, or personal questions. Every prompt carries a machine-readable `reasoning:` frontmatter block (styles, stakes, horizon, uncertainty, mode) indexed in PROMPT_INDEX.json.
   - **Reasoning moves** → `reasoning-moves/` (14): Bayesian update, abduction, analogy, counterfactual, Fermi, first principles, inversion, steelman, dialectical synthesis, Toulmin map, claim/evidence/warrant audit, premise audit, reference-class forecast, outside-vs-inside view.
   - **Forecasting** → `forecasting/` (9): probabilistic question design, decomposition, base rates, scenario probabilities, signal-vs-noise triage, what-would-change-my-mind tripwires, calibration self-audit, Brier tracker design, long-horizon radical uncertainty.
   - **Systems** → `systems/` (8): feedback loop identification, causal loop diagrams, stock-and-flow models, archetype recognition, dependency maps, leverage points (Meadows), unintended consequence scan, intervention pre-mortem.
@@ -643,7 +643,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Map stakeholders / coalitions / blockers / swing actors" → `policy_stakeholder_coalition_map.md`
   - Example: "Assess implementation feasibility (authority, capacity, funding, failure modes)" → `policy_implementation_feasibility.md`
 ### Negotiation (Practitioner Library — 46 prompts across 8 subdirectories)
-- **Negotiation as a working discipline across the full arc** → `domain-negotiation/` — see [README](domain-negotiation/README.md). **Entry point:** run `preparation/negotiation_prep_depth_triage.md` first; it scores the negotiation into one of four prep tiers and emits an ordered prompt sequence, so the domain is consumed by tier rather than exhaustively.
+- **Negotiation as a working discipline across the full arc** → `domain-negotiation/` — see [README](../domain-negotiation/README.md). **Entry point:** run `preparation/negotiation_prep_depth_triage.md` first; it scores the negotiation into one of four prep tiers and emits an ordered prompt sequence, so the domain is consumed by tier rather than exhaustively.
 - **Convention:** the domain keeps one `negotiation_` prefix across all subdirectories (the `domain-legal/` precedent), with the single exception of `difficult-conversations/difficultconvo_*.md`, a distinct audience track for relationship-primary conversations where the goal is to be understood rather than to claim value. `uncertainty: ambiguity` is a domain invariant. One prompt (`channels/negotiation_cross_cultural.md`) carries the domain's only explicit guard: it refuses to generate or accept generalizations about how people of a nationality, ethnicity, or region negotiate.
   - **Preparation** → `preparation/` (10): prep-depth triage, BATNA, leverage audit (eight sources, not just alternatives), interest mapping, package/MESO design, opening offer, concession ladder, counterpart simulation, information plan, rehearsal
   - **At the table** → `at-the-table/` (7): live question sequencing, reading signals & testing bluffs, hard-bargainer defense, impasse diagnosis (five types), authority & mandate limits, emotional flooding, closing & final concession
@@ -653,10 +653,10 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - **Contexts** → `contexts/` (8): salary/raise, vendor buy-side, freelance rates, sales objections, equity split, internal budget, customer escalation, major purchase
   - **Difficult conversations** → `difficult-conversations/` (5): pre-brief, post-review, delivering bad news, receiving hard feedback, saying no upward
   - **Craft** → `craft/` (4): style self-assessment, deliberate practice loop, pattern library, ethics line
-  - **Expansion roadmap:** [`domain-negotiation/EXPANSION_ROADMAP.md`](domain-negotiation/EXPANSION_ROADMAP.md) — includes an "Explicitly not gaps" table recording which adjacent prompts (mediation prep, boundary scripts, stakeholder navigation, offer evaluation, live role-play) are deliberately cross-linked rather than duplicated.
+  - **Expansion roadmap:** [`domain-negotiation/EXPANSION_ROADMAP.md`](../domain-negotiation/EXPANSION_ROADMAP.md) — includes an "Explicitly not gaps" table recording which adjacent prompts (mediation prep, boundary scripts, stakeholder navigation, offer evaluation, live role-play) are deliberately cross-linked rather than duplicated.
 
 ### Psy-Ops (Cognitive Security — 32 prompts, ANALYTIC / DEFENSIVE ONLY)
-- **Recognizing, analyzing, and defending against psychological influence** — from a single manipulative message to a coordinated campaign to a controlling relationship → `domain-psy-ops/` — see [README](domain-psy-ops/README.md).
+- **Recognizing, analyzing, and defending against psychological influence** — from a single manipulative message to a coordinated campaign to a controlling relationship → `domain-psy-ops/` — see [README](../domain-psy-ops/README.md).
 - **Load-bearing convention (output-side, not a permission gate).** The `bug-bounty/` precedent does not transfer: a bounty program is a verifiable grant of permission from a consenting target, whereas an influence operation's targets by definition do not know it is happening. So every prompt's deliverable is an **assessment, a defense, or a resilience plan** — never propaganda, covert personas, inauthentic engagement, targeting packages, or CIB playbooks (red-team prompts emit findings and countermeasures only). Supporting rules: **no manufactured accusations** (confidence-graded assessments with a mandatory alternative-explanation pass, attached to behavior and content — never naming a private individual as a covert operative), **no fabricated evidence** (`[VERIFY]`, never a plausible fill-in), **attribution humility** (low/moderate/high with stated basis; "unattributed" is the default), **safety routing** (no hotline number or service name is ever stated from memory — always verify from an official source), and **counter-messaging stays overt** (named sender, truthful, attributed).
 - **The failure mode the domain is designed against:** paranoid over-attribution — organic convergence read as coordination, sincere belief read as a script, incompetence read as deception. Every False-Positive Prevention block targets it.
 - **Route by what you are holding:** one artifact → `technique-analysis/`; a pattern across accounts/outlets/weeks → `influence-operations/`; something aimed at you or someone you love → `personal-defense/`; your org or community → `organizational-red-team/`; you need to respond publicly → `counter-messaging/`; you are teaching or studying a case → `case-studies-taxonomies/`.
@@ -691,10 +691,10 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Reconcile the competing technique taxonomies" → `case-studies-taxonomies/psyops_technique_taxonomy_reference.md`
   - Example: "Study a documented historical operation" → `case-studies-taxonomies/psyops_historical_operation_case_study.md`
   - Example: "Teach media literacy without producing cynics" → `case-studies-taxonomies/psyops_media_literacy_curriculum_designer.md`
-- **Boundary:** general fallacy/source/evidence work → `domain-reasoning-craft/epistemic/`; persuasion-vs-manipulation inside a deal → `domain-negotiation/craft/negotiation_ethics_line.md`; therapy and the aftermath of abuse → `domain-psychology/`; technical phishing defense → `domain-software-engineering/analysis/security/`; commercial persuasion craft → `domain-advertising/`. Full boundary table + permanently-out-of-scope list: [`EXPANSION_ROADMAP.md`](domain-psy-ops/EXPANSION_ROADMAP.md).
+- **Boundary:** general fallacy/source/evidence work → `domain-reasoning-craft/epistemic/`; persuasion-vs-manipulation inside a deal → `domain-negotiation/craft/negotiation_ethics_line.md`; therapy and the aftermath of abuse → `domain-psychology/`; technical phishing defense → `domain-software-engineering/analysis/security/`; commercial persuasion craft → `domain-advertising/`. Full boundary table + permanently-out-of-scope list: [`EXPANSION_ROADMAP.md`](../domain-psy-ops/EXPANSION_ROADMAP.md).
 
 ### Written Advocacy (Layperson Self-Advocacy Letters — 35 prompts)
-- **A person acting for themselves who needs something from a company, agency, insurer, school, or landlord — in writing, dated, on the record** → `domain-written-advocacy/` — see [README](domain-written-advocacy/README.md). Every prompt produces the user's **own first-person letter**, built only from facts they supply, designed to still make sense months later to a regulator, an attorney, or a judge.
+- **A person acting for themselves who needs something from a company, agency, insurer, school, or landlord — in writing, dated, on the record** → `domain-written-advocacy/` — see [README](../domain-written-advocacy/README.md). Every prompt produces the user's **own first-person letter**, built only from facts they supply, designed to still make sense months later to a regulator, an attorney, or a judge.
 - **Why this is separate from `domain-legal/`.** `domain-legal/personal-self-advocacy/` covers adversarial harm (harassment, defamation, IP theft, identity theft, debt collection) and carries a mandatory crisis Safety Block on every prompt. That posture is right there and wrong for a gym-membership cancellation. This domain covers the ordinary life admin that merely works better in writing, and routes to `domain-legal/` at the point a matter turns adversarial.
 - **Four load-bearing conventions.** (1) **Written-record-first** — every output is dated, names one specific ask, sets a response window, and closes with a **Sending Log** capturing delivery method and proof of receipt. (2) **No invented law** — the domain's highest fabrication risk: no statute, article, section number, regulation, deadline, or penalty is ever asserted from memory (GDPR articles, CCPA/FCRA sections, state deposit and lemon-law statutes are the named hazards); where a user has personally verified a law applies, it appears as *their own stated basis in their own words*. (3) **No named bodies from memory** — regulators, ombudsmen, credit bureaus, safety authorities, data protection authorities, and hotlines are never named and their addresses/URLs never supplied; each is flagged `[VERIFY: identify the correct body from an official source]`. (4) **Proportionate tone ladder** — firm and neutral by default; legal-threat and cease-and-desist language is **refused** and routed to an attorney.
 - **Cross-cutting spine** → `cross-cutting/` (6): request-letter architect (flagship), channel & record strategy, escalation ladder, correspondence log, response analyzer, follow-up tracker.
@@ -730,7 +730,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
 
 ### Idea-to-Product Pipeline (full idea → shippable software → AI-agent build)
 - **End-to-end pipeline** for taking a software/platform idea from raw brainstorm to a Claude-Code-ready build package → `domain-idea-to-product/` (~63 prompts in 11 stages, self-contained directory; copies of upstream prompts + 8 net-new gap-fill prompts + master orchestrator).
-- **Local domain guide:** [`domain-idea-to-product/README.md`](domain-idea-to-product/README.md). Pipeline flow: [`PIPELINE_OVERVIEW.md`](domain-idea-to-product/PIPELINE_OVERVIEW.md).
+- **Local domain guide:** [`domain-idea-to-product/README.md`](../domain-idea-to-product/README.md). Pipeline flow: [`PIPELINE_OVERVIEW.md`](../domain-idea-to-product/PIPELINE_OVERVIEW.md).
 - **Three modes:**
   - **Guided** — start with `domain-idea-to-product/orchestrator_idea_to_product.md`; it interviews you, classifies your starting stage, recommends ≤3 next prompts, critiques each output against the stage's verification checklist, enforces hard gates before stages 7 and 10.
   - **Manual** — walk `PIPELINE_OVERVIEW.md` yourself; pick stage prompts as needed.
@@ -751,7 +751,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
 - **Five-phase, gated, multi-perspective analysis systems** for working through hard things one-on-one with an AI at a depth that compensates for the absence of a human team. Pick by terminal artifact, not topic.
 - Shared backbone: Frame → Decompose → Multi-perspective (6 core lenses + scope-specific) → Stress-test → Synthesize. `AskUserQuestion` is the primary I/O at every gate.
 - **Each scope ships in two equivalent versions:** a **rigorous** version (`/deepthink-*`) using business / engineering vocabulary, and a **plain-English** version (`/deepthink-*-plain`) for non-technical users. Same rigor, same five phases, same six core perspectives, same output-format requirements — only vocabulary and framing differ. Recommend the plain version for parents, teachers, freelancers, small business owners, or anyone unfamiliar with terms like "orthogonal," "load-bearing assumption," "tripwire," or "critical path."
-- **All four prompts + slash commands** → `domain-deep-analysis/` (see [`domain-deep-analysis/README.md`](domain-deep-analysis/README.md))
+- **All four prompts + slash commands** → `domain-deep-analysis/` (see [`domain-deep-analysis/README.md`](../domain-deep-analysis/README.md))
   - Example: "Diagnose what's actually going on with X" (no fixed deliverable) → `deepthink_problem_analysis.md` / `/deepthink-problem` (plain English: `deepthink_problem_analysis_plain.md` / `/deepthink-problem-plain`)
   - Example: "Decide between A or B with reversibility + tripwires" → `deepthink_decision.md` / `/deepthink-decision` (plain English: `deepthink_decision_plain.md` / `/deepthink-decision-plain`)
   - Example: "Sequence the path from here to a chosen goal" → `deepthink_plan.md` / `/deepthink-plan` (plain English: `deepthink_plan_plain.md` / `/deepthink-plan-plain`)
@@ -830,12 +830,12 @@ When users need **help with tasks** (not asking for new prompts), map their requ
 
 ## Non-Coding Domain Mapping
 
-> **For building NEW non-coding prompts:** Use [NON_CODING_QUICK_START.md](NON_CODING_QUICK_START.md)
+> **For building NEW non-coding prompts:** Use [NON_CODING_QUICK_START.md](../NON_CODING_QUICK_START.md)
 
 When users need help with **non-coding tasks**, first determine the domain:
 
 ### Education & Teaching (267 prompts, 3 audience tracks)
-**Route by who is holding the prompt**, then by subdirectory — see [`domain-education-teaching/README.md`](domain-education-teaching/README.md). If it produces something you hand to students it is `instructor/`; something you hand to a committee, `program/`; something only you will use to learn, `learner/`. One prefix per track (`teaching_`, `program_`, `learn_`); the subdirectory carries the finer signal.
+**Route by who is holding the prompt**, then by subdirectory — see [`domain-education-teaching/README.md`](../domain-education-teaching/README.md). If it produces something you hand to students it is `instructor/`; something you hand to a committee, `program/`; something only you will use to learn, `learner/`. One prefix per track (`teaching_`, `program_`, `learn_`); the subdirectory carries the finer signal.
 
 - **`instructor/` (104)** — teacher, lecturer, corporate trainer. `lesson-planning/` (6), `explanation-craft/` (9), `response-cycle/` (5), `assessment-items/` (8), `assessment-design/` (9), `assessment-analysis/` (7), `grading-feedback/` (8), `reporting-communication/` (2), `student-support/` (8), `classroom-ops/` (3), `ed-tech/` (6), `higher-ed-corporate/` (11), `subject-pedagogy/` (22, split `ela/` `math/` `science/` `social-studies/` `world-languages/`)
   - Example: "I need a lesson for Tuesday" → `instructor/lesson-planning/teaching_lesson_plan_generator.md`
@@ -854,7 +854,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "I'm 38 and going back to school" → `learner/adult-learner/learn_cold_start_return_to_school.md`
   - Example: "Just tell me what to run, in what order" → `learner/guides/` (pick audience, then workflow)
 - **Boundary:** self-directed skill acquisition with no institution → `domain-learning/`; programming → `domain-learning-coding/`; health-professions education incl. its own learner track → `domain-medical-education/`; teaching research methods → `domain-science/teaching-research-methods/`; the parent's side of school → `domain-parenting/`.
-  - **Domain guide:** [domain-education-teaching/README.md](domain-education-teaching/README.md) · **Craft reference & templates:** [field_guide.md](domain-education-teaching/field_guide.md) · **Roadmap:** [EXPANSION_ROADMAP.md](domain-education-teaching/EXPANSION_ROADMAP.md)
+  - **Domain guide:** [domain-education-teaching/README.md](../domain-education-teaching/README.md) · **Craft reference & templates:** [field_guide.md](../domain-education-teaching/field_guide.md) · **Roadmap:** [EXPANSION_ROADMAP.md](../domain-education-teaching/EXPANSION_ROADMAP.md)
 
 ### Curriculum Design & Program-Level Educational Planning (2026-05-15)
 - **Program-level curriculum, standards alignment, outcomes, accreditation, faculty development, program evaluation** → `domain-education-teaching/` subdirectories (45 new prompts):
@@ -911,7 +911,7 @@ When users need help with **non-coding tasks**, first determine the domain:
     - Example: "Program competency framework (ACGME six core competencies)" → `domain-medical-education/educator-curriculum-design/curric_program_competency_framework_acgme.md`
 
 ### Creative Writing (Adult/Mature — 27 prompts across 7 subdirs)
-- **Fiction, essays, poetry, scripts (adult)** → `domain-creative-writing/` — see [README](domain-creative-writing/README.md) for the full routing table. **Audience boundary:** kids/teens → `domain-childrens-writing/`; professional/business prose → `domain-professional-writing/`.
+- **Fiction, essays, poetry, scripts (adult)** → `domain-creative-writing/` — see [README](../domain-creative-writing/README.md) for the full routing table. **Audience boundary:** kids/teens → `domain-childrens-writing/`; professional/business prose → `domain-professional-writing/`.
   - **Fiction craft** → `domain-creative-writing/fiction/`: story structure, novel outlining, short story, worldbuilding, scene construction, POV & narrative distance, pacing & tension
   - **Cross-cutting craft tools** → `domain-creative-writing/craft-tools/`: character, voice, dialogue, revision, beta-reader synthesis, show-don't-tell, description/sensory setting, theme & motif, opening pages/hook, endings/resolution
   - **Genre workshops** → `domain-creative-writing/genre-workshops/`: multi-genre overview, mystery/crime craft, speculative (SF/fantasy) craft
@@ -919,11 +919,11 @@ When users need help with **non-coding tasks**, first determine the domain:
   - **Poetry** → `domain-creative-writing/poetry/`: poetic forms & craft, imagery & figurative language
   - **Script & stage** → `domain-creative-writing/script-stage/`: screenplay/teleplay/stage framework
   - **Publishing & career** → `domain-creative-writing/publishing-career/`: query letter & synopsis, pitch/logline/comp titles (no-fabrication guard on agents, comps, sales)
-  - **Domain guide:** [domain-creative-writing/README.md](domain-creative-writing/README.md)
+  - **Domain guide:** [domain-creative-writing/README.md](../domain-creative-writing/README.md)
 
 ### Children's Writing (Authoring for Young Readers)
 - **Writing kid-friendly material — children's fiction & nonfiction** for aspiring/working authors → `domain-childrens-writing/` (22 prompts across 5 subdirs: `fiction-workshops/`, `nonfiction-workshops/`, `craft-tools/`, `representation-collaboration/`, `publishing-business/`). This is about *creating content for child audiences*, NOT teaching kids (`domain-education-teaching/`) or talking to your own child (`domain-parenting/`). Core conventions: child agency, no preaching, respect the reader, trust the illustrator, read-aloud rhythm, strict no-fabrication for nonfiction; extended with **representation humility** (never a substitute for a sensitivity reader / own-voices author), **publishing anti-fabrication** (no invented comps/agents/figures — flag VERIFY), and an **age boundary** (board books 0-3 → upper-MG/young-teen crossover 11-14; mature teen YA → `domain-creative-writing/`).
-  - **Domain guide:** [domain-childrens-writing/README.md](domain-childrens-writing/README.md)
+  - **Domain guide:** [domain-childrens-writing/README.md](../domain-childrens-writing/README.md)
   - **Fiction forms:** "picture book (2-8)" → `fiction-workshops/childrens_picture_book_workshop.md`; "board / concept / ABC / counting book (0-3)" → `fiction-workshops/childrens_board_concept_book_workshop.md`; "early reader / chapter book (5-10)" → `fiction-workshops/childrens_early_reader_chapter_book_workshop.md`; "middle-grade novel (8-12)" → `fiction-workshops/childrens_middle_grade_fiction_workshop.md`; "upper-MG / young-teen crossover (11-14)" → `fiction-workshops/childrens_ya_crossover_workshop.md`; "novel in verse" → `fiction-workshops/childrens_verse_novel_workshop.md`; "graphic novel / comic for kids" → `fiction-workshops/childrens_graphic_novel_comics_workshop.md`
   - **Nonfiction:** "kids' biography / true-history story" → `nonfiction-workshops/childrens_narrative_nonfiction_workshop.md`; "STEM / concept / how-it-works book" → `nonfiction-workshops/childrens_expository_stem_concept_workshop.md`
   - **Craft tools:** "strengthen my opening / first line" → `craft-tools/childrens_opening_pages_hook.md`; "fix my kid dialogue" → `craft-tools/childrens_kid_dialogue_workshop.md`; "build / audit my character" → `craft-tools/childrens_character_creation.md`; "revise my draft (layered pass)" → `craft-tools/childrens_revision_self_edit_pass.md`; "hit a specific age / reading level" → `craft-tools/childrens_age_reading_level_calibrator.md`; "fix the meter / rhyme" → `craft-tools/childrens_read_aloud_rhythm_rhyme_polish.md`; "handle death / divorce / hard topics" → `craft-tools/childrens_sensitive_topics_framing.md`
@@ -949,7 +949,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "Nurse SBAR escalation" → `nursing_sbar_clinical_escalation.md`
   - Example: "Medication admin safety" → `nursing_medication_administration_safety.md`
   - Example: "SDOH screen response" → `allied_health_sdoh_screening_response.md`
-  - **Domain guide:** [domain-healthcare-clinical/](domain-healthcare-clinical/)
+  - **Domain guide:** [domain-healthcare-clinical/](../domain-healthcare-clinical/)
 
 - **Medical education (HPE) — clinical educators, faculty, preceptors, curriculum designers** → `domain-medical-education/` (~22 prompts)
   - Example: "Write a PBL case" → `case-scenario-design/meded_pbl_case_writer.md`
@@ -1008,7 +1008,7 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### Research & Academic
 - **Literature review, methodology, analysis** → `domain-research-academic/` (15 prompts + framework & field guide)
-  - **Domain guide:** [domain-research-academic/](domain-research-academic/) — templates, quality indicators, and field guide for research prompt authoring
+  - **Domain guide:** [domain-research-academic/](../domain-research-academic/) — templates, quality indicators, and field guide for research prompt authoring
   - Example: "Turn a topic into researchable questions" → `research_question_formulation.md`
   - Example: "Plan a literature review" → `research_literature_review_plan.md`
   - Example: "Design a defensible search strategy" → `research_search_strategy_designer.md`
@@ -1026,59 +1026,59 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "Draft a research memo from findings" → `research_research_memo_drafter.md`
 
 ### Science (Practitioner Library — the *doing* of bench / field / computational science)
-- **Working-scientist research practice** → `domain-science/` (**141 prompts — the Phase 2 roadmap is fully built across all 12 subdirectories**: Phase 1 + Phase 2A `methods-foundations/` 17 + Phase 2B `bench-and-wetlab/` 12 + Phase 2C `computational/` 14 + Phase 2D `statistics/` 12 + Phase 2E `writing-communication/` 14 + Phase 2F `peer-review/` 6 + Phase 2G `grants-funding/` 10 + Phase 2H `ethics-integrity/` 8 + Phase 2I `lab-operations-mentorship/` 10 + Phase 2K `public-engagement/` 8 + Phase 2L `teaching-research-methods/` 6 + Phase 2J `disciplines/` 24). **Boundary:** generic, cross-field research methodology (lit-search strategy, qualitative coding, survey instruments) stays in `domain-research-academic/`; **scientific judgment specific to a bench / field / instrument / discipline lives here.** See [`domain-science/README.md`](domain-science/README.md) and [`domain-science/EXPANSION_ROADMAP.md`](domain-science/EXPANSION_ROADMAP.md).
-  - **Methods foundations** → `domain-science/methods-foundations/` (17): question refinement, preregistration / Registered Reports, power & sample size (frequentist + Bayesian), controls, blinding/randomization, confound & validity audits, replicability premortem, reproducibility (FAIR) self-audit, methods-section drafter, methodology & qual-vs-quant decision trees + the 3 relocated Phase 1 prompts. See [`methods-foundations/README.md`](domain-science/methods-foundations/README.md).
+- **Working-scientist research practice** → `domain-science/` (**141 prompts — the Phase 2 roadmap is fully built across all 12 subdirectories**: Phase 1 + Phase 2A `methods-foundations/` 17 + Phase 2B `bench-and-wetlab/` 12 + Phase 2C `computational/` 14 + Phase 2D `statistics/` 12 + Phase 2E `writing-communication/` 14 + Phase 2F `peer-review/` 6 + Phase 2G `grants-funding/` 10 + Phase 2H `ethics-integrity/` 8 + Phase 2I `lab-operations-mentorship/` 10 + Phase 2K `public-engagement/` 8 + Phase 2L `teaching-research-methods/` 6 + Phase 2J `disciplines/` 24). **Boundary:** generic, cross-field research methodology (lit-search strategy, qualitative coding, survey instruments) stays in `domain-research-academic/`; **scientific judgment specific to a bench / field / instrument / discipline lives here.** See [`domain-science/README.md`](../domain-science/README.md) and [`domain-science/EXPANSION_ROADMAP.md`](../domain-science/EXPANSION_ROADMAP.md).
+  - **Methods foundations** → `domain-science/methods-foundations/` (17): question refinement, preregistration / Registered Reports, power & sample size (frequentist + Bayesian), controls, blinding/randomization, confound & validity audits, replicability premortem, reproducibility (FAIR) self-audit, methods-section drafter, methodology & qual-vs-quant decision trees + the 3 relocated Phase 1 prompts. See [`methods-foundations/README.md`](../domain-science/methods-foundations/README.md).
   - Example: "Refine a vague idea into a testable, scoped question (FINER/PICO)" → `methods-foundations/science_research_question_refiner.md`
   - Example: "Draft an OSF preregistration / Stage-1 Registered Report" → `methods-foundations/science_preregistration_drafter.md` / `science_registered_report_stage1_drafter.md`
   - Example: "Power & sample size with assumptions surfaced + sensitivity grid" → `methods-foundations/science_power_and_sample_size_calculator.md`
   - Example: "Design controls / blinding & randomization" → `methods-foundations/science_negative_and_positive_control_designer.md` / `science_blinding_and_randomization_protocol.md`
   - Example: "Confound & bias audit / Cook-Campbell four-validity walkthrough" → `methods-foundations/science_confound_and_bias_audit.md` / `science_threats_to_validity_walkthrough.md`
   - Example: "Replicability premortem / FAIR reproducibility self-audit" → `methods-foundations/science_replicability_premortem.md` / `science_reproducibility_self_audit.md`
-  - **Statistics** → `domain-science/statistics/` (12): test selection, effect-size + uncertainty reporting, multiple-comparisons strategy, results interpretation, pre-specified analysis plan (ICH E9 estimands), outlier handling, p-hacking/forking-paths self-check, Bayesian analysis plan, mixed models, survival analysis, causal inference (DAG/IV/RDD/DiD), PRISMA meta-analysis. See [`statistics/README.md`](domain-science/statistics/README.md).
+  - **Statistics** → `domain-science/statistics/` (12): test selection, effect-size + uncertainty reporting, multiple-comparisons strategy, results interpretation, pre-specified analysis plan (ICH E9 estimands), outlier handling, p-hacking/forking-paths self-check, Bayesian analysis plan, mixed models, survival analysis, causal inference (DAG/IV/RDD/DiD), PRISMA meta-analysis. See [`statistics/README.md`](../domain-science/statistics/README.md).
   - Example: "Which statistical test, with assumption checks?" → `statistics/science_statistical_test_selector.md`
   - Example: "FWER vs FDR vs hierarchical multiplicity decision" → `statistics/science_multiple_comparisons_strategy.md`
   - Example: "Lock a pre-specified analysis plan / SAP with estimands" → `statistics/science_pre_specified_analysis_plan.md`
   - Example: "Mixed models / survival / causal-inference (DAG) design" → `statistics/science_mixed_models_design.md`
   - Example: "PRISMA-aligned meta-analysis protocol" → `statistics/science_meta_analysis_protocol.md`
-  - **Writing & communication** → `domain-science/writing-communication/` (14): IMRaD / figure-first drafting, abstract compression, figure/table legend + design critique, journal selection, cover letter, point-by-point reviewer response, post-rejection appeal, conference abstract, poster spec, preprint release plan, lay summary. Drafts only from user-supplied results (no fabricated data/citations/journal metrics). See [`writing-communication/README.md`](domain-science/writing-communication/README.md).
+  - **Writing & communication** → `domain-science/writing-communication/` (14): IMRaD / figure-first drafting, abstract compression, figure/table legend + design critique, journal selection, cover letter, point-by-point reviewer response, post-rejection appeal, conference abstract, poster spec, preprint release plan, lay summary. Drafts only from user-supplied results (no fabricated data/citations/journal metrics). See [`writing-communication/README.md`](../domain-science/writing-communication/README.md).
   - Example: "Draft an IMRaD / figure-first manuscript from my results" → `writing-communication/science_imrad_paper_drafter.md` / `science_figure_first_paper_skeleton.md`
   - Example: "Write a point-by-point response to reviewers" → `writing-communication/science_response_to_reviewers.md`
   - Example: "Pick a target journal / write a cover letter" → `writing-communication/science_journal_target_selector.md` / `science_cover_letter_to_editor.md`
   - Example: "Plan a preprint release / write a lay summary" → `writing-communication/science_preprint_release_plan.md` / `science_lay_summary_translator.md`
-  - **Bench / wet lab** → `domain-science/bench-and-wetlab/` (12): lab-protocol drafter + 5-Whys optimizer, reagent/dilution calculator, buffer designer, cell-culture (authentication + mycoplasma), IACUC (ARRIVE 2.0 + 3Rs) / IRB (Belmont/Common Rule) / biosafety (RG/BSL + IBC scaffold, governance-level) protocols, sample chain-of-custody, failed-experiment post-mortem, ELN entry writer, reagent-validation workflow. Oversight prompts draft + route to the committee (never approve). See [`bench-and-wetlab/README.md`](domain-science/bench-and-wetlab/README.md).
+  - **Bench / wet lab** → `domain-science/bench-and-wetlab/` (12): lab-protocol drafter + 5-Whys optimizer, reagent/dilution calculator, buffer designer, cell-culture (authentication + mycoplasma), IACUC (ARRIVE 2.0 + 3Rs) / IRB (Belmont/Common Rule) / biosafety (RG/BSL + IBC scaffold, governance-level) protocols, sample chain-of-custody, failed-experiment post-mortem, ELN entry writer, reagent-validation workflow. Oversight prompts draft + route to the committee (never approve). See [`bench-and-wetlab/README.md`](../domain-science/bench-and-wetlab/README.md).
   - Example: "Draft / troubleshoot a bench protocol; reagent or buffer math" → `bench-and-wetlab/science_lab_protocol_drafter.md` / `science_lab_protocol_optimizer.md` / `science_reagent_and_supply_calculator.md` / `science_buffer_recipe_designer.md`
   - Example: "IACUC / IRB / biosafety (IBC) protocol scaffold" → `bench-and-wetlab/science_animal_protocol_iacuc_drafter.md` / `science_human_subjects_irb_protocol_drafter.md` / `science_biosafety_risk_assessment.md`
   - Example: "Cell-culture protocol / reagent (antibody/primer/cell-line) validation" → `bench-and-wetlab/science_cell_culture_protocol_designer.md` / `science_reagent_validation_workflow.md`
   - Example: "Sample chain-of-custody / ELN entry / failed-experiment post-mortem" → `bench-and-wetlab/science_sample_logging_chain_of_custody_designer.md` / `science_lab_notebook_entry_writer.md` / `science_failed_experiment_post_mortem.md`
-  - **Computational / dry lab** → `domain-science/computational/` (14): bioinformatics pipeline design, genomics QC, single-cell & proteomics analysis plans, simulation V&V, numerical-convergence (GCI) audit, computational-reproducibility environment, research-software repo layout (bridge to `domain-software-engineering/`), data-management plan, data dictionary, metadata schema, synthetic-data design, ML-for-science leakage audit + benchmark design. See [`computational/README.md`](domain-science/computational/README.md).
+  - **Computational / dry lab** → `domain-science/computational/` (14): bioinformatics pipeline design, genomics QC, single-cell & proteomics analysis plans, simulation V&V, numerical-convergence (GCI) audit, computational-reproducibility environment, research-software repo layout (bridge to `domain-software-engineering/`), data-management plan, data dictionary, metadata schema, synthetic-data design, ML-for-science leakage audit + benchmark design. See [`computational/README.md`](../domain-science/computational/README.md).
   - Example: "Design a reproducible bioinformatics pipeline / genomics QC protocol" → `computational/science_bioinformatics_pipeline_designer.md` / `science_genomics_qc_protocol.md`
   - Example: "Validate a simulation (V&V) / numerical-convergence audit" → `computational/science_simulation_validation_protocol.md` / `science_numerical_convergence_audit.md`
   - Example: "Make a study computationally reproducible / lay out a research-software repo" → `computational/science_computational_reproducibility_environment.md` / `science_open_source_research_software_repo_layout.md`
   - Example: "Draft a DMP / data dictionary / metadata schema / synthetic data" → `computational/science_data_management_plan_drafter.md` (+ data_dictionary, metadata_schema, synthetic_data_generator_design)
   - Example: "Audit an ML-for-science pipeline for leakage / design a benchmark" → `computational/science_ml_for_science_validation_audit.md` / `science_ml_for_science_benchmark_design.md`
-  - **Funding & grants** → `domain-science/grants-funding/` (10): NIH Specific Aims + R01 outline, NSF (IM+BI) + ERC outlines, the Significance / Innovation / Approach section drafters, resubmission response, budget justification, letter of support. Drafts from the user's own science; funder rules/figures are `[user-supplied]`/verify. See [`grants-funding/README.md`](domain-science/grants-funding/README.md).
+  - **Funding & grants** → `domain-science/grants-funding/` (10): NIH Specific Aims + R01 outline, NSF (IM+BI) + ERC outlines, the Significance / Innovation / Approach section drafters, resubmission response, budget justification, letter of support. Drafts from the user's own science; funder rules/figures are `[user-supplied]`/verify. See [`grants-funding/README.md`](../domain-science/grants-funding/README.md).
   - Example: "Draft NIH Specific Aims / R01 Research Strategy outline" → `grants-funding/science_specific_aims_drafter.md` / `science_nih_r01_outline_drafter.md`
   - Example: "Outline an NSF or ERC proposal" → `grants-funding/science_nsf_proposal_outliner.md` / `science_erc_grant_outliner.md`
   - Example: "Draft Significance / Innovation / Approach section" → `grants-funding/science_grant_significance_section_drafter.md` (+ innovation, approach)
   - Example: "Resubmission response / budget justification / letter of support" → `grants-funding/science_grant_resubmission_response.md` / `science_grant_budget_justification_drafter.md` / `science_letter_of_support_drafter.md`
-  - **Peer review** → `domain-science/peer-review/` (6): structured review drafter + pre-submission self-check, editorial decision letter, reviewer-disagreement arbitration memo, PubPeer-style post-publication critique, replication/robustness review lens. COPE-aligned; evidence-based, non-ad-hominem; suspected misconduct routes via `ethics-integrity/`. See [`peer-review/README.md`](domain-science/peer-review/README.md).
+  - **Peer review** → `domain-science/peer-review/` (6): structured review drafter + pre-submission self-check, editorial decision letter, reviewer-disagreement arbitration memo, PubPeer-style post-publication critique, replication/robustness review lens. COPE-aligned; evidence-based, non-ad-hominem; suspected misconduct routes via `ethics-integrity/`. See [`peer-review/README.md`](../domain-science/peer-review/README.md).
   - Example: "Draft / self-check a peer review" → `peer-review/science_peer_review_drafter.md` / `science_peer_review_self_check.md`
   - Example: "Editorial decision letter / arbitrate divergent reviews" → `peer-review/science_editorial_decision_drafter.md` / `science_review_disagreement_arbitration_memo.md`
   - Example: "Post-publication critique / review a replication study" → `peer-review/science_post_publication_critique_drafter.md` / `science_review_for_replication_or_robustness.md`
-  - **Ethics & integrity** → `domain-science/ethics-integrity/` (8): authorship/credit (CRediT+ICMJE), COI disclosure, FFP/QRP pre-submission self-audit, image-integrity self-check, responsible-AI-use audit, FAIR/CARE/TRUST open-science audit, dual-use (DURC) governance self-screen, correction-vs-retraction walkthrough. These structure / disclose / self-audit and route formal matters to the institution / IBC / editor / COPE — they never adjudicate. See [`ethics-integrity/README.md`](domain-science/ethics-integrity/README.md).
+  - **Ethics & integrity** → `domain-science/ethics-integrity/` (8): authorship/credit (CRediT+ICMJE), COI disclosure, FFP/QRP pre-submission self-audit, image-integrity self-check, responsible-AI-use audit, FAIR/CARE/TRUST open-science audit, dual-use (DURC) governance self-screen, correction-vs-retraction walkthrough. These structure / disclose / self-audit and route formal matters to the institution / IBC / editor / COPE — they never adjudicate. See [`ethics-integrity/README.md`](../domain-science/ethics-integrity/README.md).
   - Example: "Resolve authorship / draft a COI disclosure" → `ethics-integrity/science_authorship_and_credit_resolver.md` / `science_conflict_of_interest_disclosure_drafter.md`
   - Example: "Pre-submission misconduct / image-integrity self-audit" → `ethics-integrity/science_misconduct_self_audit.md` / `science_image_integrity_self_check.md`
   - Example: "Dual-use (DURC) self-screen / correction-vs-retraction" → `ethics-integrity/science_dual_use_research_assessment.md` / `science_retraction_or_correction_decision_walkthrough.md`
-  - **Lab operations & mentorship** → `domain-science/lab-operations-mentorship/` (10): IDP, lab-meeting + 1:1 + onboarding design, thesis-committee prep, qual question bank, postdoc→PI transition, lab-culture charter, undergrad-mentoring + internship scoping. Trainee dignity / psychological safety first-class; well-being routes to professional support. See [`lab-operations-mentorship/README.md`](domain-science/lab-operations-mentorship/README.md).
+  - **Lab operations & mentorship** → `domain-science/lab-operations-mentorship/` (10): IDP, lab-meeting + 1:1 + onboarding design, thesis-committee prep, qual question bank, postdoc→PI transition, lab-culture charter, undergrad-mentoring + internship scoping. Trainee dignity / psychological safety first-class; well-being routes to professional support. See [`lab-operations-mentorship/README.md`](../domain-science/lab-operations-mentorship/README.md).
   - Example: "Trainee IDP / 1:1 / onboarding packet / lab-meeting design" → `lab-operations-mentorship/science_individual_development_plan_drafter.md` (+ one_on_one, lab_onboarding_packet_designer, lab_meeting_agenda_designer)
   - Example: "Thesis-committee prep / qual question bank / postdoc→PI transition" → `lab-operations-mentorship/science_thesis_committee_meeting_prep.md` / `science_qualifying_exam_question_bank.md` / `science_postdoc_to_pi_transition_plan.md`
-  - **Public engagement & science communication** → `domain-science/public-engagement/` (8): press release, media-interview prep, op-ed, policy brief, legislative testimony, social-media thread, lay explainer, misinformation response. Core theme = overclaim avoidance (calibrated certainty, primary-source links, no fabricated findings). See [`public-engagement/README.md`](domain-science/public-engagement/README.md).
+  - **Public engagement & science communication** → `domain-science/public-engagement/` (8): press release, media-interview prep, op-ed, policy brief, legislative testimony, social-media thread, lay explainer, misinformation response. Core theme = overclaim avoidance (calibrated certainty, primary-source links, no fabricated findings). See [`public-engagement/README.md`](../domain-science/public-engagement/README.md).
   - Example: "Press release / media prep / op-ed / policy brief / testimony" → `public-engagement/science_press_release_drafter.md` (+ media_interview_prep, op_ed_drafter, policy_brief_drafter, congressional_or_parliamentary_testimony_prep)
   - Example: "Social-media thread / lay explainer / misinformation response" → `public-engagement/science_social_media_thread_drafter.md` / `science_explainer_for_general_audience.md` / `science_misinformation_response_drafter.md`
-  - **Teaching research methods** → `domain-science/teaching-research-methods/` (6): CURE undergrad lab course, research-methods syllabus, journal-club facilitation, science-specific code review, Carpentries-style data-analysis workshop, reproducibility workshop. Teaches research craft itself (distinct from `domain-education-teaching/`). See [`teaching-research-methods/README.md`](domain-science/teaching-research-methods/README.md).
+  - **Teaching research methods** → `domain-science/teaching-research-methods/` (6): CURE undergrad lab course, research-methods syllabus, journal-club facilitation, science-specific code review, Carpentries-style data-analysis workshop, reproducibility workshop. Teaches research craft itself (distinct from `domain-education-teaching/`). See [`teaching-research-methods/README.md`](../domain-science/teaching-research-methods/README.md).
   - Example: "Design an authentic-research lab course / methods syllabus / journal club" → `teaching-research-methods/science_undergraduate_lab_course_designer.md` / `science_research_methods_syllabus_designer.md` / `science_journal_club_facilitation_guide.md`
   - Example: "Science-specific code review / data-analysis or reproducibility workshop" → `teaching-research-methods/science_code_review_for_science_software.md` / `science_data_analysis_workshop_designer.md` / `science_reproducibility_workshop_designer.md`
-  - **Discipline-specific** → `domain-science/disciplines/` (24): biology, chemistry, physics-astronomy, earth-climate, neuroscience, materials-engineering. See [`disciplines/README.md`](domain-science/disciplines/README.md).
+  - **Discipline-specific** → `domain-science/disciplines/` (24): biology, chemistry, physics-astronomy, earth-climate, neuroscience, materials-engineering. See [`disciplines/README.md`](../domain-science/disciplines/README.md).
   - Example: "Genomics / microscopy / clinical-trial / omics-metadata / field-ecology design" → `disciplines/biology/`
   - Example: "Synthesis-route critique / characterization battery / reaction kinetics" → `disciplines/chemistry/`
 
@@ -1111,7 +1111,7 @@ When users need help with **non-coding tasks**, first determine the domain:
     - Example: "Repair a broken habit" → `domain-personal-development/prompts/agency/agency_habit_loop_repair.md`
     - Example: "Run a foundation-building session" → `domain-personal-development/prompts/agency/agency_foundation_session.md`
     - Example: "Rapid-start mode — no warm-up" → `domain-personal-development/prompts/agency/agency_rapid_start_mode.md`
-  - **Domain guide:** [domain-personal-development/](domain-personal-development/)
+  - **Domain guide:** [domain-personal-development/](../domain-personal-development/)
 
 ### Professional Communication
 - **PRDs, presentations, proposals, stakeholder communication** → `domain-product-management/`
@@ -1121,7 +1121,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "Market size (TAM/SAM/SOM) rapid or comprehensive" → `domain-product-management/prompts/product_market_size_calculator.md`
   - Stakeholder-navigation and org-politics prompts → `domain-personal-development/prompts/stakeholder/` (7 prompts)
   - **Presentations** → `domain-presentations/` (~23 prompts)
-  - **Domain guide:** [domain-product-management/](domain-product-management/)
+  - **Domain guide:** [domain-product-management/](../domain-product-management/)
 
 ### Parenting (Ages 4–8, with Neurodivergence Support)
 - **Parenting children ages 4–8 (including ADHD, strong-willed, autistic / ASD Level 1 / "HFA")** → `domain-parenting/` (~18 prompts)
@@ -1144,7 +1144,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "Need to email the teacher" → `parenting_teacher_partnership_email_composer.md`
   - Example: "504 / accommodation meeting prep" → `parenting_school_accommodation_conversation_prep.md`
   - Example: "Sticker chart / allowance / behavior contract pre-mortem" → `parenting_reward_system_premortem.md`
-  - **Domain guide:** [domain-parenting/](domain-parenting/)
+  - **Domain guide:** [domain-parenting/](../domain-parenting/)
 
 ### HR & People Management
 - **Performance reviews, self-assessment, peer / 360 feedback, calibration** → `domain-hr-management/` (6 prompts)
@@ -1154,18 +1154,18 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "Write my self-review" → `performance-reviews/hr_self_review_assessment.md`
   - Example: "Draft 360 / peer feedback" → `performance-reviews/hr_peer_360_feedback.md`
   - Example: "Run or prep for calibration" → `performance-reviews/hr_calibration_facilitator.md`
-  - **Domain guide:** [domain-hr-management/](domain-hr-management/)
+  - **Domain guide:** [domain-hr-management/](../domain-hr-management/)
 
 ### Specialized Professional Fields
 - **Legal, trades, real estate, marketing** → `domain-specialized-fields/` (finance and psychology are now their own top-level domains: `domain-finance/`, `domain-psychology/`)
   - **Professional writing by field** → `domain-professional-writing/domain-specific/` (~26 prompts)
   - Files cover: CPAs, veterinarians, attorneys, contractors, real estate agents, and 21 more fields
-  - **Domain guide:** [domain-specialized-fields/](domain-specialized-fields/)
+  - **Domain guide:** [domain-specialized-fields/](../domain-specialized-fields/)
 
 ### Legal (Practitioner Library — Phase 1 + 2A + Family Law, 109 prompts)
 - **Live legal workflows for attorneys, paralegals, in-house counsel, legal ops, contract managers** → `domain-legal/`
-  - **Domain guide:** [`domain-legal/README.md`](domain-legal/README.md)
-  - **Roadmap:** [`domain-legal/EXPANSION_ROADMAP.md`](domain-legal/EXPANSION_ROADMAP.md)
+  - **Domain guide:** [`domain-legal/README.md`](../domain-legal/README.md)
+  - **Roadmap:** [`domain-legal/EXPANSION_ROADMAP.md`](../domain-legal/EXPANSION_ROADMAP.md)
   - **Convention:** every prompt requires jurisdiction input, includes a no-fabrication clause for citations and contract terms, locks output format, and ends with a verification checklist + false-positive matrix. No generic "consult counsel" disclaimers.
   - **Research** → `domain-legal/research/` (issue spotting, IRAC memos, statutory interpretation, case briefs, precedent comparison, jurisdiction splits)
   - **Litigation** → `domain-legal/litigation/` (complaints, answers, MTDs, MSJs, MILs, case strategy, settlement valuation, jury instructions, trial themes, budgets)
@@ -1180,11 +1180,11 @@ When users need help with **non-coding tasks**, first determine the domain:
   - **Divorce / Dissolution** → `domain-legal/divorce/` (22 prompts: intake/case assessment, petition, response/counterpetition, temporary/pendente lite orders, financial affidavit/disclosure, property characterization, property division/equalization, business valuation, retirement/QDRO, hidden-asset/dissipation, divorce tax, spousal support/alimony, settlement/mediation prep, mediation brief, post-mediation term sheet/MOU, marital settlement agreement, prenup/postnup drafting + enforceability, discovery, trial prep, post-judgment modification/enforcement, DV protective order)
   - **Custody / Parenting** → `domain-legal/custody/` (20 prompts: best-interests analysis, UCCJEA jurisdiction, custody petition, temporary/emergency custody, parenting plan, holiday/vacation schedule, high-conflict provisions, child support, modification, relocation/move-away, custody-evaluation prep/response, GAL report response, grandparent/third-party custody/visitation, supervised visitation/safety, parenting-time enforcement/contempt, custody trial prep, paternity/parentage, settlement/mediation prep, custody mediation brief, mediation impasse/package strategy)
   - **Family-law convention:** jurisdiction is load-bearing (community vs. equitable distribution; state best-interests factors; support guidelines; relocation standards all differ); no-fabrication targets enumerated factors, guideline figures, and case names; child support and custody are never bargained non-modifiable; DV/safety is screened, not ignored.
-  - **Family law — Self-Advocacy (LITIGANT-FACING)** → `domain-legal/family-self-advocacy/` (23 prompts: this is the **one subsection that inverts the attorney-only, disclaimer-free convention** — it is for a **self-represented or self-organizing layperson** putting together their own side for their lawyer and family court. (It is now **one of two** litigant-facing subsections that invert the convention — the other is `personal-self-advocacy/`, for non-family personal legal matters.) Strong not-legal-advice boundary, mandatory Safety Block, required jurisdiction, no fact fabrication. The prompts **organize/document/prepare only** — they never give advice, predict outcomes, cite statutes, draft filings, or characterize the other party; all of that routes to the attorney. Covers: attorney handoff brief (flagship), case chronology, evidence/exhibit index, communication/incident records, witness/source map, financial-disclosure organizer, asset/debt inventory, budget worksheet, financial-document checklist, allegation-response organizer, neutral factual account, concerns-about-other-party organizer, hearing prep, testimony-practice roleplay, deposition prep, court-process explainer, mediation prep, post-mediation follow-up, mediation-agreement review before signing, consultation-question builder, custody-evaluation/GAL prep, best-interests self-map. Complements — does not duplicate — the emotional/relational `domain-parenting/caregiver-facing/` sets. **Local guide:** [`domain-legal/family-self-advocacy/README.md`](domain-legal/family-self-advocacy/README.md).)
-  - **Personal Legal Self-Advocacy — NON-FAMILY (LITIGANT-FACING)** → `domain-legal/personal-self-advocacy/` (36 prompts across 10 matter subdirectories; the **second** subsection that inverts the attorney-only, disclaimer-free convention). For a **layperson handling their own side** of a non-family personal legal matter: **workplace** (harassment/discrimination/retaliation/wage), **harassment & stalking** (heaviest Safety Block), **defamation/reputation**, **IP theft**, **consumer/scams**, **landlord–tenant**, **identity theft**, **debt collection**, **small claims**, plus **cross-cutting** anchors (professional/authority router, incident organizer, evidence-preservation & digital organizer, chronology builder, professional handoff brief, consultation-question builder). Same load-bearing conventions as `family-self-advocacy/`: required jurisdiction, mandatory Safety Block (verified resources only), no fact fabrication, and **no legal conclusions / no citations / no outcome prediction / no court pleadings** — organize/document/prepare only, routing legal questions to an attorney or authority. Adds a **self-submit variant**: where a channel is built for non-lawyers, it helps draft the user's *own* factual account/letter (HR complaint, police-report account, DMCA notice, FTC/agency report, dispute letters), labeled "NOT A LEGAL FILING," with any statutory certification presented as the user's own attestation to read, verify, and sign. Attorney-side counterparts stay in `employment-labor/`, `ip/`, `litigation/`. **Local guide:** [`domain-legal/personal-self-advocacy/README.md`](domain-legal/personal-self-advocacy/README.md).
+  - **Family law — Self-Advocacy (LITIGANT-FACING)** → `domain-legal/family-self-advocacy/` (23 prompts: this is the **one subsection that inverts the attorney-only, disclaimer-free convention** — it is for a **self-represented or self-organizing layperson** putting together their own side for their lawyer and family court. (It is now **one of two** litigant-facing subsections that invert the convention — the other is `personal-self-advocacy/`, for non-family personal legal matters.) Strong not-legal-advice boundary, mandatory Safety Block, required jurisdiction, no fact fabrication. The prompts **organize/document/prepare only** — they never give advice, predict outcomes, cite statutes, draft filings, or characterize the other party; all of that routes to the attorney. Covers: attorney handoff brief (flagship), case chronology, evidence/exhibit index, communication/incident records, witness/source map, financial-disclosure organizer, asset/debt inventory, budget worksheet, financial-document checklist, allegation-response organizer, neutral factual account, concerns-about-other-party organizer, hearing prep, testimony-practice roleplay, deposition prep, court-process explainer, mediation prep, post-mediation follow-up, mediation-agreement review before signing, consultation-question builder, custody-evaluation/GAL prep, best-interests self-map. Complements — does not duplicate — the emotional/relational `domain-parenting/caregiver-facing/` sets. **Local guide:** [`domain-legal/family-self-advocacy/README.md`](../domain-legal/family-self-advocacy/README.md).)
+  - **Personal Legal Self-Advocacy — NON-FAMILY (LITIGANT-FACING)** → `domain-legal/personal-self-advocacy/` (36 prompts across 10 matter subdirectories; the **second** subsection that inverts the attorney-only, disclaimer-free convention). For a **layperson handling their own side** of a non-family personal legal matter: **workplace** (harassment/discrimination/retaliation/wage), **harassment & stalking** (heaviest Safety Block), **defamation/reputation**, **IP theft**, **consumer/scams**, **landlord–tenant**, **identity theft**, **debt collection**, **small claims**, plus **cross-cutting** anchors (professional/authority router, incident organizer, evidence-preservation & digital organizer, chronology builder, professional handoff brief, consultation-question builder). Same load-bearing conventions as `family-self-advocacy/`: required jurisdiction, mandatory Safety Block (verified resources only), no fact fabrication, and **no legal conclusions / no citations / no outcome prediction / no court pleadings** — organize/document/prepare only, routing legal questions to an attorney or authority. Adds a **self-submit variant**: where a channel is built for non-lawyers, it helps draft the user's *own* factual account/letter (HR complaint, police-report account, DMCA notice, FTC/agency report, dispute letters), labeled "NOT A LEGAL FILING," with any statutory certification presented as the user's own attestation to read, verify, and sign. Attorney-side counterparts stay in `employment-labor/`, `ip/`, `litigation/`. **Local guide:** [`domain-legal/personal-self-advocacy/README.md`](../domain-legal/personal-self-advocacy/README.md).
 
 ### Discipleship & Mentorship (One-to-One Formation — 60 prompts, TRADITION-NEUTRAL)
-- **Walking one person toward maturity in Christ, and running the program that pairs people who need that with people able to give it** (73 prompts across 13 subdirectories) → `domain-discipleship/` — see [README](domain-discipleship/README.md).
+- **Walking one person toward maturity in Christ, and running the program that pairs people who need that with people able to give it** (73 prompts across 13 subdirectories) → `domain-discipleship/` — see [README](../domain-discipleship/README.md).
 - **This is not a Bible-study domain.** All Scripture engagement, exegesis, doctrine, and lesson-level biblical teaching routes to `domain-biblical-studies/`, which this domain *orchestrates* and never duplicates. Curriculum-architecture patterns are adapted from `domain-education-teaching/`.
 - **Eight load-bearing conventions**, enforced as Must/Must-Not constraints in every prompt. Three are inherited or shared, five are this domain's own:
   1. **Tradition-neutral by default; the user may declare** — inherited verbatim from `domain-biblical-studies/`, including the `**Declared tradition (optional).**` input item and the `### Tradition-neutral stance (Must / Must Not)` constraints subsection present in all 60 prompts.
@@ -1210,11 +1210,11 @@ When users need help with **non-coding tasks**, first determine the domain:
   - **After harm (Wave 3)** → `domain-discipleship/after-harm/` (4): the domain's thirteenth subdirectory, sharing one constraint — **none of these determines what happened, adjudicates it, disciplines anyone, brokers reconciliation, or treats anyone**, and each can return "this is not ours — route it." Four vantage points on one event class: harmed by a previous discipling relationship (**STRONG-GUARD** — learner-voice; safety and clinical screen before any design; "not now" and "not this" kept as complete answers; never characterizes what happened or urges forgiveness), dependency & over-attachment (rules out safeguarding, clinical need, and an unset cadence first; direction established before remedy, including the mentor-is-dependent case; withdrawal banned as a remedy), mentor's own mistake repair (a conduct **gate** that returns a reporting route instead of an apology; every explanatory clause stripped; nothing asked in return), after a mentor is removed (**STRONG-GUARD** — begins only after the responsible body has acted and a referral has been made; care ordered by proximity to harm; refuses investigation, discipline, and communications strategy).
   - **Wave 3 additions to existing subdirectories (9):** mentor case consultation (frame and de-identification **before** disclosure; a standing check that consulting is not replacing a referral; the bounded exception the peer cohort's no-case-conference rule creates) · **doubt & deconstruction posture (STRONG-GUARD** — the mentor's own fear worked first; relationship unconditional on the outcome; no counter-argument, no deadline, and **never a verdict on whether anyone is still a believer**) · **informal pairing without a program (STRONG-GUARD** — returns **"not like this"** for a minor, a vulnerable adult, or an authority line, with no consolation plan attached; cannot manufacture protection that does not exist) · what to expect as a mentee (learner-held; ordinary vs concerning side by side; what is never owed; who to tell, including where there is nobody internal) · long-relationship re-contracting (renew / change shape / release, release requiring no justification) · minimum viable program (floor / deferred / not-attempted against real monthly hours; **safeguarding never scales down**; solves the route past a sole leader) · **program control-drift audit (STRONG-GUARD** — the compliance check load-bearing convention 6 previously lacked; audits your own artifacts, produces changes and **never a verdict**; routes the personal question to `domain-psy-ops/`) · session accessibility design (six axes as defaults offered to everyone; **never assesses whether anyone is disabled or neurodivergent**) · multiplication governance & material drift (local adaptation is the default reading; **no licence, approval process, or fidelity score**).
   - **Boundary with `domain-biblical-studies/`:** four prompts there sit adjacent and are cross-linked, never duplicated — `ministry-contexts/biblical_ministry_new_believer_discipleship_path.md` (a teacher designs a staged path), `church-staff-ministry-ops/biblical_churchstaff_discipleship_pathway_design.md` (congregation scale), `church-staff-ministry-ops/biblical_churchstaff_curriculum_scope_sequence.md` (teaching-program scope), `group-leader-facilitation/biblical_groupleader_apprentice_development.md` (grows a group leader, not a discipler).
-  - **Expansion roadmap:** [`domain-discipleship/EXPANSION_ROADMAP.md`](domain-discipleship/EXPANSION_ROADMAP.md) — includes a permanently-out-of-scope list (no doctrinal adjudication, no maturity scoring, no assessment of whether someone is genuinely converted, no clinical work, no named services, no legal statements, no church discipline).
+  - **Expansion roadmap:** [`domain-discipleship/EXPANSION_ROADMAP.md`](../domain-discipleship/EXPANSION_ROADMAP.md) — includes a permanently-out-of-scope list (no doctrinal adjudication, no maturity scoring, no assessment of whether someone is genuinely converted, no clinical work, no named services, no legal statements, no church discipline).
 
 ### Biblical Studies (Bible Study & Research — 129 prompts, TRADITION-NEUTRAL)
 - **Bible study, exegesis, sermon prep, and biblical research for six audiences** (laypeople/devotional, small-group & Sunday-school leaders, pastors/preachers, seminary/academic, self-directed learners, ministry-context teachers; 129 prompts across 11 subdirectories) → `domain-biblical-studies/`
-  - **Domain guide:** [`domain-biblical-studies/README.md`](domain-biblical-studies/README.md)
+  - **Domain guide:** [`domain-biblical-studies/README.md`](../domain-biblical-studies/README.md)
   - **Two load-bearing conventions:** (1) **Tradition-neutral** — prompts describe rather than endorse; they present the text, scholarly consensus, and where traditions differ they attribute readings to identifiable streams (Protestant/Catholic/Orthodox/Jewish/academic-critical) without ruling. A user may *optionally* declare a tradition to shift emphasis, but alternatives are always preserved. (2) **Anti-fabrication first** — every prompt forbids invented citations, misquotes, fabricated scholar/commentary attributions, invented cross-references, and made-up original-language or historical data; verses are referenced by address and verified against named real resources. Higher-risk prompts (word study, translation/variant, historical-cultural, multi-view, doctrine, sermon illustrations) carry heavier STRONG-GUARD language.
   - **Exegesis & Interpretation** → `domain-biblical-studies/exegesis-interpretation/` (passage exegesis workflow, original-language word study, genre-aware reading, historical-cultural & literary context, narrative analysis, rhetorical analysis, ANE comparative context, canonical/intertextual reading, beginner observation, multi-view interpretation map, translation comparison)
   - **Study Methods & Teaching** → `domain-biblical-studies/study-methods-teaching/` (inductive/OIA, SOAP, whole-book overview, small-group discussion guide, lesson plan builder, memorization & reading plans, thematic/topical study)
@@ -1228,12 +1228,12 @@ When users need help with **non-coding tasks**, first determine the domain:
   - **Original Languages** → `domain-biblical-studies/original-languages/` (highest fabrication risk; **all eighteen carry STRONG-GUARD**, everything verify-required): parsing/morphology helper, Greek syntax, Hebrew syntax, Greek verbal aspect & Aktionsart, Greek voice & deponency, discourse analysis, original-language idiom/figures of speech, semantic domains & componential analysis (Louw-Nida), OT-in-NT usage, Septuagint usage, textual criticism primer, Masorah & Qere/Ketiv, Hebrew cantillation & Greek accentuation, Aramaic analysis, canon/versification differences, comparative Semitics & cognates, Koine register/papyri & inscriptions, Greek/Hebrew vocabulary builder. Cross-links the word-study prompt in `exegesis-interpretation/`.
   - **Biblical Theology Method** → `domain-biblical-studies/biblical-theology-method/` (audience **A/P**): biblical vs. systematic theology (worked example), redemptive-historical reading (STRONG-GUARD), author theology comparison (STRONG-GUARD), center-of-biblical-theology debate (STRONG-GUARD). Method-level prompts above exegesis, below systematics.
   - **Apologetics & Engagement** → `domain-biblical-studies/apologetics-engagement/` (audience **P/A**): objection engagement, Bible reliability, comparative worldview, faith & science, conversation prep, problem of evil/theodicy, biblical contradictions, interfaith dialogue. All STRONG-GUARD except conversation prep. Custom banner addresses fabricated philosophical arguments, misrepresented worldview positions, and invented historical/archaeological evidence.
-  - **Expansion roadmap:** [`domain-biblical-studies/EXPANSION_ROADMAP.md`](domain-biblical-studies/EXPANSION_ROADMAP.md)
+  - **Expansion roadmap:** [`domain-biblical-studies/EXPANSION_ROADMAP.md`](../domain-biblical-studies/EXPANSION_ROADMAP.md)
 
 ### Psychology, Therapy & Behavioral Health
 - **Provider and client-facing prompts for psychology / therapy / mental-health workflows** → `domain-psychology/`
-  - **Local index & subdirectory map:** [`domain-psychology/PROMPT_INDEX.md`](domain-psychology/PROMPT_INDEX.md)
-  - **Field guide (techniques + ethical considerations):** [`domain-psychology/field_guide.md`](domain-psychology/field_guide.md)
+  - **Local index & subdirectory map:** [`domain-psychology/PROMPT_INDEX.md`](../domain-psychology/PROMPT_INDEX.md)
+  - **Field guide (techniques + ethical considerations):** [`domain-psychology/field_guide.md`](../domain-psychology/field_guide.md)
   - Note: prompts in this domain are authored at full clinical fidelity for model-testing purposes; frontmatter sets `intended_use: model-testing`. They are not meant for live clinical use.
 - **Documentation & note formats** → `domain-psychology/documentation/` (15 prompts)
   - Example: "SOAP progress note" → `psychology_soap_progress_note.md`
@@ -1261,7 +1261,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Practice operations → `practice-operations/` (informed-consent template)
   - Supervision / professional → `supervision-professional/` (therapeutic technique explainer)
   - Research / organizational → `research-organizational/` (org culture diagnostic, qualitative theme analyzer, research interview protocol)
-- **Future waves planned** (modalities expansion, populations, psychiatric prescriber, care coordination, client self-use): see [`PROMPT_INDEX.md`](domain-psychology/PROMPT_INDEX.md) for the full expansion plan.
+- **Future waves planned** (modalities expansion, populations, psychiatric prescriber, care coordination, client self-use): see [`PROMPT_INDEX.md`](../domain-psychology/PROMPT_INDEX.md) for the full expansion plan.
 
 ### Prompt Engineering
 - **Meta-prompts about creating/improving prompts** → `domain-prompt-engineering/` (~47 prompts)
@@ -1278,7 +1278,7 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### Financial Records Processing (Statements → Verified, Categorized, Flagged Spreadsheets)
 - **Process bank/credit-card statements into organized spreadsheets for review (e.g. divorce/custody prep)** → `domain-agentic-resources/skills/financial-records/` (4 skills) + 2 agents + 1 command. A staged, tool-agnostic pipeline (Claude Code + Codex). A self-contained copy lives at repo root: `financial-records-toolkit/`.
-  - **Local guide:** [`domain-agentic-resources/skills/financial-records/README.md`](domain-agentic-resources/skills/financial-records/README.md)
+  - **Local guide:** [`domain-agentic-resources/skills/financial-records/README.md`](../domain-agentic-resources/skills/financial-records/README.md)
   - **Convention:** organizes facts only (no legal advice / no intent claims); verification is a hard gate before categorize/flag; no fabricated merchants (unknowns are queued, not guessed); sensitive PII stays local and out of version control.
   - Example: "Extract my bank statement PDFs into Excel" → `financial-records/pdf-statement-extractor/`
   - Example: "Verify every transaction transferred correctly" → `financial-records/statement-reconciliation-verifier/`
@@ -1290,7 +1290,7 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### AI Investment Research Toolkit (Paper-First Research Loop — Patterns, Screen, Monitor, Paper Action, Calibration)
 - **Run a paper-first AI investment research loop** — deep research → pattern discovery → screen → monitor → paper decision → journal/calibrate, with every high-risk surface gated → `ai-investment-research-toolkit/` (8 stage prompts + orchestrator + 4 commands + 3 agents + 4 skills). A self-contained, local-first bundle (Claude Code + Codex) at repo root; it **orchestrates** the existing `domain-finance/` analytical prompts rather than rebuilding them.
-  - **Master blueprint:** [`ai-investment-research-toolkit/ARCHITECTURE.md`](ai-investment-research-toolkit/ARCHITECTURE.md) · **Flow / build status:** [`PIPELINE_OVERVIEW.md`](ai-investment-research-toolkit/PIPELINE_OVERVIEW.md) · **Codex entry point:** [`AGENTS.md`](ai-investment-research-toolkit/AGENTS.md)
+  - **Master blueprint:** [`ai-investment-research-toolkit/ARCHITECTURE.md`](../ai-investment-research-toolkit/ARCHITECTURE.md) · **Flow / build status:** [`PIPELINE_OVERVIEW.md`](../ai-investment-research-toolkit/PIPELINE_OVERVIEW.md) · **Codex entry point:** [`AGENTS.md`](../ai-investment-research-toolkit/AGENTS.md)
   - **Convention:** paper-first (no real-money path — `LiveBrokerAdapter` ships **disabled** behind Gate C); no fabricated data (unknowns are queued `UNAVAILABLE`, never guessed); gates + kill switch enforced as **code-not-trust**: Gate A (only out-of-sample-`validated` patterns score), Gate B (no order without sizing + pre-mortem + risk-limit check), Gate C (real-money lock), and the `mandate.yaml: halt` kill switch that stops action Stages 4–6.
   - **Three modes:** *guided* (run the orchestrator) · *commands* (Claude Code slash commands) · *manual* (walk the stage prompts).
   - Example: "Run a full cadence pass (Stages 0→7)" → `orchestrator_investment_research.md` or command `/investment-run` (agent `research-orchestrator`)
@@ -1308,8 +1308,8 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### Agentic System Factory (Use Case → Production-Ready Agentic System Design Bundle)
 - **Produce a production-ready agentic workflow from a stated use case** — the way this repo produces prompts/skills/agents — gating every step on the verified engineering/security/eval/governance rigor → `agentic-system-factory/` (master orchestrator + stages 0–7 + 5 commands + 3 agents + code-not-trust gate scripts). A self-contained, dual-audience (repo curator + external dev) bundle at repo root. It **orchestrates** the existing `domain-AI-ML/agentic-ai-systems/` design prompts and is built on the `authoring/system-patterns/` manual rather than rebuilding either.
-  - **Master blueprint:** [`agentic-system-factory/ARCHITECTURE.md`](agentic-system-factory/ARCHITECTURE.md) · **Flow / build status:** [`PIPELINE_OVERVIEW.md`](agentic-system-factory/PIPELINE_OVERVIEW.md) · **Codex entry point:** [`AGENTS.md`](agentic-system-factory/AGENTS.md) · **Worked run:** [`GOLD_STANDARD_RUN.md`](agentic-system-factory/GOLD_STANDARD_RUN.md)
-  - **The manual it operationalizes:** [`authoring/system-patterns/`](authoring/system-patterns/) — the fourth authoring system (6-step process, 9-topology pattern index, 100-pt rubric, gate/eval/architecture templates, gold-standard design).
+  - **Master blueprint:** [`agentic-system-factory/ARCHITECTURE.md`](../agentic-system-factory/ARCHITECTURE.md) · **Flow / build status:** [`PIPELINE_OVERVIEW.md`](../agentic-system-factory/PIPELINE_OVERVIEW.md) · **Codex entry point:** [`AGENTS.md`](../agentic-system-factory/AGENTS.md) · **Worked run:** [`GOLD_STANDARD_RUN.md`](../agentic-system-factory/GOLD_STANDARD_RUN.md)
+  - **The manual it operationalizes:** [`authoring/system-patterns/`](../authoring/system-patterns/) — the fourth authoring system (6-step process, 9-topology pattern index, 100-pt rubric, gate/eval/architecture templates, gold-standard design).
   - **Convention:** Gate 0 (complexity-ladder justification — agent vs deterministic workflow), Gate A (OWASP-ASI security), Gate B (ABC-valid eval + OpenAgentSafety real-tool safety), Gate C (disclosure manifest + observability + rollback) enforced as **code-not-trust** by stdlib-only `scripts/`; always produces the framework-agnostic design bundle first, optional Stage-7 code-gen (all six stacks: Claude Agent SDK, LangGraph, OpenAI Agents SDK, Google ADK, Microsoft Agent Framework, LlamaIndex) stays version-neutral.
   - **Three modes:** *guided* (run the orchestrator) · *commands* (slash commands) · *manual* (walk the stage prompts) · *surgical* (jump to one stage).
   - Example: "Take my use case and design a production-ready agentic system" → `agentic-system-factory/orchestrator_agentic_system.md` or command `/author-agentic-system`
@@ -1323,7 +1323,7 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### Children's Book Studio (Idea → Finished, Publishable Children's Book)
 - **Take a children's-writing idea to a finished, queryable manuscript + submission package** — a runnable agentic pipeline that **orchestrates** the existing `domain-childrens-writing/` prompts (referenced in place, not duplicated) and was **designed with `agentic-system-factory/`** → `childrens-book-studio/` (master orchestrator + 7 stage prompts + 3 agents + 4 commands + factory design bundle). A self-contained toolkit at repo root. Covers all 13 forms (board book → upper-MG/young-teen crossover; fiction + narrative/expository nonfiction; short stories).
-  - **Entry points:** [`README.md`](childrens-book-studio/README.md) · flow [`PIPELINE_OVERVIEW.md`](childrens-book-studio/PIPELINE_OVERVIEW.md) · rationale [`ARCHITECTURE.md`](childrens-book-studio/ARCHITECTURE.md) · proof-of-rigor [`design-bundle/`](childrens-book-studio/design-bundle/) · worked run [`DRY_RUN.md`](childrens-book-studio/DRY_RUN.md)
+  - **Entry points:** [`README.md`](../childrens-book-studio/README.md) · flow [`PIPELINE_OVERVIEW.md`](../childrens-book-studio/PIPELINE_OVERVIEW.md) · rationale [`ARCHITECTURE.md`](../childrens-book-studio/ARCHITECTURE.md) · proof-of-rigor [`design-bundle/`](../childrens-book-studio/design-bundle/) · worked run [`DRY_RUN.md`](../childrens-book-studio/DRY_RUN.md)
   - **Convention:** four hard gates enforced by **orchestrator critique** (not scripts — low blast radius): Gate 0 age-boundary (mature-YA → `domain-creative-writing/`), Gate A craft integrity (child agency · no preaching · read-aloud rhythm · reading level), Gate B truth & representation (nonfiction no-fabrication + back matter · representation audit = flags-only, never certified · no age-inappropriate content), Gate C publishing honesty (no invented comps/agents — all bracketed `[AUTHOR TO VERIFY]`). Inherits the 9 load-bearing conventions of `domain-childrens-writing/`.
   - **Four modes:** *guided* (run the orchestrator) · *commands* (slash commands) · *manual* (walk `PIPELINE_OVERVIEW.md`) · *surgical* (jump to one stage).
   - Example: "Write me a finished children's book (full pipeline)" → `childrens-book-studio/orchestrator_childrens_book.md` or command `/write-childrens-book`
@@ -1335,7 +1335,7 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### Sourced Nonfiction Studio (Uncited Expertise → Sourced, Publishable Nonfiction)
 - **Take a domain expert's uncited knowledge (learned over years, no sources) and turn it into a legally-screened, publishable nonfiction product** — a runnable agentic pipeline that **orchestrates** existing repo prompts (research / epistemic / legal / writing, referenced in place) → `sourced-nonfiction-studio/` (orchestrator + 7 stage prompts + 4 agents + 5 commands + a stdlib citation gate). Self-contained toolkit at repo root. Separates verifiable facts from professional judgment, runs **live** web/PubMed/Consensus searches for real sources, maps every claim to a reference, honestly reframes what can't be sourced, and screens for copyright/defamation/plagiarism. Terminal artifacts: **fact→source matrix + cited manuscript + risk report**.
-  - **Entry points:** [`README.md`](sourced-nonfiction-studio/README.md) · flow [`PIPELINE_OVERVIEW.md`](sourced-nonfiction-studio/PIPELINE_OVERVIEW.md) · rationale [`ARCHITECTURE.md`](sourced-nonfiction-studio/ARCHITECTURE.md) · worked run w/ a real live citation [`DRY_RUN.md`](sourced-nonfiction-studio/DRY_RUN.md) · portable variant [`PROMPT_PACK_PLAN.md`](sourced-nonfiction-studio/PROMPT_PACK_PLAN.md)
+  - **Entry points:** [`README.md`](../sourced-nonfiction-studio/README.md) · flow [`PIPELINE_OVERVIEW.md`](../sourced-nonfiction-studio/PIPELINE_OVERVIEW.md) · rationale [`ARCHITECTURE.md`](../sourced-nonfiction-studio/ARCHITECTURE.md) · worked run w/ a real live citation [`DRY_RUN.md`](../sourced-nonfiction-studio/DRY_RUN.md) · portable variant [`PROMPT_PACK_PLAN.md`](../sourced-nonfiction-studio/PROMPT_PACK_PLAN.md)
   - **Cardinal rule:** a citation is real or it does not exist — never fabricated/guessed. Unsourceable claims are **softened, reframed as the author's labeled judgment, or cut**, never asserted as fact.
   - **Convention:** gates enforced by **orchestrator critique** (content-integrity blast radius) + one thin stdlib script. Gate A sourcing-integrity (no orphan/fabricated/unverified-as-fact citations; `scripts/check_citations.py` is the mechanical floor) **blocks assembly**; Gate B legal-safety (fair-use + defamation/publicity + plagiarism, flagged & routed to counsel — **not legal advice, clears nothing**); Gate C publish-readiness. Field-pluggable via `config/source-standards-profiles.yaml`.
   - **Four modes:** *guided* (run the orchestrator) · *commands* (slash commands) · *manual* (walk `PIPELINE_OVERVIEW.md`) · *surgical* (one stage; jump between gates, never through Gate A).
@@ -1373,7 +1373,7 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### AI / ML Engineering (`domain-AI-ML/`) — the full practitioner lifecycle
 
-**326 prompts across 16 subdirectories** — the canonical home for *doing* AI/ML work: framing, data, features, modelling, evaluation, optimization, MLOps, monitoring, governance, GenAI/LLM engineering, agentic systems, specialized verticals, product leadership, and learning. See [`domain-AI-ML/README.md`](domain-AI-ML/README.md) for the full routing table and [`EXPANSION_ROADMAP.md`](domain-AI-ML/EXPANSION_ROADMAP.md) for the shipping record and the authoritative boundary table.
+**326 prompts across 16 subdirectories** — the canonical home for *doing* AI/ML work: framing, data, features, modelling, evaluation, optimization, MLOps, monitoring, governance, GenAI/LLM engineering, agentic systems, specialized verticals, product leadership, and learning. See [`domain-AI-ML/README.md`](../domain-AI-ML/README.md) for the full routing table and [`EXPANSION_ROADMAP.md`](../domain-AI-ML/EXPANSION_ROADMAP.md) for the shipping record and the authoritative boundary table.
 
 **Boundary (tie-break rule).** ML/AI engineering judgment about *the model itself* — its data, training, evaluation, serving, security, governance — lives here. The surrounding discipline's judgment lives in that discipline's domain: causal inference and survival analysis → `domain-science/statistics/`; prompt patterns and RAG prompt templates → `domain-prompt-engineering/`; regulated-finance model validation → `domain-finance/`; statutory interpretation → `domain-legal/`; clinical validity → `domain-healthcare-clinical/`; whole-system agentic authoring → `agentic-system-factory/` + `authoring/system-patterns/`; runnable skills → `domain-agentic-resources/skills/`.
 
@@ -1406,7 +1406,7 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### Building Autonomous Agentic Systems (`domain-AI-ML/agentic-ai-systems/`, 42)
 
-The domain's largest subdirectory, organized as a **build pipeline** — see [README](domain-AI-ML/agentic-ai-systems/README.md) for sequencing. It owns the *AI/ML-engineering design decision* framing and cross-links — rather than duplicates — the prompt-level control-flow templates (`domain-prompt-engineering/agent-workflows/`, `tool-use/`), the multi-agent contract templates (`domain-agentic-resources/commands/multi-agent/`), and the single-agent lifecycle patterns (`domain-engineering-workflows/ai-patterns/`).
+The domain's largest subdirectory, organized as a **build pipeline** — see [README](../domain-AI-ML/agentic-ai-systems/README.md) for sequencing. It owns the *AI/ML-engineering design decision* framing and cross-links — rather than duplicates — the prompt-level control-flow templates (`domain-prompt-engineering/agent-workflows/`, `tool-use/`), the multi-agent contract templates (`domain-agentic-resources/commands/multi-agent/`), and the single-agent lifecycle patterns (`domain-engineering-workflows/ai-patterns/`).
 
   - **Gate 0 — Justify the agent (before any design):** "does this need an agent at all vs a deterministic workflow?" → `aiagent_complexity_ladder_gate.md` (walk the use case down function → direct call → workflow → agent → multi-agent; stop at the lowest rung that works).
   - **Design the agent (foundations):** architecture (`aiagent_architecture_design.md`), tools (`aiagent_tool_design.md`), memory (`aiagent_memory_design.md`), per-task cost/budget (`aiagent_cost_token_budget_design.md`), evaluation (`aiagent_evaluation_design.md`), agentic safety/eval layer (ABC validity + OpenAgentSafety real-tool eval as a separate gate) (`aiagent_agentic_safety_eval_layer.md`), failure modes (`aiagent_failure_mode_analysis.md`), human-in-the-loop (`aiagent_human_in_the_loop_design.md`), safety/sandboxing (`aiagent_safety_sandboxing.md`).
@@ -1515,7 +1515,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 |-----------|-------------|
 | "Find bugs/issues" | `domain-software-engineering/analysis/quality/` |
 | "Security review" | `domain-software-engineering/analysis/security/` |
-| **Bug bounty hunting (offensive, AUTHORIZED)** | **`domain-software-engineering/bug-bounty/` — see [README](domain-software-engineering/bug-bounty/README.md). Every prompt has an authorization/scope gate.** |
+| **Bug bounty hunting (offensive, AUTHORIZED)** | **`domain-software-engineering/bug-bounty/` — see [README](../domain-software-engineering/bug-bounty/README.md). Every prompt has an authorization/scope gate.** |
 | "New to bug bounties / first 90 days" | `domain-software-engineering/bug-bounty/bugbounty_getting_started_orientation.md` |
 | "Read a program's scope into a test plan" | `domain-software-engineering/bug-bounty/bugbounty_program_scope_analyzer.md` |
 | "Map a target's attack surface (recon)" | `domain-software-engineering/bug-bounty/bugbounty_recon_attack_surface_map.md` |
@@ -1536,7 +1536,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Decompose a stuck AI coding task" | `domain-software-engineering/vibe-coding-rescue/viberescue_decompose_stuck_task.md` |
 | "Security audit of AI-generated code" | `domain-software-engineering/vibe-coding-rescue/viberescue_security_audit.md` |
 | "Handoff briefing for a new engineer" | `domain-software-engineering/vibe-coding-rescue/viberescue_engineer_handoff_briefing.md` |
-| **Android Vibe-Rescue (vibe-coded Android app)** | **Use `domain-software-engineering/vibe-coding-rescue/android/` — see [README](domain-software-engineering/vibe-coding-rescue/android/README.md). Run prompts in sequence.** |
+| **Android Vibe-Rescue (vibe-coded Android app)** | **Use `domain-software-engineering/vibe-coding-rescue/android/` — see [README](../domain-software-engineering/vibe-coding-rescue/android/README.md). Run prompts in sequence.** |
 | "Diagnose my vibe-coded Android app" | `domain-software-engineering/vibe-coding-rescue/android/android_viberescue_wall_diagnosis.md` |
 | "Audit my Android codebase for fragility / AI patterns" | `domain-software-engineering/vibe-coding-rescue/android/android_viberescue_codebase_audit.md` |
 | "Android security & privacy audit (manifest, WebView, deeplinks, auth, secrets)" | `domain-software-engineering/vibe-coding-rescue/android/android_viberescue_security_privacy_audit.md` |
@@ -1644,7 +1644,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Create PRD" | `domain-product-management/prompts/` |
 | "Make decision" | `domain-decision-making/` |
 | "Multi-agent pipeline" | `domain-agentic-resources/personas/` |
-| **Idea-to-Product Pipeline (idea → shippable software, AI-agent build)** | **Use `domain-idea-to-product/` — see [`README`](domain-idea-to-product/README.md). Start with `orchestrator_idea_to_product.md` for guided mode.** |
+| **Idea-to-Product Pipeline (idea → shippable software, AI-agent build)** | **Use `domain-idea-to-product/` — see [`README`](../domain-idea-to-product/README.md). Start with `orchestrator_idea_to_product.md` for guided mode.** |
 | "Take my idea and turn it into a product (full pipeline)" | `domain-idea-to-product/orchestrator_idea_to_product.md` |
 | "Stress-test a raw software idea before validation" | `domain-idea-to-product/stage-1-ideation/ideation_concept_legs_test.md` |
 | "Structured customer-discovery interview protocol (JTBD + Mom Test)" | `domain-idea-to-product/stage-2-problem-validation/validation_customer_discovery_interview_protocol.md` |
@@ -1654,7 +1654,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Pick a tech stack with AI-coding-agent friendliness scored" | `domain-idea-to-product/stage-8-architecture-design/architecture_tech_stack_selector.md` |
 | "Bridge PRD → AI-agent day-1 file bundle (CLAUDE.md skeleton, task list, work-loop)" | `domain-idea-to-product/stage-10-ai-agent-handoff/prd_to_agent_brief_bridge.md` |
 | "Write per-task acceptance spec for an AI-agent-delegated task" | `domain-idea-to-product/stage-10-ai-agent-handoff/agent_task_acceptance_test_writer.md` |
-| **Children's Book Studio (idea → finished, publishable children's book + submission package)** | **Use `childrens-book-studio/` — see [README](childrens-book-studio/README.md). Start with `orchestrator_childrens_book.md` or `/write-childrens-book` for guided mode.** |
+| **Children's Book Studio (idea → finished, publishable children's book + submission package)** | **Use `childrens-book-studio/` — see [README](../childrens-book-studio/README.md). Start with `orchestrator_childrens_book.md` or `/write-childrens-book` for guided mode.** |
 | "Write me a finished children's book from an idea" | `childrens-book-studio/orchestrator_childrens_book.md` (or `/write-childrens-book`) |
 | "Revise my existing children's-book draft" | `childrens-book-studio/prompts/stage-4-revision-triage.md` (or `/revise-manuscript`) |
 | "Retarget my kids' draft to an age / reading level" | `childrens-book-studio/commands/calibrate-reading-level.md` (or `/calibrate-reading-level`) |
@@ -1668,7 +1668,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Same, but in plain English for a non-technical user" | `domain-deep-analysis/deepthink_plan_plain.md` (or `/deepthink-plan-plain`) |
 | "Design a system / feature / structure with documented tradeoffs" | `domain-deep-analysis/deepthink_design.md` (or `/deepthink-design`) |
 | "Same, but in plain English for a non-technical user" | `domain-deep-analysis/deepthink_design_plain.md` (or `/deepthink-design-plain`) |
-| **Reasoning Craft (domain-general reasoning tools, 41 prompts)** | **Use `domain-reasoning-craft/` — see [README](domain-reasoning-craft/README.md)** |
+| **Reasoning Craft (domain-general reasoning tools, 41 prompts)** | **Use `domain-reasoning-craft/` — see [README](../domain-reasoning-craft/README.md)** |
 | "Bayesian update / belief update" | `domain-reasoning-craft/reasoning-moves/reasoning_bayesian_belief_update.md` |
 | "Reference class / base rate forecast with adjustments" | `domain-reasoning-craft/reasoning-moves/reasoning_reference_class_forecast.md` |
 | "Outside view vs inside view reconciliation" | `domain-reasoning-craft/reasoning-moves/reasoning_outside_view_inside_view.md` |
@@ -1710,7 +1710,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Score this study/evidence quality" | `domain-reasoning-craft/epistemic/epistemic_evidence_quality_score.md` |
 | "Is my draft overclaiming certainty?" | `domain-reasoning-craft/epistemic/epistemic_uncertainty_acknowledgment_audit.md` |
 | "Why are we stuck disagreeing? (facts/definitions/values/trust)" | `domain-reasoning-craft/epistemic/epistemic_disagreement_diagnosis.md` |
-| **Ideation (divergent + convergent, 12 prompts)** | **Use `domain-ideation/` — see [README](domain-ideation/README.md)** |
+| **Ideation (divergent + convergent, 12 prompts)** | **Use `domain-ideation/` — see [README](../domain-ideation/README.md)** |
 | "100 ideas / forced quantity" | `domain-ideation/ideation_forced_quantity_100_ideas.md` |
 | "Crazy eights / rapid-fire ideas" | `domain-ideation/ideation_crazy_eights.md` |
 | "SCAMPER" | `domain-ideation/ideation_scamper.md` |
@@ -1723,7 +1723,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Flip the constraints to reopen idea space" | `domain-ideation/ideation_constraint_flip.md` |
 | "Kill most of the idea list with reasons" | `domain-ideation/ideation_idea_kill_list.md` |
 | "Narrow ideas to a shortlist / dot voting" | `domain-ideation/ideation_idea_convergence_dot_voting.md` |
-| **Risk Management (7 prompts)** | **Use `domain-risk/` — see [README](domain-risk/README.md)** |
+| **Risk Management (7 prompts)** | **Use `domain-risk/` — see [README](../domain-risk/README.md)** |
 | "Risk register" | `domain-risk/risk_register_builder.md` |
 | "Risk heat map" | `domain-risk/risk_heat_map.md` |
 | "FMEA" | `domain-risk/risk_fmea_analysis.md` |
@@ -1743,14 +1743,14 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Pugh matrix vs baseline" | `domain-decision-making/tradeoff_pugh_matrix.md` |
 | "Real options framing" | `domain-decision-making/tradeoff_real_options_framing.md` |
 | "Reversibility × stakes triage" | `domain-decision-making/tradeoff_reversibility_stakes_grid.md` |
-| **Decision documentation** | **Use `domain-decision-making/documentation/` — see [README](domain-decision-making/documentation/README.md)** |
+| **Decision documentation** | **Use `domain-decision-making/documentation/` — see [README](../domain-decision-making/documentation/README.md)** |
 | "Options memo / decision memo" | `domain-decision-making/documentation/decisiondoc_options_memo.md` |
 | "One-page decision summary" | `domain-decision-making/documentation/decisiondoc_one_pager.md` |
 | "Narrative six-pager (Bezos-style)" | `domain-decision-making/documentation/decisiondoc_narrative_memo_bezos.md` |
 | "Decision log entry" | `domain-decision-making/documentation/decisiondoc_log_entry.md` |
 | "Post-decision review" | `domain-decision-making/documentation/decisiondoc_post_decision_review.md` |
 | "After-action report" | `domain-decision-making/documentation/decisiondoc_after_action_report.md` |
-| **Major personal decisions (10 prompts)** | **Use `domain-personal-development/major-decisions/` — see [README](domain-personal-development/major-decisions/README.md)** |
+| **Major personal decisions (10 prompts)** | **Use `domain-personal-development/major-decisions/` — see [README](../domain-personal-development/major-decisions/README.md)** |
 | "Evaluate a job offer" | `domain-personal-development/major-decisions/personal_career_offer_evaluation.md` |
 | "Relocation decision" | `domain-personal-development/major-decisions/personal_relocation_decision.md` |
 | "Quit or persist?" | `domain-personal-development/major-decisions/personal_quit_or_persist.md` |
@@ -1781,7 +1781,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Frame a policy problem (before options)" | `domain-policy/policy_problem_framing.md` |
 | "Policy stakeholder / coalition map" | `domain-policy/policy_stakeholder_coalition_map.md` |
 | "Policy implementation feasibility" | `domain-policy/policy_implementation_feasibility.md` |
-| **Negotiation (46 prompts, 8 subdirs)** | **Use `domain-negotiation/` — see [README](domain-negotiation/README.md). Start with `preparation/negotiation_prep_depth_triage.md`, which routes by prep tier.** |
+| **Negotiation (46 prompts, 8 subdirs)** | **Use `domain-negotiation/` — see [README](../domain-negotiation/README.md). Start with `preparation/negotiation_prep_depth_triage.md`, which routes by prep tier.** |
 | "How much prep does this negotiation even need?" | `domain-negotiation/preparation/negotiation_prep_depth_triage.md` |
 | "BATNA / reservation point / ZOPA" | `domain-negotiation/preparation/negotiation_batna_analysis.md` |
 | "My BATNA is weak so I have no leverage" | `domain-negotiation/preparation/negotiation_leverage_audit.md` |
@@ -1828,7 +1828,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Practise negotiating when I only do it twice a year" | `domain-negotiation/craft/negotiation_deliberate_practice_loop.md` |
 | "Turn my debriefs into a pattern library that compounds" | `domain-negotiation/craft/negotiation_pattern_library_builder.md` |
 | "Where's the line between persuasion and manipulation?" | `domain-negotiation/craft/negotiation_ethics_line.md` |
-| **Psy-ops / cognitive security (32 prompts, ANALYTIC & DEFENSIVE ONLY)** | **Use `domain-psy-ops/` — see [README](domain-psy-ops/README.md). Output is always an assessment, a defense, or a resilience plan; never campaign material.** |
+| **Psy-ops / cognitive security (32 prompts, ANALYTIC & DEFENSIVE ONLY)** | **Use `domain-psy-ops/` — see [README](../domain-psy-ops/README.md). Output is always an assessment, a defense, or a resilience plan; never campaign material.** |
 | "Is this a coordinated influence campaign?" | `domain-psy-ops/influence-operations/psyops_influence_operation_analysis.md` |
 | "Break this post/ad/speech into named propaganda techniques" | `domain-psy-ops/technique-analysis/psyops_propaganda_technique_identification.md` |
 | "Why did this message make me feel that way?" | `domain-psy-ops/technique-analysis/psyops_emotional_manipulation_decoder.md` |
@@ -1860,7 +1860,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Map the competing influence taxonomies" | `domain-psy-ops/case-studies-taxonomies/psyops_technique_taxonomy_reference.md` |
 | "Study a documented historical operation" | `domain-psy-ops/case-studies-taxonomies/psyops_historical_operation_case_study.md` |
 | "Teach media literacy without breeding cynics" | `domain-psy-ops/case-studies-taxonomies/psyops_media_literacy_curriculum_designer.md` |
-| **Write a letter/request to a company, agency, insurer, school, or landlord (35 prompts, LAYPERSON)** | **Use `domain-written-advocacy/` — see [README](domain-written-advocacy/README.md). Never cites statutes or names regulators from memory; legal threats route to an attorney.** |
+| **Write a letter/request to a company, agency, insurer, school, or landlord (35 prompts, LAYPERSON)** | **Use `domain-written-advocacy/` — see [README](../domain-written-advocacy/README.md). Never cites statutes or names regulators from memory; legal threats route to an attorney.** |
 | "Turn this situation into a written request I can send" | `domain-written-advocacy/cross-cutting/advocacy_request_letter_architect.md` |
 | "Confirm in writing what was agreed on a phone call" | `domain-written-advocacy/cross-cutting/advocacy_channel_and_record_strategy.md` |
 | "They replied — what did they actually commit to?" | `domain-written-advocacy/cross-cutting/advocacy_response_analyzer.md` |
@@ -1915,7 +1915,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Design an agentic system (manual)" | `authoring/system-patterns/README.md` |
 | "Produce an agentic system from a use case (guided)" | `agentic-system-factory/orchestrator_agentic_system.md` |
 | "Does this need an agent at all? (Gate 0)" | `domain-AI-ML/agentic-ai-systems/aiagent_complexity_ladder_gate.md` |
-| **AI/ML engineering (full lifecycle)** | **Use `domain-AI-ML/` — see [README](domain-AI-ML/README.md); routing is by lifecycle stage** |
+| **AI/ML engineering (full lifecycle)** | **Use `domain-AI-ML/` — see [README](../domain-AI-ML/README.md); routing is by lifecycle stage** |
 | "Is this even an ML problem?" | `domain-AI-ML/problem-framing-scoping/mlframe_is_this_ml_problem.md` |
 | "Turn my business problem into an ML task / scope the use case" | `domain-AI-ML/problem-framing-scoping/mlframe_problem_to_ml_task_translator.md`, `mlframe_ml_use_case_canvas.md` |
 | "What metric should I optimize?" | `domain-AI-ML/model-evaluation-validation/mleval_metric_selection_guide.md` |
@@ -1976,7 +1976,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "JSON schema prompting for image generation" | `domain-image-generation/NANO_BANANA_GUIDE.md` (Section 9) |
 | "Character bible / reference pack / identity across scenes" | `domain-image-generation/CHARACTER_BIBLE_PIPELINE.md` |
 | "Storyboard grid / keyframes / video handoff" | `domain-image-generation/STORYBOARD_WORKFLOW.md` |
-| "Healthcare/medical image (badge buddy, patient handout, medical diagram)" | `domain-image-generation/healthcare/` (anti-fabrication first — see [README](domain-image-generation/healthcare/README.md)) |
+| "Healthcare/medical image (badge buddy, patient handout, medical diagram)" | `domain-image-generation/healthcare/` (anti-fabrication first — see [README](../domain-image-generation/healthcare/README.md)) |
 | "Clinician reference card (lab values, ACLS, dosing, antibiogram)" | `domain-image-generation/healthcare/clinical_badge_buddy_*.md` |
 | "Patient education handout (condition, discharge, meds, anatomy)" | `domain-image-generation/healthcare/patient_*.md` |
 | "Medical/clinical diagram (anatomy, procedure steps, pathophysiology, algorithm)" | `domain-image-generation/healthcare/medical_*.md` |
@@ -1989,7 +1989,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Children's book illustration (spread, character sheet, style series)" | `domain-image-generation/childrens-illustration/` |
 | "Comic page / manga panel / webtoon strip" | `domain-image-generation/comic-sequential/` |
 | "Scientific illustration / exploded diagram / data-viz image" | `domain-image-generation/scientific-technical/` (accuracy-gated) |
-| **Uncited expertise → sourced, publishable nonfiction (find real sources, map claims→references, legal-safe)** | **Use `sourced-nonfiction-studio/` — see [README](sourced-nonfiction-studio/README.md). `/source-my-draft` for the full pipeline.** |
+| **Uncited expertise → sourced, publishable nonfiction (find real sources, map claims→references, legal-safe)** | **Use `sourced-nonfiction-studio/` — see [README](../sourced-nonfiction-studio/README.md). `/source-my-draft` for the full pipeline.** |
 | "Source my uncited draft into a cited, publishable piece" | `sourced-nonfiction-studio/orchestrator_sourced_nonfiction.md` or `/source-my-draft` |
 | "Find real credible sources for my factual claims" | `sourced-nonfiction-studio/` `/find-sources` |
 | "Decide what to do with a claim I know but can't cite (keep/soften/reframe/cut)" | `domain-professional-writing/writing/writing_unsourced_claim_disposition.md` |
@@ -2033,7 +2033,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Design an evaluation set for correctness" | `domain-prompt-engineering/evaluation/correctness_eval_design_prompt.md` |
 | "Production monitoring for output correctness drift" | `domain-prompt-engineering/evaluation/correctness_production_monitoring_setup.md` |
 | **Non-Coding Prompts** | **Use NON_CODING_QUICK_START.md** |
-| **Education & teaching (267 prompts)** | **Route by audience: `domain-education-teaching/instructor/` (teaching a class), `program/` (running a programme), `learner/` (studying yourself) — see [README](domain-education-teaching/README.md)** |
+| **Education & teaching (267 prompts)** | **Route by audience: `domain-education-teaching/instructor/` (teaching a class), `program/` (running a programme), `learner/` (studying yourself) — see [README](../domain-education-teaching/README.md)** |
 | "Lesson plan / unit / PBL / sub plan" | `domain-education-teaching/instructor/lesson-planning/` |
 | "Explain this so a kid / teen / adult gets it" | `domain-education-teaching/instructor/explanation-craft/` |
 | "Half the class didn't get it / reteach" | `domain-education-teaching/instructor/response-cycle/` |
@@ -2108,14 +2108,14 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Residency curriculum mapper (ACGME Milestones + EPAs)" | `domain-medical-education/educator-curriculum-design/curric_residency_curriculum_mapper.md` |
 | "EPA implementation designer" | `domain-medical-education/educator-curriculum-design/curric_epa_implementation_designer.md` |
 | "Program competency framework (ACGME six core)" | `domain-medical-education/educator-curriculum-design/curric_program_competency_framework_acgme.md` |
-| "Creative writing/story (adult)" | `domain-creative-writing/` — see [README](domain-creative-writing/README.md) routing table |
+| "Creative writing/story (adult)" | `domain-creative-writing/` — see [README](../domain-creative-writing/README.md) routing table |
 | "Build/fix a scene; POV; pacing" | `domain-creative-writing/fiction/` |
 | "Show-don't-tell / description / theme / openings / endings" | `domain-creative-writing/craft-tools/` |
 | "Mystery/crime or SF/fantasy craft deep-dive" | `domain-creative-writing/genre-workshops/` |
 | "Memoir, essay, or narrative nonfiction" | `domain-creative-writing/creative-nonfiction/` |
 | "Poetry forms / imagery & metaphor" | `domain-creative-writing/poetry/` |
 | "Adult-fiction query, synopsis, pitch, comps" | `domain-creative-writing/publishing-career/` |
-| **Children's Writing (authoring kid-friendly material, 22 prompts)** | **Use `domain-childrens-writing/` — see [README](domain-childrens-writing/README.md)** |
+| **Children's Writing (authoring kid-friendly material, 22 prompts)** | **Use `domain-childrens-writing/` — see [README](../domain-childrens-writing/README.md)** |
 | "Write a board / concept / ABC / counting book (0-3)" | `domain-childrens-writing/fiction-workshops/childrens_board_concept_book_workshop.md` |
 | "Write a picture book (ages 2-8)" | `domain-childrens-writing/fiction-workshops/childrens_picture_book_workshop.md` |
 | "Write an early reader / chapter book (ages 5-10)" | `domain-childrens-writing/fiction-workshops/childrens_early_reader_chapter_book_workshop.md` |
@@ -2144,7 +2144,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "NBME MCQ / oral exam / milestone narrative" | `domain-medical-education/` |
 | "Feedback for residents / remediation plan" | `domain-medical-education/` |
 | "Faculty development module / lecture redesign" | `domain-medical-education/` |
-| **Health-professions LEARNER (student/resident/PA/pharmacy/EMS/AH/dental) self-study tools** | **Use `domain-medical-education/` — see [README](domain-medical-education/README.md)** |
+| **Health-professions LEARNER (student/resident/PA/pharmacy/EMS/AH/dental) self-study tools** | **Use `domain-medical-education/` — see [README](../domain-medical-education/README.md)** |
 | "Build me an illness script" / "atypical variants" | `learner-self-study/clinical-reasoning/learner_illness_script_builder.md` |
 | "Quiz me on differentials for [complaint]" | `learner-self-study/clinical-reasoning/learner_differential_diagnosis_drill.md` |
 | "Sharpen my one-liner / problem representation" | `learner-self-study/clinical-reasoning/learner_problem_representation_rehearsal.md` |
@@ -2178,7 +2178,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Dental treatment-planning practice" | `learner-self-study/discipline-specific/learner_dental_treatment_planning_practice.md` |
 | "Allied-health (PT/OT/SLP/RT/RD/SW/AuD) scope + plan drill" | `learner-self-study/discipline-specific/learner_allied_health_scope_and_reasoning_drill.md` |
 | "Research synthesis" | `domain-research-academic/` |
-| **Science practice (bench / field / computational — the *doing* of science)** | **Use `domain-science/` — see [README](domain-science/README.md). Discipline-specific judgment here; generic methodology → `domain-research-academic/`.** |
+| **Science practice (bench / field / computational — the *doing* of science)** | **Use `domain-science/` — see [README](../domain-science/README.md). Discipline-specific judgment here; generic methodology → `domain-research-academic/`.** |
 | "Refine a vague idea into a testable, scoped scientific question" | `domain-science/methods-foundations/science_research_question_refiner.md` |
 | "Draft a preregistration / Stage-1 Registered Report" | `domain-science/methods-foundations/science_preregistration_drafter.md` |
 | "Power & sample size (frequentist + Bayesian, assumptions surfaced)" | `domain-science/methods-foundations/science_power_and_sample_size_calculator.md` |
@@ -2240,7 +2240,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Presentation/proposal" | `domain-presentations/` |
 | "Legal/trades/real estate" | `domain-specialized-fields/` or `domain-professional-writing/domain-specific/` |
 | "Finance / economics field guide" | `domain-finance/` |
-| **Paper-first AI investment research loop (research → patterns → screen → monitor → paper action → calibrate; gates as code-not-trust, no real-money path)** | **`ai-investment-research-toolkit/` — see [ARCHITECTURE.md](ai-investment-research-toolkit/ARCHITECTURE.md) / [PIPELINE_OVERVIEW.md](ai-investment-research-toolkit/PIPELINE_OVERVIEW.md)** |
+| **Paper-first AI investment research loop (research → patterns → screen → monitor → paper action → calibrate; gates as code-not-trust, no real-money path)** | **`ai-investment-research-toolkit/` — see [ARCHITECTURE.md](../ai-investment-research-toolkit/ARCHITECTURE.md) / [PIPELINE_OVERVIEW.md](../ai-investment-research-toolkit/PIPELINE_OVERVIEW.md)** |
 | "Run a full investment-research cadence pass (Stages 0→7)" | `ai-investment-research-toolkit/orchestrator_investment_research.md` or `/investment-run` (agent `research-orchestrator`) |
 | "Validate my investment config before a run" | `ai-investment-research-toolkit/prompts/stage-0-mandate-config.md` |
 | "Discover / validate / retire an investment pattern (Gate A)" | `ai-investment-research-toolkit/prompts/stage-3-pattern-knowledge-base.md` (agent `pattern-miner`) |
@@ -2248,18 +2248,18 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Daily monitor / tripwire sweep on holdings + watchlist" | `ai-investment-research-toolkit/prompts/stage-5-monitoring-tripwires.md` or `/monitor` (agent `monitor-agent`) |
 | "Decide + place a PAPER order (Gate B/C)" | `ai-investment-research-toolkit/prompts/stage-6-decision-paper-action.md` or `/decide <ticker>` |
 | "Journal a prediction + Brier/calibration" | `ai-investment-research-toolkit/prompts/stage-7-journaling-calibration.md` |
-| **Process bank/credit-card statements → verified, categorized, flagged spreadsheets (divorce/custody prep)** | **`domain-agentic-resources/skills/financial-records/` + `financial-records-toolkit/` — see [README](domain-agentic-resources/skills/financial-records/README.md)** |
+| **Process bank/credit-card statements → verified, categorized, flagged spreadsheets (divorce/custody prep)** | **`domain-agentic-resources/skills/financial-records/` + `financial-records-toolkit/` — see [README](../domain-agentic-resources/skills/financial-records/README.md)** |
 | "Statement PDF → Excel/CSV" | `financial-records/pdf-statement-extractor/` |
 | "Verify every transaction transferred" | `financial-records/statement-reconciliation-verifier/` |
 | "Categorize transactions / identify unknown merchants" | `financial-records/transaction-categorizer/` |
 | "Flag transactions for divorce/custody review" | `financial-records/divorce-financial-flagger/` |
 | "Run whole statement pipeline" | `/process-financials` (agent `financial-records-orchestrator`) |
-| "Psychology / therapy / behavioral health" | `domain-psychology/` (see [PROMPT_INDEX.md](domain-psychology/PROMPT_INDEX.md)) |
-| **Medical / health-professions education (teach or study)** | **`domain-medical-education/` — see [README](domain-medical-education/README.md). `educator-*` to teach and assess; `learner-*` to study. Real-patient questions → `domain-healthcare-clinical/`** |
+| "Psychology / therapy / behavioral health" | `domain-psychology/` (see [PROMPT_INDEX.md](../domain-psychology/PROMPT_INDEX.md)) |
+| **Medical / health-professions education (teach or study)** | **`domain-medical-education/` — see [README](../domain-medical-education/README.md). `educator-*` to teach and assess; `learner-*` to study. Real-patient questions → `domain-healthcare-clinical/`** |
 | "Design a voice assistant, chatbot, or dialog system" | `domain-voice-conversational-ui/` — voice design, chatbot design, dialog architecture, NLU training, voice UX, multimodal, analytics |
 | "Give my project memory that survives across sessions" | `continuity-kit/` — a repo-local ledger of decisions, failures, and open threads (see also `domain-AI-ML/agentic-ai-systems/aiagent_project_continuity_memory_design.md` for the design decision) |
 | "Drop this prompt system into another project" | `portable-prompt-system/` — self-contained export of the technique library and authoring guides |
-| **Discipleship & mentorship (one-to-one formation, 73 prompts, TRADITION-NEUTRAL)** | **Use `domain-discipleship/` — see [README](domain-discipleship/README.md). Formation is never scored; all Scripture work routes to `domain-biblical-studies/`.** |
+| **Discipleship & mentorship (one-to-one formation, 73 prompts, TRADITION-NEUTRAL)** | **Use `domain-discipleship/` — see [README](../domain-discipleship/README.md). Formation is never scored; all Scripture work routes to `domain-biblical-studies/`.** |
 | "Build me a full discipleship curriculum" | `domain-discipleship/curriculum-architecture/discipleship_curriculum_architecture.md` |
 | "What should growth actually look like at each stage?" | `domain-discipleship/curriculum-architecture/discipleship_formation_outcomes_framework.md` |
 | "What order should these discipleship topics go in?" | `domain-discipleship/curriculum-architecture/discipleship_module_scope_and_sequence.md` |
@@ -2333,7 +2333,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Is our own program putting pressure on people?" | `domain-discipleship/program-operations/discipleship_program_control_drift_audit.md` |
 | "Our sessions don't work for everyone in the room" | `domain-discipleship/session-and-lesson/discipleship_session_accessibility_design.md` |
 | "We've multiplied three generations out and nobody knows what's being taught" | `domain-discipleship/curriculum-architecture/discipleship_multiplication_governance_drift.md` |
-| **Biblical Studies (Bible study & research, 129 prompts, TRADITION-NEUTRAL)** | **Use `domain-biblical-studies/` — see [README](domain-biblical-studies/README.md)** |
+| **Biblical Studies (Bible study & research, 129 prompts, TRADITION-NEUTRAL)** | **Use `domain-biblical-studies/` — see [README](../domain-biblical-studies/README.md)** |
 | "Exegete / work through this passage" | `domain-biblical-studies/exegesis-interpretation/biblical_passage_exegesis_workflow.md` |
 | "Do a Greek/Hebrew word study" | `domain-biblical-studies/exegesis-interpretation/biblical_word_study_original_language.md` |
 | "What genre is this / how do I read it?" | `domain-biblical-studies/exegesis-interpretation/biblical_genre_aware_reading.md` |
@@ -2459,7 +2459,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Present major theodicies and strongest objections fairly" | `domain-biblical-studies/apologetics-engagement/biblical_apologetics_problem_of_evil_theodicy.md` |
 | "Address an alleged biblical contradiction honestly" | `domain-biblical-studies/apologetics-engagement/biblical_apologetics_biblical_contradictions.md` |
 | "Interfaith dialogue prep (never fabricate claims about another religion)" | `domain-biblical-studies/apologetics-engagement/biblical_apologetics_other_religions_dialogue.md` |
-| **Legal (practitioner library, 109 prompts)** | **Use `domain-legal/` — see [README](domain-legal/README.md)** |
+| **Legal (practitioner library, 109 prompts)** | **Use `domain-legal/` — see [README](../domain-legal/README.md)** |
 | "Spot legal issues / IRAC memo / statutory interpretation" | `domain-legal/research/` |
 | "Draft a complaint / answer / MTD / MSJ / jury instructions" | `domain-legal/litigation/` |
 | "Motion in limine set / litigation budget / trial theme" | `domain-legal/litigation/` (Phase 2A) |
@@ -2475,7 +2475,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Patent claim chart / trademark clearance / fair use / DMCA / OSS license" | `domain-legal/ip/` |
 | "Matter intake / engagement letter / demand letter / client status update" | `domain-legal/client-intake-communications/` |
 | "Executive matter summary / legal spend review / playbook / intake triage / board update" | `domain-legal/in-house-legalops/` |
-| **Divorce / dissolution (22 prompts)** | **Use `domain-legal/divorce/` — see [README](domain-legal/README.md)** |
+| **Divorce / dissolution (22 prompts)** | **Use `domain-legal/divorce/` — see [README](../domain-legal/README.md)** |
 | "Divorce intake / case assessment" | `domain-legal/divorce/legal_divorce_intake_and_case_assessment.md` |
 | "Draft a divorce petition / response / counterpetition" | `domain-legal/divorce/` |
 | "Temporary / pendente lite orders" | `domain-legal/divorce/legal_temporary_orders_pendente_lite_motion.md` |
@@ -2495,7 +2495,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Prenup / postnup enforceability" | `domain-legal/divorce/legal_prenup_postnup_enforceability_analysis.md` |
 | "Divorce discovery / trial prep / post-judgment" | `domain-legal/divorce/` |
 | "DV protective / restraining order petition" | `domain-legal/divorce/legal_domestic_violence_protective_order_petition.md` |
-| **Custody / parenting (20 prompts)** | **Use `domain-legal/custody/` — see [README](domain-legal/README.md)** |
+| **Custody / parenting (20 prompts)** | **Use `domain-legal/custody/` — see [README](../domain-legal/README.md)** |
 | "Best-interests custody analysis" | `domain-legal/custody/legal_custody_best_interests_analysis.md` |
 | "Which state has custody jurisdiction (UCCJEA)" | `domain-legal/custody/legal_uccjea_jurisdiction_analysis.md` |
 | "Draft a custody petition / motion" | `domain-legal/custody/legal_custody_petition_or_motion_drafter.md` |
@@ -2513,7 +2513,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Custody mediation / settlement prep" | `domain-legal/custody/legal_custody_settlement_and_mediation_prep.md` |
 | "Custody mediation brief / statement" | `domain-legal/custody/legal_custody_mediation_brief_drafter.md` |
 | "Custody mediation stalled — impasse / package strategy" | `domain-legal/custody/legal_custody_mediation_impasse_and_package_strategy.md` |
-| **Family law — self-represented / self-organizing LITIGANT (organize your own side; NOT legal advice)** | **Use `domain-legal/family-self-advocacy/` — see [README](domain-legal/family-self-advocacy/README.md)** |
+| **Family law — self-represented / self-organizing LITIGANT (organize your own side; NOT legal advice)** | **Use `domain-legal/family-self-advocacy/` — see [README](../domain-legal/family-self-advocacy/README.md)** |
 | "Organize my whole divorce/custody case for my lawyer" | `domain-legal/family-self-advocacy/legalprep_attorney_handoff_brief.md` |
 | "Build a neutral dated timeline of events" | `domain-legal/family-self-advocacy/legalprep_case_chronology_builder.md` |
 | "Organize / index my evidence and exhibits" | `domain-legal/family-self-advocacy/legalprep_evidence_inventory_organizer.md` |
@@ -2537,7 +2537,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Questions to ask at my attorney consultation" | `domain-legal/family-self-advocacy/legalprep_attorney_consultation_question_builder.md` |
 | "Prepare for a custody evaluation / GAL interview" | `domain-legal/family-self-advocacy/legalprep_custody_evaluation_preparation_organizer.md` |
 | "Map my facts to best-interests factor categories" | `domain-legal/family-self-advocacy/legalprep_best_interests_factor_self_map.md` |
-| **Personal legal self-advocacy — NON-family (layperson; organize/prepare your own side — not legal advice)** | **Use `domain-legal/personal-self-advocacy/` — see [README](domain-legal/personal-self-advocacy/README.md)** |
+| **Personal legal self-advocacy — NON-family (layperson; organize/prepare your own side — not legal advice)** | **Use `domain-legal/personal-self-advocacy/` — see [README](../domain-legal/personal-self-advocacy/README.md)** |
 | "Which professional or authority do I even need?" | `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_authority_router.md` |
 | "Assemble a package for my attorney / the authority" | `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_handoff_brief.md` |
 | "Preserve and inventory my (digital) evidence" | `domain-legal/personal-self-advocacy/cross-cutting/legalprep_evidence_preservation_and_digital_organizer.md` |
@@ -2602,7 +2602,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Peer / 360 feedback" | `domain-hr-management/performance-reviews/hr_peer_360_feedback.md` |
 | "Calibration / norming session" | `domain-hr-management/performance-reviews/hr_calibration_facilitator.md` |
 | "Role-tailored review scaffold (meta)" | `domain-hr-management/performance-reviews/hr_performance_review_meta_prompt.md` |
-| **Psychology / Therapy / Behavioral Health** | **Use `domain-psychology/` — see [`PROMPT_INDEX.md`](domain-psychology/PROMPT_INDEX.md)** |
+| **Psychology / Therapy / Behavioral Health** | **Use `domain-psychology/` — see [`PROMPT_INDEX.md`](../domain-psychology/PROMPT_INDEX.md)** |
 | "SOAP / DAP / BIRP / GIRP / PIRP progress note" | `domain-psychology/documentation/psychology_soap_progress_note.md` (and siblings) |
 | "Biopsychosocial intake (90791/90792)" | `domain-psychology/documentation/psychology_intake_assessment_note.md` |
 | "Initial treatment plan with golden thread" | `domain-psychology/documentation/psychology_initial_treatment_plan.md` |
