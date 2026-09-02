@@ -25,7 +25,6 @@ from __future__ import annotations
 import argparse
 import json
 import math
-import resource
 import statistics
 import sys
 import time
@@ -35,6 +34,8 @@ from typing import Any, Mapping, Sequence
 
 from pae_engine import Registry, Repository, Router, SearchEngine
 from pae_engine._lexical import B, FIELDS, K1, SCORE_PRECISION, normalize
+
+from _support import peak_rss_mib
 
 DATA = Path(__file__).parent / "data" / "search_routing_regression.v1.json"
 CLASSES = ("task", "kind", "route", "ambig", "fuzzy", "norote", "dedup")
@@ -402,7 +403,7 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     search_result = score_cases(engine, cases)
     routing_result = score_routing(router, cases)
-    peak_mb = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024
+    peak_mb = peak_rss_mib()
 
     if args.json:
         payload = {
@@ -420,7 +421,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 "copy_distortion": routing_result["copy_distortion"],
             },
             "build_ms": round(build_ms, 1),
-            "peak_rss_mb": round(peak_mb, 1),
+            "peak_rss_mb": None if peak_mb is None else round(peak_mb, 1),
         }
         print(json.dumps(payload, indent=2, sort_keys=True))
         return 0
@@ -435,7 +436,8 @@ def main(argv: Sequence[str] | None = None) -> int:
           f"{engine.index_info['scopes']} scopes, built in {build_ms:.0f} ms")
     print(f"config:   BM25F uniform weights, k1={K1}, b={B}, "
           f"NFKC+casefold+split+stopwords+depluralize, canonical-cluster dedup, limit=10")
-    print(f"peak RSS: {peak_mb:.0f} MB\n")
+    print("peak RSS: unavailable on this platform\n" if peak_mb is None
+          else f"peak RSS: {peak_mb:.0f} MB\n")
 
     print("-- SEARCH --------------------------------------------------------------")
     print_search(search_result)

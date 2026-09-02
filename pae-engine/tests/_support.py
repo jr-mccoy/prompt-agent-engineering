@@ -77,6 +77,67 @@ class EngineTestCase(unittest.TestCase):
         )
 
 
+def peak_rss_mib() -> float | None:
+    """Peak resident set size in MiB, or ``None`` where it cannot be read.
+
+    ``resource`` is POSIX-only. Importing it at module scope makes the whole
+    module unimportable on Windows, which is how the search/routing regression
+    suite came to fail at import there while Linux CI stayed green. A memory
+    reading is a diagnostic nicety; never let it decide whether the diagnostics
+    can run at all.
+    """
+    try:  # Unix
+        import resource
+    except ImportError:  # Windows
+        return _windows_peak_rss_mib()
+
+    value = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    # Linux reports kilobytes; macOS reports bytes.
+    return value / 1024 if sys.platform != "darwin" else value / (1024 * 1024)
+
+
+def _windows_peak_rss_mib() -> float | None:
+    try:
+        import ctypes
+        from ctypes import wintypes
+
+        class _Counters(ctypes.Structure):
+            _fields_ = [
+                ("cb", wintypes.DWORD),
+                ("PageFaultCount", wintypes.DWORD),
+                ("PeakWorkingSetSize", ctypes.c_size_t),
+                ("WorkingSetSize", ctypes.c_size_t),
+                ("QuotaPeakPagedPoolUsage", ctypes.c_size_t),
+                ("QuotaPagedPoolUsage", ctypes.c_size_t),
+                ("QuotaPeakNonPagedPoolUsage", ctypes.c_size_t),
+                ("QuotaNonPagedPoolUsage", ctypes.c_size_t),
+                ("PagefileUsage", ctypes.c_size_t),
+                ("PeakPagefileUsage", ctypes.c_size_t),
+            ]
+
+        # argtypes/restype are mandatory: a process HANDLE is pointer-sized, and
+        # without them ctypes passes it as a 32-bit int on 64-bit Windows.
+        kernel32 = ctypes.windll.kernel32
+        psapi = ctypes.windll.psapi
+        kernel32.GetCurrentProcess.restype = wintypes.HANDLE
+        psapi.GetProcessMemoryInfo.argtypes = [
+            wintypes.HANDLE,
+            ctypes.POINTER(_Counters),
+            wintypes.DWORD,
+        ]
+        psapi.GetProcessMemoryInfo.restype = wintypes.BOOL
+
+        counters = _Counters()
+        counters.cb = ctypes.sizeof(counters)
+        if not psapi.GetProcessMemoryInfo(
+            kernel32.GetCurrentProcess(), ctypes.byref(counters), counters.cb
+        ):
+            return None
+        return counters.PeakWorkingSetSize / (1024 * 1024)
+    except Exception:  # pragma: no cover - non-Windows, or psapi unavailable
+        return None
+
+
 def supports_symlinks(root: Path) -> bool:
     probe = root / "_symlink_probe"
     try:

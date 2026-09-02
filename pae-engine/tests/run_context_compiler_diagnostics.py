@@ -36,7 +36,6 @@ import argparse
 import hashlib
 import json
 import math
-import resource
 import sys
 import time
 from collections import Counter
@@ -52,6 +51,8 @@ from pae_engine import (
     Router,
     SearchEngine,
 )
+
+from _support import peak_rss_mib
 
 DATA = Path(__file__).parent / "data" / "search_routing_regression.v1.json"
 BUDGETS = (2000, 4000, 8000, 16000, 32000)
@@ -220,11 +221,14 @@ def measure(repo: str | None, limit: int | None = None) -> dict[str, Any]:
         "timing": {
             "route_all_seconds": round(routed_at - started, 2),
             "pack_all_seconds": round(done - routed_at, 2),
-            "peak_rss_mib": round(
-                resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024, 1
-            ),
+            "peak_rss_mib": _rounded(peak_rss_mib()),
         },
     }
+
+
+def _rounded(value: float | None) -> float | None:
+    """Round a reading that may legitimately be unavailable."""
+    return None if value is None else round(value, 1)
 
 
 def _pct(part: int, whole: int) -> float:
@@ -261,7 +265,8 @@ def render(report: dict[str, Any]) -> str:
         "",
         f"  routed {report['cases']} cases in {timing['route_all_seconds']}s; "
         f"packed {len(report['rows'])} budgets in {timing['pack_all_seconds']}s; "
-        f"peak RSS {timing['peak_rss_mib']} MiB",
+        "peak RSS unavailable" if timing["peak_rss_mib"] is None
+        else f"peak RSS {timing['peak_rss_mib']} MiB",
         "",
         "  collapse = ambiguous bundles holding one scope; room = those that held two",
         "  or more bodies and still one scope, i.e. a collapse with space to avoid it.",

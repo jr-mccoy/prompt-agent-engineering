@@ -294,7 +294,10 @@ def process_prompt_file(filepath: Path) -> Optional[Dict[str, Any]]:
     relative_path = filepath.relative_to(REPO_ROOT)
 
     metadata = {
-        'path': str(relative_path),
+        # POSIX separators always. str() would emit backslashes on Windows, so a
+        # Windows contributor running the generator rewrites every path in the
+        # index and produces a 12,000-line diff that is pure separator churn.
+        'path': relative_path.as_posix(),
         'filename': filepath.name,
         'title': frontmatter.get('title') or extract_title_from_content(content) or filepath.stem.replace('_', ' ').title(),
         'domain': relative_path.parts[0].replace('domain-', '') if relative_path.parts[0].startswith('domain-') else 'unknown',

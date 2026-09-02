@@ -31,6 +31,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from pae_registry import build as build_mod  # noqa: E402
+from pae_registry import console  # noqa: E402
 from pae_registry import identity, membership, relationships  # noqa: E402
 from pae_registry import schema as schema_mod  # noqa: E402
 
@@ -41,11 +42,25 @@ SCHEMA_DIR = REGISTRY_DIR / "schemas"
 GENERATED = ("registry.jsonl", "registry-summary.json", "diagnostics.jsonl")
 
 
+def _say(text: str, stream=None) -> None:
+    """Print ``text``, degrading un-encodable characters instead of raising.
+
+    A validation failure must reach the developer even when the console cannot
+    render the status mark in front of it. Reporting the problem must never
+    become a second, louder problem.
+    """
+    stream = sys.stdout if stream is None else stream
+    try:
+        print(text, file=stream)
+    except UnicodeEncodeError:
+        print(console.safe_text(text, stream), file=stream)
+
+
 def _fail(errors: list[str], limit: int = 25) -> int:
     for error in errors[:limit]:
-        print(f"  ✗ {error}")
+        _say(f"  ✗ {error}")
     if len(errors) > limit:
-        print(f"  … and {len(errors) - limit} more")
+        _say(f"  … and {len(errors) - limit} more")
     return 1
 
 
@@ -130,7 +145,7 @@ def dry_run_report(result: build_mod.BuildResult) -> None:
     summary = result.summary
     stats = result.stats
     print("=" * 68)
-    print("PAE REGISTRY — DRY RUN")
+    _say("PAE REGISTRY — DRY RUN")
     print("=" * 68)
     print(f"\nIdentity ledger present: {'yes' if stats['frozen_ledger_present'] else 'no (pre-freeze)'}")
     print(f"\nTotal records: {summary['total_records']}")
@@ -163,6 +178,10 @@ def main() -> int:
     group.add_argument("--summary", action="store_true", help="print the generated summary")
     group.add_argument("--freeze", action="store_true", help="write the identity ledger (one time)")
     args = parser.parse_args()
+
+    # Status marks are Unicode; a legacy console must not turn a report
+    # into a crash. Only this process's own streams are touched.
+    console.configure(sys.stdout, sys.stderr)
 
     try:
         result = build_mod.build(REPO_ROOT, REGISTRY_DIR)
@@ -200,7 +219,7 @@ def main() -> int:
         )
         for name, content in outputs.items():
             (REGISTRY_DIR / name).write_text(content, encoding="utf-8")
-        print(f"✓ froze {len(result.identity_rows)} identity rows and wrote all artifacts")
+        _say(f"✓ froze {len(result.identity_rows)} identity rows and wrote all artifacts")
         return 0
 
     if args.write:
@@ -210,7 +229,7 @@ def main() -> int:
         )
         for name, content in outputs.items():
             (REGISTRY_DIR / name).write_text(content, encoding="utf-8")
-        print(f"✓ wrote {len(result.records)} records to {REGISTRY_DIR.relative_to(REPO_ROOT)}")
+        _say(f"✓ wrote {len(result.records)} records to {REGISTRY_DIR.relative_to(REPO_ROOT)}")
         return 0
 
     # --check
@@ -230,7 +249,7 @@ def main() -> int:
     if not (REGISTRY_DIR / "identity.tsv").exists():
         stale.append("identity.tsv: missing — identity has not been frozen")
     if stale:
-        print("registry artifacts are not current:")
+        _say("registry artifacts are not current:")
         return _fail(stale)
 
     print(
