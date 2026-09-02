@@ -23,6 +23,21 @@ from .benchmark import Benchmark, Task, collapse_clusters, expects_no_route
 from .constants import FIXTURE_MARKER
 
 
+def _is_query_rejection(exc: Exception) -> bool:
+    """Whether the Engine declined the query rather than failing internally.
+
+    Matched on the Engine's own ``UsageError`` type, imported lazily so this
+    module still works where the Engine is absent. Deliberately narrow: an
+    Engine bug must still crash the run loudly, because a harness that
+    swallows every exception reports a clean run over a broken one.
+    """
+    try:
+        from pae_engine.errors import UsageError
+    except ImportError:  # pragma: no cover - Engine not installed
+        return False
+    return isinstance(exc, UsageError)
+
+
 @dataclass
 class Tally:
     n: int = 0
@@ -82,7 +97,13 @@ class LayerAScorer:
     def score_task(self, task: Task) -> dict[str, Any]:
         row: dict[str, Any] = {"task_id": task.task_id, "class": task.task_class}
 
-        results = self._engine.search(task.query, limit=self.limit)
+        try:
+            results = self._engine.search(task.query, limit=self.limit)
+        except Exception as exc:  # Engine declined the query — see _rejected()
+            if not _is_query_rejection(exc):
+                raise
+            return self._rejected(task, row, exc)
+
         hit_uids = [hit.uid for hit in results.hits]
         collapsed = collapse_clusters(hit_uids, self._cluster_of)
         by_uid = {hit.uid: hit for hit in results.hits}
@@ -110,7 +131,12 @@ class LayerAScorer:
             row["kind_at_1"] = bool(top is not None and top.kind in task.acceptable_kinds)
 
         if task.scores("route_status"):
-            decision = self._router.route(task.query)
+            try:
+                decision = self._router.route(task.query)
+            except Exception as exc:
+                if not _is_query_rejection(exc):
+                    raise
+                return self._rejected(task, row, exc)
             row["route_status"] = decision.status
             row["route_status_correct"] = decision.status in task.acceptable_route_statuses
             # False confidence: the task says the corpus does not support a
@@ -121,6 +147,38 @@ class LayerAScorer:
             )
             if expects_no_route(task):
                 row["no_route_correct"] = decision.status in ("weak", "no_route")
+        return row
+
+    def _rejected(self, task: Task, row: dict[str, Any],
+                  exc: Exception) -> dict[str, Any]:
+        """Score a task the Engine refused to accept as a query.
+
+        The Engine bounds query length and rejects a query that normalizes to
+        more terms than it will rank. A realistically long request — several
+        paragraphs of context and constraints — can exceed that bound, and
+        before this guard the exception propagated and killed the whole run.
+
+        Scored as a **miss on every dimension**, never as a correct decline.
+        A rejected query is the retrieval layer failing to answer, and letting
+        it collect credit on the weak/no-route stratum would turn an error
+        into a flattering result — the single most important thing for this
+        row not to do.
+        """
+        row["query_rejected_by_engine"] = True
+        row["query_rejection_reason"] = str(exc)
+        if task.scores("resource"):
+            row.update({"recall_at_1": False, "recall_at_5": False,
+                        "reciprocal_rank": 0.0, "rank": None})
+        if task.scores("scope"):
+            row["scope_at_1"] = False
+        if task.scores("kind"):
+            row["kind_at_1"] = False
+        if task.scores("route_status"):
+            row["route_status"] = "query_rejected"
+            row["route_status_correct"] = False
+            row["false_confident"] = False
+            if expects_no_route(task):
+                row["no_route_correct"] = False
         return row
 
     def score(self, benchmark: Benchmark, *, disclosure: str | None = None

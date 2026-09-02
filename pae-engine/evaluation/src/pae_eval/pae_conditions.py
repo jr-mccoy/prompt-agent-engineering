@@ -97,7 +97,35 @@ class BundleCompiler:
         )
 
     def compile_for(self, task: str) -> BundleResult:
-        decision = self._router.route(task)
+        try:
+            decision = self._router.route(task)
+        except Exception as exc:
+            from .retrieval import _is_query_rejection
+
+            if not _is_query_rejection(exc):
+                raise
+            # The Engine declined the query — most often a realistically long
+            # request that normalizes past its term bound. Condition C's datum
+            # is then "no bundle was available", which is a legitimate outcome
+            # to measure. Before this guard the exception propagated and ended
+            # the whole run at whichever trial happened to reach it first.
+            #
+            # ``route_status`` is reported as ``query_rejected`` rather than
+            # ``no_route`` on purpose: a rejection must never be scoreable as a
+            # correct decline on the weak/no-route stratum.
+            return BundleResult(
+                markdown="",
+                bundle_sha256="",
+                route_status="query_rejected",
+                selected_scope=None,
+                selected_kind=None,
+                coverage=0.0,
+                margin=0.0,
+                included_uids=(),
+                omitted=({"uid": "", "reason": "query_rejected_by_engine"},),
+                budget_report={},
+                warnings=(f"engine declined the query: {exc}",),
+            )
         bundle = self._compiler.compile_route(decision, budget=self._budget)
         obj = bundle.to_json_obj()
         return BundleResult(

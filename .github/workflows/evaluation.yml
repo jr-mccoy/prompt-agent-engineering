@@ -87,7 +87,26 @@ jobs:
           from pae_eval import redaction, report, retrieval, runner, snapshot, trials
           from pae_eval.judging import rubric, deterministic, llm, reliability
           from pae_eval.statistics import paired, multiple
+          from pae_eval.authoring import audit, candidates, composition
+          from pae_eval.authoring import masking, packets, selection, templates
           print('harness version', pae_eval.__version__)
+          "
+
+      # The reviewer's discovery path decides gold labels. If it can reach PAE
+      # retrieval, the benchmark grades PAE against its own output — a result
+      # that is unfalsifiable and indistinguishable from a good one. Checked in
+      # a clean interpreter so an indirect import cannot hide behind ours.
+      - name: Reviewer discovery reaches no Engine retrieval module
+        working-directory: pae-engine/evaluation
+        env:
+          PYTHONPATH: src:../src
+        run: |
+          python3 -c "
+          import sys
+          import pae_eval.authoring.candidates
+          reached = sorted(m for m in sys.modules if m.startswith('pae_engine'))
+          assert not reached, f'candidates reached the Engine: {reached}'
+          print('reviewer discovery import closure is clean')
           "
 
       - name: Provider adapters do not import an SDK at module scope
@@ -119,6 +138,29 @@ jobs:
           python3 -m pae_eval validate-benchmark \
             --benchmark-root pae-engine/evaluation/tests/fixtures/mini-benchmark \
             --repo . --allow-leakage
+
+      # Runs the real selection against the real Registry and asserts the
+      # export is clean. Output goes to RUNNER_TEMP and is discarded; the
+      # command prints counts only, never a target, so the 45 UIDs cannot reach
+      # a public log. This is the firewall being tested on every PR rather than
+      # trusted because it worked once.
+      - name: Authoring firewall produces a leak-free author export
+        env:
+          PYTHONPATH: pae-engine/src:pae-engine/evaluation/src
+        run: |
+          python3 -m pae_eval prepare-authoring \
+            --repo . --out-dir "$RUNNER_TEMP/authoring" \
+            --commit "$GITHUB_SHA" --created-at "1970-01-01T00:00:00+00:00" \
+            | tee "$RUNNER_TEMP/authoring.log"
+          grep -q "READY FOR INDEPENDENT TASK AUTHORING" "$RUNNER_TEMP/authoring.log"
+          if grep -qE "pae_[0-9a-z]{6,}" "$RUNNER_TEMP/authoring.log"; then
+            echo "::error::a target UID reached the CI log"; exit 1
+          fi
+
+      - name: Sealed composition plan reconciles
+        env:
+          PYTHONPATH: pae-engine/src:pae-engine/evaluation/src
+        run: python3 -m pae_eval check-composition
 
       - name: Dry run makes no provider call and needs no key
         env:

@@ -498,6 +498,235 @@ def cmd_snapshot(args: argparse.Namespace) -> int:
 
 
 # --------------------------------------------------------------------------
+# authoring firewall (Phase 8A)
+# --------------------------------------------------------------------------
+
+
+def cmd_prepare_authoring(args: argparse.Namespace) -> int:
+    """Select, mask, export, manifest and audit — in that order, once.
+
+    A single command on purpose. Splitting selection from export would let the
+    two drift apart between runs, and "which selection produced this packet?"
+    is exactly the question a provenance chain must never have to guess at.
+    """
+    from datetime import datetime, timezone
+
+    from .authoring import audit, packets, selection as sel
+
+    repo = Path(args.repo)
+    out_dir = Path(args.out_dir)
+    created_at = args.created_at or datetime.now(timezone.utc).replace(
+        microsecond=0).isoformat()
+
+    exclusions = (sel.DevelopmentExclusions.load(Path(args.development_exclusions))
+                  if args.development_exclusions else sel.DevelopmentExclusions.empty())
+
+    records = sel.load_registry_records(repo)
+    result = sel.select_targets(
+        records, repo,
+        target_pae_commit=args.commit,
+        excluded_clusters=exclusions.clusters,
+        excluded_uids=exclusions.uids,
+        development_exclusion_sha256=exclusions.sha256,
+    )
+    if not result.ok:
+        print(_problems("SELECTION FAILED:", list(result.problems)), file=sys.stderr)
+        return EXIT_FAILED
+
+    by_uid = {str(r.get("uid")): r for r in records}
+    mappings, problems = packets.build_mappings(result, by_uid, repo)
+    if problems:
+        print(_problems("MASKING FAILED:", problems), file=sys.stderr)
+        return EXIT_FAILED
+
+    author_root = out_dir / packets.AUTHOR_PACKET_NAME
+    reviewer_root = out_dir / packets.REVIEWER_PACKET_NAME
+    author_digests = packets.build_author_packet(author_root, mappings)
+    reviewer_digests = packets.build_reviewer_packet(reviewer_root, mappings, result)
+
+    author_manifest = packets.author_manifest(
+        repo=repo, selection=result, mappings=mappings,
+        digests=author_digests, created_at=created_at,
+    )
+    reviewer_manifest = packets.reviewer_manifest(
+        repo=repo, selection=result, mappings=mappings,
+        digests=reviewer_digests, created_at=created_at,
+    )
+    author_manifest_sha = packets.write_manifest(
+        out_dir / "author-packet-manifest.json", author_manifest)
+    reviewer_manifest_sha = packets.write_manifest(
+        out_dir / "reviewer-private-manifest.json", reviewer_manifest)
+
+    # The audit runs against the files as written, not against the objects that
+    # wrote them. Auditing the intention would prove nothing about the export.
+    forbidden = {digest: path for path, digest in reviewer_digests.items()}
+    report = audit.audit_export(
+        author_root,
+        audit.target_identities(m.to_json_obj() for m in mappings),
+        forbidden_digests=forbidden,
+    )
+    disjoint = audit.assert_disjoint(author_root, reviewer_root)
+
+    payload = {
+        "created_at": created_at,
+        "pae_commit": result.target_pae_commit,
+        "selection": result.public_summary(),
+        "author_packet": str(author_root),
+        "reviewer_packet": str(reviewer_root),
+        "author_manifest_sha256": author_manifest_sha,
+        "reviewer_private_manifest_sha256": reviewer_manifest_sha,
+        "audit": report.to_json_obj(),
+        "export_disjointness_problems": disjoint,
+        "readiness": (report.readiness if not disjoint
+                      else "NOT READY FOR INDEPENDENT TASK AUTHORING"),
+    }
+    ok = report.passed and not disjoint
+
+    if args.json:
+        _emit(payload, True)
+    else:
+        composition = result.public_summary()["composition"]
+        print(f"selected {composition['selected']} masked targets "
+              f"across {composition['distinct_scopes']} scopes")
+        print(f"kinds:   {composition['kind_distribution']}")
+        print(f"classes: {composition['class_distribution']}")
+        print(f"\nauthor packet:   {author_root}")
+        print(f"reviewer packet: {reviewer_root}")
+        print("\nleakage audit:")
+        for line in report.summary_lines():
+            print(f"  {line}")
+        if report.problems:
+            print(_problems("\nAUDIT PROBLEMS:", list(report.problems)))
+        if disjoint:
+            print(_problems("\nEXPORTS ARE NOT DISJOINT:", disjoint))
+        print(f"\n{payload['readiness']}")
+    return EXIT_OK if ok else EXIT_FAILED
+
+
+def cmd_audit_author_packet(args: argparse.Namespace) -> int:
+    """Re-audit an export that already exists, from its mapping file."""
+    from .authoring import audit
+
+    author_root = Path(args.author_root)
+    mapping = json.loads(Path(args.map).read_text(encoding="utf-8"))
+    targets = audit.target_identities(mapping.get("packets") or [])
+
+    forbidden: dict[str, str] = {}
+    disjoint: list[str] = []
+    if args.reviewer_root:
+        reviewer_root = Path(args.reviewer_root)
+        for path in sorted(reviewer_root.rglob("*")):
+            if path.is_file():
+                forbidden[canonical.sha256_file(path)] = \
+                    path.relative_to(reviewer_root).as_posix()
+        disjoint = audit.assert_disjoint(author_root, reviewer_root)
+
+    report = audit.audit_export(author_root, targets, forbidden_digests=forbidden)
+    ok = report.passed and not disjoint
+    payload = report.to_json_obj()
+    payload["export_disjointness_problems"] = disjoint
+    payload["readiness"] = (report.readiness if not disjoint
+                            else "NOT READY FOR INDEPENDENT TASK AUTHORING")
+
+    if args.json:
+        _emit(payload, True)
+    else:
+        print(f"audited {report.files_scanned} files under {author_root}")
+        for line in report.summary_lines():
+            print(f"  {line}")
+        if report.findings:
+            print(_problems("\nFINDINGS:",
+                            [f"{f.category}: {f.file}: {f.detail}"
+                             for f in report.findings]))
+        if disjoint:
+            print(_problems("\nEXPORTS ARE NOT DISJOINT:", disjoint))
+        print(f"\n{payload['readiness']}")
+    return EXIT_OK if ok else EXIT_FAILED
+
+
+def cmd_review_candidates(args: argparse.Namespace) -> int:
+    """Raw, non-PAE candidate discovery for a reviewer."""
+    from .authoring import candidates
+
+    result = candidates.discover(
+        Path(args.snapshot), args.query,
+        repo=Path(args.repo) if args.repo else None,
+        max_candidates=args.max_candidates,
+        registered_only=not args.include_unregistered,
+    )
+    if args.json:
+        _emit(result.to_json_obj(), True)
+    else:
+        print(f"query tokens: {', '.join(result.tokens) or '(none)'}")
+        print(f"files with at least one hit: {result.files_considered}")
+        if result.unregistered_files_outranked:
+            print(f"higher-ranked non-resource files hidden: "
+                  f"{result.unregistered_files_outranked} "
+                  f"(pass --include-unregistered to see them)")
+        print(f"ordering: {candidates.RANKING_BASIS}\n")
+        for candidate in result.candidates:
+            identity = candidate.identity
+            label = (f"{identity.kind}/{identity.scope}: {identity.title}"
+                     if identity else "(not a registered resource)")
+            print(f"{candidate.rank:>3}. {label}")
+            print(f"     tokens {len(candidate.matched_tokens)}, "
+                  f"hits {candidate.total_hits}")
+            if candidate.excerpt_withheld_reason:
+                print(f"     excerpt withheld — {candidate.excerpt_withheld_reason}")
+        print(f"\nalways available: {', '.join(candidates.REVIEWER_ESCAPE_OPTIONS)}")
+    return EXIT_OK
+
+
+def cmd_check_composition(args: argparse.Namespace) -> int:
+    """Plan reconciliation now; acceptance and firewall checks when tasks exist."""
+    from .authoring import composition
+
+    payload: dict[str, Any] = {"plan": composition.plan_reconciliation()}
+    problems: list[str] = list(payload["plan"]["problems"])
+
+    if args.benchmark_root:
+        benchmark = _load_benchmark(Path(args.benchmark_root))
+        records = None
+        if args.repo:
+            from .authoring.selection import load_registry_records
+
+            records = {str(r.get("uid")): r
+                       for r in load_registry_records(Path(args.repo))}
+        checks = composition.acceptance_checks(benchmark.tasks, records)
+        payload["acceptance"] = [c.to_json_obj() for c in checks]
+        problems.extend(
+            f"acceptance {c.name}: observed {c.observed}, required {c.required}"
+            for c in checks if not c.passed
+        )
+        if args.development_root:
+            development = _load_benchmark(Path(args.development_root))
+            firewall = composition.firewall_checks(development.tasks, benchmark.tasks)
+            payload["firewall"] = [c.to_json_obj() for c in firewall]
+            problems.extend(
+                f"firewall {c.name}: observed {c.observed}, required {c.required}"
+                for c in firewall if not c.passed
+            )
+
+    payload["problems"] = problems
+    payload["passed"] = not problems
+    if args.json:
+        _emit(payload, True)
+    else:
+        plan = payload["plan"]
+        print(f"sealed plan: {plan['sealed_total']} = "
+              f"{plan['masked_total']} masked + {plan['natural_total']} natural")
+        print(f"reconciled: {plan['reconciled']}")
+        for key in ("acceptance", "firewall"):
+            for check in payload.get(key, []):
+                mark = "ok  " if check["passed"] else "FAIL"
+                print(f"  {mark} {check['name']}: {check['observed']} "
+                      f"(need {check['required']})")
+        if problems:
+            print(_problems("\nPROBLEMS:", problems))
+    return EXIT_OK if not problems else EXIT_FAILED
+
+
+# --------------------------------------------------------------------------
 # parser
 # --------------------------------------------------------------------------
 
@@ -597,6 +826,47 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--commit", default="HEAD")
     p.add_argument("--require-clean", action="store_true")
     p.set_defaults(func=cmd_snapshot)
+
+    p = sub.add_parser(
+        "prepare-authoring",
+        help="select masked targets, mask them, and export author + reviewer packets",
+    )
+    p.add_argument("--repo", required=True)
+    p.add_argument("--out-dir", required=True,
+                   help="private workspace; never inside the PAE checkout")
+    p.add_argument("--commit", required=True,
+                   help="the PAE commit the selection is bound to")
+    p.add_argument("--development-exclusions",
+                   help="development/target-exclusions.json")
+    p.add_argument("--created-at", help="ISO timestamp; defaults to now (UTC)")
+    p.set_defaults(func=cmd_prepare_authoring)
+
+    p = sub.add_parser("audit-author-packet",
+                       help="re-run the leakage audit on an existing export")
+    p.add_argument("--author-root", required=True)
+    p.add_argument("--map", required=True,
+                   help="reviewer-private target-map/packet-target-map.json")
+    p.add_argument("--reviewer-root",
+                   help="also prove the two exports are disjoint")
+    p.set_defaults(func=cmd_audit_author_packet)
+
+    p = sub.add_parser("review-candidates",
+                       help="raw non-PAE candidate discovery for a reviewer")
+    p.add_argument("--snapshot", required=True)
+    p.add_argument("--repo", help="PAE checkout, for identity mapping only")
+    p.add_argument("--query", required=True)
+    p.add_argument("--max-candidates", type=int, default=12)
+    p.add_argument("--include-unregistered", action="store_true",
+                   help="also show files with no Registry identity "
+                        "(indexes and READMEs outrank everything on raw hits)")
+    p.set_defaults(func=cmd_review_candidates)
+
+    p = sub.add_parser("check-composition",
+                       help="sealed plan reconciliation, acceptance and firewall")
+    p.add_argument("--benchmark-root", help="a completed benchmark to check")
+    p.add_argument("--development-root", help="development benchmark, for the firewall")
+    p.add_argument("--repo")
+    p.set_defaults(func=cmd_check_composition)
 
     return parser
 

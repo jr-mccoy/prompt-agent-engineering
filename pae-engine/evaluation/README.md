@@ -109,6 +109,11 @@ python -m pae_eval judge   --output-dir <out> --benchmark-root <root>
 python -m pae_eval layer-a --benchmark-root <root> --snapshot <snap>
 python -m pae_eval analyze --output-dir <out>
 python -m pae_eval report  --output-dir <out> --benchmark-root <root>
+
+python -m pae_eval prepare-authoring --repo <repo> --out-dir <private> --commit <sha>
+python -m pae_eval audit-author-packet --author-root <dir> --map <map.json>
+python -m pae_eval review-candidates --snapshot <snap> --repo <repo> --query "..."
+python -m pae_eval check-composition --benchmark-root <root> --repo <repo>
 ```
 
 ### Cost guard
@@ -129,6 +134,52 @@ trial record. Everything written to disk passes through `redaction.py`, and the
 redaction tests plant recognizable fake secrets in the environment, in provider
 exceptions, in raw response fixtures and in HTTP-style headers, then prove none
 survives.
+
+## The authoring firewall
+
+`src/pae_eval/authoring/` prepares the conditions under which someone *else*
+can write the sealed benchmark. It authors nothing.
+
+The problem it solves is that a benchmark written by the system under test
+measures the system's memory of itself, and a label assigned by asking `pae
+route` grades PAE against its own output — a result that is unfalsifiable and
+looks exactly like a good one.
+
+So three roles, three actors:
+
+| | Sees | Produces |
+|---|---|---|
+| **Author** | sanitized operational text under opaque packet IDs | task text |
+| **Reviewer** | tasks, the packet→target map, raw non-PAE discovery | labels |
+| **Maintainer** | everything | adjudications, freeze |
+
+`prepare-authoring` draws 45 masked targets deterministically —
+`SHA256(seed ‖ uid)` ordering, seed from the PAE commit, no RNG anywhere — then
+strips identity from their bodies while preserving every operational
+instruction and every safety guard verbatim, writes an author export and a
+reviewer-private export that share no path and no bytes, and refuses to ship if
+the audit finds a single UID, public ID, source path, ordered title, mapping
+file, gold label or PAE retrieval output in the author tree.
+
+Scattered title-token overlap is measured and reported rather than gated: a
+packet about medication review contains the words "medication" and "review",
+and a disjointness gate there would be satisfiable only by destroying the
+content the author has to write about.
+
+`review-candidates` is the reviewer's discovery tool: ripgrep, token-hit
+aggregation, and the Registry used only to map a path to an identity. It
+imports no PAE retrieval module, and `test_authoring_candidates` proves that
+over the parsed AST and again over the transitive import closure rather than
+asserting it in a comment. Its ordering is labelled as raw hit aggregation on
+every record, and the reviewer always has *none of these* and *search further*.
+
+**The method is public; the answer key is not.** The code and its tests live
+here. The 45 UIDs, the packets and the mapping live only in the private
+benchmark repository.
+
+See [ADR-0041](../../meta/adr/0041-author-reviewer-separation.md), including
+why the author manifest carries a commitment to the selection seed instead of
+the seed itself.
 
 ## Statistics
 
@@ -289,3 +340,4 @@ never appear in a report headline.
 - [ADR-0038](../../meta/adr/0038-frozen-plan-and-append-only-evidence.md) — frozen plan, append-only evidence
 - [ADR-0039](../../meta/adr/0039-statistical-primary-endpoint.md) — paired pass rate, McNemar, confirmatory repeat
 - [ADR-0040](../../meta/adr/0040-public-performance-claim-governance.md) — public claim governance
+- [ADR-0041](../../meta/adr/0041-author-reviewer-separation.md) — author/reviewer separation and the masked authoring firewall

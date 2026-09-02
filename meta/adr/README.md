@@ -55,6 +55,7 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0038](0038-frozen-plan-and-append-only-evidence.md) | A frozen plan and append-only evidence | Accepted |
 | [0039](0039-statistical-primary-endpoint.md) | Paired task pass rate, exact McNemar, and the confirmatory repeat | Accepted |
 | [0040](0040-public-performance-claim-governance.md) | Public performance-claim governance | Accepted |
+| [0041](0041-author-reviewer-separation.md) | Author/reviewer separation and the masked authoring firewall | Accepted |
 
 ## Related
 
