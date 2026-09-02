@@ -238,12 +238,36 @@ jobs:
           fi
           echo "trials grew from $before to $after; nothing was rewritten"
 
-      - name: No credential appears in any artifact
+      # Scope matters here. The claim being checked is "nothing the harness
+      # writes contains a credential", so it inspects the harness's own output
+      # files and not the whole temp tree: a participant snapshot is a copy of
+      # the corpus, which legitimately contains secret-shaped strings in
+      # injection fixtures and egress-check scripts. Scanning those would fail
+      # on the repository's own test data and teach everyone to ignore the
+      # check.
+      - name: No credential appears in any harness-written artifact
         run: |
-          if grep -rEl "sk-ant-|sk-proj-|ghp_[A-Za-z0-9]{16}" "$RUNNER_TEMP" 2>/dev/null; then
-            echo "::error::a secret-shaped value reached a result artifact"; exit 1
+          status=0
+          found=0
+          for dir in "$RUNNER_TEMP/pos" "$RUNNER_TEMP/neg" "$RUNNER_TEMP/resume" \
+                     "$RUNNER_TEMP/dry"; do
+            [ -d "$dir" ] || continue
+            for name in trials.jsonl scores.jsonl analysis.json report.md \
+                        run-manifest.json trial-schedule.json \
+                        participant-snapshot.json retrieval.json; do
+              file="$dir/$name"
+              [ -f "$file" ] || continue
+              found=$((found + 1))
+              if grep -Eq "sk-ant-[A-Za-z0-9_-]{8}|sk-proj-[A-Za-z0-9_-]{8}|ghp_[A-Za-z0-9]{16}" "$file"; then
+                echo "::error::secret-shaped value in $file"; status=1
+              fi
+            done
+          done
+          if [ "$found" = "0" ]; then
+            echo "::error::no harness artifacts were found to scan"; exit 1
           fi
-          echo "no secret-shaped values in any output"
+          echo "scanned $found harness artifacts; no secret-shaped values"
+          exit "$status"
 
   packaging-isolation:
     name: Engine artifacts exclude the harness
