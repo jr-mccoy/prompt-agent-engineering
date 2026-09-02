@@ -11,14 +11,18 @@ PAE Registry  →  pae_engine (Python API)  →  pae (CLI)
 
 ## Status
 
-**Version 0.3.0.dev0 is the in-tree development version. The project has not
+**Version 0.4.0.dev0 is the in-tree development version. The project has not
 been published to PyPI, and no release has been tagged.** Install it from a
 checkout; `pip install prompt-agent-engineering` does not work yet and this
 document will say so until a release actually exists.
 
-Deterministic lexical search, task routing and budgeted context compilation
-ship in this version. MCP is a later phase and is deliberately absent rather
-than stubbed.
+Deterministic lexical search, task routing, budgeted context compilation and an
+optional MCP server ship in this version. Reproducible evaluation is a later
+phase and is deliberately absent rather than stubbed.
+
+The MCP server is an **opt-in extra**: `pae mcp` serves one checkout to an MCP
+client over stdio, and the base install remains dependency-free. See
+[`docs/mcp.md`](docs/mcp.md).
 
 ## What it does
 
@@ -208,14 +212,18 @@ Typed errors carry machine-readable detail: `MalformedReference`,
 
 ## Public API stability
 
-`0.3.0.dev0` is a development version. The surface below is stable enough to
+`0.4.0.dev0` is a development version. The surface below is stable enough to
 build later phases on, but is **not** covered by a 1.0 semantic-versioning
 promise:
 
 the `pae` command name · exit codes · `--json` field names · the `pae_engine`
 import namespace · `Repository`, `Registry`, `Record`, `Resolution`,
 `Content`, `Summary`, `SearchEngine`, `Router`, `SearchHit`, `SearchResults`,
-`RouteCandidate`, `RouteDecision` · the typed exception hierarchy.
+`RouteCandidate`, `RouteDecision`, `ContextCompiler`, `ContextBundle`,
+`Budget` · the typed exception hierarchy.
+
+`pae_engine.mcp` is reached through `pae mcp` and is **not** part of the stable
+import surface; nothing from it is re-exported from `pae_engine`.
 
 Ranking coefficients are **not** public API. `k1`, `b`, the field set and the
 per-term arithmetic live behind `matched_fields` and `match_terms` precisely so

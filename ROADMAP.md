@@ -45,7 +45,11 @@ Available today, exercised by CI:
   internal regression set. Offline, standard-library-only, no embeddings. See
   [`pae-engine/docs/search-routing.md`](pae-engine/docs/search-routing.md).
 
-Not available: there is no MCP server, no context compiler, and no independent
+Also available: **`pae mcp`**, a read-only stdio MCP server behind the optional
+`[mcp]` extra, exposing four tools over the same Engine APIs the CLI uses. See
+[`pae-engine/docs/mcp.md`](pae-engine/docs/mcp.md).
+
+Not available: there is no network MCP transport and no independent
 evaluation harness. The 120-case regression set is an internal tuning and
 regression corpus, not a benchmark. The package is not published to PyPI and
 the repository has no tags.
@@ -99,8 +103,9 @@ Sequenced after the registry and the engine exist.
   standard-library-only runtime (ADR-0003 as amended), and a `pae` CLI over a
   public Python API: repository discovery, UID / public-ID / alias resolution,
   metadata retrieval, policy-gated and integrity-verified content serving, and
-  consumer-side registry validation. Optional extras for MCP / evaluation /
-  tokenizers remain unimplemented. See ADR-0017 through ADR-0020.
+  consumer-side registry validation. The `[mcp]` extra now exists; extras for
+  evaluation and tokenizers remain unimplemented. See ADR-0017 through
+  ADR-0020.
 - **Deterministic search** — metadata filters, IDs, and structural queries that
   need no model call. Built on the existing `Registry` object: search consumes
   `records()`, `load_all()`, `get()`, `resolve()` and `stats()` rather than
@@ -114,11 +119,15 @@ Sequenced after the registry and the engine exist.
   other client bootstraps shrink to point at it, keeping a documented fallback
   for environments without the CLI. The executable router and any generated
   routing documentation derive from the same metadata.
-- **Read-only MCP surface** — `search_resources`, `get_resource`, `route_task`,
-  `compose_bundle`, `validate_resource`. The MCP layer calls the same engine
-  functions as the CLI. `get_resource` and `compose_bundle` enforce serving
-  policy. Retrieved content stays data and never gains authority by containing
-  imperative text.
+- ~~**Read-only MCP surface**~~ Done. `pae_search_resources`,
+  `pae_route_task`, `pae_get_resource`, `pae_compose_bundle` — four tools over
+  stdio, behind the optional `[mcp]` extra. The adapter calls the same Engine
+  functions as the CLI and reimplements none of them; `pae_get_resource` and
+  `pae_compose_bundle` enforce serving policy through `Registry.content()`.
+  Retrieved content stays data and never gains authority by containing
+  imperative text. A network transport is deferred; its prerequisites are in
+  ADR-0030. See ADR-0028 through ADR-0032 and
+  [`pae-engine/docs/mcp.md`](pae-engine/docs/mcp.md).
 - **Evaluation.** A reproducible harness comparing at least three conditions —
   baseline, raw repository, and PAE-assisted — across routing accuracy, context
   size, latency, deterministic task checks, and safety-boundary compliance.

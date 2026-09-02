@@ -147,22 +147,59 @@ jobs:
           /tmp/pae-smoke/bin/pip install --disable-pip-version-check \
             pae-engine/dist/*.whl
 
-      - name: No runtime dependencies were installed
+      # Phase 6 changed the shape of this assertion, not its intent. Declaring
+      # an optional extra necessarily emits conditional metadata:
+      #
+      #   Provides-Extra: mcp
+      #   Requires-Dist: mcp<3,>=2.1.1; extra == "mcp"
+      #
+      # so "Requires-Dist must be empty" is no longer the right test. The
+      # guarantee that actually matters is unchanged, and is what is checked
+      # here: a base install resolves to nothing but the standard library.
+      - name: Base install has zero unconditional dependencies
         run: |
           /tmp/pae-smoke/bin/pip check
           extra=$(/tmp/pae-smoke/bin/pip list --format=freeze \
             | grep -Ev '^(pip|setuptools|wheel|prompt-agent-engineering)==' || true)
           if [ -n "$extra" ]; then
-            echo "::error::the engine pulled in runtime dependencies:"
+            echo "::error::the base install pulled in runtime dependencies:"
             echo "$extra"
             exit 1
           fi
-          /tmp/pae-smoke/bin/python -c "
+          /tmp/pae-smoke/bin/python - <<'PYCHECK'
           import importlib.metadata as md
-          requires = md.distribution('prompt-agent-engineering').requires
-          assert not requires, f'Requires-Dist must be empty, got {requires}'
-          print('Requires-Dist: none')
-          "
+          requires = md.distribution("prompt-agent-engineering").requires or []
+          unconditional = [r for r in requires if "extra ==" not in r]
+          assert not unconditional, f"unconditional Requires-Dist: {unconditional}"
+          foreign = [r for r in requires if 'extra == "mcp"' not in r]
+          assert not foreign, f"only the mcp extra may declare requirements: {foreign}"
+          named = [r.split(";")[0].strip() for r in requires]
+          assert all(n.startswith("mcp") for n in named), named
+          print(f"conditional Requires-Dist only: {requires}")
+          PYCHECK
+
+      # The SDK must not arrive with a base install, and `pae mcp` must fail
+      # like a usage error rather than a traceback about a third-party package
+      # the user never asked for.
+      - name: Base install carries no MCP SDK
+        run: |
+          if /tmp/pae-smoke/bin/python -c "import mcp" 2>/dev/null; then
+            echo "::error::the MCP SDK is importable from a base install"
+            exit 1
+          fi
+          /tmp/pae-smoke/bin/pae mcp --help > /dev/null
+          set +e
+          out=$(/tmp/pae-smoke/bin/pae mcp --repo "$GITHUB_WORKSPACE" 2>&1 1>/dev/null)
+          code=$?
+          set -e
+          if [ "$code" != "2" ]; then
+            echo "::error::expected exit 2 from 'pae mcp' without the extra, got $code"
+            exit 1
+          fi
+          case "$out" in
+            *missing_extra*) echo "missing extra reported cleanly: $out" ;;
+            *) echo "::error::unexpected stderr: $out"; exit 1 ;;
+          esac
 
       # Run from outside the checkout, against the checkout, using the console
       # script. This is the only step that would catch a missing entry point.
@@ -176,3 +213,65 @@ jobs:
         run: |
           /tmp/pae-smoke/bin/pae validate-registry \
             --repo "$GITHUB_WORKSPACE" --verify-checksums
+
+  # The MCP adapter, exercised with the optional extra actually installed.
+  #
+  # Deliberately a separate job from `unit`: that one proves the package works
+  # with no dependencies at all, and installing the SDK into it would destroy
+  # the only environment where that claim is testable.
+  mcp:
+    name: MCP adapter (py${{ matrix.python-version }}, mcp ${{ matrix.sdk }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # A real 2x2. `sdk` is declared as a matrix dimension rather than left
+        # to `include` alone, because include entries that introduce only new
+        # keys are merged into every combination - which would quietly collapse
+        # this to a single SDK version and test half of what it claims to.
+        #
+        # The floor and the newest compatible release resolve to the same
+        # version today; the matrix exists so the day they diverge is the day
+        # CI says so, rather than a user.
+        python-version: ['3.10', '3.12']
+        sdk: [floor, latest]
+        include:
+          - sdk: floor
+            sdk-spec: 'mcp==2.1.1'
+          - sdk: latest
+            sdk-spec: 'mcp>=2.1.1,<3'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Plain `mcp`, never `mcp[cli]`. The cli extra pulls typer/rich for the
+      # MCP Inspector; it is a developer convenience and not a PAE dependency.
+      - name: Install the MCP SDK
+        run: |
+          python3 -m pip install --disable-pip-version-check "${{ matrix.sdk-spec }}"
+          python3 -c "
+          import importlib.metadata as md
+          print('resolved mcp', md.version('mcp'))
+          "
+
+      - name: Adapter, client, stdio and catalog tests
+        working-directory: pae-engine
+        env:
+          PYTHONPATH: src:tests
+        run: python3 -m unittest discover -s tests -t tests -v
+
+      - name: Installed wheel resolves the extra and serves
+        run: |
+          python3 -m pip install --disable-pip-version-check build
+          (cd pae-engine && python3 -m build --wheel)
+          python3 -m venv /tmp/pae-mcp
+          whl=$(ls pae-engine/dist/*.whl | head -1)
+          /tmp/pae-mcp/bin/pip install --disable-pip-version-check "${whl}[mcp]"
+          /tmp/pae-mcp/bin/pip check
+          /tmp/pae-mcp/bin/python -c "import mcp; print('sdk present')"
+          /tmp/pae-mcp/bin/pae --version

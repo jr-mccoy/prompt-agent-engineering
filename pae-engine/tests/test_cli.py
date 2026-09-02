@@ -30,7 +30,7 @@ class TestVersion(EngineTestCase):
 
 class TestCommandSurface(EngineTestCase):
     def test_the_command_surface_is_exactly_what_is_shipped(self) -> None:
-        """MCP is a later phase. Context compilation shipped in Phase 5."""
+        """Pinned so a command cannot be added without someone deciding to."""
         import argparse
 
         from pae_engine import cli
@@ -42,7 +42,13 @@ class TestCommandSurface(EngineTestCase):
         self.assertEqual(len(subparsers), 1)
         self.assertEqual(
             set(subparsers[0].choices),
-            {"where", "stats", "get", "search", "route", "bundle", "validate-registry"},
+            {
+                "where", "stats", "get", "search", "route", "bundle",
+                "validate-registry",
+                # Phase 6. Registered unconditionally so `pae mcp --help` works
+                # on a base install; the SDK is imported only when it runs.
+                "mcp",
+            },
         )
 
     def test_the_later_phase_commands_are_rejected(self) -> None:
@@ -51,7 +57,7 @@ class TestCommandSurface(EngineTestCase):
         If argparse internals ever shift under the test, this still fails when
         a future command is quietly added.
         """
-        for future in ("mcp", "compose", "serve", "evaluate"):
+        for future in ("compose", "serve", "evaluate"):
             with self.subTest(command=future):
                 self.assertEqual(self.run_cli([future], env={}).code, 2)
 

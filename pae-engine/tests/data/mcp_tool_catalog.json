@@ -1,0 +1,252 @@
+[
+  {
+    "annotations": {
+      "open_world_hint": false,
+      "read_only_hint": true
+    },
+    "description": "Search the local PAE Registry by description and return ranked resource metadata.\n\nLexical match over titles, descriptions, identifiers and tags. Resource\nbodies are neither read nor returned.",
+    "input_schema": {
+      "properties": {
+        "kinds": {
+          "anyOf": [
+            {
+              "items": {
+                "enum": [
+                  "prompt",
+                  "technique",
+                  "skill",
+                  "agent",
+                  "command",
+                  "persona"
+                ],
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "limit": {
+          "default": 10,
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "query": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "scopes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "maxItems": 25,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "type": "object"
+    },
+    "name": "pae_search_resources"
+  },
+  {
+    "annotations": {
+      "open_world_hint": false,
+      "read_only_hint": true
+    },
+    "description": "Decide which scope and kind of PAE resource should handle a task.\n\nMay report the route as ambiguous or weak rather than selecting one.\nReturns metadata only; no resource bodies.",
+    "input_schema": {
+      "properties": {
+        "kinds": {
+          "anyOf": [
+            {
+              "items": {
+                "enum": [
+                  "prompt",
+                  "technique",
+                  "skill",
+                  "agent",
+                  "command",
+                  "persona"
+                ],
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "limit": {
+          "default": 5,
+          "maximum": 25,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "task": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "task"
+      ],
+      "type": "object"
+    },
+    "name": "pae_route_task"
+  },
+  {
+    "annotations": {
+      "open_world_hint": false,
+      "read_only_hint": true
+    },
+    "description": "Return metadata for one PAE resource by UID or public ID.\n\nWith include_content, also returns its whole verified body when serving\npolicy allows; some resources are served as metadata only.",
+    "input_schema": {
+      "properties": {
+        "include_content": {
+          "default": false,
+          "type": "boolean"
+        },
+        "ref": {
+          "maxLength": 4096,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "ref"
+      ],
+      "type": "object"
+    },
+    "name": "pae_get_resource"
+  },
+  {
+    "annotations": {
+      "open_world_hint": false,
+      "read_only_hint": true
+    },
+    "description": "Assemble whole verified PAE resource bodies into one budgeted context bundle.\n\nGive either a task (routed automatically) or an explicit list of refs.\nReturns the bundle as Markdown for direct use, plus an audit record of\nwhat was included, omitted and why.",
+    "input_schema": {
+      "properties": {
+        "budget_bytes": {
+          "anyOf": [
+            {
+              "maximum": 4194304,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "budget_estimated_tokens": {
+          "anyOf": [
+            {
+              "maximum": 1048576,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "kinds": {
+          "anyOf": [
+            {
+              "items": {
+                "enum": [
+                  "prompt",
+                  "technique",
+                  "skill",
+                  "agent",
+                  "command",
+                  "persona"
+                ],
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "max_resources": {
+          "default": 25,
+          "maximum": 25,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "refs": {
+          "anyOf": [
+            {
+              "items": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "maxItems": 25,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "scopes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "maxItems": 25,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "task": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "type": "object"
+    },
+    "name": "pae_compose_bundle"
+  }
+]

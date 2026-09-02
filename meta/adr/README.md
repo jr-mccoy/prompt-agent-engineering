@@ -42,6 +42,11 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0025](0025-token-estimate-byte-guarantee.md) | The token count is an estimate; the byte ceiling is the guarantee | Accepted |
 | [0026](0026-rank-greedy-packing-and-ambiguity.md) | Rank-preserving greedy packing, with one promotion for an ambiguous route | Accepted |
 | [0027](0027-structured-bundle-and-deterministic-render.md) | The structured bundle is the artifact; Markdown is the budgeted rendering | Accepted |
+| [0028](0028-mcp-is-an-adapter.md) | MCP is an adapter, not a second Engine | Accepted |
+| [0029](0029-optional-mcp-dependency.md) | Optional MCP dependency, and what "zero dependencies" now means | Accepted |
+| [0030](0030-stdio-first-http-deferred.md) | stdio first; HTTP deferred | Accepted |
+| [0031](0031-result-channel-split.md) | Model text and a body-free structured audit; bodies cross once | Accepted |
+| [0032](0032-high-level-mcpserver.md) | High-level `MCPServer` with explicit `CallToolResult` | Accepted |
 
 ## Related
 

@@ -22,7 +22,7 @@ from typing import Any, Optional, Sequence, TextIO
 from ._lexical import DEFAULT_LIMIT, MAX_LIMIT
 from ._version import __version__
 from .context import DEFAULT_MAX_RESOURCES, Budget, ContextCompiler
-from .errors import PaeError, UsageError
+from .errors import EXIT_OK, PaeError, UsageError
 from .models import RECORD_SCHEMA, SUMMARY_SCHEMA
 from .registry import Registry
 from .repository import REPO_ENV_VAR, Repository
@@ -275,6 +275,22 @@ def _build_parser() -> argparse.ArgumentParser:
         dest="scopes",
         metavar="SCOPE",
         help="restrict packing to a scope the decision already found; repeatable, --task only",
+    )
+
+    # Registered without importing the MCP SDK. `pae mcp --help` must work on a
+    # base install, so the adapter is reached only when the command actually runs.
+    mcp = subparsers.add_parser(
+        "mcp",
+        help="serve this checkout to an MCP client over stdio",
+        description=(
+            "Serve this checkout to an MCP client over stdio. Requires the optional "
+            "'mcp' extra. The server is read-only and answers from one checkout "
+            "snapshot fixed at startup; restart it to observe a changed checkout. "
+            "stdout carries protocol traffic only, so diagnostics go to stderr."
+        ),
+    )
+    mcp.add_argument(
+        "--repo", metavar="PATH", default=_SUPPRESS, help="path to a PAE checkout"
     )
 
     validate = subparsers.add_parser(
@@ -604,6 +620,23 @@ def _cmd_validate(
     return 0
 
 
+def _cmd_mcp(repository: Repository) -> int:
+    """Serve over stdio. Writes nothing to stdout; the protocol owns that stream.
+
+    The extra is checked before the adapter is imported so a base install gets a
+    usage error naming the install command, rather than a traceback about a
+    third-party package the user never mentioned.
+    """
+    from .mcp import require_sdk
+
+    require_sdk()
+
+    from .mcp.server import serve_stdio
+
+    serve_stdio(repository)
+    return EXIT_OK
+
+
 # --------------------------------------------------------------------------
 # entry point
 # --------------------------------------------------------------------------
@@ -614,6 +647,9 @@ def _report_error(exc: PaeError, as_json: bool, err: TextIO) -> int:
         _emit_json(exc.to_json_obj(), err)
         return exc.exit_code
     err.write(f"{CONSOLE_NAME}: {exc.error}: {exc.message}\n")
+    install = exc.details.get("install")
+    if isinstance(install, str) and install:
+        err.write(f"  install it with: {install}\n")
     issues = exc.details.get("issues")
     if isinstance(issues, list):
         for issue in issues:
@@ -649,6 +685,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             return _cmd_route(repository, args, as_json, out)
         if args.command == "bundle":
             return _cmd_bundle(repository, args, as_json, out)
+        if args.command == "mcp":
+            return _cmd_mcp(repository)
         if args.command == "validate-registry":
             return _cmd_validate(repository, bool(args.verify_checksums), as_json, out)
 
