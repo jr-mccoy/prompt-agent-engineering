@@ -393,10 +393,23 @@ def identifying_phrases(record: Mapping[str, Any]) -> list[str]:
 
 
 def guard_text_preserved(original: str, sanitized: str) -> tuple[bool, list[str]]:
-    """Whether every protected heading in the original survives sanitization.
+    """Whether every protected heading survives sanitization.
 
     Checked per packet and enforced at export. This is the assertion that the
     masking protocol cannot quietly strip a safety guard.
+
+    The baseline is the text **after** frontmatter and the identifying H1 are
+    removed, not the raw original. Removing the title heading is step 2 of the
+    §5 protocol — mandatory — and a title is frequently worded like a guard:
+    ``# Worker Isolation Boundaries and Scope Limits`` matches on both
+    "boundaries" and "limits". Comparing against the raw original therefore
+    reported a required removal as a lost guard and refused to export a packet
+    whose actual guard section was intact.
+
+    So the check targets exactly the steps that *could* drop a guard by
+    accident — metadata-section removal and the redactions — and it reuses
+    ``_strip_title_heading`` rather than reimplementing its rule, so the two
+    cannot disagree about which heading step 2 takes.
     """
     def protected_headings(text: str) -> list[str]:
         found = []
@@ -406,7 +419,8 @@ def guard_text_preserved(original: str, sanitized: str) -> tuple[bool, list[str]
                 found.append(match.group(2).strip())
         return found
 
-    before = protected_headings(original)
+    baseline, _ = _strip_title_heading(_strip_frontmatter(original)[0])
+    before = protected_headings(baseline)
     after = set(protected_headings(sanitized))
     missing = [h for h in before if h not in after]
     return (not missing), missing

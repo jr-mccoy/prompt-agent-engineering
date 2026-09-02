@@ -112,6 +112,38 @@ class TestGuardPreservation(unittest.TestCase):
         self.assertTrue(ok)
         self.assertEqual(missing, [])
 
+    def test_a_guard_worded_title_is_not_a_lost_guard(self) -> None:
+        """Removing the identifying H1 is step 2, not a dropped guard.
+
+        Real case: a command titled "Worker Isolation Boundaries and Scope
+        Limits" matches the protected list on both "boundaries" and "limits".
+        Comparing against the raw original called the mandated title removal a
+        guard loss and refused to export a packet whose guard section was
+        entirely intact.
+        """
+        doc = (
+            "---\ntitle: \"Worker Isolation Boundaries and Scope Limits\"\n---\n\n"
+            "# Worker Isolation Boundaries and Scope Limits\n\n"
+            "## ROLE\n\nDo the thing.\n\n"
+            "### Escalation Contract\n\nStop and ask when unsure.\n"
+        )
+        result = masking.sanitize_body(doc)
+        ok, missing = masking.guard_text_preserved(doc, result.text)
+        self.assertTrue(ok, missing)
+        self.assertIn("### Escalation Contract", result.text)
+        self.assertNotIn("# Worker Isolation Boundaries", result.text)
+
+    def test_a_real_guard_loss_below_the_title_is_still_caught(self) -> None:
+        doc = (
+            "# Some Title\n\n## Overview\n\nx\n\n"
+            "## Limitations\n\nDo not rely on this.\n"
+        )
+        stripped = doc.replace(
+            "## Limitations\n\nDo not rely on this.\n", "")
+        ok, missing = masking.guard_text_preserved(doc, stripped)
+        self.assertFalse(ok)
+        self.assertEqual(missing, ["Limitations"])
+
 
 class TestSeparatorInsensitiveRedaction(unittest.TestCase):
     """The corpus writes one name three ways; all three must go."""

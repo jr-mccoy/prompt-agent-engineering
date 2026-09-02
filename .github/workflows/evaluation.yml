@@ -140,10 +140,19 @@ jobs:
             --repo . --allow-leakage
 
       # Runs the real selection against the real Registry and asserts the
-      # export is clean. Output goes to RUNNER_TEMP and is discarded; the
-      # command prints counts only, never a target, so the 45 UIDs cannot reach
-      # a public log. This is the firewall being tested on every PR rather than
-      # trusted because it worked once.
+      # export is clean. Output goes to RUNNER_TEMP and is discarded.
+      #
+      # The seed is derived from this commit, so every PR draws a *different*
+      # 45 and the check sweeps the corpus over time instead of re-testing one
+      # lucky sample. That is the point: the first run of this step found a
+      # resource whose title ("Worker Isolation Boundaries and Scope Limits")
+      # is worded like a safety guard, which the guard-preservation check then
+      # mis-read as a dropped guard. No fixed sample would have found it.
+      #
+      # These are therefore not the sealed targets — that draw is keyed to a
+      # chosen target commit, not to a PR head — so a failure diagnostic naming
+      # a UID does not disclose the answer key. The grep below is
+      # defence-in-depth on the success path.
       - name: Authoring firewall produces a leak-free author export
         env:
           PYTHONPATH: pae-engine/src:pae-engine/evaluation/src
