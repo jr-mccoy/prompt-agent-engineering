@@ -8,10 +8,12 @@
     "pr-review-toolkit@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true
   },
-  "extraKnownMarketplaces": [
-    {
-      "name": "claude-plugins-official",
-      "sourceRepo": "anthropics/claude-plugins-official"
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
     }
-  ]
+  }
 }
