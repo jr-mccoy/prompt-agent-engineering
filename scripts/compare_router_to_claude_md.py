@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Compare the executable router against CLAUDE.md's hand-written routing table.
+"""Compare the executable router against the hand-written routing table.
 
     PYTHONPATH=pae-engine/src python3 scripts/compare_router_to_claude_md.py
 
-Migration diagnostics, and nothing else. `CLAUDE.md` carries roughly 1,500
-hand-written ``"user phrase" -> resource`` mappings that predate the search
+Migration diagnostics, and nothing else. `meta/ROUTING_REFERENCE.md` (split out
+of `CLAUDE.md`, which now carries only the always-loaded essentials) carries
+roughly 1,500 hand-written ``"user phrase" -> resource`` mappings that predate the search
 implementation. They are the closest thing the repository has to an
 independent opinion about where a task should go, so agreement with them is
 useful evidence about whether an executable router could eventually replace
@@ -54,7 +55,7 @@ def extract_pairs(text: str) -> list[tuple[str, list[str]]]:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--repo", default=str(REPO_ROOT))
-    parser.add_argument("--router", default="CLAUDE.md")
+    parser.add_argument("--router", default="meta/ROUTING_REFERENCE.md")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args(argv if argv is not None else sys.argv[1:])
 
@@ -139,7 +140,7 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(report, indent=2, sort_keys=True))
         return 0
 
-    print("Router vs CLAUDE.md routing table — migration diagnostics only")
+    print("Router vs hand-written routing table — migration diagnostics only")
     print("=" * 64)
     print(f"parsed pairs                {report['parsed_pairs']}")
     print(f"unresolved (globbed paths)  {report['unresolved_pairs']}")

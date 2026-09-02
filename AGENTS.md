@@ -2,11 +2,13 @@
 
 Bootstrap file for coding agents that read `AGENTS.md` (Codex and similar).
 
-**This file is deliberately short.** The repository maintains exactly one deep
-routing reference, and it is [`CLAUDE.md`](CLAUDE.md). Read that file for domain
-routing, decision trees, and the task → resource map. Do not rely on a routing
-table duplicated here; there no longer is one, because keeping several in sync
-by hand is what made them disagree.
+**This file is deliberately short.** The repository maintains exactly one routing
+entry point, and it is [`CLAUDE.md`](CLAUDE.md) — domain placement rules, the
+authoring decision tree, and pointers onward. The exhaustive task → resource
+tables live one hop away in [`meta/ROUTING_REFERENCE.md`](meta/ROUTING_REFERENCE.md);
+open that only when you need it. Do not rely on a routing table duplicated here;
+there no longer is one, because keeping several in sync by hand is what made
+them disagree.
 
 ---
 
@@ -55,7 +57,8 @@ safety conventions, negative boundaries and ordered workflows.
 | You need | Read |
 |---|---|
 | **Routing, if the Engine is installed** | `pae route "<task>"` — executable, generated from the registry |
-| **Deep routing: which resource for which task** | [`CLAUDE.md`](CLAUDE.md) — the canonical routing reference |
+| **Routing entry point: domain placement, authoring decision tree** | [`CLAUDE.md`](CLAUDE.md) |
+| **Deep routing: which resource for which task** | [`meta/ROUTING_REFERENCE.md`](meta/ROUTING_REFERENCE.md) — the full hand-written tables |
 | Search and routing semantics | [`pae-engine/docs/search-routing.md`](pae-engine/docs/search-routing.md) |
 | Fast orientation before that | [`START_HERE_FOR_AI.md`](START_HERE_FOR_AI.md) |
 | Repository layout | [`REPO_MAP.md`](REPO_MAP.md) |
@@ -95,7 +98,7 @@ safety conventions, negative boundaries and ordered workflows.
 
 ## Token efficiency
 
-`CLAUDE.md` is large. Read it once, extract what you need, and work from that —
-do not re-read reference files you have already opened in a session. The
-"Token Efficiency Rules" section at the end of `CLAUDE.md` is the full policy
-and applies to every agent working here, not only Claude.
+`meta/ROUTING_REFERENCE.md` is large — grep it, or read the one section you need;
+never load it whole. Read any reference file once, extract what you need, and work
+from that. The "Token efficiency rules" section at the end of `CLAUDE.md` is the
+full policy and applies to every agent working here, not only Claude.

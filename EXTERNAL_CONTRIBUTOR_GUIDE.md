@@ -41,7 +41,7 @@ When in doubt, a **prompt** is the right unit. Skills/agents/commands are for re
 Prompts live in `domain-*/` directories. To place yours:
 
 1. Skim the **Repository Structure** table in [`README.md`](README.md#repository-structure).
-2. For the most complete "what goes where" routing, see the **Category Mapping** section of [`CLAUDE.md`](CLAUDE.md).
+2. For the most complete "what goes where" routing, see the **Category Mapping** section of [`meta/ROUTING_REFERENCE.md`](meta/ROUTING_REFERENCE.md).
 3. Search [`PROMPT_INDEX.md`](PROMPT_INDEX.md) for similar prompts and place yours alongside them.
 
 If genuinely nothing fits, propose a new domain in your PR and explain why existing ones don't work.

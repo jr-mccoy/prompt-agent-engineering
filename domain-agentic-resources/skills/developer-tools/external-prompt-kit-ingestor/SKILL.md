@@ -33,7 +33,7 @@ Do **not** use this skill for:
 
 1. **One source of truth per prompt.** Every extracted prompt becomes its own Tier-1 file with full YAML frontmatter. The original kit file stays in place as the narrative source and gets a top-of-file note pointing at the structured versions.
 2. **Reuse techniques before inventing them.** Most kits map to existing IDs in `techniques/MASTER_TECHNIQUE_INDEX.md`. Only register a new technique when the pattern is genuinely novel and reusable across domains.
-3. **Place by intent, not by surface form.** A prompt about agent loops belongs in `domain-engineering-workflows/ai-patterns/`, not wherever it's syntactically convenient. Use the Category Mapping in the root `CLAUDE.md`.
+3. **Place by intent, not by surface form.** A prompt about agent loops belongs in `domain-engineering-workflows/ai-patterns/`, not wherever it's syntactically convenient. Use the Category Mapping in `meta/ROUTING_REFERENCE.md`.
 4. **Indexes are not optional.** A prompt that isn't in `PROMPT_INDEX.json` and `PROMPT_INDEX.md` is invisible to discovery tooling. Update both.
 5. **Report implications.** Every ingestion ends with a written analysis of how the new prompts relate to existing patterns, what gaps they expose, and what follow-up work they suggest.
 
@@ -63,7 +63,7 @@ Phases:
 Before reporting completion, every extracted prompt must:
 - Have valid YAML frontmatter with title, category, description, techniques, difficulty, tags, updated, related_prompts
 - Reference at least 3 valid technique IDs from `techniques/MASTER_TECHNIQUE_INDEX.md`
-- Live in a domain directory consistent with the root `CLAUDE.md` Category Mapping
+- Live in a domain directory consistent with the `meta/ROUTING_REFERENCE.md` Category Mapping
 - Appear in both `PROMPT_INDEX.json` and `PROMPT_INDEX.md`
 - Carry a `Source:` line in the body pointing back to the original kit file
 
@@ -80,4 +80,4 @@ Done = (a) all prompts extracted and placed, (b) techniques registered or matche
 - Skill: `domain-agentic-resources/skills/developer-tools/skill-creator` — for promoting recurring kit patterns into reusable skills
 - Agent: `domain-agentic-resources/agents/orchestration/prompt-kit-ingestor.md` — the parallel-worker wrapper around this skill
 - Authoring: `authoring/skill-patterns/AGENT_SKILL_QUICK_START.md` — when an ingested kit clearly wants to become a skill rather than a prompt set
-- Reference: root `CLAUDE.md` Category Mapping section — authoritative domain placement rules
+- Reference: `meta/ROUTING_REFERENCE.md` Category Mapping section, plus the domain placement axis in root `CLAUDE.md` — authoritative domain placement rules

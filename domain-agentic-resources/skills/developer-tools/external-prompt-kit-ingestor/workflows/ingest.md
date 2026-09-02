@@ -19,7 +19,7 @@ Steps:
 **Goal:** Assign each prompt to a domain, category, and difficulty.
 
 Steps:
-1. For each prompt, consult the root `CLAUDE.md` "Category Mapping" section.
+1. For each prompt, consult the "Category Mapping" section of `meta/ROUTING_REFERENCE.md`.
 2. Assign:
    - **Domain directory** (e.g., `domain-engineering-workflows/ai-patterns/`)
    - **Category slug** for frontmatter (e.g., `ai-patterns`, `analysis/security`)

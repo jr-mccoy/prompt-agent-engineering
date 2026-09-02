@@ -5,7 +5,7 @@ Run this against every extracted prompt file before declaring the ingestion comp
 ## Per-File Checks
 
 - [ ] Filename follows `{category}_{specific_function}.md` (or `workflow_agent_{topic}.md` for ai-patterns)
-- [ ] Lives in a directory consistent with root `CLAUDE.md` Category Mapping
+- [ ] Lives in a directory consistent with `meta/ROUTING_REFERENCE.md` Category Mapping
 - [ ] YAML frontmatter parses (no missing colons, balanced quotes)
 - [ ] `title` is in title case
 - [ ] `category` matches the directory
@@ -26,7 +26,7 @@ Run this against every extracted prompt file before declaring the ingestion comp
 - [ ] Every new file appears in `PROMPT_INDEX.json` with all required fields
 - [ ] Every new file appears in `PROMPT_INDEX.md` in the appropriate domain section
 - [ ] If new technique IDs were added, they have full definitions (not just IDs) in `MASTER_TECHNIQUE_INDEX.md`
-- [ ] If a new subdirectory was created, root `CLAUDE.md` Category Mapping is updated to include it
+- [ ] If a new subdirectory was created, `meta/ROUTING_REFERENCE.md` Category Mapping is updated to include it
 - [ ] Source kit file has a `> **Repository note:**` block at the top listing the new structured files
 - [ ] Source kit file has no other modifications
 

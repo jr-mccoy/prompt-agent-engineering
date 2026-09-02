@@ -2,9 +2,10 @@
 
 **Purpose:** Fast orientation for AI assistants (Claude, ChatGPT, Codex, Cursor, etc.) working in the **Prompt & Agent Engineering (PAE)** repository.
 
-This file is a bootstrap, not a router. The repository maintains one deep
-routing reference — [`CLAUDE.md`](CLAUDE.md) — and every other entry point
-points at it.
+This file is a bootstrap, not a router. The repository maintains one routing
+entry point — [`CLAUDE.md`](CLAUDE.md) — and every other entry point points at
+it. Its exhaustive tables live one hop away in
+[`meta/ROUTING_REFERENCE.md`](meta/ROUTING_REFERENCE.md).
 
 ---
 
@@ -39,7 +40,7 @@ compilation and MCP are still planned. See
 
 | Priority | File | Why |
 |----------|------|-----|
-| 1 | [`CLAUDE.md`](CLAUDE.md) | The canonical routing reference: decision trees, domain routing, task → resource map |
+| 1 | [`CLAUDE.md`](CLAUDE.md) | The routing entry point: domain placement axis, authoring decision tree, token-efficiency policy. Points to [`meta/ROUTING_REFERENCE.md`](meta/ROUTING_REFERENCE.md) for the full task → resource map |
 | 2 | [`techniques/MASTER_TECHNIQUE_INDEX.md`](techniques/MASTER_TECHNIQUE_INDEX.md) | Canonical technique catalog. All technique IDs are authoritative here |
 | 3 | [`AI_AGENT_QUICK_START.md`](AI_AGENT_QUICK_START.md) or [`NON_CODING_QUICK_START.md`](NON_CODING_QUICK_START.md) | The 5-step process for authoring a new prompt, coding and non-coding respectively |
 
@@ -58,17 +59,20 @@ It is generated from the registry, so it cannot drift from the corpus. It
 reports `ambiguous`, `weak` or `no_route` instead of guessing, and every status
 exits 0. Details: [`pae-engine/docs/search-routing.md`](pae-engine/docs/search-routing.md).
 
-**Otherwise — and for everything the registry cannot represent — use
-[`CLAUDE.md`](CLAUDE.md).** It carries the full task → resource map and is
-the only routing table maintained by hand. It also owns the authoring decision
-tree, domain placement rules, safety conventions and negative boundaries, none
-of which the executable router replaces. A duplicate table previously lived
-here and drifted out of agreement with it; the counts and folder inventory in
-that table were wrong, so it was removed rather than re-synchronised.
+**Otherwise — and for everything the registry cannot represent — start at
+[`CLAUDE.md`](CLAUDE.md).** It owns the authoring decision tree, the domain
+placement axis, and the reuse-before-authoring rule, none of which the
+executable router replaces. It hands off to
+[`meta/ROUTING_REFERENCE.md`](meta/ROUTING_REFERENCE.md), which carries the full
+task → resource map, the safety conventions and the negative boundaries — the
+only routing table maintained by hand. Grep that file; do not read it whole. A
+duplicate table previously lived here and drifted out of agreement with it; the
+counts and folder inventory in that table were wrong, so it was removed rather
+than re-synchronised.
 
 For repository layout, see [`REPO_MAP.md`](REPO_MAP.md). For the full domain
 tree with per-directory descriptions, see the *Repository Structure* section of
-[`CLAUDE.md`](CLAUDE.md).
+[`meta/ROUTING_REFERENCE.md`](meta/ROUTING_REFERENCE.md).
 
 Four shortcuts worth knowing before you open it:
 
@@ -123,7 +127,8 @@ is canonical.**
 
 ## Full documentation
 
-- [`CLAUDE.md`](CLAUDE.md) — canonical routing reference
+- [`CLAUDE.md`](CLAUDE.md) — routing entry point and agent guide
+- [`meta/ROUTING_REFERENCE.md`](meta/ROUTING_REFERENCE.md) — full hand-written routing tables
 - [`README.md`](README.md) — project overview
 - [`REPO_MAP.md`](REPO_MAP.md) — folder structure
 - [`ARCHITECTURE.md`](ARCHITECTURE.md) — current vs planned architecture
