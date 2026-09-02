@@ -58,6 +58,38 @@ MAX_SCOPES = 25
 #: adapter never opens a file.
 READ_ONLY = ToolAnnotations(read_only_hint=True, open_world_hint=False)
 
+#: Descriptions a host displays, stated explicitly rather than harvested from
+#: docstrings. Python 3.13 dedents ``__doc__`` and earlier versions do not, so a
+#: docstring-derived description would render with ragged indentation on some
+#: interpreters and not others — and would change the cached tool catalog purely
+#: because of the runtime it was built on.
+DESCRIPTIONS: dict[str, str] = {
+    "pae_search_resources": (
+        "Search the local PAE Registry by description and return ranked "
+        "resource metadata. Lexical match over titles, descriptions, "
+        "identifiers and tags. Resource bodies are neither read nor "
+        "returned."
+    ),
+    "pae_route_task": (
+        "Decide which scope and kind of PAE resource should handle a task, "
+        "with candidate resources. May report the route as ambiguous or "
+        "weak rather than selecting one. Returns metadata only; no resource "
+        "bodies."
+    ),
+    "pae_get_resource": (
+        "Return metadata for one PAE resource by UID or public ID. With "
+        "include_content, also returns its whole verified body when serving "
+        "policy allows; some resources are served as metadata only."
+    ),
+    "pae_compose_bundle": (
+        "Assemble whole verified PAE resource bodies into one budgeted "
+        "context bundle for a task. Give either a task, which is routed "
+        "automatically, or an explicit list of refs. Returns the bundle as "
+        "Markdown for direct use, plus an audit record of what was "
+        "included, omitted and why."
+    ),
+}
+
 # A static Literal is required for schema generation, but a second hand-written
 # copy of the kind vocabulary is exactly the drift this module refuses to
 # create elsewhere. So it is written once and checked against the core tuple at
@@ -116,7 +148,11 @@ def register_tools(server: Any, runtime: PaeRuntime) -> None:
     """Attach the four tools, in a fixed order clients may cache."""
 
     # ---------------------------------------------------------------- search
-    @server.tool(name="pae_search_resources", annotations=READ_ONLY)
+    @server.tool(
+        name="pae_search_resources",
+        description=DESCRIPTIONS["pae_search_resources"],
+        annotations=READ_ONLY,
+    )
     def pae_search_resources(
         query: QueryStr,
         limit: Annotated[int, Field(ge=1, le=MAX_LIMIT)] = 10,
@@ -139,7 +175,11 @@ def register_tools(server: Any, runtime: PaeRuntime) -> None:
         return _guard(runtime, run)
 
     # ----------------------------------------------------------------- route
-    @server.tool(name="pae_route_task", annotations=READ_ONLY)
+    @server.tool(
+        name="pae_route_task",
+        description=DESCRIPTIONS["pae_route_task"],
+        annotations=READ_ONLY,
+    )
     def pae_route_task(
         task: QueryStr,
         limit: Annotated[int, Field(ge=1, le=MAX_ROUTE_LIMIT)] = 5,
@@ -159,7 +199,11 @@ def register_tools(server: Any, runtime: PaeRuntime) -> None:
         return _guard(runtime, run)
 
     # ------------------------------------------------------------------- get
-    @server.tool(name="pae_get_resource", annotations=READ_ONLY)
+    @server.tool(
+        name="pae_get_resource",
+        description=DESCRIPTIONS["pae_get_resource"],
+        annotations=READ_ONLY,
+    )
     def pae_get_resource(
         ref: RefStr,
         include_content: bool = False,
@@ -189,7 +233,11 @@ def register_tools(server: Any, runtime: PaeRuntime) -> None:
         return _guard(runtime, run)
 
     # --------------------------------------------------------------- compose
-    @server.tool(name="pae_compose_bundle", annotations=READ_ONLY)
+    @server.tool(
+        name="pae_compose_bundle",
+        description=DESCRIPTIONS["pae_compose_bundle"],
+        annotations=READ_ONLY,
+    )
     def pae_compose_bundle(
         task: Optional[QueryStr] = None,
         refs: Optional[Annotated[list[RefStr], Field(max_length=MAX_REFS)]] = None,

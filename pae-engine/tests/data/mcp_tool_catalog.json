@@ -4,7 +4,7 @@
       "open_world_hint": false,
       "read_only_hint": true
     },
-    "description": "Search the local PAE Registry by description and return ranked resource metadata.\n\nLexical match over titles, descriptions, identifiers and tags. Resource\nbodies are neither read nor returned.",
+    "description": "Search the local PAE Registry by description and return ranked resource metadata. Lexical match over titles, descriptions, identifiers and tags. Resource bodies are neither read nor returned.",
     "input_schema": {
       "properties": {
         "kinds": {
@@ -68,7 +68,7 @@
       "open_world_hint": false,
       "read_only_hint": true
     },
-    "description": "Decide which scope and kind of PAE resource should handle a task.\n\nMay report the route as ambiguous or weak rather than selecting one.\nReturns metadata only; no resource bodies.",
+    "description": "Decide which scope and kind of PAE resource should handle a task, with candidate resources. May report the route as ambiguous or weak rather than selecting one. Returns metadata only; no resource bodies.",
     "input_schema": {
       "properties": {
         "kinds": {
@@ -117,7 +117,7 @@
       "open_world_hint": false,
       "read_only_hint": true
     },
-    "description": "Return metadata for one PAE resource by UID or public ID.\n\nWith include_content, also returns its whole verified body when serving\npolicy allows; some resources are served as metadata only.",
+    "description": "Return metadata for one PAE resource by UID or public ID. With include_content, also returns its whole verified body when serving policy allows; some resources are served as metadata only.",
     "input_schema": {
       "properties": {
         "include_content": {
@@ -142,7 +142,7 @@
       "open_world_hint": false,
       "read_only_hint": true
     },
-    "description": "Assemble whole verified PAE resource bodies into one budgeted context bundle.\n\nGive either a task (routed automatically) or an explicit list of refs.\nReturns the bundle as Markdown for direct use, plus an audit record of\nwhat was included, omitted and why.",
+    "description": "Assemble whole verified PAE resource bodies into one budgeted context bundle for a task. Give either a task, which is routed automatically, or an explicit list of refs. Returns the bundle as Markdown for direct use, plus an audit record of what was included, omitted and why.",
     "input_schema": {
       "properties": {
         "budget_bytes": {

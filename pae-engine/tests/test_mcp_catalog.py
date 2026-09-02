@@ -19,6 +19,7 @@ carry no contract and would churn between compatible 2.x releases.
 from __future__ import annotations
 
 import asyncio
+import inspect
 import json
 import unittest
 from pathlib import Path
@@ -67,7 +68,10 @@ def normalized_catalog(tools) -> list[dict]:
         out.append(
             {
                 "name": tool.name,
-                "description": (tool.description or "").strip(),
+                # cleandoc, not strip: Python 3.13 dedents __doc__ and earlier
+                # versions do not, so a docstring-derived description would make
+                # this snapshot depend on the interpreter that built it.
+                "description": inspect.cleandoc(tool.description or ""),
                 "input_schema": _normalize_schema(tool.input_schema),
                 "annotations": {
                     "read_only_hint": annotations.read_only_hint if annotations else None,
