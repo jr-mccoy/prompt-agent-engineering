@@ -283,6 +283,44 @@ class TestAuditGates(TempDirCase):
         # gating: a body about its own subject shares its title's vocabulary.
         self.assertGreaterEqual(report.overlap["title_token_overlap"]["max"], 0.7)
 
+    def test_a_packet_naming_its_own_target_is_caught(self) -> None:
+        """The leak that matters: the author is shown what they are writing about."""
+        (self.tmp_path("PKT-0001.md")).write_text(
+            "This is the spec to code compliance checker.\n", encoding="utf-8")
+        report = audit.audit_export(self.tmp_path(), [self._identity()])
+        self.assertGreaterEqual(report.counts["full_title"], 1)
+        self.assertFalse(report.passed)
+
+    def test_another_packet_holding_a_generic_two_word_title_is_not_gated(self) -> None:
+        """Coincidence, not disclosure.
+
+        A packet about observability legitimately says "distributed tracing".
+        That another selected target happens to be *named* that tells the
+        author nothing they can map to a packet ID, and redacting it would
+        delete the subject matter spec §5 requires preserved.
+        """
+        (self.tmp_path("PKT-0009.md")).write_text(
+            "Instrument the service with distributed tracing and log "
+            "aggregation.\n", encoding="utf-8")
+        identity = self._identity(packet_id="PKT-0019", title="distributed-tracing",
+                                  uid="", public_id="", source_path="")
+        report = audit.audit_export(self.tmp_path(), [identity])
+        self.assertEqual(report.counts["full_title"], 0)
+        self.assertTrue(report.passed)
+        self.assertEqual(report.overlap["cross_packet_generic_title_count"], 1)
+
+    def test_another_packet_holding_a_name_shaped_title_is_still_gated(self) -> None:
+        """Three tokens or more is a name, not vocabulary — wherever it appears."""
+        (self.tmp_path("PKT-0009.md")).write_text(
+            "Compare against the geriatric intake polypharmacy review.\n",
+            encoding="utf-8")
+        identity = self._identity(
+            packet_id="PKT-0031", title="Geriatric Intake Polypharmacy Review",
+            uid="", public_id="", source_path="")
+        report = audit.audit_export(self.tmp_path(), [identity])
+        self.assertEqual(report.counts["full_title"], 1)
+        self.assertFalse(report.passed)
+
     def test_single_word_title_is_reported_not_gated(self) -> None:
         report = self._audit("We triage every issue that comes in.\n",
                              title="issue", source_path="", public_id="", uid="")

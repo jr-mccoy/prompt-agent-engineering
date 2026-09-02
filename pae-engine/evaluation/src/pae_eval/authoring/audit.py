@@ -15,7 +15,11 @@ Gated at exactly zero, because each one hands over identity outright:
 ``full_title``
     The target's title as a **consecutive token sequence**. That is the spec's
     phrase and it is the right test: a title reproduced in order is the answer
-    written out.
+    written out. Scoped to what actually discloses identity — a packet naming
+    *its own* target, or any packet reproducing a *name-shaped* title (three
+    tokens or more). A packet containing another target's two-word title, such
+    as ``performance optimization``, is coincidence rather than disclosure and
+    is counted rather than gated; see ``is_name_shaped_title``.
 ``reviewer_map`` ``gold_label`` ``search_router_output``
     Reviewer-side material that must live only in the other export.
 
@@ -165,6 +169,19 @@ class TargetIdentity:
         return len(self.title_tokens) >= 2
 
     @property
+    def is_name_shaped_title(self) -> bool:
+        """Whether this title reads as a *name* rather than as vocabulary.
+
+        Used only for the cross-packet check. Two-token titles in this corpus
+        are overwhelmingly generic technical compounds — ``performance
+        optimization``, ``distributed tracing``, ``backend architect``,
+        ``competitive analysis`` — which are ordinary words in any document on
+        the subject. Three or more tokens is where a title stops being a phrase
+        anyone might write and starts being the specific name of one resource.
+        """
+        return len(self.title_tokens) >= 3
+
+    @property
     def path_fragments(self) -> tuple[str, ...]:
         """Strings whose presence would give the path away.
 
@@ -287,6 +304,7 @@ def audit_export(
 
     title_overlaps: list[float] = []
     description_overlaps: list[float] = []
+    cross_generic: list[str] = []
 
     for path in files:
         rel = path.relative_to(root).as_posix()
@@ -349,13 +367,29 @@ def audit_export(
                                             target.packet_id))
                     counts["source_path"] += 1
                     break
+            # Self-disclosure versus coincidence. A packet that names its own
+            # target hands the author the answer. A packet that happens to
+            # contain a *different* target's generic two-word title has told
+            # them nothing: they cannot map "distributed tracing" to a packet
+            # ID, and redacting it would delete the subject matter §5 requires
+            # preserved — from a body that is legitimately about that subject.
+            owner = Path(rel).stem
+            is_self = owner == target.packet_id
             title_tokens = target.title_tokens
-            if target.is_distinctive_title \
-                    and contains_sequence(text_tokens, title_tokens):
-                findings.append(Finding("full_title", rel,
-                                        "title present as a consecutive sequence",
-                                        target.packet_id))
-                counts["full_title"] += 1
+            gated = (target.is_distinctive_title if is_self
+                     else target.is_name_shaped_title)
+            if title_tokens and contains_sequence(text_tokens, title_tokens):
+                if gated:
+                    findings.append(Finding(
+                        "full_title", rel,
+                        ("packet names its own target's title" if is_self else
+                         "another target's name-shaped title appears verbatim"),
+                        target.packet_id))
+                    counts["full_title"] += 1
+                elif not is_self:
+                    cross_generic.append(
+                        f"{owner} contains {target.packet_id}'s title "
+                        f"({len(title_tokens)} tokens)")
 
             title_overlaps.append(containment(set(title_tokens), text_token_set))
             if target.description:
@@ -371,12 +405,19 @@ def audit_export(
         "description_token_overlap": _distribution(description_overlaps),
         "single_token_title_packets": single_token_titles,
         "single_token_title_count": len(single_token_titles),
+        "cross_packet_generic_title_matches": sorted(cross_generic),
+        "cross_packet_generic_title_count": len(cross_generic),
         "note": (
             "Scattered token overlap is expected: spec §5 requires operational "
             "content to be preserved verbatim, and a body about its own subject "
             "shares vocabulary with its title. Only the ordered title sequence "
-            "is gated, and only for multi-token titles — a one-word title is an "
-            "ordinary English word whose presence identifies nothing."
+            "is gated. A packet naming its OWN target is gated at two tokens or "
+            "more. A packet containing a DIFFERENT target's title is gated only "
+            "when that title is name-shaped (three or more tokens); two-token "
+            "titles in this corpus are generic technical compounds such as "
+            "'performance optimization' or 'distributed tracing', which are "
+            "ordinary words in any document on the subject and cannot be mapped "
+            "back to a packet ID. Those are counted here instead."
         ),
     }
 
