@@ -47,6 +47,14 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0030](0030-stdio-first-http-deferred.md) | stdio first; HTTP deferred | Accepted |
 | [0031](0031-result-channel-split.md) | Model text and a body-free structured audit; bodies cross once | Accepted |
 | [0032](0032-high-level-mcpserver.md) | High-level `MCPServer` with explicit `CallToolResult` | Accepted |
+| [0033](0033-evaluation-runtime-separate-from-engine.md) | The evaluation runtime is separate from the Engine runtime | Accepted |
+| [0034](0034-independent-benchmark-separate-from-tuning-data.md) | The independent benchmark is separate from tuning data | Accepted |
+| [0035](0035-four-condition-comparison.md) | Four conditions, with D vs B as the primary comparison | Accepted |
+| [0036](0036-raw-repository-baseline.md) | The raw-repository baseline is ripgrep, list and read | Accepted |
+| [0037](0037-benchmark-leakage-isolation.md) | Benchmark isolation by construction, and the participant snapshot | Accepted |
+| [0038](0038-frozen-plan-and-append-only-evidence.md) | A frozen plan and append-only evidence | Accepted |
+| [0039](0039-statistical-primary-endpoint.md) | Paired task pass rate, exact McNemar, and the confirmatory repeat | Accepted |
+| [0040](0040-public-performance-claim-governance.md) | Public performance-claim governance | Accepted |
 
 ## Related
 

@@ -1,0 +1,6 @@
+{
+  "benchmark_version": "0.0.1-fixture",
+  "fixture": true,
+  "disclosure": "SYNTHETIC TEST FIXTURE — NOT INDEPENDENT BENCHMARK EVIDENCE",
+  "note": "Six synthetic tasks that exist only to exercise the harness end to end in CI. They are not independently authored, were not reviewed, and carry no information about PAE's effect on anything."
+}

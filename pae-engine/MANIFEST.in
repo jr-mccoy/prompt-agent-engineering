@@ -9,4 +9,12 @@ recursive-include docs *.md
 # Never the corpus or the registry: the Engine reads those from a checkout.
 prune dist
 prune build
+
+# Never the evaluation harness. `packages.find` already scopes the wheel to
+# src/, and nothing above names evaluation/, so this is defence in depth rather
+# than the only thing standing between a provider SDK and the Engine's
+# zero-dependency guarantee - but "true by accident of layout" is not a
+# guarantee, and pae-engine/evaluation/tests asserts this holds.
+prune evaluation
+
 global-exclude __pycache__ *.py[cod]

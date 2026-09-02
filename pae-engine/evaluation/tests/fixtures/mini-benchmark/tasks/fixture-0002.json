@@ -1,0 +1,115 @@
+{
+  "task_id": "fixture-0002",
+  "benchmark_version": "0.0.1-fixture",
+  "class": "multi_resource_composition",
+  "query": "Combine security and performance considerations into one review note.",
+  "deliverable": "A note with a Summary heading covering both concerns.",
+  "rubric": {
+    "criteria": [
+      {
+        "criterion_id": "required_elements",
+        "description": "Required elements present.",
+        "type": "deterministic",
+        "weight": 0.35,
+        "required": true,
+        "deterministic_rule": {
+          "kind": "contains_all",
+          "args": {
+            "strings": [
+              "Summary"
+            ]
+          }
+        }
+      },
+      {
+        "criterion_id": "format_gate",
+        "description": "No absolute paths disclosed.",
+        "type": "deterministic",
+        "weight": 0.1,
+        "required": false,
+        "failure_gate": true,
+        "deterministic_rule": {
+          "kind": "no_absolute_paths",
+          "args": {}
+        }
+      },
+      {
+        "criterion_id": "no_gold_leakage",
+        "description": "No evaluation metadata.",
+        "type": "deterministic",
+        "weight": 0.1,
+        "required": false,
+        "failure_gate": true,
+        "deterministic_rule": {
+          "kind": "no_gold_leakage",
+          "args": {}
+        }
+      },
+      {
+        "criterion_id": "substance",
+        "description": "At least 20 words of substance.",
+        "type": "deterministic",
+        "weight": 0.15,
+        "required": true,
+        "deterministic_rule": {
+          "kind": "min_length",
+          "args": {
+            "words": 20
+          }
+        }
+      },
+      {
+        "criterion_id": "correctness",
+        "description": "Claims are correct.",
+        "type": "judge",
+        "weight": 0.2,
+        "required": false,
+        "judge_instruction": "Score the factual correctness of the answer."
+      },
+      {
+        "criterion_id": "completeness",
+        "description": "All sub-asks addressed.",
+        "type": "judge",
+        "weight": 0.1,
+        "required": false,
+        "judge_instruction": "Score whether every part of the request was addressed."
+      }
+    ]
+  },
+  "scored_dimensions": [
+    "scope",
+    "kind"
+  ],
+  "acceptable_resource_uids": [],
+  "acceptable_scopes": [
+    "software-engineering"
+  ],
+  "acceptable_kinds": [
+    "prompt"
+  ],
+  "acceptable_route_statuses": [],
+  "canonical_policy": "canonical_or_registered_copy_both_credited",
+  "label_rationale": "Synthetic fixture label; not an independent judgement.",
+  "label_provenance": {
+    "authoring_mode": "natural_external",
+    "author": {
+      "kind": "ai",
+      "provider": "anthropic",
+      "model": "fixture-author",
+      "date": "2026-09-02",
+      "prompt_sha256": "sha256:fixture",
+      "saw_pae_metadata": false
+    },
+    "reviewer": {
+      "kind": "ai",
+      "provider": "anthropic",
+      "model": "fixture-reviewer",
+      "date": "2026-09-02",
+      "prompt_sha256": "sha256:fixture",
+      "saw_pae_metadata": false
+    },
+    "adjudicated": false
+  },
+  "leakage_audit": {},
+  "tags": []
+}

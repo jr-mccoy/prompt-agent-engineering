@@ -1,0 +1,68 @@
+# pae-eval — the PAE evaluation harness.
+#
+# A separate project from the Engine, deliberately. The Engine is a read-only,
+# no-network, zero-dependency runtime (ADR-0003, ADR-0018, ADR-0019); the
+# harness calls provider APIs, spends money and writes result files. Those two
+# things must not share a dependency graph, an import path or a release
+# cadence, so this directory is its own project and never ships inside the
+# Engine wheel or sdist.
+#
+# See meta/adr/0033-evaluation-runtime-separate-from-engine.md.
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pae-eval"
+version = "0.1.0.dev0"
+description = "Independent evaluation harness for the PAE Registry: sealed benchmarks, condition isolation, paired statistics and evidence manifests."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "PAE Registry maintainers" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
+    "Private :: Do Not Upload",
+]
+
+# Empty on purpose. `plan`, `validate-benchmark`, the fake provider, the whole
+# statistics core and report generation all run on the standard library, so CI
+# needs no wheels and no credentials to exercise the harness end to end.
+# Everything that talks to a network or implements a published statistical test
+# is an extra.
+dependencies = []
+
+[project.optional-dependencies]
+# Version floors verified against PyPI on 2026-09-02 (see README.md ->
+# "Provider SDK verification"). Ceilings are the next major, because every one
+# of these has shipped a breaking major before.
+mcp = ["mcp>=2.1.1,<3"]
+anthropic = ["anthropic>=1.3,<2"]
+openai = ["openai>=3.7,<4"]
+analysis = ["scipy>=1.18,<2"]
+all = [
+    "mcp>=2.1.1,<3",
+    "anthropic>=1.3,<2",
+    "openai>=3.7,<4",
+    "scipy>=1.18,<2",
+]
+
+# Deliberately no console script. `pae` belongs to the Engine and must never
+# grow an `eval` subcommand; the harness is reached as `python -m pae_eval`.
+# See meta/adr/0033-evaluation-runtime-separate-from-engine.md.
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pae_eval = ["py.typed"]

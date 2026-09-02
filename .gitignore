@@ -50,3 +50,10 @@ secrets.yaml
 .claude/plugins/cache/
 .claude/plugins/installed_plugins.json
 .claude/plugins/known_marketplaces.json
+
+# Evaluation run output. Raw trial data, snapshots and reports are
+# evidence artifacts, not source: they live outside the repository by
+# default, and a development run that writes here stays untracked.
+evaluation-runs/
+pae-engine/evaluation-runs/
+pae-engine/evaluation/dist/

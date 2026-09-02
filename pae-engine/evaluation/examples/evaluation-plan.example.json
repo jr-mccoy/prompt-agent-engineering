@@ -1,0 +1,122 @@
+{
+  "benchmark_sha256": "",
+  "benchmark_version": "",
+  "bootstrap_resamples": 10000,
+  "bundle_budget": {
+    "estimated_tokens": 8000,
+    "max_resources": 25
+  },
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "cost_ceiling_policy": {
+    "abort_before_exceeding": true,
+    "requires_explicit_max_cost_usd": true,
+    "requires_explicit_max_trials": true
+  },
+  "efficiency_target_token_reduction": 0.2,
+  "evaluation_version": "0.1.0-example",
+  "exclusion_policy": {
+    "exclude_exhausted_infrastructure_failures": true,
+    "retain_non_discriminating_tasks": true,
+    "retain_refusals_as_failures": true
+  },
+  "exploratory_endpoints": [
+    "per_task_class",
+    "per_scope"
+  ],
+  "harness_version": "0.1.0.dev0",
+  "judge": {
+    "allow_same_family": false,
+    "audit_sample_share": 0.2,
+    "effort": null,
+    "max_output_tokens": 2000,
+    "model": "gpt-5.6-terra",
+    "pairwise_on_primary": true,
+    "provider": "openai",
+    "second_judge": null,
+    "thresholds": {
+      "inter_judge_weighted_kappa": 0.6,
+      "manual_review_spearman_rho": 0.7,
+      "position_flip_rate_max": 0.15,
+      "self_consistency_weighted_kappa": 0.75,
+      "verbosity_correlation_abs_max": 0.3
+    }
+  },
+  "leakage_thresholds": {
+    "id_tail_containment_max": 0,
+    "median_target_overlap_masked_derived_max": 0.55,
+    "median_target_overlap_max": 0.5,
+    "routing_reference_jaccard_share_max": 0.05,
+    "routing_reference_jaccard_threshold": 0.6,
+    "title_token_containment_max": 0
+  },
+  "limits": {
+    "max_tool_turns": 40,
+    "model_call_timeout_s": 120,
+    "tool_call_timeout_s": 30,
+    "tool_loop_timeout_s": 600
+  },
+  "minimum_meaningful_effect_pp": 10.0,
+  "mode": "development",
+  "models": [
+    {
+      "effort": "high",
+      "extra": {},
+      "max_output_tokens": 6000,
+      "model": "claude-opus-5",
+      "provider": "anthropic",
+      "role": "primary"
+    },
+    {
+      "effort": null,
+      "extra": {},
+      "max_output_tokens": 6000,
+      "model": "gpt-5.6-terra",
+      "provider": "openai",
+      "role": "robustness"
+    }
+  ],
+  "multiple_comparison_policy": "holm_bonferroni_on_secondary",
+  "non_inferiority_margin_pp": -5.0,
+  "notes": "EXAMPLE PLAN — reflects the Phase 7A recommendation. Model ids, pricing and hashes must be re-verified and re-pinned before any sealed run. The second B/D repeat is a pre-planned robustness measurement; only repeat 0 enters the confirmatory McNemar.",
+  "pae_commit": "",
+  "participant_snapshot_sha256": "",
+  "pricing_snapshot_sha256": "",
+  "primary_comparison": [
+    "D",
+    "B"
+  ],
+  "primary_endpoint": "task_pass",
+  "randomization_seed": 20260902,
+  "repeat_strategy": "first_repeat_confirmatory",
+  "repeats": {
+    "A": 1,
+    "B": 2,
+    "C": 1,
+    "D": 2
+  },
+  "retry_policy": {
+    "base_delay_s": 1.0,
+    "infrastructure_max_attempts": 3,
+    "jitter": true,
+    "max_delay_s": 30.0,
+    "model_behaviour_retried": false
+  },
+  "schema_version": "pae-eval-plan/1",
+  "secondary_endpoints": [
+    "continuous_rubric_score",
+    "recall_at_1",
+    "recall_at_5",
+    "scope_at_1",
+    "kind_at_1",
+    "safety_pass_rate",
+    "total_tokens",
+    "tool_calls"
+  ],
+  "system_prompt_sha256": {},
+  "tool_catalog_sha256": {}
+}

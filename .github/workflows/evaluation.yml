@@ -1,0 +1,335 @@
+name: Evaluation
+
+# The evaluation harness: free, offline, and credential-free.
+#
+# Every job here runs with no provider API key and makes no paid request. The
+# fake provider drives the whole pipeline end to end, twice, with opposite
+# ground truth — a pipeline that only ever sees PAE win is a pipeline whose
+# reporting has never been tested.
+#
+# The sealed benchmark never runs on a pull request.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'pae-engine/evaluation/**'
+      - 'pae-engine/src/**'
+      - 'pae-engine/MANIFEST.in'
+      - 'pae-engine/pyproject.toml'
+      - 'meta/registry/**'
+      - '.github/workflows/evaluation.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'pae-engine/evaluation/**'
+      - 'pae-engine/src/**'
+      - 'pae-engine/MANIFEST.in'
+      - 'pae-engine/pyproject.toml'
+      - 'meta/registry/**'
+      - '.github/workflows/evaluation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: evaluation-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Deliberately empty. A credential must not reach this workflow even by
+  # accident, and an adapter that tried to use one would fail loudly.
+  ANTHROPIC_API_KEY: ''
+  OPENAI_API_KEY: ''
+
+jobs:
+  harness:
+    name: Harness (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - name: Checkout
+        # Full history: the participant snapshot is extracted from Git objects
+        # at a commit, so a shallow clone cannot build one.
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Condition B is *defined* as ripgrep-backed. Provisioning it here is what
+      # lets the integration test drive the real binary rather than a stub.
+      - name: Install ripgrep
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ripgrep
+          rg --version
+
+      # The harness core has no dependencies at all. Installing nothing here is
+      # the assertion: plan, benchmark validation, the fake provider, the
+      # statistics core and reporting must all work bare.
+      - name: Confirm the harness imports with no dependencies installed
+        working-directory: pae-engine/evaluation
+        env:
+          PYTHONPATH: src:../src
+        run: |
+          python3 -c "
+          import pae_eval
+          from pae_eval import analysis, benchmark, canonical, cli, conditions
+          from pae_eval import isolation, leakage, plan, pricing, raw_repo
+          from pae_eval import redaction, report, retrieval, runner, snapshot, trials
+          from pae_eval.judging import rubric, deterministic, llm, reliability
+          from pae_eval.statistics import paired, multiple
+          print('harness version', pae_eval.__version__)
+          "
+
+      - name: Provider adapters do not import an SDK at module scope
+        working-directory: pae-engine/evaluation
+        env:
+          PYTHONPATH: src:../src
+        run: |
+          python3 -c "
+          import sys
+          from pae_eval.providers import available_providers, get_adapter
+          # Importing the registry must not drag in a vendor SDK.
+          assert 'anthropic' not in sys.modules, 'anthropic imported eagerly'
+          assert 'openai' not in sys.modules, 'openai imported eagerly'
+          # The fake is always constructible, with no credential.
+          get_adapter('fake')
+          print('providers:', available_providers())
+          "
+
+      - name: Unit and integration tests
+        working-directory: pae-engine/evaluation
+        env:
+          PYTHONPATH: src:../src
+        run: python3 -m unittest discover -s tests -t tests -v
+
+      - name: Validate the fixture benchmark
+        env:
+          PYTHONPATH: pae-engine/src:pae-engine/evaluation/src
+        run: |
+          python3 -m pae_eval validate-benchmark \
+            --benchmark-root pae-engine/evaluation/tests/fixtures/mini-benchmark \
+            --repo . --allow-leakage
+
+      - name: Dry run makes no provider call and needs no key
+        env:
+          PYTHONPATH: pae-engine/src:pae-engine/evaluation/src
+        run: |
+          python3 -m pae_eval plan \
+            --benchmark-root pae-engine/evaluation/tests/fixtures/mini-benchmark \
+            --repo . --out "$RUNNER_TEMP/plan.json"
+          python3 -m pae_eval plan --check --plan "$RUNNER_TEMP/plan.json"
+          python3 -m pae_eval run \
+            --benchmark-root pae-engine/evaluation/tests/fixtures/mini-benchmark \
+            --repo . --output-dir "$RUNNER_TEMP/dry" \
+            --plan "$RUNNER_TEMP/plan.json" --max-cost-usd 100
+
+      - name: Execute refuses without explicit ceilings
+        env:
+          PYTHONPATH: pae-engine/src:pae-engine/evaluation/src
+        run: |
+          set +e
+          out=$(python3 -m pae_eval run --execute \
+            --benchmark-root pae-engine/evaluation/tests/fixtures/mini-benchmark \
+            --repo . --output-dir "$RUNNER_TEMP/refuse" \
+            --plan "$RUNNER_TEMP/plan.json" 2>&1)
+          code=$?
+          set -e
+          if [ "$code" = "0" ]; then
+            echo "::error::--execute ran without --max-cost-usd/--max-trials"; exit 1
+          fi
+          case "$out" in
+            *max-cost-usd*) echo "refused cleanly: $out" ;;
+            *) echo "::error::unexpected message: $out"; exit 1 ;;
+          esac
+
+  fake-end-to-end:
+    name: Fake-provider end to end
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install ripgrep and the MCP SDK
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ripgrep
+          python3 -m pip install --disable-pip-version-check "mcp>=2.1.1,<3"
+
+      # Two runs with opposite ground truth. The second is the one that matters:
+      # it proves the report describes a loss as a loss.
+      - name: Known-positive run through the whole pipeline
+        env:
+          PYTHONPATH: pae-engine/src:pae-engine/evaluation/src
+        run: |
+          BM=pae-engine/evaluation/tests/fixtures/mini-benchmark
+          OUT="$RUNNER_TEMP/pos"
+          python3 -m pae_eval plan --benchmark-root "$BM" --repo . \
+            --out "$RUNNER_TEMP/plan.json"
+          python3 -m pae_eval run --execute --benchmark-root "$BM" --repo . \
+            --output-dir "$OUT" --plan "$RUNNER_TEMP/plan.json" \
+            --max-cost-usd 100 --max-trials 500 --require-ripgrep \
+            --fake-quality by_condition
+          python3 -m pae_eval judge   --output-dir "$OUT" --benchmark-root "$BM"
+          python3 -m pae_eval layer-a --benchmark-root "$BM" \
+            --snapshot "$OUT/snapshot" --output-dir "$OUT"
+          python3 -m pae_eval analyze --output-dir "$OUT" \
+            --plan "$RUNNER_TEMP/plan.json"
+          python3 -m pae_eval report  --output-dir "$OUT" --benchmark-root "$BM" \
+            --plan "$RUNNER_TEMP/plan.json" --fixture
+          grep -q "SYNTHETIC TEST FIXTURE" "$OUT/report.md"
+          grep -q "excludes zero" "$OUT/report.md"
+
+      - name: Known-negative run is reported as a loss
+        env:
+          PYTHONPATH: pae-engine/src:pae-engine/evaluation/src
+        run: |
+          BM=pae-engine/evaluation/tests/fixtures/mini-benchmark
+          OUT="$RUNNER_TEMP/neg"
+          python3 -m pae_eval run --execute --benchmark-root "$BM" --repo . \
+            --output-dir "$OUT" --plan "$RUNNER_TEMP/plan.json" \
+            --max-cost-usd 100 --max-trials 500 --require-ripgrep \
+            --fake-quality by_condition_inverted
+          python3 -m pae_eval judge   --output-dir "$OUT" --benchmark-root "$BM"
+          python3 -m pae_eval analyze --output-dir "$OUT" \
+            --plan "$RUNNER_TEMP/plan.json"
+          python3 -m pae_eval report  --output-dir "$OUT" --benchmark-root "$BM" \
+            --plan "$RUNNER_TEMP/plan.json" --fixture
+          grep -q "performed worse" "$OUT/report.md"
+          # The claim formatter must produce nothing for a development run.
+          if grep -qE "^On sealed benchmark" "$OUT/report.md"; then
+            echo "::error::a development run emitted a claim sentence"; exit 1
+          fi
+
+      - name: Resume is append-only and skips completed trials
+        env:
+          PYTHONPATH: pae-engine/src:pae-engine/evaluation/src
+        run: |
+          BM=pae-engine/evaluation/tests/fixtures/mini-benchmark
+          OUT="$RUNNER_TEMP/resume"
+          python3 -m pae_eval run --execute --benchmark-root "$BM" --repo . \
+            --output-dir "$OUT" --plan "$RUNNER_TEMP/plan.json" \
+            --max-cost-usd 100 --max-trials 5 --require-ripgrep \
+            --fake-quality pass
+          before=$(wc -l < "$OUT/trials.jsonl")
+          python3 -m pae_eval run --execute --benchmark-root "$BM" --repo . \
+            --output-dir "$OUT" --plan "$RUNNER_TEMP/plan.json" \
+            --max-cost-usd 100 --max-trials 500 --require-ripgrep \
+            --fake-quality pass
+          after=$(wc -l < "$OUT/trials.jsonl")
+          if [ "$after" -le "$before" ]; then
+            echo "::error::resume did not append"; exit 1
+          fi
+          echo "trials grew from $before to $after; nothing was rewritten"
+
+      - name: No credential appears in any artifact
+        run: |
+          if grep -rEl "sk-ant-|sk-proj-|ghp_[A-Za-z0-9]{16}" "$RUNNER_TEMP" 2>/dev/null; then
+            echo "::error::a secret-shaped value reached a result artifact"; exit 1
+          fi
+          echo "no secret-shaped values in any output"
+
+  packaging-isolation:
+    name: Engine artifacts exclude the harness
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install build tooling
+        run: python3 -m pip install --disable-pip-version-check build
+
+      - name: Build the Engine
+        working-directory: pae-engine
+        run: python3 -m build
+
+      # The Engine's zero-dependency promise dies the moment a provider SDK
+      # ships inside it, so this is checked on the artifacts themselves rather
+      # than inferred from the layout.
+      - name: Neither artifact contains evaluation code or data
+        working-directory: pae-engine
+        run: |
+          status=0
+          for marker in 'evaluation/' 'pae_eval' 'mini-benchmark' 'trials.jsonl' \
+                        'anthropic_adapter' 'openai_adapter' 'evaluation-plan'; do
+            if unzip -l dist/*.whl | grep -q "$marker"; then
+              echo "::error::wheel contains $marker"; status=1
+            fi
+            if tar -tzf dist/*.tar.gz | grep -q "$marker"; then
+              echo "::error::sdist contains $marker"; status=1
+            fi
+          done
+          # And the Engine itself is present, so this is not passing vacuously.
+          unzip -l dist/*.whl | grep -q 'pae_engine/search.py' \
+            || { echo "::error::wheel is missing the Engine"; status=1; }
+          exit "$status"
+
+  windows-portability:
+    name: Windows portability
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      # Phase 7A found three Windows-only defects that a Linux-only CI could not
+      # see: two diagnostics importing POSIX-only `resource` at module scope, a
+      # validator whose failure printer crashed on cp1252, and an index
+      # generator emitting backslash paths. This lane is narrow on purpose —
+      # just enough to keep those from coming back.
+      - name: Developer diagnostics import without POSIX-only modules
+        working-directory: pae-engine
+        env:
+          PYTHONPATH: src;tests
+          PYTHONIOENCODING: utf-8
+        run: python -m unittest discover -s tests -t tests -p "test_portability.py" -v
+
+      - name: Registry CLI failure output survives a constrained encoding
+        working-directory: scripts
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python -m unittest discover -s pae_registry/tests -t . -p "test_console.py" -v
+
+      - name: The prompt index generator emits POSIX paths
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          python scripts/generate_prompt_index.py
+          git diff --exit-code -I'"generated"' -I'^\*\*Generated:\*\*' -- PROMPT_INDEX.json PROMPT_INDEX.md
+
+      # ripgrep is not provisioned here: the raw-repo search tests skip without
+      # it, and the Linux lane covers the real binary. Everything else in the
+      # harness must still work.
+      - name: Harness tests that do not need ripgrep
+        working-directory: pae-engine/evaluation
+        env:
+          PYTHONPATH: src;../src
+          PYTHONIOENCODING: utf-8
+        run: python -m unittest discover -s tests -t tests

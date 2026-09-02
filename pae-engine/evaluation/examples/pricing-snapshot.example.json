@@ -1,0 +1,55 @@
+{
+  "notes": "EXAMPLE ONLY — retrieved 2026-09-02 for dry-run estimates. Re-retrieve and re-pin before any sealed run; provider prices and model identifiers both drift.",
+  "prices": [
+    {
+      "cached_input_per_million": 0.5,
+      "currency": "USD",
+      "input_per_million": 5.0,
+      "model": "claude-opus-5",
+      "notes": "Cache reads are 10% of base input per the pricing page.",
+      "other_billable_units": {},
+      "output_per_million": 25.0,
+      "provider": "anthropic",
+      "retrieved_at": "2026-09-02",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    {
+      "cached_input_per_million": 0.2,
+      "currency": "USD",
+      "input_per_million": 2.0,
+      "model": "claude-sonnet-5",
+      "notes": "",
+      "other_billable_units": {},
+      "output_per_million": 10.0,
+      "provider": "anthropic",
+      "retrieved_at": "2026-09-02",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    {
+      "cached_input_per_million": 0.0,
+      "currency": "USD",
+      "input_per_million": 0.0,
+      "model": "fake-model-1",
+      "notes": "The fake provider is free by construction.",
+      "other_billable_units": {},
+      "output_per_million": 0.0,
+      "provider": "fake",
+      "retrieved_at": "2026-09-02",
+      "source_url": ""
+    },
+    {
+      "cached_input_per_million": 0.2,
+      "currency": "USD",
+      "input_per_million": 2.0,
+      "model": "gpt-5.6-terra",
+      "notes": "Short-context tier; long-context rates are higher.",
+      "other_billable_units": {},
+      "output_per_million": 12.0,
+      "provider": "openai",
+      "retrieved_at": "2026-09-02",
+      "source_url": "https://developers.openai.com/api/docs/pricing"
+    }
+  ],
+  "retrieved_at": "2026-09-02",
+  "schema_version": "pae-eval-pricing/1"
+}
