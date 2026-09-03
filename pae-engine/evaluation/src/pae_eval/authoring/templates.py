@@ -315,7 +315,7 @@ problem.
 Do not look for the library these tasks will be run against. Do not search for
 it, do not ask about it, do not use any tool that indexes it. If you already
 know something about it, do not use that knowledge, and record
-`saw_pae_metadata: true` in your provenance.
+`saw_collection_metadata: true` in your provenance.
 """
 
 SUBMISSION_README = """# Submission template

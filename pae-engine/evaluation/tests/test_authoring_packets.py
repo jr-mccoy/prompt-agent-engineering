@@ -156,6 +156,60 @@ class TestAuthorExport(PacketCase):
         self.assertIn("Not a substitute for counsel.", text)
 
 
+class TestAuthorPacketNamesNothing(PacketCase):
+    """The author is told not to look for the collection. Nothing may name it.
+
+    The instruction is only worth as much as the packet's silence. An author who
+    learns the collection is called "PAE" can search for it in one query — the
+    repository is public — and the firewall is then a request rather than a
+    property of what they were given.
+
+    This caught a real leak: the sentence "do not look for the library these
+    tasks will be run against" ended by telling the author to record
+    `saw_pae_metadata`, naming the collection in the same breath. The same line
+    also asked for a field the submission template does not accept, so an author
+    who followed it would have emitted the wrong key.
+    """
+
+    #: What the author must never see. Case-insensitive.
+    FORBIDDEN = ("pae", "prompt-agent-engineering", "prompt agent engineering",
+                 "jr-mccoy")
+
+    def _author_text(self) -> dict[str, str]:
+        return {
+            path: (self.author_root / path).read_text(encoding="utf-8")
+            for path in self.author_digests
+            if (self.author_root / path).suffix in {".md", ".json", ".jsonl", ".txt"}
+        }
+
+    def test_no_author_facing_file_names_the_collection(self) -> None:
+        for path, text in self._author_text().items():
+            lowered = text.lower()
+            for needle in self.FORBIDDEN:
+                with self.subTest(path=path, needle=needle):
+                    self.assertNotIn(needle, lowered)
+
+    def test_no_author_facing_filename_names_the_collection(self) -> None:
+        for path in self.author_digests:
+            with self.subTest(path=path):
+                self.assertNotIn("pae", path.lower())
+
+    def test_the_provenance_field_name_is_consistent(self) -> None:
+        """Instructions and template must ask for the same key.
+
+        `saw_collection_metadata` is the author-facing name. The mapping to the
+        benchmark schema's `saw_pae_metadata` is the reviewer's business, and
+        stays in the reviewer packet.
+        """
+        text = self._author_text()
+        mentions = {path for path, body in text.items()
+                    if "saw_collection_metadata" in body}
+        self.assertTrue(mentions, "no author-facing file asks for the field")
+        for path, body in text.items():
+            with self.subTest(path=path):
+                self.assertNotIn("saw_pae_metadata", body)
+
+
 class TestReviewerExport(PacketCase):
 
     def test_mapping_is_present_and_complete(self) -> None:
