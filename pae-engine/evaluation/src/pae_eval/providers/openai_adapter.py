@@ -13,8 +13,20 @@ Shape notes that differ from the Anthropic adapter and are easy to get wrong:
   surfaced as malformed tool arguments rather than crashing the loop;
 * a result goes back as a separate ``function_call_output`` item keyed by
   ``call_id``;
-* usage reports ``cached_input_tokens``; there is no cache-write counter, so
-  that field stays ``None`` rather than being invented as zero.
+* cache counters live under ``usage.input_tokens_details`` as ``cached_tokens``
+  and ``cache_write_tokens`` — **not** at the top level of ``usage``. Reading
+  them from the top level, as an earlier version of this file did, silently
+  yields ``None`` forever: no error, no cache ever recorded, and every cached
+  token billed at the full input rate;
+* ``input_tokens`` is a **total** that already contains both cache buckets,
+  which is the opposite of Anthropic's convention. The documented arithmetic is
+  ``ordinary = input_tokens - cached_tokens - cache_write_tokens``. ``Usage``
+  requires the three buckets to be disjoint, so that subtraction happens here.
+
+Caching is not requested here, because on this API it is on by default:
+prefixes are cached implicitly, and ``prompt_cache_options.mode`` is left
+unset so the run gets that default rather than a mode this file chose. There is
+no OpenAI equivalent of the Anthropic ``cache_control`` breakpoints.
 """
 
 from __future__ import annotations
@@ -65,22 +77,37 @@ def _render_input(system: str, messages: tuple[Message, ...]) -> list[dict[str, 
 def _usage(raw: Any) -> Usage:
     present: list[str] = []
 
-    def read(name: str) -> int | None:
-        value = getattr(raw, name, None)
-        if value is None and isinstance(raw, Mapping):
-            value = raw.get(name)
+    def read(name: str, source: Any = None) -> int | None:
+        source = raw if source is None else source
+        value = getattr(source, name, None)
+        if value is None and isinstance(source, Mapping):
+            value = source.get(name)
         if value is None:
             return None
         present.append(name)
         return int(value)
 
+    details = getattr(raw, "input_tokens_details", None)
+    if details is None and isinstance(raw, Mapping):
+        details = raw.get("input_tokens_details")
+
+    total_input = read("input_tokens")
+    cached = read("cached_tokens", details) if details is not None else None
+    written = read("cache_write_tokens", details) if details is not None else None
+
+    # Disjoint buckets, per Usage: the provider's total contains both cache
+    # buckets, so the full-rate bucket is what is left after removing them.
+    ordinary = (
+        None if total_input is None
+        else max(0, total_input - (cached or 0) - (written or 0))
+    )
     return Usage(
-        input_tokens=read("input_tokens"),
+        input_tokens=ordinary,
         output_tokens=read("output_tokens"),
-        cache_read_tokens=read("cached_input_tokens"),
-        # The Responses API reports no cache-write counter. Leaving this None
-        # keeps "not reported" distinct from "reported as zero".
-        cache_write_tokens=None,
+        cache_read_tokens=cached,
+        # Older models have no write counter and no write charge. None keeps
+        # "not reported" distinct from "reported as zero".
+        cache_write_tokens=written,
         provenance=tuple(present),
     )
 
@@ -228,4 +255,8 @@ class OpenAIAdapter:
             "adapter": "pae_eval.providers.openai_adapter.OpenAIAdapter",
             "sdk_version": self._sdk_version,
             "credential_env_vars": ["OPENAI_API_KEY"],
+            # Not a choice this adapter makes: caching is the API default and
+            # `prompt_cache_options.mode` is left unset. Recorded so the
+            # manifest reads the same way for both providers.
+            "prompt_caching": "provider_default",
         }

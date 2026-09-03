@@ -56,6 +56,7 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0039](0039-statistical-primary-endpoint.md) | Paired task pass rate, exact McNemar, and the confirmatory repeat | Accepted |
 | [0040](0040-public-performance-claim-governance.md) | Public performance-claim governance | Accepted |
 | [0041](0041-author-reviewer-separation.md) | Author/reviewer separation and the masked authoring firewall | Accepted |
+| [0042](0042-prompt-caching-on-the-paid-path.md) | Prompt caching on the paid path, and the token accounting it requires | Accepted |
 
 ## Related
 

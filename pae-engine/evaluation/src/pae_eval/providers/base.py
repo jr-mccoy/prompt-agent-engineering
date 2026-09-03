@@ -83,6 +83,16 @@ class Usage:
     not report cache reads" and "the provider reported zero cache reads" are
     different facts, and a cost model that confuses them is wrong in a way
     nobody notices. ``provenance`` records which fields were actually present.
+
+    **The three input buckets are disjoint.** ``input_tokens`` counts only
+    tokens billed at the full input rate; cache reads and cache writes are
+    counted in their own fields and are *not* also inside ``input_tokens``.
+    Providers disagree about this — Anthropic reports the three separately,
+    while the OpenAI Responses API reports a total with the cached part as a
+    subset — so each adapter normalizes to this convention and
+    :func:`pae_eval.pricing.cost_usd` simply adds the buckets. Any adapter that
+    got this wrong would misprice every cached call, in the direction of
+    looking cheaper than it is.
     """
 
     input_tokens: int | None = None
@@ -94,7 +104,18 @@ class Usage:
 
     @property
     def total_tokens(self) -> int | None:
-        parts = [self.input_tokens, self.output_tokens]
+        """Every token processed, cached or not.
+
+        All three input buckets are counted, not just ``input_tokens``. This
+        is what keeps the efficiency endpoint measuring work instead of
+        measuring caching: the buckets are disjoint, so leaving the cached ones
+        out would make an identical amount of work report fewer tokens the
+        moment caching was switched on — and by a different amount per
+        condition, since the conditions differ in how much of their prompt is
+        cacheable. That would have quietly moved a reported number.
+        """
+        parts = [self.input_tokens, self.cache_read_tokens,
+                 self.cache_write_tokens, self.output_tokens]
         if all(p is None for p in parts):
             return None
         return sum(p or 0 for p in parts)

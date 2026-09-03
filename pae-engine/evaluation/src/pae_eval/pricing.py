@@ -33,6 +33,13 @@ class ModelPrice:
     input_per_million: float
     output_per_million: float
     cached_input_per_million: float | None = None
+    #: What it costs to *write* a cache entry, which is more than plain input,
+    #: not less. Anthropic bills a 5-minute write at 1.25x base input; OpenAI
+    #: bills nothing extra because its caching is automatic. ``None`` means the
+    #: snapshot did not say, and writes then fall back to the full input rate —
+    #: understating an Anthropic run by the 25% premium, which is why a sealed
+    #: snapshot should carry the real number.
+    cache_write_per_million: float | None = None
     currency: str = "USD"
     source_url: str = ""
     retrieved_at: str = ""
@@ -50,6 +57,7 @@ class ModelPrice:
             "currency": self.currency,
             "input_per_million": self.input_per_million,
             "cached_input_per_million": self.cached_input_per_million,
+            "cache_write_per_million": self.cache_write_per_million,
             "output_per_million": self.output_per_million,
             "other_billable_units": dict(self.other_billable_units),
             "source_url": self.source_url,
@@ -71,6 +79,10 @@ class ModelPrice:
             cached_input_per_million=(
                 None if obj.get("cached_input_per_million") is None
                 else float(obj["cached_input_per_million"])
+            ),
+            cache_write_per_million=(
+                None if obj.get("cache_write_per_million") is None
+                else float(obj["cache_write_per_million"])
             ),
             currency=str(obj.get("currency", "USD")),
             source_url=str(obj.get("source_url", "")),
@@ -143,25 +155,26 @@ class PricingSnapshot:
 def cost_usd(usage: Usage, price: ModelPrice) -> float:
     """Cost of one call under one price.
 
-    Cached input is billed at its own rate when both the provider reported it
-    and the snapshot carries a cached rate; otherwise those tokens fall back to
-    the full input rate rather than being silently free.
+    ``Usage`` guarantees the three input buckets are disjoint — full-rate input,
+    cache reads, cache writes — so this adds them and does not subtract
+    anything. When the snapshot has no rate for a cache bucket those tokens
+    fall back to the full input rate: the wrong answer, but wrong in the safe
+    direction, and never silently free.
     """
     million = 1_000_000.0
-    cached = usage.cache_read_tokens or 0
-    uncached = max(0, (usage.input_tokens or 0) - cached)
+    read_rate = (
+        price.input_per_million if price.cached_input_per_million is None
+        else price.cached_input_per_million
+    )
+    write_rate = (
+        price.input_per_million if price.cache_write_per_million is None
+        else price.cache_write_per_million
+    )
 
-    if price.cached_input_per_million is None:
-        uncached, cached_cost = (usage.input_tokens or 0), 0.0
-    else:
-        cached_cost = cached * price.cached_input_per_million / million
-
-    total = uncached * price.input_per_million / million
-    total += cached_cost
+    total = (usage.input_tokens or 0) * price.input_per_million / million
+    total += (usage.cache_read_tokens or 0) * read_rate / million
+    total += (usage.cache_write_tokens or 0) * write_rate / million
     total += (usage.output_tokens or 0) * price.output_per_million / million
-    # Cache writes bill at the input rate unless a provider says otherwise;
-    # noted here rather than assumed away.
-    total += (usage.cache_write_tokens or 0) * price.input_per_million / million
     for unit, count in (usage.other_billed_units or {}).items():
         total += count * float(price.other_billable_units.get(unit, 0.0))
     return round(total, 6)
@@ -172,7 +185,8 @@ TOOL_TURN_OUTPUT_TOKENS = 200
 
 
 def estimate_trial_cost(price: ModelPrice, *, expected_input_tokens: int,
-                        max_output_tokens: int, tool_turns: int = 0) -> float:
+                        max_output_tokens: int, tool_turns: int = 0,
+                        cache_reads: bool = False) -> float:
     """A conservative estimate for one trial.
 
     Conservative, not absurd. The input side assumes the transcript is resent
@@ -182,15 +196,42 @@ def estimate_trial_cost(price: ModelPrice, *, expected_input_tokens: int,
     actually looks like. Charging ``max_output_tokens`` on every turn
     over-estimates by an order of magnitude and makes the guard useless: a
     ceiling nobody can satisfy gets raised until it stops meaning anything.
+
+    ``cache_reads`` re-prices the same token volume as a cached tool loop
+    instead of an uncached one. The split is derived, not guessed: with a
+    per-turn delta *E* over *n* turns, turn *k* re-reads the *(k-1)E* tokens
+    already cached and writes the *E* new ones, so the run reads
+    *E·n(n-1)/2* and writes *E·n* — the same *E·n(n+1)/2* total, just at two
+    different rates.
+
+    The default is ``False`` and must stay that way for the cost guard. A
+    ceiling has to hold even if every cache entry expires between turns; an
+    estimate that assumes hits would let a run walk past the ceiling it was
+    given. This flag is for *planning* a budget, not for enforcing one.
     """
     million = 1_000_000.0
     turns = max(1, tool_turns + 1)
     # Resent context grows roughly linearly across turns; sum(1..n) bounds it.
     input_units = expected_input_tokens * (turns * (turns + 1) / 2)
     output_units = max_output_tokens + TOOL_TURN_OUTPUT_TOKENS * (turns - 1)
+
+    if cache_reads:
+        write_units = expected_input_tokens * turns
+        read_units = input_units - write_units
+        read_rate = (
+            price.input_per_million if price.cached_input_per_million is None
+            else price.cached_input_per_million
+        )
+        write_rate = (
+            price.input_per_million if price.cache_write_per_million is None
+            else price.cache_write_per_million
+        )
+        input_cost = (write_units * write_rate + read_units * read_rate) / million
+    else:
+        input_cost = input_units * price.input_per_million / million
+
     return round(
-        input_units * price.input_per_million / million
-        + output_units * price.output_per_million / million,
+        input_cost + output_units * price.output_per_million / million,
         6,
     )
 
@@ -241,49 +282,76 @@ class CostGuard:
         }
 
 
+#: Where the numbers in :func:`example_snapshot` came from.
+ANTHROPIC_PRICING_URL = "https://platform.claude.com/docs/en/about-claude/pricing"
+OPENAI_PRICING_URL = "https://developers.openai.com/api/docs/pricing"
+
+
 def example_snapshot() -> PricingSnapshot:
     """A dated example, not a live price feed.
 
-    Values retrieved 2026-09-02 from the official pricing pages named in each
-    entry. They exist so `--dry-run` can produce a cost estimate out of the box;
-    a sealed run must supply its own snapshot retrieved at freeze time.
+    Values retrieved 2026-09-03 from the official pricing pages named in each
+    entry, including the cache-write rates that prompt caching makes
+    load-bearing. They exist so `--dry-run` can produce a cost estimate out of
+    the box; a sealed run must supply its own snapshot retrieved at freeze time.
+
+    Every entry uses the standard, first-party, global-routing rate. Not the
+    batch rate (the harness does not batch), not fast mode, not a US-pinned
+    ``inference_geo`` — each of those is a different number, and a run that
+    turns one on is priced by a snapshot that says so.
     """
     return PricingSnapshot(
-        retrieved_at="2026-09-02",
+        retrieved_at="2026-09-03",
         notes=(
-            "EXAMPLE ONLY — retrieved 2026-09-02 for dry-run estimates. "
+            "EXAMPLE ONLY — retrieved 2026-09-03 for dry-run estimates. "
             "Re-retrieve and re-pin before any sealed run; provider prices and "
-            "model identifiers both drift."
+            "model identifiers both drift. Standard first-party global rates: "
+            "no batch discount, no fast mode, no data-residency multiplier."
         ),
         prices=(
             ModelPrice(
                 provider="anthropic", model="claude-opus-5",
                 input_per_million=5.0, cached_input_per_million=0.5,
-                output_per_million=25.0,
-                source_url="https://platform.claude.com/docs/en/about-claude/pricing",
-                retrieved_at="2026-09-02",
-                notes="Cache reads are 10% of base input per the pricing page.",
+                cache_write_per_million=6.25, output_per_million=25.0,
+                source_url=ANTHROPIC_PRICING_URL, retrieved_at="2026-09-03",
+                notes=(
+                    "5-minute cache writes at 1.25x base input, reads at 0.1x. "
+                    "The 1-hour TTL would be 10.00 and is not used."
+                ),
             ),
             ModelPrice(
                 provider="anthropic", model="claude-sonnet-5",
                 input_per_million=2.0, cached_input_per_million=0.2,
-                output_per_million=10.0,
-                source_url="https://platform.claude.com/docs/en/about-claude/pricing",
-                retrieved_at="2026-09-02",
+                cache_write_per_million=2.5, output_per_million=10.0,
+                source_url=ANTHROPIC_PRICING_URL, retrieved_at="2026-09-03",
+                notes="The launch introductory rate is now the standard rate.",
+            ),
+            ModelPrice(
+                provider="anthropic", model="claude-haiku-4-5",
+                input_per_million=1.0, cached_input_per_million=0.1,
+                cache_write_per_million=1.25, output_per_million=5.0,
+                source_url=ANTHROPIC_PRICING_URL, retrieved_at="2026-09-03",
+                notes="Priced here as a cheap-judge option, not as a participant.",
             ),
             ModelPrice(
                 provider="openai", model="gpt-5.6-terra",
                 input_per_million=2.0, cached_input_per_million=0.2,
-                output_per_million=12.0,
-                source_url="https://developers.openai.com/api/docs/pricing",
-                retrieved_at="2026-09-02",
-                notes="Short-context tier; long-context rates are higher.",
+                cache_write_per_million=2.5, output_per_million=12.0,
+                source_url=OPENAI_PRICING_URL, retrieved_at="2026-09-03",
+                notes="Cache writes bill at 1.25x on the 5.6 series.",
+            ),
+            ModelPrice(
+                provider="openai", model="gpt-5.6-sol",
+                input_per_million=4.0, cached_input_per_million=0.4,
+                cache_write_per_million=5.0, output_per_million=20.0,
+                source_url=OPENAI_PRICING_URL, retrieved_at="2026-09-03",
+                notes="Priced here so the second-family choice is a costed one.",
             ),
             ModelPrice(
                 provider="fake", model="fake-model-1",
                 input_per_million=0.0, cached_input_per_million=0.0,
-                output_per_million=0.0,
-                source_url="", retrieved_at="2026-09-02",
+                cache_write_per_million=0.0, output_per_million=0.0,
+                source_url="", retrieved_at="2026-09-03",
                 notes="The fake provider is free by construction.",
             ),
         ),

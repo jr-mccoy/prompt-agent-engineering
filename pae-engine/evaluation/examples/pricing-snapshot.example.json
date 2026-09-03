@@ -1,31 +1,47 @@
 {
-  "notes": "EXAMPLE ONLY — retrieved 2026-09-02 for dry-run estimates. Re-retrieve and re-pin before any sealed run; provider prices and model identifiers both drift.",
+  "notes": "EXAMPLE ONLY \u2014 retrieved 2026-09-03 for dry-run estimates. Re-retrieve and re-pin before any sealed run; provider prices and model identifiers both drift. Standard first-party global rates: no batch discount, no fast mode, no data-residency multiplier.",
   "prices": [
     {
+      "cache_write_per_million": 1.25,
+      "cached_input_per_million": 0.1,
+      "currency": "USD",
+      "input_per_million": 1.0,
+      "model": "claude-haiku-4-5",
+      "notes": "Priced here as a cheap-judge option, not as a participant.",
+      "other_billable_units": {},
+      "output_per_million": 5.0,
+      "provider": "anthropic",
+      "retrieved_at": "2026-09-03",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    {
+      "cache_write_per_million": 6.25,
       "cached_input_per_million": 0.5,
       "currency": "USD",
       "input_per_million": 5.0,
       "model": "claude-opus-5",
-      "notes": "Cache reads are 10% of base input per the pricing page.",
+      "notes": "5-minute cache writes at 1.25x base input, reads at 0.1x. The 1-hour TTL would be 10.00 and is not used.",
       "other_billable_units": {},
       "output_per_million": 25.0,
       "provider": "anthropic",
-      "retrieved_at": "2026-09-02",
+      "retrieved_at": "2026-09-03",
       "source_url": "https://platform.claude.com/docs/en/about-claude/pricing"
     },
     {
+      "cache_write_per_million": 2.5,
       "cached_input_per_million": 0.2,
       "currency": "USD",
       "input_per_million": 2.0,
       "model": "claude-sonnet-5",
-      "notes": "",
+      "notes": "The launch introductory rate is now the standard rate.",
       "other_billable_units": {},
       "output_per_million": 10.0,
       "provider": "anthropic",
-      "retrieved_at": "2026-09-02",
+      "retrieved_at": "2026-09-03",
       "source_url": "https://platform.claude.com/docs/en/about-claude/pricing"
     },
     {
+      "cache_write_per_million": 0.0,
       "cached_input_per_million": 0.0,
       "currency": "USD",
       "input_per_million": 0.0,
@@ -34,22 +50,36 @@
       "other_billable_units": {},
       "output_per_million": 0.0,
       "provider": "fake",
-      "retrieved_at": "2026-09-02",
+      "retrieved_at": "2026-09-03",
       "source_url": ""
     },
     {
+      "cache_write_per_million": 5.0,
+      "cached_input_per_million": 0.4,
+      "currency": "USD",
+      "input_per_million": 4.0,
+      "model": "gpt-5.6-sol",
+      "notes": "Priced here so the second-family choice is a costed one.",
+      "other_billable_units": {},
+      "output_per_million": 20.0,
+      "provider": "openai",
+      "retrieved_at": "2026-09-03",
+      "source_url": "https://developers.openai.com/api/docs/pricing"
+    },
+    {
+      "cache_write_per_million": 2.5,
       "cached_input_per_million": 0.2,
       "currency": "USD",
       "input_per_million": 2.0,
       "model": "gpt-5.6-terra",
-      "notes": "Short-context tier; long-context rates are higher.",
+      "notes": "Cache writes bill at 1.25x on the 5.6 series.",
       "other_billable_units": {},
       "output_per_million": 12.0,
       "provider": "openai",
-      "retrieved_at": "2026-09-02",
+      "retrieved_at": "2026-09-03",
       "source_url": "https://developers.openai.com/api/docs/pricing"
     }
   ],
-  "retrieved_at": "2026-09-02",
+  "retrieved_at": "2026-09-03",
   "schema_version": "pae-eval-pricing/1"
 }

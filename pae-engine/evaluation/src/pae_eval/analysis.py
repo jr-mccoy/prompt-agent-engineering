@@ -135,8 +135,17 @@ def efficiency_by_condition(trials: Sequence[Mapping[str, Any]]) -> dict[str, An
         bucket["input_tokens"].append(float(usage.get("input_tokens") or 0))
         bucket["output_tokens"].append(float(usage.get("output_tokens") or 0))
         bucket["cached_input_tokens"].append(float(usage.get("cache_read_tokens") or 0))
+        bucket["cache_write_tokens"].append(float(usage.get("cache_write_tokens") or 0))
+        # Every input bucket, not just the full-rate one. The buckets are
+        # disjoint, so summing only input+output would report fewer tokens for
+        # identical work as soon as caching is enabled — and unevenly across
+        # conditions, because they differ in how cacheable their prompts are.
+        # This endpoint measures work; `cost_usd` is where the discount shows.
         bucket["total_tokens"].append(
-            float(usage.get("input_tokens") or 0) + float(usage.get("output_tokens") or 0)
+            float(usage.get("input_tokens") or 0)
+            + float(usage.get("cache_read_tokens") or 0)
+            + float(usage.get("cache_write_tokens") or 0)
+            + float(usage.get("output_tokens") or 0)
         )
         bucket["latency_ms"].append(float(row.get("latency_ms") or 0))
         bucket["cost_usd"].append(float(row.get("estimated_cost_usd") or 0))

@@ -93,6 +93,10 @@ class RunContext:
 class DryRunReport:
     trial_count: int
     estimated_cost_usd: float
+    #: The same token volume re-priced as a cached tool loop. Useful for
+    #: sizing a budget; never used to enforce the ceiling, because a ceiling
+    #: that assumes cache hits stops being a ceiling the moment one expires.
+    estimated_cached_cost_usd: float
     per_condition: Mapping[str, int]
     isolation: IsolationReport
     schedule_sha256: str
@@ -107,6 +111,7 @@ class DryRunReport:
         return {
             "trial_count": self.trial_count,
             "estimated_cost_usd": round(self.estimated_cost_usd, 4),
+            "estimated_cached_cost_usd": round(self.estimated_cached_cost_usd, 4),
             "per_condition": dict(self.per_condition),
             "isolation": self.isolation.to_json_obj(),
             "schedule_sha256": self.schedule_sha256,
@@ -308,6 +313,21 @@ class ConditionFactory:
         raise UsageError(f"unknown condition {condition!r}")
 
 
+def _sealed_requires_ripgrep(plan: EvaluationPlan, requested: bool) -> bool:
+    """A sealed run that includes condition B may not start without ripgrep.
+
+    Condition B *is* ripgrep-backed search (ADR-0036). Without the binary,
+    `RawRepoTools` still constructs when `require_ripgrep` is false and only
+    fails when the participant first calls `repo_search` — which is partway
+    into a paid run, after money is spent, on the baseline half of the primary
+    comparison. Opting out is a development convenience; in sealed mode it is
+    just a way to discover the problem expensively.
+    """
+    if requested or not plan.is_sealed or CONDITION_B not in plan.conditions:
+        return requested
+    return True
+
+
 # --------------------------------------------------------------------------
 # dry run
 # --------------------------------------------------------------------------
@@ -323,6 +343,7 @@ def dry_run(
 ) -> DryRunReport:
     """Validate everything and price the run without contacting a provider."""
     plan, benchmark = context.plan, context.benchmark
+    require_ripgrep = _sealed_requires_ripgrep(plan, require_ripgrep)
     warnings: list[str] = []
 
     per_condition = {
@@ -334,7 +355,11 @@ def dry_run(
     trial_count = len(context.schedule.trials)
 
     # -- price the run -----------------------------------------------------
+    # Two figures on the same token volume. `estimated` assumes nothing is
+    # cached and is what the ceiling is checked against; `cached` re-prices the
+    # tool loops as cache reads and is what a budget should be sized from.
     estimated = 0.0
+    cached = 0.0
     for scheduled in context.schedule.trials:
         price = context.pricing.get(scheduled.provider, scheduled.model)
         if price is None:
@@ -350,16 +375,44 @@ def dry_run(
             int(plan.limits.get("max_tool_turns", 40))
             if scheduled.condition in (CONDITION_B, CONDITION_D) else 0
         )
-        estimated += estimate_trial_cost(
-            price,
-            expected_input_tokens=3000 if scheduled.condition != CONDITION_C else 9000,
-            max_output_tokens=model.max_output_tokens if model else 4096,
+        shape = {
+            "expected_input_tokens": (
+                3000 if scheduled.condition != CONDITION_C else 9000
+            ),
+            "max_output_tokens": model.max_output_tokens if model else 4096,
             # A worst case assuming the full turn budget would be wildly
             # pessimistic; a quarter of it is a realistic upper-middle case and
             # is documented as such.
-            tool_turns=turns // 4,
-        )
+            "tool_turns": turns // 4,
+        }
+        estimated += estimate_trial_cost(price, **shape)
+        cached += estimate_trial_cost(price, **shape, cache_reads=True)
     estimated = round(estimated, 4)
+    cached = round(cached, 4)
+
+    if cached > estimated:
+        # Only reachable if a snapshot priced cache writes above plain input by
+        # more than the reads save, which means the snapshot is wrong or
+        # caching is a false economy for this model. Say so either way.
+        warnings.append(
+            f"the cached estimate (${cached:.2f}) exceeds the uncached one "
+            f"(${estimated:.2f}); check the cache rates in the pricing snapshot"
+        )
+
+    # A missing binary is reported even when the caller opted out of requiring
+    # it. Building condition B without ripgrep succeeds and only fails on the
+    # first `repo_search`, so silence here would mean the dry run passes and
+    # the paid run dies partway through the baseline arm.
+    from .raw_repo import ripgrep_version as _rg_version  # noqa: PLC0415
+
+    if CONDITION_B in plan.conditions and _rg_version() is None:
+        warnings.append(
+            "ripgrep (rg) is not on PATH. Condition B is defined as "
+            "ripgrep-backed search, so it will fail at the participant's first "
+            "repo_search call — partway into the run, not now. Install "
+            "ripgrep, or drop condition B from the plan. A sealed run refuses "
+            "to start without it."
+        )
 
     # -- isolation, on a sample of real tasks ------------------------------
     factory = ConditionFactory(context, require_ripgrep=require_ripgrep,
@@ -410,6 +463,7 @@ def dry_run(
     return DryRunReport(
         trial_count=trial_count,
         estimated_cost_usd=estimated,
+        estimated_cached_cost_usd=cached,
         per_condition=per_condition,
         isolation=isolation,
         schedule_sha256=context.schedule.sha256,
@@ -464,6 +518,7 @@ def execute(
 ) -> ExecutionSummary:
     """Run the schedule, appending one record per attempt."""
     plan, benchmark = context.plan, context.benchmark
+    require_ripgrep = _sealed_requires_ripgrep(plan, require_ripgrep)
     store = TrialStore(context.trials_path)
 
     if resume:

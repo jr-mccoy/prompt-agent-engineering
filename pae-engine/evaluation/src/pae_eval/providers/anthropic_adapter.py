@@ -14,6 +14,43 @@ Two current-API facts shape the code:
 * Thinking configuration is deliberately not synthesized here. If a plan wants
   it, it passes it through ``extra``; the harness never opts a run into a
   thinking mode the plan did not ask for.
+
+Prompt caching
+--------------
+
+``cache_prompts`` (default on) uses the documented combination of both caching
+mechanisms, which occupies three of the four available breakpoint slots:
+
+1. an explicit breakpoint on the **last tool definition** — one breakpoint
+   caches the whole catalog, because a cached prefix ends at the block the
+   marker sits on. The catalog is byte-identical across every trial of a
+   condition;
+2. an explicit breakpoint on the **system prompt** — likewise identical across
+   every trial of a condition;
+3. the **top-level** ``cache_control`` field, which is automatic caching. The
+   API places the remaining breakpoint on the last cacheable block and walks it
+   forward as the conversation grows, so on turn *k* the first *k*-1 turns are
+   a cache read rather than a re-billed resend. That is where the money in
+   conditions B and D actually goes, and letting the API track it is both the
+   recommended approach and one fewer thing for this file to get wrong.
+
+Three things this deliberately does **not** do:
+
+* It does not change a single token the model sees. ``cache_control`` is
+  request metadata; the prompt is identical with it and without it, and so is
+  the sampling distribution. Caching is a billing and latency optimization, not
+  an experimental variable, and no analysis reads a cache counter.
+* It does not opt into the 1-hour TTL. The 5-minute default fits a run that
+  works through trials back to back, and the 1-hour extension costs 2x base
+  input on writes instead of 1.25x. If a run needs it, the plan can ask.
+* It does not hand-roll the rolling conversation breakpoint. An earlier draft
+  did; automatic caching supersedes it and would otherwise compete for the same
+  slot.
+
+A prefix below the model's minimum cacheable length (512 tokens on Claude Opus
+5, more on most others) is silently not cached — no error, and no write to pay
+for. Single-call conditions therefore pay one write on the first trial and read
+the system prompt back on every trial after it.
 """
 
 from __future__ import annotations
@@ -25,6 +62,10 @@ from .base import Message, ModelRequest, ModelResponse, ToolCall, Usage
 
 #: Parameters the plan may set that we pass straight through.
 PASSTHROUGH = ("stop_sequences", "thinking", "output_config", "betas", "speed")
+
+#: The 5-minute breakpoint. Written as a literal rather than built from the
+#: plan: a TTL is a cost decision, and this file does not make those quietly.
+CACHE_CONTROL: Mapping[str, Any] = {"type": "ephemeral"}
 
 
 def _load():
@@ -44,6 +85,9 @@ def _render_messages(messages: tuple[Message, ...]) -> list[dict[str, Any]]:
     Tool results ride on a ``user`` turn as ``tool_result`` blocks, and all
     results for one assistant turn must arrive in a single message — splitting
     them trains the model out of parallel tool use.
+
+    No cache breakpoint is placed here: the top-level ``cache_control`` field
+    handles the conversation, and it moves as the conversation grows.
     """
     rendered: list[dict[str, Any]] = []
     for message in messages:
@@ -102,10 +146,12 @@ class AnthropicAdapter:
 
     provider = "anthropic"
 
-    def __init__(self, *, client: Any = None, timeout_s: float | None = None) -> None:
+    def __init__(self, *, client: Any = None, timeout_s: float | None = None,
+                 cache_prompts: bool = True) -> None:
         self._explicit_client = client
         self._client = client
         self._timeout_s = timeout_s
+        self._cache_prompts = bool(cache_prompts)
         self._sdk_version: str | None = None
 
     def _ensure_client(self) -> Any:
@@ -120,15 +166,26 @@ class AnthropicAdapter:
         anthropic = None if self._explicit_client is not None else _load()
         client = self._ensure_client()
 
+        cache = self._cache_prompts
         payload: dict[str, Any] = {
             "model": request.model,
             "max_tokens": request.max_output_tokens,
             "messages": _render_messages(request.messages),
         }
+        if cache:
+            # Automatic caching. Only useful once there is a conversation to
+            # cache; on a single-call trial the tools/system breakpoints below
+            # already cover the whole stable prefix.
+            if len(request.messages) > 1:
+                payload["cache_control"] = dict(CACHE_CONTROL)
         if request.system:
-            payload["system"] = request.system
+            payload["system"] = (
+                [{"type": "text", "text": request.system,
+                  "cache_control": dict(CACHE_CONTROL)}]
+                if cache else request.system
+            )
         if request.tools:
-            payload["tools"] = [
+            tools = [
                 {
                     "name": spec.name,
                     "description": spec.description,
@@ -136,6 +193,12 @@ class AnthropicAdapter:
                 }
                 for spec in request.tools
             ]
+            if cache:
+                # One breakpoint on the last definition caches the whole
+                # catalog; marking each tool would spend breakpoints for
+                # nothing, since a prefix ends at the block it is placed on.
+                tools[-1]["cache_control"] = dict(CACHE_CONTROL)
+            payload["tools"] = tools
         if request.effort is not None:
             # `effort` lives inside output_config, not at the top level.
             config = dict(request.extra.get("output_config") or {})
@@ -238,4 +301,8 @@ class AnthropicAdapter:
             "adapter": "pae_eval.providers.anthropic_adapter.AnthropicAdapter",
             "sdk_version": self._sdk_version,
             "credential_env_vars": ["ANTHROPIC_API_KEY"],
+            # Recorded so a reader of the run manifest can tell whether the
+            # reported cache counters were even asked for.
+            "prompt_caching": self._cache_prompts,
+            "prompt_cache_ttl": "5m" if self._cache_prompts else None,
         }

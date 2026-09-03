@@ -160,7 +160,7 @@ def cmd_validate_benchmark(args: argparse.Namespace) -> int:
 
 
 def cmd_plan(args: argparse.Namespace) -> int:
-    from .plan import EvaluationPlan, example_plan, validate_plan
+    from .plan import EvaluationPlan, example_plan, plan_warnings, validate_plan
     from .snapshot import resolve_commit
 
     if args.check:
@@ -169,6 +169,7 @@ def cmd_plan(args: argparse.Namespace) -> int:
         sidecar = Path(args.plan).with_suffix(Path(args.plan).suffix + ".sha256")
         recorded = sidecar.read_text(encoding="utf-8").strip() if sidecar.exists() else None
         problems = validate_plan(plan)
+        checked_warnings = plan_warnings(plan)
         matches = recorded is None or recorded == recomputed
         if not matches:
             problems.append(
@@ -176,11 +177,15 @@ def cmd_plan(args: argparse.Namespace) -> int:
                 f"{recomputed}. The plan was edited after it was frozen."
             )
         payload = {"plan_sha256": recomputed, "recorded_sha256": recorded,
-                   "valid": not problems, "problems": problems}
+                   "valid": not problems, "problems": problems,
+                   "warnings": checked_warnings}
         if args.json:
             _emit(payload, True)
         else:
             print(f"plan sha256: {recomputed}")
+            if checked_warnings:
+                print(_problems("PLAN WARNINGS (not failures — declare these):",
+                                checked_warnings))
             print(_problems("PLAN CHECK FAILED:", problems) if problems
                   else "OK — plan is valid and its digest matches")
         return EXIT_OK if not problems else EXIT_FAILED
@@ -200,6 +205,7 @@ def cmd_plan(args: argparse.Namespace) -> int:
         pricing_snapshot_sha256=pricing.sha256,
     )
     problems = validate_plan(plan)
+    warnings = plan_warnings(plan)
 
     # Costing is estimated here without any provider call.
     from .statistics import ci_half_width, detectable_effect
@@ -223,6 +229,10 @@ def cmd_plan(args: argparse.Namespace) -> int:
         "plan_sha256": digest,
         "valid": not problems,
         "problems": problems,
+        # Not failures. Limitations the report has to carry — printed here so
+        # they are seen while the plan can still be changed, rather than
+        # discovered in the write-up after the money is spent.
+        "warnings": warnings,
         "planning": planning,
         "written_to": str(args.out) if args.out else None,
     }
@@ -235,6 +245,9 @@ def cmd_plan(args: argparse.Namespace) -> int:
               f"CI half-width ~{planning['ci_half_width_pp']} pp")
         if args.out:
             print(f"written: {args.out}")
+        if warnings:
+            print(_problems("\nPLAN WARNINGS (not failures — declare these):",
+                            warnings))
         if problems:
             print(_problems("\nPLAN PROBLEMS:", problems))
     return EXIT_OK if not problems else EXIT_FAILED
@@ -271,7 +284,10 @@ def cmd_run(args: argparse.Namespace) -> int:
         else:
             print(f"run id           : {context.run_id}")
             print(f"planned trials   : {report.trial_count}")
-            print(f"estimated cost   : ${report.estimated_cost_usd:.2f}")
+            print(f"estimated cost   : ${report.estimated_cost_usd:.2f} "
+                  f"(no cache hits assumed — size the ceiling from this)")
+            print(f"  with caching   : ${report.estimated_cached_cost_usd:.2f} "
+                  f"(same tokens, tool loops priced as cache reads)")
             print(f"snapshot         : {report.snapshot_sha256}")
             print(f"schedule         : {report.schedule_sha256}")
             print(f"isolation        : "
@@ -304,11 +320,19 @@ def cmd_run(args: argparse.Namespace) -> int:
             if model.role != "judge":
                 adapters[model.provider] = shared
     else:
+        # Prompt caching is on unless the plan turns it off. It changes the
+        # bill and the latency, never a token the model sees, so it is a
+        # default rather than a decision — but it is recorded in the plan hash
+        # and in the manifest either way.
+        caching = bool(plan.limits.get("prompt_caching", True))
         for model in plan.models:
             if model.role == "judge":
                 continue
             if model.provider not in adapters:
-                adapters[model.provider] = get_adapter(model.provider)
+                kwargs: dict[str, Any] = {}
+                if model.provider == "anthropic":
+                    kwargs["cache_prompts"] = caching
+                adapters[model.provider] = get_adapter(model.provider, **kwargs)
 
     summary = execute(
         context, adapters=adapters, max_cost_usd=args.max_cost_usd,

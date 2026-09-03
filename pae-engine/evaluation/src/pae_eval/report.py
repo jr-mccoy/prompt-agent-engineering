@@ -190,12 +190,19 @@ def render_markdown(analysis: Mapping[str, Any], *, plan: Any,
     add("## Condition comparison\n")
     efficiency = analysis.get("efficiency") or {}
     if efficiency:
-        add("| Condition | n | input tok | output tok | total tok | tool calls | "
-            "latency ms | cost USD |\n|---|---:|---:|---:|---:|---:|---:|---:|")
+        # `total tok` is every token processed, cached or not, so it stays
+        # comparable across conditions and is unaffected by caching. The cache
+        # columns are shown rather than folded away so a reader can see where
+        # the cost difference came from instead of inferring it.
+        add("| Condition | n | input tok | cache read | cache write | output tok "
+            "| total tok | tool calls | latency ms | cost USD |"
+            "\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
         for condition in sorted(efficiency):
             row = efficiency[condition]
             add(
                 f"| {condition} | {row.get('n')} | {_num(row.get('input_tokens'), 0)} "
+                f"| {_num(row.get('cached_input_tokens'), 0)} "
+                f"| {_num(row.get('cache_write_tokens'), 0)} "
                 f"| {_num(row.get('output_tokens'), 0)} "
                 f"| {_num(row.get('total_tokens'), 0)} "
                 f"| {_num(row.get('tool_calls'), 2)} "

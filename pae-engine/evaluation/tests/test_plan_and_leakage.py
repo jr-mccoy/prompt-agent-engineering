@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import unittest
+from dataclasses import replace
 
 from _support import REPO_ROOT, TempDirCase, git_repo_available, load_mini_benchmark
 
@@ -24,9 +25,11 @@ from pae_eval.leakage import (
 )
 from pae_eval.plan import (
     EvaluationPlan,
+    JudgeConfig,
     ModelConfig,
     assert_matches_world,
     example_plan,
+    plan_warnings,
     validate_plan,
 )
 
@@ -293,6 +296,84 @@ class TestCorpusFromRepo(unittest.TestCase):
         report = audit_benchmark(load_mini_benchmark().tasks, corpus)
         self.assertEqual(report.metrics["title_token_containment_count"], 0)
         self.assertEqual(report.metrics["id_tail_containment_count"], 0)
+
+
+class TestPlanWarnings(unittest.TestCase):
+    """Limitations a run should declare, kept separate from reasons to refuse.
+
+    The distinction is the point. A *problem* means the plan cannot produce a
+    trustworthy number, so the run must not start. A *warning* means the number
+    is real but carries a caveat that belongs in the report. Merging the two
+    either blocks runs that are fine or buries caveats that are not, and this
+    class pins which side each case falls on.
+    """
+
+    def test_a_secondary_arm_judged_by_its_own_family_warns_but_does_not_block(self):
+        plan = example_plan()
+        # The shipped default: anthropic primary, openai robustness, openai
+        # judge. The primary arm is cross-family, so the plan is runnable...
+        self.assertEqual(validate_plan(plan), [])
+        # ...but the robustness arm is graded by its own family, and that has
+        # to reach the report rather than the invoice.
+        warnings = plan_warnings(plan)
+        self.assertTrue(any("robustness" in w and "own family" in w
+                            for w in warnings), warnings)
+
+    def test_the_primary_arm_is_still_a_hard_failure(self):
+        plan = example_plan()
+        clashing = JudgeConfig(provider="anthropic", model="claude-haiku-4-5")
+        plan = replace_judge(plan, clashing)
+        self.assertTrue(any("primary participant family" in p
+                            for p in validate_plan(plan)))
+
+    def test_accepting_the_bias_explicitly_silences_both(self):
+        plan = replace_judge(
+            example_plan(),
+            JudgeConfig(provider="openai", model="gpt-5.6-terra",
+                        allow_same_family=True),
+        )
+        self.assertEqual(validate_plan(plan), [])
+        self.assertFalse(any("own family" in w for w in plan_warnings(plan)))
+
+    def test_a_single_participant_family_warns(self):
+        plan = example_plan()
+        plan = replace(plan, models=(
+            ModelConfig(provider="anthropic", model="claude-opus-5",
+                        role="primary", max_output_tokens=6000),
+            ModelConfig(provider="anthropic", model="claude-sonnet-5",
+                        role="robustness", max_output_tokens=6000),
+        ))
+        # No family clash with an openai judge, but no family robustness left
+        # either: a PAE effect and one family's idiosyncrasy become the same
+        # measurement.
+        self.assertFalse(any("own family" in w for w in plan_warnings(plan)))
+        self.assertTrue(any("one family" in w for w in plan_warnings(plan)))
+
+    def test_second_judge_is_flagged_as_buying_nothing(self):
+        plan = replace_judge(
+            example_plan(),
+            JudgeConfig(provider="openai", model="gpt-5.6-terra",
+                        second_judge={"provider": "anthropic",
+                                      "model": "claude-haiku-4-5"}),
+        )
+        # It is carried in the plan but no part of the judging pipeline reads
+        # it, so it must not be mistaken for covering a same-family arm.
+        self.assertTrue(any("second_judge" in w for w in plan_warnings(plan)))
+
+    def test_disabling_prompt_caching_warns_about_cost_not_validity(self):
+        plan = example_plan()
+        plan = replace(plan, limits={**plan.limits, "prompt_caching": False})
+        warning = next(w for w in plan_warnings(plan) if "caching" in w)
+        self.assertIn("cost", warning)
+        self.assertIn("Nothing about the result changes", warning)
+
+    def test_caching_on_is_silent(self):
+        self.assertFalse(any("caching" in w
+                             for w in plan_warnings(example_plan())))
+
+
+def replace_judge(plan: EvaluationPlan, judge: JudgeConfig) -> EvaluationPlan:
+    return replace(plan, judge=judge)
 
 
 if __name__ == "__main__":  # pragma: no cover

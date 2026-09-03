@@ -330,6 +330,10 @@ def validate_plan(plan: EvaluationPlan) -> list[str]:
             problems.append("every model needs a provider and a model id")
 
     if plan.judge.provider and participants:
+        # Blocking for the *primary* arm only, because that arm produces the
+        # confirmatory result. A same-family clash on a secondary arm is a
+        # limitation to declare rather than a reason to refuse a run; it is
+        # reported by `plan_warnings`.
         primary = plan.model_for("primary")
         if (primary and primary.provider == plan.judge.provider
                 and not plan.judge.allow_same_family):
@@ -361,6 +365,61 @@ def validate_plan(plan: EvaluationPlan) -> list[str]:
                 "reported dollars cannot be recomputed"
             )
     return problems
+
+
+def plan_warnings(plan: EvaluationPlan) -> list[str]:
+    """Things a run should declare rather than refuse.
+
+    Separate from :func:`validate_plan` on purpose. A problem means "this plan
+    cannot produce a trustworthy number and the run should not start". A
+    warning means "this plan produces a number with a known limitation, and the
+    limitation belongs in the report". Collapsing the two would either block
+    runs that are fine or hide caveats that are not.
+    """
+    warnings: list[str] = []
+    participants = [m for m in plan.models if m.role != "judge"]
+
+    if plan.judge.provider and not plan.judge.allow_same_family:
+        # The primary arm is covered by validate_plan. This catches the arm
+        # that is easy to miss: with two participant families and one judge,
+        # no single judge is cross-family to both, so a secondary arm ends up
+        # graded by its own family while the primary arm looks fine.
+        for model in participants:
+            if model.role == "primary" or model.provider != plan.judge.provider:
+                continue
+            warnings.append(
+                f"the {model.role!r} participant {model.model!r} is graded by "
+                f"its own family ({plan.judge.provider!r}). The primary arm is "
+                "cross-family and the confirmatory result is unaffected, but "
+                "this arm's scores carry a self-preference bias and the report "
+                "must say so. There is no way around it with two participant "
+                "families and one judge: a third judge family or per-arm judge "
+                "routing would be needed, and neither exists here."
+            )
+
+    if plan.judge.second_judge:
+        warnings.append(
+            "judge.second_judge is recorded in the plan but no part of the "
+            "judging pipeline reads it. It buys nothing today — do not treat "
+            "it as covering a same-family arm."
+        )
+
+    families = {m.provider for m in participants}
+    if len(families) < 2:
+        warnings.append(
+            f"all participants come from one family ({sorted(families)}); the "
+            "run cannot tell a PAE effect apart from a single family's "
+            "idiosyncrasy, which is what the second family is for"
+        )
+
+    if not plan.limits.get("prompt_caching", True):
+        warnings.append(
+            "prompt caching is disabled; the agentic conditions will cost "
+            "several times more for identical token volume and an identical "
+            "prompt. Nothing about the result changes either way."
+        )
+
+    return warnings
 
 
 def assert_matches_world(
@@ -444,6 +503,10 @@ def example_plan(*, mode: str = "development", **overrides: Any) -> EvaluationPl
             "tool_loop_timeout_s": defaults["tool_loop_timeout_s"],
             "model_call_timeout_s": defaults["model_call_timeout_s"],
             "tool_call_timeout_s": defaults["tool_call_timeout_s"],
+            # Recorded in the plan hash so a reader can tell whether the
+            # cache counters in the trial records were even requested. It
+            # changes the bill, not the prompt: see the Anthropic adapter.
+            "prompt_caching": True,
         },
         primary_comparison=tuple(defaults["primary_comparison"]),
         primary_endpoint=str(defaults["primary_endpoint"]),

@@ -306,25 +306,62 @@ running the pipeline.
 
 ## Provider SDK verification
 
-Adapters were written against these sources on **2026-09-02**. Re-verify before
-a sealed run; provider APIs, model identifiers and prices all drift, and the
-model IDs in the example plan are placeholders rather than choices.
+Adapters were written against these sources on 2026-09-02 and re-verified on
+**2026-09-03** against the installed SDKs by introspection, not by reading docs
+alone. Re-verify before a sealed run; provider APIs, model identifiers and
+prices all drift, and the model IDs in the example plan are placeholders rather
+than choices.
 
 | What | Source | Verified |
 |---|---|---|
 | Anthropic models, context, pricing | `platform.claude.com/docs/en/about-claude/models/overview` | 2026-09-02 |
 | Anthropic Messages API, tool use, usage fields | Anthropic API reference / SDK | 2026-09-02 |
 | OpenAI Responses API request/response shape | `developers.openai.com/api/docs/api-reference/responses/create` | 2026-09-02 |
-| OpenAI pricing | `developers.openai.com/api/docs/pricing` | 2026-09-02 |
-| SDK version floors (`anthropic` 1.3, `openai` 3.7, `mcp` 2.1.1, `scipy` 1.18) | PyPI | 2026-09-02 |
+| Anthropic + OpenAI pricing, incl. cache read/write rates | `platform.claude.com/.../pricing`, `developers.openai.com/api/docs/pricing` | 2026-09-03 |
+| Prompt caching semantics, breakpoint rules, bucket disjointness | `platform.claude.com/docs/en/build-with-claude/prompt-caching`, `developers.openai.com/api/docs/guides/prompt-caching` | 2026-09-03 |
+| Installed SDK surfaces (`anthropic` 1.3.0, `openai` 3.7.0, `mcp` 2.1.1) | introspection of the pinned `.venv-eval` | 2026-09-03 |
 
-Two current-API facts shape the adapters:
+Four current-API facts shape the adapters:
 
 - `temperature`, `top_p` and `top_k` are **removed** on current frontier models
   and return 400. Adapters forward only what the plan set explicitly and never
   supply a sampling default of their own.
 - There is no seed parameter. Determinism is unavailable, which is why repeats
   exist and why the limitations section says so in every report.
+- The two providers **disagree about what `input_tokens` means.** Anthropic
+  reports a partition — `input_tokens + cache_read_input_tokens +
+  cache_creation_input_tokens` is the total. OpenAI reports a total, with
+  `input_tokens_details.cached_tokens` and `.cache_write_tokens` as subsets of
+  it. `Usage` normalizes both to disjoint buckets, so `cost_usd` can add them
+  without subtracting anything. Getting this backwards misprices every cached
+  call and nothing else notices.
+- OpenAI's cache counters are **nested under `input_tokens_details`**, not on
+  `usage` itself. Reading them from the top level returns `None` forever: no
+  error, no cache ever recorded, and every cached token billed at full rate.
+  That was a real defect here, found on 2026-09-03 by introspecting
+  `ResponseUsage` rather than trusting the field name.
+
+### Prompt caching
+
+On by default; `limits.prompt_caching: false` in the plan turns it off. The
+Anthropic adapter combines the two documented mechanisms — explicit breakpoints
+on the tool catalog and the system prompt, plus the top-level `cache_control`
+field for the rolling conversation breakpoint — using three of the four
+available slots. OpenAI caches implicitly and needs no opt-in.
+
+It is enabled as a default rather than as an experimental decision because it
+**cannot change a token the model sees**: `cache_control` is request metadata,
+the prompt is byte-identical with and without it, and no analysis reads a cache
+counter. `test_pricing_and_caching.py` asserts that directly, by sending the
+same request both ways and diffing the payloads.
+
+What it changes is the bill. On the 30-task development schedule the estimate
+falls from $217.68 to $100.50 — 54%, on identical token volume, entirely from
+the resent transcript in conditions B and D becoming a cache read.
+
+The 5-minute TTL is used, not the 1-hour one: writes cost 1.25x base input
+instead of 2x, and a run working through trials back to back does not need the
+longer window.
 
 ## CI
 
