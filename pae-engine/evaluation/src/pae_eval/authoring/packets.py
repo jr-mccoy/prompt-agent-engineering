@@ -130,6 +130,18 @@ def build_mappings(
     mappings: list[PacketMapping] = []
     problems: list[str] = []
 
+    # Names of every *other* resource in the collection, so a packet cannot
+    # hand the author a sibling's identity through a "use X instead" reference.
+    # Built from the whole registry, not the draw: a real resource name is a
+    # single search away from the collection whether or not it is one of the 45.
+    all_identifier_keys = masking.foreign_identifier_keys(records_by_uid.values())
+    # The in-draw titles get a second pass in whatever separator form the audit
+    # would recognise, which is what keeps masker and audit from disagreeing.
+    drawn_titles = {
+        t.candidate.uid: str((records_by_uid.get(t.candidate.uid) or {}).get("title") or "")
+        for t in selection.targets
+    }
+
     for target in selection.targets:
         uid = target.candidate.uid
         record = records_by_uid.get(uid)
@@ -143,9 +155,16 @@ def build_mappings(
             problems.append(f"{uid}: cannot read body: {exc}")
             continue
 
+        own_keys = masking.foreign_identifier_keys([record])
         sanitized = masking.sanitize_body(
             original,
             identifying_phrases=masking.identifying_phrases(record),
+            foreign_identifier_keys=all_identifier_keys,
+            own_identifier_keys=own_keys,
+            foreign_phrases=[
+                title for other_uid, title in drawn_titles.items()
+                if other_uid != uid and len(title.split()) >= 2
+            ],
         )
         preserved, missing = masking.guard_text_preserved(original, sanitized.text)
         if not preserved:

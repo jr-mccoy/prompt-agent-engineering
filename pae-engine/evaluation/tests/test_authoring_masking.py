@@ -214,6 +214,90 @@ class TestMaskerAndAuditAgree(unittest.TestCase):
                     )
 
 
+class TestForeignReferenceRedaction(unittest.TestCase):
+    """A packet must not name the *neighbours* of the resource it came from.
+
+    Steps 1-5 remove the packet's own identity, and for a long time that was
+    read as the whole job. It is not. The corpus cross-references siblings by
+    slug — ``- Android-specific cases (use `android-testing-patterns`)`` — so a
+    packet that had been scrubbed of itself still handed the author real
+    resource names, which is a single search away from the collection the
+    author is told not to look for.
+
+    In the draw that exposed this, one referenced sibling was itself one of the
+    45 targets, so a packet disclosed another packet's answer outright. Once
+    fixed, 17 of the 45 packets turned out to contain foreign references. The
+    rotating-seed CI check found the one that tripped the audit; no fixed
+    sample would have.
+    """
+
+    REGISTRY = [
+        {"title": "android-testing-patterns",
+         "source": {"path": "domain-x/android-testing-patterns.md"}},
+        {"title": "QA Expert", "id": "pae/skill/qa-expert",
+         "source": {"path": "domain-x/qa_expert.md"}},
+        {"title": "Risk", "source": {"path": "domain-x/risk.md"}},
+    ]
+
+    def setUp(self) -> None:
+        self.keys = masking.foreign_identifier_keys(self.REGISTRY)
+
+    def sanitize(self, text: str, own=frozenset()) -> str:
+        return masking.sanitize_body(
+            text, foreign_identifier_keys=self.keys, own_identifier_keys=own).text
+
+    def test_a_sibling_slug_is_redacted(self) -> None:
+        out = self.sanitize("- Android cases (use `android-testing-patterns`)")
+        self.assertNotIn("android-testing-patterns", out)
+        self.assertIn(masking.REDACTION, out)
+
+    def test_the_operation_survives_the_name(self) -> None:
+        """Remove identity, keep meaning — the whole point of the module."""
+        out = self.sanitize("- Android-specific testing patterns "
+                            "(use `android-testing-patterns`)")
+        self.assertIn("Android-specific testing patterns", out)
+        self.assertIn("(use", out)
+
+    def test_separator_variants_all_answer_to_one_key(self) -> None:
+        for form in ("android-testing-patterns", "android_testing_patterns"):
+            with self.subTest(form=form):
+                self.assertNotIn(form, self.sanitize(f"see `{form}` for that"))
+
+    def test_a_public_id_tail_counts_as_an_identifier(self) -> None:
+        self.assertNotIn("qa-expert", self.sanitize("hand off to `qa-expert`"))
+
+    def test_single_word_names_never_redact_prose(self) -> None:
+        """A resource called "Risk" must not perforate every body mentioning it."""
+        text = "Assess the risk and record risk owners."
+        self.assertEqual(self.sanitize(text).strip(), text)
+        self.assertNotIn("risk", masking.foreign_identifier_keys(
+            [{"title": "Risk", "source": {"path": "x/risk.md"}}]))
+
+    def test_ordinary_hyphenated_prose_is_untouched(self) -> None:
+        text = "Cover drag-and-drop and multi-step forms end-to-end."
+        self.assertEqual(self.sanitize(text).strip(), text)
+
+    def test_a_packet_does_not_redact_its_own_name_here(self) -> None:
+        """Own identity is steps 1-5's job; this step must not double-count it."""
+        own = masking.foreign_identifier_keys([self.REGISTRY[0]])
+        out = self.sanitize("I am `android-testing-patterns`", own=own)
+        self.assertIn("android-testing-patterns", out)
+
+    def test_the_redaction_is_counted(self) -> None:
+        result = masking.sanitize_body(
+            "use `qa-expert` then `android-testing-patterns`",
+            foreign_identifier_keys=self.keys)
+        self.assertIn("redact_foreign_references", result.operations)
+        self.assertGreaterEqual(result.phrase_redactions, 2)
+
+    def test_an_in_draw_title_is_removed_in_prose_form_too(self) -> None:
+        """Keeps the masker ahead of the audit's separator-insensitive gate."""
+        out = masking.sanitize_body(
+            "Compare against the Android Testing Patterns approach.",
+            foreign_phrases=["android-testing-patterns"]).text
+        self.assertNotIn("Android Testing Patterns", out)
+
+
 class TestIdentifyingPhrases(unittest.TestCase):
 
     def test_title_alias_and_filename_stem_are_all_collected(self) -> None:

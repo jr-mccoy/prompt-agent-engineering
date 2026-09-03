@@ -28,7 +28,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from typing import Any, Iterable, Mapping, Sequence
+from typing import AbstractSet, Any, Iterable, Mapping, Sequence
 
 from .. import canonical
 
@@ -265,6 +265,87 @@ def _redact_paths(text: str) -> tuple[str, bool]:
     return redacted, bool(a or b or c)
 
 
+#: A slug-shaped cross-reference: two or more alphanumeric runs joined by
+#: hyphens or underscores. The corpus writes sibling references this way, most
+#: often inside backticks — ``(use `android-testing-patterns`)``.
+_SLUG_RUN = re.compile(r"\b[A-Za-z0-9]+(?:[-_][A-Za-z0-9]+)+\b")
+
+
+def slug_key(text: str) -> str:
+    """Normalize a name to one comparable form.
+
+    The corpus writes the same identity as ``android-testing-patterns``,
+    ``android_testing_patterns`` and ``Android Testing Patterns``. All three
+    have to answer to the same key, or a cross-reference slips through in
+    whichever form was not checked.
+    """
+    return "-".join(p for p in re.split(r"[^A-Za-z0-9]+", text.casefold()) if p)
+
+
+def foreign_identifier_keys(records: Iterable[Mapping[str, Any]]) -> set[str]:
+    """Slug keys naming *any* resource in the collection.
+
+    Built from the whole registry rather than from the draw. A packet that says
+    "for Android cases use ``android-testing-patterns``" hands the author a real
+    resource name whether or not that resource happens to be one of the 45 —
+    and a real name is the one thing the packet promises not to contain, because
+    it is enough to find the collection with a single search.
+
+    Single-word names are excluded for the same reason
+    :func:`identifying_phrases` excludes them: a resource called "Risk" would
+    turn every occurrence of the word into a redaction and destroy the
+    operational content the packet exists to carry.
+    """
+    keys: set[str] = set()
+    for record in records:
+        candidates = [str(record.get("title") or "")]
+        source = record.get("source") or {}
+        stem = str(source.get("path") or "").rsplit("/", 1)[-1]
+        candidates.append(re.sub(r"\.[A-Za-z0-9]+$", "", stem))
+        public_id = str(record.get("id") or "")
+        if public_id:
+            candidates.append(public_id.rsplit("/", 1)[-1])
+        for alias in record.get("aliases") or ():
+            if isinstance(alias, str):
+                candidates.append(alias)
+        for candidate in candidates:
+            key = slug_key(candidate)
+            if key.count("-") >= 1:  # two or more words
+                keys.add(key)
+    return keys
+
+
+def _redact_foreign_references(text: str, keys: AbstractSet[str],
+                               own: AbstractSet[str]) -> tuple[str, int]:
+    """Step 6 — remove references to *other* resources by name.
+
+    Steps 1-5 remove the packet's own identity. This removes its neighbours',
+    which is a different disclosure and was missed for exactly that reason: the
+    body still read "(use ``some-other-resource``)", so the author learned real
+    names from a packet that told them not to go looking for any.
+
+    In one draw a referenced sibling was itself one of the 45, so the packet
+    disclosed another packet's answer outright. The rotating-seed CI check found
+    it; no fixed sample would have.
+
+    The operation survives — a reader still learns a boundary exists and that
+    something else handles the other case — while the name does not.
+    """
+    if not keys:
+        return text, 0
+    count = 0
+
+    def replace(match: re.Match[str]) -> str:
+        nonlocal count
+        key = slug_key(match.group(0))
+        if key in own or key not in keys:
+            return match.group(0)
+        count += 1
+        return REDACTION
+
+    return _SLUG_RUN.sub(replace, text), count
+
+
 def _phrase_pattern(phrase: str) -> re.Pattern[str]:
     """A separator-insensitive matcher for one identifying phrase.
 
@@ -321,8 +402,18 @@ def sanitize_body(
     text: str,
     *,
     identifying_phrases: Sequence[str] = (),
+    foreign_identifier_keys: AbstractSet[str] = frozenset(),
+    own_identifier_keys: AbstractSet[str] = frozenset(),
+    foreign_phrases: Sequence[str] = (),
 ) -> SanitizedBody:
-    """Run the §5 protocol in order and report which steps changed anything."""
+    """Run the §5 protocol in order and report which steps changed anything.
+
+    ``identifying_phrases`` removes the target's own identity.
+    ``foreign_identifier_keys`` removes references to *other* resources by
+    slug, and ``foreign_phrases`` removes them in whatever separator form the
+    audit would recognise — the two together keep the invariant that anything
+    the audit would flag has already been removed here.
+    """
     original = text
     operations: list[str] = []
 
@@ -350,6 +441,13 @@ def sanitize_body(
     if phrase_redactions:
         operations.append("redact_identifying_phrases")
 
+    text, foreign_slugs = _redact_foreign_references(
+        text, foreign_identifier_keys, own_identifier_keys)
+    text, foreign_named = _redact_phrases(text, foreign_phrases)
+    foreign_redactions = foreign_slugs + foreign_named
+    if foreign_redactions:
+        operations.append("redact_foreign_references")
+
     text = _collapse_blank_runs(text)
     operations.append("collapse_blank_runs")
 
@@ -361,7 +459,7 @@ def sanitize_body(
         original_bytes=len(original.encode("utf-8")),
         sanitized_bytes=len(text.encode("utf-8")),
         removed_sections=tuple(removed_sections),
-        phrase_redactions=phrase_redactions,
+        phrase_redactions=phrase_redactions + foreign_redactions,
     )
 
 

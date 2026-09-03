@@ -120,6 +120,50 @@ form, not content.
 producing a trustworthy benchmark. No sealed task has been authored, no label
 assigned, no paid provider call made.
 
+## Amendment, 2026-09-03 — masking removes neighbours' identities too
+
+The masking protocol was written to remove *the packet's own* identity, and for
+three draws that read as the whole job. It is not.
+
+The corpus cross-references siblings by slug — a "when not to use this" section
+saying ``- Android-specific cases (use `android-testing-patterns`)``. Steps 1-5
+scrubbed the packet of itself and left those references standing, so a packet
+that passed every gate still handed the author **real resource names**. A real
+name is one search away from a public repository, from a packet whose first
+page tells the author not to go looking for the collection.
+
+The fourth draw made it undeniable: a referenced sibling was itself one of the
+45, so one packet disclosed another packet's answer outright. That is what
+tripped the audit. Once the masker was fixed, **17 of the 45 packets** turned
+out to contain foreign references — so the audit had been catching the rare
+visible case while the common case went through.
+
+Two things follow.
+
+**The rotating-seed CI check earns its cost.** It draws a different 45 on every
+push rather than re-testing one lucky sample, and this is the second real defect
+it has found — after the guard-preservation false positive on a resource whose
+title reads like a safety heading. Neither would have appeared in a fixed
+fixture.
+
+**The masker must lead the audit, not match it.** The audit's cross-packet gate
+only looks at name-shaped titles of other resources *in the draw*, so matching
+it exactly would have left every out-of-draw sibling name in place — including
+the one that started this. The masker now redacts any slug matching a known
+registry identifier, whether or not that resource was drawn, and separately
+redacts in-draw titles in whatever separator form the audit would recognise.
+The first is the firewall; the second keeps the two halves from disagreeing.
+
+Cost measured on the live draw: retention median 0.917 (against 0.908 for the
+previous draw), guards preserved 45/45. The operation survives the name —
+``(use `[identifier removed]`)`` still tells a reader a boundary exists and that
+something else handles the other case.
+
+Single-word names are excluded from the identifier set for the same reason
+`identifying_phrases` excludes them: a resource called "Risk" would turn every
+occurrence of the word into a redaction and destroy the operational content the
+packet exists to carry.
+
 ## Related
 
 - [ADR-0033](0033-evaluation-runtime-separate-from-engine.md) — evaluation runtime separate from the Engine
