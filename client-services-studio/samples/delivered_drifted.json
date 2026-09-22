@@ -1,0 +1,8 @@
+{
+  "_comment": "Negative fixture: drift. X1 is on the engagement's exclusion list, and total effort of 22 days exceeds the agreed 16 by more than 15%.",
+  "items": [
+    { "id": "D1", "name": "Pipeline assessment", "days": 12 },
+    { "id": "D2", "name": "Prioritised remediation sequence", "days": 4 },
+    { "id": "X1", "name": "Implementation of the recommendations", "days": 6 }
+  ]
+}

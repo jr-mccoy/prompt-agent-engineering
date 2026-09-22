@@ -50,11 +50,11 @@ This is a governed collection of AI prompts and agentic resources — the **PAE 
 **Total resources** (generated — do not hand-edit; run `python3 scripts/generate_repo_facts.py --write`):
 
 <!-- REPO_FACTS:BEGIN name=counts -->
-<!-- REPO_FACTS_DECLARATION: {"active_techniques": 327, "agentic_resource_artifacts": 799, "agents": 143, "bundled_component_files": 667, "commands": 115, "domain_command_artifacts": 10, "domain_directories": 44, "domain_prompt_artifacts": 4121, "indexed_artifacts": 5597, "personas": 53, "skills": 330, "technique_categories": 18, "unindexed_domain_directories": 0} -->
-- **4121 indexed domain prompt artifacts** across 44 `domain-*` directories. This is the index's structural classification, not a normalized resource-kind count.
+<!-- REPO_FACTS_DECLARATION: {"active_techniques": 327, "agentic_resource_artifacts": 799, "agents": 143, "bundled_component_files": 667, "commands": 115, "domain_command_artifacts": 10, "domain_directories": 44, "domain_prompt_artifacts": 4141, "indexed_artifacts": 5617, "personas": 53, "skills": 330, "technique_categories": 18, "unindexed_domain_directories": 0} -->
+- **4141 indexed domain prompt artifacts** across 44 `domain-*` directories. This is the index's structural classification, not a normalized resource-kind count.
 - **330 skills, 143 agents, 115 commands, 53 personas** under `domain-agentic-resources/`.
 - **327 active techniques** across 18 categories in `techniques/MASTER_TECHNIQUE_INDEX.md`.
-- `PROMPT_INDEX.json` holds **5597 indexed artifacts**. That total is not a prompt count: it mixes the 4121 domain prompt artifacts with 10 domain slash commands, 799 agentic resources, and 667 bundled component files (a parent resource's `references/`, `assets/`, `cards/` and similar).
+- `PROMPT_INDEX.json` holds **5617 indexed artifacts**. That total is not a prompt count: it mixes the 4141 domain prompt artifacts with 10 domain slash commands, 799 agentic resources, and 667 bundled component files (a parent resource's `references/`, `assets/`, `cards/` and similar).
 - All 44 `domain-*` directories are covered by the index allowlist (`DOMAIN_DIRS` in `scripts/generate_prompt_index.py`).
 <!-- REPO_FACTS:END name=counts -->
 
@@ -72,7 +72,7 @@ Membership rules for each category live in [`meta/REPOSITORY_FACTS.json`](meta/R
 | `pae-engine/` | The `pae` CLI (routing, search, context bundles) and its optional MCP server |
 | `scripts/` | Index generation, naming/link validation, drift checks |
 | `tests/` | Repo invariants |
-| Toolkits at root | `agentic-system-factory/`, `childrens-book-studio/`, `sourced-nonfiction-studio/`, `ai-investment-research-toolkit/`, `financial-records-toolkit/`, `continuity-kit/`, `portable-prompt-system/` — self-contained pipelines that *orchestrate* domain prompts rather than duplicating them |
+| Toolkits at root | `agentic-system-factory/`, `childrens-book-studio/`, `sourced-nonfiction-studio/`, `ai-investment-research-toolkit/`, `client-services-studio/`, `financial-records-toolkit/`, `continuity-kit/`, `portable-prompt-system/` — self-contained pipelines that *orchestrate* domain prompts rather than duplicating them |
 
 The 44 domains: AI-ML, advertising, agentic-resources, biblical-studies,
 business-strategy, childrens-writing, conversation-practice, creative-writing,
@@ -152,6 +152,7 @@ is the defect this structure exists to prevent.
 | **A new prompt — non-coding** | Build from `NON_CODING_QUICK_START.md`. Classify task type (CREATE / LEARN / DECIDE / COMMUNICATE / IMPROVE / SIMULATE), identify domain, apply the pattern, use the 5 elements (intent clarity, audience, context, output spec, quality indicators), add verification + false-positive prevention. |
 | **A new skill** | `authoring/skill-patterns/README.md` → classify type (WORKFLOW / TOOL / DOMAIN / CREATION / ANALYSIS / INTEGRATION / META) → `SKILL_USE_CASE_LOOKUP.md` → `SKILL_PATTERN_INDEX.md` (41 patterns) → validate with `SKILL_QUALITY_RUBRIC.md`. |
 | **A new agent / command** | `authoring/agent-patterns/AGENT_QUICK_START.md` / `authoring/command-patterns/COMMAND_QUICK_START.md`. |
+| **To run a client engagement** (qualify → scope → price → propose → contract → deliver → invoice → close out) | `client-services-studio/`. Four gates enforced in code; it orchestrates `domain-business-strategy/client-services/`, `domain-legal/contracts-transactional/`, `domain-finance/` and `domain-negotiation/` rather than duplicating them. |
 | **A whole agentic system** | Manual: `authoring/system-patterns/README.md`. Guided: `agentic-system-factory/`. Gate 0 first — `domain-AI-ML/agentic-ai-systems/aiagent_complexity_ladder_gate.md` asks whether it needs an agent at all. |
 | **To learn about prompting** | `AI_AGENT_QUICK_START.md`, `techniques/MASTER_TECHNIQUE_INDEX.md`, `PROMPT_QUALITY_STANDARDS.md`. |
 

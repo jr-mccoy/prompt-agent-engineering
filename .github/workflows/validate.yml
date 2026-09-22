@@ -136,3 +136,12 @@ jobs:
       - name: ai-investment-research-toolkit tests
         working-directory: ai-investment-research-toolkit
         run: python3 -m unittest discover -s tests -v
+
+      - name: client-services-studio skill self-checks
+        working-directory: client-services-studio
+        run: |
+          for s in skills/*/scripts/*.py; do python3 "$s" --self-check; done
+
+      - name: client-services-studio tests
+        working-directory: client-services-studio
+        run: python3 -m unittest discover -s tests -v

@@ -4,11 +4,11 @@
 >
 > For classified counts with stated membership rules, see [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json). Normalized resource kinds are planned for the PAE Registry and do not exist yet — see [`ROADMAP.md`](ROADMAP.md).
 
-**Generated:** 2026-08-31
+**Generated:** 2026-09-21
 
-**Total Indexed Artifacts:** 5597
+**Total Indexed Artifacts:** 5617
 
-**Artifacts with Frontmatter:** 4661
+**Artifacts with Frontmatter:** 4681
 
 **Artifacts without Frontmatter:** 936
 
@@ -1982,7 +1982,7 @@
 
 ## Business Strategy
 
-**Total:** 64 prompts
+**Total:** 72 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -2014,6 +2014,14 @@
 | [Tool and Product Comparison](domain-business-strategy/research/research_tool_comparison.md) | business-strategy/research | ST-01, RT-02, DS-02, RT-05, QA-02 | research, tool-comparison, software-evaluation, purchasing, web-research | Compare software tools for a specific use case and produce a source-cited side-by-side comparison (C... |
 | [User Research Synthesis — Turn 10–30 Interviews in](domain-business-strategy/research/user_research_synthesis.md) | business-strategy/research | ST-01, ST-02, RT-02, DS-01, DS-02 | user-research, qualitative-synthesis, thematic-coding, customer-discovery, product-decisions | Synthesize a body of primary user interviews into traceable themes, contradictions, segment patterns... |
 | [Vendor Evaluation for Purchase Decision](domain-business-strategy/research/research_vendor_evaluation.md) | business-strategy/research | ST-01, RT-02, DS-02, RT-05, DS-06 | research, vendor-evaluation, procurement, decision-support, web-research | Deeply evaluate a single vendor/product against a specific situation and produce a source-cited deci... |
+| [Productized Offer Designer](domain-business-strategy/client-services/services_productized_offer_designer.md) | client-services/offer | CM-03, NE-09, QA-08, OC-03, RT-05 | consulting, freelance, productized-service, fixed-price, packaging | Convert a bespoke service into a fixed-scope, fixed-price, fixed-duration package — identifying the ... |
+| [Services Offer Definition and Boundary](domain-business-strategy/client-services/services_offer_definition_and_boundary.md) | client-services/offer | CM-03, CM-02, NE-09, QA-08, OC-03 | consulting, freelance, services, offer-design, scope-boundary | Turn a vague 'I help people with X' into a named services offer with a stated outcome, a fixed set o... |
+| [Capacity and Utilization Planner](domain-business-strategy/client-services/services_capacity_and_utilization_planner.md) | client-services/operations | CM-02, RT-05, OC-03, QA-08, MP-04 | consulting, freelance, capacity-planning, utilization, pipeline | Plan the billable capacity of a services practice — true sellable days after non-billable load, comm... |
+| [Client Value Quantification](domain-business-strategy/client-services/services_client_value_quantification.md) | client-services/pricing | RT-05, CM-01, QA-01, OC-03, ED-05 | consulting, freelance, value-pricing, roi, business-case | Build the client-side economic model for an engagement — what the problem costs them per month, what... |
+| [Retainer Design and Scope Ceiling](domain-business-strategy/client-services/services_retainer_design_and_ceiling.md) | client-services/pricing | CM-02, CM-03, QA-08, OC-03, DD-06 | consulting, freelance, retainer, recurring-revenue, scope-ceiling | Design a services retainer that does not decay into unpaid employment — what is being bought, the sc... |
+| [Services Pricing Model Selector](domain-business-strategy/client-services/services_pricing_model_selector.md) | client-services/pricing | CM-02, RT-05, MP-04, OC-03, QA-08 | consulting, freelance, pricing, day-rate, retainer | Choose the charging structure for a services engagement — hourly, day rate, fixed fee, retainer, val... |
+| [Ideal Client Profile and Disqualifiers](domain-business-strategy/client-services/services_ideal_client_and_disqualifiers.md) | client-services/qualification | CM-02, QA-08, RT-05, OC-03, NE-04 | consulting, freelance, qualification, ideal-client, disqualifiers | Build a two-sided client profile for a services practice — the traits that predict a good engagement... |
+| [Client Concentration Risk Check](domain-business-strategy/client-services/services_client_concentration_risk_check.md) | client-services/risk | RT-05, CM-02, OC-03, QA-08, NE-27 | consulting, freelance, concentration-risk, revenue-risk, client-portfolio | Measure and act on revenue concentration in a services practice — share by client, effective notice ... |
 | [Startup App Icon Concept Generator](domain-business-strategy/startup/app-store-assets/startup_app_icon_concept.md) | startup/app-store-assets | ST-01, ST-02, RT-03, NE-01, DS-02 | startup, app-icon, mobile, app-store, visual-identity | Generate strategic app icon concepts that stand out in app stores while maintaining brand consistenc... |
 | [Startup App Screenshot Strategy](domain-business-strategy/startup/app-store-assets/startup_screenshot_strategy.md) | startup/app-store-assets | ST-01, ST-02, NE-01, OC-01, DS-01 | startup, app-store, screenshots, aso, marketing | Plan effective app store screenshots that communicate value, drive downloads, and tell a compelling ... |
 | [Startup Brand Personality](domain-business-strategy/startup/brand-identity/startup_brand_personality.md) | startup/brand-identity | ST-01, ST-02, NE-01, AG-10, RT-03 | startup, branding, personality, voice, tone | Define your brand's human personality traits, voice characteristics, and emotional expression across... |
@@ -2624,10 +2632,16 @@
 
 ## Finance
 
-**Total:** 146 prompts
+**Total:** 152 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
+| [Collections Escalation Ladder](domain-finance/accounting-controllership/finance_collections_escalation_ladder.md) | accounting-controllership/orde | ST-02, QA-08, CM-09, OC-03, DD-06 | services-practice, collections, escalation, unpaid-invoice, cash-collection | A staged escalation path for an unpaid services invoice — from AP confirmation through sponsor escal... |
+| [Receivables Aging Triage](domain-finance/accounting-controllership/finance_receivables_aging_triage.md) | accounting-controllership/orde | RT-10, RT-05, OC-03, QA-08, CM-02 | services-practice, receivables, aging, dso, cash-collection | Triage an overdue receivables ledger for a services practice — separating administrative blockage fr... |
+| [Services Invoice Schedule Builder](domain-finance/accounting-controllership/finance_services_invoice_schedule_builder.md) | accounting-controllership/orde | CM-02, ST-02, OC-03, QA-08, NE-03 | services-practice, invoicing, order-to-cash, milestone-billing, accounts-payable | Turn a signed statement of work into an invoice schedule that survives the client's accounts-payable... |
+| [Engagement Profitability Post-Calculation](domain-finance/corporate-finance-fpa/finance_engagement_profitability_postcalc.md) | corporate-finance-fpa/services | RT-09, RT-05, QA-01, OC-03, DD-07 | services-practice, profitability, estimate-variance, realized-margin, engagement-review | Close out a delivered engagement with an estimate-versus-actual reckoning — realised effective rate,... |
+| [Services Rate Floor Model](domain-finance/corporate-finance-fpa/finance_services_rate_floor_model.md) | corporate-finance-fpa/services | RT-05, CM-02, OC-03, QA-08, MP-04 | services-practice, rate-setting, cost-of-delivery, utilization, overhead-absorption | Derive the minimum defensible billable rate for a services practice from total cost of delivery — ov... |
+| [Subcontractor Margin Model](domain-finance/corporate-finance-fpa/finance_subcontractor_margin_model.md) | corporate-finance-fpa/services | RT-05, CM-02, OC-03, QA-08, MP-04 | services-practice, subcontracting, margin, working-capital, bench-risk | Model the economics of delivering client work through subcontractors — gross and net margin after ma... |
 | [Account Reconciliation Protocol — Structured Recs ](domain-finance/accounting-controllership/finance_account_reconciliation_protocol.md) | finance/accounting-controllers | ST-02, DT-02, NE-11, DS-06, QA-01 | reconciliation, balance-sheet, exception-handling, controllership, aging | Run a structured balance-sheet account reconciliation: tie GL to an independent supporting source, c... |
 | [Accrual & Deferral Logic Builder — Entries, Suppor](domain-finance/accounting-controllership/finance_accrual_deferral_logic_builder.md) | finance/accounting-controllers | NE-11, DT-02, DS-06, QA-01, RT-05 | accruals, deferrals, journal-entries, matching-principle, reversing-entries | Build month-end accrual and deferral journal entries with calculation support, period-matching ratio... |
 | [Audit PBC Preparation — Request List and Supportin](domain-finance/accounting-controllership/finance_audit_pbc_preparation.md) | finance/accounting-controllers | ST-02, DS-06, NE-06, QA-01, DT-02 | audit-pbc, audit-prep, supporting-schedules, tie-out, trial-balance | Prepare an audit Prepared-By-Client (PBC) list and supporting-schedule package: map requests to sign... |
@@ -3486,7 +3500,7 @@
 
 ## Legal
 
-**Total:** 171 prompts
+**Total:** 174 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -3502,10 +3516,13 @@
 | [Master Services Agreement Drafter](domain-legal/contracts-transactional/legal_msa_drafter.md) | legal/contracts-transactional | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, contracts, msa, drafting, services-agreement | Draft a complete Master Services Agreement with standard schedules (SOW form, DPA, SLA, insurance, s... |
 | [Mutual NDA Drafter](domain-legal/contracts-transactional/legal_nda_mutual_drafter.md) | legal/contracts-transactional | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, contracts, nda, confidentiality, residuals | Draft a mutual non-disclosure agreement with calibrated definition of Confidential Information, stan... |
 | [Negotiation Position Paper](domain-legal/contracts-transactional/legal_negotiation_position_paper.md) | legal/contracts-transactional | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, contracts, negotiation, position-paper, batna | Internal posture memo with primary, fallback, and walkaway positions for each open issue, plus BATNA... |
+| [Payment Terms and Late Fee Review — Supplier Side](domain-legal/contracts-transactional/legal_payment_terms_and_late_fee_review.md) | legal/contracts-transactional | ST-02, ST-03, CM-02, QA-01, OC-03 | legal, contracts, payment-terms, late-payment, suspension-of-work | Review the payment architecture of a services agreement from the supplier's side: net terms and when... |
 | [SaaS Subscription Agreement Drafter](domain-legal/contracts-transactional/legal_saas_subscription_agreement_drafter.md) | legal/contracts-transactional | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, contracts, saas, subscription, sla | Draft a SaaS subscription agreement with usage metrics, SLA framework, security and data protection,... |
 | [Statement of Work Drafter](domain-legal/contracts-transactional/legal_sow_drafter.md) | legal/contracts-transactional | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, contracts, sow, statement-of-work, acceptance | Draft a Statement of Work attached to an existing MSA with specific scope, deliverables, milestones,... |
+| [Subcontractor Flow-Down Check](domain-legal/contracts-transactional/legal_subcontractor_flow_down_check.md) | legal/contracts-transactional | ST-02, ST-03, CM-02, QA-01, OC-03 | legal, contracts, subcontracting, flow-down, back-to-back | Check that obligations owed to a client pass through correctly to subcontractors: confidentiality, I... |
 | [Targeted Clause Redline — Indemnity, LoL, IP, Warr](domain-legal/contracts-transactional/legal_contract_clause_redline_targeted.md) | legal/contracts-transactional | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, contracts, indemnity, limitation-of-liability, ip-ownership | Focused redline pass on the five highest-risk clause families: indemnification, limitation of liabil... |
 | [Term Sheet to Definitive Documents Translator](domain-legal/contracts-transactional/legal_term_sheet_to_definitive_translator.md) | legal/contracts-transactional | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, contracts, term-sheet, definitive-documents, open-issues | Convert a signed or near-final term sheet into a structured first-draft set of definitive agreements... |
+| [Termination Economics — Provider Side](domain-legal/contracts-transactional/legal_termination_economics_provider_side.md) | legal/contracts-transactional | ST-02, ST-03, CM-02, QA-01, OC-03 | legal, contracts, termination, kill-fee, notice-period | Price the termination provisions of a services agreement from the provider's side: kill fee and its ... |
 | [Board Resolution Drafter (Transactional Approvals)](domain-legal/corporate-ma/legal_board_resolution_drafter.md) | legal/corporate-ma | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, m-and-a, corporate, board-resolution, corporate-governance | Draft board (and, where required, stockholder) resolutions for M&A transactional approvals: WHEREAS ... |
 | [Buy-Side Due Diligence Request List](domain-legal/corporate-ma/legal_due_diligence_request_list.md) | legal/corporate-ma | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, m-and-a, corporate, due-diligence, buy-side | Produce a buy-side legal due diligence request list tailored to deal structure (asset / stock / merg... |
 | [Disclosure Schedule Drafter](domain-legal/corporate-ma/legal_disclosure_schedule_drafter.md) | legal/corporate-ma | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, m-and-a, corporate, disclosure-schedule, representations-warranties | Draft a seller's disclosure schedule structured to the representations and warranties of the definit... |
@@ -4413,10 +4430,13 @@
 
 ## Professional Writing
 
-**Total:** 63 prompts
+**Total:** 66 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
+| [Client Engagement Proposal](domain-professional-writing/business-writing/business_writing_client_engagement_proposal.md) | business-writing/client-facing | CM-01, ST-03, NE-23, OC-03, QA-08 | proposal, client-facing, consulting, freelance, sow | Write a client-facing services proposal from a discovery record and a scoping decision — option-tier... |
+| [Engagement Case Study](domain-professional-writing/business-writing/business_writing_engagement_case_study.md) | business-writing/client-facing | RT-05, CM-01, QA-01, OC-03, ED-05 | case-study, client-facing, consulting, freelance, social-proof | Generate a publishable case study from a completed client engagement — situation, intervention, resu... |
+| [Testimonial and Referral Request](domain-professional-writing/business-writing/business_writing_testimonial_and_referral_request.md) | business-writing/client-facing | CM-01, ST-03, NE-23, OC-03, QA-08 | testimonial, referral, client-facing, consulting, freelance | Ask a satisfied client for a testimonial and an onward introduction — timing the ask to the moment o... |
 | [Blameless Post-Mortem Writer — Incident Write-Up i](domain-professional-writing/business-writing/business_writing_post_mortem.md) | professional-writing/business- | ST-01, ST-02, RT-05, CM-02, QA-04 | post-mortem, incident-writeup, blameless, business-writing, root-cause | Write a blameless post-mortem / incident write-up: summary, timeline, impact, root cause(s), contrib... |
 | [Business Proposal Writer — Persuasive Problem, Sol](domain-professional-writing/business-writing/business_writing_proposal.md) | professional-writing/business- | ST-01, ST-02, RT-05, CM-02, QA-04 | proposal, persuasive-writing, business-writing, roi, call-to-action | Write a persuasive business proposal: problem framing, proposed solution, scope, value/ROI rationale... |
 | [Executive Brief Writer — One-Page BLUF, Options, a](domain-professional-writing/business-writing/business_writing_executive_brief.md) | professional-writing/business- | ST-01, ST-02, DS-06, CM-02, QA-04 | executive-brief, bluf, decision-document, business-writing, leadership-communication | Compress a complex topic into a one-page executive brief: bottom-line-up-front, the so-what, options... |

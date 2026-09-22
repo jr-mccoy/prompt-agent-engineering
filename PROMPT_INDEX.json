@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated": "2026-08-31",
+    "generated": "2026-09-21",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 5597,
-    "artifacts_with_frontmatter": 4661,
+    "total_indexed_artifacts": 5617,
+    "artifacts_with_frontmatter": 4681,
     "artifacts_without_frontmatter": 936,
     "domains": 44,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 5597,
-    "prompts_with_frontmatter": 4661,
+    "total_prompts": 5617,
+    "prompts_with_frontmatter": 4681,
     "prompts_without_frontmatter": 936
   },
   "prompts": [
@@ -50040,6 +50040,229 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-business-strategy/client-services/services_productized_offer_designer.md",
+      "filename": "services_productized_offer_designer.md",
+      "title": "Productized Offer Designer",
+      "domain": "business-strategy",
+      "category": "client-services/offer",
+      "description": "Convert a bespoke service into a fixed-scope, fixed-price, fixed-duration package — identifying the repeatable core, standardising the process, setting the input contract, and testing whether the variance across past engagements is low enough for a fixed price to be safe",
+      "techniques": [
+        "CM-03",
+        "NE-09",
+        "QA-08",
+        "OC-03",
+        "RT-05"
+      ],
+      "keywords": [
+        "consulting",
+        "freelance",
+        "productized-service",
+        "fixed-price",
+        "packaging",
+        "repeatability",
+        "solo-operator"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/client-services/services_offer_definition_and_boundary.md",
+      "filename": "services_offer_definition_and_boundary.md",
+      "title": "Services Offer Definition and Boundary",
+      "domain": "business-strategy",
+      "category": "client-services/offer",
+      "description": "Turn a vague 'I help people with X' into a named services offer with a stated outcome, a fixed set of deliverables, an explicit exclusion list, and the boundary conditions under which you will not take the work — the document every later pricing, scoping and proposal step reads from",
+      "techniques": [
+        "CM-03",
+        "CM-02",
+        "NE-09",
+        "QA-08",
+        "OC-03"
+      ],
+      "keywords": [
+        "consulting",
+        "freelance",
+        "services",
+        "offer-design",
+        "scope-boundary",
+        "positioning",
+        "solo-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/client-services/services_capacity_and_utilization_planner.md",
+      "filename": "services_capacity_and_utilization_planner.md",
+      "title": "Capacity and Utilization Planner",
+      "domain": "business-strategy",
+      "category": "client-services/operations",
+      "description": "Plan the billable capacity of a services practice — true sellable days after non-billable load, committed versus available capacity, the bench date each open opportunity is racing, and the utilization target that is sustainable rather than theoretical",
+      "techniques": [
+        "CM-02",
+        "RT-05",
+        "OC-03",
+        "QA-08",
+        "MP-04"
+      ],
+      "keywords": [
+        "consulting",
+        "freelance",
+        "capacity-planning",
+        "utilization",
+        "pipeline",
+        "bench",
+        "solo-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/client-services/services_client_value_quantification.md",
+      "filename": "services_client_value_quantification.md",
+      "title": "Client Value Quantification",
+      "domain": "business-strategy",
+      "category": "client-services/pricing",
+      "description": "Build the client-side economic model for an engagement — what the problem costs them per month, what a fix is worth, and which number they already track — producing the defensible value figure that anchors a price, with the attribution weaknesses stated",
+      "techniques": [
+        "RT-05",
+        "CM-01",
+        "QA-01",
+        "OC-03",
+        "ED-05"
+      ],
+      "keywords": [
+        "consulting",
+        "freelance",
+        "value-pricing",
+        "roi",
+        "business-case",
+        "anchoring",
+        "solo-operator"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/client-services/services_retainer_design_and_ceiling.md",
+      "filename": "services_retainer_design_and_ceiling.md",
+      "title": "Retainer Design and Scope Ceiling",
+      "domain": "business-strategy",
+      "category": "client-services/pricing",
+      "description": "Design a services retainer that does not decay into unpaid employment — what is being bought, the scope ceiling and what happens above it, the rollover rule, the review cadence, and the exit terms, with the four failure modes that kill retainers named and guarded",
+      "techniques": [
+        "CM-02",
+        "CM-03",
+        "QA-08",
+        "OC-03",
+        "DD-06"
+      ],
+      "keywords": [
+        "consulting",
+        "freelance",
+        "retainer",
+        "recurring-revenue",
+        "scope-ceiling",
+        "solo-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/client-services/services_pricing_model_selector.md",
+      "filename": "services_pricing_model_selector.md",
+      "title": "Services Pricing Model Selector",
+      "domain": "business-strategy",
+      "category": "client-services/pricing",
+      "description": "Choose the charging structure for a services engagement — hourly, day rate, fixed fee, retainer, value share, or milestone — from the engagement's risk profile, measurability, and scope stability, and state the conditions under which the chosen model fails",
+      "techniques": [
+        "CM-02",
+        "RT-05",
+        "MP-04",
+        "OC-03",
+        "QA-08"
+      ],
+      "keywords": [
+        "consulting",
+        "freelance",
+        "pricing",
+        "day-rate",
+        "retainer",
+        "fixed-fee",
+        "value-pricing",
+        "solo-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/client-services/services_ideal_client_and_disqualifiers.md",
+      "filename": "services_ideal_client_and_disqualifiers.md",
+      "title": "Ideal Client Profile and Disqualifiers",
+      "domain": "business-strategy",
+      "category": "client-services/qualification",
+      "description": "Build a two-sided client profile for a services practice — the traits that predict a good engagement and, more importantly, the observable disqualifiers that predict a bad one, expressed as a decision rule you can apply in the first ten minutes of contact",
+      "techniques": [
+        "CM-02",
+        "QA-08",
+        "RT-05",
+        "OC-03",
+        "NE-04"
+      ],
+      "keywords": [
+        "consulting",
+        "freelance",
+        "qualification",
+        "ideal-client",
+        "disqualifiers",
+        "red-flags",
+        "solo-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/client-services/services_client_concentration_risk_check.md",
+      "filename": "services_client_concentration_risk_check.md",
+      "title": "Client Concentration Risk Check",
+      "domain": "business-strategy",
+      "category": "client-services/risk",
+      "description": "Measure and act on revenue concentration in a services practice — share by client, effective notice period, replacement time, and the compound exposure where one client is simultaneously the largest, the reference, and the referral source",
+      "techniques": [
+        "RT-05",
+        "CM-02",
+        "OC-03",
+        "QA-08",
+        "NE-27"
+      ],
+      "keywords": [
+        "consulting",
+        "freelance",
+        "concentration-risk",
+        "revenue-risk",
+        "client-portfolio",
+        "solo-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-business-strategy/startup/app-store-assets/startup_app_icon_concept.md",
       "filename": "startup_app_icon_concept.md",
       "title": "Startup App Icon Concept Generator",
@@ -67863,6 +68086,173 @@
         "domain-software-engineering/improvement/improvement_refactoring.md",
         "domain-engineering-workflows/workflows/debug_prompt.md"
       ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-finance/accounting-controllership/finance_collections_escalation_ladder.md",
+      "filename": "finance_collections_escalation_ladder.md",
+      "title": "Collections Escalation Ladder",
+      "domain": "finance",
+      "category": "accounting-controllership/order-to-cash",
+      "description": "A staged escalation path for an unpaid services invoice — from AP confirmation through sponsor escalation, work suspension, formal notice and handoff to a demand letter — with the trigger, message and relationship cost of each rung, and the rule that no rung is skipped or repeated",
+      "techniques": [
+        "ST-02",
+        "QA-08",
+        "CM-09",
+        "OC-03",
+        "DD-06"
+      ],
+      "keywords": [
+        "services-practice",
+        "collections",
+        "escalation",
+        "unpaid-invoice",
+        "cash-collection",
+        "consulting",
+        "solo-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-finance/accounting-controllership/finance_receivables_aging_triage.md",
+      "filename": "finance_receivables_aging_triage.md",
+      "title": "Receivables Aging Triage",
+      "domain": "finance",
+      "category": "accounting-controllership/order-to-cash",
+      "description": "Triage an overdue receivables ledger for a services practice — separating administrative blockage from dispute from distress from refusal, because each has a different remedy — and convert the ledger into a prioritized action list with an exposure figure and a provisioning decision",
+      "techniques": [
+        "RT-10",
+        "RT-05",
+        "OC-03",
+        "QA-08",
+        "CM-02"
+      ],
+      "keywords": [
+        "services-practice",
+        "receivables",
+        "aging",
+        "dso",
+        "cash-collection",
+        "consulting",
+        "solo-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-finance/accounting-controllership/finance_services_invoice_schedule_builder.md",
+      "filename": "finance_services_invoice_schedule_builder.md",
+      "title": "Services Invoice Schedule Builder",
+      "domain": "finance",
+      "category": "accounting-controllership/order-to-cash",
+      "description": "Turn a signed statement of work into an invoice schedule that survives the client's accounts-payable review — milestone triggers tied to acceptance rather than activity, the evidence pack each invoice needs, purchase-order and approval routing, and the terms that decide when cash actually arrives",
+      "techniques": [
+        "CM-02",
+        "ST-02",
+        "OC-03",
+        "QA-08",
+        "NE-03"
+      ],
+      "keywords": [
+        "services-practice",
+        "invoicing",
+        "order-to-cash",
+        "milestone-billing",
+        "accounts-payable",
+        "consulting",
+        "solo-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-finance/corporate-finance-fpa/finance_engagement_profitability_postcalc.md",
+      "filename": "finance_engagement_profitability_postcalc.md",
+      "title": "Engagement Profitability Post-Calculation",
+      "domain": "finance",
+      "category": "corporate-finance-fpa/services-practice",
+      "description": "Close out a delivered engagement with an estimate-versus-actual reckoning — realised effective rate, where effort went against plan, which decisions caused the variance, and what the estimate error implies for the next quote and for fixed-price eligibility",
+      "techniques": [
+        "RT-09",
+        "RT-05",
+        "QA-01",
+        "OC-03",
+        "DD-07"
+      ],
+      "keywords": [
+        "services-practice",
+        "profitability",
+        "estimate-variance",
+        "realized-margin",
+        "engagement-review",
+        "consulting"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-finance/corporate-finance-fpa/finance_services_rate_floor_model.md",
+      "filename": "finance_services_rate_floor_model.md",
+      "title": "Services Rate Floor Model",
+      "domain": "finance",
+      "category": "corporate-finance-fpa/services-practice",
+      "description": "Derive the minimum defensible billable rate for a services practice from total cost of delivery — overhead, unbilled time, self-employment burden, benefits self-funding, and target margin — producing a floor below which work destroys value rather than earning less",
+      "techniques": [
+        "RT-05",
+        "CM-02",
+        "OC-03",
+        "QA-08",
+        "MP-04"
+      ],
+      "keywords": [
+        "services-practice",
+        "rate-setting",
+        "cost-of-delivery",
+        "utilization",
+        "overhead-absorption",
+        "solo-operator",
+        "consulting"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-finance/corporate-finance-fpa/finance_subcontractor_margin_model.md",
+      "filename": "finance_subcontractor_margin_model.md",
+      "title": "Subcontractor Margin Model",
+      "domain": "finance",
+      "category": "corporate-finance-fpa/services-practice",
+      "description": "Model the economics of delivering client work through subcontractors — gross and net margin after management load, payment-timing exposure from pay-when-paid mismatch, the utilization break-even on a bench, and the margin floor below which subcontracting transfers risk without reward",
+      "techniques": [
+        "RT-05",
+        "CM-02",
+        "OC-03",
+        "QA-08",
+        "MP-04"
+      ],
+      "keywords": [
+        "services-practice",
+        "subcontracting",
+        "margin",
+        "working-capital",
+        "bench-risk",
+        "consulting",
+        "solo-operator"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-21",
+      "related_prompts": [],
       "has_frontmatter": true
     },
     {
@@ -92050,6 +92440,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/contracts-transactional/legal_payment_terms_and_late_fee_review.md",
+      "filename": "legal_payment_terms_and_late_fee_review.md",
+      "title": "Payment Terms and Late Fee Review — Supplier Side",
+      "domain": "legal",
+      "category": "legal/contracts-transactional",
+      "description": "Review the payment architecture of a services agreement from the supplier's side: net terms and when the clock starts, invoice-approval and acceptance gates, milestone triggers, late-payment interest and its enforceability, suspension-of-work rights, retainage, set-off and disputed-amount handling.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-02",
+        "QA-01",
+        "OC-03"
+      ],
+      "keywords": [
+        "legal",
+        "contracts",
+        "payment-terms",
+        "late-payment",
+        "suspension-of-work",
+        "retainage",
+        "supplier-side"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [
+        "domain-legal/contracts-transactional/legal_contract_clause_redline_targeted.md",
+        "domain-legal/contracts-transactional/legal_contract_risk_heatmap.md",
+        "domain-legal/contracts-transactional/legal_sow_drafter.md",
+        "domain-legal/client-intake-communications/legal_demand_letter_drafter.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/contracts-transactional/legal_saas_subscription_agreement_drafter.md",
       "filename": "legal_saas_subscription_agreement_drafter.md",
       "title": "SaaS Subscription Agreement Drafter",
@@ -92116,6 +92539,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/contracts-transactional/legal_subcontractor_flow_down_check.md",
+      "filename": "legal_subcontractor_flow_down_check.md",
+      "title": "Subcontractor Flow-Down Check",
+      "domain": "legal",
+      "category": "legal/contracts-transactional",
+      "description": "Check that obligations owed to a client pass through correctly to subcontractors: confidentiality, IP assignment, liability caps and insurance, data protection, warranties, audit and termination rights — and identify the gaps where the prime holds an obligation it cannot enforce downstream.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-02",
+        "QA-01",
+        "OC-03"
+      ],
+      "keywords": [
+        "legal",
+        "contracts",
+        "subcontracting",
+        "flow-down",
+        "back-to-back",
+        "liability-cap",
+        "supplier-side"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-21",
+      "related_prompts": [
+        "domain-legal/contracts-transactional/legal_contract_clause_redline_targeted.md",
+        "domain-legal/contracts-transactional/legal_dpa_gdpr_drafter.md",
+        "domain-legal/contracts-transactional/legal_msa_drafter.md",
+        "domain-legal/employment-labor/solo_dev_contractor_management.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/contracts-transactional/legal_contract_clause_redline_targeted.md",
       "filename": "legal_contract_clause_redline_targeted.md",
       "title": "Targeted Clause Redline — Indemnity, LoL, IP, Warranties, Termination",
@@ -92178,6 +92634,39 @@
         "domain-legal/contracts-transactional/legal_licensing_agreement_drafter.md",
         "domain-legal/contracts-transactional/legal_negotiation_position_paper.md",
         "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/contracts-transactional/legal_termination_economics_provider_side.md",
+      "filename": "legal_termination_economics_provider_side.md",
+      "title": "Termination Economics — Provider Side",
+      "domain": "legal",
+      "category": "legal/contracts-transactional",
+      "description": "Price the termination provisions of a services agreement from the provider's side: kill fee and its basis, notice period measured against bench cost, payment for work in progress, committed third-party costs, transition assistance obligations, and the asymmetries that make a mutual clause one-sided in effect.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-02",
+        "QA-01",
+        "OC-03"
+      ],
+      "keywords": [
+        "legal",
+        "contracts",
+        "termination",
+        "kill-fee",
+        "notice-period",
+        "transition-assistance",
+        "supplier-side"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-21",
+      "related_prompts": [
+        "domain-legal/contracts-transactional/legal_contract_clause_redline_targeted.md",
+        "domain-legal/contracts-transactional/legal_payment_terms_and_late_fee_review.md",
+        "domain-legal/contracts-transactional/legal_sow_drafter.md",
+        "domain-legal/contracts-transactional/legal_negotiation_position_paper.md"
       ],
       "has_frontmatter": true
     },
@@ -120937,6 +121426,90 @@
         "domain-personal-development/prompts/agency/agency_next_action_spec.md",
         "domain-product-management/prompts/product_delivery_sprint_planner.md"
       ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/business-writing/business_writing_client_engagement_proposal.md",
+      "filename": "business_writing_client_engagement_proposal.md",
+      "title": "Client Engagement Proposal",
+      "domain": "professional-writing",
+      "category": "business-writing/client-facing",
+      "description": "Write a client-facing services proposal from a discovery record and a scoping decision — option-tiered, priced, with sections that map one-to-one onto the statement of work that will follow, so the proposal the client accepts is the document that governs delivery",
+      "techniques": [
+        "CM-01",
+        "ST-03",
+        "NE-23",
+        "OC-03",
+        "QA-08"
+      ],
+      "keywords": [
+        "proposal",
+        "client-facing",
+        "consulting",
+        "freelance",
+        "sow",
+        "option-tiering",
+        "business-writing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/business-writing/business_writing_engagement_case_study.md",
+      "filename": "business_writing_engagement_case_study.md",
+      "title": "Engagement Case Study",
+      "domain": "professional-writing",
+      "category": "business-writing/client-facing",
+      "description": "Generate a publishable case study from a completed client engagement — situation, intervention, result with its measurement stated, and the honest limits of attribution — including the consent, anonymisation and fact-checking steps that must happen before publication",
+      "techniques": [
+        "RT-05",
+        "CM-01",
+        "QA-01",
+        "OC-03",
+        "ED-05"
+      ],
+      "keywords": [
+        "case-study",
+        "client-facing",
+        "consulting",
+        "freelance",
+        "social-proof",
+        "marketing-collateral",
+        "business-writing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-21",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/business-writing/business_writing_testimonial_and_referral_request.md",
+      "filename": "business_writing_testimonial_and_referral_request.md",
+      "title": "Testimonial and Referral Request",
+      "domain": "professional-writing",
+      "category": "business-writing/client-facing",
+      "description": "Ask a satisfied client for a testimonial and an onward introduction — timing the ask to the moment of demonstrated value, making it low-effort with specific prompts, and separating the two asks so that declining one does not decline both",
+      "techniques": [
+        "CM-01",
+        "ST-03",
+        "NE-23",
+        "OC-03",
+        "QA-08"
+      ],
+      "keywords": [
+        "testimonial",
+        "referral",
+        "client-facing",
+        "consulting",
+        "freelance",
+        "social-proof",
+        "business-writing"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-21",
+      "related_prompts": [],
       "has_frontmatter": true
     },
     {

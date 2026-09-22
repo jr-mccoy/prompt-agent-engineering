@@ -1,21 +1,21 @@
 {
   "by_eval_status": {
-    "unknown": 5271
+    "unknown": 5313
   },
   "by_kind": {
-    "agent": 158,
-    "command": 144,
+    "agent": 161,
+    "command": 148,
     "persona": 53,
-    "prompt": 4241,
-    "skill": 339,
+    "prompt": 4272,
+    "skill": 343,
     "technique": 336
   },
   "by_kind_live": {
-    "agent": 158,
-    "command": 144,
+    "agent": 161,
+    "command": 148,
     "persona": 53,
-    "prompt": 4196,
-    "skill": 339,
+    "prompt": 4227,
+    "skill": 343,
     "technique": 336
   },
   "by_kind_tombstone": {
@@ -23,60 +23,60 @@
   },
   "by_license_status": {
     "inherited": 580,
-    "resolved": 4646,
+    "resolved": 4688,
     "unresolved": 45
   },
   "by_lifecycle": {
-    "live": 5226,
+    "live": 5268,
     "tombstone": 45
   },
   "by_maturity": {
     "deprecated": 54,
-    "experimental": 5217
+    "experimental": 5259
   },
   "by_metadata_completeness": {
     "degraded": 2,
-    "full": 5091,
-    "minimal": 178
+    "full": 5122,
+    "minimal": 189
   },
   "by_provenance_origin": {
     "adapted": 559,
-    "project_native": 4638,
+    "project_native": 4680,
     "unknown": 45,
     "vendored": 29
   },
   "by_review_status": {
-    "unknown": 5271
+    "unknown": 5313
   },
   "by_serving_policy": {
     "metadata_only": 56,
-    "safety_gated": 1319,
-    "standard": 3896
+    "safety_gated": 1322,
+    "standard": 3935
   },
   "diagnostics_by_code": {
     "frontmatter_parse_failed": 2,
-    "no_frontmatter": 133,
+    "no_frontmatter": 144,
     "reorg_relation_on_non_resource": 6,
     "tombstone": 45
   },
   "membership": {
-    "excluded_markdown_files": 1426,
+    "excluded_markdown_files": 1476,
     "exclusion_reasons": {
-      "bundled_component": 684,
-      "meta_document": 443,
-      "non_resource_prefix": 229,
+      "bundled_component": 688,
+      "meta_document": 449,
+      "non_resource_prefix": 269,
       "planning_document": 1,
       "skill_bundle_attachment": 65,
       "toolkit_documentation": 4
     },
-    "file_backed_candidates": 4890
+    "file_backed_candidates": 4932
   },
   "quality_assertions_by_scheme": {
     "guard-level": 64,
     "intended-use": 704
   },
   "relationships": {
-    "attachments": 1021,
+    "attachments": 1029,
     "copy_of": 59,
     "merged_into": 11,
     "previous_paths": 276,
@@ -93,5 +93,5 @@
       "ST-26"
     ]
   },
-  "total_records": 5271
+  "total_records": 5313
 }

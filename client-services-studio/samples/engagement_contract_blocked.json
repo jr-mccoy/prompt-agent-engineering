@@ -1,0 +1,33 @@
+{
+  "_comment": "Negative fixture: passes Gate A, fails Gate B. Unlimited liability, an uncapped IP indemnity, assignment of all work product, net-90 terms, convenience termination with no compensation, unilateral set-off, unpriced transition assistance, and no counsel review.",
+  "name": "Platform advisory",
+  "client": "Globex",
+  "lead": { "decision_maker": "C. Rossi" },
+  "scope": {
+    "deliverables": [
+      { "id": "D1", "name": "Advisory sessions", "format": "fortnightly sessions plus written notes",
+        "acceptance": "eight sessions held and notes delivered within two working days of each", "estimated_days": 16 }
+    ],
+    "assumptions": ["the sponsor attends each session"],
+    "exclusions": ["implementation", "vendor selection"],
+    "client_inputs": [
+      { "input": "sponsor attendance", "owner": "C. Rossi", "due": "each session",
+        "if_late": "session is forfeit and counts against the eight" }
+    ]
+  },
+  "commercial": { "structure": "retainer", "fee": 24000 },
+  "contract": {
+    "liability_cap": null,
+    "ip_indemnity_capped": false,
+    "ip_assignment_scope": "all_work_product",
+    "payment_terms_days": 90,
+    "termination_for_convenience": true,
+    "termination_compensation": null,
+    "unilateral_scope_change": true,
+    "suspension_right": false,
+    "set_off": "unilateral",
+    "transition_assistance": "unpriced",
+    "undisputed_portion_payable": false,
+    "counsel_reviewed": false
+  }
+}

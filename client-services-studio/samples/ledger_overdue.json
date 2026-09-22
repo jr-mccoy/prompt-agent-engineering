@@ -1,0 +1,10 @@
+{
+  "as_of": "2026-12-01",
+  "monthly_cost": 9000,
+  "invoices": [
+    { "id": "INV-1", "client": "Northwind", "amount": 12000, "due_date": "2026-10-15", "cause": "administrative" },
+    { "id": "INV-2", "client": "Northwind", "amount": 6000, "due_date": "2026-11-20", "cause": "distress" },
+    { "id": "INV-3", "client": "Acme", "amount": 3000, "due_date": "2026-12-10" },
+    { "id": "INV-4", "client": "Acme", "amount": 2000, "due_date": "2026-11-25" }
+  ]
+}
