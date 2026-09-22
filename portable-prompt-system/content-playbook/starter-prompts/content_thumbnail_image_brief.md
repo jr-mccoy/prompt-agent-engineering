@@ -19,8 +19,8 @@ tags:
   - visual
 updated: "2026-05-27"
 related_prompts:
-  - content_seo_title_description.md
-  - content_long_form_script.md
+  - domain-professional-writing/content-production/content_seo_title_description.md
+  - domain-professional-writing/content-production/content_long_form_script.md
 ---
 
 # Thumbnail / Cover Image Brief Builder
@@ -29,8 +29,8 @@ related_prompts:
 high-CTR thumbnail/cover with controlled composition, legible on-image text, and no UI-mockup,
 watermark, or slop artifacts. *(ST-01)*
 
-> Read first: [`../../guides/image-generation/IMAGE_GENERATION_GUIDE.md`](../../guides/image-generation/IMAGE_GENERATION_GUIDE.md)
-> (the 8 core techniques) and, if targeting OpenAI, [`../../guides/image-generation/GPT_IMAGE_2_GUIDE.md`](../../guides/image-generation/GPT_IMAGE_2_GUIDE.md).
+> Read first: [`../IMAGE_GENERATION_GUIDE.md`](../../../domain-image-generation/IMAGE_GENERATION_GUIDE.md)
+> (the 8 core techniques) and, if targeting OpenAI, [`../GPT_IMAGE_2_GUIDE.md`](../../../domain-image-generation/GPT_IMAGE_2_GUIDE.md).
 
 ---
 

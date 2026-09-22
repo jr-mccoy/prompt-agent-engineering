@@ -1,0 +1,55 @@
+{
+  "_comment": "Starter practice config for the cpa vertical. A WORKED EXAMPLE, not a recommendation or a benchmark: every number here is invented and must be replaced with your own before any gate result means anything. Run Stage 0 to derive them.",
+  "_vertical": "cpa",
+  "practice": "Example Accountancy Practice",
+  "currency": "GBP",
+  "costs": {
+    "fixed_business": 19000,
+    "target_income": 68000,
+    "employment_burden_rate": 0.15,
+    "pension_and_healthcare": 7000
+  },
+  "capacity": {
+    "working_days": 253,
+    "absence_days": 25,
+    "billable_fraction": 0.64,
+    "billable_hours_per_day": 8,
+    "overrun_reserve_fraction": 0.1
+  },
+  "risk": {
+    "bad_debt_rate": 0.02,
+    "typical_overrun": 0.08
+  },
+  "target_margin": 0.25,
+  "positioning_premium": 0.1,
+  "concentration_limit_pct": 30,
+  "disqualifiers": [
+    {
+      "id": "no_written_scope_wanted",
+      "tier": "decline",
+      "reason": "pressure to start without a written scope"
+    },
+    {
+      "id": "no_named_decision_maker",
+      "tier": "decline",
+      "reason": "contact must check with an unnamed party"
+    },
+    {
+      "id": "prior_vendors_all_blamed",
+      "tier": "probe",
+      "reason": "prior suppliers described as incompetent with no self-implication"
+    },
+    {
+      "id": "records_not_reconcilable",
+      "tier": "decline",
+      "reason": "prior-year records cannot be reconciled and client will not fund clean-up"
+    },
+    {
+      "id": "deadline_inside_lead_time",
+      "tier": "proceed_with_protection",
+      "reason": "statutory deadline inside our lead time \u2014 accept only with a written late-filing acknowledgement"
+    }
+  ],
+  "_walk_away_note": "Must equal the walk_away_day_rate computed by economics.py --floor from the costs, capacity and risk blocks above.",
+  "walk_away_day_rate": 674.69
+}

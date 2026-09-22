@@ -1,0 +1,17 @@
+{
+  "_comment": "Negative fixture: fails Gate A. The deliverable has no acceptance criterion, there are no exclusions, and the single client input has no consequence for lateness. This is the scope that becomes an open commitment when a fixed price is attached to it.",
+  "name": "Strategic review",
+  "client": "Acme",
+  "lead": { "decision_maker": "B. Okafor" },
+  "scope": {
+    "deliverables": [
+      { "id": "D1", "name": "Strategic review of the data platform", "format": "report" }
+    ],
+    "assumptions": ["the team will be available"],
+    "exclusions": [],
+    "client_inputs": [
+      { "input": "access to the platform", "owner": "B. Okafor" }
+    ]
+  },
+  "commercial": { "structure": "fixed", "fee": 45000 }
+}

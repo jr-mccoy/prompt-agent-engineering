@@ -1,0 +1,24 @@
+{
+  "_fixture": "SYNTHETIC TEST FIXTURE — NOT INDEPENDENT BENCHMARK EVIDENCE",
+  "artifact": "samples/corpus-good/skills/deploy-helper",
+  "rubric": {
+    "name": "SKILL_QUALITY_RUBRIC",
+    "version": "authoring/skill-patterns/SKILL_QUALITY_RUBRIC.md@100-point"
+  },
+  "provenance": "observed",
+  "scores": {
+    "cat1_metadata": 11,
+    "cat2_structure": 14,
+    "cat3_content": 7,
+    "cat4_resources": 9,
+    "cat5_safety": 13
+  },
+  "observable_max_by_category": {
+    "cat1_metadata": 11,
+    "cat2_structure": 14,
+    "cat3_content": 7,
+    "cat4_resources": 9,
+    "cat5_safety": 13
+  },
+  "tier": null
+}

@@ -25,8 +25,10 @@ KINDS = ("prompt", "technique", "skill", "agent", "command", "persona")
 #: An explicit allowlist, never unconstrained recursion (Phase 2A decision).
 TOOLKIT_ROOTS = (
     "agentic-system-factory",
+    "ai-governance-audit-kit",
     "ai-investment-research-toolkit",
     "childrens-book-studio",
+    "client-services-studio",
     "financial-records-toolkit",
     "sourced-nonfiction-studio",
 )
@@ -55,11 +57,17 @@ NON_RESOURCE_PREFIXES = (
     "agentic-system-factory/samples/",
     "agentic-system-factory/templates/",
     "agentic-system-factory/worked-runs/",
+    "ai-governance-audit-kit/config/",
+    "ai-governance-audit-kit/referenced-prompts/",
+    "ai-governance-audit-kit/samples/",
     "ai-investment-research-toolkit/config/",
     "ai-investment-research-toolkit/referenced-prompts/",
     "ai-investment-research-toolkit/samples/",
     "childrens-book-studio/design-bundle/",
     "childrens-book-studio/referenced-prompts/",
+    "client-services-studio/config/",
+    "client-services-studio/referenced-prompts/",
+    "client-services-studio/samples/",
     "financial-records-toolkit/config/",
     "sourced-nonfiction-studio/config/",
     "sourced-nonfiction-studio/referenced-prompts/",

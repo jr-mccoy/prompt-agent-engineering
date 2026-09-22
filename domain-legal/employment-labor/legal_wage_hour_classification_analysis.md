@@ -236,6 +236,38 @@ Conclusion: {Exempt / Non-Exempt under {jurisdiction}}
 - Contractor relationship restructure: {control, integration, B2B factors}
 - Documentation: {time records, written agreements, scope of work}
 
+## 9a. Contractor → Employee Conversion Mechanics (if converting)
+Where the analysis concludes a contractor should be an employee — whether from a failed
+test or as a deliberate commercial decision — the classification conclusion is only the
+first half. Address each, because a conversion executed badly re-creates the exposure it
+was meant to close:
+
+| Item | Position | Note |
+|---|---|---|
+| Effective date | {date} | A forward date does not cure the prior period; state whether the lookback is being addressed and how |
+| Prior-period treatment | {no change / back-pay / voluntary disclosure} | Converting prospectively while leaving an unaddressed prior period is the most common half-measure |
+| Existing contract | {terminated / novated / superseded} | Terminate expressly; an overlapping live services agreement muddies which relationship governs |
+| IP already created | {assigned under prior agreement? gap?} | Contractor IP assignment and employee IP provisions differ. A gap between them leaves earlier work unassigned |
+| Continuity of service | {recognised from / not recognised} | Affects statutory entitlements in many jurisdictions; getting it wrong is itself a claim |
+| Benefits and enrolment | {effective date, waiting periods, retroactivity} | |
+| Equity or bonus treatment | {new grant / carried over} | |
+| Rate conversion | {contractor rate → salary basis} | A contractor rate is not a salary: it carried the worker's own tax, benefits, non-billable time and equipment. Converting at the same headline number is usually a large real-terms cut |
+| Restrictive covenants | {new covenants needed?} | Contractor-side and employee-side covenants are enforced differently |
+| Communication to the worker | {what they are told, and when} | |
+| Consistency across the cohort | {others in the same position?} | Converting one person while leaving identically-situated contractors unconverted is evidence about the others |
+
+The rate-conversion row is where these go wrong commercially rather than legally. Model
+it with `../../domain-finance/corporate-finance-fpa/finance_subcontractor_margin_model.md`
+(what the contractor relationship actually cost) and set the band with
+`../../domain-hr-management/people-ops/hr_compensation_banding.md`. The HR-side
+onboarding of a converted worker is
+`../../domain-hr-management/onboarding/hr_onboarding_thirty_sixty_ninety.md` — and note
+they are not a new hire for ramp purposes, which most 30/60/90 plans get wrong.
+
+The consistency row is the one with the largest tail. A cohort of identically-situated
+contractors, one of whom has been converted, is a pattern; decide the cohort position
+deliberately and record the reasoning.
+
 ## 10. Recommendations
 {Numbered actions}
 ```

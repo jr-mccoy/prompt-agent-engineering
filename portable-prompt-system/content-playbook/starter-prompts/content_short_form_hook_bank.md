@@ -18,9 +18,9 @@ tags:
   - reels
 updated: "2026-05-27"
 related_prompts:
-  - content_long_form_script.md
-  - content_repurpose_one_to_many.md
-  - content_series_channel_bible.md
+  - domain-professional-writing/content-production/content_long_form_script.md
+  - domain-professional-writing/content-production/content_repurpose_one_to_many.md
+  - domain-professional-writing/content-production/content_series_channel_bible.md
 ---
 
 # Short-Form Hook Bank Generator

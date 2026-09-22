@@ -26,6 +26,7 @@ Every prompt below specifies exact fonts, hex colors, placement, and platform as
 | [Announcement / Promo Post](social_announcement_post.md) | Sale / launch / event post with CTA | Nano Banana Pro | gpt-image-2 |
 | [Story / Reel Cover](social_story_reel_cover.md) | Vertical 9:16 cover, safe-zone aware | gpt-image-2 | Nano Banana Pro (text-heavy / series) |
 | [Profile / Header Banner](social_profile_banner.md) | LinkedIn / X / YouTube / FB banner, exact dims | gpt-image-2 | Nano Banana Pro (matched set) |
+| [Thumbnail / Cover Brief](social_thumbnail_cover_brief.md) | Video thumbnail or cover, from a content idea to a model-ready brief | gpt-image-2 | Nano Banana Pro (text-heavy) |
 
 ---
 

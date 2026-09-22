@@ -1,0 +1,8 @@
+{
+  "_comment": "Negative fixture: fails Gate C. 6000 still outstanding and not written off, unbilled effort never recorded, no case-study consent decision, and no repeat/decline verdict.",
+  "engagement": "Strategic review",
+  "client": "Acme",
+  "revenue": { "invoiced": 45000, "write_offs": 0, "outstanding": 6000 },
+  "direct_costs": {},
+  "effort": { "billed_days": 30 }
+}

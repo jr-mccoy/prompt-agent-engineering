@@ -35,7 +35,7 @@ tracks (see [Which domain does this belong in?](../CLAUDE.md)):
 
 ```
 domain-product-management/
-├── prompts/      # 8 product-management prompts
+├── prompts/      # 13 product-management prompts
 ├── templates/    # PRD template
 └── README.md
 ```
@@ -49,7 +49,12 @@ domain-product-management/
 | [`product_competitor_feature_teardown.md`](prompts/product_competitor_feature_teardown.md) | You need a feature-by-feature matrix across 3+ named competitors and a defensible position |
 | [`product_product_idea_vetting_will_it_fly_or_flop.md`](prompts/product_product_idea_vetting_will_it_fly_or_flop.md) | An idea needs a go/no-go before you invest in it |
 | [`product_delivery_sprint_planner.md`](prompts/product_delivery_sprint_planner.md) | You are planning a cross-functional delivery sprint from the product side |
-| [`product_planning_coding_roadmap.md`](prompts/product_planning_coding_roadmap.md) | You need a sequenced build roadmap |
+| [`product_planning_coding_roadmap.md`](prompts/product_planning_coding_roadmap.md) | You need a sequenced build roadmap, with an optional scoring pass where the order is not dependency-forced |
+| [`product_opportunity_solution_tree.md`](prompts/product_opportunity_solution_tree.md) | You have an outcome and a pile of feature requests and no way to relate them |
+| [`product_north_star_metric_definition.md`](prompts/product_north_star_metric_definition.md) | Teams are optimising different numbers, or your headline metric is signups |
+| [`product_user_story_splitting.md`](prompts/product_user_story_splitting.md) | A story will not fit an iteration, or refinement keeps producing "backend work" |
+| [`product_launch_readiness_gate.md`](prompts/product_launch_readiness_gate.md) | A launch date is near and you need a cross-functional go/no-go with a real no available |
+| [`product_feature_sunset_decision.md`](prompts/product_feature_sunset_decision.md) | Something should probably be removed and you need to know who depends on it first |
 
 ---
 

@@ -1,0 +1,79 @@
+{
+  "name": "CI pipeline assessment",
+  "client": "Northwind",
+  "problem_statement": "Deploy failures have roughly doubled since the platform migration, and nobody can say which pipelines are responsible.",
+  "lead": { "decision_maker": "A. Patel" },
+  "scope": {
+    "deliverables": [
+      {
+        "id": "D1",
+        "name": "Pipeline assessment",
+        "format": "written report",
+        "acceptance": "covers all seven named pipelines against the six criteria in Appendix A",
+        "estimated_days": 12
+      },
+      {
+        "id": "D2",
+        "name": "Prioritised remediation sequence",
+        "format": "ranked list with effort estimates",
+        "acceptance": "every finding in D1 appears exactly once, ranked, with an effort estimate",
+        "estimated_days": 4
+      }
+    ],
+    "assumptions": [
+      "read access to the CI system is granted in week 1",
+      "the seven pipelines in scope are those listed in Appendix A and do not change"
+    ],
+    "exclusions": [
+      "implementation of the recommendations",
+      "changes to production infrastructure",
+      "on-call or incident support during the engagement"
+    ],
+    "client_inputs": [
+      {
+        "input": "read access to the CI system and build history",
+        "owner": "A. Patel",
+        "due": "2026-10-01",
+        "if_late": "the clock continues; the end date moves day for day"
+      },
+      {
+        "input": "90 minutes with each of the three platform engineers",
+        "owner": "A. Patel",
+        "due": "2026-10-08",
+        "if_late": "findings are marked unverified in the report"
+      }
+    ]
+  },
+  "commercial": {
+    "structure": "fixed",
+    "fee": 30000,
+    "payment_schedule": [
+      { "label": "Deposit", "amount": 12000, "trigger": "signature", "issue_date": "2026-10-01" },
+      { "label": "Milestone 1", "amount": 12000, "trigger": "acceptance of D1", "issue_date": "2026-11-01" },
+      { "label": "Final", "amount": 6000, "trigger": "acceptance of D2", "issue_date": "2026-12-01" }
+    ]
+  },
+  "payment_machinery": {
+    "terms_days": 30,
+    "approval_window_days": 5,
+    "payment_run_day_of_month": 25,
+    "cutoff_days_before_run": 10,
+    "po_required": true,
+    "po_number": "PO-4471"
+  },
+  "change_procedure": "Work outside the deliverables above is a change order, quoted and agreed in writing before it starts.",
+  "contract": {
+    "liability_cap": 250000,
+    "ip_indemnity_capped": true,
+    "ip_assignment_scope": "deliverables",
+    "payment_terms_days": 30,
+    "termination_for_convenience": true,
+    "termination_compensation": "work performed to date plus committed third-party costs",
+    "unilateral_scope_change": false,
+    "suspension_right": true,
+    "set_off": "admitted_only",
+    "transition_assistance": "at standard rates, capped at 10 days",
+    "undisputed_portion_payable": true,
+    "counsel_reviewed": true
+  }
+}

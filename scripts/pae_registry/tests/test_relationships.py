@@ -89,7 +89,10 @@ class VendoredTests(unittest.TestCase):
 
     def test_registry_visible_edges(self):
         visible = [p for p in self.pairs if p.canonical in self.candidates and p.copy in self.candidates]
-        self.assertEqual(len(self.pairs), 154)
+        self.assertEqual(len(self.pairs), 230)
+        # The 39 client-services-studio copies are not registry-visible: that
+        # toolkit's referenced-prompts/ tree is a NON_RESOURCE_PREFIX, so the
+        # copies are excluded from membership and the visible count is unchanged.
         self.assertEqual(len(visible), 59)
 
     def test_adapted_copies_are_kept_distinct_from_their_canonical(self):

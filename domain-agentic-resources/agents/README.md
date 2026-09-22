@@ -1,4 +1,4 @@
-<!-- INVENTORY_COUNTS: {"categories": {"architecture": 6, "backend": 8, "business": 2, "business-operations": 11, "cloud-infrastructure": 9, "code-quality": 4, "creative": 2, "database": 4, "deployment": 1, "devops": 6, "documentation": 5, "education": 2, "frontend-mobile": 22, "healthcare": 2, "languages": 21, "ml-ai": 6, "orchestration": 2, "research": 2, "security": 4, "seo-marketing": 12, "testing": 5, "web-development": 5, "writing": 2}, "date": "2026-08-24", "total": 143, "type": "agents"} -->
+<!-- INVENTORY_COUNTS: {"categories": {"architecture": 6, "backend": 8, "business": 2, "business-operations": 11, "cloud-infrastructure": 9, "code-quality": 4, "creative": 2, "database": 4, "deployment": 1, "devops": 6, "documentation": 5, "education": 2, "frontend-mobile": 22, "healthcare": 2, "languages": 21, "ml-ai": 6, "orchestration": 2, "research": 2, "security": 4, "seo-marketing": 12, "testing": 5, "web-development": 5, "writing": 2}, "date": "2026-09-22", "total": 143, "type": "agents"} -->
 
 # Claude Code Agents Index
 

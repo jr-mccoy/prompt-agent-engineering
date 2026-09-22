@@ -18,9 +18,9 @@ tags:
   - discovery
 updated: "2026-05-27"
 related_prompts:
-  - content_thumbnail_image_brief.md
-  - content_long_form_script.md
-  - content_repurpose_one_to_many.md
+  - domain-image-generation/social-media/social_thumbnail_cover_brief.md
+  - domain-professional-writing/content-production/content_long_form_script.md
+  - domain-professional-writing/content-production/content_repurpose_one_to_many.md
 ---
 
 # SEO Title, Description & Tags Packager

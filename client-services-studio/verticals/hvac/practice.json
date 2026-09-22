@@ -1,0 +1,55 @@
+{
+  "_comment": "Starter practice config for the hvac vertical. A WORKED EXAMPLE, not a recommendation or a benchmark: every number here is invented and must be replaced with your own before any gate result means anything. Run Stage 0 to derive them.",
+  "_vertical": "hvac",
+  "practice": "Example HVAC Contracting",
+  "currency": "GBP",
+  "costs": {
+    "fixed_business": 34000,
+    "target_income": 62000,
+    "employment_burden_rate": 0.15,
+    "pension_and_healthcare": 5000
+  },
+  "capacity": {
+    "working_days": 253,
+    "absence_days": 28,
+    "billable_fraction": 0.68,
+    "billable_hours_per_day": 8,
+    "overrun_reserve_fraction": 0.1
+  },
+  "risk": {
+    "bad_debt_rate": 0.04,
+    "typical_overrun": 0.12
+  },
+  "target_margin": 0.22,
+  "positioning_premium": 0.08,
+  "concentration_limit_pct": 35,
+  "disqualifiers": [
+    {
+      "id": "no_written_scope_wanted",
+      "tier": "decline",
+      "reason": "pressure to start without a written scope"
+    },
+    {
+      "id": "no_named_decision_maker",
+      "tier": "decline",
+      "reason": "contact must check with an unnamed party"
+    },
+    {
+      "id": "prior_vendors_all_blamed",
+      "tier": "probe",
+      "reason": "prior suppliers described as incompetent with no self-implication"
+    },
+    {
+      "id": "no_site_access_before_quote",
+      "tier": "decline",
+      "reason": "wants a fixed price without a site survey"
+    },
+    {
+      "id": "landlord_tenant_payer_unclear",
+      "tier": "proceed_with_protection",
+      "reason": "who pays is unresolved between landlord and tenant \u2014 require written confirmation"
+    }
+  ],
+  "_walk_away_note": "Must equal the walk_away_day_rate computed by economics.py --floor from the costs, capacity and risk blocks above.",
+  "walk_away_day_rate": 670.49
+}

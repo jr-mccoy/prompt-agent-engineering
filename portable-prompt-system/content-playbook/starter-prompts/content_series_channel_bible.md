@@ -19,9 +19,9 @@ tags:
   - reusable-context
 updated: "2026-05-27"
 related_prompts:
-  - content_long_form_script.md
-  - content_short_form_hook_bank.md
-  - content_repurpose_one_to_many.md
+  - domain-professional-writing/content-production/content_long_form_script.md
+  - domain-professional-writing/content-production/content_short_form_hook_bank.md
+  - domain-professional-writing/content-production/content_repurpose_one_to_many.md
 ---
 
 # Series / Channel Voice Bible Builder

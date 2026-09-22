@@ -10,8 +10,9 @@ Professional writing prompts for various fields:
 
 1. **Business Writing** - Executive briefs, status reports, proposals, PRDs, post-mortems, SOPs, technical docs
 2. **Content Quality** - 19 evaluators that score a finished draft by document type
-3. **Domain-Specific** - CPAs, attorneys, contractors, real estate agents, and 20+ more professions
-4. **Writing** - Essays, narratives, structured documents
+3. **Content Production** - 5 generators for channel content, paired with the evaluators above: generate here, score there
+4. **Domain-Specific** - CPAs, attorneys, contractors, real estate agents, and 20+ more professions
+5. **Writing** - Essays, narratives, structured documents
 
 **Start with the [field guide](field_guide.md)** for the craft behind all of it:
 what makes a business document work, how each type fails, a certainty framework
@@ -27,6 +28,7 @@ communication).
 domain-professional-writing/
 ├── field_guide.md            # Craft reference + document templates (start here)
 ├── business-writing/         # Executive briefs, reports, proposals, PRDs, SOPs
+├── content-production/       # Generators for channel content: scripts, hooks, SEO packaging, repurposing, voice bible
 ├── content-quality/          # Slop evaluators for finished drafts
 ├── domain-specific/          # Profession-specific writing prompts
 ├── writing/                  # General professional writing
@@ -42,8 +44,9 @@ domain-professional-writing/
 | `domain-specific/` | 24 | Professional field prompts |
 | `business-writing/` | 11 | Executive brief, status report, proposal, PRD, post-mortem, SOP, technical doc, nine principles |
 | `content-quality/` | 19 | `quality_slop_*` evaluators by document type (moved here from `domain-productivity/validation/`) |
-| `writing/` | 9 | General writing prompts |
-| **Total** | **63** | |
+| `content-production/` | 5 | `content_*` generators for channel content: long-form script, short-form hook bank, SEO title/description, one-to-many repurposing, series/channel voice bible |
+| `writing/` | 10 | General writing prompts, including the newsletter issue writer |
+| **Total** | **69** | |
 
 > `business-documents/` was removed: all nine files were a stale pre-frontmatter
 > mirror of `business-writing/`, whose versions are roughly twice as long.
@@ -92,7 +95,11 @@ Use these prompts when you need to:
 **Do NOT use for:**
 - Creative writing (use domain-creative-writing)
 - Academic writing (use domain-research-academic)
-- Marketing copy (use domain-advertising)
+- Marketing copy — landing pages, ads, email campaigns, sales collateral
+  (use `domain-agentic-resources/skills/marketing/`: `copywriting`, `ad-creative`,
+  `page-cro`, `email-sequence`, `sales-enablement`)
+- Advertising **images** (use `domain-advertising`, which is an image-prompt set —
+  it does not hold ad copy)
 
 ---
 

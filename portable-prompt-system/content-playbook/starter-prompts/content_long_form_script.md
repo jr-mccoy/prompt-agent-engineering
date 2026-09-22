@@ -19,9 +19,9 @@ tags:
   - voiceover
 updated: "2026-05-27"
 related_prompts:
-  - content_series_channel_bible.md
-  - content_short_form_hook_bank.md
-  - content_seo_title_description.md
+  - domain-professional-writing/content-production/content_series_channel_bible.md
+  - domain-professional-writing/content-production/content_short_form_hook_bank.md
+  - domain-professional-writing/content-production/content_seo_title_description.md
 ---
 
 # Long-Form Faceless Script Writer

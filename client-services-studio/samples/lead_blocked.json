@@ -1,0 +1,10 @@
+{
+  "_comment": "Negative fixture: fails Gate 0 four ways at once — no named decision-maker, no budget authority, an undefined outcome, and an implied day rate of 300 against a walk-away floor of 500.",
+  "client": "Acme",
+  "decision_maker": null,
+  "budget_authority": false,
+  "outcome_defined": false,
+  "indicative_budget": 6000,
+  "indicative_days": 20,
+  "disqualifiers_observed": ["no_written_scope_wanted", "prior_vendors_all_blamed"]
+}

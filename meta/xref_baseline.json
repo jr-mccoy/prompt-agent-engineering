@@ -8,12 +8,12 @@
     "see_also_seed"
   ],
   "totals": {
-    "references_checked": 12190,
-    "canonical": 10959,
+    "references_checked": 12409,
+    "canonical": 11179,
     "noncanonical_relative": 527,
     "noncanonical_basename": 24,
-    "unresolved": 680,
-    "baselined": 1231
+    "unresolved": 679,
+    "baselined": 1230
   },
   "entries": [
     {
@@ -6422,12 +6422,6 @@
       "file": "domain-prompt-engineering/output-formatting/format_table_design_prompt.md",
       "field": "related_prompts",
       "reference": "domain-prompt-engineering/structured-output/structured_output_markdown_contract.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-prompt-engineering/prompt-improvement/improve_prompt_diff_explainer.md",
-      "field": "related_prompts",
-      "reference": "domain-prompt-engineering/library-maintenance/library_prompt_changelog_writer.md",
       "status": "unresolved"
     },
     {

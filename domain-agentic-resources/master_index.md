@@ -1,11 +1,11 @@
-<!-- INVENTORY_COUNTS: {"agents_categories": {"architecture": 6, "backend": 8, "business": 2, "business-operations": 11, "cloud-infrastructure": 9, "code-quality": 4, "creative": 2, "database": 4, "deployment": 1, "devops": 6, "documentation": 5, "education": 2, "frontend-mobile": 22, "healthcare": 2, "languages": 21, "ml-ai": 6, "orchestration": 2, "research": 2, "security": 4, "seo-marketing": 12, "testing": 5, "web-development": 5, "writing": 2}, "agents_total": 143, "commands_categories": {"accessibility": 2, "architecture": 2, "business": 3, "code-quality": 5, "creative": 3, "data-analysis": 1, "database": 2, "deployment": 2, "devops": 8, "documentation": 1, "education": 3, "framework-migration": 3, "git-workflows": 3, "healthcare": 4, "mobile-development": 12, "multi-agent": 8, "orchestration": 9, "other": 18, "performance": 3, "research": 3, "security": 6, "testing": 6, "troubleshooting": 5, "writing": 3}, "commands_total": 115, "date": "2026-08-24", "skills_categories": {"accessibility": 2, "backend-development": 13, "blockchain-web3": 16, "business": 3, "cicd-automation": 4, "cloud-infrastructure": 14, "content-creation": 5, "creative": 2, "data-engineering": 10, "developer-tools": 35, "devops": 3, "document-processing": 7, "education": 2, "financial-records": 4, "framework-migration": 4, "game-development": 2, "healthcare": 11, "languages": 18, "llm-application-dev": 10, "marketing": 41, "ml-ai": 4, "mobile-development": 36, "observability": 5, "other": 2, "payments": 4, "research": 2, "security": 36, "seo-marketing": 4, "skills": 3, "testing-qa": 18, "web-development": 8, "writing": 2}, "skills_total": 330, "total_resources": 588, "type": "master"} -->
+<!-- INVENTORY_COUNTS: {"agents_categories": {"architecture": 6, "backend": 8, "business": 2, "business-operations": 11, "cloud-infrastructure": 9, "code-quality": 4, "creative": 2, "database": 4, "deployment": 1, "devops": 6, "documentation": 5, "education": 2, "frontend-mobile": 22, "healthcare": 2, "languages": 21, "ml-ai": 6, "orchestration": 2, "research": 2, "security": 4, "seo-marketing": 12, "testing": 5, "web-development": 5, "writing": 2}, "agents_total": 143, "commands_categories": {"accessibility": 2, "architecture": 2, "business": 3, "code-quality": 5, "creative": 3, "data-analysis": 1, "database": 2, "deployment": 2, "devops": 8, "documentation": 1, "education": 3, "framework-migration": 3, "git-workflows": 3, "healthcare": 4, "mobile-development": 12, "multi-agent": 8, "orchestration": 9, "other": 18, "performance": 3, "research": 3, "security": 6, "testing": 6, "troubleshooting": 5, "writing": 3}, "commands_total": 115, "date": "2026-09-22", "skills_categories": {"accessibility": 2, "backend-development": 13, "blockchain-web3": 16, "business": 3, "cicd-automation": 4, "cloud-infrastructure": 14, "content-creation": 5, "creative": 2, "cross-domain": 3, "data-engineering": 10, "developer-tools": 35, "devops": 3, "document-processing": 7, "education": 2, "financial-records": 4, "framework-migration": 4, "game-development": 2, "healthcare": 11, "languages": 18, "llm-application-dev": 10, "marketing": 41, "ml-ai": 4, "mobile-development": 36, "observability": 5, "other": 2, "payments": 4, "research": 2, "security": 36, "seo-marketing": 4, "skills": 3, "testing-qa": 18, "web-development": 8, "writing": 2}, "skills_total": 333, "total_resources": 591, "type": "master"} -->
 
 # Claude Code Resources Master Index
 
-**Quick searchable reference for all 588 resources in this directory.**
+**Quick searchable reference for all 591 resources in this directory.**
 
-**Last Updated:** 2026-08-24
-**Total Resources:** 588 (143 agents + 330 skills + 115 commands)
+**Last Updated:** 2026-09-22
+**Total Resources:** 591 (143 agents + 333 skills + 115 commands)
 
 ---
 
@@ -14,7 +14,7 @@
 | Jump to | Count | Description |
 |---------|-------|-------------|
 | [**Agents**](#agent-index) | 143 | Parallel workers with model assignments |
-| [**Skills**](#skill-index) | 330 | Domain containers with workflows |
+| [**Skills**](#skill-index) | 333 | Domain containers with workflows |
 | [**Commands**](#command-index) | 115 | Slash commands in `commands/` (workflow commands are a subset, not additional) |
 | [**By Domain**](#domain-index) | 25+ | Resources grouped by domain |
 | [**By Task**](#task-index) | 50+ | Resources grouped by common tasks |
@@ -153,7 +153,7 @@ security-auditor agent
 
 ## Skill Index
 
-**Total:** 330 skills across 32 categories
+**Total:** 333 skills across 33 categories
 
 ### Skills with Bundled Resources
 

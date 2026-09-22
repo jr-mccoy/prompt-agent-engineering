@@ -1,6 +1,6 @@
 # Domain: Education & Teaching
 
-267 prompts for the three people who show up in an educational setting, each with a
+270 prompts for the three people who show up in an educational setting, each with a
 different job and a different question. A **teacher, lecturer or corporate trainer**
 planning and running instruction. A **dean, curriculum director or accreditation
 liaison** working a level up, on the programme rather than the class. And the
@@ -48,7 +48,7 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 
 ## Subdirectory map
 
-### `instructor/` — 104 prompts
+### `instructor/` — 107 prompts
 
 | Subdirectory | What it covers | Prompts |
 |---|---|---|
@@ -64,6 +64,7 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 | `classroom-ops/` | Running the room: norms, routines and transitions, restorative conversations | 3 |
 | `ed-tech/` | Producing the artefacts: slide decks, video scripts, choice boards, LMS shells, blended/HyFlex, AI literacy | 6 |
 | `higher-ed-corporate/` | University and workplace delivery: syllabi, async modules, microlearning, onboarding, compliance, train-the-trainer | 11 |
+| `independent-course-creator/` | Teaching outside an institution: turning expertise into a teachable scope, choosing cohort vs self-paced, designing for completion | 3 |
 | `subject-pedagogy/` | Subject-specific moves — `ela/` (7), `math/` (5), `science/` (4), `social-studies/` (4), `world-languages/` (2) | 22 |
 
 ### `program/` — 41 prompts
@@ -112,6 +113,9 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 | "I need IEP goals that will survive review" | `instructor/student-support/teaching_iep_goal_writer.md` |
 | "I'm out sick tomorrow" | `instructor/lesson-planning/teaching_substitute_plan_generator.md` |
 | "Turn my lecture course into an online one" | `instructor/higher-ed-corporate/teaching_online_course_conversion.md` |
+| "I know how to do this and want to teach it, but not where to start" | `instructor/independent-course-creator/teaching_expertise_to_teachable_scope.md` |
+| "Should this be a live cohort or self-paced?" | `instructor/independent-course-creator/teaching_cohort_vs_self_paced_decision.md` |
+| "People buy the course and never finish it" | `instructor/independent-course-creator/teaching_course_completion_and_engagement_design.md` |
 | "Map our whole curriculum to the standards" | `program/curriculum-design/program_curriculum_map_builder.md` |
 | "What are we actually claiming our graduates can do?" | `program/outcomes-assessment/program_program_outcomes_framework.md` |
 | "The accreditor visit is in eight months" | `program/accreditation-review/program_accreditation_self_study_he.md` |
@@ -291,6 +295,14 @@ Generated from the directory tree; every prompt appears exactly once.
 | [`teaching_speed_grading_triage.md`](instructor/grading-feedback/teaching_speed_grading_triage.md) | Sort a stack of student work into grade-deeply / grade-lightly / grade-quickly piles based on a triage protocol… |
 | [`teaching_student_feedback_composer.md`](instructor/grading-feedback/teaching_student_feedback_composer.md) | Create specific, actionable, growth-oriented feedback that motivates improvement |
 | [`teaching_whole_class_feedback_memo.md`](instructor/grading-feedback/teaching_whole_class_feedback_memo.md) | Synthesize a stack of student work into a single class-facing feedback memo — patterns, exemplar moves, common… |
+
+#### `instructor/independent-course-creator/` (3)
+
+| File | Purpose |
+|---|---|
+| [`teaching_cohort_vs_self_paced_decision.md`](instructor/independent-course-creator/teaching_cohort_vs_self_paced_decision.md) | Decide whether an independent course runs live, self-paced or hybrid, by matching the learning mechanism the… |
+| [`teaching_course_completion_and_engagement_design.md`](instructor/independent-course-creator/teaching_course_completion_and_engagement_design.md) | Design an independent course so learners finish it: find where they actually stop, separate a design problem… |
+| [`teaching_expertise_to_teachable_scope.md`](instructor/independent-course-creator/teaching_expertise_to_teachable_scope.md) | Turn tacit expertise into a scope a stranger will pay to acquire, then hand off to course design rather than… |
 
 #### `instructor/higher-ed-corporate/` (11)
 

@@ -19,12 +19,12 @@
     "unindexed_domain_directories": "domain-* directories absent from that allowlist. Their content does not appear in PROMPT_INDEX.json and is excluded from every indexed count above."
   },
   "facts": {
-    "indexed_artifacts": 5597,
+    "indexed_artifacts": 5654,
     "bundled_component_files": 667,
-    "agentic_resource_artifacts": 799,
+    "agentic_resource_artifacts": 802,
     "domain_command_artifacts": 10,
-    "domain_prompt_artifacts": 4121,
-    "skills": 330,
+    "domain_prompt_artifacts": 4175,
+    "skills": 333,
     "agents": 143,
     "commands": 115,
     "personas": 53,

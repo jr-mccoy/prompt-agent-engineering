@@ -1,0 +1,66 @@
+{
+  "_comment": "Practice configuration. Worked example, not a recommendation: replace every number with your own. JSON rather than YAML so every script in this toolkit stays standard-library only.",
+
+  "practice": "Example Consulting",
+  "currency": "GBP",
+
+  "costs": {
+    "fixed_business": 12000,
+    "target_income": 80000,
+    "employment_burden_rate": 0.15,
+    "pension_and_healthcare": 8000
+  },
+
+  "capacity": {
+    "working_days": 250,
+    "absence_days": 30,
+    "billable_fraction": 0.60,
+    "billable_hours_per_day": 8,
+    "overrun_reserve_fraction": 0.10
+  },
+
+  "risk": {
+    "bad_debt_rate": 0.02,
+    "typical_overrun": 0.10
+  },
+
+  "target_margin": 0.20,
+  "positioning_premium": 0.15,
+
+  "_walk_away_note": "Must equal the walk_away_day_rate computed by economics.py --floor from the costs, capacity and risk blocks above. Stored separately so Gate 0 runs without recomputing; Stage 0 verification checks they still match.",
+  "walk_away_day_rate": 787.09,
+  "concentration_limit_pct": 40,
+
+  "disqualifiers": [
+    {
+      "id": "no_written_scope_wanted",
+      "tier": "decline",
+      "reason": "pressure to start without a written scope"
+    },
+    {
+      "id": "no_named_decision_maker",
+      "tier": "decline",
+      "reason": "contact must check with an unnamed party"
+    },
+    {
+      "id": "prior_vendors_all_blamed",
+      "tier": "probe",
+      "reason": "prior suppliers described as incompetent with no self-implication"
+    },
+    {
+      "id": "urgency_disproportionate",
+      "tier": "probe",
+      "reason": "urgency out of proportion to the stated trigger"
+    },
+    {
+      "id": "rate_before_scope",
+      "tier": "probe",
+      "reason": "leads with rate before describing the problem"
+    },
+    {
+      "id": "outcome_shifts",
+      "tier": "proceed_with_protection",
+      "reason": "desired outcome changed between conversations — require a paid discovery phase"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "engagement": "CI pipeline assessment",
+  "client": "Northwind",
+  "revenue": { "invoiced": 30000, "write_offs": 1000, "outstanding": 0 },
+  "direct_costs": { "subcontractor": 4000 },
+  "effort": { "estimated_days": 16, "billed_days": 18, "unbilled_days": 4 },
+  "case_study_consent": "granted, anonymised",
+  "client_verdict": "repeat"
+}

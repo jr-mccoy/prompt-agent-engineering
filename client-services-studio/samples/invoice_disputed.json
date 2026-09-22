@@ -1,0 +1,11 @@
+{
+  "_comment": "Negative fixture: the ladder must refuse to escalate. The cause is dispute, so the substance is resolved first and the undisputed portion collected separately.",
+  "id": "INV-9",
+  "client": "Globex",
+  "amount": 8000,
+  "days_overdue": 52,
+  "cause": "dispute",
+  "suspension_right": true,
+  "work_ongoing": true,
+  "contact_history": [{ "rung": 1 }, { "rung": 2 }]
+}

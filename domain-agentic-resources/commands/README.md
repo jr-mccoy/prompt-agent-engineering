@@ -1,10 +1,10 @@
-<!-- INVENTORY_COUNTS: {"categories": {"accessibility": 2, "architecture": 2, "business": 3, "code-quality": 5, "creative": 3, "data-analysis": 1, "database": 2, "deployment": 2, "devops": 8, "documentation": 1, "education": 3, "framework-migration": 3, "git-workflows": 3, "healthcare": 4, "mobile-development": 12, "multi-agent": 8, "orchestration": 9, "other": 18, "performance": 3, "research": 3, "security": 6, "testing": 6, "troubleshooting": 5, "writing": 3}, "date": "2026-08-24", "total": 115, "type": "commands"} -->
+<!-- INVENTORY_COUNTS: {"categories": {"accessibility": 2, "architecture": 2, "business": 3, "code-quality": 5, "creative": 3, "data-analysis": 1, "database": 2, "deployment": 2, "devops": 8, "documentation": 1, "education": 3, "framework-migration": 3, "git-workflows": 3, "healthcare": 4, "mobile-development": 12, "multi-agent": 8, "orchestration": 9, "other": 18, "performance": 3, "research": 3, "security": 6, "testing": 6, "troubleshooting": 5, "writing": 3}, "date": "2026-09-22", "total": 115, "type": "commands"} -->
 
 # Claude Code Commands Index
 
 **Total Commands:** 115 across 24 categories
 
-**Last Updated:** 2026-08-24
+**Last Updated:** 2026-09-22
 
 ---
 

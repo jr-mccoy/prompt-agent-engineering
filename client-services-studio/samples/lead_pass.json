@@ -1,0 +1,11 @@
+{
+  "client": "Northwind",
+  "decision_maker": "A. Patel",
+  "budget_authority": true,
+  "outcome_defined": true,
+  "indicative_budget": 30000,
+  "indicative_days": 20,
+  "client_current_revenue_pct": 0,
+  "client_added_revenue_pct": 12,
+  "disqualifiers_observed": []
+}

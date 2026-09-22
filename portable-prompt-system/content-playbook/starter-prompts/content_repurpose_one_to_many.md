@@ -19,9 +19,9 @@ tags:
   - multi-platform
 updated: "2026-05-27"
 related_prompts:
-  - content_long_form_script.md
-  - content_short_form_hook_bank.md
-  - content_seo_title_description.md
+  - domain-professional-writing/content-production/content_long_form_script.md
+  - domain-professional-writing/content-production/content_short_form_hook_bank.md
+  - domain-professional-writing/content-production/content_seo_title_description.md
 ---
 
 # Repurpose One-to-Many Content Atomizer
