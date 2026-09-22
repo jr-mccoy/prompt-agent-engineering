@@ -129,6 +129,7 @@ and checked for drift by `scripts/check_vendored_copies.py`.
 | [`ai-investment-research-toolkit/`](ai-investment-research-toolkit/) | 74 | Paper-first investment research loop |
 | [`domain-idea-to-product/`](domain-idea-to-product/) | 63 | Idea → shippable software, 11 stages |
 | [`client-services-studio/`](client-services-studio/) | 31 | Selling expertise: qualify → scope → price → propose → contract → deliver → invoice → close out, with four gates enforced in code |
+| [`ai-governance-audit-kit/`](ai-governance-audit-kit/) | 96 | Auditing someone else's corpus: inventory → clusters → observed scores → report → a registry the Engine can open, with four gates enforced in code |
 | [`childrens-book-studio/`](childrens-book-studio/) | 35 | Idea → finished children's book |
 | [`sourced-nonfiction-studio/`](sourced-nonfiction-studio/) | 27 | Uncited expertise → sourced, publishable nonfiction |
 | [`financial-records-toolkit/`](financial-records-toolkit/) | 19 | Statements → verified, categorized spreadsheets |

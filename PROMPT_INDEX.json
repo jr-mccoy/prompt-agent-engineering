@@ -127488,7 +127488,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-09",
       "related_prompts": [
-        "domain-prompt-engineering/library-maintenance/library_prompt_changelog_writer.md"
+        "domain-prompt-engineering/prompt-improvement/improve_minimal_change_pass.md",
+        "domain-prompt-engineering/prompt-improvement/improve_promotion_to_production.md"
       ],
       "has_frontmatter": true
     },

@@ -72,9 +72,27 @@ def _apply_override(record: dict[str, Any], override: dict[str, Any]) -> None:
             record[key] = value
 
 
+#: Build artifacts that are never repository content. They are ignored by git,
+#: so whether they exist on disk depends only on whether someone has run the
+#: bundle's scripts — and a registry that changes because a test imported a
+#: module is not reproducible.
+_IGNORED_BUNDLE_SEGMENTS = frozenset({"__pycache__", ".pytest_cache", ".mypy_cache"})
+_IGNORED_BUNDLE_SUFFIXES = frozenset({".pyc", ".pyo"})
+
+
+def _is_bundle_content(path: Path, repo_root: Path) -> bool:
+    rel = path.relative_to(repo_root)
+    if any(segment in _IGNORED_BUNDLE_SEGMENTS for segment in rel.parts):
+        return False
+    return path.suffix not in _IGNORED_BUNDLE_SUFFIXES
+
+
 def _skill_bundle_files(repo_root: Path, skill_manifest: PurePosixPath) -> list[Path]:
     bundle = repo_root / skill_manifest.parent
-    return sorted(p for p in bundle.rglob("*") if p.is_file())
+    return sorted(
+        p for p in bundle.rglob("*")
+        if p.is_file() and _is_bundle_content(p, repo_root)
+    )
 
 
 def build(repo_root: Path, registry_dir: Optional[Path] = None) -> BuildResult:
@@ -233,7 +251,9 @@ def build(repo_root: Path, registry_dir: Optional[Path] = None) -> BuildResult:
         record["relationships"]["attachments"] = sorted(
             p.relative_to(repo_root).as_posix()
             for p in bundle.rglob("*")
-            if p.is_file() and p.relative_to(repo_root).as_posix() != record["source"]["path"]
+            if p.is_file()
+            and _is_bundle_content(p, repo_root)
+            and p.relative_to(repo_root).as_posix() != record["source"]["path"]
         )
 
     # --- copy edges onto records ------------------------------------------

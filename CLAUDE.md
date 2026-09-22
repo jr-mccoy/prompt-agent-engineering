@@ -72,7 +72,7 @@ Membership rules for each category live in [`meta/REPOSITORY_FACTS.json`](meta/R
 | `pae-engine/` | The `pae` CLI (routing, search, context bundles) and its optional MCP server |
 | `scripts/` | Index generation, naming/link validation, drift checks |
 | `tests/` | Repo invariants |
-| Toolkits at root | `agentic-system-factory/`, `childrens-book-studio/`, `sourced-nonfiction-studio/`, `ai-investment-research-toolkit/`, `client-services-studio/`, `financial-records-toolkit/`, `continuity-kit/`, `portable-prompt-system/` — self-contained pipelines that *orchestrate* domain prompts rather than duplicating them |
+| Toolkits at root | `agentic-system-factory/`, `childrens-book-studio/`, `sourced-nonfiction-studio/`, `ai-investment-research-toolkit/`, `client-services-studio/`, `ai-governance-audit-kit/`, `financial-records-toolkit/`, `continuity-kit/`, `portable-prompt-system/` — self-contained pipelines that *orchestrate* domain prompts rather than duplicating them |
 
 The 44 domains: AI-ML, advertising, agentic-resources, biblical-studies,
 business-strategy, childrens-writing, conversation-practice, creative-writing,
@@ -153,6 +153,7 @@ is the defect this structure exists to prevent.
 | **A new skill** | `authoring/skill-patterns/README.md` → classify type (WORKFLOW / TOOL / DOMAIN / CREATION / ANALYSIS / INTEGRATION / META) → `SKILL_USE_CASE_LOOKUP.md` → `SKILL_PATTERN_INDEX.md` (41 patterns) → validate with `SKILL_QUALITY_RUBRIC.md`. |
 | **A new agent / command** | `authoring/agent-patterns/AGENT_QUICK_START.md` / `authoring/command-patterns/COMMAND_QUICK_START.md`. |
 | **To run a client engagement** (qualify → scope → price → propose → contract → deliver → invoice → close out) | `client-services-studio/`. Four gates enforced in code; it orchestrates `domain-business-strategy/client-services/`, `domain-legal/contracts-transactional/`, `domain-finance/` and `domain-negotiation/` rather than duplicating them. |
+| **To audit someone else's prompt or agent corpus** (inventory → clusters → observed scores → findings → report → registry handback) | `ai-governance-audit-kit/`. Four gates enforced in code; it writes a registry the unmodified Engine can open on the client's own tree, and refuses to assert a quality tier, a copy relationship or a licence. |
 | **A whole agentic system** | Manual: `authoring/system-patterns/README.md`. Guided: `agentic-system-factory/`. Gate 0 first — `domain-AI-ML/agentic-ai-systems/aiagent_complexity_ladder_gate.md` asks whether it needs an agent at all. |
 | **To learn about prompting** | `AI_AGENT_QUICK_START.md`, `techniques/MASTER_TECHNIQUE_INDEX.md`, `PROMPT_QUALITY_STANDARDS.md`. |
 

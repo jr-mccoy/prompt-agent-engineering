@@ -145,3 +145,12 @@ jobs:
       - name: client-services-studio tests
         working-directory: client-services-studio
         run: python3 -m unittest discover -s tests -v
+
+      - name: ai-governance-audit-kit skill self-checks
+        working-directory: ai-governance-audit-kit
+        run: |
+          for s in skills/*/scripts/*.py; do python3 "$s" --self-check; done
+
+      - name: ai-governance-audit-kit tests
+        working-directory: ai-governance-audit-kit
+        run: python3 -m unittest discover -s tests -v

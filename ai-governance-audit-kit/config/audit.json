@@ -1,0 +1,76 @@
+{
+  "engagement": "SAMPLE — synthetic fixture corpus, not a client engagement",
+  "corpus_label": "samples/corpus-good",
+  "rubric": {
+    "name": "SKILL_QUALITY_RUBRIC",
+    "version": "authoring/skill-patterns/SKILL_QUALITY_RUBRIC.md@100-point",
+    "provenance": "observed",
+    "_provenance_note": "observed = every point was detected from the artifact by claim_guard/observed_score regex. self_reported = the score came from a <!-- RUBRIC --> block the author wrote. Gate A refuses a score that states neither."
+  },
+  "membership": {
+    "roots": [
+      "prompts",
+      "skills"
+    ],
+    "component_dirs": [
+      "references",
+      "assets",
+      "resources",
+      "cards",
+      "fixtures",
+      "evals",
+      "scripts"
+    ],
+    "meta_doc_filenames": [
+      "README.md",
+      "CHANGELOG.md",
+      "CONTRIBUTING.md",
+      "LICENSE.md",
+      "AGENTS.md",
+      "CLAUDE.md",
+      "ARCHITECTURE.md",
+      "ROADMAP.md",
+      "INDEX.md"
+    ],
+    "non_resource_prefixes": [
+      "prompts/_drafts/",
+      "skills/_vendor/"
+    ],
+    "scope_depth": 1,
+    "_prefix_note": "Anchored path prefixes only, never bare directory names. See references/membership.md — a bare-segment blocklist cannot tell a category of documentation-writing agents from documentation about resources, and config validation rejects an entry without a '/'."
+  },
+  "kind_detectors": [
+    {
+      "kind": "skill",
+      "basename": "SKILL.md"
+    },
+    {
+      "kind": "agent",
+      "path_prefix": "agents/"
+    },
+    {
+      "kind": "command",
+      "path_prefix": "commands/"
+    },
+    {
+      "kind": "prompt",
+      "fallback": true
+    }
+  ],
+  "clustering": {
+    "candidate_threshold": 0.35,
+    "max_neighbours": 5
+  },
+  "claim_safety": {
+    "min_limitations": 3,
+    "fixture_path_markers": [
+      "samples/",
+      "fixtures/",
+      "corpus-good"
+    ]
+  },
+  "handback": {
+    "registry_dir": "meta/registry",
+    "scope_prefix": "client"
+  }
+}
