@@ -80,4 +80,34 @@ As each project accumulates prompts, save them next to this file using the repo 
 
 ---
 
-**Last Updated:** 2026-05-27
+## Where these prompts now live
+
+`starter-prompts/` used to hold the only copy of these six prompts. Because
+`portable-prompt-system/` is a non-registry root, that meant they were invisible to
+`PROMPT_INDEX.json` and to `pae search`, and they were counted in no repository fact —
+original content that the repository could not find.
+
+They are now **governed mirrors**. Each has a canonical in a domain, every pair is
+registered in `meta/VENDORED.tsv`, and `scripts/check_vendored_copies.py` fails CI if a
+copy drifts. Edit the canonical; the copies here stay in sync.
+
+| Starter prompt | Canonical |
+|---|---|
+| `content_long_form_script.md` | `domain-professional-writing/content-production/content_long_form_script.md` |
+| `content_short_form_hook_bank.md` | `domain-professional-writing/content-production/content_short_form_hook_bank.md` |
+| `content_seo_title_description.md` | `domain-professional-writing/content-production/content_seo_title_description.md` |
+| `content_repurpose_one_to_many.md` | `domain-professional-writing/content-production/content_repurpose_one_to_many.md` |
+| `content_series_channel_bible.md` | `domain-professional-writing/content-production/content_series_channel_bible.md` |
+| `content_thumbnail_image_brief.md` | `domain-image-generation/social-media/social_thumbnail_cover_brief.md` |
+
+The thumbnail brief moved to `domain-image-generation/` and took that domain's `social_`
+prefix, because it is an image-generation prompt — it uses SV-11 to SV-14 and produces a
+model-ready image brief. The other five pair with the `quality_slop_*` evaluators in
+`domain-professional-writing/content-quality/`: generate here, score there.
+
+The playbook still works unchanged; nothing about how you use `starter-prompts/` has
+altered. What changed is that the repository can now find them.
+
+---
+
+**Last Updated:** 2026-09-22

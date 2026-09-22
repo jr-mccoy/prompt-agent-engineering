@@ -1,6 +1,6 @@
 ---
 title: "Thumbnail / Cover Image Brief Builder"
-category: content-creation/visual-packaging
+category: image-generation/social-media
 description: "Turn a content idea into a precise, model-ready image-generation prompt for a thumbnail or cover, using print/visual-control techniques to avoid UI-mockup and slop failures."
 techniques:
   - ST-01
@@ -29,8 +29,8 @@ related_prompts:
 high-CTR thumbnail/cover with controlled composition, legible on-image text, and no UI-mockup,
 watermark, or slop artifacts. *(ST-01)*
 
-> Read first: [`../IMAGE_GENERATION_GUIDE.md`](../../../domain-image-generation/IMAGE_GENERATION_GUIDE.md)
-> (the 8 core techniques) and, if targeting OpenAI, [`../GPT_IMAGE_2_GUIDE.md`](../../../domain-image-generation/GPT_IMAGE_2_GUIDE.md).
+> Read first: [`../IMAGE_GENERATION_GUIDE.md`](../IMAGE_GENERATION_GUIDE.md)
+> (the 8 core techniques) and, if targeting OpenAI, [`../GPT_IMAGE_2_GUIDE.md`](../GPT_IMAGE_2_GUIDE.md).
 
 ---
 

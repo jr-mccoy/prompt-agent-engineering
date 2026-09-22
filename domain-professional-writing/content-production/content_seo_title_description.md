@@ -1,6 +1,6 @@
 ---
 title: "SEO Title, Description & Tags Packager"
-category: content-creation/discovery
+category: professional-writing/content-production
 description: "Generate platform-appropriate titles, a structured description, and tags that maximize discovery and CTR without clickbait or keyword stuffing, grounded in the actual content."
 techniques:
   - ST-01

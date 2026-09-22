@@ -1,6 +1,6 @@
 ---
 title: "Short-Form Hook Bank Generator"
-category: content-creation/short-form
+category: professional-writing/content-production
 description: "Generate a bank of distinct, scroll-stopping hooks for Shorts/Reels/TikTok/threads, each tied to a different psychological angle, in the channel voice."
 techniques:
   - ST-01

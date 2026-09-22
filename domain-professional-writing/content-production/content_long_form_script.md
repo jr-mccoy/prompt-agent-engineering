@@ -1,6 +1,6 @@
 ---
 title: "Long-Form Faceless Script Writer"
-category: content-creation/scripting
+category: professional-writing/content-production
 description: "Write a retention-optimized long-form script (video, narrated article, or podcast) in a defined channel voice, grounded only in supplied source material."
 techniques:
   - ST-01

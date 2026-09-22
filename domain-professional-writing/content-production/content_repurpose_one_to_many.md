@@ -1,6 +1,6 @@
 ---
 title: "Repurpose One-to-Many Content Atomizer"
-category: content-creation/repurposing
+category: professional-writing/content-production
 description: "Atomize one long-form piece into a coordinated set of derivative assets (shorts, threads, newsletter, carousel) that each stand alone while preserving facts and voice."
 techniques:
   - ST-01

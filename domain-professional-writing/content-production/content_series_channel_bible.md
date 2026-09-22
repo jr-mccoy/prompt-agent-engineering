@@ -1,6 +1,6 @@
 ---
 title: "Series / Channel Voice Bible Builder"
-category: content-creation/brand-voice
+category: professional-writing/content-production
 description: "Build a reusable voice-and-style bible for a faceless channel or series so every AI-assisted asset sounds consistent — the highest-leverage reusable context document for content work."
 techniques:
   - ST-01

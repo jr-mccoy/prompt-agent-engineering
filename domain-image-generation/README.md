@@ -120,7 +120,7 @@ domain-image-generation/
 ├── coloring-book/                 # Coloring pages (adult, kids, KDP, mandala, themed, cover)
 ├── healthcare/                    # Clinician reference cards, patient education, medical diagrams
 ├── ecommerce-product/             # Product photography (white-bg, lifestyle, flat lay, macro, variants)
-├── social-media/                  # Social graphic packs (quote, carousel, announcement, story, banner)
+├── social-media/                  # Social graphic packs (quote, carousel, announcement, story, banner, thumbnail)
 ├── publishing-covers/             # Book / ebook / album / podcast covers
 ├── events-print/                  # Event posters, promo flyers, gig posters
 ├── merch-print-on-demand/         # T-shirt graphics, stickers, seamless patterns
@@ -144,7 +144,7 @@ domain-image-generation/
 | `coloring-book/` | 9 | Adult intricate, kids simple, KDP interior, mandala, themed set, educational, cover, holiday, photo-to-lineart |
 | `healthcare/` | 14 | Clinician reference cards (labs, ACLS, dosing, antibiogram), patient education (condition, discharge, meds, anatomy), medical diagrams (anatomy/physiology, procedure steps, pathophysiology, algorithms) — anti-fabrication first |
 | `ecommerce-product/` | 5 | Product photography: white-bg catalog, lifestyle, flat lay, macro/texture, variant grid |
-| `social-media/` | 5 | Social graphics: quote, carousel set, announcement, story/reel cover, profile banner |
+| `social-media/` | 6 | Social graphics: quote, carousel set, announcement, story/reel cover, profile banner, video thumbnail/cover brief |
 | `publishing-covers/` | 5 | Fiction, nonfiction, KDP ebook, album, podcast covers |
 | `events-print/` | 3 | Event poster, promotional flyer, concert/gig poster |
 | `merch-print-on-demand/` | 3 | T-shirt graphic, sticker, seamless POD pattern |
@@ -153,7 +153,7 @@ domain-image-generation/
 | `scientific-technical/` | 3 | Scientific illustration, exploded diagram, data-viz image (accuracy-gated) |
 | `worksheet-generators/` | 45 | Core academics + early-childhood, arts, music, life-skills, foreign-language, specialized-formats, and assessment worksheet generators |
 | `visualizations/` | 14 | Cross-role no-UI visualization prompt generators for analyst, design, education, engineering, executive, HR, marketing, ops, PM, research, strategy, and portfolio use cases |
-| **Total** | **~146** | |
+| **Total** | **~147** | |
 
 ---
 

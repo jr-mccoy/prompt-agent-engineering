@@ -6,9 +6,9 @@
 
 **Generated:** 2026-09-22
 
-**Total Indexed Artifacts:** 5639
+**Total Indexed Artifacts:** 5654
 
-**Artifacts with Frontmatter:** 4703
+**Artifacts with Frontmatter:** 4718
 
 **Artifacts without Frontmatter:** 936
 
@@ -1985,7 +1985,7 @@
 
 ## Business Strategy
 
-**Total:** 73 prompts
+**Total:** 78 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -2001,6 +2001,11 @@
 | [Leadership-Team Audit of Ambition Level Given AI L](domain-business-strategy/ambition-leverage/ambition_leadership_audit.md) | business-strategy/ambition-lev | ST-01, ST-02, RT-02, CM-02, DS-01 | ambition, leverage, leadership, strategy-audit, ai-adoption | A structured audit the leadership team runs together to test whether current plans reflect the lever... |
 | [Roadmap for Turning Domain Experts into Builders](domain-business-strategy/ambition-leverage/ambition_experts_to_builders_roadmap.md) | business-strategy/ambition-lev | ST-01, ST-02, DS-01, RT-02, CM-02 | ambition, domain-experts, builders, democratization, ai-enablement | A phased roadmap that turns the organization's non-engineering domain experts (analysts, ops, legal,... |
 | [Workflow Redesign: Compress Insight-to-Action Lead](domain-business-strategy/ambition-leverage/ambition_insight_to_action_workflow.md) | business-strategy/ambition-lev | ST-01, ST-02, RT-02, DS-01, CM-02 | ambition, workflow-redesign, decision-speed, lead-time, insight-to-action | Redesign a specific decision workflow so the time between a real insight surfacing and a decision or... |
+| [Community Operations — Charter, Cadence, Moderatio](domain-business-strategy/creator-economy/creator_community_operations.md) | business-strategy/creator-econ | CM-02, RT-05, DS-06, OC-03, QA-01 | community, moderation, code-of-conduct, paid-membership, creator-economy | Operate a community rather than launch one: a charter that says who it is for and what it is not, an... |
+| [List Growth Plan — Channel Mix, Honest Rates, and ](domain-business-strategy/creator-economy/creator_list_growth_plan.md) | business-strategy/creator-econ | DS-06, RT-05, CM-02, DT-01, QA-04 | audience-growth, newsletter, channel-mix, cross-promotion, creator-economy | Plan audience growth as arithmetic rather than hope: a channel mix costed in hours, a conversion rat... |
+| [Newsletter Positioning and Cadence — One Promise, ](domain-business-strategy/creator-economy/creator_newsletter_positioning_and_cadence.md) | business-strategy/creator-econ | ST-02, RT-05, CM-02, DS-06, QA-01 | newsletter, positioning, cadence, audience, creator-economy | Define what a newsletter is for, who it is for, and how often it can actually ship — a stated promis... |
+| [Owned vs Rented — Deciding Where an Audience Lives](domain-business-strategy/creator-economy/creator_platform_choice_owned_vs_rented.md) | business-strategy/creator-econ | DT-01, RT-05, DS-06, CM-02, QA-04 | platform-risk, owned-audience, decision, creator-economy, distribution | A decision prompt for where a creator's audience should live: applies the existing ORB framework and... |
+| [Pre-Launch Demand Validation — Presell, Smoke Test](domain-business-strategy/creator-economy/creator_prelaunch_demand_validation.md) | business-strategy/creator-econ | RT-05, DS-06, DT-01, QA-04, OC-03 | demand-validation, presell, smoke-test, waitlist, creator-economy | Test whether anyone will pay before building an information product: pick the instrument that matche... |
 | [Account Health Assessment & Risk Identification](domain-business-strategy/go-to-market/workflow_cs_account_health.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | customer-success, account-health, churn-risk, retention, renewal | Assess a customer account's health from usage, support, and relationship signals, classify churn ris... |
 | [Campaign Brief Development from Business Goals](domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | marketing, campaign-brief, positioning, channel-mix, metrics | Translate a business goal into a campaign brief: audience, message hierarchy, channel mix, budget sp... |
 | [Content Performance Analysis & Gap Identification](domain-business-strategy/go-to-market/workflow_marketing_content_performance_analysis.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | marketing, content-strategy, performance-analysis, gap-analysis, funnel | Analyze content performance data against funnel stages and audience segments to find what is working... |
@@ -2301,7 +2306,7 @@
 
 ## Education Teaching
 
-**Total:** 267 prompts
+**Total:** 270 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -2366,6 +2371,9 @@
 | [Performance Support Job Aid Designer](domain-education-teaching/instructor/higher-ed-corporate/teaching_performance_support_job_aid.md) | education-teaching/instructor/ | ST-02, CM-02, DS-01, OC-01, QA-01 | performance-support, job-aid, quick-reference, workflow, corporate-training | Design an at-the-moment-of-need job aid (decision tree, checklist, quick reference card, or embedded... |
 | [Syllabus & Course Designer (Higher Ed)](domain-education-teaching/instructor/higher-ed-corporate/teaching_syllabus_course_designer.md) | education-teaching/instructor/ | CM-01, CM-02, DS-01, QA-01, ST-02 | education, teaching, higher-education, syllabus, course-design | Design comprehensive course syllabi with learning outcomes, AI policies, and inclusive design for hi... |
 | [Train-the-Trainer Guide](domain-education-teaching/instructor/higher-ed-corporate/teaching_train_trainer_guide.md) | education-teaching/instructor/ | ST-02, CM-02, DS-01, OC-01, QA-01 | corporate-training, train-the-trainer, facilitation, sme, subject-matter-expert | Prepare internal subject-matter experts to deliver a training reliably — facilitator skills, content... |
+| [Cohort vs Self-Paced Decision](domain-education-teaching/instructor/independent-course-creator/teaching_cohort_vs_self_paced_decision.md) | education-teaching/instructor/ | DT-01, DS-06, RT-05, CM-02, QA-04 | course-creation, cohort, self-paced, delivery-mode, independent-instructor | Decide whether an independent course runs as a live cohort, self-paced, or a hybrid — by matching th... |
+| [Course Completion and Engagement Design](domain-education-teaching/instructor/independent-course-creator/teaching_course_completion_and_engagement_design.md) | education-teaching/instructor/ | DS-06, RT-05, DT-01, QA-04, OC-03 | course-creation, completion, retention, engagement, independent-instructor | Design an independent course so learners finish it: find where they actually stop rather than where ... |
+| [Expertise to Teachable Scope](domain-education-teaching/instructor/independent-course-creator/teaching_expertise_to_teachable_scope.md) | education-teaching/instructor/ | RT-05, DT-01, CM-02, DS-06, QA-01 | course-creation, expertise-elicitation, scoping, independent-instructor, curriculum | Turn tacit expertise into a scope a stranger will pay to acquire: surface what you do that you have ... |
 | [Differentiation Strategy Planner](domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md) | education-teaching/instructor/ | CM-01, DS-01, QA-01, RP-02, ST-02 | education, teaching, differentiation, special-education, gifted | Design differentiated instruction for diverse learners with varying readiness, interests, and learni... |
 | [Lesson Plan Generator](domain-education-teaching/instructor/lesson-planning/teaching_lesson_plan_generator.md) | education-teaching/instructor/ | CM-01, DS-01, QA-01, RP-02, ST-02 | education, teaching, lesson-planning, curriculum | Create comprehensive, standards-aligned lesson plans with differentiation and assessment |
 | [Project-Based Learning Designer](domain-education-teaching/instructor/lesson-planning/teaching_project_based_learning_designer.md) | education-teaching/instructor/ | CM-01, DS-01, DT-01, QA-01, ST-02 | education, teaching, project-based-learning, pbl, inquiry | Design authentic PBL units with driving questions, sustained inquiry, and public products |
@@ -3311,7 +3319,7 @@
 
 ## Image Generation
 
-**Total:** 160 prompts
+**Total:** 161 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -3429,6 +3437,7 @@
 | [Social — Profile / Header Banner](domain-image-generation/social-media/social_profile_banner.md) | image-generation/social | ST-01, ST-02, ST-03, SV-13, SV-15 | social-media, banner, header, profile, linkedin | Profile/header banner (LinkedIn, X, YouTube, Facebook) composed for each platform's exact dimensions... |
 | [Social — Quote / Typography Graphic](domain-image-generation/social-media/social_quote_graphic.md) | image-generation/social | ST-01, ST-02, ST-03, SV-13, SV-17 | social-media, quote-graphic, typography, text-rendering, verbatim-text | Quote or typography-led social graphic with verbatim text rendered accurately — exact fonts, hex col... |
 | [Social — Story / Reel Cover (9:16 Vertical)](domain-image-generation/social-media/social_story_reel_cover.md) | image-generation/social | ST-01, ST-02, ST-03, SV-13, SV-15 | social-media, story, reel, vertical, 9-16 | Vertical 9:16 story or reel cover with a thumb-stopping hook, safe-zone-aware layout, and verbatim t... |
+| [Thumbnail / Cover Image Brief Builder](domain-image-generation/social-media/social_thumbnail_cover_brief.md) | image-generation/social-media | ST-01, SV-11, SV-12, SV-13, SV-14 | faceless, thumbnail, image-generation, packaging, visual | Turn a content idea into a precise, model-ready image-generation prompt for a thumbnail or cover, us... |
 | [Nano Banana 2 — Storyboard Grid → Veo Keyframes](domain-image-generation/nano-banana/nanobana_storyboard_veo_keyframes.md) | image-generation/storyboard | ST-01, ST-02, SV-12, SV-13, SV-17 | nano-banana, nano-banana-2, storyboard, veo, keyframes | Generate a storyboard grid optimized for feeding keyframes into Google Veo for video generation. |
 | [GPT Image 2 — UI Mockup Specification](domain-image-generation/gpt-image-2/gptimage2_ui_mockup_specification.md) | image-generation/ui | ST-01, ST-02, SV-15 | gpt-image-2, ui-mockup, product-design, openai | Realistic mobile or web UI mockup briefed as an artifact specification, not a concept-art request. |
 | [Character Bible Pipeline — Cross-Model Guide](domain-image-generation/CHARACTER_BIBLE_PIPELINE.md) | image-generation/workflow | ST-01, ST-02, SV-13, SV-15 | character-consistency, character-bible, reference-pack, cross-model, workflow | End-to-end workflow for building a character bible, generating a reference pack, and maintaining ide... |
@@ -4450,7 +4459,7 @@
 
 ## Professional Writing
 
-**Total:** 66 prompts
+**Total:** 72 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -4468,6 +4477,11 @@
 | [Technical Documentation Writer — Clear Docs for a ](domain-professional-writing/business-writing/business_writing_technical_doc.md) | professional-writing/business- | ST-01, ST-02, ST-03, CM-02, QA-04 | technical-documentation, how-to, business-writing, troubleshooting, glossary | Write clear technical documentation for a mixed audience: overview, prerequisites, step-by-step, exa... |
 | [The Nine Principles of Quality Business Writing — ](domain-professional-writing/business-writing/business_writing_principles.md) | professional-writing/business- | ST-01, ST-02, ST-03, CM-02, QA-01 | business-writing, writing-principles, clarity, editing, reference | An authored reference essay on the nine principles that separate effective business writing from noi... |
 | [Worked Example: Building an Investment Proposal](domain-professional-writing/business-writing/business_writing_investment_proposal_example.md) | professional-writing/business- | — | analysis, business, classification, context, determine | > This example demonstrates the complete process of creating an executive proposal for a technology ... |
+| [Long-Form Faceless Script Writer](domain-professional-writing/content-production/content_long_form_script.md) | professional-writing/content-p | ST-01, CM-01, NE-12, ST-02, CM-02 | faceless, script, long-form, retention, voiceover | Write a retention-optimized long-form script (video, narrated article, or podcast) in a defined chan... |
+| [Repurpose One-to-Many Content Atomizer](domain-professional-writing/content-production/content_repurpose_one_to_many.md) | professional-writing/content-p | ST-01, CM-01, NE-02, RT-02, CM-02 | faceless, repurposing, distribution, atomization, multi-platform | Atomize one long-form piece into a coordinated set of derivative assets (shorts, threads, newsletter... |
+| [SEO Title, Description & Tags Packager](domain-professional-writing/content-production/content_seo_title_description.md) | professional-writing/content-p | ST-01, CM-01, RT-02, CM-02, ST-03 | faceless, seo, metadata, titles, discovery | Generate platform-appropriate titles, a structured description, and tags that maximize discovery and... |
+| [Series / Channel Voice Bible Builder](domain-professional-writing/content-production/content_series_channel_bible.md) | professional-writing/content-p | ST-01, RP-01, NE-12, CM-01, CM-02 | faceless, brand-voice, consistency, style-guide, reusable-context | Build a reusable voice-and-style bible for a faceless channel or series so every AI-assisted asset s... |
+| [Short-Form Hook Bank Generator](domain-professional-writing/content-production/content_short_form_hook_bank.md) | professional-writing/content-p | ST-01, NE-12, RT-02, CM-02, ST-03 | faceless, short-form, hooks, shorts, reels | Generate a bank of distinct, scroll-stopping hooks for Shorts/Reels/TikTok/threads, each tied to a d... |
 | [Ad Copy Slop Detector — Will This Convert or Waste](domain-professional-writing/content-quality/quality_slop_ad_copy.md) | professional-writing/content-q | ST-01, RT-02, DS-02, ST-02, CM-02 | slop-detection, content-quality, ad-copy, conversion, validation | Score paid-ad copy (Google, Meta, LinkedIn) on five conversion dimensions and return strict JSON wit... |
 | [Blog Post Slop Detector — Verifiable Value or Gene](domain-professional-writing/content-quality/quality_slop_blog_post.md) | professional-writing/content-q | ST-01, RT-02, DS-02, ST-02, CM-02 | slop-detection, content-quality, blog-post, credibility, validation | Score a blog post on five credibility dimensions (specificity, proof, positioning, differentiation, ... |
 | [Case Study Slop Detector — Credible Transformation](domain-professional-writing/content-quality/quality_slop_case_study.md) | professional-writing/content-q | ST-01, RT-02, DS-02, ST-02, CM-02 | slop-detection, content-quality, case-study, sales-enablement, validation | Score a case-study draft on five believability dimensions (before-state, implementation, results, vo... |
@@ -4514,6 +4528,7 @@
 | [Voice Clone Profile Builder](domain-professional-writing/writing/writing_voice_clone_profile_builder.md) | professional-writing/voice | ST-01, ST-02, RT-02, ED-05, ST-16 | voice-cloning, style-transfer, voice-profile, writing-style, tone-matching | Analyze writing samples to build a comprehensive, reusable voice profile that enables AI to generate... |
 | [Content Research for Writing](domain-professional-writing/writing/writing_content_research.md) | professional-writing/writing | ST-01, RT-02, DS-02, RT-05, QA-01 | research, content-research, writing-preparation, source-evaluation, web-research | Research a topic to prepare for writing an article, presentation, or report — gathering source-cited... |
 | [Narrative Arc Builder — Three-Act Structure from a](domain-professional-writing/writing/writing_narrative_arc_builder.md) | professional-writing/writing | ST-01, ST-02, RT-02, DT-01, CM-02 | narrative, story-structure, three-act, through-line, essay | Build a three-act narrative arc (setup / tension / resolution) from a one-line thesis or core idea, ... |
+| [Newsletter Issue — Write One That Keeps the Promis](domain-professional-writing/writing/writing_newsletter_issue.md) | professional-writing/writing | ST-02, CM-02, RT-05, DS-06, QA-01 | newsletter, email, drafting, voice, audience | Draft a single newsletter issue against a stated promise: one idea, an opening that is not a greetin... |
 | [Original-Expression Rewriter — Re-express Source T](domain-professional-writing/writing/writing_original_expression_rewriter.md) | professional-writing/writing | ST-01, ST-02, CM-02, QA-01, RT-05 | paraphrasing, rewriting, original-expression, plagiarism-avoidance, fidelity | Rewrite a nonfiction source passage into genuinely original expression that conveys the same facts, ... |
 | [Precision Document Edit — Tighten Prose for Clarit](domain-professional-writing/writing/writing_precision_doc_edit.md) | professional-writing/writing | ST-01, ST-02, CM-02, QA-01, DS-01 | editing, line-editing, clarity, voice-preservation, argument | Edit a prose passage for clarity, concision, and argument strength while preserving the author's voi... |
 | [Thesis Builder — Surface the Stakes and Forge a De](domain-professional-writing/writing/writing_thesis_builder_essay.md) | professional-writing/writing | ST-01, ST-02, RT-02, QA-01, QA-04 | thesis, essay, argument, stakes, counter-argument | Surface the stakes underlying a loose idea, then craft graded thesis options (safe / sharp / boldest... |
