@@ -92,7 +92,11 @@ Use these prompts when you need to:
 **Do NOT use for:**
 - Creative writing (use domain-creative-writing)
 - Academic writing (use domain-research-academic)
-- Marketing copy (use domain-advertising)
+- Marketing copy — landing pages, ads, email campaigns, sales collateral
+  (use `domain-agentic-resources/skills/marketing/`: `copywriting`, `ad-creative`,
+  `page-cro`, `email-sequence`, `sales-enablement`)
+- Advertising **images** (use `domain-advertising`, which is an image-prompt set —
+  it does not hold ad copy)
 
 ---
 

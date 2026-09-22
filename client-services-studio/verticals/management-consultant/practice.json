@@ -1,0 +1,55 @@
+{
+  "_comment": "Starter practice config for the management-consultant vertical. A WORKED EXAMPLE, not a recommendation or a benchmark: every number here is invented and must be replaced with your own before any gate result means anything. Run Stage 0 to derive them.",
+  "_vertical": "management-consultant",
+  "practice": "Example Consulting",
+  "currency": "GBP",
+  "costs": {
+    "fixed_business": 12000,
+    "target_income": 85000,
+    "employment_burden_rate": 0.15,
+    "pension_and_healthcare": 8000
+  },
+  "capacity": {
+    "working_days": 250,
+    "absence_days": 30,
+    "billable_fraction": 0.58,
+    "billable_hours_per_day": 8,
+    "overrun_reserve_fraction": 0.12
+  },
+  "risk": {
+    "bad_debt_rate": 0.02,
+    "typical_overrun": 0.15
+  },
+  "target_margin": 0.22,
+  "positioning_premium": 0.2,
+  "concentration_limit_pct": 40,
+  "disqualifiers": [
+    {
+      "id": "no_written_scope_wanted",
+      "tier": "decline",
+      "reason": "pressure to start without a written scope"
+    },
+    {
+      "id": "no_named_decision_maker",
+      "tier": "decline",
+      "reason": "contact must check with an unnamed party"
+    },
+    {
+      "id": "prior_vendors_all_blamed",
+      "tier": "probe",
+      "reason": "prior suppliers described as incompetent with no self-implication"
+    },
+    {
+      "id": "outcome_shifts",
+      "tier": "proceed_with_protection",
+      "reason": "desired outcome changed between conversations \u2014 require a paid discovery phase"
+    },
+    {
+      "id": "no_sponsor_above_contact",
+      "tier": "probe",
+      "reason": "no executive sponsor identified above the day-to-day contact"
+    }
+  ],
+  "_walk_away_note": "Must equal the walk_away_day_rate computed by economics.py --floor from the costs, capacity and risk blocks above.",
+  "walk_away_day_rate": 818.82
+}

@@ -155,6 +155,35 @@ The user supplies (wrap any pasted spec in `<spec>` tags):
 - Unmapped spec requirements: [none | list]
 - Modules/interfaces with no spec basis (scope-creep candidates): [none | list]
 
+## Scoring pass (optional — only where sequence is not dependency-forced)
+*Skip this section where the build order is determined by dependencies. Score only the
+items that could genuinely go in more than one order, and say which framework was used
+and why.*
+
+| # | Item | Reach | Impact | Confidence | Effort | Score | Rank |
+|---|------|-------|--------|------------|--------|-------|------|
+| 1 | [...] | | | | | | |
+
+**Framework:** [RICE | WSJF | weighted shortest job first | other] — chosen because [...]
+**Confidence basis:** [what makes the confidence figure something other than a guess]
+**Where the score was overridden:** [item] — because [dependency / commitment / risk retirement]
+
+Two rules, or the numbers mislead more than they help:
+
+- **Dependencies outrank scores.** A high-scoring item that depends on an unbuilt module
+  is not next, whatever the arithmetic says. Score within the set of genuinely available
+  options, not across the whole backlog.
+- **Risk retirement outranks scores early.** The walking skeleton and the first probes on
+  the top-ranked risks come first even when they score poorly, because their value is
+  information rather than function.
+
+A score that never gets overridden is a score nobody is thinking about; an override with
+no stated reason is the score being ignored. Record both.
+
+**Choosing a framework at all** is
+`../../domain-decision-making/decisioning_prioritization_framework_selector.md` — use it
+if the choice is contested rather than defaulting to RICE because it is familiar.
+
 ## Open questions (spec ambiguities to resolve before building)
 - [question] — blocks: [module/decision]
 ```

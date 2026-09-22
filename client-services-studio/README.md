@@ -5,8 +5,8 @@ flags for a lawyer to review before signature; financial outputs are estimates f
 conversation with an accountant. See [Boundaries](#boundaries).*
 
 **Status: BUILT.** Ten stage prompts, four skills with working standard-library
-scripts, four gates enforced in code, four slash commands, three agents, 39 vendored
-referenced prompts, and a 37-test suite. [`DRY_RUN.md`](DRY_RUN.md) shows every gate
+scripts, four gates enforced in code, four slash commands, three agents, five vertical
+packs, 39 vendored referenced prompts, and a 42-test suite. [`DRY_RUN.md`](DRY_RUN.md) shows every gate
 firing on the [`samples/`](samples/) fixtures, including the negative cases.
 
 ---
@@ -126,7 +126,26 @@ client-services-studio/
 ├── agents/               # engagement-orchestrator, scope-guardian, contract-risk-reviewer
 ├── skills/               # four bundles, each SKILL.md + scripts/ + references/
 ├── config/practice.json  # worked example — replace every number
+├── verticals/            # the pipeline pre-configured per trade (5 exemplars)
 ├── samples/              # fixtures, including the negative cases
-├── tests/                # 37 tests
+├── tests/                # 42 tests
 └── referenced-prompts/   # 39 pinned copies
 ```
+
+## Verticals
+
+[`verticals/`](verticals/) holds the pipeline pre-configured for one trade — a starter
+`practice.json` plus a README naming that trade's deliverable writer, its rate structure
+and the contract clauses that bite in it. Five ship: HVAC, architect, accountancy,
+management consulting, landscaping.
+
+Every number in every vertical config is **invented** — a worked example so the gates
+have something to run against, not a benchmark. Run Stage 0 and replace them.
+
+```bash
+python3 skills/scope-ledger/scripts/scope_ledger.py --gate0 <lead.json> \
+    --config verticals/hvac/practice.json
+```
+
+Adding a vertical is documented in [`verticals/README.md`](verticals/README.md), including
+the naming constraint that keeps the tree out of the registry.

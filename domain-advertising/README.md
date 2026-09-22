@@ -52,6 +52,28 @@ These advertising prompts cross-link to Session 10 visual-planning references:
 - `domain-presentations/visual-planning/visual_qa_harness.md`
 - `domain-presentations/visual-planning/visual_workflow_router.md`
 
+## Route elsewhere for
+
+**This domain is an image-prompt set, not an advertising domain.** Every file here builds
+a prompt for *generating an advertising image* — the 8 image techniques (SV-11…SV-18),
+print/screen locking, anti-mockup constraints, per-model sections. Ad strategy, copy,
+targeting and testing were never in scope, and they already exist elsewhere. The absence
+of this section is why that was not obvious.
+
+| You need | Go to |
+|---|---|
+| Ad creative concepts, angles, headline variants at scale | `domain-agentic-resources/skills/marketing/ad-creative/` |
+| Landing page, hero, pricing-page and CTA copy | `domain-agentic-resources/skills/marketing/copywriting/` |
+| Channel selection, platform targeting, budget split | `domain-agentic-resources/skills/marketing/paid-ads/` |
+| Creative testing and experiment design | `domain-agentic-resources/skills/marketing/ab-test-setup/` |
+| Audience, ICP, persona and jobs-to-be-done definition | `domain-agentic-resources/skills/marketing/customer-research/` |
+| Persuasion and behavioural principles applied to copy | `domain-agentic-resources/skills/marketing/marketing-psychology/` |
+| Ad-to-page message match | `domain-agentic-resources/skills/marketing/page-cro/` (see `references/experiments.md`) |
+| Campaign briefs, launch plans, go-to-market | `domain-business-strategy/go-to-market/` |
+| Objection handling in copy and collateral | `domain-agentic-resources/skills/marketing/sales-enablement/` |
+| Any other image-generation work | `domain-image-generation/` |
+
 ## Backlog Status
 
 - ✅ Advertising image-generation prompts complete (17/17).
+- Ad strategy and copy are **deliberately out of scope** — see *Route elsewhere for*.

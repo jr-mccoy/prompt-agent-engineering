@@ -1,6 +1,6 @@
 # Domain: Risk
 
-Risk management as a working discipline: identify risks, structure them, prioritize them, harden against them, and learn when one materializes anyway. The seven prompts here adapt the standard instruments — register, heat map, FMEA, threat model, dependency audit, tail-risk scan, after-action review — for general operators, not just safety engineers, and each enforces the discipline that makes its instrument worth more than a spreadsheet: registers get named owners and review cadences, heat maps force the "are we actually doing the top-3 mitigations?" question, AARs run a blameless root-cause ladder instead of finding a culprit.
+Risk management as a working discipline: identify risks, structure them, prioritize them, harden against them, and learn when one materializes anyway. The nine prompts here adapt the standard instruments — appetite statement, register, heat map, FMEA, threat model, dependency audit, tail-risk scan, continuity plan, after-action review — for general operators, not just safety engineers, and each enforces the discipline that makes its instrument worth more than a spreadsheet: registers get named owners and review cadences, heat maps force the "are we actually doing the top-3 mitigations?" question, AARs run a blameless root-cause ladder instead of finding a culprit.
 
 The domain spans the full lifecycle. Before the fact: build the catalogue (`risk_register_builder`), hunt what the catalogue systematically misses (`risk_tail_risk_scan`), model intelligent adversaries (`risk_threat_model_non_technical`), decompose a process's failure modes (`risk_fmea_analysis`), and find the single points of failure (`risk_dependency_chain_audit`). During: visualize and re-rank (`risk_heat_map`). After: learn without scapegoating (`risk_after_action_review`).
 
@@ -27,19 +27,23 @@ Users are PMs, operators, founders, executives, engineers, and analysts who own 
 
 | File | Purpose |
 |------|---------|
+| `risk_appetite_statement.md` | State appetite per category with quantified tolerance limits, the trade-off each appetite buys, and escalation on breach — the governance layer the register and heat map presuppose |
 | `risk_register_builder.md` | Build a maintainable register: per-risk scores, named owner, mitigation, monitoring, escalation trigger, residual risk, review cadence |
 | `risk_heat_map.md` | Plot scored risks on a 5×5 likelihood × impact map, force-rank, and force the "are we doing the top-3 mitigations?" question |
 | `risk_tail_risk_scan.md` | Provocation-driven hunt for 5–8 low-probability, high-impact risks the register misses, with a "would we even know?" detection check |
 | `risk_fmea_analysis.md` | Per-step failure modes with severity × occurrence × detectability (RPN), adapted for software, org processes, supply chains, events |
 | `risk_dependency_chain_audit.md` | Trace dependency chains, find single points of failure, prioritize by blast radius × replacement difficulty, prescribe resilience moves |
 | `risk_threat_model_non_technical.md` | Security threat-modeling discipline (assets, actors, attack paths, mitigations) for launches, statements, partnerships, reveals |
+| `risk_business_continuity_plan.md` | Recovery time and data-loss objectives per critical function, procedures written for degraded conditions, activation authority and succession, and an honest list of untested procedures and unmet objectives |
 | `risk_after_action_review.md` | US Army AAR frame on a materialized risk event: supposed/actual/gap/why, blameless root-cause ladder, keep/start/stop by level |
 
 ## Quick routing
 
 | You're saying | Use |
 |---------------|-----|
+| "How much risk is acceptable here?" / "two managers disagree and there is no referee" | `risk_appetite_statement.md` |
 | "We have no risk catalogue / our risk list is stale and ownerless" | `risk_register_builder.md` |
+| "What happens if we cannot operate for a week?" / "an auditor asked for a continuity plan" | `risk_business_continuity_plan.md` |
 | "Which risks should get attention this cycle?" / "show the board our risk posture" | `risk_heat_map.md` |
 | "What are we not seeing?" / "what would be catastrophic even if unlikely?" | `risk_tail_risk_scan.md` |
 | "Where can this process fail, and would we catch it?" | `risk_fmea_analysis.md` |

@@ -4,11 +4,11 @@
 >
 > For classified counts with stated membership rules, see [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json). Normalized resource kinds are planned for the PAE Registry and do not exist yet — see [`ROADMAP.md`](ROADMAP.md).
 
-**Generated:** 2026-09-21
+**Generated:** 2026-09-22
 
-**Total Indexed Artifacts:** 5617
+**Total Indexed Artifacts:** 5639
 
-**Artifacts with Frontmatter:** 4681
+**Artifacts with Frontmatter:** 4703
 
 **Artifacts without Frontmatter:** 936
 
@@ -373,7 +373,7 @@
 
 ## Agentic Resources
 
-**Total:** 1466 prompts
+**Total:** 1469 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -1320,6 +1320,9 @@
 | [Operating Review Pack](domain-agentic-resources/skills/non-coding/business/operating-review-pack/SKILL.md) | agentic-resources/skills/non-c | — | operating-review, executive-reporting, kpi-dashboard, business-review, stakeholder-communication | Build a concise operating review pack with KPIs, narrative, risks, and decision-ready recommendation... |
 | [Idea Divergence-Convergence](domain-agentic-resources/skills/non-coding/creative/idea-divergence-convergence/SKILL.md) | agentic-resources/skills/non-c | — | ideation, brainstorming, creative-thinking, double-diamond, innovation | Run structured idea generation and selection cycles from broad exploration to focused, testable conc... |
 | [Narrative Iteration](domain-agentic-resources/skills/non-coding/creative/narrative-iteration/SKILL.md) | agentic-resources/skills/non-c | — | creative-writing, narrative-structure, story-revision, screenwriting, editing | Iterate stories or scripts through structured revision cycles to improve arc, voice, and impact. |
+| [Handoff / Approval Workflow](domain-agentic-resources/skills/non-coding/cross-domain/handoff-approval-workflow/SKILL.md) | agentic-resources/skills/non-c | — | approval-workflow, handoff, sign-off, bottlenecks, accountability | Design a handoff or approval workflow that does not stall. Use this skill to "design an approval pro... |
+| [Intake Triage Pattern](domain-agentic-resources/skills/non-coding/cross-domain/intake-triage-pattern/SKILL.md) | agentic-resources/skills/non-c | — | intake, triage, routing, prioritization, service-levels | Design an intake and triage system for incoming requests of any kind. Use this skill to "set up an i... |
+| [Quality Rubric Template](domain-agentic-resources/skills/non-coding/cross-domain/quality-rubric-template/SKILL.md) | agentic-resources/skills/non-c | — | rubric, scoring, behavioural-anchors, inter-rater-agreement, evaluation | Build a scoring rubric that two independent assessors apply the same way. Use this skill to "make a ... |
 | [Assessment Rubric Builder](domain-agentic-resources/skills/non-coding/education/assessment-rubric-builder/SKILL.md) | agentic-resources/skills/non-c | — | education, assessment, rubric-design, blooms-taxonomy, grading | Design rigorous, fair, and measurable rubrics for evaluating student or trainee performance across a... |
 | [Curriculum Design](domain-agentic-resources/skills/non-coding/education/curriculum-design/SKILL.md) | agentic-resources/skills/non-c | — | education, curriculum-design, backward-design, learning-outcomes, instructional-design | Design coherent, outcomes-aligned learning programs across courses, workshops, or training pathways. |
 | [Health Literacy Rewriter](domain-agentic-resources/skills/non-coding/healthcare/health-literacy-rewriter/SKILL.md) | agentic-resources/skills/non-c | — | healthcare, health-literacy, plain-language, patient-education, readability | Rewrite complex health content into plain-language, health-literate versions for broad audiences. |
@@ -1982,7 +1985,7 @@
 
 ## Business Strategy
 
-**Total:** 72 prompts
+**Total:** 73 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -2004,6 +2007,7 @@
 | [Discovery Call Preparation from CRM Data](domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | sales, discovery-call, qualification, crm, call-prep | Turn CRM records and account research into a discovery-call plan: hypotheses to test, a question seq... |
 | [Onboarding Plan & 90-Day Success Roadmap](domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | customer-success, onboarding, 90-day-plan, adoption, milestones | Turn a signed account's goals and constraints into a staged 90-day onboarding plan with milestones, ... |
 | [Pipeline Risk Assessment & Deal Prioritization](domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | sales, pipeline-review, deal-risk, prioritization, forecasting | Audit an open pipeline for stalled deals, single-threaded relationships, and missing buying signals,... |
+| [Win/Loss Analysis — Interviews With the Buyer, Not](domain-business-strategy/go-to-market/workflow_win_loss_analysis.md) | business-strategy/go-to-market | RT-09, RT-05, CM-01, QA-04, OC-03 | win-loss, sales-effectiveness, competitive-intelligence, buyer-research, go-to-market | Run win/loss analysis that produces decisions: buyers interviewed by someone who was not on the deal... |
 | [24-Hour Leader Pulse Briefing](domain-business-strategy/research/research_24_hour_leader_pulse.md) | business-strategy/research | ST-01, ST-02, RT-02, DS-06, QA-01 | market-intelligence, competitive-analysis, leadership, briefing, research | Scan and synthesize the last 24 hours of public statements from a named set of industry leaders into... |
 | [Company Deep Dive](domain-business-strategy/research/research_company_deep_dive.md) | business-strategy/research | ST-01, RT-02, DS-02, RT-05, QA-01 | research, company-analysis, competitive-intelligence, due-diligence, web-research | Conduct a comprehensive, source-cited analysis of a company — business model, market position, finan... |
 | [Competitive Landscape Analysis](domain-business-strategy/research/research_competitive_landscape.md) | business-strategy/research | ST-01, RT-02, DS-02, RT-05, QA-02 | research, competitive-analysis, market-research, benchmarking, web-research | Research direct competitors in a market and produce a structured, source-cited comparison table (CSV... |
@@ -2632,7 +2636,7 @@
 
 ## Finance
 
-**Total:** 152 prompts
+**Total:** 153 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -2749,6 +2753,7 @@
 | [Regulatory Filing Calendar Builder — Filings, Owne](domain-finance/regulatory-compliance/finance_regulatory_filing_calendar.md) | finance/regulatory-compliance | ST-02, DT-02, OC-01, CM-02, NE-06 | filing-calendar, deadlines, regulatory-filings, compliance-calendar, owners | Build a regulatory filing calendar that lists each periodic and event-driven filing with its regulat... |
 | [Regulatory Requirement Mapper — Map Applicable Reg](domain-finance/regulatory-compliance/finance_regulatory_requirement_mapper.md) | finance/regulatory-compliance | DT-02, ST-02, CM-02, QA-05, DS-06 | regulatory-mapping, compliance, jurisdiction, regulatory-inventory, applicability | Map applicable regulations and regulatory bodies (SEC, FINRA, Basel/BIS, Dodd-Frank, MiFID II, FinCE... |
 | [Sanctions Screening Program Designer — Lists, Matc](domain-finance/regulatory-compliance/finance_sanctions_screening_program.md) | finance/regulatory-compliance | ST-02, DT-02, CM-02, DS-06, NE-06 | sanctions, screening, ofac, watchlist, name-matching | Design a sanctions-screening program: list sourcing and coverage (OFAC/UN/EU/UK and applicable lists... |
+| [Business Insurance Coverage Review — Exposures Fir](domain-finance/risk-management/finance_business_insurance_coverage_review.md) | finance/risk-management | RT-05, CM-02, QA-04, QA-18, OC-03 | insurance, commercial-lines, coverage-gaps, risk-transfer, retained-risk | Review commercial insurance against actual exposures: an exposure inventory built before any policy ... |
 | [Counterparty / Credit-Exposure Assessment — Concen](domain-finance/risk-management/finance_counterparty_risk_assessment.md) | finance/risk-management | RT-02, NE-11, DS-06, QA-04, QA-01 | counterparty-risk, credit-exposure, netting, concentration, expected-loss | Assess counterparty credit risk through current and potential future exposure, netting and collatera... |
 | [Enterprise Risk Register Builder — Likelihood × Im](domain-finance/risk-management/finance_enterprise_risk_register.md) | finance/risk-management | RT-02, DS-06, DT-02, OC-01, QA-01 | enterprise-risk, risk-register, heat-map, risk-appetite, controls | Build an auditable enterprise risk register that scores each risk on calibrated likelihood and impac... |
 | [Financial Model Risk Validation — Conceptual Sound](domain-finance/risk-management/finance_model_risk_validation.md) | finance/risk-management | NE-06, QA-01, DT-02, AG-08, QA-04 | model-risk, model-validation, sr-11-7, backtesting, benchmarking | Validate a financial or risk model across the four SR 11-7-style pillars — conceptual soundness, dat... |
@@ -3225,11 +3230,20 @@
 
 ## Hr Management
 
-**Total:** 7 prompts
+**Total:** 16 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
 | [Hiring Screen / Take-Home Challenge Designer — Rol](domain-hr-management/hiring/hr_hiring_screen_challenge_designer.md) | hr-management/hiring | ST-01, ST-02, DS-01, CM-02, QA-04 | hiring, take-home, assessment, scoring-rubric, anti-bias | Design a fair, role-specific hiring screen or take-home challenge: a realistic scenario, scoped deli... |
+| [Interview Loop Design — Signal Per Stage, No Redun](domain-hr-management/hiring/hr_interview_loop_design.md) | hr-management/hiring | ST-02, CM-02, CM-03, QA-08, OC-03 | hiring, interview-process, signal-design, candidate-experience, debrief | Design a complete interview loop: which signal each stage uniquely produces, who owns it, what it co... |
+| [Job Description Writer — Outcome-Framed, Requireme](domain-hr-management/hiring/hr_job_description_writer.md) | hr-management/hiring | ST-01, ST-02, CM-02, QA-04, NE-09 | hiring, job-description, role-scoping, inclusive-language, pay-transparency | Write a job description built from the outcomes the hire must deliver rather than a list of duties: ... |
+| [Reference Check Guide — Targeted at the Open Quest](domain-hr-management/hiring/hr_reference_check_guide.md) | hr-management/hiring | ST-02, CM-02, RT-05, QA-04, OC-03 | hiring, reference-check, due-diligence, consent, evidence-based | Run a reference check that resolves the loop's remaining uncertainty: the specific open question car... |
+| [Sourcing Outreach — Specific, Honest, and Easy to ](domain-hr-management/hiring/hr_sourcing_outreach.md) | hr-management/hiring | CM-01, ST-03, NE-23, QA-04, OC-03 | hiring, sourcing, outreach, passive-candidates, candidate-experience | Write outreach to a passive candidate: the specific reason you approached this person, what the role... |
+| [Structured Hiring Scorecard — Behaviourally Anchor](domain-hr-management/hiring/hr_structured_scorecard.md) | hr-management/hiring | ST-03, CM-02, QA-04, QA-18, OC-03 | hiring, scorecard, behavioural-anchors, evidence-based, anti-bias | Build the scoring instrument interviewers fill in: one scorecard per stage covering only that stage'... |
+| [Employee Onboarding 30/60/90 — Derived from the Ro](domain-hr-management/onboarding/hr_onboarding_thirty_sixty_ninety.md) | hr-management/onboarding | ST-02, CM-02, QA-08, OC-03, DD-07 | onboarding, thirty-sixty-ninety, ramp-up, manager-obligations, new-hire | Build a 30/60/90 plan for a new employee from the outcomes the role was hired against: a first-week ... |
+| [Compensation Banding — Levels, Ranges, and a State](domain-hr-management/people-ops/hr_compensation_banding.md) | hr-management/people-ops | ST-02, CM-02, RT-05, QA-04, OC-03 | compensation, levelling, pay-bands, pay-equity, pay-transparency | Design a compensation band structure: levels defined by scope rather than tenure, ranges with a stat... |
+| [Exit Interview — Run by Someone Neutral, Aggregate](domain-hr-management/people-ops/hr_exit_interview.md) | hr-management/people-ops | ST-02, CM-01, RT-09, QA-04, OC-03 | attrition, exit-interview, retention, people-analytics, confidentiality | Run and use an exit interview: separating regretted from non-regretted attrition, an interviewer who... |
+| [Performance Improvement Plan Author — Genuinely Ac](domain-hr-management/people-ops/hr_performance_improvement_plan.md) | hr-management/people-ops | ST-02, CM-02, QA-04, QA-18, DD-07 | performance-management, pip, evidence-based, manager-obligations, legally-careful | Author a PIP that a person could actually pass: a specific evidenced gap, achievable targets with ob... |
 | [Calibration Facilitator: Running a Manager Calibra](domain-hr-management/performance-reviews/hr_calibration_facilitator.md) | hr-management/performance-revi | ST-01, ST-02, ST-03, RT-01, RT-03 | performance-review, calibration, norming, hr, management | Prepares for or facilitates a calibration meeting where managers align on performance ratings across... |
 | [Manager Writing an Employee Performance Review](domain-hr-management/performance-reviews/hr_manager_writing_employee_review.md) | hr-management/performance-revi | ST-01, ST-02, ST-03, RT-01, RT-05 | performance-review, manager, feedback, hr, writing | Drafts a written manager performance evaluation from evidence notes. Every claim is evidence-anchore... |
 | [Peer / 360 Feedback: Turning Observations into Act](domain-hr-management/performance-reviews/hr_peer_360_feedback.md) | hr-management/performance-revi | ST-01, ST-02, ST-03, RT-01, RT-05 | performance-review, peer-feedback, 360-feedback, feedback, hr | Turns raw peer observations into Situation–Behavior–Impact feedback that is specific, balanced, and ... |
@@ -3901,7 +3915,7 @@
 
 ## Negotiation
 
-**Total:** 46 prompts
+**Total:** 47 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -3922,6 +3936,7 @@
 | [Written and Async Negotiation — What Belongs in Wr](domain-negotiation/channels/negotiation_written_async_message.md) | negotiation/channels | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, written, async, email, record | Negotiate in email, messages, and documents without the losses the channel imposes. Decides what bel... |
 | [Customer Escalation Concession — What to Give, Wha](domain-negotiation/contexts/negotiation_customer_escalation_concession.md) | negotiation/contexts | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, customer, escalation, concession, precedent | An unhappy customer wants something. Separates the legitimate remedy from the escalation premium, pr... |
 | [Freelance and Consulting Rate Conversation — Defen](domain-negotiation/contexts/negotiation_freelance_rate_conversation.md) | negotiation/contexts | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, freelance, rates, pricing, scope | Hold a rate live, once it is set. Covers stating the number without apologizing, responding to the d... |
+| [Hiring Offer — Employer Side](domain-negotiation/contexts/negotiation_hiring_offer_employer_side.md) | negotiation/contexts | CM-02, MP-10, RT-05, QA-04, OC-03 | hiring, offer-negotiation, employer-side, compensation, internal-equity | Negotiate a hiring offer from the employer's seat: the band position decided before the call, the pa... |
 | [Internal Resource Negotiation — Budget and Headcou](domain-negotiation/contexts/negotiation_internal_budget_headcount.md) | negotiation/contexts | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, internal, budget, headcount, allocation | Negotiate for budget, headcount, or capacity inside your own organization, where the counterpart is ... |
 | [Major Purchase Bargaining — Vehicles, Property, an](domain-negotiation/contexts/negotiation_major_purchase_bargaining.md) | negotiation/contexts | ST-01, ST-02, RT-02, DS-01, DS-02 | negotiation, purchase, consumer, asymmetry, walkaway | Buy a large one-off item from someone who sells them daily. Closes the information gap with pre-nego... |
 | [Partnership and Equity Split — The Conversation No](domain-negotiation/contexts/negotiation_partnership_equity_split.md) | negotiation/contexts | ST-01, ST-02, RT-02, DS-01, DS-02 | negotiation, equity, partnership, founders, vesting | Negotiate an equity or profit split between founders and partners, at the point when the relationshi... |
@@ -4298,7 +4313,7 @@
 
 ## Product Management
 
-**Total:** 9 prompts
+**Total:** 14 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -4306,10 +4321,15 @@
 | [Competitor Feature Teardown — Comparison Matrix, P](domain-product-management/prompts/product_competitor_feature_teardown.md) | product-management/prompts | ST-01, ST-02, RT-02, DS-06, CM-02 | competitive-analysis, feature-comparison, product-strategy, differentiation, market-positioning | Run a feature-by-feature teardown across 3+ named competitors: build a comparison matrix, surface pa... |
 | [Create a PRD via Interrogation (MVP-First)](domain-product-management/prompts/product_create_prd.md) | product-management/prompts | ST-01, ST-02, RT-01, CM-02, DS-02 | product-management, prd, requirements, mvp, scope-control | Interrogative PRD builder that gathers requirements through disciplined questioning, pushes back on ... |
 | [Feature Requirements Extraction from Stakeholder C](domain-product-management/prompts/product_feature_requirements_extraction.md) | product-management/prompts | ST-01, ST-02, CM-01, DS-06, QA-04 | requirements, stakeholder-input, prd, scope, product-management | Turn raw stakeholder conversation notes into structured functional and non-functional requirements, ... |
+| [Feature Sunset Decision — Evidence, Affected Users](domain-product-management/prompts/product_feature_sunset_decision.md) | product-management/prompts | RT-05, CM-02, QA-04, QA-08, OC-03 | deprecation, sunset, product-lifecycle, migration, reversibility | Decide whether to remove a feature and how: usage evidence with the long-tail dependants identified,... |
+| [Launch Readiness Gate — Cross-Functional, With a R](domain-product-management/prompts/product_launch_readiness_gate.md) | product-management/prompts | ST-02, QA-08, CM-02, DD-07, OC-03 | launch, go-no-go, readiness, cross-functional, rollback | Run the cross-functional gate before a product launch: readiness assessed per function with a named ... |
 | [Market Size (TAM/SAM/SOM) — Rapid or Comprehensive](domain-product-management/prompts/product_market_size_calculator.md) | product-management/prompts | ST-01, ST-02, RT-02, DS-02, CM-02 | product-management, market-sizing, tam-sam-som, business-strategy, estimation | Calculate Total / Serviceable / Obtainable market sizes using three independent methodologies (top-d... |
+| [North-Star Metric Definition — One Number, Its Inp](domain-product-management/prompts/product_north_star_metric_definition.md) | product-management/prompts | CM-02, RT-05, QA-04, QA-18, OC-03 | metrics, north-star, product-analytics, counter-metrics, goodharts-law | Define a product north-star metric: a candidate set tested against five criteria, the input metrics ... |
+| [Opportunity Solution Tree — Outcome to Opportuniti](domain-product-management/prompts/product_opportunity_solution_tree.md) | product-management/prompts | ST-02, CM-03, RT-05, NE-09, OC-03 | product-discovery, opportunity-mapping, outcome-driven, continuous-discovery, prioritization | Build an opportunity solution tree from a single product outcome: opportunities expressed as custome... |
 | [Product Delivery Sprint Planner](domain-product-management/prompts/product_delivery_sprint_planner.md) | product-management/prompts | ST-02, DS-02, CM-02, RT-02, QA-01 | product-management, sprint-planning, user-stories, delivery, dependencies | Plan a cross-functional product delivery sprint from an approved PRD: decompose into user stories wi... |
 | [Product Idea Vetting — Will It Fly or Flop? Fast S](domain-product-management/prompts/product_product_idea_vetting_will_it_fly_or_flop.md) | product-management/prompts | ST-01, ST-02, RT-02, DS-06, QA-04 | idea-validation, product-strategy, go-no-go, risk-assessment, early-stage | Fast solo vetting of a raw product idea against demand, feasibility, risk, and timing dimensions. Ou... |
 | [Score a PRD Against a Rigorous Rubric](domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md) | product-management/prompts | ST-02, RT-02, CM-02, DS-01, QA-01 | product-management, prd, review, rubric, quality-gate | Evaluate an existing Product Requirements Document against a weighted rubric (clarity, problem frami... |
+| [User Story Splitting — Vertical Slices That Each D](domain-product-management/prompts/product_user_story_splitting.md) | product-management/prompts | ST-02, CM-03, NE-09, QA-04, OC-03 | user-stories, story-splitting, vertical-slice, backlog-refinement, acceptance-criteria | Split an oversized user story into slices that are each independently valuable, testable and shippab... |
 | [Product Requirements Document (PRD) Template](domain-product-management/templates/prd_template.md) | product-management/templates | — | document, history, metrics, overview, prd | > Copy this template for feature specifications, product initiatives, and capability development. |
 
 ## Productivity
@@ -5110,10 +5130,12 @@
 
 ## Risk
 
-**Total:** 7 prompts
+**Total:** 9 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
+| [Business Continuity Plan — Recovery Objectives, Te](domain-risk/risk_business_continuity_plan.md) | risk | ST-02, CM-02, QA-08, RT-10, OC-03 | business-continuity, disaster-recovery, rto-rpo, resilience, succession | Build a continuity plan around the functions that must keep running: business impact analysis produc... |
+| [Risk Appetite Statement — The Thresholds the Regis](domain-risk/risk_appetite_statement.md) | risk | CM-02, CM-09, RT-05, QA-08, OC-03 | risk-appetite, risk-tolerance, governance, escalation, thresholds | Write the risk appetite statement the other risk instruments already assume: appetite stated per ris... |
 | [After-Action Review — Post-Event Learning When a R](domain-risk/risk_after_action_review.md) | risk/after-action | ST-01, ST-02, RT-02, DS-01, DS-02 | risk-management, after-action-review, post-mortem, root-cause, organizational-learning | Conduct a structured After-Action Review once a risk event has actually happened. Walk the US Army A... |
 | [Dependency Chain Audit — Single Points of Failure ](domain-risk/risk_dependency_chain_audit.md) | risk/dependencies | ST-01, ST-02, RT-02, DS-01, DS-02 | risk-management, dependencies, single-point-of-failure, blast-radius, resilience | Map dependencies across a system, project, or operation — vendors, key people, infrastructure, contr... |
 | [FMEA Analysis — Failure Modes and Effects for Non-](domain-risk/risk_fmea_analysis.md) | risk/fmea | ST-01, ST-02, RT-02, DS-01, DS-02 | risk-management, fmea, failure-modes, rpn, process-analysis | Run a Failure Mode and Effects Analysis on a process or product. For each step or component, identif... |

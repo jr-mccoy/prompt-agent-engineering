@@ -248,6 +248,71 @@ class ConfigConsistency(unittest.TestCase):
         self.assertIn("decline", tiers)
 
 
+class VerticalConfigs(unittest.TestCase):
+    """Every vertical pack ships a config the pipeline can actually run.
+
+    The same drift risk as the main config, multiplied by the number of packs:
+    walk_away_day_rate is stored so Gate 0 runs without recomputing the floor, so
+    editing a cost or capacity figure without recomputing silently produces wrong
+    Gate 0 results. verticals/README.md promises this test exists.
+    """
+
+    VERTICALS = sorted(p for p in (ROOT / "verticals").iterdir() if p.is_dir())
+
+    def test_at_least_one_vertical_ships(self):
+        self.assertTrue(self.VERTICALS)
+
+    def test_every_vertical_is_loadable_and_self_consistent(self):
+        for path in self.VERTICALS:
+            with self.subTest(vertical=path.name):
+                config = json.loads(
+                    (path / "practice.json").read_text(encoding="utf-8"))
+                computed = economics.rate_floor(config)["walk_away_day_rate"]
+                self.assertAlmostEqual(
+                    config["walk_away_day_rate"], computed, places=1,
+                    msg=f"{path.name}: stored walk-away has drifted from the computed one")
+
+    def test_every_vertical_can_run_gate0(self):
+        lead = sample("lead_pass.json")
+        for path in self.VERTICALS:
+            with self.subTest(vertical=path.name):
+                config = json.loads(
+                    (path / "practice.json").read_text(encoding="utf-8"))
+                # A passing lead must clear a vertical config too, or the pack's
+                # invented numbers are incoherent rather than merely illustrative.
+                passed, failures, _ = scope_ledger.gate0(lead, config)
+                self.assertTrue(passed, f"{path.name}: {failures}")
+
+    def test_every_vertical_has_trade_specific_disqualifiers(self):
+        for path in self.VERTICALS:
+            with self.subTest(vertical=path.name):
+                config = json.loads(
+                    (path / "practice.json").read_text(encoding="utf-8"))
+                ids = {d["id"] for d in config["disqualifiers"]}
+                tiers = {d["tier"] for d in config["disqualifiers"]}
+                self.assertIn("decline", tiers)
+                # Three common ones are table stakes; a pack earns its place by
+                # adding at least two of its own.
+                common = {"no_written_scope_wanted", "no_named_decision_maker",
+                          "prior_vendors_all_blamed"}
+                self.assertGreaterEqual(len(ids - common), 2,
+                                        f"{path.name} adds no trade-specific disqualifiers")
+
+    def test_every_vertical_has_exactly_one_prose_file_named_readme(self):
+        """The naming constraint that keeps verticals out of the registry.
+
+        README.md is in META_DOC_FILENAMES so it is excluded wherever it appears.
+        Any other .md file falls through classify() to "prompt" and acquires a UID.
+        """
+        for path in self.VERTICALS:
+            with self.subTest(vertical=path.name):
+                markdown = sorted(p.name for p in path.rglob("*.md"))
+                self.assertEqual(
+                    markdown, ["README.md"],
+                    f"{path.name}: only README.md may be Markdown here — "
+                    f"{markdown} would become registry resources")
+
+
 class Receivables(unittest.TestCase):
 
     def test_payment_run_pushes_cash_later_than_contractual_terms(self):

@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated": "2026-09-21",
+    "generated": "2026-09-22",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 5617,
-    "artifacts_with_frontmatter": 4681,
+    "total_indexed_artifacts": 5639,
+    "artifacts_with_frontmatter": 4703,
     "artifacts_without_frontmatter": 936,
     "domains": 44,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 5617,
-    "prompts_with_frontmatter": 4681,
+    "total_prompts": 5639,
+    "prompts_with_frontmatter": 4703,
     "prompts_without_frontmatter": 936
   },
   "prompts": [
@@ -33115,6 +33115,69 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-agentic-resources/skills/non-coding/cross-domain/handoff-approval-workflow/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Handoff / Approval Workflow",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/non-coding/cross-domain/handoff-approval-workflow",
+      "description": "Design a handoff or approval workflow that does not stall. Use this skill to \"design an approval process\", \"work keeps getting stuck in review\", \"who signs off on this\", \"reduce approval bottlenecks\", \"define the handoff between teams\", or when you need entry criteria per stage, one accountable approver instead of a committee, a stated timeout with a default action, a rework path that does not restart the whole chain, and an audit trail. Domain-agnostic — serves editorial review, procurement sign-off, change approval, clinical or legal review and cross-team delivery handoffs.",
+      "techniques": [],
+      "keywords": [
+        "approval-workflow",
+        "handoff",
+        "sign-off",
+        "bottlenecks",
+        "accountability",
+        "cross-domain"
+      ],
+      "difficulty": "",
+      "updated": "2026-09-22",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/skills/non-coding/cross-domain/intake-triage-pattern/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Intake Triage Pattern",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/non-coding/cross-domain/intake-triage-pattern",
+      "description": "Design an intake and triage system for incoming requests of any kind. Use this skill to \"set up an intake process\", \"triage incoming requests\", \"stop things arriving by DM\", \"we have no idea what's in the queue\", \"route requests to the right person\", or when you need a single front door, required fields that make a request actionable, a small closed set of severity or priority levels with observable definitions, explicit routing rules, a stated service level per level, and a reject-or-return path. Domain-agnostic — serves support queues, internal service desks, legal and security review requests, editorial submissions and research intake.",
+      "techniques": [],
+      "keywords": [
+        "intake",
+        "triage",
+        "routing",
+        "prioritization",
+        "service-levels",
+        "cross-domain"
+      ],
+      "difficulty": "",
+      "updated": "2026-09-22",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/skills/non-coding/cross-domain/quality-rubric-template/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Quality Rubric Template",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/non-coding/cross-domain/quality-rubric-template",
+      "description": "Build a scoring rubric that two independent assessors apply the same way. Use this skill to \"make a rubric\", \"score submissions consistently\", \"define what good looks like\", \"our reviewers disagree\", \"turn this checklist into a score\", or when you need weighted criteria with behavioural anchors, an explicit insufficient-evidence verdict, load-bearing minimums that cap the total, and an inter-rater agreement check. Domain-agnostic — the same structure serves hiring scorecards, vendor selection, submission grading, document review and audit findings.",
+      "techniques": [],
+      "keywords": [
+        "rubric",
+        "scoring",
+        "behavioural-anchors",
+        "inter-rater-agreement",
+        "evaluation",
+        "cross-domain"
+      ],
+      "difficulty": "",
+      "updated": "2026-09-22",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-agentic-resources/skills/non-coding/education/assessment-rubric-builder/SKILL.md",
       "filename": "SKILL.md",
       "title": "Assessment Rubric Builder",
@@ -49640,6 +49703,36 @@
       "related_prompts": [
         "domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md",
         "domain-business-strategy/go-to-market/workflow_cs_account_health.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/go-to-market/workflow_win_loss_analysis.md",
+      "filename": "workflow_win_loss_analysis.md",
+      "title": "Win/Loss Analysis — Interviews With the Buyer, Not the Seller's Account of Them",
+      "domain": "business-strategy",
+      "category": "business-strategy/go-to-market",
+      "description": "Run win/loss analysis that produces decisions: buyers interviewed by someone who was not on the deal, wins interviewed as rigorously as losses, the stated reason separated from the deciding reason, CRM loss codes treated as hypotheses rather than data, findings aggregated before action, and routing to whoever can actually fix each cause.",
+      "techniques": [
+        "RT-09",
+        "RT-05",
+        "CM-01",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "win-loss",
+        "sales-effectiveness",
+        "competitive-intelligence",
+        "buyer-research",
+        "go-to-market"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md",
+        "domain-business-strategy/research/research_competitive_landscape.md",
+        "domain-product-management/prompts/product_competitor_feature_teardown.md"
       ],
       "has_frontmatter": true
     },
@@ -71660,6 +71753,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-finance/risk-management/finance_business_insurance_coverage_review.md",
+      "filename": "finance_business_insurance_coverage_review.md",
+      "title": "Business Insurance Coverage Review — Exposures First, Then the Gaps Between Policies",
+      "domain": "finance",
+      "category": "finance/risk-management",
+      "description": "Review commercial insurance against actual exposures: an exposure inventory built before any policy is opened, coverage mapped exposure by exposure, the gaps between policies where claims are declined, limits tested against a realistic worst case, exclusions and conditions read for the ones that void cover, and a retained-risk statement. Refuses reviews that start from the policy schedule and reviews that report limits without testing them.",
+      "techniques": [
+        "RT-05",
+        "CM-02",
+        "QA-04",
+        "QA-18",
+        "OC-03"
+      ],
+      "keywords": [
+        "insurance",
+        "commercial-lines",
+        "coverage-gaps",
+        "risk-transfer",
+        "retained-risk",
+        "small-business"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-risk/risk_appetite_statement.md",
+        "domain-risk/risk_business_continuity_plan.md",
+        "domain-finance/personal-finance-planning/finance_insurance_needs_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-finance/risk-management/finance_counterparty_risk_assessment.md",
       "filename": "finance_counterparty_risk_assessment.md",
       "title": "Counterparty / Credit-Exposure Assessment — Concentration and Netting",
@@ -85151,6 +85275,276 @@
         "domain-frontend-development/design-direction/frontend_look_and_feel_hunt.md",
         "domain-hr-management/performance-reviews/hr_calibration_facilitator.md",
         "domain-prompt-engineering/evaluation/correctness_eval_design_prompt.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/hiring/hr_interview_loop_design.md",
+      "filename": "hr_interview_loop_design.md",
+      "title": "Interview Loop Design — Signal Per Stage, No Redundancy, Bounded Candidate Cost",
+      "domain": "hr-management",
+      "category": "hr-management/hiring",
+      "description": "Design a complete interview loop: which signal each stage uniquely produces, who owns it, what it costs the candidate, where the decision points are, and how the debrief resolves disagreement. Refuses loops where two stages test the same thing, where a stage has no owner, or where total candidate time is unbounded.",
+      "techniques": [
+        "ST-02",
+        "CM-02",
+        "CM-03",
+        "QA-08",
+        "OC-03"
+      ],
+      "keywords": [
+        "hiring",
+        "interview-process",
+        "signal-design",
+        "candidate-experience",
+        "debrief"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_job_description_writer.md",
+        "domain-hr-management/hiring/hr_structured_scorecard.md",
+        "domain-hr-management/hiring/hr_hiring_screen_challenge_designer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/hiring/hr_job_description_writer.md",
+      "filename": "hr_job_description_writer.md",
+      "title": "Job Description Writer — Outcome-Framed, Requirement-Audited, Legally Careful",
+      "domain": "hr-management",
+      "category": "hr-management/hiring",
+      "description": "Write a job description built from the outcomes the hire must deliver rather than a list of duties: a scoped set of first-year outcomes, requirements audited for whether each is genuinely necessary, an honest description of the work's hard parts, compensation disclosure, and inclusive language checks. Refuses to produce a requirement list that has not been justified one line at a time.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "CM-02",
+        "QA-04",
+        "NE-09"
+      ],
+      "keywords": [
+        "hiring",
+        "job-description",
+        "role-scoping",
+        "inclusive-language",
+        "pay-transparency"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_interview_loop_design.md",
+        "domain-hr-management/hiring/hr_structured_scorecard.md",
+        "domain-hr-management/performance-reviews/hr_performance_review_meta_prompt.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/hiring/hr_reference_check_guide.md",
+      "filename": "hr_reference_check_guide.md",
+      "title": "Reference Check Guide — Targeted at the Open Question, Not a Formality",
+      "domain": "hr-management",
+      "category": "hr-management/hiring",
+      "description": "Run a reference check that resolves the loop's remaining uncertainty: the specific open question carried forward from the debrief, referee selection that includes someone who managed the candidate, questions that invite calibration rather than endorsement, and a written record. Refuses generic reference calls and backchannel enquiries the candidate has not consented to.",
+      "techniques": [
+        "ST-02",
+        "CM-02",
+        "RT-05",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "hiring",
+        "reference-check",
+        "due-diligence",
+        "consent",
+        "evidence-based"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_interview_loop_design.md",
+        "domain-hr-management/hiring/hr_structured_scorecard.md",
+        "domain-hr-management/performance-reviews/hr_reviewer_approach_guide.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/hiring/hr_sourcing_outreach.md",
+      "filename": "hr_sourcing_outreach.md",
+      "title": "Sourcing Outreach — Specific, Honest, and Easy to Decline",
+      "domain": "hr-management",
+      "category": "hr-management/hiring",
+      "description": "Write outreach to a passive candidate: the specific reason you approached this person, what the role would give them that their current one does not, compensation stated up front, and an explicit easy decline. Refuses templated flattery, undisclosed ranges, and multi-touch sequences that ignore a no.",
+      "techniques": [
+        "CM-01",
+        "ST-03",
+        "NE-23",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "hiring",
+        "sourcing",
+        "outreach",
+        "passive-candidates",
+        "candidate-experience"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_job_description_writer.md",
+        "domain-hr-management/hiring/hr_interview_loop_design.md",
+        "domain-hr-management/people-ops/hr_compensation_banding.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/hiring/hr_structured_scorecard.md",
+      "filename": "hr_structured_scorecard.md",
+      "title": "Structured Hiring Scorecard — Behaviourally Anchored, Independently Submitted",
+      "domain": "hr-management",
+      "category": "hr-management/hiring",
+      "description": "Build the scoring instrument interviewers fill in: one scorecard per stage covering only that stage's attributes, behaviourally anchored levels, a required evidence field per rating, an explicit insufficient-evidence option, and a hire recommendation separated from the numeric scores. Refuses scorecards with unanchored numeric scales or a single overall impression field.",
+      "techniques": [
+        "ST-03",
+        "CM-02",
+        "QA-04",
+        "QA-18",
+        "OC-03"
+      ],
+      "keywords": [
+        "hiring",
+        "scorecard",
+        "behavioural-anchors",
+        "evidence-based",
+        "anti-bias"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_interview_loop_design.md",
+        "domain-hr-management/hiring/hr_job_description_writer.md",
+        "domain-hr-management/performance-reviews/hr_performance_review_meta_prompt.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/onboarding/hr_onboarding_thirty_sixty_ninety.md",
+      "filename": "hr_onboarding_thirty_sixty_ninety.md",
+      "title": "Employee Onboarding 30/60/90 — Derived from the Role's Outcomes, With Named Owners",
+      "domain": "hr-management",
+      "category": "hr-management/onboarding",
+      "description": "Build a 30/60/90 plan for a new employee from the outcomes the role was hired against: a first-week access and context checklist, staged deliverables with observable completion, a named owner for every commitment made to the new hire, and honest checkpoints that can conclude the hire is not working. Refuses plans where the manager's obligations are unnamed or where day 90 has no decision.",
+      "techniques": [
+        "ST-02",
+        "CM-02",
+        "QA-08",
+        "OC-03",
+        "DD-07"
+      ],
+      "keywords": [
+        "onboarding",
+        "thirty-sixty-ninety",
+        "ramp-up",
+        "manager-obligations",
+        "new-hire"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_job_description_writer.md",
+        "domain-hr-management/performance-reviews/hr_reviewer_approach_guide.md",
+        "domain-hr-management/people-ops/hr_performance_improvement_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/people-ops/hr_compensation_banding.md",
+      "filename": "hr_compensation_banding.md",
+      "title": "Compensation Banding — Levels, Ranges, and a Stated Rule for Movement",
+      "domain": "hr-management",
+      "category": "hr-management/people-ops",
+      "description": "Design a compensation band structure: levels defined by scope rather than tenure, ranges with a stated market reference and percentile target, overlap between adjacent bands, a written rule for where a person sits and what moves them, and a compression and equity audit. Refuses bands with no stated market source or no movement rule.",
+      "techniques": [
+        "ST-02",
+        "CM-02",
+        "RT-05",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "compensation",
+        "levelling",
+        "pay-bands",
+        "pay-equity",
+        "pay-transparency"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_job_description_writer.md",
+        "domain-hr-management/performance-reviews/hr_calibration_facilitator.md",
+        "domain-hr-management/people-ops/hr_exit_interview.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/people-ops/hr_exit_interview.md",
+      "filename": "hr_exit_interview.md",
+      "title": "Exit Interview — Run by Someone Neutral, Aggregated Before Acted On",
+      "domain": "hr-management",
+      "category": "hr-management/people-ops",
+      "description": "Run and use an exit interview: separating regretted from non-regretted attrition, an interviewer who is not the departing person's manager, questions that surface the decision's real trigger and its earlier reversible moment, confidentiality stated honestly, and aggregation across leavers before anything is acted on. Refuses manager-run exits and single-leaver policy changes.",
+      "techniques": [
+        "ST-02",
+        "CM-01",
+        "RT-09",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "attrition",
+        "exit-interview",
+        "retention",
+        "people-analytics",
+        "confidentiality"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-hr-management/people-ops/hr_compensation_banding.md",
+        "domain-hr-management/performance-reviews/hr_calibration_facilitator.md",
+        "domain-hr-management/onboarding/hr_onboarding_thirty_sixty_ninety.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/people-ops/hr_performance_improvement_plan.md",
+      "filename": "hr_performance_improvement_plan.md",
+      "title": "Performance Improvement Plan Author — Genuinely Achievable, Support Named, Outcome Honest",
+      "domain": "hr-management",
+      "category": "hr-management/people-ops",
+      "description": "Author a PIP that a person could actually pass: a specific evidenced gap, achievable targets with observable measures, the support the organisation commits to provide with named owners, a realistic timeframe, and an honest statement of the consequence. Refuses PIPs used as pre-documented exits, PIPs citing unevidenced or trait-based concerns, and PIPs with no organisational obligations.",
+      "techniques": [
+        "ST-02",
+        "CM-02",
+        "QA-04",
+        "QA-18",
+        "DD-07"
+      ],
+      "keywords": [
+        "performance-management",
+        "pip",
+        "evidence-based",
+        "manager-obligations",
+        "legally-careful"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-hr-management/performance-reviews/hr_manager_writing_employee_review.md",
+        "domain-hr-management/performance-reviews/hr_reviewer_approach_guide.md",
+        "domain-hr-management/onboarding/hr_onboarding_thirty_sixty_ninety.md"
       ],
       "has_frontmatter": true
     },
@@ -105568,6 +105962,36 @@
       }
     },
     {
+      "path": "domain-negotiation/contexts/negotiation_hiring_offer_employer_side.md",
+      "filename": "negotiation_hiring_offer_employer_side.md",
+      "title": "Hiring Offer — Employer Side",
+      "domain": "negotiation",
+      "category": "negotiation/contexts",
+      "description": "Negotiate a hiring offer from the employer's seat: the band position decided before the call, the package levers ranked by cost-to-you against value-to-them, an explicit walk-away, the internal-equity constraint that outranks winning this candidate, handling a competing offer without bidding against an unverifiable number, and a close that does not start the relationship with resentment.",
+      "techniques": [
+        "CM-02",
+        "MP-10",
+        "RT-05",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "hiring",
+        "offer-negotiation",
+        "employer-side",
+        "compensation",
+        "internal-equity"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-negotiation/contexts/negotiation_salary_raise_promotion.md",
+        "domain-negotiation/preparation/negotiation_package_trade_design.md",
+        "domain-hr-management/people-ops/hr_compensation_banding.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-negotiation/contexts/negotiation_internal_budget_headcount.md",
       "filename": "negotiation_internal_budget_headcount.md",
       "title": "Internal Resource Negotiation — Budget and Headcount Against Peers With Equal Claim",
@@ -117852,6 +118276,66 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-product-management/prompts/product_feature_sunset_decision.md",
+      "filename": "product_feature_sunset_decision.md",
+      "title": "Feature Sunset Decision — Evidence, Affected Users, Migration Path, and a Reversibility Check",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Decide whether to remove a feature and how: usage evidence with the long-tail dependants identified, true carrying cost including what the feature blocks, contractual and accessibility obligations checked, a migration path for every affected segment, a communication timeline, and a stated point of no return. Refuses sunsets based on aggregate usage alone or with no migration path for dependent users.",
+      "techniques": [
+        "RT-05",
+        "CM-02",
+        "QA-04",
+        "QA-08",
+        "OC-03"
+      ],
+      "keywords": [
+        "deprecation",
+        "sunset",
+        "product-lifecycle",
+        "migration",
+        "reversibility"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-product-management/prompts/product_north_star_metric_definition.md",
+        "domain-decision-making/decisioning_opportunity_sunk_cost_audit.md",
+        "domain-product-management/prompts/product_launch_readiness_gate.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_launch_readiness_gate.md",
+      "filename": "product_launch_readiness_gate.md",
+      "title": "Launch Readiness Gate — Cross-Functional, With a Real No Available",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Run the cross-functional gate before a product launch: readiness assessed per function with a named owner and an evidence requirement, blockers separated from risks, a go/no-go/go-with-conditions decision with a named decider, rollback criteria fixed in advance, and the first-week watch list. Refuses gates where every function self-reports green with no evidence and gates with no available no.",
+      "techniques": [
+        "ST-02",
+        "QA-08",
+        "CM-02",
+        "DD-07",
+        "OC-03"
+      ],
+      "keywords": [
+        "launch",
+        "go-no-go",
+        "readiness",
+        "cross-functional",
+        "rollback"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-product-management/prompts/product_north_star_metric_definition.md",
+        "domain-product-management/prompts/product_feature_sunset_decision.md",
+        "domain-engineering-workflows/workflows/workflow_definition_of_done_builder.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-product-management/prompts/product_market_size_calculator.md",
       "filename": "product_market_size_calculator.md",
       "title": "Market Size (TAM/SAM/SOM) — Rapid or Comprehensive Mode",
@@ -117879,6 +118363,66 @@
         "domain-product-management/prompts/product_create_prd.md",
         "domain-business-strategy/research/research_competitive_landscape.md",
         "domain-software-engineering/analysis/business/business_model_canvas_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_north_star_metric_definition.md",
+      "filename": "product_north_star_metric_definition.md",
+      "title": "North-Star Metric Definition — One Number, Its Inputs, and What It Will Corrupt",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Define a product north-star metric: a candidate set tested against five criteria, the input metrics that decompose it, a counter-metric for the behaviour it will distort, an explicit statement of what it excludes, and the instrumentation needed to compute it. Refuses vanity metrics, metrics that cannot be moved by the product team, and metrics shipped without a counter-metric.",
+      "techniques": [
+        "CM-02",
+        "RT-05",
+        "QA-04",
+        "QA-18",
+        "OC-03"
+      ],
+      "keywords": [
+        "metrics",
+        "north-star",
+        "product-analytics",
+        "counter-metrics",
+        "goodharts-law"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-product-management/prompts/product_opportunity_solution_tree.md",
+        "domain-AI-ML/problem-framing-scoping/mlframe_success_metric_selection.md",
+        "domain-business-strategy/startup/solo_dev_metrics_dashboard.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_opportunity_solution_tree.md",
+      "filename": "product_opportunity_solution_tree.md",
+      "title": "Opportunity Solution Tree — Outcome to Opportunities to Solutions, With the Tree Pruned",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Build an opportunity solution tree from a single product outcome: opportunities expressed as customer needs rather than feature requests, siblings checked for mutual exclusivity, solutions generated only for a chosen opportunity, and explicit pruning with recorded reasons. Refuses trees whose opportunities are disguised solutions and trees that branch everywhere at once.",
+      "techniques": [
+        "ST-02",
+        "CM-03",
+        "RT-05",
+        "NE-09",
+        "OC-03"
+      ],
+      "keywords": [
+        "product-discovery",
+        "opportunity-mapping",
+        "outcome-driven",
+        "continuous-discovery",
+        "prioritization"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-product-management/prompts/product_north_star_metric_definition.md",
+        "domain-idea-to-product/stage-2-problem-validation/validation_customer_discovery_interview_protocol.md",
+        "domain-product-management/prompts/product_create_prd.md"
       ],
       "has_frontmatter": true
     },
@@ -117970,6 +118514,36 @@
         "domain-product-management/prompts/product_create_prd.md",
         "domain-product-management/prompts/product_delivery_sprint_planner.md",
         "domain-prompt-engineering/evaluation/correctness_prompt_specification_audit.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_user_story_splitting.md",
+      "filename": "product_user_story_splitting.md",
+      "title": "User Story Splitting — Vertical Slices That Each Deliver Value",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Split an oversized user story into slices that are each independently valuable, testable and shippable: nine named splitting patterns applied in order of preference, a vertical-slice check that rejects layer-based splits, acceptance criteria per slice, and a stated first slice that could ship alone. Refuses horizontal splits by technical layer and slices whose value cannot be stated.",
+      "techniques": [
+        "ST-02",
+        "CM-03",
+        "NE-09",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "user-stories",
+        "story-splitting",
+        "vertical-slice",
+        "backlog-refinement",
+        "acceptance-criteria"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-idea-to-product/stage-7-prd-authoring/prd_to_epic_feature_decomposer.md",
+        "domain-product-management/prompts/product_create_prd.md",
+        "domain-engineering-workflows/workflows/workflow_definition_of_done_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -142457,6 +143031,66 @@
           "verify"
         ]
       }
+    },
+    {
+      "path": "domain-risk/risk_business_continuity_plan.md",
+      "filename": "risk_business_continuity_plan.md",
+      "title": "Business Continuity Plan — Recovery Objectives, Tested Procedures, and an Honest Gap List",
+      "domain": "risk",
+      "category": "risk",
+      "description": "Build a continuity plan around the functions that must keep running: business impact analysis producing a recovery time and data-loss objective per function, the dependencies each one needs, procedures written for someone working in degraded conditions, activation authority and succession, a communications plan, and a test schedule with the untested and unmet objectives listed openly. Refuses plans with untested procedures presented as capability.",
+      "techniques": [
+        "ST-02",
+        "CM-02",
+        "QA-08",
+        "RT-10",
+        "OC-03"
+      ],
+      "keywords": [
+        "business-continuity",
+        "disaster-recovery",
+        "rto-rpo",
+        "resilience",
+        "succession"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-risk/risk_dependency_chain_audit.md",
+        "domain-risk/risk_appetite_statement.md",
+        "domain-risk/risk_after_action_review.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-risk/risk_appetite_statement.md",
+      "filename": "risk_appetite_statement.md",
+      "title": "Risk Appetite Statement — The Thresholds the Register and the Heat Map Presuppose",
+      "domain": "risk",
+      "category": "risk",
+      "description": "Write the risk appetite statement the other risk instruments already assume: appetite stated per risk category rather than as one sentence, quantified tolerance limits where a number exists, the trade-off each appetite implies stated out loud, escalation triggers when a limit is breached, and a review cadence. Refuses single-sentence appetites, appetites with no stated trade-off, and limits nobody monitors.",
+      "techniques": [
+        "CM-02",
+        "CM-09",
+        "RT-05",
+        "QA-08",
+        "OC-03"
+      ],
+      "keywords": [
+        "risk-appetite",
+        "risk-tolerance",
+        "governance",
+        "escalation",
+        "thresholds"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-22",
+      "related_prompts": [
+        "domain-risk/risk_register_builder.md",
+        "domain-risk/risk_heat_map.md",
+        "domain-decision-making/decisioning_escalation_decision_tree.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-risk/risk_after_action_review.md",

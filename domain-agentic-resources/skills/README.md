@@ -1,17 +1,17 @@
-<!-- INVENTORY_COUNTS: {"categories": {"accessibility": 2, "backend-development": 13, "blockchain-web3": 16, "business": 3, "cicd-automation": 4, "cloud-infrastructure": 14, "content-creation": 5, "creative": 2, "data-engineering": 10, "developer-tools": 35, "devops": 3, "document-processing": 7, "education": 2, "financial-records": 4, "framework-migration": 4, "game-development": 2, "healthcare": 11, "languages": 18, "llm-application-dev": 10, "marketing": 41, "ml-ai": 4, "mobile-development": 36, "observability": 5, "other": 2, "payments": 4, "research": 2, "security": 36, "seo-marketing": 4, "skills": 3, "testing-qa": 18, "web-development": 8, "writing": 2}, "date": "2026-08-24", "total": 330, "type": "skills"} -->
+<!-- INVENTORY_COUNTS: {"categories": {"accessibility": 2, "backend-development": 13, "blockchain-web3": 16, "business": 3, "cicd-automation": 4, "cloud-infrastructure": 14, "content-creation": 5, "creative": 2, "cross-domain": 3, "data-engineering": 10, "developer-tools": 35, "devops": 3, "document-processing": 7, "education": 2, "financial-records": 4, "framework-migration": 4, "game-development": 2, "healthcare": 11, "languages": 18, "llm-application-dev": 10, "marketing": 41, "ml-ai": 4, "mobile-development": 36, "observability": 5, "other": 2, "payments": 4, "research": 2, "security": 36, "seo-marketing": 4, "skills": 3, "testing-qa": 18, "web-development": 8, "writing": 2}, "date": "2026-09-22", "total": 333, "type": "skills"} -->
 
 # Claude Code Skills Index
 
-**Comprehensive index of 330 Claude Code skills organized by domain.**
+**Comprehensive index of 333 Claude Code skills organized by domain.**
 
 ## Overview
 
-This directory contains **330 specialized skills** for Claude Code. Skills are modular knowledge packages that use progressive disclosure - loading detailed information only when needed to optimize context usage.
+This directory contains **333 specialized skills** for Claude Code. Skills are modular knowledge packages that use progressive disclosure - loading detailed information only when needed to optimize context usage.
 
 ### Quick Stats
 
-- **Total Skills:** 330
-- **Categories:** 32
+- **Total Skills:** 333
+- **Categories:** 33
 
 ### Recently Added (2026-05-05)
 
@@ -45,6 +45,7 @@ This architecture minimizes context window usage while maximizing capability.
 - [Cloud Infrastructure](#cloud-infrastructure) (14 skills)
 - [Content Creation](#content-creation) (5 skills)
 - [Creative](#creative) (2 skills)
+- [Cross Domain](#cross-domain) (3 skills)
 - [Data Engineering](#data-engineering) (10 skills)
 - [Developer Tools](#developer-tools) (35 skills)
 - [Devops](#devops) (3 skills)
