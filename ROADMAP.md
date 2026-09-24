@@ -54,6 +54,11 @@ evaluation harness. The 120-case regression set is an internal tuning and
 regression corpus, not a benchmark. The package is not published to PyPI and
 the repository has no tags.
 
+**Content coverage** is planned separately. This file covers the product and
+the engine. [`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) records a
+repository-wide audit of subject-matter gaps and sequences the fix into waves.
+Its status is proposed.
+
 ---
 
 ## Next
