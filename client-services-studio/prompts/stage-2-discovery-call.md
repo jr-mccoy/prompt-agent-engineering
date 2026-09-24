@@ -15,7 +15,7 @@ finished, however pleasant it was.
 
 ## Orchestrated resource
 
-**Run `domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md`
+**Run `domain-sales-customer/sales/sales_discovery_call_preparation.md`
 for the call itself.** It owns preparation, structure and conduct. This stage adds
 only what the pipeline needs on top: the capture format, and the mapping from
 questions to Gate A fields.

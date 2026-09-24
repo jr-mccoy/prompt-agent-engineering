@@ -19,7 +19,7 @@ updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/sales/sales_deal_qualification_scorecard.md
   - domain-sales-customer/sales/sales_mutual_close_plan.md
-  - domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md
+  - domain-sales-customer/sales/sales_pipeline_risk_assessment.md
 ---
 
 # Forecast Commit Review
@@ -36,7 +36,7 @@ take it out.
 - End of quarter, when pressure to pull deals forward is highest.
 - **Not this prompt if** you need to decide where to spend effort across the
   whole pipeline — stalled deals, single-threading, stage hygiene — use
-  `domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md`.
+  `domain-sales-customer/sales/sales_pipeline_risk_assessment.md`.
   To grade whether one deal is qualified at all, use
   `sales_deal_qualification_scorecard.md`. For forecasting as a general
   calibration skill, see `domain-reasoning-craft/forecasting/forecasting_calibration_self_audit.md`.
@@ -198,5 +198,5 @@ CFO meeting — I'd like you on that call the week of 10-06."
   qualification verdict behind each Best Case deal.
 - `domain-sales-customer/sales/sales_mutual_close_plan.md` — gate status is the
   swing fact for most deals.
-- `domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md`
+- `domain-sales-customer/sales/sales_pipeline_risk_assessment.md`
   — whole-pipeline triage and effort allocation.

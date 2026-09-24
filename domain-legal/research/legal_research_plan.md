@@ -1,6 +1,6 @@
 ---
 title: "Legal Research Plan — Map the Authorities Before Opening Westlaw or Lexis"
-category: specialized-fields/legal
+category: legal/research
 description: "Plan legal research before paid-database time: analyze jurisdiction and the relevant courts, identify governing statutes and regulations, separate controlling from persuasive case law, locate secondary sources and agency interpretations, check for recent amendments and pending legislation, and build a sequenced search strategy with starting citations and search terms. Counters the failure of expensive, unstructured database searching that misses controlling authority."
 techniques:
   - ST-01
@@ -17,7 +17,7 @@ tags:
   - case-law
   - jurisdiction
   - search-strategy
-updated: "2026-06-18"
+updated: "2026-09-24"
 reasoning:
   styles: [analytic, systematic, hierarchical, decomposition]
   stakes: high
@@ -32,7 +32,7 @@ reasoning:
 related_prompts:
   - domain-research-academic/research_literature_review_plan.md
   - domain-business-strategy/research/technical_due_diligence_plan.md
-  - domain-specialized-fields/ip/patent_landscape_scan.md
+  - domain-legal/ip/legal_patent_landscape_scan.md
 ---
 
 # Legal Research Plan

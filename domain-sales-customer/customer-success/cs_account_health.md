@@ -1,6 +1,6 @@
 ---
 title: "Account Health Assessment & Risk Identification"
-category: business-strategy/go-to-market
+category: sales-customer/customer-success
 description: "Assess a customer account's health from usage, support, and relationship signals, classify churn risk, and produce a prioritized retention play with owners and a renewal timeline."
 techniques:
   - ST-01
@@ -15,10 +15,10 @@ tags:
   - churn-risk
   - retention
   - renewal
-updated: "2026-08-28"
+updated: "2026-09-24"
 related_prompts:
-  - domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md
-  - domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md
+  - domain-sales-customer/customer-success/cs_onboarding_plan.md
+  - domain-sales-customer/sales/sales_pipeline_risk_assessment.md
 ---
 
 # Account Health Assessment & Risk Identification

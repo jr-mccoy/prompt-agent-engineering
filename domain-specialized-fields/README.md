@@ -1,9 +1,9 @@
 # Specialized Professional Fields: Comprehensive Guide
 
 > Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
-> This domain is a **guide hub** for professional fields with specialized requirements (liability, licensing, jurisdiction), not a prompt library. It holds two prompts of its own; the field-specific writing prompts live in [`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/) (24 `domain_writing_*.md` files).
+> This domain is a **guide hub** for professional fields with specialized requirements (liability, licensing, jurisdiction), not a prompt library. Its two earlier prompts moved to `domain-legal/` in coverage Wave 2; the field-specific writing prompts live in [`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/) (24 `domain_writing_*.md` files).
 >
-> **What is actually here:** [`ip/patent_landscape_scan.md`](ip/patent_landscape_scan.md) and [`legal/legal_research_plan.md`](legal/legal_research_plan.md), plus the templates and guidance below. Both prompts are candidates to move to `domain-legal/` in coverage Wave 2. A rebuild around real estate, trades and professional-services work is planned there too — see [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md).
+> **Moved (coverage Wave 2):** `ip/patent_landscape_scan.md` → [`domain-legal/ip/legal_patent_landscape_scan.md`](../domain-legal/ip/legal_patent_landscape_scan.md); `legal/legal_research_plan.md` → [`domain-legal/research/legal_research_plan.md`](../domain-legal/research/legal_research_plan.md). This domain is being rebuilt around real-estate and trades work — see [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md).
 
 ---
 
@@ -183,12 +183,12 @@ Comprehensive domain-specific prompt engineering guides:
 
 ## Existing Prompts in This Repository
 
-**In this directory (2):**
+**Moved to `domain-legal/` (coverage Wave 2):**
 
 | Prompt | Field | Purpose |
 |--------|-------|---------|
-| [`ip/patent_landscape_scan.md`](ip/patent_landscape_scan.md) | Intellectual property | Map a patent landscape around a technology area |
-| [`legal/legal_research_plan.md`](legal/legal_research_plan.md) | Legal | Plan a legal research task before drafting |
+| [`domain-legal/ip/legal_patent_landscape_scan.md`](../domain-legal/ip/legal_patent_landscape_scan.md) | Intellectual property | Map a patent landscape around a technology area |
+| [`domain-legal/research/legal_research_plan.md`](../domain-legal/research/legal_research_plan.md) | Legal | Plan a legal research task before drafting |
 
 **Field-specific writing prompts (24)** live in [`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/) as `domain_writing_{field}.md`, e.g. `domain_writing_attorney_discovery.md`, `domain_writing_cpa_tax_strategy.md`, `domain_writing_contractor_remodel.md`, `domain_writing_hvac_estimate.md`, `domain_writing_realtor_listing.md`, `domain_writing_veterinarian_surgery.md`, `domain_writing_wedding_planner.md`. An earlier version of this README listed `professional_*.md` files; those never existed.
 

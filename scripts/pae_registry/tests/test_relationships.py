@@ -19,7 +19,7 @@ class ReorgParsingTests(unittest.TestCase):
         predicates = {}
         for relation in self.model.relations:
             predicates[relation.predicate] = predicates.get(relation.predicate, 0) + 1
-        self.assertEqual(len(self.model.moves), 236)
+        self.assertEqual(len(self.model.moves), 243)
         self.assertEqual(predicates.get("superseded-by"), 43)
         self.assertEqual(predicates.get("merged-into"), 7)
         self.assertEqual(predicates.get("split-into"), 1)

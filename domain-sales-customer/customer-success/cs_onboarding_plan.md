@@ -1,6 +1,6 @@
 ---
 title: "Onboarding Plan & 90-Day Success Roadmap"
-category: business-strategy/go-to-market
+category: sales-customer/customer-success
 description: "Turn a signed account's goals and constraints into a staged 90-day onboarding plan with milestones, success criteria, stakeholder roles, and escalation triggers."
 techniques:
   - ST-01
@@ -15,9 +15,9 @@ tags:
   - 90-day-plan
   - adoption
   - milestones
-updated: "2026-08-28"
+updated: "2026-09-24"
 related_prompts:
-  - domain-business-strategy/go-to-market/workflow_cs_account_health.md
+  - domain-sales-customer/customer-success/cs_account_health.md
 ---
 
 # Onboarding Plan & 90-Day Success Roadmap

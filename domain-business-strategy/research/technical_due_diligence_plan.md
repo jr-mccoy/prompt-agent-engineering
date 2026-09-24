@@ -31,7 +31,7 @@ reasoning:
   mode: [audit, diagnose, plan]
 related_prompts:
   - domain-business-strategy/research/competitor_teardown.md
-  - domain-specialized-fields/ip/patent_landscape_scan.md
+  - domain-legal/ip/legal_patent_landscape_scan.md
   - domain-business-strategy/research/research_company_deep_dive.md
 ---
 
@@ -47,7 +47,7 @@ related_prompts:
 
 **When NOT to use:**
 - The deal is non-technical and technology is incidental.
-- You need IP landscape analysis specifically — use `patent_landscape_scan.md` for FTO/whitespace; this plan covers IP only at the diligence level.
+- You need IP landscape analysis specifically — use `domain-legal/ip/legal_patent_landscape_scan.md` for FTO/whitespace; this plan covers IP only at the diligence level.
 - You need a market or competitive read rather than a technical audit — use `competitor_teardown.md` or `research_company_deep_dive.md`.
 
 **Audience:** Investors, corp-dev and M&A leads, CTOs and engineering leaders advising on deals, procurement leads, and founders evaluating a technical partner or acquisition.
@@ -93,7 +93,7 @@ related_prompts:
 2. **Plan the technology and architecture audit.** Examine architecture (coupling, scalability headroom, single points of failure), technical debt (where, how deep, what it blocks), and security posture (auth, data handling, known vulnerabilities, audit history). Evidence to demand: architecture docs, a code/repo walkthrough, recent security assessments, scalability test results.
 3. **Plan the team audit.** Map key people, their roles, and knowledge concentration. Identify who holds undocumented critical knowledge, retention/flight risk (vesting, comp, tenure, sentiment), and the bus-factor for each critical system. Evidence: org chart, contribution history (commit/ownership data), retention terms, candid 1:1s where access allows.
 4. **Plan the code quality and operations audit.** Assess test coverage, CI/CD and deploy frequency, incident history and MTTR, code review practice, and dependency health. Evidence: coverage reports, deploy logs, incident postmortems, repo metrics — not just a tour of the codebase.
-5. **Plan the IP audit.** Trace ownership: was code written by employees (assigned), contractors (assignment clause?), or carried from prior employers? Inventory open-source dependencies and their license obligations (copyleft exposure, attribution, distribution triggers). Identify any patent exposure (infringement risk; for offensive IP value, route to `patent_landscape_scan.md`). Evidence: IP assignment agreements, contractor contracts, SBOM/license scan, OSS compliance records.
+5. **Plan the IP audit.** Trace ownership: was code written by employees (assigned), contractors (assignment clause?), or carried from prior employers? Inventory open-source dependencies and their license obligations (copyleft exposure, attribution, distribution triggers). Identify any patent exposure (infringement risk; for offensive IP value, route to `domain-legal/ip/legal_patent_landscape_scan.md`). Evidence: IP assignment agreements, contractor contracts, SBOM/license scan, OSS compliance records.
 6. **Plan the data audit.** Inventory data assets, classify PII/sensitive data, document retention and deletion practice, identify the legal basis for collection and use (consent, contract, legitimate interest), and map regulatory exposure (GDPR, CCPA, HIPAA, sector rules). Determine whether the data asset is legally usable after the transaction. Evidence: data maps, privacy policies, processing records, DPA inventory.
 7. **Plan the infrastructure audit.** Assess cloud architecture and spend, vendor lock-in (proprietary services, migration cost), single points of failure, disaster recovery and backups, and scaling cost curve. Evidence: cloud bills, infra-as-code, architecture diagrams, DR test records.
 8. **Score and prioritize findings.** For each material finding: likelihood, impact, and cost-and-time to remediate. Separate verified findings from represented-but-unverified and from unexaminable. Rank by risk-weighted severity.

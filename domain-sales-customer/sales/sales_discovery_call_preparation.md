@@ -1,6 +1,6 @@
 ---
 title: "Discovery Call Preparation from CRM Data"
-category: business-strategy/go-to-market
+category: sales-customer/sales
 description: "Turn CRM records and account research into a discovery-call plan: hypotheses to test, a question sequence, likely objections, and the qualification bar for a next step."
 techniques:
   - ST-01
@@ -15,9 +15,9 @@ tags:
   - qualification
   - crm
   - call-prep
-updated: "2026-08-28"
+updated: "2026-09-24"
 related_prompts:
-  - domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md
+  - domain-sales-customer/sales/sales_pipeline_risk_assessment.md
   - domain-business-strategy/go-to-market/research_person_background.md
 ---
 

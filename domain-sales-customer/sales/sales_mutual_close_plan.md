@@ -40,7 +40,7 @@ supposed to close.
   If you do not yet know who the economic buyer is or what the decision process
   is, you are not ready for a close plan: run
   `sales_deal_qualification_scorecard.md` first. Onboarding after signature
-  belongs to `domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md`.
+  belongs to `domain-sales-customer/customer-success/cs_onboarding_plan.md`.
 
 ## Inputs / Context
 

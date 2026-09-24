@@ -95,8 +95,10 @@ pre-freeze dry run is reproducible. After the freeze commit, `identity.tsv` is
 authoritative and the UID is never recomputed from a moved path.
 
 **The public ID may change** when a resource moves to a new semantic home. The
-repository has already executed 236 identity-preserving moves in one
-reorganization, and domain re-carving is an ongoing activity. Under a
+repository has already executed 243 identity-preserving moves: 236 in one
+reorganization and 7 in coverage Wave 2, the first after the identity ledger
+was frozen, each with an alias row in `aliases.tsv`. Domain re-carving is an
+ongoing activity. Under a
 single-identifier scheme a moved resource would keep a name that lies about where
 it lives, forever. Splitting the two lets the name be corrected without breaking
 identity. See [ADR-0010](../adr/0010-uid-and-public-id.md).

@@ -18,7 +18,8 @@ These are copies. The maintained originals live at the paths mirrored here;
 | Directory | Count | Used by |
 |---|---|---|
 | `domain-business-strategy/client-services/` | 8 | Stages 0, 1, 4 — offer, ICP, pricing model, value, retainer, capacity, productization, concentration |
-| `domain-business-strategy/go-to-market/` | 2 | Stages 1, 2 — background research, discovery-call preparation |
+| `domain-business-strategy/go-to-market/` | 1 | Stage 1 — background research |
+| `domain-sales-customer/sales/` | 1 | Stage 2 — discovery-call preparation (moved from `go-to-market/` in coverage Wave 2) |
 | `domain-finance/corporate-finance-fpa/` | 3 | Stages 0, 4, 9 — rate floor, subcontractor margin, engagement profitability |
 | `domain-finance/accounting-controllership/` | 3 | Stage 8 — invoice schedule, AR aging, collections ladder |
 | `domain-legal/contracts-transactional/` | 6 | Stages 5, 6 — SOW, clause redlines, risk heatmap, payment terms, termination economics, flow-down |

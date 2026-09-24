@@ -24,7 +24,7 @@ domain-business-strategy/
 ├── ambition-leverage/    # Leadership ambition and AI-leverage conversations
 ├── client-services/      # Running a practice that sells expertise
 ├── creator-economy/      # Newsletter, audience, platform choice, community, demand validation
-├── go-to-market/         # Marketing, sales, and customer-success execution
+├── go-to-market/         # Marketing execution (sales and CS moved to domain-sales-customer/)
 ├── research/             # Competitive and market intelligence
 ├── startup/              # Founder and solo-operator playbook
 └── README.md
@@ -36,10 +36,10 @@ domain-business-strategy/
 | `ambition-leverage/` | 5 | Leadership audit, experts-to-builders roadmap, expansion vs. savings brief, founder-bottleneck test, insight-to-action workflow |
 | `client-services/` | 8 | Offer definition and boundary, ideal client and disqualifiers, pricing-model selection, client value quantification, retainer design, capacity and utilization, productized offers, client concentration |
 | `creator-economy/` | 5 | Newsletter positioning and cadence, list growth, owned-vs-rented platform choice, community operations, pre-launch demand validation — selling expertise as *products*, the sibling of `client-services/` |
-| `go-to-market/` | 18 | Marketing playbook (10), campaign brief, content performance, sales discovery and pipeline risk, customer-success onboarding and account health, win/loss analysis, pre-meeting background research |
+| `go-to-market/` | 13 | Marketing playbook (10), campaign brief, content performance, pre-meeting background research. Sales discovery, pipeline risk, win/loss, CS onboarding and account health moved to [`domain-sales-customer/`](../domain-sales-customer/) in coverage Wave 2 (ADR-0043) |
 | `research/` | 9 | Competitor teardown, competitive landscape, company deep dive, industry trends, vendor and tool evaluation, technical due diligence, user-research synthesis, leader pulse |
 | `startup/` | 26 | Monetization (7), founder operations (3), positioning diagnostics (3), plus branding, naming, copy, story, and app-store assets (13) |
-| **Total** | **78** | |
+| **Total** | **73** | |
 
 ---
 

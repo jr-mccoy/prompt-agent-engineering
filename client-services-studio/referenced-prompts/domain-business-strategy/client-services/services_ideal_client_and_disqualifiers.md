@@ -186,4 +186,4 @@ tell you what to probe, and the probe result decides.
 - `services_offer_definition_and_boundary.md` — the entry conditions these rules test against
 - `services_client_concentration_risk_check.md` — the portfolio-level version of the concentration rule
 - `services_capacity_and_utilization_planner.md` — why a thin pipeline pressures you to override this
-- `../go-to-market/workflow_sales_discovery_call_preparation.md` — running the call once the lead passes
+- `../../domain-sales-customer/sales/sales_discovery_call_preparation.md` — running the call once the lead passes

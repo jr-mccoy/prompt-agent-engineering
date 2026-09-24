@@ -18,8 +18,8 @@ tags:
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md
-  - domain-business-strategy/go-to-market/workflow_cs_account_health.md
-  - domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md
+  - domain-sales-customer/customer-success/cs_account_health.md
+  - domain-sales-customer/customer-success/cs_onboarding_plan.md
 ---
 
 # Customer QBR Prep
@@ -35,7 +35,7 @@ roadmap tour.
 - Renewal is 2–3 quarters out and you need the value story on record early.
 - Adoption is uneven and you need the customer to make a resourcing decision.
 - **Not this prompt if** you need the internal diagnosis of the account's risk —
-  use `domain-business-strategy/go-to-market/workflow_cs_account_health.md` first
+  use `domain-sales-customer/customer-success/cs_account_health.md` first
   and feed its output in here. If renewal is inside 90 days and at risk, use
   `cs_renewal_risk_and_save_plan.md`. For your own company's internal quarterly
   review deck, see `domain-presentations/powerpoint_quarterly_business_review.md`.
@@ -185,9 +185,9 @@ to fuel prices — the depot comparison is the only answer, and it is correlatio
 
 ## Related Prompts
 
-- `domain-business-strategy/go-to-market/workflow_cs_account_health.md` — the
+- `domain-sales-customer/customer-success/cs_account_health.md` — the
   internal diagnosis to run before this.
-- `domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md`
+- `domain-sales-customer/customer-success/cs_onboarding_plan.md`
   — where the success criteria should have been set.
 - `domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md` — when
   the review shows renewal is at risk.

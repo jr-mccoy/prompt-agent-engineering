@@ -724,8 +724,8 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Translate a skill gap into a sequenced learning plan" → `learning_skill_gap_to_curriculum.md`
 
 ### Specialized-Fields Research Workflows (Legal / IP)
-- **Plan legal research before Westlaw/Lexis** → `domain-specialized-fields/legal/legal_research_plan.md`
-- **Patent landscape scan / IP whitespace analysis** → `domain-specialized-fields/ip/patent_landscape_scan.md`
+- **Plan legal research before Westlaw/Lexis** → `domain-legal/research/legal_research_plan.md`
+- **Patent landscape scan / IP whitespace analysis** → `domain-legal/ip/legal_patent_landscape_scan.md`
 
 ### Business-Strategy Research (Additions)
 - **Technical due diligence plan (acquisition / investment / procurement)** → `domain-business-strategy/research/technical_due_diligence_plan.md`
@@ -1434,7 +1434,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
   - Example: "This renewal is at risk" → `customer-success/cs_renewal_risk_and_save_plan.md`
   - Example: "Design a ticket severity and routing rubric" → `support/support_ticket_triage_and_routing.md`
   - Example: "Reply to an escalated customer" → `support/support_escalation_response_drafter.md`
-- **Boundary:** cold-email copy, sequences, collateral, lead scoring, cancel flows → `domain-agentic-resources/skills/marketing/`; the negotiation itself → `domain-negotiation/`; discovery-call prep, pipeline risk, win/loss, account health, CS onboarding still live in `domain-business-strategy/go-to-market/` (relocation is coverage Wave 2).
+- **Boundary:** cold-email copy, sequences, collateral, lead scoring, cancel flows → `domain-agentic-resources/skills/marketing/`; the negotiation itself → `domain-negotiation/`; discovery-call prep, pipeline risk, win/loss, account health and CS onboarding moved here from `go-to-market/` in coverage Wave 2 (`sales/sales_discovery_call_preparation.md`, `sales/sales_pipeline_risk_assessment.md`, `sales/sales_win_loss_analysis.md`, `customer-success/cs_account_health.md`, `customer-success/cs_onboarding_plan.md`).
 
 ### Data Analytics (`domain-data-analytics/`, ADR-0043)
 - **A business metric, query, dashboard or experiment readout** → `domain-data-analytics/` — see [README](../domain-data-analytics/README.md).
@@ -1958,8 +1958,8 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Layered reading list (foundations → frontier)" | `domain-learning/learning_reading_list_curator.md` |
 | "Feynman-test my understanding of a concept" | `domain-learning/learning_concept_explanation_audit.md` |
 | "Translate a skill gap into a learning plan" | `domain-learning/learning_skill_gap_to_curriculum.md` |
-| "Plan legal research (before Westlaw/Lexis)" | `domain-specialized-fields/legal/legal_research_plan.md` |
-| "Patent landscape scan / IP whitespace" | `domain-specialized-fields/ip/patent_landscape_scan.md` |
+| "Plan legal research (before Westlaw/Lexis)" | `domain-legal/research/legal_research_plan.md` |
+| "Patent landscape scan / IP whitespace" | `domain-legal/ip/legal_patent_landscape_scan.md` |
 | "Technical due diligence plan" | `domain-business-strategy/research/technical_due_diligence_plan.md` |
 | "Synthesize user interviews into themes" | `domain-business-strategy/research/user_research_synthesis.md` |
 | "Competitor teardown" | `domain-business-strategy/research/competitor_teardown.md` |

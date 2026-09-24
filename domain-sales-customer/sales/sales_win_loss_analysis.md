@@ -1,6 +1,6 @@
 ---
 title: "Win/Loss Analysis — Interviews With the Buyer, Not the Seller's Account of Them"
-category: business-strategy/go-to-market
+category: sales-customer/sales
 description: "Run win/loss analysis that produces decisions: buyers interviewed by someone who was not on the deal, wins interviewed as rigorously as losses, the stated reason separated from the deciding reason, CRM loss codes treated as hypotheses rather than data, findings aggregated before action, and routing to whoever can actually fix each cause."
 techniques:
   - RT-09
@@ -15,9 +15,9 @@ tags:
   - competitive-intelligence
   - buyer-research
   - go-to-market
-updated: "2026-09-22"
+updated: "2026-09-24"
 related_prompts:
-  - domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md
+  - domain-sales-customer/sales/sales_pipeline_risk_assessment.md
   - domain-business-strategy/research/research_competitive_landscape.md
   - domain-product-management/prompts/product_competitor_feature_teardown.md
 ---
@@ -38,7 +38,7 @@ before anything changes, and each cause routed to the function that can fix it.
 
 **When NOT to use:**
 - You need to audit the **open** pipeline for stalled deals, single-threading and
-  winnability — that is `workflow_sales_pipeline_risk_assessment.md`, which looks
+  winnability — that is `sales_pipeline_risk_assessment.md`, which looks
   forward at live opportunities. This looks backward at closed ones.
 - You need a feature-by-feature comparison against named competitors — that is
   `../../domain-product-management/prompts/product_competitor_feature_teardown.md`.
@@ -49,7 +49,7 @@ before anything changes, and each cause routed to the function that can fix it.
   `../../domain-agentic-resources/skills/marketing/customer-research/`.
 - You need to know why a *customer left* rather than never bought — that is churn, and
   `../../domain-agentic-resources/skills/marketing/churn-prevention/` plus
-  `workflow_cs_account_health.md`.
+  `cs_account_health.md`.
 
 ---
 
@@ -282,9 +282,9 @@ merged average recommends fixing neither.
 
 ## Related
 
-- `workflow_sales_pipeline_risk_assessment.md` — the forward-looking counterpart, on open deals
+- `sales_pipeline_risk_assessment.md` — the forward-looking counterpart, on open deals
 - `../research/research_competitive_landscape.md` — the market view
 - `../../domain-product-management/prompts/product_competitor_feature_teardown.md` — feature-level comparison
 - `../../domain-agentic-resources/skills/marketing/sales-enablement/` — where value-case findings are fixed
 - `../../domain-agentic-resources/skills/marketing/revops/` — where wrong-fit and qualification findings are fixed
-- `workflow_cs_account_health.md` — post-sale health, a different question
+- `cs_account_health.md` — post-sale health, a different question

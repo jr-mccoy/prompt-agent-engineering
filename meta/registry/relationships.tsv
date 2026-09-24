@@ -10,17 +10,20 @@ pae_086wmym9yk28	copy_of	pae_40f3v2frxmay	resource	meta/VENDORED.tsv
 pae_0dd163pbspkb	superseded_by	pae_8vm5kbge47hs	resource	meta/REORG_MAP.tsv
 pae_0e4r34k5deqb	previous_path	domain-discipleship/after-harm/discipleship_after_a_mentor_is_removed.md	path	meta/REORG_MAP.tsv
 pae_0f4q4gm46k98	superseded_by	pae_m81r991bj7ff	resource	meta/REORG_MAP.tsv
+pae_0rywm8vrv9w8	previous_path	domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md	path	meta/REORG_MAP.tsv
 pae_0rywm8vrv9w8	previous_path	domain-engineering-workflows/workflows/workflow_sales_discovery_call_preparation.md	path	meta/REORG_MAP.tsv
 pae_0tdj10jvk5bw	superseded_by	pae_jf5dhdb3p3w4	resource	meta/REORG_MAP.tsv
 pae_0txddyqk5gqa	previous_path	domain-healthcare-clinical/prompts/medical-education/assessment-tools/meded_clinical_skills_checklist_designer.md	path	meta/REORG_MAP.tsv
 pae_0wb7tghc4jjn	previous_path	domain-productivity/validation/quality_slop_executive_memo.md	path	meta/REORG_MAP.tsv
 pae_0wt20x276wn9	previous_path	domain-business-strategy/chief-of-staff/cos_meeting_prep_and_process.md	path	meta/REORG_MAP.tsv
+pae_0xqwdprr0vxz	previous_path	domain-specialized-fields/legal/legal_research_plan.md	path	meta/REORG_MAP.tsv
 pae_0ykt9gmyfxrr	previous_path	domain-business-strategy/analysis/business_impact_analysis.md	path	meta/REORG_MAP.tsv
 pae_193cbr8b8c3z	previous_path	domain-healthcare-clinical/prompts/medical-education/teaching-methods/meded_flipped_classroom_module_designer.md	path	meta/REORG_MAP.tsv
 pae_1a46vt3h4460	superseded_by	pae_1hrafe5dkhsa	resource	meta/REORG_MAP.tsv
 pae_1c1qwcwqy4d9	previous_path	domain-business-strategy/analysis/product_market_fit_analysis.md	path	meta/REORG_MAP.tsv
 pae_1cq7wvfm0tys	previous_path	domain-healthcare-clinical/prompts/medical-education/teaching-methods/meded_preceptor_teaching_script_writer.md	path	meta/REORG_MAP.tsv
 pae_1hnf4js1gzsd	previous_path	domain-productivity/prototyping/prototyping_event_registration.md	path	meta/REORG_MAP.tsv
+pae_1hrafe5dkhsa	previous_path	domain-business-strategy/go-to-market/workflow_cs_account_health.md	path	meta/REORG_MAP.tsv
 pae_1hrafe5dkhsa	previous_path	domain-engineering-workflows/workflows/workflow_cs_account_health.md	path	meta/REORG_MAP.tsv
 pae_1ksjy402zfdq	previous_path	domain-engineering-workflows/tasks/task_sorting_workflow_guide.md	path	meta/REORG_MAP.tsv
 pae_1ndfdxccanr8	previous_path	domain-professional-communication/prompts/product_market_size_calculator.md	path	meta/REORG_MAP.tsv
@@ -52,6 +55,7 @@ pae_3p0g5rxcfem0	superseded_by	pae_033afy67embj	resource	meta/REORG_MAP.tsv
 pae_3s2cjgrbnzkc	previous_path	domain-healthcare-clinical/prompts/medical-education/learner-self-study/foundational-sciences/learner_pathophysiology_chain_builder.md	path	meta/REORG_MAP.tsv
 pae_3xwhpb3z03sp	previous_path	domain-productivity/career/career_ai_prompt_engineering.md	path	meta/REORG_MAP.tsv
 pae_3yxya8z344ca	superseded_by	pae_ht5y4141rm9x	resource	meta/REORG_MAP.tsv
+pae_47f74wrgpqzt	previous_path	domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md	path	meta/REORG_MAP.tsv
 pae_47f74wrgpqzt	previous_path	domain-engineering-workflows/workflows/workflow_sales_pipeline_risk_assessment.md	path	meta/REORG_MAP.tsv
 pae_4h857c90ve50	previous_path	domain-healthcare-clinical/prompts/medical-education/case-scenario-design/meded_pbl_case_writer.md	path	meta/REORG_MAP.tsv
 pae_4khvyzyeq4y1	previous_path	domain-business-strategy/startup/marketing_landing_page_conversion.md	path	meta/REORG_MAP.tsv
@@ -148,6 +152,7 @@ pae_dkd2bsxw7xgc	previous_path	domain-productivity/validation/quality_slop_produ
 pae_dma8da6pv854	previous_path	domain-productivity/prototyping/prototyping_personal_crm.md	path	meta/REORG_MAP.tsv
 pae_dpmmfqmhfsty	copy_of	pae_907pc6csf2f5	resource	meta/VENDORED.tsv
 pae_dvjkejsq261z	merged_into	pae_chrkvrnwt5ey	resource	techniques/MASTER_TECHNIQUE_INDEX.md
+pae_e1t78005cjtb	previous_path	domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md	path	meta/REORG_MAP.tsv
 pae_e1t78005cjtb	previous_path	domain-engineering-workflows/workflows/workflow_customer_success_onboarding_plan.md	path	meta/REORG_MAP.tsv
 pae_e6avhneze0dd	copy_of	pae_t6x2mht4n2z1	resource	meta/VENDORED.tsv
 pae_e6ks6q3v45w0	previous_path	domain-professional-communication/prompts/product_planning_coding_roadmap.md	path	meta/REORG_MAP.tsv
@@ -214,6 +219,7 @@ pae_k94xnqqvg95q	previous_path	domain-healthcare-clinical/prompts/medical-educat
 pae_kasz1q1v2py3	copy_of	pae_xr1m4xjwwqnn	resource	meta/VENDORED.tsv
 pae_kf8cw73nq36y	previous_path	domain-professional-communication/examples/building_investment_proposal.md	path	meta/REORG_MAP.tsv
 pae_kftpram5qmz7	previous_path	domain-personal-development/prompts/productivity/productivity_meeting_killer_prompt.md	path	meta/REORG_MAP.tsv
+pae_kksmzz69vq62	previous_path	domain-specialized-fields/ip/patent_landscape_scan.md	path	meta/REORG_MAP.tsv
 pae_kn5v7sc4d6p8	previous_path	domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-prep/learner_pre_rounding_prep.md	path	meta/REORG_MAP.tsv
 pae_ks1bz3bpe115	previous_path	domain-professional-communication/design/design_hiring_screen_challenge_designer.md	path	meta/REORG_MAP.tsv
 pae_ktmvt5ea1x5a	previous_path	domain-business-strategy/startup/marketing_community_building.md	path	meta/REORG_MAP.tsv
@@ -243,6 +249,7 @@ pae_nj8gdj3qe2cw	copy_of	pae_m9ve9vkb5frf	resource	meta/VENDORED.tsv
 pae_nkf906ts06gz	previous_path	domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-skills/learner_h_and_p_writing_practice.md	path	meta/REORG_MAP.tsv
 pae_nn32c65z7rxd	previous_path	domain-business-strategy/chief-of-staff/cos_brain_dump_to_tasks.md	path	meta/REORG_MAP.tsv
 pae_npb5y2csqx4e	copy_of	pae_mjhmev4p1pk8	resource	meta/VENDORED.tsv
+pae_p1bs0wa5zg27	previous_path	domain-business-strategy/go-to-market/workflow_win_loss_analysis.md	path	meta/REORG_MAP.tsv
 pae_p1xndnywh2ag	previous_path	domain-psychology/client-self-use/mood-journaling/clientself_journal_prompt_generator_anti_toxic_positivity.md	path	meta/REORG_MAP.tsv
 pae_p2m2xyg73hhj	previous_path	domain-business-strategy/analysis/porters_five_forces_analysis.md	path	meta/REORG_MAP.tsv
 pae_p5n3zbjdb2ah	previous_path	domain-personal-development/prompts/productivity/productivity_energy_by_task_type.md	path	meta/REORG_MAP.tsv

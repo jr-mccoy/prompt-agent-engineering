@@ -6,7 +6,7 @@
     "total_indexed_artifacts": 5694,
     "artifacts_with_frontmatter": 4758,
     "artifacts_without_frontmatter": 936,
-    "domains": 48,
+    "domains": 47,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
       "total_prompts": "total_indexed_artifacts",
@@ -49691,35 +49691,6 @@
       "has_frontmatter": true
     },
     {
-      "path": "domain-business-strategy/go-to-market/workflow_cs_account_health.md",
-      "filename": "workflow_cs_account_health.md",
-      "title": "Account Health Assessment & Risk Identification",
-      "domain": "business-strategy",
-      "category": "business-strategy/go-to-market",
-      "description": "Assess a customer account's health from usage, support, and relationship signals, classify churn risk, and produce a prioritized retention play with owners and a renewal timeline.",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "CM-01",
-        "DS-06",
-        "QA-04"
-      ],
-      "keywords": [
-        "customer-success",
-        "account-health",
-        "churn-risk",
-        "retention",
-        "renewal"
-      ],
-      "difficulty": "intermediate",
-      "updated": "2026-08-28",
-      "related_prompts": [
-        "domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md",
-        "domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
       "path": "domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md",
       "filename": "workflow_marketing_campaign_brief_development.md",
       "title": "Campaign Brief Development from Business Goals",
@@ -49772,122 +49743,6 @@
       "updated": "2026-08-28",
       "related_prompts": [
         "domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
-      "path": "domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md",
-      "filename": "workflow_sales_discovery_call_preparation.md",
-      "title": "Discovery Call Preparation from CRM Data",
-      "domain": "business-strategy",
-      "category": "business-strategy/go-to-market",
-      "description": "Turn CRM records and account research into a discovery-call plan: hypotheses to test, a question sequence, likely objections, and the qualification bar for a next step.",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "CM-01",
-        "DS-06",
-        "QA-04"
-      ],
-      "keywords": [
-        "sales",
-        "discovery-call",
-        "qualification",
-        "crm",
-        "call-prep"
-      ],
-      "difficulty": "intermediate",
-      "updated": "2026-08-28",
-      "related_prompts": [
-        "domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md",
-        "domain-business-strategy/go-to-market/research_person_background.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
-      "path": "domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md",
-      "filename": "workflow_customer_success_onboarding_plan.md",
-      "title": "Onboarding Plan & 90-Day Success Roadmap",
-      "domain": "business-strategy",
-      "category": "business-strategy/go-to-market",
-      "description": "Turn a signed account's goals and constraints into a staged 90-day onboarding plan with milestones, success criteria, stakeholder roles, and escalation triggers.",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "CM-01",
-        "DS-06",
-        "QA-04"
-      ],
-      "keywords": [
-        "customer-success",
-        "onboarding",
-        "90-day-plan",
-        "adoption",
-        "milestones"
-      ],
-      "difficulty": "intermediate",
-      "updated": "2026-08-28",
-      "related_prompts": [
-        "domain-business-strategy/go-to-market/workflow_cs_account_health.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
-      "path": "domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md",
-      "filename": "workflow_sales_pipeline_risk_assessment.md",
-      "title": "Pipeline Risk Assessment & Deal Prioritization",
-      "domain": "business-strategy",
-      "category": "business-strategy/go-to-market",
-      "description": "Audit an open pipeline for stalled deals, single-threaded relationships, and missing buying signals, then rank deals by winnability and name the next action for each.",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "CM-01",
-        "DS-06",
-        "QA-04"
-      ],
-      "keywords": [
-        "sales",
-        "pipeline-review",
-        "deal-risk",
-        "prioritization",
-        "forecasting"
-      ],
-      "difficulty": "intermediate",
-      "updated": "2026-08-28",
-      "related_prompts": [
-        "domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md",
-        "domain-business-strategy/go-to-market/workflow_cs_account_health.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
-      "path": "domain-business-strategy/go-to-market/workflow_win_loss_analysis.md",
-      "filename": "workflow_win_loss_analysis.md",
-      "title": "Win/Loss Analysis — Interviews With the Buyer, Not the Seller's Account of Them",
-      "domain": "business-strategy",
-      "category": "business-strategy/go-to-market",
-      "description": "Run win/loss analysis that produces decisions: buyers interviewed by someone who was not on the deal, wins interviewed as rigorously as losses, the stated reason separated from the deciding reason, CRM loss codes treated as hypotheses rather than data, findings aggregated before action, and routing to whoever can actually fix each cause.",
-      "techniques": [
-        "RT-09",
-        "RT-05",
-        "CM-01",
-        "QA-04",
-        "OC-03"
-      ],
-      "keywords": [
-        "win-loss",
-        "sales-effectiveness",
-        "competitive-intelligence",
-        "buyer-research",
-        "go-to-market"
-      ],
-      "difficulty": "intermediate",
-      "updated": "2026-09-22",
-      "related_prompts": [
-        "domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md",
-        "domain-business-strategy/research/research_competitive_landscape.md",
-        "domain-product-management/prompts/product_competitor_feature_teardown.md"
       ],
       "has_frontmatter": true
     },
@@ -50130,7 +49985,7 @@
       "updated": "2026-06-18",
       "related_prompts": [
         "domain-business-strategy/research/competitor_teardown.md",
-        "domain-specialized-fields/ip/patent_landscape_scan.md",
+        "domain-legal/ip/legal_patent_landscape_scan.md",
         "domain-business-strategy/research/research_company_deep_dive.md"
       ],
       "has_frontmatter": true,
@@ -96509,6 +96364,67 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/ip/legal_patent_landscape_scan.md",
+      "filename": "legal_patent_landscape_scan.md",
+      "title": "Patent Landscape Scan — Search Strategy, Clustering, and IP Whitespace Analysis",
+      "domain": "legal",
+      "category": "legal/ip",
+      "description": "Plan a patent landscape scan and whitespace analysis for a defined technology area and goal (freedom-to-operate check, competitive intelligence, whitespace identification, or acquisition screening). Walks through scope definition, patent classification (USPC/IPC/CPC), query construction, database selection, relevance screening, clustering by assignee/technology/time, and identification of both whitespace (low density) and crowding (high density), ending in a strategic recommendation. Counters keyword-only searches that miss class-coded prior art and confuse 'no results' with 'whitespace.'",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-01",
+        "DS-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "intellectual-property",
+        "patent-search",
+        "freedom-to-operate",
+        "whitespace-analysis",
+        "competitive-intelligence"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/research/legal_research_plan.md",
+        "domain-business-strategy/research/technical_due_diligence_plan.md",
+        "domain-research-academic/research_literature_review_plan.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "systematic",
+          "classificatory",
+          "strategic"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "founder",
+          "engineering_leader",
+          "attorney",
+          "analyst"
+        ],
+        "mode": [
+          "plan",
+          "synthesize",
+          "diagnose"
+        ]
+      }
+    },
+    {
       "path": "domain-legal/ip/legal_trademark_clearance_analysis.md",
       "filename": "legal_trademark_clearance_analysis.md",
       "title": "Trademark Clearance Analysis (Knockout + Full)",
@@ -96971,6 +96887,63 @@
         "domain-legal/litigation/legal_case_strategy_assessment.md"
       ],
       "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/research/legal_research_plan.md",
+      "filename": "legal_research_plan.md",
+      "title": "Legal Research Plan — Map the Authorities Before Opening Westlaw or Lexis",
+      "domain": "legal",
+      "category": "legal/research",
+      "description": "Plan legal research before paid-database time: analyze jurisdiction and the relevant courts, identify governing statutes and regulations, separate controlling from persuasive case law, locate secondary sources and agency interpretations, check for recent amendments and pending legislation, and build a sequenced search strategy with starting citations and search terms. Counters the failure of expensive, unstructured database searching that misses controlling authority.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-01",
+        "DS-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "legal-research",
+        "case-law",
+        "jurisdiction",
+        "search-strategy"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-research-academic/research_literature_review_plan.md",
+        "domain-business-strategy/research/technical_due_diligence_plan.md",
+        "domain-legal/ip/legal_patent_landscape_scan.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "systematic",
+          "hierarchical",
+          "decomposition"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": "structured",
+        "user_role": [
+          "attorney",
+          "paralegal",
+          "law_student",
+          "individual"
+        ],
+        "mode": [
+          "plan",
+          "synthesize"
+        ]
+      }
     },
     {
       "path": "domain-legal/research/legal_precedent_comparison_table.md",
@@ -144950,6 +144923,35 @@
       }
     },
     {
+      "path": "domain-sales-customer/customer-success/cs_account_health.md",
+      "filename": "cs_account_health.md",
+      "title": "Account Health Assessment & Risk Identification",
+      "domain": "sales-customer",
+      "category": "sales-customer/customer-success",
+      "description": "Assess a customer account's health from usage, support, and relationship signals, classify churn risk, and produce a prioritized retention play with owners and a renewal timeline.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "CM-01",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "customer-success",
+        "account-health",
+        "churn-risk",
+        "retention",
+        "renewal"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/customer-success/cs_onboarding_plan.md",
+        "domain-sales-customer/sales/sales_pipeline_risk_assessment.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-sales-customer/customer-success/cs_customer_qbr_prep.md",
       "filename": "cs_customer_qbr_prep.md",
       "title": "Customer QBR Prep — Outcomes Against Their Goals, Sourced Value, and the Decisions You Need from the Room",
@@ -144974,8 +144976,36 @@
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md",
-        "domain-business-strategy/go-to-market/workflow_cs_account_health.md",
-        "domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md"
+        "domain-sales-customer/customer-success/cs_account_health.md",
+        "domain-sales-customer/customer-success/cs_onboarding_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/customer-success/cs_onboarding_plan.md",
+      "filename": "cs_onboarding_plan.md",
+      "title": "Onboarding Plan & 90-Day Success Roadmap",
+      "domain": "sales-customer",
+      "category": "sales-customer/customer-success",
+      "description": "Turn a signed account's goals and constraints into a staged 90-day onboarding plan with milestones, success criteria, stakeholder roles, and escalation triggers.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "CM-01",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "customer-success",
+        "onboarding",
+        "90-day-plan",
+        "adoption",
+        "milestones"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/customer-success/cs_account_health.md"
       ],
       "has_frontmatter": true
     },
@@ -145004,7 +145034,7 @@
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-sales-customer/customer-success/cs_customer_qbr_prep.md",
-        "domain-business-strategy/go-to-market/workflow_cs_account_health.md",
+        "domain-sales-customer/customer-success/cs_account_health.md",
         "domain-agentic-resources/skills/marketing/churn-prevention/SKILL.md"
       ],
       "has_frontmatter": true
@@ -145036,7 +145066,36 @@
       "related_prompts": [
         "domain-sales-customer/sales/sales_mutual_close_plan.md",
         "domain-sales-customer/sales/sales_forecast_commit_review.md",
-        "domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md"
+        "domain-sales-customer/sales/sales_discovery_call_preparation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/sales/sales_discovery_call_preparation.md",
+      "filename": "sales_discovery_call_preparation.md",
+      "title": "Discovery Call Preparation from CRM Data",
+      "domain": "sales-customer",
+      "category": "sales-customer/sales",
+      "description": "Turn CRM records and account research into a discovery-call plan: hypotheses to test, a question sequence, likely objections, and the qualification bar for a next step.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "CM-01",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "sales",
+        "discovery-call",
+        "qualification",
+        "crm",
+        "call-prep"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/sales/sales_pipeline_risk_assessment.md",
+        "domain-business-strategy/go-to-market/research_person_background.md"
       ],
       "has_frontmatter": true
     },
@@ -145066,7 +145125,7 @@
       "related_prompts": [
         "domain-sales-customer/sales/sales_deal_qualification_scorecard.md",
         "domain-sales-customer/sales/sales_mutual_close_plan.md",
-        "domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md"
+        "domain-sales-customer/sales/sales_pipeline_risk_assessment.md"
       ],
       "has_frontmatter": true
     },
@@ -145127,6 +145186,65 @@
         "domain-sales-customer/sales/sales_deal_qualification_scorecard.md",
         "domain-agentic-resources/skills/marketing/cold-email/SKILL.md",
         "domain-agentic-resources/skills/marketing/sales-enablement/SKILL.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/sales/sales_pipeline_risk_assessment.md",
+      "filename": "sales_pipeline_risk_assessment.md",
+      "title": "Pipeline Risk Assessment & Deal Prioritization",
+      "domain": "sales-customer",
+      "category": "sales-customer/sales",
+      "description": "Audit an open pipeline for stalled deals, single-threaded relationships, and missing buying signals, then rank deals by winnability and name the next action for each.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "CM-01",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "sales",
+        "pipeline-review",
+        "deal-risk",
+        "prioritization",
+        "forecasting"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/sales/sales_discovery_call_preparation.md",
+        "domain-sales-customer/customer-success/cs_account_health.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/sales/sales_win_loss_analysis.md",
+      "filename": "sales_win_loss_analysis.md",
+      "title": "Win/Loss Analysis — Interviews With the Buyer, Not the Seller's Account of Them",
+      "domain": "sales-customer",
+      "category": "sales-customer/sales",
+      "description": "Run win/loss analysis that produces decisions: buyers interviewed by someone who was not on the deal, wins interviewed as rigorously as losses, the stated reason separated from the deciding reason, CRM loss codes treated as hypotheses rather than data, findings aggregated before action, and routing to whoever can actually fix each cause.",
+      "techniques": [
+        "RT-09",
+        "RT-05",
+        "CM-01",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "win-loss",
+        "sales-effectiveness",
+        "competitive-intelligence",
+        "buyer-research",
+        "go-to-market"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/sales/sales_pipeline_risk_assessment.md",
+        "domain-business-strategy/research/research_competitive_landscape.md",
+        "domain-product-management/prompts/product_competitor_feature_teardown.md"
       ],
       "has_frontmatter": true
     },
@@ -165752,124 +165870,6 @@
       "updated": "2026-01-25",
       "related_prompts": [],
       "has_frontmatter": true
-    },
-    {
-      "path": "domain-specialized-fields/ip/patent_landscape_scan.md",
-      "filename": "patent_landscape_scan.md",
-      "title": "Patent Landscape Scan — Search Strategy, Clustering, and IP Whitespace Analysis",
-      "domain": "specialized-fields",
-      "category": "specialized-fields/ip",
-      "description": "Plan a patent landscape scan and whitespace analysis for a defined technology area and goal (freedom-to-operate check, competitive intelligence, whitespace identification, or acquisition screening). Walks through scope definition, patent classification (USPC/IPC/CPC), query construction, database selection, relevance screening, clustering by assignee/technology/time, and identification of both whitespace (low density) and crowding (high density), ending in a strategic recommendation. Counters keyword-only searches that miss class-coded prior art and confuse 'no results' with 'whitespace.'",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "RT-02",
-        "DS-01",
-        "DS-02",
-        "CM-02",
-        "QA-01"
-      ],
-      "keywords": [
-        "intellectual-property",
-        "patent-search",
-        "freedom-to-operate",
-        "whitespace-analysis",
-        "competitive-intelligence"
-      ],
-      "difficulty": "advanced",
-      "updated": "2026-06-18",
-      "related_prompts": [
-        "domain-specialized-fields/legal/legal_research_plan.md",
-        "domain-business-strategy/research/technical_due_diligence_plan.md",
-        "domain-research-academic/research_literature_review_plan.md"
-      ],
-      "has_frontmatter": true,
-      "reasoning": {
-        "styles": [
-          "analytic",
-          "systematic",
-          "classificatory",
-          "strategic"
-        ],
-        "stakes": "high",
-        "horizon": "weeks",
-        "uncertainty": "ambiguity",
-        "evidence_quality": "rich",
-        "domain_complexity": "regulated",
-        "collaboration": "small_team",
-        "output_format": [
-          "structured",
-          "matrix"
-        ],
-        "user_role": [
-          "founder",
-          "engineering_leader",
-          "attorney",
-          "analyst"
-        ],
-        "mode": [
-          "plan",
-          "synthesize",
-          "diagnose"
-        ]
-      }
-    },
-    {
-      "path": "domain-specialized-fields/legal/legal_research_plan.md",
-      "filename": "legal_research_plan.md",
-      "title": "Legal Research Plan — Map the Authorities Before Opening Westlaw or Lexis",
-      "domain": "specialized-fields",
-      "category": "specialized-fields/legal",
-      "description": "Plan legal research before paid-database time: analyze jurisdiction and the relevant courts, identify governing statutes and regulations, separate controlling from persuasive case law, locate secondary sources and agency interpretations, check for recent amendments and pending legislation, and build a sequenced search strategy with starting citations and search terms. Counters the failure of expensive, unstructured database searching that misses controlling authority.",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "RT-02",
-        "DS-01",
-        "DS-02",
-        "CM-02",
-        "QA-01"
-      ],
-      "keywords": [
-        "legal",
-        "legal-research",
-        "case-law",
-        "jurisdiction",
-        "search-strategy"
-      ],
-      "difficulty": "advanced",
-      "updated": "2026-06-18",
-      "related_prompts": [
-        "domain-research-academic/research_literature_review_plan.md",
-        "domain-business-strategy/research/technical_due_diligence_plan.md",
-        "domain-specialized-fields/ip/patent_landscape_scan.md"
-      ],
-      "has_frontmatter": true,
-      "reasoning": {
-        "styles": [
-          "analytic",
-          "systematic",
-          "hierarchical",
-          "decomposition"
-        ],
-        "stakes": "high",
-        "horizon": "days",
-        "uncertainty": "ambiguity",
-        "evidence_quality": "rich",
-        "domain_complexity": "regulated",
-        "collaboration": "solo_or_team",
-        "output_format": "structured",
-        "user_role": [
-          "attorney",
-          "paralegal",
-          "law_student",
-          "individual"
-        ],
-        "mode": [
-          "plan",
-          "synthesize"
-        ]
-      }
     },
     {
       "path": "domain-voice-conversational-ui/analytics/analytics_conversation_metrics_framework.md",

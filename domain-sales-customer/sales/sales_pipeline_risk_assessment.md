@@ -1,6 +1,6 @@
 ---
 title: "Pipeline Risk Assessment & Deal Prioritization"
-category: business-strategy/go-to-market
+category: sales-customer/sales
 description: "Audit an open pipeline for stalled deals, single-threaded relationships, and missing buying signals, then rank deals by winnability and name the next action for each."
 techniques:
   - ST-01
@@ -15,10 +15,10 @@ tags:
   - deal-risk
   - prioritization
   - forecasting
-updated: "2026-08-28"
+updated: "2026-09-24"
 related_prompts:
-  - domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md
-  - domain-business-strategy/go-to-market/workflow_cs_account_health.md
+  - domain-sales-customer/sales/sales_discovery_call_preparation.md
+  - domain-sales-customer/customer-success/cs_account_health.md
 ---
 
 # Pipeline Risk Assessment & Deal Prioritization

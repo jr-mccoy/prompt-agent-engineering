@@ -196,8 +196,10 @@ new domain:
 - `workflow_cs_account_health`
 - `workflow_customer_success_onboarding_plan`
 
-Relocating them through `meta/REORG_MAP.tsv` is a Wave 2 item, because a move
-adds tombstones and changes the relationship-count tests.
+They were relocated in Wave 2 through `meta/REORG_MAP.tsv`, each with an alias
+row for its old public id. (An earlier version of this section said a move adds
+tombstones. It does not; only `DELETED` rows do. A move changes only the
+relationship-count test.)
 
 ## 5. Wave 1: shipped (40 prompts, all **NEW**, plus README repairs)
 
@@ -319,7 +321,7 @@ existed.
 | Humanities self-study | `learning/` | 5 | `education-teaching/learner/study-by-discipline/` |
 | Language conversation sims | `conversation-practice/` | 6 | `education-teaching/learner/language/` |
 | Wave 1 overflow: account plan, KB article, voice-of-customer synthesis | `sales-customer/` | 4 | `skills/marketing/customer-research` |
-| Relocate the 5 go-to-market sales and CS files | via `meta/REORG_MAP.tsv` | — | Adds tombstones and updates the relationship tests |
+| Relocate the 5 go-to-market sales and CS files, plus the 2 `specialized-fields` legal files | via `meta/REORG_MAP.tsv` + `aliases.tsv` | 7 moves | **Done.** uids kept; old ids resolve as aliases |
 
 ### Wave 3: existing backlog
 

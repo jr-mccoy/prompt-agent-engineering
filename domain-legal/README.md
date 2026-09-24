@@ -45,8 +45,8 @@ domain-legal/
 │                                  organizers, logs, and self-submit narrative preparers (HR
 │                                  complaint, police account, DMCA notice, FTC/agency report,
 │                                  dispute letters). Not legal advice.
-├── research/                      Issue spotting, IRAC memos, statutory interpretation,
-│                                  case briefs, precedent comparison, jurisdiction splits
+├── research/                      Research planning, issue spotting, IRAC memos, statutory
+│                                  interpretation, case briefs, precedent comparison, jurisdiction splits
 ├── litigation/                    Complaints, answers, dispositive motions, case strategy,
 │                                  settlement valuation, jury instructions, MILs, trial themes, budgets
 ├── discovery/                     RFPs, interrogatories, responses, privilege logs/protocols,
@@ -61,8 +61,8 @@ domain-legal/
 ├── employment-labor/              Offer/separation, workplace investigations, PIP/termination
 │                                  risk, wage-hour classification, non-compete enforceability,
 │                                  EEOC position statements
-├── ip/                            Patent claim charts, trademark clearance, fair-use analysis,
-│                                  DMCA takedown/counter-notice, OSS license compatibility
+├── ip/                            Patent landscape scans, patent claim charts, trademark clearance,
+│                                  fair-use analysis, DMCA takedown/counter-notice, OSS license compatibility
 ├── client-intake-communications/  Matter intake, engagement letters, demand letters,
 │                                  client status updates
 └── in-house-legalops/             Executive matter summaries, legal-spend anomalies,
@@ -100,6 +100,7 @@ Every prompt includes:
 
 | User says | Use |
 |---|---|
+| "Plan the research before paid-database time" | `research/legal_research_plan.md` |
 | "Spot the issues in this fact pattern" | `research/legal_issue_spotter_from_facts.md` |
 | "Write me a research memo on X" | `research/legal_research_memo_irac.md` |
 | "What does this statute mean as applied to..." | `research/legal_statutory_interpretation.md` |
@@ -153,6 +154,7 @@ Every prompt includes:
 | "Wage-hour / contractor classification" | `employment-labor/legal_wage_hour_classification_analysis.md` |
 | "Multi-state non-compete enforceability" | `employment-labor/legal_non_compete_enforceability_analysis.md` |
 | "Draft an EEOC position statement" | `employment-labor/legal_eeoc_position_statement_drafter.md` |
+| "Patent landscape scan / whitespace / FTO planning" | `ip/legal_patent_landscape_scan.md` |
 | "Element-by-element patent claim chart" | `ip/legal_patent_claim_chart.md` |
 | "Trademark clearance (knockout + full)" | `ip/legal_trademark_clearance_analysis.md` |
 | "Copyright fair-use four-factor analysis" | `ip/legal_copyright_fair_use_analysis.md` |

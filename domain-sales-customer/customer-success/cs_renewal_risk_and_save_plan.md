@@ -18,7 +18,7 @@ tags:
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/customer-success/cs_customer_qbr_prep.md
-  - domain-business-strategy/go-to-market/workflow_cs_account_health.md
+  - domain-sales-customer/customer-success/cs_account_health.md
   - domain-agentic-resources/skills/marketing/churn-prevention/SKILL.md
 ---
 
@@ -37,7 +37,7 @@ it the best chance, including the honest option of a smaller renewal or none.
   surveys, pause and downgrade offers, failed-payment dunning — which belongs to
   `domain-agentic-resources/skills/marketing/churn-prevention/`. For the general
   health diagnosis across usage, support and relationship signals, run
-  `domain-business-strategy/go-to-market/workflow_cs_account_health.md` first; this
+  `domain-sales-customer/customer-success/cs_account_health.md` first; this
   prompt takes its output and plans the renewal event. The bargaining itself
   belongs to `domain-negotiation/after-the-deal/negotiation_renegotiate_existing_agreement.md`.
 
@@ -223,7 +223,7 @@ fixable before the 12-01 notice date. Right-size folded into the commercial step
 
 ## Related Prompts
 
-- `domain-business-strategy/go-to-market/workflow_cs_account_health.md` — the
+- `domain-sales-customer/customer-success/cs_account_health.md` — the
   health diagnosis this plan starts from.
 - `domain-sales-customer/customer-success/cs_customer_qbr_prep.md` —
   where the value evidence for the "proof" step is built.

@@ -1,6 +1,6 @@
 ---
 title: "Patent Landscape Scan — Search Strategy, Clustering, and IP Whitespace Analysis"
-category: specialized-fields/ip
+category: legal/ip
 description: "Plan a patent landscape scan and whitespace analysis for a defined technology area and goal (freedom-to-operate check, competitive intelligence, whitespace identification, or acquisition screening). Walks through scope definition, patent classification (USPC/IPC/CPC), query construction, database selection, relevance screening, clustering by assignee/technology/time, and identification of both whitespace (low density) and crowding (high density), ending in a strategic recommendation. Counters keyword-only searches that miss class-coded prior art and confuse 'no results' with 'whitespace.'"
 techniques:
   - ST-01
@@ -17,7 +17,7 @@ tags:
   - freedom-to-operate
   - whitespace-analysis
   - competitive-intelligence
-updated: "2026-06-18"
+updated: "2026-09-24"
 reasoning:
   styles: [analytic, systematic, classificatory, strategic]
   stakes: high
@@ -30,7 +30,7 @@ reasoning:
   user_role: [founder, engineering_leader, attorney, analyst]
   mode: [plan, synthesize, diagnose]
 related_prompts:
-  - domain-specialized-fields/legal/legal_research_plan.md
+  - domain-legal/research/legal_research_plan.md
   - domain-business-strategy/research/technical_due_diligence_plan.md
   - domain-research-academic/research_literature_review_plan.md
 ---
@@ -48,7 +48,7 @@ related_prompts:
 **When NOT to use:**
 - You need a legal infringement opinion or validity opinion — this plans the scan; a clearance opinion is a separate legal work product.
 - The technology area is so broad that no coherent scope can be defined — narrow it first.
-- You need general legal research rather than patent search — use `legal_research_plan.md`.
+- You need general legal research rather than patent search — use `../research/legal_research_plan.md`.
 
 **Audience:** IP-aware founders, R&D and engineering leaders, patent attorneys and agents, corporate-development analysts, and innovation strategists.
 

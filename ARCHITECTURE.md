@@ -148,7 +148,7 @@ agents, skills, and commands live outside `domain-agentic-resources/` — in the
 root toolkits and in `domain-deep-analysis/commands/`. Ten of those are
 currently indexed as if they were prompts.
 
-**Paths move.** `meta/REORG_MAP.tsv` records 287 relocations. Of those, 236 are
+**Paths move.** `meta/REORG_MAP.tsv` records 294 relocations. Of those, 243 are
 identity-preserving moves; 51 are deletions that point at a *different*
 surviving resource (`superseded-by`, `merged-into`, `split-into`). Any future
 identity scheme has to keep those two relations apart.

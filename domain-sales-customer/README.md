@@ -11,8 +11,7 @@ customer now.
 This domain is the subject home that [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md)
 identified as missing: before it, sales and customer work lived as five workflow
 prompts inside `domain-business-strategy/go-to-market/` and a handful of
-negotiation contexts. Those five stay where they are in this wave and are
-cross-linked below.
+negotiation contexts. Those five moved here in coverage Wave 2 (listed below).
 
 ## Conventions (every prompt in this set)
 
@@ -64,17 +63,18 @@ cross-linked below.
 | [`support_ticket_triage_and_routing.md`](support/support_ticket_triage_and_routing.md) | Severity from impact, priority by rule, queue and SLA clock per ticket, cluster-to-incident detection |
 | [`support_escalation_response_drafter.md`](support/support_escalation_response_drafter.md) | The customer reply and the internal handoff brief, cross-checked so every promise has an owner |
 
-### Cross-linked, not relocated (Wave 1)
-These live in `domain-business-strategy/go-to-market/` and are part of this
-domain's working set:
+### Relocated from `go-to-market/` (coverage Wave 2)
+These five prompts were in `domain-business-strategy/go-to-market/` until coverage
+Wave 2. They moved here with their uids kept, and their old public ids still
+resolve as aliases (`meta/registry/aliases.tsv`).
 
 | File | Use |
 |---|---|
-| [`workflow_sales_discovery_call_preparation.md`](../domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md) | Plan the discovery call that produces qualification evidence |
-| [`workflow_sales_pipeline_risk_assessment.md`](../domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md) | Whole-pipeline risk triage and effort allocation |
-| [`workflow_win_loss_analysis.md`](../domain-business-strategy/go-to-market/workflow_win_loss_analysis.md) | Buyer interviews after the decision; aggregate before acting |
-| [`workflow_cs_account_health.md`](../domain-business-strategy/go-to-market/workflow_cs_account_health.md) | Internal account-health diagnosis — input to the QBR and renewal prompts |
-| [`workflow_customer_success_onboarding_plan.md`](../domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md) | Post-signature 90-day onboarding and the success criteria QBRs report against |
+| [`sales/sales_discovery_call_preparation.md`](sales/sales_discovery_call_preparation.md) | Plan the discovery call that produces qualification evidence |
+| [`sales/sales_pipeline_risk_assessment.md`](sales/sales_pipeline_risk_assessment.md) | Whole-pipeline risk triage and effort allocation |
+| [`sales/sales_win_loss_analysis.md`](sales/sales_win_loss_analysis.md) | Buyer interviews after the decision; aggregate before acting |
+| [`customer-success/cs_account_health.md`](customer-success/cs_account_health.md) | Internal account-health diagnosis — input to the QBR and renewal prompts |
+| [`customer-success/cs_onboarding_plan.md`](customer-success/cs_onboarding_plan.md) | Post-signature 90-day onboarding and the success criteria QBRs report against |
 
 ## Quick routing
 
@@ -84,12 +84,12 @@ domain's working set:
 | "I have a territory and no reason to call anyone first" | `sales/sales_outbound_prospecting_sequence.md` |
 | "They said yes and now it's stuck in procurement" | `sales/sales_mutual_close_plan.md` |
 | "What's my number this quarter?" | `sales/sales_forecast_commit_review.md` |
-| "Which deals in the whole pipeline need attention?" | `go-to-market/workflow_sales_pipeline_risk_assessment.md` |
-| "I have a discovery call tomorrow" | `go-to-market/workflow_sales_discovery_call_preparation.md` |
-| "We lost it — why?" | `go-to-market/workflow_win_loss_analysis.md` |
+| "Which deals in the whole pipeline need attention?" | `sales/sales_pipeline_risk_assessment.md` |
+| "I have a discovery call tomorrow" | `sales/sales_discovery_call_preparation.md` |
+| "We lost it — why?" | `sales/sales_win_loss_analysis.md` |
 | "The QBR is next week and the sponsor stopped coming" | `customer-success/cs_customer_qbr_prep.md` |
 | "Renewal is in 90 days and the new CFO won't meet us" | `customer-success/cs_renewal_risk_and_save_plan.md` |
-| "How healthy is this account?" | `go-to-market/workflow_cs_account_health.md` |
+| "How healthy is this account?" | `customer-success/cs_account_health.md` |
 | "The queue is full and everything is urgent" | `support/support_ticket_triage_and_routing.md` |
 | "The customer's VP just escalated — what do we say?" | `support/support_escalation_response_drafter.md` |
 

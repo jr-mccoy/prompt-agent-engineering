@@ -50,8 +50,8 @@
   },
   "by_serving_policy": {
     "metadata_only": 56,
-    "safety_gated": 1330,
-    "standard": 4025
+    "safety_gated": 1332,
+    "standard": 4023
   },
   "diagnostics_by_code": {
     "frontmatter_parse_failed": 2,
@@ -79,7 +79,7 @@
     "attachments": 1039,
     "copy_of": 59,
     "merged_into": 11,
-    "previous_paths": 276,
+    "previous_paths": 283,
     "split_into": 1,
     "superseded_by": 42
   },

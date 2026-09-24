@@ -1985,7 +1985,7 @@
 
 ## Business Strategy
 
-**Total:** 78 prompts
+**Total:** 73 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -2006,13 +2006,8 @@
 | [Newsletter Positioning and Cadence — One Promise, ](domain-business-strategy/creator-economy/creator_newsletter_positioning_and_cadence.md) | business-strategy/creator-econ | ST-02, RT-05, CM-02, DS-06, QA-01 | newsletter, positioning, cadence, audience, creator-economy | Define what a newsletter is for, who it is for, and how often it can actually ship — a stated promis... |
 | [Owned vs Rented — Deciding Where an Audience Lives](domain-business-strategy/creator-economy/creator_platform_choice_owned_vs_rented.md) | business-strategy/creator-econ | DT-01, RT-05, DS-06, CM-02, QA-04 | platform-risk, owned-audience, decision, creator-economy, distribution | A decision prompt for where a creator's audience should live: applies the existing ORB framework and... |
 | [Pre-Launch Demand Validation — Presell, Smoke Test](domain-business-strategy/creator-economy/creator_prelaunch_demand_validation.md) | business-strategy/creator-econ | RT-05, DS-06, DT-01, QA-04, OC-03 | demand-validation, presell, smoke-test, waitlist, creator-economy | Test whether anyone will pay before building an information product: pick the instrument that matche... |
-| [Account Health Assessment & Risk Identification](domain-business-strategy/go-to-market/workflow_cs_account_health.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | customer-success, account-health, churn-risk, retention, renewal | Assess a customer account's health from usage, support, and relationship signals, classify churn ris... |
 | [Campaign Brief Development from Business Goals](domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | marketing, campaign-brief, positioning, channel-mix, metrics | Translate a business goal into a campaign brief: audience, message hierarchy, channel mix, budget sp... |
 | [Content Performance Analysis & Gap Identification](domain-business-strategy/go-to-market/workflow_marketing_content_performance_analysis.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | marketing, content-strategy, performance-analysis, gap-analysis, funnel | Analyze content performance data against funnel stages and audience segments to find what is working... |
-| [Discovery Call Preparation from CRM Data](domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | sales, discovery-call, qualification, crm, call-prep | Turn CRM records and account research into a discovery-call plan: hypotheses to test, a question seq... |
-| [Onboarding Plan & 90-Day Success Roadmap](domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | customer-success, onboarding, 90-day-plan, adoption, milestones | Turn a signed account's goals and constraints into a staged 90-day onboarding plan with milestones, ... |
-| [Pipeline Risk Assessment & Deal Prioritization](domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md) | business-strategy/go-to-market | ST-01, ST-02, CM-01, DS-06, QA-04 | sales, pipeline-review, deal-risk, prioritization, forecasting | Audit an open pipeline for stalled deals, single-threaded relationships, and missing buying signals,... |
-| [Win/Loss Analysis — Interviews With the Buyer, Not](domain-business-strategy/go-to-market/workflow_win_loss_analysis.md) | business-strategy/go-to-market | RT-09, RT-05, CM-01, QA-04, OC-03 | win-loss, sales-effectiveness, competitive-intelligence, buyer-research, go-to-market | Run win/loss analysis that produces decisions: buyers interviewed by someone who was not on the deal... |
 | [24-Hour Leader Pulse Briefing](domain-business-strategy/research/research_24_hour_leader_pulse.md) | business-strategy/research | ST-01, ST-02, RT-02, DS-06, QA-01 | market-intelligence, competitive-analysis, leadership, briefing, research | Scan and synthesize the last 24 hours of public statements from a named set of industry leaders into... |
 | [Company Deep Dive](domain-business-strategy/research/research_company_deep_dive.md) | business-strategy/research | ST-01, RT-02, DS-02, RT-05, QA-01 | research, company-analysis, competitive-intelligence, due-diligence, web-research | Conduct a comprehensive, source-cited analysis of a company — business model, market position, finan... |
 | [Competitive Landscape Analysis](domain-business-strategy/research/research_competitive_landscape.md) | business-strategy/research | ST-01, RT-02, DS-02, RT-05, QA-02 | research, competitive-analysis, market-research, benchmarking, web-research | Research direct competitors in a market and produce a structured, source-cited comparison table (CSV... |
@@ -3553,7 +3548,7 @@
 
 ## Legal
 
-**Total:** 174 prompts
+**Total:** 176 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -3655,6 +3650,7 @@
 | [Defamation & Right-of-Publicity Risk Screen — Flag](domain-legal/ip/legal_defamation_publicity_risk_screen.md) | legal/ip | ST-01, ST-02, QA-05, QA-04, CM-02 | defamation, right-of-publicity, nonfiction, risk-screen, pre-publication | Screen a nonfiction draft that names living people or identifiable organizations for defamation and ... |
 | [Open Source License Compatibility Review](domain-legal/ip/legal_open_source_license_compatibility_review.md) | legal/ip | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, ip, open-source, copyleft, license-compatibility | Compatibility analysis for a dependency tree against a project's outbound license: classify each lic... |
 | [Patent Claim Chart (Infringement and Invalidity)](domain-legal/ip/legal_patent_claim_chart.md) | legal/ip | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, ip, patent, claim-chart, infringement | Element-by-element claim chart mapping each asserted claim element to evidence in an accused product... |
+| [Patent Landscape Scan — Search Strategy, Clusterin](domain-legal/ip/legal_patent_landscape_scan.md) | legal/ip | ST-01, ST-02, RT-02, DS-01, DS-02 | intellectual-property, patent-search, freedom-to-operate, whitespace-analysis, competitive-intelligence | Plan a patent landscape scan and whitespace analysis for a defined technology area and goal (freedom... |
 | [Trademark Clearance Analysis (Knockout + Full)](domain-legal/ip/legal_trademark_clearance_analysis.md) | legal/ip | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, ip, trademark, clearance, likelihood-of-confusion | Two-stage trademark clearance: (1) knockout search against USPTO and state registers, (2) full clear... |
 | [Answer with Affirmative Defenses](domain-legal/litigation/legal_answer_with_affirmative_defenses.md) | legal/litigation | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, litigation, answer, affirmative-defenses, pleading | Draft a defendant's answer to a civil complaint — paragraph-by-paragraph admissions/denials, affirma... |
 | [Case Strategy Assessment](domain-legal/litigation/legal_case_strategy_assessment.md) | legal/litigation | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, litigation, strategy, case-assessment, settlement | Produce an internal case-strategy memo: claims/defenses status, factual and legal strengths and weak... |
@@ -3670,6 +3666,7 @@
 | [IRAC Legal Research Memo](domain-legal/research/legal_research_memo_irac.md) | legal/research | ST-01, ST-02, ST-03, CM-02, DS-02 | legal, research, memo, irac, legal-writing | Produce an interoffice legal research memo in IRAC (Issue, Rule, Application, Conclusion) format wit... |
 | [Jurisdiction Split Analysis (Circuit / State)](domain-legal/research/legal_jurisdiction_split_analysis.md) | legal/research | ST-01, ST-02, CM-02, DS-02, QA-01 | legal, research, circuit-split, state-split, cert-petition | Map a circuit split or state split on a doctrinal question, identify the camps and their reasoning, ... |
 | [Legal Issue Spotter from a Fact Pattern](domain-legal/research/legal_issue_spotter_from_facts.md) | legal/research | ST-01, ST-02, RT-02, CM-02, DS-02 | legal, research, issue-spotting, case-analysis, irac | Read a fact pattern and produce a ranked, jurisdiction-aware issue list with claims, defenses, eleme... |
+| [Legal Research Plan — Map the Authorities Before O](domain-legal/research/legal_research_plan.md) | legal/research | ST-01, ST-02, RT-02, DS-01, DS-02 | legal, legal-research, case-law, jurisdiction, search-strategy | Plan legal research before paid-database time: analyze jurisdiction and the relevant courts, identif... |
 | [Precedent Comparison Table](domain-legal/research/legal_precedent_comparison_table.md) | legal/research | ST-01, ST-02, ST-03, DS-02, QA-01 | legal, research, precedent, comparison, case-analysis | Compare three or more cases on a common dispositive issue in a structured table — facts, holdings, r... |
 | [Statutory Interpretation Analysis](domain-legal/research/legal_statutory_interpretation.md) | legal/research | ST-01, ST-02, CM-02, DS-02, QA-01 | legal, research, statutory-interpretation, regulatory, canons-of-construction | Apply standard statutory interpretation methodology — text, structure, canons, legislative history, ... |
 | [Allegation Response Organizer (Answer Accusations ](domain-legal/family-self-advocacy/legalprep_allegation_response_organizer.md) | legalprep | ST-03, NE-25, RT-05, CM-01, QA-01 | legal, family-law, self-represented, divorce, custody | Help a self-represented or self-organizing family-law litigant organize a factual, evidence-backed r... |
@@ -5214,16 +5211,21 @@
 
 ## Sales Customer
 
-**Total:** 8 prompts
+**Total:** 13 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
+| [Account Health Assessment & Risk Identification](domain-sales-customer/customer-success/cs_account_health.md) | sales-customer/customer-succes | ST-01, ST-02, CM-01, DS-06, QA-04 | customer-success, account-health, churn-risk, retention, renewal | Assess a customer account's health from usage, support, and relationship signals, classify churn ris... |
 | [Customer QBR Prep — Outcomes Against Their Goals, ](domain-sales-customer/customer-success/cs_customer_qbr_prep.md) | sales-customer/customer-succes | RP-02, DS-02, RT-05, NE-23 | customer-success, qbr, executive-business-review, account-management, value-realization | Prepare a customer-facing quarterly business review for one account: restate the customer's own succ... |
+| [Onboarding Plan & 90-Day Success Roadmap](domain-sales-customer/customer-success/cs_onboarding_plan.md) | sales-customer/customer-succes | ST-01, ST-02, CM-01, DS-06, QA-04 | customer-success, onboarding, 90-day-plan, adoption, milestones | Turn a signed account's goals and constraints into a staged 90-day onboarding plan with milestones, ... |
 | [Renewal Risk and Save Plan — One B2B Contract, Its](domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md) | sales-customer/customer-succes | RT-05, DS-06, CM-02, DP-13 | customer-success, renewal, churn-risk, retention, account-management | For one named B2B account with a renewal inside roughly 180 days, map the contract mechanics and the... |
 | [Deal Qualification Scorecard — MEDDPICC Scored on ](domain-sales-customer/sales/sales_deal_qualification_scorecard.md) | sales-customer/sales | DS-01, RT-05, AG-02, QA-04, DP-13 | sales, qualification, meddpicc, opportunity-management, deal-review | Score one open opportunity against the eight MEDDPICC elements using only evidence the buyer has giv... |
+| [Discovery Call Preparation from CRM Data](domain-sales-customer/sales/sales_discovery_call_preparation.md) | sales-customer/sales | ST-01, ST-02, CM-01, DS-06, QA-04 | sales, discovery-call, qualification, crm, call-prep | Turn CRM records and account research into a discovery-call plan: hypotheses to test, a question seq... |
 | [Forecast Commit Review — Evidence per Deal for Com](domain-sales-customer/sales/sales_forecast_commit_review.md) | sales-customer/sales | RT-05, AG-02, NE-10, QA-04 | sales, forecasting, commit, pipeline-review, sales-management | Prepare a rep's or manager's forecast call: place each deal closing this period in Commit, Best Case... |
 | [Mutual Close Plan — A Buyer-Owned Path from Today ](domain-sales-customer/sales/sales_mutual_close_plan.md) | sales-customer/sales | QA-08, DP-07, RP-02, OC-03 | sales, mutual-action-plan, close-plan, enterprise-sales, buyer-enablement | Build a mutual action plan the buyer can own and forward internally: work backward from the buyer's ... |
 | [Outbound Prospecting Sequence — Account Tiers, Tri](domain-sales-customer/sales/sales_outbound_prospecting_sequence.md) | sales-customer/sales | DS-06, RT-05, OC-03, DP-13 | sales, outbound, prospecting, account-based, cadence | Design the strategy layer of an outbound motion for a named account list: tier accounts by fit and a... |
+| [Pipeline Risk Assessment & Deal Prioritization](domain-sales-customer/sales/sales_pipeline_risk_assessment.md) | sales-customer/sales | ST-01, ST-02, CM-01, DS-06, QA-04 | sales, pipeline-review, deal-risk, prioritization, forecasting | Audit an open pipeline for stalled deals, single-threaded relationships, and missing buying signals,... |
+| [Win/Loss Analysis — Interviews With the Buyer, Not](domain-sales-customer/sales/sales_win_loss_analysis.md) | sales-customer/sales | RT-09, RT-05, CM-01, QA-04, OC-03 | win-loss, sales-effectiveness, competitive-intelligence, buyer-research, go-to-market | Run win/loss analysis that produces decisions: buyers interviewed by someone who was not on the deal... |
 | [Escalation Response Drafter — The Customer Reply a](domain-sales-customer/support/support_escalation_response_drafter.md) | sales-customer/support | RP-02, NE-20, CM-02, QA-01 | support, escalation, customer-communication, handoff, incident-communication | For one escalated support case, draft two linked artifacts from the same facts: a customer-facing re... |
 | [Support Ticket Triage and Routing — Severity from ](domain-sales-customer/support/support_ticket_triage_and_routing.md) | sales-customer/support | DS-06, RT-10, OC-03, QA-01 | support, triage, ticket-routing, sla, severity | Triage a live batch of customer support tickets: assign severity from observable customer impact, de... |
 
@@ -5957,15 +5959,6 @@
 | [Unit Test Generation and Enhancement](domain-software-engineering/testing/testing_unit_test_generation.md) | testing | ST-01, ST-02, ST-03, DT-01, QA-02 | testing, unit-tests, tdd, quality-assurance, automation | Generate comprehensive unit tests following best practices and AAA pattern for code correctness |
 | [Validating Non-Deterministic and Multi-Variant Sys](domain-software-engineering/testing/testing_nondeterministic_variant_validation.md) | testing | ST-01, ST-02, RT-02, DS-02, QA-02 | testing, non-deterministic, variants, property-based-testing, reproducibility | Testing strategies for systems that produce multiple valid outputs including invariant-based testing... |
 | [Visual Regression Testing Setup and Strategy](domain-software-engineering/testing/testing_visual_regression.md) | testing | ST-01, ST-02, RT-02, ST-03, QA-02 | testing, visual-regression, ui-testing, screenshot-testing, design-system | Design visual regression testing to detect unintended UI changes and ensure visual consistency |
-
-## Specialized Fields
-
-**Total:** 2 prompts
-
-| Title | Category | Techniques | Keywords | Description |
-|-------|----------|------------|----------|-------------|
-| [Patent Landscape Scan — Search Strategy, Clusterin](domain-specialized-fields/ip/patent_landscape_scan.md) | specialized-fields/ip | ST-01, ST-02, RT-02, DS-01, DS-02 | intellectual-property, patent-search, freedom-to-operate, whitespace-analysis, competitive-intelligence | Plan a patent landscape scan and whitespace analysis for a defined technology area and goal (freedom... |
-| [Legal Research Plan — Map the Authorities Before O](domain-specialized-fields/legal/legal_research_plan.md) | specialized-fields/legal | ST-01, ST-02, RT-02, DS-01, DS-02 | legal, legal-research, case-law, jurisdiction, search-strategy | Plan legal research before paid-database time: analyze jurisdiction and the relevant courts, identif... |
 
 ## Voice Conversational Ui
 

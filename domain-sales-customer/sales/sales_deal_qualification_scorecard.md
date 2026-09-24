@@ -20,7 +20,7 @@ updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/sales/sales_mutual_close_plan.md
   - domain-sales-customer/sales/sales_forecast_commit_review.md
-  - domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md
+  - domain-sales-customer/sales/sales_discovery_call_preparation.md
 ---
 
 # Deal Qualification Scorecard
@@ -37,9 +37,9 @@ and naming the single gap that most changes the answer.
   being carried rather than worked.
 - You inherited an opportunity and need to know what is known versus assumed.
 - **Not this prompt if** you are preparing the next discovery call — use
-  `domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md`,
+  `domain-sales-customer/sales/sales_discovery_call_preparation.md`,
   which plans the questions; this prompt grades the answers. For a whole-pipeline
-  sweep use `workflow_sales_pipeline_risk_assessment.md`; for lead scoring before an
+  sweep use `sales_pipeline_risk_assessment.md`; for lead scoring before an
   opportunity exists use `domain-agentic-resources/skills/marketing/revops/`.
 
 ## Inputs / Context
@@ -226,5 +226,5 @@ blocks QUALIFIED regardless of total.
   QUALIFIED, turn the gaps into dated buyer-owned steps.
 - `domain-sales-customer/sales/sales_forecast_commit_review.md` — the forecast
   category this verdict feeds.
-- `domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md`
+- `domain-sales-customer/sales/sales_discovery_call_preparation.md`
   — plan the call that closes the largest gap.

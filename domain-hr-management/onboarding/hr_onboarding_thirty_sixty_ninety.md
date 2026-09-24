@@ -38,7 +38,7 @@ unnamed, or if day 90 has no decision attached.
 
 **When NOT to use:**
 - You mean **customer** onboarding — that is
-  `../../domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md`
+  `../../domain-sales-customer/customer-success/cs_onboarding_plan.md`
   and `../../domain-agentic-resources/skills/marketing/onboarding-cro/`. All 39 of this
   repository's onboarding hits are customer, education, lab or ministry onboarding; this
   is the employee one.
