@@ -16,6 +16,9 @@ tags:
   - evidence-based
   - manager-writing
   - calibration
+  - nominating-a-report
+  - ready-to-advance
+  - advocating-for-employee
 updated: "2026-09-24"
 related_prompts:
   - domain-hr-management/performance-reviews/hr_manager_writing_employee_review.md

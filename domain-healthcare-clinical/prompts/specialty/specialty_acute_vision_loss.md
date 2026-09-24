@@ -14,14 +14,31 @@ tags:
   - neuro-ophthalmology
   - emergency-medicine
   - specialty-assessment
+  - sudden-blindness
+  - curtain-over-eye
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/specialty/specialty_red_eye_workup.md
+  - domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md
+  - domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md
 ---
 
 ## Objective
 
 Assess a patient with sudden or rapidly progressive vision loss: establish laterality (monocular vs binocular), duration (transient vs persistent), and pain; localize the lesion along the visual pathway; identify the time-critical diagnoses (central retinal artery occlusion, giant cell arteritis, macula-on retinal detachment, acute angle closure, pituitary apoplexy, occipital stroke); and write the immediate orders and referral timing.
 
-Distinct from [`specialty_red_eye_workup.md`](specialty_red_eye_workup.md), which starts from a red eye; most acute vision loss here presents with a white, quiet eye.
+Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. Vision loss with a neurologic deficit, or an unstable patient, is escalated now (stroke pathway), not after this output.
+
+## When to Use
+
+- Sudden or rapidly progressive loss of vision in one or both eyes, transient or persistent, usually in a white, quiet eye.
+- A patient over 50 with new visual symptoms plus headache, jaw pain or raised inflammatory markers (the giant cell arteritis question).
+- Flashes, new floaters or a spreading curtain, where retinal detachment has to be recognized and timed.
+- An ED or urgent-care consult that needs localization, immediate orders and referral timing now.
+
+**Not this prompt if:**
+- The eye is red and painful and the workup starts there → [`specialty_red_eye_workup.md`](specialty_red_eye_workup.md); most acute vision loss here presents with a white, quiet eye.
+- The presentation is a hemispheric stroke in which vision is one deficit among many and the question is reperfusion → [`acute_stroke_tpa_thrombectomy.md`](../acute-care/acute_stroke_tpa_thrombectomy.md).
 
 ## Inputs
 
@@ -35,11 +52,12 @@ Distinct from [`specialty_red_eye_workup.md`](specialty_red_eye_workup.md), whic
 
 ## Role
 
-Senior attending neuro-ophthalmologist taking an ED consult. Localize first, then act on the time-critical diagnosis without waiting for the perfect test.
+Senior attending neuro-ophthalmologist supporting the treating clinician on an ED consult. Localize first, then act on the time-critical diagnosis without waiting for the perfect test.
 
 ## Reasoning Steps
 
 1. **Confirm and quantify the loss.** Visual acuity each eye with pinhole (pinhole improvement = refractive/media cause), confrontation fields each eye separately, RAPD, color. Document as a baseline — every subsequent decision references it.
+   - **Stop and escalate now if:** vision loss with any focal neurologic deficit or within the stroke-treatment window (stroke code); suspected CRAO (stroke-equivalent pathway); age >50 with headache, jaw claudication or scalp tenderness (IV steroids today); thunderclap headache with ophthalmoplegia or hypotension (pituitary apoplexy); red painful eye with high IOP (angle closure). Act on these before completing the rest of the workup.
 
 2. **Monocular or binocular.**
    - **Monocular** → lesion anterior to the chiasm: media (cornea, lens, vitreous), retina, or optic nerve.
@@ -77,7 +95,7 @@ Senior attending neuro-ophthalmologist taking an ED consult. Localize first, the
 7. **Giant cell arteritis steroid dosing.**
    - Vision loss or amaurosis present: methylprednisolone 500–1000 mg IV daily × 3 days, then prednisone 1 mg/kg/day (commonly 60 mg).
    - No visual symptoms: prednisone 40–60 mg daily.
-   - Temporal artery biopsy (≥1–2 cm segment) within 1–2 weeks of starting steroids — yield persists; temporal artery ultrasound (halo sign) is an accepted alternative in experienced centers. Add aspirin per local practice; bone protection; PJP prophylaxis consideration on prolonged high-dose steroids; tocilizumab as steroid-sparing therapy is rheumatology's call.
+   - Temporal artery biopsy — segment ≥1.5 cm (per local pathology guidance) — within 1–2 weeks of starting steroids — yield persists; temporal artery ultrasound (halo sign) is an accepted alternative in experienced centers. Add aspirin per local practice; bone protection; PJP prophylaxis consideration on prolonged high-dose steroids; tocilizumab as steroid-sparing therapy is rheumatology's call.
 
 ## Output Format
 
@@ -108,6 +126,22 @@ PITFALLS TO AVOID:
 - [ ]
 ```
 
+## Verification
+
+- [ ] Laterality was established by covering each eye, and the localization matches the exam (RAPD, fields, fundus) rather than the patient's description alone.
+- [ ] Each time-critical diagnosis (CRAO, GCA, macula-on detachment, angle closure, apoplexy, occipital stroke) is marked present or excluded, with the finding that decides it.
+- [ ] In any patient over 50, ESR/CRP/platelets were obtained or GCA explicitly excluded before calling NAION or embolic disease.
+- [ ] Steroid, thrombolysis and referral-timing statements name the pathway or trial used (ONTT, local stroke protocol, rheumatology/ophthalmology policy); confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+- [ ] The output states what finding would change the working diagnosis (e.g., normal inflammatory markers and a crowded fellow disc → NAION).
+
+## False-Positive Prevention
+
+- **A normal fundus read as "nothing wrong."** A normal fundus fits retrobulbar optic neuritis, early CRAO before whitening, and occipital stroke — check RAPD and fields before reassuring or calling the loss functional.
+- **A monocular complaint taken at face value.** Homonymous hemianopia is often reported as loss "in one eye"; test each eye's fields separately before localizing anterior to the chiasm.
+- **A modestly raised ESR/CRP over-called as GCA — or normal values used to dismiss it.** ESR rises with age and anemia, and a minority of GCA has normal markers; weigh jaw claudication, PMR and temporal-artery findings rather than one number.
+- **Pinhole-correctable blur treated as neuro-ophthalmic.** Improvement with pinhole points to refractive or media causes (cataract, cornea) — it does not need brain imaging.
+- **An old fundus finding blamed for new loss.** Disc drusen, a tilted disc or old chorioretinal scars may be longstanding; compare with prior exams before attributing the acute loss to them.
+
 ## Worked Example
 
 **Input:** 74 y/o F with 3 weeks of new bitemporal headaches, pain chewing, fatigue, morning shoulder stiffness. Woke today with loss of the lower half of vision in the left eye. Two days ago had a 5-minute episode of "graying out" in the left eye that resolved. Exam: VA OD 20/25, OS 20/200. Left RAPD. Inferior altitudinal defect OS. Fundus OS: pale, swollen disc; OD: normal disc with normal cup. Tender, nodular, pulseless left temporal artery. ESR 88, CRP 64 mg/L, platelets 520. Neuro exam otherwise normal.
@@ -132,7 +166,7 @@ TIME-CRITICAL ACTIONS (now):
 
 WORKUP:
 - Labs: CBC, BMP, glucose, A1c baseline (steroid hyperglycemia), LFTs, QuantiFERON/hepatitis B screen if prolonged immunosuppression anticipated.
-- Temporal artery biopsy within 1–2 weeks (≥1.5 cm segment); temporal artery ultrasound in the interim if available.
+- Temporal artery biopsy within 1–2 weeks, segment ≥1.5 cm (per local pathology guidance); temporal artery ultrasound in the interim if available.
 - Consider vascular imaging (CTA/MRA or PET) for large-vessel involvement if symptoms (arm claudication, bruits, BP asymmetry).
 
 TREATMENT:

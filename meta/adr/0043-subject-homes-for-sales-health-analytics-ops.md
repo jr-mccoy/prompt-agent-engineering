@@ -3,7 +3,8 @@
 ## Status
 
 Accepted. Implemented in coverage Wave 1
-([`../COVERAGE_ROADMAP.md`](../COVERAGE_ROADMAP.md)).
+([`../COVERAGE_ROADMAP.md`](../COVERAGE_ROADMAP.md)). The deferred routing
+regression cases shipped in coverage Wave 5 — see the amendment below.
 
 ## Context
 
@@ -80,3 +81,14 @@ the neighbours.
   Future additions to either domain must sweep those skills first.
 - Routing regression cases for the new scopes are deferred to coverage Wave 5.
   They must pass the leakage audit (ADR-0037).
+
+## Amendment, 2026-09-24 — deferred regression cases shipped
+
+The consequence above deferred routing regression cases for the new scopes to
+coverage Wave 5. They shipped as `case-121`..`case-146` in
+`pae-engine/tests/data/search_routing_regression.v1.json`, labelled
+`coverage_wave_judgment`. A re-audit with `pae_eval.leakage` in the coverage
+audit pass found no title-token or id-tail containment, a median
+query-to-target overlap of 0.24, a maximum Jaccard of 0.33 against
+`ROUTING_REFERENCE.md` phrases and 0.14 against any other case, so the ADR-0037
+condition holds. The decision itself is unchanged.

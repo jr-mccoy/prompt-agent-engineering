@@ -16,6 +16,7 @@ tags:
   - audit-response
   - recruitment
   - prevailing-wage
+  - employer-green-card
 updated: "2026-09-24"
 reasoning:
   styles: [evidential, procedural, analytic]

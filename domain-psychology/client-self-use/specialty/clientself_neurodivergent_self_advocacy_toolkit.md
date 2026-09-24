@@ -17,18 +17,21 @@ tags:
   - adhd
   - self-advocacy
   - accommodations
+  - sensory-overload
+  - telling-my-employer
+  - hate-phone-calls
+  - burnt-out
 intended_use: model-testing
 updated: "2026-09-24"
 related_prompts:
   - domain-psychology/client-self-use/communication-system/clientself_workplace_accommodations_request.md
   - domain-psychology/client-self-use/coping-by-concern/clientself_adhd_external_scaffold_designer.md
   - domain-psychology/client-self-use/identity-transitions/clientself_post_diagnosis_adjustment.md
-  - domain-psychology/populations/neurodivergent-adult/psychology_neurodivergent_affirming_treatment_planning.md
 ---
 
 # Neurodivergent Self-Advocacy & Accommodation Toolkit
 
-> **IF YOU ARE HAVING THOUGHTS OF SUICIDE OR MIGHT NOT BE SAFE: call or text 988 (Suicide & Crisis Lifeline, US; text is available if phone calls are hard), call 911, or go to your nearest emergency department (ED) now.** Outside the US, use your local emergency number. This is a self-advocacy aid — it is **not** a diagnosis, legal advice, or a substitute for a clinician.
+> **IF YOU ARE HAVING THOUGHTS OF SUICIDE OR MIGHT NOT BE SAFE: call or text 988 (Suicide & Crisis Lifeline, US; text is available if phone calls are hard), call 911, or go to your nearest emergency department (ED) now.** Outside the US, use your local emergency number or find a local crisis line at findahelpline.com. This is a self-advocacy aid — it is **not** a diagnosis, legal advice, or a substitute for a clinician.
 
 ## Objective
 

@@ -16,6 +16,9 @@ tags:
   - seq
   - questionnaire-scoring
   - usability-metrics
+  - score-looks-wrong
+  - compare-versions
+  - ease-of-use
 updated: "2026-09-24"
 related_prompts:
   - domain-research-academic/research_survey_instrument_designer.md

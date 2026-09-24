@@ -15,6 +15,7 @@ tags:
   - trust-and-safety
   - staff-wellbeing
   - organizational-red-team
+  - mods-quitting
 updated: "2026-09-24"
 reasoning:
   styles: [systems, analytic, protective, adversarial]
@@ -43,7 +44,7 @@ The framing is structural for the same reason the community review is. Blaming i
 
 **When to use:**
 - Your moderators or trust-and-safety staff are under sustained harassment, or have been.
-- Moderator turnout, turnover, or enforcement consistency has dropped, and you want to know whether pressure is the cause.
+- Moderator activity, turnover, or enforcement consistency has dropped, and you want to know whether pressure is the cause.
 - A faction seems to be getting its way with moderators more than its size would explain.
 - You are designing a moderation program and want to build resilience in from the start.
 

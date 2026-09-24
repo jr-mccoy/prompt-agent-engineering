@@ -16,6 +16,7 @@ tags:
   - oecd-guidelines
   - international-tax
   - documentation
+  - intercompany-charges
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, comparative, evidential]

@@ -16,6 +16,9 @@ tags:
   - nonfiction-film
   - pitch
   - ethics
+  - film-fund-application
+  - real-life-film
+  - before-filming
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/script-stage/writing_screenplay_framework.md

@@ -16,6 +16,7 @@ tags:
   - brief-strategy
   - coalition
   - supreme-court
+  - friend-of-court
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/appellate/legal_petition_for_review_drafter.md
@@ -25,6 +26,8 @@ related_prompts:
 ---
 
 **Objective:** Decide whether and how an organization, government, or individual should participate as amicus in a pending appeal or petition, and produce a strategy memo that names the one or two angles only this amicus can credibly add, maps them against the party's brief and other expected amici, sets coordination rules, and lays out the filing mechanics and risks.
+
+> **Scope guard — attorney-facing only.** For licensed appellate counsel (or counsel for a prospective amicus). If the person running it appears to be an unrepresented party, stop and route them to `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_authority_router.md` (appellate pro bono programs, law-school appellate clinics, legal aid) rather than producing strategy. This guard is not a disclaimer; the ban on "consult an attorney" boilerplate below still applies.
 
 **When to Use:** When a client or coalition is invited (or wants) to support a party at the petition stage or on the merits; when a party's counsel is organizing an amicus program and needs to assign angles; when deciding between filing alone, joining a coalition brief, or not filing.
 
@@ -126,7 +129,7 @@ related_prompts:
 - Anti-redundancy: economic impact overlaps with the trade association → limit to access effects, not revenue.
 - Signal: health-care providers who rely on the program, not only the petitioner, see the issue as recurring and important.
 - Risk: survey results could be read to show the program is working in some regions — address in the brief rather than omit.
-- Mechanics: consent/leave, timing, and disclosure steps drawn only from the supplied rule text; any gap marked `[VERIFY]`.
+- Mechanics: timing, notice to the parties, word limits, and disclosure steps drawn only from the supplied rule text; no consent or leave step is assumed — the Supreme Court's amicus rule was amended effective Jan. 1, 2023 and no longer requires party consent or a motion for leave for most amicus briefs `[VERIFY: current Rule 37]`; any gap marked `[VERIFY]`.
 
 ---
 

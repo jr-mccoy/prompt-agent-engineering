@@ -16,6 +16,8 @@ tags:
   - audit
   - remediation
   - legally-careful
+  - gender-pay-gap
+  - unfair-salaries
 updated: "2026-09-24"
 related_prompts:
   - domain-hr-management/people-ops/hr_compensation_banding.md

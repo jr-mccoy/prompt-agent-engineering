@@ -16,6 +16,7 @@ tags:
   - means-test
   - eligibility
   - restructuring
+  - buried-in-debt
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, comparative, strategic]
@@ -160,7 +161,7 @@ related_prompts:
 >
 > **4. Comparison (Subchapter V vs. Chapter 11 vs. Chapter 7).** Subchapter V keeps management in possession with an appointed Subchapter V trustee in a facilitation role `[VERIFY: §1183 duties]`, removes the creditor-committee default, and relaxes plan-confirmation conditions that would otherwise give the bank's large unsecured deficiency claim a veto `[VERIFY: §1191 confirmation standard]`. Chapter 11 offers the same lease-rejection tool at materially higher administrative cost. Chapter 7 ends operations; the owner's guarantee exposure is untouched in either business chapter and is fully crystallized in Chapter 7.
 >
-> **6. Recommendation.** Subchapter V if the debt limit is confirmed; otherwise traditional Chapter 11 with an early cash-collateral fight expected. **Flip conditions:** (a) the verified limit is below aggregate qualifying debt; (b) the bank's collateral value exceeds its claim (changes the deficiency-claim dynamics); (c) the sales-tax liability is assessed at a higher figure — priority tax treatment must be paid in full over the plan term regardless of chapter `[VERIFY: §1129(a)(9)(C) timing]`.
+> **6. Recommendation.** Subchapter V if the debt limit is confirmed; otherwise traditional Chapter 11 with an early cash-collateral fight expected. **Flip conditions:** (a) the verified limit is below aggregate qualifying debt; (b) the bank's collateral value exceeds its claim (changes the deficiency-claim dynamics); (c) the sales-tax liability is assessed at a higher figure — a priority tax claim must be paid in full under either reorganization chapter under consideration — in Chapter 11 (including Subchapter V), in regular installment payments within 5 years after the order for relief `[VERIFY: §1129(a)(9)(C)]`; in Chapter 13, in full deferred cash payments over the plan unless the holder agrees otherwise `[VERIFY: §1322(a)(2)]` — which raises the required plan payments; Chapter 7 has no plan, so the tax is instead paid from the estate in priority order and, if nondischargeable, survives `[VERIFY: §§507(a)(8), 523(a)(1)]`.
 
 ---
 

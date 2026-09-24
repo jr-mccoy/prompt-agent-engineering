@@ -16,6 +16,9 @@ tags:
   - direct-mail
   - donor-retention
   - year-end-giving
+  - asking-for-donations
+  - lapsed-donors
+  - donation-request-email
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/marketing/copywriting/SKILL.md

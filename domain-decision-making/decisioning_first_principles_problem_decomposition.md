@@ -20,9 +20,9 @@ tags:
   - innovation
 updated: "2026-02-26"
 related_prompts:
-  - decision-making/decisioning_logic_problem_solver.md
-  - decision-making/decisioning_multi_constraint_optimizer.md
-  - decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md
+  - domain-decision-making/decisioning_logic_problem_solver.md
+  - domain-decision-making/decisioning_multi_constraint_optimizer.md
+  - domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md
   - productivity/validation/validation_disconfirmation_pass.md
 ---
 

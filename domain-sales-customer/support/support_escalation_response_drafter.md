@@ -15,6 +15,9 @@ tags:
   - handoff
   - incident-communication
   - customer-support
+  - angry-customer
+  - reply-to-complaint
+  - pass-to-engineering
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/support/support_ticket_triage_and_routing.md

@@ -1,8 +1,8 @@
 # Domain-Legal Expansion Roadmap
 
-**Update 2026-09-24:** Phase 2B (12) and the rest of Phase 2C (35) shipped in coverage Wave 3 ([`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md)). Phases 3 and 4 remain.
+**Update 2026-09-24:** Phase 2B (12) and the rest of Phase 2C (35) shipped in coverage Wave 3 ([`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md)). Phase 3 (10 + [`field_guide.md`](field_guide.md)) and Phase 4 (10) shipped in the coverage audit pass the same day. **Every phase in this roadmap is now built.**
 
-**Status as of 2026-05-11:** Phase 1 (25 prompts) and Phase 2A (42 prompts: 4 deferred from Phase 1 + 38 new across 6 subdirectories) shipped. Cumulative: 67 prompts. This document tracks the remaining ~67 prompts planned for the legal practitioner library.
+**Historical status as of 2026-05-11:** Phase 1 (25 prompts) and Phase 2A (42 prompts: 4 deferred from Phase 1 + 38 new across 6 subdirectories) shipped. Cumulative: 67 prompts. This document tracks the remaining ~67 prompts planned for the legal practitioner library.
 
 Filing convention: `legal_{specific_function}.md` inside the relevant practice-area subdirectory. All prompts follow the structural conventions established in Phase 1: required jurisdiction input, explicit no-fabrication clauses for citations, locked output formats, verification block, false-positive matrix, no generic refusal/safety boilerplate.
 
@@ -134,7 +134,7 @@ These were the daily workflows of corporate counsel, contract managers, and lega
 |---|---|
 | `legal_conflicts_check_memo.md` | Conflicts analysis under MRPC 1.7 / 1.9 / 1.10 with imputation and waiver options |
 | `legal_sanctions_risk_premortem.md` | Pre-mortem on sanctions exposure under Rule 11, §1927, inherent power, fee-shifting statutes |
-| `legal_unauthorized_practice_jurisdictional_assessment.md` | UPL analysis for cross-border or remote practice, including pro hac vice, in-house registration, multi-jurisdictional practice rules |
+| `legal_unauthorized_practice_jurisdiction_assessment.md` | UPL analysis for cross-border or remote practice, including pro hac vice, in-house registration, multi-jurisdictional practice rules |
 
 ### Phase 2C — Specialty Practice Areas — ✓ COMPLETE (35 prompts shipped 2026-09-24, coverage Wave 3; `family/` delivered earlier as `divorce/` + `custody/`)
 
@@ -243,7 +243,9 @@ Attorney-side counterparts remain in the practitioner library (`employment-labor
 
 ---
 
-## Phase 3 — Field Guide and Cross-Cutting Resources (~10 prompts)
+## Phase 3 — Field Guide and Cross-Cutting Resources (~10 prompts) — SHIPPED 2026-09-24
+
+All ten were built in the folders listed. The field guide ships as a navigation guide (task-to-folder map, shared placeholders, stage-by-stage civil-case map, per-area start points); the pleading-standard, captioning, privilege-map, evidence-objection and deadline cheat sheets below were deliberately **not** written, because they would state rules and figures without sources — prompts route those to `[VERIFY]` instead.
 
 ### `field_guide.md` (one document, not a prompt)
 - Citation conventions (Bluebook, ALWD, state-specific)
@@ -269,7 +271,9 @@ Attorney-side counterparts remain in the practitioner library (`employment-labor
 
 ---
 
-## Phase 4 — Stretch / Specialized (Authored Last)
+## Phase 4 — Stretch / Specialized (Authored Last) — SHIPPED 2026-09-24
+
+Placed in existing folders: `litigation/` (APA review, class certification, arbitration demand), `regulatory-compliance/` (securities disclosure, environmental permits, Stark/AKS, election law), `corporate-ma/` (antitrust merger clearance), `employment-labor/` (ADA dialogue), `contracts-transactional/` (government-contract dispute).
 
 These are valuable but lower-priority because the audience is narrower or because Phase 1–3 covers most evaluation needs.
 
@@ -297,8 +301,8 @@ These are valuable but lower-priority because the audience is narrower or becaus
 | Phase 2B (shipped 2026-09-24) | regulatory-compliance, privacy-data, ethics-professional-conduct | 12 | 79 |
 | Phase 2C (shipped 2026-09-24) | bankruptcy-restructuring, tax, immigration, family, criminal, appellate, real-estate, trusts-estates | 35 | 114 |
 | Personal Self-Advocacy (shipped, litigant-facing track) | cross-cutting, workplace, harassment-stalking, defamation-reputation, ip-theft, consumer-scams, housing-landlord-tenant, identity-theft, debt-collection, small-claims | 36 | — |
-| Phase 3 | field_guide.md + cross-cutting | 10 | 124 |
-| Phase 4 (stretch) | specialized topics | 10 | 134 |
+| Phase 3 (shipped 2026-09-24) | field_guide.md + discovery, litigation | 10 | 124 |
+| Phase 4 (shipped 2026-09-24) | litigation, regulatory-compliance, corporate-ma, employment-labor, contracts-transactional | 10 | 134 |
 
 ---
 

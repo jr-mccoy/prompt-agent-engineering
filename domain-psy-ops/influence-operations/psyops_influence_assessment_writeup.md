@@ -15,6 +15,7 @@ tags:
   - confidence-language
   - publication
   - influence-operations
+  - headline-too-strong
 updated: "2026-09-24"
 reasoning:
   styles: [evaluative, evidential, adversarial]

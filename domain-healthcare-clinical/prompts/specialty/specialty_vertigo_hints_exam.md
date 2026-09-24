@@ -14,14 +14,32 @@ tags:
   - neuro-otology
   - emergency-medicine
   - specialty-assessment
+  - dizzy-patient
+  - room-spinning
+  - stroke-or-inner-ear
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_dizziness_vertigo.md
+  - domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_mri_brain.md
 ---
 
 ## Objective
 
 Given a dizzy patient and a described bedside oculomotor exam, determine which exam applies (HINTS+ for acute vestibular syndrome, Dix-Hallpike and supine roll test for triggered episodic vertigo), grade each component with the correct interpretation, identify misapplied or incompletely performed tests, and produce a committed central-vs-peripheral conclusion with the imaging, treatment maneuver, and disposition it implies.
 
-Distinct from [`workup_dizziness_vertigo.md`](../reasoning/workup_dizziness_vertigo.md), which runs the whole dizziness workup and treatment plan. This prompt is the exam itself: correct selection, execution, grading, and documentation of the bedside oculomotor and positional tests — where most real-world misclassification happens.
+Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with new focal neurologic signs goes to the stroke pathway now, not after this output.
+
+## When to Use
+
+- Planning or reviewing the bedside exam for a dizzy patient — which test applies (HINTS+ vs Dix-Hallpike and supine roll test).
+- Grading head impulse, nystagmus, skew, and hearing, and turning them into a central-vs-peripheral call.
+- Auditing a documented "HINTS negative" or positional exam for misapplied or incomplete testing.
+
+**Not this prompt if:**
+
+- The whole dizziness workup and treatment plan — [`workup_dizziness_vertigo.md`](../reasoning/workup_dizziness_vertigo.md). This prompt is the exam itself: correct selection, execution, grading, and documentation of the bedside oculomotor and positional tests — where most real-world misclassification happens.
+- Posterior circulation stroke is established and the question is reperfusion — `acute-care/acute_stroke_tpa_thrombectomy.md`.
 
 ## Inputs
 
@@ -36,11 +54,12 @@ Distinct from [`workup_dizziness_vertigo.md`](../reasoning/workup_dizziness_vert
 
 ## Role
 
-Senior attending neuro-otologist reviewing a colleague's bedside exam. Precise about what each finding means, and blunt when a test was applied to the wrong patient.
+Senior attending neuro-otologist reviewing a colleague's bedside exam and supporting the treating clinician. Precise about what each finding means, and blunt when a test was applied to the wrong patient.
 
 ## Reasoning Steps
 
 1. **Pick the right exam for the syndrome.**
+   - **Stop and escalate first if:** new focal neurologic deficit (dysarthria, diplopia, limb ataxia, weakness, facial numbness), sudden severe headache or neck pain (dissection, cerebellar hemorrhage), inability to sit or stand unsupported, or reduced consciousness → activate the stroke pathway and image now; the bedside exam does not delay it.
    - **Acute vestibular syndrome (AVS)** — continuous vertigo for hours to days, nausea, gait instability, spontaneous nystagmus → HINTS+.
    - **Triggered episodic** — seconds of vertigo with position change, asymptomatic between → Dix-Hallpike and supine roll test. HINTS is not applicable.
    - **Spontaneous episodic** — episodes of minutes to hours, often normal between → exam between episodes is usually normal; history drives it (TIA, vestibular migraine, Ménière).
@@ -115,6 +134,21 @@ PITFALLS TO AVOID:
 - [ ]
 ```
 
+## Verification
+
+- [ ] Exam validity is checked first: the patient is dizzy and nystagmic at the time of HINTS, and triggered episodic vertigo is sent to positional testing instead.
+- [ ] Each HINTS+ component is graded by side with the actual finding (corrective saccade or none), not "positive/negative".
+- [ ] A central call is made on any single central component; a peripheral call only when all four components are concordant.
+- [ ] Examiner training is stated, and an uncertain or incomplete exam defaults to imaging and admission.
+- [ ] Vestibular suppressant and steroid doses are checked for age, falls risk, and diabetes; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+
+## False-Positive Prevention
+
+- A normal head impulse in a patient without acute vestibular syndrome (between vestibular-migraine attacks, non-vestibular dizziness) read as central.
+- A long-standing vertical phoria or fourth-nerve palsy on cover testing called skew deviation — check history and old photographs.
+- Pre-existing or age-related hearing asymmetry counted as new unilateral hearing loss.
+- Direction change with head position on the supine roll test (horizontal-canal BPPV) mistaken for central direction-changing gaze nystagmus.
+
 ## Worked Example
 
 **Input:** 52 y/o M, HTN, 18 h of constant vertigo and vomiting after a week-long viral URI. ED note: "HINTS reassuring — nystagmus right-beating, HIT negative, no skew." Your own exam: spontaneous right-beating horizontal-torsional nystagmus in primary gaze, stronger on right gaze, weaker on left gaze, still right-beating on left gaze; suppresses with fixation. HIT: clear corrective saccade on rapid head turn to the left; right normal. Alternate cover: no vertical refixation. Finger rub symmetric, no new hearing loss. Walks with a wide base, leans left, able to walk unaided. No dysarthria, dysmetria, or facial weakness. CT head normal.
@@ -122,7 +156,7 @@ PITFALLS TO AVOID:
 **Output:**
 
 ```
-SYNDROME: Acute vestibular syndrome (continuous >24 h equivalent, spontaneous nystagmus) — HINTS+ indicated.
+SYNDROME: Acute vestibular syndrome — ongoing continuous vertigo with persistent nystagmus (HINTS applies while symptoms are continuous) — HINTS+ indicated.
 
 EXAM VALIDITY: Valid now (dizzy and nystagmic at exam). The ED note's "HIT negative" is ambiguous — "negative" is not a HINTS term. A normal HIT in AVS is the central finding. Re-examination shows an abnormal left HIT, so the ED documentation was likely inverted.
 
@@ -140,10 +174,10 @@ EXAM ERRORS IDENTIFIED:
 - CT head cited as reassurance; it contributes nothing to excluding posterior stroke.
 
 ACTION:
-- Imaging: MRI not required on a concordant peripheral HINTS+ by a trained examiner in a patient who can walk. Lower the threshold if symptoms worsen or new neuro signs appear.
-- Bedside treatment: no repositioning maneuver (not BPPV). Symptomatic: ondansetron 4 mg IV/PO, meclizine 25 mg PO q8h PRN or diazepam 2–5 mg for ≤48–72 h only.
+- Imaging (recommendation for the treating clinician): MRI can reasonably be deferred given a concordant peripheral HINTS+ by a trained examiner in a patient who can walk; recommend MRI if the examiner's HINTS training is uncertain, symptoms worsen, or new neuro signs appear.
+- Bedside treatment: no repositioning maneuver (not BPPV). Suggested symptomatic options: ondansetron 4 mg IV/PO, meclizine 25 mg PO q8h PRN or diazepam 2–5 mg for ≤48–72 h only.
 - Consider prednisone 60 mg daily with a short taper if within 72 h of onset — benefit on long-term recovery is uncertain.
-- Disposition: discharge once tolerating PO and ambulating safely; vestibular rehabilitation referral; follow-up in 1 week; return for new headache, diplopia, dysarthria, weakness, numbness, or inability to walk.
+- Disposition (recommendation): discharge is reasonable once tolerating PO and ambulating safely; vestibular rehabilitation referral; follow-up in 1 week; return for new headache, diplopia, dysarthria, weakness, numbness, or inability to walk.
 
 DOCUMENTATION LINE: "AVS with left-sided abnormal HIT (corrective saccade), unidirectional right-beating horizontal-torsional nystagmus suppressed by fixation, no skew, no new hearing loss — HINTS+ peripheral pattern, consistent with left vestibular neuritis."
 

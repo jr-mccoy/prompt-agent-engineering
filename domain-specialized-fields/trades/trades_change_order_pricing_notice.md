@@ -15,6 +15,9 @@ tags:
   - pricing
   - client-communication
   - contractor
+  - extra-work
+  - hidden-damage-found
+  - client-wants-changes
 updated: "2026-09-24"
 reasoning:
   styles: [quantitative, procedural, communicative]

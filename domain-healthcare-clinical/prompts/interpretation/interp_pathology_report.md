@@ -15,12 +15,33 @@ tags:
   - cancer-staging
   - biomarkers
   - interpretation
+  - biopsy-results
+  - new-cancer-diagnosis
+  - breast-cancer
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_lymphadenopathy.md
+  - domain-healthcare-clinical/prompts/specialty/medicine_oncology_case_framer.md
+  - domain-healthcare-clinical/prompts/pathophysiology/patho_oncogenesis_tumor_biology.md
 ---
 
 ## Objective
 
 Read a pathology report element by element, translate the diagnostic language into a clinical decision, identify what is missing or pending, check concordance with imaging and the clinical picture, and commit to the next step — re-biopsy, further surgery, systemic therapy referral, biomarker or germline testing, tumor board, or surveillance interval.
+
+Decision support for a licensed clinician: confirm staging, biomarker cut-offs, testing criteria, and any doses against the current guideline (AJCC, CAP, tumor-specific) and local formulary. A critical or unexpected malignant result is communicated to the treating team now, not after this output.
+
+## When to Use
+
+- A final surgical pathology, biopsy, or cytology report is back and you need it translated into the next decision.
+- Checking a report for missing elements, pending addenda, or radiology–pathology discordance before acting.
+- Deciding which biomarker, genomic, or germline testing the result triggers.
+- Setting a surveillance interval from a benign or premalignant result (polyps, thyroid FNA, cervical cytology).
+
+**Not this prompt if:**
+- The task is presenting the whole cancer case to tumor board — use `domain-healthcare-clinical/prompts/specialty/medicine_oncology_case_framer.md`.
+- The report is a microbiology culture — use `domain-healthcare-clinical/prompts/interpretation/interp_microbiology_culture_sensitivity.md`.
+- The question is choosing or explaining the chemotherapy regimen — use `domain-healthcare-clinical/prompts/pharmacology/pharm_chemotherapy_regimen_explainer.md`.
 
 ## Inputs
 
@@ -32,11 +53,13 @@ Read a pathology report element by element, translate the diagnostic language in
 
 ## Role
 
-Senior oncology attending (surgical or medical, as the specimen dictates) reading the final report with the chart open.
+Senior oncology attending (surgical or medical, as the specimen dictates) supporting the treating clinician; reads the final report with the chart open and commits to actions they can verify.
 
 ## Reasoning Steps
 
 1. **Identity and specimen.** Correct patient, laterality, site, procedure, and date. Preliminary/frozen-section diagnoses are provisional. Check for addenda (biomarkers often arrive as addenda) and amendments that change the diagnosis.
+
+   **Stop and escalate if:** a critical or unexpected result (new malignancy not anticipated, malignancy in a specimen sent as benign, infection such as TB or fungus in tissue) — confirm it has been communicated to the treating team promptly and documented; a diagnosis that is discordant with the clinical or imaging picture, or a wrong-patient/laterality mismatch — request pathology review before anyone acts on it.
 
 2. **Translate diagnostic language.** "Diagnostic of" / "consistent with" → act. "Suggestive of" / "suspicious for" / "atypical" → not definitive; usually more tissue before definitive oncologic surgery or chemotherapy. "Non-diagnostic" or "insufficient" → re-sample, not reassurance.
 
@@ -57,7 +80,7 @@ Senior oncology attending (surgical or medical, as the specimen dictates) readin
    - **NSCLC:** broad molecular panel before first-line systemic therapy in advanced non-squamous disease.
    - **Pending markers:** list them and do not finalize therapy until back.
 
-9. **Germline testing triggers.** Apply current criteria by tumor (e.g., all ovarian, pancreatic, and metastatic prostate cancers; triple-negative or early-onset breast cancer; dMMR tumors not explained by methylation; strong family history).
+9. **Germline testing triggers.** Apply current criteria by tumor (e.g., all ovarian, pancreatic, and metastatic prostate cancers; breast cancer — per ASCO–SSO 2024, offer BRCA1/2 testing to all newly diagnosed patients aged ≤65 and to selected patients >65 (personal/family history, ancestry, triple-negative, PARP-inhibitor eligibility); dMMR tumors not explained by methylation; strong family history).
 
 10. **Benign/premalignant outputs.** Colon polyps — surveillance interval by number, size, histology, and dysplasia per current US Multi-Society Task Force guidance (e.g., 1–2 tubular adenomas <10 mm → 7–10 years; adenoma ≥10 mm, villous component, or high-grade dysplasia → 3 years). Thyroid FNA Bethesda category → management tier. Cervical cytology → risk-based colposcopy pathway.
 
@@ -84,6 +107,22 @@ ACTION:
 5. [tumor board, surveillance interval]
 ```
 
+## Verification
+
+- [ ] Critical or discordant results flagged and their communication confirmed before routine interpretation.
+- [ ] Every action traced to a named report element (diagnosis line, margin, node count, biomarker, stage).
+- [ ] Stage labeled correctly as clinical vs pathologic, with the right prefix (y, r) and AJCC edition named.
+- [ ] Biomarker thresholds applied by the assay and score type reported; germline criteria attributed to a named guideline and year.
+- [ ] Missing or pending elements listed, with decisions that depend on them held.
+- [ ] States what would change the plan (addendum result, genomic score, germline result, re-review).
+
+## False-Positive Prevention
+
+- **Hedged language treated as definitive:** "suspicious for" or "atypical" acted on as cancer without more tissue.
+- **Discordant benign core accepted as reassurance** when it does not explain a high-suspicion imaging finding.
+- **Close margin over-called as inadequate** when it abuts a fascial plane or meets the tumor-specific definition of adequate.
+- **Thresholds transferred across assays:** PD-L1 TPS vs CPS, or HER2-low vs HER2-negative, applied to the wrong drug or tumor.
+
 ## Worked Example
 
 **Input:** 54 y/o F, post-menopausal (LMP 3 years ago), screen-detected 1.8 cm left breast mass (BI-RADS 5). Core biopsy: invasive ductal carcinoma. Underwent lumpectomy + sentinel node biopsy; plans whole-breast radiation. No neoadjuvant therapy. No known family history of breast/ovarian/pancreatic/prostate cancer. Final report: "Invasive carcinoma of no special type (ductal), Nottingham grade 2 (3+2+1 = 6). Tumor size 1.9 cm. Margins negative; closest posterior margin 1 mm (at pectoralis fascia). No lymphovascular invasion. Sentinel lymph nodes: 1 of 3 positive, 4 mm metastatic deposit, no extranodal extension. ER 95% strong, PR 70% moderate, HER2 IHC 2+, ISH negative (HER2/CEP17 ratio 1.3, average HER2 copy number 2.8). Ki-67 18%. pT1c pN1a(sn)."
@@ -105,6 +144,6 @@ ACTION:
 1. Surgery: complete. Axillary dissection not required — meets Z0011-type criteria (T1–2, 1–2 positive sentinel nodes, breast-conserving surgery with planned whole-breast radiation, no neoadjuvant therapy).
 2. Systemic: send a 21-gene recurrence score — post-menopausal with 1–3 positive nodes; RS ≤25 → endocrine therapy alone (no chemotherapy benefit in this group); RS >25 → chemotherapy then endocrine therapy. Endocrine therapy: anastrozole 1 mg daily for at least 5 years; baseline DEXA; calcium/vitamin D. Node-positive stage II HR+/HER2− disease is eligible for adjuvant ribociclib with an aromatase inhibitor — discuss with medical oncology. Not eligible for adjuvant abemaciclib on high-risk criteria (1 node, grade 2, <5 cm).
 3. Radiation: whole-breast radiation (the premise for omitting ALND); radiation oncology to decide on regional nodal irradiation.
-4. Germline testing: not triggered by age or histology here; offer if family history changes or per institutional universal-testing policy.
+4. Germline testing: offer BRCA1/2 testing — per ASCO–SSO 2024 guidance, all newly diagnosed breast-cancer patients aged ≤65 are offered it (she is 54), regardless of family history; genetic counseling per local pathway; a pathogenic variant would change surgical, risk-reduction, and adjuvant (PARP-inhibitor) discussions.
 5. Present at multidisciplinary tumor board; survivorship plan with annual mammography starting 6 months after radiation.
 ```

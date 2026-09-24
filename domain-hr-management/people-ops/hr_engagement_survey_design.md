@@ -16,6 +16,9 @@ tags:
   - anonymity
   - action-planning
   - people-ops
+  - low-morale
+  - what-staff-think
+  - nothing-changes-after
 updated: "2026-09-24"
 related_prompts:
   - domain-research-academic/research_survey_instrument_designer.md

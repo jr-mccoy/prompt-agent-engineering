@@ -15,6 +15,9 @@ tags:
   - difficulty
   - dynamic-difficulty
   - time-to-kill
+  - game-too-hard
+  - fights-drag-on
+  - easy-mode
 updated: "2026-09-24"
 related_prompts:
   - domain-game-development/design/design_player_progression.md

@@ -20,7 +20,7 @@ updated: "2026-02-26"
 related_prompts:
   - domain-risk/risk_crisis_severity_triage.md
   - domain-risk/risk_crisis_communication_playbook.md
-  - decision-making/decisioning_rapid_stakeholder_alignment.md
+  - domain-decision-making/decisioning_rapid_stakeholder_alignment.md
   - productivity/validation/validation_adversarial_mini_check.md
 ---
 

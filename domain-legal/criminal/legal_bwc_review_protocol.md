@@ -16,6 +16,7 @@ tags:
   - video-evidence
   - impeachment
   - discovery-review
+  - police-video
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/criminal/legal_motion_to_suppress.md
@@ -25,6 +26,8 @@ related_prompts:
 ---
 
 **Objective:** Turn hours of body-worn camera (BWC) and related video into a defensible work product: a time-synced event log, a table of every material inconsistency between the video and the written reports, a list of exculpatory and impeachment content, the suppression hooks the footage supports, and a follow-up list for missing or incomplete recordings — every entry tied to a file name and timestamp.
+
+> **Scope guard — attorney-facing only.** For licensed counsel on the matter (defense counsel, or the prosecutor where a government posture is offered). If the person running it appears to be an unrepresented defendant or a family member, stop and route them to the public defender's office or appointed counsel, or to `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_authority_router.md`, rather than producing strategy. This guard is not a disclaimer; the ban on "consult an attorney" boilerplate below still applies.
 
 **When to Use:** On receipt of video discovery in a criminal matter; before drafting a suppression motion or cross-examination; when reports and video may diverge; when a supervisor or co-counsel needs a reliable index instead of re-watching. Prosecutors can use the same protocol to audit a case before charging or disclosure (select government posture).
 

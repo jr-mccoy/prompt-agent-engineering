@@ -15,12 +15,33 @@ tags:
   - radiology
   - ct-head
   - interpretation
+  - head-bleed
+  - fall-on-blood-thinners
+  - head-injury
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/interpretation/interp_mri_brain.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_anticoagulation_decision_support.md
+  - domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md
 ---
 
 ## Objective
 
-Read a CT head report (non-contrast, with CTA/CT perfusion if performed) in clinical context and produce a structured impression that names each finding, classifies it, states what the study can and cannot exclude, and commits to the action — neurosurgery call, anticoagulant reversal, BP target, thrombectomy pathway, or further imaging. The input is the radiologist's report or structured findings, not raw images. Distinct from `acute_stroke_tpa_thrombectomy.md`, which runs the stroke treatment protocol; this prompt reads the imaging and routes to it.
+Read a CT head report (non-contrast, with CTA/CT perfusion if performed) in clinical context and produce a structured impression that names each finding, classifies it, states what the study can and cannot exclude, and commits to the action — neurosurgery call, anticoagulant reversal, BP target, thrombectomy pathway, or further imaging. The input is the radiologist's report or structured findings, not raw images.
+
+Decision support for a licensed clinician: confirm reversal-agent and antihypertensive doses, renal adjustment and thresholds against the current guideline and local formulary; the operative decision belongs to neurosurgery. A patient with a falling GCS or herniation signs is escalated now, not after this output.
+
+## When to Use
+
+- A non-contrast CT head (± CTA/CTP) report is back after head trauma, a fall on an anticoagulant, a thunderclap headache, or a new deficit.
+- Deciding whether a finding triggers neurosurgical review, anticoagulant reversal, a BP target, or the stroke pathway.
+- Converting "cannot exclude" language into a next test or an explicit acceptance.
+
+**Not this prompt if:**
+
+- The stroke is confirmed and thrombolysis/thrombectomy eligibility and dosing are being run → `domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md`, which runs the stroke treatment protocol; this prompt reads the imaging and routes to it.
+- The study is an MRI brain → `domain-healthcare-clinical/prompts/interpretation/interp_mri_brain.md`.
+- The headache is being worked up before imaging → `domain-healthcare-clinical/prompts/reasoning/workup_headache.md`.
 
 ## Inputs
 
@@ -32,11 +53,11 @@ Read a CT head report (non-contrast, with CTA/CT perfusion if performed) in clin
 
 ## Role
 
-Senior neurocritical care or emergency medicine attending reading the CT report at the bedside and deciding the next hour.
+Senior neurocritical care or emergency medicine attending supporting the treating clinician; reads the CT report at the bedside and plans the next hour.
 
 ## Reasoning Steps
 
-1. **Fix what the study is.** Non-contrast CT cannot exclude early ischemia, venous sinus thrombosis, or small posterior fossa lesions. State the time from onset: early infarct is often invisible in the first hours; a normal non-contrast CT within 6 hours of thunderclap onset, on a modern scanner read by an experienced reader, is highly sensitive for SAH in a neurologically intact patient — beyond that window, LP or CTA is required.
+1. **Stop and escalate first if:** falling GCS, a new fixed or dilated pupil, Cushing response, herniation, or acute hydrocephalus — request emergent neurosurgical review and start ICP measures now; any intracranial hemorrhage on an anticoagulant — start reversal now. Then **fix what the study is.** Non-contrast CT cannot exclude early ischemia, venous sinus thrombosis, or small posterior fossa lesions. State the time from onset: early infarct is often invisible in the first hours; a normal non-contrast CT within 6 hours of thunderclap onset, on a modern scanner read by an experienced reader, is highly sensitive for SAH in a neurologically intact patient — beyond that window, LP or CTA is required.
 
 2. **Hemorrhage — classify by compartment.**
    - **Epidural:** biconvex, does not cross sutures, usually arterial (middle meningeal) with skull fracture; lucid interval then rapid decline.
@@ -51,9 +72,9 @@ Senior neurocritical care or emergency medicine attending reading the CT report 
 
 5. **Other findings.** Skull and skull-base fracture (pneumocephalus, air–fluid in sinuses), dense venous sinus or cord sign (→ CT venogram), mass with vasogenic edema (→ MRI with contrast), abscess, hydrocephalus without mass (→ NPH vs obstructive). Chronic small-vessel change and atrophy are background — do not attribute acute symptoms to them.
 
-6. **Neurosurgical triggers (commonly used thresholds).** Acute SDH ≥10 mm thick or midline shift ≥5 mm; EDH >30 mL; cerebellar hemorrhage >3 cm or with brainstem compression or hydrocephalus; acute hydrocephalus → EVD. Below these, a deteriorating exam still wins.
+6. **Neurosurgical triggers (commonly used thresholds).** Acute SDH thickness >10 mm or midline shift >5 mm, and EDH >30 mL (Brain Trauma Foundation surgical management of TBI guidelines); cerebellar hemorrhage >3 cm or with brainstem compression or hydrocephalus; acute hydrocephalus → EVD. Below these, a deteriorating exam still wins.
 
-7. **Anticoagulation and BP.** Any intracranial hemorrhage on an anticoagulant → reverse now: warfarin → 4F-PCC (INR/weight-dosed) + vitamin K 10 mg IV; factor Xa inhibitor → andexanet alfa (dose by drug, dose, timing) or 4F-PCC 50 units/kg; dabigatran → idarucizumab 5 g IV. Platelet transfusion for antiplatelet-associated ICH only if going to surgery. Spontaneous ICH: target SBP ~140, avoid dropping below 130.
+7. **Anticoagulation and BP.** Any intracranial hemorrhage on an anticoagulant → reverse now: warfarin → 4F-PCC (INR/weight-dosed) + vitamin K 10 mg IV; factor Xa inhibitor → andexanet alfa (dose by drug, dose, timing; thrombotic risk (ANNEXA-I); availability/labeling vary — verify locally) or 4F-PCC 50 units/kg; dabigatran → idarucizumab 5 g IV. Platelet transfusion for antiplatelet-associated ICH only if going to surgery. Spontaneous ICH: target SBP ~140, avoid dropping below 130.
 
 8. **Pitfalls before signing.** "Cannot exclude" language must be converted into a decision (next test or accept). Isodense bilateral SDH shows no shift. Posterior fossa beam-hardening hides cerebellar infarct. High hematocrit mimics hyperdense vessels. A negative CT does not exclude early ischemia, late-presenting SAH, CVST, or posterior circulation stroke. Always compare to prior: interval growth is the question in anticoagulated trauma.
 
@@ -76,6 +97,22 @@ NEXT 60 MINUTES:
 - [repeat imaging interval]
 ```
 
+## Verification
+
+- [ ] Study limits stated with the time from onset (what a non-contrast CT cannot exclude at this time point).
+- [ ] Each neurosurgical threshold attributed to its named guideline (Brain Trauma Foundation surgical management guidelines for traumatic SDH/EDH; the current ICH guideline for spontaneous hemorrhage) and compared as stated (strict > vs ≥) against the reported measurements.
+- [ ] Reversal agent matched to the specific anticoagulant, dose, and time of last dose; doses checked against weight and renal function; local availability and labeling confirmed.
+- [ ] BP target named with its source (spontaneous ICH guideline vs local TBI protocol) and not carried from one setting to the other.
+- [ ] Every "cannot exclude" converted into a next test or an explicit acceptance.
+- [ ] Repeat-imaging interval stated, with the exam change that triggers an earlier scan.
+
+## False-Positive Prevention
+
+- **Physiologic calcification called hemorrhage.** Pineal, choroid plexus, falx, and basal ganglia calcification are dense but not blood.
+- **A dense falx or tentorium called a thin SDH or SAH,** especially in young patients or with a high hematocrit.
+- **A measurement at a threshold treated as meeting it.** Surgical thresholds are strict (e.g., SDH >10 mm), and the exam and trajectory outweigh a single number.
+- **Old infarct or encephalomalacia read as acute ischemia** without a prior study or the density of an established lesion (CSF-like, with volume loss).
+
 ## Worked Example
 
 **Input:** 78 y/o F, fell from standing 3 hours ago, struck head. On apixaban 5 mg BID for AF, last dose 4 hours ago. GCS 14 (confused), no focal deficit, BP 176/94, weight 62 kg, platelets 210. Non-contrast CT head report: "12 mm acute right frontoparietal subdural hematoma with 6 mm leftward midline shift. Partial effacement of the right lateral ventricle. Basal cisterns patent. No skull fracture. Moderate chronic small-vessel ischemic change. No prior for comparison."
@@ -90,14 +127,14 @@ ISCHEMIA: Not assessable/not the question; small-vessel change is chronic backgr
 OTHER: No fracture.
 
 IMPRESSION:
-1. Acute traumatic SDH meeting surgical thresholds (≥10 mm and shift ≥5 mm) on an active factor Xa inhibitor — emergent neurosurgery for evacuation; reverse apixaban now.
+1. Acute traumatic SDH meeting surgical thresholds (>10 mm and shift >5 mm) on an active factor Xa inhibitor — emergent neurosurgery for evacuation; reverse apixaban now.
 2. Chronic small-vessel disease — no action.
 
 NEXT 60 MINUTES:
-- Neurosurgery at bedside now; OR planning for craniotomy.
-- Apixaban reversal: andexanet alfa low-dose regimen (apixaban ≤5 mg) — 400 mg IV bolus at 30 mg/min, then 4 mg/min for up to 120 min. If unavailable or per institutional protocol: 4F-PCC 50 units/kg (~3,100 units).
+- Request emergent neurosurgical review; the operative decision (e.g., craniotomy) rests with neurosurgery.
+- Apixaban reversal: andexanet alfa low-dose regimen (apixaban ≤5 mg) — 400 mg IV bolus at 30 mg/min, then 4 mg/min for up to 120 min. Thrombotic risk (ANNEXA-I); availability/labeling vary — verify locally. If unavailable or per institutional protocol: 4F-PCC 50 units/kg (~3,100 units).
 - Hold apixaban; restart timing decided with neurosurgery (typically days to weeks, individualized to bleed and stroke risk).
-- SBP <160 in traumatic SDH pending surgery: nicardipine 5 mg/h, titrate by 2.5 mg/h q5–15 min.
+- BP target per local TBI protocol pending surgery; if lowering is needed: nicardipine 5 mg/h, titrate by 2.5 mg/h q5–15 min.
 - Neuro checks q1h; any GCS drop ≥2 → immediate repeat CT and re-page neurosurgery.
 - CBC, PT/INR, aPTT, anti-Xa (apixaban-calibrated) if available, type and screen, BMP.
 - Seizure prophylaxis only if the neurosurgical TBI protocol specifies it (levetiracetam 500 mg IV BID × 7 days).

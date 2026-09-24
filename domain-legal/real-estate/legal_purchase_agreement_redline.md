@@ -18,6 +18,7 @@ tags:
   - due-diligence
   - title
   - closing
+  - buying-commercial-property
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, adversarial, systematic]

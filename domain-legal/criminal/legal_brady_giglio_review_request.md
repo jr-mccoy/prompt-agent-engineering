@@ -16,6 +16,7 @@ tags:
   - giglio
   - discovery
   - impeachment
+  - hidden-evidence
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/criminal/legal_bwc_review_protocol.md
@@ -25,6 +26,8 @@ related_prompts:
 ---
 
 **Objective:** Give defense counsel a specific, case-tailored request for favorable evidence and impeachment information, plus a living tracker that records what was asked for, what the government said, what was produced, and what remains — so gaps are visible, follow-up is timely, and any later motion to compel or for relief rests on a documented record.
+
+> **Scope guard — attorney-facing only.** For licensed counsel on the matter (defense counsel, or the prosecutor where a government posture is offered). If the person running it appears to be an unrepresented defendant or a family member, stop and route them to the public defender's office or appointed counsel, or to `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_authority_router.md`, rather than producing strategy. This guard is not a disclaimer; the ban on "consult an attorney" boilerplate below still applies.
 
 **When to Use:** At arraignment or initial discovery; after the court issues a disclosure order (e.g., a Fed. R. Crim. P. 5(f) order in federal court `[VERIFY: current rule text]`); when new witnesses or theories emerge; before trial to confirm impeachment disclosures for each government witness; when preparing a motion to compel or for sanctions.
 

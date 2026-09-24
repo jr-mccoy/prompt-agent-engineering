@@ -15,12 +15,31 @@ tags:
   - pulmonary-nodule
   - lung-cancer
   - specialty-assessment
+  - spot-on-lung
+  - chance-scan-finding
+  - when-to-rescan
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_ct_chest.md
+  - domain-healthcare-clinical/prompts/specialty/medicine_oncology_case_framer.md
 ---
 
 ## Objective
 
-Produce a pulmonology nodule-clinic recommendation for an incidentally detected pulmonary nodule: decide whether the Fleischner Society 2017 guidelines apply, classify the nodule precisely, estimate malignancy probability, and give a committed next step with CT intervals or a tissue/PET pathway. Distinct from `reasoning/medicine_incidental_findings_management.md`, which covers incidentalomas across organs and the communication around them — this prompt is the nodule-specific decision at full depth.
+Produce a pulmonology nodule-clinic recommendation for an incidentally detected pulmonary nodule: decide whether the Fleischner Society 2017 guidelines apply, classify the nodule precisely, estimate malignancy probability, and give a committed next step with CT intervals or a tissue/PET pathway. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with hemoptysis or signs of advanced disease is escalated now, not placed on a surveillance schedule.
+
+## When to Use
+
+- An incidental pulmonary nodule on any CT (chest, CT angiogram, abdomen) in an adult — deciding whether Fleischner 2017 applies.
+- Assigning surveillance intervals, or choosing PET-CT, biopsy, or resection for a solid nodule ≥8 mm.
+- Checking a radiology recommendation for a wrong-row or wrong-measurement error.
+
+**Not this prompt if:**
+
+- Several incidental findings across organs, or how to communicate them — `reasoning/medicine_incidental_findings_management.md`; this prompt is the nodule-specific decision at full depth.
+- You need the whole chest CT read systematically — `interpretation/interp_ct_chest.md`.
+- Lung cancer is already confirmed and being staged for treatment — `specialty/medicine_oncology_case_framer.md`.
 
 ## Inputs
 
@@ -32,11 +51,12 @@ Produce a pulmonology nodule-clinic recommendation for an incidentally detected 
 
 ## Role
 
-Senior attending pulmonologist running a nodule clinic, writing the recommendation for the referring clinician.
+Senior attending pulmonologist running a nodule clinic, supporting the referring clinician with a written recommendation for their review.
 
 ## Reasoning Steps
 
 1. **Check that Fleischner applies.** It is for incidental nodules in adults ≥35. It does not apply to lung cancer screening CT (use Lung-RADS), patients with known primary cancer at risk of metastasis, immunocompromised patients (infection risk), or patients <35. Say which pathway you are using.
+   - **Stop and escalate first if:** hemoptysis, a cavitating lesion with fever or weight loss (infection or TB — consider isolation), or signs of advanced disease (SVC obstruction, cord compression, hypercalcemia, airway obstruction) → urgent pathway, not nodule surveillance.
 
 2. **Exclude benign features first.** Benign calcification patterns (diffuse, central, laminated, popcorn) or intranodular fat (hamartoma) need no follow-up. A perifissural or subpleural nodule with typical intrapulmonary lymph node morphology (smooth, triangular/lentiform, attached to a fissure) generally needs no follow-up even near 6–8 mm.
 
@@ -91,6 +111,21 @@ SCREENING / PREVENTION: [LDCT eligibility; smoking cessation]
 PITFALLS:
 - [wrong pathway, wrong measurement, PET on GGN, 2-year rule applied to subsolid, non-diagnostic biopsy treated as benign]
 ```
+
+## Verification
+
+- [ ] The pathway is named (Fleischner 2017, Lung-RADS, or oncology/immunocompromised management) with the reason.
+- [ ] Size is the average of long and short axes (or volume) on ≤1.5 mm sections, with the solid component recorded separately for part-solid nodules.
+- [ ] The table row matches density, multiplicity, and risk category, and the risk category is traced to named patient and nodule factors.
+- [ ] Any probability model (Mayo, Brock) is named with its inputs and ACCP thresholds are attributed; confirm doses, renal adjustment and thresholds against the current guideline and local formulary (e.g., renal function before any contrast study).
+- [ ] The end of surveillance is stated (2 years solid, 5 years subsolid) and screening eligibility is addressed.
+
+## False-Positive Prevention
+
+- A perifissural or subpleural intrapulmonary lymph node treated as a suspicious nodule.
+- A change under 2 mm, or a difference between thick- and thin-section scans, called growth.
+- A new ground-glass or part-solid opacity put on 5-year surveillance before persistence is confirmed — many resolve (infection, hemorrhage) by the 3–6-month scan.
+- A PET-avid nodule assumed malignant — infection and granulomatous disease (TB, endemic fungi, sarcoidosis) cause false positives.
 
 ## Worked Example
 

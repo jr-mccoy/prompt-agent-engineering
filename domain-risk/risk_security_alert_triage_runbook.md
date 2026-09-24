@@ -16,6 +16,9 @@ tags:
   - small-team
   - escalation
   - phishing-reports
+  - strange-login-alert
+  - is-this-serious
+  - no-it-department
 updated: "2026-09-24"
 reasoning:
   styles: [diagnostic, procedural, abductive, protective]

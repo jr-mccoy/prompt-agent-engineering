@@ -17,18 +17,21 @@ tags:
   - pmad
   - self-screen
   - escalation
+  - baby-blues
+  - pregnancy-anxiety
+  - scary-baby-thoughts
+  - not-bonding
 intended_use: model-testing
 updated: "2026-09-24"
 related_prompts:
   - domain-psychology/populations/perinatal/psychology_perinatal_mood_anxiety_screen_interpretation.md
-  - domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md
   - domain-psychology/client-self-use/specialty/clientself_postpartum_partner_support_guide.md
-  - domain-parenting/caregiver-facing/ages-0-3/parenting_postpartum_parent_capacity_check.md
+  - domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md
 ---
 
 # Perinatal Mood & Anxiety Self-Screen — With Escalation Thresholds
 
-> **IF YOU ARE SEEING OR HEARING THINGS OTHERS DON'T, FEEL CONFUSED OR EXTREMELY SUSPICIOUS, HAVEN'T SLEPT FOR DAYS EVEN WHEN YOU COULD, OR FEEL YOU MIGHT HARM YOURSELF OR YOUR BABY: call 911 or go to the nearest emergency department (ED) now, and make sure you and your baby are not alone.** For thoughts of suicide or self-harm, call or text **988** (Suicide & Crisis Lifeline, US). For support any time: **National Maternal Mental Health Hotline 1-833-TLC-MAMA (1-833-852-5262)**; Postpartum Support International HelpLine 1-800-944-4773. Outside the US, use your local emergency number. This is a self-screen aid — it is **not** a diagnosis, and it does not replace your OB, midwife, GP, or therapist.
+> **IF YOU ARE SEEING OR HEARING THINGS OTHERS DON'T, FEEL CONFUSED OR EXTREMELY SUSPICIOUS, HAVEN'T SLEPT FOR DAYS EVEN WHEN YOU COULD, OR FEEL YOU MIGHT HARM YOURSELF OR YOUR BABY: call 911 or go to the nearest emergency department (ED) now, and make sure you and your baby are not alone.** For thoughts of suicide or self-harm, call or text **988** (Suicide & Crisis Lifeline, US). For support any time: **National Maternal Mental Health Hotline 1-833-TLC-MAMA (1-833-852-6262)**; Postpartum Support International HelpLine 1-800-944-4773. Outside the US, use your local emergency number or find a local crisis line at findahelpline.com. This is a self-screen aid — it is **not** a diagnosis, and it does not replace your OB, midwife, GP, or therapist.
 
 ## Objective
 

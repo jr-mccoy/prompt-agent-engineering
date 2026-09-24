@@ -15,6 +15,9 @@ tags:
   - goap
   - npc
   - enemy-design
+  - enemies-feel-dumb
+  - enemy-behavior
+  - designers-cant-tune
 updated: "2026-09-24"
 related_prompts:
   - domain-game-development/architecture/architecture_state_machine_design.md

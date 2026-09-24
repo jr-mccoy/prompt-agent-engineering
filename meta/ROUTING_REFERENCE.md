@@ -337,7 +337,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "React Native performance" → `mobile_react_native_optimization.md`
 
 ### Frontend Development
-**Domain guide:** [`domain-frontend-development/README.md`](../domain-frontend-development/README.md) — 47 prompts across 18 categories (frameworks + cross-cutting craft + build tooling + quality concerns). All Tier 1, fully cross-referenced via `related_prompts`.
+**Domain guide:** [`domain-frontend-development/README.md`](../domain-frontend-development/README.md) — 56 prompts across 20 categories (frameworks + cross-cutting craft + build tooling + quality concerns). All Tier 1, fully cross-referenced via `related_prompts`.
 
 **Frameworks:**
 - **React** → `domain-frontend-development/react/` (6): component patterns, hooks, state, testing, performance, `frontend_react_server_components_streaming.md` (RSC & streaming SSR)
@@ -488,7 +488,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Scan for cascade effects of this capability" → `visualplan_cascade_effects_scan.md`
 
 ### Business & Strategy
-- **Company strategy** → `domain-business-strategy/` (64 prompts across ai-strategy, ambition-leverage, go-to-market, research, startup)
+- **Company strategy** → `domain-business-strategy/` (88 prompts across ai-strategy, ambition-leverage, client-services, creator-economy, go-to-market, nonprofit, research, small-business, startup)
 - **Business frameworks applied to a codebase** → `domain-software-engineering/analysis/business/` (20 prompts)
   - These take a *repository* as input and infer business meaning from code; every one is titled "… for Codebase".
   - Example: "SWOT analysis of this codebase" → `swot_analysis.md`
@@ -546,7 +546,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Verify before shipping" → `validation_final_gate.md`
 
 ### Business Research
-- **Web research** → `domain-business-strategy/research/` (~7 prompts)
+- **Web research** → `domain-business-strategy/research/` (10 prompts)
   - Example: "Research competitors" → `research_competitive_landscape.md`
   - Example: "Company deep dive" → `research_company_deep_dive.md`
   - Example: "Prepare for meeting" → `research_person_background.md`
@@ -619,7 +619,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Converge to a shortlist (dot voting)" → `ideation_idea_convergence_dot_voting.md`
 
 ### Risk Management
-- **Operational risk artifacts and reviews** → `domain-risk/` (7 prompts)
+- **Operational risk artifacts and reviews** → `domain-risk/` (24 prompts)
   - Example: "Build a risk register" → `risk_register_builder.md`
   - Example: "Likelihood × impact heat map" → `risk_heat_map.md`
   - Example: "FMEA on a process/product" → `risk_fmea_analysis.md`
@@ -629,7 +629,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "After-action review of a risk event" → `risk_after_action_review.md`
 
 ### Major Personal Decisions
-- **High-stakes personal decisions (research/structuring aids, not professional advice)** → `domain-personal-development/major-decisions/` (10 prompts)
+- **High-stakes personal decisions (research/structuring aids, not professional advice)** → `domain-personal-development/major-decisions/` (16 prompts)
   - Example: "Evaluate a job offer" → `personal_career_offer_evaluation.md`
   - Example: "Relocation decision" → `personal_relocation_decision.md`
   - Example: "Quit or persist?" → `personal_quit_or_persist.md`
@@ -771,7 +771,7 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - For adjacent product work, see also `domain-idea-to-product/stage-7-prd-authoring/` and `domain-business-strategy/research/`
 
 ### Presentations
-- **Board decks and presentations** → `domain-presentations/` (~23 prompts)
+- **Board decks and presentations** → `domain-presentations/` (~42 prompts)
   - Example: "Board deck" → `powerpoint_board_deck.md`
   - Example: "Quarterly business review" → `powerpoint_quarterly_business_review.md`
 
@@ -936,7 +936,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - **Publishing & business:** "agent query letter" → `publishing-business/childrens_query_letter_kidlit.md`; "synopsis / submission package" → `publishing-business/childrens_synopsis_submission_package.md`; "logline / comp titles / positioning" → `publishing-business/childrens_pitch_comps_market_positioning.md`
 
 ### Healthcare & Clinical
-- **Patient communication, clinical decision support, specialties, pharmacy, nursing, allied health** → `domain-healthcare-clinical/` (~41 prompts)
+- **Patient communication, clinical decision support, specialties, pharmacy, nursing, allied health** → `domain-healthcare-clinical/` (~368 prompts)
   - Example: "Clinical reasoning" → `medicine_clinical_decision_support.md` (Gold Standard)
   - Example: "Differential diagnosis" → `medicine_differential_diagnosis_generator.md`
   - Example: "Which imaging study?" → `medicine_imaging_ordering_rationale.md`
@@ -1088,7 +1088,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "Synthesis-route critique / characterization battery / reaction kinetics" → `disciplines/chemistry/`
 
 ### Personal Development
-- **Goals, habits, identity, agency, career, decisions, relationships, resilience, life-transitions, emotional-fitness, self-improvement** → `domain-personal-development/` (~166 prompts; see `EXPANSION_ROADMAP.md`)
+- **Goals, habits, identity, agency, career, decisions, relationships, resilience, life-transitions, emotional-fitness, self-improvement** → `domain-personal-development/` (~170 prompts; see `EXPANSION_ROADMAP.md`)
   - Example: "Career planning / reposition my career" → `domain-personal-development/career-transformation/career_90_day_repositioning_plan.md`
   - Example: "Skill building" → `domain-personal-development/prompts/goals/goals_skill_breakdown_blueprint.md`
   - **Goals & planning (`prompts/goals/`, 10 prompts):** goal system, reflection cadence, skill-breakdown, annual planning & theme, goal-conflict resolver, anti-goals list, values→goals derivation, progress-stall diagnostic, scope right-sizer. See `prompts/goals/README.md`.
@@ -1125,7 +1125,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "Cross-functional sprint planner" → `domain-product-management/prompts/product_delivery_sprint_planner.md`
   - Example: "Market size (TAM/SAM/SOM) rapid or comprehensive" → `domain-product-management/prompts/product_market_size_calculator.md`
   - Stakeholder-navigation and org-politics prompts → `domain-personal-development/prompts/stakeholder/` (7 prompts)
-  - **Presentations** → `domain-presentations/` (~23 prompts)
+  - **Presentations** → `domain-presentations/` (~42 prompts)
   - **Domain guide:** [domain-product-management/](../domain-product-management/)
 
 ### Parenting (Ages 4–8, with Neurodivergence Support)
@@ -1167,7 +1167,7 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Files cover: CPAs, veterinarians, attorneys, contractors, realtors, HVAC, plumbers, electricians, wedding planners, and more
   - **Domain guide:** [domain-specialized-fields/](../domain-specialized-fields/)
 
-### Legal (Practitioner Library — Phase 1 + 2A + Family Law, 109 prompts)
+### Legal (Practitioner Library — all roadmap phases + Family Law + self-advocacy, 243 prompts)
 - **Live legal workflows for attorneys, paralegals, in-house counsel, legal ops, contract managers** → `domain-legal/`
   - **Domain guide:** [`domain-legal/README.md`](../domain-legal/README.md)
   - **Roadmap:** [`domain-legal/EXPANSION_ROADMAP.md`](../domain-legal/EXPANSION_ROADMAP.md)
@@ -2548,7 +2548,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Present major theodicies and strongest objections fairly" | `domain-biblical-studies/apologetics-engagement/biblical_apologetics_problem_of_evil_theodicy.md` |
 | "Address an alleged biblical contradiction honestly" | `domain-biblical-studies/apologetics-engagement/biblical_apologetics_biblical_contradictions.md` |
 | "Interfaith dialogue prep (never fabricate claims about another religion)" | `domain-biblical-studies/apologetics-engagement/biblical_apologetics_other_religions_dialogue.md` |
-| **Legal (practitioner library, 109 prompts)** | **Use `domain-legal/` — see [README](../domain-legal/README.md)** |
+| **Legal (practitioner library, 243 prompts)** | **Use `domain-legal/` — see [README](../domain-legal/README.md)** |
 | "Spot legal issues / IRAC memo / statutory interpretation" | `domain-legal/research/` |
 | "Draft a complaint / answer / MTD / MSJ / jury instructions" | `domain-legal/litigation/` |
 | "Motion in limine set / litigation budget / trial theme" | `domain-legal/litigation/` (Phase 2A) |
@@ -2711,7 +2711,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Tarasoff / duty-to-protect analysis" | `domain-psychology/risk-crisis/psychology_tarasoff_duty_to_warn_analysis.md` |
 | "Civil commitment / involuntary hold narrative" | `domain-psychology/risk-crisis/psychology_civil_commitment_narrative.md` |
 | "In-session crisis de-escalation & disposition" | `domain-psychology/risk-crisis/psychology_crisis_de_escalation_session_plan.md` |
-| **Psychology — Client / Patient-Side (self-use)** | **Use `domain-psychology/client-self-use/` (Wave 5, 30 prompts)** |
+| **Psychology — Client / Patient-Side (self-use)** | **Use `domain-psychology/client-self-use/` (81 prompts)** |
 | "Pre-session agenda for therapy" | `domain-psychology/client-self-use/session-prep-integration/clientself_presession_agenda_drafter.md` |
 | "Post-session reflection" | `domain-psychology/client-self-use/session-prep-integration/clientself_postsession_reflection_processor.md` |
 | "Stuck on therapy homework" | `domain-psychology/client-self-use/session-prep-integration/clientself_between_session_homework_helper.md` |

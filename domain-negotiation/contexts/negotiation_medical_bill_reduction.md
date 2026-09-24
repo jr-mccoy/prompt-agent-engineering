@@ -15,6 +15,7 @@ tags:
   - healthcare-costs
   - payment-plans
   - consumer
+  - hospital-debt
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, procedural, strategic]

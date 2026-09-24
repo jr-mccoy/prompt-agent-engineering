@@ -16,6 +16,9 @@ tags:
   - government-grants
   - fundraising
   - funder-fit
+  - worth-applying
+  - find-program-funding
+  - small-charity
 updated: "2026-09-24"
 related_prompts:
   - domain-science/grants-funding/science_nsf_proposal_outliner.md

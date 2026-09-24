@@ -15,6 +15,9 @@ tags:
   - game-budget
   - comparable-titles
   - fundraising
+  - indie-game-funding
+  - publishers-said-no
+  - investor-meeting
 updated: "2026-09-24"
 related_prompts:
   - domain-game-development/design/design_game_design_document.md

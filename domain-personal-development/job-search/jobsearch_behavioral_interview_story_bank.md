@@ -16,6 +16,9 @@ tags:
   - star-method
   - competencies
   - candidate
+  - interview-coming-up
+  - answer-interview-questions
+  - past-work-examples
 updated: "2026-09-24"
 related_prompts:
   - domain-AI-ML/learning-ai-ml/mllearn_ml_interview_prep.md

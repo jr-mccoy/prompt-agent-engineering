@@ -16,6 +16,9 @@ tags:
   - kj-method
   - synthesis
   - workshop
+  - sticky-note-pile
+  - open-text-answers
+  - messy-brainstorm
 updated: "2026-09-24"
 reasoning:
   styles: [inductive, convergent, synthesising]

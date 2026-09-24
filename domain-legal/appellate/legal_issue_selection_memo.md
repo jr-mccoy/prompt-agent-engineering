@@ -16,6 +16,7 @@ tags:
   - preservation
   - standard-of-review
   - harmless-error
+  - lost-at-trial
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/appellate/legal_statement_of_facts_builder.md
@@ -25,6 +26,8 @@ related_prompts:
 ---
 
 **Objective:** Produce a decision memo that takes every candidate error from the record, tests each against the gates an appellate court will apply — appealability, preservation, standard of review, prejudice/harmlessness — and against merits strength and narrative fit, then recommends a final issue list and order with the reasons for each inclusion and each cut.
+
+> **Scope guard — attorney-facing only.** For licensed appellate counsel (or counsel for a prospective amicus). If the person running it appears to be an unrepresented party, stop and route them to `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_authority_router.md` (appellate pro bono programs, law-school appellate clinics, legal aid) rather than producing strategy. This guard is not a disclaimer; the ban on "consult an attorney" boilerplate below still applies.
 
 **When to Use:** After the notice of appeal and before briefing; after the record (transcripts, clerk's record/appendix) is complete; when trial counsel hands off to appellate counsel with a long list of complaints; when deciding whether a cross-appeal or conditional issue is worth raising.
 

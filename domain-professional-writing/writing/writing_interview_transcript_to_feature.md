@@ -16,6 +16,8 @@ tags:
   - q-and-a
   - quote-fidelity
   - journalism
+  - turn-into-article
+  - quote-accurately
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/content-creation/transcript-fixer/SKILL.md

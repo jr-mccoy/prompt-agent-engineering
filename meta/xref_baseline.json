@@ -8,12 +8,12 @@
     "see_also_seed"
   ],
   "totals": {
-    "references_checked": 12409,
-    "canonical": 11179,
-    "noncanonical_relative": 527,
+    "references_checked": 13404,
+    "canonical": 12219,
+    "noncanonical_relative": 510,
     "noncanonical_basename": 24,
-    "unresolved": 679,
-    "baselined": 1230
+    "unresolved": 651,
+    "baselined": 1185
   },
   "entries": [
     {
@@ -515,93 +515,9 @@
       "status": "unresolved"
     },
     {
-      "file": "domain-decision-making/decisioning_crisis_communication_playbook.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_crisis_severity_triage.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_crisis_communication_playbook.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_escalation_decision_tree.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_crisis_communication_playbook.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_rapid_stakeholder_alignment.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_crisis_communication_playbook.md",
-      "field": "related_prompts",
-      "reference": "productivity/validation/validation_final_gate.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_crisis_severity_triage.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_crisis_communication_playbook.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_crisis_severity_triage.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_escalation_decision_tree.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_crisis_severity_triage.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_time_boxed_decision_protocol.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_crisis_severity_triage.md",
-      "field": "related_prompts",
-      "reference": "productivity/validation/validation_adversarial_mini_check.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_escalation_decision_tree.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_crisis_communication_playbook.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_escalation_decision_tree.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_crisis_severity_triage.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_escalation_decision_tree.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_rapid_stakeholder_alignment.md",
-      "status": "unresolved"
-    },
-    {
       "file": "domain-decision-making/decisioning_escalation_decision_tree.md",
       "field": "related_prompts",
       "reference": "productivity/validation/validation_adversarial_mini_check.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_first_principles_problem_decomposition.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_first_principles_problem_decomposition.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_logic_problem_solver.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_first_principles_problem_decomposition.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_multi_constraint_optimizer.md",
       "status": "unresolved"
     },
     {
@@ -613,73 +529,13 @@
     {
       "file": "domain-decision-making/decisioning_logic_problem_solver.md",
       "field": "related_prompts",
-      "reference": "decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_logic_problem_solver.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_first_principles_problem_decomposition.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_logic_problem_solver.md",
-      "field": "related_prompts",
       "reference": "productivity/validation/validation_confidence_calibration.md",
       "status": "unresolved"
     },
     {
       "file": "domain-decision-making/decisioning_multi_constraint_optimizer.md",
       "field": "related_prompts",
-      "reference": "decision-making/decisioning_resource_constrained_solver.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_multi_constraint_optimizer.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_time_boxed_decision_protocol.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_multi_constraint_optimizer.md",
-      "field": "related_prompts",
       "reference": "productivity/validation/validation_adversarial_mini_check.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_rapid_stakeholder_alignment.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_crisis_communication_playbook.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_rapid_stakeholder_alignment.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_crisis_severity_triage.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_rapid_stakeholder_alignment.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_escalation_decision_tree.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_rapid_stakeholder_alignment.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_time_boxed_decision_protocol.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_recovery_resilience_planning.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_crisis_communication_playbook.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_recovery_resilience_planning.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_crisis_severity_triage.md",
       "status": "unresolved"
     },
     {
@@ -697,31 +553,7 @@
     {
       "file": "domain-decision-making/decisioning_resource_constrained_solver.md",
       "field": "related_prompts",
-      "reference": "decision-making/decisioning_first_principles_problem_decomposition.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_resource_constrained_solver.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_multi_constraint_optimizer.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_resource_constrained_solver.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_time_boxed_decision_protocol.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_resource_constrained_solver.md",
-      "field": "related_prompts",
       "reference": "productivity/validation/validation_adversarial_mini_check.md",
-      "status": "unresolved"
-    },
-    {
-      "file": "domain-decision-making/decisioning_time_boxed_decision_protocol.md",
-      "field": "related_prompts",
-      "reference": "decision-making/decisioning_crisis_severity_triage.md",
       "status": "unresolved"
     },
     {
@@ -7293,108 +7125,6 @@
       "field": "related_prompts",
       "reference": "domain-parenting/parenting_school_accommodation_conversation_prep.md",
       "status": "unresolved"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_long_form_script.md",
-      "field": "related_prompts",
-      "reference": "content_seo_title_description.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_long_form_script.md",
-      "field": "related_prompts",
-      "reference": "content_series_channel_bible.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_long_form_script.md",
-      "field": "related_prompts",
-      "reference": "content_short_form_hook_bank.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_repurpose_one_to_many.md",
-      "field": "related_prompts",
-      "reference": "content_long_form_script.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_repurpose_one_to_many.md",
-      "field": "related_prompts",
-      "reference": "content_seo_title_description.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_repurpose_one_to_many.md",
-      "field": "related_prompts",
-      "reference": "content_short_form_hook_bank.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_seo_title_description.md",
-      "field": "related_prompts",
-      "reference": "content_long_form_script.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_seo_title_description.md",
-      "field": "related_prompts",
-      "reference": "content_repurpose_one_to_many.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_seo_title_description.md",
-      "field": "related_prompts",
-      "reference": "content_thumbnail_image_brief.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_series_channel_bible.md",
-      "field": "related_prompts",
-      "reference": "content_long_form_script.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_series_channel_bible.md",
-      "field": "related_prompts",
-      "reference": "content_repurpose_one_to_many.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_series_channel_bible.md",
-      "field": "related_prompts",
-      "reference": "content_short_form_hook_bank.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_short_form_hook_bank.md",
-      "field": "related_prompts",
-      "reference": "content_long_form_script.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_short_form_hook_bank.md",
-      "field": "related_prompts",
-      "reference": "content_repurpose_one_to_many.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_short_form_hook_bank.md",
-      "field": "related_prompts",
-      "reference": "content_series_channel_bible.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_thumbnail_image_brief.md",
-      "field": "related_prompts",
-      "reference": "content_long_form_script.md",
-      "status": "noncanonical_relative"
-    },
-    {
-      "file": "portable-prompt-system/content-playbook/starter-prompts/content_thumbnail_image_brief.md",
-      "field": "related_prompts",
-      "reference": "content_seo_title_description.md",
-      "status": "noncanonical_relative"
     }
   ]
 }

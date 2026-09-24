@@ -16,6 +16,9 @@ tags:
   - weekly-review
   - funnel-metrics
   - candidate
+  - no-callbacks
+  - job-hunt-stalled
+  - organize-applications
 updated: "2026-09-24"
 related_prompts:
   - domain-personal-development/prompts/life-transitions/lifetransition_job_loss_recovery_plan.md

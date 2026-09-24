@@ -18,6 +18,7 @@ tags:
   - special-permit
   - nonconforming-use
   - entitlements
+  - city-violation-notice
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, hierarchical, evidential]

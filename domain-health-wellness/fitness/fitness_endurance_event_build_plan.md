@@ -16,6 +16,10 @@ tags:
   - taper
   - injury-prevention
   - event-training
+  - race-coming-up
+  - realistic-race-date
+  - shin-pain
+  - missed-training
 updated: "2026-09-24"
 related_prompts:
   - domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md
@@ -32,7 +36,8 @@ they can see and gates they must pass between phases.
 > **Readiness gate.** Start from a Readiness Profile
 > (`foundations/wellness_readiness_and_red_flag_screen.md`). No profile → ask its
 > blocks 1–8 first. URGENT-CARE-NOW, CLINICIAN-FIRST, or OUT-OF-SCOPE → stop and
-> restate the route. GO-WITH-LIMITS → intensity caps bind every session; a first
+> restate the route. An urgent result means contacting the local emergency number now
+> (e.g. 911 in the US). GO-WITH-LIMITS → intensity caps bind every session; a first
 > half marathon or century under limits needs the clinician's explicit agreement.
 
 **When to Use:**
@@ -87,14 +92,21 @@ they can see and gates they must pass between phases.
 5. **Gate each phase (QA-08).** Base → build only if ≥80% of base sessions were done and
    nothing hurts. Build → peak only if the long session is on schedule. A failed gate
    repeats the last week; it does not skip ahead.
-6. **Write the missed-week and illness protocol (QA-13).** Fever, chest symptoms, or
-   breathlessness → no training until well; if those occurred during training, re-run
-   the gate. Missed 1 week → repeat the previous week. Missed 2+ → step back two weeks.
+6. **Write the missed-week and illness protocol (QA-13).** Fever or illness without chest
+   symptoms → no training until well. Fever, or a recent viral illness, together with chest
+   pain, palpitations, or breathlessness → no training until a clinician has cleared a
+   return (inflammation of the heart muscle after a viral illness is a real risk in
+   endurance training); "feeling better" is not clearance. Any of those symptoms during
+   training → stop and re-run the gate. Missed 1 week → repeat the previous week. Missed 2+ → step back two weeks.
    Lost more than a quarter of the remaining build → redo the feasibility check.
 7. **State the injury stops.** Pain that changes your stride or pedalling; pain on a
    specific spot of bone that worsens with impact; swelling; pain that is worse the
    morning after → stop that activity and see a clinician or physiotherapist. Do not
    "run through" these to protect the date.
+   **Urgent stops, in training or on event day:** confusion or odd behavior, very hot skin
+   (even if still sweating), collapse, or chest pain or pressure during effort → stop at once
+   and get urgent care (911 in the US, or the local emergency number; tell event medical
+   staff). Heat raises the risk — hot-weather sessions go shorter and easier.
 8. **Hand off fuelling** for sessions over ~90 minutes to
    `nutrition/nutrition_meal_structure_planner.md` — only if the nutrition guard is CLEAR.
 
@@ -119,8 +131,8 @@ Feasibility: [n] weeks available vs [n] typical → [on track | adjusted: ...]
 ## Missed-week and illness protocol
 [rules]
 
-## Injury stops
-[signs → action]
+## Injury stops and urgent stops
+[signs → action; heat-illness/collapse/chest-pain signs → urgent care]
 
 ## Hand-offs
 Fuelling → [prompt or "nutrition guard STOP"] | Stalls → fitness_program_progression_review
@@ -134,6 +146,8 @@ Fuelling → [prompt or "nutrition guard STOP"] | Stalls → fitness_program_pro
 - [ ] No week raises volume and intensity together.
 - [ ] Every phase has a gate, and failing it repeats rather than skips.
 - [ ] Injury stops route to a clinician or physiotherapist.
+- [ ] Fever with chest symptoms, palpitations, or breathlessness requires clinician clearance before returning.
+- [ ] Heat-illness, collapse, and chest-pain-during-effort signs route to urgent care.
 
 ## False-Positive Prevention
 
@@ -180,10 +194,12 @@ Weekly volume +10% max; long run +1–1.5 km/week and < half of weekly km; cutba
 | 16 | Taper | 3 short easy    | 10 km + race | race | race week |
 
 ## Missed-week and illness protocol
-Flu in wk 7 (fever): no running until well; repeat wk 6. If wks 7–8 both missed: step back to wk 5.
+Flu in wk 7 (fever, no chest symptoms): no running until well; repeat wk 6. If wks 7–8 both missed:
+step back to wk 5. Fever with chest pain, palpitations, or breathlessness: no running until a clinician clears it.
 
-## Injury stops
+## Injury stops and urgent stops
 Pain on one spot of the shin that worsens with each run → stop running, see a physio.
+Confusion, very hot skin (even if still sweating), collapse, or chest pain while running → stop, call 911 / event medical.
 
 ## Hand-offs
 Fuelling for 90+ min runs (from wk 11) → nutrition_meal_structure_planner | Stalls → progression review

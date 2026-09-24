@@ -16,6 +16,7 @@ tags:
   - specialty-occupation
   - prevailing-wage
   - uscis
+  - work-visa
 updated: "2026-09-24"
 reasoning:
   styles: [evidential, adversarial, analytic]

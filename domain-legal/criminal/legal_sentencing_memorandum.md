@@ -16,6 +16,7 @@ tags:
   - mitigation
   - section-3553a
   - variance
+  - client-convicted
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/criminal/legal_plea_offer_analysis.md
@@ -25,6 +26,8 @@ related_prompts:
 ---
 
 **Objective:** Produce a sentencing memorandum that (1) resolves the guideline calculation with specific objections to the presentence report (PSR), (2) applies each statutory sentencing factor to documented facts about the offense and the person, and (3) asks for a specific sentence the court can adopt, supported by a coherent mitigation narrative and exhibits.
+
+> **Scope guard — attorney-facing only.** For licensed counsel on the matter (defense counsel, or the prosecutor where a government posture is offered). If the person running it appears to be an unrepresented defendant or a family member, stop and route them to the public defender's office or appointed counsel, or to `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_authority_router.md`, rather than producing strategy. This guard is not a disclaimer; the ban on "consult an attorney" boilerplate below still applies.
 
 **When to Use:** After a plea or verdict and receipt of the draft or final PSR; before the objection and memorandum deadlines set by local rule or the court's order; for government counsel responding to a defense variance request (posture switch).
 
@@ -53,7 +56,7 @@ related_prompts:
 ## Constraints
 
 **Must:**
-- Separate **guideline objections** (legal/factual challenges to PSR paragraphs) from **departure** and **variance** arguments; label each correctly for the jurisdiction `[VERIFY: departure framework under current Manual]`.
+- Separate **guideline objections** (legal/factual challenges to PSR paragraphs) from **departure** and **variance** arguments; label each correctly for the jurisdiction. Treat departures as conditional: include a departure ground only if the current Manual still provides for it `[VERIFY: current Manual's departure framework — most departures were removed effective Nov. 1, 2025]`; otherwise present the same facts as §3553(a) variance grounds.
 - For each objection: PSR ¶ → what it says → why it is wrong (fact or law) → correct calculation → effect on range.
 - Walk each statutory factor — for federal cases the §3553(a) factors: nature and circumstances of the offense and history and characteristics of the defendant; the purposes of sentencing (just punishment, deterrence, protection of the public, rehabilitation); kinds of sentences available; the guideline range and policy statements; unwarranted disparities; restitution — using facts from the record and exhibits.
 - Tie every mitigation fact to an exhibit (letter, record, report) and propose sealing for medical, mental-health, or minor-related material.
@@ -97,7 +100,7 @@ related_prompts:
 ### Objection 1 — PSR ¶{n}: {issue}
 {Record support; law [CITE]; corrected calculation.}
 
-## III. Departure Grounds (if any) [VERIFY framework]
+## III. Departure Grounds (only if the current Manual still provides for them) [VERIFY: current Manual's departure framework — most departures were removed effective Nov. 1, 2025]
 
 ## IV. Statutory Sentencing Factors
 ### A. Nature and circumstances of the offense
@@ -127,7 +130,7 @@ related_prompts:
 **Input:** Federal wire-fraud plea; defense posture. PSR applies a loss enhancement based on intended loss and a sophisticated-means enhancement. Client, 58, repaid part of the loss before indictment, cares for a disabled spouse, and has no prior record. Eleven character letters. User requests a below-range sentence of home confinement plus restitution.
 
 **Output excerpt:**
-- Objection 1 — PSR ¶24: loss figure counts invoices never submitted; defense calculates actual loss from bank records (Ex. B). Legal basis for actual vs. intended loss: `[CITE: user-supplied authority; VERIFY current commentary in Manual edition]`. Corrected range shown in the calculation table.
+- Objection 1 — PSR ¶24: loss figure counts invoices never submitted. Because the guideline's text now defines loss as the greater of actual or intended loss, the objection does not rest on excluding intended loss; it challenges proof — the record does not show the client intended to obtain the amounts on unsubmitted invoices, and the government bears the burden on the amount. Defense calculates actual loss from bank records (Ex. B) and argues intended loss is not proven above that figure `[CITE: user-supplied authority on burden and proof of intended loss]` `[VERIFY: current §2B1.1 loss definition]`. Corrected range shown in the calculation table.
 - Objection 2 — PSR ¶26: "sophisticated means" rests on use of a personal email account; record shows no concealment layering (PSR ¶15) `[CITE]`.
 - Factor B: caregiving role documented by physician letter (Ex. D, filed under seal) and two letters; pre-indictment repayment documented by wire confirmations (Ex. C).
 - Factor C: acknowledges the breach of trust; answers deterrence with the collateral losses already incurred (license surrender, Ex. E) and a restitution schedule.
@@ -138,7 +141,7 @@ related_prompts:
 ## Verification
 
 - [ ] Jurisdiction and Manual/grid edition locked and matched to the PSR.
-- [ ] Objections, departures, and variances labeled and argued separately.
+- [ ] Objections, departures (only those the current Manual still provides `[VERIFY]`), and variances labeled and argued separately.
 - [ ] Every statutory factor addressed with record-cited facts.
 - [ ] Aggravating facts acknowledged, not ignored.
 - [ ] Specific sentence requested and justified against each purpose of sentencing.
@@ -151,7 +154,7 @@ related_prompts:
 
 | Failure mode | Correction |
 |---|---|
-| Calling every argument a "departure" | Distinguish guideline objections, departures, and variances per the jurisdiction's framework `[VERIFY]` |
+| Calling every argument a "departure" | Distinguish guideline objections, departures, and variances per the jurisdiction's framework; most federal departures were removed effective Nov. 1, 2025, so argue those facts as variances unless the current Manual retains the departure `[VERIFY]` |
 | Reciting the §3553(a) factors without facts | Each factor section must cite record facts and exhibits |
 | Generic mitigation ("he is a good person") | Specific, documented facts: dates, roles, outcomes, corroborating letters |
 | Contradicting the factual basis of the plea | Mitigation explains context; it never disputes admitted conduct |

@@ -16,6 +16,9 @@ tags:
   - revision
   - series-fiction
   - plot-holes
+  - writing-a-sequel
+  - timeline-mistakes
+  - inconsistent-details
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/fiction/writing_worldbuilding_framework.md

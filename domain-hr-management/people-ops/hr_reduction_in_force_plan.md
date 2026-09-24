@@ -16,6 +16,9 @@ tags:
   - selection-criteria
   - survivor-communication
   - legally-careful
+  - cutting-staff
+  - choosing-who-goes
+  - downsizing
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/employment-labor/legal_pip_and_termination_risk_review.md

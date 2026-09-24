@@ -15,6 +15,9 @@ tags:
   - checklist
   - campaign
   - trafficking
+  - ad-rejected
+  - image-size-requirements
+  - cropped-video
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/marketing/ad-creative/references/platform-specs.md

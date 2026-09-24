@@ -16,6 +16,9 @@ tags:
   - reframing
   - design-thinking
   - workshop-prep
+  - solution-too-early
+  - same-ideas-again
+  - brainstorm-prompt
 updated: "2026-09-24"
 reasoning:
   styles: [divergent, reframing, generative]

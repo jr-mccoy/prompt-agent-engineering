@@ -18,6 +18,7 @@ tags:
   - imputation
   - screening
   - informed-consent
+  - new-client-intake
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, systematic, rule_application]

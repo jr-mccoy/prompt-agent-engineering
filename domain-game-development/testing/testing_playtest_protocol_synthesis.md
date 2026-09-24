@@ -15,6 +15,9 @@ tags:
   - game-design
   - telemetry
   - player-experience
+  - too-much-feedback
+  - one-loud-tester
+  - beta-testers
 updated: "2026-09-24"
 related_prompts:
   - domain-game-development/testing/testing_gameplay_test_plan.md

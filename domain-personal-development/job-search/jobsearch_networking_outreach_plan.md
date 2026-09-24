@@ -16,6 +16,9 @@ tags:
   - informational-interview
   - outreach
   - candidate
+  - who-to-contact
+  - reconnect-old-colleagues
+  - hidden-job-market
 updated: "2026-09-24"
 related_prompts:
   - domain-hr-management/hiring/hr_sourcing_outreach.md

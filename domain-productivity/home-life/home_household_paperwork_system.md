@@ -15,6 +15,9 @@ tags:
   - documents
   - organization
   - emergency-preparedness
+  - piles-of-mail
+  - what-to-shred
+  - cant-find-documents
 updated: "2026-09-24"
 related_prompts:
   - domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md

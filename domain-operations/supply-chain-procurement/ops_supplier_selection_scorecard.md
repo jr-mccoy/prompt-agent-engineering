@@ -15,6 +15,9 @@ tags:
   - weighted-scorecard
   - dual-sourcing
   - supply-risk
+  - compare-vendor-quotes
+  - switch-suppliers
+  - backup-supplier
 updated: "2026-09-24"
 related_prompts:
   - domain-operations/supply-chain-procurement/ops_rfp_procurement_package.md

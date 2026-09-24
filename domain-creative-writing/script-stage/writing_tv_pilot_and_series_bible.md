@@ -16,6 +16,9 @@ tags:
   - pilot
   - series-bible
   - story-engine
+  - show-idea
+  - writing-fellowship
+  - episode-two
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/script-stage/writing_screenplay_framework.md

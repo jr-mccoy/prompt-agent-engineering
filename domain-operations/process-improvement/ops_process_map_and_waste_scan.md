@@ -16,6 +16,9 @@ tags:
   - lean
   - eight-wastes
   - lead-time
+  - takes-too-long
+  - too-many-handoffs
+  - streamline-workflow
 updated: "2026-09-24"
 related_prompts:
   - domain-operations/process-improvement/ops_root_cause_a3_report.md

@@ -16,6 +16,9 @@ tags:
   - fourth-party
   - outsourcing
   - due-diligence
+  - depend-on-supplier
+  - supplier-goes-under
+  - exit-plan
 updated: "2026-09-24"
 reasoning:
   styles: [systems, evidential, structural, adversarial]

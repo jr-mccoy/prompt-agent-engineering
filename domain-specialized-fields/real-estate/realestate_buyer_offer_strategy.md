@@ -15,6 +15,9 @@ tags:
   - contingencies
   - escalation-clause
   - appraisal-gap
+  - bidding-war
+  - winning-a-house
+  - first-home
 updated: "2026-09-24"
 reasoning:
   styles: [strategic, quantitative, adversarial]

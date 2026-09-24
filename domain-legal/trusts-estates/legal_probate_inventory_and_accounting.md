@@ -18,6 +18,7 @@ tags:
   - estate-administration
   - principal-and-income
   - court-filing
+  - executor-duties
 updated: "2026-09-24"
 reasoning:
   styles: [systematic, quantitative, evidential]
@@ -173,8 +174,9 @@ brokerage $318,500 (carrying value); residence $410,000 — **$753,000**.
 
 **F. Balance check:** $793,950 = $40,950 + $753,000 → **BALANCED.**
 
-**G. Approval/consent:** attorney fees; in-kind distribution of tangibles at
-inventory value (confirm residuary beneficiaries do not object) `[VERIFY]`.
+**G. Approval/consent:** attorney fees. The tangibles were a specific gift to the
+daughter, so residuary beneficiaries have no consent right over their distribution;
+confirm distribution timing and creditor-period rules before distributing `[VERIFY]`.
 
 ## Verification
 

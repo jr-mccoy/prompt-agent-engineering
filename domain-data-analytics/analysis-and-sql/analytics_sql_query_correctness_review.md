@@ -16,6 +16,9 @@ tags:
   - data-validation
   - business-analytics
   - analysis-queries
+  - number-looks-wrong
+  - double-counting
+  - reports-disagree
 updated: "2026-09-24"
 related_prompts:
   - domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md

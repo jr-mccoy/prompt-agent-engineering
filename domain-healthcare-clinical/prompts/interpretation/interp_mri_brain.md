@@ -15,12 +15,33 @@ tags:
   - mri-brain
   - multiple-sclerosis
   - interpretation
+  - scan-shows-lesions
+  - new-neurologic-deficit
+  - incidental-scan-finding
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/interpretation/interp_ct_head.md
+  - domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md
+  - domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md
 ---
 
 ## Objective
 
 Read an MRI brain report in clinical context and produce a structured impression: what each sequence shows, what lesion class the pattern indicates, whether criteria for a specific diagnosis are met, and the concrete next step (treatment, biopsy, LP, antibody testing, follow-up interval). Input is the report or structured findings, not images.
+
+Decision support for a licensed clinician: confirm doses, gadolinium decisions in renal impairment, and diagnostic criteria against the current guideline and local protocol. A patient with an acute neurologic emergency is escalated now, not after this output.
+
+## When to Use
+
+- An MRI brain (± orbits, MRA/MRV) report is back and you need a committed lesion class and next step.
+- Deciding whether white-matter lesions meet MS dissemination criteria or are non-specific.
+- Separating ring-enhancing lesions (abscess, metastasis, glioma, lymphoma, demyelination) before biopsy or steroids.
+- Deciding which incidental findings need no follow-up.
+
+**Not this prompt if:**
+- The study is a non-contrast CT head, CTA, or CT perfusion — use `domain-healthcare-clinical/prompts/interpretation/interp_ct_head.md`.
+- The live question is acute reperfusion eligibility and dosing — use `domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md`.
+- The result in hand is a lumbar puncture — use `domain-healthcare-clinical/prompts/interpretation/interp_csf.md`.
 
 ## Inputs
 
@@ -31,11 +52,13 @@ Read an MRI brain report in clinical context and produce a structured impression
 
 ## Role
 
-Senior neurology attending (with neuroradiology fluency) reading the MRI report for a colleague.
+Senior neurology attending (with neuroradiology fluency) supporting the treating clinician; reads the MRI report alongside them and commits to an impression they can verify.
 
 ## Reasoning Steps
 
 1. **Sequence inventory.** Name what was done and what was not. No contrast → cannot characterize enhancement (tumor, abscess, active demyelination). No SWI/GRE → microbleeds and calcification not assessed. No MRV → venous sinus thrombosis not excluded.
+
+   **Stop and escalate now if:** acute infarct in a patient still within a reperfusion window or with a suspected large-vessel/basilar occlusion (stroke team); hemorrhage, mass, or edema with midline shift, herniation, or hydrocephalus (neurosurgery); suspected abscess, encephalitis, or venous sinus thrombosis with falling consciousness or seizures. Act on these before completing the routine read.
 
 2. **Diffusion.** True restriction = bright DWI + dark ADC: acute infarct, pyogenic abscess (central), highly cellular tumor (lymphoma), CJD (cortical ribboning, basal ganglia), epidermoid. Bright DWI + bright ADC = T2 shine-through, not restriction. For stroke: DWI-positive/FLAIR-negative mismatch suggests onset within ~4.5 hours in wake-up stroke — route to the thrombolysis pathway.
 
@@ -45,7 +68,7 @@ Senior neurology attending (with neuroradiology fluency) reading the MRI report 
    - **Meningeal:** smooth dural (pachymeningeal) → intracranial hypotension, post-surgery, IgG4, dural metastasis; leptomeningeal (sulcal, cranial nerves) → bacterial/TB/fungal meningitis, carcinomatosis, sarcoid.
 
 4. **White matter lesions.**
-   - **MS pattern:** ovoid periventricular lesions perpendicular to ventricles, juxtacortical/cortical, infratentorial, spinal cord. McDonald 2017 dissemination in space = ≥1 T2 lesion in ≥2 of 4 regions (periventricular, cortical/juxtacortical, infratentorial, spinal cord). Dissemination in time = simultaneous enhancing and non-enhancing lesions, a new lesion on follow-up, or CSF-specific oligoclonal bands.
+   - **MS pattern:** ovoid periventricular lesions perpendicular to ventricles, juxtacortical/cortical, infratentorial, spinal cord. Current McDonald criteria (2017; a later revision adds the optic nerve as a dissemination-in-space region — [VERIFY] which revision applies): dissemination in space = ≥1 T2 lesion in ≥2 of 4 regions (periventricular, cortical/juxtacortical, infratentorial, spinal cord). Dissemination in time = simultaneous enhancing and non-enhancing lesions, a new lesion on follow-up, or CSF-specific oligoclonal bands.
    - **Small-vessel ischemic disease:** punctate/confluent deep and periventricular caps, spares U-fibers and corpus callosum, age and vascular-risk appropriate.
    - **Other:** PRES (posterior parieto-occipital vasogenic edema, BP/immunosuppressant/eclampsia), PML (asymmetric, non-enhancing, U-fiber involvement, immunosuppressed/natalizumab), ADEM (large, bilateral, post-infectious, often children), NMOSD (area postrema, periependymal, long cord lesions), MOGAD.
 
@@ -76,6 +99,22 @@ IMPRESSION:
 3. [incidental] — [no follow-up / interval]
 ```
 
+## Verification
+
+- [ ] Stop-and-escalate triggers (infarct in window, mass effect/herniation, hydrocephalus, abscess/encephalitis, venous thrombosis) addressed before the routine read.
+- [ ] Every sequence conclusion traced to a stated finding; missing sequences (no contrast, no SWI, no MRV) named as limits, not read as negative.
+- [ ] Diagnostic criteria (McDonald DIS/DIT) applied region by region and attributed to the named criteria and revision.
+- [ ] Steroid timing checked against a possible lymphoma before any steroid recommendation.
+- [ ] Doses and gadolinium use checked against weight and eGFR; each dose confirmed against the current guideline.
+- [ ] States what would change the impression (antibody results, spinal imaging, biopsy, follow-up MRI).
+
+## False-Positive Prevention
+
+- **T2 shine-through read as restriction:** bright DWI counts only with dark ADC.
+- **Non-specific white-matter hyperintensities over-called as MS** in migraine, vascular-risk, or older patients — require typical distribution plus a compatible clinical syndrome.
+- **Ring enhancement assumed to be tumor** when abscess, tumefactive demyelination, or subacute infarct fits the diffusion and tempo better.
+- **Incidentals named as cause:** pineal cyst, DVA, perivascular spaces, or a small stable meningioma blamed for the presenting symptom.
+
 ## Worked Example
 
 **Input:** 34 y/o F, 4 days of blurred vision in the left eye with pain on eye movement. Six months ago had 2 weeks of right-leg numbness that resolved. Exam: left RAPD, visual acuity 20/80 OS. MRI brain and orbits with/without gadolinium: "Nine T2/FLAIR hyperintense ovoid lesions: six periventricular oriented perpendicular to the lateral ventricles, two juxtacortical, one in the left middle cerebellar peduncle. One periventricular lesion enhances; the others do not. Left optic nerve T2 hyperintensity and enhancement over the intraorbital segment. No restricted diffusion. SWI unremarkable."
@@ -90,11 +129,11 @@ SWI/GRE: No microbleeds.
 ENHANCEMENT: One enhancing periventricular lesion + non-enhancing lesions; left optic nerve enhancement (short intraorbital segment).
 
 PATTERN: Inflammatory demyelination.
-CRITERIA: McDonald 2017 — DIS met (periventricular, juxtacortical, infratentorial = 3 of 4 regions). DIT met (simultaneous enhancing and non-enhancing lesions). Two clinical attacks (prior sensory episode, current optic neuritis).
+CRITERIA: Current McDonald criteria (2017; [VERIFY] which revision applies) — DIS met (periventricular, juxtacortical, infratentorial = 3 of 4 regions); the left optic nerve lesion may also count as a DIS region under the newer revision. DIT met (simultaneous enhancing and non-enhancing lesions). Two clinical attacks (prior sensory episode, current optic neuritis).
 
 IMPRESSION:
 1. Relapsing-remitting multiple sclerosis presenting with left optic neuritis.
-   - Methylprednisolone 1 g IV daily × 3 days — speeds visual recovery; does not change final acuity. No oral prednisone taper required.
+   - Methylprednisolone 1 g IV daily × 3 days — speeds visual recovery; does not change final acuity. An oral taper is not routinely required; per treating neurologist.
    - Exclude mimics before labeling: AQP4-IgG and MOG-IgG (serum, cell-based assay), B12, HIV, treponemal antibody, ANA. Short-segment, anterior optic nerve involvement and brain lesion pattern favor MS over NMOSD/MOGAD.
    - MRI cervical and thoracic spine with contrast (baseline cord lesion burden, prognosis).
    - Before DMT: hepatitis B serologies, VZV IgG, JCV antibody, pregnancy test, CBC, LFTs, TB screen per agent.

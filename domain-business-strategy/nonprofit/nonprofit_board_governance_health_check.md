@@ -16,6 +16,9 @@ tags:
   - board-assessment
   - policies
   - executive-director
+  - disengaged-board
+  - board-retreat
+  - new-board-chair
 updated: "2026-09-24"
 related_prompts:
   - domain-finance/corporate-finance-fpa/finance_board_finance_package_builder.md

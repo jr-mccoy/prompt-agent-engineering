@@ -19,8 +19,8 @@ tags:
   - competing-priorities
 updated: "2026-02-26"
 related_prompts:
-  - decision-making/decisioning_time_boxed_decision_protocol.md
-  - decision-making/decisioning_resource_constrained_solver.md
+  - domain-decision-making/decisioning_time_boxed_decision_protocol.md
+  - domain-decision-making/decisioning_resource_constrained_solver.md
   - productivity/validation/validation_adversarial_mini_check.md
 ---
 

@@ -15,6 +15,9 @@ tags:
   - pacing
   - beat-chart
   - player-metrics
+  - players-get-lost
+  - boring-middle
+  - teaching-new-mechanic
 updated: "2026-09-24"
 related_prompts:
   - domain-game-development/level-design/level_procedural_generation.md

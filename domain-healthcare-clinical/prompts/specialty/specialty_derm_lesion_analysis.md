@@ -14,14 +14,31 @@ tags:
   - melanoma
   - skin-cancer
   - specialty-assessment
+  - changing-mole
+  - suspicious-spot
+  - bleeding-mole
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_rash_differential.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_pathology_report.md
+  - domain-healthcare-clinical/prompts/pharmacology/pharm_anticoag_periprocedural_bridging.md
 ---
 
 ## Objective
 
 Assess a single discrete skin lesion (pigmented or non-pigmented, suspected benign vs neoplastic) the way a dermatologist does at the bedside: precise morphologic description, structured melanoma and keratinocyte-cancer criteria, a ranked differential, and a committed action — reassure, photograph and monitor, biopsy (with the correct technique), or urgent excision/referral.
 
-Distinct from [`workup_rash_differential.md`](../reasoning/workup_rash_differential.md), which works up diffuse or inflammatory eruptions; this prompt is for one lesion where the question is "is this a skin cancer, and how do I sample it?"
+Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds (including margin and SLNB criteria) against the current guideline and local formulary. A lesion with signs of spread, infection or uncontrolled bleeding is escalated now, not after this output.
+
+## When to Use
+
+- A single mole or spot that is new, changing, bleeding, or looks different from the patient's other moles.
+- A non-pigmented bump or scaly patch on sun-damaged skin where skin cancer is the question.
+- Choosing the right biopsy technique and writing a pathology request the pathologist can use.
+
+**Not this prompt if:**
+- The problem is a diffuse or inflammatory eruption → [`workup_rash_differential.md`](../reasoning/workup_rash_differential.md); this prompt is for one lesion where the question is "is this a skin cancer, and how do I sample it?"
+- The biopsy is back and the task is reading the pathology report → [`interp_pathology_report.md`](../interpretation/interp_pathology_report.md).
 
 ## Inputs
 
@@ -36,11 +53,12 @@ If dermoscopy is not supplied, reason from clinical morphology and state what de
 
 ## Role
 
-Senior attending dermatologist doing a curbside on a lesion a primary care colleague is worried about. Precise morphologic vocabulary, a committed disposition, and a biopsy plan the pathologist can actually read.
+Senior attending dermatologist supporting the treating primary care clinician on a curbside about a lesion they are worried about. Precise morphologic vocabulary, a committed disposition, and a biopsy plan the pathologist can actually read.
 
 ## Reasoning Steps
 
 1. **Describe before you diagnose.** Primary lesion type, size in mm (measured, not estimated), color(s) counted, border quality, surface change, distribution relative to other lesions. A vague description ("dark mole") produces a vague plan.
+   - **Stop and escalate now if:** a known or suspected skin cancer with new lymphadenopathy, neurologic or systemic symptoms (possible metastatic disease — urgent oncology/dermatology); a nodule enlarging over weeks, or a firm red-violet nodule in an older or immunosuppressed patient (nodular melanoma or Merkel cell carcinoma — same-week excision); uncontrolled bleeding; or spreading erythema, necrosis, or pain out of proportion with fever (infection — treat as such).
 
 2. **Apply melanoma criteria — all of them.**
    - **ABCDE:** Asymmetry, Border irregularity, Color variegation (≥2–3 colors; blue, black, gray, white, red are more concerning than tan/brown), Diameter >6 mm, Evolving. Evolution is the most important single criterion — a small changing lesion outranks a large stable one.
@@ -114,6 +132,22 @@ SURVEILLANCE / COUNSELING:
 PITFALLS TO AVOID:
 - [shave transection of a possible melanoma, reassurance by symmetry in a nodular lesion, etc.]
 ```
+
+## Verification
+
+- [ ] The lesion was described with measured size, counted colors and primary morphology before any diagnosis was named.
+- [ ] ABCDE, ugly duckling and EFG were each applied, and no raised or nodular lesion was reassured on ABCDE alone.
+- [ ] The disposition follows from the criteria and risk modifiers; monitoring is offered only for flat, non-changing, low-risk lesions.
+- [ ] The biopsy technique preserves Breslow depth when melanoma is possible, and any periprocedural anticoagulant decision is stated.
+- [ ] Margin and SLNB thresholds name the guideline and staging edition; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+
+## False-Positive Prevention
+
+- **A seborrheic keratosis or dermatofibroma excised as "atypical."** Milia-like cysts, comedo-like openings, or a central white patch with a dimple sign are reliably benign; do not excise on color count alone when benign structures are clear.
+- **A large but stable longstanding nevus called melanoma on diameter.** Diameter >6 mm without change or other criteria is a weak signal; evolution outranks size.
+- **Every atypical nevus treated as the ugly duckling.** In a patient with many similar dysplastic-appearing nevi, compare against the patient's own signature pattern — excise the outlier, photograph and monitor the rest.
+- **Benign acral or nail pigment over-called.** A parallel-furrow pattern on acral skin and a narrow, uniform, stable nail band are typically benign; reserve urgency for parallel-ridge pattern, widening bands or Hutchinson sign.
+- **A traumatized or thrombosed benign lesion over-called.** Recent trauma, irritation or thrombosis (e.g., of an angioma) can darken or bleed a benign lesion; if uncertain, sample it rather than stage it.
 
 ## Worked Example
 

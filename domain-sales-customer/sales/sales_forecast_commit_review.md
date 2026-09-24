@@ -15,6 +15,9 @@ tags:
   - pipeline-review
   - sales-management
   - revenue
+  - hit-quota
+  - deals-slipping
+  - boss-wants-number
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/sales/sales_deal_qualification_scorecard.md

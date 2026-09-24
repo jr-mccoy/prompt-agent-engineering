@@ -16,6 +16,7 @@ tags:
   - impact-assessment
   - gap-analysis
   - remediation-plan
+  - new-rule-coming
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, systematic, decomposition]

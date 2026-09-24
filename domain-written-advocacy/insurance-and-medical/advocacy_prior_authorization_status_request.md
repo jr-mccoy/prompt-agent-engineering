@@ -17,6 +17,7 @@ tags:
   - prior-authorization
   - self-submit
   - patient
+  - waiting-on-approval
 updated: "2026-09-24"
 related_prompts:
   - domain-written-advocacy/insurance-and-medical/advocacy_insurance_claim_denial_appeal.md

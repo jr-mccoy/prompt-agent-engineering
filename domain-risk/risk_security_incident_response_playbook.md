@@ -16,6 +16,9 @@ tags:
   - data-breach
   - small-business
   - security-operations
+  - got-hacked
+  - lost-laptop
+  - email-account-hacked
 updated: "2026-09-24"
 reasoning:
   styles: [procedural, protective, systems, causal]

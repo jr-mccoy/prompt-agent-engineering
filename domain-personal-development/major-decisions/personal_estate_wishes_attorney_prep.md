@@ -16,6 +16,9 @@ tags:
   - family
   - attorney-prep
   - personal-decisions
+  - making-a-will
+  - who-raises-kids
+  - power-of-attorney
 updated: "2026-09-24"
 reasoning:
   styles: [reflective, analytic, counterfactual, identity-aware]

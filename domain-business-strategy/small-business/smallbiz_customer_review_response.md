@@ -16,6 +16,9 @@ tags:
   - customer-service
   - google-reviews
   - local-business
+  - one-star-rating
+  - unhappy-client
+  - public-complaint
 updated: "2026-09-24"
 related_prompts:
   - domain-software-engineering/mobile/ios/publishing/ios_app_store_review_response.md

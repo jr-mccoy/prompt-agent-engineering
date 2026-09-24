@@ -16,6 +16,9 @@ tags:
   - expert-review
   - nielsen-heuristics
   - audit
+  - no-users-yet
+  - confusing-interface
+  - before-redesign
 updated: "2026-09-24"
 related_prompts:
   - domain-frontend-development/accessibility/frontend_accessibility_wcag_audit.md

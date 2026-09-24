@@ -16,6 +16,9 @@ tags:
   - self-study
   - humanities
   - adult-learner
+  - old-documents
+  - trusting-sources
+  - bias-in-sources
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, evidential, contextual]

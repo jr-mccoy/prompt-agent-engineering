@@ -16,6 +16,8 @@ tags:
   - show-notes
   - audio
   - content-production
+  - stop-rambling
+  - recording-prep
 updated: "2026-09-24"
 related_prompts:
   - domain-professional-writing/content-production/content_long_form_script.md

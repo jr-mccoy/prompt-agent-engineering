@@ -17,6 +17,7 @@ tags:
   - government-investigations
   - document-production
   - privilege
+  - government-wants-documents
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, systematic, strategic]

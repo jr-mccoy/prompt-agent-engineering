@@ -16,6 +16,9 @@ tags:
   - safeguarding
   - retention
   - operations
+  - volunteers-keep-quitting
+  - need-more-volunteers
+  - background-checks
 updated: "2026-09-24"
 related_prompts:
   - domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_volunteer_recruitment_role_design.md

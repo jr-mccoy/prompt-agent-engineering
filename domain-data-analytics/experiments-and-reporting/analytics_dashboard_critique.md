@@ -16,6 +16,9 @@ tags:
   - reporting-quality
   - business-analytics
   - bi-reporting
+  - too-many-charts
+  - unused-reports
+  - confusing-charts
 updated: "2026-09-24"
 related_prompts:
   - domain-data-analytics/framing-and-metrics/analytics_kpi_tree_decomposition.md

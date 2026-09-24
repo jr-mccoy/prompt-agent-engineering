@@ -71,4 +71,4 @@ Use these prompts when you need to:
 
 ---
 
-*Migrated from: `prompts/learning/coding/`*
+*Consolidated here from the retired pre-reorg `prompts/learning/coding/` tree, which no longer exists; the current files are listed above.*

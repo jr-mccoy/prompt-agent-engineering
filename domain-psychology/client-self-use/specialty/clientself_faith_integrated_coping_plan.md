@@ -17,18 +17,20 @@ tags:
   - values
   - religious-coping
   - bring-to-therapist
+  - prayer-and-anxiety
+  - religious-guilt
+  - punished-by-god
 intended_use: model-testing
 updated: "2026-09-24"
 related_prompts:
   - domain-psychology/client-self-use/identity-transitions/clientself_religious_deconstruction_support.md
   - domain-psychology/client-self-use/pre-therapy/clientself_culturally_affirming_therapist_screening.md
-  - domain-psychology/client-self-use/symptom-understanding/clientself_intrusive_thoughts_vs_ocd_signal.md
   - domain-psychology/client-self-use/coping-by-concern/clientself_anxiety_grounding_menu_builder.md
 ---
 
 # Faith- and Values-Integrated Coping Plan (Tradition-Neutral)
 
-> **IF YOU ARE HAVING THOUGHTS OF SUICIDE OR MIGHT NOT BE SAFE: call or text 988 (Suicide & Crisis Lifeline, US), call 911, or go to your nearest emergency department (ED) now.** Faith and mental-health care are not either/or — reaching for help is consistent with any tradition. Outside the US, use your local emergency number. This is a coping-plan aid — it is **not** spiritual direction, therapy, or a diagnosis.
+> **IF YOU ARE HAVING THOUGHTS OF SUICIDE OR MIGHT NOT BE SAFE: call or text 988 (Suicide & Crisis Lifeline, US), call 911, or go to your nearest emergency department (ED) now.** Faith and mental-health care are not either/or — many people of faith find that reaching for help fits their tradition. Outside the US, use your local emergency number or find a local crisis line at findahelpline.com. This is a coping-plan aid — it is **not** spiritual direction, therapy, or a diagnosis.
 
 ## Objective
 

@@ -15,12 +15,33 @@ tags:
   - radiology
   - ct-abdomen
   - interpretation
+  - belly-pain
+  - bowel-blockage
+  - unexpected-scan-finding
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_abdominal_pain.md
+  - domain-healthcare-clinical/prompts/specialty/specialty_pancreatitis_severity_management.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md
 ---
 
 ## Objective
 
 Read a CT abdomen/pelvis report in clinical context and produce an impression that separates operative emergencies from medical and interventional problems, names the severity class of each inflammatory process, and assigns every incidental a guideline-based disposition. Input is the report or structured findings.
+
+Decision support for a licensed clinician: confirm antibiotic and fluid doses, renal adjustment and thresholds against the current guideline and local formulary; the operative decision belongs to the surgeon. A patient with peritonitis, shock, or rising lactate is escalated now, not after this output.
+
+## When to Use
+
+- An ED or inpatient CT abdomen/pelvis report is back and the question is whether it shows a surgical emergency.
+- Deciding operative vs interventional vs medical management for obstruction, appendicitis, diverticulitis, pancreatitis, or an obstructed infected kidney.
+- Giving every adrenal, renal, pancreatic, liver, or aortic incidental a follow-up and an owner before discharge.
+
+**Not this prompt if:**
+
+- There is no imaging yet and the abdominal pain is being worked up → `domain-healthcare-clinical/prompts/reasoning/workup_abdominal_pain.md`.
+- An adrenal mass needs its full biochemical workup → `domain-healthcare-clinical/prompts/specialty/specialty_adrenal_incidentaloma.md`.
+- Pancreatitis severity scoring and management beyond the CT read → `domain-healthcare-clinical/prompts/specialty/specialty_pancreatitis_severity_management.md`.
 
 ## Inputs
 
@@ -32,11 +53,11 @@ Read a CT abdomen/pelvis report in clinical context and produce an impression th
 
 ## Role
 
-Senior acute care surgeon reading the CT report in the ED.
+Senior acute care surgeon supporting the treating clinician; reads the CT report in the ED.
 
 ## Reasoning Steps
 
-1. **Protocol limits.** Non-contrast studies cannot assess bowel wall enhancement, solid-organ injury, or mesenteric vessels. Portal venous phase is not a mesenteric CTA. Absent oral contrast limits leak detection. State the limit when it matters.
+1. **Stop and escalate first if:** hemodynamic instability, peritonitis, free air, suspected closed-loop obstruction or mesenteric ischemia, rupture signs on an aneurysm, active contrast extravasation, or an obstructed infected kidney — call surgery, vascular, IR, or urology now and resuscitate in parallel; the rest of the read does not delay that call. Then **protocol limits.** Non-contrast studies cannot assess bowel wall enhancement, solid-organ injury, or mesenteric vessels. Portal venous phase is not a mesenteric CTA. Absent oral contrast limits leak detection. State the limit when it matters.
 
 2. **Free air and free fluid.** Pneumoperitoneum without recent surgery → perforated viscus until proven otherwise (post-laparotomy free air can persist days). Free fluid: simple (near water) vs high-density (hemoperitoneum ~30–45 HU; clot higher — sentinel clot localizes the source). Free fluid in a male or post-menopausal woman is abnormal.
 
@@ -79,6 +100,23 @@ IMPRESSION:
 3. [incidental] — [follow-up]
 ```
 
+## Verification
+
+- [ ] Protocol limits (contrast phase, oral contrast) stated wherever they weaken a negative finding.
+- [ ] Each emergency (free air, closed loop, ischemia, rupture, active bleed) explicitly declared present or absent before routine findings.
+- [ ] Each impression item traced to a report phrase plus the vitals and labs that support it — including whether a temperature actually meets the fever threshold.
+- [ ] Thresholds named with their source classification (Revised Atlanta, Bosniak, AAST, aneurysm repair guideline), and antibiotic doses checked against weight, renal function, and local formulary.
+- [ ] Every incidental leaves with a named follow-up, interval, and owner.
+- [ ] States what would change the plan (exam change, repeat lactate, dedicated imaging).
+
+## False-Positive Prevention
+
+- **Physiologic pelvic free fluid in a menstruating woman called pathologic.** Small volumes are normal in reproductive-age women; the abnormal-fluid rule applies to men and post-menopausal women.
+- **Ileus or pseudo-obstruction called mechanical SBO because the report names a "transition".** Require a true caliber change with decompressed distal bowel and a fitting clinical picture.
+- **An incidental named as the cause of the pain.** Simple renal cysts, cholelithiasis without inflammation, and diverticulosis without diverticulitis are common background findings.
+- **An appendix >6 mm called appendicitis on diameter alone.** Normal appendices can exceed 6 mm; require wall enhancement, periappendiceal stranding, or a fitting exam.
+- **Expected post-operative free air or post-procedure change called a perforation or leak** without the interval since surgery and the clinical trend.
+
 ## Worked Example
 
 **Input:** 71 y/o F, prior hysterectomy and appendectomy. 18 hours of crampy abdominal pain, bilious vomiting, no flatus. HR 108, BP 104/66, T 37.9, abdomen distended with focal RLQ tenderness and guarding. WBC 16.2, lactate 3.1, Cr 1.2, weight 68 kg. CT A/P with IV contrast, no oral: "Dilated small bowel loops up to 4.2 cm. Two adjacent transition points in the right lower quadrant with a C-shaped cluster of fluid-filled loops and swirling of the mesentery. The involved loops show decreased mural enhancement with mesenteric edema. Small volume free fluid. No pneumatosis or portal venous gas. No free air. Colon decompressed."
@@ -95,8 +133,8 @@ VASCULAR: Not reported abnormal.
 INCIDENTALS: None reported.
 
 IMPRESSION:
-1. Closed-loop small bowel obstruction with signs of ischemia (reduced enhancement, mesenteric edema, free fluid) in the setting of fever, peritoneal signs, leukocytosis, and lactate 3.1 — this is not a candidate for non-operative management or a water-soluble contrast challenge. Emergent laparotomy/laparoscopy.
-   - OR booked now; surgery and anesthesia notified.
+1. Closed-loop small bowel obstruction with signs of ischemia (reduced enhancement, mesenteric edema, free fluid) in the setting of a low-grade temperature (37.9 °C, below the 38.0 °C fever threshold), peritoneal signs, leukocytosis, and lactate 3.1 — this is not a candidate for non-operative management or a water-soluble contrast challenge. Emergent laparotomy/laparoscopy.
+   - Recommend emergent surgical review now; the surgeon decides on and books the operation. Notify anesthesia per local pathway.
    - NPO, NG tube to low intermittent suction.
    - Lactated Ringer's 1 L bolus, then 150 mL/h; reassess perfusion and urine output (Foley).
    - Pre-op antibiotics covering possible bowel necrosis: piperacillin-tazobactam 4.5 g IV (or ceftriaxone 2 g + metronidazole 500 mg IV).

@@ -17,6 +17,7 @@ tags:
   - breach-notification
   - regulator-notice
   - consumer-notice
+  - got-hacked
 updated: "2026-09-24"
 reasoning:
   styles: [systematic, decomposition, time_critical]
@@ -136,7 +137,7 @@ related_prompts:
 
 **Output (excerpt):**
 - **Open fact question:** Were password hashes crackable at scale and are credentials in the dataset reused for account access? Many supplied state definitions include "username or email plus password or security question" only where the credential would permit access `[VERIFY per state in survey]`. Owner: forensics; due Wednesday.
-- **Clock register:** EU supervisory-authority notice — trigger is the controller "becoming aware" as defined in the supplied text; the 72-hour period is stated in the supplied article; earliest awareness Monday 09:40 → deadline Thursday 09:40, with phased notification permitted where facts are incomplete (per supplied text). US states — per survey; three states in the survey have fixed-day deadlines keyed to "determination," which is not yet made; others require notice "without unreasonable delay."
+- **Clock register:** EU supervisory-authority notice — which authority or authorities to notify is itself open `[VERIFY: lead supervisory authority / Art. 27 representative — a controller with no EU establishment cannot use one-stop-shop]`; trigger is the controller "becoming aware" as defined in the supplied text; the 72-hour period is stated in the supplied article; earliest awareness Monday 09:40 → deadline Thursday 09:40, with phased notification permitted where facts are incomplete (per supplied text). US states — per survey; three states in the survey have fixed-day deadlines keyed to "determination," which is not yet made; others require notice "without unreasonable delay."
 - **Triage row:** State X — breach definition met only if the credential element applies → **Pending facts**; AG notice threshold in survey is 500 residents; State X count 612 → AG notice required if individual notice is.
 - **Decision log entry:** "Tuesday 16:00 — Notify EU supervisory authority on Wednesday with phased update; do not wait for final US determination. Basis: EU clock running from awareness; decided by GC."
 

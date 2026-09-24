@@ -15,6 +15,9 @@ tags:
   - application
   - professional-writing
   - candidate
+  - applying-for-jobs
+  - stand-out-applicant
+  - explain-a-gap
 updated: "2026-09-24"
 related_prompts:
   - domain-personal-development/job-search/jobsearch_job_posting_fit_decoder.md

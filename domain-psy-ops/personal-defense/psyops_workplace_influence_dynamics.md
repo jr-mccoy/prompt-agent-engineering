@@ -15,6 +15,7 @@ tags:
   - manipulation
   - power-asymmetry
   - personal-defense
+  - toxic-boss
 updated: "2026-09-24"
 reasoning:
   styles: [reflective, evidential, protective]

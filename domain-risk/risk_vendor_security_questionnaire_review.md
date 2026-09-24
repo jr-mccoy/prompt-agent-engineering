@@ -16,6 +16,9 @@ tags:
   - procurement
   - due-diligence
   - small-business
+  - buying-software
+  - is-it-safe
+  - sensitive-data
 updated: "2026-09-24"
 reasoning:
   styles: [evidential, evaluative, adversarial, structural]

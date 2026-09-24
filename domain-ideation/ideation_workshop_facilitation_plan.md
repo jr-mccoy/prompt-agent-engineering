@@ -16,6 +16,9 @@ tags:
   - agenda-design
   - remote-workshop
   - diverge-converge
+  - running-a-brainstorm
+  - team-offsite
+  - nothing-got-done
 updated: "2026-09-24"
 reasoning:
   styles: [procedural, planning, collaborative]
@@ -51,6 +54,7 @@ related_prompts:
 - `domain-ideation/ideation_crazy_eights.md` and the other exercise prompts in this domain — each is one block. This prompt chooses and sequences them.
 - `domain-productivity/workplace/work_meeting_agenda_builder.md` — agendas for routine meetings (updates, decisions). Workshops need phase design, exercises, and energy management that meeting agendas do not.
 - `domain-AI-ML/feature-engineering/mlfeature_ideation_workshop.md` — a workshop specialised for ML feature ideas.
+- `domain-agentic-resources/skills/non-coding/creative/idea-divergence-convergence/SKILL.md` — the skill runs one diverge→converge cycle; this prompt plans the timed live workshop around it.
 
 **When NOT to use:**
 - The decision is already made and you need buy-in — that is a communication session, not ideation.

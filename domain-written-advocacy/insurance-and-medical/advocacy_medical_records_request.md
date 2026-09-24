@@ -17,6 +17,7 @@ tags:
   - health-privacy
   - self-submit
   - patient
+  - switching-doctors
 updated: "2026-09-24"
 related_prompts:
   - domain-written-advocacy/privacy-and-data/advocacy_data_access_request.md
@@ -29,7 +30,7 @@ related_prompts:
 
 **When to use:** You need your records for a new clinician, an insurance appeal, a second opinion, a move, or your own understanding, and a phone call to the front desk has not produced them.
 
-**When NOT to use:** You want what a non-medical company holds about you → `../privacy-and-data/advocacy_data_access_request.md`. You are the clinician deciding how to respond to a request → `domain-psychology/practice-operations/psychology_records_request_response_decision_aid.md`. You want another adult's records and do not hold documented authority for them → the Boundary & Routing Block. You need records **urgently for ongoing care** → ask your treating clinician to request them clinician-to-clinician first; that is often faster.
+**When NOT to use:** You want what a non-medical company holds about you → `../privacy-and-data/advocacy_data_access_request.md`. You are the clinician deciding how to respond to a request → `domain-psychology/practice-operations/psychology_records_request_response_decision_aid.md`. You want another adult's records and do not hold documented authority for them → the Boundary & Routing Block. You need records **urgently for ongoing care** → ask your treating clinician to request them clinician-to-clinician first; that is often faster. You want mental-health records or psychotherapy notes → `domain-psychology/client-self-use/communication-system/clientself_requesting_records.md`.
 
 ---
 

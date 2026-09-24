@@ -16,6 +16,9 @@ tags:
   - suspense
   - genre
   - plotting
+  - dumb-villain
+  - page-turner
+  - ticking-clock
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/genre-workshops/writing_mystery_and_crime_craft.md

@@ -15,6 +15,7 @@ tags:
   - media-forensics
   - verification
   - technique-analysis
+  - fake-photo
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, evidential, adversarial]
@@ -35,7 +36,7 @@ related_prompts:
 
 # Visual Media Authenticity Assessment
 
-**Objective:** Assess whether a specific image, video, or audio clip is what it is presented as — and grade how confident that assessment can honestly be. There are four distinct answers, and they are routinely collapsed into two: the media is **authentic and correctly contextualized**; it is **authentic but miscontextualized** (a real recording, a false date, place, or caption); it has been **manipulated** (edited, spliced, retimed, selectively cropped); or it is **synthetic** (generated wholly or substantially). The second category is by far the most common in practice, and an analyst hunting for generation artifacts will walk straight past it.
+**Objective:** Assess whether a specific image, video, or audio clip is what it is presented as — and grade how confident that assessment can honestly be. There are four distinct answers, and they are routinely collapsed into two: the media is **authentic and correctly contextualized**; it is **authentic but miscontextualized** (a real recording, a false date, place, or caption); it has been **manipulated** (edited, spliced, retimed, selectively cropped); or it is **synthetic** (generated wholly or substantially). The second category is very common in practice, and an analyst hunting for generation artifacts will walk straight past it.
 
 This question is distinct from provenance tracing. `psyops_provenance_and_transmission_trace.md` asks where a piece of media came from and how it travelled; this prompt asks whether the object itself can be trusted. The two are used together, and provenance usually resolves more cases than pixel inspection does.
 

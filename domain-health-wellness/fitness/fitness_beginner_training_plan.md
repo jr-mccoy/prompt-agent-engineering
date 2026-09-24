@@ -35,8 +35,9 @@ when to add load, and when to stop an exercise.
 > **Readiness gate.** Start from a Readiness Profile
 > (`foundations/wellness_readiness_and_red_flag_screen.md`). No profile → ask its
 > blocks 1–8 first. URGENT-CARE-NOW, CLINICIAN-FIRST, or OUT-OF-SCOPE → stop and
-> restate the route. GO-WITH-LIMITS → every limit binds this plan (for example an RPE
-> ceiling, or effort rating instead of heart rate on rate-limiting medication).
+> restate the route. An urgent result means contacting the local emergency number now
+> (e.g. 911 in the US). GO-WITH-LIMITS → every limit binds this plan (for example an
+> RPE ceiling, or effort rating instead of heart rate on rate-limiting medication).
 
 **When to Use:**
 - You have never followed a structured plan, or it has been a year or more.

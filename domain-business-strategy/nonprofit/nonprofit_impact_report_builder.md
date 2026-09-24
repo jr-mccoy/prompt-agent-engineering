@@ -16,6 +16,9 @@ tags:
   - donor-communications
   - funder-reporting
   - outcomes
+  - grant-report-due
+  - show-donors-results
+  - annual-report
 updated: "2026-09-24"
 related_prompts:
   - domain-education-teaching/program/evaluation-analytics/program_logic_model_designer.md

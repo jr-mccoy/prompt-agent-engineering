@@ -16,6 +16,9 @@ tags:
   - reviews
   - referrals
   - neighbourhood
+  - need-more-customers
+  - posting-not-working
+  - word-of-mouth
 updated: "2026-09-24"
 related_prompts:
   - domain-business-strategy/go-to-market/marketing_zero_budget_launch_plan.md

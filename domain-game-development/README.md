@@ -130,8 +130,8 @@ Comprehensive prompts for game development covering design, architecture, engine
 
 ## Related Resources
 
-- **Unity ECS Patterns:** `domain-agentic-resources/skills/other/unity-ecs-patterns/`
-- **Godot GDScript Patterns:** `domain-agentic-resources/skills/other/godot-gdscript-patterns/`
+- **Unity ECS Patterns:** `domain-agentic-resources/skills/game-development/unity-ecs-patterns/`
+- **Godot GDScript Patterns:** `domain-agentic-resources/skills/game-development/godot-gdscript-patterns/`
 - **Unity Developer Agent:** `domain-agentic-resources/agents/languages/unity_developer.md`
 - **Minecraft Bukkit Agent:** `domain-agentic-resources/agents/languages/minecraft_bukkit_pro.md`
 

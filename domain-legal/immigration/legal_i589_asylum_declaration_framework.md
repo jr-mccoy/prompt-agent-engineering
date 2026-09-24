@@ -16,6 +16,7 @@ tags:
   - declaration
   - credibility
   - trauma-informed
+  - afraid-to-return
 updated: "2026-09-24"
 reasoning:
   styles: [evidential, structural, protective]
@@ -138,7 +139,7 @@ related_prompts:
 >
 > **Relocation:** Applicant moved to the capital and was located within three months — facts relevant to whether internal relocation is reasonable; counsel to assess the presumption that applies if past persecution is established `[VERIFY: 8 CFR 1208.13(b)]`.
 >
-> **Deadlines:** Arrival 2025-08-10. One-year deadline analysis is an attorney determination — flag the date prominently on the matter calendar `[VERIFY — attorney determination]`.
+> **Deadlines:** Arrival 2025-08-10. The one-year filing date (on or about 2026-08-10) **appears to have passed** as of this framework's date — confirm first whether, and on what date, an I-589 was filed (including any filing with the court or a prior affirmative filing) `[NEED: I-589 filing date and forum]`. If none was filed in time, list for attorney decision the possible exceptions and the facts that would support them: changed circumstances (e.g., new events in Country A or in R.M.'s own situation), extraordinary circumstances (e.g., serious illness, trauma-related incapacity, ineffective assistance, maintained lawful status), and whether the application was filed within a reasonable period after the circumstance; note that withholding of removal and CAT protection carry no one-year bar `[VERIFY: INA §208(a)(2)(B), (D); 8 C.F.R. §208.4(a) — attorney determination]`.
 
 ---
 

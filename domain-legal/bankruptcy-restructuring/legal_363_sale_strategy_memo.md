@@ -16,6 +16,7 @@ tags:
   - stalking-horse
   - bidding-procedures
   - free-and-clear
+  - buyer-for-business
 updated: "2026-09-24"
 reasoning:
   styles: [strategic, adversarial, structural]

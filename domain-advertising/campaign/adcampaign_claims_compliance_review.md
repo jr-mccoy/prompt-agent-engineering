@@ -16,6 +16,9 @@ tags:
   - compliance
   - campaign
   - disclosures
+  - risky-ad-wording
+  - avoid-misleading-ads
+  - paid-influencer-disclosure
 updated: "2026-09-24"
 related_prompts:
   - domain-advertising/campaign/adcampaign_copy_variant_matrix.md

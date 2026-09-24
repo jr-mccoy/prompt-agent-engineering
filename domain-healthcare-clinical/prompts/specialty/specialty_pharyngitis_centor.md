@@ -14,12 +14,31 @@ tags:
   - infectious-disease
   - pediatrics
   - specialty-assessment
+  - sore-throat
+  - strep-throat
+  - antibiotics-or-not
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/specialty/specialty_drug_allergy_delabeling.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_emergency_triage_decision_support.md
 ---
 
 ## Objective
 
-Manage acute pharyngitis in a child or adult: exclude the dangerous causes first, apply a validated clinical score to decide whether to test for group A Streptococcus (GAS), interpret the test, and write the antibiotic (or no-antibiotic) plan with dose, duration, and allergy alternatives — while holding the line on antibiotic stewardship.
+Manage acute pharyngitis in a child or adult: exclude the dangerous causes first, apply a validated clinical score to decide whether to test for group A Streptococcus (GAS), interpret the test, and write the antibiotic (or no-antibiotic) plan with dose, duration, and allergy alternatives — while holding the line on antibiotic stewardship. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with airway compromise or a suspected deep neck infection is escalated now, not after this output.
+
+## When to Use
+
+- Acute sore throat in a child ≥3 years or an adult — deciding test vs no test vs treat for group A strep.
+- Choosing the antibiotic, dose, and duration, including penicillin-allergy alternatives matched to the reaction type.
+- Deciding whether a positive strep test in a viral-looking illness is carriage.
+
+**Not this prompt if:**
+
+- Drooling, stridor, trismus, muffled voice, neck swelling, or a toxic appearance — an airway or deep-neck-infection emergency: triage with `acute-care/medicine_emergency_triage_decision_support.md` and get airway/ENT help now (no dedicated deep-neck-infection prompt exists in this domain).
+- The question is the penicillin allergy label itself — testing or removing it — `specialty/specialty_drug_allergy_delabeling.md`.
+- Neck lymphadenopathy persisting beyond the acute illness — `reasoning/workup_lymphadenopathy.md`.
 
 ## Inputs
 
@@ -32,7 +51,7 @@ Manage acute pharyngitis in a child or adult: exclude the dangerous causes first
 
 ## Role
 
-Senior attending in primary care / urgent care writing a teaching note for a resident. Committed, guideline-literate, and stingy with unnecessary antibiotics.
+Senior attending in primary care / urgent care supporting the treating clinician and writing a teaching note for a resident. Committed, guideline-literate, and stingy with unnecessary antibiotics.
 
 ## Reasoning Steps
 
@@ -65,7 +84,7 @@ Senior attending in primary care / urgent care writing a teaching note for a res
    - RADT specificity is high — a positive result is treated without culture.
    - Negative RADT in **children and adolescents** → back up with throat culture (IDSA), because sensitivity is imperfect and rheumatic fever risk is highest in this age group. Negative RADT in adults → culture not routinely needed.
    - Molecular (NAAT/PCR) tests have high sensitivity; a negative NAAT generally does not need culture backup.
-   - **Carrier problem:** up to 1 in 5 school-age children carry GAS asymptomatically. A positive test in a child with a clear viral syndrome may be carriage — this is why you do not test viral presentations.
+   - **Carrier problem:** roughly 1 in 8 school-age children are asymptomatic GAS carriers (Shaikh et al., Pediatrics 2010 meta-analysis). A positive test in a child with a clear viral syndrome may be carriage — this is why you do not test viral presentations.
 
 6. **Treat confirmed GAS pharyngitis.**
    - **Amoxicillin** 50 mg/kg PO once daily (max 1000 mg) or 25 mg/kg BID (max 500 mg/dose) × 10 days — first line in children (palatable).
@@ -110,6 +129,21 @@ PITFALLS TO AVOID:
 - [ ]
 ```
 
+## Verification
+
+- [ ] The danger screen (epiglottitis, abscess, Lemierre, acute HIV, diphtheria) is documented before any score.
+- [ ] Each Centor/McIsaac or FeverPAIN point is traced to a stated finding; one system is named and thresholds are not mixed.
+- [ ] The test decision and backup-culture rule match the age group (children/adolescents vs adults) per IDSA 2012.
+- [ ] The antibiotic is matched to the documented reaction type and weight-based doses are capped at the adult maximum; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+- [ ] Duration is stated: 10 days for penicillins and cephalosporins, 5 days for azithromycin.
+
+## False-Positive Prevention
+
+- A positive RADT or NAAT in an illness with clear viral features treated as strep pharyngitis — it may be carriage.
+- Exudate or palatal petechiae taken as proof of strep — both occur with EBV and adenovirus.
+- An amoxicillin rash during EBV mononucleosis recorded as a penicillin allergy — it creates a false lifelong label.
+- Groups C/G streptococci treated as mandatory — treatment is optional and not routinely recommended.
+
 ## Worked Example
 
 **Input:** 16 y/o M, sore throat × 2 days, T 38.9 °C, no cough, no rhinorrhea. Tonsils enlarged with exudate, tender anterior cervical nodes, palatal petechiae. No posterior cervical nodes, no splenomegaly, no trismus, uvula midline, voice normal. Allergy: "hives to amoxicillin at age 6," no anaphylaxis. RADT positive.
@@ -132,7 +166,7 @@ DIAGNOSIS: Group A streptococcal pharyngitis.
 TREATMENT:
 - Hives to amoxicillin in childhood with no anaphylaxis, angioedema, or severe cutaneous reaction → a cephalosporin is acceptable; clinically significant cross-reactivity after a remote non-anaphylactic reaction is uncommon.
 - Cephalexin 500 mg PO BID × 10 days. Cephalexin shares an R1 side chain with amoxicillin; if the family or allergy history makes you want to avoid a shared side chain, use cefuroxime axetil 250 mg PO BID × 10 days instead.
-- If the family declines a cephalosporin: clindamycin 300 mg PO TID × 10 days, or azithromycin 500 mg PO day 1 then 250 mg days 2–5 (adult dosing).
+- If the family declines a cephalosporin: clindamycin 300 mg PO TID × 10 days, or azithromycin 12 mg/kg PO once daily (max 500 mg) × 5 days (IDSA).
 - Ibuprofen 400–600 mg PO q6–8h PRN.
 - Refer for penicillin allergy evaluation (amoxicillin challenge) when well — a childhood urticarial label in a teenager is frequently removable.
 
@@ -145,6 +179,6 @@ PITFALLS TO AVOID:
 - Do not prescribe amoxicillin to a teenager before considering EBV — here no posterior nodes or splenomegaly and RADT positive, so strep is the working diagnosis.
 - Do not default to azithromycin for a non-anaphylactic penicillin label — cephalexin is more effective and macrolide resistance is rising.
 - Do not shorten the cephalosporin course to 5 days — the US guideline standard for penicillins and first-generation cephalosporins is 10 days.
-- Do not assume "different drug class" means "different side chain" — cephalexin and cefadroxil share amoxicillin's R1 side chain.
+- Shared R1 side chains (amoxicillin/ampicillin ↔ cephalexin, cefadroxil, cefaclor) matter mainly after anaphylaxis or another severe immediate reaction — choose a dissimilar-side-chain cephalosporin then; after a non-severe reaction such as hives (not anaphylaxis, and not SJS/TEN, DRESS or another severe delayed reaction), the 2022 AAAAI/ACAAI drug-allergy practice parameter permits cephalosporins without testing.
 - Do not test or treat viral-feature pharyngitis just because the patient requests antibiotics.
 ```

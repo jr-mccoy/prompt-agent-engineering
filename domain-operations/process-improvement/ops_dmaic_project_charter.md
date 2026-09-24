@@ -15,6 +15,9 @@ tags:
   - ctq
   - baseline
   - measurement-system-analysis
+  - improvement-project
+  - recurring-problem
+  - scope-the-fix
 updated: "2026-09-24"
 related_prompts:
   - domain-operations/process-improvement/ops_root_cause_a3_report.md

@@ -16,6 +16,9 @@ tags:
   - objection-handling
   - public-speaking
   - preparation
+  - tough-questions
+  - unpopular-announcement
+  - town-hall
 updated: "2026-09-24"
 related_prompts:
   - domain-science/public-engagement/science_media_interview_prep.md

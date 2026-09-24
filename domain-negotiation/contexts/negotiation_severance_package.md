@@ -15,6 +15,7 @@ tags:
   - employment
   - separation
   - career
+  - just-laid-off
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, strategic, adversarial]

@@ -15,6 +15,9 @@ tags:
   - safety-gate
   - exercise-readiness
   - medical-clearance
+  - safe-to-exercise
+  - restarting-after-break
+  - check-before-starting
 updated: "2026-09-24"
 related_prompts:
   - domain-personal-development/major-decisions/personal_health_decision_research.md
@@ -30,7 +33,7 @@ first, or get urgent care — and hand the result forward as a Readiness Profile
 rest of the domain reads instead of re-asking.
 
 > **Domain gate — runs first.** This prompt does not diagnose, interpret symptoms,
-> or clear anyone for exercise. It sorts answers into four routes by fixed rules.
+> or clear anyone for exercise. It sorts answers into five routes by fixed rules.
 > Anything that lands in *Urgent* or *Clinician first* stops here: no plan, no
 > "gentle version", no workaround. A clinician's written or stated limits, once the
 > person has them, are carried forward verbatim and never loosened by a later prompt.
@@ -54,7 +57,7 @@ body-fat, or lab values; the gate does not need them.
 2. **With effort, ever:** chest discomfort, fainting or near-fainting, breathlessness
    out of proportion to effort, a racing or irregular heartbeat with dizziness.
 3. **Known conditions:** heart, lung, kidney, or liver disease; diabetes (any type);
-   high blood pressure not yet controlled; a clotting or bleeding problem.
+   high blood pressure (controlled or not); a clotting or bleeding problem.
 4. **Life stage:** age; currently pregnant, trying, or within 12 months postpartum.
 5. **Body:** surgery in the last 3 months; an injury or joint pain that currently
    changes how you move; a clinician's activity restriction you are under now.
@@ -88,7 +91,7 @@ it as *yes* for routing purposes and say so.
    fired: a *yes* in block 2; a known condition in block 3 without clearance for the
    planned activity; pregnancy or postpartum; surgery in 3 months or a movement-changing
    injury; a heart-rate or blood-sugar medication (the plan's intensity cues and
-   hypoglycaemia risk depend on it). Give the person the exact question to take to the
+   hypoglycemia risk depend on it). Give the person the exact question to take to the
    appointment ("I want to start X at Y intensity, Z times a week — is that safe for
    me, and what limits apply?").
 4. **Nutrition guard.** Any *yes* in block 7 → **Nutrition guard: STOP**. Nutrition
@@ -97,7 +100,8 @@ it as *yes* for routing purposes and say so.
    crisis self-triage prompt. Say this plainly and without alarm.
 5. **Sleep flags.** Snoring with witnessed pauses, or dozing while driving → flag for
    a clinician (possible sleep-breathing disorder; drowsy driving is a safety issue
-   today). Chronic insomnia pattern → flag for a clinician and the CBT-I prompt. These
+   today). Chronic insomnia pattern → flag for a clinician, and the CBT-I prompt only with
+   or after clinician review (sleep restriction raises daytime sleepiness). These
    do not block training or nutrition prompts.
 6. **Limits, not blocks (OC-04).** No flags but sedentary and 65+, or marked
    deconditioning, or undiagnosed joint pain that does not change movement →
@@ -160,7 +164,8 @@ loudly and sometimes stop breathing.
 ```
 READINESS PROFILE — 2026-09-24
 Gate result: CLINICIAN-FIRST
-Rules fired: medication affecting heart rate (beta-blocker, block 6)
+Rules fired: medication affecting heart rate (beta-blocker, block 6); high blood pressure,
+  managed but not cleared for the planned activity (block 3)
 Take to your clinician: "I want to start strength training 3×/week and build toward a
   10K run over ~9 months. Is that safe on my current medication, and should I use effort
   rating instead of heart rate to judge intensity?"

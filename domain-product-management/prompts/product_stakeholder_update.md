@@ -16,6 +16,9 @@ tags:
   - metrics-reporting
   - roadmap-changes
   - executive-communication
+  - update-my-boss
+  - monthly-status
+  - missed-target
 updated: "2026-09-24"
 related_prompts:
   - domain-productivity/workplace/work_status_update_writer.md

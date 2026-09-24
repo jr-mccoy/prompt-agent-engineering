@@ -16,6 +16,9 @@ tags:
   - process-safety
   - controls
   - risk-assessment
+  - serious-accident
+  - what-could-fail
+  - safeguards-working
 updated: "2026-09-24"
 reasoning:
   styles: [causal, structural, systems, adversarial]

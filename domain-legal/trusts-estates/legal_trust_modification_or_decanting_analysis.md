@@ -18,6 +18,7 @@ tags:
   - nonjudicial-settlement
   - reformation
   - trust-protector
+  - terms-no-longer-fit
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, comparative, hierarchical]
@@ -155,16 +156,18 @@ allocated at creation. Situs state has a decanting statute (text not supplied).
 | Instrument powers | No amendment power, no protector | No | — | — | No |
 | Non-judicial settlement | Removing mandatory distributions may violate a material purpose (outright distribution at 35) | Unknown | All beneficiaries; son's capacity and representation `[VERIFY]` | Possibly | Weak |
 | Judicial modification | Unanticipated circumstance (disability) frustrating purpose | Likely Yes | Per court rules `[VERIFY]` | Yes | Viable fallback |
-| Decanting | Trustee holds absolute discretion over principal → broad decanting authority likely `[VERIFY: statute's discretion threshold]`; second trust as supplemental-needs trust for same beneficiary | Likely Yes | Notice to qualified beneficiaries `[VERIFY: period and recipients]` | No, unless contested | **Preferred** |
+| Decanting | Trustee holds absolute discretion over principal → broad decanting authority over principal likely `[VERIFY: statute's discretion threshold]`; but the son has held a mandatory income right since 25, which many statutes protect `[VERIFY: whether the statute permits eliminating a current mandatory income right; special-needs decanting provision]`; second trust as supplemental-needs trust for same beneficiary | Unknown | Notice to qualified beneficiaries `[VERIFY: period and recipients]` | No, unless contested | **Viable only if** the statute (or a special-needs decanting provision) permits removing the vested mandatory income right |
 
 **Tax screen — decanting:** preserve GST-exempt status by keeping the same
 beneficiaries and not extending the vesting period `[VERIFY/CITE: safe-harbor
 guidance for exempt trusts]`; no gift by the son where the trustee acts under its own
 authority and the son does not consent to a reduction `[VERIFY]`.
 
-**Recommendation:** decant to a supplemental-needs trust for the son under the situs
-decanting statute; if the statute's discretion threshold or notice requirements are
-not met, petition for judicial modification on the unanticipated-circumstance ground.
+**Recommendation:** decanting to a supplemental-needs trust is the preferred route
+**only if** the situs statute (or its special-needs decanting provision) permits
+eliminating the son's current mandatory income right `[VERIFY]` and its discretion
+threshold and notice requirements are met; otherwise, petition for judicial
+modification on the unanticipated-circumstance ground.
 
 ## Verification
 

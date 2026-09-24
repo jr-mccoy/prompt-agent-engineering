@@ -16,6 +16,7 @@ tags:
   - i-140
   - evidence-mapping
   - final-merits
+  - green-card
 updated: "2026-09-24"
 reasoning:
   styles: [evidential, evaluative, adversarial]

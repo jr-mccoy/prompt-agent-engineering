@@ -338,40 +338,40 @@ For healthcare prompts to be valuable, they must:
 **Case & Scenario Design (7 prompts)**
 | Prompt | Purpose |
 |--------|---------|
-| `medical-education/case-scenario-design/meded_pbl_case_writer.md` | Write PBL trigger packets, facilitator guide, SDL resource suggestions |
-| `medical-education/case-scenario-design/meded_tbl_application_exercise_designer.md` | Design TBL iRAT/tRAT sets and 4S application exercises |
-| `medical-education/case-scenario-design/meded_virtual_patient_case_builder.md` | Build branching virtual patient cases with decision nodes and consequence logic |
-| `medical-education/case-scenario-design/meded_progressive_disclosure_case_designer.md` | Design sequential cases with commitment steps and phase-by-phase revelation |
-| `medical-education/case-scenario-design/meded_standardized_patient_scenario_writer.md` | Write SP scripts, doorway information, hidden history, emotional cues |
-| `medical-education/case-scenario-design/meded_osce_station_designer.md` | Design complete OSCE stations: student task card, SP instructions, examiner checklist, standard-setting guidance |
-| `medical-education/case-scenario-design/meded_simulation_scenario_designer.md` | Design simulation scenarios: manikin states, confederate roles, debriefing objectives |
+| [`case_pbl_author.md`](../domain-medical-education/educator-case-writing/case_pbl_author.md) | Write PBL trigger packets, facilitator guide, SDL resource suggestions |
+| [`case_tbl_application_exercise_designer.md`](../domain-medical-education/educator-case-writing/case_tbl_application_exercise_designer.md) | Design TBL iRAT/tRAT sets and 4S application exercises |
+| [`case_virtual_patient_builder.md`](../domain-medical-education/educator-case-writing/case_virtual_patient_builder.md) | Build branching virtual patient cases with decision nodes and consequence logic |
+| [`case_progressive_disclosure_designer.md`](../domain-medical-education/educator-case-writing/case_progressive_disclosure_designer.md) | Design sequential cases with commitment steps and phase-by-phase revelation |
+| [`case_standardized_patient_author.md`](../domain-medical-education/educator-case-writing/case_standardized_patient_author.md) | Write SP scripts, doorway information, hidden history, emotional cues |
+| [`sim_osce_station_designer.md`](../domain-medical-education/educator-simulation-design/sim_osce_station_designer.md) | Design complete OSCE stations: student task card, SP instructions, examiner checklist, standard-setting guidance |
+| [`sim_scenario_designer.md`](../domain-medical-education/educator-simulation-design/sim_scenario_designer.md) | Design simulation scenarios: manikin states, confederate roles, debriefing objectives |
 
 **Assessment Tools (6 prompts)**
 | Prompt | Purpose |
 |--------|---------|
-| `medical-education/assessment-tools/meded_nbme_style_mcq_writer.md` | Write NBME/USMLE-format clinical vignette MCQs with distractor rationale |
-| `medical-education/assessment-tools/meded_oral_exam_case_designer.md` | Design oral exam cases with graduated probing questions and evaluator scoring guide |
-| `medical-education/assessment-tools/meded_assessment_rubric_builder.md` | Build analytic/holistic/entrustment rubrics with behaviorally-anchored descriptors |
-| `medical-education/assessment-tools/meded_workplace_based_assessment_tools.md` | Design mini-CEX, DOPS, CBD, EPA observation forms with feedback facilitation guides |
-| `medical-education/assessment-tools/meded_milestone_narrative_writer.md` | Write ACGME milestone narratives with behavioral evidence and developmental framing |
-| `medical-education/assessment-tools/meded_clinical_skills_checklist_designer.md` | Design observable-behavior checklists for clinical procedures and communication skills |
+| [`assess_nbme_style_mcq_writer.md`](../domain-medical-education/educator-assessment-items/assess_nbme_style_mcq_writer.md) | Write NBME/USMLE-format clinical vignette MCQs with distractor rationale |
+| [`assess_oral_exam_case_designer.md`](../domain-medical-education/educator-assessment-items/assess_oral_exam_case_designer.md) | Design oral exam cases with graduated probing questions and evaluator scoring guide |
+| [`assess_rubric_builder.md`](../domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md) | Build analytic/holistic/entrustment rubrics with behaviorally-anchored descriptors |
+| [`assess_workplace_based_assessment_tools.md`](../domain-medical-education/educator-rubrics-wba/assess_workplace_based_assessment_tools.md) | Design mini-CEX, DOPS, CBD, EPA observation forms with feedback facilitation guides |
+| [`assess_milestone_narrative_writer.md`](../domain-medical-education/educator-rubrics-wba/assess_milestone_narrative_writer.md) | Write ACGME milestone narratives with behavioral evidence and developmental framing |
+| [`assess_clinical_skills_checklist_designer.md`](../domain-medical-education/educator-rubrics-wba/assess_clinical_skills_checklist_designer.md) | Design observable-behavior checklists for clinical procedures and communication skills |
 
 **Feedback & Remediation (3 prompts)**
 | Prompt | Purpose |
 |--------|---------|
-| `medical-education/feedback-remediation/meded_learner_feedback_composer.md` | Compose specific, evidence-based feedback using R2C2/AID/SBI frameworks |
-| `medical-education/feedback-remediation/meded_remediation_plan_designer.md` | Design root-cause-driven remediation plans with SMART goals and reassessment criteria |
-| `medical-education/feedback-remediation/meded_debriefing_guide_designer.md` | Design PEARLS/GAS/advocacy-inquiry debriefing guides with facilitation scripts |
+| [`remed_learner_feedback_composer.md`](../domain-medical-education/educator-remediation/remed_learner_feedback_composer.md) | Compose specific, evidence-based feedback using R2C2/AID/SBI frameworks |
+| [`remed_plan_designer.md`](../domain-medical-education/educator-remediation/remed_plan_designer.md) | Design root-cause-driven remediation plans with SMART goals and reassessment criteria |
+| [`sim_debriefing_guide_designer.md`](../domain-medical-education/educator-simulation-design/sim_debriefing_guide_designer.md) | Design PEARLS/GAS/advocacy-inquiry debriefing guides with facilitation scripts |
 
 **Teaching Methods (6 prompts)**
 | Prompt | Purpose |
 |--------|---------|
-| `medical-education/teaching-methods/meded_preceptor_teaching_script_writer.md` | Write scripted OMP and SNAPPS dialogue for specific clinical situations |
-| `medical-education/teaching-methods/meded_small_group_facilitation_guide.md` | Design small-group facilitation guides with discussion questions and group dynamics management |
-| `medical-education/teaching-methods/meded_journal_club_teaching_guide.md` | Design journal club facilitation guides with article-type-specific critique frameworks |
-| `medical-education/teaching-methods/meded_lecture_redesign_planner.md` | Redesign lectures using chunking, retrieval practice, and interleaving |
-| `medical-education/teaching-methods/meded_flipped_classroom_module_designer.md` | Design flipped classroom modules with pre-class packages and readiness assurance |
-| `medical-education/teaching-methods/meded_faculty_development_module_designer.md` | Design faculty development modules targeting Kirkpatrick Level 3 behavior change |
+| [`curric_preceptor_teaching_script_writer.md`](../domain-medical-education/educator-curriculum-design/curric_preceptor_teaching_script_writer.md) | Write scripted OMP and SNAPPS dialogue for specific clinical situations |
+| [`curric_small_group_facilitation_guide.md`](../domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md) | Design small-group facilitation guides with discussion questions and group dynamics management |
+| [`curric_journal_club_teaching_guide.md`](../domain-medical-education/educator-curriculum-design/curric_journal_club_teaching_guide.md) | Design journal club facilitation guides with article-type-specific critique frameworks |
+| [`curric_lecture_redesign_planner.md`](../domain-medical-education/educator-curriculum-design/curric_lecture_redesign_planner.md) | Redesign lectures using chunking, retrieval practice, and interleaving |
+| [`curric_flipped_classroom_module_designer.md`](../domain-medical-education/educator-curriculum-design/curric_flipped_classroom_module_designer.md) | Design flipped classroom modules with pre-class packages and readiness assurance |
+| [`curric_faculty_development_module_designer.md`](../domain-medical-education/educator-curriculum-design/curric_faculty_development_module_designer.md) | Design faculty development modules targeting Kirkpatrick Level 3 behavior change |
 
 #### Imaging & Radiology (New — 2026-04)
 | Prompt | Purpose |

@@ -16,6 +16,9 @@ tags:
   - design-review
   - feedback
   - collaboration
+  - design-by-committee
+  - taste-arguments
+  - feedback-session
 updated: "2026-09-24"
 related_prompts:
   - domain-data-analytics/experiments-and-reporting/analytics_dashboard_critique.md

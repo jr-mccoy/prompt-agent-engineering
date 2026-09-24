@@ -16,6 +16,8 @@ tags:
   - investor-materials
   - startup
   - storytelling
+  - raising-money
+  - investors-lost-interest
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/marketing/sales-enablement/SKILL.md

@@ -16,18 +16,21 @@ tags:
   - help-seeking
   - stigma
   - means-safety
+  - short-fused
+  - dont-do-therapy
+  - drinking-more
+  - cant-switch-off
 intended_use: model-testing
 updated: "2026-09-24"
 related_prompts:
   - domain-psychology/client-self-use/pre-therapy/clientself_do_i_need_therapy_decision_aid.md
-  - domain-psychology/client-self-use/pre-therapy/clientself_finding_therapist_search_criteria.md
-  - domain-psychology/client-self-use/habit-lifestyle/clientself_alcohol_use_re_evaluation.md
   - domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md
+  - domain-psychology/client-self-use/habit-lifestyle/clientself_alcohol_use_re_evaluation.md
 ---
 
 # Men's Mental Health — Lowering the Barriers to Getting Help
 
-> **IF YOU ARE THINKING ABOUT SUICIDE OR ABOUT ENDING THINGS: call or text 988 (Suicide & Crisis Lifeline, US) now — veterans press 1 — call 911, or go to the nearest emergency department (ED).** If there's a gun in the house, ask someone you trust to hold it for now; putting time and distance between you and a firearm saves lives. Outside the US, use your local emergency number. This is a help-seeking aid — it is **not** a diagnosis or therapy.
+> **IF YOU ARE THINKING ABOUT SUICIDE OR ABOUT ENDING THINGS: call or text 988 (Suicide & Crisis Lifeline, US) now — veterans press 1 — call 911, or go to the nearest emergency department (ED).** If there's a gun in the house, ask someone you trust to hold it for now; putting time and distance between you and a firearm saves lives. Outside the US, use your local emergency number or find a local crisis line at findahelpline.com. This is a help-seeking aid — it is **not** a diagnosis or therapy.
 
 ## Objective
 

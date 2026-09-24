@@ -44,7 +44,7 @@ Route to this domain when the request mentions:
 
 ### Subfolder Map
 
-`prompts/`: `agency/` · `goals/` · `habits/` · `identity/` · `resilience/` · `relationships/` · `thinking/` · `productivity/` · `solo-dev/` · `stakeholder/` · `career/` · **`life-transitions/`** (navigating a change already underway — the after/during complement to `major-decisions/`) · **`emotional-fitness/`** (everyday non-clinical emotional skills). Top-level: `career-transformation/` · **`job-search/`** (running an external search from the candidate side — target, documents, outreach, interviews, pipeline; stops at the offer) · `major-decisions/` (making the high-stakes choice, *before* the change). See `EXPANSION_ROADMAP.md` for the full inventory and future waves.
+`prompts/`: `agency/` · `goals/` · `habits/` · `identity/` · `resilience/` · `relationships/` · `thinking/` · `solo-dev/` · `stakeholder/` · `career/` · **`life-transitions/`** (navigating a change already underway — the after/during complement to `major-decisions/`) · **`emotional-fitness/`** (everyday non-clinical emotional skills). Top-level: `career-transformation/` · **`job-search/`** (running an external search from the candidate side — target, documents, outreach, interviews, pipeline; stops at the offer) · `major-decisions/` (making the high-stakes choice, *before* the change). See `EXPANSION_ROADMAP.md` for the full inventory and future waves.
 
 ---
 
@@ -233,7 +233,7 @@ Prompts are organized into subdirectories by function:
 - `goals_goal_setting_and_reflection_loop.md` - Goal reflection cycles
 - `goals_decompose_learning_task.md` - Learning task breakdown
 
-**Productivity & Focus (`prompts/productivity/`)** - 5 prompts for work effectiveness
+**Productivity & Focus (in `domain-productivity/`)** - 5 related prompts for work effectiveness; they moved out of this domain in the 2026-08 reorg
 - `domain-productivity/deep-work/deepwork_personal_energy_audit.md` - Personal energy management
 - `domain-productivity/deep-work/deepwork_meeting_killer.md` - Meeting effectiveness optimization
 - `domain-productivity/deep-work/deepwork_zombie_meeting_detector.md` - Calendar audit and optimization

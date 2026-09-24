@@ -16,6 +16,9 @@ tags:
   - joint-display
   - explanatory-sequential
   - convergent-design
+  - surveys-plus-interviews
+  - numbers-and-stories
+  - results-disagree
 updated: "2026-09-24"
 reasoning:
   styles: [systematic, integrative, methodological]

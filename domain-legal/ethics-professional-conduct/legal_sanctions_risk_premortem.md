@@ -18,6 +18,7 @@ tags:
   - litigation-risk
   - citation-verification
   - pre-mortem
+  - frivolous-filing
 updated: "2026-09-24"
 reasoning:
   styles: [adversarial, evaluative, prospective]

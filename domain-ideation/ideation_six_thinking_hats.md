@@ -16,6 +16,9 @@ tags:
   - group-discussion
   - proposal-review
   - facilitation
+  - meetings-become-debates
+  - constant-naysayer
+  - review-my-idea
 updated: "2026-09-24"
 reasoning:
   styles: [parallel, divergent, evaluative]

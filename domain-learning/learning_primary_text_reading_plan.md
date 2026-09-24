@@ -16,6 +16,9 @@ tags:
   - self-study
   - humanities
   - pacing
+  - stalled-reading
+  - great-books
+  - understand-philosophy
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, systems, strategic]

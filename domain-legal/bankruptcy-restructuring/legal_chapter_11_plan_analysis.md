@@ -16,6 +16,7 @@ tags:
   - cramdown
   - absolute-priority
   - feasibility
+  - creditors-object
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, adversarial, structural]

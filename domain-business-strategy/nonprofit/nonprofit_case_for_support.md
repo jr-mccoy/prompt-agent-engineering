@@ -16,6 +16,9 @@ tags:
   - messaging
   - donor-communications
   - impact
+  - why-give-here
+  - capital-campaign
+  - same-story-everywhere
 updated: "2026-09-24"
 related_prompts:
   - domain-advertising/advertising_nonprofit_cause_marketing.md

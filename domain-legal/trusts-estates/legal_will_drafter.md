@@ -17,6 +17,7 @@ tags:
   - executor
   - guardianship
   - drafting
+  - who-inherits
 updated: "2026-09-24"
 reasoning:
   styles: [constructive, systematic, conditional]
@@ -169,7 +170,7 @@ trust; husband is executor, sister is successor and guardian.
 > **3.1 Ring.** I give my diamond engagement ring to my daughter, [Name], if she
 > survives me. If she does not survive me, this gift shall pass to her descendants who
 > survive me, per stirpes, or if none, shall lapse and pass under Article 5. If I do not
-> own the ring at my death, this gift shall lapse; no other property is substituted.
+> own the ring at my death, this gift shall adeem; no other property is substituted.
 
 > **5.1 Pour-over.** I give my residuary estate to the trustee then acting under the
 > [Name] Revocable Trust dated [date], as amended before my death, to be administered
@@ -207,7 +208,7 @@ survives but is incapacitated? Current draft only covers the husband not survivi
 | Outright gift to a minor | Route to a trust or custodial arrangement |
 | Will "leaves" a 401(k) or joint account | Those pass outside probate; cross-check the beneficiary review and fix designations instead |
 | Disinheriting a child by omission | Name and expressly exclude, and flag pretermitted-heir and elective-share checks `[VERIFY]` |
-| Stating witness count or self-proving form from memory | Mark `[VERIFY]`; execution defects void wills |
+| Stating witness count or self-proving form from memory | Mark `[VERIFY]`; execution defects can invalidate wills (some states apply harmless-error or substantial-compliance rules) |
 | Tax clause that conflicts with the marital-deduction plan | Check apportionment and survivorship against the tax memo before finalising |
 | Pour-over to a trust that does not yet exist | Confirm the trust is signed first or at the same signing; mark sequencing in the checklist |
 

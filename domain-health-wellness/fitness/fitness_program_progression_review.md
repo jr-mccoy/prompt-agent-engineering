@@ -15,6 +15,10 @@ tags:
   - deload
   - overreaching
   - program-review
+  - not-getting-stronger
+  - sore-for-days
+  - dreading-workouts
+  - need-rest-week
 updated: "2026-09-24"
 related_prompts:
   - domain-health-wellness/fitness/fitness_beginner_training_plan.md
@@ -31,7 +35,8 @@ grinding through fatigue or abandoning a plan that only needed a deload.
 > **Readiness gate.** Start from a Readiness Profile
 > (`foundations/wellness_readiness_and_red_flag_screen.md`). No profile → ask its
 > blocks 1–8 first. URGENT-CARE-NOW, CLINICIAN-FIRST, or OUT-OF-SCOPE → stop and
-> restate the route. GO-WITH-LIMITS → no recommendation may exceed a stated limit.
+> restate the route. An urgent result means contacting the local emergency number now
+> (e.g. 911 in the US). GO-WITH-LIMITS → no recommendation may exceed a stated limit.
 
 **When to Use:**
 - Week 8 of `fitness_beginner_training_plan.md`, or any plan 4+ weeks in.
@@ -154,7 +159,7 @@ none
 | Goblet squat | up then flat | 8 kg×12 (wk3) → 14 kg×9, 9, 8 (wk6–8) | stalled |
 | DB RDL       | up           | 10 kg×10 → 16 kg×12                 | progressing |
 | Incline push-up | down      | 3×12 @ RPE 7 (wk5) → 3×10 @ RPE 9 (wk8) | regressing |
-| Row          | flat         | 12 kg×12 wk6–8                       | stalled |
+| Row          | flat         | 12 kg×10, 9, 9 (wk6) → 12 kg×10, 9, 9 (wk8) | stalled |
 
 ## Overreaching screen
 Signals present: regression on 3 lifts, sleep below baseline, soreness ~4 days (3 of 6) → overreaching
@@ -163,7 +168,9 @@ Signals present: regression on 3 lifts, sleep below baseline, soreness ~4 days (
 Recovery branch: adherence 92% and RPE on target through wk5; stall starts with the 6-h sleep weeks.
 
 ## The one change
-Deload week 9: 2 sets instead of 3, loads at RPE 5–6. Weeks 10–11: hold loads, protect 7 h sleep.
+Deload week 9: 2 sets instead of 3, loads at RPE 5–6, same exercises; week 10 resumes the plan as written.
+Note (context, not a second change): the 6-h sleep weeks are the likely driver — worth protecting
+~7 h if the project allows, but the review tests the deload alone.
 
 ## Re-review
 Date: week 12 | Success looks like: goblet squat 14 kg × 12, 12, 11 at ≤ RPE 8

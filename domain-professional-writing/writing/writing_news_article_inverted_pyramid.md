@@ -16,6 +16,9 @@ tags:
   - attribution
   - sourcing
   - lede
+  - local-news
+  - report-what-happened
+  - community-newsletter
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/creative-nonfiction/writing_narrative_nonfiction_and_literary_journalism.md

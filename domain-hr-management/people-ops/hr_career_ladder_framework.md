@@ -16,6 +16,9 @@ tags:
   - promotion-criteria
   - dual-track
   - people-ops
+  - getting-promoted
+  - unclear-job-levels
+  - promoted-by-tenure
 updated: "2026-09-24"
 related_prompts:
   - domain-hr-management/people-ops/hr_compensation_banding.md

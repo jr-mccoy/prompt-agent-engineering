@@ -14,14 +14,31 @@ tags:
   - adrenal
   - radiology
   - specialty-assessment
+  - found-on-scan
+  - lump-near-kidney
+  - resistant-blood-pressure
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/specialty/specialty_hypercortisolism_workup.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_ct_abdomen_pelvis.md
 ---
 
 ## Objective
 
 Take an adrenal mass ≥1 cm discovered on imaging done for another reason and answer the two questions that decide management: **Is it malignant (or at risk)?** and **Is it hormonally active?** Produce the imaging interpretation with numbers, the biochemical screening panel with interfering-drug review, the interpretation of results, and a committed plan: discharge from follow-up, surveillance with stated interval, further imaging, or referral for adrenalectomy.
 
-Distinct from [`medicine_incidental_findings_management.md`](../reasoning/medicine_incidental_findings_management.md) (multi-organ incidentaloma triage) and from [`specialty_hypercortisolism_workup.md`](specialty_hypercortisolism_workup.md), which works up suspected overt Cushing syndrome from the clinical presentation rather than from an adrenal image.
+Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A suspected catecholamine crisis, adrenal hemorrhage or adrenal crisis is escalated now, not after this output.
+
+## When to Use
+
+- An adrenal mass ≥1 cm reported on CT or MRI done for another reason.
+- A known adrenal nodule where the referring clinician asks whether hormones need checking, imaging needs repeating, or surgery is warranted.
+- Bilateral adrenal masses, or an adrenal mass in someone with a history of cancer, where the imaging phenotype and the biopsy question must be settled.
+
+**Not this prompt if:**
+- The report lists several incidental findings across organs and needs triage as a whole → [`medicine_incidental_findings_management.md`](../reasoning/medicine_incidental_findings_management.md).
+- The starting point is clinical suspicion of overt Cushing syndrome rather than an adrenal image → [`specialty_hypercortisolism_workup.md`](specialty_hypercortisolism_workup.md).
 
 ## Inputs
 
@@ -32,11 +49,12 @@ Distinct from [`medicine_incidental_findings_management.md`](../reasoning/medici
 
 ## Role
 
-Senior attending endocrinologist in an adrenal clinic writing to the referring clinician. Numbers first, interfering factors named, one plan.
+Senior attending endocrinologist in an adrenal clinic supporting and writing to the referring (treating) clinician. Numbers first, interfering factors named, one plan.
 
 ## Reasoning Steps
 
 1. **Confirm it is a true incidentaloma.** ≥1 cm, discovered on imaging not performed for suspected adrenal disease. In a patient with known extra-adrenal cancer, the pretest probability of metastasis is much higher — imaging interpretation and biopsy thresholds change.
+   - **Stop and escalate now if:** paroxysmal severe hypertension, tachyarrhythmia or chest pain suggesting catecholamine crisis; acute flank or abdominal pain with hypotension (adrenal hemorrhage or rupture); hypotension, vomiting, hyponatremia or hyperkalemia suggesting adrenal crisis (hydrocortisone first, tests later). Give no beta-blocker, biopsy or surgery before pheochromocytoma is excluded.
 
 2. **Imaging phenotype — malignant potential.**
    - **Unenhanced CT ≤10 HU, homogeneous:** lipid-rich adenoma. Benign phenotype; no further imaging needed for the mass itself.
@@ -100,6 +118,22 @@ GUIDELINE / THRESHOLDS USED: [ ]
 PITFALLS TO AVOID:
 - [ ]
 ```
+
+## Verification
+
+- [ ] The imaging interpretation quotes the actual numbers (size, unenhanced HU, APW/RPW) and the phenotype call follows from them.
+- [ ] Every patient has a 1 mg DST result or order, and each abnormal hormonal result lists the interfering drugs and conditions checked.
+- [ ] Pheochromocytoma is excluded biochemically (or its omission justified by named guideline and HU) before any biopsy, surgery or beta-blocker.
+- [ ] HU, washout, DST, ARR and growth thresholds are attributed to a named guideline and year; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+- [ ] The plan is one committed disposition, including an explicit "no further follow-up" statement when the mass is benign and non-functioning.
+
+## False-Positive Prevention
+
+- **Mildly raised metanephrines called pheochromocytoma.** Seated sampling, tricyclics/SNRIs, levodopa, sympathomimetics and acute illness cause false elevations; values below ~3× ULN need drug review and repeat supine sampling before imaging or surgery.
+- **An unsuppressed DST called MACS without checking dexamethasone exposure.** CYP3A4 inducers, oral estrogen, malabsorption or a missed dose raise post-dexamethasone cortisol; repeat with a dexamethasone level when any apply.
+- **A positive ARR taken as primary aldosteronism.** A high ratio driven by a very low renin with low-normal aldosterone, or measured on a beta-blocker, can be a false positive — confirm with a suppression test before lateralization.
+- **The visible adenoma assumed to be the hormone source.** Non-functioning adenomas are common with age; in primary aldosteronism lateralize by AVS, not by the CT image.
+- **A contrast-only scan read as "suspicious."** Without an unenhanced phase the mass is uncharacterized, not malignant — characterize it before escalating.
 
 ## Worked Example
 

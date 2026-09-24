@@ -17,6 +17,7 @@ tags:
   - upjohn
   - white-collar
   - special-committee
+  - whistleblower-complaint
 updated: "2026-09-24"
 reasoning:
   styles: [systematic, strategic, decomposition]
@@ -133,7 +134,7 @@ related_prompts:
 
 **Output (excerpt):**
 - **Direction:** Audit-committee-directed, conducted by outside counsel with no prior work for the region, because the COO's reporting line is implicated and auditors will ask about independence.
-- **Preservation first:** Image the regional head's and two finance approvers' company devices before any interview; suspend auto-deletion on the region's email and chat tenant; send a preservation letter to the customs broker only after the key-document review, to avoid tipping.
+- **Preservation first:** Image the regional head's and two finance approvers' company devices before any interview; suspend auto-deletion on the region's email and chat tenant; customs-broker preservation letter: decision for counsel — sending it after the key-document review reduces tip-off risk, but delay risks deletion of the broker's records; check first whether the broker contract gives audit or record-preservation rights that can be invoked without disclosing the investigation's subject `[VERIFY: contract terms]`.
 - **Witness order:** (1) AP clerk who processed the invoices; (2) regional controller; (3) logistics manager who used the broker; (4) finance approvers; (5) regional head, last, after documents and payment-flow analysis. Upjohn warning at every interview; flag separate counsel for the regional head.
 - **Irreversible-error risk:** Regional head learns of the review and deletes messages from a personal messaging app → control: imaging and hold issued together, with interviews deferred; personal-device access evaluated under local employment and data-protection law `[VERIFY]`.
 - **Disclosure posture:** No decision yet; triggers for a voluntary-disclosure memo listed (evidence of payment to an official; payments across more than one country).

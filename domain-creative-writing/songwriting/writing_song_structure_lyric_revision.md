@@ -16,6 +16,9 @@ tags:
   - song-structure
   - hook
   - revision
+  - chorus-doesnt-lift
+  - words-fight-melody
+  - awkward-to-sing
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/craft-tools/writing_revision_and_self_editing.md
