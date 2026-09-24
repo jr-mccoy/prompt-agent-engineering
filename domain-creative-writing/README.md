@@ -1,7 +1,7 @@
 # Creative Writing: Comprehensive Guide
 
 > Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
-> This domain covers fiction, narrative nonfiction, essays, poetry, screenwriting, and creative content development.
+> This domain covers fiction, narrative nonfiction, essays, poetry, songwriting, screenwriting, documentary treatments, and creative content development.
 
 ---
 
@@ -18,7 +18,8 @@ Route to this domain when the request mentions:
 | **Narrative** | "narrative arc", "story structure", "pacing", "tension", "conflict" |
 | **Essays** | "personal essay", "creative nonfiction", "memoir", "reflective writing" |
 | **Poetry** | "poem", "verse", "sonnet", "free verse", "imagery" |
-| **Screenwriting** | "screenplay", "script", "dialogue", "scene" |
+| **Songwriting** | "song", "lyrics", "chorus", "hook", "prosody", "verse and chorus" |
+| **Screenwriting** | "screenplay", "script", "dialogue", "scene", "documentary treatment" |
 
 ### User Personas
 
@@ -208,9 +209,9 @@ This domain is for **adult / mature creative writing** — fiction, poetry, crea
 - **Writing for children/teens** (board book through young-teen crossover, kidlit publishing) → [`domain-childrens-writing/`](../domain-childrens-writing/)
 - **Professional / business prose** (proposals, reports, field-specific business writing) → [`domain-professional-writing/`](../domain-professional-writing/)
 
-## Prompts in This Domain (27)
+## Prompts in This Domain (30)
 
-Organized into seven subdirectories by form and function:
+Organized into eight subdirectories by form and function:
 
 ```
 domain-creative-writing/
@@ -219,7 +220,8 @@ domain-creative-writing/
 ├── genre-workshops/         # genre conventions and deep dives (3)
 ├── creative-nonfiction/     # memoir, essay, reported narrative (2)
 ├── poetry/                  # poetic forms, imagery, figuration (2)
-├── script-stage/            # screen, TV, and stage scripts (1)
+├── songwriting/             # original song lyrics: drafting, prosody, structure (2)
+├── script-stage/            # screen, TV, stage scripts, documentary treatments (2)
 └── publishing-career/       # query, synopsis, pitch, positioning (2)
 ```
 
@@ -274,11 +276,21 @@ domain-creative-writing/
 | Work with poetic forms, meter, and technique | [`poetry/writing_poetry_craft_and_forms.md`](poetry/writing_poetry_craft_and_forms.md) |
 | Sharpen imagery and fix dead/mixed metaphors | [`poetry/writing_imagery_and_figurative_language.md`](poetry/writing_imagery_and_figurative_language.md) |
 
+**Songwriting (`songwriting/`)**
+
+| You want to... | Prompt |
+|----------------|--------|
+| Draft an original song lyric from a title, line, or feeling | [`songwriting/writing_song_lyric_craft_workshop.md`](songwriting/writing_song_lyric_craft_workshop.md) |
+| Revise a lyric for prosody, stress, hook placement, and section jobs | [`songwriting/writing_song_structure_lyric_revision.md`](songwriting/writing_song_structure_lyric_revision.md) |
+
+> **Originality note:** the songwriting prompts write and revise original lyrics only. A brief, attributed line from a published song may be quoted to analyse a technique; published lyrics are never reproduced in full or used as a template.
+
 **Script & Stage (`script-stage/`)**
 
 | You want to... | Prompt |
 |----------------|--------|
 | Structure a screenplay, teleplay, or stage script | [`script-stage/writing_screenplay_framework.md`](script-stage/writing_screenplay_framework.md) |
+| Write a documentary treatment (question, access, arc, style, ethics; no fabrication) | [`script-stage/writing_documentary_treatment.md`](script-stage/writing_documentary_treatment.md) |
 
 **Publishing & Career (`publishing-career/`)**
 
@@ -287,7 +299,7 @@ domain-creative-writing/
 | Write an adult-fiction query letter + synopsis (no fabrication) | [`publishing-career/writing_query_letter_and_synopsis.md`](publishing-career/writing_query_letter_and_synopsis.md) |
 | Craft a logline, pitch, and comp-title positioning (no fabrication) | [`publishing-career/writing_pitch_logline_and_comp_titles.md`](publishing-career/writing_pitch_logline_and_comp_titles.md) |
 
-> **No-fabrication note:** the creative-nonfiction and publishing-career prompts carry hard guards against invented facts, sources, comp titles, agents, sales figures, and credentials. Unverifiable specifics are bracketed `[VERIFY]`, never asserted.
+> **No-fabrication note:** the creative-nonfiction, documentary-treatment, and publishing-career prompts carry hard guards against invented facts, sources, comp titles, agents, sales figures, and credentials. Unverifiable specifics are bracketed `[VERIFY]`, never asserted.
 
 ---
 
@@ -857,4 +869,5 @@ Output: Enhanced dialogue with subtext analysis
 *Document Version: 2.0*
 *Created: 2026-01-26*
 *Updated: 2026-06-18 - Reorganized into 7 subdirectories; expanded to 27 prompts; added routing table, scope boundary, and difficulty/technique frontmatter*
+*Updated: 2026-09-24 - Added `songwriting/` (2 prompts) and a documentary treatment prompt in `script-stage/`; 30 prompts across 8 subdirectories*
 *Domain: Creative Writing*
