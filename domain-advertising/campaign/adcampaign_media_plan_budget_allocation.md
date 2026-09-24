@@ -158,9 +158,18 @@ Break-even CPA (first-order) = 12. Conservative: ignores repeat orders.
 ## Learning period
 [VERIFY current platform guidance] — no planned edits weeks 1–2.
 
+## Pacing
+| W1–W2 | L1 | 1,900/wk | 3,800 | ±15% |
+| W1–W6 | L2 | 1,500/wk | 9,000 | ±15% |
+| W3–W6 | Reserve | 0 unless Scale fires | — | — |
+
 ## Decision rules
 | Kill | Cell spends 2× break-even (24) with 0 conversions | Pause cell | Buyer |
 | Scale | Cell CPA ≤ 12 over ≥ 25 conversions | Release reserve in steps per verified guidance | Buyer + finance |
+
+## Assumptions to replace
+| 25 conversions per cell | ab-test-setup output | Before launch |
+| Customer value unknown | 90-day cohort value | Week 6 |
 ```
 
 **The plan's own finding:** historic CPA (38) is over three times first-order
