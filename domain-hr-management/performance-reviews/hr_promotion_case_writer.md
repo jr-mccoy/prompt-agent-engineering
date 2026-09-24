@@ -167,7 +167,7 @@ Cheapest evidence to resolve (if insufficient): [...]
 
 ## Example
 
-**Context:** Priya, E3 → E4, ladder from `hr_career_ladder_framework.md` (five dimensions).
+**Context:** Priya, E3 → E4, ladder from `../people-ops/hr_career_ladder_framework.md` (five dimensions).
 Rule: default — majority (3 of 5) at next level on Medium/High confidence, none below E3.
 
 | Anchor (E4) | Artefact | Readiness | Confidence |

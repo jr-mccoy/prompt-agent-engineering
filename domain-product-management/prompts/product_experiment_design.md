@@ -103,7 +103,8 @@ because a rule written after the data is seen is a rationalisation.
    Name who can stop the test, and how quickly the change can be reverted.
 
 8. **Record and hand forward.** Date the record before launch. The readout
-   (`analytics_ab_test_readout.md`) checks the results against it.
+   (`../../domain-data-analytics/experiments-and-reporting/analytics_ab_test_readout.md`)
+   checks the results against it.
 
 ---
 
