@@ -107,6 +107,10 @@ prompt-agent-engineering/
 ├── domain-negotiation/             # Negotiation practitioner library (46 across 8 subdirs): preparation/ (10), at-the-table/ (7), channels/ (4), multi-party/ (4), after-the-deal/ (4), contexts/ (8), difficult-conversations/ (5, own prefix), craft/ (4)
 ├── domain-psy-ops/                 # Cognitive security: influence analysis & manipulation defense (32 across 6 subdirs, ANALYTIC/DEFENSIVE ONLY): technique-analysis/ (7), influence-operations/ (7), personal-defense/ (7, safety-gated), organizational-red-team/ (4), counter-messaging/ (4), case-studies-taxonomies/ (3)
 ├── domain-written-advocacy/        # LAYPERSON self-advocacy letters — cancellations, refunds, data deletion, warranty, hardship, appeals (35 across 7 subdirs): cross-cutting/ (6), accounts-and-billing/ (5), privacy-and-data/ (5), products-and-warranty/ (4), financial-hardship/ (6), insurance-and-medical/ (4), institutions-and-records/ (5). Non-adversarial sibling of domain-legal/personal-self-advocacy/
+├── domain-sales-customer/          # A deal, pipeline, customer account or support queue (8): sales/ (qualification, outbound plan, mutual close plan, forecast commit), customer-success/ (QBR, renewal risk), support/ (ticket triage, escalation response). Outbound COPY → skills/marketing/; marketing strategy → business-strategy/go-to-market/ (ADR-0043)
+├── domain-data-analytics/          # A business metric, query, dashboard or experiment readout (8): framing-and-metrics/, analysis-and-sql/, experiments-and-reporting/. Research inference → domain-science/statistics/; model eval → domain-AI-ML/
+├── domain-operations/              # A process, supplier, inventory, quality defect or non-software project (8): process-improvement/ (lean waste scan, A3, DMAIC, capacity), supply-chain-procurement/ (supplier scorecard, reorder policy, buyer-side RFP), project-delivery/. Risk registers/FMEA → domain-risk/
+├── domain-health-wellness/         # SAFETY-GATED. A healthy adult's own training, eating and sleep (8): foundations/ (red-flag screen = entry gate), fitness/, nutrition/ (STRONG-GUARD), sleep-recovery/. Clinical → domain-healthcare-clinical/; mental health/CBT-I → domain-psychology/
 │
 ├── domain-deep-analysis/           # Multi-phase, multi-perspective deep-think systems for problems, decisions, plans, designs (8 prompts + 8 slash commands: each scope ships in rigorous and plain-English versions)
 │   ├── deepthink_problem_analysis.md
@@ -145,6 +149,7 @@ prompt-agent-engineering/
 │
 ├── domain-personal-development/    # Goals, habits, identity, agency, career, decisions, relationships, resilience, life-transitions, emotional-fitness (~166; see EXPANSION_ROADMAP.md)
 │   ├── prompts/                    # Self-improvement prompts: agency/, identity/, goals/, habits/, resilience/, relationships/, productivity/, thinking/, stakeholder/, solo-dev/, career/ (AI-role assessments), life-transitions/ (navigating a change already underway), emotional-fitness/ (everyday NON-CLINICAL emotional skills — routes distress to domain-psychology/)
+│   ├── job-search/                 # Candidate-side job search (8): target-role map, résumé evidence rewriter, posting fit decoder, cover letter, LinkedIn audit, networking plan, behavioral story bank, pipeline cadence
 │   ├── career-transformation/      # Coordination-tax audit, structural vulnerability, residual skills, 90-day repositioning + AI-era skill moat, positioning statement, internal-vs-external move, reskilling roadmap
 │   └── major-decisions/            # High-stakes personal decisions BEFORE the change (job offer, relocation, quit/persist, education, family, finance, health, purchase, cofounder, relationship, marriage/commitment, aging-parent care, sabbatical, start-business-vs-employment)
 │
@@ -156,7 +161,7 @@ prompt-agent-engineering/
 │
 ├── domain-research-academic/       # Research practice (15 prompts: question formulation → search → synthesis → instruments) + framework & field guide
 │
-├── domain-conversation-practice/   # Language conversation practice (~9)
+├── domain-conversation-practice/   # Hard-conversation role-play: a general simulator + skeptical-persona sims (8). NOT language learning (→ domain-education-teaching/learner/language/)
 │
 ├── domain-game-development/        # Game design, engines, multiplayer, graphics (~24)
 │   ├── design/                     # GDD, core loops, mechanics, progression
@@ -206,7 +211,7 @@ prompt-agent-engineering/
 │   ├── peer-and-accountability/    # Sideways relationships: mentor peer cohort (curriculum + facilitation), accountability partnership (design + conversation), anti-surveillance (4)
 │   └── after-harm/                 # AFTER IT WENT WRONG (never adjudicates, disciplines, or treats): harmed by a previous discipling relationship (STRONG-GUARD), dependency & over-attachment, mentor's own mistake repair, after a mentor is removed (STRONG-GUARD) (4)
 │
-├── domain-specialized-fields/      # Legal, trades, real estate, marketing (guide hub; finance + psychology promoted to top-level domains)
+├── domain-specialized-fields/      # Guide hub for licensed/liability-bearing fields (2 prompts: patent landscape, legal research plan); field writing prompts live in domain-professional-writing/domain-specific/; real estate/trades rebuild planned (coverage Wave 2)
 ├── domain-finance/                 # Finance & economics field guide (promoted from domain-specialized-fields/finance)
 ├── domain-psychology/              # Psychology, therapy & behavioral health (~99; promoted from domain-specialized-fields/psychology)
 │
@@ -1157,9 +1162,9 @@ When users need help with **non-coding tasks**, first determine the domain:
   - **Domain guide:** [domain-hr-management/](../domain-hr-management/)
 
 ### Specialized Professional Fields
-- **Legal, trades, real estate, marketing** → `domain-specialized-fields/` (finance and psychology are now their own top-level domains: `domain-finance/`, `domain-psychology/`)
-  - **Professional writing by field** → `domain-professional-writing/domain-specific/` (~26 prompts)
-  - Files cover: CPAs, veterinarians, attorneys, contractors, real estate agents, and 21 more fields
+- **Legal, trades, real estate** → `domain-specialized-fields/` guide hub (finance and psychology are now their own top-level domains: `domain-finance/`, `domain-psychology/`; sales and customer work → `domain-sales-customer/`)
+  - **Professional writing by field** → `domain-professional-writing/domain-specific/` (24 `domain_writing_*` prompts)
+  - Files cover: CPAs, veterinarians, attorneys, contractors, realtors, HVAC, plumbers, electricians, wedding planners, and more
   - **Domain guide:** [domain-specialized-fields/](../domain-specialized-fields/)
 
 ### Legal (Practitioner Library — Phase 1 + 2A + Family Law, 109 prompts)
@@ -1418,6 +1423,58 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
   - **Author a whole agentic system (meta-layer):** to *design* a production-ready agentic system from a use case (not just one decision), use the authoring system → `authoring/system-patterns/` (6-step process, 9-topology pattern index, 100-pt rubric, gate/eval/architecture templates), or run the guided factory → `agentic-system-factory/`. Both reference (never duplicate) these `aiagent_*` design prompts.
 
 ---
+
+### Sales & Customer (`domain-sales-customer/`, ADR-0043)
+- **A deal, pipeline, customer account or support queue** → `domain-sales-customer/` — see [README](../domain-sales-customer/README.md).
+  - Example: "Is this deal real? Qualify it on evidence" → `sales/sales_deal_qualification_scorecard.md`
+  - Example: "Plan outbound to these accounts" (targeting, triggers, cadence — not copy) → `sales/sales_outbound_prospecting_sequence.md`
+  - Example: "Build a close plan with the buyer" → `sales/sales_mutual_close_plan.md`
+  - Example: "Prep my forecast commit call" → `sales/sales_forecast_commit_review.md`
+  - Example: "Prep a QBR" → `customer-success/cs_quarterly_business_review_prep.md`
+  - Example: "This renewal is at risk" → `customer-success/cs_renewal_risk_and_save_plan.md`
+  - Example: "Design a ticket severity and routing rubric" → `support/support_ticket_triage_and_routing.md`
+  - Example: "Reply to an escalated customer" → `support/support_escalation_response_drafter.md`
+- **Boundary:** cold-email copy, sequences, collateral, lead scoring, cancel flows → `domain-agentic-resources/skills/marketing/`; the negotiation itself → `domain-negotiation/`; discovery-call prep, pipeline risk, win/loss, account health, CS onboarding still live in `domain-business-strategy/go-to-market/` (relocation is coverage Wave 2).
+
+### Data Analytics (`domain-data-analytics/`, ADR-0043)
+- **A business metric, query, dashboard or experiment readout** → `domain-data-analytics/` — see [README](../domain-data-analytics/README.md).
+  - Example: "Turn this stakeholder ask into an analysis plan" → `framing-and-metrics/analytics_question_to_analysis_plan.md`
+  - Example: "Define this metric so two teams get the same number" → `framing-and-metrics/analytics_metric_definition_spec.md`
+  - Example: "Break this KPI into its drivers" → `framing-and-metrics/analytics_kpi_tree_decomposition.md`
+  - Example: "Is this SQL actually correct?" (grain, fan-out, nulls — not speed) → `analysis-and-sql/analytics_sql_query_correctness_review.md`
+  - Example: "Why did this metric drop?" → `analysis-and-sql/analytics_metric_movement_investigation.md`
+  - Example: "Run a cohort retention analysis" → `analysis-and-sql/analytics_cohort_retention_analysis.md`
+  - Example: "Read out this A/B test" → `experiments-and-reporting/analytics_ab_test_readout.md`
+  - Example: "Critique this dashboard" → `experiments-and-reporting/analytics_dashboard_critique.md`
+- **Boundary:** research statistics → `domain-science/statistics/`; model evaluation → `domain-AI-ML/`; deck rendering → `domain-presentations/board-decks/`; query performance, dbt, KPI dashboard design, data storytelling → `domain-agentic-resources/skills/`.
+
+### Operations (`domain-operations/`, ADR-0043)
+- **A process, supplier, inventory, quality defect or non-software project** → `domain-operations/` — see [README](../domain-operations/README.md).
+  - Example: "Map this process and find the waste" → `process-improvement/ops_process_map_and_waste_scan.md`
+  - Example: "Write an A3 for this defect" → `process-improvement/ops_root_cause_a3_report.md`
+  - Example: "Charter a lean six sigma / DMAIC project" → `process-improvement/ops_dmaic_project_charter.md`
+  - Example: "Where is our bottleneck?" → `process-improvement/ops_capacity_and_bottleneck_model.md`
+  - Example: "Choose between these suppliers" → `supply-chain-procurement/ops_supplier_selection_scorecard.md`
+  - Example: "Set reorder points and safety stock" → `supply-chain-procurement/ops_inventory_reorder_policy.md`
+  - Example: "Write an RFP (buyer side)" → `supply-chain-procurement/ops_rfp_procurement_package.md`
+  - Example: "Plan an office move / event / rollout" → `project-delivery/ops_non_software_project_plan.md`
+- **Boundary:** risk registers, FMEA, BCP → `domain-risk/`; software delivery → `domain-engineering-workflows/`; writing the SOP → `domain-professional-writing/business-writing/business_writing_sop.md`.
+
+### Health & Wellness (`domain-health-wellness/`, SAFETY-GATED, ADR-0043)
+- **A healthy adult's own training, eating or sleep** → `domain-health-wellness/` — see [README](../domain-health-wellness/README.md). **Start with the red-flag screen**; any red flag routes to a clinician before a plan is written.
+  - Entry gate → `foundations/wellness_readiness_and_red_flag_screen.md`
+  - Example: "Build a routine I'll keep" → `foundations/wellness_sustainable_routine_designer.md`
+  - Example: "Beginner strength training program" → `fitness/fitness_beginner_training_plan.md`
+  - Example: "My lifts have stalled — review my program" → `fitness/fitness_program_progression_review.md`
+  - Example: "Train for my first half marathon" → `fitness/fitness_endurance_event_build_plan.md`
+  - Example: "Audit how I eat" (STRONG-GUARD for disordered eating) → `nutrition/nutrition_eating_pattern_audit.md`
+  - Example: "Structure my meals around protein and fiber" → `nutrition/nutrition_meal_structure_planner.md`
+  - Example: "Fix my sleep routine" → `sleep-recovery/sleep_routine_and_environment_audit.md`
+- **Boundary:** diagnosed conditions, medications, pregnancy, minors → a clinician / `domain-healthcare-clinical/`; insomnia treatment (CBT-I), exercise for depression → `domain-psychology/client-self-use/`; meal logistics and shopping → `domain-productivity/home-life/home_meal_plan_week.md`.
+
+### Job Search (`domain-personal-development/job-search/`)
+- **Finding and landing a job, candidate side** → `domain-personal-development/job-search/`: target-role map, résumé evidence rewriter, posting fit decoder, cover letter, LinkedIn audit, networking plan, behavioral story bank, pipeline cadence.
+- **Boundary:** offer and compensation negotiation → `domain-negotiation/`; evaluating an offer → `domain-personal-development/major-decisions/`; career repositioning → `career-transformation/`; the employer side of hiring → `domain-hr-management/hiring/`.
 
 ## Workflows for Common Scenarios
 

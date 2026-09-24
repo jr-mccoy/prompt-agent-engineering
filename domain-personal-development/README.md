@@ -15,6 +15,7 @@ Route to this domain when the request mentions:
 |----------|----------------|
 | **Goals/Planning** | "goal setting", "life planning", "quarterly review", "personal OKRs", "bucket list" |
 | **Career** | "career change", "job search", "career path", "skill development", "professional growth" |
+| **Job Search** | "résumé rewrite", "cover letter", "LinkedIn profile", "networking for a job", "behavioral interview", "tell me about a time", "applications not getting responses" → `job-search/` |
 | **Habits/Productivity** | "habit building", "morning routine", "time management", "productivity system", "focus" |
 | **Decision-Making** | "should I...", "life decision", "major choice", "weighing options", "trade-offs" |
 | **Self-Improvement** | "self-reflection", "personal growth", "mindset", "overcome", "improve myself" |
@@ -43,7 +44,7 @@ Route to this domain when the request mentions:
 
 ### Subfolder Map
 
-`prompts/`: `agency/` · `goals/` · `habits/` · `identity/` · `resilience/` · `relationships/` · `thinking/` · `productivity/` · `solo-dev/` · `stakeholder/` · `career/` · **`life-transitions/`** (navigating a change already underway — the after/during complement to `major-decisions/`) · **`emotional-fitness/`** (everyday non-clinical emotional skills). Top-level: `career-transformation/` · `major-decisions/` (making the high-stakes choice, *before* the change). See `EXPANSION_ROADMAP.md` for the full inventory and future waves.
+`prompts/`: `agency/` · `goals/` · `habits/` · `identity/` · `resilience/` · `relationships/` · `thinking/` · `productivity/` · `solo-dev/` · `stakeholder/` · `career/` · **`life-transitions/`** (navigating a change already underway — the after/during complement to `major-decisions/`) · **`emotional-fitness/`** (everyday non-clinical emotional skills). Top-level: `career-transformation/` · **`job-search/`** (running an external search from the candidate side — target, documents, outreach, interviews, pipeline; stops at the offer) · `major-decisions/` (making the high-stakes choice, *before* the change). See `EXPANSION_ROADMAP.md` for the full inventory and future waves.
 
 ---
 
@@ -281,6 +282,17 @@ Prompts are organized into subdirectories by function:
 - `career_residual_skills_inventory.md` - Evidence-keyed inventory of judgment, taste, and context that survive automation
 - `career_90_day_repositioning_plan.md` - Weekly-checkpointed plan with stop conditions toward a surviving / adjacent role
 - See [career-transformation/README.md](./career-transformation/README.md) for the recommended sequence
+
+**Job Search (`job-search/`)** - 8 prompts for running an external search from the candidate side, evidence-first (nothing invented on a résumé or profile)
+- `jobsearch_target_role_and_market_map.md` - One primary role family and one fallback from real postings, with evidence gap and kill signal
+- `jobsearch_resume_evidence_rewriter.md` - Action–scope–result bullets with every figure tagged verified / estimate / missing
+- `jobsearch_job_posting_fit_decoder.md` - Tier a posting's requirements, map evidence, decide apply / apply with angle / skip
+- `jobsearch_cover_letter_builder.md` - Half-page letter for one posting: angle, traced proof points, at most one gap
+- `jobsearch_linkedin_profile_audit.md` - Section-by-section audit against recruiter search and the résumé
+- `jobsearch_networking_outreach_plan.md` - Contacts ranked by tie × proximity, one easy-to-decline ask each, one follow-up
+- `jobsearch_behavioral_interview_story_bank.md` - Eight to twelve true STAR stories mapped to competencies and stress-tested
+- `jobsearch_pipeline_tracker_and_cadence.md` - Stage conversion by source, the leaking stage, one change per week; hands off at the offer
+- See [job-search/README.md](./job-search/README.md) for the recommended sequence
 
 **Identity (`prompts/identity/`)** - 7 prompts for the third axis (not action, not cognition — identity, values, meaning, and discernment)
 - `identity_values_clarification.md` - Surface revealed values from past decisions and contrast with stated values

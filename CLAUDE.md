@@ -64,7 +64,7 @@ Membership rules for each category live in [`meta/REPOSITORY_FACTS.json`](meta/R
 
 | Path | What it holds |
 |---|---|
-| `domain-*/` (44) | The prompt corpus, one directory per domain |
+| `domain-*/` (48) | The prompt corpus, one directory per domain |
 | `domain-agentic-resources/` | **Implementation library** — skills, agents, commands, personas to *use* |
 | `authoring/` | **Authoring system** — patterns, templates, rubrics for *creating* skills / agents / commands / agentic systems |
 | `techniques/` | Technique index + use-case lookup |
@@ -74,16 +74,17 @@ Membership rules for each category live in [`meta/REPOSITORY_FACTS.json`](meta/R
 | `tests/` | Repo invariants |
 | Toolkits at root | `agentic-system-factory/`, `childrens-book-studio/`, `sourced-nonfiction-studio/`, `ai-investment-research-toolkit/`, `client-services-studio/`, `ai-governance-audit-kit/`, `financial-records-toolkit/`, `continuity-kit/`, `portable-prompt-system/` — self-contained pipelines that *orchestrate* domain prompts rather than duplicating them |
 
-The 44 domains: AI-ML, advertising, agentic-resources, biblical-studies,
+The 48 domains: AI-ML, advertising, agentic-resources, biblical-studies,
 business-strategy, childrens-writing, conversation-practice, creative-writing,
-decision-making, deep-analysis, discipleship, education-teaching,
+data-analytics, decision-making, deep-analysis, discipleship, education-teaching,
 engineering-workflows, finance, frontend-development, game-development,
-healthcare-clinical, hr-management, idea-to-product, ideation, image-generation,
-learning, learning-coding, legal, medical-education, negotiation, parenting,
-personal-development, policy, presentations, product-management, productivity,
-professional-writing, prompt-engineering, psy-ops, psychology, reasoning-craft,
-research-academic, risk, science, software-engineering, specialized-fields,
-voice-conversational-ui, written-advocacy.
+health-wellness, healthcare-clinical, hr-management, idea-to-product, ideation,
+image-generation, learning, learning-coding, legal, medical-education,
+negotiation, operations, parenting, personal-development, policy, presentations,
+product-management, productivity, professional-writing, prompt-engineering,
+psy-ops, psychology, reasoning-craft, research-academic, risk, sales-customer,
+science, software-engineering, specialized-fields, voice-conversational-ui,
+written-advocacy.
 
 ---
 
@@ -106,6 +107,10 @@ of who runs it:
 | A patient, or a clinician in training | `domain-healthcare-clinical/` / `domain-medical-education/` |
 | A model, dataset, agent, or LLM system | `domain-AI-ML/` |
 | A manuscript, letter, or piece of prose | `domain-professional-writing/` and the writing domains |
+| A deal, pipeline, customer account, or support queue | `domain-sales-customer/` (outbound copy and collateral → `skills/marketing/`) |
+| A business metric, query, dashboard, or experiment readout | `domain-data-analytics/` (research inference → `domain-science/statistics/`) |
+| A process, supplier, inventory, quality defect, or non-software project | `domain-operations/` (risk registers → `domain-risk/`) |
+| A healthy adult's own training, eating, or sleep | `domain-health-wellness/` (safety-gated; clinical → `domain-healthcare-clinical/`, mental health → `domain-psychology/`) |
 
 ### 2. Otherwise: whose work is it, at what scope?
 
@@ -130,8 +135,10 @@ The five work domains sit on one axis. Pick by who holds the prompt:
   not business strategy — the input decides.
 - A "chief of staff" cadence for one person is **individual execution**, not org
   strategy — the scope decides.
-- Sales, marketing, and customer-success workflows are **org**, not engineering,
-  even when an engineering team wrote them.
+- A deal review, a QBR, or a support-ticket rubric has a subject home in
+  `domain-sales-customer/`, even when an engineering team wrote it. Marketing
+  *strategy* is still **org** work in `domain-business-strategy/go-to-market/`
+  (ADR-0043).
 
 ### 3. Before adding anything, check it does not already exist
 
@@ -184,6 +191,7 @@ Author a **prompt** when the task is one-off, self-contained, and instruction-on
 | `PROMPT_QUALITY_STANDARDS.md` | Tier definitions; False-Positive Prevention is the #1 quality differentiator |
 | `authoring/skill-patterns/templates/GOLD_STANDARD_SKILL.md` | Annotated exemplar skill |
 | `meta/ROUTING_REFERENCE.md` | Full per-domain routing tables |
+| `meta/COVERAGE_ROADMAP.md` | Cross-repo subject-matter gap audit and the wave plan for filling it |
 | `meta/REORG_MAP.tsv` / `meta/VENDORED.tsv` | Every move and deletion / canonical→copy pairs |
 
 ---

@@ -110,4 +110,4 @@ Comprehensive prompts for game development covering design, architecture, engine
 
 ---
 
-**Phase 2 prompts** (23 additional) are tracked in `MISSING_TOPICS_ANALYSIS.md` under the Game Development Phase 2 section.
+**Phase 2** is tracked as coverage Wave 4 in [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md). The known gaps are narrative and quest design, NPC and enemy AI, handcrafted level blockout and pacing, playtest protocol, difficulty balancing, HUD and game feel, live-ops, publisher pitch, and postmortem. An earlier version of this line pointed to a `MISSING_TOPICS_ANALYSIS.md` that does not exist.

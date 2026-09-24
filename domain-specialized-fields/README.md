@@ -1,7 +1,9 @@
 # Specialized Professional Fields: Comprehensive Guide
 
 > Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
-> This domain covers professional fields with specialized requirements: legal, finance, trades, real estate, marketing/sales, and other professional domains.
+> This domain is a **guide hub** for professional fields with specialized requirements (liability, licensing, jurisdiction), not a prompt library. It holds two prompts of its own; the field-specific writing prompts live in [`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/) (24 `domain_writing_*.md` files).
+>
+> **What is actually here:** [`ip/patent_landscape_scan.md`](ip/patent_landscape_scan.md) and [`legal/legal_research_plan.md`](legal/legal_research_plan.md), plus the templates and guidance below. Both prompts are candidates to move to `domain-legal/` in coverage Wave 2. A rebuild around real estate, trades and professional-services work is planned there too — see [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md).
 
 ---
 
@@ -14,10 +16,10 @@ Route to this domain when the request mentions:
 | Category | Trigger Phrases |
 |----------|----------------|
 | **Legal** | "contract", "legal document", "agreement", "liability", "compliance", "attorney" |
-| **Finance** | "investment", "financial analysis", "portfolio", "valuation", "accounting" |
+| **Finance** | Route to [`domain-finance/`](../domain-finance/) — its own top-level domain |
 | **Trades/Construction** | "estimate", "bid", "construction", "contractor", "project scope" |
 | **Real Estate** | "property", "listing", "offer", "closing", "real estate" |
-| **Marketing/Sales** | "campaign", "lead generation", "sales process", "conversion", "marketing plan" |
+| **Marketing/Sales** | Route out: deals, pipeline, customer accounts and support → [`domain-sales-customer/`](../domain-sales-customer/); marketing strategy → [`domain-business-strategy/go-to-market/`](../domain-business-strategy/go-to-market/); copy and campaigns → `domain-agentic-resources/skills/marketing/` |
 | **Other Professional** | [See field-specific guides below] |
 
 ### User Personas
@@ -181,20 +183,14 @@ Comprehensive domain-specific prompt engineering guides:
 
 ## Existing Prompts in This Repository
 
-### All Specialized Field Prompts
-
-Located in `domain-professional-writing/domain-specific/`:
+**In this directory (2):**
 
 | Prompt | Field | Purpose |
 |--------|-------|---------|
-| `professional_cpas.md` | Accounting | CPA-specific workflows |
-| `professional_veterinarians.md` | Veterinary | Vet clinic communication |
-| `professional_attorneys.md` | Legal | Attorney workflows |
-| `professional_contractors.md` | Trades | Contractor documentation |
-| `professional_real_estate_agents.md` | Real Estate | Agent workflows |
-| `professional_financial_advisors.md` | Finance | Advisor communication |
-| `professional_marketing_agencies.md` | Marketing | Agency workflows |
-| ... | | [26 total professional field prompts] |
+| [`ip/patent_landscape_scan.md`](ip/patent_landscape_scan.md) | Intellectual property | Map a patent landscape around a technology area |
+| [`legal/legal_research_plan.md`](legal/legal_research_plan.md) | Legal | Plan a legal research task before drafting |
+
+**Field-specific writing prompts (24)** live in [`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/) as `domain_writing_{field}.md`, e.g. `domain_writing_attorney_discovery.md`, `domain_writing_cpa_tax_strategy.md`, `domain_writing_contractor_remodel.md`, `domain_writing_hvac_estimate.md`, `domain_writing_realtor_listing.md`, `domain_writing_veterinarian_surgery.md`, `domain_writing_wedding_planner.md`. An earlier version of this README listed `professional_*.md` files; those never existed.
 
 ---
 
@@ -683,7 +679,7 @@ Client Signature: ___________________________ Date: ___________
 ║  • Due diligence always required                                          ║
 ║                                                                           ║
 ║  PROMPTS AVAILABLE:                                                       ║
-║  domain-professional-writing/domain-specific/ (26 professional guides)   ║
+║  domain-professional-writing/domain-specific/ (24 professional guides)   ║
 ║                                                                           ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 ```
@@ -695,7 +691,7 @@ Client Signature: ___________________________ Date: ___________
 | Resource | Purpose |
 |----------|---------|
 | [NON_CODING_QUICK_START.md](../NON_CODING_QUICK_START.md) | Universal non-coding principles |
-| [domain-professional-writing/domain-specific/](../domain-professional-writing/domain-specific/) | 26 professional field prompts |
+| [domain-professional-writing/domain-specific/](../domain-professional-writing/domain-specific/) | 24 professional field prompts |
 | [domain-product-management/](../domain-product-management/) | General business documents |
 | [PROMPT_QUALITY_STANDARDS.md](../PROMPT_QUALITY_STANDARDS.md) | Quality tier definitions |
 

@@ -50,7 +50,7 @@ byte difference, so a manual edit is caught rather than silently kept.
 
 Membership needs two independent agreements: the file sits under an **approved
 root**, and it matches a **shape detector** for exactly one kind. Roots are an
-explicit allowlist — the 44 `domain-*` directories plus five root toolkits — never
+explicit allowlist — the 48 `domain-*` directories plus five root toolkits — never
 unconstrained recursion.
 
 **Exclusions are anchored path prefixes, never bare directory names.** This is not a

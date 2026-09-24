@@ -6,11 +6,23 @@
 
 ## What This Domain Covers
 
-Coding education prompts:
+Seventeen flat files, all prefixed `learning_`. Most of them teach **from an
+existing codebase**: you point them at real code and learn by reading, explaining
+and reshaping it.
 
-1. **Tutorials** - Language-specific learning paths
-2. **Exercises** - Hands-on practice problems
-3. **Explanations** - Code concept clarification
+> **Correction (2026-09-24).** Earlier versions described `tutorials/`,
+> `exercises/` and `explanations/` subfolders with "TBD" counts. Those folders
+> never existed. Learning from zero is a known gap: debugging practice, data
+> structures and algorithms, git and the command line, SQL basics, and reading
+> error messages. It is tracked in
+> [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md).
+
+| Group | Files |
+|---|---|
+| **Learning paths** | `learning_teach_me_to_code_workflow.md`, `learning_mini_lesson_generation.md`, `learning_personal_development_recommendations.md` |
+| **Understanding code** | `learning_code_analogies_metaphors.md`, `learning_algorithmic_storytelling.md`, `learning_code_pattern_recognition.md`, `learning_code_evolution_visualization.md`, `learning_backend_code_analysis.md`, `learning_frontend_code_analysis.md` |
+| **Practice and review** | `learning_code_refactoring_exercises.md`, `learning_socratic_dialogue_code_review.md`, `learning_code_review_checklist.md`, `learning_code_style_readability_analysis.md`, `learning_codebase_trivia_game.md` |
+| **Documenting as a way to learn** | `learning_backend_api_documentation.md`, `learning_frontend_component_documentation.md`, `learning_user_story_reconstruction.md` |
 
 ---
 
@@ -18,23 +30,9 @@ Coding education prompts:
 
 ```
 domain-learning-coding/
-├── tutorials/                # Language tutorials and learning paths
-├── exercises/                # Practice problems and challenges
-├── explanations/             # Code concept explanations
+├── learning_*.md             # 17 prompts, flat
 └── README.md
 ```
-
----
-
-## File Count
-
-| Subdirectory | Count | Description |
-|--------------|-------|-------------|
-| `tutorials/` | TBD | Language tutorials |
-| `exercises/` | TBD | Practice problems |
-| `explanations/` | TBD | Concept explanations |
-| **Root level** | ~17 | General coding education |
-| **Total** | **~17** | |
 
 ---
 
@@ -49,7 +47,6 @@ Interactive learning prompts that:
 
 ### Code Exercises
 - **Refactoring Exercises** - Improve existing code
-- **Debugging Challenges** - Find and fix bugs
 - **Implementation Tasks** - Build from specifications
 
 ### Explanations

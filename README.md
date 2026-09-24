@@ -313,7 +313,7 @@ The domain library is intentionally broad. Most reusable prompts live in `domain
 |---|---|
 | [`domain-productivity/`](domain-productivity/) | Automation, deep work, bottlenecks, reviews, prototyping |
 | [`domain-business-strategy/`](domain-business-strategy/) | Analysis, startups, research, chief-of-staff workflows, AI strategy |
-| [`domain-personal-development/`](domain-personal-development/) | Goals, agency, identity, career development |
+| [`domain-personal-development/`](domain-personal-development/) | Goals, agency, identity, career development, job search |
 | [`domain-professional-writing/`](domain-professional-writing/) | Field-specific professional and business writing |
 | [`domain-product-management/`](domain-product-management/) | Product and stakeholder communication |
 | [`domain-hr-management/`](domain-hr-management/) | Reviews, assessment, peer/360 feedback, calibration |
@@ -325,6 +325,9 @@ The domain library is intentionally broad. Most reusable prompts live in `domain
 | [`domain-policy/`](domain-policy/) | Policy framing, options, stakeholder analysis |
 | [`domain-psy-ops/`](domain-psy-ops/) | Defensive cognitive-security and manipulation analysis |
 | [`domain-written-advocacy/`](domain-written-advocacy/) | Structured self-advocacy and complaint/appeal drafting |
+| [`domain-sales-customer/`](domain-sales-customer/) | Deal qualification, close plans, forecast review, QBRs, renewals, support triage and escalations |
+| [`domain-data-analytics/`](domain-data-analytics/) | Metric definitions, SQL correctness, metric-movement investigation, cohorts, A/B readouts |
+| [`domain-operations/`](domain-operations/) | Lean process improvement, A3/DMAIC, capacity, suppliers, inventory, buyer-side RFPs |
 
 </details>
 
@@ -335,7 +338,7 @@ The domain library is intentionally broad. Most reusable prompts live in `domain
 |---|---|
 | [`domain-creative-writing/`](domain-creative-writing/) | Fiction, genre, poetry, scripts, craft |
 | [`domain-childrens-writing/`](domain-childrens-writing/) | Children's fiction and nonfiction |
-| [`domain-conversation-practice/`](domain-conversation-practice/) | Language conversation practice |
+| [`domain-conversation-practice/`](domain-conversation-practice/) | Hard-conversation role-play simulators |
 | [`domain-image-generation/`](domain-image-generation/) | Image-generation prompting and visual workflows |
 | [`domain-presentations/`](domain-presentations/) | Presentation and board-deck workflows |
 | [`domain-voice-conversational-ui/`](domain-voice-conversational-ui/) | Voice and conversational interfaces |
@@ -357,6 +360,7 @@ The domain library is intentionally broad. Most reusable prompts live in `domain
 | [`domain-learning/`](domain-learning/) | Domain-general self-directed learning |
 | [`domain-psychology/`](domain-psychology/) | Psychology and behavioral-health resources |
 | [`domain-healthcare-clinical/`](domain-healthcare-clinical/) | Clinical, nursing, specialty, and perianesthesia resources |
+| [`domain-health-wellness/`](domain-health-wellness/) | Consumer training, nutrition and sleep for healthy adults (safety-gated; red-flag screen first) |
 | [`domain-finance/`](domain-finance/) | Finance, economics, quantitative and fintech workflows |
 | [`domain-legal/`](domain-legal/) | Legal-practice and self-advocacy resources |
 | [`domain-parenting/`](domain-parenting/) | Parenting and family-context resources |
