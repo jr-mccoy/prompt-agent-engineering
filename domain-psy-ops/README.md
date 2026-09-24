@@ -33,7 +33,7 @@ enforces the following, and you must too:
    often wrong. Prompts use explicit low / moderate / high confidence with the basis stated, and they
    actively resist attribution that the evidence does not support.
 5. **Safety routing.** Every `personal-defense/` prompt that touches fear, abuse, danger, or active fraud
-   carries a mandatory Safety Block — five of the seven do, and the remaining two (`information_diet_audit`,
+   carries a mandatory Safety Block — eight of the ten do, and the remaining two (`information_diet_audit`,
    `cognitive_security_hygiene_plan`) are reflective audits with no distress dimension, where a pasted-in
    crisis block would be noise rather than protection. Coercive control, abuse, radicalization, and fraud
    concerns route to qualified professionals, `domain-psychology/`, and verified resources. **No prompt in
@@ -90,6 +90,7 @@ evidence; this looks organic" as a first-class result.
 | Scan for deliberate deception strategies (motte-and-bailey, gish gallop, JAQing) | `psyops_rhetorical_deception_scan.md` |
 | Trace a claim or image back through its chain of transmission | `psyops_provenance_and_transmission_trace.md` |
 | Check statistics and charts for distortion | `psyops_statistical_and_visual_distortion_scan.md` |
+| Assess whether an image, video, or audio clip is authentic, manipulated, synthetic, or miscontextualized | `psyops_visual_media_authenticity_assessment.md` |
 
 ### `influence-operations/` — campaign-scale analysis
 
@@ -102,6 +103,8 @@ evidence; this looks organic" as a first-class result.
 | Decide whether a movement is manufactured or genuinely grassroots | `psyops_astroturf_vs_organic_assessment.md` |
 | Map how a claim was laundered into legitimacy through outlet hops | `psyops_information_laundering_chain_map.md` |
 | Grade how confident attribution can honestly be | `psyops_attribution_confidence_assessment.md` |
+| Assess the same narrative across platforms you cannot see equally | `psyops_cross_platform_narrative_correlation.md` |
+| Write findings for publication with hedges that survive retelling | `psyops_influence_assessment_writeup.md` |
 
 ### `personal-defense/` — aimed at you (Safety Block on every prompt touching fear, abuse, danger, or fraud)
 
@@ -114,6 +117,9 @@ evidence; this looks organic" as a first-class result.
 | Audit what is actually shaping your beliefs | `psyops_information_diet_audit.md` |
 | Build a personal cognitive-security routine | `psyops_cognitive_security_hygiene_plan.md` |
 | Think through concern that someone you love is being radicalized | `psyops_concern_for_someone_radicalizing.md` |
+| Recognize grooming, coercion, and sextortion patterns aimed at a young person | `psyops_youth_online_manipulation_guide.md` |
+| Recognize fraud built for older adults, and talk about it as a family | `psyops_elder_targeted_fraud_recognition.md` |
+| Work out whether what is happening at work is manipulation or ordinary bad management | `psyops_workplace_influence_dynamics.md` |
 
 ### `organizational-red-team/` — findings and countermeasures only
 
@@ -123,6 +129,7 @@ evidence; this looks organic" as a first-class result.
 | Find which real grievances about you are exploitable — and fix them | `psyops_narrative_vulnerability_assessment.md` |
 | Review social/pretext exposure of key personnel | `psyops_personnel_targeting_exposure_review.md` |
 | Review a community or platform's resilience to brigading and manipulation | `psyops_community_moderation_resilience_review.md` |
+| Review moderators' exposure to harassment used as an attrition strategy, and signs of capture | `psyops_moderator_burnout_and_capture.md` |
 
 ### `counter-messaging/` — overt, attributed, truthful
 
@@ -132,6 +139,8 @@ evidence; this looks organic" as a first-class result.
 | Design a correction that actually displaces the false belief | `psyops_debunk_and_correction_design.md` |
 | Decide whether responding would amplify the rumor | `psyops_rumor_response_triage.md` |
 | Communicate with integrity during an active attack | `psyops_crisis_communication_integrity_plan.md` |
+| Communicate about election processes while false claims circulate (process-only, nonpartisan) | `psyops_election_integrity_communications.md` |
+| Keep your own staff informed and protected during an attack, without using them as amplifiers | `psyops_internal_comms_under_attack.md` |
 
 ### `case-studies-taxonomies/` — the teaching track
 
@@ -159,6 +168,14 @@ in the ordinary-conflict reading and the False-Positive Prevention block instead
 prompts close on their own equivalents — the cynicism check and the outstanding-`[VERIFY]` list. `uncertainty: ambiguity` is a domain invariant. Filing convention is a single `psyops_` prefix
 across all subdirectories.
 
+Three Wave 2 prompts carry additional guards beyond the domain rules. `psyops_visual_media_authenticity_assessment.md`
+has hard stop conditions: it will not analyze intimate imagery of a real person, and anything that may depict a
+minor sexually is not copied, shared, or uploaded anywhere — it is reported. `psyops_youth_online_manipulation_guide.md`
+works at recognition level only, puts self-harm risk and the no-payment / no-image-handling sextortion response ahead
+of any analysis, and routes everything beyond recognition to child-protection professionals.
+`psyops_election_integrity_communications.md` is process-only by construction: it never persuades on candidates,
+parties, or ballot questions, and never states an election date, deadline, or rule from memory.
+
 ## Related domains
 
 | Need | Go to |
@@ -167,5 +184,7 @@ across all subdirectories.
 | Where persuasion becomes manipulation inside a deal you are party to | `domain-negotiation/craft/negotiation_ethics_line.md` |
 | Clinical support, therapy, and the aftermath of manipulation or abuse | `domain-psychology/` |
 | Phishing and social engineering at the organizational/technical level | `domain-software-engineering/analysis/security/` |
+| Online-safety rules and conversations with children and teenagers | `domain-parenting/caregiver-facing/` |
+| Documenting workplace concerns, scams, or harassment for a formal or legal process | `domain-legal/personal-self-advocacy/` |
 | Building persuasive commercial creative for a client you represent | `domain-advertising/` |
 | Prompt-injection and untrusted content aimed at AI agents | `domain-AI-ML/agentic-ai-systems/aiagent_prompt_injection_untrusted_content_defense.md` |

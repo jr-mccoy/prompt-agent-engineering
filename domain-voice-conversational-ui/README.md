@@ -2,7 +2,7 @@
 
 **Purpose:** Comprehensive prompt collection for designing, building, and optimizing voice interfaces, chatbots, dialog systems, and multi-modal conversational experiences.
 
-**Total Resources:** 28 prompts across 8 categories
+**Total Resources:** 33 prompts across 8 categories
 
 ---
 
@@ -14,14 +14,14 @@ This domain provides production-grade prompts for voice and conversational UI de
 
 | Category | Prompts | Focus |
 |----------|---------|-------|
-| [voice-design/](voice-design/) | 5 | Voice UI architecture, interaction models, VUI prompt writing |
-| [chatbot-design/](chatbot-design/) | 5 | Conversation flows, personality, error handling, LLM-powered bots |
+| [voice-design/](voice-design/) | 8 | Voice UI architecture, interaction models, VUI prompt writing, SSML/TTS tuning, IVR call flows, realtime turn-taking |
+| [chatbot-design/](chatbot-design/) | 6 | Conversation flows, personality, error handling, LLM-powered bots, human-agent handoff |
 | [dialog-architecture/](dialog-architecture/) | 4 | State machines, intent taxonomies, context management, slot filling |
 | [voice-ux/](voice-ux/) | 3 | UX audits, accessibility, error recovery patterns |
 | [multimodal/](multimodal/) | 3 | Voice+screen, adaptive interfaces, gesture integration |
 | [nlu-training/](nlu-training/) | 3 | Training data generation, intent/entity design, model evaluation |
 | [platform-specific/](platform-specific/) | 3 | Alexa Skills, Dialogflow CX/ES, Rasa |
-| [analytics/](analytics/) | 2 | Conversation metrics, log-based optimization |
+| [analytics/](analytics/) | 3 | Conversation metrics, log-based optimization, transcript QA rubric |
 
 ---
 
@@ -36,11 +36,15 @@ This domain provides production-grade prompts for voice and conversational UI de
 | Architect a custom voice assistant | [voice_design_custom_voice_assistant.md](voice-design/voice_design_custom_voice_assistant.md) |
 | Build a voice interaction model | [voice_design_interaction_model_builder.md](voice-design/voice_design_interaction_model_builder.md) |
 | Write spoken prompts for voice UI | [voice_design_vui_prompt_writing.md](voice-design/voice_design_vui_prompt_writing.md) |
+| Tune TTS output: SSML, pronunciation lexicons, prosody, listening regression set | [voice_design_ssml_tts_tuning.md](voice-design/voice_design_ssml_tts_tuning.md) |
+| Design an IVR / phone-agent call flow (speech + DTMF, auth gates, containment vs transfer) | [voice_design_ivr_call_flow.md](voice-design/voice_design_ivr_call_flow.md) |
+| Tune realtime voice-agent turn-taking, endpointing, latency, and barge-in | [voice_design_realtime_turn_taking.md](voice-design/voice_design_realtime_turn_taking.md) |
 | Design chatbot conversation flows | [chatbot_design_conversation_flow.md](chatbot-design/chatbot_design_conversation_flow.md) |
 | Define chatbot personality | [chatbot_design_personality_framework.md](chatbot-design/chatbot_design_personality_framework.md) |
 | Design conversational error handling | [chatbot_design_error_handling_patterns.md](chatbot-design/chatbot_design_error_handling_patterns.md) |
 | Build enterprise customer service bot | [chatbot_design_enterprise_customer_service.md](chatbot-design/chatbot_design_enterprise_customer_service.md) |
 | Architect LLM-powered chatbot | [chatbot_design_llm_powered_architecture.md](chatbot-design/chatbot_design_llm_powered_architecture.md) |
+| Design bot-to-human handoff (triggers, context packet, warm vs cold, fallbacks) | [chatbot_design_human_agent_handoff.md](chatbot-design/chatbot_design_human_agent_handoff.md) |
 | Design dialog state machine | [dialog_architecture_state_machine_design.md](dialog-architecture/dialog_architecture_state_machine_design.md) |
 | Create intent taxonomy | [dialog_architecture_intent_taxonomy.md](dialog-architecture/dialog_architecture_intent_taxonomy.md) |
 | Design context management | [dialog_architecture_context_management.md](dialog-architecture/dialog_architecture_context_management.md) |
@@ -59,6 +63,7 @@ This domain provides production-grade prompts for voice and conversational UI de
 | Architect Rasa system | [platform_rasa_architecture.md](platform-specific/platform_rasa_architecture.md) |
 | Build conversation analytics | [analytics_conversation_metrics_framework.md](analytics/analytics_conversation_metrics_framework.md) |
 | Optimize conversations from logs | [analytics_conversation_optimization.md](analytics/analytics_conversation_optimization.md) |
+| Review individual transcripts with an anchored QA rubric | [analytics_transcript_qa_rubric.md](analytics/analytics_transcript_qa_rubric.md) |
 
 ### By Concern
 
@@ -67,6 +72,9 @@ This domain provides production-grade prompts for voice and conversational UI de
 - Alexa and Google Actions architecture
 - Custom voice assistant design
 - VUI prompt writing and refinement
+- SSML, pronunciation lexicons, and TTS regression listening
+- IVR and phone-agent call flows (speech + DTMF)
+- Realtime turn-taking, endpointing, and barge-in
 
 **Chatbot Design:**
 - End-to-end conversation flow mapping
@@ -74,6 +82,7 @@ This domain provides production-grade prompts for voice and conversational UI de
 - Error handling and fallback strategies
 - Enterprise customer service automation
 - LLM-powered conversational agents
+- Human-agent handoff (triggers, context packet, fallbacks)
 
 **Dialog Architecture:**
 - Finite-state and frame-based dialog management
@@ -104,6 +113,7 @@ This domain provides production-grade prompts for voice and conversational UI de
 **Analytics:**
 - Conversation metrics and KPI frameworks
 - Log analysis and optimization
+- Transcript QA rubrics, sampling, and LLM-judge gating
 
 ---
 
@@ -138,5 +148,5 @@ All prompts in this domain follow **Tier 1 (Production-Grade)** standards:
 
 ---
 
-**Last Updated:** 2026-03-19
-**Version:** 1.0.0
+**Last Updated:** 2026-09-24 (added SSML/TTS tuning, IVR call flow, realtime turn-taking, human-agent handoff, transcript QA rubric)
+**Version:** 1.1.0

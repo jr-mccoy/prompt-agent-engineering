@@ -1,6 +1,6 @@
 # Domain: Ideation
 
-Structured idea generation and idea selection. The twelve prompts in this domain cover the full divergence-convergence arc: techniques that force a wider, stranger idea space than your default frame produces (quantity pressure, time-boxes, inversion, random stimulus, persona shifts, analogy mining, constraint manipulation, reframing), and techniques that narrow the resulting list to something you can act on (dot-voting with weighted scoring, the kill-list).
+Structured idea generation and idea selection. The eighteen prompts in this domain cover the full divergence-convergence arc: techniques that force a wider, stranger idea space than your default frame produces (quantity pressure, time-boxes, inversion, random stimulus, persona shifts, analogy mining, constraint manipulation, reframing), and techniques that structure and narrow the resulting list to something you can act on (affinity clustering, dot-voting with weighted scoring, the kill-list), plus a facilitation plan that sequences them into a workshop.
 
 The shared premise is that ideation quality is mostly a process problem, not a talent problem. The first handful of ideas anyone produces are median; groups anchor early; the inner editor censors the odd ideas where breakthroughs hide; and "brainstorming" without a separate convergence step produces lists nobody commits to. Each prompt attacks one specific failure mode and declares which it is for — most state explicitly whether they diverge or converge, and refuse to do the other.
 
@@ -39,6 +39,10 @@ Users are PMs, designers, founders, marketers, strategists, workshop facilitator
 | `ideation_worst_idea_first.md` | Generate 10–15 deliberately terrible ideas, then mine each for the usable kernel |
 | `ideation_constraint_flip.md` | Drop one constraint / add one constraint to reopen an exhausted idea space |
 | `ideation_jobs_to_be_done_reframe.md` | Reframe a solution-shaped brief around the job being hired for, then re-ideate per job |
+| `ideation_how_might_we_reframe.md` | Turn a problem or insight into right-sized "How might we…" questions via eight reframing moves; pick 2–3 to ideate against |
+| `ideation_morphological_matrix.md` | Decompose the problem into independent parameters × options, prune inconsistent pairs, sample configurations deliberately |
+| `ideation_triz_contradiction_resolution.md` | State a technical/physical contradiction and resolve it with separation plus 3–6 justified inventive principles |
+| `ideation_six_thinking_hats.md` | Examine one proposal through six thinking modes worn together, in a purpose-fit sequence (diverge + evaluate) |
 
 ### Convergence
 
@@ -46,6 +50,13 @@ Users are PMs, designers, founders, marketers, strategists, workshop facilitator
 |------|---------|
 | `ideation_idea_convergence_dot_voting.md` | Dot-vote, then weighted-score the survivors, to a defensible shortlist of 3–7 with rationale and dissent |
 | `ideation_idea_kill_list.md` | Aggressively kill ~80% of a list with a named reason per death; defend the survivors |
+| `ideation_affinity_clustering.md` | Cluster 30–200 ideas or notes bottom-up into statement-named themes, with outliers kept; structures, does not rank |
+
+### Facilitation
+
+| File | Purpose |
+|------|---------|
+| `ideation_workshop_facilitation_plan.md` | Run-ready workshop plan: phase-separated agenda, exercise choice, roles, pre-work, remote/hybrid variant, exit plan |
 
 ## Quick routing
 
@@ -61,18 +72,26 @@ Users are PMs, designers, founders, marketers, strategists, workshop facilitator
 | "The group is too polite / self-censoring" | `ideation_worst_idea_first.md` |
 | "The constraints feel like the problem" / "the brief is too loose" | `ideation_constraint_flip.md` |
 | "The brief assumes the solution form ('ideas for an app')" | `ideation_jobs_to_be_done_reframe.md` |
+| "We know the problem but not the question to brainstorm on" | `ideation_how_might_we_reframe.md` |
+| "The solution has several parts and every idea is the same configuration" | `ideation_morphological_matrix.md` |
+| "Improving X always makes Y worse" (technical trade-off) | `ideation_triz_contradiction_resolution.md` |
+| "The discussion is advocates versus critics on one proposal" | `ideation_six_thinking_hats.md` |
+| "We have a wall of sticky notes and no structure" | `ideation_affinity_clustering.md` |
+| "I'm running an ideation workshop and need the plan" | `ideation_workshop_facilitation_plan.md` |
 | "We have 80 ideas and need 5, transparently" | `ideation_idea_convergence_dot_voting.md` |
 | "We keep everything 'just in case' and commit to nothing" | `ideation_idea_kill_list.md` |
 
 ## How prompts in this domain compose
 
-The canonical chain is **diverge → converge → hand off**. Start with a breadth tool sized to the situation: `forced_quantity_100_ideas` or `crazy_eights` for a blank page, `scamper` when you already have a thing, `jobs_to_be_done_reframe` when the brief itself is suspect. If the sprint stalls or every idea sounds the same, escalate to a pattern-breaker: `random_stimulus`, `worst_idea_first`, `persona_what_would_x_do`, `constraint_flip`, or `cross_domain_analogy_mining`. Then converge with `idea_convergence_dot_voting` (when you need comparative scoring) or `idea_kill_list` (when commitment is the bottleneck). The shortlist hands off outside the domain — to `domain-decision-making/` tradeoff prompts for a final choice, or to `domain-idea-to-product/` for validation and build.
+The canonical chain is **frame → diverge → converge → hand off**. Frame the question with `how_might_we_reframe`. Start with a breadth tool sized to the situation: `forced_quantity_100_ideas` or `crazy_eights` for a blank page, `scamper` when you already have a thing, `morphological_matrix` when the solution has separable parts, `triz_contradiction_resolution` when a technical trade-off is the blocker, `jobs_to_be_done_reframe` when the brief itself is suspect. If the sprint stalls or every idea sounds the same, escalate to a pattern-breaker: `random_stimulus`, `worst_idea_first`, `persona_what_would_x_do`, `constraint_flip`, or `cross_domain_analogy_mining`. For a large pile, structure it first with `affinity_clustering`. Then converge with `idea_convergence_dot_voting` (when you need comparative scoring) or `idea_kill_list` (when commitment is the bottleneck). The shortlist hands off outside the domain — to `domain-decision-making/` tradeoff prompts for a final choice, or to `domain-idea-to-product/` for validation and build.
+
+`six_thinking_hats` sits between the phases: it takes one shortlisted proposal and examines it fully before commitment. `workshop_facilitation_plan` sequences all of the above into a timed group session.
 
 `inverse_problem` doubles as a diagnostic: its failure-mode output can feed `domain-risk/` prompts or a pre-mortem rather than a convergence step.
 
 ## Frontmatter conventions specific to this domain
 
-All prompts carry the repo-standard frontmatter plus a machine-readable `reasoning:` block (styles, stakes, horizon, uncertainty, output_format, user_role, mode). The load-bearing field here is `mode`: divergence prompts declare `mode: [diverge]` and convergence prompts `mode: [converge, decide]` — use it to keep the two phases separate when chaining programmatically. `evidence_quality` is typically `not_applicable` for pure divergence prompts (idea generation isn't evidence-weighted), and `stakes` is usually `low` to `moderate`: ideation is cheap by design, with the expensive judgment deferred to selection. `related_prompts` encodes the composition graph above.
+All prompts carry the repo-standard frontmatter plus a machine-readable `reasoning:` block (styles, stakes, horizon, uncertainty, output_format, user_role, mode). The load-bearing field here is `mode`: divergence prompts declare `mode: [diverge]` and convergence prompts `mode: [converge, decide]` (`affinity_clustering` is `[converge]` only — it structures without deciding; `six_thinking_hats` is `[diverge, converge]`; `workshop_facilitation_plan` is `[plan]`) — use it to keep the two phases separate when chaining programmatically. `evidence_quality` is typically `not_applicable` for pure divergence prompts (idea generation isn't evidence-weighted), and `stakes` is usually `low` to `moderate`: ideation is cheap by design, with the expensive judgment deferred to selection. `related_prompts` encodes the composition graph above.
 
 ## Companion domains
 

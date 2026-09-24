@@ -80,6 +80,10 @@ DOMAIN_DIRS = [
     "domain-written-advocacy",
     "domain-medical-education",
     "domain-voice-conversational-ui",
+    "domain-sales-customer",
+    "domain-data-analytics",
+    "domain-operations",
+    "domain-health-wellness",
 ]
 
 # Self-contained pipeline domains that intentionally re-copy upstream prompts

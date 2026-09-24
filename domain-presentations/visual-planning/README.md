@@ -20,7 +20,7 @@ Prompts for the analytic work that sits upstream of visually-delivered artifacts
 
 ## Cross-References
 
-- Deck production and assembly: [`../powerpoint_board_deck_generator.md`](../powerpoint_board_deck_generator.md), [`../powerpoint_deck_assembly_and_validation.md`](../powerpoint_deck_assembly_and_validation.md)
+- Deck production and assembly: [`../powerpoint_board_deck.md`](../powerpoint_board_deck.md), [`../powerpoint_deck_assembly_validation.md`](../powerpoint_deck_assembly_validation.md)
 - Image generation guide (for visual artifacts produced via image models): [`../../domain-image-generation/IMAGE_GENERATION_GUIDE.md`](../../domain-image-generation/IMAGE_GENERATION_GUIDE.md)
 - AI strategy & capability evaluation (compounds with frontier mapping): [`../../domain-business-strategy/ai-strategy/`](../../domain-business-strategy/ai-strategy/)
 - Bottleneck migration planning (cascade effects feed into this): [`../../domain-engineering-workflows/ai-native-rollouts/airollout_bottleneck_migration_plan.md`](../../domain-engineering-workflows/ai-native-rollouts/airollout_bottleneck_migration_plan.md)

@@ -18,8 +18,8 @@ tags:
   - leadership
 updated: "2026-02-26"
 related_prompts:
-  - decision-making/decisioning_crisis_severity_triage.md
-  - decision-making/decisioning_crisis_communication_playbook.md
+  - domain-risk/risk_crisis_severity_triage.md
+  - domain-risk/risk_crisis_communication_playbook.md
   - decision-making/decisioning_rapid_stakeholder_alignment.md
   - productivity/validation/validation_adversarial_mini_check.md
 ---
@@ -259,7 +259,7 @@ Before sending, verify you're NOT:
 
 ## Related Prompts
 
-- [decisioning_crisis_severity_triage.md](decisioning_crisis_severity_triage.md) - Classify crisis severity before escalating
-- [decisioning_crisis_communication_playbook.md](decisioning_crisis_communication_playbook.md) - Broader crisis communication strategy
+- [../domain-risk/risk_crisis_severity_triage.md](../domain-risk/risk_crisis_severity_triage.md) - Classify crisis severity before escalating
+- [../domain-risk/risk_crisis_communication_playbook.md](../domain-risk/risk_crisis_communication_playbook.md) - Broader crisis communication strategy
 - [decisioning_rapid_stakeholder_alignment.md](decisioning_rapid_stakeholder_alignment.md) - Getting stakeholder alignment quickly
 - [validation_adversarial_mini_check.md](../domain-productivity/validation/validation_adversarial_mini_check.md) - Pre-decision verification

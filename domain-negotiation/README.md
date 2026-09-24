@@ -1,10 +1,10 @@
 # Domain: Negotiation
 
-Negotiation as a working discipline, across the whole arc: what you do before you walk in, what you do once it starts, what happens in the medium the conversation actually travels through, how it changes with three or more parties, and what you owe the agreement after it is signed. The 46 prompts here treat negotiation as a set of specific, drillable decisions rather than a temperament — where to anchor and why, which concession buys what, which of five impasses you are actually in, what a counterpart's behaviour does and does not reveal, and when no deal is the correct outcome.
+Negotiation as a working discipline, across the whole arc: what you do before you walk in, what you do once it starts, what happens in the medium the conversation actually travels through, how it changes with three or more parties, and what you owe the agreement after it is signed. The 52 prompts here treat negotiation as a set of specific, drillable decisions rather than a temperament — where to anchor and why, which concession buys what, which of five impasses you are actually in, what a counterpart's behaviour does and does not reveal, and when no deal is the correct outcome.
 
 The domain spans the lifecycle. **Before:** size the preparation, derive the walkaway, map interests, build the packages, design the concession ladder, model the counterpart (`preparation/`). **During:** question, read signals, defend against coercion, break the deadlock, handle the emotional layer, close (`at-the-table/`). **Through a medium:** written, async, remote, and across contexts whose norms you have not established (`channels/`). **With more parties:** coordinate your own side, face a bloc, or run a negotiation you are not a party to (`multi-party/`). **After:** debrief, implement, reopen, or recover from no deal (`after-the-deal/`). Then the named specializations (`contexts/`), the relationship-primary track where the goal is to be understood rather than to win (`difficult-conversations/`), and the layer that makes any of it compound (`craft/`).
 
-Users are executives, founders, salespeople, people leaders, lawyers, project leads, and individuals heading into anything with material stakes — salary, contract, term sheet, vendor renewal, partnership split, property, or dissolution. The domain assumes you will negotiate more than once, and that the second time should go better than the first.
+Users are executives, founders, salespeople, people leaders, lawyers, project leads, and individuals heading into anything with material stakes — salary, contract, term sheet, vendor renewal, partnership split, property, lease, insurance claim, medical bill, severance, license, or dissolution. The domain assumes you will negotiate more than once, and that the second time should go better than the first.
 
 ## When to use this domain
 
@@ -21,6 +21,9 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 - **Divorce or custody mediation strategy** → `domain-legal/divorce/` and `domain-legal/custody/` (party-side mediation prep, briefs, impasse strategy). `multi-party/negotiation_facilitator_third_party.md` is the neutral-role complement, not a substitute.
 - **Evaluating an offer rather than negotiating it** → `domain-personal-development/major-decisions/personal_career_offer_evaluation.md`, or `personal_major_purchase_research.md`.
 - **Setting your price before the conversation** → `domain-personal-development/prompts/solo-dev/solo_dev_pricing_value_confidence.md`.
+- **Writing the letter itself** — a bill dispute, a claim-denial appeal, a financial-assistance or hardship request, a billing complaint → `domain-written-advocacy/` (`insurance-and-medical/`, `financial-hardship/`, `accounts-and-billing/`). The `contexts/` prompts plan the negotiation; those draft the correspondence.
+- **Tenant rights, notices, deposits, or repair obligations** → `domain-legal/personal-self-advocacy/housing-landlord-tenant/`. `contexts/negotiation_landlord_rent_and_lease_renewal.md` negotiates inside whatever those rules allow.
+- **Reviewing a severance agreement's release and covenants as counsel** → `domain-legal/employment-labor/legal_employment_offer_and_separation_package.md`. `contexts/negotiation_severance_package.md` is the employee's non-lawyer preparation.
 - **Live in-character role-play rather than written preparation** → `domain-conversation-practice/conversation_practice_simulator.md`.
 - **Aligning internal stakeholders rather than bargaining** → `domain-decision-making/decisioning_rapid_stakeholder_alignment.md`; org politics generally → `domain-personal-development/prompts/stakeholder/`.
 - **Personal-life boundaries and relationship repair** → `domain-personal-development/prompts/relationships/`, `domain-psychology/client-self-use/relational/`.
@@ -35,7 +38,7 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 | `channels/` | The medium: written and async, the counter-offer message, remote and video, and negotiating across contexts whose norms you have not established | 4 |
 | `multi-party/` | Three or more: coalition mapping and sequencing, your own team's roles, facing an aligned bloc, and running a negotiation you are not a party to | 4 |
 | `after-the-deal/` | Post-signature: deal debrief, implementation and relationship, renegotiating a live agreement, no-deal recovery | 4 |
-| `contexts/` | Named specializations that cross-link upstream rather than restating theory: salary, vendor buy-side, freelance rates, sales objections, equity splits, internal budget, customer escalation, major purchases | 8 |
+| `contexts/` | Named specializations that cross-link upstream rather than restating theory: salary, employer-side hiring offers, vendor buy-side, freelance rates, sales objections, equity splits, internal budget, customer escalation, major purchases, landlord and lease, insurance claims, medical bills, severance, licensing | 14 |
 | `difficult-conversations/` | The relationship-primary track, own prefix `difficultconvo_`: pre-brief, post-review, delivering bad news, receiving hard feedback, saying no upward | 5 |
 | `craft/` | Making it compound: style self-assessment, deliberate practice, pattern library, and the ethics line | 4 |
 
@@ -107,6 +110,12 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 | `negotiation_internal_budget_headcount.md` | Argue in the allocator's currency, find peer trades, tier the ask, protect the relationships |
 | `negotiation_customer_escalation_concession.md` | Separate legitimate remedy from relationship gesture from escalation premium; label every concession |
 | `negotiation_major_purchase_bargaining.md` | Close the information gap, negotiate the total, prepare the second stage, keep the walk-away real |
+| `negotiation_hiring_offer_employer_side.md` | The salary prompt's mirror: band position fixed before the call, levers ranked by cost vs. value, internal equity outranking this candidate, competing offers without bidding blind |
+| `negotiation_landlord_rent_and_lease_renewal.md` | Price the landlord's turnover cost, build the alternative from comparables plus moving cost, trade lease length and reliability, ask for what the counterpart can actually grant |
+| `negotiation_insurance_claim_settlement.md` | Read the valuation clause, itemize the loss, counter line by line with evidence, work the adjuster's authority limit, never sign a final release early |
+| `negotiation_medical_bill_reduction.md` | Correctness and assistance first, then the self-pay / prompt-pay / lump-sum discount or an interest-free plan, in writing before paying |
+| `negotiation_severance_package.md` | What the release buys, every movable term beyond the amount, the review period used, and the release routed to a lawyer |
+| `negotiation_licensing_ip_terms.md` | Scope before price, exclusivity priced and bounded by performance obligations, the royalty base defined before the rate |
 
 ### difficult-conversations/
 
@@ -168,6 +177,12 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 | "I need headcount and so does every other team" | `contexts/negotiation_internal_budget_headcount.md` |
 | "An angry customer wants compensation" | `contexts/negotiation_customer_escalation_concession.md` |
 | "I'm buying a car and I know I'll be outplayed" | `contexts/negotiation_major_purchase_bargaining.md` |
+| "The candidate has a competing offer and wants more" | `contexts/negotiation_hiring_offer_employer_side.md` |
+| "My landlord is raising the rent at renewal" | `contexts/negotiation_landlord_rent_and_lease_renewal.md` |
+| "The adjuster's offer won't cover the damage" | `contexts/negotiation_insurance_claim_settlement.md` |
+| "I can't pay this hospital bill in full" | `contexts/negotiation_medical_bill_reduction.md` |
+| "They handed me a severance agreement and a deadline" | `contexts/negotiation_severance_package.md` |
+| "We're stuck on the royalty rate" | `contexts/negotiation_licensing_ip_terms.md` |
 | "I have to fire someone / give hard feedback / say no to something big" | `difficult-conversations/difficultconvo_pre_brief.md` |
 | "That went sideways and I need to work out why" | `difficult-conversations/difficultconvo_post_review.md` |
 | "I have to tell them something I didn't decide" | `difficult-conversations/difficultconvo_delivering_bad_news.md` |
@@ -201,6 +216,8 @@ The diagnostic field for routing within the domain is **`styles`**. The `negotia
 - `domain-legal/contracts-transactional/`, `domain-legal/litigation/`, `domain-legal/in-house-legalops/` — position papers, redlines, playbooks, and settlement valuation once the negotiation has a contract or a claim in it.
 - `domain-legal/divorce/`, `domain-legal/custody/`, `domain-legal/family-self-advocacy/` — family-law mediation and settlement preparation, party-side.
 - `domain-personal-development/major-decisions/` — evaluating the underlying offer or deal before negotiating it.
+- `domain-written-advocacy/` — the dispute, appeal, and hardship letters that accompany the landlord, insurance, and medical-bill contexts.
+- `domain-legal/personal-self-advocacy/housing-landlord-tenant/` and `domain-legal/employment-labor/` — tenant rights and the attorney-side review of separation agreements.
 - `domain-personal-development/prompts/stakeholder/` and `prompts/relationships/` — org-political navigation and personal-life boundaries, both of which this domain routes to rather than duplicating.
 - `domain-decision-making/` — stakes sizing (`tradeoff_reversibility_stakes_grid.md`), regret minimization, and internal stakeholder alignment.
 - `domain-conversation-practice/` — live in-character role-play, complementary to `counterpart_simulation`'s written model.

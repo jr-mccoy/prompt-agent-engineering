@@ -1,6 +1,8 @@
 # Expansion Roadmap — `domain-negotiation/`
 
-**Status as of 2026-07-26:** ✅ **Wave 1 shipped in full** — **40 net-new prompts** (6 → **46**) reorganized into **8 subdirectories**, taking the domain from a preparation-only starter set to a full negotiation practitioner library at the scale of `domain-reasoning-craft/` (41). Every prompt below is built and validated: exactly six `##` headings, three resolving `related_prompts`, `category` matching its subdirectory, and all technique IDs present in `techniques/MASTER_TECHNIQUE_INDEX.md`. All new prompts follow the domain's established house style (exemplar: `preparation/negotiation_interest_mapping.md`): 9-field frontmatter with the machine-readable `reasoning:` block, six `##` headings, 9 instruction steps ending in an adversarial check, an 8-item False-Positive Prevention list, a locked Output Format template, and a Verification checklist closing on negative assertions.
+**Status as of 2026-09-24:** ✅ **Wave 2 `contexts/` deepening shipped** — **5 new context prompts** (landlord and lease, insurance claim, medical bill, severance, licensing), plus `negotiation_hiring_offer_employer_side.md` (added 2026-09-22 by the coverage pass), take the domain to **52 prompts** and `contexts/` to **14**. The other Wave 2 items remain open — see [Wave 2](#wave-2--candidate-future-work) below.
+
+**Wave 1 (2026-07-26):** ✅ **shipped in full** — **40 net-new prompts** (6 → **46**) reorganized into **8 subdirectories**, taking the domain from a preparation-only starter set to a full negotiation practitioner library at the scale of `domain-reasoning-craft/` (41). Every prompt below is built and validated: exactly six `##` headings, three resolving `related_prompts`, `category` matching its subdirectory, and all technique IDs present in `techniques/MASTER_TECHNIQUE_INDEX.md`. All new prompts follow the domain's established house style (exemplar: `preparation/negotiation_interest_mapping.md`): 9-field frontmatter with the machine-readable `reasoning:` block, six `##` headings, 9 instruction steps ending in an adversarial check, an 8-item False-Positive Prevention list, a locked Output Format template, and a Verification checklist closing on negative assertions.
 
 **Filing convention:** `negotiation_{specific_function}.md` inside the relevant subdirectory. The domain keeps **one prefix across all subdirectories** (the `domain-legal/` precedent — `legal_*` spans `research/`, `litigation/`, `discovery/`, …), with the single pre-existing exception of `difficult-conversations/difficultconvo_*.md`, which has its own prefix because it is a distinct audience track: relationship-primary conversations where the goal is to be understood, not to win a distributive point.
 
@@ -11,13 +13,13 @@
 ## Shipped architecture
 
 ```
-domain-negotiation/                      46 prompts   ✓
+domain-negotiation/                      52 prompts   ✓
 ├── preparation/            10/10  ✓ (+7)   the work before you walk in
 ├── at-the-table/            7/7   ✓ (NEW)  live moves once it starts
 ├── channels/                4/4   ✓ (NEW)  medium-specific: written, remote, cross-cultural
 ├── multi-party/             4/4   ✓ (+3)   three or more parties, teams, facilitation
 ├── after-the-deal/          4/4   ✓ (NEW)  debrief, implement, reopen, recover
-├── contexts/                8/8   ✓ (NEW)  named specializations of the general machinery
+├── contexts/              14/14   ✓ (NEW, +6 since Wave 1)  named specializations of the general machinery
 ├── difficult-conversations/ 5/5   ✓ (+3)   relationship-primary track (own prefix)
 └── craft/                   4/4   ✓ (NEW)  building negotiation skill over time
 ```
@@ -78,7 +80,7 @@ domain-negotiation/                      46 prompts   ✓
 | `negotiation_renegotiate_existing_agreement.md` | Reopening a live deal: change-of-circumstance case, relationship cost, exit-vs-amend, sequencing the ask |
 | `negotiation_no_deal_recovery.md` | You walked or they did: preserve the option to reopen, extract the learning, execute the BATNA you priced |
 
-### `contexts/` (8) — all new
+### `contexts/` (8 in Wave 1; 14 now) — all new
 
 Each is a **specialization**, not a restatement. Every one cross-links upstream to `preparation/` rather than re-deriving BATNA and interest theory.
 
@@ -92,6 +94,8 @@ Each is a **specialization**, not a restatement. Every one cross-links upstream 
 | `negotiation_internal_budget_headcount.md` | Negotiating inside your own organization for resources against peers with equal claim |
 | `negotiation_customer_escalation_concession.md` | An angry customer wants something: what to concede, what it sets as precedent, when to hold |
 | `negotiation_major_purchase_bargaining.md` | Vehicle, home, large one-off purchase: information asymmetry, the walk-away as the only real lever |
+
+**Added after Wave 1** (see Wave 2 below): `negotiation_hiring_offer_employer_side.md`, `negotiation_landlord_rent_and_lease_renewal.md`, `negotiation_insurance_claim_settlement.md`, `negotiation_medical_bill_reduction.md`, `negotiation_severance_package.md`, `negotiation_licensing_ip_terms.md`.
 
 ### `difficult-conversations/` (5) — 2 existing, 3 new
 
@@ -129,6 +133,10 @@ Each is a **specialization**, not a restatement. Every one cross-links upstream 
 | Setting your own price/rate before the conversation | `domain-personal-development/prompts/solo-dev/solo_dev_pricing_value_confidence.md` — upstream of `contexts/negotiation_freelance_rate_conversation.md` |
 | Vendor selection (pre-negotiation diligence) | `domain-business-strategy/research/research_vendor_evaluation.md` — upstream of `contexts/negotiation_vendor_procurement_buyside.md` |
 | Co-parenting counterpart tactics | `domain-parenting/caregiver-facing/co-parenting/` — the family-specific fork of hard-bargainer defense |
+| Dispute, appeal, and hardship letters | `domain-written-advocacy/insurance-and-medical/`, `financial-hardship/`, `accounts-and-billing/` — the correspondence; `contexts/` plans the negotiation it serves |
+| Tenant rights, notices, deposits, repair documentation | `domain-legal/personal-self-advocacy/housing-landlord-tenant/` — upstream of `contexts/negotiation_landlord_rent_and_lease_renewal.md` |
+| Attorney-side separation agreement review | `domain-legal/employment-labor/legal_employment_offer_and_separation_package.md` — the counsel complement to `contexts/negotiation_severance_package.md` |
+| Drafting the license agreement | `domain-legal/contracts-transactional/legal_licensing_agreement_drafter.md` — downstream of `contexts/negotiation_licensing_ip_terms.md` |
 
 ---
 
@@ -148,9 +156,9 @@ Each is a **specialization**, not a restatement. Every one cross-links upstream 
 
 ---
 
-## Wave 2 — candidate future work (not yet built)
+## Wave 2 — candidate future work
 
-- **Deepen `contexts/`** — landlord/tenant, insurance claim, medical bill, severance package, licensing/IP terms. Each must clear the non-duplication table first; several are close to `domain-legal/personal-self-advocacy/`.
+- ✅ **Deepen `contexts/`** — **shipped 2026-09-24.** Five prompts built, each clearing the non-duplication table with its boundary stated in the prompt: `negotiation_landlord_rent_and_lease_renewal.md` (distinct from the tenant-rights prompts in `domain-legal/personal-self-advocacy/housing-landlord-tenant/`), `negotiation_insurance_claim_settlement.md` (amount on an accepted claim; denials route to `domain-written-advocacy/insurance-and-medical/advocacy_insurance_claim_denial_appeal.md`), `negotiation_medical_bill_reduction.md` (runs after `advocacy_medical_bill_dispute.md` and `advocacy_financial_assistance_charity_care_request.md`, not instead of them), `negotiation_severance_package.md` (employee-side, non-lawyer; the release routes to `domain-legal/employment-labor/legal_employment_offer_and_separation_package.md`), and `negotiation_licensing_ip_terms.md` (business terms before drafting; drafting routes to `legal_licensing_agreement_drafter.md`). No duplicates were found in the sweep. Root `CLAUDE.md` routing rows and the index regeneration (convention 11) are left to the integration pass.
 - **Negotiation analytics** — designing a personal scorecard across many negotiations (outcome vs. reservation point, concession efficiency, walk-away rate), feeding `craft/negotiation_pattern_library_builder.md`.
 - **Agent-mediated negotiation** — negotiating through a broker, recruiter, or agent, where your interests and your representative's diverge.
 - **Reciprocal cross-links** — deliberately deferred in Wave 1. Adjacent prompts in `domain-personal-development/`, `domain-legal/`, and `domain-business-strategy/` do not yet point back into the new subdirectories; the repo caps `related_prompts` at 3, so adding backlinks means displacing existing ones and should be a considered pass, not a sweep.

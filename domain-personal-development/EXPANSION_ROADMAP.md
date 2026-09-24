@@ -35,6 +35,14 @@ domain-personal-development/            166 prompts
 
 ---
 
+## Job search (coverage Wave 1)
+
+- **`job-search/`** (8, prefix `jobsearch_`) — the candidate side of an external search: target role and market map, résumé evidence rewriter, posting fit decoder, cover letter, LinkedIn audit, networking outreach, behavioral story bank, pipeline tracker and cadence. Filled the repo-wide gap recorded in [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md).
+- **Boundaries:** deciding whether to move stays in `career-transformation/`; offer evaluation in `major-decisions/`; offer terms in `domain-negotiation/` (job-search titles and tags deliberately avoid compensation-negotiation vocabulary so routing keeps sending that to negotiation); employer-side hiring in `domain-hr-management/hiring/`.
+- **Honesty guard (load-bearing):** no prompt in the folder may invent experience, metrics, titles or credentials; unsupported claims are flagged with a fix.
+
+---
+
 ## Wave 2 — Candidate future work (not yet built)
 
 - **`career/` template refresh** — the 17 AI-role assessments use the older interview/verdict template. A future wave could convert them to the rigorous Tier-1 template, or extend the set to non-AI roles.

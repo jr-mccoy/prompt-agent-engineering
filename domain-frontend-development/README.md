@@ -1,8 +1,8 @@
 # Frontend Development Domain
 
-**Purpose:** Comprehensive prompt collection for frontend development covering frameworks (React, Vue, Angular, Next.js, Svelte/SvelteKit, Astro, SolidJS, Qwik, Remix), cross-cutting craft (styling, TypeScript, forms, animation, architecture), build tooling, accessibility, performance, and testing.
+**Purpose:** Comprehensive prompt collection for frontend development covering frameworks (React, Vue, Angular, Next.js, Svelte/SvelteKit, Astro, SolidJS, Qwik, Remix), cross-cutting craft (styling, TypeScript, forms, animation, architecture), build tooling, accessibility, performance, testing, and UX research methods.
 
-**Total Resources:** 47 prompts across 18 categories
+**Total Resources:** 54 prompts across 19 categories
 
 ---
 
@@ -44,6 +44,12 @@ This domain provides production-grade prompts for modern frontend development, o
 | [accessibility/](accessibility/) | 3 | WCAG audits, ARIA patterns, screen reader testing |
 | [performance/](performance/) | 2 | Core Web Vitals, bundle optimization |
 | [testing/](testing/) | 2 | Jest unit testing, Playwright E2E |
+
+### UX Research
+
+| Category | Prompts | Focus |
+|----------|---------|-------|
+| [ux-research/](ux-research/) | 7 | Usability test plans and moderation scripts, heuristic evaluation, card sort / tree test, findings severity, SUS/UMUX-Lite/SEQ scoring, design critique |
 
 ---
 
@@ -100,6 +106,13 @@ This domain provides production-grade prompts for modern frontend development, o
 | Reduce bundle size | [frontend_performance_bundle_optimization.md](performance/frontend_performance_bundle_optimization.md) |
 | Set up Jest testing | [frontend_testing_jest.md](testing/frontend_testing_jest.md) |
 | Create E2E tests | [frontend_testing_playwright.md](testing/frontend_testing_playwright.md) |
+| Plan a usability test | [frontend_ux_usability_test_plan.md](ux-research/frontend_ux_usability_test_plan.md) |
+| Script a moderated usability session | [frontend_ux_moderated_session_script.md](ux-research/frontend_ux_moderated_session_script.md) |
+| Run a heuristic evaluation | [frontend_ux_heuristic_evaluation.md](ux-research/frontend_ux_heuristic_evaluation.md) |
+| Run a card sort / tree test | [frontend_ux_card_sort_tree_test.md](ux-research/frontend_ux_card_sort_tree_test.md) |
+| Rate usability findings by severity | [frontend_ux_usability_findings_severity_log.md](ux-research/frontend_ux_usability_findings_severity_log.md) |
+| Score SUS / UMUX-Lite / SEQ | [frontend_ux_standardized_survey_sus.md](ux-research/frontend_ux_standardized_survey_sus.md) |
+| Facilitate a design critique | [frontend_ux_design_critique_facilitator.md](ux-research/frontend_ux_design_critique_facilitator.md) |
 
 ### By Technology
 
@@ -124,6 +137,8 @@ This domain provides production-grade prompts for modern frontend development, o
 **Build Tooling:** Vite config optimization, micro-frontends / Module Federation, and bundler migration.
 
 **Accessibility / Performance / Testing:** WCAG/ARIA/screen-reader audits; Core Web Vitals and bundle optimization; Jest and Playwright.
+
+**UX Research:** usability test planning and moderation, heuristic evaluation, card sorting and tree testing, severity-rated findings, standardized questionnaires (SUS, UMUX-Lite, SEQ), and design critique.
 
 ---
 
@@ -157,5 +172,5 @@ All prompts in this domain follow **Tier 1 (Production-Grade)** standards:
 
 ---
 
-**Last Updated:** 2026-06-21
-**Version:** 3.0.0
+**Last Updated:** 2026-09-24
+**Version:** 3.1.0

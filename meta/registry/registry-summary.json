@@ -1,12 +1,12 @@
 {
   "by_eval_status": {
-    "unknown": 5371
+    "unknown": 5637
   },
   "by_kind": {
     "agent": 164,
     "command": 152,
     "persona": 53,
-    "prompt": 4315,
+    "prompt": 4581,
     "skill": 351,
     "technique": 336
   },
@@ -14,72 +14,72 @@
     "agent": 164,
     "command": 152,
     "persona": 53,
-    "prompt": 4270,
+    "prompt": 4528,
     "skill": 351,
     "technique": 336
   },
   "by_kind_tombstone": {
-    "prompt": 45
+    "prompt": 53
   },
   "by_license_status": {
     "inherited": 583,
-    "resolved": 4743,
-    "unresolved": 45
+    "resolved": 5001,
+    "unresolved": 53
   },
   "by_lifecycle": {
-    "live": 5326,
-    "tombstone": 45
+    "live": 5584,
+    "tombstone": 53
   },
   "by_maturity": {
-    "deprecated": 54,
-    "experimental": 5317
+    "deprecated": 62,
+    "experimental": 5575
   },
   "by_metadata_completeness": {
     "degraded": 2,
-    "full": 5171,
+    "full": 5437,
     "minimal": 198
   },
   "by_provenance_origin": {
     "adapted": 562,
-    "project_native": 4735,
-    "unknown": 45,
+    "project_native": 4993,
+    "unknown": 53,
     "vendored": 29
   },
   "by_review_status": {
-    "unknown": 5371
+    "unknown": 5637
   },
   "by_serving_policy": {
-    "metadata_only": 56,
-    "safety_gated": 1322,
-    "standard": 3993
+    "metadata_only": 64,
+    "safety_gated": 1436,
+    "standard": 4137
   },
   "diagnostics_by_code": {
     "frontmatter_parse_failed": 2,
-    "no_frontmatter": 153,
+    "no_frontmatter": 145,
     "reorg_relation_on_non_resource": 6,
-    "tombstone": 45
+    "tombstone": 53
   },
   "membership": {
-    "excluded_markdown_files": 1544,
+    "excluded_markdown_files": 1559,
     "exclusion_reasons": {
       "bundled_component": 693,
-      "meta_document": 460,
+      "meta_document": 475,
       "non_resource_prefix": 321,
       "planning_document": 1,
       "skill_bundle_attachment": 65,
       "toolkit_documentation": 4
     },
-    "file_backed_candidates": 4990
+    "file_backed_candidates": 5248
   },
   "quality_assertions_by_scheme": {
-    "guard-level": 64,
-    "intended-use": 704
+    "guard-level": 67,
+    "intended-use": 720
   },
   "relationships": {
     "attachments": 1039,
     "copy_of": 59,
-    "merged_into": 11,
-    "previous_paths": 276,
+    "merged_into": 19,
+    "previous_paths": 296,
     "split_into": 1,
     "superseded_by": 42
   },
@@ -93,5 +93,5 @@
       "ST-26"
     ]
   },
-  "total_records": 5371
+  "total_records": 5637
 }

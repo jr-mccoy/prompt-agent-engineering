@@ -16,7 +16,7 @@ The repository already contains material that looks like evaluation and is not:
 
 | Artifact | What it actually is |
 |---|---|
-| `pae-engine/tests/data/search_routing_regression.v1.json` (120 cases) | A Phase 4 **tuning** set. The router's coverage and margin thresholds were fitted on it. |
+| `pae-engine/tests/data/search_routing_regression.v1.json` (146 cases) | A Phase 4 **tuning** set. The router's coverage and margin thresholds were fitted on its first 120 cases. The 26 coverage Wave 5 cases were added later, their targets' tags were adjusted after measurement, and nothing was refitted. |
 | `FLOORS` in `test_search_regression.py` | Conservative regression guards set *below* the measured values, so an ordinary corpus edit does not fail the build. Not measurements. |
 | `meta/ROUTING_REFERENCE.md` phrase mappings | Documentation labels. Many share vocabulary with their target's title, which flatters any lexical ranker. |
 | Phase 5 packing diagnostics | Design-time instrumentation. |

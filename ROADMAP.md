@@ -41,7 +41,7 @@ Available today, exercised by CI:
   [`pae-engine/README.md`](pae-engine/README.md).
 
 - **Deterministic search and routing** — `pae search` and `pae route`, BM25F
-  over registry metadata with an in-memory index, plus a committed 120-case
+  over registry metadata with an in-memory index, plus a committed 146-case
   internal regression set. Offline, standard-library-only, no embeddings. See
   [`pae-engine/docs/search-routing.md`](pae-engine/docs/search-routing.md).
 
@@ -50,9 +50,14 @@ Also available: **`pae mcp`**, a read-only stdio MCP server behind the optional
 [`pae-engine/docs/mcp.md`](pae-engine/docs/mcp.md).
 
 Not available: there is no network MCP transport and no independent
-evaluation harness. The 120-case regression set is an internal tuning and
+evaluation harness. The 146-case regression set is an internal tuning and
 regression corpus, not a benchmark. The package is not published to PyPI and
 the repository has no tags.
+
+**Content coverage** is planned separately. This file covers the product and
+the engine. [`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) records a
+repository-wide audit of subject-matter gaps and sequences the fix into waves.
+Waves 1–5 have shipped.
 
 ---
 

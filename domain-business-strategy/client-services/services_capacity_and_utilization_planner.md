@@ -32,7 +32,7 @@ feeling.
 material capacity. It is the numerator behind every pricing and qualification
 decision: a thin pipeline is why disqualification rules get overridden.
 
-This is **distinct from** `../go-to-market/workflow_sales_pipeline_risk_assessment.md`,
+This is **distinct from** `../../domain-sales-customer/sales/sales_pipeline_risk_assessment.md`,
 which audits an open pipeline for stalled deals and winnability in a sales context.
 That prompt asks "which deals will close?"; this one asks "will anything close
 *before my bench date*, and what do I do if not?" — coupling pipeline to capacity and
@@ -216,6 +216,6 @@ a missed deadline on work already sold.
 
 - `services_ideal_client_and_disqualifiers.md` — the rules that come under pressure when exposed
 - `services_client_concentration_risk_check.md` — the portfolio view of the same commitments
-- `../go-to-market/workflow_sales_pipeline_risk_assessment.md` — deal-level pipeline health
+- `../../domain-sales-customer/sales/sales_pipeline_risk_assessment.md` — deal-level pipeline health
 - `../../domain-finance/corporate-finance-fpa/finance_services_rate_floor_model.md` — consumes the utilization target
 - `../../domain-personal-development/prompts/solo-dev/solo_dev_sustainable_pace_design.md` — whether the target is survivable

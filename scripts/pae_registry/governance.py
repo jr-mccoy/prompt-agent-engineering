@@ -29,6 +29,7 @@ DEFAULT_SERVING_POLICY = "metadata_only"
 SAFETY_SENSITIVE_ROOTS = frozenset(
     {
         "domain-discipleship",
+        "domain-health-wellness",
         "domain-healthcare-clinical",
         "domain-legal",
         "domain-medical-education",

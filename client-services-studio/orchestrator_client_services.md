@@ -51,7 +51,7 @@ This toolkit orchestrates. When a stage calls for a domain prompt, read it from
 | Stage | Hands off to |
 |---|---|
 | 1 | `services_ideal_client_and_disqualifiers.md` |
-| 2 | `workflow_sales_discovery_call_preparation.md` |
+| 2 | `sales_discovery_call_preparation.md` |
 | 3 | `workflow_definition_of_done_builder.md` |
 | 4 | `services_pricing_model_selector.md`, `finance_services_rate_floor_model.md`, `services_client_value_quantification.md` |
 | 5 | `business_writing_client_engagement_proposal.md`, `legal_sow_drafter.md` |

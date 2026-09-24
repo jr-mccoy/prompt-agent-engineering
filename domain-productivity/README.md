@@ -54,7 +54,7 @@ domain-productivity/
 | `daily-planning/` | 8 | Task list builder, priority triage, morning planning, EOD shutdown, overwhelm triage, errand batching, context switching, energy matching |
 | `deep-work/` | 19 | Focus parameters, calendar audit, triage, reload, experiments, environment friction, future-self handoff |
 | `goals-habits/` | 6 | Annual goal breakdown, habit stack design, monthly check-in, goal reality check, habit repair, personal tracking dashboard |
-| `home-life/` | 8 | Meal planning, chore rotation, family schedule, appointment prep, seasonal maintenance, declutter, moving, travel |
+| `home-life/` | 13 | Meal planning, chore rotation, family schedule, appointment prep, seasonal maintenance, declutter, moving, travel, household paperwork, after-a-death admin, Medicare/insurance enrollment prep, family caregiving coordination, caregiver respite |
 | `prototyping/` | ~6 | CRM, landing pages, event registration |
 | `reviews/` | 3 | Time audit, weekly systems review, monthly/quarterly cadence |
 | `school-student/` | 6 | Study schedule, exam prep, assignment tracker, semester planner, reading triage, note organization |

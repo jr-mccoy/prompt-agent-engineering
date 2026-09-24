@@ -428,6 +428,50 @@ For healthcare prompts to be valuable, they must:
 |--------|---------|
 | `allied_health_sdoh_screening_response.md` | **NEW** — Urgency triage, warm handoff, protective documentation, closed-loop follow-up across food / housing / IPV / transportation / benefits |
 
+#### Diagnostic Interpretation — Lane 2 completion (New — 2026-09, coverage Wave 3)
+In `prompts/interpretation/`, alongside the 8 earlier `interp_*` files.
+
+| Prompt | Purpose |
+|--------|---------|
+| `interp_ct_head.md` | Intracranial compartment, mass effect, stroke signs; neurosurgery thresholds and anticoagulant reversal |
+| `interp_ct_chest.md` | Protocol-aware read: PE with RV strain, lung patterns, Fleischner nodule follow-up |
+| `interp_ct_abdomen_pelvis.md` | Surgical emergencies first, then organ-by-organ, then incidental-finding routing |
+| `interp_mri_brain.md` | Lesion character by DWI/enhancement/SWI; McDonald 2017 for MS |
+| `interp_mri_spine.md` | Emergencies first (MSCC, cauda equina, epidural abscess); discs only if concordant with exam |
+| `interp_echocardiogram_report.md` | HF phenotype by EF, diastolic grading, RV/PA pressure, discordant aortic-stenosis grading |
+| `interp_pft_pulmonary_function.md` | LLN/z-score interpretation, bronchodilator response, volumes, DLCO, flow-volume loop |
+| `interp_lipid_panel_in_context.md` | LDL validity, FH scoring, secondary causes (treatment plan → careplan_hyperlipidemia_ascvd) |
+| `interp_thyroid_function.md` | Pattern table, biotin and non-thyroidal-illness pitfalls, dosing |
+| `interp_iron_studies.md` | Thresholds in HF, CKD and inflammation; overload; bleeding-source search |
+| `interp_microbiology_culture_sensitivity.md` | Pathogen vs contaminant, ESBL/AmpC/CRE, site penetration, mandatory bundles |
+| `interp_csf.md` | Pattern table, traumatic tap vs SAH, meningitis treatment |
+| `interp_synovial_pleural_ascitic_fluid.md` | Joint cell counts and crystals, Light's criteria, SAAG and SBP |
+| `interp_pathology_report.md` | Diagnostic wording, imaging concordance, margins, nodes, stage, biomarkers, germline triggers |
+
+#### Specialty Assessments & Workflows — Lane 7 (New — 2026-09, coverage Wave 3)
+In `prompts/specialty/`, alongside the 8 older `medicine_*` files.
+
+| Prompt | Purpose |
+|--------|---------|
+| `specialty_derm_lesion_analysis.md` | ABCDE, ugly-duckling, dermoscopy checklists; disposition and biopsy technique |
+| `specialty_red_eye_workup.md` | Red-flag screen, anatomic localization, first-line treatment, ophthalmology urgency |
+| `specialty_acute_vision_loss.md` | Localization and can't-miss causes (CRAO, GCA, detachment, optic neuritis, apoplexy) |
+| `specialty_vertigo_hints_exam.md` | Exam selection and grading of HINTS+ and positional tests; common exam errors |
+| `specialty_pharyngitis_centor.md` | Danger screen, Centor/McIsaac or FeverPAIN, testing and allergy-matched antibiotics |
+| `specialty_thyroid_nodule_workup.md` | TSH first, TI-RADS/ATA pattern, Bethesda and molecular results, extent of surgery |
+| `specialty_adrenal_incidentaloma.md` | CT HU and washout, hormone screen with drug interference, management |
+| `specialty_hypercortisolism_workup.md` | Confirm endogenous Cushing, localize the source, treat and prevent complications |
+| `specialty_cytopenia_workup.md` | Verify the count, emergency screen (TTP, HIT, APL, febrile neutropenia, HLH), marrow decision |
+| `specialty_thrombophilia_workup.md` | Whether to test, assay timing, what each result changes (APS first) |
+| `specialty_pancreatitis_severity_management.md` | BISAP and revised Atlanta; fluids, feeding, ERCP and cholecystectomy timing |
+| `specialty_autoimmune_workup_ana.md` | ANA titer and pattern, reflex antibodies, 2019 EULAR/ACR SLE scoring |
+| `specialty_immunocompromised_fever.md` | Defect-specific plan: MASCC, empiric antibiotics within 60 minutes, escalation |
+| `specialty_hiv_initial_visit_art.md` | Baseline labs, ART timing and selection logic, OI prophylaxis |
+| `specialty_solitary_pulmonary_nodule_fleischner.md` | Fleischner 2017, risk models, PET/biopsy decision, screening crosswalk |
+| `specialty_ild_workup.md` | CT pattern, exposure/CTD search, MDD, antifibrotic vs immunosuppressive |
+| `specialty_dialysis_modality_decision.md` | KFRE, symptom-based start, transplant, conservative care vs PD vs HD, access |
+| `specialty_drug_allergy_delabeling.md` | PEN-FAST, direct oral challenge vs skin testing, side-chain logic, record update |
+
 #### Reference
 | Resource | Purpose |
 |----------|---------|

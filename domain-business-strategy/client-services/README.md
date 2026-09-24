@@ -32,7 +32,7 @@ which orchestrates them alongside existing resources rather than duplicating any
 
 | Step | Owned by |
 |---|---|
-| Discovery call | `../go-to-market/workflow_sales_discovery_call_preparation.md` |
+| Discovery call | `../../domain-sales-customer/sales/sales_discovery_call_preparation.md` |
 | Acceptance criteria | `../../domain-engineering-workflows/workflows/workflow_definition_of_done_builder.md` |
 | SOW and contract clauses | `../../domain-legal/contracts-transactional/` |
 | Rate conversation | `../../domain-negotiation/contexts/negotiation_freelance_rate_conversation.md` |

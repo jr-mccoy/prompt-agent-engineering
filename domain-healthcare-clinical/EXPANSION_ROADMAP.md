@@ -1,6 +1,6 @@
 # Healthcare Clinical Domain Expansion Roadmap (v2)
 
-**Status:** Active
+**Status:** Active — all 9 lanes complete as of 2026-09-24 (Lanes 2 and 7 finished in coverage Wave 3, [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md))
 **Replaces:** `_archive/EXPANSION_ROADMAP_v1_safety_framing.md` (archived 2026-05-08)
 **Purpose:** Build a deep, real-world clinical prompt library for **model testing and training**. Prompts target the actual reasoning, interpretation, and prescriptive output that healthcare professionals produce in daily workflow.
 
@@ -67,7 +67,7 @@ v2 inverts that: prompts now request the kind of output a senior attending would
 - `patho_pulmonary_physiology.md`
 - `patho_renal_physiology.md`
 
-### Lane 2 — Diagnostic Interpretation (22)
+### Lane 2 — Diagnostic Interpretation (22) — ✓ COMPLETE (last 14 shipped 2026-09-24, coverage Wave 3)
 - `interp_ecg_full_interpretation.md`
 - `interp_cxr_systematic_read.md`
 - `interp_ct_head.md`
@@ -176,7 +176,7 @@ v2 inverts that: prompts now request the kind of output a senior attending would
 - `acute_acs_management.md`
 - `acute_gi_bleed.md`
 
-### Lane 7 — Specialty Assessments & Workflows (18)
+### Lane 7 — Specialty Assessments & Workflows (18) — ✓ COMPLETE (shipped 2026-09-24, coverage Wave 3)
 - `specialty_derm_lesion_analysis.md`
 - `specialty_red_eye_workup.md`
 - `specialty_acute_vision_loss.md`

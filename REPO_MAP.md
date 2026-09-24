@@ -28,9 +28,9 @@ go" — use [`CLAUDE.md`](CLAUDE.md); this file answers "what exists and how big
 |---|---|---|
 | [`domain-software-engineering/`](domain-software-engineering/) | 611 | Analysis (security, performance, quality, architecture, evolution, **business**, feature-design), testing, devops, cloud, api, mobile, algorithms, bug-bounty, vibe-coding-rescue, improvement, prototyping |
 | [`domain-AI-ML/`](domain-AI-ML/) | 356 | The full ML lifecycle: framing, data, features, modelling, deep learning, evaluation, optimization, MLOps, monitoring, governance, GenAI/LLM, agentic systems, model security, verticals, leadership, learning |
-| [`domain-frontend-development/`](domain-frontend-development/) | 68 | Frameworks, styling, TypeScript, forms, animation, architecture, build tooling, a11y, performance, testing, design-direction |
-| [`domain-voice-conversational-ui/`](domain-voice-conversational-ui/) | 29 | Voice UI, chatbots, dialog architecture, NLU training, multimodal, analytics |
-| [`domain-game-development/`](domain-game-development/) | 25 | Design, architecture, engines, testing, multiplayer, performance, graphics, audio, level design, economy |
+| [`domain-frontend-development/`](domain-frontend-development/) | 76 | Frameworks, styling, TypeScript, forms, animation, architecture, build tooling, a11y, performance, testing, design-direction |
+| [`domain-voice-conversational-ui/`](domain-voice-conversational-ui/) | 34 | Voice UI, chatbots, dialog architecture, NLU training, multimodal, analytics |
+| [`domain-game-development/`](domain-game-development/) | 34 | Design, architecture, engines, testing, multiplayer, performance, graphics, audio, level design, economy |
 | [`domain-learning-coding/`](domain-learning-coding/) | 18 | Learning to code |
 
 ## Agentic resources & authoring
@@ -52,35 +52,44 @@ software-engineering, money to finance, contracts to legal).
 
 | Track | Directory | Files | Holds |
 |---|---|---|---|
-| Self | [`domain-personal-development/`](domain-personal-development/) | 177 | Identity, values, habits, goals, resilience, relationships, agency, life transitions, emotional fitness, career, stakeholder |
-| Individual execution | [`domain-productivity/`](domain-productivity/) | 121 | Daily planning, deep work, reviews, operating cadence, automation, bottlenecks, workplace, validation, home life, school |
+| Self | [`domain-personal-development/`](domain-personal-development/) | 188 | Identity, values, habits, goals, resilience, relationships, agency, life transitions, emotional fitness, career, job search, stakeholder |
+| Individual execution | [`domain-productivity/`](domain-productivity/) | 126 | Daily planning, deep work, reviews, operating cadence, automation, bottlenecks, workplace, validation, home life, school |
 | Team delivery | [`domain-engineering-workflows/`](domain-engineering-workflows/) | 59 | Workflows, definition-of-done, AI patterns, AI-native rollouts |
-| Product | [`domain-product-management/`](domain-product-management/) | 10 | PRDs, market sizing, competitor teardown, sprint planning (renamed from `domain-professional-communication`) |
-| Org / company | [`domain-business-strategy/`](domain-business-strategy/) | 68 | AI strategy, ambition & leverage, go-to-market, research, startup |
+| Product | [`domain-product-management/`](domain-product-management/) | 20 | PRDs, market sizing, competitor teardown, sprint planning (renamed from `domain-professional-communication`) |
+| Org / company | [`domain-business-strategy/`](domain-business-strategy/) | 95 | AI strategy, ambition & leverage, go-to-market, nonprofit, small business, research, startup |
+
+Subject homes that sit beside the tracks (ADR-0043): the object of the prompt
+decides, whoever holds it.
+
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-sales-customer/`](domain-sales-customer/) | 19 | Deal qualification, outbound plan, close plan, forecast commit, QBR, renewal risk, ticket triage, escalations |
+| [`domain-data-analytics/`](domain-data-analytics/) | 10 | Analysis plans, metric specs, KPI trees, SQL correctness, metric-movement investigation, cohorts, A/B readouts, dashboard critique |
+| [`domain-operations/`](domain-operations/) | 10 | Lean waste scan, A3, DMAIC, capacity, supplier scorecard, reorder policy, buyer-side RFP, non-software project plan |
 
 ## Thinking & decisions
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-negotiation/`](domain-negotiation/) | 48 | Preparation, at-the-table, channels, multi-party, after-the-deal, contexts, difficult conversations, craft |
-| [`domain-decision-making/`](domain-decision-making/) | 45 | Decision frameworks, scenario planning, tradeoff analysis, decision documentation |
+| [`domain-negotiation/`](domain-negotiation/) | 54 | Preparation, at-the-table, channels, multi-party, after-the-deal, contexts, difficult conversations, craft |
+| [`domain-decision-making/`](domain-decision-making/) | 40 | Decision frameworks, scenario planning, tradeoff analysis, decision documentation |
 | [`domain-reasoning-craft/`](domain-reasoning-craft/) | 42 | Reasoning moves, forecasting, systems thinking, epistemics |
-| [`domain-psy-ops/`](domain-psy-ops/) | 34 | Cognitive security: influence analysis and manipulation defense (analytic/defensive only) |
+| [`domain-psy-ops/`](domain-psy-ops/) | 43 | Cognitive security: influence analysis and manipulation defense (analytic/defensive only) |
 | [`domain-deep-analysis/`](domain-deep-analysis/) | 22 | Multi-phase deep-think systems for problems, decisions, plans, designs |
-| [`domain-ideation/`](domain-ideation/) | 13 | Divergent and convergent ideation |
-| [`domain-risk/`](domain-risk/) | 8 | Register, FMEA, heat map, tail risk, dependency chains, AAR |
+| [`domain-ideation/`](domain-ideation/) | 19 | Divergent and convergent ideation |
+| [`domain-risk/`](domain-risk/) | 25 | Register, FMEA, heat map, tail risk, dependency chains, AAR, security operations for non-engineers |
 | [`domain-policy/`](domain-policy/) | 5 | Policy options, framing, stakeholder maps, feasibility |
 
 ## Writing & communication
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-professional-writing/`](domain-professional-writing/) | 64 | Business writing, **content quality**, per-profession writing |
-| [`domain-presentations/`](domain-presentations/) | 49 | Board decks, visual planning |
-| [`domain-written-advocacy/`](domain-written-advocacy/) | 36 | Layperson self-advocacy letters |
-| [`domain-creative-writing/`](domain-creative-writing/) | 28 | Adult fiction, craft tools, genre, creative nonfiction, poetry, script, publishing |
+| [`domain-professional-writing/`](domain-professional-writing/) | 79 | Business writing, **content quality**, per-profession writing |
+| [`domain-presentations/`](domain-presentations/) | 46 | Board decks, visual planning |
+| [`domain-written-advocacy/`](domain-written-advocacy/) | 42 | Layperson self-advocacy letters |
+| [`domain-creative-writing/`](domain-creative-writing/) | 37 | Adult fiction, craft tools, genre, creative nonfiction, poetry, script, publishing |
 | [`domain-childrens-writing/`](domain-childrens-writing/) | 24 | Authoring for young readers |
-| [`domain-advertising/`](domain-advertising/) | 18 | Industry-specific advertising creative |
+| [`domain-advertising/`](domain-advertising/) | 23 | Industry-specific advertising creative |
 
 ## Education & research
 
@@ -89,19 +98,19 @@ software-engineering, money to finance, contracts to legal).
 | [`domain-education-teaching/`](domain-education-teaching/) | 317 | Three audience tracks: `instructor/`, `program/`, `learner/` |
 | [`domain-medical-education/`](domain-medical-education/) | 215 | Health-professions education: `educator-*` and `learner-*` tracks, plus `profession-specific/` |
 | [`domain-science/`](domain-science/) | 155 | The practice of science: methods, bench, computational, statistics, writing, peer review, grants, ethics, lab ops, engagement, disciplines |
-| [`domain-research-academic/`](domain-research-academic/) | 18 | Cross-field research methodology |
-| [`domain-learning/`](domain-learning/) | 6 | Self-directed skill acquisition |
+| [`domain-research-academic/`](domain-research-academic/) | 20 | Cross-field research methodology |
+| [`domain-learning/`](domain-learning/) | 11 | Self-directed skill acquisition, humanities self-study |
 
 ## Regulated & professional
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-healthcare-clinical/`](domain-healthcare-clinical/) | 344 | Clinical decision support, specialties, pharmacy, nursing, allied health |
-| [`domain-psychology/`](domain-psychology/) | 270 | Documentation, risk/crisis, modalities, client self-use, practice operations |
-| [`domain-legal/`](domain-legal/) | 175 | Practitioner legal work, family law, and two litigant-facing self-advocacy sections |
+| [`domain-healthcare-clinical/`](domain-healthcare-clinical/) | 376 | Clinical decision support, specialties, pharmacy, nursing, allied health |
+| [`domain-psychology/`](domain-psychology/) | 280 | Documentation, risk/crisis, modalities, client self-use, practice operations |
+| [`domain-legal/`](domain-legal/) | 227 | Practitioner legal work (incl. regulatory, privacy, ethics, bankruptcy, tax, immigration, criminal, appellate, real estate, trusts & estates), family law, and two litigant-facing self-advocacy sections |
 | [`domain-finance/`](domain-finance/) | 148 | Corporate finance, markets, valuation, tax, risk, crypto, options, quant |
-| [`domain-hr-management/`](domain-hr-management/) | 8 | Performance reviews, hiring |
-| [`domain-specialized-fields/`](domain-specialized-fields/) | 3 | Legal research planning and IP landscape (hub; finance and psychology were promoted out) |
+| [`domain-hr-management/`](domain-hr-management/) | 23 | Performance reviews, hiring |
+| [`domain-specialized-fields/`](domain-specialized-fields/) | 10 | Real-estate and trades practitioners: CMA, offer strategy, rental underwriting, inspection triage, bid estimates, change orders, bid/no-bid (hub; finance and psychology were promoted out) |
 
 ## Life & faith
 
@@ -110,7 +119,8 @@ software-engineering, money to finance, contracts to legal).
 | [`domain-biblical-studies/`](domain-biblical-studies/) | 142 | Exegesis, study methods, sermon, theology, learner, ministry, church staff, languages, apologetics |
 | [`domain-parenting/`](domain-parenting/) | 110 | Ages 4–8, neurodivergence, divorce/custody/co-parenting |
 | [`domain-discipleship/`](domain-discipleship/) | 88 | One-to-one formation and the programs that pair people |
-| [`domain-conversation-practice/`](domain-conversation-practice/) | 9 | Language conversation practice |
+| [`domain-conversation-practice/`](domain-conversation-practice/) | 15 | Role-play rehearsal: language sims (CEFR level, correction modes) and hard-conversation persona sims |
+| [`domain-health-wellness/`](domain-health-wellness/) | 10 | Healthy-adult training, nutrition and sleep; safety-gated, red-flag screen first |
 
 ## Visual
 

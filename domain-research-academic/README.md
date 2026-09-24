@@ -197,7 +197,36 @@ Research prompts operate in environments where:
 
 ## Existing Prompts in This Repository
 
-This domain currently provides the framework, templates, and field guide below. Individual research prompt files are not bundled here yet — apply the templates directly or consult [`field_guide.md`](field_guide.md) for technique-by-technique guidance. Related clinical-research support lives in [`domain-healthcare-clinical/`](../domain-healthcare-clinical/).
+Eighteen prompts, flat in this directory, plus the framework, templates and field guide below. Related clinical-research support lives in [`domain-healthcare-clinical/`](../domain-healthcare-clinical/).
+
+| Stage | Prompt | Purpose |
+|---|---|---|
+| Question and design | [`research_question_formulation.md`](research_question_formulation.md) | Turn a fuzzy interest into 3–5 answerable, scoped research questions |
+|  | [`research_hypothesis_generator.md`](research_hypothesis_generator.md) | Competing hypotheses for an observed pattern, with tests that distinguish them |
+|  | [`research_mixed_methods_design.md`](research_mixed_methods_design.md) | Convergent / explanatory / exploratory sequential design, sample relationship, integration points, joint display, discordance plan |
+|  | [`research_thesis_dissertation_structure.md`](research_thesis_dissertation_structure.md) | Thesis format, one-sentence argument spine, chapter claims and word budgets, RQ-to-chapter map, committee milestones |
+| Literature and evidence | [`research_literature_review_plan.md`](research_literature_review_plan.md) | Scope, search, screening, extraction and synthesis plan before reading |
+|  | [`research_search_strategy_designer.md`](research_search_strategy_designer.md) | Boolean strings, database selection, coverage trade-offs |
+|  | [`research_systematic_review_protocol.md`](research_systematic_review_protocol.md) | PRISMA-grade systematic review protocol |
+|  | [`research_meta_analysis_scoping.md`](research_meta_analysis_scoping.md) | Meta-analysis feasibility and analytic plan |
+|  | [`research_evidence_map.md`](research_evidence_map.md) | Map known evidence onto a claim / anti-claim grid |
+|  | [`research_field_landscape_map.md`](research_field_landscape_map.md) | Lineages, labs, methods, fault lines and emerging areas of a field |
+|  | [`research_secondary_source_synthesis.md`](research_secondary_source_synthesis.md) | Synthesize 5–20 sources while preserving disagreement |
+|  | [`research_source_triangulation.md`](research_source_triangulation.md) | Cross-check a claim across 3+ independent source types |
+|  | [`research_replication_audit.md`](research_replication_audit.md) | Assess how likely a published finding is to replicate |
+| Instruments and analysis | [`research_survey_instrument_designer.md`](research_survey_instrument_designer.md) | Constructs to items, scales, bias controls and pretest plan |
+|  | [`research_interview_guide_designer.md`](research_interview_guide_designer.md) | Semi-structured interview guide with probes and sensitive transitions |
+|  | [`research_qualitative_coding_scheme.md`](research_qualitative_coding_scheme.md) | Inductive + deductive codebook with reliability plan |
+| Writing and checking | [`research_research_memo_drafter.md`](research_research_memo_drafter.md) | Question / method / findings / interpretation / limits memo |
+|  | [`research_manuscript_fact_check_reconciler.md`](research_manuscript_fact_check_reconciler.md) | Reconcile a finished draft against its source set |
+
+**Routed elsewhere (do not duplicate here):**
+
+- Power and sample-size analysis → [`domain-science/methods-foundations/science_power_and_sample_size_calculator.md`](../domain-science/methods-foundations/science_power_and_sample_size_calculator.md) (assumption ledger, scenarios, sensitivity grid at fixed N, computation handed to software).
+- Data management and sharing plans → [`domain-science/computational/science_data_management_plan_drafter.md`](../domain-science/computational/science_data_management_plan_drafter.md) (funder-aware, generic DMP Common Standard fallback).
+- Whether to use qualitative, quantitative or mixed methods at all → [`domain-science/methods-foundations/science_qualitative_vs_quantitative_decision.md`](../domain-science/methods-foundations/science_qualitative_vs_quantitative_decision.md); `research_mixed_methods_design.md` takes over once mixing is decided.
+- A single thesis-committee meeting → [`domain-science/lab-operations-mentorship/science_thesis_committee_meeting_prep.md`](../domain-science/lab-operations-mentorship/science_thesis_committee_meeting_prep.md); `research_thesis_dissertation_structure.md` sets the milestones those meetings serve.
+- Grant sections → [`domain-science/grants-funding/`](../domain-science/grants-funding/).
 
 ---
 
@@ -767,7 +796,8 @@ For comprehensive prompt engineering techniques specifically tailored to science
 
 ---
 
-*Document Version: 1.1*
+*Document Version: 1.2*
 *Created: 2026-01-26*
 *Updated: 2026-01-28 - Added Science & Research Field Guide*
+*Updated: 2026-09-24 - Listed the domain's prompts; added thesis structure and mixed-methods design; routed power analysis and DMPs to domain-science*
 *Domain: Research & Academic*

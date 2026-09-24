@@ -1,6 +1,6 @@
 # Written Advocacy (Layperson-Facing Self-Advocacy Letters)
 
-Thirty-five prompts for a **person acting for themselves** who needs something from a company, agency, insurer, school, or landlord — and wants it in writing, dated, and on the record. Each prompt produces **your own first-person letter**, built only from facts you supply, designed to still make sense months later to a regulator, an attorney, or a judge.
+Forty-one prompts for a **person acting for themselves** who needs something from a company, agency, insurer, school, or landlord — and wants it in writing, dated, and on the record. Each prompt produces **your own first-person letter**, built only from facts you supply, designed to still make sense months later to a regulator, an attorney, or a judge.
 
 > ## Read This First — What These Prompts Are (and Are Not)
 >
@@ -38,7 +38,7 @@ Thirty-five prompts for a **person acting for themselves** who needs something f
 | `advocacy_response_analyzer.md` | They replied — what did they actually commit to, and what did they dodge? |
 | `advocacy_followup_and_deadline_tracker.md` | Chase what is outstanding without weakening the record. |
 
-### `accounts-and-billing/` (5)
+### `accounts-and-billing/` (6)
 | File | Use |
 |---|---|
 | `advocacy_subscription_cancellation_request.md` | Cancel in writing, with an effective date and a confirmation demand. |
@@ -46,6 +46,7 @@ Thirty-five prompts for a **person acting for themselves** who needs something f
 | `advocacy_recurring_charge_dispute.md` | Charged after cancelling, a trial converted, a price changed. |
 | `advocacy_utility_telecom_service_dispute.md` | Billing errors, estimated readings, unresolved outages. |
 | `advocacy_price_increase_retention_request.md` | Ask for a better rate after an increase, honestly. |
+| `advocacy_travel_disruption_refund_request.md` | Cancelled, delayed, or changed trips — fare refund, expenses, and any compensation question kept as three separate asks. |
 
 ### `privacy-and-data/` (5)
 | File | Use |
@@ -64,7 +65,7 @@ Thirty-five prompts for a **person acting for themselves** who needs something f
 | `advocacy_service_nonperformance_demand.md` | Contractor or service work incomplete, defective, or abandoned. |
 | `advocacy_safety_defect_report.md` | A dangerous product — evidence preservation before any refund. |
 
-### `financial-hardship/` (6)
+### `financial-hardship/` (7)
 | File | Use |
 |---|---|
 | `advocacy_hardship_assistance_request.md` | Forbearance, deferment, or a pause when difficulty is temporary. |
@@ -73,16 +74,19 @@ Thirty-five prompts for a **person acting for themselves** who needs something f
 | `advocacy_goodwill_adjustment_request.md` | Ask about an **accurate** late mark already reported. |
 | `advocacy_interest_rate_reduction_request.md` | Ask a lender to lower your rate. |
 | `advocacy_credit_report_dispute.md` | Challenge an **inaccurate** entry, to bureau and furnisher both. |
+| `advocacy_student_loan_servicer_dispute.md` | Written notice of error to a loan servicer — your records beside theirs, one correction per row. |
 
-### `insurance-and-medical/` (4)
+### `insurance-and-medical/` (6)
 | File | Use |
 |---|---|
 | `advocacy_insurance_claim_denial_appeal.md` | Internal appeal, built against the insurer's stated reason and code. |
 | `advocacy_external_review_request.md` | Independent review once internal appeals are exhausted. |
 | `advocacy_medical_bill_dispute.md` | Get the itemized bill first, then reconcile against the EOB. |
 | `advocacy_financial_assistance_charity_care_request.md` | Ask **before** agreeing to pay or to instalments. |
+| `advocacy_prior_authorization_status_request.md` | A pending pre-approval: status and criteria from the insurer, submission and expedited review from the clinician's office. **Before** a denial. |
+| `advocacy_medical_records_request.md` | Copies of your own health records, scoped and costed; correction as a separate letter. |
 
-### `institutions-and-records/` (5)
+### `institutions-and-records/` (7)
 | File | Use |
 |---|---|
 | `advocacy_public_records_request.md` | Records from a government body, scoped so it can actually be searched. |
@@ -90,6 +94,8 @@ Thirty-five prompts for a **person acting for themselves** who needs something f
 | `advocacy_regulator_complaint_drafter.md` | Complaint to an external body you have identified and verified. |
 | `advocacy_workplace_written_request.md` | Accommodation, leave, or a policy exception — non-clinical. |
 | `advocacy_school_written_request.md` | Assessment, support, records, or a review from a school or college. |
+| `advocacy_tax_penalty_relief_request.md` | Ask a tax authority to remove or reduce a penalty, anchored to **its own** published relief guidance. |
+| `advocacy_hoa_written_request.md` | Violation or fine response, repair request, records, or architectural approval — quoted against the association's own documents. |
 
 ---
 
@@ -108,5 +114,8 @@ Thirty-five prompts for a **person acting for themselves** who needs something f
 | An attorney-side demand letter | `domain-legal/client-intake-communications/legal_demand_letter_drafter.md` |
 | Preparing for a school meeting rather than sending a letter | `domain-parenting/parenting_school_accommodation_conversation_prep.md` |
 | Negotiation craft in written channels | `domain-negotiation/channels/negotiation_written_async_message.md` |
+| Negotiating the *value* of an accepted insurance claim, or reducing a correct medical bill | `domain-negotiation/contexts/negotiation_insurance_claim_settlement.md`, `domain-negotiation/contexts/negotiation_medical_bill_reduction.md` |
+| The clinician's own prior-authorization or medical-necessity letter | `domain-healthcare-clinical/prompts/workflow/medicine_prior_authorization_letter.md` |
+| A contractor or home-improvement dispute | `products-and-warranty/advocacy_service_nonperformance_demand.md` (already covers it — no separate prompt) |
 
 **Deliberately not duplicated.** Refunds and chargebacks, debt validation, security deposits, HR complaints, DMCA notices, and fraud-scoped credit disputes already exist in `domain-legal/personal-self-advocacy/`. Prompts here cross-link to them rather than re-covering them — `advocacy_recurring_charge_dispute.md` handles the cancellation-not-honoured pattern and hands off for the chargeback itself; `advocacy_credit_report_dispute.md` covers non-fraud inaccuracy only and routes fraud cases onward.

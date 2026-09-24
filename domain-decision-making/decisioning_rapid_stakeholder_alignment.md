@@ -20,9 +20,9 @@ tags:
   - communication
 updated: "2026-02-26"
 related_prompts:
-  - decision-making/decisioning_crisis_severity_triage.md
+  - domain-risk/risk_crisis_severity_triage.md
   - decision-making/decisioning_escalation_decision_tree.md
-  - decision-making/decisioning_crisis_communication_playbook.md
+  - domain-risk/risk_crisis_communication_playbook.md
   - decision-making/decisioning_time_boxed_decision_protocol.md
 ---
 
@@ -313,7 +313,7 @@ Within 1 hour of the meeting:
 
 ## Related Prompts
 
-- [decisioning_crisis_severity_triage.md](decisioning_crisis_severity_triage.md) - Assess severity before seeking alignment
+- [../domain-risk/risk_crisis_severity_triage.md](../domain-risk/risk_crisis_severity_triage.md) - Assess severity before seeking alignment
 - [decisioning_escalation_decision_tree.md](decisioning_escalation_decision_tree.md) - Determining who needs to be involved
-- [decisioning_crisis_communication_playbook.md](decisioning_crisis_communication_playbook.md) - Communicating the aligned decision
+- [../domain-risk/risk_crisis_communication_playbook.md](../domain-risk/risk_crisis_communication_playbook.md) - Communicating the aligned decision
 - [decisioning_time_boxed_decision_protocol.md](decisioning_time_boxed_decision_protocol.md) - Making the decision within time constraints

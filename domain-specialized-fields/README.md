@@ -1,7 +1,55 @@
-# Specialized Professional Fields: Comprehensive Guide
+# Specialized Professional Fields: Real Estate, Trades, and Licensed-Field Guidance
 
 > Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
-> This domain covers professional fields with specialized requirements: legal, finance, trades, real estate, marketing/sales, and other professional domains.
+
+This domain holds **seven decision prompts for working real-estate and trades
+professionals** — and for serious individual buyers and small investors — plus the
+cross-field guidance, disclaimers and templates below for any field with licensing,
+liability or jurisdiction constraints.
+
+The prompts sit on the **commercial, non-legal side** of the work: what a house is
+worth, what an offer exposes a buyer to, whether a rental pays, what an inspection
+report means, whether to bid, what the bid is, and how to price a change. They do
+not draft contracts, give title opinions, or make code, structural, legal, tax or
+licensing determinations; those are routed to the licensed professional and, for
+legal drafting, to [`domain-legal/`](../domain-legal/).
+
+> **Moved (coverage Wave 2):** the domain's two earlier prompts now live in their
+> subject home — `ip/patent_landscape_scan.md` →
+> [`domain-legal/ip/legal_patent_landscape_scan.md`](../domain-legal/ip/legal_patent_landscape_scan.md);
+> `legal/legal_research_plan.md` →
+> [`domain-legal/research/legal_research_plan.md`](../domain-legal/research/legal_research_plan.md).
+> Field-specific *writing* prompts (24 `domain_writing_*.md` files) stay in
+> [`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/).
+
+## The prompts
+
+### [`real-estate/`](real-estate/README.md) (4) — prefix `realestate_`
+| File | Use |
+|---|---|
+| [`realestate_comparative_market_analysis.md`](real-estate/realestate_comparative_market_analysis.md) | Comp screen, adjustment grid with net/gross limits, weighted value range — from sales the user supplies |
+| [`realestate_buyer_offer_strategy.md`](real-estate/realestate_buyer_offer_strategy.md) | Offer packages priced in worst-case cash: escalation cap, appraisal gap, contingencies, reserve floor |
+| [`realestate_rental_property_underwriting.md`](real-estate/realestate_rental_property_underwriting.md) | NOI, cap rate, DSCR, cash-on-cash, reserves and a stress test with a traffic-light verdict |
+| [`realestate_inspection_report_triage.md`](real-estate/realestate_inspection_report_triage.md) | Safety / material defect / maintenance / not inspected, routed to licensed specialists inside the contingency window |
+
+### [`trades/`](trades/README.md) (3) — prefix `trades_`
+| File | Use |
+|---|---|
+| [`trades_bid_no_bid_decision.md`](trades/trades_bid_no_bid_decision.md) | Gates (license, capacity, cash on real days-to-pay), anchored scores, expected value, kill signal |
+| [`trades_bid_estimate_with_contingency.md`](trades/trades_bid_estimate_with_contingency.md) | Takeoff, allowances, unknowns register, contingency sized to named unknowns |
+| [`trades_change_order_pricing_notice.md`](trades/trades_change_order_pricing_notice.md) | Price a mid-job change under the contract's terms and ask the owner for a dated decision |
+
+### Quick routing
+
+| You're saying | Use |
+|---|---|
+| "What's this house worth?" / "where should we list?" | `real-estate/realestate_comparative_market_analysis.md` |
+| "Multiple offers — should we escalate or waive the appraisal?" | `real-estate/realestate_buyer_offer_strategy.md` |
+| "Does this duplex actually cash-flow?" | `real-estate/realestate_rental_property_underwriting.md` |
+| "The inspection report is 40 pages and the clock is running" | `real-estate/realestate_inspection_report_triage.md` |
+| "Should we even bid this job?" | `trades/trades_bid_no_bid_decision.md` |
+| "What's my number, and how much contingency?" | `trades/trades_bid_estimate_with_contingency.md` |
+| "We opened the floor and found rot" / "the owner wants one more thing" | `trades/trades_change_order_pricing_notice.md` |
 
 ---
 
@@ -13,30 +61,29 @@ Route to this domain when the request mentions:
 
 | Category | Trigger Phrases |
 |----------|----------------|
-| **Legal** | "contract", "legal document", "agreement", "liability", "compliance", "attorney" |
-| **Finance** | "investment", "financial analysis", "portfolio", "valuation", "accounting" |
-| **Trades/Construction** | "estimate", "bid", "construction", "contractor", "project scope" |
-| **Real Estate** | "property", "listing", "offer", "closing", "real estate" |
-| **Marketing/Sales** | "campaign", "lead generation", "sales process", "conversion", "marketing plan" |
-| **Other Professional** | [See field-specific guides below] |
+| **Real Estate (non-legal)** | "comps", "CMA", "list price", "offer", "escalation clause", "appraisal gap", "cap rate", "rental property", "inspection report" |
+| **Trades/Construction** | "bid", "estimate", "takeoff", "contingency", "allowance", "change order", "should we bid" |
+| **Legal** | Route to [`domain-legal/`](../domain-legal/) — contracts, purchase agreements, title, zoning, leases |
+| **Finance** | Route to [`domain-finance/`](../domain-finance/) — its own top-level domain |
+| **Marketing/Sales** | Route out: deals, pipeline, customer accounts and support → [`domain-sales-customer/`](../domain-sales-customer/); marketing strategy → [`domain-business-strategy/go-to-market/`](../domain-business-strategy/go-to-market/); copy and campaigns → `domain-agentic-resources/skills/marketing/` |
+| **Other Professional** | Field-specific writing → [`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/); guidance below |
 
 ### User Personas
 
 | Persona | Typical Needs |
 |---------|--------------|
-| **Attorneys** | Contract drafting, legal research summaries, client communication |
-| **Financial Advisors** | Investment analysis, client reports, regulatory compliance |
-| **Contractors** | Project estimates, scope documents, client proposals |
-| **Real Estate Agents** | Listings, market analysis, client communication |
-| **Accountants/CPAs** | Financial reports, client communications, compliance documentation |
-| **Marketing Professionals** | Campaign plans, content strategies, analytics reports |
+| **Real Estate Agents** | CMAs, offer strategy for buyer clients, inspection-response planning |
+| **Buyers and Small Investors** | Offer packages they can afford to have go wrong; rental underwriting |
+| **Contractors and Trade Subs** | Bid/no-bid, estimates with defensible contingency, change orders |
+| **Other licensed professionals** | The disclaimers, document framework and templates below |
 
 ### Out of Scope
 
-- **Actual legal/financial advice** - This domain helps with DOCUMENTS, not advice
+- **Actual legal, tax, appraisal or licensing determinations** — these prompts
+  structure decisions and route the licensed questions
+- **Contract drafting, title opinions, zoning analysis** → `domain-legal/`
 - **Clinical healthcare** → domain-healthcare-clinical
 - **Academic research** → domain-research-academic
-- **General business communication** → domain-product-management
 
 ---
 
@@ -159,12 +206,12 @@ licensed CPA or tax professional for advice specific to your situation."
 |-------|-------------------|----------------|
 | **Legal** | Jurisdiction matters, attorney review required, precise terminology | `domain_writing_attorney_discovery.md` |
 | **Finance** | Not investment advice, individual circumstances vary, disclosures required | `domain_writing_financial_advisor_report.md`, `domain_writing_cpa_tax_strategy.md` |
-| **Trades/Construction** | Site conditions can change estimates, permits may be required, contingency buffers | `domain_writing_contractor_remodel.md`, `domain_writing_hvac_estimate.md`, `domain_writing_electrician_panel.md` |
-| **Real Estate** | Market data changes rapidly, state regulations vary, due diligence required | `domain_writing_realtor_listing.md` |
+| **Trades/Construction** | Site conditions can change estimates, permits may be required, contingency sized to named unknowns | This domain: `trades/`; writing: `domain_writing_contractor_remodel.md`, `domain_writing_hvac_estimate.md`, `domain_writing_electrician_panel.md` |
+| **Real Estate** | Market data changes rapidly, state regulations vary, due diligence required | This domain: `real-estate/`; writing: `domain_writing_realtor_listing.md` |
 | **Marketing/Sales** | Audience targeting, conversion metrics, campaign tracking | `domain_writing_marketing_campaign.md`, `domain_writing_sales_strategy.md` |
 | **Healthcare-Adjacent** | Not medical advice, professional oversight required | `domain_writing_veterinarian_surgery.md`, `domain_writing_dentist_treatment_plan.md` |
 
-> **Note:** All prompts are located in `domain-professional-writing/domain-specific/`
+> **Note:** `domain_writing_*` prompts are in `domain-professional-writing/domain-specific/`; `real-estate/` and `trades/` are in this domain.
 
 ---
 
@@ -179,22 +226,14 @@ Comprehensive domain-specific prompt engineering guides:
 
 ---
 
-## Existing Prompts in This Repository
+## Prompts in This Repository
 
-### All Specialized Field Prompts
-
-Located in `domain-professional-writing/domain-specific/`:
-
-| Prompt | Field | Purpose |
-|--------|-------|---------|
-| `professional_cpas.md` | Accounting | CPA-specific workflows |
-| `professional_veterinarians.md` | Veterinary | Vet clinic communication |
-| `professional_attorneys.md` | Legal | Attorney workflows |
-| `professional_contractors.md` | Trades | Contractor documentation |
-| `professional_real_estate_agents.md` | Real Estate | Agent workflows |
-| `professional_financial_advisors.md` | Finance | Advisor communication |
-| `professional_marketing_agencies.md` | Marketing | Agency workflows |
-| ... | | [26 total professional field prompts] |
+The seven prompts are listed under [The prompts](#the-prompts) above. The field
+writing prompts (24) live in
+[`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/)
+as `domain_writing_{field}.md` — e.g. `domain_writing_contractor_remodel.md`,
+`domain_writing_hvac_estimate.md`, `domain_writing_realtor_listing.md` — and are
+the document-writing step after the decisions made here.
 
 ---
 
@@ -683,7 +722,8 @@ Client Signature: ___________________________ Date: ___________
 ║  • Due diligence always required                                          ║
 ║                                                                           ║
 ║  PROMPTS AVAILABLE:                                                       ║
-║  domain-professional-writing/domain-specific/ (26 professional guides)   ║
+║  real-estate/ (4) · trades/ (3) in this domain                            ║
+║  domain-professional-writing/domain-specific/ (24 professional guides)   ║
 ║                                                                           ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 ```
@@ -695,12 +735,14 @@ Client Signature: ___________________________ Date: ___________
 | Resource | Purpose |
 |----------|---------|
 | [NON_CODING_QUICK_START.md](../NON_CODING_QUICK_START.md) | Universal non-coding principles |
-| [domain-professional-writing/domain-specific/](../domain-professional-writing/domain-specific/) | 26 professional field prompts |
+| [domain-professional-writing/domain-specific/](../domain-professional-writing/domain-specific/) | 24 professional field prompts |
 | [domain-product-management/](../domain-product-management/) | General business documents |
 | [PROMPT_QUALITY_STANDARDS.md](../PROMPT_QUALITY_STANDARDS.md) | Quality tier definitions |
+| [domain-legal/](../domain-legal/) | Contracts, real-estate legal drafting, research |
+| [client-services-studio/](../client-services-studio/README.md) | Engagement pipeline for trades and services, with trade verticals |
 
 ---
 
-*Document Version: 1.0*
-*Created: 2026-01-26*
+*Document Version: 2.0*
+*Created: 2026-01-26 · Rebuilt around real-estate and trades prompts: 2026-09-24*
 *Domain: Specialized Professional Fields*
