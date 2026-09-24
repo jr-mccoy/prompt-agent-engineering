@@ -10,6 +10,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Coverage Wave 5: 26 routing regression cases for the scopes added in Waves 1–4** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **What was added:** case-121 to case-146 in `pae-engine/tests/data/search_routing_regression.v1.json`: 20 task, 3 route, 1 ambiguous, 1 no-route and 1 fuzzy case, under a new label source, `coverage_wave_judgment`. The set now holds 146 cases. The label source says plainly that the same process wrote the labels and the target prompts.
+  - **Leakage (ADR-0037):**
+    - No query contains a target's full title tokens or id-tail tokens.
+    - Median query–target overlap is 0.22.
+    - Highest Jaccard is 0.33 against a routing-reference phrase and 0.14 against an earlier case.
+    - One draft query was reworded before its first search, because it echoed its target's description.
+  - **First measurement failed three floors:** R@1 68.6%, task R@1 60.0% and scope@1 79.1%. Only 8 of the 20 new task cases hit rank 1, because the new prompts are tagged in practitioner vocabulary and users describe their situation instead.
+  - **Metadata change:**
+    - Plain-language tags were added to 13 targets. The 8 that moved their case to rank 1 were kept: deal qualification, ticket triage, renewal risk, inventory reorder, beginner training, payment fraud, after-death admin and A/B readout.
+    - The other 5 were reverted. Keeping them would have let flat BM25 overtake the shipped BM25F on R@1 (77.9% vs 76.7%) and tripped the ranker guard. That result is recorded in the roadmap, not hidden.
+    - No query was reworded after measurement, no case was dropped, and no threshold was refitted.
+  - **Result:**
+    - R@1 76.7%, R@5 84.9%, scope@1 83.6%, kind@1 97.7%.
+    - BM25F still leads flat BM25 on every metric.
+    - 15 of 20 new task cases hit rank 1.
+    - None of the original 120 cases changes its top hit.
+    - Five task cases (124, 131, 132, 138, 140) remain honest failures.
 - **Coverage Wave 4: 59 prompts adding depth to 11 thin domains** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
   - **Where they went:**
     - HR: career ladder, promotion case, engagement survey, reduction in force, succession, pay equity audit.

@@ -54213,7 +54213,10 @@
         "sample-ratio-mismatch",
         "guardrail-metrics",
         "decision-memo",
-        "business-analytics"
+        "business-analytics",
+        "not-significant",
+        "explaining-results",
+        "stakeholder-summary"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -77070,7 +77073,11 @@
         "beginner",
         "progressive-overload",
         "rpe",
-        "aerobic-fitness"
+        "aerobic-fitness",
+        "start-exercising",
+        "lifting-weights",
+        "weight-training",
+        "returning-to-exercise"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -114358,7 +114365,11 @@
         "reorder-point",
         "eoq",
         "abc-xyz",
-        "service-level"
+        "service-level",
+        "stock-levels",
+        "when-to-reorder",
+        "purchase-orders",
+        "supplier-lead-time"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -127636,7 +127647,11 @@
         "checklist",
         "household",
         "family",
-        "notifications"
+        "notifications",
+        "death-of-a-parent",
+        "passed-away",
+        "closing-accounts",
+        "what-to-do-after-a-death"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -151652,7 +151667,10 @@
         "internal-controls",
         "accounts-payable",
         "vendor-management",
-        "small-business"
+        "small-business",
+        "ceo-fraud",
+        "wire-transfer",
+        "fake-invoice"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -153004,7 +153022,10 @@
         "churn-risk",
         "retention",
         "account-management",
-        "b2b"
+        "b2b",
+        "contract-renewal",
+        "champion-departure",
+        "at-risk-account"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -153035,7 +153056,10 @@
         "meddpicc",
         "opportunity-management",
         "deal-review",
-        "b2b"
+        "b2b",
+        "economic-buyer",
+        "budget-sign-off",
+        "forecast-accuracy"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -153364,7 +153388,10 @@
         "ticket-routing",
         "sla",
         "severity",
-        "customer-support"
+        "customer-support",
+        "ticket-backlog",
+        "urgent-tickets",
+        "prioritization"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",

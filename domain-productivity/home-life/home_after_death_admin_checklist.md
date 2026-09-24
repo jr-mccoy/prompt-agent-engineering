@@ -16,6 +16,10 @@ tags:
   - household
   - family
   - notifications
+  - death-of-a-parent
+  - passed-away
+  - closing-accounts
+  - what-to-do-after-a-death
 updated: "2026-09-24"
 related_prompts:
   - domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md

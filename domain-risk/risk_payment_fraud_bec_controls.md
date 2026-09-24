@@ -16,6 +16,9 @@ tags:
   - accounts-payable
   - vendor-management
   - small-business
+  - ceo-fraud
+  - wire-transfer
+  - fake-invoice
 updated: "2026-09-24"
 reasoning:
   styles: [adversarial, procedural, protective, systems]

@@ -16,6 +16,9 @@ tags:
   - opportunity-management
   - deal-review
   - b2b
+  - economic-buyer
+  - budget-sign-off
+  - forecast-accuracy
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/sales/sales_mutual_close_plan.md

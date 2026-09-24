@@ -245,12 +245,13 @@ otherwise                              → matched
 `status`.
 
 > The thresholds 0.34 and 0.25 are **provisional heuristics fitted on the
-> project's own 120-case regression set**. They are not calibrated confidence
+> project's own regression set**, on its original 120 cases. The 26 cases added
+> in coverage Wave 5 did not refit them. They are not calibrated confidence
 > thresholds and should be expected to move once an independently authored
 > evaluation exists. An absolute score threshold was tested and measured inert.
 
 `matched` is deliberately rare: on the regression set the Router returns
-`ambiguous` for 64 cases and `matched` for 40. Returning ranked alternatives
+`ambiguous` for 69 of its 146 cases and `matched` for 50. Returning ranked alternatives
 beats manufacturing a single confident answer.
 
 ---

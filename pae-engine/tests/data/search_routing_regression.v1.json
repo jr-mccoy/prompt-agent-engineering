@@ -6,13 +6,16 @@
     "claude_md_routing_table": "Derived from the hand-written \"user phrase\" -> resource mappings that already existed in CLAUDE.md before Phase 4. Those mappings predate the search implementation and were not produced by any algorithm under test. Query text was paraphrased into natural user language so a case does not simply echo its target's title.",
     "registry_record_sample": "Hand-authored during Phase 4 against a sampled registry record, because CLAUDE.md's tables target prompts almost exclusively and supply no labels for skills, agents, commands, personas or techniques.",
     "registry_relationship": "Derived from an explicit copy_of relationship in the registry.",
-    "phase4_regression_judgment": "Hand-authored Phase 4 regression judgment. Acceptable scopes and kinds are deliberately permissive where the corpus genuinely supports several answers."
+    "phase4_regression_judgment": "Hand-authored Phase 4 regression judgment. Acceptable scopes and kinds are deliberately permissive where the corpus genuinely supports several answers.",
+    "coverage_wave_judgment": "Hand-authored in coverage Wave 5 (meta/COVERAGE_ROADMAP.md) for the scopes and subfolders added in coverage Waves 1-4. The same process that wrote the target prompts wrote these labels, so they are not independent of the corpus. Every query was written before any search was run against it, was not reworded afterwards to make a case pass, and was checked against the ADR-0037 echo gates: no query contains all of a target's title tokens or id-tail tokens, and none is a near-duplicate of a ROUTING_REFERENCE phrase or an earlier case."
   },
   "notes": [
     "acceptable_* lists are permissive: any listed value counts as correct.",
     "An empty acceptable_* list means that dimension is not scored for the case.",
     "Scopes are expressed in the Phase 4 scope vocabulary, in which agentic-resources is split one level deeper (agentic-resources/<category>).",
-    "expected_status applies to routing only."
+    "expected_status applies to routing only.",
+    "case-121 onward were added in coverage Wave 5. The router thresholds were fitted on case-001..case-120 and were not refitted when these were added.",
+    "After case-121..case-146 were first measured, plain-language tags were added to 13 of their target prompts, and only the 8 additions that moved a case to rank 1 (or a route case to the right scope) were kept. These cases are therefore tuning cases like the rest of the set. See meta/COVERAGE_ROADMAP.md, Wave 5."
   ],
   "cases": [
     {
@@ -1655,6 +1658,368 @@
       "acceptable_kinds": [],
       "expected_status": null,
       "label_source": "registry_relationship (copy_of edge)"
+    },
+    {
+      "id": "case-121",
+      "class": "task",
+      "query": "our rep swears this deal closes this quarter but the buyer has never named who signs off on budget",
+      "acceptable_resource_ids": [
+        "prompt:sales-customer/sales/sales-deal-qualification-scorecard"
+      ],
+      "acceptable_scopes": [
+        "sales-customer"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-122",
+      "class": "task",
+      "query": "three hundred open tickets and every one is marked urgent, which ones actually matter",
+      "acceptable_resource_ids": [
+        "prompt:sales-customer/support/support-ticket-triage-and-routing"
+      ],
+      "acceptable_scopes": [
+        "sales-customer"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-123",
+      "class": "task",
+      "query": "a big account's contract ends in three months and their champion just left the company",
+      "acceptable_resource_ids": [
+        "prompt:sales-customer/customer-success/cs-renewal-risk-and-save-plan"
+      ],
+      "acceptable_scopes": [
+        "sales-customer"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-124",
+      "class": "task",
+      "query": "weekly active users fell twelve percent overnight, where do I start looking",
+      "acceptable_resource_ids": [
+        "prompt:data-analytics/analysis-and-sql/analytics-metric-movement-investigation"
+      ],
+      "acceptable_scopes": [
+        "data-analytics"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-125",
+      "class": "task",
+      "query": "two teams report different numbers for monthly churn and we need one agreed definition",
+      "acceptable_resource_ids": [
+        "prompt:data-analytics/framing-and-metrics/analytics-metric-definition-spec"
+      ],
+      "acceptable_scopes": [
+        "data-analytics"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-126",
+      "class": "task",
+      "query": "revenue doubles after I join orders to line items in my query",
+      "acceptable_resource_ids": [
+        "prompt:data-analytics/analysis-and-sql/analytics-sql-query-correctness-review"
+      ],
+      "acceptable_scopes": [
+        "data-analytics"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-127",
+      "class": "task",
+      "query": "the packing line keeps shipping wrong items and I need the real cause written up on one page",
+      "acceptable_resource_ids": [
+        "prompt:operations/process-improvement/ops-root-cause-a3-report"
+      ],
+      "acceptable_scopes": [
+        "operations"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-128",
+      "class": "task",
+      "query": "how much stock should we keep on hand before placing the next supplier order",
+      "acceptable_resource_ids": [
+        "prompt:operations/supply-chain-procurement/ops-inventory-reorder-policy"
+      ],
+      "acceptable_scopes": [
+        "operations"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-129",
+      "class": "task",
+      "query": "I'm 45, haven't exercised in years and want to start lifting weights twice a week",
+      "acceptable_resource_ids": [
+        "prompt:health-wellness/fitness/fitness-beginner-training-plan",
+        "prompt:health-wellness/foundations/wellness-readiness-and-red-flag-screen"
+      ],
+      "acceptable_scopes": [
+        "health-wellness"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-130",
+      "class": "task",
+      "query": "rewrite the bullets on my CV so they prove impact for a product analyst opening",
+      "acceptable_resource_ids": [
+        "prompt:personal-development/job-search/jobsearch-resume-evidence-rewriter"
+      ],
+      "acceptable_scopes": [
+        "personal-development"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-131",
+      "class": "task",
+      "query": "we're a small food bank applying to a family foundation for the first time",
+      "acceptable_resource_ids": [
+        "prompt:business-strategy/nonprofit/nonprofit-foundation-grant-proposal"
+      ],
+      "acceptable_scopes": [
+        "business-strategy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-132",
+      "class": "task",
+      "query": "I own a bakery and want to charge more without losing my regulars",
+      "acceptable_resource_ids": [
+        "prompt:business-strategy/small-business/smallbiz-price-increase-plan"
+      ],
+      "acceptable_scopes": [
+        "business-strategy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-133",
+      "class": "task",
+      "query": "should our crew bid on this school renovation job or pass on it",
+      "acceptable_resource_ids": [
+        "prompt:specialized-fields/trades/trades-bid-no-bid-decision"
+      ],
+      "acceptable_scopes": [
+        "specialized-fields"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-134",
+      "class": "task",
+      "query": "plan a moderated session with five users on our new checkout flow",
+      "acceptable_resource_ids": [
+        "prompt:frontend-development/ux-research/frontend-ux-usability-test-plan",
+        "prompt:frontend-development/ux-research/frontend-ux-moderated-session-script"
+      ],
+      "acceptable_scopes": [
+        "frontend-development"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-135",
+      "class": "task",
+      "query": "help me write the chorus for a song about leaving my hometown",
+      "acceptable_resource_ids": [
+        "prompt:creative-writing/songwriting/writing-song-lyric-craft-workshop"
+      ],
+      "acceptable_scopes": [
+        "creative-writing"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-136",
+      "class": "task",
+      "query": "someone in accounts payable got an email from our CEO asking for an urgent wire transfer",
+      "acceptable_resource_ids": [
+        "prompt:risk/risk-payment-fraud-bec-controls",
+        "prompt:risk/risk-security-incident-response-playbook"
+      ],
+      "acceptable_scopes": [
+        "risk"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-137",
+      "class": "task",
+      "query": "my dad passed away last month and I don't know which accounts to close first",
+      "acceptable_resource_ids": [
+        "prompt:productivity/home-life/home-after-death-admin-checklist"
+      ],
+      "acceptable_scopes": [
+        "productivity"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-138",
+      "class": "task",
+      "query": "walk my client through the deal the prosecutor just put on the table",
+      "acceptable_resource_ids": [
+        "prompt:legal/criminal/legal-plea-offer-analysis"
+      ],
+      "acceptable_scopes": [
+        "legal"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-139",
+      "class": "task",
+      "query": "the airline cancelled my flight and only offered me a voucher",
+      "acceptable_resource_ids": [
+        "prompt:written-advocacy/accounts-and-billing/advocacy-travel-disruption-refund-request"
+      ],
+      "acceptable_scopes": [
+        "written-advocacy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-140",
+      "class": "task",
+      "query": "before engineering starts, draft the launch announcement and the questions buyers will ask about it",
+      "acceptable_resource_ids": [
+        "prompt:product-management/prompts/product-prfaq-working-backwards"
+      ],
+      "acceptable_scopes": [
+        "product-management"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-141",
+      "class": "route",
+      "query": "our purchasing team needs to compare three freight carriers before signing",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "operations",
+        "business-strategy"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-142",
+      "class": "route",
+      "query": "training for a spring half marathon and need a weekly plan",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "health-wellness"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-143",
+      "class": "route",
+      "query": "how do I explain an A/B result to my boss when the lift is not significant",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "data-analytics",
+        "product-management"
+      ],
+      "acceptable_kinds": [
+        "prompt"
+      ],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-144",
+      "class": "ambig",
+      "query": "sleep better",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "health-wellness",
+        "psychology"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": "ambiguous",
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-145",
+      "class": "norote",
+      "query": "what time does the pharmacy on main street close tonight",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [],
+      "acceptable_kinds": [],
+      "expected_status": "no_route",
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-146",
+      "class": "fuzzy",
+      "query": "MEDDPICC scorcard for a stalled enterprise deal",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "sales-customer"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
     }
   ]
 }

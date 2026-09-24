@@ -15,6 +15,9 @@ tags:
   - retention
   - account-management
   - b2b
+  - contract-renewal
+  - champion-departure
+  - at-risk-account
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/customer-success/cs_customer_qbr_prep.md

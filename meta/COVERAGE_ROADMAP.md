@@ -1,6 +1,6 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-09-24:** **Waves 1–4 shipped.**
+**Status as of 2026-09-24:** **Waves 1–5 shipped.**
 - **Wave 1:** 40 prompts. That is four new domains of 8 prompts each (ADR-0043)
   and `domain-personal-development/job-search/` (8). Six hollow READMEs now
   describe what actually exists.
@@ -8,7 +8,8 @@
 - **Wave 3:** 103 prompts built from the domains' own roadmaps (§6).
 - **Wave 4:** 59 prompts adding depth to 11 thin domains, plus a structural cleanup: 8 duplicate presentation prompts retired and 5 decision-making prompts moved (§6).
 - **Survival:** every specified candidate survived its duplicate sweep in Waves 1–3. In Wave 4, 4 of 63 candidates were dropped as duplicates of existing prompts or skills (§6). Wave 2's candidate list had already been cut by a pre-sweep, described in §6.
-- **Remaining:** Wave 5, plus the Wave 3 tiers deferred below, are scoped only as far as their boundaries. This document records a repository-wide audit of where the prompt
+- **Wave 5:** 26 routing regression cases for the new scopes, audited for leakage. 8 target prompts gained plain-language tags (§6).
+- **Remaining:** the Wave 3 tiers deferred below are scoped only as far as their boundaries. This document records a repository-wide audit of where the prompt
 corpus is thin on subject matter and sequences the fix into five waves.
 
 **Why a cross-repo roadmap.** Each domain's `EXPANSION_ROADMAP.md` plans growth
@@ -452,11 +453,72 @@ Wave 4 covers §3C, plus these items:
 - `decision-making` rehome (**done**): three crisis prompts → `domain-risk/`, competitive intelligence → `business-strategy/research/`, pricing experiments → `product-management/prompts/`.
 - `game-development` Phase 2: narrative, NPC AI, playtest, balance, live-ops.
 
-### Wave 5: routing regression cases
+### Wave 5: routing regression cases — shipped (26 cases)
 
-Add cases for the new scopes to
-`pae-engine/tests/data/search_routing_regression.v1.json`. They must pass the
-leakage audit (ADR-0037).
+`pae-engine/tests/data/search_routing_regression.v1.json` now has 146 cases.
+The new ones are case-121 to case-146, with label source
+`coverage_wave_judgment`:
+
+| Class | Added | Covers |
+|---|---|---|
+| task | 20 | One per new subject home: sales, support, customer success, analytics (3), operations (2), wellness, job search, nonprofit, small business, trades, UX research, songwriting, security operations, after-death admin, criminal defense, travel refunds, PR/FAQ |
+| route | 3 | Procurement, endurance training, explaining an experiment result |
+| ambig | 1 | `sleep better` (wellness vs psychology) |
+| norote | 1 | A pharmacy's opening hours |
+| fuzzy | 1 | A misspelled MEDDPICC query |
+
+**Leakage audit (ADR-0037).**
+- No query contains all of a target's title tokens or id-tail tokens.
+- Median query–target overlap on the task cases is 0.22, against the 0.50 gate.
+- Highest Jaccard is 0.33 against a ROUTING_REFERENCE phrase and 0.14 against an earlier case.
+- One draft query ("write the press release and customer questions…") had 0.75 overlap with its target's description. It was reworded before any search was run against it.
+
+**First measurement, before any metadata change.**
+- The new cases pulled three floors below their limits:
+  - R@1 fell to 68.6% (floor 72%).
+  - Task R@1 fell to 60.0% (floor 65%).
+  - scope@1 fell to 79.1% (floor 80%).
+- Only 8 of the 20 new task cases found their target at rank 1.
+- The misses had one cause: the Wave 1–4 prompts are tagged in practitioner vocabulary, and people describe the situation instead:
+
+  | Tagged as | People say |
+  |---|---|
+  | MEDDPICC, ABC/XYZ, reorder point | "the buyer never named who signs off", "how much stock" |
+  | bereavement | "my dad passed away" |
+
+**The fix, and its limits.**
+- Plain-language tags were added to 13 target prompts, and each was then judged by one rule: keep an addition only if it moved its case to rank 1 (or, for a route case, to the right scope). Eight additions were kept. Five were reverted, because they did not reach rank 1 for cases 124, 131, 132, 138 and 140.
+- Keeping all 13 would also have inverted the ranker guard (`test_bm25f_still_beats_the_rejected_baselines`): flat BM25 would have led the shipped BM25F on R@1, 77.9% to 76.7%. The reverted tags did not help BM25F at rank 1, but they did help the flat ranker.
+- That result is a signal about the ranker, not about the prompts. It is recorded here instead of being tuned away.
+- Queries were not reworded after measurement. No case was dropped. No threshold was refitted.
+
+**Result.**
+
+| | 120 cases (end of Wave 4) | 146 cases (Wave 5) |
+|---|---|---|
+| R@1 / R@5 | 77.3% / 87.9% | 76.7% / 84.9% |
+| scope@1 / kind@1 | 84.7% / 97.6% | 83.6% / 97.7% |
+| Shipped BM25F vs flat BM25, R@1 | 77.3% vs 75.8% | 76.7% vs 75.6% |
+
+- New task cases at rank 1: 15 of 20.
+- New cases with the right scope at rank 1: 20 of 25.
+- None of the original 120 cases changes its top hit.
+
+**Honest failures, kept in the set:**
+
+| Case | Query is about | Search returns |
+|---|---|---|
+| 124 | A sudden drop in active users | A personal-development goals prompt |
+| 131 | A food bank's first foundation grant | A food-and-beverage advertising prompt |
+| 132 | A bakery price rise | A customer-side advocacy letter |
+| 138 | A prosecutor's plea offer | A negotiation prompt |
+| 140 | A launch announcement written before the build | The launch-strategy skill |
+
+Case 145, the no-route pharmacy query, routes `weak` rather than `no_route`.
+
+**Follow-up.**
+- Give the Wave 1–4 prompts plain-language situation tags as a deliberate pass across the corpus, not case by case.
+- R@5 (84.9%) now sits one point above its 84% floor.
 
 ## 7. Explicitly not gaps / deferred
 

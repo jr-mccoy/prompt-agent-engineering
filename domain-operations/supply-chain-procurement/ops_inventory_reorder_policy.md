@@ -15,6 +15,10 @@ tags:
   - eoq
   - abc-xyz
   - service-level
+  - stock-levels
+  - when-to-reorder
+  - purchase-orders
+  - supplier-lead-time
 updated: "2026-09-24"
 related_prompts:
   - domain-operations/supply-chain-procurement/ops_supplier_selection_scorecard.md

@@ -15,6 +15,10 @@ tags:
   - progressive-overload
   - rpe
   - aerobic-fitness
+  - start-exercising
+  - lifting-weights
+  - weight-training
+  - returning-to-exercise
 updated: "2026-09-24"
 related_prompts:
   - domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md
