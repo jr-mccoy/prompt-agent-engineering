@@ -123,7 +123,7 @@ CAPACITY CHECK: burnout signs [yes/no]; low mood/hopelessness 2+ weeks → neuro
 - [ ] Disclosure decision per setting with trade-offs; choice respected.
 - [ ] Menu and script per selected setting; work request handed to the formal-request prompt.
 - [ ] Self-advocacy card present.
-- [ ] Legal frameworks descriptive only with [VERIFY]; no diagnosis; no anti-masking-cost framing.
+- [ ] Legal frameworks descriptive only with [VERIFY]; no diagnosis; masking not framed as a skill to improve.
 - [ ] Burnout/mood routing present.
 
 ## False-Positive Prevention
