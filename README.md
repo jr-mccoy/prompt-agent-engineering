@@ -43,6 +43,8 @@ It is both a **large reusable resource library** and an **authoring system for c
 >
 > The library is one layer of a larger system: techniques inform authoring methods; authoring methods produce prompts, skills, agents, commands, and systems; those resources can then be composed into reusable workflows and full agentic architectures.
 
+> **Disclaimer — read before use.** Everything in this repository is provided **"as is", with no guarantee of any result**. Nothing here is medical, legal, financial, psychological, or other professional advice. You must apply your own domain expertise and review every output before relying on it: **any use of these prompts, and any output a model produces from them, is your responsibility, not the authors'.** By using this repository you accept the full [Disclaimer and Limitation of Liability](#disclaimer-and-limitation-of-liability).
+
 ---
 
 ## Start Here
@@ -589,6 +591,21 @@ For high-stakes use:
 - preserve human review for consequential decisions.
 
 Some domains impose stricter local conventions. Read the relevant domain `README.md` before use.
+
+---
+
+## Disclaimer and Limitation of Liability
+
+By accessing, copying, or using any prompt, skill, agent, command, persona, toolkit, or other content in this repository ("the content"), you agree to the following.
+
+- **No warranty.** The content is provided **"as is" and "as available"**, without warranty of any kind, express or implied, including warranties of accuracy, completeness, currency, merchantability, fitness for a particular purpose, and non-infringement.
+- **No guarantee of results.** The authors make no promise that any prompt will produce correct, safe, complete, or useful output. Model behavior varies by model, version, settings, and input, and changes over time.
+- **Not professional advice.** No content in this repository is medical, clinical, legal, financial, tax, psychological, safety, security, or other professional advice, and using it creates no professional–client relationship. Worked examples, doses, thresholds, legal rules, and figures may be incomplete, outdated, or wrong.
+- **Your expertise, your review, your responsibility.** You must apply qualified domain expertise, verify outputs against current authoritative sources, and review every result before relying on it or acting on it. **You are solely responsible for how you use the content and for all output any AI model generates from it**, including any decision, action, or consequence that follows.
+- **Limitation of liability and release.** To the fullest extent permitted by applicable law, the authors, contributors, and copyright holders are not liable for any claim, loss, or damages — direct, indirect, incidental, special, consequential, or otherwise — arising from or related to the content, its use, or any model output. You assume all risk of use and release them from any such claim.
+- **Not for emergencies.** Do not use this content in place of emergency help. If someone is in danger, contact your local emergency services.
+
+This disclaimer supplements the warranty and liability terms of the root [`LICENSE`](LICENSE). It does not limit any liability that cannot be limited under applicable law. Some domains add stricter warnings; read the relevant domain `README.md` before use.
 
 ---
 
