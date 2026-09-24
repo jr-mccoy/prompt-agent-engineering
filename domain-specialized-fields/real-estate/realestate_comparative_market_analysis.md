@@ -15,6 +15,9 @@ tags:
   - pricing
   - listing-strategy
   - valuation
+  - home-worth
+  - selling-my-house
+  - is-price-fair
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, quantitative, comparative]

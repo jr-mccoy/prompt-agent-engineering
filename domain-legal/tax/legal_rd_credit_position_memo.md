@@ -16,6 +16,7 @@ tags:
   - qualified-research-expenses
   - substantiation
   - tax-controversy
+  - development-costs
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, evidential, adversarial]

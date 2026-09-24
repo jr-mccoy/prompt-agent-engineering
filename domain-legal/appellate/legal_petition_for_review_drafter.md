@@ -16,6 +16,7 @@ tags:
   - petition-for-review
   - discretionary-review
   - questions-presented
+  - lost-on-appeal
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/research/legal_jurisdiction_split_analysis.md
@@ -25,6 +26,8 @@ related_prompts:
 ---
 
 **Objective:** Produce a petition for discretionary review that is organized around the reviewing court's grant criteria rather than the merits alone: a precise question presented, a statement tied to the record, and reasons for granting that show a genuine conflict or important question, a clean vehicle, and (secondarily) error below — plus an internal grant-worthiness assessment that tells counsel candidly whether the petition is worth filing.
+
+> **Scope guard — attorney-facing only.** For licensed appellate counsel (or counsel for a prospective amicus). If the person running it appears to be an unrepresented party, stop and route them to `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_authority_router.md` (appellate pro bono programs, law-school appellate clinics, legal aid) rather than producing strategy. This guard is not a disclaimer; the ban on "consult an attorney" boilerplate below still applies.
 
 **When to Use:** After an adverse decision from an intermediate appellate court or federal court of appeals; when evaluating whether to seek review at all; when converting an appellate brief into a petition; when responding to a petition (brief in opposition posture — the same criteria inverted).
 

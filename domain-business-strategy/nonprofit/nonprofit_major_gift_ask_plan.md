@@ -16,6 +16,9 @@ tags:
   - donor-cultivation
   - solicitation
   - stewardship
+  - big-donation-ask
+  - donor-meeting-script
+  - thanking-big-donors
 updated: "2026-09-24"
 related_prompts:
   - domain-finance/tax-planning/finance_charitable_giving_tax_strategy.md

@@ -16,6 +16,9 @@ tags:
   - craft
   - timing
   - scene-writing
+  - jokes-fall-flat
+  - make-it-funnier
+  - lighten-dark-story
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/craft-tools/writing_dialogue_enhancement.md

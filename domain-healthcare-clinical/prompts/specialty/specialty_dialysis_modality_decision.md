@@ -15,12 +15,42 @@ tags:
   - ckd
   - shared-decision-making
   - specialty-assessment
+  - kidneys-failing
+  - fistula-planning
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/care-plans/careplan_ckd_staged.md
+  - domain-healthcare-clinical/prompts/communication/medicine_goals_of_care_conversation_guide.md
+  - domain-healthcare-clinical/prompts/acute-care/acute_severe_hyperkalemia.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Produce a nephrologist's kidney-failure life plan for a patient with advancing CKD: when preparation must begin, when dialysis should actually start, which modality (or no dialysis) fits this person's medical profile, home situation, and goals, and the matching access and transplant steps. Distinct from `care-plans/careplan_ckd_staged.md`, which manages CKD progression and complications by stage and flags when to refer — this prompt makes the modality and timing decision itself.
+Produce a nephrologist's kidney-failure life plan for a patient with advancing CKD: when preparation must begin, when dialysis should actually start, which modality (or no dialysis) fits this person's medical profile, home situation, and goals, and the matching access and transplant steps.
+
+Decision support for a licensed clinician: confirm doses, renal adjustment and thresholds against the current guideline and local formulary. A patient with an urgent dialysis indication (step 1) is escalated now, not after this output.
+
+## When to Use
+
+- Advancing CKD (eGFR falling toward 15–20, or a high KFRE risk) where preparation for kidney failure has to start.
+- Choosing between transplant, peritoneal dialysis, home or in-center hemodialysis, and conservative (no-dialysis) care with the patient and family.
+- Deciding when dialysis should actually begin, and matching vascular or PD access to the chosen modality.
+
+**Not this prompt if:**
+- The task is managing CKD progression and complications by stage, or deciding when to refer → [`careplan_ckd_staged.md`](../care-plans/careplan_ckd_staged.md); this prompt makes the modality and timing decision itself.
+- The main task is the goals-of-care conversation rather than the modality decision → [`medicine_goals_of_care_conversation_guide.md`](../communication/medicine_goals_of_care_conversation_guide.md).
 
 ## Inputs
 
@@ -35,11 +65,12 @@ Produce a nephrologist's kidney-failure life plan for a patient with advancing C
 
 ## Role
 
-Senior attending nephrologist in a CKD clinic writing the kidney-failure plan after a modality-education visit.
+Senior attending nephrologist in a CKD clinic supporting the treating clinician, writing the kidney-failure plan after a modality-education visit.
 
 ## Reasoning Steps
 
 1. **Quantify risk and set the preparation clock.** Use the kidney failure risk equation (KFRE) with eGFR and UACR to estimate 2- and 5-year kidney-failure risk. Higher 2-year risk (a common threshold is >40%) or eGFR approaching 15–20 is the signal to complete modality education, transplant referral, and access planning now — preparation takes months.
+   - **Stop and escalate now if:** hyperkalemia with ECG changes or persisting despite treatment, pulmonary edema not responding to diuretics, pericardial rub or effusion (uremic pericarditis, tamponade risk), uremic encephalopathy or seizure, uremic bleeding, or severe metabolic acidosis — these are urgent-start indications for same-day nephrology and emergency care, not a planning visit.
 
 2. **Separate "when to start" from "how."** Start dialysis for clinical indications, not an eGFR number: uremic symptoms (serositis, encephalopathy, bleeding, refractory nausea/pruritus), volume overload refractory to diuretics, refractory hyperkalemia or metabolic acidosis, or declining nutritional status attributable to uremia. This usually occurs around eGFR 5–10. Planned early starts at a higher eGFR did not improve outcomes (IDEAL).
 
@@ -59,7 +90,7 @@ Senior attending nephrologist in a CKD clinic writing the kidney-failure plan af
 7. **In-center hemodialysis** when home therapies are declined or not feasible, or when medical or social complexity requires supervised treatment.
 
 8. **Plan vascular access to match the life plan.**
-   - Protect veins now: no PICCs or unnecessary venipuncture in the nondominant arm for anyone with CKD G4–5.
+   - Protect veins now: from about CKD G3b onward avoid PICCs in either arm and protect the nondominant arm from venipuncture and IVs [VERIFY local vascular-access policy].
    - Arteriovenous fistula needs months to mature; refer to access surgery with vein mapping when HD is the likely modality and kidney failure is expected within about 6–12 months. AV graft if veins are inadequate (usable in weeks; some early-cannulation grafts sooner).
    - Avoid starting HD with a tunneled catheter when a fistula or graft could have been placed; catheters carry the highest infection and mortality risk.
    - A patient choosing PD does not routinely need a backup fistula.
@@ -95,9 +126,25 @@ PITFALLS:
 - [starting by eGFR number, late access, catheter starts, CKM not offered, PICC in a future access arm]
 ```
 
+## Verification
+
+- [ ] KFRE was calculated from the patient's actual age, sex, eGFR and UACR, and the preparation timeline follows from it.
+- [ ] Each urgent-start indication is marked present or absent before any elective plan is written.
+- [ ] PD barriers are classified as absolute or relative from the documented abdominal history, not assumed from age or BMI.
+- [ ] The access plan names the dominant and nondominant arm and states the vein-protection order explicitly.
+- [ ] Doses of potassium binders, diuretics and other renally cleared drugs reflect current eGFR; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+
+## False-Positive Prevention
+
+- **An eGFR number read as a start indication.** An eGFR of 8–10 in an asymptomatic, well-nourished patient is not by itself a reason to start; IDEAL showed no benefit from planned early starts.
+- **Fatigue or nausea attributed to uremia without other causes checked.** Anemia, depression, hypothyroidism, medication effects or heart failure can mimic uremic symptoms and trigger an unnecessary early start.
+- **Creatinine-based eGFR mis-estimating function.** Low muscle mass (frailty, amputation) overestimates eGFR and large muscle mass underestimates it — consider cystatin C or measured clearance before timing decisions.
+- **Age or one comorbidity taken as PD or transplant ineligibility.** Frailty, heart failure and obesity are relative factors; exclusion needs a specific contraindication or a transplant-center assessment.
+- **KFRE applied outside its validated population.** It is validated for CKD G3–G5 not on dialysis; do not use it in AKI or after transplant.
+
 ## Worked Example
 
-**Input:** 58 y/o F, diabetic kidney disease, eGFR 24 → 18 → 14 over 18 months, UACR 1,800 mg/g, KFRE 2-year risk ~60%. Mild fatigue, no nausea, pruritus, or edema; K 5.1, HCO₃ 20, albumin 3.8. HFrEF with EF 35%, NYHA II, on GDMT. Prior C-section only; BMI 31. Works full time as a school administrator; lives 70 minutes from the nearest unit. Independent, good dexterity, supportive husband. Left forearm veins good on exam, no prior PICC. Her brother has offered to be evaluated as a donor.
+**Input:** 58 y/o F, diabetic kidney disease, eGFR 24 → 18 → 14 over 18 months, UACR 1,800 mg/g, KFRE 2-year risk ~60%. Mild fatigue, no nausea, pruritus, or edema; K 5.1, HCO₃ 20, albumin 3.8. HFrEF with EF 35%, NYHA II, on GDMT. Prior C-section only; BMI 31. Works full time as a school administrator; lives 70 minutes from the nearest unit. Independent, good dexterity, supportive husband. Right-hand dominant; left forearm veins good on exam, no prior PICC. Her brother has offered to be evaluated as a donor.
 
 **Output:**
 
@@ -116,7 +163,7 @@ MODALITY ASSESSMENT:
 
 RECOMMENDATION: APD (overnight cycler) as the bridge to preemptive transplant, if transplant cannot be completed first. Icodextrin for the long day dwell to limit dextrose exposure and aid ultrafiltration.
 
-ACCESS PLAN: Refer for PD catheter placement when eGFR ~10 or symptoms begin, at least 2 weeks before anticipated start. No backup fistula. Vein-preservation order: no PICCs, no left-arm venipuncture or IVs.
+ACCESS PLAN: Refer for PD catheter placement when eGFR ~10 or symptoms begin, at least 2 weeks before anticipated start. No backup fistula. Vein-preservation order: no PICCs in either arm; no venipuncture or IVs in the left (nondominant) arm.
 
 CONTINGENCY: PD failure (recurrent peritonitis, ultrafiltration failure, mechanical problems) → home HD or in-center HD with fistula placement at that time. Revisit the plan every 3 months with eGFR, symptoms, and transplant progress.
 

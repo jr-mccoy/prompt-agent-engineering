@@ -14,12 +14,43 @@ tags:
   - autoimmune
   - ana
   - specialty-assessment
+  - lupus-worry
+  - joint-pain-rash
+  - abnormal-antibody-test
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_joint_pain_arthritis.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_urinalysis_microscopy.md
+  - domain-medical-education/learner-clinical-reasoning/reason_bayesian_pretest_posttest_drill.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Take a positive (or pending) antinuclear antibody and turn it into a decision: either a specific systemic autoimmune diagnosis with organ staging and initial therapy, or a documented reason to stop testing. The prompt weighs titer, HEp-2 pattern, and clinical pretest probability together and chooses follow-on serologies by pattern and phenotype. Distinct from `reasoning/workup_joint_pain_arthritis.md` and `reasoning/workup_rash_differential.md`, which start from a symptom and list ANA among many tests — this prompt starts from the ANA result and owns its interpretation.
+Take a positive (or pending) antinuclear antibody and turn it into a decision: either a specific systemic autoimmune diagnosis with organ staging and initial therapy, or a documented reason to stop testing. The prompt weighs titer, HEp-2 pattern, and clinical pretest probability together and chooses follow-on serologies by pattern and phenotype.
+
+Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with organ-threatening features (step 1) is escalated now, not after this output.
+
+## When to Use
+
+- A positive (or pending) ANA that needs interpreting — whether to act on it, what to send next, or when to stop testing.
+- A patient with features suggesting SLE, Sjögren, systemic sclerosis, myositis or MCTD, where the ANA pattern should steer follow-on serologies and organ screening.
+- An e-consult asking "is this ANA significant?" for someone tested because of fatigue or other nonspecific symptoms.
+
+**Not this prompt if:**
+- The question starts from joint pain and ANA is one test among many → [`workup_joint_pain_arthritis.md`](../reasoning/workup_joint_pain_arthritis.md).
+- The question starts from a rash → [`workup_rash_differential.md`](../reasoning/workup_rash_differential.md). This prompt starts from the ANA result and owns its interpretation.
 
 ## Inputs
 
@@ -32,11 +63,12 @@ Take a positive (or pending) antinuclear antibody and turn it into a decision: e
 
 ## Role
 
-Senior attending rheumatologist answering an e-consult on a positive ANA.
+Senior attending rheumatologist supporting the treating clinician by answering an e-consult on a positive ANA.
 
 ## Reasoning Steps
 
-1. **Set pretest probability before reading the result.** ANA by HEp-2 IIF is sensitive but not specific. Low-titer positives are common in healthy people (roughly a quarter to a third at 1:40; ~5% at 1:160), in older adults, in relatives of patients with autoimmune disease, and in thyroid disease, infection, malignancy, and liver disease. A positive ANA with no compatible clinical features needs no further autoantibody testing.
+1. **Set pretest probability before reading the result.** ANA by HEp-2 IIF is sensitive but not specific. Low-titer positives are common in healthy people (roughly a quarter to a third at 1:40; ~5% at 1:160 — Tan et al., Arthritis Rheum 1997), in older adults, in relatives of patients with autoimmune disease, and in thyroid disease, infection, malignancy, and liver disease. A positive ANA with no compatible clinical features needs no further autoantibody testing.
+   - **Stop and escalate now if:** rising creatinine or active urinary sediment (rapidly progressive glomerulonephritis); hemoptysis or hypoxia (pulmonary hemorrhage, rapidly progressive ILD); seizure, psychosis or new focal deficit; severe cytopenia or microangiopathic hemolysis; new severe hypertension with falling renal function in suspected systemic sclerosis (scleroderma renal crisis — avoid high-dose steroids); or proximal weakness with dysphagia or respiratory involvement. These need same-day admission or specialist contact, not an outpatient serology cascade.
 
 2. **Read titer and pattern.**
    - Titer ≥1:160 is more meaningful than 1:40–1:80. The 2019 EULAR/ACR SLE classification uses ANA ≥1:80 on HEp-2 cells as its entry criterion.
@@ -97,6 +129,22 @@ PLAN:
 PITFALLS:
 - [low-titer overcalling, DFS70, cytoplasmic/Ro missed, repeat ANA, skipping UA]
 ```
+
+## Verification
+
+- [ ] Pretest probability was stated from the clinical features before the ANA result was interpreted.
+- [ ] The ANA method (HEp-2 IIF vs solid-phase) and titer were weighed; a solid-phase negative with a strong phenotype led to HEp-2 IIF or direct SSA testing.
+- [ ] Each organ-threatening red flag (renal, pulmonary, CNS, hematologic, scleroderma renal crisis) is marked present or absent.
+- [ ] Classification criteria are named with their year and used as a check, not a gate to diagnosis; prevalence figures are attributed.
+- [ ] Hydroxychloroquine is dosed from actual body weight with renal function considered; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+
+## False-Positive Prevention
+
+- **ANA driven by another condition.** Autoimmune thyroid disease, chronic infection (HCV, EBV), liver disease and malignancy commonly produce a positive ANA without systemic autoimmune disease — look for the alternative driver before sending more serology.
+- **Low complement or low-level anti-dsDNA read as active lupus.** Complement also falls in other consumptive states, and ELISA dsDNA has false positives at low levels; confirm with a more specific assay (Crithidia or Farr) and the clinical picture.
+- **Nonspecific symptoms counted as criteria.** Fatigue, arthralgia without synovitis and non-photosensitive facial redness (rosacea, seborrheic dermatitis) do not score as SLE items; only objective findings count.
+- **Drug-induced lupus labeled idiopathic SLE.** Check hydralazine, procainamide, isoniazid, minocycline and TNF inhibitors before committing to lifelong therapy.
+- **Isolated RF or anti-Ro in an older adult called Sjögren.** Both occur in healthy older people; the diagnosis needs objective sicca or glandular findings.
 
 ## Worked Example
 

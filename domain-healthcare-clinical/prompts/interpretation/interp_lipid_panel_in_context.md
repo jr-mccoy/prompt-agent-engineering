@@ -15,12 +15,45 @@ tags:
   - preventive-medicine
   - familial-hypercholesterolemia
   - interpretation
+  - high-cholesterol
+  - family-heart-disease
+  - very-high-triglycerides
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/care-plans/careplan_hyperlipidemia_ascvd.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_thyroid_function.md
+  - domain-healthcare-clinical/prompts/specialty/specialty_pancreatitis_severity_management.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Interpret a lipid panel in clinical context: decide whether the reported LDL is trustworthy, identify the phenotype (polygenic, familial hypercholesterolemia, hypertriglyceridemia, mixed, secondary), screen for secondary causes, read on-treatment response, and hand a clean phenotype and risk frame to the treatment plan. Distinct from `careplan_hyperlipidemia_ascvd.md`, which builds the lipid-lowering regimen by ASCVD risk tier; this prompt reads the panel that plan depends on.
+Interpret a lipid panel in clinical context: decide whether the reported LDL is trustworthy, identify the phenotype (polygenic, familial hypercholesterolemia, hypertriglyceridemia, mixed, secondary), screen for secondary causes, read on-treatment response, and hand a clean phenotype and risk frame to the treatment plan.
+
+Decision support for a licensed clinician: confirm drug doses, renal/hepatic adjustment and treatment thresholds against the current guideline and local formulary. Very high triglycerides with abdominal pain, or a child with xanthomas or suspected homozygous FH, is escalated now, not after this output.
+
+## When to Use
+
+- A lipid panel is back and the question is whether the LDL is trustworthy and which phenotype it shows.
+- Very high LDL, xanthomas, or premature family ASCVD raise familial hypercholesterolemia.
+- High triglycerides need a severity grade and a secondary-cause screen.
+- On-treatment response must be judged before therapy is intensified.
+
+**Not this prompt if:**
+
+- The phenotype is settled and the lipid-lowering regimen is being built by ASCVD risk tier → `domain-healthcare-clinical/prompts/care-plans/careplan_hyperlipidemia_ascvd.md`, which builds the regimen; this prompt reads the panel that plan depends on.
+- Secondary prevention after MI is being planned as a whole → `domain-healthcare-clinical/prompts/care-plans/careplan_post_mi_secondary_prevention.md`.
 
 ## Inputs
 
@@ -33,17 +66,17 @@ Interpret a lipid panel in clinical context: decide whether the reported LDL is 
 
 ## Role
 
-Senior preventive cardiology or lipid clinic attending.
+Senior preventive cardiology or lipid clinic attending supporting the treating clinician.
 
 ## Reasoning Steps
 
-1. **Is the LDL real?** Friedewald (LDL = TC − HDL − TG/5, mg/dL) is invalid when TG ≥400 and underestimates LDL when LDL is low (<70) and TG 150–400. Prefer Martin-Hopkins or Sampson/NIH calculation or direct LDL in those settings. Non-fasting samples are acceptable for most screening; repeat fasting if TG ≥400.
+1. **Stop and escalate first if:** TG ≥1,000 mg/dL (≈11.3 mmol/L) — pancreatitis risk: TG lowering becomes urgent, and abdominal pain at this level needs assessment for acute pancreatitis now; or a child with xanthomas or suspected homozygous FH → specialist lipid referral now (suspected heterozygous FH in a child → routine specialist referral). Then **is the LDL real?** Friedewald (LDL = TC − HDL − TG/5, mg/dL) is invalid when TG ≥400 and underestimates LDL when LDL is low (<70) and TG 150–400. Prefer Martin-Hopkins or Sampson/NIH calculation or direct LDL in those settings. Non-fasting samples are acceptable for most screening; repeat fasting if TG ≥400.
 
 2. **Non-HDL-C and apoB.** Non-HDL-C = TC − HDL-C, captures all atherogenic lipoproteins and is valid non-fasting. ApoB is the better particle-number marker when TG is high, in diabetes/metabolic syndrome, or when LDL and non-HDL disagree; apoB ≥130 mg/dL is a risk enhancer.
 
 3. **Severe hypercholesterolemia.** LDL ≥190 mg/dL → treat as primary severe hypercholesterolemia and evaluate for FH: Dutch Lipid Clinic Network score (LDL level, tendon xanthoma, arcus <45, personal/family premature ASCVD, family LDL), genetic testing (LDLR, APOB, PCSK9), cascade screening of first-degree relatives including children.
 
-4. **Triglycerides.** 150–499 mg/dL moderate — lifestyle, secondary causes, ASCVD risk. ≥500 severe; ≥1,000 substantially raises pancreatitis risk → TG lowering becomes the priority (fibrate, omega-3 prescription, strict alcohol and simple-carbohydrate restriction, glycemic control). Persistent ≥1,000 from childhood or refractory → familial chylomicronemia syndrome.
+4. **Triglycerides.** 175–499 mg/dL moderate (AHA/ACC 2018 definition) — lifestyle, secondary causes, ASCVD risk. ≥500 severe; ≥1,000 substantially raises pancreatitis risk → TG lowering becomes the priority (fibrate, omega-3 prescription, strict alcohol and simple-carbohydrate restriction, glycemic control). Persistent ≥1,000 from childhood or refractory → familial chylomicronemia syndrome.
 
 5. **HDL.** Low HDL (<40 men, <50 women) is a metabolic-syndrome marker, not a treatment target. Very high HDL (>100) is not reliably protective.
 
@@ -51,7 +84,7 @@ Senior preventive cardiology or lipid clinic attending.
 
 7. **Secondary causes — rule out before labeling primary.** Hypothyroidism (TSH — also raises statin myopathy risk), nephrotic syndrome (urine protein), cholestasis (ALP/bilirubin — lipoprotein X produces very high cholesterol that statins do not lower), uncontrolled diabetes, alcohol, obesity, anorexia, pregnancy, drugs listed above.
 
-8. **On-treatment reading.** Percent LDL reduction from baseline: high-intensity statin ≈ ≥50%, moderate ≈ 30–49%. Less than expected → adherence, dose timing, secondary cause, or true hypo-response. Add-on thresholds differ by guideline (e.g., US: LDL ≥70 mg/dL in very high-risk ASCVD; European: goal <55 mg/dL) — name the one being applied.
+8. **On-treatment reading.** Percent LDL reduction from baseline: high-intensity statin ≈ ≥50%, moderate ≈ 30–49%. Less than expected → adherence, dose timing, secondary cause, or true hypo-response. Add-on thresholds differ by guideline (e.g., US, 2018 AHA/ACC cholesterol guideline: LDL ≥70 mg/dL in very high-risk ASCVD — verify whether a newer ACC/AHA dyslipidemia guideline supersedes 2018; European, 2019 ESC/EAS: goal <55 mg/dL) — name the one being applied.
 
 9. **Pitfalls before signing.** Lipids drawn during acute MI or acute illness fall — recheck 4–12 weeks later. Friedewald LDL in hypertriglyceridemia. Lp(a) unit confusion. Treating an isolated low HDL. Missing FH because the patient is "young and healthy."
 
@@ -74,6 +107,22 @@ ACTION:
 - [recheck interval]
 - Hand-off: [risk tier for care plan]
 ```
+
+## Verification
+
+- [ ] LDL method named and its validity checked against TG and LDL level before any threshold is applied.
+- [ ] Red flags (TG ≥1,000 mg/dL, pediatric FH or xanthomas) addressed before routine interpretation.
+- [ ] Every threshold attributed to a named guideline and year (e.g., AHA/ACC 2018 cholesterol guideline; ESC/EAS 2019), with a check for a newer version.
+- [ ] Secondary causes screened, citing the actual TSH, urine protein, ALP/bilirubin, and A1c values from the input.
+- [ ] FH scoring shows each Dutch Lipid Clinic Network component and its points traced to the input.
+- [ ] Drug doses checked against renal and hepatic function and interacting medications.
+
+## False-Positive Prevention
+
+- **FH called on LDL alone before secondary causes are excluded.** Hypothyroidism, nephrotic syndrome, and cholestasis can produce LDL ≥190 mg/dL.
+- **DLCN points over-counted.** Corneal arcus scores only before age 45, and a single relative's history should not be scored twice.
+- **High Lp(a) mistaken for FH.** Reported LDL-C includes Lp(a) cholesterol, so a very high Lp(a) inflates LDL-C and can mimic an FH phenotype.
+- **A single non-fasting triglyceride in the moderate range labeled as needing drug therapy.** Non-fasting TG runs modestly higher; repeat and address secondary causes and lifestyle first.
 
 ## Worked Example
 

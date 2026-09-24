@@ -1,7 +1,7 @@
 ---
 title: "OCD Self-ERP Preparation — For Therapist Review, Not Self-Administration"
 category: psychology/client-self-use/specialty
-description: "Prepare the groundwork for starting ERP with an OCD-trained therapist: a trigger map, a behavioural and mental compulsion inventory, an avoidance and accommodation list, a draft SUDS-estimated hierarchy, goals, and questions — all marked 'do not start exposures until reviewed.' Refuses to give reassurance and routes crisis to 988/911/ED."
+description: "Prepare the groundwork for starting ERP with an OCD-trained therapist: a trigger map, a behavioral and mental compulsion inventory, an avoidance and accommodation list, a draft SUDS-estimated hierarchy, goals, and questions — all marked 'do not start exposures until reviewed.' Refuses to give reassurance and routes crisis to 988/911/ED."
 techniques:
   - ST-04
   - DT-02
@@ -16,18 +16,21 @@ tags:
   - erp
   - hierarchy
   - bring-to-therapist
+  - repeated-checking
+  - excessive-handwashing
+  - asking-for-reassurance
+  - therapy-waitlist
 intended_use: model-testing
 updated: "2026-09-24"
 related_prompts:
   - domain-psychology/client-self-use/coping-by-concern/clientself_ocd_erp_exercise_with_therapist.md
-  - domain-psychology/client-self-use/coping-by-concern/clientself_ocd_family_accommodation_reduction_plan.md
   - domain-psychology/client-self-use/symptom-understanding/clientself_intrusive_thoughts_vs_ocd_signal.md
   - domain-psychology/specialty-clinical/psychology_ocd_erp_provider_protocol.md
 ---
 
 # OCD Self-ERP Preparation — For Therapist Review, Not Self-Administration
 
-> **IF YOU ARE HAVING THOUGHTS OF SUICIDE OR MIGHT ACT ON THEM: call or text 988 (Suicide & Crisis Lifeline, US), call 911, or go to your nearest emergency department (ED) now.** OCD can be exhausting and hopelessness is common — reaching out is the right move. Outside the US, use your local emergency number. This is preparation for treatment with an OCD-trained clinician — it is **not** ERP, a diagnosis, or reassurance.
+> **IF YOU ARE HAVING THOUGHTS OF SUICIDE OR MIGHT ACT ON THEM: call or text 988 (Suicide & Crisis Lifeline, US), call 911, or go to your nearest emergency department (ED) now.** OCD can be exhausting and hopelessness is common — reaching out is the right move. Outside the US, use your local emergency number or find a local crisis line at findahelpline.com. This is preparation for treatment with an OCD-trained clinician — it is **not** ERP, a diagnosis, or reassurance.
 
 ## Objective
 
@@ -63,9 +66,9 @@ Help you arrive at your first ERP sessions (or at a new ERP therapist) with the 
 
 ### Must
 
-- Sections: **Themes**, **Trigger Map**, **Compulsion Inventory (behavioural / mental / reassurance)**, **Avoidance List**, **Accommodation List**, **Draft Hierarchy (SUDS estimates)**, **What I Want From Treatment**, **Questions for My Therapist**.
+- Sections: **Themes**, **Trigger Map**, **Compulsion Inventory (behavioral / mental / reassurance)**, **Avoidance List**, **Accommodation List**, **Draft Hierarchy (SUDS estimates)**, **What I Want From Treatment**, **Questions for My Therapist**.
 - Prompt explicitly for **mental compulsions** (reviewing, neutralising, counting, praying to undo, mentally checking feelings) — they are the most often missed.
-- Hierarchy items carry **estimated** SUDS (0–100) and are labelled as guesses (QA-04) for the therapist to recalibrate.
+- Hierarchy items carry **estimated** SUDS (0–100) and are labeled as guesses (QA-04) for the therapist to recalibrate.
 - Aim for 10–15 hierarchy items spread across the SUDS range, without ordering them into a schedule.
 - Mark the document **"Draft — do not start exposures until my therapist reviews this"** at top and bottom.
 - End with a handoff block (NE-20).
@@ -128,7 +131,7 @@ Bring to: [therapist] on [date]. Draft only — no exposures until reviewed.
 - [ ] Safety routing present at top and in output.
 - [ ] All eight sections present.
 - [ ] Mental compulsions and reassurance-seeking explicitly inventoried.
-- [ ] Hierarchy has 10–15 items, SUDS labelled as estimates, no schedule or instructions.
+- [ ] Hierarchy has 10–15 items, SUDS labeled as estimates, no schedule or instructions.
 - [ ] No reassurance, no graphic content, no diagnosis or severity score.
 - [ ] "Do not start exposures" marker at top and bottom; handoff block present.
 
@@ -142,4 +145,4 @@ Bring to: [therapist] on [date]. Draft only — no exposures until reviewed.
 
 **Input:** "Starting ERP next month. Contamination stuff — door handles, public bathrooms. I wash a lot and I ask my partner if things are clean. I also replay whether I touched something."
 
-**Output (abbreviated):** Themes: contamination. Trigger map rows for door handles, public restrooms, shopping carts. Compulsions — behavioural: repeated handwashing, using sleeves on handles; mental: replaying contact; reassurance: asking partner "is this clean?". Accommodation: partner opens doors, answers cleanliness questions. Draft hierarchy of 12 items from "touch own front-door handle" (est. 20) to "use public restroom without washing beyond once" (est. 90), labelled as estimates. Questions: "How do we handle my partner's reassurance?" Marker: do not start exposures until reviewed.
+**Output (abbreviated):** Themes: contamination. Trigger map rows for door handles, public restrooms, shopping carts. Compulsions — behavioral: repeated handwashing, using sleeves on handles; mental: replaying contact; reassurance: asking partner "is this clean?". Accommodation: partner opens doors, answers cleanliness questions. Draft hierarchy of 12 items from "touch own front-door handle" (est. 20) to "use public restroom without washing beyond once" (est. 90), labeled as estimates. Questions: "How do we handle my partner's reassurance?" Marker: do not start exposures until reviewed.

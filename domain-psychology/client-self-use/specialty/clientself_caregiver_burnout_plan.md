@@ -16,18 +16,21 @@ tags:
   - burnout
   - support-plan
   - anticipatory-grief
+  - caring-for-parent
+  - running-on-empty
+  - family-not-helping
+  - guilt-and-resentment
 intended_use: model-testing
 updated: "2026-09-24"
 related_prompts:
   - domain-productivity/home-life/home_caregiver_respite_plan.md
   - domain-personal-development/major-decisions/personal_caring_for_aging_parent.md
   - domain-psychology/client-self-use/symptom-understanding/clientself_anxiety_depression_burnout_differentiator.md
-  - domain-psychology/client-self-use/grief-loss/clientself_ambiguous_loss_framework.md
 ---
 
 # Caregiver Burnout — Self-Check and Sustainable-Support Plan
 
-> **IF YOU ARE HAVING THOUGHTS OF SUICIDE, OR YOU FEEL YOU MIGHT HURT OR SERIOUSLY NEGLECT THE PERSON YOU CARE FOR: call or text 988 (Suicide & Crisis Lifeline, US) now, or call 911 if anyone is in immediate danger.** Those feelings are a sign of overload that needs help today — not proof you are a bad person. Outside the US, use your local emergency number. This is a self-support aid — it is **not** a diagnosis, therapy, or a substitute for your own doctor.
+> **IF YOU ARE HAVING THOUGHTS OF SUICIDE, OR YOU FEEL YOU MIGHT HURT OR SERIOUSLY NEGLECT THE PERSON YOU CARE FOR: call or text 988 (Suicide & Crisis Lifeline, US) now, or call 911 if anyone is in immediate danger.** Those feelings are a sign of overload that needs help today — not proof you are a bad person. Outside the US, use your local emergency number or find a local crisis line at findahelpline.com. This is a self-support aid — it is **not** a diagnosis, therapy, or a substitute for your own doctor.
 
 ## Objective
 
@@ -58,7 +61,7 @@ Help you see honestly how caregiving is affecting you — body, mood, relationsh
 
 - Lead with validation (NE-07): caregiving strain is common and heavy; resentment and "wishing it were over" are frequent and are not the same as wanting harm.
 - **Self-check (DS-02):** six areas — energy/sleep, own health, mood, patience/irritability, connection, substance use — each rated 0 (fine) to 3 (severe). Label it **not a validated instrument**; mention that clinicians use tools such as the Zarit Burden Interview if the person wants a formal measure.
-- Map the pattern to action: any 3 in mood or thoughts of death → clinician this week (and 988 if suicidal); several 2s → plan plus a GP/therapist appointment; mostly 0–1 → maintenance plan.
+- Map the pattern to action: any 3 in mood or thoughts of death → clinician this week (and 988 if suicidal); alcohol/substances at 3 → GP or clinician this week, and name the drinking or use at that appointment (never advise stopping heavy daily drinking abruptly without medical advice — withdrawal can be dangerous); several 2s → plan plus a GP/therapist appointment; mostly 0–1 → maintenance plan.
 - Plan sections: **Self-Care Floor** (3 non-negotiables), **Specific Asks** (named person + named task), **Respite** (hand-off to respite plan), **Boundaries** (one "no" or "not me"), **Guilt & Grief** (anticipatory grief named), **Warning Signs to Act On**.
 - Include a script for one specific ask.
 
@@ -113,7 +116,7 @@ WARNING SIGNS TO ACT ON: [mood 3 for 2 weeks / drinking more / snapping physical
 ## Verification
 
 - [ ] Safety banner covers suicide and harm/neglect of the care recipient.
-- [ ] Six-area self-check labelled not validated; pattern mapped to a level of help.
+- [ ] Six-area self-check labeled not validated; pattern mapped to a level of help.
 - [ ] All six plan sections present, with named people and tasks.
 - [ ] One ask script included.
 - [ ] No diagnosis, no shaming, no legal/financial advice.

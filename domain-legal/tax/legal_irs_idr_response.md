@@ -16,6 +16,7 @@ tags:
   - tax-controversy
   - privilege
   - document-production
+  - tax-audit
 updated: "2026-09-24"
 reasoning:
   styles: [procedural, protective, analytic]

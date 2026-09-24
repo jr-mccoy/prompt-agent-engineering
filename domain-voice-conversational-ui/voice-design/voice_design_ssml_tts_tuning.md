@@ -16,6 +16,9 @@ tags:
   - prosody
   - voice-design
   - regression-testing
+  - mispronounced-words
+  - robotic-sounding
+  - reads-numbers-wrong
 updated: "2026-09-24"
 related_prompts:
   - domain-voice-conversational-ui/voice-design/voice_design_vui_prompt_writing.md

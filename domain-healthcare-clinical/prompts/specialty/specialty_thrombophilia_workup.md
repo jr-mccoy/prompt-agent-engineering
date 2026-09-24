@@ -14,12 +14,42 @@ tags:
   - thrombosis
   - antiphospholipid-syndrome
   - specialty-assessment
+  - unexplained-blood-clot
+  - recurrent-clots
+  - family-clot-history
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_anticoagulation_decision_support.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_coagulation_panel.md
+  - domain-healthcare-clinical/prompts/specialty/specialty_autoimmune_workup_ana.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Produce a hematology consult answer to "should this patient get a thrombophilia workup?": decide whether any result would change anticoagulant choice, duration, or family counseling; order only the tests that would; time each assay so it is interpretable; and state the management consequence of each possible result. Distinct from `pharmacology/medicine_anticoagulation_decision_support.md` and `pharmacology/pharm_doac_selection_by_profile.md`, which choose and dose the anticoagulant once the indication is settled — this prompt decides what testing is worth doing and how it reshapes that indication.
+Produce a hematology consult answer to "should this patient get a thrombophilia workup?": decide whether any result would change anticoagulant choice, duration, or family counseling; order only the tests that would; time each assay so it is interpretable; and state the management consequence of each possible result. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. An acute thrombotic emergency is treated now; testing waits.
+
+## When to Use
+
+- After VTE or unusual-site thrombosis, when someone asks whether to send a thrombophilia panel.
+- Timing each assay around the acute event and the current anticoagulant (heparin, warfarin, DOAC).
+- Suspected antiphospholipid syndrome that would change drug choice, or a pregnancy, estrogen, or relative-testing decision that hinges on a result.
+
+**Not this prompt if:**
+
+- Choosing and dosing the anticoagulant once the indication is settled — `pharmacology/medicine_anticoagulation_decision_support.md` and `pharmacology/pharm_doac_selection_by_profile.md`; this prompt decides what testing is worth doing and how it reshapes that indication.
+- Explaining a prolonged PT/aPTT or a bleeding pattern — `interpretation/interp_coagulation_panel.md`.
 
 ## Inputs
 
@@ -34,11 +64,12 @@ Produce a hematology consult answer to "should this patient get a thrombophilia 
 
 ## Role
 
-Senior attending hematologist answering a thrombosis consult for a colleague. Commits to what to test, when, and what each answer changes.
+Senior attending hematologist supporting the treating clinician on a thrombosis consult. Commits to what to test, when, and what each answer changes.
 
 ## Reasoning Steps
 
 1. **Name the decision the test would change.** If none, recommend no testing and say why. Most inherited thrombophilia results do not change duration after a first VTE: a provoked event with a major transient factor gets time-limited therapy regardless; an unprovoked proximal DVT/PE usually warrants extended therapy regardless. Test when the answer changes drug choice (APS → warfarin), duration (a borderline case where a strong thrombophilia tips toward extended therapy), pregnancy/estrogen planning, or testing of relatives.
+   - **Stop and escalate first if:** massive or submassive PE, cerebral venous thrombosis with a neurologic deficit, mesenteric ischemia, suspected catastrophic APS (thrombosis in several organs over days), or falling platelets on heparin (possible HIT) → treat the emergency now; thrombophilia testing waits.
 
 2. **Screen for antiphospholipid syndrome first** — the one result that most often changes the drug.
    - Test when: unprovoked VTE in a younger patient, arterial thrombosis under ~50, thrombosis at an unusual site, recurrent VTE, pregnancy morbidity as above, SLE or other autoimmune disease, unexplained prolonged baseline aPTT, livedo, or thrombocytopenia.
@@ -92,6 +123,21 @@ PITFALLS:
 - [timing/interference errors, single-test labeling, testing that changes nothing]
 ```
 
+## Verification
+
+- [ ] Every test ordered is paired with the decision it would change; tests that change nothing are listed under "Do not send".
+- [ ] Each assay's timing is checked against the acute phase and the current anticoagulant (heparin → antithrombin; warfarin → protein C/S; DOAC → LA and clot-based assays).
+- [ ] APS is labeled only with a clinical criterion plus persistent laboratory positivity ≥12 weeks apart, naming the criteria set used (revised Sapporo 2006 or 2023 ACR/EULAR).
+- [ ] Warfarin, LMWH, and DOAC doses are checked against weight and renal function; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+- [ ] The result → action map states what would change the drug, the duration, and family or pregnancy advice.
+
+## False-Positive Prevention
+
+- A low protein C, protein S, or antithrombin measured during acute thrombosis, on heparin or warfarin, in pregnancy, on estrogen, or with liver disease called an inherited deficiency.
+- Low-titer anticardiolipin or anti-β2GPI (below the lab's moderate-to-high cutoff) counted toward APS laboratory criteria.
+- A prolonged aPTT assumed to be a lupus anticoagulant without excluding heparin in the sample, a factor deficiency, or a DOAC effect.
+- Heterozygous factor V Leiden or prothrombin G20210A treated as a reason for indefinite anticoagulation after a provoked event.
+
 ## Worked Example
 
 **Input:** 41 y/o M, unprovoked right femoral DVT and segmental PE 4 months ago, on apixaban 5 mg BID. Mother had a DVT at 55. Baseline aPTT drawn in the ED before heparin was 44 s (ref 25–35). Platelets 128. Mild livedo reticularis on the thighs. No autoimmune history. Asks whether he can stop anticoagulation at 6 months.
@@ -105,21 +151,21 @@ EVENT CLASSIFICATION: First unprovoked proximal DVT + PE.
 
 TESTING PLAN:
 - Send now: anticardiolipin IgG/IgM and anti-β2GPI IgG/IgM (immunoassays, unaffected by apixaban).
-- Send now with caveat: lupus anticoagulant (dRVVT + LA-sensitive aPTT) only if the lab uses DOAC-adsorbent pretreatment; otherwise draw at apixaban trough and treat a positive LA as provisional.
+- Lupus anticoagulant (dRVVT + LA-sensitive aPTT): send LA only if the lab applies a DOAC-removal step; otherwise defer — both positive and negative LA results are unreliable on a DOAC (ISTH 2020 guidance).
 - Repeat all positive APS tests at ≥12 weeks.
 - Do not send: protein C, protein S, antithrombin, FVL, prothrombin mutation. None changes his extended-therapy plan, and protein C/S/AT are unreliable on anticoagulation. His mother's DVT at 55 does not change this.
 
 UNUSUAL-SITE ADD-ONS: N/A (typical site). CBC repeat and smear for the thrombocytopenia.
 
 RESULT → ACTION MAP:
-- Persistent triple positivity (or LA + high-titer antibody): switch apixaban to warfarin, INR goal 2–3, indefinite; overlap with LMWH until INR ≥2 on two consecutive days.
+- Persistent triple positivity (or LA + high-titer antibody): switch apixaban to warfarin, INR goal 2–3, indefinite; overlap with LMWH for at least 5 days and until INR ≥2 for 24 h.
 - Single low-titer antibody, LA negative, not persistent: stay on apixaban, extended duration; consider reduced-dose apixaban 2.5 mg BID after 6 months of full dose.
 - All negative: extended apixaban; rheumatology review only if other autoimmune features emerge.
 
 ANTICOAGULATION NOW: Continue apixaban 5 mg BID. Do not stop at 6 months.
 
 PITFALLS:
-- An LA drawn on a DOAC without adsorbent is uninterpretable.
+- Send LA only if the lab applies a DOAC-removal step; otherwise defer — both positive and negative LA results are unreliable on a DOAC (ISTH 2020 guidance).
 - One positive antiphospholipid test is not APS; the 12-week repeat is required.
 - A full inherited panel here would spend money and create false "deficiencies" without changing management.
 ```

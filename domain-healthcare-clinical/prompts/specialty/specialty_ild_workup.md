@@ -15,12 +15,43 @@ tags:
   - ipf
   - rheumatology
   - specialty-assessment
+  - lung-scarring
+  - breathless-on-exertion
+  - chronic-dry-cough
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_dyspnea.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_pft_pulmonary_function.md
+  - domain-healthcare-clinical/prompts/specialty/specialty_autoimmune_workup_ana.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Take a patient with suspected interstitial lung disease from first abnormal finding to a working diagnosis and treatment plan: characterize the physiologic and radiologic pattern, search for a cause (exposure, drug, connective-tissue disease), decide whether BAL or biopsy is needed, and start antifibrotic, immunosuppressive, or supportive therapy. Distinct from `reasoning/workup_dyspnea.md`, which reaches ILD as one branch of a dyspnea differential — this prompt starts once ILD is suspected and owns the ILD-specific workup and treatment.
+Take a patient with suspected interstitial lung disease from first abnormal finding to a working diagnosis and treatment plan: characterize the physiologic and radiologic pattern, search for a cause (exposure, drug, connective-tissue disease), decide whether BAL or biopsy is needed, and start antifibrotic, immunosuppressive, or supportive therapy. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with resting hypoxemia or acute deterioration is escalated now, not after this output.
+
+## When to Use
+
+- Restrictive PFTs or a low DLCO, bibasilar Velcro crackles, or reticulation/ground-glass on CT have raised ILD and you need a pattern, a cause, and a plan.
+- Preparing an ILD case for multidisciplinary discussion — HRCT pattern, serologies, BAL or biopsy decision.
+- Choosing antifibrotic vs immunosuppressive therapy, or deciding whether a fibrotic ILD meets progressive pulmonary fibrosis criteria.
+
+**Not this prompt if:**
+
+- Dyspnea is still undifferentiated — `reasoning/workup_dyspnea.md` reaches ILD as one branch of a dyspnea differential; this prompt starts once ILD is suspected and owns the ILD-specific workup and treatment.
+- You only need a PFT report read — `interpretation/interp_pft_pulmonary_function.md`.
+- The finding is a solitary incidental nodule, not diffuse parenchymal disease — `specialty/specialty_solitary_pulmonary_nodule_fleischner.md`.
 
 ## Inputs
 
@@ -37,11 +68,12 @@ Take a patient with suspected interstitial lung disease from first abnormal find
 
 ## Role
 
-Senior attending pulmonologist in an ILD clinic preparing a case for multidisciplinary discussion and writing the plan.
+Senior attending pulmonologist in an ILD clinic supporting the treating clinician: preparing the case for multidisciplinary discussion and drafting the plan for their review.
 
 ## Reasoning Steps
 
 1. **Confirm ILD and grade the physiology.** Restrictive pattern (reduced FVC and TLC) with reduced DLCO is typical; DLCO may fall first. Combined emphysema can pseudo-normalize volumes with a disproportionately low DLCO. Record 6MWT desaturation — it predicts outcome and oxygen need.
+   - **Stop and escalate first if:** resting hypoxemia or a rising oxygen need, worsening over days to weeks (possible acute exacerbation, infection, PE, heart failure — see step 9), rapidly progressive ILD with myositis or MDA5 features, or hemoptysis with falling hemoglobin (diffuse alveolar hemorrhage) → same-day admission or pulmonary review, not a clinic workup.
 
 2. **Get the right CT.** HRCT with thin sections, prone images (to separate dependent atelectasis from early fibrosis), and expiratory images (air trapping). Contrast-enhanced routine CT is not adequate for pattern assignment.
 
@@ -65,7 +97,7 @@ Senior attending pulmonologist in an ILD clinic preparing a case for multidiscip
 6. **Hold a multidisciplinary discussion** (pulmonology, radiology, pathology, rheumatology as needed) and record a working diagnosis with a confidence level: confident, provisional high confidence, or unclassifiable ILD.
 
 7. **Treat by diagnosis.**
-   - **IPF:** antifibrotic — nintedanib 150 mg PO BID (reduce to 100 mg BID for intolerance; LFTs monthly for 3 months then every 3 months; manage diarrhea) or pirfenidone titrated to 801 mg PO TID with food (photosensitivity, nausea, LFT monitoring). Do not use prednisone-azathioprine-N-acetylcysteine combinations (harm in PANTHER-IPF). Newer antifibrotics (e.g., nerandomilast) have phase 3 data — check current approval and labeling before substituting.
+   - **IPF:** antifibrotic — nintedanib 150 mg PO BID (reduce to 100 mg BID for intolerance; LFTs monthly for 3 months then every 3 months; manage diarrhea) or pirfenidone titrated to 801 mg PO TID with food (photosensitivity, nausea, LFT monitoring). Do not use prednisone-azathioprine-N-acetylcysteine combinations (harm in PANTHER-IPF). Newer antifibrotics: nerandomilast was approved in the US for IPF in 2025 [VERIFY current labeling and any PPF indication] — check local availability before substituting.
    - **Progressive pulmonary fibrosis (non-IPF fibrotic ILD):** progression defined by at least 2 of 3 within the past year without another explanation — worsening symptoms; physiologic decline (absolute FVC decline ≥5% predicted or DLCO decline ≥10% predicted); radiologic progression. Add nintedanib (INBUILD) to disease-specific therapy.
    - **CTD-ILD:** mycophenolate mofetil titrated to 1.5 g PO BID is the usual first-line for SSc-ILD and many CTD-ILDs; tocilizumab and nintedanib have evidence in SSc-ILD; rituximab or cyclophosphamide for severe or refractory disease. Myositis-associated ILD, especially MDA5-positive rapidly progressive, needs urgent combination immunosuppression.
    - **Fibrotic HP:** antigen identification and complete avoidance; mycophenolate or glucocorticoids for progressive disease; antifibrotic if progressive fibrosis.
@@ -104,6 +136,23 @@ MONITORING: [PFT interval, progression criteria]
 PITFALLS:
 - [no cause search before IPF, missed HP exposure, steroids for IPF, inadequate CT protocol, late transplant referral]
 ```
+
+## Verification
+
+- [ ] The HRCT pattern was assigned only from a thin-section protocol with prone and expiratory images, using the named ATS/ERS/JRS/ALAT IPF guideline categories and year.
+- [ ] Exposure questions, drug review, and serologies are documented before any IPF label.
+- [ ] A progression call is traced to dated values — FVC and DLCO change, symptoms, radiology — with 2 of 3 met within a year.
+- [ ] Antifibrotic dose, LFT schedule, and hepatic/interaction limits checked; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+- [ ] No glucocorticoid or azathioprine regimen for IPF; immunosuppression is tied to a named non-IPF diagnosis (CTD-ILD, HP, OP, drug-induced).
+- [ ] States what would change the MDD diagnosis (a new serology, an exposure found, a biopsy result).
+
+## False-Positive Prevention
+
+- Dependent atelectasis read as early fibrosis — confirm on prone images before calling ILD.
+- A low-titer ANA or positive HP precipitin panel taken as the cause — without clinical features or a compatible pattern it is supportive only.
+- Paraseptal emphysema or clustered traction bronchiectasis called honeycombing — this falsely upgrades probable UIP to UIP.
+- An FVC fall within test variability or from poor effort labeled progression — check effort and repeat before calling PPF.
+- Combined emphysema pseudo-normalizing FVC read as mild disease — weigh the DLCO and exertional desaturation.
 
 ## Worked Example
 

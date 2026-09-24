@@ -15,12 +15,45 @@ tags:
   - hemochromatosis
   - anemia
   - interpretation
+  - always-tired
+  - hidden-blood-loss
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_anemia.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_cbc_differential.md
+  - domain-healthcare-clinical/prompts/acute-care/acute_gi_bleed.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Interpret an iron panel and produce a committed classification — absolute iron deficiency, functional deficiency/anemia of inflammation, mixed, iron overload, or non-iron microcytosis — with the source investigation and repletion plan that follows. Distinct from `workup_anemia.md`, which works up anemia from the CBC across all mechanisms; this prompt reads the iron panel itself, including in non-anemic patients (HF, CKD, fatigue, suspected overload).
+Interpret an iron panel and produce a committed classification — absolute iron deficiency, functional deficiency/anemia of inflammation, mixed, iron overload, or non-iron microcytosis — with the source investigation and repletion plan that follows.
+
+Decision support for a licensed clinician: confirm iron product doses, phosphate monitoring and thresholds against the current guideline and local formulary. A symptomatic, bleeding, or unstable patient is escalated now, not after this output.
+
+## When to Use
+
+- A ferritin/iron/TIBC/TSAT panel needs a committed classification, in anemic or non-anemic patients (fatigue, HF, CKD).
+- True iron deficiency must be separated from inflammation or a mixed state when ferritin looks "normal".
+- A raised ferritin or TSAT raises the question of iron overload.
+- Deficiency is confirmed and the source investigation and oral-vs-IV repletion plan are needed.
+
+**Not this prompt if:**
+
+- Anemia is being worked up from the CBC across all mechanisms → `domain-healthcare-clinical/prompts/reasoning/workup_anemia.md`; this prompt reads the iron panel itself, including in non-anemic patients (HF, CKD, fatigue, suspected overload).
+- The CBC and smear are the question → `domain-healthcare-clinical/prompts/interpretation/interp_cbc_differential.md`.
+- There is active GI bleeding → `domain-healthcare-clinical/prompts/acute-care/acute_gi_bleed.md`.
 
 ## Inputs
 
@@ -32,11 +65,11 @@ Interpret an iron panel and produce a committed classification — absolute iron
 
 ## Role
 
-Senior hematology attending.
+Senior hematology attending supporting the treating clinician.
 
 ## Reasoning Steps
 
-1. **Timing and confounders.** Serum iron has diurnal and meal variation — never diagnose from iron alone. Oral iron raises serum iron for hours; IV iron makes ferritin and TSAT uninterpretable for about 4 weeks. Ferritin is an acute-phase reactant (inflammation, infection, liver injury, malignancy raise it). Pregnancy and oral contraceptives raise TIBC.
+1. **Stop and escalate first if:** symptomatic severe anemia (chest pain, dyspnea at rest, syncope, heart failure), hemodynamic instability, active or overt GI bleeding (melena, hematemesis, hematochezia), or features suggesting malignancy (weight loss, dysphagia, change in bowel habit, a mass) — arrange urgent evaluation first (resuscitation and transfusion decision, urgent endoscopy, or suspected-cancer pathway), then interpret the panel. Then **timing and confounders.** Serum iron has diurnal and meal variation — never diagnose from iron alone. Oral iron raises serum iron for hours; IV iron makes ferritin and TSAT uninterpretable for about 4 weeks. Ferritin is an acute-phase reactant (inflammation, infection, liver injury, malignancy raise it). Pregnancy and oral contraceptives raise TIBC.
 
 2. **Absolute iron deficiency.** Ferritin <30 ng/mL is highly specific (<15 essentially diagnostic); TSAT <20%; TIBC high. Microcytosis and high RDW support but may be absent early.
 
@@ -73,6 +106,22 @@ ACTION:
 - [recheck: test and interval]
 - [referral]
 ```
+
+## Verification
+
+- [ ] Red flags (instability, overt bleeding, symptomatic severe anemia, malignancy features) addressed before the panel is classified.
+- [ ] Each value compared with the lab's reference range; ferritin read against CRP/inflammation, and recent oral or IV iron timing noted.
+- [ ] The context threshold applied is named (general, inflammation, HF, or CKD) with its source guideline.
+- [ ] Every iron deficiency diagnosis is paired with a source plan appropriate to age and sex.
+- [ ] IV product and total dose checked against weight, Hb, the Ganzoni deficit, phosphate risk, and local formulary.
+- [ ] States what would change the classification (sTfR, repeat fasting TSAT, response to a trial of iron).
+
+## False-Positive Prevention
+
+- **A single low serum iron called iron deficiency.** Serum iron falls with time of day, recent meals, and acute illness; ferritin and TSAT decide.
+- **A non-fasting or post-oral-iron TSAT ≥45% called hemochromatosis.** Repeat fasting and off iron before genotyping.
+- **Iron prescribed for thalassemia-trait microcytosis because the MCV is low.** Check ferritin first; a normal ferritin with a high RBC count points away from deficiency.
+- **HFE C282Y heterozygosity or H63D alone reported as hemochromatosis.** These genotypes rarely cause overload; look for another cause of the raised ferritin.
 
 ## Worked Example
 

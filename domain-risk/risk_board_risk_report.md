@@ -16,6 +16,9 @@ tags:
   - kri
   - risk-appetite
   - executive-communication
+  - board-meeting-prep
+  - quarterly-report
+  - top-worries
 updated: "2026-09-24"
 reasoning:
   styles: [synthetic, evaluative, communicative]

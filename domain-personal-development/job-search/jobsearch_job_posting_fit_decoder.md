@@ -16,6 +16,9 @@ tags:
   - requirements
   - application-strategy
   - candidate
+  - should-i-apply
+  - am-i-qualified
+  - too-many-requirements
 updated: "2026-09-24"
 related_prompts:
   - domain-hr-management/hiring/hr_job_description_writer.md

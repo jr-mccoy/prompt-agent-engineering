@@ -14,14 +14,44 @@ tags:
   - thyroid
   - ultrasound
   - specialty-assessment
+  - neck-lump
+  - needle-biopsy-decision
+  - found-on-scan
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_thyroid_function.md
+  - domain-healthcare-clinical/prompts/specialty/specialty_adrenal_incidentaloma.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
 Take a palpable or incidentally discovered thyroid nodule to a committed plan: functional status by TSH, sonographic risk category with the exact point or pattern assignment, FNA decision by size threshold, interpretation of Bethesda cytology and molecular results, and the next step — no follow-up, ultrasound surveillance at a stated interval, repeat FNA, molecular testing, active surveillance, lobectomy, or total thyroidectomy.
 
-Distinct from [`medicine_incidental_findings_management.md`](../reasoning/medicine_incidental_findings_management.md), which triages many incidental findings across organ systems at a framework level; this prompt goes to point-level TI-RADS scoring, cytology, and surgical decision-making for the thyroid alone.
+Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with airway compromise or a rapidly enlarging mass is escalated now, not after this output.
+
+## When to Use
+
+- A palpable or incidentally found thyroid nodule (CT/MRI, carotid ultrasound, focal FDG-PET uptake) needing TSH-first triage and ultrasound scoring.
+- Deciding on FNA by ACR TI-RADS or ATA size thresholds.
+- Acting on Bethesda cytology and molecular results — surveillance, repeat FNA, lobectomy, or total thyroidectomy.
+
+**Not this prompt if:**
+
+- Several incidental findings across organ systems at a framework level — [`medicine_incidental_findings_management.md`](../reasoning/medicine_incidental_findings_management.md); this prompt goes to point-level TI-RADS scoring, cytology, and surgical decision-making for the thyroid alone.
+- Abnormal thyroid function tests without a nodule question — `interpretation/interp_thyroid_function.md`.
 
 ## Inputs
 
@@ -36,11 +66,12 @@ Distinct from [`medicine_incidental_findings_management.md`](../reasoning/medici
 
 ## Role
 
-Senior attending endocrinologist running a thyroid nodule clinic. Committed to one plan per nodule and explicit about which risk system and threshold is being used.
+Senior attending endocrinologist running a thyroid nodule clinic and supporting the treating clinician. Committed to one plan per nodule and explicit about which risk system and threshold is being used.
 
 ## Reasoning Steps
 
 1. **TSH first.**
+   - **Stop and escalate first if:** stridor, dyspnea at rest or positional airway compression, a rapidly enlarging hard or fixed mass (anaplastic carcinoma, lymphoma), new hoarseness with vocal cord paralysis, or features of thyroid storm → same-day airway/ENT and endocrine assessment, not a clinic workup.
    - **Low TSH** → radionuclide scintigraphy (I-123 or Tc-99m pertechnetate). A hyperfunctioning ("hot") nodule has very low malignancy risk → no FNA; manage the hyperthyroidism (radioactive iodine, lobectomy, or antithyroid drug). Iso- or hypofunctioning nodules in a low-TSH patient proceed to US-based assessment.
    - **Normal or high TSH** → no scintigraphy; proceed to ultrasound. A higher TSH, even within range, is associated with modestly higher malignancy risk.
    - Scintigraphy is contraindicated in pregnancy.
@@ -78,7 +109,7 @@ Senior attending endocrinologist running a thyroid nodule clinic. Committed to o
 
 7. **Surgery and extent.**
    - Diagnostic surgery for indeterminate cytology: lobectomy.
-   - Differentiated thyroid cancer 1–4 cm without ETE or nodal disease: lobectomy or total thyroidectomy (lobectomy acceptable per ATA 2015 for low-risk disease).
+   - Differentiated thyroid cancer 1–4 cm without ETE or nodal disease: lobectomy or total thyroidectomy (lobectomy acceptable per ATA 2015 for low-risk disease; a 2025 ATA differentiated thyroid cancer guideline has been published — [VERIFY] against it).
    - >4 cm, gross ETE, clinically apparent nodal or distant metastases, or bilateral disease → total thyroidectomy ± neck dissection.
    - Papillary microcarcinoma <1 cm without high-risk features, away from the trachea and recurrent laryngeal nerve: active surveillance is an evidence-based alternative to lobectomy.
    - Suspected medullary carcinoma: calcitonin, CEA, RET germline testing, and exclude pheochromocytoma before surgery.
@@ -109,6 +140,21 @@ RISK MODIFIERS APPLIED: [radiation, family syndrome, PET avidity]
 PITFALLS TO AVOID:
 - [ ]
 ```
+
+## Verification
+
+- [ ] The TSH result decides scintigraphy vs ultrasound before any FNA decision.
+- [ ] One risk system is named (ACR TI-RADS 2017 or ATA 2015), each point or pattern feature is traced to an ultrasound descriptor, and the size threshold comes from the same system.
+- [ ] Cervical nodes are addressed, and a suspicious node gets FNA regardless of nodule size.
+- [ ] The Bethesda edition is named, malignancy risk is quoted from that edition, and any molecular result maps to a specific action.
+- [ ] Surgical extent is checked against the current ATA DTC guideline (2015; 2025 [VERIFY]); confirm doses, renal adjustment and thresholds against the current guideline and local formulary (levothyroxine, antithyroid drugs, radioiodine).
+
+## False-Positive Prevention
+
+- Comet-tail artifact in colloid or spongiform tissue scored as punctate echogenic foci — that adds 3 false points.
+- An ill-defined margin scored as lobulated or irregular (0 vs 2 points).
+- Diffuse FDG thyroid uptake (thyroiditis) handled like focal uptake.
+- A "suspicious" gene-expression classifier result without a specific high-risk alteration treated as cancer — it carries a substantial benign rate; diagnostic lobectomy, not total thyroidectomy by default.
 
 ## Worked Example
 

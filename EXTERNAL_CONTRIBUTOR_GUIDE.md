@@ -1,6 +1,6 @@
 # External Contributor Guide
 
-Welcome! 👋 This repository is a large, organized collection of AI prompts, coding-agent resources, and prompt-engineering techniques (4,400+ prompts across 42 domains, plus a 289-technique catalog). This guide is the friendly, end-to-end starting point for contributing. For the detailed rules, see [`CONTRIBUTING.md`](CONTRIBUTING.md); for community expectations, see [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+Welcome! 👋 This repository is a large, organized collection of AI prompts, coding-agent resources, and prompt-engineering techniques (4,400+ prompts across 48 domains, plus a 327-technique catalog). This guide is the friendly, end-to-end starting point for contributing. For the detailed rules, see [`CONTRIBUTING.md`](CONTRIBUTING.md); for community expectations, see [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
 
 ## Why contribute
 

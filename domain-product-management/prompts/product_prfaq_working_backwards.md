@@ -16,6 +16,9 @@ tags:
   - press-release
   - customer-problem
   - pre-build
+  - new-product-idea
+  - should-we-build
+  - pitch-an-idea
 updated: "2026-09-24"
 related_prompts:
   - domain-product-management/prompts/product_create_prd.md

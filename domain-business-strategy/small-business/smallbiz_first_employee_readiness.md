@@ -16,6 +16,9 @@ tags:
   - payroll
   - break-even
   - owner-operator
+  - afford-hiring-help
+  - doing-everything-alone
+  - contractor-or-staff
 updated: "2026-09-24"
 related_prompts:
   - domain-hr-management/hiring/hr_job_description_writer.md

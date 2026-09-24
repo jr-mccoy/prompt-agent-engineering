@@ -17,6 +17,9 @@ tags:
   - guardrail-metrics
   - decision-rule
   - pre-registration
+  - test-a-feature
+  - build-or-drop
+  - prove-it-works
 updated: "2026-09-24"
 related_prompts:
   - domain-data-analytics/experiments-and-reporting/analytics_ab_test_readout.md

@@ -18,6 +18,7 @@ tags:
   - pro-hac-vice
   - in-house-counsel
   - remote-practice
+  - not-licensed-here
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, classificatory, rule_application]

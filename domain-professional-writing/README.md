@@ -42,11 +42,11 @@ domain-professional-writing/
 | Subdirectory | Count | Description |
 |--------------|-------|-------------|
 | `domain-specific/` | 24 | Professional field prompts |
-| `business-writing/` | 11 | Executive brief, status report, proposal, PRD, post-mortem, SOP, technical doc, nine principles |
+| `business-writing/` | 14 | Executive brief, status report, proposal (general, executive template, client engagement, investment example), PRD, post-mortem, SOP, technical doc, meeting notes, engagement case study, testimonial/referral request, nine principles |
 | `content-quality/` | 19 | `quality_slop_*` evaluators by document type (moved here from `domain-productivity/validation/`) |
 | `content-production/` | 8 | `content_*` generators for channel content: long-form script, short-form hook bank, SEO title/description, one-to-many repurposing, series/channel voice bible, podcast episode outline (rundown + show notes), podcast host interview prep, video shot list and pre-production |
 | `writing/` | 12 | General writing prompts, including the newsletter issue writer, an inverted-pyramid news article writer, and an interview-transcript-to-feature writer with quote-fidelity rules |
-| **Total** | **74** | |
+| **Total** | **77** | |
 
 > `business-documents/` was removed: all nine files were a stale pre-frontmatter
 > mirror of `business-writing/`, whose versions are roughly twice as long.
@@ -103,4 +103,4 @@ Use these prompts when you need to:
 
 ---
 
-*Migrated from: `prompts/non-engineering/domain-specific/`, `prompts/non-engineering/business/`, `prompts/non-engineering/writing_*`*
+*Consolidated here from the retired pre-reorg `prompts/non-engineering/` tree (its `domain-specific/`, `business/` and `writing_*` files), which no longer exists; the current files are the subfolders listed above.*

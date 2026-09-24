@@ -19,6 +19,7 @@ tags:
   - sanctions
   - antitrust
   - gap-analysis
+  - bribery-risk
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, systematic, evaluative]

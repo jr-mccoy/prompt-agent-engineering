@@ -17,6 +17,9 @@ tags:
   - functional-expenses
   - reserves
   - finance
+  - grant-money-rules
+  - overhead-not-covered
+  - cash-always-tight
 updated: "2026-09-24"
 related_prompts:
   - domain-finance/corporate-finance-fpa/finance_budget_variance_investigator.md

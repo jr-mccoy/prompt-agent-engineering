@@ -17,6 +17,7 @@ tags:
   - legal-hold
   - data-minimization
   - information-governance
+  - how-long-to-keep
 updated: "2026-09-24"
 reasoning:
   styles: [classificatory, systematic, analytic]
@@ -143,7 +144,7 @@ related_prompts:
 | IT-02 Chat messages (transitory) | All | None identified in survey | Operational | Minimization | 90 days, except business-record content moved to the relevant class | Message date | Automated deletion |
 
 - **Legal-hold override:** The pending class action places HR-03 and chat messages of named payroll custodians on hold; the 90-day chat deletion job must exclude held custodians before it is enabled.
-- **Conflict resolution:** Legacy payroll records beyond the rule are disposed of only for employees outside the class definition and outside the hold scope; decision recorded with counsel sign-off.
+- **Conflict resolution:** Legacy payroll deletion is suspended for the whole HR-03 record class — not only for employees inside the proposed class definition, which can change before certification — until class certification is decided and the case is resolved, or litigation counsel issues a written hold release covering the records; the suspension and any later release are recorded with counsel sign-off.
 
 ---
 

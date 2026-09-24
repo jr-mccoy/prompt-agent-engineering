@@ -21,9 +21,9 @@ tags:
 updated: "2026-02-26"
 related_prompts:
   - domain-risk/risk_crisis_severity_triage.md
-  - decision-making/decisioning_escalation_decision_tree.md
+  - domain-decision-making/decisioning_escalation_decision_tree.md
   - domain-risk/risk_crisis_communication_playbook.md
-  - decision-making/decisioning_time_boxed_decision_protocol.md
+  - domain-decision-making/decisioning_time_boxed_decision_protocol.md
 ---
 
 # Rapid Stakeholder Alignment

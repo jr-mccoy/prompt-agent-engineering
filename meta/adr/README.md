@@ -57,7 +57,7 @@ later reversed, add a new ADR that supersedes the old one and mark the old one
 | [0040](0040-public-performance-claim-governance.md) | Public performance-claim governance | Accepted |
 | [0041](0041-author-reviewer-separation.md) | Author/reviewer separation and the masked authoring firewall | Accepted |
 | [0042](0042-prompt-caching-on-the-paid-path.md) | Prompt caching on the paid path, and the token accounting it requires | Accepted |
-| [0043](0043-subject-homes-for-sales-health-analytics-ops.md) | Subject homes for sales and customer work, business analytics, operations and consumer wellness | Accepted |
+| [0043](0043-subject-homes-for-sales-health-analytics-ops.md) | Subject homes for sales and customer work, business analytics, operations and consumer wellness | Accepted (amended 2026-09-24: regression cases shipped) |
 
 ## Related
 

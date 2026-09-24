@@ -16,6 +16,9 @@ tags:
   - contingency
   - allowances
   - contractor
+  - pricing-a-job
+  - underpriced-jobs
+  - hidden-surprises
 updated: "2026-09-24"
 reasoning:
   styles: [quantitative, systematic, analytic]

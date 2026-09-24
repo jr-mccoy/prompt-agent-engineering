@@ -16,6 +16,9 @@ tags:
   - customer-communication
   - internal-enablement
   - rollout
+  - whats-new-announcement
+  - breaking-changes
+  - brief-support-team
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/developer-tools/changelog-automation/SKILL.md

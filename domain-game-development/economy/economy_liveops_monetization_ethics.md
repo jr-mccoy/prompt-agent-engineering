@@ -17,6 +17,9 @@ tags:
   - minors
   - game-economy
   - ethics
+  - battle-pass
+  - in-game-purchases
+  - team-burnout
 updated: "2026-09-24"
 related_prompts:
   - domain-game-development/economy/economy_system_design.md

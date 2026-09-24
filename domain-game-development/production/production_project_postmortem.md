@@ -15,6 +15,9 @@ tags:
   - lessons-learned
   - scope-management
   - crunch
+  - project-cancelled
+  - over-budget
+  - missed-deadlines
 updated: "2026-09-24"
 related_prompts:
   - domain-engineering-workflows/workflows/engineering_postmortem_blueprint.md

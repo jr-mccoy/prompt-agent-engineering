@@ -15,12 +15,44 @@ tags:
   - radiology
   - mri-spine
   - interpretation
+  - back-pain
+  - leg-weakness
+  - slipped-disc
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/interpretation/interp_mri_brain.md
+  - domain-healthcare-clinical/prompts/specialty/medicine_oncology_case_framer.md
+  - domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
 Read an MRI spine report against the neurologic exam and produce an impression that first answers "is this a surgical or oncologic emergency?", then correlates each degenerative finding to the symptomatic root or cord level, and commits to the action. Input is the report or structured findings, not images.
+
+Decision support for a licensed clinician: confirm steroid, antibiotic, and anticoagulant doses, renal adjustment, and surgical thresholds against the current guideline and local protocol. A patient with a new cord or cauda equina deficit is escalated now, not after this output.
+
+## When to Use
+
+- An MRI spine report is back and you need to know first whether it shows a surgical, oncologic, or infective emergency.
+- Deciding whether a degenerative finding (disc, stenosis) actually explains the patient's root or cord syndrome.
+- Distinguishing malignant from osteoporotic compression fracture, or compressive from inflammatory cord signal.
+
+**Not this prompt if:**
+- The imaging is of the brain or orbits — use `domain-healthcare-clinical/prompts/interpretation/interp_mri_brain.md`.
+- The question is which imaging to order for back pain in the first place — use `domain-healthcare-clinical/prompts/reasoning/medicine_imaging_ordering_rationale.md`.
+- The task is framing the whole cancer case for tumor board — use `domain-healthcare-clinical/prompts/specialty/medicine_oncology_case_framer.md`.
 
 ## Inputs
 
@@ -32,7 +64,7 @@ Read an MRI spine report against the neurologic exam and produce an impression t
 
 ## Role
 
-Senior spine surgeon or neurology attending reading the MRI report with the exam in hand.
+Senior spine surgeon or neurology attending supporting the treating clinician; reads the MRI report with the exam in hand and commits to an impression they can verify.
 
 ## Reasoning Steps
 
@@ -41,6 +73,7 @@ Senior spine surgeon or neurology attending reading the MRI report with the exam
    - **Cauda equina syndrome:** large central disc or mass compressing the thecal sac below the conus with saddle anesthesia, urinary retention, or bilateral radicular deficits.
    - **Spinal epidural abscess / discitis-osteomyelitis:** T2/STIR disc hyperintensity, endplate erosion, enhancing disc and paraspinal/epidural collection; rim-enhancing epidural collection.
    - **Epidural hematoma, cord infarct, acute transverse myelitis.**
+   - **Stop and escalate now if:** cord compression or cauda equina compression is shown or clinically suspected (new weakness, sensory level, saddle anesthesia, retention), or an epidural abscess/hematoma is present — same-hour spine surgery (and oncology/radiation oncology for tumor) contact before the rest of the read.
 
 2. **Numbering check.** Transitional lumbosacral anatomy and counting errors shift the "level" by one — confirm the report's numbering against prior imaging or whole-spine localizer before planning surgery.
 
@@ -73,6 +106,22 @@ IMPRESSION:
 2. [next] — [action]
 3. [non-concordant degenerative findings] — [no intervention]
 ```
+
+## Verification
+
+- [ ] Emergency screen (cord compression, cauda equina, abscess, hematoma) answered before any degenerative finding is discussed.
+- [ ] Every "concordant" level matched to a named myotome, dermatome, or reflex from the exam — not to the report alone.
+- [ ] Level numbering confirmed (or flagged as unconfirmed) before any surgical recommendation.
+- [ ] Steroid and antibiotic doses checked against weight, renal function, and diabetes; each dose attributed to the current guideline or local protocol.
+- [ ] Whole-spine imaging addressed when tumor or infection is present.
+- [ ] States what would change the plan (progressing deficit, culture result, SINS score, surgical candidacy).
+
+## False-Positive Prevention
+
+- **Incidental degeneration treated as the cause:** age-related bulges, protrusions, and Modic change reported as the explanation without exam concordance.
+- **Osteoporotic fracture called malignant** (or the reverse) without checking marrow signal, posterior border, pedicles, and soft-tissue mass.
+- **Longitudinal cord signal labeled MS** when length ≥3 segments points to NMOSD, MOGAD, infection, or metabolic myelopathy.
+- **Report severity words taken at face value:** "mild stenosis" does not exclude cauda equina when bladder signs are present; "severe stenosis" does not mandate surgery without symptoms.
 
 ## Worked Example
 

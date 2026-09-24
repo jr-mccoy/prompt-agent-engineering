@@ -16,6 +16,9 @@ tags:
   - five-whys
   - countermeasures
   - lean
+  - problem-keeps-recurring
+  - figure-out-why
+  - error-rate-up
 updated: "2026-09-24"
 related_prompts:
   - domain-operations/process-improvement/ops_process_map_and_waste_scan.md

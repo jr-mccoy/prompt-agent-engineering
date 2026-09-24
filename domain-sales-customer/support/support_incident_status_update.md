@@ -15,6 +15,8 @@ tags:
   - outage
   - customer-communication
   - customer-support
+  - site-is-down
+  - keep-customers-informed
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/support/support_escalation_response_drafter.md

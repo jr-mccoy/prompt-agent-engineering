@@ -15,6 +15,9 @@ tags:
   - paid-media
   - campaign
   - pacing
+  - ad-budget-split
+  - when-to-stop
+  - cost-per-customer
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/marketing/paid-ads/SKILL.md

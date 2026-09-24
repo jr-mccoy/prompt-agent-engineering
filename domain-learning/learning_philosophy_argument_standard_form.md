@@ -15,6 +15,9 @@ tags:
   - validity
   - self-study
   - humanities
+  - dense-reading
+  - does-it-follow
+  - spot-weak-reasoning
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, deductive, structural]

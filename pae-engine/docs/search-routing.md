@@ -251,7 +251,7 @@ otherwise                              → matched
 > evaluation exists. An absolute score threshold was tested and measured inert.
 
 `matched` is deliberately rare: on the regression set the Router returns
-`ambiguous` for 69 of its 146 cases and `matched` for 50. Returning ranked alternatives
+`ambiguous` for 70 of its 146 cases and `matched` for 52. Returning ranked alternatives
 beats manufacturing a single confident answer.
 
 ---

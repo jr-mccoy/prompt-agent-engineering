@@ -15,6 +15,9 @@ tags:
   - home-buying
   - defects
   - triage
+  - scary-findings
+  - ask-for-repairs
+  - walk-away
 updated: "2026-09-24"
 reasoning:
   styles: [classificatory, systematic, analytic]

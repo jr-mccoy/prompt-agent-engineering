@@ -16,6 +16,8 @@ tags:
   - thresholds
   - escalation
   - leading-indicators
+  - early-warning-signs
+  - what-to-track
 updated: "2026-09-24"
 reasoning:
   styles: [causal, quantitative, structural]

@@ -16,6 +16,9 @@ tags:
   - bench-strength
   - leadership-pipeline
   - people-ops
+  - key-person-leaving
+  - upcoming-retirement
+  - no-backup-person
 updated: "2026-09-24"
 related_prompts:
   - domain-hr-management/performance-reviews/hr_calibration_facilitator.md

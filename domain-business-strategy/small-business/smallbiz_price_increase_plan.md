@@ -16,6 +16,9 @@ tags:
   - customer-communication
   - margins
   - retention
+  - costs-went-up
+  - charging-too-little
+  - worried-about-regulars
 updated: "2026-09-24"
 related_prompts:
   - domain-business-strategy/client-services/services_pricing_model_selector.md

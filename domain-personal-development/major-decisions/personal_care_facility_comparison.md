@@ -16,6 +16,9 @@ tags:
   - care-facilities
   - family
   - decision-quality
+  - parent-needs-care
+  - parent-with-dementia
+  - hospital-discharge
 updated: "2026-09-24"
 reasoning:
   styles: [evidential, comparative, multi-criteria, empathic]

@@ -15,6 +15,9 @@ tags:
   - game-writing
   - interactive-narrative
   - state-variables
+  - choices-dont-matter
+  - player-gets-stuck
+  - too-many-branches
 updated: "2026-09-24"
 related_prompts:
   - domain-game-development/design/design_game_design_document.md

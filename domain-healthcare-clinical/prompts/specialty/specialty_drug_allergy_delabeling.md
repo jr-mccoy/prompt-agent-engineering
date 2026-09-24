@@ -14,12 +14,42 @@ tags:
   - antimicrobial-stewardship
   - penicillin-allergy
   - specialty-assessment
+  - old-allergy-label
+  - antibiotic-rash-history
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/pharmacology/pharm_adverse_drug_reaction_naranjo.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md
+  - domain-healthcare-clinical/prompts/specialty/specialty_pharyngitis_centor.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Evaluate an existing drug allergy label and decide what to do with it: remove it on history alone, remove it after a direct oral challenge, route it to skin testing, or keep it as a confirmed contraindication. Also decide what the patient can safely receive now, and rewrite the allergy entry. Distinct from `pharmacology/pharm_adverse_drug_reaction_naranjo.md`, which assesses causality of a new, suspected reaction — this prompt starts from a historical label and aims to remove it where it is wrong.
+Evaluate an existing drug allergy label and decide what to do with it: remove it on history alone, remove it after a direct oral challenge, route it to skin testing, or keep it as a confirmed contraindication. Also decide what the patient can safely receive now, and rewrite the allergy entry.
+
+Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with an active reaction (step 1) is treated and escalated now, not delabeled.
+
+## When to Use
+
+- A patient carries a penicillin (or cephalosporin or sulfonamide antibiotic) allergy label that is blocking the preferred drug.
+- An admission or pre-operative review where an old, vague allergy entry should be clarified or removed.
+- Deciding which beta-lactam can be given safely today while the label is still in place.
+
+**Not this prompt if:**
+- A new reaction has just happened and the question is whether the drug caused it → [`pharm_adverse_drug_reaction_naranjo.md`](../pharmacology/pharm_adverse_drug_reaction_naranjo.md); this prompt starts from a historical label and aims to remove it where it is wrong.
+- The question is antibiotic choice or de-escalation in general, not the allergy label → [`medicine_antibiotic_stewardship_advisor.md`](../pharmacology/medicine_antibiotic_stewardship_advisor.md).
 
 ## Inputs
 
@@ -32,11 +62,12 @@ Evaluate an existing drug allergy label and decide what to do with it: remove it
 
 ## Role
 
-Senior attending allergist-immunologist running an antimicrobial-stewardship delabeling service, writing the consult note.
+Senior attending allergist-immunologist running an antimicrobial-stewardship delabeling service, supporting the treating clinician with the consult note.
 
 ## Reasoning Steps
 
-1. **Reconstruct the history before scoring.** Most penicillin labels do not reflect current IgE-mediated allergy: roughly 10% of patients carry the label, and over 90% of those tested tolerate penicillin. IgE sensitization also wanes over time. Get the reaction, the timing, the treatment, and any tolerated exposure since.
+1. **Reconstruct the history before scoring.** Most penicillin labels do not reflect current IgE-mediated allergy: roughly 10% of patients carry the label, and over 90% of those tested tolerate penicillin (Shenoy et al., JAMA 2019). IgE sensitization also wanes over time. Get the reaction, the timing, the treatment, and any tolerated exposure since.
+   - **Stop and escalate now if:** the patient has a reaction in progress — hives with wheeze, throat tightness, hypotension or syncope (treat as anaphylaxis: IM epinephrine, emergency response), or new blistering, skin peeling, mucosal erosions, or fever with rash or organ dysfunction (possible SJS/TEN or DRESS — stop the suspect drug, urgent dermatology/allergy). Delabeling waits until the patient is well.
 
 2. **Remove on history alone (no testing needed)** when the label is:
    - A side effect or intolerance (nausea, diarrhea, headache, dizziness, yeast infection).
@@ -60,7 +91,7 @@ Senior attending allergist-immunologist running an antimicrobial-stewardship del
 6. **Prescribe safely while the label stands — use side-chain logic.**
    - Penicillin–cephalosporin cross-reactivity is low overall and driven mainly by R1 side-chain similarity.
    - **Cefazolin** has a unique side chain — it can be given to patients with non-severe penicillin allergy, including surgical prophylaxis, without testing.
-   - Amoxicillin/ampicillin share side chains with cephalexin, cefadroxil, and cefaclor — avoid those in a true aminopenicillin allergy.
+   - Shared R1 side chains (amoxicillin/ampicillin ↔ cephalexin, cefadroxil, cefaclor) matter mainly after anaphylaxis or another severe immediate reaction — choose a dissimilar-side-chain cephalosporin then; after a non-severe reaction such as hives (not anaphylaxis, and not SJS/TEN, DRESS or another severe delayed reaction), the 2022 AAAAI/ACAAI drug-allergy practice parameter permits cephalosporins without testing.
    - Third- and fourth-generation cephalosporins with dissimilar side chains (ceftriaxone, cefepime) are generally usable in non-severe penicillin allergy.
    - Carbapenems: cross-reactivity <1%; give at full dose for non-severe histories.
    - Aztreonam: no cross-reactivity with penicillins; shares a side chain with ceftazidime.
@@ -96,6 +127,21 @@ RECORD UPDATE: [new EHR entry text; patient documentation]
 PITFALLS:
 - [challenging after SCAR, avoiding cefazolin unnecessarily, trusting the label over a tolerated course, not updating the EHR]
 ```
+
+## Verification
+
+- [ ] The history was reconstructed (drug, timing, symptoms, treatment, later exposures) before PEN-FAST was scored.
+- [ ] The pathway chosen (remove by history, direct challenge, skin test, desensitize, permanent avoidance) matches the phenotype and score, with the reason stated.
+- [ ] Cross-reactivity statements use side-chain logic and name the practice parameter applied (2022 AAAAI/ACAAI); prevalence figures are attributed.
+- [ ] Challenge and treatment doses account for weight and renal function (e.g., cefazolin, amoxicillin); confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+- [ ] The rewritten EHR entry states the date, test and result, and the patient and pharmacy were informed.
+
+## False-Positive Prevention
+
+- **A delayed benign rash treated as IgE-mediated allergy.** A maculopapular rash starting days into a course, without angioedema or systemic features, is usually a benign delayed reaction (sometimes a viral–drug interaction, as with amoxicillin in EBV) and is low risk for challenge.
+- **"Swelling" scored as angioedema.** It may mean an injection-site reaction or a swollen rash; ask specifically about lips, tongue, throat, breathing and blood pressure before scoring 2 on PEN-FAST.
+- **Subjective challenge symptoms called a failed challenge.** Anxiety, flushing, vasovagal symptoms or itch without objective signs are not a positive test; document objective findings (urticaria, wheeze, hypotension) before re-labeling.
+- **Intolerance recorded as allergy.** GI upset, headache or yeast infection are side effects — remove them; do not escalate them to testing.
 
 ## Worked Example
 

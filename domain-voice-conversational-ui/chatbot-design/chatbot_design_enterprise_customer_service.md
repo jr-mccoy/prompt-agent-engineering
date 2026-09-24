@@ -64,12 +64,7 @@ updated: "2026-03-19"
    - Follow-up: How user checks ticket status via the bot
 
 5. **Define Agent Handoff Protocol**
-   - **Trigger conditions**: Explicit request, repeated failure, sentiment detection, VIP routing
-   - **Context package**: Conversation summary, collected data, attempted solutions, user sentiment
-   - **Routing rules**: Skill-based routing to appropriate agent group
-   - **Queue management**: Expected wait time, callback option, continue self-service while waiting
-   - **Warm transfer**: Bot introduces the situation, agent picks up seamlessly
-   - **After-hours handling**: Ticket creation, callback scheduling, self-service alternatives
+   Summarize tier routing: Tier 3 intents go straight to a human; Tier 1–2 intents escalate on explicit request, repeated failure, or negative sentiment, routed to the matching agent group → design the transfer itself with `chatbot_design_human_agent_handoff.md`.
 
 6. **Design CSAT and Metrics Framework**
    - In-conversation CSAT: Quick survey after resolution (1-5 or thumbs up/down)
@@ -90,7 +85,7 @@ updated: "2026-03-19"
 
 8. **CRITICAL: Validate the design**
    - Walk through top 10 support scenarios end-to-end
-   - Verify handoff context is sufficient for agents
+   - Verify every Tier 3 intent and escalation trigger routes to the right agent group (transfer design: `chatbot_design_human_agent_handoff.md`)
    - Check that authentication doesn't create friction for simple queries
    - Ensure GDPR/privacy compliance for stored conversations
    - **Confidence**: High (based on ticket data), Medium (estimated), Low (assumed)
@@ -132,7 +127,7 @@ updated: "2026-03-19"
 | Product docs | Technical specs | On release | Hybrid |
 
 ### Agent Handoff Flow
-[Mermaid diagram and protocol specification]
+[Tier → escalation trigger → agent group summary] → design the transfer itself with `chatbot_design_human_agent_handoff.md`.
 
 ### Metrics Dashboard
 | Metric | Target | Alert Threshold |

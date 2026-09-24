@@ -15,6 +15,9 @@ tags:
   - food-log
   - strong-guard
   - disordered-eating-guard
+  - afternoon-energy-crash
+  - flat-in-workouts
+  - eating-habits-check
 updated: "2026-09-24"
 related_prompts:
   - domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md
@@ -28,6 +31,15 @@ related_prompts:
 what is already working, the one to three changes most likely to help their energy,
 training, and long-term health, and what they should not bother changing.
 
+> **Readiness gate.** Start from a Readiness Profile
+> (`foundations/wellness_readiness_and_red_flag_screen.md`). No profile → ask its
+> blocks 1–8 first. URGENT-CARE-NOW, CLINICIAN-FIRST, or OUT-OF-SCOPE → stop and
+> restate the route. An urgent result means contacting the local emergency number
+> now (e.g. 911 in the US). GO-WITH-LIMITS → every limit binds this prompt, and the
+> *Nutrition guard* line must still read CLEAR (the STRONG-GUARD block below).
+> If the readiness gate and the STRONG-GUARD both fire, the gate's route wins; the
+> redirect template below is used only once the gate is GO or GO-WITH-LIMITS.
+
 > **STRONG-GUARD prompt.** Nutrition advice is where a wellness prompt most easily
 > does harm: it can feed restriction, reward compensation, or lend a plan to someone
 > whose goal is itself the symptom. This prompt therefore **stops and redirects** —
@@ -36,21 +48,40 @@ training, and long-term health, and what they should not bother changing.
 > - **Restriction:** deliberately skipping meals or cutting food groups to control
 >   weight or out of fear; rigid food rules that cause distress; eating very little
 >   and describing it as discipline.
+> - **Loss of control or preoccupation:** binge or loss-of-control eating; thoughts
+>   about food, weight, or body shape that crowd out other things.
+> - **Low energy availability in people who train:** missed or stopped periods,
+>   repeated bone-stress injuries, or performance and energy falling while training
+>   more (signs of relative energy deficiency in sport, RED-S).
 > - **Compensation:** vomiting, laxatives, diuretics, fasting, or exercise used to
 >   "undo" or "earn" food.
 > - **Rapid weight-loss goals:** more than about 1% of body weight a week, a large
 >   amount by a fixed date, or a request for an intake below commonly cited
->   unsupervised floors (roughly 1,200 kcal/day for women, 1,500 for men).
+>   unsupervised floors (roughly 1,200 kcal/day for women, 1,500 for men) — these are
+>   conservative guard triggers, not clinical targets or an intake to aim for.
 > - **Minors** (under 18), **pregnancy or breastfeeding**, or a **diagnosed condition**
 >   the eating is meant to manage (diabetes, kidney disease, an eating disorder, and so on).
 >
 > **This prompt never** sets a calorie target, gives a weight-loss rate, names or doses
-> a supplement, or infers a deficiency from symptoms. The redirect is short, plain, and
-> kind: what was noticed in the person's own words, that it is worth talking to a
-> clinician (primary care, and a registered dietitian — ideally one experienced with
-> eating concerns), and, if they feel unsafe or overwhelmed, the crisis route in
-> `domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md`
-> (in the US, call or text 988). Then it stops.
+> a supplement, or infers a deficiency from symptoms. When the guard fires, the whole
+> response is the redirect template below — kind, non-shaming, no numbers — and then it stops.
+>
+> **Redirect template — use verbatim; fill only the bracket.**
+> "Thank you for telling me that [what was noticed, in the person's own words]. That
+> is worth taking seriously, and an eating audit or meal plan from me is not the right
+> help for it, so I'm going to stop here. The best next step is to talk with your doctor
+> and a registered dietitian — ideally one experienced with eating concerns — and you
+> can show them exactly what you told me. If it would help to arrive with an honest
+> record, `domain-psychology/client-self-use/specialty/clientself_eating_self_monitoring_with_handoff.md`
+> sets one up to bring to that appointment. If you ever feel unsafe or overwhelmed,
+> call or text 988 in the US (or your local crisis line), or use
+> `domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md`."
+>
+> Adjust only for these cases: **under 18** → sentence 3 names "a parent or guardian and
+> your doctor", and sentence 4 is dropped (the record prompt is for adults);
+> **pregnancy, breastfeeding, or a diagnosed condition** with no eating-concern signal →
+> sentence 3 names the midwife, OB, or treating clinician and a registered dietitian, and
+> sentence 4 is dropped. No numbers for food, weight, or calories appear in any version.
 
 **When to Use:**
 - You eat "fine" but run out of energy mid-afternoon or in training.
@@ -63,8 +94,9 @@ training, and long-term health, and what they should not bother changing.
 
 ## Inputs / Context
 
-1. **Readiness Profile** — the *Nutrition guard* line must read CLEAR. STOP, or no
-   profile and a *yes* to gate block 7 → redirect as above.
+1. **Readiness Profile** — the *Gate result* must be GO or GO-WITH-LIMITS (otherwise
+   stop and restate the route; no profile → run the screen's blocks 1–8 first), and the
+   *Nutrition guard* line must read CLEAR. STOP → the redirect template, nothing else.
 2. **3–7 ordinary days, in plain words:** what, roughly how much ("a bowl", "two slices"),
    and when. No weighing or calorie counts needed — do not ask for them.
 3. **Training days** marked, with session time.
@@ -75,8 +107,10 @@ training, and long-term health, and what they should not bother changing.
 
 ## Method
 
-1. **Run the guard (QA-08).** Check the profile line and read the log and goal for any
-   STRONG-GUARD signal. One signal is enough. If it fires, write the redirect and stop.
+1. **Run the gates (QA-08).** First the readiness gate: *Gate result* GO or
+   GO-WITH-LIMITS, or stop and restate the route. Then the *Nutrition guard* line, and
+   read the log and goal for any STRONG-GUARD signal. One signal is enough. If it fires,
+   write the redirect template and stop.
 2. **Describe before judging.** Summarise the pattern back: meal times, typical meals,
    training days. Ask the person to correct it.
 3. **Audit six dimensions (RT-02).** For each: what the log shows, whether it plausibly
@@ -102,7 +136,8 @@ training, and long-term health, and what they should not bother changing.
 
 ```
 # Eating pattern audit — [name]
-Nutrition guard: CLEAR  (if STOP → redirect only; nothing below)
+Readiness: GO | GO-WITH-LIMITS  (anything else → restate the route; nothing below)
+Nutrition guard: CLEAR  (if STOP → redirect template only; nothing below)
 
 ## Your pattern, as I read it
 [3–5 lines; "correct me if this is off"]
@@ -126,7 +161,8 @@ Structure → nutrition_meal_structure_planner | Shopping → home_meal_plan_wee
 
 ## Verification
 
-- [ ] The guard was run first; any signal produced a redirect and nothing else.
+- [ ] The readiness gate result was checked first (GO or GO-WITH-LIMITS), then the guard;
+  any guard signal produced the verbatim redirect template and nothing else.
 - [ ] No calorie, weight, or supplement figure appears anywhere.
 - [ ] Every change cites something in the log and the person's goal.
 - [ ] At most three changes; at least one "leave alone".
@@ -155,6 +191,7 @@ log; goal "stop crashing at 4 pm and have energy for the gym"; tight budget, coo
 
 ```
 # Eating pattern audit — Leo
+Readiness: GO
 Nutrition guard: CLEAR
 
 ## Your pattern, as I read it
@@ -199,3 +236,5 @@ Structure → nutrition_meal_structure_planner | Shopping → home_meal_plan_wee
 - `domain-health-wellness/nutrition/nutrition_meal_structure_planner.md` — turn the changes into a structure.
 - `domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md` —
   the crisis route when the guard fires and the person feels unsafe.
+- `domain-psychology/client-self-use/specialty/clientself_eating_self_monitoring_with_handoff.md` —
+  where the redirect can land: a clinician-bound eating record.

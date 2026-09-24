@@ -16,6 +16,9 @@ tags:
   - tax-set-aside
   - weekly-review
   - local-business
+  - cash-running-low
+  - paying-myself
+  - surprise-tax-bill
 updated: "2026-09-24"
 related_prompts:
   - domain-finance/treasury-capital-markets/finance_cash_flow_forecasting_model.md

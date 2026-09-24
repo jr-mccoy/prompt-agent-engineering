@@ -16,6 +16,9 @@ tags:
   - llm-as-judge
   - analytics
   - quality-assurance
+  - review-chat-logs
+  - is-bot-helping
+  - bot-mistakes
 updated: "2026-09-24"
 related_prompts:
   - domain-voice-conversational-ui/analytics/analytics_conversation_metrics_framework.md
@@ -43,8 +46,9 @@ whole bot.
   `domain-voice-conversational-ui/analytics/analytics_conversation_metrics_framework.md`.
 - You need funnel drop-off, utterance clustering, or A/B tests across logs →
   `analytics_conversation_optimization.md`.
-- You are scoring *human* agents' calls for coaching → a contact-center QA
-  form; this rubric scores the bot's behaviour.
+- You are scoring *human* agents' calls for coaching →
+  `domain-sales-customer/support/support_agent_interaction_qa_scorecard.md`;
+  this rubric scores the bot's behaviour.
 - You are choosing between pairwise and pointwise scoring for a model eval →
   `domain-prompt-engineering/evaluation/rubrics/rubric_pairwise_vs_pointwise.md`.
 

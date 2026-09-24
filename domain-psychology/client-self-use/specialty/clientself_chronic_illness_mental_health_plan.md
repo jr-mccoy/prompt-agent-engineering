@@ -16,18 +16,20 @@ tags:
   - health-psychology
   - mood-tracking
   - bring-to-care-team
+  - burden-to-family
+  - illness-affecting-mood
+  - tired-or-depressed
 intended_use: model-testing
 updated: "2026-09-24"
 related_prompts:
   - domain-psychology/specialty-clinical/psychology_chronic_illness_adjustment_protocol.md
   - domain-psychology/client-self-use/identity-transitions/clientself_post_diagnosis_adjustment.md
   - domain-psychology/client-self-use/specialty/clientself_chronic_pain_self_management_plan.md
-  - domain-psychology/client-self-use/mood-journaling/clientself_mood_tracking_summarizer.md
 ---
 
 # Mental-Health Plan Alongside a Chronic Illness
 
-> **IF YOU ARE HAVING THOUGHTS OF SUICIDE — INCLUDING THOUGHTS OF STOPPING YOUR TREATMENT SO THAT YOU WILL DIE: call or text 988 (Suicide & Crisis Lifeline, US), call 911, or go to your nearest emergency department (ED) now.** Living with a long-term illness raises that risk, and saying it out loud is the protective step. Outside the US, use your local emergency number. This is a self-management aid — it is **not** a diagnosis, and it does not change your medical treatment.
+> **IF YOU ARE HAVING THOUGHTS OF SUICIDE — INCLUDING THOUGHTS OF STOPPING YOUR TREATMENT SO THAT YOU WILL DIE: call or text 988 (Suicide & Crisis Lifeline, US), call 911, or go to your nearest emergency department (ED) now.** Living with a long-term illness raises that risk, and saying it out loud is the protective step. Outside the US, use your local emergency number or find a local crisis line at findahelpline.com. This is a self-management aid — it is **not** a diagnosis, and it does not change your medical treatment.
 
 ## Objective
 

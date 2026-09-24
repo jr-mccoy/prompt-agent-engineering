@@ -16,6 +16,9 @@ tags:
   - dscr
   - cash-on-cash
   - investing
+  - first-rental
+  - will-it-profit
+  - becoming-a-landlord
 updated: "2026-09-24"
 reasoning:
   styles: [quantitative, analytic, adversarial]

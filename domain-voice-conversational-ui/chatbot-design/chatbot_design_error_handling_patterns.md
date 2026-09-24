@@ -69,12 +69,7 @@ updated: "2026-03-19"
    - Preserve the user's original input for context
 
 5. **Plan Human Handoff Triggers**
-   Define when and how to escalate to a human:
-   - **Triggers**: 3+ errors, detected frustration, explicit request, high-stakes action
-   - **Context transfer**: Summarize conversation for the human agent
-   - **Warm vs cold**: Introduce the handoff or seamlessly transfer
-   - **Availability handling**: What to do when no humans are available
-   - **Return path**: Can the user come back to the bot after human interaction?
+   Name the error-recovery conditions that send a user to a human (e.g. 3+ consecutive errors, detected frustration, an explicit request, a high-stakes action) → design the transfer itself with `chatbot_design_human_agent_handoff.md`.
 
 6. **Handle System Errors Gracefully**
    - API timeouts: "I'm having trouble looking that up. Can I try again?"
@@ -129,11 +124,7 @@ updated: "2026-03-19"
 | 3 | "Let me connect you with someone who can help." | Human handoff |
 
 ### Human Handoff Protocol
-| Trigger | Action | Context Passed |
-|---------|--------|---------------|
-| 3+ errors | Offer handoff | Full conversation transcript |
-| User requests | Immediate transfer | Summary + user info |
-| High-stakes | Confirm then transfer | Action details + auth status |
+Handoff triggers from error recovery: [3+ errors / frustration / explicit request / high-stakes action] → design the transfer itself with `chatbot_design_human_agent_handoff.md`.
 
 ### System Error Responses
 | Error | User-Facing Message | Internal Action |

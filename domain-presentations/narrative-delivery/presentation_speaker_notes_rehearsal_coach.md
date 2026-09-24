@@ -16,6 +16,9 @@ tags:
   - delivery-coaching
   - public-speaking
   - timing
+  - reading-off-slides
+  - running-over-time
+  - nervous-speaker
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/document-processing/ppt-creator/SKILL.md

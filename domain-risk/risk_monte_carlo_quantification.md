@@ -16,6 +16,8 @@ tags:
   - calibrated-estimation
   - uncertainty
   - enterprise-risk
+  - worst-case-cost
+  - potential-losses
 updated: "2026-09-24"
 reasoning:
   styles: [probabilistic, quantitative, evidential]

@@ -1,7 +1,7 @@
 ---
 title: "Sleep Routine and Environment Audit — Timing, Light, Caffeine, Alcohol, and Bedroom for a Healthy Adult"
 category: health-wellness/sleep-recovery
-description: "Audit a healthy adult's sleep from a one-to-two-week log: wake-time regularity, sleep opportunity, morning and evening light, caffeine and alcohol timing, late meals and training, bedroom environment, wind-down, and naps — then run a two-week experiment on the two or three highest-leverage changes. Routes suspected sleep apnoea, chronic insomnia, and other sleep-disorder signs to a clinician (and insomnia to the CBT-I prompt) before any audit. No sleep aids or supplements."
+description: "Audit a healthy adult's sleep from a one-to-two-week log: wake-time regularity, sleep opportunity, morning and evening light, caffeine and alcohol timing, late meals and training, bedroom environment, wind-down, and naps — then run a two-week experiment on the two or three highest-leverage changes. Routes suspected sleep apnea, chronic insomnia, and other sleep-disorder signs to a clinician (and insomnia to the CBT-I prompt only with or after clinician review) before any audit. No sleep aids or supplements."
 techniques:
   - QA-08
   - RT-02
@@ -15,6 +15,9 @@ tags:
   - circadian-rhythm
   - recovery
   - caffeine
+  - wake-up-tired
+  - weekend-lie-ins
+  - phone-in-bed
 updated: "2026-09-24"
 related_prompts:
   - domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md
@@ -31,8 +34,9 @@ after first routing anything that looks like a sleep disorder to a clinician.
 > **Readiness gate.** Start from a Readiness Profile
 > (`foundations/wellness_readiness_and_red_flag_screen.md`). No profile → ask its
 > blocks 1–8 first. URGENT-CARE-NOW, CLINICIAN-FIRST, or OUT-OF-SCOPE → stop and
-> restate the route. The profile's *Sleep flags* line is re-checked in step 1 below;
-> a flag there sends the person to a clinician before this audit runs.
+> restate the route. An urgent result means contacting the local emergency number now
+> (e.g. 911 in the US). The profile's *Sleep flags* line is re-checked in step 1
+> below; a flag there sends the person to a clinician before this audit runs.
 
 **When to Use:**
 - You sleep "okay" but wake unrefreshed, or your sleep is irregular across the week.
@@ -40,9 +44,10 @@ after first routing anything that looks like a sleep disorder to a clinician.
 - You want to know whether caffeine, alcohol, screens, or the bedroom matter *for you*.
 - **Not this prompt if** you have trouble sleeping 3+ nights a week for 3+ months with
   daytime impact — that is insomnia, and it has an effective structured treatment:
-  see a clinician and
+  see a clinician, and use
   `domain-psychology/client-self-use/coping-by-concern/clientself_sleep_cbt_i_sleep_restriction_calculator.md`
-  (read its safety carve-outs first). Sleep problems driven by low mood or anxiety
+  only with or after clinician review — its sleep-restriction step raises daytime
+  sleepiness at first (read its safety carve-outs first). Sleep problems driven by low mood or anxiety
   belong in `domain-psychology/client-self-use/`.
 
 ## Inputs / Context
@@ -62,13 +67,17 @@ after first routing anything that looks like a sleep disorder to a clinician.
    plainly and without diagnosis:
    - Loud snoring with witnessed pauses, gasping, or choking; morning headaches;
      **dozing while driving or in conversation** (and: do not drive drowsy today).
-   - Insomnia pattern: 3+ nights a week, 3+ months, with daytime impact → clinician and
-     the CBT-I prompt (whose carve-outs include untreated apnoea, bipolar disorder,
-     seizures, pregnancy, and safety-sensitive work).
+   - Insomnia pattern: 3+ nights a week, 3+ months, with daytime impact → clinician; the
+     CBT-I prompt only with or after clinician review, because sleep restriction raises
+     daytime sleepiness at first (its carve-outs include untreated apnea, bipolar
+     disorder, seizures, pregnancy, and safety-sensitive work).
    - An irresistible urge to move the legs in the evening; acting out dreams; sudden
      sleep attacks; sleep problems that began with a new medication.
    - Regular use of sleep medication or alcohol to get to sleep.
-   The audit may still run *alongside* a referral for the routine factors, if the person wants.
+   **Insomnia pattern only:** the audit may run *alongside* the clinician referral for the
+   routine factors, if the person wants — never in place of it. Any other sign above, and
+   above all suspected sleep apnea or drowsy driving → referral only; no audit until a
+   clinician has seen the person.
 2. **Summarise the log.** Average time in bed, estimated sleep, wake-time range across
    the week, weekend shift, and the rested score — each with confidence (QA-04).
 3. **Audit nine factors (RT-02).** For each: what the log shows, the general guidance,
@@ -101,7 +110,7 @@ after first routing anything that looks like a sleep disorder to a clinician.
 
 ```
 # Sleep audit — [name]
-Readiness: [result] | Clinical route: none | [flag → clinician / CBT-I prompt]
+Readiness: [result] | Clinical route: none | [flag → clinician; CBT-I prompt only with/after clinician review]
 
 ## Your log, summarised  ([n] nights; confidence [H/M/L])
 Time in bed ~[h] · estimated sleep ~[h] · wake range [time–time] · weekend shift [h] · rested [avg]/5
@@ -123,7 +132,8 @@ No sleep aids or supplements (ask a clinician or pharmacist) · no diagnosis
 ## Verification
 
 - [ ] Clinical-route signs were checked before any audit, including drowsy driving.
-- [ ] The insomnia pattern routes to a clinician and the CBT-I prompt, with its carve-outs noted.
+- [ ] The insomnia pattern routes to a clinician, and to the CBT-I prompt only with or after clinician review, with its carve-outs noted.
+- [ ] The audit ran alongside a referral only for the insomnia pattern — never with suspected apnea or drowsy driving.
 - [ ] Every factor verdict cites the log.
 - [ ] Wake-time regularity and sleep opportunity were considered first.
 - [ ] Two or three changes only, with a pre-stated success criterion.

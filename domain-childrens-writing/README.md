@@ -4,7 +4,7 @@ Craft-forward prompts for **writing kid-friendly material** — children's ficti
 
 The set covers the whole shelf: board/concept books, picture books, early readers, chapter books, middle-grade novels, and the upper-MG/young-teen crossover (fiction), plus narrative and expository/STEM nonfiction — backed by cross-cutting craft tools (openings, dialogue, character, revision, reading-level, read-aloud rhythm, hard topics), representation and illustrator-collaboration guidance, and an author-facing publishing/business track (query, synopsis, pitch).
 
-**Expansion roadmap:** see [`EXPANSION_ROADMAP.md`](EXPANSION_ROADMAP.md) for a prioritized brainstorm of candidate future prompts (series bibles, self-publishing, wordless picture books, and more) — not yet built, just scoped.
+**Expansion roadmap:** all 12 items in [`EXPANSION_ROADMAP.md`](EXPANSION_ROADMAP.md) (series bibles, self-publishing, wordless picture books, and more) were built on 2026-09-24 and are listed below.
 
 ---
 
@@ -55,12 +55,16 @@ Three conventions extend that rigor into the newer corners of the domain:
 | [Upper-MG & YA Crossover Workshop (Ages 11-14)](fiction-workshops/childrens_ya_crossover_workshop.md) | The MG→young-teen bridge — deeper interiority and stakes, short of mature YA |
 | [Verse Novel Workshop (Middle Grade)](fiction-workshops/childrens_verse_novel_workshop.md) | A novel-in-verse — poem-as-chapter, white space as pacing, when verse earns itself |
 | [Graphic Novel & Comics Workshop (For Kids)](fiction-workshops/childrens_graphic_novel_comics_workshop.md) | A kids' graphic novel/comic — script-for-art, panel/page beats, page-turn cliffhangers |
+| [Series Bible & Style-Guide Builder](fiction-workshops/childrens_series_bible_builder.md) | Planning a series — series promise, fixed vs. slow-change rules, voice guide, continuity tracker for later books |
+| [Wordless Picture Book Workshop](fiction-workshops/childrens_wordless_picture_book_workshop.md) | A picture book with no text — an "invisible script" of visible actions, a page-turn device per spread, a child-retell test |
+| [Branching Narrative Workshop (You-Choose Books)](fiction-workshops/childrens_branching_narrative_workshop.md) | An interactive book where the reader chooses — node map, dead-end and loop checks, fair choices, age-matched endings |
 
 ### Nonfiction workshops — `nonfiction-workshops/`
 | Prompt | Use it when |
 |--------|-------------|
 | [Narrative Nonfiction Workshop (Biography & History)](nonfiction-workshops/childrens_narrative_nonfiction_workshop.md) | A true story for kids — narrative arc + strict no-fabrication discipline + back matter |
 | [Expository & STEM Nonfiction Workshop](nonfiction-workshops/childrens_expository_stem_concept_workshop.md) | A concept/how-it-works/STEM book — text structures, analogies, text features, accuracy guardrails |
+| [Informational Picture Book Workshop (History, Careers, Arts, Places)](nonfiction-workshops/childrens_informational_picture_book_workshop.md) | Nonfiction beyond STEM — one organizing approach, a spread plan, whose perspective is told, a sourced fact ledger |
 
 ### Cross-cutting craft tools — `craft-tools/`
 | Prompt | Use it when |
@@ -72,6 +76,8 @@ Three conventions extend that rigor into the newer corners of the domain:
 | [Age & Reading-Level Calibrator](craft-tools/childrens_age_reading_level_calibrator.md) | Retarget a draft to an age band or level (Lexile / Guided Reading / Flesch-Kincaid) without flattening voice |
 | [Read-Aloud Rhythm & Rhyme Polish](craft-tools/childrens_read_aloud_rhythm_rhyme_polish.md) | Fix meter, forced rhymes, and page-turn beats in rhyming/lyrical text |
 | [Sensitive Topics Framing](craft-tools/childrens_sensitive_topics_framing.md) | Handle death, divorce, illness, fear, or injustice — honest, hopeful, age-appropriate, non-preachy |
+| [Decodable Text Mechanics](craft-tools/childrens_decodable_text_mechanics.md) | A phonics-controlled reader — every word checked against the phonics sequence you supply, then a real story restored inside it |
+| [Audiobook & Read-Along Production Considerations](craft-tools/childrens_audiobook_production_considerations.md) | Preparing a book for audio — what listeners miss without the page, dialogue tags for the ear, narrator direction |
 
 ### Representation & illustrator collaboration — `representation-collaboration/`
 | Prompt | Use it when |
@@ -79,6 +85,7 @@ Three conventions extend that rigor into the newer corners of the domain:
 | [Writing Across Difference: Authenticity & Stereotype Self-Audit](representation-collaboration/childrens_writing_across_difference_audit.md) | Auditing a manuscript that depicts identities you don't share — prep for (not replace) a sensitivity reader |
 | [Illustrator Collaboration & Art Notes](representation-collaboration/childrens_illustrator_collaboration.md) | Dividing text/art labor — art-note discipline, the dummy, traditional vs. self-pub production norms |
 | [Accessible & Inclusive Design for Young Readers](representation-collaboration/childrens_accessible_inclusive_design.md) | Design-in accessibility — dyslexia-friendly, neurodivergent readers, inclusive content |
+| [Illustration Brief for Hire](representation-collaboration/childrens_illustration_brief_for_hire.md) | A self-publisher hiring a human illustrator — scope, story-critical visual facts, style by qualities, deal-term checklist (all VERIFY) |
 
 ### Publishing & business — `publishing-business/`
 | Prompt | Use it when |
@@ -86,6 +93,11 @@ Three conventions extend that rigor into the newer corners of the domain:
 | [Kidlit Query Letter Builder](publishing-business/childrens_query_letter_kidlit.md) | Writing an agent query — form-specific norms, hook, bio, comps (real, verified) |
 | [Synopsis & Submission Package Assembler](publishing-business/childrens_synopsis_submission_package.md) | A one-page synopsis + correctly formatted submission package per form |
 | [Pitch, Comp Titles & Market Positioning](publishing-business/childrens_pitch_comps_market_positioning.md) | A logline, real comp titles, and honest market positioning |
+| [Self-Publishing Prep](publishing-business/childrens_self_publishing_prep.md) | Getting a correct book file into print — path choice, format specs to verify, ISBN and metadata, product-safety flag |
+| [Book Marketing Copy](publishing-business/childrens_book_marketing_copy.md) | Jacket and retailer copy, a trailer script and social lines — adult vs. child buyer per age band, no invented blurbs |
+| [School Visit & Author-Event Prep](publishing-business/childrens_school_visit_prep.md) | A school or library visit — excerpt choice, session plan per age band, Q&A bank, host logistics and consent questions |
+| [Translation & International Rights Considerations](publishing-business/childrens_translation_rights_considerations.md) | Preparing for translation — which rights you hold (from your contract only), what won't translate, questions for agent or lawyer |
+| [Grant, Fellowship & Residency Application Prep](publishing-business/childrens_grant_fellowship_application_prep.md) | An individual author applying for arts funding — rules from the program's own guidelines, fit check, artistic-purpose narrative |
 
 ---
 

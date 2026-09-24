@@ -15,6 +15,9 @@ tags:
   - littles-law
   - utilization
   - queueing
+  - orders-piling-up
+  - cant-keep-up
+  - slow-turnaround
 updated: "2026-09-24"
 related_prompts:
   - domain-operations/process-improvement/ops_process_map_and_waste_scan.md

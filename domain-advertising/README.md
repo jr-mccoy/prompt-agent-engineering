@@ -81,9 +81,9 @@ All 17 prompts explicitly include and enforce:
 ## Session 10 Cross-Links (visual-planning)
 
 These advertising prompts cross-link to Session 10 visual-planning references:
-- `domain-presentations/visual-planning/visual_frontier_map.md`
-- `domain-presentations/visual-planning/visual_qa_harness.md`
-- `domain-presentations/visual-planning/visual_workflow_router.md`
+- [`visualplan_capability_frontier_map.md`](../domain-presentations/visual-planning/visualplan_capability_frontier_map.md)
+- [`visualplan_visual_qa_harness.md`](../domain-presentations/visual-planning/visualplan_visual_qa_harness.md)
+- [`visualplan_modality_router.md`](../domain-presentations/visual-planning/visualplan_modality_router.md)
 
 ## Route elsewhere for
 

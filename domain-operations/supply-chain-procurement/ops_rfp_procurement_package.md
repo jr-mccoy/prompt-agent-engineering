@@ -15,6 +15,9 @@ tags:
   - evaluation-rubric
   - bid-scoring
   - buyer-side
+  - getting-quotes
+  - compare-bids-fairly
+  - hire-a-vendor
 updated: "2026-09-24"
 related_prompts:
   - domain-operations/supply-chain-procurement/ops_supplier_selection_scorecard.md

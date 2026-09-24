@@ -34,6 +34,8 @@ Produce a clean records-request letter you can send to a therapist, clinic, or r
 - Reviewing what's in your chart (intake, diagnoses, treatment plan, medication history, discharge summary).
 - Supporting a disability, school, or benefits application that asks for records.
 
+For general (non-mental-health) medical records, use `domain-written-advocacy/insurance-and-medical/advocacy_medical_records_request.md` instead.
+
 ## Inputs / Context
 
 - Your full name, date of birth, and any patient/record ID you have.

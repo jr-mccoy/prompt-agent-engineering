@@ -16,6 +16,9 @@ tags:
   - genre
   - dread
   - atmosphere
+  - not-scary-enough
+  - ghost-story
+  - creepy-tension
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/genre-workshops/writing_genre_specific_guidance.md

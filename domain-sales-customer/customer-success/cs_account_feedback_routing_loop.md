@@ -15,6 +15,9 @@ tags:
   - account-management
   - product-feedback
   - b2b
+  - feature-requests
+  - customer-feels-ignored
+  - who-should-fix
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/marketing/customer-research/SKILL.md

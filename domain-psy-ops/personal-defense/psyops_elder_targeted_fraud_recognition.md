@@ -15,6 +15,7 @@ tags:
   - older-adults
   - family
   - personal-defense
+  - grandparent-scam
 updated: "2026-09-24"
 reasoning:
   styles: [protective, procedural, empathic]
@@ -99,7 +100,7 @@ The family problem is the other half, and it is where most well-meant help goes 
 If money, codes, passwords, or device access have been given, stop and follow the safety steps now. Speed is what limits the loss. Return afterwards.
 
 ### Step 2 — Name the approach type
-Match what happened to the approach types: a grandchild or relative in sudden trouble who asks you not to tell the parents; an online companion who cannot meet, has an emergency, and needs money; a bank, government, or tech-support caller warning of a problem only they can fix; an investment, prize, or inheritance that requires a fee first. Note what matches and what does not.
+Match what happened to the approach types: a grandchild or relative in sudden trouble who asks you not to tell the parents; an online companion who cannot meet, has an emergency, and needs money; a bank, government, or tech-support caller warning of a problem only they can fix; an investment, prize, or inheritance that requires a fee first. Note what matches and what does not. Whatever the story, note how payment is being requested: a demand for gift cards, cryptocurrency, a wire transfer, cash handed to a courier, or money moved to a "safe account" is a warning sign on its own, because legitimate banks, agencies, and relatives do not ask for payment that way.
 
 ### Step 3 — Find the secrecy and urgency
 Almost every later-life scheme asks for **secrecy** ("don't tell your son, he'll worry") alongside urgency. The request not to tell family is the strongest single indicator in this category, because it is what the scheme needs.
@@ -152,6 +153,7 @@ From: verify out of band now; contact the bank; report to the police or fraud re
 | Companionship / romance | | |
 | Authority / bank / tech-support impersonation | | |
 | Investment / prize / inheritance with a fee | | |
+| Payment method requested (gift cards, crypto, wire transfer, cash courier, "safe account") — a warning sign whatever the story | | |
 
 ## Secrecy and urgency
 Asked not to tell family? [...]

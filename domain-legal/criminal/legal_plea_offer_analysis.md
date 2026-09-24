@@ -16,6 +16,7 @@ tags:
   - sentencing-exposure
   - collateral-consequences
   - immigration-consequences
+  - take-the-deal
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/criminal/legal_sentencing_memorandum.md
@@ -25,6 +26,8 @@ related_prompts:
 ---
 
 **Objective:** Give defense counsel a structured, auditable comparison of a pending plea offer against trial — exposure under each path, collateral consequences, element-by-element evidence strength, and the decision factors the client must weigh — so counsel can advise the client and document that the offer was communicated and explained.
+
+> **Scope guard — attorney-facing only.** For licensed counsel on the matter (defense counsel, or the prosecutor where a government posture is offered). If the person running it appears to be an unrepresented defendant or a family member, stop and route them to the public defender's office or appointed counsel, or to `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_authority_router.md`, rather than producing strategy. This guard is not a disclaimer; the ban on "consult an attorney" boilerplate below still applies.
 
 **When to Use:** A plea offer is on the table (or expected); before the offer deadline; when re-evaluating after a suppression ruling, new discovery, or a superseding charge; when the client is a non-citizen or holds a license, benefit, or status a conviction may affect.
 

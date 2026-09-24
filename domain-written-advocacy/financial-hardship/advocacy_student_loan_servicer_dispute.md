@@ -17,6 +17,7 @@ tags:
   - servicer-dispute
   - self-submit
   - consumer
+  - payment-not-credited
 updated: "2026-09-24"
 related_prompts:
   - domain-written-advocacy/financial-hardship/advocacy_credit_report_dispute.md

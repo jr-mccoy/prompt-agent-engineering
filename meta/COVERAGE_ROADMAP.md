@@ -409,7 +409,8 @@ Each block was built from its own domain roadmap, and each roadmap now marks it 
 - The negotiation README was missing `negotiation_hiring_offer_employer_side.md`. It is now listed.
 
 **Review before wider use:**
-- The psy-ops roadmap made child-safety review a condition for the youth-manipulation prompt. Human review is still recommended.
+- The psy-ops roadmap made child-safety review a condition for the youth-manipulation prompt. The audit pass did a model-led child-safety review and made it more defensive (see below); a human review is still recommended.
+- Both caveats are now visible to readers. The youth prompt, the 32 Wave 3 clinical prompts and `workup_dizziness_vertigo.md` open with a disclaimer and a **Review status: … AI only; not yet reviewed by a licensed clinician / child-safety professional** notice. The healthcare-clinical and psy-ops READMEs carry domain disclaimers. Remove a file's review-status line only after a qualified human has reviewed it.
 - The dosing and thresholds in the healthcare worked examples are recommended for a clinician read-through.
 
 ### Wave 4: thin-domain depth — shipped (59 prompts + cleanup)
@@ -516,9 +517,93 @@ The new ones are case-121 to case-146, with label source
 
 Case 145, the no-route pharmacy query, routes `weak` rather than `no_route`.
 
-**Follow-up.**
+**Follow-up** (done in the audit pass below).
 - Give the Wave 1–4 prompts plain-language situation tags as a deliberate pass across the corpus, not case by case.
 - R@5 (84.9%) now sits one point above its 84% floor.
+
+### Audit pass: fixes, the plain-language tag pass, and the deferred backlog (2026-09-24)
+
+An independent audit of Waves 1–5, the follow-up tag pass, one missing prompt,
+and the two backlogs Wave 3 deferred (built at the user's request).
+
+**Audit findings fixed.**
+- **Safety, HIGH:** the maternal mental-health hotline number was wrong in two
+  psychology prompts (now 1-833-852-6262). The two nutrition prompts checked
+  the disordered-eating guard but skipped the readiness-gate result, so a
+  CLINICIAN-FIRST profile could still get a plan; they now stop on it. In the
+  cytopenia workup, a line read as "avoid family-member *donors*" in aplastic
+  anemia; it now says to avoid *transfusions* from family members.
+- **Clinical structure:** the 32 Wave 3 `interp_*`/`specialty_*` prompts had no
+  `related_prompts`, When to Use, Verification or False-Positive Prevention,
+  and framed the model as the deciding attending. Each now has all four, a
+  decision-support line, and a stop-and-escalate block. About 40 accuracy
+  corrections were made (Fleischner risk arms, ESC PE risk classes, ASCO–SSO
+  2024 germline testing, DLCO grading, cephalosporin side-chain rule made
+  consistent across two prompts, lupus anticoagulant on a DOAC, dialysis vein
+  preservation, and others). The older `workup_dizziness_vertigo.md` got
+  accuracy fixes only.
+- **Legal:** outdated premises in examples (2024–2025 Guidelines amendments,
+  Sup. Ct. R. 37, a passed asylum one-year date), a missing mandatory-reporting
+  screen in the voluntary-disclosure memo, a spoliation risk in the retention
+  example, attorney-only scope guards on the appellate and criminal prompts,
+  and four broken README links.
+- **Health and psychology:** return after a febrile illness with chest symptoms
+  now needs clinician clearance; heat-illness stop signs; sleep restriction
+  only with clinician review; the red-flag screen now asks about controlled
+  blood pressure; psychology W13 `related_prompts` trimmed to three.
+- **Psy-ops youth prompt (child-safety review):** kept, made more defensive: a
+  block written to the young person, a mandatory-reporting line for people who
+  work with children, a ban on describing image content, official reporting
+  channels named without numbers or URLs (a narrow README exception), and no
+  identifying details about the child.
+- **Duplicates:** no true duplicates. Five overlaps now state the distinction;
+  the two older chatbot prompts point to the handoff prompt instead of
+  repeating it.
+- **Docs:** stale counts in five domain READMEs, `ROUTING_REFERENCE.md`,
+  `REPO_MAP.md` and the contributor guide; 22 broken med-ed paths in the
+  healthcare README; 13 old-style `decision-making/` references.
+
+**Left as is, by domain convention.** Legal prompts keep 4–5
+`related_prompts` (the roadmap requires "at least three") and written-advocacy
+keeps 4 (all 41 files). Psy-ops, negotiation and written-advocacy have no
+Example section anywhere; psy-ops' README fixes six headings.
+
+**Plain-language tag pass.** 258 Wave 1–4 prompts got 634 situation tags,
+written from each prompt's own content by reviewers who did not see the
+regression queries. The 8 prompts already retagged in Wave 5 were skipped.
+- **First measurement, all tags:** R@1 fell to 75.6% and tied flat BM25. Two
+  new cases lost rank 1 because more tags diluted targets that Wave 5 had
+  already tagged. One original case (004) changed its top hit to the wrong
+  scope. Its two top hits were 0.012 apart, so total tag volume flipped them,
+  not any one tag.
+- **Kept set:** skip the 8 Wave 5 targets; one tag each (the most general)
+  for legal, psy-ops, negotiation and written-advocacy; 2–4 elsewhere.
+- **Result:**
+
+| | Start of audit pass | After tag pass |
+|---|---|---|
+| R@1 / R@3 / R@5 | 76.7% / 82.6% / 84.9% | 77.9% / 83.7% / 86.0% |
+| MRR | 0.803 | 0.815 |
+| scope@1 / kind@1 | 83.6% / 97.7% | 84.5% / 97.7% |
+| Flat BM25 R@1 (guard) | 75.6% | 75.6% |
+| New task cases at rank 1 | 15 of 20 | 16 of 20 (131 fixed) |
+
+- No original case changes its top hit. Case 060 keeps its top hit, but its
+  routing status moves from `matched` to `ambiguous`; that case has no
+  expected status.
+- Cases 124, 132, 138 and 140 remain honest failures. Case 145 still routes
+  `weak`. Nothing was reworded, relabelled, dropped or refitted.
+- R@5 margin over the 84% floor went from 0.9 to 2.0 points.
+
+**Added.**
+- `domain-sales-customer/support/support_agent_interaction_qa_scorecard.md`:
+  QA for human support agents. The duplicate sweep found none.
+- Legal EXPANSION_ROADMAP Phase 3 (10 discovery and litigation prompts plus
+  `domain-legal/field_guide.md`) and Phase 4 (10 specialized prompts).
+- `domain-childrens-writing/EXPANSION_ROADMAP.md` items 1–12.
+
+Every duplicate sweep came back clean. All 33 have complete frontmatter,
+exactly three `related_prompts`, and the Tier 1 sections.
 
 ## 7. Explicitly not gaps / deferred
 

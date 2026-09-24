@@ -15,12 +15,46 @@ tags:
   - meningitis
   - csf
   - interpretation
+  - spinal-tap-results
+  - fever-and-stiff-neck
+  - sudden-worst-headache
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_headache.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md
+  - domain-medical-education/learner-procedures/study_central_line_lp_checklist_drill.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
 Interpret a lumbar puncture result as a pattern and commit to the category, the most likely etiology, the treatment to start or continue (with doses), and the additional studies still needed.
+
+Decision support for a licensed clinician: confirm antimicrobial and steroid doses, renal adjustment and thresholds against the current guideline and local formulary. Suspected bacterial meningitis or a falling level of consciousness is treated and escalated now, not after this output.
+
+## When to Use
+
+- A lumbar puncture result (cell count, protein, glucose, stains, PCR) is back and the pattern and treatment need to be committed.
+- Suspected meningitis or encephalitis where empirical antimicrobials must be continued, narrowed, or stopped.
+- Thunderclap headache with a normal CT where the LP must separate subarachnoid hemorrhage from a traumatic tap.
+- Raised opening pressure, high protein, or pleocytosis without an obvious infection (IIH, Guillain-Barré, MS, leptomeningeal disease).
+
+**Not this prompt if:**
+
+- No LP has been done and the headache itself is being worked up → `domain-healthcare-clinical/prompts/reasoning/workup_headache.md`.
+- Altered mental status without a CSF result → `domain-healthcare-clinical/prompts/reasoning/workup_altered_mental_status.md`.
+- The fluid is pleural, ascitic, or synovial → `domain-healthcare-clinical/prompts/interpretation/interp_synovial_pleural_ascitic_fluid.md`.
 
 ## Inputs
 
@@ -33,11 +67,11 @@ Interpret a lumbar puncture result as a pattern and commit to the category, the 
 
 ## Role
 
-Senior neurology or infectious diseases attending reading the LP results at the bedside.
+Senior neurology or infectious diseases attending supporting the treating clinician; reads the LP results at the bedside.
 
 ## Reasoning Steps
 
-1. **Validity checks.** Opening pressure only valid lying down, legs relaxed. Glucose must be compared with serum drawn at the same time (hyperglycemia raises CSF glucose). Traumatic tap: correct WBC by roughly 1 WBC per 500–1,000 RBCs (or use the peripheral WBC:RBC ratio), and protein rises about 1 mg/dL per 1,000 RBCs.
+1. **Stop and escalate first if:** suspected bacterial meningitis and antibiotics not yet given (dexamethasone + empirical antibiotics now — never wait for CT or CSF results); falling GCS, new focal deficit, seizures, or herniation signs; purpura or septic shock (suspected meningococcal disease); a CSF picture of subarachnoid hemorrhage (CTA and neurosurgery now). Then **validity checks.** Opening pressure only valid lying down, legs relaxed. Glucose must be compared with serum drawn at the same time (hyperglycemia raises CSF glucose). Traumatic tap: correct WBC by roughly 1 WBC per 500–1,000 RBCs (or use the peripheral WBC:RBC ratio), and protein rises about 1 mg/dL per 1,000 RBCs.
 
 2. **Pattern classification.**
 
@@ -62,7 +96,7 @@ Senior neurology or infectious diseases attending reading the LP results at the 
    - **Drug-induced aseptic meningitis:** NSAIDs, TMP-SMX, IVIG, lamotrigine — neutrophilic possible.
    - **Idiopathic intracranial hypertension:** opening pressure >25 cm H2O with normal contents.
 
-4. **SAH vs traumatic tap.** Falling RBC count from tube 1 to last tube supports traumatic tap but does not exclude SAH. Xanthochromia appears ~12 h after bleeding and is the discriminator; visual inspection is less sensitive than spectrophotometry.
+4. **SAH vs traumatic tap.** Falling RBC count from tube 1 to last tube supports traumatic tap but does not exclude SAH. Xanthochromia develops from roughly 2–12 h after the bleed, so spectrophotometry is most sensitive on an LP done ≥12 h after headache onset; it is the discriminator, and visual inspection is less sensitive than spectrophotometry.
 
 5. **Partially treated meningitis.** Antibiotics sterilize CSF culture within hours, but pleocytosis, high protein, and low glucose persist for days — treat a bacterial pattern as bacterial. Multiplex PCR helps identify the organism.
 
@@ -91,6 +125,22 @@ ACTION:
 - [complications to watch]
 - [public health / contacts]
 ```
+
+## Verification
+
+- [ ] Glucose ratio uses a serum glucose drawn at the same time; opening pressure recorded as lateral decubitus or flagged as invalid.
+- [ ] Traumatic-tap correction applied (or stated as not needed) before WBC and protein are classified.
+- [ ] Pattern call traced to each input value (WBC, differential, protein, glucose ratio, lactate), with antibiotic pre-treatment and its timing accounted for.
+- [ ] Every antimicrobial and steroid dose checked against weight, renal function, the current meningitis/encephalitis guideline, and local formulary.
+- [ ] Early-negative HSV PCR, a single negative cytology, and LP timing relative to headache onset are reported as limits, not exclusions.
+- [ ] States what result would change the call (culture and susceptibilities, repeat PCR, repeat cytology).
+
+## False-Positive Prevention
+
+- **Oligoclonal bands called MS-specific without paired serum.** Matching bands in serum mean systemic synthesis, not CSF-specific; the clinical and MRI picture must also fit.
+- **A multiplex PCR hit accepted as the cause when the CSF does not fit it.** Panels produce false positives and can detect latent virus (e.g., HHV-6); check the target against cells, protein, and glucose.
+- **A few cells or a mildly raised protein from a traumatic tap called pleocytosis or albuminocytologic dissociation** before RBC correction is applied.
+- **Falling RBC count from tube 1 to the last tube taken as excluding SAH.** It supports a traumatic tap but does not rule out a bleed; xanthochromia timing decides.
 
 ## Worked Example
 

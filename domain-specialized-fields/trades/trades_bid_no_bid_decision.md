@@ -16,6 +16,9 @@ tags:
   - subcontractor
   - cash-flow
   - decision
+  - take-this-job
+  - slow-paying-client
+  - crew-too-busy
 updated: "2026-09-24"
 reasoning:
   styles: [evaluative, quantitative, strategic]

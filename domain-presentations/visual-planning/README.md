@@ -26,9 +26,9 @@ Prompts for the analytic work that sits upstream of visually-delivered artifacts
 - Bottleneck migration planning (cascade effects feed into this): [`../../domain-engineering-workflows/ai-native-rollouts/airollout_bottleneck_migration_plan.md`](../../domain-engineering-workflows/ai-native-rollouts/airollout_bottleneck_migration_plan.md)
 - Prompt correctness & pre-mortem: [`../../domain-prompt-engineering/evaluation/correctness_pre_mortem.md`](../../domain-prompt-engineering/evaluation/correctness_pre_mortem.md)
 
-### Board-deck visualizations (planned)
+### Board-deck visualizations
 
-Image-generation prompts for specific board-deck chart types (funnel diagnostic, opportunity-solution tree, ARR revenue bridge, cohort retention heatmap, etc.) are scoped for a future session and will live in `../board-deck-visualizations/`. The prompts in this directory complement those by handling the analytic / routing / QA work that precedes image generation.
+Image-generation prompts for specific board-deck chart types (funnel diagnostic, opportunity-solution tree, ARR revenue bridge, cohort retention heatmap, etc.) live in [`../board-decks/`](../board-decks/). The prompts in this directory complement those by handling the analytic / routing / QA work that precedes image generation.
 
 ## Design Principles
 

@@ -16,6 +16,9 @@ tags:
   - tree-testing
   - navigation
   - findability
+  - cant-find-things
+  - menu-labels
+  - reorganizing-site
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/marketing/site-architecture/SKILL.md

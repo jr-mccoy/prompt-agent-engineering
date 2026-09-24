@@ -15,6 +15,9 @@ tags:
   - sociolinguistics
   - role-play
   - speaking-practice
+  - formal-or-casual
+  - sounding-rude
+  - addressing-strangers
 updated: "2026-09-24"
 related_prompts:
   - domain-conversation-practice/conversation_lang_sim_master_template.md

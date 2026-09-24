@@ -16,6 +16,9 @@ tags:
   - public-speaking
   - narrative-arc
   - storytelling
+  - giving-a-talk
+  - too-much-material
+  - speaking-slot
 updated: "2026-09-24"
 related_prompts:
   - domain-education-teaching/instructor/ed-tech/teaching_class_slide_deck_designer.md

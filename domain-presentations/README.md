@@ -84,4 +84,4 @@ Use these prompts when you need to:
 
 ---
 
-*Migrated from: `prompts/creation/presentations/`*
+*Consolidated here from the retired pre-reorg `prompts/creation/presentations/` tree, which no longer exists; the current files are listed above.*

@@ -17,6 +17,7 @@ tags:
   - utility
   - recording
   - covenants-running-with-land
+  - landlocked-parcel
 updated: "2026-09-24"
 reasoning:
   styles: [constructive, systematic, adversarial]

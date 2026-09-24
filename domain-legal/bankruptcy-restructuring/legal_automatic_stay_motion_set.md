@@ -16,6 +16,7 @@ tags:
   - adequate-protection
   - motion-practice
   - valuation
+  - foreclosure-on-hold
 updated: "2026-09-24"
 reasoning:
   styles: [adversarial, evidential, procedural]

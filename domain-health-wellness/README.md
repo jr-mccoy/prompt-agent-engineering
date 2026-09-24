@@ -34,8 +34,9 @@ profile says *not yet*, nothing is produced except the route to the right person
 > 6. **Nutrition is STRONG-GUARD.** Both `nutrition/` prompts carry a `> **STRONG-GUARD
 >    prompt.**` block and stop — not soften — on restriction, compensation, rapid
 >    weight-loss goals (more than ~1% of body weight a week, or an intake below the
->    commonly cited ~1,200 / ~1,500 kcal unsupervised floors), minors, pregnancy or
->    breastfeeding, or a diagnosed condition. They never set a calorie target. The
+>    commonly cited ~1,200 / ~1,500 kcal unsupervised floors — conservative guard
+>    triggers, not clinical targets), minors, pregnancy or breastfeeding, or a
+>    diagnosed condition. They never set a calorie target. The
 >    redirect is short and kind, names a clinician and registered dietitian, and gives
 >    the crisis route (`domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md`;
 >    988 in the US) if the person feels unsafe.
@@ -43,8 +44,10 @@ profile says *not yet*, nothing is produced except the route to the right person
 >    bone-spot pain, or very dark urine with severe muscle pain after a hard session route
 >    out of the fitness prompts (the last one to same-day urgent care).
 > 8. **Sleep disorders are referrals.** Snoring with witnessed pauses, dozing while
->    driving, and a chronic insomnia pattern go to a clinician (insomnia also to the
->    CBT-I prompt) before any sleep-hygiene advice.
+>    driving, and a chronic insomnia pattern go to a clinician (insomnia to the CBT-I
+>    prompt only with or after clinician review — sleep restriction raises daytime
+>    sleepiness) before any sleep-hygiene advice. Only for the insomnia pattern may the
+>    routine audit run alongside that referral.
 > 9. **Dual failure is a defect in both directions.** Softening a flag into a modified plan
 >    is harmful; padding a clean GO with warnings trains people to ignore warnings. Each
 >    prompt checks for both (QA-20 where listed).
@@ -114,14 +117,14 @@ shopping to `domain-productivity/home-life/home_meal_plan_week.md`.
 - **Body:** Objective, the gate block (Readiness gate or STRONG-GUARD), When to Use with a
   "Not this prompt if…" line, then Inputs / Context, Method, Output Format, Verification,
   False-Positive Prevention, Example Output, Techniques Used, Related Prompts.
-- **Numbers are general guidance,** labelled as such (public-health activity guidance,
+- **Numbers are general guidance,** labeled as such (public-health activity guidance,
   common coaching practice), never as a personal prescription.
 - **Form and technique** are routed to a qualified coach; text gives at most two check-cues.
 
 ## Companion domains
 
 - `domain-psychology/client-self-use/` — mood, anxiety, insomnia treatment, crisis self-triage.
-- `domain-personal-development/prompts/habits/` — making any one of these behaviours stick.
+- `domain-personal-development/prompts/habits/` — making any one of these behaviors stick.
 - `domain-productivity/home-life/` — the meal logistics layer.
 - `domain-healthcare-clinical/` — the clinician's side of the conversations this domain routes to.
 

@@ -16,6 +16,9 @@ tags:
   - accountant-handoff
   - receipts
   - owner-operator
+  - tax-time-panic
+  - messy-books
+  - personal-business-mixed
 updated: "2026-09-24"
 related_prompts:
   - domain-finance/accounting-controllership/finance_month_end_close_checklist.md

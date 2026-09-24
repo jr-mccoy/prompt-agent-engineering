@@ -16,6 +16,9 @@ tags:
   - role-families
   - career-change
   - candidate
+  - what-job-next
+  - too-many-options
+  - want-something-new
 updated: "2026-09-24"
 related_prompts:
   - domain-personal-development/career-transformation/career_internal_vs_external_move.md

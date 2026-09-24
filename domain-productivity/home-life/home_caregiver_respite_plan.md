@@ -16,6 +16,9 @@ tags:
   - scheduling
   - family
   - household
+  - caregiver-burnout
+  - need-a-break
+  - who-covers-me
 updated: "2026-09-24"
 related_prompts:
   - domain-personal-development/prompts/agency/agency_burnout_recovery.md
@@ -42,6 +45,7 @@ that rest happens by design rather than only after a collapse.
   a crisis line or emergency services. This plan comes later.
 - Persistent low mood, anxiety or grief is the main problem — `domain-psychology/client-self-use/`
   and a licensed professional.
+- Caregiver burnout or stress is the main problem — `domain-psychology/client-self-use/specialty/clientself_caregiver_burnout_plan.md`.
 - The care arrangement itself is no longer workable — revisit `domain-personal-development/major-decisions/personal_caring_for_aging_parent.md`.
 
 **Audience:** The primary carer, or a sibling or partner planning breaks for them. Practical

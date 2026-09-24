@@ -17,6 +17,18 @@ tags:
 updated: "2026-09-24"
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Work up the dizzy patient: classify by timing/triggers (TiTrATE), apply HINTS+ in acute vestibular syndrome to distinguish posterior stroke from vestibular neuritis, and select appropriate maneuvers and treatment.
@@ -36,7 +48,7 @@ Work up the dizzy patient: classify by timing/triggers (TiTrATE), apply HINTS+ i
 
 1. **Use TiTrATE framework over "what type of dizzy is it?"**
    Old approach (vertigo vs presyncope vs disequilibrium) has poor reliability. Better:
-   - **Acute Vestibular Syndrome (AVS):** acute, persistent (>24 h), spontaneous dizziness with N/V, gait instability, nystagmus. Causes: vestibular neuritis, labyrinthitis, posterior stroke (PICA, AICA), MS demyelination, Wernicke.
+   - **Acute Vestibular Syndrome (AVS):** acute, continuous, ongoing spontaneous vertigo with nystagmus (classically lasting days), with N/V and gait instability. HINTS applies while the vertigo is continuous and ongoing. Causes: vestibular neuritis, labyrinthitis, posterior stroke (PICA, AICA), MS demyelination, Wernicke.
    - **Triggered Episodic Vestibular Syndrome (t-EVS):** brief, triggered by position or head movement. Causes: BPPV, orthostatic hypotension, central positional vertigo (rare).
    - **Spontaneous Episodic Vestibular Syndrome (s-EVS):** episodic, spontaneous, lasting minutes to hours. Causes: Ménière, vestibular migraine, TIA, panic, cardiac arrhythmia.
    - **Chronic Vestibular Syndrome:** persistent for weeks-months. Causes: bilateral vestibulopathy, persistent postural-perceptual dizziness (PPPD), cerebellar degeneration, polyneuropathy with imbalance.
@@ -47,14 +59,14 @@ Work up the dizzy patient: classify by timing/triggers (TiTrATE), apply HINTS+ i
    - **N**ystagmus: unidirectional horizontal that does not change direction with gaze → peripheral. Direction-changing horizontal nystagmus or vertical/torsional nystagmus → central.
    - **T**est of **S**kew: vertical misalignment on alternate cover test → central (skew deviation).
    - **+** new unilateral hearing loss → in acute vestibular syndrome, treat as a **central** sign (AICA stroke) until proven otherwise; it is the "+" in HINTS+. Labyrinthitis (neuritis + hearing loss) is diagnosed only after stroke is excluded.
-   - HINTS+ "INFARCT" pattern (any one of: normal HIT, direction-changing nystagmus, skew, new hearing loss) → posterior stroke. **HINTS+ is more sensitive for stroke than early MRI** (early MRI misses 10–20% of posterior strokes within 24–48 h).
+   - HINTS+ "INFARCT" pattern (any one of: normal HIT, direction-changing nystagmus, skew, new hearing loss) → posterior stroke. **HINTS+ is more sensitive for stroke than early MRI** (early DWI-MRI can miss a meaningful fraction of posterior-circulation strokes, especially small ones in the first 24–48 h).
    - HINTS+ should only be performed by examiners trained in it; otherwise it is unreliable. If unsure, MRI with DWI ± repeat in 48–72 h.
 
 3. **BPPV — diagnose and treat.**
    - Brief (<1 min), positional (rolling over, looking up, lying down), recurrent.
    - **Posterior canal BPPV (most common):** Dix-Hallpike maneuver. Positive: brief upbeat-torsional nystagmus toward affected ear with latency, fatigue, reversal on sit-up. Treat with **Epley maneuver** (canalith repositioning).
    - **Horizontal canal BPPV:** supine roll test (Pagnini-McClure). Treat with Lempert (BBQ roll) or Gufoni maneuver.
-   - Mastoid vibration, vestibular suppressants generally avoided as they impede compensation.
+   - Vestibular suppressants beyond a few days impede central compensation — avoid prolonged use.
    - Recurrent BPPV: check for vitamin D deficiency, osteoporosis, prior trauma.
 
 4. **Vestibular neuritis / labyrinthitis.**
@@ -100,7 +112,7 @@ Work up the dizzy patient: classify by timing/triggers (TiTrATE), apply HINTS+ i
 11. **Disposition.**
     - Acute peripheral vestibular syndrome with reassuring HINTS, stable, ambulating safely → home with oral steroid taper if neuritis suspected, antiemetics PRN, vestibular rehab referral, close follow-up.
     - Any concern for posterior stroke → admit to stroke service, urgent imaging, neurology.
-    - BPPV resolved with Epley → home with home Brandt-Daroff exercises, return precautions.
+    - BPPV resolved with Epley → home with return precautions; Brandt-Daroff exercises are not routinely needed after a successful repositioning maneuver.
     - Recurrent or refractory vertigo without diagnosis → ENT/neuro-otology referral.
 
 ## Output Format
@@ -170,9 +182,10 @@ WORKUP:
 
 WORKING DIAGNOSIS / TREATMENT:
 - Working: posterior circulation ischemic stroke (likely cerebellar).
-- Activate stroke pathway: NIHSS, last known well time, screen for tPA candidacy if within 4.5 h of symptom onset (window depends on local protocol; posterior strokes often eligible). Time of onset 6 h here — outside standard tPA window but within potential thrombectomy window for posterior circulation in selected patients.
+- Activate stroke pathway: NIHSS, last known well time, screen for tPA candidacy if within 4.5 h of symptom onset (thrombolysis eligibility per stroke protocol and time window). Time of onset 6 h here — outside the standard tPA window; if CTA/MRA shows basilar artery occlusion → thrombectomy evaluation per stroke protocol.
 - BP management: tPA candidate <185/110; non-tPA permissive HTN up to 220/120 unless end-organ injury.
 - Aspirin 325 mg if not given tPA (within 24–48 h).
+- Secondary prevention per stroke protocol (e.g., short-course dual antiplatelet therapy for minor stroke/high-risk TIA).
 - HOB 30° if no concern for poor perfusion; flat if perfusion-dependent until imaged.
 - NPO until swallow screen.
 - Neurology / stroke consult.

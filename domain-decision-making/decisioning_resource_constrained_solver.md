@@ -20,9 +20,9 @@ tags:
   - triage
 updated: "2026-02-26"
 related_prompts:
-  - decision-making/decisioning_multi_constraint_optimizer.md
-  - decision-making/decisioning_time_boxed_decision_protocol.md
-  - decision-making/decisioning_first_principles_problem_decomposition.md
+  - domain-decision-making/decisioning_multi_constraint_optimizer.md
+  - domain-decision-making/decisioning_time_boxed_decision_protocol.md
+  - domain-decision-making/decisioning_first_principles_problem_decomposition.md
   - productivity/validation/validation_adversarial_mini_check.md
 ---
 

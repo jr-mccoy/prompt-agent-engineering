@@ -16,6 +16,7 @@ tags:
   - priority
   - secured-claims
   - creditor-rights
+  - customer-went-bankrupt
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, evidential, taxonomic]

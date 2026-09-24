@@ -15,6 +15,7 @@ tags:
   - counter-messaging
   - public-communication
   - nonpartisan
+  - voting-rumors
 updated: "2026-09-24"
 reasoning:
   styles: [procedural, protective, evaluative]
@@ -76,7 +77,7 @@ Every procedural fact comes **from the official election authority** for the jur
 - Source **every procedural fact from the official election authority**, cited in the plan; anything unsourced is `[VERIFY]` and is not published.
 - Plan by **phase** — before, during voting, during counting, after certification — since timing constraints differ sharply.
 - Prioritize claims that could **prevent eligible people from voting** (wrong dates, places, methods, eligibility) above all others.
-- **Prebunk the known counting dynamics** before counting starts: results change as different ballot types are processed, and that is expected.
+- **Prebunk the known counting dynamics** before counting starts: results change as different ballot types are processed, and that is expected — where the official election authority confirms this applies in the jurisdiction.
 - Speak with **attribution and on declared channels**, identifying who is speaking.
 - Confirm **legal and neutrality limits with counsel** for your role before the period starts, and record what was confirmed.
 - Pre-plan **self-correction**: how an error in your own procedural communication will be corrected, by whom, and how fast.
@@ -128,7 +129,7 @@ Take each draft and argue that it is partisan, that it overclaims, or that a cor
 4. **Responding to everything.** Treating every rumor as requiring a response, and amplifying low-reach claims into higher-reach ones.
 5. **Late prebunking.** Explaining counting dynamics after the claim about them has spread, when the explanation now reads as an excuse.
 6. **Attribution without evidence.** Blaming a campaign or foreign actor for a false claim that ordinary confusion explains.
-7. **Treating confusion as malice.** Most people sharing wrong election information believe it and are trying to help others vote.
+7. **Treating confusion as malice.** Many people sharing wrong election information believe it and are trying to help others vote.
 8. **Uncorrected own errors.** No pre-agreed path for correcting your own mistake inside the window where it matters.
 
 ---

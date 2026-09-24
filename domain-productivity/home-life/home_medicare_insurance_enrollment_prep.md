@@ -16,6 +16,9 @@ tags:
   - aging-parents
   - household
   - preparation
+  - turning-65
+  - losing-work-coverage
+  - choosing-a-plan
 updated: "2026-09-24"
 related_prompts:
   - domain-productivity/home-life/home_appointment_prep.md

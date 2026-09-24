@@ -15,6 +15,7 @@ tags:
   - narrative-analysis
   - data-access
   - influence-operations
+  - is-this-coordinated
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, systems, evidential, adversarial]
@@ -35,7 +36,7 @@ related_prompts:
 
 # Cross-Platform Narrative Correlation
 
-**Objective:** Assess whether a narrative appearing on several platforms reflects **connected activity** — shared origin, coordinated seeding, deliberate cross-posting — or **independent convergence**, where different communities arrive at the same story because the same event, grievance, or viral post reached all of them. Most cross-platform spread is the second kind. Content moves between platforms constantly through ordinary users screenshotting, reposting, and linking, and the same wording appears everywhere because people copy what they saw.
+**Objective:** Assess whether a narrative appearing on several platforms reflects **connected activity** — shared origin, coordinated seeding, deliberate cross-posting — or **independent convergence**, where different communities arrive at the same story because the same event, grievance, or viral post reached all of them. Much cross-platform spread is the second kind. Content moves between platforms constantly through ordinary users screenshotting, reposting, and linking, and the same wording appears everywhere because people copy what they saw.
 
 The problem that makes this a separate skill is **unequal visibility**. Each platform exposes different data: some offer research access to posts and timestamps, some expose little beyond what a logged-in user can scroll, some are closed messaging spaces visible only through what members choose to share, and retention varies from permanent to hours. A narrative that seems to *originate* on the most visible platform often only *surfaced* there first to the analyst. Absence on a platform you cannot see well is not absence — it is an unknown, and the analysis must carry it as one.
 

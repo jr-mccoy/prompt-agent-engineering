@@ -17,6 +17,7 @@ tags:
   - housing
   - self-submit
   - community-association
+  - got-a-fine
 updated: "2026-09-24"
 related_prompts:
   - domain-written-advocacy/cross-cutting/advocacy_correspondence_log_builder.md

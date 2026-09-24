@@ -16,6 +16,9 @@ tags:
   - concept-generation
   - product-design
   - zwicky-box
+  - ideas-look-alike
+  - explore-all-options
+  - mix-and-match
 updated: "2026-09-24"
 reasoning:
   styles: [combinatorial, systematic, divergent]

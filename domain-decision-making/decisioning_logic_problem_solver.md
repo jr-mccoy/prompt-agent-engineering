@@ -20,8 +20,8 @@ tags:
   - critical-thinking
 updated: "2026-02-26"
 related_prompts:
-  - decision-making/decisioning_first_principles_problem_decomposition.md
-  - decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md
+  - domain-decision-making/decisioning_first_principles_problem_decomposition.md
+  - domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md
   - productivity/validation/validation_confidence_calibration.md
 ---
 

@@ -15,6 +15,7 @@ tags:
   - rent
   - lease-renewal
   - consumer
+  - apartment-price-hike
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, strategic, adversarial]

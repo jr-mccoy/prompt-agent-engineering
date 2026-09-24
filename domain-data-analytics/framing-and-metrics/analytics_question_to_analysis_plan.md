@@ -16,6 +16,9 @@ tags:
   - business-analytics
   - scoping
   - decision-support
+  - vague-request
+  - boss-wants-numbers
+  - unused-analysis
 updated: "2026-09-24"
 related_prompts:
   - domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md

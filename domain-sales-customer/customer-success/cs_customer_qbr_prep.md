@@ -15,6 +15,9 @@ tags:
   - account-management
   - value-realization
   - b2b
+  - client-review-meeting
+  - prove-our-value
+  - quarterly-check-in
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md

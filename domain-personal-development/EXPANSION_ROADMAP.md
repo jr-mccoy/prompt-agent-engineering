@@ -9,24 +9,27 @@ Filing convention: `{folder-prefix}_{specific_function}.md` inside the relevant 
 ## Wave 1 Status — Shipped
 
 ```
-domain-personal-development/            166 prompts
+domain-personal-development/            170 prompts (current; 166 when Wave 1 shipped)
 ├── prompts/
-│   ├── agency/                 17   (+2)   accountability-partner, project-scope-creep
+│   ├── agency/                 18   (+2)   accountability-partner, project-scope-creep
 │   ├── goals/                  10   (+6)   annual-planning, conflict-resolver, anti-goals, values→goals, stall-diagnostic, scope-right-sizer
 │   ├── habits/                 10   (+4)   identity-based, implementation-intentions, tracking-system, temptation-bundling
-│   ├── identity/               11   (+4)   strengths-inventory, narrative-reframe, authenticity-audit, memento-mori
+│   ├── identity/               12   (+4)   strengths-inventory, narrative-reframe, authenticity-audit, memento-mori
 │   ├── resilience/             11   (+5)   rejection-recovery, criticism-processing, confidence-rebuild, uncertainty-tolerance, comeback-after-dip
 │   ├── relationships/          11   (+5)   friends-as-adult, deepening, difficult-family, apology, loneliness-diagnostic
 │   ├── thinking/               12   (+3)   decision-journal, mental-models-application, assumption-surfacing
-│   ├── productivity/            8   (+3)   overcommitment/saying-no, energy-by-task-type, focus-ritual (cross-links domain-productivity/)
+│   ├── (productivity/)          0   (+3)   removed in the 2026-08 reorg — all 8 prompts moved into domain-productivity/
 │   ├── solo-dev/               10   (+5)   pricing-confidence, deciding-alone, accountability, sustainable-pace, isolation-motivation
 │   ├── stakeholder/             7   (+5)   managing-up, manager-relationship, visibility-credit, mentor-sponsor, cross-team-alliance
 │   ├── career/                 17   ( 0)   AI-role assessment set — left as-is (coherent legacy interview/verdict format)
 │   ├── life-transitions/       10   (NEW)  new-role, relocation, new-parenthood, empty-nest, retirement, job-loss, breakup, return-from-leave, identity-after-change, transition-map
 │   └── emotional-fitness/      10   (NEW)  emotion-labeling, disappointment, jealousy-channeling, worry-vs-action, reactivity-audit, ambivalence, self-compassion, reset-ritual, shame-vs-guilt, charged-event-debrief
 ├── career-transformation/       8   (+4)   ai-era-skill-moat, positioning-statement, internal-vs-external-move, reskilling-roadmap
-└── major-decisions/            14   (+4)   marriage-commitment, aging-parent-care, sabbatical, start-business-vs-employment
+├── job-search/                  8   (NEW)  coverage Wave 1 — see below
+└── major-decisions/            16   (+4)   marriage-commitment, aging-parent-care, sabbatical, start-business-vs-employment
 ```
+
+Counts are current (every `.md` except `README.md`); the `(+N)` column records what Wave 1 added.
 
 ### Two new subdirectories — design boundaries
 

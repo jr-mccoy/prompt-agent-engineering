@@ -16,18 +16,19 @@ tags:
   - pacing
   - act
   - flare-plan
+  - overdo-then-crash
+  - pain-took-over
 intended_use: model-testing
 updated: "2026-09-24"
 related_prompts:
   - domain-psychology/specialty-clinical/psychology_health_psych_chronic_pain_act_protocol.md
   - domain-psychology/client-self-use/specialty/clientself_chronic_illness_mental_health_plan.md
-  - domain-psychology/client-self-use/coping-by-concern/clientself_depression_behavioral_activation_scheduler.md
   - domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md
 ---
 
 # Chronic Pain Self-Management Plan — Pacing, ACT Overlay, Flare Plan
 
-> **IF PAIN HAS LEFT YOU THINKING ABOUT SUICIDE OR ENDING THINGS: call or text 988 (Suicide & Crisis Lifeline, US), call 911, or go to your nearest emergency department (ED) now.** Long-term pain raises that risk and it is not a personal failing to feel it. **IF YOU HAVE NEW NUMBNESS OR WEAKNESS, LOSS OF BLADDER/BOWEL CONTROL, NUMBNESS AROUND THE GROIN, FEVER WITH BACK PAIN, OR SUDDEN SEVERE NEW PAIN: get urgent medical care today.** Outside the US, use your local emergency number. This is a self-management aid alongside your care team — it is **not** a diagnosis or a treatment change.
+> **IF PAIN HAS LEFT YOU THINKING ABOUT SUICIDE OR ENDING THINGS: call or text 988 (Suicide & Crisis Lifeline, US), call 911, or go to your nearest emergency department (ED) now.** Long-term pain raises that risk and it is not a personal failing to feel it. **IF YOU HAVE NEW NUMBNESS OR WEAKNESS, LOSS OF BLADDER/BOWEL CONTROL, NUMBNESS AROUND THE GROIN, FEVER WITH BACK PAIN, OR SUDDEN SEVERE NEW PAIN: get urgent medical care today.** Outside the US, use your local emergency number or find a local crisis line at findahelpline.com. This is a self-management aid alongside your care team — it is **not** a diagnosis or a treatment change.
 
 ## Objective
 
@@ -64,7 +65,7 @@ Help you build a one-page plan for living with chronic pain that you can actuall
 ### Must
 
 - Run the medical red-flag and suicide checks before building anything.
-- **Pacing:** set baselines from **bad-day** capacity for 2–4 key activities, suggest starting a little below that, and increase gradually (small steps, e.g., roughly 10% at a time) only when the current level is steady; use time or quantity, not pain, as the stop signal.
+- **Pacing:** set baselines from **bad-day** capacity for 2–4 key activities — measured **per bout** (how long or how much you can do in one go on a bad day without it triggering a flare) — start each bout a little below that (roughly 70–80%), repeat bouts with rest between only as many times a day as you manage on a bad day, and increase the bout length gradually (small steps, e.g., roughly 10% at a time) only when the current level is steady; use time or quantity, not pain, as the stop signal.
 - **ACT overlay:** name 2–3 values, one willingness statement, and one defusion line for the most sticky pain thought.
 - **Flare plan:** green (usual), amber (flare starting), red (severe flare) — each with what to do, what to drop, who to tell, and when to call the clinician.
 - Validate (NE-07) that pain is real and exhausting before any strategy.
@@ -97,8 +98,8 @@ New numbness/weakness, bladder/bowel loss, groin numbness, fever + back pain, su
 Thoughts of suicide → 988 (call/text), 911, or ED now.
 
 PACING (same-ish amount every day; stop on time, not on pain)
-| Activity | Bad-day capacity | Start at | Step-up rule |
-| [walking] | [8 min] | [6 min, twice a day] | [+1 min after a steady week] |
+| Activity | Bad-day capacity (per bout) | Start at (per bout × bouts/day) | Step-up rule |
+| [walking] | [8 min] | [6 min, twice a day, rest between] | [+1 min per bout after a steady week] |
 (These are starting guesses — adjust with my physio / pain clinician.)
 
 ACT OVERLAY
@@ -121,7 +122,7 @@ Bring to: [pain clinician / physio / therapist]. Ask: "Are these baselines and s
 ## Verification
 
 - [ ] Medical red flags and suicide route present at top and in output.
-- [ ] Pacing uses bad-day baselines, time/quantity stop rules, gradual step-ups labelled as guesses.
+- [ ] Pacing uses bad-day baselines, time/quantity stop rules, gradual step-ups labeled as guesses.
 - [ ] ACT overlay has values, willingness, defusion.
 - [ ] Flare plan has green/amber/red with actions and a clinician-contact trigger.
 - [ ] No medication advice; pain not framed as psychological or exaggerated.
@@ -137,4 +138,4 @@ Bring to: [pain clinician / physio / therapist]. Ask: "Are these baselines and s
 
 **Input:** "Fibromyalgia, diagnosed two years ago. Good days I clean the whole house and then I'm in bed for three days. I've stopped seeing friends. No new symptoms. Sometimes I feel hopeless but no thoughts of suicide."
 
-**Output (abbreviated):** Validation of boom-bust exhaustion. Pacing: housework baseline from bad-day capacity (10 min) → start at 2 × 8 min with a timer; walking 5 min daily. Values: friendship, a tidy-enough home, being present with family. Willingness line around a 30-minute coffee with one friend. Defusion of "I'm useless now." Flare plan with amber = halve tasks, keep the coffee as a phone call. Watch-point: hopelessness lasting 2+ weeks → tell the GP or therapist. Handoff: ask the rheumatology team or physio to check the baselines.
+**Output (abbreviated):** Validation of boom-bust exhaustion. Pacing: housework bad-day capacity 10 min per bout → start at 8 min per bout, twice a day with a rest between, on a timer; walking bad-day capacity 6 min per bout → start at 5 min once daily. Values: friendship, a tidy-enough home, being present with family. Willingness line around a 30-minute coffee with one friend. Defusion of "I'm useless now." Flare plan with amber = halve tasks, keep the coffee as a phone call. Watch-point: hopelessness lasting 2+ weeks → tell the GP or therapist. Handoff: ask the rheumatology team or physio to check the baselines.

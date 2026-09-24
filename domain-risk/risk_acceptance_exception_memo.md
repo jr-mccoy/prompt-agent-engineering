@@ -16,6 +16,9 @@ tags:
   - governance
   - decision-record
   - accountability
+  - cant-fix-yet
+  - get-sign-off
+  - temporary-workaround
 updated: "2026-09-24"
 reasoning:
   styles: [evaluative, structural, evidential]

@@ -15,6 +15,9 @@ tags:
   - meetings
   - job-interview
   - speaking-practice
+  - working-abroad
+  - second-language-job
+  - speaking-up
 updated: "2026-09-24"
 related_prompts:
   - domain-conversation-practice/conversation_lang_sim_master_template.md

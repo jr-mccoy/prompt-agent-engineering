@@ -16,6 +16,9 @@ tags:
   - guest-research
   - host-prep
   - content-production
+  - what-to-ask
+  - interviewing-an-expert
+  - fact-check-bio
 updated: "2026-09-24"
 related_prompts:
   - domain-science/public-engagement/science_media_interview_prep.md

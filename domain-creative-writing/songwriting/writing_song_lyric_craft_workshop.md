@@ -16,6 +16,9 @@ tags:
   - chorus
   - hook
   - drafting
+  - cliched-lines
+  - stuck-on-verses
+  - poet-writing-music
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/poetry/writing_poetry_craft_and_forms.md

@@ -15,6 +15,9 @@ tags:
   - self-study
   - humanities
   - critical-thinking
+  - famous-puzzle
+  - what-it-proves
+  - gut-reaction
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, dialectical, counterfactual]

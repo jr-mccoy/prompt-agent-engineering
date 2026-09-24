@@ -16,6 +16,9 @@ tags:
   - exercise-design
   - facilitation
   - preparedness
+  - test-our-plan
+  - emergency-drill
+  - what-if-scenario
 updated: "2026-09-24"
 reasoning:
   styles: [scenario, adversarial, systems, reflective]

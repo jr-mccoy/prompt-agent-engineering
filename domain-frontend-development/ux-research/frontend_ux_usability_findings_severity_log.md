@@ -16,6 +16,9 @@ tags:
   - findings-log
   - prioritization
   - evidence
+  - fix-first
+  - merging-observer-notes
+  - after-user-tests
 updated: "2026-09-24"
 related_prompts:
   - domain-business-strategy/research/user_research_synthesis.md

@@ -16,6 +16,9 @@ tags:
   - argument
   - graduate-research
   - milestones
+  - grad-school
+  - committee-deadline
+  - stuck-on-outline
 updated: "2026-09-24"
 reasoning:
   styles: [structural, planning, argumentative]

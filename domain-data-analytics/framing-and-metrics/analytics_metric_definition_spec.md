@@ -16,6 +16,9 @@ tags:
   - semantic-layer
   - metric-governance
   - business-analytics
+  - numbers-dont-match
+  - counting-active-users
+  - board-report-numbers
 updated: "2026-09-24"
 related_prompts:
   - domain-data-analytics/framing-and-metrics/analytics_kpi_tree_decomposition.md

@@ -15,6 +15,7 @@ tags:
   - claims
   - settlement
   - consumer
+  - offer-too-low
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, evidential, adversarial]

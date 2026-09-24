@@ -18,6 +18,7 @@ tags:
   - portability
   - lifetime-gifting
   - valuation
+  - wealthy-client
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, quantitative, comparative, strategic]

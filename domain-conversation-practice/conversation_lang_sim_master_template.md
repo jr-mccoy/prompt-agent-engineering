@@ -16,6 +16,9 @@ tags:
   - corrective-feedback
   - speaking-practice
   - simulation
+  - practice-talking
+  - correct-my-mistakes
+  - foreign-language-chat
 updated: "2026-09-24"
 related_prompts:
   - domain-conversation-practice/conversation_sim_master_template.md

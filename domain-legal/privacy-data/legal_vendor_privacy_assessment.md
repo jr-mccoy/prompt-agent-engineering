@@ -18,6 +18,7 @@ tags:
   - transfer-impact-assessment
   - sub-processors
   - third-party-risk
+  - signing-new-supplier
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, evaluative, systematic]
@@ -140,7 +141,7 @@ related_prompts:
 
 **Output (excerpt):**
 - **Role:** Processor for ticket handling; DPA § 7 permits "aggregated usage data to improve services" → **own-purpose use**, requires either removal or a controller-to-controller analysis.
-- **Transfer map:** EU hosting → no transfer for storage; **remote access** from US and Philippines support → transfers; vendor relies on SCC Module 2 (controller-to-processor) — correct for the customer-to-vendor flow; onward flow to a Philippines support affiliate requires Module 3 flow-down → **not evidenced**.
+- **Transfer map:** EU hosting → no transfer for storage; **remote access** from US and Philippines support → transfers; vendor relies on SCC Module 2 (controller-to-processor) — correct for the customer-to-vendor flow; onward flow to a Philippines support affiliate requires Module 3 flow-down `[VERIFY: onward-transfer mechanism — SCC onward-transfer/sub-processor clauses; EU-US Data Privacy Framework if the importer is certified]` → **not evidenced**.
 - **TIA review:** The "transfer statement" does not address the Philippines, does not identify that health-related notes may be accessed, and lists encryption at rest only (ineffective against access in clear by support staff) → **inadequate**.
 - **Disposition:** Accept with changes. Must-have redlines: delete own-purpose clause or limit to anonymized data per supplied definition; evidence Module 3 terms with the Philippines affiliate; specific TIA covering both support locations; restrict support access to health-related fields by role.
 

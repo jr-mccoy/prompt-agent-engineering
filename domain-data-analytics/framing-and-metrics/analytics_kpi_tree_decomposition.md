@@ -15,6 +15,9 @@ tags:
   - business-analytics
   - variance-attribution
   - operating-metrics
+  - what-drives-revenue
+  - setting-team-targets
+  - too-many-causes
 updated: "2026-09-24"
 related_prompts:
   - domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md
@@ -41,6 +44,9 @@ a recent change in the outcome is attributed to named drivers with their share.
   `domain-finance/corporate-finance-fpa/finance_budget_variance_investigator.md`.
 - You are decomposing ROE — `domain-finance/financial-statement-analysis/finance_dupont_decomposition.md`.
 - The metric itself is not yet defined — write `analytics_metric_definition_spec.md` first.
+- You are choosing the product's north-star metric —
+  `domain-product-management/prompts/product_north_star_metric_definition.md`. This prompt
+  decomposes an existing outcome into drivers that add up to it.
 
 ## Inputs / Context
 

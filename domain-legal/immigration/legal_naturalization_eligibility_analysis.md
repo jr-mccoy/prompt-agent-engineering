@@ -16,6 +16,7 @@ tags:
   - good-moral-character
   - continuous-residence
   - removability-screen
+  - becoming-citizen
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, protective, systematic]
@@ -137,11 +138,11 @@ related_prompts:
 
 > **0. Screen:** Adjustment facts appear regular. 2023 arrest, dismissed — disclosure required on the application regardless of dismissal; immigration consequences appear low on these facts but confirm with certified disposition. **Proceed**, with certified disposition obtained before filing.
 >
-> **1. Period:** If the general period is five years `[VERIFY: §316(a)]`, it runs from 2021-02-15 to 2026-02-15, with an early-filing window before that date `[VERIFY: early-filing rule]`.
+> **1. Period:** If the general period is five years `[VERIFY: §316(a)]`, the client completes five years as an LPR on 2026-02-15, with an early-filing window before that date `[VERIFY: early-filing rule]`. The continuous-residence, physical-presence, and good-moral-character periods are measured as **the 5 years before filing on {filing date}** — not from the LPR date — so every count below is recomputed once the filing date is fixed, and the travel log must cover that whole window.
 >
 > **2. Continuous residence:** 7-month trip exceeds the six-month threshold that raises a rebuttable presumption of a break but is under one year `[VERIFY: 8 CFR 316.5(c)(1)]`. Rebuttal evidence: continued U.S. employment, retained apartment, resident tax filings — **likely rebuttable**; gather employer letter, lease, and returns.
 >
-> **3. Physical presence:** ~213 days (7-month trip) + 50 days = ~263 days abroad of ~1,826 in the period → ~1,563 days present, above half (~913) `[VERIFY: fraction]`; replace estimates with records.
+> **3. Physical presence:** ~213 days (7-month trip) + 50 days = ~263 days abroad of ~1,826 in the 5 years before filing on {filing date} (assuming all listed trips fall in that window) → ~1,563 days present, above half (~913) `[VERIFY: fraction]`; replace estimates with records.
 >
 > **8. Status:** Eligible now (period has run as of the prepared date), subject to verification of rebuttal evidence and certified disposition.
 

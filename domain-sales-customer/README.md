@@ -1,6 +1,6 @@
 # Sales & Customer (Deals, Accounts, and Support Queues)
 
-Seventeen prompts whose **object is a deal, a pipeline, a customer account, or a
+Eighteen prompts whose **object is a deal, a pipeline, a customer account, or a
 support queue**. They are for the people who carry that object day to day —
 account executives, SDRs, sales managers, customer success managers, and support
 leads — and they treat each job as a set of evidence-bearing decisions: is this
@@ -60,13 +60,14 @@ alongside four new Wave 2 prompts.
 | [`cs_renewal_risk_and_save_plan.md`](customer-success/cs_renewal_risk_and_save_plan.md) | One B2B renewal: notice-date calendar, renewal decider, deciding reason, access → value → proof → commercial, floor and let-go rule |
 | [`cs_account_feedback_routing_loop.md`](customer-success/cs_account_feedback_routing_loop.md) | One account's feedback split into items, routed to a named owner with a brief and date, closed with the customer on committed facts only; commercial signals routed out (Wave 2) |
 
-### `support/` (4)
+### `support/` (5)
 | File | Use |
 |---|---|
 | [`support_ticket_triage_and_routing.md`](support/support_ticket_triage_and_routing.md) | Severity from impact, priority by rule, queue and SLA clock per ticket, cluster-to-incident detection |
 | [`support_escalation_response_drafter.md`](support/support_escalation_response_drafter.md) | The customer reply and the internal handoff brief, cross-checked so every promise has an owner |
 | [`support_incident_status_update.md`](support/support_incident_status_update.md) | One-to-many incident updates from one fact sheet: stage labels, cadence kept, channel map, per-update consistency check (Wave 2) |
 | [`support_kb_article_from_tickets.md`](support/support_kb_article_from_tickets.md) | A resolved-ticket cluster turned into one help article in the customer's words, fixes counted, steps verified, owner and review date (Wave 2) |
+| [`support_agent_interaction_qa_scorecard.md`](support/support_agent_interaction_qa_scorecard.md) | QA for human agents' calls, chats and tickets: anchored behaviours, critical fails, fair sampling, reviewer calibration, cause marked agent/process/tool, one coaching point |
 
 ### Relocated from `go-to-market/` (coverage Wave 2)
 These five prompts were in `domain-business-strategy/go-to-market/` until coverage
@@ -101,6 +102,7 @@ resolve as aliases (`meta/registry/aliases.tsv`).
 | "The customer's VP just escalated — what do we say?" | `support/support_escalation_response_drafter.md` |
 | "The EU region is down — what do we post?" | `support/support_incident_status_update.md` |
 | "Agents keep pasting the same answer" | `support/support_kb_article_from_tickets.md` |
+| "Our QA scores feel random and agents don't trust them" | `support/support_agent_interaction_qa_scorecard.md` |
 
 ## Not here (negative boundaries)
 

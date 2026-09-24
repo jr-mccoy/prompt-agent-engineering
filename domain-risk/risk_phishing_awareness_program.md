@@ -16,6 +16,9 @@ tags:
   - reporting-culture
   - metrics
   - small-business
+  - staff-clicking-links
+  - suspicious-emails
+  - teach-employees
 updated: "2026-09-24"
 reasoning:
   styles: [systems, empathic, evaluative, adversarial]

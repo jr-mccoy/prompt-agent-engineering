@@ -4,6 +4,13 @@ Prompts for **recognizing, analyzing, and defending against psychological influe
 
 Users are analysts, trust-and-safety and communications staff, researchers, moderators, educators, and individuals trying to work out whether what they are experiencing or reading is what it appears to be.
 
+> **Disclaimer.** These prompts are educational and analytical aids for recognizing and
+> defending against manipulation. They are not legal advice, not a law-enforcement,
+> child-protection, crisis or mental-health service, and do not replace them. **If
+> anyone is in immediate danger, contact emergency services now.** Prompts marked
+> *"Review status: … AI only"* have not yet been reviewed by a human subject-matter
+> professional.
+
 ---
 
 ## ⚠️ Load-bearing convention: analytic output, no manufactured accusations
@@ -39,7 +46,8 @@ enforces the following, and you must too:
    concerns route to qualified professionals, `domain-psychology/`, and verified resources. **No prompt in
    this domain states a hotline number, URL, or service name from memory** — every one instructs the user
    to look it up from an official source, because a confidently wrong emergency number is the worst output
-   this domain could produce. These prompts organize a user's own observations: they do not diagnose, do
+   this domain could produce. One narrow exception: official, stable child-safety reporting channels may be
+   named (never with a number or URL), as `psyops_youth_online_manipulation_guide.md` does. These prompts organize a user's own observations: they do not diagnose, do
    not provide crisis counseling, and do not script interventions on another person.
 6. **Counter-messaging stays overt.** Response work is attributed, truthful, and openly sourced: a named
    sender, on a declared channel, saying true things. The domain never builds the thing it defends against.

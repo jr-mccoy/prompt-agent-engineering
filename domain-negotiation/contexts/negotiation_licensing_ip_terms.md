@@ -15,6 +15,7 @@ tags:
   - intellectual-property
   - royalties
   - deal-structure
+  - selling-usage-rights
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, strategic, adversarial]

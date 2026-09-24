@@ -16,6 +16,9 @@ tags:
   - coordination
   - shared-expenses
   - siblings
+  - siblings-not-helping
+  - splitting-costs
+  - care-schedule
 updated: "2026-09-24"
 related_prompts:
   - domain-personal-development/major-decisions/personal_caring_for_aging_parent.md

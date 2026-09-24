@@ -15,6 +15,9 @@ tags:
   - account-based
   - cadence
   - sdr
+  - find-new-customers
+  - cold-outreach
+  - fill-pipeline
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/sales/sales_deal_qualification_scorecard.md

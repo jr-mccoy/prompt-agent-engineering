@@ -15,6 +15,9 @@ tags:
   - ticket-deflection
   - self-service
   - customer-support
+  - same-questions-repeated
+  - help-article
+  - fewer-tickets
 updated: "2026-09-24"
 related_prompts:
   - domain-business-strategy/startup/solo_dev_support_system.md

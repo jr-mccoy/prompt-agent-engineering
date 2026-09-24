@@ -16,6 +16,7 @@ tags:
   - moot-court
   - hot-bench
   - concessions
+  - tough-judge-questions
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/appellate/legal_issue_selection_memo.md
@@ -25,6 +26,8 @@ related_prompts:
 ---
 
 **Objective:** Get counsel ready to answer the panel's hardest questions directly and return to the theme: produce the core ask and roadmap, a ranked bank of anticipated questions with short answers anchored to the briefs and record, a concession map that decides in advance what can be conceded without losing the case, and live drill rounds in which the model plays a skeptical panel.
+
+> **Scope guard — attorney-facing only.** For licensed appellate counsel (or counsel for a prospective amicus). If the person running it appears to be an unrepresented party, stop and route them to `domain-legal/personal-self-advocacy/cross-cutting/legalprep_professional_authority_router.md` (appellate pro bono programs, law-school appellate clinics, legal aid) rather than producing strategy. This guard is not a disclaimer; the ban on "consult an attorney" boilerplate below still applies.
 
 **When to Use:** After briefing closes and argument is calendared; before a moot court; when the panel composition is known and the user supplies the judges' relevant published opinions; when preparing for a rebuttal-heavy appellee argument or a cross-appeal.
 

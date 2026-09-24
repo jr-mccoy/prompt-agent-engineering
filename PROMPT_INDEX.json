@@ -3,8 +3,8 @@
     "generated": "2026-09-24",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 5912,
-    "artifacts_with_frontmatter": 4984,
+    "total_indexed_artifacts": 5945,
+    "artifacts_with_frontmatter": 5017,
     "artifacts_without_frontmatter": 928,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 5912,
-    "prompts_with_frontmatter": 4984,
+    "total_prompts": 5945,
+    "prompts_with_frontmatter": 5017,
     "prompts_without_frontmatter": 928
   },
   "prompts": [
@@ -9913,7 +9913,10 @@
         "substantiation",
         "compliance",
         "campaign",
-        "disclosures"
+        "disclosures",
+        "risky-ad-wording",
+        "avoid-misleading-ads",
+        "paid-influencer-disclosure"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -9943,7 +9946,10 @@
         "creative-testing",
         "paid-media",
         "campaign",
-        "messaging"
+        "messaging",
+        "too-many-versions",
+        "which-ad-works",
+        "limited-test-budget"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -9973,7 +9979,10 @@
         "budget",
         "paid-media",
         "campaign",
-        "pacing"
+        "pacing",
+        "ad-budget-split",
+        "when-to-stop",
+        "cost-per-customer"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -10003,7 +10012,10 @@
         "placements",
         "checklist",
         "campaign",
-        "trafficking"
+        "trafficking",
+        "ad-rejected",
+        "image-size-requirements",
+        "cropped-video"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -10033,7 +10045,10 @@
         "video-ads",
         "creator-brief",
         "campaign",
-        "scriptwriting"
+        "scriptwriting",
+        "influencer-video",
+        "talking-head-ad",
+        "short-form-video"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -49917,7 +49932,10 @@
         "fundraising",
         "messaging",
         "donor-communications",
-        "impact"
+        "impact",
+        "why-give-here",
+        "capital-campaign",
+        "same-story-everywhere"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -49948,7 +49966,10 @@
         "appeal-letter",
         "direct-mail",
         "donor-retention",
-        "year-end-giving"
+        "year-end-giving",
+        "asking-for-donations",
+        "lapsed-donors",
+        "donation-request-email"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -49979,7 +50000,10 @@
         "foundations",
         "government-grants",
         "fundraising",
-        "funder-fit"
+        "funder-fit",
+        "worth-applying",
+        "find-program-funding",
+        "small-charity"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -50010,7 +50034,10 @@
         "program-evaluation",
         "donor-communications",
         "funder-reporting",
-        "outcomes"
+        "outcomes",
+        "grant-report-due",
+        "show-donors-results",
+        "annual-report"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -50041,7 +50068,10 @@
         "fundraising",
         "donor-cultivation",
         "solicitation",
-        "stewardship"
+        "stewardship",
+        "big-donation-ask",
+        "donor-meeting-script",
+        "thanking-big-donors"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -50072,7 +50102,10 @@
         "fiduciary-duty",
         "board-assessment",
         "policies",
-        "executive-director"
+        "executive-director",
+        "disengaged-board",
+        "board-retreat",
+        "new-board-chair"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -50104,7 +50137,10 @@
         "indirect-costs",
         "functional-expenses",
         "reserves",
-        "finance"
+        "finance",
+        "grant-money-rules",
+        "overhead-not-covered",
+        "cash-always-tight"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -50135,7 +50171,10 @@
         "screening",
         "safeguarding",
         "retention",
-        "operations"
+        "operations",
+        "volunteers-keep-quitting",
+        "need-more-volunteers",
+        "background-checks"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -50596,7 +50635,10 @@
         "reputation",
         "customer-service",
         "google-reviews",
-        "local-business"
+        "local-business",
+        "one-star-rating",
+        "unhappy-client",
+        "public-complaint"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -50627,7 +50669,10 @@
         "first-employee",
         "payroll",
         "break-even",
-        "owner-operator"
+        "owner-operator",
+        "afford-hiring-help",
+        "doing-everything-alone",
+        "contractor-or-staff"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -50658,7 +50703,10 @@
         "google-business-profile",
         "reviews",
         "referrals",
-        "neighbourhood"
+        "neighbourhood",
+        "need-more-customers",
+        "posting-not-working",
+        "word-of-mouth"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -50689,7 +50737,10 @@
         "reconciliation",
         "accountant-handoff",
         "receipts",
-        "owner-operator"
+        "owner-operator",
+        "tax-time-panic",
+        "messy-books",
+        "personal-business-mixed"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -50720,7 +50771,10 @@
         "price-increase",
         "customer-communication",
         "margins",
-        "retention"
+        "retention",
+        "costs-went-up",
+        "charging-too-little",
+        "worried-about-regulars"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -50751,7 +50805,10 @@
         "owner-draw",
         "tax-set-aside",
         "weekly-review",
-        "local-business"
+        "local-business",
+        "cash-running-low",
+        "paying-myself",
+        "surprise-tax-bill"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -52067,6 +52124,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-childrens-writing/craft-tools/childrens_audiobook_production_considerations.md",
+      "filename": "childrens_audiobook_production_considerations.md",
+      "title": "Audiobook & Read-Along Production Considerations",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Audit a children's manuscript for audio-only or read-along editions: what the page does that audio cannot, dialogue attribution for listeners, narration pacing, narrator-casting and voicing risks, and restrained sound design, delivered as a script-adaptation list and narrator direction sheet; distinct from read-aloud rhythm and rhyme polish (sound of the text on the page) and from the accessibility audit's general audio-edition note.",
+      "techniques": [
+        "RP-02",
+        "DT-05",
+        "OC-04",
+        "NE-14"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "audiobook",
+        "read-along",
+        "narration",
+        "kidlit",
+        "turn-my-book-into-an-audiobook",
+        "recording-my-picture-book"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/craft-tools/childrens_read_aloud_rhythm_rhyme_polish.md",
+        "domain-childrens-writing/representation-collaboration/childrens_accessible_inclusive_design.md",
+        "domain-childrens-writing/craft-tools/childrens_kid_dialogue_workshop.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-childrens-writing/fiction-workshops/childrens_board_concept_book_workshop.md",
       "filename": "childrens_board_concept_book_workshop.md",
       "title": "Board & Concept Book Workshop (Ages 0-3)",
@@ -52097,6 +52185,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-childrens-writing/fiction-workshops/childrens_branching_narrative_workshop.md",
+      "filename": "childrens_branching_narrative_workshop.md",
+      "title": "Branching Narrative Workshop (Interactive You-Choose Books for Kids)",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Design a print interactive/branching book for ages 7-14: a node map with every path traced to an ending, fair choices, no gotcha or punishing dead ends, age-calibrated bad endings, and a reachability and word-budget audit; distinct from game-development quest and dialogue-tree design (state machines for software) and from linear chapter-book and middle-grade workshops.",
+      "techniques": [
+        "RT-03",
+        "OC-03",
+        "IPC-12",
+        "DP-07"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "branching-narrative",
+        "interactive-fiction",
+        "middle-grade",
+        "kidlit",
+        "write-a-pick-your-path-book",
+        "story-with-choices"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/fiction-workshops/childrens_middle_grade_fiction_workshop.md",
+        "domain-childrens-writing/fiction-workshops/childrens_early_reader_chapter_book_workshop.md",
+        "domain-game-development/narrative/narrative_quest_and_dialogue_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-childrens-writing/craft-tools/childrens_age_reading_level_calibrator.md",
       "filename": "childrens_age_reading_level_calibrator.md",
       "title": "Children's Age & Reading-Level Calibrator",
@@ -52123,6 +52242,38 @@
         "domain-childrens-writing/fiction-workshops/childrens_early_reader_chapter_book_workshop.md",
         "domain-childrens-writing/fiction-workshops/childrens_picture_book_workshop.md",
         "domain-childrens-writing/craft-tools/childrens_read_aloud_rhythm_rhyme_polish.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-childrens-writing/publishing-business/childrens_book_marketing_copy.md",
+      "filename": "childrens_book_marketing_copy.md",
+      "title": "Children's Book Marketing Copy — Jacket, Retailer Description & Trailer Script",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Write post-deal or self-published marketing copy for a children's book — jacket/flap copy, a retailer description, a short book-trailer script, and social one-liners — pitched to the two buyers (the adult who pays, the child who chooses) with no invented reviews, blurbs, awards or sales claims; distinct from childrens_pitch_comps_market_positioning.md, which positions an unsold manuscript for agents and editors.",
+      "techniques": [
+        "RP-02",
+        "CM-02",
+        "NE-04",
+        "QA-26",
+        "ST-03"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "marketing-copy",
+        "jacket-copy",
+        "book-trailer",
+        "book-description",
+        "how-to-describe-my-kids-book",
+        "self-publishing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/publishing-business/childrens_pitch_comps_market_positioning.md",
+        "domain-advertising/campaign/adcampaign_claims_compliance_review.md",
+        "domain-professional-writing/content-quality/quality_slop_product_description.md"
       ],
       "has_frontmatter": true
     },
@@ -52247,6 +52398,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-childrens-writing/craft-tools/childrens_decodable_text_mechanics.md",
+      "filename": "childrens_decodable_text_mechanics.md",
+      "title": "Decodable Text Mechanics (Phonics-Controlled Stories)",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Write or audit a phonics-controlled decodable story against a supplied scope and sequence: word-by-word classification (decodable / taught high-frequency / untaught), substitution fixes, and a story that still has voice and child agency; distinct from the education-teaching phonics scope-and-sequence builder (which designs the instructional sequence) and from the reading-level calibrator (formula-based leveling).",
+      "techniques": [
+        "CM-02",
+        "DP-04",
+        "DD-07",
+        "CM-09"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "decodable-text",
+        "phonics",
+        "early-reader",
+        "kidlit",
+        "write-a-book-my-beginning-reader-can-sound-out",
+        "phonics-story"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-education-teaching/instructor/subject-pedagogy/ela/teaching_phonics_scope_sequence.md",
+        "domain-childrens-writing/craft-tools/childrens_age_reading_level_calibrator.md",
+        "domain-childrens-writing/fiction-workshops/childrens_early_reader_chapter_book_workshop.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-childrens-writing/fiction-workshops/childrens_early_reader_chapter_book_workshop.md",
       "filename": "childrens_early_reader_chapter_book_workshop.md",
       "title": "Early Reader & Chapter Book Workshop (Ages 5-10)",
@@ -52273,6 +52455,37 @@
         "domain-childrens-writing/craft-tools/childrens_age_reading_level_calibrator.md",
         "domain-childrens-writing/fiction-workshops/childrens_picture_book_workshop.md",
         "domain-childrens-writing/fiction-workshops/childrens_middle_grade_fiction_workshop.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-childrens-writing/publishing-business/childrens_grant_fellowship_application_prep.md",
+      "filename": "childrens_grant_fellowship_application_prep.md",
+      "title": "Grant, Fellowship & Residency Application Prep for Children's Authors",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Help an individual children's author or author-illustrator decide whether a specific grant, fellowship or residency fits, then draft the project description, artist statement and work-sample selection from the program's own published guidelines — never inventing criteria, deadlines, award amounts or acceptance rates; distinct from nonprofit_foundation_grant_proposal.md, which serves an organisation applying with a logic model and budget.",
+      "techniques": [
+        "QA-08",
+        "RT-23",
+        "RP-02",
+        "QA-26"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "grants",
+        "fellowships",
+        "residency",
+        "funding-for-writers",
+        "apply-for-a-writing-grant",
+        "artist-statement"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-business-strategy/nonprofit/nonprofit_foundation_grant_proposal.md",
+        "domain-childrens-writing/publishing-business/childrens_query_letter_kidlit.md",
+        "domain-childrens-writing/publishing-business/childrens_pitch_comps_market_positioning.md"
       ],
       "has_frontmatter": true
     },
@@ -52307,6 +52520,38 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-childrens-writing/representation-collaboration/childrens_illustration_brief_for_hire.md",
+      "filename": "childrens_illustration_brief_for_hire.md",
+      "title": "Illustration Brief for Hire — Self-Publishing Children's Author",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Build the brief and deal checklist a self-publishing children's author sends when hiring a human illustrator — scope and page count, story-critical visual facts, style references that don't ask for a copy of a living artist, schedule and revision rounds, and the rights and payment terms to settle in writing — with no invented rates or legal terms; distinct from childrens_illustrator_collaboration.md (art notes and dummy for traditional submission) and from the AI-image prompts in domain-image-generation/childrens-illustration/.",
+      "techniques": [
+        "NE-20",
+        "CM-03",
+        "CM-09",
+        "OC-10",
+        "QA-01"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "illustrator",
+        "self-publishing",
+        "illustration-brief",
+        "hiring-an-illustrator",
+        "how-to-brief-an-artist",
+        "picture-book"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/representation-collaboration/childrens_illustrator_collaboration.md",
+        "domain-legal/contracts-transactional/legal_licensing_agreement_drafter.md",
+        "domain-image-generation/childrens-illustration/childrens_consistent_style_series.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-childrens-writing/representation-collaboration/childrens_illustrator_collaboration.md",
       "filename": "childrens_illustrator_collaboration.md",
       "title": "Illustrator Collaboration & Art Notes",
@@ -52333,6 +52578,38 @@
         "domain-childrens-writing/fiction-workshops/childrens_picture_book_workshop.md",
         "domain-childrens-writing/fiction-workshops/childrens_graphic_novel_comics_workshop.md",
         "domain-childrens-writing/publishing-business/childrens_synopsis_submission_package.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-childrens-writing/nonfiction-workshops/childrens_informational_picture_book_workshop.md",
+      "filename": "childrens_informational_picture_book_workshop.md",
+      "title": "Informational Picture Book Workshop — History, Careers, Arts & Places",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Build a non-narrative informational picture book on a history, careers, arts, culture or places topic — organising lens, spread plan, layered text, primary-source and perspective checks, and back matter — with every fact sourced or flagged VERIFY and no certification of cultural accuracy; distinct from childrens_expository_stem_concept_workshop.md (science and how-things-work) and childrens_narrative_nonfiction_workshop.md (one true story with an arc).",
+      "techniques": [
+        "ST-01",
+        "DS-01",
+        "RT-05",
+        "QA-05",
+        "RT-23"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "nonfiction",
+        "informational-picture-book",
+        "history-for-kids",
+        "careers-book",
+        "kids-book-about-a-place",
+        "back-matter"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/nonfiction-workshops/childrens_expository_stem_concept_workshop.md",
+        "domain-childrens-writing/nonfiction-workshops/childrens_narrative_nonfiction_workshop.md",
+        "domain-childrens-writing/representation-collaboration/childrens_writing_across_difference_audit.md"
       ],
       "has_frontmatter": true
     },
@@ -52545,6 +52822,70 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-childrens-writing/publishing-business/childrens_school_visit_prep.md",
+      "filename": "childrens_school_visit_prep.md",
+      "title": "School Visit & Author-Event Prep for Children's Authors",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Plan a school visit, library session or bookstore event around a published children's book — read-aloud excerpt selection, an age-matched session plan and activity, a Q&A prep bank, and the logistics questions to ask the host — with no invented fees or curriculum-standard codes; distinct from presentation_keynote_talk_arc.md, which designs adult conference talks.",
+      "techniques": [
+        "RP-02",
+        "NE-02",
+        "ST-44",
+        "NE-23",
+        "QA-01"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "school-visit",
+        "author-event",
+        "read-aloud",
+        "library-event",
+        "talking-to-kids-about-my-book",
+        "classroom-visit"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/craft-tools/childrens_read_aloud_rhythm_rhyme_polish.md",
+        "domain-childrens-writing/craft-tools/childrens_sensitive_topics_framing.md",
+        "domain-presentations/narrative-delivery/presentation_keynote_talk_arc.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-childrens-writing/publishing-business/childrens_self_publishing_prep.md",
+      "filename": "childrens_self_publishing_prep.md",
+      "title": "Self-Publishing Prep for Children's Books",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Plan the self-publishing path for a children's book: format specs by book type (trim, page count, bleed) confirmed against the chosen printer, ISBN and copyright basics, a print-file handoff checklist for the designer, and honest expectation-setting with no invented sales figures; distinct from the traditional-path synopsis/submission package and from the illustrator-collaboration prompt's production-norms overview.",
+      "techniques": [
+        "ST-02",
+        "QA-26",
+        "DD-05",
+        "NE-20",
+        "QA-04"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "self-publishing",
+        "print-on-demand",
+        "publishing",
+        "kidlit",
+        "how-to-self-publish-my-kids-book",
+        "print-ready-files"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/publishing-business/childrens_synopsis_submission_package.md",
+        "domain-childrens-writing/representation-collaboration/childrens_illustrator_collaboration.md",
+        "domain-image-generation/publishing-covers/cover_fiction_book.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-childrens-writing/craft-tools/childrens_sensitive_topics_framing.md",
       "filename": "childrens_sensitive_topics_framing.md",
       "title": "Sensitive Topics Framing for Kids' Books",
@@ -52570,6 +52911,38 @@
         "domain-childrens-writing/fiction-workshops/childrens_middle_grade_fiction_workshop.md",
         "domain-childrens-writing/fiction-workshops/childrens_picture_book_workshop.md",
         "domain-childrens-writing/nonfiction-workshops/childrens_narrative_nonfiction_workshop.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-childrens-writing/fiction-workshops/childrens_series_bible_builder.md",
+      "filename": "childrens_series_bible_builder.md",
+      "title": "Series Bible & Style-Guide Builder (Early Reader to Middle Grade)",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Build a forward-looking series bible for a children's series (voice and house-style guide, per-book format template, continuity tracker, renewable problem engine, and a cheat sheet for whoever writes book 4+), distinct from the one-step Series Engine in the early-reader workshop and from the adult-fiction continuity audit that extracts a bible from finished books.",
+      "techniques": [
+        "ST-01",
+        "AG-39",
+        "OC-03",
+        "CM-02",
+        "NE-20"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "series-bible",
+        "style-guide",
+        "chapter-book",
+        "kidlit",
+        "planning-a-book-series",
+        "keeping-books-consistent"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/fiction-workshops/childrens_early_reader_chapter_book_workshop.md",
+        "domain-childrens-writing/craft-tools/childrens_character_creation.md",
+        "domain-creative-writing/craft-tools/writing_series_continuity_audit.md"
       ],
       "has_frontmatter": true
     },
@@ -52600,6 +52973,37 @@
         "domain-childrens-writing/publishing-business/childrens_query_letter_kidlit.md",
         "domain-childrens-writing/representation-collaboration/childrens_illustrator_collaboration.md",
         "domain-childrens-writing/craft-tools/childrens_revision_self_edit_pass.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-childrens-writing/publishing-business/childrens_translation_rights_considerations.md",
+      "filename": "childrens_translation_rights_considerations.md",
+      "title": "Translation & International Rights Considerations for Children's Books",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Help a children's author prepare for foreign-rights and translation questions — audit which rhyme, wordplay, names and cultural references will and won't survive translation, map which rights they hold, and build a question list for their agent, publisher or lawyer — with no invented rates, territories, splits or contract norms; distinct from legal_licensing_agreement_drafter.md, which drafts IP licences, and from contract review, which needs counsel.",
+      "techniques": [
+        "DT-05",
+        "QA-04",
+        "OC-09",
+        "CM-09"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "foreign-rights",
+        "translation",
+        "international-rights",
+        "my-book-got-a-foreign-offer",
+        "rhyme-in-translation",
+        "publishing"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/craft-tools/childrens_read_aloud_rhythm_rhyme_polish.md",
+        "domain-childrens-writing/representation-collaboration/childrens_writing_across_difference_audit.md",
+        "domain-legal/contracts-transactional/legal_licensing_agreement_drafter.md"
       ],
       "has_frontmatter": true
     },
@@ -52660,6 +53064,37 @@
         "domain-childrens-writing/fiction-workshops/childrens_middle_grade_fiction_workshop.md",
         "domain-childrens-writing/craft-tools/childrens_read_aloud_rhythm_rhyme_polish.md",
         "domain-childrens-writing/craft-tools/childrens_revision_self_edit_pass.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-childrens-writing/fiction-workshops/childrens_wordless_picture_book_workshop.md",
+      "filename": "childrens_wordless_picture_book_workshop.md",
+      "title": "Wordless Picture Book Workshop",
+      "domain": "childrens-writing",
+      "category": "childrens-writing",
+      "description": "Plan a wordless picture book as an invisible script: a spread-by-spread visual beat map, emotional legibility without text, page-turns driven by composition, and an illustrator brief or author-illustrator plan; distinct from the picture-book workshop (whose text/art split assumes a text layer) and the graphic-novel workshop (panel scripts with captions and balloons).",
+      "techniques": [
+        "ST-01",
+        "SV-12",
+        "DT-05",
+        "NE-04"
+      ],
+      "keywords": [
+        "childrens-writing",
+        "wordless-picture-book",
+        "picture-book",
+        "visual-storytelling",
+        "kidlit",
+        "picture-book-with-no-words",
+        "storyboard-my-book"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-childrens-writing/fiction-workshops/childrens_picture_book_workshop.md",
+        "domain-childrens-writing/representation-collaboration/childrens_illustrator_collaboration.md",
+        "domain-image-generation/childrens-illustration/childrens_book_illustration_spread.md"
       ],
       "has_frontmatter": true
     },
@@ -52916,7 +53351,10 @@
         "CEFR",
         "corrective-feedback",
         "speaking-practice",
-        "simulation"
+        "simulation",
+        "practice-talking",
+        "correct-my-mistakes",
+        "foreign-language-chat"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -52946,7 +53384,9 @@
         "can-do-statements",
         "speaking-assessment",
         "role-play",
-        "self-assessment"
+        "self-assessment",
+        "my-real-level",
+        "check-my-speaking"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -52976,7 +53416,10 @@
         "authentic-input",
         "clarification-strategies",
         "role-play",
-        "fluency"
+        "fluency",
+        "natives-talk-fast",
+        "lost-in-conversation",
+        "asking-to-repeat"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -53006,7 +53449,10 @@
         "politeness",
         "sociolinguistics",
         "role-play",
-        "speaking-practice"
+        "speaking-practice",
+        "formal-or-casual",
+        "sounding-rude",
+        "addressing-strangers"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -53036,7 +53482,10 @@
         "repair-strategies",
         "travel",
         "customer-service",
-        "speaking-practice"
+        "speaking-practice",
+        "trouble-abroad",
+        "lost-luggage",
+        "moving-abroad"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -53066,7 +53515,10 @@
         "role-play",
         "meetings",
         "job-interview",
-        "speaking-practice"
+        "speaking-practice",
+        "working-abroad",
+        "second-language-job",
+        "speaking-up"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -53146,7 +53598,10 @@
         "humor",
         "craft",
         "timing",
-        "scene-writing"
+        "scene-writing",
+        "jokes-fall-flat",
+        "make-it-funnier",
+        "lighten-dark-story"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -53232,7 +53687,10 @@
         "treatment",
         "nonfiction-film",
         "pitch",
-        "ethics"
+        "ethics",
+        "film-fund-application",
+        "real-life-film",
+        "before-filming"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -53318,7 +53776,10 @@
         "horror",
         "genre",
         "dread",
-        "atmosphere"
+        "atmosphere",
+        "not-scary-enough",
+        "ghost-story",
+        "creepy-tension"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -53689,7 +54150,10 @@
         "romance",
         "genre",
         "relationship-arc",
-        "tropes"
+        "tropes",
+        "love-story",
+        "happily-ever-after",
+        "no-chemistry"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -53775,7 +54239,10 @@
         "story-bible",
         "revision",
         "series-fiction",
-        "plot-holes"
+        "plot-holes",
+        "writing-a-sequel",
+        "timeline-mistakes",
+        "inconsistent-details"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -53860,7 +54327,10 @@
         "lyrics",
         "chorus",
         "hook",
-        "drafting"
+        "drafting",
+        "cliched-lines",
+        "stuck-on-verses",
+        "poet-writing-music"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -53891,7 +54361,10 @@
         "prosody",
         "song-structure",
         "hook",
-        "revision"
+        "revision",
+        "chorus-doesnt-lift",
+        "words-fight-melody",
+        "awkward-to-sing"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -53977,7 +54450,10 @@
         "television",
         "pilot",
         "series-bible",
-        "story-engine"
+        "story-engine",
+        "show-idea",
+        "writing-fellowship",
+        "episode-two"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -54037,7 +54513,10 @@
         "thriller",
         "suspense",
         "genre",
-        "plotting"
+        "plotting",
+        "dumb-villain",
+        "page-turner",
+        "ticking-clock"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -54120,7 +54599,10 @@
         "churn-analysis",
         "business-analytics",
         "survival-curve",
-        "revenue-retention"
+        "revenue-retention",
+        "customers-leaving",
+        "users-come-back",
+        "after-pricing-change"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -54151,7 +54633,10 @@
         "mix-shift",
         "segment-decomposition",
         "business-analytics",
-        "anomaly-explanation"
+        "anomaly-explanation",
+        "sudden-drop",
+        "boss-asking-why",
+        "unexpected-spike"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -54182,7 +54667,10 @@
         "join-fan-out",
         "data-validation",
         "business-analytics",
-        "analysis-queries"
+        "analysis-queries",
+        "number-looks-wrong",
+        "double-counting",
+        "reports-disagree"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -54247,7 +54735,10 @@
         "data-visualization",
         "reporting-quality",
         "business-analytics",
-        "bi-reporting"
+        "bi-reporting",
+        "too-many-charts",
+        "unused-reports",
+        "confusing-charts"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -54277,7 +54768,10 @@
         "metric-decomposition",
         "business-analytics",
         "variance-attribution",
-        "operating-metrics"
+        "operating-metrics",
+        "what-drives-revenue",
+        "setting-team-targets",
+        "too-many-causes"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -54308,7 +54802,10 @@
         "data-dictionary",
         "semantic-layer",
         "metric-governance",
-        "business-analytics"
+        "business-analytics",
+        "numbers-dont-match",
+        "counting-active-users",
+        "board-report-numbers"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -54339,7 +54836,10 @@
         "problem-framing",
         "business-analytics",
         "scoping",
-        "decision-support"
+        "decision-support",
+        "vague-request",
+        "boss-wants-numbers",
+        "unused-analysis"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -55785,7 +56285,7 @@
       "related_prompts": [
         "domain-risk/risk_crisis_severity_triage.md",
         "domain-risk/risk_crisis_communication_playbook.md",
-        "decision-making/decisioning_rapid_stakeholder_alignment.md",
+        "domain-decision-making/decisioning_rapid_stakeholder_alignment.md",
         "productivity/validation/validation_adversarial_mini_check.md"
       ],
       "has_frontmatter": true
@@ -55817,9 +56317,9 @@
       "difficulty": "advanced",
       "updated": "2026-02-26",
       "related_prompts": [
-        "decision-making/decisioning_logic_problem_solver.md",
-        "decision-making/decisioning_multi_constraint_optimizer.md",
-        "decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
+        "domain-decision-making/decisioning_logic_problem_solver.md",
+        "domain-decision-making/decisioning_multi_constraint_optimizer.md",
+        "domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
         "productivity/validation/validation_disconfirmation_pass.md"
       ],
       "has_frontmatter": true
@@ -55851,8 +56351,8 @@
       "difficulty": "advanced",
       "updated": "2026-02-26",
       "related_prompts": [
-        "decision-making/decisioning_first_principles_problem_decomposition.md",
-        "decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
+        "domain-decision-making/decisioning_first_principles_problem_decomposition.md",
+        "domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
         "productivity/validation/validation_confidence_calibration.md"
       ],
       "has_frontmatter": true
@@ -55883,8 +56383,8 @@
       "difficulty": "advanced",
       "updated": "2026-02-26",
       "related_prompts": [
-        "decision-making/decisioning_time_boxed_decision_protocol.md",
-        "decision-making/decisioning_resource_constrained_solver.md",
+        "domain-decision-making/decisioning_time_boxed_decision_protocol.md",
+        "domain-decision-making/decisioning_resource_constrained_solver.md",
         "productivity/validation/validation_adversarial_mini_check.md"
       ],
       "has_frontmatter": true
@@ -55917,9 +56417,9 @@
       "updated": "2026-02-26",
       "related_prompts": [
         "domain-risk/risk_crisis_severity_triage.md",
-        "decision-making/decisioning_escalation_decision_tree.md",
+        "domain-decision-making/decisioning_escalation_decision_tree.md",
         "domain-risk/risk_crisis_communication_playbook.md",
-        "decision-making/decisioning_time_boxed_decision_protocol.md"
+        "domain-decision-making/decisioning_time_boxed_decision_protocol.md"
       ],
       "has_frontmatter": true
     },
@@ -55984,9 +56484,9 @@
       "difficulty": "intermediate",
       "updated": "2026-02-26",
       "related_prompts": [
-        "decision-making/decisioning_multi_constraint_optimizer.md",
-        "decision-making/decisioning_time_boxed_decision_protocol.md",
-        "decision-making/decisioning_first_principles_problem_decomposition.md",
+        "domain-decision-making/decisioning_multi_constraint_optimizer.md",
+        "domain-decision-making/decisioning_time_boxed_decision_protocol.md",
+        "domain-decision-making/decisioning_first_principles_problem_decomposition.md",
         "productivity/validation/validation_adversarial_mini_check.md"
       ],
       "has_frontmatter": true
@@ -75758,7 +76258,10 @@
         "card-sorting",
         "tree-testing",
         "navigation",
-        "findability"
+        "findability",
+        "cant-find-things",
+        "menu-labels",
+        "reorganizing-site"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -75789,7 +76292,10 @@
         "facilitation",
         "design-review",
         "feedback",
-        "collaboration"
+        "collaboration",
+        "design-by-committee",
+        "taste-arguments",
+        "feedback-session"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -75820,7 +76326,10 @@
         "usability",
         "expert-review",
         "nielsen-heuristics",
-        "audit"
+        "audit",
+        "no-users-yet",
+        "confusing-interface",
+        "before-redesign"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -75851,7 +76360,10 @@
         "moderation",
         "think-aloud",
         "interview-technique",
-        "session-script"
+        "session-script",
+        "leading-questions",
+        "first-user-test",
+        "what-to-say"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -75882,7 +76394,10 @@
         "umux-lite",
         "seq",
         "questionnaire-scoring",
-        "usability-metrics"
+        "usability-metrics",
+        "score-looks-wrong",
+        "compare-versions",
+        "ease-of-use"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -75913,7 +76428,10 @@
         "severity-rating",
         "findings-log",
         "prioritization",
-        "evidence"
+        "evidence",
+        "fix-first",
+        "merging-observer-notes",
+        "after-user-tests"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -75944,7 +76462,10 @@
         "study-design",
         "recruiting",
         "task-design",
-        "metrics"
+        "metrics",
+        "test-a-prototype",
+        "need-user-feedback",
+        "pick-between-designs"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -76099,7 +76620,10 @@
         "utility-ai",
         "goap",
         "npc",
-        "enemy-design"
+        "enemy-design",
+        "enemies-feel-dumb",
+        "enemy-behavior",
+        "designers-cant-tune"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -76278,7 +76802,10 @@
         "combat",
         "difficulty",
         "dynamic-difficulty",
-        "time-to-kill"
+        "time-to-kill",
+        "game-too-hard",
+        "fights-drag-on",
+        "easy-mode"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -76334,7 +76861,10 @@
         "game-feel",
         "juice",
         "accessibility",
-        "ux-review"
+        "ux-review",
+        "feels-floaty",
+        "cluttered-screen",
+        "laggy-controls"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -76454,7 +76984,10 @@
         "dark-patterns",
         "minors",
         "game-economy",
-        "ethics"
+        "ethics",
+        "battle-pass",
+        "in-game-purchases",
+        "team-burnout"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -76655,7 +77188,10 @@
         "greybox",
         "pacing",
         "beat-chart",
-        "player-metrics"
+        "player-metrics",
+        "players-get-lost",
+        "boring-middle",
+        "teaching-new-mechanic"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -76810,7 +77346,10 @@
         "branching-dialogue",
         "game-writing",
         "interactive-narrative",
-        "state-variables"
+        "state-variables",
+        "choices-dont-matter",
+        "player-gets-stuck",
+        "too-many-branches"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -76897,7 +77436,10 @@
         "retrospective",
         "lessons-learned",
         "scope-management",
-        "crunch"
+        "crunch",
+        "project-cancelled",
+        "over-budget",
+        "missed-deadlines"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -76927,7 +77469,10 @@
         "vertical-slice",
         "game-budget",
         "comparable-titles",
-        "fundraising"
+        "fundraising",
+        "indie-game-funding",
+        "publishers-said-no",
+        "investor-meeting"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -77043,7 +77588,10 @@
         "feedback-synthesis",
         "game-design",
         "telemetry",
-        "player-experience"
+        "player-experience",
+        "too-much-feedback",
+        "one-loud-tester",
+        "beta-testers"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -77108,7 +77656,11 @@
         "cycling",
         "taper",
         "injury-prevention",
-        "event-training"
+        "event-training",
+        "race-coming-up",
+        "realistic-race-date",
+        "shin-pain",
+        "missed-training"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -77138,7 +77690,11 @@
         "plateau",
         "deload",
         "overreaching",
-        "program-review"
+        "program-review",
+        "not-getting-stronger",
+        "sore-for-days",
+        "dreading-workouts",
+        "need-rest-week"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -77168,7 +77724,10 @@
         "red-flags",
         "safety-gate",
         "exercise-readiness",
-        "medical-clearance"
+        "medical-clearance",
+        "safe-to-exercise",
+        "restarting-after-break",
+        "check-before-starting"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -77198,7 +77757,10 @@
         "weekly-schedule",
         "consistency",
         "recovery",
-        "minimum-viable-week"
+        "minimum-viable-week",
+        "keep-falling-off",
+        "no-spare-time",
+        "irregular-schedule"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -77228,7 +77790,10 @@
         "eating-pattern",
         "food-log",
         "strong-guard",
-        "disordered-eating-guard"
+        "disordered-eating-guard",
+        "afternoon-energy-crash",
+        "flat-in-workouts",
+        "eating-habits-check"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -77259,7 +77824,10 @@
         "protein",
         "fibre",
         "strong-guard",
-        "sports-nutrition"
+        "sports-nutrition",
+        "eating-around-workouts",
+        "cheap-healthy-meals",
+        "no-calorie-counting"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -77276,7 +77844,7 @@
       "title": "Sleep Routine and Environment Audit — Timing, Light, Caffeine, Alcohol, and Bedroom for a Healthy Adult",
       "domain": "health-wellness",
       "category": "health-wellness/sleep-recovery",
-      "description": "Audit a healthy adult's sleep from a one-to-two-week log: wake-time regularity, sleep opportunity, morning and evening light, caffeine and alcohol timing, late meals and training, bedroom environment, wind-down, and naps — then run a two-week experiment on the two or three highest-leverage changes. Routes suspected sleep apnoea, chronic insomnia, and other sleep-disorder signs to a clinician (and insomnia to the CBT-I prompt) before any audit. No sleep aids or supplements.",
+      "description": "Audit a healthy adult's sleep from a one-to-two-week log: wake-time regularity, sleep opportunity, morning and evening light, caffeine and alcohol timing, late meals and training, bedroom environment, wind-down, and naps — then run a two-week experiment on the two or three highest-leverage changes. Routes suspected sleep apnea, chronic insomnia, and other sleep-disorder signs to a clinician (and insomnia to the CBT-I prompt only with or after clinician review) before any audit. No sleep aids or supplements.",
       "techniques": [
         "QA-08",
         "RT-02",
@@ -77289,7 +77857,10 @@
         "sleep-hygiene",
         "circadian-rhythm",
         "recovery",
-        "caffeine"
+        "caffeine",
+        "wake-up-tired",
+        "weekend-lie-ins",
+        "phone-in-bed"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -78421,11 +78992,18 @@
         "gastroenterology",
         "radiology",
         "ct-abdomen",
-        "interpretation"
+        "interpretation",
+        "belly-pain",
+        "bowel-blockage",
+        "unexpected-scan-finding"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_abdominal_pain.md",
+        "domain-healthcare-clinical/prompts/specialty/specialty_pancreatitis_severity_management.md",
+        "domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78447,11 +79025,18 @@
         "radiology",
         "ct-chest",
         "pulmonary-embolism",
-        "interpretation"
+        "interpretation",
+        "blood-clot-in-lung",
+        "spot-on-lung",
+        "short-of-breath"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/interpretation/interp_cxr_systematic_read.md",
+        "domain-healthcare-clinical/prompts/pharmacology/pharm_doac_selection_by_profile.md",
+        "domain-healthcare-clinical/prompts/specialty/specialty_solitary_pulmonary_nodule_fleischner.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78473,11 +79058,18 @@
         "neurosurgery",
         "radiology",
         "ct-head",
-        "interpretation"
+        "interpretation",
+        "head-bleed",
+        "fall-on-blood-thinners",
+        "head-injury"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/interpretation/interp_mri_brain.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_anticoagulation_decision_support.md",
+        "domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78499,11 +79091,18 @@
         "infectious-disease",
         "meningitis",
         "csf",
-        "interpretation"
+        "interpretation",
+        "spinal-tap-results",
+        "fever-and-stiff-neck",
+        "sudden-worst-headache"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_headache.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md",
+        "domain-medical-education/learner-procedures/study_central_line_lp_checklist_drill.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78602,11 +79201,18 @@
         "echocardiography",
         "heart-failure",
         "valvular-disease",
-        "interpretation"
+        "interpretation",
+        "heart-ultrasound",
+        "tight-heart-valve",
+        "weak-heart-pump"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_dyspnea.md",
+        "domain-healthcare-clinical/prompts/care-plans/careplan_hfref_gdmt.md",
+        "domain-healthcare-clinical/prompts/pathophysiology/patho_cardiac_hemodynamics.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78628,11 +79234,17 @@
         "iron-deficiency",
         "hemochromatosis",
         "anemia",
-        "interpretation"
+        "interpretation",
+        "always-tired",
+        "hidden-blood-loss"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_anemia.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_cbc_differential.md",
+        "domain-healthcare-clinical/prompts/acute-care/acute_gi_bleed.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78654,11 +79266,18 @@
         "lipids",
         "preventive-medicine",
         "familial-hypercholesterolemia",
-        "interpretation"
+        "interpretation",
+        "high-cholesterol",
+        "family-heart-disease",
+        "very-high-triglycerides"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/care-plans/careplan_hyperlipidemia_ascvd.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_thyroid_function.md",
+        "domain-healthcare-clinical/prompts/specialty/specialty_pancreatitis_severity_management.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78706,11 +79325,18 @@
         "radiology",
         "mri-brain",
         "multiple-sclerosis",
-        "interpretation"
+        "interpretation",
+        "scan-shows-lesions",
+        "new-neurologic-deficit",
+        "incidental-scan-finding"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/interpretation/interp_ct_head.md",
+        "domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md",
+        "domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78732,11 +79358,18 @@
         "spine",
         "radiology",
         "mri-spine",
-        "interpretation"
+        "interpretation",
+        "back-pain",
+        "leg-weakness",
+        "slipped-disc"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/interpretation/interp_mri_brain.md",
+        "domain-healthcare-clinical/prompts/specialty/medicine_oncology_case_framer.md",
+        "domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78758,11 +79391,18 @@
         "microbiology",
         "antimicrobial-resistance",
         "bacteremia",
-        "interpretation"
+        "interpretation",
+        "bacteria-in-blood",
+        "which-antibiotic",
+        "drug-resistant-infection"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/interpretation/interp_urinalysis_microscopy.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md",
+        "domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drug_grid.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78784,11 +79424,18 @@
         "pft",
         "spirometry",
         "copd",
-        "interpretation"
+        "interpretation",
+        "breathing-test-results",
+        "short-of-breath",
+        "ex-smoker"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/interpretation/interp_abg_acid_base.md",
+        "domain-healthcare-clinical/prompts/pharmacology/pharm_inhaler_regimen_asthma_copd.md",
+        "domain-healthcare-clinical/prompts/specialty/specialty_ild_workup.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78810,11 +79457,18 @@
         "pathology",
         "cancer-staging",
         "biomarkers",
-        "interpretation"
+        "interpretation",
+        "biopsy-results",
+        "new-cancer-diagnosis",
+        "breast-cancer"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_lymphadenopathy.md",
+        "domain-healthcare-clinical/prompts/specialty/medicine_oncology_case_framer.md",
+        "domain-healthcare-clinical/prompts/pathophysiology/patho_oncogenesis_tumor_biology.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78836,11 +79490,19 @@
         "pulmonology",
         "hepatology",
         "body-fluids",
-        "interpretation"
+        "interpretation",
+        "hot-swollen-joint",
+        "fluid-on-lung",
+        "belly-fluid",
+        "tap-results"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_joint_pain_arthritis.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md",
+        "domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -78862,11 +79524,18 @@
         "thyroid",
         "hypothyroidism",
         "hyperthyroidism",
-        "interpretation"
+        "interpretation",
+        "racing-heart",
+        "tired-and-cold",
+        "after-giving-birth"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/specialty/specialty_thyroid_nodule_workup.md",
+        "domain-healthcare-clinical/prompts/pathophysiology/patho_endocrine_axis_dysfunction.md",
+        "domain-healthcare-clinical/prompts/pharmacology/pharm_pregnancy_lactation_drug_safety.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80337,11 +81006,18 @@
         "gastroenterology",
         "pancreatitis",
         "hospital-medicine",
-        "specialty-assessment"
+        "specialty-assessment",
+        "epigastric-pain",
+        "gallstones",
+        "high-lipase"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_abdominal_pain.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_ct_abdomen_pelvis.md",
+        "domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80362,11 +81038,18 @@
         "primary-care",
         "infectious-disease",
         "pediatrics",
-        "specialty-assessment"
+        "specialty-assessment",
+        "sore-throat",
+        "strep-throat",
+        "antibiotics-or-not"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/specialty/specialty_drug_allergy_delabeling.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md",
+        "domain-healthcare-clinical/prompts/acute-care/medicine_emergency_triage_decision_support.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80387,11 +81070,17 @@
         "ophthalmology",
         "neuro-ophthalmology",
         "emergency-medicine",
-        "specialty-assessment"
+        "specialty-assessment",
+        "sudden-blindness",
+        "curtain-over-eye"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/specialty/specialty_red_eye_workup.md",
+        "domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md",
+        "domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80412,11 +81101,18 @@
         "endocrinology",
         "adrenal",
         "radiology",
-        "specialty-assessment"
+        "specialty-assessment",
+        "found-on-scan",
+        "lump-near-kidney",
+        "resistant-blood-pressure"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/specialty/specialty_hypercortisolism_workup.md",
+        "domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_ct_abdomen_pelvis.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80437,11 +81133,18 @@
         "hematology",
         "thrombocytopenia",
         "neutropenia",
-        "specialty-assessment"
+        "specialty-assessment",
+        "low-platelets",
+        "low-white-count",
+        "low-blood-counts"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/interpretation/interp_cbc_differential.md",
+        "domain-healthcare-clinical/prompts/reasoning/workup_anemia.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_anticoagulation_decision_support.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80462,11 +81165,18 @@
         "dermatology",
         "melanoma",
         "skin-cancer",
-        "specialty-assessment"
+        "specialty-assessment",
+        "changing-mole",
+        "suspicious-spot",
+        "bleeding-mole"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_rash_differential.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_pathology_report.md",
+        "domain-healthcare-clinical/prompts/pharmacology/pharm_anticoag_periprocedural_bridging.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80487,11 +81197,17 @@
         "allergy-immunology",
         "antimicrobial-stewardship",
         "penicillin-allergy",
-        "specialty-assessment"
+        "specialty-assessment",
+        "old-allergy-label",
+        "antibiotic-rash-history"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/pharmacology/pharm_adverse_drug_reaction_naranjo.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md",
+        "domain-healthcare-clinical/prompts/specialty/specialty_pharyngitis_centor.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80513,11 +81229,18 @@
         "oncology",
         "transplant",
         "febrile-neutropenia",
-        "specialty-assessment"
+        "specialty-assessment",
+        "sick-after-chemo",
+        "low-white-count",
+        "transplant-infection"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_fever_unknown_origin.md",
+        "domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80538,11 +81261,18 @@
         "infectious-disease",
         "hiv",
         "antiretroviral",
-        "specialty-assessment"
+        "specialty-assessment",
+        "newly-diagnosed",
+        "first-clinic-visit",
+        "same-day-treatment"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/care-plans/careplan_hiv_management.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md",
+        "domain-healthcare-clinical/prompts/specialty/specialty_immunocompromised_fever.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80563,11 +81293,18 @@
         "endocrinology",
         "cushing-syndrome",
         "pituitary",
-        "specialty-assessment"
+        "specialty-assessment",
+        "purple-stretch-marks",
+        "unexplained-weight-gain",
+        "easy-bruising"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/specialty/specialty_adrenal_incidentaloma.md",
+        "domain-healthcare-clinical/prompts/pathophysiology/patho_endocrine_axis_dysfunction.md",
+        "domain-healthcare-clinical/prompts/pharmacology/pharm_steroid_taper_design.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80589,11 +81326,18 @@
         "interstitial-lung-disease",
         "ipf",
         "rheumatology",
-        "specialty-assessment"
+        "specialty-assessment",
+        "lung-scarring",
+        "breathless-on-exertion",
+        "chronic-dry-cough"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_dyspnea.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_pft_pulmonary_function.md",
+        "domain-healthcare-clinical/prompts/specialty/specialty_autoimmune_workup_ana.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80615,11 +81359,17 @@
         "dialysis",
         "ckd",
         "shared-decision-making",
-        "specialty-assessment"
+        "specialty-assessment",
+        "kidneys-failing",
+        "fistula-planning"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/care-plans/careplan_ckd_staged.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_goals_of_care_conversation_guide.md",
+        "domain-healthcare-clinical/prompts/acute-care/acute_severe_hyperkalemia.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80640,11 +81390,18 @@
         "rheumatology",
         "autoimmune",
         "ana",
-        "specialty-assessment"
+        "specialty-assessment",
+        "lupus-worry",
+        "joint-pain-rash",
+        "abnormal-antibody-test"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_joint_pain_arthritis.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_urinalysis_microscopy.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_bayesian_pretest_posttest_drill.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80666,11 +81423,18 @@
         "radiology",
         "pulmonary-nodule",
         "lung-cancer",
-        "specialty-assessment"
+        "specialty-assessment",
+        "spot-on-lung",
+        "chance-scan-finding",
+        "when-to-rescan"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_ct_chest.md",
+        "domain-healthcare-clinical/prompts/specialty/medicine_oncology_case_framer.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80691,11 +81455,18 @@
         "ophthalmology",
         "emergency-medicine",
         "primary-care",
-        "specialty-assessment"
+        "specialty-assessment",
+        "pink-eye",
+        "painful-eye",
+        "chemical-in-eye"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/specialty/specialty_acute_vision_loss.md",
+        "domain-healthcare-clinical/prompts/reasoning/workup_headache.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_red_flag_can_t_miss_drill.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80716,11 +81487,18 @@
         "hematology",
         "thrombosis",
         "antiphospholipid-syndrome",
-        "specialty-assessment"
+        "specialty-assessment",
+        "unexplained-blood-clot",
+        "recurrent-clots",
+        "family-clot-history"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_anticoagulation_decision_support.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_coagulation_panel.md",
+        "domain-healthcare-clinical/prompts/specialty/specialty_autoimmune_workup_ana.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80741,11 +81519,18 @@
         "endocrinology",
         "thyroid",
         "ultrasound",
-        "specialty-assessment"
+        "specialty-assessment",
+        "neck-lump",
+        "needle-biopsy-decision",
+        "found-on-scan"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_thyroid_function.md",
+        "domain-healthcare-clinical/prompts/specialty/specialty_adrenal_incidentaloma.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -80766,11 +81551,18 @@
         "neurology",
         "neuro-otology",
         "emergency-medicine",
-        "specialty-assessment"
+        "specialty-assessment",
+        "dizzy-patient",
+        "room-spinning",
+        "stroke-or-inner-ear"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
-      "related_prompts": [],
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/reasoning/workup_dizziness_vertigo.md",
+        "domain-healthcare-clinical/prompts/acute-care/acute_stroke_tpa_thrombectomy.md",
+        "domain-healthcare-clinical/prompts/interpretation/interp_mri_brain.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -88296,7 +89088,10 @@
         "career-framework",
         "promotion-criteria",
         "dual-track",
-        "people-ops"
+        "people-ops",
+        "getting-promoted",
+        "unclear-job-levels",
+        "promoted-by-tenure"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -88357,7 +89152,10 @@
         "survey-analysis",
         "anonymity",
         "action-planning",
-        "people-ops"
+        "people-ops",
+        "low-morale",
+        "what-staff-think",
+        "nothing-changes-after"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -88418,7 +89216,9 @@
         "equal-pay",
         "audit",
         "remediation",
-        "legally-careful"
+        "legally-careful",
+        "gender-pay-gap",
+        "unfair-salaries"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -88479,7 +89279,10 @@
         "termination-conversation",
         "selection-criteria",
         "survivor-communication",
-        "legally-careful"
+        "legally-careful",
+        "cutting-staff",
+        "choosing-who-goes",
+        "downsizing"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -88510,7 +89313,10 @@
         "key-person-risk",
         "bench-strength",
         "leadership-pipeline",
-        "people-ops"
+        "people-ops",
+        "key-person-leaving",
+        "upcoming-retirement",
+        "no-backup-person"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -88676,7 +89482,10 @@
         "career-ladder",
         "evidence-based",
         "manager-writing",
-        "calibration"
+        "calibration",
+        "nominating-a-report",
+        "ready-to-advance",
+        "advocating-for-employee"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -89868,7 +90677,10 @@
         "combinatorial",
         "concept-generation",
         "product-design",
-        "zwicky-box"
+        "zwicky-box",
+        "ideas-look-alike",
+        "explore-all-options",
+        "mix-and-match"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -90146,7 +90958,10 @@
         "facilitation",
         "agenda-design",
         "remote-workshop",
-        "diverge-converge"
+        "diverge-converge",
+        "running-a-brainstorm",
+        "team-offsite",
+        "nothing-got-done"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -90201,7 +91016,9 @@
         "contradiction",
         "inventive-principles",
         "engineering-design",
-        "problem-solving"
+        "problem-solving",
+        "cant-have-both",
+        "stuck-on-tradeoff"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -90425,7 +91242,10 @@
         "parallel-thinking",
         "group-discussion",
         "proposal-review",
-        "facilitation"
+        "facilitation",
+        "meetings-become-debates",
+        "constant-naysayer",
+        "review-my-idea"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -90538,7 +91358,10 @@
         "problem-framing",
         "reframing",
         "design-thinking",
-        "workshop-prep"
+        "workshop-prep",
+        "solution-too-early",
+        "same-ideas-again",
+        "brainstorm-prompt"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -90650,7 +91473,10 @@
         "clustering",
         "kj-method",
         "synthesis",
-        "workshop"
+        "workshop",
+        "sticky-note-pile",
+        "open-text-answers",
+        "messy-brainstorm"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -95124,7 +95950,10 @@
         "normative-theories",
         "dilemmas",
         "self-study",
-        "humanities"
+        "humanities",
+        "right-or-wrong",
+        "moral-gray-area",
+        "why-people-disagree"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -95180,7 +96009,10 @@
         "historical-thinking",
         "self-study",
         "humanities",
-        "adult-learner"
+        "adult-learner",
+        "old-documents",
+        "trusting-sources",
+        "bias-in-sources"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -95235,7 +96067,10 @@
         "argument-reconstruction",
         "validity",
         "self-study",
-        "humanities"
+        "humanities",
+        "dense-reading",
+        "does-it-follow",
+        "spot-weak-reasoning"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -95289,7 +96124,10 @@
         "intuition-pumps",
         "self-study",
         "humanities",
-        "critical-thinking"
+        "critical-thinking",
+        "famous-puzzle",
+        "what-it-proves",
+        "gut-reaction"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -95460,7 +96298,10 @@
         "primary-texts",
         "self-study",
         "humanities",
-        "pacing"
+        "pacing",
+        "stalled-reading",
+        "great-books",
+        "understand-philosophy"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -96100,7 +96941,8 @@
         "amicus-curiae",
         "brief-strategy",
         "coalition",
-        "supreme-court"
+        "supreme-court",
+        "friend-of-court"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -96132,7 +96974,8 @@
         "issue-selection",
         "preservation",
         "standard-of-review",
-        "harmless-error"
+        "harmless-error",
+        "lost-at-trial"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -96164,7 +97007,8 @@
         "oral-argument",
         "moot-court",
         "hot-bench",
-        "concessions"
+        "concessions",
+        "tough-judge-questions"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -96196,7 +97040,8 @@
         "statement-of-facts",
         "record-citation",
         "brief-writing",
-        "joint-appendix"
+        "joint-appendix",
+        "telling-the-story"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -96228,7 +97073,8 @@
         "certiorari",
         "petition-for-review",
         "discretionary-review",
-        "questions-presented"
+        "questions-presented",
+        "lost-on-appeal"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -96260,7 +97106,8 @@
         "relief-from-stay",
         "adequate-protection",
         "motion-practice",
-        "valuation"
+        "valuation",
+        "foreclosure-on-hold"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -96313,7 +97160,8 @@
         "subchapter-v",
         "means-test",
         "eligibility",
-        "restructuring"
+        "restructuring",
+        "buried-in-debt"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -96369,7 +97217,8 @@
         "plan-confirmation",
         "cramdown",
         "absolute-priority",
-        "feasibility"
+        "feasibility",
+        "creditors-object"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -96425,7 +97274,8 @@
         "claims",
         "priority",
         "secured-claims",
-        "creditor-rights"
+        "creditor-rights",
+        "customer-went-bankrupt"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -96478,7 +97328,8 @@
         "distressed-ma",
         "stalking-horse",
         "bidding-procedures",
-        "free-and-clear"
+        "free-and-clear",
+        "buyer-for-business"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -96776,6 +97627,38 @@
         "domain-legal/contracts-transactional/legal_saas_subscription_agreement_drafter.md",
         "domain-legal/contracts-transactional/legal_contract_review_full_redline.md",
         "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/contracts-transactional/legal_government_contract_dispute_memo.md",
+      "filename": "legal_government_contract_dispute_memo.md",
+      "title": "Government Contract Dispute Memo — REA vs. Certified Claim, Entitlement, Quantum, and Termination for Convenience",
+      "domain": "legal",
+      "category": "legal/contracts-transactional",
+      "description": "Attorney-facing memo for a contractor (or agency counsel) on a federal government-contract dispute — whether to pursue a request for equitable adjustment or a certified Contract Disputes Act claim, entitlement theories, quantum method, notice and release defenses, termination-for-convenience settlement posture, forum election, and false-claims exposure — distinct from commercial termination economics and from subcontract flow-down review.",
+      "techniques": [
+        "DT-01",
+        "RT-03",
+        "CM-02",
+        "QA-05",
+        "QA-12"
+      ],
+      "keywords": [
+        "legal",
+        "government-contracts",
+        "contract-disputes-act",
+        "equitable-adjustment",
+        "termination-for-convenience",
+        "government-wont-pay",
+        "contract-terminated-by-agency"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/contracts-transactional/legal_subcontractor_flow_down_check.md",
+        "domain-legal/contracts-transactional/legal_termination_economics_provider_side.md",
+        "domain-legal/regulatory-compliance/legal_voluntary_disclosure_decision_memo.md"
       ],
       "has_frontmatter": true
     },
@@ -97143,6 +98026,38 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/corporate-ma/legal_antitrust_merger_clearance_memo.md",
+      "filename": "legal_antitrust_merger_clearance_memo.md",
+      "title": "Antitrust Merger Clearance Memo — Reportability, Theories of Harm, and Remedies Posture",
+      "domain": "legal",
+      "category": "legal/corporate-ma",
+      "description": "Attorney-facing merger-control memo for a proposed acquisition: pre-merger notification reportability across jurisdictions, substantive theories of harm the agencies are likely to test, document and gun-jumping risk, a remedies posture, and the risk-allocation terms the deal documents need — distinct from general due-diligence findings and from an antitrust conduct-compliance program review.",
+      "techniques": [
+        "DS-32",
+        "RT-02",
+        "NE-10",
+        "QA-02",
+        "CM-02"
+      ],
+      "keywords": [
+        "legal",
+        "antitrust",
+        "merger-control",
+        "hsr",
+        "corporate-ma",
+        "buying-a-competitor",
+        "deal-regulatory-risk"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/corporate-ma/legal_due_diligence_findings_memo.md",
+        "domain-legal/contracts-transactional/legal_term_sheet_to_definitive_translator.md",
+        "domain-legal/regulatory-compliance/legal_compliance_program_gap_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/corporate-ma/legal_board_resolution_drafter.md",
       "filename": "legal_board_resolution_drafter.md",
       "title": "Board Resolution Drafter (Transactional Approvals)",
@@ -97390,7 +98305,8 @@
         "body-worn-camera",
         "video-evidence",
         "impeachment",
-        "discovery-review"
+        "discovery-review",
+        "police-video"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -97422,7 +98338,8 @@
         "brady",
         "giglio",
         "discovery",
-        "impeachment"
+        "impeachment",
+        "hidden-evidence"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -97454,7 +98371,8 @@
         "motion-to-suppress",
         "fourth-amendment",
         "miranda",
-        "exclusionary-rule"
+        "exclusionary-rule",
+        "illegal-search"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -97486,7 +98404,8 @@
         "plea-bargaining",
         "sentencing-exposure",
         "collateral-consequences",
-        "immigration-consequences"
+        "immigration-consequences",
+        "take-the-deal"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -97518,7 +98437,8 @@
         "sentencing",
         "mitigation",
         "section-3553a",
-        "variance"
+        "variance",
+        "client-convicted"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -98593,6 +99513,99 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/discovery/legal_litigation_hold_notice_drafter.md",
+      "filename": "legal_litigation_hold_notice_drafter.md",
+      "title": "Litigation Hold Notice Drafter",
+      "domain": "legal",
+      "category": "legal/discovery",
+      "description": "Draft a litigation hold package — trigger memo, custodian-specific hold notices, IT/records suspension instructions, acknowledgment form, and a reminder/release schedule — distinct from the custodian interview (which audits compliance after the hold issues) and the enterprise retention schedule (which governs routine disposition).",
+      "techniques": [
+        "CM-03",
+        "RP-02",
+        "DS-33",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "litigation-hold",
+        "preservation",
+        "ediscovery",
+        "got-sued-preserve-documents",
+        "lawsuit-coming-what-to-keep",
+        "stop-deleting-emails"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/discovery/legal_ediscovery_custodian_interview.md",
+        "domain-legal/privacy-data/legal_records_retention_schedule_design.md",
+        "domain-legal/client-intake-communications/legal_new_matter_intake_summary.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/discovery/legal_motion_for_protective_order_drafter.md",
+      "filename": "legal_motion_for_protective_order_drafter.md",
+      "title": "Motion for Protective Order Drafter",
+      "domain": "legal",
+      "category": "legal/discovery",
+      "description": "Draft a contested motion for protective order (or to quash/modify a subpoena) against overbroad discovery, an improper deposition, or an unduly burdensome subpoena — good cause shown with specific facts, conferral certification, proportionality analysis, and a narrowly framed alternative order — distinct from the stipulated confidentiality order and from written objections.",
+      "techniques": [
+        "RT-05",
+        "NE-23",
+        "CM-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "discovery",
+        "protective-order",
+        "motion-to-quash",
+        "proportionality",
+        "other-side-asking-for-too-much",
+        "stop-a-deposition"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/discovery/legal_discovery_response_objections.md",
+        "domain-legal/discovery/legal_meet_and_confer_letter.md",
+        "domain-legal/regulatory-compliance/legal_subpoena_or_cid_response_strategy.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/discovery/legal_motion_to_compel_drafter.md",
+      "filename": "legal_motion_to_compel_drafter.md",
+      "title": "Motion to Compel Discovery Drafter",
+      "domain": "legal",
+      "category": "legal/discovery",
+      "description": "Draft a motion to compel discovery responses or production — request-by-request deficiency log, meet-and-confer record, relevance and proportionality showing, and an expense-shifting request with a fee declaration — the filing that follows the Rule 37 deficiency letter rather than the letter itself.",
+      "techniques": [
+        "DT-05",
+        "RT-05",
+        "QA-08",
+        "ST-03"
+      ],
+      "keywords": [
+        "legal",
+        "discovery",
+        "motion-to-compel",
+        "rule-37",
+        "deficiency-log",
+        "other-side-wont-answer-discovery",
+        "incomplete-document-production"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/discovery/legal_meet_and_confer_letter.md",
+        "domain-legal/discovery/legal_privilege_log_generator.md",
+        "domain-legal/depositions/legal_deposition_outline_30b6.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/discovery/legal_privilege_log_generator.md",
       "filename": "legal_privilege_log_generator.md",
       "title": "Privilege Log Generator",
@@ -98651,6 +99664,99 @@
         "domain-legal/discovery/legal_privilege_log_generator.md",
         "domain-legal/discovery/legal_document_review_coding_taxonomy.md",
         "domain-legal/discovery/legal_ediscovery_custodian_interview.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/discovery/legal_30b6_notice_drafter.md",
+      "filename": "legal_30b6_notice_drafter.md",
+      "title": "Rule 30(b)(6) Deposition Notice Drafter",
+      "domain": "legal",
+      "category": "legal/discovery",
+      "description": "Draft the Rule 30(b)(6) (or state-analog) notice itself — topics described with reasonable particularity and mapped to claim elements, definitions, time period, logistics, and a conferral agenda — as the upstream companion to the 30(b)(6) examination outline, which assumes the topics already exist.",
+      "techniques": [
+        "CM-03",
+        "DT-05",
+        "QA-02",
+        "ST-03"
+      ],
+      "keywords": [
+        "legal",
+        "discovery",
+        "30b6",
+        "deposition-notice",
+        "corporate-representative",
+        "depose-a-company",
+        "who-speaks-for-the-company"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/depositions/legal_deposition_outline_30b6.md",
+        "domain-legal/discovery/legal_document_request_drafter.md",
+        "domain-legal/discovery/legal_meet_and_confer_letter.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/discovery/legal_subpoena_drafter.md",
+      "filename": "legal_subpoena_drafter.md",
+      "title": "Rule 45 Subpoena Drafter",
+      "domain": "legal",
+      "category": "legal/discovery",
+      "description": "Draft a nonparty subpoena (documents, testimony, or inspection) under Rule 45 or a state analog — issuing court, place of compliance, narrowly tailored requests, prior notice to parties, fee tender, and a burden-and-privacy screen — distinct from the regulatory subpoena/CID response strategy, which is for the recipient.",
+      "techniques": [
+        "DS-33",
+        "CM-02",
+        "QA-08",
+        "ST-03"
+      ],
+      "keywords": [
+        "legal",
+        "discovery",
+        "subpoena",
+        "rule-45",
+        "third-party-discovery",
+        "get-records-from-someone-not-in-the-case",
+        "subpoena-a-witness"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/regulatory-compliance/legal_subpoena_or_cid_response_strategy.md",
+        "domain-legal/discovery/legal_document_request_drafter.md",
+        "domain-legal/ethics-professional-conduct/legal_sanctions_risk_premortem.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/discovery/legal_protective_order_drafter.md",
+      "filename": "legal_protective_order_drafter.md",
+      "title": "Stipulated Protective Order Drafter",
+      "domain": "legal",
+      "category": "legal/discovery",
+      "description": "Draft a negotiated (stipulated) confidentiality protective order — designation tiers including attorneys'-eyes-only, access lists, expert-disclosure procedure, source-code protocol, Rule 502(d) clawback, sealing interface, and end-of-case disposition — distinct from a contested motion for protective order and from domestic-violence or harassment protective orders.",
+      "techniques": [
+        "DT-01",
+        "OC-04",
+        "QA-02",
+        "DS-33"
+      ],
+      "keywords": [
+        "legal",
+        "discovery",
+        "protective-order",
+        "confidentiality",
+        "attorneys-eyes-only",
+        "keep-trade-secrets-private-in-lawsuit",
+        "sharing-confidential-documents-with-other-side"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/discovery/legal_privilege_review_protocol.md",
+        "domain-legal/discovery/legal_meet_and_confer_letter.md",
+        "domain-legal/contracts-transactional/legal_nda_mutual_drafter.md"
       ],
       "has_frontmatter": true
     },
@@ -99440,6 +100546,38 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/employment-labor/legal_ada_accommodation_dialogue_script.md",
+      "filename": "legal_ada_accommodation_dialogue_script.md",
+      "title": "ADA Accommodation Interactive-Process Dialogue Script — Employer Side",
+      "domain": "legal",
+      "category": "legal/employment-labor",
+      "description": "Counsel-built, employer-side script and documentation set for running the interactive process on a disability accommodation request — recognizing the request, scoped medical inquiries, essential-functions analysis, option exploration, undue-hardship reasoning, and a decision letter — distinct from an employee drafting their own accommodation request and from a post-charge EEOC position statement.",
+      "techniques": [
+        "SV-08",
+        "ST-02",
+        "CM-09",
+        "QA-01",
+        "QA-12"
+      ],
+      "keywords": [
+        "legal",
+        "employment-labor",
+        "ada",
+        "reasonable-accommodation",
+        "interactive-process",
+        "employee-asked-for-accommodation",
+        "disability-at-work"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/employment-labor/legal_pip_and_termination_risk_review.md",
+        "domain-legal/employment-labor/legal_eeoc_position_statement_drafter.md",
+        "domain-psychology/client-self-use/communication-system/clientself_workplace_accommodations_request.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/employment-labor/legal_eeoc_position_statement_drafter.md",
       "filename": "legal_eeoc_position_statement_drafter.md",
       "title": "EEOC / State Agency Position Statement Drafter",
@@ -99688,7 +100826,8 @@
         "mrpc",
         "imputation",
         "screening",
-        "informed-consent"
+        "informed-consent",
+        "new-client-intake"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -99741,7 +100880,8 @@
         "rule-11",
         "litigation-risk",
         "citation-verification",
-        "pre-mortem"
+        "pre-mortem",
+        "frivolous-filing"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -99797,7 +100937,8 @@
         "multijurisdictional-practice",
         "pro-hac-vice",
         "in-house-counsel",
-        "remote-practice"
+        "remote-practice",
+        "not-licensed-here"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -99851,7 +100992,8 @@
         "extraordinary-ability",
         "i-140",
         "evidence-mapping",
-        "final-merits"
+        "final-merits",
+        "green-card"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -99907,7 +101049,8 @@
         "rfe",
         "specialty-occupation",
         "prevailing-wage",
-        "uscis"
+        "uscis",
+        "work-visa"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -99963,7 +101106,8 @@
         "i-589",
         "declaration",
         "credibility",
-        "trauma-informed"
+        "trauma-informed",
+        "afraid-to-return"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -100019,7 +101163,8 @@
         "n-400",
         "good-moral-character",
         "continuous-residence",
-        "removability-screen"
+        "removability-screen",
+        "becoming-citizen"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -100075,7 +101220,8 @@
         "labor-certification",
         "audit-response",
         "recruitment",
-        "prevailing-wage"
+        "prevailing-wage",
+        "employer-green-card"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -100513,6 +101659,38 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/litigation/legal_admin_law_apa_review.md",
+      "filename": "legal_admin_law_apa_review.md",
+      "title": "APA Challenge Analysis — Reviewability, Standard of Review, and Arbitrary-and-Capricious Framing",
+      "domain": "legal",
+      "category": "legal/litigation",
+      "description": "Attorney-facing analysis of whether and how to challenge (or defend) a final agency action under the federal APA or a state administrative procedure act — reviewability gates, claim-by-claim framing tied to the administrative record, post-Chevron statutory review, and remedy posture — distinct from a lay benefits-denial appeal and from a generic statutory-interpretation memo.",
+      "techniques": [
+        "DT-05",
+        "RT-05",
+        "CM-03",
+        "QA-05",
+        "QA-12"
+      ],
+      "keywords": [
+        "legal",
+        "administrative-law",
+        "apa",
+        "arbitrary-and-capricious",
+        "judicial-review",
+        "challenge-agency-rule",
+        "agency-decision-unfair"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/research/legal_statutory_interpretation.md",
+        "domain-legal/litigation/legal_complaint_drafter.md",
+        "domain-written-advocacy/institutions-and-records/advocacy_benefits_denial_appeal.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/litigation/legal_answer_with_affirmative_defenses.md",
       "filename": "legal_answer_with_affirmative_defenses.md",
       "title": "Answer with Affirmative Defenses",
@@ -100540,6 +101718,69 @@
         "domain-legal/litigation/legal_complaint_drafter.md",
         "domain-legal/litigation/legal_motion_to_dismiss_12b6.md",
         "domain-legal/research/legal_issue_spotter_from_facts.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/litigation/legal_arbitration_demand_drafter.md",
+      "filename": "legal_arbitration_demand_drafter.md",
+      "title": "Arbitration Demand Drafter — AAA / JAMS Demand with Claim Recitation and Relief",
+      "domain": "legal",
+      "category": "legal/litigation",
+      "description": "Attorney-facing drafter for a demand for arbitration before an administering institution such as AAA or JAMS — clause-driven pre-filing checks (conditions precedent, delegation, carve-outs, rule set and fee regime), a demand that tracks the institution's filing requirements, a claim-by-claim statement, and a relief section — distinct from a court complaint and from a pre-suit demand letter.",
+      "techniques": [
+        "IPC-07",
+        "ST-03",
+        "CM-02",
+        "QA-01",
+        "QA-12"
+      ],
+      "keywords": [
+        "legal",
+        "litigation",
+        "arbitration",
+        "arbitration-demand",
+        "aaa-jams",
+        "contract-says-arbitration",
+        "start-arbitration-claim"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/litigation/legal_complaint_drafter.md",
+        "domain-legal/client-intake-communications/legal_demand_letter_drafter.md",
+        "domain-legal/contracts-transactional/legal_contract_review_full_redline.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/litigation/legal_attorney_fee_petition.md",
+      "filename": "legal_attorney_fee_petition.md",
+      "title": "Attorney Fee Petition (Lodestar)",
+      "domain": "legal",
+      "category": "legal/litigation",
+      "description": "Draft a post-judgment or post-ruling motion for attorney's fees and non-taxable expenses — entitlement basis (statute, contract, rule, or order), prevailing-party showing, lodestar built from audited time entries and rate evidence, billing-judgment reductions, and any adjustment request — distinct from the litigation budget estimator (forward-looking) and the legal-spend anomaly analyzer (client-side invoice review).",
+      "techniques": [
+        "NE-11",
+        "RT-05",
+        "NE-23",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "litigation",
+        "attorney-fees",
+        "lodestar",
+        "fee-shifting",
+        "make-the-other-side-pay-legal-fees",
+        "we-won-can-we-get-fees"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/litigation/legal_litigation_budget_phase_estimator.md",
+        "domain-legal/in-house-legalops/legal_legal_spend_anomaly_analyzer.md",
+        "domain-legal/discovery/legal_motion_to_compel_drafter.md"
       ],
       "has_frontmatter": true
     },
@@ -100602,6 +101843,100 @@
         "domain-legal/litigation/legal_answer_with_affirmative_defenses.md",
         "domain-legal/litigation/legal_motion_to_dismiss_12b6.md",
         "domain-legal/research/legal_issue_spotter_from_facts.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/litigation/legal_settlement_agreement_drafter.md",
+      "filename": "legal_settlement_agreement_drafter.md",
+      "title": "Civil Litigation Settlement Agreement Drafter",
+      "domain": "legal",
+      "category": "legal/litigation",
+      "description": "Draft a comprehensive settlement agreement for a pending or threatened civil dispute — payment mechanics, release scope and carve-outs, dismissal and continuing jurisdiction, confidentiality and non-disparagement within statutory limits, allocation and tax reporting, liens, and enforcement — distinct from a marital settlement agreement and from an employment separation agreement.",
+      "techniques": [
+        "DT-05",
+        "RT-07",
+        "QA-02",
+        "CM-02"
+      ],
+      "keywords": [
+        "legal",
+        "litigation",
+        "settlement-agreement",
+        "release",
+        "confidentiality",
+        "we-settled-now-what",
+        "write-up-the-settlement"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/litigation/legal_settlement_value_range_analysis.md",
+        "domain-legal/divorce/legal_marital_settlement_agreement_drafter.md",
+        "domain-legal/employment-labor/legal_employment_offer_and_separation_package.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/litigation/legal_mediation_position_paper.md",
+      "filename": "legal_mediation_position_paper.md",
+      "title": "Civil Mediation Position Paper",
+      "domain": "legal",
+      "category": "legal/litigation",
+      "description": "Draft a mediation submission for a civil (non-family) case — an exchanged statement that persuades the mediator and opposing decision-maker plus a confidential mediator-only letter with leverage, settlement bands, a litigation decision tree, and obstacles to closing — distinct from the internal settlement-value analysis it draws on and from the divorce and custody mediation briefs.",
+      "techniques": [
+        "NE-10",
+        "RT-03",
+        "RP-02",
+        "NE-23"
+      ],
+      "keywords": [
+        "legal",
+        "litigation",
+        "mediation",
+        "settlement",
+        "mediation-statement",
+        "preparing-for-mediation",
+        "what-to-send-the-mediator"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/litigation/legal_settlement_value_range_analysis.md",
+        "domain-legal/litigation/legal_case_strategy_assessment.md",
+        "domain-negotiation/at-the-table/negotiation_impasse_breaker.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/litigation/legal_class_certification_analysis.md",
+      "filename": "legal_class_certification_analysis.md",
+      "title": "Class Certification Analysis — Rule 23 Element-by-Element with Evidence and Damages-Model Fit",
+      "domain": "legal",
+      "category": "legal/litigation",
+      "description": "Attorney-facing analysis for moving for or opposing class certification under Rule 23 or a state analogue — class-definition audit, each Rule 23(a) and (b) requirement tested against the evidentiary record, damages-model fit to the liability theory, standing and arbitration-waiver problems, and fallback options — distinct from a general case-strategy assessment and from settlement valuation.",
+      "techniques": [
+        "DT-05",
+        "RT-05",
+        "QA-02",
+        "QA-05",
+        "DS-33"
+      ],
+      "keywords": [
+        "legal",
+        "litigation",
+        "class-action",
+        "rule-23",
+        "class-certification",
+        "many-people-same-harm",
+        "opposing-class-action"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/litigation/legal_case_strategy_assessment.md",
+        "domain-legal/litigation/legal_settlement_value_range_analysis.md",
+        "domain-legal/research/legal_jurisdiction_split_analysis.md"
       ],
       "has_frontmatter": true
     },
@@ -100761,6 +102096,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/litigation/legal_post_trial_motion_set.md",
+      "filename": "legal_post_trial_motion_set.md",
+      "title": "Post-Trial Motion Set",
+      "domain": "legal",
+      "category": "legal/litigation",
+      "description": "Draft the coordinated post-trial motion set after a verdict or bench judgment — renewed judgment as a matter of law, new trial, remittitur or additur, alteration or amendment of judgment, and amended findings — with a hard-deadline gate, a preservation check against the pre-verdict record, and appellate-clock effects, distinct from the appellate issue-selection memo that comes after these motions are decided.",
+      "techniques": [
+        "DD-03",
+        "RT-02",
+        "DS-06",
+        "QA-02"
+      ],
+      "keywords": [
+        "legal",
+        "litigation",
+        "post-trial",
+        "new-trial",
+        "jmol",
+        "lost-at-trial-what-now",
+        "jury-verdict-too-high"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/appellate/legal_issue_selection_memo.md",
+        "domain-legal/litigation/legal_jury_instruction_drafter.md",
+        "domain-legal/litigation/legal_motion_in_limine_set.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/litigation/legal_settlement_value_range_analysis.md",
       "filename": "legal_settlement_value_range_analysis.md",
       "title": "Settlement Value Range Analysis",
@@ -100843,7 +102209,8 @@
         "incident-response",
         "breach-notification",
         "regulator-notice",
-        "consumer-notice"
+        "consumer-notice",
+        "got-hacked"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -100899,7 +102266,8 @@
         "pia",
         "gdpr",
         "lawful-basis",
-        "risk-assessment"
+        "risk-assessment",
+        "new-product-launch"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -100955,7 +102323,8 @@
         "retention-schedule",
         "legal-hold",
         "data-minimization",
-        "information-governance"
+        "information-governance",
+        "how-long-to-keep"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101011,7 +102380,8 @@
         "sccs",
         "transfer-impact-assessment",
         "sub-processors",
-        "third-party-risk"
+        "third-party-risk",
+        "signing-new-supplier"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101067,7 +102437,8 @@
         "critical-dates",
         "options",
         "estoppel",
-        "due-diligence"
+        "due-diligence",
+        "renewal-deadline"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -101127,7 +102498,8 @@
         "access",
         "utility",
         "recording",
-        "covenants-running-with-land"
+        "covenants-running-with-land",
+        "landlocked-parcel"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -101185,7 +102557,8 @@
         "redline",
         "due-diligence",
         "title",
-        "closing"
+        "closing",
+        "buying-commercial-property"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101246,7 +102619,8 @@
         "schedule-b",
         "endorsements",
         "survey",
-        "due-diligence"
+        "due-diligence",
+        "liens-on-property"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101307,7 +102681,8 @@
         "variance",
         "special-permit",
         "nonconforming-use",
-        "entitlements"
+        "entitlements",
+        "city-violation-notice"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101368,7 +102743,8 @@
         "aml",
         "sanctions",
         "antitrust",
-        "gap-analysis"
+        "gap-analysis",
+        "bribery-risk"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101404,6 +102780,39 @@
       }
     },
     {
+      "path": "domain-legal/regulatory-compliance/legal_environmental_permit_analysis.md",
+      "filename": "legal_environmental_permit_analysis.md",
+      "title": "Environmental Permit Analysis — NEPA, Clean Water Act, and Clean Air Act Posture and Challenge",
+      "domain": "legal",
+      "category": "legal/regulatory-compliance",
+      "description": "Attorney-facing analysis of a project's environmental permitting posture — which federal and state permits are triggered, the NEPA review pathway, permit-by-permit vulnerabilities, and the administrative-appeal and judicial-challenge route with its exhaustion and notice requirements — usable by an applicant, a permittee defending a permit, or a challenger; distinct from local zoning analysis and from a general APA challenge memo.",
+      "techniques": [
+        "DS-32",
+        "DT-01",
+        "RT-07",
+        "QA-05",
+        "QA-12"
+      ],
+      "keywords": [
+        "legal",
+        "environmental-law",
+        "nepa",
+        "clean-water-act",
+        "clean-air-act",
+        "permits",
+        "project-needs-permits",
+        "challenge-a-permit"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/real-estate/legal_zoning_use_analysis.md",
+        "domain-legal/litigation/legal_admin_law_apa_review.md",
+        "domain-legal/regulatory-compliance/legal_regulatory_change_impact_assessment.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/regulatory-compliance/legal_internal_investigation_plan.md",
       "filename": "legal_internal_investigation_plan.md",
       "title": "Internal Investigation Plan — Privilege Framing, Collection, Witness Order, Reporting",
@@ -101424,7 +102833,8 @@
         "privilege",
         "upjohn",
         "white-collar",
-        "special-committee"
+        "special-committee",
+        "whistleblower-complaint"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101456,6 +102866,39 @@
       }
     },
     {
+      "path": "domain-legal/regulatory-compliance/legal_election_law_compliance_review.md",
+      "filename": "legal_election_law_compliance_review.md",
+      "title": "Political Law Compliance Review — Campaign Finance, Lobbying Registration, and Gift Rules",
+      "domain": "legal",
+      "category": "legal/regulatory-compliance",
+      "description": "Attorney-facing review of an organization's political activity across campaign-finance, lobbying-registration and reporting, gift and travel rules, and pay-to-play restrictions at the federal, state, and local levels — activity inventory, per-regime trigger testing, reporting calendar, and policy gaps — distinct from enterprise-wide compliance program review and from policy-advocacy strategy or election-integrity communications.",
+      "techniques": [
+        "DS-32",
+        "DS-33",
+        "DT-05",
+        "QA-05",
+        "QA-12"
+      ],
+      "keywords": [
+        "legal",
+        "political-law",
+        "campaign-finance",
+        "lobbying-disclosure",
+        "gift-rules",
+        "pay-to-play",
+        "company-political-donations",
+        "hiring-a-lobbyist"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/regulatory-compliance/legal_compliance_program_gap_analysis.md",
+        "domain-legal/regulatory-compliance/legal_internal_investigation_plan.md",
+        "domain-policy/policy_stakeholder_coalition_map.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/regulatory-compliance/legal_regulatory_change_impact_assessment.md",
       "filename": "legal_regulatory_change_impact_assessment.md",
       "title": "Regulatory Change Impact Assessment — New Rule to Owned Remediation Plan",
@@ -101475,7 +102918,8 @@
         "regulatory-change",
         "impact-assessment",
         "gap-analysis",
-        "remediation-plan"
+        "remediation-plan",
+        "new-rule-coming"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101510,6 +102954,70 @@
       }
     },
     {
+      "path": "domain-legal/regulatory-compliance/legal_securities_disclosure_review.md",
+      "filename": "legal_securities_disclosure_review.md",
+      "title": "Securities Disclosure Review — 10-K / 10-Q Risk Factors and MD&A Through a Liability Lens",
+      "domain": "legal",
+      "category": "legal/regulatory-compliance",
+      "description": "Securities-counsel review of periodic-report risk factors and MD&A for misleading-statement and omission exposure — stale hypothetical risks, generic risk factors, undisclosed known trends, half-truths, safe-harbor hygiene, and inconsistency with the issuer's other public statements — distinct from a finance-team completeness check of MD&A against the financial statements and from an investor's filing teardown.",
+      "techniques": [
+        "DT-05",
+        "RT-06",
+        "QA-05",
+        "QA-12",
+        "IPC-07"
+      ],
+      "keywords": [
+        "legal",
+        "securities",
+        "sec-reporting",
+        "risk-factors",
+        "mdna",
+        "10-k-review",
+        "public-company-filing"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/regulatory-compliance/finance_mdna_disclosure_review.md",
+        "domain-finance/investing-research/finance_10k_10q_teardown.md",
+        "domain-legal/regulatory-compliance/legal_regulatory_change_impact_assessment.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/regulatory-compliance/legal_healthcare_stark_kickback_review.md",
+      "filename": "legal_healthcare_stark_kickback_review.md",
+      "title": "Stark Law and Anti-Kickback Review — Referral Arrangement Analysis",
+      "domain": "legal",
+      "category": "legal/regulatory-compliance",
+      "description": "Attorney-facing review of a proposed or existing healthcare financial arrangement under the physician self-referral law (Stark) and the federal Anti-Kickback Statute — arrangement and referral-flow mapping, element-by-element exception and safe-harbor testing, intent indicators, fair-market-value and commercial-reasonableness support, state-law overlays, and remediation options — distinct from an enterprise compliance-program gap review and from a disclosure decision after a violation is found.",
+      "techniques": [
+        "DT-05",
+        "DS-32",
+        "RT-05",
+        "QA-05",
+        "QA-12"
+      ],
+      "keywords": [
+        "legal",
+        "healthcare-regulatory",
+        "stark-law",
+        "anti-kickback",
+        "fraud-and-abuse",
+        "paying-referring-doctors",
+        "physician-deal-review"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/regulatory-compliance/legal_voluntary_disclosure_decision_memo.md",
+        "domain-legal/regulatory-compliance/legal_compliance_program_gap_analysis.md",
+        "domain-legal/regulatory-compliance/legal_internal_investigation_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-legal/regulatory-compliance/legal_subpoena_or_cid_response_strategy.md",
       "filename": "legal_subpoena_or_cid_response_strategy.md",
       "title": "Subpoena or Civil Investigative Demand Response Strategy",
@@ -101530,7 +103038,8 @@
         "civil-investigative-demand",
         "government-investigations",
         "document-production",
-        "privilege"
+        "privilege",
+        "government-wants-documents"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101584,7 +103093,8 @@
         "self-reporting",
         "cooperation-credit",
         "white-collar",
-        "decision-memo"
+        "decision-memo",
+        "found-wrongdoing"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101874,7 +103384,8 @@
         "idr",
         "tax-controversy",
         "privilege",
-        "document-production"
+        "document-production",
+        "tax-audit"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101928,7 +103439,8 @@
         "section-41",
         "qualified-research-expenses",
         "substantiation",
-        "tax-controversy"
+        "tax-controversy",
+        "development-costs"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -101985,7 +103497,8 @@
         "like-kind-exchange",
         "real-estate-tax",
         "qualified-intermediary",
-        "boot"
+        "boot",
+        "selling-rental-property"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -102043,7 +103556,8 @@
         "research-memo",
         "treasury-regulations",
         "authority-hierarchy",
-        "penalty-protection"
+        "penalty-protection",
+        "uncertain-treatment"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -102100,7 +103614,8 @@
         "section-482",
         "oecd-guidelines",
         "international-tax",
-        "documentation"
+        "documentation",
+        "intercompany-charges"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -102159,7 +103674,8 @@
         "gst",
         "portability",
         "lifetime-gifting",
-        "valuation"
+        "valuation",
+        "wealthy-client"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -102221,7 +103737,8 @@
         "fiduciary-accounting",
         "estate-administration",
         "principal-and-income",
-        "court-filing"
+        "court-filing",
+        "executor-duties"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -102282,7 +103799,8 @@
         "trust-funding",
         "successor-trustee",
         "distribution-standards",
-        "drafting"
+        "drafting",
+        "avoid-probate"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -102341,7 +103859,8 @@
         "trust-modification",
         "nonjudicial-settlement",
         "reformation",
-        "trust-protector"
+        "trust-protector",
+        "terms-no-longer-fit"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -102400,7 +103919,8 @@
         "pour-over-will",
         "executor",
         "guardianship",
-        "drafting"
+        "drafting",
+        "who-inherits"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -112184,7 +113704,8 @@
         "insurance",
         "claims",
         "settlement",
-        "consumer"
+        "consumer",
+        "offer-too-low"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -112294,7 +113815,8 @@
         "housing",
         "rent",
         "lease-renewal",
-        "consumer"
+        "consumer",
+        "apartment-price-hike"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -112346,7 +113868,8 @@
         "licensing",
         "intellectual-property",
         "royalties",
-        "deal-structure"
+        "deal-structure",
+        "selling-usage-rights"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -112455,7 +113978,8 @@
         "medical-bills",
         "healthcare-costs",
         "payment-plans",
-        "consumer"
+        "consumer",
+        "hospital-debt"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -112684,7 +114208,8 @@
         "severance",
         "employment",
         "separation",
-        "career"
+        "career",
+        "just-laid-off"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -114183,7 +115708,10 @@
         "theory-of-constraints",
         "littles-law",
         "utilization",
-        "queueing"
+        "queueing",
+        "orders-piling-up",
+        "cant-keep-up",
+        "slow-turnaround"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -114213,7 +115741,10 @@
         "project-charter",
         "ctq",
         "baseline",
-        "measurement-system-analysis"
+        "measurement-system-analysis",
+        "improvement-project",
+        "recurring-problem",
+        "scope-the-fix"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -114244,7 +115775,10 @@
         "sipoc",
         "lean",
         "eight-wastes",
-        "lead-time"
+        "lead-time",
+        "takes-too-long",
+        "too-many-handoffs",
+        "streamline-workflow"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -114275,7 +115809,10 @@
         "fishbone",
         "five-whys",
         "countermeasures",
-        "lean"
+        "lean",
+        "problem-keeps-recurring",
+        "figure-out-why",
+        "error-rate-up"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -114305,7 +115842,10 @@
         "critical-path",
         "raci",
         "office-move",
-        "event-planning"
+        "event-planning",
+        "fixed-deadline",
+        "who-does-what",
+        "nothing-slips"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -114335,7 +115875,10 @@
         "sourcing-event",
         "evaluation-rubric",
         "bid-scoring",
-        "buyer-side"
+        "buyer-side",
+        "getting-quotes",
+        "compare-bids-fairly",
+        "hire-a-vendor"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -114399,7 +115942,10 @@
         "total-cost-of-ownership",
         "weighted-scorecard",
         "dual-sourcing",
-        "supply-risk"
+        "supply-risk",
+        "compare-vendor-quotes",
+        "switch-suppliers",
+        "backup-supplier"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -120497,7 +122043,10 @@
         "behavioral-interview",
         "star-method",
         "competencies",
-        "candidate"
+        "candidate",
+        "interview-coming-up",
+        "answer-interview-questions",
+        "past-work-examples"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -120527,7 +122076,10 @@
         "cover-letter",
         "application",
         "professional-writing",
-        "candidate"
+        "candidate",
+        "applying-for-jobs",
+        "stand-out-applicant",
+        "explain-a-gap"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -120558,7 +122110,10 @@
         "fit-assessment",
         "requirements",
         "application-strategy",
-        "candidate"
+        "candidate",
+        "should-i-apply",
+        "am-i-qualified",
+        "too-many-requirements"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -120589,7 +122144,10 @@
         "application-tracking",
         "weekly-review",
         "funnel-metrics",
-        "candidate"
+        "candidate",
+        "no-callbacks",
+        "job-hunt-stalled",
+        "organize-applications"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -120620,7 +122178,10 @@
         "professional-profile",
         "recruiter-search",
         "personal-brand",
-        "candidate"
+        "candidate",
+        "recruiters-ignore-me",
+        "not-getting-noticed",
+        "headline-rewrite"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -120651,7 +122212,10 @@
         "referrals",
         "informational-interview",
         "outreach",
-        "candidate"
+        "candidate",
+        "who-to-contact",
+        "reconnect-old-colleagues",
+        "hidden-job-market"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -120682,7 +122246,10 @@
         "cv",
         "accomplishments",
         "honesty",
-        "candidate"
+        "candidate",
+        "no-interviews",
+        "weak-bullet-points",
+        "show-my-impact"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -120713,7 +122280,10 @@
         "labor-market",
         "role-families",
         "career-change",
-        "candidate"
+        "candidate",
+        "what-job-next",
+        "too-many-options",
+        "want-something-new"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -121122,7 +122692,10 @@
         "assisted-living",
         "care-facilities",
         "family",
-        "decision-quality"
+        "decision-quality",
+        "parent-needs-care",
+        "parent-with-dementia",
+        "hospital-discharge"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -121416,7 +122989,10 @@
         "end-of-life-wishes",
         "family",
         "attorney-prep",
-        "personal-decisions"
+        "personal-decisions",
+        "making-a-will",
+        "who-raises-kids",
+        "power-of-attorney"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -124908,7 +126484,9 @@
         "fundraising",
         "investor-materials",
         "startup",
-        "storytelling"
+        "storytelling",
+        "raising-money",
+        "investors-lost-interest"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -124939,7 +126517,10 @@
         "conference-talk",
         "public-speaking",
         "narrative-arc",
-        "storytelling"
+        "storytelling",
+        "giving-a-talk",
+        "too-much-material",
+        "speaking-slot"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -124970,7 +126551,10 @@
         "hostile-questions",
         "objection-handling",
         "public-speaking",
-        "preparation"
+        "preparation",
+        "tough-questions",
+        "unpopular-announcement",
+        "town-hall"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -125001,7 +126585,10 @@
         "rehearsal",
         "delivery-coaching",
         "public-speaking",
-        "timing"
+        "timing",
+        "reading-off-slides",
+        "running-over-time",
+        "nervous-speaker"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -125260,7 +126847,10 @@
         "minimum-detectable-effect",
         "guardrail-metrics",
         "decision-rule",
-        "pre-registration"
+        "pre-registration",
+        "test-a-feature",
+        "build-or-drop",
+        "prove-it-works"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -125471,7 +127061,10 @@
         "product-discovery",
         "press-release",
         "customer-problem",
-        "pre-build"
+        "pre-build",
+        "new-product-idea",
+        "should-we-build",
+        "pitch-an-idea"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -125598,7 +127191,10 @@
         "decisions-needed",
         "metrics-reporting",
         "roadmap-changes",
-        "executive-communication"
+        "executive-communication",
+        "update-my-boss",
+        "monthly-status",
+        "missed-target"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -125629,7 +127225,10 @@
         "changelog",
         "customer-communication",
         "internal-enablement",
-        "rollout"
+        "rollout",
+        "whats-new-announcement",
+        "breaking-changes",
+        "brief-support-team"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -127714,7 +129313,10 @@
         "caregiver-support",
         "scheduling",
         "family",
-        "household"
+        "household",
+        "caregiver-burnout",
+        "need-a-break",
+        "who-covers-me"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -127776,7 +129378,10 @@
         "family",
         "coordination",
         "shared-expenses",
-        "siblings"
+        "siblings",
+        "siblings-not-helping",
+        "splitting-costs",
+        "care-schedule"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -127903,7 +129508,10 @@
         "filing-system",
         "documents",
         "organization",
-        "emergency-preparedness"
+        "emergency-preparedness",
+        "piles-of-mail",
+        "what-to-shred",
+        "cant-find-documents"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -127934,7 +129542,10 @@
         "enrollment",
         "aging-parents",
         "household",
-        "preparation"
+        "preparation",
+        "turning-65",
+        "losing-work-coverage",
+        "choosing-a-plan"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -129770,7 +131381,9 @@
         "rundown",
         "show-notes",
         "audio",
-        "content-production"
+        "content-production",
+        "stop-rambling",
+        "recording-prep"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -129801,7 +131414,10 @@
         "question-plan",
         "guest-research",
         "host-prep",
-        "content-production"
+        "content-production",
+        "what-to-ask",
+        "interviewing-an-expert",
+        "fact-check-bio"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -129958,7 +131574,10 @@
         "pre-production",
         "filmmaking",
         "scheduling",
-        "content-production"
+        "content-production",
+        "plan-a-shoot",
+        "brand-video",
+        "one-day-shoot"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -131140,7 +132759,9 @@
         "profile",
         "q-and-a",
         "quote-fidelity",
-        "journalism"
+        "journalism",
+        "turn-into-article",
+        "quote-accurately"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -131202,7 +132823,10 @@
         "inverted-pyramid",
         "attribution",
         "sourcing",
-        "lede"
+        "lede",
+        "local-news",
+        "report-what-happened",
+        "community-newsletter"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -137587,7 +139211,8 @@
         "elections",
         "counter-messaging",
         "public-communication",
-        "nonpartisan"
+        "nonpartisan",
+        "voting-rumors"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -137643,7 +139268,8 @@
         "internal-communications",
         "crisis-communications",
         "staff-safety",
-        "counter-messaging"
+        "counter-messaging",
+        "staff-being-harassed"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -137974,7 +139600,8 @@
         "cross-platform",
         "narrative-analysis",
         "data-access",
-        "influence-operations"
+        "influence-operations",
+        "is-this-coordinated"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -138085,7 +139712,8 @@
         "reporting",
         "confidence-language",
         "publication",
-        "influence-operations"
+        "influence-operations",
+        "headline-too-strong"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -138363,7 +139991,8 @@
         "moderation",
         "trust-and-safety",
         "staff-wellbeing",
-        "organizational-red-team"
+        "organizational-red-team",
+        "mods-quitting"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -138690,7 +140319,8 @@
         "fraud",
         "older-adults",
         "family",
-        "personal-defense"
+        "personal-defense",
+        "grandparent-scam"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -138953,7 +140583,8 @@
         "workplace",
         "manipulation",
         "power-asymmetry",
-        "personal-defense"
+        "personal-defense",
+        "toxic-boss"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -139061,7 +140692,8 @@
         "child-safety",
         "online-safety",
         "sextortion",
-        "personal-defense"
+        "personal-defense",
+        "worried-about-my-teen"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -139506,7 +141138,8 @@
         "synthetic-media",
         "media-forensics",
         "verification",
-        "technique-analysis"
+        "technique-analysis",
+        "fake-photo"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -142220,15 +143853,18 @@
         "caregiver",
         "burnout",
         "support-plan",
-        "anticipatory-grief"
+        "anticipatory-grief",
+        "caring-for-parent",
+        "running-on-empty",
+        "family-not-helping",
+        "guilt-and-resentment"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-productivity/home-life/home_caregiver_respite_plan.md",
         "domain-personal-development/major-decisions/personal_caring_for_aging_parent.md",
-        "domain-psychology/client-self-use/symptom-understanding/clientself_anxiety_depression_burnout_differentiator.md",
-        "domain-psychology/client-self-use/grief-loss/clientself_ambiguous_loss_framework.md"
+        "domain-psychology/client-self-use/symptom-understanding/clientself_anxiety_depression_burnout_differentiator.md"
       ],
       "has_frontmatter": true
     },
@@ -142252,14 +143888,15 @@
         "chronic-pain",
         "pacing",
         "act",
-        "flare-plan"
+        "flare-plan",
+        "overdo-then-crash",
+        "pain-took-over"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-psychology/specialty-clinical/psychology_health_psych_chronic_pain_act_protocol.md",
         "domain-psychology/client-self-use/specialty/clientself_chronic_illness_mental_health_plan.md",
-        "domain-psychology/client-self-use/coping-by-concern/clientself_depression_behavioral_activation_scheduler.md",
         "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md"
       ],
       "has_frontmatter": true
@@ -142270,7 +143907,7 @@
       "title": "Eating Self-Monitoring — With Mandatory Clinician Handoff",
       "domain": "psychology",
       "category": "psychology/client-self-use/specialty",
-      "description": "Set up a CBT-E-style eating self-monitoring record (what, when, where, context, thoughts, and any binge/compensatory behaviour — never calories, grams, or weight targets) that exists to be reviewed with a clinician. Opens with medical and suicide-risk routing, stops if monitoring itself feeds preoccupation, and ends with a mandatory handoff to an eating-disorder-informed clinician.",
+      "description": "Set up a CBT-E-style eating self-monitoring record (what, when, where, context, thoughts, and any binge/compensatory behavior — never calories, grams, or weight targets) that exists to be reviewed with a clinician. Opens with medical and suicide-risk routing, stops if monitoring itself feeds preoccupation, and ends with a mandatory handoff to an eating-disorder-informed clinician.",
       "techniques": [
         "QA-08",
         "ST-04",
@@ -142283,14 +143920,16 @@
         "eating-disorders",
         "self-monitoring",
         "bring-to-therapist",
-        "medical-risk-routing"
+        "medical-risk-routing",
+        "binge-eating",
+        "purging",
+        "diary-for-therapist"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-psychology/specialty-clinical/psychology_eating_disorder_cbt_e_protocol.md",
         "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md",
-        "domain-psychology/client-self-use/pre-therapy/clientself_finding_therapist_search_criteria.md",
         "domain-health-wellness/nutrition/nutrition_eating_pattern_audit.md"
       ],
       "has_frontmatter": true
@@ -142316,14 +143955,16 @@
         "spirituality",
         "values",
         "religious-coping",
-        "bring-to-therapist"
+        "bring-to-therapist",
+        "prayer-and-anxiety",
+        "religious-guilt",
+        "punished-by-god"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-psychology/client-self-use/identity-transitions/clientself_religious_deconstruction_support.md",
         "domain-psychology/client-self-use/pre-therapy/clientself_culturally_affirming_therapist_screening.md",
-        "domain-psychology/client-self-use/symptom-understanding/clientself_intrusive_thoughts_vs_ocd_signal.md",
         "domain-psychology/client-self-use/coping-by-concern/clientself_anxiety_grounding_menu_builder.md"
       ],
       "has_frontmatter": true
@@ -142348,15 +143989,18 @@
         "mens-mental-health",
         "help-seeking",
         "stigma",
-        "means-safety"
+        "means-safety",
+        "short-fused",
+        "dont-do-therapy",
+        "drinking-more",
+        "cant-switch-off"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-psychology/client-self-use/pre-therapy/clientself_do_i_need_therapy_decision_aid.md",
-        "domain-psychology/client-self-use/pre-therapy/clientself_finding_therapist_search_criteria.md",
-        "domain-psychology/client-self-use/habit-lifestyle/clientself_alcohol_use_re_evaluation.md",
-        "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md"
+        "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md",
+        "domain-psychology/client-self-use/habit-lifestyle/clientself_alcohol_use_re_evaluation.md"
       ],
       "has_frontmatter": true
     },
@@ -142380,15 +144024,17 @@
         "chronic-illness",
         "health-psychology",
         "mood-tracking",
-        "bring-to-care-team"
+        "bring-to-care-team",
+        "burden-to-family",
+        "illness-affecting-mood",
+        "tired-or-depressed"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-psychology/specialty-clinical/psychology_chronic_illness_adjustment_protocol.md",
         "domain-psychology/client-self-use/identity-transitions/clientself_post_diagnosis_adjustment.md",
-        "domain-psychology/client-self-use/specialty/clientself_chronic_pain_self_management_plan.md",
-        "domain-psychology/client-self-use/mood-journaling/clientself_mood_tracking_summarizer.md"
+        "domain-psychology/client-self-use/specialty/clientself_chronic_pain_self_management_plan.md"
       ],
       "has_frontmatter": true
     },
@@ -142413,15 +144059,18 @@
         "autism",
         "adhd",
         "self-advocacy",
-        "accommodations"
+        "accommodations",
+        "sensory-overload",
+        "telling-my-employer",
+        "hate-phone-calls",
+        "burnt-out"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-psychology/client-self-use/communication-system/clientself_workplace_accommodations_request.md",
         "domain-psychology/client-self-use/coping-by-concern/clientself_adhd_external_scaffold_designer.md",
-        "domain-psychology/client-self-use/identity-transitions/clientself_post_diagnosis_adjustment.md",
-        "domain-psychology/populations/neurodivergent-adult/psychology_neurodivergent_affirming_treatment_planning.md"
+        "domain-psychology/client-self-use/identity-transitions/clientself_post_diagnosis_adjustment.md"
       ],
       "has_frontmatter": true
     },
@@ -142431,7 +144080,7 @@
       "title": "OCD Self-ERP Preparation — For Therapist Review, Not Self-Administration",
       "domain": "psychology",
       "category": "psychology/client-self-use/specialty",
-      "description": "Prepare the groundwork for starting ERP with an OCD-trained therapist: a trigger map, a behavioural and mental compulsion inventory, an avoidance and accommodation list, a draft SUDS-estimated hierarchy, goals, and questions — all marked 'do not start exposures until reviewed.' Refuses to give reassurance and routes crisis to 988/911/ED.",
+      "description": "Prepare the groundwork for starting ERP with an OCD-trained therapist: a trigger map, a behavioral and mental compulsion inventory, an avoidance and accommodation list, a draft SUDS-estimated hierarchy, goals, and questions — all marked 'do not start exposures until reviewed.' Refuses to give reassurance and routes crisis to 988/911/ED.",
       "techniques": [
         "ST-04",
         "DT-02",
@@ -142445,13 +144094,16 @@
         "ocd",
         "erp",
         "hierarchy",
-        "bring-to-therapist"
+        "bring-to-therapist",
+        "repeated-checking",
+        "excessive-handwashing",
+        "asking-for-reassurance",
+        "therapy-waitlist"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-psychology/client-self-use/coping-by-concern/clientself_ocd_erp_exercise_with_therapist.md",
-        "domain-psychology/client-self-use/coping-by-concern/clientself_ocd_family_accommodation_reduction_plan.md",
         "domain-psychology/client-self-use/symptom-understanding/clientself_intrusive_thoughts_vs_ocd_signal.md",
         "domain-psychology/specialty-clinical/psychology_ocd_erp_provider_protocol.md"
       ],
@@ -142478,15 +144130,18 @@
         "postpartum",
         "pmad",
         "self-screen",
-        "escalation"
+        "escalation",
+        "baby-blues",
+        "pregnancy-anxiety",
+        "scary-baby-thoughts",
+        "not-bonding"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-psychology/populations/perinatal/psychology_perinatal_mood_anxiety_screen_interpretation.md",
-        "domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md",
         "domain-psychology/client-self-use/specialty/clientself_postpartum_partner_support_guide.md",
-        "domain-parenting/caregiver-facing/ages-0-3/parenting_postpartum_parent_capacity_check.md"
+        "domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md"
       ],
       "has_frontmatter": true
     },
@@ -142510,15 +144165,17 @@
         "perinatal",
         "postpartum",
         "partner-support",
-        "supporting-others"
+        "supporting-others",
+        "baby-blues",
+        "new-dad",
+        "crying-after-birth"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
       "related_prompts": [
         "domain-psychology/client-self-use/specialty/clientself_perinatal_self_screen_and_plan.md",
         "domain-psychology/client-self-use/crisis-self-triage/clientself_supporting_loved_one_in_crisis.md",
-        "domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md",
-        "domain-parenting/caregiver-facing/ages-0-3/parenting_postpartum_parent_capacity_check.md"
+        "domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md"
       ],
       "has_frontmatter": true
     },
@@ -151074,7 +152731,10 @@
         "integration",
         "joint-display",
         "explanatory-sequential",
-        "convergent-design"
+        "convergent-design",
+        "surveys-plus-interviews",
+        "numbers-and-stories",
+        "results-disagree"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -151528,7 +153188,10 @@
         "chapter-structure",
         "argument",
         "graduate-research",
-        "milestones"
+        "milestones",
+        "grad-school",
+        "committee-deadline",
+        "stuck-on-outline"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -151727,7 +153390,10 @@
         "training",
         "reporting-culture",
         "metrics",
-        "small-business"
+        "small-business",
+        "staff-clicking-links",
+        "suspicious-emails",
+        "teach-employees"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -151814,7 +153480,10 @@
         "runbook",
         "small-team",
         "escalation",
-        "phishing-reports"
+        "phishing-reports",
+        "strange-login-alert",
+        "is-this-serious",
+        "no-it-department"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -151871,7 +153540,10 @@
         "business-email-compromise",
         "data-breach",
         "small-business",
-        "security-operations"
+        "security-operations",
+        "got-hacked",
+        "lost-laptop",
+        "email-account-hacked"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -151928,7 +153600,10 @@
         "business-continuity",
         "exercise-design",
         "facilitation",
-        "preparedness"
+        "preparedness",
+        "test-our-plan",
+        "emergency-drill",
+        "what-if-scenario"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -151985,7 +153660,10 @@
         "security-questionnaire",
         "procurement",
         "due-diligence",
-        "small-business"
+        "small-business",
+        "buying-software",
+        "is-it-safe",
+        "sensitive-data"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -152045,7 +153723,10 @@
         "compensating-controls",
         "governance",
         "decision-record",
-        "accountability"
+        "accountability",
+        "cant-fix-yet",
+        "get-sign-off",
+        "temporary-workaround"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -152160,7 +153841,10 @@
         "hazard-analysis",
         "process-safety",
         "controls",
-        "risk-assessment"
+        "risk-assessment",
+        "serious-accident",
+        "what-could-fail",
+        "safeguards-working"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -152437,7 +154121,9 @@
         "risk-monitoring",
         "thresholds",
         "escalation",
-        "leading-indicators"
+        "leading-indicators",
+        "early-warning-signs",
+        "what-to-track"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -152494,7 +154180,9 @@
         "loss-exceedance-curve",
         "calibrated-estimation",
         "uncertainty",
-        "enterprise-risk"
+        "enterprise-risk",
+        "worst-case-cost",
+        "potential-losses"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -152613,7 +154301,10 @@
         "risk-governance",
         "kri",
         "risk-appetite",
-        "executive-communication"
+        "executive-communication",
+        "board-meeting-prep",
+        "quarterly-report",
+        "top-worries"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -152729,7 +154420,10 @@
         "concentration-risk",
         "fourth-party",
         "outsourcing",
-        "due-diligence"
+        "due-diligence",
+        "depend-on-supplier",
+        "supplier-goes-under",
+        "exit-plan"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -152905,7 +154599,10 @@
         "close-the-loop",
         "account-management",
         "product-feedback",
-        "b2b"
+        "b2b",
+        "feature-requests",
+        "customer-feels-ignored",
+        "who-should-fix"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -152964,7 +154661,10 @@
         "executive-business-review",
         "account-management",
         "value-realization",
-        "b2b"
+        "b2b",
+        "client-review-meeting",
+        "prove-our-value",
+        "quarterly-check-in"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -153118,7 +154818,10 @@
         "commit",
         "pipeline-review",
         "sales-management",
-        "revenue"
+        "revenue",
+        "hit-quota",
+        "deals-slipping",
+        "boss-wants-number"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -153148,7 +154851,10 @@
         "close-plan",
         "enterprise-sales",
         "buyer-enablement",
-        "deal-execution"
+        "deal-execution",
+        "deal-dragging-on",
+        "paperwork-delays",
+        "get-to-signature"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -153178,7 +154884,10 @@
         "prospecting",
         "account-based",
         "cadence",
-        "sdr"
+        "sdr",
+        "find-new-customers",
+        "cold-outreach",
+        "fill-pipeline"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -153238,7 +154947,10 @@
         "expansion",
         "whitespace",
         "relationship-mapping",
-        "b2b"
+        "b2b",
+        "grow-biggest-client",
+        "only-one-contact",
+        "upsell-opportunities"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -153298,7 +155010,10 @@
         "customer-communication",
         "handoff",
         "incident-communication",
-        "customer-support"
+        "customer-support",
+        "angry-customer",
+        "reply-to-complaint",
+        "pass-to-engineering"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -153328,7 +155043,9 @@
         "status-page",
         "outage",
         "customer-communication",
-        "customer-support"
+        "customer-support",
+        "site-is-down",
+        "keep-customers-informed"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -153358,7 +155075,10 @@
         "help-center",
         "ticket-deflection",
         "self-service",
-        "customer-support"
+        "customer-support",
+        "same-questions-repeated",
+        "help-article",
+        "fewer-tickets"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -153366,6 +155086,38 @@
         "domain-business-strategy/startup/solo_dev_support_system.md",
         "domain-productivity/bottlenecks/bottleneck_knowledge_base_gap_analysis.md",
         "domain-sales-customer/support/support_ticket_triage_and_routing.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/support/support_agent_interaction_qa_scorecard.md",
+      "filename": "support_agent_interaction_qa_scorecard.md",
+      "title": "Support Agent QA Scorecard — Anchored Behaviors, Critical Fails, Fair Sampling, and One Coaching Point per Review",
+      "domain": "sales-customer",
+      "category": "sales-customer/support",
+      "description": "Build and apply a quality scorecard for human support agents' calls, chats, and tickets: behavior-anchored dimensions, critical-fail items that override the score, a sample that is fair to every agent, calibration between reviewers, and a coaching note that separates what the agent controlled from what the process caused — distinct from the bot transcript rubric and from scoring a single written reply.",
+      "techniques": [
+        "QA-17",
+        "CM-02",
+        "QA-12",
+        "QA-01"
+      ],
+      "keywords": [
+        "support",
+        "quality-assurance",
+        "agent-coaching",
+        "contact-center",
+        "scorecard",
+        "call-review",
+        "reviewing-support-calls",
+        "coaching-my-team"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-voice-conversational-ui/analytics/analytics_transcript_qa_rubric.md",
+        "domain-professional-writing/content-quality/quality_slop_support_response.md",
+        "domain-sales-customer/support/support_escalation_response_drafter.md"
       ],
       "has_frontmatter": true
     },
@@ -173984,7 +175736,10 @@
         "offer-strategy",
         "contingencies",
         "escalation-clause",
-        "appraisal-gap"
+        "appraisal-gap",
+        "bidding-war",
+        "winning-a-house",
+        "first-home"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -174040,7 +175795,10 @@
         "comps",
         "pricing",
         "listing-strategy",
-        "valuation"
+        "valuation",
+        "home-worth",
+        "selling-my-house",
+        "is-price-fair"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -174097,7 +175855,10 @@
         "due-diligence",
         "home-buying",
         "defects",
-        "triage"
+        "triage",
+        "scary-findings",
+        "ask-for-repairs",
+        "walk-away"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -174154,7 +175915,10 @@
         "cap-rate",
         "dscr",
         "cash-on-cash",
-        "investing"
+        "investing",
+        "first-rental",
+        "will-it-profit",
+        "becoming-a-landlord"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -174211,7 +175975,10 @@
         "bid-no-bid",
         "subcontractor",
         "cash-flow",
-        "decision"
+        "decision",
+        "take-this-job",
+        "slow-paying-client",
+        "crew-too-busy"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -174268,7 +176035,10 @@
         "bidding",
         "contingency",
         "allowances",
-        "contractor"
+        "contractor",
+        "pricing-a-job",
+        "underpriced-jobs",
+        "hidden-surprises"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -174324,7 +176094,10 @@
         "change-order",
         "pricing",
         "client-communication",
-        "contractor"
+        "contractor",
+        "extra-work",
+        "hidden-damage-found",
+        "client-wants-changes"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -174438,7 +176211,10 @@
         "transcript-review",
         "llm-as-judge",
         "analytics",
-        "quality-assurance"
+        "quality-assurance",
+        "review-chat-logs",
+        "is-bot-helping",
+        "bot-mistakes"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -174578,7 +176354,10 @@
         "warm-transfer",
         "contact-center",
         "chatbot-design",
-        "context-transfer"
+        "context-transfer",
+        "customers-repeat-themselves",
+        "want-a-human",
+        "bot-gets-stuck"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -175077,7 +176856,10 @@
         "call-flow",
         "authentication",
         "containment",
-        "voice-design"
+        "voice-design",
+        "phone-menu",
+        "callers-stuck",
+        "route-callers"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -175108,7 +176890,10 @@
         "barge-in",
         "endpointing",
         "latency",
-        "voice-agent"
+        "voice-agent",
+        "cuts-people-off",
+        "awkward-silences",
+        "talks-over-callers"
       ],
       "difficulty": "advanced",
       "updated": "2026-09-24",
@@ -175139,7 +176924,10 @@
         "pronunciation-lexicon",
         "prosody",
         "voice-design",
-        "regression-testing"
+        "regression-testing",
+        "mispronounced-words",
+        "robotic-sounding",
+        "reads-numbers-wrong"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -175785,7 +177573,8 @@
         "hoa",
         "housing",
         "self-submit",
-        "community-association"
+        "community-association",
+        "got-a-fine"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -175977,7 +177766,8 @@
         "medical-records",
         "health-privacy",
         "self-submit",
-        "patient"
+        "patient",
+        "switching-doctors"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -176073,7 +177863,8 @@
         "insurance",
         "prior-authorization",
         "self-submit",
-        "patient"
+        "patient",
+        "waiting-on-approval"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",
@@ -176393,7 +178184,8 @@
         "student-loans",
         "servicer-dispute",
         "self-submit",
-        "consumer"
+        "consumer",
+        "payment-not-credited"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -176457,7 +178249,8 @@
         "tax",
         "penalty-relief",
         "self-submit",
-        "government"
+        "government",
+        "filed-late"
       ],
       "difficulty": "intermediate",
       "updated": "2026-09-24",
@@ -176489,7 +178282,8 @@
         "travel",
         "refund",
         "self-submit",
-        "consumer"
+        "consumer",
+        "flight-cancelled"
       ],
       "difficulty": "beginner",
       "updated": "2026-09-24",

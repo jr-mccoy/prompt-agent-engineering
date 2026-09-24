@@ -15,6 +15,9 @@ tags:
   - creator-brief
   - campaign
   - scriptwriting
+  - influencer-video
+  - talking-head-ad
+  - short-form-video
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/marketing/video/SKILL.md
@@ -43,6 +46,9 @@ feel that makes UGC work and the disclosure and rights questions settled up fron
   `domain-professional-writing/content-quality/quality_slop_video_script.md`.
 - You need a creator-partnership or influencer contract — `domain-legal/`; this
   prompt lists the terms to settle, not their drafting.
+- You want organic hooks in the channel's own voice —
+  `domain-professional-writing/content-production/content_short_form_hook_bank.md`; this
+  prompt writes paid-ad hooks inside a filmable brief.
 
 ## Inputs / Context
 

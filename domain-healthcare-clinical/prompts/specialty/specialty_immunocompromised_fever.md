@@ -15,12 +15,43 @@ tags:
   - transplant
   - febrile-neutropenia
   - specialty-assessment
+  - sick-after-chemo
+  - low-white-count
+  - transplant-infection
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_fever_unknown_origin.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Produce an infectious-disease plan for a febrile immunocompromised patient: identify the immune defect, predict the likely pathogens from that defect, risk-stratify, start the right empiric therapy on time, and set escalation (antifungal, broader gram-positive cover) and de-escalation rules. Distinct from `reasoning/workup_fever_unknown_origin.md`, which stages a ≥3-week undiagnosed fever and mentions neutropenic fever only as a category — this prompt is the acute, defect-specific plan for the first hours and days.
+Produce an infectious-disease plan for a febrile immunocompromised patient: identify the immune defect, predict the likely pathogens from that defect, risk-stratify, start the right empiric therapy on time, and set escalation (antifungal, broader gram-positive cover) and de-escalation rules. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A hypotensive or deteriorating patient gets antibiotics and escalation now, not after this output.
+
+## When to Use
+
+- Fever in a patient on chemotherapy, after HSCT or solid-organ transplant, on biologics or chronic glucocorticoids, or with asplenia — the first hours and days.
+- Choosing the empiric regimen, whether to add vancomycin or an antifungal, and when to stop.
+- Checking an admission ID plan for a defect–pathogen mismatch or an azole–immunosuppressant interaction.
+
+**Not this prompt if:**
+
+- The fever is ≥3 weeks old and undiagnosed — `reasoning/workup_fever_unknown_origin.md` stages it and mentions neutropenic fever only as a category; this prompt is the acute, defect-specific plan.
+- Suspected sepsis in an immunocompetent host — `acute-care/medicine_sepsis_recognition_framework.md`.
+- Starting antiretroviral therapy at an HIV intake visit — `specialty/specialty_hiv_initial_visit_art.md`.
 
 ## Inputs
 
@@ -35,11 +66,12 @@ Produce an infectious-disease plan for a febrile immunocompromised patient: iden
 
 ## Role
 
-Senior attending in transplant/oncology infectious diseases, writing the admission ID plan for the primary team.
+Senior attending in transplant/oncology infectious diseases supporting the treating team: drafting the admission ID plan for the primary team to review and order.
 
 ## Reasoning Steps
 
 1. **Name the immune defect and its pathogen map.**
+   - **Stop and escalate first if:** hypotension, lactate ≥4 mmol/L, altered mental status, respiratory failure, suspected meningitis, or suspected neutropenic enterocolitis → sepsis pathway and ICU review now; antibiotics are never delayed for any step below.
    - **Neutropenia** (ANC <500, or expected to fall below 500 within 48 h): gram-negative bacilli including Pseudomonas, gram-positive cocci (viridans streptococci with mucositis, S. aureus, CoNS with lines), and — with prolonged neutropenia (>7–10 days) — Aspergillus, Candida, other molds.
    - **Solid-organ transplant — timeline:** <1 month: nosocomial and surgical-site infections, C. difficile, donor-derived infection. ~1–6 months (heaviest immunosuppression): CMV, PJP, Nocardia, Listeria, Toxoplasma, endemic fungi, BK (kidney), HBV/HCV. >6 months: community pathogens, plus late CMV and opportunists in those still heavily immunosuppressed or treated for rejection.
    - **Anti-TNF:** TB reactivation, histoplasmosis and other endemic mycoses, Listeria, Legionella. **Rituximab:** HBV reactivation, hypogammaglobulinemia, PJP, PML. **JAK inhibitors:** zoster, TB. **Glucocorticoids** (≥20 mg prednisone ≥4 weeks): PJP, Nocardia, fungal infection; they also blunt fever and peritoneal signs.
@@ -95,6 +127,22 @@ INTERACTIONS: [immunosuppressant level checks, QTc]
 PITFALLS:
 - [delay to antibiotics, reflexive vancomycin, missed timeline pathogens, azole–tacrolimus interaction]
 ```
+
+## Verification
+
+- [ ] Time from triage to first antibiotic dose is recorded and is ≤60 minutes for neutropenic fever.
+- [ ] The pathogen list is tied to the named defect and transplant-timeline position, not a generic sepsis list.
+- [ ] MASCC is itemized with each point traced to an input; clinical high-risk overrides and fluoroquinolone prophylaxis are checked before any oral regimen.
+- [ ] Each drug is dosed for weight and CrCl; confirm doses, renal adjustment and thresholds against the current guideline (IDSA/ASCO febrile neutropenia) and local formulary.
+- [ ] Every addition (vancomycin, antifungal) has an indication and a reassess/stop date; an added azole triggers an immunosuppressant level check.
+- [ ] The de-escalation approach (ANC recovery vs ECIL-4) is named.
+
+## False-Positive Prevention
+
+- Fever from drug, transfusion, tumor, GVHD, or engraftment read as uncontrolled infection — persistent fever alone in a stable patient is not a reason to broaden.
+- Coagulase-negative staphylococci in one of several blood-culture sets treated as bacteremia — likely contamination unless repeated or line-concordant.
+- A single positive β-D-glucan or galactomannan called invasive fungal disease without imaging or clinical correlation — IVIG, albumin, hemodialysis membranes, and surgical gauze can raise β-D-glucan.
+- Low-level CMV DNAemia in a stable transplant recipient treated as CMV disease — follow the trend against the center's treatment threshold.
 
 ## Worked Example
 

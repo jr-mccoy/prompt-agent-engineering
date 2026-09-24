@@ -16,18 +16,20 @@ tags:
   - postpartum
   - partner-support
   - supporting-others
+  - baby-blues
+  - new-dad
+  - crying-after-birth
 intended_use: model-testing
 updated: "2026-09-24"
 related_prompts:
   - domain-psychology/client-self-use/specialty/clientself_perinatal_self_screen_and_plan.md
   - domain-psychology/client-self-use/crisis-self-triage/clientself_supporting_loved_one_in_crisis.md
   - domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md
-  - domain-parenting/caregiver-facing/ages-0-3/parenting_postpartum_parent_capacity_check.md
 ---
 
 # Supporting a Partner Through Pregnancy and Postpartum — Recognition & Action
 
-> **IF YOUR PARTNER IS SEEING OR HEARING THINGS OTHERS DON'T, IS CONFUSED OR EXTREMELY SUSPICIOUS, HASN'T SLEPT FOR DAYS EVEN WHEN THEY COULD, SAYS THINGS ABOUT THE BABY THAT DON'T MAKE SENSE, OR TALKS ABOUT HARMING THEMSELVES OR THE BABY: call 911 or take them to the nearest emergency department (ED) now, and do not leave them alone — or alone with the baby.** For suicidal thoughts, call or text **988** (Suicide & Crisis Lifeline, US). Support any time: **National Maternal Mental Health Hotline 1-833-TLC-MAMA (1-833-852-5262)** — it also supports partners. Outside the US, use your local emergency number. This is a support guide — it is **not** a diagnosis or a substitute for their care team.
+> **IF YOUR PARTNER IS SEEING OR HEARING THINGS OTHERS DON'T, IS CONFUSED OR EXTREMELY SUSPICIOUS, HASN'T SLEPT FOR DAYS EVEN WHEN THEY COULD, SAYS THINGS ABOUT THE BABY THAT DON'T MAKE SENSE, OR TALKS ABOUT HARMING THEMSELVES OR THE BABY: call 911 or take them to the nearest emergency department (ED) now, and do not leave them alone — or alone with the baby.** For suicidal thoughts, call or text **988** (Suicide & Crisis Lifeline, US). Support any time: **National Maternal Mental Health Hotline 1-833-TLC-MAMA (1-833-852-6262)** — it also supports partners. Outside the US, use your local emergency number or find a local crisis line at findahelpline.com. This is a support guide — it is **not** a diagnosis or a substitute for their care team.
 
 ## Objective
 
@@ -48,7 +50,7 @@ Help you tell the difference between the normal upheaval of a new baby and signs
 ## Inputs / Context
 
 - Where things are: weeks pregnant or weeks/months postpartum; any loss.
-- What you've noticed and for how long: tearfulness, withdrawal, anger, constant worry, checking, not sleeping when able, not eating, disinterest in or fear around the baby, statements of hopelessness, unusual beliefs or behaviour.
+- What you've noticed and for how long: tearfulness, withdrawal, anger, constant worry, checking, not sleeping when able, not eating, disinterest in or fear around the baby, statements of hopelessness, unusual beliefs or behavior.
 - History: prior depression, anxiety, bipolar disorder, or postpartum episodes.
 - What help is available (family, leave, money for support).
 - How you are doing.
@@ -127,7 +129,7 @@ TODAY'S ACTION: [...]
 ## False-Positive Prevention
 
 - Tearfulness and mood swings in the first two weeks are common baby blues — reassure and support, but re-check at two weeks; do not escalate these alone to emergency.
-- Being anxious and protective is normal new-parent behaviour; intrusive fears become a "call this week" sign when they are constant, drive avoidance or checking, or stop sleep.
+- Being anxious and protective is normal new-parent behavior; intrusive fears become a "call this week" sign when they are constant, drive avoidance or checking, or stop sleep.
 - Sleep deprivation explains a lot, but not everything: if symptoms persist after a protected sleep block or two, that points toward a clinician, not more waiting.
 
 ## Example

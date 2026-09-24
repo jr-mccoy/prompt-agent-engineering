@@ -15,6 +15,9 @@ tags:
   - enterprise-sales
   - buyer-enablement
   - deal-execution
+  - deal-dragging-on
+  - paperwork-delays
+  - get-to-signature
 updated: "2026-09-24"
 related_prompts:
   - domain-sales-customer/sales/sales_deal_qualification_scorecard.md

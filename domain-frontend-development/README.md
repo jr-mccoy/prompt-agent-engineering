@@ -2,7 +2,7 @@
 
 **Purpose:** Comprehensive prompt collection for frontend development covering frameworks (React, Vue, Angular, Next.js, Svelte/SvelteKit, Astro, SolidJS, Qwik, Remix), cross-cutting craft (styling, TypeScript, forms, animation, architecture), build tooling, accessibility, performance, testing, and UX research methods.
 
-**Total Resources:** 54 prompts across 19 categories
+**Total Resources:** 56 prompts across 20 categories
 
 ---
 
@@ -36,6 +36,7 @@ This domain provides production-grade prompts for modern frontend development, o
 | [animation/](animation/) | 1 | Motion & animation performance |
 | [architecture/](architecture/) | 3 | Error boundaries/resilience, state-management selection, i18n/localization |
 | [build-tooling/](build-tooling/) | 3 | Vite optimization, micro-frontends/Module Federation, bundler migration |
+| [design-direction/](design-direction/) | 2 | Visual design direction options, look-and-feel spec from a target "vibe" |
 
 ### Quality Concerns
 

@@ -17,6 +17,7 @@ tags:
   - refund
   - self-submit
   - consumer
+  - flight-cancelled
 updated: "2026-09-24"
 related_prompts:
   - domain-legal/personal-self-advocacy/consumer-scams/legalprep_refund_chargeback_dispute_preparer.md

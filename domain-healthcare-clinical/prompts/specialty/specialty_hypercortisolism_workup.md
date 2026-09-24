@@ -14,14 +14,44 @@ tags:
   - cushing-syndrome
   - pituitary
   - specialty-assessment
+  - purple-stretch-marks
+  - unexplained-weight-gain
+  - easy-bruising
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/specialty/specialty_adrenal_incidentaloma.md
+  - domain-healthcare-clinical/prompts/pathophysiology/patho_endocrine_axis_dysfunction.md
+  - domain-healthcare-clinical/prompts/pharmacology/pharm_steroid_taper_design.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
 Work up suspected hypercortisolism in three stages — **exclude exogenous glucocorticoid, confirm endogenous cortisol excess, then localize the source** — with each test chosen and interpreted against its specific confounders. Produce a committed diagnosis (Cushing disease, ectopic ACTH, adrenal Cushing, non-neoplastic physiologic hypercortisolism, or not Cushing) and the treatment and safety plan that follows.
 
-Distinct from [`specialty_adrenal_incidentaloma.md`](specialty_adrenal_incidentaloma.md), which handles mild autonomous cortisol secretion discovered from an adrenal image; this prompt starts from the clinical suspicion of Cushing syndrome. Mechanism of the HPA axis lives in [`patho_endocrine_axis_dysfunction.md`](../pathophysiology/patho_endocrine_axis_dysfunction.md); tapering exogenous steroids lives in [`pharm_steroid_taper_design.md`](../pharmacology/pharm_steroid_taper_design.md).
+Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. Severe hypercortisolism or suspected adrenal crisis (step 1) is escalated now, not after this output.
+
+## When to Use
+
+- A patient with discriminating features — easy bruising, wide purple striae, proximal weakness, facial plethora — or several progressive features at an unusual age.
+- First-line cortisol tests are back, discordant, or confounded (oral estrogen, shift work, low eGFR) and need interpreting.
+- Endogenous cortisol excess is confirmed and the source has to be localized and treated.
+
+**Not this prompt if:**
+- The trigger is an adrenal mass found on imaging (mild autonomous cortisol secretion) → [`specialty_adrenal_incidentaloma.md`](specialty_adrenal_incidentaloma.md); this prompt starts from clinical suspicion of Cushing syndrome.
+- The question is the mechanism of the HPA axis → [`patho_endocrine_axis_dysfunction.md`](../pathophysiology/patho_endocrine_axis_dysfunction.md).
+- The features come from prescribed steroids and the task is tapering them → [`pharm_steroid_taper_design.md`](../pharmacology/pharm_steroid_taper_design.md).
 
 ## Inputs
 
@@ -33,11 +63,12 @@ Distinct from [`specialty_adrenal_incidentaloma.md`](specialty_adrenal_incidenta
 
 ## Role
 
-Senior attending endocrinologist at a pituitary/adrenal center. Rigorous about test selection and confounders, decisive about localization, explicit about which consensus thresholds are being applied.
+Senior attending endocrinologist at a pituitary/adrenal center supporting the treating clinician. Rigorous about test selection and confounders, decisive about localization, explicit about which consensus thresholds are being applied.
 
 ## Reasoning Steps
 
 1. **Rule out exogenous glucocorticoid first.** Iatrogenic Cushing syndrome is the most common cause. Ask about every route. Exogenous steroids suppress ACTH and endogenous cortisol — biochemistry looks "low" while the patient looks Cushingoid (except with hydrocortisone/prednisolone, which cross-react in cortisol immunoassays). Ritonavir/cobicistat plus inhaled fluticasone is a classic hidden cause.
+   - **Stop and escalate now if:** psychosis or severe depression with suicidality, sepsis or opportunistic infection, severe hypokalemia or arrhythmia, uncontrolled hyperglycemia or hypertension, or acute VTE — manage as severe hypercortisolism (step 7) in hospital. In a patient on long-term exogenous steroids, hypotension, vomiting or collapse after stopping them is adrenal crisis — give hydrocortisone, do not test.
 
 2. **Decide whether to test.** Test patients with multiple progressive features, especially the discriminating ones; unusual features for age (osteoporosis or hypertension in a young adult); children with weight gain and falling height percentile; and adrenal incidentalomas (handled separately). Do not screen unselected patients with obesity or diabetes.
 
@@ -52,11 +83,11 @@ Senior attending endocrinologist at a pituitary/adrenal center. Rigorous about t
 
 5. **Localize — morning plasma ACTH (on at least two occasions if borderline).**
    - **ACTH suppressed (commonly <5 pg/mL, <1.1 pmol/L; assay-dependent):** ACTH-independent → adrenal CT (adenoma, carcinoma, bilateral macronodular or micronodular disease such as PPNAD in Carney complex).
-   - **ACTH normal or high (commonly >20 pg/mL, >4.4 pmol/L):** ACTH-dependent → pituitary (Cushing disease, ~70–80% in adults) vs ectopic ACTH.
+   - **ACTH normal or high (commonly >20 pg/mL, >4.4 pmol/L):** ACTH-dependent → pituitary (Cushing disease — about 70% of endogenous Cushing syndrome and 80–90% of ACTH-dependent cases) vs ectopic ACTH.
    - **Intermediate (5–20 pg/mL):** repeat; CRH stimulation (ACTH rise supports pituitary) and DHEAS (low supports adrenal).
 
 6. **ACTH-dependent: pituitary vs ectopic.**
-   - **Pituitary MRI** with dynamic contrast (small corticotroph adenomas are frequently not seen; ~10% of healthy adults have incidental pituitary lesions).
+   - **Pituitary MRI** with dynamic contrast. Small corticotroph adenomas are frequently not seen, and incidental pituitary lesions are common on MRI (on the order of 10% in imaging series).
    - Consensus (Pituitary Society 2021) supports proceeding to surgery without IPSS when MRI shows an adenoma ≥10 mm with concordant dynamic tests (CRH/desmopressin response, dexamethasone suppression on high-dose testing) — practice varies for 6–9 mm lesions; state the threshold used.
    - **Bilateral inferior petrosal sinus sampling (IPSS)** with CRH (or desmopressin) when MRI is negative, equivocal, or small: central-to-peripheral ACTH ratio ≥2 at baseline or ≥3 after stimulation → pituitary source. Must be done while hypercortisolemic (confirm cortisol excess on the day). Lateralization from IPSS is unreliable.
    - **Ectopic ACTH:** rapid onset, severe hypokalemia, edema, hypertension, hyperpigmentation, very high cortisol and ACTH, male predominance. Imaging: CT neck/chest/abdomen/pelvis, then somatostatin-receptor PET (Ga-68 DOTATATE) for neuroendocrine tumors (bronchial carcinoid, thymic, pancreatic NET, MTC, pheochromocytoma); small-cell lung cancer typically obvious on CT.
@@ -106,6 +137,21 @@ THRESHOLDS / GUIDELINES APPLIED: [ ]
 PITFALLS TO AVOID:
 - [ ]
 ```
+
+## Verification
+
+- [ ] Exogenous glucocorticoid exposure by every route (and CYP3A-booster interactions) was reviewed before any test was interpreted.
+- [ ] At least two first-line tests were used, each read against its assay-specific ULN and the patient's listed confounders.
+- [ ] Physiologic hypercortisolism was considered and excluded, or re-testing planned, before localization.
+- [ ] ACTH, MRI-size and IPSS thresholds are attributed to a named guideline or consensus with year; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+- [ ] Medical-therapy doses and the perioperative glucocorticoid plan account for hepatic function, drug interactions and adrenal-insufficiency risk.
+
+## False-Positive Prevention
+
+- **Nonspecific features taken as a reason to test.** Obesity, hypertension, diabetes and depression are common; without discriminating features, a single mildly abnormal test is more likely a false positive.
+- **One borderline result called Cushing syndrome.** A single UFC or LNSC just above the ULN is common with physiologic hypercortisolism and assay variation; repeat, add a second test type, and treat any driver first.
+- **Contaminated salivary samples.** Licorice, chewing tobacco, smoking, topical hydrocortisone on the hands and gum bleeding raise LNSC; ask before accepting the value.
+- **Immunoassay cross-reactivity read as endogenous excess.** Prednisolone, hydrocortisone and some drugs (carbamazepine, fenofibrate on UFC) cross-react; prefer LC-MS/MS when exposure is possible.
 
 ## Worked Example
 

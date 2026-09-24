@@ -15,6 +15,9 @@ tags:
   - paid-media
   - campaign
   - messaging
+  - too-many-versions
+  - which-ad-works
+  - limited-test-budget
 updated: "2026-09-24"
 related_prompts:
   - domain-agentic-resources/skills/marketing/ad-creative/SKILL.md

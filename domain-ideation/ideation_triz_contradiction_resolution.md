@@ -16,6 +16,8 @@ tags:
   - inventive-principles
   - engineering-design
   - problem-solving
+  - cant-have-both
+  - stuck-on-tradeoff
 updated: "2026-09-24"
 reasoning:
   styles: [analytical, divergent, systematic]

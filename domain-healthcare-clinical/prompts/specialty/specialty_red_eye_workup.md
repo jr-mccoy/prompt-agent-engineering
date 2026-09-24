@@ -14,12 +14,42 @@ tags:
   - emergency-medicine
   - primary-care
   - specialty-assessment
+  - pink-eye
+  - painful-eye
+  - chemical-in-eye
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/specialty/specialty_acute_vision_loss.md
+  - domain-healthcare-clinical/prompts/reasoning/workup_headache.md
+  - domain-medical-education/learner-clinical-reasoning/reason_red_flag_can_t_miss_drill.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Work up the acutely red eye in a primary care, urgent care, or ED setting: screen for sight-threatening red flags, localize the process (lids, conjunctiva, episclera/sclera, cornea, anterior chamber, orbit), commit to a working diagnosis, write the treatment, and state the exact ophthalmology referral timing (emergent / same-day / within 24–48 h / routine / none).
+Work up the acutely red eye in a primary care, urgent care, or ED setting: screen for sight-threatening red flags, localize the process (lids, conjunctiva, episclera/sclera, cornea, anterior chamber, orbit), commit to a working diagnosis, write the treatment, and state the exact ophthalmology referral timing (emergent / same-day / within 24–48 h / routine / none). Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A chemical injury, suspected open globe, or acute angle closure is irrigated, shielded, or treated and sent now, not after this output.
+
+## When to Use
+
+- An acutely red eye in primary care, urgent care, or the ED — separating benign causes from sight-threatening ones.
+- Deciding what to treat at the front line and the exact ophthalmology timing.
+- A chemical splash, a contact-lens wearer with pain, or a red eye after eye surgery or intravitreal injection.
+
+**Not this prompt if:**
+
+- Vision loss is the presenting problem in a white, quiet eye (CRAO, GCA, retinal detachment, optic neuritis) — `specialty/specialty_acute_vision_loss.md`. A red eye with reduced acuity stays here, where reduced acuity is a red flag.
+- Headache is the lead complaint without eye findings — `reasoning/workup_headache.md`, which screens for angle closure with tonometry.
 
 ## Inputs
 
@@ -31,11 +61,12 @@ Work up the acutely red eye in a primary care, urgent care, or ED setting: scree
 
 ## Role
 
-Senior attending ophthalmologist taking a phone consult from an ED or primary care colleague. Direct about what can be treated at the front line and what must be seen at the slit lamp today.
+Senior attending ophthalmologist taking a phone consult and supporting the treating ED or primary care clinician. Direct about what can be treated at the front line and what must be seen at the slit lamp today.
 
 ## Reasoning Steps
 
 1. **Chemical injury overrides everything.** Irrigate first, examine second. Copious saline or lactated Ringer's (≥1–2 L) via Morgan lens or tubing after topical anesthetic, until conjunctival fornix pH is 7.0–7.5 on repeat testing 5–10 min after pausing. Sweep fornices for particulate. Alkali is worse than acid. Emergent ophthalmology.
+   - **Stop and escalate — emergent ophthalmology now — also for:** suspected open globe (shield, no pressure on the eye), acute angle closure (fixed mid-dilated pupil, hazy cornea, IOP often >40 mmHg), endophthalmitis after surgery or injection, orbital cellulitis with reduced acuity or RAPD, and hyperacute purulent discharge.
 
 2. **Screen red flags — any one moves this out of "benign red eye."**
    - Reduced visual acuity not corrected by pinhole
@@ -56,7 +87,7 @@ Senior attending ophthalmologist taking a phone consult from an ED or primary ca
    - **Subconjunctival hemorrhage:** painless flat sharply demarcated blood; check BP, anticoagulation/INR if recurrent; posttraumatic 360° hemorrhage with low IOP → consider occult globe rupture.
    - **Blepharitis / dry eye:** lid margin crusting, burning, worse in morning or with screens.
    - **Episcleritis:** sectoral redness, mild discomfort, vessels blanch with topical phenylephrine and move with a cotton swab. Benign, self-limited.
-   - **Scleritis:** severe boring pain that wakes the patient, globe tender, violaceous hue, vessels do not blanch with phenylephrine. Up to half have systemic disease (RA, GPA, relapsing polychondritis). Necrotizing scleritis is sight-threatening and often signals active systemic vasculitis.
+   - **Scleritis:** severe boring pain that wakes the patient, globe tender, violaceous hue, vessels do not blanch with phenylephrine. A large share (around 40–50% in referral series) has an associated systemic disease (RA, GPA, relapsing polychondritis). Necrotizing scleritis is sight-threatening and often signals active systemic vasculitis.
    - **Keratitis:** pain, photophobia, foreign-body sensation, reduced acuity. Contact lens bacterial keratitis (Pseudomonas) = white infiltrate with epithelial defect. HSV epithelial keratitis = dendrite with terminal bulbs on fluorescein. Acanthamoeba = pain out of proportion, water exposure with lenses. Zoster ophthalmicus with keratitis/uveitis.
    - **Anterior uveitis (iritis):** ciliary flush, photophobia, reduced acuity, small (miotic) possibly irregular pupil (posterior synechiae), cells/flare on slit lamp, hypopyon if severe.
    - **Acute angle-closure glaucoma:** severe pain, headache, nausea/vomiting, halos, hazy (edematous) cornea, fixed mid-dilated pupil, shallow anterior chamber, markedly elevated IOP (often >40 mmHg), rock-hard globe on palpation. Triggers: dim light, anticholinergics, sympathomimetics, topiramate (bilateral secondary angle closure), hyperopia, Asian ethnicity, older age.
@@ -116,6 +147,21 @@ PITFALLS TO AVOID:
 - [ ]
 ```
 
+## Verification
+
+- [ ] Visual acuity with pinhole is recorded for each eye before any conclusion (after irrigation if chemical).
+- [ ] Every step-2 red flag is marked present or absent.
+- [ ] The working diagnosis is traced to the injection pattern, fluorescein, pupil, anterior chamber, and IOP findings.
+- [ ] No topical steroid or home topical anesthetic is prescribed without slit-lamp exclusion of HSV and ulcer, and the ophthalmology timing uses one of the five stated categories.
+- [ ] Systemic drugs (acetazolamide, mannitol, oral antivirals) are checked against renal function, sulfa allergy, and sickle status; confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+
+## False-Positive Prevention
+
+- Any red eye with discharge called bacterial conjunctivitis — most adult conjunctivitis is viral, and mucoid discharge alone does not justify antibiotics.
+- Punctate fluorescein staining from dry eye or viral conjunctivitis called keratitis — keratitis needs an infiltrate or epithelial defect with pain and reduced acuity.
+- Sectoral redness called scleritis without checking phenylephrine blanching and pain severity — episcleritis does not need a systemic workup.
+- A falsely high IOP from lid squeezing or pressure on the globe read as angle closure — correlate with the pupil, cornea, and chamber depth.
+
 ## Worked Example
 
 **Input:** 67 y/o F, hyperopic, presents at 11 pm with 3 h of severe right eye pain, frontal headache, vomiting ×2, blurred vision with rainbow halos around lights. Started in a dark movie theater. Took an OTC cold remedy with pseudoephedrine and diphenhydramine this afternoon. Exam: VA OD counting fingers at 3 ft, OS 20/30. Right pupil 5 mm, nonreactive; left 3 mm reactive. Right cornea hazy, diffuse perilimbal injection, shallow anterior chamber on penlight oblique illumination. Tonopen IOP OD 58, OS 17. No discharge, no fluorescein uptake.
@@ -139,7 +185,7 @@ TREATMENT (start now, before transfer):
 - Timolol 0.5% 1 drop OD.
 - Apraclonidine 1% 1 drop OD.
 - Acetazolamide 500 mg IV (no sulfa allergy; confirm Cr).
-- Pilocarpine 2% 1 drop OD now and repeat in 15 min once IOP begins to fall.
+- Pilocarpine 2% 1 drop OD — add once IOP begins to fall on recheck, not first: iris ischemia at IOP 58 blunts its effect. The aqueous suppressants above (and an osmotic agent if IOP stays high) come first; emergent ophthalmology remains the priority.
 - Ondansetron 4 mg IV, hydromorphone for pain; supine positioning.
 - Recheck IOP at 30–60 min. If still >40 at 1 h: mannitol 1–2 g/kg IV over 30–45 min (check volume status, cardiac/renal function).
 - Stop the cold remedy; no further sympathomimetics or anticholinergics.

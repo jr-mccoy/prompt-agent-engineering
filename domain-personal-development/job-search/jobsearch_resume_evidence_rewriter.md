@@ -16,6 +16,9 @@ tags:
   - accomplishments
   - honesty
   - candidate
+  - no-interviews
+  - weak-bullet-points
+  - show-my-impact
 updated: "2026-09-24"
 related_prompts:
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md

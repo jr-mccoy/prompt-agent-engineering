@@ -10,7 +10,9 @@ Prompts are written for sophisticated users who already know what they need. The
 
 **Two exceptions: `family-self-advocacy/` and `personal-self-advocacy/`.** These two subsections *invert* this convention. They are written for **laypeople handling their own side** — self-represented or self-organizing litigants, not practitioners — and therefore carry a strong, load-bearing not-legal-advice boundary, a mandatory Safety Block, and explicit refusal of legal advice, strategy, citation, legal conclusions, and outcome prediction (those are routed to the user's attorney or the relevant authority). They *organize, document, and prepare* the user's own information — and, where a channel is designed for non-lawyers, help draft the user's own factual account/letter — for handoff to counsel or a channel; they do not generate court filings or authority. `family-self-advocacy/` covers **divorce and custody**; `personal-self-advocacy/` covers **non-family personal legal matters** (workplace, harassment/stalking, defamation, IP theft, consumer/scams, landlord–tenant, identity theft, debt collection, small claims). See [`family-self-advocacy/README.md`](family-self-advocacy/README.md) and [`personal-self-advocacy/README.md`](personal-self-advocacy/README.md).
 
-## Directory Map (Phase 1 + Phase 2A + Family Law)
+## Directory Map
+
+Start with the [field guide](field_guide.md): which folder fits which task and posture, the shared placeholders, and a stage-by-stage map of a civil case.
 
 ```
 domain-legal/
@@ -48,19 +50,26 @@ domain-legal/
 ├── research/                      Research planning, issue spotting, IRAC memos, statutory
 │                                  interpretation, case briefs, precedent comparison, jurisdiction splits
 ├── litigation/                    Complaints, answers, dispositive motions, case strategy,
-│                                  settlement valuation, jury instructions, MILs, trial themes, budgets
+│                                  settlement valuation, jury instructions, MILs, trial themes, budgets;
+│                                  settlement agreement, mediation position paper, fee petition,
+│                                  post-trial motions (Phase 3); APA review, class certification,
+│                                  arbitration demand (Phase 4)
 ├── discovery/                     RFPs, interrogatories, responses, privilege logs/protocols,
-│                                  meet-and-confer, custodian interviews, review taxonomies
+│                                  meet-and-confer, custodian interviews, review taxonomies;
+│                                  litigation hold, 30(b)(6) notice, Rule 45 subpoena, agreed
+│                                  protective order, motion for protective order, motion to
+│                                  compel (Phase 3)
 ├── depositions/                   Fact-witness outlines, 30(b)(6) outlines, deposition
 │                                  summaries, witness prep, expert deposition prep
 ├── contracts-transactional/       Contract review/redline, risk heatmaps, MSA/SOW/NDA/DPA/SaaS/
 │                                  license drafting, term-sheet translation, clause library,
-│                                  negotiation position papers
+│                                  negotiation position papers; government-contract dispute (Phase 4)
 ├── corporate-ma/                  DD request lists, findings memos, disclosure schedules,
-│                                  board resolutions, §409A/QSBS spotters, post-closing integration
+│                                  board resolutions, §409A/QSBS spotters, post-closing integration;
+│                                  antitrust merger clearance (Phase 4)
 ├── employment-labor/              Offer/separation, workplace investigations, PIP/termination
 │                                  risk, wage-hour classification, non-compete enforceability,
-│                                  EEOC position statements
+│                                  EEOC position statements; ADA interactive-process script (Phase 4)
 ├── ip/                            Patent landscape scans, patent claim charts, trademark clearance,
 │                                  fair-use analysis, DMCA takedown/counter-notice, OSS license compatibility
 ├── client-intake-communications/  Matter intake, engagement letters, demand letters,
@@ -68,7 +77,9 @@ domain-legal/
 ├── in-house-legalops/             Executive matter summaries, legal-spend anomalies,
 │                                  contract playbooks, intake triage, board legal updates
 ├── regulatory-compliance/         Regulatory change impact, compliance program gaps, subpoena/CID
-│                                  response, internal investigations, voluntary disclosure (Phase 2B)
+│                                  response, internal investigations, voluntary disclosure (Phase 2B);
+│                                  securities disclosure, environmental permits, Stark/AKS,
+│                                  election-law compliance (Phase 4)
 ├── privacy-data/                  DPIA, breach response runbook, vendor privacy review,
 │                                  records retention schedule (Phase 2B)
 ├── ethics-professional-conduct/   Conflicts check, sanctions-risk premortem, unauthorized-practice
@@ -91,7 +102,9 @@ domain-legal/
 
 **Family law (delivered):** the planned Phase 2C `family/` set was built out as two dedicated, comprehensive subsections — `divorce/` (22 prompts) and `custody/` (20 prompts) — rather than a single five-prompt `family/` directory. The build folds in prenuptial/postnuptial drafting and enforceability, a DV protective-order petition, child-support calculation, and paternity/parentage establishment. A 2026-06-10 expansion added a full mediation set: divorce settlement/mediation prep, divorce and custody mediation brief drafters, a custody mediation impasse/package-strategy prompt, and a post-mediation term sheet/MOU drafter (plus two litigant-facing post-mediation organizers in `family-self-advocacy/`).
 
-**Phase 2B and the rest of Phase 2C (delivered 2026-09-24, coverage Wave 3):** 12 regulatory, privacy and ethics prompts and 35 specialty-practice prompts in the ten folders above. Still planned — Phase 3: cross-cutting (litigation hold, 30(b)(6) notice, subpoenas, settlement, mediation, fee petitions, post-trial motions) + field guide. Phase 4: specialized topics.
+**Phase 2B and the rest of Phase 2C (delivered 2026-09-24, coverage Wave 3):** 12 regulatory, privacy and ethics prompts and 35 specialty-practice prompts in the ten folders above. 
+
+**Phase 3 and Phase 4 (delivered 2026-09-24, coverage audit pass):** 10 cross-cutting discovery and litigation prompts plus [`field_guide.md`](field_guide.md), and 10 specialized prompts (administrative law, securities disclosure, antitrust merger clearance, ADA accommodation, class certification, arbitration demand, environmental permits, government-contract disputes, Stark/Anti-Kickback, election-law compliance), filed in the existing folders above. The roadmap is now fully built.
 
 ## How These Prompts Are Built
 
@@ -272,7 +285,7 @@ Every prompt includes:
 | "Relocation / move-away analysis" | `custody/legal_relocation_move_away_analysis.md` |
 | "Prep for / respond to a custody evaluation" | `custody/legal_custody_evaluation_prep_and_response.md` |
 | "Respond to a GAL report" | `custody/legal_guardian_ad_litem_report_response.md` |
-| "Grandparent / third-party custody or visitation" | `custody/legal_grandparent_third_party_custody_visitation_analysis.md` |
+| "Grandparent / third-party custody or visitation" | `custody/legal_third_party_custody_visitation_analysis.md` |
 | "Supervised visitation / safety plan" | `custody/legal_supervised_visitation_and_safety_plan.md` |
 | "Enforce parenting time / contempt" | `custody/legal_parenting_time_enforcement_and_contempt_motion.md` |
 | "Custody trial prep / factor proof plan" | `custody/legal_custody_trial_prep_and_factor_proof_plan.md` |
@@ -322,7 +335,7 @@ Every prompt includes:
 | "Preserve threat evidence + digital-safety steps" | `personal-self-advocacy/harassment-stalking/legalprep_digital_safety_threat_evidence_organizer.md` |
 | "Draft my own cyberharassment report to a platform" | `personal-self-advocacy/harassment-stalking/legalprep_cyberharassment_platform_report_preparer.md` |
 | "Document a false statement made about me" | `personal-self-advocacy/defamation-reputation/legalprep_defamation_concern_documentation_organizer.md` |
-| "Draft my own content-removal report to a platform" | `personal-self-advocacy/defamation-reputation/legalprep_online_content_removal_platform_report_preparer.md` |
+| "Draft my own content-removal report to a platform" | `personal-self-advocacy/defamation-reputation/legalprep_content_removal_platform_report.md` |
 | "Draft my own correction / retraction request" | `personal-self-advocacy/defamation-reputation/legalprep_correction_retraction_request_preparer.md` |
 | "Log the concrete harm to my reputation" | `personal-self-advocacy/defamation-reputation/legalprep_reputation_harm_impact_log.md` |
 | "Document my stolen / infringed work" | `personal-self-advocacy/ip-theft/legalprep_ip_infringement_documentation_organizer.md` |
@@ -335,9 +348,9 @@ Every prompt includes:
 | "Document a tenant issue (repairs / deposit / notice)" | `personal-self-advocacy/housing-landlord-tenant/legalprep_tenant_issue_documentation_organizer.md` |
 | "Draft my own response to my landlord" | `personal-self-advocacy/housing-landlord-tenant/legalprep_landlord_notice_response_preparer.md` |
 | "Draft my own security-deposit dispute letter" | `personal-self-advocacy/housing-landlord-tenant/legalprep_security_deposit_dispute_preparer.md` |
-| "Document identity theft + prepare my reports" | `personal-self-advocacy/identity-theft/legalprep_identity_theft_documentation_and_report_preparer.md` |
+| "Document identity theft + prepare my reports" | `personal-self-advocacy/identity-theft/legalprep_identity_theft_report_preparer.md` |
 | "Draft my own fraud-dispute letters (bureau / bank)" | `personal-self-advocacy/identity-theft/legalprep_fraud_dispute_narrative_preparer.md` |
 | "Draft my own debt-validation / dispute letter" | `personal-self-advocacy/debt-collection/legalprep_debt_validation_dispute_letter_preparer.md` |
 | "Log collection contacts I find harassing" | `personal-self-advocacy/debt-collection/legalprep_collection_harassment_documentation_log.md` |
 | "Organize my small-claims case (facts / evidence / amount)" | `personal-self-advocacy/small-claims/legalprep_small_claims_case_preparation_organizer.md` |
-| "Prepare for my small-claims hearing (practice testimony)" | `personal-self-advocacy/small-claims/legalprep_small_claims_hearing_preparation_and_testimony_practice.md` |
+| "Prepare for my small-claims hearing (practice testimony)" | `personal-self-advocacy/small-claims/legalprep_small_claims_hearing_and_testimony.md` |

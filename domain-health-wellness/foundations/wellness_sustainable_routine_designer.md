@@ -15,6 +15,9 @@ tags:
   - consistency
   - recovery
   - minimum-viable-week
+  - keep-falling-off
+  - no-spare-time
+  - irregular-schedule
 updated: "2026-09-24"
 related_prompts:
   - domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md
@@ -31,7 +34,8 @@ a minimum-viable version that still runs in a bad week.
 > **Readiness gate.** Start from a Readiness Profile
 > (`foundations/wellness_readiness_and_red_flag_screen.md`). No profile → ask its
 > blocks 1–8 first. URGENT-CARE-NOW, CLINICIAN-FIRST, or OUT-OF-SCOPE → stop and
-> restate the route. GO-WITH-LIMITS → every limit binds this routine.
+> restate the route. An urgent result means contacting the local emergency number now
+> (e.g. 911 in the US). GO-WITH-LIMITS → every limit binds this routine.
 
 **When to Use:**
 - You have tried to "get healthy" all at once and it collapsed by week three.

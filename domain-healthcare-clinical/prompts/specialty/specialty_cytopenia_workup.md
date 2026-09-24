@@ -14,14 +14,43 @@ tags:
   - thrombocytopenia
   - neutropenia
   - specialty-assessment
+  - low-platelets
+  - low-white-count
+  - low-blood-counts
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/interpretation/interp_cbc_differential.md
+  - domain-healthcare-clinical/prompts/reasoning/workup_anemia.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_anticoagulation_decision_support.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
 Take a patient with one or more unexplained cytopenias to a mechanism-based diagnosis and plan, the way a hematology consultant does: verify that the cytopenia is real, identify the hematologic emergencies that need action today, classify by production vs destruction vs sequestration vs dilution, order a targeted rather than shotgun workup, decide whether bone marrow examination is needed, and write the treatment and monitoring.
 
-Distinct from [`interp_cbc_differential.md`](../interpretation/interp_cbc_differential.md), which reads a single CBC and names the pattern, and from [`workup_anemia.md`](../reasoning/workup_anemia.md), which works up isolated anemia. This prompt is the consultant-level workup of platelet and neutrophil cytopenias and of any multilineage cytopenia.
+Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A bleeding, febrile neutropenic or unstable patient is escalated now, not after this output.
+
+## When to Use
+
+- Unexplained low platelets or low neutrophils, alone or with anemia (bi- or pancytopenia), on an inpatient or outpatient CBC.
+- A falling platelet count in a hospitalized patient where HIT, TTP, DIC or a drug cause has to be sorted out today.
+- Deciding whether a patient needs a bone marrow biopsy, and what to send with it.
+
+**Not this prompt if:**
+- You need a single CBC read and its pattern named → [`interp_cbc_differential.md`](../interpretation/interp_cbc_differential.md).
+- The only abnormality is anemia → [`workup_anemia.md`](../reasoning/workup_anemia.md). This prompt is the consultant-level workup of platelet and neutrophil cytopenias and of any multilineage cytopenia.
 
 ## Inputs
 
@@ -34,11 +63,12 @@ Distinct from [`interp_cbc_differential.md`](../interpretation/interp_cbc_differ
 
 ## Role
 
-Senior attending hematologist on consult service writing a note to the primary team. Fast on emergencies, disciplined on workup, and explicit about when a marrow is and is not needed.
+Senior attending hematologist on consult service supporting the treating (primary) team with a consult note. Fast on emergencies, disciplined on workup, and explicit about when a marrow is and is not needed.
 
 ## Reasoning Steps
 
 1. **Verify the cytopenia.**
+   - **Stop and escalate now if:** active or intracranial bleeding with severe thrombocytopenia, fever with ANC <0.5, new neurologic change or renal failure with schistocytes, blasts or promyelocytes on the smear, or hemodynamic instability — go directly to the step 2 actions and call hematology; verification continues in parallel.
    - Repeat the count. Review the smear yourself.
    - **Pseudothrombocytopenia:** EDTA-dependent platelet clumping → platelet clumps on smear; repeat in citrate or heparin tube. No workup, no transfusion.
    - **Hemodilution:** after large-volume resuscitation or in late pregnancy (gestational thrombocytopenia, typically >70–80 × 10⁹/L, third trimester, resolves postpartum).
@@ -52,7 +82,7 @@ Senior attending hematologist on consult service writing a note to the primary t
    - **Acute leukemia / APL:** circulating blasts, or promyelocytes with Auer rods ± DIC (low fibrinogen, high INR) → APL is a medical emergency: start ATRA on suspicion before genetic confirmation, aggressive cryoprecipitate/platelet/plasma support (fibrinogen >150 mg/dL, platelets >30–50 × 10⁹/L), urgent hematology.
    - **DIC:** consumptive coagulopathy in sepsis, trauma, obstetric catastrophe, malignancy → treat the driver; transfuse to bleeding/procedure thresholds. ISTH DIC score if needed.
    - **HLH:** persistent fever, splenomegaly, bi/pancytopenia, ferritin very high (often >10,000 ng/mL is striking), hypertriglyceridemia, low fibrinogen, transaminitis → HScore / HLH-2004 criteria, soluble IL-2 receptor, marrow; hematology urgently.
-   - **Severe aplastic anemia:** pancytopenia with low retic, empty marrow — isolate, irradiated leukoreduced products, avoid family-member donors (future transplant), refer to a transplant center.
+   - **Severe aplastic anemia:** pancytopenia with low retic, empty marrow — isolate, avoid transfusions from family members (risk of sensitization against a potential sibling HSCT donor); use irradiated, leukoreduced products; refer to a transplant center.
 
 3. **Classify by mechanism.**
    - **Decreased production:** nutritional (B12, folate, copper — especially after bariatric surgery or with zinc excess), alcohol, drugs, viral (HIV, HCV, parvovirus B19, EBV, CMV), marrow failure (aplastic anemia, PNH), clonal (MDS, CCUS), infiltration (leukemia, lymphoma, myeloma, metastatic carcinoma, myelofibrosis, granulomatous disease).
@@ -121,6 +151,22 @@ MONITORING: [CBC frequency, response criteria, follow-up]
 PITFALLS TO AVOID:
 - [ ]
 ```
+
+## Verification
+
+- [ ] Pseudothrombocytopenia, hemodilution and Duffy-null associated neutrophil count were considered, and the cytopenia was confirmed on repeat count and smear before any workup.
+- [ ] Every emergency in step 2 is marked present or excluded, with PLASMIC and 4Ts itemized from the actual inputs.
+- [ ] Each ordered test maps to a stated mechanism or pattern, and the bone marrow decision is explicit with its reason.
+- [ ] Transfusion and anticoagulation thresholds name the society or protocol applied; antimicrobial and anticoagulant doses are adjusted for weight, renal and hepatic function — confirm doses, renal adjustment and thresholds against the current guideline and local formulary.
+- [ ] Drug causes are checked against start dates, and the output states which result would change the leading diagnosis.
+
+## False-Positive Prevention
+
+- **A drug blamed by association.** A drug started long before a stable count, or after the count had already fallen, is an unlikely cause; match onset to exposure before stopping a needed medication.
+- **HIT pursued despite a low 4Ts score.** A 4Ts of 0–3 makes HIT very unlikely; sending PF4 antibodies and switching anticoagulant anyway invites false-positive results and harm from non-heparin agents.
+- **A positive PF4 ELISA read as HIT.** Low-OD positives are common after surgery and heparin exposure; interpret the optical density and confirm with a functional assay when pretest probability is not high.
+- **A mild, stable cytopenia sent straight to marrow.** Mild isolated thrombocytopenia or neutropenia that is stable over years with a normal smear usually needs trend and surveillance, not biopsy.
+- **Consumptive, splenic or marrow causes labeled ITP.** ITP is a diagnosis of exclusion; sepsis, liver disease and hypersplenism explain many low platelets in hospitalized patients.
 
 ## Worked Example
 

@@ -16,6 +16,9 @@ tags:
   - dilemmas
   - self-study
   - humanities
+  - right-or-wrong
+  - moral-gray-area
+  - why-people-disagree
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, dialectical, comparative]

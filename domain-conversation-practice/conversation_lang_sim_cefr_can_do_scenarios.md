@@ -15,6 +15,8 @@ tags:
   - speaking-assessment
   - role-play
   - self-assessment
+  - my-real-level
+  - check-my-speaking
 updated: "2026-09-24"
 related_prompts:
   - domain-conversation-practice/conversation_lang_sim_master_template.md

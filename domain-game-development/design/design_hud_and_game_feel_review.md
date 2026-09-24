@@ -15,6 +15,9 @@ tags:
   - juice
   - accessibility
   - ux-review
+  - feels-floaty
+  - cluttered-screen
+  - laggy-controls
 updated: "2026-09-24"
 related_prompts:
   - domain-frontend-development/ux-research/frontend_ux_heuristic_evaluation.md

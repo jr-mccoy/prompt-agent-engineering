@@ -15,12 +15,46 @@ tags:
   - antimicrobial-resistance
   - bacteremia
   - interpretation
+  - bacteria-in-blood
+  - which-antibiotic
+  - drug-resistant-infection
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/interpretation/interp_urinalysis_microscopy.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md
+  - domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drug_grid.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Interpret a specific patient's microbiology result — specimen, Gram stain, rapid molecular panel, organism ID, and susceptibility report — and commit to whether it is real, what resistance phenotype it represents, which agent reaches the site, and the definitive regimen with dose, route, duration, and bundle actions. Distinct from `medicine_antibiotic_stewardship_advisor.md` (program-level empiric selection, de-escalation, and duration policy) and from the learner drill `study_microbiology_bug_drug_grid.md` in `domain-medical-education/` (teaches organism–drug patterns); this prompt reads one report for one patient.
+Interpret a specific patient's microbiology result — specimen, Gram stain, rapid molecular panel, organism ID, and susceptibility report — and commit to whether it is real, what resistance phenotype it represents, which agent reaches the site, and the definitive regimen with dose, route, duration, and bundle actions.
+
+Decision support for a licensed clinician: confirm antimicrobial doses, renal/hepatic adjustment and breakpoints against the current guideline, the lab's reporting standard, and local formulary. A patient in septic shock is resuscitated and escalated now, not after this output.
+
+## When to Use
+
+- A culture, Gram stain, or rapid molecular result for one patient needs a real-vs-contaminant call.
+- Susceptibilities are back and empirical therapy must be narrowed, switched, or stopped.
+- A resistance phenotype (MRSA, ESBL, AmpC, CRE, VRE) needs an agent that reaches the site.
+- A bacteremia or candidemia needs its mandatory bundle and a duration anchor.
+
+**Not this prompt if:**
+
+- The question is program-level empiric selection, de-escalation, or duration policy → `domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md`; this prompt reads one report for one patient.
+- A learner is studying organism–drug patterns → `domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drug_grid.md`.
+- The vancomycin dose itself is being calculated → `domain-healthcare-clinical/prompts/pharmacology/pharm_vancomycin_auc_dosing.md`.
 
 ## Inputs
 
@@ -32,11 +66,11 @@ Interpret a specific patient's microbiology result — specimen, Gram stain, rap
 
 ## Role
 
-Senior infectious diseases attending reviewing micro results on rounds.
+Senior infectious diseases attending supporting the treating clinician; reviews micro results on rounds.
 
 ## Reasoning Steps
 
-1. **Specimen quality and source.** Sputum with >25 PMNs and <10 squamous epithelial cells per low-power field is a quality sample. Swabs of chronic wounds grow colonizers; tissue or bone biopsy defines osteomyelitis pathogens. Catheter urine grows biofilm organisms. Cultures drawn after antibiotics can be falsely negative.
+1. **Stop and escalate first if:** septic shock or hypotension, bacteremia in a deteriorating patient, S. aureus bacteremia or candidemia, a carbapenemase result, or suspected meningitis, endocarditis, or necrotizing infection — make therapy active now, pursue source control, and involve ID. Then **specimen quality and source.** Sputum with >25 PMNs and <10 squamous epithelial cells per low-power field is a quality sample. Swabs of chronic wounds grow colonizers; tissue or bone biopsy defines osteomyelitis pathogens. Catheter urine grows biofilm organisms. Cultures drawn after antibiotics can be falsely negative.
 
 2. **Pathogen or contaminant/colonizer.**
    - **Blood:** S. aureus, S. lugdunensis, S. pneumoniae, beta-hemolytic streptococci, Enterobacterales, Pseudomonas, and Candida are never contaminants. Coagulase-negative staphylococci, Cutibacterium, Corynebacterium, Bacillus (non-anthracis), and Micrococcus in 1 of ≥2 sets are usually contaminants — unless a prosthetic valve, device, or line with the same organism in multiple sets.
@@ -85,6 +119,22 @@ BUNDLE / SOURCE ACTIONS:
 - [repeat cultures, echo, imaging, line removal, consults]
 ```
 
+## Verification
+
+- [ ] Specimen type and collection method stated — or flagged as not stated — before an organism is called real.
+- [ ] Real vs contaminant call traced to the organism, number of sets positive, time to positivity, and clinical syndrome.
+- [ ] Breakpoint standard (CLSI or EUCAST) named, intrinsic resistance checked, and every "S" agent screened for site penetration.
+- [ ] Doses adjusted to CrCl and weight and checked against the current guideline and local formulary; allergy reaction type considered.
+- [ ] Mandatory bundle actions listed for the organism (S. aureus, Candida, S. gallolyticus, E. faecalis).
+- [ ] Duration anchored to the first active dose or first negative culture, with what would extend it.
+
+## False-Positive Prevention
+
+- **Urine assumed to be the source of a bacteremia** because a urine culture is positive, without urinary symptoms or pyuria — look for another source.
+- **A rapid resistance marker attributed to the wrong organism in a mixed culture** (e.g., mecA from a coagulase-negative staphylococcus assigned to S. aureus).
+- **Carbapenem non-susceptibility assumed to be a carbapenemase** without a mechanism test; porin loss with ESBL/AmpC changes the agent choice.
+- **A colonization screen treated as the pathogen.** A positive MRSA nares swab or rectal ESBL screen does not identify the organism causing this infection.
+
 ## Worked Example
 
 **Input:** 72 y/o F, 60 kg, admitted with fever 38.9, right flank pain, rigors. Started ceftriaxone 1 g IV daily 36 hours ago; still febrile, BP 104/62. Cr 1.1 (CrCl ~40 mL/min). No allergies. Results: blood cultures 2 of 2 sets gram-negative rods, time to positivity 11 h; urine culture >100,000 CFU/mL E. coli. Susceptibilities (CLSI) for both isolates: ampicillin R, ampicillin-sulbactam R, cefazolin R, ceftriaxone R (MIC ≥4), cefepime SDD, piperacillin-tazobactam S (MIC 8), ertapenem S, meropenem S (MIC ≤0.25), ciprofloxacin R, TMP-SMX S, gentamicin S, nitrofurantoin S.
@@ -92,7 +142,7 @@ BUNDLE / SOURCE ACTIONS:
 **Output:**
 
 ```
-SPECIMEN: Two of two blood culture sets + concordant urine isolate — clean-catch, colony count diagnostic.
+SPECIMEN: Two of two blood culture sets + concordant urine isolate — urine collection method not stated (clean-catch vs catheter); colony count significant, and concordance with blood confirms the source.
 ORGANISM: E. coli — REAL (bacteremic pyelonephritis).
 RESISTANCE PHENOTYPE: ESBL phenotype (ceftriaxone R, cefepime SDD). Explains persistent fever on ceftriaxone.
 AGENTS THAT REACH THE SITE AND ARE ACTIVE: meropenem, ertapenem, TMP-SMX, gentamicin.

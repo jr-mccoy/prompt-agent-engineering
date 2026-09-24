@@ -16,6 +16,7 @@ tags:
   - real-estate-tax
   - qualified-intermediary
   - boot
+  - selling-rental-property
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, procedural, systematic]
@@ -48,7 +49,7 @@ related_prompts:
 **Distinct from:**
 - `domain-finance/tax-planning/finance_capital_gains_harvesting_analysis.md` and `finance_multi_year_tax_projection.md` — whether to realize gain and the multi-year tax effect; this prompt tests legal qualification of the exchange.
 - `domain-legal/divorce/legal_divorce_tax_consequences_analysis.md` — transfers between spouses incident to divorce, which follow different rules.
-- A future `domain-legal/real-estate/` purchase-agreement prompt — the underlying conveyance terms; here only the exchange-relevant clauses are reviewed.
+- `domain-legal/real-estate/legal_purchase_agreement_redline.md` — the underlying conveyance terms (including the PSA's 1031 cooperation clause); here only the exchange-relevant clauses are reviewed.
 
 **Audience:** Tax and real-estate counsel advising investors, funds, and operating businesses.
 

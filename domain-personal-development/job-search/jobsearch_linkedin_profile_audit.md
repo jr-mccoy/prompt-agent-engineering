@@ -16,6 +16,9 @@ tags:
   - recruiter-search
   - personal-brand
   - candidate
+  - recruiters-ignore-me
+  - not-getting-noticed
+  - headline-rewrite
 updated: "2026-09-24"
 related_prompts:
   - domain-personal-development/career-transformation/career_positioning_statement.md

@@ -18,6 +18,7 @@ tags:
   - options
   - estoppel
   - due-diligence
+  - renewal-deadline
 updated: "2026-09-24"
 reasoning:
   styles: [systematic, extractive, evidential]

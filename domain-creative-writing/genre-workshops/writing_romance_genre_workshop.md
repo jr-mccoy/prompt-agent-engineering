@@ -16,6 +16,9 @@ tags:
   - genre
   - relationship-arc
   - tropes
+  - love-story
+  - happily-ever-after
+  - no-chemistry
 updated: "2026-09-24"
 related_prompts:
   - domain-creative-writing/genre-workshops/writing_genre_specific_guidance.md

@@ -18,6 +18,7 @@ tags:
   - gdpr
   - lawful-basis
   - risk-assessment
+  - new-product-launch
 updated: "2026-09-24"
 reasoning:
   styles: [analytic, systematic, evaluative]

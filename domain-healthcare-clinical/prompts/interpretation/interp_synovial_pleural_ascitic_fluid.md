@@ -15,12 +15,45 @@ tags:
   - hepatology
   - body-fluids
   - interpretation
+  - hot-swollen-joint
+  - fluid-on-lung
+  - belly-fluid
+  - tap-results
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_joint_pain_arthritis.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Read a synovial, pleural, or ascitic fluid analysis and produce a committed classification and action: septic vs crystal vs inflammatory joint; transudate vs exudate and complicated vs uncomplicated parapneumonic effusion; portal-hypertensive vs non-portal ascites and SBP vs secondary peritonitis. Distinct from `workup_joint_pain_arthritis.md`, which works up joint pain from history and exam; this prompt reads the aspirate once it is back.
+Read a synovial, pleural, or ascitic fluid analysis and produce a committed classification and action: septic vs crystal vs inflammatory joint; transudate vs exudate and complicated vs uncomplicated parapneumonic effusion; portal-hypertensive vs non-portal ascites and SBP vs secondary peritonitis.
+
+Decision support for a licensed clinician: confirm antibiotic and albumin doses, renal/hepatic adjustment, and diagnostic thresholds against the current guideline and local formulary. A septic or unstable patient is escalated now, not after this output.
+
+## When to Use
+
+- A joint aspirate, pleural tap, or paracentesis result is back and needs a committed classification and action.
+- Deciding septic vs crystal vs inflammatory arthritis, transudate vs exudate, complicated vs uncomplicated parapneumonic effusion, or SBP vs secondary peritonitis.
+- Checking whether a borderline Light's or SAAG result is being misclassified (diuretics, mismatched serum sample).
+
+**Not this prompt if:**
+- The joint has not been tapped yet and the task is working up joint pain from history and exam — use `domain-healthcare-clinical/prompts/reasoning/workup_joint_pain_arthritis.md`; this prompt reads the aspirate once it is back.
+- The fluid is cerebrospinal — use `domain-healthcare-clinical/prompts/interpretation/interp_csf.md`.
+- The question is narrowing antibiotics on a final culture and susceptibility — use `domain-healthcare-clinical/prompts/interpretation/interp_microbiology_culture_sensitivity.md`.
 
 ## Inputs
 
@@ -32,9 +65,11 @@ Read a synovial, pleural, or ascitic fluid analysis and produce a committed clas
 
 ## Role
 
-Senior internal medicine attending (with rheumatology, pulmonary, and hepatology fluency) reading the tap results.
+Senior internal medicine attending (with rheumatology, pulmonary, and hepatology fluency) supporting the treating clinician; reads the tap results and commits to a classification and action they can verify.
 
 ## Reasoning Steps
+
+**Stop and escalate first (any fluid):** suspected septic joint (native or prosthetic) — same-day orthopedics for drainage, antibiotics after aspiration; SBP or suspected secondary peritonitis (polymicrobial, Runyon criteria) — antibiotics now, surgical review for perforation; empyema or frank pus — chest tube and antibiotics today; any patient meeting sepsis criteria — sepsis pathway before the rest of this read.
 
 ### Synovial fluid
 
@@ -75,6 +110,22 @@ ACTION:
 - [pending tests to chase]
 - [repeat tap or imaging]
 ```
+
+## Verification
+
+- [ ] Septic joint, SBP/secondary peritonitis, and empyema addressed before routine classification.
+- [ ] Every classification traced to a named value with its paired serum value, same-day where required (Light's, SAAG).
+- [ ] Each threshold attributed to its named criterion (Light's, Runyon, SAAG ≥1.1, PMN ≥250) and adjusted for context (prosthetic joint, diuretics, hemorrhagic fluid).
+- [ ] Antibiotic and albumin doses checked against weight and renal function and the current guideline or local protocol.
+- [ ] Pending tests (culture, cytology, ADA) listed with the decision each would change.
+- [ ] States what would change the conclusion (culture growth, failed drainage, repeat tap).
+
+## False-Positive Prevention
+
+- **Transudate called exudate on diuretics:** check the albumin or protein gradient before chasing a malignant or infective cause.
+- **Crystals taken as the whole answer** when septic and crystal arthritis coexist.
+- **Bloody tap over-called as SBP** without correcting PMN for RBCs (1 PMN per 250 RBCs).
+- **Spurious pleural pH** from air, lidocaine, or a non-blood-gas analyzer leading to an unnecessary chest tube.
 
 ## Worked Example
 

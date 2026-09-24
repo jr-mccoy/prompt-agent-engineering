@@ -15,6 +15,7 @@ tags:
   - online-safety
   - sextortion
   - personal-defense
+  - worried-about-my-teen
 updated: "2026-09-24"
 reasoning:
   styles: [protective, procedural, evidential]
@@ -35,7 +36,16 @@ related_prompts:
 
 # Youth Online Manipulation Guide
 
-**Objective:** Help an adult who cares for a young person — or a young person themselves — recognize the **documented patterns** by which minors are manipulated online, and respond in the order that protects the child. Three patterns account for most of what child-protection services see: **grooming**, where an adult builds trust, secrecy, and dependence over time; **coercive escalation**, where a first small concession becomes leverage for the next; and **financially motivated sextortion**, where an image is obtained, often within hours, and then used to demand money under threat of exposure. The third is frequently run by organized groups at scale, moves very fast, and has been linked to young people harming themselves — which is why speed and reassurance come before everything else in this prompt.
+> **Disclaimer — read before use.** This is an educational guide to recognizing
+> warning signs. It is **not** a child-protection service, law enforcement, or legal
+> advice, and it does not replace them. **If a child is in immediate danger, contact
+> emergency services now.** Reporting routes and services differ by country; confirm
+> current contact details from the official source.
+>
+> **Review status:** reviewed by AI only (2026-09-24); **not yet reviewed by a human
+> child-safety professional.**
+
+**Objective:** Help an adult who cares for a young person — or a young person themselves — recognize the **documented patterns** by which minors are manipulated online, and respond in the order that protects the child. Three patterns recur in child-protection guidance: **grooming**, where an adult builds trust, secrecy, and dependence over time; **coercive escalation**, where a first small concession becomes leverage for the next; and **financially motivated sextortion**, where an image is obtained, often within hours, and then used to demand money under threat of exposure. The third is frequently run by organized groups at scale, moves very fast, and has been linked to young people harming themselves — which is why speed and reassurance come before everything else in this prompt.
 
 This prompt works at the level of **recognition**. It names patterns as child-protection guidance publicly describes them so that adults can notice them; it does not describe methods in operational detail, and it does not investigate. Everything beyond recognition — assessment, evidence handling, investigation, and support — belongs to child-protection professionals, the platforms, and the police, and this prompt's job is to get the situation to them quickly and in the right order.
 
@@ -43,11 +53,13 @@ It also carries the ordinary-explanation discipline the whole domain runs on. Se
 
 > **Safety — read first.**
 > - **If a child is in immediate danger, or has said anything about harming themselves, contact emergency services now.** Stay with them. Do not work through a prompt.
-> - **If a young person is being threatened with the release of an image: do not pay, stop replying to the person threatening, and do not delete the account or conversation yet.** Payment rarely ends demands and often increases them.
-> - **Do not save, screenshot, forward, or upload any sexual image of a minor — including to show the police, a school, or an AI tool.** Record usernames, profile links, and the text of messages instead, and let the platform and police handle any images.
-> - Report to the platform and to your country's official child-exploitation reporting service and police. Many countries also have an official image-removal service for minors. **Look each up from a government or police website — do not rely on a service name, number, or address stated from memory by an AI, including this one.**
+> - **If a young person is being threatened with the release of an image: do not pay, stop replying to the person threatening, and do not delete the account or conversation yet.** Payment rarely ends demands and often increases them. Block after the details are recorded and the report is made.
+> - **Do not save, screenshot, forward, or upload any sexual image of a minor — including to show the police, a school, or an AI tool.** Record usernames, profile links, and the text of messages instead, and let the platform and police handle any images. If a screenshot would capture a sexual image, don't take it — write the text down instead.
+> - Report to the platform and to your country's official child-exploitation reporting service and police. In the US: the NCMEC CyberTipline and local police. For removal: NCMEC's Take It Down, which works from a digital fingerprint made on your own device, so the image itself is not uploaded. Outside the US, use the national child-protection hotline or police. Anyone charging to remove images is likely another scam. **Get every phone number, web address, and contact detail from a government or police website — do not rely on a number or address stated from memory by an AI, including this one.**
 > - **Tell the young person clearly that they are not in trouble.** This is the single most protective sentence available, and the people running these schemes depend on the child believing otherwise.
 > - This prompt is not a risk assessment and cannot tell you how serious a situation is. That requires trained people.
+
+> **If you are the young person.** You are not in trouble. Stop replying, don't pay, don't send anything else, don't delete the chat or your account yet, and tell a trusted adult today — a parent, relative, teacher or school counselor. You don't have to handle this alone.
 
 **When to use:**
 - You have noticed something about a young person's online contact that worries you and want to sort what you have seen from what you fear.
@@ -60,6 +72,8 @@ It also carries the ordinary-explanation discipline the whole domain runs on. Se
 - You want to set up a first account or rules for a younger child — use `domain-parenting/caregiver-facing/ages-9-12/parenting_social_media_first_account_protocol.md`.
 - You want to talk with a teenager about relationships, consent, and image-sharing in general — use `domain-parenting/caregiver-facing/ages-13-18/parenting_teen_dating_consent_conversation.md`.
 - The concern is an adult's own experience of manipulation — use `psyops_manipulation_recognition_personal.md`.
+- The concern is that a young person is being drawn into extremist beliefs or groups — use `psyops_concern_for_someone_radicalizing.md`.
+- Images are being shared between young people of similar age — the same no-handling rule applies (do not view, save, or forward them); route it to the school safeguarding lead, and do not treat the child as an offender.
 
 **Audience:** Parents, caregivers, educators, youth workers, and young people. No background assumed. Written for someone frightened.
 
@@ -74,6 +88,8 @@ It also carries the ordinary-explanation discipline the whole domain runs on. Se
 5. **The young person's state.** How they seem right now — frightened, withdrawn, panicked, talking about hopelessness.
 6. **Ordinary context.** Recent changes in friendships, school, family, or mood that could explain what you are seeing.
 
+Refer to the young person by role and age range only; don't enter their name, school, location or account names. Keep the other person's usernames in your own notes for the report, not here.
+
 ---
 
 ## Constraints
@@ -82,14 +98,15 @@ It also carries the ordinary-explanation discipline the whole domain runs on. Se
 - Put **immediate safety and self-harm risk first**, before any pattern analysis.
 - For any threat involving images: **no payment, stop replying, preserve account details, report** — in that order.
 - Instruct the user **never to handle sexual images of a minor**, and to record identifiers and message text instead.
-- Route to **platform reporting, police, and official child-protection services**, with every service looked up by the user from an official source.
+- Route to **platform reporting, police, and official child-protection services**, naming only the official channels listed in the safety block, with every contact detail looked up by the user from an official source.
 - Make **"you are not in trouble"** an explicit, early instruction for whatever conversation follows.
 - Describe patterns at **recognition level**, as public child-safety guidance does.
 - Run the **ordinary-explanation reading**: what normal development or ordinary friendship would produce the same observations.
 - Close on **a next step the user chooses**, from a short list of safe options.
 
 ### Must Not
-- State a hotline number, URL, reporting service, or organization name from memory.
+- State a hotline number or URL from memory, or name any reporting service or organization beyond the official channels listed in the safety block.
+- Ask for, or accept, a description of any image's content. Record only that an image was requested or sent, and when.
 - Describe grooming or sextortion methods in operational detail, or produce anything usable as a script for approaching a child.
 - Advise confronting, baiting, impersonating, or investigating the other person — including posing as the child.
 - Advise deleting the conversation or account before evidence has been recorded and reports made.
@@ -117,13 +134,15 @@ Check observations against the patterns child-protection guidance describes: an 
 Write the ordinary account: a new friend, a first relationship, a peer conflict, normal privacy-seeking, a hard stretch at school. Note which observations it explains and which it does not. Leave the question open if it is open.
 
 ### Step 6 — If there is a threat: act in order
-No payment. Stop replying. Record usernames, profile links, and message text without handling any images. Report to the platform, then to the police and your country's official child-exploitation reporting service, looked up from an official source. Ask the service about image removal.
+No payment. Stop replying. Record usernames, profile links, and message text without handling any images. Report to the platform, then to the police and your country's official child-exploitation reporting service (in the US, the NCMEC CyberTipline), with contact details looked up from an official source. For image removal, use the official service (in the US, NCMEC's Take It Down); anyone charging to remove images is likely another scam. Block after the details are recorded and the report is made.
 
 ### Step 7 — Plan the conversation around safety, not interrogation
 Decide when and how to talk: somewhere private, without devices being confiscated as the opening move, beginning with "you are not in trouble." For conversation structure beyond that, use the `domain-parenting/` prompts linked above.
 
 ### Step 8 — Choose a next step
-From: talk with the young person; contact the school safeguarding lead; report to the platform; contact police or the official reporting service; speak to a doctor or counselor about the young person's wellbeing; keep watching calmly. The user chooses.
+From: talk with the young person; tell a trusted adult (if you are the young person); contact the school safeguarding lead; report to the platform; contact police or the official reporting service; speak to a doctor or counselor about the young person's wellbeing; keep watching calmly. The user chooses.
+
+If you work with children, your safeguarding policy and local law may require you to report to your designated safeguarding lead or the authorities — that step is not optional. If Step 2 found a threat, or the young person has disclosed, reporting is the recommended step and "keep watching calmly" is not offered.
 
 ---
 
@@ -172,8 +191,9 @@ Danger now or talk of self-harm? [yes → emergency services now, stay with them
 2. Stop replying.
 3. Record usernames, profile links, message text — **no images handled.**
 4. Report to the platform.
-5. Report to police and the official child-exploitation reporting service — looked up from an official source by me.
-6. Ask about official image removal.
+5. Report to police and the official child-exploitation reporting service (US: NCMEC CyberTipline) — contact details looked up from an official source by me.
+6. Official image removal (US: NCMEC's Take It Down — fingerprint made on my own device; the image is not uploaded). Anyone charging to remove images is likely another scam.
+7. Block — only after details are recorded and the report is made.
 
 ## The conversation
 Opening line: "You are not in trouble."
@@ -181,7 +201,8 @@ Where and when: [...]
 Further structure: domain-parenting/ prompts
 
 ## My next step (I choose)
-[Talk with them / school safeguarding lead / platform report / police or reporting service / doctor or counselor / keep watching calmly]
+[Talk with them / tell a trusted adult (young person) / school safeguarding lead / platform report / police or reporting service / doctor or counselor / keep watching calmly — not offered if there was a threat or a disclosure]
+Mandatory reporting duty (if I work with children): [designated safeguarding lead / authorities]
 ```
 
 ---
@@ -191,10 +212,14 @@ Further structure: domain-parenting/ prompts
 - [ ] Immediate danger and self-harm are checked before anything else.
 - [ ] An active threat triggers the ordered response: no payment, stop replying, record identifiers, report.
 - [ ] The instruction never to handle sexual images of a minor is explicit.
-- [ ] Every reporting route is to be looked up by the user from an official source.
+- [ ] Every reporting route's contact details are to be looked up by the user from an official source.
 - [ ] "You are not in trouble" is an explicit instruction for the conversation.
+- [ ] A young person using this prompt is told directly: not in trouble, stop replying, don't pay, send nothing else, tell a trusted adult today — and "tell a trusted adult" is a Step 8 option.
+- [ ] Anyone who works with children is told that safeguarding policy or law may require a report; after a threat or a disclosure, reporting is recommended and "keep watching" is not offered.
+- [ ] No image's content was asked for, accepted, or described — only that an image was requested or sent, and when; no screenshot that would capture a sexual image is advised.
+- [ ] The young person appears by role and age range only (no name, school, location, or account names), and the other person's usernames stay in the user's own notes.
 - [ ] Observations are separated from fears, and observed patterns from inferred ones.
 - [ ] An ordinary-explanation reading is included.
 - [ ] The output closes on a next step the user chooses.
-- [ ] No hotline number, URL, or service name was stated from memory, and no operational method detail or approach script appears.
+- [ ] No hotline number or URL was stated from memory, no service was named beyond the official channels in the safety block, and no operational method detail or approach script appears.
 - [ ] No advice to confront, bait, impersonate, investigate, pay, or delete evidence, and no blame of the young person.

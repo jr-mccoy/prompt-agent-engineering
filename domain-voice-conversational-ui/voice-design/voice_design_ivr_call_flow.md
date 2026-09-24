@@ -17,6 +17,9 @@ tags:
   - authentication
   - containment
   - voice-design
+  - phone-menu
+  - callers-stuck
+  - route-callers
 updated: "2026-09-24"
 related_prompts:
   - domain-voice-conversational-ui/dialog-architecture/dialog_architecture_state_machine_design.md

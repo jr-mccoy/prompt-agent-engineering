@@ -16,6 +16,9 @@ tags:
   - filmmaking
   - scheduling
   - content-production
+  - plan-a-shoot
+  - brand-video
+  - one-day-shoot
 updated: "2026-09-24"
 related_prompts:
   - domain-image-generation/STORYBOARD_WORKFLOW.md

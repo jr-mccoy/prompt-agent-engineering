@@ -15,6 +15,9 @@ tags:
   - raci
   - office-move
   - event-planning
+  - fixed-deadline
+  - who-does-what
+  - nothing-slips
 updated: "2026-09-24"
 related_prompts:
   - domain-operations/supply-chain-procurement/ops_rfp_procurement_package.md

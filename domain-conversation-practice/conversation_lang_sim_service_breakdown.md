@@ -15,6 +15,9 @@ tags:
   - travel
   - customer-service
   - speaking-practice
+  - trouble-abroad
+  - lost-luggage
+  - moving-abroad
 updated: "2026-09-24"
 related_prompts:
   - domain-conversation-practice/conversation_lang_sim_master_template.md

@@ -17,6 +17,7 @@ tags:
   - successor-trustee
   - distribution-standards
   - drafting
+  - avoid-probate
 updated: "2026-09-24"
 reasoning:
   styles: [constructive, systematic, conditional]
@@ -179,7 +180,7 @@ condo in a second state.
 | Home | Settlor individually | Deed to trustee | `[VERIFY: homestead tax treatment, title insurance continuation, transfer-tax exemption]` |
 | Rental condo (second state) | Settlor individually | Deed to trustee (avoids ancillary probate) | `[VERIFY: second state's recording and transfer rules; HOA approval]` |
 | Brokerage | Settlor individually | Retitle to trustee | — |
-| IRA | Beneficiaries: children 50/50 | **Do not retitle.** Consider designating Child B's share to the supplemental-needs trust | `[VERIFY: see-through-trust and payout rules]` — outright designation would disqualify Child B from benefits |
+| IRA | Beneficiaries: children 50/50 | **Do not retitle.** Consider designating Child B's share to the supplemental-needs trust | `[VERIFY: see-through-trust and payout rules]` — outright designation could jeopardize Child B's means-tested eligibility `[VERIFY]` |
 
 ## Verification
 

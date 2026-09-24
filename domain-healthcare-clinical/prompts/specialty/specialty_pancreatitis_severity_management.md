@@ -14,12 +14,42 @@ tags:
   - pancreatitis
   - hospital-medicine
   - specialty-assessment
+  - epigastric-pain
+  - gallstones
+  - high-lipase
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/reasoning/workup_abdominal_pain.md
+  - domain-healthcare-clinical/prompts/interpretation/interp_ct_abdomen_pelvis.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
-Manage acute pancreatitis from admission through complications: confirm the diagnosis, predict and then classify severity, establish etiology, and write concrete orders for resuscitation, analgesia, feeding, and etiology-directed intervention, plus the plan for collections and necrosis. Distinct from `reasoning/workup_abdominal_pain.md`, which reaches a diagnosis from the chief complaint — this prompt starts once pancreatitis is on the table and carries it through severity and management.
+Manage acute pancreatitis from admission through complications: confirm the diagnosis, predict and then classify severity, establish etiology, and write concrete orders for resuscitation, analgesia, feeding, and etiology-directed intervention, plus the plan for collections and necrosis. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with organ failure or cholangitis is escalated now, not after this output.
+
+## When to Use
+
+- Suspected or confirmed acute pancreatitis on admission — confirming the diagnosis and predicting, then classifying, severity.
+- Writing fluid, analgesia, nutrition, ERCP, antibiotic, and cholecystectomy orders.
+- Reassessing at 48–72 h or later for collections, necrosis, or suspected infected necrosis.
+
+**Not this prompt if:**
+
+- Abdominal pain is still undifferentiated — `reasoning/workup_abdominal_pain.md` reaches a diagnosis from the chief complaint; this prompt starts once pancreatitis is on the table.
+- Cholestatic LFTs or jaundice without pancreatitis — `reasoning/workup_jaundice.md`.
 
 ## Inputs
 
@@ -32,11 +62,12 @@ Manage acute pancreatitis from admission through complications: confirm the diag
 
 ## Role
 
-Senior attending gastroenterologist writing the admission plan and daily reassessment for a hospitalist colleague.
+Senior attending gastroenterologist supporting the treating hospitalist: drafting the admission plan and daily reassessment for their review.
 
 ## Reasoning Steps
 
 1. **Confirm the diagnosis — 2 of 3:** typical epigastric pain; lipase or amylase >3× upper limit of normal; characteristic imaging. Do not image on day 1 if two criteria are met; CT is for diagnostic doubt or for deterioration after 72 h.
+   - **Stop and escalate first if:** hypotension not responding to the initial bolus, falling SpO₂ or PaO₂/FiO₂ ≤300, rising creatinine or oliguria, altered mentation, or fever with jaundice (cholangitis) → ICU or step-down review now, and urgent ERCP discussion for cholangitis.
 
 2. **Predict severity at admission.**
    - **BISAP** (1 point each, first 24 h): BUN >25 mg/dL; impaired mental status; SIRS (≥2 criteria); age >60; pleural effusion on imaging. Score ≥3 marks substantially higher mortality.
@@ -102,6 +133,22 @@ COMPLICATION PLAN: [collection/necrosis surveillance and triggers for CT and int
 PITFALLS:
 - [trending lipase, over-resuscitation, prophylactic antibiotics, early ERCP without cholangitis, missed TG]
 ```
+
+## Verification
+
+- [ ] The diagnosis states which 2 of 3 criteria are met; lipase is quoted as a multiple of the lab's ULN.
+- [ ] Each BISAP point is traced to an input value; the revised Atlanta (2012) grade is labeled provisional until 48 h and rests on organ-failure duration by modified Marshall.
+- [ ] Fluid orders give bolus volume, rate in mL/kg/h for the stated weight, reassessment times, and stop criteria.
+- [ ] Analgesic and antibiotic doses are checked against renal and hepatic function; confirm doses, renal adjustment and thresholds against the current guideline (ACG/AGA) and local formulary.
+- [ ] Etiology workup (ultrasound, triglycerides, calcium) is complete and cholecystectomy timing is stated for biliary cases.
+
+## False-Positive Prevention
+
+- A raised lipase alone (renal failure, DKA, bowel obstruction, macrolipasemia) called pancreatitis without typical pain or imaging.
+- First-week SIRS and leukocytosis read as infection — early SIRS is sterile inflammation; look for a named extra-pancreatic source first.
+- Organ failure on admission labeled severe before 48 h — only persistent (>48 h) organ failure makes it severe.
+- Peripancreatic fluid in the first weeks called a pseudocyst or walled-off necrosis — those terms need ≥4 weeks and a wall.
+- Triglycerides of 200–500 mg/dL, or a value drawn after insulin or fasting, blamed as the cause — the causative threshold is >1000 mg/dL.
 
 ## Worked Example
 

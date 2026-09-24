@@ -16,7 +16,7 @@ Users are self-directed learners, career-changers, professionals closing a job-r
 
 ## When NOT to use this domain (use a different one)
 
-- **You're learning to code specifically** → `domain-learning-coding/` (`learning_teach_me_to_code.md` and code-specific exercises).
+- **You're learning to code specifically** → `domain-learning-coding/` ([`learning_teach_me_to_code_workflow.md`](../domain-learning-coding/learning_teach_me_to_code_workflow.md) and code-specific exercises).
 - **The bottleneck is execution/shipping, not skill** → `domain-personal-development/prompts/agency/` (`agency_skill_gap_reframe.md`, `agency_next_action_spec.md`).
 - **You want to teach others / design a course for a class or program** → `domain-education-teaching/` (lesson plans, curriculum-design, program outcomes).
 - **You're deciding whether to do a degree / bootcamp / certificate at all** → `domain-personal-development/major-decisions/personal_education_program_choice.md`.

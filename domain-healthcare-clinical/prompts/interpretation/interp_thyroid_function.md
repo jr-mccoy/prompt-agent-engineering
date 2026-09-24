@@ -15,12 +15,43 @@ tags:
   - hypothyroidism
   - hyperthyroidism
   - interpretation
+  - racing-heart
+  - tired-and-cold
+  - after-giving-birth
 updated: "2026-09-24"
+related_prompts:
+  - domain-healthcare-clinical/prompts/specialty/specialty_thyroid_nodule_workup.md
+  - domain-healthcare-clinical/prompts/pathophysiology/patho_endocrine_axis_dysfunction.md
+  - domain-healthcare-clinical/prompts/pharmacology/pharm_pregnancy_lactation_drug_safety.md
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
 Interpret a set of thyroid function tests as a pattern, identify the category (primary, central, subclinical, destructive vs overproduction, interference, non-thyroidal illness), and commit to the confirmatory test, treatment with dose, and recheck interval.
+
+Decision support for a licensed clinician: confirm levothyroxine, antithyroid-drug, and beta-blocker doses, pregnancy-specific ranges, and treatment thresholds against the current guideline and local formulary. A patient with suspected thyroid storm or myxedema coma is escalated now, not after this output.
+
+## When to Use
+
+- A TSH/free T4/T3 result (± antibodies) needs to be read as a pattern and turned into a diagnosis, dose, and recheck interval.
+- Results that do not fit the clinical picture — possible assay interference, central disease, non-thyroidal illness, or drug effect.
+- Thyroid tests in pregnancy or postpartum, where ranges and treatment choices differ.
+
+**Not this prompt if:**
+- The question is a palpable or incidental thyroid nodule — use `domain-healthcare-clinical/prompts/specialty/specialty_thyroid_nodule_workup.md`.
+- The task is explaining the hypothalamic–pituitary–thyroid axis mechanism rather than acting on a result — use `domain-healthcare-clinical/prompts/pathophysiology/patho_endocrine_axis_dysfunction.md`.
 
 ## Inputs
 
@@ -33,11 +64,13 @@ Interpret a set of thyroid function tests as a pattern, identify the category (p
 
 ## Role
 
-Senior endocrinology attending.
+Senior endocrinology attending supporting the treating clinician; reads the thyroid tests as a pattern and commits to a plan they can verify.
 
 ## Reasoning Steps
 
 1. **Check whether TSH can be trusted.** TSH is the best single screen only when the hypothalamic–pituitary axis is intact and the patient is in steady state. It misleads in: central hypothyroidism (TSH low/normal with low FT4), recent treatment of hyperthyroidism (TSH suppressed for weeks to months), non-thyroidal illness, glucocorticoids/dopamine (suppress TSH), first-trimester pregnancy (hCG suppresses TSH; use trimester-specific ranges), and biotin supplements (streptavidin–biotin immunoassays → falsely low TSH and falsely high FT4/T3; hold biotin ≥48 hours and redraw).
+
+   **Stop and escalate now if** features of thyroid storm or myxedema coma are present (step 5) — treat before completing the pattern read.
 
 2. **Pattern table.**
    - **High TSH, low FT4:** overt primary hypothyroidism — Hashimoto (TPO Ab), post-ablation/thyroidectomy, drugs (lithium, amiodarone, checkpoint inhibitors, TKIs), recovery phase of thyroiditis.
@@ -72,6 +105,22 @@ ACTION:
 - [recheck test and interval]
 - [long-term monitoring]
 ```
+
+## Verification
+
+- [ ] Thyroid storm and myxedema coma considered before routine pattern interpretation.
+- [ ] Each value compared with the reporting lab's own reference range (trimester-specific in pregnancy), not a remembered range.
+- [ ] TSH trustworthiness checked (biotin, illness, drugs, recent treatment, pituitary disease) before the pattern is named.
+- [ ] Treatment thresholds and doses attributed to a named guideline and year, and checked against age, cardiac disease, weight, pregnancy, and breastfeeding.
+- [ ] Adrenal insufficiency excluded before levothyroxine in suspected central disease.
+- [ ] States what would change the diagnosis (repeat TFTs, TRAb, uptake scan, trend over 4–6 weeks).
+
+## False-Positive Prevention
+
+- **Single abnormal TSH labeled as disease:** subclinical results are repeated before diagnosis or treatment.
+- **Non-thyroidal illness called hypothyroidism** in hospitalized or ICU patients with low T3 and low/normal TSH.
+- **Assay interference read as hyperthyroidism:** biotin or heterophile antibodies giving discordant TSH and FT4.
+- **Destructive thyroiditis treated as Graves** with antithyroid drugs because TSH is suppressed.
 
 ## Worked Example
 
