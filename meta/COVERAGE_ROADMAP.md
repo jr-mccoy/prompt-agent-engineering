@@ -410,6 +410,7 @@ Each block was built from its own domain roadmap, and each roadmap now marks it 
 
 **Review before wider use:**
 - The psy-ops roadmap made child-safety review a condition for the youth-manipulation prompt. The audit pass did a model-led child-safety review and made it more defensive (see below); a human review is still recommended.
+- Both caveats are now visible to readers. The youth prompt, the 32 Wave 3 clinical prompts and `workup_dizziness_vertigo.md` open with a disclaimer and a **Review status: … AI only; not yet reviewed by a licensed clinician / child-safety professional** notice. The healthcare-clinical and psy-ops READMEs carry domain disclaimers. Remove a file's review-status line only after a qualified human has reviewed it.
 - The dosing and thresholds in the healthcare worked examples are recommended for a clinician read-through.
 
 ### Wave 4: thin-domain depth — shipped (59 prompts + cleanup)

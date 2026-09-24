@@ -25,6 +25,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/pharmacology/pharm_pregnancy_lactation_drug_safety.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Interpret a set of thyroid function tests as a pattern, identify the category (primary, central, subclinical, destructive vs overproduction, interference, non-thyroidal illness), and commit to the confirmatory test, treatment with dose, and recheck interval.

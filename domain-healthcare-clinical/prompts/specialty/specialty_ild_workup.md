@@ -25,6 +25,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/specialty/specialty_autoimmune_workup_ana.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Take a patient with suspected interstitial lung disease from first abnormal finding to a working diagnosis and treatment plan: characterize the physiologic and radiologic pattern, search for a cause (exposure, drug, connective-tissue disease), decide whether BAL or biopsy is needed, and start antifibrotic, immunosuppressive, or supportive therapy. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with resting hypoxemia or acute deterioration is escalated now, not after this output.

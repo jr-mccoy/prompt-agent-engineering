@@ -24,6 +24,18 @@ related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_red_flag_can_t_miss_drill.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Work up the acutely red eye in a primary care, urgent care, or ED setting: screen for sight-threatening red flags, localize the process (lids, conjunctiva, episclera/sclera, cornea, anterior chamber, orbit), commit to a working diagnosis, write the treatment, and state the exact ophthalmology referral timing (emergent / same-day / within 24–48 h / routine / none). Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A chemical injury, suspected open globe, or acute angle closure is irrigated, shielded, or treated and sent now, not after this output.

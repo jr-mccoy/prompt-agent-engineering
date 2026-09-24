@@ -24,6 +24,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/specialty/specialty_immunocompromised_fever.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Produce the plan for a newly diagnosed person with HIV at the first visit: diagnostic confirmation, the full baseline panel, the ART start decision and timing, a regimen chosen by explicit selection logic, opportunistic-infection screening and prophylaxis, and the follow-up schedule to first viral suppression.

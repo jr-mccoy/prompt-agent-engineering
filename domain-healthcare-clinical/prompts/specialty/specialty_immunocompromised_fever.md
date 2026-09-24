@@ -25,6 +25,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Produce an infectious-disease plan for a febrile immunocompromised patient: identify the immune defect, predict the likely pathogens from that defect, risk-stratify, start the right empiric therapy on time, and set escalation (antifungal, broader gram-positive cover) and de-escalation rules. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A hypotensive or deteriorating patient gets antibiotics and escalation now, not after this output.

@@ -24,6 +24,18 @@ related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_bayesian_pretest_posttest_drill.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Take a positive (or pending) antinuclear antibody and turn it into a decision: either a specific systemic autoimmune diagnosis with organ staging and initial therapy, or a documented reason to stop testing. The prompt weighs titer, HEp-2 pattern, and clinical pretest probability together and chooses follow-on serologies by pattern and phenotype.

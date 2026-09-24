@@ -25,6 +25,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/specialty/specialty_pancreatitis_severity_management.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Interpret a lipid panel in clinical context: decide whether the reported LDL is trustworthy, identify the phenotype (polygenic, familial hypercholesterolemia, hypertriglyceridemia, mixed, secondary), screen for secondary causes, read on-treatment response, and hand a clean phenotype and risk frame to the treatment plan.

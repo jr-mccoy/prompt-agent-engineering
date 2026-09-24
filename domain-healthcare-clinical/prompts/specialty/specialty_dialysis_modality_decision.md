@@ -24,6 +24,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/acute-care/acute_severe_hyperkalemia.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Produce a nephrologist's kidney-failure life plan for a patient with advancing CKD: when preparation must begin, when dialysis should actually start, which modality (or no dialysis) fits this person's medical profile, home situation, and goals, and the matching access and transplant steps.

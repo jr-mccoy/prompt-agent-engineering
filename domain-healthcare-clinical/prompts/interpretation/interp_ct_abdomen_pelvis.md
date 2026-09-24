@@ -25,6 +25,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Read a CT abdomen/pelvis report in clinical context and produce an impression that separates operative emergencies from medical and interventional problems, names the severity class of each inflammatory process, and assigns every incidental a guideline-based disposition. Input is the report or structured findings.

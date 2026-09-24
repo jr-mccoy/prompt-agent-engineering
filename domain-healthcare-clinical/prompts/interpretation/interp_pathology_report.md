@@ -25,6 +25,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/pathophysiology/patho_oncogenesis_tumor_biology.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Read a pathology report element by element, translate the diagnostic language into a clinical decision, identify what is missing or pending, check concordance with imaging and the clinical picture, and commit to the next step — re-biopsy, further surgery, systemic therapy referral, biomarker or germline testing, tumor board, or surveillance interval.

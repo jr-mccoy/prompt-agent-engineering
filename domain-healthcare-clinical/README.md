@@ -3,6 +3,15 @@
 > Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
 > This domain covers clinical decision support, patient communication, medical education, and healthcare documentation.
 
+> **Medical disclaimer.** Everything in this domain is a decision-support, documentation
+> and teaching aid for **licensed clinicians and trainees under supervision**. It is
+> **not medical advice** and is not for patients to diagnose or treat themselves. Drug
+> doses, thresholds and guideline references can be incomplete, outdated or wrong:
+> verify each against current guidelines, product labels and your local formulary, and
+> follow your institution's protocols. Prompts marked *"Review status: … AI only"* have
+> not yet been reviewed by a licensed clinician. **Medical emergency: call your local
+> emergency number (911 in the US).**
+
 ---
 
 ## When This Domain Applies

@@ -4,6 +4,13 @@ Prompts for **recognizing, analyzing, and defending against psychological influe
 
 Users are analysts, trust-and-safety and communications staff, researchers, moderators, educators, and individuals trying to work out whether what they are experiencing or reading is what it appears to be.
 
+> **Disclaimer.** These prompts are educational and analytical aids for recognizing and
+> defending against manipulation. They are not legal advice, not a law-enforcement,
+> child-protection, crisis or mental-health service, and do not replace them. **If
+> anyone is in immediate danger, contact emergency services now.** Prompts marked
+> *"Review status: … AI only"* have not yet been reviewed by a human subject-matter
+> professional.
+
 ---
 
 ## ⚠️ Load-bearing convention: analytic output, no manufactured accusations

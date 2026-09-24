@@ -25,6 +25,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/specialty/medicine_oncology_case_framer.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Produce a pulmonology nodule-clinic recommendation for an incidentally detected pulmonary nodule: decide whether the Fleischner Society 2017 guidelines apply, classify the nodule precisely, estimate malignancy probability, and give a committed next step with CT intervals or a tissue/PET pathway. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with hemoptysis or signs of advanced disease is escalated now, not placed on a surveillance schedule.

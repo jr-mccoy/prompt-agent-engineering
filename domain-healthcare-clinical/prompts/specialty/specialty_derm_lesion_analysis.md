@@ -24,6 +24,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/pharmacology/pharm_anticoag_periprocedural_bridging.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Assess a single discrete skin lesion (pigmented or non-pigmented, suspected benign vs neoplastic) the way a dermatologist does at the bedside: precise morphologic description, structured melanoma and keratinocyte-cancer criteria, a ranked differential, and a committed action — reassure, photograph and monitor, biopsy (with the correct technique), or urgent excision/referral.

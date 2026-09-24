@@ -121,6 +121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - **Audit of coverage Waves 1–5:**
   - **Safety:**
+    - Reader-facing disclaimers with an **AI-only review status** on the 33 clinical prompts edited this release and on the psy-ops youth prompt, plus domain disclaimers in the healthcare-clinical and psy-ops READMEs. Neither set has had a human clinician or child-safety review yet.
     - Wrong maternal mental-health hotline number in two psychology prompts.
     - The nutrition prompts skipped the health-wellness readiness gate.
     - A "family-member donors" line in the cytopenia workup; it means family-member *transfusions*.

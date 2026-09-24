@@ -24,6 +24,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/interpretation/interp_ct_abdomen_pelvis.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Take an adrenal mass ≥1 cm discovered on imaging done for another reason and answer the two questions that decide management: **Is it malignant (or at risk)?** and **Is it hormonally active?** Produce the imaging interpretation with numbers, the biochemical screening panel with interfering-drug review, the interpretation of results, and a committed plan: discharge from follow-up, surveillance with stated interval, further imaging, or referral for adrenalectomy.

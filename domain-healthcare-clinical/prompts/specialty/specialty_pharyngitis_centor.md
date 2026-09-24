@@ -24,6 +24,18 @@ related_prompts:
   - domain-healthcare-clinical/prompts/acute-care/medicine_emergency_triage_decision_support.md
 ---
 
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-09-24);
+> **not yet reviewed by a licensed clinician.**
+
 ## Objective
 
 Manage acute pharyngitis in a child or adult: exclude the dangerous causes first, apply a validated clinical score to decide whether to test for group A Streptococcus (GAS), interpret the test, and write the antibiotic (or no-antibiotic) plan with dose, duration, and allergy alternatives — while holding the line on antibiotic stewardship. Decision support for a licensed clinician: confirm doses, renal/hepatic adjustment and thresholds against the current guideline and local formulary. A patient with airway compromise or a suspected deep neck infection is escalated now, not after this output.

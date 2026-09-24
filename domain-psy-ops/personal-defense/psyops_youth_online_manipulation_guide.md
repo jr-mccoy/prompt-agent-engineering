@@ -36,6 +36,15 @@ related_prompts:
 
 # Youth Online Manipulation Guide
 
+> **Disclaimer — read before use.** This is an educational guide to recognizing
+> warning signs. It is **not** a child-protection service, law enforcement, or legal
+> advice, and it does not replace them. **If a child is in immediate danger, contact
+> emergency services now.** Reporting routes and services differ by country; confirm
+> current contact details from the official source.
+>
+> **Review status:** reviewed by AI only (2026-09-24); **not yet reviewed by a human
+> child-safety professional.**
+
 **Objective:** Help an adult who cares for a young person — or a young person themselves — recognize the **documented patterns** by which minors are manipulated online, and respond in the order that protects the child. Three patterns recur in child-protection guidance: **grooming**, where an adult builds trust, secrecy, and dependence over time; **coercive escalation**, where a first small concession becomes leverage for the next; and **financially motivated sextortion**, where an image is obtained, often within hours, and then used to demand money under threat of exposure. The third is frequently run by organized groups at scale, moves very fast, and has been linked to young people harming themselves — which is why speed and reassurance come before everything else in this prompt.
 
 This prompt works at the level of **recognition**. It names patterns as child-protection guidance publicly describes them so that adults can notice them; it does not describe methods in operational detail, and it does not investigate. Everything beyond recognition — assessment, evidence handling, investigation, and support — belongs to child-protection professionals, the platforms, and the police, and this prompt's job is to get the situation to them quickly and in the right order.
