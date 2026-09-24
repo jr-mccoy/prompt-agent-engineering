@@ -333,8 +333,8 @@ Prompts are organized into subdirectories by function:
 - `relationships_relationship_audit.md` - Lightweight single-relationship health-check
 - See [prompts/relationships/README.md](./prompts/relationships/README.md)
 
-**Major Personal Decisions (`major-decisions/`)** - 10 prompts for high-stakes personal decisions
-- Job-offer evaluation, relocation, quit-or-persist, education-program choice, family-planning tradeoffs, financial-decision framework, health-decision research, major-purchase research, cofounder/partner selection, difficult-relationship audit
+**Major Personal Decisions (`major-decisions/`)** - 16 prompts for high-stakes personal decisions
+- Job-offer evaluation, relocation, quit-or-persist, education-program choice, family-planning tradeoffs, marriage/commitment, aging-parent care, care-facility comparison, estate-wishes attorney prep, sabbatical, business vs. employment, financial-decision framework, health-decision research, major-purchase research, cofounder/partner selection, difficult-relationship audit
 - See [major-decisions/README.md](./major-decisions/README.md)
 
 ---
