@@ -97,7 +97,7 @@ DLCO: 45% predicted, KCO reduced → significant gas-transfer impairment.
 FLOW-VOLUME LOOP: Coved expiratory limb — small-airways obstruction.
 
 INTERPRETATION: Moderate obstruction without significant bronchodilator response, with hyperinflation, air trapping, and severely reduced DLCO.
-MOST LIKELY DIAGNOSIS: COPD, emphysema-predominant (GOLD 2; ≥1 exacerbation requiring steroids but no hospitalization → GOLD group E threshold not met on one moderate event; symptomatic mMRC ≥2 → group B).
+MOST LIKELY DIAGNOSIS: COPD, emphysema-predominant. GOLD 2, group B (mMRC ≥2; one moderate exacerbation in the past year does not meet group E, which requires ≥2 moderate or ≥1 hospitalized exacerbation).
 
 ACTION:
 - LAMA/LABA: tiotropium/olodaterol 2.5/2.5 mcg, 2 inhalations once daily via soft-mist inhaler; teach technique. No ICS (eosinophils 150, one moderate exacerbation).

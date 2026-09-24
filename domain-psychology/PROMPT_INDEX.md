@@ -46,7 +46,7 @@ domain-psychology/
 ├── psychiatric-prescriber/                      # ← Wave 7 (built)
 ├── care-coordination/                           # ← Wave 7 (built)
 ├── measurement-based-care/                      # ← Wave 7 (built)
-└── client-self-use/                             # ← Future waves
+└── client-self-use/                             # ← Waves 5, 8, 13 (built)
     ├── pre-therapy/
     ├── session-prep-integration/
     ├── symptom-understanding/
@@ -58,7 +58,8 @@ domain-psychology/
     ├── crisis-self-triage/
     ├── communication-system/
     ├── habit-lifestyle/
-    └── psychoeducation-self/
+    ├── psychoeducation-self/
+    └── specialty/                               # ← Wave 13 (built)
 ```
 
 ---
@@ -207,9 +208,28 @@ domain-psychology/
 
 ---
 
+## Wave 13 — Client Self-Use Specialty (added 2026-09-24)
+
+`client-self-use/specialty/` (10) — each opens with a 988/911/ED crisis banner plus condition-specific red flags, screens but never diagnoses, and ends with a clinician or care-team handoff.
+
+| # | File | Objective |
+|---|------|-----------|
+| 1 | `clientself_eating_self_monitoring_with_handoff.md` | CBT-E-style eating record (no calories/weights) with medical + suicide gates and mandatory clinician handoff |
+| 2 | `clientself_ocd_self_erp_prep_with_therapist.md` | Pre-ERP trigger map, compulsion inventory, and draft SUDS hierarchy for therapist review — no self-administered exposures |
+| 3 | `clientself_chronic_pain_self_management_plan.md` | Bad-day-baseline pacing, ACT overlay, green/amber/red flare plan |
+| 4 | `clientself_caregiver_burnout_plan.md` | Six-area caregiver self-check and sustainable-support plan (floor, asks, respite, boundaries, grief) |
+| 5 | `clientself_perinatal_self_screen_and_plan.md` | Pregnancy-to-12-months self-screen with pre-stated escalation tiers (911/ED · 988 today · this week · next visit) |
+| 6 | `clientself_mens_mental_health_engagement.md` | Barrier-by-barrier help-seeking tool with non-therapy entry points and firearm means-safety |
+| 7 | `clientself_faith_integrated_coping_plan.md` | Tradition-neutral faith/values coping plan; flags spiritual struggle, scrupulosity, coercion |
+| 8 | `clientself_neurodivergent_self_advocacy_toolkit.md` | Needs map, per-setting disclosure decision, accommodation scripts, self-advocacy card |
+| 9 | `clientself_postpartum_partner_support_guide.md` | Partner's recognition tiers, blame-free script, load-sharing, getting-to-care, own check |
+| 10 | `clientself_chronic_illness_mental_health_plan.md` | Ongoing mood plan alongside chronic illness: split mood/illness tracking, controllability-matched coping, care-team questions |
+
+---
+
 ## Coverage Status
 
-**Built to date (267 prompts — original ~210 plan complete + Waves 9–12):**
+**Built to date (277 prompts — original ~210 plan complete + Waves 9–13):**
 - Documentation formats — Wave 1 (15)
 - Risk & crisis — Wave 2 (10)
 - **Intake / formulation / treatment-planning depth — Wave 3 (28): intake-assessment (12), diagnostic-formulation (8), treatment-planning (8)**
@@ -222,12 +242,12 @@ domain-psychology/
 - **Additional modalities — Wave 10 (10): CPT (`modalities/cpt/`), prolonged-grief therapy (`grief-therapy/`), SFBT (`sfbt/`), narrative externalizing (`narrative/`), sensorimotor/somatic + polyvagal (`somatic/`), BPT/PCIT (`behavioral-parent-training/`), group-therapy curriculum (`group/`), EFT-individual (`eft-individual/`), ACT-group (`act/`)**
 - **Assessment & psychological testing — Wave 11 (10): battery selection, neuropsych/cognitive screening interpretation, ADHD battery design, autism battery design (masking-aware), multi-method personality integration, PROM selection, decisional-capacity scaffold, forensic-evaluation framing, therapeutic-assessment feedback-session planner, integrated assessment report writer** — `assessment-testing/` (all instruments referenced by name and band/structure only; no copyrighted item content; referral-aware)
 - **Couples / family / systems depth + digital practice — Wave 12 (10): EFT-couples full-arc planner, Gottman intervention planner, IFS-informed couples (IFIO), structural family therapy (Minuchin), Bowenian 3-generation genogram, discernment counseling (Doherty)** — `family-couples-systems/` (6); **tele-mental-health program design, AI-augmented practice ops, digital-phenotyping interpreter, async-messaging therapy protocol** — `digital-practice/` (4, each with clinical-oversight guardrails, safety/risk routing, and licensure/PSYPACT considerations)
+- **Client self-use specialty — Wave 13 (10): eating self-monitoring with clinician handoff, OCD self-ERP prep for therapist review, chronic-pain self-management (pacing / ACT / flare plan), caregiver burnout, perinatal self-screen with escalation thresholds, men's help-seeking engagement, faith/values-integrated coping, neurodivergent self-advocacy toolkit, postpartum partner support guide, chronic-illness mental-health plan** — `client-self-use/specialty/` (each with a 988/911/ED crisis banner plus condition-specific red flags, no diagnosis, and a clinician/care-team handoff)
 - Plus pre-existing relocated prompts (~10)
 
-**Original ~210-prompt plan: complete (Waves 1–8 built). Waves 9 (specialty clinical), 10 (additional modalities), 11 (assessment/testing), and 12 (systems/digital) built 2026-06-08.**
+**Original ~210-prompt plan: complete (Waves 1–8 built). Waves 9 (specialty clinical), 10 (additional modalities), 11 (assessment/testing), and 12 (systems/digital) built 2026-06-08; Wave 13 (client self-use specialty) built 2026-09-24.**
 
-**Planned (net-new, ~10 remaining)** — Wave 13 in the roadmap:
-- **Wave 13** — Client self-use specialty (eating, OCD, chronic pain, caregiver, perinatal, etc.) (~10)
+**Planned:** none — every wave in [`REMAINING_PROMPTS_ROADMAP.md`](./REMAINING_PROMPTS_ROADMAP.md) is built.
 
 **Target final size:** ~260 prompts in `domain-psychology/` (original ~210 plan + ~52 net-new).
 
@@ -247,4 +267,4 @@ For this expansion specifically:
 
 ---
 
-*Last updated: 2026-06-08*
+*Last updated: 2026-09-24*

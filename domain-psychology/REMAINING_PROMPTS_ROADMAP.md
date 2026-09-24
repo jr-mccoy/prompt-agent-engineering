@@ -1,6 +1,6 @@
 # Psychology Library — Remaining Prompts Roadmap
 
-**Status as of 2026-06-08:** **124 prompts** in the psychology library (96 prior + Wave 3's 28 just authored). The domain was promoted from `domain-specialized-fields/psychology/` to top-level `domain-psychology/` on 2026-06-08.
+**Status as of 2026-09-24:** **277 prompts** in the psychology library — every wave on this roadmap (W1–W13) is built; Wave 13 (`client-self-use/specialty/`, 10) was the last. (The 2026-06-08 snapshot read 124 prompts, after Wave 3.) The domain was promoted from `domain-specialized-fields/psychology/` to top-level `domain-psychology/` on 2026-06-08.
 
 ### Build status (reconciled 2026-06-08)
 
@@ -19,8 +19,9 @@
 | **W10** | **Additional modalities** (CPT, prolonged-grief therapy, SFBT, narrative, sensorimotor/somatic, polyvagal, BPT/PCIT, group-curriculum, EFT-individual, ACT-group) | 10 | 10 | ✅ **complete** (built 2026-06-08) |
 | **W11** | **Assessment & psychological testing** (battery selection, neuropsych screening, ADHD/autism battery design, personality integration, PROM selection, capacity, forensic framing, feedback session, integrated report) | 10 | 10 | ✅ **complete** (built 2026-06-08) |
 | **W12** | **Couples / family / systems depth + digital practice** (EFT-couples, Gottman, IFS-couples, structural, Bowenian genogram, discernment counseling; tele-mental-health, AI-augmented ops, digital phenotyping, async messaging) | 10 | 10 | ✅ **complete** (built 2026-06-08: family-couples-systems 6, digital-practice 4) |
+| **W13** | **Client self-use specialty** (eating self-monitoring, OCD ERP prep, chronic pain, caregiver burnout, perinatal self-screen, men's help-seeking, faith-integrated coping, neurodivergent self-advocacy, postpartum partner support, chronic-illness mental health) | 10 | 10 | ✅ **complete** (built 2026-09-24: `client-self-use/specialty/`) |
 
-**Remaining on the original plan:** none — **Wave 8 is built**, completing the original **~210**-prompt plan (Waves 1–8 done). Waves 9–13 below are the net-new extension to the revised **~260** target.
+**Remaining on the original plan:** none — **Wave 8 is built**, completing the original **~210**-prompt plan (Waves 1–8 done). Waves 9–13 below are the net-new extension to the revised **~260** target — **all built** (Wave 13 on 2026-09-24); **277 prompts** are on disk and nothing on this roadmap remains unbuilt.
 
 **Net-new (this refresh):** Waves 9–13 ≈ **52 prompts** extend the library to a revised target of **~260**. These cover specialty clinical verticals, additional evidence-based modalities, psychological testing, systems/digital practice, and client-self-use specialty tools that the original 8-wave plan did not address. They are enumerated after Wave 8.
 
@@ -461,9 +462,9 @@ Goes beyond the Wave 6 cross-population stubs. All 10 files now exist under `fam
 
 ---
 
-## Wave 13 — Client Self-Use Specialty (~10)
+## Wave 13 — Client Self-Use Specialty (~10) ✅ COMPLETE (built 2026-09-24)
 
-Population/condition-specific self-tools with strong clinician-handoff for anything not self-administrable.
+Population/condition-specific self-tools with strong clinician-handoff for anything not self-administrable. All 10 files now exist under `client-self-use/specialty/` at the planned filenames. Each opens with a 988/911/ED crisis banner (plus condition-specific red flags — medical signs for eating and pain, postpartum-psychosis signs for the perinatal pair, harm-to-care-recipient for caregivers, firearm means-safety for men's help-seeking), screens but never diagnoses, ends with a clinician or care-team handoff, and carries When to Use with an explicit **Distinct from**, Verification, False-Positive Prevention, and a worked Example. Cross-domain boundaries stated in-file: eating self-monitoring is where `domain-health-wellness/` STRONG-GUARD nutrition redirects can land (it records, never sets calorie or weight targets); caregiver burnout hands respite logistics to `domain-productivity/home-life/home_caregiver_respite_plan.md`; the perinatal self-screen mirrors the provider thresholds in `populations/perinatal/psychology_perinatal_mood_anxiety_screen_interpretation.md`.
 
 ### `client-self-use/specialty/` (10)
 
@@ -515,18 +516,18 @@ Each wave can be authored independently in any order — there are no hard depen
 | 4    | 31      | 200               | ~6,200              | ✅ built |
 | 6    | 30      | 200               | ~6,000              | ✅ built |
 | 7    | 30      | 220               | ~5,700              | ✅ built |
-| 8    | 30      | 130               | ~3,900              | not started |
-| **Original plan remaining** | **~114** | — | **~21,800 lines** | |
+| 8    | 41      | 120               | ~5,000              | ✅ built |
+| **Original plan (W3–W8)** | **160** | — | **~29,100 lines** | ✅ built |
 | 9 (specialty clinical) | 12 | 220 | ~2,600 | ✅ built |
 | 10 (modalities) | 10 | 200 | ~2,000 | ✅ built |
 | 11 (assessment/testing) | 10 | 220 | ~2,200 | ✅ built |
 | 12 (systems/digital) | 10 | 210 | ~2,100 | ✅ built |
-| 13 (client-self specialty) | 10 | 140 | ~1,400 | net-new |
-| **Net-new total** | **52** | — | **~10,300 lines** | |
-| **All remaining → ~260 target** | **~166** | — | **~32,100 lines** | |
+| 13 (client-self specialty) | 10 | 135 | ~1,360 | ✅ built |
+| **Net-new total** | **52** | — | **~10,260 lines** | ✅ built |
+| **Remaining** | **0** | — | — | all waves built (277 prompts on disk) |
 
 For comparison: Waves 1+2 = ~4,700 lines; Wave 4 = ~6,200 lines; Wave 5 = ~3,400 lines (all built).
 
 ---
 
-*Last updated: 2026-05-08*
+*Last updated: 2026-09-24*
