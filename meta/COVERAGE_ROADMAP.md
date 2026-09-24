@@ -416,8 +416,9 @@ Each block was built from its own domain roadmap, and each roadmap now marks it 
 Wave 4 covers §3C, plus these items:
 - `advertising` beyond images: copy, video/UGC scripts, platform specs, media
   plan, compliance.
-- `presentations`: dedupe, then add the investor pitch deck, a conference
+- `presentations`: dedupe (**done**: eight duplicate copies retired as `merged-into` tombstones), then add the investor pitch deck, a conference
   talk, and Q&A prep.
+- `decision-making` rehome (**done**): three crisis prompts → `domain-risk/`, competitive intelligence → `business-strategy/research/`, pricing experiments → `product-management/prompts/`.
 - `game-development` Phase 2: narrative, NPC AI, playtest, balance, live-ops.
 
 ### Wave 5: routing regression cases

@@ -1,6 +1,6 @@
 ---
 title: "Crisis Severity Triage"
-category: non-engineering/decisioning
+category: risk/crisis
 description: "5-minute rapid assessment framework to classify crisis severity, determine response urgency, and route to the right action protocol"
 techniques:
   - ST-01
@@ -17,12 +17,12 @@ tags:
   - decision-making
   - emergency
   - prioritization
-updated: "2026-02-26"
+updated: "2026-09-24"
 related_prompts:
-  - decision-making/decisioning_time_boxed_decision_protocol.md
-  - decision-making/decisioning_escalation_decision_tree.md
-  - decision-making/decisioning_crisis_communication_playbook.md
-  - productivity/validation/validation_adversarial_mini_check.md
+  - domain-decision-making/decisioning_time_boxed_decision_protocol.md
+  - domain-decision-making/decisioning_escalation_decision_tree.md
+  - domain-risk/risk_crisis_communication_playbook.md
+  - domain-productivity/validation/validation_adversarial_mini_check.md
 ---
 
 # Crisis Severity Triage
@@ -255,7 +255,7 @@ Customer-facing payment API returning 500 errors for approximately 15% of checko
 
 ## Related Prompts
 
-- [decisioning_time_boxed_decision_protocol.md](decisioning_time_boxed_decision_protocol.md) - When you've triaged and need to decide fast
-- [decisioning_escalation_decision_tree.md](decisioning_escalation_decision_tree.md) - Determining who to notify and when
-- [decisioning_crisis_communication_playbook.md](decisioning_crisis_communication_playbook.md) - Communicating during a crisis
+- [../domain-decision-making/decisioning_time_boxed_decision_protocol.md](../domain-decision-making/decisioning_time_boxed_decision_protocol.md) - When you've triaged and need to decide fast
+- [../domain-decision-making/decisioning_escalation_decision_tree.md](../domain-decision-making/decisioning_escalation_decision_tree.md) - Determining who to notify and when
+- [risk_crisis_communication_playbook.md](risk_crisis_communication_playbook.md) - Communicating during a crisis
 - [validation_adversarial_mini_check.md](../domain-productivity/validation/validation_adversarial_mini_check.md) - Pre-decision verification

@@ -21,7 +21,7 @@ related_prompts:
   - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
   - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
   - domain-presentations/visual-planning/visualplan_cascade_effects_scan.md
-  - domain-presentations/powerpoint_board_deck_generator.md
+  - domain-presentations/powerpoint_board_deck.md
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
 ---
 

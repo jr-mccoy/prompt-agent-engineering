@@ -26,7 +26,7 @@ domain-presentations/
 
 | Subdirectory | Count | Description |
 |--------------|-------|-------------|
-| (root) | ~24 | PowerPoint generators (board decks, QBRs, launches, crisis, status reports, etc.) |
+| (root) | 14 | PowerPoint generators (board decks, QBRs, launches, crisis, status reports, etc.). Eight duplicate copies were retired in coverage Wave 4 and merged into their clean twins; the old ids resolve as tombstones. |
 | `board-decks/` | 20 | Board-deck image visual prompts in 16:9 format with anti-UI constraints |
 | `visual-planning/` | 4 | Capability frontier mapping, visual QA harness, modality routing, cascade effects scan |
 | **Total** | **~48** | |

@@ -21,7 +21,7 @@ related_prompts:
   - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
   - domain-presentations/visual-planning/visualplan_modality_router.md
   - domain-presentations/visual-planning/visualplan_cascade_effects_scan.md
-  - domain-presentations/powerpoint_deck_assembly_and_validation.md
+  - domain-presentations/powerpoint_deck_assembly_validation.md
   - domain-prompt-engineering/evaluation/correctness_eval_design_prompt.md
 ---
 

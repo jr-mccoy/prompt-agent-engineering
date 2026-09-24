@@ -35,7 +35,7 @@ tracks (see [Which domain does this belong in?](../CLAUDE.md)):
 
 ```
 domain-product-management/
-├── prompts/      # 13 product-management prompts
+├── prompts/      # 14 product-management prompts
 ├── templates/    # PRD template
 └── README.md
 ```
@@ -55,6 +55,7 @@ domain-product-management/
 | [`product_user_story_splitting.md`](prompts/product_user_story_splitting.md) | A story will not fit an iteration, or refinement keeps producing "backend work" |
 | [`product_launch_readiness_gate.md`](prompts/product_launch_readiness_gate.md) | A launch date is near and you need a cross-functional go/no-go with a real no available |
 | [`product_feature_sunset_decision.md`](prompts/product_feature_sunset_decision.md) | Something should probably be removed and you need to know who depends on it first |
+| [`product_pricing_experiment_matrix.md`](prompts/product_pricing_experiment_matrix.md) | You need to design pricing experiments: variables, test matrix, guardrails (moved from `domain-decision-making/` in coverage Wave 4) |
 
 ---
 

@@ -1,6 +1,6 @@
 # Domain: Risk
 
-Risk management as a working discipline: identify risks, structure them, prioritize them, harden against them, and learn when one materializes anyway. The fifteen prompts here adapt the standard instruments — appetite statement, register, heat map, FMEA, threat model, dependency audit, tail-risk scan, continuity plan, after-action review — for general operators, not just safety engineers, and add a security-operations set for organisations without a SOC (incident playbook, tabletop exercise, alert triage, phishing awareness, vendor security review, payment-fraud controls), and each enforces the discipline that makes its instrument worth more than a spreadsheet: registers get named owners and review cadences, heat maps force the "are we actually doing the top-3 mitigations?" question, AARs run a blameless root-cause ladder instead of finding a culprit.
+Risk management as a working discipline: identify risks, structure them, prioritize them, harden against them, and learn when one materializes anyway. The eighteen prompts here adapt the standard instruments — appetite statement, register, heat map, FMEA, threat model, dependency audit, tail-risk scan, continuity plan, after-action review — for general operators, not just safety engineers, and add a security-operations set for organisations without a SOC (incident playbook, tabletop exercise, alert triage, phishing awareness, vendor security review, payment-fraud controls), and each enforces the discipline that makes its instrument worth more than a spreadsheet: registers get named owners and review cadences, heat maps force the "are we actually doing the top-3 mitigations?" question, AARs run a blameless root-cause ladder instead of finding a culprit.
 
 The domain spans the full lifecycle. Before the fact: build the catalogue (`risk_register_builder`), hunt what the catalogue systematically misses (`risk_tail_risk_scan`), model intelligent adversaries (`risk_threat_model_non_technical`), decompose a process's failure modes (`risk_fmea_analysis`), and find the single points of failure (`risk_dependency_chain_audit`). During: visualize and re-rank (`risk_heat_map`). After: learn without scapegoating (`risk_after_action_review`).
 
@@ -49,6 +49,9 @@ Users are PMs, operators, founders, executives, engineers, and analysts who own 
 | `risk_phishing_awareness_program.md` | Reporting path first, role-based training, published no-shaming simulation rules, and metrics led by report rate and time-to-report, each with its gaming vector |
 | `risk_vendor_security_questionnaire_review.md` | Buyer-side review: tier the vendor by data and access, grade each answer E0–E3 with scope/period checks, turn vague answers into follow-ups, decide with a named residual-risk owner |
 | `risk_payment_fraud_bec_controls.md` | Callback on a number already on file, bank-change hold, platform dual approval, segregation, urgency stop, absence rule, and a same-day bank-recall path |
+| `risk_crisis_severity_triage.md` | Classify a live crisis by severity so the response matches it (moved from `domain-decision-making/` in coverage Wave 4) |
+| `risk_crisis_communication_playbook.md` | Pre-built crisis communication playbook: audiences, sequence, holding statements, approval path (moved from `domain-decision-making/`) |
+| `risk_crisis_comms_draft_and_drill.md` | Draft crisis messages under time pressure and drill the team on them (moved from `domain-decision-making/`) |
 
 ## Quick routing
 

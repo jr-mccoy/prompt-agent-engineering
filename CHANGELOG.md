@@ -85,6 +85,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **The author packet named the collection it forbids the author to look for, and named its neighbours.** Two separate leaks in the authoring firewall, both found by scanning the *built* packet rather than by reading the templates. First: `NATURAL_TASK_BRIEF.md` ended the sentence "do not look for the library these tasks will be run against" by telling the author to record `saw_pae_metadata` — naming the collection in the same breath as forbidding them to find it, of a repository that is public. The same line also asked for a field the submission template does not accept (everything else author-facing uses `saw_collection_metadata`), so an author who followed the brief would have emitted a key the reviewer tooling does not read. Second, and larger: **the masking protocol removed a packet's own identity but left its cross-references to siblings intact.** The corpus writes those as slugs — ``- Android-specific cases (use `android-testing-patterns`)`` — so a packet scrubbed of itself still handed the author real resource names. The fourth masked-target draw made it undeniable: a referenced sibling was itself one of the 45, so one packet disclosed another packet's answer outright, and that is what tripped the full-title gate. Once fixed, **17 of the 45 packets** turned out to contain foreign references — the audit had been catching the rare visible case while the common case went through. `sanitize_body` now redacts any slug matching a known registry identifier whether or not that resource was drawn (the audit's cross-packet gate only looks at in-draw titles, so matching it exactly would have left every out-of-draw sibling name standing, including the one that started this), and separately redacts in-draw titles in whatever separator form the audit would recognise, which keeps the two halves of the firewall from disagreeing. Single-word names are excluded, as `identifying_phrases` already excluded them: a resource called "Risk" would turn every occurrence of the word into a redaction. **The operation survives the name** — ``(use `[identifier removed]`)`` still tells a reader a boundary exists and that something else handles the other case. Cost measured on the live draw: retention median **0.917** against 0.908 for the previous draw, guards preserved **45/45**. Both leaks are guarded by tests — `TestAuthorPacketNamesNothing` scans every author-facing file and filename for the collection name and asserts the provenance key matches the template, and `TestForeignReferenceRedaction` covers slug forms, public-ID tails, separator variants, the own-name exclusion and the single-word rule. **This is the second real defect the rotating-seed CI check has found**, after the guard-preservation false positive on a resource whose title reads like a safety heading; neither would have appeared in a fixed fixture. See the 2026-09-03 amendment to ADR-0041.
 
 ### Changed
+- **Eight duplicate presentation prompts retired, and five decision-making prompts moved to their subject homes** (coverage Wave 4, part 1).
+  - **The duplicates.** `domain-presentations/` held eight pairs of the same prompt saved twice. Each pair shared a title and was 60–87% identical text. In every pair one copy carried a numbered heading ("# 1. Board Deck Generator") and stray export fragments (`jsx`, `` `text ``); the other was clean, and the clean one was what the rest of the repository linked to. Each numbered copy is now `DELETED merged-into` its clean twin in `meta/REORG_MAP.tsv`:
+    - `board_deck_generator` → `board_deck`
+    - `competitive_battle_card_deck` → `competitive_battle_card`
+    - `crisis_management_deck` → `crisis_management`
+    - `deck_assembly_and_validation` → `deck_assembly_validation`
+    - `product_launch_presentation` → `product_launch`
+    - `product_roadmap_presentation` → `product_roadmap`
+    - `quarterly_business_review_builder` → `quarterly_business_review`
+    - `status_report_generator` → `status_report`
+
+    The registry keeps a tombstone for each, and `pae get` on an old id returns it with a pointer to the survivor.
+  - **The moves.** Five `domain-decision-making/` prompts moved to their subject homes, with uids kept and alias rows added for the old ids:
+    - the three crisis prompts → `domain-risk/risk_crisis_*`
+    - `competitive_intelligence_scanner` → `domain-business-strategy/research/`
+    - `pricing_experiment_matrix` → `domain-product-management/prompts/`
+
+    The two crisis prompts' old-style `related_prompts` were rewritten as repository-relative paths rather than re-baselined.
+  - **Counts and checks.**
+    - Tests: moves 243 → 248; `merged-into` 7 → 15; tombstones 45 → 53; live prompts 4477 → 4469.
+    - `ARCHITECTURE.md` and the registry README now match.
+    - The 120-case routing set is unchanged case by case.
 - **Seven prompts moved to their subject homes. They are the first moves since the identity ledger was frozen, and none of them breaks an id anyone already holds.**
   - **What moved** (coverage Wave 2, ADR-0043):
     - Five sales and customer-success prompts: `domain-business-strategy/go-to-market/workflow_*` → `domain-sales-customer/`:

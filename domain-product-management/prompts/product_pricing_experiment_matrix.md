@@ -1,6 +1,6 @@
 ---
 title: "Pricing Experiment Matrix"
-category: decision-making
+category: product-management/prompts
 description: "Design a pricing experiment matrix that tests price changes — ladders, bundle variants, willingness-to-pay probes — without tanking revenue. Output: an experiment grid with hypotheses per cell, sample-size sanity checks, success and failure thresholds, blast-radius limits, and rollback triggers. Optimized for picking the right experiment to run, not for choosing a single new price."
 techniques:
   - ST-01
@@ -19,7 +19,7 @@ tags:
   - revenue
   - willingness-to-pay
   - rollback
-updated: "2026-04-26"
+updated: "2026-09-24"
 related_prompts:
   - domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md
   - domain-decision-making/decisioning_multi_constraint_optimizer.md

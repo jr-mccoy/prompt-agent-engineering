@@ -1,6 +1,6 @@
 ---
 title: "Crisis Communication Playbook"
-category: non-engineering/decisioning
+category: risk/crisis
 description: "Complete framework for communicating during a crisis — from initial holding statement through resolution, covering internal and external audiences"
 techniques:
   - ST-01
@@ -17,12 +17,12 @@ tags:
   - incident-response
   - messaging
   - reputation-management
-updated: "2026-02-26"
+updated: "2026-09-24"
 related_prompts:
-  - decision-making/decisioning_crisis_severity_triage.md
-  - decision-making/decisioning_escalation_decision_tree.md
-  - decision-making/decisioning_rapid_stakeholder_alignment.md
-  - productivity/validation/validation_final_gate.md
+  - domain-risk/risk_crisis_severity_triage.md
+  - domain-decision-making/decisioning_escalation_decision_tree.md
+  - domain-decision-making/decisioning_rapid_stakeholder_alignment.md
+  - domain-productivity/validation/validation_final_gate.md
 ---
 
 # Crisis Communication Playbook
@@ -320,7 +320,7 @@ Within 1-2 weeks, share:
 
 ## Related Prompts
 
-- [decisioning_crisis_severity_triage.md](decisioning_crisis_severity_triage.md) - Assess severity before communicating
-- [decisioning_escalation_decision_tree.md](decisioning_escalation_decision_tree.md) - Determine who to notify
-- [decisioning_rapid_stakeholder_alignment.md](decisioning_rapid_stakeholder_alignment.md) - Align stakeholders during crisis
+- [risk_crisis_severity_triage.md](risk_crisis_severity_triage.md) - Assess severity before communicating
+- [../domain-decision-making/decisioning_escalation_decision_tree.md](../domain-decision-making/decisioning_escalation_decision_tree.md) - Determine who to notify
+- [../domain-decision-making/decisioning_rapid_stakeholder_alignment.md](../domain-decision-making/decisioning_rapid_stakeholder_alignment.md) - Align stakeholders during crisis
 - [validation_final_gate.md](../domain-productivity/validation/validation_final_gate.md) - Verify communications before sending

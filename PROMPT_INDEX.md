@@ -6,11 +6,11 @@
 
 **Generated:** 2026-09-24
 
-**Total Indexed Artifacts:** 5861
+**Total Indexed Artifacts:** 5853
 
 **Artifacts with Frontmatter:** 4925
 
-**Artifacts without Frontmatter:** 936
+**Artifacts without Frontmatter:** 928
 
 ---
 
@@ -1985,7 +1985,7 @@
 
 ## Business Strategy
 
-**Total:** 87 prompts
+**Total:** 88 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -2018,6 +2018,7 @@
 | [Volunteer Program Design — Roles, Risk-Tiered Scre](domain-business-strategy/nonprofit/nonprofit_volunteer_program_design.md) | business-strategy/nonprofit | QA-08, NE-11, DS-06, CM-02, QA-01 | nonprofit, volunteer-management, screening, safeguarding, retention | Design or repair a nonprofit volunteer program as an operating system: role descriptions sized in ho... |
 | [24-Hour Leader Pulse Briefing](domain-business-strategy/research/research_24_hour_leader_pulse.md) | business-strategy/research | ST-01, ST-02, RT-02, DS-06, QA-01 | market-intelligence, competitive-analysis, leadership, briefing, research | Scan and synthesize the last 24 hours of public statements from a named set of industry leaders into... |
 | [Company Deep Dive](domain-business-strategy/research/research_company_deep_dive.md) | business-strategy/research | ST-01, RT-02, DS-02, RT-05, QA-01 | research, company-analysis, competitive-intelligence, due-diligence, web-research | Conduct a comprehensive, source-cited analysis of a company — business model, market position, finan... |
+| [Competitive Intelligence Scanner (Decision-Feeding](domain-business-strategy/research/research_competitive_intelligence_scanner.md) | business-strategy/research | ST-01, ST-02, RT-02, CM-02, DS-02 | decision-making, competitive-intelligence, market-scanning, decision-input, signals | Run a structured scan of a competitive landscape that feeds a single specified decision rather than ... |
 | [Competitive Landscape Analysis](domain-business-strategy/research/research_competitive_landscape.md) | business-strategy/research | ST-01, RT-02, DS-02, RT-05, QA-02 | research, competitive-analysis, market-research, benchmarking, web-research | Research direct competitors in a market and produce a structured, source-cited comparison table (CSV... |
 | [Competitor Teardown — Product, Positioning, Distri](domain-business-strategy/research/competitor_teardown.md) | business-strategy/research | ST-01, ST-02, RT-02, DS-01, DS-02 | competitive-analysis, teardown, market-research, positioning, strategy | Structured single-competitor teardown across product, positioning, distribution, unit-economics sign... |
 | [Industry Trend Report](domain-business-strategy/research/research_industry_trends.md) | business-strategy/research | ST-01, RT-02, DS-02, RT-05, QA-01 | research, industry-trends, market-research, strategic-planning, web-research | Research and synthesize the major trends shaping a market into a role-targeted, source-cited briefin... |
@@ -2181,19 +2182,16 @@
 
 ## Decision Making
 
-**Total:** 43 prompts
+**Total:** 38 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
 | [Chained Decision Alignment Evaluator](domain-decision-making/decisioning_chained_alignment_evaluator.md) | decision-making | ST-01, ST-02, DS-01, DS-02, CM-02 | decision-making, alignment, drift, chain-of-decisions, recovery | Evaluate how a chain of recent or upcoming decisions aligns or diverges against a stated top-level o... |
-| [Competitive Intelligence Scanner (Decision-Feeding](domain-decision-making/decisioning_competitive_intelligence_scanner.md) | decision-making | ST-01, ST-02, RT-02, CM-02, DS-02 | decision-making, competitive-intelligence, market-scanning, decision-input, signals | Run a structured scan of a competitive landscape that feeds a single specified decision rather than ... |
-| [Crisis Comms Draft and Drill](domain-decision-making/decisioning_crisis_comms_draft_and_drill.md) | decision-making | ST-01, ST-02, RT-02, RP-02, CM-02 | decision-making, crisis-communication, drill, holding-statement, spokesperson-prep | Produce the actual artifacts a leader needs in the first 60 minutes of a crisis: an internal holding... |
 | [Expert-Lens Reasoning Emulation](domain-decision-making/decisioning_reasoning_emulation.md) | decision-making | ST-01, ST-02, RT-01, RT-02, CM-02 | decision-making, perspective-taking, role-emulation, stress-test, blind-spot | Stress-test a decision by emulating the reasoning process of a specific expert role (investor, opera... |
 | [Fresh Perspective Generator (Stuck Decision)](domain-decision-making/decisioning_fresh_perspective_generator.md) | decision-making | ST-01, ST-02, RT-01, RT-02, CM-02 | decision-making, perspective-shift, reframing, stuck-decision, inversion | Break a stuck decision out of one viewpoint by generating four deliberate alternative viewpoints — i... |
 | [Goal System Designer](domain-decision-making/decisioning_goal_system_designer.md) | decision-making | ST-01, ST-02, RT-02, DS-01, DS-02 | decision-making, goal-system, okrs, alignment, cadence | Design a coherent goal system for a team or org: top-level objective, key results that gate it, casc... |
 | [Interrogative Mode — Ask, Don't Answer](domain-decision-making/decisioning_interrogative_mode.md) | decision-making | ST-01, ST-02, RT-01, DS-02, CM-02 | decision-making, interrogation, socratic, question-generation, assumptions | Switch the model into a disciplined question-asking stance on a decision or idea: probe assumptions,... |
 | [Judgment Assessment (Post-Decision Meta-Reflection](domain-decision-making/judgement_assessment_prompt.md) | decision-making | ST-01, ST-02, RT-01, RT-02, CM-02 | decision-making, judgment, meta-reflection, cognitive-bias, learning | Assess the quality of your own judgment on a recent decision after the outcome is at least partially... |
-| [Pricing Experiment Matrix](domain-decision-making/decisioning_pricing_experiment_matrix.md) | decision-making | ST-01, ST-02, RT-02, RT-03, CM-02 | decision-making, pricing, experimentation, revenue, willingness-to-pay | Design a pricing experiment matrix that tests price changes — ladders, bundle variants, willingness-... |
 | [Rapid Tradeoff Analyzer (Weighted Multi-Criteria)](domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md) | decision-making | ST-01, ST-02, DS-02, CM-02, QA-01 | decision-making, tradeoff-analysis, weighted-scoring, rapid-decision, sensitivity | Time-boxed, structured tradeoff analysis across 3–5 options and 4–6 weighted criteria. Produces scor... |
 | [Regret Minimization Across Time Horizons](domain-decision-making/decisioning_regret_minimization.md) | decision-making | ST-01, ST-02, RT-02, DS-01, CM-02 | decision-making, regret-minimization, time-horizon, future-self, scoring | Evaluate a concrete decision against a future-self regret framework at user-specified time horizons ... |
 | [Regulatory Risk Radar](domain-decision-making/decisioning_regulatory_risk_radar.md) | decision-making | ST-01, ST-02, RT-02, RT-03, DS-02 | decision-making, regulatory-risk, compliance, jurisdiction-scan, hedging | Scan an industry, jurisdiction, or product surface for regulatory risks relevant to a specific produ... |
@@ -2218,8 +2216,6 @@
 | [Real Options Framing — Decisions as Optionality, N](domain-decision-making/tradeoff_real_options_framing.md) | decision-making/tradeoffs | ST-01, ST-02, RT-02, DS-01, CM-02 | decision-making, real-options, optionality, sequencing, uncertainty | Reframe a decision that looks like a single irreversible commit as a sequence of options: an initial... |
 | [Reversibility × Stakes Grid — Decision Sequencing ](domain-decision-making/tradeoff_reversibility_stakes_grid.md) | decision-making/tradeoffs | ST-01, ST-02, RT-02, DS-01, CM-02 | decision-making, reversibility, stakes, sequencing, meta-decision | Plot a decision (or set of decisions) on a 2x2 grid: reversibility (one-way / two-way door) × stakes... |
 | [Blind Spot Analysis and Falsification](domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md) | non-engineering/decisioning | QA-02, RT-02, DS-02, ST-02, OC-02 | self-reflection, blind-spots, cognitive-bias, falsification, decision-making | Identify cognitive blind spots in your self-assessment and generate falsifiable experiments to test ... |
-| [Crisis Communication Playbook](domain-decision-making/decisioning_crisis_communication_playbook.md) | non-engineering/decisioning | ST-01, ST-02, RT-02, RP-02, CM-01 | crisis-communication, stakeholder-management, public-relations, incident-response, messaging | Complete framework for communicating during a crisis — from initial holding statement through resolu... |
-| [Crisis Severity Triage](domain-decision-making/decisioning_crisis_severity_triage.md) | non-engineering/decisioning | ST-01, ST-02, RT-02, DS-06, QA-04 | crisis-management, triage, severity-assessment, rapid-response, decision-making | 5-minute rapid assessment framework to classify crisis severity, determine response urgency, and rou... |
 | [Escalation Decision Tree](domain-decision-making/decisioning_escalation_decision_tree.md) | non-engineering/decisioning | ST-01, ST-02, RT-01, RT-02, DS-06 | escalation, crisis-management, communication, decision-making, stakeholder-management | Structured framework for determining when to escalate, who to notify, what information to provide, a... |
 | [First Principles Problem Decomposition](domain-decision-making/decisioning_first_principles_problem_decomposition.md) | non-engineering/decisioning | ST-01, ST-02, RT-01, RT-04, DT-01 | first-principles, problem-solving, decomposition, critical-thinking, complex-problems | Break down complex, seemingly intractable problems into fundamental truths and rebuild solutions fro... |
 | [Logic and Complex Problem Solver](domain-decision-making/decisioning_logic_problem_solver.md) | non-engineering/decisioning | ST-01, ST-02, RT-01, RT-02, RT-03 | logic, reasoning, problem-solving, analytical-thinking, complex-problems | Systematic framework for solving complex logic, reasoning, and analytical problems by applying struc... |
@@ -4440,22 +4436,14 @@
 
 ## Presentations
 
-**Total:** 46 prompts
+**Total:** 38 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
-| [1. Board Deck Generator](domain-presentations/powerpoint_board_deck_generator.md) | presentations | — | board, deck, generator, notes, powerpoint | ``` jsx SYSTEM PROMPT: BOARD DECK GENERATOR |
 | [1. Corporate Style Extractor](domain-presentations/powerpoint_corporate_style_extractor.md) | presentations | — | corporate, extractor, notes, powerpoint, prompt | ``` jsx `textSYSTEM PROMPT: CORPORATE STYLE EXTRACTOR |
-| [10. Status Report Generator](domain-presentations/powerpoint_status_report_generator.md) | presentations | — | generator, notes, powerpoint, prompt, report | ``` jsx SYSTEM PROMPT: STATUS REPORT GENERATOR |
 | [11. All-Hands Communicator](domain-presentations/powerpoint_all_hands_communicator.md) | presentations | — | all, communicator, hands, notes, powerpoint | ``` jsx SYSTEM PROMPT: ALL-HANDS COMMUNICATOR |
-| [12. Competitive Battle Card Deck](domain-presentations/powerpoint_competitive_battle_card_deck.md) | presentations | — | battle, card, competitive, deck, notes | ``` jsx SYSTEM PROMPT: COMPETITIVE BATTLE CARD DECK |
 | [2. Corporate Style Applicator](domain-presentations/powerpoint_corporate_style_applicator.md) | presentations | — | applicator, corporate, notes, powerpoint, prompt | ``` jsx textSYSTEM PROMPT: CORPORATE STYLE APPLICATOR |
-| [2. Crisis Management Deck](domain-presentations/powerpoint_crisis_management_deck.md) | presentations | — | crisis, deck, management, notes, powerpoint | ``` jsx SYSTEM PROMPT: CRISIS MANAGEMENT DECK |
 | [3. Enterprise Deck Architect](domain-presentations/powerpoint_enterprise_deck_architect.md) | presentations | — | architect, deck, enterprise, notes, powerpoint | ``` jsx textSYSTEM PROMPT: ENTERPRISE DECK ARCHITECT |
-| [3. Quarterly Business Review Builder](domain-presentations/powerpoint_quarterly_business_review_builder.md) | presentations | — | builder, business, notes, powerpoint, prompt | ``` jsx SYSTEM PROMPT: QUARTERLY BUSINESS REVIEW BUILDER |
-| [4. Deck Assembly & Validation](domain-presentations/powerpoint_deck_assembly_and_validation.md) | presentations | — | and, assembly, deck, notes, powerpoint | ``` jsx textSYSTEM PROMPT: DECK ASSEMBLY & VALIDATION |
-| [6. Product Roadmap Presentation](domain-presentations/powerpoint_product_roadmap_presentation.md) | presentations | — | notes, powerpoint, presentation, product, prompt | ``` jsx `SYSTEM PROMPT: PRODUCT ROADMAP PRESENTATION |
-| [7. Product Launch Presentation](domain-presentations/powerpoint_product_launch_presentation.md) | presentations | — | launch, notes, powerpoint, presentation, product | ``` jsx SYSTEM PROMPT: PRODUCT LAUNCH PRESENTATION |
 | [8. Campaign Results Reporter](domain-presentations/powerpoint_campaign_results_reporter.md) | presentations | — | campaign, notes, powerpoint, prompt, reporter | ``` jsx SYSTEM PROMPT: CAMPAIGN RESULTS REPORTER |
 | [9. Financial Storyteller](domain-presentations/powerpoint_financial_storyteller.md) | presentations | — | financial, notes, powerpoint, prompt, storyteller | ``` jsx SYSTEM PROMPT: FINANCIAL STORYTELLER |
 | [Board Deck Generator](domain-presentations/powerpoint_board_deck.md) | presentations | — | board, deck, notes, powerpoint, prompt | ``` SYSTEM PROMPT: BOARD DECK GENERATOR |
@@ -4493,7 +4481,7 @@
 
 ## Product Management
 
-**Total:** 14 prompts
+**Total:** 15 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -4506,6 +4494,7 @@
 | [Market Size (TAM/SAM/SOM) — Rapid or Comprehensive](domain-product-management/prompts/product_market_size_calculator.md) | product-management/prompts | ST-01, ST-02, RT-02, DS-02, CM-02 | product-management, market-sizing, tam-sam-som, business-strategy, estimation | Calculate Total / Serviceable / Obtainable market sizes using three independent methodologies (top-d... |
 | [North-Star Metric Definition — One Number, Its Inp](domain-product-management/prompts/product_north_star_metric_definition.md) | product-management/prompts | CM-02, RT-05, QA-04, QA-18, OC-03 | metrics, north-star, product-analytics, counter-metrics, goodharts-law | Define a product north-star metric: a candidate set tested against five criteria, the input metrics ... |
 | [Opportunity Solution Tree — Outcome to Opportuniti](domain-product-management/prompts/product_opportunity_solution_tree.md) | product-management/prompts | ST-02, CM-03, RT-05, NE-09, OC-03 | product-discovery, opportunity-mapping, outcome-driven, continuous-discovery, prioritization | Build an opportunity solution tree from a single product outcome: opportunities expressed as custome... |
+| [Pricing Experiment Matrix](domain-product-management/prompts/product_pricing_experiment_matrix.md) | product-management/prompts | ST-01, ST-02, RT-02, RT-03, CM-02 | decision-making, pricing, experimentation, revenue, willingness-to-pay | Design a pricing experiment matrix that tests price changes — ladders, bundle variants, willingness-... |
 | [Product Delivery Sprint Planner](domain-product-management/prompts/product_delivery_sprint_planner.md) | product-management/prompts | ST-02, DS-02, CM-02, RT-02, QA-01 | product-management, sprint-planning, user-stories, delivery, dependencies | Plan a cross-functional product delivery sprint from an approved PRD: decompose into user stories wi... |
 | [Product Idea Vetting — Will It Fly or Flop? Fast S](domain-product-management/prompts/product_product_idea_vetting_will_it_fly_or_flop.md) | product-management/prompts | ST-01, ST-02, RT-02, DS-06, QA-04 | idea-validation, product-strategy, go-no-go, risk-assessment, early-stage | Fast solo vetting of a raw product idea against demand, feasibility, risk, and timing dimensions. Ou... |
 | [Score a PRD Against a Rigorous Rubric](domain-product-management/prompts/product_rigorous_prd_evaluation_and_scoring.md) | product-management/prompts | ST-02, RT-02, CM-02, DS-01, QA-01 | product-management, prd, review, rubric, quality-gate | Evaluate an existing Product Requirements Document against a weighted rubric (clarity, problem frami... |
@@ -5345,7 +5334,7 @@
 
 ## Risk
 
-**Total:** 15 prompts
+**Total:** 18 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -5358,6 +5347,9 @@
 | [Tabletop Exercise Designer — A Scenario With Injec](domain-risk/risk_tabletop_exercise_designer.md) | risk | ST-02, MP-04, QA-02, DS-40, OC-03 | tabletop-exercise, incident-response, business-continuity, exercise-design, facilitation | Design and facilitate a 60–120 minute discussion-based tabletop exercise that tests a written plan (... |
 | [Vendor Security Questionnaire Review — Reading a S](domain-risk/risk_vendor_security_questionnaire_review.md) | risk | ST-43, RT-05, DD-02, DS-06, QA-12 | vendor-risk, third-party-risk, security-questionnaire, procurement, due-diligence | Review a prospective or existing vendor's security questionnaire, attestation or trust-page claims f... |
 | [After-Action Review — Post-Event Learning When a R](domain-risk/risk_after_action_review.md) | risk/after-action | ST-01, ST-02, RT-02, DS-01, DS-02 | risk-management, after-action-review, post-mortem, root-cause, organizational-learning | Conduct a structured After-Action Review once a risk event has actually happened. Walk the US Army A... |
+| [Crisis Comms Draft and Drill](domain-risk/risk_crisis_comms_draft_and_drill.md) | risk/crisis | ST-01, ST-02, RT-02, RP-02, CM-02 | decision-making, crisis-communication, drill, holding-statement, spokesperson-prep | Produce the actual artifacts a leader needs in the first 60 minutes of a crisis: an internal holding... |
+| [Crisis Communication Playbook](domain-risk/risk_crisis_communication_playbook.md) | risk/crisis | ST-01, ST-02, RT-02, RP-02, CM-01 | crisis-communication, stakeholder-management, public-relations, incident-response, messaging | Complete framework for communicating during a crisis — from initial holding statement through resolu... |
+| [Crisis Severity Triage](domain-risk/risk_crisis_severity_triage.md) | risk/crisis | ST-01, ST-02, RT-02, DS-06, QA-04 | crisis-management, triage, severity-assessment, rapid-response, decision-making | 5-minute rapid assessment framework to classify crisis severity, determine response urgency, and rou... |
 | [Dependency Chain Audit — Single Points of Failure ](domain-risk/risk_dependency_chain_audit.md) | risk/dependencies | ST-01, ST-02, RT-02, DS-01, DS-02 | risk-management, dependencies, single-point-of-failure, blast-radius, resilience | Map dependencies across a system, project, or operation — vendors, key people, infrastructure, contr... |
 | [FMEA Analysis — Failure Modes and Effects for Non-](domain-risk/risk_fmea_analysis.md) | risk/fmea | ST-01, ST-02, RT-02, DS-01, DS-02 | risk-management, fmea, failure-modes, rpn, process-analysis | Run a Failure Mode and Effects Analysis on a process or product. For each step or component, identif... |
 | [Risk Register Builder — A Maintainable Register, N](domain-risk/risk_register_builder.md) | risk/register | ST-01, ST-02, RT-02, DS-01, DS-02 | risk-management, risk-register, mitigation, ownership, governance | Build a structured, maintainable risk register for a project, product, initiative, or operation. Eac... |
@@ -6213,7 +6205,7 @@
 
 ---
 
-## Prompts Without Frontmatter (936)
+## Prompts Without Frontmatter (928)
 
 These prompts need frontmatter metadata added:
 
@@ -7098,26 +7090,18 @@ These prompts need frontmatter metadata added:
 - `domain-image-generation/coloring-book/image_to_coloring_book_page.md` - Image to Children's Coloring Book Page
 - `domain-presentations/powerpoint_all_hands_communicator.md` - 11. All-Hands Communicator
 - `domain-presentations/powerpoint_board_deck.md` - Board Deck Generator
-- `domain-presentations/powerpoint_board_deck_generator.md` - 1. Board Deck Generator
 - `domain-presentations/powerpoint_campaign_results_reporter.md` - 8. Campaign Results Reporter
 - `domain-presentations/powerpoint_competitive_battle_card.md` - Competitive Battle Card Deck
-- `domain-presentations/powerpoint_competitive_battle_card_deck.md` - 12. Competitive Battle Card Deck
 - `domain-presentations/powerpoint_corporate_style_applicator.md` - 2. Corporate Style Applicator
 - `domain-presentations/powerpoint_corporate_style_extractor.md` - 1. Corporate Style Extractor
 - `domain-presentations/powerpoint_crisis_management.md` - Crisis Management Deck
-- `domain-presentations/powerpoint_crisis_management_deck.md` - 2. Crisis Management Deck
-- `domain-presentations/powerpoint_deck_assembly_and_validation.md` - 4. Deck Assembly & Validation
 - `domain-presentations/powerpoint_deck_assembly_validation.md` - Deck Assembly & Validation
 - `domain-presentations/powerpoint_enterprise_deck_architect.md` - 3. Enterprise Deck Architect
 - `domain-presentations/powerpoint_financial_storyteller.md` - 9. Financial Storyteller
 - `domain-presentations/powerpoint_product_launch.md` - Product Launch Presentation
-- `domain-presentations/powerpoint_product_launch_presentation.md` - 7. Product Launch Presentation
 - `domain-presentations/powerpoint_product_roadmap.md` - Product Roadmap Presentation
-- `domain-presentations/powerpoint_product_roadmap_presentation.md` - 6. Product Roadmap Presentation
 - `domain-presentations/powerpoint_quarterly_business_review.md` - Quarterly Business Review Builder
-- `domain-presentations/powerpoint_quarterly_business_review_builder.md` - 3. Quarterly Business Review Builder
 - `domain-presentations/powerpoint_status_report.md` - Status Report Generator
-- `domain-presentations/powerpoint_status_report_generator.md` - 10. Status Report Generator
 - `domain-product-management/templates/prd_template.md` - Product Requirements Document (PRD) Template
 - `domain-professional-writing/business-writing/business_writing_executive_proposal_template.md` - Executive Proposal Template (BLUF Format)
 - `domain-professional-writing/business-writing/business_writing_investment_proposal_example.md` - Worked Example: Building an Investment Proposal

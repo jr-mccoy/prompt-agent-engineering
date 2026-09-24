@@ -1,6 +1,6 @@
 ---
 title: "Competitive Intelligence Scanner (Decision-Feeding)"
-category: decision-making
+category: business-strategy/research
 description: "Run a structured scan of a competitive landscape that feeds a single specified decision rather than producing a research dump. Output: a named-competitor inventory, claimed differentiation per competitor, observable gaps you can exploit, signals to monitor, and a one-paragraph 'what this changes' for the named decision."
 techniques:
   - ST-01
@@ -18,7 +18,7 @@ tags:
   - market-scanning
   - decision-input
   - signals
-updated: "2026-04-26"
+updated: "2026-09-24"
 related_prompts:
   - domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md
   - domain-software-engineering/analysis/business/competitive_positioning_map.md

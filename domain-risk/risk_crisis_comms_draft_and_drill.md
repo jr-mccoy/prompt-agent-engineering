@@ -1,6 +1,6 @@
 ---
 title: "Crisis Comms Draft and Drill"
-category: decision-making
+category: risk/crisis
 description: "Produce the actual artifacts a leader needs in the first 60 minutes of a crisis: an internal holding statement, an external holding statement, a single-page audience matrix, and a 10-minute spokesperson drill script keyed to the be-first / be-right / be-credible discipline. Optimized for use under time pressure, not as a framework reference."
 techniques:
   - ST-01
@@ -17,10 +17,10 @@ tags:
   - drill
   - holding-statement
   - spokesperson-prep
-updated: "2026-04-26"
+updated: "2026-09-24"
 related_prompts:
-  - domain-decision-making/decisioning_crisis_communication_playbook.md
-  - domain-decision-making/decisioning_crisis_severity_triage.md
+  - domain-risk/risk_crisis_communication_playbook.md
+  - domain-risk/risk_crisis_severity_triage.md
   - domain-decision-making/decisioning_rapid_stakeholder_alignment.md
   - domain-decision-making/decisioning_escalation_decision_tree.md
 ---
@@ -36,8 +36,8 @@ related_prompts:
 - Pre-drilling: rehearsing a likely scenario before it happens, to build muscle memory.
 
 **When NOT to use:**
-- The user has not yet triaged severity. Run `decisioning_crisis_severity_triage.md` first.
-- The user wants the full multi-phase framework (holding → update → resolution → trust rebuilding). Use `decisioning_crisis_communication_playbook.md` instead.
+- The user has not yet triaged severity. Run `risk_crisis_severity_triage.md` first.
+- The user wants the full multi-phase framework (holding → update → resolution → trust rebuilding). Use `risk_crisis_communication_playbook.md` instead.
 - The crisis is over and the user is preparing a post-mortem. Use a post-mortem prompt.
 - The user does not yet know who the affected audiences are. Run an audience scoping pass first.
 

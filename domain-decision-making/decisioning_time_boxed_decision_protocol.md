@@ -19,7 +19,7 @@ tags:
   - time-sensitive
 updated: "2026-02-26"
 related_prompts:
-  - decision-making/decisioning_crisis_severity_triage.md
+  - domain-risk/risk_crisis_severity_triage.md
   - productivity/validation/validation_quick_reality_check.md
 ---
 
@@ -271,5 +271,5 @@ Before finalizing, spend remaining buffer time on:
 
 ## Related Prompts
 
-- [decisioning_crisis_severity_triage.md](decisioning_crisis_severity_triage.md) - Assess severity before deciding
+- [../domain-risk/risk_crisis_severity_triage.md](../domain-risk/risk_crisis_severity_triage.md) - Assess severity before deciding
 - [validation_quick_reality_check.md](../domain-productivity/validation/validation_quick_reality_check.md) - Quick verification

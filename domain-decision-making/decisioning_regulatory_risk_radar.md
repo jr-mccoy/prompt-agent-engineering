@@ -23,8 +23,8 @@ tags:
 updated: "2026-04-26"
 related_prompts:
   - domain-decision-making/decisioning_chained_alignment_evaluator.md
-  - domain-decision-making/decisioning_competitive_intelligence_scanner.md
-  - domain-decision-making/decisioning_crisis_severity_triage.md
+  - domain-business-strategy/research/research_competitive_intelligence_scanner.md
+  - domain-risk/risk_crisis_severity_triage.md
   - domain-software-engineering/analysis/business/pestel_analysis.md
 ---
 

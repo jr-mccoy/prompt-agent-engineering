@@ -20,8 +20,8 @@ tags:
   - continuous-improvement
 updated: "2026-02-26"
 related_prompts:
-  - decision-making/decisioning_crisis_severity_triage.md
-  - decision-making/decisioning_crisis_communication_playbook.md
+  - domain-risk/risk_crisis_severity_triage.md
+  - domain-risk/risk_crisis_communication_playbook.md
   - engineering-workflows/workflows/engineering_post_mortem_root_cause_ladder.md
   - engineering-workflows/workflows/engineering_postmortem_blueprint.md
 ---
@@ -261,7 +261,7 @@ Go beyond "preventing this specific crisis" to "becoming more resilient generall
 
 ## Related Prompts
 
-- [decisioning_crisis_severity_triage.md](decisioning_crisis_severity_triage.md) - Initial crisis assessment
-- [decisioning_crisis_communication_playbook.md](decisioning_crisis_communication_playbook.md) - Communication during the crisis
+- [../domain-risk/risk_crisis_severity_triage.md](../domain-risk/risk_crisis_severity_triage.md) - Initial crisis assessment
+- [../domain-risk/risk_crisis_communication_playbook.md](../domain-risk/risk_crisis_communication_playbook.md) - Communication during the crisis
 - [engineering_post_mortem_root_cause_ladder.md](../domain-engineering-workflows/workflows/engineering_post_mortem_root_cause_ladder.md) - Technical root cause analysis
 - [engineering_postmortem_blueprint.md](../domain-engineering-workflows/workflows/engineering_postmortem_blueprint.md) - Facilitated postmortem process

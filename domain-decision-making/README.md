@@ -15,21 +15,19 @@ prefix**, not by subfolder. `documentation/` is the only subfolder.
 
 | Family | Count | What it covers |
 |---|---|---|
-| `decisioning_*.md` | 25 | Tradeoff analysis, blind-spot mirror, first-principles decomposition, prioritization framework selector, regret minimization, sunk-cost audit, time-boxed decision protocol, stakeholder alignment, multi-constraint and resource-constrained solvers, escalation decision tree, and crisis severity triage, playbook and drills |
+| `decisioning_*.md` | 20 | Tradeoff analysis, blind-spot mirror, first-principles decomposition, prioritization framework selector, regret minimization, sunk-cost audit, time-boxed decision protocol, stakeholder alignment, multi-constraint and resource-constrained solvers, escalation decision tree |
 | `scenario_*.md` | 7 | Backcasting, 2×2 scenario matrix, multi-horizon roadmap, robustness test, signposts and triggers, wild-card injection, strategic pre-mortem |
 | `tradeoff_*.md` | 4 | Multi-criteria decision analysis, Pugh matrix, real-options framing, reversibility × stakes grid |
 | `judgement_assessment_prompt.md` | 1 | Assess the quality of a judgement call |
 | [`documentation/`](documentation/) | 6 | `decisiondoc_*`: after-action report, decision log entry, Bezos-style narrative memo, one-pager, options memo, post-decision review |
 
-Several files sit here for historical reasons and are candidates to move to their
-subject homes:
-- the three crisis-communication files → `domain-risk/`;
-- `decisioning_competitive_intelligence_scanner.md` →
-  `domain-business-strategy/`;
-- `decisioning_pricing_experiment_matrix.md` → product and pricing.
+**Moved out in coverage Wave 4** (uids kept; old ids resolve as aliases):
+- the three crisis files → `domain-risk/risk_crisis_severity_triage.md`,
+  `risk_crisis_communication_playbook.md`, `risk_crisis_comms_draft_and_drill.md`;
+- competitive intelligence → `domain-business-strategy/research/research_competitive_intelligence_scanner.md`;
+- pricing experiments → `domain-product-management/prompts/product_pricing_experiment_matrix.md`.
 
-These moves are tracked for coverage Wave 4 in
-[`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md).
+See [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md).
 
 ---
 
@@ -37,7 +35,7 @@ These moves are tracked for coverage Wave 4 in
 
 ```
 domain-decision-making/
-├── decisioning_*.md          # 25 decision-support prompts
+├── decisioning_*.md          # 20 decision-support prompts
 ├── scenario_*.md             # 7 scenario-planning prompts
 ├── tradeoff_*.md             # 4 structured tradeoff methods
 ├── judgement_assessment_prompt.md

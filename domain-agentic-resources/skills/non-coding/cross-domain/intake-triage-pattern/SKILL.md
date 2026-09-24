@@ -34,7 +34,7 @@ loudest is served first.
   `../../../devops/on-call-handoff-patterns/`.
 - **Escalation pathways.** How something moves up rather than in is
   `../../../../../domain-decision-making/decisioning_escalation_decision_tree.md` and
-  `decisioning_crisis_severity_triage.md`.
+  `domain-risk/risk_crisis_severity_triage.md`.
 - **Scoring or ranking the substance** of a request once accepted — that is
   `../quality-rubric-template/`.
 - **Sales lead qualification**, which has its own lifecycle model — see

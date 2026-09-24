@@ -1152,7 +1152,7 @@ pae_6e2ge4e0ewg4	skill	skill:agentic-resources/web-development/qwik-development	
 pae_6ectksnvdq5b	prompt	prompt:finance/personal-finance-planning/finance-net-worth-cashflow-diagnostic	domain-finance/personal-finance-planning/finance_net_worth_cashflow_diagnostic.md
 pae_6eed9wc6zk5p	prompt	prompt:personal-development/major-decisions/personal-financial-decision-framework	domain-personal-development/major-decisions/personal_financial_decision_framework.md
 pae_6ejcfpwd7hr8	technique	technique:AG-35	technique:AG-35
-pae_6esjwxb1q0fq	prompt	prompt:decision-making/decisioning-crisis-severity-triage	domain-decision-making/decisioning_crisis_severity_triage.md
+pae_6esjwxb1q0fq	prompt	prompt:risk/risk-crisis-severity-triage	domain-decision-making/decisioning_crisis_severity_triage.md
 pae_6ethj925yzdg	prompt	prompt:personal-development/job-search/jobsearch-linkedin-profile-audit	domain-personal-development/job-search/jobsearch_linkedin_profile_audit.md
 pae_6fde8rdrtx8h	prompt	prompt:productivity/bottlenecks/bottleneck-distribution-constraint-finder	domain-productivity/bottlenecks/bottleneck_distribution_constraint_finder.md
 pae_6feny24x5vzp	skill	skill:agentic-resources/marketing/email-sequence	domain-agentic-resources/skills/marketing/email-sequence/SKILL.md
@@ -2632,7 +2632,7 @@ pae_evtasckkmrrn	prompt	prompt:education-teaching/learner/self-assessment/learn-
 pae_ew6e4tr82rgx	prompt	prompt:image-generation/worksheet-generators/assessment/education-matching-worksheet-generator	domain-image-generation/worksheet-generators/assessment/education_matching_worksheet_generator.md
 pae_ew87s47cbzhh	prompt	prompt:science/methods-foundations/science-methodology-decision-tree	domain-science/methods-foundations/science_methodology_decision_tree.md
 pae_ew9hy401n7q1	prompt	prompt:parenting/caregiver-facing/ages-9-12/parenting-tween-emerging-independence-negotiation	domain-parenting/caregiver-facing/ages-9-12/parenting_tween_emerging_independence_negotiation.md
-pae_ex62smbsgffv	prompt	prompt:decision-making/decisioning-crisis-communication-playbook	domain-decision-making/decisioning_crisis_communication_playbook.md
+pae_ex62smbsgffv	prompt	prompt:risk/risk-crisis-communication-playbook	domain-decision-making/decisioning_crisis_communication_playbook.md
 pae_exg74qg7s8q2	prompt	prompt:creative-writing/craft-tools/writing-opening-pages-and-hook	domain-creative-writing/craft-tools/writing_opening_pages_and_hook.md
 pae_exntdnp5byqy	prompt	prompt:presentations/board-decks/boarddeck-arr-bridge	domain-presentations/board-decks/boarddeck_arr_bridge.md
 pae_ey41p1f2rshs	prompt	prompt:healthcare-clinical/prompts/workflow/medicine-clinical-documentation	domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
@@ -3315,7 +3315,7 @@ pae_jznhz3f09fk2	prompt	prompt:healthcare-clinical/prompts/nursing/nursing-pacu-
 pae_k02wnyg981ay	skill	skill:agentic-resources/security/slsa-compliance	domain-agentic-resources/skills/security/slsa-compliance/SKILL.md
 pae_k0gr718bktzv	prompt	prompt:healthcare-clinical/prompts/workflow/medicine-em-coding-level-justification	domain-healthcare-clinical/prompts/workflow/medicine_em_coding_level_justification.md
 pae_k0qpfw00jqah	prompt	prompt:business-strategy/startup/brand-identity/startup-brand-personality	domain-business-strategy/startup/brand-identity/startup_brand_personality.md
-pae_k0s8nc39hdnd	prompt	prompt:decision-making/decisioning-pricing-experiment-matrix	domain-decision-making/decisioning_pricing_experiment_matrix.md
+pae_k0s8nc39hdnd	prompt	prompt:product-management/prompts/product-pricing-experiment-matrix	domain-decision-making/decisioning_pricing_experiment_matrix.md
 pae_k0v7exd6808w	prompt	prompt:psychology/assessment-testing/psychology-adhd-testing-battery-design	domain-psychology/assessment-testing/psychology_adhd_testing_battery_design.md
 pae_k0wrgfx6qhba	prompt	prompt:engineering-workflows/ai-patterns/ai-verification-architectural-taste-gate	domain-engineering-workflows/ai-patterns/ai_verification_architectural_taste_gate.md
 pae_k0x473m1s5yp	prompt	prompt:healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu-orient-shift-structure-card	domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_shift_structure_card.md
@@ -3469,7 +3469,7 @@ pae_ks9r8qkmd9pn	prompt	prompt:engineering-workflows/ai-native-rollouts/airollou
 pae_ksahwsb4b4ws	prompt	prompt:education-teaching/learner/guides/adult-returning/learn-workflow-cross-domain-kit	domain-education-teaching/learner/guides/adult-returning/learn_workflow_cross_domain_kit.md
 pae_kskne4786x2v	prompt	prompt:software-engineering/testing/testing-mutation-testing	domain-software-engineering/testing/testing_mutation_testing.md
 pae_kt1aa6sr3vg8	prompt	prompt:software-engineering/mobile/cross-platform/migration/migration-retrofit-to-urlsession	domain-software-engineering/mobile/cross-platform/migration/migration_retrofit_to_urlsession.md
-pae_kt3tmpwmna22	prompt	prompt:decision-making/decisioning-crisis-comms-draft-and-drill	domain-decision-making/decisioning_crisis_comms_draft_and_drill.md
+pae_kt3tmpwmna22	prompt	prompt:risk/risk-crisis-comms-draft-and-drill	domain-decision-making/decisioning_crisis_comms_draft_and_drill.md
 pae_ktdvppkg9q05	skill	skill:agentic-resources/data-engineering/data-storytelling	domain-agentic-resources/skills/data-engineering/data-storytelling/SKILL.md
 pae_ktmvt5ea1x5a	prompt	prompt:business-strategy/go-to-market/marketing-community-building	domain-business-strategy/startup/marketing_community_building.md
 pae_ktnz50jgrw4e	prompt	prompt:productivity/automation/automation-content-monitoring	domain-productivity/automation/automation_content_monitoring.md
@@ -5548,7 +5548,7 @@ pae_zr35j3kppbz1	prompt	prompt:productivity/reviews/reviews-time-audit-evidence-
 pae_zrcvdny2nywr	skill	skill:agentic-resources/security/semgrep-rule-creator	domain-agentic-resources/skills/security/semgrep-rule-creator/SKILL.md
 pae_zrf2fa7c3erq	prompt	prompt:productivity/reviews/reviews-solo-dev-weekly-operating-rhythm	domain-business-strategy/startup/solo_dev_weekly_operating_rhythm.md
 pae_zs2r2z90arbd	prompt	prompt:ai-governance-audit-kit/prompts/stage-3-observed-scoring	ai-governance-audit-kit/prompts/stage-3-observed-scoring.md
-pae_zs2xn23gejd7	prompt	prompt:decision-making/decisioning-competitive-intelligence-scanner	domain-decision-making/decisioning_competitive_intelligence_scanner.md
+pae_zs2xn23gejd7	prompt	prompt:business-strategy/research/research-competitive-intelligence-scanner	domain-decision-making/decisioning_competitive_intelligence_scanner.md
 pae_zs5f67xey8vs	prompt	prompt:advertising/advertising-financial-services-fintech	domain-advertising/advertising_financial_services_fintech.md
 pae_zsdrhqx0xeqt	prompt	prompt:finance/corporate-finance-fpa/finance-engagement-profitability-postcalc	domain-finance/corporate-finance-fpa/finance_engagement_profitability_postcalc.md
 pae_zsr4eqks2tna	prompt	prompt:prompt-engineering/utilities/json-prompt-translator	domain-prompt-engineering/utilities/json_prompt_translator.md

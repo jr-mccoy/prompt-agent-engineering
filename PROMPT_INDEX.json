@@ -3,9 +3,9 @@
     "generated": "2026-09-24",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 5861,
+    "total_indexed_artifacts": 5853,
     "artifacts_with_frontmatter": 4925,
-    "artifacts_without_frontmatter": 936,
+    "artifacts_without_frontmatter": 928,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -14,9 +14,9 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 5861,
+    "total_prompts": 5853,
     "prompts_with_frontmatter": 4925,
-    "prompts_without_frontmatter": 936
+    "prompts_without_frontmatter": 928
   },
   "prompts": [
     {
@@ -50056,6 +50056,40 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-business-strategy/research/research_competitive_intelligence_scanner.md",
+      "filename": "research_competitive_intelligence_scanner.md",
+      "title": "Competitive Intelligence Scanner (Decision-Feeding)",
+      "domain": "business-strategy",
+      "category": "business-strategy/research",
+      "description": "Run a structured scan of a competitive landscape that feeds a single specified decision rather than producing a research dump. Output: a named-competitor inventory, claimed differentiation per competitor, observable gaps you can exploit, signals to monitor, and a one-paragraph 'what this changes' for the named decision.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "DS-02",
+        "DS-06",
+        "QA-01",
+        "QA-02"
+      ],
+      "keywords": [
+        "decision-making",
+        "competitive-intelligence",
+        "market-scanning",
+        "decision-input",
+        "signals"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md",
+        "domain-software-engineering/analysis/business/competitive_positioning_map.md",
+        "domain-software-engineering/analysis/business/blue_ocean_strategy_analysis.md",
+        "domain-business-strategy/research/research_competitive_landscape.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-business-strategy/research/research_competitive_landscape.md",
       "filename": "research_competitive_landscape.md",
       "title": "Competitive Landscape Analysis",
@@ -54009,73 +54043,6 @@
       "has_frontmatter": true
     },
     {
-      "path": "domain-decision-making/decisioning_competitive_intelligence_scanner.md",
-      "filename": "decisioning_competitive_intelligence_scanner.md",
-      "title": "Competitive Intelligence Scanner (Decision-Feeding)",
-      "domain": "decision-making",
-      "category": "decision-making",
-      "description": "Run a structured scan of a competitive landscape that feeds a single specified decision rather than producing a research dump. Output: a named-competitor inventory, claimed differentiation per competitor, observable gaps you can exploit, signals to monitor, and a one-paragraph 'what this changes' for the named decision.",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "RT-02",
-        "CM-02",
-        "DS-02",
-        "DS-06",
-        "QA-01",
-        "QA-02"
-      ],
-      "keywords": [
-        "decision-making",
-        "competitive-intelligence",
-        "market-scanning",
-        "decision-input",
-        "signals"
-      ],
-      "difficulty": "intermediate",
-      "updated": "2026-04-26",
-      "related_prompts": [
-        "domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md",
-        "domain-software-engineering/analysis/business/competitive_positioning_map.md",
-        "domain-software-engineering/analysis/business/blue_ocean_strategy_analysis.md",
-        "domain-business-strategy/research/research_competitive_landscape.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
-      "path": "domain-decision-making/decisioning_crisis_comms_draft_and_drill.md",
-      "filename": "decisioning_crisis_comms_draft_and_drill.md",
-      "title": "Crisis Comms Draft and Drill",
-      "domain": "decision-making",
-      "category": "decision-making",
-      "description": "Produce the actual artifacts a leader needs in the first 60 minutes of a crisis: an internal holding statement, an external holding statement, a single-page audience matrix, and a 10-minute spokesperson drill script keyed to the be-first / be-right / be-credible discipline. Optimized for use under time pressure, not as a framework reference.",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "RT-02",
-        "RP-02",
-        "CM-02",
-        "QA-04",
-        "DS-02"
-      ],
-      "keywords": [
-        "decision-making",
-        "crisis-communication",
-        "drill",
-        "holding-statement",
-        "spokesperson-prep"
-      ],
-      "difficulty": "intermediate",
-      "updated": "2026-04-26",
-      "related_prompts": [
-        "domain-decision-making/decisioning_crisis_communication_playbook.md",
-        "domain-decision-making/decisioning_crisis_severity_triage.md",
-        "domain-decision-making/decisioning_rapid_stakeholder_alignment.md",
-        "domain-decision-making/decisioning_escalation_decision_tree.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
       "path": "domain-decision-making/decisioning_reasoning_emulation.md",
       "filename": "decisioning_reasoning_emulation.md",
       "title": "Expert-Lens Reasoning Emulation",
@@ -54242,41 +54209,6 @@
       "has_frontmatter": true
     },
     {
-      "path": "domain-decision-making/decisioning_pricing_experiment_matrix.md",
-      "filename": "decisioning_pricing_experiment_matrix.md",
-      "title": "Pricing Experiment Matrix",
-      "domain": "decision-making",
-      "category": "decision-making",
-      "description": "Design a pricing experiment matrix that tests price changes — ladders, bundle variants, willingness-to-pay probes — without tanking revenue. Output: an experiment grid with hypotheses per cell, sample-size sanity checks, success and failure thresholds, blast-radius limits, and rollback triggers. Optimized for picking the right experiment to run, not for choosing a single new price.",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "RT-02",
-        "RT-03",
-        "CM-02",
-        "DS-02",
-        "DS-06",
-        "QA-01"
-      ],
-      "keywords": [
-        "decision-making",
-        "pricing",
-        "experimentation",
-        "revenue",
-        "willingness-to-pay",
-        "rollback"
-      ],
-      "difficulty": "advanced",
-      "updated": "2026-04-26",
-      "related_prompts": [
-        "domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md",
-        "domain-decision-making/decisioning_multi_constraint_optimizer.md",
-        "domain-business-strategy/startup/monetization_pricing_strategy.md",
-        "domain-software-engineering/analysis/business/business_model_canvas_analysis.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
       "path": "domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md",
       "filename": "decisioning_comprehensive_rapid_tradeoff_analyzer.md",
       "title": "Rapid Tradeoff Analyzer (Weighted Multi-Criteria)",
@@ -54368,8 +54300,8 @@
       "updated": "2026-04-26",
       "related_prompts": [
         "domain-decision-making/decisioning_chained_alignment_evaluator.md",
-        "domain-decision-making/decisioning_competitive_intelligence_scanner.md",
-        "domain-decision-making/decisioning_crisis_severity_triage.md",
+        "domain-business-strategy/research/research_competitive_intelligence_scanner.md",
+        "domain-risk/risk_crisis_severity_triage.md",
         "domain-software-engineering/analysis/business/pestel_analysis.md"
       ],
       "has_frontmatter": true
@@ -55487,72 +55419,6 @@
       "has_frontmatter": true
     },
     {
-      "path": "domain-decision-making/decisioning_crisis_communication_playbook.md",
-      "filename": "decisioning_crisis_communication_playbook.md",
-      "title": "Crisis Communication Playbook",
-      "domain": "decision-making",
-      "category": "non-engineering/decisioning",
-      "description": "Complete framework for communicating during a crisis — from initial holding statement through resolution, covering internal and external audiences",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "RT-02",
-        "RP-02",
-        "CM-01",
-        "QA-04"
-      ],
-      "keywords": [
-        "crisis-communication",
-        "stakeholder-management",
-        "public-relations",
-        "incident-response",
-        "messaging",
-        "reputation-management"
-      ],
-      "difficulty": "advanced",
-      "updated": "2026-02-26",
-      "related_prompts": [
-        "decision-making/decisioning_crisis_severity_triage.md",
-        "decision-making/decisioning_escalation_decision_tree.md",
-        "decision-making/decisioning_rapid_stakeholder_alignment.md",
-        "productivity/validation/validation_final_gate.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
-      "path": "domain-decision-making/decisioning_crisis_severity_triage.md",
-      "filename": "decisioning_crisis_severity_triage.md",
-      "title": "Crisis Severity Triage",
-      "domain": "decision-making",
-      "category": "non-engineering/decisioning",
-      "description": "5-minute rapid assessment framework to classify crisis severity, determine response urgency, and route to the right action protocol",
-      "techniques": [
-        "ST-01",
-        "ST-02",
-        "RT-02",
-        "DS-06",
-        "QA-04"
-      ],
-      "keywords": [
-        "crisis-management",
-        "triage",
-        "severity-assessment",
-        "rapid-response",
-        "decision-making",
-        "emergency",
-        "prioritization"
-      ],
-      "difficulty": "intermediate",
-      "updated": "2026-02-26",
-      "related_prompts": [
-        "decision-making/decisioning_time_boxed_decision_protocol.md",
-        "decision-making/decisioning_escalation_decision_tree.md",
-        "decision-making/decisioning_crisis_communication_playbook.md",
-        "productivity/validation/validation_adversarial_mini_check.md"
-      ],
-      "has_frontmatter": true
-    },
-    {
       "path": "domain-decision-making/decisioning_escalation_decision_tree.md",
       "filename": "decisioning_escalation_decision_tree.md",
       "title": "Escalation Decision Tree",
@@ -55577,8 +55443,8 @@
       "difficulty": "intermediate",
       "updated": "2026-02-26",
       "related_prompts": [
-        "decision-making/decisioning_crisis_severity_triage.md",
-        "decision-making/decisioning_crisis_communication_playbook.md",
+        "domain-risk/risk_crisis_severity_triage.md",
+        "domain-risk/risk_crisis_communication_playbook.md",
         "decision-making/decisioning_rapid_stakeholder_alignment.md",
         "productivity/validation/validation_adversarial_mini_check.md"
       ],
@@ -55710,9 +55576,9 @@
       "difficulty": "intermediate",
       "updated": "2026-02-26",
       "related_prompts": [
-        "decision-making/decisioning_crisis_severity_triage.md",
+        "domain-risk/risk_crisis_severity_triage.md",
         "decision-making/decisioning_escalation_decision_tree.md",
-        "decision-making/decisioning_crisis_communication_playbook.md",
+        "domain-risk/risk_crisis_communication_playbook.md",
         "decision-making/decisioning_time_boxed_decision_protocol.md"
       ],
       "has_frontmatter": true
@@ -55744,8 +55610,8 @@
       "difficulty": "intermediate",
       "updated": "2026-02-26",
       "related_prompts": [
-        "decision-making/decisioning_crisis_severity_triage.md",
-        "decision-making/decisioning_crisis_communication_playbook.md",
+        "domain-risk/risk_crisis_severity_triage.md",
+        "domain-risk/risk_crisis_communication_playbook.md",
         "engineering-workflows/workflows/engineering_post_mortem_root_cause_ladder.md",
         "engineering-workflows/workflows/engineering_postmortem_blueprint.md"
       ],
@@ -55811,7 +55677,7 @@
       "difficulty": "intermediate",
       "updated": "2026-02-26",
       "related_prompts": [
-        "decision-making/decisioning_crisis_severity_triage.md",
+        "domain-risk/risk_crisis_severity_triage.md",
         "productivity/validation/validation_quick_reality_check.md"
       ],
       "has_frontmatter": true
@@ -122923,28 +122789,6 @@
       }
     },
     {
-      "path": "domain-presentations/powerpoint_board_deck_generator.md",
-      "filename": "powerpoint_board_deck_generator.md",
-      "title": "1. Board Deck Generator",
-      "domain": "presentations",
-      "category": "presentations",
-      "description": "``` jsx SYSTEM PROMPT: BOARD DECK GENERATOR",
-      "techniques": [],
-      "keywords": [
-        "board",
-        "deck",
-        "generator",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
       "path": "domain-presentations/powerpoint_corporate_style_extractor.md",
       "filename": "powerpoint_corporate_style_extractor.md",
       "title": "1. Corporate Style Extractor",
@@ -122967,28 +122811,6 @@
       "has_frontmatter": false
     },
     {
-      "path": "domain-presentations/powerpoint_status_report_generator.md",
-      "filename": "powerpoint_status_report_generator.md",
-      "title": "10. Status Report Generator",
-      "domain": "presentations",
-      "category": "presentations",
-      "description": "``` jsx SYSTEM PROMPT: STATUS REPORT GENERATOR",
-      "techniques": [],
-      "keywords": [
-        "generator",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "report",
-        "status",
-        "usage"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
       "path": "domain-presentations/powerpoint_all_hands_communicator.md",
       "filename": "powerpoint_all_hands_communicator.md",
       "title": "11. All-Hands Communicator",
@@ -123000,29 +122822,6 @@
         "all",
         "communicator",
         "hands",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-presentations/powerpoint_competitive_battle_card_deck.md",
-      "filename": "powerpoint_competitive_battle_card_deck.md",
-      "title": "12. Competitive Battle Card Deck",
-      "domain": "presentations",
-      "category": "presentations",
-      "description": "``` jsx SYSTEM PROMPT: COMPETITIVE BATTLE CARD DECK",
-      "techniques": [],
-      "keywords": [
-        "battle",
-        "card",
-        "competitive",
-        "deck",
         "notes",
         "powerpoint",
         "prompt",
@@ -123056,28 +122855,6 @@
       "has_frontmatter": false
     },
     {
-      "path": "domain-presentations/powerpoint_crisis_management_deck.md",
-      "filename": "powerpoint_crisis_management_deck.md",
-      "title": "2. Crisis Management Deck",
-      "domain": "presentations",
-      "category": "presentations",
-      "description": "``` jsx SYSTEM PROMPT: CRISIS MANAGEMENT DECK",
-      "techniques": [],
-      "keywords": [
-        "crisis",
-        "deck",
-        "management",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
       "path": "domain-presentations/powerpoint_enterprise_deck_architect.md",
       "filename": "powerpoint_enterprise_deck_architect.md",
       "title": "3. Enterprise Deck Architect",
@@ -123091,96 +122868,6 @@
         "enterprise",
         "notes",
         "powerpoint",
-        "prompt",
-        "usage"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-presentations/powerpoint_quarterly_business_review_builder.md",
-      "filename": "powerpoint_quarterly_business_review_builder.md",
-      "title": "3. Quarterly Business Review Builder",
-      "domain": "presentations",
-      "category": "presentations",
-      "description": "``` jsx SYSTEM PROMPT: QUARTERLY BUSINESS REVIEW BUILDER",
-      "techniques": [],
-      "keywords": [
-        "builder",
-        "business",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "quarterly",
-        "review",
-        "usage"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-presentations/powerpoint_deck_assembly_and_validation.md",
-      "filename": "powerpoint_deck_assembly_and_validation.md",
-      "title": "4. Deck Assembly & Validation",
-      "domain": "presentations",
-      "category": "presentations",
-      "description": "``` jsx textSYSTEM PROMPT: DECK ASSEMBLY & VALIDATION",
-      "techniques": [],
-      "keywords": [
-        "and",
-        "assembly",
-        "deck",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage",
-        "validation"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-presentations/powerpoint_product_roadmap_presentation.md",
-      "filename": "powerpoint_product_roadmap_presentation.md",
-      "title": "6. Product Roadmap Presentation",
-      "domain": "presentations",
-      "category": "presentations",
-      "description": "``` jsx `SYSTEM PROMPT: PRODUCT ROADMAP PRESENTATION",
-      "techniques": [],
-      "keywords": [
-        "notes",
-        "powerpoint",
-        "presentation",
-        "product",
-        "prompt",
-        "roadmap",
-        "usage"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-presentations/powerpoint_product_launch_presentation.md",
-      "filename": "powerpoint_product_launch_presentation.md",
-      "title": "7. Product Launch Presentation",
-      "domain": "presentations",
-      "category": "presentations",
-      "description": "``` jsx SYSTEM PROMPT: PRODUCT LAUNCH PRESENTATION",
-      "techniques": [],
-      "keywords": [
-        "launch",
-        "notes",
-        "powerpoint",
-        "presentation",
-        "product",
         "prompt",
         "usage"
       ],
@@ -124091,7 +123778,7 @@
         "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
         "domain-presentations/visual-planning/visualplan_modality_router.md",
         "domain-presentations/visual-planning/visualplan_cascade_effects_scan.md",
-        "domain-presentations/powerpoint_deck_assembly_and_validation.md",
+        "domain-presentations/powerpoint_deck_assembly_validation.md",
         "domain-prompt-engineering/evaluation/correctness_eval_design_prompt.md"
       ],
       "has_frontmatter": true
@@ -124157,7 +123844,7 @@
         "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
         "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
         "domain-presentations/visual-planning/visualplan_cascade_effects_scan.md",
-        "domain-presentations/powerpoint_board_deck_generator.md",
+        "domain-presentations/powerpoint_board_deck.md",
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md"
       ],
       "has_frontmatter": true
@@ -124467,6 +124154,41 @@
         "domain-product-management/prompts/product_north_star_metric_definition.md",
         "domain-idea-to-product/stage-2-problem-validation/validation_customer_discovery_interview_protocol.md",
         "domain-product-management/prompts/product_create_prd.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_pricing_experiment_matrix.md",
+      "filename": "product_pricing_experiment_matrix.md",
+      "title": "Pricing Experiment Matrix",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Design a pricing experiment matrix that tests price changes — ladders, bundle variants, willingness-to-pay probes — without tanking revenue. Output: an experiment grid with hypotheses per cell, sample-size sanity checks, success and failure thresholds, blast-radius limits, and rollback triggers. Optimized for picking the right experiment to run, not for choosing a single new price.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "RT-03",
+        "CM-02",
+        "DS-02",
+        "DS-06",
+        "QA-01"
+      ],
+      "keywords": [
+        "decision-making",
+        "pricing",
+        "experimentation",
+        "revenue",
+        "willingness-to-pay",
+        "rollback"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md",
+        "domain-decision-making/decisioning_multi_constraint_optimizer.md",
+        "domain-business-strategy/startup/monetization_pricing_strategy.md",
+        "domain-software-engineering/analysis/business/business_model_canvas_analysis.md"
       ],
       "has_frontmatter": true
     },
@@ -150857,6 +150579,105 @@
           "synthesize"
         ]
       }
+    },
+    {
+      "path": "domain-risk/risk_crisis_comms_draft_and_drill.md",
+      "filename": "risk_crisis_comms_draft_and_drill.md",
+      "title": "Crisis Comms Draft and Drill",
+      "domain": "risk",
+      "category": "risk/crisis",
+      "description": "Produce the actual artifacts a leader needs in the first 60 minutes of a crisis: an internal holding statement, an external holding statement, a single-page audience matrix, and a 10-minute spokesperson drill script keyed to the be-first / be-right / be-credible discipline. Optimized for use under time pressure, not as a framework reference.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "RP-02",
+        "CM-02",
+        "QA-04",
+        "DS-02"
+      ],
+      "keywords": [
+        "decision-making",
+        "crisis-communication",
+        "drill",
+        "holding-statement",
+        "spokesperson-prep"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_crisis_communication_playbook.md",
+        "domain-risk/risk_crisis_severity_triage.md",
+        "domain-decision-making/decisioning_rapid_stakeholder_alignment.md",
+        "domain-decision-making/decisioning_escalation_decision_tree.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-risk/risk_crisis_communication_playbook.md",
+      "filename": "risk_crisis_communication_playbook.md",
+      "title": "Crisis Communication Playbook",
+      "domain": "risk",
+      "category": "risk/crisis",
+      "description": "Complete framework for communicating during a crisis — from initial holding statement through resolution, covering internal and external audiences",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "RP-02",
+        "CM-01",
+        "QA-04"
+      ],
+      "keywords": [
+        "crisis-communication",
+        "stakeholder-management",
+        "public-relations",
+        "incident-response",
+        "messaging",
+        "reputation-management"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_crisis_severity_triage.md",
+        "domain-decision-making/decisioning_escalation_decision_tree.md",
+        "domain-decision-making/decisioning_rapid_stakeholder_alignment.md",
+        "domain-productivity/validation/validation_final_gate.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-risk/risk_crisis_severity_triage.md",
+      "filename": "risk_crisis_severity_triage.md",
+      "title": "Crisis Severity Triage",
+      "domain": "risk",
+      "category": "risk/crisis",
+      "description": "5-minute rapid assessment framework to classify crisis severity, determine response urgency, and route to the right action protocol",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "crisis-management",
+        "triage",
+        "severity-assessment",
+        "rapid-response",
+        "decision-making",
+        "emergency",
+        "prioritization"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-decision-making/decisioning_time_boxed_decision_protocol.md",
+        "domain-decision-making/decisioning_escalation_decision_tree.md",
+        "domain-risk/risk_crisis_communication_playbook.md",
+        "domain-productivity/validation/validation_adversarial_mini_check.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-risk/risk_dependency_chain_audit.md",
