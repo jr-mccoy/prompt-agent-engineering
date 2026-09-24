@@ -1,10 +1,13 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-09-24:** **Wave 1 shipped.** It added 40 prompts: four new
-domains of 8 prompts each (ADR-0043) and `domain-personal-development/job-search/`
-(8). All 40 candidates survived their duplicate sweeps. Six hollow READMEs now
-describe what actually exists. Waves 2–5 are scoped only as far as their
-boundaries. This document records a repository-wide audit of where the prompt
+**Status as of 2026-09-24:** **Waves 1 and 2 shipped.**
+- **Wave 1:** 40 prompts. That is four new domains of 8 prompts each (ADR-0043)
+  and `domain-personal-development/job-search/` (8). Six hollow READMEs now
+  describe what actually exists.
+- **Wave 2:** 64 prompts across ten areas (§6), plus 7 identity-preserving moves.
+- **Survival:** every specified candidate survived its duplicate sweep in both
+  waves. Wave 2's candidate list had already been cut by a pre-sweep, described in §6.
+- **Remaining:** Waves 3–5 are scoped only as far as their boundaries. This document records a repository-wide audit of where the prompt
 corpus is thin on subject matter and sequences the fix into five waves.
 
 **Why a cross-repo roadmap.** Each domain's `EXPANSION_ROADMAP.md` plans growth
@@ -73,7 +76,8 @@ complete.
 | `SQL query churn cohort analysis` | `data-analytics/analysis-and-sql/analytics-cohort-retention-analysis` | Fixed |
 | `meal plan nutrition` | `health-wellness/nutrition/nutrition-meal-structure-planner`; `home_meal_plan_week` 3rd | Fixed; logistics prompt kept |
 | `cold outreach sales email sequence` | `skills/marketing/cold-email` (unchanged) | Correct: the skill still owns copy |
-| `song lyrics`, `restaurant menu pricing`, `grant proposal nonprofit` | unchanged | Wave 2 subjects |
+| `song lyrics`, `grant proposal nonprofit` | unchanged | Wave 2 subjects |
+| `restaurant menu pricing` | unchanged | Hospitality is deferred (§7) |
 
 **Regression set.** The 120-case set scores the same as before Wave 1
 (scope@1 83.5%, kind@1 97.6%), and no case changes its top hit. The one case
@@ -82,6 +86,29 @@ review", which expects `domain-presentations/`. The customer QBR prompt briefly
 outranked the internal QBR deck. That was a metadata problem, not a better
 answer, so the prompt was renamed `cs_customer_qbr_prep.md` and the word "deck"
 was taken out of its description. The case label was not changed.
+
+**After Wave 2**, same day:
+
+| Query | Top hit now | Reading |
+|---|---|---|
+| `song lyrics songwriting` | `creative-writing/songwriting/writing-song-lyric-craft-workshop` | Fixed (had no hits at all) |
+| `grant proposal nonprofit` | `business-strategy/nonprofit/nonprofit-foundation-grant-proposal`; research grants 3rd | Fixed |
+| `donor appeal letter` | `business-strategy/nonprofit/nonprofit-donor-appeal-letter` | Fixed |
+| `raise prices at my shop` | `business-strategy/small-business/smallbiz-price-increase-plan` | Fixed |
+| `rental property analysis` | `specialized-fields/real-estate/realestate-rental-property-underwriting` | Fixed |
+| `comparative market analysis for a listing` | `specialized-fields/real-estate/realestate-comparative-market-analysis` | Fixed |
+| `ransomware incident response playbook` | `risk/risk-security-incident-response-playbook` | Fixed |
+| `what to do after a parent dies paperwork` | `home-life/home-household-paperwork-system`, then `home-after-death-admin-checklist` | Fixed |
+| `usability test plan UX research` | `frontend-development/ux-research/frontend-ux-usability-test-plan` | Fixed |
+| `podcast episode outline` | `professional-writing/content-production/content-podcast-episode-outline` | Fixed |
+| `news article inverted pyramid` | `professional-writing/writing/writing-news-article-inverted-pyramid` | Fixed |
+| `philosophy ethics essay` | `learning/learning-ethics-dilemma-multi-framework` | Fixed |
+| `practice Spanish conversation at B1 level` | `conversation-practice/conversation-lang-sim-master-template` | Fixed |
+| `restaurant menu pricing` | unchanged | Deferred (hospitality, §7) |
+
+**Regression set after Wave 2.** The scores are unchanged (scope@1 83.5%,
+kind@1 97.6%). No case changes its top hit, compared case by case against the
+end of Wave 1.
 
 ## 3. Gap map
 
@@ -305,9 +332,43 @@ existed.
 | `policy` | List all 4 files. |
 | `advertising` | **No change needed.** The README already has a "Route elsewhere for" table (added in an earlier phase). The audit that flagged it missed that section. |
 
-## 6. Later waves (scoped, not specified)
+## 6. Wave 2 (shipped) and later waves
 
-### Wave 2: remaining absent subjects
+### Wave 2: remaining absent subjects — shipped (64 prompts + 7 moves)
+
+**Candidates dropped before writing.** Before anything was written, a duplicate
+pre-sweep cut these candidates. Each already has an owner:
+- non-lawyer engagement letter and standalone scope of work: `legal_engagement_letter_drafter`, `legal_sow_drafter`, client-services-studio stage 3;
+- service-business pricing, shop supplier/inventory and a standalone 13-week
+  forecast: `services_pricing_model_selector`, `ops_*`, `finance_cash_flow_forecasting_model`;
+- nonprofit logic model: `program_logic_model_designer`;
+- YouTube retention: `content_long_form_script`;
+- news fact-check: three existing fact-checkers;
+- generic language role-play, error-correction debrief and pronunciation drill: `domain-education-teaching/learner/language/`;
+- voice-of-customer synthesis: `skills/marketing/customer-research`;
+- standalone upsell map: the expansion section in `cs_account_health`.
+
+The user chose to build the borderline humanities and language-sim candidates.
+Each one states exactly what it is distinct from.
+
+| Area | Shipped in | Prompts |
+|---|---|---|
+| Nonprofit and fundraising | `business-strategy/nonprofit/` (`nonprofit_*`) | 8 |
+| Small-business owner ops | `business-strategy/small-business/` (`smallbiz_*`) | 6 |
+| Real estate and trades | `specialized-fields/real-estate/`, `trades/` | 7 |
+| Security operations (non-code) | `risk/` (`risk_security_*`, `risk_tabletop_*`, `risk_phishing_*`, `risk_vendor_security_*`, `risk_payment_fraud_*`) | 6 |
+| Estate, household admin, caregiving | `personal-development/major-decisions/` (2), `productivity/home-life/` (5) | 7 |
+| UX research methods | `frontend-development/ux-research/` (`frontend_ux_*`) | 7 |
+| Songwriting and media production | `creative-writing/songwriting/` (2), `script-stage/` (1), `professional-writing/content-production/` (3), `professional-writing/writing/` (2) | 8 |
+| Humanities self-study | `learning/` | 5 |
+| Language conversation sims | `conversation-practice/` (`conversation_lang_sim_*`) | 6 |
+| Sales and customer overflow | `sales-customer/` (strategic account plan, KB article, feedback routing loop, incident status update) | 4 |
+
+**Moves in Wave 2** (committed separately): five go-to-market sales and CS
+prompts went to `domain-sales-customer/`, and two `specialized-fields` legal
+prompts went to `domain-legal/`. The uids were kept and the old ids resolve as
+aliases. The original Wave 2 scoping table follows for the record.
+
 
 | Area | Target folder | Est. | Boundary / nearest neighbour |
 |---|---|---|---|

@@ -10,6 +10,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Coverage Wave 2: 64 prompts in ten subject areas where `pae search` used to answer with something unrelated or nothing at all.** Before Wave 2, "song lyrics" returned no hits; "grant proposal nonprofit" returned NSF outliners; "rental property analysis" returned divorce property characterization; "usability test plan" returned only a persona. Each now lands on a prompt written for that reader ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §2).
+  - **Where the 64 prompts went:**
+    - [`domain-business-strategy/nonprofit/`](domain-business-strategy/nonprofit/) (8) and [`small-business/`](domain-business-strategy/small-business/) (6).
+    - A rebuilt [`domain-specialized-fields/`](domain-specialized-fields/), now `real-estate/` (4) and `trades/` (3).
+    - Six security-operations prompts for non-engineers in `domain-risk/`.
+    - Seven estate, household-admin and caregiving prompts across `major-decisions/` and `home-life/`.
+    - [`domain-frontend-development/ux-research/`](domain-frontend-development/ux-research/) (7).
+    - Songwriting (`domain-creative-writing/songwriting/`), a documentary treatment, and podcast, video and news prompts in `domain-professional-writing/` (8 in all).
+    - Five humanities self-study prompts in `domain-learning/`.
+    - Six `conversation_lang_sim_*` language role-play prompts in `domain-conversation-practice/`.
+    - Four sales and customer-overflow prompts.
+  - **Duplicates were cut before writing, not after.** A pre-sweep dropped about a dozen candidates that existing resources already own, including a non-lawyer engagement letter (`legal_engagement_letter_drafter`), a nonprofit logic model (`program_logic_model_designer`), YouTube retention (`content_long_form_script`) and voice-of-customer synthesis (`skills/marketing/customer-research`). All 64 specified prompts then survived their per-file sweeps.
+  - **Borderline cases were built on request.** The humanities and language-sim prompts overlap existing education and reasoning prompts, and the user chose to build them. Each one names exactly what it is distinct from. For example, `learning_philosophy_argument_standard_form` hands the soundness check to `reasoning_premise_audit` rather than repeating it.
+  - **Guards.**
+    - No prompt states a deadline, premium, penalty or legal rule from memory. The Medicare prep and the incident-response playbook mark each one `[VERIFY]` or route it to counsel.
+    - The songwriting prompts use only original lyrics.
+    - The news and transcript prompts forbid invented quotes.
+  - **Routing regression.** No case in the 120-case set changes its top hit when compared case by case against the end of Wave 1, and the scores are unchanged (scope@1 83.5%, kind@1 97.6%).
+
 - **Coverage Wave 1: 40 prompts in five subject areas that had no home. Four are new domains, justified by what the prompts are about rather than by resemblance to an existing domain.**
   - **How the gaps were found.** A repository-wide audit ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md)) ran `pae search` on realistic tasks and read the top hits. They showed the gaps directly:
     - "strength training program" returned faculty-development prompts;

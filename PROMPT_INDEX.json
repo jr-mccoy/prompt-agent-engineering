@@ -3,10 +3,10 @@
     "generated": "2026-09-24",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 5694,
-    "artifacts_with_frontmatter": 4758,
+    "total_indexed_artifacts": 5758,
+    "artifacts_with_frontmatter": 4822,
     "artifacts_without_frontmatter": 936,
-    "domains": 47,
+    "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
       "total_prompts": "total_indexed_artifacts",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 5694,
-    "prompts_with_frontmatter": 4758,
+    "total_prompts": 5758,
+    "prompts_with_frontmatter": 4822,
     "prompts_without_frontmatter": 936
   },
   "prompts": [
@@ -49747,6 +49747,255 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-business-strategy/nonprofit/nonprofit_case_for_support.md",
+      "filename": "nonprofit_case_for_support.md",
+      "title": "Case for Support — The Master Argument Every Appeal, Proposal and Ask Draws From",
+      "domain": "business-strategy",
+      "category": "business-strategy/nonprofit",
+      "description": "Build a nonprofit's internal case for support — the need, why this organisation, what it will do, what it costs, and what a gift of a given size actually buys — as one evidence-traced source document that appeals, grant narratives and major-gift asks are cut from; distinct from advertising_nonprofit_cause_marketing (image ad prompts) and marketing_competitive_differentiation (commercial positioning against competitors).",
+      "techniques": [
+        "RP-02",
+        "RT-05",
+        "NE-27",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "nonprofit",
+        "case-for-support",
+        "fundraising",
+        "messaging",
+        "donor-communications",
+        "impact"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-advertising/advertising_nonprofit_cause_marketing.md",
+        "domain-business-strategy/go-to-market/marketing_competitive_differentiation.md",
+        "domain-business-strategy/nonprofit/nonprofit_donor_appeal_letter.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/nonprofit/nonprofit_donor_appeal_letter.md",
+      "filename": "nonprofit_donor_appeal_letter.md",
+      "title": "Donor Appeal Letter — Segmented Ask, Real Gift Math, One Clear Reply",
+      "domain": "business-strategy",
+      "category": "business-strategy/nonprofit",
+      "description": "Draft a direct-mail or email fundraising appeal for a nonprofit, segmented by donor history (current, lapsed, first-time, monthly) with an ask ladder derived from each segment's last gift, gift-impact lines that reconcile to the budget, and a reply device — distinct from the copywriting and email-sequence marketing skills, which write conversion copy for a product rather than a gift appeal to people who already know the cause.",
+      "techniques": [
+        "RP-02",
+        "NE-17",
+        "NE-04",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "nonprofit",
+        "fundraising",
+        "appeal-letter",
+        "direct-mail",
+        "donor-retention",
+        "year-end-giving"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/marketing/copywriting/SKILL.md",
+        "domain-agentic-resources/skills/marketing/email-sequence/SKILL.md",
+        "domain-business-strategy/nonprofit/nonprofit_case_for_support.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/nonprofit/nonprofit_foundation_grant_proposal.md",
+      "filename": "nonprofit_foundation_grant_proposal.md",
+      "title": "Foundation and Government Grant Proposal — Funder-Fit Gate, Then the Narrative",
+      "domain": "business-strategy",
+      "category": "business-strategy/nonprofit",
+      "description": "Decide whether a nonprofit should apply to a specific foundation or government program at all — priorities, geography, eligibility, award size, cost-to-apply against odds — and only then draft the proposal sections from the organisation's own logic model, budget and evidence; distinct from the research-grant outliners in domain-science/grants-funding/, which serve a PI writing to NSF, NIH or ERC review criteria.",
+      "techniques": [
+        "QA-08",
+        "RT-05",
+        "CM-02",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "nonprofit",
+        "grant-writing",
+        "foundations",
+        "government-grants",
+        "fundraising",
+        "funder-fit"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-science/grants-funding/science_nsf_proposal_outliner.md",
+        "domain-education-teaching/program/evaluation-analytics/program_logic_model_designer.md",
+        "domain-business-strategy/nonprofit/nonprofit_operating_budget_restrictions.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/nonprofit/nonprofit_impact_report_builder.md",
+      "filename": "nonprofit_impact_report_builder.md",
+      "title": "Impact Report Builder — Results Against an Existing Logic Model, Every Number Tagged",
+      "domain": "business-strategy",
+      "category": "business-strategy/nonprofit",
+      "description": "Turn a program's existing logic model, measured results and actual spend into a funder or donor impact report — results against targets with honest denominators, provenance tags on every figure, what fell short and why, and consented stories only — without re-deriving the logic model or inventing numbers; distinct from program_logic_model_designer, which builds the model this prompt reports against.",
+      "techniques": [
+        "RT-23",
+        "QA-26",
+        "DS-02",
+        "NE-15",
+        "RT-05"
+      ],
+      "keywords": [
+        "nonprofit",
+        "impact-report",
+        "program-evaluation",
+        "donor-communications",
+        "funder-reporting",
+        "outcomes"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-education-teaching/program/evaluation-analytics/program_logic_model_designer.md",
+        "domain-education-teaching/program/evaluation-analytics/program_program_evaluation_framework.md",
+        "domain-business-strategy/nonprofit/nonprofit_case_for_support.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/nonprofit/nonprofit_major_gift_ask_plan.md",
+      "filename": "nonprofit_major_gift_ask_plan.md",
+      "title": "Major Gift Ask Plan — Who Asks, For How Much, For What, and What Happens After Yes",
+      "domain": "business-strategy",
+      "category": "business-strategy/nonprofit",
+      "description": "Plan a single major-gift solicitation from the organisation's side — readiness evidence, the specific amount and purpose, the right asker, the meeting script with anticipated objections, pledge terms and stewardship — using only information the donor has shared or made public; distinct from finance_charitable_giving_tax_strategy (the donor's own tax planning) and sales_mutual_close_plan (a commercial buyer's procurement path).",
+      "techniques": [
+        "RT-05",
+        "NE-23",
+        "DS-06",
+        "CM-09",
+        "QA-01"
+      ],
+      "keywords": [
+        "nonprofit",
+        "major-gifts",
+        "fundraising",
+        "donor-cultivation",
+        "solicitation",
+        "stewardship"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/tax-planning/finance_charitable_giving_tax_strategy.md",
+        "domain-sales-customer/sales/sales_mutual_close_plan.md",
+        "domain-business-strategy/nonprofit/nonprofit_case_for_support.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/nonprofit/nonprofit_board_governance_health_check.md",
+      "filename": "nonprofit_board_governance_health_check.md",
+      "title": "Nonprofit Board Governance Health Check — Evidence-Rated, with Legal Items Flagged",
+      "domain": "business-strategy",
+      "category": "business-strategy/nonprofit",
+      "description": "Assess a nonprofit board across composition, fiduciary oversight, core policies, executive oversight, meeting practice, fundraising role and board-staff boundaries, rating each red/amber/green from documents rather than impressions and routing compliance questions to counsel; distinct from finance_board_finance_package_builder (the finance pack presented to a board) and domain-presentations/board-decks/ (slides for a board meeting).",
+      "techniques": [
+        "DT-05",
+        "DP-28",
+        "RT-05",
+        "DD-05",
+        "OC-03"
+      ],
+      "keywords": [
+        "nonprofit",
+        "board-governance",
+        "fiduciary-duty",
+        "board-assessment",
+        "policies",
+        "executive-director"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/corporate-finance-fpa/finance_board_finance_package_builder.md",
+        "domain-presentations/board-decks/boarddeck_executive_summary_slide.md",
+        "domain-legal/corporate-ma/legal_board_resolution_drafter.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/nonprofit/nonprofit_operating_budget_restrictions.md",
+      "filename": "nonprofit_operating_budget_restrictions.md",
+      "title": "Nonprofit Operating Budget — Restricted vs Unrestricted, Indirect Recovery, Functional Allocation",
+      "domain": "business-strategy",
+      "category": "business-strategy/nonprofit",
+      "description": "Build or diagnose a nonprofit's annual operating budget the way restrictions actually constrain it — revenue by restriction class and releases, restricted money matched only to eligible costs, indirect-cost recovery against the organisation's real indirect rate, shared costs allocated to program, management and fundraising on stated bases, and the unrestricted gap and reserve months that result; distinct from finance_budget_variance_investigator (explaining actuals against a budget) and science_grant_budget_justification_drafter (one research grant's budget narrative).",
+      "techniques": [
+        "NE-11",
+        "OC-03",
+        "RT-05",
+        "DD-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "nonprofit",
+        "budgeting",
+        "restricted-funds",
+        "indirect-costs",
+        "functional-expenses",
+        "reserves",
+        "finance"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/corporate-finance-fpa/finance_budget_variance_investigator.md",
+        "domain-science/grants-funding/science_grant_budget_justification_drafter.md",
+        "domain-business-strategy/nonprofit/nonprofit_foundation_grant_proposal.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/nonprofit/nonprofit_volunteer_program_design.md",
+      "filename": "nonprofit_volunteer_program_design.md",
+      "title": "Volunteer Program Design — Roles, Risk-Tiered Screening, Retention, and Honest Hours Valuation",
+      "domain": "business-strategy",
+      "category": "business-strategy/nonprofit",
+      "description": "Design or repair a nonprofit volunteer program as an operating system: role descriptions sized in hours, recruitment targets from capacity and attrition, screening proportional to each role's risk with safeguarding gates, retention practice, and a volunteer-hours value that is labelled for what it is; distinct from biblical_churchstaff_volunteer_recruitment_role_design, which fills church ministry roles, and from discipleship_safeguarding_and_conduct_policy, which is the full safeguarding policy this prompt defers to.",
+      "techniques": [
+        "QA-08",
+        "NE-11",
+        "DS-06",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "nonprofit",
+        "volunteer-management",
+        "screening",
+        "safeguarding",
+        "retention",
+        "operations"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_volunteer_recruitment_role_design.md",
+        "domain-discipleship/program-operations/discipleship_safeguarding_and_conduct_policy.md",
+        "domain-discipleship/program-operations/discipleship_program_design_blueprint.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-business-strategy/research/research_24_hour_leader_pulse.md",
       "filename": "research_24_hour_leader_pulse.md",
       "title": "24-Hour Leader Pulse Briefing",
@@ -50139,6 +50388,192 @@
         "domain-business-strategy/research/research_tool_comparison.md",
         "domain-business-strategy/research/research_company_deep_dive.md",
         "domain-business-strategy/research/research_competitive_landscape.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/small-business/smallbiz_customer_review_response.md",
+      "filename": "smallbiz_customer_review_response.md",
+      "title": "Customer Review Response — Public Reply, Private Follow-Up, and the Fix Behind It",
+      "domain": "business-strategy",
+      "category": "business-strategy/small-business",
+      "description": "Respond to a Google, Yelp or similar public review of a local business — triage the review type, write a short public reply future customers will read, a private follow-up to the reviewer, and the operational fix the complaint points to — without arguing, disclosing customer details, trading favours for edits, or making legal claims; distinct from ios_app_store_review_response (app-store replies about software) and support_escalation_response_drafter (a private support-queue escalation).",
+      "techniques": [
+        "NE-07",
+        "RP-02",
+        "NE-04",
+        "CM-02",
+        "QA-02"
+      ],
+      "keywords": [
+        "small-business",
+        "reviews",
+        "reputation",
+        "customer-service",
+        "google-reviews",
+        "local-business"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-software-engineering/mobile/ios/publishing/ios_app_store_review_response.md",
+        "domain-sales-customer/support/support_escalation_response_drafter.md",
+        "domain-business-strategy/small-business/smallbiz_local_marketing_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/small-business/smallbiz_first_employee_readiness.md",
+      "filename": "smallbiz_first_employee_readiness.md",
+      "title": "First Employee Readiness — Fully Loaded Cost, Break-Even Work, Cash Runway, Classification Flag",
+      "domain": "business-strategy",
+      "category": "business-strategy/small-business",
+      "description": "Decide whether an owner-operator of a local shop, trades business or freelance practice is ready to hire a first employee — fully loaded annual cost, the billable hours or extra sales that pay for it, a slow-season stress test, a cash runway gate, and a contractor-versus-employee flag routed to qualified review rather than decided; distinct from hr_job_description_writer (writing the posting once the decision is made) and legal_wage_hour_classification_analysis (the legal classification analysis itself).",
+      "techniques": [
+        "QA-08",
+        "NE-11",
+        "QA-02",
+        "DD-05",
+        "RT-05"
+      ],
+      "keywords": [
+        "small-business",
+        "hiring",
+        "first-employee",
+        "payroll",
+        "break-even",
+        "owner-operator"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_job_description_writer.md",
+        "domain-legal/employment-labor/legal_wage_hour_classification_analysis.md",
+        "domain-business-strategy/small-business/smallbiz_weekly_owner_numbers_review.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/small-business/smallbiz_local_marketing_plan.md",
+      "filename": "smallbiz_local_marketing_plan.md",
+      "title": "Local Marketing Plan — Where Nearby Customers Actually Find You, in Owner Hours and Dollars",
+      "domain": "business-strategy",
+      "category": "business-strategy/small-business",
+      "description": "A 12-week marketing plan for a business whose customers live or work nearby — shop, café, salon, clinic, trades — sequenced from free foundations (business profile, listings consistency, review requests, existing-customer list) to neighbourhood partnerships and only then paid local ads, budgeted in owner hours, tracked with a 'how did you hear about us' tally and a kill signal per tactic; distinct from marketing_zero_budget_launch_plan (launching a digital product to an online audience) and the seo-audit skill (technical website SEO).",
+      "techniques": [
+        "DS-06",
+        "CM-02",
+        "DS-02",
+        "DP-13",
+        "QA-01"
+      ],
+      "keywords": [
+        "small-business",
+        "local-marketing",
+        "google-business-profile",
+        "reviews",
+        "referrals",
+        "neighbourhood"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-business-strategy/go-to-market/marketing_zero_budget_launch_plan.md",
+        "domain-agentic-resources/skills/marketing/seo-audit/SKILL.md",
+        "domain-business-strategy/small-business/smallbiz_customer_review_response.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/small-business/smallbiz_bookkeeping_routine.md",
+      "filename": "smallbiz_bookkeeping_routine.md",
+      "title": "Owner Bookkeeping Routine — Weekly, Monthly, Quarterly, and a Clean Accountant Handoff",
+      "domain": "business-strategy",
+      "category": "business-strategy/small-business",
+      "description": "Set up the bookkeeping cadence an owner of a local shop, trades business or freelance practice can keep without a bookkeeper — a 15-minute weekly pass, a monthly reconciliation that must tie to the statement, quarterly tax-date checks, and a year-end handoff package — with a written line between what the owner records and what the accountant decides; distinct from finance_month_end_close_checklist (a controller's multi-entity close) and financial-records-toolkit (organising personal statements for an attorney).",
+      "techniques": [
+        "ST-02",
+        "NE-20",
+        "CM-09",
+        "DD-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "small-business",
+        "bookkeeping",
+        "reconciliation",
+        "accountant-handoff",
+        "receipts",
+        "owner-operator"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/accounting-controllership/finance_month_end_close_checklist.md",
+        "financial-records-toolkit/README.md",
+        "domain-business-strategy/small-business/smallbiz_weekly_owner_numbers_review.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/small-business/smallbiz_price_increase_plan.md",
+      "filename": "smallbiz_price_increase_plan.md",
+      "title": "Price Increase Plan — How Much, How Many Customers You Can Afford to Lose, and How to Tell Them",
+      "domain": "business-strategy",
+      "category": "business-strategy/small-business",
+      "description": "Plan a price increase for a local shop, trades business or freelance practice — the price needed to recover documented cost increases, the break-even customer loss at the new price, sequencing by customer segment, notice and wording, staff answers to pushback, and a rollback trigger watched for eight weeks; distinct from services_pricing_model_selector (choosing a billing structure for consulting work), monetization_pricing_strategy (app and SaaS tiers) and advocacy_price_increase_retention_request (the customer's side of the same letter).",
+      "techniques": [
+        "NE-11",
+        "RT-05",
+        "DP-11",
+        "NE-23",
+        "QA-02"
+      ],
+      "keywords": [
+        "small-business",
+        "pricing",
+        "price-increase",
+        "customer-communication",
+        "margins",
+        "retention"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-business-strategy/client-services/services_pricing_model_selector.md",
+        "domain-business-strategy/startup/monetization_pricing_strategy.md",
+        "domain-written-advocacy/accounts-and-billing/advocacy_price_increase_retention_request.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-business-strategy/small-business/smallbiz_weekly_owner_numbers_review.md",
+      "filename": "smallbiz_weekly_owner_numbers_review.md",
+      "title": "Weekly Owner Numbers Review — Bank, Tax Set-Asides, Owner Draw, 8-Week Cash Look-Ahead",
+      "domain": "business-strategy",
+      "category": "business-strategy/small-business",
+      "description": "A 20-minute weekly routine for the owner of a local shop, trades business or freelance practice — true available cash after tax set-asides and committed bills, sales against last year, money owed in and out, an owner-draw decision rule, and a plain 8-week cash look-ahead against a stated floor; distinct from finance_cash_flow_forecasting_model (a finance team's driver-based treasury forecast) and solo_dev_metrics_dashboard (MRR and product metrics for a software business).",
+      "techniques": [
+        "NE-11",
+        "DS-02",
+        "DP-28",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "small-business",
+        "cash-flow",
+        "owner-draw",
+        "tax-set-aside",
+        "weekly-review",
+        "local-business"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/treasury-capital-markets/finance_cash_flow_forecasting_model.md",
+        "domain-business-strategy/startup/solo_dev_metrics_dashboard.md",
+        "domain-business-strategy/small-business/smallbiz_bookkeeping_routine.md"
       ],
       "has_frontmatter": true
     },
@@ -52277,6 +52712,187 @@
       "has_frontmatter": false
     },
     {
+      "path": "domain-conversation-practice/conversation_lang_sim_master_template.md",
+      "filename": "conversation_lang_sim_master_template.md",
+      "title": "Language Conversation Sim — Master Template With CEFR, Register, and Four Correction Modes",
+      "domain": "conversation-practice",
+      "category": "conversation-practice",
+      "description": "The base template every language conversation sim in this domain plugs into: slots for target language and variety, CEFR level (with calibration rules for speech rate, sentence length and L1 fallback), register, scenario and partner, plus the four correction modes this domain owns (recast, explicit, delayed, off), each with its own in-scene and debrief rules; distinct from conversation_sim_master_template.md (English persuasion role-play with AI skeptics) and from learn_daily_conversation_drill.md (one fixed explicit-feedback style with a cooperative partner).",
+      "techniques": [
+        "OC-08",
+        "CM-01",
+        "RP-02",
+        "AG-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "language-learning",
+        "role-play",
+        "CEFR",
+        "corrective-feedback",
+        "speaking-practice",
+        "simulation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-conversation-practice/conversation_sim_master_template.md",
+        "domain-education-teaching/learner/language/learn_daily_conversation_drill.md",
+        "domain-education-teaching/learner/tutoring/learn_adaptive_input_output_loop.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-conversation-practice/conversation_lang_sim_cefr_can_do_scenarios.md",
+      "filename": "conversation_lang_sim_cefr_can_do_scenarios.md",
+      "title": "Language Sim — CEFR Can-Do Scenarios With Pass / Not Yet / Not Elicited Verdicts",
+      "domain": "conversation-practice",
+      "category": "conversation-practice",
+      "description": "Pick 2–4 specific CEFR can-do descriptors at a target level, build a role-play scenario for each in which that descriptor is necessary to succeed, write observable pass criteria before the scene, and return a per-descriptor verdict of Pass / Not yet / Not elicited quoting transcript evidence; a self-check against named descriptors and not a certification, distinct from learn_daily_conversation_drill.md (practice with no verdict) and learn_adaptive_input_output_loop.md (teaching cycles).",
+      "techniques": [
+        "QA-11",
+        "RT-05",
+        "CM-03",
+        "QA-04"
+      ],
+      "keywords": [
+        "language-learning",
+        "CEFR",
+        "can-do-statements",
+        "speaking-assessment",
+        "role-play",
+        "self-assessment"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-conversation-practice/conversation_lang_sim_master_template.md",
+        "domain-education-teaching/learner/language/learn_daily_conversation_drill.md",
+        "domain-education-teaching/learner/tutoring/learn_adaptive_input_output_loop.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-conversation-practice/conversation_lang_sim_native_speed_listening.md",
+      "filename": "conversation_lang_sim_native_speed_listening.md",
+      "title": "Language Sim — Native-Speed Listening: Fillers, Fast Speech, and Asking for Clarification",
+      "domain": "conversation-practice",
+      "category": "conversation-practice",
+      "description": "The partner speaks as natives actually do: fillers, false starts, reduced and elided forms written as spoken, run-on turns with key facts buried mid-stream. The learner must extract a hidden checklist of facts and use target-language clarification requests (specific rather than generic) instead of pretending to understand, and is scored on facts captured, clarification quality and bluffing detected. Deliberately ungraded input, distinct from the i+1 comprehensible input of learn_adaptive_input_output_loop.md and from pronunciation production in learn_pronunciation_coach_text.md.",
+      "techniques": [
+        "CM-01",
+        "ST-16",
+        "QA-11",
+        "QA-04"
+      ],
+      "keywords": [
+        "language-learning",
+        "listening",
+        "authentic-input",
+        "clarification-strategies",
+        "role-play",
+        "fluency"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-conversation-practice/conversation_lang_sim_master_template.md",
+        "domain-education-teaching/learner/tutoring/learn_adaptive_input_output_loop.md",
+        "domain-education-teaching/learner/language/learn_pronunciation_coach_text.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-conversation-practice/conversation_lang_sim_register_shift.md",
+      "filename": "conversation_lang_sim_register_shift.md",
+      "title": "Language Sim — Register Shift: The Same Scene Played Formal, Then Informal",
+      "domain": "conversation-practice",
+      "category": "conversation-practice",
+      "description": "Run one communicative goal twice in the target language, once with a formal counterpart (landlord, professor, older neighbour) and once with an informal one (a friend or peer), then contrast the learner's two transcripts on the register markers that language actually uses (address forms, verb morphology or speech levels, greetings and closings, softeners, lexical choice) and flag mismatches in both directions; distinct from learn_idiom_decoder.md, which decodes the register of one expression you met, where this prompt has you produce a whole scene at two registers.",
+      "techniques": [
+        "CM-01",
+        "RT-02",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "language-learning",
+        "register",
+        "politeness",
+        "sociolinguistics",
+        "role-play",
+        "speaking-practice"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-conversation-practice/conversation_lang_sim_master_template.md",
+        "domain-education-teaching/learner/language/learn_idiom_decoder.md",
+        "domain-education-teaching/learner/language/learn_l2_grammar_explainer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-conversation-practice/conversation_lang_sim_service_breakdown.md",
+      "filename": "conversation_lang_sim_service_breakdown.md",
+      "title": "Language Sim — Service Breakdown: Repairing a Conversation That Is Going Wrong",
+      "domain": "conversation-practice",
+      "category": "conversation-practice",
+      "description": "A target-language service scene (lost luggage, wrong order, double charge, hotel mix-up) in which the partner is polite but scripted to go wrong in three beats (a misunderstanding, a wrong fix, a policy wall), so the learner must use repair strategies to reach a confirmed outcome, scored on repair moves rather than grammar; distinct from the cooperative partner in learn_daily_conversation_drill.md and from conversation_practice_simulator.md Preset D, where you calm an angry customer in your own language.",
+      "techniques": [
+        "CM-01",
+        "ST-16",
+        "DS-01",
+        "QA-01"
+      ],
+      "keywords": [
+        "language-learning",
+        "role-play",
+        "repair-strategies",
+        "travel",
+        "customer-service",
+        "speaking-practice"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-conversation-practice/conversation_lang_sim_master_template.md",
+        "domain-education-teaching/learner/language/learn_daily_conversation_drill.md",
+        "domain-conversation-practice/conversation_practice_simulator.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-conversation-practice/conversation_lang_sim_workplace_meeting.md",
+      "filename": "conversation_lang_sim_workplace_meeting.md",
+      "title": "Language Sim — Workplace Meeting, Phone Call, and Job Interview in the Target Language",
+      "domain": "conversation-practice",
+      "category": "conversation-practice",
+      "description": "Three professional scenes run in the target language: a multi-party meeting where the model voices two or three named colleagues and the learner must take the floor, disagree politely and restate an action item; a phone call with no visual cues where names, numbers and dates must be spelled and confirmed; and a job interview asked at the learner's level. Each is scored on the professional language functions it requires. Distinct from the one-to-one social scenes in learn_daily_conversation_drill.md and from jobsearch_behavioral_interview_story_bank.md, which prepares what you say, not the language you say it in.",
+      "techniques": [
+        "OC-08",
+        "RP-03",
+        "CM-01",
+        "QA-01"
+      ],
+      "keywords": [
+        "language-learning",
+        "business-language",
+        "role-play",
+        "meetings",
+        "job-interview",
+        "speaking-practice"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-conversation-practice/conversation_lang_sim_master_template.md",
+        "domain-education-teaching/learner/language/learn_daily_conversation_drill.md",
+        "domain-personal-development/job-search/jobsearch_behavioral_interview_story_bank.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-creative-writing/craft-tools/writing_beta_reader_feedback_synthesis.md",
       "filename": "writing_beta_reader_feedback_synthesis.md",
       "title": "Beta Reader Feedback Synthesis",
@@ -52378,6 +52994,37 @@
       "difficulty": "intermediate",
       "updated": "2026-06-18",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/script-stage/writing_documentary_treatment.md",
+      "filename": "writing_documentary_treatment.md",
+      "title": "Documentary Treatment — Story, Access, Structure, and Style Before a Frame Is Shot",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Write a documentary treatment for a funder, commissioner, or collaborator: logline, the central question, the characters and the access actually secured, the story's likely arc with the uncertainty an unscripted film carries, structure and point of view, visual and sound approach, and the ethics of filming real people — every factual claim sourced or marked for verification; distinct from the screenplay framework (scripted fiction written scene by scene) and from narrative nonfiction (prose).",
+      "techniques": [
+        "CM-01",
+        "ST-03",
+        "CM-02",
+        "RT-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "creative-writing",
+        "documentary",
+        "treatment",
+        "nonfiction-film",
+        "pitch",
+        "ethics"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/script-stage/writing_screenplay_framework.md",
+        "domain-creative-writing/creative-nonfiction/writing_narrative_nonfiction_and_literary_journalism.md",
+        "domain-creative-writing/publishing-career/writing_pitch_logline_and_comp_titles.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -52881,6 +53528,68 @@
         "domain-creative-writing/craft-tools/writing_dialogue_enhancement.md",
         "domain-creative-writing/craft-tools/writing_description_and_sensory_setting.md",
         "domain-creative-writing/fiction/writing_point_of_view_and_narrative_distance.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/songwriting/writing_song_lyric_craft_workshop.md",
+      "filename": "writing_song_lyric_craft_workshop.md",
+      "title": "Song Lyric Craft Workshop — From an Idea to a Singable First Draft",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Develop an original song lyric from a title, feeling, or situation to a singable first draft — finding the song's central idea and title, choosing a point of view and a concrete world, writing verses that move and a chorus that returns, and drafting against a melody or groove rather than the page — distinct from poetry craft (which writes for the eye and the speaking voice) and from the song revision prompt (which fixes prosody and structure in an existing draft).",
+      "techniques": [
+        "CM-01",
+        "CM-02",
+        "ST-02",
+        "DT-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "creative-writing",
+        "songwriting",
+        "lyrics",
+        "chorus",
+        "hook",
+        "drafting"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/poetry/writing_poetry_craft_and_forms.md",
+        "domain-creative-writing/poetry/writing_imagery_and_figurative_language.md",
+        "domain-creative-writing/songwriting/writing_song_structure_lyric_revision.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/songwriting/writing_song_structure_lyric_revision.md",
+      "filename": "writing_song_structure_lyric_revision.md",
+      "title": "Song Structure and Lyric Revision — Prosody, Stress, Hook Placement, and Section Jobs",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Revise an existing original song lyric section by section: map each section's job and catch sections that repeat each other, check prosody (natural word stress against the melody's strong beats, vowel choice on long notes, line length against phrase length), place the hook where the song's weight falls, and return a prioritised change list with before/after lines — distinct from the lyric craft workshop (which drafts from an idea) and from general manuscript revision (which works on prose).",
+      "techniques": [
+        "DT-05",
+        "ST-02",
+        "DS-06",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "creative-writing",
+        "songwriting",
+        "prosody",
+        "song-structure",
+        "hook",
+        "revision"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/craft-tools/writing_revision_and_self_editing.md",
+        "domain-creative-writing/songwriting/writing_song_lyric_craft_workshop.md",
+        "domain-childrens-writing/craft-tools/childrens_read_aloud_rhythm_rhyme_polish.md"
       ],
       "has_frontmatter": true
     },
@@ -74824,6 +75533,223 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-frontend-development/ux-research/frontend_ux_card_sort_tree_test.md",
+      "filename": "frontend_ux_card_sort_tree_test.md",
+      "title": "Card Sort and Tree Test — Generate an Information Architecture from Users, Then Test Whether They Can Find Things in It",
+      "domain": "frontend-development",
+      "category": "frontend-development/ux-research",
+      "description": "Plan, run, and analyse the two information-architecture methods as a pair: an open or closed card sort to learn how users group and name content, and a tree test on a text-only hierarchy to measure whether they can find specific items — with card selection, task wording, sample sizes, the analyses to run (similarity matrix, success, directness, first click), and a revised tree — distinct from the site-architecture skill, which designs sitemaps and URLs from business needs rather than from user data.",
+      "techniques": [
+        "CM-03",
+        "ST-02",
+        "DS-02",
+        "RT-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "ux-research",
+        "information-architecture",
+        "card-sorting",
+        "tree-testing",
+        "navigation",
+        "findability"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/marketing/site-architecture/SKILL.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_test_plan.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_findings_severity_log.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/ux-research/frontend_ux_design_critique_facilitator.md",
+      "filename": "frontend_ux_design_critique_facilitator.md",
+      "title": "Design Critique Facilitator — Run a Critique That Tests Work Against Its Goals, Not Against Taste",
+      "domain": "frontend-development",
+      "category": "frontend-development/ux-research",
+      "description": "Prepare and run a structured critique of in-progress interface design: the designer states the goal, user, and stage; the facilitator sets the kind of feedback wanted, collects observations tied to those goals in a fixed order (what works, questions, concerns), separates taste from evidence, and closes with an owned decision list — distinct from the dashboard critique (which judges a business dashboard tile by tile) and the visual-direction finder (which chooses a direction rather than critiquing one).",
+      "techniques": [
+        "OC-07",
+        "CM-03",
+        "ST-02",
+        "DS-06",
+        "QA-02"
+      ],
+      "keywords": [
+        "ux-research",
+        "design-critique",
+        "facilitation",
+        "design-review",
+        "feedback",
+        "collaboration"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/experiments-and-reporting/analytics_dashboard_critique.md",
+        "domain-frontend-development/design-direction/frontend_visual_design_direction_finder.md",
+        "domain-frontend-development/ux-research/frontend_ux_heuristic_evaluation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/ux-research/frontend_ux_heuristic_evaluation.md",
+      "filename": "frontend_ux_heuristic_evaluation.md",
+      "title": "Heuristic Evaluation — Expert Usability Review of a Web or App Interface Against Named Heuristics",
+      "domain": "frontend-development",
+      "category": "frontend-development/ux-research",
+      "description": "Run a structured expert usability review of a visual web or app interface: fix the heuristic set (Nielsen's ten by default), walk defined user flows screen by screen, record each violation with its location, the heuristic, the evidence, and a severity, and mark which findings need user testing to confirm — distinct from the WCAG conformance audit (accessibility success criteria) and the voice-UX audit (spoken interfaces).",
+      "techniques": [
+        "DS-01",
+        "DT-05",
+        "RT-05",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "ux-research",
+        "heuristic-evaluation",
+        "usability",
+        "expert-review",
+        "nielsen-heuristics",
+        "audit"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-frontend-development/accessibility/frontend_accessibility_wcag_audit.md",
+        "domain-voice-conversational-ui/voice-ux/voice_ux_best_practices_audit.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_findings_severity_log.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/ux-research/frontend_ux_moderated_session_script.md",
+      "filename": "frontend_ux_moderated_session_script.md",
+      "title": "Moderated Usability Session Script — The Moderator's Words, Neutral Probes, and What Not to Say",
+      "domain": "frontend-development",
+      "category": "frontend-development/ux-research",
+      "description": "Write the word-for-word moderator script for a moderated usability session — welcome and consent, think-aloud instruction with a warm-up, task hand-offs read verbatim, a bank of neutral probes and rescue lines, and a debrief — with every leading, confirming, or teaching phrase replaced; distinct from the study plan (which chooses tasks and metrics) and from qualitative interview guides (which have no tasks).",
+      "techniques": [
+        "ST-02",
+        "CM-02",
+        "NE-04",
+        "OC-07",
+        "QA-01"
+      ],
+      "keywords": [
+        "ux-research",
+        "usability-testing",
+        "moderation",
+        "think-aloud",
+        "interview-technique",
+        "session-script"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-frontend-development/ux-research/frontend_ux_usability_test_plan.md",
+        "domain-research-academic/research_interview_guide_designer.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_findings_severity_log.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/ux-research/frontend_ux_standardized_survey_sus.md",
+      "filename": "frontend_ux_standardized_survey_sus.md",
+      "title": "Standardized Usability Questionnaires — Administer and Score SUS, UMUX-Lite, and SEQ Without Breaking Them",
+      "domain": "frontend-development",
+      "category": "frontend-development/ux-research",
+      "description": "Administer and score the three standard usability questionnaires — SUS (10 items, per-session), UMUX-Lite (2 items, per-session), and SEQ (1 item, per-task) — with exact item wording kept intact, the scoring formulas applied step by step, confidence intervals reported, and interpretation limited to what the instrument supports; distinct from the survey-instrument designer, which builds new questionnaires from constructs rather than administering validated ones.",
+      "techniques": [
+        "NE-11",
+        "DS-02",
+        "CM-02",
+        "QA-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "ux-research",
+        "sus",
+        "umux-lite",
+        "seq",
+        "questionnaire-scoring",
+        "usability-metrics"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-research-academic/research_survey_instrument_designer.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_test_plan.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_findings_severity_log.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/ux-research/frontend_ux_usability_findings_severity_log.md",
+      "filename": "frontend_ux_usability_findings_severity_log.md",
+      "title": "Usability Findings Severity Log — One Problem Per Row, Rated by Impact × Frequency With the Sessions That Prove It",
+      "domain": "frontend-development",
+      "category": "frontend-development/ux-research",
+      "description": "Turn usability-session observations into a findings log in which each row is one interface problem, traced to the participants and tasks that showed it, rated on an explicit impact scale and a frequency count, combined into a severity, and linked to a recommendation — distinct from general interview synthesis (themes and decisions across a research programme) and from heuristic evaluation (expert-predicted problems with no users).",
+      "techniques": [
+        "RT-05",
+        "DS-06",
+        "OC-03",
+        "QA-24",
+        "QA-04"
+      ],
+      "keywords": [
+        "ux-research",
+        "usability-testing",
+        "severity-rating",
+        "findings-log",
+        "prioritization",
+        "evidence"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-business-strategy/research/user_research_synthesis.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_test_plan.md",
+        "domain-frontend-development/ux-research/frontend_ux_heuristic_evaluation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/ux-research/frontend_ux_usability_test_plan.md",
+      "filename": "frontend_ux_usability_test_plan.md",
+      "title": "Usability Test Plan — Research Questions, Tasks, Recruiting, and Success Metrics Before Anyone Is Scheduled",
+      "domain": "frontend-development",
+      "category": "frontend-development/ux-research",
+      "description": "Design a usability study for a web or app interface before sessions are booked: decision-linked research questions, method choice (moderated/unmoderated, remote/in-person), realistic scenario tasks with observable success criteria, a screener and sample size justified by the method, and the metrics that will be recorded — distinct from the moderator's word-for-word script and from the post-study findings log.",
+      "techniques": [
+        "ST-01",
+        "CM-03",
+        "DS-02",
+        "RT-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "ux-research",
+        "usability-testing",
+        "study-design",
+        "recruiting",
+        "task-design",
+        "metrics"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-frontend-development/ux-research/frontend_ux_moderated_session_script.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_findings_severity_log.md",
+        "domain-agentic-resources/personas/design/design_ux_researcher.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-frontend-development/vue/frontend_vue_advanced_reactivity_performance.md",
       "filename": "frontend_vue_advanced_reactivity_performance.md",
       "title": "Vue 3 Advanced Reactivity & Performance Analysis",
@@ -92361,6 +93287,227 @@
       }
     },
     {
+      "path": "domain-learning/learning_ethics_dilemma_multi_framework.md",
+      "filename": "learning_ethics_dilemma_multi_framework.md",
+      "title": "Ethics Dilemma, Multi-Framework — Five Secular Theories Side by Side and Where They Diverge",
+      "domain": "learning",
+      "category": "learning/humanities",
+      "description": "Run one moral dilemma through five secular ethical theories (consequentialist, deontological, virtue, care, contractualist), each stated in its strongest form with its own decision procedure and internal variants, then locate the exact feature of the case where the verdicts part company and vary it to see which theory flips; teaches how the theories work and issues no verdict, distinct from the Scripture-grounded biblical_ethics_moral_question_framework.md and from reasoning_dialectical_synthesis.md, which resolves two positions into one.",
+      "techniques": [
+        "DS-01",
+        "RP-03",
+        "RT-02",
+        "QA-02",
+        "QA-04"
+      ],
+      "keywords": [
+        "ethics",
+        "moral-philosophy",
+        "normative-theories",
+        "dilemmas",
+        "self-study",
+        "humanities"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-biblical-studies/theology-research/biblical_ethics_moral_question_framework.md",
+        "domain-reasoning-craft/reasoning-moves/reasoning_dialectical_synthesis.md",
+        "domain-reasoning-craft/reasoning-moves/reasoning_steelman_construction.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "dialectical",
+          "comparative"
+        ],
+        "stakes": "low",
+        "horizon": "hours",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "not_applicable",
+        "domain_complexity": "single_domain",
+        "collaboration": "solo",
+        "output_format": [
+          "structured",
+          "narrative"
+        ],
+        "user_role": [
+          "individual",
+          "learner"
+        ],
+        "mode": [
+          "audit",
+          "synthesize"
+        ]
+      }
+    },
+    {
+      "path": "domain-learning/learning_history_primary_source_reading.md",
+      "filename": "learning_history_primary_source_reading.md",
+      "title": "History Primary Source Reading — Sourcing, Contextualization, and Corroboration for the Self-Taught Reader",
+      "domain": "learning",
+      "category": "learning/humanities",
+      "description": "Coach an adult reading a historical primary source on their own through the historian's four moves — sourcing, contextualization, close reading, corroboration — learner-attempts-first, with every background fact tagged by provenance and a closing verdict on what the source can and cannot be evidence of; distinct from the classroom lesson in teaching_primary_source_analysis.md and from building a historical argument in learn_history_evidence_claim_tutor.md.",
+      "techniques": [
+        "CM-01",
+        "RT-05",
+        "RT-06",
+        "ED-03",
+        "QA-04"
+      ],
+      "keywords": [
+        "history",
+        "primary-sources",
+        "historical-thinking",
+        "self-study",
+        "humanities",
+        "adult-learner"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-education-teaching/instructor/subject-pedagogy/social-studies/teaching_primary_source_analysis.md",
+        "domain-education-teaching/learner/stuck-and-confused/learn_history_evidence_claim_tutor.md",
+        "domain-learning/learning_reading_list_curator.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "evidential",
+          "contextual"
+        ],
+        "stakes": "low",
+        "horizon": "hours",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "sparse",
+        "domain_complexity": "single_domain",
+        "collaboration": "solo",
+        "output_format": [
+          "structured",
+          "narrative"
+        ],
+        "user_role": [
+          "individual",
+          "learner"
+        ],
+        "mode": [
+          "audit",
+          "synthesize"
+        ]
+      }
+    },
+    {
+      "path": "domain-learning/learning_philosophy_argument_standard_form.md",
+      "filename": "learning_philosophy_argument_standard_form.md",
+      "title": "Philosophy Argument in Standard Form — Numbered Premises, Then a Validity Test and a Soundness Test",
+      "domain": "learning",
+      "category": "learning/humanities",
+      "description": "Reconstruct a philosophical argument from a passage into standard form (numbered premises, marked sub-conclusions, one conclusion), with charitably added premises flagged, then run two separate tests: validity (can the premises be true and the conclusion false? named form or counterexample) and soundness (a per-premise accept / reject / suspend verdict); strictly the standard-form move, distinct from the Toulmin map (reasoning_argument_map_toulmin.md), the premise-by-premise support audit (reasoning_premise_audit.md), and recall drilling (learn_humanities_argument_recall.md).",
+      "techniques": [
+        "RT-01",
+        "CM-02",
+        "QA-11",
+        "QA-02"
+      ],
+      "keywords": [
+        "philosophy",
+        "logic",
+        "argument-reconstruction",
+        "validity",
+        "self-study",
+        "humanities"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-reasoning-craft/reasoning-moves/reasoning_argument_map_toulmin.md",
+        "domain-reasoning-craft/reasoning-moves/reasoning_premise_audit.md",
+        "domain-education-teaching/learner/study-by-discipline/learn_humanities_argument_recall.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "deductive",
+          "structural"
+        ],
+        "stakes": "low",
+        "horizon": "hours",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "single_domain",
+        "collaboration": "solo",
+        "output_format": [
+          "structured"
+        ],
+        "user_role": [
+          "individual",
+          "learner"
+        ],
+        "mode": [
+          "audit",
+          "diagnose"
+        ]
+      }
+    },
+    {
+      "path": "domain-learning/learning_philosophy_thought_experiment_probe.md",
+      "filename": "learning_philosophy_thought_experiment_probe.md",
+      "title": "Philosophy Thought Experiment Probe — What the Case Tests, Which Knob Drives the Intuition",
+      "domain": "learning",
+      "category": "learning/humanities",
+      "description": "Interrogate a philosophical thought experiment (Chinese Room, Experience Machine, Mary's Room, Gettier cases, the violinist) as evidence: state the stipulations exactly, name the thesis it targets and the intuition it pumps, turn one knob at a time to find which feature drives that intuition and which are confounds, check that the case is coherent, and map where the intuition does and does not bear on the thesis; distinct from reasoning_counterfactual_analysis.md, which reasons causally about what would have happened in the actual world.",
+      "techniques": [
+        "RP-04",
+        "ED-03",
+        "RT-04",
+        "QA-02"
+      ],
+      "keywords": [
+        "philosophy",
+        "thought-experiments",
+        "intuition-pumps",
+        "self-study",
+        "humanities",
+        "critical-thinking"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-reasoning-craft/reasoning-moves/reasoning_counterfactual_analysis.md",
+        "domain-learning/learning_ethics_dilemma_multi_framework.md",
+        "domain-learning/learning_concept_explanation_audit.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "dialectical",
+          "counterfactual"
+        ],
+        "stakes": "low",
+        "horizon": "hours",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "not_applicable",
+        "domain_complexity": "single_domain",
+        "collaboration": "solo",
+        "output_format": [
+          "structured",
+          "narrative"
+        ],
+        "user_role": [
+          "individual",
+          "learner"
+        ],
+        "mode": [
+          "audit",
+          "diagnose"
+        ]
+      }
+    },
+    {
       "path": "domain-learning/learning_skill_gap_to_curriculum.md",
       "filename": "learning_skill_gap_to_curriculum.md",
       "title": "Skill Gap to Curriculum — Translate a Concrete Gap Into a Sequenced Plan",
@@ -92468,6 +93615,62 @@
           "individual",
           "learner",
           "professional"
+        ],
+        "mode": [
+          "plan",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "path": "domain-learning/learning_primary_text_reading_plan.md",
+      "filename": "learning_primary_text_reading_plan.md",
+      "title": "Primary Text Reading Plan — Getting Through One Hard Classic on Your Own",
+      "domain": "learning",
+      "category": "learning/reading",
+      "description": "Build a plan for one difficult classic an adult has already chosen (Kant, Thucydides, Spinoza, Middlemarch): pacing set by a timed test read, scaffolds built before starting (a structure map, a terms-of-art glossary, a one-sentence restatement per section), a rule for when to open a secondary source and when not to, a stall protocol and restatement checkpoints; distinct from choosing what to read (learning_reading_list_curator.md) and from annotating a passage (learn_annotation_coach.md).",
+      "techniques": [
+        "DT-01",
+        "ED-01",
+        "DS-06",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "reading-plan",
+        "classics",
+        "primary-texts",
+        "self-study",
+        "humanities",
+        "pacing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-learning/learning_reading_list_curator.md",
+        "domain-education-teaching/learner/reading/learn_annotation_coach.md",
+        "domain-learning/learning_concept_explanation_audit.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "systems",
+          "strategic"
+        ],
+        "stakes": "low",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "single_domain",
+        "collaboration": "solo",
+        "output_format": [
+          "structured",
+          "spec"
+        ],
+        "user_role": [
+          "individual",
+          "learner"
         ],
         "mode": [
           "plan",
@@ -115398,6 +116601,64 @@
       }
     },
     {
+      "path": "domain-personal-development/major-decisions/personal_care_facility_comparison.md",
+      "filename": "personal_care_facility_comparison.md",
+      "title": "Care Facility Comparison — Choosing a Specific Assisted-Living, Memory-Care, or Nursing Facility After the Arrangement Type Is Settled",
+      "domain": "personal-development",
+      "category": "personal-development/major-decisions",
+      "description": "Compare two to five specific care facilities once the family has already decided the arrangement type (assisted living, memory care, skilled nursing): set must-haves from the parent's care level and wishes before any tour, gather evidence from official inspection records, unannounced visits and residents' families rather than the marketing tour, price the full cost trajectory including level-of-care increases, read the admission contract's exit and discharge terms with a professional, and end with a ranked choice plus a watch-list for the first 90 days; distinct from `personal_caring_for_aging_parent.md`, which decides the arrangement type, and `personal_major_purchase_research.md`, which compares goods rather than care.",
+      "techniques": [
+        "DT-05",
+        "RT-05",
+        "DS-06",
+        "CM-02",
+        "QA-12"
+      ],
+      "keywords": [
+        "caregiving",
+        "aging-parents",
+        "assisted-living",
+        "care-facilities",
+        "family",
+        "decision-quality"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/major-decisions/personal_caring_for_aging_parent.md",
+        "domain-personal-development/major-decisions/personal_major_purchase_research.md",
+        "domain-decision-making/tradeoff_multi_criteria_decision_analysis.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "evidential",
+          "comparative",
+          "multi-criteria",
+          "empathic"
+        ],
+        "stakes": "high",
+        "horizon": "months_to_years",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_pair",
+        "output_format": [
+          "matrix",
+          "structured"
+        ],
+        "user_role": [
+          "individual",
+          "family"
+        ],
+        "mode": [
+          "decide",
+          "audit",
+          "assess"
+        ]
+      }
+    },
+    {
       "path": "domain-personal-development/major-decisions/personal_career_offer_evaluation.md",
       "filename": "personal_career_offer_evaluation.md",
       "title": "Career Offer Evaluation — Beyond Compensation to Growth, Network, Optionality, and BATNA",
@@ -115630,6 +116891,61 @@
           "decide",
           "audit",
           "diagnose"
+        ]
+      }
+    },
+    {
+      "path": "domain-personal-development/major-decisions/personal_estate_wishes_attorney_prep.md",
+      "filename": "personal_estate_wishes_attorney_prep.md",
+      "title": "Estate Wishes Workbook — Deciding Who You Would Name, What You Want, and What to Ask Before the Estate-Planning Attorney Meeting",
+      "domain": "personal-development",
+      "category": "personal-development/major-decisions",
+      "description": "Work through the human decisions an estate-planning attorney will ask you to make — who would act for you (executor, financial and healthcare agents, backups), who would raise your children, how you want to be cared for if you cannot speak for yourself, what you want to happen to things and people that matter, and which conversations must happen first — and arrive at the meeting with choices, reasons and questions rather than a blank; never drafts or interprets wills, powers of attorney or directives; distinct from `domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md`, which inventories existing documents, designations and titling.",
+      "techniques": [
+        "RT-02",
+        "OC-09",
+        "NE-20",
+        "CM-02",
+        "QA-12"
+      ],
+      "keywords": [
+        "estate-planning",
+        "guardianship",
+        "end-of-life-wishes",
+        "family",
+        "attorney-prep",
+        "personal-decisions"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md",
+        "domain-personal-development/major-decisions/personal_caring_for_aging_parent.md",
+        "domain-legal/personal-self-advocacy/cross-cutting/legalprep_consultation_question_builder.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "reflective",
+          "analytic",
+          "counterfactual",
+          "identity-aware"
+        ],
+        "stakes": "high",
+        "horizon": "years",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_pair",
+        "output_format": "structured",
+        "user_role": [
+          "individual",
+          "family"
+        ],
+        "mode": [
+          "decide",
+          "document",
+          "synthesize"
         ]
       }
     },
@@ -121705,6 +123021,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-productivity/home-life/home_after_death_admin_checklist.md",
+      "filename": "home_after_death_admin_checklist.md",
+      "title": "After a Death — The Practical Admin Sequence for the First Days, Weeks, and Months",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Turn the practical administration after someone close dies into a sequenced, shareable checklist — what genuinely cannot wait in the first 48 hours, what follows in the first weeks, and what runs for months — with a notification tracker, a document list, clear hand-offs to the funeral director, the estate's attorney and the accountant, and a plan to spread the work so one person does not carry it all; routes grief to `domain-psychology/client-self-use/grief-loss/` and legal or tax questions to professionals, and is distinct from `domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md`, which plans an estate before a death.",
+      "techniques": [
+        "NE-07",
+        "ST-02",
+        "DS-06",
+        "OC-09",
+        "QA-04"
+      ],
+      "keywords": [
+        "bereavement",
+        "estate-administration",
+        "checklist",
+        "household",
+        "family",
+        "notifications"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md",
+        "domain-psychology/client-self-use/grief-loss/clientself_complicated_vs_normal_grief_reflection.md",
+        "domain-productivity/home-life/home_household_paperwork_system.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-productivity/home-life/home_appointment_prep.md",
       "filename": "home_appointment_prep.md",
       "title": "Appointment Prep Generator",
@@ -121737,6 +123084,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-productivity/home-life/home_caregiver_respite_plan.md",
+      "filename": "home_caregiver_respite_plan.md",
+      "title": "Caregiver Respite Plan — Scheduling Real Breaks for the Primary Carer, With Cover That Holds",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Plan practical, recurring respite for the person doing most of the caregiving — a weekly protected block, a monthly longer break and an annual multi-day break — with named cover for each, the handover information cover needs, options such as family, paid sitters, day programmes or short-stay care marked [VERIFY availability and cost locally], and an early-warning list that routes signs of distress to psychology resources rather than treating them here; not clinical and not a burnout diagnosis, distinct from `domain-personal-development/prompts/agency/agency_burnout_recovery.md` (diagnosing burnout) and `home_family_caregiving_coordination.md` (the whole family's care rota).",
+      "techniques": [
+        "ST-01",
+        "DS-26",
+        "CM-02",
+        "QA-20",
+        "OC-03"
+      ],
+      "keywords": [
+        "caregiving",
+        "respite",
+        "caregiver-support",
+        "scheduling",
+        "family",
+        "household"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/prompts/agency/agency_burnout_recovery.md",
+        "domain-productivity/home-life/home_family_caregiving_coordination.md",
+        "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-productivity/home-life/home_declutter_session.md",
       "filename": "home_declutter_session.md",
       "title": "Declutter Session Planner",
@@ -121764,6 +123142,37 @@
         "domain-productivity/bottlenecks/bottleneck_capture_triage_system_design.md",
         "domain-personal-development/prompts/agency/agency_next_action_spec.md",
         "domain-personal-development/prompts/agency/agency_ship_sprint_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-productivity/home-life/home_family_caregiving_coordination.md",
+      "filename": "home_family_caregiving_coordination.md",
+      "title": "Family Caregiving Coordination — Weekly Rota, Shared Expense Ledger, and Sibling Updates After the Care Decision",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Run the ongoing operations of caring for a parent or relative once the arrangement has been chosen: a weekly care rota measured in hours with a named backup for every slot, a shared expense ledger with an agreed split and a monthly settle-up, a one-page care information sheet, a short standing update to siblings, and a monthly load check that catches one person quietly doing everything; distinct from `domain-personal-development/major-decisions/personal_caring_for_aging_parent.md` (deciding the arrangement) and `home_family_schedule_coordinator.md` (one household's weekly calendar).",
+      "techniques": [
+        "OC-03",
+        "NE-11",
+        "DS-06",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "caregiving",
+        "aging-parents",
+        "family",
+        "coordination",
+        "shared-expenses",
+        "siblings"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/major-decisions/personal_caring_for_aging_parent.md",
+        "domain-productivity/home-life/home_family_schedule_coordinator.md",
+        "domain-productivity/home-life/home_chore_rotation_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -121861,6 +123270,67 @@
         "domain-parenting/parenting_daily_routine_designer.md",
         "domain-parenting/parenting_transitions_and_warnings_protocol.md",
         "domain-productivity/bottlenecks/bottleneck_capture_triage_system_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-productivity/home-life/home_household_paperwork_system.md",
+      "filename": "home_household_paperwork_system.md",
+      "title": "Household Paperwork System — Where Every Important Document Lives, How Long to Keep It, and How Someone Else Finds It",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Design a household's paper-and-digital document system — a small set of categories, one physical and one digital home for each, a keep/shred rule per document type marked for verification, an inbox-to-filed routine that fits a weekly slot, and a 'where things are' sheet a partner or executor could use if you were unavailable; distinct from `domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md`, which reviews what estate documents say, and `domain-productivity/bottlenecks/bottleneck_capture_triage_system_design.md`, which designs task capture rather than document storage.",
+      "techniques": [
+        "ST-05",
+        "DS-26",
+        "ST-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "household",
+        "paperwork",
+        "filing-system",
+        "documents",
+        "organization",
+        "emergency-preparedness"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md",
+        "domain-productivity/bottlenecks/bottleneck_capture_triage_system_design.md",
+        "domain-productivity/home-life/home_seasonal_maintenance_calendar.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-productivity/home-life/home_medicare_insurance_enrollment_prep.md",
+      "filename": "home_medicare_insurance_enrollment_prep.md",
+      "title": "Medicare and Insurance Enrollment Prep — Documents, Questions, and a Verification Checklist Before You Choose",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Prepare for a Medicare or health-insurance enrollment decision — your own or a parent's — by gathering the documents and facts the choice depends on (current coverage, prescriptions, doctors, expected care, income), writing the questions to take to the official program, a counselling service or a licensed agent, and building a checklist in which every premium, penalty, deadline and eligibility rule is marked [VERIFY with official source] rather than stated; distinct from `home_appointment_prep.md` (any single appointment) and `domain-psychology/client-self-use/pre-therapy/clientself_insurance_eap_sliding_scale_navigation.md` (paying for therapy).",
+      "techniques": [
+        "SV-02",
+        "QA-04",
+        "QA-05",
+        "CM-02",
+        "DS-40"
+      ],
+      "keywords": [
+        "medicare",
+        "health-insurance",
+        "enrollment",
+        "aging-parents",
+        "household",
+        "preparation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-productivity/home-life/home_appointment_prep.md",
+        "domain-psychology/client-self-use/pre-therapy/clientself_insurance_eap_sliding_scale_navigation.md",
+        "domain-finance/personal-finance-planning/finance_insurance_needs_analysis.md"
       ],
       "has_frontmatter": true
     },
@@ -123670,6 +125140,68 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-professional-writing/content-production/content_podcast_episode_outline.md",
+      "filename": "content_podcast_episode_outline.md",
+      "title": "Podcast Episode Outline — Host Rundown and Show Notes, Not a Script",
+      "domain": "professional-writing",
+      "category": "professional-writing/content-production",
+      "description": "Plan one podcast episode as a timed host rundown (cold open, intro, segments with talking points and transitions, ad or mid-roll slots, close and call to action) plus publish-ready show notes (summary, timestamps, links, credits) built only from supplied material — distinct from the long-form script writer, which writes every spoken word, and from interview prep, which builds the question plan for a guest.",
+      "techniques": [
+        "ST-03",
+        "CM-02",
+        "DS-06",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "podcast",
+        "episode-outline",
+        "rundown",
+        "show-notes",
+        "audio",
+        "content-production"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-professional-writing/content-production/content_long_form_script.md",
+        "domain-professional-writing/content-production/content_repurpose_one_to_many.md",
+        "domain-professional-writing/content-production/content_seo_title_description.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/content-production/content_podcast_host_interview_prep.md",
+      "filename": "content_podcast_host_interview_prep.md",
+      "title": "Podcast Host Interview Prep — The Question Plan, Follow-Ups, and What You Must Not Get Wrong About the Guest",
+      "domain": "professional-writing",
+      "category": "professional-writing/content-production",
+      "description": "Prepare the host side of a podcast or video interview: the episode's goal for this guest, a sourced guest brief built from supplied research, a question plan ordered from warm-up to the hard question with follow-ups for thin answers, facts to confirm with the guest before recording, and a pre-interview checklist — distinct from guest-side media prep (which prepares the person being interviewed) and from person background research (which produces the sourced briefing this prompt consumes).",
+      "techniques": [
+        "CM-01",
+        "ST-02",
+        "RT-05",
+        "QA-02",
+        "QA-04"
+      ],
+      "keywords": [
+        "podcast",
+        "interviewing",
+        "question-plan",
+        "guest-research",
+        "host-prep",
+        "content-production"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-science/public-engagement/science_media_interview_prep.md",
+        "domain-business-strategy/go-to-market/research_person_background.md",
+        "domain-professional-writing/content-production/content_podcast_episode_outline.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-professional-writing/content-production/content_repurpose_one_to_many.md",
       "filename": "content_repurpose_one_to_many.md",
       "title": "Repurpose One-to-Many Content Atomizer",
@@ -123792,6 +125324,37 @@
         "domain-professional-writing/content-production/content_long_form_script.md",
         "domain-professional-writing/content-production/content_repurpose_one_to_many.md",
         "domain-professional-writing/content-production/content_series_channel_bible.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/content-production/content_video_shot_list_preproduction.md",
+      "filename": "content_video_shot_list_preproduction.md",
+      "title": "Video Shot List and Pre-Production Plan — From Approved Script to a Shootable Day",
+      "domain": "professional-writing",
+      "category": "professional-writing/content-production",
+      "description": "Convert an approved script or outline for a live-action video into a numbered shot list (scene, shot size, angle, movement, subject, audio, lens or coverage notes, script line covered), a shooting order grouped by location and setup rather than story order, and a pre-production checklist (locations, releases, props, crew, gear, schedule) — distinct from the storyboard workflow (AI-generated storyboard images) and the video skill (AI or programmatic video generation).",
+      "techniques": [
+        "DT-01",
+        "ST-03",
+        "OC-03",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "video-production",
+        "shot-list",
+        "pre-production",
+        "filmmaking",
+        "scheduling",
+        "content-production"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-image-generation/STORYBOARD_WORKFLOW.md",
+        "domain-agentic-resources/skills/marketing/video/SKILL.md",
+        "domain-professional-writing/content-production/content_long_form_script.md"
       ],
       "has_frontmatter": true
     },
@@ -124947,6 +126510,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-professional-writing/writing/writing_interview_transcript_to_feature.md",
+      "filename": "writing_interview_transcript_to_feature.md",
+      "title": "Interview Transcript to Feature — Shape a Profile or Q&A Without Changing What Anyone Said",
+      "domain": "professional-writing",
+      "category": "professional-writing/writing",
+      "description": "Turn a cleaned interview transcript into a feature, profile, or edited Q&A under explicit quote-fidelity rules — verbatim direct quotes anchored to timestamps, stated limits on trimming and reordering, paraphrase that stays within what was said, no invented scene or interiority, and a quote ledger the subject or editor can check — distinct from transcript cleanup (fixing speech-to-text errors), narrative nonfiction (scene-led reporting from many sources), and a straight news story.",
+      "techniques": [
+        "IPC-07",
+        "CM-02",
+        "ST-02",
+        "DS-06",
+        "QA-01"
+      ],
+      "keywords": [
+        "interviewing",
+        "feature-writing",
+        "profile",
+        "q-and-a",
+        "quote-fidelity",
+        "journalism"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/content-creation/transcript-fixer/SKILL.md",
+        "domain-creative-writing/creative-nonfiction/writing_narrative_nonfiction_and_literary_journalism.md",
+        "domain-professional-writing/writing/writing_news_article_inverted_pyramid.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-professional-writing/writing/writing_narrative_arc_builder.md",
       "filename": "writing_narrative_arc_builder.md",
       "title": "Narrative Arc Builder — Three-Act Structure from a One-Line Thesis or Core Idea",
@@ -124974,6 +126568,37 @@
         "domain-professional-writing/writing/writing_thesis_builder_essay.md",
         "domain-professional-writing/writing/writing_voice_print_extractor.md",
         "domain-product-management/prompts/product_create_prd.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/writing/writing_news_article_inverted_pyramid.md",
+      "filename": "writing_news_article_inverted_pyramid.md",
+      "title": "News Article — Inverted Pyramid With Sourcing and Attribution Discipline",
+      "domain": "professional-writing",
+      "category": "professional-writing/writing",
+      "description": "Write a straight news story from supplied reporting in inverted-pyramid order — a lede with the most newsworthy verified fact, a nut graf, supporting facts in descending importance, and background last — where every factual sentence is attributed to a named or described source from the reporter's notes, quotes are verbatim, unconfirmed items are withheld or labelled, and no quote, figure, or source is invented; distinct from narrative nonfiction (scene-led long-form), the newsletter issue (a voice-led single idea), and manuscript fact-checking (verifying a finished draft).",
+      "techniques": [
+        "RT-05",
+        "IPC-07",
+        "QA-05",
+        "DS-06",
+        "CM-02"
+      ],
+      "keywords": [
+        "journalism",
+        "news-writing",
+        "inverted-pyramid",
+        "attribution",
+        "sourcing",
+        "lede"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/creative-nonfiction/writing_narrative_nonfiction_and_literary_journalism.md",
+        "domain-professional-writing/writing/writing_newsletter_issue.md",
+        "domain-professional-writing/writing/writing_unsourced_claim_disposition.md"
       ],
       "has_frontmatter": true
     },
@@ -144483,6 +146108,120 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-risk/risk_payment_fraud_bec_controls.md",
+      "filename": "risk_payment_fraud_bec_controls.md",
+      "title": "Payment Fraud and BEC Controls — Callback Verification, Dual Approval, and Vendor Bank-Change Rules a Small Finance Team Can Actually Run",
+      "domain": "risk",
+      "category": "risk",
+      "description": "Design the handful of payment controls that stop business-email-compromise and invoice fraud at a small or mid-sized organisation — callback verification on a number already on file, dual approval above a threshold, a locked vendor bank-change procedure with a cooling-off hold, urgency and secrecy treated as red flags, and a same-day bank-recall path — sized to a two-to-six-person finance function; distinct from `domain-finance/accounting-controllership/finance_sox_internal_controls_designer.md` (SOX control matrices for public-company reporting) and `risk_phishing_awareness_program.md` (training people, not the payment process).",
+      "techniques": [
+        "CM-02",
+        "DP-04",
+        "QA-02",
+        "ST-02",
+        "OC-03"
+      ],
+      "keywords": [
+        "payment-fraud",
+        "business-email-compromise",
+        "internal-controls",
+        "accounts-payable",
+        "vendor-management",
+        "small-business"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/accounting-controllership/finance_sox_internal_controls_designer.md",
+        "domain-risk/risk_phishing_awareness_program.md",
+        "domain-risk/risk_security_incident_response_playbook.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "adversarial",
+          "procedural",
+          "protective",
+          "systems"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "operator",
+          "finance",
+          "founder",
+          "office-manager"
+        ],
+        "mode": [
+          "design",
+          "audit",
+          "plan"
+        ]
+      }
+    },
+    {
+      "path": "domain-risk/risk_phishing_awareness_program.md",
+      "filename": "risk_phishing_awareness_program.md",
+      "title": "Phishing Awareness Program — Reporting Culture, Short Training, Fair Simulations, and Metrics That Cannot Be Gamed",
+      "domain": "risk",
+      "category": "risk",
+      "description": "Design a year-one phishing awareness program for a small or mid-sized organisation that treats people as the detection layer rather than the weak link: a one-click reporting path, short role-specific training, simulations run under published rules with no shaming, and metrics led by reporting rate and time-to-report rather than click rate alone; distinct from `domain-software-engineering/analysis/security/security_soc2_type2_preparation.md`, which only needs the training evidence, and `risk_payment_fraud_bec_controls.md`, which makes a successful lure fail at the payment step.",
+      "techniques": [
+        "RP-02",
+        "DS-02",
+        "QA-21",
+        "CM-02",
+        "QA-12"
+      ],
+      "keywords": [
+        "phishing",
+        "security-awareness",
+        "training",
+        "reporting-culture",
+        "metrics",
+        "small-business"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-software-engineering/analysis/security/security_soc2_type2_preparation.md",
+        "domain-risk/risk_payment_fraud_bec_controls.md",
+        "domain-risk/risk_security_incident_response_playbook.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "systems",
+          "empathic",
+          "evaluative",
+          "adversarial"
+        ],
+        "stakes": "moderate",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "operator",
+          "hr",
+          "team-lead",
+          "executive"
+        ],
+        "mode": [
+          "design",
+          "plan",
+          "audit"
+        ]
+      }
+    },
+    {
       "path": "domain-risk/risk_appetite_statement.md",
       "filename": "risk_appetite_statement.md",
       "title": "Risk Appetite Statement — The Thresholds the Register and the Heat Map Presuppose",
@@ -144511,6 +146250,237 @@
         "domain-decision-making/decisioning_escalation_decision_tree.md"
       ],
       "has_frontmatter": true
+    },
+    {
+      "path": "domain-risk/risk_security_alert_triage_runbook.md",
+      "filename": "risk_security_alert_triage_runbook.md",
+      "title": "Security Alert Triage Runbook — Human-Run Steps for a Small Team Deciding Noise, Watch, or Incident",
+      "domain": "risk",
+      "category": "risk",
+      "description": "Write the manual triage runbook a two-to-five-person team without a SOC uses on the alerts and reports it actually receives — staff phishing reports, sign-in and MFA warnings, antivirus/endpoint detections, vendor breach notices, 'my account is sending spam' — organised by what the person sees, with a severity ladder, a fixed decision of close / watch / escalate to incident, a named on-duty owner, and a weekly tuning review; distinct from `domain-AI-ML/agentic-ai-systems/aiagent_secops_autonomous_defense.md` (designing automated SOC triage) and `domain-software-engineering/devops/monitoring_solo_dev_alerting.md` (application uptime alerts).",
+      "techniques": [
+        "IT-23",
+        "RT-10",
+        "DS-06",
+        "DS-36",
+        "QA-12"
+      ],
+      "keywords": [
+        "alert-triage",
+        "security-operations",
+        "runbook",
+        "small-team",
+        "escalation",
+        "phishing-reports"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-AI-ML/agentic-ai-systems/aiagent_secops_autonomous_defense.md",
+        "domain-risk/risk_security_incident_response_playbook.md",
+        "domain-software-engineering/devops/monitoring_solo_dev_alerting.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "diagnostic",
+          "procedural",
+          "abductive",
+          "protective"
+        ],
+        "stakes": "variable",
+        "horizon": "hours",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "sparse",
+        "domain_complexity": "single_domain",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "operator",
+          "office-manager",
+          "it-generalist",
+          "team-lead"
+        ],
+        "mode": [
+          "diagnose",
+          "triage",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-risk/risk_security_incident_response_playbook.md",
+      "filename": "risk_security_incident_response_playbook.md",
+      "title": "Security Incident Response Playbook — Ransomware, Email Compromise, Lost Devices, and Data Exposure for an Organisation Without a SOC",
+      "domain": "risk",
+      "category": "risk",
+      "description": "Write the human-run response playbook a small or mid-sized organisation without a security operations centre follows in the first hour, day and week of four common incidents — ransomware, business email compromise, a lost or stolen device, and accidental data exposure — with decision authority, evidence preservation, outside help lined up in advance, and every legal notification clock routed to counsel rather than asserted; distinct from the technical SRE agent in `domain-agentic-resources/agents/devops/incident_responder.md` and the ML-failure runbook in `domain-AI-ML/production-monitoring/mlmonitor_ml_incident_response.md`.",
+      "techniques": [
+        "ST-02",
+        "AG-19",
+        "OC-09",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "incident-response",
+        "ransomware",
+        "business-email-compromise",
+        "data-breach",
+        "small-business",
+        "security-operations"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_business_continuity_plan.md",
+        "domain-risk/risk_after_action_review.md",
+        "domain-agentic-resources/agents/devops/incident_responder.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "procedural",
+          "protective",
+          "systems",
+          "causal"
+        ],
+        "stakes": "high",
+        "horizon": "hours_to_days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "sparse",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "operator",
+          "founder",
+          "executive",
+          "office-manager"
+        ],
+        "mode": [
+          "plan",
+          "respond",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-risk/risk_tabletop_exercise_designer.md",
+      "filename": "risk_tabletop_exercise_designer.md",
+      "title": "Tabletop Exercise Designer — A Scenario With Injects, Decision Points, and a Findings List That Changes the Plan",
+      "domain": "risk",
+      "category": "risk",
+      "description": "Design and facilitate a 60–120 minute discussion-based tabletop exercise that tests a written plan (incident playbook, continuity plan, crisis-comms plan) against a realistic scenario: one stated objective, timed injects that force decisions at known weak points, a facilitator script, an observer sheet, and a hot-wash that produces owned plan changes; distinct from `risk_business_continuity_plan.md`, which schedules the test, and `risk_after_action_review.md`, which reviews a real event rather than a simulated one.",
+      "techniques": [
+        "ST-02",
+        "MP-04",
+        "QA-02",
+        "DS-40",
+        "OC-03"
+      ],
+      "keywords": [
+        "tabletop-exercise",
+        "incident-response",
+        "business-continuity",
+        "exercise-design",
+        "facilitation",
+        "preparedness"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_business_continuity_plan.md",
+        "domain-risk/risk_after_action_review.md",
+        "domain-risk/risk_security_incident_response_playbook.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "scenario",
+          "adversarial",
+          "systems",
+          "reflective"
+        ],
+        "stakes": "moderate",
+        "horizon": "hours",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "operator",
+          "team-lead",
+          "executive",
+          "facilitator"
+        ],
+        "mode": [
+          "design",
+          "rehearse",
+          "diagnose"
+        ]
+      }
+    },
+    {
+      "path": "domain-risk/risk_vendor_security_questionnaire_review.md",
+      "filename": "risk_vendor_security_questionnaire_review.md",
+      "title": "Vendor Security Questionnaire Review — Reading a Supplier's Answers as the Buyer, Tiered by What They Will Touch",
+      "domain": "risk",
+      "category": "risk",
+      "description": "Review a prospective or existing vendor's security questionnaire, attestation or trust-page claims from the buyer's side: tier the vendor by the data and access it will hold, ask only the questions that tier warrants, grade each answer by evidence strength rather than by 'yes', convert vague answers into checkable follow-ups, and end in approve / approve-with-conditions / escalate / decline with residual risk accepted by a named owner; distinct from `domain-business-strategy/research/research_vendor_evaluation.md` (whole-vendor fit and cost) and `domain-agentic-resources/skills/security/supply-chain-risk-auditor/SKILL.md` (software dependency risk).",
+      "techniques": [
+        "ST-43",
+        "RT-05",
+        "DD-02",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "vendor-risk",
+        "third-party-risk",
+        "security-questionnaire",
+        "procurement",
+        "due-diligence",
+        "small-business"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-business-strategy/research/research_vendor_evaluation.md",
+        "domain-agentic-resources/skills/security/supply-chain-risk-auditor/SKILL.md",
+        "domain-risk/risk_dependency_chain_audit.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "evidential",
+          "evaluative",
+          "adversarial",
+          "structural"
+        ],
+        "stakes": "variable",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_team",
+        "output_format": [
+          "matrix",
+          "structured"
+        ],
+        "user_role": [
+          "operator",
+          "procurement",
+          "founder",
+          "office-manager"
+        ],
+        "mode": [
+          "audit",
+          "assess",
+          "decide"
+        ]
+      }
     },
     {
       "path": "domain-risk/risk_after_action_review.md",
@@ -144923,6 +146893,36 @@
       }
     },
     {
+      "path": "domain-sales-customer/customer-success/cs_account_feedback_routing_loop.md",
+      "filename": "cs_account_feedback_routing_loop.md",
+      "title": "Account Feedback Routing Loop — Send Each Item to the Owner Who Can Act, Then Tell the Customer Exactly What Happened",
+      "domain": "sales-customer",
+      "category": "sales-customer/customer-success",
+      "description": "For one account, split the feedback gathered across calls, QBRs, tickets and email into single items with verbatim evidence, classify each (bug, product gap, billing or process, service, commercial signal, praise), route it to the named owner who can act with a self-contained brief and a decision date, and close the loop with the customer using only what each owner has committed — plus a ledger that tracks every item to closure — distinct from voice-of-customer synthesis across many accounts, which the customer-research skill owns.",
+      "techniques": [
+        "DS-40",
+        "CM-09",
+        "RT-05",
+        "NE-20"
+      ],
+      "keywords": [
+        "customer-success",
+        "customer-feedback",
+        "close-the-loop",
+        "account-management",
+        "product-feedback",
+        "b2b"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/marketing/customer-research/SKILL.md",
+        "domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md",
+        "domain-sales-customer/customer-success/cs_customer_qbr_prep.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-sales-customer/customer-success/cs_account_health.md",
       "filename": "cs_account_health.md",
       "title": "Account Health Assessment & Risk Identification",
@@ -145219,6 +147219,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-sales-customer/sales/sales_strategic_account_plan.md",
+      "filename": "sales_strategic_account_plan.md",
+      "title": "Strategic Account Plan — Whitespace Map, Relationship Coverage, and an Expansion Sequence Gated on Evidence",
+      "domain": "sales-customer",
+      "category": "sales-customer/sales",
+      "description": "Build an internal 12–24 month plan for one named key account: the customer's own priorities with provenance, a whitespace matrix of business units against products (owned, in use, open-fit, open-unknown, competitor-held), a relationship map that exposes single-threading, and an expansion sequence in which every play is gated on adoption, value proof or renewal timing, with owners, dated milestones and a pause rule — distinct from the account-health diagnosis (cs_account_health), the one-meeting QBR (cs_customer_qbr_prep) and the renewal save plan.",
+      "techniques": [
+        "RT-12",
+        "DS-01",
+        "RT-05",
+        "AG-08"
+      ],
+      "keywords": [
+        "sales",
+        "key-account-management",
+        "account-planning",
+        "expansion",
+        "whitespace",
+        "relationship-mapping",
+        "b2b"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/customer-success/cs_account_health.md",
+        "domain-sales-customer/customer-success/cs_customer_qbr_prep.md",
+        "domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-sales-customer/sales/sales_win_loss_analysis.md",
       "filename": "sales_win_loss_analysis.md",
       "title": "Win/Loss Analysis — Interviews With the Buyer, Not the Seller's Account of Them",
@@ -145275,6 +147306,66 @@
         "domain-sales-customer/support/support_ticket_triage_and_routing.md",
         "domain-decision-making/decisioning_escalation_decision_tree.md",
         "domain-negotiation/contexts/negotiation_customer_escalation_concession.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/support/support_incident_status_update.md",
+      "filename": "support_incident_status_update.md",
+      "title": "Incident Status Update — One-to-Many Outage Communication from a Single Fact Sheet, on a Clock You Keep",
+      "domain": "sales-customer",
+      "category": "sales-customer/support",
+      "description": "Draft the customer-facing updates for a live incident affecting many customers — investigating, identified, monitoring, resolved — from one fact sheet tagged confirmed or suspected, with impact in customer terms, what is not affected, a workaround only if confirmed, what is not known, and a next-update time on a cadence set by severity; plus the channel map (status page, in-app banner, email, support macro, internal account-team talking points) and a per-update consistency check — distinct from the one-customer escalation reply (support_escalation_response_drafter) and from the engineering postmortem.",
+      "techniques": [
+        "AG-19",
+        "NE-14",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "support",
+        "incident-communication",
+        "status-page",
+        "outage",
+        "customer-communication",
+        "customer-support"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/support/support_escalation_response_drafter.md",
+        "domain-sales-customer/support/support_ticket_triage_and_routing.md",
+        "domain-engineering-workflows/workflows/engineering_postmortem_blueprint.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/support/support_kb_article_from_tickets.md",
+      "filename": "support_kb_article_from_tickets.md",
+      "title": "KB Article from Tickets — One Symptom, the Customer's Own Words, and Only the Fixes That Actually Resolved Tickets",
+      "domain": "sales-customer",
+      "category": "sales-customer/support",
+      "description": "Turn a cluster of resolved support tickets about one symptom into a customer-facing help-centre article: title and search terms in the customer's verbatim language, causes ordered by how often they resolved tickets, steps with an expected result each, a clear exit to support with exactly what to include, and an internal block with ticket evidence, excluded cases, owner, review date and deflection measure — distinct from designing a support system (solo_dev_support_system) and from auditing a knowledge base for gaps (bottleneck_knowledge_base_gap_analysis).",
+      "techniques": [
+        "IT-23",
+        "RP-02",
+        "RT-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "support",
+        "knowledge-base",
+        "help-center",
+        "ticket-deflection",
+        "self-service",
+        "customer-support"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-business-strategy/startup/solo_dev_support_system.md",
+        "domain-productivity/bottlenecks/bottleneck_knowledge_base_gap_analysis.md",
+        "domain-sales-customer/support/support_ticket_triage_and_routing.md"
       ],
       "has_frontmatter": true
     },
@@ -165870,6 +167961,403 @@
       "updated": "2026-01-25",
       "related_prompts": [],
       "has_frontmatter": true
+    },
+    {
+      "path": "domain-specialized-fields/real-estate/realestate_buyer_offer_strategy.md",
+      "filename": "realestate_buyer_offer_strategy.md",
+      "title": "Buyer Offer Strategy — Contingencies, Escalation Clauses, and Appraisal-Gap Exposure Priced in Cash Before the Offer Goes In",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/real-estate",
+      "description": "Design a residential purchase offer as two or three priced packages — price, escalation base/increment/cap, appraisal-gap coverage, each contingency kept, shortened or waived, earnest money, and close terms — computing the buyer's worst-case cash within each package against a reserve floor and rejecting any package that breaches it, distinct from general opening-offer design and major-purchase bargaining (domain-negotiation) and from drafting the purchase agreement itself, which stays with the agent's state form and an attorney.",
+      "techniques": [
+        "QA-09",
+        "NE-11",
+        "NE-10",
+        "DP-04"
+      ],
+      "keywords": [
+        "real-estate",
+        "home-buying",
+        "offer-strategy",
+        "contingencies",
+        "escalation-clause",
+        "appraisal-gap"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-negotiation/preparation/negotiation_opening_offer_design.md",
+        "domain-negotiation/contexts/negotiation_major_purchase_bargaining.md",
+        "domain-specialized-fields/real-estate/realestate_comparative_market_analysis.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "strategic",
+          "quantitative",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "risk",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "buyer",
+          "real_estate_agent",
+          "investor"
+        ],
+        "mode": [
+          "plan",
+          "decide"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/real-estate/realestate_comparative_market_analysis.md",
+      "filename": "realestate_comparative_market_analysis.md",
+      "title": "Comparative Market Analysis — Comp Selection, Line-Item Adjustments, and a Reconciled Range Built Only from Sales You Supplied",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/real-estate",
+      "description": "Build a comparative market analysis for one residential property from sales data the user supplies: screen comps against stated selection rules, adjust each comp line by line toward the subject with a stated rate and source, flag comps whose net or gross adjustments are too large to trust, reconcile a weighted value range, and read actives and pendings as competition rather than value — distinct from listing copy (domain_writing_realtor_listing), from public-equity trading comps, and from a licensed appraisal, which this is not.",
+      "techniques": [
+        "RT-23",
+        "DS-01",
+        "NE-11",
+        "QA-04"
+      ],
+      "keywords": [
+        "real-estate",
+        "comparative-market-analysis",
+        "comps",
+        "pricing",
+        "listing-strategy",
+        "valuation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-professional-writing/domain-specific/domain_writing_realtor_listing.md",
+        "domain-specialized-fields/real-estate/realestate_buyer_offer_strategy.md",
+        "domain-specialized-fields/real-estate/realestate_rental_property_underwriting.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "quantitative",
+          "comparative"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "risk",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "real_estate_agent",
+          "buyer",
+          "seller",
+          "investor"
+        ],
+        "mode": [
+          "diagnose",
+          "synthesize"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/real-estate/realestate_inspection_report_triage.md",
+      "filename": "realestate_inspection_report_triage.md",
+      "title": "Inspection Report Triage — Safety, Material Defect, Maintenance, and Not-Inspected, With the Licensed Specialist Each Finding Needs",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/real-estate",
+      "description": "Sort every finding in a home inspection report into SAFETY, MATERIAL DEFECT, MAINTENANCE, MONITOR/INFO or NOT INSPECTED, link findings that share a cause, route each open question to the licensed specialist who can answer it, schedule those visits inside the inspection-contingency window, and hand the buyer a short list of repair, credit or price asks — distinct from a seasonal home-maintenance calendar (domain-productivity) and from any code-compliance or structural determination, which only licensed trades and the local authority can make.",
+      "techniques": [
+        "AG-11",
+        "DS-06",
+        "DD-05",
+        "RT-05"
+      ],
+      "keywords": [
+        "real-estate",
+        "home-inspection",
+        "due-diligence",
+        "home-buying",
+        "defects",
+        "triage"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-productivity/home-life/home_seasonal_maintenance_calendar.md",
+        "domain-specialized-fields/real-estate/realestate_buyer_offer_strategy.md",
+        "domain-specialized-fields/real-estate/realestate_rental_property_underwriting.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "classificatory",
+          "systematic",
+          "analytic"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "buyer",
+          "real_estate_agent",
+          "investor"
+        ],
+        "mode": [
+          "diagnose",
+          "plan"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/real-estate/realestate_rental_property_underwriting.md",
+      "filename": "realestate_rental_property_underwriting.md",
+      "title": "Rental Property Underwriting — NOI, Cap Rate, DSCR, Cash-on-Cash, Reserves, and a Stress Test That Can Say No",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/real-estate",
+      "description": "Underwrite one small residential rental (1–4 units or a single-family rental) from a sourced rent roll and a line-item expense budget: effective gross income, NOI, cap rate, debt service, DSCR, cash-on-cash, break-even occupancy and a reserve requirement, then stress rents, vacancy and a known capital item and return a GREEN / AMBER / RED / INSUFFICIENT DATA verdict against the investor's own thresholds — distinct from the owner-occupier buy-vs-rent analysis (domain-finance) and from lender-side debt sizing.",
+      "techniques": [
+        "NE-11",
+        "RT-23",
+        "QA-02",
+        "DP-28"
+      ],
+      "keywords": [
+        "real-estate",
+        "rental-property",
+        "underwriting",
+        "cap-rate",
+        "dscr",
+        "cash-on-cash",
+        "investing"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/personal-finance-planning/finance_buy_vs_rent_analysis.md",
+        "domain-finance/credit-lending/finance_debt_capacity_sizing.md",
+        "domain-specialized-fields/real-estate/realestate_inspection_report_triage.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "quantitative",
+          "analytic",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "years",
+        "uncertainty": "risk",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "solo",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "investor",
+          "real_estate_agent",
+          "analyst"
+        ],
+        "mode": [
+          "diagnose",
+          "decide"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/trades/trades_bid_no_bid_decision.md",
+      "filename": "trades_bid_no_bid_decision.md",
+      "title": "Bid / No-Bid Decision — Hard Gates First, Then Anchored Scores, Expected Value, and a Kill Signal Before You Spend the Estimating Hours",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/trades",
+      "description": "Decide whether a contractor or trade subcontractor should bid one invitation: pass/fail gates on license, insurance and bonding, crew capacity in the actual work window, cash exposure under the customer's real payment history, and document completeness; then anchored 0–3 scores on fit, competition, margin, relationship and strategic value, an expected-value check against the cost of estimating, and a BID / BID WITH CONDITIONS / NO BID / INSUFFICIENT INFO verdict with a dated kill signal and a ready decline note — distinct from B2B sales deal qualification and from a services practice's ideal-client profile.",
+      "techniques": [
+        "AG-08",
+        "DP-03",
+        "NE-11",
+        "QA-04"
+      ],
+      "keywords": [
+        "trades",
+        "construction",
+        "bidding",
+        "bid-no-bid",
+        "subcontractor",
+        "cash-flow",
+        "decision"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/sales/sales_deal_qualification_scorecard.md",
+        "domain-business-strategy/client-services/services_ideal_client_and_disqualifiers.md",
+        "domain-specialized-fields/trades/trades_bid_estimate_with_contingency.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "evaluative",
+          "quantitative",
+          "strategic"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "contractor",
+          "estimator",
+          "business_owner"
+        ],
+        "mode": [
+          "decide",
+          "diagnose"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/trades/trades_bid_estimate_with_contingency.md",
+      "filename": "trades_bid_estimate_with_contingency.md",
+      "title": "Bid Estimate with Contingency — Quantity Takeoff, Allowances, and a Contingency Sized to Named Unknowns Instead of a Flat Ten Percent",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/trades",
+      "description": "Build the number behind a trade or construction bid: a quantity takeoff with waste factors and sources, labor hours at the contractor's burdened rate, sub quotes, allowances for owner selections, an unknowns register where each unknown is resolved before bid, unit-priced, excluded, or carried in a contingency sized by probability times impact, then overhead, profit and the bid — distinct from writing the customer-facing estimate document (domain_writing_hvac_estimate and siblings) and from scoping a services engagement (client-services-studio stage 3).",
+      "techniques": [
+        "DT-01",
+        "NE-11",
+        "QA-04",
+        "CM-03"
+      ],
+      "keywords": [
+        "trades",
+        "construction",
+        "estimating",
+        "bidding",
+        "contingency",
+        "allowances",
+        "contractor"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-professional-writing/domain-specific/domain_writing_hvac_estimate.md",
+        "client-services-studio/prompts/stage-3-scope-and-estimate.md",
+        "domain-specialized-fields/trades/trades_change_order_pricing_notice.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "quantitative",
+          "systematic",
+          "analytic"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "contractor",
+          "estimator",
+          "tradesperson"
+        ],
+        "mode": [
+          "plan",
+          "synthesize"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/trades/trades_change_order_pricing_notice.md",
+      "filename": "trades_change_order_pricing_notice.md",
+      "title": "Change Order Pricing and Notice — Classify the Trigger, Price It Under the Contract's Own Terms, and Ask the Owner for a Dated Decision",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/trades",
+      "description": "For a change that arises mid-job — owner request, concealed condition, pre-agreed unit-price item, allowance overrun, or deleted work — classify the trigger, check whether the bid's unit prices, allowances or contingency already cover it, price each item under the change terms the user pastes from their contract (markup, credits, schedule days), and draft a plain-language notice asking the owner for a decision by a date, with an internal ledger — distinct from the scope-ledger skill, which detects drift but does not price it, and from drafting a SOW's change clause (legal_sow_drafter).",
+      "techniques": [
+        "NE-11",
+        "RP-02",
+        "NE-17",
+        "QA-01"
+      ],
+      "keywords": [
+        "trades",
+        "construction",
+        "change-order",
+        "pricing",
+        "client-communication",
+        "contractor"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "client-services-studio/skills/scope-ledger/SKILL.md",
+        "domain-legal/contracts-transactional/legal_sow_drafter.md",
+        "domain-specialized-fields/trades/trades_bid_estimate_with_contingency.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "quantitative",
+          "procedural",
+          "communicative"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "prose"
+        ],
+        "user_role": [
+          "contractor",
+          "estimator",
+          "tradesperson",
+          "project_manager"
+        ],
+        "mode": [
+          "synthesize",
+          "communicate"
+        ]
+      }
     },
     {
       "path": "domain-voice-conversational-ui/analytics/analytics_conversation_metrics_framework.md",
