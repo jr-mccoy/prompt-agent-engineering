@@ -1495,6 +1495,19 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 - **Psy-ops Wave 2** → visual-media authenticity, cross-platform narrative correlation, influence assessment write-up, youth online manipulation, elder-targeted fraud, workplace influence dynamics, election integrity communications, internal comms under attack, moderator burnout and capture. ANALYTIC/DEFENSIVE ONLY.
 - **Negotiation Wave 2 contexts** → `domain-negotiation/contexts/`: landlord rent and lease renewal, insurance claim settlement, medical bill reduction, severance package, licensing / IP terms. The *letter* for each → `domain-written-advocacy/`; attorney-side severance terms → `domain-legal/employment-labor/`.
 
+### Coverage Wave 4 additions — thin-domain depth (see [`meta/COVERAGE_ROADMAP.md`](COVERAGE_ROADMAP.md))
+- **HR** → `domain-hr-management/`: career ladder framework, promotion case writer, engagement survey design, reduction-in-force plan (legal questions → `domain-legal/employment-labor/`), succession planning, pay equity audit (counsel and statistician own the determinations). Handbook policy text → `skills/non-coding/business/employment-contract-templates`.
+- **Product management** → `domain-product-management/prompts/`: `product_prfaq_working_backwards.md`, `product_release_notes_writer.md`, `product_experiment_design.md` (pre-launch; the readout → `domain-data-analytics/experiments-and-reporting/analytics_ab_test_readout.md`), `product_stakeholder_update.md`.
+- **Risk** → `domain-risk/`: third-party risk assessment, key risk indicators, bow-tie analysis, Monte Carlo quantification, risk acceptance/exception memo, board risk report.
+- **Research-academic** → thesis/dissertation structure, mixed-methods design. Power analysis and data management plans are already covered in `domain-science/` (`methods-foundations/science_power_and_sample_size_calculator.md`, `computational/science_data_management_plan_drafter.md`).
+- **Ideation** → `domain-ideation/`: How-Might-We reframe, Six Thinking Hats, TRIZ contradiction resolution, morphological matrix, affinity clustering, workshop facilitation plan.
+- **Presentations: narrative and delivery** → `domain-presentations/narrative-delivery/` (`presentation_*`): investor pitch narrative, keynote talk arc, hostile Q&A prep, speaker notes and rehearsal coach. Sales decks → `skills/marketing/sales-enablement`.
+- **Creative writing** → romance, horror and thriller/suspense workshops (`genre-workshops/`), TV pilot and series bible (`script-stage/`), comedy craft and series continuity audit (`craft-tools/`).
+- **Voice and conversational UI** → SSML/TTS tuning, IVR call flow, realtime turn-taking and barge-in (`voice-design/`), bot-to-human handoff (`chatbot-design/`), transcript QA rubric (`analytics/`).
+- **Written advocacy** → travel disruption refund, tax penalty relief request, student-loan servicer dispute, HOA written request, medical records request, prior authorization status request. Contractor non-performance → the existing `products-and-warranty/advocacy_service_nonperformance_demand.md`.
+- **Advertising campaigns** → `domain-advertising/campaign/` (`adcampaign_*`): copy variant matrix, UGC video script beats, placement spec checklist (specs are verified, never recalled), media plan and budget allocation, claims compliance review (routes to counsel and never clears anything). Volume copy, channel strategy, tracking and CRO stay with `skills/marketing/`.
+- **Game development Phase 2** → `domain-game-development/`: quest and dialogue design (`narrative/`), NPC decision architecture (`ai/`), level blockout and pacing, playtest protocol and synthesis, difficulty and combat balancing, HUD and game-feel review, live-ops and monetization ethics, publisher pitch and project postmortem (`production/`).
+
 ## Workflows for Common Scenarios
 
 ### Scenario 1: User Asks for Help with a Task

@@ -1,14 +1,14 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-09-24:** **Waves 1–3 shipped.**
+**Status as of 2026-09-24:** **Waves 1–4 shipped.**
 - **Wave 1:** 40 prompts. That is four new domains of 8 prompts each (ADR-0043)
   and `domain-personal-development/job-search/` (8). Six hollow READMEs now
   describe what actually exists.
 - **Wave 2:** 64 prompts across ten areas (§6), plus 7 identity-preserving moves.
 - **Wave 3:** 103 prompts built from the domains' own roadmaps (§6).
-- **Survival:** every specified candidate survived its duplicate sweep in all three
-  waves. Wave 2's candidate list had already been cut by a pre-sweep, described in §6.
-- **Remaining:** Waves 4–5, plus the Wave 3 tiers deferred below, are scoped only as far as their boundaries. This document records a repository-wide audit of where the prompt
+- **Wave 4:** 59 prompts adding depth to 11 thin domains, plus a structural cleanup: 8 duplicate presentation prompts retired and 5 decision-making prompts moved (§6).
+- **Survival:** every specified candidate survived its duplicate sweep in Waves 1–3. In Wave 4, 4 of 63 candidates were dropped as duplicates of existing prompts or skills (§6). Wave 2's candidate list had already been cut by a pre-sweep, described in §6.
+- **Remaining:** Wave 5, plus the Wave 3 tiers deferred below, are scoped only as far as their boundaries. This document records a repository-wide audit of where the prompt
 corpus is thin on subject matter and sequences the fix into five waves.
 
 **Why a cross-repo roadmap.** Each domain's `EXPANSION_ROADMAP.md` plans growth
@@ -411,7 +411,38 @@ Each block was built from its own domain roadmap, and each roadmap now marks it 
 - The psy-ops roadmap made child-safety review a condition for the youth-manipulation prompt. Human review is still recommended.
 - The dosing and thresholds in the healthcare worked examples are recommended for a clinician read-through.
 
-### Wave 4: thin-domain depth
+### Wave 4: thin-domain depth — shipped (59 prompts + cleanup)
+
+| Domain | Added | Prompts |
+|---|---|---|
+| `hr-management` | career ladder, promotion case, engagement survey, reduction in force, succession, pay equity audit | 6 |
+| `product-management` | PR/FAQ, release notes, experiment design, stakeholder update | 4 |
+| `risk` | third-party risk, KRIs, bow-tie, Monte Carlo, risk acceptance memo, board risk report | 6 |
+| `research-academic` | thesis structure, mixed-methods design | 2 |
+| `ideation` | How-Might-We, Six Hats, TRIZ, morphological matrix, affinity clustering, workshop facilitation | 6 |
+| `presentations/narrative-delivery/` | investor pitch narrative, keynote arc, hostile Q&A prep, speaker rehearsal coach | 4 |
+| `creative-writing` | romance, horror, thriller workshops; TV pilot and series bible; comedy craft; continuity audit | 6 |
+| `voice-conversational-ui` | SSML/TTS tuning, IVR call flow, realtime turn-taking, human handoff, transcript QA rubric | 5 |
+| `written-advocacy` | travel refund, tax penalty relief, student-loan dispute, HOA request, medical records, prior authorization | 6 |
+| `advertising/campaign/` | copy variant matrix, UGC video script, placement spec checklist, media plan, claims compliance | 5 |
+| `game-development` | quest and dialogue design, NPC AI, level blockout, playtest synthesis, combat balancing, HUD/feel, live-ops ethics, publisher pitch, postmortem | 9 |
+
+**Dropped as duplicates (4):**
+- research power analysis → `domain-science/methods-foundations/science_power_and_sample_size_calculator.md`
+- data management plan → `domain-science/computational/science_data_management_plan_drafter.md`
+- HR handbook policy → `skills/non-coding/business/employment-contract-templates`
+- creative-writing line edit → `writing_revision_and_self_editing.md`
+
+The contractor-dispute letter was also dropped, because `advocacy_service_nonperformance_demand.md` already covers it. Advertising was expanded beyond images at the user's explicit request; its README now separates campaign prompts from what the marketing skills still own.
+
+**Routing after Wave 4:** scope@1 rose from 83.5% to 84.7%. Two cases changed their top hit, both acceptably: case-004 now reaches its expected `discipleship` scope, and case-084 ("risk analysis") now ranks the bow-tie prompt ahead of FMEA, still inside `risk`. Every Wave 4 probe lands on its new prompt.
+
+**Cleanup, committed separately:** the `presentations` dedupe (8 retired copies) and the `decision-making` rehome (5 moves).
+
+**Left for later:**
+- The bot-to-human handoff prompt expands steps that already exist in two older chatbot prompts. Those could be trimmed to a pointer.
+- No prompt scores human support agents' calls. The transcript QA rubric covers bot conversations only.
+
 
 Wave 4 covers §3C, plus these items:
 - `advertising` beyond images: copy, video/UGC scripts, platform specs, media

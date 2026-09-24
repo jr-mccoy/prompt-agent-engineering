@@ -3,8 +3,8 @@
     "generated": "2026-09-24",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 5853,
-    "artifacts_with_frontmatter": 4925,
+    "total_indexed_artifacts": 5912,
+    "artifacts_with_frontmatter": 4984,
     "artifacts_without_frontmatter": 928,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 5853,
-    "prompts_with_frontmatter": 4925,
+    "total_prompts": 5912,
+    "prompts_with_frontmatter": 4984,
     "prompts_without_frontmatter": 928
   },
   "prompts": [
@@ -9890,6 +9890,157 @@
         "domain-AI-ML/specialized-ml/time-series/ts_forecasting_model_selection.md",
         "domain-AI-ML/specialized-ml/time-series/ts_feature_engineering.md",
         "domain-AI-ML/specialized-ml/time-series/ts_anomaly_detection_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-advertising/campaign/adcampaign_claims_compliance_review.md",
+      "filename": "adcampaign_claims_compliance_review.md",
+      "title": "Ad Claims Compliance Review — Substantiation, Disclosures, and Restricted Categories Before Launch",
+      "domain": "advertising",
+      "category": "advertising/campaign",
+      "description": "Pre-launch review of ad copy, scripts, and visuals: extract every express and implied claim, match each to the substantiation file, flag disclosure needs (material connections, pricing and offer terms, typicality of results), flag restricted or sensitive categories (supplements and health, financial products, and similar) and platform-policy questions, and produce a severity-ranked findings table with a counsel queue. Regulatory rules are never asserted — they are raised as questions for counsel or the platform's current policy. Distinct from the legal domain (counsel's opinion), quality_slop_ad_copy (persuasiveness scoring), and the image prompts' visual rules.",
+      "techniques": [
+        "RT-05",
+        "DS-06",
+        "OC-09",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "advertising",
+        "claims-review",
+        "substantiation",
+        "compliance",
+        "campaign",
+        "disclosures"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-advertising/campaign/adcampaign_copy_variant_matrix.md",
+        "domain-legal/regulatory-compliance/legal_compliance_program_gap_analysis.md",
+        "domain-professional-writing/content-quality/quality_slop_ad_copy.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-advertising/campaign/adcampaign_copy_variant_matrix.md",
+      "filename": "adcampaign_copy_variant_matrix.md",
+      "title": "Ad Copy Variant Matrix — Angle × Audience × Format, One Variable Per Cell",
+      "domain": "advertising",
+      "category": "advertising/campaign",
+      "description": "Design the copy test grid before writing at volume: choose which angle × audience × format cells deserve to exist, state what each cell isolates and why, draft one tight variant per cell, and mark every character limit as [VERIFY current platform spec] rather than asserting it. Produces a launch-ready matrix with a hypothesis per row and a kill list of cells deliberately not built. Distinct from the ad-creative skill (bulk headline generation and iteration from performance data), the ab-test-setup skill (statistical design and sample size), and quality_slop_ad_copy (scoring finished copy).",
+      "techniques": [
+        "RT-02",
+        "CM-02",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "advertising",
+        "ad-copy",
+        "creative-testing",
+        "paid-media",
+        "campaign",
+        "messaging"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/marketing/ad-creative/SKILL.md",
+        "domain-agentic-resources/skills/marketing/ab-test-setup/SKILL.md",
+        "domain-professional-writing/content-quality/quality_slop_ad_copy.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-advertising/campaign/adcampaign_media_plan_budget_allocation.md",
+      "filename": "adcampaign_media_plan_budget_allocation.md",
+      "title": "Media Plan and Budget Allocation — Test Budget, Learning Phase, and Pacing From Your Own Numbers",
+      "domain": "advertising",
+      "category": "advertising/campaign",
+      "description": "Build a flight-level media plan from the advertiser's own economics: the break-even cost per acquisition, a test budget sized from that number and the cells to be read, an allocation across placements with a stated reason for each line, a learning-period hold that uses the platform's own current guidance rather than a remembered rule, a weekly pacing table, and pre-committed scale, hold, and kill rules. Uses no industry benchmark it cannot source — unknowns are marked [MEASURE] or [VERIFY]. Distinct from the paid-ads skill (channel choice, targeting, bidding, optimisation), workflow_marketing_campaign_brief_development (the brief and strategy-level budget split), and the ab-test-setup skill (statistical design).",
+      "techniques": [
+        "DS-02",
+        "RT-05",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "advertising",
+        "media-planning",
+        "budget",
+        "paid-media",
+        "campaign",
+        "pacing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/marketing/paid-ads/SKILL.md",
+        "domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md",
+        "domain-agentic-resources/skills/marketing/ab-test-setup/SKILL.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-advertising/campaign/adcampaign_placement_spec_checklist.md",
+      "filename": "adcampaign_placement_spec_checklist.md",
+      "title": "Placement Spec Verification Checklist — Build It From the Campaign, Fill It From the Source",
+      "domain": "advertising",
+      "category": "advertising/campaign",
+      "description": "Produce a per-placement verification checklist for every asset a campaign needs — dimensions, aspect ratio, file type and size, duration, text-field limits, safe zones, caption and audio requirements, and policy-sensitive elements — with every value left blank for the operator to fill from the platform's current official documentation, a source and check date per row, and a pre-upload QA gate. Never asserts a spec from memory. Distinct from the ad-creative skill's platform-specs reference (a static spec table), the paid-ads skill's platform-setup-checklists (account, tracking, and audience setup), and the image prompts in this domain (which generate the images).",
+      "techniques": [
+        "QA-04",
+        "QA-05",
+        "OC-03",
+        "QA-08"
+      ],
+      "keywords": [
+        "advertising",
+        "ad-specs",
+        "placements",
+        "checklist",
+        "campaign",
+        "trafficking"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/marketing/ad-creative/references/platform-specs.md",
+        "domain-agentic-resources/skills/marketing/paid-ads/references/platform-setup-checklists.md",
+        "domain-advertising/campaign/adcampaign_copy_variant_matrix.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-advertising/campaign/adcampaign_ugc_video_script_beats.md",
+      "filename": "adcampaign_ugc_video_script_beats.md",
+      "title": "UGC Video Ad Script — Creator Brief, Hook Options, and Shot Beats",
+      "domain": "advertising",
+      "category": "advertising/campaign",
+      "description": "Produce a short-form UGC-style video ad package a creator can actually film: a one-page creator brief, three hook options for the first seconds, a timed beat sheet pairing each spoken line with a shot and on-screen text, a do-not-say list tied to substantiation, and the disclosure and usage-rights items to settle before filming. Aspect ratio, duration caps, and safe zones are marked [VERIFY current platform spec]. Distinct from the video skill (AI or programmatic video production), content_video_shot_list_preproduction (full live-action shot lists and shooting order), paid-ads' generic hook-problem-solution outline, and quality_slop_video_script (scoring a finished script).",
+      "techniques": [
+        "CM-01",
+        "ST-02",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "advertising",
+        "ugc",
+        "video-ads",
+        "creator-brief",
+        "campaign",
+        "scriptwriting"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/marketing/video/SKILL.md",
+        "domain-professional-writing/content-production/content_video_shot_list_preproduction.md",
+        "domain-professional-writing/content-quality/quality_slop_video_script.md"
       ],
       "has_frontmatter": true
     },
@@ -52976,6 +53127,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-creative-writing/craft-tools/writing_comedy_and_humor_craft.md",
+      "filename": "writing_comedy_and_humor_craft.md",
+      "title": "Comedy & Humor Craft — Comic Premise, Character Blind Spots, the Game, and Line-Level Timing",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Make fiction, scripts, or essays funnier on purpose: find the comic premise and the character's blind spot, identify the scene's 'game' and heighten it, build jokes with setup, reveal, rule of three, and callbacks, and tune line-level timing (the funny word last, specificity, rhythm) — while checking who the joke lands on; distinct from dialogue enhancement (subtext and naturalism), voice development (the writer's overall voice), and the screenplay framework (sitcom act structure).",
+      "techniques": [
+        "CM-01",
+        "DT-04",
+        "NE-04",
+        "ST-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "creative-writing",
+        "comedy",
+        "humor",
+        "craft",
+        "timing",
+        "scene-writing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/craft-tools/writing_dialogue_enhancement.md",
+        "domain-creative-writing/craft-tools/writing_voice_development.md",
+        "domain-creative-writing/script-stage/writing_screenplay_framework.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-creative-writing/craft-tools/writing_description_and_sensory_setting.md",
       "filename": "writing_description_and_sensory_setting.md",
       "title": "Description & Sensory Setting",
@@ -53114,6 +53296,37 @@
       "difficulty": "intermediate",
       "updated": "2026-06-18",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/genre-workshops/writing_horror_genre_workshop.md",
+      "filename": "writing_horror_genre_workshop.md",
+      "title": "Horror Genre Workshop — The Fear Beneath, the Threat's Rules, the Reveal Budget, and the Dread Ladder",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Build or diagnose a horror story: name the human fear the threat embodies, give the threat consistent rules while rationing what the reader sees, escalate dread through a ladder of violations, close off escape honestly, and choose an ending that fits the subgenre; distinct from writing_genre_specific_guidance.md (multi-genre overview), from speculative fiction craft (world rules for their own sake), and from the thriller workshop (danger the protagonist can outrun or outwit).",
+      "techniques": [
+        "CM-01",
+        "DT-04",
+        "ST-02",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "creative-writing",
+        "fiction",
+        "horror",
+        "genre",
+        "dread",
+        "atmosphere"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/genre-workshops/writing_genre_specific_guidance.md",
+        "domain-creative-writing/genre-workshops/writing_speculative_fiction_craft.md",
+        "domain-creative-writing/craft-tools/writing_description_and_sensory_setting.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -53457,6 +53670,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-creative-writing/genre-workshops/writing_romance_genre_workshop.md",
+      "filename": "writing_romance_genre_workshop.md",
+      "title": "Romance Genre Workshop — The Relationship as the Plot, the Barrier, the Beats, and the Promised Ending",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Plot or troubleshoot a romance novel whose central love story is the main plot: each lead's internal wound and want, a barrier that is not a single missed conversation, a relationship beat sheet from meet to HEA/HFN, trope and heat-level promises kept, and POV chosen for the romance; distinct from the multi-genre overview in writing_genre_specific_guidance.md and from romance as a subplot inside another genre.",
+      "techniques": [
+        "CM-01",
+        "ST-02",
+        "RT-02",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "creative-writing",
+        "fiction",
+        "romance",
+        "genre",
+        "relationship-arc",
+        "tropes"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/genre-workshops/writing_genre_specific_guidance.md",
+        "domain-creative-writing/craft-tools/writing_character_development_workshop.md",
+        "domain-creative-writing/fiction/writing_pacing_and_tension_management.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-creative-writing/fiction/writing_scene_construction_workshop.md",
       "filename": "writing_scene_construction_workshop.md",
       "title": "Scene Construction Workshop",
@@ -53509,6 +53753,37 @@
       "difficulty": "intermediate",
       "updated": "2026-06-18",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/craft-tools/writing_series_continuity_audit.md",
+      "filename": "writing_series_continuity_audit.md",
+      "title": "Series Continuity Audit — Build the Story Bible, Then Find Contradictions, Timeline Breaks, Knowledge Leaks, and Dropped Threads",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Extract a story bible (characters, timeline, places, objects, world rules, and who-knows-what-when) from a manuscript or a series of books, then audit it for contradictions, impossible timing, knowledge leaks, dropped setups, and rule breaks — each finding cited to both conflicting locations, graded by severity, and screened for intentional unreliability; distinct from the worldbuilding framework (designing a world before drafting) and from the revision and self-editing guide (story-to-sentence editing passes).",
+      "techniques": [
+        "CM-08",
+        "RT-05",
+        "OC-03",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "creative-writing",
+        "continuity",
+        "story-bible",
+        "revision",
+        "series-fiction",
+        "plot-holes"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/fiction/writing_worldbuilding_framework.md",
+        "domain-creative-writing/craft-tools/writing_revision_and_self_editing.md",
+        "domain-creative-writing/fiction/writing_novel_outlining_methods.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -53683,6 +53958,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-creative-writing/script-stage/writing_tv_pilot_and_series_bible.md",
+      "filename": "writing_tv_pilot_and_series_bible.md",
+      "title": "TV Pilot & Series Bible — The Series Engine, the Pilot's Job, and a Bible That Proves Episode 50 Exists",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Develop an original TV series: define the engine that generates episodes, choose format (procedural, serialized, hybrid; half-hour or hour; limited or returning), decide whether the pilot is a premise or non-premise pilot, break the pilot's act structure, and write a series bible with characters' long arcs, episode springboards, a season-one arc, and future-season direction; distinct from writing_screenplay_framework.md, which structures a single feature, short, or script scene by scene.",
+      "techniques": [
+        "CM-01",
+        "DT-01",
+        "QA-02",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "creative-writing",
+        "screenwriting",
+        "television",
+        "pilot",
+        "series-bible",
+        "story-engine"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/script-stage/writing_screenplay_framework.md",
+        "domain-creative-writing/publishing-career/writing_pitch_logline_and_comp_titles.md",
+        "domain-creative-writing/fiction/writing_worldbuilding_framework.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-creative-writing/craft-tools/writing_theme_and_motif_development.md",
       "filename": "writing_theme_and_motif_development.md",
       "title": "Theme & Motif Development",
@@ -53708,6 +54014,37 @@
         "domain-creative-writing/craft-tools/writing_character_development_workshop.md",
         "domain-creative-writing/fiction/writing_story_structure_architect.md",
         "domain-creative-writing/craft-tools/writing_description_and_sensory_setting.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/genre-workshops/writing_thriller_suspense_workshop.md",
+      "filename": "writing_thriller_suspense_workshop.md",
+      "title": "Thriller & Suspense Workshop — The Antagonist's Plan, the Clock, Move and Counter-Move, and Earned Twists",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Build or diagnose a thriller or suspense novel driven by a threat that has not yet happened: write the antagonist's plan and timeline first, give the protagonist a real disadvantage and a clock, chain move and counter-move so every action provokes a response, manage what the reader knows versus the hero, and stress-test the plot for 'why doesn't the villain just…'; distinct from the mystery workshop (a past crime the reader solves from clues) and from the multi-genre overview.",
+      "techniques": [
+        "CM-01",
+        "RT-07",
+        "QA-02",
+        "ST-02",
+        "ST-03"
+      ],
+      "keywords": [
+        "creative-writing",
+        "fiction",
+        "thriller",
+        "suspense",
+        "genre",
+        "plotting"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-creative-writing/genre-workshops/writing_mystery_and_crime_craft.md",
+        "domain-creative-writing/fiction/writing_pacing_and_tension_management.md",
+        "domain-creative-writing/genre-workshops/writing_genre_specific_guidance.md"
       ],
       "has_frontmatter": true
     },
@@ -75741,6 +76078,36 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-game-development/ai/ai_npc_decision_architecture.md",
+      "filename": "ai_npc_decision_architecture.md",
+      "title": "NPC and Enemy AI Decision Architecture",
+      "domain": "game-development",
+      "category": "game-development/ai",
+      "description": "Choose and design the decision layer for NPCs and enemies — FSM/HFSM, behavior tree, utility AI, GOAP, or a hybrid — against behaviour count, designer authorship, readability to the player, and a per-frame CPU budget, then specify the behaviours, scoring curves, tick rates and failure modes; distinct from the general state-machine pattern prompt and from ML/LLM agents.",
+      "techniques": [
+        "RT-02",
+        "DS-01",
+        "NE-11",
+        "DP-07"
+      ],
+      "keywords": [
+        "game-ai",
+        "behavior-trees",
+        "utility-ai",
+        "goap",
+        "npc",
+        "enemy-design"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-game-development/architecture/architecture_state_machine_design.md",
+        "domain-game-development/performance/performance_frame_budget_analysis.md",
+        "domain-game-development/design/design_mechanics_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-game-development/architecture/architecture_save_system.md",
       "filename": "architecture_save_system.md",
       "title": "Game Save & Serialization System",
@@ -75890,6 +76257,36 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-game-development/design/design_difficulty_combat_balancing.md",
+      "filename": "design_difficulty_combat_balancing.md",
+      "title": "Difficulty and Combat Balancing",
+      "domain": "game-development",
+      "category": "game-development/design",
+      "description": "Balance combat and difficulty with explicit maths: DPS and effective-HP models, time-to-kill and time-to-death tables per enemy and difficulty mode, a difficulty curve across the game, and an ethics check for dynamic difficulty adjustment (disclosure, opt-out, never tied to spend) — distinct from XP/progression curves and from economy balancing.",
+      "techniques": [
+        "NE-11",
+        "RT-06",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "game-design",
+        "balancing",
+        "combat",
+        "difficulty",
+        "dynamic-difficulty",
+        "time-to-kill"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-game-development/design/design_player_progression.md",
+        "domain-game-development/design/design_mechanics_design.md",
+        "domain-game-development/testing/testing_playtest_protocol_synthesis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-game-development/design/design_game_design_document.md",
       "filename": "design_game_design_document.md",
       "title": "Game Design Document Generator",
@@ -75913,6 +76310,36 @@
       "difficulty": "intermediate",
       "updated": "2026-03-19",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/design/design_hud_and_game_feel_review.md",
+      "filename": "design_hud_and_game_feel_review.md",
+      "title": "Game HUD, UI and Game-Feel Review",
+      "domain": "game-development",
+      "category": "game-development/design",
+      "description": "Review a game's HUD and menus for information hierarchy, readability at play distance and accessibility, then review the feel of core actions frame by frame — input latency, anticipation, hitstop, shake, sound and particles — flagging both missing feedback and over-juiced noise; distinct from web/app heuristic evaluation and WCAG audits.",
+      "techniques": [
+        "RT-02",
+        "QA-18",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "game-ui",
+        "hud",
+        "game-feel",
+        "juice",
+        "accessibility",
+        "ux-review"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-frontend-development/ux-research/frontend_ux_heuristic_evaluation.md",
+        "domain-frontend-development/accessibility/frontend_accessibility_wcag_audit.md",
+        "domain-game-development/design/design_mechanics_design.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -76000,6 +76427,38 @@
         "domain-game-development/design/design_player_progression.md",
         "domain-game-development/design/design_core_loop_analysis.md",
         "domain-game-development/design/design_mechanics_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/economy/economy_liveops_monetization_ethics.md",
+      "filename": "economy_liveops_monetization_ethics.md",
+      "title": "Live-Ops Calendar and Monetization Ethics Review",
+      "domain": "game-development",
+      "category": "game-development/economy",
+      "description": "Plan a live-ops season the team can actually staff — events, cadence, content load against capacity — and audit every offer in it against explicit must-nots: no dark patterns, disclosed odds, real-money prices visible, paid random items flagged for minors and for jurisdictions that restrict them; distinct from the economy system design (currencies, sinks, drop tables).",
+      "techniques": [
+        "DP-04",
+        "DS-32",
+        "DS-33",
+        "QA-21",
+        "OC-10"
+      ],
+      "keywords": [
+        "live-ops",
+        "monetization",
+        "loot-boxes",
+        "dark-patterns",
+        "minors",
+        "game-economy",
+        "ethics"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-game-development/economy/economy_system_design.md",
+        "domain-data-analytics/analysis-and-sql/analytics_cohort_retention_analysis.md",
+        "domain-business-strategy/startup/monetization_model_selector.md"
       ],
       "has_frontmatter": true
     },
@@ -76175,6 +76634,36 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-game-development/level-design/level_blockout_and_pacing.md",
+      "filename": "level_blockout_and_pacing.md",
+      "title": "Handcrafted Level Blockout and Pacing Review",
+      "domain": "game-development",
+      "category": "game-development/level-design",
+      "description": "Plan or review a handcrafted level at blockout (greybox) stage: player metrics that fix dimensions, a beat chart with intensity and minutes, critical path and optional space, landmarks and sightlines, gating and teaching, and a pacing audit before art is committed — distinct from procedural generation systems and from prose pacing.",
+      "techniques": [
+        "DT-01",
+        "DS-02",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "level-design",
+        "blockout",
+        "greybox",
+        "pacing",
+        "beat-chart",
+        "player-metrics"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-game-development/level-design/level_procedural_generation.md",
+        "domain-game-development/design/design_core_loop_analysis.md",
+        "domain-creative-writing/fiction/writing_pacing_and_tension_management.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-game-development/level-design/level_procedural_generation.md",
       "filename": "level_procedural_generation.md",
       "title": "Procedural Content Generation Design",
@@ -76300,6 +76789,36 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-game-development/narrative/narrative_quest_and_dialogue_design.md",
+      "filename": "narrative_quest_and_dialogue_design.md",
+      "title": "Quest Structure and Branching Dialogue Design",
+      "domain": "game-development",
+      "category": "game-development/narrative",
+      "description": "Design a quest and its dialogue trees as a state machine the team can build and test: a named branching structure, state variables that are both set and read, a node map with every choice's consequence, a VO/line budget, and an audit for dead ends, soft-locks and false choices — distinct from story structure for prose and from voice-assistant dialog state design.",
+      "techniques": [
+        "DT-01",
+        "DS-01",
+        "OC-03",
+        "QA-02"
+      ],
+      "keywords": [
+        "narrative-design",
+        "quest-design",
+        "branching-dialogue",
+        "game-writing",
+        "interactive-narrative",
+        "state-variables"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-game-development/design/design_game_design_document.md",
+        "domain-game-development/architecture/architecture_state_machine_design.md",
+        "domain-creative-writing/fiction/writing_story_structure_architect.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-game-development/performance/performance_frame_budget_analysis.md",
       "filename": "performance_frame_budget_analysis.md",
       "title": "Frame Budget Analysis & Optimization",
@@ -76354,6 +76873,66 @@
       "difficulty": "advanced",
       "updated": "2026-03-19",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/production/production_project_postmortem.md",
+      "filename": "production_project_postmortem.md",
+      "title": "Game Project Postmortem",
+      "domain": "game-development",
+      "category": "game-development/production",
+      "description": "Run a whole-project postmortem after a game ships or is cancelled: plan-versus-actual on schedule, budget, scope and outcomes; a slip account that sums; what went right and wrong traced to root causes with evidence from the tracker, playtests and reviews; and a short list of owned actions for the next project — distinct from incident postmortems and from ML project postmortems.",
+      "techniques": [
+        "RT-09",
+        "RT-05",
+        "DS-19",
+        "NE-24"
+      ],
+      "keywords": [
+        "postmortem",
+        "game-production",
+        "retrospective",
+        "lessons-learned",
+        "scope-management",
+        "crunch"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-engineering-workflows/workflows/engineering_postmortem_blueprint.md",
+        "domain-AI-ML/ai-product-leadership/aipm_failed_ml_project_postmortem.md",
+        "domain-game-development/design/design_game_design_document.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/production/production_publisher_pitch.md",
+      "filename": "production_publisher_pitch.md",
+      "title": "Game Publisher and Investor Pitch",
+      "domain": "game-development",
+      "category": "game-development/production",
+      "description": "Build the pitch a game publisher or games investor actually evaluates: a hook, a vertical slice that proves the core loop at target quality, comparable titles with stated estimation methods, a line-item budget with contingency, milestone payments, recoupment scenarios, and the objections they will raise — distinct from the internal game design document and from a general company fundraising deck.",
+      "techniques": [
+        "ST-46",
+        "NE-23",
+        "NE-11",
+        "QA-26"
+      ],
+      "keywords": [
+        "game-pitch",
+        "publishing",
+        "vertical-slice",
+        "game-budget",
+        "comparable-titles",
+        "fundraising"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-game-development/design/design_game_design_document.md",
+        "domain-game-development/testing/testing_playtest_protocol_synthesis.md",
+        "domain-game-development/design/design_core_loop_analysis.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -76439,6 +77018,36 @@
         "domain-game-development/testing/testing_gameplay_test_plan.md",
         "domain-game-development/testing/testing_automated_game_testing.md",
         "domain-game-development/performance/performance_frame_budget_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/testing/testing_playtest_protocol_synthesis.md",
+      "filename": "testing_playtest_protocol_synthesis.md",
+      "title": "Playtest Protocol and Feedback Synthesis",
+      "domain": "game-development",
+      "category": "game-development/testing",
+      "description": "Run a playtest that answers design questions rather than collecting opinions: decision-linked research questions, participant profile, an observation protocol that separates what players did from what they said, telemetry to capture, and a synthesis that counts evidence and assigns confidence by sample — distinct from the QA gameplay test plan (does the feature work as specified) and from web/app usability studies.",
+      "techniques": [
+        "SV-03",
+        "RT-05",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "playtesting",
+        "user-research",
+        "feedback-synthesis",
+        "game-design",
+        "telemetry",
+        "player-experience"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-game-development/testing/testing_gameplay_test_plan.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_test_plan.md",
+        "domain-frontend-development/ux-research/frontend_ux_usability_findings_severity_log.md"
       ],
       "has_frontmatter": true
     },
@@ -87661,6 +88270,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-hr-management/people-ops/hr_career_ladder_framework.md",
+      "filename": "hr_career_ladder_framework.md",
+      "title": "Career Ladder Framework — Levels Defined by Observable Scope, Parallel Tracks, and a Promotion Evidence Rule",
+      "domain": "hr-management",
+      "category": "hr-management/people-ops",
+      "description": "Write a career ladder a manager can apply and an employee can act on: four to six observable dimensions, one anchored cell per level per dimension with a nameable difference between adjacent levels, parallel IC and management tracks with stated equivalence, a declared career level, and a promotion evidence rule, then test it by blind placement of real people — distinct from hr_compensation_banding (which prices the levels) and hr_performance_review_meta_prompt (which builds one cycle's review rubric from a level).",
+      "techniques": [
+        "DP-03",
+        "CM-02",
+        "RT-05",
+        "QA-02",
+        "OC-03"
+      ],
+      "keywords": [
+        "career-ladder",
+        "levelling",
+        "career-framework",
+        "promotion-criteria",
+        "dual-track",
+        "people-ops"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-hr-management/people-ops/hr_compensation_banding.md",
+        "domain-hr-management/performance-reviews/hr_performance_review_meta_prompt.md",
+        "domain-hr-management/performance-reviews/hr_calibration_facilitator.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-hr-management/people-ops/hr_compensation_banding.md",
       "filename": "hr_compensation_banding.md",
       "title": "Compensation Banding — Levels, Ranges, and a Stated Rule for Movement",
@@ -87686,6 +88326,37 @@
       "related_prompts": [
         "domain-hr-management/hiring/hr_job_description_writer.md",
         "domain-hr-management/performance-reviews/hr_calibration_facilitator.md",
+        "domain-hr-management/people-ops/hr_exit_interview.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/people-ops/hr_engagement_survey_design.md",
+      "filename": "hr_engagement_survey_design.md",
+      "title": "Engagement Survey — Design Against Decisions, Read Within the Noise, Close the Loop",
+      "domain": "hr-management",
+      "category": "hr-management/people-ops",
+      "description": "Run an employee engagement survey end to end from the people-ops seat: each item tied to a decision someone will make, an anonymity threshold set before launch, results read against a stated noise band rather than ranked, open text coded before it is quoted, and one to three committed actions with owners and a report-back date — distinct from research_survey_instrument_designer (generic item-writing craft this routes wording to) and psychology_organizational_culture_diagnostic (framework-based culture assessment).",
+      "techniques": [
+        "ST-02",
+        "DS-02",
+        "QA-04",
+        "NE-24",
+        "CM-02"
+      ],
+      "keywords": [
+        "engagement-survey",
+        "employee-listening",
+        "survey-analysis",
+        "anonymity",
+        "action-planning",
+        "people-ops"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-research-academic/research_survey_instrument_designer.md",
+        "domain-psychology/research-organizational/psychology_organizational_culture_diagnostic.md",
         "domain-hr-management/people-ops/hr_exit_interview.md"
       ],
       "has_frontmatter": true
@@ -87721,6 +88392,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-hr-management/people-ops/hr_pay_equity_audit.md",
+      "filename": "hr_pay_equity_audit.md",
+      "title": "Pay Equity Audit — Method, Handoffs, and Remediation, With Determinations Left to Experts",
+      "domain": "hr-management",
+      "category": "hr-management/people-ops",
+      "description": "Run the people-ops side of a pay equity audit: privilege and counsel arranged before any analysis, comparator groups and legitimate pay factors declared in advance, a data-quality pass, raw and adjusted gaps specified for an analyst rather than computed by guesswork, an individual outlier review, and a remediation plan with budget, raise-only adjustments and a recurrence fix — statistical significance and legal conclusions are explicitly flagged for a statistician and counsel; distinct from hr_compensation_banding, whose pattern check only detects the problem and routes it here.",
+      "techniques": [
+        "RT-23",
+        "RT-05",
+        "QA-04",
+        "DD-05",
+        "CM-09"
+      ],
+      "keywords": [
+        "pay-equity",
+        "compensation",
+        "equal-pay",
+        "audit",
+        "remediation",
+        "legally-careful"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-hr-management/people-ops/hr_compensation_banding.md",
+        "domain-hr-management/performance-reviews/hr_calibration_facilitator.md",
+        "domain-science/statistics/science_statistical_test_selector.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-hr-management/people-ops/hr_performance_improvement_plan.md",
       "filename": "hr_performance_improvement_plan.md",
       "title": "Performance Improvement Plan Author — Genuinely Achievable, Support Named, Outcome Honest",
@@ -87747,6 +88449,68 @@
         "domain-hr-management/performance-reviews/hr_manager_writing_employee_review.md",
         "domain-hr-management/performance-reviews/hr_reviewer_approach_guide.md",
         "domain-hr-management/onboarding/hr_onboarding_thirty_sixty_ninety.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/people-ops/hr_reduction_in_force_plan.md",
+      "filename": "hr_reduction_in_force_plan.md",
+      "title": "Reduction in Force — Criteria Before Names, a Humane Day-Of, and the People Who Stay",
+      "domain": "hr-management",
+      "category": "hr-management/people-ops",
+      "description": "Plan the people side of a reduction in force: alternatives considered in writing, a decisional unit and role-based selection criteria fixed before any names are applied, a selection-rate check that routes any skew to counsel, a sequenced notification day, a manager conversation script that states a final decision plainly, and a same-day plan for the people who remain — legal exposure is routed to legal_pip_and_termination_risk_review and the release terms to legal_employment_offer_and_separation_package, which this does not replace.",
+      "techniques": [
+        "ST-02",
+        "QA-08",
+        "DD-05",
+        "DP-04",
+        "CM-02"
+      ],
+      "keywords": [
+        "reduction-in-force",
+        "layoffs",
+        "termination-conversation",
+        "selection-criteria",
+        "survivor-communication",
+        "legally-careful"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/employment-labor/legal_pip_and_termination_risk_review.md",
+        "domain-legal/employment-labor/legal_employment_offer_and_separation_package.md",
+        "domain-negotiation/difficult-conversations/difficultconvo_delivering_bad_news.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/people-ops/hr_succession_planning.md",
+      "filename": "hr_succession_planning.md",
+      "title": "Succession Planning — Critical Roles, Evidenced Readiness, and Emergency Cover Before Ambition",
+      "domain": "hr-management",
+      "category": "hr-management/people-ops",
+      "description": "Build a succession plan for the roles that matter most: critical roles scored on impact and vacancy risk, emergency cover named for every one, successors rated ready-now / ready-in-1–2-years against next-level anchors with evidence rather than a 'high potential' label, a development action per successor, a bench-strength figure, and a slate-breadth check — distinct from risk_business_continuity_plan (keeping operations running through a disruption) and hr_calibration_facilitator (rating this cycle's performance).",
+      "techniques": [
+        "RT-02",
+        "DS-06",
+        "DP-03",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "succession-planning",
+        "talent-review",
+        "key-person-risk",
+        "bench-strength",
+        "leadership-pipeline",
+        "people-ops"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-hr-management/performance-reviews/hr_calibration_facilitator.md",
+        "domain-hr-management/performance-reviews/hr_performance_review_meta_prompt.md",
+        "domain-risk/risk_business_continuity_plan.md"
       ],
       "has_frontmatter": true
     },
@@ -87882,6 +88646,37 @@
         "domain-hr-management/performance-reviews/hr_self_review_assessment.md",
         "domain-hr-management/performance-reviews/hr_peer_360_feedback.md",
         "domain-hr-management/performance-reviews/hr_calibration_facilitator.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/performance-reviews/hr_promotion_case_writer.md",
+      "filename": "hr_promotion_case_writer.md",
+      "title": "Promotion Case Writer — The Manager's Packet, Mapped to the Next Level and Honest About Gaps",
+      "domain": "hr-management",
+      "category": "hr-management/performance-reviews",
+      "description": "Draft the manager-side promotion packet for one person: each claim mapped to a named next-level anchor with a dated artefact, counter-evidence stated rather than omitted, a two-axis readiness × evidence-confidence verdict under a stated rule with INSUFFICIENT EVIDENCE as a real outcome, and the questions a promotion committee will ask answered in advance — distinct from hr_manager_writing_employee_review (the periodic review of the past cycle) and negotiation_salary_raise_promotion (the employee's own ask).",
+      "techniques": [
+        "RT-05",
+        "OC-13",
+        "QA-02",
+        "CM-02",
+        "DD-07"
+      ],
+      "keywords": [
+        "promotion",
+        "promotion-packet",
+        "career-ladder",
+        "evidence-based",
+        "manager-writing",
+        "calibration"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-hr-management/performance-reviews/hr_manager_writing_employee_review.md",
+        "domain-hr-management/performance-reviews/hr_calibration_facilitator.md",
+        "domain-negotiation/contexts/negotiation_salary_raise_promotion.md"
       ],
       "has_frontmatter": true
     },
@@ -89047,6 +89842,61 @@
       }
     },
     {
+      "path": "domain-ideation/ideation_morphological_matrix.md",
+      "filename": "ideation_morphological_matrix.md",
+      "title": "Morphological Matrix — Decompose the Solution Space and Recombine It",
+      "domain": "ideation",
+      "category": "ideation/combinatorial",
+      "description": "Break a design problem into 4–7 independent parameters, list 3–6 options for each, prune impossible option pairs with a cross-consistency check, then deliberately sample combinations — the obvious one, the extremes, and randomised draws — to surface configurations nobody proposed. Distinct from ideation_scamper.md, which transforms one existing thing along seven lenses; the matrix builds the whole space of possible configurations from parts.",
+      "techniques": [
+        "DT-01",
+        "RT-02",
+        "OC-03",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "ideation",
+        "morphological-analysis",
+        "combinatorial",
+        "concept-generation",
+        "product-design",
+        "zwicky-box"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-ideation/ideation_scamper.md",
+        "domain-ideation/ideation_forced_quantity_100_ideas.md",
+        "domain-ideation/ideation_idea_convergence_dot_voting.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "combinatorial",
+          "systematic",
+          "divergent"
+        ],
+        "stakes": "low_to_moderate",
+        "horizon": "variable",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "not_applicable",
+        "domain_complexity": "moderate",
+        "collaboration": "solo_or_team",
+        "output_format": "matrix",
+        "user_role": [
+          "pm",
+          "designer",
+          "engineer",
+          "founder",
+          "strategist"
+        ],
+        "mode": [
+          "diverge"
+        ]
+      }
+    },
+    {
       "path": "domain-ideation/ideation_constraint_flip.md",
       "filename": "ideation_constraint_flip.md",
       "title": "Constraint Flip — Drop One, Add One, See What Opens",
@@ -89270,6 +90120,115 @@
       }
     },
     {
+      "path": "domain-ideation/ideation_workshop_facilitation_plan.md",
+      "filename": "ideation_workshop_facilitation_plan.md",
+      "title": "Ideation Workshop Facilitation Plan — Agenda, Diverge/Converge Sequencing, Roles, Remote Variant",
+      "domain": "ideation",
+      "category": "ideation/facilitation",
+      "description": "Design a 90-minute to full-day ideation workshop: a timed agenda that never mixes divergence and convergence in the same block, exercise choices drawn from this domain, named roles (facilitator, decision owner, timekeeper, scribe), pre-work, materials, energy management, and a remote/hybrid variant with its own timings. Ends with how outputs become owned next steps. Distinct from ideation_crazy_eights.md (one exercise) and domain-productivity/workplace/work_meeting_agenda_builder.md (routine meetings, not generative workshops).",
+      "techniques": [
+        "NE-02",
+        "DP-23",
+        "CM-02",
+        "DS-40",
+        "QA-01"
+      ],
+      "keywords": [
+        "ideation",
+        "workshop",
+        "facilitation",
+        "agenda-design",
+        "remote-workshop",
+        "diverge-converge"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-ideation/ideation_crazy_eights.md",
+        "domain-ideation/ideation_idea_convergence_dot_voting.md",
+        "domain-productivity/workplace/work_meeting_agenda_builder.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "procedural",
+          "planning",
+          "collaborative"
+        ],
+        "stakes": "moderate",
+        "horizon": "short",
+        "uncertainty": "moderate",
+        "evidence_quality": "not_applicable",
+        "domain_complexity": "moderate",
+        "collaboration": "team",
+        "output_format": "structured",
+        "user_role": [
+          "facilitator",
+          "pm",
+          "designer",
+          "team_lead",
+          "founder"
+        ],
+        "mode": [
+          "plan"
+        ]
+      }
+    },
+    {
+      "path": "domain-ideation/ideation_triz_contradiction_resolution.md",
+      "filename": "ideation_triz_contradiction_resolution.md",
+      "title": "TRIZ Contradiction Resolution — Name the Contradiction, Apply a Few Principles Honestly",
+      "domain": "ideation",
+      "category": "ideation/inventive-problem-solving",
+      "description": "Resolve a design problem by stating it as a TRIZ contradiction — technical (improving A worsens B) or physical (one element must be X and not-X) — then applying a small, justified set of inventive principles or separation principles to generate concepts that remove the trade-off instead of compromising on it. Deliberately restrained: 3–6 principles chosen with a stated fit, no claims that all 40 apply, and no contradiction-matrix cell citations from memory. Distinct from ideation_constraint_flip.md (which drops or adds a constraint) and ideation_cross_domain_analogy_mining.md (open analogy search).",
+      "techniques": [
+        "DS-01",
+        "CM-02",
+        "RT-04",
+        "QA-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "ideation",
+        "triz",
+        "contradiction",
+        "inventive-principles",
+        "engineering-design",
+        "problem-solving"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-ideation/ideation_constraint_flip.md",
+        "domain-ideation/ideation_cross_domain_analogy_mining.md",
+        "domain-reasoning-craft/reasoning-moves/reasoning_analogical_inference.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytical",
+          "divergent",
+          "systematic"
+        ],
+        "stakes": "moderate",
+        "horizon": "medium",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "high",
+        "collaboration": "solo_or_team",
+        "output_format": "structured",
+        "user_role": [
+          "engineer",
+          "designer",
+          "product_developer",
+          "founder"
+        ],
+        "mode": [
+          "diverge"
+        ]
+      }
+    },
+    {
       "path": "domain-ideation/ideation_inverse_problem.md",
       "filename": "ideation_inverse_problem.md",
       "title": "Inverse Problem — Solve It By Inverting It",
@@ -89440,6 +90399,63 @@
       }
     },
     {
+      "path": "domain-ideation/ideation_six_thinking_hats.md",
+      "filename": "ideation_six_thinking_hats.md",
+      "title": "Six Thinking Hats — Parallel Thinking on One Proposal",
+      "domain": "ideation",
+      "category": "ideation/parallel-thinking",
+      "description": "Run a proposal, plan, or idea through de Bono's six thinking modes — facts (white), feelings (red), caution (black), benefits (yellow), alternatives (green), process (blue) — one mode at a time, so the whole group (or a solo thinker) explores the same angle together instead of arguing across angles. Chooses a hat sequence to fit the purpose, keeps each mode pure, and ends with a blue-hat summary of what changed. Distinct from ideation_persona_what_would_x_do.md, which generates new ideas from other people's viewpoints; hats examine one proposal through modes of thinking everyone adopts at once.",
+      "techniques": [
+        "NE-12",
+        "ST-02",
+        "CM-02",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "ideation",
+        "six-thinking-hats",
+        "parallel-thinking",
+        "group-discussion",
+        "proposal-review",
+        "facilitation"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-ideation/ideation_persona_what_would_x_do.md",
+        "domain-ideation/ideation_idea_convergence_dot_voting.md",
+        "domain-decision-making/decisioning_fresh_perspective_generator.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "parallel",
+          "divergent",
+          "evaluative"
+        ],
+        "stakes": "low_to_moderate",
+        "horizon": "variable",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "variable",
+        "collaboration": "solo_or_team",
+        "output_format": "structured",
+        "user_role": [
+          "pm",
+          "designer",
+          "founder",
+          "facilitator",
+          "strategist",
+          "individual"
+        ],
+        "mode": [
+          "diverge",
+          "converge"
+        ]
+      }
+    },
+    {
       "path": "domain-ideation/ideation_persona_what_would_x_do.md",
       "filename": "ideation_persona_what_would_x_do.md",
       "title": "What Would X Do — Ideation Through Five Generative Personas",
@@ -89487,6 +90503,62 @@
           "designer",
           "founder",
           "marketer",
+          "strategist",
+          "individual"
+        ],
+        "mode": [
+          "diverge"
+        ]
+      }
+    },
+    {
+      "path": "domain-ideation/ideation_how_might_we_reframe.md",
+      "filename": "ideation_how_might_we_reframe.md",
+      "title": "How Might We — Turn a Problem Statement into Ideation-Ready Questions",
+      "domain": "ideation",
+      "category": "ideation/reframing",
+      "description": "Convert a raw problem, complaint, or research insight into a ranked set of 'How might we…' questions, each sized so it invites many answers without dictating one. Generates HMWs along eight deliberate reframing moves, tests each for too-narrow (solution baked in) and too-broad (unanswerable), and picks 2–3 to ideate against. Distinct from ideation_jobs_to_be_done_reframe.md (which replaces a solution-shaped brief with the customer's job) and ideation_inverse_problem.md (which flips the goal to its opposite); this prompt produces the question an ideation session answers.",
+      "techniques": [
+        "ST-01",
+        "DP-10",
+        "DD-02",
+        "CM-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "ideation",
+        "how-might-we",
+        "problem-framing",
+        "reframing",
+        "design-thinking",
+        "workshop-prep"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-ideation/ideation_inverse_problem.md",
+        "domain-ideation/ideation_jobs_to_be_done_reframe.md",
+        "domain-ideation/ideation_forced_quantity_100_ideas.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "divergent",
+          "reframing",
+          "generative"
+        ],
+        "stakes": "low_to_moderate",
+        "horizon": "variable",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "variable",
+        "collaboration": "solo_or_team",
+        "output_format": "structured",
+        "user_role": [
+          "pm",
+          "designer",
+          "founder",
+          "facilitator",
           "strategist",
           "individual"
         ],
@@ -89548,6 +90620,61 @@
         "mode": [
           "diverge",
           "reframe"
+        ]
+      }
+    },
+    {
+      "path": "domain-ideation/ideation_affinity_clustering.md",
+      "filename": "ideation_affinity_clustering.md",
+      "title": "Affinity Clustering — Group Many Ideas or Notes Bottom-Up into Named Themes",
+      "domain": "ideation",
+      "category": "ideation/sensemaking",
+      "description": "Take a pile of 30–200 raw ideas, sticky notes, or observations and cluster them bottom-up, without predefined categories: atomise the notes, group by felt similarity, name each cluster with a statement rather than a label, form super-groups, and keep the outliers visible. Produces a structured map of what the pile contains, not a ranking. Distinct from ideation_idea_convergence_dot_voting.md (which scores and shortlists) and domain-business-strategy/research/user_research_synthesis.md (which codes interview transcripts toward decisions).",
+      "techniques": [
+        "DS-04",
+        "DS-37",
+        "RT-05",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "ideation",
+        "affinity-diagram",
+        "clustering",
+        "kj-method",
+        "synthesis",
+        "workshop"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-ideation/ideation_idea_convergence_dot_voting.md",
+        "domain-ideation/ideation_forced_quantity_100_ideas.md",
+        "domain-agentic-resources/skills/non-coding/creative/idea-divergence-convergence/SKILL.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "inductive",
+          "convergent",
+          "synthesising"
+        ],
+        "stakes": "low_to_moderate",
+        "horizon": "variable",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "variable",
+        "collaboration": "solo_or_team",
+        "output_format": "structured",
+        "user_role": [
+          "pm",
+          "designer",
+          "facilitator",
+          "researcher",
+          "strategist"
+        ],
+        "mode": [
+          "converge"
         ]
       }
     },
@@ -123751,6 +124878,130 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-presentations/narrative-delivery/presentation_investor_pitch_narrative.md",
+      "filename": "presentation_investor_pitch_narrative.md",
+      "title": "Investor Pitch Narrative — The Story a Fundraising Deck Has to Tell",
+      "domain": "presentations",
+      "category": "presentations/narrative-delivery",
+      "description": "Build the narrative spine of an early-stage fundraising deck (pre-seed to Series A): the one-sentence thesis, the order of the 10–14 slides chosen by the company's strongest evidence, a headline claim and its proof for every slide, the objections a partner will raise with where each is answered, and an ask tied to milestones. Refuses invented metrics and labels projections. Distinct from domain-agentic-resources/skills/marketing/sales-enablement/SKILL.md (sales decks to buyers) and domain-professional-writing/domain-specific/domain_writing_founder_investor_update.md (periodic updates to existing investors).",
+      "techniques": [
+        "ST-46",
+        "RP-02",
+        "NE-23",
+        "RT-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "presentations",
+        "pitch-deck",
+        "fundraising",
+        "investor-materials",
+        "startup",
+        "storytelling"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/marketing/sales-enablement/SKILL.md",
+        "domain-professional-writing/domain-specific/domain_writing_founder_investor_update.md",
+        "domain-presentations/powerpoint_financial_storyteller.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-presentations/narrative-delivery/presentation_keynote_talk_arc.md",
+      "filename": "presentation_keynote_talk_arc.md",
+      "title": "Keynote and Conference Talk Arc — One Idea, a Shift, and a Time Budget",
+      "domain": "presentations",
+      "category": "presentations/narrative-delivery",
+      "description": "Design the narrative arc of a conference talk or keynote (10–45 minutes): the one idea the audience should leave with, the belief shift from where they start to where they end, an opening that earns attention, a chosen structure with a minute-by-minute budget at speaking pace, stories and evidence placed at the turns, and a close that asks for one action. Distinct from domain-education-teaching/instructor/ed-tech/teaching_class_slide_deck_designer.md (lessons with learning objectives) and domain-professional-writing/writing/writing_narrative_arc_builder.md (written three-act arcs, not spoken, time-boxed talks).",
+      "techniques": [
+        "ST-01",
+        "RP-02",
+        "NE-15",
+        "NE-17",
+        "QA-01"
+      ],
+      "keywords": [
+        "presentations",
+        "keynote",
+        "conference-talk",
+        "public-speaking",
+        "narrative-arc",
+        "storytelling"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-education-teaching/instructor/ed-tech/teaching_class_slide_deck_designer.md",
+        "domain-professional-writing/writing/writing_narrative_arc_builder.md",
+        "domain-presentations/narrative-delivery/presentation_speaker_notes_rehearsal_coach.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-presentations/narrative-delivery/presentation_qa_hostile_question_prep.md",
+      "filename": "presentation_qa_hostile_question_prep.md",
+      "title": "Q&A Anticipation and Hostile-Question Prep for a Presentation",
+      "domain": "presentations",
+      "category": "presentations/narrative-delivery",
+      "description": "Prepare for the question period after a pitch, keynote, board presentation, or town hall: map who is in the room and what each wants, build a question bank across clarifying, sceptical, hostile, loaded, and off-topic types, write a short honest answer with its evidence for each, set an 'I don't know' protocol and red lines, decide which answers move into the talk itself, and run a hostile rehearsal. Distinct from domain-science/public-engagement/science_media_interview_prep.md (journalist interviews about a finding) and domain-science/public-engagement/science_congressional_or_parliamentary_testimony_prep.md (legislative testimony).",
+      "techniques": [
+        "QA-02",
+        "NE-23",
+        "RT-05",
+        "QA-04",
+        "OC-03"
+      ],
+      "keywords": [
+        "presentations",
+        "q-and-a",
+        "hostile-questions",
+        "objection-handling",
+        "public-speaking",
+        "preparation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-science/public-engagement/science_media_interview_prep.md",
+        "domain-science/public-engagement/science_congressional_or_parliamentary_testimony_prep.md",
+        "domain-presentations/narrative-delivery/presentation_investor_pitch_narrative.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-presentations/narrative-delivery/presentation_speaker_notes_rehearsal_coach.md",
+      "filename": "presentation_speaker_notes_rehearsal_coach.md",
+      "title": "Speaker Notes and Rehearsal Coach — Cue-Based Notes and a Scored Run-Through Plan",
+      "domain": "presentations",
+      "category": "presentations/narrative-delivery",
+      "description": "Convert a finished deck or talk outline into cue-based speaker notes (purpose line, key phrases, transition, timing checkpoint, stage direction per slide — not a script), then run a staged rehearsal plan: talk-through, timed run, recorded self-review, and audience run, each scored on named delivery dimensions with a fix list and a stop rule. Distinct from domain-agentic-resources/skills/document-processing/ppt-creator/SKILL.md (generates decks with notes as a by-product) and domain-biblical-studies/sermon-devotional/biblical_sermon_delivery_coaching.md (preaching-specific delivery).",
+      "techniques": [
+        "DT-03",
+        "DD-06",
+        "QA-17",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "presentations",
+        "speaker-notes",
+        "rehearsal",
+        "delivery-coaching",
+        "public-speaking",
+        "timing"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/document-processing/ppt-creator/SKILL.md",
+        "domain-biblical-studies/sermon-devotional/biblical_sermon_delivery_coaching.md",
+        "domain-presentations/narrative-delivery/presentation_keynote_talk_arc.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
       "filename": "visualplan_visual_qa_harness.md",
       "title": "Design a QA Harness for Visually-Delivered Work",
@@ -123978,6 +125229,38 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-product-management/prompts/product_experiment_design.md",
+      "filename": "product_experiment_design.md",
+      "title": "Experiment Design — Hypothesis, Metric, MDE Handoff, Guardrails, and the Decision Rule Before Launch",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Write the pre-launch record for a product experiment from the PM's seat: a gate asking whether any result would change the decision, a falsifiable hypothesis, one primary metric whose unit matches the randomisation unit, guardrails with stated margins, a minimum detectable effect justified in business terms and handed to an analyst for sample size and duration, and an outcome-to-action decision rule that includes the inconclusive case — distinct from analytics_ab_test_readout (reading results after), product_pricing_experiment_matrix (pricing grids) and the ab-test-setup skill (test mechanics and implementation).",
+      "techniques": [
+        "DP-11",
+        "DS-02",
+        "DP-13",
+        "QA-08",
+        "NE-20"
+      ],
+      "keywords": [
+        "experimentation",
+        "ab-testing",
+        "hypothesis",
+        "minimum-detectable-effect",
+        "guardrail-metrics",
+        "decision-rule",
+        "pre-registration"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/experiments-and-reporting/analytics_ab_test_readout.md",
+        "domain-product-management/prompts/product_pricing_experiment_matrix.md",
+        "domain-agentic-resources/skills/marketing/ab-test-setup/SKILL.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-product-management/prompts/product_feature_requirements_extraction.md",
       "filename": "product_feature_requirements_extraction.md",
       "title": "Feature Requirements Extraction from Stakeholder Conversations",
@@ -124158,6 +125441,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-product-management/prompts/product_prfaq_working_backwards.md",
+      "filename": "product_prfaq_working_backwards.md",
+      "title": "PR/FAQ — Working Backwards From the Customer Before Anything Is Built",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Write a working-backwards PR/FAQ before committing to build: a one-page future press release in the customer's language, an external FAQ a customer would ask, an internal FAQ that states cost, what has to be true and the biggest risks, a read-aloud test with target customers, and a proceed / revise / stop decision with kill signals — distinct from product_create_prd (requirements after the decision to build) and decisiondoc_narrative_memo_bezos (a six-page memo choosing among options).",
+      "techniques": [
+        "RP-02",
+        "NE-23",
+        "QA-02",
+        "DP-13",
+        "CM-02"
+      ],
+      "keywords": [
+        "prfaq",
+        "working-backwards",
+        "product-discovery",
+        "press-release",
+        "customer-problem",
+        "pre-build"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-product-management/prompts/product_create_prd.md",
+        "domain-product-management/prompts/product_product_idea_vetting_will_it_fly_or_flop.md",
+        "domain-decision-making/documentation/decisiondoc_narrative_memo_bezos.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-product-management/prompts/product_pricing_experiment_matrix.md",
       "filename": "product_pricing_experiment_matrix.md",
       "title": "Pricing Experiment Matrix",
@@ -124250,6 +125564,68 @@
         "domain-idea-to-product/stage-1-ideation/ideation_concept_legs_test.md",
         "domain-product-management/prompts/product_competitor_feature_teardown.md",
         "domain-product-management/prompts/product_create_prd.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_stakeholder_update.md",
+      "filename": "product_stakeholder_update.md",
+      "title": "Product Stakeholder Update — Decisions First, Metric Movement Against Target, Roadmap Changes With Reasons",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Write the recurring update a product manager sends to leadership and partner functions: decisions needed at the top with options, a recommendation, a deadline and the cost of delay (or a provisional-decision default), outcome metrics against target with honest attribution, what was learned rather than only shipped, roadmap changes with what moved later, and risks with owners — distinct from work_status_update_writer (generic project status) and business_writing_status_report (delivery progress against a project plan).",
+      "techniques": [
+        "RP-02",
+        "NE-17",
+        "DP-16",
+        "DS-06",
+        "RT-05"
+      ],
+      "keywords": [
+        "stakeholder-update",
+        "product-communication",
+        "decisions-needed",
+        "metrics-reporting",
+        "roadmap-changes",
+        "executive-communication"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-productivity/workplace/work_status_update_writer.md",
+        "domain-professional-writing/business-writing/business_writing_status_report.md",
+        "domain-product-management/prompts/product_north_star_metric_definition.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/prompts/product_release_notes_writer.md",
+      "filename": "product_release_notes_writer.md",
+      "title": "Release Notes Writer — One Change Inventory, a Customer Variant and an Internal Variant That Agree",
+      "domain": "product-management",
+      "category": "product-management/prompts",
+      "description": "Turn a release's change list into two consistent documents from one classified inventory: user-facing notes written as what the reader can now do, with breaking changes and required actions first and nothing that is still behind a partial rollout, and internal notes for support, sales and success with affected segments, rollout state, expected questions and workarounds — distinct from the changelog-automation skill (developer changelogs generated from commits) and product_launch_readiness_gate (whether to ship).",
+      "techniques": [
+        "NE-14",
+        "RP-02",
+        "OC-04",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "release-notes",
+        "product-communication",
+        "changelog",
+        "customer-communication",
+        "internal-enablement",
+        "rollout"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-agentic-resources/skills/developer-tools/changelog-automation/SKILL.md",
+        "domain-product-management/prompts/product_launch_readiness_gate.md",
+        "domain-product-management/prompts/product_feature_sunset_decision.md"
       ],
       "has_frontmatter": true
     },
@@ -149664,6 +151040,62 @@
       }
     },
     {
+      "path": "domain-research-academic/research_mixed_methods_design.md",
+      "filename": "research_mixed_methods_design.md",
+      "title": "Mixed-Methods Design — Core Design, Integration Points, Joint Displays, and What to Do When Strands Disagree",
+      "domain": "research-academic",
+      "category": "research-academic/mixed-methods",
+      "description": "Design a mixed-methods study once the decision to combine strands is made: choose convergent, explanatory sequential or exploratory sequential from what each strand must do for the other, specify how samples relate, name every integration point (connecting, building, merging) and the procedure used there, draft the joint display, and state in advance how discordant findings will be handled and reported; distinct from `domain-science/methods-foundations/science_qualitative_vs_quantitative_decision.md` (whether to mix at all) and from the single-strand instruments `domain-research-academic/research_survey_instrument_designer.md` and `domain-research-academic/research_qualitative_coding_scheme.md`.",
+      "techniques": [
+        "DS-01",
+        "RT-06",
+        "OC-03",
+        "QA-04",
+        "QA-12"
+      ],
+      "keywords": [
+        "mixed-methods",
+        "research-design",
+        "integration",
+        "joint-display",
+        "explanatory-sequential",
+        "convergent-design"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-science/methods-foundations/science_qualitative_vs_quantitative_decision.md",
+        "domain-research-academic/research_survey_instrument_designer.md",
+        "domain-research-academic/research_qualitative_coding_scheme.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "systematic",
+          "integrative",
+          "methodological"
+        ],
+        "stakes": "variable",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "variable",
+        "collaboration": "solo_or_team",
+        "output_format": "structured",
+        "user_role": [
+          "researcher",
+          "student",
+          "evaluator",
+          "ux_researcher",
+          "policy"
+        ],
+        "mode": [
+          "design",
+          "plan"
+        ]
+      }
+    },
+    {
       "path": "domain-research-academic/research_interview_guide_designer.md",
       "filename": "research_interview_guide_designer.md",
       "title": "Interview Guide Designer — Semi-Structured Guide with Probes, Escalations, and Sensitive Transitions",
@@ -150057,6 +151489,60 @@
         "mode": [
           "synthesize",
           "document",
+          "plan"
+        ]
+      }
+    },
+    {
+      "path": "domain-research-academic/research_thesis_dissertation_structure.md",
+      "filename": "research_thesis_dissertation_structure.md",
+      "title": "Thesis and Dissertation Structure — Chapter Architecture, Argument Spine, and Committee-Facing Milestones",
+      "domain": "research-academic",
+      "category": "research-academic/thesis",
+      "description": "Design the architecture of a thesis or dissertation before drafting: choose monograph, papers-based or hybrid format against the institution's rules, write the one-sentence argument and the claim each chapter contributes to it, budget words per chapter, map every research question to where it is answered, and schedule committee-facing milestones working back from the submission date; distinct from `domain-research-academic/research_question_formulation.md` (forming the questions), `domain-research-academic/research_literature_review_plan.md` (planning one chapter's review) and `domain-science/lab-operations-mentorship/science_thesis_committee_meeting_prep.md` (preparing a single committee meeting).",
+      "techniques": [
+        "DT-01",
+        "ST-05",
+        "ST-46",
+        "QA-08",
+        "QA-01"
+      ],
+      "keywords": [
+        "thesis",
+        "dissertation",
+        "chapter-structure",
+        "argument",
+        "graduate-research",
+        "milestones"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-research-academic/research_question_formulation.md",
+        "domain-research-academic/research_literature_review_plan.md",
+        "domain-science/lab-operations-mentorship/science_thesis_committee_meeting_prep.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "structural",
+          "planning",
+          "argumentative"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "variable",
+        "collaboration": "solo_or_pair",
+        "output_format": "structured",
+        "user_role": [
+          "student",
+          "researcher",
+          "supervisor"
+        ],
+        "mode": [
+          "design",
           "plan"
         ]
       }
@@ -150522,6 +152008,62 @@
       }
     },
     {
+      "path": "domain-risk/risk_acceptance_exception_memo.md",
+      "filename": "risk_acceptance_exception_memo.md",
+      "title": "Risk Acceptance and Exception Memo — Accepting a Risk on Purpose, With an Owner, an Expiry, and Tripwires",
+      "domain": "risk",
+      "category": "risk/acceptance",
+      "description": "Write the formal record that turns an unmitigated risk or a policy exception into a deliberate, time-limited decision: what exactly is being accepted and against which policy or appetite limit, inherent and residual rating, compensating controls with their own owners and checks, the alternatives rejected and their cost, the approver whose authority matches the residual rating, a hard expiry, and revisit triggers that void the acceptance early; distinct from `domain-risk/risk_appetite_statement.md` (sets the limits in advance) and `domain-risk/risk_register_builder.md` (catalogues risks and mitigations).",
+      "techniques": [
+        "CM-09",
+        "GT-05",
+        "QA-09",
+        "RT-05",
+        "QA-12"
+      ],
+      "keywords": [
+        "risk-acceptance",
+        "policy-exception",
+        "compensating-controls",
+        "governance",
+        "decision-record",
+        "accountability"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_appetite_statement.md",
+        "domain-risk/risk_register_builder.md",
+        "domain-risk/risk_key_risk_indicators.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "evaluative",
+          "structural",
+          "evidential"
+        ],
+        "stakes": "variable",
+        "horizon": "months",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": "structured_memo",
+        "user_role": [
+          "risk-lead",
+          "operator",
+          "executive",
+          "it-lead",
+          "compliance"
+        ],
+        "mode": [
+          "decide",
+          "document"
+        ]
+      }
+    },
+    {
       "path": "domain-risk/risk_after_action_review.md",
       "filename": "risk_after_action_review.md",
       "title": "After-Action Review — Post-Event Learning When a Risk Has Already Materialized",
@@ -150577,6 +152119,67 @@
           "diagnose",
           "document",
           "synthesize"
+        ]
+      }
+    },
+    {
+      "path": "domain-risk/risk_bow_tie_analysis.md",
+      "filename": "risk_bow_tie_analysis.md",
+      "title": "Bow-Tie Analysis — Threats, One Top Event, Consequences, and the Barriers Between Them",
+      "domain": "risk",
+      "category": "risk/barrier-analysis",
+      "description": "Build a bow-tie for one serious hazard: name the single top event (the moment control is lost), map the threats that lead to it and the consequences that follow, place preventive barriers on the left and mitigative barriers on the right, rate each barrier effective / degraded / missing on evidence, list the degradation factors that erode barriers and the controls on them, check barrier independence, and rank the thinnest paths; distinct from `domain-risk/risk_fmea_analysis.md` (step-by-step failure modes with RPN scores) and `domain-risk/risk_threat_model_non_technical.md` (intelligent adversaries).",
+      "techniques": [
+        "DS-01",
+        "RT-07",
+        "DT-05",
+        "QA-02",
+        "DS-06"
+      ],
+      "keywords": [
+        "bow-tie",
+        "barrier-analysis",
+        "hazard-analysis",
+        "process-safety",
+        "controls",
+        "risk-assessment"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_fmea_analysis.md",
+        "domain-risk/risk_register_builder.md",
+        "domain-risk/risk_after_action_review.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "causal",
+          "structural",
+          "systems",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "weeks_to_months",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": [
+          "diagram_table",
+          "matrix_ranked_list"
+        ],
+        "user_role": [
+          "operator",
+          "safety-lead",
+          "risk-lead",
+          "facilities",
+          "engineer"
+        ],
+        "mode": [
+          "audit",
+          "diagnose",
+          "plan"
         ]
       }
     },
@@ -150797,6 +152400,123 @@
       }
     },
     {
+      "path": "domain-risk/risk_key_risk_indicators.md",
+      "filename": "risk_key_risk_indicators.md",
+      "title": "Key Risk Indicators — Measures That Move Before the Loss, With Thresholds Someone Acts On",
+      "domain": "risk",
+      "category": "risk/monitoring",
+      "description": "Design key risk indicators for the top risks in a register: trace each risk to a causal driver, pick a leading indicator where one exists and label lagging ones honestly, define the formula, source and frequency, set green/amber/red thresholds from appetite or history, name an owner and the action each band forces, back-test against past incidents, and list how each KRI could be gamed; distinct from `domain-finance/risk-management/finance_operational_risk_rcsa.md` (KRIs as one step of a control self-assessment) and `domain-data-analytics/` business KPI dashboards (performance, not risk).",
+      "techniques": [
+        "DS-02",
+        "RT-06",
+        "DS-36",
+        "QA-21",
+        "QA-12"
+      ],
+      "keywords": [
+        "key-risk-indicators",
+        "kri",
+        "risk-monitoring",
+        "thresholds",
+        "escalation",
+        "leading-indicators"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_register_builder.md",
+        "domain-risk/risk_appetite_statement.md",
+        "domain-finance/risk-management/finance_operational_risk_rcsa.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "causal",
+          "quantitative",
+          "structural"
+        ],
+        "stakes": "variable",
+        "horizon": "weeks_to_months",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": "matrix_ranked_list",
+        "user_role": [
+          "risk-lead",
+          "operator",
+          "executive",
+          "analyst",
+          "pm"
+        ],
+        "mode": [
+          "design",
+          "plan",
+          "audit"
+        ]
+      }
+    },
+    {
+      "path": "domain-risk/risk_monte_carlo_quantification.md",
+      "filename": "risk_monte_carlo_quantification.md",
+      "title": "Monte Carlo Risk Quantification — Ranges In, a Loss Exceedance Curve Out, and No Fake Precision",
+      "domain": "risk",
+      "category": "risk/quantification",
+      "description": "Quantify a small set of operational, project or enterprise risks by simulation: elicit calibrated ranges instead of point scores, choose distributions that fit the shape of each loss, model correlation through shared drivers, run the simulation in named software with a seed, read the loss exceedance curve against appetite, run a sensitivity check on the inputs that drive the tail, and explain the result to a non-quant in plain frequencies; distinct from `domain-finance/risk-management/finance_market_risk_var_stress.md` (market VaR on a trading portfolio) and `domain-finance/personal-finance-planning/finance_monte_carlo_withdrawal_analysis.md` (retirement withdrawals).",
+      "techniques": [
+        "NE-10",
+        "NE-11",
+        "RT-23",
+        "QA-04",
+        "NE-13"
+      ],
+      "keywords": [
+        "monte-carlo",
+        "risk-quantification",
+        "loss-exceedance-curve",
+        "calibrated-estimation",
+        "uncertainty",
+        "enterprise-risk"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/risk-management/finance_market_risk_var_stress.md",
+        "domain-risk/risk_register_builder.md",
+        "domain-risk/risk_appetite_statement.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "probabilistic",
+          "quantitative",
+          "evidential"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "risk",
+        "evidence_quality": "sparse",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "chart_spec"
+        ],
+        "user_role": [
+          "risk-lead",
+          "analyst",
+          "finance",
+          "executive",
+          "operator"
+        ],
+        "mode": [
+          "forecast",
+          "decide",
+          "explain"
+        ]
+      }
+    },
+    {
       "path": "domain-risk/risk_register_builder.md",
       "filename": "risk_register_builder.md",
       "title": "Risk Register Builder — A Maintainable Register, Not a One-Off List",
@@ -150856,6 +152576,63 @@
       }
     },
     {
+      "path": "domain-risk/risk_board_risk_report.md",
+      "filename": "risk_board_risk_report.md",
+      "title": "Board Risk Report — What Changed, What Breached, and What the Board Must Decide",
+      "domain": "risk",
+      "category": "risk/reporting",
+      "description": "Assemble the periodic risk report for a board or risk committee from the working instruments: lead with what changed since the last report and the decisions requested, show top-risk movement with reasons, appetite breaches, amber and red KRIs only, open and expiring risk acceptances, incidents with their lessons, and emerging risks — each item tagged note / discuss / decide, within a page budget; distinct from `domain-risk/risk_heat_map.md` (visualizes and re-ranks the register), `domain-finance/corporate-finance-fpa/finance_board_finance_package_builder.md` (financial results package) and `domain-presentations/powerpoint_board_deck.md` (slide production).",
+      "techniques": [
+        "ST-46",
+        "QA-28",
+        "DS-05",
+        "NE-17",
+        "QA-12"
+      ],
+      "keywords": [
+        "board-reporting",
+        "risk-committee",
+        "risk-governance",
+        "kri",
+        "risk-appetite",
+        "executive-communication"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_heat_map.md",
+        "domain-risk/risk_key_risk_indicators.md",
+        "domain-finance/corporate-finance-fpa/finance_board_finance_package_builder.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "synthetic",
+          "evaluative",
+          "communicative"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "variable",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": "structured_memo",
+        "user_role": [
+          "risk-lead",
+          "executive",
+          "company-secretary",
+          "founder",
+          "cfo"
+        ],
+        "mode": [
+          "synthesize",
+          "document",
+          "decide"
+        ]
+      }
+    },
+    {
       "path": "domain-risk/risk_tail_risk_scan.md",
       "filename": "risk_tail_risk_scan.md",
       "title": "Tail Risk Scan — Hunting the Low-Probability, High-Impact Risks the Register Misses",
@@ -150911,6 +152688,67 @@
           "diverge",
           "forecast",
           "audit"
+        ]
+      }
+    },
+    {
+      "path": "domain-risk/risk_third_party_risk_assessment.md",
+      "filename": "risk_third_party_risk_assessment.md",
+      "title": "Third-Party Risk Assessment — The Whole Vendor, Not Just Its Security Answers",
+      "domain": "risk",
+      "category": "risk/third-party",
+      "description": "Assess an existing or prospective vendor, outsourcer or critical supplier across every way it can hurt you — financial viability, operational resilience, concentration, compliance and conduct, fourth-party dependencies, and exit — rate each dimension on evidence, let the worst dimension rather than the average set the overall rating, and end with conditions, a monitoring cadence and a named owner; distinct from `domain-risk/risk_vendor_security_questionnaire_review.md` (security answers only) and `domain-operations/supply-chain-procurement/ops_supplier_selection_scorecard.md` (choosing between suppliers).",
+      "techniques": [
+        "ST-43",
+        "RT-02",
+        "RT-07",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "third-party-risk",
+        "vendor-risk",
+        "concentration-risk",
+        "fourth-party",
+        "outsourcing",
+        "due-diligence"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_vendor_security_questionnaire_review.md",
+        "domain-risk/risk_dependency_chain_audit.md",
+        "domain-operations/supply-chain-procurement/ops_supplier_selection_scorecard.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "systems",
+          "evidential",
+          "structural",
+          "adversarial"
+        ],
+        "stakes": "variable",
+        "horizon": "weeks_to_months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": [
+          "matrix",
+          "structured"
+        ],
+        "user_role": [
+          "operator",
+          "procurement",
+          "finance",
+          "founder",
+          "risk-lead"
+        ],
+        "mode": [
+          "audit",
+          "assess",
+          "decide"
         ]
       }
     },
@@ -172554,6 +174392,37 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-voice-conversational-ui/analytics/analytics_transcript_qa_rubric.md",
+      "filename": "analytics_transcript_qa_rubric.md",
+      "title": "Conversation Transcript QA Rubric — Anchored Dimensions, Critical Fails, Stratified Sampling, and Calibrated Review",
+      "domain": "voice-conversational-ui",
+      "category": "voice-conversational-ui/analytics",
+      "description": "Build a rubric for reviewing individual chatbot, voice bot, or AI phone-agent conversations: named dimensions with anchored 0-1-2 scales, critical-fail items that override the score, a stratified sampling plan that over-samples escalations and risky intents, reviewer calibration, and the conditions under which an LLM judge may score at scale; distinct from the metrics framework (aggregate KPIs) and log optimization (funnel and clustering across thousands of sessions).",
+      "techniques": [
+        "DP-03",
+        "QA-17",
+        "QA-22",
+        "DS-35",
+        "QA-12"
+      ],
+      "keywords": [
+        "conversation-qa",
+        "rubric",
+        "transcript-review",
+        "llm-as-judge",
+        "analytics",
+        "quality-assurance"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-voice-conversational-ui/analytics/analytics_conversation_metrics_framework.md",
+        "domain-voice-conversational-ui/analytics/analytics_conversation_optimization.md",
+        "domain-prompt-engineering/evaluation/rubrics/rubric_pairwise_vs_pointwise.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-voice-conversational-ui/chatbot-design/chatbot_design_conversation_flow.md",
       "filename": "chatbot_design_conversation_flow.md",
       "title": "Chatbot Conversation Flow Design",
@@ -172660,6 +174529,37 @@
       "difficulty": "advanced",
       "updated": "2026-03-19",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-voice-conversational-ui/chatbot-design/chatbot_design_human_agent_handoff.md",
+      "filename": "chatbot_design_human_agent_handoff.md",
+      "title": "Human-Agent Handoff Design — Triggers, the Context Packet, Warm vs Cold, and No Repeat Asks",
+      "domain": "voice-conversational-ui",
+      "category": "voice-conversational-ui/chatbot-design",
+      "description": "Specify the handoff from a chatbot, voice bot, or AI phone agent to a human: a trigger policy (explicit request always honored, failure limits, confidence, risk and vulnerability signals), the transfer type (warm, cold, consult, callback, async), a context-packet schema the agent sees first, what the customer is told, availability fallbacks, the return path to the bot, and measures such as repeat-ask rate; distinct from the handoff bullets in the enterprise customer-service and error-handling prompts (which this expands into a full spec) and from agent_human_in_loop_handoff.md (an AI agent pausing for human approval).",
+      "techniques": [
+        "CM-02",
+        "OC-02",
+        "NE-20",
+        "DS-06",
+        "QA-01"
+      ],
+      "keywords": [
+        "human-handoff",
+        "escalation",
+        "warm-transfer",
+        "contact-center",
+        "chatbot-design",
+        "context-transfer"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-voice-conversational-ui/chatbot-design/chatbot_design_enterprise_customer_service.md",
+        "domain-voice-conversational-ui/chatbot-design/chatbot_design_error_handling_patterns.md",
+        "domain-prompt-engineering/agent-workflows/agent_human_in_loop_handoff.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -173127,6 +175027,100 @@
       "difficulty": "advanced",
       "updated": "2026-03-19",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-voice-conversational-ui/voice-design/voice_design_ivr_call_flow.md",
+      "filename": "voice_design_ivr_call_flow.md",
+      "title": "IVR & Phone-Agent Call-Flow Design — Speech and DTMF, Authentication Gates, Containment vs Transfer",
+      "domain": "voice-conversational-ui",
+      "category": "voice-conversational-ui/voice-design",
+      "description": "Design a telephone call flow for an IVR or AI phone agent: route by caller intent and volume, choose speech, DTMF, or both per node, place authentication and payment gates only where data requires them, set an explicit containment-versus-transfer policy with an always-available route to a person, and specify every node in a table a telephony team can build; distinct from the general dialog state machine prompt, the chatbot customer-service design (text channels), and the human-agent handoff prompt (what happens at the transfer itself).",
+      "techniques": [
+        "CM-02",
+        "ST-02",
+        "RT-02",
+        "QA-08",
+        "OC-03"
+      ],
+      "keywords": [
+        "ivr",
+        "telephony",
+        "dtmf",
+        "call-flow",
+        "authentication",
+        "containment",
+        "voice-design"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-voice-conversational-ui/dialog-architecture/dialog_architecture_state_machine_design.md",
+        "domain-voice-conversational-ui/chatbot-design/chatbot_design_human_agent_handoff.md",
+        "domain-voice-conversational-ui/voice-ux/voice_ux_error_recovery_patterns.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-voice-conversational-ui/voice-design/voice_design_realtime_turn_taking.md",
+      "filename": "voice_design_realtime_turn_taking.md",
+      "title": "Realtime Voice Agent Turn-Taking & Barge-In — Latency Budget, Endpointing, and Interruption Handling",
+      "domain": "voice-conversational-ui",
+      "category": "voice-conversational-ui/voice-design",
+      "description": "Tune when a realtime voice agent (cascaded ASR-LLM-TTS or speech-to-speech) starts and stops talking: a measured latency budget from end of user speech to first agent audio, endpointing that adapts to what is being collected, barge-in that stops playback fast and truncates history to what was actually heard, backchannel versus interruption rules, and a test battery for cut-offs, false barge-ins, and talk-over; distinct from the custom voice assistant architecture (component selection) and from IVR call-flow design (menus and routing).",
+      "techniques": [
+        "CM-02",
+        "DS-02",
+        "RT-10",
+        "QA-10",
+        "ST-03"
+      ],
+      "keywords": [
+        "realtime-voice",
+        "turn-taking",
+        "barge-in",
+        "endpointing",
+        "latency",
+        "voice-agent"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-voice-conversational-ui/voice-design/voice_design_custom_voice_assistant.md",
+        "domain-voice-conversational-ui/voice-design/voice_design_ivr_call_flow.md",
+        "domain-voice-conversational-ui/chatbot-design/chatbot_design_llm_powered_architecture.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-voice-conversational-ui/voice-design/voice_design_ssml_tts_tuning.md",
+      "filename": "voice_design_ssml_tts_tuning.md",
+      "title": "SSML & TTS Voice Tuning — Pronunciation Lexicons, Normalization, Prosody, Pauses, and a Listening Regression Set",
+      "domain": "voice-conversational-ui",
+      "category": "voice-conversational-ui/voice-design",
+      "description": "Fix how a text-to-speech voice actually sounds: inventory mispronunciations and misreadings, apply fixes in order of least engine dependence (rewrite, normalization, pronunciation lexicon, inline phoneme, prosody and breaks), confirm each tag against the target engine's documented support, and lock results with a golden listening set that is re-run on every voice or engine upgrade; distinct from voice_design_vui_prompt_writing.md (what the system says) and from the AI-ML speech framing prompt (training and evaluating TTS models).",
+      "techniques": [
+        "CM-01",
+        "ST-02",
+        "DS-06",
+        "QA-10",
+        "ST-03"
+      ],
+      "keywords": [
+        "ssml",
+        "tts",
+        "pronunciation-lexicon",
+        "prosody",
+        "voice-design",
+        "regression-testing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-voice-conversational-ui/voice-design/voice_design_vui_prompt_writing.md",
+        "domain-voice-conversational-ui/voice-design/voice_design_custom_voice_assistant.md",
+        "domain-AI-ML/specialized-ml/other-modalities/mlmodal_speech_asr_tts_framing.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -173745,6 +175739,38 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-written-advocacy/institutions-and-records/advocacy_hoa_written_request.md",
+      "filename": "advocacy_hoa_written_request.md",
+      "title": "HOA Written Request — Respond to a Violation, Contest a Fine, or Ask the Association to Act",
+      "domain": "written-advocacy",
+      "category": "advocacy",
+      "description": "[SELF-SUBMIT] Help a homeowner or unit owner draft THEIR OWN letter to a homeowners', condominium, or owners' association or its managing agent — responding to a violation notice or fine, asking for a maintenance or common-area repair, requesting association records, or seeking an architectural or modification approval — anchored to the association's OWN governing documents quoted by section, with a request for a hearing or board review where the documents provide one. Screens liens, foreclosure, collections, and litigation to an attorney first. Does NOT cite property or association statutes as authority, interpret governing documents, state whether a fine is enforceable, advise withholding assessments, predict outcomes, or invent rule text. Distinct from domain-legal/personal-self-advocacy/housing-landlord-tenant/ (renters) and advocacy_service_nonperformance_demand (contractors). Not legal advice.",
+      "techniques": [
+        "CM-01",
+        "CM-02",
+        "RT-05",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "written-advocacy",
+        "self-advocacy",
+        "hoa",
+        "housing",
+        "self-submit",
+        "community-association"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-written-advocacy/cross-cutting/advocacy_correspondence_log_builder.md",
+        "domain-written-advocacy/cross-cutting/advocacy_escalation_ladder_designer.md",
+        "domain-written-advocacy/products-and-warranty/advocacy_service_nonperformance_demand.md",
+        "domain-legal/personal-self-advocacy/housing-landlord-tenant/legalprep_landlord_notice_response_preparer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-written-advocacy/financial-hardship/advocacy_hardship_assistance_request.md",
       "filename": "advocacy_hardship_assistance_request.md",
       "title": "Hardship Assistance Request — Ask a Lender or Servicer for Temporary Relief",
@@ -173905,6 +175931,38 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-written-advocacy/insurance-and-medical/advocacy_medical_records_request.md",
+      "filename": "advocacy_medical_records_request.md",
+      "title": "Medical Records Request — Get a Copy of Your Own Health Records",
+      "domain": "written-advocacy",
+      "category": "advocacy",
+      "description": "[SELF-SUBMIT] Help a patient (or a personal representative with documented authority) draft THEIR OWN written request for copies of their health records from a clinic, hospital, lab, imaging centre, or pharmacy — scoping record types and date range, naming the format and delivery method, asking the cost in advance, and asking for an explanation of anything withheld — plus an optional separate request to correct an entry. Does NOT cite health-privacy law, state access rights, response periods, or fee limits, state what may be withheld, advise on records of another adult without authority, predict compliance, or invent provider details. Distinct from advocacy_data_access_request (general organizational data) and psychology_records_request_response_decision_aid (the clinician's side). Not legal or medical advice.",
+      "techniques": [
+        "CM-01",
+        "CM-03",
+        "ST-02",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "written-advocacy",
+        "self-advocacy",
+        "medical-records",
+        "health-privacy",
+        "self-submit",
+        "patient"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-written-advocacy/privacy-and-data/advocacy_data_access_request.md",
+        "domain-written-advocacy/insurance-and-medical/advocacy_insurance_claim_denial_appeal.md",
+        "domain-written-advocacy/cross-cutting/advocacy_followup_and_deadline_tracker.md",
+        "domain-psychology/practice-operations/psychology_records_request_response_decision_aid.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-written-advocacy/financial-hardship/advocacy_payment_arrangement_proposal.md",
       "filename": "advocacy_payment_arrangement_proposal.md",
       "title": "Payment Arrangement Proposal — Offer a Realistic Instalment Plan You Can Meet",
@@ -173965,6 +176023,38 @@
         "domain-written-advocacy/financial-hardship/advocacy_interest_rate_reduction_request.md",
         "domain-negotiation/channels/negotiation_written_async_message.md",
         "domain-written-advocacy/cross-cutting/advocacy_response_analyzer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-written-advocacy/insurance-and-medical/advocacy_prior_authorization_status_request.md",
+      "filename": "advocacy_prior_authorization_status_request.md",
+      "title": "Prior Authorization Status Request — Move a Pending Approval Before Care Is Denied",
+      "domain": "written-advocacy",
+      "category": "advocacy",
+      "description": "[SELF-SUBMIT] Help a patient draft THEIR OWN pair of short written requests while a prior authorization (pre-approval) is pending or stalled — one to the insurer asking for the request's status, the criteria it is being reviewed against, and what documentation is missing; one to the treating clinician's office asking it to submit or complete the request and whether it will seek an expedited review. Screens urgent care first. Does NOT argue medical necessity, cite insurance regulation, state review timeframes, interpret coverage, name a regulator, predict approval, or invent codes or reference numbers. Distinct from medicine_prior_authorization_letter (the clinician's medical-necessity letter) and advocacy_insurance_claim_denial_appeal (after a denial). Not legal or medical advice.",
+      "techniques": [
+        "CM-01",
+        "CM-03",
+        "DS-21",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "written-advocacy",
+        "self-advocacy",
+        "insurance",
+        "prior-authorization",
+        "self-submit",
+        "patient"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-written-advocacy/insurance-and-medical/advocacy_insurance_claim_denial_appeal.md",
+        "domain-healthcare-clinical/prompts/workflow/medicine_prior_authorization_letter.md",
+        "domain-written-advocacy/insurance-and-medical/advocacy_medical_records_request.md",
+        "domain-written-advocacy/cross-cutting/advocacy_channel_and_record_strategy.md"
       ],
       "has_frontmatter": true
     },
@@ -174257,6 +176347,38 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-written-advocacy/financial-hardship/advocacy_student_loan_servicer_dispute.md",
+      "filename": "advocacy_student_loan_servicer_dispute.md",
+      "title": "Student Loan Servicer Dispute — Correct a Balance, Payment, or Plan Error in Writing",
+      "domain": "written-advocacy",
+      "category": "advocacy",
+      "description": "[SELF-SUBMIT] Help a borrower draft THEIR OWN written error notice to a student loan servicer — a misapplied or missing payment, a wrong balance or interest figure, an unprocessed repayment-plan or deferment request, a miscounted qualifying-payment tally, or a transfer-related error — with a reconciliation table from the borrower's own records, one correction per item, and a request for the account history the servicer relied on. Does NOT cite loan programme rules or statute as authority, state eligibility for any plan or forgiveness, compute what the balance should be, state response deadlines, name an ombudsman or agency, predict outcomes, or invent loan data. Distinct from advocacy_credit_report_dispute (the bureau entry) and advocacy_hardship_assistance_request (asking for relief rather than correcting an error). Not legal or financial advice.",
+      "techniques": [
+        "CM-01",
+        "RT-05",
+        "OC-03",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "written-advocacy",
+        "self-advocacy",
+        "student-loans",
+        "servicer-dispute",
+        "self-submit",
+        "consumer"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-written-advocacy/financial-hardship/advocacy_credit_report_dispute.md",
+        "domain-written-advocacy/financial-hardship/advocacy_hardship_assistance_request.md",
+        "domain-written-advocacy/cross-cutting/advocacy_response_analyzer.md",
+        "domain-written-advocacy/institutions-and-records/advocacy_regulator_complaint_drafter.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-written-advocacy/accounts-and-billing/advocacy_subscription_cancellation_request.md",
       "filename": "advocacy_subscription_cancellation_request.md",
       "title": "Subscription Cancellation Request — Cancel in Writing and Get It Confirmed",
@@ -174285,6 +176407,70 @@
         "domain-written-advocacy/accounts-and-billing/advocacy_account_closure_request.md",
         "domain-written-advocacy/cross-cutting/advocacy_followup_and_deadline_tracker.md",
         "domain-legal/personal-self-advocacy/consumer-scams/legalprep_refund_chargeback_dispute_preparer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-written-advocacy/institutions-and-records/advocacy_tax_penalty_relief_request.md",
+      "filename": "advocacy_tax_penalty_relief_request.md",
+      "title": "Tax Penalty Relief Request — Ask a Tax Authority to Remove or Reduce a Penalty",
+      "domain": "written-advocacy",
+      "category": "advocacy",
+      "description": "[SELF-SUBMIT] Help an individual taxpayer draft THEIR OWN written request asking a tax authority to remove or reduce a penalty on a notice — quoting the notice verbatim, stating the circumstances and compliance history factually, and mapping them to relief criteria the user has read in the authority's OWN published guidance rather than to rules supplied from memory. Screens for enforcement action, professional-representation triggers, and deadlines first. Does NOT cite tax code, name or describe relief programmes as rules, state eligibility, deadlines, or interest treatment, compute tax, predict the outcome, or invent notice details. Distinct from advocacy_fee_waiver_request (private-sector goodwill) and domain-legal/tax/ (professional-side). Not tax or legal advice.",
+      "techniques": [
+        "CM-01",
+        "CM-02",
+        "DS-21",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "written-advocacy",
+        "self-advocacy",
+        "tax",
+        "penalty-relief",
+        "self-submit",
+        "government"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-written-advocacy/financial-hardship/advocacy_fee_waiver_request.md",
+        "domain-written-advocacy/institutions-and-records/advocacy_benefits_denial_appeal.md",
+        "domain-written-advocacy/cross-cutting/advocacy_correspondence_log_builder.md",
+        "domain-written-advocacy/financial-hardship/advocacy_payment_arrangement_proposal.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-written-advocacy/accounts-and-billing/advocacy_travel_disruption_refund_request.md",
+      "filename": "advocacy_travel_disruption_refund_request.md",
+      "title": "Travel Disruption Refund Request — Cancelled, Delayed, or Changed Trips in Writing",
+      "domain": "written-advocacy",
+      "category": "advocacy",
+      "description": "[SELF-SUBMIT] Help a person draft THEIR OWN written refund and expense request to an airline, rail or coach operator, cruise line, tour operator, or booking platform after a cancellation, long delay, schedule change, downgrade, or denied boarding — building a timestamped disruption timeline, separating the fare refund from out-of-pocket expenses and any separate compensation question, and asking the carrier to state its own policy in writing. Does NOT cite passenger-rights regulation or any compensation scheme as authority, state an eligibility rule, amount, or deadline, name an enforcement body, predict the outcome, or invent booking details. Distinct from legalprep_refund_chargeback_dispute_preparer (card-issuer chargeback) and advocacy_recurring_charge_dispute (subscriptions). Not legal advice.",
+      "techniques": [
+        "CM-01",
+        "RT-05",
+        "ST-02",
+        "ST-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "written-advocacy",
+        "self-advocacy",
+        "travel",
+        "refund",
+        "self-submit",
+        "consumer"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/personal-self-advocacy/consumer-scams/legalprep_refund_chargeback_dispute_preparer.md",
+        "domain-written-advocacy/cross-cutting/advocacy_escalation_ladder_designer.md",
+        "domain-written-advocacy/cross-cutting/advocacy_response_analyzer.md",
+        "domain-written-advocacy/institutions-and-records/advocacy_regulator_complaint_drafter.md"
       ],
       "has_frontmatter": true
     },

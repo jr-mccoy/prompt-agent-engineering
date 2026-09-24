@@ -10,6 +10,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Coverage Wave 4: 59 prompts adding depth to 11 thin domains** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **Where they went:**
+    - HR: career ladder, promotion case, engagement survey, reduction in force, succession, pay equity audit.
+    - Product management: PR/FAQ, release notes, pre-launch experiment design, stakeholder update.
+    - Risk: third-party risk, key risk indicators, bow-tie, Monte Carlo quantification, risk acceptance memo, board risk report.
+    - Research: thesis structure, mixed-methods design.
+    - Ideation: How-Might-We, Six Thinking Hats, TRIZ, morphological matrix, affinity clustering, workshop facilitation.
+    - New `domain-presentations/narrative-delivery/`: investor pitch narrative, keynote arc, hostile Q&A prep, rehearsal coach.
+    - Creative writing: romance, horror and thriller workshops; TV pilot and series bible; comedy; continuity audit.
+    - Voice UI: SSML/TTS, IVR, realtime turn-taking, human handoff, transcript QA.
+    - Written advocacy: six new letters.
+    - New `domain-advertising/campaign/`: five campaign prompts, added beyond the domain's earlier image-only scope at the user's request.
+    - Game development Phase 2: nine prompts in the new `narrative/`, `ai/` and `production/` folders and existing ones.
+  - **Four candidates dropped as duplicates:** power analysis and data management plans already live in `domain-science/`; handbook policy in an employment-templates skill; line editing in the existing revision prompt.
+  - **No invented specifics.** Ad placement specs, platform rules, loot-box and COPPA rules, and tax-authority criteria are marked for verification, never asserted.
+  - **Routing regression:** scope@1 rose from 83.5% to 84.7%. Compared case by case, two cases changed their top hit: case-004 now hits its expected `discipleship` scope, and case-084 moves from FMEA to bow-tie inside `risk`. No case got worse.
+
 - **Coverage Wave 3: 103 prompts that six domain roadmaps had already specified and nobody had built.** This wave invented no scope. Each block comes from its domain's own roadmap, and that roadmap now marks it shipped ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
   - **What was built:**
     - Legal Phase 2B, 12 prompts: regulatory compliance, privacy and data, professional ethics.
