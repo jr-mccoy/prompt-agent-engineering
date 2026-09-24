@@ -14,7 +14,7 @@ tags:
   - emergency-medicine
   - vertigo
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-09-24"
 ---
 
 ## Objective
@@ -46,7 +46,7 @@ Work up the dizzy patient: classify by timing/triggers (TiTrATE), apply HINTS+ i
    - **H**ead Impulse Test (HIT): rapid 20° head turn to each side while patient fixates examiner's nose. Abnormal (with corrective saccade) → peripheral lesion (vestibular neuritis). Normal HIT in continuously vertiginous patient → central (stroke).
    - **N**ystagmus: unidirectional horizontal that does not change direction with gaze → peripheral. Direction-changing horizontal nystagmus or vertical/torsional nystagmus → central.
    - **T**est of **S**kew: vertical misalignment on alternate cover test → central (skew deviation).
-   - **+** new unilateral hearing loss → peripheral (AICA stroke can mimic, but at the bedside hearing loss is strongly peripheral) — though new hearing loss alone is also concerning for AICA.
+   - **+** new unilateral hearing loss → in acute vestibular syndrome, treat as a **central** sign (AICA stroke) until proven otherwise; it is the "+" in HINTS+. Labyrinthitis (neuritis + hearing loss) is diagnosed only after stroke is excluded.
    - HINTS+ "INFARCT" pattern (any one of: normal HIT, direction-changing nystagmus, skew, new hearing loss) → posterior stroke. **HINTS+ is more sensitive for stroke than early MRI** (early MRI misses 10–20% of posterior strokes within 24–48 h).
    - HINTS+ should only be performed by examiners trained in it; otherwise it is unreliable. If unsure, MRI with DWI ± repeat in 48–72 h.
 
@@ -164,7 +164,7 @@ DIFFERENTIAL (ranked):
 
 WORKUP:
 - MRI brain with DWI + MRA head/neck NOW. CT head non-contrast also acceptable initially to exclude hemorrhage if MRI delayed; CT sensitivity for posterior stroke is poor — do not rely on it to rule out.
-- Stroke labs: CBC, BMP, coags, troponin, lipid panel, HbA1c, glucose, troponin, ECG.
+- Stroke labs: CBC, BMP, coags, troponin, lipid panel, HbA1c, glucose, ECG.
 - Telemetry to evaluate for atrial fibrillation.
 - Carotid/vertebral imaging: included in CTA/MRA.
 
