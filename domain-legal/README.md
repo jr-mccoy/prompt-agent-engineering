@@ -65,13 +65,33 @@ domain-legal/
 │                                  fair-use analysis, DMCA takedown/counter-notice, OSS license compatibility
 ├── client-intake-communications/  Matter intake, engagement letters, demand letters,
 │                                  client status updates
-└── in-house-legalops/             Executive matter summaries, legal-spend anomalies,
-                                   contract playbooks, intake triage, board legal updates
+├── in-house-legalops/             Executive matter summaries, legal-spend anomalies,
+│                                  contract playbooks, intake triage, board legal updates
+├── regulatory-compliance/         Regulatory change impact, compliance program gaps, subpoena/CID
+│                                  response, internal investigations, voluntary disclosure (Phase 2B)
+├── privacy-data/                  DPIA, breach response runbook, vendor privacy review,
+│                                  records retention schedule (Phase 2B)
+├── ethics-professional-conduct/   Conflicts check, sanctions-risk premortem, unauthorized-practice
+│                                  jurisdiction assessment (Phase 2B)
+├── bankruptcy-restructuring/      Chapter selection, proof of claim, Ch. 11 plan analysis,
+│                                  automatic-stay motions, §363 sale strategy (Phase 2C)
+├── tax/                           Tax research memo, §1031 exchange, R&D credit position,
+│                                  transfer pricing, IRS IDR response (Phase 2C)
+├── immigration/                   ATTORNEY-FACING ONLY: H-1B RFE, PERM audit, I-589 declaration
+│                                  framework, EB-1A petition, naturalization eligibility (Phase 2C)
+├── criminal/                      PRACTITIONER-FACING: motion to suppress, plea offer analysis,
+│                                  sentencing memo, body-cam review, Brady/Giglio requests (Phase 2C)
+├── appellate/                     Issue selection, statement of facts, oral argument prep,
+│                                  petition for review, amicus strategy (Phase 2C)
+├── real-estate/                   Purchase agreement redline, title commitment review, lease
+│                                  abstract, zoning/use analysis, easement drafting (Phase 2C)
+└── trusts-estates/                Will and revocable trust drafting, estate-tax memo, probate
+                                   inventory/accounting, trust modification/decanting (Phase 2C)
 ```
 
 **Family law (delivered):** the planned Phase 2C `family/` set was built out as two dedicated, comprehensive subsections — `divorce/` (22 prompts) and `custody/` (20 prompts) — rather than a single five-prompt `family/` directory. The build folds in prenuptial/postnuptial drafting and enforceability, a DV protective-order petition, child-support calculation, and paternity/parentage establishment. A 2026-06-10 expansion added a full mediation set: divorce settlement/mediation prep, divorce and custody mediation brief drafters, a custody mediation impasse/package-strategy prompt, and a post-mediation term sheet/MOU drafter (plus two litigant-facing post-mediation organizers in `family-self-advocacy/`).
 
-Phase 2B will add: regulatory-compliance, privacy-data, ethics-professional-conduct. Remaining Phase 2C: bankruptcy, tax, immigration, criminal, appellate, real estate, T&E. Phase 3: cross-cutting (litigation hold, 30(b)(6) notice, subpoenas, settlement, mediation, fee petitions, post-trial motions) + field guide. Phase 4: specialized topics.
+**Phase 2B and the rest of Phase 2C (delivered 2026-09-24, coverage Wave 3):** 12 regulatory, privacy and ethics prompts and 35 specialty-practice prompts in the ten folders above. Still planned — Phase 3: cross-cutting (litigation hold, 30(b)(6) notice, subpoenas, settlement, mediation, fee petitions, post-trial motions) + field guide. Phase 4: specialized topics.
 
 ## How These Prompts Are Built
 
@@ -101,6 +121,53 @@ Every prompt includes:
 | User says | Use |
 |---|---|
 | "Plan the research before paid-database time" | `research/legal_research_plan.md` |
+| "What does this new regulation require of us?" | `regulatory-compliance/legal_regulatory_change_impact_assessment.md` |
+| "Does our compliance program actually work?" | `regulatory-compliance/legal_compliance_program_gap_analysis.md` |
+| "We received a subpoena / CID" | `regulatory-compliance/legal_subpoena_or_cid_response_strategy.md` |
+| "Plan an internal investigation" | `regulatory-compliance/legal_internal_investigation_plan.md` |
+| "Should we self-disclose?" | `regulatory-compliance/legal_voluntary_disclosure_decision_memo.md` |
+| "Is a DPIA required, and what does it say?" | `privacy-data/legal_privacy_impact_assessment_dpia.md` |
+| "We had a data breach — notification clocks" | `privacy-data/legal_data_breach_response_runbook.md` |
+| "Review this vendor's DPA / transfers" | `privacy-data/legal_vendor_privacy_assessment.md` |
+| "Design a records retention schedule" | `privacy-data/legal_records_retention_schedule_design.md` |
+| "Run a conflicts check" | `ethics-professional-conduct/legal_conflicts_check_memo.md` |
+| "Could this filing draw sanctions?" | `ethics-professional-conduct/legal_sanctions_risk_premortem.md` |
+| "Am I authorized to practice on this matter in that state?" | `ethics-professional-conduct/legal_unauthorized_practice_jurisdiction_assessment.md` |
+| "Which bankruptcy chapter, and is the debtor eligible?" | `bankruptcy-restructuring/legal_chapter_selection_and_eligibility_analysis.md` |
+| "File a proof of claim" | `bankruptcy-restructuring/legal_proof_of_claim_drafter.md` |
+| "Can this Chapter 11 plan be confirmed?" | `bankruptcy-restructuring/legal_chapter_11_plan_analysis.md` |
+| "Motion for (or opposition to) stay relief" | `bankruptcy-restructuring/legal_automatic_stay_motion_set.md` |
+| "Plan a §363 sale" | `bankruptcy-restructuring/legal_363_sale_strategy_memo.md` |
+| "Write a tax research memo" | `tax/legal_tax_research_memo.md` |
+| "Does this qualify as a §1031 exchange?" | `tax/legal_section_1031_exchange_analysis.md` |
+| "Defend our R&D credit position" | `tax/legal_rd_credit_position_memo.md` |
+| "Transfer pricing position paper" | `tax/legal_transfer_pricing_position_paper.md` |
+| "Respond to an IRS IDR" | `tax/legal_irs_idr_response.md` |
+| "Respond to an H-1B RFE" (attorney) | `immigration/legal_h1b_rfe_response.md` |
+| "Respond to a PERM audit" (attorney) | `immigration/legal_perm_audit_response.md` |
+| "Build an asylum declaration framework" (attorney) | `immigration/legal_i589_asylum_declaration_framework.md` |
+| "EB-1A extraordinary ability petition" (attorney) | `immigration/legal_eb1_extraordinary_ability_petition.md` |
+| "Is this client eligible to naturalize?" (attorney) | `immigration/legal_naturalization_eligibility_analysis.md` |
+| "Draft a motion to suppress" | `criminal/legal_motion_to_suppress.md` |
+| "Analyze this plea offer" | `criminal/legal_plea_offer_analysis.md` |
+| "Draft a sentencing memorandum" | `criminal/legal_sentencing_memorandum.md` |
+| "Review body-cam footage systematically" | `criminal/legal_bwc_review_protocol.md` |
+| "Brady / Giglio requests and tracking" | `criminal/legal_brady_giglio_review_request.md` |
+| "Which issues should we raise on appeal?" | `appellate/legal_issue_selection_memo.md` |
+| "Build the statement of facts with record cites" | `appellate/legal_statement_of_facts_builder.md` |
+| "Prepare for oral argument" | `appellate/legal_oral_argument_prep.md` |
+| "Petition for cert / discretionary review" | `appellate/legal_petition_for_review_drafter.md` |
+| "Should we file or join an amicus brief?" | `appellate/legal_amicus_brief_strategy_memo.md` |
+| "Redline this purchase agreement" | `real-estate/legal_purchase_agreement_redline.md` |
+| "Review the title commitment" | `real-estate/legal_title_commitment_review.md` |
+| "Abstract this commercial lease" | `real-estate/legal_commercial_lease_abstract.md` |
+| "Is this use allowed under zoning?" | `real-estate/legal_zoning_use_analysis.md` |
+| "Draft an easement" | `real-estate/legal_easement_drafter.md` |
+| "Draft a will" | `trusts-estates/legal_will_drafter.md` |
+| "Draft a revocable trust + funding schedule" | `trusts-estates/legal_revocable_trust_drafter.md` |
+| "Estate-tax exposure and strategy memo" | `trusts-estates/legal_estate_tax_planning_memo.md` |
+| "Probate inventory and accounting" | `trusts-estates/legal_probate_inventory_and_accounting.md` |
+| "Can we modify or decant this trust?" | `trusts-estates/legal_trust_modification_or_decanting_analysis.md` |
 | "Spot the issues in this fact pattern" | `research/legal_issue_spotter_from_facts.md` |
 | "Write me a research memo on X" | `research/legal_research_memo_irac.md` |
 | "What does this statute mean as applied to..." | `research/legal_statutory_interpretation.md` |

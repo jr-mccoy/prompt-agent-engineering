@@ -1,8 +1,10 @@
 # Expansion Roadmap — `domain-psy-ops/`
 
-**Status as of 2026-07-28:** ✅ **Wave 1 shipped in full** — **32 net-new prompts** across **6 subdirectories**, launching the domain at the scale of `domain-reasoning-craft/` (41) and `domain-negotiation/` (46). Every prompt is built and validated: 8-field frontmatter with the machine-readable `reasoning:` block, exactly six `##` headings outside the fenced output template, ~8 numbered instruction steps, an 8-item False-Positive Prevention list, a locked Output Format, and a 10-item Verification checklist closing on negative assertions.
+**Status as of 2026-09-24:** ✅ **Wave 2 shipped in full** — all **9 Wave 2 candidates** built, taking the domain from 32 to **41 prompts** across the same **6 subdirectories**. See [Wave 2 — shipped](#wave-2--shipped-2026-09-24) below.
 
-**One deliberate deviation from the house style.** Every analysis prompt (all of `technique-analysis/`, `influence-operations/`, `organizational-red-team/`, `counter-messaging/`) ends in an explicit adversarial check arguing against its own finding. The seven `personal-defense/` prompts do not, and this is a design decision rather than an omission: adversarially challenging a person working through suspected coercive control, or a parent frightened their child is being radicalized, is harmful rather than rigorous. Those prompts carry their skepticism in the mandatory ordinary-conflict / alternative reading and in the False-Positive Prevention block, and close on a next step the user chooses rather than a verdict. The three `case-studies-taxonomies/` prompts close on their subject-appropriate equivalents — the cynicism check and the outstanding-`[VERIFY]` list. All `related_prompts` resolve; all technique IDs resolve in `techniques/MASTER_TECHNIQUE_INDEX.md`.
+**Wave 1 (2026-07-28):** ✅ **32 net-new prompts** across **6 subdirectories**, launching the domain at the scale of `domain-reasoning-craft/` (41) and `domain-negotiation/` (46). Every prompt is built and validated: 8-field frontmatter with the machine-readable `reasoning:` block, exactly six `##` headings outside the fenced output template, ~8 numbered instruction steps, an 8-item False-Positive Prevention list, a locked Output Format, and a 10-item Verification checklist closing on negative assertions.
+
+**One deliberate deviation from the house style.** Every analysis prompt (all of `technique-analysis/`, `influence-operations/`, `organizational-red-team/`, `counter-messaging/`) ends in an explicit adversarial check arguing against its own finding. The ten `personal-defense/` prompts do not, and this is a design decision rather than an omission: adversarially challenging a person working through suspected coercive control, or a parent frightened their child is being radicalized, is harmful rather than rigorous. Those prompts carry their skepticism in the mandatory ordinary-conflict / alternative reading and in the False-Positive Prevention block, and close on a next step the user chooses rather than a verdict. The three `case-studies-taxonomies/` prompts close on their subject-appropriate equivalents — the cynicism check and the outstanding-`[VERIFY]` list. All `related_prompts` resolve; all technique IDs resolve in `techniques/MASTER_TECHNIQUE_INDEX.md`.
 
 **Filing convention:** `psyops_{specific_function}.md` inside the relevant subdirectory, with a single `psyops_` prefix across all six (the `domain-legal/` and `domain-negotiation/` precedent). `uncertainty: ambiguity` is a domain invariant.
 
@@ -11,13 +13,13 @@
 ## Shipped architecture
 
 ```
-domain-psy-ops/                        32 prompts   ✓
-├── technique-analysis/         7/7  ✓   name the move in one artifact
-├── influence-operations/       7/7  ✓   campaign-scale assessment
-├── personal-defense/           7/7  ✓   aimed at you (safety-gated)
-├── organizational-red-team/    4/4  ✓   findings + countermeasures only
-├── counter-messaging/          4/4  ✓   overt, attributed, truthful
-└── case-studies-taxonomies/    3/3  ✓   the teaching track
+domain-psy-ops/                        41 prompts   ✓
+├── technique-analysis/         8/8  ✓ (+1)  name the move in one artifact
+├── influence-operations/       9/9  ✓ (+2)  campaign-scale assessment
+├── personal-defense/         10/10  ✓ (+3)  aimed at you (safety-gated)
+├── organizational-red-team/    5/5  ✓ (+1)  findings + countermeasures only
+├── counter-messaging/          6/6  ✓ (+2)  overt, attributed, truthful
+└── case-studies-taxonomies/    3/3  ✓       the teaching track
 ```
 
 ---
@@ -66,21 +68,23 @@ Not a backlog — these will not be built, and the reasoning is in the README's 
 
 ---
 
-## Wave 2 candidates (not committed)
+## Wave 2 — shipped (2026-09-24)
 
-Ordered by how clearly each fills a gap the current 32 leave open. Each would need to pass the output-side constraint before being built.
+All nine candidates passed the output-side constraint and were built to the Wave 1 house style (six `##` headings, 8-item False-Positive Prevention, `reasoning:` block, 10-item Verification closing on negative assertions). Analysis prompts end in an adversarial check; the three new `personal-defense/` prompts close on a user-chosen next step and each carries a Safety Block (now eight of ten in that subdirectory).
 
-| Candidate | Subdirectory | Gap it fills |
-|---|---|---|
-| `psyops_visual_media_authenticity_assessment.md` | `technique-analysis/` | Synthetic and manipulated image/video/audio assessment as a distinct skill from provenance tracing — with heavy false-positive discipline, since detection claims are frequently wrong. |
-| `psyops_cross_platform_narrative_correlation.md` | `influence-operations/` | Assessing the same narrative across platforms with different data availability, where absence on one platform is not absence. |
-| `psyops_influence_assessment_writeup.md` | `influence-operations/` | Writing findings for publication with hedges that survive editing, headlines, and retelling — the confidence-laundering problem has its own craft. |
-| `psyops_youth_online_manipulation_guide.md` | `personal-defense/` | Grooming, coercion, and financial sextortion patterns aimed at minors, with heavy safety routing. Would need child-safety review and cross-linking to `domain-parenting/`. |
-| `psyops_elder_targeted_fraud_recognition.md` | `personal-defense/` | Approaches specifically built for older adults, and the family-conversation problem, which is a different design from the general pretext prompt. |
-| `psyops_workplace_influence_dynamics.md` | `personal-defense/` | Manipulation inside an employment relationship, where exit cost and power asymmetry change the analysis. Boundary check needed against `domain-personal-development/prompts/stakeholder/`. |
-| `psyops_election_integrity_communications.md` | `counter-messaging/` | Election-specific response, where timing constraints, legal limits, and the cost of error are all sharper. |
-| `psyops_internal_comms_under_attack.md` | `counter-messaging/` | Communicating with staff during an information attack, which the crisis prompt covers only as an audience-ordering step. |
-| `psyops_moderator_burnout_and_capture.md` | `organizational-red-team/` | Sustained hostile attention as an attrition strategy against moderators and community staff. |
+| Prompt | Subdirectory | Gap it fills | Guard specific to this prompt |
+|---|---|---|---|
+| `psyops_visual_media_authenticity_assessment.md` | `technique-analysis/` | Synthetic / manipulated / miscontextualized media assessment, distinct from provenance tracing | Detector scores are weak inputs, never verdicts; liar's-dividend check; hard stop on intimate imagery and anything that may depict a minor; no evasion guidance |
+| `psyops_cross_platform_narrative_correlation.md` | `influence-operations/` | Same narrative across platforms with unequal data access | Visibility map before any correlation; absence on a low-visibility platform carried as unknown |
+| `psyops_influence_assessment_writeup.md` | `influence-operations/` | Publishing findings with hedges that survive editing and retelling (confidence laundering) | Claim ledger; hedges built into grammar; pre-written headline; extraction test; right of reply |
+| `psyops_youth_online_manipulation_guide.md` | `personal-defense/` | Grooming, coercion, and sextortion aimed at minors | Recognition-level only; self-harm first; no payment, no image handling; every service looked up officially; cross-linked to `domain-parenting/`. **Human child-safety review is still recommended** before this prompt is promoted beyond the domain — the roadmap's original condition, which authoring alone cannot satisfy |
+| `psyops_elder_targeted_fraud_recognition.md` | `personal-defense/` | Approaches built for older adults, and the family-conversation problem | Dignity and independence preserved; no capacity judgments or takeover advice; secrecy-from-family as the key indicator |
+| `psyops_workplace_influence_dynamics.md` | `personal-defense/` | Manipulation inside an employment relationship, with exit cost and power asymmetry | Boundary checked against `domain-personal-development/prompts/stakeholder/` (that is navigating politics; this is recognizing manipulation); no counter-tactics, diagnoses, or covert recording |
+| `psyops_election_integrity_communications.md` | `counter-messaging/` | Election-process response under fixed deadlines and legal limits | Process-only and nonpartisan; no procedure from memory; no outcome projection or blanket security claims |
+| `psyops_internal_comms_under_attack.md` | `counter-messaging/` | Staff as the audience an attack reaches first | Targeted individuals protected before all-staff messaging; explicit line against undisclosed staff amplification |
+| `psyops_moderator_burnout_and_capture.md` | `organizational-red-team/` | Sustained hostile attention as an attrition strategy against moderators | Structure, not people; no moderator vulnerability ranking; capture read from enforcement patterns |
+
+No Wave 3 candidates are committed. Proposals are checked against the **Explicitly not gaps** table and the **Permanently out of scope** list above before anything else.
 
 ## Deliberately deferred
 

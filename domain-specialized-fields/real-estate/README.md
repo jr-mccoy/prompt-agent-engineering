@@ -33,7 +33,7 @@ contingency and the underwriting stress test.
 
 | If you need… | Go to |
 |---|---|
-| Purchase-agreement redlines, title review, zoning, easements, lease abstracts | `domain-legal/` (real-estate subfolder planned in [`domain-legal/EXPANSION_ROADMAP.md`](../../domain-legal/EXPANSION_ROADMAP.md)) |
+| Purchase-agreement redlines, title review, zoning, easements, lease abstracts | [`domain-legal/real-estate/`](../../domain-legal/real-estate/) (purchase-agreement redline, title commitment review, lease abstract, zoning/use analysis, easement drafting) |
 | Listing copy | [`domain_writing_realtor_listing.md`](../../domain-professional-writing/domain-specific/domain_writing_realtor_listing.md) |
 | Buy vs rent for your own home | [`finance_buy_vs_rent_analysis.md`](../../domain-finance/personal-finance-planning/finance_buy_vs_rent_analysis.md) |
 | Negotiation theory and bargaining outside real estate | [`domain-negotiation/`](../../domain-negotiation/README.md) |
