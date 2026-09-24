@@ -35,13 +35,14 @@ tracks (see [Which domain does this belong in?](../CLAUDE.md)):
 
 ```
 domain-product-management/
-├── prompts/      # 14 product-management prompts
+├── prompts/      # 18 product-management prompts
 ├── templates/    # PRD template
 └── README.md
 ```
 
 | Prompt | Use when |
 |---|---|
+| [`product_prfaq_working_backwards.md`](prompts/product_prfaq_working_backwards.md) | Before any PRD: a future press release and FAQ that test whether the customer would care, ending in proceed / revise / stop |
 | [`product_create_prd.md`](prompts/product_create_prd.md) | You need a PRD and want to be interrogated into it, MVP-first |
 | [`product_rigorous_prd_evaluation_and_scoring.md`](prompts/product_rigorous_prd_evaluation_and_scoring.md) | A PRD exists and you want it scored against a rubric before it ships |
 | [`product_feature_requirements_extraction.md`](prompts/product_feature_requirements_extraction.md) | You have raw stakeholder conversation notes and need structured requirements out of them |
@@ -55,6 +56,9 @@ domain-product-management/
 | [`product_user_story_splitting.md`](prompts/product_user_story_splitting.md) | A story will not fit an iteration, or refinement keeps producing "backend work" |
 | [`product_launch_readiness_gate.md`](prompts/product_launch_readiness_gate.md) | A launch date is near and you need a cross-functional go/no-go with a real no available |
 | [`product_feature_sunset_decision.md`](prompts/product_feature_sunset_decision.md) | Something should probably be removed and you need to know who depends on it first |
+| [`product_experiment_design.md`](prompts/product_experiment_design.md) | A feature experiment needs its hypothesis, metrics, MDE handoff and decision rule written down before launch (the readout after is `domain-data-analytics/experiments-and-reporting/analytics_ab_test_readout.md`) |
+| [`product_release_notes_writer.md`](prompts/product_release_notes_writer.md) | A release needs customer notes and internal support/sales notes from one change inventory, without announcing partial rollouts |
+| [`product_stakeholder_update.md`](prompts/product_stakeholder_update.md) | Your recurring update should lead with decisions needed and outcome metrics against target, not a list of what shipped |
 | [`product_pricing_experiment_matrix.md`](prompts/product_pricing_experiment_matrix.md) | You need to design pricing experiments: variables, test matrix, guardrails (moved from `domain-decision-making/` in coverage Wave 4) |
 
 ---
@@ -75,7 +79,9 @@ work breakdown. If you only want one, start with the seat you actually occupy.
 
 - **The full idea → shippable software pipeline** → [`domain-idea-to-product/`](../domain-idea-to-product/), which vendors copies of several prompts here into its stage directories
 - **Company strategy, positioning, go-to-market** → [`domain-business-strategy/`](../domain-business-strategy/)
-- **Executive briefs, proposals, status reports, business prose** → [`domain-professional-writing/business-writing/`](../domain-professional-writing/business-writing/)
+- **Executive briefs, proposals, project status reports, business prose** → [`domain-professional-writing/business-writing/`](../domain-professional-writing/business-writing/) (the product-outcome update is `product_stakeholder_update.md` here)
+- **Reading out a finished A/B test** → [`domain-data-analytics/experiments-and-reporting/`](../domain-data-analytics/experiments-and-reporting/)
+- **Developer changelogs generated from commits** → [`domain-agentic-resources/skills/developer-tools/changelog-automation/`](../domain-agentic-resources/skills/developer-tools/changelog-automation/)
 - **Board decks and presentations** → [`domain-presentations/`](../domain-presentations/)
 - **Stakeholder navigation and org politics** → [`domain-personal-development/prompts/stakeholder/`](../domain-personal-development/prompts/stakeholder/)
 - **Team delivery process, incidents, definition-of-done** → [`domain-engineering-workflows/`](../domain-engineering-workflows/)

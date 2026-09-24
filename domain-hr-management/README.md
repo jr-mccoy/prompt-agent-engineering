@@ -121,6 +121,7 @@ from them — so the posting, the loop and the scoring instrument cannot disagre
 4. DRAFT
    └─ hr_manager_writing_employee_review.md
 5. CALIBRATE
+   ├─ hr_promotion_case_writer.md          (nominations, brought into calibration)
    └─ hr_calibration_facilitator.md         (across managers)
 6. DELIVER
    └─ (1:1 conversation — see approach guide's delivery section)
