@@ -19,7 +19,7 @@ updated: "2026-09-24"
 
 ## Objective
 
-Produce a hematology consult answer to "should this patient get a thrombophilia workup?": decide whether any result would change anticoagulant choice, duration, or family counseling; order only the tests that would; time each assay so it is interpretable; and state the management consequence of each possible result. Distinct from `pharmacology/medicine_anticoagulation_decision_support.md` and `pharm_doac_selection_by_profile.md`, which choose and dose the anticoagulant once the indication is settled — this prompt decides what testing is worth doing and how it reshapes that indication.
+Produce a hematology consult answer to "should this patient get a thrombophilia workup?": decide whether any result would change anticoagulant choice, duration, or family counseling; order only the tests that would; time each assay so it is interpretable; and state the management consequence of each possible result. Distinct from `pharmacology/medicine_anticoagulation_decision_support.md` and `pharmacology/pharm_doac_selection_by_profile.md`, which choose and dose the anticoagulant once the indication is settled — this prompt decides what testing is worth doing and how it reshapes that indication.
 
 ## Inputs
 
