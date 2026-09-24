@@ -56,7 +56,7 @@ in one meeting instead of three.
 - You want a will, trust, power of attorney or advance directive written or checked — that is
   an attorney's work. This prompt drafts none of them and does not interpret existing ones.
 - You are deciding care for a parent — `personal_caring_for_aging_parent.md`.
-- A death has already happened and you are handling the admin — `domain-productivity/home-life/home_after_a_death_admin_checklist.md`.
+- A death has already happened and you are handling the admin — `domain-productivity/home-life/home_after_death_admin_checklist.md`.
 
 **Boundary (hard):** No document language, no statements about what the law requires or allows,
 no tax figures or thresholds. Role names (executor, agent, guardian, trustee) vary by

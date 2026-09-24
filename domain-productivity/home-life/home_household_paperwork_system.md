@@ -42,7 +42,7 @@ you could not be asked.
 - You want to know whether your will, beneficiary designations and titling are consistent —
   `domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md`.
 - Your problem is tasks and to-dos piling up, not documents — `domain-productivity/bottlenecks/bottleneck_capture_triage_system_design.md`.
-- Someone has died and you need the admin sequence — `home_after_a_death_admin_checklist.md`
+- Someone has died and you need the admin sequence — `home_after_death_admin_checklist.md`
   (it uses this system's "where things are" sheet if it exists).
 
 **Audience:** Any adult running a household, alone or with a partner. Works with paper-only,
@@ -189,4 +189,4 @@ Accountant: T. Mensah · Attorney: holds wills · Password manager: emergency ac
 
 - `../../domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md` — reviewing what the estate documents say.
 - `home_seasonal_maintenance_calendar.md` — the annual purge fits alongside seasonal tasks.
-- `home_after_a_death_admin_checklist.md` — relies on the "where things are" sheet.
+- `home_after_death_admin_checklist.md` — relies on the "where things are" sheet.

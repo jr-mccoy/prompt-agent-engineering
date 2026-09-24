@@ -31,7 +31,7 @@ Users are individuals, couples, and households at a genuine decision point — p
 - **The decision is already made and you're navigating the change** → `domain-personal-development/prompts/life-transitions/` (adjustment to a move, a new role, new parenthood, an empty nest).
 - **Negotiating the offer or deal rather than evaluating it** → `domain-negotiation/preparation/negotiation_batna_analysis.md`.
 - **Running care week to week after the decision (rota, shared costs, sibling updates, respite)** → `domain-productivity/home-life/home_family_caregiving_coordination.md` and `home_caregiver_respite_plan.md`.
-- **Inventorying existing estate documents and beneficiary designations** → `domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md`; **admin after a death** → `domain-productivity/home-life/home_after_a_death_admin_checklist.md`.
+- **Inventorying existing estate documents and beneficiary designations** → `domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md`; **admin after a death** → `domain-productivity/home-life/home_after_death_admin_checklist.md`.
 - **Acute crisis, active distress, or safety risk** → not an analysis domain at all; several prompts here explicitly refuse and defer in these conditions.
 
 ## Prompts in this domain
