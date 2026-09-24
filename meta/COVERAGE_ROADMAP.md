@@ -1,13 +1,14 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-09-24:** **Waves 1 and 2 shipped.**
+**Status as of 2026-09-24:** **Waves 1–3 shipped.**
 - **Wave 1:** 40 prompts. That is four new domains of 8 prompts each (ADR-0043)
   and `domain-personal-development/job-search/` (8). Six hollow READMEs now
   describe what actually exists.
 - **Wave 2:** 64 prompts across ten areas (§6), plus 7 identity-preserving moves.
-- **Survival:** every specified candidate survived its duplicate sweep in both
+- **Wave 3:** 103 prompts built from the domains' own roadmaps (§6).
+- **Survival:** every specified candidate survived its duplicate sweep in all three
   waves. Wave 2's candidate list had already been cut by a pre-sweep, described in §6.
-- **Remaining:** Waves 3–5 are scoped only as far as their boundaries. This document records a repository-wide audit of where the prompt
+- **Remaining:** Waves 4–5, plus the Wave 3 tiers deferred below, are scoped only as far as their boundaries. This document records a repository-wide audit of where the prompt
 corpus is thin on subject matter and sequences the fix into five waves.
 
 **Why a cross-repo roadmap.** Each domain's `EXPANSION_ROADMAP.md` plans growth
@@ -384,15 +385,31 @@ aliases. The original Wave 2 scoping table follows for the record.
 | Wave 1 overflow: account plan, KB article, voice-of-customer synthesis | `sales-customer/` | 4 | `skills/marketing/customer-research` |
 | Relocate the 5 go-to-market sales and CS files, plus the 2 `specialized-fields` legal files | via `meta/REORG_MAP.tsv` + `aliases.tsv` | 7 moves | **Done.** uids kept; old ids resolve as aliases |
 
-### Wave 3: existing backlog
+### Wave 3: existing backlog — shipped (103 prompts; committed plans only)
 
-Build from the source roadmaps in §3D, in this order:
-1. legal 2B/2C
-2. healthcare `interp_*` / `specialty_*`
-3. psychology W13
-4. children's writing
-5. psy-ops W2
-6. negotiation W2
+Each block was built from its own domain roadmap, and each roadmap now marks it shipped.
+
+| Source roadmap | Built | Prompts |
+|---|---|---|
+| `domain-legal/EXPANSION_ROADMAP.md` Phase 2B | `regulatory-compliance/`, `privacy-data/`, `ethics-professional-conduct/` | 12 |
+| `domain-legal/EXPANSION_ROADMAP.md` Phase 2C | `bankruptcy-restructuring/`, `tax/`, `immigration/`, `criminal/`, `appellate/`, `real-estate/`, `trusts-estates/` | 35 |
+| `domain-healthcare-clinical/EXPANSION_ROADMAP.md` Lane 2 | `prompts/interpretation/interp_*` (the last 14) | 14 |
+| `domain-healthcare-clinical/EXPANSION_ROADMAP.md` Lane 7 | `prompts/specialty/specialty_*` | 18 |
+| `domain-psychology/REMAINING_PROMPTS_ROADMAP.md` W13 | `client-self-use/specialty/clientself_*` | 10 |
+| `domain-psy-ops/EXPANSION_ROADMAP.md` Wave 2 | across the six existing subfolders | 9 |
+| `domain-negotiation/EXPANSION_ROADMAP.md` Wave 2 | `contexts/` (landlord, insurance, medical bill, severance, licensing) | 5 |
+
+**Deferred by the user's scope choice ("committed plans only"):**
+- legal Phase 3 (cross-cutting and field guide) and Phase 4 (stretch);
+- `domain-childrens-writing/EXPANSION_ROADMAP.md`, whose own roadmap calls its 12 items brainstorm only.
+
+**Found and fixed while building:**
+- `prompts/reasoning/workup_dizziness_vertigo.md` treated new unilateral hearing loss as a peripheral sign. That contradicted HINTS+ and the file's own worked example. It is now a central sign until stroke is excluded, and a duplicated troponin line is gone.
+- The negotiation README was missing `negotiation_hiring_offer_employer_side.md`. It is now listed.
+
+**Review before wider use:**
+- The psy-ops roadmap made child-safety review a condition for the youth-manipulation prompt. Human review is still recommended.
+- The dosing and thresholds in the healthcare worked examples are recommended for a clinician read-through.
 
 ### Wave 4: thin-domain depth
 

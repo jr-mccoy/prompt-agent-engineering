@@ -3,8 +3,8 @@
     "generated": "2026-09-24",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 5758,
-    "artifacts_with_frontmatter": 4822,
+    "total_indexed_artifacts": 5861,
+    "artifacts_with_frontmatter": 4925,
     "artifacts_without_frontmatter": 936,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 5758,
-    "prompts_with_frontmatter": 4822,
+    "total_prompts": 5861,
+    "prompts_with_frontmatter": 4925,
     "prompts_without_frontmatter": 936
   },
   "prompts": [
@@ -77921,6 +77921,110 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_ct_abdomen_pelvis.md",
+      "filename": "interp_ct_abdomen_pelvis.md",
+      "title": "CT Abdomen and Pelvis Report Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read a CT abdomen/pelvis report by protocol and organ, identify surgical emergencies (perforation, closed-loop obstruction, ischemia, rupture), grade inflammatory processes, and route incidentals to the correct follow-up.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "general-surgery",
+        "gastroenterology",
+        "radiology",
+        "ct-abdomen",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_ct_chest.md",
+      "filename": "interp_ct_chest.md",
+      "title": "CT Chest Report Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read a CT chest or CTPA report by protocol, then commit to action on PE with RV strain, parenchymal patterns, pleura, mediastinum, aorta, and Fleischner-tracked nodules and incidentals.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "pulmonology",
+        "radiology",
+        "ct-chest",
+        "pulmonary-embolism",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_ct_head.md",
+      "filename": "interp_ct_head.md",
+      "title": "CT Head Report Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Turn a non-contrast CT head (± CTA/CTP) report into a committed clinical impression: hemorrhage compartment, mass effect, ischemia, and the neurosurgical, reversal, and stroke actions each finding triggers.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "neurology",
+        "neurosurgery",
+        "radiology",
+        "ct-head",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_csf.md",
+      "filename": "interp_csf.md",
+      "title": "Cerebrospinal Fluid Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read opening pressure, cell count and differential, protein, glucose ratio, stains, PCR, and special studies to classify CSF as bacterial, viral, TB/fungal, hemorrhagic, inflammatory, neoplastic, or pressure-only — and commit to treatment.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "neurology",
+        "infectious-disease",
+        "meningitis",
+        "csf",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-healthcare-clinical/prompts/interpretation/interp_cxr_systematic_read.md",
       "filename": "interp_cxr_systematic_read.md",
       "title": "Chest X-Ray Systematic Read",
@@ -77998,6 +78102,84 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_echocardiogram_report.md",
+      "filename": "interp_echocardiogram_report.md",
+      "title": "Echocardiogram Report Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read a transthoracic echo report — LV/RV function, diastolic grading, valve severity, pulmonary pressure, pericardium — reconcile discordant measurements, and commit to heart failure, valve, or further-imaging action.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "cardiology",
+        "echocardiography",
+        "heart-failure",
+        "valvular-disease",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_iron_studies.md",
+      "filename": "interp_iron_studies.md",
+      "title": "Iron Studies Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read ferritin, serum iron, TIBC, and transferrin saturation to separate absolute iron deficiency, inflammation, mixed states, and iron overload — with context-specific thresholds (CKD, HF, inflammation), source hunting, and iron repletion dosing.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "hematology",
+        "iron-deficiency",
+        "hemochromatosis",
+        "anemia",
+        "interpretation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_lipid_panel_in_context.md",
+      "filename": "interp_lipid_panel_in_context.md",
+      "title": "Lipid Panel Interpretation in Clinical Context",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read a lipid panel for what the numbers actually mean — LDL calculation validity, non-HDL/apoB, familial phenotypes, triglyceride severity, Lp(a), secondary causes, on-treatment response — before any lipid-lowering plan is built.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "cardiology",
+        "lipids",
+        "preventive-medicine",
+        "familial-hypercholesterolemia",
+        "interpretation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-healthcare-clinical/prompts/interpretation/interp_lft_pattern.md",
       "filename": "interp_lft_pattern.md",
       "title": "Liver Function Test Pattern Interpretation",
@@ -78020,6 +78202,188 @@
       ],
       "difficulty": "intermediate",
       "updated": "2026-05-08",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_mri_brain.md",
+      "filename": "interp_mri_brain.md",
+      "title": "MRI Brain Report Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read an MRI brain report sequence by sequence (DWI/ADC, FLAIR, SWI, contrast) to classify lesions — infarct, demyelination, mass, infection, microbleeds — and commit to diagnosis-specific next steps.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "neurology",
+        "radiology",
+        "mri-brain",
+        "multiple-sclerosis",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_mri_spine.md",
+      "filename": "interp_mri_spine.md",
+      "title": "MRI Spine Report Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read an MRI spine report to separate emergencies (cord compression, cauda equina, epidural abscess) from degenerative findings, correlate levels to root and cord syndromes, and commit to surgical, steroid, antibiotic, or conservative action.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "neurosurgery",
+        "spine",
+        "radiology",
+        "mri-spine",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_microbiology_culture_sensitivity.md",
+      "filename": "interp_microbiology_culture_sensitivity.md",
+      "title": "Microbiology Culture and Susceptibility Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read a patient's culture, Gram stain, rapid molecular, and susceptibility report — pathogen vs contaminant, resistance phenotype, site-appropriate agent — and commit to the definitive antimicrobial, dose, duration, and mandatory bundle actions.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "infectious-disease",
+        "microbiology",
+        "antimicrobial-resistance",
+        "bacteremia",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_pft_pulmonary_function.md",
+      "filename": "interp_pft_pulmonary_function.md",
+      "title": "Pulmonary Function Test Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Interpret spirometry, bronchodilator response, lung volumes, DLCO, and flow-volume loops using LLN/z-scores to classify obstruction, restriction, mixed, or isolated gas-transfer defects and commit to diagnosis and therapy.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "pulmonology",
+        "pft",
+        "spirometry",
+        "copd",
+        "interpretation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_pathology_report.md",
+      "filename": "interp_pathology_report.md",
+      "title": "Surgical Pathology Report Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read a surgical pathology or cytology report — diagnosis language, adequacy, grade, margins, nodes, pTNM, biomarkers, addenda — check radiology-pathology concordance, and commit to the treatment, testing, and surveillance each element triggers.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "oncology",
+        "pathology",
+        "cancer-staging",
+        "biomarkers",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_synovial_pleural_ascitic_fluid.md",
+      "filename": "interp_synovial_pleural_ascitic_fluid.md",
+      "title": "Synovial, Pleural, and Ascitic Fluid Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Interpret body-fluid analyses — synovial (cell count, crystals, culture), pleural (Light's criteria, pH/glucose, parapneumonic staging), and ascitic (SAAG, total protein, PMN count) — and commit to drainage, antibiotic, and diagnostic action.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "rheumatology",
+        "pulmonology",
+        "hepatology",
+        "body-fluids",
+        "interpretation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/interpretation/interp_thyroid_function.md",
+      "filename": "interp_thyroid_function.md",
+      "title": "Thyroid Function Test Interpretation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/interpretation",
+      "description": "Read TSH, free T4, T3, and thyroid antibodies as a pattern — primary vs central, overt vs subclinical, thyroiditis vs Graves, assay interference, non-thyroidal illness — and commit to diagnosis, dosing, and recheck timing.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "endocrinology",
+        "thyroid",
+        "hypothyroidism",
+        "hyperthyroidism",
+        "interpretation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -79167,7 +79531,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-09-24",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -79470,6 +79834,460 @@
       ],
       "difficulty": "intermediate",
       "updated": "2026-05-08",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_pancreatitis_severity_management.md",
+      "filename": "specialty_pancreatitis_severity_management.md",
+      "title": "Acute Pancreatitis Severity and Management",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Confirm acute pancreatitis, grade severity with the revised Atlanta classification and BISAP, find the etiology, and write the fluid, analgesia, nutrition, ERCP, antibiotic, and cholecystectomy plan through local complications.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "gastroenterology",
+        "pancreatitis",
+        "hospital-medicine",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_pharyngitis_centor.md",
+      "filename": "specialty_pharyngitis_centor.md",
+      "title": "Acute Pharyngitis: Centor/McIsaac-Guided Management",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Score acute sore throat with Centor/McIsaac (or FeverPAIN), decide test vs no-test vs treat for group A strep, screen for deep neck infection and non-strep mimics, and write the antibiotic regimen including penicillin-allergy alternatives.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "primary-care",
+        "infectious-disease",
+        "pediatrics",
+        "specialty-assessment"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_acute_vision_loss.md",
+      "filename": "specialty_acute_vision_loss.md",
+      "title": "Acute Vision Loss Assessment",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Localize acute vision loss (media, retina, optic nerve, chiasm, retrochiasmal) by laterality, pain, and duration, identify CRAO, GCA, retinal detachment, and optic neuritis, and commit to stroke-pathway, steroid, and ophthalmology timing.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "ophthalmology",
+        "neuro-ophthalmology",
+        "emergency-medicine",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_adrenal_incidentaloma.md",
+      "filename": "specialty_adrenal_incidentaloma.md",
+      "title": "Adrenal Incidentaloma Evaluation",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Evaluate an incidentally found adrenal mass on two axes — malignant potential (unenhanced HU, washout, size, heterogeneity) and hormonal function (dexamethasone suppression, metanephrines, aldosterone-renin ratio) — and commit to discharge, follow-up, or adrenalectomy.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "endocrinology",
+        "adrenal",
+        "radiology",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_cytopenia_workup.md",
+      "filename": "specialty_cytopenia_workup.md",
+      "title": "Cytopenia Workup (Thrombocytopenia, Neutropenia, Bicytopenia, Pancytopenia)",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Work up unexplained thrombocytopenia, neutropenia, or multilineage cytopenias: verify the count, catch the emergencies (TTP, HIT, APL, febrile neutropenia, HLH), classify by mechanism, order the targeted panel, and decide on marrow biopsy and treatment.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "hematology",
+        "thrombocytopenia",
+        "neutropenia",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_derm_lesion_analysis.md",
+      "filename": "specialty_derm_lesion_analysis.md",
+      "title": "Dermatologic Lesion Analysis",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Describe a single skin lesion morphologically, apply ABCDE, ugly-duckling, EFG and dermoscopic criteria, rank the neoplastic differential, and commit to monitor, biopsy technique, or urgent excision.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "dermatology",
+        "melanoma",
+        "skin-cancer",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_drug_allergy_delabeling.md",
+      "filename": "specialty_drug_allergy_delabeling.md",
+      "title": "Drug Allergy Risk Stratification and Delabeling",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Take a documented drug allergy label (penicillin first; also cephalosporin and sulfonamide antibiotic), stratify it by history and PEN-FAST, choose removal by history, direct oral challenge, skin testing, or permanent avoidance, select safe alternatives by side-chain logic, and rewrite the allergy record.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "allergy-immunology",
+        "antimicrobial-stewardship",
+        "penicillin-allergy",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_immunocompromised_fever.md",
+      "filename": "specialty_immunocompromised_fever.md",
+      "title": "Fever in the Immunocompromised Host",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Evaluate fever by type of immune defect — neutropenia (MASCC risk, empiric antipseudomonal therapy within 60 minutes), solid-organ transplant (post-transplant timeline), biologic/steroid therapy, asplenia — and write the cultures, empiric regimen, escalation, and de-escalation plan.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "infectious-disease",
+        "oncology",
+        "transplant",
+        "febrile-neutropenia",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_hiv_initial_visit_art.md",
+      "filename": "specialty_hiv_initial_visit_art.md",
+      "title": "HIV Initial Visit and ART Start",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Run the first HIV visit: confirm the diagnosis, draw the complete baseline panel, decide same-day vs deferred ART (cryptococcal/TB meningitis exceptions), apply regimen-selection logic against guideline-dependent choices, and start OI prophylaxis by CD4.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "infectious-disease",
+        "hiv",
+        "antiretroviral",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_hypercortisolism_workup.md",
+      "filename": "specialty_hypercortisolism_workup.md",
+      "title": "Hypercortisolism (Cushing Syndrome) Workup",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Establish endogenous Cushing syndrome with the right first-line tests and their confounders, localize by ACTH (pituitary MRI, IPSS, ectopic imaging, adrenal CT), and commit to surgery, medical therapy, and complication prophylaxis.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "endocrinology",
+        "cushing-syndrome",
+        "pituitary",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_ild_workup.md",
+      "filename": "specialty_ild_workup.md",
+      "title": "Interstitial Lung Disease Workup",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Work up suspected interstitial lung disease: exposure and CTD history, PFT/DLCO, HRCT pattern (UIP, probable UIP, NSIP, OP, fibrotic HP, sarcoid), serologies, BAL/biopsy decisions via multidisciplinary discussion, and antifibrotic or immunosuppressive therapy.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "pulmonology",
+        "interstitial-lung-disease",
+        "ipf",
+        "rheumatology",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_dialysis_modality_decision.md",
+      "filename": "specialty_dialysis_modality_decision.md",
+      "title": "Kidney Replacement Therapy Modality Decision",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Plan kidney replacement for advancing CKD: time preparation by KFRE risk, decide when to start (symptoms, not an eGFR number), and match the patient to preemptive transplant, peritoneal dialysis, home or in-center hemodialysis, or conservative kidney management, with access planning.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "nephrology",
+        "dialysis",
+        "ckd",
+        "shared-decision-making",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_autoimmune_workup_ana.md",
+      "filename": "specialty_autoimmune_workup_ana.md",
+      "title": "Positive ANA and Systemic Autoimmune Workup",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Interpret an ANA by titer and HEp-2 pattern against pretest probability, order the right follow-on autoantibodies and organ screens, and reach a committed disease call (SLE, Sjögren, SSc, myositis, MCTD, drug-induced) or a stop-testing decision.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "rheumatology",
+        "autoimmune",
+        "ana",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_solitary_pulmonary_nodule_fleischner.md",
+      "filename": "specialty_solitary_pulmonary_nodule_fleischner.md",
+      "title": "Pulmonary Nodule Management (Fleischner 2017)",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Manage an incidental pulmonary nodule: confirm Fleischner applicability, measure and classify (solid, ground-glass, part-solid; single vs multiple), estimate malignancy risk, and commit to surveillance CT, PET-CT, biopsy, or resection with intervals.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "pulmonology",
+        "radiology",
+        "pulmonary-nodule",
+        "lung-cancer",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_red_eye_workup.md",
+      "filename": "specialty_red_eye_workup.md",
+      "title": "Red Eye Workup",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Separate benign red eye (conjunctivitis, subconjunctival hemorrhage, blepharitis, episcleritis) from sight-threatening causes (keratitis, uveitis, angle closure, scleritis, orbital cellulitis, chemical injury) and commit to treatment and ophthalmology timing.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "ophthalmology",
+        "emergency-medicine",
+        "primary-care",
+        "specialty-assessment"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_thrombophilia_workup.md",
+      "filename": "specialty_thrombophilia_workup.md",
+      "title": "Thrombophilia Workup (Inherited and Acquired)",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Decide whether thrombophilia testing will change management after VTE or unusual-site thrombosis, choose the panel, time each assay around anticoagulation and the acute event, and act on the result — antiphospholipid syndrome first.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "hematology",
+        "thrombosis",
+        "antiphospholipid-syndrome",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_thyroid_nodule_workup.md",
+      "filename": "specialty_thyroid_nodule_workup.md",
+      "title": "Thyroid Nodule Workup",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Work up a thyroid nodule from TSH through ultrasound risk stratification (ACR TI-RADS or ATA pattern), FNA size thresholds, Bethesda cytology category, and molecular testing to a committed surveillance, repeat-FNA, or surgical plan.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "endocrinology",
+        "thyroid",
+        "ultrasound",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-healthcare-clinical/prompts/specialty/specialty_vertigo_hints_exam.md",
+      "filename": "specialty_vertigo_hints_exam.md",
+      "title": "Vertigo Bedside Exam: HINTS+ and Positional Testing",
+      "domain": "healthcare-clinical",
+      "category": "domain-healthcare-clinical/specialty",
+      "description": "Decide whether HINTS+ or positional testing is the right bedside exam, grade each oculomotor component correctly, and convert the findings into a committed central-vs-peripheral call with imaging and disposition.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-01",
+        "RT-02",
+        "RT-05"
+      ],
+      "keywords": [
+        "neurology",
+        "neuro-otology",
+        "emergency-medicine",
+        "specialty-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94263,6 +95081,440 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/appellate/legal_amicus_brief_strategy_memo.md",
+      "filename": "legal_amicus_brief_strategy_memo.md",
+      "title": "Amicus Brief Strategy Memo — Angle, Coordination, Anti-Redundancy, and Signal Value",
+      "domain": "legal",
+      "category": "legal/appellate",
+      "description": "Plan an amicus curiae brief at the petition or merits stage: whether to file at all, which distinct angle the amicus can add, how to coordinate with the supported party and other amici without duplicating arguments, what signal the amicus's identity sends, and the filing mechanics (consent or leave, timing, disclosure) as the user verifies them.",
+      "techniques": [
+        "ST-01",
+        "RT-02",
+        "DS-01",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "appellate",
+        "amicus-curiae",
+        "brief-strategy",
+        "coalition",
+        "supreme-court"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/appellate/legal_petition_for_review_drafter.md",
+        "domain-legal/appellate/legal_issue_selection_memo.md",
+        "domain-legal/research/legal_jurisdiction_split_analysis.md",
+        "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/appellate/legal_issue_selection_memo.md",
+      "filename": "legal_issue_selection_memo.md",
+      "title": "Appellate Issue Selection Memo — Preservation, Standard of Review, Strength, and Narrative Fit",
+      "domain": "legal",
+      "category": "legal/appellate",
+      "description": "Screen every candidate appellate issue from a trial record for preservation, standard of review, harmless-error exposure, merits strength, and fit with a single appellate narrative — then recommend which issues to raise, lead with, or drop, citing the record and only user-supplied authority.",
+      "techniques": [
+        "ST-01",
+        "RT-02",
+        "DS-01",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "appellate",
+        "issue-selection",
+        "preservation",
+        "standard-of-review",
+        "harmless-error"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/appellate/legal_statement_of_facts_builder.md",
+        "domain-legal/appellate/legal_petition_for_review_drafter.md",
+        "domain-legal/research/legal_issue_spotter_from_facts.md",
+        "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/appellate/legal_oral_argument_prep.md",
+      "filename": "legal_oral_argument_prep.md",
+      "title": "Appellate Oral Argument Prep — Question Anticipation, Concession Map, and Hot-Bench Drills",
+      "domain": "legal",
+      "category": "legal/appellate",
+      "description": "Prepare appellate counsel for oral argument: a one-sentence ask, a roadmap, an anticipated-question bank tied to the briefs and record, a concession map (what to give, what never to give, and the fallback), timed hot-bench drill rounds with a simulated panel, and a time and rebuttal strategy — using only the briefs, record, and authority supplied.",
+      "techniques": [
+        "ST-01",
+        "RP-01",
+        "QA-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "appellate",
+        "oral-argument",
+        "moot-court",
+        "hot-bench",
+        "concessions"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/appellate/legal_issue_selection_memo.md",
+        "domain-legal/appellate/legal_statement_of_facts_builder.md",
+        "domain-legal/depositions/legal_expert_deposition_prep.md",
+        "domain-legal/research/legal_precedent_comparison_table.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/appellate/legal_statement_of_facts_builder.md",
+      "filename": "legal_statement_of_facts_builder.md",
+      "title": "Appellate Statement of Facts Builder — Record-Grounded and Fairly Framed",
+      "domain": "legal",
+      "category": "legal/appellate",
+      "description": "Build the statement of the case and statement of facts for an appellate brief in which every sentence cites the record (RA/JA/ER/CT/RT or the court's designation), disputed facts are presented neutrally and in the light the standard of review requires, and persuasion comes from selection and order rather than argument or adjectives.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "IPC-07",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "appellate",
+        "statement-of-facts",
+        "record-citation",
+        "brief-writing",
+        "joint-appendix"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/appellate/legal_issue_selection_memo.md",
+        "domain-legal/appellate/legal_oral_argument_prep.md",
+        "domain-legal/litigation/legal_trial_theme_and_narrative_designer.md",
+        "domain-legal/depositions/legal_deposition_summary.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/appellate/legal_petition_for_review_drafter.md",
+      "filename": "legal_petition_for_review_drafter.md",
+      "title": "Petition for Review Drafter — Certiorari or State Supreme Court Discretionary Review",
+      "domain": "legal",
+      "category": "legal/appellate",
+      "description": "Draft a petition for a writ of certiorari or a petition for discretionary review in a state high court, tied to the court's own grant criteria: question(s) presented, reasons for granting (conflict, importance, error, vehicle), record-cited statement, and a grant-worthiness self-assessment — with no invented splits, holdings, deadlines, or rule text.",
+      "techniques": [
+        "ST-01",
+        "ST-03",
+        "DS-01",
+        "RT-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "appellate",
+        "certiorari",
+        "petition-for-review",
+        "discretionary-review",
+        "questions-presented"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/research/legal_jurisdiction_split_analysis.md",
+        "domain-legal/appellate/legal_issue_selection_memo.md",
+        "domain-legal/appellate/legal_amicus_brief_strategy_memo.md",
+        "domain-legal/research/legal_precedent_comparison_table.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/bankruptcy-restructuring/legal_automatic_stay_motion_set.md",
+      "filename": "legal_automatic_stay_motion_set.md",
+      "title": "Automatic Stay Relief Motion Set (Motion and Opposition)",
+      "domain": "legal",
+      "category": "legal/bankruptcy-restructuring",
+      "description": "Draft a motion for relief from the automatic stay or the debtor's / trustee's opposition — for cause (including lack of adequate protection), for lack of equity where the property is not necessary to an effective reorganization, or on other statutory grounds — with a burden-of-proof map, valuation evidence plan, adequate-protection alternatives, and proposed order, all without inventing hearing deadlines or case law.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "RT-05",
+        "QA-02"
+      ],
+      "keywords": [
+        "legal",
+        "bankruptcy",
+        "automatic-stay",
+        "relief-from-stay",
+        "adequate-protection",
+        "motion-practice",
+        "valuation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/bankruptcy-restructuring/legal_proof_of_claim_drafter.md",
+        "domain-legal/bankruptcy-restructuring/legal_chapter_11_plan_analysis.md",
+        "domain-legal/litigation/legal_motion_for_summary_judgment.md",
+        "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "adversarial",
+          "evidential",
+          "procedural"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": "structured",
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "document",
+          "respond"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/bankruptcy-restructuring/legal_chapter_selection_and_eligibility_analysis.md",
+      "filename": "legal_chapter_selection_and_eligibility_analysis.md",
+      "title": "Bankruptcy Chapter Selection and Eligibility Analysis",
+      "domain": "legal",
+      "category": "legal/bankruptcy-restructuring",
+      "description": "Counsel-facing analysis of whether a debtor is eligible for Chapter 7, Chapter 11, Subchapter V, or Chapter 13, and which chapter best serves the debtor's objectives — gating eligibility bars first, then comparing chapters on control, cost, discharge scope, asset retention, timeline, and creditor dynamics, with every dollar threshold and deadline marked for verification against the current Code.",
+      "techniques": [
+        "ST-01",
+        "RT-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "bankruptcy",
+        "chapter-selection",
+        "subchapter-v",
+        "means-test",
+        "eligibility",
+        "restructuring"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/research/legal_statutory_interpretation.md",
+        "domain-legal/litigation/legal_case_strategy_assessment.md",
+        "domain-finance/credit-lending/finance_workout_restructuring_options.md",
+        "domain-legal/client-intake-communications/legal_new_matter_intake_summary.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "comparative",
+          "strategic"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": [
+          "memo",
+          "matrix"
+        ],
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "assess",
+          "decide"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/bankruptcy-restructuring/legal_chapter_11_plan_analysis.md",
+      "filename": "legal_chapter_11_plan_analysis.md",
+      "title": "Chapter 11 Plan Confirmability Analysis",
+      "domain": "legal",
+      "category": "legal/bankruptcy-restructuring",
+      "description": "Test a proposed Chapter 11 or Subchapter V plan against the confirmation requirements — classification, impairment and voting math, best-interests (liquidation comparison), feasibility, cramdown (unfair discrimination and fair-and-equitable / absolute priority), and priority-claim treatment — producing a requirement-by-requirement scorecard, the objections each constituency will raise, and the plan changes that cure them.",
+      "techniques": [
+        "RT-02",
+        "DS-01",
+        "QA-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "bankruptcy",
+        "chapter-11",
+        "plan-confirmation",
+        "cramdown",
+        "absolute-priority",
+        "feasibility"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/bankruptcy-restructuring/legal_chapter_selection_and_eligibility_analysis.md",
+        "domain-legal/bankruptcy-restructuring/legal_proof_of_claim_drafter.md",
+        "domain-finance/valuation/finance_dcf_model_auditor.md",
+        "domain-finance/credit-lending/finance_workout_restructuring_options.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "adversarial",
+          "structural"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "memo",
+          "matrix"
+        ],
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "audit",
+          "assess"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/bankruptcy-restructuring/legal_proof_of_claim_drafter.md",
+      "filename": "legal_proof_of_claim_drafter.md",
+      "title": "Proof of Claim Drafter",
+      "domain": "legal",
+      "category": "legal/bankruptcy-restructuring",
+      "description": "Draft a creditor's proof of claim package — claim amount build-up, secured / priority / unsecured classification with the basis for each, supporting-documentation checklist, and an attachment narrative — while flagging bar-date, perfection, and setoff issues for verification and never inventing a priority category or a filing deadline.",
+      "techniques": [
+        "ST-03",
+        "CM-02",
+        "RT-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "bankruptcy",
+        "proof-of-claim",
+        "claims",
+        "priority",
+        "secured-claims",
+        "creditor-rights"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/bankruptcy-restructuring/legal_chapter_11_plan_analysis.md",
+        "domain-legal/bankruptcy-restructuring/legal_automatic_stay_motion_set.md",
+        "domain-finance/accounting-controllership/finance_receivables_aging_triage.md",
+        "domain-legal/contracts-transactional/legal_payment_terms_and_late_fee_review.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "evidential",
+          "taxonomic"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": "structured",
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "document",
+          "audit"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/bankruptcy-restructuring/legal_363_sale_strategy_memo.md",
+      "filename": "legal_363_sale_strategy_memo.md",
+      "title": "Section 363 Sale Strategy Memo",
+      "domain": "legal",
+      "category": "legal/bankruptcy-restructuring",
+      "description": "Strategy memo for a sale of estate assets outside a plan under Bankruptcy Code §363 — sale-versus-plan choice, stalking-horse terms and bid protections, bidding procedures, free-and-clear analysis lien by lien, credit-bid issues, good-faith purchaser protection, contract assumption and assignment, and the sale order terms each constituency will fight over — with every rule reference and deadline marked for verification.",
+      "techniques": [
+        "ST-01",
+        "RT-02",
+        "CM-02",
+        "QA-02"
+      ],
+      "keywords": [
+        "legal",
+        "bankruptcy",
+        "section-363",
+        "distressed-ma",
+        "stalking-horse",
+        "bidding-procedures",
+        "free-and-clear"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/bankruptcy-restructuring/legal_chapter_11_plan_analysis.md",
+        "domain-legal/corporate-ma/legal_due_diligence_findings_memo.md",
+        "domain-finance/mergers-acquisitions/finance_deal_financing_structure_analysis.md",
+        "domain-finance/valuation/finance_precedent_transactions_analysis.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "strategic",
+          "adversarial",
+          "structural"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "memo",
+          "structured"
+        ],
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "plan",
+          "decide"
+        ]
+      }
+    },
+    {
       "path": "domain-legal/client-intake-communications/legal_client_status_update_memo.md",
       "filename": "legal_client_status_update_memo.md",
       "title": "Client Status Update Memo",
@@ -95115,6 +96367,166 @@
         "domain-legal/corporate-ma/legal_disclosure_schedule_drafter.md",
         "domain-legal/corporate-ma/legal_board_resolution_drafter.md",
         "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/criminal/legal_bwc_review_protocol.md",
+      "filename": "legal_bwc_review_protocol.md",
+      "title": "Body-Worn Camera Review Protocol — Inconsistencies, Exculpatory Content, and Suppression Hooks",
+      "domain": "legal",
+      "category": "legal/criminal",
+      "description": "Systematically review body-worn camera (and dash-cam) footage in a criminal case: inventory and completeness check, time-synced event log, report-versus-video inconsistency table, exculpatory and impeachment content, suppression hooks, and missing-footage follow-up — grounded only in timestamps the reviewer actually logs.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "RT-05",
+        "IPC-07",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "criminal",
+        "body-worn-camera",
+        "video-evidence",
+        "impeachment",
+        "discovery-review"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/criminal/legal_motion_to_suppress.md",
+        "domain-legal/criminal/legal_brady_giglio_review_request.md",
+        "domain-legal/discovery/legal_document_review_coding_taxonomy.md",
+        "domain-legal/depositions/legal_deposition_summary.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/criminal/legal_brady_giglio_review_request.md",
+      "filename": "legal_brady_giglio_review_request.md",
+      "title": "Brady/Giglio Request and Disclosure Tracking Framework",
+      "domain": "legal",
+      "category": "legal/criminal",
+      "description": "Build a defense-side Brady/Giglio program for a criminal file: a specific, item-by-item disclosure request letter or motion, a tracker that logs each requested category through response, production, and follow-up, and a gap analysis that ties favorable-evidence categories to the case's contested elements and witnesses — without asserting materiality conclusions or inventing authority.",
+      "techniques": [
+        "ST-01",
+        "ST-03",
+        "CM-02",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "criminal",
+        "brady",
+        "giglio",
+        "discovery",
+        "impeachment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/criminal/legal_bwc_review_protocol.md",
+        "domain-legal/criminal/legal_motion_to_suppress.md",
+        "domain-legal/discovery/legal_meet_and_confer_letter.md",
+        "domain-legal/discovery/legal_privilege_log_generator.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/criminal/legal_motion_to_suppress.md",
+      "filename": "legal_motion_to_suppress.md",
+      "title": "Motion to Suppress — Fourth, Fifth, and Sixth Amendment Grounds",
+      "domain": "legal",
+      "category": "legal/criminal",
+      "description": "Draft a defense motion to suppress evidence or statements on Fourth Amendment (search/seizure), Fifth Amendment (Miranda/voluntariness), or Sixth Amendment (right to counsel) grounds — with standing, a record-cited factual basis, ground-by-ground argument, anticipated government exceptions, and an evidentiary-hearing request — using only authority the user supplies.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "CM-02",
+        "RT-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "criminal",
+        "motion-to-suppress",
+        "fourth-amendment",
+        "miranda",
+        "exclusionary-rule"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/criminal/legal_bwc_review_protocol.md",
+        "domain-legal/criminal/legal_brady_giglio_review_request.md",
+        "domain-legal/litigation/legal_motion_in_limine_set.md",
+        "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/criminal/legal_plea_offer_analysis.md",
+      "filename": "legal_plea_offer_analysis.md",
+      "title": "Plea Offer Analysis — Exposure, Collateral Consequences, and Trial Comparison",
+      "domain": "legal",
+      "category": "legal/criminal",
+      "description": "Compare a plea offer against trial for defense counsel: sentencing exposure under each path (guideline or state-grid inputs the user supplies), collateral consequences including immigration, strength-of-evidence assessment by element, and a client-communication summary — without inventing guideline values, statutory ranges, or conviction probabilities.",
+      "techniques": [
+        "ST-01",
+        "RT-02",
+        "DS-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "criminal",
+        "plea-bargaining",
+        "sentencing-exposure",
+        "collateral-consequences",
+        "immigration-consequences"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/criminal/legal_sentencing_memorandum.md",
+        "domain-legal/criminal/legal_motion_to_suppress.md",
+        "domain-legal/litigation/legal_settlement_value_range_analysis.md",
+        "domain-legal/litigation/legal_case_strategy_assessment.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/criminal/legal_sentencing_memorandum.md",
+      "filename": "legal_sentencing_memorandum.md",
+      "title": "Sentencing Memorandum — §3553(a) Factors, Guideline Objections, and Mitigation",
+      "domain": "legal",
+      "category": "legal/criminal",
+      "description": "Draft a defense (or government) sentencing memorandum that addresses the guideline calculation and objections, walks each 18 U.S.C. §3553(a) factor (or the state's sentencing factors) with record-supported facts, integrates mitigation and character letters, and requests a specific, justified sentence — with no invented guideline values, variance statistics, or case law.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "DS-01",
+        "RT-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "criminal",
+        "sentencing",
+        "mitigation",
+        "section-3553a",
+        "variance"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/criminal/legal_plea_offer_analysis.md",
+        "domain-legal/litigation/legal_trial_theme_and_narrative_designer.md",
+        "domain-legal/research/legal_research_memo_irac.md",
+        "domain-legal/client-intake-communications/legal_client_status_update_memo.md"
       ],
       "has_frontmatter": true
     },
@@ -97255,6 +98667,448 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/ethics-professional-conduct/legal_conflicts_check_memo.md",
+      "filename": "legal_conflicts_check_memo.md",
+      "title": "Conflicts Check Memo — Concurrent, Former-Client, and Imputed Conflicts with Waiver Options",
+      "domain": "legal",
+      "category": "legal/ethics-professional-conduct",
+      "description": "Analyze conflict-of-interest hits for a proposed engagement or lateral hire under the controlling jurisdiction's adopted versions of MRPC 1.7 (concurrent), 1.9 (former client), 1.10 (imputation and screening), and 1.18 (prospective clients): identify each potential conflict, test consentability, evaluate imputation and screening, and set out waiver and informed-consent options with the disclosures each requires — ending in accept / accept with consents / accept with screen / decline.",
+      "techniques": [
+        "ST-02",
+        "DS-01",
+        "CM-02",
+        "QA-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "ethics",
+        "professional-responsibility",
+        "conflicts-of-interest",
+        "mrpc",
+        "imputation",
+        "screening",
+        "informed-consent"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/client-intake-communications/legal_new_matter_intake_summary.md",
+        "domain-legal/client-intake-communications/legal_engagement_letter_drafter.md",
+        "domain-legal/ethics-professional-conduct/legal_sanctions_risk_premortem.md",
+        "domain-legal/ethics-professional-conduct/legal_unauthorized_practice_jurisdiction_assessment.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "systematic",
+          "rule_application"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "attorney",
+          "general_counsel_law_firm",
+          "conflicts_analyst"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/ethics-professional-conduct/legal_sanctions_risk_premortem.md",
+      "filename": "legal_sanctions_risk_premortem.md",
+      "title": "Sanctions Risk Pre-Mortem — Rule 11, § 1927, Inherent Power, and Fee-Shifting Exposure",
+      "domain": "legal",
+      "category": "legal/ethics-professional-conduct",
+      "description": "Before filing or continuing a position, imagine it has drawn a sanctions motion and work backward: test each factual contention, legal contention, and purpose against the certification standards in the supplied rule text (FRCP 11 or state analog), screen for conduct that could be characterized as unreasonably multiplying proceedings (28 U.S.C. § 1927), bad faith (inherent power), or triggering statutory or contractual fee-shifting, and verify every citation exists and says what the filing claims. Produces a risk register with fixes before filing.",
+      "techniques": [
+        "QA-02",
+        "RT-02",
+        "NE-10",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "ethics",
+        "professional-responsibility",
+        "sanctions",
+        "rule-11",
+        "litigation-risk",
+        "citation-verification",
+        "pre-mortem"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/litigation/legal_complaint_drafter.md",
+        "domain-legal/litigation/legal_case_strategy_assessment.md",
+        "domain-legal/litigation/legal_motion_to_dismiss_12b6.md",
+        "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "adversarial",
+          "evaluative",
+          "prospective"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "litigation_partner",
+          "firm_general_counsel"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/ethics-professional-conduct/legal_unauthorized_practice_jurisdiction_assessment.md",
+      "filename": "legal_unauthorized_practice_jurisdiction_assessment.md",
+      "title": "Unauthorized Practice Jurisdictional Assessment — Cross-Border, Remote, and In-House Practice",
+      "domain": "legal",
+      "category": "legal/ethics-professional-conduct",
+      "description": "Assess unauthorized-practice-of-law (UPL) and multijurisdictional-practice risk for a lawyer or legal team working across jurisdictions: map where the lawyer is physically located, where the client and matter sit, and which tribunal is involved; apply each host jurisdiction's supplied version of MRPC 5.5 and its pro hac vice, in-house registration, foreign-lawyer, and remote-practice rules; and identify the authorization path (temporary-practice safe harbor, admission, registration, association with local counsel) for each activity.",
+      "techniques": [
+        "DS-01",
+        "CM-03",
+        "QA-04",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "ethics",
+        "professional-responsibility",
+        "unauthorized-practice",
+        "multijurisdictional-practice",
+        "pro-hac-vice",
+        "in-house-counsel",
+        "remote-practice"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/ethics-professional-conduct/legal_conflicts_check_memo.md",
+        "domain-legal/client-intake-communications/legal_engagement_letter_drafter.md",
+        "domain-legal/research/legal_jurisdiction_split_analysis.md",
+        "domain-legal/in-house-legalops/legal_legal_intake_triage_router.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "classificatory",
+          "rule_application"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "in_house_counsel",
+          "firm_general_counsel"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/immigration/legal_eb1_extraordinary_ability_petition.md",
+      "filename": "legal_eb1_extraordinary_ability_petition.md",
+      "title": "EB-1A Extraordinary Ability Petition Builder",
+      "domain": "legal",
+      "category": "legal/immigration",
+      "description": "Attorney-facing EB-1A petition analysis and brief outline — evidence mapped to each regulatory criterion (or a one-time major internationally recognized award), per-exhibit quality scoring, comparable-evidence analysis, and a separate final-merits argument for sustained acclaim and top-of-field standing — with every regulatory and policy-manual reference marked for verification and no inflated or invented credentials.",
+      "techniques": [
+        "DS-01",
+        "RT-05",
+        "QA-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "immigration",
+        "eb-1a",
+        "extraordinary-ability",
+        "i-140",
+        "evidence-mapping",
+        "final-merits"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/immigration/legal_h1b_rfe_response.md",
+        "domain-legal/immigration/legal_perm_audit_response.md",
+        "domain-legal/research/legal_research_memo_irac.md",
+        "domain-legal/ip/legal_patent_landscape_scan.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "evidential",
+          "evaluative",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": [
+          "matrix",
+          "memo"
+        ],
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "assess",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/immigration/legal_h1b_rfe_response.md",
+      "filename": "legal_h1b_rfe_response.md",
+      "title": "H-1B Request for Evidence (RFE) Response",
+      "domain": "legal",
+      "category": "legal/immigration",
+      "description": "Attorney-facing response to an H-1B Request for Evidence — issue-by-issue decomposition of the RFE, specialty-occupation argument tied to the position's actual duties and degree requirement, bona fide employment / employer-employee and third-site evidence, LCA and prevailing-wage consistency, an exhibit plan, and a cover brief — with the response deadline taken only from the notice and every regulatory standard marked for verification against current rules and policy.",
+      "techniques": [
+        "ST-02",
+        "RT-05",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "immigration",
+        "h-1b",
+        "rfe",
+        "specialty-occupation",
+        "prevailing-wage",
+        "uscis"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/immigration/legal_perm_audit_response.md",
+        "domain-legal/immigration/legal_eb1_extraordinary_ability_petition.md",
+        "domain-legal/employment-labor/legal_wage_hour_classification_analysis.md",
+        "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "evidential",
+          "adversarial",
+          "analytic"
+        ],
+        "stakes": "critical",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "memo",
+          "structured"
+        ],
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "respond",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/immigration/legal_i589_asylum_declaration_framework.md",
+      "filename": "legal_i589_asylum_declaration_framework.md",
+      "title": "I-589 Asylum Declaration Framework",
+      "domain": "legal",
+      "category": "legal/immigration",
+      "description": "Attorney-facing framework for structuring an asylum applicant's declaration from the applicant's own account — mapping facts to the elements (harm rising to persecution, protected ground and nexus, government actor or inability/unwillingness to protect, well-founded fear, internal relocation), checking consistency with the I-589 and every prior statement, identifying corroboration, and flagging the one-year filing deadline and bars for verification — without supplying, embellishing, or suggesting facts.",
+      "techniques": [
+        "ST-03",
+        "CM-02",
+        "QA-02",
+        "QA-04"
+      ],
+      "keywords": [
+        "legal",
+        "immigration",
+        "asylum",
+        "i-589",
+        "declaration",
+        "credibility",
+        "trauma-informed"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/immigration/legal_naturalization_eligibility_analysis.md",
+        "domain-legal/depositions/legal_deposition_witness_prep_script.md",
+        "domain-legal/research/legal_research_memo_irac.md",
+        "domain-legal/litigation/legal_trial_theme_and_narrative_designer.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "evidential",
+          "structural",
+          "protective"
+        ],
+        "stakes": "critical",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "sparse",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": [
+          "structured",
+          "narrative"
+        ],
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "document",
+          "audit"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/immigration/legal_naturalization_eligibility_analysis.md",
+      "filename": "legal_naturalization_eligibility_analysis.md",
+      "title": "Naturalization Eligibility Analysis",
+      "domain": "legal",
+      "category": "legal/immigration",
+      "description": "Attorney-facing N-400 eligibility and risk analysis — lawful-admission validity, statutory period of residence, continuous residence and trip-by-trip absence analysis, physical presence, state/district residence, good moral character (statutory bars and discretionary factors), English and civics, and attachment — with a mandatory removability screen before filing and every period, bar, and test version marked for verification.",
+      "techniques": [
+        "RT-02",
+        "CM-02",
+        "QA-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "immigration",
+        "naturalization",
+        "n-400",
+        "good-moral-character",
+        "continuous-residence",
+        "removability-screen"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/immigration/legal_i589_asylum_declaration_framework.md",
+        "domain-legal/immigration/legal_eb1_extraordinary_ability_petition.md",
+        "domain-legal/client-intake-communications/legal_new_matter_intake_summary.md",
+        "domain-legal/research/legal_statutory_interpretation.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "protective",
+          "systematic"
+        ],
+        "stakes": "critical",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "assess",
+          "audit"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/immigration/legal_perm_audit_response.md",
+      "filename": "legal_perm_audit_response.md",
+      "title": "PERM Labor Certification Audit Response",
+      "domain": "legal",
+      "category": "legal/immigration",
+      "description": "Attorney-facing response to a DOL PERM audit notification — requirement-by-requirement reconstruction of the recruitment file, applicant-disposition review for lawful job-related rejections, prevailing wage and job-requirement consistency, business-necessity support, and ability-to-pay evidence — with the audit deadline taken only from the notice and every regulatory reference marked for verification.",
+      "techniques": [
+        "ST-02",
+        "RT-05",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "immigration",
+        "perm",
+        "labor-certification",
+        "audit-response",
+        "recruitment",
+        "prevailing-wage"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/immigration/legal_h1b_rfe_response.md",
+        "domain-legal/immigration/legal_eb1_extraordinary_ability_petition.md",
+        "domain-legal/employment-labor/legal_workplace_investigation_plan_and_report.md",
+        "domain-legal/discovery/legal_document_review_coding_taxonomy.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "evidential",
+          "procedural",
+          "analytic"
+        ],
+        "stakes": "critical",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "lawyer"
+        ],
+        "mode": [
+          "respond",
+          "audit"
+        ]
+      }
+    },
+    {
       "path": "domain-legal/in-house-legalops/legal_playbook_builder_for_contract_type.md",
       "filename": "legal_playbook_builder_for_contract_type.md",
       "title": "Contract Playbook Builder (Primary / Fallback / Walkaway)",
@@ -97969,6 +99823,799 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-legal/privacy-data/legal_data_breach_response_runbook.md",
+      "filename": "legal_data_breach_response_runbook.md",
+      "title": "Data Breach Legal Response Runbook — Notification Triage Across US States and International Regimes",
+      "domain": "legal",
+      "category": "legal/privacy-data",
+      "description": "Counsel's runbook for a personal-data security incident: privilege structure for the forensic work, fact-gathering against each regime's breach definition, a notification-triage matrix across US states, federal sectoral rules, and international regimes built from supplied statutory text, regulator and individual notice drafting, contractual and insurer notices, and mitigation offers. Every clock and threshold comes from supplied law or is marked [VERIFY]; none is asserted from memory.",
+      "techniques": [
+        "ST-02",
+        "ST-43",
+        "CM-02",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "privacy",
+        "data-breach",
+        "incident-response",
+        "breach-notification",
+        "regulator-notice",
+        "consumer-notice"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-risk/risk_security_incident_response_playbook.md",
+        "domain-legal/privacy-data/legal_vendor_privacy_assessment.md",
+        "domain-legal/contracts-transactional/legal_dpa_gdpr_drafter.md",
+        "domain-legal/in-house-legalops/legal_matter_summary_for_executive.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "systematic",
+          "decomposition",
+          "time_critical"
+        ],
+        "stakes": "critical",
+        "horizon": "hours_to_days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "sparse",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "privacy_counsel",
+          "in_house_counsel"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/privacy-data/legal_privacy_impact_assessment_dpia.md",
+      "filename": "legal_privacy_impact_assessment_dpia.md",
+      "title": "Privacy Impact Assessment / DPIA — Lawful Basis, Data Flows, Risk, Mitigations",
+      "domain": "legal",
+      "category": "legal/privacy-data",
+      "description": "Draft a data protection impact assessment (DPIA) or privacy impact assessment for a proposed processing operation: screening for whether one is required, systematic description and data-flow map, lawful basis and necessity/proportionality analysis, risk assessment to individuals (likelihood × severity), mitigations with residual risk, and the prior-consultation decision. Counsel-facing and jurisdiction-locked to the supplied regime.",
+      "techniques": [
+        "DS-01",
+        "RT-02",
+        "DS-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "privacy",
+        "data-protection",
+        "dpia",
+        "pia",
+        "gdpr",
+        "lawful-basis",
+        "risk-assessment"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/contracts-transactional/legal_dpa_gdpr_drafter.md",
+        "domain-legal/privacy-data/legal_vendor_privacy_assessment.md",
+        "domain-legal/privacy-data/legal_records_retention_schedule_design.md",
+        "domain-AI-ML/responsible-ai-governance/rai_gdpr_automated_decisioning_assessment.md",
+        "domain-software-engineering/analysis/security/security_privacy_by_design_architecture.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "systematic",
+          "evaluative"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "privacy_counsel",
+          "dpo"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/privacy-data/legal_records_retention_schedule_design.md",
+      "filename": "legal_records_retention_schedule_design.md",
+      "title": "Records Retention Schedule Design — Record Classes, Jurisdictions, and Legal-Hold Override",
+      "domain": "legal",
+      "category": "legal/privacy-data",
+      "description": "Design an enterprise records retention schedule: define record classes by function, attach each class's retention driver (statutory or regulatory minimum, limitation period, business need, privacy maximum) per jurisdiction from supplied sources, resolve conflicts between minimums and data-minimization limits, specify trigger events and disposition methods, and wire in the legal-hold override so no scheduled deletion touches held records. Every retention period is sourced or marked [VERIFY].",
+      "techniques": [
+        "ST-03",
+        "DS-01",
+        "CM-02",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "privacy",
+        "records-management",
+        "retention-schedule",
+        "legal-hold",
+        "data-minimization",
+        "information-governance"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/discovery/legal_ediscovery_custodian_interview.md",
+        "domain-legal/privacy-data/legal_privacy_impact_assessment_dpia.md",
+        "domain-legal/regulatory-compliance/legal_subpoena_or_cid_response_strategy.md",
+        "domain-software-engineering/mobile/ios/planning/ios_data_retention_policy_design.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "classificatory",
+          "systematic",
+          "analytic"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "cross_functional",
+        "output_format": [
+          "matrix",
+          "structured"
+        ],
+        "user_role": [
+          "attorney",
+          "privacy_counsel",
+          "records_manager"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/privacy-data/legal_vendor_privacy_assessment.md",
+      "filename": "legal_vendor_privacy_assessment.md",
+      "title": "Vendor Privacy Assessment — DPA, SCC, and Transfer Impact Review",
+      "domain": "legal",
+      "category": "legal/privacy-data",
+      "description": "Review a vendor's (processor's or service provider's) privacy paper from the customer side: role characterization, the vendor's DPA against the supplied regime's mandatory processor terms, the international-transfer mechanism and SCC module fit, the transfer impact assessment (TIA) and supplementary measures, sub-processor flow-down, and US state-law service-provider terms. Ends in accept / accept-with-changes / escalate / reject with a redline list. Reviews the vendor's paper; does not draft a DPA from scratch.",
+      "techniques": [
+        "DS-01",
+        "CM-02",
+        "RT-02",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "privacy",
+        "vendor-management",
+        "dpa",
+        "sccs",
+        "transfer-impact-assessment",
+        "sub-processors",
+        "third-party-risk"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/contracts-transactional/legal_dpa_gdpr_drafter.md",
+        "domain-legal/contracts-transactional/legal_subcontractor_flow_down_check.md",
+        "domain-legal/privacy-data/legal_privacy_impact_assessment_dpia.md",
+        "domain-risk/risk_vendor_security_questionnaire_review.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "evaluative",
+          "systematic"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "privacy_counsel",
+          "procurement_counsel"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/real-estate/legal_commercial_lease_abstract.md",
+      "filename": "legal_commercial_lease_abstract.md",
+      "title": "Commercial Lease Abstract — Key Terms, Options, Defaults, Obligations and Side-Letter Integration",
+      "domain": "legal",
+      "category": "legal/real-estate",
+      "description": "Abstract a commercial lease and every amendment, side letter, SNDA and estoppel into a pinpoint-cited record: parties and premises, term and critical dates, rent and escalations, operating-expense and tax pass-throughs, options (renewal, expansion, ROFO/ROFR, termination, purchase), use and exclusives, assignment and subletting, landlord and tenant obligations, default and cure periods, remedies, casualty and condemnation, and conflicts between documents resolved by stated precedence. Attorney/paralegal work product for acquisitions, financings and portfolio management; distinct from lease accounting (ASC 842) and from tenant self-advocacy.",
+      "techniques": [
+        "ST-03",
+        "CM-03",
+        "RT-05",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "real-estate",
+        "commercial-lease",
+        "lease-abstract",
+        "critical-dates",
+        "options",
+        "estoppel",
+        "due-diligence"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/real-estate/legal_purchase_agreement_redline.md",
+        "domain-legal/contracts-transactional/legal_clause_library_extractor.md",
+        "domain-finance/accounting-controllership/finance_lease_accounting_asc842_analysis.md",
+        "domain-legal/personal-self-advocacy/housing-landlord-tenant/legalprep_tenant_issue_documentation_organizer.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "systematic",
+          "extractive",
+          "evidential"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "table"
+        ],
+        "user_role": [
+          "attorney",
+          "paralegal",
+          "asset_manager",
+          "in_house_counsel"
+        ],
+        "mode": [
+          "extract",
+          "audit"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/real-estate/legal_easement_drafter.md",
+      "filename": "legal_easement_drafter.md",
+      "title": "Easement Drafter — Scope, Term, Maintenance, Indemnity and Recordable Form",
+      "domain": "legal",
+      "category": "legal/real-estate",
+      "description": "Draft an express easement agreement (access, utility, drainage, parking, construction/temporary, or reciprocal) from a declared grantor or grantee posture: parties and burdened/benefitted parcels, appurtenant vs. in gross, precise easement area tied to an exhibit, permitted and excluded uses, exclusivity, term and termination, relocation, maintenance and cost sharing, insurance and indemnity, lender subordination, and a recordable form checklist with every local formality marked for verification. Attorney work product; distinct from a title review that identifies the need for an easement.",
+      "techniques": [
+        "ST-01",
+        "ST-03",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "real-estate",
+        "easement",
+        "drafting",
+        "access",
+        "utility",
+        "recording",
+        "covenants-running-with-land"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/real-estate/legal_title_commitment_review.md",
+        "domain-legal/real-estate/legal_purchase_agreement_redline.md",
+        "domain-legal/contracts-transactional/legal_contract_clause_redline_targeted.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "constructive",
+          "systematic",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "risk",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "document",
+          "checklist"
+        ],
+        "user_role": [
+          "attorney",
+          "paralegal"
+        ],
+        "mode": [
+          "draft",
+          "audit"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/real-estate/legal_purchase_agreement_redline.md",
+      "filename": "legal_purchase_agreement_redline.md",
+      "title": "Purchase and Sale Agreement Redline — Buyer or Seller Posture with Risk-Tiered Comments",
+      "domain": "legal",
+      "category": "legal/real-estate",
+      "description": "Redline a commercial or investment real estate purchase and sale agreement (PSA) from a declared buyer or seller posture: deposit and its hard/soft status, due-diligence period and termination right, title and survey objection mechanics, seller deliveries, representations and their survival and cap, conditions to closing, casualty and condemnation, prorations, default remedies, 1031 cooperation and assignment — each comment tiered Critical / Material / Clean-up with a primary ask, fallback and walkaway. Attorney work product; distinct from the buyer's non-legal offer strategy in domain-specialized-fields and from general commercial-contract redlines.",
+      "techniques": [
+        "ST-02",
+        "CM-02",
+        "DS-06",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "real-estate",
+        "purchase-agreement",
+        "psa",
+        "redline",
+        "due-diligence",
+        "title",
+        "closing"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/contracts-transactional/legal_contract_review_full_redline.md",
+        "domain-legal/contracts-transactional/legal_negotiation_position_paper.md",
+        "domain-legal/real-estate/legal_title_commitment_review.md",
+        "domain-specialized-fields/real-estate/realestate_buyer_offer_strategy.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "adversarial",
+          "systematic"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "redline"
+        ],
+        "user_role": [
+          "attorney",
+          "paralegal",
+          "in_house_counsel"
+        ],
+        "mode": [
+          "audit",
+          "draft",
+          "negotiate"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/real-estate/legal_title_commitment_review.md",
+      "filename": "legal_title_commitment_review.md",
+      "title": "Title Commitment Review — Requirements, Exceptions, Endorsement Strategy and Cure Plan",
+      "domain": "legal",
+      "category": "legal/real-estate",
+      "description": "Review a title insurance commitment for a real estate acquisition or financing: check Schedule A against the deal, sort every Schedule B-I requirement by who must satisfy it and by when, classify every Schedule B-II exception (standard, survey-dependent, recorded instrument, lien, lease, unrecorded matter) against the recorded documents and survey, decide object / accept / insure-over, map endorsements to the risks that remain, and produce a dated title objection letter and cure plan. Attorney work product; distinct from the PSA redline that sets the objection mechanics and from a non-legal buyer's inspection triage.",
+      "techniques": [
+        "ST-02",
+        "RT-05",
+        "DS-06",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "real-estate",
+        "title-insurance",
+        "title-commitment",
+        "schedule-b",
+        "endorsements",
+        "survey",
+        "due-diligence"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/real-estate/legal_purchase_agreement_redline.md",
+        "domain-legal/real-estate/legal_easement_drafter.md",
+        "domain-legal/corporate-ma/legal_due_diligence_findings_memo.md",
+        "domain-specialized-fields/real-estate/realestate_inspection_report_triage.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "classificatory",
+          "evidential"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "paralegal",
+          "title_examiner"
+        ],
+        "mode": [
+          "audit",
+          "diagnose",
+          "draft"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/real-estate/legal_zoning_use_analysis.md",
+      "filename": "legal_zoning_use_analysis.md",
+      "title": "Zoning Use Analysis — Permitted, Conditional or Prohibited, with Variance and Special-Permit Posture",
+      "domain": "legal",
+      "category": "legal/real-estate",
+      "description": "Analyse whether a proposed use of a specific parcel is permitted by right, permitted with conditions or a special/conditional-use permit, allowed as a legal nonconforming use, or prohibited — working only from the ordinance text, map and overlay provisions the user supplies — then test dimensional and parking standards, identify the relief pathway (use or area variance, special permit, rezoning, text amendment) with its approval standard and procedural steps marked for verification, and state the residual risk. Attorney work product; distinct from private restrictions (title) and from non-legal site selection.",
+      "techniques": [
+        "ST-02",
+        "RT-02",
+        "QA-04",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "real-estate",
+        "zoning",
+        "land-use",
+        "variance",
+        "special-permit",
+        "nonconforming-use",
+        "entitlements"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/research/legal_statutory_interpretation.md",
+        "domain-legal/research/legal_research_plan.md",
+        "domain-legal/real-estate/legal_title_commitment_review.md",
+        "domain-legal/real-estate/legal_purchase_agreement_redline.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "hierarchical",
+          "evidential"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "memo"
+        ],
+        "user_role": [
+          "attorney",
+          "land_use_counsel",
+          "developer_counsel"
+        ],
+        "mode": [
+          "diagnose",
+          "plan"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/regulatory-compliance/legal_compliance_program_gap_analysis.md",
+      "filename": "legal_compliance_program_gap_analysis.md",
+      "title": "Compliance Program Gap Analysis — FCPA, AML, Sanctions, Antitrust",
+      "domain": "legal",
+      "category": "legal/regulatory-compliance",
+      "description": "Evaluate a corporate compliance program for a named misconduct-risk area (anti-bribery / FCPA, AML, economic sanctions and export controls, antitrust) against a user-supplied evaluation framework — design, resourcing and autonomy, and operation in practice — and produce a prioritized, owned remediation plan. Counsel-facing and privilege-aware; tests whether the program works, not whether documents exist.",
+      "techniques": [
+        "DS-01",
+        "RT-02",
+        "CM-02",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "regulatory-compliance",
+        "compliance-program",
+        "fcpa",
+        "anti-corruption",
+        "aml",
+        "sanctions",
+        "antitrust",
+        "gap-analysis"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/regulatory-compliance/legal_regulatory_change_impact_assessment.md",
+        "domain-legal/regulatory-compliance/legal_internal_investigation_plan.md",
+        "domain-legal/regulatory-compliance/legal_voluntary_disclosure_decision_memo.md",
+        "domain-finance/regulatory-compliance/finance_aml_kyc_program_designer.md",
+        "domain-finance/regulatory-compliance/finance_sanctions_screening_program.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "systematic",
+          "evaluative"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "in_house_counsel",
+          "chief_compliance_officer"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/regulatory-compliance/legal_internal_investigation_plan.md",
+      "filename": "legal_internal_investigation_plan.md",
+      "title": "Internal Investigation Plan — Privilege Framing, Collection, Witness Order, Reporting",
+      "domain": "legal",
+      "category": "legal/regulatory-compliance",
+      "description": "Plan a counsel-directed internal investigation of suspected corporate misconduct with regulatory or criminal exposure (bribery, fraud, sanctions, antitrust, accounting): who directs it and why, privilege framing, preservation and document collection, witness order and Upjohn protocol, independence and conflicts, government-contact posture, and the reporting path to the board or special committee. Plans the investigation; does not reach findings.",
+      "techniques": [
+        "ST-02",
+        "CM-02",
+        "ST-43",
+        "QA-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "regulatory-compliance",
+        "internal-investigation",
+        "privilege",
+        "upjohn",
+        "white-collar",
+        "special-committee"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/employment-labor/legal_workplace_investigation_plan_and_report.md",
+        "domain-legal/discovery/legal_ediscovery_custodian_interview.md",
+        "domain-legal/regulatory-compliance/legal_voluntary_disclosure_decision_memo.md",
+        "domain-legal/regulatory-compliance/legal_subpoena_or_cid_response_strategy.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "systematic",
+          "strategic",
+          "decomposition"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "sparse",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "attorney",
+          "in_house_counsel",
+          "board_member"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/regulatory-compliance/legal_regulatory_change_impact_assessment.md",
+      "filename": "legal_regulatory_change_impact_assessment.md",
+      "title": "Regulatory Change Impact Assessment — New Rule to Owned Remediation Plan",
+      "domain": "legal",
+      "category": "legal/regulatory-compliance",
+      "description": "Map a single new or amended rule, regulation, or agency guidance against a company's current operations: parse the rule into discrete obligations, confirm applicability and effective dates from the supplied text, identify gaps against the current state, rate each gap, and assign remediation owners and dates. Counsel-facing, cross-industry, and anchored to verbatim rule text — never to a remembered version of the rule.",
+      "techniques": [
+        "ST-02",
+        "RT-02",
+        "CM-03",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "regulatory-compliance",
+        "regulatory-change",
+        "impact-assessment",
+        "gap-analysis",
+        "remediation-plan"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/research/legal_statutory_interpretation.md",
+        "domain-legal/regulatory-compliance/legal_compliance_program_gap_analysis.md",
+        "domain-legal/in-house-legalops/legal_board_legal_update_brief.md",
+        "domain-finance/regulatory-compliance/finance_regulatory_requirement_mapper.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "systematic",
+          "decomposition"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "in_house_counsel",
+          "compliance_officer"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/regulatory-compliance/legal_subpoena_or_cid_response_strategy.md",
+      "filename": "legal_subpoena_or_cid_response_strategy.md",
+      "title": "Subpoena or Civil Investigative Demand Response Strategy",
+      "domain": "legal",
+      "category": "legal/regulatory-compliance",
+      "description": "Build a response strategy for a government subpoena, civil investigative demand (CID), or third-party subpoena: deadline and authority check, hold scope, request-by-request scope objections and negotiation positions, a phased production plan, privilege protocol, and the role assessment (target, subject, or witness) that drives posture. Works from the demand's text; never asserts objection deadlines or meet-and-confer rules that are not in the supplied rules.",
+      "techniques": [
+        "ST-02",
+        "CM-03",
+        "CM-02",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "regulatory-compliance",
+        "subpoena",
+        "civil-investigative-demand",
+        "government-investigations",
+        "document-production",
+        "privilege"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/discovery/legal_discovery_response_objections.md",
+        "domain-legal/discovery/legal_privilege_review_protocol.md",
+        "domain-legal/discovery/legal_ediscovery_custodian_interview.md",
+        "domain-legal/regulatory-compliance/legal_internal_investigation_plan.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "systematic",
+          "strategic"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "in_house_counsel"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/regulatory-compliance/legal_voluntary_disclosure_decision_memo.md",
+      "filename": "legal_voluntary_disclosure_decision_memo.md",
+      "title": "Voluntary Self-Disclosure Decision Memo",
+      "domain": "legal",
+      "category": "legal/regulatory-compliance",
+      "description": "Draft a privileged decision memo on whether, when, to whom, and how to voluntarily self-disclose potential misconduct to an enforcement authority: facts established versus open, the disclosure policy text the user supplies, the credit available and its conditions, exposure under disclose and do-not-disclose scenarios, detection likelihood, collateral consequences, timing, and structure. Frames the decision for the board; does not predict charging outcomes.",
+      "techniques": [
+        "RT-02",
+        "NE-10",
+        "QA-04",
+        "QA-02",
+        "QA-05"
+      ],
+      "keywords": [
+        "legal",
+        "regulatory-compliance",
+        "voluntary-disclosure",
+        "self-reporting",
+        "cooperation-credit",
+        "white-collar",
+        "decision-memo"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/regulatory-compliance/legal_internal_investigation_plan.md",
+        "domain-legal/regulatory-compliance/legal_compliance_program_gap_analysis.md",
+        "domain-legal/in-house-legalops/legal_matter_summary_for_executive.md",
+        "domain-legal/litigation/legal_case_strategy_assessment.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "strategic",
+          "evaluative",
+          "probabilistic"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "deep",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "attorney",
+          "in_house_counsel",
+          "board_member"
+        ]
+      }
+    },
+    {
       "path": "domain-legal/research/legal_case_brief_generator.md",
       "filename": "legal_case_brief_generator.md",
       "title": "Case Brief Generator",
@@ -98206,6 +100853,589 @@
         "domain-legal/research/legal_jurisdiction_split_analysis.md"
       ],
       "has_frontmatter": true
+    },
+    {
+      "path": "domain-legal/tax/legal_irs_idr_response.md",
+      "filename": "legal_irs_idr_response.md",
+      "title": "IRS Information Document Request (IDR) Response",
+      "domain": "legal",
+      "category": "legal/tax",
+      "description": "Plan and draft a response to an IRS Information Document Request — request-by-request scope analysis, objections to overbreadth and relevance, privilege screening (attorney-client, work product, federally authorized tax practitioner), production plan with custodians and dates, and a cover letter — keeping the examination cooperative while protecting privileged material, and marking every enforcement step and deadline for verification.",
+      "techniques": [
+        "CM-03",
+        "ST-03",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "tax",
+        "irs-examination",
+        "idr",
+        "tax-controversy",
+        "privilege",
+        "document-production"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/discovery/legal_discovery_response_objections.md",
+        "domain-legal/discovery/legal_privilege_log_generator.md",
+        "domain-legal/discovery/legal_privilege_review_protocol.md",
+        "domain-legal/tax/legal_rd_credit_position_memo.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "procedural",
+          "protective",
+          "analytic"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": "structured",
+        "user_role": [
+          "lawyer",
+          "analyst"
+        ],
+        "mode": [
+          "respond",
+          "plan"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/tax/legal_rd_credit_position_memo.md",
+      "filename": "legal_rd_credit_position_memo.md",
+      "title": "R&D Credit Position Memo (IRC §41)",
+      "domain": "legal",
+      "category": "legal/tax",
+      "description": "Counsel-grade position memo supporting (or stress-testing) a research credit claim under IRC §41 — business-component-level application of the four-part test, exclusions, qualified research expense build (wages, supplies, contract research), funded-research and substantiation analysis, refund-claim specificity, and the examination posture — with every percentage, form requirement, and §174 interaction marked for verification.",
+      "techniques": [
+        "RT-05",
+        "DS-01",
+        "QA-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "tax",
+        "rd-credit",
+        "section-41",
+        "qualified-research-expenses",
+        "substantiation",
+        "tax-controversy"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/tax-planning/finance_rd_and_credits_mapping.md",
+        "domain-legal/tax/legal_tax_research_memo.md",
+        "domain-legal/tax/legal_irs_idr_response.md",
+        "domain-legal/contracts-transactional/legal_sow_drafter.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "evidential",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "memo",
+          "matrix"
+        ],
+        "user_role": [
+          "lawyer",
+          "analyst"
+        ],
+        "mode": [
+          "audit",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/tax/legal_section_1031_exchange_analysis.md",
+      "filename": "legal_section_1031_exchange_analysis.md",
+      "title": "Section 1031 Like-Kind Exchange Analysis",
+      "domain": "legal",
+      "category": "legal/tax",
+      "description": "Counsel-facing qualification analysis for a real-property like-kind exchange under IRC §1031 — held-for-use/investment intent, like-kind real property, qualified intermediary and constructive-receipt safeguards, identification and exchange-period compliance, boot and debt relief, related-party and reverse/improvement exchange traps — producing a pass / fail / at-risk scorecard with every deadline and rule reference marked for verification.",
+      "techniques": [
+        "DS-01",
+        "ST-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "tax",
+        "section-1031",
+        "like-kind-exchange",
+        "real-estate-tax",
+        "qualified-intermediary",
+        "boot"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/tax/legal_tax_research_memo.md",
+        "domain-finance/tax-planning/finance_capital_gains_harvesting_analysis.md",
+        "domain-finance/tax-planning/finance_multi_year_tax_projection.md",
+        "domain-legal/contracts-transactional/legal_contract_review_full_redline.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "procedural",
+          "systematic"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "risk",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "lawyer",
+          "analyst"
+        ],
+        "mode": [
+          "audit",
+          "assess"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/tax/legal_tax_research_memo.md",
+      "filename": "legal_tax_research_memo.md",
+      "title": "Tax Research Memo",
+      "domain": "legal",
+      "category": "legal/tax",
+      "description": "Tax-specific research memo built on the tax authority hierarchy — Code, Treasury regulations (final, temporary, proposed), IRS published guidance, private rulings, and case law by forum — with pinpointed citations or explicit placeholders, a confidence level tied to penalty-protection standards, and currency checks for effective dates and recent legislation.",
+      "techniques": [
+        "ST-03",
+        "RT-05",
+        "CM-02",
+        "QA-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "tax",
+        "tax-research",
+        "research-memo",
+        "treasury-regulations",
+        "authority-hierarchy",
+        "penalty-protection"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/research/legal_research_memo_irac.md",
+        "domain-legal/research/legal_research_plan.md",
+        "domain-legal/research/legal_statutory_interpretation.md",
+        "domain-finance/tax-planning/finance_entity_structure_tax_comparison.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "evidential",
+          "hierarchical"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "regulated",
+        "collaboration": "solo_or_team",
+        "output_format": [
+          "memo",
+          "structured"
+        ],
+        "user_role": [
+          "lawyer",
+          "analyst"
+        ],
+        "mode": [
+          "synthesize",
+          "assess"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/tax/legal_transfer_pricing_position_paper.md",
+      "filename": "legal_transfer_pricing_position_paper.md",
+      "title": "Transfer Pricing Position Paper",
+      "domain": "legal",
+      "category": "legal/tax",
+      "description": "Transfer pricing position paper for a controlled transaction under IRC §482 and the OECD Transfer Pricing Guidelines — accurate delineation of the transaction and functional analysis, best-method / most-appropriate-method selection with rejected-method reasoning, comparables search and adjustments, arm's-length range and position within it, and documentation for penalty protection — with every regulation cite, threshold, and local-file rule marked for verification.",
+      "techniques": [
+        "RT-02",
+        "DS-01",
+        "RT-05",
+        "QA-04"
+      ],
+      "keywords": [
+        "legal",
+        "tax",
+        "transfer-pricing",
+        "section-482",
+        "oecd-guidelines",
+        "international-tax",
+        "documentation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/tax/legal_tax_research_memo.md",
+        "domain-legal/tax/legal_rd_credit_position_memo.md",
+        "domain-finance/valuation/finance_trading_comps_builder.md",
+        "domain-finance/tax-planning/finance_state_nexus_apportionment_mapper.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "comparative",
+          "evidential"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "cross_domain",
+        "collaboration": "small_team",
+        "output_format": [
+          "memo",
+          "structured"
+        ],
+        "user_role": [
+          "lawyer",
+          "analyst"
+        ],
+        "mode": [
+          "assess",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/trusts-estates/legal_estate_tax_planning_memo.md",
+      "filename": "legal_estate_tax_planning_memo.md",
+      "title": "Estate Tax Planning Memo — Exposure Analysis with Lifetime Gifting, GST, Portability and Valuation Strategies",
+      "domain": "legal",
+      "category": "legal/trusts-estates",
+      "description": "Write an attorney's estate-tax planning memo: build the gross-estate picture by asset and title, compute projected federal and state estate-tax exposure under explicitly labelled and verified assumptions (exclusion amount, rates, growth, order of deaths), then compare strategies — marital and credit-shelter or disclaimer planning, portability, annual-exclusion and lifetime gifting, GST allocation and dynasty trusts, SLATs, GRATs, ILITs, entity valuation discounts, charitable split-interest trusts — each with its tax effect, income-tax basis trade-off, control and liquidity cost, and legal risk. Every exemption amount, rate and deadline is supplied by the user or marked for verification. Distinct from a client-side financial beneficiary review.",
+      "techniques": [
+        "RT-02",
+        "DS-02",
+        "QA-04",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "trusts-estates",
+        "estate-tax",
+        "gift-tax",
+        "gst",
+        "portability",
+        "lifetime-gifting",
+        "valuation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md",
+        "domain-legal/trusts-estates/legal_revocable_trust_drafter.md",
+        "domain-legal/corporate-ma/legal_409a_or_qsbs_issue_spotter.md",
+        "domain-legal/research/legal_research_memo_irac.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "quantitative",
+          "comparative",
+          "strategic"
+        ],
+        "stakes": "high",
+        "horizon": "years",
+        "uncertainty": "risk",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "memo",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "tax_adviser",
+          "wealth_planner"
+        ],
+        "mode": [
+          "diagnose",
+          "decide",
+          "plan"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/trusts-estates/legal_probate_inventory_and_accounting.md",
+      "filename": "legal_probate_inventory_and_accounting.md",
+      "title": "Probate Inventory and Fiduciary Accounting — Court-Ready Schedules That Reconcile",
+      "domain": "legal",
+      "category": "legal/trusts-estates",
+      "description": "Prepare a probate inventory and a fiduciary accounting for an estate (or trust) administration: separate probate from non-probate assets, value each probate asset at date of death with its valuation source, then build a charge-and-discharge (or state-prescribed) accounting with receipts, gains and losses on sale, disbursements, distributions and assets on hand that reconciles to the penny, allocates between principal and income under the governing act, and flags items needing court approval or beneficiary consent. Filing deadlines, forms and allocation rules are marked for verification. Attorney/paralegal work product; distinct from the family's after-death admin checklist and from a pre-death beneficiary review.",
+      "techniques": [
+        "ST-03",
+        "OC-03",
+        "DS-02",
+        "QA-08",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "trusts-estates",
+        "probate",
+        "inventory",
+        "fiduciary-accounting",
+        "estate-administration",
+        "principal-and-income",
+        "court-filing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-productivity/home-life/home_after_death_admin_checklist.md",
+        "domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md",
+        "domain-legal/client-intake-communications/legal_client_status_update_memo.md",
+        "domain-legal/trusts-estates/legal_will_drafter.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "systematic",
+          "quantitative",
+          "evidential"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "risk",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "table"
+        ],
+        "user_role": [
+          "attorney",
+          "paralegal",
+          "fiduciary",
+          "accountant"
+        ],
+        "mode": [
+          "extract",
+          "reconcile",
+          "audit"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/trusts-estates/legal_revocable_trust_drafter.md",
+      "filename": "legal_revocable_trust_drafter.md",
+      "title": "Revocable Trust Drafter — Funding Mechanics, Successor Trustee, Distribution Standards and Tax Provisions",
+      "domain": "legal",
+      "category": "legal/trusts-estates",
+      "description": "Draft a revocable living trust agreement and its funding plan for an estate-planning attorney: settlor and trustee designation, revocation and amendment powers, administration during the settlor's lifetime and incapacity (with a defined incapacity trigger), successor trustee chain, administration at death (debts, taxes, pour-over coordination), dispositive provisions and distribution standards (HEMS, age-based, discretionary, spendthrift), marital and credit-shelter or disclaimer structure where the tax memo calls for it, trustee powers, and an asset-by-asset funding schedule. Attorney work product; distinct from the client's pre-meeting workbook and from a financial beneficiary review.",
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "trusts-estates",
+        "revocable-trust",
+        "living-trust",
+        "trust-funding",
+        "successor-trustee",
+        "distribution-standards",
+        "drafting"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/trusts-estates/legal_will_drafter.md",
+        "domain-legal/trusts-estates/legal_estate_tax_planning_memo.md",
+        "domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md",
+        "domain-personal-development/major-decisions/personal_estate_wishes_attorney_prep.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "constructive",
+          "systematic",
+          "conditional"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "document",
+          "table"
+        ],
+        "user_role": [
+          "attorney",
+          "paralegal"
+        ],
+        "mode": [
+          "draft",
+          "plan"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/trusts-estates/legal_trust_modification_or_decanting_analysis.md",
+      "filename": "legal_trust_modification_or_decanting_analysis.md",
+      "title": "Trust Modification or Decanting Analysis — Choosing the Pathway Under Controlling State Law",
+      "domain": "legal",
+      "category": "legal/trusts-estates",
+      "description": "Analyse how to change an irrevocable trust: state the problem and target terms, identify controlling law (governing-law clause, situs, place of administration), then test every pathway — powers in the instrument (amendment, trust protector, powers of appointment), non-judicial settlement agreement, consent modification or termination, judicial modification for unanticipated circumstances or administrative reasons, reformation for mistake, decanting under statute or common law, merger or division, and change of situs — against its requirements, notice and consent parties, and material-purpose limits, then screen tax consequences (GST grandfathering or exemption, gift by consenting beneficiaries, grantor-trust status, estate inclusion) and recommend a pathway. Every statute, element and deadline is supplied or marked for verification. Attorney work product.",
+      "techniques": [
+        "ST-02",
+        "RT-02",
+        "DS-01",
+        "QA-05",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "trusts-estates",
+        "irrevocable-trust",
+        "decanting",
+        "trust-modification",
+        "nonjudicial-settlement",
+        "reformation",
+        "trust-protector"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/trusts-estates/legal_revocable_trust_drafter.md",
+        "domain-legal/trusts-estates/legal_estate_tax_planning_memo.md",
+        "domain-legal/research/legal_jurisdiction_split_analysis.md",
+        "domain-legal/research/legal_statutory_interpretation.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "comparative",
+          "hierarchical"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "memo",
+          "matrix"
+        ],
+        "user_role": [
+          "attorney",
+          "trust_officer",
+          "fiduciary_counsel"
+        ],
+        "mode": [
+          "diagnose",
+          "decide"
+        ]
+      }
+    },
+    {
+      "path": "domain-legal/trusts-estates/legal_will_drafter.md",
+      "filename": "legal_will_drafter.md",
+      "title": "Will Drafter — Specific Bequests, Residuary, Pour-Over, Fiduciary Appointments and Tax Provisions",
+      "domain": "legal",
+      "category": "legal/trusts-estates",
+      "description": "Draft a last will and testament for an estate-planning attorney from a completed intake: identification and family recitals, revocation, specific and general bequests with lapse and ademption handling, tangible personal property with a memorandum where state law allows, residuary disposition (outright, to testamentary trusts, or pouring over to a revocable trust), guardian nominations for minors, executor/personal representative appointments and powers, tax-apportionment and debts clauses, and execution formalities — every state-specific rule marked for verification. Attorney work product; distinct from the client's own pre-meeting wishes workbook and from a financial beneficiary review.",
+      "techniques": [
+        "ST-03",
+        "CM-02",
+        "OC-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "legal",
+        "trusts-estates",
+        "estate-planning",
+        "will",
+        "pour-over-will",
+        "executor",
+        "guardianship",
+        "drafting"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/major-decisions/personal_estate_wishes_attorney_prep.md",
+        "domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md",
+        "domain-legal/trusts-estates/legal_revocable_trust_drafter.md",
+        "domain-legal/client-intake-communications/legal_engagement_letter_drafter.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "constructive",
+          "systematic",
+          "conditional"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "rich",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "document",
+          "checklist"
+        ],
+        "user_role": [
+          "attorney",
+          "paralegal"
+        ],
+        "mode": [
+          "draft",
+          "audit"
+        ]
+      }
     },
     {
       "path": "domain-legal/family-self-advocacy/legalprep_allegation_response_organizer.md",
@@ -107936,6 +111166,59 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-negotiation/contexts/negotiation_insurance_claim_settlement.md",
+      "filename": "negotiation_insurance_claim_settlement.md",
+      "title": "Insurance Claim Settlement — Negotiating the Amount With an Adjuster",
+      "domain": "negotiation",
+      "category": "negotiation/contexts",
+      "description": "Negotiate the value of an accepted insurance claim with an adjuster: read the policy for how loss is valued, document the loss item by item, treat the first offer as a first offer, counter with evidence line by line rather than with a total, work inside and around the adjuster's authority limit, and never sign a final release before the full loss is known. Counters the claimant failure this context produces: accepting a first offer built on the insurer's valuation method because nobody read the policy's valuation clause or itemized the loss.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-05",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "negotiation",
+        "insurance",
+        "claims",
+        "settlement",
+        "consumer"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-written-advocacy/insurance-and-medical/advocacy_insurance_claim_denial_appeal.md",
+        "domain-negotiation/at-the-table/negotiation_authority_mandate_limits.md",
+        "domain-negotiation/channels/negotiation_counteroffer_email.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "evidential",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "single_domain",
+        "collaboration": "solo",
+        "output_format": "structured",
+        "user_role": [
+          "individual",
+          "small_business"
+        ],
+        "mode": [
+          "plan",
+          "decide",
+          "respond"
+        ]
+      }
+    },
+    {
       "path": "domain-negotiation/contexts/negotiation_internal_budget_headcount.md",
       "filename": "negotiation_internal_budget_headcount.md",
       "title": "Internal Resource Negotiation — Budget and Headcount Against Peers With Equal Claim",
@@ -107993,6 +111276,113 @@
       }
     },
     {
+      "path": "domain-negotiation/contexts/negotiation_landlord_rent_and_lease_renewal.md",
+      "filename": "negotiation_landlord_rent_and_lease_renewal.md",
+      "title": "Landlord Negotiation — Rent Increases, Lease Renewals, and What a Reliable Tenant Is Worth",
+      "domain": "negotiation",
+      "category": "negotiation/contexts",
+      "description": "Negotiate with a landlord or property manager over a rent increase, a lease renewal, move-in terms, or a repair-for-term trade. Prices what turnover actually costs the landlord, builds the tenant's alternative from current comparable listings plus the full cost of moving, uses lease length and reliability as currency, and adapts to whether the counterpart is an individual owner with discretion or a managed portfolio with a pricing system. Counters the renter failure this context produces: accepting the renewal figure as a notice rather than an opening, because nobody told you the landlord's cost of losing you.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-01",
+        "QA-01"
+      ],
+      "keywords": [
+        "negotiation",
+        "housing",
+        "rent",
+        "lease-renewal",
+        "consumer"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-negotiation/preparation/negotiation_batna_analysis.md",
+        "domain-negotiation/preparation/negotiation_package_trade_design.md",
+        "domain-legal/personal-self-advocacy/housing-landlord-tenant/legalprep_tenant_issue_documentation_organizer.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "strategic",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "single_domain",
+        "collaboration": "solo_or_pair",
+        "output_format": "structured",
+        "user_role": [
+          "individual"
+        ],
+        "mode": [
+          "plan",
+          "decide",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "path": "domain-negotiation/contexts/negotiation_licensing_ip_terms.md",
+      "filename": "negotiation_licensing_ip_terms.md",
+      "title": "Licensing and IP Terms — Negotiating Scope, Exclusivity, and the Royalty Base",
+      "domain": "negotiation",
+      "category": "negotiation/contexts",
+      "description": "Negotiate the business terms of an IP, technology, content, or brand license from either side, before the lawyers draft: scope (field of use, territory, term), exclusivity and what it must be paid for, the economic structure (upfront, royalty rate and — more importantly — royalty base, minimums, milestones), sublicensing and improvements, and termination. Treats exclusivity as the most valuable and most often underpriced term. Counters the failure this context produces: fighting over the royalty rate while conceding the base, the scope, or exclusivity without performance obligations.",
+      "techniques": [
+        "ST-01",
+        "RT-02",
+        "DS-01",
+        "DS-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "negotiation",
+        "licensing",
+        "intellectual-property",
+        "royalties",
+        "deal-structure"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/contracts-transactional/legal_licensing_agreement_drafter.md",
+        "domain-negotiation/preparation/negotiation_package_trade_design.md",
+        "domain-legal/contracts-transactional/legal_negotiation_position_paper.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "strategic",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_team",
+        "output_format": "structured",
+        "user_role": [
+          "founder",
+          "executive",
+          "creator",
+          "business_development"
+        ],
+        "mode": [
+          "plan",
+          "decide",
+          "rehearse"
+        ]
+      }
+    },
+    {
       "path": "domain-negotiation/contexts/negotiation_major_purchase_bargaining.md",
       "filename": "negotiation_major_purchase_bargaining.md",
       "title": "Major Purchase Bargaining — Vehicles, Property, and One-Off Buys Against a Repeat Seller",
@@ -108038,6 +111428,60 @@
         "output_format": "structured",
         "user_role": [
           "individual"
+        ],
+        "mode": [
+          "plan",
+          "decide",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "path": "domain-negotiation/contexts/negotiation_medical_bill_reduction.md",
+      "filename": "negotiation_medical_bill_reduction.md",
+      "title": "Medical Bill Reduction — Negotiating the Balance After the Errors Are Fixed",
+      "domain": "negotiation",
+      "category": "negotiation/contexts",
+      "description": "Negotiate down a medical bill in the right order: confirm the bill is correct and insurance was applied, check financial-assistance eligibility, then negotiate the remaining balance — a self-pay or prompt-pay discount, a lump-sum settlement, or an interest-free plan — with a billing office whose front-line staff have scripted limits. Uses published price benchmarks where they exist, keeps the account out of collections while talking, and never commits to a payment you cannot keep. Counters the patient failure this context produces: negotiating a discount on a bill that was wrong, or paying on a high-interest card to make a problem go away.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "negotiation",
+        "medical-bills",
+        "healthcare-costs",
+        "payment-plans",
+        "consumer"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-written-advocacy/insurance-and-medical/advocacy_medical_bill_dispute.md",
+        "domain-written-advocacy/insurance-and-medical/advocacy_financial_assistance_charity_care_request.md",
+        "domain-negotiation/at-the-table/negotiation_authority_mandate_limits.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "procedural",
+          "strategic"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "single_domain",
+        "collaboration": "solo",
+        "output_format": "structured",
+        "user_role": [
+          "individual",
+          "family",
+          "caregiver"
         ],
         "mode": [
           "plan",
@@ -108217,6 +111661,60 @@
         "mode": [
           "diagnose",
           "respond",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "path": "domain-negotiation/contexts/negotiation_severance_package.md",
+      "filename": "negotiation_severance_package.md",
+      "title": "Severance Package Negotiation — What the Release Is Worth and What Else Is on the Table",
+      "domain": "negotiation",
+      "category": "negotiation/contexts",
+      "description": "Negotiate a severance or separation package from the employee's side, as a non-lawyer: understand that the employer is usually buying a release of claims and a clean exit, map the full set of terms that can move — amount, benefits continuation, equity and bonus treatment, reference and announcement wording, restrictive covenants, timing — use the review period rather than signing under pressure, and route the release itself to an employment lawyer. Counters the employee failure this context produces: signing the first package within days because it felt final, without asking what else was available.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-01",
+        "QA-02"
+      ],
+      "keywords": [
+        "negotiation",
+        "severance",
+        "employment",
+        "separation",
+        "career"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-legal/employment-labor/legal_employment_offer_and_separation_package.md",
+        "domain-negotiation/preparation/negotiation_leverage_audit.md",
+        "domain-negotiation/preparation/negotiation_package_trade_design.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "strategic",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_pair",
+        "output_format": "structured",
+        "user_role": [
+          "individual",
+          "employee",
+          "executive"
+        ],
+        "mode": [
+          "plan",
+          "decide",
           "rehearse"
         ]
       }
@@ -132958,6 +136456,117 @@
       }
     },
     {
+      "path": "domain-psy-ops/counter-messaging/psyops_election_integrity_communications.md",
+      "filename": "psyops_election_integrity_communications.md",
+      "title": "Election Integrity Communications — Responding to Election Falsehoods Without Becoming Part of the Contest",
+      "domain": "psy-ops",
+      "category": "psy-ops/counter-messaging",
+      "description": "Plan overt, attributed, nonpartisan communication about election processes when false claims are circulating — where to vote, how to vote, how counting works, why results change — under the sharper conditions elections impose: fixed deadlines that cannot be recovered, legal limits on who may say what and when, and a cost of error borne by voters and by trust in the result itself. Process-only by construction; never persuades on candidates, parties, or questions on the ballot.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "psy-ops",
+        "elections",
+        "counter-messaging",
+        "public-communication",
+        "nonpartisan"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psy-ops/counter-messaging/psyops_prebunking_inoculation_design.md",
+        "domain-psy-ops/counter-messaging/psyops_rumor_response_triage.md",
+        "domain-psy-ops/counter-messaging/psyops_debunk_and_correction_design.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "procedural",
+          "protective",
+          "evaluative"
+        ],
+        "stakes": "critical",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "team",
+        "output_format": "phased_communication_plan",
+        "user_role": [
+          "election_official",
+          "communications",
+          "civil_society",
+          "journalist",
+          "trust_and_safety"
+        ],
+        "mode": [
+          "design",
+          "decide",
+          "act"
+        ]
+      }
+    },
+    {
+      "path": "domain-psy-ops/counter-messaging/psyops_internal_comms_under_attack.md",
+      "filename": "psyops_internal_comms_under_attack.md",
+      "title": "Internal Communications Under Attack — Keeping Staff Informed, Safe, and Uninstrumentalized",
+      "domain": "psy-ops",
+      "category": "psy-ops/counter-messaging",
+      "description": "Plan communication with your own staff during an information attack on the organization: what they are told and when, how individuals who are named, doxxed, or harassed are protected, what staff can and cannot say externally, and the line that keeps staff from being turned into an undisclosed amplification channel. Treats staff as the audience most likely to be targeted, most likely to leak, and least often told the truth first.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "psy-ops",
+        "internal-communications",
+        "crisis-communications",
+        "staff-safety",
+        "counter-messaging"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psy-ops/counter-messaging/psyops_crisis_communication_integrity_plan.md",
+        "domain-psy-ops/organizational-red-team/psyops_personnel_targeting_exposure_review.md",
+        "domain-psy-ops/counter-messaging/psyops_rumor_response_triage.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "procedural",
+          "protective",
+          "evaluative"
+        ],
+        "stakes": "high",
+        "horizon": "immediate",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "weak",
+        "domain_complexity": "cross_domain",
+        "collaboration": "team",
+        "output_format": "internal_comms_plan_with_protections",
+        "user_role": [
+          "communications",
+          "executive",
+          "hr",
+          "security"
+        ],
+        "mode": [
+          "design",
+          "decide",
+          "act"
+        ]
+      }
+    },
+    {
       "path": "domain-psy-ops/counter-messaging/psyops_prebunking_inoculation_design.md",
       "filename": "psyops_prebunking_inoculation_design.md",
       "title": "Prebunking Design — Warning People Before the Claim Arrives",
@@ -133234,6 +136843,62 @@
       }
     },
     {
+      "path": "domain-psy-ops/influence-operations/psyops_cross_platform_narrative_correlation.md",
+      "filename": "psyops_cross_platform_narrative_correlation.md",
+      "title": "Cross-Platform Narrative Correlation — The Same Story Across Platforms You Cannot See Equally",
+      "domain": "psy-ops",
+      "category": "psy-ops/influence-operations",
+      "description": "Assess whether a narrative's appearance across several platforms reflects connected activity or independent convergence, when each platform exposes different data, at different resolutions, with different retention. Builds a visibility map before any correlation is claimed, treats absence on a low-visibility platform as unknown rather than absent, and requires cross-platform links to rest on more than shared wording and similar timing.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-01",
+        "QA-02"
+      ],
+      "keywords": [
+        "psy-ops",
+        "cross-platform",
+        "narrative-analysis",
+        "data-access",
+        "influence-operations"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psy-ops/influence-operations/psyops_narrative_lifecycle_tracker.md",
+        "domain-psy-ops/influence-operations/psyops_coordinated_inauthentic_behavior_indicators.md",
+        "domain-psy-ops/influence-operations/psyops_influence_operation_analysis.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "systems",
+          "evidential",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "weak",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_team",
+        "output_format": "visibility_map_with_graded_correlation",
+        "user_role": [
+          "analyst",
+          "researcher",
+          "trust_and_safety",
+          "journalist"
+        ],
+        "mode": [
+          "assess",
+          "map",
+          "document"
+        ]
+      }
+    },
+    {
       "path": "domain-psy-ops/influence-operations/psyops_inauthentic_account_signal_assessment.md",
       "filename": "psyops_inauthentic_account_signal_assessment.md",
       "title": "Inauthentic Account Signals — Assessing Automation Without Accusing People",
@@ -133285,6 +136950,61 @@
           "assess",
           "audit",
           "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-psy-ops/influence-operations/psyops_influence_assessment_writeup.md",
+      "filename": "psyops_influence_assessment_writeup.md",
+      "title": "Influence Assessment Write-Up — Publishing Findings With Hedges That Survive",
+      "domain": "psy-ops",
+      "category": "psy-ops/influence-operations",
+      "description": "Turn a completed influence assessment into a publishable write-up whose confidence levels survive editing, headlines, social summaries, and retelling. Addresses confidence laundering — where 'low-confidence indicators consistent with' becomes 'linked to' by the third retelling — by building the hedge into the structure of each claim rather than appending it, pre-writing the accurate headline, and testing every sentence against extraction out of context.",
+      "techniques": [
+        "ST-01",
+        "ST-03",
+        "CM-02",
+        "QA-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "psy-ops",
+        "reporting",
+        "confidence-language",
+        "publication",
+        "influence-operations"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psy-ops/influence-operations/psyops_attribution_confidence_assessment.md",
+        "domain-psy-ops/influence-operations/psyops_influence_operation_analysis.md",
+        "domain-reasoning-craft/epistemic/epistemic_evidence_quality_score.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "evaluative",
+          "evidential",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "team",
+        "output_format": "publication_draft_with_extraction_audit",
+        "user_role": [
+          "analyst",
+          "researcher",
+          "journalist",
+          "trust_and_safety"
+        ],
+        "mode": [
+          "document",
+          "audit",
+          "decide"
         ]
       }
     },
@@ -133503,6 +137223,62 @@
           "community_manager",
           "product",
           "moderator"
+        ],
+        "mode": [
+          "assess",
+          "design",
+          "decide"
+        ]
+      }
+    },
+    {
+      "path": "domain-psy-ops/organizational-red-team/psyops_moderator_burnout_and_capture.md",
+      "filename": "psyops_moderator_burnout_and_capture.md",
+      "title": "Moderator Burnout and Capture — Sustained Hostile Attention as an Attrition Strategy",
+      "domain": "psy-ops",
+      "category": "psy-ops/organizational-red-team",
+      "description": "Review how exposed a community's moderators and trust-and-safety staff are to sustained hostile attention used as an attrition strategy — harassment that wears people down until they quit, go quiet, or start appeasing the loudest faction. Assesses structure, not individuals: exposure of moderator identities, how decisions are attributed, workload and rotation, escalation and support paths, and the early signs of capture. Outputs findings and countermeasures only.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "DS-01",
+        "QA-01"
+      ],
+      "keywords": [
+        "psy-ops",
+        "moderation",
+        "trust-and-safety",
+        "staff-wellbeing",
+        "organizational-red-team"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psy-ops/organizational-red-team/psyops_community_moderation_resilience_review.md",
+        "domain-psy-ops/organizational-red-team/psyops_org_influence_threat_model.md",
+        "domain-legal/personal-self-advocacy/harassment-stalking/legalprep_digital_safety_threat_evidence_organizer.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "systems",
+          "analytic",
+          "protective",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "team",
+        "output_format": "exposure_review_with_countermeasures",
+        "user_role": [
+          "trust_and_safety",
+          "community_manager",
+          "moderator",
+          "operations"
         ],
         "mode": [
           "assess",
@@ -133783,6 +137559,60 @@
       }
     },
     {
+      "path": "domain-psy-ops/personal-defense/psyops_elder_targeted_fraud_recognition.md",
+      "filename": "psyops_elder_targeted_fraud_recognition.md",
+      "title": "Elder-Targeted Fraud — Recognizing the Approaches Built for Older Adults, and Talking About Them as Family",
+      "domain": "psy-ops",
+      "category": "psy-ops/personal-defense",
+      "description": "Help an older adult, or a family member worried about one, recognize the fraud approaches built specifically around later life — family-emergency impersonation, romance and companionship schemes, authority and tech-support impersonation, and investment or prize approaches — and handle the family-conversation problem that makes this different from general pretext defense: protecting someone without taking over their life, shaming them into silence, or treating an adult as a child.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "psy-ops",
+        "fraud",
+        "older-adults",
+        "family",
+        "personal-defense"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psy-ops/personal-defense/psyops_social_engineering_pretext_recognition.md",
+        "domain-legal/personal-self-advocacy/consumer-scams/legalprep_scam_fraud_report_preparer.md",
+        "domain-personal-development/major-decisions/personal_caring_for_aging_parent.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "protective",
+          "procedural",
+          "empathic"
+        ],
+        "stakes": "high",
+        "horizon": "immediate",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_pair",
+        "output_format": "recognition_check_with_family_plan",
+        "user_role": [
+          "individual",
+          "family",
+          "caregiver"
+        ],
+        "mode": [
+          "assess",
+          "decide",
+          "act"
+        ]
+      }
+    },
+    {
       "path": "domain-psy-ops/personal-defense/psyops_high_control_group_dynamics_assessment.md",
       "filename": "psyops_high_control_group_dynamics_assessment.md",
       "title": "High-Control Group Dynamics — Assessing Structure, Not Beliefs",
@@ -133992,6 +137822,60 @@
       }
     },
     {
+      "path": "domain-psy-ops/personal-defense/psyops_workplace_influence_dynamics.md",
+      "filename": "psyops_workplace_influence_dynamics.md",
+      "title": "Workplace Influence Dynamics — Manipulation Inside an Employment Relationship",
+      "domain": "psy-ops",
+      "category": "psy-ops/personal-defense",
+      "description": "Help someone work out whether what they are experiencing at work is manipulation — rewritten history about their performance, engineered isolation, loyalty tests, 'we're a family' pressure, shifting goalposts — or ordinary bad management, organizational politics, or honest disagreement. Accounts for what makes the workplace different: exit is costly, power is asymmetric, and the manipulator may also write your reference. Organizes observations into a record and routes legal and wellbeing concerns out.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "psy-ops",
+        "workplace",
+        "manipulation",
+        "power-asymmetry",
+        "personal-defense"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psy-ops/personal-defense/psyops_manipulation_recognition_personal.md",
+        "domain-personal-development/prompts/stakeholder/stakeholder_politics.md",
+        "domain-legal/personal-self-advocacy/workplace/legalprep_workplace_concern_documentation_organizer.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "reflective",
+          "evidential",
+          "protective"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "weak",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo",
+        "output_format": "observation_record_with_options",
+        "user_role": [
+          "employee",
+          "individual",
+          "manager"
+        ],
+        "mode": [
+          "assess",
+          "document",
+          "decide"
+        ]
+      }
+    },
+    {
       "path": "domain-psy-ops/personal-defense/psyops_concern_for_someone_radicalizing.md",
       "filename": "psyops_concern_for_someone_radicalizing.md",
       "title": "Worried About Someone — Sorting Concern from Change, and Finding Real Help",
@@ -134042,6 +137926,61 @@
           "assess",
           "route",
           "decide"
+        ]
+      }
+    },
+    {
+      "path": "domain-psy-ops/personal-defense/psyops_youth_online_manipulation_guide.md",
+      "filename": "psyops_youth_online_manipulation_guide.md",
+      "title": "Youth Online Manipulation — Recognizing Grooming, Coercion, and Sextortion Patterns Aimed at Minors",
+      "domain": "psy-ops",
+      "category": "psy-ops/personal-defense",
+      "description": "Help a parent, caregiver, educator, or young person recognize the documented patterns by which adults and organized groups manipulate minors online — grooming, coercive escalation, and financially motivated sextortion — and respond in the order that protects the child: immediate safety, no payment, evidence preserved without handling images, reporting through official channels, and a child who knows they are not in trouble. Recognition-level only; routes everything beyond recognition to child-protection professionals.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "psy-ops",
+        "child-safety",
+        "online-safety",
+        "sextortion",
+        "personal-defense"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-13-18/parenting_teen_dating_consent_conversation.md",
+        "domain-parenting/caregiver-facing/ages-9-12/parenting_social_media_first_account_protocol.md",
+        "domain-psy-ops/personal-defense/psyops_manipulation_recognition_personal.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "protective",
+          "procedural",
+          "evidential"
+        ],
+        "stakes": "critical",
+        "horizon": "immediate",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "weak",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_pair",
+        "output_format": "observation_sort_with_safety_routing",
+        "user_role": [
+          "parent",
+          "caregiver",
+          "educator",
+          "individual"
+        ],
+        "mode": [
+          "assess",
+          "route",
+          "act"
         ]
       }
     },
@@ -134432,6 +138371,62 @@
           "assess",
           "audit",
           "teach"
+        ]
+      }
+    },
+    {
+      "path": "domain-psy-ops/technique-analysis/psyops_visual_media_authenticity_assessment.md",
+      "filename": "psyops_visual_media_authenticity_assessment.md",
+      "title": "Visual Media Authenticity — Assessing Whether an Image, Video, or Audio Clip Is What It Claims",
+      "domain": "psy-ops",
+      "category": "psy-ops/technique-analysis",
+      "description": "Assess whether a specific image, video, or audio clip is authentic, manipulated, synthetic, or authentic-but-miscontextualized, with the heavy false-positive discipline this question demands: detector outputs are not verdicts, visual 'tells' age out as generators improve, and the most common deception is a real recording with a false caption. Treats 'cannot determine' as a first-class result and guards equally against the liar's dividend — dismissing genuine media as fake.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "QA-04",
+        "QA-01"
+      ],
+      "keywords": [
+        "psy-ops",
+        "synthetic-media",
+        "media-forensics",
+        "verification",
+        "technique-analysis"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psy-ops/technique-analysis/psyops_provenance_and_transmission_trace.md",
+        "domain-psy-ops/technique-analysis/psyops_statistical_and_visual_distortion_scan.md",
+        "domain-AI-ML/model-security/mlsec_model_watermarking_provenance.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "evidential",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "immediate",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "weak",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_team",
+        "output_format": "graded_authenticity_judgment",
+        "user_role": [
+          "analyst",
+          "journalist",
+          "trust_and_safety",
+          "researcher",
+          "individual"
+        ],
+        "mode": [
+          "assess",
+          "verify",
+          "document"
         ]
       }
     },
@@ -137090,6 +141085,328 @@
       "difficulty": "intermediate",
       "updated": "2026-05-08",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_caregiver_burnout_plan.md",
+      "filename": "clientself_caregiver_burnout_plan.md",
+      "title": "Caregiver Burnout — Self-Check and Sustainable-Support Plan",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "Help an unpaid family caregiver check their own burnout signals (exhaustion, resentment, withdrawal, neglected health, mood, alcohol) with a plain-language self-check that is not a diagnosis, then build a sustainable-support plan: a non-negotiable self-care floor, specific asks, respite, boundaries, and room for guilt and anticipatory grief. Routes suicidal thoughts and any urge to harm or neglect the person cared for to immediate help.",
+      "techniques": [
+        "NE-07",
+        "ST-04",
+        "DS-02",
+        "ED-04",
+        "CM-02"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "caregiver",
+        "burnout",
+        "support-plan",
+        "anticipatory-grief"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-productivity/home-life/home_caregiver_respite_plan.md",
+        "domain-personal-development/major-decisions/personal_caring_for_aging_parent.md",
+        "domain-psychology/client-self-use/symptom-understanding/clientself_anxiety_depression_burnout_differentiator.md",
+        "domain-psychology/client-self-use/grief-loss/clientself_ambiguous_loss_framework.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_chronic_pain_self_management_plan.md",
+      "filename": "clientself_chronic_pain_self_management_plan.md",
+      "title": "Chronic Pain Self-Management Plan — Pacing, ACT Overlay, Flare Plan",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "Build a personal chronic-pain self-management plan for someone with an already-assessed pain condition: activity pacing from a bad-day baseline to break the boom-bust cycle, an ACT overlay (values, defusion, willingness), and a green/amber/red flare plan. Screens for new medical red flags and suicidal thoughts first, leaves all medication decisions with the prescriber, and ends with a care-team handoff.",
+      "techniques": [
+        "ST-04",
+        "DT-02",
+        "ED-04",
+        "NE-07",
+        "QA-04"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "chronic-pain",
+        "pacing",
+        "act",
+        "flare-plan"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psychology/specialty-clinical/psychology_health_psych_chronic_pain_act_protocol.md",
+        "domain-psychology/client-self-use/specialty/clientself_chronic_illness_mental_health_plan.md",
+        "domain-psychology/client-self-use/coping-by-concern/clientself_depression_behavioral_activation_scheduler.md",
+        "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_eating_self_monitoring_with_handoff.md",
+      "filename": "clientself_eating_self_monitoring_with_handoff.md",
+      "title": "Eating Self-Monitoring — With Mandatory Clinician Handoff",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "Set up a CBT-E-style eating self-monitoring record (what, when, where, context, thoughts, and any binge/compensatory behaviour — never calories, grams, or weight targets) that exists to be reviewed with a clinician. Opens with medical and suicide-risk routing, stops if monitoring itself feeds preoccupation, and ends with a mandatory handoff to an eating-disorder-informed clinician.",
+      "techniques": [
+        "QA-08",
+        "ST-04",
+        "CM-02",
+        "NE-20"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "eating-disorders",
+        "self-monitoring",
+        "bring-to-therapist",
+        "medical-risk-routing"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psychology/specialty-clinical/psychology_eating_disorder_cbt_e_protocol.md",
+        "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md",
+        "domain-psychology/client-self-use/pre-therapy/clientself_finding_therapist_search_criteria.md",
+        "domain-health-wellness/nutrition/nutrition_eating_pattern_audit.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_faith_integrated_coping_plan.md",
+      "filename": "clientself_faith_integrated_coping_plan.md",
+      "title": "Faith- and Values-Integrated Coping Plan (Tradition-Neutral)",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "Build a coping plan that draws on the person's own faith, spiritual practice, or core values — in their tradition's own terms, or none — alongside evidence-based skills and their therapy. Distinguishes supportive from distressing religious coping (spiritual struggle), flags scrupulosity and spiritual abuse for clinician attention, never adjudicates doctrine or proselytises, and carries 988/911/ED crisis routing.",
+      "techniques": [
+        "ED-04",
+        "NE-16",
+        "ST-04",
+        "CM-02",
+        "NE-07"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "faith",
+        "spirituality",
+        "values",
+        "religious-coping",
+        "bring-to-therapist"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psychology/client-self-use/identity-transitions/clientself_religious_deconstruction_support.md",
+        "domain-psychology/client-self-use/pre-therapy/clientself_culturally_affirming_therapist_screening.md",
+        "domain-psychology/client-self-use/symptom-understanding/clientself_intrusive_thoughts_vs_ocd_signal.md",
+        "domain-psychology/client-self-use/coping-by-concern/clientself_anxiety_grounding_menu_builder.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_mens_mental_health_engagement.md",
+      "filename": "clientself_mens_mental_health_engagement.md",
+      "title": "Men's Mental Health — Lowering the Barriers to Getting Help",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "A direct, no-lecture tool for men (and anyone who relates to masculine norms around self-reliance) who suspect something is off but don't want 'therapy talk': how strain often shows up (irritability, anger, overwork, drinking, risk-taking, body symptoms), which specific barriers are in the way, the smallest credible first step, and a ready-to-send first message. Carries 988/911/ED routing and firearm means-safety, and never diagnoses.",
+      "techniques": [
+        "RP-02",
+        "NE-23",
+        "NE-07",
+        "ST-04",
+        "NE-17"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "mens-mental-health",
+        "help-seeking",
+        "stigma",
+        "means-safety"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psychology/client-self-use/pre-therapy/clientself_do_i_need_therapy_decision_aid.md",
+        "domain-psychology/client-self-use/pre-therapy/clientself_finding_therapist_search_criteria.md",
+        "domain-psychology/client-self-use/habit-lifestyle/clientself_alcohol_use_re_evaluation.md",
+        "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_chronic_illness_mental_health_plan.md",
+      "filename": "clientself_chronic_illness_mental_health_plan.md",
+      "title": "Mental-Health Plan Alongside a Chronic Illness",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "Build an ongoing mental-health plan for someone living with a diagnosed chronic illness (diabetes, MS, IBD, lupus, heart disease, long COVID, and others): mood-focused tracking that separates mood from overlapping illness symptoms, a stressor map, coping matched to what is and isn't controllable, a flare-and-mood plan, questions for the medical team (including whether any treatment affects mood), and a support plan. Routes suicidal thoughts — including thoughts of stopping treatment in order to die — to 988/911/ED; never diagnoses.",
+      "techniques": [
+        "ST-04",
+        "DT-02",
+        "QA-04",
+        "NE-20",
+        "ED-04"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "chronic-illness",
+        "health-psychology",
+        "mood-tracking",
+        "bring-to-care-team"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psychology/specialty-clinical/psychology_chronic_illness_adjustment_protocol.md",
+        "domain-psychology/client-self-use/identity-transitions/clientself_post_diagnosis_adjustment.md",
+        "domain-psychology/client-self-use/specialty/clientself_chronic_pain_self_management_plan.md",
+        "domain-psychology/client-self-use/mood-journaling/clientself_mood_tracking_summarizer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_neurodivergent_self_advocacy_toolkit.md",
+      "filename": "clientself_neurodivergent_self_advocacy_toolkit.md",
+      "title": "Neurodivergent Self-Advocacy & Accommodation Toolkit",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "An identity-affirming toolkit for autistic, ADHD, dyslexic, and otherwise neurodivergent adults (formally diagnosed or self-identified): a needs map across sensory, communication, executive-function, social, and energy domains; a disclosure decision per setting; setting-specific accommodation menus and scripts for healthcare, work, education, and relationships; and a one-page self-advocacy card. Flags burnout-vs-depression and crisis signals for clinician or 988/911/ED routing.",
+      "techniques": [
+        "ST-04",
+        "DT-02",
+        "ED-04",
+        "NE-20",
+        "CM-02"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "neurodivergent",
+        "autism",
+        "adhd",
+        "self-advocacy",
+        "accommodations"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psychology/client-self-use/communication-system/clientself_workplace_accommodations_request.md",
+        "domain-psychology/client-self-use/coping-by-concern/clientself_adhd_external_scaffold_designer.md",
+        "domain-psychology/client-self-use/identity-transitions/clientself_post_diagnosis_adjustment.md",
+        "domain-psychology/populations/neurodivergent-adult/psychology_neurodivergent_affirming_treatment_planning.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_ocd_self_erp_prep_with_therapist.md",
+      "filename": "clientself_ocd_self_erp_prep_with_therapist.md",
+      "title": "OCD Self-ERP Preparation — For Therapist Review, Not Self-Administration",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "Prepare the groundwork for starting ERP with an OCD-trained therapist: a trigger map, a behavioural and mental compulsion inventory, an avoidance and accommodation list, a draft SUDS-estimated hierarchy, goals, and questions — all marked 'do not start exposures until reviewed.' Refuses to give reassurance and routes crisis to 988/911/ED.",
+      "techniques": [
+        "ST-04",
+        "DT-02",
+        "CM-02",
+        "NE-20",
+        "QA-04"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "ocd",
+        "erp",
+        "hierarchy",
+        "bring-to-therapist"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psychology/client-self-use/coping-by-concern/clientself_ocd_erp_exercise_with_therapist.md",
+        "domain-psychology/client-self-use/coping-by-concern/clientself_ocd_family_accommodation_reduction_plan.md",
+        "domain-psychology/client-self-use/symptom-understanding/clientself_intrusive_thoughts_vs_ocd_signal.md",
+        "domain-psychology/specialty-clinical/psychology_ocd_erp_provider_protocol.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_perinatal_self_screen_and_plan.md",
+      "filename": "clientself_perinatal_self_screen_and_plan.md",
+      "title": "Perinatal Mood & Anxiety Self-Screen — With Escalation Thresholds",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "Help someone who is pregnant or within 12 months after birth or loss make sense of their own mood and anxiety — including an EPDS or PHQ-9/GAD-7 score from their provider, if they have one — against clear, pre-stated escalation thresholds: 911/ED now for psychosis signs or intent, 988 and a clinician today for any self-harm thought, clinician this week for high scores, next appointment for mild ones. Screens, never diagnoses, and ends with a plan and the words to say to the OB, midwife, or GP.",
+      "techniques": [
+        "QA-08",
+        "ST-04",
+        "QA-04",
+        "CM-02",
+        "NE-07"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "perinatal",
+        "postpartum",
+        "pmad",
+        "self-screen",
+        "escalation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psychology/populations/perinatal/psychology_perinatal_mood_anxiety_screen_interpretation.md",
+        "domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md",
+        "domain-psychology/client-self-use/specialty/clientself_postpartum_partner_support_guide.md",
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_postpartum_parent_capacity_check.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-psychology/client-self-use/specialty/clientself_postpartum_partner_support_guide.md",
+      "filename": "clientself_postpartum_partner_support_guide.md",
+      "title": "Supporting a Partner Through Pregnancy and Postpartum — Recognition & Action",
+      "domain": "psychology",
+      "category": "psychology/client-self-use/specialty",
+      "description": "Guide for a partner (any gender) supporting someone who is pregnant or in the first year after birth: recognising baby blues vs signs that need a clinician vs emergencies (postpartum psychosis, suicidal thoughts), raising concern without blame, taking concrete load off (protected sleep, feeds, visitors), getting them to care, and watching the partner's own mental health. Routes emergencies to 911/ED and 988 with a do-not-leave-alone-with-baby rule; never diagnoses.",
+      "techniques": [
+        "ST-04",
+        "QA-08",
+        "NE-07",
+        "NE-17",
+        "CM-02"
+      ],
+      "keywords": [
+        "client-self-use",
+        "specialty",
+        "perinatal",
+        "postpartum",
+        "partner-support",
+        "supporting-others"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-psychology/client-self-use/specialty/clientself_perinatal_self_screen_and_plan.md",
+        "domain-psychology/client-self-use/crisis-self-triage/clientself_supporting_loved_one_in_crisis.md",
+        "domain-psychology/populations/perinatal/psychology_postpartum_psychosis_referral.md",
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_postpartum_parent_capacity_check.md"
+      ],
       "has_frontmatter": true
     },
     {

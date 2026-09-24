@@ -71,10 +71,10 @@ decides, whoever holds it.
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-negotiation/`](domain-negotiation/) | 48 | Preparation, at-the-table, channels, multi-party, after-the-deal, contexts, difficult conversations, craft |
+| [`domain-negotiation/`](domain-negotiation/) | 54 | Preparation, at-the-table, channels, multi-party, after-the-deal, contexts, difficult conversations, craft |
 | [`domain-decision-making/`](domain-decision-making/) | 45 | Decision frameworks, scenario planning, tradeoff analysis, decision documentation |
 | [`domain-reasoning-craft/`](domain-reasoning-craft/) | 42 | Reasoning moves, forecasting, systems thinking, epistemics |
-| [`domain-psy-ops/`](domain-psy-ops/) | 34 | Cognitive security: influence analysis and manipulation defense (analytic/defensive only) |
+| [`domain-psy-ops/`](domain-psy-ops/) | 43 | Cognitive security: influence analysis and manipulation defense (analytic/defensive only) |
 | [`domain-deep-analysis/`](domain-deep-analysis/) | 22 | Multi-phase deep-think systems for problems, decisions, plans, designs |
 | [`domain-ideation/`](domain-ideation/) | 13 | Divergent and convergent ideation |
 | [`domain-risk/`](domain-risk/) | 16 | Register, FMEA, heat map, tail risk, dependency chains, AAR, security operations for non-engineers |
@@ -105,9 +105,9 @@ decides, whoever holds it.
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-healthcare-clinical/`](domain-healthcare-clinical/) | 344 | Clinical decision support, specialties, pharmacy, nursing, allied health |
-| [`domain-psychology/`](domain-psychology/) | 270 | Documentation, risk/crisis, modalities, client self-use, practice operations |
-| [`domain-legal/`](domain-legal/) | 180 | Practitioner legal work, family law, and two litigant-facing self-advocacy sections |
+| [`domain-healthcare-clinical/`](domain-healthcare-clinical/) | 376 | Clinical decision support, specialties, pharmacy, nursing, allied health |
+| [`domain-psychology/`](domain-psychology/) | 280 | Documentation, risk/crisis, modalities, client self-use, practice operations |
+| [`domain-legal/`](domain-legal/) | 227 | Practitioner legal work (incl. regulatory, privacy, ethics, bankruptcy, tax, immigration, criminal, appellate, real estate, trusts & estates), family law, and two litigant-facing self-advocacy sections |
 | [`domain-finance/`](domain-finance/) | 148 | Corporate finance, markets, valuation, tax, risk, crypto, options, quant |
 | [`domain-hr-management/`](domain-hr-management/) | 8 | Performance reviews, hiring |
 | [`domain-specialized-fields/`](domain-specialized-fields/) | 10 | Real-estate and trades practitioners: CMA, offer strategy, rental underwriting, inspection triage, bid estimates, change orders, bid/no-bid (hub; finance and psychology were promoted out) |
