@@ -3,8 +3,9 @@
 > Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
 > This domain covers the employee lifecycle a manager or people-ops practitioner actually
 > touches: **hiring** (job description through reference check), **onboarding**,
-> **performance reviews**, and **people operations** (compensation banding, improvement
-> plans, exit interviews).
+> **performance reviews** and promotion cases, and **people operations** (career ladders,
+> compensation banding, pay equity, engagement surveys, succession, improvement plans,
+> reductions in force, exit interviews).
 
 ---
 
@@ -25,8 +26,8 @@ the review suite remains the domain's anchor and the most developed part of it.
 domain-hr-management/
 ├── hiring/               # 6 — job description → sourcing → loop → scorecard → screen → references
 ├── onboarding/           # 1 — employee 30/60/90
-├── performance-reviews/  # 6 — the anchor suite
-└── people-ops/           # 3 — compensation banding, PIP authoring, exit interviews
+├── performance-reviews/  # 7 — the anchor suite, plus the promotion case
+└── people-ops/           # 8 — ladder, banding, pay equity, engagement, succession, PIP, RIF, exit
 ```
 
 The review suite is anchored by an **adaptive meta-prompt** (`hr_performance_review_meta_prompt.md`) that generates a role-tailored review scaffold — a rubric, a question bank, and evidence prompts — that the other five review prompts can consume. This is the "specified subject matter" layer: give it `role=senior software engineer, level=IC5` and it produces a structure sized for that role; give it `role=account executive, level=senior` and you get a completely different scaffold.
@@ -52,6 +53,12 @@ from them — so the posting, the loop and the scoring instrument cannot disagre
 | **Founder or ops lead setting pay** | `people-ops/hr_compensation_banding.md` |
 | **Manager formalising a performance concern** | `people-ops/hr_performance_improvement_plan.md` — then have it reviewed by `../domain-legal/employment-labor/legal_pip_and_termination_risk_review.md` before issuing |
 | **Anyone running an exit conversation** | `people-ops/hr_exit_interview.md` |
+| **Leader defining what each level means** | `people-ops/hr_career_ladder_framework.md` → `people-ops/hr_compensation_banding.md` |
+| **Manager nominating a report for promotion** | `performance-reviews/hr_promotion_case_writer.md` |
+| **People-ops lead running an engagement survey** | `people-ops/hr_engagement_survey_design.md` |
+| **Leadership asking "what if [name] leaves?"** | `people-ops/hr_succession_planning.md` |
+| **Owner of a pay equity audit** | `people-ops/hr_pay_equity_audit.md` — with counsel engaged first |
+| **HR lead or manager executing a reduction in force** | `people-ops/hr_reduction_in_force_plan.md` — selection reviewed by `../domain-legal/employment-labor/legal_pip_and_termination_risk_review.md` |
 
 ---
 
@@ -78,7 +85,12 @@ from them — so the posting, the loop and the scoring instrument cannot disagre
 
 | File | What it does |
 |------|--------------|
+| [people-ops/hr_career_ladder_framework.md](people-ops/hr_career_ladder_framework.md) | Observable dimensions, an anchored cell per level with a nameable step between levels, parallel tracks, a career level, and a blind-placement test |
 | [people-ops/hr_compensation_banding.md](people-ops/hr_compensation_banding.md) | Levels by scope not tenure, ranges with a named market source, a written movement rule, and a compression audit |
+| [people-ops/hr_pay_equity_audit.md](people-ops/hr_pay_equity_audit.md) | Counsel first, factors declared before results, analyses specified for an analyst, raise-only remediation; significance and legality left to experts |
+| [people-ops/hr_engagement_survey_design.md](people-ops/hr_engagement_survey_design.md) | Items tied to decisions, anonymity threshold fixed before launch, results read within a noise band, one to three owned actions reported back |
+| [people-ops/hr_succession_planning.md](people-ops/hr_succession_planning.md) | Critical roles scored first, emergency cover for each, evidenced readiness, bench strength counted without double-counting |
+| [people-ops/hr_reduction_in_force_plan.md](people-ops/hr_reduction_in_force_plan.md) | Criteria frozen before names, a selection-rate check routed to counsel, a sequenced day, a plain script, and a plan for those who stay |
 | [people-ops/hr_performance_improvement_plan.md](people-ops/hr_performance_improvement_plan.md) | Authors a PIP a person could pass — and refuses to write one where the decision is already made |
 | [people-ops/hr_exit_interview.md](people-ops/hr_exit_interview.md) | Run by someone who is not their manager, finds the reversible moment, aggregated before acted on |
 
@@ -92,6 +104,7 @@ from them — so the posting, the loop and the scoring instrument cannot disagre
 | [performance-reviews/hr_self_review_assessment.md](performance-reviews/hr_self_review_assessment.md) | Helps an IC write a credible, specific self-review. Impact-framed, honest about misses. |
 | [performance-reviews/hr_peer_360_feedback.md](performance-reviews/hr_peer_360_feedback.md) | Turns raw peer observations into Situation–Behavior–Impact feedback. Kind, specific, bias-checked. |
 | [performance-reviews/hr_calibration_facilitator.md](performance-reviews/hr_calibration_facilitator.md) | Runs a calibration / norming meeting where managers align on ratings. Bias-check interventions built in. |
+| [performance-reviews/hr_promotion_case_writer.md](performance-reviews/hr_promotion_case_writer.md) | The manager's promotion packet: claims mapped to next-level anchors, counter-evidence stated, a readiness × confidence verdict that can say "not yet" |
 
 ---
 
@@ -122,7 +135,9 @@ Adjacent content elsewhere in the repo that pairs well with this suite:
 | Content | Location | Why |
 |---------|----------|-----|
 | HR-Pro agent | `domain-agentic-resources/agents/business-operations/hr_pro.md` | Agent-level HR assistant; use when you want conversational back-and-forth rather than a single prompt |
-| Employment law and risk | `domain-legal/employment-labor/` | PIP and termination risk review, worker classification, offer and separation packages. **Author here, review there** |
+| Employment law and risk | `domain-legal/employment-labor/` | PIP, termination and RIF selection risk review, worker classification, offer and separation packages. **Author here, review there** |
+| Employee handbook policies | `domain-agentic-resources/skills/non-coding/business/employment-contract-templates/` | Handbook policy sections (EEO, leave, conduct) live in that skill's templates; this domain does not duplicate them |
+| Survey item wording | `domain-research-academic/research_survey_instrument_designer.md` | The general item-writing craft the engagement survey routes new wording to |
 | Employer-side offer negotiation | `domain-negotiation/contexts/negotiation_hiring_offer_employer_side.md` | The offer conversation; the candidate's seat is `negotiation_salary_raise_promotion.md` |
 | Cross-cutting patterns | `domain-agentic-resources/skills/non-coding/cross-domain/` | Quality-rubric, intake-triage and handoff/approval patterns that the hiring and review instruments are specific applications of |
 | Feedback extraction | `domain-personal-development/prompts/agency/agency_feedback_extraction.md` | Turning feedback you received into action |
@@ -143,4 +158,4 @@ Adjacent content elsewhere in the repo that pairs well with this suite:
 
 ---
 
-*Last updated: 2026-09-22*
+*Last updated: 2026-09-24*
