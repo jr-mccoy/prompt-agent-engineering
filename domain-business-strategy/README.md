@@ -25,7 +25,9 @@ domain-business-strategy/
 ├── client-services/      # Running a practice that sells expertise
 ├── creator-economy/      # Newsletter, audience, platform choice, community, demand validation
 ├── go-to-market/         # Marketing execution (sales and CS moved to domain-sales-customer/)
+├── nonprofit/            # Grants, case for support, donors, board, impact, volunteers, restricted budgets
 ├── research/             # Competitive and market intelligence
+├── small-business/       # Owner of a local shop, trades business, or freelance practice
 ├── startup/              # Founder and solo-operator playbook
 └── README.md
 ```
@@ -37,9 +39,11 @@ domain-business-strategy/
 | `client-services/` | 8 | Offer definition and boundary, ideal client and disqualifiers, pricing-model selection, client value quantification, retainer design, capacity and utilization, productized offers, client concentration |
 | `creator-economy/` | 5 | Newsletter positioning and cadence, list growth, owned-vs-rented platform choice, community operations, pre-launch demand validation — selling expertise as *products*, the sibling of `client-services/` |
 | `go-to-market/` | 13 | Marketing playbook (10), campaign brief, content performance, pre-meeting background research. Sales discovery, pipeline risk, win/loss, CS onboarding and account health moved to [`domain-sales-customer/`](../domain-sales-customer/) in coverage Wave 2 (ADR-0043) |
+| `nonprofit/` | 8 | Foundation and government grants with a funder-fit gate, case for support, donor appeals, major-gift ask plans, board governance health check, impact reports against an existing logic model, volunteer program design, operating budget under restrictions |
 | `research/` | 9 | Competitor teardown, competitive landscape, company deep dive, industry trends, vendor and tool evaluation, technical due diligence, user-research synthesis, leader pulse |
+| `small-business/` | 6 | Weekly owner numbers and cash look-ahead, first-employee readiness, local marketing plan, owner bookkeeping routine and accountant handoff, customer review responses, price increase plan |
 | `startup/` | 26 | Monetization (7), founder operations (3), positioning diagnostics (3), plus branding, naming, copy, story, and app-store assets (13) |
-| **Total** | **73** | |
+| **Total** | **87** | |
 
 ---
 
