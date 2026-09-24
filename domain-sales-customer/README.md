@@ -55,7 +55,7 @@ cross-linked below.
 ### `customer-success/` (2)
 | File | Use |
 |---|---|
-| [`cs_quarterly_business_review_prep.md`](customer-success/cs_quarterly_business_review_prep.md) | Customer-facing QBR: their goals first, sourced outcomes, off-track said first, decisions for the room |
+| [`cs_customer_qbr_prep.md`](customer-success/cs_customer_qbr_prep.md) | Customer-facing QBR: their goals first, sourced outcomes, off-track said first, decisions for the room |
 | [`cs_renewal_risk_and_save_plan.md`](customer-success/cs_renewal_risk_and_save_plan.md) | One B2B renewal: notice-date calendar, renewal decider, deciding reason, access → value → proof → commercial, floor and let-go rule |
 
 ### `support/` (2)
@@ -87,7 +87,7 @@ domain's working set:
 | "Which deals in the whole pipeline need attention?" | `go-to-market/workflow_sales_pipeline_risk_assessment.md` |
 | "I have a discovery call tomorrow" | `go-to-market/workflow_sales_discovery_call_preparation.md` |
 | "We lost it — why?" | `go-to-market/workflow_win_loss_analysis.md` |
-| "The QBR is next week and the sponsor stopped coming" | `customer-success/cs_quarterly_business_review_prep.md` |
+| "The QBR is next week and the sponsor stopped coming" | `customer-success/cs_customer_qbr_prep.md` |
 | "Renewal is in 90 days and the new CFO won't meet us" | `customer-success/cs_renewal_risk_and_save_plan.md` |
 | "How healthy is this account?" | `go-to-market/workflow_cs_account_health.md` |
 | "The queue is full and everything is urgent" | `support/support_ticket_triage_and_routing.md` |

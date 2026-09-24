@@ -22,7 +22,7 @@ domain-sales-customer/          8 prompts
 
 | Candidate | Notes / distinct from |
 |---|---|
-| `sales/sales_strategic_account_plan.md` | Multi-year plan for one named key account: whitespace, relationship map, expansion sequence. Distinct from `workflow_cs_account_health` (diagnosis) and `cs_quarterly_business_review_prep` (one meeting). |
+| `sales/sales_strategic_account_plan.md` | Multi-year plan for one named key account: whitespace, relationship map, expansion sequence. Distinct from `workflow_cs_account_health` (diagnosis) and `cs_customer_qbr_prep` (one meeting). |
 | `support/support_kb_article_from_tickets.md` | Turn a resolved-ticket cluster into a help-centre article with the customer's own symptom language. Distinct from `solo_dev_support_system` (system design). |
 | `customer-success/cs_voice_of_customer_synthesis.md` | Only if it is scoped to routing account-level feedback to owners; interview and review-mining synthesis is owned by `skills/marketing/customer-research/` — duplicate-sweep first. |
 | Relocate the five `go-to-market/` sales and CS workflows | `workflow_sales_discovery_call_preparation`, `workflow_sales_pipeline_risk_assessment`, `workflow_win_loss_analysis`, `workflow_cs_account_health`, `workflow_customer_success_onboarding_plan` → this domain, recorded in [`meta/REORG_MAP.tsv`](../meta/REORG_MAP.tsv) with tombstones and inbound-reference rewrites. Deferred from Wave 1 because a move changes the relationship-count tests. |

@@ -1,7 +1,7 @@
 ---
 title: "Customer QBR Prep — Outcomes Against Their Goals, Sourced Value, and the Decisions You Need from the Room"
 category: sales-customer/customer-success
-description: "Prepare a customer-facing quarterly business review for one account: restate the customer's own success criteria, report progress against each with provenance-tagged numbers, surface what is not working before they do, and design the agenda around two or three decisions the executives in the room must make — distinct from an account health assessment, which is the internal diagnosis this meeting draws on, and from an internal company QBR deck."
+description: "Prepare a customer-facing quarterly business review for one account: restate the customer's own success criteria, report progress against each with provenance-tagged numbers, surface what is not working before they do, and design the agenda around two or three decisions the executives in the room must make — distinct from an account health assessment, which is the internal diagnosis this meeting draws on, and from a company's own internal quarterly review."
 techniques:
   - RP-02
   - DS-02

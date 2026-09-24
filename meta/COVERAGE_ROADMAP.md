@@ -1,9 +1,11 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-09-24:** **Proposed.** Nothing in this document has been
-built. It records a repository-wide audit of where the prompt corpus is thin on
-subject matter and sequences the fix into five waves. Wave 1 is fully specified
-and waiting for approval. Waves 2–5 are scoped only as far as their boundaries.
+**Status as of 2026-09-24:** **Wave 1 shipped.** It added 40 prompts: four new
+domains of 8 prompts each (ADR-0043) and `domain-personal-development/job-search/`
+(8). All 40 candidates survived their duplicate sweeps. Six hollow READMEs now
+describe what actually exists. Waves 2–5 are scoped only as far as their
+boundaries. This document records a repository-wide audit of where the prompt
+corpus is thin on subject matter and sequences the fix into five waves.
 
 **Why a cross-repo roadmap.** Each domain's `EXPANSION_ROADMAP.md` plans growth
 *inside* its own boundary. None of them can see the subjects that have no domain
@@ -35,10 +37,10 @@ complete.
 5. **Backlog sweep.** Read every `EXPANSION_ROADMAP.md` and check whether each
    named file exists on disk.
 
-## 2. Router probes: before
+## 2. Router probes
 
-Top hits on 2026-09-24, before any Wave 1 content. Wave 1 verification re-runs
-this table (§9).
+**Before:** top hits on 2026-09-24, before any Wave 1 content.
+**After Wave 1:** the table that follows this one.
 
 | Query | Top hits today | Reading |
 |---|---|---|
@@ -56,6 +58,30 @@ this table (§9).
 | `cold outreach sales email sequence` | `skills/marketing/cold-email`, a slop checker, `sales-automator` | Covered by skills; don't duplicate |
 | `usability test plan UX research` | `agents/design/design-ux-researcher`, voice-UX best practice | Agent only; no method prompts |
 | `accounting bookkeeping month end close` | `finance/accounting-controllership/finance_month_end_close*` | Well covered |
+
+**After Wave 1**, same day:
+
+| Query | Top hit now | Reading |
+|---|---|---|
+| `strength training program` | `health-wellness/fitness/fitness-beginner-training-plan` | Fixed |
+| `job interview preparation` | `personal-development/job-search/jobsearch-behavioral-interview-story-bank` | Fixed |
+| `write a resume for a job posting` | `jobsearch-job-posting-fit-decoder`, `-cover-letter-builder`, `-resume-evidence-rewriter` (top 3) | Fixed |
+| `lean six sigma manufacturing` | `operations/process-improvement/ops-dmaic-project-charter` | Fixed |
+| `MEDDPICC deal qualification` | `sales-customer/sales/sales-deal-qualification-scorecard` | Fixed |
+| `support ticket triage` | `sales-customer/support/support-ticket-triage-and-routing` | Fixed |
+| `why did this metric drop` | `data-analytics/analysis-and-sql/analytics-metric-movement-investigation` | Fixed |
+| `SQL query churn cohort analysis` | `data-analytics/analysis-and-sql/analytics-cohort-retention-analysis` | Fixed |
+| `meal plan nutrition` | `health-wellness/nutrition/nutrition-meal-structure-planner`; `home_meal_plan_week` 3rd | Fixed; logistics prompt kept |
+| `cold outreach sales email sequence` | `skills/marketing/cold-email` (unchanged) | Correct: the skill still owns copy |
+| `song lyrics`, `restaurant menu pricing`, `grant proposal nonprofit` | unchanged | Wave 2 subjects |
+
+**Regression set.** The 120-case set scores the same as before Wave 1
+(scope@1 83.5%, kind@1 97.6%), and no case changes its top hit. The one case
+that did shift during Wave 1 is case-072, "board deck for the quarterly business
+review", which expects `domain-presentations/`. The customer QBR prompt briefly
+outranked the internal QBR deck. That was a metadata problem, not a better
+answer, so the prompt was renamed `cs_customer_qbr_prep.md` and the word "deck"
+was taken out of its description. The case label was not changed.
 
 ## 3. Gap map
 
@@ -124,7 +150,7 @@ These are built from their own roadmaps, not re-planned here.
 | [`domain-psy-ops/EXPANSION_ROADMAP.md`](../domain-psy-ops/EXPANSION_ROADMAP.md) | 9 Wave 2 candidates |
 | [`domain-negotiation/EXPANSION_ROADMAP.md`](../domain-negotiation/EXPANSION_ROADMAP.md) | Wave 2 contexts: landlord, insurance, medical bill, severance, licensing |
 
-## 4. Taxonomy decision (proposed as ADR-0043)
+## 4. Taxonomy decision ([ADR-0043](adr/0043-subject-homes-for-sales-health-analytics-ops.md))
 
 Subject decides first (`CLAUDE.md`). For six of the absent subjects the
 existing domains have no home that fits by subject, only near misses by theme.
@@ -173,7 +199,7 @@ new domain:
 Relocating them through `meta/REORG_MAP.tsv` is a Wave 2 item, because a move
 adds tombstones and changes the relationship-count tests.
 
-## 5. Wave 1: specified, awaiting approval (40 prompts + README repairs)
+## 5. Wave 1: shipped (40 prompts, all **NEW**, plus README repairs)
 
 Every prompt follows the Tier 1 template in `PROMPT_QUALITY_STANDARDS.md`:
 - **Frontmatter:** 3–5 real technique IDs and exactly 3 resolving
@@ -207,7 +233,7 @@ CHANGELOG survival rate. No substitute is invented to hit the number.
 | `sales/sales_outbound_prospecting_sequence.md` | `skills/marketing/cold-email`, `sales-enablement`. Stays at account-strategy level, not copywriting. |
 | `sales/sales_mutual_close_plan.md` | `negotiation_closing_and_final_concession` |
 | `sales/sales_forecast_commit_review.md` | `workflow_sales_pipeline_risk_assessment` |
-| `customer-success/cs_quarterly_business_review_prep.md` | `workflow_cs_account_health` |
+| `customer-success/cs_customer_qbr_prep.md` | `workflow_cs_account_health` |
 | `customer-success/cs_renewal_risk_and_save_plan.md` | `skills/marketing/churn-prevention` (cancel flows) |
 | `support/support_ticket_triage_and_routing.md` | `solo_dev_support_system` |
 | `support/support_escalation_response_drafter.md` | `decisioning_escalation_decision_tree` |
@@ -261,8 +287,11 @@ It also gets a short local `EXPANSION_ROADMAP.md` that points back here.
 
 ### Hollow-README repairs (documentation only)
 
-Each README is rewritten to describe what exists. Promises it drops move into
-Wave 2 below. No content is invented to match a stale promise.
+Each README now describes what exists. Promises it dropped moved into the later
+waves below. No content was invented to match a stale promise. Where a README
+still carried good material, the edit was surgical: `specialized-fields` keeps
+its templates and loses only the table of `professional_*.md` files that never
+existed.
 
 | Domain | Change |
 |---|---|
@@ -272,7 +301,7 @@ Wave 2 below. No content is invented to match a stale promise.
 | `decision-making` | Replace the phantom folders with the real `decisioning_*`, `scenario_*` and `tradeoff_*` families and `documentation/`. |
 | `game-development` | Replace the dead `MISSING_TOPICS_ANALYSIS.md` reference with a link to Wave 4 here. |
 | `policy` | List all 4 files. |
-| `advertising` | Add a "Not here" section: copy goes to `skills/marketing/ad-creative`, campaigns to `business-strategy/go-to-market/`. |
+| `advertising` | **No change needed.** The README already has a "Route elsewhere for" table (added in an earlier phase). The audit that flagged it missed that section. |
 
 ## 6. Later waves (scoped, not specified)
 

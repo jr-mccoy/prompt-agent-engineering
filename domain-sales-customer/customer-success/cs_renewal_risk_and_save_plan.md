@@ -17,7 +17,7 @@ tags:
   - b2b
 updated: "2026-09-24"
 related_prompts:
-  - domain-sales-customer/customer-success/cs_quarterly_business_review_prep.md
+  - domain-sales-customer/customer-success/cs_customer_qbr_prep.md
   - domain-business-strategy/go-to-market/workflow_cs_account_health.md
   - domain-agentic-resources/skills/marketing/churn-prevention/SKILL.md
 ---
@@ -225,7 +225,7 @@ fixable before the 12-01 notice date. Right-size folded into the commercial step
 
 - `domain-business-strategy/go-to-market/workflow_cs_account_health.md` — the
   health diagnosis this plan starts from.
-- `domain-sales-customer/customer-success/cs_quarterly_business_review_prep.md` —
+- `domain-sales-customer/customer-success/cs_customer_qbr_prep.md` —
   where the value evidence for the "proof" step is built.
 - `domain-agentic-resources/skills/marketing/churn-prevention/SKILL.md` — self-serve
   cancel flows, save offers and dunning, not covered here.

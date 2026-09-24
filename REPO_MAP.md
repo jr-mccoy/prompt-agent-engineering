@@ -52,11 +52,20 @@ software-engineering, money to finance, contracts to legal).
 
 | Track | Directory | Files | Holds |
 |---|---|---|---|
-| Self | [`domain-personal-development/`](domain-personal-development/) | 177 | Identity, values, habits, goals, resilience, relationships, agency, life transitions, emotional fitness, career, stakeholder |
+| Self | [`domain-personal-development/`](domain-personal-development/) | 186 | Identity, values, habits, goals, resilience, relationships, agency, life transitions, emotional fitness, career, job search, stakeholder |
 | Individual execution | [`domain-productivity/`](domain-productivity/) | 121 | Daily planning, deep work, reviews, operating cadence, automation, bottlenecks, workplace, validation, home life, school |
 | Team delivery | [`domain-engineering-workflows/`](domain-engineering-workflows/) | 59 | Workflows, definition-of-done, AI patterns, AI-native rollouts |
 | Product | [`domain-product-management/`](domain-product-management/) | 10 | PRDs, market sizing, competitor teardown, sprint planning (renamed from `domain-professional-communication`) |
 | Org / company | [`domain-business-strategy/`](domain-business-strategy/) | 68 | AI strategy, ambition & leverage, go-to-market, research, startup |
+
+Subject homes that sit beside the tracks (ADR-0043): the object of the prompt
+decides, whoever holds it.
+
+| Directory | Files | Holds |
+|---|---|---|
+| [`domain-sales-customer/`](domain-sales-customer/) | 10 | Deal qualification, outbound plan, close plan, forecast commit, QBR, renewal risk, ticket triage, escalations |
+| [`domain-data-analytics/`](domain-data-analytics/) | 10 | Analysis plans, metric specs, KPI trees, SQL correctness, metric-movement investigation, cohorts, A/B readouts, dashboard critique |
+| [`domain-operations/`](domain-operations/) | 10 | Lean waste scan, A3, DMAIC, capacity, supplier scorecard, reorder policy, buyer-side RFP, non-software project plan |
 
 ## Thinking & decisions
 
@@ -110,7 +119,8 @@ software-engineering, money to finance, contracts to legal).
 | [`domain-biblical-studies/`](domain-biblical-studies/) | 142 | Exegesis, study methods, sermon, theology, learner, ministry, church staff, languages, apologetics |
 | [`domain-parenting/`](domain-parenting/) | 110 | Ages 4–8, neurodivergence, divorce/custody/co-parenting |
 | [`domain-discipleship/`](domain-discipleship/) | 88 | One-to-one formation and the programs that pair people |
-| [`domain-conversation-practice/`](domain-conversation-practice/) | 9 | Language conversation practice |
+| [`domain-conversation-practice/`](domain-conversation-practice/) | 9 | Hard-conversation role-play simulators (not language learning) |
+| [`domain-health-wellness/`](domain-health-wellness/) | 10 | Healthy-adult training, nutrition and sleep; safety-gated, red-flag screen first |
 
 ## Visual
 

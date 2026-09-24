@@ -19,11 +19,11 @@
     "unindexed_domain_directories": "domain-* directories absent from that allowlist. Their content does not appear in PROMPT_INDEX.json and is excluded from every indexed count above."
   },
   "facts": {
-    "indexed_artifacts": 5654,
+    "indexed_artifacts": 5694,
     "bundled_component_files": 667,
     "agentic_resource_artifacts": 802,
     "domain_command_artifacts": 10,
-    "domain_prompt_artifacts": 4175,
+    "domain_prompt_artifacts": 4215,
     "skills": 333,
     "agents": 143,
     "commands": 115,
@@ -32,8 +32,8 @@
     "catalogued_technique_ids": 336,
     "deprecated_technique_stubs": 9,
     "technique_categories": 18,
-    "domain_directories": 44,
-    "indexed_domain_directories": 44,
+    "domain_directories": 48,
+    "indexed_domain_directories": 48,
     "unindexed_domain_directories": 0
   }
 }

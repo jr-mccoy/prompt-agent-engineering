@@ -4,11 +4,11 @@
 >
 > For classified counts with stated membership rules, see [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json). Normalized resource kinds are planned for the PAE Registry and do not exist yet — see [`ROADMAP.md`](ROADMAP.md).
 
-**Generated:** 2026-09-22
+**Generated:** 2026-09-24
 
-**Total Indexed Artifacts:** 5654
+**Total Indexed Artifacts:** 5694
 
-**Artifacts with Frontmatter:** 4718
+**Artifacts with Frontmatter:** 4758
 
 **Artifacts without Frontmatter:** 936
 
@@ -2146,6 +2146,21 @@
 | [Worldbuilding Framework](domain-creative-writing/fiction/writing_worldbuilding_framework.md) | creative-writing | CM-01, CM-02, ST-02, ST-03, QA-01 | creative-writing, fiction, worldbuilding, fantasy, science-fiction | Create rich, consistent fictional worlds for fantasy, sci-fi, and speculative fiction |
 | [Writing Voice Development](domain-creative-writing/craft-tools/writing_voice_development.md) | creative-writing | CM-01, ST-02, ST-03, RT-04, QA-01 | creative-writing, voice, style, craft, prose | Discover, develop, and refine your unique writing voice across fiction, nonfiction, and poetry |
 
+## Data Analytics
+
+**Total:** 8 prompts
+
+| Title | Category | Techniques | Keywords | Description |
+|-------|----------|------------|----------|-------------|
+| [Cohort Retention Analysis — Define the Cohort, the](domain-data-analytics/analysis-and-sql/analytics_cohort_retention_analysis.md) | data-analytics/analysis-and-sq | DS-02, NE-11, RT-06, QA-04, DS-05 | cohort-analysis, retention-curve, churn-analysis, business-analytics, survival-curve | Run a cohort retention analysis a decision can rest on: choose the cohort key, the return event and ... |
+| [Metric Movement Investigation — Why Did the Number](domain-data-analytics/analysis-and-sql/analytics_metric_movement_investigation.md) | data-analytics/analysis-and-sq | DD-03, RT-10, DT-04, RT-23, QA-04 | metric-investigation, root-cause-analysis, mix-shift, segment-decomposition, business-analytics | Investigate a business metric that moved unexpectedly in a fixed order — confirm the move is real, r... |
+| [SQL Query Correctness Review — Grain, Join Fan-Out](domain-data-analytics/analysis-and-sql/analytics_sql_query_correctness_review.md) | data-analytics/analysis-and-sq | QA-18, DT-05, RT-05, DS-06, QA-12 | sql-review, query-correctness, join-fan-out, data-validation, business-analytics | Review an analysis query for whether it returns the right number, not whether it runs fast: output g... |
+| [A/B Test Readout — Validity Gates, Primary Result,](domain-data-analytics/experiments-and-reporting/analytics_ab_test_readout.md) | data-analytics/experiments-and | QA-08, RT-05, QA-04, QA-02, AG-08 | ab-test-readout, experiment-analysis, sample-ratio-mismatch, guardrail-metrics, decision-memo | Read out a finished product or business A/B test in gated order — sample ratio mismatch, exposure an... |
+| [Dashboard Critique — Does Each Tile Answer a Quest](domain-data-analytics/experiments-and-reporting/analytics_dashboard_critique.md) | data-analytics/experiments-and | DT-05, DS-25, DS-05, DS-06, QA-21 | dashboard-review, business-dashboard, data-visualization, reporting-quality, business-analytics | Critique an existing business dashboard tile by tile: the question and owner each tile serves, wheth... |
+| [KPI Tree Decomposition — Break an Outcome Metric i](domain-data-analytics/framing-and-metrics/analytics_kpi_tree_decomposition.md) | data-analytics/framing-and-met | DT-01, NE-11, DP-06, QA-01 | kpi-tree, driver-tree, metric-decomposition, business-analytics, variance-attribution | Decompose one outcome metric (revenue, gross margin, active accounts) into a driver tree whose branc... |
+| [Metric Definition Spec — Grain, Numerator, Denomin](domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md) | data-analytics/framing-and-met | DS-02, CM-02, MP-04, QA-21, OC-03 | metric-definition, business-metrics, data-dictionary, semantic-layer, metric-governance | Write an unambiguous spec for one business metric: its grain, numerator and denominator in words and... |
+| [Question to Analysis Plan — From a Vague Stakehold](domain-data-analytics/framing-and-metrics/analytics_question_to_analysis_plan.md) | data-analytics/framing-and-met | DD-02, MP-03, CM-03, DP-13, QA-02 | analysis-plan, stakeholder-request, problem-framing, business-analytics, scoping | Turn a vague business ask ("can you look into churn?") into a one-page analysis plan: the decision i... |
+
 ## Decision Making
 
 **Total:** 43 prompts
@@ -2888,6 +2903,21 @@
 | [Automated Game Test Strategy](domain-game-development/testing/testing_automated_game_testing.md) | game-development/testing | ST-01, ST-02, RT-02, RT-05, DS-03 | testing, automation, ci-cd, bots, regression | Design automated testing strategies for games including unit tests for game logic, replay-based regr... |
 | [Gameplay Test Plan Generation](domain-game-development/testing/testing_gameplay_test_plan.md) | game-development/testing | ST-01, ST-02, ST-03, DT-01, QA-02 | testing, qa, test-plan, regression, game-testing | Generate comprehensive test plans for game features covering functional tests, regression scenarios,... |
 | [Platform Certification Checklist](domain-game-development/testing/testing_platform_certification.md) | game-development/testing | ST-01, ST-02, ST-03, DS-01, QA-02 | testing, certification, console, submission, trc | Generate platform-specific certification checklists for Sony TRC, Microsoft XR, Nintendo Lotcheck, S... |
+
+## Health Wellness
+
+**Total:** 8 prompts
+
+| Title | Category | Techniques | Keywords | Description |
+|-------|----------|------------|----------|-------------|
+| [Beginner Training Plan — Eight Weeks of Full-Body ](domain-health-wellness/fitness/fitness_beginner_training_plan.md) | health-wellness/fitness | DS-02, DS-26, OC-09, QA-01 | health-wellness, strength-training, beginner, progressive-overload, rpe | Build an eight-week beginner plan for a healthy adult: full-body strength two to three times a week ... |
+| [Endurance Event Build Plan — Base, Build, Taper fo](domain-health-wellness/fitness/fitness_endurance_event_build_plan.md) | health-wellness/fitness | DT-01, DS-02, QA-08, QA-13 | health-wellness, endurance, running, cycling, taper | Plan a first endurance event from the person's current base to the start line: a feasibility check o... |
+| [Program Progression Review — Read the Training Log](domain-health-wellness/fitness/fitness_program_progression_review.md) | health-wellness/fitness | RT-10, RT-05, DS-06, QA-04 | health-wellness, training-log, plateau, deload, overreaching | Review an existing training plan and at least four weeks of log: classify each lift or session as pr... |
+| [Readiness and Red-Flag Screen — The Entry Gate Bef](domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md) | health-wellness/foundations | QA-08, CM-09, OC-04, QA-20 | health-wellness, readiness-screen, red-flags, safety-gate, exercise-readiness | The domain's entry gate. Screens a healthy adult for red flags — exertional chest symptoms, fainting... |
+| [Sustainable Wellness Routine — One Week That Holds](domain-health-wellness/foundations/wellness_sustainable_routine_designer.md) | health-wellness/foundations | ST-44, DS-26, ED-04, QA-13 | health-wellness, routine-design, weekly-schedule, consistency, recovery | Fit movement, an eating rhythm, and a sleep anchor into one weekly routine sized to the person's mea... |
+| [Eating Pattern Audit — What Your Meals Actually Lo](domain-health-wellness/nutrition/nutrition_eating_pattern_audit.md) | health-wellness/nutrition | QA-08, RT-02, CM-02, QA-20 | health-wellness, nutrition, eating-pattern, food-log, strong-guard | Audit a healthy adult's eating pattern from a plain-language food and timing log — regularity, prote... |
+| [Meal Structure Planner — Protein, Fibre, and Plate](domain-health-wellness/nutrition/nutrition_meal_structure_planner.md) | health-wellness/nutrition | QA-08, DS-26, ED-04, CM-02 | health-wellness, nutrition, meal-structure, protein, fibre | Design a repeatable eating structure for a healthy adult: a plate pattern in hand-sized portions, pr... |
+| [Sleep Routine and Environment Audit — Timing, Ligh](domain-health-wellness/sleep-recovery/sleep_routine_and_environment_audit.md) | health-wellness/sleep-recovery | QA-08, RT-02, DS-06, QA-04 | health-wellness, sleep, sleep-hygiene, circadian-rhythm, recovery | Audit a healthy adult's sleep from a one-to-two-week log: wake-time regularity, sleep opportunity, m... |
 
 ## Healthcare Clinical
 
@@ -3976,6 +4006,21 @@
 | [Package and Trade Design — Log-Rolling, MESOs, and](domain-negotiation/preparation/negotiation_package_trade_design.md) | negotiation/preparation | ST-01, ST-02, RT-02, DS-01, DS-02 | negotiation, packages, log-rolling, mesos, contingent-terms | Convert a mapped set of interests into actual offers. Scores every negotiable issue by how much each... |
 | [Pre-Meeting Rehearsal — Scripting the High-Stakes ](domain-negotiation/preparation/negotiation_pre_meeting_rehearsal.md) | negotiation/preparation | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, rehearsal, scripting, preparation, exit-script | Rehearse a high-stakes negotiation conversation before it happens. Not a brief — the actual run-thro... |
 
+## Operations
+
+**Total:** 8 prompts
+
+| Title | Category | Techniques | Keywords | Description |
+|-------|----------|------------|----------|-------------|
+| [Capacity and Bottleneck Model — Constraint Identif](domain-operations/process-improvement/ops_capacity_and_bottleneck_model.md) | operations/process-improvement | NE-11, DP-09, DS-02, QA-02 | capacity-planning, bottleneck, theory-of-constraints, littles-law, utilization | Model the capacity of a multi-step physical or service process: effective capacity per step after av... |
+| [DMAIC Project Charter — Problem Statement, CTQs, B](domain-operations/process-improvement/ops_dmaic_project_charter.md) | operations/process-improvement | DS-01, DS-02, CM-03, QA-04 | dmaic, six-sigma, project-charter, ctq, baseline | Charter a Six Sigma DMAIC improvement project before the work starts — a problem statement with no c... |
+| [Process Map and Waste Scan — SIPOC, Value-Stream T](domain-operations/process-improvement/ops_process_map_and_waste_scan.md) | operations/process-improvement | DS-01, DS-02, RT-05, OC-03, QA-01 | process-mapping, value-stream, sipoc, lean, eight-wastes | Map an existing process as it actually runs — a SIPOC to fix the boundaries, then a value-stream tim... |
+| [Root-Cause A3 Report — Background, Current Conditi](domain-operations/process-improvement/ops_root_cause_a3_report.md) | operations/process-improvement | RT-09, RT-05, DS-01, DS-02, QA-02 | a3, root-cause, fishbone, five-whys, countermeasures | Write a one-page A3 problem-solving report for an operational problem — a quantified gap, a current ... |
+| [Non-Software Project Plan — WBS, Critical Path, RA](domain-operations/project-delivery/ops_non_software_project_plan.md) | operations/project-delivery | DT-01, RT-07, OC-03, QA-02 | project-plan, work-breakdown-structure, critical-path, raci, office-move | Plan a physical or organizational project with a fixed date — an office move, an event, an equipment... |
+| [Buyer-Side RFP Procurement Package — Requirements,](domain-operations/supply-chain-procurement/ops_rfp_procurement_package.md) | operations/supply-chain-procur | CM-03, DP-03, OC-03, QA-02 | rfp, procurement, sourcing-event, evaluation-rubric, bid-scoring | Assemble the buyer's RFP package for goods or services: must-have vs. weighted requirements, a struc... |
+| [Inventory Reorder Policy — ABC/XYZ Segmentation, S](domain-operations/supply-chain-procurement/ops_inventory_reorder_policy.md) | operations/supply-chain-procur | NE-11, DS-06, QA-04, QA-02 | inventory-management, safety-stock, reorder-point, eoq, abc-xyz | Set a reorder policy for stocked items: segment SKUs by value (ABC) and demand variability (XYZ), as... |
+| [Supplier Selection Scorecard — Weighted Criteria, ](domain-operations/supply-chain-procurement/ops_supplier_selection_scorecard.md) | operations/supply-chain-procur | DP-03, RT-02, NE-11, QA-02 | supplier-selection, sourcing, total-cost-of-ownership, weighted-scorecard, dual-sourcing | Choose among competing suppliers for a recurring material or service: fix weighted criteria and anch... |
+
 ## Parenting
 
 **Total:** 106 prompts
@@ -4091,7 +4136,7 @@
 
 ## Personal Development
 
-**Total:** 160 prompts
+**Total:** 168 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -4177,6 +4222,14 @@
 | [Structured Audit at a Major Life Inflection](domain-personal-development/prompts/identity/identity_life_audit_reckoning.md) | personal-development/identity | ST-01, ST-02, RT-02, CM-01, NE-07 | life-audit, reckoning, midlife, transition, inflection | At a transition (midlife, post-launch, post-loss, post-promotion, after a long arc closes), produce ... |
 | [Surface Operating Values From Past Decisions, Not ](domain-personal-development/prompts/identity/identity_values_clarification.md) | personal-development/identity | ST-01, ST-02, RT-02, RT-05, QA-12 | identity, values, revealed-preferences, self-knowledge, mismatch | Extract the user's revealed values from a list of recent real decisions and trade-offs they actually... |
 | [Surface Signature Strengths From Evidence, Not a S](domain-personal-development/prompts/identity/identity_strengths_inventory_revealed.md) | personal-development/identity | ST-01, ST-02, RT-02, DS-06, QA-12 | identity, strengths, revealed-preferences, self-knowledge, deployment | Derive the user's real strengths from evidence of what they do well and reach for, separate them fro... |
+| [Behavioral Interview Story Bank — Eight True Stori](domain-personal-development/job-search/jobsearch_behavioral_interview_story_bank.md) | personal-development/job-searc | ST-02, ST-46, RT-05, QA-02, DD-02 | job-search, interview-prep, behavioral-interview, star-method, competencies | Build a reusable bank of eight to twelve true work stories for behavioral interviews in any field: e... |
+| [Cover Letter Builder — One Posting, One Angle, Thr](domain-personal-development/job-search/jobsearch_cover_letter_builder.md) | personal-development/job-searc | ST-01, RP-02, ST-46, CM-02, QA-01 | job-search, cover-letter, application, professional-writing, candidate | Write a cover letter for one specific posting that opens with the candidate's angle on the role's ma... |
+| [Job Posting Fit Decoder — Real Requirements, Hidde](domain-personal-development/job-search/jobsearch_job_posting_fit_decoder.md) | personal-development/job-searc | DT-05, RT-05, QA-23, DS-06, QA-12 | job-search, job-posting, fit-assessment, requirements, application-strategy | Read one job posting from the candidate's side: separate the requirements that will actually screen ... |
+| [Job Search Pipeline Tracker and Weekly Cadence — F](domain-personal-development/job-search/jobsearch_pipeline_tracker_and_cadence.md) | personal-development/job-searc | DS-02, OC-03, RT-09, DS-06, QA-12 | job-search, pipeline, application-tracking, weekly-review, funnel-metrics | Set up and run an active job search as a pipeline: a tracker with defined stages and conversion rate... |
+| [LinkedIn Profile Audit — Section by Section Agains](domain-personal-development/job-search/jobsearch_linkedin_profile_audit.md) | personal-development/job-searc | DT-05, DD-02, RP-02, RT-05, QA-12 | job-search, linkedin, professional-profile, recruiter-search, personal-brand | Audit a LinkedIn profile section by section against one target role family and how recruiters actual... |
+| [Networking Outreach Plan — A Ranked Contact List, ](domain-personal-development/job-search/jobsearch_networking_outreach_plan.md) | personal-development/job-searc | RP-02, CM-02, DS-06, DS-40, QA-20 | job-search, networking, referrals, informational-interview, outreach | Build a candidate's job-search outreach plan: a contact list ranked by proximity to the target role,... |
+| [Résumé Evidence Rewriter — Bullets That Survive a ](domain-personal-development/job-search/jobsearch_resume_evidence_rewriter.md) | personal-development/job-searc | DD-02, ST-46, RT-23, QA-26, QA-01 | job-search, resume, cv, accomplishments, honesty | Rewrite résumé bullets for one target role family as action–scope–result statements built only from ... |
+| [Target Role and Market Map — Pick One Primary Role](domain-personal-development/job-search/jobsearch_target_role_and_market_map.md) | personal-development/job-searc | ST-01, RT-02, RT-23, DS-06, QA-12 | job-search, target-role, labor-market, role-families, career-change | Turn a vague 'I'm looking for something new' into one primary target role family and one fallback, e... |
 | [Do the 'Who Am I Now' Work When a Defining Role Ha](domain-personal-development/prompts/life-transitions/lifetransition_identity_after_major_change.md) | personal-development/life-tran | ST-01, ST-02, RT-02, RT-09, QA-12 | life-transitions, identity, role-loss, self-concept, reorientation | When a role that defined you has ended, separate the parts of self that were role-dependent from the... |
 | [Locate Yourself on the Ending → Neutral-Zone → New](domain-personal-development/prompts/life-transitions/lifetransition_transition_map_and_timeline.md) | personal-development/life-tran | ST-01, ST-02, DS-01, DS-06, QA-12 | life-transitions, transition-map, neutral-zone, phases, reorientation | A generic transition navigator: place the user in Bridges' three-phase model (ending, neutral zone, ... |
 | [Navigate the First 90 Days in a New Role Without R](domain-personal-development/prompts/life-transitions/lifetransition_navigating_new_role.md) | personal-development/life-tran | ST-01, ST-02, RT-02, DS-06, QA-12 | life-transitions, new-role, onboarding, promotion, habits | Map what actually changed in a new job or promotion, locate where old habits now misfire, and commit... |
@@ -5158,6 +5211,21 @@
 | [Tail Risk Scan — Hunting the Low-Probability, High](domain-risk/risk_tail_risk_scan.md) | risk/tail-risk | ST-01, ST-02, RT-02, DS-01, CM-02 | risk-management, tail-risk, black-swan, low-probability-high-impact, pre-mortem | Deliberately hunt for tail and black-swan risks — the low-probability, high-impact events that a sta... |
 | [Non-Technical Threat Model — Security Threat-Model](domain-risk/risk_threat_model_non_technical.md) | risk/threat-modeling | ST-01, ST-02, RT-02, DS-01, DS-02 | risk-management, threat-modeling, adversarial, reputation, attack-surface | Adapt the security threat-modeling discipline — assets, threats, vulnerabilities, attack paths, miti... |
 | [Risk Heat Map — Plot, Rank, and Force the Top-3 Qu](domain-risk/risk_heat_map.md) | risk/visualization | ST-01, ST-02, RT-02, DS-01, CM-02 | risk-management, heat-map, prioritization, likelihood-impact, ranking | Plot a set of risks on a likelihood × impact heat map, force-rank them by composite score, and surfa... |
+
+## Sales Customer
+
+**Total:** 8 prompts
+
+| Title | Category | Techniques | Keywords | Description |
+|-------|----------|------------|----------|-------------|
+| [Customer QBR Prep — Outcomes Against Their Goals, ](domain-sales-customer/customer-success/cs_customer_qbr_prep.md) | sales-customer/customer-succes | RP-02, DS-02, RT-05, NE-23 | customer-success, qbr, executive-business-review, account-management, value-realization | Prepare a customer-facing quarterly business review for one account: restate the customer's own succ... |
+| [Renewal Risk and Save Plan — One B2B Contract, Its](domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md) | sales-customer/customer-succes | RT-05, DS-06, CM-02, DP-13 | customer-success, renewal, churn-risk, retention, account-management | For one named B2B account with a renewal inside roughly 180 days, map the contract mechanics and the... |
+| [Deal Qualification Scorecard — MEDDPICC Scored on ](domain-sales-customer/sales/sales_deal_qualification_scorecard.md) | sales-customer/sales | DS-01, RT-05, AG-02, QA-04, DP-13 | sales, qualification, meddpicc, opportunity-management, deal-review | Score one open opportunity against the eight MEDDPICC elements using only evidence the buyer has giv... |
+| [Forecast Commit Review — Evidence per Deal for Com](domain-sales-customer/sales/sales_forecast_commit_review.md) | sales-customer/sales | RT-05, AG-02, NE-10, QA-04 | sales, forecasting, commit, pipeline-review, sales-management | Prepare a rep's or manager's forecast call: place each deal closing this period in Commit, Best Case... |
+| [Mutual Close Plan — A Buyer-Owned Path from Today ](domain-sales-customer/sales/sales_mutual_close_plan.md) | sales-customer/sales | QA-08, DP-07, RP-02, OC-03 | sales, mutual-action-plan, close-plan, enterprise-sales, buyer-enablement | Build a mutual action plan the buyer can own and forward internally: work backward from the buyer's ... |
+| [Outbound Prospecting Sequence — Account Tiers, Tri](domain-sales-customer/sales/sales_outbound_prospecting_sequence.md) | sales-customer/sales | DS-06, RT-05, OC-03, DP-13 | sales, outbound, prospecting, account-based, cadence | Design the strategy layer of an outbound motion for a named account list: tier accounts by fit and a... |
+| [Escalation Response Drafter — The Customer Reply a](domain-sales-customer/support/support_escalation_response_drafter.md) | sales-customer/support | RP-02, NE-20, CM-02, QA-01 | support, escalation, customer-communication, handoff, incident-communication | For one escalated support case, draft two linked artifacts from the same facts: a customer-facing re... |
+| [Support Ticket Triage and Routing — Severity from ](domain-sales-customer/support/support_ticket_triage_and_routing.md) | sales-customer/support | DS-06, RT-10, OC-03, QA-01 | support, triage, ticket-routing, sla, severity | Triage a live batch of customer support tickets: assign severity from observable customer impact, de... |
 
 ## Science
 

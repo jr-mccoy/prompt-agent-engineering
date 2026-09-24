@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "generated": "2026-09-22",
+    "generated": "2026-09-24",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 5654,
-    "artifacts_with_frontmatter": 4718,
+    "total_indexed_artifacts": 5694,
+    "artifacts_with_frontmatter": 4758,
     "artifacts_without_frontmatter": 936,
-    "domains": 44,
+    "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
       "total_prompts": "total_indexed_artifacts",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 5654,
-    "prompts_with_frontmatter": 4718,
+    "total_prompts": 5694,
+    "prompts_with_frontmatter": 4758,
     "prompts_without_frontmatter": 936
   },
   "prompts": [
@@ -53166,6 +53166,253 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-data-analytics/analysis-and-sql/analytics_cohort_retention_analysis.md",
+      "filename": "analytics_cohort_retention_analysis.md",
+      "title": "Cohort Retention Analysis — Define the Cohort, the Return Event, and the Clock; Then Read the Triangle",
+      "domain": "data-analytics",
+      "category": "data-analytics/analysis-and-sql",
+      "description": "Run a cohort retention analysis a decision can rest on: choose the cohort key, the return event and the period clock on purpose, build the retention triangle with censoring handled, separate logo from revenue retention, read it along cohorts, periods and calendar diagonals, and flag the small-cohort and mix effects that make a curve look better or worse than it is.",
+      "techniques": [
+        "DS-02",
+        "NE-11",
+        "RT-06",
+        "QA-04",
+        "DS-05"
+      ],
+      "keywords": [
+        "cohort-analysis",
+        "retention-curve",
+        "churn-analysis",
+        "business-analytics",
+        "survival-curve",
+        "revenue-retention"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md",
+        "domain-data-analytics/analysis-and-sql/analytics_sql_query_correctness_review.md",
+        "domain-presentations/board-decks/boarddeck_cohort_retention_heatmap.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-data-analytics/analysis-and-sql/analytics_metric_movement_investigation.md",
+      "filename": "analytics_metric_movement_investigation.md",
+      "title": "Metric Movement Investigation — Why Did the Number Move? Data Quality First, Then Mix, Segments, and Calendar",
+      "domain": "data-analytics",
+      "category": "data-analytics/analysis-and-sql",
+      "description": "Investigate a business metric that moved unexpectedly in a fixed order — confirm the move is real, rule out data and definition changes, check calendar effects, separate mix shift from rate change, decompose by segment, then match to known events — and report the explanation with its share of the move, its confidence, and what remains unexplained.",
+      "techniques": [
+        "DD-03",
+        "RT-10",
+        "DT-04",
+        "RT-23",
+        "QA-04"
+      ],
+      "keywords": [
+        "metric-investigation",
+        "root-cause-analysis",
+        "mix-shift",
+        "segment-decomposition",
+        "business-analytics",
+        "anomaly-explanation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/framing-and-metrics/analytics_kpi_tree_decomposition.md",
+        "domain-data-analytics/analysis-and-sql/analytics_sql_query_correctness_review.md",
+        "domain-engineering-workflows/workflows/engineering_debugging_root_cause.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-data-analytics/analysis-and-sql/analytics_sql_query_correctness_review.md",
+      "filename": "analytics_sql_query_correctness_review.md",
+      "title": "SQL Query Correctness Review — Grain, Join Fan-Out, Nulls, Time Zones, Dedup, Survivorship",
+      "domain": "data-analytics",
+      "category": "data-analytics/analysis-and-sql",
+      "description": "Review an analysis query for whether it returns the right number, not whether it runs fast: output grain, join fan-out and double counting, null handling in joins, filters and aggregates, time-zone and date-boundary errors, deduplication, survivorship and look-ahead bias — each finding backed by a diagnostic query and a severity.",
+      "techniques": [
+        "QA-18",
+        "DT-05",
+        "RT-05",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "sql-review",
+        "query-correctness",
+        "join-fan-out",
+        "data-validation",
+        "business-analytics",
+        "analysis-queries"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md",
+        "domain-data-analytics/analysis-and-sql/analytics_metric_movement_investigation.md",
+        "domain-agentic-resources/skills/developer-tools/sql-optimization-patterns/SKILL.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-data-analytics/experiments-and-reporting/analytics_ab_test_readout.md",
+      "filename": "analytics_ab_test_readout.md",
+      "title": "A/B Test Readout — Validity Gates, Primary Result, Guardrails, Novelty, Multiplicity, and a Decision Memo",
+      "domain": "data-analytics",
+      "category": "data-analytics/experiments-and-reporting",
+      "description": "Read out a finished product or business A/B test in gated order — sample ratio mismatch, exposure and pre-registration checks, then the primary metric with an interval, guardrails against stated margins, novelty and time trends, and multiple-comparison control on secondaries and segments — and end in a one-page decision memo that separates what was measured from what is inferred.",
+      "techniques": [
+        "QA-08",
+        "RT-05",
+        "QA-04",
+        "QA-02",
+        "AG-08"
+      ],
+      "keywords": [
+        "ab-test-readout",
+        "experiment-analysis",
+        "sample-ratio-mismatch",
+        "guardrail-metrics",
+        "decision-memo",
+        "business-analytics"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md",
+        "domain-AI-ML/model-evaluation-validation/mleval_ab_test_design_for_models.md",
+        "domain-agentic-resources/skills/marketing/ab-test-setup/SKILL.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-data-analytics/experiments-and-reporting/analytics_dashboard_critique.md",
+      "filename": "analytics_dashboard_critique.md",
+      "title": "Dashboard Critique — Does Each Tile Answer a Question Someone Acts On, Correctly and Legibly?",
+      "domain": "data-analytics",
+      "category": "data-analytics/experiments-and-reporting",
+      "description": "Critique an existing business dashboard tile by tile: the question and owner each tile serves, whether its metric is defined and its number trustworthy, whether the chart form fits the question, whether comparisons and targets give it meaning, and what should be cut — ending in a ranked change list rather than a redesign.",
+      "techniques": [
+        "DT-05",
+        "DS-25",
+        "DS-05",
+        "DS-06",
+        "QA-21"
+      ],
+      "keywords": [
+        "dashboard-review",
+        "business-dashboard",
+        "data-visualization",
+        "reporting-quality",
+        "business-analytics",
+        "bi-reporting"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/framing-and-metrics/analytics_kpi_tree_decomposition.md",
+        "domain-AI-ML/production-monitoring/mlmonitor_monitoring_dashboard_design.md",
+        "domain-business-strategy/startup/solo_dev_metrics_dashboard.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-data-analytics/framing-and-metrics/analytics_kpi_tree_decomposition.md",
+      "filename": "analytics_kpi_tree_decomposition.md",
+      "title": "KPI Tree Decomposition — Break an Outcome Metric into Drivers That Multiply or Add Back Up",
+      "domain": "data-analytics",
+      "category": "data-analytics/framing-and-metrics",
+      "description": "Decompose one outcome metric (revenue, gross margin, active accounts) into a driver tree whose branches reconcile arithmetically to the parent, mark which drivers a team can move, size each driver's contribution to a recent change, and name the dominant driver — so a KPI conversation becomes a driver conversation.",
+      "techniques": [
+        "DT-01",
+        "NE-11",
+        "DP-06",
+        "QA-01"
+      ],
+      "keywords": [
+        "kpi-tree",
+        "driver-tree",
+        "metric-decomposition",
+        "business-analytics",
+        "variance-attribution",
+        "operating-metrics"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md",
+        "domain-data-analytics/analysis-and-sql/analytics_metric_movement_investigation.md",
+        "domain-agentic-resources/skills/data-engineering/kpi-dashboard-design/SKILL.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md",
+      "filename": "analytics_metric_definition_spec.md",
+      "title": "Metric Definition Spec — Grain, Numerator, Denominator, Filters, Window, Edge Cases, Owner",
+      "domain": "data-analytics",
+      "category": "data-analytics/framing-and-metrics",
+      "description": "Write an unambiguous spec for one business metric: its grain, numerator and denominator in words and in SQL-shaped logic, inclusion and exclusion filters, time window and time zone, the edge cases that change the number, how it can be gamed, and a named owner — so two analysts computing it independently get the same value.",
+      "techniques": [
+        "DS-02",
+        "CM-02",
+        "MP-04",
+        "QA-21",
+        "OC-03"
+      ],
+      "keywords": [
+        "metric-definition",
+        "business-metrics",
+        "data-dictionary",
+        "semantic-layer",
+        "metric-governance",
+        "business-analytics"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/framing-and-metrics/analytics_kpi_tree_decomposition.md",
+        "domain-data-analytics/analysis-and-sql/analytics_sql_query_correctness_review.md",
+        "domain-product-management/prompts/product_north_star_metric_definition.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-data-analytics/framing-and-metrics/analytics_question_to_analysis_plan.md",
+      "filename": "analytics_question_to_analysis_plan.md",
+      "title": "Question to Analysis Plan — From a Vague Stakeholder Ask to a Decision-Linked Plan",
+      "domain": "data-analytics",
+      "category": "data-analytics/framing-and-metrics",
+      "description": "Turn a vague business ask (\"can you look into churn?\") into a one-page analysis plan: the decision it serves, the question restated so it can be answered, the metric and population, the comparison that would change the decision, the data and its known gaps, the cut list, and a stop rule — before any query is written.",
+      "techniques": [
+        "DD-02",
+        "MP-03",
+        "CM-03",
+        "DP-13",
+        "QA-02"
+      ],
+      "keywords": [
+        "analysis-plan",
+        "stakeholder-request",
+        "problem-framing",
+        "business-analytics",
+        "scoping",
+        "decision-support"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md",
+        "domain-data-analytics/analysis-and-sql/analytics_metric_movement_investigation.md",
+        "domain-science/statistics/science_pre_specified_analysis_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-decision-making/decisioning_chained_alignment_evaluator.md",
       "filename": "decisioning_chained_alignment_evaluator.md",
       "title": "Chained Decision Alignment Evaluator",
@@ -75545,6 +75792,248 @@
         "domain-game-development/testing/testing_gameplay_test_plan.md",
         "domain-game-development/testing/testing_automated_game_testing.md",
         "domain-game-development/performance/performance_frame_budget_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-health-wellness/fitness/fitness_beginner_training_plan.md",
+      "filename": "fitness_beginner_training_plan.md",
+      "title": "Beginner Training Plan — Eight Weeks of Full-Body Strength and Aerobic Work With Explicit Progression Rules",
+      "domain": "health-wellness",
+      "category": "health-wellness/fitness",
+      "description": "Build an eight-week beginner plan for a healthy adult: full-body strength two to three times a week across six movement patterns, aerobic work framed against public-health activity guidance, effort set by RPE and reps in reserve, a double-progression rule for adding load, a pain-versus-soreness stop rule, and form learned from a qualified coach rather than from text. Consumes the Readiness Profile; no rehabilitation.",
+      "techniques": [
+        "DS-02",
+        "DS-26",
+        "OC-09",
+        "QA-01"
+      ],
+      "keywords": [
+        "health-wellness",
+        "strength-training",
+        "beginner",
+        "progressive-overload",
+        "rpe",
+        "aerobic-fitness"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md",
+        "domain-health-wellness/fitness/fitness_program_progression_review.md",
+        "domain-psychology/client-self-use/habit-lifestyle/clientself_exercise_as_antidepressant_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-health-wellness/fitness/fitness_endurance_event_build_plan.md",
+      "filename": "fitness_endurance_event_build_plan.md",
+      "title": "Endurance Event Build Plan — Base, Build, Taper for a First 5K, 10K, Half Marathon, or Century Ride",
+      "domain": "health-wellness",
+      "category": "health-wellness/fitness",
+      "description": "Plan a first endurance event from the person's current base to the start line: a feasibility check of weeks available against weeks needed, base-build-peak-taper phases with gates between them, ramp limits on weekly volume and the long session, cutback weeks, a missed-week and illness protocol, and the injury signs that end running for now. Consumes the Readiness Profile; no rehabilitation, no race-day heroics.",
+      "techniques": [
+        "DT-01",
+        "DS-02",
+        "QA-08",
+        "QA-13"
+      ],
+      "keywords": [
+        "health-wellness",
+        "endurance",
+        "running",
+        "cycling",
+        "taper",
+        "injury-prevention",
+        "event-training"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md",
+        "domain-health-wellness/fitness/fitness_program_progression_review.md",
+        "domain-health-wellness/nutrition/nutrition_meal_structure_planner.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-health-wellness/fitness/fitness_program_progression_review.md",
+      "filename": "fitness_program_progression_review.md",
+      "title": "Program Progression Review — Read the Training Log for Stalls, Overreaching, and When to Deload",
+      "domain": "health-wellness",
+      "category": "health-wellness/fitness",
+      "description": "Review an existing training plan and at least four weeks of log: classify each lift or session as progressing, stalled, or regressing; screen for overreaching and for the few signs that are not training problems at all; walk a stall down a cause tree (adherence, execution, recovery, fuelling, programming); and prescribe exactly one change — often a deload — with a re-review date. Consumes the Readiness Profile.",
+      "techniques": [
+        "RT-10",
+        "RT-05",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "health-wellness",
+        "training-log",
+        "plateau",
+        "deload",
+        "overreaching",
+        "program-review"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-health-wellness/fitness/fitness_beginner_training_plan.md",
+        "domain-health-wellness/fitness/fitness_endurance_event_build_plan.md",
+        "domain-health-wellness/sleep-recovery/sleep_routine_and_environment_audit.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md",
+      "filename": "wellness_readiness_and_red_flag_screen.md",
+      "title": "Readiness and Red-Flag Screen — The Entry Gate Before Any Training, Eating, or Sleep Plan",
+      "domain": "health-wellness",
+      "category": "health-wellness/foundations",
+      "description": "The domain's entry gate. Screens a healthy adult for red flags — exertional chest symptoms, fainting, unexplained breathlessness, known heart/metabolic disease, pregnancy or postpartum, recent surgery or injury, heart-rate or blood-sugar medications, disordered-eating signals, age and deconditioning — and routes to urgent care or a clinician before any plan exists. Otherwise emits a Readiness Profile every other health-wellness prompt consumes.",
+      "techniques": [
+        "QA-08",
+        "CM-09",
+        "OC-04",
+        "QA-20"
+      ],
+      "keywords": [
+        "health-wellness",
+        "readiness-screen",
+        "red-flags",
+        "safety-gate",
+        "exercise-readiness",
+        "medical-clearance"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/major-decisions/personal_health_decision_research.md",
+        "domain-health-wellness/fitness/fitness_beginner_training_plan.md",
+        "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-health-wellness/foundations/wellness_sustainable_routine_designer.md",
+      "filename": "wellness_sustainable_routine_designer.md",
+      "title": "Sustainable Wellness Routine — One Week That Holds Training, Eating Rhythm, and Sleep Together",
+      "domain": "health-wellness",
+      "category": "health-wellness/foundations",
+      "description": "Fit movement, an eating rhythm, and a sleep anchor into one weekly routine sized to the person's measured capacity: a minimum-viable week that survives a bad week, a standard week, recovery placed on purpose, and a disruption protocol for travel, illness, and crunch periods. Consumes the Readiness Profile; distinct from single-habit design.",
+      "techniques": [
+        "ST-44",
+        "DS-26",
+        "ED-04",
+        "QA-13"
+      ],
+      "keywords": [
+        "health-wellness",
+        "routine-design",
+        "weekly-schedule",
+        "consistency",
+        "recovery",
+        "minimum-viable-week"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md",
+        "domain-personal-development/prompts/habits/habits_habit_design_blueprint.md",
+        "domain-health-wellness/sleep-recovery/sleep_routine_and_environment_audit.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-health-wellness/nutrition/nutrition_eating_pattern_audit.md",
+      "filename": "nutrition_eating_pattern_audit.md",
+      "title": "Eating Pattern Audit — What Your Meals Actually Look Like, and the One to Three Changes Worth Making",
+      "domain": "health-wellness",
+      "category": "health-wellness/nutrition",
+      "description": "Audit a healthy adult's eating pattern from a plain-language food and timing log — regularity, protein spread, plant foods and fibre, fuelling around training, alcohol, hunger and energy — and return strengths, the one to three highest-leverage changes, and what to leave alone. STRONG-GUARD: stops and redirects on restriction, compensation, rapid weight-loss goals, minors, pregnancy, or diagnosed conditions; sets no calorie targets and prescribes no supplements.",
+      "techniques": [
+        "QA-08",
+        "RT-02",
+        "CM-02",
+        "QA-20"
+      ],
+      "keywords": [
+        "health-wellness",
+        "nutrition",
+        "eating-pattern",
+        "food-log",
+        "strong-guard",
+        "disordered-eating-guard"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md",
+        "domain-health-wellness/nutrition/nutrition_meal_structure_planner.md",
+        "domain-psychology/client-self-use/crisis-self-triage/clientself_am_i_in_crisis_self_triage.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-health-wellness/nutrition/nutrition_meal_structure_planner.md",
+      "filename": "nutrition_meal_structure_planner.md",
+      "title": "Meal Structure Planner — Protein, Fibre, and Plate Structure Built Around Your Constraints and Cuisine",
+      "domain": "health-wellness",
+      "category": "health-wellness/nutrition",
+      "description": "Design a repeatable eating structure for a healthy adult: a plate pattern in hand-sized portions, protein at each main meal, plants and fibre across the day, training-day and rest-day templates with fuelling around sessions, and swap lists drawn from the person's own cuisine, budget, and cooking time. STRONG-GUARD: stops and redirects on restriction, compensation, rapid weight-loss goals, minors, pregnancy, or diagnosed conditions; no calorie targets, no supplements. Structure only — menus and shopping go to the weekly meal planner.",
+      "techniques": [
+        "QA-08",
+        "DS-26",
+        "ED-04",
+        "CM-02"
+      ],
+      "keywords": [
+        "health-wellness",
+        "nutrition",
+        "meal-structure",
+        "protein",
+        "fibre",
+        "strong-guard",
+        "sports-nutrition"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-health-wellness/nutrition/nutrition_eating_pattern_audit.md",
+        "domain-productivity/home-life/home_meal_plan_week.md",
+        "domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-health-wellness/sleep-recovery/sleep_routine_and_environment_audit.md",
+      "filename": "sleep_routine_and_environment_audit.md",
+      "title": "Sleep Routine and Environment Audit — Timing, Light, Caffeine, Alcohol, and Bedroom for a Healthy Adult",
+      "domain": "health-wellness",
+      "category": "health-wellness/sleep-recovery",
+      "description": "Audit a healthy adult's sleep from a one-to-two-week log: wake-time regularity, sleep opportunity, morning and evening light, caffeine and alcohol timing, late meals and training, bedroom environment, wind-down, and naps — then run a two-week experiment on the two or three highest-leverage changes. Routes suspected sleep apnoea, chronic insomnia, and other sleep-disorder signs to a clinician (and insomnia to the CBT-I prompt) before any audit. No sleep aids or supplements.",
+      "techniques": [
+        "QA-08",
+        "RT-02",
+        "DS-06",
+        "QA-04"
+      ],
+      "keywords": [
+        "health-wellness",
+        "sleep",
+        "sleep-hygiene",
+        "circadian-rhythm",
+        "recovery",
+        "caffeine"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md",
+        "domain-psychology/client-self-use/coping-by-concern/clientself_sleep_cbt_i_sleep_restriction_calculator.md",
+        "domain-health-wellness/foundations/wellness_sustainable_routine_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -108002,6 +108491,248 @@
       }
     },
     {
+      "path": "domain-operations/process-improvement/ops_capacity_and_bottleneck_model.md",
+      "filename": "ops_capacity_and_bottleneck_model.md",
+      "title": "Capacity and Bottleneck Model — Constraint Identification, Effective Utilization, Little's Law, and a Queueing Sanity Check",
+      "domain": "operations",
+      "category": "operations/process-improvement",
+      "description": "Model the capacity of a multi-step physical or service process: effective capacity per step after availability losses, utilization against average and peak demand, the one constraint that sets throughput, a Little's Law cross-check of WIP against lead time, and a queueing sanity check that explains why running the constraint near 100% makes lead times erratic.",
+      "techniques": [
+        "NE-11",
+        "DP-09",
+        "DS-02",
+        "QA-02"
+      ],
+      "keywords": [
+        "capacity-planning",
+        "bottleneck",
+        "theory-of-constraints",
+        "littles-law",
+        "utilization",
+        "queueing"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-operations/process-improvement/ops_process_map_and_waste_scan.md",
+        "domain-operations/process-improvement/ops_dmaic_project_charter.md",
+        "domain-business-strategy/client-services/services_capacity_and_utilization_planner.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-operations/process-improvement/ops_dmaic_project_charter.md",
+      "filename": "ops_dmaic_project_charter.md",
+      "title": "DMAIC Project Charter — Problem Statement, CTQs, Baseline, Scope, and the Measurement-System Check",
+      "domain": "operations",
+      "category": "operations/process-improvement",
+      "description": "Charter a Six Sigma DMAIC improvement project before the work starts — a problem statement with no cause or solution in it, CTQs traced to the customer, a baseline with its data source, in/out scope, a goal and benefit estimate labelled as estimates, gate dates, and a measurement-system check that confirms the data can be trusted before Analyze begins.",
+      "techniques": [
+        "DS-01",
+        "DS-02",
+        "CM-03",
+        "QA-04"
+      ],
+      "keywords": [
+        "dmaic",
+        "six-sigma",
+        "project-charter",
+        "ctq",
+        "baseline",
+        "measurement-system-analysis"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-operations/process-improvement/ops_root_cause_a3_report.md",
+        "domain-operations/process-improvement/ops_process_map_and_waste_scan.md",
+        "domain-risk/risk_fmea_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-operations/process-improvement/ops_process_map_and_waste_scan.md",
+      "filename": "ops_process_map_and_waste_scan.md",
+      "title": "Process Map and Waste Scan — SIPOC, Value-Stream Timeline, Eight Wastes, and Lead Time vs. Touch Time",
+      "domain": "operations",
+      "category": "operations/process-improvement",
+      "description": "Map an existing process as it actually runs — a SIPOC to fix the boundaries, then a value-stream timeline with touch time and queue time per step — scan it for the eight lean wastes with evidence, and separate lead time from touch time so the improvement targets the waiting rather than the work.",
+      "techniques": [
+        "DS-01",
+        "DS-02",
+        "RT-05",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "process-mapping",
+        "value-stream",
+        "sipoc",
+        "lean",
+        "eight-wastes",
+        "lead-time"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-operations/process-improvement/ops_root_cause_a3_report.md",
+        "domain-operations/process-improvement/ops_capacity_and_bottleneck_model.md",
+        "domain-professional-writing/business-writing/business_writing_sop.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-operations/process-improvement/ops_root_cause_a3_report.md",
+      "filename": "ops_root_cause_a3_report.md",
+      "title": "Root-Cause A3 Report — Background, Current Condition with Data, 5-Why and Fishbone, Countermeasures, Follow-Up",
+      "domain": "operations",
+      "category": "operations/process-improvement",
+      "description": "Write a one-page A3 problem-solving report for an operational problem — a quantified gap, a current condition built from data rather than opinion, a fishbone to widen the search and a 5-why chain to deepen it, countermeasures matched to verified causes, and a follow-up plan that says how you will know the cause was right.",
+      "techniques": [
+        "RT-09",
+        "RT-05",
+        "DS-01",
+        "DS-02",
+        "QA-02"
+      ],
+      "keywords": [
+        "a3",
+        "root-cause",
+        "fishbone",
+        "five-whys",
+        "countermeasures",
+        "lean"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-operations/process-improvement/ops_process_map_and_waste_scan.md",
+        "domain-operations/process-improvement/ops_dmaic_project_charter.md",
+        "domain-engineering-workflows/workflows/engineering_post_mortem_root_cause_ladder.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-operations/project-delivery/ops_non_software_project_plan.md",
+      "filename": "ops_non_software_project_plan.md",
+      "title": "Non-Software Project Plan — WBS, Critical Path, RACI, Milestones, and Risks for Events, Facility Moves, and Rollouts",
+      "domain": "operations",
+      "category": "operations/project-delivery",
+      "description": "Plan a physical or organizational project with a fixed date — an office move, an event, an equipment installation, a multi-site process rollout — as a deliverable-based WBS, a dependency network with the critical path and float computed, a RACI with one accountable owner per deliverable, dated milestones and go/no-go gates, and the risks that sit on the critical path.",
+      "techniques": [
+        "DT-01",
+        "RT-07",
+        "OC-03",
+        "QA-02"
+      ],
+      "keywords": [
+        "project-plan",
+        "work-breakdown-structure",
+        "critical-path",
+        "raci",
+        "office-move",
+        "event-planning"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-operations/supply-chain-procurement/ops_rfp_procurement_package.md",
+        "domain-risk/risk_register_builder.md",
+        "domain-product-management/prompts/product_delivery_sprint_planner.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-operations/supply-chain-procurement/ops_rfp_procurement_package.md",
+      "filename": "ops_rfp_procurement_package.md",
+      "title": "Buyer-Side RFP Procurement Package — Requirements, an Evaluation Rubric Frozen Before Bids, a Fair Q&A Process, and Scoring",
+      "domain": "operations",
+      "category": "operations/supply-chain-procurement",
+      "description": "Assemble the buyer's RFP package for goods or services: must-have vs. weighted requirements, a structured price form that makes bids comparable, pass/fail gates, an evaluation rubric and price formula fixed and dated before any bid is opened, a single-channel Q&A process with answers published to all bidders, independent scoring before consensus, and the award record.",
+      "techniques": [
+        "CM-03",
+        "DP-03",
+        "OC-03",
+        "QA-02"
+      ],
+      "keywords": [
+        "rfp",
+        "procurement",
+        "sourcing-event",
+        "evaluation-rubric",
+        "bid-scoring",
+        "buyer-side"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-operations/supply-chain-procurement/ops_supplier_selection_scorecard.md",
+        "domain-finance/treasury-capital-markets/finance_bank_relationship_rfp_framework.md",
+        "domain-professional-writing/business-writing/business_writing_proposal.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-operations/supply-chain-procurement/ops_inventory_reorder_policy.md",
+      "filename": "ops_inventory_reorder_policy.md",
+      "title": "Inventory Reorder Policy — ABC/XYZ Segmentation, Safety Stock, Reorder Point, EOQ Sanity, and Service Level",
+      "domain": "operations",
+      "category": "operations/supply-chain-procurement",
+      "description": "Set a reorder policy for stocked items: segment SKUs by value (ABC) and demand variability (XYZ), assign a target service level per segment, compute safety stock including lead-time variability, derive the reorder point, sanity-check order quantity against EOQ and MOQ, and state the cost of each extra point of service — with intermittent items routed to methods built for them.",
+      "techniques": [
+        "NE-11",
+        "DS-06",
+        "QA-04",
+        "QA-02"
+      ],
+      "keywords": [
+        "inventory-management",
+        "safety-stock",
+        "reorder-point",
+        "eoq",
+        "abc-xyz",
+        "service-level"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-operations/supply-chain-procurement/ops_supplier_selection_scorecard.md",
+        "domain-operations/process-improvement/ops_capacity_and_bottleneck_model.md",
+        "domain-AI-ML/specialized-ml/time-series/ts_intermittent_demand_forecasting.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-operations/supply-chain-procurement/ops_supplier_selection_scorecard.md",
+      "filename": "ops_supplier_selection_scorecard.md",
+      "title": "Supplier Selection Scorecard — Weighted Criteria, Total Cost of Ownership, Supply Risk, and the Dual-Sourcing Call",
+      "domain": "operations",
+      "category": "operations/supply-chain-procurement",
+      "description": "Choose among competing suppliers for a recurring material or service: fix weighted criteria and anchored 1–5 scales before scoring, compute landed total cost of ownership rather than unit price, score supply risk explicitly, test whether the winner survives a change in weights, and decide single, dual, or split sourcing with the premium stated.",
+      "techniques": [
+        "DP-03",
+        "RT-02",
+        "NE-11",
+        "QA-02"
+      ],
+      "keywords": [
+        "supplier-selection",
+        "sourcing",
+        "total-cost-of-ownership",
+        "weighted-scorecard",
+        "dual-sourcing",
+        "supply-risk"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-operations/supply-chain-procurement/ops_rfp_procurement_package.md",
+        "domain-operations/supply-chain-procurement/ops_inventory_reorder_policy.md",
+        "domain-business-strategy/research/research_vendor_evaluation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-parenting/caregiver-facing/ages-0-3/parenting_attachment_repair_after_long_absence.md",
       "filename": "parenting_attachment_repair_after_long_absence.md",
       "title": "Attachment Repair After a Long Absence (0–3 years)",
@@ -114065,6 +114796,253 @@
         "domain-personal-development/prompts/identity/identity_life_audit_reckoning.md",
         "domain-personal-development/prompts/thinking/thinking_regret_minimization.md",
         "domain-personal-development/prompts/resilience/resilience_motivation_diagnosis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/job-search/jobsearch_behavioral_interview_story_bank.md",
+      "filename": "jobsearch_behavioral_interview_story_bank.md",
+      "title": "Behavioral Interview Story Bank — Eight True Stories Mapped to the Competencies You Will Be Asked About",
+      "domain": "personal-development",
+      "category": "personal-development/job-search",
+      "description": "Build a reusable bank of eight to twelve true work stories for behavioral interviews in any field: each drafted in situation–task–action–result form with the candidate's own part isolated, mapped to the competencies the target postings screen for, stress-tested against the follow-up questions interviewers actually ask, and checked for coverage gaps — so answers are prepared from real episodes rather than improvised or embellished.",
+      "techniques": [
+        "ST-02",
+        "ST-46",
+        "RT-05",
+        "QA-02",
+        "DD-02"
+      ],
+      "keywords": [
+        "job-search",
+        "interview-prep",
+        "behavioral-interview",
+        "star-method",
+        "competencies",
+        "candidate"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-AI-ML/learning-ai-ml/mllearn_ml_interview_prep.md",
+        "domain-personal-development/job-search/jobsearch_job_posting_fit_decoder.md",
+        "domain-personal-development/job-search/jobsearch_pipeline_tracker_and_cadence.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/job-search/jobsearch_cover_letter_builder.md",
+      "filename": "jobsearch_cover_letter_builder.md",
+      "title": "Cover Letter Builder — One Posting, One Angle, Three Proof Points",
+      "domain": "personal-development",
+      "category": "personal-development/job-search",
+      "description": "Write a cover letter for one specific posting that opens with the candidate's angle on the role's main problem, backs it with two or three substantiated proof points mapped to the posting's core requirements, addresses at most one gap directly, and fits on half a page — refusing the reusable template letter and any claim not on the résumé.",
+      "techniques": [
+        "ST-01",
+        "RP-02",
+        "ST-46",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "job-search",
+        "cover-letter",
+        "application",
+        "professional-writing",
+        "candidate"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/job-search/jobsearch_job_posting_fit_decoder.md",
+        "domain-personal-development/job-search/jobsearch_resume_evidence_rewriter.md",
+        "domain-personal-development/career-transformation/career_positioning_statement.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/job-search/jobsearch_job_posting_fit_decoder.md",
+      "filename": "jobsearch_job_posting_fit_decoder.md",
+      "title": "Job Posting Fit Decoder — Real Requirements, Hidden Signals, and an Apply/Skip Call",
+      "domain": "personal-development",
+      "category": "personal-development/job-search",
+      "description": "Read one job posting from the candidate's side: separate the requirements that will actually screen from the wish-list, surface what the wording implies about the team and the role's hard parts, map each real requirement to the candidate's evidence, and return apply, apply-with-angle, or skip — the candidate-side reading of a posting, not the employer-side writing of one.",
+      "techniques": [
+        "DT-05",
+        "RT-05",
+        "QA-23",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "job-search",
+        "job-posting",
+        "fit-assessment",
+        "requirements",
+        "application-strategy",
+        "candidate"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_job_description_writer.md",
+        "domain-personal-development/job-search/jobsearch_target_role_and_market_map.md",
+        "domain-personal-development/job-search/jobsearch_cover_letter_builder.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/job-search/jobsearch_pipeline_tracker_and_cadence.md",
+      "filename": "jobsearch_pipeline_tracker_and_cadence.md",
+      "title": "Job Search Pipeline Tracker and Weekly Cadence — Find the Stage That Is Leaking",
+      "domain": "personal-development",
+      "category": "personal-development/job-search",
+      "description": "Set up and run an active job search as a pipeline: a tracker with defined stages and conversion rates, a weekly cadence sized to real hours, a diagnosis of which stage is leaking and why, and one change per week — ending at the offer, which is handed off to the offer-evaluation prompt.",
+      "techniques": [
+        "DS-02",
+        "OC-03",
+        "RT-09",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "job-search",
+        "pipeline",
+        "application-tracking",
+        "weekly-review",
+        "funnel-metrics",
+        "candidate"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/prompts/life-transitions/lifetransition_job_loss_recovery_plan.md",
+        "domain-personal-development/major-decisions/personal_career_offer_evaluation.md",
+        "domain-personal-development/job-search/jobsearch_target_role_and_market_map.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/job-search/jobsearch_linkedin_profile_audit.md",
+      "filename": "jobsearch_linkedin_profile_audit.md",
+      "title": "LinkedIn Profile Audit — Section by Section Against One Target Role",
+      "domain": "personal-development",
+      "category": "personal-development/job-search",
+      "description": "Audit a LinkedIn profile section by section against one target role family and how recruiters actually search — headline, about, experience, skills, and consistency with the résumé — returning a pass/fix verdict per section, rewritten text for the fixes, and a list of claims that differ from the résumé or cannot be substantiated.",
+      "techniques": [
+        "DT-05",
+        "DD-02",
+        "RP-02",
+        "RT-05",
+        "QA-12"
+      ],
+      "keywords": [
+        "job-search",
+        "linkedin",
+        "professional-profile",
+        "recruiter-search",
+        "personal-brand",
+        "candidate"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/career-transformation/career_positioning_statement.md",
+        "domain-personal-development/job-search/jobsearch_resume_evidence_rewriter.md",
+        "domain-personal-development/job-search/jobsearch_networking_outreach_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/job-search/jobsearch_networking_outreach_plan.md",
+      "filename": "jobsearch_networking_outreach_plan.md",
+      "title": "Networking Outreach Plan — A Ranked Contact List, One Ask Each, and a Follow-Up Rule",
+      "domain": "personal-development",
+      "category": "personal-development/job-search",
+      "description": "Build a candidate's job-search outreach plan: a contact list ranked by proximity to the target role, one specific and easy-to-decline ask per contact (referral, informational conversation, or introduction), short messages written for each tie strength, and a two-touch follow-up rule — the job seeker's side of outreach, not a recruiter's sourcing or a sales sequence.",
+      "techniques": [
+        "RP-02",
+        "CM-02",
+        "DS-06",
+        "DS-40",
+        "QA-20"
+      ],
+      "keywords": [
+        "job-search",
+        "networking",
+        "referrals",
+        "informational-interview",
+        "outreach",
+        "candidate"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-hr-management/hiring/hr_sourcing_outreach.md",
+        "domain-agentic-resources/skills/marketing/cold-email/SKILL.md",
+        "domain-personal-development/job-search/jobsearch_pipeline_tracker_and_cadence.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/job-search/jobsearch_resume_evidence_rewriter.md",
+      "filename": "jobsearch_resume_evidence_rewriter.md",
+      "title": "Résumé Evidence Rewriter — Bullets That Survive a Reference Check",
+      "domain": "personal-development",
+      "category": "personal-development/job-search",
+      "description": "Rewrite résumé bullets for one target role family as action–scope–result statements built only from facts the candidate can substantiate, tagging every number as verified, estimated or missing, flagging any claim that would not survive a reference check, and reordering content toward the target — a rewrite of the document, not an inventory of skills.",
+      "techniques": [
+        "DD-02",
+        "ST-46",
+        "RT-23",
+        "QA-26",
+        "QA-01"
+      ],
+      "keywords": [
+        "job-search",
+        "resume",
+        "cv",
+        "accomplishments",
+        "honesty",
+        "candidate"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/career-transformation/career_residual_skills_inventory.md",
+        "domain-personal-development/job-search/jobsearch_job_posting_fit_decoder.md",
+        "domain-personal-development/job-search/jobsearch_linkedin_profile_audit.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/job-search/jobsearch_target_role_and_market_map.md",
+      "filename": "jobsearch_target_role_and_market_map.md",
+      "title": "Target Role and Market Map — Pick One Primary Role Family Before You Apply Anywhere",
+      "domain": "personal-development",
+      "category": "personal-development/job-search",
+      "description": "Turn a vague 'I'm looking for something new' into one primary target role family and one fallback, each with real posting titles, the employer segments actually hiring for it, the evidence gap between the candidate and a typical posting, and a kill signal — the market-facing step that comes after deciding to leave and before writing a single application.",
+      "techniques": [
+        "ST-01",
+        "RT-02",
+        "RT-23",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "job-search",
+        "target-role",
+        "labor-market",
+        "role-families",
+        "career-change",
+        "candidate"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-personal-development/career-transformation/career_internal_vs_external_move.md",
+        "domain-personal-development/job-search/jobsearch_job_posting_fit_decoder.md",
+        "domain-personal-development/job-search/jobsearch_resume_evidence_rewriter.md"
       ],
       "has_frontmatter": true
     },
@@ -143970,6 +144948,247 @@
           "decide"
         ]
       }
+    },
+    {
+      "path": "domain-sales-customer/customer-success/cs_customer_qbr_prep.md",
+      "filename": "cs_customer_qbr_prep.md",
+      "title": "Customer QBR Prep — Outcomes Against Their Goals, Sourced Value, and the Decisions You Need from the Room",
+      "domain": "sales-customer",
+      "category": "sales-customer/customer-success",
+      "description": "Prepare a customer-facing quarterly business review for one account: restate the customer's own success criteria, report progress against each with provenance-tagged numbers, surface what is not working before they do, and design the agenda around two or three decisions the executives in the room must make — distinct from an account health assessment, which is the internal diagnosis this meeting draws on, and from a company's own internal quarterly review.",
+      "techniques": [
+        "RP-02",
+        "DS-02",
+        "RT-05",
+        "NE-23"
+      ],
+      "keywords": [
+        "customer-success",
+        "qbr",
+        "executive-business-review",
+        "account-management",
+        "value-realization",
+        "b2b"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md",
+        "domain-business-strategy/go-to-market/workflow_cs_account_health.md",
+        "domain-business-strategy/go-to-market/workflow_customer_success_onboarding_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/customer-success/cs_renewal_risk_and_save_plan.md",
+      "filename": "cs_renewal_risk_and_save_plan.md",
+      "title": "Renewal Risk and Save Plan — One B2B Contract, Its Real Decider, the Deciding Reason, and a Save Sequence with a Floor",
+      "domain": "sales-customer",
+      "category": "sales-customer/customer-success",
+      "description": "For one named B2B account with a renewal inside roughly 180 days, map the contract mechanics and the people who decide the renewal now, separate the stated risk from the deciding reason with evidence, and build a dated save sequence that remediates value before it concedes price — with a concession floor, a downsell path and a let-go rule — distinct from the churn-prevention skill's self-serve cancel flows, save offers and dunning.",
+      "techniques": [
+        "RT-05",
+        "DS-06",
+        "CM-02",
+        "DP-13"
+      ],
+      "keywords": [
+        "customer-success",
+        "renewal",
+        "churn-risk",
+        "retention",
+        "account-management",
+        "b2b"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/customer-success/cs_customer_qbr_prep.md",
+        "domain-business-strategy/go-to-market/workflow_cs_account_health.md",
+        "domain-agentic-resources/skills/marketing/churn-prevention/SKILL.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/sales/sales_deal_qualification_scorecard.md",
+      "filename": "sales_deal_qualification_scorecard.md",
+      "title": "Deal Qualification Scorecard — MEDDPICC Scored on Buyer Evidence, Not Rep Belief",
+      "domain": "sales-customer",
+      "category": "sales-customer/sales",
+      "description": "Score one open opportunity against the eight MEDDPICC elements using only evidence the buyer has given or done, grade each element Verified / Inferred / Unknown, and return a mechanical qualification verdict plus the two questions that would close the largest gap — distinct from discovery-call prep, which plans the conversation that produces this evidence.",
+      "techniques": [
+        "DS-01",
+        "RT-05",
+        "AG-02",
+        "QA-04",
+        "DP-13"
+      ],
+      "keywords": [
+        "sales",
+        "qualification",
+        "meddpicc",
+        "opportunity-management",
+        "deal-review",
+        "b2b"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/sales/sales_mutual_close_plan.md",
+        "domain-sales-customer/sales/sales_forecast_commit_review.md",
+        "domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/sales/sales_forecast_commit_review.md",
+      "filename": "sales_forecast_commit_review.md",
+      "title": "Forecast Commit Review — Evidence per Deal for Commit, Best Case and Pipeline, and a Number You Can Defend",
+      "domain": "sales-customer",
+      "category": "sales-customer/sales",
+      "description": "Prepare a rep's or manager's forecast call: place each deal closing this period in Commit, Best Case or Pipeline by a stated evidence test rather than by stage or feel, show the one fact that would move each deal between categories, and roll the categories into a committed number with a range and the history-based haircut — distinct from pipeline risk assessment, which triages the whole pipeline for action rather than calling this period's number.",
+      "techniques": [
+        "RT-05",
+        "AG-02",
+        "NE-10",
+        "QA-04"
+      ],
+      "keywords": [
+        "sales",
+        "forecasting",
+        "commit",
+        "pipeline-review",
+        "sales-management",
+        "revenue"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/sales/sales_deal_qualification_scorecard.md",
+        "domain-sales-customer/sales/sales_mutual_close_plan.md",
+        "domain-business-strategy/go-to-market/workflow_sales_pipeline_risk_assessment.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/sales/sales_mutual_close_plan.md",
+      "filename": "sales_mutual_close_plan.md",
+      "title": "Mutual Close Plan — A Buyer-Owned Path from Today to Go-Live, Built Backward from Their Date",
+      "domain": "sales-customer",
+      "category": "sales-customer/sales",
+      "description": "Build a mutual action plan the buyer can own and forward internally: work backward from the buyer's own go-live event through every approval, security, legal and procurement step, give each step a named owner on their side and ours with a date, mark the gates that stop the deal, and produce the version to share — distinct from the negotiation close, which handles the final concession rather than the path to signature.",
+      "techniques": [
+        "QA-08",
+        "DP-07",
+        "RP-02",
+        "OC-03"
+      ],
+      "keywords": [
+        "sales",
+        "mutual-action-plan",
+        "close-plan",
+        "enterprise-sales",
+        "buyer-enablement",
+        "deal-execution"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/sales/sales_deal_qualification_scorecard.md",
+        "domain-sales-customer/sales/sales_forecast_commit_review.md",
+        "domain-negotiation/at-the-table/negotiation_closing_and_final_concession.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/sales/sales_outbound_prospecting_sequence.md",
+      "filename": "sales_outbound_prospecting_sequence.md",
+      "title": "Outbound Prospecting Sequence — Account Tiers, Trigger Evidence, and a Multi-Channel Touch Plan (Strategy, Not Copy)",
+      "domain": "sales-customer",
+      "category": "sales-customer/sales",
+      "description": "Design the strategy layer of an outbound motion for a named account list: tier accounts by fit and a dated trigger, map the personas to reach in each, lay out a cross-channel touch cadence sized to the rep's real capacity, and define exit rules — then hand each touch's copy brief to the cold-email skill rather than writing the messages.",
+      "techniques": [
+        "DS-06",
+        "RT-05",
+        "OC-03",
+        "DP-13"
+      ],
+      "keywords": [
+        "sales",
+        "outbound",
+        "prospecting",
+        "account-based",
+        "cadence",
+        "sdr"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/sales/sales_deal_qualification_scorecard.md",
+        "domain-agentic-resources/skills/marketing/cold-email/SKILL.md",
+        "domain-agentic-resources/skills/marketing/sales-enablement/SKILL.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/support/support_escalation_response_drafter.md",
+      "filename": "support_escalation_response_drafter.md",
+      "title": "Escalation Response Drafter — The Customer Reply and the Internal Handoff Brief, Written Together So They Cannot Disagree",
+      "domain": "sales-customer",
+      "category": "sales-customer/support",
+      "description": "For one escalated support case, draft two linked artifacts from the same facts: a customer-facing reply that names the specific impact, owns what is ours, separates known from unknown, and commits only to the next update it can keep; and a self-contained internal handoff brief carrying the timeline, what has been tried, every commitment the reply makes, and who holds authority for the customer's ask — distinct from deciding whether to escalate and from deciding what to concede.",
+      "techniques": [
+        "RP-02",
+        "NE-20",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "support",
+        "escalation",
+        "customer-communication",
+        "handoff",
+        "incident-communication",
+        "customer-support"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/support/support_ticket_triage_and_routing.md",
+        "domain-decision-making/decisioning_escalation_decision_tree.md",
+        "domain-negotiation/contexts/negotiation_customer_escalation_concession.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-sales-customer/support/support_ticket_triage_and_routing.md",
+      "filename": "support_ticket_triage_and_routing.md",
+      "title": "Support Ticket Triage and Routing — Severity from Impact, Priority from Rules, a Queue and an SLA Clock per Ticket",
+      "domain": "sales-customer",
+      "category": "sales-customer/support",
+      "description": "Triage a live batch of customer support tickets: assign severity from observable customer impact, derive priority by stated rules rather than by who is shouting, route each ticket to a named queue with its SLA clock, detect clusters that are really one incident, and return the tickets that cannot be triaged yet with the one question that unblocks each — distinct from the intake-triage skill and the solo-dev support system, which design the system rather than run it on real tickets.",
+      "techniques": [
+        "DS-06",
+        "RT-10",
+        "OC-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "support",
+        "triage",
+        "ticket-routing",
+        "sla",
+        "severity",
+        "customer-support"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-09-24",
+      "related_prompts": [
+        "domain-sales-customer/support/support_escalation_response_drafter.md",
+        "domain-agentic-resources/skills/non-coding/cross-domain/intake-triage-pattern/SKILL.md",
+        "domain-business-strategy/startup/solo_dev_support_system.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-science/methods-foundations/science_experimental_design_advisor.md",

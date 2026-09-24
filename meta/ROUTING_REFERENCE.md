@@ -1430,7 +1430,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
   - Example: "Plan outbound to these accounts" (targeting, triggers, cadence — not copy) → `sales/sales_outbound_prospecting_sequence.md`
   - Example: "Build a close plan with the buyer" → `sales/sales_mutual_close_plan.md`
   - Example: "Prep my forecast commit call" → `sales/sales_forecast_commit_review.md`
-  - Example: "Prep a QBR" → `customer-success/cs_quarterly_business_review_prep.md`
+  - Example: "Prep a QBR" → `customer-success/cs_customer_qbr_prep.md`
   - Example: "This renewal is at risk" → `customer-success/cs_renewal_risk_and_save_plan.md`
   - Example: "Design a ticket severity and routing rubric" → `support/support_ticket_triage_and_routing.md`
   - Example: "Reply to an escalated customer" → `support/support_escalation_response_drafter.md`
