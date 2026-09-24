@@ -1,7 +1,7 @@
 # Creative Writing: Comprehensive Guide
 
 > Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
-> This domain covers fiction, narrative nonfiction, essays, poetry, songwriting, screenwriting, documentary treatments, and creative content development.
+> This domain covers fiction (including romance, horror, thriller, mystery, and speculative genre workshops), narrative nonfiction, essays, poetry, songwriting, screenwriting, TV pilots and series bibles, documentary treatments, comedy craft, continuity auditing, and creative content development.
 
 ---
 
@@ -209,19 +209,19 @@ This domain is for **adult / mature creative writing** — fiction, poetry, crea
 - **Writing for children/teens** (board book through young-teen crossover, kidlit publishing) → [`domain-childrens-writing/`](../domain-childrens-writing/)
 - **Professional / business prose** (proposals, reports, field-specific business writing) → [`domain-professional-writing/`](../domain-professional-writing/)
 
-## Prompts in This Domain (30)
+## Prompts in This Domain (36)
 
 Organized into eight subdirectories by form and function:
 
 ```
 domain-creative-writing/
 ├── fiction/                 # long- and short-form fiction craft (7)
-├── craft-tools/             # cross-cutting craft applied to any form (10)
-├── genre-workshops/         # genre conventions and deep dives (3)
+├── craft-tools/             # cross-cutting craft applied to any form (12)
+├── genre-workshops/         # genre conventions and deep dives (6)
 ├── creative-nonfiction/     # memoir, essay, reported narrative (2)
 ├── poetry/                  # poetic forms, imagery, figuration (2)
 ├── songwriting/             # original song lyrics: drafting, prosody, structure (2)
-├── script-stage/            # screen, TV, stage scripts, documentary treatments (2)
+├── script-stage/            # screen, TV, stage scripts, series bibles, documentary treatments (3)
 └── publishing-career/       # query, synopsis, pitch, positioning (2)
 ```
 
@@ -253,6 +253,8 @@ domain-creative-writing/
 | Develop theme and motif without preaching | [`craft-tools/writing_theme_and_motif_development.md`](craft-tools/writing_theme_and_motif_development.md) |
 | Strengthen the opening pages and hook | [`craft-tools/writing_opening_pages_and_hook.md`](craft-tools/writing_opening_pages_and_hook.md) |
 | Fix a rushed or unearned ending | [`craft-tools/writing_endings_and_resolution_workshop.md`](craft-tools/writing_endings_and_resolution_workshop.md) |
+| Make a scene or passage funnier (comic premise, the game, heightening, joke timing) | [`craft-tools/writing_comedy_and_humor_craft.md`](craft-tools/writing_comedy_and_humor_craft.md) |
+| Build a story bible from the text and audit a manuscript or series for continuity errors and plot holes | [`craft-tools/writing_series_continuity_audit.md`](craft-tools/writing_series_continuity_audit.md) |
 
 **Genre Workshops (`genre-workshops/`)**
 
@@ -261,6 +263,9 @@ domain-creative-writing/
 | Get conventions across genres (overview) | [`genre-workshops/writing_genre_specific_guidance.md`](genre-workshops/writing_genre_specific_guidance.md) |
 | Plot a fair-play mystery / crime story | [`genre-workshops/writing_mystery_and_crime_craft.md`](genre-workshops/writing_mystery_and_crime_craft.md) |
 | Build SF/fantasy with consistent rules and honest extrapolation | [`genre-workshops/writing_speculative_fiction_craft.md`](genre-workshops/writing_speculative_fiction_craft.md) |
+| Plot a romance: interlocking arcs, a real barrier, relationship beats, HEA/HFN | [`genre-workshops/writing_romance_genre_workshop.md`](genre-workshops/writing_romance_genre_workshop.md) |
+| Make horror frightening: the fear beneath, threat rules, reveal budget, dread ladder | [`genre-workshops/writing_horror_genre_workshop.md`](genre-workshops/writing_horror_genre_workshop.md) |
+| Plot a thriller: antagonist's plan, clock, move/counter-move, "why doesn't X just" test (not a whodunit) | [`genre-workshops/writing_thriller_suspense_workshop.md`](genre-workshops/writing_thriller_suspense_workshop.md) |
 
 **Creative Nonfiction (`creative-nonfiction/`)**
 
@@ -290,6 +295,7 @@ domain-creative-writing/
 | You want to... | Prompt |
 |----------------|--------|
 | Structure a screenplay, teleplay, or stage script | [`script-stage/writing_screenplay_framework.md`](script-stage/writing_screenplay_framework.md) |
+| Develop a TV series: the engine, pilot type and acts, series bible, episode springboards | [`script-stage/writing_tv_pilot_and_series_bible.md`](script-stage/writing_tv_pilot_and_series_bible.md) |
 | Write a documentary treatment (question, access, arc, style, ethics; no fabrication) | [`script-stage/writing_documentary_treatment.md`](script-stage/writing_documentary_treatment.md) |
 
 **Publishing & Career (`publishing-career/`)**
@@ -870,4 +876,5 @@ Output: Enhanced dialogue with subtext analysis
 *Created: 2026-01-26*
 *Updated: 2026-06-18 - Reorganized into 7 subdirectories; expanded to 27 prompts; added routing table, scope boundary, and difficulty/technique frontmatter*
 *Updated: 2026-09-24 - Added `songwriting/` (2 prompts) and a documentary treatment prompt in `script-stage/`; 30 prompts across 8 subdirectories*
+*Updated: 2026-09-24 - Added romance, horror, and thriller/suspense genre workshops; a TV pilot and series bible prompt; comedy craft and a series continuity audit in `craft-tools/`; 36 prompts across 8 subdirectories*
 *Domain: Creative Writing*
