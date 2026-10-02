@@ -1,7 +1,7 @@
 # Expansion Roadmap — `domain-data-analytics/`
 
-**Status as of 2026-09-24:** Wave 1 shipped (coverage roadmap). Eight prompts in
-three subdirectories, created to fill the business-analytics gap recorded in
+**Status as of 2026-10-02:** Waves 1 and 2 shipped — twelve prompts in three
+subdirectories. Wave 1 (eight prompts) was created to fill the business-analytics gap recorded in
 [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md). Before this domain existed,
 the work was split across ML evaluation, finance, and board-deck rendering.
 
@@ -26,13 +26,18 @@ domain-data-analytics/                       8 prompts
 └── experiments-and-reporting/  2   A/B test readout, dashboard critique
 ```
 
-## Wave 2 candidates (not built)
+## Shipped — Wave 2 (2026-10-02, coverage Wave 6)
 
-| Candidate | Subdirectory | Scope note |
+```
+domain-data-analytics/                       12 prompts
+├── framing-and-metrics/        5   + request intake triage, data dictionary writer
+├── analysis-and-sql/           4   + spreadsheet model audit
+└── experiments-and-reporting/  3   + operational volume forecast for planners
+```
+
+| Candidate | Status | Boundary kept |
 |---|---|---|
-| `analytics_spreadsheet_model_audit.md` | `analysis-and-sql/` | Formula errors, hard-codes, broken ranges, circularity in an operating spreadsheet. Distinct from finance model review in `domain-finance/`: this is about the mechanics of the sheet, not the valuation. |
-| `analytics_request_intake_triage.md` | `framing-and-metrics/` | Triage a queue of analysis requests by decision value and effort, before any one gets a plan. Sits upstream of `analytics_question_to_analysis_plan.md`. |
-| `analytics_data_dictionary_writer.md` | `framing-and-metrics/` | Table- and column-level documentation for analysts. Must not duplicate dbt docs patterns in `skills/data-engineering/dbt-transformation-patterns/`. |
-| `analytics_business_forecast_for_planners.md` | `experiments-and-reporting/` | Simple, explainable forecasts for business planning (seasonal baseline, driver-based). Distinct from `domain-AI-ML/specialized-ml/time-series/` model design. |
-
-Each candidate needs a duplicate sweep (`pae search`) before it is built.
+| `analysis-and-sql/analytics_spreadsheet_model_audit.md` | **Shipped** | Mechanics of any operating workbook; `domain-finance/valuation/finance_dcf_model_auditor.md` keeps valuation methodology and assumptions. |
+| `framing-and-metrics/analytics_request_intake_triage.md` | **Shipped** | One triage pass over an analytics queue, upstream of `analytics_question_to_analysis_plan.md`; designing an intake system stays in `skills/non-coding/cross-domain/intake-triage-pattern/`. |
+| `framing-and-metrics/analytics_data_dictionary_writer.md` | **Shipped** | Business warehouse tables and the metrics they feed; research codebooks stay in `domain-science/computational/science_data_dictionary_designer.md`, dbt YAML mechanics in `skills/data-engineering/dbt-transformation-patterns/`. |
+| `experiments-and-reporting/analytics_business_forecast_for_planners.md` | **Shipped (narrowed scope)** | Narrowed to operational volume forecasts (orders, tickets, calls → staffing/stock) with baseline, seasonality, event lines, and error tracking. P&L forecasting stays in `domain-finance/corporate-finance-fpa/finance_rolling_forecast_designer.md`; model selection in `domain-AI-ML/specialized-ml/time-series/`. Duplicate sweep found no operational-volume prompt. |

@@ -1,16 +1,18 @@
-# Specialized Professional Fields: Real Estate, Trades, and Licensed-Field Guidance
+# Specialized Professional Fields: Real Estate, Trades, Insurance, and Licensed-Field Guidance
 
 > Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
 
-This domain holds **seven decision prompts for working real-estate and trades
-professionals** — and for serious individual buyers and small investors — plus the
+This domain holds **eleven decision prompts for working real-estate, trades and
+insurance professionals** — and for serious individual buyers and small investors — plus the
 cross-field guidance, disclaimers and templates below for any field with licensing,
 liability or jurisdiction constraints.
 
 The prompts sit on the **commercial, non-legal side** of the work: what a house is
 worth, what an offer exposes a buyer to, whether a rental pays, what an inspection
-report means, whether to bid, what the bid is, and how to price a change. They do
-not draft contracts, give title opinions, or make code, structural, legal, tax or
+report means, whether to bid, what the bid is, how to price a change, and — for
+brokers, underwriters and adjusters — how to build and assess a commercial
+submission, review a claim file against the policy wording, and plan a renewal. They do
+not draft contracts, decide insurance coverage, give title opinions, or make code, structural, legal, tax or
 licensing determinations; those are routed to the licensed professional and, for
 legal drafting, to [`domain-legal/`](../domain-legal/).
 
@@ -39,6 +41,14 @@ legal drafting, to [`domain-legal/`](../domain-legal/).
 | [`trades_bid_estimate_with_contingency.md`](trades/trades_bid_estimate_with_contingency.md) | Takeoff, allowances, unknowns register, contingency sized to named unknowns |
 | [`trades_change_order_pricing_notice.md`](trades/trades_change_order_pricing_notice.md) | Price a mid-job change under the contract's terms and ask the owner for a dated decision |
 
+### [`insurance/`](insurance/README.md) (4) — prefix `insurance_`
+| File | Use |
+|---|---|
+| [`insurance_commercial_submission_builder.md`](insurance/insurance_commercial_submission_builder.md) | Broker: source-tagged exposures, developed loss runs, COPE/TIV, missing items, underwriter-ready narrative |
+| [`insurance_underwriting_risk_assessment.md`](insurance/insurance_underwriting_risk_assessment.md) | Underwriter: appetite/authority gate, anchored risk scores, burning cost and indicated loss ratio, terms, referral triggers |
+| [`insurance_claim_file_coverage_review.md`](insurance/insurance_claim_file_coverage_review.md) | Adjuster: policy wording quoted clause by clause, facts established vs needed, reservation-of-rights considerations — coverage decided by the licensed adjuster and counsel |
+| [`insurance_renewal_remarketing_plan.md`](insurance/insurance_renewal_remarketing_plan.md) | Broker: weighted renewal outlook, renew / selective / full-market decision, market approach, backward timeline |
+
 ### Quick routing
 
 | You're saying | Use |
@@ -50,6 +60,10 @@ legal drafting, to [`domain-legal/`](../domain-legal/).
 | "Should we even bid this job?" | `trades/trades_bid_no_bid_decision.md` |
 | "What's my number, and how much contingency?" | `trades/trades_bid_estimate_with_contingency.md` |
 | "We opened the floor and found rot" / "the owner wants one more thing" | `trades/trades_change_order_pricing_notice.md` |
+| "Put together the submission for underwriters" (broker) | `insurance/insurance_commercial_submission_builder.md` |
+| "Should we quote this risk, and on what terms?" (underwriter) | `insurance/insurance_underwriting_risk_assessment.md` |
+| "Review this claim file against the policy" (adjuster) | `insurance/insurance_claim_file_coverage_review.md` |
+| "Renewal is coming up — do we remarket?" (broker) | `insurance/insurance_renewal_remarketing_plan.md` |
 
 ---
 
@@ -63,6 +77,7 @@ Route to this domain when the request mentions:
 |----------|----------------|
 | **Real Estate (non-legal)** | "comps", "CMA", "list price", "offer", "escalation clause", "appraisal gap", "cap rate", "rental property", "inspection report" |
 | **Trades/Construction** | "bid", "estimate", "takeoff", "contingency", "allowance", "change order", "should we bid" |
+| **Insurance (industry side)** | "submission", "loss runs", "COPE", "underwriting", "referral", "coverage review", "reservation of rights", "renewal", "remarket" — policyholder claim appeals and settlement negotiation route to `domain-written-advocacy/` and `domain-negotiation/` |
 | **Legal** | Route to [`domain-legal/`](../domain-legal/) — contracts, purchase agreements, title, zoning, leases |
 | **Finance** | Route to [`domain-finance/`](../domain-finance/) — its own top-level domain |
 | **Marketing/Sales** | Route out: deals, pipeline, customer accounts and support → [`domain-sales-customer/`](../domain-sales-customer/); marketing strategy → [`domain-business-strategy/go-to-market/`](../domain-business-strategy/go-to-market/); copy and campaigns → `domain-agentic-resources/skills/marketing/` |
@@ -75,6 +90,7 @@ Route to this domain when the request mentions:
 | **Real Estate Agents** | CMAs, offer strategy for buyer clients, inspection-response planning |
 | **Buyers and Small Investors** | Offer packages they can afford to have go wrong; rental underwriting |
 | **Contractors and Trade Subs** | Bid/no-bid, estimates with defensible contingency, change orders |
+| **Insurance Brokers, Underwriters, Adjusters** | Submissions, risk assessment and terms, claim-file coverage reviews, renewal strategy |
 | **Other licensed professionals** | The disclaimers, document framework and templates below |
 
 ### Out of Scope
@@ -190,6 +206,12 @@ estate professional and conduct appropriate due diligence."
 material costs, and project specifications. A formal contract with detailed
 scope of work should be executed before work begins."
 
+**Insurance (industry work products):**
+"This review organises the file and frames questions; it is not a coverage
+determination. Coverage is decided by the licensed adjuster, the claims authority
+holder and, where engaged, coverage counsel, under the issued policy wording and
+the claim-handling rules of the governing jurisdiction."
+
 **Accounting/Tax:**
 "This information is general in nature and does not constitute tax or accounting
 advice. Tax laws vary by jurisdiction and individual circumstances. Consult a
@@ -208,10 +230,11 @@ licensed CPA or tax professional for advice specific to your situation."
 | **Finance** | Not investment advice, individual circumstances vary, disclosures required | `domain_writing_financial_advisor_report.md`, `domain_writing_cpa_tax_strategy.md` |
 | **Trades/Construction** | Site conditions can change estimates, permits may be required, contingency sized to named unknowns | This domain: `trades/`; writing: `domain_writing_contractor_remodel.md`, `domain_writing_hvac_estimate.md`, `domain_writing_electrician_panel.md` |
 | **Real Estate** | Market data changes rapidly, state regulations vary, due diligence required | This domain: `real-estate/`; writing: `domain_writing_realtor_listing.md` |
+| **Insurance** | Issued policy wording governs, claim-handling rules vary by jurisdiction, coverage decided by licensed adjusters and counsel | This domain: `insurance/`; writing: `domain_writing_insurance_comparison.md` |
 | **Marketing/Sales** | Audience targeting, conversion metrics, campaign tracking | `domain_writing_marketing_campaign.md`, `domain_writing_sales_strategy.md` |
 | **Healthcare-Adjacent** | Not medical advice, professional oversight required | `domain_writing_veterinarian_surgery.md`, `domain_writing_dentist_treatment_plan.md` |
 
-> **Note:** `domain_writing_*` prompts are in `domain-professional-writing/domain-specific/`; `real-estate/` and `trades/` are in this domain.
+> **Note:** `domain_writing_*` prompts are in `domain-professional-writing/domain-specific/`; `real-estate/`, `trades/` and `insurance/` are in this domain.
 
 ---
 
@@ -228,7 +251,7 @@ Comprehensive domain-specific prompt engineering guides:
 
 ## Prompts in This Repository
 
-The seven prompts are listed under [The prompts](#the-prompts) above. The field
+The eleven prompts are listed under [The prompts](#the-prompts) above. The field
 writing prompts (24) live in
 [`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/)
 as `domain_writing_{field}.md` — e.g. `domain_writing_contractor_remodel.md`,
@@ -722,7 +745,7 @@ Client Signature: ___________________________ Date: ___________
 ║  • Due diligence always required                                          ║
 ║                                                                           ║
 ║  PROMPTS AVAILABLE:                                                       ║
-║  real-estate/ (4) · trades/ (3) in this domain                            ║
+║  real-estate/ (4) · trades/ (3) · insurance/ (4) in this domain           ║
 ║  domain-professional-writing/domain-specific/ (24 professional guides)   ║
 ║                                                                           ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
@@ -744,5 +767,5 @@ Client Signature: ___________________________ Date: ___________
 ---
 
 *Document Version: 2.0*
-*Created: 2026-01-26 · Rebuilt around real-estate and trades prompts: 2026-09-24*
+*Created: 2026-01-26 · Rebuilt around real-estate and trades prompts: 2026-09-24 · insurance/ added: 2026-10-02*
 *Domain: Specialized Professional Fields*

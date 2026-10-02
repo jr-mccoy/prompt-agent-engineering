@@ -27,7 +27,7 @@ go" — use [`CLAUDE.md`](CLAUDE.md); this file answers "what exists and how big
 | Directory | Files | Holds |
 |---|---|---|
 | [`domain-software-engineering/`](domain-software-engineering/) | 611 | Analysis (security, performance, quality, architecture, evolution, **business**, feature-design), testing, devops, cloud, api, mobile, algorithms, bug-bounty, vibe-coding-rescue, improvement, prototyping |
-| [`domain-AI-ML/`](domain-AI-ML/) | 356 | The full ML lifecycle: framing, data, features, modelling, deep learning, evaluation, optimization, MLOps, monitoring, governance, GenAI/LLM, agentic systems, model security, verticals, leadership, learning |
+| [`domain-AI-ML/`](domain-AI-ML/) | 360 | The full ML lifecycle: framing, data, features, modelling, deep learning, evaluation, optimization, MLOps, monitoring, governance, GenAI/LLM (incl. MCP servers), agentic systems (incl. computer-use agents), model security, verticals, leadership, learning |
 | [`domain-frontend-development/`](domain-frontend-development/) | 76 | Frameworks, styling, TypeScript, forms, animation, architecture, build tooling, a11y, performance, testing, design-direction |
 | [`domain-voice-conversational-ui/`](domain-voice-conversational-ui/) | 34 | Voice UI, chatbots, dialog architecture, NLU training, multimodal, analytics |
 | [`domain-game-development/`](domain-game-development/) | 34 | Design, architecture, engines, testing, multiplayer, performance, graphics, audio, level design, economy |
@@ -63,8 +63,8 @@ decides, whoever holds it.
 | Directory | Files | Holds |
 |---|---|---|
 | [`domain-sales-customer/`](domain-sales-customer/) | 20 | Deal qualification, outbound plan, close plan, forecast commit, QBR, renewal risk, ticket triage, escalations |
-| [`domain-data-analytics/`](domain-data-analytics/) | 10 | Analysis plans, metric specs, KPI trees, SQL correctness, metric-movement investigation, cohorts, A/B readouts, dashboard critique |
-| [`domain-operations/`](domain-operations/) | 10 | Lean waste scan, A3, DMAIC, capacity, supplier scorecard, reorder policy, buyer-side RFP, non-software project plan |
+| [`domain-data-analytics/`](domain-data-analytics/) | 14 | Analysis plans, metric specs, KPI trees, SQL correctness, metric-movement investigation, cohorts, A/B readouts, dashboard critique, spreadsheet audits, request triage, data dictionaries, volume forecasts |
+| [`domain-operations/`](domain-operations/) | 20 | Lean waste scan, A3, DMAIC, kaizen, layout, capacity, S&OP, freight mode, supplier scorecard and 8D, reorder policy, buyer-side RFP, SPC, OEE, job hazard analysis, incident investigation, non-software project plan |
 
 ## Thinking & decisions
 
@@ -77,13 +77,13 @@ decides, whoever holds it.
 | [`domain-deep-analysis/`](domain-deep-analysis/) | 22 | Multi-phase deep-think systems for problems, decisions, plans, designs |
 | [`domain-ideation/`](domain-ideation/) | 19 | Divergent and convergent ideation |
 | [`domain-risk/`](domain-risk/) | 25 | Register, FMEA, heat map, tail risk, dependency chains, AAR, security operations for non-engineers |
-| [`domain-policy/`](domain-policy/) | 5 | Policy options, framing, stakeholder maps, feasibility |
+| [`domain-policy/`](domain-policy/) | 10 | Policy options, framing, stakeholder maps, feasibility, regulatory impact analysis, program evaluation, rulemaking comments, bill analysis, cross-jurisdiction comparison |
 
 ## Writing & communication
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-professional-writing/`](domain-professional-writing/) | 79 | Business writing, **content quality**, per-profession writing |
+| [`domain-professional-writing/`](domain-professional-writing/) | 87 | Business writing, **content quality**, per-profession writing, journalism (desk edit, verification, investigations), human translation |
 | [`domain-presentations/`](domain-presentations/) | 46 | Board decks, visual planning |
 | [`domain-written-advocacy/`](domain-written-advocacy/) | 42 | Layperson self-advocacy letters |
 | [`domain-creative-writing/`](domain-creative-writing/) | 37 | Adult fiction, craft tools, genre, creative nonfiction, poetry, script, publishing |
@@ -109,17 +109,17 @@ decides, whoever holds it.
 | [`domain-legal/`](domain-legal/) | 248 | Practitioner legal work (incl. regulatory, privacy, ethics, bankruptcy, tax, immigration, criminal, appellate, real estate, trusts & estates), family law, and two litigant-facing self-advocacy sections |
 | [`domain-finance/`](domain-finance/) | 155 | Corporate finance, markets, valuation, tax, risk, crypto, options, quant |
 | [`domain-hr-management/`](domain-hr-management/) | 23 | Performance reviews, hiring |
-| [`domain-specialized-fields/`](domain-specialized-fields/) | 10 | Real-estate and trades practitioners: CMA, offer strategy, rental underwriting, inspection triage, bid estimates, change orders, bid/no-bid (hub; finance and psychology were promoted out) |
+| [`domain-specialized-fields/`](domain-specialized-fields/) | 15 | Real-estate, trades and insurance practitioners: CMA, offer strategy, rental underwriting, inspection triage, bid estimates, change orders, bid/no-bid, broker submissions, underwriting, claim coverage review, renewals (hub; finance and psychology were promoted out) |
 
 ## Life & faith
 
 | Directory | Files | Holds |
 |---|---|---|
 | [`domain-biblical-studies/`](domain-biblical-studies/) | 142 | Exegesis, study methods, sermon, theology, learner, ministry, church staff, languages, apologetics |
-| [`domain-parenting/`](domain-parenting/) | 110 | Ages 4–8, neurodivergence, divorce/custody/co-parenting |
+| [`domain-parenting/`](domain-parenting/) | 125 | Age bands 0–18, divorce/custody/co-parenting, transitions and life events, safety, health/sleep/feeding |
 | [`domain-discipleship/`](domain-discipleship/) | 88 | One-to-one formation and the programs that pair people |
 | [`domain-conversation-practice/`](domain-conversation-practice/) | 15 | Role-play rehearsal: language sims (CEFR level, correction modes) and hard-conversation persona sims |
-| [`domain-health-wellness/`](domain-health-wellness/) | 10 | Healthy-adult training, nutrition and sleep; safety-gated, red-flag screen first |
+| [`domain-health-wellness/`](domain-health-wellness/) | 14 | Healthy-adult training (incl. mobility, returning after a break, active ageing), nutrition, hydration in heat, and sleep; safety-gated, red-flag screen first |
 
 ## Visual
 

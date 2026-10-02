@@ -1,7 +1,7 @@
 # Expansion Roadmap — `domain-health-wellness/`
 
-**Status as of 2026-09-24:** Wave 1 shipped (coverage roadmap) — 8 prompts across
-`foundations/`, `fitness/`, `nutrition/`, and `sleep-recovery/`, built from the
+**Status as of 2026-10-02:** Waves 1 and 2 shipped — 12 prompts across
+`foundations/`, `fitness/`, `nutrition/`, and `sleep-recovery/`. Wave 1 was built from the
 `domain-health-wellness/` row of [`../meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md).
 That file is the authoritative source for scope and guards; this one records local status.
 
@@ -19,14 +19,14 @@ eating carries the STRONG-GUARD block.
 | `nutrition/` | `nutrition_eating_pattern_audit.md`, `nutrition_meal_structure_planner.md` (both STRONG-GUARD) |
 | `sleep-recovery/` | `sleep_routine_and_environment_audit.md` |
 
-## Wave 2 — candidates
+## Wave 2 — shipped (2026-10-02)
 
-| Candidate | Folder | Guard note |
+| Prompt | Folder | Guard as built |
 |---|---|---|
-| Mobility and flexibility routine | `fitness/` | Healthy adults only; no rehab; pain routes out |
-| Return to activity after a break (illness, travel, life event — not injury) | `fitness/` | Re-runs the readiness screen first; injury returns go to a clinician |
-| Active ageing for older adults | `fitness/` | Requires clinician clearance recorded in the profile; balance and falls framed with the clinician's limits |
-| Hydration and heat | `nutrition/` or `sleep-recovery/` | Heat-illness warning signs route to urgent care; no electrolyte or supplement dosing |
+| `fitness_mobility_and_flexibility_routine.md` | `fitness/` | Per-area pain screen after the readiness gate; painful, numb, unstable, or recently injured areas get no routine; no rehab |
+| `fitness_return_after_break_plan.md` | `fitness/` | Enumerated events void the pre-break profile and force a re-screen; injury returns, post-viral chest symptoms, and post-effort crashes route to a clinician |
+| `fitness_active_ageing_plan.md` | `fitness/` | Falls screen (STEADI key questions + dizziness on standing + osteoporosis/fragility fracture) → CLINICIAN-FIRST; GO-WITH-LIMITS runs only with clinician limits recorded verbatim; power work only under GO or explicit clinician agreement |
+| `nutrition_hydration_and_heat_plan.md` | `nutrition/` | STRONG-GUARD (adds fluid restriction, deliberate dehydration, water-loading to suppress hunger); heat-illness and over-drinking signs → emergency, given even when the guard fires; no electrolyte, salt, supplement, or fixed-volume numbers; no weighing |
 
 ## Explicitly not planned
 

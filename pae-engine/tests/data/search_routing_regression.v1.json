@@ -7,7 +7,7 @@
     "registry_record_sample": "Hand-authored during Phase 4 against a sampled registry record, because CLAUDE.md's tables target prompts almost exclusively and supply no labels for skills, agents, commands, personas or techniques.",
     "registry_relationship": "Derived from an explicit copy_of relationship in the registry.",
     "phase4_regression_judgment": "Hand-authored Phase 4 regression judgment. Acceptable scopes and kinds are deliberately permissive where the corpus genuinely supports several answers.",
-    "coverage_wave_judgment": "Hand-authored in coverage Wave 5 (meta/COVERAGE_ROADMAP.md) for the scopes and subfolders added in coverage Waves 1-4. The same process that wrote the target prompts wrote these labels, so they are not independent of the corpus. Every query was written before any search was run against it, was not reworded afterwards to make a case pass, and was checked against the ADR-0037 echo gates: no query contains all of a target's title tokens or id-tail tokens, and none is a near-duplicate of a ROUTING_REFERENCE phrase or an earlier case."
+    "coverage_wave_judgment": "Hand-authored in coverage Wave 5 (meta/COVERAGE_ROADMAP.md) for the scopes and subfolders added in coverage Waves 1-4, and in coverage Wave 6 for the subfolders it added. The same process that wrote the target prompts wrote these labels, so they are not independent of the corpus. Every query was written before any search was run against it, was not reworded afterwards to make a case pass, and was checked against the ADR-0037 echo gates: no query contains all of a target's title tokens or id-tail tokens, and none is a near-duplicate of a ROUTING_REFERENCE phrase or an earlier case."
   },
   "notes": [
     "acceptable_* lists are permissive: any listed value counts as correct.",
@@ -15,7 +15,8 @@
     "Scopes are expressed in the Phase 4 scope vocabulary, in which agentic-resources is split one level deeper (agentic-resources/<category>).",
     "expected_status applies to routing only.",
     "case-121 onward were added in coverage Wave 5. The router thresholds were fitted on case-001..case-120 and were not refitted when these were added.",
-    "After case-121..case-146 were first measured, plain-language tags were added to 13 of their target prompts, and only the 8 additions that moved a case to rank 1 (or a route case to the right scope) were kept. These cases are therefore tuning cases like the rest of the set. See meta/COVERAGE_ROADMAP.md, Wave 5."
+    "After case-121..case-146 were first measured, plain-language tags were added to 13 of their target prompts, and only the 8 additions that moved a case to rank 1 (or a route case to the right scope) were kept. These cases are therefore tuning cases like the rest of the set. See meta/COVERAGE_ROADMAP.md, Wave 5.",
+    "case-147 onward were added in coverage Wave 6. Their queries were written before any target prompt existed in the index. The draft query list was readable by the authoring agents, and two targets picked up tags echoing case-154 and case-161; those tags were replaced with independent wording before the cases were first measured. See meta/COVERAGE_ROADMAP.md, Wave 6."
   ],
   "cases": [
     {
@@ -2016,6 +2017,214 @@
       "acceptable_resource_ids": [],
       "acceptable_scopes": [
         "sales-customer"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-147",
+      "class": "task",
+      "query": "we're expecting a second baby in March and our three year old has no idea what's coming",
+      "acceptable_resource_ids": [
+        "prompt:parenting/caregiver-facing/transitions-events/parenting-new-sibling-arrival-prep"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-148",
+      "class": "task",
+      "query": "my 11 year old wants to stay by themselves after school, how do I know they can handle it",
+      "acceptable_resource_ids": [
+        "prompt:parenting/caregiver-facing/safety-risk/parenting-home-alone-readiness-check"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-149",
+      "class": "task",
+      "query": "the agency needs a cost-benefit estimate of a proposed emissions rule before it is published",
+      "acceptable_resource_ids": [
+        "prompt:policy/policy-regulatory-impact-analysis"
+      ],
+      "acceptable_scopes": [
+        "policy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-150",
+      "class": "task",
+      "query": "write our trade association's response to the agency's proposed rule before the docket closes",
+      "acceptable_resource_ids": [
+        "prompt:policy/policy-public-comment-letter"
+      ],
+      "acceptable_scopes": [
+        "policy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-151",
+      "class": "task",
+      "query": "monthly meeting where the sales forecast and production capacity get reconciled",
+      "acceptable_resource_ids": [
+        "prompt:operations/supply-chain-procurement/ops-sales-and-operations-planning-cycle"
+      ],
+      "acceptable_scopes": [
+        "operations"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-152",
+      "class": "task",
+      "query": "a vendor keeps shipping cracked housings and we need them to formally fix it with containment and root cause",
+      "acceptable_resource_ids": [
+        "prompt:operations/supply-chain-procurement/ops-supplier-corrective-action-8d"
+      ],
+      "acceptable_scopes": [
+        "operations"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-153",
+      "class": "task",
+      "query": "our filler machine is running but output is way below nameplate, break down where the time goes",
+      "acceptable_resource_ids": [
+        "prompt:operations/quality-safety/ops-oee-loss-analysis"
+      ],
+      "acceptable_scopes": [
+        "operations"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-154",
+      "class": "task",
+      "query": "I'm a broker putting together a package for underwriters on a mid-size manufacturer's property and liability",
+      "acceptable_resource_ids": [
+        "prompt:specialized-fields/insurance/insurance-commercial-submission-builder"
+      ],
+      "acceptable_scopes": [
+        "specialized-fields"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-155",
+      "class": "task",
+      "query": "our agent clicks through a website to file expense reports, how do we stop it submitting anything without a human ok",
+      "acceptable_resource_ids": [
+        "prompt:ai-ml/agentic-ai-systems/aiagent-computer-use-task-design"
+      ],
+      "acceptable_scopes": [
+        "ai-ml"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-156",
+      "class": "task",
+      "query": "audit an MCP server before we connect it to our assistant, especially tool descriptions that could carry injected instructions",
+      "acceptable_resource_ids": [
+        "prompt:ai-ml/genai-llm-engineering/genai-mcp-server-threat-model",
+        "prompt:ai-ml/genai-llm-engineering/genai-mcp-server-design-review"
+      ],
+      "acceptable_scopes": [
+        "ai-ml"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-157",
+      "class": "task",
+      "query": "a freelance translator needs a term list and style notes before starting on our product manuals",
+      "acceptable_resource_ids": [
+        "prompt:professional-writing/translation/translation-project-brief-and-glossary"
+      ],
+      "acceptable_scopes": [
+        "professional-writing"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-158",
+      "class": "task",
+      "query": "editor pass on a reporter's draft about the city council before it runs",
+      "acceptable_resource_ids": [
+        "prompt:professional-writing/journalism/journalism-story-desk-edit"
+      ],
+      "acceptable_scopes": [
+        "professional-writing"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-159",
+      "class": "task",
+      "query": "the capacity spreadsheet ops uses has broken formulas and hardcoded numbers nobody trusts",
+      "acceptable_resource_ids": [
+        "prompt:data-analytics/analysis-and-sql/analytics-spreadsheet-model-audit"
+      ],
+      "acceptable_scopes": [
+        "data-analytics"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-160",
+      "class": "route",
+      "query": "training outdoors in July heat and want to know how much to drink",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "health-wellness"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-161",
+      "class": "route",
+      "query": "my kid only eats five foods and dinner is a battle every night",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "parenting",
+        "health-wellness"
       ],
       "acceptable_kinds": [],
       "expected_status": null,

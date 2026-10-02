@@ -109,8 +109,8 @@ eating supports their training and energy without counting anything.
    few hours after. Sessions over ~90 min: general sports-nutrition guidance is often
    around 30–60 g of carbohydrate per hour during the session — practise it in training,
    never first on event day. Rest day: the same structure, with a smaller starch portion
-   if appetite is lower. Drink to thirst; heat and heavy sweating need more (see the
-   domain roadmap for a dedicated prompt).
+   if appetite is lower. Drink to thirst; heat and heavy sweating go to
+   `nutrition/nutrition_hydration_and_heat_plan.md`.
 6. **Fill slots from the person's own cuisine (ED-04).** Three to five swaps per slot,
    drawn from their staples first, then cheap additions.
 7. **Constrain the language (CM-02).** No "good/bad", "clean", "cheat", or "earn"; no

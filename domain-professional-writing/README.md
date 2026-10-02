@@ -13,6 +13,8 @@ Professional writing prompts for various fields:
 3. **Content Production** - 8 generators for channel content (scripts, hooks, SEO, repurposing, voice bible, podcast outlines and host interview prep, video shot lists), paired with the evaluators above: generate here, score there
 4. **Domain-Specific** - CPAs, attorneys, contractors, real estate agents, and 20+ more professions
 5. **Writing** - Essays, narratives, structured documents, news articles, interview features
+6. **Journalism** - The newsroom work around a story: editor's desk edit, source verification log, investigative project plan
+7. **Translation** - Human translation craft: translator brief and glossary, MQM-style quality review, transcreation of creative copy
 
 **Start with the [field guide](field_guide.md)** for the craft behind all of it:
 what makes a business document work, how each type fails, a certainty framework
@@ -31,6 +33,8 @@ domain-professional-writing/
 ├── content-production/       # Generators for channel content: scripts, hooks, SEO packaging, repurposing, voice bible, podcast, video shot lists
 ├── content-quality/          # Slop evaluators for finished drafts
 ├── domain-specific/          # Profession-specific writing prompts
+├── journalism/               # Desk edit, source verification log, investigative plan
+├── translation/              # Human translation: brief + glossary, MQM review, transcreation
 ├── writing/                  # General professional writing
 └── README.md
 ```
@@ -46,7 +50,9 @@ domain-professional-writing/
 | `content-quality/` | 19 | `quality_slop_*` evaluators by document type (moved here from `domain-productivity/validation/`) |
 | `content-production/` | 8 | `content_*` generators for channel content: long-form script, short-form hook bank, SEO title/description, one-to-many repurposing, series/channel voice bible, podcast episode outline (rundown + show notes), podcast host interview prep, video shot list and pre-production |
 | `writing/` | 12 | General writing prompts, including the newsletter issue writer, an inverted-pyramid news article writer, and an interview-transcript-to-feature writer with quote-fidelity rules |
-| **Total** | **77** | |
+| `journalism/` | 3 | `journalism_*`: editor's story desk edit (fairness table, legal-risk flags held for a media lawyer), source verification log (people, documents, images, sourcing terms, corrections trail), investigative project plan (hypothesis, kill signals, records/data plan, no-surprises letter) |
+| `translation/` | 3 | `translation_*`, human translation (not software localization): project brief and glossary, MQM-style quality review with severity scoring, transcreation brief for slogans and campaign lines |
+| **Total** | **83** | |
 
 > `business-documents/` was removed: all nine files were a stale pre-frontmatter
 > mirror of `business-writing/`, whose versions are roughly twice as long.
@@ -88,6 +94,8 @@ Each profession requires:
 
 Use these prompts when you need to:
 - Write documents for a specific profession
+- Edit a reported story, verify its sources, or plan an investigation (`journalism/`)
+- Brief a translator, review a translation's quality, or adapt a slogan for another market (`translation/`)
 - Create business proposals or reports
 - Draft professional correspondence
 - Communicate in industry-appropriate style
@@ -100,6 +108,9 @@ Use these prompts when you need to:
   `page-cro`, `email-sequence`, `sales-enablement`)
 - Advertising **images** (use `domain-advertising`, which is an image-prompt set —
   it does not hold ad copy)
+- Software localization — i18n architecture, string files, translation-management
+  pipelines (use `domain-software-engineering/localization/`; human translation craft
+  is in `translation/` here)
 
 ---
 
