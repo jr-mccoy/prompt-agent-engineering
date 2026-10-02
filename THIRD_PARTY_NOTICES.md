@@ -86,9 +86,8 @@ Skills whose names still match upstream include: `cli-demo-generator`,
 
 ## 5. Repository-owned components with their own LICENSE file
 
-| Component | License | Note |
-|---|---|---|
-| [`continuity-kit/`](continuity-kit/) | MIT ([`continuity-kit/LICENSE`](continuity-kit/LICENSE)) | Original work of this repository's owner; carries its own license file because it is designed to be extracted as a standalone package. |
+None at present. `continuity-kit/`, which carried its own MIT license file, was
+removed from the tree in a11990c.
 
 ## 6. Reference material quoted from vendor documentation
 

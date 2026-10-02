@@ -383,7 +383,6 @@ The domain library is intentionally broad. Most reusable prompts live in `domain
 | [`financial-records-toolkit/`](financial-records-toolkit/) | Financial statement processing and verification |
 | [`childrens-book-studio/`](childrens-book-studio/) | End-to-end children's book production workflow |
 | [`sourced-nonfiction-studio/`](sourced-nonfiction-studio/) | Uncited expert knowledge to sourced, legally screened nonfiction |
-| [`continuity-kit/`](continuity-kit/) | Repo-local project continuity memory for human-agent work |
 
 </details>
 

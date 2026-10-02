@@ -237,10 +237,6 @@ prompt-agent-engineering/
 │                                   # Copy the folder into any project to author prompts at this repo's quality.
 │                                   # Vendors copies of techniques/ and authoring/ — registered in meta/VENDORED.tsv
 │
-├── continuity-kit/                 # Project Continuity Memory: a repo-local, human-readable ledger of durable project
-│                                   # state (decisions, failures, open threads) so agents and humans resume across
-│                                   # sessions. Installable package with its own CLI and test suite.
-│
 ├── scripts/                        # Index generation, naming/link validation, reorg tooling, vendored-copy drift check
 │
 └── meta/                           # REORG_MAP.tsv (every move and deletion) + VENDORED.tsv (canonical → copy)
@@ -2346,7 +2342,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Psychology / therapy / behavioral health" | `domain-psychology/` (see [PROMPT_INDEX.md](../domain-psychology/PROMPT_INDEX.md)) |
 | **Medical / health-professions education (teach or study)** | **`domain-medical-education/` — see [README](../domain-medical-education/README.md). `educator-*` to teach and assess; `learner-*` to study. Real-patient questions → `domain-healthcare-clinical/`** |
 | "Design a voice assistant, chatbot, or dialog system" | `domain-voice-conversational-ui/` — voice design, chatbot design, dialog architecture, NLU training, voice UX, multimodal, analytics |
-| "Give my project memory that survives across sessions" | `continuity-kit/` — a repo-local ledger of decisions, failures, and open threads (see also `domain-AI-ML/agentic-ai-systems/aiagent_project_continuity_memory_design.md` for the design decision) |
+| "Give my project memory that survives across sessions" | `domain-AI-ML/agentic-ai-systems/aiagent_project_continuity_memory_design.md` — design a repo-local ledger of decisions, failures, and open threads |
 | "Drop this prompt system into another project" | `portable-prompt-system/` — self-contained export of the technique library and authoring guides |
 | **Discipleship & mentorship (one-to-one formation, 73 prompts, TRADITION-NEUTRAL)** | **Use `domain-discipleship/` — see [README](../domain-discipleship/README.md). Formation is never scored; all Scripture work routes to `domain-biblical-studies/`.** |
 | "Build me a full discipleship curriculum" | `domain-discipleship/curriculum-architecture/discipleship_curriculum_architecture.md` |

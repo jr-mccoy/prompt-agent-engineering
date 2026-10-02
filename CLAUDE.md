@@ -72,7 +72,7 @@ Membership rules for each category live in [`meta/REPOSITORY_FACTS.json`](meta/R
 | `pae-engine/` | The `pae` CLI (routing, search, context bundles) and its optional MCP server |
 | `scripts/` | Index generation, naming/link validation, drift checks |
 | `tests/` | Repo invariants |
-| Toolkits at root | `agentic-system-factory/`, `childrens-book-studio/`, `sourced-nonfiction-studio/`, `ai-investment-research-toolkit/`, `client-services-studio/`, `ai-governance-audit-kit/`, `financial-records-toolkit/`, `continuity-kit/`, `portable-prompt-system/` — self-contained pipelines that *orchestrate* domain prompts rather than duplicating them |
+| Toolkits at root | `agentic-system-factory/`, `childrens-book-studio/`, `sourced-nonfiction-studio/`, `ai-investment-research-toolkit/`, `client-services-studio/`, `ai-governance-audit-kit/`, `financial-records-toolkit/`, `portable-prompt-system/` — self-contained pipelines that *orchestrate* domain prompts rather than duplicating them |
 
 The 48 domains: AI-ML, advertising, agentic-resources, biblical-studies,
 business-strategy, childrens-writing, conversation-practice, creative-writing,

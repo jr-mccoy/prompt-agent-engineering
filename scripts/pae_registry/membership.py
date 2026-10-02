@@ -37,7 +37,6 @@ TOOLKIT_ROOTS = (
 #: Recorded so the allowlist is auditable as a partition of the repository.
 NON_REGISTRY_ROOTS = (
     "authoring",
-    "continuity-kit",
     "meta",
     "portable-prompt-system",
     "scripts",

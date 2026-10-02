@@ -115,7 +115,6 @@ class DetectorTests(unittest.TestCase):
         for path in (
             "authoring/NEW_PROMPT_TEMPLATE.md",
             "portable-prompt-system/techniques/tool_comparison.md",
-            "continuity-kit/continuity_kit/templates/session.md",
             "techniques/security_checklist.md",
         ):
             with self.subTest(path=path):

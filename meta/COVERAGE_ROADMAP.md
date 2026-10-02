@@ -639,7 +639,7 @@ python3 scripts/generate_repo_facts.py --write
 # bump counts in scripts/pae_registry/tests/test_generation.py
 python3 domain-agentic-resources/inventory_counts.py --check
 python3 scripts/validate_naming_conventions.py --ci
-python3 scripts/validate_technique_catalog.py && python3 audit_technique_index.py
+python3 scripts/validate_technique_catalog.py && (cd techniques && python3 audit_technique_index.py)
 python3 scripts/check_relative_links.py
 python3 scripts/check_frontmatter_references.py --check
 python3 scripts/check_vendored_copies.py

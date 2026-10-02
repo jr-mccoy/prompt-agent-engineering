@@ -39,7 +39,6 @@ go" — use [`CLAUDE.md`](CLAUDE.md); this file answers "what exists and how big
 |---|---|---|
 | [`domain-agentic-resources/`](domain-agentic-resources/) | 1568 | Skills, agents, commands, personas — the implementation library you *use* |
 | [`domain-prompt-engineering/`](domain-prompt-engineering/) | 242 | Meta-prompts: improvement, model behavior, escaping the median, goal orientation, skill development, delegation, evaluation |
-| [`continuity-kit/`](continuity-kit/) | 186 | Project Continuity Memory — a repo-local ledger of durable project state (self-contained package with its own tests) |
 | [`agentic-system-factory/`](agentic-system-factory/) | 118 | Use case → production-ready agentic system design bundle |
 | [`portable-prompt-system/`](portable-prompt-system/) | 99 | Self-contained, drop-in export of the technique library and authoring guides |
 | [`authoring/`](authoring/) | 64 | The authoring systems: skill, agent, command, and system patterns — how to *create* resources |
