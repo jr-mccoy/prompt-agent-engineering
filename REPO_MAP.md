@@ -51,7 +51,7 @@ software-engineering, money to finance, contracts to legal).
 
 | Track | Directory | Files | Holds |
 |---|---|---|---|
-| Self | [`domain-personal-development/`](domain-personal-development/) | 188 | Identity, values, habits, goals, resilience, relationships, agency, life transitions, emotional fitness, career, job search, stakeholder |
+| Self | [`domain-personal-development/`](domain-personal-development/) | 192 | Identity, values, habits, goals, resilience, relationships, agency, life transitions, emotional fitness, career, job search, stakeholder |
 | Individual execution | [`domain-productivity/`](domain-productivity/) | 126 | Daily planning, deep work, reviews, operating cadence, automation, bottlenecks, workplace, validation, home life, school |
 | Team delivery | [`domain-engineering-workflows/`](domain-engineering-workflows/) | 59 | Workflows, definition-of-done, AI patterns, AI-native rollouts |
 | Product | [`domain-product-management/`](domain-product-management/) | 20 | PRDs, market sizing, competitor teardown, sprint planning (renamed from `domain-professional-communication`) |
@@ -64,20 +64,20 @@ decides, whoever holds it.
 |---|---|---|
 | [`domain-sales-customer/`](domain-sales-customer/) | 20 | Deal qualification, outbound plan, close plan, forecast commit, QBR, renewal risk, ticket triage, escalations |
 | [`domain-data-analytics/`](domain-data-analytics/) | 14 | Analysis plans, metric specs, KPI trees, SQL correctness, metric-movement investigation, cohorts, A/B readouts, dashboard critique, spreadsheet audits, request triage, data dictionaries, volume forecasts |
-| [`domain-operations/`](domain-operations/) | 20 | Lean waste scan, A3, DMAIC, kaizen, layout, capacity, S&OP, freight mode, supplier scorecard and 8D, reorder policy, buyer-side RFP, SPC, OEE, job hazard analysis, incident investigation, non-software project plan |
+| [`domain-operations/`](domain-operations/) | 22 | Lean waste scan, A3, DMAIC, kaizen, layout, capacity, S&OP, freight mode, supplier scorecard and 8D, reorder policy, buyer-side RFP, SPC, OEE, job hazard analysis, incident investigation, preventive maintenance, repeat-failure reliability, non-software project plan |
 
 ## Thinking & decisions
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-negotiation/`](domain-negotiation/) | 54 | Preparation, at-the-table, channels, multi-party, after-the-deal, contexts, difficult conversations, craft |
+| [`domain-negotiation/`](domain-negotiation/) | 56 | Preparation, at-the-table, channels, multi-party, after-the-deal, contexts, difficult conversations, craft |
 | [`domain-decision-making/`](domain-decision-making/) | 40 | Decision frameworks, scenario planning, tradeoff analysis, decision documentation |
 | [`domain-reasoning-craft/`](domain-reasoning-craft/) | 42 | Reasoning moves, forecasting, systems thinking, epistemics |
 | [`domain-psy-ops/`](domain-psy-ops/) | 43 | Cognitive security: influence analysis and manipulation defense (analytic/defensive only) |
 | [`domain-deep-analysis/`](domain-deep-analysis/) | 22 | Multi-phase deep-think systems for problems, decisions, plans, designs |
 | [`domain-ideation/`](domain-ideation/) | 19 | Divergent and convergent ideation |
 | [`domain-risk/`](domain-risk/) | 25 | Register, FMEA, heat map, tail risk, dependency chains, AAR, security operations for non-engineers |
-| [`domain-policy/`](domain-policy/) | 10 | Policy options, framing, stakeholder maps, feasibility, regulatory impact analysis, program evaluation, rulemaking comments, bill analysis, cross-jurisdiction comparison |
+| [`domain-policy/`](domain-policy/) | 17 | Policy options, framing, stakeholder maps, feasibility, regulatory impact analysis, program evaluation, rulemaking comments, bill analysis, cross-jurisdiction comparison; public administration (local budgets, grant compliance, rulemaking plans, casework, performance measures, meeting briefs) |
 
 ## Writing & communication
 
@@ -94,7 +94,7 @@ decides, whoever holds it.
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-education-teaching/`](domain-education-teaching/) | 320 | Three audience tracks: `instructor/`, `program/`, `learner/` |
+| [`domain-education-teaching/`](domain-education-teaching/) | 326 | Three audience tracks: `instructor/`, `program/`, `learner/` |
 | [`domain-medical-education/`](domain-medical-education/) | 215 | Health-professions education: `educator-*` and `learner-*` tracks, plus `profession-specific/` |
 | [`domain-science/`](domain-science/) | 155 | The practice of science: methods, bench, computational, statistics, writing, peer review, grants, ethics, lab ops, engagement, disciplines |
 | [`domain-research-academic/`](domain-research-academic/) | 20 | Cross-field research methodology |
@@ -109,14 +109,14 @@ decides, whoever holds it.
 | [`domain-legal/`](domain-legal/) | 248 | Practitioner legal work (incl. regulatory, privacy, ethics, bankruptcy, tax, immigration, criminal, appellate, real estate, trusts & estates), family law, and two litigant-facing self-advocacy sections |
 | [`domain-finance/`](domain-finance/) | 155 | Corporate finance, markets, valuation, tax, risk, crypto, options, quant |
 | [`domain-hr-management/`](domain-hr-management/) | 23 | Performance reviews, hiring |
-| [`domain-specialized-fields/`](domain-specialized-fields/) | 15 | Real-estate, trades and insurance practitioners: CMA, offer strategy, rental underwriting, inspection triage, bid estimates, change orders, bid/no-bid, broker submissions, underwriting, claim coverage review, renewals (hub; finance and psychology were promoted out) |
+| [`domain-specialized-fields/`](domain-specialized-fields/) | 20 | Real-estate, trades, insurance and professional-services practitioners: CMA, offer strategy, rental underwriting, inspection triage, bid estimates, change orders, bid/no-bid, broker submissions, underwriting, claim coverage review, renewals, utilization and realization, fixed-fee overruns, engagement staffing, independence checks (hub; finance and psychology were promoted out) |
 
 ## Life & faith
 
 | Directory | Files | Holds |
 |---|---|---|
 | [`domain-biblical-studies/`](domain-biblical-studies/) | 142 | Exegesis, study methods, sermon, theology, learner, ministry, church staff, languages, apologetics |
-| [`domain-parenting/`](domain-parenting/) | 125 | Age bands 0–18, divorce/custody/co-parenting, transitions and life events, safety, health/sleep/feeding |
+| [`domain-parenting/`](domain-parenting/) | 155 | Age bands 0–18, divorce/custody/co-parenting, transitions and life events, safety, health/sleep/feeding, family structure, tech, identity and culture, parent capacity, academics, mental health and behaviour, neurodivergence |
 | [`domain-discipleship/`](domain-discipleship/) | 88 | One-to-one formation and the programs that pair people |
 | [`domain-conversation-practice/`](domain-conversation-practice/) | 15 | Role-play rehearsal: language sims (CEFR level, correction modes) and hard-conversation persona sims |
 | [`domain-health-wellness/`](domain-health-wellness/) | 14 | Healthy-adult training (incl. mobility, returning after a break, active ageing), nutrition, hydration in heat, and sleep; safety-gated, red-flag screen first |

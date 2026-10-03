@@ -7,6 +7,7 @@ pae_00pvb5faj71f	prompt	prompt:idea-to-product/stage-3-market-research/product-m
 pae_00vhdw6agwdm	agent	agent:ai-governance-audit-kit/duplication-analyst	ai-governance-audit-kit/agents/duplication-analyst.md
 pae_014jhyq0rdyb	technique	technique:CM-13	technique:CM-13
 pae_01cygd2rabgm	prompt	prompt:medical-education/educator-rubrics-wba/assess-cbd-rubric-author	domain-medical-education/educator-rubrics-wba/assess_cbd_rubric_author.md
+pae_01esrdey0pde	prompt	prompt:education-teaching/instructor/reporting-communication/teaching-multilingual-family-outreach	domain-education-teaching/instructor/reporting-communication/teaching_multilingual_family_outreach.md
 pae_01fsz6eca7t4	prompt	prompt:health-wellness/fitness/fitness-beginner-training-plan	domain-health-wellness/fitness/fitness_beginner_training_plan.md
 pae_01kxj7ymxrhv	prompt	prompt:voice-conversational-ui/nlu-training/nlu-training-data-generation	domain-voice-conversational-ui/nlu-training/nlu_training_data_generation.md
 pae_01qchbv4ga0m	prompt	prompt:legal/custody/legal-custody-trial-prep-and-factor-proof-plan	domain-legal/custody/legal_custody_trial_prep_and_factor_proof_plan.md
@@ -19,6 +20,7 @@ pae_02629t04ktmr	prompt	prompt:finance/valuation/finance-dcf-model-auditor	domai
 pae_0263z3nbjka0	prompt	prompt:professional-writing/content-production/content-short-form-hook-bank	domain-professional-writing/content-production/content_short_form_hook_bank.md
 pae_027vebtg8sxy	prompt	prompt:healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu-drug-analgesics-reference	domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_drug_analgesics_reference.md
 pae_02d5mdffwdwg	prompt	prompt:education-teaching/instructor/assessment-design/teaching-diagnostic-quiz-knowledge-map	domain-education-teaching/instructor/assessment-design/teaching_diagnostic_quiz_knowledge_map.md
+pae_02gend9ktc92	prompt	prompt:parenting/caregiver-facing/coparenting-family-structure/parenting-lgbtq-parented-family-conversations	domain-parenting/caregiver-facing/coparenting-family-structure/parenting_lgbtq_parented_family_conversations.md
 pae_02gksdca52s5	prompt	prompt:medical-education/profession-specific/allied/allied-scope-and-reasoning-drill	domain-healthcare-clinical/prompts/medical-education/learner-self-study/discipline-specific/learner_allied_health_scope_and_reasoning_drill.md
 pae_02pv76gxken6	prompt	prompt:discipleship/program-operations/discipleship-participant-onboarding-design	domain-discipleship/program-operations/discipleship_participant_onboarding_design.md
 pae_02swyt7p4x6c	prompt	prompt:ai-ml/learning-ai-ml/mllearn-reproduce-paper-plan	domain-AI-ML/learning-ai-ml/mllearn_reproduce_a_paper_plan.md
@@ -104,11 +106,13 @@ pae_0f4q4gm46k98	prompt	prompt:personal-development/prompts/career/career-assess
 pae_0fnd5g17gh3s	technique	technique:QA-25	technique:QA-25
 pae_0fv0dgcmb8bq	prompt	prompt:personal-development/major-decisions/personal-start-business-vs-employment	domain-personal-development/major-decisions/personal_start_business_vs_employment.md
 pae_0fv4gesz4q4q	technique	technique:DP-29	technique:DP-29
+pae_0g2s4wmbrxh4	prompt	prompt:parenting/caregiver-facing/mental-health-behavior/parenting-child-suicide-talk-response-6-12	domain-parenting/caregiver-facing/mental-health-behavior/parenting_child_suicide_talk_response_6_12.md
 pae_0g9kj5pnzhtz	skill	skill:agentic-resources/security/agentic-actions-auditor	domain-agentic-resources/skills/security/agentic-actions-auditor/SKILL.md
 pae_0gf6azs7hcpj	prompt	prompt:ai-ml/learning-ai-ml/paper-reproductions/mllearn-reproduce-resnet-image-classifier	domain-AI-ML/learning-ai-ml/paper-reproductions/mllearn_reproduce_resnet_image_classifier.md
 pae_0gnq10j42v0q	prompt	prompt:prompt-engineering/escape-median/escapemedian-instruction-sharpener	domain-prompt-engineering/escape-median/escapemedian_instruction_sharpener.md
 pae_0gw0ymc2d2zt	prompt	prompt:software-engineering/mobile/android/maintenance/android-tech-debt-triage	domain-software-engineering/mobile/android/maintenance/android_tech_debt_triage.md
 pae_0gx0fqkf4b7x	prompt	prompt:psy-ops/personal-defense/psyops-elder-targeted-fraud-recognition	domain-psy-ops/personal-defense/psyops_elder_targeted_fraud_recognition.md
+pae_0h431qfhx6gf	prompt	prompt:parenting/caregiver-facing/neurodivergence/parenting-dcd-dyspraxia-home-support	domain-parenting/caregiver-facing/neurodivergence/parenting_dcd_dyspraxia_home_support.md
 pae_0h44rcxa3dyx	prompt	prompt:frontend-development/testing/frontend-testing-playwright	domain-frontend-development/testing/frontend_testing_playwright.md
 pae_0hdrjm9sehvq	prompt	prompt:ai-ml/classical-ml-modeling/mlmodel-cross-validation-design	domain-AI-ML/classical-ml-modeling/mlmodel_cross_validation_design.md
 pae_0hnphzpcbngt	skill	skill:agentic-resources/cloud-infrastructure/istio-traffic-management	domain-agentic-resources/skills/cloud-infrastructure/istio-traffic-management/SKILL.md
@@ -285,6 +289,7 @@ pae_1f49wehjmptm	prompt	prompt:education-teaching/learner/stuck-and-confused/lea
 pae_1fsf1zyph55r	agent	agent:agentic-resources/languages/unity-developer	domain-agentic-resources/agents/languages/unity_developer.md
 pae_1fwfr2warbec	technique	technique:RT-05	technique:RT-05
 pae_1g0htchepvjj	prompt	prompt:presentations/narrative-delivery/presentation-investor-pitch-narrative	domain-presentations/narrative-delivery/presentation_investor_pitch_narrative.md
+pae_1g0kxz0x2g3d	prompt	prompt:parenting/caregiver-facing/identity-culture/parenting-race-racism-conversations-by-age	domain-parenting/caregiver-facing/identity-culture/parenting_race_racism_conversations_by_age.md
 pae_1g7m7zszab4k	prompt	prompt:image-generation/nano-banana-guide	domain-image-generation/NANO_BANANA_GUIDE.md
 pae_1g8v6h7dtm63	prompt	prompt:software-engineering/electron-smart-tv/electron-packaging-cross-platform-review	domain-software-engineering/electron-smart-tv/electron_packaging_cross_platform_review.md
 pae_1gf72na02n3y	prompt	prompt:personal-development/prompts/life-transitions/lifetransition-post-breakup-rebuild	domain-personal-development/prompts/life-transitions/lifetransition_post_breakup_rebuild.md
@@ -310,6 +315,7 @@ pae_1kb0chpvwvv1	prompt	prompt:productivity/automation/automation-daily-accounta
 pae_1kgj8j5rs5cx	technique	technique:ST-02	technique:ST-02
 pae_1ksjy402zfdq	prompt	prompt:software-engineering/analysis/feature-design/task-sorting-workflow-guide	domain-engineering-workflows/tasks/task_sorting_workflow_guide.md
 pae_1kxexhwfkz0w	prompt	prompt:legal/personal-self-advocacy/harassment-stalking/legalprep-police-report-account-preparer	domain-legal/personal-self-advocacy/harassment-stalking/legalprep_police_report_account_preparer.md
+pae_1m0c4c5ehtag	prompt	prompt:policy/public-administration/policy-public-meeting-staff-brief	domain-policy/public-administration/policy_public_meeting_staff_brief.md
 pae_1m4fpq3dkcxr	prompt	prompt:psychology/populations/child-adolescent/psychology-pediatric-anxiety-protocol-session-plan	domain-psychology/populations/child-adolescent/psychology_pediatric_anxiety_protocol_session_plan.md
 pae_1m6ygzjct6k6	agent	agent:agentic-resources/devops/observability-engineer	domain-agentic-resources/agents/devops/observability_engineer.md
 pae_1may2ckp8gjw	prompt	prompt:software-engineering/localization/localization-translation-management-workflow	domain-software-engineering/localization/localization_translation_management_workflow.md
@@ -572,6 +578,7 @@ pae_35nn5bjmpvdz	prompt	prompt:psychology/diagnostic-formulation/psychology-mali
 pae_35wgwr7ahp79	prompt	prompt:medical-education/learner-clinical-reasoning/reason-management-decision-branch-drill	domain-medical-education/learner-clinical-reasoning/reason_management_decision_branch_drill.md
 pae_35wzsvzvn8mm	prompt	prompt:healthcare-clinical/prompts/perianesthesia/stage-4-growth-advanced/pacu-grow-teaching-recovery-concept	domain-healthcare-clinical/prompts/perianesthesia/stage-4-growth-advanced/pacu_grow_teaching_recovery_concept.md
 pae_36pvgwmbxkwt	agent	agent:agentic-resources/languages/cpp-pro	domain-agentic-resources/agents/languages/cpp_pro.md
+pae_36q4f5qrrm91	prompt	prompt:specialized-fields/professional-services/proserv-utilization-realization-review	domain-specialized-fields/professional-services/proserv_utilization_realization_review.md
 pae_36q551285bfg	prompt	prompt:ideation/ideation-affinity-clustering	domain-ideation/ideation_affinity_clustering.md
 pae_36r1f0r3t39g	prompt	prompt:negotiation/contexts/negotiation-medical-bill-reduction	domain-negotiation/contexts/negotiation_medical_bill_reduction.md
 pae_36vnk4d57zzw	prompt	prompt:written-advocacy/cross-cutting/advocacy-response-analyzer	domain-written-advocacy/cross-cutting/advocacy_response_analyzer.md
@@ -626,6 +633,7 @@ pae_3fhxfje6r4sy	prompt	prompt:software-engineering/improvement/improvement-best
 pae_3fjnwzh4xznp	prompt	prompt:frontend-development/angular/frontend-angular-reactive-patterns	domain-frontend-development/angular/frontend_angular_reactive_patterns.md
 pae_3fsdh7td169s	skill	skill:agentic-resources/marketing/cold-email	domain-agentic-resources/skills/marketing/cold-email/SKILL.md
 pae_3fzrhdecdmmc	prompt	prompt:psychology/specialty-clinical/psychology-behavioral-addiction-protocol	domain-psychology/specialty-clinical/psychology_behavioral_addiction_protocol.md
+pae_3g4mqcg5t3k3	prompt	prompt:parenting/caregiver-facing/identity-culture/parenting-multilingual-heritage-language-plan	domain-parenting/caregiver-facing/identity-culture/parenting_multilingual_heritage_language_plan.md
 pae_3gpssxkgyx19	agent	agent:agentic-system-factory/security-gate-reviewer	agentic-system-factory/agents/security-gate-reviewer.md
 pae_3gt3wsr6xvqy	prompt	prompt:ai-ml/genai-llm-engineering/genai-multilingual-design	domain-AI-ML/genai-llm-engineering/genai_multilingual_design.md
 pae_3gyf3mar5my4	prompt	prompt:product-management/prompts/product-product-idea-vetting-will-it-fly-or-flop	domain-professional-communication/prompts/product_product_idea_vetting_will_it_fly_or_flop.md
@@ -743,6 +751,7 @@ pae_41f941btmgpd	prompt	prompt:healthcare-clinical/prompts/perianesthesia/clinic
 pae_41vvs9914cfm	prompt	prompt:legal/personal-self-advocacy/housing-landlord-tenant/legalprep-landlord-notice-response-preparer	domain-legal/personal-self-advocacy/housing-landlord-tenant/legalprep_landlord_notice_response_preparer.md
 pae_41w51a168669	skill	skill:agentic-resources/non-coding/healthcare/pacu-competency-checklist-builder	domain-agentic-resources/skills/non-coding/healthcare/pacu-competency-checklist-builder/SKILL.md
 pae_41yce148qaxr	agent	agent:agentic-resources/frontend-mobile/flutter-expert	domain-agentic-resources/agents/frontend-mobile/flutter_expert.md
+pae_423zj69vpa40	prompt	prompt:parenting/caregiver-facing/academics-skills/parenting-learning-concern-school-meeting	domain-parenting/caregiver-facing/academics-skills/parenting_learning_concern_school_meeting.md
 pae_426sgbe3744z	prompt	prompt:discipleship/pairing-and-relationship/discipleship-cadence-and-rhythm-design	domain-discipleship/pairing-and-relationship/discipleship_cadence_and_rhythm_design.md
 pae_42dvymxscv43	prompt	prompt:software-engineering/devops/android-ci-cd-pipeline-design	domain-software-engineering/devops/android_ci_cd_pipeline_design.md
 pae_42hvmamtj8jh	prompt	prompt:legal/in-house-legalops/legal-legal-intake-triage-router	domain-legal/in-house-legalops/legal_legal_intake_triage_router.md
@@ -1223,6 +1232,7 @@ pae_6ra3wc9f1a44	prompt	prompt:legal/custody/legal-paternity-parentage-establish
 pae_6rs4hedhcarx	prompt	prompt:healthcare-clinical/prompts/pathophysiology/patho-microbial-pathogenesis	domain-healthcare-clinical/prompts/pathophysiology/patho_microbial_pathogenesis.md
 pae_6rv184smktjw	agent	agent:childrens-book-studio/manuscript-craft-reviewer	childrens-book-studio/agents/manuscript-craft-reviewer.md
 pae_6ry3k0ah1vjq	prompt	prompt:personal-development/prompts/agency/agency-ship-sprint-design	domain-personal-development/prompts/agency/agency_ship_sprint_design.md
+pae_6ry4yva8f61f	prompt	prompt:education-teaching/program/student-success/program-retention-persistence-data-review	domain-education-teaching/program/student-success/program_retention_persistence_data_review.md
 pae_6rzpbtw4sgy0	prompt	prompt:software-engineering/analysis/security/security-audit-trail-design	domain-software-engineering/analysis/security/security_audit_trail_design.md
 pae_6s2s79nqhaet	prompt	prompt:software-engineering/devops/devops-helm-chart-review	domain-software-engineering/devops/devops_helm_chart_review.md
 pae_6s676hzhtkyx	prompt	prompt:specialized-fields/real-estate/realestate-buyer-offer-strategy	domain-specialized-fields/real-estate/realestate_buyer_offer_strategy.md
@@ -1241,6 +1251,7 @@ pae_6v9m0py76f6q	prompt	prompt:psychology/treatment-planning/psychology-smart-tr
 pae_6vgb3czs9f6e	prompt	prompt:software-engineering/mobile/android/publishing/play-store-review-response-strategy	domain-software-engineering/mobile/android/publishing/play_store_review_response_strategy.md
 pae_6vksct76m88b	prompt	prompt:prompt-engineering/prompt-improvement/improve-constraint-layering	domain-prompt-engineering/prompt-improvement/improve_constraint_layering.md
 pae_6w3bjwgaww3g	prompt	prompt:biblical-studies/learner-self-study/biblical-learner-reflection-journal-companion	domain-biblical-studies/learner-self-study/biblical_learner_reflection_journal_companion.md
+pae_6wrprn915j33	prompt	prompt:parenting/caregiver-facing/parent-capacity/parenting-parent-overload-load-redesign	domain-parenting/caregiver-facing/parent-capacity/parenting_parent_overload_load_redesign.md
 pae_6wshsdepp8z4	prompt	prompt:ai-ml/problem-framing-scoping/mlframe-ml-use-case-canvas	domain-AI-ML/problem-framing-scoping/mlframe_ml_use_case_canvas.md
 pae_6x0xhh73d07d	prompt	prompt:ai-ml/agentic-ai-systems/aiagent-complexity-ladder-gate	domain-AI-ML/agentic-ai-systems/aiagent_complexity_ladder_gate.md
 pae_6x101qzq22yz	prompt	prompt:image-generation/worksheet-generators/social-studies/education-map-skills-worksheet-generator	domain-image-generation/worksheet-generators/social-studies/education_map_skills_worksheet_generator.md
@@ -1250,6 +1261,7 @@ pae_6y2mszwe7kzm	prompt	prompt:ai-ml/mlops-infrastructure/mlops-training-pipelin
 pae_6y7879pjrepk	prompt	prompt:personal-development/prompts/identity/identity-strengths-inventory-revealed	domain-personal-development/prompts/identity/identity_strengths_inventory_revealed.md
 pae_6y7n6y0160kj	prompt	prompt:creative-writing/craft-tools/writing-revision-and-self-editing	domain-creative-writing/craft-tools/writing_revision_and_self_editing.md
 pae_6y7nq4hd1wjz	prompt	prompt:prompt-engineering/prompt-creation/creation-prompt-for-prompt	domain-prompt-engineering/prompt-creation/creation_prompt_for_prompt.md
+pae_6y93y4r2h180	prompt	prompt:negotiation/channels/negotiation-ai-agent-mediated	domain-negotiation/channels/negotiation_ai_agent_mediated.md
 pae_6yjths8hzfxw	prompt	prompt:hr-management/hiring/hr-structured-scorecard	domain-hr-management/hiring/hr_structured_scorecard.md
 pae_6yywvbc799ex	prompt	prompt:healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu-red-flag-card	domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md
 pae_6za81jw40c4n	skill	skill:agentic-resources/blockchain-web3/code-maturity-assessor	domain-agentic-resources/skills/blockchain-web3/code-maturity-assessor/SKILL.md
@@ -1540,6 +1552,7 @@ pae_8gbhtfmaxxxh	skill	skill:agentic-resources/security/audit-context-building	d
 pae_8gft1k81at6q	prompt	prompt:software-engineering/mobile/cross-platform/cross-platform-architecture-design	domain-software-engineering/mobile/cross-platform/cross_platform_architecture_design.md
 pae_8gj53qvapec0	prompt	prompt:software-engineering/localization/localization-rtl-language-support	domain-software-engineering/localization/localization_rtl_language_support.md
 pae_8gtqn6h8p223	prompt	prompt:software-engineering/analysis/security/security-gdpr-implementation-guide	domain-software-engineering/analysis/security/security_gdpr_implementation_guide.md
+pae_8gvyr9xgw76t	prompt	prompt:policy/public-administration/policy-constituent-casework-system	domain-policy/public-administration/policy_constituent_casework_system.md
 pae_8h3j2d8cyn4z	prompt	prompt:medical-education/educator-assessment-items/assess-question-bank-audit	domain-medical-education/educator-assessment-items/assess_question_bank_audit.md
 pae_8h6xf1br3690	prompt	prompt:childrens-writing/craft-tools/childrens-kid-dialogue-workshop	domain-childrens-writing/craft-tools/childrens_kid_dialogue_workshop.md
 pae_8h82vk9xegx3	technique	technique:DS-24	technique:DS-24
@@ -1821,6 +1834,7 @@ pae_9zcdzextjeyn	prompt	prompt:data-analytics/analysis-and-sql/analytics-metric-
 pae_a08hxfw9tdg9	technique	technique:NE-02	technique:NE-02
 pae_a0jtf9prh18v	prompt	prompt:finance/corporate-finance-fpa/finance-capex-prioritization-analysis	domain-finance/corporate-finance-fpa/finance_capex_prioritization_analysis.md
 pae_a0mr12n1627t	prompt	prompt:idea-to-product/stage-4-business-model/lean-canvas-analysis	domain-idea-to-product/stage-4-business-model/lean_canvas_analysis.md
+pae_a0p2a629dykh	prompt	prompt:parenting/caregiver-facing/tech-digital/parenting-ai-chatbot-companion-family-rules	domain-parenting/caregiver-facing/tech-digital/parenting_ai_chatbot_companion_family_rules.md
 pae_a0qbvzva1r6j	prompt	prompt:frontend-development/svelte/frontend-svelte-state-management	domain-frontend-development/svelte/frontend_svelte_state_management.md
 pae_a19sf51z2bsm	prompt	prompt:science/public-engagement/science-explainer-for-general-audience	domain-science/public-engagement/science_explainer_for_general_audience.md
 pae_a1b6gt3try5r	prompt	prompt:sales-customer/sales/sales-mutual-close-plan	domain-sales-customer/sales/sales_mutual_close_plan.md
@@ -2329,6 +2343,7 @@ pae_cvdk3jn2ckg2	prompt	prompt:hr-management/performance-reviews/hr-self-review-
 pae_cverx82p38qh	prompt	prompt:business-strategy/startup/monetization-alternative-revenue	domain-business-strategy/startup/monetization_alternative_revenue.md
 pae_cvpjs4795ds0	prompt	prompt:parenting/caregiver-facing/cross-age/parenting-sibling-spacing-dynamics	domain-parenting/caregiver-facing/cross-age/parenting_sibling_spacing_dynamics.md
 pae_cvq6aaqra3bv	prompt	prompt:education-teaching/learner/language/learn-pronunciation-coach-text	domain-education-teaching/learner/language/learn_pronunciation_coach_text.md
+pae_cvqzg9pbccb6	prompt	prompt:parenting/caregiver-facing/tech-digital/parenting-gaming-conflict-and-spending-reset	domain-parenting/caregiver-facing/tech-digital/parenting_gaming_conflict_and_spending_reset.md
 pae_cvshjteakqax	prompt	prompt:software-engineering/analysis/business/okr-analysis	domain-business-strategy/analysis/okr_analysis.md
 pae_cvxdh64pn2f7	prompt	prompt:ai-ml/production-monitoring/mlmonitor-cv-incident-patterns	domain-AI-ML/production-monitoring/mlmonitor_cv_incident_patterns.md
 pae_cvxqtv4myxbd	prompt	prompt:ai-ml/problem-framing-scoping/mlframe-data-readiness-assessment	domain-AI-ML/problem-framing-scoping/mlframe_data_readiness_assessment.md
@@ -2444,6 +2459,7 @@ pae_ddph0g4m91st	prompt	prompt:professional-writing/business-writing/business-wr
 pae_ddqtmkrj20t9	prompt	prompt:ai-ml/learning-ai-ml/mllearn-study-path-designer	domain-AI-ML/learning-ai-ml/mllearn_study_path_designer.md
 pae_de7nnjv0rcb5	technique	technique:NE-05	technique:NE-05
 pae_de9jkgd37sy0	prompt	prompt:healthcare-clinical/prompts/specialty/specialty-pancreatitis-severity-management	domain-healthcare-clinical/prompts/specialty/specialty_pancreatitis_severity_management.md
+pae_dejftwrq0fgh	prompt	prompt:parenting/caregiver-facing/parent-capacity/parenting-couple-strain-under-parenting-load	domain-parenting/caregiver-facing/parent-capacity/parenting_couple_strain_under_parenting_load.md
 pae_dejfvyx0hcfw	persona	persona:agentic-resources/product/product-trend-researcher	domain-agentic-resources/personas/product/product_trend_researcher.md
 pae_dejhknhkjhxz	skill	skill:agentic-resources/blockchain-web3/dimensional-analysis	domain-agentic-resources/skills/blockchain-web3/dimensional-analysis/SKILL.md
 pae_dfs11321qz8q	prompt	prompt:agentic-system-factory/prompts/stage-2-topology	agentic-system-factory/prompts/stage-2-topology.md
@@ -2461,6 +2477,7 @@ pae_djw13zwf9bnc	prompt	prompt:ai-ml/genai-llm-engineering/genai-structured-outp
 pae_dk4xddh8kdky	prompt	prompt:software-engineering/analysis/database/database-migration-strategy	domain-software-engineering/analysis/database/database_migration_strategy.md
 pae_dkbesrr7wrkg	prompt	prompt:psy-ops/technique-analysis/psyops-propaganda-technique-identification	domain-psy-ops/technique-analysis/psyops_propaganda_technique_identification.md
 pae_dkd2bsxw7xgc	prompt	prompt:professional-writing/content-quality/quality-slop-product-description	domain-productivity/validation/quality_slop_product_description.md
+pae_dkgjgy3cwm6f	prompt	prompt:personal-development/prompts/emotional-fitness/emotionalfitness-money-beliefs-and-avoidance	domain-personal-development/prompts/emotional-fitness/emotionalfitness_money_beliefs_and_avoidance.md
 pae_dkkk5p6zf24y	prompt	prompt:prompt-engineering/system-prompts/system-role-charter-designer	domain-prompt-engineering/system-prompts/system_role_charter_designer.md
 pae_dkxyhjfcyt4e	command	command:agentic-resources/non-coding/research/methodology-risk-check	domain-agentic-resources/commands/non-coding/research/methodology_risk_check.md
 pae_dm9hm1ahkgg1	prompt	prompt:healthcare-clinical/prompts/care-plans/careplan-stroke-secondary-prevention	domain-healthcare-clinical/prompts/care-plans/careplan_stroke_secondary_prevention.md
@@ -2476,6 +2493,7 @@ pae_dp5h2sty2wd8	prompt	prompt:decision-making/tradeoff-multi-criteria-decision-
 pae_dp6hsa1vrvf5	prompt	prompt:advertising/advertising-beauty-cosmetics	domain-advertising/advertising_beauty_cosmetics.md
 pae_dpe7rrq6jctt	prompt	prompt:biblical-studies/sermon-devotional/biblical-lectionary-sermon-prep	domain-biblical-studies/sermon-devotional/biblical_lectionary_sermon_prep.md
 pae_dpmmfqmhfsty	prompt	prompt:idea-to-product/stage-1-ideation/ideation-cross-domain-analogy-mining	domain-idea-to-product/stage-1-ideation/ideation_cross_domain_analogy_mining.md
+pae_dpn5xn7tsemz	prompt	prompt:education-teaching/program/student-success/program-at-risk-student-outreach-plan	domain-education-teaching/program/student-success/program_at_risk_student_outreach_plan.md
 pae_dpzkb012yy4d	prompt	prompt:parenting/caregiver-facing/ages-0-3/parenting-separation-anxiety-protocol-0-3	domain-parenting/caregiver-facing/ages-0-3/parenting_separation_anxiety_protocol_0_3.md
 pae_dq5p2w4n6jyf	prompt	prompt:prompt-engineering/rag-prompts/rag-citation-format-designer	domain-prompt-engineering/rag-prompts/rag_citation_format_designer.md
 pae_dq79793c7yve	prompt	prompt:ai-ml/production-monitoring/mlmonitor-feedback-loop-detection	domain-AI-ML/production-monitoring/mlmonitor_feedback_loop_detection.md
@@ -2512,7 +2530,9 @@ pae_dw1r2zv3c6yv	technique	technique:NE-09	technique:NE-09
 pae_dw8sqd06nz2h	prompt	prompt:personal-development/prompts/thinking/thinking-fresh-perspective-generator	domain-personal-development/prompts/thinking/thinking_fresh_perspective_generator.md
 pae_dw90hpnp0gzc	prompt	prompt:engineering-workflows/workflows/workflow-engineering-technical-debt-assessment	domain-engineering-workflows/workflows/workflow_engineering_technical_debt_assessment.md
 pae_dw99amsnrq8r	prompt	prompt:software-engineering/analysis/performance/performance-concurrency-synchronization-analysis	domain-software-engineering/analysis/performance/performance_concurrency_synchronization_analysis.md
+pae_dwbvc9r4ncyj	prompt	prompt:parenting/caregiver-facing/coparenting-family-structure/parenting-solo-parent-load-and-support	domain-parenting/caregiver-facing/coparenting-family-structure/parenting_solo_parent_load_and_support.md
 pae_dwhkfn23zsnz	prompt	prompt:science/methods-foundations/science-research-question-refiner	domain-science/methods-foundations/science_research_question_refiner.md
+pae_dwt3gb0s23qk	prompt	prompt:personal-development/prompts/stakeholder/stakeholder-reorg-navigation	domain-personal-development/prompts/stakeholder/stakeholder_reorg_navigation.md
 pae_dwwj1bkvn33v	prompt	prompt:ai-ml/agentic-ai-systems/aiagent-tool-design	domain-AI-ML/agentic-ai-systems/aiagent_tool_design.md
 pae_dx3cng79ytm2	prompt	prompt:engineering-workflows/workflows/android-jetpack-compose-debug	domain-engineering-workflows/workflows/android_jetpack_compose_debug.md
 pae_dx407pqn18gm	prompt	prompt:ai-ml/genai-llm-engineering/genai-mcp-server-design-review	domain-AI-ML/genai-llm-engineering/genai_mcp_server_design_review.md
@@ -2521,6 +2541,7 @@ pae_dx4e5n8ncyc8	skill	skill:agentic-resources/cloud-infrastructure/gitops-workf
 pae_dx8mbwtpq582	prompt	prompt:decision-making/decisioning-regret-minimization	domain-decision-making/decisioning_regret_minimization.md
 pae_dxe61rpr65dz	prompt	prompt:psychology/diagnostic-formulation/psychology-icd10-crosswalk-assistant	domain-psychology/diagnostic-formulation/psychology_icd10_crosswalk_assistant.md
 pae_dxhzr7gbzge4	prompt	prompt:biblical-studies/apologetics-engagement/biblical-apologetics-conversation-prep	domain-biblical-studies/apologetics-engagement/biblical_apologetics_conversation_prep.md
+pae_dxt5chr3myw1	prompt	prompt:specialized-fields/professional-services/proserv-fixed-fee-overrun-diagnosis	domain-specialized-fields/professional-services/proserv_fixed_fee_overrun_diagnosis.md
 pae_dy8hpde9f95h	skill	skill:agentic-resources/developer-tools/repomix-unmixer	domain-agentic-resources/skills/developer-tools/repomix-unmixer/SKILL.md
 pae_dyatst9hcw5v	prompt	prompt:software-engineering/cloud/cloud-finops-cost-allocation	domain-software-engineering/cloud/cloud_finops_cost_allocation.md
 pae_dydhqspacvq3	agent	agent:agentic-resources/frontend-mobile/android-app-surveyor	domain-agentic-resources/agents/frontend-mobile/android_app_surveyor.md
@@ -2532,6 +2553,7 @@ pae_e03zm87q9ra4	prompt	prompt:science/peer-review/science-peer-review-drafter	d
 pae_e06vhx47331c	skill	skill:agentic-resources/blockchain-web3/defi-protocol-templates	domain-agentic-resources/skills/blockchain-web3/defi-protocol-templates/SKILL.md
 pae_e12q4jkdbdwa	agent	agent:agentic-resources/seo-marketing/search-specialist	domain-agentic-resources/agents/seo-marketing/search_specialist.md
 pae_e15639d8gg3v	prompt	prompt:presentations/powerpoint-quarterly-business-review	domain-presentations/powerpoint_quarterly_business_review.md
+pae_e18193d3w8jw	prompt	prompt:education-teaching/instructor/reporting-communication/teaching-parent-teacher-conference-prep	domain-education-teaching/instructor/reporting-communication/teaching_parent_teacher_conference_prep.md
 pae_e19pjnjmnqer	prompt	prompt:voice-conversational-ui/platform-specific/platform-alexa-skill-development	domain-voice-conversational-ui/platform-specific/platform_alexa_skill_development.md
 pae_e1a3smwmnypp	prompt	prompt:parenting/caregiver-facing/transitions-events/parenting-new-sibling-arrival-prep	domain-parenting/caregiver-facing/transitions-events/parenting_new_sibling_arrival_prep.md
 pae_e1m97drrhmwx	command	command:agentic-resources/framework-migration/legacy-modernize	domain-agentic-resources/commands/framework-migration/legacy_modernize.md
@@ -2590,6 +2612,7 @@ pae_easq1kxdz35s	prompt	prompt:science/public-engagement/science-media-interview
 pae_ebhe88x1s2fd	command	command:agentic-resources/other/refactor-clean	domain-agentic-resources/commands/other/refactor_clean.md
 pae_ebvvpbn9npby	prompt	prompt:image-generation/comic-sequential/comic-panel-page	domain-image-generation/comic-sequential/comic_panel_page.md
 pae_ebvwev56eapn	prompt	prompt:psychology/risk-crisis/psychology-columbia-suicide-risk-assessment	domain-psychology/risk-crisis/psychology_columbia_suicide_risk_assessment.md
+pae_ebybfpv82zgc	prompt	prompt:negotiation/craft/negotiation-analytics-scorecard	domain-negotiation/craft/negotiation_analytics_scorecard.md
 pae_ec86z6hk0zwz	prompt	prompt:software-engineering/mobile/android/targeted-reviews/firebase-health-check	domain-software-engineering/mobile/android/targeted-reviews/firebase_health_check.md
 pae_ec8hnq6h19a0	prompt	prompt:image-generation/worksheet-generators/early-childhood/education-counting-worksheet-generator	domain-image-generation/worksheet-generators/early-childhood/education_counting_worksheet_generator.md
 pae_ec8jhh3wkqsk	prompt	prompt:psychology/populations/lgbtq-affirmative/psychology-minority-stress-formulation	domain-psychology/populations/lgbtq-affirmative/psychology_minority_stress_formulation.md
@@ -2661,6 +2684,7 @@ pae_er2wd5e0weta	prompt	prompt:psychology/practice-operations/psychology-telehea
 pae_er5j1vjpkb8z	agent	agent:agentic-resources/architecture/c4-context	domain-agentic-resources/agents/architecture/c4_context.md
 pae_er8v34shqc35	prompt	prompt:healthcare-clinical/prompts/specialty/medicine-psychiatric-assessment-support	domain-healthcare-clinical/prompts/specialty/medicine_psychiatric_assessment_support.md
 pae_ercsr517paj3	technique	technique:DP-01	technique:DP-01
+pae_erpg6j9rhkqh	prompt	prompt:parenting/caregiver-facing/coparenting-family-structure/parenting-kinship-care-first-months	domain-parenting/caregiver-facing/coparenting-family-structure/parenting_kinship_care_first_months.md
 pae_erq28qmw4f38	prompt	prompt:biblical-studies/exegesis-interpretation/biblical-canonical-intertextual-reading	domain-biblical-studies/exegesis-interpretation/biblical_canonical_intertextual_reading.md
 pae_ervypsnx1f10	prompt	prompt:medical-education/educator-case-writing/case-mm-case-author	domain-medical-education/educator-case-writing/case_mm_case_author.md
 pae_es3xpdhp7fs3	prompt	prompt:education-teaching/instructor/assessment-items/teaching-answer-key-generator	domain-education-teaching/instructor/assessment-items/teaching_answer_key_generator.md
@@ -2733,6 +2757,7 @@ pae_f53298epscmm	prompt	prompt:business-strategy/research/research-company-deep-
 pae_f5e2wkh803d4	prompt	prompt:finance/investing-research/finance-short-thesis-constructor	domain-finance/investing-research/finance_short_thesis_constructor.md
 pae_f5nts6gx8qat	prompt	prompt:image-generation/gpt-image-2/gptimage2-surgical-edit-change-preserve	domain-image-generation/gpt-image-2/gptimage2_surgical_edit_change_preserve.md
 pae_f5xkyrbz93ty	technique	technique:CM-09	technique:CM-09
+pae_f5yw4wrvsm8r	prompt	prompt:policy/public-administration/policy-local-budget-shortfall-options	domain-policy/public-administration/policy_local_budget_shortfall_options.md
 pae_f60z7w0fsd6s	prompt	prompt:software-engineering/mobile/ios/testing/ios-ai-test-generation	domain-software-engineering/mobile/ios/testing/ios_ai_test_generation.md
 pae_f61e5y87cw7p	prompt	prompt:software-engineering/mobile/android/improvement/android-accessibility-improvement	domain-software-engineering/mobile/android/improvement/android_accessibility_improvement.md
 pae_f65q7k08sxzz	prompt	prompt:finance/accounting-controllership/finance-accrual-deferral-logic-builder	domain-finance/accounting-controllership/finance_accrual_deferral_logic_builder.md
@@ -2810,6 +2835,7 @@ pae_fgvb9px8fnkd	prompt	prompt:data-analytics/framing-and-metrics/analytics-ques
 pae_fhf8k3sgakx3	prompt	prompt:software-engineering/mobile/ios/testing/ios-unit-test-generation	domain-software-engineering/mobile/ios/testing/ios_unit_test_generation.md
 pae_fhhbyqbefat8	prompt	prompt:biblical-studies/original-languages/biblical-language-idiom-and-figures-of-speech-analysis	domain-biblical-studies/original-languages/biblical_language_idiom_and_figures_of_speech_analysis.md
 pae_fhhy8jjwxgad	prompt	prompt:prompt-engineering/few-shot-examples/fewshot-example-ordering	domain-prompt-engineering/few-shot-examples/fewshot_example_ordering.md
+pae_fj98cc32hxgd	prompt	prompt:personal-development/prompts/stakeholder/stakeholder-peer-conflict-navigation	domain-personal-development/prompts/stakeholder/stakeholder_peer_conflict_navigation.md
 pae_fj9vpeznyvwh	technique	technique:SV-02	technique:SV-02
 pae_fjtwtyh64ctf	prompt	prompt:productivity/daily-planning/daily-end-of-day-shutdown	domain-productivity/daily-planning/daily_end_of_day_shutdown.md
 pae_fkcw7bsrdrwd	prompt	prompt:healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu-drug-flumazenil	domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_drug_flumazenil.md
@@ -2842,6 +2868,7 @@ pae_frp7zn6deha6	prompt	prompt:ai-ml/specialized-ml/reinforcement-learning/rl-ev
 pae_frq0s400map6	technique	technique:DT-01	technique:DT-01
 pae_frrr41c2vrdc	prompt	prompt:business-strategy/nonprofit/nonprofit-volunteer-program-design	domain-business-strategy/nonprofit/nonprofit_volunteer_program_design.md
 pae_fs1jevrgt2ka	command	command:agentic-resources/security/compliance-check	domain-agentic-resources/commands/security/compliance_check.md
+pae_fs4x9w0s508q	prompt	prompt:parenting/caregiver-facing/neurodivergence/parenting-tics-tourette-home-school-plan	domain-parenting/caregiver-facing/neurodivergence/parenting_tics_tourette_home_school_plan.md
 pae_fsbgyfw9zp1p	prompt	prompt:software-engineering/mobile/android/planning/android-offline-first-architecture	domain-software-engineering/mobile/android/planning/android_offline_first_architecture.md
 pae_fsj8vrfr4zwk	command	command:agentic-resources/security/xss-scan	domain-agentic-resources/commands/security/xss_scan.md
 pae_fsshrb89sw5a	technique	technique:CM-04	technique:CM-04
@@ -2979,6 +3006,7 @@ pae_gh31yk5tsjdb	prompt	prompt:legal/personal-self-advocacy/harassment-stalking/
 pae_ghe9c5xy2fk3	skill	skill:agentic-resources/non-coding/research/interview-study-design	domain-agentic-resources/skills/non-coding/research/interview-study-design/SKILL.md
 pae_ghfx10dwvsw1	prompt	prompt:education-teaching/instructor/subject-pedagogy/ela/teaching-writers-workshop-minilesson	domain-education-teaching/instructor/subject-pedagogy/ela/teaching_writers_workshop_minilesson.md
 pae_ghmw7gs2r4tj	prompt	prompt:science/statistics/science-bayesian-analysis-plan	domain-science/statistics/science_bayesian_analysis_plan.md
+pae_ghsrhc5dv73a	prompt	prompt:parenting/caregiver-facing/neurodivergence/parenting-twice-exceptional-child-support	domain-parenting/caregiver-facing/neurodivergence/parenting_twice_exceptional_child_support.md
 pae_gj8e4nvgdtdq	skill	skill:financial-records-toolkit/pdf-statement-extractor	financial-records-toolkit/skills/pdf-statement-extractor/SKILL.md
 pae_gjbvty0nwthe	prompt	prompt:psychology/modalities/cpt/psychology-cpt-cognitive-processing-therapy-protocol	domain-psychology/modalities/cpt/psychology_cpt_cognitive_processing_therapy_protocol.md
 pae_gjc0cth8nsf6	skill	skill:agentic-resources/developer-tools/second-opinion	domain-agentic-resources/skills/developer-tools/second-opinion/SKILL.md
@@ -3171,6 +3199,7 @@ pae_hq5bgypppxaf	prompt	prompt:professional-writing/domain-specific/domain-writi
 pae_hqvb2my0x741	prompt	prompt:image-generation/scientific-technical/technical-exploded-diagram	domain-image-generation/scientific-technical/technical_exploded_diagram.md
 pae_hqwvn0ryx1hn	persona	persona:agentic-resources/specialized/pacu-educator-persona	domain-agentic-resources/personas/specialized/pacu_educator_persona.md
 pae_hqyjzbvfp8p8	skill	skill:agentic-resources/llm-application-dev/rag-architecture	domain-agentic-resources/skills/llm-application-dev/rag-architecture/SKILL.md
+pae_hr9feyseqstv	prompt	prompt:parenting/caregiver-facing/mental-health-behavior/parenting-aggression-toward-family-safety-plan	domain-parenting/caregiver-facing/mental-health-behavior/parenting_aggression_toward_family_safety_plan.md
 pae_hr9gtb68940v	prompt	prompt:biblical-studies/apologetics-engagement/biblical-apologetics-problem-of-evil-theodicy	domain-biblical-studies/apologetics-engagement/biblical_apologetics_problem_of_evil_theodicy.md
 pae_hrckka1tnw1w	prompt	prompt:legal/client-intake-communications/legal-engagement-letter-drafter	domain-legal/client-intake-communications/legal_engagement_letter_drafter.md
 pae_hrvkd9b3qg66	command	command:agentic-resources/orchestration/standup-notes	domain-agentic-resources/commands/orchestration/standup_notes.md
@@ -3429,6 +3458,7 @@ pae_k6pvc464fzss	skill	skill:agentic-resources/languages/c-review	domain-agentic
 pae_k6s8f2qza0p1	prompt	prompt:education-teaching/instructor/subject-pedagogy/social-studies/teaching-current-events-connector	domain-education-teaching/instructor/subject-pedagogy/social-studies/teaching_current_events_connector.md
 pae_k6t0z2k06ekg	prompt	prompt:personal-development/prompts/career/career-ai-ethics-officer	domain-productivity/career/career_ai_ethics_officer.md
 pae_k6w8xv3qz6m2	technique	technique:DS-50	technique:DS-50
+pae_k6xtd79m9fft	prompt	prompt:parenting/caregiver-facing/academics-skills/parenting-homework-battles-plan-5-8	domain-parenting/caregiver-facing/academics-skills/parenting_homework_battles_plan_5_8.md
 pae_k6ycek6z4jab	prompt	prompt:image-generation/gpt-image-2/gptimage2-meta-prompt-builder	domain-image-generation/gpt-image-2/gptimage2_meta_prompt_builder.md
 pae_k7ngrbm2z5rd	skill	skill:agentic-resources/mobile-development/ios-app-developer	domain-agentic-resources/skills/mobile-development/ios-app-developer/SKILL.md
 pae_k7qdqcwgf28p	prompt	prompt:science/disciplines/biology/bio-field-ecology-study-designer	domain-science/disciplines/biology/bio_field_ecology_study_designer.md
@@ -3603,6 +3633,7 @@ pae_m3ntp5t127yf	skill	skill:agentic-resources/marketing/social-content	domain-a
 pae_m3vxk4hqv2b3	prompt	prompt:science/grants-funding/science-specific-aims-drafter	domain-science/grants-funding/science_specific_aims_drafter.md
 pae_m41bp8s3d6ht	prompt	prompt:productivity/deep-work/deepwork-match-tasks-to-calendar	domain-productivity/deep-work/deepwork_match_tasks_to_calendar.md
 pae_m424w7yrb9ez	prompt	prompt:medical-education/learner-foundational-sciences/study-microbiology-bug-drill	domain-healthcare-clinical/prompts/medical-education/learner-self-study/foundational-sciences/learner_microbiology_bug_drill.md
+pae_m44v2f9zwjhv	prompt	prompt:parenting/caregiver-facing/academics-skills/parenting-struggling-reader-home-support	domain-parenting/caregiver-facing/academics-skills/parenting_struggling_reader_home_support.md
 pae_m4dv8tzrbb6z	technique	technique:AG-26	technique:AG-26
 pae_m4fs5rx10gc1	prompt	prompt:personal-development/prompts/identity/identity-values-clarification	domain-personal-development/prompts/identity/identity_values_clarification.md
 pae_m4jq7kryf613	prompt	prompt:healthcare-clinical/prompts/pathophysiology/patho-pulmonary-physiology	domain-healthcare-clinical/prompts/pathophysiology/patho_pulmonary_physiology.md
@@ -3710,6 +3741,7 @@ pae_mndqhmgsxhd0	prompt	prompt:professional-writing/business-documents/business-
 pae_mnm3gcdrkt50	prompt	prompt:healthcare-clinical/prompts/pharmacology/pharm-antihypertensive-selection	domain-healthcare-clinical/prompts/pharmacology/pharm_antihypertensive_selection.md
 pae_mntyrw3kbmrh	prompt	prompt:legal/discovery/legal-ediscovery-custodian-interview	domain-legal/discovery/legal_ediscovery_custodian_interview.md
 pae_mnw48fpqfq80	prompt	prompt:hr-management/people-ops/hr-performance-improvement-plan	domain-hr-management/people-ops/hr_performance_improvement_plan.md
+pae_mp3g27wepaa1	prompt	prompt:policy/public-administration/policy-agency-performance-measures	domain-policy/public-administration/policy_agency_performance_measures.md
 pae_mpb0xymehfde	prompt	prompt:prompt-engineering/prompt-improvement/improve-conflict-resolver	domain-prompt-engineering/prompt-improvement/improve_conflict_resolver.md
 pae_mpmwf4e9ywx5	prompt	prompt:medical-education/profession-specific/nursing/nursing-care-plan-practice	domain-healthcare-clinical/prompts/medical-education/learner-self-study/discipline-specific/learner_nursing_care_plan_practice.md
 pae_mpp0f6ahch3e	prompt	prompt:prompt-engineering/model-optimization/modelopt-claude-specific-patterns	domain-prompt-engineering/model-optimization/modelopt_claude_specific_patterns.md
@@ -3847,6 +3879,7 @@ pae_nerf7rdk23d8	prompt	prompt:image-generation/visualizations/visualization-pro
 pae_neyvjqz409mr	prompt	prompt:software-engineering/mobile/cross-platform/migration/migration-android-to-ios-strategy	domain-software-engineering/mobile/cross-platform/migration/migration_android_to_ios_strategy.md
 pae_nf0me4m98jjr	prompt	prompt:data-analytics/experiments-and-reporting/analytics-dashboard-critique	domain-data-analytics/experiments-and-reporting/analytics_dashboard_critique.md
 pae_nf4bhj5kkr30	prompt	prompt:healthcare-clinical/prompts/perianesthesia/stage-2-independence/pacu-indep-run-bay-solo-simulation	domain-healthcare-clinical/prompts/perianesthesia/stage-2-independence/pacu_indep_run_bay_solo_simulation.md
+pae_nf6wze8p74av	prompt	prompt:education-teaching/program/student-success/program-first-year-advising-touchpoint-model	domain-education-teaching/program/student-success/program_first_year_advising_touchpoint_model.md
 pae_nf9s1v44fxs0	prompt	prompt:decision-making/decisioning-prioritization-framework-selector	domain-decision-making/decisioning_prioritization_framework_selector.md
 pae_nfefbnk703ht	prompt	prompt:personal-development/prompts/resilience/resilience-rejection-recovery	domain-personal-development/prompts/resilience/resilience_rejection_recovery.md
 pae_nfjg5sbkm5q5	prompt	prompt:ai-ml/problem-framing-scoping/mlframe-problem-to-ml-task-translator	domain-AI-ML/problem-framing-scoping/mlframe_problem_to_ml_task_translator.md
@@ -4086,6 +4119,7 @@ pae_prx9qgj1s9mk	prompt	prompt:decision-making/scenario-multi-horizon-roadmap	do
 pae_prz4nqq7y0sg	prompt	prompt:science/disciplines/biology/bio-omics-study-metadata-planner	domain-science/disciplines/biology/bio_omics_study_metadata_planner.md
 pae_ps3q5hq80tyf	command	command:agentic-resources/database/cost-optimize	domain-agentic-resources/commands/database/cost_optimize.md
 pae_psm1f90j3wha	prompt	prompt:ai-ml/model-evaluation-validation/mleval-eval-result-skepticism-audit	domain-AI-ML/model-evaluation-validation/mleval_eval_result_skepticism_audit.md
+pae_pspe5925r12y	prompt	prompt:operations/quality-safety/ops-repeat-failure-reliability-analysis	domain-operations/quality-safety/ops_repeat_failure_reliability_analysis.md
 pae_psqwh9s7jpef	persona	persona:agentic-resources/testing/testing-evidence-collector	domain-agentic-resources/personas/testing/testing_evidence_collector.md
 pae_pssprn7tj9bx	prompt	prompt:parenting/caregiver-facing/ages-4-8/parenting-behavior-function-decoder	domain-parenting/caregiver-facing/ages-4-8/parenting_behavior_function_decoder.md
 pae_psx3s76t2yrb	technique	technique:AG-39	technique:AG-39
@@ -4234,6 +4268,7 @@ pae_qjzd3acma4mf	prompt	prompt:parenting/caregiver-facing/ages-4-8/parenting-whe
 pae_qkgxfn28bf42	agent	agent:client-services-studio/engagement-orchestrator	client-services-studio/agents/engagement-orchestrator.md
 pae_qknp3ae1rqj4	prompt	prompt:psy-ops/personal-defense/psyops-cognitive-security-hygiene-plan	domain-psy-ops/personal-defense/psyops_cognitive_security_hygiene_plan.md
 pae_qkqgkd4zcymw	prompt	prompt:professional-writing/business-writing/business-writing-status-report	domain-professional-writing/business-writing/business_writing_status_report.md
+pae_qm1nzdfr51v2	prompt	prompt:specialized-fields/professional-services/proserv-independence-conflict-check	domain-specialized-fields/professional-services/proserv_independence_conflict_check.md
 pae_qmmkpy4c2psv	prompt	prompt:healthcare-clinical/prompts/care-plans/careplan-hypertension	domain-healthcare-clinical/prompts/care-plans/careplan_hypertension.md
 pae_qmna21sxjsvk	prompt	prompt:legal/immigration/legal-naturalization-eligibility-analysis	domain-legal/immigration/legal_naturalization_eligibility_analysis.md
 pae_qmqaep3ewz9m	prompt	prompt:engineering-workflows/ai-patterns/ai-pattern-delegation-paradox-triage	domain-engineering-workflows/ai-patterns/ai_pattern_delegation_paradox_triage.md
@@ -4446,6 +4481,7 @@ pae_rt82ent5zqe8	prompt	prompt:frontend-development/typescript/frontend-typescri
 pae_rtc1y54c3xs2	prompt	prompt:psychology/modalities/motivational-interviewing/psychology-mi-change-talk-coder	domain-psychology/modalities/motivational-interviewing/psychology_mi_change_talk_coder.md
 pae_rtggq26y2mcq	prompt	prompt:ai-ml/classical-ml-modeling/mlmodel-interpretability-first-modeling	domain-AI-ML/classical-ml-modeling/mlmodel_interpretability_first_modeling.md
 pae_rthfjxy0efwe	prompt	prompt:prompt-engineering/output-formatting/format-table-design-prompt	domain-prompt-engineering/output-formatting/format_table_design_prompt.md
+pae_rtpb0wbgmgj7	prompt	prompt:parenting/caregiver-facing/coparenting-family-structure/parenting-foster-placement-first-weeks	domain-parenting/caregiver-facing/coparenting-family-structure/parenting_foster_placement_first_weeks.md
 pae_rttg61r6mjn8	prompt	prompt:software-engineering/mobile/ios/planning/ios-tech-stack-selection	domain-software-engineering/mobile/ios/planning/ios_tech_stack_selection.md
 pae_rtyqrk7e3n69	prompt	prompt:healthcare-clinical/prompts/allied-health/allied-health-sdoh-screening-response	domain-healthcare-clinical/prompts/allied-health/allied_health_sdoh_screening_response.md
 pae_rv2313207c49	prompt	prompt:image-generation/healthcare/pacu-dermatome-block-level-meta	domain-image-generation/healthcare/pacu_dermatome_block_level_meta.md
@@ -4501,6 +4537,7 @@ pae_s45b9mpbg49c	prompt	prompt:medical-education/learner-clinical-reasoning/reas
 pae_s49dfn58nv70	prompt	prompt:presentations/narrative-delivery/presentation-qa-hostile-question-prep	domain-presentations/narrative-delivery/presentation_qa_hostile_question_prep.md
 pae_s4dpvbe0fy93	prompt	prompt:science/disciplines/earth-climate/earth-geochronology-age-model-designer	domain-science/disciplines/earth-climate/earth_geochronology_age_model_designer.md
 pae_s4g79530a05n	prompt	prompt:software-engineering/mobile/ios/analysis/ios-open-source-license-audit	domain-software-engineering/mobile/ios/analysis/ios_open_source_license_audit.md
+pae_s562we4zvyb8	prompt	prompt:specialized-fields/professional-services/proserv-engagement-staffing-plan	domain-specialized-fields/professional-services/proserv_engagement_staffing_plan.md
 pae_s5b8h6rp3bqv	prompt	prompt:ai-ml/feature-engineering/mlfeature-drift-audit	domain-AI-ML/feature-engineering/mlfeature_drift_audit.md
 pae_s5prgf49pfqr	prompt	prompt:science/bench-and-wetlab/science-lab-protocol-drafter	domain-science/bench-and-wetlab/science_lab_protocol_drafter.md
 pae_s60fj7atyxks	prompt	prompt:software-engineering/analysis/database/database-index-optimization	domain-software-engineering/analysis/database/database_index_optimization.md
@@ -4747,6 +4784,7 @@ pae_thxywktbq5dv	prompt	prompt:ai-ml/model-optimization-efficiency/mlopt-through
 pae_tj0z7mqxkajt	prompt	prompt:software-engineering/testing/testing-unit-test-generation	domain-software-engineering/testing/testing_unit_test_generation.md
 pae_tj2s0v5g5031	prompt	prompt:productivity/deep-work/deepwork-meeting-cost-estimator	domain-productivity/deep-work/deepwork_meeting_cost_estimator.md
 pae_tj2x2gxt5mkn	skill	skill:agentic-resources/marketing/aso-audit	domain-agentic-resources/skills/marketing/aso-audit/SKILL.md
+pae_tj5df7746g4m	prompt	prompt:personal-development/prompts/identity/identity-meaning-sources-and-legacy-map	domain-personal-development/prompts/identity/identity_meaning_sources_and_legacy_map.md
 pae_tj85a0e0afh9	prompt	prompt:education-teaching/learner/writing/learn-counterargument-generator	domain-education-teaching/learner/writing/learn_counterargument_generator.md
 pae_tj9exrdgbjrg	prompt	prompt:healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu-orient-question-log-and-spaced-review	domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_question_log_and_spaced_review.md
 pae_tjd05f9j37gc	prompt	prompt:negotiation/difficult-conversations/difficultconvo-pre-brief	domain-negotiation/difficult-conversations/difficultconvo_pre_brief.md
@@ -4803,6 +4841,7 @@ pae_tvvvzqq0q0gr	prompt	prompt:prompt-engineering/tool-use/tooluse-tool-set-mini
 pae_tvxkctkzzv4z	prompt	prompt:biblical-studies/original-languages/biblical-language-textual-criticism-primer	domain-biblical-studies/original-languages/biblical_language_textual_criticism_primer.md
 pae_tw5eshfbn9ds	technique	technique:DS-01	technique:DS-01
 pae_twakp79f5ewf	prompt	prompt:healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu-ambulatory-day-surgery-considerations	domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_ambulatory_day_surgery_considerations.md
+pae_twm228ryey3p	prompt	prompt:policy/public-administration/policy-grant-post-award-compliance	domain-policy/public-administration/policy_grant_post_award_compliance.md
 pae_twm6ahjnrtws	prompt	prompt:image-generation/branding/visual-identity/startup-color-palette	domain-image-generation/branding/visual-identity/startup_color_palette.md
 pae_tws0kz2yqj38	prompt	prompt:medical-education/learner-boards/boards-explain-this-answer	domain-medical-education/learner-boards/boards_explain_this_answer.md
 pae_twtc3thdekpr	prompt	prompt:ai-ml/learning-ai-ml/study-tracks/mllearn-study-track-nlp-llm	domain-AI-ML/learning-ai-ml/study-tracks/mllearn_study_track_nlp_llm.md
@@ -4821,6 +4860,7 @@ pae_txtbf5pw47v5	prompt	prompt:agentic-system-factory/stacks/langgraph	agentic-s
 pae_txw1t1y8esyg	prompt	prompt:operations/supply-chain-procurement/ops-inventory-reorder-policy	domain-operations/supply-chain-procurement/ops_inventory_reorder_policy.md
 pae_tyrar83avz5e	prompt	prompt:software-engineering/mobile/android/improvement/android-ui-polish-audit	domain-software-engineering/mobile/android/improvement/android_ui_polish_audit.md
 pae_tz8dqbqmk696	prompt	prompt:science/bench-and-wetlab/science-human-subjects-irb-protocol-drafter	domain-science/bench-and-wetlab/science_human_subjects_irb_protocol_drafter.md
+pae_tz9w3rww8x0w	prompt	prompt:operations/quality-safety/ops-preventive-maintenance-program	domain-operations/quality-safety/ops_preventive_maintenance_program.md
 pae_tzjcxx63nc1y	prompt	prompt:ai-ml/agentic-ai-systems/aiagent-supply-chain-aibom	domain-AI-ML/agentic-ai-systems/aiagent_supply_chain_aibom.md
 pae_tzq7913axw5e	prompt	prompt:finance/tax-planning/finance-capital-gains-harvesting-analysis	domain-finance/tax-planning/finance_capital_gains_harvesting_analysis.md
 pae_tzrvb23yxyta	prompt	prompt:education-teaching/instructor/subject-pedagogy/ela/teaching-grammar-minilesson	domain-education-teaching/instructor/subject-pedagogy/ela/teaching_grammar_minilesson.md
@@ -4972,6 +5012,7 @@ pae_vvytan4fk4ne	prompt	prompt:software-engineering/analysis/business/stakeholde
 pae_vvz02gmdjgcy	skill	skill:agentic-resources/mobile-development/android-play-policy-insights	domain-agentic-resources/skills/mobile-development/android-play-policy-insights/SKILL.md
 pae_vw2aaqdjdasv	prompt	prompt:negotiation/at-the-table/negotiation-question-sequencing-live	domain-negotiation/at-the-table/negotiation_question_sequencing_live.md
 pae_vw5wwv159744	prompt	prompt:ai-investment-research-toolkit/knowledge-base/patterns/pattern-template	ai-investment-research-toolkit/knowledge-base/patterns/PATTERN-TEMPLATE.md
+pae_vwca9n945kw0	prompt	prompt:parenting/caregiver-facing/tech-digital/parenting-family-media-plan-all-ages	domain-parenting/caregiver-facing/tech-digital/parenting_family_media_plan_all_ages.md
 pae_vwefqsf71rse	prompt	prompt:finance/investing-research/finance-earnings-preview-builder	domain-finance/investing-research/finance_earnings_preview_builder.md
 pae_vws5ntz3m84p	prompt	prompt:legal/family-self-advocacy/legalprep-asset-and-debt-inventory	domain-legal/family-self-advocacy/legalprep_asset_and_debt_inventory.md
 pae_vx1trygrhjph	technique	technique:DP-19	technique:DP-19
@@ -5027,6 +5068,7 @@ pae_w3m5bxrc34z7	prompt	prompt:learning/learning-concept-explanation-audit	domai
 pae_w3n52zvgqgwe	prompt	prompt:reasoning-craft/forecasting/forecasting-long-horizon-radical-uncertainty	domain-reasoning-craft/forecasting/forecasting_long_horizon_radical_uncertainty.md
 pae_w3sfncq5azga	prompt	prompt:healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu-drug-vasopressors-reference	domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_drug_vasopressors_reference.md
 pae_w408dfzx6xs1	prompt	prompt:productivity/school-student/student-note-organization-system	domain-productivity/school-student/student_note_organization_system.md
+pae_w414vnnqnd3t	prompt	prompt:parenting/caregiver-facing/parent-capacity/parenting-fourth-trimester-support-plan	domain-parenting/caregiver-facing/parent-capacity/parenting_fourth_trimester_support_plan.md
 pae_w4ay14yxesfh	agent	agent:agentic-resources/frontend-mobile/ios-developer	domain-agentic-resources/agents/frontend-mobile/ios_developer.md
 pae_w4b8vx1qj4gm	prompt	prompt:finance/personal-finance-planning/finance-tax-aware-withdrawal-sequencing	domain-finance/personal-finance-planning/finance_tax_aware_withdrawal_sequencing.md
 pae_w4dcs30gbag8	prompt	prompt:healthcare-clinical/prompts/specialty/medicine-prenatal-risk-stratification	domain-healthcare-clinical/prompts/specialty/medicine_prenatal_risk_stratification.md
@@ -5106,6 +5148,7 @@ pae_wk0j4g9wtp20	prompt	prompt:legal/contracts-transactional/legal-term-sheet-to
 pae_wk1znmqqh7qm	prompt	prompt:legal/custody/legal-third-party-custody-visitation-analysis	domain-legal/custody/legal_grandparent_third_party_custody_visitation_analysis.md
 pae_wkaq9knebqcx	prompt	prompt:parenting/caregiver-facing/divorce/parenting-divorce-hard-questions-answer-bank	domain-parenting/caregiver-facing/divorce/parenting_divorce_hard_questions_answer_bank.md
 pae_wkjt6ss3mz5w	prompt	prompt:productivity/goals-habits/goals-goal-reality-check	domain-productivity/goals-habits/goals_goal_reality_check.md
+pae_wksb762v5hsd	prompt	prompt:parenting/caregiver-facing/mental-health-behavior/parenting-school-refusal-young-child-5-8	domain-parenting/caregiver-facing/mental-health-behavior/parenting_school_refusal_young_child_5_8.md
 pae_wktzjfwzmak0	prompt	prompt:biblical-studies/church-staff-ministry-ops/biblical-churchstaff-sermon-feedback-debrief	domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_sermon_feedback_debrief.md
 pae_wm580z2sydpr	prompt	prompt:software-engineering/embedded/embedded-real-time-systems-design	domain-software-engineering/embedded/embedded_real_time_systems_design.md
 pae_wm605v0bj35r	prompt	prompt:software-engineering/mobile/ios/planning/ios-module-design	domain-software-engineering/mobile/ios/planning/ios_module_design.md
@@ -5218,6 +5261,7 @@ pae_x7t9xysb7yrg	prompt	prompt:ai-governance-audit-kit/prompts/stage-0-engagemen
 pae_x8213ctjymfd	prompt	prompt:legal/corporate-ma/legal-antitrust-merger-clearance-memo	domain-legal/corporate-ma/legal_antitrust_merger_clearance_memo.md
 pae_x85zj0vffy7v	prompt	prompt:discipleship/life-stage-tracks/discipleship-track-parents	domain-discipleship/life-stage-tracks/discipleship_track_parents.md
 pae_x8gzq2gme7xb	skill	skill:agentic-resources/marketing/app-launch-campaign	domain-agentic-resources/skills/marketing/app-launch-campaign/SKILL.md
+pae_x8zshcz33r3n	prompt	prompt:parenting/caregiver-facing/identity-culture/parenting-interfaith-household-parenting-plan	domain-parenting/caregiver-facing/identity-culture/parenting_interfaith_household_parenting_plan.md
 pae_x924zwf8nxn0	prompt	prompt:ai-ml/feature-engineering/mlfeature-importance-analysis	domain-AI-ML/feature-engineering/mlfeature_importance_analysis.md
 pae_x944t11rtz5a	prompt	prompt:legal/personal-self-advocacy/small-claims/legalprep-small-claims-hearing-and-testimony	domain-legal/personal-self-advocacy/small-claims/legalprep_small_claims_hearing_preparation_and_testimony_practice.md
 pae_x97bpfy17g54	prompt	prompt:healthcare-clinical/prompts/perianesthesia/stage-0-foundations/pacu-foundations-what-is-pacu	domain-healthcare-clinical/prompts/perianesthesia/stage-0-foundations/pacu_foundations_what_is_pacu.md
@@ -5630,6 +5674,7 @@ pae_zd9hvq9vd4qj	prompt	prompt:advertising/campaign/adcampaign-claims-compliance
 pae_zd9r819emwzz	prompt	prompt:risk/risk-board-risk-report	domain-risk/risk_board_risk_report.md
 pae_zdcn7epfnsm4	prompt	prompt:discipleship/learner-pathways/discipleship-personal-growth-plan	domain-discipleship/learner-pathways/discipleship_personal_growth_plan.md
 pae_zdk3e74jmrhd	prompt	prompt:parenting/caregiver-facing/ages-4-8/parenting-daily-routine-designer	domain-parenting/caregiver-facing/ages-4-8/parenting_daily_routine_designer.md
+pae_ze3td6mbtjd4	prompt	prompt:parenting/caregiver-facing/mental-health-behavior/parenting-young-child-lying-response-3-8	domain-parenting/caregiver-facing/mental-health-behavior/parenting_young_child_lying_response_3_8.md
 pae_zearx0t3mrn5	prompt	prompt:creative-writing/fiction/writing-point-of-view-and-narrative-distance	domain-creative-writing/fiction/writing_point_of_view_and_narrative_distance.md
 pae_zecy3qan3maa	prompt	prompt:healthcare-clinical/prompts/interpretation/interp-thyroid-function	domain-healthcare-clinical/prompts/interpretation/interp_thyroid_function.md
 pae_zeg8qrhd1n3p	prompt	prompt:medical-education/profession-specific/pharmacy/prof-pharm-journal-club-critique-rubric	domain-medical-education/profession-specific/pharmacy/prof_pharm_journal_club_critique_rubric.md
@@ -5714,6 +5759,7 @@ pae_zxthy8rq3xcc	command	command:ai-investment-research-toolkit/decide	ai-invest
 pae_zy3ez1qp2fzz	prompt	prompt:childrens-writing/publishing-business/childrens-synopsis-submission-package	domain-childrens-writing/publishing-business/childrens_synopsis_submission_package.md
 pae_zysj6814vxwx	prompt	prompt:ai-ml/production-monitoring/mlmonitor-rollback-strategy	domain-AI-ML/production-monitoring/mlmonitor_rollback_strategy.md
 pae_zz5vm3fe71q6	skill	skill:agentic-resources/financial-records/pdf-statement-extractor	domain-agentic-resources/skills/financial-records/pdf-statement-extractor/SKILL.md
+pae_zz73yfvycr95	prompt	prompt:policy/public-administration/policy-agency-rulemaking-plan	domain-policy/public-administration/policy_agency_rulemaking_plan.md
 pae_zz744rj5v6ny	prompt	prompt:psychology/client-self-use/specialty/clientself-neurodivergent-self-advocacy-toolkit	domain-psychology/client-self-use/specialty/clientself_neurodivergent_self_advocacy_toolkit.md
 pae_zzdhy7f03zt0	prompt	prompt:healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu-medication-profile	domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_medication_profile.md
 pae_zzqz8xxnmppb	prompt	prompt:image-generation/worksheet-generators/language-arts/education-vocabulary-worksheet-generator	domain-image-generation/worksheet-generators/language-arts/education_vocabulary_worksheet_generator.md

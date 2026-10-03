@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated": "2026-10-02",
+    "generated": "2026-10-03",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 5993,
-    "artifacts_with_frontmatter": 5065,
+    "total_indexed_artifacts": 6039,
+    "artifacts_with_frontmatter": 5111,
     "artifacts_without_frontmatter": 928,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 5993,
-    "prompts_with_frontmatter": 5065,
+    "total_prompts": 6039,
+    "prompts_with_frontmatter": 5111,
     "prompts_without_frontmatter": 928
   },
   "prompts": [
@@ -62016,6 +62016,41 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-education-teaching/instructor/reporting-communication/teaching_multilingual_family_outreach.md",
+      "filename": "teaching_multilingual_family_outreach.md",
+      "title": "Multilingual Family Outreach — Language Access Map, Interpreters, Translated Materials, and Not Assuming English Literacy",
+      "domain": "education-teaching",
+      "category": "education-teaching/instructor/reporting-communication",
+      "description": "Plan how a teacher or grade team reaches families who do not use English as their main language: map each family's preferred language and mode (written, voice, video, in person) without assuming literacy in any language, sort communications by stakes so legal, safety, special-education, and discipline matters always get a qualified interpreter or human translation, write plain-language source text before translating, choose channels families actually use, never use children as interpreters, check understanding, and track reach by language.",
+      "techniques": [
+        "RP-02",
+        "CM-02",
+        "QA-08",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "education",
+        "teaching",
+        "multilingual-families",
+        "language-access",
+        "interpreter-services",
+        "translated-materials",
+        "family-engagement",
+        "parents-dont-speak-english",
+        "reach-families-in-other-languages",
+        "need-an-interpreter-for-parents"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-education-teaching/instructor/reporting-communication/teaching_parent_communication_composer.md",
+        "domain-education-teaching/instructor/student-support/teaching_ell_wida_scaffolding.md",
+        "domain-education-teaching/instructor/reporting-communication/teaching_parent_teacher_conference_prep.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-education-teaching/instructor/reporting-communication/teaching_parent_communication_composer.md",
       "filename": "teaching_parent_communication_composer.md",
       "title": "Parent & Family Communication Composer",
@@ -62042,6 +62077,41 @@
         "domain-education-teaching/instructor/higher-ed-corporate/teaching_ta_discussion_section_prep.md",
         "domain-education-teaching/instructor/student-support/teaching_course_selection_advising.md",
         "domain-education-teaching/instructor/higher-ed-corporate/teaching_syllabus_course_designer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-education-teaching/instructor/reporting-communication/teaching_parent_teacher_conference_prep.md",
+      "filename": "teaching_parent_teacher_conference_prep.md",
+      "title": "Parent-Teacher Conference Preparation — Evidence Folder, 15-Minute Agenda, One Shared Goal, and Follow-Up (Teacher Side)",
+      "domain": "education-teaching",
+      "category": "education-teaching/instructor/reporting-communication",
+      "description": "Prepare a teacher for a round of parent-teacher conferences: sort the class into routine, concern, and urgent conferences, build a one-page evidence sheet per student (a specific strength, one or two growth areas with work samples and data, the family's questions first), run a timed agenda that ends in one goal with a school action and a home action, book interpreters ahead, handle serious concerns without ambushing the family, and send a follow-up within two days.",
+      "techniques": [
+        "CM-01",
+        "RP-02",
+        "DS-06",
+        "DS-40",
+        "QA-12"
+      ],
+      "keywords": [
+        "education",
+        "teaching",
+        "parent-teacher-conference",
+        "family-engagement",
+        "student-progress",
+        "k12",
+        "conference-agenda",
+        "prepare-for-parent-meeting",
+        "what-to-say-at-conferences",
+        "conference-night"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-education-teaching/instructor/reporting-communication/teaching_parent_communication_composer.md",
+        "domain-education-teaching/instructor/reporting-communication/teaching_multilingual_family_outreach.md",
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_school_accommodation_conversation_prep.md"
       ],
       "has_frontmatter": true
     },
@@ -68536,6 +68606,110 @@
         "domain-education-teaching/program/outcomes-assessment/program_rubric_alignment_to_outcomes.md",
         "domain-education-teaching/program/outcomes-assessment/program_capstone_assessment_designer.md",
         "domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-education-teaching/program/student-success/program_at_risk_student_outreach_plan.md",
+      "filename": "program_at_risk_student_outreach_plan.md",
+      "title": "At-Risk Student Outreach and Intervention Plan — Triage by Reason, Outreach Sequence, Matched Support, and Closing the Loop",
+      "domain": "education-teaching",
+      "category": "education-teaching/program/student-success",
+      "description": "For a student-success team holding a list of flagged students this term — early alerts, midterm grades, non-registration, holds, attendance drops — triage each case by reason (academic, financial, engagement, wellbeing, administrative), run a multi-channel outreach sequence with non-deficit messages and named owners, match each reason to a specific service, route any safety concern immediately, track every case from attempted to resolved, and judge the effort against a fair comparison rather than a pre-post count.",
+      "techniques": [
+        "AG-11",
+        "DS-06",
+        "RP-02",
+        "DS-40",
+        "QA-12"
+      ],
+      "keywords": [
+        "education",
+        "student-success",
+        "at-risk-students",
+        "intervention-plan",
+        "case-management",
+        "early-alert-response",
+        "higher-ed",
+        "student-stopped-coming-to-class",
+        "how-to-reach-struggling-students",
+        "student-might-drop-out"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-education-teaching/program/evaluation-analytics/program_early_warning_system_designer.md",
+        "domain-education-teaching/program/curriculum-design/program_remediation_pathway_designer.md",
+        "domain-education-teaching/program/student-success/program_first_year_advising_touchpoint_model.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-education-teaching/program/student-success/program_first_year_advising_touchpoint_model.md",
+      "filename": "program_first_year_advising_touchpoint_model.md",
+      "title": "First-Year Advising Touchpoint Model — Proactive Advising Calendar, Caseload Capacity, and the Risk Moments of the First Year",
+      "domain": "education-teaching",
+      "category": "education-teaching/program/student-success",
+      "description": "Design the universal, proactive advising layer for first-year students: map the touchpoints to the first year's known risk moments (first two weeks, first graded work, midterm, next-term registration, aid and holds, end-of-term standing), choose the format of each (individual, group, or automated nudge), test it against real advisor capacity with caseload arithmetic, assign owners, and define the few measures that show whether it is working — the every-student layer that an early-warning system and targeted outreach sit on top of.",
+      "techniques": [
+        "NE-11",
+        "DS-06",
+        "AG-12",
+        "QA-12"
+      ],
+      "keywords": [
+        "education",
+        "student-success",
+        "proactive-advising",
+        "first-year-experience",
+        "advising-caseload",
+        "retention",
+        "higher-ed",
+        "first-year-students-dropping-out",
+        "too-many-students-per-advisor",
+        "plan-advising-for-freshmen"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-education-teaching/program/evaluation-analytics/program_early_warning_system_designer.md",
+        "domain-education-teaching/program/student-success/program_at_risk_student_outreach_plan.md",
+        "domain-education-teaching/instructor/student-support/teaching_course_selection_advising.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-education-teaching/program/student-success/program_retention_persistence_data_review.md",
+      "filename": "program_retention_persistence_data_review.md",
+      "title": "Retention and Persistence Data Review — Cohort Definitions, Disaggregated Gaps, Where Students Leave, and What the Numbers Can and Cannot Say",
+      "domain": "education-teaching",
+      "category": "education-teaching/program/student-success",
+      "description": "Review an institution's or programme's retention and persistence data: fix the cohort and the definitions (retention at this institution vs. persistence anywhere), compute rates and equity gaps by student group with small-cell suppression, locate where in the pathway students leave and in what academic standing, convert percentage gaps into numbers of students, separate signal from year-to-year noise, and end with ranked hypotheses and the evidence needed to test each — the institution-side annual or term review, not course-level learning analytics.",
+      "techniques": [
+        "RT-06",
+        "NE-11",
+        "QA-04",
+        "RT-09",
+        "QA-12"
+      ],
+      "keywords": [
+        "education",
+        "student-success",
+        "retention-rate",
+        "persistence",
+        "cohort-analysis",
+        "equity-gaps",
+        "institutional-research",
+        "why-are-students-leaving",
+        "retention-numbers-dropped",
+        "who-is-not-coming-back"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-education-teaching/program/evaluation-analytics/program_learning_analytics_interpreter.md",
+        "domain-education-teaching/program/student-success/program_at_risk_student_outreach_plan.md",
+        "domain-data-analytics/analysis-and-sql/analytics_cohort_retention_analysis.md"
       ],
       "has_frontmatter": true
     },
@@ -113694,6 +113868,65 @@
       }
     },
     {
+      "path": "domain-negotiation/channels/negotiation_ai_agent_mediated.md",
+      "filename": "negotiation_ai_agent_mediated.md",
+      "title": "AI-Agent-Mediated Negotiation — Delegating to an Agent, or Facing One: Mandate, Authority Tiers, Disclosure, and Verifying What Was Committed",
+      "domain": "negotiation",
+      "category": "negotiation/channels",
+      "description": "Negotiate through an AI agent or against one. When delegating, write the mandate the agent works from — objective, priorities, opening, target, and how much of your walk-away it may know — set three authority tiers (act alone / confirm with me / never), decide what it may disclose and how it identifies itself, quarantine counterpart messages as data, and reconcile every commitment in the transcript before anything binds. When the counterpart is an agent, probe what it can actually agree to, find the escalation path to a human, and get its commitments confirmed by the business behind it. Counters the most common delegation failure: treating the agent's 'deal done' as the deal, without checking what it agreed to, disclosed, or was talked into.",
+      "techniques": [
+        "CM-09",
+        "GT-10",
+        "GT-11",
+        "IPC-14",
+        "AG-28"
+      ],
+      "keywords": [
+        "negotiation",
+        "ai-agent-negotiation",
+        "delegated-negotiation",
+        "agent-mandate",
+        "authority-limits",
+        "automated-negotiation",
+        "let-ai-negotiate-for-me",
+        "negotiating-with-a-chatbot",
+        "set-limits-for-my-ai-assistant"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-negotiation/at-the-table/negotiation_authority_mandate_limits.md",
+        "domain-AI-ML/agentic-ai-systems/aiagent_hard_gates_designer.md",
+        "domain-negotiation/craft/negotiation_ethics_line.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "strategic",
+          "adversarial",
+          "systems",
+          "analytic"
+        ],
+        "stakes": "variable",
+        "horizon": "variable",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "sparse",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_pair",
+        "output_format": "structured",
+        "user_role": [
+          "individual",
+          "executive",
+          "founder",
+          "sales"
+        ],
+        "mode": [
+          "plan",
+          "audit"
+        ]
+      }
+    },
+    {
       "path": "domain-negotiation/channels/negotiation_counteroffer_email.md",
       "filename": "negotiation_counteroffer_email.md",
       "title": "Counter-Offer Message — Structure the Written Counter So It Advances Rather Than Resets",
@@ -114699,6 +114932,68 @@
           "plan",
           "decide",
           "audit"
+        ]
+      }
+    },
+    {
+      "path": "domain-negotiation/craft/negotiation_analytics_scorecard.md",
+      "filename": "negotiation_analytics_scorecard.md",
+      "title": "Negotiation Analytics Scorecard — Outcomes vs. Targets, Concessions, Value Created, and Process Across a Portfolio of Deals",
+      "domain": "negotiation",
+      "category": "negotiation/craft",
+      "description": "Score a set of concluded negotiations — your own, or a team's — on named metrics computed the same way every time: bargaining-range capture against reservation point and target, concession depth and reciprocity, value created beyond the single-issue split, walk-away quality, and a process-quality score that is kept separate from the result. Segments by counterpart type only when the sample supports it, tags every estimate by confidence, and names how each metric can be gamed. Counters the most common portfolio-review failure: judging negotiators by headline savings or win rate, which rewards soft targets and punishes the good no-deal.",
+      "techniques": [
+        "QA-17",
+        "NE-11",
+        "DS-02",
+        "QA-21",
+        "RT-02"
+      ],
+      "keywords": [
+        "negotiation",
+        "negotiation-analytics",
+        "scorecard",
+        "concession-tracking",
+        "value-creation",
+        "portfolio-review",
+        "how-did-we-do-in-our-negotiations",
+        "are-we-leaving-money-on-the-table",
+        "review-our-deals"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-negotiation/after-the-deal/negotiation_post_negotiation_debrief.md",
+        "domain-negotiation/craft/negotiation_pattern_library_builder.md",
+        "domain-sales-customer/sales/sales_deal_qualification_scorecard.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "evaluative",
+          "reflective",
+          "counterfactual"
+        ],
+        "stakes": "low",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "moderate",
+        "domain_complexity": "variable",
+        "collaboration": "solo_or_pair",
+        "output_format": [
+          "matrix",
+          "structured"
+        ],
+        "user_role": [
+          "executive",
+          "founder",
+          "sales",
+          "individual"
+        ],
+        "mode": [
+          "audit",
+          "synthesize"
         ]
       }
     },
@@ -116387,6 +116682,73 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-operations/quality-safety/ops_preventive_maintenance_program.md",
+      "filename": "ops_preventive_maintenance_program.md",
+      "title": "Preventive Maintenance Program Design — Asset Criticality, Run-to-Failure vs Time-Based vs Condition-Based Strategy, PM Task Lists, Schedule Compliance, and Backlog",
+      "domain": "operations",
+      "category": "operations/quality-safety",
+      "description": "Design or reset a maintenance program for a plant, fleet or facility: rank assets by consequence of failure, choose run-to-failure, time- or usage-based PM, condition-based or predictive monitoring, or failure-finding tests per failure mode, write PM tasks with measurable acceptance limits, load the schedule against real technician hours, define schedule compliance and backlog in crew-weeks, and audit the ways PM compliance is reported without the work being done — distinct from OEE loss analysis (one asset's losses) and from repeat-failure reliability analysis (why one asset keeps failing).",
+      "techniques": [
+        "DS-06",
+        "NE-11",
+        "QA-21",
+        "RT-23"
+      ],
+      "keywords": [
+        "preventive-maintenance",
+        "predictive-maintenance",
+        "asset-criticality",
+        "maintenance-strategy",
+        "pm-compliance",
+        "maintenance-backlog",
+        "cmms",
+        "maintenance-schedule-for-equipment",
+        "stop-machines-breaking-down",
+        "too-much-firefighting-maintenance"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-operations/quality-safety/ops_oee_loss_analysis.md",
+        "domain-operations/quality-safety/ops_repeat_failure_reliability_analysis.md",
+        "domain-risk/risk_fmea_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-operations/quality-safety/ops_repeat_failure_reliability_analysis.md",
+      "filename": "ops_repeat_failure_reliability_analysis.md",
+      "title": "Repeat-Failure and Equipment Reliability Analysis — MTBF and MTTR Done Honestly, Failure-Mode Pareto, Trend Before Weibull, and RCM-Lite Task Selection",
+      "domain": "operations",
+      "category": "operations/quality-safety",
+      "description": "Work out why a machine, pump, vehicle or component keeps failing: clean the work-order history into failures by mode and censored removals, compute MTBF and MTTR with the repair-time waterfall, rank failure modes by downtime hours, test whether failures are getting more frequent before reaching for Weibull (and state when Weibull is not valid), then run a reliability-centred-maintenance-lite decision on the top modes and set a verifiable target — distinct from OEE loss accounting (ops_oee_loss_analysis), from designing the whole PM program (ops_preventive_maintenance_program), and from a general root-cause A3.",
+      "techniques": [
+        "NE-11",
+        "DP-06",
+        "QA-04",
+        "RT-09"
+      ],
+      "keywords": [
+        "reliability-engineering",
+        "mtbf",
+        "mttr",
+        "repeat-failures",
+        "weibull-analysis",
+        "reliability-centred-maintenance",
+        "same-machine-keeps-failing",
+        "equipment-breaks-down-often",
+        "how-reliable-is-this-machine"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-operations/quality-safety/ops_preventive_maintenance_program.md",
+        "domain-operations/quality-safety/ops_oee_loss_analysis.md",
+        "domain-operations/process-improvement/ops_root_cause_a3_report.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-operations/quality-safety/ops_spc_control_chart_review.md",
       "filename": "ops_spc_control_chart_review.md",
       "title": "SPC Control Chart Review — Chart Selection, Control Limits vs. Specification Limits, Western Electric and Nelson Rules, and Capability Caveats",
@@ -116648,6 +117010,109 @@
         "domain-operations/supply-chain-procurement/ops_rfp_procurement_package.md",
         "domain-operations/supply-chain-procurement/ops_inventory_reorder_policy.md",
         "domain-business-strategy/research/research_vendor_evaluation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/academics-skills/parenting_homework_battles_plan_5_8.md",
+      "filename": "parenting_homework_battles_plan_5_8.md",
+      "title": "Homework Battles Plan (Ages 5–8) — Find the Driver, Set a Time Cap and Routine, Hand Over Small Choices, and Spot When the Fight Is Really a Learning Problem",
+      "domain": "parenting",
+      "category": "parenting/academics-skills",
+      "description": "Help a caregiver end nightly homework fights with a 5–8-year-old (kindergarten to about 3rd grade): check the assignment load against the teacher's intended time, identify the dominant driver (fatigue, attention, skill gap, anxiety, power struggle), set a predictable routine with a time cap and a 'stop and note' rule, hand the child small real choices, run a two-week trial, and treat specific warning signs as a reason to talk to the teacher and request a learning evaluation rather than push harder.",
+      "techniques": [
+        "DP-06",
+        "DS-01",
+        "DP-11",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "academics-skills",
+        "homework",
+        "early-elementary",
+        "autonomy-support",
+        "executive-function",
+        "learning-difficulty-signals",
+        "homework-fights",
+        "child-wont-do-homework",
+        "homework-takes-hours"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-9-12/parenting_homework_autonomy_handoff_9_12.md",
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_adhd_executive_function_scaffold.md",
+        "domain-parenting/caregiver-facing/academics-skills/parenting_learning_concern_school_meeting.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/academics-skills/parenting_learning_concern_school_meeting.md",
+      "filename": "parenting_learning_concern_school_meeting.md",
+      "title": "School Meeting About Learning Concerns — Evidence Pack, Questions to Ask, Requesting an Evaluation, and the Follow-Up After the Meeting",
+      "domain": "parenting",
+      "category": "parenting/academics-skills",
+      "description": "Prepare a caregiver for a teacher, student-support-team, or MTSS/RTI meeting about a child (5–14) who is struggling to learn to read, write, spell, or do math: assemble a one-page evidence pack, write the questions that get the school's data on the table, decide in advance what outcome to ask for (more intervention with a review date, or a full evaluation), handle the common 'let's wait and see' responses, and send a same-day written summary that turns the conversation into a dated record with owners and dates.",
+      "techniques": [
+        "RT-05",
+        "NE-23",
+        "DS-40",
+        "NE-20",
+        "QA-04"
+      ],
+      "keywords": [
+        "parenting",
+        "academics-skills",
+        "learning-disability",
+        "special-education-evaluation",
+        "mtss-rti",
+        "parent-advocacy",
+        "meeting-prep",
+        "ask-school-to-test-my-child",
+        "worried-child-falling-behind",
+        "school-meeting-about-learning"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-written-advocacy/institutions-and-records/advocacy_school_written_request.md",
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_school_accommodation_conversation_prep.md",
+        "domain-parenting/caregiver-facing/academics-skills/parenting_struggling_reader_home_support.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/academics-skills/parenting_struggling_reader_home_support.md",
+      "filename": "parenting_struggling_reader_home_support.md",
+      "title": "Supporting a Struggling Reader at Home — Decoding vs. Comprehension, 15-Minute Daily Practice, Keeping Books Enjoyable, and Working Alongside School Intervention or a Dyslexia Diagnosis",
+      "domain": "parenting",
+      "category": "parenting/academics-skills",
+      "description": "Help a caregiver of a 5–12-year-old who is behind in reading build a short, kind home routine that complements (never replaces) school instruction: sort the difficulty into decoding, fluency, or language comprehension using the Simple View of Reading, run 15-minute sessions of decodable-text practice, rereading, and paired reading, keep a separate read-aloud and audiobook channel so the child's love of stories and vocabulary keep growing, coordinate with the school's intervention or a dyslexia diagnosis, avoid unproven 'cures,' and know when to press for an evaluation.",
+      "techniques": [
+        "DS-01",
+        "RT-02",
+        "DP-11",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "academics-skills",
+        "early-literacy",
+        "dyslexia",
+        "decoding",
+        "reading-fluency",
+        "structured-literacy-at-home",
+        "child-struggles-to-read",
+        "help-with-reading-at-home",
+        "reading-below-grade-level"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-education-teaching/instructor/student-support/teaching_dyslexia_structured_literacy_plan.md",
+        "domain-parenting/caregiver-facing/academics-skills/parenting_learning_concern_school_meeting.md",
+        "domain-written-advocacy/institutions-and-records/advocacy_school_written_request.md"
       ],
       "has_frontmatter": true
     },
@@ -118604,6 +119069,142 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_foster_placement_first_weeks.md",
+      "filename": "parenting_foster_placement_first_weeks.md",
+      "title": "Foster Placement, the First Weeks — Trauma-Informed Arrival, Regulation Before Rules, Birth-Parent Visits, and Working with the Caseworker",
+      "domain": "parenting",
+      "category": "parenting/coparenting-family-structure",
+      "description": "Plan the first 30 days of a new foster placement for a child aged 2–17: an arrival-night script, felt-safety basics (meals, sleep, belongings), a regulate-relate-reason response to big behaviour in place of consequence charts, preparation and decompression around visits with birth parents, a written caseworker update, a must-not list (no physical punishment, no withholding meals, no criticism of the birth family), and thresholds for trauma assessment and placement-stability help.",
+      "techniques": [
+        "DS-01",
+        "DP-04",
+        "DP-18",
+        "NE-20",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "coparenting-family-structure",
+        "foster-care",
+        "trauma-informed-care",
+        "tbri",
+        "birth-parent-visits",
+        "reunification",
+        "new-foster-child-first-week",
+        "foster-kid-wont-settle"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_kinship_care_first_months.md",
+        "domain-parenting/caregiver-facing/transitions-events/parenting_new_sibling_arrival_prep.md",
+        "domain-parenting/caregiver-facing/safety-risk/parenting_body_safety_consent_lessons.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_kinship_care_first_months.md",
+      "filename": "parenting_kinship_care_first_months.md",
+      "title": "Kinship Care, the First Months — When a Grandparent, Aunt, Uncle, or Older Sibling Suddenly Becomes the Parent",
+      "domain": "parenting",
+      "category": "parenting/coparenting-family-structure",
+      "description": "Help a relative who has suddenly taken over raising a grandchild, niece, nephew, or younger sibling (after a parent's addiction, incarceration, death, illness, or removal by child protection) plan the first months: an honest age-matched account of why the child is here, a role the child can name, loyalty-conflict scripts, safe and predictable contact with the parent, the caregiver's own grief and capacity, and routes to kinship navigator, financial, and legal-status supports.",
+      "techniques": [
+        "NE-07",
+        "CM-11",
+        "MP-10",
+        "DS-33",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "coparenting-family-structure",
+        "kinship-care",
+        "grandfamilies",
+        "parental-incarceration",
+        "parental-substance-use",
+        "loyalty-conflict",
+        "grandma-raising-grandkids",
+        "raising-my-niece-or-nephew",
+        "parent-in-jail-or-rehab"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_with_unsafe_or_absent_parent.md",
+        "domain-legal/custody/legal_third_party_custody_visitation_analysis.md",
+        "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_foster_placement_first_weeks.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_lgbtq_parented_family_conversations.md",
+      "filename": "parenting_lgbtq_parented_family_conversations.md",
+      "title": "LGBTQ+-Parented Family — Explaining Our Family to Our Child, Preparing the School, and Handling Questions and Hostility",
+      "domain": "parenting",
+      "category": "parenting/coparenting-family-structure",
+      "description": "Help LGBTQ+ parents (two mums, two dads, a trans or nonbinary parent, a bi parent in a different-gender relationship, or a solo queer parent) tell their child their family and origin story in age-staged steps, brief the school before forms, Mother's/Father's Day, and family-tree assignments become problems, give the child ready answers for curious and unkind questions, and respond to relative, parent, or community hostility — with harassment, threat, and legal-parentage issues routed to the right help.",
+      "techniques": [
+        "ST-44",
+        "NE-23",
+        "DP-04",
+        "DS-33"
+      ],
+      "keywords": [
+        "parenting",
+        "coparenting-family-structure",
+        "lgbtq-parents",
+        "same-sex-parents",
+        "trans-parent",
+        "origin-story",
+        "school-advocacy",
+        "two-moms-explaining-to-school",
+        "kid-asked-why-two-dads"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_solo_parent_load_and_support.md",
+        "domain-parenting/caregiver-facing/ages-9-12/parenting_bullying_target_response_protocol.md",
+        "domain-psychology/populations/lgbtq-affirmative/psychology_minority_stress_formulation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_solo_parent_load_and_support.md",
+      "filename": "parenting_solo_parent_load_and_support.md",
+      "title": "Solo Parenting by Choice or Circumstance — Single-Point-of-Failure Planning, a Real Support Network, and Explaining Our Family to the Child",
+      "domain": "parenting",
+      "category": "parenting/coparenting-family-structure",
+      "description": "Help a solo parent (by choice through donor conception or adoption, or by circumstance after death, abandonment, or a parent who is not involved) build a household plan around the fact that they are the single point of failure: a load audit, a named backup-care chain for illness and emergencies, a support network with specific asks, guardianship and paperwork routed to a lawyer, and age-staged words for explaining the family's structure to the child, school, and others.",
+      "techniques": [
+        "DP-09",
+        "RT-07",
+        "DP-07",
+        "CM-11"
+      ],
+      "keywords": [
+        "parenting",
+        "coparenting-family-structure",
+        "single-parent",
+        "solo-parent-by-choice",
+        "donor-conception",
+        "backup-care",
+        "support-network",
+        "single-mom-doing-it-alone",
+        "no-backup-when-i-am-sick",
+        "why-dont-i-have-a-dad"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-productivity/home-life/home_family_schedule_coordinator.md",
+        "domain-parenting/caregiver-facing/parent-capacity/parenting_parent_overload_load_redesign.md",
+        "domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_with_unsafe_or_absent_parent.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-parenting/caregiver-facing/cross-age/parenting_apology_modeling_for_kids.md",
       "filename": "parenting_apology_modeling_for_kids.md",
       "title": "Apology Modeling for Kids (How Caregivers Apologize)",
@@ -119920,6 +120521,243 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-parenting/caregiver-facing/identity-culture/parenting_interfaith_household_parenting_plan.md",
+      "filename": "parenting_interfaith_household_parenting_plan.md",
+      "title": "Interfaith or Mixed-Belief Household — A Parenting Plan for Rites, Holidays, Education, Extended-Family Pressure, and the Child's Own Questions",
+      "domain": "parenting",
+      "category": "parenting/identity-culture",
+      "description": "Help two parents of different religions, or one religious and one non-religious parent, agree how they will raise their children — tradition-neutral and logistics-only: map each parent's non-negotiables and flexible preferences, decide on rites of passage, holiday calendars, religious education and schooling, what to tell the child about the family's different beliefs, how to answer grandparents' pressure, and how much choice the child gets as they grow — with coercion, medical-care refusal, and custody disputes routed out.",
+      "techniques": [
+        "DP-29",
+        "MP-10",
+        "NE-16",
+        "CM-03"
+      ],
+      "keywords": [
+        "parenting",
+        "identity-culture",
+        "interfaith-family",
+        "mixed-faith-marriage",
+        "religious-upbringing",
+        "holiday-planning",
+        "extended-family-pressure",
+        "different-religions-raising-kids",
+        "which-holidays-do-we-celebrate"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_shared_decision_framework.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_household_constitution_designer.md",
+        "domain-personal-development/prompts/relationships/relationships_difficult_family_member_strategy.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/identity-culture/parenting_multilingual_heritage_language_plan.md",
+      "filename": "parenting_multilingual_heritage_language_plan.md",
+      "title": "Raising Multilingual Children — A Family Language Plan for Heritage-Language Maintenance, Exposure Arithmetic, and What to Do When a Child Refuses to Speak It",
+      "domain": "parenting",
+      "category": "parenting/identity-culture",
+      "description": "Build a family language plan for a child (0–17) growing up with a heritage or minority language alongside the community language: choose a strategy (one-parent-one-language, minority-language-at-home, time-and-place), calculate weekly exposure to the heritage language against a working threshold, create genuine need to speak it, respond to refusal without shame or force, separate normal bilingual patterns from signs of language disorder that need a speech-language assessment in both languages, and run a 6-week trial.",
+      "techniques": [
+        "DS-01",
+        "NE-11",
+        "DP-06",
+        "DP-11"
+      ],
+      "keywords": [
+        "parenting",
+        "identity-culture",
+        "bilingualism",
+        "heritage-language",
+        "family-language-policy",
+        "one-parent-one-language",
+        "code-switching",
+        "kid-refuses-to-speak-our-language",
+        "raising-bilingual-kids"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_speech_language_milestone_check.md",
+        "domain-parenting/caregiver-facing/identity-culture/parenting_race_racism_conversations_by_age.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_family_meeting_facilitator.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/identity-culture/parenting_race_racism_conversations_by_age.md",
+      "filename": "parenting_race_racism_conversations_by_age.md",
+      "title": "Talking with Children About Race and Racism — Age-Staged Conversations from Toddlers to Teens, Responding to Things Kids Say, and Preparing Children of Colour for Bias",
+      "domain": "parenting",
+      "category": "parenting/identity-culture",
+      "description": "Plan an ongoing, age-staged approach to race and racism for a specific family (any racial background, including multiracial and transracially adoptive families): what children notice and when, words for skin colour, fairness, and racism at each stage, scripts for the moment a child says something about race in public, positive identity and preparation for bias for children of colour, anti-bias action for all children, and routes for racial harassment or race-related distress.",
+      "techniques": [
+        "ST-44",
+        "DS-01",
+        "NE-04",
+        "NE-07"
+      ],
+      "keywords": [
+        "parenting",
+        "identity-culture",
+        "racial-socialization",
+        "anti-bias-education",
+        "racism",
+        "racial-identity",
+        "transracial-adoption",
+        "how-to-talk-about-racism-with-kids",
+        "child-said-something-racist"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_hard_topics_age_appropriate_scripts.md",
+        "domain-parenting/caregiver-facing/ages-9-12/parenting_bullying_target_response_protocol.md",
+        "domain-psychology/client-self-use/pre-therapy/clientself_culturally_affirming_therapist_screening.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/mental-health-behavior/parenting_aggression_toward_family_safety_plan.md",
+      "filename": "parenting_aggression_toward_family_safety_plan.md",
+      "title": "Child or Teen Aggression Toward Siblings or Parents — Family Safety Plan, De-escalation, Protecting Siblings, Securing Dangerous Items, and When to Call for Help",
+      "domain": "parenting",
+      "category": "parenting/mental-health-behavior",
+      "description": "Help a caregiver whose child or teen (5–17) hits, kicks, throws things at, threatens, or injures siblings or parents: put a written family safety plan in place first (warning signs, de-escalation steps, a safe room and code word for siblings, secured knives, medications, and firearms, who to call and when), then look for the drivers behind the aggression, plan repair after incidents, line up an urgent evaluation, and use clear thresholds for calling 911, a mobile crisis team, or 988 — without blaming the child or leaving siblings unprotected.",
+      "techniques": [
+        "AG-19",
+        "DP-05",
+        "DP-06",
+        "DP-04"
+      ],
+      "keywords": [
+        "parenting",
+        "mental-health-behavior",
+        "child-to-parent-violence",
+        "sibling-aggression",
+        "de-escalation",
+        "family-safety-plan",
+        "lethal-means-safety",
+        "child-hits-parent",
+        "kid-hurts-siblings",
+        "child-violent-at-home"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_sibling_conflict_coach.md",
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_biting_hitting_toddler_response.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/mental-health-behavior/parenting_young_child_lying_response_3_8.md",
+      "filename": "parenting_young_child_lying_response_3_8.md",
+      "title": "Lying in Young Children (Ages 3–8) — Fantasy vs. Lie, Why Lying Is a Developmental Milestone, Questions That Don't Invite Lies, and Making Honesty Safe",
+      "domain": "parenting",
+      "category": "parenting/mental-health-behavior",
+      "description": "Help a caregiver respond to lying in a 3–8-year-old: separate pretend play and wishful thinking from deliberate lies, understand early lying as a sign of growing perspective-taking rather than bad character, identify what the lie was for (avoiding trouble, getting something, protecting feelings, attention), stop asking questions that set the child up to lie, make telling the truth pay off, keep consequences about the deed rather than the lie, and recognise the rare patterns that need a professional or a safeguarding response.",
+      "techniques": [
+        "DS-01",
+        "DP-06",
+        "CM-11",
+        "QA-12"
+      ],
+      "keywords": [
+        "parenting",
+        "mental-health-behavior",
+        "lying",
+        "honesty",
+        "theory-of-mind",
+        "behavior-function",
+        "discipline",
+        "child-keeps-lying",
+        "little-kid-lying",
+        "caught-child-in-a-lie"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-9-12/parenting_lying_pattern_function_analysis.md",
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_behavior_function_decoder.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_natural_consequence_designer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/mental-health-behavior/parenting_school_refusal_young_child_5_8.md",
+      "filename": "parenting_school_refusal_young_child_5_8.md",
+      "title": "School Refusal in Young Children (Ages 5–8) — Morning Plan, Drop-Off Handoff, Somatic Complaints, Graded Return, and When to Bring In a Clinician",
+      "domain": "parenting",
+      "category": "parenting/mental-health-behavior",
+      "description": "Help a caregiver of a 5–8-year-old who cries, clings, complains of stomachaches, or refuses to go to school: rule out medical causes and unsafe situations first, identify the dominant function of the refusal (avoiding distress, escaping something at school, staying close to a caregiver, or rewards of staying home), build a calm morning and drop-off routine with a school partner, cut the accommodations that keep avoidance going, plan a graded return if days have been missed, and escalate to a pediatrician and child anxiety clinician on clear triggers.",
+      "techniques": [
+        "DP-06",
+        "DS-01",
+        "NE-07",
+        "ST-02",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "mental-health-behavior",
+        "school-refusal",
+        "separation-anxiety",
+        "somatic-complaints",
+        "parent-accommodation",
+        "graded-exposure",
+        "child-refuses-to-go-to-school",
+        "crying-at-school-drop-off",
+        "tummy-aches-before-school"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-9-12/parenting_school_refusal_decoder_tween.md",
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_separation_anxiety_protocol_0_3.md",
+        "domain-psychology/populations/child-adolescent/psychology_pediatric_anxiety_protocol_session_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/mental-health-behavior/parenting_child_suicide_talk_response_6_12.md",
+      "filename": "parenting_child_suicide_talk_response_6_12.md",
+      "title": "When a Child (6–12) Talks About Dying, Suicide, or Hurting Themselves — Immediate Safety Steps, Asking Directly, Crisis Lines, Securing Medications and Firearms, and Getting an Assessment",
+      "domain": "parenting",
+      "category": "parenting/mental-health-behavior",
+      "description": "Guide a caregiver through the hours and days after a 6–12-year-old says they want to die, wish they were dead, want to kill themselves, or hurts themselves on purpose: stay with the child and stay calm, ask directly about thoughts, plans, and past attempts, call 988 (US) or the local crisis line or go to the emergency department when the triggers are met, secure firearms, medications, and other means the same day, arrange a same-day or next-day professional assessment even when the statement seemed to be said in anger, and follow up with school, supervision, and the clinician's safety plan — without diagnosing or treating.",
+      "techniques": [
+        "AG-19",
+        "DP-05",
+        "DP-04",
+        "NE-07",
+        "QA-04"
+      ],
+      "keywords": [
+        "parenting",
+        "mental-health-behavior",
+        "childhood-suicide-prevention",
+        "suicidal-ideation",
+        "lethal-means-safety",
+        "crisis-response",
+        "self-harm",
+        "child-says-wants-to-die",
+        "kid-talks-about-killing-self",
+        "child-hurting-themselves"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-13-18/parenting_teen_self_harm_signal_response.md",
+        "domain-psychology/populations/child-adolescent/psychology_pediatric_safety_planning_with_caregiver.md",
+        "domain-psychology/risk-crisis/psychology_lethal_means_counseling_script.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-parenting/caregiver-facing/ages-4-8/parenting_adhd_executive_function_scaffold.md",
       "filename": "parenting_adhd_executive_function_scaffold.md",
       "title": "ADHD Executive Function Scaffold (Ages 4-8)",
@@ -119952,6 +120790,207 @@
         "domain-parenting/caregiver-facing/ages-4-8/parenting_daily_routine_designer.md",
         "domain-parenting/caregiver-facing/ages-4-8/parenting_school_accommodation_conversation_prep.md",
         "domain-parenting/caregiver-facing/ages-4-8/parenting_when_to_seek_professional_help.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/neurodivergence/parenting_dcd_dyspraxia_home_support.md",
+      "filename": "parenting_dcd_dyspraxia_home_support.md",
+      "title": "Coordination Difficulties (DCD / Dyspraxia) at Home — Recognising the Pattern, Getting an Assessment, Teaching Everyday Skills Step by Step, Adapting Tasks, and Asking School for Handwriting and PE Support",
+      "domain": "parenting",
+      "category": "parenting/neurodivergence",
+      "description": "Help a caregiver of a 4–14-year-old who is unusually clumsy or slow to learn motor skills (dressing, cutlery, handwriting, riding a bike, ball games): rule out the medical red flags that need a doctor first, recognise the developmental coordination disorder pattern and get a pediatric and occupational-therapy assessment, teach one everyday skill at a time with task-oriented practice and backward chaining, adapt clothing, tools, and routines so the child is not held back while learning, choose activities that build confidence, and ask school for handwriting, keyboarding, and PE adjustments.",
+      "techniques": [
+        "DP-05",
+        "DS-01",
+        "ST-02",
+        "DP-11"
+      ],
+      "keywords": [
+        "parenting",
+        "neurodivergence",
+        "developmental-coordination-disorder",
+        "dyspraxia",
+        "motor-skills",
+        "occupational-therapy",
+        "handwriting-difficulty",
+        "clumsy-child",
+        "child-cant-tie-shoes",
+        "messy-handwriting-and-slow-writing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_sensory_at_home_toolkit.md",
+        "domain-parenting/caregiver-facing/academics-skills/parenting_learning_concern_school_meeting.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/neurodivergence/parenting_tics_tourette_home_school_plan.md",
+      "filename": "parenting_tics_tourette_home_school_plan.md",
+      "title": "Tics and Tourette's at Home and School — What Tics Are, What Helps, What Makes Them Worse, What to Tell Teachers and Classmates, and When to See the Doctor",
+      "domain": "parenting",
+      "category": "parenting/neurodivergence",
+      "description": "Help a caregiver of a child or teen (4–17) with motor or vocal tics, whether new, diagnosed as a tic disorder, or diagnosed as Tourette syndrome: explain how tics behave (waxing and waning, urges, brief suppression with rebound), stop the reactions that make tics worse, adjust the home for stress, sleep, and fatigue, write a one-page school information sheet and a classmate explanation agreed with the child, watch for co-occurring ADHD, OCD, anxiety, and bullying, and know when tics need a doctor — including painful tics, sudden explosive onset, and possible functional tic-like behaviours.",
+      "techniques": [
+        "DS-01",
+        "QA-12",
+        "NE-20",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "neurodivergence",
+        "tic-disorders",
+        "tourette-syndrome",
+        "cbit",
+        "school-accommodations",
+        "co-occurring-adhd-ocd",
+        "child-has-tics",
+        "kid-keeps-blinking-or-sniffing",
+        "tourettes-at-school"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md",
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_teacher_partnership_email_composer.md",
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_adhd_executive_function_scaffold.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/neurodivergence/parenting_twice_exceptional_child_support.md",
+      "filename": "parenting_twice_exceptional_child_support.md",
+      "title": "Twice-Exceptional (2e) Child — Gifted Plus a Learning, Attention, or Autism Difference: Seeing Both, Getting the Right Evaluation, Asking School for Both Kinds of Support, and Protecting Self-Worth at Home",
+      "domain": "parenting",
+      "category": "parenting/neurodivergence",
+      "description": "Help a caregiver of a 6–16-year-old who is very capable in some areas and struggling in others (gifted with dyslexia, ADHD, autism, or another difference): map strengths and challenges separately, recognise the three masking patterns that hide 2e children, prepare for an evaluation that looks at both and is interpreted by a qualified psychologist, ask the school for strength-based challenge and disability support at the same time, and build home habits that separate the child's worth from performance and address perfectionism, intensity, and burnout.",
+      "techniques": [
+        "RT-02",
+        "DP-27",
+        "DS-01",
+        "NE-23"
+      ],
+      "keywords": [
+        "parenting",
+        "neurodivergence",
+        "twice-exceptional",
+        "gifted-education",
+        "masking",
+        "strength-based-support",
+        "perfectionism",
+        "gifted-but-struggling",
+        "smart-but-failing-school",
+        "bright-kid-with-adhd"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_school_accommodation_conversation_prep.md",
+        "domain-parenting/caregiver-facing/academics-skills/parenting_learning_concern_school_meeting.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_praise_encouragement_calibrator.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/parent-capacity/parenting_couple_strain_under_parenting_load.md",
+      "filename": "parenting_couple_strain_under_parenting_load.md",
+      "title": "Couple Strain Under Parenting Load — Dividing the Work Fairly, Disagreeing About Parenting Without Undermining Each Other, and Fighting in Ways That Don't Harm the Kids",
+      "domain": "parenting",
+      "category": "parenting/parent-capacity",
+      "description": "Help two parents whose relationship is strained by raising children: a safety screen that routes abuse, fear, and coercive control to safety resources instead of couple exercises; a whole-task division-of-labour audit; a co-parenting-alliance agreement for disagreements about discipline, screens, food, and bedtime; constructive versus destructive conflict in front of children and how to repair it in front of them; a weekly logistics meeting separate from couple time; and thresholds for couples therapy.",
+      "techniques": [
+        "DP-02",
+        "NE-16",
+        "MP-10",
+        "DS-01"
+      ],
+      "keywords": [
+        "parenting",
+        "parent-capacity",
+        "coparenting-alliance",
+        "division-of-labour",
+        "mental-load",
+        "couple-conflict",
+        "transition-to-parenthood",
+        "fighting-with-partner-about-kids",
+        "i-do-all-the-parenting"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-psychology/client-self-use/relational/clientself_is_this_relationship_healthy_check.md",
+        "domain-psychology/family-couples-systems/psychology_gottman_intervention_planner.md",
+        "domain-parenting/caregiver-facing/parent-capacity/parenting_parent_overload_load_redesign.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/parent-capacity/parenting_fourth_trimester_support_plan.md",
+      "filename": "parenting_fourth_trimester_support_plan.md",
+      "title": "Fourth-Trimester Support Plan — The First 12 Weeks After a Birth or Adoption: Sleep Shifts, Feeding Support, Visitors, Physical Recovery, Scheduled Mood Check-Ins, and the Escalation Ladder",
+      "domain": "parenting",
+      "category": "parenting/parent-capacity",
+      "description": "Build a household support plan, ideally in late pregnancy or the first days home, for the 12 weeks after a birth or adoption: a protected-sleep shift schedule, feeding support whatever the method, a visitors and helpers rota with a briefing sheet, physical-recovery milestones and the urgent post-birth warning signs, pre-scheduled mood check-ins for both parents (EPDS at well-baby visits) with an escalation ladder from next appointment to same-day to emergency, and the partner's return-to-work cliff.",
+      "techniques": [
+        "DP-07",
+        "ST-02",
+        "NE-20",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "parent-capacity",
+        "postpartum",
+        "fourth-trimester",
+        "perinatal-mental-health",
+        "newborn-sleep",
+        "support-plan",
+        "plan-for-after-baby-arrives",
+        "help-after-birth"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_postpartum_parent_capacity_check.md",
+        "domain-psychology/client-self-use/specialty/clientself_perinatal_self_screen_and_plan.md",
+        "domain-healthcare-clinical/prompts/specialty/medicine_postpartum_warning_signs_triage_support.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/parent-capacity/parenting_parent_overload_load_redesign.md",
+      "filename": "parenting_parent_overload_load_redesign.md",
+      "title": "Parent Overload and Depletion — Redesigning the Parenting Load: Burnout Check, Load Inventory, Drop/Defer/Delegate/Simplify, a Minimum Viable Week, and When It Is Depression",
+      "domain": "parenting",
+      "category": "parenting/parent-capacity",
+      "description": "Help a depleted parent rebuild the parenting load so it can be carried: a plain-language check against the four features of parental burnout (exhaustion in the parent role, emotional distance from the children, being fed up, contrast with the parent they used to be), a load inventory that counts invisible planning work, drop/defer/delegate/simplify decisions, a minimum viable family week, and specific asks — with depression, thoughts of harm, and fear of losing control routed to professional and crisis help.",
+      "techniques": [
+        "DS-01",
+        "DP-09",
+        "NE-11",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "parent-capacity",
+        "parental-burnout",
+        "mental-load",
+        "household-labour",
+        "parent-wellbeing",
+        "parenting-stress",
+        "burned-out-parent",
+        "cant-keep-up-with-kids"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-psychology/client-self-use/specialty/clientself_caregiver_burnout_plan.md",
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_parent_coregulation_reset.md",
+        "domain-productivity/home-life/home_chore_rotation_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -120384,6 +121423,107 @@
         "domain-parenting/caregiver-facing/ages-4-8/parenting_developmental_expectations_4_to_8.md",
         "domain-parenting/caregiver-facing/ages-4-8/parenting_daily_routine_designer.md",
         "domain-parenting/caregiver-facing/cross-age/parenting_praise_encouragement_calibrator.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/tech-digital/parenting_ai_chatbot_companion_family_rules.md",
+      "filename": "parenting_ai_chatbot_companion_family_rules.md",
+      "title": "AI Chatbots and AI Companions — Family Rules for Homework Use, Emotional Reliance, Privacy, and Age Limits, and What to Do if Your Child Is Confiding in a Bot",
+      "domain": "parenting",
+      "category": "parenting/tech-digital",
+      "description": "Set family rules for children and teens using general AI chatbots and AI companion or character apps: a traffic-light list of homework uses matched to school policy, age and terms-of-service checks, privacy rules for what never goes into a chatbot, signs of emotional reliance or romantic/sexual role-play, and a calm response when a parent finds their child has been confiding in a bot — with self-harm content, sexual content involving a minor, and a bot encouraging harm routed to crisis and reporting steps.",
+      "techniques": [
+        "DP-28",
+        "DP-04",
+        "CM-11",
+        "NE-07",
+        "QA-04"
+      ],
+      "keywords": [
+        "parenting",
+        "tech-digital",
+        "ai-chatbots",
+        "ai-companions",
+        "academic-integrity",
+        "online-privacy",
+        "emotional-reliance",
+        "kid-talking-to-ai-chatbot",
+        "ai-girlfriend-app-teen",
+        "chatgpt-homework-rules"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-psy-ops/personal-defense/psyops_youth_online_manipulation_guide.md",
+        "domain-parenting/caregiver-facing/ages-13-18/parenting_teen_mental_health_signal_check.md",
+        "domain-education-teaching/instructor/ed-tech/teaching_ai_literacy_lesson_designer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/tech-digital/parenting_family_media_plan_all_ages.md",
+      "filename": "parenting_family_media_plan_all_ages.md",
+      "title": "Family Media Plan for the Whole Household — Tech-Free Zones and Times, Age-Tiered Device Rules for Every Child, Adult Modelling, and a Device-Readiness Gate",
+      "domain": "parenting",
+      "category": "parenting/tech-digital",
+      "description": "Write one household tech agreement that covers every child (toddler to teen) and the adults: protected sleep, meals, and car time; age-tiered rules for content, time, and online contact; where devices charge overnight; what adults commit to; a readiness gate that sends a child's first-phone or first-social-account decision to the dedicated prompts; and a 30-day trial with a review — sized to what actually goes wrong rather than to minute counts.",
+      "techniques": [
+        "DS-26",
+        "DP-12",
+        "DP-11",
+        "RT-02"
+      ],
+      "keywords": [
+        "parenting",
+        "tech-digital",
+        "family-media-plan",
+        "screen-time",
+        "device-free-zones",
+        "digital-wellbeing",
+        "parental-controls",
+        "family-screen-rules",
+        "too-much-screen-time-whole-family"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-9-12/parenting_first_phone_decision_framework.md",
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_screen_time_for_under_3.md",
+        "domain-parenting/caregiver-facing/ages-13-18/parenting_teen_social_media_renegotiation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/caregiver-facing/tech-digital/parenting_gaming_conflict_and_spending_reset.md",
+      "filename": "parenting_gaming_conflict_and_spending_reset.md",
+      "title": "Gaming Conflict and In-Game Spending Reset — After the Switch-Off Blow-Ups or the Surprise Bill: Refund Routes, Purchase Locks, Repayment, the Driver Behind the Play, and the Gaming-Disorder Screen",
+      "domain": "parenting",
+      "category": "parenting/tech-digital",
+      "description": "Reset gaming in a family where it has gone wrong — nightly fights at switch-off, an unauthorised in-game spend, or play crowding out sleep and school — for a child aged 6–17: incident steps for a surprise bill (platform refund requests, purchase approval and spending limits, a proportionate repayment plan), a driver analysis of what gaming is doing for the child, match-based rather than minute-based stopping, and a screen against ICD-11 gaming-disorder features that routes to a clinician.",
+      "techniques": [
+        "DP-06",
+        "RT-09",
+        "NE-11",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "tech-digital",
+        "video-games",
+        "microtransactions",
+        "loot-boxes",
+        "gaming-disorder",
+        "parental-controls",
+        "kid-spent-money-on-game",
+        "meltdown-when-game-time-ends"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-9-12/parenting_video_game_agreement_designer.md",
+        "domain-psychology/specialty-clinical/psychology_behavioral_addiction_protocol.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_natural_consequence_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -122086,6 +123226,40 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-personal-development/prompts/emotional-fitness/emotionalfitness_money_beliefs_and_avoidance.md",
+      "filename": "emotionalfitness_money_beliefs_and_avoidance.md",
+      "title": "Money Mindset — Trace the Beliefs and Feelings Behind Guilt Spending, Scarcity Worry, and Money Avoidance",
+      "domain": "personal-development",
+      "category": "personal-development/emotional-fitness",
+      "description": "For someone whose feelings about money drive their behaviour more than their numbers do, collect real money moments, classify the underlying belief against the four money-script families (avoidance, worship, status, vigilance), test the felt scarcity or guilt against the facts the person already has, and commit to one small reversible money behaviour — beliefs and emotions only, with budgets and investing routed to finance and compulsive spending or gambling routed to clinical help.",
+      "techniques": [
+        "AG-11",
+        "RT-05",
+        "DP-11",
+        "OC-09",
+        "QA-12"
+      ],
+      "keywords": [
+        "money-mindset",
+        "money-scripts",
+        "financial-anxiety",
+        "scarcity-mindset",
+        "spending-guilt",
+        "financial-avoidance",
+        "feel-guilty-spending-money",
+        "scared-to-check-bank-account",
+        "always-worried-about-money"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-finance/personal-finance-planning/finance_net_worth_cashflow_diagnostic.md",
+        "domain-personal-development/prompts/emotional-fitness/emotionalfitness_shame_vs_guilt_sorter.md",
+        "domain-personal-development/prompts/identity/identity_values_clarification.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-personal-development/prompts/emotional-fitness/emotionalfitness_disappointment_processing.md",
       "filename": "emotionalfitness_disappointment_processing.md",
       "title": "Process a Specific Disappointment by Separating the Gap, the Story, and the Adjustment",
@@ -122985,6 +124159,39 @@
         "domain-personal-development/prompts/identity/identity_life_audit_reckoning.md",
         "domain-personal-development/prompts/thinking/thinking_regret_minimization.md",
         "domain-personal-development/prompts/resilience/resilience_self_discipline_system.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/prompts/identity/identity_meaning_sources_and_legacy_map.md",
+      "filename": "identity_meaning_sources_and_legacy_map.md",
+      "title": "Meaning Sources and Legacy Map — Where Your Life's Meaning Comes From at Midlife or After the Summit",
+      "domain": "personal-development",
+      "category": "personal-development/identity",
+      "description": "For someone asking 'is this it?' at midlife or after reaching a long-sought goal, assess meaning on its three facets (coherence, purpose, significance), map how much of it currently comes from each source — work, relationships, contribution, growth, belonging to something larger, experience — expose concentration risk, state a legacy in concrete terms, and design one 90-day experiment that builds an under-used source; spirituality-neutral, with depression signs routed to clinical help.",
+      "techniques": [
+        "RT-02",
+        "RT-05",
+        "DP-11",
+        "QA-12"
+      ],
+      "keywords": [
+        "meaning-in-life",
+        "purpose",
+        "legacy",
+        "generativity",
+        "midlife",
+        "vocation",
+        "achieved-my-goals-but-feel-empty",
+        "is-this-all-there-is",
+        "what-is-my-life-for"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-personal-development/prompts/identity/identity_purpose_reignition.md",
+        "domain-personal-development/prompts/identity/identity_life_audit_reckoning.md",
+        "domain-personal-development/prompts/identity/identity_values_clarification.md"
       ],
       "has_frontmatter": true
     },
@@ -126269,6 +127476,73 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-personal-development/prompts/stakeholder/stakeholder_peer_conflict_navigation.md",
+      "filename": "stakeholder_peer_conflict_navigation.md",
+      "title": "Peer Conflict Navigation — Credit-Taking, Friction, and Turf With a Colleague at Your Level",
+      "domain": "personal-development",
+      "category": "personal-development/stakeholder",
+      "description": "For someone in an ongoing conflict with a same-level colleague — credit-taking, overruled work, friction in shared projects — separate observed facts from interpretations, classify the conflict as task, process, relationship, or credit, run a severity gate that routes harassment, discrimination, retaliation, or integrity issues to formal channels, choose a conflict mode on stakes and relationship value, and produce one direct or structural move with a fallback.",
+      "techniques": [
+        "RT-05",
+        "DP-06",
+        "DP-05",
+        "NE-23",
+        "QA-12"
+      ],
+      "keywords": [
+        "peer-conflict",
+        "workplace-conflict",
+        "credit-taking",
+        "lateral-influence",
+        "coworker-relationship",
+        "conflict-modes",
+        "coworker-takes-credit-for-my-work",
+        "clashing-with-a-colleague",
+        "coworker-undermines-me"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-personal-development/prompts/stakeholder/stakeholder_visibility_and_credit.md",
+        "domain-negotiation/difficult-conversations/difficultconvo_pre_brief.md",
+        "domain-personal-development/prompts/stakeholder/stakeholder_cross_team_alliance.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/prompts/stakeholder/stakeholder_reorg_navigation.md",
+      "filename": "stakeholder_reorg_navigation.md",
+      "title": "Reorg Navigation — New Manager, Changed Role, What to Protect, and Whether to Stay",
+      "domain": "personal-development",
+      "category": "personal-development/stakeholder",
+      "description": "For an individual whose team or role has just been reorganised, separate confirmed changes from rumour, place their position as elevated, intact, diminished, or at risk using observable signals, decide what to protect and what to let go, plan the first conversations with a new manager, and set dated tripwires for the stay-or-go decision instead of deciding in the first weeks of uncertainty.",
+      "techniques": [
+        "RT-05",
+        "DS-06",
+        "DP-13",
+        "QA-09"
+      ],
+      "keywords": [
+        "reorganization",
+        "reorg-navigation",
+        "new-manager",
+        "role-change",
+        "organizational-change",
+        "career-risk",
+        "company-restructuring-what-do-i-do",
+        "got-a-new-boss",
+        "my-job-changed-after-reorg"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-personal-development/prompts/life-transitions/lifetransition_navigating_new_role.md",
+        "domain-personal-development/prompts/stakeholder/stakeholder_manager_relationship_builder.md",
+        "domain-personal-development/career-transformation/career_internal_vs_external_move.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-personal-development/prompts/thinking/thinking_mental_models_application.md",
       "filename": "thinking_mental_models_application.md",
       "title": "Apply Two or Three Fitting Mental Models to a Problem You're Facing",
@@ -126720,6 +127994,371 @@
           "plan",
           "design",
           "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-policy/public-administration/policy_agency_performance_measures.md",
+      "filename": "policy_agency_performance_measures.md",
+      "title": "Agency Performance Measures — Outputs vs Outcomes, Operational Definitions, Baselines and Targets, Paired Measures, and Gaming Risks",
+      "domain": "policy",
+      "category": "policy/public-administration",
+      "description": "Build a performance-measure set for a public agency or program: trace the logic model from inputs to end outcomes, sort candidate measures into how much, how well, and is anyone better off, write an operational definition and data source for each, set targets from baseline, trend and capacity rather than aspiration, pair every measure that can be gamed with a counter-measure, and separate what the measures can show from what only an evaluation can — distinct from designing a causal program evaluation (policy_program_evaluation_design) and from business KPI definition (analytics_metric_definition_spec).",
+      "techniques": [
+        "DS-01",
+        "DS-02",
+        "QA-21",
+        "NE-11"
+      ],
+      "keywords": [
+        "performance-measurement",
+        "outcome-measures",
+        "results-based-accountability",
+        "public-sector-kpis",
+        "target-setting",
+        "metric-gaming",
+        "measure-agency-results",
+        "set-government-targets",
+        "show-program-is-working"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-policy/policy_program_evaluation_design.md",
+        "domain-data-analytics/framing-and-metrics/analytics_metric_definition_spec.md",
+        "domain-data-analytics/framing-and-metrics/analytics_kpi_tree_decomposition.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "analytic",
+          "quantitative",
+          "adversarial",
+          "structural"
+        ],
+        "stakes": "high",
+        "horizon": "years",
+        "uncertainty": "risk",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "performance_analyst",
+          "program_manager",
+          "budget_analyst",
+          "oversight_staff"
+        ],
+        "mode": [
+          "design",
+          "evaluate"
+        ]
+      }
+    },
+    {
+      "path": "domain-policy/public-administration/policy_agency_rulemaking_plan.md",
+      "filename": "policy_agency_rulemaking_plan.md",
+      "title": "Agency Rulemaking Plan — From Mandate to Final Rule: Authority, Procedure, Required Analyses, Docket, Consultation, Comment Handling, and a Backward Timeline",
+      "domain": "policy",
+      "category": "policy/public-administration",
+      "description": "Plan a rulemaking from the agency's side: confirm the legal authority and any statutory or court deadline, choose the procedure the jurisdiction allows, list the analyses and reviews the rule will trigger, design pre-proposal engagement and the docket, set up comment intake with an issue taxonomy and a significance test, decide in advance what changes would need re-proposal, and build a backward timeline with gates and float — distinct from a stakeholder's comment on someone else's proposal (policy_public_comment_letter) and from the cost-benefit annex itself (policy_regulatory_impact_analysis).",
+      "techniques": [
+        "DT-01",
+        "DS-33",
+        "AG-11",
+        "QA-08"
+      ],
+      "keywords": [
+        "rulemaking",
+        "administrative-procedure",
+        "notice-and-comment",
+        "regulatory-docket",
+        "comment-analysis",
+        "regulatory-agenda",
+        "write-new-regulation",
+        "plan-a-new-rule",
+        "respond-to-public-comments"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-policy/policy_public_comment_letter.md",
+        "domain-policy/policy_regulatory_impact_analysis.md",
+        "domain-legal/litigation/legal_admin_law_apa_review.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "structural",
+          "analytic",
+          "rule_application",
+          "temporal"
+        ],
+        "stakes": "high",
+        "horizon": "years",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "team",
+        "output_format": [
+          "structured",
+          "timeline"
+        ],
+        "user_role": [
+          "agency_policy_staff",
+          "rulemaking_coordinator",
+          "regulatory_counsel_support",
+          "program_manager"
+        ],
+        "mode": [
+          "plan",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-policy/public-administration/policy_constituent_casework_system.md",
+      "filename": "policy_constituent_casework_system.md",
+      "title": "Constituent Correspondence and Casework Response System — Intake Triage, Privacy Release, Response Templates, Tracking, Escalation Ladder, and Tone",
+      "domain": "policy",
+      "category": "policy/public-administration",
+      "description": "Design how an elected office or public agency answers the public: separate views mail from casework, triage by urgency with same-day handling for safety and hard deadlines, require a privacy release before acting on anyone's behalf, set acknowledgement and status-update service levels, write templates whose tone is calibrated against bad examples, define tracking fields and close-out codes, build an escalation ladder that respects what the office may and may not do, and size staff to the volume — distinct from commercial support-ticket triage (support_ticket_triage_and_routing) and from a member of the public writing their own complaint (advocacy_regulator_complaint_drafter).",
+      "techniques": [
+        "AG-11",
+        "DS-36",
+        "NE-04",
+        "DD-05"
+      ],
+      "keywords": [
+        "constituent-services",
+        "casework",
+        "correspondence-management",
+        "public-sector-customer-service",
+        "privacy-release",
+        "escalation-ladder",
+        "answer-constituent-mail",
+        "help-residents-with-problems",
+        "track-constituent-requests"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-sales-customer/support/support_ticket_triage_and_routing.md",
+        "domain-written-advocacy/institutions-and-records/advocacy_regulator_complaint_drafter.md",
+        "domain-policy/public-administration/policy_agency_performance_measures.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "structural",
+          "communicative",
+          "procedural"
+        ],
+        "stakes": "medium",
+        "horizon": "months",
+        "uncertainty": "risk",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "prose"
+        ],
+        "user_role": [
+          "chief_of_staff",
+          "caseworker",
+          "district_director",
+          "agency_customer_service_lead"
+        ],
+        "mode": [
+          "design",
+          "communicate"
+        ]
+      }
+    },
+    {
+      "path": "domain-policy/public-administration/policy_grant_post_award_compliance.md",
+      "filename": "policy_grant_post_award_compliance.md",
+      "title": "Grant Post-Award Compliance Review — Allowable Costs, Reporting Calendar, Subrecipient Monitoring, and Audit Readiness for a Government Award",
+      "domain": "policy",
+      "category": "policy/public-administration",
+      "description": "Review a government grant after award from the recipient's side: read the award terms and the governing cost rules (the US Uniform Guidance at 2 CFR 200 as the worked example, other jurisdictions' equivalents where they apply), test charged costs against allowability, allocability, reasonableness and documentation, build the financial and performance reporting calendar, classify each pass-through as subrecipient or contractor and size monitoring to risk, and score audit readiness with a traffic-light verdict — distinct from writing the proposal (nonprofit_foundation_grant_proposal, science grant drafters), which is pre-award.",
+      "techniques": [
+        "DS-32",
+        "DS-33",
+        "DP-28",
+        "RT-05"
+      ],
+      "keywords": [
+        "grant-compliance",
+        "post-award-management",
+        "uniform-guidance",
+        "allowable-costs",
+        "subrecipient-monitoring",
+        "single-audit-readiness",
+        "spend-grant-money-correctly",
+        "prepare-for-grant-audit",
+        "grant-reporting-deadlines"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-business-strategy/nonprofit/nonprofit_foundation_grant_proposal.md",
+        "domain-science/grants-funding/science_grant_budget_justification_drafter.md",
+        "domain-policy/policy_program_evaluation_design.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "rule_application",
+          "analytic",
+          "evaluative",
+          "systematic"
+        ],
+        "stakes": "high",
+        "horizon": "months",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "grants_manager",
+          "finance_officer",
+          "program_director",
+          "compliance_officer"
+        ],
+        "mode": [
+          "evaluate",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-policy/public-administration/policy_local_budget_shortfall_options.md",
+      "filename": "policy_local_budget_shortfall_options.md",
+      "title": "Local Government Budget Shortfall Options — Structural vs One-Time Gap, Legal Screen, Service and Equity Impact, and Balanced Packages",
+      "domain": "policy",
+      "category": "policy/public-administration",
+      "description": "Close a municipal, county or special-district budget gap honestly: split the gap into structural and one-time parts over a multi-year forecast, screen every revenue, expenditure and balance-sheet option for legal availability, score each on dollars by year, service impact in service units, equity, reversibility and implementation time, refuse one-time money for a structural hole unless it is a dated bridge, and assemble two or three packages that each balance with the reserve policy tested — distinct from a nonprofit's restricted-fund budget (nonprofit_operating_budget_restrictions) and from a company's budget-variance investigation.",
+      "techniques": [
+        "NE-11",
+        "RT-02",
+        "QA-09",
+        "RT-23"
+      ],
+      "keywords": [
+        "municipal-budget",
+        "local-government-finance",
+        "structural-deficit",
+        "fund-balance-policy",
+        "service-level-trade-offs",
+        "budget-equity-analysis",
+        "city-budget-gap",
+        "where-to-cut-spending",
+        "balance-the-budget"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-policy/policy_options_memo.md",
+        "domain-business-strategy/nonprofit/nonprofit_operating_budget_restrictions.md",
+        "domain-finance/corporate-finance-fpa/finance_budget_variance_investigator.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "quantitative",
+          "comparative",
+          "normative",
+          "analytic"
+        ],
+        "stakes": "high",
+        "horizon": "years",
+        "uncertainty": "risk",
+        "evidence_quality": "variable",
+        "domain_complexity": "regulated",
+        "collaboration": "team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "budget_analyst",
+          "finance_director",
+          "city_manager",
+          "council_staff"
+        ],
+        "mode": [
+          "synthesize",
+          "decide",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-policy/public-administration/policy_public_meeting_staff_brief.md",
+      "filename": "policy_public_meeting_staff_brief.md",
+      "title": "Public Meeting Staff Brief — Agenda-Item Report and Official's Briefing for a Council, Board or Commission Meeting",
+      "domain": "policy",
+      "category": "policy/public-administration",
+      "description": "Prepare the staff report and the one-page briefing an elected or appointed official reads before a council, board or commission meeting: the decision in one sentence and the motion language, background, legal authority and required findings, fiscal impact by year, options with alternative motions, public input summarised by position and theme, the questions officials and the public are likely to raise with sourced answers, and the procedural traps (notice, vote threshold, quasi-judicial contact rules, conflicts, serial-meeting risk) — distinct from an internal options memo (policy_options_memo), legislative testimony preparation, and a company board pack.",
+      "techniques": [
+        "NE-14",
+        "NE-23",
+        "RT-23",
+        "NE-17"
+      ],
+      "keywords": [
+        "staff-report",
+        "agenda-item",
+        "council-briefing",
+        "board-of-supervisors",
+        "open-meetings",
+        "public-hearing",
+        "prepare-council-for-meeting",
+        "staff-report-for-board",
+        "explain-agenda-item"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-policy/policy_options_memo.md",
+        "domain-science/public-engagement/science_congressional_or_parliamentary_testimony_prep.md",
+        "domain-finance/corporate-finance-fpa/finance_board_finance_package_builder.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "communicative",
+          "analytic",
+          "procedural"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "prose"
+        ],
+        "user_role": [
+          "department_staff",
+          "city_manager_office",
+          "council_aide",
+          "board_clerk"
+        ],
+        "mode": [
+          "synthesize",
+          "communicate"
         ]
       }
     },
@@ -177557,6 +179196,246 @@
         "mode": [
           "evaluate",
           "decide"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/professional-services/proserv_engagement_staffing_plan.md",
+      "filename": "proserv_engagement_staffing_plan.md",
+      "title": "Firm Capacity and Staffing Plan Across Engagements — Supply and Demand by Grade and Week, Hard and Soft Bookings, the Binding Grade, and Gap-Closing Moves",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/professional-services",
+      "description": "Build a rolling 8–13 week staffing plan for a multi-person consulting, accounting, engineering or agency firm: compute supply by grade and skill after leave at sustainable utilization, load signed work and probability-weighted pipeline under explicit hard-book and soft-book rules, find the grade that binds, close gaps in a fixed order (push work down, re-sequence, borrow, subcontract, hire, decline) with the margin cost of each, and check named assignments for over-allocation, key-person risk and client or independence restrictions — distinct from a solo practitioner's sellable-days and bench-date plan (services_capacity_and_utilization_planner).",
+      "techniques": [
+        "NE-10",
+        "DP-09",
+        "NE-11",
+        "QA-08"
+      ],
+      "keywords": [
+        "resource-planning",
+        "staffing-plan",
+        "capacity-planning",
+        "pipeline-weighting",
+        "subcontracting",
+        "professional-services-firm",
+        "who-works-on-which-project",
+        "team-is-overbooked",
+        "hire-or-subcontract"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-business-strategy/client-services/services_capacity_and_utilization_planner.md",
+        "domain-specialized-fields/professional-services/proserv_utilization_realization_review.md",
+        "domain-specialized-fields/professional-services/proserv_independence_conflict_check.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "quantitative",
+          "structural",
+          "decisional"
+        ],
+        "stakes": "medium",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "mixed",
+        "domain_complexity": "moderate",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "resource_manager",
+          "practice_leader",
+          "operations_director",
+          "engagement_manager"
+        ],
+        "mode": [
+          "plan",
+          "decide"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/professional-services/proserv_fixed_fee_overrun_diagnosis.md",
+      "filename": "proserv_fixed_fee_overrun_diagnosis.md",
+      "title": "Fixed-Fee Engagement Overrun Diagnosis — Earned Hours, Estimate at Completion, Variance by Cause, Staffing-Mix Effect, and Recovery Options Before the Margin Is Gone",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/professional-services",
+      "description": "Diagnose a fixed-fee or capped professional engagement that is running over budget while it is still running: measure percent complete by deliverable evidence rather than hours spent, compute earned hours, cost performance and estimate at completion two ways, split the overrun into scope added, client-caused delay or breached assumptions, estimate error, internal rework and staffing-mix cost, then price the recovery options (change request, re-staffing, descoping, phasing, absorbing) against the firm's margin floor — distinct from closing out a finished engagement (finance_engagement_profitability_postcalc) and from the scope-drift checkpoint in client-services-studio.",
+      "techniques": [
+        "NE-11",
+        "RT-09",
+        "DP-07",
+        "NE-17"
+      ],
+      "keywords": [
+        "fixed-fee",
+        "engagement-economics",
+        "estimate-at-completion",
+        "earned-value",
+        "scope-creep",
+        "change-request",
+        "project-going-over-budget",
+        "fixed-price-job-losing-money",
+        "client-work-over-hours"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-finance/corporate-finance-fpa/finance_engagement_profitability_postcalc.md",
+        "domain-specialized-fields/trades/trades_change_order_pricing_notice.md",
+        "domain-specialized-fields/professional-services/proserv_utilization_realization_review.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "quantitative",
+          "diagnostic",
+          "decisional"
+        ],
+        "stakes": "high",
+        "horizon": "weeks",
+        "uncertainty": "risk",
+        "evidence_quality": "mixed",
+        "domain_complexity": "moderate",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "engagement_manager",
+          "engagement_partner",
+          "project_controller"
+        ],
+        "mode": [
+          "diagnose",
+          "decide"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/professional-services/proserv_independence_conflict_check.md",
+      "filename": "proserv_independence_conflict_check.md",
+      "title": "Independence and Conflict-of-Interest Check Before Accepting an Engagement — Accounting and Consulting Firms: Relationship Search, Threats and Safeguards, Prohibited Services, Consent, and the Accept/Decline Record",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/professional-services",
+      "description": "Before an accounting, audit, advisory or consulting firm accepts new work, run the check its professional code requires: map the prospective client, its affiliates and counterparties against the firm's attest clients and existing engagements, search firm and personal relationships, classify each hit as an independence matter (attest clients, cannot be cured by consent) or a conflict of interest (may be managed with safeguards and informed consent), apply the threats-and-safeguards framework of the governing code (AICPA, IESBA, or regulator rules for public-interest entities), screen for prohibited services, and record an accept / accept with safeguards / accept with consent / decline decision for the firm's independence or ethics partner — distinct from a law firm's MRPC conflicts check (legal_conflicts_check_memo) and from commercial client-fit screening.",
+      "techniques": [
+        "DT-05",
+        "DS-33",
+        "DD-05",
+        "OC-10"
+      ],
+      "keywords": [
+        "auditor-independence",
+        "conflict-of-interest",
+        "client-acceptance",
+        "threats-and-safeguards",
+        "aicpa-code",
+        "iesba-code",
+        "can-we-take-this-client",
+        "check-for-conflicts-before-new-work",
+        "is-this-a-conflict-of-interest"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-legal/ethics-professional-conduct/legal_conflicts_check_memo.md",
+        "domain-business-strategy/client-services/services_ideal_client_and_disqualifiers.md",
+        "domain-specialized-fields/professional-services/proserv_engagement_staffing_plan.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "rule_application",
+          "analytic",
+          "adversarial"
+        ],
+        "stakes": "high",
+        "horizon": "days",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "mixed",
+        "domain_complexity": "regulated",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "engagement_partner",
+          "independence_partner",
+          "risk_management",
+          "practice_leader"
+        ],
+        "mode": [
+          "evaluate",
+          "decide",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "domain-specialized-fields/professional-services/proserv_utilization_realization_review.md",
+      "filename": "proserv_utilization_realization_review.md",
+      "title": "Utilization and Realization Review for a Professional Services Firm — Chargeable Hours by Grade, the Realization Chain, Write-Down Causes, Leverage, and the Profit-per-Partner Levers",
+      "domain": "specialized-fields",
+      "category": "specialized-fields/professional-services",
+      "description": "Review a quarter or year of a multi-person accounting, consulting, engineering or architecture firm's economics: fix the definitions of available and chargeable hours, compute utilization by grade against grade-specific targets, walk standard value to billed to collected (billing, collection and overall realization), split write-downs by cause, measure leverage and effective rate, and use the margin × productivity × leverage identity to show which lever moves profit per partner — distinct from a solo practice's forward capacity plan (services_capacity_and_utilization_planner) and from one engagement's close-out post-calc (finance_engagement_profitability_postcalc).",
+      "techniques": [
+        "DS-01",
+        "DS-02",
+        "NE-11",
+        "QA-21"
+      ],
+      "keywords": [
+        "utilization",
+        "realization-rate",
+        "write-downs",
+        "leverage-ratio",
+        "professional-services-firm",
+        "practice-management",
+        "team-not-billing-enough",
+        "why-are-we-writing-off-time",
+        "is-our-firm-profitable"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-business-strategy/client-services/services_capacity_and_utilization_planner.md",
+        "domain-finance/corporate-finance-fpa/finance_engagement_profitability_postcalc.md",
+        "domain-specialized-fields/professional-services/proserv_fixed_fee_overrun_diagnosis.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "quantitative",
+          "analytic",
+          "diagnostic"
+        ],
+        "stakes": "medium",
+        "horizon": "months",
+        "uncertainty": "risk",
+        "evidence_quality": "mixed",
+        "domain_complexity": "moderate",
+        "collaboration": "small_team",
+        "output_format": [
+          "structured",
+          "matrix"
+        ],
+        "user_role": [
+          "managing_partner",
+          "practice_leader",
+          "firm_administrator",
+          "finance_director"
+        ],
+        "mode": [
+          "evaluate",
+          "diagnose"
         ]
       }
     },

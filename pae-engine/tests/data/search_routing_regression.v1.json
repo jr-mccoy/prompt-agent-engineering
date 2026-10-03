@@ -7,7 +7,7 @@
     "registry_record_sample": "Hand-authored during Phase 4 against a sampled registry record, because CLAUDE.md's tables target prompts almost exclusively and supply no labels for skills, agents, commands, personas or techniques.",
     "registry_relationship": "Derived from an explicit copy_of relationship in the registry.",
     "phase4_regression_judgment": "Hand-authored Phase 4 regression judgment. Acceptable scopes and kinds are deliberately permissive where the corpus genuinely supports several answers.",
-    "coverage_wave_judgment": "Hand-authored in coverage Wave 5 (meta/COVERAGE_ROADMAP.md) for the scopes and subfolders added in coverage Waves 1-4, and in coverage Wave 6 for the subfolders it added. The same process that wrote the target prompts wrote these labels, so they are not independent of the corpus. Every query was written before any search was run against it, was not reworded afterwards to make a case pass, and was checked against the ADR-0037 echo gates: no query contains all of a target's title tokens or id-tail tokens, and none is a near-duplicate of a ROUTING_REFERENCE phrase or an earlier case."
+    "coverage_wave_judgment": "Hand-authored in coverage Wave 5 (meta/COVERAGE_ROADMAP.md) for the scopes and subfolders added in coverage Waves 1-4, and in coverage Waves 6-7 for the subfolders they added. The same process that wrote the target prompts wrote these labels, so they are not independent of the corpus. Every query was written before any search was run against it, was not reworded afterwards to make a case pass, and was checked against the ADR-0037 echo gates: no query contains all of a target's title tokens or id-tail tokens, and none is a near-duplicate of a ROUTING_REFERENCE phrase or an earlier case."
   },
   "notes": [
     "acceptable_* lists are permissive: any listed value counts as correct.",
@@ -16,7 +16,8 @@
     "expected_status applies to routing only.",
     "case-121 onward were added in coverage Wave 5. The router thresholds were fitted on case-001..case-120 and were not refitted when these were added.",
     "After case-121..case-146 were first measured, plain-language tags were added to 13 of their target prompts, and only the 8 additions that moved a case to rank 1 (or a route case to the right scope) were kept. These cases are therefore tuning cases like the rest of the set. See meta/COVERAGE_ROADMAP.md, Wave 5.",
-    "case-147 onward were added in coverage Wave 6. Their queries were written before any target prompt existed in the index. The draft query list was readable by the authoring agents, and two targets picked up tags echoing case-154 and case-161; those tags were replaced with independent wording before the cases were first measured. See meta/COVERAGE_ROADMAP.md, Wave 6."
+    "case-147 onward were added in coverage Wave 6. Their queries were written before any target prompt existed in the index. The draft query list was readable by the authoring agents, and two targets picked up tags echoing case-154 and case-161; those tags were replaced with independent wording before the cases were first measured. See meta/COVERAGE_ROADMAP.md, Wave 6.",
+    "case-162 onward were added in coverage Wave 7. Their queries were drafted before authoring began and kept out of the authoring agents' reach (written to disk only after every target file was final). Four targets carry plain-language tags that overlap a query's wording; file timestamps show those tags were written before the queries existed on disk, so the overlap is shared everyday phrasing, not leakage. See meta/COVERAGE_ROADMAP.md, Wave 7."
   ],
   "cases": [
     {
@@ -2225,6 +2226,237 @@
       "acceptable_scopes": [
         "parenting",
         "health-wellness"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-162",
+      "class": "task",
+      "query": "my sister's kids are moving in with us after she went to rehab, how do we help them settle",
+      "acceptable_resource_ids": [
+        "prompt:parenting/caregiver-facing/coparenting-family-structure/parenting-kinship-care-first-months"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-163",
+      "class": "task",
+      "query": "we're about to get our first foster placement, a seven year old, what should the first week look like",
+      "acceptable_resource_ids": [
+        "prompt:parenting/caregiver-facing/coparenting-family-structure/parenting-foster-placement-first-weeks"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-164",
+      "class": "task",
+      "query": "my 10 year old wants a phone like all their friends, what rules should come with it",
+      "acceptable_resource_ids": [
+        "prompt:parenting/caregiver-facing/ages-9-12/parenting-first-phone-decision-framework",
+        "prompt:parenting/caregiver-facing/tech-digital/parenting-family-media-plan-all-ages"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-165",
+      "class": "task",
+      "query": "my teenager uses an AI chatbot for homework and to talk about feelings, should we set limits",
+      "acceptable_resource_ids": [
+        "prompt:parenting/caregiver-facing/tech-digital/parenting-ai-chatbot-companion-family-rules"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-166",
+      "class": "task",
+      "query": "homework every night ends in tears with my fourth grader",
+      "acceptable_resource_ids": [
+        "prompt:parenting/caregiver-facing/academics-skills/parenting-homework-battles-plan-5-8",
+        "prompt:parenting/caregiver-facing/ages-9-12/parenting-homework-autonomy-handoff-9-12"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-167",
+      "class": "task",
+      "query": "my child's tics got worse since school started and other kids are noticing",
+      "acceptable_resource_ids": [
+        "prompt:parenting/caregiver-facing/neurodivergence/parenting-tics-tourette-home-school-plan"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-168",
+      "class": "task",
+      "query": "our city council has to cut 4 million from next year's budget and wants options ranked",
+      "acceptable_resource_ids": [
+        "prompt:policy/public-administration/policy-local-budget-shortfall-options"
+      ],
+      "acceptable_scopes": [
+        "policy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-169",
+      "class": "task",
+      "query": "we won a federal grant and now need to stay compliant with reporting and allowable costs",
+      "acceptable_resource_ids": [
+        "prompt:policy/public-administration/policy-grant-post-award-compliance"
+      ],
+      "acceptable_scopes": [
+        "policy",
+        "business-strategy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-170",
+      "class": "task",
+      "query": "constituents keep emailing the mayor's office about potholes, draft a response system",
+      "acceptable_resource_ids": [
+        "prompt:policy/public-administration/policy-constituent-casework-system"
+      ],
+      "acceptable_scopes": [
+        "policy"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-171",
+      "class": "task",
+      "query": "I feel guilty spending money even though we can afford it",
+      "acceptable_resource_ids": [
+        "prompt:personal-development/prompts/emotional-fitness/emotionalfitness-money-beliefs-and-avoidance"
+      ],
+      "acceptable_scopes": [
+        "personal-development"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-172",
+      "class": "task",
+      "query": "a colleague on my level keeps taking credit for my work in meetings",
+      "acceptable_resource_ids": [
+        "prompt:personal-development/prompts/stakeholder/stakeholder-peer-conflict-navigation",
+        "prompt:personal-development/prompts/stakeholder/stakeholder-visibility-and-credit"
+      ],
+      "acceptable_scopes": [
+        "personal-development"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-173",
+      "class": "task",
+      "query": "my company just announced a reorg and my manager is changing",
+      "acceptable_resource_ids": [
+        "prompt:personal-development/prompts/stakeholder/stakeholder-reorg-navigation"
+      ],
+      "acceptable_scopes": [
+        "personal-development"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-174",
+      "class": "task",
+      "query": "we keep losing first-year students after the first semester, what can the college do",
+      "acceptable_resource_ids": [
+        "prompt:education-teaching/program/student-success/program-retention-persistence-data-review",
+        "prompt:education-teaching/program/student-success/program-at-risk-student-outreach-plan",
+        "prompt:education-teaching/program/student-success/program-first-year-advising-touchpoint-model",
+        "prompt:education-teaching/program/evaluation-analytics/program-early-warning-system-designer"
+      ],
+      "acceptable_scopes": [
+        "education-teaching"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-175",
+      "class": "task",
+      "query": "the packaging line breaks down every few weeks and maintenance only fixes things after they fail",
+      "acceptable_resource_ids": [
+        "prompt:operations/quality-safety/ops-preventive-maintenance-program",
+        "prompt:operations/quality-safety/ops-repeat-failure-reliability-analysis"
+      ],
+      "acceptable_scopes": [
+        "operations"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-176",
+      "class": "task",
+      "query": "use an AI agent to negotiate a car purchase on my behalf",
+      "acceptable_resource_ids": [
+        "prompt:negotiation/channels/negotiation-ai-agent-mediated"
+      ],
+      "acceptable_scopes": [
+        "negotiation"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-177",
+      "class": "route",
+      "query": "I'm 40 and feel like none of my work means anything",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "personal-development",
+        "psychology"
       ],
       "acceptable_kinds": [],
       "expected_status": null,

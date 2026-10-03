@@ -1,6 +1,6 @@
 # Domain: Negotiation
 
-Negotiation as a working discipline, across the whole arc: what you do before you walk in, what you do once it starts, what happens in the medium the conversation actually travels through, how it changes with three or more parties, and what you owe the agreement after it is signed. The 52 prompts here treat negotiation as a set of specific, drillable decisions rather than a temperament — where to anchor and why, which concession buys what, which of five impasses you are actually in, what a counterpart's behaviour does and does not reveal, and when no deal is the correct outcome.
+Negotiation as a working discipline, across the whole arc: what you do before you walk in, what you do once it starts, what happens in the medium the conversation actually travels through, how it changes with three or more parties, and what you owe the agreement after it is signed. The 54 prompts here treat negotiation as a set of specific, drillable decisions rather than a temperament — where to anchor and why, which concession buys what, which of five impasses you are actually in, what a counterpart's behaviour does and does not reveal, and when no deal is the correct outcome.
 
 The domain spans the lifecycle. **Before:** size the preparation, derive the walkaway, map interests, build the packages, design the concession ladder, model the counterpart (`preparation/`). **During:** question, read signals, defend against coercion, break the deadlock, handle the emotional layer, close (`at-the-table/`). **Through a medium:** written, async, remote, and across contexts whose norms you have not established (`channels/`). **With more parties:** coordinate your own side, face a bloc, or run a negotiation you are not a party to (`multi-party/`). **After:** debrief, implement, reopen, or recover from no deal (`after-the-deal/`). Then the named specializations (`contexts/`), the relationship-primary track where the goal is to be understood rather than to win (`difficult-conversations/`), and the layer that makes any of it compound (`craft/`).
 
@@ -35,12 +35,12 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 |---|---|---|
 | `preparation/` | Everything before the conversation: prep-depth triage, BATNA, leverage beyond BATNA, interests, packages and MESOs, opening anchor, concession ladder, counterpart model, information plan, rehearsal | 10 |
 | `at-the-table/` | Live moves: question sequencing, reading signals and testing bluffs, hard-bargainer defense, impasse diagnosis, authority and mandate, emotional flooding, closing | 7 |
-| `channels/` | The medium: written and async, the counter-offer message, remote and video, and negotiating across contexts whose norms you have not established | 4 |
+| `channels/` | The medium: written and async, the counter-offer message, remote and video, negotiating across contexts whose norms you have not established, and negotiating through or against an AI agent | 5 |
 | `multi-party/` | Three or more: coalition mapping and sequencing, your own team's roles, facing an aligned bloc, and running a negotiation you are not a party to | 4 |
 | `after-the-deal/` | Post-signature: deal debrief, implementation and relationship, renegotiating a live agreement, no-deal recovery | 4 |
 | `contexts/` | Named specializations that cross-link upstream rather than restating theory: salary, employer-side hiring offers, vendor buy-side, freelance rates, sales objections, equity splits, internal budget, customer escalation, major purchases, landlord and lease, insurance claims, medical bills, severance, licensing | 14 |
 | `difficult-conversations/` | The relationship-primary track, own prefix `difficultconvo_`: pre-brief, post-review, delivering bad news, receiving hard feedback, saying no upward | 5 |
-| `craft/` | Making it compound: style self-assessment, deliberate practice, pattern library, and the ethics line | 4 |
+| `craft/` | Making it compound: style self-assessment, deliberate practice, pattern library, a portfolio analytics scorecard, and the ethics line | 5 |
 
 ## Prompts in this domain
 
@@ -79,6 +79,7 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 | `negotiation_counteroffer_email.md` | Acknowledge, lock what's agreed, counter with a basis, close with a step — and make it forwardable |
 | `negotiation_remote_video_channel.md` | Recover the turn-taking, silence meaning, caucus, and shared artifacts the channel removes |
 | `negotiation_cross_cultural.md` | Surface the dimensions on which norms vary, then ask — never assert generalizations about people |
+| `negotiation_ai_agent_mediated.md` | Delegate to an AI agent (mandate, walk-away as a rule, act / confirm / never tiers, disclosure, input quarantine) or face one (probe its band, escalate to a human); reconcile every commitment before it binds |
 
 ### multi-party/
 
@@ -134,6 +135,7 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 | `negotiation_style_self_assessment.md` | Identify your revealed default from outcome clustering, and the one adjustment worth drilling |
 | `negotiation_deliberate_practice_loop.md` | Manufacture high-frequency low-stakes reps and score execution independent of outcome |
 | `negotiation_pattern_library_builder.md` | Turn debriefs into situation → move → outcome, with the BATNA calibration check |
+| `negotiation_analytics_scorecard.md` | Score a portfolio of deals on named metrics — range capture, concession depth and reciprocity, value created, walk-away quality — with process quality kept separate and gaming vectors named |
 | `negotiation_ethics_line.md` | Decide your limits before the pressure arrives, as rules rather than principles |
 
 ## Quick routing
@@ -161,6 +163,7 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 | "I need to counter their offer in writing" | `channels/negotiation_counteroffer_email.md` |
 | "It's over video and it keeps falling flat" | `channels/negotiation_remote_video_channel.md` |
 | "I don't know how they expect this to work" | `channels/negotiation_cross_cultural.md` |
+| "I want an AI assistant to negotiate this for me" / "I'm haggling with a chatbot" | `channels/negotiation_ai_agent_mediated.md` |
 | "Four parties and I don't know who to talk to first" | `multi-party/negotiation_multi_party_alignment.md` |
 | "Three of us are going in — who says what?" | `multi-party/negotiation_team_negotiation_roles.md` |
 | "They've all lined up against me" | `multi-party/negotiation_coalition_defense.md` |
@@ -191,6 +194,7 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 | "My results keep landing in the same place and I don't know why" | `craft/negotiation_style_self_assessment.md` |
 | "I want to get better but I only negotiate twice a year" | `craft/negotiation_deliberate_practice_loop.md` |
 | "I debrief every time and nothing compounds" | `craft/negotiation_pattern_library_builder.md` |
+| "How are we actually doing across all our deals?" | `craft/negotiation_analytics_scorecard.md` |
 | "How far is too far?" | `craft/negotiation_ethics_line.md` |
 
 ## How prompts in this domain compose
@@ -199,7 +203,7 @@ The spine runs **triage → prepare → table → after**. `preparation/negotiat
 
 `at-the-table/` prompts are consulted **during**, not read in sequence — `question_sequencing_live` opens, `reading_signals_and_bluffs` interprets, and the other five are triggered by events: pressure tactics, deadlock, an approval claim, heat, or a close in reach. `channels/` overlays whichever medium the conversation travels through, and `multi-party/` overlays party count and team composition.
 
-Afterward, `after-the-deal/negotiation_post_negotiation_debrief.md` scores process and outcome separately and feeds `craft/negotiation_pattern_library_builder.md`, which aggregates across negotiations and feeds back into `prep_depth_triage` — the loop that makes the domain compound rather than merely accumulate. `implementation_and_relationship` runs on any deal that closed and hands to `renegotiate_existing_agreement` when terms need to move; `no_deal_recovery` runs on any that didn't.
+Afterward, `after-the-deal/negotiation_post_negotiation_debrief.md` scores process and outcome separately and feeds `craft/negotiation_pattern_library_builder.md` (and, in numbers, `craft/negotiation_analytics_scorecard.md`), which aggregates across negotiations and feeds back into `prep_depth_triage` — the loop that makes the domain compound rather than merely accumulate. `implementation_and_relationship` runs on any deal that closed and hands to `renegotiate_existing_agreement` when terms need to move; `no_deal_recovery` runs on any that didn't.
 
 `contexts/` prompts are entry points for their named situations and cross-link **upstream** rather than restating theory — the salary prompt assumes `batna_analysis`, the vendor prompt assumes `leverage_audit`. `difficult-conversations/` is a parallel track, not a stage: use it whenever the goal is to be understood rather than to claim value, and note it carries its own prefix and an empathic rather than adversarial reasoning profile.
 

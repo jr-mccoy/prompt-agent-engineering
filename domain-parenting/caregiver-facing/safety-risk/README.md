@@ -13,7 +13,7 @@ Prevention-first safety planning for children at home and in other people's home
 **Lives elsewhere (not here):**
 - **Online grooming, sextortion, and manipulation** → `domain-psy-ops/personal-defense/psyops_youth_online_manipulation_guide.md` (deliberately not duplicated here).
 - Puberty and reproduction conversations → `../ages-9-12/parenting_puberty_prep_conversation_scripts.md`; teen dating and consent → `../ages-13-18/parenting_teen_dating_consent_conversation.md`.
-- Phones, social media, gaming → `../ages-9-12/` device prompts and the planned `tech-digital/` folder.
+- Phones, social media, gaming → `../ages-9-12/` device prompts and `../tech-digital/` (family media plan, AI chatbots, gaming reset).
 - Triage after an injury or ingestion (0–3) → `../ages-0-3/parenting_when_pediatrician_visit_0_3.md`.
 - Wider tween autonomy (walking to school, curfew) → `../ages-9-12/parenting_tween_emerging_independence_negotiation.md`.
 

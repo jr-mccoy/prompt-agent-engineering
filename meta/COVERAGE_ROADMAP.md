@@ -1,6 +1,7 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-10-02:** **Waves 1–6 shipped; Waves 7–10 planned (§6).**
+**Status as of 2026-10-03:** **Waves 1–7 shipped; Waves 8–10 planned (§6).**
+- **Wave 7 (2026-10-03):** 46 prompts finishing the parenting caregiver folders, public administration, personal-development and negotiation Wave 2 items, institution-side student success, maintenance and reliability, and professional-services firm operations, plus 16 routing cases (§6).
 - **Wave 6 (2026-10-02):** 48 prompts filling documented-but-unbuilt promises (parenting, policy, the operations / data-analytics / health-wellness Wave 2 lists) and six absent subjects, plus 15 routing regression cases and a CI repair (§6).
 - **Wave 1:** 40 prompts. That is four new domains of 8 prompts each (ADR-0043)
   and `domain-personal-development/job-search/` (8). Six hollow READMEs now
@@ -179,7 +180,7 @@ These are built from their own roadmaps, not re-planned here.
 | [`domain-childrens-writing/EXPANSION_ROADMAP.md`](../domain-childrens-writing/EXPANSION_ROADMAP.md) | 12 brainstorm items, 0 built |
 | [`domain-psy-ops/EXPANSION_ROADMAP.md`](../domain-psy-ops/EXPANSION_ROADMAP.md) | 9 Wave 2 candidates |
 | [`domain-negotiation/EXPANSION_ROADMAP.md`](../domain-negotiation/EXPANSION_ROADMAP.md) | Wave 2 contexts: landlord, insurance, medical bill, severance, licensing |
-| [`domain-parenting/README.md`](../domain-parenting/README.md) (added 2026-10-02) | 10 planned `caregiver-facing/` folders and the whole `family-support-professional/` tree. Wave 6 built 3 folders; 7 caregiver folders and the professional tree remain (Wave 7) |
+| [`domain-parenting/README.md`](../domain-parenting/README.md) (added 2026-10-02) | 10 planned `caregiver-facing/` folders and the whole `family-support-professional/` tree. Waves 6–7 built all 10 caregiver folders; the `family-support-professional/` tree remains unscheduled |
 | [`domain-policy/README.md`](../domain-policy/README.md) (added 2026-10-02) | Five analyses promised "for Wave 4" that Wave 4 never included. Built in Wave 6 |
 
 ## 4. Taxonomy decision ([ADR-0043](adr/0043-subject-homes-for-sales-health-analytics-ops.md))
@@ -698,20 +699,80 @@ The four AI-ML prompts cite 15 technique codes that no prompt had cited before
 **Left for later:** the misses above (147, 148, 152, 153, 155); `REPO_MAP.md`
 counts for untouched domains were not re-audited.
 
-### Wave 7: remaining documented promises — planned (~50 prompts)
+### Wave 7: remaining documented promises — shipped (46 prompts, 16 cases, 2026-10-03)
 
-Each wave below re-runs the duplicate sweep before writing; candidates are not
-commitments.
+Every candidate went through a `pae search` duplicate sweep. Where an existing
+prompt already did the named job, the item was re-angled to the real gap and the
+change recorded below; one was dropped.
 
-| Area | Candidates |
-|---|---|
-| `domain-parenting/caregiver-facing/` (~23) | `coparenting-family-structure/` (kinship, foster, solo, LGBTQ+ families; ≠ `legal_third_party_custody_visitation_analysis`), `tech-digital/` (incl. family rules for AI chatbots), `academics-skills/`, `mental-health-behavior/` (caregiver side only), `neurodivergence/` (tics, 2e, dyslexia at home; avoid `psychology_pda_*`), `identity-culture/`, `parent-capacity/` (≠ `clientself_caregiver_burnout_plan`) |
-| `domain-policy/public-administration/` (6) | municipal budget trade-offs, grant post-award compliance, rulemaking plan, constituent response, agency performance measures, public meeting brief |
-| `domain-personal-development` (4) | money mindset, peer conflict, reorg navigation, meaning and purpose ([roadmap](../domain-personal-development/EXPANSION_ROADMAP.md) Wave 2) |
-| `domain-negotiation` (2) | analytics scorecard, agent-mediated negotiation |
-| `domain-education-teaching` (5) | student-success / retention track (3); `instructor/reporting-communication/` (+2) |
-| `domain-operations` (2) | preventive maintenance, reliability |
-| `domain-specialized-fields/professional-services/` (3–4) | scoped in Wave 2, never built |
+#### `domain-parenting/caregiver-facing/` (23), prefix `parenting_`, safety-gated
+
+All seven remaining planned caregiver folders now exist, each with a README.
+
+| Folder | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `coparenting-family-structure/` (4) | `kinship_care_first_months`, `foster_placement_first_weeks`, `solo_parent_load_and_support`, `lgbtq_parented_family_conversations` | `legal_third_party_custody_visitation_analysis`, `parenting_coparenting_with_unsafe_or_absent_parent` |
+| `tech-digital/` (3) | `family_media_plan_all_ages`, `ai_chatbot_companion_family_rules`, `gaming_conflict_and_spending_reset` | `parenting_first_phone_decision_framework` and `parenting_video_game_agreement_designer` (ages 9–12), `psyops_youth_online_manipulation_guide` |
+| `identity-culture/` (3) | `race_racism_conversations_by_age`, `multilingual_heritage_language_plan`, `interfaith_household_parenting_plan` (logistics only; §7 still defers comparative religion) | `parenting_hard_topics_age_appropriate_scripts` |
+| `parent-capacity/` (3) | `parent_overload_load_redesign`, `fourth_trimester_support_plan`, `couple_strain_under_parenting_load` (private abuse screen first) | `clientself_caregiver_burnout_plan`, `parenting_postpartum_parent_capacity_check`, `psychology_gottman_intervention_planner` |
+| `academics-skills/` (3) | `homework_battles_plan_5_8`, `struggling_reader_home_support`, `learning_concern_school_meeting` | `parenting_homework_autonomy_handoff_9_12`, `teaching_dyslexia_structured_literacy_plan` (teacher-facing), `advocacy_school_written_request` |
+| `mental-health-behavior/` (4) | `school_refusal_young_child_5_8`, `young_child_lying_response_3_8`, `aggression_toward_family_safety_plan`, `child_suicide_talk_response_6_12` | the 9–12 and 13–18 versions (`parenting_school_refusal_decoder_tween`, `parenting_lying_pattern_function_analysis`, `parenting_teen_self_harm_signal_response`) |
+| `neurodivergence/` (3) | `tics_tourette_home_school_plan`, `twice_exceptional_child_support`, `dcd_dyspraxia_home_support` | `parenting_sensory_at_home_toolkit`, `parenting_school_accommodation_conversation_prep` |
+
+**Re-angled to avoid duplicates:** first-phone readiness became a whole-household
+media plan; gaming time became a reset after a spending incident; postpartum became
+a plan made before the birth; dyslexia-at-home merged into the struggling-reader
+prompt and DCD/dyspraxia took its slot (nothing in the repo covered it); school
+refusal, lying and suicide talk were narrowed to the younger ages that had no prompt.
+
+#### `domain-policy/public-administration/` (6, new), prefix `policy_`
+
+`local_budget_shortfall_options`, `grant_post_award_compliance` (≠
+`nonprofit_foundation_grant_proposal`, pre-award), `agency_rulemaking_plan` (the
+agency side; ≠ Wave 6 `policy_public_comment_letter`), `constituent_casework_system`,
+`agency_performance_measures`, `public_meeting_staff_brief`.
+
+#### Other domains (17)
+
+| Home | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `domain-personal-development/prompts/` (4) | `emotional-fitness/emotionalfitness_money_beliefs_and_avoidance`, `stakeholder/stakeholder_peer_conflict_navigation`, `stakeholder/stakeholder_reorg_navigation`, `identity/identity_meaning_sources_and_legacy_map` | `finance_net_worth_cashflow_diagnostic` (the numbers), `stakeholder_visibility_and_credit`, `lifetransition_navigating_new_role`, `identity_purpose_reignition` |
+| `domain-negotiation/` (2) | `craft/negotiation_analytics_scorecard`, `channels/negotiation_ai_agent_mediated` | `negotiation_post_negotiation_debrief` (one deal), `negotiation_authority_mandate_limits`. The roadmap's human-broker half stays open. |
+| `domain-education-teaching/` (5) | new `program/student-success/`: `program_first_year_advising_touchpoint_model`, `program_at_risk_student_outreach_plan`, `program_retention_persistence_data_review`; `instructor/reporting-communication/`: `teaching_parent_teacher_conference_prep`, `teaching_multilingual_family_outreach` | `program_early_warning_system_designer`, `teaching_parent_communication_composer` |
+| `domain-operations/quality-safety/` (2) | `ops_preventive_maintenance_program`, `ops_repeat_failure_reliability_analysis` | `ops_oee_loss_analysis`, `risk_fmea_analysis` |
+| `domain-specialized-fields/professional-services/` (4, new), prefix `proserv_` | `utilization_realization_review`, `fixed_fee_overrun_diagnosis`, `engagement_staffing_plan`, `independence_conflict_check` | `services_capacity_and_utilization_planner` (solo practice), `finance_engagement_profitability_postcalc` (after close), `legal_conflicts_check_memo` (law firms) |
+
+**Dropped as duplicates (1):** the first-year early-alert system →
+`program/evaluation-analytics/program_early_warning_system_designer.md`. A
+first-year advising model took its slot.
+
+**Routing after Wave 7** (`case-162`–`case-177` added):
+
+| | Before (161 cases) | After (177 cases) |
+|---|---|---|
+| R@1 / R@3 / R@5 | 75.8 / 82.8 / 85.9% | 75.4 / 82.5 / 86.8% |
+| scope@1 / scope@3 (router) | 83.2 / 92.8% | 84.4 / 92.9% |
+
+- **Earlier cases.** Case 131 (food bank grant) regressed during the build: the
+  foster prompt matched on "family", "first", "time" and "food". Its title and
+  description were reworded ("Birth-Parent Visits", "meals") and the case is back
+  to its pre-Wave-7 result. Case 153 (OEE) slipped from rank 2 to 3, still in the
+  top 3, behind the new repeat-failure prompt, which legitimately matches "machine"
+  and "break down"; left as is. Cases 148 and 155 improved.
+- **New cases:** 14 of 16 route to an acceptable scope first, and 11 of the 15
+  task cases rank their target first. Honest misses: 162 (kinship, rank 5), 164
+  (first phone, rank 4, wrong scope), 174 (retention, rank 4), 175 (preventive
+  maintenance, not in the top 5, wrong scope).
+- **Leakage controls.** The case queries were drafted before authoring and kept
+  out of the authoring agents' reach; they were written to disk only after every
+  target file was final. Four targets carry tags overlapping a query's wording
+  (`feel-guilty-spending-money`, `coworker-takes-credit-for-my-work`,
+  `allowable-costs`, `set-limits-for-my-ai-assistant`); file timestamps show the
+  tags predate the query file, so this is shared everyday phrasing.
+
+**Left for later:** the misses above; the negotiation roadmap's human-broker
+item; `domain-parenting/family-support-professional/` (8 planned subfolders, not
+yet scheduled in any wave).
 
 ### Wave 8: second set of absent subjects — planned (~45 prompts)
 

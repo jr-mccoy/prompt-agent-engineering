@@ -10,6 +10,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Coverage Wave 7: remaining documented promises (46 prompts, 16 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **Parenting (23):** the seven remaining planned `caregiver-facing/` folders: family structure, tech and AI chatbots, identity and culture, parent capacity, academics, mental health and behaviour, and neurodivergence.
+  - **Public administration (6):** a new `domain-policy/public-administration/` folder.
+  - **Other domains (17):**
+    - personal development (money beliefs, peer conflict, reorg, meaning);
+    - negotiation (analytics scorecard, AI-agent-mediated negotiation);
+    - education (a new `program/student-success/` folder, conference prep, multilingual family outreach);
+    - operations (preventive maintenance, repeat-failure reliability);
+    - a new `domain-specialized-fields/professional-services/` folder (`proserv_*`).
+  - **Duplicate sweep:** 1 candidate was dropped (first-year early alert duplicates `program_early_warning_system_designer`). Eight were re-angled to the real gap.
+  - **Routing:**
+    - case-162 to case-177 added; scope@1 is 84.4% over 177 cases.
+    - Case 131 regressed during the build and was restored by rewording incidental words in the foster prompt.
+    - Case 153 slipped from rank 2 to 3, still in the top 3.
+    - Four new cases are honest misses.
+    - The queries were kept from the authoring agents until every target was final.
 - **Coverage Wave 6: kept promises and first absent subjects (48 prompts, 15 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6, which also records Waves 7–10 as planned).
   - **Documented promises (30):**
     - `domain-parenting/caregiver-facing/`: 3 of its planned folders (`transitions-events/`, `safety-risk/`, `health-body-sleep-feeding/`), 12 safety-gated prompts.

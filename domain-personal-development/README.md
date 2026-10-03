@@ -20,7 +20,9 @@ Route to this domain when the request mentions:
 | **Decision-Making** | "should I...", "life decision", "major choice", "weighing options", "trade-offs" |
 | **Self-Improvement** | "self-reflection", "personal growth", "mindset", "overcome", "improve myself" |
 | **Life Transitions** | "just started a new job", "after the move", "empty nest", "retirement", "laid off", "after the breakup", "who am I now" |
-| **Emotional Skills** | "handle disappointment", "manage jealousy", "self-compassion", "overreacting", "process a hard moment" (everyday, non-clinical) |
+| **Emotional Skills** | "handle disappointment", "manage jealousy", "self-compassion", "overreacting", "process a hard moment", "feel guilty spending money", "avoid looking at my bank account" (everyday, non-clinical) |
+| **Work Situations** | "coworker takes credit for my work", "conflict with a colleague", "our team got reorganized", "new boss after the reorg" → `prompts/stakeholder/` |
+| **Meaning** | "is this all there is", "achieved my goal and feel empty", "what will my legacy be" → `prompts/identity/` |
 | **Validation/Clarity** | "am I being reasonable", "sanity check", "perspective on", "gut check" |
 
 ### User Personas
@@ -252,9 +254,12 @@ Prompts are organized into subdirectories by function:
 - `thinking_explain_like_im_nine_converter.md` - Simplify a complex topic to plain language
 - See [prompts/thinking/README.md](./prompts/thinking/README.md) for sub-groupings and composition
 
-**Stakeholder Navigation (`prompts/stakeholder/`)** - 2 prompts for workplace dynamics
+**Stakeholder Navigation (`prompts/stakeholder/`)** - 9 prompts for workplace dynamics
 - `stakeholder_navigation_guide.md` - Stakeholder management
 - `stakeholder_politics.md` - Political navigation
+- `stakeholder_peer_conflict_navigation.md` - Conflict with a same-level colleague: credit-taking, friction, turf; severity gate to formal channels
+- `stakeholder_reorg_navigation.md` - After a reorg: position read, what to protect, new-manager conversations, dated stay-or-go tripwires
+- See [prompts/stakeholder/README.md](./prompts/stakeholder/README.md) for the full set (managing up, manager trust, visibility, sponsors, cross-team alliances)
 
 **Agency, Ownership & Execution (`prompts/agency/`)** - 13 prompts for self-directed work
 - `agency_project_ownership_converter.md` - Convert a vague goal into an owned project with a first deliverable
@@ -294,7 +299,7 @@ Prompts are organized into subdirectories by function:
 - `jobsearch_pipeline_tracker_and_cadence.md` - Stage conversion by source, the leaking stage, one change per week; hands off at the offer
 - See [job-search/README.md](./job-search/README.md) for the recommended sequence
 
-**Identity (`prompts/identity/`)** - 7 prompts for the third axis (not action, not cognition — identity, values, meaning, and discernment)
+**Identity (`prompts/identity/`)** - 13 prompts for the third axis (not action, not cognition — identity, values, meaning, and discernment)
 - `identity_values_clarification.md` - Surface revealed values from past decisions and contrast with stated values
 - `identity_self_talk_audit.md` - Capture verbatim inner-critic sentences, classify by distortion, generate evidence-based counters
 - `identity_comparison_envy_diagnostic.md` - Decompose envy into specific sub-items, classify each by signal-vs-noise pattern
@@ -302,6 +307,7 @@ Prompts are organized into subdirectories by function:
 - `identity_purpose_reignition.md` - Diagnose loss-of-why as depletion / completion / drift / mismatch / hidden goal
 - `identity_life_audit_reckoning.md` - Multi-dimensional structured audit at a major life inflection
 - `identity_taste_development.md` - 90-day deliberate taste-training loop in a specific domain
+- `identity_meaning_sources_and_legacy_map.md` - Meaning on coherence / purpose / significance, its sources and concentration risk, a concrete legacy (midlife, post-achievement)
 - New: `agency/agency_burnout_recovery.md` - Diagnose burnout stage and prescribe stage-appropriate recovery
 - New: `agency/agency_decision_post_mortem.md` - Post-decision regret analysis without hindsight bias
 - See [prompts/identity/README.md](./prompts/identity/README.md) for composition patterns

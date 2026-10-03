@@ -1,9 +1,9 @@
-# Specialized Professional Fields: Real Estate, Trades, Insurance, and Licensed-Field Guidance
+# Specialized Professional Fields: Real Estate, Trades, Insurance, Professional Services, and Licensed-Field Guidance
 
 > Part of the [Non-Coding Quick Start](../NON_CODING_QUICK_START.md) system.
 
-This domain holds **eleven decision prompts for working real-estate, trades and
-insurance professionals** — and for serious individual buyers and small investors — plus the
+This domain holds **fifteen decision prompts for working real-estate, trades,
+insurance and professional-services practitioners** — and for serious individual buyers and small investors — plus the
 cross-field guidance, disclaimers and templates below for any field with licensing,
 liability or jurisdiction constraints.
 
@@ -11,7 +11,10 @@ The prompts sit on the **commercial, non-legal side** of the work: what a house 
 worth, what an offer exposes a buyer to, whether a rental pays, what an inspection
 report means, whether to bid, what the bid is, how to price a change, and — for
 brokers, underwriters and adjusters — how to build and assess a commercial
-submission, review a claim file against the policy wording, and plan a renewal. They do
+submission, review a claim file against the policy wording, and plan a renewal; and — for
+accounting, consulting and other professional firms — how to read utilization and
+realization, diagnose a fixed-fee overrun, staff engagements, and check independence
+and conflicts before accepting work. They do
 not draft contracts, decide insurance coverage, give title opinions, or make code, structural, legal, tax or
 licensing determinations; those are routed to the licensed professional and, for
 legal drafting, to [`domain-legal/`](../domain-legal/).
@@ -49,6 +52,16 @@ legal drafting, to [`domain-legal/`](../domain-legal/).
 | [`insurance_claim_file_coverage_review.md`](insurance/insurance_claim_file_coverage_review.md) | Adjuster: policy wording quoted clause by clause, facts established vs needed, reservation-of-rights considerations — coverage decided by the licensed adjuster and counsel |
 | [`insurance_renewal_remarketing_plan.md`](insurance/insurance_renewal_remarketing_plan.md) | Broker: weighted renewal outlook, renew / selective / full-market decision, market approach, backward timeline |
 
+### [`professional-services/`](professional-services/README.md) (4) — prefix `proserv_`
+Firm operations for multi-person accounting, consulting and similar firms. The single-engagement commercial cycle (qualify → invoice) lives in [`domain-business-strategy/client-services/`](../domain-business-strategy/client-services/README.md) and [`client-services-studio/`](../client-services-studio/README.md).
+
+| File | Use |
+|---|---|
+| [`proserv_utilization_realization_review.md`](professional-services/proserv_utilization_realization_review.md) | Utilization by grade, standard → billed → collected realization, write-downs by cause, leverage, profit-per-partner levers |
+| [`proserv_fixed_fee_overrun_diagnosis.md`](professional-services/proserv_fixed_fee_overrun_diagnosis.md) | Running fixed-fee job over budget: earned hours, two EACs, overrun by cause, mix effect, priced recovery options |
+| [`proserv_engagement_staffing_plan.md`](professional-services/proserv_engagement_staffing_plan.md) | Supply vs demand by grade and week, hard/soft bookings, binding grade, gap-closing moves, assignment checks |
+| [`proserv_independence_conflict_check.md`](professional-services/proserv_independence_conflict_check.md) | Client acceptance: independence vs conflict, threats and safeguards, prohibited services, consent, accept/decline record — decided by the firm's independence partner |
+
 ### Quick routing
 
 | You're saying | Use |
@@ -64,6 +77,10 @@ legal drafting, to [`domain-legal/`](../domain-legal/).
 | "Should we quote this risk, and on what terms?" (underwriter) | `insurance/insurance_underwriting_risk_assessment.md` |
 | "Review this claim file against the policy" (adjuster) | `insurance/insurance_claim_file_coverage_review.md` |
 | "Renewal is coming up — do we remarket?" (broker) | `insurance/insurance_renewal_remarketing_plan.md` |
+| "We're busy but write-downs keep growing" (firm partner) | `professional-services/proserv_utilization_realization_review.md` |
+| "This fixed-fee job is 75% spent and half done" | `professional-services/proserv_fixed_fee_overrun_diagnosis.md` |
+| "Who staffs the new deal if it closes?" | `professional-services/proserv_engagement_staffing_plan.md` |
+| "Can we take this client — we audit their target" | `professional-services/proserv_independence_conflict_check.md` |
 
 ---
 
@@ -78,6 +95,7 @@ Route to this domain when the request mentions:
 | **Real Estate (non-legal)** | "comps", "CMA", "list price", "offer", "escalation clause", "appraisal gap", "cap rate", "rental property", "inspection report" |
 | **Trades/Construction** | "bid", "estimate", "takeoff", "contingency", "allowance", "change order", "should we bid" |
 | **Insurance (industry side)** | "submission", "loss runs", "COPE", "underwriting", "referral", "coverage review", "reservation of rights", "renewal", "remarket" — policyholder claim appeals and settlement negotiation route to `domain-written-advocacy/` and `domain-negotiation/` |
+| **Professional services (firm operations)** | "utilization", "realization", "write-down", "leverage", "fixed fee over budget", "EAC", "staffing plan", "bench", "independence", "conflict check", "client acceptance" — single-engagement pricing, scoping and invoicing route to `domain-business-strategy/client-services/` and `client-services-studio/`; law-firm conflicts to `domain-legal/` |
 | **Legal** | Route to [`domain-legal/`](../domain-legal/) — contracts, purchase agreements, title, zoning, leases |
 | **Finance** | Route to [`domain-finance/`](../domain-finance/) — its own top-level domain |
 | **Marketing/Sales** | Route out: deals, pipeline, customer accounts and support → [`domain-sales-customer/`](../domain-sales-customer/); marketing strategy → [`domain-business-strategy/go-to-market/`](../domain-business-strategy/go-to-market/); copy and campaigns → `domain-agentic-resources/skills/marketing/` |
@@ -91,6 +109,7 @@ Route to this domain when the request mentions:
 | **Buyers and Small Investors** | Offer packages they can afford to have go wrong; rental underwriting |
 | **Contractors and Trade Subs** | Bid/no-bid, estimates with defensible contingency, change orders |
 | **Insurance Brokers, Underwriters, Adjusters** | Submissions, risk assessment and terms, claim-file coverage reviews, renewal strategy |
+| **Partners and Managers in Accounting, Consulting and Other Firms** | Utilization and realization, fixed-fee overruns, staffing across engagements, independence and conflicts before acceptance |
 | **Other licensed professionals** | The disclaimers, document framework and templates below |
 
 ### Out of Scope
@@ -231,10 +250,11 @@ licensed CPA or tax professional for advice specific to your situation."
 | **Trades/Construction** | Site conditions can change estimates, permits may be required, contingency sized to named unknowns | This domain: `trades/`; writing: `domain_writing_contractor_remodel.md`, `domain_writing_hvac_estimate.md`, `domain_writing_electrician_panel.md` |
 | **Real Estate** | Market data changes rapidly, state regulations vary, due diligence required | This domain: `real-estate/`; writing: `domain_writing_realtor_listing.md` |
 | **Insurance** | Issued policy wording governs, claim-handling rules vary by jurisdiction, coverage decided by licensed adjusters and counsel | This domain: `insurance/`; writing: `domain_writing_insurance_comparison.md` |
+| **Professional Services** | Independence decided under the governing code by the firm's independence partner; firm figures are management information | This domain: `professional-services/`; engagement cycle: `client-services-studio/` |
 | **Marketing/Sales** | Audience targeting, conversion metrics, campaign tracking | `domain_writing_marketing_campaign.md`, `domain_writing_sales_strategy.md` |
 | **Healthcare-Adjacent** | Not medical advice, professional oversight required | `domain_writing_veterinarian_surgery.md`, `domain_writing_dentist_treatment_plan.md` |
 
-> **Note:** `domain_writing_*` prompts are in `domain-professional-writing/domain-specific/`; `real-estate/`, `trades/` and `insurance/` are in this domain.
+> **Note:** `domain_writing_*` prompts are in `domain-professional-writing/domain-specific/`; `real-estate/`, `trades/`, `insurance/` and `professional-services/` are in this domain.
 
 ---
 
@@ -251,7 +271,7 @@ Comprehensive domain-specific prompt engineering guides:
 
 ## Prompts in This Repository
 
-The eleven prompts are listed under [The prompts](#the-prompts) above. The field
+The fifteen prompts are listed under [The prompts](#the-prompts) above. The field
 writing prompts (24) live in
 [`domain-professional-writing/domain-specific/`](../domain-professional-writing/domain-specific/)
 as `domain_writing_{field}.md` — e.g. `domain_writing_contractor_remodel.md`,
@@ -745,7 +765,8 @@ Client Signature: ___________________________ Date: ___________
 ║  • Due diligence always required                                          ║
 ║                                                                           ║
 ║  PROMPTS AVAILABLE:                                                       ║
-║  real-estate/ (4) · trades/ (3) · insurance/ (4) in this domain           ║
+║  real-estate/ (4) · trades/ (3) · insurance/ (4) ·                        ║
+║  professional-services/ (4) in this domain                                ║
 ║  domain-professional-writing/domain-specific/ (24 professional guides)   ║
 ║                                                                           ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
@@ -767,5 +788,5 @@ Client Signature: ___________________________ Date: ___________
 ---
 
 *Document Version: 2.0*
-*Created: 2026-01-26 · Rebuilt around real-estate and trades prompts: 2026-09-24 · insurance/ added: 2026-10-02*
+*Created: 2026-01-26 · Rebuilt around real-estate and trades prompts: 2026-09-24 · insurance/ added: 2026-10-02 · professional-services/ added: 2026-10-03*
 *Domain: Specialized Professional Fields*

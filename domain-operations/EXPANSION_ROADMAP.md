@@ -1,7 +1,7 @@
 # Domain-Operations Expansion Roadmap
 
-**Status as of 2026-10-02:** Wave 1 (8 prompts) and Wave 2 (9 prompts) shipped — **17 prompts**
-across `process-improvement/` (6), `supply-chain-procurement/` (6), `quality-safety/` (4),
+**Status as of 2026-10-03:** Wave 1 (8 prompts), Wave 2 (9 prompts) and Wave 3 (2 prompts) shipped — **19 prompts**
+across `process-improvement/` (6), `supply-chain-procurement/` (6), `quality-safety/` (6),
 and `project-delivery/` (1).
 Planned and scoped in [`../meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md),
 which records the nearest-neighbour boundaries each prompt was written against.
@@ -31,7 +31,19 @@ same structural review block.
 
 ---
 
-## Wave 3 — candidates (not yet built)
+## Wave 3 — shipped (2026-10-03, coverage Wave 7)
+
+Maintenance and reliability, placed in `quality-safety/` because its object is the
+equipment and its users (maintenance and reliability leads) are already that
+subfolder's readers; both prompts compose directly with `ops_oee_loss_analysis.md`,
+whose breakdown loss they take apart. Domain total: **19 prompts**.
+
+| Item | Shipped as | Distinct from |
+|---|---|---|
+| **Preventive maintenance program design** | `quality-safety/ops_preventive_maintenance_program.md` | `ops_oee_loss_analysis.md` (one asset's losses, not the site's maintenance strategy); `domain-risk/risk_fmea_analysis.md` (formal failure-mode scoring); `domain-productivity/home-life/home_seasonal_maintenance_calendar.md` (home upkeep) |
+| **Equipment reliability / repeat-failure analysis** | `quality-safety/ops_repeat_failure_reliability_analysis.md` | `ops_oee_loss_analysis.md` (all six losses in hours, not failure modes and intervals); `process-improvement/ops_root_cause_a3_report.md` (structured cause report it hands off to) |
+
+## Wave 4 — candidates (not yet built)
 
 None scoped yet. Run `pae search` and check `meta/COVERAGE_ROADMAP.md` before adding.
 

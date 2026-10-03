@@ -39,6 +39,13 @@ Use this subfolder when:
 | `stakeholder_mentor_sponsor_cultivation.md` | Hard-classify your network as mentors (advise) vs. sponsors (spend capital on you), filter against your goal's decision surface, and design one role-appropriate ask with reciprocal value. |
 | `stakeholder_cross_team_alliance.md` | Turn a peer on another team into a durable ally: map interests vs. positions, classify the ask on a fixed grid, and give first with one low-cost reciprocal act. |
 
+**Situation handlers** (one live situation with a peer or with the org itself):
+
+| Prompt | One-line description |
+|---|---|
+| `stakeholder_peer_conflict_navigation.md` | Ongoing conflict with a same-level colleague (credit-taking, friction, turf): facts vs. stories, conflict type, a severity gate to formal channels, one structural or direct move, a numeric fallback. |
+| `stakeholder_reorg_navigation.md` | After a reorg lands: confirmed vs. rumoured changes, your position (elevated / intact / diminished / at risk), what to protect, first two new-manager conversations, dated stay-or-go tripwires. |
+
 ## How the prompts relate
 
 **The two situation-read prompts are a graduated pair:**
@@ -51,6 +58,8 @@ Use this subfolder when:
 
 - `stakeholder_managing_up.md` and `stakeholder_manager_relationship_builder.md` are a pair for the manager relationship — the first calibrates *how you surface work*, the second diagnoses and repairs *trust*. Run managing-up first for a new or working relationship; escalate to the relationship-builder when trust is damaged or capped.
 - `stakeholder_visibility_and_credit.md` fixes the leak between doing good work and being seen for it — often the missing piece when managing-up is solid but advancement stalls.
+**The two situation handlers** cover moments the relationship-builders assume away: `stakeholder_peer_conflict_navigation.md` when a peer relationship has already gone wrong (the cross-team alliance prompt is for before that), and `stakeholder_reorg_navigation.md` when the structure around you changes — it hands off to `stakeholder_manager_relationship_builder.md` for the new manager and to `../../career-transformation/career_internal_vs_external_move.md` if a tripwire fires.
+
 - `stakeholder_mentor_sponsor_cultivation.md` reaches upward (converting advisors into advocates); `stakeholder_cross_team_alliance.md` reaches sideways (peers without authority over each other). Both run on genuine reciprocity, not favors owed.
 
 After you act, use `../agency/agency_feedback_extraction.md` to convert the reactions you get into signal, and `../thinking/thinking_blind_spot_mirror_see_what_im_missing.md` to check your read before committing.

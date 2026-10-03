@@ -1,5 +1,7 @@
 # Expansion Roadmap — `domain-education-teaching/`
 
+**Update 2026-10-03 (coverage Wave 7):** 5 prompts added — new `program/student-success/` (3) and `instructor/reporting-communication/` (2 → 4); domain now 275. See Deferred items 3 and 4.
+
 **Status as of 2026-08-28:** ✅ Reorganization shipped in full. 267 prompts moved from a
 flat 24-subdirectory layout — 34 of them loose at the domain root — into three audience
 tracks: `instructor/` (104), `program/` (41), `learner/` (122). No prompts were added,
@@ -167,12 +169,17 @@ Recorded rather than built, because this pass was explicitly a reorganization.
 2. **Verification and False-Positive Prevention sections.** Only a handful of prompts here
    have one (`teaching_iep_goal_writer.md` is the model). The gold-standard house style
    closes every prompt with an 8-item false-positive list and a verification checklist.
-3. **`instructor/reporting-communication/` is thin at 2.** Family-facing communication
-   plausibly supports conference prep, difficult-conversation scripts, and multilingual
-   family outreach — the last cross-linking `domain-parenting/`.
-4. **`program/` has no student-success or retention track.** `evaluation-analytics/` has
-   the early-warning system, but advising-at-scale, retention intervention design, and
-   transfer-pathway articulation are unrepresented.
+3. **`instructor/reporting-communication/` is thin at 2.** — **Partly shipped (coverage
+   Wave 7, 2026-10-03):** `teaching_parent_teacher_conference_prep.md` and
+   `teaching_multilingual_family_outreach.md` (2 → 4). Difficult-conversation scripts for
+   teachers remain open (the general method lives in `domain-negotiation/difficult-conversations/`).
+4. **`program/` has no student-success or retention track.** — **Partly shipped (coverage
+   Wave 7, 2026-10-03):** new `program/student-success/` (3) —
+   `program_first_year_advising_touchpoint_model.md` (advising at scale),
+   `program_at_risk_student_outreach_plan.md` (retention intervention design), and
+   `program_retention_persistence_data_review.md`. A separate first-year early-alert
+   *system* prompt was not built: `evaluation-analytics/program_early_warning_system_designer.md`
+   already covers HE retention early warning. Transfer-pathway articulation remains open.
 5. **The `updated:` dates are now stale** for the 24 files whose frontmatter was
    backfilled; they record when the prompt body was last touched, not the backfill. Left
    deliberately — the body did not change — but worth a decision if the field is ever

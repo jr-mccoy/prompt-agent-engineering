@@ -1,6 +1,6 @@
 # Domain: Operations
 
-Seventeen prompts for people who run **how work physically or organizationally gets
+Nineteen prompts for people who run **how work physically or organizationally gets
 done**: a process, a supplier base, an inventory, a quality defect, or a project
 that is not software. The domain's subject is the operation itself. You bring the
 process, the SKU list, the bids, or the move date; the prompts turn them into a map,
@@ -8,7 +8,7 @@ a model, a policy, or a plan whose numbers can be checked.
 
 Users are operations managers, plant and warehouse leads, buyers and procurement
 staff, facilities managers, continuous-improvement practitioners (lean, Six Sigma),
-quality and EHS staff, and small-business owners who do all of those jobs at once.
+quality, maintenance and EHS staff, and small-business owners who do all of those jobs at once.
 
 > ## Guard — read this first
 >
@@ -34,7 +34,7 @@ quality and EHS staff, and small-business owners who do all of those jobs at onc
 |---|---|---|
 | `process-improvement/` | As-is mapping and waste, root-cause A3, DMAIC chartering, capacity and bottlenecks, standard work and kaizen, facility layout | 6 |
 | `supply-chain-procurement/` | Supplier selection and TCO, inventory reorder policy, buyer-side RFPs, S&OP, freight mode, supplier corrective action (8D) | 6 |
-| `quality-safety/` | SPC and capability, OEE losses, job hazard analysis, safety incident investigation — safety prompts are drafts for qualified review ([README](quality-safety/README.md)) | 4 |
+| `quality-safety/` | SPC and capability, OEE losses, preventive maintenance program, repeat-failure reliability analysis, job hazard analysis, safety incident investigation — safety prompts are drafts for qualified review ([README](quality-safety/README.md)) | 6 |
 | `project-delivery/` | Fixed-date non-software projects: WBS, critical path, RACI | 1 |
 
 **File naming:** `ops_{specific_function}.md` in every subfolder.
@@ -67,6 +67,8 @@ quality and EHS staff, and small-business owners who do all of those jobs at onc
 |---|---|
 | `ops_spc_control_chart_review.md` | Chart selection, control limits from the process not the spec, declared Western Electric/Nelson rules and false-alarm cost, Cp/Cpk/Ppk only when stable with gauge R&R stated |
 | `ops_oee_loss_analysis.md` | Definitions first, availability × performance × quality with cross-check, six-big-losses waterfall in hours, dominant loss, data-honesty audit |
+| `ops_preventive_maintenance_program.md` | Asset criticality A/B/C, run-to-failure vs time-based vs condition-based vs failure-finding per failure mode, PM tasks with acceptance limits, schedule load vs real hours, compliance by class, backlog in crew-weeks |
+| `ops_repeat_failure_reliability_analysis.md` | Failures by mode with censored removals, MTBF/MTTR and repair-time waterfall, downtime Pareto, trend test before Weibull, RCM-lite task choice, modeled target with verification date |
 | `ops_job_hazard_analysis.md` | Observed steps, energy-source hazard sweep, inherent and residual risk, hierarchy of controls; **draft for qualified safety review, no compliance determination** |
 | `ops_safety_incident_investigation.md` | Sourced timeline, work-as-done vs. work-as-imagined, causal chain to system conditions, just-culture test, controls with effectiveness checks; **draft for qualified safety review**; misconduct goes to `domain-legal/` |
 
@@ -96,6 +98,8 @@ quality and EHS staff, and small-business owners who do all of those jobs at onc
 | "Forklifts cross the whole building all day" | `process-improvement/ops_facility_layout_flow_analysis.md` |
 | "Is this process in control, and is our Cpk real?" | `quality-safety/ops_spc_control_chart_review.md` |
 | "The machine runs but output is far below nameplate" | `quality-safety/ops_oee_loss_analysis.md` |
+| "We're always firefighting breakdowns and the PM list is a copy of the manual" | `quality-safety/ops_preventive_maintenance_program.md` |
+| "This pump has failed six times this year and it's getting worse" | `quality-safety/ops_repeat_failure_reliability_analysis.md` |
 | "We need a hazard analysis before anyone does this task" | `quality-safety/ops_job_hazard_analysis.md` |
 | "Someone nearly got hit by a forklift" | `quality-safety/ops_safety_incident_investigation.md` |
 | "We move offices in 14 weeks — will we make it?" | `project-delivery/ops_non_software_project_plan.md` |
@@ -119,7 +123,9 @@ policy executes, and `ops_freight_mode_selection` sets the freight line and lead
 that the scorecard and reorder policy consume; a supplier defect runs through
 `ops_supplier_corrective_action_8d`. In `quality-safety/`, `ops_oee_loss_analysis`
 names the biggest loss on a constraint asset, `ops_spc_control_chart_review` separates
-common from special causes, and the safety pair — `ops_job_hazard_analysis` before
+common from special causes, `ops_repeat_failure_reliability_analysis` takes a breakdown
+loss down to its failure mode, `ops_preventive_maintenance_program` sets maintenance
+strategy and schedule across the site, and the safety pair — `ops_job_hazard_analysis` before
 the work, `ops_safety_incident_investigation` after an event — feed each other.
 
 ---
