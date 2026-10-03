@@ -1,6 +1,6 @@
 # Domain: Operations
 
-Nineteen prompts for people who run **how work physically or organizationally gets
+Twenty-one prompts for people who run **how work physically or organizationally gets
 done**: a process, a supplier base, an inventory, a quality defect, or a project
 that is not software. The domain's subject is the operation itself. You bring the
 process, the SKU list, the bids, or the move date; the prompts turn them into a map,
@@ -35,7 +35,7 @@ quality, maintenance and EHS staff, and small-business owners who do all of thos
 | `process-improvement/` | As-is mapping and waste, root-cause A3, DMAIC chartering, capacity and bottlenecks, standard work and kaizen, facility layout | 6 |
 | `supply-chain-procurement/` | Supplier selection and TCO, inventory reorder policy, buyer-side RFPs, S&OP, freight mode, supplier corrective action (8D) | 6 |
 | `quality-safety/` | SPC and capability, OEE losses, preventive maintenance program, repeat-failure reliability analysis, job hazard analysis, safety incident investigation — safety prompts are drafts for qualified review ([README](quality-safety/README.md)) | 6 |
-| `project-delivery/` | Fixed-date non-software projects: WBS, critical path, RACI | 1 |
+| `project-delivery/` | Fixed-date non-software projects: WBS, critical path, RACI; recovering a slipping schedule; closeout and lessons learned | 3 |
 
 **File naming:** `ops_{specific_function}.md` in every subfolder.
 
@@ -77,6 +77,8 @@ quality, maintenance and EHS staff, and small-business owners who do all of thos
 | File | Purpose |
 |---|---|
 | `ops_non_software_project_plan.md` | Office moves, events, installs, multi-site rollouts: deliverable WBS, critical path and float, RACI with one Accountable, go/no-go gates, critical-path risks |
+| `ops_schedule_recovery_plan.md` | A slipping fixed-date project: re-forecast from remaining work at the observed rate, today's critical path, fast-track / crash / defer / remove-waits priced in cost per day saved and applied cheapest-first, holds that cannot be compressed, a date-move trigger |
+| `ops_project_closeout_and_lessons_learned.md` | Acceptance against the definition of done, handover with warranties, vendor accounts and temporary services closed, a plan-vs-actual variance account that sums, lessons tied to the artifact they change |
 
 ---
 
@@ -103,6 +105,8 @@ quality, maintenance and EHS staff, and small-business owners who do all of thos
 | "We need a hazard analysis before anyone does this task" | `quality-safety/ops_job_hazard_analysis.md` |
 | "Someone nearly got hit by a forklift" | `quality-safety/ops_safety_incident_investigation.md` |
 | "We move offices in 14 weeks — will we make it?" | `project-delivery/ops_non_software_project_plan.md` |
+| "We're three weeks into fit-out and already a week behind the opening date" | `project-delivery/ops_schedule_recovery_plan.md` |
+| "The event is over — how do we close it out and stop repeating the same overruns?" | `project-delivery/ops_project_closeout_and_lessons_learned.md` |
 
 ## How the prompts compose
 
@@ -114,7 +118,10 @@ goes to `ops_capacity_and_bottleneck_model`. On the supply side,
 turns the bids into a sourcing decision, and the chosen supplier's lead time and MOQ
 feed `ops_inventory_reorder_policy`. `ops_non_software_project_plan` uses the RFP
 prompt to contract its vendors and hands its critical-path risks to
-`domain-risk/risk_register_builder.md`.
+`domain-risk/risk_register_builder.md`; when the project slips,
+`ops_schedule_recovery_plan` re-forecasts that network and prices the recovery, and
+`ops_project_closeout_and_lessons_learned` closes the project and feeds actual
+durations back into the next plan.
 
 A diagnosed process goes to `ops_standard_work_and_kaizen_event` for a focused fix, or
 to `ops_facility_layout_flow_analysis` when the waste is transport. Monthly,

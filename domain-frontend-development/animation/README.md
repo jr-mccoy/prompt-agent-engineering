@@ -1,19 +1,21 @@
 # Animation Prompts
 
 **Category:** Frontend Development / Animation
-**Prompts:** 1
+**Prompts:** 3
 
 ---
 
 ## Overview
 
-Production-grade prompts for web animation and motion performance — choosing the right technique (CSS, Web Animations API, Framer Motion, GSAP), animating compositor-friendly properties, honoring reduced-motion preferences, and eliminating jank from layout thrash and main-thread work.
+Production-grade prompts for web animation and motion — performance (choosing the right technique, animating compositor-friendly properties, eliminating jank from layout thrash and main-thread work), motion-system design (duration and easing tokens, a pattern catalogue, choreography rules), and motion safety (vestibular triggers, flashing thresholds, auto-playing motion, reduced-motion alternatives against WCAG).
 
 ## Prompts
 
 | Prompt | Description | Difficulty |
 |--------|-------------|------------|
 | [frontend_animation_motion_performance.md](frontend_animation_motion_performance.md) | Audit/design animations for ~60fps: CSS vs JS vs Framer Motion/GSAP, GPU-accelerated properties, reduced-motion, jank/layout-thrash audit, frame-budget reasoning | Advanced |
+| [frontend_animation_motion_system_design.md](frontend_animation_motion_system_design.md) | Design a motion system: inventory ad-hoc values, duration and easing tokens, purpose-tagged pattern catalogue, choreography and interruption rules, per-pattern reduced-motion mapping | Intermediate |
+| [frontend_animation_motion_safety_audit.md](frontend_animation_motion_safety_audit.md) | Audit motion for harm: vestibular-risk classification, WCAG 2.2.2 / 2.3.1 / 2.3.3 checks, flash counting, pause controls, tested reduced-motion alternatives | Intermediate |
 
 ## Key Concepts
 
@@ -31,6 +33,12 @@ Use `frontend_animation_motion_performance.md` to classify animated properties, 
 
 ### Choosing an Animation Approach
 Use the same prompt to map each animation to the lightest adequate tool and weigh library bundle costs.
+
+### Making Motion Consistent
+Use `frontend_animation_motion_system_design.md` when every component picked its own duration and easing — it consolidates them into tokens and named patterns.
+
+### Making Motion Safe
+Use `frontend_animation_motion_safety_audit.md` when users report dizziness, carousels or marquees never stop, or `prefers-reduced-motion` has never been verified.
 
 ---
 

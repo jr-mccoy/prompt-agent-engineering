@@ -25,7 +25,7 @@ the review suite remains the domain's anchor and the most developed part of it.
 ```
 domain-hr-management/
 ├── hiring/               # 6 — job description → sourcing → loop → scorecard → screen → references
-├── onboarding/           # 1 — employee 30/60/90
+├── onboarding/           # 3 — preboarding and first week → employee 30/60/90 → programme audit
 ├── performance-reviews/  # 7 — the anchor suite, plus the promotion case
 └── people-ops/           # 8 — ladder, banding, pay equity, engagement, succession, PIP, RIF, exit
 ```
@@ -49,7 +49,9 @@ from them — so the posting, the loop and the scoring instrument cannot disagre
 | **New manager, first review cycle** | Read the review suite in order; start with the approach guide |
 | **Hiring manager opening a role** | `hiring/hr_job_description_writer.md` → `hiring/hr_interview_loop_design.md` → `hiring/hr_structured_scorecard.md` |
 | **Recruiter approaching passive candidates** | `hiring/hr_sourcing_outreach.md` |
+| **Manager or people ops with an offer just accepted** | `onboarding/hr_preboarding_first_week_plan.md` → `onboarding/hr_onboarding_thirty_sixty_ninety.md` |
 | **Manager with a new joiner starting** | `onboarding/hr_onboarding_thirty_sixty_ninety.md` |
+| **People-ops lead asking why new hires leave or ramp slowly** | `onboarding/hr_onboarding_program_audit.md` |
 | **Founder or ops lead setting pay** | `people-ops/hr_compensation_banding.md` |
 | **Manager formalising a performance concern** | `people-ops/hr_performance_improvement_plan.md` — then have it reviewed by `../domain-legal/employment-labor/legal_pip_and_termination_risk_review.md` before issuing |
 | **Anyone running an exit conversation** | `people-ops/hr_exit_interview.md` |
@@ -79,7 +81,9 @@ from them — so the posting, the loop and the scoring instrument cannot disagre
 
 | File | What it does |
 |------|--------------|
+| [onboarding/hr_preboarding_first_week_plan.md](onboarding/hr_preboarding_first_week_plan.md) | Offer accepted to end of week one: provisioning backward-scheduled by lead time with owners, no unpaid pre-start work, jurisdiction-flagged paperwork, an hour-by-hour day one, a real task by Friday, a T−2 readiness check |
 | [onboarding/hr_onboarding_thirty_sixty_ninety.md](onboarding/hr_onboarding_thirty_sixty_ninety.md) | Ramp derived from the role's outcomes, with the organisation's obligations named and a day-90 checkpoint that can conclude "not working" |
+| [onboarding/hr_onboarding_program_audit.md](onboarding/hr_onboarding_program_audit.md) | Across many hires: early attrition on cohorts old enough to count, time to productivity with not-yet-ramped hires kept, leading indicators by team, small-sample intervals, a gaming check; no protected-class slices without counsel |
 
 ### People operations
 
@@ -159,4 +163,4 @@ Adjacent content elsewhere in the repo that pairs well with this suite:
 
 ---
 
-*Last updated: 2026-09-24*
+*Last updated: 2026-10-03*

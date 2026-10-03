@@ -1,13 +1,13 @@
 # Astro Prompts
 
 **Category:** Frontend Development / Astro
-**Prompts:** 2
+**Prompts:** 3
 
 ---
 
 ## Overview
 
-Production-grade prompts for Astro development, focused on Astro's server-first, ship-less-JavaScript philosophy. Coverage spans islands architecture and partial hydration (choosing the right `client:*` directive for each interactive component) and type-safe content collections (schemas, content-layer loaders, MDX, and build-time routing). Prompts describe concepts and mental models and flag version-specific APIs for verification, since Astro evolves quickly.
+Production-grade prompts for Astro development, focused on Astro's server-first, ship-less-JavaScript philosophy. Coverage spans islands architecture and partial hydration (choosing the right `client:*` directive for each interactive component) type-safe content collections (schemas, content-layer loaders, MDX, and build-time routing), and per-route rendering strategy (prerender vs on-demand, server islands for personalised fragments, middleware reach, cache headers). Prompts describe concepts and mental models and flag version-specific APIs for verification, since Astro evolves quickly.
 
 ## Prompts
 
@@ -15,6 +15,7 @@ Production-grade prompts for Astro development, focused on Astro's server-first,
 |--------|-------------|------------|
 | [frontend_astro_islands_architecture.md](frontend_astro_islands_architecture.md) | Audit server-first rendering, island boundaries, and `client:load/idle/visible/media/only` directive selection; surface over- and under-hydration | Intermediate |
 | [frontend_astro_content_collections.md](frontend_astro_content_collections.md) | Review content collections for schema/type safety, content-layer loaders, MDX, and build-time vs request-time data and routing | Intermediate |
+| [frontend_astro_rendering_modes_server_islands.md](frontend_astro_rendering_modes_server_islands.md) | Decide prerender vs on-demand per route from freshness × personalisation × protection; server islands (`server:defer`) for personalised fragments; middleware reach at build vs request time; cache headers | Intermediate |
 
 ## Usage Examples
 

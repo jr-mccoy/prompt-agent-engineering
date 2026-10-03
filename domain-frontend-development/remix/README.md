@@ -1,19 +1,21 @@
 # Remix / React Router Prompts
 
 **Category:** Frontend Development / Remix
-**Prompts:** 1
+**Prompts:** 3
 
 ---
 
 ## Overview
 
-Production-grade prompts for Remix (and React Router in framework mode), focused on its web-fundamentals-first data model: data lives on routes via loaders, mutations go through route actions, forms use progressive enhancement, and the UI stays in sync through revalidation. The coverage spans nested-route parallel loading, no-JS form behavior, error/catch boundaries, and mutation + revalidation. Prompts describe conventions and flag version-specific hook/API names for verification, since Remix and React Router are converging and evolving.
+Production-grade prompts for Remix (and React Router in framework mode), focused on its web-fundamentals-first data model: data lives on routes via loaders, mutations go through route actions, forms use progressive enhancement, and the UI stays in sync through revalidation. The coverage spans nested-route parallel loading, no-JS form behavior, error/catch boundaries, and mutation + revalidation, plus route-level security and caching (per-loader authorisation, session cookies, redirects, Cache-Control) and a phased Remix v2 → React Router v7 migration plan. Prompts describe conventions and flag version-specific hook/API names for verification, since Remix and React Router are converging and evolving.
 
 ## Prompts
 
 | Prompt | Description | Difficulty |
 |--------|-------------|------------|
 | [frontend_remix_data_loading.md](frontend_remix_data_loading.md) | Audit loaders/actions, nested-route parallel loading, progressive enhancement, error/catch boundaries, and mutation + revalidation; catch client fetches and state that should live on routes | Intermediate |
+| [frontend_remix_sessions_auth_caching.md](frontend_remix_sessions_auth_caching.md) | Review route security and caching: every loader/action authorises itself (parallel loaders, directly fetchable route data), tampered-ID actions, session cookie flags and rotation, CSRF, open redirects, Cache-Control on personalised data | Advanced |
+| [frontend_remix_react_router_v7_migration.md](frontend_remix_react_router_v7_migration.md) | Plan Remix v2 → React Router v7: one future flag per release, predicted failure modes (single-fetch serialization, revalidation after errors, splat paths, headers), codemod and package swap, route typegen, test gates and rollback | Advanced |
 
 ## Usage Examples
 

@@ -3,8 +3,8 @@
     "generated": "2026-10-03",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 6075,
-    "artifacts_with_frontmatter": 5147,
+    "total_indexed_artifacts": 6114,
+    "artifacts_with_frontmatter": 5186,
     "artifacts_without_frontmatter": 928,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 6075,
-    "prompts_with_frontmatter": 5147,
+    "total_prompts": 6114,
+    "prompts_with_frontmatter": 5186,
     "prompts_without_frontmatter": 928
   },
   "prompts": [
@@ -53920,6 +53920,40 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-creative-writing/poetry/writing_poetry_chapbook_and_collection_ordering.md",
+      "filename": "writing_poetry_chapbook_and_collection_ordering.md",
+      "title": "Chapbook and Collection Ordering — Culling the Poems, Finding the Book's Arc, Sequencing by Adjacency, and Catching Manuscript-Level Tics",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Turn a pile of individual poems into a chapbook or full-length manuscript: score each poem for finish, necessity, and fit on anchored scales, cut or flag for revision, find the book's through-line, sequence the poems by arc and poem-to-poem adjacency (echo, contrast, hinge), audit repeated words, endings, and openings across the whole manuscript, and test the order — with no invented presses, contests, fees, or publication credits.",
+      "techniques": [
+        "DP-03",
+        "RT-06",
+        "QA-02",
+        "ST-02"
+      ],
+      "keywords": [
+        "creative-writing",
+        "poetry",
+        "chapbook",
+        "poetry-collection",
+        "manuscript-ordering",
+        "sequencing",
+        "first-book",
+        "turn-my-poems-into-a-book",
+        "which-poems-to-cut",
+        "what-order-should-poems-go-in"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-creative-writing/poetry/writing_poetry_craft_and_forms.md",
+        "domain-creative-writing/poetry/writing_imagery_and_figurative_language.md",
+        "domain-creative-writing/craft-tools/writing_theme_and_motif_development.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-creative-writing/craft-tools/writing_character_development_workshop.md",
       "filename": "writing_character_development_workshop.md",
       "title": "Character Development Workshop",
@@ -53940,6 +53974,39 @@
       "difficulty": "intermediate",
       "updated": "2026-06-18",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/songwriting/writing_song_cowriting_session_and_splits.md",
+      "filename": "writing_song_cowriting_session_and_splits.md",
+      "title": "Co-Writing Session Workflow and Split Sheet — Prep, Roles, Capturing the Work Tape, Agreeing Splits Before Anyone Leaves, and the Registration Hand-Off",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Run a songwriting co-write from prep to paperwork: agree the target, roles, and the split convention before writing, run the session from title to work tape, disclose pre-existing ideas, capture versions so contributions are provable, complete a split sheet (legal names, PRO and IPI numbers, publishers, shares summing to 100%) signed at the end of the session, separate composition shares from master or producer terms, and hand off registration tasks — with no legal conclusions and no invented organisation rules.",
+      "techniques": [
+        "ST-02",
+        "NE-20",
+        "DD-05",
+        "DP-04"
+      ],
+      "keywords": [
+        "creative-writing",
+        "songwriting",
+        "co-writing",
+        "split-sheet",
+        "songwriter-splits",
+        "music-publishing",
+        "who-owns-the-song",
+        "writing-songs-with-friends",
+        "how-to-split-song-credit"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-creative-writing/songwriting/writing_song_lyric_craft_workshop.md",
+        "domain-negotiation/contexts/negotiation_partnership_equity_split.md",
+        "domain-legal/ip/legal_copyright_fair_use_analysis.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -54210,6 +54277,40 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-creative-writing/poetry/writing_poetry_meter_scansion_and_fixed_forms.md",
+      "filename": "writing_poetry_meter_scansion_and_fixed_forms.md",
+      "title": "Meter, Scansion, and Fixed Forms — Scanning a Draft Line by Line, Auditing Sonnet, Villanelle, Ghazal, Sestina and Pantoum Rules, and Deciding When to Break Form",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Audit a draft formal poem line by line: scan each line for stress and syllable count, separate legitimate metrical substitutions (initial inversion, feminine ending, double iamb) from padding and rhyme-forced syntax, check the fixed form's actual rules (rhyme scheme, refrain positions, radif and qafia, end-word rotation), and decide whether each departure is a meaningful break or an error — distinct from the poetry craft overview, which helps choose a form and draft.",
+      "techniques": [
+        "DT-05",
+        "CM-11",
+        "QA-24",
+        "NE-04"
+      ],
+      "keywords": [
+        "creative-writing",
+        "poetry",
+        "scansion",
+        "meter",
+        "iambic-pentameter",
+        "fixed-forms",
+        "villanelle",
+        "poem-rhythm-feels-off",
+        "does-my-sonnet-follow-the-rules",
+        "count-beats-in-a-line"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-creative-writing/poetry/writing_poetry_craft_and_forms.md",
+        "domain-creative-writing/songwriting/writing_song_structure_lyric_revision.md",
+        "domain-childrens-writing/craft-tools/childrens_read_aloud_rhythm_rhyme_polish.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-creative-writing/genre-workshops/writing_mystery_and_crime_craft.md",
       "filename": "writing_mystery_and_crime_craft.md",
       "title": "Mystery & Crime Craft Workshop",
@@ -54350,6 +54451,40 @@
         "domain-creative-writing/fiction/writing_scene_construction_workshop.md",
         "domain-creative-writing/fiction/writing_story_structure_architect.md",
         "domain-creative-writing/craft-tools/writing_revision_and_self_editing.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/creative-nonfiction/writing_personal_essay_reflection_and_turn.md",
+      "filename": "writing_personal_essay_reflection_and_turn.md",
+      "title": "Personal Essay Revision — The Two-Selves Narrator, Finding the Turn, and Earning Feeling Without Self-Pity or Sentimentality",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Diagnose and revise a drafted personal essay: tag every paragraph as scene, reflection, or summary to see whether the narrating self ever thinks on the page, separate the situation from the story, locate (or build) the turn, test reflection for tacked-on morals and repeated feeling, flag self-pity and sentimentality markers with before/after lines, and check the ending opens rather than summarises — distinct from the memoir workshop, which finds and plans the story before drafting.",
+      "techniques": [
+        "DT-05",
+        "NE-04",
+        "DS-06",
+        "DT-03"
+      ],
+      "keywords": [
+        "creative-writing",
+        "personal-essay",
+        "creative-nonfiction",
+        "reflection",
+        "narrating-self",
+        "essay-revision",
+        "sentimentality",
+        "my-essay-reads-like-a-diary",
+        "essay-sounds-whiny",
+        "what-is-the-point-of-my-essay"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-creative-writing/creative-nonfiction/writing_memoir_and_personal_essay.md",
+        "domain-creative-writing/craft-tools/writing_voice_development.md",
+        "domain-creative-writing/craft-tools/writing_endings_and_resolution_workshop.md"
       ],
       "has_frontmatter": true
     },
@@ -54581,6 +54716,41 @@
       "difficulty": "intermediate",
       "updated": "2026-06-18",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/publishing-career/writing_self_vs_traditional_publishing_decision.md",
+      "filename": "writing_self_vs_traditional_publishing_decision.md",
+      "title": "Self-Publishing vs Traditional Publishing — The Path Decision, Break-Even and Earn-Out Math From Your Own Numbers, Red-Flag Screening, and a First-Year Plan",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Help an adult-book author choose between traditional (agented or small-press) publishing, self-publishing, and paid hybrid or assisted services: rank the author's own goals, compare the paths on control, money flow, timeline, distribution, and workload, compute self-publishing break-even and advance earn-out from the author's real quotes and offer terms, screen offers for vanity-press and rights red flags, and lay out a first-year plan for the chosen path — with no invented sales figures, advances, agents, or market claims.",
+      "techniques": [
+        "DP-29",
+        "IT-22",
+        "NE-11",
+        "RT-23",
+        "QA-04"
+      ],
+      "keywords": [
+        "creative-writing",
+        "publishing",
+        "self-publishing",
+        "traditional-publishing",
+        "hybrid-publishing",
+        "author-royalties",
+        "break-even",
+        "should-i-self-publish",
+        "cant-find-an-agent",
+        "is-this-publisher-a-scam"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-creative-writing/publishing-career/writing_query_letter_and_synopsis.md",
+        "domain-childrens-writing/publishing-business/childrens_self_publishing_prep.md",
+        "domain-legal/contracts-transactional/legal_contract_review_full_redline.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -54915,6 +55085,40 @@
       "difficulty": "intermediate",
       "updated": "2026-06-18",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-creative-writing/creative-nonfiction/writing_memoir_real_people_ethics.md",
+      "filename": "writing_memoir_real_people_ethics.md",
+      "title": "Writing About Real People in Memoir and Essay — Cast Inventory, Provenance of Every Claim, Consent and Show-the-Draft Decisions, Disguise and Composites, and Legal-Risk Triage",
+      "domain": "creative-writing",
+      "category": "creative-writing",
+      "description": "Decide, person by person, how to portray family, partners, friends, children, and others in memoir or personal essay: inventory everyone identifiable, tag each claim about them as documented, remembered, told, or inferred, weigh the story's need against the harm of private disclosures, choose among keep, reframe, ask, show the draft, disguise, composite (disclosed), delay, or cut, draft the author's note, and route possible defamation or privacy exposure to legal screening — an ethics and craft tool, not legal advice.",
+      "techniques": [
+        "RT-23",
+        "GT-09",
+        "DD-05",
+        "DP-04"
+      ],
+      "keywords": [
+        "creative-writing",
+        "memoir",
+        "creative-nonfiction",
+        "writing-ethics",
+        "consent",
+        "composite-characters",
+        "privacy",
+        "writing-about-my-family",
+        "will-my-mom-be-upset-by-my-memoir",
+        "can-i-use-real-names"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-creative-writing/creative-nonfiction/writing_memoir_and_personal_essay.md",
+        "domain-creative-writing/creative-nonfiction/writing_narrative_nonfiction_and_literary_journalism.md",
+        "domain-legal/ip/legal_defamation_publicity_risk_screen.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -73130,6 +73334,40 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-finance/options/finance_covered_call_cash_secured_put_decision.md",
+      "filename": "finance_covered_call_cash_secured_put_decision.md",
+      "title": "Covered Call and Cash-Secured Put Decision — For a Long-Term Holder: Would You Really Sell (or Buy) at the Strike?",
+      "domain": "finance",
+      "category": "finance/options",
+      "description": "Decide whether a long-term holder should write a covered call on shares already owned or a cash-secured put on shares they would like to own: the 'content at the strike?' test first, premium returns defined precisely (static, if-assigned, annualised, excess over the cash yield), payoff against holding across price scenarios, forgone upside and retained downside, early-assignment and ex-dividend risk, the resulting position size, and a tax-awareness flag on assigning a low-basis lot — educational, with a pre-committed management plan.",
+      "techniques": [
+        "NE-11",
+        "NE-10",
+        "QA-02",
+        "DS-02",
+        "QA-04"
+      ],
+      "keywords": [
+        "covered-call",
+        "cash-secured-put",
+        "options-income",
+        "assignment-risk",
+        "early-exercise",
+        "long-term-investor",
+        "sell-options-on-stock-i-own",
+        "get-paid-to-buy-lower",
+        "is-option-premium-free-money"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-finance/options/finance_options_structure_selector.md",
+        "domain-finance/options/finance_implied_vol_greeks_analysis.md",
+        "domain-finance/tax-planning/finance_capital_gains_harvesting_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-finance/options/finance_implied_vol_greeks_analysis.md",
       "filename": "finance_implied_vol_greeks_analysis.md",
       "title": "Implied Volatility & Greeks Analysis — Level, Skew, Term, and Position Sensitivities",
@@ -75762,6 +76000,73 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-frontend-development/animation/frontend_animation_motion_safety_audit.md",
+      "filename": "frontend_animation_motion_safety_audit.md",
+      "title": "Motion Safety Audit — Vestibular Triggers, Flashing Thresholds, Auto-Playing Motion, and Reduced-Motion Alternatives Against WCAG",
+      "domain": "frontend-development",
+      "category": "frontend-development/animation",
+      "description": "Audit a site's motion for the people it can harm: classify every animation by vestibular risk, check flashing content against the WCAG three-flash and area thresholds, find auto-playing motion longer than five seconds without a pause control, and verify that each risky animation has a tested reduced-motion alternative rather than a global off switch.",
+      "techniques": [
+        "DS-32",
+        "RT-02",
+        "QA-24",
+        "DS-06"
+      ],
+      "keywords": [
+        "reduced-motion",
+        "vestibular-disorders",
+        "wcag-animation",
+        "pause-stop-hide",
+        "photosensitive-seizures",
+        "parallax",
+        "accessibility-audit",
+        "website-makes-me-dizzy",
+        "stop-autoplaying-animation",
+        "motion-sickness-from-scrolling"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/animation/frontend_animation_motion_performance.md",
+        "domain-frontend-development/accessibility/frontend_accessibility_wcag_audit.md",
+        "domain-frontend-development/animation/frontend_animation_motion_system_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/animation/frontend_animation_motion_system_design.md",
+      "filename": "frontend_animation_motion_system_design.md",
+      "title": "Motion System Design — Duration and Easing Tokens, Choreography Rules, Pattern Catalogue, and Reduced-Motion Mapping",
+      "domain": "frontend-development",
+      "category": "frontend-development/animation",
+      "description": "Design a product's motion system as a small set of named duration and easing tokens, a catalogue of approved motion patterns tied to their purpose, choreography rules for stagger, sequencing and interruption, and a reduced-motion mapping for every pattern — starting from an inventory of the ad-hoc values already in the code.",
+      "techniques": [
+        "DS-26",
+        "DS-29",
+        "DS-02",
+        "QA-02"
+      ],
+      "keywords": [
+        "motion-design",
+        "motion-tokens",
+        "easing-curves",
+        "animation-duration",
+        "choreography",
+        "design-system",
+        "animations-feel-inconsistent",
+        "how-long-should-animation-be",
+        "make-ui-feel-polished"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/animation/frontend_animation_motion_performance.md",
+        "domain-frontend-development/design-direction/frontend_design_token_architecture.md",
+        "domain-frontend-development/design-direction/frontend_look_and_feel_hunt.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-frontend-development/animation/frontend_animation_motion_performance.md",
       "filename": "frontend_animation_motion_performance.md",
       "title": "Web Animation & Motion Performance Audit",
@@ -75954,6 +76259,40 @@
         "domain-frontend-development/performance/frontend_performance_core_web_vitals.md",
         "domain-frontend-development/react/frontend_react_server_components_streaming.md",
         "domain-frontend-development/architecture/frontend_state_management_selection.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/astro/frontend_astro_rendering_modes_server_islands.md",
+      "filename": "frontend_astro_rendering_modes_server_islands.md",
+      "title": "Astro Rendering Mode, Server Islands and Caching Review — Prerender vs On-Demand per Route, Personalised Fragments, Middleware Reach, and Cache Headers",
+      "domain": "frontend-development",
+      "category": "frontend-development/astro",
+      "description": "Decide, route by route, whether an Astro page should be prerendered at build time or rendered on demand, when a personalised fragment should become a server island instead of turning the whole page dynamic, what middleware actually protects at runtime versus at build, and which cache headers each on-demand response and island should send.",
+      "techniques": [
+        "IT-22",
+        "DP-06",
+        "QA-02",
+        "DS-06"
+      ],
+      "keywords": [
+        "astro",
+        "on-demand-rendering",
+        "prerendering",
+        "server-islands",
+        "astro-adapters",
+        "cache-control",
+        "astro-middleware",
+        "static-site-shows-old-data",
+        "personalize-static-page",
+        "should-my-site-be-static"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/astro/frontend_astro_islands_architecture.md",
+        "domain-frontend-development/astro/frontend_astro_content_collections.md",
+        "domain-frontend-development/nextjs/frontend_nextjs_data_fetching.md"
       ],
       "has_frontmatter": true
     },
@@ -76279,6 +76618,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-frontend-development/forms/frontend_forms_multi_step_wizard_state.md",
+      "filename": "frontend_forms_multi_step_wizard_state.md",
+      "title": "Multi-Step Form State Architecture — Step Graph, Branch Invalidation, Draft Persistence, URL-Synced Navigation, and a Rechecked Final Submit",
+      "domain": "frontend-development",
+      "category": "frontend-development/forms",
+      "description": "Design or review the state architecture of a multi-step form or wizard: model steps as a graph whose branches are derived from answers, clear or park answers when an earlier branch changes, persist drafts with a versioned schema and a deliberate privacy choice, keep the URL, back button and refresh in step with the form, and make the final submit re-validate everything on the server once, idempotently.",
+      "techniques": [
+        "GT-01",
+        "GT-06",
+        "DP-07",
+        "RT-02"
+      ],
+      "keywords": [
+        "multi-step-form",
+        "form-wizard",
+        "form-state",
+        "draft-autosave",
+        "conditional-branching",
+        "step-navigation",
+        "long-form-loses-my-answers",
+        "back-button-breaks-form",
+        "save-and-continue-later"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/forms/frontend_forms_validation_design.md",
+        "domain-frontend-development/forms/frontend_forms_accessibility_ux.md",
+        "domain-frontend-development/architecture/frontend_state_management_selection.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-frontend-development/nextjs/frontend_nextjs_app_router.md",
       "filename": "frontend_nextjs_app_router.md",
       "title": "Next.js App Router Architecture Analysis",
@@ -76439,6 +76811,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-frontend-development/performance/frontend_performance_field_vitals_regression.md",
+      "filename": "frontend_performance_field_vitals_regression.md",
+      "title": "Field Core Web Vitals Regression Triage — Confirming the Shift, Separating Traffic Mix from Real Slowdown, Localising by Template and Sub-Part, and Tying It to a Change",
+      "domain": "frontend-development",
+      "category": "frontend-development/performance",
+      "description": "Triage a drop in real-user Core Web Vitals: confirm the shift is beyond noise and CrUX lag, decompose it into traffic-mix change versus within-segment slowdown, localise it to a page template and to an LCP or INP sub-part using attribution data, line it up against deploys, flags and third-party changes, and verify the fix in field data rather than in a lab score.",
+      "techniques": [
+        "RT-06",
+        "NE-11",
+        "RT-09",
+        "QA-12"
+      ],
+      "keywords": [
+        "core-web-vitals",
+        "real-user-monitoring",
+        "crux",
+        "inp-attribution",
+        "lcp-subparts",
+        "performance-regression",
+        "site-got-slower-after-release",
+        "search-console-says-pages-failing",
+        "page-speed-score-dropped"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/performance/frontend_performance_core_web_vitals.md",
+        "domain-agentic-resources/skills/seo-marketing/core-web-vitals-audit/SKILL.md",
+        "domain-frontend-development/performance/frontend_performance_bundle_optimization.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-frontend-development/performance/frontend_performance_bundle_optimization.md",
       "filename": "frontend_performance_bundle_optimization.md",
       "title": "JavaScript Bundle Optimization",
@@ -76467,6 +76872,72 @@
         "domain-frontend-development/react/frontend_react_performance.md",
         "domain-frontend-development/build-tooling/frontend_build_vite_optimization.md",
         "domain-frontend-development/build-tooling/frontend_build_bundler_migration.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/qwik/frontend_qwik_city_loaders_actions.md",
+      "filename": "frontend_qwik_city_loaders_actions.md",
+      "title": "Qwik City Routing, Loaders, Actions and Middleware Review — Server Data Flow, Form Progressive Enhancement, and Endpoint Exposure",
+      "domain": "frontend-development",
+      "category": "frontend-development/qwik",
+      "description": "Review how a Qwik City app moves data across the server boundary: whether data is loaded in route loaders rather than client tasks, what loader return values expose in the serialized HTML, whether actions validate and authorise their input, whether forms work before JavaScript, and whether middleware, server functions and cache headers protect and cache the right routes.",
+      "techniques": [
+        "RT-02",
+        "RT-05",
+        "QA-24",
+        "DS-06"
+      ],
+      "keywords": [
+        "qwik-city",
+        "route-loaders",
+        "route-actions",
+        "server-functions",
+        "middleware",
+        "progressive-enhancement",
+        "where-to-load-data-in-qwik",
+        "qwik-form-without-javascript",
+        "protect-page-behind-login"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/qwik/frontend_qwik_resumability.md",
+        "domain-frontend-development/remix/frontend_remix_data_loading.md",
+        "domain-software-engineering/analysis/security/security_authentication_authorization_review.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/qwik/frontend_qwik_reactive_state_tasks.md",
+      "filename": "frontend_qwik_reactive_state_tasks.md",
+      "title": "Qwik Reactive State and Tasks Review — Signals vs Stores, Tracking, Computed vs Task, Server-First Task Execution, and Cleanup",
+      "domain": "frontend-development",
+      "category": "frontend-development/qwik",
+      "description": "Diagnose why a Qwik component does not update, updates twice, loops, or crashes on the server: check signal and store choice and mutation, what each task actually tracks, whether derived values use computed rather than tasks, which code runs on the server first, async races and cleanup, and values marked non-serializable that vanish after resume.",
+      "techniques": [
+        "IT-23",
+        "RT-09",
+        "RT-05",
+        "QA-24"
+      ],
+      "keywords": [
+        "qwik-signals",
+        "qwik-stores",
+        "usetask",
+        "usecomputed",
+        "useresource",
+        "reactivity-bugs",
+        "qwik-ui-not-updating",
+        "code-runs-on-server-and-crashes",
+        "effect-runs-twice"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/qwik/frontend_qwik_resumability.md",
+        "domain-frontend-development/solidjs/frontend_solidjs_reactivity_patterns.md",
+        "domain-frontend-development/qwik/frontend_qwik_city_loaders_actions.md"
       ],
       "has_frontmatter": true
     },
@@ -76723,6 +77194,105 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-frontend-development/remix/frontend_remix_sessions_auth_caching.md",
+      "filename": "frontend_remix_sessions_auth_caching.md",
+      "title": "Remix / React Router Sessions, Route Authorization and HTTP Caching Review — Per-Loader Checks, Cookie Configuration, Redirect Safety, and Cache Headers",
+      "domain": "frontend-development",
+      "category": "frontend-development/remix",
+      "description": "Review the security and caching of a Remix or React Router framework-mode app at the route level: confirm every loader and action authorises independently because nested loaders run in parallel and route data is fetchable directly, check session cookie flags, secrets rotation, size and session fixation, validate post-login redirects, and make sure personalised responses are never cached by a shared cache.",
+      "techniques": [
+        "QA-02",
+        "RT-02",
+        "QA-24",
+        "DS-06"
+      ],
+      "keywords": [
+        "remix-sessions",
+        "route-authorization",
+        "cookie-security",
+        "csrf",
+        "cache-control",
+        "open-redirect",
+        "logged-out-user-can-see-page",
+        "user-sees-someone-elses-data",
+        "protect-pages-behind-login"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/remix/frontend_remix_data_loading.md",
+        "domain-software-engineering/analysis/security/security_authentication_authorization_review.md",
+        "domain-frontend-development/nextjs/frontend_nextjs_server_actions_mutations.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/remix/frontend_remix_react_router_v7_migration.md",
+      "filename": "frontend_remix_react_router_v7_migration.md",
+      "title": "Remix v2 to React Router v7 Migration Plan — Future-Flag Readiness, Phased Cutover, Behaviour Changes, and Rollback Points",
+      "domain": "frontend-development",
+      "category": "frontend-development/remix",
+      "description": "Plan and review the move from Remix v2 to React Router v7 framework mode: audit which future flags are already on, sequence each flag and the package swap as a separate reversible phase with entry and exit criteria, list the behaviour changes that break apps silently (serialization, revalidation after errors, relative splat paths, headers), and define the tests that gate each phase.",
+      "techniques": [
+        "AG-40",
+        "QA-09",
+        "DP-07",
+        "RT-05"
+      ],
+      "keywords": [
+        "react-router-v7",
+        "remix-migration",
+        "future-flags",
+        "single-fetch",
+        "route-module-types",
+        "framework-mode",
+        "upgrade-old-remix-app",
+        "remix-app-broke-after-upgrade",
+        "plan-framework-upgrade"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/remix/frontend_remix_data_loading.md",
+        "domain-frontend-development/build-tooling/frontend_build_bundler_migration.md",
+        "domain-agentic-resources/skills/framework-migration/dependency-upgrade/SKILL.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/solidjs/frontend_solidjs_control_flow_components.md",
+      "filename": "frontend_solidjs_control_flow_components.md",
+      "title": "SolidJS Control Flow and Component API Review — For vs Index, Show and Switch, splitProps and mergeProps, children, Context Ownership, and Boundaries",
+      "domain": "frontend-development",
+      "category": "frontend-development/solidjs",
+      "description": "Review a SolidJS codebase's component layer: choose the right list primitive for each list, use Show, Switch and Dynamic instead of patterns that recreate DOM, forward and default props without breaking reactivity, resolve children once, keep context and refs inside the owner that needs them, and place error and suspense boundaries where a failure should stop.",
+      "techniques": [
+        "DS-29",
+        "IT-22",
+        "RT-05",
+        "QA-24"
+      ],
+      "keywords": [
+        "solidjs",
+        "control-flow",
+        "splitprops",
+        "mergeprops",
+        "for-vs-index",
+        "component-api",
+        "list-rerenders-everything",
+        "default-props-not-working",
+        "input-loses-focus-while-typing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/solidjs/frontend_solidjs_reactivity_patterns.md",
+        "domain-frontend-development/typescript/frontend_typescript_component_typing.md",
+        "domain-frontend-development/architecture/frontend_error_boundary_resilience.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-frontend-development/solidjs/frontend_solidjs_reactivity_patterns.md",
       "filename": "frontend_solidjs_reactivity_patterns.md",
       "title": "SolidJS Fine-Grained Reactivity Patterns Analysis",
@@ -76751,6 +77321,39 @@
         "domain-frontend-development/qwik/frontend_qwik_resumability.md",
         "domain-frontend-development/architecture/frontend_state_management_selection.md",
         "domain-frontend-development/performance/frontend_performance_core_web_vitals.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/solidjs/frontend_solidjs_solidstart_data_ssr.md",
+      "filename": "frontend_solidjs_solidstart_data_ssr.md",
+      "title": "SolidStart Data Loading and SSR Review — Queries, Route Preload, Server Functions, Actions, Suspense Placement, and Hydration Safety",
+      "domain": "frontend-development",
+      "category": "frontend-development/solidjs",
+      "description": "Review how a SolidStart app gets data to the page and keeps it correct: whether reads go through cached queries started by route preload rather than component-level fetches, where Suspense boundaries sit, whether server functions and actions validate and authorise as public endpoints, whether mutations revalidate the right queries, and which render paths cause hydration mismatches or leak state across requests on the server.",
+      "techniques": [
+        "RT-02",
+        "RT-05",
+        "IT-23",
+        "DS-06"
+      ],
+      "keywords": [
+        "solidstart",
+        "server-functions",
+        "createasync",
+        "route-preload",
+        "ssr-hydration",
+        "solid-router-actions",
+        "page-data-loads-twice",
+        "hydration-mismatch-error",
+        "load-data-before-page-renders"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/solidjs/frontend_solidjs_reactivity_patterns.md",
+        "domain-frontend-development/react/frontend_react_server_components_streaming.md",
+        "domain-frontend-development/svelte/frontend_sveltekit_fullstack.md"
       ],
       "has_frontmatter": true
     },
@@ -76948,6 +77551,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-frontend-development/testing/frontend_testing_api_mocking_strategy.md",
+      "filename": "frontend_testing_api_mocking_strategy.md",
+      "title": "Frontend API Mocking Strategy — One Network-Level Mock Layer Across Tests, Stories and Dev, Typed Handlers, Drift Detection, and Error-State Coverage",
+      "domain": "frontend-development",
+      "category": "frontend-development/testing",
+      "description": "Design or review how a frontend fakes its back end: mock at the network boundary with one handler set shared by unit, component, Storybook, local development and selected end-to-end tests, type and validate handlers and fixtures against the real API contract so drift fails the build, make unhandled requests fail loudly, cover error and slow states deliberately, and decide which end-to-end journeys must hit a real back end.",
+      "techniques": [
+        "RT-02",
+        "DP-07",
+        "AG-12",
+        "DS-06"
+      ],
+      "keywords": [
+        "api-mocking",
+        "mock-service-worker",
+        "test-fixtures",
+        "mock-drift",
+        "storybook",
+        "integration-testing",
+        "tests-pass-but-app-is-broken",
+        "fake-data-out-of-date",
+        "test-error-states"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/react/frontend_react_testing.md",
+        "domain-software-engineering/testing/testing_contract_test_design.md",
+        "domain-frontend-development/testing/frontend_testing_playwright.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-frontend-development/testing/frontend_testing_jest.md",
       "filename": "frontend_testing_jest.md",
       "title": "Jest Testing Patterns for Frontend",
@@ -77039,6 +77675,39 @@
         "domain-frontend-development/react/frontend_react_component_patterns.md",
         "domain-frontend-development/testing/frontend_testing_jest.md",
         "domain-frontend-development/performance/frontend_performance_bundle_optimization.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/typescript/frontend_typescript_api_contract_typing.md",
+      "filename": "frontend_typescript_api_contract_typing.md",
+      "title": "TypeScript API Contract Typing Strategy — Choosing the Source of Truth, Generated vs Shared Types, Runtime Validation at the Boundary, and CI Drift Gates",
+      "domain": "frontend-development",
+      "category": "frontend-development/typescript",
+      "description": "Decide how a frontend's types for back-end data are produced and trusted: pick the source of truth (OpenAPI or GraphQL code generation, shared schemas, end-to-end typed RPC, or hand-written types) from who owns the API and how releases couple, decide per endpoint whether responses are validated at runtime and what happens on failure, model errors, dates, nullability and open enums honestly, and gate drift in CI.",
+      "techniques": [
+        "DP-06",
+        "IPC-08",
+        "IPC-09",
+        "RT-02"
+      ],
+      "keywords": [
+        "typescript",
+        "api-types",
+        "openapi-codegen",
+        "runtime-validation",
+        "zod",
+        "type-drift",
+        "frontend-breaks-when-backend-changes",
+        "api-returns-unexpected-data",
+        "keep-frontend-and-backend-types-in-sync"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/typescript/frontend_typescript_type_safety_audit.md",
+        "domain-software-engineering/testing/testing_contract_test_design.md",
+        "domain-software-engineering/analysis/architecture/architecture_api_client_code_generation.md"
       ],
       "has_frontmatter": true
     },
@@ -77439,6 +78108,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-game-development/ai/ai_perception_stealth_fairness.md",
+      "filename": "ai_perception_stealth_fairness.md",
+      "title": "Enemy Perception and Stealth Fairness Tuning — Sight Cones, Awareness Meters, Tells, and the Cheating-AI Audit",
+      "domain": "game-development",
+      "category": "game-development/ai",
+      "description": "Tune how enemies see and hear the player so detection is fast enough to threaten and fair enough to learn: write the perception model as a formula, compute time-to-suspicious and time-to-alert for representative scenarios, set a minimum reaction window between the first tell and full detection, check that the AI senses the same light, cover and noise the player is shown, and audit every way the AI might be cheating.",
+      "techniques": [
+        "NE-11",
+        "DS-02",
+        "QA-18",
+        "QA-24"
+      ],
+      "keywords": [
+        "game-ai",
+        "stealth-design",
+        "enemy-perception",
+        "awareness-meter",
+        "sight-cone",
+        "telegraphing",
+        "spotted-out-of-nowhere",
+        "guards-see-through-walls",
+        "stealth-feels-unfair"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-game-development/ai/ai_npc_decision_architecture.md",
+        "domain-game-development/design/design_hud_and_game_feel_review.md",
+        "domain-game-development/design/design_difficulty_combat_balancing.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-game-development/ai/ai_npc_decision_architecture.md",
       "filename": "ai_npc_decision_architecture.md",
       "title": "NPC and Enemy AI Decision Architecture",
@@ -77468,6 +78170,39 @@
         "domain-game-development/architecture/architecture_state_machine_design.md",
         "domain-game-development/performance/performance_frame_budget_analysis.md",
         "domain-game-development/design/design_mechanics_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/ai/ai_squad_tactics_encounter_director.md",
+      "filename": "ai_squad_tactics_encounter_director.md",
+      "title": "Squad Tactics and Encounter Director — Attack Tokens, Role and Position Claims, and Intensity-Driven Pacing",
+      "domain": "game-development",
+      "category": "game-development/ai",
+      "description": "Design the layer above individual enemies: how a group shares out attacks, roles and positions so it pressures without piling on, and how a director reads player intensity to cycle build-up, peak, fade and relax with spawn rules the player never sees break — with the token maths tied to time-to-death and the adaptive parts held to disclosure and competitive-play limits.",
+      "techniques": [
+        "DS-01",
+        "NE-11",
+        "DP-07",
+        "CM-11"
+      ],
+      "keywords": [
+        "game-ai",
+        "squad-ai",
+        "ai-director",
+        "encounter-design",
+        "spawn-system",
+        "pacing",
+        "enemies-gang-up",
+        "no-time-to-breathe",
+        "enemies-spawn-behind-me"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-game-development/ai/ai_npc_decision_architecture.md",
+        "domain-game-development/level-design/level_blockout_and_pacing.md",
+        "domain-game-development/design/design_difficulty_combat_balancing.md"
       ],
       "has_frontmatter": true
     },
@@ -77563,6 +78298,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-game-development/audio/audio_adaptive_music_system.md",
+      "filename": "audio_adaptive_music_system.md",
+      "title": "Adaptive Music System Design — Vertical Layering, Horizontal Resequencing, Transition Matrix, and Repetition Budget",
+      "domain": "game-development",
+      "category": "game-development/audio",
+      "description": "Design how a game's score responds to play: map game states to a small set of music states, choose vertical layering, horizontal resequencing or a hybrid per state, specify every transition's sync point, bridge and stinger with its worst-case latency in seconds, add hysteresis so music does not thrash, and budget enough material that the longest-dwelt states do not loop audibly.",
+      "techniques": [
+        "DS-01",
+        "NE-11",
+        "OC-03",
+        "DP-07"
+      ],
+      "keywords": [
+        "game-audio",
+        "adaptive-music",
+        "interactive-music",
+        "vertical-layering",
+        "horizontal-resequencing",
+        "music-transitions",
+        "music-loops-too-much",
+        "music-cuts-awkwardly",
+        "combat-music-wont-stop"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-game-development/audio/audio_system_architecture.md",
+        "domain-game-development/audio/audio_gameplay_readability_mix.md",
+        "domain-game-development/level-design/level_blockout_and_pacing.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-game-development/audio/audio_system_architecture.md",
       "filename": "audio_system_architecture.md",
       "title": "Game Audio System Architecture",
@@ -77591,6 +78359,39 @@
         "domain-game-development/performance/performance_profiling_optimization.md",
         "domain-game-development/architecture/architecture_engine_selection.md",
         "domain-game-development/design/design_player_experience.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/audio/audio_gameplay_readability_mix.md",
+      "filename": "audio_gameplay_readability_mix.md",
+      "title": "Gameplay Readability Mix Pass — Information Priority, Loudness, Masking, Repetition, and Localisation",
+      "domain": "game-development",
+      "category": "game-development/audio",
+      "description": "Audit a game's actual mix for whether players can hear what they need to act on: rank every sound by the decision it informs, measure integrated loudness and true peak against a stated platform target, find where gameplay-critical cues are masked in level or frequency, check variation counts and randomisation on high-frequency sounds, test whether players can locate threats by ear, and close gaps with priority, ducking and accessibility options.",
+      "techniques": [
+        "RT-02",
+        "DS-02",
+        "QA-18",
+        "DS-06"
+      ],
+      "keywords": [
+        "game-audio",
+        "mixing",
+        "sound-design",
+        "audio-readability",
+        "spatial-audio",
+        "audio-accessibility",
+        "cant-hear-footsteps",
+        "game-too-loud",
+        "sounds-repetitive"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-game-development/audio/audio_system_architecture.md",
+        "domain-game-development/design/design_hud_and_game_feel_review.md",
+        "domain-game-development/ai/ai_perception_stealth_fairness.md"
       ],
       "has_frontmatter": true
     },
@@ -77801,6 +78602,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-game-development/economy/economy_currency_sink_faucet_audit.md",
+      "filename": "economy_currency_sink_faucet_audit.md",
+      "title": "Live Currency Sink/Faucet Audit — Ledger Reconciliation, Supply Growth, Distribution, and Targeted Fixes",
+      "domain": "game-development",
+      "category": "game-development/economy",
+      "description": "Audit a live game currency from telemetry: reconcile faucets and sinks against observed money supply to expose logging gaps or exploits, measure net injection, sink ratio and weekly supply growth against a target, check who holds the money and who pays the sinks, attribute growth to specific sources, and propose fixes with projected effect, provenance tags on every number, and a re-measure date instead of a single big nerf.",
+      "techniques": [
+        "NE-11",
+        "RT-06",
+        "RT-23",
+        "QA-02"
+      ],
+      "keywords": [
+        "game-economy",
+        "currency-sinks",
+        "faucets",
+        "inflation",
+        "live-ops",
+        "economy-telemetry",
+        "gold-is-worthless",
+        "prices-keep-rising",
+        "players-hoarding-currency"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-game-development/economy/economy_system_design.md",
+        "domain-game-development/economy/economy_liveops_monetization_ethics.md",
+        "domain-data-analytics/analysis-and-sql/analytics_metric_movement_investigation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-game-development/economy/economy_liveops_monetization_ethics.md",
       "filename": "economy_liveops_monetization_ethics.md",
       "title": "Live-Ops Calendar and Monetization Ethics Review",
@@ -77947,6 +78781,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-game-development/graphics/graphics_art_technical_budget.md",
+      "filename": "graphics_art_technical_budget.md",
+      "title": "Art Direction to Technical Budget — Per-Asset-Class Triangle, Texture, Material and VFX Budgets Derived from Platform Limits",
+      "domain": "game-development",
+      "category": "game-development/graphics",
+      "description": "Turn an art direction and a platform's memory and frame limits into budgets artists can build to before content exists: name where fidelity matters most, compute texture memory per asset class from resolution, compression and mips, set triangle counts per LOD with screen-size switch points, cap materials per asset so draw calls fit, set texel density and VFX overdraw rules, and check the scene totals against the platform with headroom — distinct from optimising a pipeline that is already over budget.",
+      "techniques": [
+        "NE-11",
+        "DS-02",
+        "DP-06",
+        "RT-23"
+      ],
+      "keywords": [
+        "technical-art",
+        "asset-budgets",
+        "texture-memory",
+        "lod",
+        "draw-calls",
+        "texel-density",
+        "how-many-polygons",
+        "art-wont-fit-in-memory",
+        "setting-art-budgets"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-game-development/performance/performance_rendering_optimization.md",
+        "domain-game-development/performance/performance_frame_budget_analysis.md",
+        "domain-game-development/graphics/graphics_lighting_strategy.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-game-development/graphics/graphics_lighting_strategy.md",
       "filename": "graphics_lighting_strategy.md",
       "title": "Game Lighting Strategy & Optimization",
@@ -78036,6 +78903,39 @@
         "domain-game-development/level-design/level_procedural_generation.md",
         "domain-game-development/design/design_core_loop_analysis.md",
         "domain-creative-writing/fiction/writing_pacing_and_tension_management.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/level-design/level_telemetry_flow_analysis.md",
+      "filename": "level_telemetry_flow_analysis.md",
+      "title": "Level Flow and Pacing Analysis from Telemetry — Funnel, Intended-vs-Observed Beat Chart, Hotspots, and Cleared Hypotheses",
+      "domain": "game-development",
+      "category": "game-development/level-design",
+      "description": "Analyse a playable level from position traces and events: build the section funnel with quits, compare observed median time per beat with the designed beat chart, compute path efficiency, dwell hotspots and death clusters, separate confusion from difficulty from intended exploration, clean instrumentation artefacts, record the hypotheses checked and cleared, and set retest targets for each fix.",
+      "techniques": [
+        "RT-06",
+        "NE-11",
+        "QA-04",
+        "QA-24"
+      ],
+      "keywords": [
+        "level-design",
+        "game-telemetry",
+        "heatmaps",
+        "player-flow",
+        "pacing-analysis",
+        "funnel-analysis",
+        "players-quit-this-level",
+        "players-get-lost",
+        "level-takes-too-long"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-game-development/level-design/level_blockout_and_pacing.md",
+        "domain-game-development/testing/testing_playtest_protocol_synthesis.md",
+        "domain-game-development/design/design_difficulty_combat_balancing.md"
       ],
       "has_frontmatter": true
     },
@@ -78161,6 +79061,72 @@
         "domain-game-development/multiplayer/multiplayer_netcode_architecture.md",
         "domain-game-development/multiplayer/multiplayer_matchmaking_lobby.md",
         "domain-game-development/architecture/architecture_state_machine_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/narrative/narrative_branching_state_management.md",
+      "filename": "narrative_branching_state_management.md",
+      "title": "Campaign-Wide Branching Narrative and State Management — Flag Registry, Combinatorial Scope, Convergence, and Payoff Ledger",
+      "domain": "game-development",
+      "category": "game-development/narrative",
+      "description": "Govern the narrative state of a whole game rather than one quest: inventory every flag in a registry with owner, scope, set and read sites, compute how many variants each scene's reads multiply into, collapse that with derived tiers, additive inserts and convergence, keep a ledger of every choice's acknowledgement and payoff, plan pairwise test coverage, and keep old saves valid when flags are added.",
+      "techniques": [
+        "DS-01",
+        "NE-11",
+        "OC-03",
+        "QA-10"
+      ],
+      "keywords": [
+        "narrative-design",
+        "branching-narrative",
+        "narrative-state",
+        "flag-registry",
+        "storylets",
+        "save-compatibility",
+        "choices-forgotten-later",
+        "too-many-endings",
+        "story-bugs-after-patch"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-game-development/narrative/narrative_quest_and_dialogue_design.md",
+        "domain-game-development/architecture/architecture_save_system.md",
+        "domain-game-development/testing/testing_automated_game_testing.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-game-development/narrative/narrative_environmental_storytelling.md",
+      "filename": "narrative_environmental_storytelling.md",
+      "title": "Environmental Storytelling Plan — What Happened Here, Clue Redundancy, Discovery Layers, and the Comprehension Test",
+      "domain": "game-development",
+      "category": "game-development/narrative",
+      "description": "Plan or review how a space tells its story without dialogue: write the backstory as ordered events, decide which events the environment must carry, stage each as a vignette with clues, the inference the player should draw and the layer it sits on, give every load-bearing inference at least three independent clues, check sightlines and attention from the player's real approach, keep vignettes consistent with quest state, and test comprehension without leading questions.",
+      "techniques": [
+        "DT-01",
+        "DS-01",
+        "RT-05",
+        "QA-02"
+      ],
+      "keywords": [
+        "narrative-design",
+        "environmental-storytelling",
+        "level-art",
+        "worldbuilding",
+        "vignettes",
+        "lore-delivery",
+        "players-miss-the-story",
+        "too-many-notes",
+        "show-dont-tell"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-game-development/narrative/narrative_quest_and_dialogue_design.md",
+        "domain-game-development/level-design/level_blockout_and_pacing.md",
+        "domain-creative-writing/fiction/writing_worldbuilding_framework.md"
       ],
       "has_frontmatter": true
     },
@@ -78805,6 +79771,39 @@
         "domain-health-wellness/nutrition/nutrition_eating_pattern_audit.md",
         "domain-productivity/home-life/home_meal_plan_week.md",
         "domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-health-wellness/sleep-recovery/sleep_shift_work_and_jet_lag_timing_plan.md",
+      "filename": "sleep_shift_work_and_jet_lag_timing_plan.md",
+      "title": "Shift-Work and Jet-Lag Sleep Timing Plan — Light, Sleep Windows, Naps, and Caffeine Timed to a Roster or a Time-Zone Change",
+      "domain": "health-wellness",
+      "category": "health-wellness/sleep-recovery",
+      "description": "Plan sleep timing for a healthy adult whose clock is being pushed around — rotating or night shifts, or travel across three or more time zones: a drowsy-driving and sleep-disorder route first, then a strategy chosen by run length or trip length, sleep windows and naps placed on the actual roster or itinerary, light sought and avoided by direction, caffeine cut-offs, a days-off or return transition, and a two-week or trip-length experiment. No melatonin, sleep-aid, stimulant, or medication-timing advice; insomnia routes to a clinician.",
+      "techniques": [
+        "QA-08",
+        "OC-08",
+        "DS-06",
+        "QA-20"
+      ],
+      "keywords": [
+        "health-wellness",
+        "shift-work",
+        "night-shift",
+        "jet-lag",
+        "circadian-rhythm",
+        "light-timing",
+        "tired-after-night-shift",
+        "cant-sleep-after-flying",
+        "rotating-shifts-sleep"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-health-wellness/sleep-recovery/sleep_routine_and_environment_audit.md",
+        "domain-health-wellness/foundations/wellness_readiness_and_red_flag_screen.md",
+        "domain-psychology/client-self-use/coping-by-concern/clientself_sleep_cbt_i_sleep_restriction_calculator.md"
       ],
       "has_frontmatter": true
     },
@@ -90035,6 +91034,72 @@
         "domain-hr-management/hiring/hr_job_description_writer.md",
         "domain-hr-management/performance-reviews/hr_reviewer_approach_guide.md",
         "domain-hr-management/people-ops/hr_performance_improvement_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/onboarding/hr_onboarding_program_audit.md",
+      "filename": "hr_onboarding_program_audit.md",
+      "title": "Onboarding Program Audit — Early Attrition, Time to Productivity, and the Leading Indicators That Explain Them",
+      "domain": "hr-management",
+      "category": "hr-management/onboarding",
+      "description": "Audit whether an organisation's employee onboarding works across many hires: metric definitions fixed before the data is opened, early attrition computed only on cohorts old enough to count, time to productivity on a role-specific milestone with not-yet-reached hires kept in, leading indicators (day-one readiness, written 90-day bar, 1:1 adherence, 30-day survey) cross-tabbed by team, small-sample intervals instead of bare percentages, a gaming check, and two or three owned changes with a re-measure date. Refuses slices by protected characteristic without counsel.",
+      "techniques": [
+        "DS-02",
+        "RT-06",
+        "QA-04",
+        "QA-21"
+      ],
+      "keywords": [
+        "onboarding-audit",
+        "early-attrition",
+        "time-to-productivity",
+        "new-hire-retention",
+        "people-analytics",
+        "onboarding-metrics",
+        "new-hires-keep-quitting",
+        "is-our-onboarding-working",
+        "slow-ramp-up"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-hr-management/onboarding/hr_onboarding_thirty_sixty_ninety.md",
+        "domain-hr-management/people-ops/hr_engagement_survey_design.md",
+        "domain-hr-management/people-ops/hr_exit_interview.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-hr-management/onboarding/hr_preboarding_first_week_plan.md",
+      "filename": "hr_preboarding_first_week_plan.md",
+      "title": "Preboarding and First-Week Plan — From Offer Accepted to the End of Week One, Backward-Scheduled With Owners",
+      "domain": "hr-management",
+      "category": "hr-management/onboarding",
+      "description": "Plan the window between an accepted offer and the end of a new hire's first week: equipment, access and payroll backward-scheduled from the start date by lead time with an owner each, a contact plan that answers logistics without asking for unpaid pre-start work, jurisdiction-flagged paperwork, a neutral accommodations question, an hour-by-hour day one, a first week with one real finishable task, and a T−2 readiness check with fallbacks — handing off to the 30/60/90.",
+      "techniques": [
+        "DT-01",
+        "OC-03",
+        "DS-36",
+        "DD-07"
+      ],
+      "keywords": [
+        "preboarding",
+        "first-day",
+        "first-week",
+        "new-hire-logistics",
+        "provisioning",
+        "day-one-readiness",
+        "new-hire-starts-monday",
+        "laptop-not-ready",
+        "what-to-do-on-first-day"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-hr-management/onboarding/hr_onboarding_thirty_sixty_ninety.md",
+        "domain-hr-management/onboarding/hr_onboarding_program_audit.md",
+        "domain-legal/employment-labor/legal_employment_offer_and_separation_package.md"
       ],
       "has_frontmatter": true
     },
@@ -117014,6 +118079,73 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-operations/project-delivery/ops_project_closeout_and_lessons_learned.md",
+      "filename": "ops_project_closeout_and_lessons_learned.md",
+      "title": "Project Closeout and Lessons Learned — Acceptance, Handover, Commercial Close, a Variance Account That Sums, and Lessons That Change an Artifact",
+      "domain": "operations",
+      "category": "operations/project-delivery",
+      "description": "Close a finished non-software project properly: deliverables accepted against the definition of done with a dated snag list, ownership handed to operations with warranties and manuals, every vendor account and open commitment closed, a plan-versus-actual account of schedule and cost whose causes add up to the variance, and lessons learned that are each tied to an owner and to the template, checklist or estimating record they change.",
+      "techniques": [
+        "QA-08",
+        "RT-05",
+        "RT-09",
+        "DS-40"
+      ],
+      "keywords": [
+        "project-closeout",
+        "lessons-learned",
+        "handover",
+        "punch-list",
+        "variance-analysis",
+        "vendor-closeout",
+        "wrap-up-a-project",
+        "what-went-wrong-on-the-project",
+        "loose-ends-after-event"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-operations/project-delivery/ops_non_software_project_plan.md",
+        "domain-operations/project-delivery/ops_schedule_recovery_plan.md",
+        "domain-decision-making/documentation/decisiondoc_after_action_report.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-operations/project-delivery/ops_schedule_recovery_plan.md",
+      "filename": "ops_schedule_recovery_plan.md",
+      "title": "Schedule Recovery Plan — Re-Forecast the Slip, Then Buy Back Days Cheapest-First on the Critical Path",
+      "domain": "operations",
+      "category": "operations/project-delivery",
+      "description": "Recover a fixed-date non-software project that is running late: re-forecast the finish from remaining work at the observed rate rather than from percent spent, find the current critical path, price every recovery option (fast-track, crash, defer scope, remove waits, move the date) in cost per day saved, apply them cheapest-first while recomputing the path after each, and take a dated sponsor decision with a trigger for moving the date.",
+      "techniques": [
+        "NE-11",
+        "RT-07",
+        "DS-06",
+        "QA-02",
+        "NE-10"
+      ],
+      "keywords": [
+        "schedule-recovery",
+        "critical-path",
+        "crashing",
+        "fast-tracking",
+        "re-baseline",
+        "cost-of-delay",
+        "project-running-late",
+        "behind-schedule",
+        "will-we-make-the-date"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-operations/project-delivery/ops_non_software_project_plan.md",
+        "domain-specialized-fields/professional-services/proserv_fixed_fee_overrun_diagnosis.md",
+        "domain-risk/risk_register_builder.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-operations/quality-safety/ops_job_hazard_analysis.md",
       "filename": "ops_job_hazard_analysis.md",
       "title": "Job Hazard Analysis (JHA / JSA) — Task Steps, Hazards, Risk Rating, and Controls Chosen by the Hierarchy of Controls",
@@ -130809,6 +131941,72 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-product-management/templates/prd_change_request_record.md",
+      "filename": "prd_change_request_record.md",
+      "title": "PRD Change Request Record — A Mid-Build Scope Change Stated as a Delta, Priced, Decided by the Right Person, and Written Back Into the Spec",
+      "domain": "product-management",
+      "category": "product-management/templates",
+      "description": "Handle a request to add, change or remove a requirement after the PRD is agreed: state the change as a delta against the spec version and its acceptance criteria, estimate its effect on effort, date, outcome metric, other teams and reversibility, lay out accept-and-move, accept-and-trade, defer and reject options, route the decision by a pre-agreed authority rule, and record a versioned PRD amendment with a notify list and a cumulative-churn check that triggers a re-plan.",
+      "techniques": [
+        "DD-10",
+        "RT-07",
+        "QA-09",
+        "CM-09"
+      ],
+      "keywords": [
+        "scope-change",
+        "change-request",
+        "prd-amendment",
+        "scope-creep",
+        "trade-off",
+        "change-control",
+        "someone-wants-to-add-a-feature",
+        "requirements-changed-mid-sprint",
+        "stop-scope-creep"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-product-management/templates/prd_one_pager_with_acceptance_criteria.md",
+        "domain-decision-making/documentation/decisiondoc_log_entry.md",
+        "domain-product-management/prompts/product_delivery_sprint_planner.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-product-management/templates/prd_one_pager_with_acceptance_criteria.md",
+      "filename": "prd_one_pager_with_acceptance_criteria.md",
+      "title": "PRD One-Pager — A Right-Sized Spec for a Small Feature, With Testable Acceptance Criteria",
+      "domain": "product-management",
+      "category": "product-management/templates",
+      "description": "Write a one-page product spec for a feature one team can ship in a sprint or two: a sizing gate that sends large, irreversible or cross-team work to the full PRD, a problem with evidence, one outcome metric and a guardrail with baselines, explicit non-goals, and user stories whose acceptance criteria are binary Given/When/Then checks covering the edge, error, empty and permission cases — plus blocking open questions with owners.",
+      "techniques": [
+        "DP-14",
+        "DD-02",
+        "CM-03",
+        "DP-24"
+      ],
+      "keywords": [
+        "prd",
+        "one-pager",
+        "acceptance-criteria",
+        "given-when-then",
+        "feature-spec",
+        "non-goals",
+        "small-feature-spec",
+        "write-requirements-quickly",
+        "how-do-we-know-its-done"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-product-management/templates/prd_template.md",
+        "domain-product-management/prompts/product_create_prd.md",
+        "domain-product-management/prompts/product_user_story_splitting.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-product-management/templates/prd_template.md",
       "filename": "prd_template.md",
       "title": "Product Requirements Document (PRD) Template",
@@ -140902,6 +142100,72 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-prompt-engineering/prompt-optimization/llm_ops_failure_cluster_prioritizer.md",
+      "filename": "llm_ops_failure_cluster_prioritizer.md",
+      "title": "Eval Failure Clustering and Fix Prioritiser — From a Pile of Failed Outputs to a Ranked Backlog, by Lever",
+      "domain": "prompt-engineering",
+      "category": "prompt-engineering/prompt-optimization",
+      "description": "Turn one eval run's failures into a ranked fix backlog: open-code each failure by the first thing that went wrong, group the notes into defined clusters, audit for grader and label errors before blaming the prompt, weight clusters by frequency, severity and production share, assign each to its lever (prompt, examples, format, context, tool, model, decomposition, or the eval itself) with a quick probe, and hand only the prompt-shaped clusters to the iteration loop.",
+      "techniques": [
+        "AG-11",
+        "OC-11",
+        "DS-06",
+        "QA-12"
+      ],
+      "keywords": [
+        "error-analysis",
+        "failure-clustering",
+        "eval-results",
+        "open-coding",
+        "label-errors",
+        "fix-prioritization",
+        "too-many-failures-where-to-start",
+        "is-it-the-prompt-or-the-model",
+        "eval-score-low-what-now"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-prompt-engineering/debugging/debug_failure_mode_taxonomy.md",
+        "domain-prompt-engineering/prompt-optimization/llm_ops_eval_driven_prompt_iteration.md",
+        "domain-AI-ML/model-evaluation-validation/mleval_error_analysis_slicing.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-prompt-engineering/prompt-optimization/llm_ops_eval_driven_prompt_iteration.md",
+      "filename": "llm_ops_eval_driven_prompt_iteration.md",
+      "title": "Eval-Driven Prompt Iteration Loop — Fixed Dev Set, Sealed Test Set, One Hypothesis per Round, and a Stop Rule",
+      "domain": "prompt-engineering",
+      "category": "prompt-engineering/prompt-optimization",
+      "description": "Run a multi-round prompt optimisation loop that cannot fool itself: frozen model and scorer configuration, a measured noise band from repeated baseline runs, one written hypothesis per round tested on the whole dev set, acceptance only above the noise band with no protected-case regressions and within the token budget, a round log counting cases fixed and broken, overfitting guards against case-specific rules, a single look at a sealed test set, and a plateau rule that hands off to non-prompt levers.",
+      "techniques": [
+        "MP-02",
+        "DD-06",
+        "QA-07",
+        "QA-11"
+      ],
+      "keywords": [
+        "prompt-optimization",
+        "eval-driven-development",
+        "hill-climbing",
+        "dev-test-split",
+        "overfitting",
+        "noise-band",
+        "prompt-keeps-getting-tweaked",
+        "is-my-prompt-change-actually-better",
+        "when-to-stop-tuning"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-prompt-engineering/evaluation/regression/regression_ab_test_runner_prompt.md",
+        "domain-prompt-engineering/evaluation/eval-datasets/dataset_holdout_split_designer.md",
+        "domain-prompt-engineering/prompt-optimization/llm_ops_failure_cluster_prioritizer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-prompt-engineering/prompt-optimization/llm_ops_prompt_optimization.md",
       "filename": "llm_ops_prompt_optimization.md",
       "title": "Prompt Optimization and Engineering",
@@ -142858,6 +144122,39 @@
       "updated": "",
       "related_prompts": [],
       "has_frontmatter": false
+    },
+    {
+      "path": "domain-prompt-engineering/utilities/prompt_template_placeholder_audit.md",
+      "filename": "prompt_template_placeholder_audit.md",
+      "title": "Prompt Template Placeholder Audit — Undeclared, Unused, Unfilled, Brace-Colliding, and Injection-Exposed Variables",
+      "domain": "prompt-engineering",
+      "category": "prompt-engineering/utilities",
+      "description": "Audit an existing prompt template, or a library of them, for placeholder defects before they ship: the syntax each renderer actually uses, placeholders in the text versus variables passed at every call site, literal braces that collide with the syntax, leftover human placeholders, how each sentence reads when a value is empty, which slots carry user or third-party text and whether they are delimited and declared data, and a strict-render plus leftover-pattern check that fails loudly instead of sending a broken prompt.",
+      "techniques": [
+        "DT-05",
+        "IPC-08",
+        "IPC-14",
+        "IPC-05"
+      ],
+      "keywords": [
+        "prompt-templates",
+        "template-variables",
+        "placeholder-audit",
+        "jinja",
+        "str-format",
+        "prompt-injection",
+        "prompt-has-leftover-brackets",
+        "variable-not-filled-in",
+        "template-breaks-in-production"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-prompt-engineering/prompt-creation/creation_user_prompt_template_designer.md",
+        "domain-prompt-engineering/evaluation/adversarial/adv_prompt_injection_test_set.md",
+        "domain-prompt-engineering/prompt-improvement/improve_promotion_to_production.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-psy-ops/case-studies-taxonomies/psyops_historical_operation_case_study.md",

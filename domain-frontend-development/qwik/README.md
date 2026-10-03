@@ -1,19 +1,21 @@
 # Qwik Prompts
 
 **Category:** Frontend Development / Qwik
-**Prompts:** 1
+**Prompts:** 3
 
 ---
 
 ## Overview
 
-Production-grade prompts for Qwik development, focused on its defining feature: resumability instead of hydration. The coverage centers on `$`-boundaries (how the optimizer splits code into lazy-loadable segments), serialization (what can safely cross a boundary and survive resume), lazy execution, and judging where resumability genuinely pays off versus adds complexity. Prompts describe the model and flag version-specific `$` APIs and config keys for verification.
+Production-grade prompts for Qwik development, focused on its defining feature: resumability instead of hydration. The coverage centers on `$`-boundaries (how the optimizer splits code into lazy-loadable segments), serialization (what can safely cross a boundary and survive resume), lazy execution, and judging where resumability genuinely pays off versus adds complexity — plus Qwik City server data flow (route loaders, actions, server functions, middleware, caching) and reactive-state correctness (signals vs stores, `track()`, computed vs tasks, server-first task execution). Prompts describe the model and flag version-specific `$` APIs and config keys for verification.
 
 ## Prompts
 
 | Prompt | Description | Difficulty |
 |--------|-------------|------------|
 | [frontend_qwik_resumability.md](frontend_qwik_resumability.md) | Audit `$`-boundaries, serialization of state/handlers, eager-execution leaks, and where resumability helps vs adds tax; verify SSR/streaming and routing don't force client re-execution | Advanced |
+| [frontend_qwik_city_loaders_actions.md](frontend_qwik_city_loaders_actions.md) | Review Qwik City routes: loaders vs client fetching, loader output exposure, actions and `server$` as public endpoints (validation, authorisation), `<Form>` progressive enhancement, middleware coverage, cache headers | Advanced |
+| [frontend_qwik_reactive_state_tasks.md](frontend_qwik_reactive_state_tasks.md) | Symptom-led review of signals, stores, `useTask$`/`useComputed$`/`useResource$`: in-place mutation, missing `track()`, derive-via-task, server-run tasks touching `window`, lost `noSerialize` values, async races | Advanced |
 
 ## Usage Examples
 

@@ -1,13 +1,13 @@
 # Testing Prompts
 
 **Category:** Frontend Development / Testing
-**Prompts:** 2
+**Prompts:** 3
 
 ---
 
 ## Overview
 
-Production-grade prompts for frontend testing covering Jest unit testing patterns and Playwright end-to-end testing.
+Production-grade prompts for frontend testing covering Jest unit testing patterns, Playwright end-to-end testing, and the API mocking strategy shared across test layers.
 
 ## Prompts
 
@@ -15,6 +15,7 @@ Production-grade prompts for frontend testing covering Jest unit testing pattern
 |--------|-------------|------------|
 | [frontend_testing_jest.md](frontend_testing_jest.md) | Comprehensive Jest testing patterns including mocking, async testing, and organization | Intermediate |
 | [frontend_testing_playwright.md](frontend_testing_playwright.md) | Playwright E2E testing with page objects, fixtures, and CI/CD integration | Intermediate |
+| [frontend_testing_api_mocking_strategy.md](frontend_testing_api_mocking_strategy.md) | One network-level mock layer across unit, component, Storybook, dev and E2E; handlers typed and fixtures validated against the API contract; unhandled requests fail; error-state coverage; which journeys stay real | Intermediate |
 
 ## Usage Examples
 
@@ -33,6 +34,9 @@ Use `frontend_testing_playwright.md` for:
 - Test fixtures and data management
 - Visual regression testing
 - CI/CD pipeline integration
+
+### API Mocking Strategy
+Use `frontend_testing_api_mocking_strategy.md` when tests pass but production breaks on API shape changes, or the same endpoint is mocked several different ways.
 
 ---
 

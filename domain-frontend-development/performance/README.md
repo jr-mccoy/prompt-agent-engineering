@@ -1,13 +1,13 @@
 # Performance Prompts
 
 **Category:** Frontend Development / Performance
-**Prompts:** 2
+**Prompts:** 3
 
 ---
 
 ## Overview
 
-Production-grade prompts for frontend performance optimization covering Core Web Vitals and JavaScript bundle size analysis.
+Production-grade prompts for frontend performance optimization covering Core Web Vitals, JavaScript bundle size analysis, and triage of real-user (field) Core Web Vitals regressions.
 
 ## Prompts
 
@@ -15,6 +15,7 @@ Production-grade prompts for frontend performance optimization covering Core Web
 |--------|-------------|------------|
 | [frontend_performance_core_web_vitals.md](frontend_performance_core_web_vitals.md) | Analyze and optimize LCP, INP, and CLS for improved user experience | Intermediate |
 | [frontend_performance_bundle_optimization.md](frontend_performance_bundle_optimization.md) | Reduce JavaScript bundle size through code splitting and dependency management | Advanced |
+| [frontend_performance_field_vitals_regression.md](frontend_performance_field_vitals_regression.md) | Triage a field CWV regression: confirm beyond noise and CrUX lag, mix-vs-rate decomposition, localise by template and LCP/INP sub-part, correlate with deploys/flags/tags, verify in RUM | Advanced |
 
 ## Usage Examples
 
@@ -31,6 +32,12 @@ Use `frontend_performance_bundle_optimization.md` for:
 - Implementing code splitting
 - Optimizing tree shaking
 - Setting up bundle size monitoring
+
+### Field Regression Triage
+Use `frontend_performance_field_vitals_regression.md` for:
+- Deciding whether a RUM/CrUX drop is real or a traffic-mix change
+- Finding the template, device class and sub-part that regressed
+- Tying the regression to a release, flag or third-party change
 
 ---
 

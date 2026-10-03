@@ -10,6 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Coverage Wave 9: depth in thin subfolders (39 prompts, 15 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **Frontend (13):** animation, Qwik, Remix (including the React Router v7 migration), SolidJS, plus one each in Astro, forms, performance, testing and TypeScript.
+  - **Game development (9):** AI, audio, narrative, economy, graphics and level design.
+  - **Creative writing (6):** poetry, creative nonfiction, publishing career and songwriting.
+  - **Single-prompt folders (11):** PM templates, HR onboarding, finance options, prompt optimisation and utilities, operations project delivery, and sleep timing.
+  - **Duplicate sweep:** none dropped. Ten suggested topics were re-angled because existing prompts already covered them.
+  - **Routing:**
+    - case-191 to case-205 added. Five of them check that pre-existing prompts keep their queries, and all five do.
+    - scope@1 is 84.6% over 205 cases; kind@1 is back to 100%.
+    - Case 185 slipped one rank to the new "sink/faucet" economy prompt.
 - **Coverage Wave 8: second set of absent subjects (36 prompts, 13 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
   - **Software engineering (11):** security operations (4), a new `data-engineering/` folder (5, design and review only; tool how-to stays in the skills), and cloud bill spikes and commitment sizing (2).
   - **Frontend (5):** design systems (3) and accessibility beyond components (2): documents and slides, and organisational programs and VPATs.

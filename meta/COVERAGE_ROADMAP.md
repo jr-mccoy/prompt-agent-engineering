@@ -1,6 +1,7 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-10-03:** **Waves 1–8 shipped; Waves 9–10 planned (§6).**
+**Status as of 2026-10-03:** **Waves 1–9 shipped; Wave 10 planned (§6).**
+- **Wave 9 (2026-10-03):** 39 prompts deepening thin subfolders in frontend, game development, creative writing and seven single-prompt folders, plus 15 routing cases (§6).
 - **Wave 8 (2026-10-03):** 36 prompts on the second set of absent subjects (security operations, data engineering, FinOps, design systems, accessibility beyond components, ML for science, dementia care, DIY, cooking, special-education disputes, dating) and the first part of biblical-studies Phase 3C, plus 13 routing cases (§6).
 - **Wave 7 (2026-10-03):** 46 prompts finishing the parenting caregiver folders, public administration, personal-development and negotiation Wave 2 items, institution-side student success, maintenance and reliability, and professional-services firm operations, plus 16 routing cases (§6).
 - **Wave 6 (2026-10-02):** 48 prompts filling documented-but-unbuilt promises (parenting, policy, the operations / data-analytics / health-wellness Wave 2 lists) and six absent subjects, plus 15 routing regression cases and a CI repair (§6).
@@ -831,12 +832,42 @@ disagreement after a decision rather than a first request.
 (an undecided §7 proposal), and biblical-studies Phase 3C's pastoral-counseling and
 Jewish–Christian dialogue items.
 
-### Wave 9: depth in thin subfolders — planned (~45 prompts)
+### Wave 9: depth in thin subfolders — shipped (39 prompts, 15 cases, 2026-10-03)
 
-- `domain-frontend-development`: bring `animation`, `qwik`, `remix`, `solidjs` to 3 each; +1 each to `astro`, `forms`, `performance`, `testing`, `typescript`.
-- `domain-game-development`: bring `ai`, `audio`, `narrative` to 3; +1 each to `economy`, `graphics`, `level-design`.
-- `domain-creative-writing`: `poetry`, `creative-nonfiction`, `publishing-career`, `songwriting`.
-- Single-prompt subfolders: PM `templates`, HR `onboarding`, finance `options`, prompt-engineering `prompt-optimization` and `utilities`, operations `project-delivery`, health-wellness `sleep-recovery`.
+Each new prompt had to do a different job from the one or two already in its
+subfolder. Where a suggested topic was already covered, the agent picked the real
+gap instead; nothing was dropped.
+
+| Domain | Subfolder: added | Re-angled because already covered |
+|---|---|---|
+| `frontend-development` (13) | `animation/` motion system design, motion-safety audit; `qwik/` City loaders/actions, reactive state and tasks; `remix/` React Router v7 migration, sessions/auth/caching; `solidjs/` SolidStart data/SSR, control flow and components; `astro/` rendering modes and server islands; `forms/` multi-step wizard state; `performance/` field Core Web Vitals regression; `testing/` API mocking strategy; `typescript/` API contract typing | Remix revalidation and error boundaries (`frontend_remix_data_loading`), Solid reactivity pitfalls, Astro hydration (`frontend_astro_islands_architecture`), visual regression (`testing_visual_regression`), strict-mode migration (`frontend_typescript_type_safety_audit`) |
+| `game-development` (9) | `ai/` stealth perception fairness, squad tactics and encounter director; `audio/` adaptive music, gameplay-readability mix; `narrative/` branching state management, environmental storytelling; `economy/` currency sink/faucet audit; `graphics/` art-to-technical budget; `level-design/` telemetry flow analysis | — |
+| `creative-writing` (6) | `poetry/` meter, scansion and fixed forms; chapbook and collection ordering; `creative-nonfiction/` personal-essay reflection and the turn; ethics of writing about real people; `publishing-career/` self- vs traditional publishing; `songwriting/` co-writing sessions and splits | melody and prosody (`writing_song_structure_lyric_revision`) |
+| Single-prompt folders (11) | `product-management/templates/` PRD one-pager, PRD change-request record; `hr-management/onboarding/` preboarding and first week, onboarding program audit; `finance/options/` covered call and cash-secured put; `prompt-engineering/prompt-optimization/` eval-driven iteration, failure-cluster prioritiser; `utilities/` template placeholder audit; `operations/project-delivery/` schedule recovery, closeout and lessons learned; `health-wellness/sleep-recovery/` shift-work and jet-lag timing (readiness gate; no sleep-aid advice) | the first-90-days plan (`hr_onboarding_thirty_sixty_ninety`), the decision log (`decisiondoc_log_entry`), the regression-diff reviewer (`improve_prompt_diff_explainer`) |
+
+**Dropped as duplicates:** none.
+
+**Routing after Wave 9** (`case-191`–`case-205` added). Five cases target
+*pre-existing* prompts in the deepened subfolders, to check that the new siblings
+did not take their queries. All five still rank their target first.
+
+| | Before (190 cases) | After (205 cases) |
+|---|---|---|
+| R@1 / R@3 / R@5 | 73.2 / 82.7 / 85.8% | 75.7 / 84.3 / 87.1% |
+| scope@1 / scope@3 / kind@1 (router) | 83.8 / 93.5 / 97.7% | 84.6 / 93.5 / 100% |
+
+- **Earlier cases.** Cases 058 (rank 2 → 1) and 164 (rank 4 → 3) improved.
+  Case 185 (dripping faucet) slipped from rank 2 to 3: the new economy prompt is a
+  "sink/faucet" audit, which is that subject's standard term, so it was left as
+  is. Case 093 ("onboarding", ambiguous) swapped between two HR onboarding prompts
+  with no change in scope or status.
+- **New cases:** 14 of 15 reach an acceptable scope first, and 12 of the 13 task
+  cases rank their target first. Misses: 200 (self- vs traditional publishing,
+  rank 4) and 203 (waking at 3am, route: the top hit is a learning prompt; it was
+  wrong before Wave 9 too).
+- **Leakage controls:** the same as Waves 7–8. Two targets carry tags
+  overlapping a query's wording (the audio mix and branching-state prompts). Every
+  Wave 9 file was saved before the query file was written.
 
 ### Wave 10: agentic-resource and technique hygiene — planned
 

@@ -1,19 +1,21 @@
 # SolidJS Prompts
 
 **Category:** Frontend Development / SolidJS
-**Prompts:** 1
+**Prompts:** 3
 
 ---
 
 ## Overview
 
-Production-grade prompts for SolidJS development, focused on its defining feature: fine-grained reactivity with no Virtual DOM. The coverage centers on the reactivity mental model — signals, stores, derivations/memos, and effects — and the common pitfalls developers hit when they carry a React "re-render on state change" model into Solid's run-once-component world. Prompts describe concepts and flag version-specific API names for verification.
+Production-grade prompts for SolidJS development, focused on its defining feature: fine-grained reactivity with no Virtual DOM. The coverage centers on the reactivity mental model — signals, stores, derivations/memos, and effects — and the common pitfalls developers hit when they carry a React "re-render on state change" model into Solid's run-once-component world — plus the component layer (list and conditional primitives, prop forwarding and defaults, children resolution, context ownership, boundaries) and SolidStart data loading and SSR (queries, route preload, server functions, actions, hydration safety, request isolation). Prompts describe concepts and flag version-specific API names for verification.
 
 ## Prompts
 
 | Prompt | Description | Difficulty |
 |--------|-------------|------------|
 | [frontend_solidjs_reactivity_patterns.md](frontend_solidjs_reactivity_patterns.md) | Audit signals, stores, memos, and effects for correct fine-grained reactivity; catch destructuring breaks, derive-via-effect, missing cleanup, and store-update mistakes | Advanced |
+| [frontend_solidjs_control_flow_components.md](frontend_solidjs_control_flow_components.md) | Review the component layer: `<For>` vs `<Index>` by data shape, `<Show>`/`<Switch>`/`<Dynamic>`, `splitProps`/`mergeProps`, `children()` helper, context lost after `await`, ErrorBoundary/Suspense placement | Intermediate |
+| [frontend_solidjs_solidstart_data_ssr.md](frontend_solidjs_solidstart_data_ssr.md) | Review SolidStart data flow: cached queries and route preload, Suspense placement, `"use server"` functions and actions as public endpoints, revalidation scope, hydration mismatches, module-level state leaking across SSR requests | Advanced |
 
 ## Usage Examples
 

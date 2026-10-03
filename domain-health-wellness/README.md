@@ -1,10 +1,10 @@
 # Domain: Health & Wellness (Healthy Adults — Training, Eating, Sleep)
 
-Twelve prompts for a **healthy adult looking after their own body**: starting to train,
+Thirteen prompts for a **healthy adult looking after their own body**: starting to train,
 returning after a break, building toward a first event, staying strong and steady in
 later life, working on mobility, reading a training log, auditing and structuring what
-they eat, drinking and training through heat, and fixing the routine and bedroom
-factors that cost them sleep. The person
+they eat, drinking and training through heat, fixing the routine and bedroom
+factors that cost them sleep, and timing sleep around night shifts and time-zone travel. The person
 holds the prompt; the subject is their own training, eating, and sleep.
 
 The domain is built around one idea: **a precise gate, then genuinely useful content.**
@@ -67,7 +67,8 @@ profile says *not yet*, nothing is produced except the route to the right person
 - **Nutrition** — an eating pattern audit, a meal structure planner, and a hydration and
   heat plan, all STRONG-GUARD, expressed in portions, thirst, and the person's own
   cuisine, never in calories or electrolyte doses.
-- **Sleep & recovery** — a routine and environment audit with a two-week experiment.
+- **Sleep & recovery** — a routine and environment audit with a two-week experiment, and a
+  shift-work and jet-lag timing plan (sleep windows, naps, light, caffeine cut-offs).
 
 ## Directory map
 
@@ -76,7 +77,7 @@ profile says *not yet*, nothing is produced except the route to the right person
 | `foundations/` | `wellness_` | `wellness_readiness_and_red_flag_screen.md` (**entry gate**), `wellness_sustainable_routine_designer.md` |
 | `fitness/` | `fitness_` | `fitness_beginner_training_plan.md`, `fitness_program_progression_review.md`, `fitness_endurance_event_build_plan.md`, `fitness_mobility_and_flexibility_routine.md`, `fitness_return_after_break_plan.md`, `fitness_active_ageing_plan.md` |
 | `nutrition/` | `nutrition_` | `nutrition_eating_pattern_audit.md` (**STRONG-GUARD**), `nutrition_meal_structure_planner.md` (**STRONG-GUARD**), `nutrition_hydration_and_heat_plan.md` (**STRONG-GUARD**) |
-| `sleep-recovery/` | `sleep_` | `sleep_routine_and_environment_audit.md` |
+| `sleep-recovery/` | `sleep_` | `sleep_routine_and_environment_audit.md`, `sleep_shift_work_and_jet_lag_timing_plan.md` |
 
 ## Quick routing
 
@@ -94,6 +95,7 @@ profile says *not yet*, nothing is produced except the route to the right person
 | "What should I eat around training, in food I actually cook?" | `nutrition/nutrition_meal_structure_planner.md` |
 | "How much should I drink?" / "A heat wave is coming and I have a race" | `nutrition/nutrition_hydration_and_heat_plan.md` |
 | "I sleep but wake up tired" / "does my coffee matter?" | `sleep-recovery/sleep_routine_and_environment_audit.md` |
+| "I work nights and I'm wrecked on my days off" / "flying to Tokyo next week" | `sleep-recovery/sleep_shift_work_and_jet_lag_timing_plan.md` |
 
 ## How the prompts compose
 
