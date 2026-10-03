@@ -3,8 +3,8 @@
     "generated": "2026-10-03",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 6039,
-    "artifacts_with_frontmatter": 5111,
+    "total_indexed_artifacts": 6075,
+    "artifacts_with_frontmatter": 5147,
     "artifacts_without_frontmatter": 928,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 6039,
-    "prompts_with_frontmatter": 5111,
+    "total_prompts": 6075,
+    "prompts_with_frontmatter": 5147,
     "prompts_without_frontmatter": 928
   },
   "prompts": [
@@ -45432,6 +45432,171 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-biblical-studies/academic-writing/biblical_academic_annotated_bibliography_builder.md",
+      "filename": "biblical_academic_annotated_bibliography_builder.md",
+      "title": "Annotated Bibliography Builder for Biblical Studies — Verified Entries Only, Annotations From What You Read",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/academic-writing",
+      "description": "Build an annotated bibliography for a biblical-studies paper or thesis from sources the student has actually located and read: gate every entry on verification status, format citations to the required style from user-supplied details only, draft annotations from the student's own notes (position, method, evidence, verses handled, usefulness), and quarantine any entry that cannot be located — never inventing a source, author, title, date, page number, or quotation.",
+      "techniques": [
+        "QA-05",
+        "IPC-07",
+        "IPC-08",
+        "DP-04",
+        "OC-12"
+      ],
+      "keywords": [
+        "annotated-bibliography",
+        "citation-integrity",
+        "anti-fabrication",
+        "source-evaluation",
+        "sbl-style",
+        "academic-writing",
+        "make-annotated-bibliography",
+        "check-my-sources-are-real"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-education-teaching/learner/writing/learn_annotated_bibliography_helper.md",
+        "domain-biblical-studies/theology-research/biblical_commentary_evaluation.md",
+        "domain-research-academic/research_manuscript_fact_check_reconciler.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/academic-writing/biblical_academic_literature_review_plan.md",
+      "filename": "biblical_academic_literature_review_plan.md",
+      "title": "Biblical Studies Literature Review Plan — History of Research, History of Interpretation, and Discipline Databases",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/academic-writing",
+      "description": "Plan the history-of-research (Forschungsgeschichte) section or chapter for a biblical-studies paper or thesis on a passage, motif, or problem: separate the history of modern research from the history of interpretation, choose the discipline's indexes and source types, build search terms in English, the original language, and other research languages, set inclusion rules and an organising scheme by method or position, and define the extraction record — routing every specific title to the student's own search and verification.",
+      "techniques": [
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "QA-04",
+        "OC-12"
+      ],
+      "keywords": [
+        "literature-review",
+        "history-of-research",
+        "history-of-interpretation",
+        "reception-history",
+        "research-databases",
+        "academic-writing",
+        "find-what-scholars-have-said",
+        "where-to-start-bible-research"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-research-academic/research_literature_review_plan.md",
+        "domain-biblical-studies/theology-research/biblical_theological_research_bibliography.md",
+        "domain-biblical-studies/theology-research/biblical_historical_theology_development.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/academic-writing/biblical_academic_peer_review_self_check.md",
+      "filename": "biblical_academic_peer_review_self_check.md",
+      "title": "Biblical Studies Paper Self-Check — Review Your Own Draft as a Referee Would Before Submitting",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/academic-writing",
+      "description": "Review your own biblical-studies paper or chapter the way a seminar examiner or journal referee in the field would: score it on anchored scales for thesis, handling of the text and variants, original-language claims, context, engagement with the history of research and interpretation, fair treatment of alternative readings, and citation integrity; locate every finding to a page and paragraph; separate blocking from minor problems; and permit a clean pass where the draft earns one.",
+      "techniques": [
+        "DP-03",
+        "QA-01",
+        "QA-02",
+        "QA-05",
+        "QA-27"
+      ],
+      "keywords": [
+        "self-review",
+        "peer-review",
+        "exegetical-fallacies",
+        "paper-revision",
+        "citation-check",
+        "academic-writing",
+        "check-my-paper-before-submitting",
+        "revise-seminary-paper"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-biblical-studies/theology-research/biblical_exegetical_fallacy_detector.md",
+        "domain-science/peer-review/science_peer_review_self_check.md",
+        "domain-biblical-studies/academic-writing/biblical_academic_exegesis_paper_scaffold.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/academic-writing/biblical_academic_thesis_dissertation_workshop.md",
+      "filename": "biblical_academic_thesis_dissertation_workshop.md",
+      "title": "Biblical Studies Thesis & Dissertation Workshop — Question, Contribution, Method, Languages, and Feasibility",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/academic-writing",
+      "description": "Workshop a ThM, MA, MPhil, or doctoral topic in biblical studies before committing: sharpen a broad interest into a researchable question about a text, test the contribution claim against the history of research the student must still document, choose and justify a method (historical-critical, literary, social-scientific, reception-historical, canonical, textual), check language and source access, and score candidate questions on anchored scales — without inventing the scholarship the gap claim depends on.",
+      "techniques": [
+        "ST-01",
+        "RT-02",
+        "DP-03",
+        "DP-07",
+        "QA-02"
+      ],
+      "keywords": [
+        "thesis",
+        "dissertation",
+        "research-question",
+        "history-of-research",
+        "method-selection",
+        "seminary",
+        "pick-thesis-topic-bible",
+        "is-my-thesis-original"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-research-academic/research_thesis_dissertation_structure.md",
+        "domain-research-academic/research_question_formulation.md",
+        "domain-biblical-studies/academic-writing/biblical_academic_literature_review_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/academic-writing/biblical_academic_exegesis_paper_scaffold.md",
+      "filename": "biblical_academic_exegesis_paper_scaffold.md",
+      "title": "Exegesis Paper Scaffold — Thesis, Text, Translation, Context, History of Interpretation, and a Word Budget",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/academic-writing",
+      "description": "Turn a seminary or university exegesis assignment on one passage into a section-by-section paper scaffold — a provisional exegetical thesis, a text-critical section built on the user's own apparatus work, a working translation with decisions flagged, historical and literary context, verse-by-verse analysis, history of interpretation, and theological synthesis — with a word budget per section, every verse referenced by address, and every source, datum, and quotation left for the student to supply and verify.",
+      "techniques": [
+        "ST-01",
+        "DT-01",
+        "RT-02",
+        "QA-05",
+        "IT-24"
+      ],
+      "keywords": [
+        "exegesis-paper",
+        "academic-writing",
+        "textual-criticism",
+        "history-of-interpretation",
+        "original-languages",
+        "seminary",
+        "write-bible-paper-for-class",
+        "how-to-structure-exegetical-paper"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-biblical-studies/exegesis-interpretation/biblical_passage_exegesis_workflow.md",
+        "domain-biblical-studies/original-languages/biblical_language_textual_criticism_primer.md",
+        "domain-biblical-studies/academic-writing/biblical_academic_peer_review_self_check.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-biblical-studies/apologetics-engagement/biblical_apologetics_biblical_contradictions.md",
       "filename": "biblical_apologetics_biblical_contradictions.md",
       "title": "Addressing Alleged Biblical Contradictions — Honest Engagement",
@@ -47263,6 +47428,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-biblical-studies/ministry-contexts/biblical_ministry_age_graded_story_retelling.md",
+      "filename": "biblical_ministry_age_graded_story_retelling.md",
+      "title": "Age-Graded Bible Story Retelling — One Story for Ages 3–5, 6–8, and 9–11, Faithful to the Text",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/ministry-contexts",
+      "description": "Retell one Bible narrative at three developmental levels (ages 3–5, 6–8, 9–11) from the user's supplied translation text: map the story's beats by verse address, decide per age what is kept, simplified, or left for later, tag every line as text or teacher framing, audit for invented details and popular embellishments presented as Scripture, and flag hard content for teacher preview under the child-safety note.",
+      "techniques": [
+        "ST-01",
+        "RT-02",
+        "QA-01",
+        "DP-04",
+        "IPC-07"
+      ],
+      "keywords": [
+        "childrens-ministry",
+        "bible-story-retelling",
+        "age-graded",
+        "preschool",
+        "elementary",
+        "faithful-retelling",
+        "tell-bible-story-to-kids",
+        "same-story-different-ages"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-biblical-studies/ministry-contexts/biblical_ministry_kids_bible_lesson_builder.md",
+        "domain-childrens-writing/craft-tools/childrens_age_reading_level_calibrator.md",
+        "domain-biblical-studies/exegesis-interpretation/biblical_narrative_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md",
       "filename": "biblical_ministry_care_conversation_foundations.md",
       "title": "Biblical Care Conversation Foundations — Encouragement, Not Counseling",
@@ -47654,6 +47852,39 @@
         "domain-biblical-studies/study-methods-teaching/biblical_lesson_plan_builder.md",
         "domain-biblical-studies/sermon-devotional/biblical_sermon_series_planner.md",
         "domain-biblical-studies/sermon-devotional/biblical_sermon_illustration_finder.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/ministry-contexts/biblical_ministry_special_needs_inclusive_teaching.md",
+      "filename": "biblical_ministry_special_needs_inclusive_teaching.md",
+      "title": "Special-Needs Inclusive Bible Teaching — Sensory, Cognitive, Communication, and Physical Access for Children's Ministry",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/ministry-contexts",
+      "description": "Adapt a children's Bible lesson so disabled and neurodivergent children can take part fully: build universal design defaults first, then add sensory, cognitive, communication (including AAC), and physical accommodations from what parents have shared, keep the story faithful to the text, handle healing and disability passages without implying a child needs fixing, and apply child-safety rules for buddies, personal care, medical plans, restraint, and leaving the room — without diagnosing anyone.",
+      "techniques": [
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "ED-04",
+        "DP-04"
+      ],
+      "keywords": [
+        "childrens-ministry",
+        "disability-inclusion",
+        "special-needs",
+        "neurodiversity",
+        "sensory-accommodation",
+        "accessible-teaching",
+        "include-child-with-disability-in-sunday-school",
+        "adapt-bible-lesson-for-autistic-child"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-biblical-studies/ministry-contexts/biblical_ministry_kids_bible_lesson_builder.md",
+        "domain-discipleship/session-and-lesson/discipleship_session_accessibility_design.md",
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_sensory_at_home_toolkit.md"
       ],
       "has_frontmatter": true
     },
@@ -75273,6 +75504,74 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-frontend-development/accessibility/frontend_accessibility_documents_slides.md",
+      "filename": "frontend_accessibility_documents_slides.md",
+      "title": "Accessible Documents and Slides — Triage, Source-First Remediation, PDF Tagging, Reading Order, Alt Text, Contrast, and Captions for Published Files",
+      "domain": "frontend-development",
+      "category": "frontend-development/accessibility",
+      "description": "Audit and fix the PDFs, Word files, and slide decks an organisation publishes: triage the document estate by reach and obligation, fix at the authoring source rather than patching PDFs, check tags, reading order, alt text, tables, contrast, language and titles against WCAG-for-documents and PDF/UA, caption and transcribe embedded media, and confirm with a screen-reader read-through because checker passes are not proof.",
+      "techniques": [
+        "DS-32",
+        "QA-18",
+        "QA-24",
+        "DS-06"
+      ],
+      "keywords": [
+        "document-accessibility",
+        "pdf-ua",
+        "tagged-pdf",
+        "alt-text",
+        "reading-order",
+        "accessible-slides",
+        "captions",
+        "make-pdf-accessible",
+        "screen-reader-cant-read-our-report",
+        "accessible-powerpoint"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/accessibility/frontend_accessibility_wcag_audit.md",
+        "domain-frontend-development/accessibility/frontend_accessibility_screen_reader.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/accessibility/frontend_accessibility_program_governance.md",
+      "filename": "frontend_accessibility_program_governance.md",
+      "title": "Organisational Accessibility Program — Maturity Baseline, Policy, Conformance Reports (VPAT/ACR), Risk-Tiered Audit Cadence, Procurement Gates, and Role-Based Training",
+      "domain": "frontend-development",
+      "category": "frontend-development/accessibility",
+      "description": "Design or assess an organisation-wide digital accessibility program rather than a single product audit: baseline maturity by dimension, write a policy with a named standard, owners and an exceptions route, produce Accessibility Conformance Reports (VPAT-based) that are backed by test evidence, set audit and regression cadence by risk tier, gate procurement on validated vendor ACRs, train by role, and track metrics that show whether barriers are actually being removed.",
+      "techniques": [
+        "ST-47",
+        "DS-32",
+        "DP-05",
+        "AG-12"
+      ],
+      "keywords": [
+        "accessibility-program",
+        "vpat",
+        "accessibility-conformance-report",
+        "accessibility-policy",
+        "accessible-procurement",
+        "accessibility-training",
+        "wcag",
+        "customer-asking-for-vpat",
+        "make-whole-company-accessible",
+        "accessibility-compliance-plan"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/accessibility/frontend_accessibility_wcag_audit.md",
+        "domain-legal/regulatory-compliance/legal_compliance_program_gap_analysis.md",
+        "domain-operations/supply-chain-procurement/ops_rfp_procurement_package.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-frontend-development/accessibility/frontend_accessibility_screen_reader.md",
       "filename": "frontend_accessibility_screen_reader.md",
       "title": "Screen Reader Testing Guide",
@@ -75751,6 +76050,105 @@
         "domain-frontend-development/build-tooling/frontend_build_micro_frontends_module_federation.md",
         "domain-frontend-development/performance/frontend_performance_bundle_optimization.md",
         "domain-frontend-development/nextjs/frontend_nextjs_performance.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/design-direction/frontend_design_system_audit.md",
+      "filename": "frontend_design_system_audit.md",
+      "title": "Design System Audit — Component Inventory, Duplication Clusters, Token Coverage, and Measured Adoption",
+      "domain": "frontend-development",
+      "category": "frontend-development/design-direction",
+      "description": "Audit an existing design system as a product that teams either adopt or route around: inventory library and product-local components, cluster duplicates and separate gap-driven duplication from neglect, measure token coverage per property, compute adoption and version currency per consuming team with stated formulas, and return a prioritised, confidence-rated plan.",
+      "techniques": [
+        "RT-02",
+        "AG-12",
+        "QA-24",
+        "DS-06"
+      ],
+      "keywords": [
+        "design-system",
+        "component-inventory",
+        "design-tokens",
+        "adoption-metrics",
+        "ui-consistency",
+        "component-library",
+        "teams-not-using-our-components",
+        "too-many-button-styles",
+        "is-our-design-system-working"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/design-direction/frontend_design_token_architecture.md",
+        "domain-frontend-development/design-direction/frontend_design_system_component_governance.md",
+        "domain-frontend-development/styling/frontend_styling_tailwind_design_system.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/design-direction/frontend_design_system_component_governance.md",
+      "filename": "frontend_design_system_component_governance.md",
+      "title": "Design System Component Governance — API Review Rules, What Counts as Breaking, Deprecation Policy, and the Contribution Model",
+      "domain": "frontend-development",
+      "category": "frontend-development/design-direction",
+      "description": "Set the rules that keep a shared component library coherent as many teams use and extend it: an API review checklist, a written definition of breaking change for UI components (props, defaults, DOM, visuals, behaviour, tokens), a deprecation policy with removal criteria and codemods, a contribution model with tiered paths and decision rights, and health metrics that show whether governance helps or blocks.",
+      "techniques": [
+        "QA-09",
+        "IT-22",
+        "DP-13",
+        "AG-12"
+      ],
+      "keywords": [
+        "design-system",
+        "component-api",
+        "semantic-versioning",
+        "deprecation-policy",
+        "contribution-model",
+        "design-system-governance",
+        "component-library",
+        "teams-keep-building-their-own",
+        "upgrade-broke-our-app"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/design-direction/frontend_design_system_audit.md",
+        "domain-software-engineering/api/api_versioning_strategy.md",
+        "domain-frontend-development/typescript/frontend_typescript_component_typing.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-frontend-development/design-direction/frontend_design_token_architecture.md",
+      "filename": "frontend_design_token_architecture.md",
+      "title": "Design Token Architecture — Primitive, Semantic, and Component Tiers, Theme Axes, Naming Grammar, and Contrast-Checked Pairs",
+      "domain": "frontend-development",
+      "category": "frontend-development/design-direction",
+      "description": "Design or restructure a design-token system so themes, brands, and modes can change without touching components: separate primitive, semantic, and component tiers with reference rules, fix a naming grammar, model theme axes without combinatorial explosion, validate every semantic foreground/background pair for contrast in every theme, and stress-test the architecture against the next brand or mode.",
+      "techniques": [
+        "ST-05",
+        "DP-04",
+        "QA-02",
+        "CM-02"
+      ],
+      "keywords": [
+        "design-tokens",
+        "theming",
+        "dark-mode",
+        "semantic-tokens",
+        "naming-conventions",
+        "white-label",
+        "design-system",
+        "add-dark-mode",
+        "rebrand-without-rewriting"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-frontend-development/design-direction/frontend_design_system_audit.md",
+        "domain-frontend-development/styling/frontend_styling_css_architecture.md",
+        "domain-frontend-development/accessibility/frontend_accessibility_wcag_audit.md"
       ],
       "has_frontmatter": true
     },
@@ -126568,6 +126966,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-personal-development/prompts/relationships/relationships_dating_after_divorce.md",
+      "filename": "relationships_dating_after_divorce.md",
+      "title": "Dating Again After Divorce or a Long Relationship — Readiness, What You Actually Want Now, Pacing, and Where Your Children Fit",
+      "domain": "personal-development",
+      "category": "personal-development/relationships",
+      "description": "Help an adult returning to dating after divorce or a long relationship read their own readiness against observable signals rather than a time rule, turn the old relationship's lessons into a short ranked list of non-negotiables and preferences, choose the shape of relationship they want now, design a paced first two months of dating as a low-stakes experiment with a debrief after each date, and protect children's time and stability by routing the telling-the-children and co-parent questions to parenting resources.",
+      "techniques": [
+        "DS-01",
+        "DP-29",
+        "DP-11",
+        "QA-12"
+      ],
+      "keywords": [
+        "relationships",
+        "dating",
+        "divorce-recovery",
+        "readiness",
+        "values-clarification",
+        "single-again",
+        "dating-again-after-divorce",
+        "am-i-ready-to-date",
+        "back-on-the-apps-at-45"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-personal-development/prompts/life-transitions/lifetransition_post_breakup_rebuild.md",
+        "domain-parenting/caregiver-facing/divorce/parenting_divorce_new_partner_introduction_timing.md",
+        "domain-personal-development/prompts/relationships/relationships_early_dating_safety_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-personal-development/prompts/relationships/relationships_deepening_friendship.md",
       "filename": "relationships_deepening_friendship.md",
       "title": "Deepen One Pleasant-but-Shallow Friendship Without Forcing It",
@@ -126694,6 +127125,40 @@
         "domain-personal-development/prompts/relationships/relationships_network_cultivation_plan.md",
         "domain-personal-development/prompts/identity/identity_purpose_reignition.md",
         "domain-personal-development/prompts/agency/agency_stuck_diagnosis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-personal-development/prompts/relationships/relationships_early_dating_safety_plan.md",
+      "filename": "relationships_early_dating_safety_plan.md",
+      "title": "First Dates and Early Dating — Meeting Safely, Spotting Romance Scams and Coercion Early, and a Values Check That Isn't an Interview",
+      "domain": "personal-development",
+      "category": "personal-development/relationships",
+      "description": "Prepare an adult for meeting someone from an app or introduction: verify the person before meeting (video call, photo and story consistency), set a safety plan (public place, own transport, a friend with a check-in time and code word, control of drinks, private details held back), plan an easy conversation that still checks values, rate warning signs green/amber/red for romance-scam patterns (no video, quick love, a crisis then a money or investment request) and coercion (pushing past a no, jealousy, monitoring, isolation, pressure for photos), set stop signals, and route scams, sextortion, assault and abuse to reporting and safety resources.",
+      "techniques": [
+        "DS-26",
+        "DP-28",
+        "DP-13",
+        "CM-02",
+        "QA-12"
+      ],
+      "keywords": [
+        "relationships",
+        "dating",
+        "dating-safety",
+        "romance-scams",
+        "coercive-control",
+        "online-dating",
+        "first-date-nerves",
+        "is-my-match-a-scammer",
+        "meeting-someone-from-an-app"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-psy-ops/personal-defense/psyops_coercive_control_pattern_recognition.md",
+        "domain-legal/personal-self-advocacy/consumer-scams/legalprep_scam_fraud_report_preparer.md",
+        "domain-personal-development/prompts/relationships/relationships_dating_after_divorce.md"
       ],
       "has_frontmatter": true
     },
@@ -132403,6 +132868,40 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-productivity/home-life/home_dementia_home_safety_plan.md",
+      "filename": "home_dementia_home_safety_plan.md",
+      "title": "Dementia Home Safety and Daily-Routine Plan — Wandering, the Driving Conversation, Medications, the Stove, Falls, and When to Escalate",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Build a practical safety and routine plan for a person with dementia who still lives at home: rate each hazard area (wandering and getting lost, driving, medications, cooking and fire, falls, firearms and hazardous products, scams, time alone) green, amber or red against stated criteria, put a dated fix on every red, write a missing-person protocol with a 15-minute call rule, plan the driving conversation with a clinician or formal driving assessment as the decider, set a daily routine, and name the triggers that send the situation to clinicians, social services or a re-think of whether living at home still works.",
+      "techniques": [
+        "DP-28",
+        "DS-06",
+        "AG-19",
+        "CM-02",
+        "OC-03"
+      ],
+      "keywords": [
+        "dementia-care",
+        "home-safety",
+        "wandering",
+        "fall-prevention",
+        "medication-management",
+        "driving-retirement",
+        "aging-in-place",
+        "mom-keeps-leaving-stove-on",
+        "dad-with-dementia-still-driving"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-personal-development/major-decisions/personal_caring_for_aging_parent.md",
+        "domain-productivity/home-life/home_dementia_caregiver_communication.md",
+        "domain-productivity/home-life/home_family_caregiving_coordination.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-productivity/home-life/home_family_caregiving_coordination.md",
       "filename": "home_family_caregiving_coordination.md",
       "title": "Family Caregiving Coordination — Weekly Rota, Shared Expense Ledger, and Sibling Updates After the Care Decision",
@@ -132466,6 +132965,40 @@
         "domain-parenting/parenting_daily_routine_designer.md",
         "domain-parenting/parenting_transitions_and_warnings_protocol.md",
         "domain-productivity/deep-work/deepwork_chunk_project_to_calendar.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-productivity/home-life/home_diy_repair_triage.md",
+      "filename": "home_diy_repair_triage.md",
+      "title": "First-Time DIY Repair Triage — Can I Fix This Myself, What Will It Take, and When to Call a Licensed Pro",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Help a homeowner or renter with little repair experience sort each household problem into emergency now, call a licensed professional, DIY with care, or straightforward DIY — using hard stops that are never DIY (gas, electrical panel and service work, structural signs, suspected asbestos or lead paint, work at height on roofs, carbon-monoxide alarms), a cost-of-a-mistake test, permit, warranty and lease checks, and for each DIY item the skills, tools and shut-offs it needs; for each pro item, which trade to call and how to describe the problem.",
+      "techniques": [
+        "DP-28",
+        "DP-05",
+        "DS-26",
+        "DP-13",
+        "QA-12"
+      ],
+      "keywords": [
+        "home-repair",
+        "diy",
+        "homeowner",
+        "renter",
+        "when-to-hire-a-pro",
+        "home-safety",
+        "can-i-fix-this-myself",
+        "first-home-repairs",
+        "do-i-need-an-electrician"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-productivity/home-life/home_small_repair_walkthrough.md",
+        "domain-productivity/home-life/home_seasonal_maintenance_calendar.md",
+        "domain-productivity/home-life/home_appointment_prep.md"
       ],
       "has_frontmatter": true
     },
@@ -132567,6 +133100,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-productivity/home-life/home_learn_to_cook_progression.md",
+      "filename": "home_learn_to_cook_progression.md",
+      "title": "Learn-to-Cook Skill Progression — Food-Safety and Knife Basics, One Technique a Week, Deliberate Repetition, and Observable Can-Do Benchmarks",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Build an 8–10 week cooking skill progression for an adult beginner: a week-zero foundation in food safety (hand and board hygiene, fridge temperature, the two-hour rule, thermometer temperatures) and knife and fire safety, then one technique per week (knife cuts and eggs, heat control and sautéing, grains and pasta, roasting, searing and pan sauces, soups and braises, dressings and seasoning, cooking without a recipe), each practised by repeating one dish two or three times against an observable benchmark, sized to the person's kitchen, budget and evenings — without diet prescriptions.",
+      "techniques": [
+        "DS-26",
+        "DS-02",
+        "ST-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "cooking-skills",
+        "beginner-cooking",
+        "knife-skills",
+        "food-safety",
+        "home-cooking",
+        "skill-progression",
+        "learn-to-cook",
+        "cant-cook-anything",
+        "cooking-for-myself"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-productivity/home-life/home_meal_plan_week.md",
+        "domain-productivity/home-life/home_pantry_first_weeknight_cooking.md",
+        "domain-health-wellness/nutrition/nutrition_meal_structure_planner.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-productivity/home-life/home_medicare_insurance_enrollment_prep.md",
       "filename": "home_medicare_insurance_enrollment_prep.md",
       "title": "Medicare and Insurance Enrollment Prep — Documents, Questions, and a Verification Checklist Before You Choose",
@@ -132632,6 +133198,105 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-productivity/home-life/home_pantry_first_weeknight_cooking.md",
+      "filename": "home_pantry_first_weeknight_cooking.md",
+      "title": "Pantry-First Weeknight Cooking — Tonight's Dinner From What's Already in the Fridge, Use-First Triage, and a Three-Item Gap List",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Turn what is actually in the fridge, freezer and cupboard into tonight's dinner and the next two or three weeknights: triage ingredients by how soon they must be used (with food-safety discard rules), match them to flexible dinner templates (fried rice, frittata, grain bowl, pasta, soup, quesadilla or wrap, sheet-pan), keep each within the evening's real time, buy no more than three items to fill gaps, and grow a base pantry from what was missing — no diet prescriptions, allergies treated as hard constraints.",
+      "techniques": [
+        "DS-06",
+        "CM-02",
+        "DS-26",
+        "QA-01"
+      ],
+      "keywords": [
+        "weeknight-dinners",
+        "pantry-cooking",
+        "food-waste",
+        "leftovers",
+        "home-cooking",
+        "budget-cooking",
+        "what-can-i-make-with-what-i-have",
+        "nothing-to-eat-but-full-fridge",
+        "use-up-leftovers"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-productivity/home-life/home_meal_plan_week.md",
+        "domain-productivity/home-life/home_learn_to_cook_progression.md",
+        "domain-health-wellness/nutrition/nutrition_eating_pattern_audit.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-productivity/home-life/home_small_repair_walkthrough.md",
+      "filename": "home_small_repair_walkthrough.md",
+      "title": "Small Home Repair Walkthrough — Right Part, Shut-Offs, Step-by-Step With Checkpoints, Stop Signals, and Checking Your Work",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Plan one small, already-triaged household fix (running toilet, dripping faucet, clogged drain, drywall patch, re-caulking, sticking door, like-for-like light fixture or outlet swap with power verified off) as a walkthrough a beginner can follow: identify the exact part, list tools, locate and test the shut-off, write numbered steps with a checkpoint after each, name the stop signals that mean call a pro, and finish with a leak, function or electrical test plus a log entry.",
+      "techniques": [
+        "ST-02",
+        "DP-13",
+        "QA-01",
+        "OC-03"
+      ],
+      "keywords": [
+        "home-repair",
+        "diy",
+        "plumbing-basics",
+        "step-by-step",
+        "tools",
+        "home-maintenance",
+        "how-to-fix-running-toilet",
+        "fix-it-myself",
+        "first-time-repair"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-productivity/home-life/home_diy_repair_triage.md",
+        "domain-productivity/home-life/home_seasonal_maintenance_calendar.md",
+        "domain-written-advocacy/products-and-warranty/advocacy_warranty_claim_letter.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-productivity/home-life/home_dementia_caregiver_communication.md",
+      "filename": "home_dementia_caregiver_communication.md",
+      "title": "Talking With a Parent Who Has Dementia — Validation-Style Responses for Repeated Questions, Asking for Someone Who Has Died, Refusing Care, and Late-Day Agitation",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Give a family carer a situation-by-situation communication playbook for a parent or relative with diagnosed dementia — respond to the feeling behind repeated questions, answer requests for a spouse who has died without forcing them to re-grieve, step back and re-approach when care is refused, and shape the late afternoon around sundowning — with a phrase card the whole family uses and a red-flag list that sends sudden change, possible delirium, injury risk and medication questions to clinicians rather than treating them as a communication problem.",
+      "techniques": [
+        "AG-10",
+        "IT-22",
+        "DS-01",
+        "QA-20"
+      ],
+      "keywords": [
+        "dementia-care",
+        "caregiver-communication",
+        "validation-approach",
+        "sundowning",
+        "care-refusal",
+        "aging-parents",
+        "mom-keeps-asking-same-question",
+        "dad-asks-for-mum-who-died",
+        "parent-refuses-shower"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-psychology/populations/geriatric/psychology_geriatric_depression_vs_dementia.md",
+        "domain-psychology/client-self-use/specialty/clientself_caregiver_burnout_plan.md",
+        "domain-productivity/home-life/home_family_caregiving_coordination.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-productivity/home-life/home_travel_trip_planner.md",
       "filename": "home_travel_trip_planner.md",
       "title": "Trip Planner",
@@ -132690,6 +133355,40 @@
         "domain-productivity/reviews/reviews_weekly_systems_review.md",
         "domain-parenting/parenting_daily_routine_designer.md",
         "domain-productivity/bottlenecks/bottleneck_capture_triage_system_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-productivity/home-life/home_parent_cannot_live_alone_talk.md",
+      "filename": "home_parent_cannot_live_alone_talk.md",
+      "title": "When a Parent Can No Longer Live Alone — Planning the Sibling Pre-Talk, the Conversation With Your Parent, the Money Boundaries, and the Move",
+      "domain": "productivity",
+      "category": "productivity/home-life",
+      "description": "Plan the conversations and logistics once evidence suggests a parent can no longer safely live alone: build a dated evidence log, align siblings on facts before solutions, respect the parent's right to decide while they have capacity, open with their goals and offer options rather than an ultimatum, script responses to refusal and anger, keep the money conversation to facts and hand eligibility, asset, power-of-attorney and benefit questions to an elder-law attorney or financial adviser, and sequence the transition with a 30-day settling plan; distinct from choosing the arrangement itself, which is a decision prompt.",
+      "techniques": [
+        "RP-02",
+        "DP-29",
+        "GT-09",
+        "DP-11",
+        "QA-12"
+      ],
+      "keywords": [
+        "aging-parents",
+        "elder-care",
+        "family-meeting",
+        "sibling-alignment",
+        "care-transition",
+        "autonomy-and-safety",
+        "mom-cant-live-alone-anymore",
+        "how-to-talk-to-dad-about-moving",
+        "siblings-disagree-about-mom"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-personal-development/major-decisions/personal_caring_for_aging_parent.md",
+        "domain-personal-development/major-decisions/personal_care_facility_comparison.md",
+        "domain-productivity/home-life/home_moving_checklist.md"
       ],
       "has_frontmatter": true
     },
@@ -161560,6 +162259,110 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-science/ml-for-science/science_ml_interpretation_for_claims.md",
+      "filename": "science_ml_interpretation_for_claims.md",
+      "title": "Interpreting ML Models for Scientific Claims — What Feature Attributions, Saliency, and Learned Representations Can and Cannot Support",
+      "domain": "science",
+      "category": "science/ml-for-science",
+      "description": "Turn ML interpretability output (SHAP, permutation importance, saliency maps, attention, learned embeddings) into calibrated scientific claims: place each claim on a ladder from predictive to model-attribution to data-association to mechanistic, test attributions for stability, correlated-feature artefacts, Rashomon disagreement, and confound or shortcut learning, and state the experiment needed before any mechanistic claim is made.",
+      "techniques": [
+        "ST-01",
+        "RT-05",
+        "QA-02",
+        "QA-04",
+        "CM-02"
+      ],
+      "keywords": [
+        "ml-for-science",
+        "interpretability",
+        "feature-attribution",
+        "shortcut-learning",
+        "mechanistic-claims",
+        "saliency-maps",
+        "confounding",
+        "does-shap-prove-causation",
+        "what-did-the-model-learn",
+        "overclaiming-ml-results"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-AI-ML/feature-engineering/mlfeature_importance_analysis.md",
+        "domain-science/statistics/science_causal_inference_design.md",
+        "domain-science/computational/science_ml_for_science_validation_audit.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-science/ml-for-science/science_ml_project_scoping.md",
+      "filename": "science_ml_project_scoping.md",
+      "title": "ML Project Scoping for a Lab Dataset — Is ML Warranted, Is the Data Enough, and Where Will It Leak",
+      "domain": "science",
+      "category": "science/ml-for-science",
+      "description": "Before any model is trained on a lab or field dataset, decide whether machine learning is the right instrument for the scientific question or whether classical statistics answers it better, compute the effective sample size from the data's real units of independence, map batch and sample-level leakage and confounding risks, fix the baselines ML must beat, and state the go / redesign / stop criteria.",
+      "techniques": [
+        "ST-01",
+        "CM-03",
+        "NE-11",
+        "DP-13",
+        "QA-02"
+      ],
+      "keywords": [
+        "ml-for-science",
+        "project-scoping",
+        "effective-sample-size",
+        "batch-effects",
+        "data-leakage",
+        "baselines",
+        "classical-vs-ml",
+        "should-i-use-machine-learning",
+        "small-lab-dataset",
+        "reviewer-asked-why-ml"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-AI-ML/problem-framing-scoping/mlframe_is_this_ml_problem.md",
+        "domain-science/statistics/science_mixed_models_design.md",
+        "domain-science/computational/science_ml_for_science_benchmark_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-science/ml-for-science/science_ml_validation_split_design.md",
+      "filename": "science_ml_validation_split_design.md",
+      "title": "Validation Design for Scientific ML — Dependence-Aware Grouped, Temporal, and Spatial Splits, External Validation Tiers, and Unit-Level Uncertainty",
+      "domain": "science",
+      "category": "science/ml-for-science",
+      "description": "Design how an ML model used for a scientific claim will be validated: diagnose every dependence axis in the data (subject, batch, site, time, space, sequence or scaffold similarity), choose grouped, forward-chaining, spatially blocked, or similarity-clustered splits sized from that dependence, plan internal-to-external validation tiers that match the strength of the claim, resample uncertainty at the independent-unit level, and map the design to REFORMS / DOME / TRIPOD+AI reporting items.",
+      "techniques": [
+        "ST-01",
+        "ST-03",
+        "NE-11",
+        "QA-02",
+        "QA-04"
+      ],
+      "keywords": [
+        "ml-for-science",
+        "cross-validation",
+        "spatial-block-cv",
+        "grouped-split",
+        "external-validation",
+        "cluster-bootstrap",
+        "reporting-checklist",
+        "is-my-test-set-really-independent",
+        "model-works-in-our-lab-only"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-science/computational/science_ml_for_science_benchmark_design.md",
+        "domain-science/computational/science_ml_for_science_validation_audit.md",
+        "domain-AI-ML/classical-ml-modeling/mlmodel_cross_validation_design.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-science/peer-review/science_editorial_decision_drafter.md",
       "filename": "science_editorial_decision_drafter.md",
       "title": "Editorial Decision Drafter",
@@ -163854,6 +164657,40 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-software-engineering/analysis/security/security_detection_engineering_review.md",
+      "filename": "security_detection_engineering_review.md",
+      "title": "Detection Engineering Review — Detection-as-Code, ATT&CK Mapping, True/False-Positive Tuning, and Tested Detections",
+      "domain": "software-engineering",
+      "category": "analysis/security",
+      "description": "Review a team's security detections as engineered software: whether each rule lives in version control with a written strategy, maps honestly to the ATT&CK technique it actually observes, has a measured precision and alert volume, is tested by replaying the behaviour it claims to catch, and earns its place in an analyst's queue — then rank fixes by coverage gained per unit of alert load.",
+      "techniques": [
+        "RT-02",
+        "QA-10",
+        "QA-12",
+        "QA-21",
+        "QA-24"
+      ],
+      "keywords": [
+        "detection-engineering",
+        "detection-as-code",
+        "mitre-attack",
+        "siem-rules",
+        "alert-tuning",
+        "false-positive-rate",
+        "too-many-security-alerts",
+        "alerts-nobody-trusts",
+        "would-we-catch-an-attack"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-software-engineering/analysis/security/security_soc_alert_triage_runbook.md",
+        "domain-software-engineering/analysis/security/security_threat_hunting_plan.md",
+        "domain-AI-ML/agentic-ai-systems/aiagent_secops_autonomous_defense.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-software-engineering/analysis/security/security_llm_application_review.md",
       "filename": "security_llm_application_review.md",
       "title": "LLM Application Security Review",
@@ -163920,6 +164757,107 @@
         "security_vulnerability_analysis.md",
         "security_container_review.md",
         "../../devops/devops_cicd_pipeline_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-software-engineering/analysis/security/security_soc_alert_triage_runbook.md",
+      "filename": "security_soc_alert_triage_runbook.md",
+      "title": "SOC Alert Triage Runbook Design — Per-Detection Runbooks, Dispositions, Escalation, and Queue Health for an Engineering-Run Security On-Call",
+      "domain": "software-engineering",
+      "category": "analysis/security",
+      "description": "Design the triage layer for a security operations function staffed by engineers on rotation: a runbook template every detection must link to, a fixed disposition vocabulary, severity-based acknowledgement and triage clocks, an escalation hand-off into incident response, automated enrichment that saves analyst minutes, and queue-health metrics that feed tuning back to detection owners.",
+      "techniques": [
+        "RT-10",
+        "DS-06",
+        "DS-36",
+        "AG-12",
+        "QA-12"
+      ],
+      "keywords": [
+        "soc",
+        "alert-triage",
+        "security-on-call",
+        "runbook",
+        "incident-escalation",
+        "alert-enrichment",
+        "security-alerts-piling-up",
+        "who-handles-security-alerts",
+        "on-call-for-security"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-risk/risk_security_alert_triage_runbook.md",
+        "domain-AI-ML/agentic-ai-systems/aiagent_secops_autonomous_defense.md",
+        "domain-software-engineering/analysis/security/security_detection_engineering_review.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-software-engineering/analysis/security/security_threat_hunting_plan.md",
+      "filename": "security_threat_hunting_plan.md",
+      "title": "Threat Hunting Plan — Testable Hypotheses, Data Readiness, Bounded Hunts, and Graduating Findings into Detections",
+      "domain": "software-engineering",
+      "category": "analysis/security",
+      "description": "Plan a hypothesis-driven threat hunt in your own environment: turn a threat or gap into a falsifiable hypothesis, confirm the telemetry can actually answer it, bound the hunt in time and scope with a stop rule, record what was searched and cleared as well as what was found, and convert every result into a detection, a data-source fix, or an incident escalation.",
+      "techniques": [
+        "RT-05",
+        "RT-06",
+        "DP-13",
+        "QA-24"
+      ],
+      "keywords": [
+        "threat-hunting",
+        "hypothesis-driven-hunt",
+        "mitre-attack",
+        "security-telemetry",
+        "log-analysis",
+        "detection-backlog",
+        "are-we-already-hacked",
+        "look-for-hidden-attackers",
+        "what-should-we-search-logs-for"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-software-engineering/analysis/security/security_detection_engineering_review.md",
+        "domain-software-engineering/analysis/security/security_stride_threat_modeling.md",
+        "domain-software-engineering/analysis/security/security_soc_alert_triage_runbook.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-software-engineering/analysis/security/security_vulnerability_management_program.md",
+      "filename": "security_vulnerability_management_program.md",
+      "title": "Vulnerability Management Program — Asset Inventory, Risk-Based Prioritisation with Exploitability Signals, SLAs, Exceptions, and Metrics That Cannot Be Gamed",
+      "domain": "software-engineering",
+      "category": "analysis/security",
+      "description": "Design or audit the program that turns scanner output into fixed exposure: an asset inventory with owners and exposure, prioritisation that combines severity with exploitability evidence (exploit-prediction scores, known-exploited lists) and asset context instead of CVSS alone, remediation SLAs by priority tier, a time-boxed exception path with compensating controls, and metrics that measure risk reduced rather than tickets closed.",
+      "techniques": [
+        "DS-06",
+        "NE-11",
+        "DS-02",
+        "QA-21"
+      ],
+      "keywords": [
+        "vulnerability-management",
+        "risk-based-prioritization",
+        "exploit-prediction",
+        "known-exploited-vulnerabilities",
+        "remediation-sla",
+        "asset-inventory",
+        "patch-management",
+        "too-many-vulnerabilities",
+        "what-to-patch-first",
+        "scanner-backlog"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-software-engineering/analysis/security/security_dependency_vulnerability_analysis.md",
+        "domain-software-engineering/analysis/security/security_sbom_supply_chain_review.md",
+        "domain-risk/risk_acceptance_exception_memo.md"
       ],
       "has_frontmatter": true
     },
@@ -164800,6 +165738,39 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-software-engineering/cloud/cloud_bill_spike_investigation.md",
+      "filename": "cloud_bill_spike_investigation.md",
+      "title": "Cloud Bill Spike Investigation — Is It Real, Where Is It, and Is It Growth or an Anomaly?",
+      "domain": "software-engineering",
+      "category": "cloud",
+      "description": "Investigate a sudden rise in a cloud bill in a fixed order: rule out billing artefacts (data lag, amortisation views, credits ending, one-off purchases, commitments expiring), then decompose the increase by account or project, service, usage type or SKU, and resource or tag until one line explains most of it, and classify it as growth (unit cost flat, volume up), efficiency regression (unit cost up), or anomaly (spend with no matching demand) — ending with an owner, a containment step, and an estimate of the month-end impact.",
+      "techniques": [
+        "DD-03",
+        "RT-06",
+        "RT-09",
+        "RT-23"
+      ],
+      "keywords": [
+        "cloud-cost",
+        "cost-anomaly",
+        "finops",
+        "billing-data",
+        "usage-type-analysis",
+        "unit-cost",
+        "cloud-bill-jumped",
+        "unexpected-cloud-charges",
+        "why-did-costs-go-up"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-software-engineering/cloud/cloud_finops_cost_allocation.md",
+        "domain-software-engineering/cloud/cloud_cost_optimization.md",
+        "domain-data-analytics/analysis-and-sql/analytics_metric_movement_investigation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-software-engineering/cloud/cloud_cost_optimization.md",
       "filename": "cloud_cost_optimization.md",
       "title": "Cloud Cost Optimization Analysis",
@@ -164856,6 +165827,40 @@
       "difficulty": "",
       "updated": "2026-03-19",
       "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-software-engineering/cloud/cloud_commitment_rightsizing_plan.md",
+      "filename": "cloud_commitment_rightsizing_plan.md",
+      "title": "Commitment and Rightsizing Plan — Remove Waste, Rightsize, Then Commit to the Floor: Coverage, Break-Even Utilisation, Flexibility, and Laddered Purchases",
+      "domain": "software-engineering",
+      "category": "cloud",
+      "description": "Sequence cloud savings so commitments are bought against the usage that will still exist: remove idle waste and schedule non-production first, rightsize from percentile utilisation with stated exclusions, re-measure the hourly baseline, then size reserved-capacity or savings-plan commitments to the usage floor using break-even utilisation, choose the flexibility each workload's roadmap needs, ladder purchases so expiries are staggered, and stress-test the plan against planned migrations and demand loss.",
+      "techniques": [
+        "NE-11",
+        "NE-10",
+        "QA-02",
+        "DP-07"
+      ],
+      "keywords": [
+        "reserved-instances",
+        "savings-plans",
+        "committed-use-discounts",
+        "rightsizing",
+        "commitment-coverage",
+        "commitment-utilization",
+        "cloud-waste",
+        "lower-cloud-bill",
+        "paying-for-unused-servers",
+        "should-we-prepay-cloud"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-software-engineering/cloud/cloud_cost_optimization.md",
+        "domain-software-engineering/cloud/cloud_finops_cost_allocation.md",
+        "domain-software-engineering/cloud/cloud_bill_spike_investigation.md"
+      ],
       "has_frontmatter": true
     },
     {
@@ -176871,6 +177876,175 @@
       "has_frontmatter": false
     },
     {
+      "path": "domain-software-engineering/data-engineering/dataeng_data_downtime_postmortem.md",
+      "filename": "dataeng_data_downtime_postmortem.md",
+      "title": "Data Downtime Triage and Postmortem — Containing Bad or Late Data, Mapping the Blast Radius Through Lineage, Repairing, and Learning Why Detection Failed",
+      "domain": "software-engineering",
+      "category": "software-engineering/data-engineering",
+      "description": "Handle a data pipeline incident — data that is missing, late, duplicated, or wrong — from first report to closed postmortem: confirm and classify the failure, stop bad data spreading, find every downstream table, dashboard, and sync it reached through lineage, choose fix-forward or restore-and-backfill, tell affected consumers what was wrong and for which dates, then write a blameless postmortem that measures time-to-detect and asks why a consumer noticed before the checks did.",
+      "techniques": [
+        "RT-07",
+        "RT-09",
+        "DS-06",
+        "DS-40"
+      ],
+      "keywords": [
+        "data-incident",
+        "data-downtime",
+        "data-lineage",
+        "postmortem",
+        "root-cause-analysis",
+        "time-to-detect",
+        "dashboard-showed-wrong-numbers",
+        "report-data-is-late",
+        "who-used-the-bad-data"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-AI-ML/production-monitoring/mlmonitor_incident_postmortem_template.md",
+        "domain-engineering-workflows/workflows/engineering_postmortem_blueprint.md",
+        "domain-data-analytics/analysis-and-sql/analytics_metric_movement_investigation.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-software-engineering/data-engineering/dataeng_pipeline_design_review.md",
+      "filename": "dataeng_pipeline_design_review.md",
+      "title": "Data Pipeline Design Review — Idempotency, Safe Retries, Backfills, Late Data, and Exactly-Once Claims",
+      "domain": "software-engineering",
+      "category": "software-engineering/data-engineering",
+      "description": "Review a batch or streaming data pipeline design for correctness under failure: whether every task can be re-run without duplicating or losing rows, whether retries are safe end to end, whether the pipeline can be backfilled for any past interval, how late-arriving and out-of-order data are handled, and whether any 'exactly-once' claim holds across the source, the processor, and the sink — with each risk traced to a concrete failure scenario.",
+      "techniques": [
+        "DP-07",
+        "QA-09",
+        "IPC-09",
+        "QA-24"
+      ],
+      "keywords": [
+        "data-pipeline",
+        "idempotency",
+        "exactly-once",
+        "late-arriving-data",
+        "backfill",
+        "stream-processing",
+        "batch-etl",
+        "pipeline-duplicates-rows",
+        "safe-to-rerun-job",
+        "numbers-change-after-rerun"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-software-engineering/data-engineering/dataeng_incremental_load_backfill_plan.md",
+        "domain-software-engineering/data-engineering/dataeng_data_quality_test_strategy.md",
+        "domain-AI-ML/production-monitoring/mlmonitor_data_pipeline_health_audit.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-software-engineering/data-engineering/dataeng_data_quality_test_strategy.md",
+      "filename": "dataeng_data_quality_test_strategy.md",
+      "title": "Data Quality Test Strategy — What to Check at Which Layer, Block vs Warn, Who Owns Each Test, and Alerts People Act On",
+      "domain": "software-engineering",
+      "category": "software-engineering/data-engineering",
+      "description": "Design the data quality checks for a warehouse or lakehouse as a whole system: which of freshness, volume, schema, uniqueness, referential, validity, distribution and reconciliation checks belong at ingestion, staging, and published marts; which failures block publication and which only warn; who owns each test and its alert; and how to keep the test suite from becoming either silent or ignored.",
+      "techniques": [
+        "DD-03",
+        "DS-06",
+        "IPC-08",
+        "DS-02",
+        "QA-12"
+      ],
+      "keywords": [
+        "data-quality",
+        "data-tests",
+        "data-freshness",
+        "schema-checks",
+        "circuit-breaker",
+        "data-ownership",
+        "alert-routing",
+        "bad-data-in-dashboard",
+        "who-owns-this-table",
+        "catch-broken-data-early"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-AI-ML/data-for-ml/mldata_data_contract_design.md",
+        "domain-agentic-resources/skills/data-engineering/data-quality-frameworks/SKILL.md",
+        "domain-software-engineering/data-engineering/dataeng_data_downtime_postmortem.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-software-engineering/data-engineering/dataeng_dimensional_model_review.md",
+      "filename": "dataeng_dimensional_model_review.md",
+      "title": "Dimensional Model Review — Declared Grain, Fact Types, Slowly Changing Dimensions, Conformed Dimensions, and the Joins That Double-Count",
+      "domain": "software-engineering",
+      "category": "software-engineering/data-engineering",
+      "description": "Review a warehouse dimensional model (star schema or wide marts built from one) before analysts build on it: is each fact table's grain declared and enforced, are measures typed as additive, semi-additive or non-additive, does each dimension attribute use the right slowly-changing-dimension type for how history must be reported, are shared dimensions conformed across facts, and which joins fan out or drop rows — each finding backed by a check query.",
+      "techniques": [
+        "DT-05",
+        "QA-18",
+        "IPC-04",
+        "RT-05"
+      ],
+      "keywords": [
+        "dimensional-modeling",
+        "star-schema",
+        "fact-table-grain",
+        "slowly-changing-dimensions",
+        "conformed-dimensions",
+        "data-warehouse",
+        "reports-disagree-on-totals",
+        "double-counted-numbers",
+        "history-changed-in-old-reports"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-data-analytics/analysis-and-sql/analytics_sql_query_correctness_review.md",
+        "domain-software-engineering/analysis/database/database_data_modeling_review.md",
+        "domain-software-engineering/data-engineering/dataeng_data_quality_test_strategy.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-software-engineering/data-engineering/dataeng_incremental_load_backfill_plan.md",
+      "filename": "dataeng_incremental_load_backfill_plan.md",
+      "title": "Incremental Load and Backfill Plan — Choosing the Change-Capture Method, Handling Deletes and Late Updates, and Running a Backfill You Can Verify and Undo",
+      "domain": "software-engineering",
+      "category": "software-engineering/data-engineering",
+      "description": "Choose how a table loads incrementally (append by key, timestamp watermark with overlap, log-based change data capture, or periodic full snapshot) given how the source changes, deletes, and corrects records; then plan a backfill as an operation — scope, chunking, rate limits on the source, cost and duration estimate, a pilot chunk, per-chunk reconciliation, downstream rebuild order, and a rollback that does not depend on luck.",
+      "techniques": [
+        "QA-09",
+        "DP-11",
+        "GT-06",
+        "GT-11",
+        "NE-11"
+      ],
+      "keywords": [
+        "incremental-load",
+        "backfill",
+        "change-data-capture",
+        "watermark",
+        "merge-upsert",
+        "partition-overwrite",
+        "reload-historical-data",
+        "fix-past-data",
+        "pipeline-missed-days"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-software-engineering/data-engineering/dataeng_pipeline_design_review.md",
+        "domain-software-engineering/analysis/database/database_migration_strategy.md",
+        "domain-AI-ML/data-for-ml/mldata_schema_evolution_strategy.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-software-engineering/dotnet/dotnet_aspnet_middleware_di.md",
       "filename": "dotnet_aspnet_middleware_di.md",
       "title": "ASP.NET Core Middleware and Dependency Injection Review",
@@ -181883,6 +183057,40 @@
         "domain-written-advocacy/cross-cutting/advocacy_escalation_ladder_designer.md",
         "domain-written-advocacy/institutions-and-records/advocacy_regulator_complaint_drafter.md",
         "domain-legal/personal-self-advocacy/small-claims/legalprep_small_claims_case_preparation_organizer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-written-advocacy/institutions-and-records/advocacy_special_education_disagreement.md",
+      "filename": "advocacy_special_education_disagreement.md",
+      "title": "Special-Education Disagreement Letter — Put Your Disagreement With an IEP or Evaluation Decision in Writing, Ask for the Written Explanation, and Request an Independent Evaluation",
+      "domain": "written-advocacy",
+      "category": "advocacy",
+      "description": "[SELF-SUBMIT] Help a parent or carer draft THEIR OWN dated letter after a special-education decision they disagree with — an eligibility finding, a district evaluation, or a change to services, placement or minutes in a plan such as a US IEP — that quotes the decision verbatim, states the specific points of disagreement with their own observations, asks for the school's written explanation and the data it relied on, asks for the team to reconvene, and, where the district's OWN procedural-rights document describes it, requests an independent educational evaluation in that document's words. Screens for safety, formal dispute routes and deadlines first. Does NOT cite statute, state deadlines or entitlements, consent or refuse consent, assess the child, or predict the outcome; distinct from advocacy_school_written_request (first requests for assessment or support). Not legal or educational-psychology advice.",
+      "techniques": [
+        "IPC-07",
+        "CM-01",
+        "DS-21",
+        "CM-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "written-advocacy",
+        "self-advocacy",
+        "special-education",
+        "iep",
+        "independent-evaluation",
+        "self-submit",
+        "disagree-with-iep",
+        "school-cut-my-childs-services",
+        "school-says-not-eligible"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-03",
+      "related_prompts": [
+        "domain-written-advocacy/institutions-and-records/advocacy_school_written_request.md",
+        "domain-parenting/caregiver-facing/academics-skills/parenting_learning_concern_school_meeting.md",
+        "domain-written-advocacy/cross-cutting/advocacy_response_analyzer.md"
       ],
       "has_frontmatter": true
     },

@@ -9,14 +9,14 @@ Filing convention: `{folder-prefix}_{specific_function}.md` inside the relevant 
 ## Wave 1 Status — Shipped
 
 ```
-domain-personal-development/            174 prompts (current; 166 when Wave 1 shipped)
+domain-personal-development/            176 prompts (current; 166 when Wave 1 shipped)
 ├── prompts/
 │   ├── agency/                 18   (+2)   accountability-partner, project-scope-creep
 │   ├── goals/                  10   (+6)   annual-planning, conflict-resolver, anti-goals, values→goals, stall-diagnostic, scope-right-sizer
 │   ├── habits/                 10   (+4)   identity-based, implementation-intentions, tracking-system, temptation-bundling
 │   ├── identity/               13   (+4)   strengths-inventory, narrative-reframe, authenticity-audit, memento-mori
 │   ├── resilience/             11   (+5)   rejection-recovery, criticism-processing, confidence-rebuild, uncertainty-tolerance, comeback-after-dip
-│   ├── relationships/          11   (+5)   friends-as-adult, deepening, difficult-family, apology, loneliness-diagnostic
+│   ├── relationships/          13   (+7)   friends-as-adult, deepening, difficult-family, apology, loneliness-diagnostic, dating-after-divorce, early-dating-safety
 │   ├── thinking/               12   (+3)   decision-journal, mental-models-application, assumption-surfacing
 │   ├── (productivity/)          0   (+3)   removed in the 2026-08 reorg — all 8 prompts moved into domain-productivity/
 │   ├── solo-dev/               10   (+5)   pricing-confidence, deciding-alone, accountability, sustainable-pace, isolation-motivation

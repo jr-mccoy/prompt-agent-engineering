@@ -16,6 +16,7 @@ All technical prompts related to building and maintaining software:
 6. **Mobile** - iOS, Android, React Native, Flutter
 7. **Algorithms** - Algorithm design and complexity analysis
 8. **Vibe Coding Rescue** - Diagnose and rescue AI-assisted projects that have hit a wall
+9. **Data Engineering** - Pipeline correctness, dimensional models, data quality placement, backfills, data incidents
 
 ---
 
@@ -24,7 +25,7 @@ All technical prompts related to building and maintaining software:
 ```
 domain-software-engineering/
 ├── analysis/
-│   ├── security/             # Vulnerability analysis, OWASP, STRIDE, threat modeling
+│   ├── security/             # Vulnerability analysis, OWASP, STRIDE, threat modeling, detection/hunting/vuln-mgmt/SOC triage
 │   ├── performance/          # Bottleneck identification, optimization, scalability
 │   ├── quality/              # Complexity, duplication, style, documentation
 │   ├── architecture/         # Design patterns, layers, coupling, agentic context design
@@ -33,7 +34,8 @@ domain-software-engineering/
 │   └── integration/          # Cross-system integration validation
 ├── testing/                  # Unit, integration, E2E, mutation, a11y, flaky tests
 ├── devops/                   # CI/CD, Docker, K8s, Terraform, Helm, GitOps, LLM Ops
-├── cloud/                    # AWS, GCP, Azure, serverless, cost optimization
+├── cloud/                    # AWS, GCP, Azure, serverless, cost optimization, FinOps
+├── data-engineering/         # Pipeline design review, dimensional models, DQ tests, backfills, data downtime
 ├── api/                      # REST, GraphQL, OpenAPI, versioning
 ├── mobile/                   # iOS, Android, React Native, Flutter
 ├── algorithms/               # Data structures, scheduling, constraint satisfaction
@@ -50,11 +52,11 @@ domain-software-engineering/
 
 ## File Count
 
-_Last refreshed: 2026-04-17_
+_Last refreshed: 2026-04-17 (security, cloud, data-engineering rows: 2026-10-03)_
 
 | Subdirectory | Count | Description |
 |--------------|-------|-------------|
-| `analysis/security/` | 22 | Security vulnerability prompts (OWASP, SQLi, XSS, auth, threat modeling) |
+| `analysis/security/` | 29 | Security vulnerability prompts (OWASP, SQLi, XSS, auth, threat modeling) and security operations (detection engineering, threat hunting, vulnerability management, SOC triage) |
 | `analysis/performance/` | 8 | Performance bottlenecks, profiling, optimization |
 | `analysis/quality/` | 8 | Complexity, duplication, style, documentation coverage |
 | `analysis/architecture/` | 27 | Design patterns, layers, coupling, context/agentic-system architecture |
@@ -63,7 +65,8 @@ _Last refreshed: 2026-04-17_
 | `analysis/integration/` | 1 | Cross-system integration validation (e.g., Firebase) |
 | `testing/` | 16 | Unit, integration, E2E, mutation, accessibility, visual regression, flaky tests |
 | `devops/` | 21 | CI/CD, Docker, Kubernetes, Terraform, Helm, GitOps, LLM Ops |
-| `cloud/` | 22 | AWS, GCP, Azure, serverless, security, cost optimization |
+| `cloud/` | 25 | AWS, GCP, Azure, serverless, security, cost optimization, FinOps (allocation, bill-spike investigation, commitments) |
+| `data-engineering/` | 5 | Pipeline idempotency/late data/exactly-once review, dimensional model review, data quality test strategy, incremental load and backfill, data downtime postmortem |
 | `api/` | 6 | REST, GraphQL, OpenAPI, versioning, rate limiting |
 | `mobile/` | 255 | iOS, Android, React Native, Flutter, cross-platform |
 | `algorithms/` | 10 | Data structures, scheduling, constraint satisfaction |
@@ -73,7 +76,7 @@ _Last refreshed: 2026-04-17_
 | `electron-smart-tv/` | 10 | Electron apps, smart-TV / 10-ft UI |
 | `localization/` | 8 | i18n, pseudo-localization, ICU, translation workflow |
 | `vibe-coding-rescue/` | 5 | Wall diagnosis, rules file design, stuck-task decomposition, AI-generated-code security audit, engineer handoff briefing |
-| **Total** | **452** | _(excluding README files and the top-level review report)_ |
+| **Total** | **467** | _(excluding README files and the top-level review report)_ |
 
 ---
 
@@ -153,6 +156,7 @@ Use these prompts when you need to:
 - Design or review APIs
 - Set up DevOps pipelines
 - Work with cloud infrastructure
+- Review data pipelines, warehouse models, and data quality
 - Develop mobile applications
 
 **Do NOT use for:** Non-coding tasks (use domain-business-strategy, domain-productivity, etc.)

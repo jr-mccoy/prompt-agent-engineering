@@ -4,7 +4,7 @@
 
 **Scope:** End-to-end research practice — from refining a question through bench/field/computational execution, statistical analysis, writing, peer review, funding, mentorship, ethics, and public communication. This domain is the **doing** of science; it is not the same as the upstream `domain-research-academic/` directory, which covers generic research **methodology** patterns that apply across the humanities and social sciences.
 
-**Status as of 2026-06-26:** Migrated from `domain-specialized-fields/science/` to a top-level domain. **Phase 1 (3 prompts), Phase 2J (`disciplines/`, 24 prompts), and Phase 2A (`methods-foundations/`, 14 prompts) shipped.** The 3 Phase 1 prompts were relocated into `methods-foundations/` when Phase 2A shipped. See [`EXPANSION_ROADMAP.md`](EXPANSION_ROADMAP.md) for the full ~141-prompt plan across 12 subdirectories and the remaining phases (2B–2L).
+**Status as of 2026-06-26:** Migrated from `domain-specialized-fields/science/` to a top-level domain. **Phase 1 (3 prompts), Phase 2J (`disciplines/`, 24 prompts), and Phase 2A (`methods-foundations/`, 14 prompts) shipped.** The 3 Phase 1 prompts were relocated into `methods-foundations/` when Phase 2A shipped. See [`EXPANSION_ROADMAP.md`](EXPANSION_ROADMAP.md) for the full ~141-prompt plan across 12 subdirectories and the remaining phases (2B–2L). **Update 2026-10-03:** Phases 2B–2L have since shipped (141 prompts across 12 subdirectories), and Wave 8 added a 13th subdirectory, `ml-for-science/` (3 prompts).
 
 ---
 
@@ -19,6 +19,8 @@
 | Psychology / therapy / behavioral health *practice* (clinical) | [`domain-psychology/`](../domain-psychology/) |
 | Image generation for science (figure mockup, conceptual diagram, infographic) | [`domain-image-generation/`](../domain-image-generation/) — pair with science prompts from this domain for the figure planning step |
 | Software engineering of scientific code (CI, testing, architecture review) | [`domain-software-engineering/`](../domain-software-engineering/) — pair with `science_open_source_research_software_repo_layout` from this domain for science-specific guidance |
+| Building ML systems (product framing, pipelines, deployment, monitoring) | [`domain-AI-ML/`](../domain-AI-ML/) — ML used as an instrument for a scientific claim stays here in [`ml-for-science/`](ml-for-science/) |
+| Clinical-trial **execution** at the point of care (eligibility screening, consent conversations, applying trial evidence to a patient) | [`domain-healthcare-clinical/`](../domain-healthcare-clinical/) — trial-design **methodology** (SPIRIT protocol, CONSORT reporting, randomization, SAP) stays here; see the placement decision in [`EXPANSION_ROADMAP.md`](EXPANSION_ROADMAP.md) |
 
 A scientific lifecycle task often spans both this domain and one of the above. The convention is: **scientific judgment lives here; generic methodology / generic teaching / generic software craft lives in the corresponding adjacent domain.** Compose prompts across domains rather than duplicating.
 
@@ -50,6 +52,12 @@ The reusable methodology layer: question refinement, preregistration / Registere
 ### `disciplines/` (Phase 2J — 24 prompts)
 
 Discipline-specific prompts across biology, chemistry, physics-astronomy, earth-climate, neuroscience, and materials-engineering. See [`disciplines/README.md`](disciplines/README.md).
+
+### `ml-for-science/` (Wave 8 — 3 prompts, added 2026-10-03)
+
+Machine learning as an **instrument for scientific inference**: scoping whether ML is warranted for a lab dataset (vs classical statistics; effective sample size; batch/sample leakage), validation design with dependence-aware grouped/temporal/spatial splits and external-validation tiers, and interpreting ML models for scientific claims (what attributions can and cannot support). Works alongside the two ML-for-science prompts in `computational/` (benchmark design, leakage audit), which stay where they are. **Boundary:** `domain-AI-ML/` = building ML systems; this folder = ML as an instrument for scientific inference. See [`ml-for-science/README.md`](ml-for-science/README.md).
+
+All twelve Phase 2 subdirectories (`methods-foundations/`, `bench-and-wetlab/`, `computational/`, `statistics/`, `writing-communication/`, `peer-review/`, `grants-funding/`, `ethics-integrity/`, `lab-operations-mentorship/`, `disciplines/`, `public-engagement/`, `teaching-research-methods/`) have shipped; see [`EXPANSION_ROADMAP.md`](EXPANSION_ROADMAP.md) for their file tables.
 
 ---
 

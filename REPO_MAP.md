@@ -26,9 +26,9 @@ go" — use [`CLAUDE.md`](CLAUDE.md); this file answers "what exists and how big
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-software-engineering/`](domain-software-engineering/) | 611 | Analysis (security, performance, quality, architecture, evolution, **business**, feature-design), testing, devops, cloud, api, mobile, algorithms, bug-bounty, vibe-coding-rescue, improvement, prototyping |
+| [`domain-software-engineering/`](domain-software-engineering/) | 623 | Analysis (security, performance, quality, architecture, evolution, **business**, feature-design), testing, devops, cloud, api, mobile, algorithms, bug-bounty, vibe-coding-rescue, improvement, prototyping |
 | [`domain-AI-ML/`](domain-AI-ML/) | 360 | The full ML lifecycle: framing, data, features, modelling, deep learning, evaluation, optimization, MLOps, monitoring, governance, GenAI/LLM (incl. MCP servers), agentic systems (incl. computer-use agents), model security, verticals, leadership, learning |
-| [`domain-frontend-development/`](domain-frontend-development/) | 76 | Frameworks, styling, TypeScript, forms, animation, architecture, build tooling, a11y, performance, testing, design-direction |
+| [`domain-frontend-development/`](domain-frontend-development/) | 82 | Frameworks, styling, TypeScript, forms, animation, architecture, build tooling, a11y, performance, testing, design-direction |
 | [`domain-voice-conversational-ui/`](domain-voice-conversational-ui/) | 34 | Voice UI, chatbots, dialog architecture, NLU training, multimodal, analytics |
 | [`domain-game-development/`](domain-game-development/) | 34 | Design, architecture, engines, testing, multiplayer, performance, graphics, audio, level design, economy |
 | [`domain-learning-coding/`](domain-learning-coding/) | 18 | Learning to code |
@@ -51,8 +51,8 @@ software-engineering, money to finance, contracts to legal).
 
 | Track | Directory | Files | Holds |
 |---|---|---|---|
-| Self | [`domain-personal-development/`](domain-personal-development/) | 192 | Identity, values, habits, goals, resilience, relationships, agency, life transitions, emotional fitness, career, job search, stakeholder |
-| Individual execution | [`domain-productivity/`](domain-productivity/) | 126 | Daily planning, deep work, reviews, operating cadence, automation, bottlenecks, workplace, validation, home life, school |
+| Self | [`domain-personal-development/`](domain-personal-development/) | 194 | Identity, values, habits, goals, resilience, relationships, agency, life transitions, emotional fitness, career, job search, stakeholder |
+| Individual execution | [`domain-productivity/`](domain-productivity/) | 133 | Daily planning, deep work, reviews, operating cadence, automation, bottlenecks, workplace, validation, home life, school |
 | Team delivery | [`domain-engineering-workflows/`](domain-engineering-workflows/) | 59 | Workflows, definition-of-done, AI patterns, AI-native rollouts |
 | Product | [`domain-product-management/`](domain-product-management/) | 20 | PRDs, market sizing, competitor teardown, sprint planning (renamed from `domain-professional-communication`) |
 | Org / company | [`domain-business-strategy/`](domain-business-strategy/) | 95 | AI strategy, ambition & leverage, go-to-market, nonprofit, small business, research, startup |
@@ -85,7 +85,7 @@ decides, whoever holds it.
 |---|---|---|
 | [`domain-professional-writing/`](domain-professional-writing/) | 87 | Business writing, **content quality**, per-profession writing, journalism (desk edit, verification, investigations), human translation |
 | [`domain-presentations/`](domain-presentations/) | 46 | Board decks, visual planning |
-| [`domain-written-advocacy/`](domain-written-advocacy/) | 42 | Layperson self-advocacy letters |
+| [`domain-written-advocacy/`](domain-written-advocacy/) | 43 | Layperson self-advocacy letters |
 | [`domain-creative-writing/`](domain-creative-writing/) | 37 | Adult fiction, craft tools, genre, creative nonfiction, poetry, script, publishing |
 | [`domain-childrens-writing/`](domain-childrens-writing/) | 36 | Authoring for young readers |
 | [`domain-advertising/`](domain-advertising/) | 23 | Industry-specific advertising creative |
@@ -96,7 +96,7 @@ decides, whoever holds it.
 |---|---|---|
 | [`domain-education-teaching/`](domain-education-teaching/) | 326 | Three audience tracks: `instructor/`, `program/`, `learner/` |
 | [`domain-medical-education/`](domain-medical-education/) | 215 | Health-professions education: `educator-*` and `learner-*` tracks, plus `profession-specific/` |
-| [`domain-science/`](domain-science/) | 155 | The practice of science: methods, bench, computational, statistics, writing, peer review, grants, ethics, lab ops, engagement, disciplines |
+| [`domain-science/`](domain-science/) | 159 | The practice of science: methods, bench, computational, statistics, writing, peer review, grants, ethics, lab ops, engagement, disciplines |
 | [`domain-research-academic/`](domain-research-academic/) | 20 | Cross-field research methodology |
 | [`domain-learning/`](domain-learning/) | 11 | Self-directed skill acquisition, humanities self-study |
 
@@ -115,7 +115,7 @@ decides, whoever holds it.
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-biblical-studies/`](domain-biblical-studies/) | 142 | Exegesis, study methods, sermon, theology, learner, ministry, church staff, languages, apologetics |
+| [`domain-biblical-studies/`](domain-biblical-studies/) | 150 | Exegesis, study methods, sermon, theology, learner, ministry, church staff, languages, apologetics |
 | [`domain-parenting/`](domain-parenting/) | 155 | Age bands 0–18, divorce/custody/co-parenting, transitions and life events, safety, health/sleep/feeding, family structure, tech, identity and culture, parent capacity, academics, mental health and behaviour, neurodivergence |
 | [`domain-discipleship/`](domain-discipleship/) | 88 | One-to-one formation and the programs that pair people |
 | [`domain-conversation-practice/`](domain-conversation-practice/) | 15 | Role-play rehearsal: language sims (CEFR level, correction modes) and hard-conversation persona sims |

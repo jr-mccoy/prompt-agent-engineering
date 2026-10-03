@@ -330,13 +330,15 @@ Prompts are organized into subdirectories by function:
 - `resilience_momentum_rebuild.md` - Anti-heroic re-entry ladder after a long stall
 - See [prompts/resilience/README.md](./prompts/resilience/README.md)
 
-**Relationships & Social (`prompts/relationships/`)** - 6 prompts, personal (non-work, non-clinical)
+**Relationships & Social (`prompts/relationships/`)** - 13 prompts, personal (non-work, non-clinical)
 - `relationships_boundary_setting_script.md` - Turn a recurring frustration into a statable, spoken boundary
 - `relationships_hard_conversation_prep.md` - Prep one emotionally hard personal conversation
 - `relationships_network_cultivation_plan.md` - Sustainable, low-guilt personal-relationship maintenance
 - `relationships_social_skill_development.md` - Deliberate-practice loop for one observable social skill
 - `relationships_conflict_repair_guide.md` - Repair after a rupture (responsibility map + calibrated apology)
 - `relationships_relationship_audit.md` - Lightweight single-relationship health-check
+- `relationships_dating_after_divorce.md` - Readiness, what you want now, and pacing when dating again after divorce or a long relationship
+- `relationships_early_dating_safety_plan.md` - Meeting safely, spotting romance scams and coercion early, and a values check
 - See [prompts/relationships/README.md](./prompts/relationships/README.md)
 
 **Major Personal Decisions (`major-decisions/`)** - 16 prompts for high-stakes personal decisions

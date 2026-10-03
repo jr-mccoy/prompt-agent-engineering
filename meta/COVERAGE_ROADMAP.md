@@ -1,6 +1,7 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-10-03:** **Waves 1–7 shipped; Waves 8–10 planned (§6).**
+**Status as of 2026-10-03:** **Waves 1–8 shipped; Waves 9–10 planned (§6).**
+- **Wave 8 (2026-10-03):** 36 prompts on the second set of absent subjects (security operations, data engineering, FinOps, design systems, accessibility beyond components, ML for science, dementia care, DIY, cooking, special-education disputes, dating) and the first part of biblical-studies Phase 3C, plus 13 routing cases (§6).
 - **Wave 7 (2026-10-03):** 46 prompts finishing the parenting caregiver folders, public administration, personal-development and negotiation Wave 2 items, institution-side student success, maintenance and reliability, and professional-services firm operations, plus 16 routing cases (§6).
 - **Wave 6 (2026-10-02):** 48 prompts filling documented-but-unbuilt promises (parenting, policy, the operations / data-analytics / health-wellness Wave 2 lists) and six absent subjects, plus 15 routing regression cases and a CI repair (§6).
 - **Wave 1:** 40 prompts. That is four new domains of 8 prompts each (ADR-0043)
@@ -774,15 +775,61 @@ first-year advising model took its slot.
 item; `domain-parenting/family-support-professional/` (8 planned subfolders, not
 yet scheduled in any wave).
 
-### Wave 8: second set of absent subjects — planned (~45 prompts)
+### Wave 8: second set of absent subjects — shipped (36 prompts, 13 cases, 2026-10-03)
 
-| Area | Candidates |
-|---|---|
-| `domain-software-engineering` | security operations: detection engineering, threat hunting, vulnerability-management program (4); new `data-engineering/` (5; must not repeat `skills/data-engineering/*`); FinOps (2; ≠ `cloud_finops_cost_allocation`) |
-| `domain-frontend-development` | design systems (3); accessibility beyond components (2) |
-| `domain-productivity/home-life/` | elder care and dementia communication (3), home repair/DIY (2), cooking (2) |
-| Other | special-education advocacy (1–2), dating (2, `personal-development/relationships/`), `domain-science/ml-for-science/` (3) plus a decision on where trial-design prompts live, biblical-studies Phase 3C start (5–8) |
-| Open decision | Energy-sector and music-production work have no home. Proposed: add both to §7 (each needs a subject-matter owner). Not yet decided. |
+| Home | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `domain-software-engineering/analysis/security/` (4), `security_` | `detection_engineering_review`, `threat_hunting_plan`, `vulnerability_management_program`, `soc_alert_triage_runbook` (engineering-run on-call) | `risk_security_alert_triage_runbook` (non-engineers), `aiagent_secops_autonomous_defense`, `security_dependency_vulnerability_analysis` (one codebase) |
+| `domain-software-engineering/data-engineering/` (5, new), `dataeng_` | `pipeline_design_review`, `dimensional_model_review`, `data_quality_test_strategy`, `incremental_load_backfill_plan`, `data_downtime_postmortem` | `skills/data-engineering/*` (tool how-to), `commands/architecture/data_pipeline`, `mldata_data_contract_design`, `analytics_sql_query_correctness_review` |
+| `domain-software-engineering/cloud/` (2), `cloud_` | `bill_spike_investigation`, `commitment_rightsizing_plan` | `cloud_finops_cost_allocation` (the program), `cloud_cost_optimization` (broad sweep) |
+| `domain-frontend-development/design-direction/` (3) | `frontend_design_system_audit`, `frontend_design_token_architecture`, `frontend_design_system_component_governance` | `frontend_styling_tailwind_design_system`, `frontend_styling_css_architecture` (one technology) |
+| `domain-frontend-development/accessibility/` (2) | `frontend_accessibility_documents_slides`, `frontend_accessibility_program_governance` | `frontend_accessibility_wcag_audit`, the accessibility skills and agent |
+| `domain-science/ml-for-science/` (3, new) | `science_ml_project_scoping`, `science_ml_validation_split_design` (narrowed: sample dependence, external-validation tiers, grouped uncertainty), `science_ml_interpretation_for_claims` | `science_ml_for_science_benchmark_design`, `mlframe_is_this_ml_problem`, `rai_interpretability_analysis` |
+| `domain-productivity/home-life/` (7), `home_` | `dementia_caregiver_communication`, `dementia_home_safety_plan`, `parent_cannot_live_alone_talk`, `diy_repair_triage` (hard stops for gas, panel, structural, asbestos/lead), `small_repair_walkthrough`, `learn_to_cook_progression`, `pantry_first_weeknight_cooking` | `psychology_geriatric_depression_vs_dementia`, `personal_caring_for_aging_parent` (chooses the arrangement), `home_seasonal_maintenance_calendar`, `home_meal_plan_week` |
+| `domain-written-advocacy/institutions-and-records/` (1) | `advocacy_special_education_disagreement` (IEP or eligibility disagreement, independent evaluation request) | `advocacy_school_written_request` (first requests), `parenting_learning_concern_school_meeting` |
+| `domain-personal-development/prompts/relationships/` (2) | `relationships_dating_after_divorce`, `relationships_early_dating_safety_plan` | `lifetransition_post_breakup_rebuild`, `parenting_divorce_new_partner_introduction_timing`, `psyops_coercive_control_pattern_recognition` |
+| `domain-biblical-studies/academic-writing/` (5, new) and `ministry-contexts/` (2) | exegesis paper scaffold, thesis workshop, literature review plan, annotated bibliography builder, peer-review self-check (all STRONG-GUARD: no invented sources, pages, readings or quotations); age-graded story retelling; special-needs inclusive teaching | `research_thesis_dissertation_structure`, `research_literature_review_plan`, `biblical_passage_exegesis_workflow`, `biblical_ministry_kids_bible_lesson_builder` |
+
+**Decision recorded:** clinical-trial design stays in `domain-science/` (the
+SPIRIT/CONSORT protocol outliner and the randomization, power and analysis-plan
+prompts already live there); see that domain's EXPANSION_ROADMAP, Open Question 2.
+
+**Dropped as duplicates:** none. Re-angled: the data-quality prompt became a test
+strategy (contracts are covered in AI-ML), the commitment prompt was narrowed to
+post-rightsizing purchases, the ML validation prompt was narrowed to what the
+existing benchmark-design prompt lacks, and the special-education letter covers
+disagreement after a decision rather than a first request.
+
+**Routing after Wave 8** (`case-178`–`case-190` added, all task cases):
+
+| | Before (177 cases) | After (190 cases) |
+|---|---|---|
+| R@1 / R@3 / R@5 | 75.4 / 82.5 / 86.8% | 73.2 / 82.7 / 85.8% |
+| scope@1 / scope@3 / kind@1 (router) | 84.4 / 92.9 / 100% | 83.8 / 93.5 / 97.7% |
+
+- **Earlier cases.**
+  - Case 162 (kinship) fell out of the top 5 during the build. The new dating
+    prompt matched on "kids" and "after". "Kids" was reworded to "children" in its
+    title and description, and the case is back at rank 5.
+  - Case 161 (picky eating, route) now routes to `productivity` first. The
+    pantry-cooking prompt matches "dinner" and "food", which are its core
+    vocabulary, so it was left as is. This is a real regression, and it is recorded.
+  - Cases 004 (rank 5 → 6), 032 (status only) and 058 (rank 1 → 2, its pre-Wave-6
+    rank; kind@1 returns to 97.7%) moved without any Wave 8 prompt overtaking them.
+    Corpus growth shifted term weights.
+- **New cases:** 11 of 13 reach an acceptable scope first, and 8 rank their target
+  first. Misses: 178 (detections, rank 3), 179 (vulnerability backlog, top hit is a
+  TON smart-contract scanner skill, wrong scope), 185 (dripping faucet, rank 2,
+  wrong scope), 186 (learn to cook, rank 2), 189 (protein-stability ML, not in the
+  top 5).
+- **Leakage controls:** the same as Wave 7. Three targets carry tags overlapping a
+  query's wording (`make-pdf-accessible`, `screen-reader-cant-read-our-report`,
+  `write-bible-paper-for-class`, `special-education`). Their file timestamps predate
+  the query file.
+
+**Still open from the Wave 8 plan:** energy-sector and music-production work
+(an undecided §7 proposal), and biblical-studies Phase 3C's pastoral-counseling and
+Jewish–Christian dialogue items.
 
 ### Wave 9: depth in thin subfolders — planned (~45 prompts)
 

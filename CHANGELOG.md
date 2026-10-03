@@ -10,6 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Coverage Wave 8: second set of absent subjects (36 prompts, 13 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **Software engineering (11):** security operations (4), a new `data-engineering/` folder (5, design and review only; tool how-to stays in the skills), and cloud bill spikes and commitment sizing (2).
+  - **Frontend (5):** design systems (3) and accessibility beyond components (2): documents and slides, and organisational programs and VPATs.
+  - **Science (3):** a new `ml-for-science/` folder, plus a recorded decision that clinical-trial design stays in `domain-science/`.
+  - **Everyday life (10):** dementia care and the "can't live alone" conversation (3), DIY repair (2) and cooking (2) in `productivity/home-life/`; a special-education disagreement letter; dating after divorce and early-dating safety.
+  - **Biblical studies Phase 3C start (7):** a new `academic-writing/` folder (5, STRONG-GUARD against invented sources) and two children's-ministry prompts.
+  - **Duplicate sweep:** none dropped; four re-angled.
+  - **Routing:**
+    - case-178 to case-190 added; scope@1 is 83.8% over 190 cases.
+    - Case 162 regressed during the build and was restored by changing "kids" to "children" in the dating prompt.
+    - Case 161 now routes to `productivity` via the pantry-cooking prompt's core vocabulary. It is recorded as a regression.
+    - Cases 004 and 058 drifted by one rank from corpus-wide term-weight changes.
 - **Coverage Wave 7: remaining documented promises (46 prompts, 16 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
   - **Parenting (23):** the seven remaining planned `caregiver-facing/` folders: family structure, tech and AI chatbots, identity and culture, parent capacity, academics, mental health and behaviour, and neurodivergence.
   - **Public administration (6):** a new `domain-policy/public-administration/` folder.
