@@ -22,6 +22,14 @@
 | [security_xss_vulnerability_analysis](security_xss_vulnerability_analysis.md) | Identify Cross-Site Scripting (XSS) vulnerabilities |
 | [security_llm_application_review](security_llm_application_review.md) | Review LLM-backed apps: prompt injection, jailbreak, tool-use, OWASP LLM Top 10 |
 | [security_sbom_supply_chain_review](security_sbom_supply_chain_review.md) | Audit SBOM, supply-chain provenance, SLSA level, dependency confusion |
+| [security_detection_engineering_review](security_detection_engineering_review.md) | Review SIEM/EDR detections as code: ATT&CK mapping graded honestly, precision and alert load, replay tests, FP tuning |
+| [security_threat_hunting_plan](security_threat_hunting_plan.md) | Plan a bounded, hypothesis-driven hunt: data readiness, queries, stop rule, searched-and-cleared log, hunt → detection |
+| [security_vulnerability_management_program](security_vulnerability_management_program.md) | Run vuln management as a program: inventory/ownership, prioritisation by exploitation evidence + exposure, SLAs, exceptions, ungameable metrics |
+| [security_soc_alert_triage_runbook](security_soc_alert_triage_runbook.md) | Design triage for an engineering-run security on-call: per-detection runbooks, dispositions, clocks, escalation, queue health |
+
+## Security Operations Boundaries
+
+The four security-operations prompts above are for teams with security engineers. A small organisation without a SOC or security staff should use `../../../domain-risk/risk_security_alert_triage_runbook.md` and `../../../domain-risk/risk_security_incident_response_playbook.md`; model-assisted or autonomous SOC triage is `../../../domain-AI-ML/agentic-ai-systems/aiagent_secops_autonomous_defense.md`.
 
 ## Usage
 

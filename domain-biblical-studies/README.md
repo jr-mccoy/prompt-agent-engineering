@@ -4,7 +4,7 @@ Prompts for studying, teaching, preaching from, and researching the Bible — bu
 
 ## Scope
 
-This domain covers Bible-study and biblical-research workflows: passage exegesis, original-language word studies, genre-aware reading, historical-cultural and literary context, narrative and rhetorical analysis, ancient Near Eastern comparative context, canonical/intertextual reading, inductive and devotional study methods, book overviews, lesson and discussion-guide building, reading and memorization plans, expository sermon preparation, devotionals and meditation, topical/systematic theology, doctrine study, comparison of interpretive views, cross-reference/typology mapping, difficult-passage analysis, background research briefs, historical-theology (development of doctrine over time), biblical ethics, theology of a single book, research source mapping, and stress-testing one's own position.
+This domain covers Bible-study and biblical-research workflows: passage exegesis, original-language word studies, genre-aware reading, historical-cultural and literary context, narrative and rhetorical analysis, ancient Near Eastern comparative context, canonical/intertextual reading, inductive and devotional study methods, book overviews, lesson and discussion-guide building, reading and memorization plans, expository sermon preparation, devotionals and meditation, topical/systematic theology, doctrine study, comparison of interpretive views, cross-reference/typology mapping, difficult-passage analysis, background research briefs, historical-theology (development of doctrine over time), biblical ethics, theology of a single book, research source mapping, stress-testing one's own position, discipline-specific academic writing (exegesis papers, thesis topics, history-of-research reviews, annotated bibliographies, paper self-review), and children's teaching depth (age-graded story retelling, special-needs inclusive teaching).
 
 Difficulty spans **beginner** (first-look observation, SOAP, devotionals) through **advanced** (original-language word study, canonical reading, multi-view interpretation, systematic synthesis).
 
@@ -29,6 +29,8 @@ Biblical study is exceptionally prone to model hallucination. Every prompt forbi
 Prompts reference verses **by address** and ask the user to supply the translation text or verify wording against a named, real resource; the model does **not** quote lexicons, manuscripts, or apparatus from memory. Original-language, citation-heavy, and historical prompts carry heavier **STRONG-GUARD** language plus a Verification block with citation/quotation-accuracy and uncertainty-acknowledgment checks.
 
 ## Directory Map
+
+**136 prompts across 12 subdirectories** (as of 2026-10-03).
 
 ```
 domain-biblical-studies/
@@ -63,7 +65,8 @@ domain-biblical-studies/
 │                                programs (VBS/camp/retreat), biblical care-conversation foundations,
 │                                men's/women's study, college/young-adult study, seniors' study,
 │                                grief/loss Scripture guide (STRONG + boundary), marriage enrichment,
-│                                parenting Scripture guide. Child-safety and care-conversation
+│                                parenting Scripture guide, age-graded story retelling (3–5/6–8/9–11),
+│                                special-needs inclusive teaching. Child-safety and care-conversation
 │                                guardrails. Cross-domain links to domain-psychology/ and
 │                                domain-parenting/.
 ├── church-staff-ministry-ops/   Operational/administrative workflows for people who run a
@@ -83,6 +86,11 @@ domain-biblical-studies/
 ├── biblical-theology-method/    Method-level prompts above exegesis, below systematics: biblical vs.
 │                                systematic theology, redemptive-historical reading, author theology
 │                                comparison, center-of-biblical-theology debate.
+├── academic-writing/           Discipline-specific academic writing (audience A/P; all STRONG-GUARD
+│                                against invented scholarship): exegesis paper scaffold, thesis/
+│                                dissertation workshop, history-of-research literature review plan,
+│                                annotated bibliography builder (verify gate + quarantine), paper
+│                                self-check. General academic process → domain-research-academic/.
 └── apologetics-engagement/      Structured intellectual engagement and interfaith dialogue (custom
                                  STRONG-GUARD for fabricated philosophical arguments, misrepresented
                                  worldview positions, invented historical evidence): objection
@@ -237,6 +245,14 @@ Every prompt includes:
 | "Scripture for grief/loss ministry (not therapy)" | `ministry-contexts/biblical_ministry_grief_and_loss_scripture_guide.md` |
 | "Design a marriage enrichment Bible study" | `ministry-contexts/biblical_ministry_marriage_enrichment_study.md` |
 | "Contextualize parenting passages (not proof-texting)" | `ministry-contexts/biblical_ministry_parenting_scripture_guide.md` |
+| "Retell this Bible story for ages 3–5, 6–8, and 9–11" | `ministry-contexts/biblical_ministry_age_graded_story_retelling.md` |
+| "Adapt my kids' lesson for children with disabilities / special needs" | `ministry-contexts/biblical_ministry_special_needs_inclusive_teaching.md` |
+| **Academic writing (audience A, P — all STRONG-GUARD)** | |
+| "Structure my exegesis paper on this passage" | `academic-writing/biblical_academic_exegesis_paper_scaffold.md` |
+| "Workshop my biblical-studies thesis / dissertation topic" | `academic-writing/biblical_academic_thesis_dissertation_workshop.md` |
+| "Plan the history-of-research / literature review for my paper" | `academic-writing/biblical_academic_literature_review_plan.md` |
+| "Build an annotated bibliography (verified sources only)" | `academic-writing/biblical_academic_annotated_bibliography_builder.md` |
+| "Review my own biblical-studies paper before submitting" | `academic-writing/biblical_academic_peer_review_self_check.md` |
 | **Apologetics & intellectual engagement (audience P, A)** | |
 | "Engage charitably with a specific intellectual objection" | `apologetics-engagement/biblical_apologetics_objection_engagement.md` |
 | "Evidence for / challenges to biblical reliability" | `apologetics-engagement/biblical_apologetics_bible_reliability.md` |

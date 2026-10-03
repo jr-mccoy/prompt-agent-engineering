@@ -129,10 +129,6 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: continuity-kit unit tests
-        working-directory: continuity-kit
-        run: python3 -m unittest discover -s tests -v
-
       - name: ai-investment-research-toolkit tests
         working-directory: ai-investment-research-toolkit
         run: python3 -m unittest discover -s tests -v

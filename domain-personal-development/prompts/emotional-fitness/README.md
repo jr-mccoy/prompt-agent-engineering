@@ -24,6 +24,7 @@ Use this subfolder when:
 - A charged moment keeps bleeding into the rest of your day.
 - You can't tell whether you owe an apology or you're just spiraling.
 - An emotional event is over and you want to learn from it, not just relive it.
+- Guilt, dread, or avoidance around money keeps driving what you do with it (the budget itself lives in `domain-finance/personal-finance-planning/`).
 
 ## Not the right subfolder when
 
@@ -47,6 +48,7 @@ Use this subfolder when:
 | `emotionalfitness_emotional_reset_ritual.md` | Design a short personal cooldown ritual (down-regulation + re-entry cue) for after a charged moment. |
 | `emotionalfitness_shame_vs_guilt_sorter.md` | Separate guilt (an action → repair) from shame (a self-verdict → disarm) and route each correctly. |
 | `emotionalfitness_charged_event_debrief.md` | Debrief a specific charged event after the fact and extract one repeatable pattern and one carry-forward. |
+| `emotionalfitness_money_beliefs_and_avoidance.md` | Sort recurring money moments into money-script families, test felt scarcity against known facts, run one 30-day money behaviour — beliefs only; numbers go to `domain-finance/`, compulsive spending or gambling to clinical help. |
 
 ## How the prompts relate
 

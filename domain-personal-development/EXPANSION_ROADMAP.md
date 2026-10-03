@@ -9,21 +9,21 @@ Filing convention: `{folder-prefix}_{specific_function}.md` inside the relevant 
 ## Wave 1 Status — Shipped
 
 ```
-domain-personal-development/            170 prompts (current; 166 when Wave 1 shipped)
+domain-personal-development/            176 prompts (current; 166 when Wave 1 shipped)
 ├── prompts/
 │   ├── agency/                 18   (+2)   accountability-partner, project-scope-creep
 │   ├── goals/                  10   (+6)   annual-planning, conflict-resolver, anti-goals, values→goals, stall-diagnostic, scope-right-sizer
 │   ├── habits/                 10   (+4)   identity-based, implementation-intentions, tracking-system, temptation-bundling
-│   ├── identity/               12   (+4)   strengths-inventory, narrative-reframe, authenticity-audit, memento-mori
+│   ├── identity/               13   (+4)   strengths-inventory, narrative-reframe, authenticity-audit, memento-mori
 │   ├── resilience/             11   (+5)   rejection-recovery, criticism-processing, confidence-rebuild, uncertainty-tolerance, comeback-after-dip
-│   ├── relationships/          11   (+5)   friends-as-adult, deepening, difficult-family, apology, loneliness-diagnostic
+│   ├── relationships/          13   (+7)   friends-as-adult, deepening, difficult-family, apology, loneliness-diagnostic, dating-after-divorce, early-dating-safety
 │   ├── thinking/               12   (+3)   decision-journal, mental-models-application, assumption-surfacing
 │   ├── (productivity/)          0   (+3)   removed in the 2026-08 reorg — all 8 prompts moved into domain-productivity/
 │   ├── solo-dev/               10   (+5)   pricing-confidence, deciding-alone, accountability, sustainable-pace, isolation-motivation
-│   ├── stakeholder/             7   (+5)   managing-up, manager-relationship, visibility-credit, mentor-sponsor, cross-team-alliance
+│   ├── stakeholder/             9   (+5)   managing-up, manager-relationship, visibility-credit, mentor-sponsor, cross-team-alliance
 │   ├── career/                 17   ( 0)   AI-role assessment set — left as-is (coherent legacy interview/verdict format)
 │   ├── life-transitions/       10   (NEW)  new-role, relocation, new-parenthood, empty-nest, retirement, job-loss, breakup, return-from-leave, identity-after-change, transition-map
-│   └── emotional-fitness/      10   (NEW)  emotion-labeling, disappointment, jealousy-channeling, worry-vs-action, reactivity-audit, ambivalence, self-compassion, reset-ritual, shame-vs-guilt, charged-event-debrief
+│   └── emotional-fitness/      11   (NEW)  emotion-labeling, disappointment, jealousy-channeling, worry-vs-action, reactivity-audit, ambivalence, self-compassion, reset-ritual, shame-vs-guilt, charged-event-debrief
 ├── career-transformation/       8   (+4)   ai-era-skill-moat, positioning-statement, internal-vs-external-move, reskilling-roadmap
 ├── job-search/                  8   (NEW)  coverage Wave 1 — see below
 └── major-decisions/            16   (+4)   marriage-commitment, aging-parent-care, sabbatical, start-business-vs-employment
@@ -49,10 +49,10 @@ Counts are current (every `.md` except `README.md`); the `(+N)` column records w
 ## Wave 2 — Candidate future work (not yet built)
 
 - **`career/` template refresh** — the 17 AI-role assessments use the older interview/verdict template. A future wave could convert them to the rigorous Tier-1 template, or extend the set to non-AI roles.
-- **Money mindset (behavioral)** — relationship-with-money, spending-values, scarcity-vs-abundance framing (behavioral only; specifics stay in `domain-finance/`).
+- ~~**Money mindset (behavioral)**~~ — **Shipped (coverage Wave 7):** `prompts/emotional-fitness/emotionalfitness_money_beliefs_and_avoidance.md` (money-script families, felt scarcity vs. known facts, one 30-day behaviour; numbers → `domain-finance/personal-finance-planning/`, compulsive spending/gambling → clinical help).
 - **Deepen thin cross-links** — add backlinks from existing prompts into `life-transitions/` and `emotional-fitness/`; a few Wave-1 files linked to nearest-equivalents before the new folders existed.
-- **`stakeholder/` growth** — org-navigation set is still the smallest themed folder (7); room for peer-conflict, promotion-case, and reorg-navigation prompts.
-- **Meaning & purpose depth** — expand `identity/` toward legacy, vocation, and spirituality-neutral meaning-making.
+- **`stakeholder/` growth** — **Partly shipped (coverage Wave 7):** `stakeholder_peer_conflict_navigation.md` and `stakeholder_reorg_navigation.md` (7 → 9). Promotion-case writing stays with `domain-hr-management/performance-reviews/hr_promotion_case_writer.md`; not duplicated here.
+- **Meaning & purpose depth** — **Partly shipped (coverage Wave 7):** `identity/identity_meaning_sources_and_legacy_map.md` (coherence / purpose / significance, meaning sources and concentration risk, concrete legacy; spirituality-neutral). Vocation-specific work remains open.
 
 ---
 

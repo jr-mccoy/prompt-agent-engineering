@@ -28,7 +28,7 @@ not imply otherwise. The package is not published to PyPI.
 ### Resource corpus
 
 Resources live in `domain-*/` directories plus a set of self-contained toolkits
-at the repository root (`agentic-system-factory/`, `continuity-kit/`,
+at the repository root (`agentic-system-factory/`,
 `ai-investment-research-toolkit/`, `childrens-book-studio/`,
 `sourced-nonfiction-studio/`, `financial-records-toolkit/`,
 `portable-prompt-system/`).
@@ -71,7 +71,7 @@ All of these run in `.github/workflows/validate.yml`:
 - vendored copies still match their canonicals (`scripts/check_vendored_copies.py`);
 - the reorg map is fully applied (`scripts/apply_reorg_map.py --check`);
 - shell and Python syntax across the repository;
-- unit tests for `continuity-kit/` and `ai-investment-research-toolkit/`.
+- unit tests for `ai-investment-research-toolkit/`.
 
 `.github/workflows/structure.yml` additionally derives an allowlist of permitted
 top-level directory *shapes* from the layout and fails on anything unexpected.

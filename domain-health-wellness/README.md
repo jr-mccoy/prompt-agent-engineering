@@ -1,8 +1,10 @@
 # Domain: Health & Wellness (Healthy Adults — Training, Eating, Sleep)
 
-Eight prompts for a **healthy adult looking after their own body**: starting to train,
-building toward a first event, reading a training log, auditing and structuring what
-they eat, and fixing the routine and bedroom factors that cost them sleep. The person
+Twelve prompts for a **healthy adult looking after their own body**: starting to train,
+returning after a break, building toward a first event, staying strong and steady in
+later life, working on mobility, reading a training log, auditing and structuring what
+they eat, drinking and training through heat, and fixing the routine and bedroom
+factors that cost them sleep. The person
 holds the prompt; the subject is their own training, eating, and sleep.
 
 The domain is built around one idea: **a precise gate, then genuinely useful content.**
@@ -31,7 +33,7 @@ profile says *not yet*, nothing is produced except the route to the right person
 > 4. **No diagnosis, no treatment of diagnosed conditions, no medication or supplement
 >    dosing.** Symptoms are never interpreted ("probably reflux"); they are routed.
 > 5. **Minors and pregnancy:** "see a clinician" is the whole answer.
-> 6. **Nutrition is STRONG-GUARD.** Both `nutrition/` prompts carry a `> **STRONG-GUARD
+> 6. **Nutrition is STRONG-GUARD.** All three `nutrition/` prompts carry a `> **STRONG-GUARD
 >    prompt.**` block and stop — not soften — on restriction, compensation, rapid
 >    weight-loss goals (more than ~1% of body weight a week, or an intake below the
 >    commonly cited ~1,200 / ~1,500 kcal unsupervised floors — conservative guard
@@ -59,9 +61,12 @@ profile says *not yet*, nothing is produced except the route to the right person
 - **Foundations** — the readiness and red-flag gate, and a weekly routine that fits
   training, an eating rhythm, and a sleep anchor into measured capacity.
 - **Fitness** — an eight-week beginner plan, a log-based progression review (stalls,
-  overreaching, deloads), and a first-event endurance build (5K to century ride).
-- **Nutrition** — an eating pattern audit and a meal structure planner, both STRONG-GUARD,
-  expressed in portions and the person's own cuisine, never in calories.
+  overreaching, deloads), a first-event endurance build (5K to century ride), a mobility
+  and flexibility routine, a return-after-a-break plan (deconditioning, not injury), and
+  an active ageing plan for older adults (falls screen, balance, strength, power).
+- **Nutrition** — an eating pattern audit, a meal structure planner, and a hydration and
+  heat plan, all STRONG-GUARD, expressed in portions, thirst, and the person's own
+  cuisine, never in calories or electrolyte doses.
 - **Sleep & recovery** — a routine and environment audit with a two-week experiment.
 
 ## Directory map
@@ -69,21 +74,25 @@ profile says *not yet*, nothing is produced except the route to the right person
 | Subdirectory | Prefix | Prompts |
 |---|---|---|
 | `foundations/` | `wellness_` | `wellness_readiness_and_red_flag_screen.md` (**entry gate**), `wellness_sustainable_routine_designer.md` |
-| `fitness/` | `fitness_` | `fitness_beginner_training_plan.md`, `fitness_program_progression_review.md`, `fitness_endurance_event_build_plan.md` |
-| `nutrition/` | `nutrition_` | `nutrition_eating_pattern_audit.md` (**STRONG-GUARD**), `nutrition_meal_structure_planner.md` (**STRONG-GUARD**) |
+| `fitness/` | `fitness_` | `fitness_beginner_training_plan.md`, `fitness_program_progression_review.md`, `fitness_endurance_event_build_plan.md`, `fitness_mobility_and_flexibility_routine.md`, `fitness_return_after_break_plan.md`, `fitness_active_ageing_plan.md` |
+| `nutrition/` | `nutrition_` | `nutrition_eating_pattern_audit.md` (**STRONG-GUARD**), `nutrition_meal_structure_planner.md` (**STRONG-GUARD**), `nutrition_hydration_and_heat_plan.md` (**STRONG-GUARD**) |
 | `sleep-recovery/` | `sleep_` | `sleep_routine_and_environment_audit.md` |
 
 ## Quick routing
 
 | You're saying | Use |
 |---|---|
-| "Is it safe for me to start?" / "I'm starting again after a long break" | `foundations/wellness_readiness_and_red_flag_screen.md` |
+| "Is it safe for me to start?" | `foundations/wellness_readiness_and_red_flag_screen.md` |
+| "I trained before, then stopped for a few months" | `fitness/fitness_return_after_break_plan.md` (after checking the profile still stands) |
 | "I keep trying to do everything and it collapses in week two" | `foundations/wellness_sustainable_routine_designer.md` |
 | "I've never lifted and want a plan" | `fitness/fitness_beginner_training_plan.md` |
 | "My numbers stopped going up" / "Do I need a deload?" | `fitness/fitness_program_progression_review.md` |
 | "I signed up for my first half marathon" / "first century ride" | `fitness/fitness_endurance_event_build_plan.md` |
+| "My hips and ankles are stiff" / "I can't touch my toes" | `fitness/fitness_mobility_and_flexibility_routine.md` |
+| "I'm 70 and want to stay strong and steady on my feet" | `fitness/fitness_active_ageing_plan.md` |
 | "Is the way I eat actually okay?" / "I crash at 4 pm" | `nutrition/nutrition_eating_pattern_audit.md` |
 | "What should I eat around training, in food I actually cook?" | `nutrition/nutrition_meal_structure_planner.md` |
+| "How much should I drink?" / "A heat wave is coming and I have a race" | `nutrition/nutrition_hydration_and_heat_plan.md` |
 | "I sleep but wake up tired" / "does my coffee matter?" | `sleep-recovery/sleep_routine_and_environment_audit.md` |
 
 ## How the prompts compose
@@ -92,8 +101,10 @@ profile says *not yet*, nothing is produced except the route to the right person
 fired, limits, nutrition guard, sleep flags, starting point, capacity, goal). Every other
 prompt reads it. `wellness_sustainable_routine_designer` decides *when*; the fitness,
 nutrition, and sleep prompts decide *what*. The beginner plan hands off to the
-progression review at week 8; the endurance build hands stalls to the same review and
-long-session fuelling to the meal structure planner; the eating pattern audit's one to
+progression review at week 8; the return-after-a-break plan hands back to the normal plan
+and that same review; the endurance build hands stalls to the same review, long-session
+fuelling to the meal structure planner, and hot-weather training to the hydration and heat
+plan; the eating pattern audit's one to
 three changes become the meal structure planner's input, which in turn hands menus and
 shopping to `domain-productivity/home-life/home_meal_plan_week.md`.
 
@@ -109,6 +120,8 @@ shopping to `domain-productivity/home-life/home_meal_plan_week.md`.
 | Researching treatment options for a diagnosed condition | `domain-personal-development/major-decisions/personal_health_decision_research.md` | Decisions with a clinician about a condition; this domain does not treat conditions |
 | Eating disorder treatment protocols | `domain-psychology/specialty-clinical/` (clinician-held) | Specialist clinical work; this domain only redirects |
 | Rehabilitation after injury or surgery | a clinician or physiotherapist | No rehab content in this domain |
+| Falls-risk assessment, or a supervised falls-prevention programme | a clinician or physiotherapist (clinician-held geriatric review: `domain-psychology/populations/geriatric/psychology_geriatric_intake_with_polypharmacy_review.md`) | `fitness_active_ageing_plan` screens for falls and routes; it never assesses risk |
+| Electrolyte, salt, or sweat-rate planning for an individual athlete | a registered sports dietitian | `nutrition_hydration_and_heat_plan` is thirst-led and gives no doses |
 
 ## Conventions
 

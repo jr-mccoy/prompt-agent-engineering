@@ -2,7 +2,7 @@
 
 **Purpose:** Comprehensive prompt collection for frontend development covering frameworks (React, Vue, Angular, Next.js, Svelte/SvelteKit, Astro, SolidJS, Qwik, Remix), cross-cutting craft (styling, TypeScript, forms, animation, architecture), build tooling, accessibility, performance, testing, and UX research methods.
 
-**Total Resources:** 56 prompts across 20 categories
+**Total Resources:** 61 prompts across 20 categories
 
 ---
 
@@ -36,13 +36,13 @@ This domain provides production-grade prompts for modern frontend development, o
 | [animation/](animation/) | 1 | Motion & animation performance |
 | [architecture/](architecture/) | 3 | Error boundaries/resilience, state-management selection, i18n/localization |
 | [build-tooling/](build-tooling/) | 3 | Vite optimization, micro-frontends/Module Federation, bundler migration |
-| [design-direction/](design-direction/) | 2 | Visual design direction options, look-and-feel spec from a target "vibe" |
+| [design-direction/](design-direction/) | 5 | Visual design direction options, look-and-feel spec from a target "vibe", design-token architecture, design-system audit, component governance |
 
 ### Quality Concerns
 
 | Category | Prompts | Focus |
 |----------|---------|-------|
-| [accessibility/](accessibility/) | 3 | WCAG audits, ARIA patterns, screen reader testing |
+| [accessibility/](accessibility/) | 5 | WCAG audits, ARIA patterns, screen reader testing, accessible documents & slides, organisational accessibility program |
 | [performance/](performance/) | 2 | Core Web Vitals, bundle optimization |
 | [testing/](testing/) | 2 | Jest unit testing, Playwright E2E |
 
@@ -103,6 +103,11 @@ This domain provides production-grade prompts for modern frontend development, o
 | Conduct WCAG audit | [frontend_accessibility_wcag_audit.md](accessibility/frontend_accessibility_wcag_audit.md) |
 | Implement ARIA patterns | [frontend_accessibility_aria_patterns.md](accessibility/frontend_accessibility_aria_patterns.md) |
 | Test with screen readers | [frontend_accessibility_screen_reader.md](accessibility/frontend_accessibility_screen_reader.md) |
+| Make published PDFs, documents and slides accessible | [frontend_accessibility_documents_slides.md](accessibility/frontend_accessibility_documents_slides.md) |
+| Set up an accessibility program (policy, VPAT/ACR, procurement, training) | [frontend_accessibility_program_governance.md](accessibility/frontend_accessibility_program_governance.md) |
+| Audit a design system's components, tokens and adoption | [frontend_design_system_audit.md](design-direction/frontend_design_system_audit.md) |
+| Design token tiers, theming and naming | [frontend_design_token_architecture.md](design-direction/frontend_design_token_architecture.md) |
+| Govern component APIs, versioning, deprecation and contributions | [frontend_design_system_component_governance.md](design-direction/frontend_design_system_component_governance.md) |
 | Optimize Core Web Vitals | [frontend_performance_core_web_vitals.md](performance/frontend_performance_core_web_vitals.md) |
 | Reduce bundle size | [frontend_performance_bundle_optimization.md](performance/frontend_performance_bundle_optimization.md) |
 | Set up Jest testing | [frontend_testing_jest.md](testing/frontend_testing_jest.md) |
@@ -137,7 +142,9 @@ This domain provides production-grade prompts for modern frontend development, o
 
 **Build Tooling:** Vite config optimization, micro-frontends / Module Federation, and bundler migration.
 
-**Accessibility / Performance / Testing:** WCAG/ARIA/screen-reader audits; Core Web Vitals and bundle optimization; Jest and Playwright.
+**Design Direction & Design Systems:** visual direction and look-and-feel specs; primitive/semantic/component token tiers and theming; design-system inventory, token coverage and adoption metrics; component API, versioning, deprecation and contribution governance.
+
+**Accessibility / Performance / Testing:** WCAG/ARIA/screen-reader audits, accessible published documents and slides (PDF/UA, captions), and organisation-wide accessibility programs (policy, VPAT/ACR, procurement, training); Core Web Vitals and bundle optimization; Jest and Playwright.
 
 **UX Research:** usability test planning and moderation, heuristic evaluation, card sorting and tree testing, severity-rated findings, standardized questionnaires (SUS, UMUX-Lite, SEQ), and design critique.
 
@@ -173,5 +180,5 @@ All prompts in this domain follow **Tier 1 (Production-Grade)** standards:
 
 ---
 
-**Last Updated:** 2026-09-24
-**Version:** 3.1.0
+**Last Updated:** 2026-10-03
+**Version:** 3.2.0

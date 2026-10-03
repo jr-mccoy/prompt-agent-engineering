@@ -146,8 +146,8 @@ Sequenced after the registry and the engine exist.
   `pae_engine`, console `pae`. `import pae` was rejected rather than risked,
   because an unrelated PyPI project owns that namespace. Distribution-name
   availability must be rechecked immediately before any publication step, not
-  assumed from an earlier check. `continuity-kit` keeps its own package
-  version. Registry schema and benchmark suites version independently of the
+  assumed from an earlier check. (`continuity-kit`, which kept its own package
+  version, was removed from the tree in a11990c.) Registry schema and benchmark suites version independently of the
   distribution.
 
 ---
