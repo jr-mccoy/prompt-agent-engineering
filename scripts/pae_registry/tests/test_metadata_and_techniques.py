@@ -220,6 +220,56 @@ class TechniqueTests(unittest.TestCase):
         found = set(pattern.findall("references GT-99 and IPC-99"))
         self.assertEqual(found - catalog["all_ids"], {"GT-99", "IPC-99"})
 
+    # -- frontmatter `techniques:` citations ---------------------------------
+    def _check_citations(self, cited):
+        module = _catalog_module(REPO_ROOT)
+        catalog = techniques.load_catalog(REPO_ROOT)
+        errors, warnings = [], []
+        records = [{"path": "domain-x/p.md", "techniques": cited}]
+        module.check_prompt_technique_references(catalog, records, errors, warnings)
+        return errors, warnings
+
+    def test_catalogued_citation_passes_silently(self):
+        self.assertEqual(self._check_citations(["ST-01", "RT-01"]), ([], []))
+
+    def test_unknown_prefix_is_a_hard_error(self):
+        # DC is not a catalogued prefix, so prefix-derived scanning would miss it.
+        errors, _ = self._check_citations(["DC-01"])
+        self.assertEqual(len(errors), 1)
+        self.assertIn("'DC-01'", errors[0])
+
+    def test_unknown_number_in_known_prefix_is_a_hard_error(self):
+        errors, _ = self._check_citations(["GT-99"])
+        self.assertEqual(len(errors), 1)
+
+    def test_malformed_entry_is_a_hard_error(self):
+        errors, _ = self._check_citations(["chain of thought"])
+        self.assertEqual(len(errors), 1)
+
+    def test_deprecated_citation_warns_with_its_merge_target(self):
+        errors, warnings = self._check_citations(["DD-01"])
+        self.assertEqual(errors, [])
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("merged into QA-08", warnings[0])
+
+    def test_mismatched_parenthesised_name_warns(self):
+        errors, warnings = self._check_citations(["ST-01 (Structured Task Decomposition)"])
+        self.assertEqual(errors, [])
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("Clear Objective Statement", warnings[0])
+
+    def test_matching_parenthesised_name_is_accepted(self):
+        self.assertEqual(self._check_citations(["ST-01 (Clear Objective Statement)"]), ([], []))
+
+    def test_uncited_report_excludes_cited_and_deprecated(self):
+        module = _catalog_module(REPO_ROOT)
+        catalog = techniques.load_catalog(REPO_ROOT)
+        families = module.uncited_by_family(catalog, [{"techniques": ["GT-01"]}])
+        reported = {tid for ids in families.values() for tid in ids}
+        self.assertNotIn("GT-01", reported)
+        self.assertIn("GT-02", reported)
+        self.assertFalse(reported & catalog["deprecated"])
+
 
 def _catalog_module(repo_root):
     import importlib.util

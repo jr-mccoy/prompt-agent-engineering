@@ -3,10 +3,10 @@ title: "iOS TestFlight Rollout"
 category: mobile-development
 description: "Modular guide for managing TestFlight beta testing including internal and external testing groups, beta feedback collection, crash monitoring, and staged production rollout strategies."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - DS-02 (Domain-Specific Terminology)
-  - WF-01 (Workflow Orchestration)
+  - DT-01
+  - QA-10
+  - CM-01
+  - ST-02
 difficulty: beginner
 tags:
   - ios
@@ -279,10 +279,10 @@ After completing this prompt, you will have:
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Five-module testing and rollout workflow |
-| RT-02 (Checklist Verification) | Build upload, testing, and monitoring checklists |
-| DS-02 (Domain-Specific Terminology) | TestFlight, Beta App Review, phased release |
-| WF-01 (Workflow Orchestration) | Sequential testing phases with gates |
+| DT-01 (Hierarchical Task Breakdown) | Five-module testing and rollout workflow |
+| QA-10 (Test Battery Protocol) | Build upload, testing, and monitoring checklists |
+| CM-01 (Explicit Context Framing) | TestFlight, Beta App Review, phased release |
+| ST-02 (Structured Sequential Instructions) | Sequential testing phases with gates |
 
 ## Related Prompts
 

@@ -3,7 +3,9 @@ title: "Order Few-Shot Examples"
 category: prompt-engineering/few-shot-examples
 description: "Decide the order in which few-shot examples appear, considering recency bias, difficulty progression, and primacy/recency effects."
 techniques:
-  - PR-03
+  - IT-20
+  - QA-07
+  - ST-03
 difficulty: intermediate
 tags:
   - few-shot

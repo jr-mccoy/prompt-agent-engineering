@@ -1,6 +1,6 @@
 # Written Advocacy (Layperson-Facing Self-Advocacy Letters)
 
-Forty-one prompts for a **person acting for themselves** who needs something from a company, agency, insurer, school, or landlord — and wants it in writing, dated, and on the record. Each prompt produces **your own first-person letter**, built only from facts you supply, designed to still make sense months later to a regulator, an attorney, or a judge.
+Forty-two prompts for a **person acting for themselves** who needs something from a company, agency, insurer, school, or landlord — and wants it in writing, dated, and on the record. Each prompt produces **your own first-person letter**, built only from facts you supply, designed to still make sense months later to a regulator, an attorney, or a judge.
 
 > ## Read This First — What These Prompts Are (and Are Not)
 >
@@ -86,7 +86,7 @@ Forty-one prompts for a **person acting for themselves** who needs something fro
 | `advocacy_prior_authorization_status_request.md` | A pending pre-approval: status and criteria from the insurer, submission and expedited review from the clinician's office. **Before** a denial. |
 | `advocacy_medical_records_request.md` | Copies of your own health records, scoped and costed; correction as a separate letter. |
 
-### `institutions-and-records/` (7)
+### `institutions-and-records/` (8)
 | File | Use |
 |---|---|
 | `advocacy_public_records_request.md` | Records from a government body, scoped so it can actually be searched. |
@@ -94,6 +94,7 @@ Forty-one prompts for a **person acting for themselves** who needs something fro
 | `advocacy_regulator_complaint_drafter.md` | Complaint to an external body you have identified and verified. |
 | `advocacy_workplace_written_request.md` | Accommodation, leave, or a policy exception — non-clinical. |
 | `advocacy_school_written_request.md` | Assessment, support, records, or a review from a school or college. |
+| `advocacy_special_education_disagreement.md` | **After** a special-education decision you disagree with (eligibility, an evaluation, reduced services): quote it, disagree point by point, ask for the written explanation and data, and request an independent evaluation only in the words of the school's own procedural-rights document. |
 | `advocacy_tax_penalty_relief_request.md` | Ask a tax authority to remove or reduce a penalty, anchored to **its own** published relief guidance. |
 | `advocacy_hoa_written_request.md` | Violation or fine response, repair request, records, or architectural approval — quoted against the association's own documents. |
 
@@ -112,7 +113,8 @@ Forty-one prompts for a **person acting for themselves** who needs something fro
 | Divorce, custody, or family court | `domain-legal/family-self-advocacy/` |
 | Small claims | `domain-legal/personal-self-advocacy/small-claims/` |
 | An attorney-side demand letter | `domain-legal/client-intake-communications/legal_demand_letter_drafter.md` |
-| Preparing for a school meeting rather than sending a letter | `domain-parenting/parenting_school_accommodation_conversation_prep.md` |
+| Preparing for a school meeting rather than sending a letter | `domain-parenting/caregiver-facing/ages-4-8/parenting_school_accommodation_conversation_prep.md`; for a learning-concern meeting, `domain-parenting/caregiver-facing/academics-skills/parenting_learning_concern_school_meeting.md` |
+| A formal special-education dispute (mediation, complaint, hearing or tribunal) | An education advocacy service, legal aid or an attorney — `advocacy_special_education_disagreement.md` records the disagreement but does not start a formal route |
 | Negotiation craft in written channels | `domain-negotiation/channels/negotiation_written_async_message.md` |
 | Negotiating the *value* of an accepted insurance claim, or reducing a correct medical bill | `domain-negotiation/contexts/negotiation_insurance_claim_settlement.md`, `domain-negotiation/contexts/negotiation_medical_bill_reduction.md` |
 | The clinician's own prior-authorization or medical-necessity letter | `domain-healthcare-clinical/prompts/workflow/medicine_prior_authorization_letter.md` |

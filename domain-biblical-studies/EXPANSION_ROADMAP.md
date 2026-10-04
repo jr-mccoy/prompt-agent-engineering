@@ -238,19 +238,42 @@ layer only.
 
 ---
 
-## Phase 3C — Future Candidates (direction only · ~15-25 prompts)
+## Phase 3C — Partially shipped (7 prompts, 2026-10-03) · remaining items future
+
+### Shipped
+
+**A. `academic-writing/` (NEW · 5 · audience A/P · all STRONG-GUARD against invented scholarship)**
+
+Discipline-specific method only — original languages, textual criticism, history of research vs.
+history of interpretation, attribution of readings to streams. General academic process (question
+formulation, thesis architecture, review protocols, fact-check reconciliation) stays in
+`domain-research-academic/` and is cross-linked, not duplicated.
+
+| Prompt | Audience | Difficulty | Guard | What it does |
+|---|---|---|---|---|
+| `biblical_academic_exegesis_paper_scaffold.md` | A, P | advanced | STRONG | Single-passage paper: provisional thesis, section questions, word budget, [VERIFY] resource slots |
+| `biblical_academic_thesis_dissertation_workshop.md` | A | advanced | STRONG | Topic → researchable questions; contribution claims as hypotheses; method/language/source feasibility |
+| `biblical_academic_literature_review_plan.md` | A, P | advanced | STRONG | History of research vs. interpretation; discipline indexes; multilingual terms; extraction record |
+| `biblical_academic_annotated_bibliography_builder.md` | A, P | intermediate | STRONG | Verify gate; annotations from the writer's notes only; Quarantine for unlocatable/AI-suggested sources |
+| `biblical_academic_peer_review_self_check.md` | A, P | advanced | STRONG | Referee-style self-review: anchored scores, located findings, blocking vs. minor, clean-pass valve |
+
+**B. Children's/youth curriculum depth — additions to `ministry-contexts/` (+2 · audience M · child-safety note)**
+
+| Prompt | Audience | Difficulty | Guard | What it does |
+|---|---|---|---|---|
+| `biblical_ministry_age_graded_story_retelling.md` | M | intermediate | child-safety | One story for ages 3–5, 6–8, 9–11; lines tagged text vs. teacher framing; embellishment audit |
+| `biblical_ministry_special_needs_inclusive_teaching.md` | M | intermediate | child-safety + no-diagnosis | Universal defaults + sensory/cognitive/communication/physical access; safety plan per policy; cross-links `domain-parenting/` neurodivergence and `domain-discipleship/` accessibility |
+
+### Still future (direction only · ~10-16 prompts)
 
 Not designed in detail. Requires more user-demand signal or cross-domain coordination.
 
-- **`academic-writing/`** (~5) — exegesis paper scaffold, thesis workshop, literature review plan,
-  annotated bibliography builder (STRONG), peer-review self-check. Cross-links `domain-research-academic/`.
 - **Digital Bible-study tools** (~3) — tool-category workflow guide (STRONG on feature claims),
   PKM for Bible study (cross-link `domain-productivity/`), audio/podcast learning integration.
 - **Pastoral counseling Scripture layer** (~4-5) — pre-marital counseling Bible component,
   addiction/recovery Scripture engagement, spiritual formation practices, chaplaincy Scripture selection.
   Highest boundary risk — must not cross into `domain-psychology/` clinical territory.
-- **Children's/youth curriculum depth** (~3-4) — age-graded Bible-story retelling, youth apologetics,
-  intergenerational worship, special-needs inclusive teaching (cross-link `domain-parenting/`).
+- **Children's/youth curriculum depth, remainder** (~2) — youth apologetics, intergenerational worship.
 - **Jewish-Christian dialogue** (~2-3) — how Jewish tradition reads a specific OT text, Second Temple
   Judaism context for NT. High-value for scholarship; elevated risk of misrepresenting Jewish tradition.
 
@@ -264,4 +287,10 @@ Not designed in detail. Requires more user-demand signal or cross-domain coordin
 | Phase 2 | 32 | 71 | 7 |
 | Phase 3A | 27 | 98 | 9 (+ `church-staff-ministry-ops/`, `group-leader-facilitation/`) |
 | Phase 3B | 23 | 121 | 11 (+ `apologetics-engagement/`, `biblical-theology-method/`) |
-| Phase 3C (future) | ~15-25 | ~136-146 | 12-13 |
+| Original-languages depth (outside phase plan) | 8 | 129 | 11 |
+| Phase 3C — shipped part (2026-10-03) | 7 | 136 | 12 (+ `academic-writing/`) |
+| Phase 3C — remaining (future) | ~10-16 | ~146-152 | 12-13 |
+
+The 8 original-languages prompts outside the phase plan are verbal aspect, voice/deponency, idiom and
+figures, semantic domains, Masora and Qere/Ketiv, accentuation, comparative Semitics, and Koine papyri
+register. Cumulative figures are the on-disk count of prompt files (READMEs and this roadmap excluded).

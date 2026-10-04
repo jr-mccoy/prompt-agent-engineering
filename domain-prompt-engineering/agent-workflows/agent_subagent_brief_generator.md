@@ -3,8 +3,9 @@ title: "Generate a Brief for a Subagent"
 category: prompt-engineering/agent-workflows
 description: "Author a self-contained brief that a sub-agent can run without seeing the parent's context, with explicit scope, return contract, and authority limits."
 techniques:
-  - DC-01
+  - CM-01
   - CM-02
+  - CM-09
 difficulty: intermediate
 tags:
   - subagent

@@ -3,8 +3,9 @@ title: "Multi-Persona Router in a Single System Prompt"
 category: prompt-engineering/system-prompts
 description: "Design a system prompt that hosts multiple sub-personas behind a deterministic router so the right persona handles the right input."
 techniques:
-  - DC-01
-  - PR-01
+  - AG-07
+  - RP-01
+  - OC-09
 difficulty: advanced
 tags:
   - multi-persona

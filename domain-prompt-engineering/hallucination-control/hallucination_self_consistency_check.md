@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - CM-02
   - QA-01
-  - PR-02
+  - QA-15
 difficulty: advanced
 tags:
   - hallucination

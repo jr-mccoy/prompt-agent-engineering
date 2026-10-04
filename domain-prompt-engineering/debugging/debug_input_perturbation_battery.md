@@ -5,9 +5,8 @@ description: "Apply a fixed battery of small input perturbations (case, whitespa
 techniques:
   - ST-02
   - QA-01
-  - PR-01
-  - PR-02
-  - DC-01
+  - QA-10
+  - QA-02
 difficulty: intermediate
 tags:
   - input_perturbation

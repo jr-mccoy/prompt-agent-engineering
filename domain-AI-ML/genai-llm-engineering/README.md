@@ -2,7 +2,7 @@
 
 Building systems *with* language models rather than training them — RAG design and its retrieval depth, evaluation and judging, guardrails, observability, cost and latency, structured output, and the interfaces through which a model reaches tools. The domain's largest non-agentic subdirectory.
 
-**30 prompts.** Part of [`domain-AI-ML/`](../README.md) — see the domain README for the lifecycle routing table and the [boundary with adjacent domains](../README.md#boundary-with-adjacent-domains).
+**32 prompts.** Part of [`domain-AI-ML/`](../README.md) — see the domain README for the lifecycle routing table and the [boundary with adjacent domains](../README.md#boundary-with-adjacent-domains).
 
 ## When to enter here
 
@@ -84,6 +84,8 @@ Building systems *with* language models rather than training them — RAG design
 | Prompt | Use it to |
 |---|---|
 | [`genai_mcp_tool_interface_design.md`](genai_mcp_tool_interface_design.md) | Design tool and server interfaces a model can use correctly — naming and describing tools for a reader with no context, shaping responses so a model can act on them, and treating tool output as untrusted content that enters the model's context. |
+| [`genai_mcp_server_design_review.md`](genai_mcp_server_design_review.md) | Review a whole MCP server — primitive inventory and granularity, descriptions as the model's selection signal, schemas, pagination and response budgets, recoverable error shapes, transport, auth, versioning, and evidence from real model clients — as a ranked findings list. |
+| [`genai_mcp_server_threat_model.md`](genai_mcp_server_threat_model.md) | Threat-model an MCP deployment — tool poisoning, injection through results, confused deputy and over-broad scopes, token passthrough, rug-pulls, cross-tool exfiltration, local-server privilege — with capability-removing mitigations. |
 
 **Vector-DB playbooks**
 

@@ -2,7 +2,7 @@
 
 Cloud provider-specific prompts for AWS, Azure, GCP, and serverless architectures.
 
-**Total Prompts:** 22
+**Total Prompts:** 25
 
 ---
 
@@ -16,6 +16,8 @@ Cloud provider-specific prompts for AWS, Azure, GCP, and serverless architecture
 | `cloud_serverless_function_analysis.md` | Lambda/Functions analysis |
 | `cloud_cost_optimization.md` | Reduce cloud spending |
 | `cloud_finops_cost_allocation.md` | FinOps tagging, allocation, showback/chargeback, unit economics |
+| `cloud_bill_spike_investigation.md` | Explain a jump in the bill: billing artefacts first, then service → SKU → resource; growth vs regression vs anomaly |
+| `cloud_commitment_rightsizing_plan.md` | Remove waste and rightsize, then size RI/savings-plan/CUD commitments to the usage floor with break-even utilisation and laddering |
 | `cloud_security_review.md` | Cloud security audit |
 | `cloud_workflow_guide.md` | Overall cloud workflow guide (reference) |
 
@@ -37,6 +39,8 @@ _Additional specialized prompts are present in this directory; the table above l
 
 ### Multi-Cloud
 - `cloud_cost_optimization.md` - Cost reduction strategies
+- `cloud_bill_spike_investigation.md` - Cost spike investigation
+- `cloud_commitment_rightsizing_plan.md` - Commitment sizing after rightsizing
 - `cloud_security_review.md` - Security posture review
 
 ---
@@ -52,6 +56,10 @@ _Additional specialized prompts are present in this directory; the table above l
 **"Optimize Lambda functions"** → `cloud_serverless_function_analysis.md`
 
 **"Reduce cloud costs"** → `cloud_cost_optimization.md`
+
+**"Why did our cloud bill jump?"** → `cloud_bill_spike_investigation.md`
+
+**"Should we buy reserved instances / savings plans, and how much?"** → `cloud_commitment_rightsizing_plan.md`
 
 **"Cloud security audit"** → `cloud_security_review.md`
 

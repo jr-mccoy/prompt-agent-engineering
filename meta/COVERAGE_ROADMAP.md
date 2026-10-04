@@ -1,6 +1,11 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-09-24:** **Waves 1–5 shipped.**
+**Status as of 2026-10-04:** **Waves 1–10 shipped (§6).**
+- **Wave 10 (2026-10-04):** technique hygiene (13 undefined codes remapped in 110 files, a CI check on every prompt's `techniques:` list) and agentic-resource depth (7 skills, 4 agents, 4 commands, 4 personas; 3 one-skill categories folded into real ones).
+- **Wave 9 (2026-10-03):** 39 prompts deepening thin subfolders in frontend, game development, creative writing and seven single-prompt folders, plus 15 routing cases (§6).
+- **Wave 8 (2026-10-03):** 36 prompts on the second set of absent subjects (security operations, data engineering, FinOps, design systems, accessibility beyond components, ML for science, dementia care, DIY, cooking, special-education disputes, dating) and the first part of biblical-studies Phase 3C, plus 13 routing cases (§6).
+- **Wave 7 (2026-10-03):** 46 prompts finishing the parenting caregiver folders, public administration, personal-development and negotiation Wave 2 items, institution-side student success, maintenance and reliability, and professional-services firm operations, plus 16 routing cases (§6).
+- **Wave 6 (2026-10-02):** 48 prompts filling documented-but-unbuilt promises (parenting, policy, the operations / data-analytics / health-wellness Wave 2 lists) and six absent subjects, plus 15 routing regression cases and a CI repair (§6).
 - **Wave 1:** 40 prompts. That is four new domains of 8 prompts each (ADR-0043)
   and `domain-personal-development/job-search/` (8). Six hollow READMEs now
   describe what actually exists.
@@ -178,6 +183,8 @@ These are built from their own roadmaps, not re-planned here.
 | [`domain-childrens-writing/EXPANSION_ROADMAP.md`](../domain-childrens-writing/EXPANSION_ROADMAP.md) | 12 brainstorm items, 0 built |
 | [`domain-psy-ops/EXPANSION_ROADMAP.md`](../domain-psy-ops/EXPANSION_ROADMAP.md) | 9 Wave 2 candidates |
 | [`domain-negotiation/EXPANSION_ROADMAP.md`](../domain-negotiation/EXPANSION_ROADMAP.md) | Wave 2 contexts: landlord, insurance, medical bill, severance, licensing |
+| [`domain-parenting/README.md`](../domain-parenting/README.md) (added 2026-10-02) | 10 planned `caregiver-facing/` folders and the whole `family-support-professional/` tree. Waves 6–7 built all 10 caregiver folders; the `family-support-professional/` tree remains unscheduled |
+| [`domain-policy/README.md`](../domain-policy/README.md) (added 2026-10-02) | Five analyses promised "for Wave 4" that Wave 4 never included. Built in Wave 6 |
 
 ## 4. Taxonomy decision ([ADR-0043](adr/0043-subject-homes-for-sales-health-analytics-ops.md))
 
@@ -605,6 +612,321 @@ regression queries. The 8 prompts already retagged in Wave 5 were skipped.
 Every duplicate sweep came back clean. All 33 have complete frontmatter,
 exactly three `related_prompts`, and the Tier 1 sections.
 
+### Wave 6: kept promises and first absent subjects — shipped (48 prompts, 15 cases, 2026-10-02)
+
+A second audit after Wave 5 found three kinds of weakness this roadmap had not
+tracked: promises made in domain READMEs that no wave picked up (parenting,
+policy), domain Wave 2 lists that were never built (operations, data-analytics,
+health-wellness), and subjects with no prompts that §7 had not deferred. Wave 6
+takes the documented promises first, then six absent subjects. Every candidate
+went through a `pae search` duplicate sweep; none was dropped.
+
+**Part 0, committed separately:** CI still ran the unit tests of the deleted
+`continuity-kit/` and four links pointed at it. The step, the registry allowlist
+entry and the live references were removed; ADRs and worked-run records keep
+their historical mentions. The §9 audit command path was also corrected.
+
+#### `domain-parenting/caregiver-facing/` (12), prefix `parenting_`, safety-gated
+
+| Folder | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `transitions-events/` | `new_sibling_arrival_prep`, `moving_house_child_transition`, `child_grief_after_death`, `new_school_transition_plan` | `parenting_sibling_spacing_dynamics`, `home_moving_checklist` (logistics), `parenting_hard_topics_age_appropriate_scripts`, `parenting_daycare_transition_plan` |
+| `safety-risk/` | `body_safety_consent_lessons`, `home_alone_readiness_check`, `other_homes_safety_questions`, `home_childproofing_by_stage` | `parenting_puberty_prep_conversation_scripts`, `parenting_tween_emerging_independence_negotiation` |
+| `health-body-sleep-feeding/` | `picky_eating_mealtime_plan`, `bedtime_resistance_plan_4_12`, `bedwetting_response_plan`, `medical_procedure_preparation` | `parenting_infant_feeding_troubleshooter`, `parenting_teen_eating_disorder_signal_response`, `parenting_sleep_regression_decoder` (0–3) |
+
+Each carries the domain's Safety Block. Picky eating screens for ARFID, feeding
+disorder and growth faltering before any home plan; body safety carries a
+disclosure card with reporting routes; bedwetting routes to the pediatrician
+first. Online grooming was left out: `psyops_youth_online_manipulation_guide`
+covers it.
+
+#### `domain-policy/` (5), flat, prefix `policy_`
+
+| File | Nearest neighbour (distinct from) |
+|---|---|
+| `policy_regulatory_impact_analysis.md` | `legal_regulatory_change_impact_assessment` (a company's compliance view) |
+| `policy_program_evaluation_design.md` | `program_program_evaluation_framework` (education), `science_causal_inference_design` |
+| `policy_public_comment_letter.md` | `advocacy_regulator_complaint_drafter`, `legal_meet_and_confer_letter` |
+| `policy_legislative_bill_analysis.md` | `legal_statutory_interpretation` |
+| `policy_cross_jurisdiction_comparison.md` | `legal_jurisdiction_split_analysis` (case law) |
+
+#### Domain Wave 2 lists (13 + 4)
+
+| Domain | Files | Source |
+|---|---|---|
+| `operations` (5) | `ops_sales_and_operations_planning_cycle`, `ops_freight_mode_selection`, `ops_supplier_corrective_action_8d`, `ops_standard_work_and_kaizen_event`, `ops_facility_layout_flow_analysis` | [`EXPANSION_ROADMAP.md`](../domain-operations/EXPANSION_ROADMAP.md) Wave 2 |
+| `data-analytics` (4) | `analytics_spreadsheet_model_audit` (≠ `finance_dcf_model_auditor`), `analytics_request_intake_triage`, `analytics_data_dictionary_writer` (≠ `science_data_dictionary_designer`), `analytics_business_forecast_for_planners` (narrowed to operational volumes; ≠ `finance_rolling_forecast_designer`) | [`EXPANSION_ROADMAP.md`](../domain-data-analytics/EXPANSION_ROADMAP.md) Wave 2 |
+| `health-wellness` (4), safety-gated | `fitness_mobility_and_flexibility_routine`, `fitness_return_after_break_plan`, `fitness_active_ageing_plan` (clinician clearance recorded), `nutrition_hydration_and_heat_plan` (STRONG-GUARD; no dosing numbers) | [`EXPANSION_ROADMAP.md`](../domain-health-wellness/EXPANSION_ROADMAP.md) Wave 2 |
+
+#### Absent subjects (18)
+
+| Home | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `domain-operations/quality-safety/` (4, new), `ops_` | `spc_control_chart_review`, `oee_loss_analysis`, `job_hazard_analysis`, `safety_incident_investigation` | `ops_root_cause_a3_report`, `ops_capacity_and_bottleneck_model`, `legal_workplace_investigation_plan_and_report` (misconduct). EHS prompts require a qualified safety professional's review and make no regulatory determination. |
+| `domain-specialized-fields/insurance/` (4, new), `insurance_` | `commercial_submission_builder`, `underwriting_risk_assessment`, `claim_file_coverage_review`, `renewal_remarketing_plan` | `finance_business_insurance_coverage_review` (the insured), `advocacy_insurance_claim_denial_appeal` and `negotiation_insurance_claim_settlement` (the claimant). Coverage determinations rest with licensed adjusters and counsel. |
+| `domain-AI-ML/` (4) | `genai_mcp_server_design_review`, `genai_mcp_server_threat_model`, `aiagent_computer_use_task_design`, `aiagent_browser_agent_trace_review` | `genai_mcp_tool_interface_design` (one tool), `aiagent_agentic_threat_model`, `browserauto_*` (a person's own automation), `agent_observability_prompt_for_traces` |
+| `domain-professional-writing/journalism/` (3, new), `journalism_` | `story_desk_edit`, `source_verification_log`, `investigative_project_plan` | `writing_news_article_inverted_pyramid` (drafting), `legal_defamation_publicity_risk_screen` |
+| `domain-professional-writing/translation/` (3, new), `translation_` | `project_brief_and_glossary`, `quality_review_mqm`, `transcreation_brief` | `localization_translation_management_workflow` (software i18n) |
+
+The four AI-ML prompts cite 15 technique codes that no prompt had cited before
+(GT, IPC and AG families), where the definitions genuinely apply.
+
+**Dropped as duplicates:** none.
+
+**Routing after Wave 6** (diagnostics harness; `case-147`–`case-161` added):
+
+| | Before (146 cases) | After (161 cases) |
+|---|---|---|
+| R@1 / R@3 / R@5 | 77.9 / 83.7 / 86.0% | 75.8 / 82.8 / 85.9% |
+| scope@1 / scope@3 (router) | 84.5 / 91.8% | 83.2 / 92.8% |
+
+- **No original case lost ground.** Case 058 improved (rank 2 → 1). Case 141's
+  top hit is now the freight-mode prompt, still in an acceptable scope. Case 012
+  keeps its top hit but routes `ambiguous` instead of `matched`; it has no
+  expected status.
+- **Case 128 regressed during the build and was fixed.** The 8D prompt outranked
+  the reorder-policy prompt on incidental words ("Before" in its title, "stock in
+  transit" in its description). Both were reworded; no query or label changed.
+- **New cases:** 11 of 15 route to an acceptable scope first, and 7 of the 13
+  task cases rank their target first. Honest misses, kept as they are: 147 (new sibling), 148 (home alone),
+  152 (8D, rank 3), 153 (OEE, rank 2, wrong scope), 155 (computer-use, rank 4,
+  wrong scope); 154 ranks its target 2nd.
+- **Leakage disclosure.** The case queries were written before any target was
+  indexed, but the draft list sat beside the authoring brief where the
+  authoring agents could read it. Two targets picked up tags echoing case 161
+  and case 154 (`kid-only-eats-five-foods`, `dinner-battles-every-night`,
+  `package-for-underwriters`). Those tags were replaced with independent wording
+  before the cases were first measured. A tag-overlap scan of all 48 prompts
+  against all 15 queries found no other echo beyond ordinary domain vocabulary.
+
+**Left for later:** the misses above (147, 148, 152, 153, 155); `REPO_MAP.md`
+counts for untouched domains were not re-audited.
+
+### Wave 7: remaining documented promises — shipped (46 prompts, 16 cases, 2026-10-03)
+
+Every candidate went through a `pae search` duplicate sweep. Where an existing
+prompt already did the named job, the item was re-angled to the real gap and the
+change recorded below; one was dropped.
+
+#### `domain-parenting/caregiver-facing/` (23), prefix `parenting_`, safety-gated
+
+All seven remaining planned caregiver folders now exist, each with a README.
+
+| Folder | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `coparenting-family-structure/` (4) | `kinship_care_first_months`, `foster_placement_first_weeks`, `solo_parent_load_and_support`, `lgbtq_parented_family_conversations` | `legal_third_party_custody_visitation_analysis`, `parenting_coparenting_with_unsafe_or_absent_parent` |
+| `tech-digital/` (3) | `family_media_plan_all_ages`, `ai_chatbot_companion_family_rules`, `gaming_conflict_and_spending_reset` | `parenting_first_phone_decision_framework` and `parenting_video_game_agreement_designer` (ages 9–12), `psyops_youth_online_manipulation_guide` |
+| `identity-culture/` (3) | `race_racism_conversations_by_age`, `multilingual_heritage_language_plan`, `interfaith_household_parenting_plan` (logistics only; §7 still defers comparative religion) | `parenting_hard_topics_age_appropriate_scripts` |
+| `parent-capacity/` (3) | `parent_overload_load_redesign`, `fourth_trimester_support_plan`, `couple_strain_under_parenting_load` (private abuse screen first) | `clientself_caregiver_burnout_plan`, `parenting_postpartum_parent_capacity_check`, `psychology_gottman_intervention_planner` |
+| `academics-skills/` (3) | `homework_battles_plan_5_8`, `struggling_reader_home_support`, `learning_concern_school_meeting` | `parenting_homework_autonomy_handoff_9_12`, `teaching_dyslexia_structured_literacy_plan` (teacher-facing), `advocacy_school_written_request` |
+| `mental-health-behavior/` (4) | `school_refusal_young_child_5_8`, `young_child_lying_response_3_8`, `aggression_toward_family_safety_plan`, `child_suicide_talk_response_6_12` | the 9–12 and 13–18 versions (`parenting_school_refusal_decoder_tween`, `parenting_lying_pattern_function_analysis`, `parenting_teen_self_harm_signal_response`) |
+| `neurodivergence/` (3) | `tics_tourette_home_school_plan`, `twice_exceptional_child_support`, `dcd_dyspraxia_home_support` | `parenting_sensory_at_home_toolkit`, `parenting_school_accommodation_conversation_prep` |
+
+**Re-angled to avoid duplicates:** first-phone readiness became a whole-household
+media plan; gaming time became a reset after a spending incident; postpartum became
+a plan made before the birth; dyslexia-at-home merged into the struggling-reader
+prompt and DCD/dyspraxia took its slot (nothing in the repo covered it); school
+refusal, lying and suicide talk were narrowed to the younger ages that had no prompt.
+
+#### `domain-policy/public-administration/` (6, new), prefix `policy_`
+
+`local_budget_shortfall_options`, `grant_post_award_compliance` (≠
+`nonprofit_foundation_grant_proposal`, pre-award), `agency_rulemaking_plan` (the
+agency side; ≠ Wave 6 `policy_public_comment_letter`), `constituent_casework_system`,
+`agency_performance_measures`, `public_meeting_staff_brief`.
+
+#### Other domains (17)
+
+| Home | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `domain-personal-development/prompts/` (4) | `emotional-fitness/emotionalfitness_money_beliefs_and_avoidance`, `stakeholder/stakeholder_peer_conflict_navigation`, `stakeholder/stakeholder_reorg_navigation`, `identity/identity_meaning_sources_and_legacy_map` | `finance_net_worth_cashflow_diagnostic` (the numbers), `stakeholder_visibility_and_credit`, `lifetransition_navigating_new_role`, `identity_purpose_reignition` |
+| `domain-negotiation/` (2) | `craft/negotiation_analytics_scorecard`, `channels/negotiation_ai_agent_mediated` | `negotiation_post_negotiation_debrief` (one deal), `negotiation_authority_mandate_limits`. The roadmap's human-broker half stays open. |
+| `domain-education-teaching/` (5) | new `program/student-success/`: `program_first_year_advising_touchpoint_model`, `program_at_risk_student_outreach_plan`, `program_retention_persistence_data_review`; `instructor/reporting-communication/`: `teaching_parent_teacher_conference_prep`, `teaching_multilingual_family_outreach` | `program_early_warning_system_designer`, `teaching_parent_communication_composer` |
+| `domain-operations/quality-safety/` (2) | `ops_preventive_maintenance_program`, `ops_repeat_failure_reliability_analysis` | `ops_oee_loss_analysis`, `risk_fmea_analysis` |
+| `domain-specialized-fields/professional-services/` (4, new), prefix `proserv_` | `utilization_realization_review`, `fixed_fee_overrun_diagnosis`, `engagement_staffing_plan`, `independence_conflict_check` | `services_capacity_and_utilization_planner` (solo practice), `finance_engagement_profitability_postcalc` (after close), `legal_conflicts_check_memo` (law firms) |
+
+**Dropped as duplicates (1):** the first-year early-alert system →
+`program/evaluation-analytics/program_early_warning_system_designer.md`. A
+first-year advising model took its slot.
+
+**Routing after Wave 7** (`case-162`–`case-177` added):
+
+| | Before (161 cases) | After (177 cases) |
+|---|---|---|
+| R@1 / R@3 / R@5 | 75.8 / 82.8 / 85.9% | 75.4 / 82.5 / 86.8% |
+| scope@1 / scope@3 (router) | 83.2 / 92.8% | 84.4 / 92.9% |
+
+- **Earlier cases.** Case 131 (food bank grant) regressed during the build: the
+  foster prompt matched on "family", "first", "time" and "food". Its title and
+  description were reworded ("Birth-Parent Visits", "meals") and the case is back
+  to its pre-Wave-7 result. Case 153 (OEE) slipped from rank 2 to 3, still in the
+  top 3, behind the new repeat-failure prompt, which legitimately matches "machine"
+  and "break down"; left as is. Cases 148 and 155 improved.
+- **New cases:** 14 of 16 route to an acceptable scope first, and 11 of the 15
+  task cases rank their target first. Honest misses: 162 (kinship, rank 5), 164
+  (first phone, rank 4, wrong scope), 174 (retention, rank 4), 175 (preventive
+  maintenance, not in the top 5, wrong scope).
+- **Leakage controls.** The case queries were drafted before authoring and kept
+  out of the authoring agents' reach; they were written to disk only after every
+  target file was final. Four targets carry tags overlapping a query's wording
+  (`feel-guilty-spending-money`, `coworker-takes-credit-for-my-work`,
+  `allowable-costs`, `set-limits-for-my-ai-assistant`); file timestamps show the
+  tags predate the query file, so this is shared everyday phrasing.
+
+**Left for later:** the misses above; the negotiation roadmap's human-broker
+item; `domain-parenting/family-support-professional/` (8 planned subfolders, not
+yet scheduled in any wave).
+
+### Wave 8: second set of absent subjects — shipped (36 prompts, 13 cases, 2026-10-03)
+
+| Home | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `domain-software-engineering/analysis/security/` (4), `security_` | `detection_engineering_review`, `threat_hunting_plan`, `vulnerability_management_program`, `soc_alert_triage_runbook` (engineering-run on-call) | `risk_security_alert_triage_runbook` (non-engineers), `aiagent_secops_autonomous_defense`, `security_dependency_vulnerability_analysis` (one codebase) |
+| `domain-software-engineering/data-engineering/` (5, new), `dataeng_` | `pipeline_design_review`, `dimensional_model_review`, `data_quality_test_strategy`, `incremental_load_backfill_plan`, `data_downtime_postmortem` | `skills/data-engineering/*` (tool how-to), `commands/architecture/data_pipeline`, `mldata_data_contract_design`, `analytics_sql_query_correctness_review` |
+| `domain-software-engineering/cloud/` (2), `cloud_` | `bill_spike_investigation`, `commitment_rightsizing_plan` | `cloud_finops_cost_allocation` (the program), `cloud_cost_optimization` (broad sweep) |
+| `domain-frontend-development/design-direction/` (3) | `frontend_design_system_audit`, `frontend_design_token_architecture`, `frontend_design_system_component_governance` | `frontend_styling_tailwind_design_system`, `frontend_styling_css_architecture` (one technology) |
+| `domain-frontend-development/accessibility/` (2) | `frontend_accessibility_documents_slides`, `frontend_accessibility_program_governance` | `frontend_accessibility_wcag_audit`, the accessibility skills and agent |
+| `domain-science/ml-for-science/` (3, new) | `science_ml_project_scoping`, `science_ml_validation_split_design` (narrowed: sample dependence, external-validation tiers, grouped uncertainty), `science_ml_interpretation_for_claims` | `science_ml_for_science_benchmark_design`, `mlframe_is_this_ml_problem`, `rai_interpretability_analysis` |
+| `domain-productivity/home-life/` (7), `home_` | `dementia_caregiver_communication`, `dementia_home_safety_plan`, `parent_cannot_live_alone_talk`, `diy_repair_triage` (hard stops for gas, panel, structural, asbestos/lead), `small_repair_walkthrough`, `learn_to_cook_progression`, `pantry_first_weeknight_cooking` | `psychology_geriatric_depression_vs_dementia`, `personal_caring_for_aging_parent` (chooses the arrangement), `home_seasonal_maintenance_calendar`, `home_meal_plan_week` |
+| `domain-written-advocacy/institutions-and-records/` (1) | `advocacy_special_education_disagreement` (IEP or eligibility disagreement, independent evaluation request) | `advocacy_school_written_request` (first requests), `parenting_learning_concern_school_meeting` |
+| `domain-personal-development/prompts/relationships/` (2) | `relationships_dating_after_divorce`, `relationships_early_dating_safety_plan` | `lifetransition_post_breakup_rebuild`, `parenting_divorce_new_partner_introduction_timing`, `psyops_coercive_control_pattern_recognition` |
+| `domain-biblical-studies/academic-writing/` (5, new) and `ministry-contexts/` (2) | exegesis paper scaffold, thesis workshop, literature review plan, annotated bibliography builder, peer-review self-check (all STRONG-GUARD: no invented sources, pages, readings or quotations); age-graded story retelling; special-needs inclusive teaching | `research_thesis_dissertation_structure`, `research_literature_review_plan`, `biblical_passage_exegesis_workflow`, `biblical_ministry_kids_bible_lesson_builder` |
+
+**Decision recorded:** clinical-trial design stays in `domain-science/` (the
+SPIRIT/CONSORT protocol outliner and the randomization, power and analysis-plan
+prompts already live there); see that domain's EXPANSION_ROADMAP, Open Question 2.
+
+**Dropped as duplicates:** none. Re-angled: the data-quality prompt became a test
+strategy (contracts are covered in AI-ML), the commitment prompt was narrowed to
+post-rightsizing purchases, the ML validation prompt was narrowed to what the
+existing benchmark-design prompt lacks, and the special-education letter covers
+disagreement after a decision rather than a first request.
+
+**Routing after Wave 8** (`case-178`–`case-190` added, all task cases):
+
+| | Before (177 cases) | After (190 cases) |
+|---|---|---|
+| R@1 / R@3 / R@5 | 75.4 / 82.5 / 86.8% | 73.2 / 82.7 / 85.8% |
+| scope@1 / scope@3 / kind@1 (router) | 84.4 / 92.9 / 100% | 83.8 / 93.5 / 97.7% |
+
+- **Earlier cases.**
+  - Case 162 (kinship) fell out of the top 5 during the build. The new dating
+    prompt matched on "kids" and "after". "Kids" was reworded to "children" in its
+    title and description, and the case is back at rank 5.
+  - Case 161 (picky eating, route) now routes to `productivity` first. The
+    pantry-cooking prompt matches "dinner" and "food", which are its core
+    vocabulary, so it was left as is. This is a real regression, and it is recorded.
+  - Cases 004 (rank 5 → 6), 032 (status only) and 058 (rank 1 → 2, its pre-Wave-6
+    rank; kind@1 returns to 97.7%) moved without any Wave 8 prompt overtaking them.
+    Corpus growth shifted term weights.
+- **New cases:** 11 of 13 reach an acceptable scope first, and 8 rank their target
+  first. Misses: 178 (detections, rank 3), 179 (vulnerability backlog, top hit is a
+  TON smart-contract scanner skill, wrong scope), 185 (dripping faucet, rank 2,
+  wrong scope), 186 (learn to cook, rank 2), 189 (protein-stability ML, not in the
+  top 5).
+- **Leakage controls:** the same as Wave 7. Three targets carry tags overlapping a
+  query's wording (`make-pdf-accessible`, `screen-reader-cant-read-our-report`,
+  `write-bible-paper-for-class`, `special-education`). Their file timestamps predate
+  the query file.
+
+**Still open from the Wave 8 plan:** energy-sector and music-production work
+(an undecided §7 proposal), and biblical-studies Phase 3C's pastoral-counseling and
+Jewish–Christian dialogue items.
+
+### Wave 9: depth in thin subfolders — shipped (39 prompts, 15 cases, 2026-10-03)
+
+Each new prompt had to do a different job from the one or two already in its
+subfolder. Where a suggested topic was already covered, the agent picked the real
+gap instead; nothing was dropped.
+
+| Domain | Subfolder: added | Re-angled because already covered |
+|---|---|---|
+| `frontend-development` (13) | `animation/` motion system design, motion-safety audit; `qwik/` City loaders/actions, reactive state and tasks; `remix/` React Router v7 migration, sessions/auth/caching; `solidjs/` SolidStart data/SSR, control flow and components; `astro/` rendering modes and server islands; `forms/` multi-step wizard state; `performance/` field Core Web Vitals regression; `testing/` API mocking strategy; `typescript/` API contract typing | Remix revalidation and error boundaries (`frontend_remix_data_loading`), Solid reactivity pitfalls, Astro hydration (`frontend_astro_islands_architecture`), visual regression (`testing_visual_regression`), strict-mode migration (`frontend_typescript_type_safety_audit`) |
+| `game-development` (9) | `ai/` stealth perception fairness, squad tactics and encounter director; `audio/` adaptive music, gameplay-readability mix; `narrative/` branching state management, environmental storytelling; `economy/` currency sink/faucet audit; `graphics/` art-to-technical budget; `level-design/` telemetry flow analysis | — |
+| `creative-writing` (6) | `poetry/` meter, scansion and fixed forms; chapbook and collection ordering; `creative-nonfiction/` personal-essay reflection and the turn; ethics of writing about real people; `publishing-career/` self- vs traditional publishing; `songwriting/` co-writing sessions and splits | melody and prosody (`writing_song_structure_lyric_revision`) |
+| Single-prompt folders (11) | `product-management/templates/` PRD one-pager, PRD change-request record; `hr-management/onboarding/` preboarding and first week, onboarding program audit; `finance/options/` covered call and cash-secured put; `prompt-engineering/prompt-optimization/` eval-driven iteration, failure-cluster prioritiser; `utilities/` template placeholder audit; `operations/project-delivery/` schedule recovery, closeout and lessons learned; `health-wellness/sleep-recovery/` shift-work and jet-lag timing (readiness gate; no sleep-aid advice) | the first-90-days plan (`hr_onboarding_thirty_sixty_ninety`), the decision log (`decisiondoc_log_entry`), the regression-diff reviewer (`improve_prompt_diff_explainer`) |
+
+**Dropped as duplicates:** none.
+
+**Routing after Wave 9** (`case-191`–`case-205` added). Five cases target
+*pre-existing* prompts in the deepened subfolders, to check that the new siblings
+did not take their queries. All five still rank their target first.
+
+| | Before (190 cases) | After (205 cases) |
+|---|---|---|
+| R@1 / R@3 / R@5 | 73.2 / 82.7 / 85.8% | 75.7 / 84.3 / 87.1% |
+| scope@1 / scope@3 / kind@1 (router) | 83.8 / 93.5 / 97.7% | 84.6 / 93.5 / 100% |
+
+- **Earlier cases.** Cases 058 (rank 2 → 1) and 164 (rank 4 → 3) improved.
+  Case 185 (dripping faucet) slipped from rank 2 to 3: the new economy prompt is a
+  "sink/faucet" audit, which is that subject's standard term, so it was left as
+  is. Case 093 ("onboarding", ambiguous) swapped between two HR onboarding prompts
+  with no change in scope or status.
+- **New cases:** 14 of 15 reach an acceptable scope first, and 12 of the 13 task
+  cases rank their target first. Misses: 200 (self- vs traditional publishing,
+  rank 4) and 203 (waking at 3am, route: the top hit is a learning prompt; it was
+  wrong before Wave 9 too).
+- **Leakage controls:** the same as Waves 7–8. Two targets carry tags
+  overlapping a query's wording (the audio mix and branching-state prompts). Every
+  Wave 9 file was saved before the query file was written.
+
+### Wave 10: agentic-resource and technique hygiene — shipped (2026-10-04)
+
+**Technique remap.** The 13 undefined codes (DC-01, PR-01/02/03, CR-01/02,
+IT-01/02, AN-01, SC-01/03, FP-01, WF-01; 133 citations) were remapped file by
+file to existing catalog codes, chosen from what each prompt actually does. No
+new codes were defined. The main targets were:
+- CR-01/02 → RT-01 (Chain-of-Thought), 18 healthcare files. The healthcare roadmap line that defined CR-01 as CoT was corrected.
+- DC-01 (42) → about 20 different codes, for example AG-11, QA-05, NE-05, DT-01, CM-01.
+- PR-01 → RP-01, QA-11, DS-29, QA-10.
+- PR-02 → QA-01, RT-01, QA-15.
+- PR-03 → ED-06, MP-04 and others.
+- IT-01/02 → MP-03. SC-01 → RP-01. SC-03 and WF-01 → ST-02. AN-01 → RT-02. FP-01 → QA-12.
+
+The 46 "ID (Name)" entries in the iOS and Android prompts are now bare IDs. Where
+the name showed the author meant a different technique, the ID was switched: "ST-01
+(Structured Task Decomposition)" → DT-01, "RT-02 (Checklist Verification)" → QA-10,
+"DS-02 (Domain-Specific Terminology)" → CM-01, "RT-05 (Constraint Specification)"
+→ CM-02, "QA-01 (Quality Assurance Gates)" → QA-08.
+
+110 files were touched. The two `ai-governance-audit-kit/referenced-prompts/`
+copies of edited prompts were re-synced with `check_vendored_copies.py --fix`.
+
+**Validator.** `scripts/validate_technique_catalog.py` now checks every
+`techniques:` entry in `PROMPT_INDEX.json`, and it runs in CI:
+- An unknown or malformed ID is a hard error. The ID pattern is generic, so an uncatalogued prefix such as `DC-` is caught.
+- A deprecated (merged) ID is a warning that names its merge target. OC-01 (141 citations) and QA-03 (1) remain as valid aliases.
+- A parenthesised name that differs from the catalog's is a warning.
+- `--uncited` lists the active IDs no prompt cites, by family: 100 now, informational only.
+- Eight unit tests were added to `scripts/pae_registry/tests/test_metadata_and_techniques.py`.
+
+**One-skill categories folded.** These moves preserve identity:
+- `skills/ai-native-rollouts` → `skills/non-coding/business/`
+- `skills/review-prompt` → `skills/llm-application-dev/`
+- `skills/vibe-coding-rescue` → `skills/developer-tools/`
+
+Each move is recorded in `meta/REORG_MAP.tsv`. Each UID is kept, and the retired
+public ID is in `meta/registry/aliases.tsv`.
+
+**New agentic resources (19).**
+
+| Kind | Added | Re-angled or dropped |
+|---|---|---|
+| Skills (7) | `accessibility/` component-accessibility-contracts, accessibility-regression-gate; `game-development/` game-feel-juice-pass, playtest-telemetry-capture (with a tested log validator); `devops/` executable-runbook-authoring, infrastructure-drift-detection; `observability/` slo-burn-rate-alerting (its rules pass `promtool check rules` and `promtool test rules`) | Five re-angled away from an existing prompt, skill or command |
+| Agents (4) | `deployment/` release-readiness-gatekeeper, progressive-delivery-controller (advisory; each change needs human confirmation); `orchestration/` task-decomposition-coordinator, result-reconciler | — |
+| Commands (4) | `data-analysis/` dataset_profile, metric_sanity_check; `documentation/` docs_drift_check, changelog_reconcile | changelog-from-commits re-angled (the `changelog-automation` skill exists) |
+| Personas (4) | `product/` product-operations lead, API/platform product manager; `specialized/` geospatial analyst, open-source maintainer | pricing strategist, accessibility reviewer and data-privacy reviewer dropped as duplicates |
+
+**Routing:** no case changed scope. Case 058 ("persona that evaluates and compares
+tools") went from rank 1 back to 2. It is a persona-versus-prompt near-tie that has
+flipped back and forth as the corpus grows, so kind@1 reads 97.7%. Case 164 slipped
+from rank 3 to 4. Scope@1 stays at 84.6% over 205 cases.
+
+**Left for later:**
+- Several Android prompts still list more than 5 techniques, and their body lists mislabel some valid codes.
+- The `slo-implementation` skill's example alerts use 30-day burn-rate thresholds on a 28-day SLO.
+- Most `personas/README.md` tree filenames are out of date.
+
 ## 7. Explicitly not gaps / deferred
 
 | Subject | Why not now |
@@ -639,7 +961,7 @@ python3 scripts/generate_repo_facts.py --write
 # bump counts in scripts/pae_registry/tests/test_generation.py
 python3 domain-agentic-resources/inventory_counts.py --check
 python3 scripts/validate_naming_conventions.py --ci
-python3 scripts/validate_technique_catalog.py && python3 audit_technique_index.py
+python3 scripts/validate_technique_catalog.py && (cd techniques && python3 audit_technique_index.py)
 python3 scripts/check_relative_links.py
 python3 scripts/check_frontmatter_references.py --check
 python3 scripts/check_vendored_copies.py

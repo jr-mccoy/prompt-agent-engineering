@@ -1,13 +1,13 @@
 ---
 title: "Home Life Prompts"
 category: productivity/home-life
-description: "Practical prompts for household management, family coordination, travel, home maintenance, household paperwork, and family caregiving and bereavement admin."
-updated: "2026-09-24"
+description: "Practical prompts for household management, family coordination, travel, home maintenance and first-time repairs, learning to cook, household paperwork, family caregiving (including dementia care at home) and bereavement admin."
+updated: "2026-10-03"
 ---
 
 # Home Life Prompts
 
-Practical, household-level prompts for running a home — meal planning, chore systems, family schedule coordination, appointment prep, home maintenance, decluttering, moving, travel, household paperwork, and the admin side of family caregiving and bereavement. Each prompt produces a concrete, actionable output matched to your household's specific situation rather than generic advice.
+Practical, household-level prompts for running a home — meal planning, learning to cook and pantry-first weeknight cooking, chore systems, family schedule coordination, appointment prep, home maintenance and first-time DIY repairs, decluttering, moving, travel, household paperwork, and the practical side of family caregiving (including caring for someone with dementia at home) and bereavement. Each prompt produces a concrete, actionable output matched to your household's specific situation rather than generic advice.
 
 ---
 
@@ -28,6 +28,13 @@ Practical, household-level prompts for running a home — meal planning, chore s
 | `home_medicare_insurance_enrollment_prep.md` | Medicare and Insurance Enrollment Prep | Gather documents and a usage profile (prescriptions, doctors, expected care), write questions for the official program, a counselling service or an agent, and verify every premium, penalty and date from an official source. |
 | `home_family_caregiving_coordination.md` | Family Caregiving Coordination | Run care after the arrangement is decided: weekly rota in hours with backups, shared expense ledger and settle-up, care information sheet, weekly sibling update, and a monthly load check. |
 | `home_caregiver_respite_plan.md` | Caregiver Respite Plan | Schedule weekly, monthly and annual breaks for the primary carer with named cover and backup, a handover sheet, agreed protection rules, and an early-warning list routed to support — practical, not clinical. |
+| `home_dementia_caregiver_communication.md` | Talking With a Parent Who Has Dementia | Situation playbook (repeated questions, asking for someone who has died, refusing care, sundowning) with validation-style responses, a family phrase card, and a red-flag list that sends sudden change or possible delirium to clinicians. |
+| `home_dementia_home_safety_plan.md` | Dementia Home Safety and Daily-Routine Plan | Rate wandering, driving, medications, stove, falls, firearms, scams and time alone green/amber/red; dated fixes for reds, a 15-minute missing-person protocol, the driving conversation, a daily routine, and escalation triggers. |
+| `home_parent_cannot_live_alone_talk.md` | When a Parent Can No Longer Live Alone | Evidence log, sibling pre-talk, the conversation with the parent (their goals first, options not ultimatums), scripted hard responses, money boundaries routed to an elder-law attorney or adviser, a reversible trial, and the transition plan. |
+| `home_diy_repair_triage.md` | First-Time DIY Repair Triage | Sort each household problem into emergency / call a licensed pro / DIY with care / simple DIY, with hard stops (gas, panel, structural, asbestos, lead, roofs), cost-of-a-mistake, permit/warranty/lease checks, and a brief for the pro. |
+| `home_small_repair_walkthrough.md` | Small Home Repair Walkthrough | One triaged fix as a beginner's walkthrough: exact part, tools, tested shut-off, numbered steps with checkpoints, stop signals, and a check-your-work test. |
+| `home_learn_to_cook_progression.md` | Learn-to-Cook Skill Progression | Week-zero food, knife and fire safety, then one technique a week with a repeated anchor dish and an observable benchmark, sized to the kitchen, budget and evenings. |
+| `home_pantry_first_weeknight_cooking.md` | Pantry-First Weeknight Cooking | Tonight's dinner and the next few nights from what is already in the fridge: food-safety discards, use-first triage, flexible templates, and a gap list of three items or fewer. |
 
 ---
 
@@ -48,6 +55,9 @@ Use the prompts here when the task is **household-level logistics** — planning
 - Work through the practical admin after someone close dies
 - Prepare documents and questions for a Medicare or health-insurance enrollment decision
 - Run a family's caregiving week to week — rota, shared costs, sibling updates — and protect the main carer's breaks
+- Talk with, and keep safe at home, a parent who has dementia — and plan the conversation when they can no longer live alone
+- Decide whether a household repair is a DIY job or a pro's, and walk through a small fix step by step
+- Learn to cook from scratch, or make tonight's dinner from what is already in the fridge
 
 ---
 
@@ -63,7 +73,9 @@ Use the prompts here when the task is **household-level logistics** — planning
 | `automation/` | Workflow automation design | You want to systematize and automate a repetitive process |
 | `validation/` | Decision and reasoning checks | You've made a decision and want to pressure-test it |
 
-**Caregiving and estate boundaries:** Deciding *how* to care for a parent, or *which* facility, is a high-stakes decision in `domain-personal-development/major-decisions/` (`personal_caring_for_aging_parent.md`, `personal_care_facility_comparison.md`); this directory runs the arrangement once decided. Estate *planning* decisions live in `major-decisions/personal_estate_wishes_attorney_prep.md` and `domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md`; the after-a-death checklist here is admin only, with grief routed to `domain-psychology/client-self-use/grief-loss/`. None of these prompts states legal deadlines, insurance figures or eligibility rules — each is marked for verification.
+**Caregiving and estate boundaries:** Deciding *how* to care for a parent, or *which* facility, is a high-stakes decision in `domain-personal-development/major-decisions/` (`personal_caring_for_aging_parent.md`, `personal_care_facility_comparison.md`); this directory runs the arrangement once decided. Estate *planning* decisions live in `major-decisions/personal_estate_wishes_attorney_prep.md` and `domain-finance/personal-finance-planning/finance_estate_beneficiary_review.md`; the after-a-death checklist here is admin only, with grief routed to `domain-psychology/client-self-use/grief-loss/`. The two dementia prompts and the living-alone conversation prompt are family-carer tools: diagnosis, delirium, medication and capacity questions go to clinicians, and power-of-attorney, benefits and asset questions to an elder-law attorney or adviser. None of these prompts states legal deadlines, insurance figures or eligibility rules — each is marked for verification.
+
+**Repair and cooking boundaries:** `home_diy_repair_triage.md` and `home_small_repair_walkthrough.md` are for occupants; contractor-side pricing and bids live in `domain-specialized-fields/trades/`, and gas, electrical-panel, structural, asbestos and lead work is always routed to licensed professionals. The cooking prompts teach skills and use what is on hand; *what* to eat for health lives in `domain-health-wellness/nutrition/`, and medical diets go to a clinician or registered dietitian.
 
 **Parenting-adjacent tasks:** Some prompts here (family schedule coordinator, appointment prep for school meetings) overlap with the `domain-parenting/` directory. Use `home-life/` when the task is primarily logistical coordination; use `domain-parenting/` when the task is about parenting behavior, child development, or parent-school communication strategy.
 

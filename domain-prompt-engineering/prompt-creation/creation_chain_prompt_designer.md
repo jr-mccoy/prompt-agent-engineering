@@ -4,7 +4,9 @@ category: prompt-engineering/prompt-creation
 description: "Decompose a task into a chain of prompts with explicit handoff contracts, intermediate validation, and failure routing."
 techniques:
   - ST-02
-  - DC-01
+  - DT-01
+  - AG-07
+  - RT-11
 difficulty: advanced
 tags:
   - chains

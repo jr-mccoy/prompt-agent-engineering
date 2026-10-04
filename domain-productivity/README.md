@@ -13,7 +13,7 @@ Individual productivity and life-management prompts:
 3. **Daily Planning** - Daily task list building, morning planning, EOD shutdown, priority triage, overwhelm triage, errand batching, context switching, energy-task matching
 4. **Deep Work** - Personal focus-system audits, designs, reloads, environment friction, future-self handoffs, experiments, meeting and message load
 5. **Goals & Habits** - Annual goal breakdown, habit stack design, monthly check-ins, goal reality checks, habit repair, personal tracking dashboards
-6. **Home Life** - Meal planning, chore systems, family schedule coordination, appointment prep, seasonal home maintenance, decluttering, moving, travel planning
+6. **Home Life** - Meal planning, learning to cook, pantry-first cooking, chore systems, family schedule coordination, appointment prep, seasonal home maintenance, DIY repair triage and walkthroughs, decluttering, moving, travel planning, family and dementia caregiving
 7. **Operating Cadence** - A self-directed chief-of-staff cadence: morning briefing, end-of-day reconciliation, weekly review, meeting prep, authority boundaries, delegating to AI sub-agents
 8. **Reviews** - Time audit, weekly systems review, monthly/quarterly cadence, solo-dev weekly rhythm
 9. **School & Student** - Study schedules, exam prep, assignment tracking, semester planning, reading triage, note organization
@@ -55,13 +55,13 @@ Counts are prompt files only: every `.md` in the subfolder except `README.md`.
 | `daily-planning/` | 9 | Task list builder, priority triage, morning planning, EOD shutdown, overwhelm triage, errand batching, context switching, energy matching, energy by task type |
 | `deep-work/` | 23 | Focus parameters, calendar audit, focus and reload rituals, experiments, environment friction, future-self handoff, task decomposition and calendar chunking, meeting cost/killer/async conversion, message triage, energy and self-interruption audits |
 | `goals-habits/` | 6 | Annual goal breakdown, habit stack design, monthly check-in, goal reality check, habit repair, personal tracking dashboard |
-| `home-life/` | 13 | Meal planning, chore rotation, family schedule, appointment prep, seasonal maintenance, declutter, moving, travel, household paperwork, after-a-death admin, Medicare/insurance enrollment prep, family caregiving coordination, caregiver respite |
+| `home-life/` | 20 | Meal planning, chore rotation, family schedule, appointment prep, seasonal maintenance, declutter, moving, travel, household paperwork, after-a-death admin, Medicare/insurance enrollment prep, family caregiving coordination, caregiver respite, dementia communication, dementia home safety, parent-can't-live-alone conversation, DIY repair triage, small-repair walkthrough, learn-to-cook progression, pantry-first weeknight cooking |
 | `operating-cadence/` | 11 | Morning briefing, brain dump to tasks, fuzzy-goal clarification, meeting prep and pre-reads, end-of-day reconciliation, weekly review, authority boundaries, AI workflow architecture, sub-agent task specs, CLAUDE.md memory scaffold |
 | `reviews/` | 4 | Time audit, weekly systems review, monthly/quarterly cadence, solo-dev weekly operating rhythm |
 | `school-student/` | 6 | Study schedule, exam prep, assignment tracker, semester planner, reading triage, note organization |
 | `validation/` | 11 | Adversarial mini-check, am-I-being-nuts, quick and full reality checks, final gate, disconfirmation pass, confidence calibration, audit boundary check, session/project ground rules, judgement assessment |
 | `workplace/` | 8 | Meeting agendas, status updates, follow-up emails, inbox triage, deadline juggling, delegation, saying no to overcommitment, 1:1 prep |
-| **Total** | **114** | |
+| **Total** | **121** | |
 
 ---
 
@@ -112,7 +112,7 @@ Counts are prompt files only: every `.md` in the subfolder except `README.md`.
 
 Use these prompts when you need to:
 - Figure out what to do today and in what order (`daily-planning/`)
-- Manage household logistics: meals, chores, schedules, appointments (`home-life/`)
+- Manage household logistics: meals, chores, schedules, appointments, repairs, caregiving (`home-life/`)
 - Study for exams or manage academic workload (`school-student/`)
 - Run workplace workflows: meetings, emails, status updates, delegation (`workplace/`)
 - Build or repair a goal or habit system (`goals-habits/`)

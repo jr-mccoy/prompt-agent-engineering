@@ -14,7 +14,7 @@ Prompts are written for users who already know roughly what they need. They omit
 
 ## Directory Map
 
-**326 prompts across 16 subdirectories.** Counts are per-directory totals.
+**330 prompts across 16 subdirectories.** Counts are per-directory totals.
 
 ```
 domain-AI-ML/
@@ -48,20 +48,22 @@ domain-AI-ML/
 ├── model-optimization-efficiency/(11) Quantization (PTQ + QAT), pruning, distillation,
 │                                     latency/throughput, hardware selection, edge deployment,
 │                                     compression tradeoffs, LLM inference serving, model routing/cascades
-├── genai-llm-engineering/     (30)   RAG design & eval, fine-tuning workflows, LLM eval, LLM-as-judge,
+├── genai-llm-engineering/     (32)   RAG design & eval, fine-tuning workflows, LLM eval, LLM-as-judge,
 │                                     guardrails, observability, embeddings, chunking, function calling,
 │                                     multilingual, long-context, RAFT, structured extraction at scale;
 │                                     pgvector, Pinecone, Weaviate & Milvus playbooks; query rewriting,
 │                                     reranking, vector-index tuning, citation grounding, GraphRAG,
-│                                     model-facing tool interfaces (MCP)
-├── agentic-ai-systems/        (42)   The domain's largest subdirectory, organized as a build pipeline:
+│                                     model-facing tool interfaces (MCP), MCP server design review
+│                                     & threat model
+├── agentic-ai-systems/        (44)   The domain's largest subdirectory, organized as a build pipeline:
 │                                     Gate 0 justify-the-agent → design (architecture, tools, memory, eval,
 │                                     cost, HITL, failure modes) → coordinate a fleet (planning, topology,
 │                                     protocol, routing) → run it durably (observability, durable execution,
 │                                     deployment, context at scale, long-running continuity & recovery,
 │                                     project memory) → secure it (threat model, trust boundaries,
 │                                     least agency, zero trust, supply chain, injection & memory-poisoning
-│                                     defense, enforced gates) → improve it.
+│                                     defense, enforced gates) → improve it; plus computer-use/browser
+│                                     agent task design and trace review.
 │                                     See agentic-ai-systems/README.md for the sequencing.
 ├── model-security/            (10)   ML threat model, adversarial robustness & defense, data poisoning
 │                                     & backdoors, model extraction, membership inference, model
@@ -323,6 +325,8 @@ Organized by **lifecycle stage**, not by the wave that shipped a prompt. Match t
 | "Make answers verifiably traceable to sources" | `genai-llm-engineering/genai_citation_grounding_attribution.md` |
 | "Queries need facts linked across documents (GraphRAG)" | `genai-llm-engineering/genai_graphrag_knowledge_graph_design.md` |
 | "Design tools/an MCP server a model can use correctly" | `genai-llm-engineering/genai_mcp_tool_interface_design.md` |
+| "Review my whole MCP server (tool sprawl, descriptions, response size, errors, auth, versioning)" | `genai-llm-engineering/genai_mcp_server_design_review.md` |
+| "Is this MCP server safe to connect? (tool poisoning, token passthrough, rug-pull)" | `genai-llm-engineering/genai_mcp_server_threat_model.md` |
 | "Stand up a vector DB (pgvector / Pinecone / Weaviate / Milvus)" | `genai-llm-engineering/genai_pgvector_vector_db_playbook.md` and siblings |
 
 ### 11. Agentic systems
@@ -343,6 +347,8 @@ Full pipeline sequencing lives in [`agentic-ai-systems/README.md`](agentic-ai-sy
 | "Zero-trust maturity / supply-chain attestation" | `agentic-ai-systems/aiagent_zero_trust_maturity_assessment.md`, `aiagent_supply_chain_aibom.md` |
 | "Observe, deploy, and improve it" | `agentic-ai-systems/aiagent_observability_telemetry_design.md`, `aiagent_deployment_serving_architecture.md`, `aiagent_self_improvement_online_adaptation.md`, `aiagent_fleet_cost_attribution_optimization.md` |
 | "Emit a master orchestrator for a multi-stage system" | `agentic-ai-systems/aiagent_orchestrator_generator.md` |
+| "Let an agent operate a browser / desktop app" | `agentic-ai-systems/aiagent_computer_use_task_design.md` |
+| "Why did my browser agent click / submit the wrong thing?" | `agentic-ai-systems/aiagent_browser_agent_trace_review.md` |
 
 ### 12. Secure the model
 

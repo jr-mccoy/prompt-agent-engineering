@@ -6,6 +6,7 @@
 
 | Skill | Description |
 |-------|-------------|
+| [vibe-coding-rescue](vibe-coding-rescue/) | Diagnose and recover an AI-assisted ("vibe-coded") project that has hit a wall: confused codebase, looping agent, security debt, undocumented handoff (folded in from its own top-level category, coverage Wave 10) |
 | [auth-implementation-patterns](auth-implementation-patterns/) | Master authentication and authorization patterns including JWT, OAuth2, session management, and RBAC |
 | [bazel-build-optimization](bazel-build-optimization/) | Optimize Bazel builds for large-scale monorepos with remote execution and caching |
 | [session-history-finder](session-history-finder/) | Find and recover content from Claude Code session history files for tracking changes and recovering lost code |

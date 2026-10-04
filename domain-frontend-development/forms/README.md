@@ -1,13 +1,13 @@
 # Forms Prompts
 
 **Category:** Frontend Development / Forms
-**Prompts:** 2
+**Prompts:** 3
 
 ---
 
 ## Overview
 
-Production-grade prompts for building and auditing web forms — covering layered validation strategy (schema, client, server, async) and accessible, well-timed error UX. The two prompts are designed to be used together: design the validation logic, then make its errors perceivable and operable for every user.
+Production-grade prompts for building and auditing web forms — covering layered validation strategy (schema, client, server, async) and accessible, well-timed error UX. The prompts are designed to be used together: design the validation logic, make its errors perceivable and operable for every user, and — for long flows — design the multi-step state architecture that holds it all together.
 
 ## Prompts
 
@@ -15,6 +15,7 @@ Production-grade prompts for building and auditing web forms — covering layere
 |--------|-------------|------------|
 | [frontend_forms_validation_design.md](frontend_forms_validation_design.md) | Design/audit a layered validation strategy (Zod/Yup schemas, client+server enforcement, async checks, error UX) across React Hook Form, Formik, or native forms | Intermediate |
 | [frontend_forms_accessibility_ux.md](frontend_forms_accessibility_ux.md) | Audit/design accessible forms: label association, error announcement, fieldset/legend, required/invalid states, keyboard, inline validation timing | Intermediate |
+| [frontend_forms_multi_step_wizard_state.md](frontend_forms_multi_step_wizard_state.md) | Design multi-step form state: step graph from answers, branch invalidation, versioned draft persistence by data sensitivity, URL-synced back/refresh/deep links, rechecked idempotent final submit | Intermediate |
 
 ## Key Concepts
 
@@ -32,6 +33,9 @@ Use `frontend_forms_validation_design.md` to inventory rules, define the schema 
 
 ### Making a Form Accessible
 Use `frontend_forms_accessibility_ux.md` to audit labels, error announcement, grouping, keyboard operability, and validation timing against WCAG.
+
+### Building a Long or Branching Flow
+Use `frontend_forms_multi_step_wizard_state.md` to design the step graph, draft saving, navigation and final submit for applications, quotes and onboarding wizards.
 
 ---
 

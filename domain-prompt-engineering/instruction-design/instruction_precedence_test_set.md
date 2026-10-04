@@ -5,9 +5,9 @@ description: "Generate an adversarial test set that proves whether the model hon
 techniques:
   - ST-02
   - QA-01
-  - PR-01
-  - PR-02
-  - DC-01
+  - QA-02
+  - QA-11
+  - CM-14
 difficulty: intermediate
 tags:
   - precedence

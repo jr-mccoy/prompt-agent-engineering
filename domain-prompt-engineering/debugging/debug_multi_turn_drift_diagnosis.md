@@ -5,9 +5,8 @@ description: "Locate the turn at which a long conversation's behavior degraded (
 techniques:
   - ST-02
   - QA-01
-  - PR-01
-  - PR-02
-  - DC-01
+  - RT-10
+  - AG-11
 difficulty: advanced
 tags:
   - multi_turn

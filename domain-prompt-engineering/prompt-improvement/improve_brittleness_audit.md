@@ -4,7 +4,8 @@ category: prompt-engineering/prompt-improvement
 description: "Identify rules in a prompt that pass on the happy path but break on edge cases, and propose hardening for each."
 techniques:
   - QA-01
-  - PR-03
+  - QA-10
+  - MP-04
 difficulty: advanced
 tags:
   - brittleness

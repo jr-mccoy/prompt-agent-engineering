@@ -5,7 +5,7 @@ description: "Define a naming pattern that lets the model and humans pick the ri
 techniques:
   - ST-03
   - CM-02
-  - DC-01
+  - AG-11
 difficulty: beginner
 tags:
   - tool_use

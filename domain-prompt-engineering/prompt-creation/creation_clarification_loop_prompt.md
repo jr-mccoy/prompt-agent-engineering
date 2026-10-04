@@ -4,7 +4,8 @@ category: prompt-engineering/prompt-creation
 description: "Author a prompt that asks targeted questions before producing output, with budget caps and a fallback when the user refuses."
 techniques:
   - ST-02
-  - PR-02
+  - MP-03
+  - MP-06
 difficulty: intermediate
 tags:
   - clarification

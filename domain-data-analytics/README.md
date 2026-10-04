@@ -33,9 +33,9 @@ analysts report.
 
 | Subdirectory | What it covers | Prompts |
 |---|---|---|
-| `framing-and-metrics/` | Before the query: the analysis plan, the metric spec, the driver tree | 3 |
-| `analysis-and-sql/` | Doing the analysis: query correctness, metric-movement investigation, cohort retention | 3 |
-| `experiments-and-reporting/` | Turning results into decisions: experiment readouts, dashboard critique | 2 |
+| `framing-and-metrics/` | Before the query: request triage, the analysis plan, the metric spec, the driver tree, the data dictionary | 5 |
+| `analysis-and-sql/` | Doing the analysis: query correctness, spreadsheet audit, metric-movement investigation, cohort retention | 4 |
+| `experiments-and-reporting/` | Turning results into decisions: experiment readouts, dashboard critique, operational volume forecasts | 3 |
 
 **File naming:** `analytics_{specific_function}.md`, one prefix across all subdirectories.
 
@@ -45,15 +45,18 @@ analysts report.
 
 | File | Purpose |
 |---|---|
+| `analytics_request_intake_triage.md` | Queue of inbound asks → real question and decision per ask, redirects and merges first, effort bands, anchored value score, ranked schedule, a reply to every requester |
 | `analytics_question_to_analysis_plan.md` | Vague stakeholder ask → decision, answerable question, decision rule written before data, capped cut list, stop rule |
 | `analytics_metric_definition_spec.md` | Grain, numerator/denominator, filters, window and time zone, edge cases, gaming vectors, owner, reconciliation |
 | `analytics_kpi_tree_decomposition.md` | Outcome → additive/multiplicative driver tree that reconciles, log-decomposed attribution, dominant driver |
+| `analytics_data_dictionary_writer.md` | Warehouse table cards (grain, key, layer, refresh), column meaning in business terms, value lists flagged closed/open, time columns, known traps, joins, metrics fed; unconfirmed = `[verify]` |
 
 ### `analysis-and-sql/`
 
 | File | Purpose |
 |---|---|
 | `analytics_sql_query_correctness_review.md` | Does the query return the right number? Grain, fan-out, nulls, time zones, dedup, survivorship, each proved by a diagnostic |
+| `analytics_spreadsheet_model_audit.md` | Any operating workbook: model map, inconsistent formulas, hard-codes, short ranges, lookup and unit errors, links and circularity, independent reproduction, severity vs. tolerance |
 | `analytics_metric_movement_investigation.md` | "Why did X drop?" in fixed order: noise, data, calendar, mix vs rate, segments, events; residual stated |
 | `analytics_cohort_retention_analysis.md` | Cohort key, return event, clock; triangle with censoring; read down columns, rows, diagonals; mix check |
 
@@ -63,21 +66,26 @@ analysts report.
 |---|---|
 | `analytics_ab_test_readout.md` | Gated readout: SRM, integrity, primary with CI vs MDE, guardrail margins, novelty, multiplicity, decision memo |
 | `analytics_dashboard_critique.md` | Tile-by-tile: question, definition, trust, form, context; Keep/Fix/Merge/Cut; ranked change list |
+| `analytics_business_forecast_for_planners.md` | Operational volumes (orders, tickets, calls): cleaned history, baseline and damped trend, seasonal indices, owned event lines, back-tested range, plan percentile, bias/WMAPE tracking |
 
 ## Routing within the domain
 
 | If you need to… | Start with |
 |---|---|
+| Rank a pile of incoming data requests | `framing-and-metrics/analytics_request_intake_triage.md` |
 | Scope a request before doing it | `framing-and-metrics/analytics_question_to_analysis_plan.md` |
+| Document what tables and columns mean | `framing-and-metrics/analytics_data_dictionary_writer.md` |
 | Settle "which number is right" | `framing-and-metrics/analytics_metric_definition_spec.md` |
 | See which lever moves a top-line KPI | `framing-and-metrics/analytics_kpi_tree_decomposition.md` |
 | Check a query before trusting its output | `analysis-and-sql/analytics_sql_query_correctness_review.md` |
+| Check a spreadsheet before trusting its output | `analysis-and-sql/analytics_spreadsheet_model_audit.md` |
 | Explain a metric that moved | `analysis-and-sql/analytics_metric_movement_investigation.md` (often after the KPI tree) |
 | Tell whether retention is improving | `analysis-and-sql/analytics_cohort_retention_analysis.md` |
 | Call a finished experiment | `experiments-and-reporting/analytics_ab_test_readout.md` |
 | Fix a dashboard nobody trusts | `experiments-and-reporting/analytics_dashboard_critique.md` |
+| Forecast orders, tickets, or calls for staffing | `experiments-and-reporting/analytics_business_forecast_for_planners.md` |
 
-A typical chain: **plan → spec → query review → analysis → readout or dashboard.**
+A typical chain: **triage → plan → spec → query review → analysis → readout or dashboard.**
 
 ## Not here (negative boundaries)
 
@@ -94,6 +102,9 @@ A typical chain: **plan → spec → query review → analysis → readout or da
 | Event tracking, GA4, tag manager, UTM setup | `domain-agentic-resources/skills/marketing/analytics-tracking/` |
 | Choosing a product north-star metric | `domain-product-management/prompts/product_north_star_metric_definition.md` |
 | Finance KPI packs, budget variance, unit economics | `domain-finance/` (`accounting-controllership/`, `corporate-finance-fpa/`) |
+| DCF / valuation model methodology review | `domain-finance/valuation/finance_dcf_model_auditor.md` |
+| P&L rolling forecast process; ML forecasting model choice | `domain-finance/corporate-finance-fpa/finance_rolling_forecast_designer.md`; `domain-AI-ML/specialized-ml/time-series/` |
+| Research-dataset codebooks (variable-level, FAIR) | `domain-science/computational/science_data_dictionary_designer.md` |
 
 ## Related
 

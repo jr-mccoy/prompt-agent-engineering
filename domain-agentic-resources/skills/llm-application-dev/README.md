@@ -74,6 +74,7 @@ Skills for designing, optimizing, and managing prompts at scale.
 |-------|-------------|-----------|
 | [prompt-engineering-patterns](prompt-engineering-patterns/) | Advanced prompt engineering techniques for production | 1 script, 5 refs, 2 assets |
 | [prompt-optimizer](prompt-optimizer/) | Transform vague prompts into precise specifications using EARS | 4 refs |
+| [review-prompt](review-prompt/) | Senior-engineer review of a reusable prompt: blocking gaps vs nitpicks, minimal fix per gap, clear verdict (folded in from its own top-level category, coverage Wave 10) | SKILL.md |
 
 **When to use:** Improving LLM output quality, reducing hallucinations, or establishing prompt templates for teams.
 

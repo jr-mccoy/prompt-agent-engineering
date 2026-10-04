@@ -5,8 +5,8 @@ description: "Write tool descriptions, parameter docs, and disambiguators so the
 techniques:
   - ST-03
   - CM-02
-  - DC-01
-  - PR-02
+  - AG-37
+  - AG-38
 difficulty: intermediate
 tags:
   - tool_use

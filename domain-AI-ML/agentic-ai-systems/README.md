@@ -29,6 +29,7 @@ Start here for any single agent. Establish the architecture before adding coordi
 | [`aiagent_failure_mode_analysis.md`](aiagent_failure_mode_analysis.md) | Enumerate and mitigate failure modes (loops, hallucinated calls, runaway cost, stalls). |
 | [`aiagent_human_in_the_loop_design.md`](aiagent_human_in_the_loop_design.md) | Place approval gates and escalation thresholds calibrated to risk. |
 | [`aiagent_safety_sandboxing.md`](aiagent_safety_sandboxing.md) | Bound blast radius by construction — permissions, isolation, oversight. |
+| [`aiagent_computer_use_task_design.md`](aiagent_computer_use_task_design.md) | Design a task for a computer-use/browser agent — API-first gate, sandbox, action space, manifest-gated irreversible actions, credentials kept out of context, on-screen injection, step budgets. |
 
 ### Stage A — Coordinate a fleet (multi-agent depth)
 When one agent demonstrably can't do the job. Decide *whether* to split first, then *how* to coordinate.
@@ -58,6 +59,7 @@ Moving from demo to production traffic and long-running tasks.
 | [`aiagent_project_memory_interop_adapter_design.md`](aiagent_project_memory_interop_adapter_design.md) | Design interop adapters for plain files, CLI, MCP resources/prompts/tools, hooks, and agent-specific signpost files. |
 | [`aiagent_long_running_task_setup.md`](aiagent_long_running_task_setup.md) | Assemble one coherent **long-running setup** — durability, idempotent/compensated side effects, context strategy, durable human waits, observability, consistency eval. |
 | [`aiagent_failure_recovery_rescope.md`](aiagent_failure_recovery_rescope.md) | Decide what to do **after a run fails/stalls** — triage (transient/systemic/spec), then resume vs compensate-and-rerun vs safely re-scope. |
+| [`aiagent_browser_agent_trace_review.md`](aiagent_browser_agent_trace_review.md) | Review a failed or risky browser/computer-use run from its trace and screenshots — first divergence, fault class (perception, grounding, planning, environment, injection, gate gap), reconciliation, fixes, regression evals. |
 
 ### Stage C — Secure it (safety & security at scale)
 Agent-specific security beyond sandbox isolation.

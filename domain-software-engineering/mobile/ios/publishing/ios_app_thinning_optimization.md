@@ -3,10 +3,10 @@ title: "iOS App Thinning Optimization"
 category: mobile-development
 description: "Modular guide for optimizing iOS app size through App Thinning techniques including slicing, bitcode, on-demand resources, asset catalog optimization, and binary size analysis."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - DS-02 (Domain-Specific Terminology)
-  - AN-01 (Analysis Framework)
+  - DT-01
+  - QA-10
+  - CM-01
+  - RT-02
 difficulty: intermediate
 tags:
   - ios
@@ -299,10 +299,10 @@ After completing this prompt, you will have:
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Five modular optimization areas |
-| RT-02 (Checklist Verification) | Checklists for each optimization technique |
-| DS-02 (Domain-Specific Terminology) | App Thinning, slicing, ODR, Asset Catalogs, link maps |
-| AN-01 (Analysis Framework) | Binary size analysis with component breakdown |
+| DT-01 (Hierarchical Task Breakdown) | Five modular optimization areas |
+| QA-10 (Test Battery Protocol) | Checklists for each optimization technique |
+| CM-01 (Explicit Context Framing) | App Thinning, slicing, ODR, Asset Catalogs, link maps |
+| RT-02 (Multi-Dimensional Analysis Framework) | Binary size analysis with component breakdown |
 
 ## Related Prompts
 

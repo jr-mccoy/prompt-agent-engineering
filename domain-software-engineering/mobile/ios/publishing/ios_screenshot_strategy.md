@@ -3,10 +3,9 @@ title: "iOS Screenshot Strategy"
 category: mobile-development
 description: "Modular guide for designing App Store screenshots and app previews including device frames, localization, feature highlighting, narrative flow, and conversion optimization."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - DS-02 (Domain-Specific Terminology)
-  - CR-01 (Creative Strategy)
+  - DT-01
+  - QA-10
+  - CM-01
 difficulty: beginner
 tags:
   - ios
@@ -263,10 +262,9 @@ After completing this prompt, you will have:
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Five-module screenshot and preview workflow |
-| RT-02 (Checklist Verification) | Design, localization, and device checklists |
-| DS-02 (Domain-Specific Terminology) | App Store screenshot specifications and formats |
-| CR-01 (Creative Strategy) | Narrative flow design and caption copywriting |
+| DT-01 (Hierarchical Task Breakdown) | Five-module screenshot and preview workflow |
+| QA-10 (Test Battery Protocol) | Design, localization, and device checklists |
+| CM-01 (Explicit Context Framing) | App Store screenshot specifications and formats |
 
 ## Related Prompts
 

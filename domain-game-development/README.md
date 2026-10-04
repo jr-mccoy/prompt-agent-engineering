@@ -1,8 +1,8 @@
 # Game Development & Game Design Prompts
 
-Comprehensive prompts for game development covering design, architecture, engine-specific patterns, testing, multiplayer networking, performance optimization, graphics programming, audio systems, level design, narrative, NPC AI, game economy and live-ops, and production (pitching and postmortems).
+Comprehensive prompts for game development covering design, architecture, engine-specific patterns, testing, multiplayer networking, performance optimization, graphics programming and art budgets, audio systems, adaptive music and mix readability, level design and telemetry flow analysis, narrative (quests, campaign-wide state, environmental storytelling), NPC AI (decision architecture, perception and stealth fairness, squad tactics and directors), game economy and live-ops, and production (pitching and postmortems).
 
-**Total Prompts:** 33 (Phase 1: 24; Phase 2, coverage Wave 4: 9)
+**Total Prompts:** 42 (Phase 1: 24; Phase 2, coverage Wave 4: 9; Phase 3, coverage Wave 9: 9)
 
 ---
 
@@ -16,12 +16,12 @@ Comprehensive prompts for game development covering design, architecture, engine
 | [`testing/`](testing/) | 4 | Gameplay test plans, automated testing, platform certification, playtest protocol |
 | [`multiplayer/`](multiplayer/) | 3 | Netcode architecture, state sync, matchmaking |
 | [`performance/`](performance/) | 2 | Frame budget analysis, rendering optimization |
-| [`graphics/`](graphics/) | 2 | Shader review, lighting strategy |
-| [`audio/`](audio/) | 1 | Audio system architecture |
-| [`level-design/`](level-design/) | 2 | Procedural content generation, handcrafted blockout and pacing |
-| [`economy/`](economy/) | 2 | Game economy system design, live-ops calendar and monetization ethics |
-| [`narrative/`](narrative/) | 1 | Quest structure and branching dialogue |
-| [`ai/`](ai/) | 1 | NPC and enemy decision architecture (FSM, BT, utility, GOAP) |
+| [`graphics/`](graphics/) | 3 | Shader review, lighting strategy, art-direction-to-technical budget |
+| [`audio/`](audio/) | 3 | Audio system architecture, adaptive music design, gameplay readability mix pass |
+| [`level-design/`](level-design/) | 3 | Procedural content generation, handcrafted blockout and pacing, telemetry flow analysis |
+| [`economy/`](economy/) | 3 | Game economy system design, live-ops calendar and monetization ethics, live sink/faucet audit |
+| [`narrative/`](narrative/) | 3 | Quest structure and branching dialogue, campaign-wide narrative state, environmental storytelling |
+| [`ai/`](ai/) | 3 | NPC and enemy decision architecture (FSM, BT, utility, GOAP), perception and stealth fairness, squad tactics and encounter director |
 | [`production/`](production/) | 2 | Publisher/investor pitch, project postmortem |
 
 ---
@@ -86,12 +86,15 @@ Comprehensive prompts for game development covering design, architecture, engine
 |--------|-----------|-------------|
 | [Shader Review](graphics/graphics_shader_review.md) | advanced | Review shader code for correctness and performance |
 | [Lighting Strategy](graphics/graphics_lighting_strategy.md) | intermediate | Design baked vs real-time lighting strategies |
+| [Art Direction to Technical Budget](graphics/graphics_art_technical_budget.md) | advanced | Per-asset-class texture, triangle, material and VFX budgets derived from platform limits and the art direction's dominant driver |
 
 ### Audio
 
 | Prompt | Difficulty | Description |
 |--------|-----------|-------------|
 | [Audio System Architecture](audio/audio_system_architecture.md) | intermediate | Design audio bus hierarchies and middleware integration |
+| [Adaptive Music System Design](audio/audio_adaptive_music_system.md) | intermediate | Music states, vertical vs horizontal technique, transition matrix with latencies, hysteresis, repetition budget |
+| [Gameplay Readability Mix Pass](audio/audio_gameplay_readability_mix.md) | intermediate | Information-ranked cues, LUFS/true-peak, masking, repetition and localisation tests |
 
 ### Level Design
 
@@ -99,6 +102,7 @@ Comprehensive prompts for game development covering design, architecture, engine
 |--------|-----------|-------------|
 | [Procedural Generation](level-design/level_procedural_generation.md) | advanced | Design procedural content generation systems |
 | [Blockout and Pacing Review](level-design/level_blockout_and_pacing.md) | intermediate | Metrics-driven greybox, beat chart, and pacing audit for handcrafted levels |
+| [Level Flow Analysis from Telemetry](level-design/level_telemetry_flow_analysis.md) | intermediate | Funnel, intended-vs-observed beat times, path efficiency, hotspots, cleared hypotheses, retest targets |
 
 ### Economy
 
@@ -106,18 +110,23 @@ Comprehensive prompts for game development covering design, architecture, engine
 |--------|-----------|-------------|
 | [Economy System Design](economy/economy_system_design.md) | advanced | Design game economies with currency flows and balancing |
 | [Live-Ops Calendar and Monetization Ethics](economy/economy_liveops_monetization_ethics.md) | advanced | Capacity-checked season calendar; offer audit for dark patterns, loot boxes and minors |
+| [Live Currency Sink/Faucet Audit](economy/economy_currency_sink_faucet_audit.md) | advanced | Ledger reconciliation, supply growth, distribution, sink incidence, provenance-tagged fixes |
 
 ### Narrative
 
 | Prompt | Difficulty | Description |
 |--------|-----------|-------------|
 | [Quest Structure and Branching Dialogue](narrative/narrative_quest_and_dialogue_design.md) | intermediate | Branching structure, state variables, dialogue map, line budget, soft-lock audit |
+| [Campaign-Wide Branching Narrative State](narrative/narrative_branching_state_management.md) | advanced | Flag registry, variant counts and collapse, payoff ledger, pairwise tests, save migration |
+| [Environmental Storytelling Plan](narrative/narrative_environmental_storytelling.md) | intermediate | Backstory sequence, vignettes by layer, three-clue redundancy, misreadings, comprehension test |
 
 ### AI
 
 | Prompt | Difficulty | Description |
 |--------|-----------|-------------|
 | [NPC and Enemy AI Decision Architecture](ai/ai_npc_decision_architecture.md) | advanced | Choose FSM/BT/utility/GOAP; behaviour spec, scoring curves, per-frame budget |
+| [Enemy Perception and Stealth Fairness](ai/ai_perception_stealth_fairness.md) | advanced | Detection-time formula, reaction windows, AI/player sense symmetry, cheating-AI audit |
+| [Squad Tactics and Encounter Director](ai/ai_squad_tactics_encounter_director.md) | advanced | Attack tokens tied to TTD, claims, intensity model, director cycle, reasoned spawn rules |
 
 ### Production
 
@@ -138,3 +147,5 @@ Comprehensive prompts for game development covering design, architecture, engine
 ---
 
 **Phase 2** shipped in coverage Wave 4 of [`meta/COVERAGE_ROADMAP.md`](../meta/COVERAGE_ROADMAP.md): narrative and quest design, NPC and enemy AI, handcrafted level blockout and pacing, playtest protocol, difficulty balancing, HUD and game feel, live-ops and monetization ethics, publisher pitch, and project postmortem.
+
+**Phase 3** shipped in coverage Wave 9 (depth in thin subfolders): enemy perception and stealth fairness, squad tactics and encounter director, adaptive music, gameplay readability mix, campaign-wide narrative state, environmental storytelling, live currency sink/faucet audit, art-direction-to-technical budget, and level flow analysis from telemetry.

@@ -17,8 +17,8 @@ Route to this domain when the request mentions:
 | **Characters** | "character development", "protagonist", "antagonist", "backstory", "motivation" |
 | **Narrative** | "narrative arc", "story structure", "pacing", "tension", "conflict" |
 | **Essays** | "personal essay", "creative nonfiction", "memoir", "reflective writing" |
-| **Poetry** | "poem", "verse", "sonnet", "free verse", "imagery" |
-| **Songwriting** | "song", "lyrics", "chorus", "hook", "prosody", "verse and chorus" |
+| **Poetry** | "poem", "verse", "sonnet", "free verse", "imagery", "scansion", "villanelle", "ghazal", "chapbook" |
+| **Songwriting** | "song", "lyrics", "chorus", "hook", "prosody", "verse and chorus", "co-write", "split sheet" |
 | **Screenwriting** | "screenplay", "script", "dialogue", "scene", "documentary treatment" |
 
 ### User Personas
@@ -209,7 +209,7 @@ This domain is for **adult / mature creative writing** — fiction, poetry, crea
 - **Writing for children/teens** (board book through young-teen crossover, kidlit publishing) → [`domain-childrens-writing/`](../domain-childrens-writing/)
 - **Professional / business prose** (proposals, reports, field-specific business writing) → [`domain-professional-writing/`](../domain-professional-writing/)
 
-## Prompts in This Domain (36)
+## Prompts in This Domain (42)
 
 Organized into eight subdirectories by form and function:
 
@@ -218,11 +218,11 @@ domain-creative-writing/
 ├── fiction/                 # long- and short-form fiction craft (7)
 ├── craft-tools/             # cross-cutting craft applied to any form (12)
 ├── genre-workshops/         # genre conventions and deep dives (6)
-├── creative-nonfiction/     # memoir, essay, reported narrative (2)
-├── poetry/                  # poetic forms, imagery, figuration (2)
-├── songwriting/             # original song lyrics: drafting, prosody, structure (2)
+├── creative-nonfiction/     # memoir, essay, reported narrative, real-people ethics (4)
+├── poetry/                  # poetic forms, meter, imagery, collection ordering (4)
+├── songwriting/             # original song lyrics: drafting, prosody, structure, co-writing (3)
 ├── script-stage/            # screen, TV, stage scripts, series bibles, documentary treatments (3)
-└── publishing-career/       # query, synopsis, pitch, positioning (2)
+└── publishing-career/       # query, synopsis, pitch, positioning, path decision (3)
 ```
 
 ### Routing Table (user need → prompt)
@@ -273,6 +273,8 @@ domain-creative-writing/
 |----------------|--------|
 | Shape lived experience into memoir or personal essay | [`creative-nonfiction/writing_memoir_and_personal_essay.md`](creative-nonfiction/writing_memoir_and_personal_essay.md) |
 | Turn reporting/research into narrative nonfiction (no fabrication) | [`creative-nonfiction/writing_narrative_nonfiction_and_literary_journalism.md`](creative-nonfiction/writing_narrative_nonfiction_and_literary_journalism.md) |
+| Revise a drafted personal essay: reflection vs scene, the turn, self-pity and sentimentality | [`creative-nonfiction/writing_personal_essay_reflection_and_turn.md`](creative-nonfiction/writing_personal_essay_reflection_and_turn.md) |
+| Decide how to portray family and other real people: provenance, consent, disguise, composites, legal-risk routing | [`creative-nonfiction/writing_memoir_real_people_ethics.md`](creative-nonfiction/writing_memoir_real_people_ethics.md) |
 
 **Poetry (`poetry/`)**
 
@@ -280,6 +282,8 @@ domain-creative-writing/
 |----------------|--------|
 | Work with poetic forms, meter, and technique | [`poetry/writing_poetry_craft_and_forms.md`](poetry/writing_poetry_craft_and_forms.md) |
 | Sharpen imagery and fix dead/mixed metaphors | [`poetry/writing_imagery_and_figurative_language.md`](poetry/writing_imagery_and_figurative_language.md) |
+| Scan a formal draft line by line and audit sonnet, villanelle, ghazal, sestina, or pantoum rules; decide when to break form | [`poetry/writing_poetry_meter_scansion_and_fixed_forms.md`](poetry/writing_poetry_meter_scansion_and_fixed_forms.md) |
+| Cull, sequence, and order poems into a chapbook or full-length manuscript | [`poetry/writing_poetry_chapbook_and_collection_ordering.md`](poetry/writing_poetry_chapbook_and_collection_ordering.md) |
 
 **Songwriting (`songwriting/`)**
 
@@ -287,6 +291,7 @@ domain-creative-writing/
 |----------------|--------|
 | Draft an original song lyric from a title, line, or feeling | [`songwriting/writing_song_lyric_craft_workshop.md`](songwriting/writing_song_lyric_craft_workshop.md) |
 | Revise a lyric for prosody, stress, hook placement, and section jobs | [`songwriting/writing_song_structure_lyric_revision.md`](songwriting/writing_song_structure_lyric_revision.md) |
+| Run a co-writing session and complete a split sheet (composition vs master, registration hand-off) | [`songwriting/writing_song_cowriting_session_and_splits.md`](songwriting/writing_song_cowriting_session_and_splits.md) |
 
 > **Originality note:** the songwriting prompts write and revise original lyrics only. A brief, attributed line from a published song may be quoted to analyse a technique; published lyrics are never reproduced in full or used as a template.
 
@@ -304,8 +309,9 @@ domain-creative-writing/
 |----------------|--------|
 | Write an adult-fiction query letter + synopsis (no fabrication) | [`publishing-career/writing_query_letter_and_synopsis.md`](publishing-career/writing_query_letter_and_synopsis.md) |
 | Craft a logline, pitch, and comp-title positioning (no fabrication) | [`publishing-career/writing_pitch_logline_and_comp_titles.md`](publishing-career/writing_pitch_logline_and_comp_titles.md) |
+| Decide between self-publishing, traditional, and hybrid paths with break-even and earn-out math (no invented figures) | [`publishing-career/writing_self_vs_traditional_publishing_decision.md`](publishing-career/writing_self_vs_traditional_publishing_decision.md) |
 
-> **No-fabrication note:** the creative-nonfiction, documentary-treatment, and publishing-career prompts carry hard guards against invented facts, sources, comp titles, agents, sales figures, and credentials. Unverifiable specifics are bracketed `[VERIFY]`, never asserted.
+> **No-fabrication note:** the creative-nonfiction, documentary-treatment, publishing-career, and chapbook-ordering prompts carry hard guards against invented facts, sources, comp titles, agents, presses, advances, sales figures, and credentials. The real-people ethics and co-writing prompts are not legal advice and route legal questions to `[LEGAL REVIEW]` and `domain-legal/`. Unverifiable specifics are bracketed `[VERIFY]`, never asserted.
 
 ---
 
@@ -877,4 +883,5 @@ Output: Enhanced dialogue with subtext analysis
 *Updated: 2026-06-18 - Reorganized into 7 subdirectories; expanded to 27 prompts; added routing table, scope boundary, and difficulty/technique frontmatter*
 *Updated: 2026-09-24 - Added `songwriting/` (2 prompts) and a documentary treatment prompt in `script-stage/`; 30 prompts across 8 subdirectories*
 *Updated: 2026-09-24 - Added romance, horror, and thriller/suspense genre workshops; a TV pilot and series bible prompt; comedy craft and a series continuity audit in `craft-tools/`; 36 prompts across 8 subdirectories*
+*Updated: 2026-10-03 - Added meter/scansion and chapbook ordering (`poetry/`), personal essay revision and real-people ethics (`creative-nonfiction/`), a publishing path decision (`publishing-career/`), and co-writing splits (`songwriting/`); 42 prompts across 8 subdirectories*
 *Domain: Creative Writing*

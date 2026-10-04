@@ -10,6 +10,68 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Coverage Wave 10: agentic-resource depth** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **19 new resources:** 7 skills (accessibility, game-development, devops, observability), 4 agents (deployment, orchestration), 4 commands (data-analysis, documentation) and 4 personas (product, specialized).
+  - **Duplicate sweep:** three persona candidates were dropped as duplicates; six skill and command candidates were re-angled.
+- **Technique citations are now validated in CI.**
+  - `scripts/validate_technique_catalog.py` fails on any `techniques:` entry in `PROMPT_INDEX.json` that is not in the catalog.
+  - It warns on deprecated IDs and on parenthesised names that differ from the catalog's.
+  - `--uncited` lists the active IDs no prompt cites.
+  - Covered by 8 new unit tests.
+
+### Changed
+- **13 undefined technique codes remapped** (DC-01, PR-01/02/03, CR-01/02, IT-01/02, AN-01, SC-01/03, FP-01, WF-01; 133 citations in 110 files). Each was mapped to the existing catalog code that matches what the prompt does. The 46 "ID (Name)" frontmatter entries in iOS and Android prompts are now bare IDs, corrected where the name showed a different technique was meant.
+- **Three one-skill "categories" folded into real ones:** `ai-native-rollouts` → `skills/non-coding/business/`, `review-prompt` → `skills/llm-application-dev/`, `vibe-coding-rescue` → `skills/developer-tools/`. UIDs are preserved, and the old public IDs are recorded as aliases.
+- **Coverage Wave 9: depth in thin subfolders (39 prompts, 15 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **Frontend (13):** animation, Qwik, Remix (including the React Router v7 migration), SolidJS, plus one each in Astro, forms, performance, testing and TypeScript.
+  - **Game development (9):** AI, audio, narrative, economy, graphics and level design.
+  - **Creative writing (6):** poetry, creative nonfiction, publishing career and songwriting.
+  - **Single-prompt folders (11):** PM templates, HR onboarding, finance options, prompt optimisation and utilities, operations project delivery, and sleep timing.
+  - **Duplicate sweep:** none dropped. Ten suggested topics were re-angled because existing prompts already covered them.
+  - **Routing:**
+    - case-191 to case-205 added. Five of them check that pre-existing prompts keep their queries, and all five do.
+    - scope@1 is 84.6% over 205 cases; kind@1 is back to 100%.
+    - Case 185 slipped one rank to the new "sink/faucet" economy prompt.
+- **Coverage Wave 8: second set of absent subjects (36 prompts, 13 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **Software engineering (11):** security operations (4), a new `data-engineering/` folder (5, design and review only; tool how-to stays in the skills), and cloud bill spikes and commitment sizing (2).
+  - **Frontend (5):** design systems (3) and accessibility beyond components (2): documents and slides, and organisational programs and VPATs.
+  - **Science (3):** a new `ml-for-science/` folder, plus a recorded decision that clinical-trial design stays in `domain-science/`.
+  - **Everyday life (10):** dementia care and the "can't live alone" conversation (3), DIY repair (2) and cooking (2) in `productivity/home-life/`; a special-education disagreement letter; dating after divorce and early-dating safety.
+  - **Biblical studies Phase 3C start (7):** a new `academic-writing/` folder (5, STRONG-GUARD against invented sources) and two children's-ministry prompts.
+  - **Duplicate sweep:** none dropped; four re-angled.
+  - **Routing:**
+    - case-178 to case-190 added; scope@1 is 83.8% over 190 cases.
+    - Case 162 regressed during the build and was restored by changing "kids" to "children" in the dating prompt.
+    - Case 161 now routes to `productivity` via the pantry-cooking prompt's core vocabulary. It is recorded as a regression.
+    - Cases 004 and 058 drifted by one rank from corpus-wide term-weight changes.
+- **Coverage Wave 7: remaining documented promises (46 prompts, 16 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **Parenting (23):** the seven remaining planned `caregiver-facing/` folders: family structure, tech and AI chatbots, identity and culture, parent capacity, academics, mental health and behaviour, and neurodivergence.
+  - **Public administration (6):** a new `domain-policy/public-administration/` folder.
+  - **Other domains (17):**
+    - personal development (money beliefs, peer conflict, reorg, meaning);
+    - negotiation (analytics scorecard, AI-agent-mediated negotiation);
+    - education (a new `program/student-success/` folder, conference prep, multilingual family outreach);
+    - operations (preventive maintenance, repeat-failure reliability);
+    - a new `domain-specialized-fields/professional-services/` folder (`proserv_*`).
+  - **Duplicate sweep:** 1 candidate was dropped (first-year early alert duplicates `program_early_warning_system_designer`). Eight were re-angled to the real gap.
+  - **Routing:**
+    - case-162 to case-177 added; scope@1 is 84.4% over 177 cases.
+    - Case 131 regressed during the build and was restored by rewording incidental words in the foster prompt.
+    - Case 153 slipped from rank 2 to 3, still in the top 3.
+    - Four new cases are honest misses.
+    - The queries were kept from the authoring agents until every target was final.
+- **Coverage Wave 6: kept promises and first absent subjects (48 prompts, 15 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6, which also records Waves 7–10 as planned).
+  - **Documented promises (30):**
+    - `domain-parenting/caregiver-facing/`: 3 of its planned folders (`transitions-events/`, `safety-risk/`, `health-body-sleep-feeding/`), 12 safety-gated prompts.
+    - `domain-policy/`: the 5 analyses its README promised (regulatory impact analysis, program evaluation design, rulemaking comment letter, bill analysis, cross-jurisdiction comparison).
+    - The Wave 2 lists of `domain-operations/` (5), `domain-data-analytics/` (4) and `domain-health-wellness/` (4).
+  - **Absent subjects (18):** `domain-operations/quality-safety/` (SPC, OEE, job hazard analysis, incident investigation), `domain-specialized-fields/insurance/` (broker, underwriter and adjuster work), MCP server design review and threat model, computer-use agent task design and trace review, `domain-professional-writing/journalism/` and `translation/`.
+  - **Duplicate sweep:** all 48 candidates survived.
+  - **Routing:**
+    - case-147 to case-161 added. No original case lost ground.
+    - Case 128 regressed during the build and was fixed by rewording incidental words in the 8D prompt's title and description.
+    - scope@1 is 83.2% over 161 cases (84.5% over the original 146, which is unchanged). The drop comes from 4 new cases that miss their scope; those stay as honest failures.
+    - Two targets had picked up tags echoing case 154 and case 161 from a draft query list the authoring agents could read. Those tags were replaced before the cases were first measured.
 - **Coverage audit pass: fixes to Waves 1–5, a plain-language tag pass, and the deferred legal and children's-writing backlogs** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6, "Audit pass").
   - **New prompts (33):**
     - `domain-sales-customer/support/support_agent_interaction_qa_scorecard.md`, QA for human support agents. The duplicate sweep found no existing prompt that scores people rather than bots or single replies.
@@ -119,6 +181,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **19 domain prompts, three genuinely cross-domain skills and five vertical packs — filed where a duplicate sweep said there was room, not where the expansion plan guessed.** Four domains were picked as expansion targets on the strength of being small (`hr-management` 8, `product-management` 10, `risk` 8, `advertising` 18). Validating 40 candidates against all 5,617 indexed artifacts found **12 outright duplicates, 11 near-neighbours to extend or reroute, and 17 net-new** — a 57% collapse, worse than the previous phase's 35%, and the extra collapse sat entirely in the domains that turned out to be **thin by charter rather than by omission**. `domain-risk/` carries the most explicit negative boundary in the repository and foreclosed four of eight candidates by name: its own one-sentence description of `risk_dependency_chain_audit.md` ("find single points of failure, prioritize by blast radius × replacement difficulty") already contained the proposed key-person and single-point-of-failure prompts, and "When NOT to use this domain" routes scenario and stress testing to `domain-decision-making/`. `domain-advertising/` produced **zero** prompts: it is a 17/17-complete *image*-prompt set (SV-11…SV-18, print/screen locking, anti-mockup constraints, per-model sections), and the craft layer it looked to be missing is the 41 marketing skills, five of which answer a candidate literally — `ad-creative/` has a `### Step 1: Define Your Angles`, `page-cro/references/experiments.md` a `### Message Match`. What shipped is where the room actually was: **`domain-hr-management/`** gained nine (five in a `hiring/` subdirectory its own README did not index, one-file and orphaned, plus `onboarding/` and `people-ops/`), because `domain-product-management/README.md` records that hiring prompts were *deliberately routed there* — declared territory that was never built, on a domain that is otherwise a performance-review suite with zero hits on job description, reference check, exit interview, offboarding and compensation band. **`domain-product-management/`** gained five at its edges, the middle being covered; three apparent collisions were name-only, because `boarddeck_opportunity_solution_tree.md` and `boarddeck_okr_cascade.md` are **image-generation** prompts. **`domain-risk/`** gained two, one of them (`risk_appetite_statement.md`) the governance layer that the existing register builder and heat map already presuppose — a hole rather than an addition. Three candidates left their proposing domain on the subject-first rule: employer-side offer negotiation to `domain-negotiation/contexts/` as the mirror of the existing candidate-side `negotiation_salary_raise_promotion.md`, insurance coverage review to `domain-finance/risk-management/` beside ten `finance_*_risk_*` siblings, and competitive win/loss to `domain-business-strategy/go-to-market/` because sales workflows are org scope. **The three `cross-domain/` skill scaffolds were byte-identical boilerplate holding zero resources** while six sibling categories held 2–11; their own READMEs named what they wanted, and `quality-rubric-template`, `intake-triage-pattern` and `handoff-approval-workflow` now answer it, each ranking first in `pae search` for its own subject matter. HR's hiring scorecard deliberately stayed in HR — a scorecard for hiring is a domain artifact, not a cross-cutting pattern. **`client-services-studio/verticals/`** adds HVAC, architect, CPA, management-consultant and landscaper starter configurations, each generated through `economics.rate_floor()` so the stored `walk_away_day_rate` equals the computed one rather than asserting a number the code would contradict, and five new tests (37 → **42**) pin the invariant that makes the tree free: it adds **zero** registry resources only while every prose file is named exactly `README.md`, because `README.md` is in `META_DOC_FILENAMES` and `.json` is not Markdown — any other prose filename falls through `classify()`'s rule 10, becomes a "prompt" and acquires a UID. The registry's own invariant test earned its keep on the way through: `test_degraded_records_are_metadata_only` went 2 → 5 and named the cause, an unquoted `Domain-agnostic: ` inside a plain YAML scalar in all three new `SKILL.md` descriptions, which would otherwise have shipped three skills the Engine could see only as metadata.
 
 ### Fixed
+- **CI no longer runs the deleted `continuity-kit/` tests.** The toolkit was removed in a11990c; its CI step, registry allowlist entry and live documentation links are gone. Historical ADRs keep their mentions.
 - **Audit of coverage Waves 1–5:**
   - **Safety:**
     - `README.md` gains a top-of-page disclaimer and a full **Disclaimer and Limitation of Liability** section: no warranty, no guarantee of results, not professional advice, users must apply domain expertise and review every output, and all use and model output is the user's responsibility.

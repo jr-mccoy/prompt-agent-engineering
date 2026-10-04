@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - CM-02
   - ST-16
-  - PR-01
+  - RP-02
 difficulty: beginner
 tags:
   - persona

@@ -18,11 +18,15 @@ They assume the user is willing to look honestly at their own contribution (beha
 - Repairing a personal relationship after a fight or breach
 - Diagnosing the type of loneliness and building a targeted connection plan
 - A lightweight health-check of a single relationship
+- Dating again after divorce or a long relationship: readiness, what you want now, pacing
+- First dates and early dating: meeting safely, spotting romance scams and coercion early, a values check
 
 **Out of scope (refuse and refer):**
 - **Abuse, coercion, threats, monitoring, financial control, or any safety risk** → this is not a communication-skills problem. Route to a licensed counselor, a domestic-violence hotline, or trusted local resources. These prompts will not coach negotiation, boundary-setting, or "repair" with someone who is unsafe.
 - **Relationship trauma, severe social anxiety, or possible clinical conditions** → a licensed mental-health professional. These prompts prepare conversations and build skills; they are not therapy.
 - **Couples therapy / partner conflict work** → relationship counseling. These prompts coach one person's communication and maintenance, not joint clinical work.
+- **Telling children about dating, introducing a partner, co-parent coordination** → `domain-parenting/caregiver-facing/divorce/` and `domain-parenting/caregiver-facing/co-parenting/`. **Teen dating** → `domain-parenting/caregiver-facing/ages-13-18/parenting_teen_dating_consent_conversation.md`.
+- **Money already lost to a romance scam** → `domain-legal/personal-self-advocacy/consumer-scams/`; an established controlling relationship → `domain-psy-ops/personal-defense/psyops_coercive_control_pattern_recognition.md`.
 
 ## Boundary: personal vs. professional
 
@@ -46,6 +50,7 @@ These prompts coach **communication and relationship maintenance**, not mental h
 - **Skill route:** repeated trouble with a specific behavior → `relationships_social_skill_development`.
 - **Thin-circle route:** few or no friends → `relationships_loneliness_diagnostic_plan` (diagnose the type) → `relationships_making_friends_as_adult` (relational gap) → `relationships_deepening_friendship` (intimate gap).
 - **Family route:** a recurring difficult (non-abusive) relative → `relationships_difficult_family_member_strategy` → if it narrows to one limit → `relationships_boundary_setting_script`.
+- **Dating route:** relationship ended and life has collapsed → `life-transitions/lifetransition_post_breakup_rebuild` first → `relationships_dating_after_divorce` (readiness, wants, pacing) → `relationships_early_dating_safety_plan` before each new match.
 - **Apology route:** you caused a specific rupture and are ready to own it → `relationships_apology_that_lands`; if the fight was co-authored and needs fuller sorting → `relationships_conflict_repair_guide`.
 
 ## What the prompts refuse
@@ -71,4 +76,6 @@ These prompts coach **communication and relationship maintenance**, not mental h
 | `relationships_apology_that_lands.md` | Construct a real apology for one specific rupture: name the actual harm, strip every if/but/because, attach a concrete repair — producing the exact words. (Surgical; narrower than the full repair guide.) |
 | `relationships_conflict_repair_guide.md` | Repair after a rupture: reconstruct to the root, sort responsibility honestly, calibrate the apology, draft the attempt, plan for the response you don't control. |
 | `relationships_loneliness_diagnostic_plan.md` | Diagnose which loneliness (intimate / relational / collective) the user has and build a type-matched connection plan; routes depression/grief/purpose-loss look-alikes out. |
+| `relationships_dating_after_divorce.md` | Dating again after divorce or a long relationship: readiness read on five observable signals (not a time rule), ranked non-negotiables, the shape of relationship wanted, a paced first two months with debriefs; kids and co-parenting routed to parenting. |
+| `relationships_early_dating_safety_plan.md` | First and early dates: verify before meeting, a safety plan with check-in and code word, an easy values-revealing conversation, green/amber/red romance-scam and coercion signs, stop signals, and reporting/safety routes. |
 | `relationships_relationship_audit.md` | Lightweight health-check of one relationship (working / draining / balance / one small move). Escalates to the decision-grade `major-decisions/personal_difficult_relationship_audit.md`. |

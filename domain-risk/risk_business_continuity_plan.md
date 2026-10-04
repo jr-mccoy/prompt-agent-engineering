@@ -56,8 +56,7 @@ untested procedures as capability is refused.
   `../domain-decision-making/scenario_two_by_two_matrix.md` and siblings.
 - You are planning for **agent session memory** continuity — unrelated despite the
   shared word; that is
-  `../domain-AI-ML/agentic-ai-systems/aiagent_project_continuity_memory_design.md` and
-  the `continuity-kit/` toolkit.
+  `../domain-AI-ML/agentic-ai-systems/aiagent_project_continuity_memory_design.md`.
 
 ---
 

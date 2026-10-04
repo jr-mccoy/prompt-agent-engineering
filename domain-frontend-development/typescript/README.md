@@ -1,13 +1,13 @@
 # TypeScript Prompts
 
 **Category:** Frontend Development / TypeScript
-**Prompts:** 2
+**Prompts:** 3
 
 ---
 
 ## Overview
 
-Production-grade prompts for raising type safety in frontend codebases — both at the component-API level (designing precise props, generics, variant unions, and event/ref types) and at the whole-codebase level (auditing for `any` leakage, unsafe assertions, missing strict flags, and untyped boundaries). Both prompts produce evidence-based findings and prioritized, low-risk remediation.
+Production-grade prompts for raising type safety in frontend codebases — both at the component-API level (designing precise props, generics, variant unions, and event/ref types) at the whole-codebase level (auditing for `any` leakage, unsafe assertions, missing strict flags, and untyped boundaries), and at the API boundary (choosing a source of truth for back-end types, runtime validation policy, CI drift gates). The prompts produce evidence-based findings and prioritized, low-risk remediation.
 
 ## Prompts
 
@@ -15,6 +15,7 @@ Production-grade prompts for raising type safety in frontend codebases — both 
 |--------|-------------|------------|
 | [frontend_typescript_component_typing.md](frontend_typescript_component_typing.md) | Design/review type-safe component contracts — props, generics, discriminated unions, event handlers, refs, children — across React/Vue/Angular | Intermediate |
 | [frontend_typescript_type_safety_audit.md](frontend_typescript_type_safety_audit.md) | Audit a frontend codebase for `any` leakage, unsafe assertions, missing strict flags, unsound patterns, and untyped boundaries | Advanced |
+| [frontend_typescript_api_contract_typing.md](frontend_typescript_api_contract_typing.md) | Design API contract typing: source of truth (codegen, shared schemas, RPC, hand-written) by dominant driver, per-endpoint runtime validation and failure behaviour, honest dates/nullability/open enums, CI drift gates | Advanced |
 
 ## Usage Examples
 
@@ -36,6 +37,8 @@ Use `frontend_typescript_type_safety_audit.md` when "we use TypeScript" but type
 | `any` leakage & blast radius | Type-safety audit |
 | Boundary validation (schema/parser) | Type-safety audit |
 | Incremental strict-flag adoption | Type-safety audit |
+| Source of truth for API types | API contract typing |
+| Runtime validation at the network boundary | API contract typing |
 
 > Anti-fabrication note: these prompts avoid asserting version-specific compiler/library behavior or error counts; they recommend measuring (e.g., flipping a flag in a branch) and verifying against current TypeScript docs.
 

@@ -5,9 +5,9 @@ description: "Detect outputs that look fluent and well-formed but are wrong — 
 techniques:
   - ST-02
   - QA-01
-  - PR-01
-  - PR-03
-  - DC-01
+  - QA-11
+  - QA-18
+  - DT-04
 difficulty: advanced
 tags:
   - silent_failure

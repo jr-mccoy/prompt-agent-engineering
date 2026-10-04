@@ -255,6 +255,16 @@ For scientists who also teach research practice — distinct from the K-12/HE pe
 | `science_data_analysis_workshop_designer.md` | Carpentries-style hands-on workshop with assessment and post-workshop scaffolding |
 | `science_reproducibility_workshop_designer.md` | One-day workshop converting a paper into a fully reproducible artifact |
 
+### Wave 8 — ML as a Scientific Instrument (`ml-for-science/`, 3 prompts) — ✓ SHIPPED 2026-10-03
+
+Resolves Open Question 4. Boundary: `domain-AI-ML/` = building ML systems; `ml-for-science/` = ML as an instrument for scientific inference. The two Phase 2C ML prompts stay in `computational/` (paths kept stable) and are cross-referenced from the new folder's README. See [`ml-for-science/README.md`](ml-for-science/README.md).
+
+| File | Description |
+|---|---|
+| `science_ml_project_scoping.md` | Is ML warranted vs classical stats; effective sample size from units of independence; batch/sample leakage; baselines; go / redesign / stop |
+| `science_ml_validation_split_design.md` | Dependence-aware grouped / temporal / spatial / similarity splits; external-validation tiers; cluster-level uncertainty; reporting map |
+| `science_ml_interpretation_for_claims.md` | Claim ladder from predictive to mechanistic; attribution stability, confound and shortcut checks; experiment required for mechanistic claims |
+
 ---
 
 ## Totals and sequencing
@@ -275,6 +285,8 @@ For scientists who also teach research practice — distinct from the K-12/HE pe
 | 2K ✓ | `public-engagement/` | 8 |
 | 2L ✓ | `teaching-research-methods/` | 6 |
 | **Total planned (Phase 1 + 2)** | | **141** |
+| Wave 8 ✓ (post-roadmap) | `ml-for-science/` | 3 |
+| **Total shipped incl. Wave 8** | | **144** |
 
 **Recommended build order:** 2A → 2D → 2E → 2H → 2C → 2B → 2F → 2G → 2I → 2J → 2K → 2L. Rationale: methods, statistics, writing, and integrity together cover the highest-frequency working-scientist needs; computational and bench come next; the remaining phases address specialized contexts and roles.
 
@@ -305,6 +317,12 @@ These are deferred decisions that should be made before Phase 2 build begins:
 
 1. **`disciplines/` subdirectory scope.** The current plan covers six disciplinary clusters (biology, chemistry, physics-astronomy, earth-climate, neuroscience, materials-engineering). Should we add **psychology / cognitive science**? (Possible overlap with `domain-psychology/` and `domain-research-academic/`.) **Should we add social-science quantitative methods**, or leave that to `domain-research-academic/`?
 2. **Clinical trials.** Where do CONSORT / SPIRIT clinical-trial protocol prompts live — here in `disciplines/biology/` or in `domain-healthcare-clinical/`? Recommendation: trial-design **methodology** here; clinical-practice-side trial **execution** in healthcare-clinical.
+
+   **DECISION (2026-10-03, Wave 8): trial-design methodology lives in `domain-science/`; no new trial-design prompts are needed now.**
+   - *Evidence of where the content already is.* The only SPIRIT/CONSORT protocol prompt in the repo is `disciplines/biology/bio_clinical_trial_protocol_outliner.md`, and it composes on science prompts that already carry the CONSORT items: `methods-foundations/science_blinding_and_randomization_protocol.md` (CONSORT items 8–11), `methods-foundations/science_power_and_sample_size_calculator.md`, `statistics/science_pre_specified_analysis_plan.md`, `statistics/science_survival_analysis_design.md`, and `methods-foundations/science_methods_section_drafter.md`. `domain-healthcare-clinical/` has no SPIRIT/CONSORT or trial-design content; it uses trials at the point of care (trial-eligibility questions in `prompts/specialty/medicine_oncology_case_framer.md`, appraising supplied trials in `prompts/education/medicine_literature_synthesizer.md`). `domain-medical-education/` teaches trial appraisal (`educator-curriculum-design/curric_journal_club_teaching_guide.md`, `learner-clinical-rotation/study_journal_club_prep.md`). `domain-research-academic/` holds generic methods (systematic-review protocol, PRISMA-adjacent planning) and only names CONSORT in its field guide.
+   - *Placement rule.* Designing or reporting a trial (protocol, endpoints, randomization, blinding, sample size, SAP, CONSORT/SPIRIT checklists, DSMB/stopping-rule methodology) → `domain-science/`: trial-specific scaffolds in `disciplines/biology/`, design-agnostic components in `methods-foundations/` and `statistics/`. Running a trial at a site or applying trial evidence to a patient (screening, consent conversation, interpreting results for care) → `domain-healthcare-clinical/`. Teaching trainees to appraise trials → `domain-medical-education/`. Generic evidence-synthesis methods → `domain-research-academic/`.
+   - *Rationale.* The subject-first rule in the root `CLAUDE.md` puts "a patient" in healthcare-clinical; a trial protocol's object is a study design, not a patient, and its gatekeepers (IRB, statistician, journal, regulator) are the audiences this domain already writes for. Keeping methodology here avoids a second copy of randomization, power, and SAP prompts in a clinical domain whose v2 roadmap is scoped to point-of-care clinical reasoning.
+   - *Trigger to revisit.* If three or more trial-specific prompts accumulate (e.g., adaptive or platform designs, cluster-randomized designs, DSMB charter), promote them from `disciplines/biology/` into a dedicated `disciplines/clinical-trials/` cluster rather than moving them to another domain.
 3. **Lab software.** Computational-research software craft is in scope here; general-purpose code quality is `domain-software-engineering/`. The proposed `science_open_source_research_software_repo_layout.md` is the planned bridge. Confirm this is the only cross-domain prompt needed, vs. building a small `disciplines/research-software-engineering/` set.
-4. **AI/ML-for-science weight.** Phase 2C has two ML-for-science prompts and Phase 2H has one responsible-AI-use prompt. Given the rate of change in this area, should there be a dedicated `ml-for-science/` subdirectory (~6 prompts) instead? Recommendation: defer until after 2A–2D ship, then re-scope based on observed usage.
+4. **AI/ML-for-science weight.** Phase 2C has two ML-for-science prompts and Phase 2H has one responsible-AI-use prompt. Given the rate of change in this area, should there be a dedicated `ml-for-science/` subdirectory (~6 prompts) instead? Recommendation: defer until after 2A–2D ship, then re-scope based on observed usage. **✓ Resolved 2026-10-03 (Wave 8):** `ml-for-science/` created with 3 prompts (project scoping, validation split design, interpretation for claims); the two Phase 2C prompts stay in `computational/` to keep paths stable and are cross-referenced. Boundary: `domain-AI-ML/` = building ML systems; `ml-for-science/` = ML as an instrument for scientific inference.
 5. **CLAUDE.md update.** ✓ **Done 2026-06-26 (when Phase 2A shipped).** Root `CLAUDE.md` now lists `domain-science/` in both the Category Mapping section (a "Science" block after "Research & Academic," with the boundary note vs `domain-research-academic/`) and the Quick Reference table. Update these again as later phases (2B–2L) ship.

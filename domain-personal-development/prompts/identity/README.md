@@ -12,6 +12,7 @@ These prompts assume the user is willing to look honestly at their own evidence 
 - Comparison, envy, status-anxiety, FOMO
 - Confidence calibration (impostor + overconfidence)
 - Purpose / motivation diagnosis
+- Meaning sources, legacy, and generativity (midlife, post-achievement)
 - Life audit at major inflections
 - Taste development in a specific domain
 
@@ -54,3 +55,4 @@ These prompts are designed to compose. Common chains:
 | `identity_personal_narrative_reframe.md` | Classify the limiting self-story's shape; test it against omitted facts; reframe on the same facts; one narrative-test action. |
 | `identity_authenticity_audit.md` | Map performed-role vs acting-from-self per arena; separate code-switching from costly suppression; close one gap (safety-gated). |
 | `identity_mortality_reflection_memento_mori.md` | Scope a sober remaining horizon; classify deferred items by closing/open/perpetual/foreclosed window; stop deferring one thing. |
+| `identity_meaning_sources_and_legacy_map.md` | Rate meaning on coherence / purpose / significance, map its sources and concentration risk, state a concrete legacy, run one 90-day experiment (midlife or post-achievement; spirituality-neutral). |

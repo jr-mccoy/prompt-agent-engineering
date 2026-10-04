@@ -1,5 +1,7 @@
 # Expansion Roadmap — `domain-negotiation/`
 
+**Update 2026-10-03 (coverage Wave 7):** two Wave 2 items shipped — `craft/negotiation_analytics_scorecard.md` and `channels/negotiation_ai_agent_mediated.md` — taking the domain to **54 prompts**.
+
 **Status as of 2026-09-24:** ✅ **Wave 2 `contexts/` deepening shipped** — **5 new context prompts** (landlord and lease, insurance claim, medical bill, severance, licensing), plus `negotiation_hiring_offer_employer_side.md` (added 2026-09-22 by the coverage pass), take the domain to **52 prompts** and `contexts/` to **14**. The other Wave 2 items remain open — see [Wave 2](#wave-2--candidate-future-work) below.
 
 **Wave 1 (2026-07-26):** ✅ **shipped in full** — **40 net-new prompts** (6 → **46**) reorganized into **8 subdirectories**, taking the domain from a preparation-only starter set to a full negotiation practitioner library at the scale of `domain-reasoning-craft/` (41). Every prompt below is built and validated: exactly six `##` headings, three resolving `related_prompts`, `category` matching its subdirectory, and all technique IDs present in `techniques/MASTER_TECHNIQUE_INDEX.md`. All new prompts follow the domain's established house style (exemplar: `preparation/negotiation_interest_mapping.md`): 9-field frontmatter with the machine-readable `reasoning:` block, six `##` headings, 9 instruction steps ending in an adversarial check, an 8-item False-Positive Prevention list, a locked Output Format template, and a Verification checklist closing on negative assertions.
@@ -13,15 +15,15 @@
 ## Shipped architecture
 
 ```
-domain-negotiation/                      52 prompts   ✓
+domain-negotiation/                      54 prompts   ✓
 ├── preparation/            10/10  ✓ (+7)   the work before you walk in
 ├── at-the-table/            7/7   ✓ (NEW)  live moves once it starts
-├── channels/                4/4   ✓ (NEW)  medium-specific: written, remote, cross-cultural
+├── channels/                5/5   ✓ (NEW, +1 W7)  medium-specific: written, remote, cross-cultural, AI-agent-mediated
 ├── multi-party/             4/4   ✓ (+3)   three or more parties, teams, facilitation
 ├── after-the-deal/          4/4   ✓ (NEW)  debrief, implement, reopen, recover
 ├── contexts/              14/14   ✓ (NEW, +6 since Wave 1)  named specializations of the general machinery
 ├── difficult-conversations/ 5/5   ✓ (+3)   relationship-primary track (own prefix)
-└── craft/                   4/4   ✓ (NEW)  building negotiation skill over time
+└── craft/                   5/5   ✓ (NEW, +1 W7)  building negotiation skill over time
 ```
 
 **Reorganization note.** The four original top-level prompts moved into `preparation/` (BATNA, interest mapping, rehearsal) and `multi-party/` (coalition alignment), keeping the `negotiation_` prefix. Twenty-one inbound references were rewritten across `CLAUDE.md`, `PROMPT_INDEX.md`, `domain-personal-development/` (5 files), and the moved files themselves. `difficult-conversations/` did not move, so its twelve inbound references were unaffected.
@@ -53,7 +55,7 @@ domain-negotiation/                      52 prompts   ✓
 | `negotiation_emotional_flooding_at_the_table.md` | Anger, walkouts, tears, and your own reactivity — de-escalate without conceding on substance |
 | `negotiation_closing_and_final_concession.md` | Recognize the close, structure the final concession, refuse the post-agreement nibble |
 
-### `channels/` (4) — all new
+### `channels/` (5) — all new
 
 | File | Description |
 |---|---|
@@ -61,6 +63,7 @@ domain-negotiation/                      52 prompts   ✓
 | `negotiation_counteroffer_email.md` | The counter-offer message: structure, justification, what to concede in text, what to reserve |
 | `negotiation_remote_video_channel.md` | Video and phone: lost signal, turn-taking, silence that reads as disagreement, screen-share as an anchor |
 | `negotiation_cross_cultural.md` | **Strong guard required** — surfaces *dimensions* on which norms vary and prescribes asking, never asserting national-character generalizations as fact |
+| `negotiation_ai_agent_mediated.md` | **Wave 7.** Negotiating through or against an AI agent: mandate, authority tiers, disclosure, input quarantine, reconciliation before anything binds |
 
 ### `multi-party/` (4) — 1 relocated, 3 new
 
@@ -107,7 +110,7 @@ Each is a **specialization**, not a restatement. Every one cross-links upstream 
 | `difficultconvo_receiving_hard_feedback.md` | **NEW.** Staying in the conversation without defending, and separating signal from delivery |
 | `difficultconvo_saying_no_upward.md` | **NEW.** Declining a request from someone with power over you, with the alternative attached |
 
-### `craft/` (4) — all new
+### `craft/` (5) — all new
 
 | File | Description |
 |---|---|
@@ -115,6 +118,7 @@ Each is a **specialization**, not a restatement. Every one cross-links upstream 
 | `negotiation_deliberate_practice_loop.md` | A practice loop for one negotiation sub-skill (cross-links `domain-learning/learning_deliberate_practice_designer.md` rather than restating it) |
 | `negotiation_pattern_library_builder.md` | Turn accumulated debriefs into a personal library of situation → move → outcome |
 | `negotiation_ethics_line.md` | Where persuasion becomes manipulation: your pre-committed limits, and what to do when the other side crosses theirs |
+| `negotiation_analytics_scorecard.md` | **Wave 7.** Portfolio scorecard: range capture, concession depth and reciprocity, value created, walk-away quality, process score kept separate, gaming vectors |
 
 ---
 
@@ -159,6 +163,6 @@ Each is a **specialization**, not a restatement. Every one cross-links upstream 
 ## Wave 2 — candidate future work
 
 - ✅ **Deepen `contexts/`** — **shipped 2026-09-24.** Five prompts built, each clearing the non-duplication table with its boundary stated in the prompt: `negotiation_landlord_rent_and_lease_renewal.md` (distinct from the tenant-rights prompts in `domain-legal/personal-self-advocacy/housing-landlord-tenant/`), `negotiation_insurance_claim_settlement.md` (amount on an accepted claim; denials route to `domain-written-advocacy/insurance-and-medical/advocacy_insurance_claim_denial_appeal.md`), `negotiation_medical_bill_reduction.md` (runs after `advocacy_medical_bill_dispute.md` and `advocacy_financial_assistance_charity_care_request.md`, not instead of them), `negotiation_severance_package.md` (employee-side, non-lawyer; the release routes to `domain-legal/employment-labor/legal_employment_offer_and_separation_package.md`), and `negotiation_licensing_ip_terms.md` (business terms before drafting; drafting routes to `legal_licensing_agreement_drafter.md`). No duplicates were found in the sweep. Root `CLAUDE.md` routing rows and the index regeneration (convention 11) are left to the integration pass.
-- **Negotiation analytics** — designing a personal scorecard across many negotiations (outcome vs. reservation point, concession efficiency, walk-away rate), feeding `craft/negotiation_pattern_library_builder.md`.
-- **Agent-mediated negotiation** — negotiating through a broker, recruiter, or agent, where your interests and your representative's diverge.
+- ✅ **Negotiation analytics** — **shipped 2026-10-03** as `craft/negotiation_analytics_scorecard.md` (range capture, concession depth and reciprocity, value created, walk-away quality, process score kept separate; distinct from the single-deal `after-the-deal/negotiation_post_negotiation_debrief.md`).
+- ◐ **Agent-mediated negotiation** — **AI-agent half shipped 2026-10-03** as `channels/negotiation_ai_agent_mediated.md` (delegating to or facing an AI agent; agent software design stays in `domain-AI-ML/agentic-ai-systems/`). Still open: negotiating through a **human** broker, recruiter, or agent whose commission-driven interests diverge from yours.
 - **Reciprocal cross-links** — deliberately deferred in Wave 1. Adjacent prompts in `domain-personal-development/`, `domain-legal/`, and `domain-business-strategy/` do not yet point back into the new subdirectories; the repo caps `related_prompts` at 3, so adding backlinks means displacing existing ones and should be a considered pass, not a sweep.

@@ -9,7 +9,7 @@ techniques:
   - RT-05  # Evidence-Based Reasoning
   - DS-06  # Prioritization Guidance
   - QA-01  # Chain-of-Verification
-  - IT-01  # Follow-up Questions (user selection gates)
+  - MP-03  # Task Clarification (user selection gates)
 difficulty: intermediate
 tags:
   - android

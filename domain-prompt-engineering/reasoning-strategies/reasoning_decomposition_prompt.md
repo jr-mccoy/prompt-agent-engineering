@@ -3,8 +3,9 @@ title: "Decompose a Task Into Ordered Subtasks"
 category: prompt-engineering/reasoning-strategies
 description: "Author a prompt that explicitly splits a task into ordered subtasks the model executes in sequence with intermediate outputs."
 techniques:
-  - DC-01
+  - DT-01
   - ST-02
+  - QA-08
 difficulty: intermediate
 tags:
   - decomposition

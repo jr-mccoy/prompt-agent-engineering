@@ -45,7 +45,7 @@ domain-prompt-engineering/
 ├── goal-orientation/         # Right-problem diagnostics, constraints, team audit
 ├── skill-development/        # Durable skill-building across four AI-work disciplines
 ├── delegation/               # Decide whether/how to delegate to AI
-├── prompt-optimization/      # General optimization techniques
+├── prompt-optimization/      # General techniques, eval-driven iteration loop, failure clustering (3)
 ├── evaluation/               # AI correctness, output evaluation, task difficulty (30)
 │   ├── adversarial/          # Jailbreak corpus, injection probes, persona attacks, bypass audits (6)
 │   ├── regression/           # Golden sets, canary runners, change impact, A/B design (4)
@@ -59,7 +59,7 @@ domain-prompt-engineering/
 ├── debugging/                # Minimal repro, failure-mode taxonomy, bisect, temperature probe, input perturbation, silent failure detection, multi-turn drift, first-failure cause (8)
 ├── style-and-voice/          # Corpus extraction, voice transfer, register control, brand rules, persona, tic banlist, audience adaptation, density, drift audit, signature kill list (10)
 ├── output-formatting/        # Markdown contract, length budget, table design, no-preamble, one-sentence, streaming order, multi-surface variants, quoting rules (8)
-├── utilities/                # Format conversion, JSON translation
+├── utilities/                # JSON translation, template placeholder audit (2)
 └── README.md
 ```
 
@@ -105,7 +105,7 @@ Assess whether AI outputs are correct and useful:
 | `goal-orientation/` | 3 | Right-problem diagnostics, constraint workshop, team misalignment audit |
 | `skill-development/` | 8 | Four-discipline diagnostics, spec writing, eval harness, context doc, constraint architecture |
 | `delegation/` | 4 | Tool-vs-colleague decision, intent spec, verification, role plan |
-| `prompt-optimization/` | 1 | General optimization techniques |
+| `prompt-optimization/` | 3 | General optimization techniques, eval-driven iteration loop, failure clustering and fix prioritisation |
 | `evaluation/` | 30 | AI correctness, output evaluation, task difficulty, adversarial testing, regression, rubrics, and dataset curation |
 | `structured-output/` | 10 | JSON Schema producers, repair, XML tags, field ordering, optional/enum policies, table streaming, markdown contracts, dual output, second-pass validator |
 | `tool-use/` | 10 | Description writer, call decision, arg extraction, orchestration DAG, result interpretation, failure recovery, disambiguation, set minimization, naming, dry-run |
@@ -115,8 +115,8 @@ Assess whether AI outputs are correct and useful:
 | `debugging/` | 8 | Minimal-repro isolator, failure-mode taxonomy, bisect prompt changes, temperature sensitivity probe, input perturbation battery, silent failure detector, multi-turn drift diagnosis, first-failure cause isolator |
 | `style-and-voice/` | 10 | Voice extraction, voice transfer, register control, brand guideline conversion, writing persona, anti-voice banlist, audience adaptation, length/density control, consistency audit, signature phrase kill list |
 | `output-formatting/` | 8 | Markdown contract, length budget designer, table design, no-preamble/no-postamble, one-sentence answer, streaming-friendly design, email/doc/chat variants, quoting and attribution rules |
-| `utilities/` | 1 | Format conversion tools |
-| **Total** | **~222** | |
+| `utilities/` | 2 | Format conversion, template placeholder audit |
+| **Total** | **~225** | |
 
 ---
 
@@ -169,6 +169,8 @@ For broader prompt-refinement work, see also `prompt-optimization/` and `model-b
 | File | Description |
 |------|-------------|
 | `llm_ops_prompt_optimization.md` | LLM operations prompt optimization techniques |
+| `llm_ops_eval_driven_prompt_iteration.md` | Multi-round optimisation loop: frozen config, measured noise band, one written hypothesis per round on the full dev set, accept/revert rule with protected cases, overfitting guards, one look at a sealed test set, plateau stop rule |
+| `llm_ops_failure_cluster_prioritizer.md` | One eval run's failures → open-coded notes → defined clusters → grader/label audit → weighted by severity and production share → lever assigned by probe (prompt, context, tool, model, decomposition, eval) → ranked backlog |
 
 ### skill-development/
 | File | Description |
@@ -288,6 +290,7 @@ For broader prompt-refinement work, see also `prompt-optimization/` and `model-b
 | File | Description |
 |------|-------------|
 | `json_prompt_translator.md` | Convert prompts to/from JSON format |
+| `prompt_template_placeholder_audit.md` | Audit existing templates: live syntax per renderer, placeholders vs every call site, brace collisions, empty-value reading, untrusted slots delimited and declared data, strict render plus leftover-pattern scan |
 
 ---
 

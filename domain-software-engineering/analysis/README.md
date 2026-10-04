@@ -38,6 +38,10 @@ Identify vulnerabilities and ensure security compliance.
 | `security_dependency_vulnerability_analysis.md` | Third-party dependency CVE check |
 | `security_infrastructure_analysis.md` | Infrastructure security posture |
 | `security_secret_credential_detection.md` | Hardcoded secrets/credentials scan |
+| `security_detection_engineering_review.md` | Detection quality, ATT&CK coverage, alert tuning |
+| `security_threat_hunting_plan.md` | Hypothesis-driven threat hunt plan |
+| `security_vulnerability_management_program.md` | Risk-based vulnerability management program |
+| `security_soc_alert_triage_runbook.md` | Security on-call triage runbook design |
 | `security_stride_threat_modeling.md` | STRIDE threat modeling exercise |
 
 ---

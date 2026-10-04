@@ -22,16 +22,16 @@ domain-parenting/
 │   ├── divorce/           # Separation/divorce — emotional & relational side for kids (10 prompts)
 │   ├── custody/           # Court-presentable resource & document builders — parenting plans, schedules, logs (11 prompts)
 │   ├── co-parenting/      # Ongoing two-home working relationship (11 prompts)
-│   ├── transitions-events/    # New sibling, moving, grief (planned)
-│   ├── coparenting-family-structure/  # Single, blended, foster, kinship, LGBTQ+ (planned)
-│   ├── health-body-sleep-feeding/     # Health / body / sleep / feeding (planned)
-│   ├── safety-risk/       # Body safety, online safety, home alone (planned)
-│   ├── tech-digital/      # Phone, social media, gaming, AI (in progress; ages-9-12 has 3)
-│   ├── academics-skills/  # Reading, math, writing, friendships (planned)
-│   ├── mental-health-behavior/    # Anxiety, depression, OCD, school refusal, lying, aggression (in progress)
-│   ├── neurodivergence/   # Beyond ADHD/ASD/strong-willed: dyslexia, 2e, PDA, tics (planned)
-│   ├── identity-culture/  # Race, multilingual, religion, gender (planned)
-│   └── parent-capacity/   # Postpartum, working-parent, marital strain (in progress)
+│   ├── transitions-events/    # New sibling, moving, grief, new school (4 prompts)
+│   ├── coparenting-family-structure/  # Kinship, foster, solo, LGBTQ+-parented (4 prompts; blended → co-parenting)
+│   ├── health-body-sleep-feeding/     # Picky eating, bedtime, bedwetting, procedure prep (4 prompts)
+│   ├── safety-risk/       # Body safety, home alone, other homes, childproofing (4 prompts; online safety → psy-ops)
+│   ├── tech-digital/      # Family media plan, AI chatbots, gaming reset (3 prompts; phone/social/game agreement in ages-9-12)
+│   ├── academics-skills/  # Homework battles, struggling readers, learning-concern school meetings (3 prompts)
+│   ├── mental-health-behavior/    # Young-child school refusal & lying, family aggression safety plan, child suicide-talk response (4 prompts)
+│   ├── neurodivergence/   # Tics/Tourette's, twice-exceptional (2e), DCD/dyspraxia (3 prompts)
+│   ├── identity-culture/  # Race, multilingual, interfaith (3 prompts; child's gender identity not yet covered)
+│   └── parent-capacity/   # Overload, fourth trimester, couple strain (3 prompts; postpartum check in ages-0-3)
 └── family-support-professional/
     ├── intake-assessment/         (planned)
     ├── coaching-education/        (planned)
@@ -43,7 +43,7 @@ domain-parenting/
     └── culturally-responsive/     (planned)
 ```
 
-## Current Inventory (106 Prompts)
+## Current Inventory (141 Prompts)
 
 ### `caregiver-facing/ages-0-3/` (15 prompts)
 
@@ -184,6 +184,111 @@ The ongoing two-home working relationship between parents. See [`co-parenting/RE
 | `domain-parenting/caregiver-facing/co-parenting/parenting_coparenting_self_audit.md` | Honest self-audit of one's own contribution to conflict |
 | `parenting_coparenting_with_unsafe_or_absent_parent.md` | Safety-first navigation of an unsafe/absent co-parent |
 
+### `caregiver-facing/transitions-events/` (4 prompts)
+
+One-time family changes, from before the event through the weeks after. See [`transitions-events/README.md`](caregiver-facing/transitions-events/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_new_sibling_arrival_prep.md` | Announcement timing by age; moving competing changes; birth-day care plan; regression watch list |
+| `parenting_moving_house_child_transition.md` | Child's losses inventory; goodbye/arrival rituals; peer rebuild; 2/6/12-week check-ins |
+| `parenting_child_grief_after_death.md` | Developmental grasp of death; funeral choices; hard dates; complicated/traumatic grief escalation |
+| `parenting_new_school_transition_plan.md` | Dominant-risk scoring; IEP/504/health-plan transfer; T−4 weeks timeline; social entry |
+
+### `caregiver-facing/safety-risk/` (4 prompts)
+
+Prevention-first safety planning. Online grooming is deliberately excluded (covered by `domain-psy-ops/personal-defense/psyops_youth_online_manipulation_guide.md`). See [`safety-risk/README.md`](caregiver-facing/safety-risk/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_body_safety_consent_lessons.md` | Age-tiered body safety 2–12; grooming signs; disclosure response (do not interrogate; report) |
+| `parenting_home_alone_readiness_check.md` | Local legal guidance (varies); anchored readiness scores; hazard lockdown; trial ladder |
+| `parenting_other_homes_safety_questions.md` | Firearm storage, water, supervision, meds/edibles questions; yes/adjust/no rule; exit plan |
+| `parenting_home_childproofing_by_stage.md` | Severity × likelihood ranking; newborn → school-age stage matrix; room-by-room audit |
+
+### `caregiver-facing/health-body-sleep-feeding/` (4 prompts)
+
+Pediatrician-first home plans: each opens with an escalation screen. See [`health-body-sleep-feeding/README.md`](caregiver-facing/health-body-sleep-feeding/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_picky_eating_mealtime_plan.md` | Division of Responsibility; ARFID / feeding-disorder / growth-faltering escalation |
+| `parenting_bedtime_resistance_plan_4_12.md` | Driver-matched method (bedtime pass, faded bedtime); sleep-apnoea screen; melatonin caution |
+| `parenting_bedwetting_response_plan.md` | Pediatrician-first screen; shame-free routine; alarm vs. desmopressin discussion |
+| `parenting_medical_procedure_preparation.md` | Child-life approach: honest sensory steps, comfort positioning, numbing, aftercare |
+
+### `caregiver-facing/coparenting-family-structure/` (4 prompts)
+
+Kinship, foster, solo, and LGBTQ+-parented households; legal status is always routed, never advised. See [`coparenting-family-structure/README.md`](caregiver-facing/coparenting-family-structure/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_kinship_care_first_months.md` | Relative suddenly raising a child: honest account, loyalty-bind map, safe contact with the parent, carer capacity, navigator questions |
+| `parenting_foster_placement_first_weeks.md` | First 30 days: arrival night, regulate-relate-reason, trust deposits, must-nots, family-time visits, caseworker update |
+| `parenting_solo_parent_load_and_support.md` | Binding constraint, cascade walk-throughs, three-deep backup chain, paperwork for a lawyer, explaining the family |
+| `parenting_lgbtq_parented_family_conversations.md` | Layered origin story, child's ready answers, school briefing, hostile-adult lines, parentage check |
+
+### `caregiver-facing/tech-digital/` (3 prompts)
+
+Household and incident-level tech planning; first phone, first social account, and the proactive tween gaming agreement stay in `ages-9-12/`. See [`tech-digital/README.md`](caregiver-facing/tech-digital/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_family_media_plan_all_ages.md` | Whole-household defaults, per-child five-risk map, age tiers, adult commitments, readiness gate, 30-day trial |
+| `parenting_ai_chatbot_companion_family_rules.md` | Age/terms check, homework traffic light, privacy must-nots, companion-app decision, discovery conversation |
+| `parenting_gaming_conflict_and_spending_reset.md` | Refund routes, purchase locks, proportionate repayment, dominant driver, match-based stopping, ICD-11 screen |
+
+### `caregiver-facing/identity-culture/` (3 prompts)
+
+Race, language, and faith in family identity; tradition-neutral, never teaches religions. See [`identity-culture/README.md`](caregiver-facing/identity-culture/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_race_racism_conversations_by_age.md` | Racial socialisation and anti-bias goals, staged words, unplanned-moment scripts, bias preparation with pride |
+| `parenting_multilingual_heritage_language_plan.md` | OPOL / MLAH, heritage-exposure arithmetic, refusal driver, real need, SLP threshold across both languages |
+| `parenting_interfaith_household_parenting_plan.md` | Value hierarchies, interests behind positions, rites/holidays/education decisions, relatives' pressure |
+
+### `caregiver-facing/parent-capacity/` (3 prompts)
+
+The parent's own capacity; each prompt screens for depression, perinatal mood problems, or abuse before planning. See [`parent-capacity/README.md`](caregiver-facing/parent-capacity/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_parent_overload_load_redesign.md` | Four-feature burnout check, load inventory with cognitive hours, drop/defer/delegate/simplify, minimum viable week |
+| `parenting_fourth_trimester_support_plan.md` | Sleep shifts, feeding roles, helper briefing, POST-BIRTH signs, both parents' mood check-ins and escalation ladder |
+| `parenting_couple_strain_under_parenting_load.md` | Private abuse screen, whole-task ownership, co-parenting alliance, conflict repair in front of kids, therapy threshold |
+
+### `caregiver-facing/academics-skills/` (3 prompts)
+
+The parent's side of school learning. Formal evaluation requests in writing → `domain-written-advocacy/`. See [`academics-skills/README.md`](caregiver-facing/academics-skills/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_homework_battles_plan_5_8.md` | 10-min-per-grade load check; dominant driver; time cap + stop-and-note; learning-issue warning signs |
+| `parenting_struggling_reader_home_support.md` | Simple View of Reading sort; decodable/paired practice + read-aloud channel; dyslexia alongside school; evaluation threshold |
+| `parenting_learning_concern_school_meeting.md` | Evidence pack; intervention vs. evaluation ask; answers to "wait and see"; same-day summary email; verify-locally legal layer |
+
+### `caregiver-facing/mental-health-behavior/` (4 prompts)
+
+Caregiver side only — no diagnosis or treatment protocols; each prompt carries clinician and crisis escalation triggers. See [`mental-health-behavior/README.md`](caregiver-facing/mental-health-behavior/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_school_refusal_young_child_5_8.md` | Medical/safety screen; four-function model; morning + handoff; accommodation reduction; graded return; clinician triggers |
+| `parenting_young_child_lying_response_3_8.md` | Fantasy vs. lie; developmental reframe; trap-free questions; thank-then-fix; safeguarding red flags |
+| `parenting_aggression_toward_family_safety_plan.md` | Written family safety plan; sibling safe room/code word; means secured; 911/988 thresholds; driver log + evaluation |
+| `parenting_child_suicide_talk_response_6_12.md` | Ask directly; NOW vs. TODAY triggers; 988 + international lines; same-day means safety; supervision until assessed |
+
+### `caregiver-facing/neurodivergence/` (3 prompts)
+
+Beyond the ADHD/ASD/strong-willed adaptations in `ages-4-8/`. See [`neurodivergence/README.md`](caregiver-facing/neurodivergence/README.md).
+
+| Prompt | Focus |
+|---|---|
+| `parenting_tics_tourette_home_school_plan.md` | How tics behave; look-alikes; don't comment; one-page school sheet; classmate script; CBIT awareness; medical triggers |
+| `parenting_twice_exceptional_child_support.md` | Strength vs. challenge maps; three masking patterns; evaluation questions; challenge + support asks; worth-not-performance |
+| `parenting_dcd_dyspraxia_home_support.md` | Neurological red flags; DCD pattern; task-oriented practice + backward chaining; adaptations; school writing/PE supports |
+
 ## Cross-Cutting Conventions
 
 - **`intended_use: model-testing`** in frontmatter for prompts authored 2026-05+. Library is built for testing model performance on realistic parenting workflows.
@@ -222,9 +327,9 @@ The library will expand in waves; current state is Wave 1.
 
 - **Wave 1 (complete):** age extension into 0–3 and 9–12. 30 prompts.
 - **Wave 2 (complete):** ages 13–18 + cross-age universals. 25 prompts.
-- **Wave 3 (planned):** health / body / sleep / feeding / safety / risk.
-- **Wave 4 (planned):** mental health / behavior / neurodivergence beyond ADHD/ASD/strong-willed.
-- **Wave 5 (in progress):** transitions / events / family structure / identity / culture. **Separation/divorce, custody (court-presentable resource builders), and co-parenting subsections complete (32 prompts).**
+- **Wave 3 (in progress):** health / body / sleep / feeding / safety / risk. **`health-body-sleep-feeding/` and `safety-risk/` shipped (8 prompts); `tech-digital/` shipped (3 prompts).**
+- **Wave 4 (in progress):** mental health / behavior / neurodivergence beyond ADHD/ASD/strong-willed. **`mental-health-behavior/` (4) and `neurodivergence/` (3) shipped; `academics-skills/` (3) shipped.**
+- **Wave 5 (in progress):** transitions / events / family structure / identity / culture. **Separation/divorce, custody (court-presentable resource builders), and co-parenting subsections complete (32 prompts); `transitions-events/` shipped (4 prompts); `coparenting-family-structure/` (4), `identity-culture/` (3), and `parent-capacity/` (3) shipped.**
 - **Wave 6 (planned):** family-support professional workflows.
 
 ## Related Domains
@@ -237,4 +342,4 @@ The library will expand in waves; current state is Wave 1.
 
 ---
 
-**Last updated:** 2026-06-01
+**Last updated:** 2026-10-03

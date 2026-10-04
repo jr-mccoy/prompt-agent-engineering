@@ -3,11 +3,10 @@ title: "iOS App Store Optimization (ASO)"
 category: mobile-development
 description: "Comprehensive ASO guide covering keyword research, title and subtitle optimization, screenshot strategy, app preview videos, product page optimization, and A/B testing for App Store Connect."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - DS-02 (Domain-Specific Terminology)
-  - CR-01 (Creative Strategy)
-  - AN-01 (Analysis Framework)
+  - DT-01
+  - QA-10
+  - CM-01
+  - RT-02
 difficulty: intermediate
 tags:
   - ios
@@ -312,11 +311,10 @@ After completing this prompt, you will have:
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Six-step ASO workflow from research to testing |
-| RT-02 (Checklist Verification) | Screenshot requirements and metadata validation |
-| DS-02 (Domain-Specific Terminology) | ASO terms: keyword density, impression-to-install, Search Match |
-| CR-01 (Creative Strategy) | Screenshot narrative and app preview storyboarding |
-| AN-01 (Analysis Framework) | Competitor keyword analysis and test result evaluation |
+| DT-01 (Hierarchical Task Breakdown) | Six-step ASO workflow from research to testing |
+| QA-10 (Test Battery Protocol) | Screenshot requirements and metadata validation |
+| CM-01 (Explicit Context Framing) | ASO terms: keyword density, impression-to-install, Search Match |
+| RT-02 (Multi-Dimensional Analysis Framework) | Competitor keyword analysis and test result evaluation |
 
 ## Related Prompts
 

@@ -1,10 +1,10 @@
-<!-- INVENTORY_COUNTS: {"categories": {"accessibility": 2, "architecture": 2, "business": 3, "code-quality": 5, "creative": 3, "data-analysis": 1, "database": 2, "deployment": 2, "devops": 8, "documentation": 1, "education": 3, "framework-migration": 3, "git-workflows": 3, "healthcare": 4, "mobile-development": 12, "multi-agent": 8, "orchestration": 9, "other": 18, "performance": 3, "research": 3, "security": 6, "testing": 6, "troubleshooting": 5, "writing": 3}, "date": "2026-09-22", "total": 115, "type": "commands"} -->
+<!-- INVENTORY_COUNTS: {"categories": {"accessibility": 2, "architecture": 2, "business": 3, "code-quality": 5, "creative": 3, "data-analysis": 3, "database": 2, "deployment": 2, "devops": 8, "documentation": 3, "education": 3, "framework-migration": 3, "git-workflows": 3, "healthcare": 4, "mobile-development": 12, "multi-agent": 8, "orchestration": 9, "other": 18, "performance": 3, "research": 3, "security": 6, "testing": 6, "troubleshooting": 5, "writing": 3}, "date": "2026-10-04", "total": 119, "type": "commands"} -->
 
 # Claude Code Commands Index
 
-**Total Commands:** 115 across 24 categories
+**Total Commands:** 119 across 24 categories
 
-**Last Updated:** 2026-09-22
+**Last Updated:** 2026-10-04
 
 ---
 
@@ -17,10 +17,11 @@
   - [Accessibility (3)](#--accessibility)
   - [Architecture (3)](#--architecture)
   - [Code Quality (6)](#--code-quality)
+  - [Data Analysis (3)](#--data-analysis)
   - [Database (3)](#--database)
   - [Deployment (3)](#--deployment)
   - [Devops (9)](#--devops)
-  - [Documentation (2)](#--documentation)
+  - [Documentation (3)](#--documentation)
   - [Framework Migration (4)](#--framework-migration)
   - [Git Workflows (4)](#--git-workflows)
   - [Mobile Development (13)](#--mobile-development)
@@ -67,7 +68,7 @@ Commands are slash commands (e.g., `/full-stack-feature`, `/security-hardening`)
 
 ## Command Categories
 
-Commands are organized into 15 categories based on their primary domain:
+Commands are organized into 24 categories based on their primary domain:
 
 | Category | Count | Description |
 |----------|-------|-------------|
@@ -83,6 +84,8 @@ Commands are organized into 15 categories based on their primary domain:
 | Healthcare | 4 | Various development commands |
 | Business | 3 | Various development commands |
 | Creative | 3 | Various development commands |
+| Data Analysis | 3 | Various development commands |
+| Documentation | 3 | Various development commands |
 | Education | 3 | Various development commands |
 | Framework Migration | 3 | Various development commands |
 | Git Workflows | 3 | Various development commands |
@@ -93,8 +96,6 @@ Commands are organized into 15 categories based on their primary domain:
 | Architecture | 2 | Various development commands |
 | Database | 2 | Various development commands |
 | Deployment | 2 | Various development commands |
-| Data Analysis | 1 | Various development commands |
-| Documentation | 1 | Various development commands |
 
 ## Quick Reference by Category
 
@@ -103,10 +104,11 @@ Jump to any category:
 - **[Accessibility](#--accessibility)** - 3 commands
 - **[Architecture](#--architecture)** - 3 commands
 - **[Code Quality](#--code-quality)** - 6 commands
+- **[Data Analysis](#--data-analysis)** - 3 commands
 - **[Database](#--database)** - 3 commands
 - **[Deployment](#--deployment)** - 3 commands
 - **[Devops](#--devops)** - 9 commands
-- **[Documentation](#--documentation)** - 2 commands
+- **[Documentation](#--documentation)** - 3 commands
 - **[Framework Migration](#--framework-migration)** - 4 commands
 - **[Git Workflows](#--git-workflows)** - 4 commands
 - **[Mobile Development](#--mobile-development)** - 13 commands
@@ -1377,7 +1379,7 @@ Jump to any category:
 
 ### 🔹 Documentation
 
-**2 commands**
+**3 commands**
 
 ### README
 
@@ -1396,6 +1398,60 @@ Jump to any category:
 **Syntax:** `/doc-generate`
 
 **Description:** You are a documentation expert specializing in creating comprehensive, maintainable documentation...
+
+---
+
+### docs-drift-check
+
+**Path:** `commands/documentation/docs_drift_check.md`
+
+**Syntax:** `/docs_drift_check`
+
+**Description:** Verify checkable claims in docs (CLI flags, env vars, config keys, endpoints, signatures, paths, sample imports) against the current code; reports CONFIRMED / DRIFTED / MISSING / UNCHECKABLE with evidence. Read-only.
+
+---
+
+### changelog-reconcile
+
+**Path:** `commands/documentation/changelog_reconcile.md`
+
+**Syntax:** `/changelog_reconcile`
+
+**Description:** Pre-tag check that a changelog section matches the commit range: MISSING, PHANTOM, MISCLASSIFIED, BREAKING-UNFLAGGED, and DUPLICATE entries, with drafted entries for gaps. Read-only.
+
+---
+
+### 🔹 Data Analysis
+
+**3 commands**
+
+### dataset-profile
+
+**Path:** `commands/data-analysis/dataset_profile.md`
+
+**Syntax:** `/dataset_profile`
+
+**Description:** Quick profile of one tabular dataset: shape, types, nulls vs empty strings vs sentinels, distinct counts, candidate keys, duplicates, ranges, date coverage; masks likely PII; ends in flags and questions for the data owner.
+
+---
+
+### metric-sanity-check
+
+**Path:** `commands/data-analysis/metric_sanity_check.md`
+
+**Syntax:** `/metric_sanity_check`
+
+**Description:** Pre-publish smoke test for one computed metric: definition, grain, join fan-out, nulls, totals reconciliation, time window, ratio bounds, step change; PASS / WARN / FAIL with diagnostic queries.
+
+---
+
+### process-financials
+
+**Path:** `commands/data-analysis/process_financials.md`
+
+**Syntax:** `/process_financials`
+
+**Description:** Run the full financial-records pipeline over bank/credit-card statements: extract, verify, categorize, and flag for attorney review.
 
 ---
 

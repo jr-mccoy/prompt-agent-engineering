@@ -1,6 +1,6 @@
 # Domain: Education & Teaching
 
-270 prompts for the three people who show up in an educational setting, each with a
+275 prompts for the three people who show up in an educational setting, each with a
 different job and a different question. A **teacher, lecturer or corporate trainer**
 planning and running instruction. A **dean, curriculum director or accreditation
 liaison** working a level up, on the programme rather than the class. And the
@@ -48,7 +48,7 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 
 ## Subdirectory map
 
-### `instructor/` — 107 prompts
+### `instructor/` — 109 prompts
 
 | Subdirectory | What it covers | Prompts |
 |---|---|---|
@@ -59,7 +59,7 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 | `assessment-design/` | Designing the instrument: blueprints, performance tasks, portfolios, rubrics, mastery checks | 9 |
 | `assessment-analysis/` | Reading the results: item analysis, difficulty calibration, alignment audits, standards-based conversion | 7 |
 | `grading-feedback/` | Getting through a stack of work: comment libraries, rubric-criterion feedback, triage, whole-class memos | 8 |
-| `reporting-communication/` | Writing to families: newsletters, conference notes, report card comments | 2 |
+| `reporting-communication/` | Writing to and meeting with families: newsletters, conference notes, report card comments, conference preparation, multilingual family outreach | 4 |
 | `student-support/` | Individual students beyond core instruction: IEP/504 goals, behaviour and SEL, UDL, dyslexia, ELL, advising | 8 |
 | `classroom-ops/` | Running the room: norms, routines and transitions, restorative conversations | 3 |
 | `ed-tech/` | Producing the artefacts: slide decks, video scripts, choice boards, LMS shells, blended/HyFlex, AI literacy | 6 |
@@ -67,7 +67,7 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 | `independent-course-creator/` | Teaching outside an institution: turning expertise into a teachable scope, choosing cohort vs self-paced, designing for completion | 3 |
 | `subject-pedagogy/` | Subject-specific moves — `ela/` (7), `math/` (5), `science/` (4), `social-studies/` (4), `world-languages/` (2) | 22 |
 
-### `program/` — 41 prompts
+### `program/` — 44 prompts
 
 | Subdirectory | What it covers | Prompts |
 |---|---|---|
@@ -76,6 +76,7 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 | `accreditation-review/` | Self-studies (regional, programmatic, med-ed), programme review cycles, evidence compilation | 5 |
 | `faculty-development/` | Development plans, PLCs, instructional coaching, assessment literacy, new-faculty onboarding | 5 |
 | `evaluation-analytics/` | Programme evaluation frameworks, logic models, learning analytics, early-warning systems, PDSA cycles | 5 |
+| `student-success/` | Retention from the institution's side: first-year proactive advising calendar, outreach and case plan for flagged students, retention and persistence data review | 3 |
 
 ### `learner/` — 122 prompts
 
@@ -110,6 +111,8 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 | "Is this test actually aligned to the standards?" | `instructor/assessment-analysis/teaching_standards_alignment_auditor.md` |
 | "I have 90 essays to grade by Friday" | `instructor/grading-feedback/teaching_speed_grading_triage.md` |
 | "I have to write 28 report card comments" | `instructor/reporting-communication/teaching_report_card_comment_generator.md` |
+| "Conferences are next week and I have 25 families" | `instructor/reporting-communication/teaching_parent_teacher_conference_prep.md` |
+| "Half my families don't read English" | `instructor/reporting-communication/teaching_multilingual_family_outreach.md` |
 | "I need IEP goals that will survive review" | `instructor/student-support/teaching_iep_goal_writer.md` |
 | "I'm out sick tomorrow" | `instructor/lesson-planning/teaching_substitute_plan_generator.md` |
 | "Turn my lecture course into an online one" | `instructor/higher-ed-corporate/teaching_online_course_conversion.md` |
@@ -121,6 +124,9 @@ it is `program/`. If it produces something only you will use to learn, it is `le
 | "The accreditor visit is in eight months" | `program/accreditation-review/program_accreditation_self_study_he.md` |
 | "Are we teaching what we say we teach?" | `program/outcomes-assessment/program_program_gap_analysis.md` |
 | "Which students are about to fail, and can we tell early?" | `program/evaluation-analytics/program_early_warning_system_designer.md` |
+| "We have the flagged list — now what?" | `program/student-success/program_at_risk_student_outreach_plan.md` |
+| "Our retention rate dropped and nobody agrees why" | `program/student-success/program_retention_persistence_data_review.md` |
+| "How should advising work for first-year students?" | `program/student-success/program_first_year_advising_touchpoint_model.md` |
 | "I have a lecture and no idea what to study" | `learner/note-taking/learn_lecture_to_study_guide.md` |
 | "I read it four times and remember nothing" | `learner/memory-and-recall/learn_retrieval_drill_designer.md` |
 | "I think I know it but I'm not sure" | `learner/self-assessment/learn_confidence_calibration.md` |
@@ -148,7 +154,7 @@ Inside `program/`, the spine runs outcomes → curriculum → evidence → judge
 `outcomes-assessment/` states what graduates should be able to do,
 `curriculum-design/` sequences courses to get them there, `accreditation-review/`
 evidences it to an external body, `evaluation-analytics/` asks whether it worked, and
-`faculty-development/` is how the answer changes practice.
+`faculty-development/` is how the answer changes practice. `student-success/` runs alongside the spine rather than in it: it acts on the students the programme is losing, using `evaluation-analytics/` early-warning output as its input.
 
 Inside `learner/`, the spine is a study loop: `note-taking/` produces the material,
 `memory-and-recall/` works it, `self-assessment/` tests it, `stuck-and-confused/`
@@ -331,11 +337,13 @@ Generated from the directory tree; every prompt appears exactly once.
 | [`teaching_substitute_plan_generator.md`](instructor/lesson-planning/teaching_substitute_plan_generator.md) | Create comprehensive substitute teacher plans for emergency and planned absences |
 | [`teaching_unit_curriculum_planner.md`](instructor/lesson-planning/teaching_unit_curriculum_planner.md) | Design multi-week instructional units using Understanding by Design framework with scope and sequence |
 
-#### `instructor/reporting-communication/` (2)
+#### `instructor/reporting-communication/` (4)
 
 | File | Purpose |
 |---|---|
 | [`teaching_parent_communication_composer.md`](instructor/reporting-communication/teaching_parent_communication_composer.md) | Create professional, empathetic parent communications including newsletters, conference notes, and progress updates |
+| [`teaching_multilingual_family_outreach.md`](instructor/reporting-communication/teaching_multilingual_family_outreach.md) | Plan how a teacher or grade team reaches families who do not use English as their main language: map each… |
+| [`teaching_parent_teacher_conference_prep.md`](instructor/reporting-communication/teaching_parent_teacher_conference_prep.md) | Prepare a teacher for a round of parent-teacher conferences: sort the class into routine, concern, and urgent… |
 | [`teaching_report_card_comment_generator.md`](instructor/reporting-communication/teaching_report_card_comment_generator.md) | Generate personalized, strengths-based report card comments by subject and development area |
 
 #### `instructor/response-cycle/` (5)
@@ -685,3 +693,11 @@ Generated from the directory tree; every prompt appears exactly once.
 | [`program_program_outcomes_framework.md`](program/outcomes-assessment/program_program_outcomes_framework.md) | Design a coherent program-outcomes architecture — Institutional Student Learning Outcomes, Program Student… |
 | [`program_rubric_alignment_to_outcomes.md`](program/outcomes-assessment/program_rubric_alignment_to_outcomes.md) | Audit a rubric for alignment with the learning outcomes it is supposed to assess — checking that every… |
 | [`program_signature_assignment_designer.md`](program/outcomes-assessment/program_signature_assignment_designer.md) | Design a signature assignment — an embedded course-level assessment that produces program-outcome evidence —… |
+
+#### `program/student-success/` (3)
+
+| File | Purpose |
+|---|---|
+| [`program_at_risk_student_outreach_plan.md`](program/student-success/program_at_risk_student_outreach_plan.md) | For a student-success team holding a list of flagged students this term — early alerts, midterm grades,… |
+| [`program_first_year_advising_touchpoint_model.md`](program/student-success/program_first_year_advising_touchpoint_model.md) | Design the universal, proactive advising layer for first-year students: map the touchpoints to the first… |
+| [`program_retention_persistence_data_review.md`](program/student-success/program_retention_persistence_data_review.md) | Review an institution's or programme's retention and persistence data: fix the cohort and the definitions… |

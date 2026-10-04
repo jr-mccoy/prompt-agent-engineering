@@ -36,7 +36,7 @@ tracks (see [Which domain does this belong in?](../CLAUDE.md)):
 ```
 domain-product-management/
 ├── prompts/      # 18 product-management prompts
-├── templates/    # PRD template
+├── templates/    # 3 — full PRD template, PRD one-pager, PRD change request record
 └── README.md
 ```
 
@@ -60,6 +60,12 @@ domain-product-management/
 | [`product_release_notes_writer.md`](prompts/product_release_notes_writer.md) | A release needs customer notes and internal support/sales notes from one change inventory, without announcing partial rollouts |
 | [`product_stakeholder_update.md`](prompts/product_stakeholder_update.md) | Your recurring update should lead with decisions needed and outcome metrics against target, not a list of what shipped |
 | [`product_pricing_experiment_matrix.md`](prompts/product_pricing_experiment_matrix.md) | You need to design pricing experiments: variables, test matrix, guardrails (moved from `domain-decision-making/` in coverage Wave 4) |
+
+| Template | Use when |
+|---|---|
+| [`prd_template.md`](templates/prd_template.md) | The full PRD skeleton — cross-team, irreversible, or multi-sprint work |
+| [`prd_one_pager_with_acceptance_criteria.md`](templates/prd_one_pager_with_acceptance_criteria.md) | A small feature one team ships in a sprint or two: a size gate that sends bigger work to the full PRD, one metric and guardrail, non-goals, and binary Given/When/Then criteria covering edge, error, empty and permission cases |
+| [`prd_change_request_record.md`](templates/prd_change_request_record.md) | Someone wants the agreed spec changed mid-build: the change as a delta against acceptance criteria, impact and reversibility, accept/trade/defer/reject options, the decider by authority rule, a versioned amendment, and a cumulative-churn check (a general decision log is `domain-decision-making/documentation/decisiondoc_log_entry.md`) |
 
 ---
 

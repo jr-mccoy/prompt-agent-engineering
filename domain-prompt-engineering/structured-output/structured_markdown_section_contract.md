@@ -5,7 +5,7 @@ description: "Define heading, list, and code-block conventions so a downstream p
 techniques:
   - ST-03
   - CM-02
-  - PR-02
+  - QA-01
 difficulty: beginner
 tags:
   - markdown

@@ -18,7 +18,7 @@ patterns, and out-of-scope boundaries.
 | [`identity/`](./identity/README.md) | 7 | The third axis — values, self-talk, comparison/envy, confidence, purpose, life audit, taste |
 | [`habits/`](./habits/README.md) | 6 | Behavior change: habit design, breaking bad habits, stacking, streak recovery, keystone habits, environment design |
 | [`resilience/`](./resilience/README.md) | 6 | Non-clinical resilience & motivation: setback recovery, motivation diagnosis, self-discipline, failure reframe, anti-fragility, momentum rebuild |
-| [`relationships/`](./relationships/README.md) | 6 | Personal (non-work) relationships & social skills: boundaries, hard conversations, network cultivation, social-skill practice, conflict repair, relationship audit |
+| [`relationships/`](./relationships/README.md) | 13 | Personal (non-work) relationships & social skills: boundaries, hard conversations, friendship, network cultivation, social-skill practice, difficult family, apology, conflict repair, loneliness, relationship audit, dating after divorce, early-dating safety |
 | [`goals/`](./goals/README.md) | 4 | Goal systems, reflection cadence, skill-breakdown blueprint, learning-task decomposition |
 | [`thinking/`](./thinking/README.md) | 9 | Cognitive tools: blind spots, fresh perspective, interrogative/question modes, reframing, regret minimization, memory palace, simplification, constraint analysis |
 | _(moved)_ | — | Work-effectiveness prompts now live in [`domain-productivity/`](../../domain-productivity/) — automation, meeting triage, open-loop audit, and energy audit were consolidated there so productivity has a single home. |

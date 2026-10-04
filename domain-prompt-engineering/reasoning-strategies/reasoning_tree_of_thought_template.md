@@ -3,8 +3,9 @@ title: "Tree-of-Thought Template"
 category: prompt-engineering/reasoning-strategies
 description: "Prompt the model to branch on candidate approaches, evaluate each, prune, and proceed with the best — within a bounded budget."
 techniques:
-  - PR-02
-  - DC-01
+  - RT-03
+  - DD-06
+  - QA-17
 difficulty: advanced
 tags:
   - tree-of-thought

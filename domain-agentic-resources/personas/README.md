@@ -1,6 +1,6 @@
 # Agency Agents: Role-Based AI Personas
 
-A sophisticated collection of **51 AI agent personalities** designed for collaborative, autonomous development workflows. Unlike task-focused prompts, these agents have persistent identities with personality traits, memory systems, and orchestration capabilities.
+A sophisticated collection of **57 AI agent personalities** designed for collaborative, autonomous development workflows. Unlike task-focused prompts, these agents have persistent identities with personality traits, memory systems, and orchestration capabilities.
 
 ## Overview
 
@@ -22,7 +22,7 @@ Agency Agents are designed for **multi-agent orchestration**—where specialized
 
 ```
 agency-agents/
-├── design/                    # 6 agents
+├── design/                    # 7 agents
 │   ├── design_brand_guardian.md
 │   ├── design_ui_designer.md
 │   ├── design_ux_architect.md
@@ -49,8 +49,10 @@ agency-agents/
 │   ├── marketing_tiktok_strategist.md
 │   └── marketing_twitter_engager.md
 │
-├── product/                   # 3 agents
+├── product/                   # 5 agents
+│   ├── product_api_platform_manager.md
 │   ├── product_feedback_synthesizer.md
+│   ├── product_operations_lead.md
 │   ├── product_sprint_prioritizer.md
 │   └── product_trend_researcher.md
 │
@@ -61,19 +63,22 @@ agency-agents/
 │   ├── project_studio_operations.md
 │   └── project_studio_producer.md
 │
-├── spatial-computing/         # 5 agents
+├── spatial-computing/         # 6 agents
 │   ├── spatial_macos_metal_engineer.md
 │   ├── spatial_terminal_integration.md
 │   ├── spatial_visionos_engineer.md
 │   ├── spatial_xr_cockpit_specialist.md
 │   └── spatial_xr_interface_architect.md
 │
-├── specialized/               # 3 agents
+├── specialized/               # 6 agents
 │   ├── agents_orchestrator.md          ⭐ Pipeline manager
 │   ├── data_analytics_reporter.md
-│   └── specialized_lsp_index_engineer.md
+│   ├── lsp_index_engineer.md
+│   ├── pacu_educator_persona.md
+│   ├── specialized_geospatial_analyst.md
+│   └── specialized_open_source_maintainer.md
 │
-├── support/                   # 7 agents
+├── support/                   # 6 agents
 │   ├── support_analytics_reporter.md
 │   ├── support_executive_summary.md
 │   ├── support_finance_tracker.md
@@ -381,7 +386,7 @@ When adding new agents:
 
 ---
 
-**Total Agents:** 51
+**Total Agents:** 57
 **Domains:** 9
 **Techniques Introduced:** 12 (AG-01 to AG-12)
-**Last Updated:** 2025-12-08
+**Last Updated:** 2026-10-04

@@ -12,7 +12,7 @@ techniques:
   - ST-03
   - AG-02
   - AG-12
-  - SC-01
+  - RP-01
   - NE-02
   - NE-07
 difficulty: advanced
@@ -1215,7 +1215,7 @@ fun SmartBottomSheet(
 - **ST-03** (Output Format Templates): Comprehensive structured deliverables
 - **AG-02** (Skeptical Default Stance): Critical, honest assessment over validation
 - **AG-12** (Quantitative Success Metrics): Scoring systems and comparison matrices
-- **SC-01** (Persona Assignment): Market-focused analyst and optimization expert
+- **RP-01** (Expert Role Assignment): Market-focused analyst and optimization expert
 - **NE-02** (Phased Workflow Architecture): Clear phase progression with handoffs
 - **NE-07** (Discussion Before Action): Explicit approval gates before implementation
 

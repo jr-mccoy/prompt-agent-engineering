@@ -1,17 +1,17 @@
-<!-- INVENTORY_COUNTS: {"categories": {"accessibility": 2, "backend-development": 13, "blockchain-web3": 16, "business": 3, "cicd-automation": 4, "cloud-infrastructure": 14, "content-creation": 5, "creative": 2, "cross-domain": 3, "data-engineering": 10, "developer-tools": 35, "devops": 3, "document-processing": 7, "education": 2, "financial-records": 4, "framework-migration": 4, "game-development": 2, "healthcare": 11, "languages": 18, "llm-application-dev": 10, "marketing": 41, "ml-ai": 4, "mobile-development": 36, "observability": 5, "other": 2, "payments": 4, "research": 2, "security": 36, "seo-marketing": 4, "skills": 3, "testing-qa": 18, "web-development": 8, "writing": 2}, "date": "2026-09-22", "total": 333, "type": "skills"} -->
+<!-- INVENTORY_COUNTS: {"categories": {"accessibility": 4, "backend-development": 13, "blockchain-web3": 16, "business": 4, "cicd-automation": 4, "cloud-infrastructure": 14, "content-creation": 5, "creative": 2, "cross-domain": 3, "data-engineering": 10, "developer-tools": 36, "devops": 5, "document-processing": 7, "education": 2, "financial-records": 4, "framework-migration": 4, "game-development": 4, "healthcare": 11, "languages": 18, "llm-application-dev": 11, "marketing": 41, "ml-ai": 4, "mobile-development": 36, "observability": 6, "other": 2, "payments": 4, "research": 2, "security": 36, "seo-marketing": 4, "testing-qa": 18, "web-development": 8, "writing": 2}, "date": "2026-10-04", "total": 340, "type": "skills"} -->
 
 # Claude Code Skills Index
 
-**Comprehensive index of 333 Claude Code skills organized by domain.**
+**Comprehensive index of 340 Claude Code skills organized by domain.**
 
 ## Overview
 
-This directory contains **333 specialized skills** for Claude Code. Skills are modular knowledge packages that use progressive disclosure - loading detailed information only when needed to optimize context usage.
+This directory contains **340 specialized skills** for Claude Code. Skills are modular knowledge packages that use progressive disclosure - loading detailed information only when needed to optimize context usage.
 
 ### Quick Stats
 
-- **Total Skills:** 333
-- **Categories:** 33
+- **Total Skills:** 340
+- **Categories:** 32
 
 ### Recently Added (2026-05-05)
 
@@ -37,36 +37,35 @@ This architecture minimizes context window usage while maximizing capability.
 ## Table of Contents
 
 **By Category:**
-- [Accessibility](#accessibility) (2 skills)
+- [Accessibility](#accessibility) (4 skills)
 - [Backend Development](#backend-development) (13 skills)
 - [Blockchain Web3](#blockchain-web3) (16 skills)
-- [Business](#business) (3 skills)
+- [Business](#business) (4 skills)
 - [Cicd Automation](#cicd-automation) (4 skills)
 - [Cloud Infrastructure](#cloud-infrastructure) (14 skills)
 - [Content Creation](#content-creation) (5 skills)
 - [Creative](#creative) (2 skills)
 - [Cross Domain](#cross-domain) (3 skills)
 - [Data Engineering](#data-engineering) (10 skills)
-- [Developer Tools](#developer-tools) (35 skills)
-- [Devops](#devops) (3 skills)
+- [Developer Tools](#developer-tools) (36 skills)
+- [Devops](#devops) (5 skills)
 - [Document Processing](#document-processing) (7 skills)
 - [Education](#education) (2 skills)
 - [Financial Records](#financial-records) (4 skills)
 - [Framework Migration](#framework-migration) (4 skills)
-- [Game Development](#game-development) (2 skills)
+- [Game Development](#game-development) (4 skills)
 - [Healthcare](#healthcare) (11 skills)
 - [Languages](#languages) (18 skills)
-- [Llm Application Dev](#llm-application-dev) (10 skills)
+- [Llm Application Dev](#llm-application-dev) (11 skills)
 - [Marketing](#marketing) (41 skills)
 - [Ml Ai](#ml-ai) (4 skills)
 - [Mobile Development](#mobile-development) (36 skills)
-- [Observability](#observability) (5 skills)
+- [Observability](#observability) (6 skills)
 - [Other](#other) (2 skills)
 - [Payments](#payments) (4 skills)
 - [Research](#research) (2 skills)
 - [Security](#security) (36 skills)
 - [Seo Marketing](#seo-marketing) (4 skills)
-- [Skills](#skills) (3 skills)
 - [Testing Qa](#testing-qa) (18 skills)
 - [Web Development](#web-development) (8 skills)
 - [Writing](#writing) (2 skills)
@@ -92,7 +91,21 @@ These skills are sourced from:
 
 ### Accessibility
 
-**2 skills in this category**
+**4 skills in this category**
+
+#### `accessibility-regression-gate`
+
+- **Path:** `skills/accessibility/accessibility-regression-gate/`
+- **Description:** Sets up an accessibility regression gate in CI: page/state inventory, axe scans through the existing browser test runner, a committed baseline so only new violations fail, a ratchet that shrinks it, and a per-release screen-reader smoke script.
+- **Resources:** SKILL.md only
+- **When to use:** Adding accessibility checks to CI on a codebase that is not yet clean (not a conformance audit)
+
+#### `component-accessibility-contracts`
+
+- **Path:** `skills/accessibility/component-accessibility-contracts/`
+- **Description:** Writes a per-component accessibility contract (native-element decision, role, name, states, keyboard map, focus rules, announcements) and turns each clause into an automated component test plus a short manual check.
+- **Resources:** 1 references
+- **When to use:** Building or reviewing a custom widget or design-system component
 
 #### `screen-reader-testing`
 
@@ -731,7 +744,14 @@ These skills are sourced from:
 
 ### Devops
 
-**3 skills in this category**
+**5 skills in this category**
+
+#### `executable-runbook-authoring`
+
+- **Path:** `skills/devops/executable-runbook-authoring/`
+- **Description:** Writes runbooks an unfamiliar on-call engineer can execute: each step a contract (precondition, command, expected output, verification, stop condition, rollback), linked from its alert, tested by dry run or drill, and kept fresh with an owner and review date.
+- **Resources:** SKILL.md only
+- **When to use:** Writing a runbook for an alert or task, or testing and refreshing existing runbooks (templates live in incident-runbook-templates)
 
 #### `incident-runbook-templates`
 
@@ -740,6 +760,13 @@ These skills are sourced from:
 - **Resources:** SKILL.md only
 - **Dependencies:** go, kubernetes, postgresql
 - **When to use:** Use when working in this domain
+
+#### `infrastructure-drift-detection`
+
+- **Path:** `skills/devops/infrastructure-drift-detection/`
+- **Description:** Detects, classifies and reconciles drift between IaC and live state (Terraform/OpenTofu, Pulumi, CloudFormation, GitOps Kubernetes): scheduled read-only plans, noise suppression, triage by cause, and a reviewed decision per item.
+- **Resources:** SKILL.md only
+- **When to use:** Setting up drift checks or reconciling out-of-band changes
 
 #### `on-call-handoff-patterns`
 
@@ -855,7 +882,14 @@ These skills are sourced from:
 
 ### Game Development
 
-**2 skills in this category**
+**4 skills in this category**
+
+#### `game-feel-juice-pass`
+
+- **Path:** `skills/game-development/game-feel-juice-pass/`
+- **Description:** Implements and tunes feedback layers for core actions (input buffering, coyote time, hitstop, trauma-based screenshake, flashes, knockback, particles, audio, haptics) as data-driven parameters with tiers, caps and comfort toggles.
+- **Resources:** SKILL.md only
+- **When to use:** Making core actions feel responsive after a feel review (review itself: design_hud_and_game_feel_review prompt)
 
 #### `godot-gdscript-patterns`
 
@@ -864,6 +898,13 @@ These skills are sourced from:
 - **Resources:** SKILL.md only
 - **Dependencies:** go, node
 - **When to use:** Use when applying design patterns or architectural patterns
+
+#### `playtest-telemetry-capture`
+
+- **Path:** `skills/game-development/playtest-telemetry-capture/`
+- **Description:** Instruments a playtest build to capture what the protocol needs: event schema traced to research questions, pseudonymous participant codes, build stamping, observer bookmarks, video sync markers, consent gating, and a log validator.
+- **Resources:** 1 scripts
+- **When to use:** Preparing a playtest build (protocol design and synthesis: testing_playtest_protocol_synthesis prompt)
 
 #### `unity-ecs-patterns`
 
@@ -1315,7 +1356,7 @@ These skills are sourced from:
 
 ### Observability
 
-**5 skills in this category**
+**6 skills in this category**
 
 #### `distributed-tracing`
 
@@ -1348,6 +1389,13 @@ These skills are sourced from:
 - **Resources:** SKILL.md only
 - **Dependencies:** docker, git, github, kubernetes, node
 - **When to use:** Use when working in this domain
+
+#### `slo-burn-rate-alerting`
+
+- **Path:** `skills/observability/slo-burn-rate-alerting/`
+- **Description:** Designs, generates and tests multi-window, multi-burn-rate alerts for an existing SLO: derives thresholds from budget share, emits every recording rule, guards low traffic, unit-tests with promtool and backtests against incidents.
+- **Resources:** 1 references
+- **When to use:** Alerting on an SLO defined with slo-implementation, or fixing noisy/missed SLO alerts
 
 #### `slo-implementation`
 

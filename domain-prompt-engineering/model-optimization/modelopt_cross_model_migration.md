@@ -3,7 +3,9 @@ title: "Migrate a Prompt Across Model Families"
 category: prompt-engineering/model-optimization
 description: "Translate a prompt between Claude, GPT, Gemini, or open-source families with explicit substitutions for each family's idioms."
 techniques:
-  - PR-01
+  - DS-29
+  - ST-04
+  - QA-11
 difficulty: advanced
 tags:
   - migration

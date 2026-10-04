@@ -16,11 +16,11 @@ skills, agents, commands, personas, and agent-system designs, together with the
 generators and validators that keep them consistent.
 
 <!-- REPO_FACTS:BEGIN name=counts -->
-<!-- REPO_FACTS_DECLARATION: {"active_techniques": 327, "agentic_resource_artifacts": 802, "agents": 143, "bundled_component_files": 667, "commands": 115, "domain_command_artifacts": 10, "domain_directories": 48, "domain_prompt_artifacts": 4466, "indexed_artifacts": 5945, "personas": 53, "skills": 333, "technique_categories": 18, "unindexed_domain_directories": 0} -->
-- **4466 indexed domain prompt artifacts** across 48 `domain-*` directories. This is the index's structural classification, not a normalized resource-kind count.
-- **333 skills, 143 agents, 115 commands, 53 personas** under `domain-agentic-resources/`.
+<!-- REPO_FACTS_DECLARATION: {"active_techniques": 327, "agentic_resource_artifacts": 821, "agents": 147, "bundled_component_files": 669, "commands": 119, "domain_command_artifacts": 10, "domain_directories": 48, "domain_prompt_artifacts": 4635, "indexed_artifacts": 6135, "personas": 57, "skills": 340, "technique_categories": 18, "unindexed_domain_directories": 0} -->
+- **4635 indexed domain prompt artifacts** across 48 `domain-*` directories. This is the index's structural classification, not a normalized resource-kind count.
+- **340 skills, 147 agents, 119 commands, 57 personas** under `domain-agentic-resources/`.
 - **327 active techniques** across 18 categories in `techniques/MASTER_TECHNIQUE_INDEX.md`.
-- `PROMPT_INDEX.json` holds **5945 indexed artifacts**. That total is not a prompt count: it mixes the 4466 domain prompt artifacts with 10 domain slash commands, 802 agentic resources, and 667 bundled component files (a parent resource's `references/`, `assets/`, `cards/` and similar).
+- `PROMPT_INDEX.json` holds **6135 indexed artifacts**. That total is not a prompt count: it mixes the 4635 domain prompt artifacts with 10 domain slash commands, 821 agentic resources, and 669 bundled component files (a parent resource's `references/`, `assets/`, `cards/` and similar).
 - All 48 `domain-*` directories are covered by the index allowlist (`DOMAIN_DIRS` in `scripts/generate_prompt_index.py`).
 <!-- REPO_FACTS:END name=counts -->
 
