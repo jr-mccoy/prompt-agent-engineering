@@ -226,7 +226,7 @@ as percentages from small samples.
 
 | Resource | Purpose |
 |---|---|
-| `scripts/validate_playtest_log.py` | Validates JSONL session logs and writes a per-section summary CSV (standard library only) |
+| `scripts/validate_playtest_log.py` | Validates JSONL session logs and writes a per-section summary CSV; text cells that a spreadsheet would read as a formula (leading `=`, `+`, `-`, `@`) are prefixed with `'` (standard library only) |
 
 ## Related Skills
 

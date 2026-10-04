@@ -44,6 +44,20 @@ from pathlib import Path
 
 ENVELOPE = ("schema_version", "build_id", "session_id", "participant_code", "t_ms", "event")
 PII_TOKENS = {"name", "email", "phone", "ip", "address", "dob", "birthdate", "birthday"}
+# Leading characters a spreadsheet may evaluate as a formula (CSV/formula injection).
+FORMULA_PREFIXES = ("=", "+", "-", "@", "\t", "\r")
+
+
+def spreadsheet_safe(value):
+    """Neutralise a string cell that a spreadsheet would evaluate as a formula.
+
+    Log fields such as participant_code or section come from the build, so a
+    value like ``=HYPERLINK(...)`` must not execute when a researcher opens the
+    summary CSV. Numbers are left untouched.
+    """
+    if isinstance(value, str) and value.startswith(FORMULA_PREFIXES):
+        return "'" + value
+    return value
 
 
 def validate_file(path: Path, allowed: set[str] | None) -> tuple[list[str], list[str], dict]:
@@ -190,7 +204,7 @@ def main() -> int:
         with open(args.csv, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
             writer.writerow(["participant_code", "session_id", "build_id", "section", "time_s", "deaths", "quits"])
-            writer.writerows(rows)
+            writer.writerows([spreadsheet_safe(cell) for cell in row] for row in rows)
         print(f"wrote {args.csv} ({len(rows)} rows)")
 
     return 1 if any_errors else 0
