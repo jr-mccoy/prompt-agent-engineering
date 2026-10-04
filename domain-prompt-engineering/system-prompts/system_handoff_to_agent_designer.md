@@ -3,8 +3,10 @@ title: "System Prompt for an Autonomous Agent"
 category: prompt-engineering/system-prompts
 description: "Compose a system prompt suited to autonomous agent loops: persistent identity, action policy, observation discipline, and stop conditions."
 techniques:
-  - PR-01
+  - RP-01
   - CM-02
+  - CM-09
+  - AG-29
 difficulty: advanced
 tags:
   - agent

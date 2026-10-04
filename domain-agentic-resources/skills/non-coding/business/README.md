@@ -13,6 +13,10 @@ This folder contains non-coding skill resources for business workflows.
 - Operating review facilitator.
 - Meeting-to-actions translator.
 
+## Skills in this folder
+- [`ai-native-rollouts`](ai-native-rollouts/) — plan and run a team or organisation's adoption of AI tools and agentic workflows (folded in from its own top-level category, coverage Wave 10).
+- [`competitive-analysis`](competitive-analysis/), [`employment-contract-templates`](employment-contract-templates/), [`operating-review-pack`](operating-review-pack/).
+
 ## Quality gates checklist
 Use the [Non-Coding Quality Gates Checklist Template](../../../documentation/templates/non_coding_quality_gates.md) before publishing or promoting any non-coding resource from this folder.
 

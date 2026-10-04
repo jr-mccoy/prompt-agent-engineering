@@ -3,8 +3,9 @@ title: "Generate Synthetic Few-Shot Examples"
 category: prompt-engineering/few-shot-examples
 description: "Build few-shot examples when no corpus exists, with explicit diversity targets and a quality gate."
 techniques:
-  - PR-03
+  - ED-06
   - QA-01
+  - QA-08
 difficulty: advanced
 tags:
   - synthetic

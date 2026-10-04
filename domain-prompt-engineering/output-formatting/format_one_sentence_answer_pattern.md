@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - CM-02
   - QA-08
-  - DC-01
+  - NE-05
 difficulty: beginner
 tags:
   - brevity

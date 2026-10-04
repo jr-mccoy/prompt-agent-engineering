@@ -10,6 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Coverage Wave 10: agentic-resource depth** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **19 new resources:** 7 skills (accessibility, game-development, devops, observability), 4 agents (deployment, orchestration), 4 commands (data-analysis, documentation) and 4 personas (product, specialized).
+  - **Duplicate sweep:** three persona candidates were dropped as duplicates; six skill and command candidates were re-angled.
+- **Technique citations are now validated in CI.**
+  - `scripts/validate_technique_catalog.py` fails on any `techniques:` entry in `PROMPT_INDEX.json` that is not in the catalog.
+  - It warns on deprecated IDs and on parenthesised names that differ from the catalog's.
+  - `--uncited` lists the active IDs no prompt cites.
+  - Covered by 8 new unit tests.
+
+### Changed
+- **13 undefined technique codes remapped** (DC-01, PR-01/02/03, CR-01/02, IT-01/02, AN-01, SC-01/03, FP-01, WF-01; 133 citations in 110 files). Each was mapped to the existing catalog code that matches what the prompt does. The 46 "ID (Name)" frontmatter entries in iOS and Android prompts are now bare IDs, corrected where the name showed a different technique was meant.
+- **Three one-skill "categories" folded into real ones:** `ai-native-rollouts` → `skills/non-coding/business/`, `review-prompt` → `skills/llm-application-dev/`, `vibe-coding-rescue` → `skills/developer-tools/`. UIDs are preserved, and the old public IDs are recorded as aliases.
 - **Coverage Wave 9: depth in thin subfolders (39 prompts, 15 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
   - **Frontend (13):** animation, Qwik, Remix (including the React Router v7 migration), SolidJS, plus one each in Astro, forms, performance, testing and TypeScript.
   - **Game development (9):** AI, audio, narrative, economy, graphics and level design.

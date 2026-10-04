@@ -4,7 +4,8 @@ category: prompt-engineering/few-shot-examples
 description: "Detect when few-shot examples are causing the prompt to overfit to surface features that do not generalize."
 techniques:
   - QA-01
-  - PR-03
+  - ED-05
+  - DS-04
 difficulty: advanced
 tags:
   - contamination

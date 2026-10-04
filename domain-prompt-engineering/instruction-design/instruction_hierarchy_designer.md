@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - CM-01
   - CM-02
-  - DC-01
+  - CM-14
 difficulty: intermediate
 tags:
   - instruction_hierarchy

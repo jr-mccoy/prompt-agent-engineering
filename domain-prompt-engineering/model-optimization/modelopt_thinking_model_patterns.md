@@ -3,8 +3,9 @@ title: "Patterns for Thinking-Mode (Reasoning) Models"
 category: prompt-engineering/model-optimization
 description: "Adapt a prompt for reasoning-mode models (Claude extended thinking, o-series) by simplifying instructions, removing CoT scaffolding, and tuning thinking budget."
 techniques:
-  - PR-02
+  - QA-01
   - CM-01
+  - NE-05
 difficulty: advanced
 tags:
   - thinking-mode

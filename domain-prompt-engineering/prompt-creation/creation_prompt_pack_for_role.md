@@ -4,7 +4,8 @@ category: prompt-engineering/prompt-creation
 description: "Produce a coherent set of 5–12 prompts for a single role (e.g. CSM, sales rep, recruiter) that share voice, schema, and naming."
 techniques:
   - ST-02
-  - PR-01
+  - RP-01
+  - ST-03
 difficulty: intermediate
 tags:
   - prompt-pack

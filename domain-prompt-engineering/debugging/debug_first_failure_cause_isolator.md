@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - ST-03
   - QA-01
-  - DC-01
+  - RT-09
 difficulty: intermediate
 tags:
   - root_cause

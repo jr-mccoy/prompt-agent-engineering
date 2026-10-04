@@ -83,6 +83,7 @@ pae_67b63j7t67j5	previous_path	domain-business-strategy/startup/solo_dev_contrac
 pae_69gpv3rmxp28	previous_path	domain-productivity/career/career_ai_product_management.md	path	meta/REORG_MAP.tsv
 pae_6esjwxb1q0fq	previous_path	domain-decision-making/decisioning_crisis_severity_triage.md	path	meta/REORG_MAP.tsv
 pae_6ff9bejf60dm	previous_path	domain-healthcare-clinical/prompts/medical-education/learner-self-study/study-planning/learner_weekly_study_review.md	path	meta/REORG_MAP.tsv
+pae_6txq37dzrk2k	previous_path	domain-agentic-resources/skills/ai-native-rollouts/SKILL.md	path	meta/REORG_MAP.tsv
 pae_73wbwa6qwfhs	previous_path	domain-healthcare-clinical/prompts/medical-education/case-scenario-design/meded_simulation_scenario_designer.md	path	meta/REORG_MAP.tsv
 pae_7aqjrt73c696	superseded_by	pae_bzekvm01dfv7	resource	meta/REORG_MAP.tsv
 pae_7at89ae63dzy	previous_path	domain-engineering-workflows/ai-patterns/ai_pattern_observation_capture_habits.md	path	meta/REORG_MAP.tsv
@@ -127,6 +128,7 @@ pae_afc7xjnznsck	previous_path	domain-engineering-workflows/ai-patterns/ai_patte
 pae_at5p7zh68hxh	previous_path	domain-discipleship/curriculum-architecture/discipleship_multiplication_governance_and_material_drift.md	path	meta/REORG_MAP.tsv
 pae_b14qxxqpjgs7	copy_of	pae_1c1qwcwqy4d9	resource	meta/VENDORED.tsv
 pae_b5075fa97raz	previous_path	domain-business-strategy/organization/organization_knowledge_base_gap_analysis.md	path	meta/REORG_MAP.tsv
+pae_b65rhkm0aa71	previous_path	domain-agentic-resources/skills/review-prompt/SKILL.md	path	meta/REORG_MAP.tsv
 pae_b6ah8trdnr0z	copy_of	pae_b4mf68spw40r	resource	meta/VENDORED.tsv
 pae_b8khfy2xr8ry	previous_path	domain-engineering-workflows/improvement/improvement_repo_audit_master_prompt.md	path	meta/REORG_MAP.tsv
 pae_bd4dzm7dtvtk	superseded_by	pae_xzzcn1tw6c1c	resource	meta/REORG_MAP.tsv
@@ -165,6 +167,7 @@ pae_e8ntvvqacdwz	superseded_by	pae_7ej6dbetk2df	resource	meta/REORG_MAP.tsv
 pae_e8z44ctn239w	previous_path	domain-parenting/caregiver-facing/divorce/parenting_divorce_telling_the_kids_script.md	path	meta/REORG_MAP.tsv
 pae_edx4spkkp6jk	previous_path	domain-healthcare-clinical/prompts/medical-education/learner-self-study/foundational-sciences/learner_immunology_concept_clarifier.md	path	meta/REORG_MAP.tsv
 pae_ee4wn1pknncs	superseded_by	pae_sk0asgwh3grk	resource	meta/REORG_MAP.tsv
+pae_eeb0xamgha1g	previous_path	domain-agentic-resources/skills/vibe-coding-rescue/SKILL.md	path	meta/REORG_MAP.tsv
 pae_eg39tdcf98e3	merged_into	pae_shkhb72c60zd	resource	techniques/MASTER_TECHNIQUE_INDEX.md
 pae_ejjh4k48ps1w	previous_path	domain-psychology/client-self-use/coping-by-concern/clientself_ocd_erp_self_designed_exercise_with_therapist.md	path	meta/REORG_MAP.tsv
 pae_ek98avqqc828	previous_path	domain-healthcare-clinical/prompts/medical-education/learner-self-study/clinical-reasoning/learner_clinical_case_walkthrough.md	path	meta/REORG_MAP.tsv

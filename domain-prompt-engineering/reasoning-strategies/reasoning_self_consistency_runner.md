@@ -3,8 +3,9 @@ title: "Self-Consistency Runner"
 category: prompt-engineering/reasoning-strategies
 description: "Sample N independent answers at temperature > 0, vote or aggregate, and emit the majority answer with disagreement signal."
 techniques:
-  - PR-02
+  - QA-15
   - QA-01
+  - QA-04
 difficulty: advanced
 tags:
   - self-consistency

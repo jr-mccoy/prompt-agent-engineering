@@ -7,11 +7,9 @@ techniques:
   - ST-02
   - RT-02
   - RT-05
-  - IT-01
-  - IT-02
+  - MP-03
   - ST-03
   - QA-01
-  - SC-03
   - AG-02
   - AG-08
 difficulty: advanced
@@ -747,11 +745,9 @@ Would you like to:
 - ST-02 (Sequential Instructions): Ordered phases from discovery through verification
 - RT-02 (Multi-Dimensional Analysis): Comprehensive criteria covering quality, architecture, and patterns
 - RT-05 (Evidence-Based Reasoning): Specific line numbers, code examples, and metrics
-- IT-01 (Follow-up Questions): User selection gates at each phase
-- IT-02 (Clarification Prompts): Context gathering before planning
+- MP-03 (Task Clarification): User selection gates at each phase and context gathering before planning
 - ST-03 (Structured Output Templates): Tables and checklists throughout
 - QA-01 (Chain-of-Verification): Safety checks and verification steps
-- SC-03 (Step-by-Step Methodology): Detailed implementation process with safety rules
 - AG-02 (Skeptical Default Stance): Conservative approach to changes, approval gates
 - AG-08 (Evidence-Based Decision Gates): User approval required before implementation
 

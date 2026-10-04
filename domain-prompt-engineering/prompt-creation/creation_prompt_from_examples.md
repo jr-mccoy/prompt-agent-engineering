@@ -4,7 +4,8 @@ category: prompt-engineering/prompt-creation
 description: "Reverse-engineer a prompt from 5+ accepted outputs by extracting shared structure, vocabulary, and constraints, then writing rules that produce them."
 techniques:
   - ST-02
-  - PR-03
+  - MP-01
+  - DS-04
 difficulty: advanced
 tags:
   - reverse-engineering

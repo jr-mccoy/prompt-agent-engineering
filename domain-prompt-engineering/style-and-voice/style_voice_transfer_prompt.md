@@ -8,7 +8,6 @@ techniques:
   - ST-03
   - CM-02
   - QA-01
-  - DC-01
 difficulty: intermediate
 tags:
   - voice

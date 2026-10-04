@@ -3,8 +3,9 @@ title: "Design a Role Charter for a System Prompt"
 category: prompt-engineering/system-prompts
 description: "Author the role-defining block of a system prompt: identity, scope, expertise boundary, authority, and what this role explicitly is not."
 techniques:
-  - PR-01
+  - RP-01
   - CM-02
+  - OC-09
 difficulty: intermediate
 tags:
   - system-prompt

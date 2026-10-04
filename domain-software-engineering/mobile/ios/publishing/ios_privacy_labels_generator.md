@@ -3,10 +3,10 @@ title: "iOS Privacy Labels Generator"
 category: mobile-development
 description: "Modular guide for generating accurate App Store privacy nutrition labels by auditing first-party data collection and third-party SDK data practices."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - DS-02 (Domain-Specific Terminology)
-  - AN-01 (Analysis Framework)
+  - DT-01
+  - QA-10
+  - CM-01
+  - RT-02
 difficulty: intermediate
 tags:
   - ios
@@ -317,10 +317,10 @@ After completing this prompt, you will have:
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Four-module audit workflow |
-| RT-02 (Checklist Verification) | Data collection and validation checklists |
-| DS-02 (Domain-Specific Terminology) | Apple's privacy label categories and SDK terms |
-| AN-01 (Analysis Framework) | Systematic code and SDK analysis |
+| DT-01 (Hierarchical Task Breakdown) | Four-module audit workflow |
+| QA-10 (Test Battery Protocol) | Data collection and validation checklists |
+| CM-01 (Explicit Context Framing) | Apple's privacy label categories and SDK terms |
+| RT-02 (Multi-Dimensional Analysis Framework) | Systematic code and SDK analysis |
 
 ## Related Prompts
 

@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - CM-01
   - RT-02
-  - CR-01
+  - RT-01
 difficulty: advanced
 tags:
   - immunology

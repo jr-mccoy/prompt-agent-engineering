@@ -4,7 +4,8 @@ category: prompt-engineering/agent-workflows
 description: "Wrap an agent step with detect-error → diagnose → repair logic so transient or schema errors are recovered without escalating."
 techniques:
   - QA-01
-  - PR-03
+  - RT-11
+  - DD-06
 difficulty: advanced
 tags:
   - self-correction

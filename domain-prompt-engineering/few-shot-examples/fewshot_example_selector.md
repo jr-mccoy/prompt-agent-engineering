@@ -3,8 +3,9 @@ title: "Select Few-Shot Examples From a Corpus"
 category: prompt-engineering/few-shot-examples
 description: "Pick a small representative set of few-shot examples from a larger corpus, balancing coverage, diversity, difficulty, and prompt budget."
 techniques:
-  - PR-03
+  - MP-04
   - CM-01
+  - NE-05
 difficulty: intermediate
 tags:
   - few-shot

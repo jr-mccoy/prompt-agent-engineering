@@ -3,11 +3,11 @@ title: "iOS Pre-Submission Checklist"
 category: mobile-development
 description: "Comprehensive final checklist for App Store submission covering metadata validation, binary verification, export compliance, age ratings, App Store Connect configuration, and common last-minute issues."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - RT-05 (Constraint Specification)
-  - DS-02 (Domain-Specific Terminology)
-  - QA-01 (Quality Assurance Gates)
+  - DT-01
+  - QA-10
+  - CM-02
+  - CM-01
+  - QA-08
 difficulty: intermediate
 tags:
   - ios
@@ -325,11 +325,11 @@ Let me walk through each section...
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Ten-section comprehensive checklist |
-| RT-02 (Checklist Verification) | Every item is a verifiable checkbox |
-| RT-05 (Constraint Specification) | Apple's exact field limits and requirements |
-| DS-02 (Domain-Specific Terminology) | App Store Connect fields and Apple terminology |
-| QA-01 (Quality Assurance Gates) | Each section is a gate before submission |
+| DT-01 (Hierarchical Task Breakdown) | Ten-section comprehensive checklist |
+| QA-10 (Test Battery Protocol) | Every item is a verifiable checkbox |
+| CM-02 (Constraint Specification) | Apple's exact field limits and requirements |
+| CM-01 (Explicit Context Framing) | App Store Connect fields and Apple terminology |
+| QA-08 (Gate-Based Verification) | Each section is a gate before submission |
 
 ## Related Prompts
 

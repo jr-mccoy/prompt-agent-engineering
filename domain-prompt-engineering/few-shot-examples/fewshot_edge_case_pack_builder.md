@@ -3,8 +3,9 @@ title: "Build an Edge-Case Few-Shot Pack"
 category: prompt-engineering/few-shot-examples
 description: "Curate few-shot examples that cover edge cases (boundary inputs, malformed inputs, refusal-worthy inputs) instead of typical inputs."
 techniques:
-  - PR-03
+  - MP-04
   - QA-01
+  - NE-05
 difficulty: advanced
 tags:
   - edge-cases

@@ -1,22 +1,23 @@
-<!-- INVENTORY_COUNTS: {"categories": {"architecture": 6, "backend": 8, "business": 2, "business-operations": 11, "cloud-infrastructure": 9, "code-quality": 4, "creative": 2, "database": 4, "deployment": 1, "devops": 6, "documentation": 5, "education": 2, "frontend-mobile": 22, "healthcare": 2, "languages": 21, "ml-ai": 6, "orchestration": 2, "research": 2, "security": 4, "seo-marketing": 12, "testing": 5, "web-development": 5, "writing": 2}, "date": "2026-09-22", "total": 143, "type": "agents"} -->
+<!-- INVENTORY_COUNTS: {"categories": {"architecture": 6, "backend": 8, "business": 2, "business-operations": 11, "cloud-infrastructure": 9, "code-quality": 4, "creative": 2, "database": 4, "deployment": 3, "devops": 6, "documentation": 5, "education": 2, "frontend-mobile": 22, "healthcare": 2, "languages": 21, "ml-ai": 6, "orchestration": 4, "research": 2, "security": 4, "seo-marketing": 12, "testing": 5, "web-development": 5, "writing": 2}, "date": "2026-10-04", "total": 147, "type": "agents"} -->
 
 # Claude Code Agents Index
 
-**Comprehensive index of 143 specialized Claude Code agents organized by domain.**
+**Comprehensive index of 147 specialized Claude Code agents organized by domain.**
 
 ## Overview
 
-This directory contains **143 specialized AI agents** for Claude Code, each optimized for specific development tasks and domains. Agents are persistent identities with model assignments (Opus/Sonnet/Haiku) for optimal cost/performance balance.
+This directory contains **147 specialized AI agents** for Claude Code, each optimized for specific development tasks and domains. Agents are persistent identities with model assignments (Opus/Sonnet/Haiku) for optimal cost/performance balance.
 
 ### Quick Stats
 
-- **Total Agents:** 143
+- **Total Agents:** 147
 - **Categories:** 23
 - **Model Distribution:**
-  - **HAIKU:** 15 agents (12.6%)
-  - **Inherit (User Choice):** 25 agents (21.0%)
-  - **OPUS:** 36 agents (30.3%)
-  - **SONNET:** 43 agents (36.1%)
+  - **HAIKU:** 15 agents (10.2%)
+  - **Inherit (User Choice):** 25 agents (17.0%)
+  - **OPUS:** 41 agents (27.9%)
+  - **SONNET:** 49 agents (33.3%)
+  - **No `model:` field:** 17 agents (11.6%)
 
 ## Table of Contents
 
@@ -29,7 +30,7 @@ This directory contains **143 specialized AI agents** for Claude Code, each opti
 - [Code Quality](#code-quality) (4 agents)
 - [Creative](#creative) (2 agents)
 - [Database](#database) (4 agents)
-- [Deployment](#deployment) (1 agents)
+- [Deployment](#deployment) (3 agents)
 - [Devops](#devops) (6 agents)
 - [Documentation](#documentation) (5 agents)
 - [Education](#education) (2 agents)
@@ -37,7 +38,7 @@ This directory contains **143 specialized AI agents** for Claude Code, each opti
 - [Healthcare](#healthcare) (2 agents)
 - [Languages](#languages) (21 agents)
 - [Ml Ai](#ml-ai) (6 agents)
-- [Orchestration](#orchestration) (2 agents)
+- [Orchestration](#orchestration) (4 agents)
 - [Research](#research) (2 agents)
 - [Security](#security) (4 agents)
 - [Seo Marketing](#seo-marketing) (12 agents)
@@ -468,7 +469,21 @@ Each agent is assigned a specific Claude model for optimal performance:
 
 ### Deployment
 
-**1 agents in this category**
+**3 agents in this category**
+
+#### `release-readiness-gatekeeper`
+
+- **Path:** `agents/deployment/release_readiness_gatekeeper.md`
+- **Model:** OPUS
+- **Description:** Read-only release gate for server-side and web release candidates. Checks test and build evidence, change scope, migration safety (N-1 compatibility, lock risk, reversibility), a rollback plan that names what cannot be rolled back, config and secrets, observability, and operational readiness; returns GO, GO-WITH-CONDITIONS, or NO-GO with evidence. Defaults to NO-GO when a blocker has no evidence.
+- **When to use:** Use PROACTIVELY before promoting a release candidate to production. Never tags, merges, deploys, or runs migrations.
+
+#### `progressive-delivery-controller`
+
+- **Path:** `agents/deployment/progressive_delivery_controller.md`
+- **Model:** SONNET
+- **Description:** Rollout monitor for canary releases and percentage-based feature-flag rollouts. Fixes abort, hold, and promote criteria before the rollout starts, compares canary to a concurrent baseline at each stage with minimum soak and sample size, and recommends ABORT, HOLD, or PROMOTE.
+- **When to use:** Use PROACTIVELY when a canary or flag rollout is about to start or is in progress. Every traffic or flag change requires explicit human confirmation.
 
 #### `deployment-engineer`
 
@@ -814,7 +829,21 @@ Each agent is assigned a specific Claude model for optimal performance:
 
 ### Orchestration
 
-**2 agents in this category**
+**4 agents in this category**
+
+#### `task-decomposition-coordinator`
+
+- **Path:** `agents/orchestration/task_decomposition_coordinator.md`
+- **Model:** OPUS
+- **Description:** Runtime coordinator that splits one concrete task into parallel subtasks with a dependency graph, disjoint write ownership, and a handoff contract per subtask (inputs, scope, output schema, acceptance check, stop conditions). Returns a dispatch plan; does not spawn workers.
+- **When to use:** Use PROACTIVELY when a task is about to be fanned out to two or more parallel agents or sessions.
+
+#### `result-reconciler`
+
+- **Path:** `agents/orchestration/result_reconciler.md`
+- **Model:** SONNET
+- **Description:** Merges parallel worker outputs: contract check, normalisation, deduplication with stated rules, and conflict detection (contradictions, edit collisions, assumption mismatches, coverage gaps), with substantive conflicts flagged rather than silently resolved and a traceable reconciliation log.
+- **When to use:** Use PROACTIVELY after a fan-out of two or more agents returns, before presenting a single answer.
 
 #### `prompt-kit-ingestor`
 
@@ -994,7 +1023,7 @@ Each agent is assigned a specific Claude model for optimal performance:
 
 ### Agents by Model Assignment
 
-**OPUS** (36 agents)
+**OPUS** (41 agents)
 
 - `architect-review` (architecture)
 - `solo-dev-architect` (architecture)
@@ -1006,9 +1035,9 @@ Each agent is assigned a specific Claude model for optimal performance:
 - `firebase-architecture-reviewer` (cloud-infrastructure)
 - `firebase-security-auditor` (cloud-infrastructure)
 - `hybrid-cloud-architect` (cloud-infrastructure)
-- ... and 26 more
+- ... and 31 more
 
-**SONNET** (43 agents)
+**SONNET** (49 agents)
 
 - `c4-component` (architecture)
 - `c4-container` (architecture)
@@ -1020,7 +1049,7 @@ Each agent is assigned a specific Claude model for optimal performance:
 - `legal-advisor` (business-operations)
 - `payment-integration` (business-operations)
 - `firebase-cost-analyst` (cloud-infrastructure)
-- ... and 33 more
+- ... and 39 more
 
 **HAIKU** (15 agents)
 
@@ -1055,7 +1084,7 @@ Each agent is assigned a specific Claude model for optimal performance:
 ## Additional Resources
 
 - [Skills Index](../skills/README.md) - 132 modular knowledge packages
-- [Commands Index](../commands/README.md) - 71 multi-agent orchestration workflows
+- [Commands Index](../commands/README.md) - 119 commands
 - [Integration Guide](../documentation/integration_with_prompts.md) - How agents relate to prompts
 - Future Processing Instructions - Detailed analysis tasks
 

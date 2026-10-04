@@ -3,8 +3,9 @@ title: "Plan-Then-Execute Split"
 category: prompt-engineering/reasoning-strategies
 description: "Separate a task into a planning prompt and an execution prompt so plans can be reviewed before execution and reused."
 techniques:
-  - DC-01
+  - DT-01
   - ST-02
+  - AG-07
 difficulty: advanced
 tags:
   - plan-execute

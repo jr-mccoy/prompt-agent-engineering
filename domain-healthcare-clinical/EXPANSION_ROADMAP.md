@@ -272,7 +272,7 @@ Default for all Lane 1–9 prompts:
 - **RT-05** Evidence-Based (named guidelines, trials, decision rules)
 
 Add as situationally needed:
-- **CR-01/02** Chain-of-Thought when mechanism reasoning matters (Lane 1)
+- **RT-01** Chain-of-Thought when mechanism reasoning matters (Lane 1)
 - **QA-01** Chain-of-Verification for high-stakes calculations (Lane 4 dosing)
 - **DS-02** Decomposition for multi-system care plans (Lane 5)
 

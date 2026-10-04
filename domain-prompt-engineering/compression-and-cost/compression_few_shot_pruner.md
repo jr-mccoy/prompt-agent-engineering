@@ -4,7 +4,9 @@ category: prompt-engineering/compression-and-cost
 description: "Remove few-shot examples that do not contribute unique signal, validated by per-example ablation against the test set."
 techniques:
   - CM-01
-  - PR-03
+  - ED-06
+  - QA-07
+  - NE-05
 difficulty: advanced
 tags:
   - few-shot

@@ -5,7 +5,8 @@ description: "Author a prompt that opens with a tightly bounded role, then deriv
 techniques:
   - ST-01
   - ST-02
-  - PR-01
+  - RP-01
+  - OC-09
 difficulty: beginner
 tags:
   - role-first

@@ -3,8 +3,9 @@ title: "Silent Reasoning, Visible Answer"
 category: prompt-engineering/reasoning-strategies
 description: "Have the model reason internally and emit only the conclusion, with reliable separation between hidden reasoning and surfaced answer."
 techniques:
-  - PR-02
+  - RT-01
   - ST-03
+  - ST-04
 difficulty: intermediate
 tags:
   - hidden-reasoning

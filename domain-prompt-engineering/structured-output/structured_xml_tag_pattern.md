@@ -5,7 +5,7 @@ description: "Decide when XML tags beat JSON for Claude, and define tag conventi
 techniques:
   - ST-03
   - CM-02
-  - PR-02
+  - ST-04
 difficulty: intermediate
 tags:
   - xml

@@ -1,57 +1,57 @@
 {
   "by_eval_status": {
-    "unknown": 5839
+    "unknown": 5858
   },
   "by_kind": {
-    "agent": 164,
-    "command": 152,
-    "persona": 53,
+    "agent": 168,
+    "command": 156,
+    "persona": 57,
     "prompt": 4783,
-    "skill": 351,
+    "skill": 358,
     "technique": 336
   },
   "by_kind_live": {
-    "agent": 164,
-    "command": 152,
-    "persona": 53,
+    "agent": 168,
+    "command": 156,
+    "persona": 57,
     "prompt": 4730,
-    "skill": 351,
+    "skill": 358,
     "technique": 336
   },
   "by_kind_tombstone": {
     "prompt": 53
   },
   "by_license_status": {
-    "inherited": 583,
-    "resolved": 5203,
+    "inherited": 598,
+    "resolved": 5207,
     "unresolved": 53
   },
   "by_lifecycle": {
-    "live": 5786,
+    "live": 5805,
     "tombstone": 53
   },
   "by_maturity": {
     "deprecated": 62,
-    "experimental": 5777
+    "experimental": 5796
   },
   "by_metadata_completeness": {
     "degraded": 2,
-    "full": 5639,
+    "full": 5658,
     "minimal": 198
   },
   "by_provenance_origin": {
-    "adapted": 562,
-    "project_native": 5195,
+    "adapted": 577,
+    "project_native": 5199,
     "unknown": 53,
     "vendored": 29
   },
   "by_review_status": {
-    "unknown": 5839
+    "unknown": 5858
   },
   "by_serving_policy": {
     "metadata_only": 64,
     "safety_gated": 1502,
-    "standard": 4273
+    "standard": 4292
   },
   "diagnostics_by_code": {
     "frontmatter_parse_failed": 2,
@@ -60,26 +60,26 @@
     "tombstone": 53
   },
   "membership": {
-    "excluded_markdown_files": 1581,
+    "excluded_markdown_files": 1584,
     "exclusion_reasons": {
-      "bundled_component": 693,
-      "meta_document": 497,
+      "bundled_component": 695,
+      "meta_document": 498,
       "non_resource_prefix": 321,
       "planning_document": 1,
       "skill_bundle_attachment": 65,
       "toolkit_documentation": 4
     },
-    "file_backed_candidates": 5450
+    "file_backed_candidates": 5469
   },
   "quality_assertions_by_scheme": {
     "guard-level": 74,
     "intended-use": 756
   },
   "relationships": {
-    "attachments": 1039,
+    "attachments": 1042,
     "copy_of": 59,
     "merged_into": 19,
-    "previous_paths": 296,
+    "previous_paths": 299,
     "split_into": 1,
     "superseded_by": 42
   },
@@ -93,5 +93,5 @@
       "ST-26"
     ]
   },
-  "total_records": 5839
+  "total_records": 5858
 }

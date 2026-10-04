@@ -6,8 +6,7 @@ techniques:
   - ST-01
   - ST-03
   - CM-02
-  - PR-01
-  - DC-01
+  - NE-05
 difficulty: intermediate
 tags:
   - streaming

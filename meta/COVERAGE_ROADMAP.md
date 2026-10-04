@@ -1,6 +1,7 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-10-03:** **Waves 1–9 shipped; Wave 10 planned (§6).**
+**Status as of 2026-10-04:** **Waves 1–10 shipped (§6).**
+- **Wave 10 (2026-10-04):** technique hygiene (13 undefined codes remapped in 110 files, a CI check on every prompt's `techniques:` list) and agentic-resource depth (7 skills, 4 agents, 4 commands, 4 personas; 3 one-skill categories folded into real ones).
 - **Wave 9 (2026-10-03):** 39 prompts deepening thin subfolders in frontend, game development, creative writing and seven single-prompt folders, plus 15 routing cases (§6).
 - **Wave 8 (2026-10-03):** 36 prompts on the second set of absent subjects (security operations, data engineering, FinOps, design systems, accessibility beyond components, ML for science, dementia care, DIY, cooking, special-education disputes, dating) and the first part of biblical-studies Phase 3C, plus 13 routing cases (§6).
 - **Wave 7 (2026-10-03):** 46 prompts finishing the parenting caregiver folders, public administration, personal-development and negotiation Wave 2 items, institution-side student success, maintenance and reliability, and professional-services firm operations, plus 16 routing cases (§6).
@@ -869,23 +870,62 @@ did not take their queries. All five still rank their target first.
   overlapping a query's wording (the audio mix and branching-state prompts). Every
   Wave 9 file was saved before the query file was written.
 
-### Wave 10: agentic-resource and technique hygiene — planned
+### Wave 10: agentic-resource and technique hygiene — shipped (2026-10-04)
 
-- **Undefined technique codes.** DC-01, PR-01/02/03, CR-01/02, IT-01/02, AN-01,
-  SC-01/03, FP-01 and WF-01 are cited 133 times but defined nowhere, with
-  inconsistent meanings. Remap each file to an existing code from its body
-  (e.g. CR-01 → RT-01, FP-01 → QA-12, WF-01 → ST-02); do not define them. Fix
-  the 9 "ST-01 (Structured Task Decomposition)" name mismatches.
-- **Validator.** Extend `scripts/validate_technique_catalog.py` to check every
-  `techniques[]` entry in `PROMPT_INDEX.json`: unknown IDs fail, deprecated IDs
-  and name mismatches warn. Land it with the remap and a unit test.
-- **Uncited codes (~100 after Wave 6).** Report them by family; cite them where
-  they fit; deprecate only true duplicates.
-- **Agentic resources.** Fold the one-skill categories (`ai-native-rollouts`,
-  `review-prompt`, `vibe-coding-rescue`) into real categories via
-  `meta/REORG_MAP.tsv`; deepen accessibility, game-development, devops and
-  observability skills, deployment and orchestration agents, data-analysis and
-  documentation commands, and product and specialized personas.
+**Technique remap.** The 13 undefined codes (DC-01, PR-01/02/03, CR-01/02,
+IT-01/02, AN-01, SC-01/03, FP-01, WF-01; 133 citations) were remapped file by
+file to existing catalog codes, chosen from what each prompt actually does. No
+new codes were defined. The main targets were:
+- CR-01/02 → RT-01 (Chain-of-Thought), 18 healthcare files. The healthcare roadmap line that defined CR-01 as CoT was corrected.
+- DC-01 (42) → about 20 different codes, for example AG-11, QA-05, NE-05, DT-01, CM-01.
+- PR-01 → RP-01, QA-11, DS-29, QA-10.
+- PR-02 → QA-01, RT-01, QA-15.
+- PR-03 → ED-06, MP-04 and others.
+- IT-01/02 → MP-03. SC-01 → RP-01. SC-03 and WF-01 → ST-02. AN-01 → RT-02. FP-01 → QA-12.
+
+The 46 "ID (Name)" entries in the iOS and Android prompts are now bare IDs. Where
+the name showed the author meant a different technique, the ID was switched: "ST-01
+(Structured Task Decomposition)" → DT-01, "RT-02 (Checklist Verification)" → QA-10,
+"DS-02 (Domain-Specific Terminology)" → CM-01, "RT-05 (Constraint Specification)"
+→ CM-02, "QA-01 (Quality Assurance Gates)" → QA-08.
+
+110 files were touched. The two `ai-governance-audit-kit/referenced-prompts/`
+copies of edited prompts were re-synced with `check_vendored_copies.py --fix`.
+
+**Validator.** `scripts/validate_technique_catalog.py` now checks every
+`techniques:` entry in `PROMPT_INDEX.json`, and it runs in CI:
+- An unknown or malformed ID is a hard error. The ID pattern is generic, so an uncatalogued prefix such as `DC-` is caught.
+- A deprecated (merged) ID is a warning that names its merge target. OC-01 (141 citations) and QA-03 (1) remain as valid aliases.
+- A parenthesised name that differs from the catalog's is a warning.
+- `--uncited` lists the active IDs no prompt cites, by family: 100 now, informational only.
+- Eight unit tests were added to `scripts/pae_registry/tests/test_metadata_and_techniques.py`.
+
+**One-skill categories folded.** These moves preserve identity:
+- `skills/ai-native-rollouts` → `skills/non-coding/business/`
+- `skills/review-prompt` → `skills/llm-application-dev/`
+- `skills/vibe-coding-rescue` → `skills/developer-tools/`
+
+Each move is recorded in `meta/REORG_MAP.tsv`. Each UID is kept, and the retired
+public ID is in `meta/registry/aliases.tsv`.
+
+**New agentic resources (19).**
+
+| Kind | Added | Re-angled or dropped |
+|---|---|---|
+| Skills (7) | `accessibility/` component-accessibility-contracts, accessibility-regression-gate; `game-development/` game-feel-juice-pass, playtest-telemetry-capture (with a tested log validator); `devops/` executable-runbook-authoring, infrastructure-drift-detection; `observability/` slo-burn-rate-alerting (its rules pass `promtool check rules` and `promtool test rules`) | Five re-angled away from an existing prompt, skill or command |
+| Agents (4) | `deployment/` release-readiness-gatekeeper, progressive-delivery-controller (advisory; each change needs human confirmation); `orchestration/` task-decomposition-coordinator, result-reconciler | — |
+| Commands (4) | `data-analysis/` dataset_profile, metric_sanity_check; `documentation/` docs_drift_check, changelog_reconcile | changelog-from-commits re-angled (the `changelog-automation` skill exists) |
+| Personas (4) | `product/` product-operations lead, API/platform product manager; `specialized/` geospatial analyst, open-source maintainer | pricing strategist, accessibility reviewer and data-privacy reviewer dropped as duplicates |
+
+**Routing:** no case changed scope. Case 058 ("persona that evaluates and compares
+tools") went from rank 1 back to 2. It is a persona-versus-prompt near-tie that has
+flipped back and forth as the corpus grows, so kind@1 reads 97.7%. Case 164 slipped
+from rank 3 to 4. Scope@1 stays at 84.6% over 205 cases.
+
+**Left for later:**
+- Several Android prompts still list more than 5 techniques, and their body lists mislabel some valid codes.
+- The `slo-implementation` skill's example alerts use 30-day burn-rate thresholds on a 28-day SLO.
+- Most `personas/README.md` tree filenames are out of date.
 
 ## 7. Explicitly not gaps / deferred
 

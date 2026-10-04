@@ -5,8 +5,8 @@ description: "Run a fixed prompt at temperatures 0.0, 0.3, 0.7, 1.0 to determine
 techniques:
   - ST-02
   - QA-01
-  - PR-01
-  - DC-01
+  - QA-10
+  - AG-11
 difficulty: beginner
 tags:
   - temperature

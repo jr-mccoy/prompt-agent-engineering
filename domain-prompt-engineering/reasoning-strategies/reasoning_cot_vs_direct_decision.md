@@ -3,8 +3,9 @@ title: "Decide Whether to Use Chain-of-Thought"
 category: prompt-engineering/reasoning-strategies
 description: "Diagnose whether a task benefits from explicit reasoning steps or whether direct-answer mode performs better."
 techniques:
-  - PR-02
+  - RT-01
   - QA-01
+  - QA-07
 difficulty: intermediate
 tags:
   - cot

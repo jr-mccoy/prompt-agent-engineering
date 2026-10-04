@@ -3,8 +3,9 @@ title: "Decide When to Add a Few-Shot Example"
 category: prompt-engineering/few-shot-examples
 description: "Diagnose whether a task needs zero, one, or several few-shot examples, and which to add first if any."
 techniques:
-  - PR-03
+  - ED-06
   - QA-01
+  - DT-03
 difficulty: intermediate
 tags:
   - few-shot

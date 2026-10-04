@@ -320,3 +320,8 @@ domain-decision-making/decisioning_crisis_communication_playbook.md	domain-risk/
 domain-decision-making/decisioning_crisis_severity_triage.md	domain-risk/risk_crisis_severity_triage.md
 domain-decision-making/decisioning_competitive_intelligence_scanner.md	domain-business-strategy/research/research_competitive_intelligence_scanner.md
 domain-decision-making/decisioning_pricing_experiment_matrix.md	domain-product-management/prompts/product_pricing_experiment_matrix.md
+domain-agentic-resources/skills/ai-native-rollouts/SKILL.md	domain-agentic-resources/skills/non-coding/business/ai-native-rollouts/SKILL.md
+domain-agentic-resources/skills/ai-native-rollouts/README.md	domain-agentic-resources/skills/non-coding/business/ai-native-rollouts/README.md
+domain-agentic-resources/skills/review-prompt/SKILL.md	domain-agentic-resources/skills/llm-application-dev/review-prompt/SKILL.md
+domain-agentic-resources/skills/vibe-coding-rescue/SKILL.md	domain-agentic-resources/skills/developer-tools/vibe-coding-rescue/SKILL.md
+domain-agentic-resources/skills/vibe-coding-rescue/README.md	domain-agentic-resources/skills/developer-tools/vibe-coding-rescue/README.md

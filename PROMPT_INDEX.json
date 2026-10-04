@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated": "2026-10-03",
+    "generated": "2026-10-04",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 6114,
-    "artifacts_with_frontmatter": 5186,
-    "artifacts_without_frontmatter": 928,
+    "total_indexed_artifacts": 6135,
+    "artifacts_with_frontmatter": 5205,
+    "artifacts_without_frontmatter": 930,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -14,9 +14,9 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 6114,
-    "prompts_with_frontmatter": 5186,
-    "prompts_without_frontmatter": 928
+    "total_prompts": 6135,
+    "prompts_with_frontmatter": 5205,
+    "prompts_without_frontmatter": 930
   },
   "prompts": [
     {
@@ -10958,7 +10958,7 @@
       "title": "Claude Code Resources Master Index",
       "domain": "agentic-resources",
       "category": "agentic-resources",
-      "description": "<!-- INVENTORY_COUNTS: {\"agents_categories\": {\"architecture\": 6, \"backend\": 8, \"business\": 2, \"business-operations\": 11, \"cloud-infrastructure\": 9, \"code-quality\": 4, \"creative\": 2, \"database\": 4, \"deployment\": 1, \"devops\": 6, \"documentation\": 5, \"education\": 2, \"frontend-mobile\": 22, \"healthcare\": ",
+      "description": "<!-- INVENTORY_COUNTS: {\"agents_categories\": {\"architecture\": 6, \"backend\": 8, \"business\": 2, \"business-operations\": 11, \"cloud-infrastructure\": 9, \"code-quality\": 4, \"creative\": 2, \"database\": 4, \"deployment\": 3, \"devops\": 6, \"documentation\": 5, \"education\": 2, \"frontend-mobile\": 22, \"healthcare\": ",
       "techniques": [],
       "keywords": [
         "agent",
@@ -12011,6 +12011,56 @@
         "platforms",
         "purpose",
         "technologies"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/agents/deployment/progressive_delivery_controller.md",
+      "filename": "progressive_delivery_controller.md",
+      "title": "Progressive Delivery Controller",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/agents/deployment",
+      "description": "Rollout monitor for canary releases and percentage-based feature-flag rollouts of server-side and web changes. Fixes abort, hold, and promote criteria before the rollout starts (guardrail metrics, comparison against a baseline cohort, minimum sample and soak time per stage), then reads the evidence at each stage and recommends ABORT, HOLD, or PROMOTE with the numbers behind it. Advisory by default — it never shifts traffic, flips a flag, promotes, or rolls back without explicit human confirmation of the exact action. Use PROACTIVELY when a canary or flag rollout is about to start or is in progress.",
+      "techniques": [],
+      "keywords": [
+        "boundaries",
+        "controller",
+        "delivery",
+        "evaluation",
+        "plan",
+        "progressive",
+        "purpose",
+        "rollout",
+        "safety",
+        "stage"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/agents/deployment/release_readiness_gatekeeper.md",
+      "filename": "release_readiness_gatekeeper.md",
+      "title": "Release Readiness Gatekeeper",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/agents/deployment",
+      "description": "Read-only release gate for server-side and web release candidates. Checks a release candidate against explicit go/no-go criteria — test and build evidence, change scope, database migration safety (expand/contract, N-1 compatibility, lock risk, reversibility), a rollback plan that names what cannot be rolled back, config and secret changes, observability for new code paths, and operational readiness — and returns GO, GO-WITH-CONDITIONS, or NO-GO with the evidence behind each line. Defaults to NO-GO when a blocking criterion has no evidence. Never tags, merges, deploys, or runs migrations. Use PROACTIVELY before promoting a release candidate to production or when someone asks \"are we safe to ship this?\".",
+      "techniques": [],
+      "keywords": [
+        "boundaries",
+        "build",
+        "criteria",
+        "evidence",
+        "gate",
+        "gatekeeper",
+        "purpose",
+        "readiness",
+        "release",
+        "safety"
       ],
       "difficulty": "",
       "updated": "",
@@ -13814,6 +13864,56 @@
         "prompt-kit-ingestor",
         "quality",
         "workflow"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/agents/orchestration/result_reconciler.md",
+      "filename": "result_reconciler.md",
+      "title": "Result Reconciler",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/agents/orchestration",
+      "description": "Merges the outputs of parallel worker agents into one result. Checks each output against its handoff contract, normalises formats, deduplicates overlapping findings or edits with the merge rule stated, detects conflicts (contradictory claims, overlapping edits to the same region, incompatible assumptions), and flags each conflict with both sources rather than silently picking a winner. Produces a reconciled artifact plus a reconciliation log that traces every merged item back to the worker that produced it. Use PROACTIVELY after a fan-out of two or more agents returns, before anything is presented as a single answer.",
+      "techniques": [],
+      "keywords": [
+        "boundaries",
+        "format",
+        "output",
+        "procedure",
+        "purpose",
+        "reconciler",
+        "reconciliation",
+        "result",
+        "safety",
+        "tool"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/agents/orchestration/task_decomposition_coordinator.md",
+      "filename": "task_decomposition_coordinator.md",
+      "title": "Task Decomposition Coordinator",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/agents/orchestration",
+      "description": "Runtime coordinator that splits one concrete piece of work into parallel subtasks a set of worker agents can execute without colliding. Builds a dependency graph, assigns each subtask disjoint write ownership (files, modules, records), writes a handoff contract per subtask (inputs, allowed scope, output schema, acceptance check, stop conditions), and marks which subtasks must stay sequential. Returns a dispatch plan for the calling session to execute; it does not spawn workers itself. Use PROACTIVELY when a task is about to be fanned out to two or more parallel agents or sessions.",
+      "techniques": [],
+      "keywords": [
+        "boundaries",
+        "contract",
+        "coordinator",
+        "decomposition",
+        "handoff",
+        "method",
+        "purpose",
+        "safety",
+        "subtask",
+        "task"
       ],
       "difficulty": "",
       "updated": "",
@@ -17191,6 +17291,31 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-agentic-resources/personas/product/product_api_platform_manager.md",
+      "filename": "product_api_platform_manager.md",
+      "title": "API & Platform Product Manager Persona",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/personas/product",
+      "description": "Product manager for a developer-facing platform — a public or partner API, SDKs, or an internal developer platform — who treats the interface as the product. Owns the developer journey from discovery to first successful call to production use, the compatibility promise and deprecation policy, which capabilities get exposed and which stay internal, and the platform's success measures (activation, time to first successful call, error-driven support load, migration completion). Pairs with engineers on API design but decides scope and policy, not implementation. Use for platform roadmap, API product decisions, and deprecation planning.",
+      "techniques": [],
+      "keywords": [
+        "api",
+        "core",
+        "identity",
+        "interface",
+        "make",
+        "manager",
+        "memory",
+        "mission",
+        "path",
+        "platform"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-agentic-resources/personas/product/product_feedback_synthesizer.md",
       "filename": "product_feedback_synthesizer.md",
       "title": "Product Feedback Synthesizer Agent",
@@ -17209,6 +17334,31 @@
         "product",
         "role",
         "skills"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/personas/product/product_operations_lead.md",
+      "filename": "product_operations_lead.md",
+      "title": "Product Operations Lead Persona",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/personas/product",
+      "description": "Product operations lead who runs the operating system of a product organisation rather than any one product decision — the planning and roadmap-review cadence, a single source of truth for roadmap and launch status, launch tiering and the launch calendar, the intake path for requests from sales, support and success, and the product-health review that puts usage, quality and customer signals in one place. Keeps rituals few and useful, retires the ones nobody acts on, and never decides what to build. Use for setting up or repairing product cadence, launch operations, and request intake.",
+      "techniques": [],
+      "keywords": [
+        "core",
+        "identity",
+        "launch",
+        "lead",
+        "make",
+        "memory",
+        "mission",
+        "operations",
+        "primary",
+        "process"
       ],
       "difficulty": "",
       "updated": "",
@@ -17541,6 +17691,31 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-agentic-resources/personas/specialized/specialized_geospatial_analyst.md",
+      "filename": "specialized_geospatial_analyst.md",
+      "title": "Geospatial Analyst Persona",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/personas/specialized",
+      "description": "Geospatial analyst for location data work — coordinate reference systems and reprojection, geocoding quality, spatial joins and proximity queries, choosing aggregation units and normalising rates for maps, topology and geometry validity, format trade-offs (GeoJSON, GeoPackage, Shapefile, GeoParquet), and location-privacy safeguards. Checks the silent errors that make spatial results wrong (area measured in degrees, mixed CRS joins, raw counts on choropleths, low-precision geocodes treated as rooftop) before anyone reads the map. Use for spatial analysis, location-data pipelines, and map review.",
+      "techniques": [],
+      "keywords": [
+        "aggregation",
+        "analyst",
+        "core",
+        "correct",
+        "geometry",
+        "geospatial",
+        "honest",
+        "identity",
+        "memory",
+        "mission"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-agentic-resources/personas/specialized/lsp_index_engineer.md",
       "filename": "lsp_index_engineer.md",
       "title": "LSP/Index Engineer Agent Personality",
@@ -17559,6 +17734,31 @@
         "index",
         "lsp",
         "memory"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/personas/specialized/specialized_open_source_maintainer.md",
+      "filename": "specialized_open_source_maintainer.md",
+      "title": "Open-Source Maintainer Persona",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/personas/specialized",
+      "description": "Open-source project maintainer who keeps a public repository healthy and sustainable — issue triage with clear labels and reproduction requests, a contributor path from first issue to merged PR, review and merge policy, release stewardship (semantic versioning, changelog, deprecations), private security-disclosure handling, governance and decision records, code-of-conduct enforcement, and protecting maintainer time by saying no clearly and kindly. Not a lawyer — routes licence questions to the legal prompts. Use for running or rescuing an open-source project's maintenance and community workflows.",
+      "techniques": [],
+      "keywords": [
+        "contributor",
+        "core",
+        "identity",
+        "maintainer",
+        "memory",
+        "mission",
+        "open",
+        "path",
+        "people",
+        "primary"
       ],
       "difficulty": "",
       "updated": "",
@@ -17909,6 +18109,74 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-agentic-resources/skills/accessibility/accessibility-regression-gate/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Accessibility Regression Gate",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/accessibility/accessibility-regression-gate",
+      "description": "Sets up an accessibility regression gate in CI using an inventory of pages and UI states, axe scans run through the existing browser test runner, a committed baseline so the build fails only on new violations, a ratchet that shrinks the baseline, and a timed screen-reader smoke script per release. Use when asked to \"add accessibility tests to CI\", \"stop accessibility regressions\", \"fail the build on a11y violations\", or \"run axe in Playwright\".",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "prerequisites",
+        "purpose",
+        "skill",
+        "this",
+        "when",
+        "workflow"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/skills/accessibility/component-accessibility-contracts/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Component Accessibility Contracts",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/accessibility/component-accessibility-contracts",
+      "description": "Writes a per-component accessibility contract (native-element decision, role, accessible name, states, keyboard map, focus rules, announcements) and turns each clause into an automated component test plus a short manual check. Use when building or reviewing a custom widget or design-system component, or when asked to \"make my custom dropdown accessible\", \"add keyboard support to this component\", \"what ARIA does this widget need\", or \"write accessibility acceptance criteria\".",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "prerequisites",
+        "purpose",
+        "skill",
+        "this",
+        "when",
+        "workflow"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/skills/accessibility/component-accessibility-contracts/references/widget-keyboard-maps.md",
+      "filename": "widget-keyboard-maps.md",
+      "title": "Widget Keyboard Maps, Roles and Focus Models",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/accessibility/component-accessibility-contracts/references",
+      "description": "Condensed from the WAI-ARIA Authoring Practices Guide (APG) patterns. Use it to draft contract clauses quickly, then check the APG page for the pattern before finalising, because APG guidance is revised over time. Verify against current docs.",
+      "techniques": [],
+      "keywords": [
+        "accordion",
+        "button",
+        "contents",
+        "disclosure",
+        "hide",
+        "show",
+        "tabs",
+        "toggle",
+        "widget-keyboard-maps"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": false
+    },
+    {
       "path": "domain-agentic-resources/skills/accessibility/screen-reader-testing/SKILL.md",
       "filename": "SKILL.md",
       "title": "Screen Reader Testing",
@@ -18007,31 +18275,6 @@
       "updated": "",
       "related_prompts": [],
       "has_frontmatter": false
-    },
-    {
-      "path": "domain-agentic-resources/skills/ai-native-rollouts/SKILL.md",
-      "filename": "SKILL.md",
-      "title": "AI-Native Rollouts",
-      "domain": "agentic-resources",
-      "category": "agentic-resources/skills/ai-native-rollouts",
-      "description": "Plan and execute team or organization adoption of AI tools and agentic workflows — ambient code review, tiered rollouts, ship-without-coding patterns, parallel coworker delegation, long-running project memory, and bottleneck migration. Use when leading an AI-tooling rollout, when adoption has stalled past early enthusiasts, or when an org's processes haven't kept up with what AI can now do.",
-      "techniques": [],
-      "keywords": [
-        "SKILL",
-        "adoption",
-        "ambient",
-        "code",
-        "review",
-        "rollout",
-        "ship",
-        "skill",
-        "this",
-        "tiered"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": true
     },
     {
       "path": "domain-agentic-resources/skills/backend-development/api-design-principles/SKILL.md",
@@ -23423,6 +23666,53 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-agentic-resources/skills/developer-tools/vibe-coding-rescue/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Vibe-Coding Rescue",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/developer-tools/vibe-coding-rescue",
+      "description": "Diagnose and recover an AI-assisted (\"vibe-coded\") project that has hit a wall — confused codebase, AI agent looping on the same task, security debt from auto-generated code, or a handoff with no documentation. Use when an AI coding session has produced more code than the team understands, when progress has stalled despite many edits, or when bringing a human engineer onto a previously AI-led project.",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "decompose",
+        "design",
+        "diagnosis",
+        "file",
+        "rules",
+        "skill",
+        "stuck",
+        "task",
+        "this"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/skills/devops/executable-runbook-authoring/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Executable Runbook Authoring",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/devops/executable-runbook-authoring",
+      "description": "Writes and maintains runbooks that an unfamiliar on-call engineer can execute under stress. Each step is a contract (precondition, exact command, expected output, verification, stop condition, rollback), linked from the alert that needs it, tested by a dry run or drill, and kept fresh with an owner and review date. Use when asked to \"write a runbook for this alert\", \"make our runbooks usable\", \"test our runbooks\", or \"turn tribal knowledge into a runbook\".",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "prerequisites",
+        "purpose",
+        "skill",
+        "this",
+        "when",
+        "workflow"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-agentic-resources/skills/devops/incident-runbook-templates/SKILL.md",
       "filename": "SKILL.md",
       "title": "Incident Runbook Templates",
@@ -23441,6 +23731,28 @@
         "skill",
         "structure",
         "templates"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/skills/devops/infrastructure-drift-detection/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Infrastructure Drift Detection",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/devops/infrastructure-drift-detection",
+      "description": "Detects, classifies and reconciles drift between infrastructure-as-code and live state using scheduled read-only plans, noise suppression, triage by cause, and a reviewed decision per item (revert, codify, import, hand ownership to a controller, or treat as a security event). Covers Terraform/OpenTofu, Pulumi, CloudFormation and GitOps-managed Kubernetes. Use when asked to \"detect drift\", \"someone changed prod in the console\", \"terraform plan shows unexpected changes\", or \"set up a drift check\".",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "prerequisites",
+        "purpose",
+        "skill",
+        "this",
+        "when",
+        "workflow"
       ],
       "difficulty": "",
       "updated": "",
@@ -24456,6 +24768,28 @@
       "has_frontmatter": false
     },
     {
+      "path": "domain-agentic-resources/skills/game-development/game-feel-juice-pass/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Game-Feel Juice Pass",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/game-development/game-feel-juice-pass",
+      "description": "Implements and tunes the feedback layers that make a core action feel responsive (input buffering, coyote time, hitstop, trauma-based screenshake, flashes, knockback, particles, layered audio and haptics) as named, data-driven parameters with starting ranges, an intensity hierarchy, stacking caps and comfort toggles. Use when asked to \"add juice\", \"make hits feel punchy\", \"implement screenshake or hitstop\", or \"the jump feels floaty\".",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "prerequisites",
+        "purpose",
+        "skill",
+        "this",
+        "when",
+        "workflow"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-agentic-resources/skills/game-development/godot-gdscript-patterns/SKILL.md",
       "filename": "SKILL.md",
       "title": "Godot GDScript Patterns",
@@ -24504,6 +24838,28 @@
       "updated": "",
       "related_prompts": [],
       "has_frontmatter": false
+    },
+    {
+      "path": "domain-agentic-resources/skills/game-development/playtest-telemetry-capture/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Playtest Telemetry Capture",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/game-development/playtest-telemetry-capture",
+      "description": "Instruments a playtest build to capture exactly what the playtest protocol asks for, using a small event schema traced to research questions, pseudonymous participant codes, build stamping, an observer bookmark hotkey, video sync markers, consent gating and retention rules, then validates and exports the logs for synthesis. Use when asked to \"add telemetry to the playtest build\", \"log deaths and quit points\", \"capture playtest data\", or \"sync playtest video with gameplay logs\".",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "prerequisites",
+        "purpose",
+        "skill",
+        "this",
+        "when",
+        "workflow"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
     },
     {
       "path": "domain-agentic-resources/skills/game-development/unity-ecs-patterns/SKILL.md",
@@ -26455,6 +26811,30 @@
       "updated": "",
       "related_prompts": [],
       "has_frontmatter": false
+    },
+    {
+      "path": "domain-agentic-resources/skills/llm-application-dev/review-prompt/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "Review Prompt",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/llm-application-dev/review-prompt",
+      "description": "Review a reusable prompt the way a rigorous senior prompt engineer would — find its real weaknesses, separate blocking gaps from nitpicks, give the minimal fix for each, and end with a clear verdict. Use when a prompt needs a pre-ship review, when a prompt produces inconsistent or hallucinated output, or when authoring a new prompt and wanting a pre-ship pass. Not for creative/open-ended prompts, multi-turn system prompts, or agentic/tool-use prompts (see \"When NOT to use\").",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "boundary",
+        "format",
+        "inputs",
+        "method",
+        "order",
+        "output",
+        "scope",
+        "when"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
     },
     {
       "path": "domain-agentic-resources/skills/llm-application-dev/vector-search-optimization/SKILL.md",
@@ -33294,6 +33674,31 @@
       "has_frontmatter": false
     },
     {
+      "path": "domain-agentic-resources/skills/non-coding/business/ai-native-rollouts/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "AI-Native Rollouts",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/non-coding/business/ai-native-rollouts",
+      "description": "Plan and execute team or organization adoption of AI tools and agentic workflows — ambient code review, tiered rollouts, ship-without-coding patterns, parallel coworker delegation, long-running project memory, and bottleneck migration. Use when leading an AI-tooling rollout, when adoption has stalled past early enthusiasts, or when an org's processes haven't kept up with what AI can now do.",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "adoption",
+        "ambient",
+        "code",
+        "review",
+        "rollout",
+        "ship",
+        "skill",
+        "this",
+        "tiered"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-agentic-resources/skills/non-coding/business/competitive-analysis/SKILL.md",
       "filename": "SKILL.md",
       "title": "Competitive Analysis",
@@ -33974,6 +34379,52 @@
       "updated": "",
       "related_prompts": [],
       "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/skills/observability/slo-burn-rate-alerting/SKILL.md",
+      "filename": "SKILL.md",
+      "title": "SLO Burn-Rate Alerting",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/observability/slo-burn-rate-alerting",
+      "description": "Designs, generates and tests multi-window, multi-burn-rate alerts for an SLO that already exists. Derives each threshold from the share of error budget it represents, emits every recording rule the alerts reference, guards low-traffic services, unit-tests rules with promtool and backtests them against past incidents. Use when asked to \"set up burn rate alerts\", \"our SLO alerts are noisy or missed an incident\", \"page on error budget\", or \"test our alerting rules\".",
+      "techniques": [],
+      "keywords": [
+        "SKILL",
+        "definitions",
+        "prerequisites",
+        "purpose",
+        "skill",
+        "this",
+        "when"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/skills/observability/slo-burn-rate-alerting/references/burn-rate-rules-and-tests.md",
+      "filename": "burn-rate-rules-and-tests.md",
+      "title": "Burn-Rate Rules and Tests: Complete Example",
+      "domain": "agentic-resources",
+      "category": "agentic-resources/skills/observability/slo-burn-rate-alerting/references",
+      "description": "A complete, internally consistent example for one SLO: checkout availability, 99.9% over 30 days (error budget 0.001). Every file below passed `promtool check rules` and `promtool test rules` with promtool 3.5.0. A negative control (the same test with no",
+      "techniques": [],
+      "keywords": [
+        "burn-rate-rules-and-tests",
+        "cheaper",
+        "checkout",
+        "contents",
+        "guard",
+        "long",
+        "rules",
+        "test",
+        "window"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": false
     },
     {
       "path": "domain-agentic-resources/skills/observability/slo-implementation/SKILL.md",
@@ -36623,30 +37074,6 @@
         "subscriptions",
         "this",
         "webhooks",
-        "when"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": true
-    },
-    {
-      "path": "domain-agentic-resources/skills/review-prompt/SKILL.md",
-      "filename": "SKILL.md",
-      "title": "Review Prompt",
-      "domain": "agentic-resources",
-      "category": "agentic-resources/skills/review-prompt",
-      "description": "Review a reusable prompt the way a rigorous senior prompt engineer would — find its real weaknesses, separate blocking gaps from nitpicks, give the minimal fix for each, and end with a clear verdict. Use when a prompt needs a pre-ship review, when a prompt produces inconsistent or hallucinated output, or when authoring a new prompt and wanting a pre-ship pass. Not for creative/open-ended prompts, multi-turn system prompts, or agentic/tool-use prompts (see \"When NOT to use\").",
-      "techniques": [],
-      "keywords": [
-        "SKILL",
-        "boundary",
-        "format",
-        "inputs",
-        "method",
-        "order",
-        "output",
-        "scope",
         "when"
       ],
       "difficulty": "",
@@ -42165,31 +42592,6 @@
       "has_frontmatter": false
     },
     {
-      "path": "domain-agentic-resources/skills/vibe-coding-rescue/SKILL.md",
-      "filename": "SKILL.md",
-      "title": "Vibe-Coding Rescue",
-      "domain": "agentic-resources",
-      "category": "agentic-resources/skills/vibe-coding-rescue",
-      "description": "Diagnose and recover an AI-assisted (\"vibe-coded\") project that has hit a wall — confused codebase, AI agent looping on the same task, security debt from auto-generated code, or a handoff with no documentation. Use when an AI coding session has produced more code than the team understands, when progress has stalled despite many edits, or when bringing a human engineer onto a previously AI-led project.",
-      "techniques": [],
-      "keywords": [
-        "SKILL",
-        "decompose",
-        "design",
-        "diagnosis",
-        "file",
-        "rules",
-        "skill",
-        "stuck",
-        "task",
-        "this"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": true
-    },
-    {
       "path": "domain-agentic-resources/skills/web-development/astro-development/SKILL.md",
       "filename": "SKILL.md",
       "title": "Astro Development",
@@ -43129,6 +43531,54 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-agentic-resources/commands/data-analysis/dataset_profile.md",
+      "filename": "dataset_profile.md",
+      "title": "Dataset Profile",
+      "domain": "agentic-resources",
+      "category": "data-analysis",
+      "description": "Quick operational profile of one tabular dataset (CSV, Parquet, JSON Lines, Excel sheet, or a warehouse table) — shape, inferred types, null and empty-string rates, distinct counts, candidate keys, duplicate rows, numeric ranges and percentiles, top categorical values, date coverage, and sentinel values — ending in a short list of data-quality flags and questions for the data owner. Masks likely PII in sample values. Distinct from the ML dataset-validation skill (leakage, labels, drift) and from the data-dictionary writer (documents meaning); this answers \"what is actually in this file?\" in minutes.",
+      "techniques": [],
+      "keywords": [
+        "data-analysis",
+        "profiling",
+        "data-quality",
+        "csv",
+        "parquet",
+        "eda",
+        "nulls",
+        "duplicates",
+        "schema"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/commands/data-analysis/metric_sanity_check.md",
+      "filename": "metric_sanity_check.md",
+      "title": "Metric Sanity Check",
+      "domain": "agentic-resources",
+      "category": "data-analysis",
+      "description": "Ten-to-fifteen-minute pre-publish smoke test for one computed business metric — confirms the definition being used, tests the output grain for duplicates, checks join fan-out, null handling in numerator and denominator, totals reconciliation (segments sum to total; total matches an independent source within a stated tolerance), time window and time zone, ratio bounds, and an abrupt step versus recent periods. Each check returns PASS / WARN / FAIL with the diagnostic query and its result. Escalates to the full SQL correctness review on any FAIL. Distinct from the metric-definition spec (writes the definition) and the SQL correctness review (deep adversarial review).",
+      "techniques": [],
+      "keywords": [
+        "data-analysis",
+        "metrics",
+        "sanity-check",
+        "reconciliation",
+        "grain",
+        "nulls",
+        "sql",
+        "kpi",
+        "data-quality"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-agentic-resources/commands/data-analysis/process_financials.md",
       "filename": "process_financials.md",
       "title": "Process Financial Statements (Extract → Verify → Categorize → Flag)",
@@ -43445,6 +43895,51 @@
         "docs",
         "documentation",
         "frontend"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/commands/documentation/changelog_reconcile.md",
+      "filename": "changelog_reconcile.md",
+      "title": "Changelog Reconcile",
+      "domain": "agentic-resources",
+      "category": "documentation",
+      "description": "Pre-tag check that a changelog section (for example `[Unreleased]` or a version heading) matches the commits actually in the release range. Lists user-visible commits with no entry (MISSING), entries with no matching commit in the range (PHANTOM), entries filed under the wrong Keep a Changelog heading (MISCLASSIFIED), breaking changes not called out (BREAKING-UNFLAGGED), and duplicates — then drafts entries for the gaps, marked as drafts. Read-only; never edits the changelog or tags unless explicitly asked. Distinct from the changelog-automation skill (sets up generation tooling and commit conventions) and the release-notes writer prompt (writes user-facing and internal notes).",
+      "techniques": [],
+      "keywords": [
+        "documentation",
+        "changelog",
+        "release",
+        "git",
+        "conventional-commits",
+        "keep-a-changelog",
+        "verification"
+      ],
+      "difficulty": "",
+      "updated": "",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-agentic-resources/commands/documentation/docs_drift_check.md",
+      "filename": "docs_drift_check.md",
+      "title": "Docs Drift Check",
+      "domain": "agentic-resources",
+      "category": "documentation",
+      "description": "Find documentation that has fallen out of sync with the code. Extracts checkable claims from READMEs and docs (CLI commands and flags, environment variables, config keys and defaults, API endpoints, function and class names and signatures, file paths, import lines in code samples, version numbers) and verifies each against the current source, classifying it CONFIRMED, DRIFTED, MISSING, or UNCHECKABLE with the code evidence and a suggested correction. Read-only by default. Distinct from doc-generate (writes new docs), the documentation-coverage analysis (finds undocumented code), and docs-cleaner (merges redundant docs).",
+      "techniques": [],
+      "keywords": [
+        "documentation",
+        "docs",
+        "drift",
+        "readme",
+        "staleness",
+        "verification",
+        "code-sync",
+        "maintenance"
       ],
       "difficulty": "",
       "updated": "",
@@ -80875,7 +81370,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01",
+        "RT-01",
         "QA-01"
       ],
       "keywords": [
@@ -81138,7 +81633,7 @@
         "CM-01",
         "RT-02",
         "RT-05",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "cardiology",
@@ -81545,7 +82040,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "pathophysiology",
@@ -81570,7 +82065,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "cardiology",
@@ -81596,8 +82091,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01",
-        "CR-02"
+        "RT-01"
       ],
       "keywords": [
         "pathophysiology",
@@ -81622,7 +82116,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "pharmacology",
@@ -81647,7 +82141,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "endocrinology",
@@ -81672,7 +82166,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "pathophysiology",
@@ -81699,7 +82193,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "genetics",
@@ -81725,7 +82219,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "immunology",
@@ -81752,7 +82246,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "pathophysiology",
@@ -81777,7 +82271,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "microbiology",
@@ -81803,7 +82297,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "oncology",
@@ -81829,7 +82323,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "pharmacology",
@@ -81855,7 +82349,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01",
+        "RT-01",
         "QA-01"
       ],
       "keywords": [
@@ -81881,7 +82375,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "pulmonology",
@@ -81907,7 +82401,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "CR-01"
+        "RT-01"
       ],
       "keywords": [
         "nephrology",
@@ -138373,8 +138867,9 @@
       "category": "prompt-engineering/agent-workflows",
       "description": "Author a self-contained brief that a sub-agent can run without seeing the parent's context, with explicit scope, return contract, and authority limits.",
       "techniques": [
-        "DC-01",
-        "CM-02"
+        "CM-01",
+        "CM-02",
+        "CM-09"
       ],
       "keywords": [
         "subagent",
@@ -138464,8 +138959,10 @@
       "category": "prompt-engineering/agent-workflows",
       "description": "Author three prompts that form a planner-worker-judge cycle, with strict input/output contracts and a maximum revision loop.",
       "techniques": [
-        "DC-01",
-        "QA-01"
+        "AG-07",
+        "QA-01",
+        "DS-35",
+        "DD-06"
       ],
       "keywords": [
         "agents",
@@ -138511,7 +139008,8 @@
       "description": "Wrap an agent step with detect-error → diagnose → repair logic so transient or schema errors are recovered without escalating.",
       "techniques": [
         "QA-01",
-        "PR-03"
+        "RT-11",
+        "DD-06"
       ],
       "keywords": [
         "self-correction",
@@ -138651,7 +139149,9 @@
       "description": "Remove few-shot examples that do not contribute unique signal, validated by per-example ablation against the test set.",
       "techniques": [
         "CM-01",
-        "PR-03"
+        "ED-06",
+        "QA-07",
+        "NE-05"
       ],
       "keywords": [
         "few-shot",
@@ -138742,9 +139242,8 @@
       "techniques": [
         "ST-02",
         "QA-01",
-        "PR-01",
-        "PR-02",
-        "DC-01"
+        "QA-11",
+        "RT-10"
       ],
       "keywords": [
         "bisect",
@@ -138773,7 +139272,7 @@
         "ST-02",
         "ST-03",
         "QA-01",
-        "DC-01"
+        "RT-09"
       ],
       "keywords": [
         "root_cause",
@@ -138801,9 +139300,8 @@
       "techniques": [
         "ST-02",
         "QA-01",
-        "PR-01",
-        "PR-02",
-        "DC-01"
+        "QA-10",
+        "QA-02"
       ],
       "keywords": [
         "input_perturbation",
@@ -138831,9 +139329,7 @@
       "techniques": [
         "ST-02",
         "QA-01",
-        "PR-01",
-        "PR-02",
-        "DC-01"
+        "QA-11"
       ],
       "keywords": [
         "minimal_repro",
@@ -138860,9 +139356,8 @@
       "techniques": [
         "ST-02",
         "QA-01",
-        "PR-01",
-        "PR-02",
-        "DC-01"
+        "RT-10",
+        "AG-11"
       ],
       "keywords": [
         "multi_turn",
@@ -138891,7 +139386,7 @@
         "ST-02",
         "ST-03",
         "QA-01",
-        "DC-01"
+        "AG-11"
       ],
       "keywords": [
         "failure_modes",
@@ -138918,9 +139413,9 @@
       "techniques": [
         "ST-02",
         "QA-01",
-        "PR-01",
-        "PR-03",
-        "DC-01"
+        "QA-11",
+        "QA-18",
+        "DT-04"
       ],
       "keywords": [
         "silent_failure",
@@ -138948,8 +139443,8 @@
       "techniques": [
         "ST-02",
         "QA-01",
-        "PR-01",
-        "DC-01"
+        "QA-10",
+        "AG-11"
       ],
       "keywords": [
         "temperature",
@@ -140094,7 +140589,8 @@
       "description": "Detect when few-shot examples are causing the prompt to overfit to surface features that do not generalize.",
       "techniques": [
         "QA-01",
-        "PR-03"
+        "ED-05",
+        "DS-04"
       ],
       "keywords": [
         "contamination",
@@ -140116,8 +140612,9 @@
       "category": "prompt-engineering/few-shot-examples",
       "description": "Curate few-shot examples that cover edge cases (boundary inputs, malformed inputs, refusal-worthy inputs) instead of typical inputs.",
       "techniques": [
-        "PR-03",
-        "QA-01"
+        "MP-04",
+        "QA-01",
+        "NE-05"
       ],
       "keywords": [
         "edge-cases",
@@ -140140,8 +140637,9 @@
       "category": "prompt-engineering/few-shot-examples",
       "description": "Diagnose whether a task needs zero, one, or several few-shot examples, and which to add first if any.",
       "techniques": [
-        "PR-03",
-        "QA-01"
+        "ED-06",
+        "QA-01",
+        "DT-03"
       ],
       "keywords": [
         "few-shot",
@@ -140163,8 +140661,9 @@
       "category": "prompt-engineering/few-shot-examples",
       "description": "Create examples that show what the model should not do, formatted so the model does not imitate them by accident.",
       "techniques": [
-        "PR-03",
-        "CM-02"
+        "NE-04",
+        "CM-02",
+        "ST-04"
       ],
       "keywords": [
         "negative-examples",
@@ -140186,8 +140685,9 @@
       "category": "prompt-engineering/few-shot-examples",
       "description": "Build few-shot examples when no corpus exists, with explicit diversity targets and a quality gate.",
       "techniques": [
-        "PR-03",
-        "QA-01"
+        "ED-06",
+        "QA-01",
+        "QA-08"
       ],
       "keywords": [
         "synthetic",
@@ -140232,7 +140732,9 @@
       "category": "prompt-engineering/few-shot-examples",
       "description": "Decide the order in which few-shot examples appear, considering recency bias, difficulty progression, and primacy/recency effects.",
       "techniques": [
-        "PR-03"
+        "IT-20",
+        "QA-07",
+        "ST-03"
       ],
       "keywords": [
         "few-shot",
@@ -140254,8 +140756,9 @@
       "category": "prompt-engineering/few-shot-examples",
       "description": "Pick a small representative set of few-shot examples from a larger corpus, balancing coverage, diversity, difficulty, and prompt budget.",
       "techniques": [
-        "PR-03",
-        "CM-01"
+        "MP-04",
+        "CM-01",
+        "NE-05"
       ],
       "keywords": [
         "few-shot",
@@ -140377,7 +140880,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "PR-02"
+        "QA-04"
       ],
       "keywords": [
         "hallucination",
@@ -140467,7 +140970,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "PR-02"
+        "QA-05"
       ],
       "keywords": [
         "hallucination",
@@ -140497,7 +141000,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "DC-01"
+        "RT-23"
       ],
       "keywords": [
         "hallucination",
@@ -140527,7 +141030,7 @@
         "ST-02",
         "CM-02",
         "QA-01",
-        "PR-03"
+        "DP-07"
       ],
       "keywords": [
         "hallucination",
@@ -140557,7 +141060,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "PR-02"
+        "QA-15"
       ],
       "keywords": [
         "hallucination",
@@ -140587,7 +141090,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "DC-01"
+        "CM-01"
       ],
       "keywords": [
         "hallucination",
@@ -140616,8 +141119,8 @@
         "ST-02",
         "CM-02",
         "QA-01",
-        "PR-01",
-        "DC-01"
+        "QA-07",
+        "NE-05"
       ],
       "keywords": [
         "compaction",
@@ -140673,9 +141176,9 @@
       "techniques": [
         "ST-02",
         "QA-01",
-        "PR-01",
-        "PR-03",
-        "DC-01"
+        "QA-07",
+        "DS-29",
+        "DS-02"
       ],
       "keywords": [
         "anchor_phrases",
@@ -140704,7 +141207,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "DC-01"
+        "AG-11"
       ],
       "keywords": [
         "conflict_classification",
@@ -140733,7 +141236,7 @@
         "ST-02",
         "CM-01",
         "CM-02",
-        "DC-01"
+        "CM-14"
       ],
       "keywords": [
         "instruction_hierarchy",
@@ -140790,9 +141293,9 @@
       "techniques": [
         "ST-02",
         "QA-01",
-        "PR-01",
-        "PR-02",
-        "DC-01"
+        "QA-02",
+        "QA-11",
+        "CM-14"
       ],
       "keywords": [
         "precedence",
@@ -140821,7 +141324,7 @@
         "ST-03",
         "CM-01",
         "CM-02",
-        "DC-01"
+        "ST-42"
       ],
       "keywords": [
         "rfc_2119",
@@ -140991,8 +141494,10 @@
       "category": "prompt-engineering/model-optimization",
       "description": "Apply Claude-specific patterns (XML tags, prefill, system message conventions, extended thinking) to a prompt for measurable behavior improvements.",
       "techniques": [
-        "PR-01",
-        "ST-03"
+        "DS-29",
+        "ST-03",
+        "ST-04",
+        "QA-07"
       ],
       "keywords": [
         "claude",
@@ -141015,8 +141520,9 @@
       "category": "prompt-engineering/model-optimization",
       "description": "Apply OpenAI / GPT-family conventions (system messages, JSON mode, structured outputs, function calling) to a prompt with measurable behavior changes.",
       "techniques": [
-        "PR-01",
-        "ST-03"
+        "DS-29",
+        "ST-03",
+        "OC-02"
       ],
       "keywords": [
         "gpt",
@@ -141063,7 +141569,9 @@
       "category": "prompt-engineering/model-optimization",
       "description": "Translate a prompt between Claude, GPT, Gemini, or open-source families with explicit substitutions for each family's idioms.",
       "techniques": [
-        "PR-01"
+        "DS-29",
+        "ST-04",
+        "QA-11"
       ],
       "keywords": [
         "migration",
@@ -141108,8 +141616,9 @@
       "category": "prompt-engineering/model-optimization",
       "description": "Adapt a prompt for reasoning-mode models (Claude extended thinking, o-series) by simplifying instructions, removing CoT scaffolding, and tuning thinking budget.",
       "techniques": [
-        "PR-02",
-        "CM-01"
+        "QA-01",
+        "CM-01",
+        "NE-05"
       ],
       "keywords": [
         "thinking-mode",
@@ -141201,8 +141710,7 @@
         "ST-02",
         "ST-03",
         "CM-02",
-        "QA-01",
-        "PR-02"
+        "QA-01"
       ],
       "keywords": [
         "format_variants",
@@ -141262,7 +141770,7 @@
         "ST-03",
         "CM-02",
         "QA-08",
-        "DC-01"
+        "DP-04"
       ],
       "keywords": [
         "markdown",
@@ -141291,7 +141799,7 @@
         "ST-01",
         "ST-03",
         "CM-02",
-        "DC-01"
+        "NE-04"
       ],
       "keywords": [
         "preamble",
@@ -141321,7 +141829,7 @@
         "ST-03",
         "CM-02",
         "QA-08",
-        "DC-01"
+        "NE-05"
       ],
       "keywords": [
         "brevity",
@@ -141351,7 +141859,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "DC-01"
+        "QA-05"
       ],
       "keywords": [
         "quoting",
@@ -141380,8 +141888,7 @@
         "ST-01",
         "ST-03",
         "CM-02",
-        "PR-01",
-        "DC-01"
+        "NE-05"
       ],
       "keywords": [
         "streaming",
@@ -141411,7 +141918,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "DC-01"
+        "OC-03"
       ],
       "keywords": [
         "table",
@@ -141487,7 +141994,8 @@
       "description": "Produce a coherent set of 5–12 prompts for a single role (e.g. CSM, sales rep, recruiter) that share voice, schema, and naming.",
       "techniques": [
         "ST-02",
-        "PR-01"
+        "RP-01",
+        "ST-03"
       ],
       "keywords": [
         "prompt-pack",
@@ -141535,7 +142043,8 @@
       "techniques": [
         "ST-01",
         "ST-02",
-        "PR-01"
+        "RP-01",
+        "OC-09"
       ],
       "keywords": [
         "role-first",
@@ -141632,7 +142141,8 @@
       "description": "Author a prompt that asks targeted questions before producing output, with budget caps and a fallback when the user refuses.",
       "techniques": [
         "ST-02",
-        "PR-02"
+        "MP-03",
+        "MP-06"
       ],
       "keywords": [
         "clarification",
@@ -141655,7 +142165,9 @@
       "description": "Decompose a task into a chain of prompts with explicit handoff contracts, intermediate validation, and failure routing.",
       "techniques": [
         "ST-02",
-        "DC-01"
+        "DT-01",
+        "AG-07",
+        "RT-11"
       ],
       "keywords": [
         "chains",
@@ -141752,7 +142264,8 @@
       "description": "Reverse-engineer a prompt from 5+ accepted outputs by extracting shared structure, vocabulary, and constraints, then writing rules that produce them.",
       "techniques": [
         "ST-02",
-        "PR-03"
+        "MP-01",
+        "DS-04"
       ],
       "keywords": [
         "reverse-engineering",
@@ -141821,7 +142334,8 @@
       "description": "Identify rules in a prompt that pass on the happy path but break on edge cases, and propose hardening for each.",
       "techniques": [
         "QA-01",
-        "PR-03"
+        "QA-10",
+        "MP-04"
       ],
       "keywords": [
         "brittleness",
@@ -142014,7 +142528,8 @@
       "description": "Given one specific bad output and the prompt that produced it, diagnose which part of the prompt failed and propose the smallest repair.",
       "techniques": [
         "QA-01",
-        "PR-03"
+        "RT-09",
+        "AG-11"
       ],
       "keywords": [
         "repair",
@@ -142230,7 +142745,7 @@
         "ST-01",
         "ST-02",
         "CM-02",
-        "DC-01",
+        "NE-05",
         "QA-01"
       ],
       "keywords": [
@@ -142260,7 +142775,7 @@
         "ST-01",
         "ST-03",
         "CM-02",
-        "DC-01",
+        "QA-05",
         "QA-01"
       ],
       "keywords": [
@@ -142291,7 +142806,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "PR-02"
+        "DS-35"
       ],
       "keywords": [
         "rag",
@@ -142320,7 +142835,7 @@
         "ST-01",
         "ST-02",
         "CM-02",
-        "DC-01",
+        "CM-05",
         "QA-01"
       ],
       "keywords": [
@@ -142350,7 +142865,7 @@
         "ST-01",
         "ST-03",
         "CM-02",
-        "DC-01",
+        "QA-05",
         "QA-01"
       ],
       "keywords": [
@@ -142380,7 +142895,7 @@
         "ST-01",
         "ST-02",
         "CM-02",
-        "DC-01",
+        "IT-22",
         "QA-01"
       ],
       "keywords": [
@@ -142440,7 +142955,7 @@
         "ST-01",
         "ST-03",
         "CM-02",
-        "DC-01",
+        "QA-05",
         "QA-01"
       ],
       "keywords": [
@@ -142470,7 +142985,7 @@
         "ST-01",
         "ST-02",
         "CM-02",
-        "DC-01",
+        "IT-22",
         "QA-01"
       ],
       "keywords": [
@@ -142497,8 +143012,9 @@
       "category": "prompt-engineering/reasoning-strategies",
       "description": "Diagnose whether a task benefits from explicit reasoning steps or whether direct-answer mode performs better.",
       "techniques": [
-        "PR-02",
-        "QA-01"
+        "RT-01",
+        "QA-01",
+        "QA-07"
       ],
       "keywords": [
         "cot",
@@ -142521,8 +143037,9 @@
       "category": "prompt-engineering/reasoning-strategies",
       "description": "Author a prompt that explicitly splits a task into ordered subtasks the model executes in sequence with intermediate outputs.",
       "techniques": [
-        "DC-01",
-        "ST-02"
+        "DT-01",
+        "ST-02",
+        "QA-08"
       ],
       "keywords": [
         "decomposition",
@@ -142546,7 +143063,8 @@
       "description": "Add a bounded scratchpad to a prompt so the model can think out loud in a fixed structure before producing the final answer.",
       "techniques": [
         "ST-03",
-        "PR-02"
+        "RT-01",
+        "NE-05"
       ],
       "keywords": [
         "scratchpad",
@@ -142569,7 +143087,9 @@
       "description": "Produce an answer plus a separate, parseable explanation block when both are needed by different consumers (UI vs API vs reviewer).",
       "techniques": [
         "ST-03",
-        "PR-02"
+        "QA-01",
+        "ST-04",
+        "RP-02"
       ],
       "keywords": [
         "explanation",
@@ -142592,8 +143112,9 @@
       "category": "prompt-engineering/reasoning-strategies",
       "description": "Separate a task into a planning prompt and an execution prompt so plans can be reviewed before execution and reused.",
       "techniques": [
-        "DC-01",
-        "ST-02"
+        "DT-01",
+        "ST-02",
+        "AG-07"
       ],
       "keywords": [
         "plan-execute",
@@ -142661,8 +143182,9 @@
       "category": "prompt-engineering/reasoning-strategies",
       "description": "Sample N independent answers at temperature > 0, vote or aggregate, and emit the majority answer with disagreement signal.",
       "techniques": [
-        "PR-02",
-        "QA-01"
+        "QA-15",
+        "QA-01",
+        "QA-04"
       ],
       "keywords": [
         "self-consistency",
@@ -142686,7 +143208,8 @@
       "description": "Decide and document the thinking-token budget for reasoning models, with rules for adjusting it per input class.",
       "techniques": [
         "CM-01",
-        "PR-02"
+        "NE-05",
+        "QA-07"
       ],
       "keywords": [
         "extended-thinking",
@@ -142709,8 +143232,9 @@
       "category": "prompt-engineering/reasoning-strategies",
       "description": "Have the model reason internally and emit only the conclusion, with reliable separation between hidden reasoning and surfaced answer.",
       "techniques": [
-        "PR-02",
-        "ST-03"
+        "RT-01",
+        "ST-03",
+        "ST-04"
       ],
       "keywords": [
         "hidden-reasoning",
@@ -142732,8 +143256,9 @@
       "category": "prompt-engineering/reasoning-strategies",
       "description": "Prompt the model to branch on candidate approaches, evaluate each, prune, and proceed with the best — within a bounded budget.",
       "techniques": [
-        "PR-02",
-        "DC-01"
+        "RT-03",
+        "DD-06",
+        "QA-17"
       ],
       "keywords": [
         "tree-of-thought",
@@ -143011,7 +143536,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "DC-01"
+        "OC-02"
       ],
       "keywords": [
         "dual_output",
@@ -143152,7 +143677,7 @@
       "techniques": [
         "ST-03",
         "CM-02",
-        "PR-02"
+        "QA-01"
       ],
       "keywords": [
         "markdown",
@@ -143262,7 +143787,7 @@
       "techniques": [
         "ST-03",
         "CM-02",
-        "PR-02"
+        "ST-04"
       ],
       "keywords": [
         "xml",
@@ -143292,7 +143817,7 @@
         "ST-03",
         "CM-02",
         "QA-01",
-        "DC-01"
+        "DP-04"
       ],
       "keywords": [
         "banlist",
@@ -143445,7 +143970,7 @@
         "ST-03",
         "CM-02",
         "ST-16",
-        "PR-01"
+        "RP-02"
       ],
       "keywords": [
         "persona",
@@ -143505,8 +144030,7 @@
         "ST-02",
         "ST-03",
         "CM-02",
-        "QA-01",
-        "DC-01"
+        "QA-01"
       ],
       "keywords": [
         "ai_tells",
@@ -143567,8 +144091,7 @@
         "ST-02",
         "ST-03",
         "CM-02",
-        "QA-01",
-        "DC-01"
+        "QA-01"
       ],
       "keywords": [
         "voice",
@@ -143684,8 +144207,9 @@
       "category": "prompt-engineering/system-prompts",
       "description": "Author the role-defining block of a system prompt: identity, scope, expertise boundary, authority, and what this role explicitly is not.",
       "techniques": [
-        "PR-01",
-        "CM-02"
+        "RP-01",
+        "CM-02",
+        "OC-09"
       ],
       "keywords": [
         "system-prompt",
@@ -143707,8 +144231,9 @@
       "category": "prompt-engineering/system-prompts",
       "description": "Design a system prompt that hosts multiple sub-personas behind a deterministic router so the right persona handles the right input.",
       "techniques": [
-        "DC-01",
-        "PR-01"
+        "AG-07",
+        "RP-01",
+        "OC-09"
       ],
       "keywords": [
         "multi-persona",
@@ -143798,8 +144323,10 @@
       "category": "prompt-engineering/system-prompts",
       "description": "Compose a system prompt suited to autonomous agent loops: persistent identity, action policy, observation discipline, and stop conditions.",
       "techniques": [
-        "PR-01",
-        "CM-02"
+        "RP-01",
+        "CM-02",
+        "CM-09",
+        "AG-29"
       ],
       "keywords": [
         "agent",
@@ -143970,8 +144497,8 @@
       "techniques": [
         "ST-03",
         "CM-02",
-        "DC-01",
-        "PR-02"
+        "AG-37",
+        "AG-38"
       ],
       "keywords": [
         "tool_use",
@@ -144027,7 +144554,7 @@
       "techniques": [
         "ST-03",
         "CM-02",
-        "DC-01"
+        "AG-11"
       ],
       "keywords": [
         "tool_use",
@@ -171863,12 +172390,10 @@
         "ST-02",
         "RT-01",
         "RT-03",
-        "IT-01",
-        "IT-02",
+        "MP-03",
         "ST-03",
         "OC-02",
-        "SC-01",
-        "SC-03"
+        "RP-01"
       ],
       "keywords": [
         "android",
@@ -171939,7 +172464,7 @@
         "ST-03",
         "AG-02",
         "AG-12",
-        "SC-01",
+        "RP-01",
         "NE-02",
         "NE-07"
       ],
@@ -171972,11 +172497,9 @@
         "ST-02",
         "RT-02",
         "RT-05",
-        "IT-01",
-        "IT-02",
+        "MP-03",
         "ST-03",
         "QA-01",
-        "SC-03",
         "AG-02",
         "AG-08"
       ],
@@ -173702,7 +174225,7 @@
         "RT-05",
         "DS-06",
         "QA-01",
-        "IT-01"
+        "MP-03"
       ],
       "keywords": [
         "android",
@@ -175166,11 +175689,11 @@
       "category": "mobile-development",
       "description": "Comprehensive pre-submission audit against Apple's App Review Guidelines covering metadata, content policies, design compliance, privacy, in-app purchases, and common rejection reasons.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "RT-05 (Constraint Specification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "QA-01 (Quality Assurance Gates)"
+        "DT-01",
+        "QA-10",
+        "CM-02",
+        "CM-01",
+        "QA-08"
       ],
       "keywords": [
         "ios",
@@ -175219,11 +175742,10 @@
       "category": "mobile-development",
       "description": "Comprehensive ASO guide covering keyword research, title and subtitle optimization, screenshot strategy, app preview videos, product page optimization, and A/B testing for App Store Connect.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "CR-01 (Creative Strategy)",
-        "AN-01 (Analysis Framework)"
+        "DT-01",
+        "QA-10",
+        "CM-01",
+        "RT-02"
       ],
       "keywords": [
         "ios",
@@ -175273,10 +175795,10 @@
       "category": "mobile-development",
       "description": "Modular guide for responding to App Store reviews including addressing negative feedback, highlighting bug fixes, maintaining brand voice, and leveraging reviews for product improvement.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "CR-01 (Creative Strategy)"
+        "DT-01",
+        "QA-10",
+        "CM-01",
+        "NE-07"
       ],
       "keywords": [
         "ios",
@@ -175301,10 +175823,10 @@
       "category": "mobile-development",
       "description": "Modular guide for optimizing iOS app size through App Thinning techniques including slicing, bitcode, on-demand resources, asset catalog optimization, and binary size analysis.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "AN-01 (Analysis Framework)"
+        "DT-01",
+        "QA-10",
+        "CM-01",
+        "RT-02"
       ],
       "keywords": [
         "ios",
@@ -176577,11 +177099,11 @@
       "category": "mobile-development",
       "description": "Comprehensive final checklist for App Store submission covering metadata validation, binary verification, export compliance, age ratings, App Store Connect configuration, and common last-minute issues.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "RT-05 (Constraint Specification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "QA-01 (Quality Assurance Gates)"
+        "DT-01",
+        "QA-10",
+        "CM-02",
+        "CM-01",
+        "QA-08"
       ],
       "keywords": [
         "ios",
@@ -176607,12 +177129,12 @@
       "category": "mobile-development",
       "description": "Comprehensive guide for ensuring iOS app privacy compliance including privacy nutrition labels, App Tracking Transparency, GDPR/CCPA requirements, and PrivacyInfo.xcprivacy manifest configuration.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "RT-05 (Constraint Specification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "QA-01 (Quality Assurance Gates)",
-        "FP-01 (False-Positive Prevention)"
+        "DT-01",
+        "QA-10",
+        "CM-02",
+        "CM-01",
+        "QA-08",
+        "QA-12"
       ],
       "keywords": [
         "ios",
@@ -176638,10 +177160,10 @@
       "category": "mobile-development",
       "description": "Modular guide for generating accurate App Store privacy nutrition labels by auditing first-party data collection and third-party SDK data practices.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "AN-01 (Analysis Framework)"
+        "DT-01",
+        "QA-10",
+        "CM-01",
+        "RT-02"
       ],
       "keywords": [
         "ios",
@@ -176736,11 +177258,11 @@
       "category": "mobile-development",
       "description": "Comprehensive guide for preparing an iOS app for App Store submission including archive configuration, code signing validation, entitlements review, Info.plist audit, and pre-submission checklist.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "RT-05 (Constraint Specification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "QA-01 (Quality Assurance Gates)"
+        "DT-01",
+        "QA-10",
+        "CM-02",
+        "CM-01",
+        "QA-08"
       ],
       "keywords": [
         "ios",
@@ -176791,10 +177313,9 @@
       "category": "mobile-development",
       "description": "Modular guide for designing App Store screenshots and app previews including device frames, localization, feature highlighting, narrative flow, and conversion optimization.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "CR-01 (Creative Strategy)"
+        "DT-01",
+        "QA-10",
+        "CM-01"
       ],
       "keywords": [
         "ios",
@@ -177334,10 +177855,10 @@
       "category": "mobile-development",
       "description": "Modular guide for managing TestFlight beta testing including internal and external testing groups, beta feedback collection, crash monitoring, and staged production rollout strategies.",
       "techniques": [
-        "ST-01 (Structured Task Decomposition)",
-        "RT-02 (Checklist Verification)",
-        "DS-02 (Domain-Specific Terminology)",
-        "WF-01 (Workflow Orchestration)"
+        "DT-01",
+        "QA-10",
+        "CM-01",
+        "ST-02"
       ],
       "keywords": [
         "ios",

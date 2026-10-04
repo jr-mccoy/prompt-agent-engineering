@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - CM-01
   - CM-02
-  - DC-01
+  - ST-42
 difficulty: intermediate
 tags:
   - rfc_2119

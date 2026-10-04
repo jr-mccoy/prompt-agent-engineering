@@ -3,11 +3,11 @@ title: "iOS App Review Guidelines Check"
 category: mobile-development
 description: "Comprehensive pre-submission audit against Apple's App Review Guidelines covering metadata, content policies, design compliance, privacy, in-app purchases, and common rejection reasons."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - RT-05 (Constraint Specification)
-  - DS-02 (Domain-Specific Terminology)
-  - QA-01 (Quality Assurance Gates)
+  - DT-01
+  - QA-10
+  - CM-02
+  - CM-01
+  - QA-08
 difficulty: intermediate
 tags:
   - ios
@@ -361,11 +361,11 @@ After completing this prompt, you will have:
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Five guideline sections audited systematically |
-| RT-02 (Checklist Verification) | Actionable checklists for each guideline section |
-| RT-05 (Constraint Specification) | Apple's specific constraints and requirements |
-| DS-02 (Domain-Specific Terminology) | Apple guideline numbers, review terminology |
-| QA-01 (Quality Assurance Gates) | Each section is a gate before submission |
+| DT-01 (Hierarchical Task Breakdown) | Five guideline sections audited systematically |
+| QA-10 (Test Battery Protocol) | Actionable checklists for each guideline section |
+| CM-02 (Constraint Specification) | Apple's specific constraints and requirements |
+| CM-01 (Explicit Context Framing) | Apple guideline numbers, review terminology |
+| QA-08 (Gate-Based Verification) | Each section is a gate before submission |
 
 ## Related Prompts
 

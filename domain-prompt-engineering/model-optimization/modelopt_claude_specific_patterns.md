@@ -3,8 +3,10 @@ title: "Claude-Specific Prompting Patterns"
 category: prompt-engineering/model-optimization
 description: "Apply Claude-specific patterns (XML tags, prefill, system message conventions, extended thinking) to a prompt for measurable behavior improvements."
 techniques:
-  - PR-01
+  - DS-29
   - ST-03
+  - ST-04
+  - QA-07
 difficulty: intermediate
 tags:
   - claude

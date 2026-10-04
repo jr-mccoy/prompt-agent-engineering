@@ -5,9 +5,7 @@ description: "Reduce a failing prompt + input pair to the smallest reproducer th
 techniques:
   - ST-02
   - QA-01
-  - PR-01
-  - PR-02
-  - DC-01
+  - QA-11
 difficulty: intermediate
 tags:
   - minimal_repro

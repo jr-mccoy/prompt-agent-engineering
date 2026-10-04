@@ -13,11 +13,16 @@ authoring documentation set still matches it:
      techniques/new-techniques/ detail files)
   5. Resource counts (skills / agents / commands / personas) claimed in
      CLAUDE.md match the filesystem
+  6. Every `techniques:` entry in PROMPT_INDEX.json names a catalogued ID
+     (hard). Citing a deprecated (merged) ID, or attaching a parenthesised
+     name that differs from the catalog's, is reported as a warning.
 
 Usage:
     python3 scripts/validate_technique_catalog.py            # run all checks
     python3 scripts/validate_technique_catalog.py --counts   # print computed
                                                              # numbers only
+    python3 scripts/validate_technique_catalog.py --uncited  # list active IDs
+                                                             # no prompt cites
 
 Exit code 0 if all checks pass, 1 otherwise. Run after any edit to the
 master technique index or the authoring docs; counts in satellite docs are
@@ -25,12 +30,14 @@ hand-maintained, so this script is what keeps them honest.
 """
 
 import argparse
+import json
 import os
 import re
 import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX_PATH = "techniques/MASTER_TECHNIQUE_INDEX.md"
+PROMPT_INDEX_PATH = "PROMPT_INDEX.json"
 
 # Docs whose technique-ID references and relative links must all resolve.
 # (The audit report is excluded on purpose: it cites historical phantom IDs.)
@@ -77,6 +84,9 @@ BOLD_DEF = re.compile(
     r"^\*\*((?:[A-Z]{2,4}-\d+)(?:/[A-Z]{2,4}-\d+)*)(?::| \()(.*)$", re.M
 )
 ALIAS = re.compile(r"\(also ([A-Z]{2,4}-\d+)\)")
+# A frontmatter technique entry: a bare ID, optionally followed by "(Name)".
+CITED_TECHNIQUE = re.compile(r"^([A-Z]{2,4}-\d{1,3})(?:\s*\((.*)\))?$")
+MERGED_INTO = re.compile(r"Merged into \*{0,2}([A-Z]{2,4}-\d+)")
 
 
 def read(path):
@@ -192,6 +202,93 @@ def check_id_references(idx, errors):
             errors.append(f"{path}: references undefined technique IDs: {', '.join(missing)}")
 
 
+def _norm(text):
+    return re.sub(r"[^a-z0-9]", "", text.lower())
+
+
+def canonical_names(idx):
+    """ID -> catalog name, taken from its first ### heading definition."""
+    names = {}
+    for tid, entries in idx["heading_ids"].items():
+        name = re.split(r"\*\(|→|\*\*", entries[0])[0].strip(" :*—-")
+        if name:
+            names[tid] = name
+    return names
+
+
+def load_prompt_records(path=PROMPT_INDEX_PATH):
+    with open(os.path.join(REPO_ROOT, path), encoding="utf-8") as f:
+        return json.load(f)["prompts"]
+
+
+def check_prompt_technique_references(idx, records, errors, warnings):
+    """Frontmatter `techniques:` lists must cite catalogued IDs.
+
+    Unknown or malformed entries are hard errors. Deprecated IDs resolve
+    through their merge target, so they only warn. A parenthesised name that
+    is neither contained in nor contains the canonical name also warns: it
+    usually means the author meant a different technique.
+    """
+    known = idx["all_ids"] | idx["aliases"]
+    names = canonical_names(idx)
+    merged_into = {}
+    for tid in idx["deprecated"]:
+        for entry in idx["heading_ids"].get(tid, []) + idx["bold_ids"].get(tid, []):
+            m = MERGED_INTO.search(entry)
+            if m:
+                merged_into[tid] = m.group(1)
+                break
+
+    unknown, deprecated, mislabeled = {}, {}, []
+    for record in records:
+        path = record.get("path", "?")
+        for raw in record.get("techniques") or []:
+            m = CITED_TECHNIQUE.match(str(raw).strip())
+            if not m or m.group(1) not in known:
+                key = m.group(1) if m else str(raw).strip()
+                unknown.setdefault(key, []).append(path)
+                continue
+            tid, cited_name = m.group(1), m.group(2)
+            if tid in idx["deprecated"]:
+                deprecated[tid] = deprecated.get(tid, 0) + 1
+            canon = names.get(tid)
+            if cited_name and canon:
+                a, b = _norm(cited_name), _norm(canon)
+                if a and a not in b and b not in a:
+                    mislabeled.append((path, tid, cited_name, canon))
+
+    for key in sorted(unknown):
+        paths = unknown[key]
+        sample = ", ".join(paths[:3]) + (" …" if len(paths) > 3 else "")
+        errors.append(
+            f"{PROMPT_INDEX_PATH}: technique '{key}' is not in the catalog "
+            f"({len(paths)} citation(s): {sample})"
+        )
+    for tid in sorted(deprecated):
+        target = merged_into.get(tid, "?")
+        warnings.append(
+            f"{tid} is deprecated (merged into {target}) but cited "
+            f"{deprecated[tid]} time(s) in {PROMPT_INDEX_PATH}"
+        )
+    for path, tid, cited_name, canon in sorted(mislabeled):
+        warnings.append(f"{path}: {tid} cited as '{cited_name}', catalog name '{canon}'")
+
+
+def uncited_by_family(idx, records):
+    """Active catalog IDs that no prompt's `techniques:` list cites."""
+    cited = set()
+    for record in records:
+        for raw in record.get("techniques") or []:
+            m = CITED_TECHNIQUE.match(str(raw).strip())
+            if m:
+                cited.add(m.group(1))
+    families = {}
+    for tid in sorted(idx["all_ids"] - idx["deprecated"] - cited,
+                      key=lambda t: (t.split("-")[0], int(re.sub(r"\D", "", t.split("-")[1])))):
+        families.setdefault(tid.split("-")[0], []).append(tid)
+    return families
+
+
 def check_relative_links(errors):
     link = re.compile(r"\]\(([^)#\s]+\.md)\)")
     for path in REFERENCE_DOCS:
@@ -242,6 +339,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--counts", action="store_true",
                         help="print computed counts and exit")
+    parser.add_argument("--uncited", action="store_true",
+                        help="list active technique IDs no prompt cites, by family, and exit")
     args = parser.parse_args()
 
     idx = parse_index()
@@ -258,12 +357,28 @@ def main():
             print(f"{key + ':':<23}{value}")
         return 0
 
-    errors = []
+    records = load_prompt_records()
+    families = uncited_by_family(idx, records)
+    if args.uncited:
+        total = sum(len(ids) for ids in families.values())
+        print(f"{total} active technique IDs are cited by no prompt:")
+        for family, ids in sorted(families.items()):
+            print(f"  {family:<4} {len(ids):>3}  {', '.join(ids)}")
+        return 0
+
+    errors, warnings = [], []
     check_index_header(idx, errors)
     check_satellite_claims(idx, errors)
     check_id_references(idx, errors)
     check_relative_links(errors)
     check_resource_claims(resources, errors)
+    check_prompt_technique_references(idx, records, errors, warnings)
+
+    if warnings:
+        print(f"{len(warnings)} warning(s):")
+        for w in warnings:
+            print(f"  - {w}")
+        print()
 
     if errors:
         print(f"FAIL — {len(errors)} problem(s):\n")
@@ -276,6 +391,9 @@ def main():
     print(f"OK — {idx['active']} active techniques across {idx['categories']} "
           f"categories ({idx['total']} IDs, {len(idx['deprecated'])} deprecated); "
           f"all references, links, and claims consistent.")
+    uncited = sum(len(ids) for ids in families.values())
+    print(f"Note: {uncited} active technique IDs are cited by no prompt "
+          f"(informational; run with --uncited).")
     return 0
 
 

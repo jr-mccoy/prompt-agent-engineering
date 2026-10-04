@@ -3,12 +3,12 @@ title: "iOS Privacy Compliance"
 category: mobile-development
 description: "Comprehensive guide for ensuring iOS app privacy compliance including privacy nutrition labels, App Tracking Transparency, GDPR/CCPA requirements, and PrivacyInfo.xcprivacy manifest configuration."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - RT-05 (Constraint Specification)
-  - DS-02 (Domain-Specific Terminology)
-  - QA-01 (Quality Assurance Gates)
-  - FP-01 (False-Positive Prevention)
+  - DT-01
+  - QA-10
+  - CM-02
+  - CM-01
+  - QA-08
+  - QA-12
 difficulty: advanced
 tags:
   - ios
@@ -368,12 +368,12 @@ After completing this prompt, you will have:
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Six-step privacy compliance workflow |
-| RT-02 (Checklist Verification) | Detailed checklists for each regulatory framework |
-| RT-05 (Constraint Specification) | Apple's exact API reason codes and data type identifiers |
-| DS-02 (Domain-Specific Terminology) | Privacy-specific terms: IDFA, ATT, DPA, DPIA, required reason APIs |
-| QA-01 (Quality Assurance Gates) | Each step validates before proceeding |
-| FP-01 (False-Positive Prevention) | Prevents common misclassifications in privacy labels |
+| DT-01 (Hierarchical Task Breakdown) | Six-step privacy compliance workflow |
+| QA-10 (Test Battery Protocol) | Detailed checklists for each regulatory framework |
+| CM-02 (Constraint Specification) | Apple's exact API reason codes and data type identifiers |
+| CM-01 (Explicit Context Framing) | Privacy-specific terms: IDFA, ATT, DPA, DPIA, required reason APIs |
+| QA-08 (Gate-Based Verification) | Each step validates before proceeding |
+| QA-12 (False Positives Identification) | Prevents common misclassifications in privacy labels |
 
 ## Related Prompts
 

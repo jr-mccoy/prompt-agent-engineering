@@ -3,8 +3,9 @@ title: "Design Negative Few-Shot Examples"
 category: prompt-engineering/few-shot-examples
 description: "Create examples that show what the model should not do, formatted so the model does not imitate them by accident."
 techniques:
-  - PR-03
+  - NE-04
   - CM-02
+  - ST-04
 difficulty: advanced
 tags:
   - negative-examples

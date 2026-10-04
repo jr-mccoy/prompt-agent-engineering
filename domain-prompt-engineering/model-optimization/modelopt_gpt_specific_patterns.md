@@ -3,8 +3,9 @@ title: "GPT-Specific Prompting Patterns"
 category: prompt-engineering/model-optimization
 description: "Apply OpenAI / GPT-family conventions (system messages, JSON mode, structured outputs, function calling) to a prompt with measurable behavior changes."
 techniques:
-  - PR-01
+  - DS-29
   - ST-03
+  - OC-02
 difficulty: intermediate
 tags:
   - gpt

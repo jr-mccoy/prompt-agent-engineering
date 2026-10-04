@@ -6,8 +6,8 @@ techniques:
   - ST-02
   - CM-02
   - QA-01
-  - PR-01
-  - DC-01
+  - QA-07
+  - NE-05
 difficulty: advanced
 tags:
   - compaction

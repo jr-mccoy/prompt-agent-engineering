@@ -3,11 +3,11 @@ title: "iOS Release Preparation"
 category: mobile-development
 description: "Comprehensive guide for preparing an iOS app for App Store submission including archive configuration, code signing validation, entitlements review, Info.plist audit, and pre-submission checklist."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - RT-05 (Constraint Specification)
-  - DS-02 (Domain-Specific Terminology)
-  - QA-01 (Quality Assurance Gates)
+  - DT-01
+  - QA-10
+  - CM-02
+  - CM-01
+  - QA-08
 difficulty: intermediate
 tags:
   - ios
@@ -251,11 +251,11 @@ Let me now run through each checklist step for your specific configuration...
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Breaking release preparation into five discrete validation phases |
-| RT-02 (Checklist Verification) | Actionable checklists for each phase ensuring nothing is missed |
-| RT-05 (Constraint Specification) | Explicit constraints on signing, entitlements, and configuration values |
-| DS-02 (Domain-Specific Terminology) | Apple-specific terms: provisioning profiles, entitlements, codesign, dSYM |
-| QA-01 (Quality Assurance Gates) | Each step serves as a quality gate before proceeding to the next |
+| DT-01 (Hierarchical Task Breakdown) | Breaking release preparation into five discrete validation phases |
+| QA-10 (Test Battery Protocol) | Actionable checklists for each phase ensuring nothing is missed |
+| CM-02 (Constraint Specification) | Explicit constraints on signing, entitlements, and configuration values |
+| CM-01 (Explicit Context Framing) | Apple-specific terms: provisioning profiles, entitlements, codesign, dSYM |
+| QA-08 (Gate-Based Verification) | Each step serves as a quality gate before proceeding to the next |
 
 ## Related Prompts
 

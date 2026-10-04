@@ -8,7 +8,9 @@
 |-------|-------------|
 | [distributed-tracing](distributed-tracing/) | Implement distributed tracing with Jaeger and Tempo to track requests across microservices |
 | [grafana-dashboards](grafana-dashboards/) | Create and manage production Grafana dashboards for real-time visualization of system and application metrics |
+| [opentelemetry-setup](opentelemetry-setup/) | Set up OpenTelemetry tracing, metrics and logging, with exporters, semantic conventions and a setup validation script |
 | [prometheus-configuration](prometheus-configuration/) | Set up Prometheus for comprehensive metric collection, storage, and monitoring of infrastructure and applications |
+| [slo-burn-rate-alerting](slo-burn-rate-alerting/) | Design, generate, unit-test and backtest multi-window, multi-burn-rate alerts for an existing SLO, including low-traffic guards |
 | [slo-implementation](slo-implementation/) | Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) with error budgets |
 
 ## Usage

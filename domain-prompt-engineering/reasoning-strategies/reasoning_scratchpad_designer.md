@@ -4,7 +4,8 @@ category: prompt-engineering/reasoning-strategies
 description: "Add a bounded scratchpad to a prompt so the model can think out loud in a fixed structure before producing the final answer."
 techniques:
   - ST-03
-  - PR-02
+  - RT-01
+  - NE-05
 difficulty: intermediate
 tags:
   - scratchpad

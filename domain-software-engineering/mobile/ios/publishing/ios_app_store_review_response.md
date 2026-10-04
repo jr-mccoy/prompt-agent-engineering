@@ -3,10 +3,10 @@ title: "iOS App Store Review Response"
 category: mobile-development
 description: "Modular guide for responding to App Store reviews including addressing negative feedback, highlighting bug fixes, maintaining brand voice, and leveraging reviews for product improvement."
 techniques:
-  - ST-01 (Structured Task Decomposition)
-  - RT-02 (Checklist Verification)
-  - DS-02 (Domain-Specific Terminology)
-  - CR-01 (Creative Strategy)
+  - DT-01
+  - QA-10
+  - CM-01
+  - NE-07
 difficulty: beginner
 tags:
   - ios
@@ -256,10 +256,10 @@ If you have a moment to update your review, we'd greatly appreciate it. Thank yo
 
 | Technique | Application |
 |-----------|-------------|
-| ST-01 (Structured Task Decomposition) | Four-module review management system |
-| RT-02 (Checklist Verification) | Triage and weekly audit checklists |
-| DS-02 (Domain-Specific Terminology) | App Store Connect review response workflow |
-| CR-01 (Creative Strategy) | Brand voice guide and template crafting |
+| DT-01 (Hierarchical Task Breakdown) | Four-module review management system |
+| QA-10 (Test Battery Protocol) | Triage and weekly audit checklists |
+| CM-01 (Explicit Context Framing) | App Store Connect review response workflow |
+| NE-07 (Emotional Validation First) | Brand voice guide and empathetic, acknowledge-first response templates |
 
 ## Related Prompts
 

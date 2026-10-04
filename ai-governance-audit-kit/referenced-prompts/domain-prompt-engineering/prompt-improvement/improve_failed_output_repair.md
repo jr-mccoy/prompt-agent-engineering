@@ -4,7 +4,8 @@ category: prompt-engineering/prompt-improvement
 description: "Given one specific bad output and the prompt that produced it, diagnose which part of the prompt failed and propose the smallest repair."
 techniques:
   - QA-01
-  - PR-03
+  - RT-09
+  - AG-11
 difficulty: intermediate
 tags:
   - repair

@@ -5,9 +5,9 @@ description: "Build a per-model-family library of empirically reliable anchor ph
 techniques:
   - ST-02
   - QA-01
-  - PR-01
-  - PR-03
-  - DC-01
+  - QA-07
+  - DS-29
+  - DS-02
 difficulty: advanced
 tags:
   - anchor_phrases

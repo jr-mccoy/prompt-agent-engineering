@@ -5,9 +5,8 @@ description: "Run a git-bisect-style binary search over a sequence of prompt rev
 techniques:
   - ST-02
   - QA-01
-  - PR-01
-  - PR-02
-  - DC-01
+  - QA-11
+  - RT-10
 difficulty: intermediate
 tags:
   - bisect

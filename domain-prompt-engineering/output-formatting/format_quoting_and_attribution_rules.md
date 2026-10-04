@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - CM-02
   - QA-01
-  - DC-01
+  - QA-05
 difficulty: intermediate
 tags:
   - quoting

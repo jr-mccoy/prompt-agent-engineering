@@ -3,8 +3,10 @@ title: "Planner / Worker / Judge Three-Prompt Pattern"
 category: prompt-engineering/agent-workflows
 description: "Author three prompts that form a planner-worker-judge cycle, with strict input/output contracts and a maximum revision loop."
 techniques:
-  - DC-01
+  - AG-07
   - QA-01
+  - DS-35
+  - DD-06
 difficulty: advanced
 tags:
   - agents

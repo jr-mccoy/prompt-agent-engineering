@@ -4,7 +4,9 @@ category: prompt-engineering/reasoning-strategies
 description: "Produce an answer plus a separate, parseable explanation block when both are needed by different consumers (UI vs API vs reviewer)."
 techniques:
   - ST-03
-  - PR-02
+  - QA-01
+  - ST-04
+  - RP-02
 difficulty: intermediate
 tags:
   - explanation

@@ -4,7 +4,8 @@ category: prompt-engineering/reasoning-strategies
 description: "Decide and document the thinking-token budget for reasoning models, with rules for adjusting it per input class."
 techniques:
   - CM-01
-  - PR-02
+  - NE-05
+  - QA-07
 difficulty: advanced
 tags:
   - extended-thinking

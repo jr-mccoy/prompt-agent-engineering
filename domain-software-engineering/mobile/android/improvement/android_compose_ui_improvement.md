@@ -7,12 +7,10 @@ techniques:
   - ST-02
   - RT-01
   - RT-03
-  - IT-01
-  - IT-02
+  - MP-03
   - ST-03
   - OC-02
-  - SC-01
-  - SC-03
+  - RP-01
 difficulty: advanced
 tags:
   - android
@@ -575,12 +573,10 @@ Which direction resonates most with your goals?
 - ST-02 (Sequential Instructions): Ordered phases from discovery through implementation
 - RT-01 (Comparative Analysis): Multiple design direction options for user selection
 - RT-03 (Stakeholder Consideration): User pain points and business metrics integration
-- IT-01 (Follow-up Questions): Iterative brainstorming dialog structure
-- IT-02 (Clarification Prompts): Targeted questions to narrow design decisions
+- MP-03 (Task Clarification): Iterative brainstorming dialog and targeted questions to narrow design decisions
 - ST-03 (Structured Output Templates): Comprehensive spec sheet format
 - OC-02 (Progressive Disclosure): Phased information delivery
-- SC-01 (Persona Assignment): AI agent implementation instructions
-- SC-03 (Step-by-Step Methodology): Detailed implementation process
+- RP-01 (Expert Role Assignment): AI agent implementation instructions
 
 ---
 

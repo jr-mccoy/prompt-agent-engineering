@@ -8,7 +8,7 @@ techniques:
   - CM-01
   - RT-02
   - RT-05
-  - CR-01
+  - RT-01
 difficulty: advanced
 tags:
   - cardiology

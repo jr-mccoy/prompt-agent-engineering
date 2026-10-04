@@ -13,7 +13,7 @@ index-integrity cleanup (you don't build a new wing on a cracked foundation).
 - **House-style block** → `PROMPT_QUALITY_STANDARDS.md` (Tier 1+ patterns, with the
   insufficiency-verdict and proportionality-precedence corrections folded in).
 - **Copy-or-Mark + fenced-example + Category-line + verdict-rule guidance** → `authoring/NEW_PROMPT_TEMPLATE.md`.
-- **`/review-prompt` skill** → `domain-agentic-resources/skills/review-prompt/SKILL.md`.
+- **`/review-prompt` skill** → `domain-agentic-resources/skills/llm-application-dev/review-prompt/SKILL.md`.
 
 ## INTEGRATED into the index (2026-07-08)
 The docs in this folder are now **provenance/archive** — the techniques are live in

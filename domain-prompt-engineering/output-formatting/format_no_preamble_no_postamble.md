@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-03
   - CM-02
-  - DC-01
+  - NE-04
 difficulty: beginner
 tags:
   - preamble
