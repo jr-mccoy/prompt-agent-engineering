@@ -3,16 +3,11 @@ title: "Relocation / Move-Away Analysis"
 category: legal/custody
 description: "Analyze a parental relocation (move-away) request or opposition under the controlling state's framework: confirm notice requirements and the burden allocation, apply the state's relocation factors (the child's relationship with each parent, reasons for and against the move, impact on the schedule, feasibility of a revised plan), distinguish primary-custodian presumptions from joint-custody standards, and produce a position memo with a revised long-distance parenting plan and the proof needed."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-01
   - RT-02
-  - RT-05
-  - RP-01
   - CM-02
   - QA-01
-  - QA-12
 difficulty: advanced
 tags:
   - legal
@@ -59,7 +54,7 @@ related_prompts:
 - Distinguish any **presumption** (some states favor a good-faith primary custodian; others apply a neutral best-interests test).
 - Assess **good faith vs. bad faith** of the moving parent and any **legitimate purpose**.
 - Propose a **revised long-distance parenting plan** (extended breaks, travel allocation, virtual contact) that mitigates the impact.
-- Provide **factor-by-factor strength** and **confidence**; frame as a position (QA-12).
+- Provide **factor-by-factor strength** and **confidence**; frame as a position.
 - Use placeholders `[CITE: ...]`, `[NEED FACTOR LIST: ...]`, `[NEED: ...]` for unsupplied authority, factors, or facts.
 
 **Must Not:**

@@ -3,14 +3,9 @@ title: "Deep-Think: Plan / Strategy"
 category: deep-analysis/plan
 description: "A multi-phase, multi-perspective planning system for working through how to get from here to there with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose into milestones & dependencies → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: sequenced plan with risks, checkpoints, and abort conditions."
 techniques:
-  - ST-01
-  - ST-02
-  - ST-04
-  - ST-42
   - RT-02
   - RT-07
   - CM-02
-  - QA-01
   - QA-02
   - QA-04
 difficulty: advanced

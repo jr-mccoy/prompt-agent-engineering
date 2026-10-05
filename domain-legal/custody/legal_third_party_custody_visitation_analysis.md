@@ -6,13 +6,8 @@ techniques:
   - ST-01
   - ST-02
   - ST-03
-  - RT-01
-  - RT-02
-  - RT-05
-  - RP-01
   - CM-02
   - QA-01
-  - QA-12
 difficulty: advanced
 tags:
   - legal
@@ -57,7 +52,7 @@ related_prompts:
 - Apply the state's **substantive standard** — often requiring a showing beyond best interests, such as **harm/detriment to the child** if contact/custody is denied, or **parental unfitness** for third-party custody `[CITE: …]`.
 - For **de facto/psychological parent** claims, apply the state's multi-factor test for that status.
 - Distinguish **visitation** (lesser intrusion) from **custody** (greater intrusion, higher bar) and the differing standards.
-- Provide **standing strength**, **merits strength**, and **overall confidence**; frame as a position (QA-12).
+- Provide **standing strength**, **merits strength**, and **overall confidence**; frame as a position.
 - Confirm **UCCJEA jurisdiction** as for any custody matter.
 - Use placeholders `[CITE: ...]`, `[NEED STANDARD: ...]`, `[NEED: ...]` for unsupplied authority or facts.
 

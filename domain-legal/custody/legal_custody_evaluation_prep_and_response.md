@@ -3,14 +3,11 @@ title: "Custody Evaluation Prep and Response"
 category: legal/custody
 description: "Prepare a client for a court-ordered custody evaluation and critique the evaluator's report: explain the evaluation process and what is assessed, prepare the client for interviews/observation/testing without coaching dishonesty, assemble relevant collateral and records, and analyze the completed report for methodology gaps, bias, unsupported conclusions, and best-interests-factor alignment — producing a preparation guide and a report-critique memo with cross-examination points."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
   - RT-05
   - CM-02
   - QA-01
-  - QA-12
 difficulty: advanced
 tags:
   - legal
@@ -55,7 +52,7 @@ related_prompts:
 - Help assemble **relevant collateral and records** that fairly inform the evaluation.
 - When critiquing the report, assess **methodology** (data sources balanced across parties, testing properly administered/interpreted, collateral contacts adequate), **bias/one-sidedness**, **unsupported conclusions**, and **alignment with the state's best-interests factors** `[NEED FACTOR LIST: …]`.
 - Identify **cross-examination points** and whether a **rebuttal expert** is warranted (cross-reference expert deposition prep).
-- Frame critiques as **methodological challenges**, not attacks on the conclusion's bottom line alone (QA-12).
+- Frame critiques as **methodological challenges**, not attacks on the conclusion's bottom line alone.
 - Use placeholders `[CITE: ...]`, `[NEED FACTOR LIST: ...]`, `[NEED: ...]` for unsupplied authority, factors, or facts.
 
 **Must Not:**

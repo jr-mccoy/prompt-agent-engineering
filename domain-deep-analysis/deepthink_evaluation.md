@@ -3,16 +3,11 @@ title: "Deep-Think: Evaluation"
 category: deep-analysis/evaluation
 description: "A multi-phase, multi-perspective evaluation system for reviewing an existing artifact, proposal, plan, design, document, or output. Drives the model through Frame → Decompose criteria & evidence → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: evaluation report with criteria, weighted findings, evidence gaps, recommendation, confidence, and reviewer caveats."
 techniques:
-  - ST-01
-  - ST-02
-  - ST-04
-  - ST-42
   - RT-02
   - CM-02
   - QA-01
   - QA-02
   - QA-04
-  - QA-09
 difficulty: advanced
 tags:
   - deep-analysis

@@ -3,14 +3,11 @@ title: "Guardian ad Litem / Best-Interest Attorney Report Response"
 category: legal/custody
 description: "Analyze and respond to a guardian ad litem (GAL), best-interest attorney, or attorney-for-the-child report and recommendation: clarify the GAL's role and standard in the jurisdiction, assess the investigation's thoroughness and balance, test recommendations against the state's best-interests factors and the record, identify unsupported or one-sided conclusions, and produce a response memo with objections, areas of agreement, and cross-examination points."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
   - RT-05
   - CM-02
   - QA-01
-  - QA-12
 difficulty: advanced
 tags:
   - legal
@@ -56,7 +53,7 @@ related_prompts:
 - Identify **scope creep** (recommendations beyond the appointment) and any **procedural** issues (ex parte contacts, reliance on inadmissible material).
 - Separate **areas of agreement** from **objections**, and tie objections to specifics.
 - Prepare **cross-examination points** keyed to the gaps; note whether the GAL is subject to cross/deposition in the jurisdiction.
-- Frame challenges as **methodological/record-based**, not as attacks on the GAL personally (QA-12).
+- Frame challenges as **methodological/record-based**, not as attacks on the GAL personally.
 - Use placeholders `[CITE: ...]`, `[NEED FACTOR LIST: ...]`, `[NEED: ...]` for unsupplied authority, factors, or facts.
 
 **Must Not:**

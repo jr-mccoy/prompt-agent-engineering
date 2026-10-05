@@ -3,12 +3,7 @@ title: "Deep-Think (Plain English): Understanding a Hard Problem"
 category: deep-analysis/problem
 description: "A plain-English version of the deep-think problem-analysis system, written for non-technical users. Same five-phase, multi-perspective rigor as the original — Frame, Break Down, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language, worked examples, and friendlier check-ins. Result: an honest diagnosis with the places you could push to learn more or change the situation, plus how confident the answer is."
 techniques:
-  - ST-01
-  - ST-02
-  - ST-04
-  - ST-42
   - RT-02
-  - RT-09
   - CM-02
   - QA-01
   - QA-02

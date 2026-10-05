@@ -3,14 +3,9 @@ title: "Deep-Think (Plain English): Making a Step-by-Step Plan"
 category: deep-analysis/plan
 description: "A plain-English version of the deep-think planning system, written for non-technical users. Same five-phase, multi-perspective rigor as the original — Frame, Break Down, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language, worked examples, and friendlier check-ins. Result: a sequenced plan with named risks, warning signs, and clear stop-the-whole-thing conditions."
 techniques:
-  - ST-01
-  - ST-02
-  - ST-04
-  - ST-42
   - RT-02
   - RT-07
   - CM-02
-  - QA-01
   - QA-02
   - QA-04
 difficulty: beginner

@@ -3,14 +3,9 @@ title: "Deep-Think (Plain English): Designing What to Build or Set Up"
 category: deep-analysis/design
 description: "A plain-English version of the deep-think design system, written for non-technical users. Same five-phase, multi-perspective rigor as the original — Frame, Break Down, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language, worked examples, and friendlier check-ins. Result: a design document with the choices made, the tradeoffs accepted honestly, and the open questions named out loud."
 techniques:
-  - ST-01
-  - ST-02
-  - ST-04
-  - ST-42
   - RT-02
   - RT-07
   - CM-02
-  - QA-01
   - QA-02
   - QA-04
 difficulty: beginner

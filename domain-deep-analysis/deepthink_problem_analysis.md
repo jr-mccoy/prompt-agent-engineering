@@ -3,12 +3,7 @@ title: "Deep-Think: Problem & Question Analysis"
 category: deep-analysis/problem
 description: "A multi-phase, multi-perspective analysis system for working through hard problems or questions with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate to keep the user steering. Terminal artifact: diagnosis + leverage points + confidence calibration."
 techniques:
-  - ST-01
-  - ST-02
-  - ST-04
-  - ST-42
   - RT-02
-  - RT-09
   - CM-02
   - QA-01
   - QA-02
