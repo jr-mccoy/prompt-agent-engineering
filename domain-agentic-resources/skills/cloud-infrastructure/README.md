@@ -7,6 +7,8 @@
 | Skill | Description |
 |-------|-------------|
 | [cost-optimization](cost-optimization/) | Optimize cloud costs through resource rightsizing, tagging strategies, reserved instances, and spending analysis |
+| [firebase-project-scaffolding](firebase-project-scaffolding/) | Scaffold a new Firebase project with production-grade defaults including auth-required security rules, cost budget alerts, App Check configuration, Emulator Suite setup, CI/CD pipeline for rules deployment, and… |
+| [firebase-rules-testing](firebase-rules-testing/) | Automated Firebase security rules testing workflow covering test case generation from rules, emulator-based execution, access control validation for all user roles, common vulnerability checks, and coverage reporting. |
 | [gitops-workflow](gitops-workflow/) | Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes deployments |
 | [helm-chart-scaffolding](helm-chart-scaffolding/) | Design, organize, and manage Helm charts for templating and packaging Kubernetes applications |
 | [hybrid-cloud-networking](hybrid-cloud-networking/) | Configure secure, high-performance connectivity between on-premises infrastructure and cloud platforms |

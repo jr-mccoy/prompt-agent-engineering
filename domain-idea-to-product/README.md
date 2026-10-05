@@ -125,7 +125,7 @@ These artifacts let you start a Claude Code (or Cursor) session, paste the day-1
 
 ## Notes on copies vs. originals
 
-To make this directory self-contained, ~40 existing prompts have been **copied** here from other domains (not moved). The originals remain in their domains. If you find improvements while using these copies, update the original first; this domain's copies should be refreshed periodically to stay in sync.
+To make this directory self-contained, ~52 existing prompts have been **copied** here from other domains (not moved). The originals remain in their domains. If you find improvements while using these copies, update the original first; this domain's copies should be refreshed periodically to stay in sync.
 
 Each copied prompt keeps the frontmatter of its original, so the source domain is
 identifiable from the prompt's own `category` field; `PROMPT_INDEX.json` lists both

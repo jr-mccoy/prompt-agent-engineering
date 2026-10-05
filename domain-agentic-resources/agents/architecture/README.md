@@ -11,6 +11,7 @@
 | [c4-component](c4_component.md) | SONNET | Expert C4 Component-level documentation specialist. Synthesizes C4 Code-level documentation into Component-level architecture, defining component boundaries, interfaces, and relationships. |
 | [c4-container](c4_container.md) | SONNET | Expert C4 Container-level documentation specialist. Synthesizes Component-level documentation into Container-level architecture, mapping components to deployment units and documenting container interfaces as APIs. |
 | [c4-context](c4_context.md) | SONNET | Expert C4 Context-level documentation specialist. Creates high-level system context diagrams, documents personas, user journeys, system features, and external dependencies. |
+| [solo-dev-architect](solo_dev_architect.md) | OPUS | Architecture advisor calibrated for solo developer constraints. |
 
 ## Model Assignments
 

@@ -18,3 +18,7 @@ Prompts for preaching and personal/communal devotion: expository sermon preparat
 | `biblical_topical_sermon_prep.md` | Topical message across multiple texts, anti-proof-texting | P | intermediate |
 | `biblical_evangelistic_message_prep.md` | Text-anchored, non-manipulative gospel presentation | P | intermediate |
 | `biblical_occasional_message_prep.md` | Funeral / wedding / dedication / milestone message | P | intermediate |
+| `biblical_sermon_manuscript_draft.md` | Outline → speakable manuscript with oral phrasing and pace cues; no fabricated illustrations or quotes | P | intermediate |
+| `biblical_sermon_delivery_coaching.md` | Delivery coaching (pacing, notes vs. manuscript, nerves, voice) → personal improvement plan | P | intermediate |
+| `biblical_lectionary_sermon_prep.md` | Sermon from user-supplied lectionary readings woven into one message (**STRONG-GUARD**) | P | intermediate |
+| `biblical_liturgical_calendar_devotional_series.md` | Devotional series following the liturgical seasons, without asserting dates from memory (**STRONG-GUARD**) | L, P | intermediate |

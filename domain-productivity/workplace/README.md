@@ -14,6 +14,7 @@ Prompts for the recurring operational tasks of knowledge-work: meeting prep and 
 | `work_inbox_triage_protocol.md` | Inbox Triage Protocol | When email is out of control — builds a one-time backlog clearing plan and a repeatable daily maintenance protocol |
 | `work_deadline_juggler.md` | Deadline Juggler | When multiple deadlines converge and you need a priority sequence and daily allocation |
 | `work_task_delegation_spec.md` | Task Delegation Spec | Before handing off a task — produces a delegation brief with outcome, authority, resources, and escalation triggers |
+| `work_overcommitment_saying_no.md` | Overcommitment Audit and Saying No | When you keep saying yes — finds the real reason and weekly cost of recent yeses, then builds a saying-no decision rule and decline scripts |
 | `work_1on1_prep.md` | 1:1 Meeting Prep | Before a one-on-one, from either side — surfaces what each person actually needs from the conversation |
 
 ---

@@ -24,6 +24,7 @@ Each prompt is designed to produce output in a single interaction. They pair wit
 | `daily_errand_batching.md` | Daily Errand Batching | Cluster and sequence a list of errands by geography, operating hours, and dependencies to minimize trips and total time. |
 | `daily_context_switch_protocol.md` | Daily Context Switch Protocol | Produce a close protocol for the outgoing life-mode and an open protocol for the incoming one, so mental state carries cleanly across substantially different daily roles. |
 | `daily_energy_task_matching.md` | Daily Energy-Task Matching | Classify tasks by cognitive demand, map the user's energy curve, and resequence the day's schedule to match deep work to high-energy windows and admin to low-energy ones. |
+| `daily_energy_by_task_type.md` | Daily Energy by Task Type | Sort every task type into the energy window it truly needs, expose the most expensive mismatch, and prescribe the single scheduling swap that fixes it. |
 
 ---
 

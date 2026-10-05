@@ -16,6 +16,7 @@ Prompts for leadership-level conversations about whether the organization's curr
 | [ambition_experts_to_builders_roadmap.md](ambition_experts_to_builders_roadmap.md) | Phased 12–18 month roadmap turning domain experts (analysts, ops, legal, finance, clinicians) into first-draft builders without pretending they become engineers. |
 | [ambition_expansion_vs_savings_brief.md](ambition_expansion_vs_savings_brief.md) | Board-ready brief on reinvesting AI productivity gains into expansion vs pocketing them as margin, with the dominant factor named and invalidation conditions listed. |
 | [ambition_insight_to_action_workflow.md](ambition_insight_to_action_workflow.md) | Redesign one specific decision workflow to compress insight-to-action lead time 5–10x via cut / couple / relocate / parallelize moves, with guardrails and a 30-day pilot. |
+| [ambition_founder_bottleneck_week_away_test.md](ambition_founder_bottleneck_week_away_test.md) | Help a founder stop being the operational bottleneck by defining founder-only work, mapping what routes through them, stress-testing each path with the week-away test, and deciding what to automate, delegate, or keep. |
 
 ---
 

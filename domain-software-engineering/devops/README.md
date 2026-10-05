@@ -2,7 +2,7 @@
 
 Prompts for infrastructure, containerization, CI/CD pipelines, and deployment workflows.
 
-**Total Prompts:** 21
+**Total Prompts:** 23
 
 ---
 
@@ -22,7 +22,9 @@ Prompts for infrastructure, containerization, CI/CD pipelines, and deployment wo
 | `devops_opentelemetry_instrumentation.md` | Review/design OpenTelemetry traces/metrics/logs |
 | `devops_monitoring_observability.md` | Monitoring setup review |
 | `devops_workflow_guide.md` | Overall DevOps workflow guide (reference) |
-| `llm_ops_*.md` (10) | LLM operations: model selection, RAG, vector DB, hallucination, fine-tuning, evaluation, etc. |
+| `android_ci_cd_pipeline_design.md` | Design a CI/CD pipeline for a solo Android developer (GitHub Actions, Firebase App Distribution, Play Console) |
+| `monitoring_solo_dev_alerting.md` | Design a sustainable 3-tier alerting system for a single developer |
+| `llm_ops_*.md` (9) | LLM operations: model selection, RAG, vector DB, hallucination, fine-tuning, evaluation, etc. |
 
 ---
 

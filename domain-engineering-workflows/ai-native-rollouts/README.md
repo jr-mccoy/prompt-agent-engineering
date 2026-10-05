@@ -19,6 +19,7 @@ Prompts for the organizational work of rolling out AI tools and agentic workflow
 | 4 | [`airollout_delegate_like_parallel_coworker.md`](airollout_delegate_like_parallel_coworker.md) | Designing a reusable delegation brief template calibrated to a specific task class. |
 | 5 | [`airollout_long_running_project_memory.md`](airollout_long_running_project_memory.md) | Designing persistent project memory with file layout, update protocol, and decay checks — beyond a stub CLAUDE.md. |
 | 6 | [`airollout_bottleneck_migration_plan.md`](airollout_bottleneck_migration_plan.md) | Planning the migration of a load-bearing organizational function to AI — staged, with guardrails, kill switch, and predicted next bottleneck. |
+| 7 | [`airollout_agentic_coding_maturity_assessment.md`](airollout_agentic_coding_maturity_assessment.md) | Assessing a team or org's agentic-coding maturity across task-horizon, role, and oversight axes, scoring readiness against the four agentic-coding priorities, and naming the single highest-leverage next move. |
 
 ## Cross-References
 

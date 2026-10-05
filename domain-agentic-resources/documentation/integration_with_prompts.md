@@ -37,7 +37,7 @@ This repository contains two complementary systems for AI-assisted development:
 - 51 agency agents (role-based AI personas)
 - 87 non-engineering prompts (product, decisioning, research, productivity)
 
-### 2. **Claude Code Resources** (361 resources)
+### 2. **Claude Code Resources** (606 resources)
 - **Persistent agents, skills, commands for ongoing workflows**
 - Claude Code-specific (optimized for Claude models)
 - Progressive disclosure and bundled resources
@@ -45,9 +45,9 @@ This repository contains two complementary systems for AI-assisted development:
 - Model-tiered for cost optimization
 
 **Resources:**
-- 158 agents with model assignments (Opus/Sonnet/Haiku/Inherit)
-- 132 skills with bundled scripts, references, templates
-- 71 commands with multi-agent workflows
+- 147 agents with model assignments (Opus/Sonnet/Haiku/Inherit)
+- 340 skills with bundled scripts, references, templates
+- 119 commands with multi-agent workflows
 
 ---
 
@@ -755,7 +755,7 @@ Claude Code resources enable significant cost savings through model tiering.
 
 ### 1. Start Simple, Evolve Gradually
 
-❌ **Don't:** Install all 361 resources on day one
+❌ **Don't:** Install all 606 resources on day one
 ✅ **Do:** Start with 1 prompt, add 1 agent, then 1 skill
 
 **Progression:**

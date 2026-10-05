@@ -56,3 +56,4 @@ These prompts are designed to compose. Common chains:
 | `identity_authenticity_audit.md` | Map performed-role vs acting-from-self per arena; separate code-switching from costly suppression; close one gap (safety-gated). |
 | `identity_mortality_reflection_memento_mori.md` | Scope a sober remaining horizon; classify deferred items by closing/open/perpetual/foreclosed window; stop deferring one thing. |
 | `identity_meaning_sources_and_legacy_map.md` | Rate meaning on coherence / purpose / significance, map its sources and concentration risk, state a concrete legacy, run one 90-day experiment (midlife or post-achievement; spirituality-neutral). |
+| `identity_engineering_manager_stance.md` | Reorient a developer from writing code to managing AI-generated output — stance, shifted time allocation, new skills, and failure modes of the old identity. |

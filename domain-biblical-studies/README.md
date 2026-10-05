@@ -198,7 +198,7 @@ Every prompt includes:
 | "Introduce the Bible to a curious skeptic / seeker" | `ministry-contexts/biblical_ministry_seeker_intro_to_bible.md` |
 | "Design family / household devotions" | `ministry-contexts/biblical_ministry_family_devotions_designer.md` |
 | "Plan a VBS / camp / retreat session" | `ministry-contexts/biblical_ministry_special_program_session.md` |
-| "Frame a Scripture-rooted care conversation (NOT therapy)" | `ministry-contexts/biblical_ministry_biblical_care_conversation_foundations.md` |
+| "Frame a Scripture-rooted care conversation (NOT therapy)" | `ministry-contexts/biblical_ministry_care_conversation_foundations.md` |
 | "Design a men's or women's Bible study" | `ministry-contexts/biblical_ministry_mens_womens_study_designer.md` |
 | "Design a college / young adult (18-30) study" | `ministry-contexts/biblical_ministry_college_young_adult_study.md` |
 | "Design a seniors' (60+) Bible study" | `ministry-contexts/biblical_ministry_seniors_study_designer.md` |
@@ -206,7 +206,7 @@ Every prompt includes:
 | "Build a multi-quarter curriculum scope-and-sequence" | `church-staff-ministry-ops/biblical_churchstaff_curriculum_scope_sequence.md` |
 | "Evaluate a published curriculum" | `church-staff-ministry-ops/biblical_churchstaff_curriculum_selection_evaluation.md` |
 | "Train Bible-study volunteers" | `church-staff-ministry-ops/biblical_churchstaff_teacher_training_plan.md` |
-| "Coordinate teaching across multiple services/campuses" | `church-staff-ministry-ops/biblical_churchstaff_multi_service_teaching_coordination.md` |
+| "Coordinate teaching across multiple services/campuses" | `church-staff-ministry-ops/biblical_churchstaff_multi_service_coordination.md` |
 | "Map the preaching/teaching year" | `church-staff-ministry-ops/biblical_churchstaff_annual_teaching_calendar.md` |
 | "Design volunteer roles with descriptions and onboarding" | `church-staff-ministry-ops/biblical_churchstaff_volunteer_recruitment_role_design.md` |
 | "Design a small-group launch system" | `church-staff-ministry-ops/biblical_churchstaff_small_group_launch_system.md` |
@@ -232,6 +232,14 @@ Every prompt includes:
 | "Analyze MT vs. LXX divergences (user supplies both texts)" | `original-languages/biblical_language_septuagint_usage.md` |
 | "Analyze an Aramaic section (Daniel, Ezra)" | `original-languages/biblical_language_aramaic_analysis.md` |
 | "Design a frequency-based Greek/Hebrew vocabulary plan" | `original-languages/biblical_language_greek_hebrew_vocabulary_builder.md` |
+| "What aspect does this Greek verb form carry (vs. tense / Aktionsart)?" | `original-languages/biblical_language_greek_verbal_aspect_analysis.md` |
+| "Middle, passive, or 'deponent'? Analyze this Greek voice" | `original-languages/biblical_language_greek_voice_deponency_analysis.md` |
+| "Read the Masorah / Qere-Ketiv on this Hebrew text" | `original-languages/biblical_language_hebrew_masora_and_variants_analysis.md` |
+| "What do the Hebrew cantillation / Greek accents tell me here?" | `original-languages/biblical_language_hebrew_greek_accentuation.md` |
+| "Evaluate a comparative-Semitic / cognate argument" | `original-languages/biblical_language_comparative_semitics_cognate_analysis.md` |
+| "Map this word's sense with semantic domains (Louw-Nida / BDAG)" | `original-languages/biblical_language_semantic_domains_analysis.md` |
+| "Is this an idiom or figure of speech in the original language?" | `original-languages/biblical_language_idiom_and_figures_of_speech_analysis.md` |
+| "What do papyri / inscriptions show about this Koine word's register?" | `original-languages/biblical_language_koine_papyri_register.md` |
 | **Biblical theology method (audience A, P)** | |
 | "What's the difference between biblical and systematic theology?" | `biblical-theology-method/biblical_method_biblical_vs_systematic_theology.md` |
 | "Read this passage in redemptive-historical context" | `biblical-theology-method/biblical_method_redemptive_historical_reading.md` |
@@ -273,7 +281,7 @@ Every prompt includes:
 
 ## Companion domain: `domain-discipleship/`
 
-[`domain-discipleship/`](../domain-discipleship/) (33 prompts) covers the **one-to-one discipling
+[`domain-discipleship/`](../domain-discipleship/) (73 prompts) covers the **one-to-one discipling
 relationship and the program around it** — formation curriculum, a disciple's own growth arc, mentor
 equipping and boundaries, pairing criteria and covenants, session design, and program operations
 including safeguarding. It inherits this domain's tradition-neutral and anti-fabrication conventions

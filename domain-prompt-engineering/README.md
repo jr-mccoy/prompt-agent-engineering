@@ -32,7 +32,7 @@ These are prompts about prompts - tools for the prompt engineering craft itself:
 
 ```
 domain-prompt-engineering/
-├── prompt-creation/          # Greenfield prompt authoring (15)
+├── prompt-creation/          # Greenfield prompt authoring (16)
 ├── prompt-improvement/       # Refine, repair, and modernize existing prompts (12)
 ├── few-shot-examples/        # Author, select, order, audit examples (8)
 ├── reasoning-strategies/     # CoT, scratchpad, ToT, self-consistency, etc. (11)
@@ -46,9 +46,9 @@ domain-prompt-engineering/
 ├── skill-development/        # Durable skill-building across four AI-work disciplines
 ├── delegation/               # Decide whether/how to delegate to AI
 ├── prompt-optimization/      # General techniques, eval-driven iteration loop, failure clustering (3)
-├── evaluation/               # AI correctness, output evaluation, task difficulty (30)
+├── evaluation/               # AI correctness, output evaluation, task difficulty (32)
 │   ├── adversarial/          # Jailbreak corpus, injection probes, persona attacks, bypass audits (6)
-│   ├── regression/           # Golden sets, canary runners, change impact, A/B design (4)
+│   ├── regression/           # Golden sets, canary runners, change impact, A/B design (5)
 │   ├── rubrics/              # Calibrated anchors, pairwise/pointwise, IRA, LLM judge (4)
 │   └── eval-datasets/        # Log mining, synthetic generation, stratification, holdout splits (4)
 ├── structured-output/        # JSON/XML/markdown contracts, repair, streaming, validation (10)
@@ -106,7 +106,7 @@ Assess whether AI outputs are correct and useful:
 | `skill-development/` | 8 | Four-discipline diagnostics, spec writing, eval harness, context doc, constraint architecture |
 | `delegation/` | 4 | Tool-vs-colleague decision, intent spec, verification, role plan |
 | `prompt-optimization/` | 3 | General optimization techniques, eval-driven iteration loop, failure clustering and fix prioritisation |
-| `evaluation/` | 30 | AI correctness, output evaluation, task difficulty, adversarial testing, regression, rubrics, and dataset curation |
+| `evaluation/` | 32 | AI correctness, output evaluation, task difficulty, adversarial testing, regression, rubrics, and dataset curation |
 | `structured-output/` | 10 | JSON Schema producers, repair, XML tags, field ordering, optional/enum policies, table streaming, markdown contracts, dual output, second-pass validator |
 | `tool-use/` | 10 | Description writer, call decision, arg extraction, orchestration DAG, result interpretation, failure recovery, disambiguation, set minimization, naming, dry-run |
 | `rag-prompts/` | 10 | Query rewriting, grounding contracts, citation format, refusals, compression, conflict resolution, freshness, groundedness eval |
@@ -116,7 +116,7 @@ Assess whether AI outputs are correct and useful:
 | `style-and-voice/` | 10 | Voice extraction, voice transfer, register control, brand guideline conversion, writing persona, anti-voice banlist, audience adaptation, length/density control, consistency audit, signature phrase kill list |
 | `output-formatting/` | 8 | Markdown contract, length budget designer, table design, no-preamble/no-postamble, one-sentence answer, streaming-friendly design, email/doc/chat variants, quoting and attribution rules |
 | `utilities/` | 2 | Format conversion, template placeholder audit |
-| **Total** | **~225** | |
+| **Total** | **~217** | |
 
 ---
 
@@ -126,6 +126,17 @@ Assess whether AI outputs are correct and useful:
 | File | Description |
 |------|-------------|
 | `engineering_prompt_improver.md` | Transform basic prompts into production-grade engineering prompts |
+| `improve_brittleness_audit.md` | Identify rules that pass on the happy path but break on edge cases, and propose hardening for each |
+| `improve_conflict_resolver.md` | Find pairs of rules that contradict, classify the conflict type, and propose a resolution that preserves the dominant intent |
+| `improve_constraint_layering.md` | Reorganize a flat list of `Must` / `Must Not` rules into layered architecture (safety, scope, content, format, style) with explicit precedence |
+| `improve_failed_output_repair.md` | Given one bad output and the prompt that produced it, diagnose which part of the prompt failed and propose the smallest repair |
+| `improve_idempotent_rewrite.md` | Rewrite a prompt for clarity and structure while preserving identical behavior on a regression set |
+| `improve_legacy_prompt_modernization.md` | Update a prompt written for older models or conventions to current best practice without changing intent |
+| `improve_minimal_change_pass.md` | Diagnose a specific failure and propose the smallest change that fixes it while passing a regression set |
+| `improve_promotion_to_production.md` | Run a prototype prompt through a fixed promotion checklist that adds validation, monitoring hooks, and refusal handling |
+| `improve_prompt_diff_explainer.md` | Explain a before/after prompt diff: what changed, why each change matters, and what risks each introduces |
+| `improve_redundancy_eliminator.md` | Find duplicated instructions, classify each as harmless / redundant / conflicting, and consolidate without losing intent |
+| `improve_specificity_pass.md` | Replace vague verbs, abstract nouns, and unmeasurable adjectives with operational language |
 
 For broader prompt-refinement work, see also `prompt-optimization/` and `model-behavior/` below.
 
@@ -163,7 +174,16 @@ For broader prompt-refinement work, see also `prompt-optimization/` and `model-b
 ### model-optimization/
 | File | Description |
 |------|-------------|
-| *(empty — model-specific optimization prompts planned)* | |
+| `modelopt_capability_probe_prompt.md` | Structured capability probe for a new model: instruction following, format adherence, tool use, refusal style, reasoning, length control |
+| `modelopt_claude_specific_patterns.md` | Apply Claude-specific patterns (XML tags, prefill, system message conventions, extended thinking) for measurable behavior improvements |
+| `modelopt_cross_model_migration.md` | Translate a prompt between Claude, GPT, Gemini, or open-source families with explicit substitutions for each family's idioms |
+| `modelopt_gpt_specific_patterns.md` | Apply OpenAI / GPT-family conventions (system messages, JSON mode, structured outputs, function calling) with measurable behavior changes |
+| `modelopt_haiku_constraints.md` | Adapt prompts to small/fast models (Haiku, mini, flash) by simplifying instructions, reducing reasoning, and tightening schemas |
+| `modelopt_prompt_portability_test.md` | Score a prompt's behavior consistency across multiple models and identify the patterns causing divergence |
+| `modelopt_quirks_catalog_builder.md` | Catalog observed model-specific quirks, tics, and biases with reproductions and prompt-side mitigations |
+| `modelopt_retired_model_replacement.md` | Plan the replacement of a retired model — compatibility checks, prompt edits, and rollback |
+| `modelopt_thinking_model_patterns.md` | Adapt a prompt for reasoning-mode models by removing CoT scaffolding and tuning thinking budget |
+| `modelopt_within_family_migration.md` | Move a prompt to its successor model version by checking deprecated patterns, new capabilities, and behavior diffs |
 
 ### prompt-optimization/
 | File | Description |
@@ -199,6 +219,7 @@ For broader prompt-refinement work, see also `prompt-optimization/` and `model-b
 | `taskdifficulty_decompose_by_axes.md` | Score a task across 8 orthogonal AI-difficulty axes; returns proceed / proceed-with-changes / not-yet-AI-shaped with canonical interventions |
 | `taskdifficulty_workflow_axis_optimizer.md` | Redesign a multi-step workflow based on which step-axis pairs drag hardest; six canonical redesign moves, budgeted and measured |
 | `taskdifficulty_calibrated_comparison.md` | Build personal taste via blind-scored comparison of spec scores vs. intuition scores; diagnoses spec gaps vs. intuition gaps |
+| `stresstest_config_sweep_harness.md` | Pre-production stress test varying runtime configuration (temperature, model version, context length, concurrency) over a fixed challenge set to surface config-sensitivity, latency cliffs, and token-cost spikes |
 
 **evaluation/adversarial/ — 6 prompts (red-team and robustness)**
 | File | Description |
@@ -210,13 +231,14 @@ For broader prompt-refinement work, see also `prompt-optimization/` and `model-b
 | `adversarial/adv_data_exfil_probe.md` | Extraction probes targeting system prompt and user data via 6 strategies |
 | `adversarial/adv_refusal_bypass_audit.md` | Graded bypass ladder with robust/brittle verdict and threshold grade |
 
-**evaluation/regression/ — 4 prompts (regression infrastructure)**
+**evaluation/regression/ — 5 prompts (regression infrastructure)**
 | File | Description |
 |------|-------------|
 | `regression/regression_golden_set_curator.md` | Versioned golden test set with provenance, freeze protocol, and version control |
 | `regression/regression_change_impact_estimator.md` | Predict affected test cases from a prompt diff before running the full suite |
 | `regression/regression_ab_test_runner_prompt.md` | A/B experiment with hypothesis, sample size, blinding, rubric, and pre-committed decision rule |
 | `regression/regression_canary_set_designer.md` | 5–15-case canary set with <60s run time for CI regression gates |
+| `regression/regression_release_gate_scorecard.md` | Compare a candidate run against a frozen baseline with per-metric deltas, traffic-light status, and blocker thresholds; emit a PR-ready scorecard |
 
 **evaluation/rubrics/ — 4 prompts (rubric design and calibration)**
 | File | Description |

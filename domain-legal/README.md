@@ -139,6 +139,10 @@ Every prompt includes:
 | "We received a subpoena / CID" | `regulatory-compliance/legal_subpoena_or_cid_response_strategy.md` |
 | "Plan an internal investigation" | `regulatory-compliance/legal_internal_investigation_plan.md` |
 | "Should we self-disclose?" | `regulatory-compliance/legal_voluntary_disclosure_decision_memo.md` |
+| "Review our risk factors and MD&A for disclosure exposure" | `regulatory-compliance/legal_securities_disclosure_review.md` |
+| "Which environmental permits are triggered, and how vulnerable are they?" | `regulatory-compliance/legal_environmental_permit_analysis.md` |
+| "Stark / Anti-Kickback review of this healthcare arrangement" | `regulatory-compliance/legal_healthcare_stark_kickback_review.md` |
+| "Review our political activity for campaign-finance / lobbying compliance" | `regulatory-compliance/legal_election_law_compliance_review.md` |
 | "Is a DPIA required, and what does it say?" | `privacy-data/legal_privacy_impact_assessment_dpia.md` |
 | "We had a data breach — notification clocks" | `privacy-data/legal_data_breach_response_runbook.md` |
 | "Review this vendor's DPA / transfers" | `privacy-data/legal_vendor_privacy_assessment.md` |
@@ -210,6 +214,19 @@ Every prompt includes:
 | "Build a phased litigation budget" | `litigation/legal_litigation_budget_phase_estimator.md` |
 | "Design a trial theme / narrative arc" | `litigation/legal_trial_theme_and_narrative_designer.md` |
 | "Design a privilege review protocol (TAR/sampling)" | `discovery/legal_privilege_review_protocol.md` |
+| "Draft a settlement agreement (civil, non-family)" | `litigation/legal_settlement_agreement_drafter.md` |
+| "Draft a mediation position paper (civil, non-family)" | `litigation/legal_mediation_position_paper.md` |
+| "Draft a motion for attorney's fees" | `litigation/legal_attorney_fee_petition.md` |
+| "Draft the post-trial motion set (JMOL / new trial / remittitur)" | `litigation/legal_post_trial_motion_set.md` |
+| "Challenge (or defend) an agency action under the APA" | `litigation/legal_admin_law_apa_review.md` |
+| "Move for or oppose class certification" | `litigation/legal_class_certification_analysis.md` |
+| "Draft a demand for arbitration (AAA / JAMS)" | `litigation/legal_arbitration_demand_drafter.md` |
+| "Draft a litigation hold package" | `discovery/legal_litigation_hold_notice_drafter.md` |
+| "Draft a 30(b)(6) notice with topics" | `discovery/legal_30b6_notice_drafter.md` |
+| "Draft a nonparty subpoena (Rule 45)" | `discovery/legal_subpoena_drafter.md` |
+| "Draft a stipulated confidentiality protective order" | `discovery/legal_protective_order_drafter.md` |
+| "Draft a contested motion for protective order / to quash" | `discovery/legal_motion_for_protective_order_drafter.md` |
+| "Draft a motion to compel" | `discovery/legal_motion_to_compel_drafter.md` |
 | "Full contract redline + issues memo" | `contracts-transactional/legal_contract_review_full_redline.md` |
 | "Targeted redline (indemnity, LoL, IP, warranties, termination)" | `contracts-transactional/legal_contract_clause_redline_targeted.md` |
 | "Contract risk heatmap" | `contracts-transactional/legal_contract_risk_heatmap.md` |
@@ -222,24 +239,33 @@ Every prompt includes:
 | "Turn a term sheet into a first draft" | `contracts-transactional/legal_term_sheet_to_definitive_translator.md` |
 | "Extract a clause library from executed contracts" | `contracts-transactional/legal_clause_library_extractor.md` |
 | "Internal negotiation position paper" | `contracts-transactional/legal_negotiation_position_paper.md` |
+| "Review payment terms and late fees (supplier side)" | `contracts-transactional/legal_payment_terms_and_late_fee_review.md` |
+| "Price the termination provisions (provider side)" | `contracts-transactional/legal_termination_economics_provider_side.md` |
+| "Check obligations flow down to subcontractors" | `contracts-transactional/legal_subcontractor_flow_down_check.md` |
+| "Federal government-contract dispute (REA vs CDA claim)" | `contracts-transactional/legal_government_contract_dispute_memo.md` |
 | "Buy-side DD request list" | `corporate-ma/legal_due_diligence_request_list.md` |
 | "Buy-side DD findings memo" | `corporate-ma/legal_due_diligence_findings_memo.md` |
 | "Draft a disclosure schedule" | `corporate-ma/legal_disclosure_schedule_drafter.md` |
 | "Draft board resolutions for a transaction" | `corporate-ma/legal_board_resolution_drafter.md` |
 | "§409A or QSBS issue-spot in a deal" | `corporate-ma/legal_409a_or_qsbs_issue_spotter.md` |
 | "Post-closing legal integration checklist" | `corporate-ma/legal_post_closing_integration_legal_checklist.md` |
+| "Merger-control / antitrust clearance memo" | `corporate-ma/legal_antitrust_merger_clearance_memo.md` |
+| "Solo developer: LLC vs sole prop vs S-Corp formation" | `corporate-ma/solo_dev_business_formation.md` |
 | "Offer + IP + restrictive-covenant + separation set" | `employment-labor/legal_employment_offer_and_separation_package.md` |
 | "Plan + report a workplace investigation" | `employment-labor/legal_workplace_investigation_plan_and_report.md` |
 | "Pre-termination / PIP risk review" | `employment-labor/legal_pip_and_termination_risk_review.md` |
 | "Wage-hour / contractor classification" | `employment-labor/legal_wage_hour_classification_analysis.md` |
 | "Multi-state non-compete enforceability" | `employment-labor/legal_non_compete_enforceability_analysis.md` |
 | "Draft an EEOC position statement" | `employment-labor/legal_eeoc_position_statement_drafter.md` |
+| "Run the ADA interactive process (employer side)" | `employment-labor/legal_ada_accommodation_dialogue_script.md` |
+| "Solo developer: hiring and managing contractors" | `employment-labor/solo_dev_contractor_management.md` |
 | "Patent landscape scan / whitespace / FTO planning" | `ip/legal_patent_landscape_scan.md` |
 | "Element-by-element patent claim chart" | `ip/legal_patent_claim_chart.md` |
 | "Trademark clearance (knockout + full)" | `ip/legal_trademark_clearance_analysis.md` |
 | "Copyright fair-use four-factor analysis" | `ip/legal_copyright_fair_use_analysis.md` |
 | "DMCA takedown / counter-notice" | `ip/legal_dmca_takedown_and_counter_notice.md` |
 | "OSS license compatibility review" | `ip/legal_open_source_license_compatibility_review.md` |
+| "Screen a nonfiction draft for defamation / publicity risk" | `ip/legal_defamation_publicity_risk_screen.md` |
 | "New matter intake summary" | `client-intake-communications/legal_new_matter_intake_summary.md` |
 | "Draft an engagement letter" | `client-intake-communications/legal_engagement_letter_drafter.md` |
 | "Draft a pre-litigation demand letter" | `client-intake-communications/legal_demand_letter_drafter.md` |

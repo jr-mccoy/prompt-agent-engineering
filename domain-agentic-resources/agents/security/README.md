@@ -6,6 +6,7 @@
 
 | Agent | Model | Description |
 |-------|-------|-------------|
+| [compliance-scanner](compliance_scanner.md) | SONNET | App compliance scanning agent that examines Android codebases for data collection points, validates permission usage justification, checks privacy policy accuracy against actual data practices, and flags Play Store… |
 | [security-auditor](security_auditor.md) | OPUS | Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, OWASP standards, and security automation. |
 | [threat-modeling-expert](threat_modeling_expert.md) | INHERIT | Expert in threat modeling methodologies, security architecture review, and risk assessment. Masters STRIDE, PASTA, attack trees, and security requirement extraction. |
 | [ui-visual-validator](ui_visual_validator.md) | SONNET | Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification. Masters screenshot analysis and visual regression testing. |

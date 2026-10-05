@@ -21,6 +21,14 @@ Do **not** use these for:
 - [`bottleneck_clarity_ambition_surfacer.md`](bottleneck_clarity_ambition_surfacer.md) — When clarity is binding: produce a one-page, falsifiable articulation of what the user actually wants.
 - [`bottleneck_daily_execution_habits.md`](bottleneck_daily_execution_habits.md) — When execution is binding: design 1–3 daily habits producing visible outputs, sized to the user's real calendar.
 - [`bottleneck_distribution_constraint_finder.md`](bottleneck_distribution_constraint_finder.md) — When distribution is binding: diagnose which of five distribution causes (audience absent, wrong artifact shape, channel mismatch, trust missing, no ask) is blocking reach.
+- [`bottleneck_procrastination_systems_diagnostic.md`](bottleneck_procrastination_systems_diagnostic.md) — Classify procrastination on a specific task into one of six system-level causes and prescribe a system fix.
+- [`bottleneck_capture_triage_system_design.md`](bottleneck_capture_triage_system_design.md) — Design a personal capture-and-triage system (inbox shape, triage cadence, decision rules) sized to actual volume and verified by a 30-day survival test.
+- [`bottleneck_open_loop_audit.md`](bottleneck_open_loop_audit.md) — Capture all unfinished tasks, worries, and commitments from your head, sort them into actionable buckets, and identify the next action for each.
+- [`bottleneck_perfectionism_ship_threshold.md`](bottleneck_perfectionism_ship_threshold.md) — For a near-finished artifact, define explicit ship criteria, audit polish behavior against them, and decide ship-now vs. one-more-pass.
+- [`bottleneck_pkm_second_brain_architecture.md`](bottleneck_pkm_second_brain_architecture.md) — Design a personal knowledge system from observed retrieval behavior, not aspirational structure.
+- [`bottleneck_knowledge_base_gap_analysis.md`](bottleneck_knowledge_base_gap_analysis.md) — Analyze a knowledge base against the processes and questions it should cover and produce a prioritized gap plan.
+- [`bottleneck_content_audit.md`](bottleneck_content_audit.md) — Audit a messy workspace, folder, or knowledge base and produce a prioritized keep / update / merge / archive / delete cleanup plan.
+- [`bottleneck_observation_capture_habits.md`](bottleneck_observation_capture_habits.md) — Install a lightweight in-session capture habit so observations from AI-augmented work survive between sessions.
 
 ## Typical Sequence
 

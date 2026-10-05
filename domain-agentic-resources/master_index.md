@@ -55,10 +55,11 @@ security-auditor agent
 
 | Model | Count | Use For | Examples |
 |-------|-------|---------|----------|
-| **Opus 4.5** | 36 (28%) | Critical architecture, security, code review | architect-review, security-auditor, code-reviewer |
-| **Sonnet 4.5** | 43 (34%) | Balanced development tasks | python-pro, backend-architect, frontend-developer |
-| **Haiku 4.5** | 18 (14%) | Fast operations, quick tasks | code-formatter, quick-scaffolder |
-| **Inherit** | 31 (24%) | User choice based on budget | Many utility agents |
+| **Opus 4.5** | 41 (28%) | Critical architecture, security, code review | architect-review, security-auditor, code-reviewer |
+| **Sonnet 4.5** | 49 (33%) | Balanced development tasks | python-pro, backend-architect, frontend-developer |
+| **Haiku 4.5** | 15 (10%) | Fast operations, quick tasks | code-formatter, quick-scaffolder |
+| **Inherit** | 25 (17%) | User choice based on budget | Many utility agents |
+| *No `model:` field* | 17 (12%) | — | — |
 
 ### Quick Agent Lookup
 
@@ -423,7 +424,7 @@ skills/kubernetes/workflows/
 
 **Agents by model assignment (for cost optimization):**
 
-### Opus 4.5 (36 agents - 28%)
+### Opus 4.5 (41 agents - 28%)
 
 **Use for:** Critical architecture, security audits, complex design decisions
 
@@ -435,11 +436,11 @@ skills/kubernetes/workflows/
 - database-architect, data-engineer (Database)
 - python-pro, graphql-architect, fastapi-pro, django-pro, tdd-orchestrator (Backend)
 - blockchain-developer, c-pro, cpp-pro, golang-pro, java-pro, minecraft-bukkit-pro, rust-pro, typescript-pro, unity-developer (Languages)
-- And 7 more...
+- And 19 more...
 
-**Total: 36 agents**
+**Total: 41 agents**
 
-### Sonnet 4.5 (43 agents - 34%)
+### Sonnet 4.5 (49 agents - 33%)
 
 **Use for:** Balanced development tasks, feature implementation
 
@@ -452,11 +453,11 @@ skills/kubernetes/workflows/
 - ios-developer, android-developer, flutter-expert, mobile-developer (Mobile)
 - docs-architect, prompt-engineer, threat-modeling-expert (Specialized)
 - c4-component, c4-container, c4-context, c4-code (Architecture docs)
-- And 20 more...
+- And 25 more...
 
-**Total: 43 agents**
+**Total: 49 agents**
 
-### Haiku 4.5 (18 agents - 14%)
+### Haiku 4.5 (15 agents - 10%)
 
 **Use for:** Fast operations, quick scaffolding, simple validations
 
@@ -466,11 +467,11 @@ skills/kubernetes/workflows/
 - code-formatter, quick-scaffolder, syntax-checker (Quick ops)
 - devops-troubleshooter, incident-responder (Fast response)
 - github-specialist (Quick GitHub ops)
-- And 12 more...
+- And 9 more...
 
-**Total: 18 agents**
+**Total: 15 agents**
 
-### Inherit (31 agents - 24%)
+### Inherit (25 agents - 17%)
 
 **Use for:** User chooses model based on budget/performance needs
 
@@ -481,9 +482,9 @@ skills/kubernetes/workflows/
 - frontend-security-coder, mobile-security-coder, ui-ux-designer (Frontend/Mobile)
 - llm-architect, technical-writer (Specialized)
 - php-pro, ruby-expert, perl-expert, lua-pro, scala-expert, r-expert, elixir-pro (Languages)
-- And 14 more...
+- And 10 more...
 
-**Total: 31 agents**
+**Total: 25 agents**
 
 ---
 
@@ -502,9 +503,9 @@ skills/kubernetes/workflows/
 ### By File Location
 
 **For detailed information:**
-- **Agents:** See `agents/README.md` (128 agents with full descriptions)
-- **Skills:** See `skills/README.md` (132 skills with bundled resources)
-- **Commands:** See `commands/README.md` (71 commands with orchestration details)
+- **Agents:** See `agents/README.md` (147 agents with full descriptions)
+- **Skills:** See `skills/README.md` (340 skills with bundled resources)
+- **Commands:** See `commands/README.md` (119 commands with orchestration details)
 
 ### By Architecture
 

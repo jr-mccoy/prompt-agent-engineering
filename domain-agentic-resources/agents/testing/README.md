@@ -6,6 +6,7 @@
 
 | Agent | Model | Description |
 |-------|-------|-------------|
+| [android-device-farm-operator](android_device_farm_operator.md) | SONNET | Manages emulator fleets and test execution across multiple Android configurations. |
 | [debugger](debugger.md) | SONNET | Debugging specialist for errors, test failures, and unexpected behavior. Masters root cause analysis, stack trace analysis, and minimal fix implementation. |
 | [performance-engineer](performance_engineer.md) | INHERIT | Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, and load testing. |
 | [tdd-orchestrator](tdd_orchestrator.md) | OPUS | Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices. |

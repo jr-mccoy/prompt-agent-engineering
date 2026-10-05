@@ -11,7 +11,7 @@ a program that runs many such pairs at once.
 
 It is **not** a Bible-study domain. Every piece of Scripture engagement, exegesis, doctrine, and
 lesson-level biblical teaching routes to [`domain-biblical-studies/`](../domain-biblical-studies/)
-(129 prompts), which this domain orchestrates rather than duplicates. Where a curriculum needs a
+(136 prompts), which this domain orchestrates rather than duplicates. Where a curriculum needs a
 passage worked, this domain names the passage by address and hands off.
 
 ---

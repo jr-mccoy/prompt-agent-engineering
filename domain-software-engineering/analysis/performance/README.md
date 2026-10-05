@@ -12,6 +12,7 @@
 | [performance_configuration_tuning](performance_configuration_tuning.md) | Recommend optimal configuration settings for infrastructure |
 | [performance_resource_usage_profiling](performance_resource_usage_profiling.md) | Analyze CPU, memory, and I/O resource consumption |
 | [performance_scalability_analysis](performance_scalability_analysis.md) | Assess scalability limitations and suggest improvements |
+| [performance_scheduling_algorithm_optimization](performance_scheduling_algorithm_optimization.md) | Profile and optimize schedule generation performance (constraint evaluation, pruning, caching, solver selection) |
 | [performance_test_scenario_generation](performance_test_scenario_generation.md) | Create realistic performance test scenarios for load testing |
 
 ## Usage

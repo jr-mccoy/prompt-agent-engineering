@@ -116,6 +116,8 @@ This domain provides production-grade prompts for modern frontend development, o
 | Test with screen readers | [frontend_accessibility_screen_reader.md](accessibility/frontend_accessibility_screen_reader.md) |
 | Make published PDFs, documents and slides accessible | [frontend_accessibility_documents_slides.md](accessibility/frontend_accessibility_documents_slides.md) |
 | Set up an accessibility program (policy, VPAT/ACR, procurement, training) | [frontend_accessibility_program_governance.md](accessibility/frontend_accessibility_program_governance.md) |
+| Find a visual design direction (2–3 options + recommendation) | [frontend_visual_design_direction_finder.md](design-direction/frontend_visual_design_direction_finder.md) |
+| Turn a target "vibe" into a look-and-feel spec | [frontend_look_and_feel_hunt.md](design-direction/frontend_look_and_feel_hunt.md) |
 | Audit a design system's components, tokens and adoption | [frontend_design_system_audit.md](design-direction/frontend_design_system_audit.md) |
 | Design token tiers, theming and naming | [frontend_design_token_architecture.md](design-direction/frontend_design_token_architecture.md) |
 | Govern component APIs, versioning, deprecation and contributions | [frontend_design_system_component_governance.md](design-direction/frontend_design_system_component_governance.md) |

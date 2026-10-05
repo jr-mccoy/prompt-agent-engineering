@@ -12,6 +12,10 @@ This category contains prompts for classic computer science algorithms, data str
 | [algorithms_heap_priority_queue.md](algorithms_heap_priority_queue.md) | Heaps and priority queue applications | Intermediate |
 | [algorithms_trie_string_matching.md](algorithms_trie_string_matching.md) | Tries, suffix structures, and string matching | Intermediate-Advanced |
 | [algorithms_advanced_structures.md](algorithms_advanced_structures.md) | Segment trees, Fenwick trees, and advanced structures | Advanced |
+| [algorithms_constraint_satisfaction_scheduling.md](algorithms_constraint_satisfaction_scheduling.md) | Audit and improve constraint-satisfaction-based scheduling engines | Advanced |
+| [algorithms_multi_criteria_schedule_optimization.md](algorithms_multi_criteria_schedule_optimization.md) | Design, verify, and pressure-test scoring functions that rank schedule variants | Advanced |
+| [algorithms_schedule_export_format_audit.md](algorithms_schedule_export_format_audit.md) | Verify correctness of multi-format schedule export (PDF, Excel, iCal, CSV) | Intermediate |
+| [algorithms_temporal_logic_scheduling.md](algorithms_temporal_logic_scheduling.md) | Review calendar and time handling in scheduling systems (DST, week boundaries, holidays, leap years) | Advanced |
 
 ## Use Cases
 

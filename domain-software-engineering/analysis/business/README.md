@@ -2,7 +2,7 @@
 
 Strategic business analysis frameworks and tools for market analysis, competitive positioning, and business model evaluation.
 
-**Total Prompts:** 21
+**Total Prompts:** 20
 
 ---
 

@@ -26,6 +26,15 @@
 | [security_threat_hunting_plan](security_threat_hunting_plan.md) | Plan a bounded, hypothesis-driven hunt: data readiness, queries, stop rule, searched-and-cleared log, hunt → detection |
 | [security_vulnerability_management_program](security_vulnerability_management_program.md) | Run vuln management as a program: inventory/ownership, prioritisation by exploitation evidence + exposure, SLAs, exceptions, ungameable metrics |
 | [security_soc_alert_triage_runbook](security_soc_alert_triage_runbook.md) | Design triage for an engineering-run security on-call: per-detection runbooks, dispositions, clocks, escalation, queue health |
+| [security_ai_misuse_detection_playbook](security_ai_misuse_detection_playbook.md) | Defensive detection playbook for AI-enabled threats and misuse (authorized defenders only) |
+| [security_audit_trail_design](security_audit_trail_design.md) | Audit trail architecture: event design, tamper-evidence, retention, compliance evidence |
+| [security_fedramp_authorization](security_fedramp_authorization.md) | FedRAMP authorization: control implementation, SSP, continuous monitoring, ATO preparation |
+| [security_gdpr_implementation_guide](security_gdpr_implementation_guide.md) | GDPR implementation: data subject requests, DPIAs, consent, data mapping, breach response |
+| [security_hipaa_software_compliance](security_hipaa_software_compliance.md) | Technical HIPAA compliance: PHI handling, ePHI safeguards, audit logging, BAAs |
+| [security_industry_regulatory_compliance](security_industry_regulatory_compliance.md) | Industry regulatory compliance: FINRA, PSD2/SCA, CCPA/CPRA, ADA/Section 508 |
+| [security_iso27001_implementation](security_iso27001_implementation.md) | ISO 27001 ISMS: Annex A controls, risk treatment, SoA, certification preparation |
+| [security_privacy_by_design_architecture](security_privacy_by_design_architecture.md) | Privacy-by-design architecture: data minimization, purpose limitation, pseudonymization |
+| [security_soc2_type2_preparation](security_soc2_type2_preparation.md) | SOC 2 Type II preparation: Trust Service Criteria, evidence collection, auditor readiness |
 
 ## Security Operations Boundaries
 

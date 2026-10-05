@@ -1,7 +1,7 @@
 # Vue Prompts
 
 **Category:** Frontend Development / Vue
-**Prompts:** 3
+**Prompts:** 4
 
 ---
 
@@ -16,6 +16,7 @@ Production-grade prompts for Vue 3 development covering Composition API patterns
 | [frontend_vue_composition_api.md](frontend_vue_composition_api.md) | Analyze Vue 3 codebases for Composition API patterns, composable design, and reactivity issues | Intermediate |
 | [frontend_vue_pinia_state.md](frontend_vue_pinia_state.md) | Audit Pinia store architecture for design patterns and best practices | Intermediate |
 | [frontend_vue_testing.md](frontend_vue_testing.md) | Design comprehensive testing strategies for Vue components and composables | Intermediate |
+| [frontend_vue_advanced_reactivity_performance.md](frontend_vue_advanced_reactivity_performance.md) | Audit Vue 3 reactivity usage — ref vs reactive, shallowRef/markRaw, computed/watch pitfalls, large-list rendering | Advanced |
 
 ## Usage Examples
 

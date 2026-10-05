@@ -2,7 +2,7 @@
 
 Comprehensive prompts for test generation, coverage analysis, and quality assurance across all testing types.
 
-**Total Prompts:** 16
+**Total Prompts:** 19
 
 ---
 
@@ -26,6 +26,9 @@ Comprehensive prompts for test generation, coverage analysis, and quality assura
 | `testing_flaky_test_detection.md` | Identify and fix flaky tests |
 | `testing_refactoring_maintenance.md` | Maintain tests during refactoring |
 | `testing_workflow_guide.md` | Overall testing workflow guide (reference) |
+| `testing_constraint_logic_edge_cases.md` | Edge case tests for constraint-based scheduling (interactions, boundaries, infeasibility) |
+| `testing_nondeterministic_variant_validation.md` | Test systems that produce multiple valid outputs (invariants, seeding, variant distinctness) |
+| `testing_schedule_validity_oracle.md` | Build an independent oracle that verifies schedule correctness without the solver's own evaluation |
 
 ---
 

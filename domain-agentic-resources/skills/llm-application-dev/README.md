@@ -10,8 +10,8 @@ This category provides comprehensive skills for AI/ML engineers building applica
 
 ### Quick Stats
 
-- **Total Skills:** 13
-- **Subcategories:** 4 (Chain Patterns, RAG Patterns, Prompt Management, Evaluation)
+- **Total Skills:** 11
+- **Subcategories:** 5 (Chain Patterns, RAG Patterns, Prompt Management, Evaluation, Utilities)
 - **Skills with Bundled Resources:** 6
 
 ---
@@ -25,7 +25,7 @@ Skills for orchestrating LLM chains, agents, and multi-step workflows.
 | Skill | Description | Resources |
 |-------|-------------|-----------|
 | [langchain-architecture](langchain-architecture/) | Design LLM applications using the LangChain framework with agents, memory, and tool integration | SKILL.md |
-| [langchain-optimization](langchain-optimization/) | Optimize LangChain applications for performance, cost, and reliability with debugging and profiling tools | 2 scripts, 3 refs, 1 asset |
+| [langchain-optimization](langchain-optimization/) | Optimize LangChain applications for performance, cost, and reliability with debugging and profiling tools | 2 scripts, 4 refs, 1 asset |
 
 **When to use:** Building conversational agents, multi-step reasoning systems, or applications requiring tool use and memory management. Use `langchain-optimization` when you need to debug slow chains, reduce costs, or profile memory usage.
 
@@ -45,12 +45,9 @@ Skills for Retrieval-Augmented Generation, embeddings, and semantic search.
 
 | Skill | Description | Resources |
 |-------|-------------|-----------|
-| rag-implementation | Build RAG systems with vector databases and semantic search | SKILL.md |
-| rag-pipeline-patterns | Advanced RAG optimization with chunking, retrieval tuning, and evaluation metrics (MRR, NDCG, recall@k) | 2 scripts, 4 refs, 1 asset |
 | [embedding-strategies](embedding-strategies/) | Select and optimize embedding models for semantic search | SKILL.md |
-| hybrid-search-implementation | Combine vector and keyword search for improved retrieval | SKILL.md |
-| similarity-search-patterns | Implement efficient similarity search with vector databases | SKILL.md |
-| vector-index-tuning | Optimize vector index performance (latency, recall, memory) | SKILL.md |
+| [rag-architecture](rag-architecture/) | Design and optimize Retrieval-Augmented Generation (RAG) systems for production LLM applications. | 1 ref |
+| [vector-search-optimization](vector-search-optimization/) | Implement and optimize vector database search for production systems. | SKILL.md |
 
 **When to use:** Building knowledge-grounded applications, document Q&A systems, or any application requiring retrieval of relevant context. Use `rag-pipeline-patterns` for advanced optimization and evaluation.
 

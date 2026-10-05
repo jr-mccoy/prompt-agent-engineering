@@ -1,7 +1,7 @@
 # Angular Prompts
 
 **Category:** Frontend Development / Angular
-**Prompts:** 3
+**Prompts:** 4
 
 ---
 
@@ -16,6 +16,7 @@ Production-grade prompts for Angular development covering architecture, reactive
 | [frontend_angular_architecture.md](frontend_angular_architecture.md) | Analyze Angular codebases for architecture patterns, standalone components, DI design, and module organization | Intermediate |
 | [frontend_angular_reactive_patterns.md](frontend_angular_reactive_patterns.md) | Evaluate RxJS usage, Signals adoption, state management, and subscription management | Intermediate |
 | [frontend_angular_testing.md](frontend_angular_testing.md) | Review testing patterns, TestBed configuration, and test suite performance | Intermediate |
+| [frontend_angular_signals_advanced.md](frontend_angular_signals_advanced.md) | Audit advanced signals usage — computed/effect correctness, RxJS interop, zoneless change detection | Advanced |
 
 ## Usage Examples
 

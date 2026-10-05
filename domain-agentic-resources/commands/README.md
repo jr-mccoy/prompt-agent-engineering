@@ -1580,8 +1580,8 @@ claude-code-resources/commands/
 
 ### Related Resources
 
-- **[Agents Index](../agents/README.md)** - 158 specialized agents
-- **[Skills Index](../skills/README.md)** - 132 knowledge packages
+- **[Agents Index](../agents/README.md)** - 147 specialized agents
+- **[Skills Index](../skills/README.md)** - 340 knowledge packages
 - **[Integration Guide](../documentation/integration_with_prompts.md)** - How commands work with prompts
 
 ---

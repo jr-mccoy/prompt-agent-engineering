@@ -55,3 +55,4 @@ A monthly review without 3+ weekly reviews to summarize will refuse. A quarterly
 | `reviews_time_audit_evidence_based.md` | Reconcile last week's stated plan with evidence (calendar, commits, messages) — what time actually went where, and ≤ 3 plan updates. |
 | `reviews_weekly_systems_review.md` | Score capture / calendar / blocks / backlog G/Y/R; detect drift; ship one repair next week. |
 | `reviews_monthly_quarterly_cadence.md` | Two-mode: monthly tuning over 4 weekly reviews; quarterly structural keep/tune/overhaul/remove + commitment audit with inversion question. |
+| `reviews_solo_dev_weekly_operating_rhythm.md` | Design a sustainable weekly operating rhythm for a solo developer — time allocation across development, support, marketing, ops, and learning, with day theming and batching. |

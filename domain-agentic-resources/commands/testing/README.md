@@ -6,6 +6,7 @@
 
 | Command | Syntax | Description |
 |---------|--------|-------------|
+| [android_test_matrix.md](./android_test_matrix.md) | `/android-test-matrix` | Configures and executes a test matrix across multiple Android API levels and screen configurations. |
 | [tdd_cycle.md](./tdd_cycle.md) | `/tdd-cycle` | Execute comprehensive TDD workflow with strict red-green-refactor discipline |
 | [tdd_green.md](./tdd_green.md) | `/tdd-green` | Implement minimal code to make failing tests pass in TDD green phase |
 | [tdd_red.md](./tdd_red.md) | `/tdd-red` | Generate comprehensive failing tests following TDD red phase principles |

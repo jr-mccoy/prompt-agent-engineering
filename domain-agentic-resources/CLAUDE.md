@@ -9,9 +9,9 @@
 This directory contains **Claude Code-specific resources** that complement the base prompting library:
 
 **Total Claude Code Resources:**
-- **128 Agents** - Specialized AI personas with model assignments (Opus/Sonnet/Haiku)
-- **303 Skills** - Modular knowledge packages with progressive disclosure
-- **71 Commands** - Multi-agent orchestration workflows
+- **147 Agents** - Specialized AI personas with model assignments (Opus/Sonnet/Haiku)
+- **340 Skills** - Modular knowledge packages with progressive disclosure
+- **119 Commands** - Multi-agent orchestration workflows
 
 **Key Difference from Base Prompts:**
 - **Base Prompts:** One-time, copy-paste, model-agnostic
@@ -319,34 +319,37 @@ skills/{domain}/
 ```
 domain-agentic-resources/
 ├── CLAUDE.md (this file - navigation guide)
-├── MASTER_INDEX.md (to be created - searchable index)
+├── master_index.md (searchable index)
 ├── README.md (overview and stats)
 │
-├── agents/ (128 agents across 16 categories)
+├── agents/ (147 agents across 23 categories)
 │   ├── README.md (comprehensive index)
-│   ├── architecture/ (7 agents)
-│   ├── backend/ (10 agents)
-│   ├── cloud-infrastructure/ (6 agents)
-│   ├── languages/ (23 agents)
-│   └── ... (12 more categories)
+│   ├── architecture/ (6 agents)
+│   ├── backend/ (8 agents)
+│   ├── cloud-infrastructure/ (9 agents)
+│   ├── languages/ (21 agents)
+│   └── ... (19 more categories)
 │
-├── skills/ (303 skills across 28 categories)
+├── skills/ (340 skills across 32 categories)
 │   ├── README.md (comprehensive index)
-│   ├── backend-development/ (10 skills)
-│   ├── cloud-infrastructure/ (12 skills)
-│   ├── developer-tools/ (18 skills)
-│   └── ... (17 more categories)
+│   ├── backend-development/ (13 skills)
+│   ├── cloud-infrastructure/ (14 skills)
+│   ├── developer-tools/ (36 skills)
+│   └── ... (29 more categories)
 │
-├── commands/ (71 commands across 15 categories)
+├── commands/ (119 commands across 24 categories)
 │   ├── README.md (comprehensive index)
-│   ├── orchestration/ (7 commands)
-│   ├── security/ (5 commands)
-│   ├── testing/ (5 commands)
-│   └── ... (12 more categories)
+│   ├── orchestration/ (9 commands)
+│   ├── security/ (6 commands)
+│   ├── testing/ (6 commands)
+│   └── ... (21 more categories)
+│
+├── personas/ (57 personas across 9 categories)
+│   └── README.md (pipeline identities and orchestration)
 │
 └── documentation/ (analysis and integration guides)
-    ├── INTEGRATION_WITH_PROMPTS.md
-    ├── PROMPT_RESOURCE_MAPPING.md
+    ├── integration_with_prompts.md
+    ├── resource_metadata_spec.md
     └── ... (technique analyses)
 ```
 
@@ -554,7 +557,7 @@ Step 5: Full deployment (command - if exists)
 ### Navigation & Discovery
 | File | Purpose |
 |------|---------|
-| `MASTER_INDEX.md` | (To be created) Single-file searchable index of all 361 resources |
+| `master_index.md` | Single-file searchable index of all 606 agents, skills and commands |
 | `agents/README.md` | ✅ Comprehensive agent index with model assignments |
 | `skills/README.md` | ✅ Comprehensive skill index with bundled resources |
 | `commands/README.md` | ✅ Comprehensive command index with orchestration patterns |

@@ -10,7 +10,7 @@ This directory contains **agents**, **skills**, and **commands** for Claude Code
 
 | Directory | Purpose | Contains |
 |-----------|---------|----------|
-| **`domain-agentic-resources/`** (this) | 📚 **Implementation Library** | 132 skills, 128 agents, 71 commands ready to use |
+| **`domain-agentic-resources/`** (this) | 📚 **Implementation Library** | 340 skills, 147 agents, 119 commands, 57 personas ready to use |
 | **`authoring/skill-patterns/`** | 📐 **Skill Authoring System** | Design patterns, templates, quality rubrics for creating skills |
 
 ### Quick Decision Tree
@@ -46,10 +46,10 @@ This separation keeps authoring documentation focused while keeping implementati
 | Resource | Purpose | Start Here |
 |----------|---------|------------|
 | **[CLAUDE.md](CLAUDE.md)** | 📘 Complete navigation guide | First-time users |
-| **[MASTER_INDEX.md](master_index.md)** | 🔍 Searchable index of all 361 resources | Finding specific resources |
-| **[agents/README.md](agents/README.md)** | 🤖 128 agents with model assignments | Browse agents |
-| **[skills/README.md](skills/README.md)** | 🎓 132 skills with bundled resources | Browse skills |
-| **[commands/README.md](commands/README.md)** | ⚙️ 71 commands with orchestration | Browse commands |
+| **[MASTER_INDEX.md](master_index.md)** | 🔍 Searchable index of all 606 agents, skills and commands | Finding specific resources |
+| **[agents/README.md](agents/README.md)** | 🤖 147 agents with model assignments | Browse agents |
+| **[skills/README.md](skills/README.md)** | 🎓 340 skills with bundled resources | Browse skills |
+| **[commands/README.md](commands/README.md)** | ⚙️ 119 commands with orchestration | Browse commands |
 | **AGENT_QUICK_START.md** | 🛠️ Create new agents (5-step process) | Creating agents |
 | **COMMAND_QUICK_START.md** | 🛠️ Create new commands (5-step process) | Creating commands |
 
@@ -106,67 +106,94 @@ domain-agentic-resources/
 ├── README.md (this file)
 ├── agents/
 │   ├── README.md (agent index and guide)
-│   ├── architecture/ (9 agents)
-│   ├── backend/ (3 agents)
-│   ├── cloud-infrastructure/ (2 agents)
-│   ├── code-quality/ (3 agents)
-│   ├── database/ (3 agents)
+│   ├── architecture/ (6 agents)
+│   ├── backend/ (8 agents)
+│   ├── business-operations/ (11 agents)
+│   ├── cloud-infrastructure/ (9 agents)
+│   ├── code-quality/ (4 agents)
+│   ├── database/ (4 agents)
 │   ├── deployment/ (3 agents)
 │   ├── devops/ (6 agents)
-│   ├── documentation/ (4 agents)
-│   ├── frontend-mobile/ (5 agents)
-│   ├── languages/ (15 agents)
-│   ├── ml-ai/ (4 agents)
-│   ├── orchestration/ (5 agents)
-│   ├── security/ (5 agents)
-│   ├── seo-marketing/ (4 agents)
-│   ├── testing/ (2 agents)
-│   └── business-operations/ (6 agents)
+│   ├── documentation/ (5 agents)
+│   ├── frontend-mobile/ (22 agents)
+│   ├── languages/ (21 agents)
+│   ├── ml-ai/ (6 agents)
+│   ├── non-coding/ (12 agents)
+│   ├── orchestration/ (4 agents)
+│   ├── security/ (4 agents)
+│   ├── seo-marketing/ (12 agents)
+│   ├── testing/ (5 agents)
+│   └── web-development/ (5 agents)
 ├── skills/
 │   ├── README.md (skill index and guide)
-│   ├── accessibility/ (2 skills)
-│   ├── backend-development/ (3 skills)
-│   ├── blockchain-web3/ (4 skills)
+│   ├── accessibility/ (4 skills)
+│   ├── backend-development/ (13 skills)
+│   ├── blockchain-web3/ (16 skills)
 │   ├── cicd-automation/ (4 skills)
-│   ├── cloud-infrastructure/ (4 skills)
+│   ├── cloud-infrastructure/ (14 skills)
 │   ├── content-creation/ (5 skills)
-│   ├── data-engineering/ (3 skills)
-│   ├── developer-tools/ (8 skills)
-│   ├── devops/ (3 skills)
+│   ├── data-engineering/ (10 skills)
+│   ├── developer-tools/ (36 skills)
+│   ├── devops/ (5 skills)
 │   ├── document-processing/ (7 skills)
-│   ├── framework-migration/ (2 skills)
-│   ├── infrastructure-as-code/ (3 skills)
-│   ├── languages/ (15 skills)
-│   ├── llm-application-dev/ (4 skills)
-│   ├── mobile-development/ (2 skills)
-│   ├── observability/ (4 skills)
-│   ├── payments/ (2 skills)
-│   ├── security/ (4 skills)
-│   ├── testing-qa/ (5 skills)
-│   └── web-development/ (4 skills)
+│   ├── financial-records/ (4 skills)
+│   ├── framework-migration/ (4 skills)
+│   ├── game-development/ (4 skills)
+│   ├── languages/ (18 skills)
+│   ├── llm-application-dev/ (11 skills)
+│   ├── marketing/ (41 skills)
+│   ├── ml-ai/ (4 skills)
+│   ├── mobile-development/ (36 skills)
+│   ├── non-coding/ (26 skills)
+│   ├── observability/ (6 skills)
+│   ├── other/ (2 skills)
+│   ├── payments/ (4 skills)
+│   ├── security/ (36 skills)
+│   ├── seo-marketing/ (4 skills)
+│   ├── testing-qa/ (18 skills)
+│   └── web-development/ (8 skills)
 ├── commands/
 │   ├── README.md (command index and guide)
-│   ├── accessibility/ (1 command)
+│   ├── accessibility/ (2 commands)
 │   ├── architecture/ (2 commands)
-│   ├── code-quality/ (2 commands)
-│   ├── database/ (1 command)
-│   ├── deployment/ (3 commands)
-│   ├── devops/ (5 commands)
-│   ├── documentation/ (1 command)
-│   ├── framework-migration/ (1 command)
+│   ├── code-quality/ (5 commands)
+│   ├── data-analysis/ (3 commands)
+│   ├── database/ (2 commands)
+│   ├── deployment/ (2 commands)
+│   ├── devops/ (8 commands)
+│   ├── documentation/ (3 commands)
+│   ├── framework-migration/ (3 commands)
 │   ├── git-workflows/ (3 commands)
-│   ├── orchestration/ (3 commands)
-│   ├── performance/ (2 commands)
-│   ├── security/ (4 commands)
-│   ├── testing/ (2 commands)
-│   └── troubleshooting/ (3 commands)
+│   ├── mobile-development/ (12 commands)
+│   ├── multi-agent/ (8 commands)
+│   ├── non-coding/ (19 commands)
+│   ├── orchestration/ (9 commands)
+│   ├── other/ (18 commands)
+│   ├── performance/ (3 commands)
+│   ├── security/ (6 commands)
+│   ├── testing/ (6 commands)
+│   └── troubleshooting/ (5 commands)
+├── personas/
+│   ├── README.md (persona index and pipeline guide)
+│   ├── design/ (7 personas)
+│   ├── engineering/ (7 personas)
+│   ├── marketing/ (8 personas)
+│   ├── product/ (5 personas)
+│   ├── project-management/ (5 personas)
+│   ├── spatial-computing/ (6 personas)
+│   ├── specialized/ (6 personas)
+│   ├── support/ (6 personas)
+│   └── testing/ (7 personas)
 └── documentation/
-    ├── AGENT_GUIDE.md (how to use agents)
-    ├── SKILL_GUIDE.md (how to use skills)
-    ├── COMMAND_GUIDE.md (how to use commands)
-    ├── INTEGRATION_WITH_PROMPTS.md (how these relate to existing prompts)
-    ├── TECHNIQUE_ANALYSIS.md (prompting techniques found in agents/skills)
-    └── FUTURE_PROCESSING_INSTRUCTIONS.md (instructions for analyzing and indexing)
+    ├── TECHNIQUE_USAGE_MATRIX.csv
+    ├── integration_with_prompts.md
+    ├── novel_techniques_candidates.md
+    ├── novel_techniques_comprehensive_candidates.md
+    ├── policies/
+    ├── resource_metadata_spec.md
+    ├── technique-analyses/
+    ├── technique_analysis_template.md
+    └── templates/
 ```
 
 ## What Are Agents, Skills, and Commands?
