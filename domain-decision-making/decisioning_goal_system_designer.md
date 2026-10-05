@@ -3,14 +3,11 @@ title: "Goal System Designer"
 category: decision-making
 description: "Design a coherent goal system for a team or org: top-level objective, key results that gate it, cascading sub-goals owned by named layers, review cadence, and the rule for what to drop. Output is a single-page system that can run for a quarter or longer without re-litigation, with explicit failure modes and a cascade-integrity check."
 techniques:
-  - ST-01
   - ST-02
-  - RT-02
   - DS-01
   - DS-02
   - DS-06
   - CM-02
-  - QA-01
 difficulty: advanced
 tags:
   - decision-making

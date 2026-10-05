@@ -3,14 +3,11 @@ title: "Unit Economics Designer (LTV / CAC / Payback / Cohort Retention)"
 category: idea-to-product/market-research
 description: "Build a unit-economics model for a software/platform business by selecting the right formulas for the business model (SaaS, marketplace, transactional, ads, hybrid), surfacing the inputs that must be estimated, computing LTV/CAC/payback/gross margin/cohort retention, and producing a sensitivity-band worksheet that flags which assumptions are load-bearing."
 techniques:
-  - ST-01
   - ST-02
   - CM-02
   - DS-01  # Framework Application
-  - DS-02  # Decomposition
-  - RT-02  # Multi-Dimensional Analysis
+  - DS-02  # Metric Specification
   - QA-01
-  - QA-02
 difficulty: intermediate
 tags:
   - unit-economics

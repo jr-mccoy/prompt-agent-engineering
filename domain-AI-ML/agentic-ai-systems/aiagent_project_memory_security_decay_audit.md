@@ -3,14 +3,11 @@ title: "Project Memory Security & Decay Audit"
 category: AI-ML/agentic-ai-systems
 description: "Audit portable project continuity memory for stale, disputed, poisoned, bloated, unsafe, private, or secret-leaking records before future agents rely on it."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
   - CM-02
-  - RT-02
   - QA-01
   - QA-12
-  - AG-44
 difficulty: advanced
 tags:
   - project-memory
@@ -156,14 +153,11 @@ Produce a markdown audit report:
 ```
 
 **Techniques Used:**
-- **ST-01 (Clear Objective Statement):** defines the audit target.
 - **ST-02 (Structured Sequential Instructions):** inventory → validate → audit → prioritize → remediate.
 - **ST-03 (Output Format Specification):** forces a concrete audit report and patch plan.
 - **CM-02 (Constraint Specification):** prevents trusting repo memory blindly or treating generated artifacts as canonical.
-- **RT-02 (Multi-Dimensional Analysis):** weighs staleness, security, privacy, evidence, adapter risk, and user friction.
 - **QA-01 (Self-Verification):** verifies each audit dimension.
 - **QA-12 (False Positives Identification):** catches safe-looking but unsafe memory and config.
-- **AG-44 (Agent Supply-Chain Integrity):** treats memory and adapters as part of the agent's context/tool supply chain.
 
 **Related Prompts:**
 - `aiagent_memory_poisoning_defense.md` — deeper controls for poisoning, integrity, rollback, and quarantine.

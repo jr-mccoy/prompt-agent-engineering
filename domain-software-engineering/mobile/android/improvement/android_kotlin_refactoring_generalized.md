@@ -3,12 +3,10 @@ title: "Android/Kotlin Generalized Refactoring Agent"
 category: mobile-development
 description: "Auto-detects stack, identifies and scores all refactoring candidates across the codebase, presents a ranked triage report, asks the user which file(s) to refactor, then executes a safe plan with approval gates."
 techniques:
-  - ST-01  # Clear Objective Statement
-  - ST-02  # Structured Sequential Instructions
-  - RT-02  # Multi-Dimensional Analysis
+  - RT-02  # Multi-Dimensional Analysis Framework
   - RT-05  # Evidence-Based Reasoning
-  - DS-06  # Prioritization Guidance
-  - QA-01  # Chain-of-Verification
+  - DS-06  # Prioritization and Severity Guidance
+  - QA-01  # Self-Verification
   - MP-03  # Task Clarification (user selection gates)
 difficulty: intermediate
 tags:

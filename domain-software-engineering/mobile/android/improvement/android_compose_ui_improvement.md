@@ -5,12 +5,9 @@ description: "Facilitates interactive design consultation to transform user feed
 techniques:
   - ST-01
   - ST-02
-  - RT-01
   - RT-03
   - MP-03
   - ST-03
-  - OC-02
-  - RP-01
 difficulty: advanced
 tags:
   - android
@@ -569,14 +566,11 @@ Which direction resonates most with your goals?
 
 ## Techniques Used
 
-- ST-01 (Clear Objective): Defined multi-phase process with clear deliverables
-- ST-02 (Sequential Instructions): Ordered phases from discovery through implementation
-- RT-01 (Comparative Analysis): Multiple design direction options for user selection
-- RT-03 (Stakeholder Consideration): User pain points and business metrics integration
+- ST-01 (Clear Objective Statement): Defined multi-phase process with clear deliverables
+- ST-02 (Structured Sequential Instructions): Ordered phases from discovery through implementation
+- RT-03 (Tree of Thoughts): Multiple design direction options for user selection
 - MP-03 (Task Clarification): Iterative brainstorming dialog and targeted questions to narrow design decisions
-- ST-03 (Structured Output Templates): Comprehensive spec sheet format
-- OC-02 (Progressive Disclosure): Phased information delivery
-- RP-01 (Expert Role Assignment): AI agent implementation instructions
+- ST-03 (Output Format Specification): Comprehensive spec sheet format
 
 ---
 

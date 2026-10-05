@@ -3,12 +3,9 @@ title: "Competitive Intelligence Scanner (Decision-Feeding)"
 category: business-strategy/research
 description: "Run a structured scan of a competitive landscape that feeds a single specified decision rather than producing a research dump. Output: a named-competitor inventory, claimed differentiation per competitor, observable gaps you can exploit, signals to monitor, and a one-paragraph 'what this changes' for the named decision."
 techniques:
-  - ST-01
   - ST-02
   - RT-02
   - CM-02
-  - DS-02
-  - DS-06
   - QA-01
   - QA-02
 difficulty: intermediate

@@ -5,7 +5,6 @@ description: "Profile and reduce Gradle build times for an Android project — c
 techniques:
   - ST-01
   - ST-02
-  - RT-02
   - RT-05
   - DS-06
   - QA-01

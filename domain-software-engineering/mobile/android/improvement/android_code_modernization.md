@@ -4,13 +4,10 @@ category: mobile-development
 description: "Systematically modernizes an Android codebase to current best practices, migrating deprecated APIs and adopting modern Kotlin and Jetpack conventions"
 techniques:
   - ST-01
-  - ST-02
-  - RT-04
   - RT-05
   - DS-06
   - ST-03
   - NE-02
-  - NE-07
 difficulty: advanced
 tags:
   - android
@@ -677,14 +674,11 @@ After approval, make changes systematically:
 
 ## Techniques Used
 
-- **ST-01** (Clear Objective): Focused modernization objective
-- **ST-02** (Sequential Instructions): Phased discovery → plan → implement
-- **RT-04** (Best Practice Review): Modern Android/Kotlin standards
+- **ST-01** (Clear Objective Statement): Focused modernization objective
 - **RT-05** (Evidence-Based Reasoning): Specific code locations
-- **DS-06** (Prioritization Guidance): Effort/impact categorization
-- **ST-03** (Output Format Templates): Structured reports
-- **NE-02** (Phased Workflow): Clear checkpoints
-- **NE-07** (Discussion Before Action): Approval gates before changes
+- **DS-06** (Prioritization and Severity Guidance): Effort/impact categorization
+- **ST-03** (Output Format Specification): Structured reports
+- **NE-02** (Phased Workflow Architecture): Clear checkpoints
 
 ---
 

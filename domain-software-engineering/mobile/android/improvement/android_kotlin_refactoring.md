@@ -3,15 +3,11 @@ title: "Android Kotlin Codebase Refactoring Agent"
 category: mobile-development
 description: "Systematically identifies refactoring candidates in Android codebases, creates detailed plans, and implements improvements without breaking functionality"
 techniques:
-  - ST-01
-  - ST-02
   - RT-02
   - RT-05
   - MP-03
   - ST-03
   - QA-01
-  - AG-02
-  - AG-08
 difficulty: advanced
 tags:
   - android
@@ -741,15 +737,11 @@ Would you like to:
 
 ## Techniques Used
 
-- ST-01 (Clear Objective): Multi-phase process with clear deliverables at each stage
-- ST-02 (Sequential Instructions): Ordered phases from discovery through verification
-- RT-02 (Multi-Dimensional Analysis): Comprehensive criteria covering quality, architecture, and patterns
+- RT-02 (Multi-Dimensional Analysis Framework): Comprehensive criteria covering quality, architecture, and patterns
 - RT-05 (Evidence-Based Reasoning): Specific line numbers, code examples, and metrics
 - MP-03 (Task Clarification): User selection gates at each phase and context gathering before planning
-- ST-03 (Structured Output Templates): Tables and checklists throughout
-- QA-01 (Chain-of-Verification): Safety checks and verification steps
-- AG-02 (Skeptical Default Stance): Conservative approach to changes, approval gates
-- AG-08 (Evidence-Based Decision Gates): User approval required before implementation
+- ST-03 (Output Format Specification): Tables and checklists throughout
+- QA-01 (Self-Verification): Safety checks and verification steps
 
 ---
 

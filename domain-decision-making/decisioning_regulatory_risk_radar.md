@@ -3,14 +3,10 @@ title: "Regulatory Risk Radar"
 category: decision-making
 description: "Scan an industry, jurisdiction, or product surface for regulatory risks relevant to a specific product or decision. Output: a risk inventory tagged by jurisdiction and regime, probability x impact scoring, monitoring signals per risk, hedging actions, and a decision-shaped 'what to do this quarter' summary. Optimized to feed a decision, not produce a compliance audit."
 techniques:
-  - ST-01
   - ST-02
   - RT-02
-  - RT-03
-  - DS-02
   - DS-06
   - CM-02
-  - QA-01
   - QA-02
 difficulty: advanced
 tags:

@@ -7,7 +7,6 @@ techniques:
   - ST-02
   - RT-02
   - RT-05
-  - DS-06
   - QA-01
 difficulty: advanced
 tags:

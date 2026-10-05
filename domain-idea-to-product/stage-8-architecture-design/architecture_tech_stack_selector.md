@@ -3,14 +3,11 @@ title: "Tech Stack Selector (Component Decision Matrix, AI-Agent-Friendly)"
 category: idea-to-product/architecture
 description: "Given a PRD + epic/feature tree (from stage 7), walk a decision matrix for each major architectural component — frontend, backend, database, infra, auth, payments, observability — and produce a stack decision document with rejected alternatives logged and AI-coding-agent friendliness explicitly scored."
 techniques:
-  - ST-01
   - ST-02
   - CM-02
   - DS-01
-  - DS-06
   - RT-02
   - QA-01
-  - QA-02
 difficulty: advanced
 tags:
   - architecture

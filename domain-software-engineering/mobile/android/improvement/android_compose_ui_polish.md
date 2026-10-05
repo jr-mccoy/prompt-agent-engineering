@@ -3,16 +3,11 @@ title: "Android Jetpack Compose UI Polish & Production Refinement"
 category: mobile-development
 description: "Suggests targeted visual refinements to elevate Compose UI to production-ready quality through iterative screenshot and code analysis"
 techniques:
-  - ST-01
-  - ST-02
   - RT-02
   - RT-05
   - CM-02
   - DS-06
   - ST-03
-  - QA-04
-  - AG-04
-  - NE-07
 difficulty: intermediate
 tags:
   - android
@@ -386,16 +381,11 @@ Agent generates the improvement specification document only after receiving expl
 
 ## Techniques Used
 
-- **ST-01** (Clear Objective): Focused polish objective with explicit constraints
-- **ST-02** (Structured Sequential Instructions): 4-step analysis and recommendation process with checkpoints
-- **RT-02** (Multi-Dimensional Analysis): 6 polish dimensions (spacing, typography, color, etc.)
+- **RT-02** (Multi-Dimensional Analysis Framework): 6 polish dimensions (spacing, typography, color, etc.)
 - **RT-05** (Evidence-Based Reasoning): Dual-input analysis requiring both screenshot and code
 - **CM-02** (Constraint Specification): Explicit must-avoid guardrails for clutter and color
-- **DS-06** (Prioritization Guidance): Quick wins vs. standard vs. deep polish classification
-- **ST-03** (Output Format Templates): Structured report format with tables and checklists
-- **QA-04** (Uncertainty Acknowledgment): Gap assessment with Minor/Moderate/Significant ratings
-- **AG-04** (Critical Rules as Guardrails): Anti-pattern avoidance embedded as behavioral constraints
-- **NE-07** (Discussion Before Action): Explicit checkpoints requiring user confirmation before proceeding to next phase; no implementation without explicit approval
+- **DS-06** (Prioritization and Severity Guidance): Quick wins vs. standard vs. deep polish classification
+- **ST-03** (Output Format Specification): Structured report format with tables and checklists
 
 ---
 
