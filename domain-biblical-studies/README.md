@@ -4,7 +4,7 @@ Prompts for studying, teaching, preaching from, and researching the Bible — bu
 
 ## Scope
 
-This domain covers Bible-study and biblical-research workflows: passage exegesis, original-language word studies, genre-aware reading, historical-cultural and literary context, narrative and rhetorical analysis, ancient Near Eastern comparative context, canonical/intertextual reading, inductive and devotional study methods, book overviews, lesson and discussion-guide building, reading and memorization plans, expository sermon preparation, devotionals and meditation, topical/systematic theology, doctrine study, comparison of interpretive views, cross-reference/typology mapping, difficult-passage analysis, background research briefs, historical-theology (development of doctrine over time), biblical ethics, theology of a single book, research source mapping, stress-testing one's own position, discipline-specific academic writing (exegesis papers, thesis topics, history-of-research reviews, annotated bibliographies, paper self-review), and children's teaching depth (age-graded story retelling, special-needs inclusive teaching).
+This domain covers Bible-study and biblical-research workflows: passage exegesis, original-language word studies, genre-aware reading, historical-cultural and literary context, narrative and rhetorical analysis, ancient Near Eastern comparative context, canonical/intertextual reading, inductive and devotional study methods, book overviews, lesson and discussion-guide building, reading and memorization plans, expository sermon preparation, devotionals and meditation, topical/systematic theology, doctrine study, comparison of interpretive views, cross-reference/typology mapping, difficult-passage analysis, background research briefs, historical-theology (development of doctrine over time), biblical ethics, theology of a single book, research source mapping, stress-testing one's own position, discipline-specific academic writing (exegesis papers, thesis topics, history-of-research reviews, annotated bibliographies, paper self-review), children's teaching depth (age-graded story retelling, special-needs inclusive teaching), a pastoral Scripture-selection layer (pre-marital preparation, addiction recovery, spiritual formation practices, chaplaincy, texts misused after abuse — selection only, never counseling), Jewish–Christian dialogue (how Jewish tradition reads a Hebrew Bible text, Second Temple context for the NT, anti-Judaism checks on teaching), and digital study tools (tool-category workflows, Bible-study note systems, audio and podcast learning).
 
 Difficulty spans **beginner** (first-look observation, SOAP, devotionals) through **advanced** (original-language word study, canonical reading, multi-view interpretation, systematic synthesis).
 
@@ -30,7 +30,7 @@ Prompts reference verses **by address** and ask the user to supply the translati
 
 ## Directory Map
 
-**136 prompts across 12 subdirectories** (as of 2026-10-03).
+**147 prompts across 14 subdirectories** (as of 2026-10-05).
 
 ```
 domain-biblical-studies/
@@ -58,8 +58,9 @@ domain-biblical-studies/
 │                                honest-questions explorer, study-tool skills, comprehension self-
 │                                check, personal application, reflection journaling, Bible reading
 │                                habit builder, single-book deep dive, tradition comparison on
-│                                practices. Boundary guardrail: not pastoral counseling or crisis
-│                                support.
+│                                practices, digital tool-category workflow (STRONG on product
+│                                claims), PKM for Bible-study notes, audio/podcast learning.
+│                                Boundary guardrail: not pastoral counseling or crisis support.
 ├── ministry-contexts/           Teaching specific groups (audience M): kids' lessons, youth study,
 │                                new-believer discipleship, seeker intro, family devotions, special
 │                                programs (VBS/camp/retreat), biblical care-conversation foundations,
@@ -91,6 +92,15 @@ domain-biblical-studies/
 │                                dissertation workshop, history-of-research literature review plan,
 │                                annotated bibliography builder (verify gate + quarantine), paper
 │                                self-check. General academic process → domain-research-academic/.
+├── pastoral-scripture/          Pastoral Scripture-SELECTION layer (audience P/M; all STRONG-GUARD +
+│                                not-counseling boundary + crisis/abuse routing): pre-marital
+│                                Scripture component, recovery Scripture engagement, formation
+│                                practices, chaplaincy selection, misused texts in abuse disclosures.
+│                                Clinical → domain-psychology/; lay mentoring → domain-discipleship/.
+├── jewish-christian-dialogue/   Jewish interpretation in its own terms (audience P/A/S/G; all STRONG-
+│                                GUARD: no invented midrash/Talmud/commentary citations, no
+│                                supersessionist framing): Jewish tradition's reading of a Hebrew
+│                                Bible text, Second Temple context for the NT, anti-Judaism check.
 └── apologetics-engagement/      Structured intellectual engagement and interfaith dialogue (custom
                                  STRONG-GUARD for fabricated philosophical arguments, misrepresented
                                  worldview positions, invented historical evidence): objection
@@ -118,7 +128,7 @@ Every prompt includes:
 - Not authoritative theology or a substitute for real lexicons, commentaries, critical editions, or trained scholarship.
 - Not a translation engine or a source of manuscript/textual-critical data.
 - Not tradition-prescriptive — they will not tell a user which tradition is correct.
-- Not pastoral counseling or mental-health support. Route distress and crisis to appropriate care (see `domain-psychology/`).
+- Not pastoral counseling or mental-health support. Route distress and crisis to appropriate care (see `domain-psychology/`). The `pastoral-scripture/` prompts cover **Scripture selection and presentation only**; each screens for crisis and abuse first and routes out.
 
 ## Routing (for Claude)
 
@@ -261,6 +271,20 @@ Every prompt includes:
 | "Plan the history-of-research / literature review for my paper" | `academic-writing/biblical_academic_literature_review_plan.md` |
 | "Build an annotated bibliography (verified sources only)" | `academic-writing/biblical_academic_annotated_bibliography_builder.md` |
 | "Review my own biblical-studies paper before submitting" | `academic-writing/biblical_academic_peer_review_self_check.md` |
+| **Pastoral Scripture selection (audience P, M — selection only, NOT counseling; crisis/abuse routing)** | |
+| "Bible component of pre-marital preparation for a couple I'm marrying" | `pastoral-scripture/biblical_pastoral_premarital_scripture_component.md` |
+| "Scripture for someone in addiction recovery, without shame" | `pastoral-scripture/biblical_pastoral_recovery_scripture_engagement.md` |
+| "Choose Scripture and a practice (lectio, examen, Psalms) for someone's season" | `pastoral-scripture/biblical_pastoral_formation_practices_scripture.md` |
+| "What to read as a chaplain (hospital, hospice, prison, military)" | `pastoral-scripture/biblical_pastoral_chaplaincy_scripture_selection.md` |
+| "Verses used to keep an abuse victim in place — what do they really say?" | `pastoral-scripture/biblical_pastoral_misused_texts_after_abuse.md` |
+| **Jewish–Christian dialogue (audience P, A, S, G — all STRONG-GUARD)** | |
+| "How does Jewish tradition read this Hebrew Bible text?" | `jewish-christian-dialogue/biblical_dialogue_jewish_tradition_text_reading.md` |
+| "Second Temple Jewish background for this NT passage" | `jewish-christian-dialogue/biblical_dialogue_second_temple_context.md` |
+| "Check my sermon/lesson on John 8 or Matt 27 for anti-Jewish framing" | `jewish-christian-dialogue/biblical_dialogue_anti_judaism_teaching_check.md` |
+| **Digital study tools (audience S, L, P)** | |
+| "Which kinds of Bible apps/software should I use and how do they fit together?" | `learner-self-study/biblical_learner_digital_tool_workflow_guide.md` |
+| "Set up a note system for my Bible study" | `learner-self-study/biblical_learner_pkm_bible_study_notes.md` |
+| "Learn from audio Bibles and podcasts, not just listen" | `learner-self-study/biblical_learner_audio_podcast_learning.md` |
 | **Apologetics & intellectual engagement (audience P, A)** | |
 | "Engage charitably with a specific intellectual objection" | `apologetics-engagement/biblical_apologetics_objection_engagement.md` |
 | "Evidence for / challenges to biblical reliability" | `apologetics-engagement/biblical_apologetics_bible_reliability.md` |

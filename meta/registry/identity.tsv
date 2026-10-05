@@ -251,6 +251,7 @@ pae_15kqh69wh1dt	prompt	prompt:legal/criminal/legal-bwc-review-protocol	domain-l
 pae_1691mk2hhnbh	prompt	prompt:psychology/client-self-use/relational/clientself-boundary-setting-script	domain-psychology/client-self-use/relational/clientself_boundary_setting_script.md
 pae_169x95qa38b5	technique	technique:NE-23	technique:NE-23
 pae_16t0dz3gbvwc	command	command:deep-analysis/deepthink-decision-plain	domain-deep-analysis/commands/deepthink-decision-plain.md
+pae_172evtzaj15e	prompt	prompt:biblical-studies/learner-self-study/biblical-learner-audio-podcast-learning	domain-biblical-studies/learner-self-study/biblical_learner_audio_podcast_learning.md
 pae_17n4a4y3xnhm	prompt	prompt:childrens-writing/representation-collaboration/childrens-illustrator-collaboration	domain-childrens-writing/representation-collaboration/childrens_illustrator_collaboration.md
 pae_17wpacsr4dhq	skill	skill:agentic-resources/llm-application-dev/embedding-strategies	domain-agentic-resources/skills/llm-application-dev/embedding-strategies/SKILL.md
 pae_188s86t4hvw7	prompt	prompt:prompt-engineering/reasoning-strategies/reasoning-explanation-then-answer-split	domain-prompt-engineering/reasoning-strategies/reasoning_explanation_then_answer_split.md
@@ -920,6 +921,7 @@ pae_4wwjgy6yrq8z	technique	technique:MP-10	technique:MP-10
 pae_4x6h3qykp6gv	prompt	prompt:image-generation/worksheet-generators/math/education-word-problems-worksheet-generator	domain-image-generation/worksheet-generators/math/education_word_problems_worksheet_generator.md
 pae_4xc3bmr9xntb	prompt	prompt:discipleship/peer-and-accountability/discipleship-peer-cohort-curriculum	domain-discipleship/peer-and-accountability/discipleship_peer_cohort_curriculum.md
 pae_4xfk4ff8j3xt	prompt	prompt:productivity/validation/validation-quick-reality-check	domain-productivity/validation/validation_quick_reality_check.md
+pae_4xsewv541wjn	prompt	prompt:biblical-studies/pastoral-scripture/biblical-pastoral-formation-practices-scripture	domain-biblical-studies/pastoral-scripture/biblical_pastoral_formation_practices_scripture.md
 pae_4xvnst075ez9	prompt	prompt:biblical-studies/church-staff-ministry-ops/biblical-churchstaff-small-group-launch-system	domain-biblical-studies/church-staff-ministry-ops/biblical_churchstaff_small_group_launch_system.md
 pae_4y0kapwgz2nq	prompt	prompt:business-strategy/nonprofit/nonprofit-board-governance-health-check	domain-business-strategy/nonprofit/nonprofit_board_governance_health_check.md
 pae_4y4ymyt6y9mb	prompt	prompt:hr-management/people-ops/hr-exit-interview	domain-hr-management/people-ops/hr_exit_interview.md
@@ -996,6 +998,7 @@ pae_5cnv54ejv7pa	prompt	prompt:psychology/intake-assessment/psychology-trauma-hi
 pae_5cppr3vx4yq6	prompt	prompt:written-advocacy/cross-cutting/advocacy-channel-and-record-strategy	domain-written-advocacy/cross-cutting/advocacy_channel_and_record_strategy.md
 pae_5cy7k67cjhh1	prompt	prompt:legal/custody/legal-child-support-calculation-framework	domain-legal/custody/legal_child_support_calculation_framework.md
 pae_5d76mtkjb16j	prompt	prompt:business-strategy/nonprofit/nonprofit-major-gift-ask-plan	domain-business-strategy/nonprofit/nonprofit_major_gift_ask_plan.md
+pae_5db8f5qwnef1	prompt	prompt:biblical-studies/learner-self-study/biblical-learner-digital-tool-workflow-guide	domain-biblical-studies/learner-self-study/biblical_learner_digital_tool_workflow_guide.md
 pae_5dscqnv9h6ex	prompt	prompt:biblical-studies/original-languages/biblical-language-koine-papyri-register	domain-biblical-studies/original-languages/biblical_language_koine_inscriptions_papyri_register_analysis.md
 pae_5dtz7hcg8che	prompt	prompt:engineering-workflows/workflows/engineering-solo-dev-roadmap-planner	domain-business-strategy/startup/solo_dev_roadmap_planner.md
 pae_5dymwqmemde3	prompt	prompt:software-engineering/mobile/ios/implementation/ios-swiftui-screen-builder	domain-software-engineering/mobile/ios/implementation/ios_swiftui_screen_builder.md
@@ -1162,6 +1165,7 @@ pae_67b63j7t67j5	prompt	prompt:legal/employment-labor/solo-dev-contractor-manage
 pae_67p7bsa988am	prompt	prompt:science/disciplines/chemistry/chem-computational-chemistry-validation-protocol	domain-science/disciplines/chemistry/chem_computational_chemistry_validation_protocol.md
 pae_681c83zsxgeb	prompt	prompt:agentic-system-factory/prompts/stage-3-architecture	agentic-system-factory/prompts/stage-3-architecture.md
 pae_68hz9qeanbw6	prompt	prompt:voice-conversational-ui/chatbot-design/chatbot-design-error-handling-patterns	domain-voice-conversational-ui/chatbot-design/chatbot_design_error_handling_patterns.md
+pae_68kh3gjhws5m	prompt	prompt:biblical-studies/learner-self-study/biblical-learner-pkm-bible-study-notes	domain-biblical-studies/learner-self-study/biblical_learner_pkm_bible_study_notes.md
 pae_68qcesxpa01d	prompt	prompt:healthcare-clinical/prompts/pharmacology/pharm-pediatric-weight-based-dosing	domain-healthcare-clinical/prompts/pharmacology/pharm_pediatric_weight_based_dosing.md
 pae_68swqr9hhbv3	skill	skill:agentic-resources/devops/infrastructure-drift-detection	domain-agentic-resources/skills/devops/infrastructure-drift-detection/SKILL.md
 pae_68t3hj8ry3gf	technique	technique:ST-05	technique:ST-05
@@ -2421,6 +2425,7 @@ pae_czjyy4cve2w0	prompt	prompt:medical-education/educator-case-writing/case-virt
 pae_czna7n4n3t7m	prompt	prompt:productivity/automation/browserauto-safety-check	domain-business-strategy/browser-automation/browserauto_safety_check.md
 pae_czt16sfxx4ac	prompt	prompt:science/ethics-integrity/science-authorship-and-credit-resolver	domain-science/ethics-integrity/science_authorship_and_credit_resolver.md
 pae_czvtk94fm4dp	prompt	prompt:biblical-studies/theology-research/biblical-book-theology-synthesis	domain-biblical-studies/theology-research/biblical_book_theology_synthesis.md
+pae_czxffk4tsq0h	prompt	prompt:biblical-studies/jewish-christian-dialogue/biblical-dialogue-jewish-tradition-text-reading	domain-biblical-studies/jewish-christian-dialogue/biblical_dialogue_jewish_tradition_text_reading.md
 pae_d01r3bffdccg	prompt	prompt:ai-ml/specialized-ml/computer-vision/cv-video-understanding-design	domain-AI-ML/specialized-ml/computer-vision/cv_video_understanding_design.md
 pae_d031net27zvt	prompt	prompt:medical-education/educator-simulation-design/sim-high-fidelity-scenario-author	domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md
 pae_d09d78fgzg0v	technique	technique:DD-03	technique:DD-03
@@ -2924,6 +2929,7 @@ pae_fq8m6215ekwe	prompt	prompt:software-engineering/mobile/android/analysis/andr
 pae_fqvpm1sgfrxw	skill	skill:agentic-resources/mobile-development/android-navigation-3	domain-agentic-resources/skills/mobile-development/android-navigation-3/SKILL.md
 pae_fqwxpmp4c8cf	skill	skill:ai-investment-research-toolkit/data-source-adapter	ai-investment-research-toolkit/skills/data-source-adapter/SKILL.md
 pae_fre1g2r26j7j	prompt	prompt:education-teaching/program/faculty-development/program-faculty-onboarding-program	domain-education-teaching/program/faculty-development/program_faculty_onboarding_program.md
+pae_frher4m9fgfn	prompt	prompt:biblical-studies/pastoral-scripture/biblical-pastoral-chaplaincy-scripture-selection	domain-biblical-studies/pastoral-scripture/biblical_pastoral_chaplaincy_scripture_selection.md
 pae_frp7zn6deha6	prompt	prompt:ai-ml/specialized-ml/reinforcement-learning/rl-evaluation-safety	domain-AI-ML/specialized-ml/reinforcement-learning/rl_evaluation_safety.md
 pae_frq0s400map6	technique	technique:DT-01	technique:DT-01
 pae_frrr41c2vrdc	prompt	prompt:business-strategy/nonprofit/nonprofit-volunteer-program-design	domain-business-strategy/nonprofit/nonprofit_volunteer_program_design.md
@@ -3584,6 +3590,7 @@ pae_kg0953sqgs0a	prompt	prompt:negotiation/multi-party/negotiation-facilitator-t
 pae_kg5xm6b55dbs	prompt	prompt:science/computational/science-proteomics-analysis-plan	domain-science/computational/science_proteomics_analysis_plan.md
 pae_kgr5qnc44e64	prompt	prompt:psychology/modalities/act/psychology-act-matrix-session-facilitator	domain-psychology/modalities/act/psychology_act_matrix_session_facilitator.md
 pae_kgxa2m3ceykw	prompt	prompt:professional-writing/journalism/journalism-story-desk-edit	domain-professional-writing/journalism/journalism_story_desk_edit.md
+pae_kgysf65d3zhq	prompt	prompt:biblical-studies/pastoral-scripture/biblical-pastoral-misused-texts-after-abuse	domain-biblical-studies/pastoral-scripture/biblical_pastoral_misused_texts_after_abuse.md
 pae_kh11jhzekjbw	prompt	prompt:healthcare-clinical/prompts/workflow/doc-discharge-summary	domain-healthcare-clinical/prompts/workflow/doc_discharge_summary.md
 pae_kh57eknrsfea	prompt	prompt:childrens-writing/craft-tools/childrens-decodable-text-mechanics	domain-childrens-writing/craft-tools/childrens_decodable_text_mechanics.md
 pae_kh5en37yzs53	prompt	prompt:biblical-studies/original-languages/biblical-language-greek-voice-deponency-analysis	domain-biblical-studies/original-languages/biblical_language_greek_voice_deponency_analysis.md
@@ -3597,6 +3604,7 @@ pae_kht5m5w83wqg	prompt	prompt:negotiation/preparation/negotiation-pre-meeting-r
 pae_khtpjbvwcwhc	prompt	prompt:education-teaching/instructor/student-support/teaching-behavior-support-planner	domain-education-teaching/instructor/student-support/teaching_behavior_support_planner.md
 pae_kj6p52w31q9z	prompt	prompt:agentic-system-factory/prompts/stage-5-eval	agentic-system-factory/prompts/stage-5-eval.md
 pae_kj88qand65ad	prompt	prompt:education-teaching/instructor/reporting-communication/teaching-report-card-comment-generator	domain-education-teaching/instructor/reporting-communication/teaching_report_card_comment_generator.md
+pae_kjbrn1sf015q	prompt	prompt:biblical-studies/jewish-christian-dialogue/biblical-dialogue-anti-judaism-teaching-check	domain-biblical-studies/jewish-christian-dialogue/biblical_dialogue_anti_judaism_teaching_check.md
 pae_kjhk0z8fa485	prompt	prompt:image-generation/nano-banana/nanobana-multi-reference-character-scene	domain-image-generation/nano-banana/nanobana_multi_reference_character_scene.md
 pae_kjjfc7fhsfbn	skill	skill:agentic-resources/llm-application-dev/llm-evaluation	domain-agentic-resources/skills/llm-application-dev/llm-evaluation/SKILL.md
 pae_kjxd6eg95xx0	technique	technique:ST-45	technique:ST-45
@@ -5119,6 +5127,7 @@ pae_vwca9n945kw0	prompt	prompt:parenting/caregiver-facing/tech-digital/parenting
 pae_vwefqsf71rse	prompt	prompt:finance/investing-research/finance-earnings-preview-builder	domain-finance/investing-research/finance_earnings_preview_builder.md
 pae_vws5ntz3m84p	prompt	prompt:legal/family-self-advocacy/legalprep-asset-and-debt-inventory	domain-legal/family-self-advocacy/legalprep_asset_and_debt_inventory.md
 pae_vx1trygrhjph	technique	technique:DP-19	technique:DP-19
+pae_vx6cyb3mgb6c	prompt	prompt:biblical-studies/pastoral-scripture/biblical-pastoral-premarital-scripture-component	domain-biblical-studies/pastoral-scripture/biblical_pastoral_premarital_scripture_component.md
 pae_vxc5yczs6x02	prompt	prompt:productivity/goals-habits/goals-habit-stack-designer	domain-productivity/goals-habits/goals_habit_stack_designer.md
 pae_vxdzm8bw2g87	prompt	prompt:healthcare-clinical/prompts/pharmacology/pharm-opioid-equianalgesic-conversion	domain-healthcare-clinical/prompts/pharmacology/pharm_opioid_equianalgesic_conversion.md
 pae_vxfb9rtx4vn0	prompt	prompt:healthcare-clinical/prompts/specialty/medicine-addiction-medicine-assessment	domain-healthcare-clinical/prompts/specialty/medicine_addiction_medicine_assessment.md
@@ -5695,6 +5704,7 @@ pae_ywq5jws0k9hs	prompt	prompt:medical-education/profession-specific/pharmacy/ph
 pae_ywwqak2q0p9t	prompt	prompt:prompt-engineering/output-formatting/format-streaming-friendly-design	domain-prompt-engineering/output-formatting/format_streaming_friendly_design.md
 pae_yx3qaq7r2w7a	prompt	prompt:decision-making/tradeoff-pugh-matrix	domain-decision-making/tradeoff_pugh_matrix.md
 pae_yxe0d9x7p898	prompt	prompt:psychology/diagnostic-formulation/psychology-provisional-vs-rule-out-decision-aid	domain-psychology/diagnostic-formulation/psychology_provisional_vs_rule_out_decision_aid.md
+pae_yxemm0v19m0q	prompt	prompt:biblical-studies/pastoral-scripture/biblical-pastoral-recovery-scripture-engagement	domain-biblical-studies/pastoral-scripture/biblical_pastoral_recovery_scripture_engagement.md
 pae_yxw8eqjgns3j	prompt	prompt:psychology/client-self-use/specialty/clientself-ocd-self-erp-prep-with-therapist	domain-psychology/client-self-use/specialty/clientself_ocd_self_erp_prep_with_therapist.md
 pae_yy931pzmke1d	prompt	prompt:biblical-studies/apologetics-engagement/biblical-apologetics-objection-engagement	domain-biblical-studies/apologetics-engagement/biblical_apologetics_objection_engagement.md
 pae_yyhyb9a1y2s7	prompt	prompt:healthcare-clinical/prompts/workflow/doc-operative-note	domain-healthcare-clinical/prompts/workflow/doc_operative_note.md
@@ -5840,6 +5850,7 @@ pae_zqjrfjhssqd7	prompt	prompt:legal/ip/legal-defamation-publicity-risk-screen	d
 pae_zqm1eds3gy93	prompt	prompt:ai-ml/genai-llm-engineering/genai-chunking-strategy	domain-AI-ML/genai-llm-engineering/genai_chunking_strategy.md
 pae_zqmsmxjanbwj	prompt	prompt:creative-writing/fiction/writing-scene-construction-workshop	domain-creative-writing/fiction/writing_scene_construction_workshop.md
 pae_zqq0sfzb1vzm	prompt	prompt:ai-ml/model-optimization-efficiency/mlopt-llm-inference-serving-optimization	domain-AI-ML/model-optimization-efficiency/mlopt_llm_inference_serving_optimization.md
+pae_zqrzcan2q4er	prompt	prompt:biblical-studies/jewish-christian-dialogue/biblical-dialogue-second-temple-context	domain-biblical-studies/jewish-christian-dialogue/biblical_dialogue_second_temple_context.md
 pae_zqv5etym2d1g	prompt	prompt:software-engineering/mobile/ios/publishing/ios-app-store-optimization	domain-software-engineering/mobile/ios/publishing/ios_app_store_optimization.md
 pae_zr35j3kppbz1	prompt	prompt:productivity/reviews/reviews-time-audit-evidence-based	domain-productivity/reviews/reviews_time_audit_evidence_based.md
 pae_zrcvdny2nywr	skill	skill:agentic-resources/security/semgrep-rule-creator	domain-agentic-resources/skills/security/semgrep-rule-creator/SKILL.md

@@ -1,6 +1,7 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-10-05:** **Waves 1–11 shipped (§6).**
+**Status as of 2026-10-05:** **Waves 1–12 shipped (§6).**
+- **Wave 12 (2026-10-05):** 11 prompts finishing biblical-studies Phase 3C: a pastoral Scripture-selection layer (`pastoral-scripture/`, 5, selection only, with crisis and abuse routing), Jewish–Christian dialogue (`jewish-christian-dialogue/`, 3) and digital study tools (`learner-self-study/`, 3), plus 7 routing cases (§6).
 - **Wave 11 (2026-10-05):** 22 professional-facing prompts building all eight planned `domain-parenting/family-support-professional/` subfolders (intake, coaching, documentation, groups, referral, home visiting, foster/kinship/adoption, culturally responsive practice), each non-diagnostic with jurisdiction-aware reporting steps, plus 9 routing cases (§6).
 - **Wave 10 (2026-10-04):** technique hygiene (13 undefined codes remapped in 110 files, a CI check on every prompt's `techniques:` list) and agentic-resource depth (7 skills, 4 agents, 4 commands, 4 personas; 3 one-skill categories folded into real ones).
 - **Wave 9 (2026-10-03):** 39 prompts deepening thin subfolders in frontend, game development, creative writing and seven single-prompt folders, plus 15 routing cases (§6).
@@ -832,7 +833,7 @@ disagreement after a decision rather than a first request.
 
 **Still open from the Wave 8 plan:** energy-sector and music-production work
 (an undecided §7 proposal), and biblical-studies Phase 3C's pastoral-counseling and
-Jewish–Christian dialogue items.
+Jewish–Christian dialogue items (both shipped in Wave 12).
 
 ### Wave 9: depth in thin subfolders — shipped (39 prompts, 15 cases, 2026-10-03)
 
@@ -1178,6 +1179,80 @@ the distance between situation language and practitioner language. The cluster h
 no prompt yet for a parent who is a minor, or for professional supervision and
 reflective practice for family-support staff (`psychology_supervision_agenda_builder`
 is clinical).
+
+### Wave 12: biblical-studies Phase 3C completed — shipped (11 prompts, 7 cases, 2026-10-05)
+
+Wave 8 shipped the first part of `domain-biblical-studies` Phase 3C (`academic-writing/` and two
+children's-ministry prompts). This wave builds the three remaining items the user requested. The
+fourth remainder item (youth apologetics, intergenerational worship) stays deferred in the domain
+roadmap. Every candidate went through a `pae search` and `PROMPT_INDEX.json` keyword sweep; none was
+dropped, and no keyword (chaplain, premarital, Second Temple, rabbinic, midrash, supersession, PKM)
+had an existing biblical prompt.
+
+| Home | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `domain-biblical-studies/pastoral-scripture/` (5, new), `biblical_pastoral_` | `premarital_scripture_component`, `recovery_scripture_engagement`, `formation_practices_scripture`, `chaplaincy_scripture_selection`, `misused_texts_after_abuse` | `biblical_ministry_marriage_enrichment_study` (married couples' group study), `discipleship_track_married_couples`, `clientself_faith_integrated_coping_plan` (clinical self-use), `discipleship_spiritual_practices_designer` (a disciple's own practice set), `biblical_ministry_grief_and_loss_scripture_guide`, `discipleship_module_forgiveness_and_reconciliation` (curriculum module) |
+| `domain-biblical-studies/jewish-christian-dialogue/` (3, new), `biblical_dialogue_` | `jewish_tradition_text_reading`, `second_temple_context`, `anti_judaism_teaching_check` | `biblical_apologetics_other_religions_dialogue` (any religion, topic level), `biblical_multiview_interpretation_map` (within-Christian views), `biblical_historical_cultural_context` (all background), `biblical_exegetical_fallacy_detector` (logic errors) |
+| `domain-biblical-studies/learner-self-study/` (+3), `biblical_learner_` | `digital_tool_workflow_guide`, `pkm_bible_study_notes`, `audio_podcast_learning` | `biblical_learner_study_tool_skill_builder` (using a concordance or lexicon well), `bottleneck_pkm_second_brain_architecture` (general PKM), `study_note_organization_system_designer` (medical learners), `biblical_learner_bible_reading_habit_builder` |
+
+**Guards.**
+- **Pastoral prompts:** Scripture selection only. Each has a STRONG-GUARD banner, a "not counseling or
+  therapy" banner, and crisis and abuse routing as Step 1. No hotline number or statute is given from
+  memory; `[VERIFY]` slots stand in. Mandated reporting is "verify locally" and never delayed by a
+  consult. Joint or couple work and reconciliation are never recommended where abuse is present.
+  Clinical work routes to `domain-psychology/`, lay mentoring to `domain-discipleship/mentor-equipping/`.
+- **Dialogue prompts:** Jewish interpretation is presented in its own terms and attributed to
+  identifiable traditions. No midrash, Talmud, Targum or commentary is quoted or located from memory,
+  and no supersessionist framing appears in the prompt's own voice. Christian theologies of Israel are
+  described and attributed only. The Second Temple prompt gates later rabbinic sources as later.
+- **Digital prompts:** STRONG-GUARD on product claims (features, prices, licences, stances are
+  `[VERIFY]`), organised by tool category, with an AI-assistant fabrication protocol and provenance
+  tags on notes.
+
+One example was corrected in review: the Second Temple example had labelled an interpretive conclusion
+about Mark 2 "ESTABLISHED"; it now separates the established context from the contested reading.
+
+**Routing after Wave 12** (`case-215`–`case-221` added):
+
+| | Before (214 cases) | After (221 cases) |
+|---|---|---|
+| R@1 / R@3 / R@5 / MRR | 72.8 / 81.0 / 84.4% / 0.775 | 73.2 / 81.7 / 85.0% / 0.781 |
+| scope@1 / scope@3 / kind@1 (router) | 84.8 / 93.3 / 97.7% | 84.9 / 93.5 / 97.7% |
+| statuses (matched / ambiguous / weak / no_route) | 84 / 82 / 47 / 1 | 86 / 83 / 51 / 1 |
+| Flat BM25 guard, R@1 and scope@1 | 71.4% and 82.6% | 72.5% and 83.2% (shipped still ≥ on both) |
+
+- **Earlier cases.** The 214 cases were compared one by one against a worktree of the base commit
+  (`59fe977`).
+  - Case 162 (kinship) fell from rank 5 to 6 during the build, taking R@5 below its 0.84 floor in
+    `test_search_regression.py`. The misused-texts prompt had matched "after", "help" and "them" in
+    its title and description. The title ("…How Traditions Read Them") and the description's opening
+    were reworded, and case 162 is back at rank 5. Case 148 (14 → 15) recovered with the same fix.
+  - Two cases still differ, and neither involves a new prompt:
+    - Case 138 moved from rank 71 to 70.
+    - Route case 213 keeps its routed scope, but its two top parenting prompts swapped places and its
+      status went from ambiguous to weak. That is a term-weight shift from corpus growth, and the
+      case has no expected status.
+- **New cases:** 6 of 7 route to `biblical-studies` first, against 3 of 7 on the base commit (215 went to
+  `discipleship`, 217 to `legal`, 218 to a technique). Five of the 6 task cases rank their target first: 215 (pre-marital), 216 (recovery), 217 (chaplaincy), 218 (Akedah,
+  Jewish reading) and 219 (Pharisees and Essenes). Honest misses, kept as they are:
+  - 220 (John 8 sermon, rank 2): `biblical_sermon_series_planner` stays first on "preaching", "next
+    week" and "sermon".
+  - 221 (notes in Logos or Obsidian, route): routes to `medical-education`. The medical note-system
+    prompt names Obsidian outright; the new PKM prompt is 2nd and the workflow guide 5th.
+- **Leakage controls (as in Wave 11):** the 7 queries were drafted before any prompt was written and
+  never existed in a file the authoring agents could read. Only a SHA-256 commitment of the query text
+  was stored before authoring. The query file was written after every target was final, and its hash
+  matches the commitment. Three targets carry plain-language tags that overlap a query's everyday
+  wording: `what-to-read-at-a-bedside` (case 217), `what-to-read-with-couple-before-wedding` (case
+  215) and `pharisees` (case 219). The authors could not have seen the queries, so this is shared
+  phrasing.
+- **§2 probes:** all 30 earlier probes keep their top three. Three new probes land in the new
+  prompts: `pastoral counseling scripture` → the three pastoral prompts (it previously surfaced the
+  grief guide); `jewish interpretation of the bible` → `biblical-dialogue-jewish-tradition-text-reading`;
+  `bible study app` → the PKM, audio and workflow prompts, with the workflow guide only 3rd.
+
+**Left for later:** the two misses above, and the deferred Phase 3C remainder (youth apologetics,
+intergenerational worship).
 
 ## 7. Explicitly not gaps / deferred
 

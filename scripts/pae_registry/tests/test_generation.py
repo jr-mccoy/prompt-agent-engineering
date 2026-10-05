@@ -145,10 +145,10 @@ class GenerationTests(unittest.TestCase):
         summary = self.result.summary
         self.assertEqual(summary["by_kind_live"], {
             "agent": 168, "command": 156, "persona": 57,
-            "prompt": 4752, "skill": 358, "technique": 336,
+            "prompt": 4763, "skill": 358, "technique": 336,
         })
         self.assertEqual(summary["by_kind_tombstone"], {"prompt": 53})
-        self.assertEqual(summary["total_records"], 5880)
+        self.assertEqual(summary["total_records"], 5891)
 
     def test_summary_matches_the_records(self):
         summary = self.result.summary

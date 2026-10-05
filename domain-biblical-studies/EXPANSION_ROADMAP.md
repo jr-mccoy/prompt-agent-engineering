@@ -234,11 +234,11 @@ Four prompts in this domain sit adjacent and stay here, cross-linked from there:
 Note that Phase 3C's **"Pastoral counseling Scripture layer"** item below now has a boundary on two
 sides: clinical territory belongs to `domain-psychology/`, and lay mentoring relationships belong to
 `domain-discipleship/mentor-equipping/`. What remains for this domain is the *Scripture-selection*
-layer only.
+layer only — shipped on 2026-10-05 as `pastoral-scripture/` (Phase 3C, section C below).
 
 ---
 
-## Phase 3C — Partially shipped (7 prompts, 2026-10-03) · remaining items future
+## Phase 3C — SHIPPED (18 prompts: 7 on 2026-10-03, 11 on 2026-10-05) · one remainder item deferred
 
 ### Shipped
 
@@ -264,18 +264,47 @@ formulation, thesis architecture, review protocols, fact-check reconciliation) s
 | `biblical_ministry_age_graded_story_retelling.md` | M | intermediate | child-safety | One story for ages 3–5, 6–8, 9–11; lines tagged text vs. teacher framing; embellishment audit |
 | `biblical_ministry_special_needs_inclusive_teaching.md` | M | intermediate | child-safety + no-diagnosis | Universal defaults + sensory/cognitive/communication/physical access; safety plan per policy; cross-links `domain-parenting/` neurodivergence and `domain-discipleship/` accessibility |
 
-### Still future (direction only · ~10-16 prompts)
+**C. `pastoral-scripture/` (NEW · 5 · audience P/M · 2026-10-05)**
 
-Not designed in detail. Requires more user-demand signal or cross-domain coordination.
+The Scripture-*selection* layer only, bounded on two sides (see the boundary note above). Every prompt
+carries a STRONG-GUARD banner, a "not counseling or therapy" boundary banner, and crisis and abuse
+routing as Step 1; no hotline number or statute is given from memory (`[VERIFY]` slots); joint or
+couple work and reconciliation are never recommended where abuse is present.
 
-- **Digital Bible-study tools** (~3) — tool-category workflow guide (STRONG on feature claims),
-  PKM for Bible study (cross-link `domain-productivity/`), audio/podcast learning integration.
-- **Pastoral counseling Scripture layer** (~4-5) — pre-marital counseling Bible component,
-  addiction/recovery Scripture engagement, spiritual formation practices, chaplaincy Scripture selection.
-  Highest boundary risk — must not cross into `domain-psychology/` clinical territory.
+| Prompt | Audience | Difficulty | Guard | What it does |
+|---|---|---|---|---|
+| `biblical_pastoral_premarital_scripture_component.md` | P, M | intermediate | STRONG + boundary | Passages and questions for pre-marital sessions; abuse screen before any joint session; gender-role texts attributed; no inventory product claims |
+| `biblical_pastoral_recovery_scripture_engagement.md` | P, M | advanced | STRONG + boundary | Shame-aware passages and reading rhythm in recovery; never against medication or MAT; withdrawal/overdose = medical emergency |
+| `biblical_pastoral_formation_practices_scripture.md` | P, M, L | intermediate | STRONG + boundary | Scripture and an engagement mode (lectio, Ignatian contemplation, Psalms, examen…) for a season, each attributed; trauma/scrupulosity screen |
+| `biblical_pastoral_chaplaincy_scripture_selection.md` | P, M | advanced | STRONG + boundary | Person-led, consent-based selection across hospital, hospice, military, prison, campus, disaster; multifaith and no-faith encounters |
+| `biblical_pastoral_misused_texts_after_abuse.md` | P, M | advanced | STRONG + boundary | After safety routing: each misused text in context, its misuse, and attributed readings; never directs a decision |
+
+**D. `jewish-christian-dialogue/` (NEW · 3 · audience P/A/S/G · 2026-10-05)**
+
+Jewish interpretation presented in its own terms and attributed to identifiable traditions (rabbinic,
+medieval, Targum, modern movements, academic Jewish studies). All STRONG-GUARD: no midrash, Talmud,
+Targum or commentary quoted or located from memory (`[VERIFY: locate in …]`), no supersessionist
+framing in the prompt's own voice; Christian theologies of Israel described and attributed only.
+
+| Prompt | Audience | Difficulty | Guard | What it does |
+|---|---|---|---|---|
+| `biblical_dialogue_jewish_tradition_text_reading.md` | P, A, S | advanced | STRONG | Jewish reading streams for one Hebrew Bible text, internal debate shown; Christian readings side by side, never as fulfilment or correction |
+| `biblical_dialogue_second_temple_context.md` | P, A, G | advanced | STRONG | Second Temple context for an NT passage by source type and confidence; anachronism gate on later rabbinic sources; caricature check |
+| `biblical_dialogue_anti_judaism_teaching_check.md` | P, G, A | intermediate | STRONG | Findings table on a draft sermon/lesson: anti-Jewish patterns, why, revision, severity; keeps the text's hard edges; clean-pass valve |
+
+**E. Digital Bible-study tools — additions to `learner-self-study/` (+3 · audience S/L/P · 2026-10-05)**
+
+| Prompt | Audience | Difficulty | Guard | What it does |
+|---|---|---|---|---|
+| `biblical_learner_digital_tool_workflow_guide.md` | S, L, P | beginner | STRONG (product claims) | Study task → tool category → minimal workflow → verification step; AI-assistant safety protocol |
+| `biblical_learner_pkm_bible_study_notes.md` | S, P, A | intermediate | STRONG (product claims) | Note system sized to real use; verse-address linking; provenance tag on every note; cross-links `domain-productivity/` |
+| `biblical_learner_audio_podcast_learning.md` | S, L | beginner | STRONG (product claims) | Audio-Bible plans, active listening, podcast curation criteria, capture with provenance, accessibility |
+
+### Deferred (direction only · ~2 prompts)
+
 - **Children's/youth curriculum depth, remainder** (~2) — youth apologetics, intergenerational worship.
-- **Jewish-Christian dialogue** (~2-3) — how Jewish tradition reads a specific OT text, Second Temple
-  Judaism context for NT. High-value for scholarship; elevated risk of misrepresenting Jewish tradition.
+  Not requested in the 2026-10-05 build; needs a duplicate check against `apologetics-engagement/` and
+  `domain-discipleship/` before design.
 
 ---
 
@@ -288,8 +317,9 @@ Not designed in detail. Requires more user-demand signal or cross-domain coordin
 | Phase 3A | 27 | 98 | 9 (+ `church-staff-ministry-ops/`, `group-leader-facilitation/`) |
 | Phase 3B | 23 | 121 | 11 (+ `apologetics-engagement/`, `biblical-theology-method/`) |
 | Original-languages depth (outside phase plan) | 8 | 129 | 11 |
-| Phase 3C — shipped part (2026-10-03) | 7 | 136 | 12 (+ `academic-writing/`) |
-| Phase 3C — remaining (future) | ~10-16 | ~146-152 | 12-13 |
+| Phase 3C — first part (2026-10-03) | 7 | 136 | 12 (+ `academic-writing/`) |
+| Phase 3C — rest (2026-10-05) | 11 | 147 | 14 (+ `pastoral-scripture/`, `jewish-christian-dialogue/`) |
+| Phase 3C — deferred remainder | ~2 | ~149 | 14 |
 
 The 8 original-languages prompts outside the phase plan are verbal aspect, voice/deponency, idiom and
 figures, semantic domains, Masora and Qere/Ketiv, accentuation, comparative Semitics, and Koine papyri

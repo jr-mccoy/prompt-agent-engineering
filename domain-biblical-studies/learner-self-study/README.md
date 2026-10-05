@@ -22,6 +22,9 @@ Personal study and formation tools for the **self-directed individual learner (S
 | `biblical_learner_bible_reading_habit_builder.md` | Sustainable daily reading habit: realistic pacing, a method that sticks, accountability, gap recovery | S | beginner |
 | `biblical_learner_book_of_the_bible_deep_dive.md` | Extended multi-week deep study of one book: questions log, cumulative observation, interpretation passes, capstone synthesis | S | intermediate |
 | `biblical_learner_compare_traditions_on_practice.md` | How traditions approach a specific practice (baptism, communion, governance, Sabbath, etc.), each in its own terms (**STRONG-GUARD**) | S | intermediate |
+| `biblical_learner_digital_tool_workflow_guide.md` | Map each study task to a tool category, a minimal workflow and a verification step; AI-assistant safety protocol (**STRONG-GUARD** on product claims) | S, L, P | beginner |
+| `biblical_learner_pkm_bible_study_notes.md` | Bible-study note system sized to real use: verse-address linking, provenance tag on every note, weekly review, exit plan | S, P, A | intermediate |
+| `biblical_learner_audio_podcast_learning.md` | Audio-Bible listening plans, active listening, podcast curation criteria, capture into notes, accessibility uses | S, L | beginner |
 
 ## Which prompt for which question
 
@@ -34,3 +37,6 @@ Personal study and formation tools for the **self-directed individual learner (S
 - **"Do I actually understand this passage? Let me explain it back"** → `biblical_learner_comprehension_self_check.md`
 - **"How do I apply this passage to my life honestly?"** → `biblical_learner_personal_application_worksheet.md`
 - **"Give me prompts to journal through this passage"** → `biblical_learner_reflection_journal_companion.md`
+- **"Which kinds of Bible apps and tools should I use, and how do I fit them together?"** → `biblical_learner_digital_tool_workflow_guide.md` (no product feature claims without [VERIFY])
+- **"How should I organize my Bible study notes so I can find things later?"** → `biblical_learner_pkm_bible_study_notes.md` (general PKM → `domain-productivity/bottlenecks/bottleneck_pkm_second_brain_architecture.md`)
+- **"How do I actually learn from audio Bibles and podcasts?"** → `biblical_learner_audio_podcast_learning.md`

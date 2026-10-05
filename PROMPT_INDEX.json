@@ -3,8 +3,8 @@
     "generated": "2026-10-05",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 6157,
-    "artifacts_with_frontmatter": 5227,
+    "total_indexed_artifacts": 6168,
+    "artifacts_with_frontmatter": 5238,
     "artifacts_without_frontmatter": 930,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 6157,
-    "prompts_with_frontmatter": 5227,
+    "total_prompts": 6168,
+    "prompts_with_frontmatter": 5238,
     "prompts_without_frontmatter": 930
   },
   "prompts": [
@@ -47529,6 +47529,138 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-biblical-studies/jewish-christian-dialogue/biblical_dialogue_anti_judaism_teaching_check.md",
+      "filename": "biblical_dialogue_anti_judaism_teaching_check.md",
+      "title": "Anti-Judaism Check for Teaching on Hard New Testament Texts — Flag the Framing, Keep the Text's Edges",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/jewish-christian-dialogue",
+      "description": "Review a sermon, lesson, devotional, or teaching plan on a New Testament text with a history of anti-Jewish use and flag anti-Jewish patterns — collective blame and the deicide charge, Pharisees as stock villains, Judaism as a legalism foil, the 'angry Old Testament God' contrast, replacement language, timeless 'the Jews' — in an element-by-element findings table with severity, then propose revisions that keep the text's hard edges honest while removing the anti-Jewish framing. Translation options for Ioudaioi are attributed; church documents are named only as things to look up; a clean pass is allowed.",
+      "techniques": [
+        "QA-18",
+        "DT-05",
+        "DP-04",
+        "QA-04",
+        "RT-05"
+      ],
+      "keywords": [
+        "anti-judaism",
+        "sermon-review",
+        "jewish-christian-relations",
+        "gospel-of-john",
+        "pharisees",
+        "teaching-integrity",
+        "check-my-sermon-for-antisemitism",
+        "preaching-hard-texts"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-biblical-studies/sermon-devotional/biblical_expository_sermon_prep.md",
+        "domain-biblical-studies/sermon-devotional/biblical_lectionary_sermon_prep.md",
+        "domain-biblical-studies/theology-research/biblical_exegetical_fallacy_detector.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/jewish-christian-dialogue/biblical_dialogue_jewish_tradition_text_reading.md",
+      "filename": "biblical_dialogue_jewish_tradition_text_reading.md",
+      "title": "How Jewish Tradition Reads a Hebrew Bible Text — Reading Streams in Their Own Terms, With Christian Readings Side by Side",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/jewish-christian-dialogue",
+      "description": "Map how Jewish tradition reads a specific Hebrew Bible text the user names — plain-sense and homiletical approaches, classical rabbinic literature with its internal debate, medieval commentators, Targumim, liturgical use, modern movements, and academic Jewish studies — each attributed and verify-slotted, with Jewish disagreement shown; then, optionally and separately, set Christian readings beside them without casting either as the fulfilment or correction of the other. Never quotes or locates midrash, Talmud, Targum, or commentary from memory.",
+      "techniques": [
+        "QA-05",
+        "RT-23",
+        "DP-04",
+        "QA-04",
+        "NE-16"
+      ],
+      "keywords": [
+        "jewish-interpretation",
+        "tanakh",
+        "rabbinic-literature",
+        "jewish-christian-dialogue",
+        "anti-fabrication",
+        "non-supersessionist",
+        "how-do-jews-read-this",
+        "understand-jewish-view"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-biblical-studies/apologetics-engagement/biblical_apologetics_other_religions_dialogue.md",
+        "domain-biblical-studies/exegesis-interpretation/biblical_multiview_interpretation_map.md",
+        "domain-biblical-studies/original-languages/biblical_language_canon_versification_differences.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/jewish-christian-dialogue/biblical_dialogue_second_temple_context.md",
+      "filename": "biblical_dialogue_second_temple_context.md",
+      "title": "Second Temple Jewish Context for a New Testament Passage — Confidence-Labelled, Anachronism-Gated, Without Caricature",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/jewish-christian-dialogue",
+      "description": "Assemble the Second Temple Jewish context that bears on a New Testament passage the user names — Temple, synagogue, purity, Sabbath, festivals, Pharisees, Sadducees, Essenes and Qumran, scribes, Diaspora Judaism, Hellenistic and Roman setting — labelling every claim by evidential confidence and source type, gating later rabbinic literature as later, foregrounding the diversity of Judaism(s), attributing scholarly debates such as the New Perspective on Paul without adjudicating, and checking the user's draft reading for caricatures of Judaism.",
+      "techniques": [
+        "RT-05",
+        "QA-04",
+        "QA-05",
+        "RT-23",
+        "DP-04"
+      ],
+      "keywords": [
+        "second-temple-judaism",
+        "new-testament-background",
+        "pharisees",
+        "dead-sea-scrolls",
+        "anachronism-check",
+        "anti-fabrication",
+        "jewish-world-of-jesus",
+        "what-was-judaism-like-then"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-biblical-studies/exegesis-interpretation/biblical_historical_cultural_context.md",
+        "domain-biblical-studies/original-languages/biblical_language_ot_in_nt_usage.md",
+        "domain-biblical-studies/theology-research/biblical_background_research_brief.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/learner-self-study/biblical_learner_audio_podcast_learning.md",
+      "filename": "biblical_learner_audio_podcast_learning.md",
+      "title": "Audio & Podcast Learning for Bible Study — Listening Plans, Active Listening, Podcast Curation, Capture With Provenance",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/learner-self-study",
+      "description": "Integrate audio Bibles and podcasts into a learner's Bible study: whole-book and re-listening plans paired with reading, active-listening techniques (pause-and-recall, listen-then-observe, one question per session), curation criteria applied to podcasts the learner names (host training and stated tradition, sourcing, attribution vs assertion, format, corrections) with every judgement on a specific show marked [VERIFY] and based on what the learner reports or heard, a capture routine that sends insights to notes with provenance, a balance check so audio does not replace reading, and accessibility uses. Never asserts a named podcast's or app's content, stance, or availability. A personal study tool, not pastoral counseling.",
+      "techniques": [
+        "ST-01",
+        "ED-01",
+        "QA-04",
+        "DP-04",
+        "RT-23"
+      ],
+      "keywords": [
+        "audio-bible",
+        "podcast-curation",
+        "active-listening",
+        "accessibility",
+        "provenance-tagging",
+        "learner-self-study",
+        "listen-to-the-bible-on-my-commute",
+        "is-this-podcast-reliable"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-biblical-studies/learner-self-study/biblical_learner_bible_reading_habit_builder.md",
+        "domain-biblical-studies/study-methods-teaching/biblical_memorization_retention_plan.md",
+        "domain-discipleship/cross-cultural/discipleship_oral_preference_learners.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-biblical-studies/learner-self-study/biblical_learner_bible_reading_habit_builder.md",
       "filename": "biblical_learner_bible_reading_habit_builder.md",
       "title": "Bible Reading Habit Builder — Sustainable Daily Practice with Gap Recovery",
@@ -47558,6 +47690,39 @@
         "domain-biblical-studies/study-methods-teaching/biblical_reading_plan_designer.md",
         "domain-biblical-studies/study-methods-teaching/biblical_soap_devotional_method.md",
         "domain-biblical-studies/study-methods-teaching/biblical_memorization_retention_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/learner-self-study/biblical_learner_pkm_bible_study_notes.md",
+      "filename": "biblical_learner_pkm_bible_study_notes.md",
+      "title": "Bible-Study Note System (PKM) — Verse-Address Backbone, Provenance on Every Note, Sized to Real Habits",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/learner-self-study",
+      "description": "Design a personal knowledge-management system for Bible study sized to the learner's real capture and retrieval habits: a consistent verse-address format as the linking backbone, six note types (passage observation, word study, cross-reference trail, questions log, sermon/lesson notes, prayer/reflection), mandatory provenance tags on every note so personal reflection, sourced claims and unverified AI output never blur, a weekly review loop, timed retrieval tests, a migration/exit plan, and anti-patterns. App-agnostic; never asserts a named app's features. A personal study tool, not pastoral counseling.",
+      "techniques": [
+        "ST-03",
+        "DS-26",
+        "RT-23",
+        "NE-09",
+        "DP-04"
+      ],
+      "keywords": [
+        "pkm",
+        "bible-study-notes",
+        "provenance-tagging",
+        "verse-linking",
+        "note-system-design",
+        "learner-self-study",
+        "organize-my-bible-notes",
+        "cant-find-my-study-notes"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-productivity/bottlenecks/bottleneck_pkm_second_brain_architecture.md",
+        "domain-medical-education/learner-study-systems/study_note_organization_system_designer.md",
+        "domain-biblical-studies/learner-self-study/biblical_learner_reflection_journal_companion.md"
       ],
       "has_frontmatter": true
     },
@@ -47660,6 +47825,39 @@
         "domain-biblical-studies/learner-self-study/biblical_learner_reflection_journal_companion.md",
         "domain-biblical-studies/exegesis-interpretation/biblical_passage_observation_beginner.md",
         "domain-biblical-studies/study-methods-teaching/biblical_inductive_study_method.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/learner-self-study/biblical_learner_digital_tool_workflow_guide.md",
+      "filename": "biblical_learner_digital_tool_workflow_guide.md",
+      "title": "Digital Bible-Study Tool Workflow Guide — Match Each Study Task to a Tool Category, With a Verification Step",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/learner-self-study",
+      "description": "Map a learner's study tasks (reading, observation, word study, cross-references, background, commentary consultation, note-keeping, memorisation, group sharing) to categories of digital tools — not products — given their goals, time, budget, device, language level and current tools; output a minimal workflow per task, a good-at/bad-at table per category, a start-small default setup, and an AI-assistant safety protocol. Never asserts a named product's features, price, licence, translations, datasets or stance. A personal study tool, not pastoral counseling.",
+      "techniques": [
+        "IT-25",
+        "IT-22",
+        "DP-04",
+        "QA-04",
+        "OC-12"
+      ],
+      "keywords": [
+        "digital-bible-tools",
+        "study-workflow",
+        "tool-categories",
+        "ai-assistant-safety",
+        "anti-fabrication",
+        "learner-self-study",
+        "which-bible-app-should-i-use",
+        "set-up-my-bible-study-tools"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-biblical-studies/learner-self-study/biblical_learner_study_tool_skill_builder.md",
+        "domain-biblical-studies/theology-research/biblical_commentary_evaluation.md",
+        "domain-biblical-studies/group-leader-facilitation/biblical_groupleader_hybrid_online_format.md"
       ],
       "has_frontmatter": true
     },
@@ -49021,6 +49219,176 @@
         "domain-biblical-studies/exegesis-interpretation/biblical_translation_comparison.md",
         "domain-biblical-studies/exegesis-interpretation/biblical_multiview_interpretation_map.md",
         "domain-biblical-studies/original-languages/biblical_language_septuagint_usage.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/pastoral-scripture/biblical_pastoral_chaplaincy_scripture_selection.md",
+      "filename": "biblical_pastoral_chaplaincy_scripture_selection.md",
+      "title": "Chaplaincy Scripture Selection — Person-Led, Consent-Based, Setting-Aware",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/pastoral-scripture",
+      "description": "Help a chaplain select and offer short Scripture readings in hospital, hospice/palliative, military, prison/jail, campus, workplace, and first-responder/disaster settings. Person-led and consent-based; never proselytising in multifaith and no-faith encounters; contacting a person's own clergy and respecting their own scriptures and canon; governed by institutional policy, with interdisciplinary handoffs and the institution's reporting chain. Distinct from bereavement ministry broadly and from a clinician's goals-of-care conversation.",
+      "techniques": [
+        "ST-01",
+        "CM-09",
+        "DS-28",
+        "DP-04",
+        "QA-04"
+      ],
+      "keywords": [
+        "chaplaincy",
+        "spiritual-care",
+        "multifaith",
+        "consent-based",
+        "hospital-hospice",
+        "pastoral-scripture",
+        "anti-fabrication",
+        "what-to-read-at-a-bedside",
+        "patient-of-another-faith"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-biblical-studies/ministry-contexts/biblical_ministry_grief_and_loss_scripture_guide.md",
+        "domain-biblical-studies/apologetics-engagement/biblical_apologetics_other_religions_dialogue.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_goals_of_care_conversation_guide.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/pastoral-scripture/biblical_pastoral_formation_practices_scripture.md",
+      "filename": "biblical_pastoral_formation_practices_scripture.md",
+      "title": "Formation Practices with Scripture — Choosing a Mode and Passages for Someone's Season",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/pastoral-scripture",
+      "description": "Help a pastor or spiritual director choose a Scripture-engagement mode (lectio divina, Ignatian imaginative contemplation, praying the Psalms or a daily office, examen with a text, memorization, slow reading, fasting with Scripture) and passages fitted to a person's season of formation (dryness, transition, joy, waiting, discernment). Each practice is attributed to its tradition with what it does and does not do, and a screen covers trauma, scrupulosity, spiritual abuse, and depression or exhaustion that must not be spiritualised. Distinct from a disciple designing their own practice set and from running one meditation session.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "NE-16",
+        "QA-04",
+        "DP-04"
+      ],
+      "keywords": [
+        "spiritual-formation",
+        "spiritual-direction",
+        "lectio-divina",
+        "ignatian-contemplation",
+        "pastoral-scripture",
+        "trauma-aware",
+        "anti-fabrication",
+        "how-to-pray-with-scripture-in-a-dry-season",
+        "which-bible-practice-fits-this-person"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-discipleship/learner-pathways/discipleship_spiritual_practices_designer.md",
+        "domain-biblical-studies/sermon-devotional/biblical_meditation_reflection_guide.md",
+        "domain-biblical-studies/learner-self-study/biblical_learner_compare_traditions_on_practice.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/pastoral-scripture/biblical_pastoral_misused_texts_after_abuse.md",
+      "filename": "biblical_pastoral_misused_texts_after_abuse.md",
+      "title": "Misused Texts in Abuse Disclosures — Context, Misuse, and Attributed Tradition Readings",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/pastoral-scripture",
+      "description": "Once an abuse disclosure has been routed for safety, equip a pastor to handle the passages commonly used to keep victims in place or silent (submission, divorce, forgiveness, love's endurance, non-retaliation, authority, and private-confrontation texts). For each: what it says in literary and historical context, how it has been misused, and how traditions read it, attributed. Never advises staying, reconciling, forgiving on a timeline, or confronting the abuser. Distinct from a forgiveness curriculum module and from recognising coercive-control patterns.",
+      "techniques": [
+        "DP-04",
+        "QA-04",
+        "RT-05",
+        "OC-09",
+        "ST-02"
+      ],
+      "keywords": [
+        "abuse-response",
+        "misused-scripture",
+        "spiritual-abuse",
+        "forgiveness-not-reconciliation",
+        "safety-first",
+        "pastoral-scripture",
+        "anti-fabrication",
+        "does-the-bible-say-i-have-to-stay",
+        "verses-used-against-victims"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-discipleship/topical-modules/discipleship_module_forgiveness_and_reconciliation.md",
+        "domain-psy-ops/personal-defense/psyops_coercive_control_pattern_recognition.md",
+        "domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/pastoral-scripture/biblical_pastoral_premarital_scripture_component.md",
+      "filename": "biblical_pastoral_premarital_scripture_component.md",
+      "title": "Pre-Marital Scripture Component — Passages and Questions for the Sessions You Run",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/pastoral-scripture",
+      "description": "Select and sequence passages with discussion questions for the Bible-study component of pre-marital preparation that a pastor or officiant runs (covenant, love, conflict and forgiveness, sexuality, money, roles, family of origin), presenting gender-role texts with complementarian, egalitarian and other readings attributed, screening for abuse and coercive control before any joint session, and referring clinical or relational issues to a licensed couples therapist; distinct from a group enrichment study for married couples and from a months-long discipleship track.",
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "DP-04",
+        "QA-04",
+        "OC-09"
+      ],
+      "keywords": [
+        "premarital-preparation",
+        "pastoral-scripture",
+        "marriage",
+        "gender-role-texts",
+        "abuse-screening",
+        "scripture-selection",
+        "anti-fabrication",
+        "bible-study-for-engaged-couple",
+        "what-to-read-with-couple-before-wedding"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-biblical-studies/ministry-contexts/biblical_ministry_marriage_enrichment_study.md",
+        "domain-discipleship/life-stage-tracks/discipleship_track_married_couples.md",
+        "domain-psychology/family-couples-systems/psychology_gottman_intervention_planner.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-biblical-studies/pastoral-scripture/biblical_pastoral_recovery_scripture_engagement.md",
+      "filename": "biblical_pastoral_recovery_scripture_engagement.md",
+      "title": "Recovery Scripture Engagement — Shame-Aware Passages and a Reading Rhythm Alongside Treatment",
+      "domain": "biblical-studies",
+      "category": "biblical-studies/pastoral-scripture",
+      "description": "Help a pastor or ministry leader select shame-aware passages and a sustainable reading rhythm for someone in recovery from a substance or behavioural addiction. Texts of grace, honesty, lament, community, and relapse without condemnation; the range of views on addiction attributed rather than adjudicated; medication and medication-assisted treatment never questioned; withdrawal and overdose routed as medical emergencies; Scripture supplementing, never replacing, treatment. Distinct from a client's own faith-integrated coping plan and from an alcohol self-assessment.",
+      "techniques": [
+        "ST-01",
+        "DP-04",
+        "OC-09",
+        "QA-04",
+        "NE-07"
+      ],
+      "keywords": [
+        "addiction-recovery",
+        "pastoral-scripture",
+        "shame-aware",
+        "relapse",
+        "medication-assisted-treatment",
+        "scripture-selection",
+        "anti-fabrication",
+        "bible-passages-for-someone-in-recovery",
+        "help-without-shaming"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/client-self-use/specialty/clientself_faith_integrated_coping_plan.md",
+        "domain-psychology/client-self-use/habit-lifestyle/clientself_alcohol_use_re_evaluation.md",
+        "domain-biblical-studies/ministry-contexts/biblical_ministry_care_conversation_foundations.md"
       ],
       "has_frontmatter": true
     },
