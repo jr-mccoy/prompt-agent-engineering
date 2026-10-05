@@ -3,13 +3,10 @@ title: "Play Store Data Safety Generator"
 category: mobile-development
 description: "Generate an accurate Google Play Store Data Safety section by analyzing app code and SDKs, covering data collection mapping, data sharing analysis, encryption status, data deletion capabilities, common SDK data profiles, and Data Safety questionnaire walkthrough"
 techniques:
-  - ST-01
-  - ST-02
   - RT-02
   - RT-05
   - CM-01
   - QA-01
-  - DS-06
   - DT-01
 difficulty: intermediate
 tags:
@@ -708,13 +705,10 @@ Pre-submission verification:
 
 ## Techniques Used
 
-- **ST-01** (Clear Objective Statement) - Focused Data Safety generation objective
-- **ST-02** (Structured Sequential Instructions) - Phased process from SDK inventory through questionnaire completion
-- **RT-02** (Multi-Dimensional Analysis) - Multiple data dimensions (collected, shared, purpose, required, deletable)
+- **RT-02** (Multi-Dimensional Analysis Framework) - Multiple data dimensions (collected, shared, purpose, required, deletable)
 - **RT-05** (Evidence-Based Reasoning) - SDK documentation references, code-level verification
 - **CM-01** (Explicit Context Framing) - Google Play Data Safety definitions and requirements
-- **QA-01** (Chain-of-Verification) - Cross-checking declarations against actual app behavior
-- **DS-06** (Prioritization Guidance) - Distinguishing collected vs. shared, required vs. optional
+- **QA-01** (Self-Verification) - Cross-checking declarations against actual app behavior
 - **DT-01** (Hierarchical Task Breakdown) - SDK inventory, data mapping, sharing analysis, security, questionnaire
 
 ---

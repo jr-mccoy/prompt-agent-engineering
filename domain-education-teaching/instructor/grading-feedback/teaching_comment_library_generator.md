@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -228,5 +228,5 @@ Plan how the library evolves:
 | **CM-01** | Subject, genre, rubric, and tone anchor every comment in the library. |
 | **ST-02** | Nine-step build moves from criteria → comment generation → audit → evolution plan. |
 | **DS-01** | Criterion × severity-tier matrix structures the library for retrieval. |
-| **OC-01** | Comment-anatomy template enforces personalization and next-move discipline. |
+| **ST-03** | Comment-anatomy template enforces personalization and next-move discipline. |
 | **QA-02** | Anti-generic audit + self-check stress-test for vague-comment failure modes. |

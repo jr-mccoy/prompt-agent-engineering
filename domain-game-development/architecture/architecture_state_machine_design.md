@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-02
   - DS-01
-  - OC-01
+  - QA-01
 difficulty: intermediate
 tags:
   - architecture
@@ -346,7 +346,7 @@ public class InputBuffer
 - ST-02 (Structured Sequential Instructions) — six numbered steps from type selection through verification
 - RT-02 (Systematic Classification) — classifies FSM type by complexity and nesting requirements
 - DS-01 (Framework Application) — applies formal automata theory (FSM, HFSM, pushdown automata)
-- OC-01 (Verification Checklist) — critical verification step ensures no orphaned states, dead ends, or missing exits
+- QA-01 (Self-Verification) — critical verification step ensures no orphaned states, dead ends, or missing exits
 
 **Related Prompts:**
 - `domain-game-development/architecture/architecture_scene_management.md` — Scene loading and transition systems

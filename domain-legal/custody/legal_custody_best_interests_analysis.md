@@ -3,15 +3,10 @@ title: "Child Custody Best-Interests Analysis"
 category: legal/custody
 description: "Analyze a custody dispute factor-by-factor under the controlling state's best-interests statute: apply each enumerated factor to the facts, address legal vs. physical custody and decision-making, weigh stability/primary-caregiver and any presumptions (joint custody, against an abuser), assess the child's preference where age-appropriate, and produce a position memo with factor-by-factor strength and a defensible custody/parenting recommendation."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-01
   - RT-02
-  - RT-05
-  - RP-01
   - CM-02
-  - QA-01
   - QA-12
 difficulty: advanced
 tags:

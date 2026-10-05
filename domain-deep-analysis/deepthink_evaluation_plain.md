@@ -3,16 +3,11 @@ title: "Deep-Think (Plain English): Reviewing Something That Already Exists"
 category: deep-analysis/evaluation
 description: "A plain-English version of the deep-think evaluation system for reviewing something that already exists. Same five-step rigor as the original — Frame, Break Down Criteria and Evidence, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language and friendlier check-ins. Result: an evaluation report with review criteria, strengths, problems, missing evidence, pass/revise/reject recommendation, confidence, and caveats."
 techniques:
-  - ST-01
-  - ST-02
-  - ST-04
-  - ST-42
   - RT-02
   - CM-02
   - QA-01
   - QA-02
   - QA-04
-  - QA-09
 difficulty: beginner
 audience: non-technical
 tags:

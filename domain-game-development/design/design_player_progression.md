@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-05
   - DS-03
-  - OC-01
+  - ST-03
 difficulty: advanced
 tags:
   - game-design
@@ -266,7 +266,7 @@ A comprehensive progression system design document including:
 - **ST-02 (Structured Sequential Instructions):** Seven-step process from philosophy through validation
 - **RT-05 (Evidence-Based Reasoning):** Requires mathematical formulas, simulated playthroughs, and data-driven validation
 - **DS-03 (Tool and Methodology Suggestions):** Provides specific curve formulas, spreadsheet tables, and tuning knobs
-- **OC-01 (Structured Output Format):** Delivers tables, diagrams, and structured design documents
+- **ST-03 (Output Format Specification):** Delivers tables, diagrams, and structured design documents
 
 ## Related Prompts
 

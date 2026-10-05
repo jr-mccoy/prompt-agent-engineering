@@ -7,7 +7,7 @@ techniques:
   - ED-03
   - ST-02
   - NE-01
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - student-facing
@@ -207,4 +207,4 @@ Output: core concept list, synonym clusters, a Boolean search string, scope filt
 | **ED-03 — Guided Discovery** | Students discover which terms are too restrictive or too broad by testing and diagnosing results. |
 | **ST-02 — Sequential Steps** | Concepts → synonyms → Boolean construction → filters → test → alternate string. |
 | **NE-01 — Single-Question Pacing** | One concept's synonyms at a time; one filter decision at a time. |
-| **OC-01 — Output Template** | Concept + synonyms table as a consistent structure across all keyword clusters. |
+| **ST-03 — Output Format Specification** | Concept + synonyms table as a consistent structure across all keyword clusters. |

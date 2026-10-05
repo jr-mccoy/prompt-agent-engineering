@@ -4,7 +4,7 @@ category: psychology/
 description: "Structure psychological assessment reports with appropriate sections, professional language, and interpretation guidelines"
 techniques:
   - ST-04
-  - OC-01
+  - ST-03
   - QA-04
   - CM-01
 difficulty: advanced
@@ -358,6 +358,6 @@ ________________________________
 
 **Techniques Used:**
 - **ST-04 (Delimited Sections):** Clear, labeled sections for each component of the assessment report
-- **OC-01 (Explicit Formatting):** Specific templates, tables, and formatting standards for professional documentation
+- **ST-03 (Output Format Specification):** Specific templates, tables, and formatting standards for professional documentation
 - **QA-04 (Uncertainty Acknowledgment):** Framework for caveats, limitations, and confidence levels in interpretation
 - **CM-01 (Explicit Context Framing):** Gathers assessment context to customize report structure appropriately

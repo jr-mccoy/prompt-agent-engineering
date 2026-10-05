@@ -3,13 +3,8 @@ title: "Deep-Think (Plain English): Making a Hard Decision"
 category: deep-analysis/decision
 description: "A plain-English version of the deep-think decision system, written for non-technical users. Same five-phase, multi-perspective rigor as the original — Frame, Break Down, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language, worked examples, and friendlier check-ins. Result: an honest recommendation with reasoning, confidence, how-hard-to-undo, and warning signs that would tell you the decision was wrong."
 techniques:
-  - ST-01
-  - ST-02
-  - ST-04
-  - ST-42
   - RT-02
   - CM-02
-  - QA-01
   - QA-02
   - QA-04
   - QA-09

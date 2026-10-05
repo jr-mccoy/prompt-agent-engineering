@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - RT-04
 difficulty: intermediate
 tags:
@@ -236,5 +236,5 @@ ONE QUESTION TO HOLD: [...]
 | **CM-01** | Stage, deadline, and resources anchor every coaching exchange. |
 | **ST-02** | Nine stages map the project arc; mentor meets the student where they are. |
 | **DS-01** | Scientific-method + Socratic-stance frameworks structure question types per stage. |
-| **OC-01** | Per-session output template enforces reflection, diagnostic, and named next-move. |
+| **ST-03** | Per-session output template enforces reflection, diagnostic, and named next-move. |
 | **RT-04** | Tone is respectful peer-coach, never authority dictating answers. |

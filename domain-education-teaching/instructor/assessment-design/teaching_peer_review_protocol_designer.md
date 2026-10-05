@@ -4,7 +4,7 @@ category: education-teaching/instructor/assessment-design
 description: "Design a structured peer review protocol — with a calibration activity, criteria-anchored reviewer checklist, sentence starters, reviewee response guide, and a feedback quality rubric — so peer review produces revision, not just reaction."
 techniques:
   - ST-01
-  - OC-01
+  - ST-03
   - QA-01
   - CM-02
   - RT-05
@@ -247,7 +247,7 @@ This rubric evaluates the peer feedback, not the assignment.
 | Technique | How It's Applied |
 |-----------|-----------------|
 | **ST-01** | Calibration → reviewer checklist → sentence starters → reviewee protocol → quality rubric. |
-| **OC-01** | Reviewer checklist template standardizes the feedback format. |
+| **ST-03** | Reviewer checklist template standardizes the feedback format. |
 | **QA-01** | Feedback quality rubric audits the peer review itself. |
 | **CM-02** | Grade level, class context, and first-time scaffolding shape complexity and tone. |
 | **RT-05** | Reviewee response protocol builds metacognitive agency — author decides what to act on. |

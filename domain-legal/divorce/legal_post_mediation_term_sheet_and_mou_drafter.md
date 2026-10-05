@@ -3,12 +3,9 @@ title: "Post-Mediation Term Sheet and MOU Drafter"
 category: legal/divorce
 description: "Memorialize what was agreed at a divorce or custody mediation before it evaporates: a term sheet or memorandum of understanding with the binding-vs-nonbinding intent stated explicitly under the jurisdiction's rule, every agreed term captured concretely (property, equalization, support, parenting terms), an open-items register, conditions precedent (disclosure confirmation, appraisal true-ups, QDRO review, attorney review), and enforceability traps flagged — bridging to the full MSA and parenting-plan drafting."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
   - CM-02
-  - DS-02
   - QA-01
   - QA-12
 difficulty: advanced

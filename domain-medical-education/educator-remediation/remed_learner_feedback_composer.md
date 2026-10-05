@@ -7,7 +7,7 @@ techniques:
   - NE-01
   - ST-02
   - QA-01
-  - OC-01
+  - ST-03
 difficulty: beginner
 tags:
   - feedback

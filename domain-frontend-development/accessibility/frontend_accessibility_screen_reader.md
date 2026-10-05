@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - RT-02
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -566,7 +566,7 @@ Legend: ✅ Works | ⚠️ Partial | ❌ Fails
 - **ST-01 (Clear Objective Statement):** Focused on screen reader testing
 - **ST-02 (Structured Sequential Instructions):** Systematic test methodology
 - **RT-02 (Multi-Dimensional Analysis):** Multiple SRs and scenarios
-- **OC-01 (Output Format Templates):** Clear issue documentation
+- **ST-03 (Output Format Specification):** Clear issue documentation
 - **QA-02 (Adversarial Stress-Test):** Edge cases and failure modes
 
 ## Related Prompts

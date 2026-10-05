@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -233,5 +233,5 @@ If possible, ground the task in authentic input — a real recipe, real apartmen
 | **CM-01** | Language, level, mode, and theme anchor task design. |
 | **ST-02** | Ten-step build moves from task type → goal → pre/during/post → assessment. |
 | **DS-01** | TBLT framework + ACTFL/CEFR proficiency descriptors structure design and assessment. |
-| **OC-01** | Task templates, scaffolding tiers, and rubric enforce reusable structure. |
+| **ST-03** | Task templates, scaffolding tiers, and rubric enforce reusable structure. |
 | **QA-02** | Self-check stress-tests for grammar-first failure mode and language-not-required tasks. |

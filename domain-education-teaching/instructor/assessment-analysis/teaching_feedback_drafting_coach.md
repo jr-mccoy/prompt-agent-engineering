@@ -5,7 +5,7 @@ description: "Draft actionable, evidence-cited feedback for any student assignme
 techniques:
   - RT-04
   - ST-01
-  - OC-01
+  - ST-03
   - QA-01
   - CM-02
 difficulty: beginner
@@ -193,6 +193,6 @@ normally see from you, which tells me [this might be X]"]
 |-----------|-----------------|
 | **RT-04** | Emotional intelligence governs tone — feedback is growth-oriented, evidence-grounded, and respectful. |
 | **ST-01** | Structured pipeline: evidence → draft → tone check → adjustments. |
-| **OC-01** | Feedback draft template enforces the strength/development/next-step structure. |
+| **ST-03** | Feedback draft template enforces the strength/development/next-step structure. |
 | **QA-01** | Tone check audits the draft for specific failure patterns before delivery. |
 | **CM-02** | Student context adjustments address ELL, IEP, and prior performance patterns. |

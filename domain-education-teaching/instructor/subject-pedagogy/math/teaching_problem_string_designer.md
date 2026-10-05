@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -185,5 +185,5 @@ Provide:
 | **CM-01** | Grade, target relationship, and operation anchor every numeric choice. |
 | **ST-02** | Eight steps move from naming the relationship → string design → discourse plan. |
 | **DS-01** | Anchor → helper → bridge → stretch is the framework that makes the string a string, not a worksheet. |
-| **OC-01** | Per-problem table and teacher-script template enforce reproducible structure. |
+| **ST-03** | Per-problem table and teacher-script template enforce reproducible structure. |
 | **QA-02** | Self-check stress-tests whether the string actually surfaces the target relationship. |

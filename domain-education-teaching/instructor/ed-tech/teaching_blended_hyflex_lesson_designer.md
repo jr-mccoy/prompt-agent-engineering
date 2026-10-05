@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-02
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:
@@ -241,5 +241,5 @@ Triangulate signal:
 | **ST-02** | Frame → activity audit → coordination → tech → run-sheet pipeline. |
 | **CM-02** | Equivalence constraint and tech-fallback requirement prevent in-person bias. |
 | **DS-02** | Multi-modality routing with explicit per-modality activity plans. |
-| **OC-01** | Run-sheet template enforces minute-by-minute output. |
+| **ST-03** | Run-sheet template enforces minute-by-minute output. |
 | **QA-01** | Equity audit and post-lesson signal triangulation close the loop. |

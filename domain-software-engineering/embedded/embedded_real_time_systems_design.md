@@ -3,14 +3,11 @@ title: "Real-Time Systems Design & Debugging"
 category: software-engineering/embedded
 description: "Design, review, and debug real-time systems for timing correctness, determinism, and deadline compliance."
 techniques:
-  - ST-01
   - ST-02
   - RT-02
   - RT-05
   - DS-06
-  - CM-01
   - CM-02
-  - QA-02
 difficulty: advanced
 tags:
   - real-time
@@ -206,4 +203,4 @@ After completing the analysis, explicitly answer:
 
 ---
 
-**Techniques Used:** ST-01 (Clear Objective), ST-02 (Structured Sequential), RT-02 (Multi-Dimensional Analysis), RT-05 (Evidence-Based), DS-06 (Prioritization), CM-01 (Context Framing), CM-02 (Constraints), QA-02 (Adversarial Stress-Test)
+**Techniques Used:** ST-02 (Structured Sequential Instructions), RT-02 (Multi-Dimensional Analysis Framework), RT-05 (Evidence-Based Reasoning), DS-06 (Prioritization and Severity Guidance), CM-02 (Constraint Specification)

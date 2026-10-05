@@ -3,15 +3,10 @@ title: "Relocation / Move-Away Analysis"
 category: legal/custody
 description: "Analyze a parental relocation (move-away) request or opposition under the controlling state's framework: confirm notice requirements and the burden allocation, apply the state's relocation factors (the child's relationship with each parent, reasons for and against the move, impact on the schedule, feasibility of a revised plan), distinguish primary-custodian presumptions from joint-custody standards, and produce a position memo with a revised long-distance parenting plan and the proof needed."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-01
   - RT-02
-  - RT-05
-  - RP-01
   - CM-02
-  - QA-01
   - QA-12
 difficulty: advanced
 tags:

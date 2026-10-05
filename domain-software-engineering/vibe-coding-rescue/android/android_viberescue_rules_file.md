@@ -3,12 +3,9 @@ title: "Generate a Project Rules File for a Vibe-Coded Android App (Sourced to A
 category: software-engineering/vibe-coding-rescue/android
 description: "Produce a project CLAUDE.md / .cursorrules / equivalent grounded in actual conventions and AI mistakes found in this codebase — not generic Android advice. Sources rules from the codebase audit's good patterns, the security audit's hard don'ts, the wall-diagnosis's primary mode, and any AI patterns repeating across both audits. Output is ≤400 lines and includes hard don'ts, required patterns, vocabulary, lifecycle rules, security gates, and an escalation protocol."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - ST-04
   - CM-02
-  - CM-04
   - RT-05
   - QA-01
 difficulty: intermediate
@@ -318,11 +315,8 @@ This file does not cover:
 
 ## Techniques Used
 
-- **ST-01 (Clear Objective):** Output is a project rules file grounded in this codebase, not a generic Android style guide.
 - **ST-02 (Structured Sequential Instructions):** Nine steps drive inventory → conflict detection → structure → discipline → size → sanity → front-matter → emit → verify.
 - **ST-03 (Output Format Specification):** Twelve-section fixed structure; the rules file format is the contract for downstream AI sessions.
-- **ST-04 (Grounded-in-Evidence):** Every rule traces to a finding, an exemplar, or a vocabulary entry. Generic rules are explicitly refused.
 - **CM-02 (Constraint Specification):** Must Not block forbids generic advice and exceeding size budget.
-- **CM-04 (Forbidden Patterns Explicit):** Hard don'ts section is a named, prominent block — not buried.
 - **RT-05 (Evidence-Based Reasoning):** Step 1 inventory and step 4 discipline force evidence citations for every rule.
 - **QA-01 (Self-Verification):** Verification checklist + dual-failure prevention ensures the file is high-leverage rather than aspirational.

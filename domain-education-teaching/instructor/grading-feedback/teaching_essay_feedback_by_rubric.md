@@ -5,7 +5,7 @@ description: "Generate criterion-by-criterion essay feedback that quotes specifi
 techniques:
   - CM-01
   - ST-02
-  - OC-01
+  - ST-03
   - QA-02
   - RT-04
 difficulty: intermediate
@@ -168,6 +168,6 @@ If the essay is in draft (not final), produce 2–3 questions the teacher can as
 |-----------|-----------------|
 | **CM-01** | Rubric, genre, grade, and process stage shape comment depth and tone. |
 | **ST-02** | Sequential read → score → comment → prioritize → summarize. |
-| **OC-01** | Per-criterion comment template enforces consistent structure across stacks. |
+| **ST-03** | Per-criterion comment template enforces consistent structure across stacks. |
 | **QA-02** | Self-check stress-tests the feedback against rewriting and generic-praise failure modes. |
 | **RT-04** | Warm/cool summary protects the student-teacher relationship while delivering hard feedback. |

@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -212,5 +212,5 @@ Students who get only #3 right but not #1 or #2 have procedure without concept â
 | **CM-01** | Grade, concept, manipulative, and prior knowledge shape every phase. |
 | **ST-02** | Nine sequential phases mirror the CPA sequence with explicit bridges. |
 | **DS-01** | Bruner's CPA framework structures the lesson; representations are the unit, not procedures. |
-| **OC-01** | Three-row translation table and three-column anchor chart enforce structural parallelism. |
+| **ST-03** | Three-row translation table and three-column anchor chart enforce structural parallelism. |
 | **QA-02** | Self-check stress-tests whether the three representations actually mirror each other. |

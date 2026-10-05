@@ -5,7 +5,7 @@ description: "Synthesize a stack of student work into a single class-facing feed
 techniques:
   - CM-01
   - ST-02
-  - OC-01
+  - ST-03
   - DS-01
   - RT-04
 difficulty: intermediate
@@ -204,6 +204,6 @@ Count: is the memo at or below the cap? If over, cut the lowest-leverage error o
 |-----------|-----------------|
 | **CM-01** | Stack size, course context, and distribution mode shape memo length and voice. |
 | **ST-02** | Pattern-mining → throughline → structured memo → audit. |
-| **OC-01** | Memo template enforces consistent structure across assignments. |
+| **ST-03** | Memo template enforces consistent structure across assignments. |
 | **DS-01** | Rubric and pattern frequency drive what gets named, not personal preference. |
 | **RT-04** | Tone calibration protects whole-class trust while delivering hard feedback. |

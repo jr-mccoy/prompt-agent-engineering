@@ -3,15 +3,9 @@ title: "Repository Analysis for Strategic Improvements"
 category: software-engineering/analysis
 description: "Conduct an adaptive-depth, evidence-based audit of any repository — scaling from sampling to exhaustive analysis based on repository size — to identify the single most impactful improvement opportunity and deliver a prioritized action plan with verifiable success criteria"
 techniques:
-  - ST-01  # Clear Objective Statement
-  - ST-02  # Structured Sequential Instructions
-  - RT-02  # Multi-Dimensional Analysis
   - RT-05  # Evidence-Based Reasoning
   - RT-06  # Correlation and Cross-Analysis
-  - DS-04  # Pattern Recognition Requests
-  - DS-06  # Prioritization Guidance
   - CM-07  # Token-Budget-Aware Progressive Loading
-  - DT-05  # Element-by-Element Assessment Matrix
   - QA-08  # Gate-Based Verification
   - DD-07  # Self-Audit Table
 difficulty: advanced
@@ -672,22 +666,11 @@ Structure scored GOOD or WARN on all metrics; quality is where trust breaks down
 
 ## Techniques Used
 
-- **ST-01 (Clear Objective Statement):** Single-sentence objective anchors the entire analysis to one measurable goal
-- **ST-02 (Structured Sequential Instructions):** Six-phase workflow (0–5) with explicit ordering, dependencies, and tier-adaptive depth
-- **RT-02 (Multi-Dimensional Analysis):** Each finding analyzed across type, location, evidence, impact, severity, and confidence
 - **RT-05 (Evidence-Based Reasoning):** File paths, metrics, and counts required for every claim — no unsupported assertions
 - **RT-06 (Correlation and Cross-Analysis):** Phase 3.5 correlates quality scores with file age, directory depth, and category to surface systemic patterns invisible to sampling
-- **DS-04 (Pattern Recognition Requests):** Phase 3.5 explicitly directs identification of cross-category inconsistencies, terminology drift, and duplication patterns
-- **DS-06 (Prioritization Guidance):** Max 5 actions, explicit deprioritization with reasons, severity ranking
 - **CM-07 (Token-Budget-Aware Progressive Loading):** Adaptive Depth Strategy (Phase 0) scales analysis from sampling to exhaustive based on repository size and available context capacity
-- **DT-05 (Element-by-Element Assessment Matrix):** Exhaustive tier enables file-by-file quality census rather than statistical sampling
 - **QA-08 (Gate-Based Verification):** Phase checkpoints must be recorded before advancing to the next phase
 - **DD-07 (Self-Audit Table):** Final verification table ensures all quality requirements are met before delivery
-- **DP-09 (Single Primary Constraint):** Forces identification of exactly one bottleneck, preventing diffuse recommendations
-- **QS-04 (Drift vs Violation Distinction):** Four-way root cause classification prevents treating symptoms as causes
-- **CM-02 (Constraint Specification):** Explicit Must/Must-Not boundaries prevent common failure modes
-- **DT-04 (Multi-Layer Analysis):** Phase 2 (micro: individual file scoring), Phase 3.5 (meso: cross-file patterns), and Phase 5 (macro: cross-category bottleneck)
-- **RP-01 (Expert Role Assignment):** Repository Quality Architect framing establishes appropriate expertise and skepticism
 
 ---
 

@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - CM-02
-  - OC-01
+  - ST-03
   - DS-01
   - QA-01
 difficulty: beginner

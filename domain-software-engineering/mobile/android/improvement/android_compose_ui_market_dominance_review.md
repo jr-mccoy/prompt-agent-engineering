@@ -3,18 +3,11 @@ title: "Android Jetpack Compose UI Review for Market Dominance"
 category: mobile-development
 description: "Conducts exhaustive Compose UI review to create the most marketable and competitive interface in its category"
 techniques:
-  - ST-01
-  - ST-02
   - RT-02
-  - RT-03
   - RT-05
   - DS-06
   - ST-03
-  - AG-02
-  - AG-12
-  - RP-01
   - NE-02
-  - NE-07
 difficulty: advanced
 tags:
   - android
@@ -1206,18 +1199,11 @@ fun SmartBottomSheet(
 
 ## Techniques Used
 
-- **ST-01** (Clear Objective): Market dominance through UI excellence
-- **ST-02** (Structured Sequential Instructions): 5-phase comprehensive process
-- **RT-02** (Multi-Dimensional Analysis): Visual, emotional, competitive, technical, and accessibility dimensions
-- **RT-03** (Stakeholder Consideration): Deep target market and user analysis
+- **RT-02** (Multi-Dimensional Analysis Framework): Visual, emotional, competitive, technical, and accessibility dimensions
 - **RT-05** (Evidence-Based Reasoning): Benchmarking against proven successful apps
-- **DS-06** (Prioritization Guidance): Tiered improvement roadmap with sprint planning
-- **ST-03** (Output Format Templates): Comprehensive structured deliverables
-- **AG-02** (Skeptical Default Stance): Critical, honest assessment over validation
-- **AG-12** (Quantitative Success Metrics): Scoring systems and comparison matrices
-- **RP-01** (Expert Role Assignment): Market-focused analyst and optimization expert
+- **DS-06** (Prioritization and Severity Guidance): Tiered improvement roadmap with sprint planning
+- **ST-03** (Output Format Specification): Comprehensive structured deliverables
 - **NE-02** (Phased Workflow Architecture): Clear phase progression with handoffs
-- **NE-07** (Discussion Before Action): Explicit approval gates before implementation
 
 ---
 

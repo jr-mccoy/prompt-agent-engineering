@@ -4,7 +4,7 @@ category: nursing
 description: "Nursing-specific systematic assessment framework covering head-to-toe assessment, focused assessments, nursing diagnosis formulation, and care plan development"
 techniques:
   - ST-02
-  - OC-01
+  - ST-03
   - DS-06
   - DT-02
   - NE-06

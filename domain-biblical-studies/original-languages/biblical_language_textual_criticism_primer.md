@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-02
   - QA-04
-  - NE-14
+  - QA-05
 difficulty: advanced
 tags:
   - original-languages
@@ -195,8 +195,8 @@ State what is at stake interpretively — how meaning changes depending on which
 
 ## Techniques Used
 
-- **ST-01 (Role & Objective Priming):** Frames the model as a method-scaffold builder rather than a text-critical oracle — the objective is to explain how a variant is evaluated, with every datum verify-required, which sets the anti-fabrication posture before any apparatus claim.
+- **ST-01 (Clear Objective Statement):** Frames the model as a method-scaffold builder rather than a text-critical oracle — the objective is to explain how a variant is evaluated, with every datum verify-required, which sets the anti-fabrication posture before any apparatus claim.
 - **ST-02 (Structured Sequential Instructions):** The 6-step sequence (Fix the variant → External criteria → Internal criteria → Apply conditionally → Positions → Stakes/confidence) separates teaching the method from asserting apparatus data, and keeps criteria-application conditional on verification.
 - **RT-02 (Multi-Dimensional Analysis Framework):** Requires weighing external evidence (age, text-type, distribution, quantity vs. quality) and internal evidence (lectio difficilior/brevior, scribal tendencies, author's style, transcriptional probability) as distinct dimensions, so no single criterion is mistaken for the whole judgment.
 - **QA-04 (Uncertainty Acknowledgment):** Every manuscript attribution, dating, text-type, and certainty rating is verify-required; criteria are applied conditionally; the evaluation carries a low/moderate confidence rating and the readings are not adjudicated.
-- **NE-14 (Fabrication Prevention):** Bars asserting which manuscripts read what, apparatus sigla, datings, text-type classifications, UBS ratings, and commentary quotations from memory; all readings are user-supplied and every datum is routed to the critical apparatus (NA28/UBS5; BHS/BHQA).
+- **QA-05 (Citation Requirements):** Bars asserting which manuscripts read what, apparatus sigla, datings, text-type classifications, UBS ratings, and commentary quotations from memory; all readings are user-supplied and every datum is routed to the critical apparatus (NA28/UBS5; BHS/BHQA).

@@ -3,15 +3,11 @@ title: "Safely Execute a Single Prioritized Fix on a Vibe-Coded Android App"
 category: software-engineering/vibe-coding-rescue/android
 description: "Apply one fix from the queue produced by android_viberescue_fix_prioritization.md with discipline: write or extend a failing test first, make the smallest possible change, one issue per commit, no unrelated edits, document a rollback plan, and abort if the change cascades beyond expected files. Designed to run in a loop over the fix queue; refuses to proceed if preconditions are unmet."
 techniques:
-  - ST-01
   - ST-02
-  - ST-03
   - CM-02
   - CM-03
-  - RT-05
   - QA-01
-  - QA-02
-  - QA-05
+  - QA-08
 difficulty: advanced
 tags:
   - vibe-coding
@@ -325,12 +321,8 @@ Quality check: A senior engineer reads the commit, can revert it cleanly, the te
 
 ## Techniques Used
 
-- **ST-01 (Clear Objective):** Apply exactly one fix safely; not "improve the codebase."
 - **ST-02 (Structured Sequential Instructions):** Eleven steps (0–10) with strict ordering; later steps depend on earlier ones.
-- **ST-03 (Output Format Specification):** Fixed report schema enables looping (queue → executor → queue update → next).
 - **CM-02 (Constraint Specification):** Must Not block forbids branch switching, test skipping, scope creep.
-- **CM-03 (Pre/Post-Conditions):** Step 0 preconditions + step 6 cascade check + step 8 rollback enforce contract before and after the fix.
-- **RT-05 (Evidence-Based Reasoning):** Step 2 verifies the finding is still real; step 3 grounds the test in the audit's evidence.
+- **CM-03 (Scope Definition):** Smallest-possible-change rule + blast-radius cap + step 6 cascade check bound the fix to exactly one finding's files.
 - **QA-01 (Self-Verification):** Verification checklist at the end.
-- **QA-02 (Self-Check Before Commit):** Cascade check (step 6) is an explicit self-check gate before staging.
-- **QA-05 (Abort Triggers):** Explicit ABORT conditions at steps 0, 2, 3, 5, 6 — half-applied fixes are not allowed.
+- **QA-08 (Gate-Based Verification):** Explicit ABORT conditions at steps 0, 2, 3, 5, 6 — half-applied fixes are not allowed.

@@ -3,14 +3,11 @@ title: "Pricing Experiment Matrix"
 category: product-management/prompts
 description: "Design a pricing experiment matrix that tests price changes — ladders, bundle variants, willingness-to-pay probes — without tanking revenue. Output: an experiment grid with hypotheses per cell, sample-size sanity checks, success and failure thresholds, blast-radius limits, and rollback triggers. Optimized for picking the right experiment to run, not for choosing a single new price."
 techniques:
-  - ST-01
   - ST-02
   - RT-02
-  - RT-03
   - CM-02
   - DS-02
   - DS-06
-  - QA-01
 difficulty: advanced
 tags:
   - decision-making

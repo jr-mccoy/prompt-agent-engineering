@@ -3,13 +3,9 @@ title: "Audit a Vibe-Coded Android Codebase for Fragile / Sprawling AI Patterns"
 category: software-engineering/vibe-coding-rescue/android
 description: "Systematic audit of an AI-generated Android codebase for the specific fragility and sprawl patterns AI tends to introduce — duplicated screens and repositories, dead components, mixed state-management approaches, deprecated APIs (AsyncTask, startActivityForResult, legacy permissions), lifecycle violations, leaked Contexts, force-unwraps, unhandled coroutine exceptions, Compose recomposition smells, Hilt scope errors. Produces a severity-tiered findings report with file:line evidence, AI-pattern category, and concrete fix direction. Refuses keyword-match findings."
 techniques:
-  - ST-01
-  - ST-02
   - ST-03
   - CM-02
-  - DS-01
   - RT-05
-  - RT-07
   - QA-01
   - QA-04
 difficulty: advanced
@@ -318,12 +314,8 @@ Feed this report + `android_viberescue_security_privacy_audit.md` output (if run
 
 ## Techniques Used
 
-- **ST-01 (Clear Objective):** Produce a findings report with evidence and severity, not a generic "review your Android code" essay.
-- **ST-02 (Structured Sequential Instructions):** Eight steps drive scope → ten categories → verify → AI tag → severity → dual-failure → patterns → verify.
 - **ST-03 (Output Format Specification):** Fixed report format with per-finding fields enables downstream tooling (prioritization prompt consumes this directly).
 - **CM-02 (Constraint Specification):** Must Not block forbids keyword findings and Low-finding flooding.
-- **DS-01 (Framework Application):** Ten-category fragility framework specific to AI-generated Android.
 - **RT-05 (Evidence-Based Reasoning):** Every finding traced to file:line; framework-check step prevents false positives.
-- **RT-07 (Cascade Effect Analysis):** AI-pattern signal section traces individual findings to systemic prevention via rules file.
 - **QA-01 (Self-Verification):** Verification checklist + dual-failure-prevention block prevents under- and over-reporting.
-- **QA-04 (Confidence Calibration):** Per-finding confidence labels force explicit grounding.
+- **QA-04 (Uncertainty Acknowledgment):** Per-finding confidence labels force explicit grounding.

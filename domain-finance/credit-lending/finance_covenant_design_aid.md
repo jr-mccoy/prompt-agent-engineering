@@ -7,7 +7,7 @@ techniques:
   - DS-02
   - CM-02
   - NE-10
-  - OC-01
+  - ST-03
 difficulty: advanced
 tags:
   - covenants

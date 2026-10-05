@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-05
   - DS-03
-  - OC-01
+  - ST-03
 difficulty: advanced
 tags:
   - multiplayer
@@ -269,7 +269,7 @@ elif (snapshot_a && !snapshot_b):
 - **ST-02 (Structured Sequential Instructions):** Eight-step process building from categorization to validation
 - **RT-05 (Evidence-Based Reasoning):** Requires bandwidth calculations, latency measurements, error metrics
 - **DS-03 (Tool and Methodology Suggestions):** Provides specific algorithms, data structures, and quantization schemes
-- **OC-01 (Structured Output Format):** Tables, code samples, and test result matrices
+- **ST-03 (Output Format Specification):** Tables, code samples, and test result matrices
 
 ## Related Prompts
 

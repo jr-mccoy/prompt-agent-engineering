@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-02
   - QA-04
-  - NE-14
+  - QA-05
 difficulty: advanced
 tags:
   - hebrew
@@ -164,8 +164,8 @@ Give confidence (usually low without direct verification of the marks) and the o
 
 ## Techniques Used
 
-- **ST-01 (Role & Objective Priming):** Frames the model as a guide to *reading the marking system*, not as a source of accent data — setting the verify-required posture before any mark is identified.
+- **ST-01 (Clear Objective Statement):** Frames the model as a guide to *reading the marking system*, not as a source of accent data — setting the verify-required posture before any mark is identified.
 - **ST-02 (Structured Sequential Instructions):** The 6-step sequence (Fix text → Explain system → Candidate reading → Weigh against grammar → Contested division → Confidence) separates explaining the system from asserting any specific mark.
 - **RT-02 (Multi-Dimensional Analysis Framework):** Treats the te'amim as simultaneously musical, accentual, and syntactic, and the Greek marks as accentual, phonological, and disambiguating — analyzing each role without collapsing them.
 - **QA-04 (Uncertainty Acknowledgment):** Accent identifications, ranks, and divisions are candidate (verify); the te'amim are a weighty-but-fallible witness; confidence is stated as low without direct verification.
-- **NE-14 (Fabrication Prevention):** Bars asserting specific accents, disjunctive ranks, pausal divisions, Greek accent/breathing placements, and grammar citations from memory; each is routed to BHS/BHQ, a critical Greek text, and a named grammar.
+- **QA-05 (Citation Requirements):** Bars asserting specific accents, disjunctive ranks, pausal divisions, Greek accent/breathing placements, and grammar citations from memory; each is routed to BHS/BHQ, a critical Greek text, and a named grammar.

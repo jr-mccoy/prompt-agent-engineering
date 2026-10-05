@@ -6,12 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - RT-02
-  - ED-05
-  - ST-16
-  - AG-01
-  - AG-10
   - NE-04
-  - ED-06
   - QA-02
 difficulty: advanced
 tags:
@@ -345,11 +340,6 @@ VOICE INSTRUCTIONS:
 
 - **ST-01** (Clear Objective Statement) — Unambiguous goal: build a reusable voice profile
 - **ST-02** (Structured Sequential Instructions) — 4-phase process: analyze, cross-check, build, calibrate
-- **RT-02** (Multi-Dimensional Analysis) — 5 analysis dimensions with specific measurement criteria
-- **ED-05** (Reference Class Priming) — Uses the person's own writing as the quality benchmark
-- **ST-16** (Behavioral Trait Declarations) — Captures communication style, stance, and interaction patterns
-- **AG-01** (Personality-First Role Definition) — Builds persona from personality traits, not just expertise
-- **AG-10** (Emotional Context Spectrum) — Maps voice adaptation across different contexts
+- **RT-02** (Multi-Dimensional Analysis Framework) — 5 analysis dimensions with specific measurement criteria
 - **NE-04** (Good vs Bad Example Calibration) — IS/NEVER contrast pairs define voice boundaries
-- **ED-06** (Example Quantity Specification) — Requires multiple samples for robust profiling
-- **QA-02** (Adversarial Thinking) — Calibration tests stress-test the profile in unfamiliar territory
+- **QA-02** (Adversarial Stress-Test) — Calibration tests stress-test the profile in unfamiliar territory

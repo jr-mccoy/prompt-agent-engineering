@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - RT-04
 difficulty: intermediate
 tags:
@@ -220,5 +220,5 @@ Provide:
 | **CM-01** | Theme, grade, group size, and length anchor the pacing and protocol design. |
 | **ST-02** | Nine-step build moves from through-line → pacing → roles → protocols → synthesis. |
 | **DS-01** | Literature-circles framework with accountable-talk structures the discussion. |
-| **OC-01** | Pacing chart, role bank, and stem bank enforce reusable structure. |
+| **ST-03** | Pacing chart, role bank, and stem bank enforce reusable structure. |
 | **RT-04** | Norms, repair moves, and tonal scaffolds protect group dynamics across the arc. |

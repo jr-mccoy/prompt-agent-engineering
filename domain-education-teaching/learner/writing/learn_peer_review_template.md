@@ -6,7 +6,7 @@ techniques:
   - RP-04
   - ED-03
   - DS-01
-  - OC-01
+  - ST-03
   - SV-06
 difficulty: beginner
 tags:
@@ -212,5 +212,5 @@ Student writes all actual feedback. AI messages: 1–3 sentences + one guiding q
 | **RP-04 — Socratic Dialogue** | Student states all observations; AI only asks and calibrates. |
 | **ED-03 — Guided Discovery** | Comprehension check surfaces whether the student actually read before writing feedback. |
 | **DS-01 — Framework** | Five-criterion framework (thesis, evidence, organization, clarity, conclusion) structures the review. |
-| **OC-01 — Output Template** | Structured feedback template (worked well / develop / suggestion / question) ensures complete, usable output. |
+| **ST-03 — Output Format Specification** | Structured feedback template (worked well / develop / suggestion / question) ensures complete, usable output. |
 | **SV-06 — Confirmation-Before-Proceed** | Self-assessment phase confirms feedback is actionable before the student submits it. |

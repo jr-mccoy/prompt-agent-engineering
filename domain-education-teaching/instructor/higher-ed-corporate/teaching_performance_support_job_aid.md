@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: beginner
 tags:
@@ -233,5 +233,5 @@ Sometimes the aid alone works. Sometimes a 60-second walkthrough seeds the habit
 | **ST-02** | Moment → format → distill → draft → test → place → maintain pipeline. |
 | **CM-02** | Time and space constraints (60 sec, one card) drive ruthless distillation. |
 | **DS-01** | Performance-support frame (moment-of-need, not training) drives format choice. |
-| **OC-01** | Format-specific templates produce paste-ready artifact. |
+| **ST-03** | Format-specific templates produce paste-ready artifact. |
 | **QA-01** | In-situ user test verifies the aid solves the actual moment. |

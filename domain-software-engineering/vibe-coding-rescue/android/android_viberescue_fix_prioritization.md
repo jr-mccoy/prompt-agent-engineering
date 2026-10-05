@@ -3,13 +3,10 @@ title: "Prioritize Findings From Android Vibe-Rescue Audits Into a Ranked Fix Qu
 category: software-engineering/vibe-coding-rescue/android
 description: "Take the findings from android_viberescue_codebase_audit.md and android_viberescue_security_privacy_audit.md and produce a ranked fix queue across four tiers (Tier 0 security-critical, Tier 1 crash/data-loss, Tier 2 fragility/maintenance, Tier 3 cleanup) with per-fix impact × effort × reversibility × blast-radius scoring, test-coverage gap, batch-vs-isolate recommendation, and dependency order. Output is consumable directly by android_viberescue_fix_executor.md."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
   - CM-02
-  - DS-03
-  - RT-02
-  - RT-05
+  - DS-06
   - QA-01
 difficulty: intermediate
 tags:
@@ -293,11 +290,8 @@ Run `android_viberescue_fix_executor.md` on the first item in Tier 0 (or the fir
 
 ## Techniques Used
 
-- **ST-01 (Clear Objective):** Output is one executable queue, not a discussion of priorities.
 - **ST-02 (Structured Sequential Instructions):** Ten steps drive merge → score → tier → batch → dependencies → tests → human-gate → queue → sanity → verify.
 - **ST-03 (Output Format Specification):** Strict schema so the executor prompt can consume directly.
 - **CM-02 (Constraint Specification):** Must Not block prevents misordering and unsafe batching.
-- **DS-03 (Multi-Criteria Ranking):** Four-axis scoring with explicit formula and tier mapping.
-- **RT-02 (Decomposition):** Tiering + dependency graph break the work into independently-executable units.
-- **RT-05 (Evidence-Based Reasoning):** Tiering grounded in audit evidence (severity + confidence) rather than vibes.
+- **DS-06 (Prioritization and Severity Guidance):** Four-axis scoring with explicit formula and tier mapping.
 - **QA-01 (Self-Verification):** Verification checklist + dual-failure prevention prevents misordering and queue-paralysis.

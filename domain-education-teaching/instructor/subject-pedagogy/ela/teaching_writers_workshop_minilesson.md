@@ -5,7 +5,7 @@ description: "Design a focused 10–15 minute writer's workshop minilesson on a 
 techniques:
   - CM-01
   - ST-02
-  - OC-01
+  - ST-03
   - DS-01
   - RT-04
 difficulty: intermediate
@@ -188,6 +188,6 @@ For each, provide a follow-up conferring move:
 |-----------|-----------------|
 | **CM-01** | Genre, grade, unit phase, and time constrain every design choice. |
 | **ST-02** | Five-part minilesson architecture (connection → teach → engage → link) is enforced. |
-| **OC-01** | Standard teaching-point frame and anchor-chart template ensure reproducibility. |
+| **ST-03** | Standard teaching-point frame and anchor-chart template ensure reproducibility. |
 | **DS-01** | Workshop architecture (Calkins/Atwell) is the explicit framework. |
 | **RT-04** | Connection move builds purpose and motivation, not just task. |

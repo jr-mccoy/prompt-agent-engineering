@@ -6,7 +6,7 @@ techniques:
   - RT-02
   - DS-06
   - DT-02
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: intermediate
 tags:

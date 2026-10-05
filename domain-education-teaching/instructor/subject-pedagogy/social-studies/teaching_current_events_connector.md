@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - RT-04
 difficulty: intermediate
 tags:
@@ -245,5 +245,5 @@ This is not boilerplate — it's classroom-specific climate work.
 | **CM-01** | Unit, event, and class context anchor connection and source choices. |
 | **ST-02** | Nine-step build moves from vetting → framing → discussion → synthesis. |
 | **DS-01** | Analogical-reasoning and news-literacy frameworks structure the parallel and source work. |
-| **OC-01** | Source vetting table, organizer, and protocol enforce reusable structure. |
+| **ST-03** | Source vetting table, organizer, and protocol enforce reusable structure. |
 | **RT-04** | Climate-protective discussion norms maintain learning relationships under disagreement. |

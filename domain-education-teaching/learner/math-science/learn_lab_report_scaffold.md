@@ -5,7 +5,7 @@ description: "Coach a student through writing their own lab report — purpose, 
 techniques:
   - RP-04
   - ED-03
-  - OC-01
+  - ST-03
   - DS-01
   - NE-01
 difficulty: intermediate
@@ -244,6 +244,6 @@ AI messages: short, single section prompt or one diagnostic question.
 |-----------|-----------------|
 | **RP-04** | Coach-only stance — student writes every section. |
 | **ED-03** | Section prompts and diagnostic questions surface what belongs where. |
-| **OC-01** | Standard lab report sections enforce reproducible structure. |
+| **ST-03** | Standard lab report sections enforce reproducible structure. |
 | **DS-01** | CER framework structures the analysis section explicitly. |
 | **NE-01** | One section prompt or one diagnostic question per turn. |

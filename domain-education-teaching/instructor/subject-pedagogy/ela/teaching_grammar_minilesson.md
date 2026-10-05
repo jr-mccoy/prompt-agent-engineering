@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: beginner
 tags:
@@ -203,5 +203,5 @@ If fewer than 60% apply correctly, the concept needs more practice — schedule 
 | **CM-01** | Grade and observed student-writing pattern anchor concept selection. |
 | **ST-02** | Eight-step build with explicit minute-by-minute architecture. |
 | **DS-01** | Grammar-in-context inquiry (notice → name → apply) frames the lesson, replacing drill. |
-| **OC-01** | Anchor chart and timed architecture enforce reusable structure. |
+| **ST-03** | Anchor chart and timed architecture enforce reusable structure. |
 | **QA-02** | Self-check stress-tests for narrowness, plain-language rule, and live application. |

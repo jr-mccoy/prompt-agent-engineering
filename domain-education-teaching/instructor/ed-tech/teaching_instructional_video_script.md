@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: intermediate
 tags:
@@ -251,5 +251,5 @@ Before publishing:
 | **ST-02** | Outcome → time budget → hook → script → retrieval → production pipeline. |
 | **CM-02** | Length and word-count constraints prevent overstuffing. |
 | **DS-01** | Multimedia-principle frame drives narration/visual decisions. |
-| **OC-01** | Two-column script and production-spec template enforce paste-ready output. |
+| **ST-03** | Two-column script and production-spec template enforce paste-ready output. |
 | **QA-01** | Pilot test (audio-off, 1.5×, learner think-aloud) verifies the script. |

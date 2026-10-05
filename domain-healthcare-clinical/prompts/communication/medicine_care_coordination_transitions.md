@@ -4,7 +4,7 @@ category: medicine
 description: "Structured framework for care transitions, discharge planning, and multidisciplinary team coordination to reduce preventable harm during handoffs"
 techniques:
   - ST-02
-  - OC-01
+  - ST-03
   - CM-01
   - DS-06
   - QA-02

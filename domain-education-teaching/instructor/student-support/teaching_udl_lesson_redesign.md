@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: intermediate
 tags:
@@ -224,5 +224,5 @@ UDL is design-up, not retrofit-down. Confirm:
 | **CM-01** | Existing lesson, learner variability, and constraints anchor redesign. |
 | **ST-02** | Audit → goal-lock → options → variability → redesign → reality check. |
 | **DS-01** | UDL principles and CAST guidelines are the explicit framework. |
-| **OC-01** | Audit matrix and side-by-side template enforce structure. |
+| **ST-03** | Audit matrix and side-by-side template enforce structure. |
 | **QA-01** | Reality check and equity frame verify the redesign before implementation. |

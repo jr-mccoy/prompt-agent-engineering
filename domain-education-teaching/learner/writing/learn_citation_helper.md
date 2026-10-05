@@ -5,7 +5,7 @@ description: "Help a student format citations and in-text references in MLA, APA
 techniques:
   - CM-01
   - ST-02
-  - OC-01
+  - ST-03
   - DS-01
   - QA-01
 difficulty: beginner
@@ -247,6 +247,6 @@ For the full set:
 |-----------|-----------------|
 | **CM-01** | Style, version, source type, and source elements anchor every formatting choice. |
 | **ST-02** | Sequential confirm style → identify elements → format → verify. |
-| **OC-01** | Style-specific templates enforce consistent output. |
+| **ST-03** | Style-specific templates enforce consistent output. |
 | **DS-01** | Style guides (MLA 9, APA 7, Chicago 17) are the explicit framework. |
 | **QA-01** | "No fabrication" rule and reverse-format check prevent invented citations. |

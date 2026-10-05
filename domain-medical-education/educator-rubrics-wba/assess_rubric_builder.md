@@ -7,7 +7,7 @@ techniques:
   - QA-01
   - ED-04
   - CM-02
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - rubric

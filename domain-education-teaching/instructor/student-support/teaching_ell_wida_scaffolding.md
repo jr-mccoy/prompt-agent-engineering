@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: advanced
 tags:
@@ -223,5 +223,5 @@ For students with no English, additional supports:
 | **CM-01** | Content objective, grade, lesson context, and WIDA levels anchor scaffolds. |
 | **ST-02** | Sequential audit → objectives → scaffolds → vocabulary → cognates → equity. |
 | **DS-01** | WIDA Can-Do framework, language-function taxonomy, and tier-2/3 vocabulary structure choices. |
-| **OC-01** | Scaffold-card template enforces consistent structure across levels. |
+| **ST-03** | Scaffold-card template enforces consistent structure across levels. |
 | **QA-02** | Equity audit and "scaffold doesn't lower rigor" rule stress-test the plan. |

@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - ED-03
 difficulty: beginner
 tags:
@@ -238,5 +238,5 @@ This is a useful diagnostic — passive re-reading often hides shallow notes.
 | **CM-01** | Source material, course, assessment context, and format anchor every question. |
 | **ST-02** | Sequential identify concepts → generate by level → format → schedule. |
 | **DS-01** | Bloom's-level framework structures the multi-level question generation. |
-| **OC-01** | Question-set template enforces consistent structure for spaced practice. |
+| **ST-03** | Question-set template enforces consistent structure for spaced practice. |
 | **ED-03** | Free recall, Feynman, and concept-map variants surface what the student doesn't yet know — the point of retrieval practice. |

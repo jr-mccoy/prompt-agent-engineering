@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: beginner
 tags:
@@ -207,5 +207,5 @@ Read aloud to confirm actual runtime. Cut or compress until the segment fits the
 | **ST-02** | Hook → concept → example → practice → job aid → close pipeline. |
 | **CM-02** | Hard time budget and one-skill scope constrain over-design. |
 | **DS-01** | Microlearning frame (single mental model, transfer cue) drives format. |
-| **OC-01** | Production specs enforce paste-ready, time-stamped output. |
+| **ST-03** | Production specs enforce paste-ready, time-stamped output. |
 | **QA-01** | Time-budget audit and reinforcement-pair check verify it will transfer. |

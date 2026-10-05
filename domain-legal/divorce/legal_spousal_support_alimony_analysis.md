@@ -3,12 +3,8 @@ title: "Spousal Support / Alimony Analysis"
 category: legal/divorce
 description: "Analyze spousal support/alimony under the controlling state's framework: identify the support type (temporary, rehabilitative, durational/limited, permanent, reimbursement), apply the statutory factors or any guideline/formula, assess entitlement, amount, and duration, address modifiability and termination triggers (cohabitation, remarriage, retirement), and integrate the post-TCJA tax treatment — producing a support-position memo with a defensible range."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
-  - RT-05
-  - RP-01
   - CM-02
   - QA-01
   - QA-12

@@ -5,7 +5,7 @@ description: "Design a fully asynchronous online module ready to drop into Canva
 techniques:
   - ST-02
   - CM-02
-  - OC-01
+  - ST-03
   - DS-02
   - QA-01
 difficulty: intermediate
@@ -243,6 +243,6 @@ Async ≠ instructor-absent. Specify instructor presence:
 |-----------|-----------------|
 | **ST-02** | Outcomes → load budget → sequence → author → QA pipeline. |
 | **CM-02** | Constrains design to learner time budget and accessibility floor. |
-| **OC-01** | LMS item table and overview-page template enforce paste-ready output. |
+| **ST-03** | LMS item table and overview-page template enforce paste-ready output. |
 | **DS-02** | Multi-LMS mapping accounts for platform-specific item types. |
 | **QA-01** | Pre-launch checklist and student-view test verify release-readiness. |

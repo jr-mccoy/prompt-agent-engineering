@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: advanced
 tags:
@@ -208,5 +208,5 @@ Provide a proficient-level essay outline:
 | **CM-01** | Course, era, time, and target style anchor every choice. |
 | **ST-02** | Document-by-document construction follows historical-thinking sequence. |
 | **DS-01** | HAPP / sourcing / contextualization framework structures rubric and organizer. |
-| **OC-01** | Document template, organizer, and rubric impose reproducible structure. |
+| **ST-03** | Document template, organizer, and rubric impose reproducible structure. |
 | **QA-02** | Document diversity matrix and authenticity disclosure stress-test the assessment for bias and accuracy. |

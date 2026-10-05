@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-02
   - QA-04
-  - NE-14
+  - QA-05
 difficulty: advanced
 tags:
   - hebrew
@@ -168,8 +168,8 @@ Give confidence (usually low without direct verification) and the one verificati
 
 ## Techniques Used
 
-- **ST-01 (Role & Objective Priming):** Frames the model as a guide to *reading the Masoretic system*, not as a source of Masoretic data — setting the verify-required posture before any note is interpreted.
+- **ST-01 (Clear Objective Statement):** Frames the model as a guide to *reading the Masoretic system*, not as a source of Masoretic data — setting the verify-required posture before any note is interpreted.
 - **ST-02 (Structured Sequential Instructions):** The 6-step sequence (Fix text → Locate in system → Qere/Ketiv mechanism → Decode Mp/Mm → Bearing → Confidence) separates explaining the system from asserting any datum.
 - **RT-02 (Multi-Dimensional Analysis Framework):** Distinguishes the apparatus components (Mp, Mm, finalis, Qere/Ketiv) and the question types (transmission, reading tradition, text-critical, interpretive) so they are not collapsed.
 - **QA-04 (Uncertainty Acknowledgment):** Qere/Ketiv type and siglum decodings are candidate (verify); neither Qere nor Ketiv is privileged by default; confidence is stated as low without direct verification.
-- **NE-14 (Fabrication Prevention):** Bars asserting specific Masoretic notes, Qere/Ketiv readings, frequency counts, and reference citations from memory; each is routed to BHS/BHQ and a named Masoretic reference work.
+- **QA-05 (Citation Requirements):** Bars asserting specific Masoretic notes, Qere/Ketiv readings, frequency counts, and reference citations from memory; each is routed to BHS/BHQ and a named Masoretic reference work.

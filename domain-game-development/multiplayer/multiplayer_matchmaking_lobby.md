@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-02
   - DS-03
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - multiplayer
@@ -265,7 +265,7 @@ Time in Queue | MMR Window | Ping Limit | Notes
 - **ST-02 (Structured Sequential Instructions):** Seven-step process from requirements to validation
 - **RT-02 (Multi-Dimensional Analysis):** Evaluates rating systems, queue algorithms, ranks, and anti-smurf independently
 - **DS-03 (Tool and Methodology Suggestions):** Recommends specific rating algorithms with configuration parameters
-- **OC-01 (Structured Output Format):** Tables, flow diagrams, and KPI matrices
+- **ST-03 (Output Format Specification):** Tables, flow diagrams, and KPI matrices
 
 ## Related Prompts
 

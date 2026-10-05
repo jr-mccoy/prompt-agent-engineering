@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:
@@ -242,5 +242,5 @@ State:
 | **CM-01** | Grade, data, service model, and time anchor every choice. |
 | **ST-02** | Sequential diagnostic → sequence → daily architecture → monitoring → audit. |
 | **DS-01** | Science of Reading and structured literacy principles are the explicit framework. |
-| **OC-01** | Daily lesson template and progress-monitoring table enforce reproducibility. |
+| **ST-03** | Daily lesson template and progress-monitoring table enforce reproducibility. |
 | **QA-01** | Plan audit and decision rule for aimline guard against drift and three-cueing relapse. |

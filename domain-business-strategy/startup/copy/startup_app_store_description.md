@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - NE-01
-  - OC-01
+  - ST-03
   - DS-02
 difficulty: intermediate
 tags:
@@ -343,7 +343,7 @@ Thanks for using [App Name]! Love the app? Leave us a review ⭐
 - **ST-01**: Clear objective for app store optimization
 - **ST-02**: Sequential copy development
 - **NE-01**: Single-question discovery
-- **OC-01**: Structured output templates
+- **ST-03**: Structured output templates
 - **DS-02**: ASO metrics and specifications
 
 ## Related Prompts

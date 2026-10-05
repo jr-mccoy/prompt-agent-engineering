@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -191,5 +191,5 @@ Produce 2 variants of the same task with different numbers but the same misconce
 | **CM-01** | Grade, topic, and target misconception anchor every choice in the task. |
 | **ST-02** | Eight-step build: name → construct → prompt → scaffold → key → discourse → variants. |
 | **DS-01** | Error taxonomy (conceptual / procedural / careless / notational) frames classification. |
-| **OC-01** | Five-step student prompt template enforces locate → explain → correct → generalize. |
+| **ST-03** | Five-step student prompt template enforces locate → explain → correct → generalize. |
 | **QA-02** | Self-check stress-tests for plausibility, accidental correctness, and singularity of the error. |

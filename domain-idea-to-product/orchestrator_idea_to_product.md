@@ -3,15 +3,11 @@ title: "Idea-to-Product Master Orchestrator (Interview, Classify, Route, Loop)"
 category: idea-to-product/meta
 description: "Single entry-point prompt: interviews the user about their software/platform idea, classifies what pipeline stage they're starting at, recommends the next 1-3 stages, hands off to the specific stage prompt with the inputs that prompt expects, then loops — critiquing each stage's output before advancing. Ends with a kill/proceed gate before AI-agent handoff."
 techniques:
-  - ST-01
   - ST-02
   - CM-02
-  - RT-01  # Role: pipeline orchestrator
-  - RT-05  # Interrogative mode
-  - DS-02  # Decomposition
-  - DS-06  # Prioritization
+  - RP-01  # Role: pipeline orchestrator
+  - NE-01  # Interrogative mode
   - QA-01  # Verification gate per stage
-  - QA-02  # Adversarial thinking
 difficulty: intermediate
 tags:
   - orchestrator

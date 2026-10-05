@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: advanced
 tags:
@@ -269,5 +269,5 @@ Provide teacher notes on:
 | **CM-01** | Grade, length, district constraints, and community context anchor every phase. |
 | **ST-02** | Eleven-step build moves from framing → phases → action → reflection. |
 | **DS-01** | Action-civics framework + theory-of-change reasoning structures the project. |
-| **OC-01** | Phase map, action plan, and rubric enforce reusable structure across student groups. |
+| **ST-03** | Phase map, action plan, and rubric enforce reusable structure across student groups. |
 | **QA-02** | Self-check stress-tests for partisan capture, tokenistic awareness campaigns, and outcome-vs-learning conflation. |

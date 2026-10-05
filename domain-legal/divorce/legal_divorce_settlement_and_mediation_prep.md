@@ -3,12 +3,9 @@ title: "Divorce Settlement and Mediation Prep"
 category: legal/divorce
 description: "Prepare client and counsel for divorce mediation or settlement on the financial issues: gate on disclosure completeness, map interests behind positions for property, support, and tax, set a BATNA against the likely litigated property division and support range, build a proposal ladder (opening/target/walk-away) per issue, identify trade space (asset trades vs. support duration, tax character, timing, QDRO mechanics), screen DV/coercion mediation-appropriateness, and produce a mediation agenda and a draft financial term-sheet skeleton."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
   - CM-02
-  - DS-02
   - QA-01
   - QA-12
 difficulty: advanced

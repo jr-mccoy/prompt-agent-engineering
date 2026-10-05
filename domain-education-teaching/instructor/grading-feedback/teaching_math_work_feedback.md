@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - RT-04
 difficulty: intermediate
 tags:
@@ -196,5 +196,5 @@ If you'll see this student in a conference, plan one diagnostic question that su
 | **CM-01** | Topic, rubric, and stage anchor feedback depth and tone. |
 | **ST-02** | Seven-step sequence: read → score → choose → write → differentiate → bridge → check. |
 | **DS-01** | Process taxonomy (strategy / representation / reasoning / computation / communication) frames the feedback. |
-| **OC-01** | Four-part feedback template enforces consistent structure across stacks. |
+| **ST-03** | Four-part feedback template enforces consistent structure across stacks. |
 | **RT-04** | Tone preserves student-teacher relationship while delivering specific critique. |

@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-02
   - QA-04
-  - NE-14
+  - QA-05
 difficulty: advanced
 tags:
   - original-languages
@@ -200,8 +200,8 @@ Explain at a framework level why these canonical and versification differences e
 
 ## Techniques Used
 
-- **ST-01 (Role & Objective Priming):** Frames the model as a comparison-scaffold builder, not a canon authority — the objective is an explicitly verify-required map across traditions, which sets the anti-fabrication posture before any datum is offered.
+- **ST-01 (Clear Objective Statement):** Frames the model as a comparison-scaffold builder, not a canon authority — the objective is an explicitly verify-required map across traditions, which sets the anti-fabrication posture before any datum is offered.
 - **ST-02 (Structured Sequential Instructions):** The 6-step sequence (Fix target → Canon inclusion → Ordering → Versification → Naming → Framework) separates the three distinct questions (canon, ordering, naming) that are routinely conflated, and defers every specific datum to verification.
 - **RT-02 (Multi-Dimensional Analysis Framework):** Forces analysis across the distinct axes of divergence — inclusion, ordering, versification, naming, and historical cause — so no single axis is mistaken for the whole picture.
 - **QA-04 (Uncertainty Acknowledgment):** Every canon-inclusion, versification, and naming claim carries a verify-required flag; canon-formation history is presented as scholarly debate, not settled narrative; confidence is stated as low without verification.
-- **NE-14 (Fabrication Prevention):** Bars asserting canon lists, Psalm-numbering offsets, chapter/verse mappings, conciliar decisions, and publication dates from memory; each is routed to the tradition's own published canon list or numbered edition.
+- **QA-05 (Citation Requirements):** Bars asserting canon lists, Psalm-numbering offsets, chapter/verse mappings, conciliar decisions, and publication dates from memory; each is routed to the tradition's own published canon list or numbered edition.

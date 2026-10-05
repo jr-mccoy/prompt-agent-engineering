@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - QA-04
   - DS-01
-  - OC-01
+  - ST-03
   - QA-11
 difficulty: beginner
 tags:
@@ -211,5 +211,5 @@ practice session before retry" / "Same-day retry acceptable for computation skil
 | **ST-01** | Skill operationalization anchors all design decisions. |
 | **QA-04** | Mastery threshold defined upfront; outcome evaluated against it. |
 | **DS-01** | Item design governed by skill taxonomy (what "mastery" means for this type of skill). |
-| **OC-01** | Standard check template applied to both versions for consistency. |
+| **ST-03** | Standard check template applied to both versions for consistency. |
 | **QA-11** | Binary pass/retry logic with explicit threshold and escalation path. |

@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: intermediate
 tags:
@@ -262,5 +262,5 @@ These signal program health more than completion checkboxes.
 | **ST-02** | Define ramped → map domains → sequence → assign → measure pipeline. |
 | **CM-02** | Window length and role/owner matrix constrain scope and ownership. |
 | **DS-01** | Six-domain frame (logistics/compliance/role/org/culture/network) ensures coverage. |
-| **OC-01** | Tables and templates produce paste-ready program artifacts. |
+| **ST-03** | Tables and templates produce paste-ready program artifacts. |
 | **QA-01** | Pulses and retros verify the program against actual experience. |

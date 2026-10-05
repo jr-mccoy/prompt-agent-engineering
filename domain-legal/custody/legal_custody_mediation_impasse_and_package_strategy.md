@@ -3,12 +3,9 @@ title: "Custody Mediation Impasse and Package Strategy"
 category: legal/custody
 description: "Break a stalled custody mediation or structure a multi-session one: diagnose the impasse type (positional, informational, emotional/trust, structural), design package proposals across the full trade space (legal-custody domains, schedule, holidays, transportation, ROFR, review clauses), deploy conditional and contingent terms (step-up schedules, tripwires, review dates) that let distrustful parents say yes, plan caucus use, capture partial agreement, and recognize when mediation should end (futility, coercion, bad-faith nondisclosure)."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
   - CM-02
-  - DS-02
   - QA-01
   - QA-12
 difficulty: advanced

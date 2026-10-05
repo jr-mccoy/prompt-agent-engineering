@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-02
   - DS-03
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - audio
@@ -407,7 +407,7 @@ Snapshot transition time: 300ms default, 1500ms for death
 - ST-02 (Structured Sequential Instructions) - Seven numbered steps building from requirements through validation
 - RT-02 (Multi-Dimensional Analysis Framework) - Each system analyzed across configuration, impact, and platform constraints
 - DS-03 (Tool and Methodology Suggestions) - Recommends FMOD vs Wwise vs native with decision criteria
-- OC-01 (Output Structure Specification) - Defines expected deliverable format with tables, diagrams, and validation checklist
+- ST-03 (Output Format Specification) - Defines expected deliverable format with tables, diagrams, and validation checklist
 
 **Related Prompts:**
 - `domain-game-development/performance/performance_profiling_optimization.md` - Profile audio thread CPU and memory usage

@@ -3,13 +3,10 @@ title: "Custody Evaluation Prep and Response"
 category: legal/custody
 description: "Prepare a client for a court-ordered custody evaluation and critique the evaluator's report: explain the evaluation process and what is assessed, prepare the client for interviews/observation/testing without coaching dishonesty, assemble relevant collateral and records, and analyze the completed report for methodology gaps, bias, unsupported conclusions, and best-interests-factor alignment — producing a preparation guide and a report-critique memo with cross-examination points."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
   - RT-05
   - CM-02
-  - QA-01
   - QA-12
 difficulty: advanced
 tags:

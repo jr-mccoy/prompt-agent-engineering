@@ -7,7 +7,6 @@ techniques:
   - QA-10
   - CM-02
   - CM-01
-  - QA-08
   - QA-12
 difficulty: advanced
 tags:
@@ -372,7 +371,6 @@ After completing this prompt, you will have:
 | QA-10 (Test Battery Protocol) | Detailed checklists for each regulatory framework |
 | CM-02 (Constraint Specification) | Apple's exact API reason codes and data type identifiers |
 | CM-01 (Explicit Context Framing) | Privacy-specific terms: IDFA, ATT, DPA, DPIA, required reason APIs |
-| QA-08 (Gate-Based Verification) | Each step validates before proceeding |
 | QA-12 (False Positives Identification) | Prevents common misclassifications in privacy labels |
 
 ## Related Prompts

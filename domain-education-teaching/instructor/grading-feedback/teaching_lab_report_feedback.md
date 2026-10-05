@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -211,5 +211,5 @@ This pushes the report toward fuller scientific argument.
 | **CM-01** | Lab, rubric, and CER tier anchor feedback depth and language. |
 | **ST-02** | Seven-step sequence: read → score → choose → write → match → push → check. |
 | **DS-01** | CER framework structures the feedback into named components. |
-| **OC-01** | Component-by-component template enforces reusable structure. |
+| **ST-03** | Component-by-component template enforces reusable structure. |
 | **QA-02** | Self-check stress-tests for rewriting, generic comments, and missing limitations. |

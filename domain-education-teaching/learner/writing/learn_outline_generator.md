@@ -6,7 +6,7 @@ techniques:
   - RP-04
   - ED-03
   - ED-01
-  - OC-01
+  - ST-03
   - NE-01
 difficulty: intermediate
 tags:
@@ -238,5 +238,5 @@ Each AI message: short, single prompt. Student does all content writing.
 | **RP-04** | The AI is a structural coach, asking and prompting; the student writes content. |
 | **ED-03** | Slot-by-slot prompts guide the student to discover the structure of their own argument. |
 | **ED-01** | Scaffolds (skeleton, criterion questions) build incrementally; the student adds content one section at a time. |
-| **OC-01** | Genre-specific skeletons enforce reproducible structure without filling content. |
+| **ST-03** | Genre-specific skeletons enforce reproducible structure without filling content. |
 | **NE-01** | One slot prompt or one diagnostic question per turn. |

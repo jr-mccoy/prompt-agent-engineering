@@ -3,12 +3,9 @@ title: "Divorce Intake and Case Assessment"
 category: legal/divorce
 description: "Conduct a structured divorce/dissolution intake and produce a case-assessment memo: residency and subject-matter jurisdiction, grounds, asset and debt snapshot, children and custody posture, urgent issues (domestic violence, asset dissipation, immediate support need), client objectives, conflict screen, and a recommended process path (litigation, mediation, or collaborative) — all sized to the controlling state's dissolution statute."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
   - CM-02
-  - DS-02
   - QA-01
   - QA-12
 difficulty: intermediate

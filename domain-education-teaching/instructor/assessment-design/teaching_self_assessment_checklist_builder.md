@@ -5,7 +5,7 @@ description: "Build student self-assessment tools calibrated to rubric criteria 
 techniques:
   - RT-05
   - ST-01
-  - OC-01
+  - ST-03
   - CM-02
   - QA-01
 difficulty: beginner
@@ -221,6 +221,6 @@ CALIBRATION NOTES:
 |-----------|-----------------|
 | **RT-05** | Metacognitive framing: the checklist trains students to apply criteria to their own work. |
 | **ST-01** | Translation pipeline: rubric criterion → student language → observable indicator → reflection. |
-| **OC-01** | Checklist and rating scale templates ensure consistent, repeatable format. |
+| **ST-03** | Checklist and rating scale templates ensure consistent, repeatable format. |
 | **CM-02** | Grade-level vocabulary check and teacher guide address audience-appropriate design. |
 | **QA-01** | Vocabulary check and quality indicators verify the checklist before use. |

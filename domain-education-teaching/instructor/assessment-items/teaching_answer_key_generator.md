@@ -4,7 +4,7 @@ category: education-teaching/instructor/assessment-items
 description: "Take any existing assessment and produce a complete scoring guide — correct answers, full and partial credit criteria, common error patterns per item, and diagnostic interpretation of wrong answers so grading yields instructional data."
 techniques:
   - ST-01
-  - OC-01
+  - ST-03
   - QA-01
   - DS-01
   - QA-02
@@ -186,7 +186,7 @@ Estimated grading time per paper: [N minutes]
 | Technique | How It's Applied |
 |-----------|-----------------|
 | **ST-01** | Structured scoring entry format applied consistently across all item types. |
-| **OC-01** | Scoring entry template enables calibration and reproducible grading. |
+| **ST-03** | Scoring entry template enables calibration and reproducible grading. |
 | **QA-01** | Calibration notes and edge-case decisions ensure grading consistency. |
 | **DS-01** | Objective mapping links items to learning goals for targeted instructional response. |
 | **QA-02** | Common wrong answers with named misconceptions make grading diagnostically useful. |

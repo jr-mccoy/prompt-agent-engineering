@@ -6,7 +6,7 @@ techniques:
   - ED-03
   - ST-02
   - NE-01
-  - OC-01
+  - ST-03
   - SV-06
 difficulty: beginner
 tags:
@@ -181,5 +181,5 @@ Output: 5–8 target words learned in context, produced in student sentences, re
 | **ED-03 — Guided Discovery** | Inference question before definition; meaning constructed by student, not handed over. |
 | **ST-02 — Sequential Steps** | Context → inference → define → produce → recall → synthesize — applied in fixed order. |
 | **NE-01 — Single-Question Pacing** | One word at a time; batch limit of 5–8 before recall check. |
-| **OC-01 — Output Template** | Consistent per-word structure: sentence → inference question → confirm → student production. |
+| **ST-03 — Output Format Specification** | Consistent per-word structure: sentence → inference question → confirm → student production. |
 | **SV-06 — Confirmation-Before-Proceed** | Recall check confirms retention before expanding to a new batch. |

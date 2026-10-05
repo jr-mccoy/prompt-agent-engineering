@@ -7,7 +7,7 @@ techniques:
   - CM-02
   - RT-03
   - QA-01
-  - OC-01
+  - ST-03
 difficulty: advanced
 tags:
   - remediation

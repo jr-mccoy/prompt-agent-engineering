@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:
@@ -207,5 +207,5 @@ If this test must be comparable to a prior version, output a side-by-side bluepr
 | **CM-01** | Use case, time, point cap, and instructional emphasis anchor weights and counts. |
 | **ST-02** | Eight-step build moves from objectives → matrix → time → audit. |
 | **DS-01** | DOK and Bloom's frameworks structure rigor; weighted-coverage is the validity model. |
-| **OC-01** | Specifications matrix template enforces consistent structure. |
+| **ST-03** | Specifications matrix template enforces consistent structure. |
 | **QA-01** | Validity audit and time-budget reconciliation verify before items are written. |

@@ -3,13 +3,8 @@ title: "Grandparent / Third-Party Custody and Visitation Analysis"
 category: legal/custody
 description: "Analyze a non-parent's standing and substantive claim for custody or visitation under the controlling state's third-party statute and the constitutional Troxel framework: assess statutory standing (grandparent, de facto/psychological parent, relative caregiver), apply the heightened standard that respects a fit parent's presumption and decision-making, address required findings (harm, parental unfitness, or the state's threshold), and produce a position memo with the proof required and the likelihood of success."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-01
-  - RT-02
-  - RT-05
-  - RP-01
   - CM-02
   - QA-01
   - QA-12

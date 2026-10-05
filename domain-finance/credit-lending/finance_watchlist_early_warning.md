@@ -7,7 +7,7 @@ techniques:
   - RT-05
   - NE-10
   - QA-02
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - early-warning
@@ -61,7 +61,7 @@ Provide as much as available; missing items are flagged, not invented.
 
 ### Must
 - Define each indicator with a measurable trigger threshold computed from supplied data (DS-02).
-- Map each trigger to a specific escalation action and owner (OC-01).
+- Map each trigger to a specific escalation action and owner (ST-03).
 - Use forward-looking signals where possible (RT-05): leading indicators ahead of lagging defaults.
 - Cross-check (QA-02) that triggers are not redundant or conflicting, and that a single benign fluctuation does not over-escalate.
 - State the watchlist scale used; never map to an external agency rating.

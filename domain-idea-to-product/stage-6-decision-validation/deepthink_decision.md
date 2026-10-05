@@ -3,13 +3,8 @@ title: "Deep-Think: Decision"
 category: deep-analysis/decision
 description: "A multi-phase, multi-perspective decision-making system for working through hard choices with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose options & criteria → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: recommendation + rationale + calibrated confidence + reversibility + tripwires."
 techniques:
-  - ST-01
-  - ST-02
-  - ST-04
-  - ST-42
   - RT-02
   - CM-02
-  - QA-01
   - QA-02
   - QA-04
   - QA-09

@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:
@@ -263,5 +263,5 @@ Resistance is real; transparent communication reduces it.
 | **CM-01** | Course, district policy, and stakeholder context anchor every translation choice. |
 | **ST-02** | Eleven-step build moves from audit → priority → scale → policy → translation. |
 | **DS-01** | Power-standards and proficiency-scale frameworks structure the conversion. |
-| **OC-01** | Scale templates and evidence-plan tables enforce reusable structure. |
+| **ST-03** | Scale templates and evidence-plan tables enforce reusable structure. |
 | **QA-01** | Self-check and audit verify the system against SBG anti-patterns before rollout. |

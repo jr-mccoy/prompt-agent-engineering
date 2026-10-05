@@ -8,7 +8,6 @@ techniques:
   - CM-01
   - RT-02
   - RT-01
-  - QA-01
 difficulty: advanced
 tags:
   - critical-care

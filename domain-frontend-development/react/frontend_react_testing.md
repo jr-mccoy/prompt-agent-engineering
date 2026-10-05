@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - RT-02
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -685,7 +685,7 @@ jobs:
 - **ST-01 (Clear Objective Statement):** Focused testing strategy goal
 - **ST-02 (Structured Sequential Instructions):** Step-by-step test design process
 - **RT-02 (Multi-Dimensional Analysis):** Covers multiple test types
-- **OC-01 (Output Format Templates):** Clear test templates
+- **ST-03 (Output Format Specification):** Clear test templates
 - **QA-02 (Adversarial Stress-Test):** Testing edge cases and error states
 
 ## Related Prompts

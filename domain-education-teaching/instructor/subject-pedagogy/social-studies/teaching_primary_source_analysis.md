@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -242,5 +242,5 @@ Provide a simple rubric for the interpretation paragraph:
 | **CM-01** | Source, era, and grade anchor every question. |
 | **ST-02** | Eight-step build moves from vetting → questions → architecture → assessment. |
 | **DS-01** | Wineburg's four historical-thinking moves frame the lesson. |
-| **OC-01** | Graphic organizer and rubric enforce structural consistency. |
+| **ST-03** | Graphic organizer and rubric enforce structural consistency. |
 | **QA-02** | Self-check stress-tests for genericness, summary-vs-interpretation, and missing perspectives. |

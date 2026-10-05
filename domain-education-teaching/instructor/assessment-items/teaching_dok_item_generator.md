@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -242,5 +242,5 @@ For DOK 3 and DOK 4 items, generate a sample student response that would meet th
 | **CM-01** | Standard, grade, and use-case anchor item content and DOK targets. |
 | **ST-02** | Nine-step build moves through all four DOK levels with analysis at each. |
 | **DS-01** | Webb's DOK framework structures the items and the analysis discipline. |
-| **OC-01** | Item-plus-analysis template enforces defensible DOK leveling. |
+| **ST-03** | Item-plus-analysis template enforces defensible DOK leveling. |
 | **QA-02** | Cross-DOK audit and self-check stress-test for level drift and routine-explanation traps. |

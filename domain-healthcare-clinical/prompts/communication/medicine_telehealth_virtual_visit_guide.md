@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - QA-04
   - DS-06
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - medicine

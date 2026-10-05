@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -251,5 +251,5 @@ Check the lesson against:
 | **CM-01** | Language, level, and class context anchor structure choice and input volume. |
 | **ST-02** | Eleven-step build moves from triad → meaning → story → circling → reading → audit. |
 | **DS-01** | Krashen's input hypothesis + TPRS/CI frameworks structure the lesson's logic. |
-| **OC-01** | Story arc, circling table, and check menu enforce reusable structure. |
+| **ST-03** | Story arc, circling table, and check menu enforce reusable structure. |
 | **QA-02** | Anti-patterns audit + self-check stress-tests for over-structure-coverage and forced production. |

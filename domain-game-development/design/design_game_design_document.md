@@ -6,7 +6,6 @@ techniques:
   - ST-01
   - ST-02
   - ST-03
-  - OC-01
   - DS-01
 difficulty: intermediate
 tags:
@@ -381,8 +380,7 @@ deck/discard counts.
 
 - **ST-01 (Clear Objective Statement):** Opens with a specific, actionable objective for GDD generation
 - **ST-02 (Structured Sequential Instructions):** 8 numbered steps guide the user through the full document
-- **ST-03 (Explicit Scope Boundaries):** MoSCoW prioritization and "Won't Have" section define scope limits
-- **OC-01 (Structured Output Format):** Specifies exact sections and table formats for the GDD
+- **ST-03 (Output Format Specification):** Specifies exact sections and table formats for the GDD, including the MoSCoW "Won't Have" section that fixes scope limits
 - **DS-01 (Decision Framework):** MoSCoW framework for feature prioritization and cut planning
 
 ## Related Prompts

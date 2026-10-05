@@ -7,7 +7,7 @@ techniques:
   - CM-02
   - DS-01
   - QA-01
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - higher-education
@@ -227,4 +227,4 @@ Bring to TA meeting.
 | **CM-02** | Fixed time blocks and grading rubric scope constrain over-design. |
 | **DS-01** | Section-type frame (recitation vs. discussion vs. clarification) drives moves. |
 | **QA-01** | Three-section reflection loop verifies and adjusts. |
-| **OC-01** | Block-by-block script template enforces runnable output. |
+| **ST-03** | Block-by-block script template enforces runnable output. |

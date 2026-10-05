@@ -20,6 +20,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Covered by 8 new unit tests.
 
 ### Changed
+- **Wave 10 technique-hygiene follow-up** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6). `validate_technique_catalog.py` now prints 0 warnings.
+  - **Deprecated codes retired:** OC-01 → ST-03 (141 prompts) and QA-03 → QA-01 (1) in frontmatter and in the same files' body technique lists. Where the target was already listed, the old code was deleted. One OC-01 entry that described a verification checklist now cites QA-01.
+  - **Over-long lists trimmed to 3–5:** 65 prompts hand-read (all `mobile/android/improvement/` prompts over 5, `ios_privacy_compliance`, the ABG/ECG/pharmacokinetics prompts, and every prompt with 8+ codes), plus 4 vendored deepthink copies re-synced. Body lists now match frontmatter and use catalog names; IDs were switched only where a body label showed a different technique was meant (e.g. QA-05 "Abort Triggers" → QA-08, DS-03 "Multi-Criteria Ranking" → DS-06).
+  - **Mislabel fixed:** four biblical-studies `original-languages/` prompts cited NE-14 as "Fabrication Prevention"; they now cite QA-05 (Citation Requirements).
+  - **Not changed:** 48 image-generation prompts keep 8+ codes because the 8 core SV techniques are the domain's required method. 1,143 prompts with 6–7 codes remain as a backlog. Routing is unchanged (scope@1 84.6%, kind@1 97.7% over 205 cases).
 - **13 undefined technique codes remapped** (DC-01, PR-01/02/03, CR-01/02, IT-01/02, AN-01, SC-01/03, FP-01, WF-01; 133 citations in 110 files). Each was mapped to the existing catalog code that matches what the prompt does. The 46 "ID (Name)" frontmatter entries in iOS and Android prompts are now bare IDs, corrected where the name showed a different technique was meant.
 - **Three one-skill "categories" folded into real ones:** `ai-native-rollouts` → `skills/non-coding/business/`, `review-prompt` → `skills/llm-application-dev/`, `vibe-coding-rescue` → `skills/developer-tools/`. UIDs are preserved, and the old public IDs are recorded as aliases.
 - **Coverage Wave 9: depth in thin subfolders (39 prompts, 15 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).

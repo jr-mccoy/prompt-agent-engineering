@@ -3,13 +3,10 @@ title: "Hidden Asset and Dissipation Investigation Plan"
 category: legal/divorce
 description: "Build an investigation plan to find undisclosed assets and prove marital-waste/dissipation in divorce: a red-flag inventory, a lifestyle-vs-reported-income analysis, a document and discovery roadmap (subpoenas, tax-return cross-checks, business records), a tracing plan for transfers to third parties, a forensic-accountant scope, and a dissipation claim framework under the state's standard with burden and remedy."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
   - RT-05
   - CM-02
-  - QA-01
   - QA-12
 difficulty: advanced
 tags:

@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - NE-01
   - AG-11
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - startup
@@ -279,7 +279,7 @@ See: [startup_illustration_image_prompt.md]
 - **ST-02**: Sequential style development
 - **NE-01**: Single-question discovery
 - **AG-11**: Taxonomy-based style classification
-- **OC-01**: Structured guideline templates
+- **ST-03**: Structured guideline templates
 
 ## Related Prompts
 
