@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-10-04",
+    "generated": "2026-10-05",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
     "total_indexed_artifacts": 6135,
@@ -1360,14 +1360,11 @@
       "category": "AI-ML/agentic-ai-systems",
       "description": "Audit portable project continuity memory for stale, disputed, poisoned, bloated, unsafe, private, or secret-leaking records before future agents rely on it.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
         "CM-02",
-        "RT-02",
         "QA-01",
-        "QA-12",
-        "AG-44"
+        "QA-12"
       ],
       "keywords": [
         "project-memory",
@@ -48464,7 +48461,7 @@
         "ST-02",
         "RT-02",
         "QA-04",
-        "NE-14"
+        "QA-05"
       ],
       "keywords": [
         "original-languages",
@@ -48703,7 +48700,7 @@
         "ST-02",
         "RT-02",
         "QA-04",
-        "NE-14"
+        "QA-05"
       ],
       "keywords": [
         "hebrew",
@@ -48736,7 +48733,7 @@
         "ST-02",
         "RT-02",
         "QA-04",
-        "NE-14"
+        "QA-05"
       ],
       "keywords": [
         "hebrew",
@@ -49007,7 +49004,7 @@
         "ST-02",
         "RT-02",
         "QA-04",
-        "NE-14"
+        "QA-05"
       ],
       "keywords": [
         "original-languages",
@@ -51112,12 +51109,9 @@
       "category": "business-strategy/research",
       "description": "Run a structured scan of a competitive landscape that feeds a single specified decision rather than producing a research dump. Output: a named-competitor inventory, claimed differentiation per competitor, observable gaps you can exploit, signals to monitor, and a one-paragraph 'what this changes' for the named decision.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "RT-02",
         "CM-02",
-        "DS-02",
-        "DS-06",
         "QA-01",
         "QA-02"
       ],
@@ -51938,7 +51932,7 @@
         "ST-01",
         "ST-02",
         "NE-01",
-        "OC-01",
+        "ST-03",
         "DS-01"
       ],
       "keywords": [
@@ -52190,7 +52184,7 @@
         "ST-01",
         "ST-02",
         "NE-01",
-        "OC-01",
+        "ST-03",
         "DS-02"
       ],
       "keywords": [
@@ -52217,7 +52211,7 @@
         "ST-02",
         "RT-03",
         "NE-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "startup",
@@ -52243,7 +52237,7 @@
         "ST-02",
         "NE-01",
         "AG-10",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "startup",
@@ -56149,14 +56143,11 @@
       "category": "decision-making",
       "description": "Design a coherent goal system for a team or org: top-level objective, key results that gate it, cascading sub-goals owned by named layers, review cadence, and the rule for what to drop. Output is a single-page system that can run for a quarter or longer without re-litigation, with explicit failure modes and a cascade-integrity check.",
       "techniques": [
-        "ST-01",
         "ST-02",
-        "RT-02",
         "DS-01",
         "DS-02",
         "DS-06",
-        "CM-02",
-        "QA-01"
+        "CM-02"
       ],
       "keywords": [
         "decision-making",
@@ -56313,14 +56304,10 @@
       "category": "decision-making",
       "description": "Scan an industry, jurisdiction, or product surface for regulatory risks relevant to a specific product or decision. Output: a risk inventory tagged by jurisdiction and regime, probability x impact scoring, monitoring signals per risk, hedging actions, and a decision-shaped 'what to do this quarter' summary. Optimized to feed a decision, not produce a compliance audit.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "RT-02",
-        "RT-03",
-        "DS-02",
         "DS-06",
         "CM-02",
-        "QA-01",
         "QA-02"
       ],
       "keywords": [
@@ -57973,13 +57960,8 @@
       "category": "deep-analysis/decision",
       "description": "A plain-English version of the deep-think decision system, written for non-technical users. Same five-phase, multi-perspective rigor as the original — Frame, Break Down, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language, worked examples, and friendlier check-ins. Result: an honest recommendation with reasoning, confidence, how-hard-to-undo, and warning signs that would tell you the decision was wrong.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "CM-02",
-        "QA-01",
         "QA-02",
         "QA-04",
         "QA-09"
@@ -58013,13 +57995,8 @@
       "category": "deep-analysis/decision",
       "description": "A multi-phase, multi-perspective decision-making system for working through hard choices with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose options & criteria → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: recommendation + rationale + calibrated confidence + reversibility + tripwires.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "CM-02",
-        "QA-01",
         "QA-02",
         "QA-04",
         "QA-09"
@@ -58054,14 +58031,9 @@
       "category": "deep-analysis/design",
       "description": "A plain-English version of the deep-think design system, written for non-technical users. Same five-phase, multi-perspective rigor as the original — Frame, Break Down, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language, worked examples, and friendlier check-ins. Result: a design document with the choices made, the tradeoffs accepted honestly, and the open questions named out loud.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "RT-07",
         "CM-02",
-        "QA-01",
         "QA-02",
         "QA-04"
       ],
@@ -58095,14 +58067,9 @@
       "category": "deep-analysis/design",
       "description": "A multi-phase, multi-perspective design system for working through what to build with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose into design dimensions → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: design spec with documented tradeoffs, constraints, and open questions.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "RT-07",
         "CM-02",
-        "QA-01",
         "QA-02",
         "QA-04"
       ],
@@ -58136,16 +58103,11 @@
       "category": "deep-analysis/evaluation",
       "description": "A plain-English version of the deep-think evaluation system for reviewing something that already exists. Same five-step rigor as the original — Frame, Break Down Criteria and Evidence, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language and friendlier check-ins. Result: an evaluation report with review criteria, strengths, problems, missing evidence, pass/revise/reject recommendation, confidence, and caveats.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "CM-02",
         "QA-01",
         "QA-02",
-        "QA-04",
-        "QA-09"
+        "QA-04"
       ],
       "keywords": [
         "deep-analysis",
@@ -58177,16 +58139,11 @@
       "category": "deep-analysis/evaluation",
       "description": "A multi-phase, multi-perspective evaluation system for reviewing an existing artifact, proposal, plan, design, document, or output. Drives the model through Frame → Decompose criteria & evidence → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: evaluation report with criteria, weighted findings, evidence gaps, recommendation, confidence, and reviewer caveats.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "CM-02",
         "QA-01",
         "QA-02",
-        "QA-04",
-        "QA-09"
+        "QA-04"
       ],
       "keywords": [
         "deep-analysis",
@@ -58218,14 +58175,9 @@
       "category": "deep-analysis/plan",
       "description": "A plain-English version of the deep-think planning system, written for non-technical users. Same five-phase, multi-perspective rigor as the original — Frame, Break Down, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language, worked examples, and friendlier check-ins. Result: a sequenced plan with named risks, warning signs, and clear stop-the-whole-thing conditions.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "RT-07",
         "CM-02",
-        "QA-01",
         "QA-02",
         "QA-04"
       ],
@@ -58258,14 +58210,9 @@
       "category": "deep-analysis/plan",
       "description": "A multi-phase, multi-perspective planning system for working through how to get from here to there with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose into milestones & dependencies → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: sequenced plan with risks, checkpoints, and abort conditions.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "RT-07",
         "CM-02",
-        "QA-01",
         "QA-02",
         "QA-04"
       ],
@@ -58299,12 +58246,7 @@
       "category": "deep-analysis/problem",
       "description": "A plain-English version of the deep-think problem-analysis system, written for non-technical users. Same five-phase, multi-perspective rigor as the original — Frame, Break Down, Multiple Viewpoints, Stress-Test, Sum Up — with simpler language, worked examples, and friendlier check-ins. Result: an honest diagnosis with the places you could push to learn more or change the situation, plus how confident the answer is.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
-        "RT-09",
         "CM-02",
         "QA-01",
         "QA-02",
@@ -58340,12 +58282,7 @@
       "category": "deep-analysis/problem",
       "description": "A multi-phase, multi-perspective analysis system for working through hard problems or questions with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate to keep the user steering. Terminal artifact: diagnosis + leverage points + confidence calibration.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
-        "RT-09",
         "CM-02",
         "QA-01",
         "QA-02",
@@ -60720,7 +60657,7 @@
       "techniques": [
         "CM-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "DS-01",
         "QA-02"
       ],
@@ -60752,7 +60689,7 @@
       "techniques": [
         "RT-04",
         "ST-01",
-        "OC-01",
+        "ST-03",
         "QA-01",
         "CM-02"
       ],
@@ -60917,7 +60854,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -60982,7 +60919,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -61048,7 +60985,7 @@
         "ST-01",
         "QA-04",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-11"
       ],
       "keywords": [
@@ -61079,7 +61016,7 @@
       "description": "Design a structured peer review protocol — with a calibration activity, criteria-anchored reviewer checklist, sentence starters, reviewee response guide, and a feedback quality rubric — so peer review produces revision, not just reaction.",
       "techniques": [
         "ST-01",
-        "OC-01",
+        "ST-03",
         "QA-01",
         "CM-02",
         "RT-05"
@@ -61113,7 +61050,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -61144,7 +61081,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -61176,7 +61113,7 @@
       "techniques": [
         "RT-05",
         "ST-01",
-        "OC-01",
+        "ST-03",
         "CM-02",
         "QA-01"
       ],
@@ -61209,7 +61146,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -61239,7 +61176,7 @@
       "description": "Take any existing assessment and produce a complete scoring guide — correct answers, full and partial credit criteria, common error patterns per item, and diagnostic interpretation of wrong answers so grading yields instructional data.",
       "techniques": [
         "ST-01",
-        "OC-01",
+        "ST-03",
         "QA-01",
         "DS-01",
         "QA-02"
@@ -61274,7 +61211,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -61307,7 +61244,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -61341,7 +61278,7 @@
         "QA-02",
         "DS-01",
         "ST-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "assessment",
@@ -61404,7 +61341,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -61466,7 +61403,7 @@
       "description": "Generate short-answer assessment items with model answers, an annotated response spectrum (strong → misconception), a 0–3 scoring rubric, and feedback templates for each response tier — so wrong answers become diagnostic information.",
       "techniques": [
         "ST-01",
-        "OC-01",
+        "ST-03",
         "QA-01",
         "DS-01",
         "CM-01"
@@ -61501,7 +61438,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "RT-04"
       ],
       "keywords": [
@@ -61534,7 +61471,7 @@
       "techniques": [
         "CM-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "DS-01",
         "QA-01"
       ],
@@ -61566,7 +61503,7 @@
       "techniques": [
         "CM-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "RT-04",
         "QA-01"
       ],
@@ -61630,7 +61567,7 @@
         "ST-02",
         "CM-02",
         "DS-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -61662,7 +61599,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -61693,7 +61630,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -61722,7 +61659,7 @@
       "techniques": [
         "ST-02",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "DS-02",
         "QA-01"
       ],
@@ -61756,7 +61693,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -62077,7 +62014,7 @@
       "techniques": [
         "CM-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "QA-02",
         "RT-04"
       ],
@@ -62109,7 +62046,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -62142,7 +62079,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "RT-04"
       ],
       "keywords": [
@@ -62175,7 +62112,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -62207,7 +62144,7 @@
       "techniques": [
         "CM-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "DS-01",
         "QA-01"
       ],
@@ -62270,7 +62207,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "RT-04"
       ],
       "keywords": [
@@ -62302,7 +62239,7 @@
       "techniques": [
         "CM-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "DS-01",
         "RT-04"
       ],
@@ -62333,7 +62270,7 @@
       "techniques": [
         "ST-02",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "DS-02",
         "QA-01"
       ],
@@ -62366,7 +62303,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -62398,7 +62335,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -62429,7 +62366,7 @@
         "CM-02",
         "DS-01",
         "QA-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "higher-education",
@@ -62459,7 +62396,7 @@
         "ST-02",
         "CM-02",
         "DS-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -62522,7 +62459,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -62553,7 +62490,7 @@
         "CM-02",
         "DS-01",
         "QA-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "higher-education",
@@ -62582,7 +62519,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -62645,7 +62582,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -63252,7 +63189,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -63317,7 +63254,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -63349,7 +63286,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -63381,7 +63318,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -63444,7 +63381,7 @@
         "CM-02",
         "DS-01",
         "QA-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "school-counseling",
@@ -63474,7 +63411,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -63505,7 +63442,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "RT-04"
       ],
       "keywords": [
@@ -63537,7 +63474,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -63569,7 +63506,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -63602,7 +63539,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -63636,7 +63573,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -63669,7 +63606,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "RT-04"
       ],
       "keywords": [
@@ -63701,7 +63638,7 @@
       "techniques": [
         "CM-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "DS-01",
         "RT-04"
       ],
@@ -63766,7 +63703,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -63798,7 +63735,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -63829,7 +63766,7 @@
       "techniques": [
         "CM-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "DS-01",
         "QA-02"
       ],
@@ -63862,7 +63799,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -63927,7 +63864,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -63960,7 +63897,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "RT-04"
       ],
       "keywords": [
@@ -63993,7 +63930,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -64027,7 +63964,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -64060,7 +63997,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -64093,7 +64030,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "RT-04"
       ],
       "keywords": [
@@ -64126,7 +64063,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -64159,7 +64096,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -64193,7 +64130,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -65483,7 +65420,7 @@
         "NE-01",
         "ED-01",
         "SV-06",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "student-facing",
@@ -65520,7 +65457,7 @@
         "ED-03",
         "ST-02",
         "NE-01",
-        "OC-01",
+        "ST-03",
         "SV-06"
       ],
       "keywords": [
@@ -65623,7 +65560,7 @@
       "techniques": [
         "RP-04",
         "ED-03",
-        "OC-01",
+        "ST-03",
         "DS-01",
         "NE-01"
       ],
@@ -65691,7 +65628,7 @@
         "ED-03",
         "ST-02",
         "NE-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "student-facing",
@@ -66040,7 +65977,7 @@
         "CM-01",
         "ST-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "ED-03"
       ],
       "keywords": [
@@ -66074,7 +66011,7 @@
         "ST-02",
         "ED-01",
         "NE-01",
-        "OC-01",
+        "ST-03",
         "SV-06"
       ],
       "keywords": [
@@ -66200,7 +66137,7 @@
         "RP-04",
         "ED-03",
         "ED-01",
-        "OC-01",
+        "ST-03",
         "SV-06"
       ],
       "keywords": [
@@ -66368,7 +66305,7 @@
         "ED-03",
         "ST-02",
         "NE-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "student-facing",
@@ -67363,7 +67300,7 @@
         "DS-01",
         "CM-01",
         "NE-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "student-facing",
@@ -67765,7 +67702,7 @@
         "RP-04",
         "ED-03",
         "CM-01",
-        "OC-01",
+        "ST-03",
         "SV-06"
       ],
       "keywords": [
@@ -67799,7 +67736,7 @@
         "ED-03",
         "ED-01",
         "NE-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "student-facing",
@@ -67830,7 +67767,7 @@
       "techniques": [
         "CM-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "DS-01",
         "QA-01"
       ],
@@ -67898,7 +67835,7 @@
         "RP-04",
         "ED-03",
         "ED-01",
-        "OC-01",
+        "ST-03",
         "NE-01"
       ],
       "keywords": [
@@ -67932,7 +67869,7 @@
         "RP-04",
         "ED-03",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "SV-06"
       ],
       "keywords": [
@@ -71810,7 +71747,7 @@
       "category": "finance/corporate-finance-fpa",
       "description": "Assemble a board-grade finance package: results vs plan with variance commentary, updated forecast and cash runway, a KPI scorecard, and a prioritized risk register — concise, decision-oriented, and traceable to source.",
       "techniques": [
-        "OC-01",
+        "ST-03",
         "DS-06",
         "RT-05",
         "DS-02",
@@ -72225,7 +72162,7 @@
         "DS-02",
         "CM-02",
         "NE-10",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "covenants",
@@ -72286,7 +72223,7 @@
       "description": "Assemble a full, committee-ready credit memorandum: borrower and facility summary, sources/uses, credit rationale, internal risk rating, repayment analysis, structure and covenant package, and ongoing monitoring plan — evidence-required and no invented data.",
       "techniques": [
         "DT-02",
-        "OC-01",
+        "ST-03",
         "AG-08",
         "NE-11",
         "AG-02"
@@ -72417,7 +72354,7 @@
         "RT-05",
         "NE-10",
         "QA-02",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "early-warning",
@@ -72889,7 +72826,7 @@
         "DS-02",
         "DS-04",
         "QA-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "working-capital",
@@ -74835,7 +74772,7 @@
       "techniques": [
         "ST-02",
         "DT-02",
-        "OC-01",
+        "ST-03",
         "CM-02",
         "NE-06"
       ],
@@ -74994,7 +74931,7 @@
         "RT-02",
         "DS-06",
         "DT-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -75188,7 +75125,7 @@
         "RT-02",
         "DS-06",
         "DT-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -76216,7 +76153,7 @@
         "ST-01",
         "ST-02",
         "RT-02",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -76315,7 +76252,7 @@
         "ST-01",
         "ST-02",
         "RT-02",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -77636,7 +77573,7 @@
         "ST-01",
         "ST-02",
         "RT-02",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -78089,7 +78026,7 @@
         "ST-01",
         "ST-02",
         "RT-02",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -78120,7 +78057,7 @@
         "ST-01",
         "ST-02",
         "RT-02",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -78551,7 +78488,7 @@
         "ST-01",
         "ST-02",
         "RT-02",
-        "OC-01",
+        "ST-03",
         "QA-02"
       ],
       "keywords": [
@@ -78744,7 +78681,7 @@
         "ST-02",
         "RT-02",
         "DS-01",
-        "OC-01"
+        "QA-01"
       ],
       "keywords": [
         "architecture",
@@ -78837,7 +78774,7 @@
         "ST-02",
         "RT-02",
         "DS-03",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "audio",
@@ -78960,7 +78897,6 @@
         "ST-01",
         "ST-02",
         "ST-03",
-        "OC-01",
         "DS-01"
       ],
       "keywords": [
@@ -79046,7 +78982,7 @@
         "ST-02",
         "RT-05",
         "DS-03",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "game-design",
@@ -79446,7 +79382,7 @@
         "ST-02",
         "RT-02",
         "DS-03",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "procedural-generation",
@@ -79478,7 +79414,7 @@
         "ST-02",
         "RT-02",
         "DS-03",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "multiplayer",
@@ -79540,7 +79476,7 @@
         "ST-02",
         "RT-05",
         "DS-03",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "multiplayer",
@@ -81370,8 +81306,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "RT-01",
-        "QA-01"
+        "RT-01"
       ],
       "keywords": [
         "critical-care",
@@ -81632,7 +81567,6 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "RT-05",
         "RT-01"
       ],
       "keywords": [
@@ -82349,8 +82283,7 @@
         "ST-03",
         "CM-01",
         "RT-02",
-        "RT-01",
-        "QA-01"
+        "RT-01"
       ],
       "keywords": [
         "pharmacology",
@@ -85477,7 +85410,7 @@
       "description": "Structured framework for care transitions, discharge planning, and multidisciplinary team coordination to reduce preventable harm during handoffs",
       "techniques": [
         "ST-02",
-        "OC-01",
+        "ST-03",
         "CM-01",
         "DS-06",
         "QA-02"
@@ -86371,7 +86304,7 @@
         "ST-02",
         "QA-04",
         "DS-06",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "medicine",
@@ -86422,7 +86355,7 @@
       "description": "Nursing-specific systematic assessment framework covering head-to-toe assessment, focused assessments, nursing diagnosis formulation, and care plan development",
       "techniques": [
         "ST-02",
-        "OC-01",
+        "ST-03",
         "DS-06",
         "DT-02",
         "NE-06"
@@ -92601,8 +92534,7 @@
         "CM-02",
         "DS-01",
         "QA-01",
-        "QA-02",
-        "QA-03"
+        "QA-02"
       ],
       "keywords": [
         "ai-agent-handoff",
@@ -92667,14 +92599,11 @@
       "category": "idea-to-product/architecture",
       "description": "Given a PRD + epic/feature tree (from stage 7), walk a decision matrix for each major architectural component — frontend, backend, database, infra, auth, payments, observability — and produce a stack decision document with rejected alternatives logged and AI-coding-agent friendliness explicitly scored.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "CM-02",
         "DS-01",
-        "DS-06",
         "RT-02",
-        "QA-01",
-        "QA-02"
+        "QA-01"
       ],
       "keywords": [
         "architecture",
@@ -92735,14 +92664,11 @@
       "category": "idea-to-product/market-research",
       "description": "Build a unit-economics model for a software/platform business by selecting the right formulas for the business model (SaaS, marketplace, transactional, ads, hybrid), surfacing the inputs that must be estimated, computing LTV/CAC/payback/gross margin/cohort retention, and producing a sensitivity-band worksheet that flags which assumptions are load-bearing.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "CM-02",
         "DS-01",
         "DS-02",
-        "RT-02",
-        "QA-01",
-        "QA-02"
+        "QA-01"
       ],
       "keywords": [
         "unit-economics",
@@ -92769,15 +92695,11 @@
       "category": "idea-to-product/meta",
       "description": "Single entry-point prompt: interviews the user about their software/platform idea, classifies what pipeline stage they're starting at, recommends the next 1-3 stages, hands off to the specific stage prompt with the inputs that prompt expects, then loops — critiquing each stage's output before advancing. Ends with a kill/proceed gate before AI-agent handoff.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "CM-02",
-        "RT-01",
-        "RT-05",
-        "DS-02",
-        "DS-06",
-        "QA-01",
-        "QA-02"
+        "RP-01",
+        "NE-01",
+        "QA-01"
       ],
       "keywords": [
         "orchestrator",
@@ -98129,7 +98051,7 @@
       "techniques": [
         "ST-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "RT-03",
         "AG-05"
       ],
@@ -98163,7 +98085,7 @@
       "techniques": [
         "ST-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "RT-03",
         "AG-05"
       ],
@@ -98199,7 +98121,7 @@
         "ST-02",
         "NE-01",
         "AG-11",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "startup",
@@ -98251,7 +98173,7 @@
         "ST-02",
         "RT-03",
         "NE-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "startup",
@@ -98275,7 +98197,7 @@
       "techniques": [
         "ST-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "RT-03",
         "AG-05"
       ],
@@ -98310,7 +98232,7 @@
         "ST-01",
         "ST-02",
         "NE-01",
-        "OC-01",
+        "ST-03",
         "DS-01"
       ],
       "keywords": [
@@ -100987,15 +100909,10 @@
       "category": "legal/custody",
       "description": "Analyze a custody dispute factor-by-factor under the controlling state's best-interests statute: apply each enumerated factor to the facts, address legal vs. physical custody and decision-making, weigh stability/primary-caregiver and any presumptions (joint custody, against an abuser), assess the child's preference where age-appropriate, and produce a position memo with factor-by-factor strength and a defensible custody/parenting recommendation.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-01",
         "RT-02",
-        "RT-05",
-        "RP-01",
         "CM-02",
-        "QA-01",
         "QA-12"
       ],
       "keywords": [
@@ -101025,11 +100942,8 @@
       "category": "legal/custody",
       "description": "Apply the controlling state's child-support guideline: identify the model (income-shares, percentage-of-obligor-income, or Melson), determine each parent's income (including self-employment, imputation for voluntary unemployment, and overtime/bonus treatment), apply parenting-time/shared-custody adjustments, add the mandatory add-ons (health insurance, childcare, extraordinary medical/education), and assess deviation factors — producing a worksheet-style computation with a defensible range and the inputs that drive it.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
-        "RT-05",
         "CM-02",
         "QA-01",
         "QA-12"
@@ -101061,13 +100975,10 @@
       "category": "legal/custody",
       "description": "Prepare a client for a court-ordered custody evaluation and critique the evaluator's report: explain the evaluation process and what is assessed, prepare the client for interviews/observation/testing without coaching dishonesty, assemble relevant collateral and records, and analyze the completed report for methodology gaps, bias, unsupported conclusions, and best-interests-factor alignment — producing a preparation guide and a report-critique memo with cross-examination points.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
         "RT-05",
         "CM-02",
-        "QA-01",
         "QA-12"
       ],
       "keywords": [
@@ -101133,12 +101044,9 @@
       "category": "legal/custody",
       "description": "Break a stalled custody mediation or structure a multi-session one: diagnose the impasse type (positional, informational, emotional/trust, structural), design package proposals across the full trade space (legal-custody domains, schedule, holidays, transportation, ROFR, review clauses), deploy conditional and contingent terms (step-up schedules, tripwires, review dates) that let distrustful parents say yes, plan caucus use, capture partial agreement, and recognize when mediation should end (futility, coercion, bad-faith nondisclosure).",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
         "CM-02",
-        "DS-02",
         "QA-01",
         "QA-12"
       ],
@@ -101174,10 +101082,7 @@
         "ST-01",
         "ST-02",
         "ST-03",
-        "RT-01",
-        "RT-02",
         "CM-02",
-        "DS-02",
         "QA-01"
       ],
       "keywords": [
@@ -101312,13 +101217,8 @@
       "category": "legal/custody",
       "description": "Analyze a non-parent's standing and substantive claim for custody or visitation under the controlling state's third-party statute and the constitutional Troxel framework: assess statutory standing (grandparent, de facto/psychological parent, relative caregiver), apply the heightened standard that respects a fit parent's presumption and decision-making, address required findings (harm, parental unfitness, or the state's threshold), and produce a position memo with the proof required and the likelihood of success.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-01",
-        "RT-02",
-        "RT-05",
-        "RP-01",
         "CM-02",
         "QA-01",
         "QA-12"
@@ -101350,13 +101250,10 @@
       "category": "legal/custody",
       "description": "Analyze and respond to a guardian ad litem (GAL), best-interest attorney, or attorney-for-the-child report and recommendation: clarify the GAL's role and standard in the jurisdiction, assess the investigation's thoroughness and balance, test recommendations against the state's best-interests factors and the record, identify unsupported or one-sided conclusions, and produce a response memo with objections, areas of agreement, and cross-examination points.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
         "RT-05",
         "CM-02",
-        "QA-01",
         "QA-12"
       ],
       "keywords": [
@@ -101526,10 +101423,7 @@
         "ST-01",
         "ST-02",
         "ST-03",
-        "RT-01",
-        "RT-02",
         "CM-02",
-        "DS-02",
         "QA-01"
       ],
       "keywords": [
@@ -101559,15 +101453,10 @@
       "category": "legal/custody",
       "description": "Analyze a parental relocation (move-away) request or opposition under the controlling state's framework: confirm notice requirements and the burden allocation, apply the state's relocation factors (the child's relationship with each parent, reasons for and against the move, impact on the schedule, feasibility of a revised plan), distinguish primary-custodian presumptions from joint-custody standards, and produce a position memo with a revised long-distance parenting plan and the proof needed.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-01",
         "RT-02",
-        "RT-05",
-        "RP-01",
         "CM-02",
-        "QA-01",
         "QA-12"
       ],
       "keywords": [
@@ -101668,9 +101557,6 @@
         "ST-01",
         "ST-02",
         "ST-03",
-        "RT-01",
-        "RT-02",
-        "RT-05",
         "CM-02",
         "QA-01"
       ],
@@ -102297,12 +102183,8 @@
       "category": "legal/divorce",
       "description": "Frame the valuation and division of a closely-held business interest in divorce: select the valuation date and standard of value, choose among asset/income/market approaches, address enterprise vs. personal goodwill under the state's rule, normalize owner compensation and add-backs, apply marketability/minority discounts where allowed, and structure a buyout or offset — producing a valuation-issue memo and an expert-scope checklist.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
-        "RT-05",
-        "RP-01",
         "CM-02",
         "QA-01",
         "QA-12"
@@ -102368,12 +102250,9 @@
       "category": "legal/divorce",
       "description": "Conduct a structured divorce/dissolution intake and produce a case-assessment memo: residency and subject-matter jurisdiction, grounds, asset and debt snapshot, children and custody posture, urgent issues (domestic violence, asset dissipation, immediate support need), client objectives, conflict screen, and a recommended process path (litigation, mediation, or collaborative) — all sized to the controlling state's dissolution statute.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
         "CM-02",
-        "DS-02",
         "QA-01",
         "QA-12"
       ],
@@ -102509,12 +102388,9 @@
       "category": "legal/divorce",
       "description": "Prepare client and counsel for divorce mediation or settlement on the financial issues: gate on disclosure completeness, map interests behind positions for property, support, and tax, set a BATNA against the likely litigated property division and support range, build a proposal ladder (opening/target/walk-away) per issue, identify trade space (asset trades vs. support duration, tax character, timing, QDRO mechanics), screen DV/coercion mediation-appropriateness, and produce a mediation agenda and a draft financial term-sheet skeleton.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
         "CM-02",
-        "DS-02",
         "QA-01",
         "QA-12"
       ],
@@ -102548,11 +102424,8 @@
       "category": "legal/divorce",
       "description": "Analyze the federal and state tax consequences of a divorce: filing status by year, §1041 nonrecognition on interspousal property transfers, post-TCJA alimony treatment (no deduction/inclusion for instruments executed after 2018), child-related credits and dependency allocation, sale-of-home exclusion, retirement-transfer mechanics (QDRO vs. IRA), basis carryover, and the tax cost embedded in each division option.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
-        "RT-05",
         "CM-02",
         "QA-01",
         "QA-12"
@@ -102687,13 +102560,10 @@
       "category": "legal/divorce",
       "description": "Build an investigation plan to find undisclosed assets and prove marital-waste/dissipation in divorce: a red-flag inventory, a lifestyle-vs-reported-income analysis, a document and discovery roadmap (subpoenas, tax-return cross-checks, business records), a tracing plan for transfers to third parties, a forensic-accountant scope, and a dissipation claim framework under the state's standard with burden and remedy.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
         "RT-05",
         "CM-02",
-        "QA-01",
         "QA-12"
       ],
       "keywords": [
@@ -102723,15 +102593,10 @@
       "category": "legal/divorce",
       "description": "Characterize each asset and debt as marital/community, separate, or mixed under the controlling state's regime, analyzing premarital ownership, gift/inheritance, commingling, transmutation, active vs. passive appreciation, source-of-funds tracing, and reimbursement/equitable claims — producing an asset-by-asset characterization memo with tracing requirements and confidence levels.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-01",
         "RT-02",
-        "RT-05",
-        "RP-01",
         "CM-02",
-        "QA-01",
         "QA-12"
       ],
       "keywords": [
@@ -102831,12 +102696,9 @@
       "category": "legal/divorce",
       "description": "Memorialize what was agreed at a divorce or custody mediation before it evaporates: a term sheet or memorandum of understanding with the binding-vs-nonbinding intent stated explicitly under the jurisdiction's rule, every agreed term captured concretely (property, equalization, support, parenting terms), an open-items register, conditions precedent (disclosure confirmation, appraisal true-ups, QDRO review, attorney review), and enforceability traps flagged — bridging to the full MSA and parenting-plan drafting.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
         "CM-02",
-        "DS-02",
         "QA-01",
         "QA-12"
       ],
@@ -102869,15 +102731,10 @@
       "category": "legal/divorce",
       "description": "Analyze the enforceability of a prenuptial or postnuptial agreement under the controlling state's framework (UPAA/UPMAA or state law): assess voluntariness/duress, adequacy of financial disclosure or waiver, unconscionability (at execution and/or at enforcement), independent counsel, timing, and any state-specific formalities — building either a challenge roadmap or an enforcement-defense memo with element-by-element strength and confidence levels.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-01",
         "RT-02",
-        "RT-05",
-        "RP-01",
         "CM-02",
-        "QA-01",
         "QA-12"
       ],
       "keywords": [
@@ -103011,12 +102868,8 @@
       "category": "legal/divorce",
       "description": "Analyze spousal support/alimony under the controlling state's framework: identify the support type (temporary, rehabilitative, durational/limited, permanent, reimbursement), apply the statutory factors or any guideline/formula, assess entitlement, amount, and duration, address modifiability and termination triggers (cohabitation, remarriage, retirement), and integrate the post-TCJA tax treatment — producing a support-position memo with a defensible range.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
-        "RT-05",
-        "RP-01",
         "CM-02",
         "QA-01",
         "QA-12"
@@ -109186,7 +109039,7 @@
         "RP-02",
         "ST-02",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -109248,7 +109101,7 @@
         "ST-02",
         "ED-02",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -109279,7 +109132,7 @@
         "ST-02",
         "RT-03",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -109476,7 +109329,7 @@
         "ED-01",
         "CM-02",
         "QA-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "faculty-development",
@@ -109694,7 +109547,7 @@
         "RP-02",
         "ST-02",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "ED-01"
       ],
       "keywords": [
@@ -109856,7 +109709,7 @@
         "ST-02",
         "ED-01",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -109919,7 +109772,7 @@
         "NE-01",
         "ST-02",
         "QA-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "feedback",
@@ -110045,7 +109898,7 @@
         "CM-02",
         "RT-03",
         "QA-01",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "remediation",
@@ -110201,7 +110054,7 @@
         "ST-02",
         "QA-01",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "ED-04"
       ],
       "keywords": [
@@ -110328,7 +110181,7 @@
         "QA-01",
         "ED-04",
         "CM-02",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "rubric",
@@ -110359,7 +110212,7 @@
         "CM-02",
         "QA-01",
         "ED-04",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "milestones",
@@ -110516,7 +110369,7 @@
         "QA-01",
         "ED-04",
         "CM-02",
-        "OC-01"
+        "ST-03"
       ],
       "keywords": [
         "mini-cex",
@@ -110735,7 +110588,7 @@
       "techniques": [
         "ST-02",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01",
         "ED-04"
       ],
@@ -132218,14 +132071,11 @@
       "category": "product-management/prompts",
       "description": "Design a pricing experiment matrix that tests price changes — ladders, bundle variants, willingness-to-pay probes — without tanking revenue. Output: an experiment grid with hypotheses per cell, sample-size sanity checks, success and failure thresholds, blast-radius limits, and rollback triggers. Optimized for picking the right experiment to run, not for choosing a single new price.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "RT-02",
-        "RT-03",
         "CM-02",
         "DS-02",
-        "DS-06",
-        "QA-01"
+        "DS-06"
       ],
       "keywords": [
         "decision-making",
@@ -132903,7 +132753,7 @@
         "ST-02",
         "DS-01",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -133592,7 +133442,7 @@
       "techniques": [
         "ST-01",
         "ST-02",
-        "OC-01",
+        "ST-03",
         "CM-02",
         "QA-01"
       ],
@@ -133716,7 +133566,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -133778,7 +133628,7 @@
         "ST-02",
         "DS-01",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -133873,7 +133723,7 @@
         "ST-02",
         "DS-01",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -133903,7 +133753,7 @@
         "ST-02",
         "CM-02",
         "DS-01",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -133933,7 +133783,7 @@
         "ST-02",
         "DS-01",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -134053,7 +133903,7 @@
         "ST-01",
         "ST-02",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "DS-01",
         "QA-01"
       ],
@@ -134086,7 +133936,7 @@
         "RT-02",
         "DS-01",
         "CM-02",
-        "OC-01",
+        "ST-03",
         "QA-01"
       ],
       "keywords": [
@@ -138317,12 +138167,7 @@
         "ST-01",
         "ST-02",
         "RT-02",
-        "ED-05",
-        "ST-16",
-        "AG-01",
-        "AG-10",
         "NE-04",
-        "ED-06",
         "QA-02"
       ],
       "keywords": [
@@ -147106,7 +146951,7 @@
       "description": "Create structured informed consent documents for research and clinical settings with required elements and accessibility guidance",
       "techniques": [
         "ST-02",
-        "OC-01",
+        "ST-03",
         "CM-02"
       ],
       "keywords": [
@@ -147183,7 +147028,7 @@
       "description": "Structure psychological assessment reports with appropriate sections, professional language, and interpretation guidelines",
       "techniques": [
         "ST-04",
-        "OC-01",
+        "ST-03",
         "QA-04",
         "CM-01"
       ],
@@ -154073,7 +153918,7 @@
       "techniques": [
         "ST-02",
         "DS-02",
-        "OC-01",
+        "ST-03",
         "CM-02"
       ],
       "keywords": [
@@ -154102,7 +153947,7 @@
       "description": "Draft a no-show and late-cancellation policy letter or consent clause with fee, notice window, insurance-cannot-be-billed note, telehealth applicability, and a repeated-no-show discharge pathway.",
       "techniques": [
         "ST-02",
-        "OC-01",
+        "ST-03",
         "CM-02",
         "QA-04"
       ],
@@ -154165,7 +154010,7 @@
       "description": "Generate a compliant superbill for a client's out-of-network reimbursement claim — provider NPI/tax-ID, rendering vs billing provider, dates of service, CPT + modifiers + units, ICD-10 diagnosis codes, charges, payments, and the required statement language.",
       "techniques": [
         "ST-02",
-        "OC-01",
+        "ST-03",
         "DS-02",
         "CM-02",
         "QA-04"
@@ -170991,7 +170836,6 @@
         "ST-02",
         "RT-02",
         "RT-05",
-        "DS-06",
         "QA-01"
       ],
       "keywords": [
@@ -171324,7 +171168,6 @@
       "techniques": [
         "ST-01",
         "ST-02",
-        "RT-02",
         "RT-05",
         "DS-06",
         "QA-01"
@@ -171474,13 +171317,10 @@
       "description": "Systematically modernizes an Android codebase to current best practices, migrating deprecated APIs and adopting modern Kotlin and Jetpack conventions",
       "techniques": [
         "ST-01",
-        "ST-02",
-        "RT-04",
         "RT-05",
         "DS-06",
         "ST-03",
-        "NE-02",
-        "NE-07"
+        "NE-02"
       ],
       "keywords": [
         "android",
@@ -171565,7 +171405,6 @@
         "ST-01",
         "ST-02",
         "RT-02",
-        "RT-05",
         "DS-06",
         "CM-01"
       ],
@@ -171593,7 +171432,6 @@
       "techniques": [
         "ST-01",
         "ST-02",
-        "RT-02",
         "RT-05",
         "DS-06",
         "QA-01"
@@ -172101,7 +171939,6 @@
         "ST-02",
         "RT-02",
         "RT-05",
-        "CM-01",
         "QA-01"
       ],
       "keywords": [
@@ -172388,12 +172225,9 @@
       "techniques": [
         "ST-01",
         "ST-02",
-        "RT-01",
         "RT-03",
         "MP-03",
-        "ST-03",
-        "OC-02",
-        "RP-01"
+        "ST-03"
       ],
       "keywords": [
         "android",
@@ -172420,16 +172254,11 @@
       "category": "mobile-development",
       "description": "Suggests targeted visual refinements to elevate Compose UI to production-ready quality through iterative screenshot and code analysis",
       "techniques": [
-        "ST-01",
-        "ST-02",
         "RT-02",
         "RT-05",
         "CM-02",
         "DS-06",
-        "ST-03",
-        "QA-04",
-        "AG-04",
-        "NE-07"
+        "ST-03"
       ],
       "keywords": [
         "android",
@@ -172455,18 +172284,11 @@
       "category": "mobile-development",
       "description": "Conducts exhaustive Compose UI review to create the most marketable and competitive interface in its category",
       "techniques": [
-        "ST-01",
-        "ST-02",
         "RT-02",
-        "RT-03",
         "RT-05",
         "DS-06",
         "ST-03",
-        "AG-02",
-        "AG-12",
-        "RP-01",
-        "NE-02",
-        "NE-07"
+        "NE-02"
       ],
       "keywords": [
         "android",
@@ -172493,15 +172315,11 @@
       "category": "mobile-development",
       "description": "Systematically identifies refactoring candidates in Android codebases, creates detailed plans, and implements improvements without breaking functionality",
       "techniques": [
-        "ST-01",
-        "ST-02",
         "RT-02",
         "RT-05",
         "MP-03",
         "ST-03",
-        "QA-01",
-        "AG-02",
-        "AG-08"
+        "QA-01"
       ],
       "keywords": [
         "android",
@@ -174219,8 +174037,6 @@
       "category": "mobile-development",
       "description": "Auto-detects stack, identifies and scores all refactoring candidates across the codebase, presents a ranked triage report, asks the user which file(s) to refactor, then executes a safe plan with approval gates.",
       "techniques": [
-        "ST-01",
-        "ST-02",
         "RT-02",
         "RT-05",
         "DS-06",
@@ -175131,13 +174947,10 @@
       "category": "mobile-development",
       "description": "Generate an accurate Google Play Store Data Safety section by analyzing app code and SDKs, covering data collection mapping, data sharing analysis, encryption status, data deletion capabilities, common SDK data profiles, and Data Safety questionnaire walkthrough",
       "techniques": [
-        "ST-01",
-        "ST-02",
         "RT-02",
         "RT-05",
         "CM-01",
         "QA-01",
-        "DS-06",
         "DT-01"
       ],
       "keywords": [
@@ -177133,7 +176946,6 @@
         "QA-10",
         "CM-02",
         "CM-01",
-        "QA-08",
         "QA-12"
       ],
       "keywords": [
