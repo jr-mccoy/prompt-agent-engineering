@@ -924,7 +924,7 @@ from rank 3 to 4. Scope@1 stays at 84.6% over 205 cases.
 
 **Left for later:**
 - Several Android prompts still list more than 5 techniques, and their body lists mislabel some valid codes (done: see the Wave 10 follow-up below).
-- The `slo-implementation` skill's example alerts use 30-day burn-rate thresholds on a 28-day SLO.
+- The `slo-implementation` skill's example alerts use 30-day burn-rate thresholds on a 28-day SLO (done: see CHANGELOG "Fixed").
 - Most `personas/README.md` tree filenames are out of date.
 
 ### Wave 10 follow-up: technique hygiene leftovers — shipped (2026-10-05)
