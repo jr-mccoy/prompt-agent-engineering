@@ -182,6 +182,31 @@ class TestDocument(unittest.TestCase):
         self.assertEqual(set(document.fields["tags"]), {"alpha", "beta", "gamma"})
         self.assertIn("12", document.fields["name"])
 
+    def test_a_name_that_repeats_the_title_is_not_indexed_twice(self) -> None:
+        """Spelling differences that normalize away still count as a repeat."""
+        record = _record(
+            uid="pae_00000000nm1",
+            id="skill:agentic-resources/marketing/launch-strategy",
+            kind="skill",
+            title="launch-strategy",
+            native={"name": "Launch Strategy"},
+        )
+        document = Document(record)
+        self.assertEqual(document.lengths["name"], 0)
+        self.assertIn("launch", document.fields["title"])
+
+    def test_a_name_that_adds_words_is_still_indexed(self) -> None:
+        record = _record(
+            uid="pae_00000000nm2",
+            id="command:agentic-resources/multi-agent/worker-boundaries",
+            kind="command",
+            title="Worker Isolation Boundaries",
+            native={"name": "multiagent-worker-isolation-boundaries"},
+        )
+        document = Document(record)
+        self.assertIn("multiagent", document.fields["name"])
+        self.assertEqual(document.lengths["name"], 4)
+
     def test_a_copy_joins_its_canonical_cluster(self) -> None:
         canonical = _record(uid="pae_00000000cn1", id="prompt:fixtures/canonical")
         copy = _record(
@@ -217,6 +242,29 @@ class TestIndexArithmetic(unittest.TestCase):
         index = LexicalIndex([Document(record)])
         self.assertEqual(index.score(["gamma"]), {})
         self.assertGreater(index.score(["beta"])[0], 0.0)
+
+    def test_a_repeated_name_gives_no_kind_an_extra_title_vote(self) -> None:
+        """A skill whose name is its title scores like a prompt with that title.
+
+        Only agentic resources carry a ``name``. Before repeats were dropped, a
+        skill matched its title words in one more field than an otherwise
+        identical prompt and outranked it on metadata shape alone.
+        """
+        skill = _record(
+            uid="pae_00000000kb1",
+            id="skill:fixtures/pricing-strategy",
+            kind="skill",
+            title="pricing-strategy",
+            native={"name": "pricing-strategy"},
+        )
+        prompt = _record(
+            uid="pae_00000000kb2",
+            id="prompt:fixtures/pricing-strategy",
+            title="pricing-strategy",
+        )
+        index = LexicalIndex([Document(skill), Document(prompt)])
+        scores = index.score(["pricing"])
+        self.assertAlmostEqual(scores[0], scores[1], places=9)
 
     def test_query_token_bound_is_a_sane_constant(self) -> None:
         self.assertGreaterEqual(MAX_QUERY_TOKENS, 16)

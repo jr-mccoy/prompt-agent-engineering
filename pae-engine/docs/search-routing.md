@@ -69,6 +69,11 @@ with no ASCII alphanumerics at all normalizes to nothing and is rejected.
 Ten fields are indexed — `title`, `pid`, `alias`, `desc`, `cat`, `tags`,
 `tech`, `path`, `kind`, `name` — each with weight **1.0**.
 
+`name` is indexed only when it says something the title does not. Only agentic
+resources carry one, and for nearly all of them it is the title verbatim;
+indexing the repeat gave skills, agents, commands and personas a second title
+match that prompts cannot have.
+
 ```
 pseudo_tf(t,d) = Σ_f  w_f · tf(t, d.f) / (1 − b + b · len(d.f) / avglen(f))
 score(d)       = Σ_t  idf(t) · pseudo_tf(t,d) / (k1 + pseudo_tf(t,d))

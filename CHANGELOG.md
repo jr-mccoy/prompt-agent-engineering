@@ -20,6 +20,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Covered by 8 new unit tests.
 
 ### Changed
+- **Routing follow-up on the 22 open regression misses** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6). No query, label, threshold, floor or case changed, and no tag was added.
+  - **Engine:** a record's native `name` is no longer indexed when it repeats the title. Only agentic resources carry one (703 of 711 are the title verbatim), so they were matching their title twice where a prompt matches once. Three unit tests in `pae-engine/tests/test_lexical.py`; `pae-engine/docs/search-routing.md` updated.
+  - **Effect:** router scope@1 84.6% → 85.2% (case 092 now routes `pricing` to `business-strategy`); R@1 75.0%, MRR 0.800 and kind@1 97.7% unchanged. No other case moves, and flat BM25 still does not lead the shipped ranker.
+  - **Rejected after per-case measurement:** clitic stripping, pronoun stopwords, path/pid de-duplication, sibilant-plural folding and three content-grounded tags on the case 164 target. Each fixed nothing or regressed a case.
+  - **Classification:** none of the 22 is fixed. 21 are honest misses (situation wording vs practitioner wording, or a winner whose real subject shares the words; case 161 stays a recorded regression). Case 203 is a content gap: a healthy-adult night-waking prompt for `domain-health-wellness/sleep-recovery/`.
+  - `meta/registry/registry.jsonl` regenerated; it was stale on the base commit (two agentic-resources index-page hashes).
 - **Wave 10 technique-hygiene follow-up** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6). `validate_technique_catalog.py` now prints 0 warnings.
   - **Deprecated codes retired:** OC-01 → ST-03 (141 prompts) and QA-03 → QA-01 (1) in frontmatter and in the same files' body technique lists. Where the target was already listed, the old code was deleted. One OC-01 entry that described a verification checklist now cites QA-01.
   - **Over-long lists trimmed to 3–5:** 65 prompts hand-read (all `mobile/android/improvement/` prompts over 5, `ios_privacy_compliance`, the ABG/ECG/pharmacokinetics prompts, and every prompt with 8+ codes), plus 4 vendored deepthink copies re-synced. Body lists now match frontmatter and use catalog names; IDs were switched only where a body label showed a different technique was meant (e.g. QA-05 "Abort Triggers" → QA-08, DS-03 "Multi-Criteria Ranking" → DS-06).

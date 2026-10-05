@@ -299,6 +299,13 @@ class Document:
         self.fields: dict[str, Counter] = {
             field: Counter(normalize(text)) for field, text in raw_fields.items()
         }
+        # Only agentic resources carry a native ``name``, and for nearly all of
+        # them it is the title verbatim. Indexing it would count the same words
+        # twice for skills, agents, commands and personas but once for prompts,
+        # a kind bias that comes from metadata shape, not relevance. A name that
+        # says something the title does not is still indexed.
+        if self.fields["name"] == self.fields["title"]:
+            self.fields["name"] = Counter()
         self.lengths: dict[str, int] = {
             field: sum(counter.values()) for field, counter in self.fields.items()
         }
