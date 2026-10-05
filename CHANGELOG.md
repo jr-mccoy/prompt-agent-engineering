@@ -10,6 +10,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Coverage Wave 11: `domain-parenting/family-support-professional/` (22 prompts, 9 routing cases)** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
+  - **All 8 planned subfolders built**, each with a README, plus a cluster README: `intake-assessment/` (3), `coaching-education/` (3), `plans-documentation/` (3), `group-facilitation/` (2), `referral-resourcing/` (2), `home-visit-fieldwork/` (3), `foster-kinship-adoption/` (3), `culturally-responsive/` (3). These are for parent educators, home visitors, caseworkers and family-time supervisors, not caregivers.
+  - **Safeguards in every prompt:**
+    - It describes rather than diagnoses.
+    - Mandated-reporting steps are jurisdiction-aware ("verify locally"). The duty is personal in most US states, and a supervisor consult never delays a report.
+    - It names clinician-escalation triggers, with 988 and 911 routes.
+    - It covers consent and confidentiality limits, and de-identifying client details before AI use.
+  - **Duplicate sweep:** none dropped. The two referral prompts were re-angled away from the healthcare SDOH screening-response prompt.
+  - **Routing:** `case-206`–`case-214` added (label source `coverage_wave_judgment`).
+    - No earlier case changed rank, top hit, scope or status against a base-commit worktree.
+    - Over 214 cases: router scope@1 is 84.8% and R@1 72.8%. The drop from 85.2% and 75.0% comes only from the new cases: 5 of the 7 task cases are recorded as honest vocabulary-distance misses.
+    - The queries were held back from the authoring agents behind a SHA-256 commitment.
+  - Pinned registry counts bumped in `scripts/pae_registry/tests/test_generation.py` (prompt 4752, total 5880). The index, registry and repo facts were regenerated; `REPO_MAP.md`, `meta/ROUTING_REFERENCE.md` and `domain-parenting/README.md` were updated.
 - **Coverage Wave 10: agentic-resource depth** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6).
   - **19 new resources:** 7 skills (accessibility, game-development, devops, observability), 4 agents (deployment, orchestration), 4 commands (data-analysis, documentation) and 4 personas (product, specialized).
   - **Duplicate sweep:** three persona candidates were dropped as duplicates; six skill and command candidates were re-angled.

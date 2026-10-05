@@ -3,8 +3,8 @@
     "generated": "2026-10-05",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 6135,
-    "artifacts_with_frontmatter": 5205,
+    "total_indexed_artifacts": 6157,
+    "artifacts_with_frontmatter": 5227,
     "artifacts_without_frontmatter": 930,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 6135,
-    "prompts_with_frontmatter": 5205,
+    "total_prompts": 6157,
+    "prompts_with_frontmatter": 5227,
     "prompts_without_frontmatter": 930
   },
   "prompts": [
@@ -120809,6 +120809,105 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-parenting/family-support-professional/coaching-education/parenting_curriculum_fidelity_adaptation.md",
+      "filename": "parenting_curriculum_fidelity_adaptation.md",
+      "title": "Adapting an Evidence-Based Parenting Curriculum — Core vs Adaptable Components, Green-Yellow-Red Change Decisions, an Adaptation Log, Fidelity Ratings, and When to Ask the Developer",
+      "domain": "parenting",
+      "category": "parenting/coaching-education",
+      "description": "For facilitators, home visitors, and program leads delivering a licensed evidence-based parenting curriculum (Triple P, Incredible Years, Nurturing Parenting, Parents as Teachers, or similar) who need to fit it to one family or group: map core versus adaptable components from the developer's own documents, sort each change green, yellow, or red, log adaptations, rate fidelity per session, and know when to consult the developer. Respects licensing; never drops safeguarding content or diagnoses.",
+      "techniques": [
+        "RT-02",
+        "DP-03",
+        "DP-04",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "coaching-education",
+        "program-fidelity",
+        "cultural-adaptation",
+        "evidence-based-program",
+        "adaptation-log",
+        "curriculum-doesnt-fit-family",
+        "can-i-change-the-program"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/modalities/behavioral-parent-training/psychology_behavioral_parent_training_module.md",
+        "domain-psychology/modalities/group/psychology_group_therapy_curriculum_builder.md",
+        "domain-education-teaching/instructor/lesson-planning/teaching_differentiation_planner.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/coaching-education/parenting_mandated_parent_engagement.md",
+      "filename": "parenting_mandated_parent_engagement.md",
+      "title": "Engaging a Mandated Parent — Required vs Voluntary, an Honest Account of What Gets Reported, Lowering Defensiveness, and Finding the Parent's Own Goal",
+      "domain": "parenting",
+      "category": "parenting/coaching-education",
+      "description": "For parent educators, coaches, and family support workers starting with a parent who attends because a court, child-protection agency, or school required it: a first-session plan that separates what is required from what is the parent's choice, explains plainly what goes back to the referrer and the separate mandated-reporting duty, lowers defensiveness with MI, and finds a goal the parent owns. No legal advice or diagnosis; reporting rules vary by jurisdiction — verify locally.",
+      "techniques": [
+        "DS-01",
+        "DP-18",
+        "DP-04",
+        "NE-20"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "coaching-education",
+        "mandated-services",
+        "involuntary-client",
+        "role-clarification",
+        "court-ordered-parenting-class",
+        "parent-says-i-dont-need-this",
+        "angry-parent-first-session"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/risk-crisis/psychology_mandated_reporter_decision_walkthrough.md",
+        "domain-psychology/modalities/motivational-interviewing/psychology_mi_decisional_balance_facilitator.md",
+        "domain-discipleship/mentor-equipping/discipleship_mentor_boundaries_and_referral.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/coaching-education/parenting_parent_coaching_session_plan.md",
+      "filename": "parenting_parent_coaching_session_plan.md",
+      "title": "Parent Coaching Session Plan — Parent-Chosen Goal, Strengths First, OARS Conversation, Model–Practice–Feedback, and a Home-Practice Step That Fits",
+      "domain": "parenting",
+      "category": "parenting/coaching-education",
+      "description": "For parent coaches, parent educators, and family support workers planning one 45–60-minute one-to-one coaching session: a goal the parent chooses, strengths named before problems, an OARS conversation that asks before it advises, one skill taught by model–practice–feedback, a home step sized to the family's real week, and a session note. Keeps the coach out of diagnosis and therapy, with clinician and crisis triggers and mandated-reporting steps that vary by jurisdiction.",
+      "techniques": [
+        "DS-01",
+        "DP-03",
+        "DP-04",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "coaching-education",
+        "parent-coaching",
+        "motivational-interviewing",
+        "behavioral-skills-training",
+        "home-practice",
+        "plan-a-coaching-session",
+        "parent-keeps-not-doing-homework"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/modalities/behavioral-parent-training/psychology_behavioral_parent_training_module.md",
+        "domain-psychology/modalities/motivational-interviewing/psychology_mi_oars_response_generator.md",
+        "domain-parenting/caregiver-facing/ages-4-8/parenting_parenting_style_self_assessment.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-parenting/caregiver-facing/ages-4-8/parenting_hfa_social_situation_decoder.md",
       "filename": "parenting_hfa_social_situation_decoder.md",
       "title": "Autistic Child (ASD Level 1) Social Situation Decoder",
@@ -121426,6 +121525,106 @@
         "domain-parenting/caregiver-facing/ages-4-8/parenting_when_to_seek_professional_help.md",
         "domain-parenting/caregiver-facing/ages-13-18/parenting_teen_mental_health_signal_check.md",
         "domain-parenting/caregiver-facing/ages-0-3/parenting_developmental_red_flags_0_3.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/culturally-responsive/parenting_cultural_practice_vs_safety_check.md",
+      "filename": "parenting_cultural_practice_vs_safety_check.md",
+      "title": "Cultural Practice vs Safety Check — Ask Don't Assume, Separate Difference from Harm, Find Where Safety or Law Sets the Line, and Raise It Respectfully",
+      "domain": "parenting",
+      "category": "parenting/culturally-responsive",
+      "description": "For family-support workers, home visitors, and parent educators who notice a family practice that differs from their own norms (sleep, discipline, feeding, remedies, extended-family or gender roles): check their own reaction, learn the practice in the family's words, sort it into difference, safer-version conversation, or safety and legal line, and plan a respectful conversation. Does not diagnose; physical-discipline and reporting rules vary — verify locally.",
+      "techniques": [
+        "RT-02",
+        "DP-28",
+        "DS-33",
+        "NE-16"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "culturally-responsive",
+        "cultural-humility",
+        "safe-sleep",
+        "physical-discipline",
+        "implicit-bias",
+        "is-this-culture-or-a-safety-problem",
+        "family-does-things-differently"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/intake-assessment/psychology_cultural_formulation_interview_drafter.md",
+        "domain-psychology/risk-crisis/psychology_mandated_reporter_decision_walkthrough.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_natural_consequence_designer.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/culturally-responsive/parenting_immigrant_family_support_plan.md",
+      "filename": "parenting_immigrant_family_support_plan.md",
+      "title": "Immigrant and Refugee Family Support Plan — Trust with a Family That Fears Systems, Status Not Asked, No Immigration Advice, Trauma and Acculturation Gaps, and School and Health Navigation",
+      "domain": "parenting",
+      "category": "parenting/culturally-responsive",
+      "description": "For family-support workers, home visitors, and community program staff supporting an immigrant or refugee family: build trust with a family that fears systems, find the main barrier, map school, health, benefits, and community services, plan for trauma and parent-child acculturation gaps, and route every immigration or public-benefit worry to accredited legal help. Does not ask or record status unless required, gives no immigration advice, does not diagnose; reporting duties vary — verify locally.",
+      "techniques": [
+        "DP-04",
+        "DP-06",
+        "DP-18",
+        "DS-30"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "culturally-responsive",
+        "refugee-families",
+        "immigrant-families",
+        "mixed-status-families",
+        "acculturation",
+        "family-scared-of-authorities",
+        "new-to-the-country",
+        "help-family-find-services"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/allied-health/allied_health_sdoh_screening_response.md",
+        "domain-legal/immigration/legal_i589_asylum_declaration_framework.md",
+        "domain-education-teaching/instructor/reporting-communication/teaching_multilingual_family_outreach.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/culturally-responsive/parenting_interpreter_mediated_family_session.md",
+      "filename": "parenting_interpreter_mediated_family_session.md",
+      "title": "Interpreter-Mediated Family Session — Booking the Right Interpreter, Pre-Brief, Seating and First-Person Speech, Confidentiality, Interpreter vs Cultural Broker, Phone and Video, and Debrief",
+      "domain": "parenting",
+      "category": "parenting/culturally-responsive",
+      "description": "For family-support workers, home visitors, and parent educators running a session with a family through a professional interpreter: choose the mode and interpreter, write a pre-brief, set seating and first-person speech, explain consent and confidentiality limits through the interpreter, handle disclosures, and debrief. Never uses children, relatives, or partners as interpreters for substantive talk; does not diagnose; reporting duties vary — verify locally.",
+      "techniques": [
+        "DS-01",
+        "DP-04",
+        "NE-20",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "culturally-responsive",
+        "language-access",
+        "professional-interpreter",
+        "limited-english-proficiency",
+        "cultural-broker",
+        "family-doesnt-speak-english",
+        "need-an-interpreter-for-a-visit"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-education-teaching/instructor/reporting-communication/teaching_multilingual_family_outreach.md",
+        "domain-psychology/intake-assessment/psychology_cultural_formulation_interview_drafter.md",
+        "domain-parenting/caregiver-facing/identity-culture/parenting_multilingual_heritage_language_plan.md"
       ],
       "has_frontmatter": true
     },
@@ -122104,6 +122303,109 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-parenting/family-support-professional/foster-kinship-adoption/parenting_family_time_visit_supervision.md",
+      "filename": "parenting_family_time_visit_supervision.md",
+      "title": "Family Time Visit Supervision — Preparing Parent and Child, Coaching During the Visit, a Redirect-Pause-End Ladder, and Neutral Observation Notes",
+      "domain": "parenting",
+      "category": "parenting/foster-kinship-adoption",
+      "description": "For a family-time supervisor, visit coach, or caseworker supervising contact between a child in care and a birth parent: prepare both sides, coach strengths during the visit, redirect, pause, or end with set scripts and thresholds, and write a neutral, time-stamped observation note for the agency or court. Follows the court order and agency plan; does not diagnose or recommend contact changes; disclosures go to a report.",
+      "techniques": [
+        "AG-19",
+        "DP-04",
+        "DP-05",
+        "RT-05",
+        "NE-20"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "foster-kinship-adoption",
+        "family-time",
+        "supervised-visitation",
+        "visit-coaching",
+        "observation-notes",
+        "reunification",
+        "parent-upset-at-visit",
+        "when-to-end-a-visit"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-legal/custody/legal_supervised_visitation_and_safety_plan.md",
+        "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_foster_placement_first_weeks.md",
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_attachment_repair_after_long_absence.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/foster-kinship-adoption/parenting_life_story_work_with_child.md",
+      "filename": "parenting_life_story_work_with_child.md",
+      "title": "Life Story Work with a Foster or Adopted Child — Sourced History, Honest Age-Matched Wording, Pacing and Triggers, Who Does the Work, and When a Therapist Must Lead",
+      "domain": "parenting",
+      "category": "parenting/foster-kinship-adoption",
+      "description": "For a social worker, family-support worker, or carer's supporting worker doing life story work with a child in foster, kinship, or adoptive care: gather and source the history, write hard facts in honest age-matched words, plan pacing and trigger dates, decide who does the work, and gate to a therapist-led approach when the history or the child's reactions need it. Does not diagnose or take a trauma history; new disclosures go to a report.",
+      "techniques": [
+        "DS-01",
+        "RT-05",
+        "RP-02",
+        "DP-04",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "foster-kinship-adoption",
+        "life-story-work",
+        "adoption",
+        "foster-care",
+        "trauma-informed-practice",
+        "telling-a-child-hard-truths",
+        "why-cant-i-live-with-my-mum"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_kinship_care_first_months.md",
+        "domain-psychology/intake-assessment/psychology_trauma_history_intake_module.md",
+        "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_foster_placement_first_weeks.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/foster-kinship-adoption/parenting_resource_parent_stability_support.md",
+      "filename": "parenting_resource_parent_stability_support.md",
+      "title": "Resource Parent Stability Support — Carer Strain Check, Dominant Driver, Behaviour Support, Respite, Training Gaps, and a Stability Meeting Before a Disruption Notice",
+      "domain": "parenting",
+      "category": "parenting/foster-kinship-adoption",
+      "description": "For a supervising social worker, family-support worker, or kinship navigator whose foster or kinship carers are close to asking for a child to be moved: score carer strain on anchored scales, name the dominant driver, line up behaviour support, respite, and training, and run a stability meeting before any notice is given. Does not diagnose the child or carer; concerns about care in the home go to a report, not a support plan.",
+      "techniques": [
+        "RT-02",
+        "DP-03",
+        "DP-06",
+        "DP-05",
+        "NE-20"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "foster-kinship-adoption",
+        "placement-stability",
+        "placement-disruption",
+        "carer-strain",
+        "respite-care",
+        "foster-carers-want-to-give-notice",
+        "carer-at-breaking-point"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_foster_placement_first_weeks.md",
+        "domain-parenting/caregiver-facing/coparenting-family-structure/parenting_kinship_care_first_months.md",
+        "domain-parenting/caregiver-facing/mental-health-behavior/parenting_aggression_toward_family_safety_plan.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-parenting/caregiver-facing/ages-4-8/parenting_behavior_function_decoder.md",
       "filename": "parenting_behavior_function_decoder.md",
       "title": "Behavior Function Decoder (Ages 4-8)",
@@ -122244,6 +122546,73 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-parenting/family-support-professional/group-facilitation/parenting_parent_group_hard_moments.md",
+      "filename": "parenting_parent_group_hard_moments.md",
+      "title": "Parent Group Hard Moments — Protective Interrupting, Scripts for Disclosure, Monopolising, Harsh-Punishment Talk, Conflict, Distress and Intoxication, Then the Private Follow-Up and Reporting Steps",
+      "domain": "parenting",
+      "category": "parenting/group-facilitation",
+      "description": "For parent-group facilitators facing a difficult moment in session: a member disclosing child abuse or partner violence, a member who takes over, endorsement of harsh punishment, open conflict, a tearful, suicidal, or intoxicated attendee. Produces in-the-moment scripts, a tiered decision (emergency, report today, same-day clinical route, private support), the private follow-up, and a factual incident note. It does not diagnose, and reporting duties are personal and vary — verify locally.",
+      "techniques": [
+        "AG-19",
+        "DP-05",
+        "DP-04",
+        "NE-20"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "group-facilitation",
+        "disclosure-in-group",
+        "protective-interrupting",
+        "group-conflict",
+        "mandated-reporting",
+        "parent-said-something-alarming-in-group",
+        "one-parent-takes-over-the-group",
+        "parent-defends-spanking"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/risk-crisis/psychology_mandated_reporter_decision_walkthrough.md",
+        "domain-psychology/risk-crisis/psychology_crisis_de_escalation_session_plan.md",
+        "domain-biblical-studies/group-leader-facilitation/biblical_groupleader_facilitation_dynamics.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/group-facilitation/parenting_parent_group_session_design.md",
+      "filename": "parenting_parent_group_session_design.md",
+      "title": "Parent Group Session Design — One Learning Goal, Group Agreements with Confidentiality Limits, Practice Over Lecture, Access Built In, Co-Facilitator Roles, and the After-Session Check",
+      "domain": "parenting",
+      "category": "parenting/group-facilitation",
+      "description": "For parent educators and family-support staff designing one session of a parent education group: a timed agenda built around one skill parents practise, group agreements that state confidentiality and its limits, accessibility planned before content (childcare, food, transport, language, literacy), named co-facilitator roles, and a structured after-session check. It does not diagnose parents or children, is not group therapy, and keeps mandated-reporting duties local and personal.",
+      "techniques": [
+        "DS-01",
+        "DP-04",
+        "DP-18",
+        "ST-03"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "group-facilitation",
+        "parent-education-group",
+        "group-agreements",
+        "co-facilitation",
+        "accessible-programming",
+        "planning-a-parenting-class",
+        "getting-parents-to-come-back"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/modalities/group/psychology_group_therapy_curriculum_builder.md",
+        "domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md",
+        "domain-psychology/populations/cross-population/psychology_group_therapy_member_screening.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-parenting/caregiver-facing/health-body-sleep-feeding/parenting_bedtime_resistance_plan_4_12.md",
       "filename": "parenting_bedtime_resistance_plan_4_12.md",
       "title": "Bedtime Resistance Plan (Ages 4–12) — Find the Driver, Then Fix It: Limit-Setting, Fears, Mistimed Bedtime, Screens, and the Snoring Signs That Go to the Pediatrician",
@@ -122378,6 +122747,107 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-parenting/family-support-professional/home-visit-fieldwork/parenting_home_visit_child_safety_concern.md",
+      "filename": "parenting_home_visit_child_safety_concern.md",
+      "title": "Child Safety Concern on a Home Visit — Immediate Danger, Report, or Support Tiers, Mandated-Reporting Steps, What to Say to the Family, and the Record",
+      "domain": "parenting",
+      "category": "parenting/home-visit-fieldwork",
+      "description": "For home visitors and family support workers who see something worrying during or right after a visit — unsafe infant sleep, an injury, no food or heat, a young child alone, partner violence, drugs or weapons in reach: sort each observation into immediate danger, report, or support, act in time order, follow mandated-reporting steps that vary by jurisdiction, decide with a supervisor what to tell the family, and write a factual record. It does not investigate or diagnose.",
+      "techniques": [
+        "AG-19",
+        "DP-05",
+        "RT-02",
+        "DP-04",
+        "NE-20"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "home-visit-fieldwork",
+        "mandated-reporting",
+        "child-safeguarding",
+        "unsafe-sleep",
+        "neglect-concern",
+        "saw-something-on-a-visit",
+        "do-i-need-to-report-this"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/risk-crisis/psychology_mandated_reporter_decision_walkthrough.md",
+        "domain-parenting/caregiver-facing/safety-risk/parenting_home_childproofing_by_stage.md",
+        "domain-healthcare-clinical/prompts/allied-health/allied_health_sdoh_screening_response.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/home-visit-fieldwork/parenting_home_visit_plan_and_interaction.md",
+      "filename": "parenting_home_visit_plan_and_interaction.md",
+      "title": "Home Visit Plan and Parent–Child Interaction — Family-Set Agenda, a Facilitated Activity, Specific Strengths Feedback, and the Next-Visit Plan",
+      "domain": "parenting",
+      "category": "parenting/home-visit-fieldwork",
+      "description": "For home visitors and family support workers planning and running one home visit with a parent and a child aged 0–5: a family-set agenda, a short parent–child activity the worker sets up and then steps back from, specific strengths-based feedback, plain observation notes without scores or labels, and a wrap-up with one home step and the next date. It does not diagnose, score development, or replace a clinician or the model's required content.",
+      "techniques": [
+        "DS-01",
+        "DP-18",
+        "DP-04",
+        "ST-03"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "home-visit-fieldwork",
+        "home-visiting",
+        "parent-child-interaction",
+        "strengths-based-feedback",
+        "visit-planning",
+        "planning-my-next-visit",
+        "what-to-do-on-a-home-visit"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/modalities/behavioral-parent-training/psychology_behavioral_parent_training_module.md",
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_developmental_red_flags_0_3.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_praise_encouragement_calibrator.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/home-visit-fieldwork/parenting_home_visitor_worker_safety.md",
+      "filename": "parenting_home_visitor_worker_safety.md",
+      "title": "Home Visitor Field Safety — Pre-Visit Risk Check, Check-In/Check-Out, Positioning and Exits, Leaving Early, and After an Incident",
+      "domain": "parenting",
+      "category": "parenting/home-visit-fieldwork",
+      "description": "For home visitors, family support workers, and caseworkers who visit families alone: a pre-visit risk check with anchored levels, go / go-with-changes / do-not-visit gates, a check-in and check-out system with a code phrase, car, dog, and exit positioning, scripts for leaving early from an intoxicated, aggressive, or armed situation, and incident reporting with support afterwards. Leaving keeps the worker safe; it never ends the duty to act on a child's safety.",
+      "techniques": [
+        "DP-03",
+        "DP-05",
+        "AG-19",
+        "DP-04",
+        "NE-20"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "home-visit-fieldwork",
+        "worker-safety",
+        "lone-working",
+        "check-in-check-out",
+        "de-escalation",
+        "unsafe-home-visit",
+        "felt-scared-on-a-visit"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-operations/quality-safety/ops_job_hazard_analysis.md",
+        "domain-operations/quality-safety/ops_safety_incident_investigation.md",
+        "domain-psychology/risk-crisis/psychology_mandated_reporter_decision_walkthrough.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-parenting/caregiver-facing/identity-culture/parenting_interfaith_household_parenting_plan.md",
       "filename": "parenting_interfaith_household_parenting_plan.md",
       "title": "Interfaith or Mixed-Belief Household — A Parenting Plan for Rites, Holidays, Education, Extended-Family Pressure, and the Child's Own Questions",
@@ -122473,6 +122943,110 @@
         "domain-parenting/caregiver-facing/ages-4-8/parenting_hard_topics_age_appropriate_scripts.md",
         "domain-parenting/caregiver-facing/ages-9-12/parenting_bullying_target_response_protocol.md",
         "domain-psychology/client-self-use/pre-therapy/clientself_culturally_affirming_therapist_screening.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/intake-assessment/parenting_developmental_screen_results_talk.md",
+      "filename": "parenting_developmental_screen_results_talk.md",
+      "title": "Developmental Screen Results Talk — Parent-Completed Screener Done Well, Screening Is Not Diagnosis, On-Track / Monitor / Refer Conversations, and Early Intervention Referral with Consent",
+      "domain": "parenting",
+      "category": "parenting/intake-assessment",
+      "description": "For a home visitor or parent educator using a parent-completed developmental or social-emotional screener (ASQ-3 or ASQ:SE-2 type): set it up so the parent is the expert, check age and scoring, explain results in plain words, and hold an on-track, monitor, or refer conversation that ends in a concrete next step — activities, a rescreen date, or a Part C early intervention, Child Find, or pediatrician referral made with consent. Screening is never presented as a diagnosis.",
+      "techniques": [
+        "DS-01",
+        "DP-05",
+        "DP-04",
+        "NE-20"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "intake-assessment",
+        "developmental-screening",
+        "social-emotional-screening",
+        "early-intervention-referral",
+        "part-c",
+        "child-find",
+        "is-my-baby-behind",
+        "talking-to-parents-about-delays"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_developmental_red_flags_0_3.md",
+        "domain-psychology/intake-assessment/psychology_screening_battery_interpreter.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/intake-assessment/parenting_family_strengths_needs_intake.md",
+      "filename": "parenting_family_strengths_needs_intake.md",
+      "title": "Family Strengths and Needs Intake — Consent and Confidentiality Limits First, Protective-Factors Map, Concrete Needs, Private Safety Questions, and a Summary in the Family's Own Priorities",
+      "domain": "parenting",
+      "category": "parenting/intake-assessment",
+      "description": "For a family-support worker, home visitor, or parent educator running the first intake conversation in a voluntary program: explain consent and the limits of confidentiality before anything is disclosed, map strengths with the five protective factors, list concrete needs, ask safety questions of each adult alone, and write an intake summary led by the family's own priorities. It describes rather than diagnoses, and routes abuse, partner-violence, and crisis disclosures to reporting and clinical pathways that vary by jurisdiction.",
+      "techniques": [
+        "DS-01",
+        "RT-02",
+        "DP-04",
+        "DP-05",
+        "NE-20"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "intake-assessment",
+        "family-intake",
+        "protective-factors",
+        "strengths-based-assessment",
+        "limits-of-confidentiality",
+        "first-meeting-with-new-family",
+        "what-does-this-family-need",
+        "getting-to-know-the-family"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/intake-assessment/psychology_pediatric_intake_with_caregiver.md",
+        "domain-healthcare-clinical/prompts/allied-health/allied_health_sdoh_screening_response.md",
+        "domain-parenting/caregiver-facing/ages-0-3/parenting_postpartum_parent_capacity_check.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/intake-assessment/parenting_program_referral_triage_waitlist.md",
+      "filename": "parenting_program_referral_triage_waitlist.md",
+      "title": "Program Referral Triage and Waitlist — Safety Read First, Eligibility, Anchored Urgency Tiers, Program Fit vs Better-Fit Services, and a Waitlist with Safety Check-Ins",
+      "domain": "parenting",
+      "category": "parenting/intake-assessment",
+      "description": "For an intake coordinator, program manager, or supervisor in a family-support, home-visiting, or parent-education program who must sort incoming referrals: read each one for safeguarding content first, check consent and eligibility, assign an anchored urgency tier, name the dominant driver behind accept, redirect, or waitlist, hand off warmly to better-fit services, and run a waitlist with scheduled safety check-ins. A waitlist is never a safety plan, and reporting duties vary by jurisdiction.",
+      "techniques": [
+        "AG-19",
+        "DP-03",
+        "RT-02",
+        "DP-06",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "intake-assessment",
+        "referral-triage",
+        "waitlist-management",
+        "eligibility-screening",
+        "urgency-tiers",
+        "too-many-referrals-not-enough-slots",
+        "who-do-we-see-first",
+        "referral-with-a-red-flag"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/risk-crisis/psychology_mandated_reporter_decision_walkthrough.md",
+        "domain-psychology/populations/cross-population/psychology_group_therapy_member_screening.md",
+        "domain-psychology/care-coordination/psychology_warm_handoff_narrative.md"
       ],
       "has_frontmatter": true
     },
@@ -122884,6 +123458,105 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-parenting/family-support-professional/plans-documentation/parenting_case_closure_transition_summary.md",
+      "filename": "parenting_case_closure_transition_summary.md",
+      "title": "Case Closure and Transition Summary — Planned vs. Unplanned Endings, a Safety Check Before Closing, the Family's Own Plan, Warm Hand-offs, and a Plain-Language Closure Letter",
+      "domain": "parenting",
+      "category": "parenting/plans-documentation",
+      "description": "For home visitors, family support workers, parent educators, and caseworkers ending services with a family: sort planned from unplanned closure, run a safety check and outreach before closing on a family who stopped answering, write a closure summary from the record, build the family's own plan in their words, make consented warm hand-offs, and send a plain-language closure letter. Describes, never diagnoses; disengagement is not closed over a live safeguarding concern, and reporting duties vary by jurisdiction.",
+      "techniques": [
+        "DP-05",
+        "NE-20",
+        "NE-14",
+        "QA-09"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "plans-documentation",
+        "case-closure",
+        "discharge-planning",
+        "warm-handoff",
+        "unplanned-closure",
+        "family-stopped-answering",
+        "ending-services-with-a-family"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/documentation/psychology_termination_summary.md",
+        "domain-psychology/care-coordination/psychology_warm_handoff_narrative.md",
+        "domain-psychology/care-coordination/psychology_referral_letter_generator.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/plans-documentation/parenting_family_contact_note_writer.md",
+      "filename": "parenting_family_contact_note_writer.md",
+      "title": "Family Contact Note Writer — Facts, Observations, and Interpretation Kept Apart, the Family's Own Words, Strengths, What Not to Record, and the Separate Safeguarding Route",
+      "domain": "parenting",
+      "category": "parenting/plans-documentation",
+      "description": "For home visitors, family support workers, parent educators, and caseworkers turning rough notes from a visit, call, or group contact into a record: facts, observations, and worker interpretation in labelled layers, the family's exact words in quotes, at least one specific strength, judgement-free wording, a must-not-record list, and writing the family could read. Does not diagnose; a safeguarding concern goes to a report first and into the record by agency policy, and duties vary by jurisdiction.",
+      "techniques": [
+        "ST-03",
+        "NE-16",
+        "DP-04",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "plans-documentation",
+        "case-notes",
+        "home-visit-documentation",
+        "objective-language",
+        "safeguarding-documentation",
+        "writing-up-a-visit",
+        "what-do-i-put-in-my-notes"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/documentation/psychology_dap_progress_note.md",
+        "domain-psychology/documentation/psychology_collateral_contact_note.md",
+        "domain-parenting/caregiver-facing/custody/parenting_custody_communication_log_template.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/plans-documentation/parenting_family_goal_plan_builder.md",
+      "filename": "parenting_family_goal_plan_builder.md",
+      "title": "Family Goal Plan Builder — The Family's Own Words, Small Measurable Steps, Who Does What, Review Dates, and Required Conditions Kept Separate",
+      "domain": "parenting",
+      "category": "parenting/plans-documentation",
+      "description": "For home visitors, family support workers, parent educators, and caseworkers co-creating a family goal or service plan with a parent: goals headed by the family's own words, broken into small measurable steps with who does what (worker included), supports, a family-rated progress scale and review dates, with any court- or agency-required conditions copied verbatim into a separate section. Describes behaviour, never diagnoses; safeguarding and reporting duties sit above the plan and vary by jurisdiction.",
+      "techniques": [
+        "DS-02",
+        "DP-03",
+        "DP-04",
+        "DP-18"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "plans-documentation",
+        "family-service-plan",
+        "goal-setting",
+        "measurable-steps",
+        "court-ordered-conditions",
+        "plan-feels-imposed",
+        "writing-a-plan-with-the-family"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/documentation/psychology_initial_treatment_plan.md",
+        "domain-psychology/modalities/motivational-interviewing/psychology_mi_decisional_balance_facilitator.md",
+        "domain-parenting/caregiver-facing/custody/parenting_custody_parenting_plan_builder.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-parenting/caregiver-facing/ages-4-8/parenting_scenario_simulator.md",
       "filename": "parenting_scenario_simulator.md",
       "title": "Parenting Scenario Simulator — Rehearse Tough Moments",
@@ -122955,6 +123628,74 @@
         "domain-parenting/caregiver-facing/ages-4-8/parenting_developmental_expectations_4_to_8.md",
         "domain-parenting/caregiver-facing/ages-4-8/parenting_when_to_seek_professional_help.md",
         "domain-parenting/caregiver-facing/cross-age/parenting_sibling_spacing_dynamics.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/referral-resourcing/parenting_referral_follow_through_barriers.md",
+      "filename": "parenting_referral_follow_through_barriers.md",
+      "title": "Referral Follow-Through — Closed-Loop Tracking, Barrier Analysis, the Family's Right to Decline, and the Safety Floor a Decline Does Not Remove",
+      "domain": "parenting",
+      "category": "parenting/referral-resourcing",
+      "description": "For family support workers, home visitors, and caseworkers whose referrals to community services stall: track each referral to a real connection, find the barrier that is actually blocking it (transport, waitlists, language, cost, fear of systems, stigma), remove it with the family, respect a clear decline, and keep the safety floor that a decline never removes. The worker connects and follows up; does not diagnose, treat, or give legal advice.",
+      "techniques": [
+        "RT-02",
+        "DP-06",
+        "DP-18",
+        "DP-05"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "referral-resourcing",
+        "closed-loop-referral",
+        "barrier-analysis",
+        "right-to-decline",
+        "service-navigation",
+        "family-never-made-the-appointment",
+        "referral-went-nowhere",
+        "they-wont-call-back"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/allied-health/allied_health_sdoh_screening_response.md",
+        "domain-psychology/care-coordination/psychology_warm_handoff_narrative.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-parenting/family-support-professional/referral-resourcing/parenting_clinician_referral_by_nonclinician.md",
+      "filename": "parenting_clinician_referral_by_nonclinician.md",
+      "title": "Referring to a Licensed Clinician When You Are Not One — Observations Not Labels, Emergency / Same-Day / Routine Tiers, the Conversation with the Parent, Consent, and What to Send",
+      "domain": "parenting",
+      "category": "parenting/referral-resourcing",
+      "description": "For home visitors, parent educators, family support workers, and caseworkers who are worried about a parent's or child's mental health, substance use, or development: turn the worry into dated observations, sort urgency into emergency, same-day, or routine, raise it with the parent in plain words, get written consent, and send a referral a clinician can act on. The worker supports, refers, and follows up; never diagnoses or treats.",
+      "techniques": [
+        "AG-19",
+        "DP-05",
+        "DP-04",
+        "NE-20"
+      ],
+      "keywords": [
+        "parenting",
+        "family-support-professional",
+        "referral-resourcing",
+        "observation-not-diagnosis",
+        "urgency-triage",
+        "release-of-information",
+        "warm-referral",
+        "worried-about-parent-mental-health",
+        "how-to-suggest-counselling",
+        "child-not-meeting-milestones"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-05",
+      "related_prompts": [
+        "domain-psychology/care-coordination/psychology_referral_letter_generator.md",
+        "domain-parenting/caregiver-facing/cross-age/parenting_when_to_seek_professional_help_all_ages.md",
+        "domain-discipleship/mentor-equipping/discipleship_mentor_boundaries_and_referral.md"
       ],
       "has_frontmatter": true
     },

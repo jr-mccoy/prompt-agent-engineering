@@ -1,12 +1,12 @@
 {
   "by_eval_status": {
-    "unknown": 5858
+    "unknown": 5880
   },
   "by_kind": {
     "agent": 168,
     "command": 156,
     "persona": 57,
-    "prompt": 4783,
+    "prompt": 4805,
     "skill": 358,
     "technique": 336
   },
@@ -14,7 +14,7 @@
     "agent": 168,
     "command": 156,
     "persona": 57,
-    "prompt": 4730,
+    "prompt": 4752,
     "skill": 358,
     "technique": 336
   },
@@ -23,34 +23,34 @@
   },
   "by_license_status": {
     "inherited": 598,
-    "resolved": 5207,
+    "resolved": 5229,
     "unresolved": 53
   },
   "by_lifecycle": {
-    "live": 5805,
+    "live": 5827,
     "tombstone": 53
   },
   "by_maturity": {
     "deprecated": 62,
-    "experimental": 5796
+    "experimental": 5818
   },
   "by_metadata_completeness": {
     "degraded": 2,
-    "full": 5658,
+    "full": 5680,
     "minimal": 198
   },
   "by_provenance_origin": {
     "adapted": 577,
-    "project_native": 5199,
+    "project_native": 5221,
     "unknown": 53,
     "vendored": 29
   },
   "by_review_status": {
-    "unknown": 5858
+    "unknown": 5880
   },
   "by_serving_policy": {
     "metadata_only": 64,
-    "safety_gated": 1502,
+    "safety_gated": 1524,
     "standard": 4292
   },
   "diagnostics_by_code": {
@@ -60,20 +60,20 @@
     "tombstone": 53
   },
   "membership": {
-    "excluded_markdown_files": 1584,
+    "excluded_markdown_files": 1593,
     "exclusion_reasons": {
       "bundled_component": 695,
-      "meta_document": 498,
+      "meta_document": 507,
       "non_resource_prefix": 321,
       "planning_document": 1,
       "skill_bundle_attachment": 65,
       "toolkit_documentation": 4
     },
-    "file_backed_candidates": 5469
+    "file_backed_candidates": 5491
   },
   "quality_assertions_by_scheme": {
     "guard-level": 74,
-    "intended-use": 756
+    "intended-use": 778
   },
   "relationships": {
     "attachments": 1042,
@@ -93,5 +93,5 @@
       "ST-26"
     ]
   },
-  "total_records": 5858
+  "total_records": 5880
 }
