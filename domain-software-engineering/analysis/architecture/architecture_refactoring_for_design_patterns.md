@@ -3,13 +3,9 @@ title: "Architecture Refactoring For Design Patterns"
 category: code-analysis/architecture
 description: "Identify refactoring opportunities where design patterns would improve maintainability, extensibility, or reusability - with verification to prevent over-engineering"
 techniques:
-  - ST-01
-  - ST-02
-  - RT-02
   - RT-05
   - DS-01
   - DS-06
-  - CM-01
   - QA-04
   - ST-03
 difficulty: intermediate
@@ -347,13 +343,9 @@ The following areas were evaluated but **do not require pattern-based refactorin
 ```
 
 **Techniques Used:**
-- ST-01 (Clear Objective Statement) - Defines goal with balance against over-engineering
-- ST-02 (Structured Sequential Instructions) - Systematic 5-step analysis process
-- RT-02 (Multi-Dimensional Analysis) - Evaluates pain points, pattern fit, alternatives
 - RT-05 (Evidence-Based Reasoning) - Requires concrete code examples and pain evidence
 - DS-01 (Framework Application) - Comprehensive design pattern taxonomy with use cases
-- DS-06 (Prioritization Guidance) - P1-P4 prioritization matrix by impact/effort
-- CM-01 (Explicit Context Framing) - When to apply vs. when to be cautious
+- DS-06 (Prioritization and Severity Guidance) - P1-P4 prioritization matrix by impact/effort
 - QA-04 (Uncertainty Acknowledgment) - Confidence levels for each recommendation
-- ST-03 (Output Format Templates) - Detailed example output structure
+- ST-03 (Output Format Specification) - Detailed example output structure
  

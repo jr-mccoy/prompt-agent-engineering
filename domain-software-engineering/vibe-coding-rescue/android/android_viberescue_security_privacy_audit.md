@@ -3,13 +3,9 @@ title: "Android-Specific Security and Privacy Audit of a Vibe-Coded App"
 category: software-engineering/vibe-coding-rescue/android
 description: "Audit a vibe-coded Android app for the security and privacy defects AI generation tends to produce on Android specifically — exported components without explicit flags, intent-filter hijacking, deeplink validation gaps, WebView misconfiguration (JS interface, file access), insecure network (cleartext, missing cert pinning), data-at-rest in plain SharedPreferences, unencrypted Room, permissions overreach, hand-rolled auth, missing input validation, secrets in code or resources, PII in logs, SDK-version-gated security gaps. Produces evidence-cited findings with severity, exploitability under the actual deployment, and remediation pointing to platform primitives. Refuses keyword-match findings."
 techniques:
-  - ST-01
-  - ST-02
   - ST-03
   - CM-02
-  - DS-01
   - RT-05
-  - RT-07
   - QA-01
   - QA-04
 difficulty: advanced
@@ -362,12 +358,8 @@ Feed this report + `android_viberescue_codebase_audit.md` output into `android_v
 
 ## Techniques Used
 
-- **ST-01 (Clear Objective):** Findings report with platform-specific remediation, not generic security advice.
-- **ST-02 (Structured Sequential Instructions):** Nine steps drive scope → eleven categories → AI signal → verify → prioritize → patterns → remediate → dual-failure → verify.
 - **ST-03 (Output Format Specification):** Fixed report schema enables downstream consumption by the prioritization prompt.
 - **CM-02 (Constraint Specification):** Must Not block forbids keyword findings, generic remediation, and worst-case severity inflation.
-- **DS-01 (Framework Application):** Eleven Android-specific security categories form the framework; tied to platform primitives.
 - **RT-05 (Evidence-Based Reasoning):** Every finding traced from entry to sensitive op with platform-protection check.
-- **RT-07 (Cascade Effect Analysis):** AI-pattern repeating section traces individual findings to systemic prevention via the rules file.
 - **QA-01 (Self-Verification):** Verification checklist + dual-failure prevention block prevents both missed-Critical and finding-flood failures.
-- **QA-04 (Confidence Calibration):** Per-finding confidence + exploitability-under-actual-threat-model forces explicit grounding.
+- **QA-04 (Uncertainty Acknowledgment):** Per-finding confidence + exploitability-under-actual-threat-model forces explicit grounding.

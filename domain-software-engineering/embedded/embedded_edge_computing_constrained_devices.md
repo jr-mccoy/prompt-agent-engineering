@@ -3,14 +3,11 @@ title: "Edge Computing for Constrained Devices"
 category: software-engineering/embedded
 description: "Design and review edge computing solutions for resource-constrained devices, including on-device ML inference, data reduction, and local decision-making."
 techniques:
-  - ST-01
   - ST-02
   - RT-02
   - RT-05
   - DS-06
-  - CM-01
   - CM-02
-  - RT-03
 difficulty: advanced
 tags:
   - edge-computing
@@ -227,4 +224,4 @@ After completing the analysis, explicitly answer:
 
 ---
 
-**Techniques Used:** ST-01 (Clear Objective), ST-02 (Structured Sequential), RT-02 (Multi-Dimensional Analysis), RT-05 (Evidence-Based), DS-06 (Prioritization), CM-01 (Context Framing), CM-02 (Constraints), RT-03 (Comparative Analysis)
+**Techniques Used:** ST-02 (Structured Sequential Instructions), RT-02 (Multi-Dimensional Analysis Framework), RT-05 (Evidence-Based Reasoning), DS-06 (Prioritization and Severity Guidance), CM-02 (Constraint Specification)

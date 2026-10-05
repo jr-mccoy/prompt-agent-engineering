@@ -3,14 +3,11 @@ title: "Repository Improvement Audit Master Prompt"
 category: software-engineering/improvement
 description: "Run a full-repository audit for quality, structure, duplication, metadata consistency, discoverability, and maintainability, then produce a phased implementation roadmap executable across future sessions."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
   - RT-05
   - DS-06
-  - QA-01
-  - QA-02
+  - CM-02
 difficulty: advanced
 tags:
   - repository-audit
@@ -374,14 +371,11 @@ Return output in this structure:
 
 ## Techniques Used (Canonical IDs)
 
-- **ST-01 (Clear Objective Statement):** Defines a precise audit goal and deliverable.
 - **ST-02 (Structured Sequential Instructions):** Provides a deterministic, numbered workflow.
 - **ST-03 (Output Format Specification):** Enforces standardized report and roadmap outputs.
-- **RT-02 (Multi-Dimensional Analysis):** Covers quality, structure, duplication, metadata, discoverability, and maintainability.
 - **RT-05 (Evidence-Based Reasoning):** Requires path-level evidence and distinctive strings.
-- **DS-06 (Prioritization Guidance):** Forces phased backlog and effort/impact sequencing.
-- **QA-01 (Constraint Specification):** Adds hard boundaries against fabricated claims.
-- **QA-02 (Adversarial Thinking):** Includes false-positive and dual-failure prevention guards.
+- **DS-06 (Prioritization and Severity Guidance):** Forces phased backlog and effort/impact sequencing.
+- **CM-02 (Constraint Specification):** Adds hard boundaries against fabricated claims.
 
 ---
 
