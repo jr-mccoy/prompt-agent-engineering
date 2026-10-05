@@ -7,7 +7,7 @@ metadata:
     - observability
     - performance
     - slo
-  updated: "2026-04-11"
+  updated: "2026-10-05"
 ---
 # SLO Implementation
 
@@ -70,12 +70,15 @@ sum(storage_writes_total)
 
 ### Availability SLO Examples
 
-| SLO % | Downtime/Month | Downtime/Year |
-|-------|----------------|---------------|
-| 99%   | 7.2 hours      | 3.65 days     |
-| 99.9% | 43.2 minutes   | 8.76 hours    |
-| 99.95%| 21.6 minutes   | 4.38 hours    |
-| 99.99%| 4.32 minutes   | 52.56 minutes |
+The examples in this skill use a 28-day rolling window. A 30-day month is shown for
+comparison; use the column that matches your SLO window.
+
+| SLO % | Budget / 28 days | Budget / 30 days | Budget / year |
+|-------|------------------|------------------|---------------|
+| 99%   | 6.72 hours       | 7.2 hours        | 3.65 days     |
+| 99.9% | 40.32 minutes    | 43.2 minutes     | 8.76 hours    |
+| 99.95%| 20.16 minutes    | 21.6 minutes     | 4.38 hours    |
+| 99.99%| 4.03 minutes     | 4.32 minutes     | 52.56 minutes |
 
 ### Choose Appropriate SLOs
 
@@ -115,9 +118,9 @@ Error Budget = 1 - SLO Target
 ```
 
 **Example:**
-- SLO: 99.9% availability
-- Error Budget: 0.1% = 43.2 minutes/month
-- Current Error: 0.05% = 21.6 minutes/month
+- SLO: 99.9% availability over 28 days
+- Error Budget: 0.1% = 40.32 minutes per 28 days
+- Current Error: 0.05% = 20.16 minutes
 - Remaining Budget: 50%
 
 ### Error Budget Policy
@@ -175,7 +178,13 @@ groups:
         expr: |
           (sli:http_availability:ratio - 0.999) / (1 - 0.999) * 100
 
-      # Error budget burn rate
+  # Burn rate = error ratio over a window / error budget (1 - 0.999).
+  # 1x spends exactly the whole budget over the 28-day window.
+  # One rule per window the alerts below use. Evaluated every minute so the
+  # short windows stay fresh.
+  - name: slo_burn_rate_rules
+    interval: 1m
+    rules:
       - record: slo:http_availability:burn_rate_5m
         expr: |
           (1 - (
@@ -183,42 +192,77 @@ groups:
             /
             sum(rate(http_requests_total[5m]))
           )) / (1 - 0.999)
+
+      - record: slo:http_availability:burn_rate_30m
+        expr: |
+          (1 - (
+            sum(rate(http_requests_total{status!~"5.."}[30m]))
+            /
+            sum(rate(http_requests_total[30m]))
+          )) / (1 - 0.999)
+
+      - record: slo:http_availability:burn_rate_1h
+        expr: |
+          (1 - (
+            sum(rate(http_requests_total{status!~"5.."}[1h]))
+            /
+            sum(rate(http_requests_total[1h]))
+          )) / (1 - 0.999)
+
+      - record: slo:http_availability:burn_rate_6h
+        expr: |
+          (1 - (
+            sum(rate(http_requests_total{status!~"5.."}[6h]))
+            /
+            sum(rate(http_requests_total[6h]))
+          )) / (1 - 0.999)
 ```
 
 ### SLO Alerting Rules
+
+A burn-rate threshold depends on the SLO window. For each alert:
+
+```
+threshold = budget fraction consumed × SLO window ÷ alert window
+```
+
+For this skill's 28-day window (672 hours):
+
+| Page when… | Long / short window | Threshold (28 days) | Same rule on a 30-day window |
+|---|---|---|---|
+| 2% of the budget is spent in 1 hour | 1h / 5m | 0.02 × 672 ÷ 1 = **13.44** | 0.02 × 720 ÷ 1 = 14.4 |
+| 5% of the budget is spent in 6 hours | 6h / 30m | 0.05 × 672 ÷ 6 = **5.6** | 0.05 × 720 ÷ 6 = 6 |
+
+The widely quoted 14.4 and 6 are the 30-day values. Recompute them whenever the
+window changes.
 
 ```yaml
 groups:
   - name: slo_alerts
     interval: 1m
     rules:
-      # Fast burn: 14.4x rate, 1 hour window
-      # Consumes 2% error budget in 1 hour
-      - alert: SLOErrorBudgetBurnFast
+      # Page: 28-day window, thresholds from the table above.
+      # Each long window is paired with a short window (1/12 of its length)
+      # so the alert clears soon after the errors stop.
+      - alert: SLOErrorBudgetBurn
         expr: |
-          slo:http_availability:burn_rate_1h > 14.4
-          and
-          slo:http_availability:burn_rate_5m > 14.4
+          (
+            slo:http_availability:burn_rate_1h > 13.44
+            and
+            slo:http_availability:burn_rate_5m > 13.44
+          )
+          or
+          (
+            slo:http_availability:burn_rate_6h > 5.6
+            and
+            slo:http_availability:burn_rate_30m > 5.6
+          )
         for: 2m
         labels:
           severity: critical
         annotations:
-          summary: "Fast error budget burn detected"
-          description: "Error budget burning at {{ $value }}x rate"
-
-      # Slow burn: 6x rate, 6 hour window
-      # Consumes 5% error budget in 6 hours
-      - alert: SLOErrorBudgetBurnSlow
-        expr: |
-          slo:http_availability:burn_rate_6h > 6
-          and
-          slo:http_availability:burn_rate_30m > 6
-        for: 15m
-        labels:
-          severity: warning
-        annotations:
-          summary: "Slow error budget burn detected"
-          description: "Error budget burning at {{ $value }}x rate"
+          summary: "Error budget burning fast"
+          description: "Burn rate {{ $value | humanize }}x (1x spends the 28-day budget in 28 days)"
 
       # Error budget exhausted
       - alert: SLOErrorBudgetExhausted
@@ -230,6 +274,10 @@ groups:
           summary: "SLO error budget exhausted"
           description: "Error budget remaining: {{ $value }}%"
 ```
+
+This is the paging tier only. For ticket-tier alerts, low-traffic guards, `promtool`
+unit tests, backtesting and cheaper long-window rules, use the `slo-burn-rate-alerting`
+skill. This skill does not repeat that material.
 
 ## SLO Dashboard
 
@@ -268,28 +316,6 @@ slo:http_availability:error_budget_remaining
 (1 - sli:http_availability:ratio) * (1 - 0.999)
 ```
 
-## Multi-Window Burn Rate Alerts
-
-```yaml
-# Combination of short and long windows reduces false positives
-rules:
-  - alert: SLOBurnRateHigh
-    expr: |
-      (
-        slo:http_availability:burn_rate_1h > 14.4
-        and
-        slo:http_availability:burn_rate_5m > 14.4
-      )
-      or
-      (
-        slo:http_availability:burn_rate_6h > 6
-        and
-        slo:http_availability:burn_rate_30m > 6
-      )
-    labels:
-      severity: critical
-```
-
 ## SLO Review Process
 
 ### Weekly Review
@@ -315,7 +341,7 @@ rules:
 1. **Start with user-facing services**
 2. **Use multiple SLIs** (availability, latency, etc.)
 3. **Set achievable SLOs** (don't aim for 100%)
-4. **Implement multi-window alerts** to reduce noise
+4. **Implement multi-window alerts** to reduce noise, with thresholds computed for your SLO window
 5. **Track error budget** consistently
 6. **Review SLOs regularly**
 7. **Document SLO decisions**
@@ -333,3 +359,4 @@ rules:
 
 - `prometheus-configuration` - For metric collection
 - `grafana-dashboards` - For SLO visualization
+- `slo-burn-rate-alerting` - For the full multi-window, multi-burn-rate alert design and its tests
