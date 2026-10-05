@@ -21,14 +21,15 @@ Agency Agents are designed for **multi-agent orchestration**—where specialized
 ## Directory Structure
 
 ```
-agency-agents/
+personas/
 ├── design/                    # 7 agents
+│   ├── design_android_compose_reviewer.md
 │   ├── design_brand_guardian.md
 │   ├── design_ui_designer.md
 │   ├── design_ux_architect.md
 │   ├── design_ux_researcher.md
 │   ├── design_visual_storyteller.md
-│   └── design_whimsy_injector.md      ⭐ Unique personality system
+│   └── design_whimsy_injector.md           ⭐ Unique personality system
 │
 ├── engineering/               # 7 agents
 │   ├── engineering_ai_engineer.md
@@ -57,21 +58,22 @@ agency-agents/
 │   └── product_trend_researcher.md
 │
 ├── project-management/        # 5 agents
-│   ├── project_experiment_tracker.md
-│   ├── project_manager_senior.md       ⭐ Spec-to-task conversion
-│   ├── project_shepherd.md
-│   ├── project_studio_operations.md
-│   └── project_studio_producer.md
+│   ├── project_management_experiment_tracker.md
+│   ├── project_management_project_shepherd.md
+│   ├── project_management_studio_operations.md
+│   ├── project_management_studio_producer.md
+│   └── project_manager_senior.md           ⭐ Spec-to-task conversion
 │
 ├── spatial-computing/         # 6 agents
-│   ├── spatial_macos_metal_engineer.md
-│   ├── spatial_terminal_integration.md
-│   ├── spatial_visionos_engineer.md
-│   ├── spatial_xr_cockpit_specialist.md
-│   └── spatial_xr_interface_architect.md
+│   ├── macos_spatial_metal_engineer.md
+│   ├── terminal_integration_specialist.md
+│   ├── visionos_spatial_engineer.md
+│   ├── xr_cockpit_interaction_specialist.md
+│   ├── xr_immersive_developer.md
+│   └── xr_interface_architect.md
 │
 ├── specialized/               # 6 agents
-│   ├── agents_orchestrator.md          ⭐ Pipeline manager
+│   ├── agents_orchestrator.md              ⭐ Pipeline manager
 │   ├── data_analytics_reporter.md
 │   ├── lsp_index_engineer.md
 │   ├── pacu_educator_persona.md
@@ -80,19 +82,18 @@ agency-agents/
 │
 ├── support/                   # 6 agents
 │   ├── support_analytics_reporter.md
-│   ├── support_executive_summary.md
+│   ├── support_executive_summary_generator.md
 │   ├── support_finance_tracker.md
 │   ├── support_infrastructure_maintainer.md
-│   ├── support_legal_compliance.md
-│   ├── support_responder.md
-│   └── support_workflow_optimizer.md
+│   ├── support_legal_compliance_checker.md
+│   └── support_support_responder.md
 │
 └── testing/                   # 7 agents
     ├── testing_api_tester.md
-    ├── testing_evidence_collector.md   ⭐ Screenshot-based QA
+    ├── testing_evidence_collector.md       ⭐ Screenshot-based QA
     ├── testing_performance_benchmarker.md
-    ├── testing_reality_checker.md      ⭐ Quality gate enforcement
-    ├── testing_results_analyzer.md
+    ├── testing_reality_checker.md          ⭐ Quality gate enforcement
+    ├── testing_test_results_analyzer.md
     ├── testing_tool_evaluator.md
     └── testing_workflow_optimizer.md
 ```

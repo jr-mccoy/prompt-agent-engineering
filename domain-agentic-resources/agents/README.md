@@ -1083,7 +1083,7 @@ Each agent is assigned a specific Claude model for optimal performance:
 
 ## Additional Resources
 
-- [Skills Index](../skills/README.md) - 132 modular knowledge packages
+- [Skills Index](../skills/README.md) - 340 modular knowledge packages
 - [Commands Index](../commands/README.md) - 119 commands
 - [Integration Guide](../documentation/integration_with_prompts.md) - How agents relate to prompts
 - Future Processing Instructions - Detailed analysis tasks

@@ -264,7 +264,7 @@ For healthcare prompts to be valuable, they must:
 | `medicine_differential_diagnosis_generator.md` | [prompts/](prompts/reasoning/medicine_differential_diagnosis_generator.md) | Systematic differential generation with probability weighting and red flag identification |
 | `medicine_patient_education_adapter.md` | [prompts/](prompts/communication/medicine_patient_education_adapter.md) | Health literacy adaptation, teach-back methods, cultural considerations |
 
-### All Healthcare Prompts (63 total — 41 clinical + 22 medical education/HPE)
+### Healthcare Prompts (374 total — 352 clinical + 22 medical education/HPE; the tables below are a selection, grouped by when prompts were added)
 
 #### Core Clinical Reasoning (Existing)
 | Prompt | Purpose |

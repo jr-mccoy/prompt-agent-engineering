@@ -31,7 +31,7 @@ domain-presentations/
 | `board-decks/` | 20 | Board-deck image visual prompts in 16:9 format with anti-UI constraints |
 | `visual-planning/` | 4 | Capability frontier mapping, visual QA harness, modality routing, cascade effects scan |
 | `narrative-delivery/` | 4 | Investor pitch narrative, keynote/conference talk arc, Q&A and hostile-question prep, speaker notes and rehearsal coaching |
-| **Total** | **~52** | |
+| **Total** | **~42** | |
 
 ---
 

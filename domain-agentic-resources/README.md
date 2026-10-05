@@ -8,23 +8,23 @@ This directory contains skills, agents, commands, and personas designed to be lo
 
 ```
 domain-agentic-resources/
-├── skills/           # 303 skills across 28 categories
+├── skills/           # 340 skills across 32 categories
 │                     # Directory-based with SKILL.md + optional scripts/, references/, assets/
 │
-├── agents/           # 99 agents across 16 categories
+├── agents/           # 147 agents across 23 categories
 │                     # Task-specific with model recommendations (Opus/Sonnet/Haiku)
 │
-├── commands/         # 80 commands across 17 categories
+├── commands/         # 119 commands across 24 categories
 │                     # Multi-agent orchestration workflows
 │
-├── personas/         # 52 personas across 9 categories
+├── personas/         # 57 personas across 9 categories
 │                     # Multi-agent pipeline identities with memory
 │
 ├── documentation/    # Implementation guides and technique analysis
 │
-├── MASTER_INDEX.md   # Central reference for all resources
+├── master_index.md   # Central reference for all resources
 ├── CLAUDE.md         # AI agent instructions for this section
-└── README_library.md # Detailed library documentation
+└── readme_library.md # Detailed library documentation
 ```
 
 ## Quick Start

@@ -37,7 +37,7 @@ go" — use [`CLAUDE.md`](CLAUDE.md); this file answers "what exists and how big
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-agentic-resources/`](domain-agentic-resources/) | 1568 | Skills, agents, commands, personas — the implementation library you *use* |
+| [`domain-agentic-resources/`](domain-agentic-resources/) | 1590 | Skills, agents, commands, personas — the implementation library you *use* |
 | [`domain-prompt-engineering/`](domain-prompt-engineering/) | 245 | Meta-prompts: improvement, model behavior, escaping the median, goal orientation, skill development, delegation, evaluation |
 | [`agentic-system-factory/`](agentic-system-factory/) | 118 | Use case → production-ready agentic system design bundle |
 | [`portable-prompt-system/`](portable-prompt-system/) | 99 | Self-contained, drop-in export of the technique library and authoring guides |
@@ -147,6 +147,7 @@ and checked for drift by `scripts/check_vendored_copies.py`.
 
 | Directory | Holds |
 |---|---|
+| [`pae-engine/`](pae-engine/) | The `pae` CLI — routing, search, context bundles — and its optional MCP server |
 | [`scripts/`](scripts/) | Index generation, naming and link validation, reorg tooling, vendored-copy drift check |
 | [`tests/`](tests/) | Integration tests and the prompting-technique comparison harness |
 | [`meta/`](meta/) | [`REORG_MAP.tsv`](meta/REORG_MAP.tsv) (every move and deletion) and [`VENDORED.tsv`](meta/VENDORED.tsv) (canonical → copy) |

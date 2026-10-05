@@ -6,6 +6,7 @@
 
 | Command | Syntax | Description |
 |---------|--------|-------------|
+| [android_pre_release_security_audit.md](./android_pre_release_security_audit.md) | `/android-pre-release-security-audit` | Android-specific security audit covering OWASP MASVS, Firebase security rules, local data protection, network security, authentication, billing security, location privacy, and Play Store data safety compliance |
 | [compliance_check.md](./compliance_check.md) | `/compliance-check` | Regulatory compliance audits for GDPR, HIPAA, SOC2, PCI-DSS and other standards |
 | [security_dependencies.md](./security_dependencies.md) | `/security-dependencies` | Dependency vulnerability analysis, SBOM generation, and supply chain security |
 | [security_hardening.md](./security_hardening.md) | `/security-hardening` | Comprehensive security hardening with defense-in-depth strategy |

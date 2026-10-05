@@ -16,6 +16,9 @@ Prompts for making defensible organizational AI strategy decisions: where contex
 | [aistrategy_vendor_switch_cost.md](aistrategy_vendor_switch_cost.md) | Estimate the cost of switching AI model vendors at a future date, broken into five buckets with ranges. |
 | [aistrategy_capability_compounding_evaluation.md](aistrategy_capability_compounding_evaluation.md) | Evaluate whether a specific AI capability compounds over time or stays flat, and what investment would change that. |
 | [aistrategy_platform_brief.md](aistrategy_platform_brief.md) | Produce a board-ready brief on an enterprise AI platform decision: options, trade-offs, recommendation, invalidation conditions. |
+| [aistrategy_agent_use_case_portfolio.md](aistrategy_agent_use_case_portfolio.md) | Score and sequence a portfolio of candidate agent use cases against an amplify-or-eliminate screen, a complexity-maturity ladder, and a trust-delegation spectrum, surfacing data/context readiness as the real blocker. |
+| [aistrategy_build_buy_hybrid_decision.md](aistrategy_build_buy_hybrid_decision.md) | Recommend build, buy, or hybrid for an agent capability by testing whether customization creates durable advantage, offloading undifferentiated infrastructure, and judging on business outcomes rather than token cost. |
+| [aistrategy_moat_narrative_data_flywheel.md](aistrategy_moat_narrative_data_flywheel.md) | Build a defensibility narrative for an AI product when the model is a commodity — codifying domain expertise into context, compounding accuracy via expert feedback, designing a data flywheel, and mapping integration-depth switching cost. |
 
 ---
 

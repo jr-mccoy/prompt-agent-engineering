@@ -159,7 +159,7 @@ evidences it to an external body, `evaluation-analytics/` asks whether it worked
 Inside `learner/`, the spine is a study loop: `note-taking/` produces the material,
 `memory-and-recall/` works it, `self-assessment/` tests it, `stuck-and-confused/`
 repairs what the test exposed, and `exam-prep/` stages it against a deadline.
-`guides/` sits above all of this — its 16 workflows are **chain wrappers** that
+`guides/` sits above all of this — its 17 workflows are **chain wrappers** that
 sequence the other prompts for a specific job (write a research paper, survive finals,
 pivot careers) rather than doing the work themselves.
 
