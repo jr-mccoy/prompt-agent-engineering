@@ -1,6 +1,7 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-10-04:** **Waves 1–10 shipped (§6).**
+**Status as of 2026-10-05:** **Waves 1–11 shipped (§6).**
+- **Wave 11 (2026-10-05):** 22 professional-facing prompts building all eight planned `domain-parenting/family-support-professional/` subfolders (intake, coaching, documentation, groups, referral, home visiting, foster/kinship/adoption, culturally responsive practice), each non-diagnostic with jurisdiction-aware reporting steps, plus 9 routing cases (§6).
 - **Wave 10 (2026-10-04):** technique hygiene (13 undefined codes remapped in 110 files, a CI check on every prompt's `techniques:` list) and agentic-resource depth (7 skills, 4 agents, 4 commands, 4 personas; 3 one-skill categories folded into real ones).
 - **Wave 9 (2026-10-03):** 39 prompts deepening thin subfolders in frontend, game development, creative writing and seven single-prompt folders, plus 15 routing cases (§6).
 - **Wave 8 (2026-10-03):** 36 prompts on the second set of absent subjects (security operations, data engineering, FinOps, design systems, accessibility beyond components, ML for science, dementia care, DIY, cooking, special-education disputes, dating) and the first part of biblical-studies Phase 3C, plus 13 routing cases (§6).
@@ -1062,6 +1063,121 @@ vocabulary distance between situation language and practitioner language
 (`fell` vs `drop`, `eats` vs `eater`, `vendor` vs `supplier`). The rules here
 leave that to a synonym or stemming decision at the engine level, which
 ADR-0021 rejected and which would need its own measurement.
+
+### Wave 11: family-support professional cluster — shipped (22 prompts, 9 cases, 2026-10-05)
+
+This wave builds the last documented parenting promise, the eight planned
+`domain-parenting/family-support-professional/` subfolders that Wave 7 left
+unscheduled. They are for parent educators, coaches, family support workers, home
+visitors, caseworkers and family-time supervisors, not for caregivers. Every
+candidate went through a `pae search` and `PROMPT_INDEX.json` duplicate sweep;
+none was dropped.
+
+#### `domain-parenting/family-support-professional/` (22), prefix `parenting_`, safety-gated
+
+Each folder has a README, and the cluster has its own README stating the shared
+safeguards.
+
+| Folder | Files | Nearest neighbour (distinct from) |
+|---|---|---|
+| `intake-assessment/` (3) | `family_strengths_needs_intake`, `developmental_screen_results_talk`, `program_referral_triage_waitlist` | `psychology_pediatric_intake_with_caregiver` (clinical intake), `allied_health_sdoh_screening_response`, `parenting_developmental_red_flags_0_3` (caregiver) |
+| `coaching-education/` (3) | `parent_coaching_session_plan`, `mandated_parent_engagement`, `curriculum_fidelity_adaptation` | `psychology_behavioral_parent_training_module` (clinician PCIT/BPT), `psychology_mi_decisional_balance_facilitator` |
+| `plans-documentation/` (3) | `family_goal_plan_builder`, `family_contact_note_writer`, `case_closure_transition_summary` | `psychology_dap_progress_note`, `psychology_collateral_contact_note`, `psychology_termination_summary` (clinical records) |
+| `group-facilitation/` (2) | `parent_group_session_design`, `parent_group_hard_moments` | `psychology_group_therapy_curriculum_builder`, `curric_small_group_facilitation_guide` (medical education), `biblical_groupleader_facilitation_dynamics` |
+| `referral-resourcing/` (2) | `clinician_referral_by_nonclinician`, `referral_follow_through_barriers` | `psychology_referral_letter_generator` and `psychology_warm_handoff_narrative` (clinician to clinician), `allied_health_sdoh_screening_response` |
+| `home-visit-fieldwork/` (3) | `home_visit_plan_and_interaction`, `home_visitor_worker_safety`, `home_visit_child_safety_concern` | `psychology_mandated_reporter_decision_walkthrough` (a licensed clinician's decision and therapy continuity), `ops_job_hazard_analysis` |
+| `foster-kinship-adoption/` (3) | `resource_parent_stability_support`, `family_time_visit_supervision`, `life_story_work_with_child` | `parenting_foster_placement_first_weeks` and `parenting_kinship_care_first_months` (caregiver), `legal_supervised_visitation_and_safety_plan` (order language) |
+| `culturally-responsive/` (3) | `interpreter_mediated_family_session`, `cultural_practice_vs_safety_check`, `immigrant_family_support_plan` | `teaching_multilingual_family_outreach` (teacher), `psychology_cultural_formulation_interview_drafter` (DSM CFI), `domain-legal/immigration/` |
+
+Each prompt has a "Safeguarding, Consent, and Scope" block. It describes rather than
+diagnoses, and the false-positive table has a "labelling instead of describing" row.
+Its mandated-reporting steps are jurisdiction-aware: the threshold, the timeline and
+whether a supervisor consult counts all vary, so the prompt says "verify locally".
+In most US states the duty is personal, and a consult never delays a report or a
+911 call. Each prompt names triggers for escalating to a licensed clinician, with
+same-day and emergency routes. It covers consent, the limits of confidentiality
+stated before anyone discloses, written releases, minimum-necessary sharing, and
+de-identifying client details before they go into an AI tool. One example was
+corrected in review: the child-safety prompt's example now confirms the bruised
+infant's same-day medical check instead of leaving it to child-protection intake.
+
+**Re-angled to avoid duplicates:** both `referral-resourcing/` prompts moved off
+"screen, triage and match to resources", which the healthcare SDOH response
+prompt already does. They now cover the parts it lacks: a non-clinician raising a
+mental-health concern without diagnosing, and following a referral through to a
+real connection when the family declines or stalls.
+
+**Technique citations:** DS-30 (Ecosystem Mapping) had no citations before and is
+now cited by the immigrant-family prompt, so `--uncited` reads 100.
+
+**Routing after Wave 11** (`case-206`–`case-214` added):
+
+| | Before (205 cases) | After (214 cases) |
+|---|---|---|
+| R@1 / R@3 / R@5 / MRR | 75.0 / 83.6 / 87.1% / 0.800 | 72.8 / 81.0 / 84.4% / 0.775 |
+| scope@1 / scope@3 / kind@1 (router) | 85.2 / 93.5 / 97.7% | 84.8 / 93.3 / 97.7% |
+| statuses (matched / ambiguous / weak / no_route) | 81 / 81 / 42 / 1 | 84 / 82 / 47 / 1 |
+| Flat BM25 guard, R@1 and scope@1 | 75.0% and 83.4% | 71.4% and 82.6% (shipped still ≥ on both) |
+
+- **Earlier cases: none regressed.** The 205 cases were compared one by one
+  against a worktree of the base commit (`8f2398c`). No case changed its gold
+  rank, top hit, search scope, router status or routed scope, so the 205-case
+  aggregates are identical. The aggregate drop above comes entirely from the
+  new cases. Three cases now show a new prompt below their unchanged top hit:
+  - case 143 (A/B result for the boss): the developmental-screen prompt is
+    2nd, on "explain" and "result". It trails by 1.95, and "results" is that
+    prompt's real subject, so it was left as is.
+  - case 163 (first foster placement): the carer-stability prompt is 2nd,
+    5.1 behind. It is a legitimate sibling.
+  - case 188 (dating after divorce): the developmental-screen prompt is 5th.
+
+  No rewording was needed.
+- **New cases:** 7 of 9 route to `parenting` first. Two of the 7 task cases rank
+  their target first: 208 (clinician referral) and 209 (family-time
+  supervision). Route case 210 (cultural practice) moved from
+  `personal-development` to `parenting`. Honest misses, kept as they are:
+  - 206 (worker safety, rank 14): the query's words are situation words
+    ("boyfriend", "violent record", "protect myself") where the target says
+    "field safety", "exits", "check-in".
+  - 207 (child-safety concern, rank 19): "couch", "bruises", "toddler" also
+    match the pediatrician-triage and postpartum prompts.
+  - 211 (group hard moments, rank 15, routes to `creative-writing`): "told
+    everyone", "partner" match the memoir-ethics and blended-family prompts.
+  - 212 (mandated parent): not in the top 100, routes to `education-teaching`.
+    "Program" and "court" pull higher-education course design and custody
+    prompts.
+  - 214 (life-story work): not in the top 100. Common parenting words ("her",
+    "keep", "year old", "help") lift dozens of caregiver prompts above it.
+- **Leakage controls (stronger than Waves 7–9):** the 9 queries were drafted
+  before any prompt was written and never existed in a file the authoring agents
+  could read. Before authoring, only a SHA-256 commitment of the query text was
+  stored. The query file was written after every target was final, and its hash
+  matches the commitment. Four targets carry plain-language tags that overlap a
+  query's everyday wording:
+  - `first-meeting-with-new-family` (case 213)
+  - `family-does-things-differently` (case 210)
+  - `one-parent-takes-over-the-group` (case 211)
+  - `parent-upset-at-visit` (case 209)
+
+  The authors could not have seen the queries, so this is shared phrasing.
+  Separately, the family-time prompt's visit rules name "whispering" and
+  "promises", which case 209 also uses. These are standard supervised-visit
+  ground rules.
+- **§2 probes:** the 26 original probes keep their top hits. One changes at rank 3
+  only: `what to do after a parent dies paperwork` shows
+  `home-household-paperwork-system` instead of the fourth-trimester prompt, a
+  term-weight shift that involves no new prompt. Three new probes land in the new
+  cluster: `home visiting program for new parents` →
+  `parenting-home-visit-plan-and-interaction`, `parent education group
+  facilitator` → `parenting-parent-group-session-design`, and `foster care
+  caseworker` keeps the caregiver foster prompt first with the family-time and
+  life-story prompts 2nd and 3rd.
+
+**Left for later:** the five misses above. Like the Wave 5–9 misses, they come from
+the distance between situation language and practitioner language. The cluster has
+no prompt yet for a parent who is a minor, or for professional supervision and
+reflective practice for family-support staff (`psychology_supervision_agenda_builder`
+is clinical).
 
 ## 7. Explicitly not gaps / deferred
 

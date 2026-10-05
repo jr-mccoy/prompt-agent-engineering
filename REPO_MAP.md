@@ -116,7 +116,7 @@ decides, whoever holds it.
 | Directory | Files | Holds |
 |---|---|---|
 | [`domain-biblical-studies/`](domain-biblical-studies/) | 150 | Exegesis, study methods, sermon, theology, learner, ministry, church staff, languages, apologetics |
-| [`domain-parenting/`](domain-parenting/) | 155 | Age bands 0–18, divorce/custody/co-parenting, transitions and life events, safety, health/sleep/feeding, family structure, tech, identity and culture, parent capacity, academics, mental health and behaviour, neurodivergence |
+| [`domain-parenting/`](domain-parenting/) | 186 | Age bands 0–18, divorce/custody/co-parenting, transitions and life events, safety, health/sleep/feeding, family structure, tech, identity and culture, parent capacity, academics, mental health and behaviour, neurodivergence; plus `family-support-professional/` for parent educators, home visitors and caseworkers (intake, coaching, notes, groups, referral, fieldwork, foster/kinship/adoption, culturally responsive practice) |
 | [`domain-discipleship/`](domain-discipleship/) | 88 | One-to-one formation and the programs that pair people |
 | [`domain-conversation-practice/`](domain-conversation-practice/) | 15 | Role-play rehearsal: language sims (CEFR level, correction modes) and hard-conversation persona sims |
 | [`domain-health-wellness/`](domain-health-wellness/) | 15 | Healthy-adult training (incl. mobility, returning after a break, active ageing), nutrition, hydration in heat, and sleep; safety-gated, red-flag screen first |

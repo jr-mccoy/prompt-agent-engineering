@@ -1,13 +1,13 @@
 # Domain: Parenting
 
-> **Scope:** Caregiver-facing parenting prompts plus a family-support-professional cluster (in expansion). Author intent: model-testing fidelity. Prompts are designed to test whether models can perform useful parenting and caregiving-related work across realistic family-facing and support-professional workflows. Use clinical / specialist supports for live decisions.
+> **Scope:** Caregiver-facing parenting prompts plus a family-support-professional cluster (22 prompts across 8 subfolders). Author intent: model-testing fidelity. Prompts are designed to test whether models can perform useful parenting and caregiving-related work across realistic family-facing and support-professional workflows. Use clinical / specialist supports for live decisions.
 
 ## What This Domain Is For
 
 This domain hosts a structured, expanding library of parenting and caregiving prompts spanning ages 0 through 18 plus dedicated family-support-professional workflows. It is organized into two top-level clusters:
 
 - **`caregiver-facing/`** — for parents, guardians, foster / kinship caregivers, stepparents, grandparents, and any adult in a primary caregiving role.
-- **`family-support-professional/`** — for parenting coaches, family educators, childcare providers, early childhood specialists, school counselors, social workers, pediatric-adjacent support teams, and community program staff. (Expansion in progress.)
+- **`family-support-professional/`** — for parenting coaches, family educators, childcare providers, early childhood specialists, school counselors, social workers, pediatric-adjacent support teams, and community program staff, home visitors, caseworkers, and family-time supervisors. See [`family-support-professional/README.md`](family-support-professional/README.md).
 
 ## Directory Layout
 
@@ -32,18 +32,18 @@ domain-parenting/
 │   ├── neurodivergence/   # Tics/Tourette's, twice-exceptional (2e), DCD/dyspraxia (3 prompts)
 │   ├── identity-culture/  # Race, multilingual, interfaith (3 prompts; child's gender identity not yet covered)
 │   └── parent-capacity/   # Overload, fourth trimester, couple strain (3 prompts; postpartum check in ages-0-3)
-└── family-support-professional/
-    ├── intake-assessment/         (planned)
-    ├── coaching-education/        (planned)
-    ├── plans-documentation/       (planned)
-    ├── group-facilitation/        (planned)
-    ├── referral-resourcing/       (planned)
-    ├── home-visit-fieldwork/      (planned)
-    ├── foster-kinship-adoption/   (planned)
-    └── culturally-responsive/     (planned)
+└── family-support-professional/   # For the professionals who support families; never diagnoses
+    ├── intake-assessment/         # First intake, developmental-screen results, referral triage (3 prompts)
+    ├── coaching-education/        # Coaching sessions, mandated parents, curriculum fidelity (3 prompts)
+    ├── plans-documentation/       # Goal plans, contact notes, case closure (3 prompts)
+    ├── group-facilitation/        # Parent-group session design, hard moments in group (2 prompts)
+    ├── referral-resourcing/       # Clinician referral by a non-clinician, referral follow-through (2 prompts)
+    ├── home-visit-fieldwork/      # Visit plan + interaction, worker field safety, child-safety concern (3 prompts)
+    ├── foster-kinship-adoption/   # Carer stability, family-time supervision, life-story work (3 prompts)
+    └── culturally-responsive/     # Interpreters, cultural practice vs. safety, immigrant families (3 prompts)
 ```
 
-## Current Inventory (141 Prompts)
+## Current Inventory (163 Prompts: 141 caregiver-facing, 22 family-support-professional)
 
 ### `caregiver-facing/ages-0-3/` (15 prompts)
 
@@ -289,6 +289,35 @@ Beyond the ADHD/ASD/strong-willed adaptations in `ages-4-8/`. See [`neurodiverge
 | `parenting_twice_exceptional_child_support.md` | Strength vs. challenge maps; three masking patterns; evaluation questions; challenge + support asks; worth-not-performance |
 | `parenting_dcd_dyspraxia_home_support.md` | Neurological red flags; DCD pattern; task-oriented practice + backward chaining; adaptations; school writing/PE supports |
 
+## Family-Support Professional Inventory (22 prompts)
+
+For parent educators, coaches, family support workers, home visitors, caseworkers, and family-time supervisors. Every prompt keeps the worker in role: it describes rather than diagnoses, carries jurisdiction-aware mandated-reporting steps ("verify locally"), names triggers for escalation to licensed clinicians, and handles consent, confidentiality limits, and de-identification before AI use. See [`family-support-professional/README.md`](family-support-professional/README.md).
+
+| Folder | Prompt | Focus |
+|---|---|---|
+| `intake-assessment/` | `parenting_family_strengths_needs_intake.md` | Confidentiality limits first; protective-factors map; concrete needs; private safety questions; family's own priorities |
+| `intake-assessment/` | `parenting_developmental_screen_results_talk.md` | Parent-completed screener; screening ≠ diagnosis; on-track / monitor / refer talks; early-intervention referral with consent |
+| `intake-assessment/` | `parenting_program_referral_triage_waitlist.md` | Safety read first; eligibility; anchored urgency tiers; better-fit services; waitlist safety check-ins |
+| `coaching-education/` | `parenting_parent_coaching_session_plan.md` | Parent-chosen goal; OARS; model–practice–feedback; home practice that fits; coach-vs-therapist line |
+| `coaching-education/` | `parenting_mandated_parent_engagement.md` | Required vs. voluntary; honest account of what is reported back; lowering defensiveness; the parent's own goal |
+| `coaching-education/` | `parenting_curriculum_fidelity_adaptation.md` | Core vs. adaptable components; green-yellow-red changes; adaptation log; when to ask the developer |
+| `plans-documentation/` | `parenting_family_goal_plan_builder.md` | Family's words; small measurable steps; who does what; required conditions kept separate |
+| `plans-documentation/` | `parenting_family_contact_note_writer.md` | Facts / observations / interpretation apart; what not to record; the separate safeguarding route |
+| `plans-documentation/` | `parenting_case_closure_transition_summary.md` | Planned vs. unplanned endings; safety check before closing; warm hand-offs; plain-language letter |
+| `group-facilitation/` | `parenting_parent_group_session_design.md` | One learning goal; agreements with confidentiality limits; practice over lecture; access built in |
+| `group-facilitation/` | `parenting_parent_group_hard_moments.md` | Protective interrupting; disclosure, monopolising, harsh-punishment talk, conflict, intoxication; private follow-up and reporting |
+| `referral-resourcing/` | `parenting_clinician_referral_by_nonclinician.md` | Observations not labels; emergency / same-day / routine tiers; the conversation; consent; what to send |
+| `referral-resourcing/` | `parenting_referral_follow_through_barriers.md` | Closed-loop tracking; barrier analysis; right to decline; the safety floor a decline does not remove |
+| `home-visit-fieldwork/` | `parenting_home_visit_plan_and_interaction.md` | Family-set agenda; facilitated parent–child activity; specific strengths feedback; next-visit plan |
+| `home-visit-fieldwork/` | `parenting_home_visitor_worker_safety.md` | Pre-visit risk check; check-in/out; positioning and exits; leaving early; after an incident |
+| `home-visit-fieldwork/` | `parenting_home_visit_child_safety_concern.md` | Immediate danger / report / support tiers; time-ordered actions; what to tell the family; report package |
+| `foster-kinship-adoption/` | `parenting_resource_parent_stability_support.md` | Carer strain check; dominant driver; respite; training gaps; stability meeting before a disruption notice |
+| `foster-kinship-adoption/` | `parenting_family_time_visit_supervision.md` | Preparing parent and child; coaching during visits; redirect-pause-end ladder; neutral notes |
+| `foster-kinship-adoption/` | `parenting_life_story_work_with_child.md` | Sourced history; honest age-matched wording; pacing and triggers; when a therapist must lead |
+| `culturally-responsive/` | `parenting_interpreter_mediated_family_session.md` | Qualified interpreter, never a child; pre-brief; first-person speech; interpreter vs. cultural broker; debrief |
+| `culturally-responsive/` | `parenting_cultural_practice_vs_safety_check.md` | One standard for every family; ask, don't assume; green / yellow / red with named criterion; local rule |
+| `culturally-responsive/` | `parenting_immigrant_family_support_plan.md` | Trust with families who fear systems; status not asked; no immigration advice; school and health navigation |
+
 ## Cross-Cutting Conventions
 
 - **`intended_use: model-testing`** in frontmatter for prompts authored 2026-05+. Library is built for testing model performance on realistic parenting workflows.
@@ -300,6 +329,7 @@ Beyond the ADHD/ASD/strong-willed adaptations in `ages-4-8/`. See [`neurodiverge
 - **Clinical-signal callouts** — substantive, specific signs that warrant escalation, surfaced where the model genuinely needs to call them out (not generic disclaimers).
 - **False-positive prevention table** — every prompt has a misfire table.
 - **Adaptations sections** — neurodivergence, identity, family-structure, cultural, capacity adaptations.
+- **Family-support-professional prompts** use `category: parenting/<subfolder>`, the tags `family-support-professional` and the subfolder name, and a "Safeguarding, Consent, and Scope" block: describe-don't-diagnose, jurisdiction-aware mandated reporting (verify locally), clinician escalation triggers, consent and confidentiality limits, de-identification before AI use.
 
 ## Required Frontmatter
 
@@ -323,14 +353,14 @@ related_prompts:
 
 ## Expansion Roadmap
 
-The library will expand in waves; current state is Wave 1.
+The library expands in waves; Waves 1, 2 and 6 are complete and Waves 3–5 are in progress.
 
 - **Wave 1 (complete):** age extension into 0–3 and 9–12. 30 prompts.
 - **Wave 2 (complete):** ages 13–18 + cross-age universals. 25 prompts.
 - **Wave 3 (in progress):** health / body / sleep / feeding / safety / risk. **`health-body-sleep-feeding/` and `safety-risk/` shipped (8 prompts); `tech-digital/` shipped (3 prompts).**
 - **Wave 4 (in progress):** mental health / behavior / neurodivergence beyond ADHD/ASD/strong-willed. **`mental-health-behavior/` (4) and `neurodivergence/` (3) shipped; `academics-skills/` (3) shipped.**
 - **Wave 5 (in progress):** transitions / events / family structure / identity / culture. **Separation/divorce, custody (court-presentable resource builders), and co-parenting subsections complete (32 prompts); `transitions-events/` shipped (4 prompts); `coparenting-family-structure/` (4), `identity-culture/` (3), and `parent-capacity/` (3) shipped.**
-- **Wave 6 (planned):** family-support professional workflows.
+- **Wave 6 (complete):** family-support professional workflows. **All 8 `family-support-professional/` subfolders shipped (22 prompts; repo coverage Wave 11).**
 
 ## Related Domains
 
@@ -338,8 +368,9 @@ The library will expand in waves; current state is Wave 1.
 - **Clinical reasoning:** `domain-healthcare-clinical/`.
 - **Personal development / parent self-care:** `domain-personal-development/`.
 - **Hard-conversation communication (general):** `domain-product-management/`.
-- **Psychology / therapy / behavioral health:** `domain-psychology/`.
+- **Psychology / therapy / behavioral health:** `domain-psychology/`. Clinician-facing protocols (assessment, treatment, clinical notes, the licensed clinician's reporting decision) stay there; `family-support-professional/` covers the non-clinical worker's side.
+- **Legal side of custody, dependency, and immigration:** `domain-legal/` (`custody/`, `family-self-advocacy/`, `immigration/`).
 
 ---
 
-**Last updated:** 2026-10-03
+**Last updated:** 2026-10-05

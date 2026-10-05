@@ -178,7 +178,7 @@ prompt-agent-engineering/
 ├── domain-creative-writing/        # Adult/mature creative writing across 7 subdirs (fiction, craft-tools, genre-workshops, creative-nonfiction, poetry, script-stage, publishing-career): story structure, scene/POV/pacing, character/voice/dialogue, show-don't-tell, description, theme, openings/endings, revision, beta-reader synthesis, genre + mystery/speculative deep-dives, memoir + narrative nonfiction, poetry/imagery, screenplay, query/synopsis/pitch (27). Adult only — kids → domain-childrens-writing; business prose → domain-professional-writing
 ├── domain-childrens-writing/       # Authoring kid-friendly material across 5 subdirs (fiction-workshops, nonfiction-workshops, craft-tools, representation-collaboration, publishing-business): board→picture→early/chapter→middle-grade→YA-crossover fiction, verse novel, graphic novel, narrative + STEM nonfiction, craft tools (openings, dialogue, character, revision, reading-level, rhythm, sensitive topics), representation/illustrator, query/synopsis/pitch (22)
 ├── domain-education-teaching/      # 275 prompts in 3 audience tracks — instructor/ (109: lesson planning, explanation craft, response cycle, assessment items/design/analysis, grading, reporting, student support, classroom ops, ed-tech, higher-ed & corporate, subject pedagogy), program/ (44: curriculum design, outcomes assessment, accreditation, faculty development, evaluation analytics, student success), learner/ (122: note-taking, memory & recall, self-assessment, exam prep, study by discipline, tutoring, stuck-and-confused, writing, reading, math/science, language, research, time & discussion, adult learners, chained guides)
-├── domain-parenting/               # Parenting (141): caregiver-facing/ age bands 0-18, divorce/custody/co-parenting, transitions-events/, safety-risk/, health-body-sleep-feeding/, coparenting-family-structure/, tech-digital/, identity-culture/, parent-capacity/, academics-skills/, mental-health-behavior/, neurodivergence/
+├── domain-parenting/               # Parenting (163): caregiver-facing/ (141) age bands 0-18, divorce/custody/co-parenting, transitions-events/, safety-risk/, health-body-sleep-feeding/, coparenting-family-structure/, tech-digital/, identity-culture/, parent-capacity/, academics-skills/, mental-health-behavior/, neurodivergence/; family-support-professional/ (22) intake-assessment/, coaching-education/, plans-documentation/, group-facilitation/, referral-resourcing/, home-visit-fieldwork/, foster-kinship-adoption/, culturally-responsive/
 ├── domain-legal/                   # Practitioner legal prompts: research, litigation, discovery, depositions,
 │                                   # contracts/transactional, M&A, employment, IP, client intake, in-house/legal-ops (~67);
 │                                   # divorce (22), custody (20); family-self-advocacy/ (23, LITIGANT-FACING layperson prep)
@@ -1146,6 +1146,21 @@ When users need help with **non-coding tasks**, first determine the domain:
   - Example: "504 / accommodation meeting prep" → `parenting_school_accommodation_conversation_prep.md`
   - Example: "Sticker chart / allowance / behavior contract pre-mortem" → `parenting_reward_system_premortem.md`
   - **Domain guide:** [domain-parenting/](../domain-parenting/)
+
+### Parenting — Family-Support Professionals (not caregivers)
+- **Parent educators, parenting coaches, family support workers, home visitors, caseworkers, family-time supervisors** → `domain-parenting/family-support-professional/` (22 prompts, 8 subfolders). The worker's side only: every prompt describes rather than diagnoses, carries jurisdiction-aware mandated-reporting steps ("verify locally"), names clinician-escalation triggers, and handles consent and confidentiality limits.
+  - Example: "First intake with a newly referred family" → `intake-assessment/parenting_family_strengths_needs_intake.md`
+  - Example: "Explain a developmental screener result to a parent" → `intake-assessment/parenting_developmental_screen_results_talk.md`
+  - Example: "Parent was ordered to attend my program" → `coaching-education/parenting_mandated_parent_engagement.md`
+  - Example: "Write up a visit note" → `plans-documentation/parenting_family_contact_note_writer.md`
+  - Example: "Something went wrong in my parent group" → `group-facilitation/parenting_parent_group_hard_moments.md`
+  - Example: "I think a parent needs a therapist but I'm not one" → `referral-resourcing/parenting_clinician_referral_by_nonclinician.md`
+  - Example: "My own safety on home visits" → `home-visit-fieldwork/parenting_home_visitor_worker_safety.md`
+  - Example: "I saw something worrying at a visit" → `home-visit-fieldwork/parenting_home_visit_child_safety_concern.md`
+  - Example: "Supervising visits for a child in care" → `foster-kinship-adoption/parenting_family_time_visit_supervision.md`
+  - Example: "Is this cultural difference or a safety problem?" → `culturally-responsive/parenting_cultural_practice_vs_safety_check.md`
+  - **Boundary:** the caregiver's own side → `domain-parenting/caregiver-facing/`; a **licensed clinician's** assessment, treatment, notes, or reporting decision → `domain-psychology/` (e.g. `risk-crisis/psychology_mandated_reporter_decision_walkthrough.md`, `documentation/psychology_dap_progress_note.md`); custody, dependency, and immigration law → `domain-legal/`; a teacher's family outreach → `domain-education-teaching/instructor/reporting-communication/`.
+  - **Domain guide:** [domain-parenting/family-support-professional/](../domain-parenting/family-support-professional/)
 
 ### HR & People Management
 - **Performance reviews, self-assessment, peer / 360 feedback, calibration** → `domain-hr-management/` (6 prompts)

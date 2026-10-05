@@ -7,7 +7,7 @@
     "registry_record_sample": "Hand-authored during Phase 4 against a sampled registry record, because CLAUDE.md's tables target prompts almost exclusively and supply no labels for skills, agents, commands, personas or techniques.",
     "registry_relationship": "Derived from an explicit copy_of relationship in the registry.",
     "phase4_regression_judgment": "Hand-authored Phase 4 regression judgment. Acceptable scopes and kinds are deliberately permissive where the corpus genuinely supports several answers.",
-    "coverage_wave_judgment": "Hand-authored in coverage Wave 5 (meta/COVERAGE_ROADMAP.md) for the scopes and subfolders added in coverage Waves 1-4, and in coverage Waves 6-9 for the subfolders they added or deepened. The same process that wrote the target prompts wrote these labels, so they are not independent of the corpus. Every query was written before any search was run against it, was not reworded afterwards to make a case pass, and was checked against the ADR-0037 echo gates: no query contains all of a target's title tokens or id-tail tokens, and none is a near-duplicate of a ROUTING_REFERENCE phrase or an earlier case."
+    "coverage_wave_judgment": "Hand-authored in coverage Wave 5 (meta/COVERAGE_ROADMAP.md) for the scopes and subfolders added in coverage Waves 1-4, and in coverage Waves 6-9 and 11 for the subfolders they added or deepened. The same process that wrote the target prompts wrote these labels, so they are not independent of the corpus. Every query was written before any search was run against it, was not reworded afterwards to make a case pass, and was checked against the ADR-0037 echo gates: no query contains all of a target's title tokens or id-tail tokens, and none is a near-duplicate of a ROUTING_REFERENCE phrase or an earlier case."
   },
   "notes": [
     "acceptable_* lists are permissive: any listed value counts as correct.",
@@ -19,7 +19,8 @@
     "case-147 onward were added in coverage Wave 6. Their queries were written before any target prompt existed in the index. The draft query list was readable by the authoring agents, and two targets picked up tags echoing case-154 and case-161; those tags were replaced with independent wording before the cases were first measured. See meta/COVERAGE_ROADMAP.md, Wave 6.",
     "case-162 onward were added in coverage Wave 7. Their queries were drafted before authoring began and kept out of the authoring agents' reach (written to disk only after every target file was final). Four targets carry plain-language tags that overlap a query's wording; file timestamps show those tags were written before the queries existed on disk, so the overlap is shared everyday phrasing, not leakage. See meta/COVERAGE_ROADMAP.md, Wave 7.",
     "case-178 onward were added in coverage Wave 8 under the same controls as Wave 7: queries drafted before authoring, held back from the authoring agents, written to disk only after every target was final. Three targets carry tags overlapping a query's wording; their file timestamps predate the query file. See meta/COVERAGE_ROADMAP.md, Wave 8.",
-    "case-191 onward were added in coverage Wave 9 under the same controls as Waves 7-8. Several target pre-existing prompts in the deepened subfolders, to check that the new siblings do not take their queries. Two targets carry tags overlapping a query's wording; their file timestamps predate the query file. See meta/COVERAGE_ROADMAP.md, Wave 9."
+    "case-191 onward were added in coverage Wave 9 under the same controls as Waves 7-8. Several target pre-existing prompts in the deepened subfolders, to check that the new siblings do not take their queries. Two targets carry tags overlapping a query's wording; their file timestamps predate the query file. See meta/COVERAGE_ROADMAP.md, Wave 9.",
+    "case-206 onward were added in coverage Wave 11 (domain-parenting/family-support-professional/). The queries were drafted before any target was written and never existed in any file the authoring agents could read: only a SHA-256 commitment of the query text was stored (before authoring), and the query file was written after every target was final; the stored hash matches the case queries. Four targets carry plain-language tags that overlap a query's everyday wording (case-209, case-210, case-211, case-213); the overlap is shared phrasing, not leakage. See meta/COVERAGE_ROADMAP.md, Wave 11."
   ],
   "cases": [
     {
@@ -2858,6 +2859,128 @@
       "acceptable_resource_ids": [],
       "acceptable_scopes": [
         "prompt-engineering"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-206",
+      "class": "task",
+      "query": "I'm going alone to a family's apartment tomorrow and the mother's boyfriend has a violent record, how do I protect myself",
+      "acceptable_resource_ids": [
+        "prompt:parenting/family-support-professional/home-visit-fieldwork/parenting-home-visitor-worker-safety"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-207",
+      "class": "task",
+      "query": "at today's visit the baby was asleep on the couch with dad and the toddler had bruises on both arms, what do I do now",
+      "acceptable_resource_ids": [
+        "prompt:parenting/family-support-professional/home-visit-fieldwork/parenting-home-visit-child-safety-concern"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-208",
+      "class": "task",
+      "query": "I teach a parenting program and think one of the moms is seriously depressed, but I'm not a therapist — how do I raise it and get her connected",
+      "acceptable_resource_ids": [
+        "prompt:parenting/family-support-professional/referral-resourcing/parenting-clinician-referral-by-nonclinician"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-209",
+      "class": "task",
+      "query": "I run supervised visits for kids in care with their birth parents, what do I do when a parent shows up high or whispers promises to the child",
+      "acceptable_resource_ids": [
+        "prompt:parenting/family-support-professional/foster-kinship-adoption/parenting-family-time-visit-supervision"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-210",
+      "class": "route",
+      "query": "a Somali family on my caseload disciplines differently than I'm used to and I can't tell where the line is",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-211",
+      "class": "task",
+      "query": "one dad keeps taking over our weekly parenting class and last week a mom told everyone her partner hits her",
+      "acceptable_resource_ids": [
+        "prompt:parenting/family-support-professional/group-facilitation/parenting-parent-group-hard-moments"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-212",
+      "class": "task",
+      "query": "the court sent this father to my program and he sits with his arms crossed saying he doesn't need to be here",
+      "acceptable_resource_ids": [
+        "prompt:parenting/family-support-professional/coaching-education/parenting-mandated-parent-engagement"
+      ],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-213",
+      "class": "route",
+      "query": "first meeting with a new family the hospital sent us, what should I ask and what do I say about who sees their information",
+      "acceptable_resource_ids": [],
+      "acceptable_scopes": [
+        "parenting"
+      ],
+      "acceptable_kinds": [],
+      "expected_status": null,
+      "label_source": "coverage_wave_judgment"
+    },
+    {
+      "id": "case-214",
+      "class": "task",
+      "query": "our adopted 8 year old keeps asking why her first mom couldn't keep her, and her parents want help making a book about her past",
+      "acceptable_resource_ids": [
+        "prompt:parenting/family-support-professional/foster-kinship-adoption/parenting-life-story-work-with-child"
+      ],
+      "acceptable_scopes": [
+        "parenting"
       ],
       "acceptable_kinds": [],
       "expected_status": null,
