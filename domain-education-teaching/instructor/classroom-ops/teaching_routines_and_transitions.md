@@ -5,7 +5,7 @@ description: "Engineer the high-leverage classroom routines and transitions — 
 techniques:
   - CM-01
   - ST-02
-  - OC-01
+  - ST-03
   - DS-01
   - QA-01
 difficulty: intermediate
@@ -230,6 +230,6 @@ Sum: (current time cost − target time cost) × frequency = minutes recovered p
 |-----------|-----------------|
 | **CM-01** | Schedule, grade, and pain points anchor routine selection. |
 | **ST-02** | Sequential inventory → prioritize → design → teach → audit. |
-| **OC-01** | Routine card template enforces consistent structure. |
+| **ST-03** | Routine card template enforces consistent structure. |
 | **DS-01** | High-leverage-routine framework (frequency × cost) drives prioritization. |
 | **QA-01** | Audit cadence and recoverable-minutes estimate verify and motivate the design. |

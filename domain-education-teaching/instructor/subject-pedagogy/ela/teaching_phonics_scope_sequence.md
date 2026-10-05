@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:
@@ -239,5 +239,5 @@ Check the sequence against:
 | **CM-01** | Grade, program, time, and population anchor sequence and pacing decisions. |
 | **ST-02** | Ten-step build moves from strands → sequence → daily block → assessment. |
 | **DS-01** | Structured-literacy / Science-of-Reading framework structures the strands and sequence rules. |
-| **OC-01** | Sequence table, year map, and daily block enforce reusable structure for grade-team planning. |
+| **ST-03** | Sequence table, year map, and daily block enforce reusable structure for grade-team planning. |
 | **QA-01** | Failure-mode audit verifies the scope against known anti-patterns before deployment. |

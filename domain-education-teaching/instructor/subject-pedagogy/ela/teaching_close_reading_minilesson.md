@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -203,5 +203,5 @@ Provide:
 | **CM-01** | Grade, standard, time, and text type anchor every choice. |
 | **ST-02** | Three-read structure enforces a research-based close-reading sequence. |
 | **DS-01** | Costa's/DOK levels and tier-2/3 vocabulary frameworks structure question and word choices. |
-| **OC-01** | Question tables and rubric template enforce reproducible structure. |
+| **ST-03** | Question tables and rubric template enforce reproducible structure. |
 | **QA-02** | Common partial answers and redirects anticipate where students get stuck. |

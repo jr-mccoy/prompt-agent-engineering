@@ -7,7 +7,7 @@ techniques:
   - NE-01
   - ED-01
   - SV-06
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - student-facing
@@ -219,4 +219,4 @@ Output: clear phonetic description of the target sound, minimal pair set, stress
 | **NE-01 — Single-Question Pacing** | One sound per session; one connected-speech rule if applicable. |
 | **ED-01 — Iterative Scaffolding** | Individual sound → words → sentences → self-monitoring → independent practice. |
 | **SV-06 — Confirmation-Before-Proceed** | Self-monitoring checklist confirmed before practice words; student identifies which checks are hardest. |
-| **OC-01 — Output Template** | Consistent structure per sound: IPA + plain phonetic + placement + contrast + checklist. |
+| **ST-03 — Output Format Specification** | Consistent structure per sound: IPA + plain phonetic + placement + contrast + checklist. |

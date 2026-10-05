@@ -5,7 +5,7 @@ description: "Generate a structured restorative conversation script after harm o
 techniques:
   - CM-01
   - ST-02
-  - OC-01
+  - ST-03
   - RT-04
   - QA-01
 difficulty: intermediate
@@ -240,6 +240,6 @@ If the teacher needs to repair after losing their temper:
 |-----------|-----------------|
 | **CM-01** | Incident specifics, parties, time, and setting anchor the script. |
 | **ST-02** | Sequential prep → conversation → agreements → close → follow-through. |
-| **OC-01** | Five-question structure and agreement template enforce reproducibility. |
+| **ST-03** | Five-question structure and agreement template enforce reproducibility. |
 | **RT-04** | Curiosity, validation, and repair-not-punishment frames protect the relationship through hard truth. |
 | **QA-01** | Readiness checklist and escalation criteria prevent harm from premature or scope-mismatched conversations. |

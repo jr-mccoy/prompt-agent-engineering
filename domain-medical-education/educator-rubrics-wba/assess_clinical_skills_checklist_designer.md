@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - QA-01
   - CM-02
-  - OC-01
+  - ST-03
   - ED-04
 difficulty: beginner
 tags:

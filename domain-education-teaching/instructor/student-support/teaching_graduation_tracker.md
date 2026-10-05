@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: intermediate
 tags:
@@ -257,5 +257,5 @@ Most interventions touch multiple staff:
 | **ST-02** | Source → checklist → classify → intervene → coordinate → follow-up pipeline. |
 | **CM-02** | Constrains content to user-supplied requirements; refuses to invent jurisdictional rules. |
 | **DS-01** | Counselor-frame (gap classification, intervention design with options) drives output. |
-| **OC-01** | Per-gap block template enforces actionable, paste-ready output. |
+| **ST-03** | Per-gap block template enforces actionable, paste-ready output. |
 | **QA-01** | Risk audit, time math, and follow-up cadence verify the plan against reality. |

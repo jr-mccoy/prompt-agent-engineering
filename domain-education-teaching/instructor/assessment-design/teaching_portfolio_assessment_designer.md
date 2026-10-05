@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:
@@ -254,5 +254,5 @@ If feasibility is questionable, propose adjustments — fewer required pieces, p
 | **CM-01** | Course, span, stakes, and audience anchor purpose and design choices. |
 | **ST-02** | Ten-step build moves from purpose → curation → reflection → scoring → calibration. |
 | **DS-01** | Curation-and-reflection framework structures the portfolio as student argument. |
-| **OC-01** | Curation guide, reflection scaffolds, and rubric enforce reusable structure. |
+| **ST-03** | Curation guide, reflection scaffolds, and rubric enforce reusable structure. |
 | **QA-01** | Anchor calibration and feasibility check verify the system before deployment. |

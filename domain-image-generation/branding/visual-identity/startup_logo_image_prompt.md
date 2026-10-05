@@ -5,7 +5,7 @@ description: "Generate high-quality prompts for AI image models (gpt-image-2, Na
 techniques:
   - ST-01
   - ST-02
-  - OC-01
+  - ST-03
   - RT-03
   - AG-05
 difficulty: intermediate
@@ -333,7 +333,7 @@ Professional logos require:
 
 - **ST-01**: Clear objective for prompt generation
 - **ST-02**: Sequential prompt building process
-- **OC-01**: Structured prompt templates
+- **ST-03**: Structured prompt templates
 - **RT-03**: Multiple concept variations
 - **AG-05**: Concrete, usable prompt outputs
 

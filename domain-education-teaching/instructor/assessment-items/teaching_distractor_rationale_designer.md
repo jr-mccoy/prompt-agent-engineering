@@ -7,7 +7,7 @@ techniques:
   - QA-02
   - DS-01
   - ST-01
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - assessment
@@ -208,4 +208,4 @@ Repeat for each distractor.
 | **QA-02** | Distractor discipline requires every wrong answer to be diagnostically intentional. |
 | **DS-01** | Conceptual frameworks (misconception taxonomy) structure the inventory. |
 | **ST-01** | Rationale card template enforces a consistent diagnostic structure for each distractor. |
-| **OC-01** | Standardized card format ensures reproducible output usable across item banks. |
+| **ST-03** | Standardized card format ensures reproducible output usable across item banks. |

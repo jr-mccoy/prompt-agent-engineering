@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - RT-04
 difficulty: intermediate
 tags:
@@ -216,5 +216,5 @@ Match the next move to the diagnosis:
 | **CM-01** | Topic, audience, stage, and tone preference anchor feedback shape. |
 | **ST-02** | Eight-step sequence: watch → score → calibrate → choose → write → match → tune → check. |
 | **DS-01** | Presentation-rubric framework (content / structure / delivery / visual / audience / time) structures feedback. |
-| **OC-01** | Timestamped warm/cool template enforces consistent structure. |
+| **ST-03** | Timestamped warm/cool template enforces consistent structure. |
 | **RT-04** | Relational-tone calibration protects the student under public-performance critique. |

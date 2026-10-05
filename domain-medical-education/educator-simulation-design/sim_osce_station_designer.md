@@ -5,7 +5,7 @@ description: "Design complete OSCE stations with student-facing task card, SP in
 techniques:
   - ST-02
   - CM-02
-  - OC-01
+  - ST-03
   - QA-01
   - ED-04
 difficulty: advanced

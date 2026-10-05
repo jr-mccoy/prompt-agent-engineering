@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: advanced
 tags:
@@ -231,5 +231,5 @@ Produce:
 | **CM-01** | Standards, time, mode, and resources anchor design. |
 | **ST-02** | Sequential build from transfer goal → GRASPS → rubric → exemplar → equity check. |
 | **DS-01** | UbD (transfer), GRASPS, and DOK frameworks govern task structure and rigor. |
-| **OC-01** | Student prompt template, rubric, and exemplar enforce reproducibility. |
+| **ST-03** | Student prompt template, rubric, and exemplar enforce reproducibility. |
 | **QA-02** | Equity audit and double-jeopardy check stress-test the task before delivery. |

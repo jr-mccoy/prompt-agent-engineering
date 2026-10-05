@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-03
   - NE-01
-  - OC-01
+  - ST-03
 difficulty: beginner
 tags:
   - startup
@@ -264,7 +264,7 @@ Before finalizing, test with:
 - **ST-02**: Sequential category exploration
 - **RT-03**: Multiple approach tree of thoughts
 - **NE-01**: Single-question discovery
-- **OC-01**: Structured output templates
+- **ST-03**: Structured output templates
 
 ## Related Prompts
 

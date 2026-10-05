@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - RT-02
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -755,7 +755,7 @@ itSlowly('runs slow integration test', async () => {
 - **ST-01 (Clear Objective Statement):** Focused on Jest patterns
 - **ST-02 (Structured Sequential Instructions):** Pattern-by-pattern guide
 - **RT-02 (Multi-Dimensional Analysis):** Mocking, async, organization
-- **OC-01 (Output Format Templates):** Clear code examples
+- **ST-03 (Output Format Specification):** Clear code examples
 - **QA-02 (Adversarial Stress-Test):** Anti-patterns highlighted
 
 ## Related Prompts

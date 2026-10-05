@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: advanced
 tags:
@@ -216,5 +216,5 @@ Flag and fix any concerns.
 | **CM-01** | Subject, objective, DOK, and use case anchor every item. |
 | **ST-02** | Sequential rules → items → audit → bias check. |
 | **DS-01** | DOK and Bloom's frameworks govern item design and distribution. |
-| **OC-01** | Item card template enforces reproducible structure. |
+| **ST-03** | Item card template enforces reproducible structure. |
 | **QA-02** | Distractor analysis and item-set audit stress-test items before release. |

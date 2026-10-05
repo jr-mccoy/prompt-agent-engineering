@@ -5,7 +5,7 @@ description: "Generate optimized prompts for AI image models (gpt-image-2, Nano 
 techniques:
   - ST-01
   - ST-02
-  - OC-01
+  - ST-03
   - RT-03
   - AG-05
 difficulty: intermediate
@@ -422,7 +422,7 @@ After generating initial concepts, use these to refine:
 
 - **ST-01**: Clear objective for icon prompt generation
 - **ST-02**: Sequential prompt building
-- **OC-01**: Structured prompt templates
+- **ST-03**: Structured prompt templates
 - **RT-03**: Multiple concept variations
 - **AG-05**: Production-ready prompt outputs
 

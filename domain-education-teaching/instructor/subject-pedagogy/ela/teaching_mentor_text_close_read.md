@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -201,5 +201,5 @@ When to try it: [One sentence about when this move fits]
 | **CM-01** | Genre, grade, and target move anchor mentor-text selection and try-it design. |
 | **ST-02** | Nine-step build moves from naming → vetting → architecture → application. |
 | **DS-01** | Mentor-text-inquiry framework (notice → name → try) structures the lesson. |
-| **OC-01** | Anchor chart, teacher script, and sentence frames enforce reusable structure. |
+| **ST-03** | Anchor chart, teacher script, and sentence frames enforce reusable structure. |
 | **QA-02** | Self-check stress-tests for craft-move specificity and noticing-before-naming order. |

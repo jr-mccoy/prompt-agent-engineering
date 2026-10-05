@@ -4,7 +4,7 @@ category: psychology/practice-operations
 description: "Generate a compliant superbill for a client's out-of-network reimbursement claim — provider NPI/tax-ID, rendering vs billing provider, dates of service, CPT + modifiers + units, ICD-10 diagnosis codes, charges, payments, and the required statement language."
 techniques:
   - ST-02
-  - OC-01
+  - ST-03
   - DS-02
   - CM-02
   - QA-04

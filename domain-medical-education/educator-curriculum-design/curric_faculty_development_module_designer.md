@@ -7,7 +7,7 @@ techniques:
   - ED-01
   - CM-02
   - QA-01
-  - OC-01
+  - ST-03
 difficulty: advanced
 tags:
   - faculty-development

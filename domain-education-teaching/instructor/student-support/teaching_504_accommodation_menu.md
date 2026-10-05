@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:
@@ -211,5 +211,5 @@ If the impacts described suggest the student may also need specially designed in
 | **CM-01** | Documented condition, impacts, setting, and constraints drive selection. |
 | **ST-02** | Sequential frame → menu → spec → rank → implement → monitor. |
 | **DS-01** | 504 framework (access, not modification) and standard accommodation categories structure choices. |
-| **OC-01** | Per-accommodation card and implementation summary enforce reproducibility. |
+| **ST-03** | Per-accommodation card and implementation summary enforce reproducibility. |
 | **QA-01** | Stigma audit, feasibility ranking, and disclaimer guard against over-prescription and scope creep. |

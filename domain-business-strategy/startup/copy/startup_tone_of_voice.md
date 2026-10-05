@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - NE-01
   - AG-10
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - startup
@@ -313,7 +313,7 @@ Before publishing, ask:
 - **ST-02**: Sequential guideline development
 - **NE-01**: Single-question discovery
 - **AG-10**: Emotional context spectrum for tone variation
-- **OC-01**: Structured guideline templates
+- **ST-03**: Structured guideline templates
 
 ## Related Prompts
 

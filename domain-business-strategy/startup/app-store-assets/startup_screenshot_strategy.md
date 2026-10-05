@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - NE-01
-  - OC-01
+  - ST-03
   - DS-01
 difficulty: intermediate
 tags:
@@ -303,7 +303,7 @@ Ask these questions one at a time:
 - **ST-01**: Clear objective for screenshot strategy
 - **ST-02**: Sequential planning process
 - **NE-01**: Single-question discovery
-- **OC-01**: Structured screenshot templates
+- **ST-03**: Structured screenshot templates
 - **DS-01**: ASO framework application
 
 ## Related Prompts

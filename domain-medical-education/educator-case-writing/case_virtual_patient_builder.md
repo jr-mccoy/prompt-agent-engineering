@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - RT-03
   - CM-02
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:

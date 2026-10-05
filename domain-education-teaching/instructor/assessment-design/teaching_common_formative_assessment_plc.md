@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:
@@ -253,5 +253,5 @@ Frame as inquiry, not blame. Use to drive equity conversations in the PLC.
 | **CM-01** | Standard, team, and unit-position anchor item and protocol design. |
 | **ST-02** | Ten-step build moves from standard → items → calibration → meeting → response. |
 | **DS-01** | PLC inquiry cycle + DOK structures the standard, items, and meeting protocol. |
-| **OC-01** | Item bank, data display, and meeting protocol enforce reusable structure. |
+| **ST-03** | Item bank, data display, and meeting protocol enforce reusable structure. |
 | **QA-01** | Calibration and self-check verify scoring agreement and protocol fidelity. |

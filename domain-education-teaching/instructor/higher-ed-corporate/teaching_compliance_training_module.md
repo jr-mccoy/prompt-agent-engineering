@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: intermediate
 tags:
@@ -237,5 +237,5 @@ This step is not optional and is not the prompt's job — it's the user's.
 | **ST-02** | Source → required content → behavior layer → docs → reinforcement → review pipeline. |
 | **CM-02** | Constrains content to user-supplied authoritative source; refuses to invent regulations. |
 | **DS-01** | Compliance-training frame separates documentation from behavior-change outcomes. |
-| **OC-01** | Documentation spec and required-content map enforce auditable output. |
+| **ST-03** | Documentation spec and required-content map enforce auditable output. |
 | **QA-01** | Pre-launch legal/compliance review and annual revision cycle close the loop. |

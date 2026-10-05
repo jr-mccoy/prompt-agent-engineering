@@ -4,7 +4,7 @@ category: finance/credit-lending
 description: "Assemble a full, committee-ready credit memorandum: borrower and facility summary, sources/uses, credit rationale, internal risk rating, repayment analysis, structure and covenant package, and ongoing monitoring plan — evidence-required and no invented data."
 techniques:
   - DT-02
-  - OC-01
+  - ST-03
   - AG-08
   - NE-11
   - AG-02
@@ -66,7 +66,7 @@ Provide as much as available; missing items are flagged, not invented.
 ## Constraints
 
 ### Must
-- Follow the fixed memo section order (see Output Format) so committees can navigate consistently (OC-01).
+- Follow the fixed memo section order (see Output Format) so committees can navigate consistently (ST-03).
 - Decompose the analysis into discrete reasoning steps: business -> financial -> repayment -> risk -> structure -> recommendation (DT-02).
 - State the internal risk rating on the supplied scale only; never assert an agency-equivalent rating.
 - Attach an explicit evidence basis to the recommendation (AG-08): each rationale point cites supplied data.

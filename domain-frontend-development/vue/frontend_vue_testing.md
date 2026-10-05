@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - RT-02
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -930,7 +930,7 @@ jobs:
 - **ST-01 (Clear Objective Statement):** Focused on Vue testing
 - **ST-02 (Structured Sequential Instructions):** Systematic test design
 - **RT-02 (Multi-Dimensional Analysis):** Components, composables, stores
-- **OC-01 (Output Format Templates):** Clear test templates
+- **ST-03 (Output Format Specification):** Clear test templates
 - **QA-02 (Adversarial Stress-Test):** Edge cases and error states
 
 ## Related Prompts

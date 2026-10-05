@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-03
   - NE-01
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - startup
@@ -251,7 +251,7 @@ These concepts can be translated into image generation prompts for initial explo
 - **ST-02**: Sequential category exploration
 - **RT-03**: Tree of thoughts across logo types
 - **NE-01**: Single-question discovery
-- **OC-01**: Structured concept templates
+- **ST-03**: Structured concept templates
 
 ## Related Prompts
 

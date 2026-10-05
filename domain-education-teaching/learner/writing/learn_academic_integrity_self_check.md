@@ -6,7 +6,7 @@ techniques:
   - RP-04
   - ED-03
   - CM-01
-  - OC-01
+  - ST-03
   - SV-06
 difficulty: beginner
 tags:
@@ -184,5 +184,5 @@ Output: a self-audit with flagged passages, student-revised paraphrases, and ide
 | **RP-04 — Socratic Dialogue** | Entire audit runs through student self-examination, not AI assessment. |
 | **ED-03 — Guided Discovery** | Questions surface paraphrase problems and citation gaps the student may not have noticed. |
 | **CM-01 — Context Framing** | Citation style, assignment type, and source count anchor every recommendation. |
-| **OC-01 — Output Template** | Structured audit sequence (tag → paraphrase test → citation check → self-declaration) ensures complete coverage. |
+| **ST-03 — Output Format Specification** | Structured audit sequence (tag → paraphrase test → citation check → self-declaration) ensures complete coverage. |
 | **SV-06 — Confirmation-Before-Proceed** | Phase 6 self-declaration is the gate; no "you're good to go" from the AI. |

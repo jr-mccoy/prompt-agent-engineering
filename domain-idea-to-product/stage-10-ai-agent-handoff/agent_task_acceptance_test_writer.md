@@ -9,7 +9,6 @@ techniques:
   - DS-01
   - QA-01
   - QA-02
-  - QA-03  # False-positive prevention
 difficulty: advanced
 tags:
   - ai-agent-handoff

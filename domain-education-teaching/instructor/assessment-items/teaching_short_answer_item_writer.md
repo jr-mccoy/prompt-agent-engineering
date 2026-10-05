@@ -4,7 +4,7 @@ category: education-teaching/instructor/assessment-items
 description: "Generate short-answer assessment items with model answers, an annotated response spectrum (strong → misconception), a 0–3 scoring rubric, and feedback templates for each response tier — so wrong answers become diagnostic information."
 techniques:
   - ST-01
-  - OC-01
+  - ST-03
   - QA-01
   - DS-01
   - CM-01
@@ -234,7 +234,7 @@ After all items:
 | Technique | How It's Applied |
 |-----------|-----------------|
 | **ST-01** | Clear item structure: objective → stem → model → spectrum → rubric → feedback. |
-| **OC-01** | Standardized item card and response spectrum templates ensure replicable output. |
+| **ST-03** | Standardized item card and response spectrum templates ensure replicable output. |
 | **QA-01** | Scoring rubric and quality checklist verify the item before it is used. |
 | **DS-01** | Bloom's taxonomy governs verb selection and cognitive demand alignment. |
 | **CM-01** | Grade level, word limit, and use case frame the entire item design. |

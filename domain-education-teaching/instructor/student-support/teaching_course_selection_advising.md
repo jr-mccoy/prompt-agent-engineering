@@ -7,7 +7,7 @@ techniques:
   - CM-02
   - DS-01
   - QA-01
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - school-counseling
@@ -254,4 +254,4 @@ Schedule:
 | **CM-02** | Constrains advice to user-supplied requirements; refuses to invent institutional rules. |
 | **DS-01** | Advising frame (goals × constraints × requirements × tradeoffs) drives the conversation. |
 | **QA-01** | Pressure-test and follow-up loop verify the choice survives contact with reality. |
-| **OC-01** | Scenario tables and rationale documentation produce paste-ready output. |
+| **ST-03** | Scenario tables and rationale documentation produce paste-ready output. |

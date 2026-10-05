@@ -7,7 +7,7 @@ techniques:
   - ED-03
   - ST-02
   - NE-01
-  - OC-01
+  - ST-03
 difficulty: beginner
 tags:
   - student-facing
@@ -180,4 +180,4 @@ Output: student-built concept map structure (can be drawn on paper or in a tool)
 | **ED-03 — Guided Discovery** | Cross-link questions surface relationships students wouldn't have noticed alone. |
 | **ST-02 — Sequential Steps** | Free recall → central concept → branches → nodes → linking phrases → cross-links → self-test. |
 | **NE-01 — Single-Question Pacing** | One branch or one link at a time; not all at once. |
-| **OC-01 — Output Template** | Standard concept map structure (central concept → branches → nodes → labeled arrows → cross-links) applied consistently. |
+| **ST-03 — Output Format Specification** | Standard concept map structure (central concept → branches → nodes → labeled arrows → cross-links) applied consistently. |

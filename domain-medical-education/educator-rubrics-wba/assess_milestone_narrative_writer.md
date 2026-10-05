@@ -7,7 +7,7 @@ techniques:
   - CM-02
   - QA-01
   - ED-04
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - milestones

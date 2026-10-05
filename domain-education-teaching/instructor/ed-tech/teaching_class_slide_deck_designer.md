@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: beginner
 tags:
@@ -249,5 +249,5 @@ Cross-check:
 | **ST-02** | Outline → cognitive-load rules → slide types → sequence → notes → accessibility pipeline. |
 | **CM-02** | Constrains words-per-slide, slide-count, and slide-type set. |
 | **DS-01** | Cognitive-load and instructional-design frame drives slide structure. |
-| **OC-01** | Slide-type templates and per-slide field set produce consistent output. |
+| **ST-03** | Slide-type templates and per-slide field set produce consistent output. |
 | **QA-01** | Lesson-plan alignment audit and accessibility pass close the loop. |

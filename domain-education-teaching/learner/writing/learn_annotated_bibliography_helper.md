@@ -7,7 +7,7 @@ techniques:
   - ED-03
   - ED-01
   - NE-01
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - student-facing
@@ -203,4 +203,4 @@ Each completed annotation: student-written summary (2–4 sentences) + evaluatio
 | **ED-03 — Guided Discovery** | Students discover source limitations and relevance by answering targeted questions. |
 | **ED-01 — Iterative Scaffolding** | Components sequenced: memory recall → source content → written draft — building toward the full annotation. |
 | **NE-01 — Single-Question Pacing** | One question per turn; students aren't overwhelmed with simultaneous criteria. |
-| **OC-01 — Output Template** | Three-component structure (summary / evaluation / reflection) applied consistently to every source. |
+| **ST-03 — Output Format Specification** | Three-component structure (summary / evaluation / reflection) applied consistently to every source. |

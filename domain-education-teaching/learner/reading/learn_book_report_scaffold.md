@@ -6,7 +6,7 @@ techniques:
   - RP-04
   - ED-03
   - ED-01
-  - OC-01
+  - ST-03
   - SV-06
 difficulty: beginner
 tags:
@@ -205,5 +205,5 @@ Output: complete student-written book report (introduction, summary, character a
 | **RP-04 — Socratic Dialogue** | Every section is elicited through questions; AI never writes content. |
 | **ED-03 — Guided Discovery** | Theme and character growth are surfaced through diagnostic questions that prevent surface-level answers. |
 | **ED-01 — Iterative Scaffolding** | Each phase builds on the previous; four-element summary structure scaffolds before drafting. |
-| **OC-01 — Output Template** | Standard book-report structure (intro / summary / character / theme / personal response) applied consistently. |
+| **ST-03 — Output Format Specification** | Standard book-report structure (intro / summary / character / theme / personal response) applied consistently. |
 | **SV-06 — Confirmation-Before-Proceed** | Phase 7 coherence check ensures all sections connect before the student submits. |

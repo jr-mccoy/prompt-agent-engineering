@@ -5,7 +5,7 @@ description: "Sort a stack of student work into grade-deeply / grade-lightly / g
 techniques:
   - CM-01
   - ST-02
-  - OC-01
+  - ST-03
   - DS-01
   - QA-01
 difficulty: intermediate
@@ -195,6 +195,6 @@ After grading, log:
 |-----------|-----------------|
 | **CM-01** | Stack type, stakes, and time available drive triage decisions. |
 | **ST-02** | Sequential sort → budget → template → audit. |
-| **OC-01** | Per-tier templates enforce consistent feedback within each tier. |
+| **ST-03** | Per-tier templates enforce consistent feedback within each tier. |
 | **DS-01** | Tiering framework (A/B/C with revision-stakes logic) governs every decision. |
 | **QA-01** | Pile audit verifies the triage before time is invested. |

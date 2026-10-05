@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: intermediate
 tags:
@@ -243,5 +243,5 @@ After tasks are done:
 | **ST-02** | Objective → structure → tasks → tiers → scaffolds → monitoring pipeline. |
 | **CM-02** | One-objective constraint and must-do floor prevent drift and incoherence. |
 | **DS-01** | Choice-board frame (modality × demand matrix) drives task selection. |
-| **OC-01** | Per-task field set produces consistent, paste-ready board. |
+| **ST-03** | Per-task field set produces consistent, paste-ready board. |
 | **QA-01** | Conferring schedule and closure synthesis verify learning, not just completion. |

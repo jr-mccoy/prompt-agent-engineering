@@ -5,7 +5,7 @@ description: "Run a structured benefits-verification at intake — eligibility, 
 techniques:
   - ST-02
   - DS-02
-  - OC-01
+  - ST-03
   - CM-02
 difficulty: beginner
 intended_use: model-testing

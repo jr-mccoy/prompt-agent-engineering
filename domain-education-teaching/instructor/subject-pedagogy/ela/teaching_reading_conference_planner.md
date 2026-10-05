@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - RT-04
 difficulty: intermediate
 tags:
@@ -215,5 +215,5 @@ Provide one sentence each:
 | **CM-01** | Student evidence, book context, and unit focus shape every question. |
 | **ST-02** | Nine-step build mirrors the research → decide → teach → link arc. |
 | **DS-01** | The conferring framework (research → decide → teach → link) structures the conference. |
-| **OC-01** | Conference note template enforces consistent capture across many students. |
+| **ST-03** | Conference note template enforces consistent capture across many students. |
 | **RT-04** | Tonal calibration protects the student-teacher relationship under different conditions. |

@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - RT-04
 difficulty: intermediate
 tags:
@@ -221,5 +221,5 @@ Add for the teacher:
 | **CM-01** | Grade, school framework, and class composition anchor every system. |
 | **ST-02** | Sequential build from values → norms → continuum → systems → rollout. |
 | **DS-01** | PBIS, Responsive Classroom, and restorative-practice frameworks structure choices. |
-| **OC-01** | Tables and weekly rollout templates enforce reproducibility. |
+| **ST-03** | Tables and weekly rollout templates enforce reproducibility. |
 | **RT-04** | Community-first framing and relationship inventory protect the human relationships management depends on. |

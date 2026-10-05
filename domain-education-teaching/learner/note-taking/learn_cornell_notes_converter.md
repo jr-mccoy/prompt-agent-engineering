@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - ED-01
   - NE-01
-  - OC-01
+  - ST-03
   - SV-06
 difficulty: beginner
 tags:
@@ -177,5 +177,5 @@ Output: student-processed Cornell notes — main ideas identified, cue questions
 | **ST-02 — Sequential Steps** | Raw notes → main points → cue questions → summary → study check. Fixed order. |
 | **ED-01 — Iterative Scaffolding** | Each section builds on the previous; cue questions build on identified main points. |
 | **NE-01 — Single-Question Pacing** | One chunk of notes at a time; one cue question per main point. |
-| **OC-01 — Output Template** | Cornell format (main notes / cue column / summary) applied consistently as the organizing structure. |
+| **ST-03 — Output Format Specification** | Cornell format (main notes / cue column / summary) applied consistently as the organizing structure. |
 | **SV-06 — Confirmation-Before-Proceed** | Study check at the end confirms the notes are usable for active recall before the session ends. |

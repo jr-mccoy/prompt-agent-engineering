@@ -7,7 +7,7 @@ techniques:
   - CM-02
   - DS-01
   - QA-01
-  - OC-01
+  - ST-03
 difficulty: beginner
 tags:
   - higher-education
@@ -218,4 +218,4 @@ Feed this back into next week's instruction.
 | **CM-02** | Constrains scope (5 questions, 3 examples, one page recap). |
 | **DS-01** | Office-hours frame: triage by attendance, diagnose before teach. |
 | **QA-01** | Post-session log loops signal back to class redesign. |
-| **OC-01** | Recap template enforces paste-ready output. |
+| **ST-03** | Recap template enforces paste-ready output. |

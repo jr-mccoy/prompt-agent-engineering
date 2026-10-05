@@ -4,7 +4,7 @@ category: psychology/practice-operations
 description: "Draft a no-show and late-cancellation policy letter or consent clause with fee, notice window, insurance-cannot-be-billed note, telehealth applicability, and a repeated-no-show discharge pathway."
 techniques:
   - ST-02
-  - OC-01
+  - ST-03
   - CM-02
   - QA-04
 difficulty: beginner

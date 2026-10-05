@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: intermediate
 tags:
@@ -242,5 +242,5 @@ Trainers see what learners do. They are the org's best signal source for design 
 | **ST-02** | Pre-work → workshop → playbook → calibration → continuous improvement pipeline. |
 | **CM-02** | Locked vs. flexible map constrains drift without over-controlling delivery. |
 | **DS-01** | Three-capability frame names what most train-the-trainer programs miss. |
-| **OC-01** | Facilitator playbook and observation form enforce paste-ready, scoreable output. |
+| **ST-03** | Facilitator playbook and observation form enforce paste-ready, scoreable output. |
 | **QA-01** | Observation cycle and trainer self-assessment verify and adjust quality. |

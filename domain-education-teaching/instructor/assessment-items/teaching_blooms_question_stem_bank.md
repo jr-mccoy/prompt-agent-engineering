@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -230,5 +230,5 @@ If the use case is exit ticket vs. discussion vs. cold-call, the same stem may n
 | **CM-01** | Subject, grade, topic, and use-case anchor stem generation. |
 | **ST-02** | Eight-step build moves from levels → topic → stems → audit → escalation. |
 | **DS-01** | Revised Bloom's taxonomy structures the bank and stem-level analysis. |
-| **OC-01** | Per-level stem table and escalation sequence enforce reusable structure. |
+| **ST-03** | Per-level stem table and escalation sequence enforce reusable structure. |
 | **QA-02** | Stem-quality audit and self-check stress-test for level-drift and genericness. |

@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - RT-02
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: advanced
 tags:
@@ -789,7 +789,7 @@ class Combobox {
 - **ST-01 (Clear Objective Statement):** Focused on ARIA implementation
 - **ST-02 (Structured Sequential Instructions):** Pattern-by-pattern approach
 - **RT-02 (Multi-Dimensional Analysis):** Covers multiple component types
-- **OC-01 (Output Format Templates):** Complete code examples
+- **ST-03 (Output Format Specification):** Complete code examples
 - **QA-02 (Adversarial Stress-Test):** Common mistakes highlighted
 
 ## Related Prompts

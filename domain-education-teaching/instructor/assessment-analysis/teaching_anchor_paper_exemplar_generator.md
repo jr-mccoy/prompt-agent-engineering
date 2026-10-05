@@ -5,7 +5,7 @@ description: "Generate a calibration set of anchor papers — one per rubric per
 techniques:
   - CM-01
   - ST-02
-  - OC-01
+  - ST-03
   - DS-01
   - QA-02
 difficulty: advanced
@@ -185,6 +185,6 @@ State explicitly:
 |-----------|-----------------|
 | **CM-01** | Grade band, prompt, rubric, and set size anchor every generation. |
 | **ST-02** | Sequential plan → generate → annotate → norm. |
-| **OC-01** | Anchor template enforces reproducible structure across the set. |
+| **ST-03** | Anchor template enforces reproducible structure across the set. |
 | **DS-01** | Rubric is the explicit scoring framework; anchors operationalize it. |
 | **QA-02** | Borderline anchors and disagreement prediction stress-test the rubric and the scorers. |

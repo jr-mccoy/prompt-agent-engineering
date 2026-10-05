@@ -5,7 +5,7 @@ description: "Stand up an LMS course shell (Canvas / Blackboard / Brightspace / 
 techniques:
   - ST-02
   - CM-02
-  - OC-01
+  - ST-03
   - DS-02
   - QA-01
 difficulty: intermediate
@@ -272,6 +272,6 @@ Fix any issue found before opening to students.
 |-----------|-----------------|
 | **ST-02** | Settings → navigation → home → syllabus → modules → gradebook → communication → integrations → accessibility → student test → launch pipeline. |
 | **CM-02** | Constrains nav-item count, gradebook consistency, and pre-launch sign-off. |
-| **OC-01** | Numbered checklist enforces verifiable, paste-ready setup. |
+| **ST-03** | Numbered checklist enforces verifiable, paste-ready setup. |
 | **DS-02** | Platform-agnostic structure with platform-specific notes per LMS. |
 | **QA-01** | Student-view test verifies learner experience, not just instructor view. |

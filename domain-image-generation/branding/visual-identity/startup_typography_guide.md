@@ -6,7 +6,7 @@ techniques:
   - ST-01
   - ST-02
   - NE-01
-  - OC-01
+  - ST-03
   - DS-01
 difficulty: intermediate
 tags:
@@ -316,7 +316,7 @@ module.exports = {
 - **ST-01**: Clear objective for typography system
 - **ST-02**: Sequential development process
 - **NE-01**: Single-question discovery
-- **OC-01**: Structured specification templates
+- **ST-03**: Structured specification templates
 - **DS-01**: Typography system framework
 
 ## Related Prompts

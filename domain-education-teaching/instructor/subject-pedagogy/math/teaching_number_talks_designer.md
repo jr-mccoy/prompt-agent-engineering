@@ -5,7 +5,7 @@ description: "Design a 5–15 minute number talk that builds mental computation,
 techniques:
   - CM-01
   - ST-02
-  - OC-01
+  - ST-03
   - DS-01
   - QA-02
 difficulty: intermediate
@@ -165,6 +165,6 @@ Sketch (in text/ASCII) how the board should look at the end. Show:
 |-----------|-----------------|
 | **CM-01** | Grade, topic, strategy goal, and time anchor every output choice. |
 | **ST-02** | Six numbered phases mirror the rhythm of an actual number talk. |
-| **OC-01** | Strategy table and board sketch enforce a consistent, reproducible structure. |
+| **ST-03** | Strategy table and board sketch enforce a consistent, reproducible structure. |
 | **DS-01** | Strategies are ordered by sophistication, not arrival, applying a developmental framework. |
 | **QA-02** | Anticipated misconceptions stress-test the prompt before it reaches the classroom. |

@@ -4,7 +4,7 @@ category: psychology/
 description: "Create structured informed consent documents for research and clinical settings with required elements and accessibility guidance"
 techniques:
   - ST-02
-  - OC-01
+  - ST-03
   - CM-02
 difficulty: intermediate
 tags:
@@ -616,5 +616,5 @@ By clicking "I Agree" below, you confirm that:
 
 **Techniques Used:**
 - **ST-02 (Structured Sequential Instructions):** Step-by-step organization of consent elements with clear templates and checklists
-- **OC-01 (Output Format Specification):** Explicit templates for research and clinical consent documents with formatting guidance
+- **ST-03 (Output Format Specification):** Explicit templates for research and clinical consent documents with formatting guidance
 - **CM-02 (Constraint Specification):** Clear must/must-not requirements including regulatory compliance, required elements, and ethical boundaries

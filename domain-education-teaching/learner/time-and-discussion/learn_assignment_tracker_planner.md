@@ -7,7 +7,7 @@ techniques:
   - DS-01
   - CM-01
   - NE-01
-  - OC-01
+  - ST-03
 difficulty: beginner
 tags:
   - student-facing
@@ -199,4 +199,4 @@ Output: complete assignment list with due dates and time estimates, urgency tria
 | **DS-01 — Framework** | Assignment table (item / due date / time estimate) and daily plan table as structural scaffolds. |
 | **CM-01 — Context Framing** | All planning calibrated to the student's actual available hours, not ideal hours. |
 | **NE-01 — Single-Question Pacing** | One phase at a time; capture must be complete before triage begins. |
-| **OC-01 — Output Template** | Two consistent tables: assignment tracker and weekly plan. |
+| **ST-03 — Output Format Specification** | Two consistent tables: assignment tracker and weekly plan. |

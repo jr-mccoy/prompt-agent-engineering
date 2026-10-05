@@ -7,7 +7,7 @@ techniques:
   - ST-02
   - RT-02
   - DS-03
-  - OC-01
+  - ST-03
 difficulty: advanced
 tags:
   - procedural-generation
@@ -421,7 +421,7 @@ Overrides available in level editor:
 - ST-02 (Structured Sequential Instructions) - Seven ordered steps from scope definition through verification
 - RT-02 (Multi-Dimensional Analysis Framework) - Each algorithm evaluated across content fit, performance, and constraints
 - DS-03 (Tool and Methodology Suggestions) - Recommends specific algorithms per content type with rationale
-- OC-01 (Output Structure Specification) - Defines expected deliverable with pipeline diagrams, constraint tables, and validation results
+- ST-03 (Output Format Specification) - Defines expected deliverable with pipeline diagrams, constraint tables, and validation results
 
 **Related Prompts:**
 - `domain-game-development/level-design/level_design_review.md` - Review hand-crafted levels that sit alongside procedural content

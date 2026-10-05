@@ -5,7 +5,7 @@ description: "At the end of a focus block, produce a tight 'reload packet' the u
 techniques:
   - ST-01
   - ST-02
-  - OC-01
+  - ST-03
   - CM-02
   - QA-01
 difficulty: beginner

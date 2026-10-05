@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -234,5 +234,5 @@ This extends CER toward full scientific argument.
 | **CM-01** | Grade, task type, and year-position anchor tier defaults. |
 | **ST-02** | Ten-step build moves from claim space → tiers → exemplars → rubric. |
 | **DS-01** | CER framework structures the scaffold; counter-evidence extends to full argument. |
-| **OC-01** | Three-tier templates and cross-tier rubric enforce reusable, fading structure. |
+| **ST-03** | Three-tier templates and cross-tier rubric enforce reusable, fading structure. |
 | **QA-02** | Self-check stress-tests for cosmetic-only tiering and unnamed reasoning. |

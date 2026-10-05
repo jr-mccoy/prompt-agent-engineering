@@ -6,7 +6,7 @@ techniques:
   - CM-01
   - ST-02
   - DS-01
-  - OC-01
+  - ST-03
   - QA-02
 difficulty: intermediate
 tags:
@@ -247,5 +247,5 @@ Provide 3–5 discussion questions:
 | **CM-01** | Grade, standard, materials, and time anchor every design choice. |
 | **ST-02** | Eleven-step build moves from integrity audit → procedure → CER → discussion. |
 | **DS-01** | CER and NGSS three-dimensional learning frame the data → claim arc. |
-| **OC-01** | Data table, CER scaffold, and procedure templates enforce reusable structure. |
+| **ST-03** | Data table, CER scaffold, and procedure templates enforce reusable structure. |
 | **QA-02** | Self-check stress-tests for cookbook patterns and CER weaknesses. |

@@ -3,7 +3,7 @@ title: "Board Finance Package Builder — Results, Forecast, KPIs, and Risks for
 category: finance/corporate-finance-fpa
 description: "Assemble a board-grade finance package: results vs plan with variance commentary, updated forecast and cash runway, a KPI scorecard, and a prioritized risk register — concise, decision-oriented, and traceable to source."
 techniques:
-  - OC-01
+  - ST-03
   - DS-06
   - RT-05
   - DS-02
@@ -108,7 +108,7 @@ CONTEXT:
 
 4. **Cash and runway (DS-02).** State cash, net burn/FCF, and runway in months at current burn; note the next financing trigger if relevant. For profitable companies, show FCF and leverage/liquidity headroom instead.
 
-5. **KPI scorecard (DS-02 + OC-01).** For each KPI: definition, target, current, prior, trend, RAG with stated thresholds. Keep to the vital few the board governs.
+5. **KPI scorecard (DS-02 + ST-03).** For each KPI: definition, target, current, prior, trend, RAG with stated thresholds. Keep to the vital few the board governs.
 
 6. **Risk register (DS-06).** List the top risks ranked by likelihood × impact; each with owner, mitigation, and status (new/worsening/stable/improving). Include the disconfirming watch-item for the biggest risk.
 

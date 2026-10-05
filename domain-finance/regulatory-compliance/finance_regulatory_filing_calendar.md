@@ -5,7 +5,7 @@ description: "Build a regulatory filing calendar that lists each periodic and ev
 techniques:
   - ST-02
   - DT-02
-  - OC-01
+  - ST-03
   - CM-02
   - NE-06
 difficulty: beginner

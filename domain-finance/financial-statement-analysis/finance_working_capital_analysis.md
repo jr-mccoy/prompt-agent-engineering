@@ -7,7 +7,7 @@ techniques:
   - DS-02
   - DS-04
   - QA-01
-  - OC-01
+  - ST-03
 difficulty: intermediate
 tags:
   - working-capital

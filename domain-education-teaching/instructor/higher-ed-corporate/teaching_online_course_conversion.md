@@ -6,7 +6,7 @@ techniques:
   - ST-02
   - CM-02
   - DS-02
-  - OC-01
+  - ST-03
   - QA-01
 difficulty: advanced
 tags:
@@ -245,5 +245,5 @@ Plan for the second offering:
 | **ST-02** | Outcomes → modality → modules → assessments → workload → build pipeline. |
 | **CM-02** | Constrains build to stated timeline and learner load to credit weight. |
 | **DS-02** | Multi-modality (async / sync / hybrid / HyFlex) routing keeps decisions explicit. |
-| **OC-01** | Module-map and assessment-conversion tables enforce structured output. |
+| **ST-03** | Module-map and assessment-conversion tables enforce structured output. |
 | **QA-01** | Pilot, accessibility audit, and mid-term feedback close the loop. |
