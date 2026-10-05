@@ -923,9 +923,61 @@ flipped back and forth as the corpus grows, so kind@1 reads 97.7%. Case 164 slip
 from rank 3 to 4. Scope@1 stays at 84.6% over 205 cases.
 
 **Left for later:**
-- Several Android prompts still list more than 5 techniques, and their body lists mislabel some valid codes.
+- Several Android prompts still list more than 5 techniques, and their body lists mislabel some valid codes (done: see the Wave 10 follow-up below).
 - The `slo-implementation` skill's example alerts use 30-day burn-rate thresholds on a 28-day SLO.
 - Most `personas/README.md` tree filenames are out of date.
+
+### Wave 10 follow-up: technique hygiene leftovers — shipped (2026-10-05)
+
+`scripts/validate_technique_catalog.py` now prints 0 warnings. No technique
+codes were defined or deprecated.
+
+**Deprecated codes.** OC-01 → ST-03 in 141 prompts and QA-03 → QA-01 in 1, in
+frontmatter and in the same files' body technique lists, with catalog names.
+Two files already listed the target, so the old code was deleted. In
+`architecture_state_machine_design.md` the OC-01 entry described a verification
+checklist, so it now cites QA-01. Notes that document the merge itself (the
+catalog, comparison tables, technique analyses) were left as they were. The
+validator section above records the pre-follow-up citation counts.
+
+**Over-long lists.** 1,260 prompts listed more than 5 techniques. This pass
+hand-read 65 of them and cut each to the 3–5 codes its body applies:
+- every `mobile/android/improvement/` prompt over 5, `ios_privacy_compliance`,
+  and the ABG, ECG and pharmacokinetics interpretation prompts;
+- every other prompt with 8 or more codes (deep-analysis deepthink twins,
+  family law, embedded, vibe-coding rescue, idea-to-product and others).
+
+The 4 `domain-idea-to-product/` deepthink copies were re-synced with
+`check_vendored_copies.py --fix`. Body technique lists now match frontmatter and
+use catalog names. IDs were switched only where a body label showed a different
+technique was meant, for example QA-01 "Constraint Specification" → CM-02, QA-05
+"Abort Triggers" → QA-08, DS-03 "Multi-Criteria Ranking" → DS-06, and RT-01
+"Comparative Analysis" folded into the RT-03 entry already listed. Family-law
+prompts with a False-Positive Prevention section keep QA-12 in both `custody/`
+and `divorce/`. CM-04 lost its only citation, a mislabel for "Forbidden
+Patterns Explicit", so `--uncited` now reads 101.
+
+**Mislabel.** Four `domain-biblical-studies/original-languages/` prompts cited
+NE-14 (Multi-Audience Documentation Targeting) as "Fabrication Prevention".
+They route every datum to a named edition or reference work, so they now cite
+QA-05 (Citation Requirements). QA-12 (False Positives Identification) was
+considered and rejected. Their ST-01 entries were also renamed to the catalog
+name.
+
+**Routing:** unchanged. Scope@1 84.6%, scope@3 93.5%, kind@1 97.7%, R@1 75.0%
+and MRR 0.800 over 205 cases, the same before and after.
+
+**Left for later:**
+- 48 image-generation prompts (advertising, board decks, coloring books, the
+  model guides) list 8–13 codes. They are exempt by design, because the 8 core
+  SV techniques are the domain's required method (CLAUDE.md,
+  `IMAGE_GENERATION_GUIDE.md`).
+- 1,143 prompts list 6 or 7 codes (969 at 6, 174 at 7). They are spread
+  across most domains and are worth a domain-by-domain pass.
+- The audit's 5 soft "cited as" mislabels are shorthand cross-references
+  inside `MASTER_TECHNIQUE_INDEX.md` itself, not prompt citations.
+- Five vibe-coding-rescue and repo-audit prompts carry a "Dual-Failure
+  Prevention (QA-20)" section without listing QA-20.
 
 ## 7. Explicitly not gaps / deferred
 

@@ -92340,13 +92340,8 @@
       "category": "deep-analysis/decision",
       "description": "A multi-phase, multi-perspective decision-making system for working through hard choices with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose options & criteria → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: recommendation + rationale + calibrated confidence + reversibility + tripwires.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "CM-02",
-        "QA-01",
         "QA-02",
         "QA-04",
         "QA-09"
@@ -92381,14 +92376,9 @@
       "category": "deep-analysis/design",
       "description": "A multi-phase, multi-perspective design system for working through what to build with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose into design dimensions → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: design spec with documented tradeoffs, constraints, and open questions.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "RT-07",
         "CM-02",
-        "QA-01",
         "QA-02",
         "QA-04"
       ],
@@ -92422,14 +92412,9 @@
       "category": "deep-analysis/plan",
       "description": "A multi-phase, multi-perspective planning system for working through how to get from here to there with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose into milestones & dependencies → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate. Terminal artifact: sequenced plan with risks, checkpoints, and abort conditions.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
         "RT-07",
         "CM-02",
-        "QA-01",
         "QA-02",
         "QA-04"
       ],
@@ -92463,12 +92448,7 @@
       "category": "deep-analysis/problem",
       "description": "A multi-phase, multi-perspective analysis system for working through hard problems or questions with an AI model at a depth that compensates for the absence of a human team. Drives the model through Frame → Decompose → Multi-perspective → Stress-test → Synthesize, using AskUserQuestion at every gate to keep the user steering. Terminal artifact: diagnosis + leverage points + confidence calibration.",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "ST-04",
-        "ST-42",
         "RT-02",
-        "RT-09",
         "CM-02",
         "QA-01",
         "QA-02",
@@ -168704,13 +168684,9 @@
       "category": "code-analysis/architecture",
       "description": "Identify refactoring opportunities where design patterns would improve maintainability, extensibility, or reusability - with verification to prevent over-engineering",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "RT-02",
         "RT-05",
         "DS-01",
         "DS-06",
-        "CM-01",
         "QA-04",
         "ST-03"
       ],
@@ -178745,15 +178721,9 @@
       "category": "software-engineering/analysis",
       "description": "Conduct an adaptive-depth, evidence-based audit of any repository — scaling from sampling to exhaustive analysis based on repository size — to identify the single most impactful improvement opportunity and deliver a prioritized action plan with verifiable success criteria",
       "techniques": [
-        "ST-01",
-        "ST-02",
-        "RT-02",
         "RT-05",
         "RT-06",
-        "DS-04",
-        "DS-06",
         "CM-07",
-        "DT-05",
         "QA-08",
         "DD-07"
       ],
@@ -180126,14 +180096,11 @@
       "category": "software-engineering/embedded",
       "description": "Design and review edge computing solutions for resource-constrained devices, including on-device ML inference, data reduction, and local decision-making.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "RT-02",
         "RT-05",
         "DS-06",
-        "CM-01",
-        "CM-02",
-        "RT-03"
+        "CM-02"
       ],
       "keywords": [
         "edge-computing",
@@ -180190,14 +180157,11 @@
       "category": "software-engineering/embedded",
       "description": "Analyze firmware code for bare-metal and RTOS projects, identifying architectural issues, timing problems, and reliability risks.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "RT-02",
         "RT-05",
         "DS-06",
-        "CM-01",
-        "CM-02",
-        "QA-02"
+        "CM-02"
       ],
       "keywords": [
         "firmware",
@@ -180288,14 +180252,11 @@
       "category": "software-engineering/embedded",
       "description": "Design, review, and debug real-time systems for timing correctness, determinism, and deadline compliance.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "RT-02",
         "RT-05",
         "DS-06",
-        "CM-01",
-        "CM-02",
-        "QA-02"
+        "CM-02"
       ],
       "keywords": [
         "real-time",
@@ -180442,14 +180403,11 @@
       "category": "software-engineering/improvement",
       "description": "Run a full-repository audit for quality, structure, duplication, metadata consistency, discoverability, and maintainability, then produce a phased implementation roadmap executable across future sessions.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "RT-02",
         "RT-05",
         "DS-06",
-        "QA-01",
-        "QA-02"
+        "CM-02"
       ],
       "keywords": [
         "repository-audit",
@@ -180997,13 +180955,9 @@
       "category": "software-engineering/vibe-coding-rescue/android",
       "description": "Audit a vibe-coded Android app for the security and privacy defects AI generation tends to produce on Android specifically — exported components without explicit flags, intent-filter hijacking, deeplink validation gaps, WebView misconfiguration (JS interface, file access), insecure network (cleartext, missing cert pinning), data-at-rest in plain SharedPreferences, unencrypted Room, permissions overreach, hand-rolled auth, missing input validation, secrets in code or resources, PII in logs, SDK-version-gated security gaps. Produces evidence-cited findings with severity, exploitability under the actual deployment, and remediation pointing to platform primitives. Refuses keyword-match findings.",
       "techniques": [
-        "ST-01",
-        "ST-02",
         "ST-03",
         "CM-02",
-        "DS-01",
         "RT-05",
-        "RT-07",
         "QA-01",
         "QA-04"
       ],
@@ -181039,13 +180993,9 @@
       "category": "software-engineering/vibe-coding-rescue/android",
       "description": "Systematic audit of an AI-generated Android codebase for the specific fragility and sprawl patterns AI tends to introduce — duplicated screens and repositories, dead components, mixed state-management approaches, deprecated APIs (AsyncTask, startActivityForResult, legacy permissions), lifecycle violations, leaked Contexts, force-unwraps, unhandled coroutine exceptions, Compose recomposition smells, Hilt scope errors. Produces a severity-tiered findings report with file:line evidence, AI-pattern category, and concrete fix direction. Refuses keyword-match findings.",
       "techniques": [
-        "ST-01",
-        "ST-02",
         "ST-03",
         "CM-02",
-        "DS-01",
         "RT-05",
-        "RT-07",
         "QA-01",
         "QA-04"
       ],
@@ -181118,12 +181068,9 @@
       "category": "software-engineering/vibe-coding-rescue/android",
       "description": "Produce a project CLAUDE.md / .cursorrules / equivalent grounded in actual conventions and AI mistakes found in this codebase — not generic Android advice. Sources rules from the codebase audit's good patterns, the security audit's hard don'ts, the wall-diagnosis's primary mode, and any AI patterns repeating across both audits. Output is ≤400 lines and includes hard don'ts, required patterns, vocabulary, lifecycle rules, security gates, and an escalation protocol.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
-        "ST-04",
         "CM-02",
-        "CM-04",
         "RT-05",
         "QA-01"
       ],
@@ -181154,13 +181101,10 @@
       "category": "software-engineering/vibe-coding-rescue/android",
       "description": "Take the findings from android_viberescue_codebase_audit.md and android_viberescue_security_privacy_audit.md and produce a ranked fix queue across four tiers (Tier 0 security-critical, Tier 1 crash/data-loss, Tier 2 fragility/maintenance, Tier 3 cleanup) with per-fix impact × effort × reversibility × blast-radius scoring, test-coverage gap, batch-vs-isolate recommendation, and dependency order. Output is consumable directly by android_viberescue_fix_executor.md.",
       "techniques": [
-        "ST-01",
         "ST-02",
         "ST-03",
         "CM-02",
-        "DS-03",
-        "RT-02",
-        "RT-05",
+        "DS-06",
         "QA-01"
       ],
       "keywords": [
@@ -181188,15 +181132,11 @@
       "category": "software-engineering/vibe-coding-rescue/android",
       "description": "Apply one fix from the queue produced by android_viberescue_fix_prioritization.md with discipline: write or extend a failing test first, make the smallest possible change, one issue per commit, no unrelated edits, document a rollback plan, and abort if the change cascades beyond expected files. Designed to run in a loop over the fix queue; refuses to proceed if preconditions are unmet.",
       "techniques": [
-        "ST-01",
         "ST-02",
-        "ST-03",
         "CM-02",
         "CM-03",
-        "RT-05",
         "QA-01",
-        "QA-02",
-        "QA-05"
+        "QA-08"
       ],
       "keywords": [
         "vibe-coding",
