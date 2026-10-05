@@ -1,7 +1,7 @@
 # React Prompts
 
 **Category:** Frontend Development / React
-**Prompts:** 5
+**Prompts:** 6
 
 ---
 
@@ -18,6 +18,7 @@ Production-grade prompts for React development covering architecture, hooks, sta
 | [frontend_react_state_management.md](frontend_react_state_management.md) | Evaluate and recommend state management solutions (Redux, Zustand, Jotai, Context) | Intermediate |
 | [frontend_react_testing.md](frontend_react_testing.md) | Design comprehensive testing strategies using Testing Library and Jest | Intermediate |
 | [frontend_react_performance.md](frontend_react_performance.md) | Profile and optimize React performance including re-renders and bundle size | Advanced |
+| [frontend_react_server_components_streaming.md](frontend_react_server_components_streaming.md) | Analyze the server/client boundary in React Server Components apps — directive placement, Suspense streaming, serialization boundaries | Advanced |
 
 ## Usage Examples
 

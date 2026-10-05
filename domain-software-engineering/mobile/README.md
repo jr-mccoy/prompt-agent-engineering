@@ -2,7 +2,7 @@
 
 Comprehensive prompts for mobile app development across Android, iOS, React Native, Flutter, and cross-platform architectures.
 
-**Total Prompts:** 255  •  _Last refreshed: 2026-04-17_
+**Total Prompts:** 304  •  _Last refreshed: 2026-04-17_
 
 ---
 
@@ -12,14 +12,14 @@ Mobile prompts are organized into three top-level buckets: **android/**, **ios/*
 
 ```
 mobile/
-├── android/                 (134 prompts)
-│   ├── planning/            (13)  — app concept, tech stack, architecture, scaffolding
-│   ├── implementation/      (11)  — Compose screens, DI, data layer, navigation, background work
-│   ├── analysis/            (19)  — architecture, performance, security, codebase-health audits
-│   ├── improvement/         (14)  — refactoring, UI polish, modernization, a11y, UX
-│   ├── testing/             (6)   — unit, UI, screenshot, integration testing
-│   ├── publishing/          (16)  — release prep, Play Store, staged rollout, privacy compliance
-│   ├── maintenance/         (10)  — SDK migration, dependency updates, crash analysis
+├── android/                 (183 prompts)
+│   ├── planning/            (27)  — app concept, tech stack, architecture, scaffolding
+│   ├── implementation/      (12)  — Compose screens, DI, data layer, navigation, background work
+│   ├── analysis/            (30)  — architecture, performance, security, codebase-health audits
+│   ├── improvement/         (19)  — refactoring, UI polish, modernization, a11y, UX
+│   ├── testing/             (11)  — unit, UI, screenshot, integration testing
+│   ├── publishing/          (17)  — release prep, Play Store, staged rollout, privacy compliance
+│   ├── maintenance/         (21)  — SDK migration, dependency updates, crash analysis
 │   └── targeted-reviews/    (45)  — focused reviews (sync, Compose recomposition, Room, Hilt, etc.)
 ├── ios/                     (103 prompts)
 │   ├── planning/            (13)

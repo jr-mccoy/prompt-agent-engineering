@@ -78,6 +78,7 @@ Prompts for reviewing, auditing, and understanding existing iOS codebases.
 | [ios_cloud_backend_security_audit.md](analysis/ios_cloud_backend_security_audit.md) | **Security:** Audit cloud backend security (CloudKit) | Comprehensive |
 | [ios_open_source_license_audit.md](analysis/ios_open_source_license_audit.md) | Audit open source license compliance | Modular |
 | [ios_ai_code_review.md](analysis/ios_ai_code_review.md) | AI-assisted code review for Swift/iOS | Modular |
+| [ios_swift_architecture_review.md](analysis/ios_swift_architecture_review.md) | Identify design patterns, state management approaches, and modernization opportunities following Apple guidelines | Modular |
 
 ### Recommended Analysis Workflow
 
@@ -362,4 +363,4 @@ Prompts for release preparation, App Store optimization, privacy compliance, and
 
 ---
 
-*Last Updated: March 2026 | Total: 82 prompts (Planning: 13, Analysis: 12, Implementation: 14, Testing: 7, Improvement: 12, Maintenance: 10, Publishing: 14)*
+*Last Updated: March 2026 | Total: 83 prompts (Planning: 13, Analysis: 13, Implementation: 14, Testing: 7, Improvement: 12, Maintenance: 10, Publishing: 14)*

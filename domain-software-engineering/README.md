@@ -58,25 +58,31 @@ _Last refreshed: 2026-04-17 (security, cloud, data-engineering rows: 2026-10-03)
 |--------------|-------|-------------|
 | `analysis/security/` | 29 | Security vulnerability prompts (OWASP, SQLi, XSS, auth, threat modeling) and security operations (detection engineering, threat hunting, vulnerability management, SOC triage) |
 | `analysis/performance/` | 8 | Performance bottlenecks, profiling, optimization |
-| `analysis/quality/` | 8 | Complexity, duplication, style, documentation coverage |
+| `analysis/quality/` | 10 | Complexity, duplication, style, documentation coverage |
 | `analysis/architecture/` | 27 | Design patterns, layers, coupling, context/agentic-system architecture |
 | `analysis/evolution/` | 6 | Tech debt, code churn, refactoring priority |
 | `analysis/database/` | 8 | Schema design, query optimization, migrations, indexing |
 | `analysis/integration/` | 1 | Cross-system integration validation (e.g., Firebase) |
-| `testing/` | 16 | Unit, integration, E2E, mutation, accessibility, visual regression, flaky tests |
-| `devops/` | 21 | CI/CD, Docker, Kubernetes, Terraform, Helm, GitOps, LLM Ops |
+| `analysis/business/` | 20 | Strategic business frameworks (SWOT, PESTEL, Porter's Five Forces, canvases) applied to a codebase |
+| `analysis/feature-design/` | 4 | Task-sorting algorithm design, review, and Kotlin implementation verification |
+| `analysis/` (top level) | 2 | ML model evaluation, adaptive-depth repository improvement audit |
+| `testing/` | 19 | Unit, integration, E2E, mutation, accessibility, visual regression, flaky tests |
+| `devops/` | 23 | CI/CD, Docker, Kubernetes, Terraform, Helm, GitOps, LLM Ops |
 | `cloud/` | 25 | AWS, GCP, Azure, serverless, security, cost optimization, FinOps (allocation, bill-spike investigation, commitments) |
 | `data-engineering/` | 5 | Pipeline idempotency/late data/exactly-once review, dimensional model review, data quality test strategy, incremental load and backfill, data downtime postmortem |
-| `api/` | 6 | REST, GraphQL, OpenAPI, versioning, rate limiting |
-| `mobile/` | 255 | iOS, Android, React Native, Flutter, cross-platform |
+| `api/` | 8 | REST, GraphQL, OpenAPI, versioning, rate limiting |
+| `mobile/` | 304 | iOS, Android, React Native, Flutter, cross-platform |
 | `algorithms/` | 10 | Data structures, scheduling, constraint satisfaction |
 | `dotnet/` | 4 | ASP.NET Core, EF Core, NuGet |
 | `java-spring/` | 4 | Spring Boot, Spring Security, JVM, Maven/Gradle |
 | `embedded/` | 8 | Firmware, IoT protocols, embedded systems |
 | `electron-smart-tv/` | 10 | Electron apps, smart-TV / 10-ft UI |
 | `localization/` | 8 | i18n, pseudo-localization, ICU, translation workflow |
-| `vibe-coding-rescue/` | 5 | Wall diagnosis, rules file design, stuck-task decomposition, AI-generated-code security audit, engineer handoff briefing |
-| **Total** | **467** | _(excluding README files and the top-level review report)_ |
+| `vibe-coding-rescue/` | 11 | Wall diagnosis, rules file design, stuck-task decomposition, AI-generated-code security audit, engineer handoff briefing |
+| `bug-bounty/` | 22 | Authorized bug bounty workflow: program selection, scope, recon, hunting by vulnerability class, triage, PoC, disclosure reports |
+| `improvement/` | 4 | Best-practice audit, refactoring, language translation, full-repository audit |
+| `prototyping/` | 6 | Rapid app prototypes with AI app builders (Lovable, Bolt, v0) |
+| **Total** | **586** | _(excluding README files and the top-level review report)_ |
 
 ---
 

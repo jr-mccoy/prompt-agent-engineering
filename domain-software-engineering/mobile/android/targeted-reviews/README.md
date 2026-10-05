@@ -1,6 +1,6 @@
 # Android Targeted Reviews
 
-This folder contains 17 specialized code review prompts for Android applications. Unlike codebase-wide reviews, these prompts focus on specific high-risk areas and architectural patterns common in modern Android development.
+This folder contains 45 specialized code review prompts for Android applications. Unlike codebase-wide reviews, these prompts focus on specific high-risk areas and architectural patterns common in modern Android development.
 
 ## When to Use Targeted Reviews
 
@@ -65,6 +65,44 @@ Use these prompts when you need deep analysis of a specific subsystem rather tha
 | Prompt | Description | Key Focus Areas |
 |--------|-------------|-----------------|
 | [android_offline_conflict_resolution_review.md](android_offline_conflict_resolution_review.md) | Conflict resolution strategies | Detection, merge logic, edit-delete conflicts |
+| [android_crud_sync_verification.md](android_crud_sync_verification.md) | CRUD sync verification | Every CRUD operation for every synced entity, local ↔ cloud propagation |
+| [android_data_integrity_audit.md](android_data_integrity_audit.md) | Data integrity audit | Data operations traced from UI action through ViewModel, Repository, local DB, and sync |
+| [android_silent_data_loss_detection.md](android_silent_data_loss_detection.md) | Silent data loss detection | Swallowed exceptions, overwrites without merge, orphaned or unreachable data |
+
+### Perceived Performance
+
+| Prompt | Description | Key Focus Areas |
+|--------|-------------|-----------------|
+| [android_animation_transition_coupling_review.md](android_animation_transition_coupling_review.md) | Animation and transition coupling | Animations that make immediate state changes feel delayed or mushy |
+| [android_architectural_coarse_graining_review.md](android_architectural_coarse_graining_review.md) | Architectural coarse-graining | Small user actions triggering disproportionately large state rebuilds |
+| [android_async_boundaries_review.md](android_async_boundaries_review.md) | Async boundaries | Unnecessary dispatcher switches, persistence waits, missing optimistic updates |
+| [android_compose_recomposition_problems_review.md](android_compose_recomposition_problems_review.md) | Compose recomposition problems | Recomposition problems that make the UI feel less immediate |
+| [android_database_observation_review.md](android_database_observation_review.md) | Database observation | Coarse or slow observation adding lag between user actions and UI updates |
+| [android_image_media_churn_review.md](android_image_media_churn_review.md) | Image and media churn | Repeated requests, unnecessary transformations, visual churn |
+| [android_list_rendering_inefficiency_review.md](android_list_rendering_inefficiency_review.md) | List rendering inefficiency | RecyclerView and LazyColumn updates that are rough or delayed |
+| [android_overbroad_ui_updates_review.md](android_overbroad_ui_updates_review.md) | Over-broad UI updates | UI that recomputes or redraws far more than necessary |
+| [android_per_update_expensive_work_review.md](android_per_update_expensive_work_review.md) | Per-update expensive work | Expensive transformations on every state change |
+| [android_state_propagation_review.md](android_state_propagation_review.md) | State propagation | Wrong or delayed state propagation lagging behind user actions |
+
+### Firebase & Firestore
+
+| Prompt | Description | Key Focus Areas |
+|--------|-------------|-----------------|
+| [firebase_analytics_strategy.md](firebase_analytics_strategy.md) | Firebase Analytics implementation | Core events, naming conventions, funnels, BigQuery export |
+| [firebase_app_check_setup.md](firebase_app_check_setup.md) | Firebase App Check with Play Integrity | Attestation setup, debug tokens, enforcement rollout |
+| [firebase_auth_implementation.md](firebase_auth_implementation.md) | Firebase Authentication design | Provider selection, account linking, custom claims RBAC, sessions |
+| [firebase_cloud_functions_cost_guard.md](firebase_cloud_functions_cost_guard.md) | Cloud Functions cost audit | Infinite loops, excessive invocations, cold start costs |
+| [firebase_cloud_functions_design.md](firebase_cloud_functions_design.md) | Cloud Functions architecture | Trigger types, idempotency, retries, emulator development |
+| [firebase_cost_monitor_setup.md](firebase_cost_monitor_setup.md) | Firebase cost monitoring | GCP budget alerts, anomaly detection, cost circuit breakers |
+| [firebase_cost_optimization.md](firebase_cost_optimization.md) | Firebase cost optimization | Expensive read patterns, listeners vs one-time reads, caching |
+| [firebase_crashlytics_workflow.md](firebase_crashlytics_workflow.md) | Crashlytics crash response workflow | Severity classification, crash-free targets, alert thresholds |
+| [firebase_emulator_suite_setup.md](firebase_emulator_suite_setup.md) | Firebase Emulator Suite setup | firebase.json config, seed data, CI integration, rules testing |
+| [firebase_health_check.md](firebase_health_check.md) | Periodic Firebase project health check | Security rules, cost trends, SDK currency, quota utilization |
+| [firebase_incident_response.md](firebase_incident_response.md) | Firebase incident runbooks | Cost spikes, security breaches, outages, data corruption |
+| [firebase_remote_config_strategy.md](firebase_remote_config_strategy.md) | Remote Config strategy | Feature flags, A/B tests, gradual rollouts, kill switches |
+| [firebase_security_rules_generator.md](firebase_security_rules_generator.md) | Firestore security rules generator | Custom-claims RBAC, field-level validation, rate limiting |
+| [firestore_data_model_design.md](firestore_data_model_design.md) | Firestore data model design | Denormalization, subcollections, index planning, cost per query |
+| [firestore_query_optimization.md](firestore_query_optimization.md) | Firestore query optimization | N+1 patterns, unnecessary listeners, missing indexes, pagination |
 
 ## Usage Pattern
 

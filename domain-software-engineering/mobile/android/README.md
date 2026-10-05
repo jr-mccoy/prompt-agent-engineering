@@ -126,6 +126,18 @@ Prompts for enhancing, modernizing, and polishing existing Android code.
 | [android_ui_polish_audit.md](improvement/android_ui_polish_audit.md) | Audit UI for consistency, polish, and professional feel | Comprehensive |
 | [android_accessibility_improvement.md](improvement/android_accessibility_improvement.md) | Audit and improve app accessibility | Comprehensive |
 | [android_user_experience_enhancement.md](improvement/android_user_experience_enhancement.md) | Identify and implement UX improvements | Comprehensive |
+| [android_adaptive_large_screen_improvement.md](improvement/android_adaptive_large_screen_improvement.md) | Adapt a phone-only app for tablets and foldables | Modular |
+| [android_baseline_profiles_optimization.md](improvement/android_baseline_profiles_optimization.md) | Generate and optimize Baseline Profiles and Startup Profiles for faster launch and smoother scrolling | Comprehensive |
+| [android_build_speed_optimization.md](improvement/android_build_speed_optimization.md) | Profile and reduce Gradle build times | Modular |
+| [android_compose_multiplatform_migration.md](improvement/android_compose_multiplatform_migration.md) | Evaluate and plan migration from Android-only Compose to Compose Multiplatform | Comprehensive |
+| [android_compose_performance_optimization.md](improvement/android_compose_performance_optimization.md) | Diagnose and fix Jetpack Compose runtime performance problems | Modular |
+| [android_compose_ui_improvement.md](improvement/android_compose_ui_improvement.md) | Interactive design consultation turning feedback and screenshots into Compose UI improvements | Comprehensive |
+| [android_compose_ui_market_dominance_review.md](improvement/android_compose_ui_market_dominance_review.md) | Exhaustive Compose UI review for the most marketable and competitive interface in its category | Comprehensive |
+| [android_compose_ui_polish.md](improvement/android_compose_ui_polish.md) | Targeted visual refinements to elevate Compose UI to production-ready quality | Comprehensive |
+| [android_edge_to_edge_predictive_back_adoption.md](improvement/android_edge_to_edge_predictive_back_adoption.md) | Migrate to enforced edge-to-edge (Android 15), correct window insets, and predictive back | Modular |
+| [android_kotlin_refactoring.md](improvement/android_kotlin_refactoring.md) | Identify refactoring candidates, plan, and implement improvements without breaking functionality | Comprehensive |
+| [android_kotlin_refactoring_generalized.md](improvement/android_kotlin_refactoring_generalized.md) | Auto-detect stack, score refactoring candidates, and execute a safe plan with approval gates | Comprehensive |
+| [android_version_catalog_migration.md](improvement/android_version_catalog_migration.md) | Migrate to Gradle Version Catalogs (libs.versions.toml), including Convention Plugins setup | Comprehensive |
 
 ### Recommended Improvement Workflow
 
@@ -155,6 +167,27 @@ Prompts for designing features, selecting architecture, and planning projects.
 | [android_tech_stack_selection.md](planning/android_tech_stack_selection.md) | Select and justify technology choices for new projects | Modular |
 | [android_app_concept_validation.md](planning/android_app_concept_validation.md) | Validate app ideas for market viability and feasibility | Comprehensive |
 | [android_project_scaffold.md](planning/android_project_scaffold.md) | Generate complete project structure with boilerplate | Comprehensive |
+| [android_accessibility_and_localization_plan.md](planning/android_accessibility_and_localization_plan.md) | Plan accessibility-by-design and localization/internationalization before UI is built | Comprehensive |
+| [android_ai_agent_workflow.md](planning/android_ai_agent_workflow.md) | Design a workflow for effectively using AI coding agents with Android projects | Comprehensive |
+| [android_ai_context_file_generator.md](planning/android_ai_context_file_generator.md) | Generate a comprehensive CLAUDE.md file for an Android project | Comprehensive |
+| [android_analytics_measurement_plan.md](planning/android_analytics_measurement_plan.md) | Define a North Star metric, AARRR funnels, and event taxonomy before any analytics SDK is wired in | Comprehensive |
+| [android_backend_and_api_contract_plan.md](planning/android_backend_and_api_contract_plan.md) | Decide the backend strategy and define the client-facing API contract before networking code is written | Comprehensive |
+| [android_compose_ui_design_studio.md](planning/android_compose_ui_design_studio.md) | Interactive design exploration to lock a distinctive Jetpack Compose design system | Comprehensive |
+| [android_data_retention_policy_design.md](planning/android_data_retention_policy_design.md) | Design a data retention policy — retention periods, automated deletion, user data requests | Comprehensive |
+| [android_device_support_and_form_factor_strategy.md](planning/android_device_support_and_form_factor_strategy.md) | Decide supported API levels, devices, and form factors (minSdk/targetSdk policy, support matrix) | Comprehensive |
+| [android_domain_data_model_design.md](planning/android_domain_data_model_design.md) | Planning-time domain and data model — entities, relationships, source of truth, Room schema shape | Comprehensive |
+| [android_estimation_and_milestone_plan.md](planning/android_estimation_and_milestone_plan.md) | Turn MVP scope into an estimable work breakdown and risk-adjusted milestone timeline | Comprehensive |
+| [android_kotlin_multiplatform_architecture.md](planning/android_kotlin_multiplatform_architecture.md) | Design a KMP shared module architecture — what to share vs. keep platform-specific | Comprehensive |
+| [android_learning_roadmap.md](planning/android_learning_roadmap.md) | Generate a personalized Android learning roadmap | Modular |
+| [android_mobile_threat_model.md](planning/android_mobile_threat_model.md) | Planning-stage threat model so security is designed in, not audited in later | Comprehensive |
+| [android_modularization_strategy.md](planning/android_modularization_strategy.md) | Analyze a monolithic Android app and produce a modularization plan | Modular |
+| [android_monetization_and_billing_strategy.md](planning/android_monetization_and_billing_strategy.md) | Choose a monetization model and design the Play Billing catalog, entitlements, and paywall strategy | Comprehensive |
+| [android_mvp_scope_and_release_roadmap.md](planning/android_mvp_scope_and_release_roadmap.md) | Turn a validated concept into an MVP cut line, prioritized backlog, and MVP → V1 → V2 release train | Comprehensive |
+| [android_navigation_and_screen_map.md](planning/android_navigation_and_screen_map.md) | Information architecture before any screen is built — screen inventory, navigation pattern, route map, deep links | Comprehensive |
+| [android_offline_first_architecture.md](planning/android_offline_first_architecture.md) | Design an offline-first architecture using Room + WorkManager + DataStore | Comprehensive |
+| [android_ondevice_ai_feature_plan.md](planning/android_ondevice_ai_feature_plan.md) | Plan an AI/ML feature — on-device versus cloud inference, runtime and model, responsible-AI guardrails | Comprehensive |
+| [android_performance_budget_and_nfr_plan.md](planning/android_performance_budget_and_nfr_plan.md) | Set quantified non-functional requirements and performance budgets at planning time | Comprehensive |
+| [android_privacy_by_design_and_permissions_plan.md](planning/android_privacy_by_design_and_permissions_plan.md) | Decide data collection and runtime permissions before building; map to the Data Safety form | Comprehensive |
 
 ### Recommended Planning Workflow
 
@@ -190,6 +223,8 @@ Prompts for building features, integrating services, and writing production code
 | [android_offline_first_sync.md](implementation/android_offline_first_sync.md) | Build offline-first architecture with sync capabilities | Comprehensive |
 | [android_firebase_integration.md](implementation/android_firebase_integration.md) | Integrate Firebase services (Auth, Firestore, FCM) | Modular |
 | [android_in_app_billing.md](implementation/android_in_app_billing.md) | Implement Google Play Billing for purchases and subscriptions | Modular |
+| [android_compose_state_management.md](implementation/android_compose_state_management.md) | Compose state management patterns — remember, rememberSaveable, ViewModels, state hoisting | Comprehensive |
+| [android_play_billing_implementation.md](implementation/android_play_billing_implementation.md) | Implement Google Play Billing Library 7.x — purchase flow, grace periods, receipt validation, refunds | Comprehensive |
 
 ### Recommended Implementation Workflow
 
@@ -227,6 +262,7 @@ Prompts for test strategy design, test generation, and quality assurance.
 | [android_device_api_test_matrix_design.md](testing/android_device_api_test_matrix_design.md) | Design risk-based device/API-level matrix for PR, nightly, and pre-release runs | Modular |
 | [android_contract_testing_network_data_boundaries.md](testing/android_contract_testing_network_data_boundaries.md) | Define and enforce contracts across API, mapping, and persistence boundaries | Modular |
 | [android_mutation_testing_effectiveness_review.md](testing/android_mutation_testing_effectiveness_review.md) | Measure test effectiveness using mutation testing and escaped-defect signals | Modular |
+| [ai_test_generation_android.md](testing/ai_test_generation_android.md) | Use AI to generate comprehensive Android unit, Compose UI, and integration tests | Comprehensive |
 
 ### Recommended Testing Workflow
 
@@ -266,6 +302,17 @@ Prompts for release preparation, store optimization, privacy compliance, and rol
 | [android_play_store_optimization.md](publishing/android_play_store_optimization.md) | App Store Optimization (ASO) for better discoverability and conversion | Comprehensive |
 | [android_app_bundle_optimization.md](publishing/android_app_bundle_optimization.md) | Reduce app download and install size | Modular |
 | [android_staged_rollout.md](publishing/android_staged_rollout.md) | Beta testing and staged rollout strategy | Modular |
+| [gdpr_compliance_audit.md](publishing/gdpr_compliance_audit.md) | Audit an Android app for GDPR compliance | Modular |
+| [play_store_data_safety_generator.md](publishing/play_store_data_safety_generator.md) | Generate an accurate Google Play Data Safety section from app code and SDKs | Comprehensive |
+| [play_store_listing_ab_test.md](publishing/play_store_listing_ab_test.md) | Design, run, and analyze Play Store listing experiments | Comprehensive |
+| [play_store_policy_compliance_check.md](publishing/play_store_policy_compliance_check.md) | Audit an app against Google Play Store policies | Comprehensive |
+| [play_store_policy_monitor.md](publishing/play_store_policy_monitor.md) | Review recent Google Play policy updates and assess impact on a specific app | Modular |
+| [play_store_pre_launch_checklist.md](publishing/play_store_pre_launch_checklist.md) | Pre-launch checklist for a new Android app | Comprehensive |
+| [play_store_release_management.md](publishing/play_store_release_management.md) | Plan and execute staged rollouts on Google Play | Comprehensive |
+| [play_store_review_response_strategy.md](publishing/play_store_review_response_strategy.md) | Strategy for responding to Google Play Store user reviews | Comprehensive |
+| [play_store_screenshot_strategy.md](publishing/play_store_screenshot_strategy.md) | Design high-converting Play Store screenshots | Comprehensive |
+| [privacy_policy_generator.md](publishing/privacy_policy_generator.md) | Generate a privacy policy for an Android app (GDPR, CCPA, COPPA, Play Store) | Comprehensive |
+| [terms_of_service_generator.md](publishing/terms_of_service_generator.md) | Generate Terms of Service for an Android app | Modular |
 
 ### Recommended Publishing Workflow
 

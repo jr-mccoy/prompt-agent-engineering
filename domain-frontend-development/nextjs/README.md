@@ -1,7 +1,7 @@
 # Next.js Prompts
 
 **Category:** Frontend Development / Next.js
-**Prompts:** 3
+**Prompts:** 4
 
 ---
 
@@ -16,6 +16,7 @@ Production-grade prompts for Next.js development covering App Router architectur
 | [frontend_nextjs_app_router.md](frontend_nextjs_app_router.md) | Analyze App Router architecture, server/client component boundaries, routing patterns, and layouts | Intermediate |
 | [frontend_nextjs_data_fetching.md](frontend_nextjs_data_fetching.md) | Audit data fetching patterns, caching strategies, Server Actions, and revalidation | Intermediate |
 | [frontend_nextjs_performance.md](frontend_nextjs_performance.md) | Profile and optimize Next.js performance including rendering strategy, bundle size, and images | Advanced |
+| [frontend_nextjs_server_actions_mutations.md](frontend_nextjs_server_actions_mutations.md) | Audit Server Actions and mutation flows — form actions, revalidation, optimistic updates, and action security/validation | Advanced |
 
 ## Usage Examples
 

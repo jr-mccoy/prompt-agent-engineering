@@ -1,6 +1,6 @@
 # iOS Targeted Reviews
 
-This folder contains 32 specialized code review prompts for iOS applications. Unlike codebase-wide reviews, these prompts focus on specific high-risk areas and architectural patterns common in modern iOS development using Swift, SwiftUI, and Apple platform frameworks.
+This folder contains 20 specialized code review prompts for iOS applications. Unlike codebase-wide reviews, these prompts focus on specific high-risk areas and architectural patterns common in modern iOS development using Swift, SwiftUI, and Apple platform frameworks.
 
 ## When to Use Targeted Reviews
 
@@ -64,25 +64,6 @@ Use these prompts when you need deep analysis of a specific subsystem rather tha
 | Prompt | Description | Key Focus Areas |
 |--------|-------------|-----------------|
 | [ios_universal_link_deep_link_review.md](ios_universal_link_deep_link_review.md) | Universal Links review | AASA file, entitlements, fallback handling |
-| ios_push_notification_review.md | Push notification implementation | APNs configuration, payload handling, silent push |
-| ios_widget_timeline_review.md | WidgetKit timeline provider review | Timeline entries, relevance, budget management |
-| ios_live_activity_review.md | Live Activities/Dynamic Island review | ActivityKit lifecycle, push token updates, UI constraints |
-| ios_app_intent_shortcuts_review.md | App Intents/Shortcuts review | Intent discovery, parameter resolution, Siri integration |
-
-### CloudKit
-
-The cloudkit/ subdirectory contains 8 focused prompts for reviewing CloudKit implementations. CloudKit is complex enough to warrant its own subsection covering data modeling through production operations.
-
-| Prompt | Description | Key Focus Areas |
-|--------|-------------|-----------------|
-| cloudkit/cloudkit_data_model_design.md | Data model design | Record types, references, asset management |
-| cloudkit/cloudkit_sync_architecture.md | Sync architecture | NSPersistentCloudKitContainer, custom sync engines, conflict resolution |
-| cloudkit/cloudkit_sharing_setup.md | Sharing setup | CKShare, participant management, zone sharing |
-| cloudkit/cloudkit_subscription_notifications.md | Subscription notifications | CKSubscription types, silent push triggers, change tokens |
-| cloudkit/cloudkit_security_review.md | Security review | ACLs, record-level permissions, encrypted fields |
-| cloudkit/cloudkit_performance_optimization.md | Performance optimization | Batch operations, query indexing, fetch limits |
-| cloudkit/cloudkit_error_handling.md | Error handling | CKError codes, retry-after logic, partial failures |
-| cloudkit/cloudkit_migration_strategy.md | Migration strategy | Schema versioning, additive changes, backward compatibility |
 
 ## Usage Pattern
 

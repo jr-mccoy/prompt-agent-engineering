@@ -2,7 +2,7 @@
 
 Prompts for designing, documenting, and reviewing APIs including REST, GraphQL, and OpenAPI specifications.
 
-**Total Prompts:** 5
+**Total Prompts:** 8
 
 ---
 

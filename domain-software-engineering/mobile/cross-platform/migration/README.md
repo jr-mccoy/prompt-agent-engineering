@@ -1,6 +1,6 @@
 # Cross-Platform Migration Prompts
 
-> **18 migration prompts** for Android-to-iOS transitions and KMP shared architecture design.
+> **13 migration prompts** for Android-to-iOS transitions and KMP shared architecture design.
 
 ---
 
@@ -123,25 +123,13 @@ Adapt dependency injection and asynchronous programming patterns.
 | `migration_hilt_to_swift_di.md` | Hilt/Dagger to Swift DI mapping covering property wrappers, Environment, factory patterns, and third-party options (Swinject, needle) |
 | `migration_coroutines_to_swift_concurrency.md` | Kotlin Coroutines to Swift structured concurrency mapping including Flow to AsyncSequence, suspend to async/await, dispatchers to actors |
 
-### Platform Services (3 prompts)
+### Platform Services (1 prompt)
 
 Replace Android platform services with Apple equivalents. These often require the most re-engineering.
 
 | Prompt | Description |
 |--------|-------------|
 | `migration_firebase_to_apple_services.md` | Firebase to Apple platform equivalents: FCM to APNs, Crashlytics to MetricKit, Remote Config to CloudKit, Analytics to App Analytics |
-| `migration_play_billing_to_storekit.md` | Google Play Billing Library to StoreKit 2 mapping covering products, subscriptions, receipt validation, and server-side verification |
-| `migration_play_store_to_app_store.md` | Play Store to App Store publishing covering App Review guidelines, metadata requirements, screenshots, TestFlight, and phased rollout |
-
-### Build System & Tooling (3 prompts)
-
-Adapt build infrastructure last, once the application code is migrated.
-
-| Prompt | Description |
-|--------|-------------|
-| `migration_gradle_to_spm_xcode.md` | Gradle build system to Swift Package Manager and Xcode project mapping including dependency management, build configurations, and flavors/schemes |
-| `migration_ci_cd_adaptation.md` | CI/CD pipeline adaptation from Android (Gradle-based) to iOS (Xcode/xcodebuild) covering signing, provisioning, Fastlane, and distribution |
-| `migration_testing_strategy_adaptation.md` | Testing strategy adaptation mapping JUnit/Espresso/Robolectric to XCTest/XCUITest/Swift Testing with coverage parity planning |
 
 ---
 
@@ -165,6 +153,6 @@ Use `migration_android_to_ios_strategy.md` and `migration_platform_feature_mappi
 
 - **Android prompts:** `domain-software-engineering/mobile/android/`
 - **iOS prompts:** `domain-software-engineering/mobile/ios/`
-- **Cross-platform architecture:** `domain-software-engineering/mobile/cross_platform_architecture_design.md`
-- **Mobile CI/CD:** `domain-software-engineering/mobile/mobile_cicd_pipeline_optimization.md`
-- **Mobile security:** `domain-software-engineering/mobile/mobile_app_security_review.md`
+- **Cross-platform architecture:** `domain-software-engineering/mobile/cross-platform/cross_platform_architecture_design.md`
+- **Mobile CI/CD:** `domain-software-engineering/mobile/cross-platform/mobile_cicd_pipeline_optimization.md`
+- **Mobile security:** `domain-software-engineering/mobile/cross-platform/mobile_app_security_review.md`
