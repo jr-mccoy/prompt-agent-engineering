@@ -3,15 +3,10 @@ title: "Prenup / Postnup Enforceability Analysis"
 category: legal/divorce
 description: "Analyze the enforceability of a prenuptial or postnuptial agreement under the controlling state's framework (UPAA/UPMAA or state law): assess voluntariness/duress, adequacy of financial disclosure or waiver, unconscionability (at execution and/or at enforcement), independent counsel, timing, and any state-specific formalities — building either a challenge roadmap or an enforcement-defense memo with element-by-element strength and confidence levels."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-01
   - RT-02
-  - RT-05
-  - RP-01
   - CM-02
-  - QA-01
   - QA-12
 difficulty: advanced
 tags:

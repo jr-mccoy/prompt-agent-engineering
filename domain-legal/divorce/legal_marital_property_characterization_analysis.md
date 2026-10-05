@@ -3,15 +3,10 @@ title: "Marital Property Characterization Analysis"
 category: legal/divorce
 description: "Characterize each asset and debt as marital/community, separate, or mixed under the controlling state's regime, analyzing premarital ownership, gift/inheritance, commingling, transmutation, active vs. passive appreciation, source-of-funds tracing, and reimbursement/equitable claims — producing an asset-by-asset characterization memo with tracing requirements and confidence levels."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-01
   - RT-02
-  - RT-05
-  - RP-01
   - CM-02
-  - QA-01
   - QA-12
 difficulty: advanced
 tags:

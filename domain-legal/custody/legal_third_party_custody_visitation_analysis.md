@@ -3,11 +3,11 @@ title: "Grandparent / Third-Party Custody and Visitation Analysis"
 category: legal/custody
 description: "Analyze a non-parent's standing and substantive claim for custody or visitation under the controlling state's third-party statute and the constitutional Troxel framework: assess statutory standing (grandparent, de facto/psychological parent, relative caregiver), apply the heightened standard that respects a fit parent's presumption and decision-making, address required findings (harm, parental unfitness, or the state's threshold), and produce a position memo with the proof required and the likelihood of success."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
   - CM-02
   - QA-01
+  - QA-12
 difficulty: advanced
 tags:
   - legal
@@ -52,7 +52,7 @@ related_prompts:
 - Apply the state's **substantive standard** — often requiring a showing beyond best interests, such as **harm/detriment to the child** if contact/custody is denied, or **parental unfitness** for third-party custody `[CITE: …]`.
 - For **de facto/psychological parent** claims, apply the state's multi-factor test for that status.
 - Distinguish **visitation** (lesser intrusion) from **custody** (greater intrusion, higher bar) and the differing standards.
-- Provide **standing strength**, **merits strength**, and **overall confidence**; frame as a position.
+- Provide **standing strength**, **merits strength**, and **overall confidence**; frame as a position (QA-12).
 - Confirm **UCCJEA jurisdiction** as for any custody matter.
 - Use placeholders `[CITE: ...]`, `[NEED STANDARD: ...]`, `[NEED: ...]` for unsupplied authority or facts.
 

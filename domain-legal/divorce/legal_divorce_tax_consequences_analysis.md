@@ -3,11 +3,8 @@ title: "Divorce Tax Consequences Analysis"
 category: legal/divorce
 description: "Analyze the federal and state tax consequences of a divorce: filing status by year, §1041 nonrecognition on interspousal property transfers, post-TCJA alimony treatment (no deduction/inclusion for instruments executed after 2018), child-related credits and dependency allocation, sale-of-home exclusion, retirement-transfer mechanics (QDRO vs. IRA), basis carryover, and the tax cost embedded in each division option."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
-  - RT-05
   - CM-02
   - QA-01
   - QA-12

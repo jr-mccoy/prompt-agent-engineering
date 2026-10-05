@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - RT-02
   - CM-02
-  - QA-01
+  - QA-12
 difficulty: advanced
 tags:
   - legal
@@ -54,7 +54,7 @@ related_prompts:
 - Distinguish any **presumption** (some states favor a good-faith primary custodian; others apply a neutral best-interests test).
 - Assess **good faith vs. bad faith** of the moving parent and any **legitimate purpose**.
 - Propose a **revised long-distance parenting plan** (extended breaks, travel allocation, virtual contact) that mitigates the impact.
-- Provide **factor-by-factor strength** and **confidence**; frame as a position.
+- Provide **factor-by-factor strength** and **confidence**; frame as a position (QA-12).
 - Use placeholders `[CITE: ...]`, `[NEED FACTOR LIST: ...]`, `[NEED: ...]` for unsupplied authority, factors, or facts.
 
 **Must Not:**

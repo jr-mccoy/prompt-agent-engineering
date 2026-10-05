@@ -3,12 +3,8 @@ title: "Business Valuation and Division Framework"
 category: legal/divorce
 description: "Frame the valuation and division of a closely-held business interest in divorce: select the valuation date and standard of value, choose among asset/income/market approaches, address enterprise vs. personal goodwill under the state's rule, normalize owner compensation and add-backs, apply marketability/minority discounts where allowed, and structure a buyout or offset — producing a valuation-issue memo and an expert-scope checklist."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
-  - RT-02
-  - RT-05
-  - RP-01
   - CM-02
   - QA-01
   - QA-12

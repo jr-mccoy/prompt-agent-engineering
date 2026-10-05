@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - RT-02
   - CM-02
-  - QA-01
+  - QA-12
 difficulty: advanced
 tags:
   - legal
@@ -55,7 +55,7 @@ related_prompts:
 - Weigh **stability and continuity** (home, school, community) and the **status quo** appropriately.
 - Address the **child's preference** only to the extent and weight the state allows for the child's age/maturity.
 - Treat **safety factors** (DV, abuse, substance use) as potentially dispositive, with the evidence required.
-- Assign **factor-by-factor strength** and an overall recommendation with **confidence**; frame as a position.
+- Assign **factor-by-factor strength** and an overall recommendation with **confidence**; frame as a position (QA-12).
 - Use placeholders `[CITE: ...]`, `[NEED FACTOR LIST: ...]`, `[NEED: ...]` for unsupplied authority, factors, or facts.
 
 **Must Not:**

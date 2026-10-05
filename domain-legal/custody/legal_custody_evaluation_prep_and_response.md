@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - RT-05
   - CM-02
-  - QA-01
+  - QA-12
 difficulty: advanced
 tags:
   - legal
@@ -52,7 +52,7 @@ related_prompts:
 - Help assemble **relevant collateral and records** that fairly inform the evaluation.
 - When critiquing the report, assess **methodology** (data sources balanced across parties, testing properly administered/interpreted, collateral contacts adequate), **bias/one-sidedness**, **unsupported conclusions**, and **alignment with the state's best-interests factors** `[NEED FACTOR LIST: …]`.
 - Identify **cross-examination points** and whether a **rebuttal expert** is warranted (cross-reference expert deposition prep).
-- Frame critiques as **methodological challenges**, not attacks on the conclusion's bottom line alone.
+- Frame critiques as **methodological challenges**, not attacks on the conclusion's bottom line alone (QA-12).
 - Use placeholders `[CITE: ...]`, `[NEED FACTOR LIST: ...]`, `[NEED: ...]` for unsupplied authority, factors, or facts.
 
 **Must Not:**

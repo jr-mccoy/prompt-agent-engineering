@@ -3,11 +3,11 @@ title: "Child Support Calculation Framework"
 category: legal/custody
 description: "Apply the controlling state's child-support guideline: identify the model (income-shares, percentage-of-obligor-income, or Melson), determine each parent's income (including self-employment, imputation for voluntary unemployment, and overtime/bonus treatment), apply parenting-time/shared-custody adjustments, add the mandatory add-ons (health insurance, childcare, extraordinary medical/education), and assess deviation factors — producing a worksheet-style computation with a defensible range and the inputs that drive it."
 techniques:
-  - ST-01
   - ST-02
   - ST-03
   - CM-02
   - QA-01
+  - QA-12
 difficulty: advanced
 tags:
   - legal

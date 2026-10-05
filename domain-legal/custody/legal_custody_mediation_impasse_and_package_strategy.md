@@ -5,9 +5,9 @@ description: "Break a stalled custody mediation or structure a multi-session one
 techniques:
   - ST-02
   - ST-03
-  - RT-02
   - CM-02
   - QA-01
+  - QA-12
 difficulty: advanced
 tags:
   - legal

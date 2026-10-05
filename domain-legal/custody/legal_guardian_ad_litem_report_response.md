@@ -7,7 +7,7 @@ techniques:
   - ST-03
   - RT-05
   - CM-02
-  - QA-01
+  - QA-12
 difficulty: advanced
 tags:
   - legal
@@ -53,7 +53,7 @@ related_prompts:
 - Identify **scope creep** (recommendations beyond the appointment) and any **procedural** issues (ex parte contacts, reliance on inadmissible material).
 - Separate **areas of agreement** from **objections**, and tie objections to specifics.
 - Prepare **cross-examination points** keyed to the gaps; note whether the GAL is subject to cross/deposition in the jurisdiction.
-- Frame challenges as **methodological/record-based**, not as attacks on the GAL personally.
+- Frame challenges as **methodological/record-based**, not as attacks on the GAL personally (QA-12).
 - Use placeholders `[CITE: ...]`, `[NEED FACTOR LIST: ...]`, `[NEED: ...]` for unsupplied authority, factors, or facts.
 
 **Must Not:**
