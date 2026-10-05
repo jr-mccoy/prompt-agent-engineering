@@ -979,6 +979,90 @@ and MRR 0.800 over 205 cases, the same before and after.
 - Five vibe-coding-rescue and repo-audit prompts carry a "Dual-Failure
   Prevention (QA-20)" section without listing QA-20.
 
+### Routing follow-up: the open misses from Waves 5–9 (2026-10-05)
+
+A pass over the 22 open misses recorded in the "Routing after Wave N" notes
+above, under the tuning rules: no query, label, threshold or floor changed, no
+case added, no tag added because a query uses the word. Every candidate fix was
+checked case by case against a full before snapshot of all 205 cases.
+
+**Shipped: one engine change.** `pae_engine._lexical.Document` no longer
+indexes a record's native `name` when it normalizes to the same terms as its
+title. Only agentic resources carry a `name`, and for 703 of 711 of them it is
+the title verbatim. Skills, agents, commands and personas therefore matched
+their title words in one more field than a prompt with the same title, which
+is a kind bias from metadata shape, not relevance. The 8 commands whose name
+says something the title does not keep it. Three unit tests pin it
+(`tests/test_lexical.py`); two of them fail without the change.
+
+| | Before | After |
+|---|---|---|
+| R@1 / R@3 / R@5 / MRR | 75.0 / 83.6 / 87.1% / 0.800 | 75.0 / 83.6 / 87.1% / 0.800 |
+| scope@1 / scope@3 / kind@1 (router) | 84.6 / 93.5 / 97.7% | 85.2 / 93.5 / 97.7% |
+| ambiguous-class scope@1 | 68.8% | 75.0% |
+| statuses (matched / ambiguous / weak / no_route) | 81 / 81 / 42 / 1 | 81 / 81 / 42 / 1 |
+| Flat BM25 guard, R@1 and scope@1 | 75.0% and 82.8% | 75.0% and 83.4% (shipped still ≥ on both) |
+
+- **Per case:** exactly one of 205 cases changes. Case 092 (`pricing`,
+  ambiguous) now ranks the business-strategy pricing prompt above the marketing
+  skill of the same name, so its routed scope moves from
+  `agentic-resources/marketing` to `business-strategy`, an acceptable scope.
+  Its status stays `ambiguous`. No case changed rank, top hit, scope or status
+  otherwise.
+- **§2 probes:** one moves, at rank 3 only. `restaurant menu pricing` shows the
+  same business-strategy pricing prompt instead of the marketing skill.
+- It fixes none of the 22 open misses.
+
+**Tried and rejected** (each measured per case, then reverted):
+
+| Change | Fixed | Regressed | Why rejected |
+|---|---|---|---|
+| Strip English clitics (`'s`, `'re`, `'ve`, `'t`…) before splitting | none | 162 drops out of the top 10 | The kinship target's only description match was a possessive `s` |
+| Add pronouns (`they`, `them`, `their`, `myself`…) to the stopwords | none; 175 enters at rank 7, 162 moves 5 → 4 | 148 loses its parenting scope; 185 drops out of the top 10 | `myself` is evidence ("Can I Fix This Myself") |
+| Index `path` only for terms not already in `pid`, or drop `path` | none; 178 3 → 2, 200 4 → 3, 189 enters at 9, 138 routes to `legal` | 030 and 188 lose rank 1 and their scope; 164 drops out of the top 10 | Mixed |
+| Fold sibilant plurals (`-sses`, `-xes`, `-shes`, `-zzes`; optionally `-ches`) | none | none | Moves no case, so it does not meet the "improves the metrics" bar; `-ches` would also split `cache`/`caches` |
+| Three plain-language tags on the case 164 target, written from its own "When to use" (peer pressure, the phone contract) and avoiding the query's words | none (still rank 4) | none | No effect; reverted, as Wave 5 did with tags that did not help |
+
+**Per-case classification.** None is fixed. "Honest miss" means the right
+resource exists and is described in its own words; the query describes the
+situation in other words, and closing the distance would mean echoing the query.
+
+| Case | Now | Class | Reason |
+|---|---|---|---|
+| 124 | not in top 10 | Honest miss | The target matches no query term. It says "metric", "sudden-drop"; the query names one metric ("weekly active users") and says "fell". The body uses "fell", but by the score arithmetic one tag would add about 2.3 against the 4.9 needed for the top 5, and the choice would be query-driven |
+| 132 | not in top 10 | Honest miss | "Charge" is the winning charge-dispute prompt's real subject. The target says "price increase" and "lose customers", not "charge more" or "losing". Its "worried-about-regulars" tag already matches |
+| 138 | not in top 10 | Honest miss | The query avoids "plea". The target's body says "prosecutor" once, so adding it to metadata would come from the query. Winners match "deal", "table", "walk", "client", their own vocabulary |
+| 140 | not in top 10 | Honest miss | The query describes a PR/FAQ without naming it. The launch-strategy skill is a fair neighbour for "launch announcement". Tags were tried and reverted in Wave 5 |
+| 145 | `weak` | Honest miss (structural) | `no_route` fires only when nothing matches at all; "pharmacy" legitimately matches the pharmacy-education folder. `weak` already means "no route selected", and the coverage threshold is not refitted |
+| 147 | not in top 10 | Honest miss | The target is tagged `having-another-baby`, `toddler-jealous-of-baby`; the query says "expecting a second baby", "three year old". Only "baby" overlaps |
+| 148 | not in top 10 | Honest miss | The child-suicide-talk prompt's 76-word description legitimately contains "stay", "after", "school", "want". The target's tags match four terms. Pronoun stopwords were tried and hurt this case |
+| 152 | rank 3 | Honest miss | Two debugging prompts own "root cause … fix". The target says "supplier", never "vendor" |
+| 153 | rank 3 | Honest miss | "Machine output" is the dual-output prompt's subject. The target says "OEE", "losses", "why-is-output-low" |
+| 155 | rank 2 | Honest miss | The agent progress-report prompt legitimately matches "agent" and "report" in five fields. Gap 0.59 |
+| 161 | `productivity` first | Honest miss (Wave 8 regression, kept) | "Dinner", "eat", "food" are the pantry prompt's core vocabulary. The target says "mealtime", "eater", "child". Wave 6 removed echo tags from this target, so re-adding them is ruled out |
+| 162 | rank 5 | Honest miss | The target says "aunt", "parent-in-jail-or-rehab". The moving-house and two-homes prompts legitimately match "kids", "moving", "help" |
+| 164 | rank 4 | Honest miss | Content-grounded tags tried; no effect. The "explain like I'm nine" and making-friends prompts match "like" and "friend" in their titles |
+| 174 | rank 4 | Honest miss | The two adult-returner prompts carry "first-semester", their real subject (a returning student's first term). One of four acceptable targets ranks 4th |
+| 175 | not in top 10 | Honest miss | Every query word is common. The fitness return-after-break prompt owns "after", "break", "week" in its title, slug and description; the targets match "maintenance" widely but "break" and "down" only in tags |
+| 178 | rank 3 | Honest miss | The SOC alert-triage runbook is a close sibling and legitimately owns "SOC", "alert". Gap 2.3 |
+| 179 | rank 8 | Honest miss | Six `<chain>-vulnerability-scanner` skills carry both rare query words in title, slug and path, which is their real subject. The target already has `scanner-backlog`. Path de-duplication would not fix it and regressed other cases |
+| 185 | rank 3 | Honest miss | "Faucet" is the economy prompt's standard term (Wave 9) and "drips" is the nursing-drips card's. The targets say "dripping" and "fix-it-myself" |
+| 186 | rank 2 | Honest miss | The pantry prompt is a defensible answer for "simple dinners … on weeknights". The target owns "learn" and "cook" |
+| 189 | not in top 10 | Honest miss | No resource in the index says "neural" in its metadata; the query also matches the lab-protocol and ML-data prompts on "lab", "assay", "train", "data" |
+| 200 | rank 4 | Honest miss | Three novel-craft prompts own "novel". The target is 0.34 behind the top hit |
+| 203 | `education-teaching` first | **Missing content** | No healthy-adult prompt covers waking in the night and not getting back to sleep. The sleep audit covers routine and environment, the shift-work prompt covers timing, and the CBT-I calculator is clinical self-use. Resource that should exist: `domain-health-wellness/sleep-recovery/sleep_night_waking_back_to_sleep_plan.md` (readiness gate first, a get-up rule and clock-hiding, caffeine and alcohol timing, and a route to a clinician or CBT-I when waking persists for weeks) |
+
+**Also fixed in passing:** `meta/registry/registry.jsonl` was stale at the
+start of this pass: two agentic-resources index pages had been edited without
+regenerating it, so `generate_registry.py --check` failed on a clean checkout.
+It was regenerated; only those two content hashes changed.
+
+**Left for later:** the night-waking prompt above. Most remaining misses are
+vocabulary distance between situation language and practitioner language
+(`fell` vs `drop`, `eats` vs `eater`, `vendor` vs `supplier`). The rules here
+leave that to a synonym or stemming decision at the engine level, which
+ADR-0021 rejected and which would need its own measurement.
+
 ## 7. Explicitly not gaps / deferred
 
 | Subject | Why not now |
