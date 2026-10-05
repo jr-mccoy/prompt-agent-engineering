@@ -27,6 +27,24 @@ Labeled instructional diagrams (expert-verified before instructional use).
 - [medical_pathophysiology_mechanism_diagram.md](./medical_pathophysiology_mechanism_diagram.md) — disease-mechanism flow diagram
 - [medical_clinical_algorithm_flowchart.md](./medical_clinical_algorithm_flowchart.md) — clinical decision / triage flowchart
 
+## PACU Image Meta-Prompts
+Meta-prompts for post-anesthesia care unit (PACU) reference cards, charts, and orientation visuals.
+- [pacu_airway_assessment_badge_meta.md](./pacu_airway_assessment_badge_meta.md) — airway rapid assessment badge buddy
+- [pacu_aldrete_score_visual_meta.md](./pacu_aldrete_score_visual_meta.md) — PACU discharge scoring reference card (Aldrete / Modified Aldrete / PADSS)
+- [pacu_algorithm_flowchart_meta.md](./pacu_algorithm_flowchart_meta.md) — PACU algorithm flowchart
+- [pacu_capa_cpan_blueprint_visual_meta.md](./pacu_capa_cpan_blueprint_visual_meta.md) — CAPA/CPAN blueprint domain weight visual
+- [pacu_dermatome_block_level_meta.md](./pacu_dermatome_block_level_meta.md) — spinal / epidural dermatome map with block-level zones
+- [pacu_drain_tube_reference_meta.md](./pacu_drain_tube_reference_meta.md) — PACU drains & tubes quick-reference poster
+- [pacu_escalation_who_to_call_meta.md](./pacu_escalation_who_to_call_meta.md) — PACU escalation: who to call by role
+- [pacu_handoff_sbar_visual_meta.md](./pacu_handoff_sbar_visual_meta.md) — PACU handoff SBAR cue card (inbound + outbound)
+- [pacu_medication_reversal_chart_meta.md](./pacu_medication_reversal_chart_meta.md) — anesthetic medications & reversal agents chart
+- [pacu_orientation_competency_progression_grid_meta.md](./pacu_orientation_competency_progression_grid_meta.md) — PACU orientation competency progression grid
+- [pacu_orientation_pathway_map_meta.md](./pacu_orientation_pathway_map_meta.md) — PACU orientation pathway map
+- [pacu_orientee_shift_flow_map_meta.md](./pacu_orientee_shift_flow_map_meta.md) — PACU orientee shift flow map
+- [pacu_pain_scale_comparison_meta.md](./pacu_pain_scale_comparison_meta.md) — PACU pain scale comparison
+- [pacu_post_op_timeline_infographic_meta.md](./pacu_post_op_timeline_infographic_meta.md) — PACU Phase 1 timeline infographic
+- [pacu_vital_signs_range_chart_meta.md](./pacu_vital_signs_range_chart_meta.md) — PACU vital signs range chart
+
 ## Model Notes
 These prompts lead with **gpt-image-2** (OpenAI — strongest in-image text) and **Nano Banana Pro** (`gemini-3-pro-image` — near-perfect text + exact fonts) for text-dense clinical cards; DALL-E 3 / Midjourney / Stable Diffusion are listed as legacy and flagged unreliable for exact in-image numbers/text. See the parent guides:
 - [IMAGE_GENERATION_GUIDE.md](../IMAGE_GENERATION_GUIDE.md) — the 8 print-ready constraint techniques used here

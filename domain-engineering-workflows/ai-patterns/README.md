@@ -68,6 +68,7 @@
 | File | What it does |
 |------|--------------|
 | [`ai_pattern_agent_task_first_delegation_spec.md`](ai_pattern_agent_task_first_delegation_spec.md) | Screens a candidate first-delegation task and produces the spec + what-to-learn note |
+| [`ai_pattern_delegation_paradox_triage.md`](ai_pattern_delegation_paradox_triage.md) | Triages tasks into delegate-to-agent / co-work / keep-human via the collaboration-paradox heuristic, assigning each a verification signal and oversight level |
 | [`ai_pattern_agent_task_code_distance_scorer.md`](ai_pattern_agent_task_code_distance_scorer.md) | Five-axis code-distance score (Entry / Read / Edit / Semantic / Implicit) with Delegate / Decompose / DIY verdict |
 | [`ai_pattern_agent_work_loop_design.md`](ai_pattern_agent_work_loop_design.md) | Per-task loop: schema, drift checks, convergence, stop policy, fallback, observability, pseudocode |
 | [`ai_pattern_agent_code_footgun_detector.md`](ai_pattern_agent_code_footgun_detector.md) | Targeted scan for 12 recurring footguns in agent-generated code with re-prompt for the agent |

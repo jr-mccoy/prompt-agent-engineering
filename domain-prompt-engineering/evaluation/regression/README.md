@@ -14,6 +14,7 @@ Use these prompts to build the infrastructure that tells you whether a prompt ch
 | `regression_change_impact_estimator.md` | Predict which test cases a specific prompt diff is likely to affect before running them, to prioritize execution order |
 | `regression_ab_test_runner_prompt.md` | Design a rigorous A/B experiment over two prompt variants with hypothesis, sample size, blinding, rubric, and pre-committed decision rule |
 | `regression_canary_set_designer.md` | Design a 5–15-case canary set that runs in <60 seconds and catches major regressions before the full suite |
+| `regression_release_gate_scorecard.md` | Turn eval and stress-sweep results into a merge decision: compare a candidate run against a frozen baseline, compute per-metric deltas against noise floors, assign traffic-light status, hard-fail on blocker thresholds, and emit a PR-ready scorecard comment |
 
 ---
 

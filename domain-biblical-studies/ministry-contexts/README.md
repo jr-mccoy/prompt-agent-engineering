@@ -17,6 +17,12 @@ Prompts for **ministry-context teachers (M)** — people teaching the Bible to s
 | `biblical_ministry_age_graded_story_retelling.md` | One story retold for ages 3–5, 6–8, 9–11; every line tagged text vs. teacher framing; embellishment audit (**child-safety**) | M | intermediate |
 | `biblical_ministry_special_needs_inclusive_teaching.md` | Disability-inclusive lesson: universal defaults, sensory/cognitive/communication/physical access, healing texts handled with care, written safety plan; no diagnosis (**child-safety**) | M | intermediate |
 | `biblical_ministry_care_conversation_foundations.md` | Scripture-rooted lay encouragement within non-clinical limits (**STRONG boundary guardrail**) | M | advanced |
+| `biblical_ministry_mens_womens_study_designer.md` | Men's or women's group study on the group's real life concerns; gender-role passages handled with tradition-neutral honesty, no stereotyping | M | intermediate |
+| `biblical_ministry_college_young_adult_study.md` | College / young-adult (18–30) study engaging identity, vocation, doubt, deconstruction, relationships, and justice | M | intermediate |
+| `biblical_ministry_seniors_study_designer.md` | Older-adult (60+) study on legacy, loss, health, retirement identity, grandparenting, mortality, and sustaining hope | M | beginner |
+| `biblical_ministry_grief_and_loss_scripture_guide.md` | Selecting and presenting Scripture for grief and loss across the full range of lament, protest, and hope — not cherry-picked comfort texts (**STRONG-GUARD** + boundary) | M | advanced |
+| `biblical_ministry_marriage_enrichment_study.md` | Couples' study handling gender-role texts honestly across complementarian, egalitarian, and moderate readings while engaging real marital themes | M | intermediate |
+| `biblical_ministry_parenting_scripture_guide.md` | Parenting-relevant Scripture presented responsibly — Proverbs as wisdom (probabilities, not promises), discipline texts across traditions | M | intermediate |
 
 ## Which prompt for which question
 

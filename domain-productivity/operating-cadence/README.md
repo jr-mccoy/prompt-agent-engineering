@@ -23,10 +23,12 @@ Prompts for running your own operating cadence the way a chief of staff would ru
 | [cos_specify_subagent_task.md](cos_specify_subagent_task.md) | Write a delegation brief with intent, scope, verification, and stop conditions. |
 | [cos_morning_briefing.md](cos_morning_briefing.md) | Produce a one-screen briefing of today's meetings, commitments, ship item, and derailers. |
 | [cos_meeting_prep_and_process.md](cos_meeting_prep_and_process.md) | Two-part protocol: pre-meeting intent brief and post-meeting notes processor. |
+| [meeting_pre_read_drafter.md](meeting_pre_read_drafter.md) | Draft the pre-read sent before a high-stakes decision meeting so the meeting decides rather than presents. |
 | [cos_end_of_day_reconciliation.md](cos_end_of_day_reconciliation.md) | A 5–10 minute end-of-day close with reload context and one signal for the weekly review. |
 | [cos_weekly_review.md](cos_weekly_review.md) | Close the week (audit commitments, waiting-fors, decisions) and open the next with one focus. |
 | [cos_memory_scaffold_claude_md.md](cos_memory_scaffold_claude_md.md) | Draft a CLAUDE.md / persistent-memory file so AI agents stop re-asking the same context. |
 | [cos_authority_boundaries.md](cos_authority_boundaries.md) | Produce a Can-do / Ask-first / Never authority map for a specific sub-agent. |
+| [cos_ai_workflow_architect.md](cos_ai_workflow_architect.md) | Map recurring work into discrete workflows and identify which steps to delegate to AI, with human-in-the-loop and governance constraints. |
 
 ---
 

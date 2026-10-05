@@ -25,13 +25,18 @@ Do **not** use these for:
 - [`deepwork_calendar_audit.md`](deepwork_calendar_audit.md) — Classify a week's calendar against a fixed taxonomy of focus-destruction patterns
 - [`deepwork_self_interruption_audit.md`](deepwork_self_interruption_audit.md) — Separate external from self-interruptions and classify self-interruptions into one of five functions
 - [`deepwork_lost_focus_day_troubleshoot.md`](deepwork_lost_focus_day_troubleshoot.md) — Post-mortem a single lost day against fixed failure modes
+- [`deepwork_personal_energy_audit.md`](deepwork_personal_energy_audit.md) — Map daily energy patterns: peak hours, energy drains, and leverage moves
+- [`deepwork_zombie_meeting_detector.md`](deepwork_zombie_meeting_detector.md) — Find recurring meetings that have outlived their purpose; keep, make async, or delete
 
 ### Design (build systems around the measurements)
 - [`deepwork_message_triage_system.md`](deepwork_message_triage_system.md) — Route incoming messages to one of five actions, tuned to the user's actual sender mix
 - [`deepwork_meeting_to_async_converter.md`](deepwork_meeting_to_async_converter.md) — Convert one specific meeting to async, or decide it must stay sync
 - [`deepwork_meeting_cost_estimator.md`](deepwork_meeting_cost_estimator.md) — Compute the true person-minute cost of a meeting including prep and block destruction
+- [`deepwork_meeting_killer.md`](deepwork_meeting_killer.md) — Evaluate whether a meeting is necessary and optimize or replace it, with ready-to-send templates
 - [`deepwork_reload_ritual_design.md`](deepwork_reload_ritual_design.md) — Design a ≤ 5-step, timeboxed ritual that reduces context-reload cost
 - [`deepwork_team_focus_audit.md`](deepwork_team_focus_audit.md) — Team-lead-scoped audit and 3–5 proposed team norms tied to observed patterns
+- [`deepwork_focus_ritual_design.md`](deepwork_focus_ritual_design.md) — Build a short cue → transition → first-action ritual that reliably drops you into deep work
+- [`deepwork_environment_friction_design.md`](deepwork_environment_friction_design.md) — Audit workspace defaults and friction points; propose add/remove changes so behavior follows defaults
 
 ### Plan (match work to available time)
 - [`deepwork_chunk_project_to_calendar.md`](deepwork_chunk_project_to_calendar.md) — Break a project into chunks sized to real free blocks
@@ -43,6 +48,7 @@ Do **not** use these for:
 - [`deepwork_project_state_synthesis.md`](deepwork_project_state_synthesis.md) — Pull scattered project state into a reload brief
 - [`deepwork_handwritten_notes_digitizer.md`](deepwork_handwritten_notes_digitizer.md) — Convert handwritten notes into decision log / action list / idea cluster
 - [`deepwork_focus_block_async_summary.md`](deepwork_focus_block_async_summary.md) — Turn end-of-block output into an async update for a specific collaborator
+- [`deepwork_future_self_handoff.md`](deepwork_future_self_handoff.md) — At session/week end, write a handoff to future-self with re-entry context, blockers, deferred decisions, and the next physical action
 
 ### Evaluate (test whether a change worked)
 - [`deepwork_focus_experiment_week.md`](deepwork_focus_experiment_week.md) — Design and review a one-week experiment of a single focus-system change

@@ -39,6 +39,9 @@ Use this subfolder when:
 | `agency_rapid_start_mode.md` | A 60-second protocol from "at the desk" to "producing an artifact," for low-energy starts. |
 | `agency_accountability_partner_design.md` | Pick the one accountability mechanism matched to the user's track record of follow-through, and produce the exact first message to set it up today. |
 | `agency_personal_project_scope_creep.md` | Reconstruct a project's original commitment, classify everything added since, and re-cut to a shippable core with one next action. |
+| `agency_burnout_recovery.md` | Differentiate depletion vs. burnout vs. boredom-burnout vs. mismatch-burnout, and prescribe a stage-appropriate recovery — rest design, not productivity tweaks. |
+| `agency_decision_post_mortem.md` | Examine a regretted decision, separate process quality from outcome quality, and extract a transferable update. |
+| `agency_ai_session_weekly_reflection.md` | A 30-minute weekly reflection that detects patterns across the week's AI-augmented sessions and turns them into rules or captures. |
 
 ## How the prompts relate
 

@@ -1,6 +1,6 @@
 # Paper Reproductions — Landmark ML Papers
 
-A series of scoped, rigor-first guides for reproducing landmark ML papers as a way to *deeply* learn them. Part of the `domain-AI-ML/learning-ai-ml/` learner track (Wave 5). Each guide instantiates the general method in `../mllearn_reproduce_a_paper_plan.md` for one specific paper.
+A series of scoped, rigor-first guides for reproducing landmark ML papers as a way to *deeply* learn them. Part of the `domain-AI-ML/learning-ai-ml/` learner track (Wave 5). Each guide instantiates the general method in `../mllearn_reproduce_paper_plan.md` for one specific paper.
 
 ## Load-bearing convention: never assert the paper's specifics from memory
 
@@ -17,7 +17,7 @@ If a guide ever tempts you to "just use the known value," stop — extract it fr
 ## Recommended reading order
 
 1. `../mllearn_paper_reading_guide.md` — read the target paper critically first; surface its ambiguities.
-2. `../mllearn_reproduce_a_paper_plan.md` — the general reproduction method (scope, success criterion, divergence protocol).
+2. `../mllearn_reproduce_paper_plan.md` — the general reproduction method (scope, success criterion, divergence protocol).
 3. The specific guide below for your paper.
 
 ## The series

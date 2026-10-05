@@ -22,3 +22,6 @@ Prompts for theological synthesis and biblical research: topical/systematic synt
 | `biblical_position_stress_test.md` | Charitably stress-test a position you hold (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_exegetical_fallacy_detector.md` | Scan an argument for word-study/grammatical/logical/historical/systemic fallacies (**STRONG-GUARD**) | A, P | advanced |
 | `biblical_commentary_evaluation.md` | Evaluate/compare commentaries by type & tradition without inventing titles (**STRONG-GUARD**) | A, P, G | intermediate |
+| `biblical_theology_creed_confession_analysis.md` | Map a creed or confession's claims to supporting and challenging biblical material across traditions (**STRONG-GUARD**) | A, P | advanced |
+| `biblical_theology_worship_practice_biblical_basis.md` | Biblical basis claimed for a specific worship practice, across traditions (**STRONG-GUARD**) | A, P, G | intermediate |
+| `biblical_theology_church_government_polity.md` | NT material on church government and how each polity system claims it (**STRONG-GUARD**) | A, P | advanced |

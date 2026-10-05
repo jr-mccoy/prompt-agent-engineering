@@ -19,6 +19,9 @@ Personal study and formation tools for the **self-directed individual learner (S
 | `biblical_learner_comprehension_self_check.md` | Feynman-style "explain it back" self-check against the text | S | beginner |
 | `biblical_learner_personal_application_worksheet.md` | Honest application: text → original point → principle → today (anti-eisegesis) | S | beginner |
 | `biblical_learner_reflection_journal_companion.md` | Guided reflective journaling prompts (engagement, not fabricated content) | S | beginner |
+| `biblical_learner_bible_reading_habit_builder.md` | Sustainable daily reading habit: realistic pacing, a method that sticks, accountability, gap recovery | S | beginner |
+| `biblical_learner_book_of_the_bible_deep_dive.md` | Extended multi-week deep study of one book: questions log, cumulative observation, interpretation passes, capstone synthesis | S | intermediate |
+| `biblical_learner_compare_traditions_on_practice.md` | How traditions approach a specific practice (baptism, communion, governance, Sabbath, etc.), each in its own terms (**STRONG-GUARD**) | S | intermediate |
 
 ## Which prompt for which question
 

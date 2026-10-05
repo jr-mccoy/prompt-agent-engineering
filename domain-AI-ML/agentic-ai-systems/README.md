@@ -69,10 +69,15 @@ Agent-specific security beyond sandbox isolation.
 | [`aiagent_runtime_guardrails_policy.md`](aiagent_runtime_guardrails_policy.md) | Build the **enforcement layer** — input/output/action guardrails, policy-as-code, fail-closed gating. |
 | [`aiagent_hard_gates_designer.md`](aiagent_hard_gates_designer.md) | Compose the security/eval/governance checks into enforced **Gate A/B/C + a kill switch**, sized to blast radius and tied to code/config locations (code-not-trust). |
 | [`aiagent_agentic_threat_model.md`](aiagent_agentic_threat_model.md) | Threat-model instruction handling, tool/resource misuse, identity/privilege abuse, memory/context integrity, and supply-chain risks for a specific agentic system. |
+| [`aiagent_trust_boundary_design.md`](aiagent_trust_boundary_design.md) | Treat the trust and compliance boundary as the first design constraint — classify data, map allowed flows, decide what executes in-perimeter, and apply a per-capability ship/no-ship gate. |
+| [`aiagent_least_agency_scoping.md`](aiagent_least_agency_scoping.md) | Extend least privilege from what an agent can access to what each tool can do, how often, and where — per-tool agency table, escalation triggers, deny-by-default. |
 | [`aiagent_memory_poisoning_defense.md`](aiagent_memory_poisoning_defense.md) | Defend persisted memory and retrieved context against integrity drift, shared-context contamination, rollback failure, and cross-session corruption. |
 | [`aiagent_project_memory_security_decay_audit.md`](aiagent_project_memory_security_decay_audit.md) | Audit project continuity memory for stale, disputed, unsafe, private, or overgrown records before future agents rely on it. |
 | [`aiagent_prompt_injection_untrusted_content_defense.md`](aiagent_prompt_injection_untrusted_content_defense.md) | Defend against hostile instructions embedded in read content — data/instruction separation and confused-deputy controls. |
 | [`aiagent_privacy_data_governance.md`](aiagent_privacy_data_governance.md) | Keep sensitive data safe across **prompts, logs, traces, state** — minimization, redaction, audit, retention. |
+| [`aiagent_zero_trust_maturity_assessment.md`](aiagent_zero_trust_maturity_assessment.md) | Assess a deployment's security maturity against a three-tier Zero Trust model across eight control domains and name the single highest-leverage next move. |
+| [`aiagent_supply_chain_aibom.md`](aiagent_supply_chain_aibom.md) | Audit the agent system's supply chain — software dependencies plus models, datasets, fine-tuning — via an AI Bill of Materials, dependency-health scoring, and sequenced remediation. |
+| [`aiagent_secops_autonomous_defense.md`](aiagent_secops_autonomous_defense.md) | Design security operations fast enough for AI-accelerated threats — model-first alert triage, adaptive SOAR response, automate-vs-keep-human, Zero Trust for the defensive agents themselves. |
 
 ### Stage D — Improve it (quality & evolution)
 Operating and improving a live system.

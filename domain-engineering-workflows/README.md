@@ -21,10 +21,9 @@ Engineering process and workflow prompts:
 ```
 domain-engineering-workflows/
 ├── workflows/                # Sprint planning, debugging, postmortems
-├── tasks/                    # Task sorting and prioritization
-├── improvement/              # Refactoring and improvement guidance
 ├── ai-patterns/              # AI-assisted development patterns
 ├── ai-native-rollouts/       # Team/org AI adoption design
+├── done-definition/          # Done gates, stop policies, convergent agentic loops
 └── README.md
 ```
 
@@ -34,12 +33,11 @@ domain-engineering-workflows/
 
 | Subdirectory | Count | Description |
 |--------------|-------|-------------|
-| `workflows/` | ~44 | Sprint planning, debugging, reviews, specification & delegation |
-| `tasks/` | ~6 | Task sorting and prioritization |
-| `improvement/` | ~3 | Refactoring guidance |
-| `ai-patterns/` | ~25 | AI-assisted development patterns |
-| `ai-native-rollouts/` | 6 | Ambient code review, tiered rollout, ship-by-delegation, delegation brief, project memory, bottleneck migration |
-| **Total** | **~84** | |
+| `workflows/` | ~18 | Sprint planning, debugging, reviews, specification & delegation |
+| `ai-patterns/` | ~23 | AI-assisted development patterns |
+| `ai-native-rollouts/` | 7 | Ambient code review, tiered rollout, ship-by-delegation, delegation brief, project memory, bottleneck migration |
+| `done-definition/` | 6 | Done-definition pipeline: task-to-gate translation, stop policy, convergent loops, false-done hardening, domain gate baselines, troubleshooting |
+| **Total** | **~54** | |
 
 ---
 
@@ -63,7 +61,7 @@ domain-engineering-workflows/
 - Refactoring and maintainability modernization
 
 Key improvement prompt:
-- `improvement/improvement_repo_audit_master_prompt.md` - Master prompt for full-repo quality/structure audits with phased execution planning
+- `domain-software-engineering/improvement/improvement_repo_audit_master_prompt.md` - Master prompt for full-repo quality/structure audits with phased execution planning
 
 ---
 

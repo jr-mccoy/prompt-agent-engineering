@@ -142,7 +142,7 @@ domain-image-generation/
 | `nano-banana/` | 5 | Production prompts for Google's Nano Banana family (storyboard → Veo, search-grounded infographic, multi-ref character scene, JSON schema builder, product multi-angle composite) |
 | `branding/` | ~7 | Logo, illustration, app asset prompts (model refs modernized to gpt-image-2 / Nano Banana) |
 | `coloring-book/` | 9 | Adult intricate, kids simple, KDP interior, mandala, themed set, educational, cover, holiday, photo-to-lineart |
-| `healthcare/` | 14 | Clinician reference cards (labs, ACLS, dosing, antibiogram), patient education (condition, discharge, meds, anatomy), medical diagrams (anatomy/physiology, procedure steps, pathophysiology, algorithms) — anti-fabrication first |
+| `healthcare/` | 29 | Clinician reference cards (labs, ACLS, dosing, antibiogram), patient education (condition, discharge, meds, anatomy), medical diagrams (anatomy/physiology, procedure steps, pathophysiology, algorithms) — anti-fabrication first |
 | `ecommerce-product/` | 5 | Product photography: white-bg catalog, lifestyle, flat lay, macro/texture, variant grid |
 | `social-media/` | 6 | Social graphics: quote, carousel set, announcement, story/reel cover, profile banner, video thumbnail/cover brief |
 | `publishing-covers/` | 5 | Fiction, nonfiction, KDP ebook, album, podcast covers |
@@ -153,7 +153,7 @@ domain-image-generation/
 | `scientific-technical/` | 3 | Scientific illustration, exploded diagram, data-viz image (accuracy-gated) |
 | `worksheet-generators/` | 45 | Core academics + early-childhood, arts, music, life-skills, foreign-language, specialized-formats, and assessment worksheet generators |
 | `visualizations/` | 14 | Cross-role no-UI visualization prompt generators for analyst, design, education, engineering, executive, HR, marketing, ops, PM, research, strategy, and portfolio use cases |
-| **Total** | **~147** | |
+| **Total** | **~152** | |
 
 ---
 

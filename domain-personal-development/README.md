@@ -222,18 +222,29 @@ Personal development prompts operate in environments where:
 
 Prompts are organized into subdirectories by function:
 
-**Solo Developer (`prompts/solo-dev/`)** - 5 prompts for independent developers
+**Solo Developer (`prompts/solo-dev/`)** - 10 prompts for independent developers
 - `solo_dev_automation_audit.md` - Automation opportunity identification
 - `solo_dev_burnout_prevention.md` - Burnout risk assessment and prevention
 - `solo_dev_context_switching_reducer.md` - Context switch cost reduction
 - `solo_dev_network_building.md` - Professional network building
 - `solo_dev_skill_gap_assessment.md` - Technical skill gap analysis
+- `solo_dev_accountability_system.md` - External accountability matched to what actually moves you
+- `solo_dev_deciding_alone.md` - Stress-test a consequential decision with a synthetic adversarial board
+- `solo_dev_isolation_motivation.md` - Counter the motivation drain of working alone
+- `solo_dev_pricing_value_confidence.md` - Set a defensible price anchored to value, not self-doubt
+- `solo_dev_sustainable_pace_design.md` - Sustainable weekly operating pace for a one-person business
 
-**Goals & Planning (`prompts/goals/`)** - 4 prompts for goal setting and learning
+**Goals & Planning (`prompts/goals/`)** - 10 prompts for goal setting and learning
 - `goals_skill_breakdown_blueprint.md` - Skill acquisition planning
 - `goals_goal_system_designer.md` - Goal framework design
 - `goals_goal_setting_and_reflection_loop.md` - Goal reflection cycles
 - `goals_decompose_learning_task.md` - Learning task breakdown
+- `goals_annual_planning_and_theme.md` - Plan a year or quarter from evidence, not resolutions
+- `goals_anti_goals_avoidance_list.md` - Anti-goals and failure states that protect the real goals
+- `goals_goal_conflict_resolver.md` - Resolve two goals competing for the same finite resource
+- `goals_progress_stall_diagnostic.md` - Diagnose why a goal isn't moving and prescribe one unblock
+- `goals_scope_right_sizer.md` - Right-size a goal that's too big to start or too small to pull
+- `goals_values_to_goals_derivation.md` - Derive one or two goals from your operating values
 
 **Productivity & Focus (in `domain-productivity/`)** - 5 related prompts for work effectiveness; they moved out of this domain in the 2026-08 reorg
 - `domain-productivity/deep-work/deepwork_personal_energy_audit.md` - Personal energy management
@@ -242,7 +253,7 @@ Prompts are organized into subdirectories by function:
 - `domain-productivity/automation/automation_gold_mine.md` - Workflow automation opportunities
 - `domain-productivity/bottlenecks/bottleneck_open_loop_audit.md` - Mental clarity and open loop closure
 
-**Thinking & Analysis (`prompts/thinking/`)** - 9 prompts for cognitive tools
+**Thinking & Analysis (`prompts/thinking/`)** - 12 prompts for cognitive tools
 - `thinking_mindset_shift_reframe.md` - Limiting belief reframing
 - `thinking_blind_spot_mirror_see_what_im_missing.md` - Blind spot identification
 - `thinking_fresh_perspective_generator.md` - Fresh perspective generation
@@ -252,6 +263,9 @@ Prompts are organized into subdirectories by function:
 - `thinking_tight_constraint_topic_analyzer.md` - Tight constraint analysis
 - `thinking_memory_palace_generator.md` - Memory palace construction
 - `thinking_explain_like_im_nine_converter.md` - Simplify a complex topic to plain language
+- `thinking_assumption_surfacing.md` - Surface the load-bearing assumptions under a plan, then test the weakest
+- `thinking_decision_journal_designer.md` - Decision journal that calibrates your own judgment
+- `thinking_mental_models_application.md` - Apply two or three fitting mental models to a problem
 - See [prompts/thinking/README.md](./prompts/thinking/README.md) for sub-groupings and composition
 
 **Stakeholder Navigation (`prompts/stakeholder/`)** - 9 prompts for workplace dynamics
@@ -261,7 +275,7 @@ Prompts are organized into subdirectories by function:
 - `stakeholder_reorg_navigation.md` - After a reorg: position read, what to protect, new-manager conversations, dated stay-or-go tripwires
 - See [prompts/stakeholder/README.md](./prompts/stakeholder/README.md) for the full set (managing up, manager trust, visibility, sponsors, cross-team alliances)
 
-**Agency, Ownership & Execution (`prompts/agency/`)** - 13 prompts for self-directed work
+**Agency, Ownership & Execution (`prompts/agency/`)** - 18 prompts for self-directed work
 - `agency_project_ownership_converter.md` - Convert a vague goal into an owned project with a first deliverable
 - `agency_next_action_spec.md` - Force a single physical next action from a mental pile
 - `agency_planning_masquerade_detector.md` - Audit activity for planning that stands in for execution
@@ -275,17 +289,26 @@ Prompts are organized into subdirectories by function:
 - `agency_habit_loop_repair.md` - Repair a broken habit at a scale sized to the break
 - `agency_foundation_session.md` - Run a 2–4 hour foundation session with durable context capture
 - `agency_rapid_start_mode.md` - 60-second protocol from "at the desk" to "producing an artifact"
+- `agency_accountability_partner_design.md` - Accountability structure matched to what the user responds to
+- `agency_ai_session_weekly_reflection.md` - 30-minute weekly reflection across AI-augmented work sessions
+- `agency_burnout_recovery.md` - Diagnose burnout stage and prescribe stage-appropriate recovery
+- `agency_decision_post_mortem.md` - Post-decision regret analysis without hindsight bias
+- `agency_personal_project_scope_creep.md` - Cut scope creep on a personal project back to a shippable core
 - See [prompts/agency/README.md](./prompts/agency/README.md) for composition patterns
 
 **Career Assessments (`prompts/career/`)** - 17 AI career path assessments
 - Interactive qualification assessments for AI career paths including ML Engineering, Prompt Engineering, Ethics, Product Management, Data Annotation, Computer Vision, NLP, Research, Deep Learning, Content Creation, Governance, Coaching, Strategy, Change Management, Compliance, Conversational AI/UX, and Product Adoption
 - See [prompts/career/README.md](./prompts/career/README.md) for full index
 
-**Career & Work Transformation (`career-transformation/`)** - 4 prompts for the hard work of assessing and repositioning a role under structural pressure
+**Career & Work Transformation (`career-transformation/`)** - 8 prompts for the hard work of assessing and repositioning a role under structural pressure
 - `career_coordination_tax_audit.md` - Classify a real calendar week into coordination-tax categories
 - `career_role_structural_vulnerability.md` - Grade a role on four independent axes (economic function, coordination-tax capture, scarce-input control, substitution slope)
 - `career_residual_skills_inventory.md` - Evidence-keyed inventory of judgment, taste, and context that survive automation
 - `career_90_day_repositioning_plan.md` - Weekly-checkpointed plan with stop conditions toward a surviving / adjacent role
+- `career_ai_era_skill_moat.md` - Split the skillset into a durable moat versus automatable surface area
+- `career_internal_vs_external_move.md` - Compare an internal move against an external move and issue one recommendation
+- `career_positioning_statement.md` - Sharp positioning statement derived from evidence of actual past wins
+- `career_reskilling_roadmap.md` - Sequenced, evidence-checked reskilling roadmap toward a named target position
 - See [career-transformation/README.md](./career-transformation/README.md) for the recommended sequence
 
 **Job Search (`job-search/`)** - 8 prompts for running an external search from the candidate side, evidence-first (nothing invented on a résumé or profile)
@@ -308,26 +331,40 @@ Prompts are organized into subdirectories by function:
 - `identity_life_audit_reckoning.md` - Multi-dimensional structured audit at a major life inflection
 - `identity_taste_development.md` - 90-day deliberate taste-training loop in a specific domain
 - `identity_meaning_sources_and_legacy_map.md` - Meaning on coherence / purpose / significance, its sources and concentration risk, a concrete legacy (midlife, post-achievement)
+- `identity_authenticity_audit.md` - Map performed role versus acting from self, and close one gap
+- `identity_engineering_manager_stance.md` - Reorient from writing code to managing AI-generated output
+- `identity_mortality_reflection_memento_mori.md` - Scope a realistic remaining horizon and stop deferring one thing
+- `identity_personal_narrative_reframe.md` - Audit the limiting self-story and reframe it on the same facts
+- `identity_strengths_inventory_revealed.md` - Surface signature strengths from evidence, not a strengths quiz
 - New: `agency/agency_burnout_recovery.md` - Diagnose burnout stage and prescribe stage-appropriate recovery
 - New: `agency/agency_decision_post_mortem.md` - Post-decision regret analysis without hindsight bias
 - See [prompts/identity/README.md](./prompts/identity/README.md) for composition patterns
 
-**Habits & Behavior Change (`prompts/habits/`)** - 6 prompts for building and breaking habits
+**Habits & Behavior Change (`prompts/habits/`)** - 10 prompts for building and breaking habits
 - `habits_habit_design_blueprint.md` - Design a new habit (cue → routine → reward + implementation intention)
 - `habits_break_bad_habit_protocol.md` - Remove an unwanted habit via friction + reward-matched substitution
 - `habits_habit_stacking_designer.md` - Anchor a new habit onto a reliable existing routine
 - `habits_streak_recovery_plan.md` - Recover from a missed streak without the all-or-nothing spiral
 - `habits_keystone_habit_identifier.md` - Find the single habit whose change cascades into others
 - `habits_environment_design_for_habits.md` - Engineer cue visibility and friction for one habit loop
+- `habits_identity_based_habit_designer.md` - Design a habit from the identity it votes for, not the outcome it chases
+- `habits_implementation_intention_builder.md` - Convert a vague intention into precise if-then implementation intentions
+- `habits_temptation_bundling_designer.md` - Pair a want-to-do with a should-do so the habit pulls itself
+- `habits_tracking_system_designer.md` - Habit-tracking system matched to your actual logging tolerance
 - See [prompts/habits/README.md](./prompts/habits/README.md)
 
-**Resilience & Motivation (`prompts/resilience/`)** - 6 prompts, non-clinical self-direction
+**Resilience & Motivation (`prompts/resilience/`)** - 11 prompts, non-clinical self-direction
 - `resilience_setback_recovery_framework.md` - Structured four-stage recovery after a concrete setback
 - `resilience_motivation_diagnosis.md` - Diagnose which driver is missing (clarity / energy / reward / identity)
 - `resilience_self_discipline_system.md` - Build a willpower-independent consistency system
 - `resilience_failure_reframe.md` - Extract transferable lessons without toxic positivity or self-condemnation
 - `resilience_anti_fragility_audit.md` - Classify domains fragile/robust/antifragile; prescribe barbell moves
 - `resilience_momentum_rebuild.md` - Anti-heroic re-entry ladder after a long stall
+- `resilience_comeback_after_burnout_dip.md` - Re-enter life after a low period that is already lifting
+- `resilience_confidence_rebuild_after_failure.md` - Rebuild grounded confidence after a visible failure through proof-reps
+- `resilience_criticism_processing.md` - Process harsh criticism by separating the sting from the signal
+- `resilience_rejection_recovery.md` - Recover from a specific rejection without reading it as a verdict
+- `resilience_uncertainty_tolerance_builder.md` - Build tolerance for one unresolved high-uncertainty situation
 - See [prompts/resilience/README.md](./prompts/resilience/README.md)
 
 **Relationships & Social (`prompts/relationships/`)** - 13 prompts, personal (non-work, non-clinical)
@@ -339,7 +376,20 @@ Prompts are organized into subdirectories by function:
 - `relationships_relationship_audit.md` - Lightweight single-relationship health-check
 - `relationships_dating_after_divorce.md` - Readiness, what you want now, and pacing when dating again after divorce or a long relationship
 - `relationships_early_dating_safety_plan.md` - Meeting safely, spotting romance scams and coercion early, and a values check
+- `relationships_apology_that_lands.md` - Construct a real apology that names the harm and attaches a repair
+- `relationships_deepening_friendship.md` - Deepen one pleasant-but-shallow friendship without forcing it
+- `relationships_difficult_family_member_strategy.md` - Durable strategy for one difficult family relationship
+- `relationships_loneliness_diagnostic_plan.md` - Diagnose the type of loneliness and build a targeted connection plan
+- `relationships_making_friends_as_adult.md` - Concrete plan to make new friends as an adult
 - See [prompts/relationships/README.md](./prompts/relationships/README.md)
+
+**Life Transitions (`prompts/life-transitions/`)** - 10 prompts for navigating a change during or after it happens (non-clinical)
+- New role, relocation, new parenthood, empty nest, retirement purpose, job-loss recovery, post-breakup rebuild, returning from leave, identity after a major change, transition map and timeline
+- See [prompts/life-transitions/README.md](./prompts/life-transitions/README.md)
+
+**Emotional Fitness (`prompts/emotional-fitness/`)** - 11 prompts for everyday, non-clinical emotional skills
+- Emotion labeling, disappointment processing, jealousy channeling, worry-vs-action sorting, reactivity trigger audit, holding two feelings, self-compassion reset, emotional reset ritual, shame-vs-guilt sorting, charged-event debrief, money beliefs and avoidance
+- See [prompts/emotional-fitness/README.md](./prompts/emotional-fitness/README.md)
 
 **Major Personal Decisions (`major-decisions/`)** - 16 prompts for high-stakes personal decisions
 - Job-offer evaluation, relocation, quit-or-persist, education-program choice, family-planning tradeoffs, marriage/commitment, aging-parent care, care-facility comparison, estate-wishes attorney prep, sabbatical, business vs. employment, financial-decision framework, health-decision research, major-purchase research, cofounder/partner selection, difficult-relationship audit

@@ -149,7 +149,7 @@ Every prompt includes:
 
 `genai-llm-engineering/` covers the *engineering workflow* — RAG system design, fine-tuning workflow, LLM eval harness, guardrails, observability — and cross-links the ops, security, and prompt files above rather than re-implementing them.
 
-> **Note.** `domain-software-engineering/analysis/ml_model_evaluation.md` predates this domain and is superseded by the 12 `mleval_*` prompts in `model-evaluation-validation/`. It is retained where it sits but should not be treated as the model-evaluation entry point.
+> **Note.** `domain-software-engineering/analysis/ml_model_evaluation.md` predates this domain and is superseded by the 16 `mleval_*` prompts in `model-evaluation-validation/`. It is retained where it sits but should not be treated as the model-evaluation entry point.
 
 ## Routing (for Claude)
 
@@ -160,7 +160,7 @@ Organized by **lifecycle stage**, not by the wave that shipped a prompt. Match t
 | User says | Use |
 |---|---|
 | **"I don't know where to start / the model isn't working"** | `problem-framing-scoping/mlframe_domain_triage_router.md` — **the front door**; classifies the situation and emits an ordered prompt sequence |
-| "Is this even an ML problem?" | `problem-framing-scoping/mlframe_is_this_an_ml_problem.md` |
+| "Is this even an ML problem?" | `problem-framing-scoping/mlframe_is_this_ml_problem.md` |
 | "Turn my business problem into an ML task" | `problem-framing-scoping/mlframe_problem_to_ml_task_translator.md` |
 | "Scope the use case end to end" | `problem-framing-scoping/mlframe_ml_use_case_canvas.md` |
 | "What should success look like?" | `problem-framing-scoping/mlframe_success_metric_selection.md` |
