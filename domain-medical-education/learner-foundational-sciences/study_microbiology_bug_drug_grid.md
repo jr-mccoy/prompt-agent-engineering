@@ -24,7 +24,7 @@ tags:
   - infectious-disease
   - empiric-therapy
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_microbiology_virology_table_builder.md
   - domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_flashcard_set.md
@@ -102,6 +102,16 @@ STEWARDSHIP NOTES
 | `pregnancy_overlay` | If true, mark each cell with pregnancy-safe alternative |
 | `penicillin_allergy_overlay` | If true, add allergy-adapted alternative per cell |
 | `mrsa_prevalence` | `low | moderate | high` — shifts empiric vanc/linezolid inclusion |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A cell's PIT line and a divergence callout giving different thresholds or agents for the same bug (e.g., the MIC at which amoxicillin fails) | Cross-read every callout against its source cell; check any breakpoint against the current CLSI table `[VERIFY: CLSI M100 edition]` |
+| Coverage statements ("X doesn't cover S. aureus") that contradict the spectrum written in the drug-class footnote | Check each covers / doesn't-cover claim against the footnote's spectrum line; resolve any disagreement before the grid is used |
+| Footnote claims that hold for one agent but are written for the whole class (renal vs. hepatic dose adjustment across all beta-lactams) | Write dose-adjustment cues per agent, not per class |
+| Doses, durations, and resistance percentages written from memory under the guideline named in the Reference frame line | Trace each EMP dose and DUR anchor to a section of the cited guideline `[VERIFY: current IDSA/ATS edition]`; percentages carry source and year or become qualitative ("rising," "region-dependent") |
+| Writing `—` to dodge a cell where the organism does cause the syndrome but the regimen is uncertain | Reserve `—` for "does not cause this syndrome"; an uncertain regimen is written with a `[VERIFY: ID reference]` tag |
 
 ## Verification Checklist
 

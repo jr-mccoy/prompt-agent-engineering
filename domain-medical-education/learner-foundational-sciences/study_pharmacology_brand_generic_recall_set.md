@@ -23,7 +23,7 @@ tags:
   - drug-class
   - flashcards
   - recall
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_flashcard_set.md
 ---
@@ -102,6 +102,16 @@ B2  ...
 | `include_otc` | Adds OTC members (loratadine = Claritin, etc.) |
 | `add_pronunciation` | Adds phonetic spelling column (useful for nursing students) |
 | `add_class_marker_suffix` | Adds reminder line listing the stem identifier (e.g., "-statin," "-pril," "-sartan," "-olol") |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Numbering ranks 6–N exactly when frequency data beyond the top few were never checked | Name the ranking source and data year in the header `[VERIFY: prescription-volume source, year]`; unverified members go under "secondary frequency," unnumbered |
+| Listing discontinued brands or combination products as currently marketed | Check each brand's marketing status (Drugs@FDA or the stated market's regulator); keep a withdrawn name only with a "discontinued" note, since it still turns up on old medication lists |
+| Generic-availability years written from memory to fill the Notes column | Include a year only if it was checked; otherwise leave it out rather than estimate |
+| A deck whose card count or pairings do not match the table | Recount: cards = 2 × table rows (+ any high-frequency alternates), and every brand in section B maps to the same generic as in the table |
+| Notes that drift into mechanism, interaction, or monitoring claims the Objective excludes | Keep Notes to name-recall aids; clinical content belongs in the mechanism flashcard set, where it is checked |
 
 ## Verification Checklist
 

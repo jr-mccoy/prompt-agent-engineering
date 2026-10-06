@@ -22,7 +22,7 @@ tags:
   - drill
   - clinical-correlate
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_anatomy_radiologic_correlation_drill.md
   - domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md
@@ -111,6 +111,16 @@ Integrative question: [a single question that requires combining ≥2 structures
 | `scenario` | All correlates filter through a specific clinical lens |
 | `language_of_correlate` | `imaging` / `surgical` / `bedside-exam` / `trauma` — the genre of correlate asked |
 | `vary_question_phrasing` | If `true`, no two Q1s use the same opening verb across the drill |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Labeling the structure list with an ordering principle it doesn't follow (announced "lateral→medial," with the most lateral structure listed last) | Before locking the list, check each position against the stated principle and against a standard mnemonic or atlas plate for that region |
+| Filling the Q2 "neurovascular" slot with something else (an insertion site, an action) so the cycle looks complete | Check each question asks what its slot label says; a Q2 with no artery, vein, lymphatic, or nerve in it doesn't count as asked |
+| Grading `correct` when the learner gets the structure right but the relation backwards (medial for lateral, superficial for deep) | Grade spatial relations on direction as well as name — a reversed relation is `incorrect`, because it's the error that matters at the bedside |
+| Mixing roof, floor, and contents of a space in one list, so a boundary structure is drilled as if it were contained | Tag each listed structure as boundary, roof/floor, or content, and pitch Q1 to match that role |
+| A summary score that doesn't add up to the questions actually asked | Check that correct + partial + incorrect equals 3 × the number of structures drilled, and that `depth = comprehensive` lists more structures than a survey (5–8) would |
 
 ## Verification Checklist
 

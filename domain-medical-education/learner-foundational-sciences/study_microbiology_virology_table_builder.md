@@ -22,7 +22,7 @@ tags:
   - vaccine
   - pathogenesis
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drug_grid.md
   - domain-medical-education/learner-foundational-sciences/study_immunology_cascade_explainer.md
@@ -95,6 +95,16 @@ Learner level: [...]   Reference frame: ICTV + CDC/WHO vaccine schedule
 | `include_vaccine_schedule_age` | Adds CDC age recommendation in vaccine column |
 | `add_microscopy_findings` | Adds column for owl's eye (CMV), Negri bodies (rabies), Cowdry A (HSV/VZV), etc. |
 | `pregnancy_overlay` | Adds column flagging teratogenic viruses (rubella, CMV, parvo B19, ZIKV) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Receptor column filled with the viral ligand, or with a receptor on the wrong cell type (EBV gp42 binds HLA class II on B cells; it is not the epithelial entry route) | Keep host receptor and viral ligand distinct; pair each receptor with the cell it sits on and mark uncertain entries `[VERIFY: virology text]` |
+| Pathogenesis cells reading "Lytic + latent" when the Method allows one mechanism per virus | Count the mechanisms in each Pathogenesis cell; keep the defining one and move the other to Syndromes if it matters clinically |
+| Non-antiviral entries in the Antivirals column (immunoglobulin, rituximab, ART for KS) passing because a drug name is present | Admit only agents that act on the virus itself; immunoglobulin or immunotherapy goes in a footnote |
+| Vaccine products and schedule ages stated from memory after a schedule change or product withdrawal | Check the Vaccine column against the current CDC schedule and put its year in the header `[VERIFY: CDC schedule, year]` |
+| Baltimore group inferred from "DNA virus" alone (HBV is Group VII, not I) | Derive the group from replication strategy and cross-check it against the Genome cell on every row |
 
 ## Verification Checklist
 

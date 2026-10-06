@@ -24,7 +24,7 @@ tags:
   - socratic
   - teaching
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_physiology_pathway_walkthrough.md
   - domain-medical-education/learner-foundational-sciences/study_mnemonics_builder.md
@@ -108,6 +108,16 @@ If you want to go one level deeper / shallower, ask: "[suggested next prompt]."
 | `format` | Narrative (default) vs. Socratic (turn the explanation into questions the learner answers) |
 | `include_quantitative_anchor` | If true, add at least one numeric threshold or formula |
 | `include_drug_example` | If true, include a drug whose mechanism illustrates the concept |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Inventing a "PRECISE ERROR" because the slot exists, when the `prior_attempt` is substantively right | If the attempt holds up, say so and name only what is missing; the line may read "no error — missing piece: [X]" |
+| Grading the verification answer "correct" after reading the conclusion, not the arithmetic | Recompute every number in the learner's answer from the question's own values (e.g., Na − (Cl + HCO3)) and confirm the interpretation follows from that number before grading |
+| A verification question solvable by copying the worked example (same scenario, same values, same answer category) | Change the context and the numbers; if the worked example's answer would still score, the question tests recall, not application |
+| An analogy whose parts map onto the mechanism in the wrong direction or swap which side is "measured" | Map each element of the analogy to its biological counterpart; if any element maps wrong, drop it and write "no analogy used" |
+| Reference ranges, correction factors, or thresholds presented as universal constants | Give the value with its source type and the instruction to use the local lab's range; mark any figure not checked against a source `[VERIFY: source]` |
 
 ## Verification Checklist
 

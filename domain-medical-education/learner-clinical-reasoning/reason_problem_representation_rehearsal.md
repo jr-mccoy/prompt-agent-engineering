@@ -23,7 +23,7 @@ tags:
   - one-liner
   - semantic-qualifiers
   - active-recall
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_semantic_qualifier_drill.md
   - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
@@ -115,6 +115,16 @@ Next-session focus: [the specific component to drill]
 | `require_schema_lock` | If `true` (default), wrong schema = case failed |
 | `enforce_word_count` | Hard cap on one-liner length (default 30 words) |
 | `forbid_qualifier_list` | Custom list of vague phrasings to reject ("kind of," "started feeling," "a little") |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Reporting a word count by estimate, so a 10-word attempt is logged as 18 or a 31-word one slips under the cap | Count the words of the exact sentence before printing the number, using one stated rule for hyphenated terms (e.g., "24-year-old" = 1), and apply that rule to every attempt |
+| Printing a "Passing one-liner" that the tutor quietly polished, then crediting the learner for it | The passing one-liner is the learner's final attempt verbatim; any tutor rewording is labeled "modeled" and the case is scored as modeled, not passed |
+| Marking qualifiers `Y` because two adjectives appear, even when they are raw patient words or a single axis said twice | Name the axis each qualifier occupies (temporal, distribution, character…); credit only qualifiers on two different axes that come from the vignette |
+| Passing the anchor when it omits a comorbidity that reshapes the schema (home-O2 COPD, anticoagulation, immunosuppression) | Before passing the anchor, list the vignette's PMH items that would change pretest probability for the schema and confirm the anchor carries the strongest one |
+| A syndrome label that is the diagnosis renamed or a single exam finding, accepted because it is not the disease name | Check the label against the named schema: it must admit at least three competing diagnoses that the case has not yet excluded |
 
 ## Verification Checklist
 

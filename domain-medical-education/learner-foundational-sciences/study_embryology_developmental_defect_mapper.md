@@ -20,7 +20,7 @@ tags:
   - congenital-anomalies
   - teratology
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_genetics_inheritance_pedigree_drill.md
   - domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md
@@ -95,6 +95,16 @@ Weeks are [post-fertilization | LMP]. Convert to LMP by adding 2 weeks if needed
 | `include_imaging_finding` | Adds prenatal US / postnatal clue |
 | `include_syndromic_associations` | Adds VACTERL, CHARGE, DiGeorge, etc. |
 | `add_inheritance_pattern_overlap` | Adds column for genetic syndromes underlying step failures (e.g., trisomy 18 with neural tube defects) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Week column post-fertilization while imaging/screen timings ("visible on US ≥ 12 weeks") are copied in obstetric (LMP) weeks | Tag every week-number in every column with its basis; convert screen and imaging timings to the declared basis or label them "(LMP)" |
+| Filling the Critical-signal column with a familiar molecule (SHH, BMP, FGF) on every row so no cell looks empty | Name a molecule only where its role in that step is established; otherwise name the tissue interaction and add `[VERIFY: embryology text]` |
+| Filing a malformation under a step whose failure does not produce it (spina bifida occulta is a vertebral-arch defect, not a neural-fold fusion failure) | Read each row as "Failure mode → Malformation" and check the cause produces the effect; if the defect arises in a neighboring tissue (sclerotome, mesoderm), say so or move it |
+| Attributing a raised MS-AFP / amniotic AChE to skin-covered lesions | Check open vs. closed for every lesion carrying an AFP entry; only defects that expose neural tissue or meninges to amniotic fluid raise it |
+| Padding past the coverage rule with neural-crest or syndromic entities that belong to another process map | Count the named malformations against the 5–8 canonical rule, and confirm each distractor pair names a step that appears as a table row |
 
 ## Verification Checklist
 

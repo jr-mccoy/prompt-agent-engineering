@@ -23,7 +23,7 @@ tags:
   - schema
   - active-recall
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_diagnostic_schema_designer.md
   - domain-medical-education/learner-clinical-reasoning/reason_compare_contrast_two_diagnoses.md
@@ -133,6 +133,16 @@ Restudy target: [the specific gap, named]
 | `include_dont_miss_neighbor` | Force one neighbor to be a can't-miss (e.g., SAH for any acute headache script) |
 | `frequency_tagging` | If `true` (default), every feature gets a frequency tag |
 | `feature_count_floor` | Minimum number of features required in slot 4 (default 5) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Accepting a "swing feature" that is actually shared with the neighbor (thunderclap onset in both SAH and RCVS) because it sounds decisive | For each discriminator, state which side it pushes toward and confirm it is present in one diagnosis and absent or rare in the neighbor; a shared feature is background, not a swing |
+| Frequency tags (`pathognomonic`, `classic`) assigned by how memorable a feature is rather than how often or how specifically it occurs | Reserve `pathognomonic` for features effectively absent in every listed neighbor, and tag any frequency claim you cannot attribute [VERIFY: source] rather than upgrading it |
+| Grading the Time course slot "correct" because the right words appear while the windows (rebleed peak, vasospasm days) are off | Check each numeric time window the learner gives against a named reference type (review article, specialty guideline) before marking the slot correct |
+| A FINAL SCRIPT that quietly gains or loses features compared with the graded slot-by-slot build | Diff the FINAL SCRIPT line by line against the graded slots and tutor corrections; any feature with no graded origin is removed or sent back as a new slot question |
+| A "most discriminating feature" defense that restates the feature or points to a test instead of explaining the separation | The one-sentence defense must name the neighbor it separates from and why that neighbor rarely shows it; embedded workup steps (e.g., LP after a negative CT) are tagged [VERIFY: current guideline edition] |
 
 ## Verification Checklist
 

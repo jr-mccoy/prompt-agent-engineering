@@ -23,7 +23,7 @@ tags:
   - sp-rehearsal
   - communication
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_focused_physical_exam_checklist.md
   - domain-medical-education/learner-osce-skills/osce_post_encounter_note_rehearsal.md
@@ -144,6 +144,16 @@ Single highest-yield improvement: [...]
 - **EMS:** SAMPLE + OPQRST, scene safety, witness/bystander history, time-critical recognition
 - **Allied health:** functional history relevant to the role (ADLs for OT, gait/falls for PT, swallow/communication for SLP, diet recall for RD)
 - **Dental:** chief complaint, dental history, medical conditions affecting dental care, medications including bisphosphonates and anticoagulants, allergies including latex and local anesthetic agents
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| ✗ "never asked" on an item that a leading or closed question elsewhere did cover ("you've never had this before, right?") | Search the whole transcript for each item before marking ✗; covered only through a leading question = `~`, and the leading-question count still records it |
+| An open:closed ratio that does not match the questions in the transcript | Classify every learner question, then check that open + closed equals the total question count |
+| SP answers that drift from the locked script (duration, radiation, or timing changing between turns) | Check each SP answer against the locked HPI script before scoring; a drifted answer voids credit for the related checklist item |
+| An SP narrative to one open question that lays out several pertinent positives at once, inflating red-flag credit | Cap open-question narratives at one or two lay details; a red flag the SP volunteered beyond that is not credited to the learner |
+| Counting a term as jargon after the learner explained it in lay words | Count only terms left unexplained, and list each with the turn where it occurred |
 
 ## Verification Checklist
 

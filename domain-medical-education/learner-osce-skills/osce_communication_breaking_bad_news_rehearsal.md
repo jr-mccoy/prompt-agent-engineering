@@ -25,7 +25,7 @@ tags:
   - breaking-bad-news
   - serious-illness
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_difficult_conversation_anger_grief.md
   - domain-medical-education/learner-osce-skills/osce_informed_consent_rehearsal.md
@@ -138,6 +138,16 @@ Single highest-yield improvement: [...]
 | `prognosis_question_pressure` | SP asks "how long" — tests prognostic communication |
 | `language_proficiency` | If limited, interpreter scaffolding gets scored |
 | `cultural_modifier` | Family-first disclosure norms, patient-not-told contexts |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| NURSE elements credited as "implied" ("'we' framing implied") with no quote | No quote, no credit: an element without a verbatim learner line is scored "not used" |
+| An evidence quote credited to a SPIKES step whose function it does not perform (a support-person check scored as Invitation) | Test each quote against the step's job: Invitation asks how much information the SP wants; Perception asks what they already know |
+| Coaching that responds to learner lines absent from the transcript | Every phrase the coaching paragraph attributes to the learner must be findable verbatim in the transcript |
+| Silence length reported in seconds in a text rehearsal | Record a pause only where a pause marker appears, and report duration as "not observable" otherwise |
+| Strategy marked ✓ when the learner says only "more tests" | Credit Strategy only for a named next step with a time frame (24–72 h) and a named follow-up |
 
 ## Verification Checklist
 

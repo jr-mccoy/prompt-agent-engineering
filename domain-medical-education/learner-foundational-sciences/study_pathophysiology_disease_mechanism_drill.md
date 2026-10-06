@@ -22,7 +22,7 @@ tags:
   - drill
   - reasoning
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_physiology_pathway_walkthrough.md
   - domain-medical-education/learner-foundational-sciences/study_biochem_pathway_clinical_correlation.md
@@ -117,6 +117,16 @@ Highest-yield restudy: [the specific molecule / step the learner missed]
 | `forbid_handwaves` | Custom rejection list of vague phrases |
 | `adversarial_count` | 1–3 adversarial probes |
 | `require_therapeutic_mapping` | If `true` (default), every major therapy must be mapped or chain is incomplete |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| CHAIN STATUS "Complete" when the link count is below the `depth` setting (subspecialty ≥ 10) | Count the numbered links the learner produced; "Complete" requires that count to meet `depth` and every traced finding to cite a link number |
+| Clinical-finding traces written by the tutor and presented as learner-built | Mark each trace learner-produced or tutor-supplied; tutor-supplied traces count as chain gaps for scoring |
+| Supportive or replacement therapies counted as "mapped" through a loose phrase ("downstream rescue") | A mapping cites a step number; therapies that replace a consumed product without interrupting a step are listed as supportive, not mapped |
+| Accepting a named mediator without checking the direction of its effect (activates vs. inhibits, consumes vs. lyses) | Grade the verb as well as the noun: molecule, cell of action, and direction must all be right for `correct` |
+| Regimen-level answers (induction combinations, chemotherapy backbones) graded against what the tutor remembers | Keep therapeutic mapping at the mechanism level; tag any named regimen `[VERIFY: current NCCN / ELN guideline]` |
 
 ## Verification Checklist
 

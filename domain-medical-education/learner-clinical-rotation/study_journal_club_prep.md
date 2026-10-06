@@ -22,7 +22,7 @@ tags:
   - critical-appraisal
   - research-methods
   - statistics
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_morning_report_case_prep.md
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
@@ -155,6 +155,16 @@ Restudy target: [named precisely]
 | `learner_level = MS3` | PICO is pre-extracted; learner focuses on statistical interpretation and clinical bottom line only |
 | `learner_level = resident-junior` | Graded on teaching efficiency — can the learner explain the key finding to a medical student in under 2 minutes? |
 | `surrogate_outcome_mode` | Article uses a surrogate endpoint (e.g., HbA1c, troponin reduction) — learner must flag it and explain why it matters |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Copying ARR, NNT, and NNH from the article (or the learner) without checking them against the event rates | Recompute from the raw rates: ARR = control event rate − experimental event rate, NNT = 1/ARR rounded up, NNH from the adverse-event rates the same way; if only an HR or OR is reported, say NNT cannot be derived without a baseline risk |
+| A corrected bottom line that adds exclusion criteria, subgroups, or populations the supplied text never mentions | Tie every applicability caveat to a line of `article_summary`; anything else is written "[not reported in supplied text]" |
+| Grading the bias audit as clean when the abstract simply doesn't report allocation concealment, blinding, or attrition | Mark those items "not assessable from abstract" — absence of reporting is not absence of bias, and it caps the internal-validity grade at `partial` |
+| Reading a composite-outcome result as if every component improved | Check the component breakdown before stating which events fell; if components aren't reported, the bottom line names the composite only |
+| Judging a CI against the wrong null (1 for a risk difference, 0 for a ratio) | Confirm the null value matches the measure — 1 for HR/RR/OR, 0 for differences — before grading the learner's CI interpretation |
 
 ## Verification Checklist
 

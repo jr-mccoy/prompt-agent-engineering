@@ -24,7 +24,7 @@ tags:
   - recurrence-risk
   - bayesian
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_biochem_pathway_clinical_correlation.md
   - domain-medical-education/learner-foundational-sciences/study_embryology_developmental_defect_mapper.md
@@ -137,6 +137,16 @@ Highest-yield restudy: [the axis the learner is weakest on]
 | `include_uncertain_paternity` | Adds the question "what would alter your interpretation?" |
 | `include_mitochondrial` | Adds a case showing maternal-only transmission |
 | `include_anticipation` | Adds a trinucleotide repeat expansion case (HD, fragile X, myotonic dystrophy) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Question premises that contradict the drawn pedigree (an individual drawn ● and later called ■; asking about mtDNA transmission through a daughter of an affected father) | Before posing Q1–Q3, read each individual's sex and affected status off the drawing and check every question's premise against it |
+| Asserting a Bayesian prior (2/3 vs. 1/2) that does not match the grandmother's stated carrier status | Derive the prior from the drawn relatives, then recompute prior × conditional → joint → normalized posterior, and confirm the fraction and decimal agree (e.g., 1/9 ≈ 0.111) |
+| Labeling a woman an obligate carrier because she has one affected son | Reserve "obligate" for pedigree proof (two affected sons, or an affected son plus an affected maternal relative); otherwise compute her carrier risk and note the new-mutation possibility |
+| Accepting a final fraction within ±5% when the shown work contains offsetting errors | Grade each line of work; a right number reached through a wrong conditional probability is `partial`, not `correct` |
+| Using disease incidence as the partner's carrier frequency | When the input gives incidence (q²), derive carrier frequency ≈ 2q and show the Hardy-Weinberg step before multiplying |
 
 ## Verification Checklist
 

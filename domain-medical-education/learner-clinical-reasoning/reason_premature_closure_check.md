@@ -24,7 +24,7 @@ tags:
   - premature-closure
   - metacognition
   - self-audit
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_dual_process_metacognition_coach.md
   - domain-medical-education/learner-clinical-reasoning/reason_ddx_practice_session.md
@@ -139,6 +139,16 @@ Single restudy target for this learner: [the named bias mode + how to drill it]
 | `bias_modes_to_audit` | Restrict to a subset (e.g., anchoring + confirmation only) for focused practice |
 | `require_counter_ddx_size` | Floor on counter-DDx entries (default 2, max 4) |
 | `require_kill_switch_test` | Force the kill-switch question to be answerable by a specific test result, not a judgment call |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Quoting a real phrase but filing it under the wrong mode (a base-rate statement rated as "availability"), so the rating looks evidenced but names the wrong bias | Test each quote against that mode's one-line definition in Method step 2; if it fits a different mode better, move it there instead of rating both |
+| Rating most of the seven modes `present` to look thorough, turning one closure error into a list of biases | `absent` is a full rating — a mode is `present` only when its quote could not be explained by a mode already rated; expect two or three live modes, not seven |
+| The three-sentence restatement adds facts the paste doesn't contain (when the fall happened, whether the CT is resulted) | Check every fact in the case summary against `case_summary`; anything not in the paste is written "not stated" and can't anchor a bias rating |
+| Listing "unexplained evidence" the working diagnosis can in fact produce, inflating the case against it | For each listed feature, say in one clause why the working diagnosis cannot produce it; drop features it plausibly explains |
+| Counter-DDx entries that account for none of the unexplained features but are added because they're dangerous | Map each counter-DDx entry to the unexplained features it covers; an entry that covers none moves to a "must exclude regardless" line, and the kill-switch datum is checked to actually discriminate the top counter-diagnosis |
 
 ## Verification Checklist
 

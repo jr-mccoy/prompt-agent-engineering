@@ -23,7 +23,7 @@ tags:
   - correlation
   - imaging
   - drill
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_anatomy_concept_drill.md
   - domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md
@@ -107,6 +107,16 @@ Integration vignette: [single-finding → predict adjacent slice]
 | `structures_to_drill` | Caps drill length |
 | `add_pathology` | If `true`, one in three structures is drilled in the diseased state instead of normal |
 | `include_contrast_phase` | `none` / `arterial` / `portal venous` / `delayed` — affects expected appearance |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Locking a structure list that includes structures not present on the anchored slice (an arch-level vessel on a carina-level cut) | Before locking, confirm each structure is visible at the stated axial level; one that isn't is swapped out or drilled at its own named level |
+| Quoting vertebral levels that drift across the three views (T4/5 at the surface, T5 on the anchor, T5–T6 on film) as if each were exact | Give one reconciled level range for the structure across all three views, and note that respiration and body habitus shift it |
+| Placing a structure "behind" or "over" a shadow it doesn't overlap on the stated projection | Check the projection geometry: on the named view (PA, lateral, AP supine), would that structure project over the shadow you cite? If not, name the shadow it does project over |
+| Assigning a combined grade the rubric doesn't define (two views right, one wrong) by intuition | Apply the correct/partial/incorrect definitions literally, and when a pattern falls between them, state the rule you used in the grade line |
+| Normal ranges and angles (carinal angle, bronchial take-off angles) given from memory as grading thresholds | Tag each numeric normal you grade against with its reference type [VERIFY: radiology anatomy reference], and accept answers inside the published range rather than a single remembered number |
 
 ## Verification Checklist
 

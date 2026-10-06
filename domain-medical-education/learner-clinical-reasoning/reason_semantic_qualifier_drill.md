@@ -23,7 +23,7 @@ tags:
   - vocabulary
   - active-recall
   - foundational-skill
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md
   - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
@@ -131,6 +131,16 @@ Restudy target: [the axis pair the learner needs to drill]
 | `learner_repeats_inventory` | If `true`, learner must recite axis poles at the start without prompt |
 | `time_per_item` | Soft cap to push speed (e.g., 20 seconds) |
 | `domain_focus` | Restrict to e.g., pain / dyspnea / weakness / cognitive-mental / pediatric-symptoms |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Grading a pole `correct` when the quote gives no evidence for it (e.g., "chronic-progressive" when no duration is stated) | Credit a pole only if a word in the raw quote supports it; an axis the quote leaves open is graded "not stated," and a learner who fills it in gets `partial` |
+| Filing a qualifier under the wrong axis in the tutor's own calibration or model answer (a positional modifier listed as "character") | Before drilling, check every axis label in the calibration and expected answers against the session's qualifier inventory |
+| Writing a grade label that contradicts the rubric's own definitions (a wrong-axis answer graded `partial`) | Apply the three-level rubric literally — wrong axis or smuggled diagnosis is `incorrect` — and name the rule invoked in the one-line grade |
+| Per-axis scorecard tallies that don't match the items actually drilled | Recompute each axis N/N from the item grades: the denominator is the number of items where that axis was in play, and the denominators should sum to the qualifiers attempted |
+| An adversarial item whose "correct" axis rests on a cue that isn't in the quote | Confirm the bait item's quote contains the discriminating words ("comes and goes," "gives out without pain") that justify the expected axis; otherwise it tests guessing, not listening |
 
 ## Verification Checklist
 

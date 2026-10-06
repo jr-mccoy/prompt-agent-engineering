@@ -25,7 +25,7 @@ tags:
   - health-beliefs
   - communication
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
   - domain-medical-education/learner-osce-skills/osce_informed_consent_rehearsal.md
@@ -151,6 +151,16 @@ Single highest-yield improvement: [...]
 | `religious_constraint` | Blood products, fasting, contraception, autopsy, etc. |
 | `recent_immigration_distrust` | Adds prior-system trauma — affects pacing |
 | `low_literacy_overlay` | Independent from language; tests numeracy framing |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A Kleinman count that includes `~` lines or elements not visible in the transcript | Recount: total = the number of ✓ lines backed by a quoted question; compare that number to the pass minimum of 4 |
+| Coaching that recommends a move the transcript shows the learner already made | Check the coaching recommendation against the transcript before writing it |
+| Herb–drug interaction claims stated as established in the coaching or plan | Name the plausible mechanism (e.g., additive glucose lowering) and tag the specific claim `[VERIFY: interaction database]` |
+| An interpreter line smoother or fuller than the patient's line, which makes teach-back look successful | Compare each rendering to the patient line it translates; omissions, additions, or softened hedges are flagged as interpreter errors |
+| A question offering the patient a menu of labels ("sed, hambre, cansancio?") credited as eliciting the patient's own name for the illness | Credit "what do you call it" only for an open question answered in the patient's words |
 
 ## Verification Checklist
 

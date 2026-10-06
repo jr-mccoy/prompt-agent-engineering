@@ -24,7 +24,7 @@ tags:
   - decision-tree
   - tree-of-thoughts
   - if-then-branching
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_diagnostic_schema_designer.md
   - domain-medical-education/learner-clinical-reasoning/reason_bayesian_pretest_posttest_drill.md
@@ -140,6 +140,16 @@ Learner accuracy on replay: [...]
 | `adversarial_replay_variable` | Specify the variable to change in replay |
 | `time_pressure_per_decision_seconds` | Soft cap for realism |
 | `include_disposition_decision` | Force final disposition node (ICU / floor / OR / transfer / discharge) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Stating doses, infusion ranges, and per-hour mortality figures from memory so the tree looks authoritative | Tag every dose, titration range, and outcome statistic with its source type, and mark anything not checked [VERIFY: current Surviving Sepsis Campaign / ACLS / drug-reference edition] |
+| Padding a node's 2–4 count with strawman branches whose trigger is "never appropriate," then reporting "Branches without triggers: none" | Count a never-appropriate option as a labeled teaching foil, not a branch; a node passes only with at least two branches that a real trigger could select |
+| A "Current state" line that already names the next step (e.g., "pending CT" right before asking about imaging), so the learner's correct answer is cued | Write the state from vitals, labs, and interventions only, and reread it before asking: if it contains the expected answer, rewrite it |
+| Revealed results whose physiology doesn't hang together (MAP rising while lactate, HR, and pressor dose move in contradictory directions) | Before revealing, check that each revealed vital and lab moves in a direction the chosen branch can produce within the stated time window |
+| Reporting adversarial-replay accuracy as a fraction that doesn't match the decisions listed as changed | Recount: the denominator of "Learner accuracy on replay" must equal the number of decisions in "Decisions that change," and unchanged decisions belong only in the "stay the same" list |
 
 ## Verification Checklist
 

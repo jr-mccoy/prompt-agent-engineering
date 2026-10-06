@@ -112830,7 +112830,7 @@
         "system-1-system-2"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_premature_closure_check.md",
         "domain-medical-education/learner-clinical-reasoning/reason_red_flag_can_t_miss_drill.md",
@@ -112861,7 +112861,7 @@
         "boards-prep"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_premature_closure_check.md",
         "domain-medical-education/learner-clinical-reasoning/reason_dual_process_metacognition_coach.md",
@@ -112922,7 +112922,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_diagnostic_schema_designer.md",
         "domain-medical-education/learner-clinical-reasoning/reason_compare_contrast_two_diagnoses.md",
@@ -112954,7 +112954,7 @@
         "if-then-branching"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_diagnostic_schema_designer.md",
         "domain-medical-education/learner-clinical-reasoning/reason_bayesian_pretest_posttest_drill.md",
@@ -112985,7 +112985,7 @@
         "self-audit"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_dual_process_metacognition_coach.md",
         "domain-medical-education/learner-clinical-reasoning/reason_ddx_practice_session.md",
@@ -113017,7 +113017,7 @@
         "active-recall"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_semantic_qualifier_drill.md",
         "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md",
@@ -113110,7 +113110,7 @@
         "foundational-skill"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md",
         "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md",
@@ -113202,7 +113202,7 @@
         "inpatient"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-13",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-rotation/study_soap_note_rehearsal_with_feedback.md",
         "domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md",
@@ -113296,7 +113296,7 @@
         "statistics"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-13",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-rotation/study_morning_report_case_prep.md",
         "domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md"
@@ -113326,7 +113326,7 @@
         "adverse-event"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-13",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-rotation/study_morning_report_case_prep.md",
         "domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md",
@@ -113357,7 +113357,7 @@
         "diagnostic-reasoning"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-13",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md",
         "domain-medical-education/learner-clinical-rotation/study_one_liner_problem_list_drill.md",
@@ -113389,7 +113389,7 @@
         "clinical-reasoning"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-13",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md",
         "domain-medical-education/learner-clinical-rotation/study_soap_note_rehearsal_with_feedback.md",
@@ -113538,7 +113538,7 @@
         "inpatient"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-13",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md",
         "domain-medical-education/learner-clinical-rotation/study_soap_note_rehearsal_with_feedback.md",
@@ -113630,7 +113630,7 @@
         "foundational-science"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_anatomy_radiologic_correlation_drill.md",
         "domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md",
@@ -113691,7 +113691,7 @@
         "drill"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_anatomy_concept_drill.md",
         "domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md"
@@ -113722,7 +113722,7 @@
         "foundational-science"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_physiology_pathway_walkthrough.md",
         "domain-medical-education/learner-foundational-sciences/study_genetics_inheritance_pedigree_drill.md",
@@ -113753,7 +113753,7 @@
         "foundational-science"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_physiology_pathway_walkthrough.md",
         "domain-medical-education/learner-foundational-sciences/study_mnemonics_builder.md"
@@ -113782,7 +113782,7 @@
         "foundational-science"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_genetics_inheritance_pedigree_drill.md",
         "domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md"
@@ -113813,7 +113813,7 @@
         "foundational-science"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_biochem_pathway_clinical_correlation.md",
         "domain-medical-education/learner-foundational-sciences/study_embryology_developmental_defect_mapper.md"
@@ -113844,7 +113844,7 @@
         "drill"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_anatomy_radiologic_correlation_drill.md",
         "domain-medical-education/learner-foundational-sciences/study_microbiology_virology_table_builder.md"
@@ -113876,7 +113876,7 @@
         "foundational-science"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_physiology_pathway_walkthrough.md",
         "domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md"
@@ -113963,7 +113963,7 @@
         "foundational-science"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_microbiology_virology_table_builder.md",
         "domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_flashcard_set.md"
@@ -114023,7 +114023,7 @@
         "foundational-science"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_anatomy_concept_drill.md",
         "domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md"
@@ -114082,7 +114082,7 @@
         "foundational-science"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_physiology_pathway_walkthrough.md",
         "domain-medical-education/learner-foundational-sciences/study_biochem_pathway_clinical_correlation.md",
@@ -114113,7 +114113,7 @@
         "recall"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_flashcard_set.md"
       ],
@@ -114230,7 +114230,7 @@
         "foundational-science"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md",
         "domain-medical-education/learner-foundational-sciences/study_biochem_pathway_clinical_correlation.md",
@@ -114261,7 +114261,7 @@
         "foundational-science"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drug_grid.md",
         "domain-medical-education/learner-foundational-sciences/study_immunology_cascade_explainer.md"
@@ -114292,7 +114292,7 @@
         "learner-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-osce-skills/osce_difficult_conversation_anger_grief.md",
         "domain-medical-education/learner-osce-skills/osce_informed_consent_rehearsal.md",
@@ -114324,7 +114324,7 @@
         "learner-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md",
         "domain-medical-education/learner-osce-skills/osce_informed_consent_rehearsal.md",
@@ -114357,7 +114357,7 @@
         "learner-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-osce-skills/osce_communication_breaking_bad_news_rehearsal.md",
         "domain-medical-education/learner-osce-skills/osce_substance_use_disclosure_rehearsal.md",
@@ -114389,7 +114389,7 @@
         "learner-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md",
         "domain-medical-education/learner-osce-skills/osce_pediatric_caregiver_interview_rehearsal.md",
@@ -114513,7 +114513,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-osce-skills/osce_focused_physical_exam_checklist.md",
         "domain-medical-education/learner-osce-skills/osce_post_encounter_note_rehearsal.md",

@@ -22,7 +22,7 @@ tags:
   - teaching-case
   - clinical-reasoning
   - diagnostic-reasoning
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
   - domain-medical-education/learner-clinical-rotation/study_one_liner_problem_list_drill.md
@@ -134,6 +134,16 @@ Restudy target: [named precisely]
 | `learner_level = MS3` | Differential table is pre-populated with three items; learner fills in supporting/arguing-against columns only |
 | `learner_level = resident-junior` | Graded on teaching effectiveness in addition to accuracy — does the three-layer structure create audience engagement? |
 | `audience_simulation` | After prep, model asks 2–3 audience questions the learner must field — tests reasoning under pressure |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Accepting a branch point that doesn't actually separate the leading diagnoses (meningeal signs, which occur in both SAH and meningitis) because it arrives in Layer 2 | Confirm the pivot finding is more likely under one diagnosis than its rival; if both produce it, the case has no real pivot yet and Layer 2 needs a different datum |
+| Passing a final diagnosis that the case's own arguing-against column undercuts (e.g., bacterial meningitis with no fever) because every table cell is filled | Check that Layer 3 explicitly resolves the strongest arguing-against finding for the final diagnosis; if it is left unresolved, the resolution fails |
+| Grading a teaching point "evidence-anchored" because a guideline's name is attached to it | Confirm the cited guideline actually makes that recommendation in its current edition, and tag timing rules (CT-to-LP windows, xanthochromia timing) [VERIFY: current guideline edition] |
+| Ranks that contradict their own row (a `high` item with an unaddressed major against-finding, a `low` item with the strongest support) | Walk each row and check that rank order follows the balance of its supporting and arguing-against cells; reorder or justify any row that doesn't |
+| An auto-generated case whose vitals, exam, and labs don't cohere with the intended final diagnosis | Before handing it over, solve the case from the data alone and confirm you reach the intended diagnosis; if the data point elsewhere, rewrite the case |
 
 ## Verification Checklist
 

@@ -26,7 +26,7 @@ tags:
   - cognitive-assessment
   - polypharmacy
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
   - domain-medical-education/learner-osce-skills/osce_pediatric_caregiver_interview_rehearsal.md
@@ -153,6 +153,16 @@ Single highest-yield improvement: [...]
 | `acute_event_overlay` | Recent fall / hospitalization / new med — changes priorities |
 | `decision_maker` | patient / shared / activated-DPOA |
 | `goals_of_care_window` | If `open`, expect ACP entry; if `acute_inappropriate`, learner should NOT push |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Reporting a short cognitive screen in a format the tool does not use ("clock 4/5 errors") | Score per the tool's own scheme (Mini-Cog: recall 0–3 + clock 0 or 2 = /5), recompute the total, and state the cut-off `[VERIFY: tool scoring guide]`; a positive screen is not a diagnosis |
+| A ✓ whose own parenthetical admits the item was not done ("ADL — bathing, dressing not directly asked") | Make the symbol agree with the evidence; count the ADLs and IADLs actually probed in the transcript (≥ 2 each) |
+| Sensory or decision-role lines ticked with no transcript turn behind them | Each ✓ points to a quoted learner line; without one it is ✗ |
+| Taper schedules or "safer" replacement drugs credited from memory | Credit the Beers flag itself; tag any taper or substitute `[VERIFY: AGS Beers Criteria, current edition]` rather than grading it correct |
+| Handing a task to the caregiver before the patient has agreed to it | Check the order of address within that turn: the patient's consent comes before the caregiver's assignment |
 
 ## Verification Checklist
 

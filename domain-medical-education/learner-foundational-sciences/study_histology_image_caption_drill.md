@@ -23,7 +23,7 @@ tags:
   - cytology
   - foundational-science
   - drill
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_anatomy_radiologic_correlation_drill.md
   - domain-medical-education/learner-foundational-sciences/study_microbiology_virology_table_builder.md
@@ -126,6 +126,17 @@ Highest-yield restudy: [the specific morphologic feature]
 | `add_IHC` | Each slide includes IHC panel results (CK20+/CDX2+, S100+/HMB45+, etc.) |
 | `add_age_sex` | Adds demographic clue per slide |
 | `include_microbiology_slides` | Adds infectious agents on stains (acid-fast for AFB, GMS for fungi, Warthin-Starry for spirochetes) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A Special-features line that states the pattern name ("pauci-immune," "full-house") that is itself the Q3 answer | Describe raw observations (which immunoglobulins and complement stain, where, how strongly) and let the learner name the pattern |
+| Findings from a preparation the Stain line never listed (IF or EM results on a slide prepared as H&E / PAS / silver only) | Cross-check every special feature against the Stain / magnification line; each finding must come from a listed preparation |
+| Tissue-source history that names the disease ahead of the morphology (malar rash + proteinuria), so the learner identifies by history | Cover the Tissue source line and check that the remaining five lines still separate the diagnosis from its closest distractor |
+| Crediting a non-cellular answer (deposits, matrix) to "Cell of origin of the defining feature?" | When the defining feature is not cell-derived, reword Q2 for that slide (location or structure) rather than grade a mismatched answer `correct` |
+| Treatment correlates graded correct from memory (induction regimens, biologic choices) | Grade Q4 at the level of the correlate's category; tag any named regimen `[VERIFY: current KDIGO / society guideline]` |
+| A DRILL SUMMARY whose per-axis scores were written, not counted | Recount each axis tally from the slide-by-slide grades (partial ≠ correct) before naming the weakest axis |
 
 ## Verification Checklist
 

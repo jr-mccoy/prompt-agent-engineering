@@ -23,7 +23,7 @@ tags:
   - oral-presentation
   - documentation
   - clinical-reasoning
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
   - domain-medical-education/learner-clinical-rotation/study_soap_note_rehearsal_with_feedback.md
@@ -143,6 +143,16 @@ Restudy target: [the specific skill named precisely]
 | `one_liner_only` | Skip problem list; run full refinement loop on one-liner until it passes all 5 criteria |
 | `speed_drill` | Set a 90-second clock; learner must produce both the one-liner and problem list under time pressure |
 | `learner_level = MS3` | Background criterion is held to 1–2 items max; at MS3, over-inclusion of background is the primary error |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Printing a Length grade from an estimated word count (a 39-word draft logged as 48, a 20-word revision as 22) | Count the words of the quoted sentence before grading and print the count; apply the bands as written — ≤30 pass, 31–50 borderline, >50 fail |
+| Declaring "all 5 criteria pass" on a revision that dropped the background item driving today's plan (diabetes with glucose 310, the creatinine rise) | Before passing, list the vignette's abnormal findings and confirm each appears in the one-liner or on the active problem list |
+| Using grade values the rubric doesn't define ("partial" on a pass/fail criterion) | Keep to `pass / fail / N/A` per criterion; if a criterion is half-met, it fails and the guiding question names the missing half |
+| Calling a learner's problem a "fabrication" when only an excerpt of the vignette was checked | Search the full `patient_vignette` before using the fabrication label; if the item is absent, quote the vignette section that should have contained it |
+| Accepting lab-derived problems (AKI, DKA, hyperkalemia) because the label sounds right | Recompute the qualifying delta or ratio from the vignette's numbers and state the definition used [VERIFY: KDIGO or relevant criteria] before the problem stays on the list |
 
 ## Verification Checklist
 

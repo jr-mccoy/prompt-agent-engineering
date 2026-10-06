@@ -24,7 +24,7 @@ tags:
   - root-cause
   - question-review
   - boards-prep
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_premature_closure_check.md
   - domain-medical-education/learner-clinical-reasoning/reason_dual_process_metacognition_coach.md
@@ -139,6 +139,16 @@ If learner has run this teardown ≥ 3 times with same primary error type → es
 | `learner_level` | Calibrates restudy task complexity |
 | `pattern_history` | Optional log of prior teardowns to detect repeating error types |
 | `time_budget_minutes` | Cap on restudy task (default 30) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Treating `correct_choice` as beyond question, so a learner who picked a defensible option is "diagnosed" with an error that isn't one | Solve the item blind from the stem before reading the key; if a second option is also defensible or the key rests on a superseded guideline, report an item-quality flag beside the classification rather than forcing a learner error |
+| Writing Step D's discriminator from memory when no `rationale_provided` was supplied, then grading the learner against it as if it were the source's rationale | Label a self-generated chain as the tutor's reasoning and tag any treatment-order or threshold claim in it [VERIFY: current guideline or question-bank rationale] |
+| Choosing the error type by impression, then finding a quote that roughly fits | Let the quoted phrase decide: a content-gap quote asserts a wrong fact, a test-taking quote shows the question word ignored, a bias quote shows contrary stem data passed over — if the quote shows none of these, quote more of the reasoning before classifying |
+| Firing the pattern-check escalation ("third time this month") with no logged history | Escalate only when `pattern_history` is supplied, and print the count of prior teardowns sharing this primary type; otherwise write "no history supplied" |
+| A Step E that explains why the key wins but dismisses the other options with reasons the stem contradicts | Before sending, check that Step E rejects every non-keyed option with a reason traceable to a stem detail (a vital sign, a qualifier, the literal question word); a rejection that conflicts with the stem means the chain needs repair |
 
 ## Verification Checklist
 

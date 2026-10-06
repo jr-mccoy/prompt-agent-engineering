@@ -23,7 +23,7 @@ tags:
   - enzymes
   - clinical-correlation
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_physiology_pathway_walkthrough.md
   - domain-medical-education/learner-foundational-sciences/study_genetics_inheritance_pedigree_drill.md
@@ -113,6 +113,16 @@ Highest-yield restudy: [the one column the learner missed most often]
 | `include_neonatal_screening` | Adds RUSP column |
 | `pediatric_overlay` | Adds age-of-onset column |
 | `treatment_depth` | `basic` (dietary restriction) vs. `expanded` (enzyme replacement, gene therapy where available) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Tagging drill items "forward" or "reverse" by habit, so the `mixed` requirement is met on paper while every stem actually gives a presentation | Classify each item by what its stem supplies — an enzyme or disease name given is forward, a presentation or lab pattern given is reverse — and count both kinds before sending |
+| Filling the RUSP column from memory and treating "on the screen" as one category | Mark each condition as core, secondary, or not listed [VERIFY: current HRSA RUSP list]; state-panel inclusion varies and is not the RUSP |
+| Drill answer keys that disagree with the table's own lab-signature cells (a marker "normal" in the table and "low" in the drill) | Cross-check every drill answer against its table row and reconcile any wording mismatch before the session starts |
+| "Same as row N" management cells that hide row-specific differences (which amino acid to supplement, which scavenger) | Write each row's management in full, so a copy-down can't carry the wrong supplement into a different defect |
+| A distractor card that is ambiguous or partly true, so the learner's "correct" answer depends on which element they challenge | Make sure the distractor has exactly one wrong element (enzyme, cofactor, or inheritance) and name that element in the correction |
 
 ## Verification Checklist
 

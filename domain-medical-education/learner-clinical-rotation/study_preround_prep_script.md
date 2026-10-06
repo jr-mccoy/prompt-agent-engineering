@@ -23,7 +23,7 @@ tags:
   - presentation-prep
   - workflow
   - inpatient
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
   - domain-medical-education/learner-clinical-rotation/study_soap_note_rehearsal_with_feedback.md
@@ -132,6 +132,16 @@ Next skill to drill: [specify]
 | `time_available` | 10 min compresses to Steps A + C + F only, with explicit shortcuts named |
 | `learner_level` | MS3 gets explicit data-source prompts (where to find I&O); intern gets the synthesis step timed; resident gets efficiency benchmarks |
 | `problem_count` | 1–3 active problems for drill; 4+ for advanced efficiency session |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A "Data gather: N/6 complete" total that counts `partial` steps as complete | Recompute the total from the six step grades — only `complete` counts — and list which steps were partial or missed beside the number |
+| Filling the "Finding" lines with chart data the learner never retrieved, so the tally reads as if they found it | Keep "Finding (chart)" separate from "Learner said"; a step is `complete` only when the learner's own words contain the finding |
+| Flagging AKI, hypoxemia, or tachycardia from a single number without the definition's time window or the patient's own baseline and target | Recompute the delta and ratio against the stated baseline and window [VERIFY: KDIGO criteria], and judge SpO₂ against the patient's target range (e.g., COPD) before calling it a change |
+| Asserting a population ranking ("the #1 pre-rounding error at intern level") to justify the scorecard pitfall | Name the pitfall as this learner's observed miss on this run; any claim about how common it is gets a source or is dropped |
+| Auto-generated overnight events whose interventions contradict the patient's own targets or problem list | Check each injected event against the admission diagnosis and stated targets before the drill starts, so the learner is graded on the data, not on a scenario artifact |
 
 ## Verification Checklist
 

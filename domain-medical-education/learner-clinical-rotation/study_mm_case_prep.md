@@ -22,7 +22,7 @@ tags:
   - patient-safety
   - systems-thinking
   - adverse-event
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_morning_report_case_prep.md
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
@@ -142,6 +142,16 @@ Restudy target: [named precisely, e.g., "distinguish 5-Whys layer 2 from layer 3
 | `event_type = diagnostic-error` | Mandatory: learner must name the cognitive bias that contributed (anchoring, premature closure, availability heuristic) |
 | `learner_level = MS3` | Causation map is pre-scaffolded with 5-Whys prompts; learner fills in each layer |
 | `no_blame_only` | Skip recommendation grading; run only the language audit — trains no-blame framing in isolation |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Marking a recommendation "Measurable: Yes" because a number appears ("100% audit compliance") with no denominator, audit method, or date | Measurable means numerator, denominator, data source, and review date are all named; a bare percentage is `partial` |
+| Grading the timeline `complete` when entries are undated or are inferences ("pharmacy dispensed without a flag") written as observed facts | Count the timestamped entries and tag each with its source (chart, pharmacy log, interview, inferred); untimed or inferred steps hold the grade at `partial` |
+| Labelling every contributing factor "system" so the case passes the no-blame check, erasing a genuine individual factor | Run the categorization rule from Method step 2 on each factor separately and record the result; a case with zero individual factors after that test is fine, but one with zero because nobody tested is not |
+| Role labels in a small program ("the night intern," "the discharging attending") that identify a person as surely as a name | Replace roles with the process step ("at discharge order entry") whenever the role maps to one identifiable person |
+| One recommendation per root cause on paper, while a second failed defense layer (e.g., the outpatient pharmacy) has none | List every defense layer the error passed through and map each to a recommendation or an explicit "no recommendation — reason"; count both lists before the self-check |
 
 ## Verification Checklist
 

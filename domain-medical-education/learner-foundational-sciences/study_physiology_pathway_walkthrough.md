@@ -22,7 +22,7 @@ tags:
   - pathway
   - mechanism
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md
   - domain-medical-education/learner-foundational-sciences/study_biochem_pathway_clinical_correlation.md
@@ -116,6 +116,16 @@ Uncertainty noted: [any step where the learner was clearly guessing — flag, do
 | `perturbation` | The "what if" stress-test after the canonical chain |
 | `force_loop_closure` | If `true` (default), pathway must end with explicit feedback step |
 | `clinical_anchor` | Tie the perturbation to a specific clinical scenario (e.g., "post-hemorrhage hypotension") |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A chain summary that attaches a product to the wrong site (e.g., "AT-I (liver)" — the liver makes angiotensinogen; AT-I forms in plasma) | Check every parenthetical location in CHAIN SUMMARY against the transcript turn that established it |
+| A perturbed chain listing effects never drilled (↑ K, ↓ Na retention) as if co-built | Mark tutor-added links in the summary; only drilled steps count as learner-built |
+| `[escalating]` tags placed by feel | Annotate each grade with the running streak (e.g., "streak 2 → escalate") so the escalation rule can be audited line by line |
+| `correct` for an answer whose elements point in mixed directions (e.g., "afferent arteriole stretch" when the trigger is *reduced* stretch) | Grade the direction of every element; one wrong direction makes the grade `partial` |
+| `detailed` granularity (10–14 steps) satisfied by counting arrows in the summary | Count learner-answered steps in the transcript against the granularity range |
 
 ## Verification Checklist
 

@@ -24,7 +24,7 @@ tags:
   - dual-process
   - cognitive-bias
   - system-1-system-2
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_premature_closure_check.md
   - domain-medical-education/learner-clinical-reasoning/reason_red_flag_can_t_miss_drill.md
@@ -153,6 +153,16 @@ Restudy: drill case-recognition for the missed trigger (e.g., "diagnostic moment
 | `adversarial_twin_count` | Number of cases with feature-swapped twin |
 | `include_correct_S1_dont_overthink` | Includes 1–2 obvious cases where the lesson is "stay in System 1, don't over-analyze" |
 | `time_pressure_seconds` | Soft cap per case to mimic real time pressure on mode selection |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Crediting "trigger identified" when the learner names a trigger only as a hedge ("maybe repeat-encounter?") without pointing at what in the vignette fired it | Count a trigger as identified only when the learner ties it to a case detail (the chart label, the post-flight episode); a bare or hedged label scores partial |
+| Building the "Triggers actually present" key after the learner answers, so it grows to fit the teaching point | Write the key before showing the case, mapping each trigger to the vignette sentence that fires it; drop any trigger that no sentence supports |
+| Scoring "Correct mode used: Y" because a System-1 diagnosis on a triggered case happened to be right | Grade mode against the trigger list, not the final answer — a lucky System-1 hit on a triggered case is still a mode miss |
+| Declaring a session tendency ("over-uses System 1") from one missed case | Report the denominator (triggered cases missed / triggered cases shown) and label the tendency provisional when fewer than two triggered cases were run |
+| Listing "tests that would change dx" from memory with pretest logic out of order (e.g., D-dimer before any risk score) | Before releasing the scorecard, recount every "N of M" fraction against the lists printed above it, and confirm each listed test names the DDx entry it would move and its pretest sequence [VERIFY: current guideline] |
 
 ## Verification Checklist
 
