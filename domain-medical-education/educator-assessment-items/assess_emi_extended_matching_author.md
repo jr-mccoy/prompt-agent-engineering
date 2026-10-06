@@ -22,7 +22,7 @@ tags:
   - item-writing
   - assessment
   - distractors
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md
   - domain-medical-education/educator-assessment-items/assess_distractor_designer.md
@@ -153,6 +153,16 @@ Replaced with: [...]
 | `theme` | "Diagnoses" vs "Investigations" vs "Drugs" — never mix categories within one set |
 | `include_image` | Adds IMAGE BRIEF block (no rendering); e.g., dermatology photo, ECG strip, peripheral smear |
 | `cross_cutting_misconception` | If a misconception spans 2 vignettes, document it explicitly in blueprint |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Declaring a unique discriminator per vignette after checking only the two named near-neighbors, while a third listed option also fits the vignette | Run every vignette against every option on the list; record the vignette feature that excludes each option, and treat any option with no excluding feature as a second key |
+| Walk-by exclusions stated more strongly than their source ("35 years old — too young for GCA" where age is a classification criterion, not an exclusion rule) | State each exclusion at the strength the source gives it, and check every "excludes it" line against the criterion it cites |
+| Target misconceptions in BLUEPRINT TAGS that no vignette or near-neighbor actually tests | Cross-map: each listed misconception points to one vignette and one near-neighbor option that exploits it; drop or reassign any that map to nothing |
+| SOURCE-FIDELITY rows set to `verified` for criteria and sensitivity figures recalled without the source in hand | Set `verified` only for claims checked against a supplied or retrieved source; otherwise `[verify before use]` plus the source type (ICHD-3, ACR classification) so the reviewer knows where to check |
+| Padding the option list to `option_list_count` with entries no vignette could plausibly select | Count how many options appear as a key or near-neighbor in at least one walk-by; each remaining option needs a stated reason a learner at this level would consider it |
 
 ## Verification Checklist
 

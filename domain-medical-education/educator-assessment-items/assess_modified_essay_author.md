@@ -22,7 +22,7 @@ tags:
   - sequential-disclosure
   - assessment
   - marking-scheme
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-assessment-items/assess_short_answer_constructed_response_author.md
   - domain-medical-education/educator-assessment-items/assess_oral_exam_question_author.md
@@ -152,6 +152,16 @@ Replaced with: [...]
 | `include_communication_step` | Requires writing a short script for a clinical conversation (capped at ≤ 25% of total marks) |
 | `cross_link_to_OSCE` | Marks as compatible with OSCE knowledge-station deployment |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Disclosure numbers that contradict derived values given earlier (a stem anion gap that the later Na, Cl and HCO3 do not reproduce) | Recompute every derived value from the raw numbers on the page where they appear — anion gap, corrected Na, mL/kg × stated weight, hourly fluid rates — and fix the stem or the disclosure so a candidate who calculates correctly is not marked wrong |
+| Full- and partial-credit exemplars whose labels disagree with the element table (a "3/6" exemplar that earns 4 under the listed marks) | Score each exemplar line by line against its own element table and write the computed total beside the label; a mismatch means the exemplar or the table is wrong |
+| A later sub-question whose expected answer depends on the candidate's earlier answer, so one early error is penalised twice | Either supply the correct earlier value in the next disclosure or state an error-carried-forward rule in the marking scheme, so each sub-question is scored on its own |
+| Copying the cognitive ladder from the input instead of from what each prompt actually demands (a family-explanation task labelled "evaluation") | Classify each sub-question by its verb and the work it requires, and record the ladder as written; if it no longer rises, say so in BLUEPRINT TAGS |
+| `verified` source rows for rescue doses and severity cut-offs attributed to a course manual or guideline edition that was not checked | Mark hypertonic-saline/mannitol doses and DKA severity bands `[VERIFY: current ISPAD / PALS edition]` unless the source text was supplied; a key built on a superseded dose penalises correct candidates |
+
 ## Verification Checklist
 
 - [ ] Disclosure sequence is irreversible; no-backtrack rule stated on every page.
@@ -174,7 +184,7 @@ Replaced with: [...]
 MEQ — Pediatric DKA progression — course-final — Time: 30 min — Marks: 30
 
 >>> PAGE 1 — STEM + Q1
-STEM: A 7-year-old (22 kg) is brought to the ED with 2 days of polyuria, vomiting, and lethargy. HR 138, BP 92/58, RR 32, glucose 512 mg/dL. POC VBG: pH 7.12, HCO3 8, anion gap 22.
+STEM: A 7-year-old (22 kg) is brought to the ED with 2 days of polyuria, vomiting, and lethargy. HR 138, BP 92/58, RR 32, glucose 512 mg/dL. POC VBG: pH 7.12, HCO3 8, anion gap 24.
 Q1 (4 marks): State the diagnosis and severity classification (ISPAD). JUSTIFY using TWO findings.
 "Turn the page. Do not revise above."
 

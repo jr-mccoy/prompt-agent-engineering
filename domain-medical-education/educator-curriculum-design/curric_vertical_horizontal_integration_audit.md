@@ -22,7 +22,7 @@ tags:
   - vertical-integration
   - horizontal-integration
   - audit
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_course_map_builder.md
   - domain-medical-education/educator-curriculum-design/curric_clinical_clerkship_orientation_designer.md
@@ -164,6 +164,16 @@ Refused: no map evidence; only intent. Required map-based evidence for integrati
 | `include_workplace_integration` | Maps classroom topics to specific workplace EPAs |
 | `include_inter_professional` | Adds IPE integration check across nursing / pharmacy / PA curricula |
 | `include_assessment_integration` | Verifies that integrated topics are assessed in integrated formats (e.g., progress test) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| GAP + REDUNDANCY counts ("5 topics siloed-late", "4 Bloom-flat") that cannot be reproduced from the heatmap, which shows fewer rows with that status | List every counted topic by name and confirm each carries the same status in the heatmap; recount from the heatmap before issuing the summary |
+| Heatmap cells filled from course names or the topic inventory ("App (path)") rather than from the LO verbs in `lo_session_assessment_maps` | Record each cell from the highest-level LO verb found in that phase's map and cite the session ID; a cell with no traceable LO is left blank, not inferred |
+| Treating co-scheduling (pathology, pharmacology and clinical medicine in the same weeks) as horizontal integration | Require a cross-reference in the maps (a shared case, linked LOs or a joint assessment item); concurrent timing alone is recorded as "co-timed, not integrated" |
+| Accepting as "map evidence" a matrix the audit itself reconstructed from `topic_inventory`, which only restates the curriculum's intent in table form | Count as evidence only maps that came from course owners (session IDs, LOs, assessment items); a reconstructed table is a hypothesis to confirm, and the refusal guard still applies |
+| Accreditation element numbers and titles quoted from memory, such as the element cited for curricular integration | Check each element number and title against the current standards document the user named; if it was not supplied, tag the row [VERIFY: current LCME/ACGME/CCNE standards edition] |
 
 ## Verification Checklist
 

@@ -22,7 +22,7 @@ tags:
   - application-exercise
   - 4S
   - small-group
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_pbl_case_author.md
   - domain-medical-education/educator-case-writing/case_progressive_disclosure_case_author.md
@@ -168,6 +168,17 @@ Replaced with: an algorithm-misapplication distractor.
 | `include_appeals_process` | Adds a rule for team appeals on iRAT/tRAT items |
 | `multi_AE_arc` | Two-exercise arc where AE2 builds on AE1; only if `block_minutes` ≥ 90 |
 | `include_peer_evaluation_rubric` | Adds end-of-session peer-evaluation criteria |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A key that is right only under an assumption that appears in the facilitator notes but not in the learner stem | Solve the exercise blind from the learner stem alone and show why A beats each of B–D; any assumption the key needs is moved into the stem |
+| Risk scores in the stem (CHA2DS2-VASc 4, HAS-BLED 3) that the stem's own facts cannot produce | Recompute each score from the stated age, sex and comorbidities; add the missing facts or correct the score |
+| Trap tags applied by position (B anchoring, C premature closure) rather than by what the option actually ignores | For each tag, name the stem datum the trap overlooks; an option with no such datum is retagged, and key position is varied across exercises |
+| Anticipated pick percentages written as if they were forecasts | Label them facilitator estimates; replace them with observed card counts after the first run |
+| Counting topic headings with "→ key" as written iRAT/tRAT items | Count only entries with a stem, four options, a key and noted distractor logic; the 6–10 requirement applies to that count |
+| A reveal minute that leaves no room for iRAT, tRAT and appeals within `block_minutes` | Lay out the whole block minute by minute — iRAT, tRAT, appeals, team work, reveal, debate — and confirm it sums to `block_minutes` |
 
 ## Verification Checklist
 

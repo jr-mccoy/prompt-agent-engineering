@@ -23,7 +23,7 @@ tags:
   - graded-supervision
   - re-entry
   - competency-revalidation
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-remediation/remed_technical_skills_plan.md
   - domain-medical-education/educator-remediation/remed_communication_professionalism_plan.md
@@ -119,6 +119,16 @@ Considered: [making a fitness-for-duty call | day-one unsupervised return | reco
 | `competencies_at_risk` | Procedures → at-standard sim gate; decision-making → supervised case ramp |
 | `accommodations` | Operationalizes approved restrictions without adjudicating the medical basis |
 | `monitoring_capacity` | Limited → adjusts ramp pacing, not the safety criteria |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Clearance status marked "DONE" from a narrative statement, with no date, issuing office or document reference | Record each clearance with owner, date and the document received; if the user has not confirmed a document on file, the status is "pending [VERIFY: clearance documentation]" and the plan stays inactive |
+| ADVANCE WHEN criteria that collapse to the calendar ("accommodation period ends", "after week 6") or leave the count as "×[n]" | Confirm every stage's advancement criterion names an observed performance, a standard and a count; a date may bound a stage but is never its only advancement test |
+| Step-back triggers phrased as symptoms of the underlying condition ("signs of relapse", "appears withdrawn"), which makes the educator a clinical assessor and leaks health information into the record | Phrase triggers as observed performance or conduct events; route any wellness concern to the clearing authority without naming or speculating about a condition |
+| A ramp that needs more observation than `monitoring_capacity` can provide (one attending directly supervising every case for two weeks) | Count the supervised observations each stage requires and match them to named supervisors' availability; slow the pacing rather than loosening the criteria when they do not fit |
+| Stage weeks, accommodation end date and re-entry review date that do not line up | Lay all stages on one week-by-week timeline and confirm the review falls after the last stage's criteria can be met; escalation branches follow program policy [VERIFY: institutional policy] |
 
 ## Verification Checklist
 

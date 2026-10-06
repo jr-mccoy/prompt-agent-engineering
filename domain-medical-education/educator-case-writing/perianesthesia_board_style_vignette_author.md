@@ -47,7 +47,7 @@ tags:
   - distractor-design
   - patient-safety
   - prioritization
-updated: "2026-07-20"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_tbl_application_exercise_author.md
   - domain-medical-education/educator-case-writing/case_oral_exam_case_author.md
@@ -917,6 +917,16 @@ Reason:
 | `pair_with_companion_item` | Creates a second item testing the same topic with a different phase or lead-in |
 | `increase_authenticity` | Adds realistic trends, handoff data, treatment response, or procedure context |
 | `reduce_local-dependence` | Removes unsupported facility-specific assumptions |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Marking "Combined-action cueing: pass" and "Option-length parity: pass" by eye when the key alone bundles several verbs (reposition, jaw thrust, assess) and runs visibly longer than single-action distractors | Count words and action verbs in every option and note the counts beside the cue-artifact audit; if the key is the longest or the only multi-action option, rebalance the distractors or narrow the key before either line can pass |
+| Passing "Evidence validity" after scanning only the stem, while a dose, reversal-agent amount, monitoring interval, observation period or discharge cut-off has slipped into the rationale, the "When it might become appropriate" lines or the teaching note | Sweep every block of the output for numerals attached to a drug, interval, score or vital-sign limit; replace each with `per provider order` or `per facility protocol`, or return `HOLD FOR SOURCE` (content rules in `domain-healthcare-clinical/prompts/perianesthesia/SAFETY_PREAMBLE.md`) |
+| Rationale that turns a patient-specific stem value (one SpO2 reading, one respiratory rate) into an implied universal trigger ("below X the nurse must…") | Keep stem numbers descriptive of this patient; the rationale explains the trend and the pattern, never a cut-off the learner is meant to memorize |
+| Copying `target_difficulty` into "Estimated target P" and counting strong distractors by intent, so the calibration block only echoes the request | Label P as a pre-administration estimate, name each strong distractor with the stem fact it exploits, and state that observed item statistics replace the estimate once the item has been used |
+| Declaring "Single-best-answer validity: pass" because the written rationale argues persuasively for the key | Solve the item blind: hide the key and rationale, answer from the stem alone, then defend the strongest distractor as a competent PACU nurse would under the named phase and lead-in; if that defence holds, rewrite before `SHIP` |
 
 ## Verification Checklist
 

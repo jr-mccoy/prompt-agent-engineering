@@ -22,7 +22,7 @@ tags:
   - clinical-reasoning
   - commit-then-reveal
   - case-conference
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_pbl_case_author.md
   - domain-medical-education/educator-case-writing/case_morning_report_case_author.md
@@ -167,6 +167,16 @@ Replaced with: ...
 | `stage_count` | 4 stages for short conferences; 6 for full longitudinal |
 | `assessment_aligned_to` | Style commits to match shelf / NCLEX / NAPLEX expected outputs |
 | `include_metacog_prompt` | Final stage adds a "what did you commit at S2 vs S4 — what changed your mind?" reflection |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Model-trajectory commits that cite data not yet revealed at that stage (an S2 ranking justified by an S3 platelet count) | For each model commit, list the facts it uses and the stage each was revealed in; any fact from a later stage is removed from that commit |
+| A labelled "pivot" that only confirms the diagnosis the model trajectory already ranked first | Compare the pivot data with the model's prior ranking: if the top choice does not change, it is confirmation — redesign so the pivot discriminates between the top two the learner is likely to hold |
+| A red herring placed after the stage where it was first disclosed, or after the model trajectory has already discarded it | Put the distractor in the stage immediately before the commit it is meant to test, and check that the model commit at that stage weighs it explicitly |
+| Pre-filling the reasoning-evolution table with an imagined learner's commits and treating it as assessment evidence | Ship the evolution table blank for learner use; any filled example is labelled model reference and kept out of the assessment artifact |
+| S5 and model-trajectory management lines (severity cut-offs, setting of care, drug choice) written from memory and later used as the answer key | Mark each treatment line `[VERIFY: current CDC / WHO guidance]` or the relevant body unless a source was supplied |
 
 ## Verification Checklist
 

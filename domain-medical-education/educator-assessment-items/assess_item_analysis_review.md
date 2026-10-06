@@ -22,7 +22,7 @@ tags:
   - difficulty
   - discrimination
   - distractor-performance
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md
   - domain-medical-education/educator-assessment-items/assess_distractor_designer.md
@@ -140,6 +140,16 @@ Considered retiring items based on difficulty alone: [list of items]. Refused pe
 | `include_speededness_check` | Adds % omitted analysis per item to flag time-pressure effects |
 | `include_blueprint_audit` | Maps action items to blueprint cells |
 | `include_IRT_estimates` | If 1PL/3PL estimates available, adds difficulty (b), discrimination (a), guessing (c) review |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Reporting test-level mean p, % in window and keep/revise/retire counts for all `n_items` when stats were supplied for only a subset | Compute every test-level figure from the supplied `item_stats` rows only; recompute mean p and mean Rpb from those rows and check keep + revise + retire = items reviewed. Figures for unsupplied items are `INSUFFICIENT — stats not provided` |
+| Raising F5 (< 5%) or F6 (> 25% of high-third) from percentages without the head-counts behind them | Convert to examinees: the high third of 142 is ~47 people, so 5% is about 2; when the high third is under ~30, mark F5/F6 provisional rather than acting on them |
+| Writing "content panel reviewed" or "miskey confirmed" in the decision column when no panel finding was an input | The review can propose a miskey hypothesis; it cannot report a panel outcome. Write `→ content panel` and keep the decision revise-pending until the finding is supplied |
+| Populating the Refusal Log with items whose p was inside the difficulty window, where there was nothing to refuse | List only items that carried F1 or F2 and were retained after content review; if none, write "none" |
+| Blaming individual items for a low KR-20 without considering test length and blueprint breadth | Before naming items as the cause, report the Spearman-Brown projected length needed to reach the target α; a shortfall explained by length or multi-domain content is a test-design finding, not an item flaw |
 
 ## Verification Checklist
 

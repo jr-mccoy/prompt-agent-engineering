@@ -23,7 +23,7 @@ tags:
   - communication
   - behavioral-expectations
   - due-process
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-remediation/remed_documentation_due_process_letter.md
   - domain-medical-education/educator-remediation/remed_return_to_clinical_duty_plan.md
@@ -119,6 +119,16 @@ Considered: [building on labels/hearsay | medicalizing a conduct issue | moraliz
 | `screen_for` | Plausible contributor → adds referral routing + accommodation interface |
 | `framework` | Changes expectation/standard language |
 | `cultural_communication_factor` | Adds a check that a style difference isn't being mislabeled as a deficit |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Writing "recurrent pattern" in the Pattern? column when the evidence table holds a single dated event of that behavior | Count dated, directly observed events per behavior; use "pattern" only at two or more and write the count beside it |
+| A Direct observer column naming roles the input never mentioned (adding a charge nurse to an event only the attending reported) | Trace each observer and date to the `evidence` input; remove any observer not supplied and list the event as needing documentation |
+| Classification or rationale that describes the learner's inner state or a presumed condition ("under stress", "burned out", "defensive") rather than the act | Describe what was said or done, with date and observer; the contributor screen records only "referral offered to [resource]", never a suspected diagnosis |
+| Escalation triggers and consequence branches ("formal probation", "CCC review") written as if they were this institution's process | Insert escalation steps from the program's supplied policy; anything not supplied is a placeholder tagged [VERIFY: institutional policy] |
+| "MSF communication scores to standard" as the re-assessment, with no instrument, scale point or rater minimum | Name the MSF instrument and the score on its scale that counts as meeting standard, and check that the monitoring window allows enough raters to produce that score |
 
 ## Verification Checklist
 

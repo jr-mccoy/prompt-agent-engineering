@@ -22,7 +22,7 @@ tags:
   - learning-objectives
   - instructional-design
   - alignment
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_learning_objective_author.md
   - domain-medical-education/educator-curriculum-design/curric_lecture_outline_designer.md
@@ -163,6 +163,16 @@ Replaced with: 18-minute CBD-style probe segment to surface analysis.
 | `assessment_alignment` | Determines which assessment touchpoints are realistic per LO |
 | `include_simulation` | Adds room / fidelity / SP requirements to prep checklist |
 | `include_inter_professional` | Adds IPE partners and role-clarification element |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Matching activity to Bloom by the menu label ("case vignette" = Application) while the question the activity actually poses asks learners to recall a fact | Read the task or question each activity sets and confirm it requires the LO's verb under the LO's condition; relabel the level or redesign the task if it does not |
+| An assessment touchpoint ("course MCQ", "Mini-CEX during clerkship") that is not in `assessment_alignment`, so the refusal guard is satisfied on paper only | Trace each touchpoint to an assessment named in the input; a touchpoint with no real instrument behind it is a gap and triggers the refusal |
+| The matrix Time column and the SESSION TIMELINE disagreeing, or a flipped session whose pre-class work and iRAT minutes are left out of the budget | Recompute: matrix minutes plus opening, wrap and buffer must equal the timeline total; for flipped formats, list pre-class minutes separately and put in-class readiness-test minutes inside the timeline |
+| "Room / tech feasible: pass" without testing the plan against `room_and_tech_constraints` (team work in a fixed-seat hall with no breakout space; teams that do not divide `class_size`) | Check each activity's room and tech need against the stated constraints and compute team numbers from `class_size` before marking the row |
+| An evaluation-level LO whose only touchpoint is a format that cannot show the behavior, such as one ARS item for "evaluate trade-offs" | Confirm the assessment format can capture the LO's degree; otherwise choose a format from the LO author's method mapping or revise the LO |
 
 ## Verification Checklist
 

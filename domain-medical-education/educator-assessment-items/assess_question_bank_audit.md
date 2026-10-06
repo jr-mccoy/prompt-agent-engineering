@@ -21,7 +21,7 @@ tags:
   - quality-control
   - coverage
   - aging
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md
   - domain-medical-education/educator-assessment-items/assess_item_analysis_review.md
@@ -156,6 +156,16 @@ None of the items currently classified "keep" was passed without flaw + source r
 | `include_translation_audit` | If items translated, flags translation drift |
 | `stake_level` | High-stakes raises retire thresholds for any flaw; formative tolerates more refresh-instead-of-retire |
 | `aging_window_months` | Default 24 months for guideline review; tighter for fast-moving areas (e.g., infectious disease, oncology) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A classification summary whose counts do not reconcile with the bank or with the stated retire reasons | Show the arithmetic: keep + refresh + retire = `bank_size`; retire = orphaned-fact + equity + cluster duplicates + any other named reason; replace ≤ retire |
+| Reporting flaw-class totals for the whole bank ("540 items reviewed") when only an excerpt of items was supplied | Count only items actually read; label anything else `estimated from N sampled items` or `INSUFFICIENT — items not supplied` |
+| Pattern-matched cluing flags: "absolute term" raised on "always" inside a patient's quoted words, "longest option is key" where the key is two words longer than comparable distractors | Confirm each flag against the item text: quote the offending phrase, and for length flags give character counts for the key and the longest distractor |
+| Aging verdicts made from the citation year alone, so an old citation with an unchanged recommendation is flagged and a recent one with a changed threshold passes | Compare the specific drug, dose or threshold in the item with the matching recommendation in `current_guidelines_basis`; write `[VERIFY]` when that text was not supplied |
+| Grouping items into a redundancy cluster by shared topic label when they test different decisions | Apply `redundancy_threshold` literally: for each non-survivor, name the single field (age, one lab value) on which it differs from the survivor; items with a different lead-in or decision stay separate |
 
 ## Verification Checklist
 

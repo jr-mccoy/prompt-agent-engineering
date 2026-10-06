@@ -22,7 +22,7 @@ tags:
   - literature-review
   - cme
   - teaching-takeaways
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_morning_report_case_author.md
   - domain-medical-education/educator-case-writing/case_mm_case_author.md
@@ -181,6 +181,16 @@ Replaced with: T3: "When sepsis workup is negative but ferritin > 5,000, I will 
 | `include_pathology_imaging` | Adds slide stubs for path / imaging with caption + teaching point |
 | `include_audience_polling` | Adds polling stems (clicker / Poll Everywhere format) |
 | `align_to_MOC` | Adds CME / MOC eligibility note + ABMS-style learning objectives |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Filling PMID, DOI, journal and response-rate slots from memory, producing identifiers that resolve to a different paper | Leave `[PMID: verify]` with a search string (first author + year + topic) instead of a number; `Y` in the Verified column means someone resolved the identifier to the stated title and finding |
+| Quoting a composite score for the case (H-Score 250, "~99% probability") that the stage data cannot reproduce | Recompute the score from variables actually given in the stages (temperature, organomegaly, number of cytopenias, ferritin, triglycerides, fibrinogen, AST, marrow findings, immunosuppression); if a variable is missing, the stated score is unsupported |
+| A deck title, slide title or early facilitator note that names the tension point while the arc defers the reveal to Stage 4 | Apply the reveal check to every string the audience sees — title, slide headers, polling stems — not only stage content |
+| Putting a paper older than three years (relative to the presentation date) in the "recent paper" slot | Compute publication year against the presentation date; if no qualifying paper is available, say so rather than relabelling an older one |
+| Takeaway cut-offs ("ferritin > 5,000") that do not appear in the source cited beside them | Trace each number in each takeaway to the cited source's own cut-off; a different threshold needs its own source or comes out |
 
 ## Verification Checklist
 

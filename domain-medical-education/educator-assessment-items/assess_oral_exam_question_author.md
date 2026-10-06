@@ -22,7 +22,7 @@ tags:
   - probe-ladder
   - assessment
   - examiner-script
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-assessment-items/assess_short_answer_constructed_response_author.md
   - domain-medical-education/educator-case-writing/case_oral_exam_case_author.md
@@ -154,6 +154,16 @@ Replaced with: [bounded version]
 | `include_pediatric_weight` | Adds explicit weight for weight-based dose questions |
 | `safety_critical_step` | Names a step (e.g., neuromuscular reversal verification) that automatically fails the station if missed |
 | `style_RCS_vs_ABA` | RCS: candidate-leads with examiner punctuation; ABA: examiner-driven probe ladder |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Silent-rescue or redirect lines that name what the Pass anchor rewards ("What's your minimum acceptable TOF for extubation?"), so the candidate passes on the examiner's cue | Read every rescue and redirect against that probe's Pass anchor; strike any line containing the threshold, drug or concept being scored and point to data instead ("What is the monitor telling you?") |
+| Pass anchors that list the author's entire preferred plan, so a candidate with a safe alternative plan falls to Borderline | Split each Pass anchor into essential elements and acceptable alternatives; the Examiner Norms rule on defensible practice only works when the anchor marks which elements are optional |
+| A pass threshold that depends on an optional probe (P5) or on probes the time budget cannot reach | Check the threshold against the ladder: every probe it names is mandatory, and probe caps plus stem reading and transitions sum to ≤ `time_budget_minutes` |
+| Treating the stated κ target as evidence that the item is reliable | Label κ `target — unmeasured` until ≥ 2 examiners have rated the same recorded responses in a calibration session |
+| Auto-fail attached to a step where accepted practice varies, or to a threshold quoted from memory | Assign auto-fail only where the cited source states a firm limit, and check that the number in the anchor matches the source text; otherwise `[VERIFY: current society guideline]` |
 
 ## Verification Checklist
 

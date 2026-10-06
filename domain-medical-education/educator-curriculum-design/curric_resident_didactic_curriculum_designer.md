@@ -22,7 +22,7 @@ tags:
   - conference-schedule
   - ite-aligned
   - acgme-milestones
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_course_map_builder.md
   - domain-medical-education/educator-curriculum-design/curric_vertical_horizontal_integration_audit.md
@@ -214,6 +214,16 @@ Replaced with: PGY1 foundations (application) → PGY2 cardiology-rotation analy
 | `include_well_being_track` | Adds wellness + burnout-prevention sessions |
 | `include_qi_track` | Adds QI / PDSA project block tied to SBP milestone |
 | `include_research_block` | Adds scholarly half-day if program research-track |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| An "ITE %" column typed from memory of an earlier content outline and then used to flag areas as over or under | Take the ITE % column only from the supplied `ite_blueprint` and name its edition; without it, tag the column [VERIFY: current board content outline] and issue no over/under flags |
+| "Curriculum coverage %" estimated rather than computed, and gap fixes ("add 3 endocrine sessions") declared sufficient without recalculating the share | Compute coverage as sessions in the content area ÷ total scheduled sessions for the year, showing both numbers, and recompute after each gap action to confirm the area reaches its blueprint share |
+| MILESTONE COVERAGE counts that are round estimates rather than tallies of the milestone tags in the year schedule | Tally the tags session by session and check that the per-PGY totals reconcile with the number of sessions targeted at that PGY level |
+| A SPIRAL AUDIT reading App → Analysis → Eval because the topic inventory says so, while the PGY3 session's own LOs use application verbs and the noon conference is attended by every year | Check rising Bloom against each session's LO verbs and its real audience; a PGY3 "evaluation" session with application-level LOs is Bloom-flat whatever the inventory claims |
+| An attendance figure presented as an ACGME RC rule when it came from the program or was assumed | Quote the attendance threshold from `attendance_policy`; any attribution to the Review Committee is tagged [VERIFY: specialty program requirements] |
 
 ## Verification Checklist
 

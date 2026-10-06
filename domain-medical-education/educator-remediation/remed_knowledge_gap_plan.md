@@ -23,7 +23,7 @@ tags:
   - study-plan
   - re-assessment
   - competency
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-remediation/remed_clinical_reasoning_plan.md
   - domain-medical-education/educator-remediation/remed_documentation_due_process_letter.md
@@ -120,6 +120,16 @@ Considered: [planning from a global score | "read more" | treating a reasoning e
 | `competency_framework` | Determines goal language + re-assessment blueprint |
 | `confounders` | Adds explicit referral routing (counseling, disability services, wellness) |
 | `evidence_granularity` | Coarse data → triggers the data-request refusal before planning |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Localizing to item topics ("arrhythmia/HF items") when the evidence holds only system subscores, so the item-level detail is invented | Report only the granularity the evidence supports; when subscores are all that exist, list the topic-level data still needed instead of naming items |
+| Treating a low subscore as a confirmed deficit without checking how many items produced it, and filling "Below standard by" with words ("well below") | Record the item count behind each subscore and the numeric distance from the standard; where the count is small, mark the deficit provisional and confirm it with a targeted item set at CP1 |
+| A pass standard of "≥ 50th %ile-equivalent" on a locally assembled item set that has no norm group | Set the standard in the instrument's own units (raw score or percent correct on the named topics) with its standard-setting method, or use an instrument that actually reports percentiles |
+| Root-cause statements ("had the facts but mis-sequenced management") that no input datum supports | Tie each root-cause claim to a specific item response, observed error or teach-back; unsupported causes are listed as hypotheses for CP1 to test |
+| Intervention doses that cannot fit the learner's week (daily 45-minute SRS, 20 qbank items a day and twice-weekly supervised cases on top of clinical duty) | Add up weekly hours across all interventions and compare with the protected time the program can supply; if it does not fit, cut scope to the highest-yield deficits |
 
 ## Verification Checklist
 

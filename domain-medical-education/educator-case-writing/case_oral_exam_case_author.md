@@ -23,7 +23,7 @@ tags:
   - certification
   - high-stakes
   - rubric
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_grand_rounds_case_author.md
   - domain-medical-education/educator-case-writing/case_morning_report_case_author.md
@@ -164,6 +164,16 @@ Any question without all 4 probe branches → REWRITE. (Ensures probing is built
 | `multi_examiner` | Adds a second examiner role (e.g., "junior examiner asks Q4; senior probes") |
 | `include_video_or_image_stimulus` | If an exam allows EKG/imaging stimulus, add it explicitly with reveal timing |
 | `flag_for_remediation` | If sample-fail performance is shown, link to remediation prompt |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Calibration samples whose pass/fail verdict does not follow from their own scores (for instance, a sample scored K3 R2 U2 S3 C2 but described as having two non-Safety axes at ≥ 3 — only K qualifies) | Recompute every sample: list the non-Safety axes scoring ≥ 3, count them, apply the PASS STANDARD rule, and confirm the stated verdict matches |
+| Axis scores in sample performances that no described behavior supports | For each score, point to the sentence in the sample that shows the behavior and to the rubric cell it matches; a score with no supporting behavior is rewritten or re-scored |
+| A curveball that "reveals" information already in the examiner stem (code status listed in the stem and again as the Q5 event) | Diff the curveball text against the stem; it must add a fact the candidate could not already have asked for |
+| Questions with no keyed answer, where the correct response is "not yet" (asking whether septic-shock criteria are met before any vasopressor is on board) | Write the expected answer for each question and check it against the cited definition; a question whose honest answer is conditional gets that condition in the key |
+| Probe-B nudges that introduce data contradicting the stem (a diuretic-based nudge for a patient on no diuretic) | Check every number and medication named in a probe against the stem; anything not in the stem is phrased as an explicit hypothetical ("Suppose the K were…") |
 
 ## Verification Checklist
 

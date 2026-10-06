@@ -22,7 +22,7 @@ tags:
   - simulation
   - decision-points
   - case-writing
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_pbl_case_author.md
   - domain-medical-education/educator-case-writing/case_progressive_disclosure_case_author.md
@@ -169,6 +169,16 @@ Replaced with: [...]
 | `assessment_aligned_to` | Feedback styled to exam-prep idiom (NBME tone vs NCLEX tone) |
 | `include_pharmacist_consult_node` | Adds a node where a pharmacist objection forces a re-check (useful for med-error teaching) |
 | `include_team_dynamics_branch` | Adds a non-clinical decision (call attending? page consult?) for resident-level learners |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Filling the OUTCOMES line ("reached via paths 1, 3, 5") from the design intent rather than from the PATH ENUMERATION, so an outcome cites a path number that actually terminates somewhere else | Before release, walk every numbered path from N0 to its terminal node and rebuild each outcome's path list from that walk; an outcome-to-path pairing that disagrees with the enumeration is a defect, not a typo |
+| Recording "Cosmetic choices found: none" because each choice points to a different node ID, while two of those nodes (e.g., N3-blind and N3.A) present the same vitals, findings and next question | Compare consequence nodes by content, not by label: choices that lead to nodes with identical patient state and identical next decision are cosmetic whatever their IDs |
+| A consequence node whose vitals, exam or results do not follow from the choice just made (blood pressure unchanged after a preload-dropping action; a lab resulted before the stated time advance allows) | For each consequence node, write the one-line physiologic or timing reason it follows from the choice, and check that vitals, exam and result timing move together across the `time_horizon` |
+| Keying a "best choice" or firing a kill-switch on a time window, threshold or contraindication recalled from memory, when the governing guideline lists the option as a defensible alternative | Name the source type for every window, threshold or contraindication that keys a choice and tag it [VERIFY: current guideline edition]; a recognized alternative is routed to "acceptable" with its trade-off, not to a kill-switch |
+| Coverage-map rows that pair a node with an LO the learner never has to use there | Test each node–LO pair by asking what a learner who lacks that LO would choose at the node; if they would still reach the best option, the LO is not surfaced there and the row is removed |
 
 ## Verification Checklist
 

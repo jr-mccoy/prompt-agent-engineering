@@ -22,7 +22,7 @@ tags:
   - blueprint
   - alignment
   - constructive-alignment
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_learning_objective_author.md
   - domain-medical-education/educator-curriculum-design/curric_session_blueprint_designer.md
@@ -159,6 +159,16 @@ Replaced with: explicit Wk-5 session author task + final-exam item-author task b
 | `pre_existing_resources` | Identifies which sessions inherit existing materials vs need new authoring |
 | `include_integration_audit` | Adds vertical / horizontal integration check (see curric_vertical_horizontal_integration_audit.md) |
 | `include_progression_pacing` | Adds week-by-week pacing report |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Assessment rows whose per-CLO item counts do not add up to the Items column (15 + 12 + 15 + 0 = 42 listed against a 50-item midterm), hiding where the remaining items point | Recompute every row of ASSESSMENT PLAN × LO ALIGNMENT: per-CLO counts must sum to the item total, and any remainder is reported as unmapped items or as a CLO missing from the row |
+| A coverage matrix drafted separately from the session inventory, so "Sessions covering" lists a session whose inventory row tags different CLOs | Build the CLO × session matrix by inverting the SESSION INVENTORY table, then confirm each listed session carries that CLO in its "Covers CLO(s)" cell and that "# sessions" equals the length of the list |
+| Counting a CLO as covered because a session is tagged to it, although none of that session's SLOs decompose the CLO's behavior | For each coverage claim, quote the session LO that advances the CLO; a tag with no matching SLO is recorded as a coverage gap |
+| Bloom levels in the coverage matrix assigned by session format (small group = Analysis, lecture = Application) instead of from the SLO verbs and conditions | Read each Bloom level off the SLO's action verb and condition; format shows only an opportunity for that level |
+| Hours that do not sum to `total_hours`, or a PROGRESSION CHECK marked "yes" while an evaluation-level assessment is dated before the session that scaffolds it | Add up the Hours column against `total_hours`, and compare each assessment's week with the weeks of the sessions covering its CLOs before passing the progression check |
 
 ## Verification Checklist
 

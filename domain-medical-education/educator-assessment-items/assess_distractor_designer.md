@@ -21,7 +21,7 @@ tags:
   - item-writing
   - misconceptions
   - assessment
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md
   - domain-medical-education/educator-assessment-items/assess_emi_extended_matching_author.md
@@ -142,6 +142,16 @@ Replaced with: [...]
 | `exam_style` | Adjusts homogeneity preference (NBME prefers diagnoses or next-steps; NCLEX often action verbs) |
 | `pharmacology_heavy` | Forces ≥ 2 Type-6 distractors |
 | `reject_stem_on_flaw` | If `no`, generates distractors with a warning block instead of refusing |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Writing an exclusion rationale for a distractor that is actually a defensible choice for the stem as written (e.g., dose-adjusted LMWH with anti-Xa monitoring, which some valve protocols use) | Solve the item blind before the cluing audit: hide the key, read only stem + lead-in, and argue for each distractor; any option you can defend from stem data alone is a second key — rewrite it or add the excluding feature to the stem |
+| Filling "Misconception named" with an error no learner at `learner_level` actually makes, so the option is never chosen | Tie each misconception to the supplied `target_misconception_list`, prior item-analysis data, or a documented error pattern; if it was inferred, tag it `[inferred]` so the first item analysis can confirm or retire it |
+| Marking "Length within ±25% of key" pass by eye | Count characters of the key and of each distractor and show the numbers; the percentage is computed, not judged |
+| Rationales that rest on trial names, renal cut-offs or label restrictions recalled from memory | Each fact that makes a distractor wrong is a fact the key depends on; mark it `[VERIFY: current label / guideline]` unless a source was supplied, because an outdated threshold silently turns a distractor into a correct answer |
+| Passing "Homogeneous category" when all options are drugs but the key carries a monitoring target and the distractors carry doses, or vice versa | Homogeneity covers level of detail: check that every option specifies the same elements (agent, dose or target, route) so the most precise option does not cue the key |
 
 ## Verification Checklist
 

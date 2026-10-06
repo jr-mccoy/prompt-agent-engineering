@@ -23,7 +23,7 @@ tags:
   - documentation
   - formal-letter
   - fairness
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-remediation/remed_knowledge_gap_plan.md
   - domain-medical-education/educator-remediation/remed_communication_professionalism_plan.md
@@ -130,6 +130,16 @@ Considered: [a labeled claim | an invented appeal timeline | a vague expectation
 | `procedural_rights` | If absent → placeholders + a hard flag to insert policy language |
 | `tone_constraints` | Adjusts register while preserving factual discipline |
 | `add_response_section` | Expands the learner-response space + a meeting-offer line |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Ticking "[x] dated/sourced/observable" in the fairness audit while evidence lines still read "[date]" | Inspect every evidence line for a real date, a named observer role and an observable act; any placeholder date unticks the box and is added to MISSING-ELEMENT FLAGS |
+| An evaluative adjective surviving inside an "observable" evidence line ("curt communication", "careless sign-out") | Replace the adjective with the words or actions observed, or flag the line as needing the observer's account; the letter describes conduct, never the learner's character or state of mind |
+| Consequence wording that names a step the supplied policy does not contain ("which may include probation", a committee name, an appeal window) | Take every consequence, right, deadline and committee from the supplied policy text; anything else becomes a placeholder tagged [VERIFY: institutional policy], even when softened with "may" |
+| An expectation whose standard the named checkpoint cannot measure ("100%, every instance" monitored by a weekly log) | For each row of EXPECTATIONS & TIMELINE, confirm the checkpoint instrument would detect a single miss; otherwise change the instrument or restate the standard as what it can measure |
+| Evidence or observers paraphrased differently from the remediation plan the letter draws on | Cross-check each evidence line against the source plan's evidence table (same date, same observer, same act) before the letter goes for signature |
 
 ## Verification Checklist
 

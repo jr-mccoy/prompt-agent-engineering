@@ -109620,7 +109620,7 @@
         "content-validity"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md",
         "domain-medical-education/educator-assessment-items/assess_question_bank_audit.md",
@@ -109652,7 +109652,7 @@
         "distractors"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md",
         "domain-medical-education/educator-assessment-items/assess_distractor_designer.md",
@@ -109683,7 +109683,7 @@
         "distractor-performance"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md",
         "domain-medical-education/educator-assessment-items/assess_distractor_designer.md",
@@ -109714,7 +109714,7 @@
         "assessment"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md",
         "domain-medical-education/educator-assessment-items/assess_emi_extended_matching_author.md",
@@ -109745,7 +109745,7 @@
         "marking-scheme"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-assessment-items/assess_short_answer_constructed_response_author.md",
         "domain-medical-education/educator-assessment-items/assess_oral_exam_question_author.md",
@@ -109839,7 +109839,7 @@
         "examiner-script"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-assessment-items/assess_short_answer_constructed_response_author.md",
         "domain-medical-education/educator-case-writing/case_oral_exam_case_author.md",
@@ -109901,7 +109901,7 @@
         "equating"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-assessment-items/assess_blueprint_designer.md",
         "domain-medical-education/educator-assessment-items/assess_question_bank_audit.md",
@@ -109932,7 +109932,7 @@
         "aging"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md",
         "domain-medical-education/educator-assessment-items/assess_item_analysis_review.md",
@@ -110029,7 +110029,7 @@
         "multi-perspective"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_oral_exam_case_author.md",
         "domain-medical-education/educator-case-writing/case_mm_case_author.md",
@@ -110061,7 +110061,7 @@
         "teaching-takeaways"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_morning_report_case_author.md",
         "domain-medical-education/educator-case-writing/case_mm_case_author.md",
@@ -110094,7 +110094,7 @@
         "case-writing"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_grand_rounds_case_author.md",
         "domain-medical-education/educator-case-writing/case_morning_report_case_author.md",
@@ -110126,7 +110126,7 @@
         "chief-resident"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_grand_rounds_case_author.md",
         "domain-medical-education/educator-case-writing/case_mm_case_author.md",
@@ -110159,7 +110159,7 @@
         "rubric"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_grand_rounds_case_author.md",
         "domain-medical-education/educator-case-writing/case_morning_report_case_author.md",
@@ -110190,7 +110190,7 @@
         "small-group-teaching"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_tbl_application_exercise_author.md",
         "domain-medical-education/educator-case-writing/case_virtual_patient_script_author.md",
@@ -110253,7 +110253,7 @@
         "case-conference"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_pbl_case_author.md",
         "domain-medical-education/educator-case-writing/case_morning_report_case_author.md",
@@ -110347,7 +110347,7 @@
         "small-group"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_pbl_case_author.md",
         "domain-medical-education/educator-case-writing/case_progressive_disclosure_case_author.md",
@@ -110440,7 +110440,7 @@
         "case-writing"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_pbl_case_author.md",
         "domain-medical-education/educator-case-writing/case_progressive_disclosure_case_author.md",
@@ -110508,7 +110508,7 @@
         "expectations"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_course_map_builder.md",
         "domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md",
@@ -110539,7 +110539,7 @@
         "constructive-alignment"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_learning_objective_author.md",
         "domain-medical-education/educator-curriculum-design/curric_session_blueprint_designer.md",
@@ -110698,7 +110698,7 @@
         "curriculum-design"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_lecture_outline_designer.md",
         "domain-medical-education/educator-curriculum-design/curric_session_blueprint_designer.md",
@@ -110730,7 +110730,7 @@
         "faculty-teaching"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_learning_objective_author.md",
         "domain-medical-education/educator-curriculum-design/curric_flipped_classroom_module_designer.md",
@@ -110793,7 +110793,7 @@
         "retrieval-practice"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_lecture_outline_designer.md",
         "domain-medical-education/educator-curriculum-design/curric_flipped_classroom_module_designer.md",
@@ -110922,7 +110922,7 @@
         "acgme-milestones"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_course_map_builder.md",
         "domain-medical-education/educator-curriculum-design/curric_vertical_horizontal_integration_audit.md",
@@ -110954,7 +110954,7 @@
         "alignment"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_learning_objective_author.md",
         "domain-medical-education/educator-curriculum-design/curric_lecture_outline_designer.md",
@@ -111017,7 +111017,7 @@
         "audit"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_course_map_builder.md",
         "domain-medical-education/educator-curriculum-design/curric_clinical_clerkship_orientation_designer.md",
@@ -111079,7 +111079,7 @@
         "deliberate-practice"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-remediation/remed_knowledge_gap_plan.md",
         "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md",
@@ -111111,7 +111111,7 @@
         "due-process"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-remediation/remed_documentation_due_process_letter.md",
         "domain-medical-education/educator-remediation/remed_return_to_clinical_duty_plan.md",
@@ -111142,7 +111142,7 @@
         "competency"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-remediation/remed_clinical_reasoning_plan.md",
         "domain-medical-education/educator-remediation/remed_documentation_due_process_letter.md",
@@ -111205,7 +111205,7 @@
         "fairness"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-remediation/remed_knowledge_gap_plan.md",
         "domain-medical-education/educator-remediation/remed_communication_professionalism_plan.md",
@@ -111236,7 +111236,7 @@
         "competency-revalidation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-remediation/remed_technical_skills_plan.md",
         "domain-medical-education/educator-remediation/remed_communication_professionalism_plan.md",
@@ -111267,7 +111267,7 @@
         "simulation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-remediation/remed_return_to_clinical_duty_plan.md",
         "domain-medical-education/educator-simulation-design/sim_low_fidelity_scenario_author.md",
@@ -115589,7 +115589,7 @@
         "prioritization"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-20",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-case-writing/case_tbl_application_exercise_author.md",
         "domain-medical-education/educator-case-writing/case_oral_exam_case_author.md",
