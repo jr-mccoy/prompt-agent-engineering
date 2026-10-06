@@ -2,6 +2,15 @@
 title: "Step-by-Step Illustrated Procedure Diagram - Image Generation Prompt"
 category: medical-education
 description: "Template-driven image generation prompt for creating an enumerated, step-by-step illustrated clinical procedure sequence (e.g., sterile technique, device insertion) where the user supplies every step from expert-verified sources"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - procedure
@@ -10,7 +19,7 @@ tags:
   - sterile-technique
   - skills-training
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 ---
 
 # Step-by-Step Illustrated Procedure Diagram - Image Generation Prompt
@@ -215,6 +224,21 @@ This prompt applies the 8 core techniques from [IMAGE_GENERATION_GUIDE.md](../IM
 6. **Physical Context Anchoring** — "skills-lab poster/handout for [audience]" sets density and reading flow.
 7. **Deliverables Locking** — EXACTLY ONE IMAGE, locked orientation/dimensions, locked panel count = step count.
 8. **Validation Checklist** — final self-audit including a panel-vs-step count check.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a panel because its caption matches the source — the drawing under a verbatim caption can show different technique (fingers not interlaced under "palm to palm with fingers interlaced", a sterile glove touching the outside of its wrapper), and learners copy the picture.
+- Trust the step badges alone for order: in a 3 x 2 grid the arrow from STEP 2 to STEP 3 must cross back to the left, and models often draw snake-order arrows that lead the eye 1-2-4-3 while every badge is correct.
+- Pass mirrored or swapped hands — in gloving and insertion panels, which hand holds or touches what is part of the technique being taught.
+- Let equipment appear that no "Illustrate:" note listed; gloves drawn on a hand-rub poster suggest gloves substitute for hand hygiene.
+
+✅ **DO:**
+- Review once with the captions covered: name the action each illustration shows, then compare it to that step's "Illustrate:" note.
+- Follow the arrows from STEP 1 and write down the panel sequence; it must run 1 to N with no repeat and no skip.
+- For sterile procedures, mark in every panel what touches what (sterile vs non-sterile surface) before expert review, and flag any panel where that boundary cannot be seen.
 
 ---
 

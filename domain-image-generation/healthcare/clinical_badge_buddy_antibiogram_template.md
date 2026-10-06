@@ -2,6 +2,15 @@
 title: "Clinical Badge Buddy - Antibiotic Spectrum / Antibiogram (Template)"
 category: medical-education
 description: "Template-driven image generation prompt for creating printable clinician badge buddy antibiotic spectrum / coverage reference cards driven by the user's local antibiogram and stewardship guidance"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - clinician
@@ -13,7 +22,7 @@ tags:
   - infectious-disease
   - template
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - ./nursing_badge_buddy_critical_drips.md
@@ -415,6 +424,22 @@ Negative prompt: `"badge, lanyard, clip, holder, 3d, mockup, photo, gradient, sh
 
 ### Problem: Only one image generated
 **Add:** `"Generate EXACTLY 2 images. NOT 1. NOT 3. EXACTLY 2 separate images."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill a cell your local report is silent on from textbook spectrum, a national or regional surveillance report, or another hospital's antibiogram — a borrowed Y is indistinguishable from a local one once printed. Use your legend's "not tested / insufficient isolates" mark instead.
+- Convert percent-susceptible into Y / N / V by feel; without a written cutoff the marks look objective while the threshold behind them is invented.
+- Accept a matrix in which every mark is one you supplied but a row or column has shifted (Pseudomonas marks landing under the Anaerobes header) — each cell passes "supplied mark" and the card is still wrong.
+- Merge populations on one card: ICU, house-wide inpatient and outpatient urine isolates report different susceptibility for the same drug–organism pair.
+
+✅ **DO:**
+- Before filling, give every mark a source row — antibiogram year, unit/population, organism, drug, % susceptible, isolate count; organisms below your lab's reporting minimum (commonly 30 isolates) get the insufficient-data mark.
+- Print the cutoff in the legend from your own source, e.g. "Y = ≥[X]% susceptible, [YEAR] [UNIT] antibiogram".
+- Verify by coordinates on a 100%-scale print: for every cell read row header + column header + mark against the source table, then compare per-row counts of Y, N and V with your fill.
+- On card B, check each "First line" and "Alt / PCN allergy" regimen against the stewardship document for that same syndrome, not against what is usual at other institutions.
 
 ---
 

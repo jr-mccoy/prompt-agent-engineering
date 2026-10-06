@@ -6,7 +6,16 @@ target_models:
   - dall-e-3
   - midjourney
   - stable-diffusion
-updated: "2026-04-14"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -113,3 +122,18 @@ Decision/action/escalation nodes (in order with their outgoing labels): {{paste 
 - Three-column lookup table → `pacu_vital_signs_range_chart_meta.md`
 - Scale comparison → `pacu_pain_scale_comparison_meta.md`
 - Timeline → `pacu_post_op_timeline_infographic_meta.md`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the LAYOUT illustrations leak onto the poster: "Apply O2 → reassess in 5 min" and "because SpO2 < 88% x 2 min" are examples in the spec, and a model that renders them verbatim prints an interval and a trigger nobody approved while checklist items 6 and 7 still pass.
+- Keep the INPUTS sample trigger ("SpO2 < 92% in PACU adult") in BOX 1 unless the facility protocol supplied that value; without one, the entry box reads `per facility protocol`.
+- Pass "every arrow labeled" when a diamond's Yes and No are swapped — the shape test passes and the clinical logic inverts.
+- Take depth ≤ 4 as proof nothing was lost; a model that hits the cap silently prunes branches from the pasted list.
+
+✅ **DO:**
+- Trace the rendered tree against the `pacu-algorithm-flowchart-designer` branch list: count diamonds, rectangles and hexagons, and for each diamond confirm its Yes and No arrows land on the same nodes as in the source.
+- Tag every number in the pasted branch list with its source (facility protocol or provider order set) before generating; afterwards, each numeral on the poster must map to a tagged value, and anything unmapped is removed.
+- Confirm hexagons name a role and that action rectangles describe nursing actions, with any drug or dose wording reduced to "per provider order".

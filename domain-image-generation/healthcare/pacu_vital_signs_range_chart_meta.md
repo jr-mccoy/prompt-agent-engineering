@@ -5,7 +5,16 @@ target_models:
   - nano-banana
   - dall-e-3
   - midjourney
-updated: "2026-04-14"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -95,3 +104,18 @@ CONTENT ROWS (paste verbatim into the data rows, in order):
 
 - Pediatric chart — change title and rows; footer caveat should add "pediatric ranges are weight-sensitive; verify per provider order".
 - Post-spinal chart — add a Block Level row; see `pacu_dermatome_block_level_meta.md`.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the INPUTS example row ("HR adult; 60–100 bpm per source") or the action example "document and recheck in N min" reach the canvas — models render examples as content, and "N" is a slot they fill with a number.
+- Accept a range tagged "per source" with no named source behind it; on a laminated card "per source" reads as authority.
+- Pass checklist item 5 when the verb sits beside the wrong range after a row shift or merge — a misaligned table pairs one parameter's action with another's range.
+- Accept Action cells that move into treatment ("give bolus", "titrate") without "per provider order"; an action verb is present and the scope is wrong.
+
+✅ **DO:**
+- Require each pasted triple to carry its provenance — facility protocol document or provider order set — before generating; any range without one renders as `per facility protocol`.
+- Rebuild the table from the image (row count, then each Parameter / Range / Action triple) and diff it against the CONTENT ROWS paste, checking units and operators character by character (≤ becoming <, a dropped digit).
+- Count amber stripes and confirm they fall exactly on the rows whose action is call / notify in the input.

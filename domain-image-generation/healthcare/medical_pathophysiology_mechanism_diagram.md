@@ -2,6 +2,15 @@
 title: "Pathophysiology / Disease-Mechanism Flow Diagram - Image Generation Prompt"
 category: medical-education
 description: "Template-driven image generation prompt for creating a disease-mechanism flow diagram (cause -> mechanism -> effect) where the user supplies every node and causal link from expert-verified sources"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - pathophysiology
@@ -11,7 +20,7 @@ tags:
   - disease-mechanism
   - education
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 ---
 
 # Pathophysiology / Disease-Mechanism Flow Diagram - Image Generation Prompt
@@ -232,6 +241,21 @@ This prompt applies the 8 core techniques from [IMAGE_GENERATION_GUIDE.md](../IM
 6. **Physical Context Anchoring** — "lecture slide / handout / study poster for [audience]" sets density and flow direction.
 7. **Deliverables Locking** — EXACTLY ONE IMAGE, locked orientation/dimensions and flow direction.
 8. **Validation Checklist** — final self-audit including node-count and arrow-direction checks.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat "+" / "−" arrow labels as ornaments — a minus rendered as a hyphen, or dropped, turns a "decreases" link into an unsigned arrow that readers assume means "increases".
+- Pass a node whose label kept its shape but lost or flipped a qualifier: "Decreased" → "Increased", "left" → "right", "venous" → "arterial". Node and arrow counts are unchanged.
+- Accept a loop the LINK list does not contain; models like to close heart-failure and endocrine chains into compensatory feedback cycles, and a cycle looks more complete than the simplified chain you supplied.
+- Let the layout assert a relationship: two unlinked nodes stacked in the same rank, or two arrows merged into one shared shaft, read as simultaneity or a common cause.
+
+✅ **DO:**
+- Read an edge list off the printed image (from-node → to-node, sign) and diff it against the LINK list: same count, same pairs, same direction, same sign.
+- Check every node's directional and anatomical words (increased/decreased, hyper/hypo, left/right, pre/post) against the source sentence it was taken from.
+- Keep a written list of the source steps you left out of the chain and hand it to the expert reviewer, so the simplification is judged against the source rather than against the picture.
 
 ---
 

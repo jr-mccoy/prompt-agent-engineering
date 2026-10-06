@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-04-14"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -93,3 +102,18 @@ VALIDATION CHECKLIST:
 
 - Orthopedic-heavy unit — swap NG for wound VAC.
 - Thoracic-heavy unit — double chest-tube row (small-bore vs. large-bore).
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the Foley "Normal" cell resolve `> {{per facility}} mL/kg/hr` into a number — a unit printed beside a placeholder practically asks the model for one, and the rendered urine-output figure looks like a facility value.
+- Accept "pH per source" (NG) or "> facility threshold output" (chest tube) rendered as a specific pH or millilitre figure.
+- Pass the Glyph column because the drawings are line art — a chest drain missing its water-seal chamber, or a JP bulb drawn like a Hemovac, misteaches device recognition while satisfying checklist item 3.
+- Accept a truncated action — "irrigate" without "per order", "stop infusion" without "per protocol" — that turns an ordered intervention into an apparently independent one.
+
+✅ **DO:**
+- After rendering, list every numeral and unit in the Normal and Watch-For → Do cells of all six rows; each must appear in the prompt's own text or trace to a facility value the requester supplied, else it is removed.
+- Check every action cell ends with the qualifier the prompt gave it ("per order", "per protocol", "notify surgeon", "notify anesthesia").
+- Have a unit nurse name each glyph with its label covered; a glyph that cannot be identified unaided is regenerated or redrawn in a vector tool.

@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-05-15"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -115,3 +124,18 @@ VALIDATION CHECKLIST:
 - New-grad version: same template, different cell distribution per the orientee's specific timeline.
 - Per-competency single-row strip: enlarge a single row for a "this one competency" focus poster.
 - B&W print version: replace teal/amber with patterned fills (diagonal lines for D, solid for I) for grayscale printing.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the model fill cells the timeline did not specify — 13 rows by 11 weeks is 143 cells, and gaps get filled by pattern (an "I" run spreading rightward); checklist item 3 passes because every cell has a token.
+- Treat an "I" cell as sign-off: on a breakroom wall an "I" beside "Regional / neuraxial block" or "Airway & breathing" can be read as permission to work unsupervised, when it only marks the expected trajectory.
+- Accept "Independent" for any competency whose tasks need a provider order or a unit validation the orientee does not yet hold.
+- Pass a cell whose fill and letter disagree — an amber cell lettered "C" still has "both a fill color and a letter token".
+
+✅ **DO:**
+- Recount: rendered rows equal pasted competencies, columns run Week 0 to Week N without gaps, and each row's token sequence, transcribed left to right, matches the skill-acquisition timeline input.
+- Check fill-to-token agreement cell by cell (I teal, C light teal, D amber, N gray), and on the B&W variant confirm each pattern maps to one letter only.
+- Confirm "Not a sign-off rubric." and "per facility orientation program" survive verbatim, and post the grid beside — never instead of — the unit's signed competency validation record.

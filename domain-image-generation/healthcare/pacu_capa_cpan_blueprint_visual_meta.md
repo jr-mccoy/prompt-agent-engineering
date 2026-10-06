@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-05-15"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -119,3 +128,18 @@ FORBIDDEN: 3D ring, donut UI dashboard, exploded slices, drop shadow on segments
 ## Caution
 
 The toolkit explicitly does not maintain a baseline of ABPANC blueprint weights. The candidate is responsible for sourcing the current blueprint and pasting it accurately. If the candidate has not pasted the full domain list, the chart is incomplete, not approximated.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill a missing domain or percentage from recall of "the" blueprint — ABPANC revises blueprints, and a remembered figure looks as authoritative as a pasted one [VERIFY: current ABPANC blueprint].
+- Accept bar-end labels that match the input while bar lengths do not — models size bars by eye, so a shorter bar can carry the larger percentage and still pass checklist item 4.
+- Pass the ring variant's centre "100%" when the pasted weights do not sum to 100 (rounding, or an omitted domain); the label asserts a total the data lacks.
+- Render a zero-length bar for a domain whose weight was never pasted — a 0% bar reads as an official weight of zero; omit it and say "incomplete" in the subtitle instead.
+
+✅ **DO:**
+- Sum the pasted weights before generating and note the total; after rendering, re-read each label, re-sum, and measure two bars against the x-axis to confirm length tracks the label.
+- Count domains: rendered bars equal pasted rows, in the same order and wording, with no abbreviation that merges two domains.
+- Make the paste traceable — the candidate records the blueprint's effective date and where on ABPANC's site it came from, and the footer `{{date}}` shows that paste date rather than one the model chose.

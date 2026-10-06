@@ -2,6 +2,15 @@
 title: "Patient Anatomy Explainer Diagram - Image Generation Prompt"
 category: medical-education
 description: "Template-driven image generation prompt for a simple, patient-friendly labeled anatomy/body diagram to explain a procedure or condition. NOT a clinical-grade medical illustration. Large type, plain labels, high contrast. The model renders clinician-supplied labels only."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - patient-education
@@ -10,7 +19,7 @@ tags:
   - health-literacy
   - plain-language
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - ./patient_education_condition_infographic.md
@@ -342,6 +351,21 @@ Hard to control label accuracy — use only with heavy clinician review.
 
 ### Problem: Rounded corners / gradients
 **Add:** `"Sharp 90-degree page corners only. Solid flat fills only. Any gradient or rounded corner = incorrect."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat "facing right" as laterality — the view direction and which knee (arm, kidney, breast) is drawn are separate instructions, and a mirrored left knee with every label correct still convinces the patient.
+- Let the highlight land on a surface the chosen view cannot show: "the inside of the knee" in a side view from the outside gets an orange star wherever something is visible, and it looks deliberate.
+- Accept a plain label pointing at a near neighbour ("Cushion (cartilage)" on the kneecap, "Thigh bone" on the thigh muscle); in a deliberately simplified drawing the patient has no way to catch it.
+- Let "What this shows" describe a different procedure from the planned one (repair vs removal, inner vs outer side of the joint) or carry any medicine or dose text — neither belongs on this diagram.
+
+✅ **DO:**
+- Check the drawn side and the highlight against the booked procedure — site and side as written on the consent or surgical booking.
+- Score the rendered "What this shows" sentences with a readability formula (e.g., Flesch-Kincaid grade) and count words per sentence; scoring the fill you typed does not prove what printed.
+- Give the print to a non-clinician, ask them to point to where the surgeon will work and say what it is; a wrong answer is a labeling or highlight defect, not a patient failing.
 
 ---
 

@@ -2,6 +2,15 @@
 title: "Clinical Badge Buddy - ACLS / Code Blue Quick Reference"
 category: medical-education
 description: "Image generation prompt for creating printable clinician badge buddy reference cards for ACLS / code blue algorithms (arrest rhythms, code drug doses, H's & T's)"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - clinician
@@ -12,7 +21,7 @@ tags:
   - resuscitation
   - emergency
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - ./nursing_badge_buddy_critical_drips.md
@@ -457,6 +466,22 @@ Negative prompt: `"badge, lanyard, clip, holder, 3d, mockup, photo, gradient, sh
 
 ### Problem: Only one image generated
 **Add:** `"Generate EXACTLY 2 images. NOT 1. NOT 3. EXACTLY 2 separate images."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept front BOX 1 because it reads like the VF/pVT sequence you were taught — a model that renumbers steps, or moves "Epi 1 mg" onto the line after the wrong SHOCK, produces an algorithm a certified reader skims straight past.
+- Count a box as faithful when its parentheticals vanished to fit 6.5 pt: "(2nd dose 150 mg)", "(max 3 mg)" and "(10/min if advanced airway)" are the lines most often cut, and the box still looks finished.
+- Read units from context: "J" and "mg", "mg" and "mg/kg", "q3-5 min" and "q3-5 h" are a glyph or two apart, and a joule value that drifts from DEFIBRILLATION into CODE DRUGS still looks like a number in the right place.
+- Take the ticked "All doses/steps typeset EXACTLY as supplied" line of the FINAL VALIDATION CHECK as evidence — that line is the model grading its own output.
+
+✅ **DO:**
+- Proof a 100%-scale print (4.5" x 2.75"), not the screen image: in all 12 boxes read every numeral, unit, comparator and "->" against your code protocol, ticking each line on a printed copy of the source.
+- Count the numbered steps in each algorithm box (6 in front BOX 1 and 4 in front BOX 2 as supplied) and confirm the numbering is contiguous and in source order.
+- Where one box holds several drugs (CODE DRUGS, BRADYCARDIA, TACHYCARDIA), confirm each dose and route sits on the line of the drug it belongs to.
+- Have a second clinician who did not fill the template read the printed card aloud while you follow the protocol; any line either of you hesitates on is proofed again.
 
 ---
 

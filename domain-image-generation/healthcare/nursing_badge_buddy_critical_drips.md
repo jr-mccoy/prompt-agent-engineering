@@ -2,6 +2,15 @@
 title: "Nursing Badge Buddy - Critical Care Drips"
 category: medical-education
 description: "Image generation prompt for creating printable nursing badge buddy reference cards for ICU/critical care medication drips"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - nursing
@@ -11,7 +20,7 @@ tags:
   - critical-care
   - vasopressors
   - image-generation
-updated: "2026-01-28"
+updated: "2026-10-06"
 ---
 
 # Nursing Badge Buddy - Critical Care Drips
@@ -414,6 +423,22 @@ The main prompt above is optimized for these models. Key elements:
 
 ### Problem: Only one image generated
 **Add:** `"Generate EXACTLY 2 images. NOT 1. NOT 3. EXACTLY 2 separate images."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat unitless lines as complete. "Start: 0.05", "Titrate: 0.02 q3 min" and the dopamine bands ("Renal: 0.5-3") print with no unit, so the reader — or a model tidying the box — supplies mcg/min, mcg/kg/min or mg/hr from habit.
+- Use the Medication Content Reference tables as the check: they were written alongside this prompt, not pulled from your pharmacy's standard concentrations or smart-pump library.
+- Let sound-alike pairs pass at 8 pt — CARDENE and CARDIZEM sit on opposite cards, PRECEDEX and PROPOFOL share one, and a generic in parentheses can attach to the wrong brand ("CARDIZEM (nicardipine)").
+- Miss a dropped "/kg" on a Max line: for a 70 kg patient, "1 mcg/min" printed in place of "1 mcg/kg/min" is a 70-fold change in the ceiling.
+- Read the footer "Verify orders before administration" as the card's verification; it asks the nurse to check the order, not anyone to check the card.
+
+✅ **DO:**
+- Before generating, rewrite every number in the BOX assignments as value + unit + rate basis from your institution's drip standards, so no line depends on the reader's assumption.
+- After generating, check all 12 boxes on a 100%-scale print against the smart-pump drug library — brand, generic, concentration and diluent, start, titration step and interval, max — and confirm each box has the same line count as its assignment.
+- File the proof copy initialled by the pharmacist who maintains the pump library, with the library version it was checked against, so a library update tells you which cards to reprint.
 
 ---
 

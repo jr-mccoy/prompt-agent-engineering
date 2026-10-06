@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-04-14"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -96,3 +105,18 @@ VALIDATION CHECKLIST:
 
 - Pediatric — adjust body proportions in prompt ("pediatric stylized torso outline"); add caveat "pediatric dermatomes are compressed — use weight and developmental stage guidance".
 - Epidural coverage version — show catheter insertion zone and typical spread pattern, per source.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept "all dermatome lines C2–S5 labeled" when the result is an evenly spaced ladder of stripes down the trunk — levels that map to the arms and legs have no truthful band on a torso-only figure, yet the label count passes.
+- Trust the mirrored labelling unchecked: labels sit left of the front figure and right of the back figure, so a flipped figure, or front landmarks drawn on the back view, puts a level on the wrong side — and no checklist item tests side.
+- Let the side bar's 5 rows pass beside only 4 highlighted bands; the L4 "perineal / saddle block" row has a swatch matching no band, so either the band or the row is wrong, and that level is confirmed against the reviewer's source, not this prompt.
+- Read a "T10" label as proof the band sits at the umbilicus — the model can draw the band at the costal margin and the label still says T10.
+
+✅ **DO:**
+- Count labels on each figure — 29 from C2 to S5 — and confirm they run cranial to caudal with no skips, duplicates or side swaps.
+- On a printout, have the reviewer mark where each highlighted band falls relative to its drawn landmark (nipple line, xiphoid, umbilicus, inguinal) and confirm band, label and side-bar row agree for every level.
+- Name the dermatome source (atlas or anesthesia text, by chapter) in the request and on the print file; where a professionally illustrated map exists, trace from it rather than accept the model's anatomy.

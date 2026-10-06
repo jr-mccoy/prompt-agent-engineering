@@ -97725,7 +97725,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Image generation prompt for creating printable clinician badge buddy reference cards for ACLS / code blue algorithms (arrest rhythms, code drug doses, H's & T's)",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "clinician",
@@ -97738,7 +97747,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "./nursing_badge_buddy_critical_drips.md",
@@ -97755,7 +97764,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for creating printable clinician badge buddy antibiotic spectrum / coverage reference cards driven by the user's local antibiogram and stewardship guidance",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "clinician",
@@ -97769,7 +97787,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "./nursing_badge_buddy_critical_drips.md",
@@ -97786,7 +97804,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Image generation prompt for creating printable clinician badge buddy reference cards for common laboratory value normal ranges (CBC, BMP/CMP, coags, ABG, cardiac markers)",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "clinician",
@@ -97798,7 +97825,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "./nursing_badge_buddy_critical_drips.md",
@@ -97815,7 +97842,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for creating printable clinician badge buddy medication-dosing reference cards that the user fills with their own institution-verified drugs and doses",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "clinician",
@@ -97828,7 +97864,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "./nursing_badge_buddy_critical_drips.md",
@@ -97845,7 +97881,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for creating a clinical decision algorithm or triage flowchart with decision nodes and yes/no branches, where the user supplies every node, criterion, and branch from expert-verified sources",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "clinical-algorithm",
@@ -97857,7 +97902,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -97868,7 +97913,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for creating a labeled anatomy or physiology educational diagram (student/educator use) where the user supplies the structure and all labels from expert-verified sources",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "anatomy",
@@ -97879,7 +97933,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -97890,7 +97944,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Image generation prompt for creating printable nursing badge buddy reference cards for ICU/critical care medication drips",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "nursing",
@@ -97902,7 +97965,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-01-28",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -97913,7 +97976,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Image generation prompt for creating a medical pocket card infographic covering the first 15 minutes of PACU patient receiving protocol",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "infographic",
@@ -97924,7 +97996,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-01-28",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -97935,7 +98007,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for creating a disease-mechanism flow diagram (cause -> mechanism -> effect) where the user supplies every node and causal link from expert-verified sources",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "pathophysiology",
@@ -97947,7 +98028,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -97958,7 +98039,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for a simple, patient-friendly labeled anatomy/body diagram to explain a procedure or condition. NOT a clinical-grade medical illustration. Large type, plain labels, high contrast. The model renders clinician-supplied labels only.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "patient-education",
@@ -97969,7 +98059,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "./patient_education_condition_infographic.md",
@@ -97986,7 +98076,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for a visual discharge-instructions handout (medications, activity, follow-up, and warning signs / when to call). Low-health-literacy friendly: large type, simple icons, high contrast. The model renders clinician-supplied content only.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "patient-education",
@@ -97997,7 +98096,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "./patient_education_condition_infographic.md",
@@ -98014,7 +98113,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for a plain-language patient handout explaining a medical condition (what it is, symptoms, when to seek help). Low-health-literacy friendly: large type, simple icons, high contrast. The model renders clinician-supplied content only.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "patient-education",
@@ -98025,7 +98133,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "./patient_discharge_instructions_visual.md",
@@ -98042,7 +98150,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for a 'how to take your medication' visual handout (dose, timing, with/without food, side effects, missed dose). Low-health-literacy friendly: large type, simple icons, high contrast. The model renders clinician-supplied content only.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "patient-education",
@@ -98053,7 +98170,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "./patient_education_condition_infographic.md",
@@ -98070,7 +98187,16 @@
       "domain": "image-generation",
       "category": "medical-education",
       "description": "Template-driven image generation prompt for creating an enumerated, step-by-step illustrated clinical procedure sequence (e.g., sterile technique, device insertion) where the user supplies every step from expert-verified sources",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "medical",
         "procedure",
@@ -98081,7 +98207,7 @@
         "image-generation"
       ],
       "difficulty": "",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98111,7 +98237,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Rapid-assessment aid only — escalate per facility protocol; not a substitute for full airway evaluation and provider-directed management.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98119,7 +98254,7 @@
         "badge-buddy"
       ],
       "difficulty": "",
-      "updated": "2026-04-14",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98130,7 +98265,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Reference visual only. Actual discharge thresholds and protocols are facility-specific and per provider order. The visual leaves protocol-specific values as `{{per facility protocol}}` placeholders.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98139,7 +98283,7 @@
         "discharge-criteria"
       ],
       "difficulty": "",
-      "updated": "2026-05-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98150,7 +98294,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Visual decision support only — bedside clinical judgment and facility protocol override rendered content.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98158,7 +98311,7 @@
         "algorithm"
       ],
       "difficulty": "",
-      "updated": "2026-04-14",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98169,7 +98322,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Domain weights are user-pasted from the official ABPANC blueprint. This meta-prompt does not invent weights. The visual is a study-planning aid, not endorsed by ABPANC.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98178,7 +98340,7 @@
         "blueprint"
       ],
       "difficulty": "",
-      "updated": "2026-05-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98189,7 +98351,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Reference visual — drain and tube management defers to surgeon / facility protocol; output ranges and \"normal\" descriptions are illustrative only.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98197,7 +98368,7 @@
         "tubes"
       ],
       "difficulty": "",
-      "updated": "2026-04-14",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98208,7 +98379,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Reference visual — names roles, not individuals. Facility-specific contact numbers / pagers / extensions are NOT shown by design and must be added by the facility at print time.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98216,7 +98396,7 @@
         "role-reference"
       ],
       "difficulty": "",
-      "updated": "2026-05-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98227,7 +98407,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Cue card is a memory aid — actual handoff content depends on patient and facility protocol. Does not substitute for direct communication.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98236,7 +98425,7 @@
         "reference-card"
       ],
       "difficulty": "",
-      "updated": "2026-05-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98247,7 +98436,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Reference only — every reversal dose, interval, and sequence is governed by provider order and facility protocol. Chart leaves specifics as \"per order\".",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98255,7 +98453,7 @@
         "reversal"
       ],
       "difficulty": "",
-      "updated": "2026-04-14",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98266,7 +98464,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Grid is a planning visual — expected trajectory, not a contract. Patient care decisions remain governed by facility orders.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98274,7 +98481,7 @@
         "competency-grid"
       ],
       "difficulty": "",
-      "updated": "2026-05-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98285,7 +98492,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Pathway map is a planning visual — actual orientation pace varies. Patient care decisions remain governed by facility orders.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98294,7 +98510,7 @@
         "timeline"
       ],
       "difficulty": "",
-      "updated": "2026-05-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98305,7 +98521,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Flow map is a workflow visual — actual shift cadence varies by census, acuity, and surgical mix. Patient care decisions remain governed by facility protocols.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98314,7 +98539,7 @@
         "workflow"
       ],
       "difficulty": "",
-      "updated": "2026-05-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98325,7 +98550,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Assessment reference only — scale selection and action thresholds per facility protocol and provider order.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98333,7 +98567,7 @@
         "reference-card"
       ],
       "difficulty": "",
-      "updated": "2026-04-14",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98344,7 +98578,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Typical timeline only — actual progression is patient-specific and governed by assessment, not the clock.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98352,7 +98595,7 @@
         "phase-1"
       ],
       "difficulty": "",
-      "updated": "2026-04-14",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98363,7 +98606,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Reference visual only — ranges and actions defer to facility protocol and provider orders.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98371,7 +98623,7 @@
         "reference-card"
       ],
       "difficulty": "",
-      "updated": "2026-04-14",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98382,7 +98634,16 @@
       "domain": "image-generation",
       "category": "pacu/image-generation",
       "description": "> Safety reminder: Anatomical reference only — block level assessment requires bedside exam (pinprick / temperature / motor) per facility protocol.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "pacu",
         "image-generation",
@@ -98390,7 +98651,7 @@
         "regional-anesthesia"
       ],
       "difficulty": "",
-      "updated": "2026-04-14",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },

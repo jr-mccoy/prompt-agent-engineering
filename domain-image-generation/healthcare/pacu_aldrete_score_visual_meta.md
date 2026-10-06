@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-05-15"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -105,3 +114,18 @@ VALIDATION CHECKLIST:
 ## Caution
 
 This visual is intentionally **descriptor-empty** unless the candidate provides facility-validated descriptors. The toolkit does not invent threshold numbers or descriptors that could be mis-applied at the bedside.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat a filled descriptor cell as user-supplied because its wording sounds like the published scale — image models know Aldrete and PADSS phrasing and will complete blank cells from memory, which passes checklist item 4 on a skim.
+- Accept any numeral in the DISCHARGE THRESHOLD STRIP the inputs did not supply; the strip's own text ("typically a sum threshold") nudges the model toward printing the "typical" sum.
+- Let the systems blend — PADSS rows (Surgical Bleeding, Pain, PONV) under an Aldrete title, or an O2 Saturation row carrying a percentage — because the model merged the versions it has seen.
+- Read the "2 / 1 / 0" column headers as licence for other numbers: they are the only digits this card may carry unless the facility pasted a value.
+
+✅ **DO:**
+- Build a cell map before generation (rows × 3 score columns, each marked "supplied — source" or "placeholder"); after rendering, check cell by cell that placeholders show the literal italic `{{per facility protocol}}` and supplied cells match their input word for word.
+- Count rendered rows against the categories pasted for the chosen system, and confirm the title names exactly that system.
+- Confirm the scoring-tool version on the card matches the facility's current form — the wrong version passes every layout check.

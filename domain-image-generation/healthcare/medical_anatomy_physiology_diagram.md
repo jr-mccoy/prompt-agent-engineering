@@ -2,6 +2,15 @@
 title: "Labeled Anatomy / Physiology Educational Diagram - Image Generation Prompt"
 category: medical-education
 description: "Template-driven image generation prompt for creating a labeled anatomy or physiology educational diagram (student/educator use) where the user supplies the structure and all labels from expert-verified sources"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - anatomy
@@ -10,7 +19,7 @@ tags:
   - labeled-diagram
   - education
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 ---
 
 # Labeled Anatomy / Physiology Educational Diagram - Image Generation Prompt
@@ -178,14 +187,14 @@ Color scheme:
 - Great vessels = neutral #E5E7EB with red/blue tint per oxygenation
 
 ENUMERATED LABELS (EXAMPLE — VERIFY):
-LABEL 1: Superior vena cava — points to upper-right great vessel
-LABEL 2: Aorta (aortic arch) — points to top central arching vessel
-LABEL 3: Pulmonary trunk — points to vessel emerging from right ventricle
-LABEL 4: Right atrium — points to upper-right chamber
-LABEL 5: Right ventricle — points to lower-right chamber
-LABEL 6: Left atrium — points to upper-left chamber
-LABEL 7: Left ventricle — points to lower-left chamber (apex)
-LABEL 8: Inferior vena cava — points to lower-right entering vessel
+LABEL 1: Superior vena cava — points to the great vessel entering from above on the viewer's left (patient's right)
+LABEL 2: Aorta (aortic arch) — points to the top central vessel arching toward the viewer's right
+LABEL 3: Pulmonary trunk — points to the vessel leaving the right ventricle, just to the viewer's right of the ascending aorta (patient's left)
+LABEL 4: Right atrium — points to the upper chamber on the viewer's left (patient's right)
+LABEL 5: Right ventricle — points to the large anterior lower chamber, centre to viewer's left
+LABEL 6: Left atrium (left auricle) — points to the small ear-shaped appendage at the upper viewer's right (patient's left); most of the left atrium lies posterior and is not visible in this view
+LABEL 7: Left ventricle — points to the lower chamber on the viewer's right (patient's left), forming the apex
+LABEL 8: Inferior vena cava — points to the vessel entering from below on the viewer's left (patient's right)
 
 TITLE: "THE HUMAN HEART — Anterior View"
 SUBTITLE: "External chambers and great vessels"
@@ -227,6 +236,21 @@ This prompt applies the 8 core techniques from [IMAGE_GENERATION_GUIDE.md](../IM
 6. **Physical Context Anchoring** — "lecture slide / handout / study poster for [audience]" constrains density and readability.
 7. **Deliverables Locking** — EXACTLY ONE IMAGE, locked orientation and dimensions.
 8. **Validation Checklist** — final self-audit including a label-count check.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write LABEL locations as bare "left" / "right": in an anterior view the patient's right atrium sits on the viewer's left, so "upper-right chamber" can land on either side. The EXAMPLE FILL states both frames for every label for this reason.
+- Let the label-count line stand in for a placement check — eight labels for eight list items can still have two leader lines crossed, right and left ventricle swapped.
+- Treat the region color scheme as decoration: the blue/red fills encode oxygenation, and a model that tints the pulmonary trunk red "because it is an artery" teaches wrong physiology with every label correct.
+- Accept label spelling at screen zoom; transposed letters ("artium", "vena cave") read as correct at a glance.
+
+✅ **DO:**
+- State each LABEL location in both frames ("patient's right = viewer's left") and include an orientation marker such as "Patient's right" in the enumerated label list, so the reader can check the view.
+- Verify leader lines with the text covered: follow each line to its endpoint, name the structure it touches, then compare with the LABEL list.
+- Check every filled region against the [REGION] = [HEX] list one region at a time, and proof each label letter by letter at final print size.
 
 ---
 

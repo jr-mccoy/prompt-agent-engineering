@@ -2,6 +2,15 @@
 title: "Clinical Badge Buddy - Medication Dosing (Template)"
 category: medical-education
 description: "Template-driven image generation prompt for creating printable clinician badge buddy medication-dosing reference cards that the user fills with their own institution-verified drugs and doses"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - clinician
@@ -12,7 +21,7 @@ tags:
   - template
   - reference-card
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - ./nursing_badge_buddy_critical_drips.md
@@ -462,6 +471,21 @@ Negative prompt: `"badge, lanyard, clip, holder, 3d, mockup, photo, gradient, sh
 
 ### Problem: Only one image generated
 **Add:** `"Generate EXACTLY 2 images. NOT 1. NOT 3. EXACTLY 2 separate images."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat a box as safe because some fields are still bracketed — partial completion is the quiet failure: "[DOSE]" survives while a plausible "Max: 4 g/day" or caution appears in [MAX] or [NOTE], or the brackets drop so "[FREQ]" prints as "FREQ".
+- Lose tall-man lettering or brand pairing at 8-9 pt: "HYDROmorphone" set as "Hydromorphone", or a parenthetical brand that belongs to a look-alike drug, leaves a correct dose under the wrong name.
+- Let the model introduce dose notation your source did not use — trailing zeros ("1.0 mg"), naked decimals (".5 mg"), "U" for units, "QD", "µg" — every one shortens a line and every one is on the ISMP error-prone list.
+- Miss a dropped "/kg" or "/hr": "0.05 mcg/min" for "0.05 mcg/kg/min" fits the box and is wrong by a factor of the patient's weight.
+
+✅ **DO:**
+- Compare all 72 field strings (12 boxes x [DRUG], [DOSE], [ROUTE], [FREQ], [MAX], [NOTE]) on a 100%-scale print against the formulary or order-set entry each came from.
+- Count the bracketed placeholders left on the output and confirm the total equals the number you deliberately left unfilled — a lower count means a field was completed or lost its brackets.
+- Supply each drug name in the exact letter case your institution prints, tall-man included, and check the case letter by letter on the output.
 
 ---
 
