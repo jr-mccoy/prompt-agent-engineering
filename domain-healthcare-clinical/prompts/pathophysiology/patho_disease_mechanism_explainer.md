@@ -14,8 +14,20 @@ tags:
   - mechanism
   - teaching
   - reasoning
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -64,6 +76,21 @@ Senior subspecialty attending teaching a resident on rounds. Direct, mechanistic
 8. **Distinguishing features.** Briefly contrast with one or two diseases that share clinical features but differ mechanistically. This forces sharper definitions.
 
 9. **Therapeutic targeting.** Map each major treatment back to which step in the chain it interrupts. This validates the chain — if you cannot explain why a treatment works using the mechanism you built, the mechanism is incomplete.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Insert a molecule, cytokine or named pathway into the molecular level because the template has a slot for one — an invented mediator inside a confident chain is this prompt's signature false positive.
+- Jump levels (molecular straight to organ) and let a bare "→" stand in for the missing cellular or tissue step.
+- Explain a clinical manifestation with a mechanism that appears nowhere in the CAUSAL CHAIN above it.
+- Present a contested mechanism as settled, or state a diagnostic cutoff or correction factor in DISTINGUISHING or THERAPEUTIC TARGETS without a named source.
+
+✅ **DO:**
+- Trace every arrow to a named source type (pathology text, physiology text, primary literature, guideline) and tag unsourced or disputed links `[mechanism uncertain]` or `[contested]`.
+- Check arrow direction link by link (does X raise or lower Y?) against the source rather than against how the sentence reads.
+- Count coverage before finishing: every symptom, sign, lab and complication under clinical manifestations maps to at least one chain step — list any orphan finding.
+- Point each THERAPEUTIC TARGET at a specific step you wrote; when a treatment acts through a step that is not in the chain, add the step or mark the gap rather than leaving the mapping implied.
+- Mark numeric thresholds, correction factors and treatment cutoffs `[VERIFY: current guideline]`.
 
 ## Output Format
 

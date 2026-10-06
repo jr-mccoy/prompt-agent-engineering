@@ -1,4 +1,37 @@
+---
+title: "Nursing Quick Reference/Clinical Handbook Creator - Enhanced Version"
+category: nursing
+description: "Create a quick reference clinical handbook entry on a topic that nurses can use at the bedside for rapid decision-making — scannable, prioritized, and sized for the care setting."
+techniques:
+  - ST-03
+  - DS-06
+  - NE-04
+  - DS-05
+  - OC-03
+difficulty: intermediate
+tags:
+  - nursing
+  - quick-reference
+  - handbook
+  - bedside
+  - pocket-card
+  - patient-safety
+updated: "2026-10-06"
+---
+
 # Nursing Quick Reference/Clinical Handbook Creator - Enhanced Version
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Version:** 2.0 (Enhanced)  
 **Date:** January 2026  
@@ -1126,6 +1159,23 @@ Before writing any content, answer these questions:
    - Verify no prohibited abbreviations
    - Confirm all "never" contraindications are absolute
    - Ensure all actions specify who to notify
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the Dose column, red-flag numbers, lab ranges or a discharge-score pass mark from memory to satisfy "always include specific numbers" — an invented number on a laminated bedside card is the most dangerous output this prompt can make.
+- Tick the Step 7 ACCURACY boxes ("verified against formulary", "reviewed by clinical expert") when no formulary, reference or reviewer was supplied — the checkbox records a verification; it does not perform one.
+- Write an action box a nurse cannot start without an order (fluid bolus, medication, device setting) as an independent nursing action.
+- List an EXPECTED/NORMAL finding without the condition that makes it expected and the point at which it stops being expected — normalizing a finding is how a card delays escalation.
+- Label the entry "copy-paste ready" or reuse this template's own quality ratings for content nobody has reviewed.
+
+✅ **DO:**
+- Tag every number with its source — `[user's formulary]`, `[label]`, `[facility protocol]` — or `[VERIFY: current guideline/label/formulary]`; for PACU entries follow `../perianesthesia/SAFETY_PREAMBLE.md` and write `per provider order` / `per facility protocol` instead of a value.
+- Cross-check coverage: each critical red flag in Section 3 has a detecting item in Section 2 and an intervention or escalation in Section 5; list any red flag no section catches.
+- For pediatric topics, leave weight-based doses as per-kg values from a cited pediatric reference with the weight field explicit, and flag renal, hepatic and pregnancy adjustments wherever the drug has them.
+- End the entry with who must review it before use (clinical educator, pharmacist) and the list of items still marked `[VERIFY]`.
 
 ---
 

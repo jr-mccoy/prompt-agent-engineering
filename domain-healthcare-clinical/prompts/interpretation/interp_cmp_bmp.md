@@ -15,8 +15,20 @@ tags:
   - renal
   - liver
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -101,6 +113,14 @@ ACTION:
 2. [next labs / imaging]
 3. [follow-up timing]
 ```
+
+## False-Positive Prevention
+
+- **Corrected calcium computed in mixed units.** Recompute it and show the arithmetic: Ca (mg/dL) + 0.8 × (4 − albumin g/dL), or in SI Ca (mmol/L) + 0.02 × (40 − albumin g/L). In critical illness, CKD, or very low albumin the correction is unreliable, so ask for ionized calcium before calling it normal.
+- **Ratios and cut-offs applied to SI results without converting.** Convert creatinine µmol/L ÷ 88.4, urea mmol/L × 2.8 (to BUN mg/dL), and glucose mmol/L × 18 before using a BUN/Cr >20, a glucose-corrected sodium, or any mg/dL threshold in this prompt. Judge each analyte against the reporting lab's range, not the defaults written here.
+- **eGFR and AKI stage given as if the creatinine were stable.** CKD-EPI assumes steady state and overestimates function while creatinine is rising, so label it. State the KDIGO criterion that was met with the ratio to a baseline actually supplied; with no baseline, say AKI vs CKD is undetermined rather than staging it.
+- **Hyponatremia labelled "hypotonic" without a measured osmolality.** Compute the glucose-corrected Na (+2.4 per 100 mg/dL above 100) and ask for serum osmolality before ruling out pseudohyponatremia or a hypertonic cause.
+- **Correction rate and potassium judged from a single draw.** Calculate the Na change per hour from the timestamps of successive results, not "per 24 h" by assumption. Before acting on a high K, check for a hemolyzed sample, extreme leukocytosis or thrombocytosis, or a whole-blood gas K being compared with serum.
 
 ## Worked Example
 

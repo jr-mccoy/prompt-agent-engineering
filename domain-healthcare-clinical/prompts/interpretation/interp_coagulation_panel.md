@@ -15,8 +15,20 @@ tags:
   - bleeding
   - dic
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -103,6 +115,14 @@ ACTION:
 - [reversal / replacement product if bleeding]
 - [treat underlying cause]
 ```
+
+## False-Positive Prevention
+
+- **INR read as a measure of anticoagulation outside warfarin therapy.** The INR's ISI calibration standardizes vitamin K antagonist effect only; in cirrhosis, DIC, or on a DOAC report the PT in seconds against the reporting lab's normal range, and do not apply warfarin INR thresholds to it.
+- **An anti-Xa result read without knowing how the assay was calibrated.** A heparin-calibrated anti-Xa (IU/mL) is not a heparin level in a patient taking apixaban or rivaroxaban, which need a drug-calibrated assay in ng/mL. A normal PT or aPTT does not exclude a clinically relevant Xa-inhibitor level. Name the assay before interpreting the number.
+- **An ISTH overt-DIC score stated without the component arithmetic.** Recompute each point: PT prolongation in seconds above the lab's upper normal, platelets ×10⁹/L, fibrinogen with g/L converted to mg/dL (1 g/L = 100 mg/dL), and D-dimer "moderate/strong" against that assay's cut-offs. D-dimer reported in FEU vs DDU, or µg/mL vs ng/mL, changes the age-adjusted threshold. Show the sum.
+- **"Corrects on mixing" accepted from the immediate mix alone.** Time-dependent inhibitors (acquired factor VIII inhibitor) correct at first and prolong after 1–2 h incubation; check that an incubated mix was done and that "correction" uses the lab's stated criterion.
+- **Weight- or time-based product doses filled in without their inputs.** FFP mL/kg, PCC units/kg, and protamine for heparin given over the preceding hours require the patient's weight, the INR, and the heparin dose times from the input; if they were not supplied, write `[per provider order]`.
 
 ## Worked Example
 

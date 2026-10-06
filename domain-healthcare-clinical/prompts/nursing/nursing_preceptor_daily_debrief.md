@@ -16,7 +16,7 @@ tags:
   - metacognition
   - PACU
   - orientee-development
-updated: "2026-04-16"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
   - domain-productivity/validation/validation_adversarial_mini_check.md
@@ -26,6 +26,18 @@ related_prompts:
 ---
 
 # Nursing Preceptor Daily Debrief Protocol
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help a preceptor run a consistent 10-minute end-of-shift debrief with an orientee that surfaces what actually happened inside the orientee's head — not just what was visible on the floor. The protocol is designed to catch cognitive-load ceilings, context-mismatch reasoning (applying patterns from a prior specialty), and unspoken questions, so the preceptor can tune the next shift's support accordingly.
 
@@ -211,6 +223,23 @@ PATTERN TRACKING (cumulative across shifts):
 **A breakthrough day:** Name the breakthrough explicitly in Q1 framing and ask her what enabled it. Positive pattern-capture is as important as fumble pattern-capture; she needs to know what "right" feels like from the inside so she can reach for it.
 
 **Weekly rollup:** Every Sunday, read the week's captures as a block and ask: *What pattern did I miss last week? What adjustment didn't land? What's the one thing next week needs?* Then tell the charge nurse one sentence about trajectory.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill "Q3 Thought & source" with the preceptor's working hypothesis when the orientee could not reconstruct the moment — "overload" or "no pattern" is the finding to record.
+- Mark a PATTERN TRACKING line "recurring" on the strength of one vivid shift.
+- Write a HYPOTHESIS UPDATE with an empty "Evidence that moved it" line, or with evidence that is the preceptor's impression rather than something the orientee said or did.
+- Turn YOUR ADJUSTMENT FOR NEXT SHIFT into a clinical teaching point that carries a dose, cut-off or protocol step; route the content to the unit reference (`per provider order` / `per facility protocol`, as in `../perianesthesia/SAFETY_PREAMBLE.md`).
+- Record patient identifiers in the capture when a procedure label ("the lap chole") is enough.
+
+✅ **DO:**
+- Capture Q1–Q5 in the orientee's own words; paraphrase only in the CATEGORIZATION block.
+- Before calling a pattern recurring, count the capture entries that show it and list their dates — two or more, or it stays a single observation.
+- Check that the adjustment is an action the preceptor takes, observable on the next shift, and traceable to this debrief's Q2 or Q3 finding.
+- If a Q2 rough moment involved possible patient harm or a medication error, confirm the facility reporting pathway was used before treating it as a debrief topic.
 
 ---
 

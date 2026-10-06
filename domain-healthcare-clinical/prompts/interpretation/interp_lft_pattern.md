@@ -15,8 +15,20 @@ tags:
   - lfts
   - jaundice
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -101,6 +113,14 @@ ACTION:
 - [treatment now if specific etiology supported]
 - [transfer / consult criteria]
 ```
+
+## False-Positive Prevention
+
+- **R factor computed with assumed upper limits of normal.** ALT ULNs differ widely between labs, and ALP runs higher in adolescents and in pregnancy. Use the reporting lab's ULN for each, print the numbers in (ALT/ULN) ÷ (ALP/ULN), and if the ULNs were not supplied, label the R factor provisional. For suspected drug injury, take R from the first panel at recognition, not a later draw.
+- **Raised ALP with normal GGT called bone disease by default.** Check for pregnancy (placental ALP) and adolescent growth first, and do not use a raised GGT alone as proof of cholestasis; alcohol and enzyme-inducing drugs raise it.
+- **Severity scores calculated in the wrong units or from the wrong clotting value.** Maddrey uses PT seconds minus the lab's control PT, not the INR, and bilirubin in mg/dL (µmol/L ÷ 17.1). The King's College creatinine criterion is >3.4 mg/dL (300 µmol/L). List each input with its unit and the lab's control value before stating a score or whether a criterion is met.
+- **Acetaminophen level read on the wrong scale or the wrong clock.** Levels come in µg/mL, mg/L, or µmol/L (1 µg/mL ≈ 6.6 µmol/L), and the nomogram needs a known single ingestion time. When the time is estimated or the ingestion was staggered, say so rather than plotting it.
+- **Normal or mildly raised aminotransferases used to exclude chronic liver disease.** Cirrhosis and MASLD/NAFLD can have a normal ALT; check platelets, albumin, INR, imaging, or a fibrosis score from the input before writing "no significant liver disease".
 
 ## Worked Example
 

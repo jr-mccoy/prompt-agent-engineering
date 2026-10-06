@@ -15,8 +15,20 @@ tags:
   - acid-base
   - electrolytes
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -99,6 +111,14 @@ ACTION:
 - [specific next step 2]
 - [labs / imaging to obtain]
 ```
+
+## False-Positive Prevention
+
+- **"Internally consistent" stated without the arithmetic.** Show [H+] = 24 × PaCO2 / HCO3 and the pH it implies; the analyzer's calculated HCO3 agrees with its own pH by construction, so compare against the measured BMP HCO3 drawn at the same time. For the A–a gradient, compute PAO2 from FiO2, Patm and PaCO2/0.8, then subtract the measured PaO2.
+- **Compensation called adequate or inadequate by eye.** Recompute Winter's (1.5 × HCO3 + 8 ± 2) or the acute/chronic respiratory rule from the reported values and print expected vs observed. Convert a PaCO2 reported in kPa (× 7.5) first, and do not apply arterial rules to a venous PCO2 without saying so.
+- **Anion gap judged against a textbook 8–12 instead of the reporting lab's range.** Ion-selective analyzers run lower and some labs include K in the gap; use that lab's reference. The 2.5 × (4 − albumin) correction assumes g/dL, so convert albumin reported in g/L (35 g/L = 3.5 g/dL) before correcting.
+- **Delta-delta built from mismatched numbers.** Use the albumin-corrected gap and the same BMP HCO3 in both the gap and the ratio, recompute it from components, and treat a ratio near a cut-off (0.9–1.1, 1.9–2.1) as indeterminate rather than proof of a hidden second disorder.
+- **ACTION doses and drip rates written without the inputs they depend on.** Insulin, potassium, and bicarbonate entries need the patient's weight, the current K, and urine output from the input; otherwise write `[per provider order]` and `[VERIFY: current DKA/HHS guideline]`.
 
 ## Worked Example
 

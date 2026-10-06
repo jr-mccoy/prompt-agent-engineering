@@ -16,7 +16,7 @@ tags:
   - clinical-decision
   - cognitive-load
   - pocket-card
-updated: "2026-04-16"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md
   - domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
@@ -25,6 +25,18 @@ related_prompts:
 ---
 
 # PACU Phase 1 Prioritization Rule Card
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Give a PACU orientee a default decision hierarchy for when two or more clinical demands compete for her attention at the same time. The card replaces the paralysis of "everything is urgent" with a repeatable stack: handle the higher-tier item first, delegate or defer the lower-tier item, and never let documentation displace clinical care.
 
@@ -207,6 +219,22 @@ THE ONE RULE
 **Delegation discomfort:** Orientees — especially those from settings where they worked alone (jail nursing, home hospice) — may be uncomfortable delegating. The card explicitly names delegation as a tool, not a failure. Reinforce this in preceptor conversations.
 
 **When two Tier 1 events happen simultaneously:** Call a code / rapid response. This is not a prioritization problem — it is a staffing problem. The card does not solve staffing; it tells the orientee to get help.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill tier examples with numeric triggers (an SpO₂ cut-off, a pain score, a temperature) — the card's own "below unit threshold" wording is the model, and per `../perianesthesia/SAFETY_PREAMBLE.md` the value is `per facility protocol`.
+- Rank an event by its mild form when its worst form belongs higher: a complete laryngospasm is loss of airway patency, and the card must not let it wait behind anything.
+- Write a collision row whose verdict contradicts the tier stack or another row — for example, finishing a pain dose before receiving a fresh post-anesthesia arrival in one row while another row says receive first.
+- Put RN-initiated drug actions on the card (an antiemetic "per standing order") unless the user supplied that standing order for this unit.
+
+✅ **DO:**
+- Cross-check every collision row: name the tier of each competing demand and confirm the verdict follows "higher tier wins" or the same-tier rule.
+- Check each delegation target the card names against the staffing inputs; a backup RN or tech who does not exist on this unit makes the rule unusable.
+- Walk each collision scenario the user listed through the finished card and confirm it resolves to one action without the preceptor's input.
+- Confirm the Tier 1–2 escalation names a role (anesthesia, rapid response, charge nurse) and routes the trigger criteria to facility policy.
 
 ---
 

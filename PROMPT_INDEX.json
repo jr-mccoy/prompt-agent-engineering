@@ -4,8 +4,8 @@
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
     "total_indexed_artifacts": 6165,
-    "artifacts_with_frontmatter": 5294,
-    "artifacts_without_frontmatter": 871,
+    "artifacts_with_frontmatter": 5296,
+    "artifacts_without_frontmatter": 869,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -15,8 +15,8 @@
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
     "total_prompts": 6165,
-    "prompts_with_frontmatter": 5294,
-    "prompts_without_frontmatter": 871
+    "prompts_with_frontmatter": 5296,
+    "prompts_without_frontmatter": 869
   },
   "prompts": [
     {
@@ -81757,7 +81757,7 @@
         "interpretation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81783,7 +81783,7 @@
         "interpretation"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81809,7 +81809,7 @@
         "interpretation"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81966,7 +81966,7 @@
         "interpretation"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81992,7 +81992,7 @@
         "interpretation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82017,7 +82017,7 @@
         "diagnostic"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82141,7 +82141,7 @@
         "interpretation"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82399,7 +82399,7 @@
         "interpretation"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82424,7 +82424,7 @@
         "reasoning"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82450,7 +82450,7 @@
         "mechanism"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82475,7 +82475,7 @@
         "reasoning"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82500,7 +82500,7 @@
         "reasoning"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82525,7 +82525,7 @@
         "hormone-testing"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84953,6 +84953,30 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-healthcare-clinical/prompts/communication/medicine_clinical_visual_education_micro_guide.md",
+      "filename": "medicine_clinical_visual_education_micro_guide.md",
+      "title": "Clinical Visual Education Micro-Guide",
+      "domain": "healthcare-clinical",
+      "category": "healthcare-clinical/communication",
+      "description": "Brief framework for a clinical team to draft visual explainers for patient education or workflow handoffs, keeping clinical content and image-generation prompts consistent.",
+      "techniques": [
+        "ST-01",
+        "ST-03",
+        "RP-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "medicine",
+        "patient-education",
+        "communication",
+        "health-literacy"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-06",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md",
       "filename": "medicine_handoff_communication.md",
       "title": "Handoff Communication Structurer",
@@ -85214,56 +85238,6 @@
         "domain-healthcare-clinical/prompts/quality/medicine_adverse_event_analyzer.md"
       ],
       "has_frontmatter": true
-    },
-    {
-      "path": "domain-healthcare-clinical/prompts/communication/medicine_clinical_visual_education_micro_guide.md",
-      "filename": "medicine_clinical_visual_education_micro_guide.md",
-      "title": "Clinical Visual Education Micro-Guide",
-      "domain": "healthcare-clinical",
-      "category": "healthcare-clinical/prompts/communication",
-      "description": "- A clinical team needs visual explainers for patient education or workflow handoffs.",
-      "techniques": [],
-      "keywords": [
-        "checklist",
-        "clinical",
-        "education",
-        "guide",
-        "medicine",
-        "micro",
-        "output",
-        "prompt",
-        "related",
-        "resources"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-healthcare-clinical/prompts/nursing/nursing_quick_reference_handbook_creator_prompt.md",
-      "filename": "nursing_quick_reference_handbook_creator_prompt.md",
-      "title": "Nursing Quick Reference/Clinical Handbook Creator - Enhanced Version",
-      "domain": "healthcare-clinical",
-      "category": "healthcare-clinical/prompts/nursing",
-      "description": "---",
-      "techniques": [],
-      "keywords": [
-        "audience",
-        "context",
-        "creator",
-        "facts",
-        "handbook",
-        "nursing",
-        "objective",
-        "prompt",
-        "purpose",
-        "quick"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
     },
     {
       "path": "domain-healthcare-clinical/prompts/perianesthesia/SAFETY_PREAMBLE.md",
@@ -85943,7 +85917,7 @@
         "medical-education"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_differential_diagnosis_generator",
         "medicine_clinical_history_elicitation"
@@ -86058,7 +86032,7 @@
         "communication"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_clinical_decision_support",
         "medicine_patient_education_adapter",
@@ -86189,7 +86163,7 @@
         "patient-autonomy"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_patient_education_adapter",
         "medicine_clinical_documentation",
@@ -86219,7 +86193,7 @@
         "bayesian-reasoning"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_differential_diagnosis_generator",
         "medicine_clinical_decision_support",
@@ -86582,7 +86556,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Optimize referral packets by mapping referral data capture to specialist triage/decision needs, separating objective findings from referral recommendations, and identifying missing documentation before submission.",
-      "techniques": [],
+      "techniques": [
+        "ST-03",
+        "DT-05",
+        "RT-05",
+        "OC-04",
+        "QA-08"
+      ],
       "keywords": [
         "medicine",
         "referrals",
@@ -86590,7 +86570,7 @@
         "documentation-quality"
       ],
       "difficulty": "",
-      "updated": "2026-05-05",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_handoff_communication.md",
         "domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md",
@@ -86760,7 +86740,7 @@
         "telemedicine"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_clinical_history_elicitation",
         "medicine_clinical_documentation",
@@ -86821,7 +86801,7 @@
         "nursing-diagnosis"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "nursing_quick_reference_handbook_creator_prompt",
         "medicine_clinical_history_elicitation",
@@ -86836,7 +86816,12 @@
       "domain": "healthcare-clinical",
       "category": "nursing",
       "description": "Structured bedside safety check for medication administration — rights of administration, high-alert drug protocols, independent double-check, and error-prone drug traps.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "ST-42",
+        "QA-08",
+        "NE-06"
+      ],
       "keywords": [
         "nursing",
         "medication-safety",
@@ -86845,7 +86830,7 @@
         "patient-safety"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_medication_reconciliation.md",
         "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md",
@@ -86876,7 +86861,7 @@
         "PACU"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
         "domain-healthcare-clinical/prompts/nursing_preceptor_independence_rubric.md",
@@ -86910,7 +86895,7 @@
         "preceptor"
       ],
       "difficulty": "advanced",
-      "updated": "2026-04-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
         "domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md",
@@ -86946,7 +86931,7 @@
         "cognitive-load"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
         "domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md",
@@ -86978,7 +86963,7 @@
         "orientee-development"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md",
         "domain-productivity/validation/validation_adversarial_mini_check.md",
@@ -86989,13 +86974,45 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-healthcare-clinical/prompts/nursing/nursing_quick_reference_handbook_creator_prompt.md",
+      "filename": "nursing_quick_reference_handbook_creator_prompt.md",
+      "title": "Nursing Quick Reference/Clinical Handbook Creator - Enhanced Version",
+      "domain": "healthcare-clinical",
+      "category": "nursing",
+      "description": "Create a quick reference clinical handbook entry on a topic that nurses can use at the bedside for rapid decision-making — scannable, prioritized, and sized for the care setting.",
+      "techniques": [
+        "ST-03",
+        "DS-06",
+        "NE-04",
+        "DS-05",
+        "OC-03"
+      ],
+      "keywords": [
+        "nursing",
+        "quick-reference",
+        "handbook",
+        "bedside",
+        "pocket-card",
+        "patient-safety"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md",
       "filename": "nursing_sbar_clinical_escalation.md",
       "title": "Nursing SBAR Clinical Escalation Framework",
       "domain": "healthcare-clinical",
       "category": "nursing",
       "description": "Structured SBAR framework for nurse-to-provider escalation of clinical deterioration — crisp situation framing, assessment clarity, and explicit ask.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "DS-06",
+        "NE-06"
+      ],
       "keywords": [
         "nursing",
         "SBAR",
@@ -87004,7 +87021,7 @@
         "communication"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_handoff_communication.md",
         "domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md",
@@ -87035,7 +87052,7 @@
         "pocket-card"
       ],
       "difficulty": "beginner",
-      "updated": "2026-04-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md",
         "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
@@ -87067,7 +87084,7 @@
         "pocket-card"
       ],
       "difficulty": "beginner",
-      "updated": "2026-04-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
         "domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md",

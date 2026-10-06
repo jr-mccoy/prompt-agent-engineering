@@ -14,8 +14,20 @@ tags:
   - hypothalamic-pituitary-axis
   - mechanism
   - hormone-testing
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -95,6 +107,21 @@ Senior endocrinologist explaining axis logic to a colleague. Names the hormones,
      - Medical suppression: dopamine agonists for prolactinoma (cabergoline first-line); somatostatin analogs for acromegaly (octreotide LAR, lanreotide); pegvisomant (GH receptor antagonist) for acromegaly when surgery / SSA insufficient; ketoconazole, metyrapone, mitotane, osilodrostat for Cushing's medical management; spironolactone / eplerenone for primary aldosteronism not surgically curable.
      - Targeted therapy: cabergoline for prolactinoma (D2 agonism on lactotrophs suppresses prolactin and shrinks tumor — rare for surgery to be first-line).
    - **Peripheral resistance:** management is supportive / bypass; e.g., higher doses of hormone to overcome partial resistance (PTH-resistance: high-dose oral Ca and calcitriol).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call a trophic hormone "inappropriately normal" or "suppressed" without the reporting lab's reference range and the paired target-hormone value from the same draw.
+- Treat a single cortisol, testosterone or TSH value as localizing when the input does not give sample timing, assay, binding-protein status or interfering drugs (exogenous glucocorticoids, biotin, estrogen, opioids).
+- Let "ACTH-dependent" slide into "Cushing's disease" — the paired pattern localizes to ACTH dependence; pituitary vs ectopic needs the dynamic tests or IPSS.
+- Apply an imaging or test cutoff without checking which side of it the patient's value actually falls on.
+- Fill DYNAMIC TEST RATIONALE or TREATMENT RATIONALE with cutoffs, gradients or replacement doses from memory — many cutoffs are assay-specific.
+
+✅ **DO:**
+- Fill PAIRED HORMONE INTERPRETATION only from supplied values with units and ranges; mark gaps `not provided` and make LOCALIZATION conditional on them.
+- Verify the pattern call mechanically: write each hormone's direction against its own reference range, apply the opposite-vs-same-direction rule, and confirm LOCALIZATION matches that result.
+- Trace each feedback arrow in WHY THE BIOCHEMICAL PATTERN IS WHAT IT IS to a named source type (endocrine society guideline, endocrinology text) and flag unsourced steps.
+- Tag every cutoff, dose and interval in DYNAMIC TEST RATIONALE, TREATMENT RATIONALE and MONITORING `[VERIFY: current guideline/assay/label]`.
 
 ## Output Format
 

@@ -19,10 +19,22 @@ related_prompts:
   - medicine_clinical_history_elicitation
   - medicine_clinical_documentation
   - medicine_patient_education_adapter
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Telehealth Virtual Visit Guide
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide a structured framework for conducting effective telehealth and virtual visits including remote assessment techniques, modified physical examination guidance, telehealth-specific documentation requirements, disposition decision-making with limited examination capabilities, and criteria for escalation to in-person evaluation.
 
@@ -285,6 +297,22 @@ NON-URGENT IN-PERSON FOLLOW-UP:
   [ ] Chronic condition needs hands-on assessment at next available
   [ ] Preventive care requiring physical exam components
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write REMOTE EXAMINATION findings in in-person vocabulary ("abdomen soft, non-tender", "lungs clear", "no rebound") — a patient pressing on their own belly or a video of breathing is not palpation or auscultation; record it as "patient-reported, self-palpation" or "observed on video".
+- Document a home vital the patient did not actually measure during the visit, or accept a home SpO2 or BP reading without noting the device, the position, and whether it was repeated.
+- Mark the visit "well-suited for telehealth" from the chief complaint alone when the history contains a red flag that moves it to the NOT SUITABLE or IMMEDIATE ED lists.
+- Set ASSESSMENT confidence to "High" when the Limitations line lists a missing exam element that would change management for that diagnosis.
+- Fill "Patient location confirmed: [State]" from the address on file; licensing and emergency dispatch depend on where the patient is at the time of the visit.
+
+✅ **DO:**
+- Before signing the note, compare each escalation-list item against the history and home vitals actually obtained and state, for each one that applies, whether it was screened negative, present, or not assessable remotely.
+- Make the ESCALATION INSTRUCTIONS specific to this complaint's red flags, with home-vital cut-offs taken from the clinician or `[per facility protocol]`, rather than the generic list.
+- For audio-only visits, mark every visual exam line "not assessed (audio-only)" instead of leaving it blank or carrying it over from a template.
 
 ---
 

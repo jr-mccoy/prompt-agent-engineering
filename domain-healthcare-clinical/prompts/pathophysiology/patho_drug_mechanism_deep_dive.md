@@ -14,8 +14,20 @@ tags:
   - mechanism
   - drug
   - reasoning
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -71,6 +83,21 @@ Senior clinical pharmacologist or subspecialty attending teaching mechanism. The
 11. **Resistance / loss-of-effect mechanisms** (if relevant): receptor desensitization, target mutation, pump upregulation (oncology, antimicrobials), counter-regulation.
 
 12. **Reversal / antidote** if one exists, with mechanism.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the PHARMACOKINETICS slots (bioavailability, protein binding, Vd, urine/feces split, half-life) or a selectivity ratio from memory — these are the numbers most often transposed, and they read as authoritative.
+- File an adverse effect under OFF-TARGET when your own chain shows it arising from the primary target, or the reverse; the on/off-target label is a mechanistic claim, not a heading choice.
+- Cite a trial acronym as support for an indication without the trial's population and primary endpoint in hand.
+- Attach a time course (washout, transporter recovery, duration of effect) to a mechanism the chain does not show.
+
+✅ **DO:**
+- Take every PK value and dose from the product label or the user's reference and tag it `[label]`; when it is not available, write `[VERIFY: current label]`, never an estimate.
+- Before classifying each adverse effect, trace its path — primary or secondary target → tissue → effect — and label it on-target only when the path starts at the primary target.
+- Recheck PK arithmetic: excretion fractions must not sum past 100% and must agree with the route named on the METABOLISM line.
+- Test the role's bar: derive one side effect not mentioned in the input purely from the chain, and keep it only if the label or a pharmacology reference confirms it.
+- Name the source type behind each signaling step (label, pharmacology text, primary literature) and flag unsourced steps `[mechanism uncertain]`.
 
 ## Output Format
 

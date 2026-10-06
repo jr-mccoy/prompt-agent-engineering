@@ -2,12 +2,18 @@
 title: "Referral Quality Optimizer"
 category: medicine
 description: "Optimize referral packets by mapping referral data capture to specialist triage/decision needs, separating objective findings from referral recommendations, and identifying missing documentation before submission."
+techniques:
+  - ST-03
+  - DT-05
+  - RT-05
+  - OC-04
+  - QA-08
 tags:
   - medicine
   - referrals
   - care-coordination
   - documentation-quality
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/medicine_handoff_communication.md
   - domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md
@@ -15,6 +21,18 @@ related_prompts:
 ---
 
 # Referral Quality Optimizer
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Produce high-signal referral packages that align with specialist acceptance/triage needs, improve first-pass scheduling readiness, and clearly separate factual chart summary from referral recommendation language.
 
@@ -120,6 +138,23 @@ related_prompts:
 **Provisional Language (Do Not Submit Until Complete):**
 "Referral packet is currently incomplete for specialist triage requirements. Additional objective documentation is being finalized to support timely and appropriate specialty review."
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mark a Decision Map row `Y` because a test name appears in the chart when the result, its date, or the specialty's required timeframe (e.g., an echo "within 6 months" per the intake policy) is not actually there — that row is `Partial`.
+- State the specialty's intake requirements or pre-referral tests from general knowledge; if the specialty policy was not supplied, write `[per receiving specialty intake policy]` instead of a list that looks authoritative.
+- Fill the ICD-10 slot, an accession number, or a lab date with a plausible value — an invented code or date passes a skim and fails the specialist's triage.
+- Raise the priority to urgent or stat in the Recommendation section with a rationale that relies on findings missing from the Factual Summary.
+- Drop anticoagulation status, implant/device status, or an allergy from the Factual Summary because it seems unrelated to the referral question; procedural specialists triage on exactly these.
+
+✅ **DO:**
+- Before running the Quality Checks, count the Decision Map rows marked `Y` and confirm each cites a dated source in the input; re-mark any without one as `Partial` or `N`.
+- Trace every sentence in Section C back to a fact in Section B; delete or move any fact that appears only in C.
+- Emit the Insufficient Documentation branch whenever a decision-critical row is `N`, even if the rest of the packet is complete.
+- Leave citation placeholders unfilled rather than completing them with a guessed guideline name or year.
 
 ---
 

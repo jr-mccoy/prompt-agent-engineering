@@ -19,10 +19,22 @@ related_prompts:
   - medicine_differential_diagnosis_generator
   - medicine_clinical_decision_support
   - medicine_patient_education_adapter
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Laboratory and Diagnostic Interpreter
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide systematic laboratory and diagnostic test interpretation including common lab panel analysis, result pattern recognition, test characteristic integration (sensitivity, specificity, predictive values, likelihood ratios), and pre-test/post-test probability reasoning to support accurate clinical interpretation and reduce diagnostic errors.
 
@@ -373,6 +385,22 @@ PRACTICAL APPLICATION:
   If post-test probability < [test threshold]: No further testing
   If between thresholds: Additional testing needed
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the "Reference" column of the ABNORMAL RESULTS SUMMARY with the default ranges printed in this prompt when the user supplied the lab's own range, or with any range when none was supplied. Use the reporting lab's range; otherwise write "lab range not supplied" and lower the confidence.
+- Compare a value with a threshold in another unit. Troponin in ng/mL vs high-sensitivity ng/L differs 1,000-fold, and glucose in mmol/L, creatinine in µmol/L, and calcium in mmol/L will all "fail" mg/dL cut-offs. A pattern built on an unconverted value is a false finding.
+- Report a Bayesian post-test probability whose pre-test probability, sensitivity, or specificity was not supplied or sourced; an invented 0.85/0.90 produces a precise, meaningless number.
+- Name a multi-test pattern (DKA, DIC, SIADH, primary hyperparathyroidism) when one of its defining tests is missing from the input. SIADH needs urine osmolality and sodium plus euvolemia, and DKA needs measured ketones and a gap.
+- Label a value "Normal" or "stable" from a single draw when the input contains a prior value that shows a change.
+
+✅ **DO:**
+- Before handing over the report, recompute every derived number from the input values and print the arithmetic. That covers the anion gap (with the albumin correction when albumin is low), absolute differential counts from WBC × percent, the BUN/Cr ratio after converting SI units, and the LR+/LR− and post-test odds from the stated sensitivity, specificity, and pre-test probability.
+- Classify each CRITICAL VALUES entry against the institution's critical-value list when one is supplied, and say that the examples in this prompt were used when it is not.
+- When a pattern combines results from different draws, list the collection time of each value it uses. An anion gap or BUN/Cr ratio built from values taken hours apart describes no single moment.
 
 ---
 

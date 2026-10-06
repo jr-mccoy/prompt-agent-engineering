@@ -16,7 +16,7 @@ tags:
   - rubric
   - gate-based-verification
   - preceptor
-updated: "2026-04-16"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
   - domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md
@@ -28,6 +28,18 @@ related_prompts:
 ---
 
 # Nursing Orientee Independence Rubric (PACU Phase 1)
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Give a preceptor and charge nurse an evidence-based, pass/fail rubric for deciding whether a Phase 1 PACU orientee is ready to come off orientation. The rubric replaces vague "she seems ready" or "she seems not ready" with observable competency gates, each tied to specific evidence requirements. It is designed to be honest — both about passing and about failing — so the decision protects the patient, the orientee, and the team.
 
@@ -260,6 +272,23 @@ ORIENTEE ACKNOWLEDGMENT: __________
 **When to apply the rubric the first time:** Start reviewing it together with the orientee around week 3 so she knows what she's working toward. First formal application is week 5–6 (for a 6-week orientation). If there are hard gaps at week 5–6, there is time to address them before the cap.
 
 **The "she's been trying so hard" trap:** Effort is not evidence of capacity. Kindness does not mean passing someone who isn't ready. The kindest thing for an orientee who isn't ready is an honest rubric result and a structured plan — not a pass that sets her up for an incident.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write PASS over evidence that is an impression ("handled the airway well") rather than a dated scenario, the action the orientee took, and who observed it.
+- Count one patient event as evidence for several gates without saying so — three passes resting on a single good afternoon is one data point.
+- Pass Gate 1 or Gate 2 on simulation, a skills lab or a verbal walk-through when the gate asks for actual patients.
+- Pass Gate 5 because every note contains the listed headings, without checking that the pending items and line/drain status in each note matched the patient at transfer.
+- Check a DECISION box that the SCORING block does not support, such as "targeted extension" when the failed gates span two domains.
+
+✅ **DO:**
+- For every gate, record date, de-identified scenario, observed action and observer; a gate missing any of these is recorded as FAIL (insufficient evidence), not as a pass.
+- Recount passes and fails and the domains they fall in, apply the Decision Rule mechanically, and confirm the checked decision matches its output.
+- Verify documentation-domain evidence against the charts and handoff notes themselves, not against anyone's recollection of them.
+- Confirm that facility-required competency forms and the unit non-negotiables from the inputs are attached or referenced; this rubric does not satisfy them.
 
 ---
 

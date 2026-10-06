@@ -14,8 +14,20 @@ tags:
   - acid-base
   - mechanism
   - reasoning
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -64,6 +76,22 @@ Senior nephrologist or ICU attending teaching mechanism. The bar: a learner fini
    - Ca: alkalosis increases binding to albumin → ionized Ca falls → tetany, paresthesias, Chvostek, Trousseau.
 
 7. **Predict trajectory.** How will the gas evolve if untreated? If treated correctly?
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write a CAUSAL CHAIN step whose arrow points the wrong way, or that names a transporter, nephron segment or mediator the renal and respiratory walk does not support — fluent nephron vocabulary is not evidence that the step is real.
+- Call compensation "appropriate" without showing the expected-value formula and its ±2 band computed from this patient's own HCO3 or PaCO2.
+- Fill ACCOMPANYING ELECTROLYTE SHIFTS with textbook directions when the input gave no K, Cl or ionized Ca — write `not provided` rather than predicting a value as if it were measured.
+- Merge generation and maintenance into one step: a chain that explains how the disturbance arose but not why the kidney fails to correct it is incomplete even when every sentence is true.
+- Put a repletion rate, total-body deficit or correction timeline into TRAJECTORY from memory.
+
+✅ **DO:**
+- Trace each CAUSAL CHAIN link to a named source type (renal physiology text, nephrology review, primary literature) and tag any link you cannot source `[mechanism uncertain]`.
+- Recompute before naming the disturbance, and show the arithmetic: anion gap = Na − (Cl + HCO3), albumin-corrected if albumin is given; delta-delta for a hidden second process; and the matching compensation formula (Winter's for metabolic acidosis, 0.7 × HCO3 + 21 for metabolic alkalosis, acute vs chronic ratios for respiratory disorders).
+- Confirm every lab the chain leans on (urine Cl, urine pH, K) appears in the input with units; label anything else `predicted`.
+- Apply the role's bar as a test: predict one further lab change if the disease worsened and check that it follows from the chain you wrote, not from a separately memorized fact.
+- Mark every dose, rate or interval in TRAJECTORY `[VERIFY: current guideline/label/formulary]`.
 
 ## Output Format
 

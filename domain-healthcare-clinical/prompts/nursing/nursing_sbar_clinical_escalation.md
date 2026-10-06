@@ -2,13 +2,18 @@
 title: "Nursing SBAR Clinical Escalation Framework"
 category: nursing
 description: "Structured SBAR framework for nurse-to-provider escalation of clinical deterioration — crisp situation framing, assessment clarity, and explicit ask."
+techniques:
+  - ST-02
+  - ST-03
+  - DS-06
+  - NE-06
 tags:
   - nursing
   - SBAR
   - escalation
   - patient-safety
   - communication
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/medicine_handoff_communication.md
   - domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md
@@ -16,6 +21,18 @@ related_prompts:
 ---
 
 # Nursing SBAR Clinical Escalation Framework
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help bedside nurses escalate clinical concerns (deterioration, new findings, unmet orders, discordance between orders and clinical picture) to providers using a crisp SBAR structure — so the conversation is efficient, the ask is explicit, and the patient gets a timely response.
 
@@ -236,6 +253,23 @@ DOCUMENTATION BLOCK
 **Night / weekend coverage:** Do not under-call because it is 3 AM. Fatigue on the provider side is not your problem; a patient deterioration is.
 
 **"It doesn't feel right":** Gestalt concern from an experienced bedside nurse is a legitimate assessment. Name it: "I can't point to one vital sign, but I've watched this patient change and I'm worried."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "Current vitals: [specific numbers with trend]" with a trend the input does not contain — one set of vitals is a snapshot; say "no prior value available".
+- Draft the clinical impression as a medical diagnosis the data cannot carry, or soften it into "just letting you know" — both fail the A line in opposite directions.
+- Leave allergies, code status, results still pending, or the last dose of the relevant drug out of the script because the user did not mention them; these are the provider's most likely first questions.
+- State a numeric rapid-response trigger or sepsis criterion as fact; calling criteria are `per facility protocol`.
+- Present the chain-of-command list as steps to exhaust before a rapid response — when calling criteria are met, rapid response is called directly, in parallel with the chain.
+
+✅ **DO:**
+- Trace every number in the script to the input with its time and unit, and list any vital from the Input Required set that is missing.
+- Build ANTICIPATED PROVIDER QUESTIONS from the gaps you found, and check each has an answer in the B or A lines or is marked "unknown — will obtain".
+- Check that the R line's ask can be answered yes or no, carries a time expectation, and matches the urgency box you ticked.
+- Confirm the DOCUMENTATION BLOCK records the actual clock time of each call and response, not the time the note was written.
 
 ---
 

@@ -20,10 +20,22 @@ related_prompts:
   - medicine_patient_education_adapter
   - medicine_clinical_documentation
   - medicine_goals_of_care_conversation_guide
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Informed Consent Communicator
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide a structured framework for conducting informed consent discussions for medical and surgical procedures, including risk disclosure calibrated to procedure complexity, alternative presentation, patient comprehension verification, capacity assessment integration, and documentation of the consent conversation.
 
@@ -312,6 +324,22 @@ DOCUMENT IN THE MEDICAL RECORD:
 
   Written materials provided: [ ] Yes — specify: ___ [ ] No
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the `[X]%` risk, success-rate, or "out of 100" slots with figures recalled from general literature; a confident number is the most-trusted and least-checked line in a consent plan. Use the performing clinician's or institution's own figures, or the procedure-specific source they supply, and otherwise leave `[VERIFY: procedure-specific rate, source]`.
+- Sort a complication into the "common", "serious but less common", or "rare" tier by impression; the tier must follow from the frequency you were given.
+- List patient-specific increased risks that are not traceable to a comorbidity, medication (anticoagulant, antiplatelet), allergy, or age actually in the input, or omit one that is.
+- Treat the alternatives section as complete when "no treatment" appears as a heading but its natural-history and risk-of-not-treating lines are blank or generic.
+- Pre-fill the DOCUMENTATION TEMPLATE with "Consents", "teach-back accurate", or "patient has capacity" before the conversation happens — that turns a plan into a record of something that did not occur.
+
+✅ **DO:**
+- Before handing over the plan, check that every frequency stated in DISCLOSE RISKS and STATE BENEFITS has a named source or a `[VERIFY]` tag, and that the same number is given in the same format (X out of 100) everywhere it appears.
+- Cross-check the procedure name, laterality, and site against the input in three places: PROCEDURE, "Procedure discussed", and the plain-language description.
+- If the input marks capacity as questionable or a surrogate as needed, put the capacity assessment or surrogate's authority ahead of disclosure in the plan, not after the decision.
 
 ---
 

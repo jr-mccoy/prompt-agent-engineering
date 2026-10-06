@@ -19,10 +19,22 @@ tags:
 related_prompts:
   - medicine_differential_diagnosis_generator
   - medicine_clinical_history_elicitation
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Clinical Teaching Framework
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Support attending physicians and clinical educators in structuring bedside teaching, case-based learning sessions, clinical reasoning coaching, and learner feedback using validated medical education frameworks including the One-Minute Preceptor, SNAPPS, Socratic questioning, and the Pendleton feedback model.
 
@@ -359,6 +371,21 @@ BEDSIDE TEACHING RULES:
   - Keep it brief — patients tire, and there are other patients to see
   - If a learner doesn't know the answer, say "Let's look that up together" — not "You should know that"
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write an "Expected response" in the Key questions slot that is itself a clinical claim from memory (a cut-off, a drug and dose, a test's sensitivity); a wrong expected answer turns the redirect into teaching an error. Source it from the case data or tag it `[VERIFY: current guideline]`.
+- Pass a learning objective as "specific, observable" because it starts with an action verb, when the verb is "understand", "appreciate", or "know" or the objective cannot be checked in the time available.
+- Add findings, results, or history to the case to make a teaching point work when they are not in the Case Summary — the learner then reasons from a patient who does not exist.
+- Fill "Growth area" or "Positive reinforcement" with a behavior no one has observed yet, or state a struggling-learner category (knowledge gap, reasoning error, non-cognitive) before any observation supports it.
+
+✅ **DO:**
+- Before handing over the plan, count teaching points (no more than 2–3), confirm each one is tied to a finding in the Case Summary, and check that every "Expected response" is consistent with the case data and the learner level selected.
+- Phrase each "Common misconceptions" correction so it can be checked against a named source the teacher will use, and mark any you could not tie to one.
+- Mark FEEDBACK PLAN entries "observe for" until there is an observed behavior to cite, so the plan does not read as an assessment already made.
 
 ---
 

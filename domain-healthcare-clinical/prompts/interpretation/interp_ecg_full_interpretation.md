@@ -14,8 +14,20 @@ tags:
   - ecg
   - interpretation
   - diagnostic
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -75,6 +87,14 @@ COMPARISON TO PRIOR: [new vs unchanged, or "no prior available"]
 FINAL READ:
 [1–2 sentence committed read with the action implied]
 ```
+
+## False-Positive Prevention
+
+- **QTc copied from the machine read, or from an unnamed formula.** Recompute it from the measured QT and RR (RR in s = 60 / HR): Bazett QT/√RR, Fridericia QT/∛RR. Bazett over-corrects at fast rates, so prefer Fridericia above ~90 bpm. In AF, average several beats. With QRS >120 ms (bundle branch block, paced rhythm) the QT includes depolarization, so report the JT interval or a wide-QRS adjustment and say which.
+- **Millimetres and rates quoted without checking calibration.** Box-counting and mm of ST deviation assume 25 mm/s and 10 mm/mV. A 50 mm/s strip or half-standard voltage changes every number, so confirm both before quoting rate, intervals, or ST elevation.
+- **STEMI called because the elevation "looks" significant.** Measure at the J point against the PR/TP baseline, count contiguous leads, and compare with the current universal-definition criteria, which are age- and sex-specific in V2–V3. Name the leads and millimetres that met them, or state that they were not met.
+- **The computer interpretation or a lead-reversal artifact read as pathology.** Check for limb-lead reversal (inverted P and QRS in lead I with a normal precordial progression) before calling dextrocardia or a lateral infarct, and do not adopt the machine's axis, QTc, or "acute MI" statement without your own measurement.
+- **An electrolyte signature reported as the electrolyte disorder.** Peaked T waves, U waves, or a short QT are patterns; pair each with the measured K, Mg, or Ca from the input, or list that level as the next test.
 
 ## Worked Example
 

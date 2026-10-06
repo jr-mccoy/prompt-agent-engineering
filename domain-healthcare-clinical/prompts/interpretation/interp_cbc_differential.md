@@ -15,8 +15,20 @@ tags:
   - anemia
   - cytopenia
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -102,6 +114,14 @@ ACTION:
 - [treatment now if indicated]
 - [follow-up cadence]
 ```
+
+## False-Positive Prevention
+
+- **Lineage calls made from differential percentages.** Compute ANC = WBC × (neutrophils % + bands %) / 100, and each other absolute count, before calling neutropenia, lymphopenia, or eosinophilia; a normal percentage can hide an abnormal absolute count. Confirm the WBC unit (×10³/µL and ×10⁹/L are numerically equal; cells/µL is 1,000 times larger).
+- **A reticulocyte index printed when no hematocrit was supplied.** The RI needs the measured Hct and the maturation factor for that Hct; if only Hgb was given, say the Hct is estimated or report the absolute reticulocyte count instead of a precise-looking index.
+- **MCV and RDW cut-offs treated as fixed.** Use the reporting lab's ranges and age-specific MCV in children. A combined iron + B12/folate deficiency can produce a normal MCV with a high RDW, so a normocytic result is not "not iron deficiency". Check the RBC count (Mentzer MCV/RBC) and ferritin before calling thalassemia trait.
+- **Analyzer artifact classified as disease.** Before categorizing, check for EDTA platelet clumping, an MCHC above the lab's upper limit (cold agglutinin, lipemia, spherocytes), and a recent transfusion that blends donor cells into the indices.
+- **Vitamin levels read in the wrong unit.** B12 in pg/mL and pmol/L differ by roughly 0.74, and folate is reported in ng/mL or nmol/L; state the lab's unit and range before calling a level deficient or borderline.
 
 ## Worked Example
 

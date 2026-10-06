@@ -2,13 +2,18 @@
 title: "Nursing Medication Administration Safety Check"
 category: nursing
 description: "Structured bedside safety check for medication administration — rights of administration, high-alert drug protocols, independent double-check, and error-prone drug traps."
+techniques:
+  - ST-02
+  - ST-42
+  - QA-08
+  - NE-06
 tags:
   - nursing
   - medication-safety
   - high-alert-medications
   - independent-double-check
   - patient-safety
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/medicine_medication_reconciliation.md
   - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
@@ -16,6 +21,18 @@ related_prompts:
 ---
 
 # Nursing Medication Administration Safety Check
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Support bedside nurses in performing a consistent, error-resistant medication administration check — applying the expanded rights of administration, triggering appropriate independent double-checks for high-alert medications, and recognizing the specific trap scenarios (look-alike / sound-alike, dose-range, rate-critical) that drive medication errors.
 
@@ -270,6 +287,23 @@ SAFETY CHECKLIST
 **Complex IV lines:** Compatibility matters; a single line running multiple agents can precipitate; confirm with pharmacy.
 
 **Patient refusal:** Document reason, notify provider, offer alternative when appropriate; do not coerce.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "Right dose (weight-based verified)" when no weight in kg was supplied, or when the weight on file was stated or estimated rather than measured.
+- Fill PRE-ADMINISTRATION CLINICAL CHECKS with a lab or vital older than the policy window, or with a value recalled rather than read — a stale K+ before KCl passes the checkbox and fails the check.
+- Record "Independent double-check completed: yes" when the second nurse confirmed the first nurse's arithmetic instead of calculating from the order independently.
+- Supply a hold parameter, maximum rate, dilution or reassessment interval that neither the order nor the policy provided.
+- Treat a LASA pair as cleared because the barcode scanned — a scan confirms the product matches the eMAR, not that the order names the drug the prescriber intended.
+
+✅ **DO:**
+- Recompute every weight-based dose and infusion rate along the full chain (ordered dose → concentration on the label → patient weight → mL/h) and compare the result with the pump entry digit by digit.
+- Trace each number in the output (dose, rate, lab, vital, weight) to the order, the eMAR, the product label or a timed result; anything without a source is written `per order / per policy — not supplied`.
+- Before marking "Right indication", check renal and hepatic status, pregnancy or lactation, and the last dose of any overlapping agent against the order.
+- In HOLD / ESCALATION DECISION, name the parameter that triggered the hold and where its limit came from, so the decision can be audited.
 
 ---
 

@@ -15,8 +15,20 @@ tags:
   - infection
   - hematuria
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -95,6 +107,14 @@ ACTION:
 - [next test or treatment 2]
 - [follow-up]
 ```
+
+## False-Positive Prevention
+
+- **Microscopy counts compared across reporting systems.** Manual microscopy reports cells per HPF and casts per LPF, while automated flow analyzers report cells/µL with their own cut-offs. Apply the reporting lab's range, and do not test a per-µL value against ">10 WBC/HPF".
+- **A dipstick protein grade read as daily excretion.** The grade is a concentration, so 2+ at SG 1.030 and 2+ at SG 1.005 differ greatly. Before calling nephrotic range, quantify with UPCR or a 24-hour collection and confirm its unit (g/g equals mg/mg; mg/mmol ≈ mg/g ÷ 8.84).
+- **Dipstick blood with no RBCs labelled pigment by default.** RBCs lyse in dilute or alkaline urine and in a delayed specimen, and menstrual blood contaminates. Check SG, pH, specimen age, and menses before naming myoglobin or hemoglobin, and ask for CK and hemolysis labs to confirm.
+- **A syndrome named when its defining elements were not measured.** Before writing nephritic, nephrotic, or pyelonephritis, list each defining element with its source value from the input (casts actually seen, quantified protein, serum albumin, fever or flank pain). A 4+ dipstick plus edema is not a measured nephrotic syndrome.
+- **ACTION drugs suggested without the checks they require.** An ACE inhibitor or ARB needs pregnancy status in anyone who could be pregnant, plus K and creatinine, and an antibiotic choice needs renal function and local resistance. If those are not in the input, list them as prerequisites and write doses as `[per provider order]`.
 
 ## Worked Example
 

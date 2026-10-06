@@ -20,10 +20,22 @@ related_prompts:
   - medicine_clinical_decision_support
   - medicine_patient_education_adapter
   - medicine_handoff_communication
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Goals of Care Conversation Guide
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide structured frameworks for goals-of-care and serious illness conversations including prognostic disclosure, values elicitation, advance directive guidance, code status discussions, hospice and palliative care transitions, and family meeting facilitation using validated communication models (REMAP, SPIKES, NURSE).
 
@@ -415,6 +427,22 @@ COMMON CONCERNS TO ADDRESS:
   → "Hospice covers care related to your diagnosis. For unrelated
      emergencies, you can still go to the ER."
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the `[X]%` in the code status script, or the PROGNOSIS line, with a survival figure from memory; quote only a number the treating team supplied with its source, or say "I can't give you an exact number" and use a time range.
+- Write the Recommendation as "aligned with values" when the values it cites are the template's examples (comfort, being at home) rather than words the patient or surrogate actually said, or are filled in ahead of the conversation as fact.
+- Fill DECISION-MAKER with the relative who is attending; name a surrogate only from a documented healthcare proxy, guardian, or the jurisdiction's surrogate hierarchy, and mark it `[VERIFY]` otherwise.
+- Record "Code status: DNR/DNI" in the documentation template when the conversation reached only a preference, not a signed order, or carry a POLST forward without checking it matches the new decision.
+- Describe hospice benefits (respite days, bereavement period, concurrent care) as universal; they depend on the payer and setting.
+
+✅ **DO:**
+- Before handing over the plan, check each field of the DOCUMENTATION TEMPLATE against the input: participants against who was listed as present, values stated against quoted words, and code status against the current-code-status checkbox — leave a field `[pending conversation]` rather than pre-filling it.
+- Label any prognosis in the plan as the team's estimate, with its trajectory basis (functional decline, ECOG/KPS trend, disease course), and state its uncertainty as a range.
+- Confirm a professional interpreter is listed in Logistics whenever the input marks an interpreter as needed.
 
 ---
 

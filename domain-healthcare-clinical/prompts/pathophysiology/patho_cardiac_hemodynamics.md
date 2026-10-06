@@ -15,8 +15,20 @@ tags:
   - preload
   - afterload
   - mechanism
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -72,6 +84,21 @@ Senior cardiology or critical care attending teaching hemodynamics at the bedsid
    - Vasopressin: V1 vasoconstriction (independent of catecholamine pathway). Useful adjunct in vasodilatory shock.
    - Diuresis: reduces preload. Helps congestion; can drop CO if patient is preload-dependent.
    - Inhaled NO or epoprostenol: pulmonary vasodilation; lowers PVR; helps RV failure and pulmonary hypertension.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Give preload, afterload or contractility a direction that the supplied CVP, PCWP, CI, SVR or echo cannot support and then present the DETERMINANT WALK as measured — with no catheter number, write `inferred from [finding]`.
+- Assign a shock category or severity label (massive vs submassive, cardiogenic vs obstructive) that the input's BP and perfusion data do not meet under the definition you are using.
+- Flip a perfusion relationship to tighten the spiral narrative: the coronary perfusion gradient, which ventricle is perfused in which phase of the cycle, and which lesions raise SvO2 are where fluent hemodynamic chains most often reverse.
+- Quote a vasoactive dose range, thrombolytic regimen or MAP target in INTERVENTION EFFECTS or COMMITTED MANAGEMENT REASONING from memory.
+
+✅ **DO:**
+- Recompute what the data allow before interpreting them: MAP from SBP and DBP, SVR = 80 × (MAP − CVP) / CO when CO is given; then check that the stated CI, SVR and SvO2 fit the syndrome you named.
+- Trace each step of PRESSURE-VOLUME LOGIC to a named source type (physiology text, hemodynamic monitoring reference, guideline) and flag unsourced steps `[mechanism uncertain]`.
+- For each intervention, name the determinant it moves and the direction, then compare that with your own DETERMINANT WALK — an intervention effect that contradicts the walk is a chain error, not a nuance.
+- Tag every dose, rate and target `[VERIFY: current guideline/label/formulary]`; the treating team chooses agents in shock.
+- Still commit: when the answer turns on one datum (CVP, RV size on echo, lactate trend), name that datum instead of answering "it depends".
 
 ## Output Format
 

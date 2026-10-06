@@ -14,8 +14,20 @@ tags:
   - cxr
   - chest
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -81,6 +93,14 @@ IMPRESSION:
 2. [next finding] — [action]
 3. [incidental] — [follow-up if needed]
 ```
+
+## False-Positive Prevention
+
+- **Image findings written that the input never described.** When the input is a text description rather than the image, every line under LUNGS, PLEURA, and HEART/MEDIASTINUM must trace to a phrase in that description; a region not described is "not described", not "unremarkable". Before signing, match each output finding to its source phrase.
+- **Cardiomegaly called from the cardiothoracic ratio on an AP or supine film.** The >50% rule is for a PA view; AP magnification inflates it. Report a CTR only when both widths were measured on a PA film, and otherwise state that heart size cannot be assessed on this view.
+- **"No pneumothorax" or "no effusion" on a supine film.** Air collects anteriorly and at the bases (deep sulcus sign) and fluid layers as a diffuse veil. State the limitation and the study that would answer it (upright or decubitus film, ultrasound, CT).
+- **Tube and line positions given as if the landmarks were confirmed.** ETT distance to the carina moves with neck flexion and magnification, so state whether the carina is visible. For a central line, describe the vessel course as well as the tip level; a left-sided line can end in a persistent left SVC or an artery.
+- **"New", "unchanged", or "stable" stated without a dated prior.** Use these words only after a named comparison study, and check Fleischner eligibility (incidental nodule, adult, no known cancer or immunocompromise) before applying its pathway.
 
 ## Worked Example
 
