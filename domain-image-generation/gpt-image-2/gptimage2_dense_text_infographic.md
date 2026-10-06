@@ -16,7 +16,7 @@ tags:
   - text-rendering
   - data-visualization
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -115,6 +115,21 @@ If any quoted string has a typo, extra character, or paraphrase, the output is i
 1. "Section 3's stat is rendering in the wrong color — render it in the accent hex [HEX] instead."
 2. "The title is too small — push it to ~10% of canvas height."
 3. "Tighten the panel grid — there's too much gutter between sections 4 and 5."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat `web-search-on` as fact-checking — search during generation can add numbers, dates, names, and labels that are not in `[SECTIONS]`, and the result looks well-sourced while nothing in it traces to a source.
+- Accept one `[FOOTER]` source line as covering every statistic — a footer citation is a claim about provenance, not evidence of it.
+- Pass a stat because it is a plausible number — "23%" re-rendered as "2.3%", or STAT_2 drifting into section 3's panel, still passes a skim.
+- Let a countable visual cue contradict its stat (a 7-of-10 pictogram beside "65%").
+
+✅ **DO:**
+- Require a source list before generation: each fact in `[SECTIONS]` carries a source and access date supplied by the user; with `web-search-on`, any fact the model may look up is named in the prompt with the source it must match.
+- Build a reconciliation table after generation — rendered string → input slot (TITLE, HEADING_n, BODY_n, STAT_n, FOOTER) → match/mismatch — and confirm the rendered-string count equals the input-string count; anything unmapped is removed.
+- Make pictograms and icons either non-quantitative or count-matched to their stat.
 
 ---
 

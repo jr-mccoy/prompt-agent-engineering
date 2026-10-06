@@ -12,7 +12,7 @@ tags:
   - ui-mockup
   - product-design
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
 ---
@@ -100,6 +100,20 @@ If any text is lorem ipsum, faux-Latin, or invented placeholder copy, the output
 1. "The [tab/component] alignment is off — snap everything to the 8-pt baseline grid."
 2. "Replace the placeholder image in the [position] with [specific realistic content]."
 3. "The accent hex is too saturated against the surface — adjust to [refined hex]."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Read "no lorem ipsum" as "no invented content" — the realistic-copy instruction pushes the model to fill the body region with menu items, settings toggles, badges, prices, ratings, and user names the product does not have.
+- Pass the platform chrome because a status bar is present — check the device-generation details (notch vs. Dynamic Island, Android gesture bar vs. 3-button nav) match `[PLATFORM]`.
+- Ship a mockup to marketing or engineering on the strength of "looks like a real screenshot" — that realism is exactly why a viewer will read every visible control as a shipped feature.
+
+✅ **DO:**
+- Inventory every visible string, icon button, tab, and data value in the output and map each to a `[REAL COPY]` entry or to standard platform chrome; anything unmapped is an invented feature and is removed in the next iteration.
+- Count tabs, nav items, and buttons against the EXACT TEXT list — a fourth tab when three were specified fails the mockup even if its label is sensible.
+- Check embedded stock-style photos and avatars for identifiable real people or third-party logos, and replace them before the mockup leaves design review.
 
 ---
 

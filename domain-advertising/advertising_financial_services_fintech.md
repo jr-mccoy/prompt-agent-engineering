@@ -20,7 +20,7 @@ tags:
   - financial
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-presentations/visual-planning/visual_frontier_map.md
@@ -106,6 +106,25 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **Rates and returns are the slot a model fills first.** "4.50% APY", "earn up to 5% cashback",
+   "$0 fees", and "returns of 12%" look like ordinary headline copy. Copy a rate or fee only from
+   intake with its effective date; any supplied rate goes to
+   `campaign/adcampaign_claims_compliance_review.md` for its qualifying-text questions.
+2. **Protection badges and regulator marks are never decoration.** Deposit-insurance badges,
+   "insured", licence numbers, regulator logos, and "bank-grade security" padlocks appear only when
+   the user supplies the exact mark; whether the product may display it is a question for counsel,
+   not something this prompt decides.
+3. **Growth imagery implies performance.** Even outside a UI frame, a rising line, stacked coins, or
+   a large balance figure suggests returns; include one only when the key message is about growth
+   and the claim is substantiated.
+4. **Card art carries text.** No card numbers, cardholder names, or expiry dates; payment-network
+   logos only from supplied files.
+5. **Verify before handing over:** list every numeral, percent sign, currency symbol, logo, and
+   badge in the Final Image Prompt and each variant, and map each to an intake answer and date. A
+   badge or rate without one fails, however clean the form checklist looks.
 
 ## Output Format
 

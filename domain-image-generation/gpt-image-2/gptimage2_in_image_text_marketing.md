@@ -14,7 +14,7 @@ tags:
   - text-rendering
   - typography
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
   - domain-image-generation/gpt-image-2/gptimage2_advertising_creative_brief.md
@@ -102,6 +102,21 @@ Render the typography contract exactly. If any quoted string has a typo, has an 
 1. "The headline is reading too small — push it to ~16% canvas height."
 2. "Tighten the negative-space zone — there's too much background bleed into the headline."
 3. "The CTA pill is the wrong color — use the brand secondary [HEX] background instead."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat "95%+ text rendering accuracy" as a guarantee for this image — it is an aggregate rate; across a headline, subhead, CTA, and badge, one wrong character is an ordinary outcome, and one wrong character fails the creative.
+- Proofread by reading each string as a phrase — the eye autocorrects "rn" for "m", a doubled or dropped letter, a missing diacritic, and a straight apostrophe where the source has a curly one.
+- Pass the CTA because its words are right when its text hex on the pill hex is too low-contrast to read at the placement size.
+- Count "no additional copy" as met while the background carries pseudo-text on signs, packaging, or screens.
+
+✅ **DO:**
+- Transcribe each rendered string and compare it character by character with the source string — same character count, case, spaces, punctuation glyphs (hyphen vs. en dash, straight vs. curly quotes), and diacritics — before calling the image final.
+- Compute the contrast ratio from the CTA text and pill hex values and require at least 4.5:1; fix the hex pair in the prompt, not by eye in the render.
+- Measure the rendered headline cap-to-baseline height against the 12–18% canvas-height spec (123–184 px on a 1024-px-tall canvas).
 
 ---
 

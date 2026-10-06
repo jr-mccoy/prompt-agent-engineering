@@ -20,7 +20,7 @@ tags:
   - health
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-presentations/visual-planning/visual_frontier_map.md
@@ -106,6 +106,24 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **A transformed body is a results claim.** Before/after splits, slimmer waists, defined
+   muscles, or glowing skin pass every form line and assert an outcome and its typicality. Do not
+   depict one unless the user supplies a result direction that has been through
+   `campaign/adcampaign_claims_compliance_review.md`.
+2. **Medical imagery implies treatment.** Lab coats, stethoscopes, hospital settings, anatomical
+   organs, or capsules beside a DNA helix suggest the product treats or prevents a condition; leave
+   them out unless intake describes a clinic service and the user asks for clinical staging.
+3. **Authority text is invented by default.** "Clinically proven", "doctor recommended",
+   "boosts immunity", "#1 rated", and regulator-style seals are rendered only as written in intake;
+   whether a health claim may run at all is a question for counsel, never asserted here.
+4. **Label doses are facts.** "1000 mg", "30 servings", and ingredient names on a bottle are copied
+   from the product's label data or the label is left blank.
+5. **Verify before handing over:** for every body, person in clinical dress, or depicted
+   physiological process in the Final Image Prompt, name the intake answer that authorises it; then
+   trace each rendered string to intake verbatim. Anything without a source is removed.
 
 ## Output Format
 

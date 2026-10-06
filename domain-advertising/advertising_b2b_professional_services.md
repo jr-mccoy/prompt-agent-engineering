@@ -20,7 +20,7 @@ tags:
   - b2b
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-presentations/visual-planning/visual_frontier_map.md
@@ -106,6 +106,24 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **A "trusted by" strip asserts clients.** A row of recognisable company logos is clean flat
+   artwork and passes every form line, yet claims engagements the firm may not have. Show client
+   marks only when intake lists them and the user confirms each may be used.
+2. **"Reduce risk and save time" gets quantified for you.** Models letter "40% faster onboarding"
+   or "$2M saved" under the hero claim. A result figure appears only as quoted in intake with its
+   source; otherwise the claim stays qualitative.
+3. **Certification and partner marks need a source.** ISO or SOC 2 seals, "Gold Partner" badges,
+   and analyst-ranking graphics are rendered only from supplied files; a generic shield reading
+   "Certified" is the same unbacked claim in a vaguer form.
+4. **People stand for the firm.** If figures appear they read as the firm's consultants; ask
+   whether the user wants illustrative figures or none, and never caption them with names or titles.
+5. **Verify before handing over:** pull every quoted string and every numeral from the Final Image
+   Prompt and from each model variant, and write beside it the intake field it came from. A string
+   with no field, or a Midjourney / Stable Diffusion variant carrying text the base prompt lacked,
+   fails "Interview inputs reflected accurately" even when every form line is ticked.
 
 ## Output Format
 

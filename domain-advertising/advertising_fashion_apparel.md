@@ -20,7 +20,7 @@ tags:
   - fashion
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-presentations/visual-planning/visual_frontier_map.md
@@ -106,6 +106,22 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **The rendered garment must be the garment in the drop.** The checklist passes on layout while
+   the image shows another cut, fabric, print, or colourway. Describe the actual pieces (silhouette,
+   material, colour names) from intake; if intake says only "seasonal drop", ask which pieces.
+2. **Bodies shown imply the size range.** Models in sizes or fits the collection does not come in
+   misstate who can buy it; ask what size range ships before describing figures.
+3. **"Limited release" invites invented scarcity.** "Only 100 made", "48 hours only", and "-40%"
+   are rendered only as supplied, and a discount keeps its stated basis next to the figure.
+4. **Marks on the clothing are claims of origin.** Invented labels, monograms, or collaboration
+   names stay off the garment; ask the user to avoid patterns that resemble another house's
+   signature print, and raise any doubt about one as a counsel question.
+5. **Verify before handing over:** read the garment description in the Final Image Prompt against
+   intake attribute by attribute (piece, colour, fabric, fit), then match each rendered string,
+   including any swing-tag or label text, to its intake answer verbatim.
 
 ## Output Format
 

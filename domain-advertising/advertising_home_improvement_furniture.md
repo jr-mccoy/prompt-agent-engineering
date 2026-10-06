@@ -20,7 +20,7 @@ tags:
   - home
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-presentations/visual-planning/visual_frontier_map.md
@@ -106,6 +106,23 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **Materials and finishes must be the ones sold.** The image passes on form while showing solid
+   oak where the piece is veneer, marble where it is laminate, or a configuration the range does not
+   offer. Specify material, finish, colour, and configuration from intake; ask when they are missing.
+2. **A finished room implies the job's scope.** A full kitchen remodel or a before/after split for a
+   service that only replaces cabinet doors overstates what the customer gets; match the depicted
+   work to the service described.
+3. **Trust lines are claims.** "Licensed & insured", "10-year warranty", "0% financing", "Save 50%",
+   and review-site badges get added around "Get a free estimate"; render each only when supplied,
+   and add no terms to the CTA.
+4. **Room styling sets expectations.** Props that look included (rugs, lighting, appliances) should
+   be flagged in the prompt as styling, or excluded, when the offer is a single item.
+5. **Verify before handing over:** compare each product or work element in the Final Image Prompt
+   with the intake item list (material, finish, dimensions where given), then match every rendered
+   string to an intake answer verbatim. An element or string with no intake source fails.
 
 ## Output Format
 

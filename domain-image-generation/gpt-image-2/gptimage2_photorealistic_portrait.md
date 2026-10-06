@@ -15,7 +15,7 @@ tags:
   - editorial
   - photography
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
 ---
@@ -104,6 +104,21 @@ If Phase 1 misses, refine with single-axis follow-ups:
 1. "Make the lighting [warmer / cooler / more directional from the left]."
 2. "Pull the framing back to [include feet / show more of the environment / tighten on the face]."
 3. "Add more environmental wear to the clothing — [sweat / dust / salt residue / paint stains]."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call the result candid because the gaze is off-camera — a centered, symmetrical stance with evenly lit face is still a posed portrait.
+- Judge skin texture from the forehead alone; AI gloss tends to survive on the cheeks, nose bridge, and hands even when pores show elsewhere.
+- Inspect hands, teeth, and ears at thumbnail size — anatomical errors that the failure condition names are invisible below 100% zoom.
+- Publish the image in a documentary or longform context unlabeled — editorial realism is the goal, but a synthetic person presented as a photographed one is a false record.
+
+✅ **DO:**
+- At 100% zoom, count fingers on every visible hand, check joint direction and grip on held objects, and check eyeglass arms, earrings, and collar for left/right consistency.
+- Scan the background for signage, labels, or pseudo-lettering — the Forbidden list bans in-image text, so any rendered lettering fails the image.
+- Check environmental contact against `[SCENE]`: wind direction in hair matches clothing, wet scenes leave wet surfaces, and the light direction on the face matches the shadows in the background.
 
 ---
 

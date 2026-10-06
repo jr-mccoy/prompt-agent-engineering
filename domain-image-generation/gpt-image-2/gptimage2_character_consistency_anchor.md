@@ -14,7 +14,7 @@ tags:
   - storybook
   - sequential-art
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
   - domain-image-generation/gpt-image-2/gptimage2_multi_reference_composite.md
@@ -157,6 +157,21 @@ For a multi-scene project (storybook, comic, ad sequence):
 1. "The hair color in this scene reads more [ash blond] than the anchor's [auburn] — restore to match Image 1's hair exactly."
 2. "The face shape has slimmed compared to the anchor — restore facial proportions to match Image 1."
 3. "The visual style has shifted to more photoreal than the anchor's [illustrated] style — restore the canonical [STYLE]."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Judge consistency by outfit and hair color — a matching costume carries the eye while facial geometry (eye spacing, nose length, jaw width, face height-to-width) drifts underneath it.
+- Treat the Phase 1 anchor as locked because KEY DETAILS is complete — later scenes preserve what the anchor *shows*, so a freckle pattern rendered faintly or a scar on the wrong side becomes canon.
+- Count a distinctive mark as preserved when the scene's pose hides it — unseen is unverified, not consistent.
+- Approve each scene only against the scene before it — gradual drift passes every pairwise check.
+
+✅ **DO:**
+- After Phase 1, check every KEY DETAILS item is visible and correct in the anchor image; regenerate the anchor before any Phase 2 work if one is missing.
+- Place each scene beside Image 1 at matched face size and compare facial proportions, hairline, and ear shape; check laterality — side-part, scar, and birthmark stay on the character's own left or right, even in mirrored or profile poses.
+- Lay out the whole sequence plus the anchor as one contact sheet before release, so cumulative drift across scenes is visible at once.
 
 ---
 

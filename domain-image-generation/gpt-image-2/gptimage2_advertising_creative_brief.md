@@ -14,7 +14,7 @@ tags:
   - campaign
   - creative-brief
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
   - domain-advertising/
@@ -109,6 +109,20 @@ If any of the headline/subhead/CTA copy is misspelled, has extra characters, or 
 1. "Strengthen the cultural moment — the [season / time of day / weather] needs to feel more present."
 2. "Tighten the headline zone — too much busy texture is bleeding into it. Make the upper-left more uniform."
 3. "Push the accent color [further / less] — currently appearing in [N] places, target [M]."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Read the "taste decisions" latitude as covering the client's product — left undescribed, the model invents packaging, a logo variant, and claim badges ("organic", "award-winning") that the brand never made.
+- Accept the cultural moment because the frame looks seasonal — check for contradictions with `[CULTURAL MOMENT]` and the market (out-of-season produce, wrong-side traffic, signage in the wrong language).
+- Pick from the `n` pool on composition alone when people are in frame — an unintended resemblance to a real public figure is a likeness problem even without a reference image.
+
+✅ **DO:**
+- List every claim-like element in each pool image (seals, badges, numbers, words on props or packaging) and remove any that is not in the brief's copy or substantiated by the client.
+- Count the accent hex's appearances in the frame and confirm one or two; measure the headline zone's area as a share of the canvas (≥25%) and confirm the headline sits fully inside it.
+- When the product appears, compare it against a client-supplied product photo, or pass that photo as a reference, before the image enters the creative pool.
 
 ---
 

@@ -16,7 +16,7 @@ tags:
   - chart
   - executive
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
   - domain-presentations/
@@ -28,7 +28,7 @@ related_prompts:
 
 **API parameters (required):**
 - `model="gpt-image-2"`
-- `size="1536x1024"` (16:9 landscape — standard slide)
+- `size="2560x1440"` (exactly 16:9 — standard slide; the largest non-experimental size. `1536x1024` is 3:2 and letterboxes in a 16:9 deck)
 - `quality="high"` (required; charts have small numbers)
 - `n=1`
 
@@ -106,7 +106,7 @@ CONSTRAINTS:
 - EXACT TEXT — every quoted string above renders verbatim with no extra characters, no punctuation drift, no rounding of numbers, no smoothing of data.
 - Chart data discipline: render the values exactly as provided. Do not smooth, interpolate, or "make the chart look better." If a value is 23.7, render 23.7 — not 24.
 - Forbidden: decorative illustrations, mascots, stock-photo backgrounds, gradients, drop shadows, lorem ipsum, invented bullet copy, additional text beyond what's listed.
-- Format: 1536×1024, landscape.
+- Format: 2560×1440, 16:9 landscape.
 
 If any chart value is rounded, smoothed, or reordered, the output is incorrect. If any quoted string has a typo or extra character, the output is incorrect.
 ```
@@ -118,6 +118,21 @@ If any chart value is rounded, smoothed, or reordered, the output is incorrect. 
 1. "Tighten the chart's left margin — give the y-axis labels [more / less] room."
 2. "Move the key metric callout from above the chart to overlay the highlighted data point."
 3. "The accent hex is too saturated — use [refined hex] for the highlighted data point only."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assume the canvas is 16:9 because the prompt text says "16:9 presentation slide" — the API `size` decides the canvas; check it is `2560x1440` (or another exact 16:9 size), since a 3:2 size such as `1536x1024` letterboxes or stretches in a 16:9 deck.
+- Pass the chart because every value label is verbatim — the model can print "23.7" on a bar drawn taller than the "31.2" bar, or start a bar axis above zero without labeling it.
+- Judge "readable at half-zoom" on the full-resolution file — axis labels and footer text at ~16pt-equivalent on a 1440-px-tall slide can blur out when projected or shrunk in a PDF thumbnail.
+- Let `[KEY METRIC]` and `[CHART DATA]` disagree — a "+18% QoQ" callout over bars showing a 12% change passes every EXACT TEXT check.
+
+✅ **DO:**
+- Measure each bar or point: pixel height ÷ value should be constant across the series (within ~5%); any outlier is a mis-drawn value even if its label is right.
+- Recompute the key metric from the chart data supplied (e.g., percent change between the last two values) before generation; if it cannot be derived, ask the user for its source instead of rendering it.
+- View the slide at 50% scale and confirm the smallest axis label and footer still read; if not, cut labels or bullets rather than shrinking text further.
 
 ---
 

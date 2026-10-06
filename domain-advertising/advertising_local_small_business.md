@@ -20,7 +20,7 @@ tags:
   - local
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-presentations/visual-planning/visual_frontier_map.md
@@ -106,6 +106,22 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **"Neighborhood cues" can depict somewhere else.** A generated street, storefront, or landmark
+   reads as local but may show another business's facade or another town. Use only cues the owner
+   describes, never render another business's signage, and ask before showing a real landmark.
+2. **Contact details are the most expensive typo.** Address, phone number, hours, and website are
+   copied character-for-character from intake; a model will otherwise supply a plausible number
+   that rings someone else.
+3. **Local proof gets invented.** "Voted Best in Town", "Since 1985", star ratings, and review
+   quotes appear only when the owner supplies them and the source.
+4. **Seasonal offers need their terms.** "20% off", "BOGO", and "this weekend only" are rendered
+   only as supplied, with the dates given.
+5. **Verify before handing over:** read every digit of the phone number, street number, opening
+   hours, and offer dates in the Final Image Prompt back against intake, then confirm the storefront
+   or street description matches what the owner said. A mismatch fails, whatever the form lines show.
 
 ## Output Format
 
