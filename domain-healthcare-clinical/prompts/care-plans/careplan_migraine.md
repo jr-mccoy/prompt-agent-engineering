@@ -120,7 +120,7 @@ PITFALLS:
 **Output:**
 
 ```
-PATTERN: episodic (10 days/mo, high disability). Acute-medication use ~3 days/week — approaching medication-overuse territory.
+PATTERN: episodic (10 days/mo, high disability). Triptan use ~3 days/week ≈ 13 days/month — already at the triptan overuse threshold (≥10 days/month). Note 13 triptan days exceeds the 10 headache days reported — reconcile with a diary.
 
 ACUTE THERAPY:
 - Continue sumatriptan 100 mg (no vascular contraindication) + naproxen for severe attacks; treat early.
@@ -134,7 +134,7 @@ PREVENTION DECISION + AGENT:
 - Give an 8-week trial at target dose before judging.
 - If ≥2 oral preventives fail/intolerable → CGRP mAb (e.g., galcanezumab) or atogepant.
 
-MEDICATION-OVERUSE PLAN: monitor closely; if MOH develops, withdraw overused agent and bridge with the preventive.
+MEDICATION-OVERUSE PLAN: triptan days already meet the overuse threshold — bring them below it as the preventive takes effect; if MOH is diagnosed, withdraw overused agent and bridge with the preventive.
 
 LIFESTYLE / TRIGGERS: regular sleep/meals/hydration, consistent caffeine, exercise, trigger diary; treat depression (the chosen preventive can do double duty).
 

@@ -123,7 +123,7 @@ Persistent misses → next-shift ask: [...]
 
 **Output (excerpt):**
 ```
-Item(front): Why keep watching after NMB reversal?  | Answer(back): risk of re-emergence of weakness / re-sedation depending on agent and timing — [verified with preceptor + facility reference] | Source: preceptor + facility monograph | Domain: pharmacology-reversal | Safety-critical: Y.
+Item(front): Why keep watching after NMB reversal?  | Answer(back): risk of recurarization (re-emergence of weakness) depending on agent and timing — [verified with preceptor + facility reference] | Source: preceptor + facility monograph | Domain: pharmacology-reversal | Safety-critical: Y.
 Spaced schedule: next shift → 3 days → ~1 week (tight track, safety-critical).
 Active recall: attempted from memory, hit; re-spaced to 1 week.
 Rollup: persistent miss elsewhere → next-shift ask: "walk me through our re-sedation watch protocol."

@@ -122,7 +122,7 @@ ADJUSTMENTS THIS VISIT:
 TARGETS: A1c <7%, TIR >70%, TBR <4% (currently 6% — too many lows).
 
 INSULIN REGIMEN:
-- TDD ~ 0.6 u/kg historically (~40 u). Current basal 28 is high relative to bolus → likely overbasalized, driving overnight lows.
+- Actual TDD = basal 28 + mean daily bolus [not provided — pull from pen/meter log or CGM-linked report]. Weight-based cross-check only: 0.6 u/kg × 65 kg ≈ 39 u, of which basal 28 would be ~72% (vs ~50% expected) → likely overbasalized, driving overnight lows.
 - Basal: reduce glargine 28 → 24 units; consider switch to degludec for flatter profile and exercise forgiveness, or split-dose glargine. Move dose timing review.
   - Better: verify with overnight CGM after reduction; basal correct when fasting trace flat.
 - Prandial: aspart. Pre-lunch highs suggest breakfast ICR too weak — tighten breakfast ICR 1:10 → 1:8; keep lunch/dinner 1:10 pending data.
@@ -131,7 +131,7 @@ INSULIN REGIMEN:
 
 CGM / MONITORING:
 - Review CGM AGP every 2 weeks during titration.
-- Set low alert 80, urgent-low 70.
+- Set low alert 80; urgent-low per the device's documented options (fixed at 55 mg/dL on some CGMs).
 
 HYPOGLYCEMIA PLAN:
 - Glucagon current — confirm not expired.

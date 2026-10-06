@@ -128,7 +128,7 @@ PSYCHOTHERAPY: refer for CBT with interoceptive + situational exposure — first
 
 ADJUNCTS:
 - Caffeine reduction is high-yield here — taper coffee.
-- For the "works fast" gap during SSRI onset: short, time-limited clonazepam 0.25–0.5 mg up to BID PRN for ≤2–4 weeks as a bridge (no SUD history) — scheduled taper, explicit dependence counseling. Prefer propranolol or hydroxyzine if any dependence concern.
+- For the "works fast" gap during SSRI onset: short, time-limited clonazepam 0.25–0.5 mg BID, scheduled (not escalating PRN), for ≤2–4 weeks as a bridge (no SUD history) — scheduled taper, explicit dependence counseling. Prefer propranolol or hydroxyzine if any dependence concern.
 
 NON-RESPONSE PATHWAY: if inadequate at 6–8 weeks adequate dose → switch to venlafaxine XR or augment; ensure CBT engagement first.
 

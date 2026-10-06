@@ -129,7 +129,7 @@ Feed-in: [...] | Prune/promote rule: [...] | Facility-value re-verify cadence: [
 **Output (excerpt):**
 ```
 Card — Front: "Earliest cues of a rising neuraxial block?" | Back: [verified w/ ASPAN + facility ref] | Source: ASPAN + facility policy | Domain: regional-neuraxial | Numbers: n/a | Safety-critical: Y.
-Card — Front: "New-onset irregular narrow-complex rhythm — nurse next step?" | Back: recognize + reassess + escalate by role [verified] | Domain: cardiovascular-hemodynamic | Safety-critical: Y.
+Card — Front: "New-onset irregular narrow-complex rhythm — nurse next step?" | Back: recognize + reassess + escalate by role [unverified — no source named; off the schedule until one is] | Source: [not provided] | Domain: cardiovascular-hemodynamic | Safety-critical: Y.
 Weighting: heavier on regional/neuraxial + dysrhythmia (weak + blueprint); thin on handoff (solid).
 Schedule: weak/safety-critical on tight track (next study day → 2 days → ~5 days).
 Maintenance: feed in weekly from captures; re-verify facility-referenced cards at annual refresh.

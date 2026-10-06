@@ -54,7 +54,7 @@ Cardiologist managing post-MI secondary prevention.
 
 2. **High-intensity statin** (atorvastatin 80 / rosuvastatin 40) for all; goal LDL <55 (very-high-risk). Add ezetimibe → PCSK9i to reach goal.
 
-3. **Beta-blocker** (metoprolol succinate, carvedilol, bisoprolol) — strongest benefit with reduced EF or HF; continue ≥1 year (indefinite if HFrEF).
+3. **Beta-blocker** (metoprolol succinate, carvedilol, bisoprolol) — strongest benefit with reduced EF or HF (indefinite if HFrEF); with preserved EF and no other indication, whether and how long to continue is unsettled in recent trials `[VERIFY: current ACC/AHA / ESC ACS guideline]`.
 
 4. **ACEi/ARB** (lisinopril, ramipril) — especially LVEF <40%, HTN, diabetes, CKD; reduces remodeling.
 

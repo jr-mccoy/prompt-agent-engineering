@@ -129,7 +129,7 @@ PITFALLS:
 DIAGNOSIS / STAGE / FLUCTUATIONS: PD 5 years, H-Y 3, wearing-off + mild peak-dose dyskinesia.
 
 MOTOR THERAPY:
-- Wearing-off: add a COMT inhibitor (opicapone 50 mg qhs or entacapone 200 mg with each levodopa dose) to extend each dose; and/or shorten interval to QID. Add rasagiline 1 mg as adjunct option.
+- Wearing-off: add a COMT inhibitor (opicapone 50 mg qhs or entacapone 200 mg with each levodopa dose) to extend each dose; and/or shorten interval to QID. Add rasagiline 1 mg as adjunct option. Peak-dose dyskinesia is already present, so if a COMT or MAO-B inhibitor is added, reduce each individual levodopa dose at the same time (amount per prescriber) — both prolong levodopa effect and can worsen dyskinesia.
 - Avoid adding a dopamine agonist — age 72 + cognitive complaints → high risk of hallucinations/impulse-control/orthostasis. Optimize levodopa-based therapy instead.
 - Peak dyskinesia: extended-release amantadine (also helps), and/or slightly reduce each levodopa dose while keeping frequency.
 

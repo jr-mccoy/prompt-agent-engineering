@@ -103,7 +103,7 @@ One coaching point (miscalibration direction): [...]
 ❌ **DON'T:**
 - Accept a flip-trigger phrased as "worsens" or "doesn't improve" — it must name which cue changes and in which direction (a new symptom, arousal drop, no response to the comfort measure).
 - Write a flip-trigger as a vital-sign number ("pressure above X"); where the unit uses numeric call parameters, the trigger reads `per facility protocol` / `per provider order`.
-- Let the "Why" cite a reversible cause the vignette's own cues argue against (pain as the likely driver for a patient described as comfortable) — the justification must fit the cues as written.
+- Let the "Why" cite a reversible cause the vignette's own cues argue against (a cause whose defining symptom the vignette says is absent) — the justification must fit the cues as written.
 - Accept an SBAR headline that names the concern but drops the trend ("BP is high" instead of "BP trending up over two checks despite…"); a headline without the trajectory reads as a one-off value.
 
 ✅ **DO:**
@@ -127,7 +127,7 @@ One coaching point (miscalibration direction): [...]
 **Output (excerpt):**
 ```
 Vignette: post-op patient's blood pressure trending up over two checks, awake, comfortable, no other change.
-Call: watch. Why: isolated upward BP trend, reversible causes likely (pain/anxiety/bladder), no end-organ or airway signs — not escalate yet. Opposite-call check: not routine because it's a trend not a one-off; not escalate because no danger signs.
+Call: watch. Why: isolated upward BP trend, reversible causes still to check (bladder, anxiety — pain unlikely, patient comfortable), no end-organ or airway signs — not escalate yet. Opposite-call check: not routine because it's a trend not a one-off; not escalate because no danger signs.
 Watch → flip-trigger: further rise, new symptom (headache, chest, neuro change), or no response to comfort measures → escalate to provider. Reassess per facility.
 Cost reveal: escalating now = noise/credibility cost; ignoring as routine = missing a climbing trend.
 Coaching point: your tiering was right — you tend to under-define flip-triggers; always attach the specific thing that would flip a watch.

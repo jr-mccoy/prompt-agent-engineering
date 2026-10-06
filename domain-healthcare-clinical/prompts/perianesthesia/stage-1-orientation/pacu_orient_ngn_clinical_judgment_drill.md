@@ -129,7 +129,7 @@ One coaching point (weakest step): [...]
 ```
 Stage 1: awake post-op patient, then over two checks becomes drowsier with slower, shallower breathing after comfort was addressed.
 Recognize/analyze: relevant = declining arousal + declining respiratory effort trend; noise = stable incision appearance.
-Prioritize: opioid-related respiratory depression vs residual anesthetic vs hypercarbia-from-hypoventilation.
+Prioritize: opioid-related respiratory depression vs residual anesthetic vs residual neuromuscular blockade.
 Actions (within scope): stimulate, position, apply O2, monitor closely, prepare reversal per order, escalate to provider; rejected distractor: "administer naloxone without order" (provider-scope) → reframed as prepare/assist per order.
 Stage 2 evaluate: if arousal/effort improve with stimulation and O2, continue close reassess per facility; if not, escalate is already in motion.
 Coaching point: your strongest step was cue recognition; tighten prioritization by always pairing the likely cause with its most dangerous mimic.

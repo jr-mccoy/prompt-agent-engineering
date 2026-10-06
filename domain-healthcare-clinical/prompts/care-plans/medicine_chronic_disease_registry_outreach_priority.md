@@ -141,7 +141,7 @@ Do not diagnose or suggest treatment changes; only route/escalate.
 - Write key_drivers or next_action in clinical language ("uncontrolled diabetes — needs insulin"); keep drivers to the data ("A1c 9.6% on 2026-03-20") and route the rest through escalate_to_clinician.
 
 ✅ **DO:**
-- Recompute the time-based fields from dates for every row — months from last_visit_date to the report date, days since the last metric, the acute-utilisation window — and check each matches the key_drivers text (re-check the sample row's "no visit 7 mo" against 2025-11-10 → 2026-05-06).
+- Recompute the time-based fields from dates for every row — months from last_visit_date to the report date, days since the last metric, the acute-utilisation window — and check each matches the key_drivers text (a rounded-up month count in a driver like "no visit N mo" can push a row across a >6-month scoring tier).
 - Recount Output B band totals and the unreached-P1 count from the rows of Output A, and recompute each Output C rate from its stated numerator and denominator.
 - List rows missing a Required field separately instead of imputing a value or silently scoring that criterion 0.
 
@@ -153,7 +153,7 @@ Do not diagnose or suggest treatment changes; only route/escalate.
 
 | patient_id | name | age | conditions | priority_score | priority_band | key_drivers | last_visit_date | last_metric_summary | acute_utilization_6mo | outreach_channel | attempt_count | next_action | due_date | escalate_to_clinician | assigned_team_member |
 |---|---|---:|---|---:|---|---|---|---|---|---|---:|---|---|---|---|
-| MRN12345 | Jane Doe | 64 | T2DM, HTN | 78 | P1 | A1c high; no visit 7 mo; 2 ED visits | 2025-11-10 | A1c 9.6%; BP 168/94 | 2 ED | Phone+SMS | 1 | Call today, offer same-week visit | 2026-05-06 | YES | Care Manager A |
+| MRN12345 | Jane Doe | 64 | T2DM, HTN | 78 | P1 | A1c high; no visit ~6 mo; 2 ED visits | 2025-11-10 | A1c 9.6%; BP 168/94 | 2 ED | Phone+SMS | 1 | Call today, offer same-week visit | 2026-05-06 | YES | Care Manager A |
 
 ## Output B — Daily Team Huddle Checklist
 

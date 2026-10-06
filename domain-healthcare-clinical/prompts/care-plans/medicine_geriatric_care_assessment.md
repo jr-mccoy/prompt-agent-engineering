@@ -164,7 +164,7 @@ SCREENING TOOL USED:
   [ ] MMSE (Mini-Mental State Examination)
       Score: [X] / 30
       24-30: Normal
-      18-23: Mild cognitive impairment
+      18-23: Mild impairment (not the same as an MCI diagnosis; often mild dementia range)
       10-17: Moderate cognitive impairment
       < 10: Severe cognitive impairment
 

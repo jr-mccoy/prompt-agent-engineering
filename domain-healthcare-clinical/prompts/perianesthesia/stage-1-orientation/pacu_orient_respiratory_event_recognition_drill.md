@@ -134,9 +134,9 @@ One coaching point: [...]
 ```
 Vignette: crowing/stridor-like sound on emergence, see-saw chest movement, falling air movement.
 Call: laryngospasm — cue = the crowing sound + see-saw effort at emergence.
-Discriminator: laryngospasm = upper-airway cord closure *during* obstruction; NPPE = frothy secretions and respiratory distress *after* an obstruction is relieved (the negative-pressure aftermath).
+Discriminator: laryngospasm = upper-airway cord closure *during* obstruction; NPPE = frothy secretions and respiratory distress, usually soon *after* an obstruction is relieved but sometimes during it or delayed (the negative-pressure aftermath).
 Routing: call for help, position and support airway, apply O2, assist provider, prepare emergency airway equipment; escalate immediately; reassess continuously.
-Coaching point: timing separates them — laryngospasm is the obstruction; NPPE is the sequela after it clears.
+Coaching point: timing separates them — laryngospasm is the obstruction; NPPE is the sequela, typically after it clears and sometimes late — keep watching after the airway opens.
 ```
 
 > Safety reminder: A drill only — recognition is not diagnosis; real respiratory events are emergencies: call for help and escalate by role at once.

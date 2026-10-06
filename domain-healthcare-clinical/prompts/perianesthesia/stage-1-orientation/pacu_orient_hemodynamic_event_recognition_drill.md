@@ -132,7 +132,7 @@ One coaching point: [...]
 **Output (excerpt):**
 ```
 Trend: BP trending down across checks with rising heart rate and pale, cool cues.
-Reversible causes first: hypovolemia/bleeding, residual vasodilation, hypoventilation, pain-then-vagal.
+Reversible causes first: hypovolemia/bleeding, residual vasodilation (set aside: hypoventilation and a vagal response — neither fits a falling BP with a rising HR).
 Cause map: hypovolemia → check dressing/drain output, perfusion cues, trend → within scope: position, ensure IV access/fluids per order, monitor closely → escalate to provider now given the bleeding context.
 Mimics: falling BP from ongoing bleeding (needs source control/escalation) vs from residual vasodilation (often improves as anesthetic wears) — same reading, very different urgency.
 Coaching point: in a bleeding-risk case, a downward BP trend with a rising HR is escalate-now, not watch-and-wait.

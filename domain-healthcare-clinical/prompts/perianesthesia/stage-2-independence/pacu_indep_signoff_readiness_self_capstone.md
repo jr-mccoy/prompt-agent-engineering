@@ -131,9 +131,10 @@ One coaching point (highest-leverage gap): [...]
 Airway-respiratory | Evidence: recognized and led the in-scope response to an OIRD trend unaided last week | Level: independent | Grade: MET.
 Handoff-communication | Evidence: gave/received multiple SBAR reports unaided | Level: independent | Grade: MET.
 Regional-neuraxial | Evidence: assessed block regression with a cue prompt from preceptor | Level: with-cues | Grade: NOT-YET (needs an unaided rep).
-Escalation stress-check: airway Y, hemodynamic Y, regional — can state the chain but hasn't done it unaided.
-Aggregate: Met 12/14 | Not-yet: regional-neuraxial, thermoregulation-under-load.
-Verdict (self): ready to PROPOSE sign-off with two targeted reps flagged — safety-critical domains met.
+Escalation stress-check (⚠ domains): airway Y, hemodynamic Y, pharmacology-reversal Y, handoff-communication Y, safety-escalation Y. (Regional is not ⚠: can state the chain but hasn't done it unaided — that stays a not-yet rep.)
+Aggregate: Met 12/14 | Not-yet: regional-neuraxial, thermoregulation (sub-skill: under load).
+⚠ rule: airway MET, hemodynamic MET, pharmacology-reversal MET, handoff-communication MET, safety-escalation MET (per-domain lines not shown in this excerpt) → all five met.
+Verdict (self): ready to PROPOSE sign-off with two targeted reps flagged.
 Coaching point: your highest-leverage gap is an unaided regional-block-regression assessment; get that rep and your packet is strong.
 ```
 

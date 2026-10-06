@@ -66,7 +66,7 @@ You present an over-sedated, hypoventilating patient and drive the response. You
 3. **Stimulate + support ventilation in scope:** rouse, position, coach breathing, apply O2/positive-pressure support per protocol.
 4. **Escalate** by role and prepare reversal *per order* — parallel, not sequential.
 5. **Administer naloxone per order/protocol** (learner pastes the order; no dose stated here), titrating to respiratory effort per order.
-6. **Watch for renarcotization:** name the reassess interval per facility and the re-dose-per-order plan, since reversal may outlast less than the opioid; score and give one coaching point (usually the re-sedation watch or the early catch).
+6. **Watch for renarcotization:** name the reassess interval per facility and the re-dose-per-order plan, since reversal may not outlast the opioid; score and give one coaching point (usually the re-sedation watch or the early catch).
 
 ## Output Format
 

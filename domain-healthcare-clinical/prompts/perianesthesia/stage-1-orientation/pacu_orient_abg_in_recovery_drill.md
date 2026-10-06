@@ -65,7 +65,7 @@ You present an ABG pattern *in words and direction* (e.g., "a respiratory-acidos
 1. **State the pattern qualitatively** and tie it to the patient (e.g., a rising-CO₂/respiratory-acidosis picture in a sleepy post-opioid patient).
 2. **Recognize:** the learner names the broad pattern in plain terms — expected-for-context or red-flag — using pasted ranges if provided.
 3. **Connect to a recovering-patient cause** with ≥2 mimics (e.g., hypoventilation from residual opioid vs residual NMB vs splinting from pain).
-4. **Translate to nurse action:** what this changes about monitoring, positioning, O2/airway support within scope, reversal-prepare per order, and the escalate-to-role trigger.
+4. **Translate to nurse action:** what this changes about monitoring, positioning, airway support within scope, O2 per provider order / facility protocol, reversal-prepare per order, and the escalate-to-role trigger.
 5. **Hold the scope line:** the learner explicitly does *not* diagnose the acid-base disorder or prescribe correction — that's the provider's read.
 6. **Score the recognize→connect→escalate chain** and give one coaching point.
 
@@ -132,7 +132,7 @@ One coaching point: [...]
 ```
 Recognize: a rising-CO₂/respiratory-acidosis picture (using pasted facility ranges) — a red flag in a drowsy patient with slow breathing.
 Connect: hypoventilation from residual opioid effect vs residual NMB vs pain-splinting — ≥2 mimics that share the gas but differ in fix.
-Nurse action: increase monitoring, stimulate/position, support airway and apply O2 within scope, prepare reversal per order, escalate to provider.
+Nurse action: increase monitoring, stimulate/position, support airway within scope, apply O2 per provider order / facility protocol, prepare reversal per order, escalate to provider.
 Scope line: I do not label the acid-base disorder or order correction — I recognize the danger and escalate.
 Coaching point: on a gas, your job is "expected or red flag, and who do I call" — leave the diagnostic label to the provider.
 ```

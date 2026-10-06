@@ -136,7 +136,7 @@ One coaching point: [...]
 Cues: high-pitched stridor then silent effortful see-saw breathing with a falling sat trend right after suctioning stimulated the patient.
 Discrimination: laryngospasm leads (stimulus-triggered glottic closure) vs bronchospasm (would expect wheeze/expiratory) vs NPPE (usually follows a resolved obstruction).
 First maneuvers + call: stop stimulation, reposition/jaw-thrust, apply positive-pressure support per protocol, suction ready — while calling anesthesia/provider by role and sending for airway equipment.
-Prepare/assist: ready reversal/emergency meds per order; assist provider; then watch for NPPE after it breaks. Reassess per facility.
+Prepare/assist: ready emergency meds per order; assist provider; then watch for NPPE after it breaks. Reassess per facility.
 Coaching point: your maneuvers were right but sequential — call for help in the same breath as the first jaw-thrust, not after it fails.
 ```
 

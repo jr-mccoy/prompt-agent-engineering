@@ -130,7 +130,7 @@ One coaching point: [...]
 
 **Output (excerpt):**
 ```
-Check 1: activity — moving purposefully → full points (reason: follows commands); respiration — breathing deeply/coughing → full points; consciousness — briefly drowsy → partial; total per pasted tool = [learner's number].
+Check 1: activity — moving purposefully → full points (reason: follows commands); respiration — breathing deeply/coughing → full points; circulation — BP at the pasted tool's full-point descriptor relative to baseline → full points; consciousness — briefly drowsy → partial; oxygenation — saturation at the pasted tool's full-point descriptor → full points; all 5 of 5 categories scored → total per pasted tool = [learner's number].
 Check 2 trend: total stalled — consciousness category not improving.
 Limiting category: consciousness → reversible cause to consider: residual sedation.
 Routing: reassess arousal within scope, hold discharge, escalate per facility if it doesn't improve on the expected arc.

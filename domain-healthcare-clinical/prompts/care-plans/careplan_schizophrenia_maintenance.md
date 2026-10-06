@@ -59,7 +59,7 @@ Psychiatrist managing schizophrenia maintenance.
 3. **Long-acting injectable (LAI):** strongly consider for nonadherence, relapse history, or patient preference — reduces relapse/rehospitalization. Options: paliperidone palmitate (monthly, q3-month, q6-month), aripiprazole monthly, risperidone. Overlap oral as labeled when starting.
 
 4. **Adequate trial:** therapeutic dose × 6 weeks. After **two adequate antipsychotic trials** without adequate response → **treatment-resistant schizophrenia → clozapine** (the only agent with superior efficacy here; underused).
-   - Clozapine requires REMS/ANC monitoring (agranulocytosis), and monitoring for myocarditis, seizures, constipation/ileus, metabolic effects, sedation, hypersalivation. Titrate slowly.
+   - Clozapine requires ANC monitoring per the current label (agranulocytosis) — US REMS requirements changed in 2025 `[VERIFY: current clozapine label / FDA REMS status]` — and monitoring for myocarditis, seizures, constipation/ileus, metabolic effects, sedation, hypersalivation. Titrate slowly.
 
 5. **Metabolic monitoring** (atypicals): weight/BMI/waist, blood pressure each visit; fasting glucose/A1c and lipids at baseline, 12 weeks, then annually; intervene early (metformin, agent switch, lifestyle).
 

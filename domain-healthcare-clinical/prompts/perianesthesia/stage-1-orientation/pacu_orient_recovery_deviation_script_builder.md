@@ -136,7 +136,7 @@ Slot 1: light anesthesia/airway irritation on emergence, secretions, recent airw
 Slot 2: reflexive vocal-cord closure narrows/blocks the airway.
 Slot 3: classically at/just after emergence and airway stimulation.
 Slot 4 (cues first): a high-pitched crowing/stridor-like sound, paradoxical/see-saw chest-abdomen movement, falling air movement — before frank silence.
-Slot 5: laryngospasm vs bronchospasm (wheeze, longer expiratory phase) vs NPPE (frothy secretions, desaturation after obstruction relieved).
+Slot 5: laryngospasm vs bronchospasm (wheeze, longer expiratory phase) vs NPPE (frothy secretions, desaturation usually soon after obstruction is relieved, sometimes delayed).
 Action band: call for help, position/support airway and apply O2 within scope, assist the provider, prepare emergency airway equipment; reassess continuously; escalate to provider/anesthesia immediately.
 Coaching point: the crowing sound and see-saw movement are your earliest tell — act on the sound, don't wait for silence.
 ```

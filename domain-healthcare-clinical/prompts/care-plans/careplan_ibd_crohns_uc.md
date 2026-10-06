@@ -75,7 +75,7 @@ Gastroenterologist managing IBD.
 
 ❌ **DON'T:**
 - Describe extent and severity in free text — use Montreal location/behaviour (with perianal modifier) for Crohn's and Montreal extent plus a named activity score for UC (Mayo; Truelove-Witts for acute severe UC; HBI/CDAI for Crohn's), computed from the supplied findings.
-- Carry a biologic dose from memory — check each infliximab induction and maintenance mg/kg and interval against the label for the indication, including the worked example's maintenance dose.
+- Carry a biologic dose from memory — check each infliximab induction and maintenance mg/kg and interval against the label for the indication, including the maintenance dose, which is easy to confuse with an escalated dose.
 - Combine a thiopurine with anti-TNF in a young male without stating the hepatosplenic T-cell lymphoma consideration and the methotrexate alternative.
 - Choose a JAK inhibitor or S1P modulator without its label sequencing and boxed-warning screen (prior TNF exposure where required, age, cardiovascular and VTE risk; conduction and macular checks for S1P).
 - Read faecal calprotectin against another assay's cutoff, or call remission on a single value.
@@ -128,8 +128,8 @@ INDUCTION:
 - Short course systemic/budesonide only if needed for symptom bridge — induction, not maintenance.
 
 MAINTENANCE:
-- Continue infliximab maintenance (8 mg/kg q8w, dose-optimize by levels).
-- Combine with an immunomodulator (thiopurine — after TPMT/NUDT15, or methotrexate) to reduce anti-drug antibodies and improve durability in this high-risk patient.
+- Continue infliximab maintenance (5 mg/kg q8w, dose-optimize by levels).
+- Combine with an immunomodulator (thiopurine — after TPMT/NUDT15, or methotrexate) to reduce anti-drug antibodies and improve durability in this high-risk patient. Young male: thiopurine + anti-TNF carries hepatosplenic T-cell lymphoma risk — discuss it and consider methotrexate as the combination partner.
 - No reliance on 5-ASA (ineffective for moderate-severe Crohn's).
 
 PRE-BIOLOGIC SCREENING:

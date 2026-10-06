@@ -134,7 +134,7 @@ PRE-STEP-UP CHECK (the real issue):
 - Reinforce adherence; treat allergic rhinitis (intranasal steroid) — uncontrolled rhinitis worsens asthma.
 
 ACTION PLAN:
-- Written plan: increase budesonide-formoterol reliever for worsening; prednisone 40 mg × 5 days for severe exacerbation; seek care if reliever >X/day or PEF drops.
+- Written plan: increase budesonide-formoterol reliever for worsening; prednisone 40 mg × 5 days for severe exacerbation; seek care if reliever use exceeds [not provided — set from product label max daily inhalations `[VERIFY: product label]`] or PEF drops below [not provided — personal best not supplied].
 
 SEVERE ASTHMA / BIOLOGIC:
 - Not yet — optimize technique/adherence/rhinitis and reassess in 2–3 months. If still uncontrolled at step 4–5 with eos 280 + high IgE + allergic phenotype → candidate for dupilumab or anti-IL5/omalizumab.

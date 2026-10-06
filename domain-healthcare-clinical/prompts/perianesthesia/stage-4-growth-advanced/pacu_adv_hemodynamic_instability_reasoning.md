@@ -135,7 +135,7 @@ One coaching point: [...]
 **Output (excerpt):**
 ```
 Pattern read: leading = hypovolemic/distributive mix — low fill signals + warm-ish periphery; vs cardiogenic (would expect pump-failure cues + history). Held both.
-Reversible-first: confirm positioning, O2, check for ongoing blood/fluid loss and full bladder, assess pain, review rhythm — before calling it refractory.
+Reversible-first: confirm positioning, O2, check for ongoing blood/fluid loss and bladder status [VERIFY: whether bladder distension belongs on a hypotension sweep — Drain's PeriAnesthesia Nursing, current edition], assess pain, review rhythm — before calling it refractory.
 Anticipated support: likely fluids per order; prepare access, fluids, and have vasoactive setup ready per order if the provider escalates — no dose stated.
 Escalation SBAR: "S: BP trending down over two cycles. B: post-major-abdominal, general. A: looks hypovolemic/distributive, reversible checks done. R: concerned about ongoing loss — requesting eval and orders now."
 Coaching point: your sharpest line was doing the reversible sweep first — it's what makes the SBAR credible and speeds the provider's decision.

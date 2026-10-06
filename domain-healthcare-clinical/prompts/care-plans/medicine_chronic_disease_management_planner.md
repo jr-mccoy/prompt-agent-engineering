@@ -474,7 +474,7 @@ Review and update at each visit — individualize based on patient response
 ### Multi-Morbidity
 - Prioritize conditions causing the most harm or distress
 - Minimize treatment burden — reduce pill count, simplify regimens
-- Watch for treatment conflicts (e.g., beta-blocker for HF may worsen COPD)
+- Watch for treatment conflicts (e.g., a non-selective beta-blocker for HF in a patient with COPD — prefer a cardioselective agent, which is generally well tolerated in COPD)
 - Consider patient's overall prognosis when setting targets
 
 ### Elderly Patients

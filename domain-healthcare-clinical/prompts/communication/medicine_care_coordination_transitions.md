@@ -493,8 +493,7 @@ Verify and individualize — care transitions require team coordination
 ## Process Guidelines
 
 ### The Transition Is the Danger Zone
-- 20% of patients experience adverse events within 3 weeks of discharge
-- 50% of those are medication-related and potentially preventable
+- A substantial share of patients (roughly one in five in a frequently cited cohort) experience adverse events in the weeks after discharge, many of them medication-related and some preventable `[VERIFY: Forster et al., Ann Intern Med 2003, and current post-discharge adverse-event data]`
 - The first 48-72 hours post-discharge are highest risk
 - Proactive follow-up (calling the patient) is more effective than reactive
 

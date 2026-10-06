@@ -57,7 +57,7 @@ You play the giving provider delivering a handoff (sometimes complete, sometimes
 
 - `case_type` (optional): drives the handoff content the learner receives.
 - `gap_mode` (default `on`): inject one missing/ambiguous element for the learner to catch.
-- `structure` (default I-PASS-style; accept the learner's facility framework if pasted).
+- `structure` (default: the structured anesthesia-to-PACU sequence in Method step 1; accept the learner's facility framework, e.g. I-PASS, if pasted).
 
 ## Method
 

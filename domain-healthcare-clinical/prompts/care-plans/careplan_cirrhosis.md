@@ -56,7 +56,7 @@ Hepatologist or internist managing cirrhosis.
 
 3. **Ascites.**
    - Sodium restriction <2 g/day; diuretics spironolactone 100 mg + furosemide 40 mg (100:40 ratio), titrate.
-   - Refractory: large-volume paracentesis with albumin 6–8 g/L removed (>5 L); consider TIPS.
+   - Refractory: large-volume paracentesis with albumin 6–8 g per litre removed (when >5 L removed); consider TIPS.
    - Avoid NSAIDs, ACEi/ARB (drop renal perfusion); avoid nephrotoxins.
 
 4. **Spontaneous bacterial peritonitis (SBP).**
@@ -128,7 +128,7 @@ ETIOLOGY + TREATMENT: alcohol — reinforce abstinence (addiction support, the h
 COMPLICATION PLAN:
 - Varices: medium varices → primary prophylaxis with carvedilol 6.25 mg BID (preferred NSBB; also lowers portal pressure). If intolerant or contraindicated, band ligation program. Avoid NSBB if it causes hypotension with worsening ascites.
 - Ascites: sodium <2 g/day; spironolactone 100 mg + furosemide 40 mg daily, titrate by weight/Na/K. Avoid NSAIDs and ACEi/ARB. Diagnostic paracentesis now to exclude subclinical SBP.
-- SBP: none currently; check ascitic protein — if low, primary prophylaxis warranted given Child-Pugh B. Diagnostic tap on every admission. (If SBP arises: ceftriaxone + albumin 1.5 g/kg day 1, 1 g/kg day 3; then daily fluoroquinolone prophylaxis.)
+- SBP: none currently; check ascitic protein — if low, primary prophylaxis is not automatic: it also requires renal dysfunction, hyponatraemia or advanced liver failure, and Cr 0.9, Na 134 and bilirubin 2.4 do not clearly meet those `[VERIFY: current AASLD SBP prophylaxis criteria]`. Diagnostic tap on every admission. (If SBP arises: ceftriaxone + albumin 1.5 g/kg day 1, 1 g/kg day 3; then daily fluoroquinolone prophylaxis.)
 - Encephalopathy: none now; counsel precipitant avoidance; have lactulose available.
 
 HCC SURVEILLANCE: overdue — order abdominal ultrasound + AFP now, then q6 months.
