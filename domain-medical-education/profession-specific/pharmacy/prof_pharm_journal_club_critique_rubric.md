@@ -173,8 +173,8 @@ Gap: __ → discussion focus: [over-confidence on which axis | under-confidence 
 |---|---|
 | An axis scored 4 (or 3) because the presentation was strong overall, when the evidence line does not show the behavior the 4-anchor names | For each axis, quote the evidence next to the anchor text it is scored at; if any clause of that anchor (e.g., "positions critique relative to expert commentary") has no matching evidence, score the level below |
 | Learner's NNT/NNH accepted as "calculated correctly" because a number and a time frame were stated | Recompute it from the trial's event rates: NNT = 1 / ARR, rounded up, over the trial's follow-up period — and confirm the ARR came from the primary outcome, not a component or subgroup |
-| Preceptor feedback that itself states a statistical direction or ranking as settled (per-protocol always biases one way; one statistic "most often changes interpretation") | Tie each claim about bias direction to the trial's actual drop-out pattern and design, and present contested tools such as the fragility index as one check among several, not as the decisive one |
-| A failure-mode audit row adjusted by an undefined mechanism ("deduction lifted"), or the same lapse both counted in the audit and deducted on an axis without saying so | Keep the audit as counts only; state once whether audit counts affect axis scores, and apply that rule to every row the same way |
+| Preceptor feedback that itself states a statistical direction or ranking as settled (per-protocol always biases one way; one statistic presented as the decisive one) | Tie each claim about bias direction to the trial's actual drop-out pattern and design, and present contested tools such as the fragility index as one check among several, not as the decisive one |
+| A failure-mode audit row adjusted by an undefined mechanism (a deduction added or removed with no stated rule), or the same lapse both counted in the audit and deducted on an axis without saying so | Keep the audit as counts only; state once whether audit counts affect axis scores, and apply that rule to every row the same way |
 | Self-assessment gap reported as a total difference with the axis attribution guessed | Record learner and preceptor scores per axis and compute the gap per axis; name the axis with the largest gap only from those numbers |
 
 ## Verification Checklist
@@ -203,14 +203,14 @@ A1 — PICOTS: 3/4
 A2 — Internal validity: 2/4
   Evidence: Identified that the trial used PP for primary analysis but did not name the impact (biases away from null when more drop-out in placebo arm). No reference to Cochrane RoB 2 framework.
 
-A3 — Applicability: 3/4
-  Evidence: Identified that CrCl < 30 was excluded; mapped to own practice noting ~30% of patients in their HF clinic have CrCl < 30; did not quantify with patient-count from a chart audit.
+A3 — Applicability: 4/4
+  Evidence: Identified that CrCl < 30 was excluded; mapped to own practice noting ~30% of patients in their HF clinic have CrCl < 30 — quantifies applicability as the 4-anchor requires.
 
 A4 — Statistical literacy: 3/4
   Evidence: Calculated NNT correctly (NNT 27 over 3 years for primary composite); decomposed composite endpoint into CV death (no diff), HF hosp (drove the result), MI (no diff). Did not address fragility index.
 
-A5 — Presentation: 4/4
-  Evidence: Anticipated likely audience question about generalizability and addressed it in slide 12 ("you may ask about CrCl < 30 — here's what I think"). When asked about long-term safety signals, said "I don't know — I haven't read the open-label extension paper."
+A5 — Presentation: 3/4
+  Evidence: Anticipated likely audience question about generalizability and addressed it in slide 12 ("you may ask about CrCl < 30 — here's what I think"). When asked about long-term safety signals, said "I don't know — I haven't read the open-label extension paper." Did not position the critique relative to expert commentary (editorial, secondary appraisal), so the 4-anchor is not met.
 
 TOTAL: 15/20 → PASS (above 14 threshold)
 
@@ -222,13 +222,13 @@ TOTAL: 15/20 → PASS (above 14 threshold)
   Composite not decomposed: 0
   Generalized to excluded population: 0
   COI ignored: 0
-  Comparator vs SOC not assessed: addressed (1 deduction from A1 lifted)
+  Comparator vs SOC not assessed: 0 (learner named SGLT2i as the current-practice comparator)
 
 >>> NARRATIVE FEEDBACK
 
 Strengths: PICOTS clearly articulated; composite decomposition was the strongest single move; intellectual honesty on questions sets a good tone for residency journal club culture.
 Areas for growth: Internal validity — adopt a named appraisal tool (Cochrane RoB 2) for next presentation; address fragility index for primary outcome.
-Single highest-yield improvement: Calculate fragility index (or look it up if published) for any RCT-based journal club going forward; this is the single statistical concept that most often changes interpretation.
+Single highest-yield improvement: Calculate fragility index (or look it up if published) for any RCT-based journal club going forward, as one robustness check alongside the CI and the absolute effect.
 
 >>> SELF-ASSESSMENT GAP
 

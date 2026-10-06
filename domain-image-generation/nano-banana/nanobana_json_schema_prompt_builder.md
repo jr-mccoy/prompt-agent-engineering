@@ -55,7 +55,7 @@ related_prompts:
 
 **Must Not:**
 - Use `responseSchema` or `response_mime_type` for image generation — those are text-only API features.
-- Include API-level parameters (model, n, quality) inside the prompt schema — those belong in the API call wrapper.
+- Include API-level parameters (model, n, quality) inside the prompt schema — those belong in the API call wrapper. The `_meta.model` target-model note required above is documentation; do not repeat `model` or `quality` anywhere else in the schema.
 - Fabricate Nano Banana API features that don't exist.
 - Create schemas so deeply nested that they confuse the model — keep to 2-3 levels max.
 
@@ -104,7 +104,7 @@ BUILD THE JSON SCHEMA FOLLOWING THESE RULES:
    - style_commitment: the canonical rendering style
    - identity_lock: what must not change between generations
    - failure_conditions: what makes the output INCORRECT
-   - quality: "high" or "standard"
+   (quality is an API-call setting — set it in the wrapper, not here)
 
 5. Keep nesting to 2-3 levels maximum.
 
@@ -123,26 +123,30 @@ Given the brief: "Generate hero shots of a wireless earbud case in different env
     "purpose": "Product hero shots for social media campaign",
     "model": "gemini-3.1-flash-image",
     "version": "1.0",
-    "variables": {
-      "ENVIRONMENT": {
+    "author": "[not provided]",
+    "variables": [
+      {
+        "name": "ENVIRONMENT",
         "type": "string",
         "description": "The setting where the product is placed",
-        "default": "marble countertop with morning light",
-        "examples": ["gym bench with towel", "cafe table with espresso", "bedside table at night"]
+        "default_value": "marble countertop with morning light",
+        "example_values": ["gym bench with towel", "cafe table with espresso", "bedside table at night"]
       },
-      "MOOD": {
+      {
+        "name": "MOOD",
         "type": "string",
         "description": "The emotional tone of the image",
-        "default": "clean and aspirational",
-        "examples": ["energetic and active", "cozy and intimate", "minimal and zen"]
+        "default_value": "clean and aspirational",
+        "example_values": ["energetic and active", "cozy and intimate", "minimal and zen"]
       },
-      "ACCENT_COLOR": {
+      {
+        "name": "ACCENT_COLOR",
         "type": "string",
         "description": "Hex code for the accent color in the scene",
-        "default": "#2563EB",
-        "examples": ["#F59E0B", "#10B981", "#8B5CF6"]
+        "default_value": "#2563EB",
+        "example_values": ["#F59E0B", "#10B981", "#8B5CF6"]
       }
-    }
+    ]
   },
   "task": "Generate a product hero shot photograph",
   "subject": {
@@ -158,7 +162,8 @@ Given the brief: "Generate hero shots of a wireless earbud case in different env
   "environment": {
     "setting": "{{ENVIRONMENT}}",
     "depth": "Shallow — background softly blurred",
-    "props": "1-2 contextual objects that reinforce the setting, never competing with the product"
+    "props": "1-2 contextual objects that reinforce the setting, never competing with the product",
+    "accent_color": "{{ACCENT_COLOR}} on one prop only — never on the product"
   },
   "camera": {
     "shot_type": "Product close-up",
@@ -190,31 +195,32 @@ Given the brief: "Generate hero shots of a wireless earbud case in different env
       "Product finish appears glossy instead of matte",
       "Background elements compete with product for attention",
       "Style shifts from photorealistic to illustrated"
-    ],
-    "quality": "high"
+    ]
   },
   "reference_allocation": {
-    "model": "gemini-3.1-flash-image",
-    "slots": {
-      "obj_1": {
+    "slots": [
+      {
+        "slot": "obj_1",
         "role": "Product front reference",
         "description": "Front view of the earbud case showing logo and finish",
-        "take": "Exact shape, logo, finish, color",
-        "ignore": "Background, lighting"
+        "what_to_take": "Exact shape, logo, finish, color",
+        "what_to_ignore": "Background, lighting"
       },
-      "obj_2": {
+      {
+        "slot": "obj_2",
         "role": "Product angle reference",
         "description": "Three-quarter view showing hinge and depth",
-        "take": "Proportions, hinge detail, side profile",
-        "ignore": "Background"
+        "what_to_take": "Proportions, hinge detail, side profile",
+        "what_to_ignore": "Background"
       },
-      "obj_3": {
+      {
+        "slot": "obj_3",
         "role": "Environment reference",
         "description": "Photo of the target environment",
-        "take": "Surface texture, ambient light quality, color palette",
-        "ignore": "Objects in the reference"
+        "what_to_take": "Surface texture, ambient light quality, color palette",
+        "what_to_ignore": "Objects in the reference"
       }
-    }
+    ]
   }
 }
 ```
@@ -265,14 +271,14 @@ Store schemas in your project repo. Track changes to prompt structure separately
 
 ❌ **DON'T:**
 - Treat "valid JSON" as proof the model uses every field — the JSON is read as prompt text, and a field it does not act on is dropped silently; `_meta`, `version` and `author` never reach the image as instructions.
-- Ship a variable that no field references — in the Example, `ACCENT_COLOR` is documented in `_meta.variables` but no `{{ACCENT_COLOR}}` appears in the body, so the batch loop substitutes nothing and every "variation" gets the same colour.
-- Pass "Nesting depth is 3 levels or fewer" by counting top-level sections — `reference_allocation.slots.obj_1.take` and `_meta.variables.ENVIRONMENT.examples` sit at depth 4.
+- Ship a variable that no field references — if a name is documented in `_meta.variables` but no `{{NAME}}` appears in the body, the batch loop substitutes nothing and every "variation" comes out the same.
+- Pass "Nesting depth is 3 levels or fewer" by counting top-level sections — count the longest key path; objects keyed by a variable or slot name (`section.slots.obj_1.field`) add a level that an array of entries carrying a `name`/`slot` field does not.
 - Assume `reference_allocation` assigns images — slot labels in the text do nothing unless the request passes the images in that order and number.
-- Tick the Must Not on API-level parameters while `constraints.quality` and both `model` fields carry them; rule 4 of the meta-prompt asks for `quality`, so state which rule wins instead of passing both.
+- Tick the Must Not on API-level parameters by checking only the top level — search every section for `model`, `n` and `quality`; only the documented `_meta.model` note is allowed.
 
 ✅ **DO:**
 - After substitution, `json.loads` each filled prompt and search it for leftover `{{`; a value containing a double quote breaks the JSON when the `str.replace` loop inserts it raw, so escape values with `json.dumps(value)[1:-1]`.
-- Cross-check variables both ways: every `{{NAME}}` in the body has a `_meta.variables` entry using rule 2's keys (`default_value`, `example_values` — the Example uses `default`/`examples`), and every entry is used at least once.
+- Cross-check variables both ways: every `{{NAME}}` in the body has a `_meta.variables` entry using rule 2's keys exactly (`name`, `type`, `description`, `default_value`, `example_values` — near-synonyms such as `default`/`examples` pass a glance but break tooling keyed to the rule), and every entry is used at least once.
 - Prove each field is live with a one-field A/B: change only that field, regenerate with the same references, and keep the field only if the image changes as expected.
 
 ---

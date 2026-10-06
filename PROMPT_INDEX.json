@@ -116272,7 +116272,7 @@
       "title": "APPE Rotation Evaluation Tool — PPCP Anchored to ACPE/EPA Outcomes for PharmD Final Year",
       "domain": "medical-education",
       "category": "medical-education/profession-specific/pharmacy",
-      "description": "Author a preceptor evaluation tool for an Advanced Pharmacy Practice Experience (APPE) rotation. Anchored in the Pharmacist's Patient Care Process (PPCP: collect / assess / plan / implement / follow-up monitor & evaluate) crossed with ACPE Standards 2016 educational outcomes (foundational knowledge, essentials for practice and care, approach to practice and care, personal and professional development) and AACP/PharmD-EPA expectations. Output is a one-page tool + rotation-specific competency matrix + entrustment ratings.",
+      "description": "Author a preceptor evaluation tool for an Advanced Pharmacy Practice Experience (APPE) rotation. Anchored in the Pharmacist's Patient Care Process (PPCP: collect / assess / plan / implement / follow-up monitor & evaluate) crossed with ACPE Standards educational outcomes (foundational knowledge, essentials for practice and care, approach to practice and care, personal and professional development) and AACP/PharmD-EPA expectations. Output is a one-page tool + rotation-specific competency matrix + entrustment ratings.",
       "techniques": [
         "ST-02",
         "ST-03",
@@ -116304,7 +116304,7 @@
       "title": "PGY1 Pharmacy Residency Evaluation — ASHP Outcomes/Goals/Objectives Quarterly Rating with NI/SP/ACH/ACHR",
       "domain": "medical-education",
       "category": "medical-education/profession-specific/pharmacy",
-      "description": "Author a quarterly preceptor evaluation for a PGY1 pharmacy resident, anchored to ASHP PGY1 educational outcomes (R1 patient-centered care, R2 advancing practice, R3 leadership and management, R4 teaching/education/dissemination, E5 elective). Rate each ASHP-defined goal and objective on the ASHP four-level scale: NI (needs improvement), SP (satisfactory progress), ACH (achieved for residency), ACHR (achieved for residency, repeat needed for sustained competency). Output is a quarterly tool + customized objective set for the rotation + ResiTrak-shape narrative blocks.",
+      "description": "Author a quarterly preceptor evaluation for a PGY1 pharmacy resident, anchored to ASHP PGY1 educational outcomes (R1 patient-centered care, R2 advancing practice, R3 leadership and management, R4 teaching/education/dissemination, E5 elective). Rate each ASHP-defined goal and objective on the ASHP four-level scale: NI (needs improvement), SP (satisfactory progress), ACH and ACHR (achieved levels; definitions per program policy and evaluation platform [VERIFY: ASHP / PharmAcademic definitions]). Output is a quarterly tool + customized objective set for the rotation + evaluation-platform-shaped narrative blocks.",
       "techniques": [
         "ST-02",
         "ST-03",

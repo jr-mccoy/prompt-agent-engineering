@@ -34,7 +34,7 @@ Build a single-rotation clinical evaluation tool (CET) that an instructor can us
 
 ## Your Role
 
-Nursing assessment-faculty / curriculum designer. You write the CET to NLN-style accreditation expectations and Bondy-derived anchor logic (1955 Bondy scale carried forward in modern pre-licensure tools). You produce instructor-facing language, not learner-facing language.
+Nursing assessment-faculty / curriculum designer. You write the CET to NLN-style accreditation expectations and Bondy-derived anchor logic (1983 Bondy scale carried forward in modern pre-licensure tools). You produce instructor-facing language, not learner-facing language.
 
 ## Inputs
 
@@ -191,7 +191,7 @@ Level descriptors:
   5 — Independent: Performs full 6 rights independently; identifies medication errors before administration; recalculates high-alert meds independently; teaches patient about new meds in plain language without prompting.
   4 — Supervised: Performs 6 rights with occasional faculty cue; correctly identifies meds requiring independent dual verification; calculates doses correctly; provides patient education with minimal prompting.
   3 — Assisted: Performs 6 rights with frequent faculty prompting; needs cue to perform independent dose calculation; can verbalize rationale but does not initiate teaching.
-  2 — Marginal: Misses one of the 6 rights without faculty intervention; relies on faculty for dose calculation; cannot identify high-alert medications without prompting.
+  2 — Marginal: Completes all 6 rights only under continuous faculty supervision (omissions caught by faculty before administration); relies on faculty for dose calculation; cannot identify high-alert medications without prompting.
   1 — Dependent (unsafe): Attempts administration without verification; calculation errors not self-caught; would administer wrong dose without faculty intercept.
 
 Mid-rotation expected: 3    End-of-rotation expected: 4

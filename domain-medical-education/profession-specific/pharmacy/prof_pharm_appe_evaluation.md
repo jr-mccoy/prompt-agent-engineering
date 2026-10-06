@@ -3,7 +3,7 @@ title: "APPE Rotation Evaluation Tool — PPCP Anchored to ACPE/EPA Outcomes for
 category: medical-education/profession-specific/pharmacy
 difficulty: advanced
 intended_use: model-testing
-description: "Author a preceptor evaluation tool for an Advanced Pharmacy Practice Experience (APPE) rotation. Anchored in the Pharmacist's Patient Care Process (PPCP: collect / assess / plan / implement / follow-up monitor & evaluate) crossed with ACPE Standards 2016 educational outcomes (foundational knowledge, essentials for practice and care, approach to practice and care, personal and professional development) and AACP/PharmD-EPA expectations. Output is a one-page tool + rotation-specific competency matrix + entrustment ratings."
+description: "Author a preceptor evaluation tool for an Advanced Pharmacy Practice Experience (APPE) rotation. Anchored in the Pharmacist's Patient Care Process (PPCP: collect / assess / plan / implement / follow-up monitor & evaluate) crossed with ACPE Standards educational outcomes (foundational knowledge, essentials for practice and care, approach to practice and care, personal and professional development) and AACP/PharmD-EPA expectations. Output is a one-page tool + rotation-specific competency matrix + entrustment ratings."
 techniques:
   - ST-02
   - ST-03
@@ -36,7 +36,7 @@ Build a preceptor-facing evaluation tool for an APPE rotation (typically 5–6 w
 
 ## Your Role
 
-PharmD assessment-faculty / experiential-education coordinator. You write to ACPE Standards 2016 and the PharmD-EPA framework (Core EPAs for new pharmacy graduates: collect drug-related information, evaluate drug-related needs, design and adjust regimens, manage transitions of care, education, immunization administration, identify drug-related problems, manage adherence, document care, supervise pharmacy operations and personnel, fulfill workflow). Preceptors are practicing pharmacists who may be community, hospital, or specialty — clarity prioritized over jargon.
+PharmD assessment-faculty / experiential-education coordinator. You write to the ACPE Standards [VERIFY: edition currently in force — 2016 may be superseded] and the PharmD-EPA framework (Core EPAs for new pharmacy graduates, paraphrased: collect drug-related information, evaluate drug-related needs, design and adjust regimens, manage transitions of care, education, immunization administration, identify drug-related problems, manage adherence, document care, supervise pharmacy operations and personnel, fulfill workflow [VERIFY: exact titles against the AACP Core EPA document]). Preceptors are practicing pharmacists who may be community, hospital, or specialty — clarity prioritized over jargon.
 
 ## Inputs
 
@@ -184,7 +184,7 @@ Experiential coordinator (if remediation triggered): __________ Date: ____
 |---|---|
 | EPA rows named in convenient paraphrase and presented as the AACP Core EPAs, and the ACPE outcomes cited to a Standards edition that may have been superseded | Copy EPA titles from the AACP Core EPA document and cite the ACPE Standards edition currently in force for the school `[VERIFY: current ACPE Standards and AACP Core EPA list]`; label any program-specific activity as such, not as an EPA |
 | EPA logbook "met" because the encounter count reached the minimum, when most entries were logged at O or CON | Count only entries at or above the entrustment level the minimum requires (e.g., "5 at IS"), and show both numbers — total logged and logged at the required level |
-| Failing triggers in the tool that disagree with Method step 6 — a logbook shortfall that is "incomplete with make-up" in one place and "fail" in another, or triggers that appear only in the example (a final case presentation) | Line up each trigger in the output against Method step 6 and resolve every mismatch in consequence (fail / incomplete / committee review) before the tool is released |
+| Failing triggers in the tool that disagree with Method step 6 — a logbook shortfall that is "incomplete with make-up" in one place and "fail" in another, or triggers that appear only in the example and nowhere in Method step 6 | Line up each trigger in the output against Method step 6 and resolve every mismatch in consequence (fail / incomplete / committee review) before the tool is released |
 | PLAN and IMPLEMENT anchors built on institution-specific protocols (AUC-based vancomycin dosing, pharmacist anticoagulation protocols) written as if every APPE site has them | Name the protocol as "site protocol, if present" and give an anchor that still works at a site without collaborative-practice authority |
 | Highest-level (PI) anchors that say "without revision", which a preceptor ticks after one clean note | Require the evidence line to cite several reviewed documents or encounters before a PI rating, and keep "insufficient observation" available instead of a default level |
 
@@ -236,7 +236,7 @@ Rotation-specific anchors (vancomycin dosing per institutional AUC-based protoco
   O: Listens to preceptor's recommendation rationale.
   CON: Drafts plan with preceptor's stepwise guidance.
   DS: Independently designs vanco initial regimen using AUC-based protocol; preceptor verifies before order.
-  IS: Independently designs vanco + aminoglycoside + warfarin reversal plans; documents rationale; preceptor reviews.
+  IS: Independently designs vanco + aminoglycoside + warfarin-to-DOAC transition plans; documents rationale; preceptor reviews.
   PI: Routinely designs and documents complex regimen plans across multiple disease states; preceptor concurs without revision.
 
 Mid-rotation expected: DS    End-of-rotation expected: IS
@@ -246,7 +246,7 @@ Mid-rotation expected: DS    End-of-rotation expected: IS
 
 >>> EPA LOGBOOK SUMMARY
 
-| EPA | Min | Logged | Highest entrustment |
+| EPA (paraphrased — [VERIFY: AACP Core EPA titles]) | Min | Logged | Highest entrustment |
 | Collect drug-related information | 10 patients | __ | __ |
 | Evaluate drug-related needs | 10 patients | __ | __ |
 | Design and adjust regimens | 5 complex regimens | __ | __ |
@@ -256,8 +256,7 @@ Mid-rotation expected: DS    End-of-rotation expected: IS
 >>> FAILING TRIGGERS
 
   • End-of-rotation "O" in any PPCP step
-  • EPA logbook < 80% of required minimum at end of rotation
+  • EPA logbook below required minimum at end of rotation → incomplete with make-up plan (not fail)
   • Documented professionalism concern
   • ≥ 1 documented patient-care error caught by preceptor with insufficient self-disclosure
-  • Failed final case presentation (separate rubric)
 ```

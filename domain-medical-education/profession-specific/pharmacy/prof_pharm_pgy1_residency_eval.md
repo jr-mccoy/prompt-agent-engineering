@@ -3,7 +3,7 @@ title: "PGY1 Pharmacy Residency Evaluation — ASHP Outcomes/Goals/Objectives Qu
 category: medical-education/profession-specific/pharmacy
 difficulty: advanced
 intended_use: model-testing
-description: "Author a quarterly preceptor evaluation for a PGY1 pharmacy resident, anchored to ASHP PGY1 educational outcomes (R1 patient-centered care, R2 advancing practice, R3 leadership and management, R4 teaching/education/dissemination, E5 elective). Rate each ASHP-defined goal and objective on the ASHP four-level scale: NI (needs improvement), SP (satisfactory progress), ACH (achieved for residency), ACHR (achieved for residency, repeat needed for sustained competency). Output is a quarterly tool + customized objective set for the rotation + ResiTrak-shape narrative blocks."
+description: "Author a quarterly preceptor evaluation for a PGY1 pharmacy resident, anchored to ASHP PGY1 educational outcomes (R1 patient-centered care, R2 advancing practice, R3 leadership and management, R4 teaching/education/dissemination, E5 elective). Rate each ASHP-defined goal and objective on the ASHP four-level scale: NI (needs improvement), SP (satisfactory progress), ACH and ACHR (achieved levels; definitions per program policy and evaluation platform [VERIFY: ASHP / PharmAcademic definitions]). Output is a quarterly tool + customized objective set for the rotation + evaluation-platform-shaped narrative blocks."
 techniques:
   - ST-02
   - ST-03
@@ -30,7 +30,7 @@ related_prompts:
 
 ## Objective
 
-Build a quarterly evaluation tool for a PGY1 pharmacy resident. Each ASHP educational outcome × goal × objective relevant to the rotation is listed with the four-level ASHP rating scale, behavioral evidence, and narrative summary blocks. Output is ResiTrak-shape (matches PharmAcademic field structure) so a residency program director can paste it directly into the system.
+Build a quarterly evaluation tool for a PGY1 pharmacy resident. Each ASHP educational outcome × goal × objective relevant to the rotation is listed with the four-level ASHP rating scale, behavioral evidence, and narrative summary blocks. Output is laid out for the program's residency-management platform (e.g., PharmAcademic) [VERIFY: field structure of the program's platform] so a residency program director can paste it into the system.
 
 ## Your Role
 
@@ -60,8 +60,9 @@ Pharmacy residency preceptor / RPD assessment-faculty. You write to ASHP PGY1 st
 2. **Define rating scale (DS-01 ASHP):**
    - **NI — Needs improvement:** resident requires guidance/intervention beyond preceptor expectation for the level of training.
    - **SP — Satisfactory progress:** resident progressing as expected; competency not yet achieved but trajectory appropriate.
-   - **ACH — Achieved for residency:** resident has demonstrated objective at standard expected of a residency-trained pharmacist; no further evaluation of this objective required.
-   - **ACHR — Achieved for residency, repeat needed:** demonstrated once but needs repeat opportunities to sustain.
+   - **ACH:** [definition per program policy and evaluation platform] [VERIFY: ASHP / PharmAcademic definitions — the ACH vs ACHR meanings previously given here may be inverted].
+   - **ACHR:** [definition per program policy and evaluation platform] [VERIFY: as above].
+   *Which of ACH / ACHR denotes "achieved for residency" — and is therefore the completion rating in the Q4 expectation and step 5 — must be confirmed against the same source.*
    - **Not applicable / Not observed.**
    *Quarterly progression expectation:* Q1 mostly NI/SP; Q2 mix of SP and earliest ACH/ACHR; Q3 majority ACH; Q4 all required objectives ACH.
 
@@ -92,8 +93,8 @@ Quarter: [...]   Type: [formative-quarterly | summative-end-of-experience | summ
 
 NI — Needs improvement: [...]
 SP — Satisfactory progress: [...]
-ACH — Achieved for residency: [...]
-ACHR — Achieved for residency, repeat needed: [...]
+ACH — [definition per program policy — VERIFY]: [...]
+ACHR — [definition per program policy — VERIFY]: [...]
 NA / NO — Not applicable / Not observed
 
 Quarterly progression expectation:
@@ -175,9 +176,9 @@ RPD (if NI rating present at Q3 or summative): __________ Date: ____
 |---|---|
 | Objective numbers and "verbatim" objective text written from memory, which may follow a superseded edition of the ASHP PGY1 standard | Take each R/E number and its wording from the program's current ASHP PGY1 competency areas, goals, and objectives document `[VERIFY: ASHP PGY1 standard edition in force]`; if the text is not in hand, write the number plus "[objective text to paste]" rather than a paraphrase dressed as verbatim |
 | NI / SP / ACH / ACHR definitions and who may assign each (preceptor vs RPD) stated as ASHP's, when the program's evaluation software and policy set them | Present the scale definitions as "per program policy and evaluation platform `[VERIFY]`", and confirm the export target (PharmAcademic or another system) before claiming the layout matches its fields |
-| ACH or "ahead" awarded from an aggregate statement ("30+ med recs, 2 minor gaps") with no dated case, so the rating looks evidenced but cannot be audited | Every ACH/ACHR needs at least one dated, case-identified observation in the evidence list; a summary count can support it but cannot stand alone |
+| ACH or "ahead" awarded from an aggregate statement (a count of encounters and gaps) with no dated case, so the rating looks evidenced but cannot be audited | Every ACH/ACHR needs at least one dated, case-identified observation in the evidence list; a summary count can support it but cannot stand alone |
 | Non-progression trigger (> 25% NI at Q3) declared met or not met by impression | Count required objectives in the resident's plan, count those rated NI, and show the percentage; the trigger line cites both numbers |
-| Evidence bullets with a single date that describe several events ("on three separate days"), or a trajectory note that disagrees with the rating and the quarter's expected level | Give each event its own date; then check rating vs "Expected at Qn" and confirm the trajectory word (on-track / ahead / behind) follows from that comparison |
+| Evidence bullets with a single date that describe several events ("on several days"), or a trajectory note that disagrees with the rating and the quarter's expected level | Give each event its own date; then check rating vs "Expected at Qn" and confirm the trajectory word (on-track / ahead / behind) follows from that comparison |
 
 ## Verification Checklist
 
@@ -199,12 +200,12 @@ RPD (if NI rating present at Q3 or summative): __________ Date: ____
 **Output (excerpt):**
 
 ```
-═══ R1.1.1 — Interact effectively with healthcare teams to manage patients' medication therapy.
+═══ R1.1.1 — Interact effectively with healthcare teams to manage patients' medication therapy. [VERIFY: wording against the ASHP PGY1 edition in force — may be from a superseded edition]
 
 Behavioral evidence:
   • 10/15 — On AM rounds, identified incorrect renal-adjusted vancomycin trough goal and proposed AUC-targeted re-dosing using institutional protocol; team accepted recommendation.
   • 10/22 — Communicated with hospitalist re: anticoagulation transition for patient with new AF + recent GIB; clearly articulated bleeding-vs-stroke balance and proposed apixaban with reduced dose criteria.
-  • 11/05 — On three separate days, proactively flagged drug-drug interactions to nursing prior to administration (warfarin + Bactrim, fluconazole + amiodarone, sevelamer-cipro spacing).
+  • [3 dates not provided — log each day separately] — On three separate days, proactively flagged drug-drug interactions to nursing prior to administration (warfarin + Bactrim, fluconazole + amiodarone, sevelamer-cipro spacing).
 
 Rating: SP (trending toward ACH)
 Expected at Q2: SP
@@ -225,9 +226,9 @@ Trajectory note: on-track
 Behavioral evidence:
   • Consistent independent medication reconciliation across 30+ patients during the experience; only 2 minor documentation gaps noted by preceptor (one missed eye drop; one missed prn opioid).
 
-Rating: ACH
+Rating: SP (ACH pending at least one dated, case-identified observation — a summary count cannot stand alone)
 Expected at Q2: SP
-Trajectory note: ahead
+Trajectory note: on-track
 
 ═══ R3.2.1 — Demonstrate management skills.
   Behavioral evidence:
@@ -254,5 +255,5 @@ Action plan for next quarter (3 measurable goals):
   2. Reduce average SOAP note length by 25% while maintaining clinical content.
   3. Independently complete one CQI mini-project on transitions-of-care medication reconciliation by end of Q3.
 
-Preceptor's overall progression assessment: ☐On-track ☑On-track  ☐Ahead  ☐Behind
+Preceptor's overall progression assessment: ☑On-track  ☐Ahead  ☐Behind
 ```

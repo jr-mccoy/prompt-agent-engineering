@@ -187,7 +187,7 @@ Single highest-yield improvement: [...]
 
 Demographics: 68M, 82 kg
 Chief complaint: "I've got a busted-up tooth on the lower right that's been hurting on and off. My dentist says it needs to come out."
-Medical hx: Atrial fibrillation × 4 yr, CHADS2-VASc score 4 (HTN, age, prior TIA), HTN, hyperlipidemia, no diabetes. Last cardiology visit 3 mo ago — INR target range 2.0–3.0, well controlled.
+Medical hx: Atrial fibrillation × 4 yr, CHA2DS2-VASc score 4 (HTN, age, prior TIA), HTN, hyperlipidemia, no diabetes. Last cardiology visit 3 mo ago — INR target range 2.0–3.0, well controlled.
 Medications: Warfarin 5 mg PO daily (last dose this morning), metoprolol succinate 50 mg, lisinopril 20 mg, atorvastatin 40 mg
 Allergies: NKDA
 Dental hx: Last cleaning 8 months ago. Two prior crowns (#3, #19). No prior extractions in adulthood.
@@ -205,7 +205,7 @@ Vitals: BP 134/82, HR 72 (rate-controlled).
 Given the patient's anticoagulation status, which is the MOST appropriate management for the planned extraction of #30?
 
 A) Discontinue warfarin 5 days before extraction; resume 24 hr post-procedure; no bridging
-B) Continue warfarin without interruption; perform atraumatic extraction; achieve hemostasis with local measures (oxidized cellulose, sutures, gauze pressure, tranexamic acid mouthwash if needed)
+B) Continue warfarin without interruption; perform atraumatic extraction with local hemostatic measures
 C) Discontinue warfarin 5 days before extraction; bridge with therapeutic-dose enoxaparin; resume warfarin post-op
 D) Refer to oral surgery for extraction under general anesthesia after warfarin is held
 
@@ -214,11 +214,11 @@ D) Refer to oral surgery for extraction under general anesthesia after warfarin 
 >>> TEARDOWN
 
 Correct: B
-Integration: Warfarin pharmacology (vitamin K antagonist with 36–42 hr half-life and slow INR normalization) + bleeding-vs-stroke risk balance: a single tooth extraction in a patient with INR within therapeutic range (≤ 3.5 per most current evidence) does not require warfarin interruption when local hemostatic measures are available. Interrupting warfarin in a high-stroke-risk patient (CHADS2-VASc 4) increases thromboembolic risk substantially over the 5-day washout window.
+Integration: Warfarin pharmacology (vitamin K antagonist with 36–42 hr half-life and slow INR normalization) + bleeding-vs-stroke risk balance: a single tooth extraction in a patient with INR within therapeutic range (≤ 3.5 per most current evidence) does not require warfarin interruption when local hemostatic measures are available. Interrupting warfarin in a high-stroke-risk patient (CHA2DS2-VASc 4) increases thromboembolic risk substantially over the 5-day washout window.
 
 | Opt | Correct? | If WRONG, what scenario it would be correct for |
 |---|---|---|
-| A | N | A patient with low stroke risk (CHADS2-VASc 0–1) AND a planned multi-quadrant or extensive surgical procedure where bleeding risk dominates. |
+| A | N | A patient with low stroke risk (CHA2DS2-VASc 0–1) AND a planned multi-quadrant or extensive surgical procedure where bleeding risk dominates. |
 | B | Y | (correct) — single extraction, INR in range, high stroke risk → continue warfarin + local hemostasis. |
 | C | N | A patient with mechanical heart valve OR very recent thromboembolism requiring high-stroke-risk bridging during a procedure with high bleeding risk that genuinely requires warfarin hold. Routine single extraction does NOT meet that bar. |
 | D | N | A patient with severe medical complexity, anatomic difficulty, or contraindication to local anesthesia — not for warfarin management alone. |
@@ -227,9 +227,9 @@ Engineered trap: A — tests the over-cautious reflex of "stop the blood thinner
 
 >>> INTEGRATION RULE
 
-For a single dental extraction in a patient on warfarin with INR in therapeutic range, continue the warfarin and rely on local hemostatic measures. Interruption is only justified when (a) extensive surgery with hemostasis-impossible scenario, OR (b) INR is supratherapeutic and a brief reduction can be safely staged. The thromboembolic cost of routine warfarin interruption — particularly in a patient with CHADS2-VASc ≥ 2 — is greater than the bleeding cost of routine local hemostasis.
+For a single dental extraction in a patient on warfarin with INR in therapeutic range, continue the warfarin and rely on local hemostatic measures. Interruption is only justified when (a) extensive surgery with hemostasis-impossible scenario, OR (b) INR is supratherapeutic and a brief reduction can be safely staged. The thromboembolic cost of routine warfarin interruption — particularly in a patient with CHA2DS2-VASc ≥ 2 — is greater than the bleeding cost of routine local hemostasis.
 
 >>> COACHING
 
-Single highest-yield improvement: when an INBDE patient box names an anticoagulant, your reflex should be to read the patient's stroke / clot risk indicators (CHADS2-VASc, mechanical valve, recent VTE) BEFORE deciding to hold the medication. The pharmacology-clinical integration INBDE rewards is "manage the bleed, not the medication" — single-tooth extraction is a low-bleeding-risk procedure and almost always proceeds with the anticoagulant on board.
+Single highest-yield improvement: when an INBDE patient box names an anticoagulant, your reflex should be to read the patient's stroke / clot risk indicators (CHA2DS2-VASc, mechanical valve, recent VTE) BEFORE deciding to hold the medication. The pharmacology-clinical integration INBDE rewards is "manage the bleed, not the medication" — single-tooth extraction is a low-bleeding-risk procedure and almost always proceeds with the anticoagulant on board.
 ```
