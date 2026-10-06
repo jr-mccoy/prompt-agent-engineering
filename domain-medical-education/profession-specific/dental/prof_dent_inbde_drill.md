@@ -214,7 +214,7 @@ D) Refer to oral surgery for extraction under general anesthesia after warfarin 
 >>> TEARDOWN
 
 Correct: B
-Integration: Warfarin pharmacology (vitamin K antagonist with 36–42 hr half-life and slow INR normalization) + bleeding-vs-stroke risk balance: a single tooth extraction in a patient with INR within therapeutic range (≤ 3.5 per most current evidence) does not require warfarin interruption when local hemostatic measures are available. Interrupting warfarin in a high-stroke-risk patient (CHA2DS2-VASc 4) increases thromboembolic risk substantially over the 5-day washout window.
+Integration: Warfarin pharmacology (vitamin K antagonist with 36–42 hr half-life [VERIFY: warfarin product label / dental pharmacology reference] and slow INR normalization) + bleeding-vs-stroke risk balance: a single tooth extraction in a patient with INR within therapeutic range (and below the upper INR limit current guidance sets for extraction without interruption [VERIFY: current ADA / ACC anticoagulation guidance for dental extraction]) does not require warfarin interruption when local hemostatic measures are available. Interrupting warfarin in a high-stroke-risk patient (CHA2DS2-VASc 4) increases thromboembolic risk substantially over the 5-day washout window.
 
 | Opt | Correct? | If WRONG, what scenario it would be correct for |
 |---|---|---|

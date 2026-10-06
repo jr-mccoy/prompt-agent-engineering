@@ -178,10 +178,10 @@ Correct answer: A (keyed) — CCTA (B) may be an equally endorsed first-line tes
 Lead-in type: next-best-step.
 What this lead-in rewards: lowest-cost / least-invasive test that answers the clinical question and is appropriate for the *pretest probability*.
 
-Single discriminating fact: "chest pressure brought on by walking uphill or climbing two flights of stairs ... resolved by sitting down ... no symptoms at rest" — classic stable angina, intermediate-to-high pretest probability, resting ECG normal, no high-risk features.
+Single discriminating fact: "chest pressure brought on by walking uphill or climbing two flights of stairs ... resolved by sitting down ... no symptoms at rest" — classic stable angina, resting ECG normal, no high-risk features. Pretest probability: read from a named table (e.g., the Diamond-Forrester-derived pretest-probability table) using the stem's values — age 58, male, exertional chest pressure relieved by rest — rather than asserted [VERIFY: category from the pretest-probability table in the current ACC/AHA chest-pain guideline].
 
 Option-by-option:
-A) Correct (keyed). Exercise treadmill stress testing is a noninvasive functional test for a patient with stable angina, intermediate-to-high pretest probability, and an interpretable resting ECG. Provides functional + prognostic data and triages who actually needs cath.
+A) Correct (keyed). Exercise treadmill stress testing is a noninvasive functional test for a patient with stable angina, the pretest probability read from that table, and an interpretable resting ECG. Provides functional + prognostic data and triages who actually needs cath.
 B) Coronary CT angiography — its place relative to stress testing at this pretest probability is guideline-dependent [VERIFY: current ACC/AHA chest-pain guideline]; the item as written does not exclude it.
 C) Cardiac catheterization is correct *after* a positive stress test (or for acute coronary syndrome / high-risk features). It is the trap distractor — skips stress testing and rewards "more is better."
 D) Reassurance is incorrect for an exertional chest-pressure syndrome with cardiac risk factors.

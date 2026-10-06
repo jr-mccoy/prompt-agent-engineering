@@ -79,6 +79,7 @@ PharmD assessment-faculty / experiential-education coordinator. You write to the
    - End-of-rotation O rating in any PPCP step → fail.
    - Failure to meet minimum EPA documentation → incomplete with make-up plan.
    - Documented professionalism concern → committee review.
+   - Safety event (patient-care error caught by preceptor) with insufficient self-disclosure → committee review, handled as a professionalism concern.
 
 ## Output Format
 

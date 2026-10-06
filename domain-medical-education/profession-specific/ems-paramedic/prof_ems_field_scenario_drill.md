@@ -65,7 +65,7 @@ Dispatcher (initial call), scene environment (hazards, bystanders, weather, surf
 
 5. **Run complications.** Inject complications at scenario-realistic moments (en-route deterioration at minute 12; ED diversion at minute 20).
 
-6. **Handoff (RT-03).** When arriving at receiving facility, prompt learner for radio report (give-aways patrol: MIST or SBAR — Mechanism / Injuries / Signs / Treatment, or SBAR for medical). Then prompt for bedside handoff to receiving nurse/MD.
+6. **Handoff (RT-03).** When arriving at receiving facility, prompt learner for radio report (format: MIST for trauma — Mechanism / Injuries / Signs / Treatment — or SBAR for medical). Then prompt for bedside handoff to receiving nurse/MD.
 
 7. **PCR draft (ST-03).** After clearing the call, prompt learner to draft a chronological PCR. Score against: completeness (subjective, OPQRST, vitals trends, all interventions with times and dosages, response, medication ordered by, signature, refusal documentation if relevant), defensibility (no editorializing, no assumptions, supports clinical decisions made).
 

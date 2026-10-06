@@ -234,9 +234,9 @@ Objective: "Pt seated upright in chair. Awake. Right facial droop. Slurred speec
   ✓ FAST + extended modified Cincinnati assessment.
   ✗ NIHSS not documented as a score (scattered findings present but no calculated score). Per protocol, NIHSS within 15 min of contact required.
 
-Assessment: "Acute ischemic stroke, suspected LVO based on cortical findings (gaze, neglect not assessed in PCR), within tPA window."
+Assessment: "Acute ischemic stroke, suspected LVO based on cortical findings, within tPA window."
   ✓ Recognized stroke alert criteria.
-  ✗ Cortical signs (gaze deviation, neglect) not assessed or documented.
+  ✗ Cortical signs (gaze deviation, neglect) not assessed or documented — the PCR cites cortical findings but records none.
 
 Plan: "Stroke alert called via radio at 0902. Transport to Comprehensive Stroke Center per protocol. Family member with phone accompanying."
   ✓ Correct destination per protocol.
@@ -248,14 +248,14 @@ Reassessment: "0918 — no change in neuro exam. BP 162/90."
 >>> PROTOCOL ADHERENCE TABLE
 
 | Decision | Protocol | Adherence | Evidence |
-| Stroke recognition | FAST positive → stroke alert | Followed | "FAST + slurred speech + arm drift" |
+| Stroke recognition | FAST positive → stroke alert | Followed | "Right facial droop. Slurred speech but oriented. Right arm drift downward when held outstretched." |
 | NIHSS within 15 min | Required | Unjustified deviation | NOT DOCUMENTED as a calculated score |
-| Cortical assessment for LVO | Required if suspecting LVO | Skipped | "gaze deviation, neglect not assessed" |
+| Cortical assessment for LVO | Required if suspecting LVO | Skipped | NOT DOCUMENTED |
 | Glucose check | Required (rule out mimics) | Followed | "glucose 142" |
-| LKW documented | Required | Followed | "LKW 0830" |
+| LKW documented | Required | Followed | "Last known well 0830." |
 | Pre-notification of receiving | Required | Followed | "Stroke alert called via radio at 0902" |
 | Family with phone | Recommended | Followed | "Family member with phone accompanying" |
-| Transport mode | Ground appropriate (within 30 min of CSC) | Followed | implicit |
+| Transport mode | Ground vs air [general national standard — not in supplied protocol] | Not scored (no supplied standard) | departed 0907, arrived 0925 (structured times) |
 
 >>> FAILURE-MODE AUDIT
 

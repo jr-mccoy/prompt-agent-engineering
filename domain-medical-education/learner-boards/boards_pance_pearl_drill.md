@@ -159,8 +159,8 @@ Single PANCE-testable fact: treat clinically based on EM in endemic area — ser
 >>> FIVE PEARLS
 
 [1] Epidemiology anchor: northeast / upper midwest / Pacific NW US in late spring–early fall; outdoor exposure (camping, hiking, yard work). Endemic-area exposure is in every PANCE stem.
-[2] Classic presentation: "expanding annular erythematous lesion with central clearing, > 5 cm in diameter, ± malaise, fatigue, myalgia, low-grade fever" (target lesion).
-[3] Dead-giveaway: EM lesion in endemic area within 3–30 days of outdoor exposure. Serology has high false-negative in this window and is NOT required.
+[2] Classic presentation: "expanding annular erythematous lesion with central clearing, > 5 cm in diameter, ± malaise, fatigue, myalgia, low-grade fever" (typical stem language, not NCCPA wording). Note: central clearing is the minority form — most EM lesions are uniformly erythematous; do not require clearing to make the diagnosis.
+[3] Dead-giveaway: no confirmatory test at this stage — diagnosis is clinical (EM in endemic area within 3–30 days of outdoor exposure). Serology has high false-negative in this window and is NOT required.
 [4] First-line management: doxycycline 100 mg po BID × 10 days (adults, non-pregnant). Pregnancy: amoxicillin or cefuroxime. Children: age limits for doxycycline per current guideline [VERIFY: IDSA/AAN/ACR 2020 Lyme guideline / AAP Red Book].
 [5] Board trap: serology-first ("send ELISA before treating"). EM in endemic exposure = clinical diagnosis; serology delays treatment and is often falsely negative early.
 
@@ -188,7 +188,7 @@ Anchor pearl: #4 (first-line management).
 A) Wrong — serology delays treatment and has high false-negative rate at this stage. Classic PANCE trap (Pearl #5).
 B) Correct.
 C) Wrong — represents a missed diagnosis treated as contact dermatitis.
-D) Wrong — IV ceftriaxone is reserved for early-disseminated (carditis with high-grade AV block, neurologic Lyme, late Lyme arthritis refractory to po). Overshoot.
+D) Wrong — IV ceftriaxone is reserved for selected disseminated or late manifestations (e.g., early-disseminated carditis with high-grade AV block; late Lyme arthritis refractory to oral therapy); which neurologic manifestations need IV rather than oral therapy is guideline-dependent [VERIFY: current IDSA/AAN/ACR Lyme guideline]. Overshoot.
 
 Trap audit: option A is the engineered serology-first trap; the failure mode is treating early-localized Lyme like a laboratory-confirmed diagnosis. PANCE rewards clinical diagnosis in the EM scenario.
 ```

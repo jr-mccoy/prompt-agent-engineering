@@ -172,7 +172,7 @@ BP greater than HR effect
 Start: 0.05 mcg/kg/min
 Titrate: 0.02 mcg/kg/min q3 min
 Max: 1 mcg/kg/min
-First line septic/cardiogenic/hypovolemic shock
+First line septic/cardiogenic shock
 
 BOX 2:
 EPINEPHRINE
@@ -195,6 +195,7 @@ May cause bradycardia
 BOX 4:
 VASOPRESSIN
 Increases BP
+[VERIFY: fixed dose vs. titratable range per institutional drip protocol / current Surviving Sepsis Campaign guideline]
 Fixed: 0.01-0.03 units/min
 (No titration)
 
@@ -202,7 +203,6 @@ BOX 5:
 DOPAMINE
 400 mg/250 mL D5W
 [VERIFY: units for the dose bands below per institutional drip protocol / pharmacy smart-pump library]
-Renal: 0.5-3
 HR>BP: 3-10
 BP&HR: 10-20
 
@@ -250,6 +250,7 @@ Max: 15 mg/hr
 BOX 5:
 LIDOCAINE
 V-fib / pulseless V-tach
+[VERIFY: bolus dose and push rate per current ACLS / AHA guideline]
 Bolus: 1 mg/kg / 2 min
 Maintenance: 1-4 mg/min
 
@@ -301,8 +302,8 @@ Header: "CRITICAL DRIPS - Quick Reference - FRONT" (navy blue)
 Box 1: Levophed - 8mg/250mL, Start 0.05 mcg/kg/min, Max 1 mcg/kg/min
 Box 2: Epinephrine - 10mg/250mL, Start 0.05 mcg/kg/min, Max 2 mcg/kg/min
 Box 3: Neosynephrine - 50mg/250mL, Start 0.5 mcg/kg/min, Max 3 mcg/kg/min
-Box 4: Vasopressin - Fixed 0.01-0.03 units/min
-Box 5: Dopamine - 400mg/250mL, Renal/HR/BP dosing
+Box 4: Vasopressin - Fixed 0.01-0.03 units/min [VERIFY: fixed dose vs. titratable range per institutional drip protocol / current Surviving Sepsis Campaign guideline]
+Box 5: Dopamine - 400mg/250mL, HR/BP dosing
 Box 6: Cardene - 5-15mg/hr, Max 15mg/hr
 Footer: "Verify orders before administration" (navy blue)
 
@@ -312,7 +313,7 @@ Box 1: Propofol - 5-50 mcg/kg/min, intubated only
 Box 2: Precedex - Start 0.2 mcg/kg/hr, Max 1.4 mcg/kg/hr
 Box 3: Amiodarone - Bolus 150mg, then 1mg/min x 6hr
 Box 4: Cardizem - 5-15mg/hr for A-fib
-Box 5: Lidocaine - Bolus 1mg/kg, Maint 1-4mg/min
+Box 5: Lidocaine - Bolus 1mg/kg [VERIFY: bolus dose and push rate per current ACLS / AHA guideline], Maint 1-4mg/min
 Box 6: Cleviprex - 2-21mg/hr
 Footer: "Verify orders before administration" (navy blue)
 
@@ -340,17 +341,17 @@ See [IMAGE_GENERATION_GUIDE.md](../IMAGE_GENERATION_GUIDE.md) for detailed expla
 
 ## Medication Content Reference
 
-### VASOPRESSORS (Goal: MAP 65-75 or SBP 90-100)
+### VASOPRESSORS (Goal: MAP/SBP target per provider order [VERIFY: current Surviving Sepsis Campaign guideline / institutional protocol])
 
 | Drug | Concentration | Effect | Start | Titrate | Max |
 |------|---------------|--------|-------|---------|-----|
 | **Levophed** (norepinephrine) | 8mg/250mL | BP > HR | 0.05 mcg/kg/min | 0.02 mcg/kg/min q3min | 1 mcg/kg/min |
 | **Epinephrine** | 10mg/250mL | BP & HR | 0.05 mcg/kg/min | 0.05 mcg/kg/min q3min | 2 mcg/kg/min |
 | **Neosynephrine** (phenylephrine) | 50mg/250mL | BP only | 0.5 mcg/kg/min | 0.1 mcg/kg/min q3min | 3 mcg/kg/min |
-| **Vasopressin** | - | BP | 0.01-0.03 units/min (fixed) | - | - |
-| **Dopamine** [VERIFY: dose-band units per institutional drip protocol / pharmacy smart-pump library] | 400mg/250mL D5W | Varies | Renal: 0.5-3 | HR>BP: 3-10 | BP&HR: 10-20 |
+| **Vasopressin** | - | BP | 0.01-0.03 units/min (fixed) [VERIFY: fixed dose vs. titratable range per institutional drip protocol / current Surviving Sepsis Campaign guideline] | - | - |
+| **Dopamine** [VERIFY: dose-band units per institutional drip protocol / pharmacy smart-pump library] | 400mg/250mL D5W | HR>BP: 3-10; BP&HR: 10-20 | - | - | - |
 
-### ANTIHYPERTENSIVES (Goal: SBP<180, DBP<105)
+### ANTIHYPERTENSIVES (Goal: indication-specific BP target per provider order [VERIFY: current AHA/ASA or AHA/ACC guideline for the indication])
 
 | Drug | Start | Range | Max |
 |------|-------|-------|-----|
@@ -370,7 +371,7 @@ See [IMAGE_GENERATION_GUIDE.md](../IMAGE_GENERATION_GUIDE.md) for detailed expla
 |------|------------|--------|
 | **Amiodarone** | Various | Bolus: 150mg/10min, then 1mg/min x 6hr, then 0.5mg/min x 18hr |
 | **Cardizem** (diltiazem) | A-fib, A-flutter, SVT | 5-15mg/hr, Max 15mg/hr |
-| **Lidocaine** | V-fib, pulseless V-tach | Bolus: 1mg/kg/2min, Maint: 1-4mg/min |
+| **Lidocaine** | V-fib, pulseless V-tach | Bolus: 1mg/kg/2min [VERIFY: bolus dose and push rate per current ACLS / AHA guideline], Maint: 1-4mg/min |
 
 ---
 

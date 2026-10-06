@@ -178,8 +178,9 @@ DISPOSITION:
 
 ```
 STAGING:
-- Cr 1.4 → 2.8 (2× baseline) and oliguria <0.5 mL/kg/h × >12 h.
-- KDIGO Stage 2 AKI.
+- Cr 1.4 → 2.8 (2.0× baseline) → KDIGO Stage 2 by creatinine.
+- UOP 200 mL over 12 h ≈ 17 mL/h; weight [not provided], so mL/kg/h not computed — UOP criterion not applied.
+- KDIGO Stage 2 AKI (by creatinine).
 
 CATEGORIZATION:
 - Predominantly pre-renal (FENa 0.6%, FEUrea 28%, BUN/Cr ratio 21, dry exam, low PO intake) plus likely contributions from contrast, NSAID, and ACE inhibitor.

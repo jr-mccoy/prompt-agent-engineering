@@ -216,7 +216,7 @@ Levels: MS1–MS4   Admins: 2/yr   Items: 200 MCQ   Framework: AAMC Core EPAs   
 
 >>> EQUATING PLAN
 CINEG with 40 anchor items (20%) shared between consecutive administrations.
-Anchor rotation: 40 anchors per admin; 20 of those carry to next admin; refresh full anchor set every 3 admins (no anchor exceeds the retire-after-3 rule).
+Anchor rotation: 40 anchors per admin; all 40 carry to next admin; refresh full anchor set every 3 admins (no anchor exceeds the retire-after-3 rule).
 Drift check: anchor Δp threshold 0.10.
 
 >>> EXPOSURE PROTECTION

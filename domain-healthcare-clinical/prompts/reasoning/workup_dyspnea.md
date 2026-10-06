@@ -184,7 +184,7 @@ DIFFERENTIAL (ranked):
 
 KEY TESTS:
 - BNP 2400 confirms HF.
-- Troponin negative — no concomitant ischemia.
+- Troponin negative ×1 — a single value does not exclude ischemia as the trigger; repeat serial troponin per the assay's algorithm.
 - Echo to reassess EF, valves, RV, look for new regional wall motion abnormality.
 - BMP, magnesium, CBC, coags (INR on warfarin), TSH (AFib precipitants).
 - ABG if worsening — currently SpO2 acceptable on NC.

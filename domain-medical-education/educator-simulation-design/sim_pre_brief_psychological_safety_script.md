@@ -143,10 +143,10 @@ Level/Team: MS3 pairs   Type: formative   Environment: lab   Recording: yes   Sc
 "Before we start: we believe everyone here is smart, capable, cares about your patients, and wants to get better. We're going to treat each other that way."
 
 >>> FICTION CONTRACT
-"This isn't a real patient and the manikin can't do everything a person does. We'll tell you what it can do — and we're asking you to treat it as real anyway, make real decisions out loud, and we'll meet you there."
+"This isn't a real patient and the manikin can't do everything a person does — for example, it can't make real urine, so when you ask for urine output we'll tell you the number. We'll tell you what it can do — and we're asking you to treat it as real anyway, make real decisions out loud, and we'll meet you there."
 
 >>> CONFIDENTIALITY
-"What happens in this room stays in this room. We don't talk about each other's performance outside. We're recording only for our debrief; faculty in this session are the only ones who'll see it."
+"What happens in this room stays in this room. We don't talk about each other's performance outside. We're recording only for our debrief; faculty in this session are the only ones who'll see it." [VERIFY: institutional simulation recording / data policy — retention, who can access footage]
 
 >>> ORIENTATION
 - Environment: monitor here, code cart there (sim cart — sim meds labeled), phone to 'call' a consultant.
@@ -155,14 +155,14 @@ Level/Team: MS3 pairs   Type: formative   Environment: lab   Recording: yes   Sc
 - Sim meds are labeled SIMULATION — not for any real use.
 
 >>> OBJECTIVES + ERROR FRAMING
-"Today is practice. The point is to think out loud and try things. Errors here are expected and completely safe — that's exactly what we'll learn from in the debrief. No grades."
+"Today is practice. The point is to think out loud and try things. Errors here are expected and completely safe — that's exactly what we'll learn from in the debrief. No grades." [VERIFY: program assessment policy — confirm neither participation nor footage feeds any evaluation]
 
 >>> ROLES, LOGISTICS, CONSENT
-Roles: one leads, one assists; you'll switch each scenario. Timing: ~12 min each + debrief. Pause word: "time out." Breaks between scenarios.
-Check: "What questions do you have? Everyone okay to start?"
+Roles: one leads, one assists; you'll switch each scenario. Timing: ~12 min each + debrief. Pause word: "sim pause" — say it exactly like that and everything stops. Breaks between scenarios.
+Check: "What questions do you have? [Learner name], can you tell us the pause word and how you'd get labs or vitals?" Then: "If anyone would rather step out or talk first, come find me privately before scenario 1 — no explanation needed."
 
 >>> HONESTY GUARD
-Truthful: formative, not graded; recording for debrief only; not a trap.
+Truthful: formative, not graded; recording for debrief only (both pending the policy VERIFY checks above); not a trap.
 
 >>> REJECTED
 Considered: skipping orientation to "keep it realistic." Rejected: causes equipment-confusion failures + raises anxiety in first-timers. Replaced with: full orientation.

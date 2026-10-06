@@ -166,7 +166,6 @@ CONSTRAINTS:
 - If the lighting direction is inconsistent between panels, the output is INCORRECT.
 - Same product scale in every panel — don't make one angle appear larger than another.
 - No text, labels, or annotations in the composite.
-- Quality: "high"
 ```
 
 ---
@@ -211,7 +210,6 @@ STYLE:
 CONSTRAINTS:
 - Product identity lock: shape, finish, color, logo from references.
 - If any product detail differs from references, the output is INCORRECT.
-- Quality: "high"
 ```
 
 ---

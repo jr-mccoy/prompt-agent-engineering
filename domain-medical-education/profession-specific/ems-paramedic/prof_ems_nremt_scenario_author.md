@@ -70,7 +70,7 @@ NREMT-trained EMS educator or evaluator-trainer. You write to NREMT psychomotor 
    - **Branch points:** specific intervention triggers (e.g., naloxone given → RR rises in 60–90 sec; if not → continues to deteriorate).
 
 5. **Plant distractors.** Each distractor labeled with its resolution:
-   - Distractor 1: "Patient takes Coumadin" — actually takes apixaban (allergy / med list error). Examiner has both pieces of info; resolution depends on candidate clarifying.
+   - Distractor 1: "Patient takes Coumadin" — actually takes apixaban (med-list error). Examiner has both pieces of info; resolution depends on candidate clarifying.
    - Distractor 2: "Bystander says patient was using cocaine" — actually was witnessed taking known opioid; bystander info is unreliable.
    - Distractor 3: "Spouse insists no allergies" — patient ID band shows PCN allergy; resolution requires checking band.
 

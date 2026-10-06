@@ -184,17 +184,16 @@ For each finding below, indicate whether it is MOST consistent with pulmonary em
 | BP 98/64 (down from 122/78) | ☐ | ☐ | ☐ |
 | RR 26 with SpO2 89% on RA | ☐ | ☐ | ☐ |
 | New-onset SOB without chest pain | ☐ | ☐ | ☐ |
-| Calf without redness/swelling | ☐ | ☐ | ☐ |
 | Pain 4/10 at incision | ☐ | ☐ | ☐ |
 
 >>> Awaiting your response.
 
-[learner picks: HR-Pain, BP-Hemorrhage, RR/SpO2-PE, SOB-PE, Calf-PE, Pain-Pain]
+[learner picks: HR-Pain, BP-Hemorrhage, RR/SpO2-PE, SOB-PE, Pain-Pain]
 
 >>> TEARDOWN
 
 CJMM skill tested: Analyze cues — distinguish PE vs hemorrhage vs pain when more than one could explain the constellation.
-NGN scoring rule for matrix multiple-choice: +1 per correct row, 0 for incorrect; max 6.
+NGN scoring rule for matrix multiple-choice: +1 per correct row, 0 for incorrect; max 5.
 
 | Element | Correct | Your answer | Score | Rationale |
 |---|---|---|---|---|
@@ -202,10 +201,9 @@ NGN scoring rule for matrix multiple-choice: +1 per correct row, 0 for incorrect
 | BP 98/64 ↓ | PE (obstructive shock from RV strain) | Hemorrhage | 0 | Hemorrhage possible, but the Hgb drop is mild (0.4 g/dL) without external bleeding signs — PE more parsimonious with hypoxia. |
 | RR 26 / SpO2 89% | PE | PE | +1 | Hypoxemia post-op without atelectasis pattern → suspect PE. |
 | New SOB no chest pain | PE | PE | +1 | PE often presents without chest pain, especially small/medium emboli. |
-| Calf benign | PE (DVT can be clinically silent — absence does not rule out) | PE | +1 | Correct cue interpretation: clinically silent DVT does not exclude PE. |
 | Pain 4/10 | Pain | Pain | +1 | Correct. |
 
-Total score: 4/6 (67%).
+Total score: 3/5 (60%).
 
 >>> CJMM RULE
 

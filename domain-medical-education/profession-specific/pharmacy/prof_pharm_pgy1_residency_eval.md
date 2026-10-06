@@ -211,7 +211,7 @@ Rating: SP (trending toward ACH)
 Expected at Q2: SP
 Trajectory note: on-track
 
-═══ R1.1.2 — Interact effectively with patients, family members, and caregivers.
+═══ R1.1.2 — Interact effectively with patients, family members, and caregivers. [VERIFY: wording against the ASHP PGY1 edition in force]
 
 Behavioral evidence:
   • 10/18 — Conducted bedside warfarin teaching for newly diagnosed PE patient; used teach-back; resident self-identified that explanation of dietary K consistency was unclear and re-explained successfully.
@@ -221,7 +221,7 @@ Rating: SP
 Expected at Q2: SP
 Trajectory note: on-track
 
-═══ R1.2.1 — Collect information necessary to create an evidence-based assessment of patients.
+═══ R1.2.1 — Collect information necessary to create an evidence-based assessment of patients. [VERIFY: wording against the ASHP PGY1 edition in force]
 
 Behavioral evidence:
   • Consistent independent medication reconciliation across 30+ patients during the experience; only 2 minor documentation gaps noted by preceptor (one missed eye drop; one missed prn opioid).
@@ -230,7 +230,7 @@ Rating: SP (ACH pending at least one dated, case-identified observation — a su
 Expected at Q2: SP
 Trajectory note: on-track
 
-═══ R3.2.1 — Demonstrate management skills.
+═══ R3.2.1 — Demonstrate management skills. [VERIFY: wording against the ASHP PGY1 edition in force]
   Behavioral evidence:
     • Delegated medication-history-gathering to APPE student with appropriate framing and oversight.
     • Triage of pharmacy interventions across morning rounds (decided which patients to see first based on acuity).
@@ -243,7 +243,7 @@ Trajectory note: on-track
 Strengths:
   • Consistent, accurate medication reconciliation with strong attention to renal- and hepatic-adjusted dosing.
   • Comfortable proposing recommendations on rounds with clear rationale; team trusts input.
-  • Strong collaboration with the consult ID pharmacist on antimicrobial de-escalation.
+  • Collaboration with the consult ID pharmacist on antimicrobial de-escalation: [not provided — no dated evidence bullet above supports this; add one or delete the strength].
 
 Areas for development:
   • Patient-counseling depth — recommendations land but counseling can feel rushed when census is high.

@@ -191,7 +191,9 @@ DKA initial management sequence — fluids first, then insulin after potassium i
 
 >>> DISCRIMINATING FACT
 
-"glucose 480, bicarb 9, pH 7.18, anion gap 28, beta-hydroxybutyrate elevated, BP 105/70, HR 116, RR 28 with deep fast breathing" — this is DKA with significant volume depletion (tachycardia, normotensive on lower end). The first step is fluid resuscitation before insulin.
+Primary swing: "HR 116" and "BP 105/70" — volume depletion (tachycardia, normotensive on lower end). The first step is fluid resuscitation before insulin.
+
+Contributing (each quoted separately): "glucose 480 mg/dL", "bicarbonate 9", "anion gap 28", "beta-hydroxybutyrate elevated", "ABG pH 7.18", "RR 28 with deep, fast breathing" — these establish DKA; they do not by themselves decide the first step.
 
 >>> DISTRACTOR WALK
 

@@ -205,8 +205,9 @@ Single testable fact: name a dysfunction by its FREE motion. The TART restrictio
 
 >>> CONTRAINDICATIONS
 
-Absolute (HVLA upper c-spine; classification used on this page — texts differ for RA [VERIFY: program's OPP reference text]): vertebrobasilar insufficiency, Down syndrome (AAI), Klippel-Feil, RA c-spine instability, Chiari, fracture, malignancy in segment, acute disc herniation with neurologic deficit.
-Relative: anticoagulation, osteoporosis, prior whiplash, headache with vertigo on extension/rotation.
+Absolute (HVLA upper c-spine; classification used on this page — texts differ for RA [VERIFY: program's OPP reference text]): vertebrobasilar insufficiency, Down syndrome (AAI), Klippel-Feil, RA c-spine instability, Chiari, fracture, malignancy in segment.
+Relative: anticoagulation, osteoporosis, acute herniated disc (classed relative, as in the Method; texts differ when a neurologic deficit is present [VERIFY: program's OPP reference text]), prior whiplash.
+Screen before HVLA: headache or vertigo provoked by extension/rotation suggests vertebrobasilar insufficiency — if VBI is suspected, treat it as the absolute contraindication above, not as a relative one.
 
 >>> COMLEX-STYLE VIGNETTE
 
@@ -217,7 +218,7 @@ Which of the following is the most appropriate next OMT technique?
 A) HVLA to C2
 B) Muscle energy directed to engage extension, right rotation, and right sidebending barrier
 C) Counterstrain — position C2 into flexion with right rotation and right sidebending
-D) Articulatory technique to C2 with passive extension under traction
+D) Muscle energy with C2 positioned into flexion, left rotation, and left sidebending
 
 >>> Your answer (A/B/C/D)?
 
@@ -232,7 +233,7 @@ Discriminating finding: "rheumatoid arthritis" plus "upper cervical dysfunction"
 A) Wrong. HVLA in RA c-spine is contraindicated due to AAI risk. Trap.
 B) Correct. ME engages the barrier; safe in RA.
 C) Wrong. CS positions into FREEDOM (flexion + L rotation + L sidebending), not into the barrier. Position described would worsen.
-D) Wrong. Articulatory traction in upper c-spine in RA carries the same risk; not first-line in this patient.
+D) Wrong. ME is a direct technique — it engages the barrier (extension + R rotation + R sidebending, per the stem's "limited extension and right rotation"). Flexion + L rotation + L sidebending is the freedom, so this is ME set up in the wrong direction.
 
 Trap audit: A — HVLA in a patient with a contraindication (classed absolute on this page). Single most common COMLEX OMT trap. Always read patient comorbidities before choosing HVLA.
 ```

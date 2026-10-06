@@ -168,7 +168,7 @@ PBW: 45.5 + 0.91 × (165 − 152.4) = 45.5 + 11.5 = 57 kg.
 MODE: Volume control / AC. Lung-protective Vt enforcement is the priority.
 Vt: 6 mL/kg PBW × 57 = 342 mL → set 340 mL.
 RR: 22 (compensate for low Vt; minute ventilation goal preserves CO2 clearance).
-PEEP: 14 cmH2O initially (severe ARDS, ARDSNet higher-PEEP table).
+PEEP: 14 cmH2O initially (severity-based starting estimate for severe ARDS, step 5 band 14–20 — not an ARDSNet table row; re-titrate against the named table and current FiO2).
 FiO2: 100% start; titrate down to SpO2 88–94% as tolerated.
 I:E: 1:1.5 (slightly prolonged inspiratory time for recruitment).
 

@@ -58,7 +58,7 @@ Manage acute upper or lower GI bleeding: localize, resuscitate, risk-stratify, g
    - **Restrictive: Hgb 7 g/dL** in stable non-variceal upper GI bleed (Villanueva trial — restrictive better than liberal).
    - **Hgb 8 g/dL** for active CAD or stable angina (per AABB).
    - **Hgb 9 g/dL** historically in massive hemorrhage / unstable patients — but balanced products (1:1:1) are the better framework for active hemorrhage rather than Hgb-driven.
-   - Platelets <50 with active bleeding → transfuse.
+   - Platelets with active bleeding → transfuse below the threshold in current guidance for the bleed type (non-variceal vs cirrhotic/variceal) [VERIFY: current ACG / ESGE non-variceal guidance; Baveno VII / current AASLD guidance for cirrhosis].
    - INR >1.5–2 with active bleeding → FFP, vitamin K, or PCC (if on warfarin). In cirrhosis, INR does not reflect bleeding risk and INR-driven correction is not routinely recommended in variceal bleeding [VERIFY: Baveno VII / current AASLD guidance].
 
 4. **Risk stratify upper GI bleed.**
@@ -181,7 +181,7 @@ RESUSCITATION:
 
 TRANSFUSION:
 - Hgb 7.2 with active variceal bleed and hemodynamic instability — transfuse pRBC. Restrictive Hgb 7 threshold from Villanueva still applies; do not over-transfuse (raises portal pressure). Goal Hgb ~7–8 g/dL during active bleed.
-- Platelets 65 with active bleed → transfuse 1 dose apheresis platelets (target >50, ideally >70 for endoscopic procedures).
+- Platelets 65 with active bleed: transfuse only against the current guidance threshold for cirrhotic/variceal bleeding or a stated endoscopic-procedure requirement, and record that reason [VERIFY: Baveno VII / current AASLD guidance; local transfusion protocol].
 - INR 1.8: no FFP, vitamin K or PCC for the INR alone — patient is not on warfarin, and in cirrhosis INR-driven correction is not routinely recommended in variceal bleeding (FFP volume also raises portal pressure) [VERIFY: Baveno VII / current AASLD guidance].
 - Note: cirrhosis has "rebalanced hemostasis"; INR does not predict bleeding well. Any product beyond pRBC needs a specific stated reason in this patient.
 

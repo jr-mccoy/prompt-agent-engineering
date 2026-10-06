@@ -105,8 +105,9 @@ CLO N [...]
 | Final MCQ | Summative | 80 | CLO1 ×20, CLO2 ×20, CLO3 ×20, CLO4 ×0 — GAP; 20 items unmapped |
 | OSCE station 3 | Summative | 1 station | CLO3 |
 | Reflective essay | Formative | 1 essay | CLO2 (evaluation) |
-| Progress test | Formative | 60 | longitudinal |
+| Progress test | Formative | 60 | "longitudinal" — no CLO tagged |
 | Mini-CEX (clerkship-integrated) | Formative | 4 forms | CLO1, CLO3 |
+| Case-presentation rating | Formative | 1 rating form | — no CLO tagged |
 
 >>> COVERAGE AUDIT
 | Audit | Status | Action |
@@ -115,8 +116,8 @@ CLO N [...]
 | Every CLO has ≥ 1 assessment touchpoint | fail | Add 5 items to final MCQ targeting CLO4 |
 | No orphan sessions | pass | — |
 | Bloom progression appropriate | pass | — |
-| No redundant Bloom × LO combos | pass | (mild redundancy CLO2 × Application acceptable as deliberate practice) |
-| Assessment items all tied to CLOs | fail | "case-presentation rating", 8 midterm MCQ items and 20 final MCQ items not tied to any CLO — drop or remap |
+| No redundant Bloom × LO combos | flag | CLO1 × App (S1, S2), CLO1 × Analysis (S4, S9), CLO2 × App (S1, S3), CLO3 × Analysis (S3, S6) — keep each pair only if documented as deliberate spaced practice with rising complexity; otherwise merge or raise one session's Bloom level |
+| Assessment items all tied to CLOs | fail | "case-presentation rating", the 60-item progress test (tagged only "longitudinal"), 8 midterm MCQ items and 20 final MCQ items not tied to any CLO — drop or remap |
 
 >>> COVERAGE GAP RESOLUTION
 | Gap | Resolution |
@@ -125,6 +126,7 @@ CLO N [...]
 | CLO4 has 0 assessment items | Author 5 MCQs at analysis level for final exam |
 | Orphan rating "case presentation rating" | Either remap to CLO1 (communication subdomain) or remove from grade |
 | 8 midterm + 20 final MCQ items unmapped | Tag each item to a CLO or retire it before the blueprint hand-off |
+| Progress test tagged "longitudinal" only | Tag each progress-test item to a CLO (or declare the progress test outside this course's grade and alignment scope) |
 
 >>> PROGRESSION CHECK
 | CLO | Bloom | First appearance (week) | Final appearance | OK? |

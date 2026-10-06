@@ -174,7 +174,7 @@ Replaced with: an algorithm-misapplication distractor.
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
 | A key that is right only under an assumption that appears in the facilitator notes but not in the learner stem | Solve the exercise blind from the learner stem alone and show why A beats each of B–D; any assumption the key needs is moved into the stem |
-| Risk scores in the stem (CHA2DS2-VASc 4, HAS-BLED 3) that the stem's own facts cannot produce | Recompute each score from the stated age, sex and comorbidities; add the missing facts or correct the score |
+| Risk scores in the stem (e.g., a stated CHA2DS2-VASc or HAS-BLED value) that the stem's own facts cannot produce | Recompute each score from the stated age, sex and comorbidities; add the missing facts or correct the score |
 | Trap tags applied by position (B anchoring, C premature closure) rather than by what the option actually ignores | For each tag, name the stem datum the trap overlooks; an option with no such datum is retagged, and key position is varied across exercises |
 | Anticipated pick percentages written as if they were forecasts | Label them facilitator estimates; replace them with observed card counts after the first run |
 | Counting topic headings with "→ key" as written iRAT/tRAT items | Count only entries with a stem, four options, a key and noted distractor logic; the 6–10 requirement applies to that count |
@@ -212,7 +212,7 @@ Specific: pick 1 of 4 anticoag plans.
 Simultaneous: card reveal at min 20.
 
 >>> STEM
-A 72M with new AF (CHADS-VASc 4, HAS-BLED 3), admitted with pneumonia and AKI (Cr 0.9 → 2.4, anuric × 6h). BP 138/82, K 5.4. Cardiology consult recommends anticoagulation. Hospital protocol permits apixaban in AKI with dose modification. Pharmacist asks for your plan.
+A 72M (weight 58 kg) with hypertension, type 2 diabetes and prior MI on daily aspirin, now with new AF (CHA2DS2-VASc 4, HAS-BLED 3), admitted with pneumonia and AKI (Cr 0.9 → 2.4, anuric × 6h). BP 138/82, K 5.4. Cardiology consult recommends anticoagulation. Hospital protocol permits apixaban in AKI with dose modification. Pharmacist asks for your plan.
 
 Q: Best initial anticoagulation plan?
 A. Apixaban 2.5 mg BID
@@ -221,16 +221,16 @@ C. Warfarin bridged with UFH
 D. Hold anticoagulation until AKI resolves
 
 >>> OPTION TAGS (facilitator)
-A — RIGHT. Apixaban 2.5 mg BID is the dose-reduction option, but reasoning here is dose adjustment for AKI is uncertain; the discriminator is anticoag in AKI is poorly studied — the *defensible* choice depends on extent of renal function. Keyed as the right answer because the stem stipulates that hospital protocol permits apixaban in AKI with dose modification [VERIFY: current apixaban product label dose-reduction criteria and the institution's protocol]. (Facilitator: surface the data gap — this is the teaching point.)
+A — RIGHT. Apixaban 2.5 mg BID is the dose-reduction option, but reasoning here is dose adjustment for AKI is uncertain; the discriminator is anticoag in AKI is poorly studied — the *defensible* choice depends on extent of renal function. Keyed as the right answer because the stem stipulates that hospital protocol permits apixaban in AKI with dose modification, and the stem gives the dose-reduction data (age 72, weight 58 kg, Cr 2.4) [VERIFY: check those three values against current apixaban product label dose-reduction criteria and the institution's protocol]. (Facilitator: surface the data gap — this is the teaching point.)
 B — Anchoring: standard AF dose; wrong because doesn't account for AKI.
 C — Premature closure / algorithm misapplication: warfarin bridge is a 2010s algorithm; not standard in 2025 for new AF (bleeding risk > benefit in HAS-BLED 3).
-D — Algorithm misapplication: holding is reasonable if hemodynamic instability or pre-bleed; question is whether AKI alone justifies holding when CHADS-VASc 4.
+D — Algorithm misapplication: holding is reasonable if hemodynamic instability or pre-bleed; question is whether AKI alone justifies holding when CHA2DS2-VASc 4.
 
 >>> ANTICIPATED PATTERNS
 Likely: A 30%, B 25%, C 20%, D 25%.
 For B: "we're treating AF stroke risk; standard dose."  Redirect: "what does AKI do to apixaban clearance?"
 For C: "warfarin is reversible if AKI worsens."  Redirect: "what's the 2025 evidence for warfarin-bridging in new AF?"
-For D: "holding seems safer."  Redirect: "what's the absolute stroke risk at CHADS-VASc 4 over 7 days vs bleed risk?"
+For D: "holding seems safer."  Redirect: "what's the absolute stroke risk at CHA2DS2-VASc 4 over 7 days vs bleed risk?"
 
 >>> REPORT
 Cards (A/B/C/D), reveal at minute 20.
@@ -240,16 +240,16 @@ Cards (A/B/C/D), reveal at minute 20.
 2–6 each-pick defends
 6–15 probe with redirects above
 15–20 re-vote
-20–25 name discriminator: "in AKI without dialysis, apixaban dose-reduction is an open question; defensible plans depend on stipulated assumptions, and the right TBL move is to surface the data gap, not to declare a unique winner. The teaching point is that algorithmic answers fail here."
+20–25 name discriminator: "in AKI without dialysis, apixaban dosing is poorly studied; A is the best answer only because the stem stipulates the protocol and supplies the dose-reduction data, so name those stipulations and surface the data gap behind them. The teaching point is that algorithmic answers fail here without them."
 
 >>> iRAT / tRAT (8 items)
-iRAT1: CHADS-VASc components → key
+iRAT1: CHA2DS2-VASc components → key
 iRAT2: HAS-BLED components → key
 iRAT3: Apixaban renal dose-reduction criteria → key
 iRAT4: DOAC clearance routes (apixaban vs dabigatran vs rivaroxaban) → key
 iRAT5: Warfarin-bridge indication in 2025 → key (rare)
 iRAT6: AKI staging (KDIGO) → key
-iRAT7: Stroke risk at CHADS-VASc 4 absolute → key
+iRAT7: Stroke risk at CHA2DS2-VASc 4 absolute → key
 iRAT8: Bleeding risk at HAS-BLED 3 absolute → key
 
 >>> SOURCE-FIDELITY

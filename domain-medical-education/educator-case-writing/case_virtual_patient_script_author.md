@@ -175,7 +175,7 @@ Replaced with: [...]
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
 | Filling the OUTCOMES line ("reached via paths 1, 3, 5") from the design intent rather than from the PATH ENUMERATION, so an outcome cites a path number that actually terminates somewhere else | Before release, walk every numbered path from N0 to its terminal node and rebuild each outcome's path list from that walk; an outcome-to-path pairing that disagrees with the enumeration is a defect, not a typo |
-| Recording "Cosmetic choices found: none" because each choice points to a different node ID, while two of those nodes (e.g., N3-blind and N3.A) present the same vitals, findings and next question | Compare consequence nodes by content, not by label: choices that lead to nodes with identical patient state and identical next decision are cosmetic whatever their IDs |
+| Recording "Cosmetic choices found: none" because each choice points to a different node ID, while two of those nodes (e.g., a "skipped-test" node and the "test-done" node) present the same vitals, findings and next question | Compare consequence nodes by content, not by label: choices that lead to nodes with identical patient state and identical next decision are cosmetic whatever their IDs |
 | A consequence node whose vitals, exam or results do not follow from the choice just made (blood pressure unchanged after a preload-dropping action; a lab resulted before the stated time advance allows) | For each consequence node, write the one-line physiologic or timing reason it follows from the choice, and check that vitals, exam and result timing move together across the `time_horizon` |
 | Keying a "best choice" or firing a kill-switch on a time window, threshold or contraindication recalled from memory, when the governing guideline lists the option as a defensible alternative | Name the source type for every window, threshold or contraindication that keys a choice and tag it [VERIFY: current guideline edition]; a recognized alternative is routed to "acceptable" with its trade-off, not to a kill-switch |
 | Coverage-map rows that pair a node with an LO the learner never has to use there | Test each node–LO pair by asking what a learner who lacks that LO would choose at the node; if they would still reach the best option, the LO is not surfaced there and the row is removed |
@@ -213,28 +213,36 @@ LO3 [Apply]: Manage hypotension in inferior MI
 >>> NODE GRAPH (compact)
 N0 → N1 (recognize STEMI)
 N1.A (recognize + activate cath) → N2 (right-sided lead question)
-N1.B (call cardiology first, don't activate) → N2-delayed (time lost; teaching consequence)
+N1.B (call cardiology first, don't activate) → N2-delayed (12 min lost; rejoins N2; best ending capped at Outcome B)
 N1.C (treat as NSTEMI) → KILL-SWITCH ("STEMI delayed = myocardium lost")
 N2.A (got right-sided leads) → N3
 N2.B (skip right-sided) → N3-blind
+N3-blind (RV status unknown; BP 92/58)
+N3-blind.A (fluid first, by luck) → N4 (best ending capped at Outcome B)
+N3-blind.B (nitro first) → KILL-SWITCH ("nitro in unrecognized RV infarct dropped preload")
 N3 (RV involvement seen → fluid before nitro)
 N3.A (fluid first) → N4
 N3.B (nitro first → hypotension cascade) → KILL-SWITCH ("nitro in RV infarct dropped preload; pt arrested")
-N4 (cath access available within 60 min vs 4 h)
-N4.A (cath within 60) → Outcome A
-N4.B (cath > 120 min; choose lytic) → Outcome A (defensible alternative path)
-N4.C (cath > 120; refuse lytic) → Outcome C (delayed reperfusion)
+N4 (on-site cath in 60 min vs transfer cath > 120 min)
+N4.A (cath here, within 60) → Outcome A
+N4.B (transfer for cath, > 120 min) → Outcome B (acceptable but delayed)
+N4.C (lytic now) → Outcome A (defensible alternative path — keying VERIFY-tagged in NODE DETAILS)
+N4.D (wait and reassess) → Outcome C (delayed reperfusion)
 
 >>> NODE DETAILS
 N0: 62M, sudden CP, diaphoretic, EKG done.
 N1: "What do you do first?"
   A. STEMI activation. → "Right call. STEMI is a time-dependent diagnosis; activate first, refine workup in parallel." → N2.
-  B. Page cards before activating. → "Caused 12-min delay. Time = myocardium." → N2-delayed.
+  B. Page cards before activating. → "Caused 12-min delay. Time = myocardium." → N2-delayed (12 min added to the clock; rejoins N2; best ending capped at Outcome B).
   C. Treat as NSTEMI / start heparin only. → KILL-SWITCH. "STOP. EKG showed STEMI. Treating as NSTEMI delays reperfusion. Reset to N1."
 
 N2: "Inferior leads show ST elevation. Next step on EKG?"
   A. Right-sided leads. → "RV infarct check before nitro is the teaching point." → N3.
   B. Skip; treat empirically. → N3-blind.
+
+N3-blind: "BP 92/58, chest pain ongoing. RV status unknown."
+  A. Bolus IVF, hold nitro. → "Safe outcome, but by luck — RV involvement was never checked." → N4 (best ending capped at Outcome B).
+  B. Nitro for chest pain. → KILL-SWITCH. "Nitro dropped preload in an unrecognized RV infarct, BP 60/40, pt coded. Reset to N2."
 
 N3: "RV involvement seen. BP 92/58."
   A. Bolus IVF, hold nitro. → "Correct. RV infarct depends on preload." → N4.
@@ -243,12 +251,12 @@ N3: "RV involvement seen. BP 92/58."
 N4: "Cath available in 60 min at this center. Transfer cath > 120 min. Time of onset 90 min ago. Choice?"
   A. Cath here. → Outcome A.
   B. Transfer for cath despite > 120 min total. → Outcome B (acceptable but delayed).
-  C. Lytic now. → Outcome A (defensible if time-of-onset window + cath > 120).
+  C. Lytic now. → Outcome A (defensible if time-of-onset window + cath > 120) [VERIFY: current ACC/AHA STEMI guideline reperfusion-timing criteria — this stem gives on-site cath in 60 min, so the "cath > 120" condition is not met here; if lytic is not a recognized alternative in this stem, re-key to Outcome B or C and update OUTCOMES and PATHS].
   D. Wait and reassess. → Outcome C.
 
 >>> OUTCOMES
 A: reperfusion within window, clean. (Paths: 1, 4)
-B: reperfusion but delayed; re-route to remediation node on transfer-vs-lyse decision rule. (Paths: 2, 3)
+B: reperfusion but delayed, or safe only by luck; re-route to remediation node on the missed decision rule. (Paths: 2, 3, 6)
 C: failed reperfusion. (Path 5 + any kill-switch reset that fails again)
 
 >>> COVERAGE MAP
@@ -257,15 +265,17 @@ C: failed reperfusion. (Path 5 + any kill-switch reset that fails again)
 | N1 | LO1 |
 | N2 | LO1 (right-sided leads) |
 | N3 | LO3 |
+| N3-blind | LO3 |
 | N4 | LO2 |
 
 >>> PATHS
 1. N0 → N1.A → N2.A → N3.A → N4.A → Outcome A (clean)
-2. N0 → N1.A → N2.B → N3.A → N4.A → Outcome B (skipped right-sided; lucky)
+2. N0 → N1.A → N2.B → N3-blind.A → N4.A → Outcome B (skipped right-sided; lucky)
 3. N0 → N1.A → N2.A → N3.A → N4.B → Outcome B
-4. N0 → N1.A → N2.A → N3.A → N4.C → Outcome A (lytic appropriate)
+4. N0 → N1.A → N2.A → N3.A → N4.C → Outcome A (lytic; keying VERIFY-tagged at N4.C)
 5. N0 → N1.A → N2.A → N3.A → N4.D → Outcome C
-6. (kill-switch reset paths not enumerated; loop back)
+6. N0 → N1.B → N2-delayed → N2.A → N3.A → N4.A → Outcome B (delayed activation)
+7. (kill-switch reset paths not enumerated; loop back)
 
 >>> ANTI-PATTERN
 None — every branch leads to distinct state; no trick; no die-roll.

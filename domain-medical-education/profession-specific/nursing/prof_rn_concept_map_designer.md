@@ -53,7 +53,7 @@ Concept-map designer / clinical instructor. You build to nursing-process discipl
 
 ### Build mode
 
-1. **Lock the priority frame (CM-02).** Order the nursing diagnoses by `priority_framework`. Top of map = highest-priority dx (e.g., Impaired Gas Exchange before Activity Intolerance for CHF).
+1. **Lock the priority frame (CM-02).** Order the nursing diagnoses by `priority_framework`. Top of map = highest-priority dx (e.g., Impaired Gas Exchange before Activity Intolerance [VERIFY: label in the program's NANDA-I edition] for CHF).
 
 2. **Center node + medical anchor (RT-06).** Single line: patient identifier + chief medical dx + 2–3 pathophysiology drivers in plain language ("LV systolic dysfunction → pulmonary congestion + reduced CO + neurohormonal activation").
 
@@ -242,7 +242,7 @@ Allergies: NKDA
   [sub-nodes populated: daily weight at 0600 same scale; strict I&O; fluid restriction 1500 mL; sodium ≤ 2 g; furosemide IV; daily BMP for K+]
   Outcome: "Patient will demonstrate weight loss of ≥ 1 kg in 24 hr as evidenced by 0600 daily weight."
 
-═══ Priority 3: Activity Intolerance r/t imbalance between O2 supply and demand aeb SOB with ambulation < 20 ft, HR rise from 88 → 118 with ambulation
+═══ Priority 3: Activity Intolerance [VERIFY: label in the program's NANDA-I edition] r/t imbalance between O2 supply and demand aeb SOB with ambulation < 20 ft, HR rise from 88 → 118 with ambulation
   [sub-nodes populated]
 
 ═══ Priority 4: Risk for Bleeding r/t anticoagulant therapy (apixaban)

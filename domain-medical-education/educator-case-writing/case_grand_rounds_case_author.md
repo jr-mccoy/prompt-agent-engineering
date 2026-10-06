@@ -153,8 +153,8 @@ T3: "When [X], I will [Y]."
 >>> SOURCE-FIDELITY AUDIT
 | Claim | Source | Verified |
 |---|---|---|
-| Ferritin > 500 + cytopenia + hepatosplenomegaly → HLH spectrum (H-Score) | PMID 24935898 (Fardet 2014) | Y |
-| Anakinra dose in HLH | Eloseily 2020 ART | Y, dose verified per literature; institution-specific |
+| Ferritin > 500 + cytopenia + hepatosplenomegaly → HLH spectrum (H-Score) | Fardet 2014 [PMID: verify — search "Fardet 2014 HScore reactive hemophagocytic syndrome"] | N — [verify before presentation] |
+| Anakinra dose in HLH | Eloseily 2020 [VERIFY: confirm the study population (adult vs pediatric) and dose before citing it for adults] | N — [verify before presentation] |
 | ... | ... | ... |
 [verify before presentation]: rows that need final confirmation.
 
@@ -167,7 +167,7 @@ Citation format: author + journal + year + 1-sentence finding + applicability �
 >>> REJECTED ELEMENTS (≥ 1)
 Considered: ending with "this case reminds us to keep a broad differential."
 Rejected: not a behavioral takeaway; not actionable.
-Replaced with: T3: "When sepsis workup is negative but ferritin > 5,000, I will calculate H-score before continuing antibiotics."
+Replaced with: T3: "When sepsis workup is negative but ferritin is markedly elevated, I will calculate H-score before continuing antibiotics."
 ```
 
 ## Variation Hooks
@@ -187,10 +187,10 @@ Replaced with: T3: "When sepsis workup is negative but ferritin > 5,000, I will 
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
 | Filling PMID, DOI, journal and response-rate slots from memory, producing identifiers that resolve to a different paper | Leave `[PMID: verify]` with a search string (first author + year + topic) instead of a number; `Y` in the Verified column means someone resolved the identifier to the stated title and finding |
-| Quoting a composite score for the case (H-Score 250, "~99% probability") that the stage data cannot reproduce | Recompute the score from variables actually given in the stages (temperature, organomegaly, number of cytopenias, ferritin, triglycerides, fibrinogen, AST, marrow findings, immunosuppression); if a variable is missing, the stated score is unsupported |
+| Quoting a composite score for the case (e.g., a stated H-Score and its probability) that the stage data cannot reproduce | Recompute the score from variables actually given in the stages (temperature, organomegaly, number of cytopenias, ferritin, triglycerides, fibrinogen, AST, marrow findings, immunosuppression); if a variable is missing, the stated score is unsupported |
 | A deck title, slide title or early facilitator note that names the tension point while the arc defers the reveal to Stage 4 | Apply the reveal check to every string the audience sees — title, slide headers, polling stems — not only stage content |
 | Putting a paper older than three years (relative to the presentation date) in the "recent paper" slot | Compute publication year against the presentation date; if no qualifying paper is available, say so rather than relabelling an older one |
-| Takeaway cut-offs ("ferritin > 5,000") that do not appear in the source cited beside them | Trace each number in each takeaway to the cited source's own cut-off; a different threshold needs its own source or comes out |
+| Takeaway cut-offs (e.g., a ferritin threshold) that do not appear in the source cited beside them | Trace each number in each takeaway to the cited source's own cut-off; a different threshold needs its own source or comes out |
 
 ## Verification Checklist
 
@@ -220,7 +220,7 @@ Specialty: IM   Theme: secondary HLH   Type: zebra   Audience: mixed   Duration:
 S1: 42M, 2 wk fever, fatigue, RUQ pain. Initial labs: WBC 2.1, Hgb 9.0, Plt 80. AST 200, ALT 180. UA normal. Working dx: viral hepatitis / sepsis.
 S2: Blood cx negative × 48 h. Vanc/cef started empirically. Persistent fever. HSV PCR neg, hepatitis serologies neg. CT shows splenomegaly. Working dx: occult infection, lymphoma.
 S3 [TENSION]: Ferritin returns at 5,800 ng/mL. Triglycerides 350. Fibrinogen 140. — Audience sit-up moment. Working dx pivots: HLH.
-S4: H-Score 250 (~99% probability). Bone marrow biopsy shows hemophagocytosis. Soluble IL-2R elevated. Diagnosis: secondary HLH.
+S4: H-Score [not computable from the stage data — no temperature is recorded in S1–S3; add Tmax to S1 and compute against the published HScore point table before presenting]. Bone marrow biopsy shows hemophagocytosis. Soluble IL-2R elevated. Diagnosis: secondary HLH.
 S5: Investigated trigger — EBV PCR + 10,000 copies. Started dex + etoposide; later switched to anakinra given liver dysfunction. Improved over 14 days.
 S6: 6-mo follow-up: in remission.
 
@@ -228,13 +228,13 @@ S6: 6-mo follow-up: in remission.
 Ferritin 5,800 with negative infection workup forces audience to ask "is this still sepsis?" The pivot is the discriminator: marked hyperferritinemia + cytopenias + organomegaly meet H-Score threshold.
 
 >>> LITERATURE
-1. Fardet 2014, Arthritis Rheum. PMID 24935898.
+1. Fardet 2014 [PMID: verify — search "Fardet 2014 HScore reactive hemophagocytic syndrome"; confirm journal and PMID].
    H-Score for HLH diagnosis (≥ 169 sens 93%, spec 86%).
-   Applies: provides quantitative threshold; our case scored 250.
-2. ACR / Adult HLH consensus 2021.
+   Applies: provides quantitative threshold; our case's score (S4) is read against it.
+2. [VERIFY: no "ACR / Adult HLH consensus 2021" confirmed — identify the adult HLH recommendation actually intended (authors, journal, year) before presenting].
    Recommendation: H-Score for screening; bone marrow + soluble IL-2R for confirmation.
    Applies: anchors our workup sequence.
-3. Eloseily 2020, Arthritis Rheumatol.
+3. Eloseily 2020, Arthritis Rheumatol. [VERIFY: confirm population (adult vs pediatric), response rate and the etoposide comparison against the paper; a pediatric study does not support an adult claim, and a 2020 paper does not fill the ≤ 3-yr "recent paper" slot]
    Anakinra in sec HLH — 80% response, lower liver toxicity than HLH-94 etoposide.
    Applies: justified our switch when LFTs worsened on etoposide.
 
@@ -242,21 +242,21 @@ Ferritin 5,800 with negative infection workup forces audience to ask "is this st
 Q1 (after S1): DDx? Facilitator note: surface sepsis, viral hepatitis, lymphoma. If "HLH" comes up, push back: "what makes you think HLH this early?"
 Q2 (after S2): why is empiric antibiotic without source not yet sufficient?
 Q3 (after S3 — tension): What single lab made you pivot?
-Q4 (after S4): What's the H-Score threshold? What does score 250 mean?
+Q4 (after S4): What's the H-Score threshold? What does this patient's score mean?
 Q5 (after S5): When would you choose anakinra over HLH-94 dex/etoposide?
 Q6 (outside): If patient were 7 yr old, what changes about Dx & Rx?
 
 >>> 3 TAKEAWAYS
-T1: "When sepsis workup is negative AND ferritin > 5,000 AND cytopenias persist, I will calculate H-Score before continuing broad-spectrum antibiotics." (Fardet 2014)
-T2: "When HLH is suspected, I will order soluble IL-2R + triglycerides + fibrinogen with bone marrow consideration, not just ferritin alone." (ACR 2021)
+T1: "When sepsis workup is negative AND ferritin is markedly elevated AND cytopenias persist, I will calculate H-Score before continuing broad-spectrum antibiotics." (Fardet 2014)
+T2: "When HLH is suspected, I will order soluble IL-2R + triglycerides + fibrinogen with bone marrow consideration, not just ferritin alone." ([VERIFY: source — see literature item 2])
 T3: "When etoposide-based HLH therapy is limited by hepatic dysfunction, I will consider anakinra as an alternative." (Eloseily 2020)
 
 >>> SOURCE-FIDELITY AUDIT
 | Claim | Source | Verified |
 |---|---|---|
-| H-Score thresholds | PMID 24935898 | Y |
-| Anakinra response rate ~80% | Eloseily 2020 ART | Y, narrow population — flag as institutional |
-| ACR consensus recommendation order | ACR 2021 consensus | Y |
+| H-Score thresholds | Fardet 2014 [PMID: verify] | N — [verify before presentation] |
+| Anakinra response rate ~80% | Eloseily 2020 ART | N — [VERIFY: population and response rate; see literature item 3] |
+| Adult HLH recommendation order | [VERIFY: source as named ("ACR 2021 consensus") not confirmed] | N — [verify before presentation] |
 | Ferritin 5800 in our patient | case (de-identified) | Y |
 
 >>> ANTI-PATTERN CHECK

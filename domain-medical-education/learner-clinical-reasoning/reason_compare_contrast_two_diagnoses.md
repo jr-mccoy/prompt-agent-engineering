@@ -162,7 +162,7 @@ Restudy: [...]
 |---|---|
 | A "false discriminators caught" count that includes a feature the catch list confirmed as a real discriminator | Recount the summary from the sections above: catches = entries actually reclassified; discriminating rows = matrix rows classed `discriminator` |
 | Swing features tagged "large" with no LR behind the tag, or a cluster of findings given one magnitude as if it were a single test | Give the source type for each magnitude tag or downgrade it to "unquantified"; tag a cluster only when an LR for that cluster exists `[VERIFY: source]` |
-| An anchor that misstates the severity class it names (e.g., "submassive" PE described as hemodynamic compromise) while stress-test vitals drift toward the other class | Define the class by its criteria (e.g., intermediate-risk PE: RV dysfunction or troponin rise without sustained hypotension) [VERIFY: current ESC / AHA PE risk classification] and check the stress-test vitals against that threshold |
+| An anchor that misstates the severity class it names (e.g., an intermediate-risk class described with the defining feature of the high-risk class) while stress-test vitals drift toward the other class | Define the class by its criteria (e.g., intermediate-risk PE: RV dysfunction or troponin rise without sustained hypotension) [VERIFY: current ESC / AHA PE risk classification] and check the stress-test vitals against that threshold |
 | Stress-test vignettes built only from one column's features, so they test recognition rather than discrimination | Put at least one overlap-section feature in each vignette and check that the swing features, not the surrounding typical features, carry the decision |
 | Counting the treatment-response row toward "Discriminating rows" when the matrix is meant for the bedside at presentation | Report treatment response as a post-hoc swing, separate from the presentation count, and keep it out of the bedside heuristic |
 
@@ -189,7 +189,7 @@ COMPARE & CONTRAST — ADHF (HFrEF) vs. PE (submassive)
 Context: acute dyspnea in adult ED.   Learner: MS4
 
 Anchor A: HFrEF exacerbation — LV systolic dysfunction with elevated filling pressures causing pulmonary edema and congestion.
-Anchor B: Submassive PE — thromboembolic occlusion of pulmonary arteries causing V/Q mismatch, RV strain, and hemodynamic compromise short of arrest.
+Anchor B: Submassive PE — thromboembolic occlusion of pulmonary arteries causing V/Q mismatch and RV dysfunction and/or troponin rise without sustained hypotension (hemodynamically stable by definition; sustained hypotension makes it massive / high-risk PE).
 
 Shared one-liner: "Adult with acute dyspnea and tachycardia, requiring rapid stratification."
 
@@ -212,7 +212,7 @@ Shared one-liner: "Adult with acute dyspnea and tachycardia, requiring rapid str
 | EKG | LBBB, prior MI patterns, AFib common; LV strain | sinus tachy classic; S1Q3T3 occasional (low sens); new RBBB, TWI in V1-V4 (RV strain) | conditional |
 | Labs | BNP↑↑, troponin mildly ↑ from strain | d-dimer↑ (sensitive but nonspecific); troponin↑ in submassive (RV strain) | conditional |
 | Imaging | CXR: cardiomegaly, cephalization, Kerley B lines, effusions; bedside US: B-lines, dilated IVC | CXR usually normal or oligemia (Westermark); CTPA: clot in PA; bedside US: RV dilation, McConnell sign, dilated IVC if hemodynamically compromised | discriminator (if obtained) |
-| Treatment response | rapid improvement with diuretics, NIPPV | no improvement with diuretics; improvement with anticoagulation, possible thrombolysis | discriminator |
+| Treatment response | rapid improvement with diuretics, NIPPV | no improvement with diuretics; improvement with anticoagulation, possible thrombolysis | discriminator (post-hoc — not counted at presentation) |
 
 False-discriminator catches:
 - "Tachycardia" — both have it; cannot discriminate.
@@ -247,7 +247,7 @@ Grade: correct.
 Grade: correct.
 
 >>> SUMMARY
-Discriminating rows: 6/9 (with 3 conditional that flip in specific populations).
+Discriminating rows at presentation: 5/8 (with 3 conditional that flip in specific populations); treatment response reported separately as a post-hoc swing.
 False discriminators caught: 2 (tachycardia, elevated BNP; crackles were confirmed a real discriminator, not a catch).
 Most-missed swing: clear lungs + severe dyspnea as a positive PE signal (learners often expect lung findings in every dyspnea).
 Restudy: 10 vignettes of acute dyspnea where lungs are clear — train the reflex "clear lungs + severe dyspnea = PE / cardiac shunt / pneumothorax / metabolic acidosis until proven otherwise."

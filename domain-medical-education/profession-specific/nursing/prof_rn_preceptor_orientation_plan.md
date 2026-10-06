@@ -212,7 +212,7 @@ Orientee: [responsibilities — self-disclosure of difficulties, completion of a
 >>> WEEK-BY-WEEK TABLE
 
 | Wk | Caseload | Ratio | Competencies introduced | Obs | Performance | Didactic | Artifact | Gate? |
-| 1 | 0 (shadow) | 1:1 shadow | unit/EHR orientation, IV pumps, central lines, A-lines, code cart | 2 codes (any role) | 0 | 8h orientation; 4h code-blue overview | Reflection ×3 | — |
+| 1 | 0 (shadow) | 1:1 shadow | unit/EHR orientation, IV pumps, central lines, A-lines, code cart | 2 codes (any role) if available — census-dependent; educator substitutes mock code / code-blue sim | 0 | 8h orientation; 4h code-blue overview | Reflection ×3 | — |
 | 2 | 1 (low acuity) | 1:1 | foley/NGT/wound care, basic vent setting interpretation, sedation scales (RASS, CPOT) | 1 vent setup, 2 admissions | 1 admission with preceptor co-doc | 4h: vent fundamentals | Med-pass observation ×3 | Gate 1: end of wk 2 |
 | 3–4 | 1 (medium) | 1:1 | low-dose vasopressor monitoring (no titration yet), paralytic safety, ABG interpretation | 2 vent management shifts | 2 admissions independent doc, 1 vasopressor monitoring | 4h: hemodynamics | Vent management worksheet | — |
 | 5–6 | 1 (high acuity) OR 2 (low) | 1:1 | vasopressor titration with preceptor verification, ICP basics, sedation titration | 1 CRRT setup observation, 1 ICP setup | 2 vasopressor titrations under direct supervision | 4h: vasoactive lecture; 2h sim | Sim debrief | Gate 2: end of wk 6 |
@@ -233,7 +233,7 @@ Orientee: [responsibilities — self-disclosure of difficulties, completion of a
 >>> GATE 3 (end of week 10) — Go criteria
 
   • Manages 2-patient assignment with appropriate handoff
-  • Independently titrates one vasoactive infusion within preceptor verification at start
+  • Has completed the 2 vasopressor titrations under direct supervision scheduled in weeks 5–6 (independent titration is not gated here — independent sign-off needs ≥ 3 successful performances)
   • Has performed at least one EOL withdrawal under direct supervision
   • Has participated in 1 code as primary RN role
   • Verbalizes plan for any unstable patient using SBAR within 5 min of escalation
