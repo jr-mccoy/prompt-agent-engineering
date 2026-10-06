@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, DS-06, ED-02, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_solo_monthly_growth_review.md
   - pacu_cert_weak_area_self_diagnostic.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Annual Competency Refresh Planner — Keep Low-Frequency, High-Risk Skills Sharp
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A personal planning aid, not the facility's mandatory-competency program or a certification of competence. It complements your unit's required skills-day and validation process; it does not replace them, and formal competency sign-off stays with your educator/facility.
 
@@ -88,6 +101,20 @@ Re-rate recency at: [monthly-review feed] | Adjust plan when: [...]
 | `horizon` | 12-month default, or a 6-month intensive for a big gap |
 | `align` | Weight the calendar around known facility skills-days |
 | `scope` | Add facility-specific rare events beyond the standard high-risk set |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill `Last practiced:` with an estimate the learner didn't give; an unknown recency ranks as fully decayed rather than being guessed.
+- Put a facility skills-day or mock-code date on the calendar that isn't in `facility_events` — leave the quarter marked "align when date known".
+- Count watching or documenting someone else's MH call or code as a rehearsal of *your* role; recency means you performed or rehearsed the role yourself.
+- Quote a skill-decay interval ("skills fade after N months") as fact; any decay figure needs a named source or `[VERIFY: source]`.
+
+✅ **DO:**
+- Verify the calendar by listing each inventory item with the quarters it appears in and counting the months between consecutive touches, including the wrap from Q4 to next year's Q1; an item touched once a year with no checkpoint re-rate is a gap.
+- Re-derive the PRIORITY order from the INVENTORY's Risk and Decay columns — at equal risk, no item with higher decay may sit below one with lower decay.
+- Confirm every ROUTING target is a filename that exists in the library or toolkit, not a plausible-sounding one.
+- Mark which items the facility formally validates, so the personal plan is never read as competency evidence.
 
 ## Verification Checklist
 

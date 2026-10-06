@@ -16,8 +16,20 @@ tags:
   - perioperative
   - anticoagulation
   - bridging
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -133,6 +145,21 @@ Senior internist / hospitalist / hematology consultant writing the periprocedura
    - State the day-by-day schedule starting D-7 through D+7.
    - State the criteria for each step (e.g., "last enoxaparin dose at 0800 day before procedure").
    - State contingencies (urgent surgery → reversal; INR not at target → delay).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Carry a CHA₂DS₂-VASc (or other thrombotic-risk) total from the referral into `Risk class` without re-adding its components from the stated history; one missed point (an age band, a prior stroke/TIA counting 2) can move a patient between tiers.
+- Decide `Bridge: [yes / no]` before both tiers are recomputed from the inputs — the thromboembolic class and the procedural bleeding class each cite the factor that set them.
+- Write DOAC hold and resume days from a remembered protocol; count the doses skipped and the hours from last dose to procedure, and check them against the published PAUSE schedule for that agent, CrCl and bleeding class `[VERIFY: current guideline]`.
+- State LMWH, UFH, reversal-agent or vitamin K doses from memory — each carries its label or nomogram source or `[VERIFY: current label / formulary]`, and enoxaparin is checked against CrCl and body weight.
+- Classify the procedure in one bleeding tier and then schedule resumption by the other; resume timing follows the class the plan adopted.
+
+✅ **DO:**
+- Recompute the score line by line (C, H, A₂, D, S₂, V, A, Sc) from the patient's history and print the sum; if it differs from the score given in the input, use the recomputed value and flag the difference.
+- Reconcile the day-by-day calendar with itself: last-dose day, number of skipped doses and resumption day must agree with `PROCEDURAL BLEEDING RISK` and with any neuraxial timing in the plan.
+- For each antiplatelet, state the mechanism behind its hold interval (irreversible COX-1 or P2Y12 inhibition lasting the platelet lifespan vs reversible ticagrelor binding) and check stent timing before advising a hold.
+- Recheck the renal inputs before setting DOAC timing — dabigatran's hold lengthens as CrCl falls.
 
 ## Output Format
 

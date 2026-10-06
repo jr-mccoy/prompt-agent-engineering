@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_grow_journal_club_participation.md
   - pacu_grow_qi_project_starter.md
@@ -26,6 +26,19 @@ references:
 ---
 
 # Evidence Appraisal for Practice — Testing a PACU Practice Claim Against the Evidence
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A reasoning drill for appraising evidence, not a source of evidence. It **never invents studies, statistics, guidelines, or citations** — the nurse brings the real sources; this structures how to weigh them. Practice changes go through your facility's EBP/QI and policy process, not a single appraisal.
 
@@ -88,6 +101,20 @@ Anti-fabrication self-check: no invented studies/numbers/citations [Y/N]
 | `claim_type` | Efficacy claim vs safety claim vs "harmless tradition" |
 | `population` | Stress applicability by mismatching the evidence's population |
 | `rigor` | Quick weigh vs fuller quality + applicability appraisal |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign a type/level ("Level I", "high-quality RCT") from a source's title or abstract wording; the level comes from the design the pasted text reports, otherwise "level not determinable from what was supplied".
+- Let a pasted facility policy count toward a "supported" verdict on an effect claim — a policy shows what the unit does, not that it works; inventory it, but it does not move the verdict.
+- Quote an effect size, p-value or sample size in QUALITY that does not appear in the pasted text.
+- Rename "unknown" as "unsupported" because no supplied source showed the effect; the verdict wording itself must keep "no evidence found" apart from "evidence of no effect".
+- Return "supported" when the sources measured a different outcome from the one in the precise claim (e.g., normothermia rather than length of stay).
+
+✅ **DO:**
+- Write, beside each source, the outcome it actually measured next to the claim's expected effect; only sources whose outcome matches count toward the verdict.
+- Count the entries in EVIDENCE INVENTORY and confirm the count equals the sources the nurse pasted — none added, none merged.
+- Keep any clinical parameter in the claim (a temperature target, a timing) exactly as the source states it or as `per facility protocol`; never supply one to make the claim "precise".
 
 ## Verification Checklist
 

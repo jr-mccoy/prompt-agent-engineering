@@ -17,8 +17,20 @@ tags:
   - aminoglycoside
   - nephrotoxicity
   - dosing
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -107,6 +119,20 @@ Senior infectious disease pharmacist / physician writing the aminoglycoside orde
 
 9. **Verify and write.**
    - Show dose calculation, level draw times, target ranges, monitoring schedule, duration with reassessment trigger.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Give a CrCl without the weight that went into Cockcroft-Gault — the q24h/q36h/q48h interval depends on it, and actual vs ideal vs adjusted weight can move a patient across a bracket.
+- Take level targets or nomogram interval bands (Hartford zones, traditional peak/trough) from memory; use the institution's nomogram or the cited reference, or mark `[VERIFY: current label / institutional nomogram]`.
+- Interpret a level with no recorded draw time relative to the start of the infusion; an untimed "random" level cannot be placed on a nomogram.
+- Write an extended-interval order for a group Step 1 routes elsewhere (CrCl <20, burns, ascites, pregnancy) just because the weight-based arithmetic still yields a number.
+- List concomitant nephrotoxins without the mechanism that makes them matter (additive proximal-tubule injury with vancomycin, additive ototoxicity with loop diuretics, potentiated neuromuscular blockade).
+
+✅ **DO:**
+- Recompute IBW, AdjBW, the ABW > 1.2 × IBW obesity test, the mg dose and the rounded dose from the input height and weights, showing each line so a pharmacist can re-run it.
+- Recompute CrCl from age, SCr, sex and the stated weight, then confirm the chosen interval matches that bracket.
+- Check the synergy dose, peak/trough targets and duration for endocarditis against the current AHA/ESC endocarditis guideline `[VERIFY: current guideline]`; synergy targets are not the gram-negative targets.
 
 ## Output Format
 

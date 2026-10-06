@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_grow_evidence_appraisal_for_practice.md
   - pacu_grow_qi_project_starter.md
@@ -27,6 +27,19 @@ references:
 ---
 
 # Journal Club Participation — Prepare for and Get Value from PACU Journal Club
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A preparation aid for the participant, not a substitute for reading the actual article or for facilitator design (that's the toolkit's journal-club facilitator). It structures *your own prep and participation* around the real paper in front of you — it does not summarize or invent any study's findings.
 
@@ -83,6 +96,20 @@ Anti-fabrication self-check: everything traces to the paper [Y/N]
 | `focus` | `appraisal` builds critique muscle; `practice-relevance` builds the so-what |
 | `role` | Light co-facilitation adds a couple of discussion-steering prompts (design → toolkit) |
 | `depth` | Quick prep vs fuller appraisal notes |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the CORE slots (question / what they did / what they reported) with what a study of that title usually finds; if the nurse has not pasted or described the article, the slots stay as prompts for the nurse to complete.
+- Call the paper "randomized", "blinded" or "adequately powered" under STRENGTHS unless the nurse's text says so — those are the words that make a participant-level critique look rigorous.
+- Write sharp questions that fit any paper ("Was the sample big enough?"); each question names a feature of this article.
+- Turn a regimen studied in the article (e.g., a PONV prophylaxis combination) into a drug or dose recommendation for the unit.
+- Mark "everything traces to the paper [Y]" before CORE and STRENGTHS & LIMITATIONS have been checked against the nurse's input.
+
+✅ **DO:**
+- Before the self-check, go line by line through CORE and STRENGTHS & LIMITATIONS and tag each claim as from the nurse's input or as a prompt for them; remove any claim that has neither tag.
+- State the transfer gap concretely by comparing the article's population and setting, as the nurse reports them, with the nurse's PACU (inpatient vs ambulatory, adult vs pediatric, Phase I vs Phase II).
+- Keep the practice-relevance verdict at "discuss, or pilot through QI" when a single paper is all there is.
 
 ## Verification Checklist
 

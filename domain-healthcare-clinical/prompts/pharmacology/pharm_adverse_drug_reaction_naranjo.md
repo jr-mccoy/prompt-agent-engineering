@@ -15,8 +15,20 @@ tags:
   - allergy
   - safety
   - naranjo
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -104,6 +116,20 @@ Senior clinical pharmacist / allergist / internist evaluating the ADR and writin
    - Same class allowed for Type A / pharmacologic effect with dose adjustment if no better option.
    - Cross-reactivity check.
    - Patient counseling on documented allergy and reaction; carry MedicAlert.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Score items 3 or 5 as if de-challenge had already worked or the alternative-cause workup were negative; a pending answer scores 0 ("Unknown"), the TOTAL is reported as provisional, and the score it would reach on each pending result is stated separately.
+- Score item 1 ("previous conclusive reports") +1 from recall; name the source type (label, case series, pharmacovigilance database) or score it Unknown.
+- Report a TOTAL without re-adding the ten item scores and checking it lies within −4 to +13.
+- Assign a Gell-Coombs type or a named syndrome from the rash pattern while ignoring a latency that does not fit the expected window; state the mismatch rather than smoothing it over.
+- Give the alternative agent a dose and duration from memory — it carries the source or `[VERIFY: current label / formulary]` and is checked against renal and hepatic function, age and pregnancy status.
+
+✅ **DO:**
+- Print each item's answer (Yes / No / Unknown) beside its points so a reviewer can re-score, and recompute the sum before mapping it to Definite / Probable / Possible / Doubtful.
+- Give the structural basis for each cross-reactivity statement (shared R1 side chain, sulfonylarylamine group, ester vs amide linkage) instead of "cross-reactive" alone.
+- Before naming the reaction type, list the alternative causes in the input and the result that would rule each one out.
 
 ## Output Format
 

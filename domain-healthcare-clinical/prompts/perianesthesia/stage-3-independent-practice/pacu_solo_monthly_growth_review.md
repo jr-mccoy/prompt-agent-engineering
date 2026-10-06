@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, DS-06, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_solo_new_pattern_capture_log.md
   - pacu_solo_near_miss_good_catch_reflection.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Monthly Growth Review — Patterns Mastered, Gaps Remaining, Next Focus
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A self-reflection aid, not a performance evaluation or a substitute for facility competency assessment. It's *your* running read of your own growth; formal competency validation belongs to your educator and facility process.
 
@@ -84,6 +97,20 @@ Focus: [...] | Practice action: [...] | Feeds into: [deck / annual refresh / dri
 | `cadence` | Run monthly, or compress to quarterly with a wider evidence window |
 | `emphasis` | Weight toward silent-decay scan vs. mastery consolidation |
 | `link` | Auto-route the focus into the cert deck or refresh planner |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept an EVIDENCED MASTERY instance in which a preceptor, charge nurse, or provider led the response — mastery evidence is independent handling.
+- Build SILENT DECAY WATCH from whatever high-risk domains come to mind; it is the high-risk domains in `domains` that have zero entries in `month_evidence`.
+- Record `Happened? Y` for the prior focus on say-so; Y needs a dated instance from this month's evidence.
+- Pack a second practice action into ONE NEXT-MONTH FOCUS (e.g., a rhythm drill *plus* a LAST refresh) — the extra item goes to the refresh planner.
+- Describe a case with enough detail (date, rare procedure, bay) to identify the patient.
+
+✅ **DO:**
+- Tally `month_evidence` by domain before drafting: every mastery claim points to a counted item, and the silent-decay list equals the high-risk domains whose count is 0; recount after drafting.
+- Label each mastery claim by evidence type (capture / good-catch / question-log / case) so a claim backed only by a question-log answer reads as knowledge, not performance.
+- Keep the review's verdicts as self-observations; nothing here certifies a competency.
 
 ## Verification Checklist
 

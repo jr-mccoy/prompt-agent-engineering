@@ -13,7 +13,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, DS-06, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_grow_charge_resource_nurse_readiness.md
   - pacu_grow_becoming_preceptor_self_prep.md
@@ -27,6 +27,19 @@ references:
 ---
 
 # Professional Development Plan — A 12-Month Growth Plan (Cert, Role, Scholarship, Wellness)
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A self-planning aid, not a career mandate or a substitute for your facility's clinical-ladder / performance process. It structures *your own* 12-month growth intentions; formal advancement, certification eligibility, and role appointments follow your facility's and the certifying body's real processes.
 
@@ -89,6 +102,20 @@ Biggest over-commitment risk: [...] → guard: [...]
 | `horizon` | 12-month vs a lighter 6-month plan |
 | `life_load` | Tighter constraints force fewer, better-sequenced goals |
 | `link` | Auto-tie checkpoints to the monthly growth review |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- State certification eligibility requirements (direct-care hours, years of practice, CE credits), exam windows, fees or recertification cycles from memory; they enter the plan as "per certifying body (pasted)" or as a Q1 action to look them up.
+- Assume which credential fits — CPAN or CAPA depends on the nurse's practice phase and qualifying hours, so take it from `current_state` / `aspirations` or flag the choice itself as a Q1 check.
+- Accept an "evidence of done" that no one else could observe ("feel more confident", "be a better preceptor").
+- Write a wellness goal with no hold condition, or a scale-back trigger whose first cut is the wellness goal.
+- Place two stretch goals (an exam sitting and a first solo precept) in one quarter and still tick "sequenced so they don't collide".
+
+✅ **DO:**
+- List the goals landing in each of Q1–Q4 and check no quarter carries more than one stretch goal under the stated `constraints`.
+- Check that every "evidence of done" can be confirmed by a document, a date or an observed event.
+- Name the goal the scale-back trigger drops first and confirm it is not on the wellness axis.
 
 ## Verification Checklist
 

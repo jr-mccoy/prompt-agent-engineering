@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_cert_capa_cpan_readiness_bridge.md
   - pacu_cert_spaced_repetition_deck_builder.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # Weak-Area Self-Diagnostic — Find Your Soft Domains Before Certification Study
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A self-diagnostic study aid, not an official assessment or the certification blueprint itself. Blueprint domains and weights are **learner-pasted from ABPANC**; this tool maps *your* confidence and evidence against them, it does not define them.
 
@@ -82,6 +95,20 @@ For item-level depth: pacu_capa_cpan_weak_area_diagnostic.md (toolkit)
 | `probe` | On for an honest test; off for a fast gut-scan |
 | `rank_by` | Weakness only, or weakness × blueprint weight (default) |
 | `depth` | Quick scan vs full per-domain evidence + probe |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill a `Weight:` cell with a remembered or "typical" CAPA/CPAN domain percentage when the learner pasted none — write `[not pasted — pull from ABPANC]` and rank that run by weakness alone.
+- State eligibility hours, item counts, the passing standard, or recertification requirements as fact; every certification fact is `[VERIFY: current ABPANC]`.
+- Write a self-probe whose answer is a dose, cut-off, or score — probe recognition, sequence, or escalation so PASS/FAIL can be judged without supplying a number.
+- Mark a probe PASS because the answer used the right vocabulary ("rising block", "re-sedation") while missing the discriminating step the probe asked for.
+- Count precepted or orientation-era instances as evidence for an `independent` token; the evidence's independence level must match the confidence claimed.
+
+✅ **DO:**
+- Recompute RANKED TARGETS from the PER DOMAIN rows before handing off: every high-weight unfamiliar/rusty domain must sit above every lower-weight one, and a partial probe fail on a confident domain belongs in HIDDEN WEAK AREAS.
+- Tag each probe's model answer with the source the learner checked it against (ASPAN Standards, a *Drain's* chapter title, facility policy) or `[unverified]`.
+- Read a "solid" label as study triage only — never as a readiness or pass-likelihood prediction.
 
 ## Verification Checklist
 

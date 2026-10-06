@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, RT-02, DS-06, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_adv_malignant_hyperthermia_recognition.md
   - pacu_adv_hemodynamic_instability_reasoning.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Code / RRT Participation Growth — From Participant to Confident Team Member
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A rehearsal aid, not live resuscitation guidance. Algorithms, doses, and role assignments are **per current facility protocol and resuscitation guidelines** (learner-pasted). This rehearses *growing into a confident code/RRT role* — the resuscitation is team- and provider-led.
 
@@ -92,6 +105,21 @@ One growth step: [...]
 | `event_type` | Vary the peri-arrest picture (respiratory vs rhythm vs peri-code) |
 | `team_size` | Thin early-response team vs full code team changes role demands |
 | `rotation` | Add a mid-event role handoff to train clean transitions |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill a bracketed slot such as `[rate per protocol]`, a rhythm-check interval or a compression/ventilation ratio with a remembered guideline number because the closed-loop line reads oddly without one — the call-out and the check-back keep `per facility protocol`.
+- Tick "Used facility protocol not invented [Y]" when `facility_protocol` was never pasted; the honest header is "algorithm pasted: no", and the role list then stays generic.
+- Echo a drug with an amount in the check-back ("epi 1 mg in") — even repeated from the leader, a number in the transcript is a dose this toolkit has now stated; write "[drug] per order, in".
+- List pushing meds or running the defibrillator under ROLES I CAN FILL unless the pasted role sheet assigns that task to the PACU RN; scope comes from the facility's role assignment, not from what nurses commonly do.
+- Score "Anticipated next need [Y]" when the leader called that item before the learner named it.
+
+✅ **DO:**
+- Before scoring, scan the whole output for any digit attached to a drug, energy, rate, ratio or time interval; each must trace to the learner's pasted protocol or become `per provider order` / `per facility protocol`.
+- Confirm the closed loop has three separate utterances by named roles (leader → nurse → confirmation); one line that paraphrases the order is not closed-loop.
+- Send an `event_type` of LAST to its own rehearsal rather than adapting this one.
+- Make the growth step cite the SCORE item that came out N in this run, not a general resuscitation tip.
 
 ## Verification Checklist
 

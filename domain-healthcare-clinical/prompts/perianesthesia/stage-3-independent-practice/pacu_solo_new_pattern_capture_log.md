@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, DS-06, ED-02, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_solo_near_miss_good_catch_reflection.md
   - pacu_solo_personal_reference_builder.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # New-Pattern Capture Log — Turn "I Saw Something New" Into a Stored Recognition Script
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study-system aid, not live clinical decision support. In the moment, act within scope and escalate by role; this tool processes what you saw *afterward*, once the patient is safe and the shift is done.
 
@@ -91,6 +104,19 @@ Add to personal reference under: [domain/tag] | Spaced-review track: [...]
 | `depth` | Quick single-cue capture vs full 5-slot script |
 | `verify_strict` | Force every mechanism claim to be verified-or-flagged (anti-fabrication) |
 | `batch` | Process several shifts' captures into one review, deduping against existing scripts |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the Mechanism slot with the textbook explanation because the cue set "fits" — in the worked example, hematoma vs laryngeal edema stays TO VERIFY until a provider or reference confirms it.
+- Invent a separating cue to reach "≥2 mimics"; a mimic with no observed or verified discriminator goes into VERIFICATION GAPS as an open question.
+- Write a number into `Reassess-in: [X]` or present one patient's timing ("~30 min") as the pattern's typical onset — the interval is `per facility protocol` and the timing is labeled as a single observation.
+- Generalize one capture into a rule ("voice change after neck surgery = hematoma"); a single case is an unconfirmed script until it recurs or is verified.
+
+✅ **DO:**
+- Tag every line of the STORED SCRIPT as `observed` (from `observation`/`outcome`), `verified` (from `verified_facts`, source named), or `TO VERIFY`, then count untagged lines — the count must be zero before filing.
+- Check each discriminator against the earliest-cue standard: if the separating cue only appears after desaturation or collapse, rewrite it or flag it.
+- Search the personal reference for an existing script on the same pattern and merge instead of filing a duplicate.
 
 ## Verification Checklist
 

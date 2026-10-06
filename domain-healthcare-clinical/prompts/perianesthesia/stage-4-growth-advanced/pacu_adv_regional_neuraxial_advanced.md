@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_adv_difficult_airway_recovery.md
   - pacu_adv_hemodynamic_instability_reasoning.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Advanced Regional & Neuraxial Assessment — Rising Blocks, Red Flags & Motor/Sensory Return
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** An assessment-reasoning drill, not live clinical decision support. Block-level thresholds, monitoring intervals, and protocols are **per facility** (learner-pasted). This trains *advanced block surveillance and red-flag recognition* — the block and its complications are managed by the provider.
 
@@ -92,6 +105,19 @@ One coaching point: [...]
 | `block_type` | Neuraxial vs peripheral changes the red-flag set |
 | `deviation` | Inject a rising level or delayed/asymmetric return to train the catch |
 | `mimic_pressure` | Make residual NMB vs rising spinal genuinely ambiguous |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call a level "climbing" or "receding" from readings taken with different modalities (cold, pinprick, light touch) or on different sides — the apparent trend may be a measurement artifact.
+- Write a dermatome level, monitoring interval, or block duration the case didn't supply; levels come from the case and intervals are `per facility protocol`.
+- Attribute a new or worsening deficit to "a prolonged normal block" without the expected duration from the provider; until that is known, it is a hematoma red flag to escalate.
+- Reuse the neuraxial rising-level and hematoma list for a peripheral block; take the red flags for that block type from the pasted protocol.
+
+✅ **DO:**
+- Verify the trend claim by laying the serial readings out as rows (time, level, side, modality, motor, BP/HR); "rising" or "receding" needs ≥2 comparable rows, and the direction is recomputed from them.
+- Compare motor/sensory return against the documented pre-block neuro baseline, not against "usual"; asymmetry is judged side to side at the same time point.
+- Name the block's owner (the anesthesia provider) by role in DECISION, separately from any rapid-response pathway.
 
 ## Verification Checklist
 

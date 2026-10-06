@@ -2,6 +2,12 @@
 title: "Renal & Hepatic Medication Dose Adjustment Advisor"
 category: medicine
 description: "Structured reasoning for dose adjustment in renal impairment, AKI, dialysis, and hepatic dysfunction — applying PK principles, drug-specific references, and monitoring plans."
+techniques:
+  - ST-02
+  - RT-02
+  - CM-02
+  - ST-03
+  - QA-01
 tags:
   - medicine
   - pharmacology
@@ -9,7 +15,7 @@ tags:
   - hepatic-dosing
   - dialysis
   - clinical-pharmacy
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/medicine_medication_reconciliation.md
   - domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md
@@ -17,6 +23,18 @@ related_prompts:
 ---
 
 # Renal & Hepatic Medication Dose Adjustment Advisor
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Support clinicians adjusting medication doses in patients with renal impairment, acute kidney injury, dialysis (intermittent HD, CRRT, PD), or hepatic dysfunction — integrating pharmacokinetic principles, drug-specific references, and monitoring to minimize toxicity without under-dosing.
 
@@ -230,6 +248,22 @@ SAFETY CHECKLIST
 **Hypoalbuminemia:** Increases free fraction of highly protein-bound drugs (phenytoin, warfarin) — interpret total levels with free fraction in mind.
 
 **Acute liver failure:** Differs from chronic cirrhosis — transaminases alone do not capture function; INR and bilirubin are more meaningful.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report `CrCl by Cockcroft-Gault = [value]` without its inputs (age, weight used, sex factor, SCr); a CrCl nobody can recompute is not usable for dosing.
+- Fill `Adjusted dose` or `Renal elimination: [% — source]` from memory; both come from the cited package insert or reference, or carry `[VERIFY: current label / formulary]`.
+- Present a Child-Pugh class computed from fewer than its five components (bilirubin, albumin, INR, ascites, encephalopathy).
+- Dose from a single SCr in AKI as though it were steady state; label that CrCl as non-steady and frame the dose as provisional.
+- Skip age (Cockcroft-Gault overestimates in low muscle mass) or pregnancy (raised GFR and volume of distribution) when the inputs flag them.
+
+✅ **DO:**
+- Recompute CrCl with each weight the obesity rule could select (actual, ideal, adjusted) and state which label bracket each result falls in; if they straddle a bracket, say so.
+- Count rows in MEDICATION-BY-MEDICATION ASSESSMENT against the input medication list — every drug gets a row, including "no adjustment needed".
+- For iHD, CRRT or PD, cite a modality-specific reference for each dialyzable drug; "dialyzable" without the modality is not an assessment.
 
 ---
 

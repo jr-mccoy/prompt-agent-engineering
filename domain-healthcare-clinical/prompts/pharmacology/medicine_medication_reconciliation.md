@@ -2,13 +2,19 @@
 title: "Medication Reconciliation Framework"
 category: medicine
 description: "Structured medication reconciliation across care transitions — admission, transfer, discharge — with explicit resolution of each discrepancy and a patient-facing medication list."
+techniques:
+  - ST-02
+  - DT-05
+  - RP-02
+  - CM-02
+  - QA-01
 tags:
   - medicine
   - medication-reconciliation
   - care-transitions
   - patient-safety
   - pharmacy
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md
   - domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md
@@ -16,6 +22,18 @@ related_prompts:
 ---
 
 # Medication Reconciliation Framework
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Support thorough medication reconciliation at transitions of care (admission, transfer, discharge) — building an accurate best possible medication history (BPMH), identifying each intentional and unintentional discrepancy, resolving them, and producing a patient-facing medication list the patient can use.
 
@@ -281,6 +299,22 @@ SAFETY CHECKLIST
 **Specialty medications / biologics:** Specialty pharmacy as source; long lead times; cost and prior-auth complexity.
 
 **PRN medications:** Ask actual frequency of use, not "as needed." "As needed" acetaminophen used 4g/day is a clinical issue.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill `Dose` and `Freq` in the reconciled table with standard doses when the BPMH sources disagree or are silent; record each source's value and leave the row unresolved until the authoritative source is named.
+- Mark a discrepancy resolved because a reason was written — `Owner: [who confirmed]` names the role that actually confirmed it, or the discrepancy stays open.
+- Tick "≥2 independent BPMH sources" when the second source is a printout of the EMR home list.
+- Leave an allergy, a held anticoagulant's restart trigger or a pending prior-auth off the patient-facing list because it is not an active medication.
+- Enter `Drug interactions flagged` with a severity and no mechanism ("opioid + gabapentinoid — major"); name the pathway (additive CNS/respiratory depression, serotonergic, QT prolongation, CYP inhibition).
+
+✅ **DO:**
+- Count medications: every BPMH entry appears exactly once across continue / changed / held / discontinued / new; a mismatch in the count means a silent omission.
+- Check each final dose against the supplied renal and hepatic function, age, weight and pregnancy/lactation status; adjustments cite the label or carry `[VERIFY: current label / formulary]`.
+- Compare the patient-facing list line by line with the clinician table so that a STOP or HOLD in one is never a CONTINUE in the other.
 
 ---
 

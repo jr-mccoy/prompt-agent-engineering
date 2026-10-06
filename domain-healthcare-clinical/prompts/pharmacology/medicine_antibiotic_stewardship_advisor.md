@@ -19,10 +19,22 @@ related_prompts:
   - medicine_drug_interaction_checker
   - medicine_clinical_decision_support
   - medicine_literature_synthesizer
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Antibiotic Stewardship Advisor
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide antimicrobial stewardship decision support including empiric antibiotic selection based on suspected source and patient factors, de-escalation guidance when culture results return, duration-of-therapy optimization, IV-to-PO conversion criteria, allergy assessment, and antibiogram interpretation to promote appropriate antibiotic use and combat antimicrobial resistance.
 
@@ -380,6 +392,23 @@ PROCALCITONIN-GUIDED DURATION:
   - PCT decrease > 80% from peak: Consider stopping
   - Recheck every 48-72 hours
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Copy a dose and interval from the Step 2 tables into `Agent(s): [Drug, dose, route, frequency]` as if verified; each regimen in the output names the label or guideline it was checked against, or carries `[VERIFY: current label / formulary]` — the tables are a reasoning aid, not the label.
+- Write "N/A" in `Renal adjustment` when the input gives a CrCl/GFR or a dialysis modality, and don't call a regimen appropriate before checking hepatic impairment, age and pregnancy against it (fluoroquinolones, tetracyclines, TMP-SMX near term).
+- Fill `MRSA / Pseudomonas / ESBL risk: [Low/High]` from the infection type alone; every "High" cites the risk-factor checkbox or prior culture that set it.
+- Tick "Drug interaction concern" with a severity label and no mechanism ("major with warfarin"); name the mechanism (CYP2C9 inhibition by sulfamethoxazole, additive QT prolongation, chelation of oral fluoroquinolones by polyvalent cations) or leave the alert unticked.
+- Present a resistance rate as "local" when the input says `Local Antibiogram Available: No`; regional or national figures are labelled as such.
+
+✅ **DO:**
+- Reconcile each recommended agent with the allergy input: state the reaction type supplied and the cross-reactivity basis used; an unknown reaction type is reported as unknown, not treated as low risk.
+- Recompute total duration from the start date in `Current Antibiotics` (days given + days planned) and compare it with the Step 6 duration for the stated source.
+- Tie every de-escalation target to a named organism and its reported S/I/R; while cultures are pending, write the target as conditional.
+- Read procalcitonin and other labs with the reporting lab's units and reference range before applying a Step 1 or Step 6 cut-off.
 
 ---
 

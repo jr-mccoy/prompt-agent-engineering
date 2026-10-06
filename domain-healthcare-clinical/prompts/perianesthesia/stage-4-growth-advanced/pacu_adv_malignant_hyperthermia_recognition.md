@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, RT-02, RT-05, DS-06, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_adv_high_acuity_recovery_reasoning.md
   - pacu_adv_difficult_airway_recovery.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Malignant Hyperthermia — Recognition & the Nurse's Role in the MH Response
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** An emergency rehearsal, not live clinical decision support. Dantrolene reconstitution/dosing, cooling protocol, and thresholds are **per your facility MH protocol and MH cart** (learner-pasted). This rehearses *recognition and the nurse's role* — the resuscitation is provider-led.
 
@@ -90,6 +103,19 @@ One coaching point: [...]
 | `trigger_history` | Known vs unknown susceptibility changes index of suspicion |
 | `mimic_pressure` | Foreground sepsis or thyroid storm to train the discriminator |
 | `staffing` | Solo-first-responder vs full-team to stress the many-hands reality |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- State a dantrolene vial count, reconstitution volume, dose, cooling target, or ETCO2 value, even as "typical" — dantrolene formulations reconstitute differently, so steps come from the pasted protocol and the cart's own product instructions.
+- Write the MHAUS hotline number from memory; it comes from the pasted facility protocol or carries `[VERIFY: MHAUS]`.
+- Record a mimic as "ruled against" without naming the cue or history that moved it (e.g., thyroid storm — no history given, not "unlikely").
+- Exclude MH because the intraoperative course was uneventful; the rehearsal assumes it can still declare itself in recovery.
+
+✅ **DO:**
+- Check the timeline in PARALLEL FIRST MOVES: activating the MH response and dispatching someone for the cart happen in the same step, assigned to different roles; one person doing both in sequence scores N.
+- Verify each SUPPORT IN SCOPE action against the order in the pasted MH protocol; with no protocol pasted, state that the rehearsal is incomplete rather than supplying a sequence.
+- Confirm that every verb in SUPPORT IN SCOPE is a nursing assist (retrieve, reconstitute per protocol, apply cooling per protocol, monitor), with ordering left to the provider.
 
 ## Verification Checklist
 

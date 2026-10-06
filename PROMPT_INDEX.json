@@ -82811,7 +82811,7 @@
         "naranjo"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82839,7 +82839,7 @@
         "dosing"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83260,7 +83260,7 @@
         "bridging"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -85770,7 +85770,7 @@
         "antimicrobial-resistance"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_drug_interaction_checker",
         "medicine_clinical_decision_support",
@@ -85785,7 +85785,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured reasoning for anticoagulation initiation, agent selection, duration, and periprocedural management across atrial fibrillation, VTE, and mechanical valve indications.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "DS-02",
+        "CM-02",
+        "ST-03",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "cardiology",
@@ -85795,7 +85801,7 @@
         "VTE"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
         "domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md",
@@ -86046,7 +86052,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured support for titrating the four pillars of HFrEF therapy (ARNI/ACEi/ARB, beta blocker, MRA, SGLT2i) with attention to barriers, hemodynamics, and patient factors.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "DT-05",
+        "DS-06",
+        "CM-02",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "cardiology",
@@ -86055,7 +86067,7 @@
         "titration"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
         "domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md",
@@ -86207,7 +86219,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured medication reconciliation across care transitions — admission, transfer, discharge — with explicit resolution of each discrepancy and a patient-facing medication list.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "DT-05",
+        "RP-02",
+        "CM-02",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "medication-reconciliation",
@@ -86216,7 +86234,7 @@
         "pharmacy"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md",
         "domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md",
@@ -86584,7 +86602,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured reasoning for dose adjustment in renal impairment, AKI, dialysis, and hepatic dysfunction — applying PK principles, drug-specific references, and monitoring plans.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "ST-03",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "pharmacology",
@@ -86594,7 +86618,7 @@
         "clinical-pharmacy"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_medication_reconciliation.md",
         "domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md",
@@ -88685,7 +88709,7 @@
       "title": "Annual Competency Refresh Planner — Keep Low-Frequency, High-Risk Skills Sharp",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-3-independent-practice",
-      "description": "> Boundary: A personal planning aid, not the facility's mandatory-competency program or a certification of competence. It complements your unit's required skills-day and validation process; it does not replace them, and formal competency sign-off stays with your educator/facility.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "DS-06",
@@ -88705,7 +88729,7 @@
         "planner"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_solo_monthly_growth_review.md",
         "pacu_cert_weak_area_self_diagnostic.md",
@@ -88753,7 +88777,7 @@
       "title": "Monthly Growth Review — Patterns Mastered, Gaps Remaining, Next Focus",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-3-independent-practice",
-      "description": "> Boundary: A self-reflection aid, not a performance evaluation or a substitute for facility competency assessment. It's your running read of your own growth; formal competency validation belongs to your educator and facility process.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -88773,7 +88797,7 @@
         "role"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_solo_new_pattern_capture_log.md",
         "pacu_solo_near_miss_good_catch_reflection.md",
@@ -88788,7 +88812,7 @@
       "title": "Near-Miss / Good-Catch Reflection — Blameless, Learning-First Debrief of Your Own Practice",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-3-independent-practice",
-      "description": "> Boundary: A personal reflection aid, not an incident report, disclosure, or peer-review substitute. Report events through your facility's real safety-reporting channels; this tool helps you learn from what happened, it does not replace required reporting.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -88808,7 +88832,7 @@
         "pacu"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_solo_new_pattern_capture_log.md",
         "pacu_solo_monthly_growth_review.md",
@@ -88822,7 +88846,7 @@
       "title": "New-Pattern Capture Log — Turn 'I Saw Something New' Into a Stored Recognition Script",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-3-independent-practice",
-      "description": "> Boundary: A study-system aid, not live clinical decision support. In the moment, act within scope and escalate by role; this tool processes what you saw afterward, once the patient is safe and the shift is done.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "DS-06",
@@ -88842,7 +88866,7 @@
         "pattern"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_solo_near_miss_good_catch_reflection.md",
         "pacu_solo_personal_reference_builder.md",
@@ -88857,7 +88881,7 @@
       "title": "Personal Reference Builder — Turn Accumulated Notes Into a PACU Quick-Reference You Trust",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-3-independent-practice",
-      "description": "> Boundary: A study/organization aid, not a clinical protocol or a source of truth. Your personal reference never overrides facility policy, orders, or a provider; every clinical value in it stays `per facility / per order` and points back to the authoritative source.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "DS-06",
@@ -88877,7 +88901,7 @@
         "role"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_solo_new_pattern_capture_log.md",
         "pacu_cert_spaced_repetition_deck_builder.md",
@@ -88926,7 +88950,7 @@
       "title": "Weak-Area Self-Diagnostic — Find Your Soft Domains Before Certification Study",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-3-independent-practice",
-      "description": "> Boundary: A self-diagnostic study aid, not an official assessment or the certification blueprint itself. Blueprint domains and weights are learner-pasted from ABPANC; this tool maps your confidence and evidence against them, it does not define them.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -88947,7 +88971,7 @@
         "role"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_cert_capa_cpan_readiness_bridge.md",
         "pacu_cert_spaced_repetition_deck_builder.md",
@@ -88961,7 +88985,7 @@
       "title": "Advanced Regional & Neuraxial Assessment — Rising Blocks, Red Flags & Motor/Sensory Return",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: An assessment-reasoning drill, not live clinical decision support. Block-level thresholds, monitoring intervals, and protocols are per facility (learner-pasted). This trains advanced block surveillance and red-flag recognition — the block and its complications are managed by the provider",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -88983,7 +89007,7 @@
         "regional"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_adv_difficult_airway_recovery.md",
         "pacu_adv_hemodynamic_instability_reasoning.md",
@@ -88997,7 +89021,7 @@
       "title": "Ambulatory Fast-Track Mastery — PADSS Discharge Judgment & Convert-to-Admit Triggers",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A judgment drill, not live clinical decision support. Discharge criteria, PADSS scoring, and fast-track pathways are per facility policy (learner-pasted). This trains discharge-readiness judgment and convert-to-admit recognition — the disposition decision follows facility criteria and th",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -89019,7 +89043,7 @@
         "pacu"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_adv_complex_population_mastery.md",
         "pacu_adv_high_acuity_recovery_reasoning.md",
@@ -89033,7 +89057,7 @@
       "title": "Becoming a Preceptor — Readiness & the Mindset Shift from Doer to Teacher",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A self-preparation aid for the nurse stepping into precepting, not a preceptor certification or a substitute for your facility's preceptor program. The formal preceptor role, its tools, and orientee evaluation belong to the educator toolkit and your unit's process — this readies you to e",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-01",
@@ -89054,7 +89078,7 @@
         "prep"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_grow_teaching_recovery_concept.md",
         "pacu_grow_debrief_junior_after_event.md",
@@ -89068,7 +89092,7 @@
       "title": "Charge / Resource-Nurse Readiness — Self-Assess for Flow, Triage & Staffing Awareness",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A self-assessment aid for a nurse considering a charge/resource role, not a role appointment or a substitute for your facility's charge competency process. Staffing ratios, acuity tools, and assignment authority are per facility — this readies your thinking, it does not confer the role.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -89089,7 +89113,7 @@
         "readiness"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_grow_becoming_preceptor_self_prep.md",
         "pacu_grow_code_rrt_participation_growth.md",
@@ -89103,7 +89127,7 @@
       "title": "Code / RRT Participation Growth — From Participant to Confident Team Member",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A rehearsal aid, not live resuscitation guidance. Algorithms, doses, and role assignments are per current facility protocol and resuscitation guidelines (learner-pasted). This rehearses growing into a confident code/RRT role — the resuscitation is team- and provider-led.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -89124,7 +89148,7 @@
         "participation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_adv_malignant_hyperthermia_recognition.md",
         "pacu_adv_hemodynamic_instability_reasoning.md",
@@ -89138,7 +89162,7 @@
       "title": "Complex-Population Mastery — Synthesizing Peds / Geri / OB / Bariatric / Cardiac Recovery Reasoning",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A synthesis-reasoning drill, not live clinical decision support. Population-specific parameters, weights, and thresholds are per facility/order (learner-pasted). This trains expert-level population reasoning — the clinical content lives in the toolkit's Population-Specialty Library, refe",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -89160,7 +89184,7 @@
         "population"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_adv_high_acuity_recovery_reasoning.md",
         "pacu_adv_hemodynamic_instability_reasoning.md",
@@ -89174,7 +89198,7 @@
       "title": "Debrief a Junior After an Event — Running a Learning Debrief for a Newer Nurse",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A facilitation-rehearsal aid, not an incident review, disclosure, or evaluation. Formal event reporting and competency evaluation go through facility channels and the toolkit's preceptor tools — this rehearses how you run a learning conversation that helps a junior grow.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -89195,7 +89219,7 @@
         "output"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_grow_becoming_preceptor_self_prep.md",
         "pacu_grow_teaching_recovery_concept.md",
@@ -89209,7 +89233,7 @@
       "title": "Difficult-Airway Recovery — Surveillance & Re-Obstruction Risk After a Hard Airway",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A surveillance-reasoning drill, not live clinical decision support. Extubation criteria, airway-cart contents, and thresholds are per your facility protocol (learner-pasted). This rehearses what to watch and when to escalate — the airway is managed by the provider.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -89231,7 +89255,7 @@
         "recovery"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_adv_high_acuity_recovery_reasoning.md",
         "pacu_adv_malignant_hyperthermia_recognition.md",
@@ -89245,7 +89269,7 @@
       "title": "Evidence Appraisal for Practice — Testing a PACU Practice Claim Against the Evidence",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A reasoning drill for appraising evidence, not a source of evidence. It never invents studies, statistics, guidelines, or citations — the nurse brings the real sources; this structures how to weigh them. Practice changes go through your facility's EBP/QI and policy process, not a single ",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -89267,7 +89291,7 @@
         "pacu"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_grow_journal_club_participation.md",
         "pacu_grow_qi_project_starter.md",
@@ -89281,7 +89305,7 @@
       "title": "Hemodynamic Instability Reasoning — Shock Differentiation & Vasoactive-Support Awareness",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A reasoning drill, not live clinical decision support. Vasoactive agents, targets, and titration are per order and facility protocol (learner-pasted). This trains how to differentiate the instability and support in scope — the diagnosis and orders are the provider's.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -89303,7 +89327,7 @@
         "reasoning"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_adv_high_acuity_recovery_reasoning.md",
         "pacu_adv_complex_population_mastery.md",
@@ -89317,7 +89341,7 @@
       "title": "High-Acuity Recovery Reasoning — Thinking Through the Complex, Unstable Recovery",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A reasoning drill, not live clinical decision support. It sharpens how the proficient nurse thinks through a stacked recovery; real unstable patients are managed at the bedside with the team.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -89339,7 +89363,7 @@
         "reasoning"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_adv_hemodynamic_instability_reasoning.md",
         "pacu_adv_difficult_airway_recovery.md",
@@ -89353,7 +89377,7 @@
       "title": "Journal Club Participation — Prepare for and Get Value from PACU Journal Club",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A preparation aid for the participant, not a substitute for reading the actual article or for facilitator design (that's the toolkit's journal-club facilitator). It structures your own prep and participation around the real paper in front of you — it does not summarize or invent any stud",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -89374,7 +89398,7 @@
         "participation"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_grow_evidence_appraisal_for_practice.md",
         "pacu_grow_qi_project_starter.md",
@@ -89388,7 +89412,7 @@
       "title": "Malignant Hyperthermia — Recognition & the Nurse's Role in the MH Response",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: An emergency rehearsal, not live clinical decision support. Dantrolene reconstitution/dosing, cooling protocol, and thresholds are per your facility MH protocol and MH cart (learner-pasted). This rehearses recognition and the nurse's role — the resuscitation is provider-led.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -89410,7 +89434,7 @@
         "recognition"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_adv_high_acuity_recovery_reasoning.md",
         "pacu_adv_difficult_airway_recovery.md",
@@ -89424,7 +89448,7 @@
       "title": "Professional Development Plan — A 12-Month Growth Plan (Cert, Role, Scholarship, Wellness)",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A self-planning aid, not a career mandate or a substitute for your facility's clinical-ladder / performance process. It structures your own 12-month growth intentions; formal advancement, certification eligibility, and role appointments follow your facility's and the certifying body's re",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -89444,7 +89468,7 @@
         "professional"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_grow_charge_resource_nurse_readiness.md",
         "pacu_grow_becoming_preceptor_self_prep.md",
@@ -89459,7 +89483,7 @@
       "title": "QI Project Starter — Framing a Unit Quality-Improvement Question for PACU",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A project-framing aid, not a data-analysis or approval tool. Baseline data, targets, and any protocol change come from your facility's real data and its QI/governance process — this structures how to frame a starter QI question, it does not supply numbers or authorize change.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-05",
@@ -89480,7 +89504,7 @@
         "starter"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_grow_evidence_appraisal_for_practice.md",
         "pacu_grow_journal_club_participation.md",
@@ -89494,7 +89518,7 @@
       "title": "Teaching a Recovery Concept — Structure a Bedside Micro-Teach for a Junior Nurse",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-4-growth-advanced",
-      "description": "> Boundary: A teaching-rehearsal aid, not clinical content authoring or live decision support. Clinical facts, doses, and thresholds stay per facility/order and are sourced from the toolkit's clinical library — this rehearses how you teach one concept, not what the numbers are.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -89515,7 +89539,7 @@
         "role"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_grow_becoming_preceptor_self_prep.md",
         "pacu_grow_debrief_junior_after_event.md",
