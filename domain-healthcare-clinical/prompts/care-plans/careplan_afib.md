@@ -15,8 +15,20 @@ tags:
   - atrial-fibrillation
   - anticoagulation
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -55,6 +67,19 @@ Cardiologist or internist managing AF longitudinally.
 6. **Risk-factor / substrate modification (AF-CARE "C"):** weight loss (≥10%), BP control <130/80, OSA treatment, alcohol reduction, glycemic control, exercise — reduces AF burden and recurrence.
 
 7. **Monitor:** renal function (DOAC dosing) at least annually and with illness; rate/rhythm; symptom burden; bleeding; TSH if on amiodarone (plus LFTs, pulmonary).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Back-calculate serum creatinine from eGFR to settle the apixaban "Cr ≥1.5" criterion; the label uses measured creatinine, so without it the dose line reads `[serum Cr needed]`.
+- Use eGFR in place of Cockcroft-Gault CrCl for rivaroxaban, dabigatran or edoxaban dose bands; those thresholds are CrCl and need age, weight, sex and creatinine.
+- Award CHA2DS2-VASc or HAS-BLED points for items the input does not document (e.g., "vascular disease" inferred from diabetes, HF from dyspnea alone).
+- Choose a rate- or rhythm-control drug without checking LVEF from the input — a diltiazem or flecainide line reads routine until the EF or CAD status is looked up.
+
+✅ **DO:**
+- Re-add CHA2DS2-VASc and HAS-BLED one input-supported point at a time and show the sum (e.g., HTN 1 + age 65–74 1 + female 1 + diabetes 1 = 4).
+- Compute CrCl by Cockcroft-Gault before naming any DOAC dose, and state which label criterion the chosen dose rests on, tagged `[VERIFY: current product label]`.
+- Check the current-medication list for interactions with the chosen anticoagulant and antiarrhythmic (strong CYP3A4/P-gp inhibitors or inducers; amiodarone with digoxin or warfarin).
 
 ## Output Format
 

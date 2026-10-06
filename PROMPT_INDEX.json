@@ -4,8 +4,8 @@
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
     "total_indexed_artifacts": 6165,
-    "artifacts_with_frontmatter": 5288,
-    "artifacts_without_frontmatter": 877,
+    "artifacts_with_frontmatter": 5294,
+    "artifacts_without_frontmatter": 871,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -15,8 +15,8 @@
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
     "total_prompts": 6165,
-    "prompts_with_frontmatter": 5288,
-    "prompts_without_frontmatter": 877
+    "prompts_with_frontmatter": 5294,
+    "prompts_without_frontmatter": 871
   },
   "prompts": [
     {
@@ -80704,7 +80704,12 @@
       "domain": "healthcare-clinical",
       "category": "allied_health",
       "description": "Structured documentation and communication framework for physical and occupational therapy care plans across settings and handoffs.",
-      "techniques": [],
+      "techniques": [
+        "ST-03",
+        "DS-02",
+        "CM-09",
+        "QA-04"
+      ],
       "keywords": [
         "allied-health",
         "physical-therapy",
@@ -80712,8 +80717,8 @@
         "care-plan",
         "clinical-documentation"
       ],
-      "difficulty": "",
-      "updated": "2026-05-05",
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
         "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md"
@@ -80727,7 +80732,12 @@
       "domain": "healthcare-clinical",
       "category": "allied_health",
       "description": "Structured documentation and communication prompt for speech-language pathology dysphagia assessment, goals, intervention planning, and follow-up.",
-      "techniques": [],
+      "techniques": [
+        "ST-03",
+        "DS-02",
+        "CM-09",
+        "QA-04"
+      ],
       "keywords": [
         "allied-health",
         "speech-language-pathology",
@@ -80735,8 +80745,8 @@
         "swallowing",
         "clinical-documentation"
       ],
-      "difficulty": "",
-      "updated": "2026-05-05",
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
         "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md"
@@ -80750,7 +80760,12 @@
       "domain": "healthcare-clinical",
       "category": "allied_health",
       "description": "Structured workflow for responding to positive SDOH screens — triage by urgency, match to resources, warm handoff, documentation, and closed-loop follow-up.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "DS-06",
+        "ST-03",
+        "QA-01"
+      ],
       "keywords": [
         "allied-health",
         "social-work",
@@ -80758,8 +80773,8 @@
         "SDOH",
         "care-coordination"
       ],
-      "difficulty": "",
-      "updated": "2026-04-15",
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md",
         "domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md",
@@ -80788,7 +80803,7 @@
         "ecmo"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -80814,7 +80829,7 @@
         "critical-care"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -80839,7 +80854,7 @@
         "endoscopy"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -80865,7 +80880,7 @@
         "critical-care"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -80890,7 +80905,7 @@
         "critical-care"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -80915,7 +80930,7 @@
         "critical-care"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -80939,7 +80954,7 @@
         "cardiology"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -80964,7 +80979,7 @@
         "critical-care"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -80990,7 +81005,7 @@
         "asthma"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81015,7 +81030,7 @@
         "dialysis"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81040,7 +81055,7 @@
         "antiepileptic"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81065,7 +81080,7 @@
         "hemodynamics"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81117,7 +81132,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -85036,24 +85051,23 @@
       "title": "Worked Example: Building Anticoagulation Decision Support",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/examples",
-      "description": "> This example demonstrates the complete process of creating a clinical decision support prompt for anticoagulation in atrial fibrillation.",
-      "techniques": [],
-      "keywords": [
-        "affects",
-        "analysis",
-        "anticoagulation",
-        "building",
-        "classification",
-        "context",
-        "decision",
-        "know",
-        "missing",
-        "request"
+      "description": "Demonstrates the complete process of creating a clinical decision support prompt for anticoagulation in atrial fibrillation, from classification and context analysis through quality verification.",
+      "techniques": [
+        "DS-01",
+        "RT-05",
+        "QA-04",
+        "OC-10",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "anticoagulation",
+        "cardiology",
+        "shared-decision-making"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/guides/cardiology.md",
@@ -85061,24 +85075,22 @@
       "title": "Cardiology Guide",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/guides",
-      "description": "Use this guide when requests include terms like: - \"chest pain workup\", \"ACS rule-out\", \"troponin trend\" - \"heart failure\", \"HFrEF\", \"HFpEF\", \"volume status\", \"GDMT titration\" - \"atrial fibrillation\", \"rate vs rhythm\", \"CHA2DS2-VASc\", \"HAS-BLED\"",
-      "techniques": [],
+      "description": "Cardiology routing guide: trigger phrases, the existing prompts to route first, when not to use this guide, and the required safety cautions and escalation boundaries.",
+      "techniques": [
+        "CM-03",
+        "CM-09",
+        "DS-36",
+        "IT-26"
+      ],
       "keywords": [
         "cardiology",
-        "existing",
-        "phrases",
-        "prompt",
-        "prompts",
-        "recommended",
-        "repeated",
-        "route",
-        "trigger",
-        "when"
+        "anticoagulation",
+        "escalation"
       ],
-      "difficulty": "",
-      "updated": "",
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/guides/endocrinology.md",
@@ -85086,24 +85098,22 @@
       "title": "Endocrinology Guide",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/guides",
-      "description": "Use this guide when requests include terms like: - \"diabetes regimen\", \"A1c\", \"insulin adjustment\", \"hypoglycemia risk\" - \"thyroid function\", \"TSH/T4 interpretation\", \"thyroid nodule follow-up\" - \"adrenal insufficiency\", \"steroid taper\", \"Cushing workup\"",
-      "techniques": [],
+      "description": "Endocrinology routing guide: trigger phrases, the existing prompts to route first, when not to use this guide, and the required safety cautions and escalation boundaries.",
+      "techniques": [
+        "CM-03",
+        "CM-09",
+        "DS-36",
+        "IT-26"
+      ],
       "keywords": [
         "endocrinology",
-        "existing",
-        "phrases",
-        "prompt",
-        "prompts",
-        "recommended",
-        "repeated",
-        "route",
-        "trigger",
-        "when"
+        "diabetes",
+        "escalation"
       ],
-      "difficulty": "",
-      "updated": "",
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/guides/infectious_disease.md",
@@ -85111,24 +85121,22 @@
       "title": "Infectious Disease Guide",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/guides",
-      "description": "Use this guide when requests include terms like: - \"sepsis\", \"septic shock\", \"lactate\", \"source control\" - \"antibiotic selection\", \"de-escalation\", \"broad-spectrum coverage\" - \"culture interpretation\", \"blood cultures\", \"resistance pattern\"",
-      "techniques": [],
-      "keywords": [
-        "disease",
-        "existing",
-        "infectious",
-        "phrases",
-        "prompt",
-        "prompts",
-        "recommended",
-        "repeated",
-        "route",
-        "trigger"
+      "description": "Infectious disease routing guide: trigger phrases, the existing prompts to route first, when not to use this guide, and the required safety cautions, stewardship guardrails and escalation boundaries.",
+      "techniques": [
+        "CM-03",
+        "CM-09",
+        "DS-36",
+        "IT-26"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "infectious-disease",
+        "antibiotics",
+        "escalation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/guides/primary_care.md",
@@ -85136,24 +85144,23 @@
       "title": "Primary Care Guide",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/guides",
-      "description": "Use this guide when requests include terms like: - \"preventive visit\", \"annual wellness\", \"screening recommendations\" - \"chronic disease follow-up\", \"multimorbidity management\", \"medication reconciliation\"",
-      "techniques": [],
-      "keywords": [
-        "care",
-        "existing",
-        "phrases",
-        "primary",
-        "prompt",
-        "prompts",
-        "recommended",
-        "repeated",
-        "route",
-        "trigger"
+      "description": "Primary care routing guide: trigger phrases, the existing prompts to route first, when not to use this guide, and the required safety cautions and escalation boundaries.",
+      "techniques": [
+        "CM-03",
+        "CM-09",
+        "DS-36",
+        "IT-26"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "primary-care",
+        "care-gaps",
+        "care-coordination",
+        "escalation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/guides/psychiatry.md",
@@ -85161,24 +85168,21 @@
       "title": "Psychiatry Guide",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/guides",
-      "description": "Use this guide when requests include terms like: - \"psychiatric assessment\", \"mental status exam\", \"diagnostic clarification\" - \"suicide risk\", \"self-harm\", \"homicidal ideation\", \"safety planning\" - \"mania\", \"psychosis\", \"catatonia\", \"capacity evaluation\"",
-      "techniques": [],
-      "keywords": [
-        "existing",
-        "phrases",
-        "prompt",
-        "prompts",
-        "psychiatry",
-        "recommended",
-        "repeated",
-        "route",
-        "trigger",
-        "when"
+      "description": "Psychiatry routing guide: trigger phrases, the existing prompts to route first, when not to use this guide, and the required safety cautions and escalation boundaries.",
+      "techniques": [
+        "CM-03",
+        "CM-09",
+        "DS-36",
+        "IT-26"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "psychiatry",
+        "escalation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md",
@@ -85991,7 +85995,7 @@
         "decision-rules"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_clinical_decision_support",
         "medicine_differential_diagnosis_generator",
@@ -86093,7 +86097,12 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured ICU daily goals framework for multidisciplinary rounds, risk mitigation, and explicit day-level care planning.",
-      "techniques": [],
+      "techniques": [
+        "ST-03",
+        "DS-02",
+        "DS-06",
+        "QA-04"
+      ],
       "keywords": [
         "medicine",
         "critical-care",
@@ -86101,8 +86110,8 @@
         "daily-rounds",
         "patient-safety"
       ],
-      "difficulty": "",
-      "updated": "2026-05-05",
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_handoff_communication.md",
         "domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md",
@@ -86348,7 +86357,7 @@
         "escalation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-05",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_handoff_communication",
         "medicine_surgical_preoperative_assessment",
@@ -86528,7 +86537,7 @@
         "team-communication"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-05",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_handoff_communication",
         "medicine_surgical_preoperative_assessment",
@@ -86621,7 +86630,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured bedside framework for recognizing sepsis and septic shock early, applying Hour-1 bundle elements, avoiding under- and over-diagnosis, and escalating appropriately.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "DS-01",
+        "RT-05",
+        "QA-04",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "sepsis",
@@ -86630,8 +86645,8 @@
         "infectious-disease",
         "early-warning"
       ],
-      "difficulty": "",
-      "updated": "2026-04-15",
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_emergency_triage_decision_support.md",
         "domain-healthcare-clinical/prompts/medicine_antibiotic_stewardship_advisor.md",
@@ -86646,7 +86661,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured bedside framework to differentiate distributive, hypovolemic, cardiogenic, and obstructive shock and guide immediate stabilization priorities.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "RT-05",
+        "DS-06",
+        "QA-04",
+        "ST-03"
+      ],
       "keywords": [
         "medicine",
         "critical-care",
@@ -86654,8 +86675,8 @@
         "emergency-medicine",
         "hemodynamics"
       ],
-      "difficulty": "",
-      "updated": "2026-05-05",
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md",
         "domain-healthcare-clinical/prompts/medicine_emergency_triage_decision_support.md",
@@ -86754,7 +86775,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured ventilator liberation reasoning framework integrating readiness, spontaneous breathing trial interpretation, and post-extubation risk planning.",
-      "techniques": [],
+      "techniques": [
+        "RT-05",
+        "RT-09",
+        "QA-04",
+        "QA-08",
+        "ST-03"
+      ],
       "keywords": [
         "medicine",
         "critical-care",
@@ -86762,8 +86789,8 @@
         "extubation",
         "respiratory-therapy"
       ],
-      "difficulty": "",
-      "updated": "2026-05-05",
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_icu_daily_goals_checklist.md",
         "domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md",

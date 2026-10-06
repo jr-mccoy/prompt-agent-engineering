@@ -13,8 +13,20 @@ tags:
   - hypertension
   - critical-care
   - cardiology
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -132,6 +144,21 @@ Distinguish hypertensive emergency (severe HTN with acute end-organ damage) from
 7. **Disposition.**
    - True emergency: ICU or step-down with arterial line monitoring and titratable IV infusion.
    - Urgency: discharge with oral medication adjustment if asymptomatic and reliable follow-up.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Titrate to whichever arm reads lower when the inputs show an inter-arm difference; set the target on the higher-reading arm or an arterial line on that side.
+- Fill END-ORGAN DAMAGE with "none" (urgency) before troponin, creatinine, UA and fundoscopy results are in; list each as pending instead.
+- Pick an agent from the summary table without checking its "Avoid in" column against this patient's history (asthma, decompensated HF, AV block, PDE-5 use, egg/soy allergy, pregnancy).
+- Apply the generic first-hour MAP reduction to a scenario that carries its own target (dissection, ischemic stroke before or after reperfusion, ICH, eclampsia), or the reverse.
+- Present the stroke and post-thrombectomy BP targets in step 4 as settled; recent trials have moved them, so tag them `[VERIFY: current AHA/ASA stroke guideline]`.
+
+✅ **DO:**
+- Compute the first-hour numeric goal from the presenting MAP (DBP + (SBP − DBP)/3) and show it; 218/112 gives MAP ≈ 147, so a 20% fall lands near 118.
+- Confirm pregnancy or postpartum status from the inputs before choosing a scenario, because it changes both agents and targets.
+- Check that each agent in AGENT SELECTION carries a numeric titration endpoint (HR, SBP or MAP) and an order of introduction.
+- Tag infusion starting doses `[VERIFY: product label/formulary]` unless the clinician supplied them.
 
 ## Output Format
 

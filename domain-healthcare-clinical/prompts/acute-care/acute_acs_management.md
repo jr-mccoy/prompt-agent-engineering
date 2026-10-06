@@ -15,8 +15,20 @@ tags:
   - stemi
   - nstemi
   - critical-care
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -98,6 +110,21 @@ Manage a patient with acute coronary syndrome (STEMI, NSTEMI, or unstable angina
    - Smoking cessation, BP control, lipid management, diabetes management, cardiac rehab referral.
    - SGLT2 inhibitor if T2DM, CKD, or HF.
    - Eplerenone after STEMI with EF <40% + HF or DM (EPHESUS).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the ANTICOAGULATION line with a weight-based heparin or enoxaparin number when the input gives no weight; write `[weight needed]` rather than back-filling a typical adult weight.
+- Label the tracing STEMI or STEMI-equivalent without naming the exact criterion the supplied ECG meets (lead-group ST threshold for the patient's sex and age, Sgarbossa element, posterior pattern confirmed on V7–V9, De Winter morphology).
+- Write a door-to-balloon or door-to-needle figure as "achievable" from a default; it must come from the onset time and the local PCI capability given in Inputs.
+- Load a P2Y12 inhibitor in NSTEMI on the STEMI branch without stating whether angiography is planned within 24 h, since step 5 changes the timing on that fact.
+- Copy the secondary-prevention drug and dose lines into the order set as given; tag each `[VERIFY: current label/formulary]` and adjust to the supplied eGFR and K⁺.
+
+✅ **DO:**
+- Recompute every weight-based dose from the stated weight and show which cap was applied (UFH bolus and infusion caps, tenecteplase weight band).
+- Trace each ANTI-ISCHEMIC entry to a contraindication check against the inputs: right-sided leads before nitrates in inferior MI, PDE-5 inhibitor use, shock, AV block and asthma before a beta-blocker.
+- For NSTEMI, show the GRACE score with its components, or mark it "not calculable — missing [item]", before assigning an invasive-timing tier.
+- Recompute CrCl from age, weight, sex and creatinine when only creatinine is given, then check the enoxaparin interval and fondaparinux choice against it.
 
 ## Output Format
 

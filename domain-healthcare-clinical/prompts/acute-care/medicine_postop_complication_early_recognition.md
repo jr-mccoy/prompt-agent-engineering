@@ -19,10 +19,22 @@ related_prompts:
   - medicine_handoff_communication
   - medicine_surgical_preoperative_assessment
   - medicine_procedure_timeout_safety_briefing
-updated: "2026-05-05"
+updated: "2026-10-06"
 ---
 
 # Post-operative Complication Early Recognition
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide a structured framework for early recognition of post-operative deterioration, rapid risk stratification, and communication-ready escalation plans to reduce delay in diagnosis and intervention.
 
@@ -206,6 +218,21 @@ RISK TIER ASSIGNMENT
 ### C) Nursing / Cross-Cover Handoff Snippet
 
 “Monitoring for potential [complication] after [procedure], currently [risk tier]. Red-flag triggers: [list]. If trigger occurs, do [immediate action] and notify [role] immediately. Next reassessment due at [time]. Pending critical results: [list].”
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign a risk tier without the POD and procedure — which complication cluster is likely depends on both, so a tier not anchored to them only looks reasoned.
+- Mark a hard-stop item such as "Most relevant labs reviewed" complete when the lab fields in the input are blank.
+- Attribute tachycardia or hypotension to pain or anesthesia carryover unless the input shows what rules out bleeding and sepsis (Hb trend, drain output, temperature, analgesia timing).
+- Call "oliguria" from a single hour of output, or quote mL/kg/hr without a weight in the input.
+
+✅ **DO:**
+- Recompute urine output in mL/kg/hr from volume, collection hours and weight, and the Hb change from the prior value, before using either to set the tier.
+- For each complication named in the SBAR, list the input findings that support it and the one test that would confirm or exclude it.
+- Check the handoff snippet against the input: every ordered-but-unresulted test appears under pending critical results, and every red-flag trigger carries an action and a named role.
 
 ---
 

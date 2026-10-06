@@ -14,8 +14,20 @@ tags:
   - hemorrhage
   - transfusion
   - critical-care
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -91,6 +103,21 @@ Activate massive transfusion protocol (MTP), deliver balanced products, treat tr
     - Hemodynamic stability without ongoing transfusion.
     - Lactate trending down, base deficit improving.
     - Switch to goal-directed replacement based on labs/TEG.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Map a TEG/ROTEM parameter to a product by name alone; the direction matters (a prolonged K time or reduced alpha angle indicates a fibrinogen deficit), so state the measured value and its direction.
+- Apply penetrating-trauma permissive hypotension (SBP 80–90) to a blunt mechanism with a reduced GCS without stating how TBI has been excluded.
+- Call a lab value "low" or "borderline" against a cut-off the GOAL-DIRECTED THRESHOLDS do not set; name the threshold being used.
+- Give TXA as "within 3 h" without a documented time of injury; arrival time is not injury time.
+- Order calcium chloride "via central line" when only peripheral access is listed; match the agent to the access actually in place.
+
+✅ **DO:**
+- Count units actually given and check the delivered pRBC:FFP:platelet ratio and the ionized Ca recheck schedule against that count, not against the pack plan.
+- Compute shock index (HR/SBP) and the ABC score item by item from the vitals and FAST result, and show which criteria fired.
+- Check that any pelvic binder instruction names the greater trochanters as the landmark before releasing the order set.
+- Match each reversal agent and dose to the drug and last-dose time supplied; with no anticoagulant history, write "none reported — confirm" rather than "not applicable".
 
 ## Output Format
 

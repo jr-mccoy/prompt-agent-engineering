@@ -19,10 +19,22 @@ related_prompts:
   - medicine_clinical_decision_support
   - medicine_differential_diagnosis_generator
   - medicine_handoff_communication
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Emergency Triage Decision Support
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide structured emergency department triage reasoning using the Emergency Severity Index (ESI), validated clinical decision rules, and systematic acuity assessment to support disposition decision-making and time-critical intervention identification.
 
@@ -289,6 +301,22 @@ Document re-triage:
   New ESI: [If changed]
   Action: [What was done]
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Inflate the resource count with items ESI does not count as resources (history and exam, point-of-care tests, saline lock, PO medications, prescription refills, simple splints) — an over-counted tally looks systematic and over-triages to ESI 3.
+- Count each blood test as a separate resource; all blood and urine labs together are one resource.
+- Report a HEART, Wells, Canadian CT Head or SF Syncope score when a component (troponin, ECG, hematocrit, GCS at 2 hours) is missing from the input — label it "incomplete — missing [component]" instead of imputing a zero.
+- Present a low-risk rule result for a patient outside the population listed in the Evidence Grading table (anticoagulated head injury, pregnancy, children) as reassurance.
+- Fill "Medications: [Discharge prescriptions]" with drugs and doses not supplied by the treating clinician.
+
+✅ **DO:**
+- List the predicted resources by type and recount them before naming ESI 3, 4 or 5, so the reader can see why the number is what it is.
+- Re-add each decision-rule score from its component breakdown and confirm the total and risk band match the Step 3 tables.
+- Compare each arrival vital sign with the Step 2 modifier limits (age-specific normals in children) and state whether it prompted an upgrade.
 
 ---
 

@@ -1,4 +1,34 @@
+---
+title: "Worked Example: Building Anticoagulation Decision Support"
+category: healthcare-clinical/examples
+description: "Demonstrates the complete process of creating a clinical decision support prompt for anticoagulation in atrial fibrillation, from classification and context analysis through quality verification."
+techniques:
+  - DS-01
+  - RT-05
+  - QA-04
+  - OC-10
+  - QA-01
+difficulty: intermediate
+tags:
+  - anticoagulation
+  - cardiology
+  - shared-decision-making
+updated: "2026-10-06"
+---
+
 # Worked Example: Building Anticoagulation Decision Support
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > This example demonstrates the complete process of creating a clinical decision support prompt for anticoagulation in atrial fibrillation.
 
@@ -327,6 +357,24 @@ Initiate oral anticoagulation with a DOAC (apixaban preferred)
 - Complete HAS-BLED to identify modifiable bleeding risk factors
 - Discuss with patient to incorporate preferences
 ```
+
+---
+
+## False-Positive Prevention
+
+When using this worked example as a template:
+
+❌ **DON'T:**
+- Lift the DOAC selection table, dose lines or "Guidelines to Reference" list into a new prompt as current; guideline editions and label dosing change, so each needs `[VERIFY: current guideline/label]` first.
+- Tick a Step 6 box because the matching heading exists; "Cites specific guidelines" passes only if the cited edition is current and the attributed recommendation is actually in it.
+- Carry this patient's computed scores, "~4% annual risk" or "1 in 25" phrasing into a prompt for a different patient.
+- Let a trial name stand as the evidence for a selection-table row without checking that the trial enrolled that population (for example, whether it included patients with AF).
+
+✅ **DO:**
+- Recount each risk score from its component table and confirm the "minimum with known data" uses only rows marked YES.
+- Check every dose criterion in the template (apixaban dose-reduction criteria, rivaroxaban CrCl band) against the current product label, and keep renal function as a required input slot.
+- Compare the patient-facing numbers in the shared decision-making scripts with the score-derived risk in the same prompt so the two cannot drift apart.
+- Confirm reversal-agent statements are consistent across the factor Xa inhibitors listed.
 
 ---
 

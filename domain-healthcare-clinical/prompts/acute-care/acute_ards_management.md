@@ -14,8 +14,20 @@ tags:
   - ards
   - mechanical-ventilation
   - ecmo
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -93,6 +105,21 @@ Manage a patient with ARDS using lung-protective ventilation, PEEP titration, pr
     - PICS (post-ICU syndrome): physical, cognitive, mental health.
     - ICU-acquired weakness: minimize paralytic duration, early mobility when feasible.
     - Pulmonary follow-up post-discharge for residual fibrosis, exercise capacity.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a PBW written in the input or the worked example without recomputing it from height and sex; an error there propagates into every Vt figure in VENT SETTINGS.
+- Quote a PEEP for a given FiO2 from memory and attribute it to "the higher-PEEP table"; the ARDSNet lower and higher tables pair FiO2 and PEEP differently, so cite the row `[VERIFY: ARDSNet PEEP/FiO2 table]`.
+- Grade Berlin severity from a P/F ratio obtained on PEEP <5 cmH2O, or from opacities whose cardiogenic cause has not been addressed.
+- Mark prone positioning or VV-ECMO "indicated" from a single ABG; PROSEVA and EOLIA criteria include hours on optimized settings, and the output must show that duration.
+- Fill ETIOLOGIC TREATMENT with a steroid without naming which regimen applies (COVID vs non-COVID ARDS) and the day of illness relative to the late-steroid window.
+
+✅ **DO:**
+- Recompute P/F (PaO2 ÷ FiO2 as a fraction), driving pressure (Pplat − PEEP) and each Vt in mL from PBW, and show the arithmetic beside the setting.
+- After any proposed Vt or PEEP change, state that Pplat and driving pressure must be remeasured; a target counts as met only once a new measured value is entered.
+- Check permissive hypercapnia against the supplied ABG and against contraindications present in the inputs (raised ICP, RV dysfunction on echo) before accepting it.
+- Tie each rescue step to an input finding (documented dyssynchrony, P/F still below threshold after proning) instead of listing the whole rescue ladder.
 
 ## Output Format
 

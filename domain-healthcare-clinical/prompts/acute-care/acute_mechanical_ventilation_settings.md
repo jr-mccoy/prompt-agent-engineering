@@ -15,8 +15,20 @@ tags:
   - ards
   - copd
   - asthma
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -92,6 +104,21 @@ Senior critical care attending or anesthesiologist setting the vent at the bedsi
 12. **Sedation and analgesia targets.**
    - RASS −2 to 0 ideal; deeper only when needed (paralysis, severe ARDS, raised ICP).
    - Daily SAT (sedation interruption) and SBT (spontaneous breathing trial) when conditions allow.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Multiply mL/kg by a PBW from the wrong-sex formula, or by actual weight; confirm the formula matches the sex in the input before computing Vt.
+- Label an I:E of 1:1.5 or 1:1 "inverse ratio"; inverse ratio means inspiration longer than expiration (e.g. 1.5:1), and the label written must match the number set.
+- Report a PEEP chosen by severity band as "per ARDSNet table"; either name the table and FiO2 row or call it a severity-based starting estimate.
+- Write an ECMO hypercapnia trigger without its source; the pH cut-off must match the cited criteria (EOLIA) and the sibling ARDS management prompt.
+- Accept a Pplat taken without an inspiratory hold, or during active patient effort, as meeting the <30 cmH2O target.
+
+✅ **DO:**
+- Recompute PBW and Vt (mL/kg × PBW) from the stated height and sex, show the arithmetic, and state how the set Vt was rounded.
+- Compute minute ventilation (Vt × RR) for the proposed settings and compare it with the pre-intubation picture; a low Vt without a matching RR rise predicts a PaCO2 climb.
+- For obstructive indications, record auto-PEEP measured on an expiratory hold before calling the I:E adequate.
+- Tag sedative starting doses `[VERIFY: facility sedation protocol]` unless the clinician supplied them.
 
 ## Output Format
 

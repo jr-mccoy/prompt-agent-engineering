@@ -14,8 +14,20 @@ tags:
   - hyperkalemia
   - critical-care
   - dialysis
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -81,6 +93,20 @@ Treat severe or symptomatic hyperkalemia with the three-step paradigm: stabilize
    - Repeat K at 1, 2, 4, 6 h after treatment.
    - Glucose q1h × 4 after insulin (rebound hypoglycemia).
    - Anticipate K rebound after insulin/albuterol effects wear off if no removal step taken.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill STEP 1 with calcium when the input shows neither an ECG change nor the dialysis-patient K ≥6.5 indication — a fully populated three-step template looks thorough but gives a drug without its stated trigger.
+- Write calcium, insulin, dextrose, albuterol or bicarbonate amounts into the order set from memory; take them from the clinician's order set, the product label or local formulary, or mark `[VERIFY: current label/formulary]`.
+- List furosemide under REMOVE for an anuric or oliguric patient, or a binder as the removal step when the Step 6 dialysis criteria are met — the slot is filled but no potassium leaves the body today.
+- Report the sample as "not hemolyzed", or cite an HCO3 value to justify bicarbonate, when the lab comment or blood gas was not supplied.
+
+✅ **DO:**
+- Trace every value on the SEVERITY line (K, QRS width, PR, rhythm, symptoms) and the glucose behind the dextrose decision to the input; write `[not provided]` for anything missing instead of inferring it.
+- Re-derive the severity tier from the supplied K and ECG against the Step 2 bands and confirm the order set matches it — calcium only when its indication is met, DIALYSIS marked "indicated" only with the Step 6 criterion named.
+- State the patient's urine output and dialysis access beside the REMOVE choice so the reader can see the route is usable.
+- Record the renal-function basis for the length of the glucose-check window (the template uses q1h × 4; the ESRD example uses q1h × 6).
 
 ## Output Format
 

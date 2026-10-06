@@ -14,8 +14,20 @@ tags:
   - shock
   - vasopressor
   - hemodynamics
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -70,6 +82,19 @@ Senior critical care attending or emergency medicine attending titrating pressor
    - Arterial line for accurate MAP and serial blood gases.
    - Echo (POCUS) repeatedly to reassess preload, RV function, LV function, pericardial effusion.
    - Daily reassessment: shock state may evolve (cardiogenic shock from sepsis-induced cardiomyopathy can develop in patient who was distributive on admission).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Give a mcg/kg/min dose without the weight it assumes, or convert it to mL/h without the bag concentration — the bedside rate depends on both and neither may be guessed.
+- Write a dose in the wrong unit for its agent (vasopressin per kg, angiotensin II in mcg); a mis-unit line reads plausibly in a list of catecholamine doses.
+- Present an escalation threshold (the norepinephrine dose that triggers vasopressin, a peripheral-line dose or time limit) as a fixed rule; these differ between guidelines and units and belong as `per facility protocol` or `[VERIFY: current guideline]`.
+- Commit SHOCK CATEGORY to one type when the supplied echo, CVP or SvO2 data conflict — name the mixed picture and the measurement that would separate it.
+
+✅ **DO:**
+- Check each agent's dose in its native unit (norepinephrine/epinephrine mcg/kg/min, vasopressin units/min, angiotensin II ng/kg/min) against the product label starting dose, tagged `[VERIFY: product label]`.
+- Recompute derived inputs and flag mismatches: fluid volume given versus 30 mL/kg × stated weight, and MAP versus the reported SBP/DBP.
+- Tie each THRESHOLD line to an observed value from the input (current dose, MAP, lactate trend, time on the agent) rather than "if needed".
 
 ## Output Format
 

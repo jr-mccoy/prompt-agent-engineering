@@ -14,8 +14,20 @@ tags:
   - status-epilepticus
   - critical-care
   - antiepileptic
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -76,6 +88,19 @@ Manage convulsive status epilepticus with timed, sequenced pharmacotherapy and c
    - **Autoimmune encephalitis:** suspect when cryptogenic, young patient, recent neuropsychiatric symptoms, MRI mesiotemporal abnormalities. Send autoimmune encephalitis panel (NMDA-R, LGI1, GABA-B, etc.); start empiric immunotherapy if high suspicion.
 
 8. **Documentation and signout.** Time stamps for each medication and observed effect. cEEG at the bedside. Plan for tapering anesthetic with cEEG monitoring.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill a PHASE line with a weight-based total computed from an assumed weight; when weight is absent, give the mg/kg figure and the maximum and leave the total as `[weight needed]`.
+- Write a second-line agent that the input's comorbidities rule out under the Step 4 selection rules (e.g., valproate with hepatic disease or pregnancy, fosphenytoin with a prolonged QT) — the line looks standard and is wrong for this patient.
+- Record "seizure terminated" in PHASE 3 or DISPOSITION once visible convulsions stop under paralysis or anesthesia; without a cEEG result in the input, the output says "electrographic status unknown".
+- Present the phase time bands (5–20, 20–40, 40+ min) as this patient's elapsed times when the seizure onset time was not supplied.
+
+✅ **DO:**
+- Recompute every weight-based dose from the stated weight, cap it at the listed maximum and show the arithmetic (e.g., levetiracetam 60 mg/kg × 75 kg = 4500 mg, which equals the cap).
+- For each reversible cause in CONCURRENT WORKUP (glucose, sodium, pregnancy/postpartum status, alcohol or isoniazid exposure), state whether supplied data rule it in, rule it out, or leave it pending.
+- Tag each drug, magnesium and antihypertensive dose and each anesthetic infusion rate `[VERIFY: current label/formulary]` unless it came from the clinician's order or local protocol.
 
 ## Output Format
 

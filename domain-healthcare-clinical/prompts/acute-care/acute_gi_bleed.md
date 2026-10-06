@@ -14,8 +14,20 @@ tags:
   - hemorrhage
   - critical-care
   - endoscopy
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -93,6 +105,21 @@ Manage acute upper or lower GI bleeding: localize, resuscitate, risk-stratify, g
     - Beta-blocker (carvedilol or nadolol) for variceal patients.
     - Endoscopic surveillance for variceal patients per guidelines.
     - Re-evaluate antiplatelet/anticoagulant indications and consider GI prophylaxis.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "Glasgow-Blatchford very high" or "AIMS65 high" under SEVERITY without scoring each item from the supplied BUN, Hgb, SBP, HR and history.
+- Fill the TRANSFUSION line with FFP or PCC for a cirrhotic variceal bleed just because INR is above the step-3 cut-off; state the specific reason for any product beyond pRBC in that patient.
+- Settle LOCALIZATION as lower from hematochezia while HR/BP show instability, without saying whether an upper source has been excluded.
+- Leave the reversal slot as "not applicable" when the med list shows an antiplatelet or anticoagulant, or name an agent when none is listed.
+- Read the first Hgb as the measure of blood loss; in acute hemorrhage it under-reads until equilibration, so report it with its timepoint and trend.
+
+✅ **DO:**
+- Score Glasgow-Blatchford item by item (BUN converted to mmol/L if reported in mg/dL, Hgb by sex band, SBP, HR, melena, syncope, hepatic disease, cardiac failure) and show the total; the worked example's inputs sum to 16.
+- Name which threshold branch the TRANSFUSION target came from (stable non-variceal, active CAD, active hemorrhage with ratio-based replacement).
+- Check that ENDOSCOPY TIMING agrees with the localization and variceal suspicion stated earlier in the same output.
+- Tag octreotide, PPI and antibiotic durations `[VERIFY: current guideline/formulary]` when the clinician has not supplied a local order set.
 
 ## Output Format
 

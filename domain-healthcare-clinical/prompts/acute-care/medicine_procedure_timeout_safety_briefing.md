@@ -19,10 +19,22 @@ related_prompts:
   - medicine_handoff_communication
   - medicine_surgical_preoperative_assessment
   - medicine_postop_complication_early_recognition
-updated: "2026-05-05"
+updated: "2026-10-06"
 ---
 
 # Procedure Timeout Safety Briefing
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide a structured, communication-ready timeout framework before invasive procedures that verifies identity, procedure details, consent, site/laterality, critical risks, role assignments, and contingency planning to prevent avoidable harm.
 
@@ -192,6 +204,21 @@ FINAL STATUS:
 ### C) Cross-Cover / Shift Handoff Snippet
 
 “Pre-procedure safety hold remains active for [patient/procedure]. Outstanding item(s): [list]. Owner(s): [names]. Next action: [step]. Escalation completed to [role] at [time]. Do not proceed until documented hard-stop resolution.”
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Output "CLEARED TO PROCEED" when a hard-stop field in the input is blank, or marked N/A with no reason — an empty field is not a "Yes".
+- Mark "Consent match: Yes" when the consent, the order and the site marking differ in side, spinal level, digit or procedure wording.
+- Write allergies as "none" or "NKDA" in the briefing or EHR note when the input did not state allergy status.
+- Mark prophylactic antibiotics "timed correctly" without both the administration time and the planned incision or puncture time.
+
+✅ **DO:**
+- Line up identifiers, procedure name, site/side/level and consent text from each source in the input (order, consent, marking, imaging) and confirm they all agree before recording verification as complete.
+- Report each of the 10 hard stops as Yes / No / N/A-with-reason and derive FINAL STATUS mechanically: any No means SAFETY HOLD.
+- Next to "bleeding risk addressed", name the anticoagulant or antiplatelet, its last-dose time and the plan (held, reversed, accepted) from the input; hold intervals are `per facility protocol`, not stated from memory.
 
 ---
 

@@ -14,8 +14,20 @@ tags:
   - hhs
   - hyperglycemia
   - critical-care
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -83,6 +95,21 @@ Manage HHS with fluid resuscitation as the primary intervention, cautious insuli
     - Cerebral edema (rare in adults but reported, especially with rapid osmolar correction): worsening mental status during treatment is the warning sign. Treatment: mannitol or 3% saline; reduce correction rate.
     - Thromboembolism: HHS is hypercoagulable from hyperviscosity; prophylactic anticoagulation indicated unless contraindicated.
     - Rhabdomyolysis: occurs in HHS; check CK, urine myoglobin if oliguric.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report an osmolality without saying whether it is measured, calculated total (including BUN) or effective; the worked example's "osm 348" and the effective value from its Na and glucose (about 336) are different measures.
+- Keep a pure-HHS label when the computed anion gap is raised without explaining it; the worked example gives 138 − (96 + 22) = 20 with a low beta-hydroxybutyrate, so name lactate, uremia or a mixed picture.
+- Defer a renal decision ("recheck Cr — if eGFR <30") when the inputs already allow it; age, weight and creatinine are enough to compute CrCl now.
+- Apply the 0.5 units/kg/day TDD to an elderly patient with AKI without stating whether a lower starting dose was considered.
+- Declare the hourly osmolality fall on target from glucose values alone; sodium rises as glucose falls, so both must enter the recomputation.
+
+✅ **DO:**
+- Recompute corrected Na, effective osmolality (2 × Na + glucose/18) and the hourly change at each BMP, and show the numbers next to the <3 mOsm/kg/h target.
+- Compute Cockcroft-Gault CrCl before choosing LMWH vs UFH or dosing antibiotics (worked example: 78 y, 75 kg, Cr 2.4 → about 27 mL/min).
+- Check that resolution is declared against the osmolality measure and threshold named in the current guideline `[VERIFY: current HHS guideline]`, not against the diagnostic cut-off.
+- Trace each units/h figure to weight × rate and show the rounding (0.05 × 75 = 3.75 → 4 units/h).
 
 ## Output Format
 

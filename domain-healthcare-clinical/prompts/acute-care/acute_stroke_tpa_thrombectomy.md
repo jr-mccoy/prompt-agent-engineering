@@ -15,8 +15,20 @@ tags:
   - thrombolysis
   - thrombectomy
   - critical-care
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -112,6 +124,19 @@ For a patient with suspected acute ischemic stroke, decide on IV thrombolysis (a
     - Statin: high-intensity (atorvastatin 80 or rosuvastatin 40).
     - BP control: ACE/ARB or CCB; goal long-term <130/80.
     - Smoking cessation, glycemic control, sleep apnea screen.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Compute TIME FROM LKW from symptom discovery or arrival time; if LKW is not given explicitly, the line reads "LKW unknown — wake-up/unknown-onset pathway" rather than a number.
+- Mark IV thrombolysis "eligible" after checking only the exclusions the input happens to mention; an exclusion the input does not address (platelets, INR, glucose, recent surgery, last DOAC dose) is "not yet known", not "absent".
+- Put ASPECTS, core volume or mismatch-ratio values in IMAGING that the imaging report did not contain, or declare an LVO from the NIHSS without a CTA result.
+- Carry a post-thrombectomy BP number into the plan as settled; trial evidence on intensive lowering after recanalization has shifted, so the target is `[VERIFY: current stroke guideline / local protocol]`.
+
+✅ **DO:**
+- Recompute the thrombolytic dose from the weight in the input, apply the cap, and for alteplase show the 10% bolus / 90% infusion split; write `[weight needed]` if none was given.
+- Recalculate hours from LKW to decision time and check it against the window each eligibility line relies on, invoking extended-window criteria only when perfusion or DWI/FLAIR data were supplied.
+- For an anticoagulated patient, put the last-dose time and any drug-specific level or coagulation result from the input next to the thrombolysis decision, with the exclusion line it triggers.
 
 ## Output Format
 
