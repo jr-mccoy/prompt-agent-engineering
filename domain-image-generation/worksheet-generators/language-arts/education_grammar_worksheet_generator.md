@@ -2,13 +2,23 @@
 title: "Grammar Worksheet Generator"
 category: education
 description: "Generate grammar worksheets with sentence editing, parts of speech, and usage conventions practice."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - language-arts
   - worksheet
   - grammar
   - editing
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Grammar Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Key the answer from habit rather than the rule — "between you and I" is not correct, and "less" with a countable noun is a fewer error.
+- Mark style preferences (a missing Oxford comma, a sentence ending in a preposition, a split infinitive) as errors in ZONE 4.
+- Write a ZONE 3 "circle the noun" sentence with two nouns and a single-answer key.
+- Key one answer for a ZONE 5 sentence-combining item when several combinations are grammatical.
+
+✅ **DO:**
+- Solve every item independently and write the answer with the rule it applies before you compare with the key.
+- Count every error in each ZONE 4 sentence and confirm the count equals the number the directions tell the student to find.
+- Check each ZONE 2 rule-box example against the rule it illustrates, since a wrong model sentence there spreads to every item.

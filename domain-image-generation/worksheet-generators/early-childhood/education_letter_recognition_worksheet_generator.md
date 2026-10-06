@@ -2,13 +2,23 @@
 title: "Letter Recognition Worksheet Generator"
 category: education
 description: "Generate early-childhood letter recognition worksheets with uppercase/lowercase matching and initial-sound picture cues."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - early-childhood
   - literacy
   - alphabet
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Letter Recognition Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass the ZONE 3 letter hunt because the targets are present; models add or drop copies, so the number a child finds no longer matches the key.
+- Accept a glyph because it resembles the target — models draw mirrored letters (backward J, S, or N) and double-storey a or g that a pre-reader has not met.
+- Use a ZONE 4 pair that the typeface makes identical, such as uppercase I and lowercase l in a plain sans-serif.
+- Pair a ZONE 5 picture with a letter its spoken word does not start with: knife for K, phone for P, or a picture a child names differently (bunny for an R item).
+
+✅ **DO:**
+- Circle every target in the rendered letter hunt yourself and compare the count with the key.
+- Name each ZONE 5 picture aloud the way a four-year-old would and confirm its first sound is the target letter's common sound.
+- Zoom to 100% on every letter in ZONES 3-6 and check none is mirrored and each matches the letterforms the class reads.

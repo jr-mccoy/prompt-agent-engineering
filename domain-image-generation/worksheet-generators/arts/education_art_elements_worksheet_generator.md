@@ -2,13 +2,23 @@
 title: "Art Elements Worksheet Generator"
 category: education
 description: "Generate visual arts worksheets focused on line, shape, texture, value, form, color (B/W-safe adaptation), and space."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - arts
   - visual-arts
   - elements-of-art
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Art Elements Worksheet Generator
@@ -121,3 +131,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "Content matches provided grade, topic, and vocabulary" because the ZONE 2 bank lists the element words; the definitions must give the art sense (value = lightness or darkness, form = three-dimensional, space = positive and negative area), not the everyday sense a model reaches for first.
+- Key a ZONE 3 mini example to one element when it visibly shows several — a cross-hatched cube is texture, value, and form at once, so a student who names any of them has read it correctly.
+- Accept a "shape" example the model rendered with shading or a cast edge; shading turns the flat shape into a form and contradicts the definition printed beside it.
+
+✅ **DO:**
+- For every ZONE 3 panel, write down the element it is meant to isolate and every other element you can see in it; a non-empty second list means redraw the panel or widen the key.
+- Read each rendered ZONE 2 term and definition letter by letter against the supplied vocabulary list — at 12-16 pt the model drops or swaps letters ("texure", "vaule").
+- Confirm the color item in ZONE 4 or ZONE 5 asks students to label or pattern-code color, and that no task asks them to name a hue that the photocopy has already turned to gray.

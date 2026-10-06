@@ -2,13 +2,23 @@
 title: "Creative Writing Worksheet Generator"
 category: education
 description: "Generate creative-writing worksheets with prompts, planning scaffolds, and drafting lines."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - language-arts
   - worksheet
   - creative-writing
   - composition
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Creative Writing Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept three ZONE 2 prompts because the count is right; "Convince your principal to add recess" in a narrative sheet is an opinion prompt.
+- Render both organizer variants in ZONE 3 (characters/setting/problem and claim/reasons), or the one that does not fit the intake genre.
+- List a transition under the wrong function in ZONE 4 — however as sequence, finally as contrast — because the bank looks complete.
+- Call ZONE 5 "ample" by eye when the number of ruled lines holds fewer words than the grade's expected draft length.
+
+✅ **DO:**
+- Classify each ZONE 2 prompt by genre and check the ZONE 3 labels match that genre.
+- Sort every ZONE 4 word under the function it serves and confirm each heading holds only its own words.
+- Estimate ZONE 5 capacity: write a sample sentence on a printed line, count the words that fit, multiply by the line count, and compare with the expected draft length for the grade.

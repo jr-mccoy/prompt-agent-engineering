@@ -2,13 +2,23 @@
 title: "Self-Assessment Worksheet Generator"
 category: education
 description: "Generate learner self-assessment worksheets with rubric-style reflection, evidence prompts, and action-step planning."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - assessment
   - worksheet
   - self-assessment
   - reflection
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Self-Assessment Worksheet Generator
@@ -128,3 +138,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept the ZONE 3 criteria table because every row has a rating scale; adjacent descriptors that overlap ("usually" at level 2, "mostly" at level 3) let a learner honestly circle either.
+- Let the directions announce one scale (1-4) while the rendered table shows another (three columns, or emerging-to-mastery labels) — the learner cannot rate against criteria the page contradicts.
+- Write a criterion the learner cannot check against their own work ("I understand fractions"), which leaves the ZONE 4 evidence box with nothing to point to.
+- Use faces or stars as rating symbols that differ only in a small mouth curve or point count; after photocopying they read as one symbol.
+
+✅ **DO:**
+- For each criterion, write one concrete example of student work that would earn each level; if two levels take the same example, rewrite the descriptors before rendering.
+- Count the rendered scale columns and compare their labels to the range stated in ZONE 2.
+- Trace each criterion to a phrase in the supplied learning target or standard, and drop any criterion with no source phrase.

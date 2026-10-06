@@ -16,7 +16,7 @@ tags:
   - workflow
   - storybook
   - sequential-art
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/gpt-image-2/gptimage2_character_consistency_anchor.md
@@ -316,6 +316,25 @@ If drift is detected:
 | Too many changes per scene | Identity shifts with the context | One-change rule: new setting OR outfit OR expression |
 | Skipping re-anchor checks | Drift goes unnoticed for 20+ scenes | Schedule checks every 5-10 scenes |
 | Style not locked | Rendering approach wanders | Include canonical style in the bible and restate it |
+
+---
+
+## False-Positive Prevention
+
+When applying this guide, a scene can pass a glance and the one-change rule while the character has quietly become someone else. The traps:
+
+❌ **DON'T:**
+- Judge drift by comparing each scene with the one before it; every small step passes, and scene 15 next to scene 14 always looks fine.
+- Mark the distinctive mark "present" without checking side and position — a left-cheek scar that reappears on the right cheek, or a ring that changes hands, is a mirrored or redrawn character, not a match.
+- Admit reference-pack views to the pack just because they were generated from the anchor; a three-quarter or profile view can already carry a hair-hue or build shift that every later scene inherits.
+- Score a bible trait as passed when the framing hides it (outfit in a head-and-shoulders shot, eye colour in a long shot) — for that scene the trait is unverified.
+- After a re-anchor for a new outfit, start judging face, hair and marks against the newest outfit reference instead of the original anchor.
+
+✅ **DO:**
+- Keep a drift log: one row per scene, one column per bible trait, each cell PASS / FAIL / NOT VISIBLE, judged against the original anchor.
+- Sample the hair and skin hex from each checked scene and compare it with the bible's hex codes; a hue shift invisible side by side often shows up as a number.
+- Measure build in head-heights on full-body shots (anchor vs. scene) rather than by eye.
+- Run the Anchor Quality Check on every reference-pack view before it goes into a slot.
 
 ---
 

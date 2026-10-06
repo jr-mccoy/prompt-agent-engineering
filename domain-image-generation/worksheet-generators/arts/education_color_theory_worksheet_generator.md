@@ -2,13 +2,23 @@
 title: "Color Theory Worksheet Generator"
 category: education
 description: "Generate color-theory concept worksheets adapted for black-and-white printing using labels, hatching, and pattern codes instead of color fill."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - arts
   - color-theory
   - black-and-white-safe
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Color Theory Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass the ZONE 4 pattern-code wheel because it has the right number of labeled wedges; the labels must run in spectral order and each complementary pair must sit directly opposite (180 degrees apart).
+- Mix color models on one page: the art-room RYB wheel pairs red-green, blue-orange, and yellow-violet, while a screen (RGB) wheel pairs red-cyan, so a ZONE 5 scenario drawn from both has two defensible answers.
+- Accept a ZONE 2 key that files green under warm or calls orange a primary because the model filled the label slots by position rather than by the concept.
+- Assume two hatching codes stay distinct after copying when they differ only in line spacing or angle by a few degrees — on a school photocopier they collapse to the same gray.
+
+✅ **DO:**
+- Before rendering, write the answer to every ZONE 3 and ZONE 5 item from the one wheel the course uses (RYB unless the intake names another), then confirm the rendered diagram positions yield the same answers.
+- On the render, draw a straight line through the wheel's center from each primary; it must land on the secondary mixed from the other two primaries, and each labeled complement must agree.
+- Photocopy a test print and check every pattern code can be told apart from every other at arm's length before the key relies on them.

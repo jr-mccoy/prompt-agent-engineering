@@ -2,13 +2,23 @@
 title: "Fill-in-the-Blank Assessment Worksheet Generator"
 category: education
 description: "Generate fill-in-the-blank assessment worksheets with scaffolded sentence frames and clear response spaces."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - assessment
   - worksheet
   - fill-in-the-blank
   - cloze
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Fill-in-the-Blank Assessment Worksheet Generator
@@ -128,3 +138,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 sentence because its intended word is in the ZONE 4 bank; a stem such as "Plants need ___ to grow" is also completed truthfully by water, light, or soil, and the key marks two of them wrong.
+- Leave grammatical cues that point to one bank word ("an ___" when only one bank entry starts with a vowel, or a plural verb after the only plural noun) — the item then measures cue-spotting, not the standard.
+- Read "blank line lengths match likely response length" as one line per answer's letter count; a 4-letter line beside a 10-letter line hands over the answer, so size blanks in two or three bands instead.
+- Let a ZONE 5 challenge item repeat a ZONE 3 stem with the answer already printed in it elsewhere on the page.
+
+✅ **DO:**
+- Fill every rendered blank yourself from the bank without the key, writing down every word that makes the sentence true and grammatical; any item with more than one entry is rewritten before printing.
+- Map the answer key to the rendered page by item number — image models drop, merge, or reorder sentences — and confirm each required vocabulary term is the answer to exactly one blank.
+- Search the whole rendered page for each answer word and remove any stem, direction, or bank caption that prints it outside the bank.

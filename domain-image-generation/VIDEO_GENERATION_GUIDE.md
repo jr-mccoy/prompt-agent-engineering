@@ -1,3 +1,26 @@
+---
+title: "Video Generation Prompt Guide"
+category: image-generation/model-specific
+description: "Authoritative guide for creating AI video generation prompts, focused on Google Veo 3 / Veo 3.1. Based on official documentation, community best practices, and empirical testing of what produces cinematic-quality results."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-14
+  - SV-16
+  - SV-17
+  - SV-18
+difficulty: intermediate
+tags:
+  - video-generation
+  - veo
+  - model-guide
+  - prompting
+  - character-consistency
+updated: "2026-10-06"
+related_prompts:
+  - domain-image-generation/IMAGE_GENERATION_GUIDE.md
+---
+
 # Video Generation Prompt Guide
 
 **Purpose:** Authoritative guide for creating AI video generation prompts, focused on Google Veo 3 / Veo 3.1. Based on official documentation, community best practices, and empirical testing of what produces cinematic-quality results.
@@ -431,6 +454,25 @@ When using Veo through Vertex AI or other API integrations:
 | `enhancePrompt` | boolean | Auto-enrichment with cinematic terminology (default: on) |
 
 **Note:** Disable `enhancePrompt` when you want precise control without automated additions.
+
+---
+
+## False-Positive Prevention
+
+When applying this guide, a prompt can satisfy all 11 checklist lines and the clip still fail on playback. The traps:
+
+❌ **DON'T:**
+- Count dialogue as delivered because the prompt uses the `says:` colon form — generated audio can drop words, paraphrase, hand the line to the wrong character, or leave lips moving out of sync.
+- Plan beats whose timings add up to more than the clip; a TIMING block running to 10 s against `durationSeconds: 8` gets compressed or truncated, not extended.
+- Judge continuity only clip to clip — shot 4 can match shot 3 while the jacket, hair length and key-light side have drifted far from shot 1.
+- Sign off dialogue timing or lip-sync from iterations run with `generateAudio` off; the cost tip saves money but leaves the audio untested until the production pass.
+- Assume the clip followed your wording while `enhancePrompt` is on (the default); auto-enrichment adds cinematic terms you did not write and can dilute a style or negative constraint.
+
+✅ **DO:**
+- Transcribe the generated dialogue and compare it with the script line by line, including which character speaks each line; any dropped or changed word is a fail.
+- Add up every beat's timing and confirm the total fits a `durationSeconds` value the model accepts — the guide lists 4, 6 and 8 as of February 2026 [VERIFY: current Veo docs].
+- Compare each new clip with the first clip and the character bible, and check screen direction: a subject exiting frame right in shot N must enter from frame left in shot N+1.
+- Scrub the whole clip for burned-in subtitles or captions rather than judging from the thumbnail or first frame.
 
 ---
 

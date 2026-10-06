@@ -16,7 +16,7 @@ tags:
   - cross-model
   - workflow
   - sequential-art
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/VIDEO_GENERATION_GUIDE.md
@@ -279,6 +279,23 @@ A storyboard panel intended for video handoff needs:
 | Film / cinema (wide) | 2.39:1 | 2560 × 1072 |
 | Nano Banana 2 extreme vertical | 1:4 | 512 × 2048 |
 | Nano Banana 2 extreme horizontal | 4:1 | 2048 × 512 |
+
+---
+
+## False-Positive Prevention
+
+When applying this guide, a storyboard can read as coherent on the grid and still fail as keyframes. The traps:
+
+❌ **DON'T:**
+- Judge character and colour-grade consistency neighbour to neighbour; panels 1→2→3… can each pass while panel 6 no longer matches the reference pack or panel 1's grade.
+- Re-check only the panels named under REFINEMENTS FROM SCREENING — the production pass regenerates the whole grid, so panels that passed screening are new images.
+- Plan a handoff on the guide's say-so: its own dead-pipeline note (Sora app shut April 2026, API discontinued September 2026) shows how fast routes close, and the Pipeline Options table, the $0.002/image screening price and the Ingredients/Frames reference limits are all dated June 2026 [VERIFY: current Veo / Seedance / Kling docs].
+- Pass "Shot progression follows the beat sheet" because the shot types match while a panel's action belongs to a different beat.
+
+✅ **DO:**
+- Compare every panel with the character anchor, and with panel 1 for grade; write down the key-light (shadow) side per panel and look for the flip.
+- Before cutting a grid into keyframes, compute panel size: a 3 × 2 grid on a 2048 × 2048 canvas yields panels of roughly 682 × 1024 (portrait, about 2:3), not 16:9 frames — generate per panel at the target ratio instead.
+- Add up the Veo template's TIMING rows and confirm the total equals the [DURATION] you pass and stays within the video model's current maximum clip length.
 
 ---
 

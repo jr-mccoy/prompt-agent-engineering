@@ -25,7 +25,7 @@ tags:
   - data-visualization
   - visual-design
   - prompt-engineering
-updated: "2026-04-10"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/healthcare/pacu_infographic_image_prompt.md
@@ -339,6 +339,25 @@ Before delivering the prompt, verify:
 
 If any technique is missing, add it before delivering.
 ```
+
+---
+
+## False-Positive Prevention
+
+When running this meta-prompt, the generated prompt can answer all eight QUALITY SELF-CHECK questions with yes while carrying content the user never supplied. The traps:
+
+❌ **DON'T:**
+- Fill a SECTION's "Contains:" line or a data callout with plausible statistics, dates or milestones when the user gave a topic but no figures — "the history of AI from 1950 to 2026 with 8 key milestones" invites eight invented dates.
+- Add a sources line to the tertiary tier ("fine print, sources") naming a report or organisation the user did not cite.
+- Re-derive or reformat the user's values; rounding $4.2M, recomputing +18%, or turning "-0.4pp" churn into "-0.4%" changes the claim.
+- Read "All content items included" in the template's FINAL VALIDATION CHECK as covering the data — it passes when a number is present but rendered wrong.
+- Check only the Text hex against the main Background hex for the 4.5:1 line; body text also sits on each SECTION's own background colour.
+
+✅ **DO:**
+- Before delivering, list every number, date, name and source in the generated prompt and mark each with the CONTENT ITEMS entry it came from; anything without a match becomes a bracketed `[USER TO SUPPLY: …]` slot, not a value.
+- Carry each figure over exactly as the user wrote it, units included, and add one line per figure to the generated FINAL VALIDATION CHECK so whoever reviews the render compares the drawn value with it.
+- For Nano Banana Pro targets, state in the generated prompt that only the supplied numbers may appear, so search grounding is told not to substitute its own.
+- Where a chart is drawn, specify bar lengths or pie angles derived from the user's values, and confirm pie shares sum to 100%.
 
 ---
 

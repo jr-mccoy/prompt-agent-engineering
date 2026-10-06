@@ -2,13 +2,23 @@
 title: "Multiple Choice Assessment Worksheet Generator"
 category: education
 description: "Generate standards-aligned multiple-choice assessment worksheets with balanced distractors and print-first layout controls."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - assessment
   - worksheet
   - multiple-choice
   - quiz
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Multiple Choice Assessment Worksheet Generator
@@ -128,3 +138,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 item because it has four options and one keyed letter; a distractor that is true under another reasonable reading of the stem ("Which animal lives in water?" with both whale and frog listed) gives two right answers.
+- Let the keyed option be the longest, the most qualified, or the only one that agrees grammatically with the stem — the item then rewards test-wiseness rather than the standard.
+- Pair "all of the above" with a key that ignores the case where only two of the three listed options are fully true.
+- Keep the key's letters after rendering without rereading the options — image models reshuffle or relabel A-D, so a correct "B" in the key can now point at a distractor.
+
+✅ **DO:**
+- Answer every rendered item cold, without the key, and write one sentence refuting each distractor; any distractor you cannot refute in one sentence is a second answer and the item is rewritten.
+- Check the key by option text, not just letter, against the rendered ZONE 3 and ZONE 4 layout.
+- Tally the keyed letters across the set and rebalance if one letter carries far more than its share or forms a visible run.

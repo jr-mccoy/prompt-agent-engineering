@@ -1,3 +1,30 @@
+---
+title: "Comprehensive Image Prompting Guide"
+category: image-generation/cross-model
+description: "A complete reference for crafting effective prompts across all AI image generation models and visual output types — from photorealistic renders to structured diagrams to print-ready materials."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+difficulty: intermediate
+tags:
+  - image-generation
+  - prompting
+  - model-guide
+  - cross-model
+  - text-rendering
+  - diagram
+updated: "2026-10-06"
+related_prompts:
+  - domain-image-generation/IMAGE_GENERATION_GUIDE.md
+  - domain-image-generation/VIDEO_GENERATION_GUIDE.md
+---
+
 # Comprehensive Image Prompting Guide
 
 **Purpose:** A complete reference for crafting effective prompts across all AI image generation models and visual output types — from photorealistic renders to structured diagrams to print-ready materials.
@@ -1122,6 +1149,25 @@ OUTPUT:
 - Repeat the grid spec: "EXACTLY 2 rows x 3 columns" in rules AND validation
 - Add: "Do NOT combine elements. Do NOT reorganize. Follow assignments exactly."
 - Use the constraint redundancy pattern (3 levels)
+
+---
+
+## False-Positive Prevention
+
+When applying this guide, the 5-layer prompt can be complete while the image only resembles what it specifies. The traps:
+
+❌ **DON'T:**
+- Count a palette as "applied" because the render looks on-brand — a hex code in the prompt is a request, and lighting, grading and JPEG compression routinely move a flat #2563EB fill to a blue the brand owner would reject.
+- Read lens and camera terms as optical instructions the model executes; "85mm at f/2.8" often acts as a style word for "portrait look", and the background can come back fully sharp with wide-angle perspective.
+- Rely on the colour-temperature and Pantone rows in Section 6 as controls — "nothing cooler than 4000K" and "Pantone 186 C" are descriptions the model approximates, not values it can meter or look up.
+- Tick "Tested with target model" after a single render; the same prompt varies run to run, and one good draw is no evidence the prompt holds.
+- Assume a Stable Diffusion 1.5 prompt fits because it is under 77 words — the Appendix limit is 77 CLIP tokens, punctuation and word pieces count, and everything past it is cut without warning.
+
+✅ **DO:**
+- Pick each critical colour from a flat, evenly lit region of the render with a colour picker and write the sampled hex beside the specified one; convert any Pantone name to hex yourself before it goes into the prompt.
+- Check every lens claim against its visible consequence — soft background at a wide aperture, compressed spacing at telephoto, stretched edges at 14–24mm — and where the consequence is absent, describe the effect in plain words instead of naming the lens.
+- Run the final prompt at least three times (or on three seeds) and mark a checklist line only for properties present in all three.
+- Count tokens with the target model's tokenizer whenever the prompt is near a length limit.
 
 ---
 

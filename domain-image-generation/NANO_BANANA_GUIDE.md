@@ -25,7 +25,7 @@ tags:
   - character-consistency
   - storyboard
   - veo
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_PROMPTING_GUIDE.md
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
@@ -847,6 +847,23 @@ Use specific, measurable corrections:
 | "Fix the face" | "The jawline is too narrow compared to Reference 1 — widen to match" |
 | "More dramatic lighting" | "Add a hard key light from upper-left at 45°, deep shadows on the right side of the face" |
 | "Wrong style" | "This reads as photorealistic — shift to the watercolor illustration style from the style reference" |
+
+---
+
+## False-Positive Prevention
+
+When applying this guide, a prompt can follow its patterns exactly and still rest on facts that were true only on 2026-06-23. The traps:
+
+❌ **DON'T:**
+- Copy model IDs, slot splits (6 object + 5 character + 3 style on Pro; 10 object + 4 character on Nano Banana 2), the 512px screening size or the extreme ratios into a production prompt as fixed facts — the June 25, 2026 preview-ID deprecation in Section 1 shows how quickly they move.
+- Assume the slot-number ranges bind roles by upload position; unless the API exposes a role field, "Reference Image 3 (OBJECT)" works only because the prompt text says so.
+- Accept a search-grounded infographic because its numbers look plausible and are spelled correctly — the after-output line "Text is accurate" checks characters, not whether the 2026 figure is right or where it came from.
+- Paste the Python samples unchanged; parameter names such as `size`, `quality`, `n` and `tools` must match the SDK you actually call, and an unrecognised parameter is either rejected or has no effect.
+
+✅ **DO:**
+- Confirm model ID, size options, aspect ratios and reference limits against current Gemini API documentation before quoting them [VERIFY: current Gemini API image-generation docs], and record which ones changed.
+- For grounded output, list each rendered figure next to the source you checked it against; a figure you cannot trace is removed or replaced with supplied data.
+- Score the iteration decision tree's 90% / 70% / 40% bands as the share of the eight after-output checks that pass on the render, not as an impression.
 
 ---
 

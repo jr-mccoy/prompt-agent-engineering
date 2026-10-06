@@ -2,13 +2,23 @@
 title: "Step-by-Step Drawing Worksheet Generator"
 category: education
 description: "Generate guided drawing worksheets that break a subject into sequenced, student-friendly drawing steps."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - arts
   - drawing
   - guided-practice
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Step-by-Step Drawing Worksheet Generator
@@ -121,3 +131,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Count six ZONE 3 step boxes and call the sequence done; the model often redraws the subject from scratch in each box, so pose, proportion, or facing direction changes between steps.
+- Accept a later box that shows detail no earlier step introduced (whiskers, a sleeve cuff, a second ear) — the student hits that box with no instruction for it.
+- Let a guide shape vanish between boxes without a written "erase" direction, or let the step-1 head circle be a different size from the head it becomes in step 6.
+
+✅ **DO:**
+- Overlay each step box on the next at the same scale and list the strokes added; every box should add one to three strokes and remove nothing unless its caption says to erase.
+- Check the rendered step captions run 1 through 6 with no repeat or skip, separately from counting the boxes themselves.
+- Have someone reproduce the subject in the ZONE 4 frame using only the printed steps; every point where they had to guess marks a missing step.

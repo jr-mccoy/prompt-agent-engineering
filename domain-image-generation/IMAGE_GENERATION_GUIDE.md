@@ -1,3 +1,29 @@
+---
+title: "Image Generation Prompt Guide"
+category: image-generation/cross-model
+description: "Authoritative guide for creating image generation prompts that actually produce usable results. Based on empirical testing of what works vs. what fails with AI image models."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+difficulty: intermediate
+tags:
+  - image-generation
+  - print-ready
+  - badge-buddy
+  - worksheet
+  - reference-card
+  - no-ui
+updated: "2026-10-06"
+related_prompts:
+  - domain-image-generation/GPT_IMAGE_2_GUIDE.md
+---
+
 # Image Generation Prompt Guide
 
 **Purpose:** Authoritative guide for creating image generation prompts that actually produce usable results. Based on empirical testing of what works vs. what fails with AI image models.
@@ -588,6 +614,24 @@ These models respond well to:
 - The 5-section structure (Scene / Subject / Key Details / Use Case / Constraints) maps cleanly onto print-ready prompts — put the print-specific block under CONSTRAINTS.
 - `input_fidelity` is disabled in gpt-image-2 — do not pass it.
 - For full prompting details see **[GPT_IMAGE_2_GUIDE.md](GPT_IMAGE_2_GUIDE.md)**.
+
+---
+
+## False-Positive Prevention
+
+When applying this guide, a prompt can carry all 8 techniques and still yield an unusable print piece. The traps:
+
+❌ **DON'T:**
+- Tick the FINAL VALIDATION CHECK lines ("No gradients", "Equal-sized boxes") because the prompt contains them — the block is text the model reads, not a test the model ran, and it says nothing about the rendered file.
+- Accept "no gradients" because the constraint appears at all three redundancy levels; a faint tonal ramp across a header fill, or a soft vignette at the canvas edge, reads as solid at thumbnail size and bands once printed.
+- Pass Grid Forcing on box count alone — a 2×3 grid holding all six items, with BOX 4's content sitting in position 2, has the right count and the wrong reading order.
+- Treat "1350 x 825 px at 300 DPI" as delivered because it was locked in the prompt; most models return their own fixed sizes, and a 1024-px-wide output stretched to 4.5 inches prints at about 228 DPI.
+
+✅ **DO:**
+- Run the validation checklist against the rendered image one line at a time, recording pass/fail and what you looked at (zoom level, pixel sampled) — a line with no observation is unverified, not passed.
+- Sample the hex value at two opposite corners and the centre of every large fill; a difference beyond compression noise (a few units per channel) is a gradient, whatever the prompt said.
+- Read the grid left-to-right, top-to-bottom, write down what each position actually holds, and compare that list with the BOX 1…BOX N enumeration — order, spelling, and no item split across two boxes.
+- Open the file's pixel dimensions and compute effective DPI as pixel width ÷ print width in inches; below 300, upscale or regenerate before calling it print-ready.
 
 ---
 

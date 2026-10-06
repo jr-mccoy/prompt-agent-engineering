@@ -2,13 +2,23 @@
 title: "Counting Worksheet Generator"
 category: education
 description: "Generate early-childhood counting worksheets using ten-frames, object sets, and numeral tracing."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - early-childhood
   - counting
   - numeracy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Counting Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Trust the numeral printed beside a ZONE 2 group; image models routinely draw six objects when the prompt asked for seven, and the label stays "7".
+- Accept objects that overlap, touch, or are cropped by the zone edge — a child cannot tell whether the half-hidden apple counts.
+- Let two ZONE 3 picture sets share a size, or leave a numeral with no matching set, which turns the match into guessing.
+- Pass the ZONE 4 trace strip with reversed numerals (a backward 3, 7, or 9) or a 4, 7, or 9 drawn in a form the class handwriting program does not teach.
+
+✅ **DO:**
+- Count every object in every rendered group with a finger on each one and write your count next to the intended number; regenerate any group that differs instead of changing the key to fit the render.
+- Check any ten-frame: the filled cells must equal the target and fill left to right, top row first.
+- Compare each numeral glyph to the school's numeral-formation chart and confirm none is mirrored.

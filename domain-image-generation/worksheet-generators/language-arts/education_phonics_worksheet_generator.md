@@ -2,13 +2,23 @@
 title: "Phonics Worksheet Generator"
 category: education
 description: "Generate phonics worksheets for sound-symbol mapping, blending, segmentation, and decoding practice."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - language-arts
   - worksheet
   - phonics
   - reading-foundations
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Phonics Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Use a picture word whose spelling holds the pattern but whose sound does not: said for long a (ai), bread for long e (ea).
+- Choose words whose target vowel is dialect-dependent: pin and pen merge in Southern US English, cot and caught merge across much of North America, and aunt varies.
+- Use a picture with two common names (bunny or rabbit, couch or sofa) in an item where only one name has the sound.
+- Put words in ZONE 5 decoding sentences that use patterns not yet taught and are not on the heart-word list.
+
+✅ **DO:**
+- Say each picture word aloud and segment it into phonemes, confirming the target sound's position (initial, medial, final) matches the item.
+- Check every word in ZONE 5 against the decodable bank and the taught heart words, and list any outsiders.
+- Place every ZONE 4 word in exactly one column; replace any word that fits two.

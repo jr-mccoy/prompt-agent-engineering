@@ -16,7 +16,7 @@ tags:
   - flux
   - ideogram
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
   - domain-image-generation/NANO_BANANA_GUIDE.md
@@ -211,6 +211,25 @@ Some workflows benefit from using different models at different stages:
 | Claimed Pipeline | Status | What Actually Works |
 |-----------------|--------|-------------------|
 | gpt-image-2 → Sora | **Dead.** Sora consumer app shut down April 26, 2026. API discontinued September 24, 2026. | gpt-image-2 → Seedance 2.0 (ByteDance) for storyboard-to-video (community workflow) |
+
+---
+
+## False-Positive Prevention
+
+When applying this guide, a model choice can follow a matrix row exactly and still be wrong because the row's reason has expired. The traps:
+
+❌ **DON'T:**
+- Pick a First Choice on a capability claim — "95%+" text accuracy, "Near-perfect" rendering, 14 vs. 16 reference slots, "Only model supporting extreme ratios" — without confirming it still holds; every cell is a market snapshot as of 2026-06-23 [VERIFY: current vendor docs].
+- Read the frontmatter `updated:` date as the date the claims were checked; the body's "Last updated: 2026-06-23" and the closing footnote are what date the comparison table.
+- Treat the Cost tier column ($ to $$$) as pricing — it is a relative ranking with no per-image figure, and quality, size and batch settings all change the bill.
+- Stop at the first YES in the flowchart: a task needing current data and 16 references routes to Nano Banana Pro, whose column caps references at 14.
+- Assume a pipeline is live because it is absent from Dead Pipelines; that table records one dead route, not every route that has changed.
+
+✅ **DO:**
+- Write the task's hard requirements (text volume, reference count, aspect ratio, budget, video target) as a list and check the chosen model's column against every one, not only the row that selected it.
+- Where this guide and a model-specific guide disagree — the comparison table says "3840px max edge", GPT_IMAGE_2_GUIDE.md says less than 3840 — follow the model guide, then the vendor docs.
+- Run one test prompt carrying the hardest requirement on both First Choice and Backup, and decide on the two renders.
+- Price the planned run from the vendor's current price page (images × quality × size) before letting cost decide.
 
 ---
 

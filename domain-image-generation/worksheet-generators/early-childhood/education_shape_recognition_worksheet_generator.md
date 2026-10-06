@@ -2,13 +2,23 @@
 title: "Shape Recognition Worksheet Generator"
 category: education
 description: "Generate early-childhood shape recognition worksheets covering common 2D shapes with tracing and identification."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - early-childhood
   - geometry
   - shapes
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Shape Recognition Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 "triangle" with a rounded corner or open gap, or a "square" whose sides visibly differ — the model's approximation teaches the wrong attribute.
+- Key a square turned 45 degrees as not-a-square, or show triangles only point-up; children learn that orientation defines the shape.
+- Exclude the square from a "circle all the rectangles" item — a square is a rectangle, so that key marks a correct child wrong.
+- Pass ZONE 4 shape names the model misspelled ("hexagan", "rectangel") because the matching lines look tidy.
+
+✅ **DO:**
+- Count sides and corners on every rendered target and distractor and measure side lengths with a ruler where the name depends on them.
+- Mark every shape in the mixed panel that meets the target definition, including rotated and resized ones, and compare your marks with the key.
+- Confirm each ZONE 5 trace outline is a closed dashed path with the same shape as its ZONE 4 name.

@@ -2,13 +2,23 @@
 title: "Tracing Worksheet Generator"
 category: education
 description: "Generate early-childhood tracing worksheets for pre-writing strokes, paths, and letter/number basics."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - early-childhood
   - fine-motor
   - tracing
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Tracing Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept dotted guides because they look dotted at screen size; at a corner or curve the model often leaves a gap longer than the dot spacing, and the child's stroke breaks there.
+- Draw ZONE 3 stroke arrows right-to-left on horizontal lines or bottom-to-top on verticals when the class writes top-to-bottom, left-to-right.
+- Let a ZONE 4 path cross itself, dead-end, or run through a drawn wall — the start and finish icons alone do not prove the route exists.
+- Number ZONE 5 letter or numeral strokes in an order or start point that differs from the school's formation model.
+
+✅ **DO:**
+- Zoom to 100% and follow every dotted path from its start dot to its end with a cursor, noting any gap wider than the dot spacing.
+- Trace each ZONE 4 route end to end and confirm it is continuous, never crosses itself, and keeps an even width a pencil can stay inside.
+- Compare each ZONE 5 start dot, arrow number, and direction against the published letter-formation chart for the program named in intake.

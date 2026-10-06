@@ -4,8 +4,8 @@
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
     "total_indexed_artifacts": 6165,
-    "artifacts_with_frontmatter": 5284,
-    "artifacts_without_frontmatter": 881,
+    "artifacts_with_frontmatter": 5287,
+    "artifacts_without_frontmatter": 878,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -15,8 +15,8 @@
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
     "total_prompts": 6165,
-    "prompts_with_frontmatter": 5284,
-    "prompts_without_frontmatter": 881
+    "prompts_with_frontmatter": 5287,
+    "prompts_without_frontmatter": 878
   },
   "prompts": [
     {
@@ -94600,7 +94600,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate visual arts worksheets focused on line, shape, texture, value, form, color (B/W-safe adaptation), and space.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -94609,7 +94619,7 @@
         "elements-of-art"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94650,7 +94660,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate life-skills worksheets for calendar literacy, sequencing routines, and planning weekly tasks.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -94659,7 +94679,7 @@
         "routines"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94700,7 +94720,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate color-theory concept worksheets adapted for black-and-white printing using labels, hatching, and pattern codes instead of color fill.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -94709,7 +94739,7 @@
         "black-and-white-safe"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94720,7 +94750,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate early-childhood counting worksheets using ten-frames, object sets, and numeral tracing.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -94729,7 +94769,7 @@
         "numeracy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94740,7 +94780,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate creative-writing worksheets with prompts, planning scaffolds, and drafting lines.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "language-arts",
         "worksheet",
@@ -94749,7 +94799,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94880,7 +94930,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate fill-in-the-blank assessment worksheets with scaffolded sentence frames and clear response spaces.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "assessment",
         "worksheet",
@@ -94889,7 +94949,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94990,7 +95050,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate grammar worksheets with sentence editing, parts of speech, and usage conventions practice.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "language-arts",
         "worksheet",
@@ -94999,7 +95069,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95040,7 +95110,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate handwriting worksheets with trace-copy-write lines and letter/word formation guides.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "language-arts",
         "worksheet",
@@ -95049,7 +95129,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95090,7 +95170,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate early-childhood letter recognition worksheets with uppercase/lowercase matching and initial-sound picture cues.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95099,7 +95189,7 @@
         "alphabet"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95140,7 +95230,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate matching assessment worksheets with clearly paired columns and ambiguity-resistant formatting.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "assessment",
         "worksheet",
@@ -95149,7 +95249,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95220,7 +95320,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate standards-aligned multiple-choice assessment worksheets with balanced distractors and print-first layout controls.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "assessment",
         "worksheet",
@@ -95229,7 +95339,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95300,7 +95410,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate early-childhood pattern recognition worksheets with AB, AAB, and ABB visual sequences.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95309,7 +95429,7 @@
         "logic"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95320,7 +95440,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate phonics worksheets for sound-symbol mapping, blending, segmentation, and decoding practice.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "language-arts",
         "worksheet",
@@ -95329,7 +95459,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95340,7 +95470,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate beginner foreign-language worksheets where learners match target-language words to pictures and categories.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95349,7 +95489,7 @@
         "picture-match"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95360,7 +95500,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate reading-comprehension worksheets with passage, text-dependent questions, and evidence lines.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "language-arts",
         "worksheet",
@@ -95369,7 +95519,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95500,7 +95650,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate learner self-assessment worksheets with rubric-style reflection, evidence prompts, and action-step planning.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "assessment",
         "worksheet",
@@ -95509,7 +95669,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95520,7 +95680,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate beginner foreign-language sentence-structure worksheets with word-order practice and scaffolded sentence building.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95529,7 +95699,7 @@
         "grammar"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95540,7 +95710,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate early-childhood shape recognition worksheets covering common 2D shapes with tracing and identification.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95549,7 +95729,7 @@
         "shapes"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95560,7 +95740,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate guided drawing worksheets that break a subject into sequenced, student-friendly drawing steps.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95569,7 +95759,7 @@
         "guided-practice"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95640,7 +95830,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate early-childhood tracing worksheets for pre-writing strokes, paths, and letter/number basics.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95649,7 +95849,7 @@
         "tracing"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95660,7 +95860,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate vocabulary practice worksheets including definitions, context clues, and usage tasks.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "language-arts",
         "worksheet",
@@ -95669,7 +95879,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95842,81 +96052,6 @@
       "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
-    },
-    {
-      "path": "domain-image-generation/IMAGE_PROMPTING_GUIDE.md",
-      "filename": "IMAGE_PROMPTING_GUIDE.md",
-      "title": "Comprehensive Image Prompting Guide",
-      "domain": "image-generation",
-      "category": "image-generation",
-      "description": "- IMAGE_GENERATION_GUIDE.md — Focused guide for print-ready materials (badge buddies, worksheets, reference cards) with 8 constraint-enforcement techniques - VIDEO_GENERATION_GUIDE.md — Video generation with Veo 3 / 3.1",
-      "techniques": [],
-      "keywords": [
-        "GUIDE",
-        "IMAGE",
-        "PROMPTING",
-        "attention",
-        "beats",
-        "contents",
-        "image",
-        "models",
-        "pillars",
-        "principle"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-      "filename": "IMAGE_GENERATION_GUIDE.md",
-      "title": "Image Generation Prompt Guide",
-      "domain": "image-generation",
-      "category": "image-generation",
-      "description": "---",
-      "techniques": [],
-      "keywords": [
-        "GENERATION",
-        "GUIDE",
-        "IMAGE",
-        "constraint",
-        "control",
-        "core",
-        "enumerated",
-        "forcing",
-        "grid",
-        "negative"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-image-generation/VIDEO_GENERATION_GUIDE.md",
-      "filename": "VIDEO_GENERATION_GUIDE.md",
-      "title": "Video Generation Prompt Guide",
-      "domain": "image-generation",
-      "category": "image-generation",
-      "description": "---",
-      "techniques": [],
-      "keywords": [
-        "GENERATION",
-        "GUIDE",
-        "VIDEO",
-        "aesthetic",
-        "atmosphere",
-        "camera",
-        "character",
-        "core",
-        "details",
-        "elements"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
     },
     {
       "path": "domain-image-generation/gpt-image-2/gptimage2_advertising_creative_brief.md",
@@ -96601,6 +96736,71 @@
       "has_frontmatter": true
     },
     {
+      "path": "domain-image-generation/IMAGE_PROMPTING_GUIDE.md",
+      "filename": "IMAGE_PROMPTING_GUIDE.md",
+      "title": "Comprehensive Image Prompting Guide",
+      "domain": "image-generation",
+      "category": "image-generation/cross-model",
+      "description": "A complete reference for crafting effective prompts across all AI image generation models and visual output types — from photorealistic renders to structured diagrams to print-ready materials.",
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
+      "keywords": [
+        "image-generation",
+        "prompting",
+        "model-guide",
+        "cross-model",
+        "text-rendering",
+        "diagram"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
+        "domain-image-generation/VIDEO_GENERATION_GUIDE.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
+      "filename": "IMAGE_GENERATION_GUIDE.md",
+      "title": "Image Generation Prompt Guide",
+      "domain": "image-generation",
+      "category": "image-generation/cross-model",
+      "description": "Authoritative guide for creating image generation prompts that actually produce usable results. Based on empirical testing of what works vs. what fails with AI image models.",
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
+      "keywords": [
+        "image-generation",
+        "print-ready",
+        "badge-buddy",
+        "worksheet",
+        "reference-card",
+        "no-ui"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-image-generation/GPT_IMAGE_2_GUIDE.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-image-generation/gpt-image-2/gptimage2_surgical_edit_change_preserve.md",
       "filename": "gptimage2_surgical_edit_change_preserve.md",
       "title": "GPT Image 2 — Surgical Edit (Change / Preserve)",
@@ -96980,7 +97180,7 @@
         "prompt-engineering"
       ],
       "difficulty": "advanced",
-      "updated": "2026-04-10",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/healthcare/pacu_infographic_image_prompt.md"
@@ -97040,7 +97240,7 @@
         "image-generation"
       ],
       "difficulty": "beginner",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/GPT_IMAGE_2_GUIDE.md",
         "domain-image-generation/NANO_BANANA_GUIDE.md",
@@ -97077,7 +97277,7 @@
         "prompting"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-05",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_PROMPTING_GUIDE.md",
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
@@ -97119,12 +97319,41 @@
         "veo"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_PROMPTING_GUIDE.md",
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/GPT_IMAGE_2_GUIDE.md",
         "domain-image-generation/VIDEO_GENERATION_GUIDE.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-image-generation/VIDEO_GENERATION_GUIDE.md",
+      "filename": "VIDEO_GENERATION_GUIDE.md",
+      "title": "Video Generation Prompt Guide",
+      "domain": "image-generation",
+      "category": "image-generation/model-specific",
+      "description": "Authoritative guide for creating AI video generation prompts, focused on Google Veo 3 / Veo 3.1. Based on official documentation, community best practices, and empirical testing of what produces cinematic-quality results.",
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-14",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
+      "keywords": [
+        "video-generation",
+        "veo",
+        "model-guide",
+        "prompting",
+        "character-consistency"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-image-generation/IMAGE_GENERATION_GUIDE.md"
       ],
       "has_frontmatter": true
     },
@@ -97967,7 +98196,7 @@
         "sequential-art"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/gpt-image-2/gptimage2_character_consistency_anchor.md",
@@ -98000,7 +98229,7 @@
         "sequential-art"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/VIDEO_GENERATION_GUIDE.md",
