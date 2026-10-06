@@ -19,10 +19,22 @@ related_prompts:
   - medicine_clinical_decision_support
   - medicine_drug_interaction_checker
   - medicine_patient_education_adapter
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Chronic Disease Management Planner
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Generate structured, longitudinal care plans for chronic conditions including monitoring schedules, medication titration pathways, patient self-management goals, complication screening timelines, and multi-provider coordination to support sustained disease management in primary care and specialty settings.
 
@@ -305,6 +317,23 @@ COMMUNICATION PLAN:
   - Who communicates medication changes: [Protocol]
   - Who manages acute exacerbations: [Protocol]
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the CURRENT METRICS vs TARGETS table with a target copied from the Condition-Specific Quick References and no individualisation line — a frail 86-year-old given A1c <7% passes a skim and fails Step 1.
+- Tick a GUIDELINE-DIRECTED THERAPY CHECKLIST item "on" when the drug is at a starting dose; for the HFrEF pillars, "on" without dose-versus-target is an unearned tick.
+- Populate DRUG INTERACTION ALERTS with generic class warnings or pairs that are not both on the medication list, or leave it empty because none came to mind — every alert names two listed drugs and an action.
+- Generate "Next Due" or "Last Done" dates the input did not supply; write `[date not provided]` so the screening gap stays visible.
+- Write SELF-MANAGEMENT GOALS such as "improve diet" or "exercise more" — each needs a number, a unit, a by-date and the measure the patient will use.
+
+✅ **DO:**
+- Recompute every Gap cell from the Current and Target columns with units (A1c 8.4% vs <7% → 1.4 points; BP 148/92 vs <130/80 → 18/12 mmHg) and check that the Priority column follows the largest clinically meaningful gaps.
+- Trace each Change or Add line to a gap in the targets table, and each dose to the clinician's input, the label or `[VERIFY: current guideline/label]`; a line with no gap behind it is an unexplained change.
+- Check the Quick Reference used against the current edition of its guideline (ADA, ACC/AHA, GOLD, KDIGO) — their classification schemes and step therapies are revised often.
+- Count this visit's changes against the Incremental Change rule (1–2 per visit) and move the rest to "Next decision point".
 
 ---
 

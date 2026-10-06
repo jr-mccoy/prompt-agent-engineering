@@ -15,8 +15,20 @@ tags:
   - secondary-prevention
   - post-mi
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -55,6 +67,20 @@ Cardiologist managing post-MI secondary prevention.
 8. **Risk-factor modification:** smoking cessation (pharmacotherapy), BP <130/80, diabetes control, influenza/COVID vaccination, Mediterranean diet, activity, weight, depression screen.
 
 9. **Monitor:** lipids 4–12 wk, BMP after ACEi/MRA, bleeding on DAPT, LVEF reassessment, adherence (DAPT interruption is high-risk for stent thrombosis).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pair ticagrelor with an aspirin dose above 100 mg/day, or write "aspirin 81 mg" without checking whether a 325 mg ED loading order was carried forward to discharge `[VERIFY: ticagrelor label]`.
+- Clear prasugrel on age and weight alone when the problem list says nothing explicit about prior stroke/TIA — mark that field "unknown", not "none".
+- Give one LDL goal as if universal — ESC/EAS (<55 mg/dL plus ≥50% reduction) and ACC/AHA (non-statin add-on thresholds) differ; name the guideline the number came from `[VERIFY: current guideline]`.
+- Start ticagrelor without checking the list for strong CYP3A inhibitors or inducers (clarithromycin, ketoconazole, rifampin, carbamazepine) `[VERIFY: label]`.
+- Fill the MRA line with "K <5.0, eGFR adequate" — write the actual potassium and creatinine/eGFR values with dates, plus the ACEi/ARB already co-prescribed that adds to hyperkalaemia risk.
+
+✅ **DO:**
+- Build a dated antithrombotic table — each agent with its start date (the PCI/event date from the input, not the discharge date), the stop or reassessment date computed from it, and the bleeding or ischaemic trigger that would shorten or extend it.
+- When an anticoagulant indication exists, state the aspirin stop date, the P2Y12 agent continued with the DOAC, and the DOAC dose-reduction criteria checked against the age, weight and creatinine in the input `[VERIFY: DOAC label]`.
+- Quote the LVEF with its date and modality; flag an LVEF measured during the acute event as provisional and schedule the repeat that ICD candidacy depends on.
 
 ## Output Format
 

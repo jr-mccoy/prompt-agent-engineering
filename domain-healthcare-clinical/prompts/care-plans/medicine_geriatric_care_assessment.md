@@ -21,10 +21,22 @@ related_prompts:
   - medicine_drug_interaction_checker
   - medicine_goals_of_care_conversation_guide
   - medicine_chronic_disease_management_planner
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Geriatric Care Assessment
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide a comprehensive geriatric assessment framework covering functional status (ADLs/IADLs), cognitive screening interpretation, fall risk assessment, polypharmacy review with Beers criteria and STOPP/START, delirium screening, frailty assessment, and goals-of-care contextualization for elderly patients with multiple comorbidities.
 
@@ -379,6 +391,23 @@ SOCIAL ASSESSMENT:
   Advance directives: [ ] Complete [ ] Incomplete [ ] None
   Healthcare proxy: [ ] Designated — name: ___ [ ] Not designated
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report a Katz, Lawton, Mini-Cog, MNA-SF or Fried total that does not equal the items ticked in its own table — the headline score is the part readers copy.
+- Read a MoCA, MMSE or Mini-Cog taken during suspected delirium, with uncorrected vision/hearing, or administered outside the patient's first language as evidence of dementia or MCI — report "screen not interpretable" and repeat after resolution.
+- Call CAM positive without Feature 1 AND Feature 2 both documented; disorganised thinking alone is not delirium.
+- Flag a Beers "avoid in specific conditions" drug when that condition is absent, or miss the condition-specific rows (anticholinergics in dementia, NSAIDs in CKD) when it is present — name the Beers row used.
+- Assign ACB points or a Fried item (grip strength, gait speed) without the measured value; one inferred item moves the total from pre-frail to frail.
+
+✅ **DO:**
+- Recompute orthostatic drops from the supine reading and the 1- and 3-minute standing readings (SBP ≥20 or DBP ≥10) and state which reading met it; a standing BP with no supine value cannot rule it in or out.
+- Count total medications from the full list, including OTC, supplements and PRNs actually taken, and reconcile that count with the "Total medications" field before applying the polypharmacy label.
+- Check the CFS level against the ADL/IADL tables (CFS 5 = IADL help, CFS 6 = ADL help); a CFS that contradicts the functional tables is wrong in one of the two places.
+- Trace each deprescribing recommendation to a named Beers or STOPP criterion and to the indication listed for that drug, so a still-indicated drug is not stopped on a list match.
 
 ---
 

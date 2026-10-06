@@ -4,8 +4,8 @@
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
     "total_indexed_artifacts": 6165,
-    "artifacts_with_frontmatter": 5287,
-    "artifacts_without_frontmatter": 878,
+    "artifacts_with_frontmatter": 5288,
+    "artifacts_without_frontmatter": 877,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -15,8 +15,8 @@
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
     "total_prompts": 6165,
-    "prompts_with_frontmatter": 5287,
-    "prompts_without_frontmatter": 878
+    "prompts_with_frontmatter": 5288,
+    "prompts_without_frontmatter": 877
   },
   "prompts": [
     {
@@ -81091,7 +81091,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81143,7 +81143,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81169,7 +81169,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81195,7 +81195,7 @@
         "chronic-disease"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81221,7 +81221,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81247,7 +81247,7 @@
         "chronic-disease"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81273,7 +81273,7 @@
         "care-plan"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81299,7 +81299,7 @@
         "care-plan"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81325,7 +81325,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81351,7 +81351,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81377,7 +81377,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81403,7 +81403,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81429,7 +81429,7 @@
         "chronic-disease"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81456,7 +81456,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81482,7 +81482,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81508,7 +81508,7 @@
         "chronic-disease"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81534,7 +81534,7 @@
         "care-plan"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81560,7 +81560,7 @@
         "care-plan"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81586,7 +81586,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81612,7 +81612,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81638,7 +81638,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81664,7 +81664,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81690,7 +81690,7 @@
         "care-plan"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -81716,7 +81716,7 @@
         "chronic-disease"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84915,6 +84915,29 @@
       "has_frontmatter": false
     },
     {
+      "path": "domain-healthcare-clinical/prompts/communication/medicine_behavioral_health_coordination_micro_guide.md",
+      "filename": "medicine_behavioral_health_coordination_micro_guide.md",
+      "title": "Behavioral Health Coordination Micro-Guide",
+      "domain": "healthcare-clinical",
+      "category": "healthcare-clinical/communication",
+      "description": "Brief framework for a clinician to coordinate medical and behavioral health plans, giving the team a shared structure for risk, follow-up, and communication.",
+      "techniques": [
+        "ST-01",
+        "ST-03",
+        "QA-04"
+      ],
+      "keywords": [
+        "medicine",
+        "mental-health",
+        "care-coordination",
+        "communication"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-06",
+      "related_prompts": [],
+      "has_frontmatter": true
+    },
+    {
       "path": "domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md",
       "filename": "medicine_handoff_communication.md",
       "title": "Handoff Communication Structurer",
@@ -85187,31 +85210,6 @@
         "domain-healthcare-clinical/prompts/quality/medicine_adverse_event_analyzer.md"
       ],
       "has_frontmatter": true
-    },
-    {
-      "path": "domain-healthcare-clinical/prompts/communication/medicine_behavioral_health_coordination_micro_guide.md",
-      "filename": "medicine_behavioral_health_coordination_micro_guide.md",
-      "title": "Behavioral Health Coordination Micro-Guide",
-      "domain": "healthcare-clinical",
-      "category": "healthcare-clinical/prompts/communication",
-      "description": "- A clinician needs a brief framework to coordinate medical and behavioral health plans.",
-      "techniques": [],
-      "keywords": [
-        "behavioral",
-        "checklist",
-        "coordination",
-        "guide",
-        "health",
-        "medicine",
-        "micro",
-        "output",
-        "prompt",
-        "related"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
     },
     {
       "path": "domain-healthcare-clinical/prompts/communication/medicine_clinical_visual_education_micro_guide.md",
@@ -85850,7 +85848,7 @@
         "readmission-prevention"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_handoff_communication",
         "medicine_drug_interaction_checker",
@@ -85881,7 +85879,7 @@
         "longitudinal"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_clinical_decision_support",
         "medicine_drug_interaction_checker",
@@ -85910,7 +85908,7 @@
         "outreach"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-05",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_chronic_disease_management_planner",
         "medicine_preventive_care_screening_advisor",
@@ -86025,7 +86023,7 @@
         "frailty"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_drug_interaction_checker",
         "medicine_goals_of_care_conversation_guide",
@@ -86265,7 +86263,7 @@
         "care-gaps"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-05",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_preventive_care_screening_advisor",
         "medicine_care_coordination_transitions",

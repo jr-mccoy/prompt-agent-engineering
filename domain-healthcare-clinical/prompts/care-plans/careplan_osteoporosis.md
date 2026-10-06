@@ -15,8 +15,20 @@ tags:
   - osteoporosis
   - bone-health
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -56,6 +68,21 @@ Endocrinologist or primary care attending managing osteoporosis.
 8. **Safety:** dental evaluation before IV bisphosphonate/denosumab (ONJ, rare); atypical femoral fracture counseling; oral bisphosphonate administration instructions (upright, empty stomach); avoid bisphosphonates if eGFR <30–35 (use denosumab); ensure normocalcemia before antiresorptive.
 
 9. **Monitor:** DXA every 1–2 years, response/adherence, calcium/vitamin D, renal function, fracture occurrence.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Apply the T-score ≤−2.5 cutoff to premenopausal women or men under 50 — that population is read on Z-scores, and a "DXA-diagnosed osteoporosis" label there is a misclassification.
+- Accept a lumbar-spine T-score measured across a compressed or degenerated vertebra as the lowest site — fracture and osteophytes falsely raise spine BMD; use the valid vertebrae or the hip.
+- Produce or "recalculate" a FRAX probability the input did not give — FRAX is country-specific and takes femoral-neck BMD; write `[FRAX not supplied]`.
+- Label the patient "very high risk" without naming the criterion that met it (fracture in the past 12 months, multiple fractures, fracture on therapy, T-score ≤−3.0 …) `[VERIFY: AACE/Endocrine Society definition]` — the anabolic-first choice inherits that label.
+- Write "no recent MI/stroke" for romosozumab, or clear teriparatide/abaloparatide, because the history is silent — romosozumab needs the date of any MI/stroke (label: not within the past year), and the PTH-analogue line needs prior skeletal radiation and unexplained alkaline-phosphatase elevation checked.
+
+✅ **DO:**
+- Before any antiresorptive line, quote calcium (albumin-corrected when albumin is given — recompute Ca + 0.8 × (4.0 − albumin g/dL)), 25-OH vitamin D, eGFR and dental status with their dates; a "normocalcemia ✓" with no value is not done.
+- For bisphosphonate drug-holiday logic, compute years on therapy from the start date and route (oral vs IV) in the input, and state why the patient is or is not still high risk (a fracture on therapy rules the holiday out).
+- Whenever denosumab appears — current, planned or as a fallback — write its exit plan in the same line: follow-on agent and timing relative to the last injection `[VERIFY: current guidance]`.
+- In eGFR <30, pair any denosumab choice with a hypocalcaemia monitoring plan instead of calling it simply "renal-safe".
 
 ## Output Format
 

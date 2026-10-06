@@ -18,10 +18,22 @@ related_prompts:
   - medicine_chronic_disease_management_planner
   - medicine_preventive_care_screening_advisor
   - medicine_quality_improvement
-updated: "2026-05-05"
+updated: "2026-10-06"
 ---
 
 # Chronic Disease Registry Outreach Prioritization
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Build a practical, criteria-based outreach priority list from chronic disease registries (e.g., diabetes, hypertension, CKD, CHF, COPD) so operations teams can sequence calls/messages/tasks while clearly separating workflow support from diagnosis or treatment decisions.
 
@@ -116,6 +128,22 @@ Do not diagnose or suggest treatment changes; only route/escalate.
 - Identify logistical barriers (transport, language, cost).
 - Offer care management callback.
 - Document contact outcome and next attempt date.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report a priority_score that cannot be rebuilt from the six criterion points — a 78 with no per-criterion breakdown is a label, not a calculation.
+- Fill the "severe threshold per local protocol" criterion with a cutoff you chose (e.g., A1c >9%, BP ≥160/100) when the local protocol was not supplied — write `[threshold per local protocol — not provided]` and flag the row.
+- Score disease control from a metric dated before the reporting period, or describe it as current; a 14-month-old A1c is a care gap, not a control level.
+- Count a patient once per registry in Output B band totals or Output C denominators when they sit on several registries (T2DM + HTN + CKD).
+- Write key_drivers or next_action in clinical language ("uncontrolled diabetes — needs insulin"); keep drivers to the data ("A1c 9.6% on 2026-03-20") and route the rest through escalate_to_clinician.
+
+✅ **DO:**
+- Recompute the time-based fields from dates for every row — months from last_visit_date to the report date, days since the last metric, the acute-utilisation window — and check each matches the key_drivers text (re-check the sample row's "no visit 7 mo" against 2025-11-10 → 2026-05-06).
+- Recount Output B band totals and the unreached-P1 count from the rows of Output A, and recompute each Output C rate from its stated numerator and denominator.
+- List rows missing a Required field separately instead of imputing a value or silently scoring that criterion 0.
 
 ---
 

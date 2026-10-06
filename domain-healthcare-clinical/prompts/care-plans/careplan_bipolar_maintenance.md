@@ -15,8 +15,20 @@ tags:
   - bipolar
   - mood-stabilizer
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -58,6 +70,21 @@ Psychiatrist managing bipolar maintenance.
 7. **Relapse prevention:** psychoeducation, mood charting, sleep regularity (sleep loss precipitates mania), substance reduction, early-warning-sign action plan, adherence support (consider LAI), psychotherapy (CBT/IPSRT/family-focused).
 
 8. **Monitor:** mood state, adherence, levels/labs, suicidality, side effects, pregnancy planning.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call a lithium level therapeutic without its timing — a sample drawn well before the 12-hour trough, or before steady state after a dose change, misstates exposure; and the target band is often lower in older adults.
+- Copy one lamotrigine titration into a plan whose medication list includes valproate (raises lamotrigine levels) or an estrogen-containing contraceptive (lowers them) — each needs its own schedule `[VERIFY: lamotrigine label titration table]`.
+- Treat "not currently pregnant" as closing the valproate question; anyone who could become pregnant needs the current label/regulator pregnancy-prevention requirements recorded.
+- Label predominant polarity from the most recent episode — it is a count across the whole episode history, and the wrong pole picks the wrong maintenance agent.
+- Leave an antidepressant already on the patient's list unaddressed because the policy line says "no monotherapy".
+
+✅ **DO:**
+- Before finalising THERAPEUTIC DRUG MONITORING, run every drug on the input list against lithium (NSAIDs, ACEi/ARB, thiazides) and against valproate/lamotrigine, and state the level recheck each start or stop triggers.
+- Attribute each lab interval to the drug that requires it — renal/TSH/calcium to lithium, CBC/LFTs to valproate, weight/glucose/lipids to antipsychotics — so the schedule can be audited.
+- Check every reported level carries units (lithium mmol/L ≡ mEq/L; valproate µg/mL ≡ mg/L) and flag any that does not.
+- For a cross-taper, state at each step which agent is providing relapse protection, so the sequence never leaves a window with neither at an effective dose.
 
 ## Output Format
 

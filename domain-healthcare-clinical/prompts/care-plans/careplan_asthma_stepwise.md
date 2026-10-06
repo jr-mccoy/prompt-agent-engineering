@@ -15,8 +15,20 @@ tags:
   - asthma
   - inhalers
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -59,6 +71,21 @@ Pulmonologist/allergist or primary care attending managing asthma.
 8. **Address modifiable factors:** smoking cessation, allergen avoidance/immunotherapy, treat rhinitis/GERD, weight loss, vaccines; avoid NSAIDs in aspirin-exacerbated respiratory disease.
 
 9. **Monitor:** control assessment + exacerbations each visit, technique, spirometry periodically, eosinophils, growth in children, steroid burden.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign a GINA step from inhaler names alone — the step depends on the ICS dose tier for that specific molecule and device plus maintenance-vs-as-needed use, and fluticasone, budesonide and beclometasone are not interchangeable microgram-for-microgram.
+- Print a MART/AIR regimen without the product strength and the label's maximum total daily inhalations; "as-needed budesonide-formoterol" with no ceiling reads complete and is not — tag it `[VERIFY: product label max daily dose]`.
+- Carry the adult/adolescent (≥12 y) track into a child: GINA steps, ICS-formoterol reliever availability and ICS dose bands differ for ages 6–11 and ≤5.
+- Name a biologic because one eosinophil or IgE value cleared a cutoff — eligibility thresholds differ by agent and label, eosinophils are suppressed by oral or high-dose ICS, and omalizumab dosing needs both total IgE and body weight.
+- Fill the action plan's "seek care if reliever >X/day" or PEF-drop slot with a number nobody supplied.
+
+✅ **DO:**
+- Score the GINA symptom-control questions (past 4 weeks) separately from the ACT total, and keep exacerbation risk (oral steroid courses, ED visits) on its own line — control and future risk are different axes.
+- Trace "uncontrolled" to a cause before stepping up: state which of technique, adherence, trigger exposure, comorbidity or wrong diagnosis was checked against supplied data, and which was not assessed.
+- Record the date of the eosinophil count used for phenotyping and whether it was drawn on oral corticosteroids.
+- Before declaring the plan done, check every dose in INHALER PLAN and ACTION PLAN against the input or a `[VERIFY: current GINA report / label]` tag, and confirm the step-down rule names what "good control" was measured by.
 
 ## Output Format
 

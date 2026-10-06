@@ -15,8 +15,20 @@ tags:
   - anxiety
   - panic
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -56,6 +68,21 @@ Psychiatrist or primary care attending managing anxiety disorders.
 7. **Duration:** continue effective treatment ≥12 months after response (relapse-prone); taper slowly.
 
 8. **Monitor:** GAD-7/panic frequency, emergent SI, activation, benzodiazepine use, substance use, adherence; counsel caffeine reduction, sleep, exercise.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Grade panic disorder by GAD-7 alone — it is not a panic measure; track attack frequency and avoidance (diary or a panic severity scale) as their own field.
+- Write a benzodiazepine "bridge" without a stop date, total quantity and taper; open PRN refills become long-term use by default, and step 5 already prefers scheduled over escalating PRN dosing — keep the plan consistent with it.
+- Pick an adjunct whose evidence is for the other disorder — buspirone is a GAD option, not a panic treatment; propranolol for performance anxiety does not treat panic disorder.
+- Treat "TSH normal" as excluding every mimic; arrhythmia, stimulants, caffeine, alcohol or sedative withdrawal and substance use each need their own entry.
+- Prescribe propranolol without checking asthma/bradycardia history, or hydroxyzine without QT and anticholinergic burden in older adults.
+
+✅ **DO:**
+- Recompute the GAD-7 total from item scores when they are given and map it to the instrument's severity band.
+- Check the low start dose against age, hepatic function and interacting drugs (CYP2D6 for paroxetine/fluoxetine, QT for citalopram/escitalopram).
+- In older adults, record a benzodiazepine as a falls and cognition risk (Beers criteria) and note the non-dependent alternative that was considered.
+- Start the non-response clock on the date the therapeutic dose was reached, and confirm the plan says so before calling a trial inadequate.
 
 ## Output Format
 

@@ -15,8 +15,20 @@ tags:
   - cirrhosis
   - care-plan
   - chronic-disease
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -61,6 +73,21 @@ Hepatologist or internist managing cirrhosis.
 7. **Transplant evaluation:** refer when decompensated or MELD-Na ≥15 (or earlier for HCC within criteria, refractory complications, quality-of-life). Manage MELD exceptions.
 
 8. **General:** nutrition (avoid protein restriction; high-protein, frequent meals, treat sarcopenia), bone health, vaccinate (hepatitis A/B, pneumococcal, influenza, COVID), avoid hepatotoxins, cap acetaminophen ≤2 g/day, manage coagulopathy (do not over-correct INR routinely).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report Child-Pugh or MELD-Na from the word "decompensated" — both are computed, and Child-Pugh needs albumin, ascites and encephalopathy grade, not just bilirubin and INR.
+- Mix MELD versions: US allocation now uses MELD 3.0 (adds sex and albumin), so a MELD-Na value and a referral cutoff from another version do not compare `[VERIFY: current allocation score]`.
+- Start or continue a non-selective beta-blocker without the hold criteria (hypotension, AKI, hyponatraemia, refractory ascites) — "carvedilol 6.25 mg BID" with no stop rule reads complete.
+- Recommend primary SBP prophylaxis on "low ascitic protein + Child-Pugh B" alone; the criteria also turn on renal function, sodium and bilirubin, which must be checked against the labs supplied.
+- Write the paracentesis albumin dose without both its volume trigger and its per-litre-removed basis.
+
+✅ **DO:**
+- Recompute Child-Pugh point by point and MELD-Na from creatinine, bilirubin, INR and sodium (with the formula's floors and caps), and state any discrepancy with the score given in the input.
+- Trace each complication line to its source (EGD grade for varices, tap result for SBP, HE grade) and write unassessed complications as "not evaluated", not "none".
+- Compute months since the last ultrasound and EGD from the input dates and flag anything overdue.
+- Check diuretic doses against the same-day Na, K and creatinine, and every new drug against the hepatic avoid-list.
 
 ## Output Format
 

@@ -15,8 +15,20 @@ tags:
   - hiv
   - antiretroviral
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -62,6 +74,21 @@ HIV/infectious-disease specialist managing longitudinal HIV care.
 7. **Comorbidity & prevention bundle:** vaccinations (hepatitis A/B, pneumococcal, influenza, HPV, COVID, others per CD4), cervical/anal cancer screening, cardiovascular risk (statin), STI screening, contraception/reproductive planning, mental health/substance use, PrEP for partners.
 
 8. **Manage drug interactions** (INSTI + polyvalent cations, rifamycins, acid suppression with rilpivirine, etc.).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Choose dolutegravir/lamivudine or long-acting cabotegravir/rilpivirine without documented HBV status and a resistance genotype — neither treats HBV, and the long-acting regimen also requires prior suppression.
+- State OI prophylaxis from a CD4 count with no date or CD4 %; toxoplasma prophylaxis also depends on toxoplasma IgG, and stopping needs a sustained count plus viral suppression.
+- Read one viral load above the detection limit as virologic failure; separate a blip from confirmed failure by repeat testing `[VERIFY: DHHS adult ART guidelines]`.
+- Leave rifamycin-based TB treatment unreconciled — bictegravir is contraindicated with rifampin and dolutegravir needs dose adjustment.
+- Drop interactions outside the ART list: polyvalent cations (antacids, iron, calcium, multivitamins) with INSTIs, metformin with dolutegravir, PPIs with rilpivirine.
+
+✅ **DO:**
+- Before finalising ART REGIMEN, check each component against the full medication and supplement list in an HIV interaction resource and write the timing instruction (e.g., separation from cations).
+- Build the monitoring calendar from the ART start date — first viral load, the suppression check, the earliest date prophylaxis can be reconsidered — instead of intervals with no anchor.
+- Check pregnancy potential, eGFR (TAF vs TDF) and HBV co-infection against the chosen backbone and record the result of each check.
+- Mark pending results (HLA-B*5701, genotype) as pending and name which regimen choice each one would change.
 
 ## Output Format
 

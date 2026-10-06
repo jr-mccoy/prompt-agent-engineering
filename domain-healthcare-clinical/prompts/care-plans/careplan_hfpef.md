@@ -15,8 +15,20 @@ tags:
   - heart-failure
   - hfpef
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -55,6 +67,21 @@ Cardiologist managing HFpEF, writing the plan for the care team.
 7. **Avoid** agents that worsen HFpEF: minimize negative inotropes if low CO, avoid over-diuresis, avoid NSAIDs.
 
 8. **Monitor:** BP, weight, symptoms, BMP after diuretic/MRA changes; NT-proBNP trend; reassess class.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept an NT-proBNP as "elevated, confirms HFpEF" without adjusting for rhythm and habitus — AF raises it and obesity lowers it, so one number means different things in different patients.
+- Classify from a single LVEF near 50%; 41–49% is HFmrEF and a recovered previously-reduced EF is HFimpEF, each with different therapy.
+- Diagnose ATTR cardiac amyloidosis from a positive PYP scan alone; it is diagnostic only once free light chains and immunofixation have excluded a monoclonal protein.
+- Start an MRA, ACEi/ARB and SGLT2i together without K and creatinine checks that can be attributed to each.
+- Mark the BP target met from one office reading; use the home or ambulatory average in the input.
+
+✅ **DO:**
+- Recompute the H2FPEF score item by item (obesity, antihypertensive count, AF, pulmonary pressure, age, E/e') from the input, show the total, and mark missing items rather than scoring them zero.
+- Check each newer HFpEF therapy against its trial population before listing it (GLP-1 RA in obese HFpEF; finerenone in HFmrEF/HFpEF) and tag eligibility `[VERIFY: current ACC/AHA/HFSA update]`.
+- Tie the diuretic dose to a measured congestion sign (weight, oedema, JVP, filling pressure) and name the endpoint that stops up-titration.
+- Before calling the phenotype screen complete, list each amyloid red flag found in the input and the test that addresses it.
 
 ## Output Format
 

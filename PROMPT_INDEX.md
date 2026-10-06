@@ -8,9 +8,9 @@
 
 **Total Indexed Artifacts:** 6165
 
-**Artifacts with Frontmatter:** 5287
+**Artifacts with Frontmatter:** 5288
 
-**Artifacts without Frontmatter:** 878
+**Artifacts without Frontmatter:** 877
 
 ---
 
@@ -3225,6 +3225,7 @@
 | [Specialty Consult Question Composer](domain-healthcare-clinical/prompts/workflow/workflow_specialty_consult_question_composer.md) | domain-healthcare-clinical/wor | ST-02, ST-03, CM-01, RT-02, RT-05 | workflow, referral, consultation, care-coordination | Turn a vague 'please see this patient' into a focused, answerable consult question with the exact da... |
 | [Telephone / Refill Encounter Note](domain-healthcare-clinical/prompts/workflow/doc_telephone_refill_note.md) | domain-healthcare-clinical/wor | ST-02, ST-03, CM-01, RT-02, RT-05 | documentation, telephone-encounter, refill, clinical-notes | Generate a concise but complete telephone or refill encounter note — reason, relevant data reviewed,... |
 | [Healthcare Clinical Domain Expansion Roadmap (Week](domain-healthcare-clinical/_archive/EXPANSION_ROADMAP_v1_safety_framing.md) | healthcare-clinical/_archive | — | EXPANSION, ROADMAP, clinical, communication, education | This roadmap defines the 7-week expansion plan for `domain-healthcare-clinical/`, including scope la... |
+| [Behavioral Health Coordination Micro-Guide](domain-healthcare-clinical/prompts/communication/medicine_behavioral_health_coordination_micro_guide.md) | healthcare-clinical/communicat | ST-01, ST-03, QA-04 | medicine, mental-health, care-coordination, communication | Brief framework for a clinician to coordinate medical and behavioral health plans, giving the team a... |
 | [Handoff Communication Structurer](domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md) | healthcare-clinical/communicat | ST-01, ST-02, RT-02, QA-01, QA-20 | handoff, sbar, i-pass, care-transitions, patient-safety | Generate structured clinical handoff communications using standardized frameworks (SBAR, I-PASS) to ... |
 | [Patient Education Material Adapter](domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md) | healthcare-clinical/communicat | ST-01, RT-02, DS-02, QA-01, QA-20 | patient-education, health-literacy, plain-language, shared-decision-making, patient-communication | Transform complex medical information into patient-friendly explanations calibrated to health-litera... |
 | [Medical Literature Synthesizer](domain-healthcare-clinical/prompts/education/medicine_literature_synthesizer.md) | healthcare-clinical/education | ST-01, RT-02, DS-02, QA-01, QA-20 | evidence-based-medicine, literature-review, critical-appraisal, grade, meta-analysis | Critically appraise and synthesize medical research on a clinical question — extracting design, popu... |
@@ -3235,7 +3236,6 @@
 | [Primary Care Guide](domain-healthcare-clinical/guides/primary_care.md) | healthcare-clinical/guides | — | care, existing, phrases, primary, prompt | Use this guide when requests include terms like: - "preventive visit", "annual wellness", "screening... |
 | [Psychiatry Guide](domain-healthcare-clinical/guides/psychiatry.md) | healthcare-clinical/guides | — | existing, phrases, prompt, prompts, psychiatry | Use this guide when requests include terms like: - "psychiatric assessment", "mental status exam", "... |
 | [Drug Interaction and Contraindication Checker](domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md) | healthcare-clinical/pharmacolo | ST-01, RT-02, DS-02, QA-01, QA-20 | medication-safety, drug-interactions, contraindications, dose-adjustment, pharmacovigilance | Systematically review a medication list against patient conditions and organ function for drug-drug ... |
-| [Behavioral Health Coordination Micro-Guide](domain-healthcare-clinical/prompts/communication/medicine_behavioral_health_coordination_micro_guide.md) | healthcare-clinical/prompts/co | — | behavioral, checklist, coordination, guide, health | - A clinician needs a brief framework to coordinate medical and behavioral health plans. |
 | [Clinical Visual Education Micro-Guide](domain-healthcare-clinical/prompts/communication/medicine_clinical_visual_education_micro_guide.md) | healthcare-clinical/prompts/co | — | checklist, clinical, education, guide, medicine | - A clinical team needs visual explainers for patient education or workflow handoffs. |
 | [Nursing Quick Reference/Clinical Handbook Creator ](domain-healthcare-clinical/prompts/nursing/nursing_quick_reference_handbook_creator_prompt.md) | healthcare-clinical/prompts/nu | — | audience, context, creator, facts, handbook | --- |
 | [PACU Educator Toolkit — Shared Safety Preamble](domain-healthcare-clinical/prompts/perianesthesia/SAFETY_PREAMBLE.md) | healthcare-clinical/prompts/pe | — | PREAMBLE, SAFETY, artifacts, content, high | artifact in `domain-healthcare-clinical/prompts/perianesthesia/`. Individual artifacts carry a one-l... |
@@ -6517,7 +6517,7 @@
 
 ---
 
-## Prompts Without Frontmatter (878)
+## Prompts Without Frontmatter (877)
 
 These prompts need frontmatter metadata added:
 
@@ -7373,7 +7373,6 @@ These prompts need frontmatter metadata added:
 - `domain-healthcare-clinical/guides/infectious_disease.md` - Infectious Disease Guide
 - `domain-healthcare-clinical/guides/primary_care.md` - Primary Care Guide
 - `domain-healthcare-clinical/guides/psychiatry.md` - Psychiatry Guide
-- `domain-healthcare-clinical/prompts/communication/medicine_behavioral_health_coordination_micro_guide.md` - Behavioral Health Coordination Micro-Guide
 - `domain-healthcare-clinical/prompts/communication/medicine_clinical_visual_education_micro_guide.md` - Clinical Visual Education Micro-Guide
 - `domain-healthcare-clinical/prompts/nursing/nursing_quick_reference_handbook_creator_prompt.md` - Nursing Quick Reference/Clinical Handbook Creator - Enhanced Version
 - `domain-healthcare-clinical/prompts/perianesthesia/COMPETENCY_PROGRESSION_MAP.md` - PACU RN Competency Progression Map

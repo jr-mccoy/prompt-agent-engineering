@@ -15,8 +15,20 @@ tags:
   - heart-failure
   - gdmt
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -58,6 +70,21 @@ Cardiologist or HF specialist managing GDMT, writing the titration plan for the 
 7. **Advanced therapy referral** (LVAD/transplant eval) for persistent NYHA III–IV, recurrent hospitalizations, inotrope dependence, escalating diuretics — INTERMACS thinking.
 
 8. **Comorbidity coordination:** treat iron deficiency (IV ferric carboxymaltose if ferritin <100 or 100–300 with TSAT <20%), manage AF rate/rhythm and anticoagulation, avoid NSAIDs/most CCBs/thiazolidinediones.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pick the sacubitril/valsartan start without checking the prior ACEi/ARB dose — patients on a low dose, or none, start lower per label; "ARNI-naive" is not the criterion, since every new start is ARNI-naive.
+- Count a beta-blocker as a pillar unless it is one with HFrEF mortality evidence (carvedilol, metoprolol succinate, bisoprolol); metoprolol tartrate or atenolol is a gap, not a pillar.
+- Report ICD or CRT eligibility from the baseline LVEF — the EF that counts is re-measured after optimised GDMT and the post-MI/post-revascularisation waiting periods.
+- Simplify iron-deficiency criteria to "ferritin <100 or TSAT <20%"; the TSAT criterion applies only when ferritin is 100–299.
+- Omit population-specific options: hydralazine–isosorbide dinitrate for self-identified Black patients on optimised therapy; ivabradine in sinus rhythm above its label heart-rate threshold.
+
+✅ **DO:**
+- Tabulate each pillar as current dose / target dose / % of target, recompute the percentages from the input, and count pillars actually on board (0–4).
+- Check every step in TITRATION SCHEDULE against the BP, HR, K and eGFR it depends on, and name the value that would stop the next step.
+- Verify target doses against each label, including weight bands (carvedilol's higher target above a body-weight cut-off) `[VERIFY: label]`.
+- Write the ACEi-to-ARNI washout as a timed instruction anchored to the last ACEi dose, not as a note.
 
 ## Output Format
 
