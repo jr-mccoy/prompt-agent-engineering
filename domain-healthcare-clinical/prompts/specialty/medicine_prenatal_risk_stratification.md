@@ -96,7 +96,7 @@ Walk through each bucket, listing what is present:
 ### Step 2: Apply Screening & Prevention Decisions
 
 Key early decisions driven by risk:
-- **Aspirin for preeclampsia prevention:** 81–162 mg daily starting 12–28w in patients with ≥1 high-risk or ≥2 moderate-risk factors (USPSTF / ACOG)
+- **Aspirin for preeclampsia prevention:** low-dose aspirin daily (dose as stated in the current USPSTF / ACOG recommendation) starting 12–28w in patients with ≥1 high-risk or ≥2 moderate-risk factors (USPSTF / ACOG) [VERIFY: current USPSTF / ACOG low-dose aspirin statement — dose]
 - **Early GDM screening:** BMI, prior GDM, PCOS, family history — screen at first prenatal visit
 - **Cervical length surveillance / progesterone:** prior spontaneous preterm birth
 - **Low-dose heparin / antepartum AC:** history of VTE, thrombophilia, antiphospholipid syndrome — with specialist input
@@ -181,7 +181,7 @@ Basis: [AAP/ACOG LOC guidance + year]
 
 EARLY DECISIONS
 ---------------
-[ ] Aspirin prophylaxis: [yes — 81/162 mg starting GA / no — rationale]
+[ ] Aspirin prophylaxis: [yes — dose per current USPSTF/ACOG statement, starting GA / no — rationale]
 [ ] Early GDM screen: [yes / no]
 [ ] Cervical length surveillance: [yes — start GA / no]
 [ ] Antepartum anticoagulation: [yes — agent / no / specialist-dependent]
@@ -254,7 +254,7 @@ SAFETY CHECKLIST
 
 **Multiple gestation:** Chorionicity determines surveillance (monochorionic-diamniotic requires 16w-onset q2w ultrasound for TTTS). Assign level of care accordingly.
 
-**Placenta accreta spectrum risk (prior CS + placenta previa):** Refer to Level IV center with accreta team; early MFM consultation.
+**Placenta accreta spectrum risk (prior CS + placenta previa):** Refer to a higher-level center with an accreta team, at the level of maternal care named by current guidance [VERIFY: current ACOG/SMFM placenta accreta spectrum consensus and AAP/ACOG Levels of Maternal Care]; early MFM consultation.
 
 **Pre-existing diabetes (T1 / T2):** Target A1c goals, nephropathy/retinopathy screen, aspirin prophylaxis eligibility, early delivery planning.
 

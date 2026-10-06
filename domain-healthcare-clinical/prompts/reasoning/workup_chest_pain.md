@@ -79,7 +79,7 @@ Work up undifferentiated chest pain in an adult patient: rule out the five life-
 
 6. **Aortic dissection: ADD-RS + d-dimer.**
    - **Aortic Dissection Detection Risk Score (ADD-RS):** 0–3 categories (predisposing conditions, pain features, exam features). 0 = low; 1 = intermediate; ≥2 = high.
-   - ADD-RS 0 + d-dimer <500 ng/mL FEU = sensitive rule-out (ADvISED study).
+   - Low ADD-RS + d-dimer <500 ng/mL FEU = sensitive rule-out; take the ADD-RS cut-off from the validating study, not from memory [VERIFY: ADvISED study / current ESC aortic guideline — ADD-RS scores validated for the d-dimer rule-out].
    - ADD-RS ≥1 or any clinical concern → CTA chest/abdomen/pelvis (or TEE if unstable). Type A → emergent surgery; Type B → BP and HR control (esmolol or labetalol IV, target SBP 100–120 and HR <60), ICU.
 
 7. **Ancillary patterns.**
@@ -157,7 +157,7 @@ PLAN:
 
 ```
 LIFE-THREAT SCREEN:
-- ACS: active workup — pressure pain with radiation, diaphoresis, dynamic ECG changes, elevated hsTn. Most likely NSTEMI.
+- ACS: active workup — pressure pain with radiation, diaphoresis, ischemic ECG changes on a single tracing, elevated hsTn (single value). Suspected NSTEMI pending 1-h hsTn.
 - Dissection: ADD-RS 0 (no predisposing condition, no tearing, no pulse/BP differential). Low concern; no CTA at this time.
 - PE: no pleuritic component, no hypoxia, no tachycardia >100, no risk factors elicited; PERC negative if confirmed (need to verify no estrogen, no recent surgery). PE not pursued unless clinical evolution.
 - Pneumothorax: clear CXR, normal breath sounds.
@@ -170,17 +170,17 @@ ECG INTERPRETATION:
 - Compare to prior if available; serial ECGs q15–30 min while symptomatic.
 
 INITIAL LABS / IMAGING:
-- hs-cTnT 0-h: 28 ng/L (elevated, 2× ULN). Repeat at 1 h (ESC 0/1-h algorithm) — delta ≥5 ng/L = rule-in NSTEMI.
+- hs-cTnT 0-h: 28 ng/L (elevated, 2× ULN) — below the 0-h rule-in value of 52 ng/L, so observe zone. Repeat at 1 h (ESC 0/1-h algorithm) — delta ≥5 ng/L = rule-in NSTEMI.
 - CXR: clear, no widened mediastinum, no pneumothorax.
 - BMP, CBC, lipid panel, lactate. BNP if heart failure features.
 - D-dimer not indicated (PE pretest low and ACS already established).
 
 RISK STRATIFICATION:
 - HEART: History 2 (highly suspicious), ECG 2 (significant ST deviation), Age 1 (45–64), Risk factors 2 (≥3: HTN, DM, smoking, dyslipidemia), Troponin 1 (1–3× ULN). Total 8 = HIGH RISK.
-- This is NSTEMI by current data.
+- Suspected NSTEMI pending the 1-h hsTn delta; HEART tier is high regardless.
 
 WORKING DIFFERENTIAL:
-1. NSTEMI (most likely) — typical presentation, dynamic ECG, elevated hsTn, multiple risk factors.
+1. Suspected NSTEMI (most likely, pending 1-h hsTn) — typical presentation, ischemic ECG changes (dynamic only if serial ECGs change), elevated hsTn, multiple risk factors.
 2. Unstable angina — less likely now that hsTn elevated.
 3. Type 2 MI from demand — possible but no obvious trigger (no sepsis, anemia, tachyarrhythmia).
 
@@ -192,7 +192,7 @@ PLAN:
 - Metoprolol tartrate 12.5–25 mg PO once stable, no contraindications (no shock, no severe asthma, no high-degree block).
 - Sublingual NTG 0.4 mg q5 min × 3 for active pain; IV NTG infusion if persistent.
 - Continuous telemetry, repeat ECG q15 min while symptomatic, repeat hsTn at 1 h.
-- Cardiology consult — early invasive strategy (within 24 h) given GRACE likely >140, dynamic ECG, hsTn rise.
+- Cardiology consult — early invasive strategy (within 24 h) if NSTEMI is confirmed by the 1-h delta; compute GRACE from its items before using it; document whether serial ECGs show dynamic change.
 - Disposition: admit to telemetry/CCU pending cath.
 - Echocardiogram before or after cath for EF.
 - Initiate secondary prevention discussion (DAPT, statin, BB, ACE/ARB, smoking cessation, cardiac rehab, BP/DM/lipid optimization) prior to discharge.

@@ -134,10 +134,10 @@ R FACTOR: (5210 / 40) / (110 / 120) = 130 / 0.92 ≈ 142 → far above 5.
 MAGNITUDE: >100× ULN aminotransferases — classic massive hepatocellular injury.
 SYNTHETIC FUNCTION: INR 3.2 (impaired), albumin 3.4 (preserved acutely as expected). Hypoglycemia (62) is a synthetic-failure marker — gluconeogenic capacity gone.
 SEVERITY: Acute liver failure — INR ≥1.5 + encephalopathy + no preexisting disease.
-  - King's College criteria for acetaminophen: arterial pH <7.30 OR (INR >6.5 + Cr >3.4 + grade III–IV encephalopathy). Currently does not meet, but trajectory is what matters; reassess every 4–6 hours.
+  - King's College criteria for acetaminophen: arterial pH <7.30 OR (INR >6.5 + Cr >3.4 + grade III–IV encephalopathy). Arterial pH [not provided] — obtain an ABG now. The triad is not met (INR 3.2, Cr 1.7). Lactate 4.0 may meet the modified (lactate-added) King's College criterion [VERIFY: lactate cut-off and its timing relative to fluid resuscitation — current KCC / AASLD ALF guidance]. Trajectory is what matters; reassess every 4–6 hours.
 
 DIFFERENTIAL:
-1. Acetaminophen-induced acute liver failure — ingestion history, time course, magnitude of aminotransferases, hypoglycemia, coagulopathy, encephalopathy. Acetaminophen level 18 at 28 hours is misleadingly low because it is post-distribution; use Rumack-Matthew nomogram only for single acute ingestion <24 hours, not here.
+1. Acetaminophen-induced acute liver failure — ingestion history, time course, magnitude of aminotransferases, hypoglycemia, coagulopathy, encephalopathy. Acetaminophen level 18 at 28 hours is misleadingly low because most of the drug has already been metabolized and eliminated; a low level this late does not exclude severe toxicity; use Rumack-Matthew nomogram only for single acute ingestion <24 hours, not here.
 2. Less likely: acute viral hepatitis, ischemic hepatitis (no documented hypotension), autoimmune flare. Check anyway given severity.
 
 ACTION:

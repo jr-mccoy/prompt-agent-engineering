@@ -88,7 +88,7 @@ Work up the anemic adult: classify by MCV (microcytic, normocytic, macrocytic) a
      - Postmenopausal women and men: GI source until proven otherwise → EGD and colonoscopy. Capsule endoscopy if both negative. Celiac serology (anti-tTG IgA + total IgA) in iron-refractory IDA.
      - Athletes, blood donors, malabsorption (post-bariatric, atrophic gastritis, H. pylori).
    - **Treatment:**
-     - **Oral iron**: ferrous sulfate 325 mg (65 mg elemental) every other day or daily on empty stomach with vitamin C. Every-other-day dosing (per IRONOUT and other studies) is at least as effective and better tolerated due to hepcidin physiology.
+     - **Oral iron**: ferrous sulfate 325 mg (65 mg elemental) every other day or daily on empty stomach with vitamin C. Every-other-day dosing (per iron-absorption studies [VERIFY: source trials]) is at least as effective and better tolerated due to hepcidin physiology.
      - Reticulocytosis at 5–10 days; Hgb increase ~1 g/dL/2–3 weeks. Continue 3–6 months after Hgb normalized to replete stores.
      - **IV iron** (ferric carboxymaltose 750 mg ×2, ferric derisomaltose 1000 mg single dose, iron sucrose) for: oral intolerance, malabsorption, ongoing loss, CKD, IBD, post-bariatric, severe anemia needing rapid replacement, anemia of pregnancy (2nd/3rd trimester).
      - Treat underlying cause (lesion, H. pylori eradication, celiac diet).
@@ -139,7 +139,7 @@ Work up the anemic adult: classify by MCV (microcytic, normocytic, macrocytic) a
 
 12. **Transfusion thresholds.**
     - General hospitalized patient: Hgb <7.
-    - Cardiac disease, ACS, cardiac surgery: <8 (some <7 per trials including FOCUS, MINT debated).
+    - Cardiac disease, ACS, cardiac surgery: <8; the threshold in acute MI is debated (MINT) — cite each trial only for the population and thresholds it tested [VERIFY: current AABB transfusion guideline; MINT and FOCUS populations/arms].
     - Active bleeding, hemodynamic instability: clinical, transfuse to symptoms and ongoing loss.
     - Premedication for known reactions; ABO type and screen mandatory; informed consent.
 
@@ -197,7 +197,7 @@ DISPOSITION:
 
 ```
 SEVERITY:
-- Hgb 8.4 — moderate. No hemodynamic instability. Symptomatic. Below transfusion threshold for cardiac comorbidity (none here); not yet at general threshold of 7.
+- Hgb 8.4 — moderate. No hemodynamic instability. Symptomatic. Threshold 8 (cardiac comorbidity — not applicable, none here): 8.4 is above it. General threshold 7: 8.4 is above it.
 
 CLASSIFICATION:
 - Microcytic (MCV 76), elevated RDW.

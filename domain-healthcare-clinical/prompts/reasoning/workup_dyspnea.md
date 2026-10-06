@@ -71,7 +71,7 @@ Work up the dyspneic patient: triage acute respiratory failure, separate cardiac
    - Often normal in PE.
 
 4. **Cardiac ischemia/heart failure workup.**
-   - **BNP/NT-proBNP:** BNP <100 pg/mL or NT-proBNP age-adjusted (<450 if <50, <900 if 50–75, <1800 if >75) makes acute heart failure unlikely; high values confirm. Obesity lowers BNP; renal failure and afib raise it.
+   - **BNP/NT-proBNP:** BNP <100 pg/mL makes acute heart failure unlikely. The NT-proBNP age-adjusted values (450 if <50, 900 if 50–75, 1800 if >75) are rule-in thresholds, not rule-out; the NT-proBNP rule-out cutoff is a separate, lower, age-independent value [VERIFY: current ESC/ACC heart-failure guideline and assay insert — NT-proBNP rule-out cutoff]; high values confirm. Obesity lowers BNP; renal failure and afib raise it.
    - Echocardiogram for EF, valvular function, RV strain, pericardial effusion.
    - ECG: ischemic changes, RV strain pattern, AFib with RVR (precipitant of HF), low voltage with electrical alternans (effusion/tamponade).
    - Troponin if any concern for ACS-driven HF.
@@ -192,7 +192,7 @@ KEY TESTS:
 
 WORKING DIAGNOSIS / TREATMENT:
 - Acute decompensated heart failure with congestion, AFib with RVR contribution, cardiorenal syndrome.
-- Furosemide IV: 2.5× home oral dose IV; if naive, 40–80 mg IV bolus then drip 5–20 mg/h or repeat boluses. Monitor urine output (target 1 L/h initially, then ≥3 L net negative/day). Per DOSE trial, high-dose IV bolus and continuous infusion equivalent.
+- Furosemide IV: 2.5× home oral dose IV (home dose not provided — obtain it); if naive, 40–80 mg IV bolus then drip 5–20 mg/h or repeat boluses. Monitor urine output and net balance against the targets of a named diuretic-response protocol [VERIFY: current ESC/HFA diuretic-response protocol — urine-output / urine-sodium targets]. Per DOSE trial, high-dose IV bolus and continuous infusion equivalent.
 - Add metolazone 5–10 mg PO 30 min before furosemide if diuretic resistance; replete K and Mg aggressively (target K 4–5, Mg >2).
 - Hold home BB if frank decompensation or hypotension; otherwise continue at reduced dose (do not stop abruptly per OPTIMIZE-HF).
 - ACE/ARB/ARNI: continue or restart once euvolemic and renal function stable; sacubitril-valsartan preferred per PARADIGM-HF if tolerated.

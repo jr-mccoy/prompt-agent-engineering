@@ -72,7 +72,7 @@ Senior internist or hospitalist reading the panel with the chart open.
 5. **BUN/Cr → renal evaluation.**
    - Calculate eGFR (CKD-EPI 2021).
    - Compare to baseline. AKI definitions (KDIGO): Cr increase ≥0.3 mg/dL within 48h, or ≥1.5× baseline within 7 days, or UOP <0.5 mL/kg/hr for ≥6h.
-   - Stage AKI: 1 (1.5–1.9× baseline), 2 (2–2.9×), 3 (≥3× or Cr ≥4 with acute increase ≥0.5 or initiation of RRT).
+   - Stage AKI: 1 (1.5–1.9× baseline), 2 (2–2.9×), 3 (≥3× or Cr ≥4.0 or initiation of RRT).
    - Categorize:
      - **Prerenal:** BUN/Cr >20, FENa <1% (off diuretics), FEUrea <35% (on diuretics), bland sediment. Causes: volume depletion, decreased effective circulating volume (CHF, cirrhosis), hypotension, ACE/ARB/NSAID-induced.
      - **Intrinsic:** FENa >2%, abnormal sediment.
@@ -130,7 +130,7 @@ ACTION:
 
 ```
 GLUCOSE: 96 — normal.
-SODIUM: 128 — hyponatremia. Vitals (HR 108, BP drop from 142 → 92) and history (vomiting, poor PO) → hypovolemic hyponatremia with concurrent ADH-driven free water retention. Hypotonic on physiology. Will correct with isotonic resuscitation but watch rate.
+SODIUM: 128 — hyponatremia. Vitals (HR 108, BP drop from 142 → 92) and history (vomiting, poor PO) → hypovolemic hyponatremia with concurrent ADH-driven free water retention. Tonicity not established — serum osmolality not provided; glucose 96 needs no correction, so a hypertonic cause is unlikely, but send serum osm before excluding pseudohyponatremia. Will correct with isotonic resuscitation but watch rate.
 POTASSIUM: 2.9 — hypokalemia. Cause is multifactorial: vomiting (gastric H+ loss with secondary HCO3 retention drives K into cells; renal K wasting from contraction alkalosis), HCTZ (chronic), poor intake. Replace K and Mg.
 ACID-BASE: HCO3 30, no ABG provided. Anion gap = 128 − (88 + 30) = 10 → normal. Pattern: contraction alkalosis from vomiting + diuretic. Consistent with HCO3 30.
 RENAL: Cr 1.8 from baseline 0.9 = 2× → AKI stage 2. BUN/Cr = 27 → consistent with prerenal. eGFR (CKD-EPI) ~30 mL/min/1.73m² acutely. ACE inhibitor + diuretic + volume depletion is the classic triple hit driving prerenal AKI.
@@ -138,7 +138,7 @@ CALCIUM: 8.8 measured, albumin 3.2 → corrected = 8.8 + 0.8 × (4 − 3.2) = 9.
 LIVER: Within normal limits.
 ALBUMIN: 3.2 — mildly low, consistent with acute illness / poor intake. No protein gap concern.
 
-PATTERN: Volume-depleted elderly woman with hypovolemic hypotonic hyponatremia, hypokalemic contraction alkalosis, and prerenal AKI driven by vomiting + ACE inhibitor + thiazide.
+PATTERN: Volume-depleted elderly woman with hypovolemic hyponatremia (presumed hypotonic; serum osm pending), hypokalemic contraction alkalosis, and prerenal AKI driven by vomiting + ACE inhibitor + thiazide.
 
 ACTION:
 1. Hold lisinopril and HCTZ. Resume only after Cr returns to baseline and a different regimen is selected (ACE/diuretic combo is high-risk in this patient).
@@ -146,5 +146,5 @@ ACTION:
 3. Replace K: 40 mEq KCl PO once now (if tolerating PO) or 10 mEq/hr IV peripheral if NPO. Recheck K with next BMP. Replace Mg empirically with 2 g IV magnesium sulfate.
 4. Workup vomiting cause: focused history (med changes, dietary, infection, abdominal pain). If persistent, consider AXR / CT abdomen for obstruction; lipase if epigastric pain.
 5. Watch UOP. Foley if mental status declines or output unclear. Repeat BMP in 6 hours.
-6. Anticipate K rising rapidly with volume replacement and aldosterone suppression — recheck before further K supplementation.
+6. K may rise as volume repletion lowers aldosterone-driven renal K loss and the alkalosis corrects — recheck K before each further supplement rather than assuming the deficit persists.
 ```

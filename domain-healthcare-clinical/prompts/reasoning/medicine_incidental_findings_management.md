@@ -138,7 +138,7 @@ Prior imaging: [present/absent + comparison]
 CLASSIFICATION
 --------------
 Framework: [Society + year]
-Category / risk tier: [e.g., Bosniak IIF, Fleischner 4a, TI-RADS TR4]
+Category / risk tier: [e.g., Bosniak IIF, Lung-RADS 4A (screening CT only), TI-RADS TR4]
 Estimated malignancy risk: [%, with range if applicable]
 Confidence: [High / Moderate / Low]
 

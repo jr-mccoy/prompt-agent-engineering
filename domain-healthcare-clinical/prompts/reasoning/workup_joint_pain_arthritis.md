@@ -55,7 +55,7 @@ Work up joint pain: classify inflammatory vs mechanical, monoarticular vs oligo/
 2. **Acute monoarthritis — septic until proven otherwise.**
    - **Septic arthritis:** medical emergency. Most common organism Staph aureus (including MRSA), then streptococci. Risk factors: prosthetic joint, immunosuppression, IV drug use, diabetes, RA on biologics, recent joint procedure, advanced age, prior septic joint, skin breakdown. Synovial WBC >50,000 with PMN predominance is suggestive (>100,000 highly so, but <50,000 does not exclude).
      - **Arthrocentesis must precede antibiotics** unless patient is in shock and cannot wait.
-     - Empiric antibiotics: vancomycin 15–20 mg/kg IV q8–12h (target trough 15–20 or AUC 400–600) + ceftriaxone 1–2 g IV daily. Tailor to gram stain / culture / patient factors. Consider gonococcal coverage in young, sexually active patients.
+     - Empiric antibiotics: vancomycin 15–20 mg/kg IV q8–12h (monitoring target per current guidance — AUC-guided monitoring rather than trough-only [VERIFY: current ASHP/IDSA/PIDS/SIDP vancomycin monitoring guideline]) + ceftriaxone 1–2 g IV daily. Tailor to gram stain / culture / patient factors. Consider gonococcal coverage in young, sexually active patients.
      - **Surgical drainage** (arthroscopic washout or open) with orthopedics consult.
      - Prosthetic joint: orthopedics for surgical management; consider DAIR, single-stage or two-stage exchange.
    - **Gonococcal arthritis:** young, sexually active; classic triad of tenosynovitis, dermatitis, polyarthralgia (disseminated form), or purulent monoarthritis. Synovial culture often negative; NAAT of urethra/cervix/throat/rectum sensitive. Ceftriaxone 1 g IV/IM daily × 7+ days; co-treat for chlamydia (azithromycin 1 g once or doxycycline 100 mg BID × 7 days).
@@ -67,7 +67,7 @@ Work up joint pain: classify inflammatory vs mechanical, monoarticular vs oligo/
          - **Glucocorticoids:** prednisone 30–40 mg PO × 5 days (good for CKD or NSAID/colchicine intolerance); intra-articular triamcinolone for monoarthritis.
          - **IL-1 antagonist (anakinra, canakinumab)** for refractory.
        - Urate-lowering therapy (after acute attack settled, with anti-inflammatory bridging):
-         - **Allopurinol** start 100 mg daily, titrate every 2–5 weeks to serum urate <6 mg/dL (<5 in tophaceous). Caution HLA-B*5801 (Han Chinese, Korean, Thai) — test before starting; SCAR risk. Reduce starting dose in CKD.
+         - **Allopurinol** start 100 mg daily, titrate every 2–5 weeks to serum urate <6 mg/dL (<5 in tophaceous). Caution HLA-B*5801 (higher prevalence in some ancestries, e.g., Han Chinese, Korean, Thai) — test before starting in the populations named by current guidance [VERIFY: current ACR gout guideline]; SCAR risk. Reduce starting dose in CKD.
          - **Febuxostat** 40–80 mg daily (cardiac safety signals — CARES, FAST; use if intolerant or refractory to allopurinol).
          - **Probenecid** uricosuric for under-excretors with normal renal function and no nephrolithiasis.
          - **Pegloticase** for refractory tophaceous gout.
@@ -100,7 +100,7 @@ Work up joint pain: classify inflammatory vs mechanical, monoarticular vs oligo/
 
    - **Viral arthritis:** parvovirus B19 (symmetric small-joint, often resolves), hepatitis B/C, HIV, CMV, EBV, alphavirus (chikungunya).
 
-   - **Lyme arthritis:** large joint (knee), endemic exposure, oligoarticular, antibodies; treat doxycycline 100 mg BID × 28 days (or amoxicillin) for early; later disease may need IV ceftriaxone.
+   - **Lyme arthritis:** large joint (knee), endemic exposure, oligoarticular, antibodies; Lyme arthritis is a late manifestation — treat doxycycline 100 mg BID × 28 days (or amoxicillin); arthritis persisting after an oral course may need IV ceftriaxone [VERIFY: current IDSA/AAN/ACR Lyme guideline].
 
    - **Bacterial endocarditis with arthritis:** consider in IV drug user with arthralgia and fever.
 
@@ -218,7 +218,7 @@ WORKING DIAGNOSIS / TREATMENT:
 - **Urate-lowering therapy (ULT):** indicated given ≥2 prior flares plus recurrent presentation.
   - Wait until acute flare resolved (or start during flare with anti-inflammatory bridge per recent ACR guidance).
   - Allopurinol 100 mg daily, titrate every 2–5 weeks (by 100 mg increments) to serum urate <6 mg/dL (<5 if tophi). Reduce starting dose to 50 mg in CKD.
-  - HLA-B*5801 testing in high-risk ethnicities before starting.
+  - HLA-B*5801 testing before starting if of higher-risk ancestry (ancestry not provided).
   - Bridge anti-inflammatory: colchicine 0.6 mg daily-BID or low-dose NSAID for 3–6 months.
 - Patient education: continue ULT lifelong; do not stop during a flare; expect possible early flare frequency.
 

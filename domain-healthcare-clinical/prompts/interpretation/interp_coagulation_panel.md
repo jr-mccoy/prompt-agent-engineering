@@ -77,11 +77,11 @@ Senior hematologist or ICU attending interpreting coags at the bedside.
    - **Score ≥5 = overt DIC.** Treat the underlying cause; supportive component therapy if bleeding (platelets <50 with bleeding → transfuse to >50; fibrinogen <100–150 → cryo; INR >1.5–2 with bleeding → FFP; vitamin K). Heparin only in selected thrombotic-predominant DIC.
 
 6. **Specific anticoagulant identification.**
-   - **Warfarin:** isolated INR elevation early; both prolonged late. Vitamin K reversal: PO 1–5 mg for INR 4.5–10 without bleeding; IV 5–10 mg + 4-factor PCC (25–50 units/kg by INR and weight) for major bleeding. FFP 10–15 mL/kg if PCC unavailable.
-   - **Heparin:** prolonged aPTT primarily (UFH); LMWH typically does not prolong aPTT and requires anti-Xa. Reverse UFH with protamine 1 mg per 100 units of heparin given in last hour (max 50 mg). Reverse LMWH partially with protamine if within ~8 hours.
+   - **Warfarin:** isolated INR elevation early; both prolonged late. Vitamin K reversal: for INR 4.5–10 without bleeding, whether to give oral vitamin K or simply hold warfarin is guideline-dependent [VERIFY: current CHEST/ASH guidance on VKA reversal]; IV 5–10 mg + 4-factor PCC (25–50 units/kg by INR and weight) for major bleeding. FFP 10–15 mL/kg if PCC unavailable.
+   - **Heparin:** prolonged aPTT primarily (UFH); LMWH typically does not prolong aPTT and requires anti-Xa. Reverse UFH with protamine 1 mg per 100 units of heparin given within the look-back window (max 50 mg) [VERIFY: protamine product label / current CHEST reversal guidance for the look-back window]. Reverse LMWH partially with protamine; the dose and how long after the last LMWH dose it is still useful depend on timing [VERIFY: protamine and LMWH product labels].
    - **DOACs:**
      - Direct thrombin inhibitor (dabigatran): elevates aPTT and TT; idarucizumab 5 g IV reverses.
-     - Direct Xa inhibitors (apixaban, rivaroxaban, edoxaban): may modestly elevate PT; specific anti-Xa (drug-calibrated) confirms; andexanet alfa or 4F-PCC for major bleeding (andexanet preferred but expensive).
+     - Direct Xa inhibitors (apixaban, rivaroxaban, edoxaban): may modestly elevate PT; specific anti-Xa (drug-calibrated) confirms; andexanet alfa or 4F-PCC for major bleeding — the choice between them is contested and availability varies [VERIFY: current ACC/ASH reversal guidance and local formulary].
    - **Argatroban:** prolongs aPTT; use in HIT.
    - **Lupus anticoagulant:** prolonged aPTT, mixing study does not correct, dRVVT confirms. Paradoxical — patients clot, do not bleed.
 
@@ -126,7 +126,7 @@ ACTION:
 
 ## Worked Example
 
-**Input:** 64 y/o M, day 3 admission for E. coli urosepsis. Started bleeding from IV sites and gums today. Vitals: BP 88/52 on norepi, HR 122, T 38.4. Labs now (from baseline normal on admission): PT 22 (INR 2.1), aPTT 58, fibrinogen 110, D-dimer 12,000, platelets 48 (was 220 on admission), Cr 2.3 (was 1.0). Smear: schistocytes present. No anticoagulants.
+**Input:** 64 y/o M, day 3 admission for E. coli urosepsis. Started bleeding from IV sites and gums today. Vitals: BP 88/52 on norepi, HR 122, T 38.4. Labs now (from baseline normal on admission): PT 22 s (lab reference 11–13 s) (INR 2.1), aPTT 58, fibrinogen 110, D-dimer 12,000, platelets 48 (was 220 on admission), Cr 2.3 (was 1.0). Smear: schistocytes present. No anticoagulants.
 
 **Output:**
 
@@ -138,7 +138,7 @@ D-DIMER: 12,000 — markedly elevated
 PLATELETS: 48 — moderate-severe thrombocytopenia, dropped from 220
 MIXING STUDY: not performed (consumption pattern; mixing study unnecessary at this stage)
 
-PATTERN: Consumptive coagulopathy — both pathways prolonged, low fibrinogen, high D-dimer, dropping platelets, schistocytes, in setting of severe sepsis. ISTH score: platelets 50–100 (1) — actually <50 (2), D-dimer strong rise (3), PT prolonged ~5 sec (1), fibrinogen <100 borderline (count as 0 since 110). Score ~6 → overt DIC.
+PATTERN: Consumptive coagulopathy — both pathways prolonged, low fibrinogen, high D-dimer, dropping platelets, schistocytes, in setting of severe sepsis. ISTH score: platelets 48 (<50 → 2) + D-dimer strong rise (3) + PT prolonged 22 − 13 = 9 s above the lab's upper normal (>6 → 2) + fibrinogen 110 (>100 → 0) = 7 → ≥5, overt DIC.
 
 DIFFERENTIAL:
 1. Sepsis-induced overt DIC — diagnosis fits cleanly: gram-negative urosepsis, multi-organ dysfunction (AKI), MAHA features (schistocytes), consumptive coag pattern, active bleeding.
@@ -149,7 +149,7 @@ ACTION:
 - Component therapy because patient is actively bleeding:
   - Platelets: transfuse to keep >50 in active bleeding (1 dose apheresis or 6-pack pooled, expect rise of ~30–50K)
   - Fibrinogen: cryoprecipitate 10 units (1 dose), target fibrinogen >150 in active bleeding
-  - FFP 10–15 mL/kg (~700–1000 mL for this patient) to address factor depletion since INR 2.1 with active bleeding
+  - FFP 10–15 mL/kg (volume [per provider order] — weight not provided) to address factor depletion since INR 2.1 with active bleeding
   - Vitamin K 10 mg IV (cheap, addresses any concurrent vitamin K depletion from poor PO and antibiotics)
 - Recheck full coag panel and CBC q4–6h while bleeding active.
 - Heparin is NOT indicated here — bleeding-predominant DIC. Heparin is considered only in thrombosis-predominant DIC (e.g., purpura fulminans, large-vessel thrombosis with acute promyelocytic leukemia).

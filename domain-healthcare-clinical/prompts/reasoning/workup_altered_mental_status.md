@@ -172,7 +172,7 @@ DISPOSITION:
 ACUITY / STABILIZATION:
 - Airway intact; SpO2 94 RA, give O2 to 92–96.
 - Glucose normal — no action.
-- IV access × 2; LR 30 mL/kg (∼1.8 L for 60 kg) over 1 h for sepsis with hypotension/lactate elevation; reassess.
+- IV access × 2; LR 30 mL/kg over 1 h — weight not provided, weight needed to compute the volume; confirm the bolus trigger against BP 102/64 and lactate 2.4 as given [VERIFY: current Surviving Sepsis Campaign fluid-resuscitation trigger]; reassess.
 
 HISTORY / COLLATERAL:
 - Acute on chronic mental status change (subacute over 2 days).
@@ -190,14 +190,14 @@ DIFFERENTIAL VIA AEIOU TIPS:
 2. Electrolyte / dehydration / AKI contributing.
 3. Medications — recent TMP-SMX (hyperK, AKI, contributes); confirm stopped.
 4. CNS infection — possible but less likely without focal deficit, headache, or neck stiffness; LP if not improving with antibiotic.
-5. Stroke — non-focal exam; CT to exclude given anticoag use and age threshold.
+5. Stroke — non-focal exam; CT to exclude given age threshold (Step 5); not on anticoagulation per input.
 6. Hypoxia — borderline SpO2; treat.
 
 WORKUP:
 - Labs: CBC, BMP, Mg, Ca, phosphorus, LFTs, troponin, lactate (already 2.4), TSH, B12, blood cultures × 2, urine culture (sensitivities critical given recent abx), CRP/procalcitonin.
 - UA already done — pyuria, nitrites; obtain post-void residual to rule out retention given BPH (relieve obstruction if present).
 - CXR (consider pneumonia in elderly with AMS).
-- Non-contrast CT head: indicated given age >60 + new AMS + on no anticoag but to exclude subdural; low threshold.
+- Non-contrast CT head: indicated given age ≥60 with new AMS (Step 5), including to exclude subdural; no anticoagulant on the medication list.
 - LP: defer initially; reassess if not improving in 24–48 h or if focal deficit, severe AMS.
 - ECG (sepsis can unmask cardiac issue).
 

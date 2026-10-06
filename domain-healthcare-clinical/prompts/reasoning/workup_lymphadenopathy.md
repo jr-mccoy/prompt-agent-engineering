@@ -213,7 +213,9 @@ LOCALIZED vs GENERALIZED:
 - Generalized (right supraclavicular + right cervical + left axillary).
 
 CONSTITUTIONAL / B-SYMPTOMS:
-- All three present: drenching night sweats, weight loss ≥10%, low-grade fevers (B-symptoms).
+- Drenching night sweats × 6 weeks — meets the night-sweats B-symptom.
+- Weight loss 5 kg, interval and baseline weight not provided — weight criterion unverifiable (cannot be called ≥10% without a baseline).
+- "Occasional low-grade fevers" without a measured temperature — fever criterion unverifiable; document measured temperatures.
 
 EXPOSURES / RISK FACTORS:
 - None concerning. EBV remote past infection (IgG+, IgM−). HIV negative.
@@ -250,7 +252,7 @@ STAGE 2 / BIOPSY:
 WORKING DIAGNOSIS / TREATMENT:
 - Working: lymphoma (Hodgkin most likely) with constitutional symptoms — needs tissue diagnosis.
 - Hold any empiric steroids until tissue obtained (steroids alter pathology).
-- Maintain hydration; allopurinol 300 mg daily before treatment to reduce tumor lysis risk.
+- Maintain hydration; no allopurinol before tissue diagnosis (allopurinol is itself a cause of drug-induced adenopathy/DRESS — Step 5). Tumor lysis prophylaxis is decided by oncology at treatment start, by TLS risk. [VERIFY: current TLS risk-stratification / prophylaxis guidance]
 - Hematology/oncology referral within 1 week.
 
 DISPOSITION:

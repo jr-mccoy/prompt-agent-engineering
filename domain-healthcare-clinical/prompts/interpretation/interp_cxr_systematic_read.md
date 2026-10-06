@@ -104,7 +104,7 @@ IMPRESSION:
 
 ## Worked Example
 
-**Input:** 68 y/o M, 3 days dyspnea and orthopnea, h/o HFrEF EF 25%, on furosemide 40 BID. AP portable CXR. No prior available today.
+**Input:** 68 y/o M, 3 days dyspnea and orthopnea, h/o HFrEF EF 25%, on furosemide 40 BID. AP portable CXR, described as: semi-erect AP portable; 8 posterior ribs visible; no lines or tubes; bilateral perihilar interstitial opacities with peribronchial cuffing; upper-lobe vascular redistribution; Kerley B lines at the bases; no focal consolidation; small bilateral effusions, R > L, blunting both costophrenic angles; enlarged cardiac silhouette; mediastinum not widened, aortic knob unremarkable; no pneumothorax seen; no acute osseous abnormality; bowel gas unremarkable, no free air. No prior available today.
 
 **Output:**
 
@@ -113,12 +113,12 @@ TECHNIQUE: AP portable, semi-erect. Adequate inspiration (8 posterior ribs). No 
 LINES/TUBES: None.
 LUNGS: Bilateral perihilar interstitial opacities with peribronchial cuffing. Cephalization of pulmonary vasculature. Kerley B lines at the bases. No focal consolidation.
 PLEURA: Small bilateral pleural effusions, R > L, blunting both costophrenic angles.
-HEART/MEDIASTINUM: Cardiomegaly, CT ratio ~0.6. Mediastinum not widened. Aortic knob unremarkable.
+HEART/MEDIASTINUM: Enlarged cardiac silhouette, but heart size cannot be reliably assessed on an AP film (the CTR >50% rule is for PA views); no CTR reported. Mediastinum not widened. Aortic knob unremarkable.
 BONES/SOFT TISSUE: No acute osseous abnormality.
 UPPER ABDOMEN: Bowel gas pattern unremarkable. No free air.
 
 IMPRESSION:
-1. Cardiogenic pulmonary edema with bilateral pleural effusions in the setting of known HFrEF — IV diuresis (furosemide 80 mg IV now, double the home oral dose), strict I&Os, daily weights, BMP and BNP, telemetry. Consider non-invasive ventilation if hypoxic or work of breathing significant.
-2. Cardiomegaly — consistent with known cardiomyopathy; no new finding.
+1. Cardiogenic pulmonary edema with bilateral pleural effusions in the setting of known HFrEF — IV diuresis (furosemide 80 mg IV now — the same number of mg as the 80 mg/day total home oral dose, not double it; IV furosemide is more bioavailable than oral, so the effective dose is higher [VERIFY: current ACC/AHA/HFSA heart failure guideline on IV loop-diuretic dosing relative to the home dose]), strict I&Os, daily weights, BMP and BNP, telemetry. Consider non-invasive ventilation if hypoxic or work of breathing significant.
+2. Enlarged cardiac silhouette — consistent with known cardiomyopathy, but not measurable on an AP film; confirm on a PA film or echo if it would change management. No prior for comparison.
 3. No pneumothorax, no focal consolidation to suggest superimposed pneumonia.
 ```

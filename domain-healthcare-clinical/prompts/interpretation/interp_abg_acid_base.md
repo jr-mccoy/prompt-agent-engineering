@@ -80,9 +80,9 @@ Senior ICU attending interpreting a gas at the bedside.
    - >2.0: concurrent metabolic alkalosis (mixed AGMA + metabolic alkalosis)
 
 6. **Oxygenation (if relevant).**
-   - A-a gradient = PAO2 − PaO2 = [FiO2 × (Patm − 47) − PaCO2/0.8] − PaCO2 (room air sea level: 150 − PaCO2/0.8 − PaO2)
+   - A-a gradient = PAO2 − PaO2 = [FiO2 × (Patm − 47) − PaCO2/0.8] − PaO2 (room air sea level: 150 − PaCO2/0.8 − PaO2)
    - Normal A-a ≈ (Age/4) + 4. Elevated → V/Q mismatch, shunt, diffusion defect.
-   - P/F ratio = PaO2/FiO2. <300 ALI, <200 ARDS (Berlin), <100 severe ARDS.
+   - P/F ratio = PaO2/FiO2. Berlin ARDS categories (with PEEP/CPAP ≥5 cm H2O): ≤300 mild, ≤200 moderate, ≤100 severe. (The older AECC "<300 ALI" label is not a Berlin category.)
 
 7. **Etiology.** Marry the acid-base picture to the clinical context. "AG 26 with lactate 8 in a hypotensive febrile patient" → septic shock with lactic acidosis. "AG 22 with ketones, glucose 480, pH 7.18" → DKA. "Vomiting + low Cl + high HCO3 + paradoxical aciduria" → contraction alkalosis.
 
@@ -146,7 +146,7 @@ ACTION:
 - Insulin drip at 0.1 units/kg/hr after K confirmed >3.3; do NOT bolus insulin
 - K replacement: K is 5.4 now but will fall fast — add 20–40 mEq KCl per liter once K <5.2 and urine output adequate
 - Recheck BMP, glucose, VBG q1–2h. Anticipate K, phosphate, Mg drops
-- Transition to subcutaneous insulin only when AG closes (<12), HCO3 ≥18, pH ≥7.30, and patient eating; overlap drip and SC by 1–2 hours
+- Transition to subcutaneous insulin only when DKA resolution criteria are met [VERIFY: current ADA/consensus DKA resolution criteria — the gap, HCO3, pH and ketone cut-offs differ between guideline versions] and the patient is eating; overlap drip and SC by 1–2 hours
 - Hourly RR and mental status check — rising PaCO2 with falling pH means imminent respiratory failure; have airway plan ready
 - Search for trigger: infection screen (UA, CXR, blood cultures), missed insulin dose history, new MI in older patients
 ```

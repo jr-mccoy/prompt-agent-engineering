@@ -49,7 +49,7 @@ Senior internist or nephrologist reading the UA with the chart open.
 
 1. **Specimen quality.** >5 squamous epithelial cells/HPF or >10⁵ mixed flora suggests contamination; recommend clean recollection or catheter sample before committing to a pathology call.
 
-2. **Concentration check.** Specific gravity (1.005–1.030) and pH (4.5–8.0). Fixed SG ~1.010 suggests inability to concentrate (CKD, ATN). Alkaline pH with WBC + nitrite-negative could mean *Proteus* or other urea-splitter; persistent alkaline pH with stones suggests RTA type 1 or struvite.
+2. **Concentration check.** Specific gravity (1.005–1.030) and pH (4.5–8.0). Fixed SG ~1.010 suggests inability to concentrate (CKD, ATN). Alkaline pH with WBC could mean *Proteus* (nitrite-positive, see step 3) or another urea-splitter; persistent alkaline pH with stones suggests RTA type 1 or struvite.
 
 3. **Infection lane.**
    - **LE positive + nitrite positive + pyuria (>10 WBC/HPF) + bacteriuria** → UTI. Nitrite-positive specifically indicates Enterobacterales (E. coli, Klebsiella, Proteus). Nitrite-negative does not exclude UTI (Enterococcus, Staph saprophyticus, Pseudomonas don't reduce nitrate).
@@ -134,7 +134,7 @@ ACTION:
 - BMP now, repeat in 24h to track creatinine trajectory
 - Quantify protein: UPCR or 24-hour urine protein
 - Serologies: C3, C4, ANA, anti-dsDNA, ANCA (MPO, PR3), anti-GBM, ASO, hepatitis B and C
-- BP control: ACE inhibitor (lisinopril 10 mg daily) if creatinine stable and K acceptable — also reduces proteinuria
+- BP control: ACE inhibitor (e.g., lisinopril, dose [per provider order]) — also reduces proteinuria. Prerequisites before starting: pregnancy excluded (pregnancy status not provided — urine/serum hCG now; ACE inhibitors are contraindicated in pregnancy), creatinine stable, K acceptable
 - Nephrology consult today; biopsy likely indicated within days if creatinine rising or proteinuria nephrotic-range
 - If rapidly progressive (creatinine rising over hours-to-days), this is a renal emergency — biopsy and empiric pulse steroids while results pending after consult agreement
 ```

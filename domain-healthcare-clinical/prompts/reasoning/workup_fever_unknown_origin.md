@@ -93,7 +93,7 @@ Work up classic fever of unknown origin (FUO): document fever per definition, st
    - **Drug fever:** stop suspect agents one at a time; resolution within 72–96 h.
    - **Factitious fever:** rare; thermometer manipulation, simultaneous oral and rectal/urine temperatures discordant.
    - **Hypersensitivity pneumonitis, sarcoidosis** — pulmonary findings, ACE level, biopsy.
-   - **Hemophagocytic lymphohistiocytosis (HLH):** fever + cytopenias + splenomegaly + hyperferritinemia (>10,000) + hypertriglyceridemia + low fibrinogen + hemophagocytosis on marrow + sIL-2R elevation. HLH-94 protocol; consult hematology urgently.
+   - **Hemophagocytic lymphohistiocytosis (HLH):** fever + cytopenias + splenomegaly + hyperferritinemia (criterion threshold per HLH-2004 is far lower than 10,000 — take it from the criteria [VERIFY: HLH-2004 diagnostic criteria, ferritin threshold]; extreme values >10,000 are more specific) + hypertriglyceridemia + low fibrinogen + hemophagocytosis on marrow + sIL-2R elevation. HLH-94 protocol; consult hematology urgently.
 
 6. **Empiric therapy decisions.**
    - Generally **avoid empirical antibiotics, antitubercular, or steroids during workup** (obscures cultures and biopsies). Exceptions:
@@ -179,7 +179,7 @@ EXAM CLUES (serial):
 - Fundoscopy and visual acuity each visit.
 
 STAGE 1 RESULTS:
-- Markedly elevated ESR, mild CRP elevation, mild anemia of inflammation, thrombocytosis, normal LFTs/LDH.
+- Markedly elevated ESR; CRP 14 — units and reference range not provided, so not graded (mg/L vs mg/dL differ tenfold); mild anemia of inflammation, thrombocytosis, normal LFTs/LDH.
 - No infection, no malignancy on CT, no endocarditis.
 
 WORKING DIFFERENTIAL:

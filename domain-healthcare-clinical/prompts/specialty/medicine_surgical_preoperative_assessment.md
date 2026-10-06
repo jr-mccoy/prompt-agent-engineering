@@ -130,8 +130,12 @@ REVISED CARDIAC RISK INDEX (RCRI / Lee Index):
     1 risk factor: ~6.0% MACE risk
     2 risk factors: ~10.1% MACE risk
     ≥ 3 risk factors: ~15%+ MACE risk
+    (Source of this risk-estimate set must be named before quoting it — these are not
+     Lee's original derivation figures [VERIFY: source, e.g. 2017 Canadian Cardiovascular
+     Society perioperative guideline, and which set the institution uses])
 
-ACS/AHA STEPWISE ALGORITHM (2014 Guidelines):
+ACC/AHA STEPWISE ALGORITHM (2014 guideline — a newer edition may supersede it
+[VERIFY: current ACC/AHA perioperative cardiovascular guideline, 2024 edition]):
   1. Is the surgery emergent?
      [ ] Yes → Proceed to surgery with perioperative risk mitigation
      [ ] No → Continue to Step 2
@@ -242,13 +246,16 @@ HOLD BEFORE SURGERY:
   [ ] Metformin: Hold day of surgery (restart when eating and renal function stable)
   [ ] SGLT2 inhibitors: Hold 3-4 days before surgery (risk of euglycemic DKA)
   [ ] Sulfonylureas: Hold day of surgery (hypoglycemia risk)
-  [ ] GLP-1 receptor agonists: Hold 1 week before surgery (gastric motility concerns)
+  [ ] GLP-1 receptor agonists: Hold vs continue per current peri-operative guidance — the earlier
+      "hold weekly agents 1 week before" advice has changed (gastric motility / aspiration concerns)
+      [VERIFY: current ASA / multisociety GLP-1 RA peri-operative guidance]
   [ ] Insulin: Reduce basal by 20-25% night before; hold mealtime insulin day of surgery
       Perioperative glucose target: 140-180 mg/dL (avoid < 70 and > 250)
 
   Anticoagulants:
   [ ] Warfarin: Stop 5 days before surgery (INR target < 1.5 for most procedures)
-      Bridge with LMWH: Only if HIGH thrombotic risk (mechanical valve, recent VTE < 3 months,
+      Bridge with LMWH: Only if HIGH thrombotic risk (mechanical valve with high-risk features —
+        not every mechanical valve [VERIFY: current ACC/AHA valvular heart disease guideline], recent VTE < 3 months,
         high-risk thrombophilia)
       Most patients do NOT need bridging
   [ ] DOACs:
@@ -260,7 +267,7 @@ HOLD BEFORE SURGERY:
       Primary prevention: Stop 7-10 days before
       Secondary prevention (CAD, stents): CONTINUE unless bleeding risk very high
       Bare-metal stent < 30 days or DES < 6 months: DO NOT STOP aspirin
-  [ ] Clopidogrel / prasugrel / ticagrelor: Stop 5-7 days before
+  [ ] Clopidogrel / ticagrelor: Stop 5 days before; prasugrel: Stop 7 days before
       Exception: Recent stent — consult cardiology before stopping
 
   Other:
@@ -409,7 +416,8 @@ Verify with anesthesiology and surgical team
 
 ### Patients on Anticoagulation for Mechanical Heart Valves
 - Higher risk of thrombosis if anticoagulation interrupted
-- Usually requires bridging with LMWH or IV heparin
+- Bridging with LMWH or IV heparin depends on valve position, valve type and thromboembolic
+  risk factors — not every mechanical valve requires it [VERIFY: current ACC/AHA valvular heart disease guideline]
 - Consult cardiology for management
 
 ### Morbid Obesity

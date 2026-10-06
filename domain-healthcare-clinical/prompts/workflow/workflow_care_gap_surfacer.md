@@ -70,7 +70,7 @@ Primary care attending running the panel-management pass that catches what react
 - Drive sex-specific screening from the recorded sex alone without the organ history that changes it (hysterectomy, mastectomy, gender-affirming surgery).
 
 ✅ **DO:**
-- Recompute each Status from dates: today minus last-done date against the interval, stated in months or years overdue (colonoscopy 11 years ago on a 10-year interval = about 1 year overdue; mammogram 3 years ago on a biennial interval = overdue, not "due").
+- Recompute each Status from dates: today minus last-done date against the interval, stated in months or years overdue (colonoscopy 11 years ago on a 10-year interval = about 1 year overdue; any last-done date beyond its interval is "overdue" by the excess, never merely "due").
 - Count active conditions and high-risk drugs against CHRONIC-DISEASE MONITORING lines — each needs at least one, or a stated reason it has none.
 - Check each item appears in exactly one section and every open gap carries an ACTION.
 
@@ -115,12 +115,12 @@ SCREENING:
 - Diabetic retinal exam — Last: unknown | Due: annual (ADA, more important with A1c 8.3) | Status: overdue/unconfirmed → ACTION: order/refer ophthalmology, confirm prior.
 - Colorectal cancer — Last: colonoscopy 11 yr ago (normal) | Due: 10-yr interval → overdue → ACTION: order colonoscopy or FIT.
 - Lung cancer (low-dose CT) — Meets USPSTF criteria (age 50–80, 20+ pack-years, quit <15 yr) | Status: due → ACTION: order LDCT, counsel.
-- Mammography — Last: 3 yr ago | Due: biennial (USPSTF) → due/slightly overdue → ACTION: order screening mammogram.
+- Mammography — Last: 3 yr ago | Due: biennial (USPSTF) → overdue by about 1 yr → ACTION: order screening mammogram.
 - Osteoporosis (DXA) — Never done; recommended for women ≥65 | Status: due → ACTION: order DXA.
 
 IMMUNIZATIONS:
 - Pneumococcal — Status: unknown → ACTION: confirm; give age-/condition-appropriate series if not documented.
-- RSV — Age-eligible (≥60, shared decision) → ACTION: offer.
+- RSV — Status: unknown; eligibility at 67 (age band and risk conditions such as diabetes) per current ACIP schedule [VERIFY: current ACIP RSV recommendation] → ACTION: confirm prior dose; offer if eligible.
 - Shingles (RZV) — Age ≥50, status unknown → ACTION: confirm/give 2-dose series.
 - Influenza — up to date (last fall) → confirm current season.
 - Tdap/Td — confirm last booster within 10 yr.

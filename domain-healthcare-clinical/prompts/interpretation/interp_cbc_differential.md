@@ -65,12 +65,12 @@ Senior internist or hematologist reading the CBC with the chart open.
    - **Blasts on differential:** acute leukemia until proven otherwise — urgent heme consult, peripheral smear review, flow cytometry.
 
 3. **Anemia workup by MCV.**
-   - **Microcytic (MCV <80):** iron deficiency (high RDW, low ferritin, low Tsat), thalassemia (high RBC count for the Hgb, normal RDW, target cells, abnormal hemoglobin electrophoresis), anemia of chronic disease (low Tsat, normal/high ferritin), sideroblastic, lead toxicity.
+   - **Microcytic (MCV <80):** iron deficiency (high RDW, low ferritin, low Tsat), thalassemia (high RBC count for the Hgb, RDW often normal or only mildly raised, target cells, abnormal hemoglobin electrophoresis), anemia of chronic disease (low Tsat, normal/high ferritin), sideroblastic, lead toxicity.
    - **Normocytic (MCV 80–100):** acute blood loss, hemolysis (high retic, high LDH, low haptoglobin, high indirect bili — characterize as immune or non-immune with DAT, smear), early iron deficiency, anemia of chronic disease, CKD (low EPO), bone marrow suppression.
    - **Macrocytic (MCV >100):** B12 deficiency (hypersegmented neutrophils, neuro signs), folate deficiency, alcohol, liver disease, hypothyroidism, drugs (MTX, hydroxyurea, AZT), MDS, reticulocytosis (large young RBCs).
    - **Reticulocyte index = retic% × (Hct/45) / maturation factor (1 if Hct >35, 1.5 if 25–35, 2 if 15–25, 2.5 if <15).** RI >2 = appropriate response (hemolysis, blood loss). RI <2 = hypoproliferative (deficiency, marrow problem, EPO deficit).
 
-4. **RDW.** Elevated RDW = mixed population. Iron deficiency raises RDW; thalassemia trait does not — early discriminator.
+4. **RDW.** Elevated RDW = more variation in red-cell size (anisocytosis, including mixed populations). Iron deficiency usually raises RDW; thalassemia trait more often has a normal or only mildly raised RDW — a supportive clue, not a reliable discriminator (confirm with ferritin and the Mentzer index).
 
 5. **Polycythemia.**
    - Spurious (hemoconcentration) vs absolute. Check EPO, JAK2 V617F (PV), look for secondary causes (smoking, OSA, COPD, high altitude, EPO-secreting tumor, testosterone).
@@ -131,7 +131,7 @@ ACTION:
 
 ```
 WBC: 4.2 (ANC 2.5, ALC 1.3) — low-normal, no leukocytosis
-RBC/HGB: Hgb 8.4, MCV 105 (macrocytic), RDW 18.5 (high, mixed population), retic 1.2% (RI <1, hypoproliferative)
+RBC/HGB: Hgb 8.4, MCV 105 (macrocytic), RDW 18.5 (high — anisocytosis), retic 1.2% (RI <1, hypoproliferative)
 PLATELETS: 95 — mild thrombocytopenia
 SMEAR: Hypersegmented neutrophils, oval macrocytes, teardrops
 

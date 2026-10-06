@@ -192,7 +192,7 @@ INVASION & TISSUE TROPISM:
 
 VIRULENCE / TOXIN BIOLOGY:
 - α-hemolysin (Hla): pore-forming toxin, contributes to inflammation and tissue damage.
-- PVL (in MRSA USA300 lineage): kills neutrophils via Hlg pore in PMN membrane → necrotizing infection. PVL+ strains associated with severe community SSTI and necrotizing pneumonia.
+- PVL (in MRSA USA300 lineage): bicomponent leukocidin (LukS-PV + LukF-PV) that forms its own pore in the PMN membrane — related to, but distinct from, γ-hemolysin (Hlg) — killing neutrophils → necrotizing infection. PVL+ strains associated with severe community SSTI and necrotizing pneumonia.
 - TSST-1 (superantigen): less central to PJI, more relevant to toxic shock; bridges MHC-II + Vβ-2 TCR.
 - Protein A (SpA): binds Fc of IgG, blocks opsonophagocytosis, also bridges B-cell receptors (VH3) inducing dysfunctional B-cell responses.
 
@@ -208,7 +208,7 @@ CLINICAL SYNDROME EXPLAINED:
 - Why antibiotics alone usually fail: biofilm sequesters organisms; planktonic-active β-lactams cannot reach effective concentrations within biofilm matrix; slow-growing persisters are tolerant.
 
 ANTIMICROBIAL STRATEGY:
-- Empiric (while awaiting cultures from arthrocentesis and operative tissue): vancomycin 15–20 mg/kg IV q8–12h (target trough 15–20 mg/L or AUC24 400–600 mg·h/L) + cefepime 2 g IV q8h or piperacillin-tazobactam 4.5 g IV q6h to cover gram-negs while pending speciation.
+- Empiric (while awaiting cultures from arthrocentesis and operative tissue): vancomycin 15–20 mg/kg IV q8–12h (AUC-guided monitoring, AUC24 400–600 mg·h/L, consistent with the targeted-therapy line below; trough-only targets are outdated [VERIFY: current ASHP/IDSA vancomycin therapeutic-monitoring guideline]) + cefepime 2 g IV q8h or piperacillin-tazobactam 4.5 g IV q6h to cover gram-negs while pending speciation.
 - Targeted on MSSA: cefazolin 2 g IV q8h (or 3 g q8h if obese / endocarditis-level); alternatives nafcillin / oxacillin 2 g IV q4h. Cefazolin preferred (better tolerability, daily-life convenience).
 - Targeted on MRSA: vancomycin (AUC-guided) or daptomycin 8–10 mg/kg IV q24h (high-dose for staph bacteremia / hardware) — note daptomycin not in pneumonia.
 - **Add rifampin 300–450 mg PO BID after initial bacteremia clearance** (typically 24–48h after starting backbone with negative repeat cultures; rifampin not before clearance because of high resistance emergence under high inoculum):

@@ -69,7 +69,7 @@ Work up hematuria: confirm true blood, distinguish glomerular vs urologic source
 
 4. **Workup urologic hematuria — apply AUA microhematuria risk stratification.**
 
-   - **Low risk:** female <50, male <40, never smoker, ≤25 pack-years, 3–10 RBC/hpf on a single UA, no risk factors. Recommend repeat UA in 6 months OR cystoscopy + renal US (shared decision).
+   - **Low risk:** female <50, male <40, never smoker or <10 pack-years, 3–10 RBC/hpf on a single UA, no risk factors. Recommend repeat UA in 6 months OR cystoscopy + renal US (shared decision).
    - **Intermediate risk:** female 50–59, male 40–59, 10–30 pack-years, 11–25 RBC/hpf on single UA OR 3–25 RBC/hpf on a repeat UA after a low-risk negative initial. Recommend cystoscopy AND renal US.
    - **High risk:** female ≥60, male ≥60, >30 pack-years, >25 RBC/hpf, gross hematuria, prior gross hematuria, irritative voiding symptoms with risk factors. Recommend cystoscopy AND CT urography (multiphase CT with contrast).
 
@@ -177,7 +177,7 @@ CLASSIFICATION:
 - No flank pain, no LUTS prominent → consider bladder source highest priority.
 
 RISK STRATIFICATION (AUA):
-- HIGH RISK: gross hematuria, age ≥60, ≥30 pack-year smoking history. Mandates cystoscopy + CT urography regardless.
+- HIGH RISK: gross hematuria, age ≥60. Smoking 30 pack-years falls in the intermediate band (10–30), not the high band (>30); the tier is high regardless. Mandates cystoscopy + CT urography.
 
 GLOMERULAR WORKUP:
 - Trace protein, no casts, no dysmorphic RBC; UPCR 0.2 — minimal proteinuria.

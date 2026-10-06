@@ -110,7 +110,7 @@ Three categories; count elements toward each level.
 | Level | Data |
 |-------|------|
 | Minimal | Minimal / none |
-| Limited | 1 of Cat 1 (2 items) OR 1 of Cat 2 |
+| Limited | 2 Cat 1 test/document items OR assessment requiring an independent historian (independent interpretation, Cat 2, first counts at Moderate) |
 | Moderate | 1 of Cat 1 (3 items) OR 1 of Cat 2 OR 1 of Cat 3 |
 | Extensive | 2 of the 3 categories |
 
@@ -140,7 +140,7 @@ Meet or exceed 2 of the 3 elements at the level. Map to code:
 
 If time leveling yields a higher and more accurate code, document total time with activities.
 
-**2021 outpatient time thresholds (new patient):**
+**2021–2023 outpatient time ranges (new patient) — superseded; current CPT states a minimum total time per code [VERIFY: current AMA CPT E/M time table]:**
 - 99202: 15–29 min
 - 99203: 30–44 min
 - 99204: 45–59 min
@@ -226,7 +226,7 @@ DOCUMENTATION LANGUAGE TO ADD (if missing)
 
 CAVEATS / PAYER-SPECIFIC NOTES
 ------------------------------
-- [E.g., consult codes 99241-99245 deleted for Medicare; use new/established or inpatient codes]
+- [E.g., Medicare does not pay consultation codes — use new/established or inpatient codes; check which consult codes remain in the current CPT code set [VERIFY: current CPT / CMS consultation-code policy]]
 - [Split/shared visit rules if inpatient]
 - [Teaching physician rules if resident involvement]
 

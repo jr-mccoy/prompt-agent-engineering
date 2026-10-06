@@ -319,7 +319,7 @@ BNP / NT-proBNP:
   "Gray zone": Values in between — clinical judgment needed
 
   Confounders:
-    Falsely elevated: CKD, atrial fibrillation, pulmonary hypertension, sepsis
+    Elevated without heart failure (true elevations, not assay artifact): CKD, atrial fibrillation, pulmonary hypertension, sepsis
     Falsely low: Obesity (BNP stored in fat tissue)
 ```
 
@@ -486,7 +486,7 @@ Lab results must be interpreted in clinical context — not in isolation
 - D-dimer: Age-adjusted cutoff (age × 10) in patients > 50
 
 ### Medication Effects on Labs
-- Heparin → Falsely low fibrinogen (some assays), potential for pseudothrombocytopenia
+- Heparin → Falsely low fibrinogen (some assays); heparin-induced thrombocytopenia (HIT) is a true fall in platelets, not pseudothrombocytopenia (an in-vitro EDTA-tube clumping artifact)
 - ACE inhibitors → Elevated potassium, elevated creatinine (expected, not always harmful)
 - Statins → Elevated CK, mildly elevated AST/ALT
 - Metformin → Mildly elevated lactate

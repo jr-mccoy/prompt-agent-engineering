@@ -67,7 +67,7 @@ Work up the patient with rash: prioritize identification of life-threatening der
 
    - **Toxic shock syndrome (staphylococcal or streptococcal):** fever, hypotension, diffuse macular erythroderma (sunburn-like) with later desquamation (palms/soles), multiorgan involvement. Streptococcal often with deep tissue infection. Source control (remove tampon, packing; debride necrotizing soft tissue infection); vancomycin + clindamycin (toxin suppression) + piperacillin-tazobactam; IVIG for severe streptococcal TSS.
 
-   - **Rocky Mountain spotted fever:** fever, headache, myalgia followed by petechial rash starting on wrists/ankles spreading centripetally to palms/soles. Tick exposure in endemic areas. Mortality high if untreated. **Empiric doxycycline 100 mg PO/IV BID** at any age (including children) — do not wait for confirmation. Other rickettsial illnesses similar approach.
+   - **Rocky Mountain spotted fever:** fever, headache, myalgia followed by rash starting on wrists/ankles, spreading centripetally to the trunk and often involving palms/soles; becomes petechial later. Tick exposure in endemic areas. Mortality high if untreated. **Empiric doxycycline 100 mg PO/IV BID** at any age (including children) — do not wait for confirmation. Other rickettsial illnesses similar approach.
 
    - **Disseminated intravascular coagulation / purpura fulminans:** widespread purpura with sepsis. Treat underlying sepsis; supportive (FFP, cryo, platelets) if bleeding.
 
@@ -119,7 +119,7 @@ Work up the patient with rash: prioritize identification of life-threatening der
      - SLE (malar rash sparing nasolabial folds), subacute cutaneous LE, dermatomyositis (Gottron papules, heliotrope rash, shawl sign), porphyria cutanea tarda, drug photosensitivity.
 
    - **Targetoid lesions:**
-     - Erythema multiforme: typical 3-zone target, often HSV-triggered; minor mucosal in EM major.
+     - Erythema multiforme: typical 3-zone target, often HSV-triggered; EM minor has little or no mucosal involvement, EM major involves mucosa.
      - Distinguish from SJS by pattern (atypical targets, mucosa, sloughing).
 
 3. **Targeted workup.**
