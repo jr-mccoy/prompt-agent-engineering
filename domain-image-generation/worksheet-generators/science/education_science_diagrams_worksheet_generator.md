@@ -2,13 +2,23 @@
 title: "Science Diagrams Worksheet Generator"
 category: education
 description: "Generate diagram-based science worksheets with label banks, arrows, and structured observation prompts."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - science
   - worksheet
   - diagrams
   - labeling
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Science Diagrams Worksheet Generator
@@ -121,3 +131,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept leader arrows that end on the wrong structure — the label bank matches the vocabulary while the arrow for "stamen" lands on a petal.
+- Pass anatomically wrong drawings that look plausible: an insect with eight legs, a three-chambered human heart, a plant cell drawn without a cell wall.
+- Print a ZONE 3 label bank with more or fewer labels than arrows without saying so in the directions, or a diagram that already shows the label text the student must supply.
+
+✅ **DO:**
+- Trace every arrow from its label slot to its endpoint and check the structure it touches against a reputable reference diagram at the intake grade level.
+- Count the features that identify the subject (legs, body segments, heart chambers, petals) on the rendered diagram against that reference.
+- Count arrows against label-bank entries and the intake's required diagram parts; any part missing from the drawing makes the worksheet unanswerable.

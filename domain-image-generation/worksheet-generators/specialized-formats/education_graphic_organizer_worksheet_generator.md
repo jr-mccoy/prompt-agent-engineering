@@ -2,13 +2,23 @@
 title: "Graphic Organizer Worksheet Generator"
 category: education
 description: "Generate printable graphic organizer worksheets (Venn, T-chart, sequence, cause/effect) with explicit structure labels."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - specialized-formats
   - worksheet
   - graphic-organizer
   - compare-contrast
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Graphic Organizer Worksheet Generator
@@ -128,3 +138,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a Venn diagram whose circles do not overlap, or whose overlap is too small to write in — it looks like a Venn diagram and cannot hold the shared traits.
+- Pass sequence or cause/effect arrows that point backwards, so the organizer's structure contradicts its ZONE 2 purpose statement.
+- Let the model fill organizer boxes with sample answers that complete the task before the student starts.
+
+✅ **DO:**
+- Trace each arrow in the rendered organizer and confirm it runs from first to next (or cause to effect); check a Venn overlap is labelled for the shared category.
+- Count organizer boxes against the steps, causes or comparisons the ZONE 4 prompts ask for.
+- Check each box gives enough writing room for the grade's handwriting size, and that the organizer frame is empty.

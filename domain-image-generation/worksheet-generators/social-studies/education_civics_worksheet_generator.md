@@ -2,13 +2,23 @@
 title: "Civics Worksheet Generator"
 category: education
 description: "Generate civics worksheets focused on rights, responsibilities, government structure, and participation in community life."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - social-studies
   - worksheet
   - civics
   - government
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Civics Worksheet Generator
@@ -128,3 +138,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- State one jurisdiction's arrangements as universal — "the government has three branches", "you can vote at 18" — without naming the country, state or city they describe.
+- Print officeholders, seat counts or age thresholds without a date; they look authoritative and go out of date between printings.
+- Write ZONE 3 scenarios framed around a live partisan dispute whose "correct" answer is a political position rather than a civic fact or procedure.
+- Build a ZONE 4 matching table in which two terms fit one definition ("right" and "freedom").
+
+✅ **DO:**
+- Name the jurisdiction in the ZONE 2 reference and check every fact against an official government or civics-education source as of the print date; mark anything unconfirmed as [VERIFY].
+- Confirm each ZONE 3 scenario's answer follows from the ZONE 2 reference rather than opinion.
+- Check the ZONE 4 matching is one-to-one by attempting it yourself from the definitions alone.

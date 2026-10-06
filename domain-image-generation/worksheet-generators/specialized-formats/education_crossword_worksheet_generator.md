@@ -2,13 +2,23 @@
 title: "Crossword Worksheet Generator"
 category: education
 description: "Generate student-friendly crossword worksheets with clue scaffolds and black-and-white-safe grid formatting."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - specialized-formats
   - worksheet
   - crossword
   - vocabulary
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Crossword Worksheet Generator
@@ -128,3 +138,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 grid whose numbered cells do not match the clue lists — a 4 Across with no cell numbered 4, or a numbered cell that starts no entry.
+- Pass an answer whose letter count differs from its slot, or crossing entries that need different letters in the shared square.
+- Trust an image model to compose a valid crossword grid; it renders black-and-white squares that look like a crossword and rarely interlock.
+
+✅ **DO:**
+- Write the answer key into the grid: every answer must fill its slot exactly, every crossing square must share one letter, and every numbered cell must start an Across or Down entry.
+- Count ZONE 4 and ZONE 5 clues against the numbered entries in the grid, and check each required vocabulary word is an answer.
+- Build the grid in a crossword tool and have the image model render only the surrounding page if the rendered grid fails any of those checks.

@@ -2,13 +2,23 @@
 title: "Flip-Book Worksheet Generator"
 category: education
 description: "Generate single-page flip-book worksheet templates with fold/cut guidance and sequenced learning tabs."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - specialized-formats
   - worksheet
   - flip-book
   - interactive-notebook
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Flip-Book Worksheet Generator
@@ -128,3 +138,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assume tab order on the flat sheet is reading order once folded — folding can reverse the sequence and turn under-tab text upside down.
+- Accept flap cut lines that run past the fold line, which separates the flaps from the book.
+- Pass a ZONE 3 tab strip whose number of flaps differs from the number of ZONE 4 under-tab boxes, or whose count is outside the 4–8 range.
+
+✅ **DO:**
+- Print a test copy, fold and cut it following the ZONE 2 steps exactly, then open each flap in order and check the label matches the content beneath it and reads right-side up.
+- Count flaps, under-tab boxes and ZONE 2 step numbers against each other before declaring the template done.
+- Check every cut line stops at the fold line on the folded test copy.

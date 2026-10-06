@@ -2,13 +2,23 @@
 title: "Economics Basics Worksheet Generator"
 category: education
 description: "Generate introductory economics worksheets on needs vs wants, goods/services, producers/consumers, and simple decision-making."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - social-studies
   - worksheet
   - economics
   - financial-literacy
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Economics Basics Worksheet Generator
@@ -128,3 +138,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Put context-dependent items in the ZONE 3 needs/wants table with a fixed answer (a phone, a car) when the answer depends on the scenario the item lacks.
+- Misclassify goods and services (a haircut as a good), or present producer and consumer as categories a person cannot belong to at once.
+- Write ZONE 4 decision scenarios whose prices and budget do not add up, so the "can she afford both?" answer differs from the arithmetic.
+- Use real brand names as examples; they add advertising and date the page.
+
+✅ **DO:**
+- Write a one-line reason for each sort item's column; any item whose reason needs "it depends" either gets a scenario or is removed.
+- Recompute every amount in the ZONE 4 scenarios and check each trade-off question names a single next-best alternative as the opportunity cost.
+- Attempt the ZONE 5 vocabulary practice from the ZONE 2 concept key alone and confirm every blank has one answer.

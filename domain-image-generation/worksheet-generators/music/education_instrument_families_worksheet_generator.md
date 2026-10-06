@@ -2,13 +2,23 @@
 title: "Instrument Families Worksheet Generator"
 category: education
 description: "Generate music worksheets that classify instruments into strings, woodwinds, brass, percussion, and keyboard families."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - music
   - instruments
   - classification
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Instrument Families Worksheet Generator
@@ -121,3 +131,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Place instruments by material or appearance — the saxophone and the flute are woodwinds although made of metal; defining brass in ZONE 2 as "made of metal" puts both in the wrong family.
+- Decide the piano's family silently; curricula place it in percussion, strings or keyboard, and the description's five-family scheme puts it in keyboard, so the key must not also list it under percussion.
+- Accept drawn instruments that do not exist: a violin with frets, a trumpet with keys instead of three valves, a clarinet with a trumpet bell.
+
+✅ **DO:**
+- Check each ZONE 3 placement against how the instrument makes its sound (lips buzzing = brass; reed or air across an edge = woodwind; vibrating strings = strings; struck or shaken = percussion) and against the answer key.
+- Inspect each rendered instrument for its identifying features — four strings and no frets on a violin, six strings on a guitar, three valves on a trumpet — and replace any that fail.
+- Confirm every instrument in the ZONE 4 sort has exactly one family under the definitions printed in ZONE 2.

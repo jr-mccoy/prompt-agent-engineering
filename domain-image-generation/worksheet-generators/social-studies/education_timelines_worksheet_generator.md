@@ -2,13 +2,23 @@
 title: "Timeline Worksheet Generator"
 category: education
 description: "Generate timeline worksheets that sequence events, annotate causes/effects, and compare periods."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - social-studies
   - worksheet
   - timelines
   - history
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Timeline Worksheet Generator
@@ -103,7 +113,7 @@ VALIDATION CHECKLIST (must pass before finalizing)
 ```text
 LAYOUT ZONES
 - ZONE 1: Header and era/topic label.
-- ZONE 2: Timeline axis with evenly spaced event nodes.
+- ZONE 2: Timeline axis with event nodes spaced in proportion to the time between events (for a sequence-only activity, even spacing with the axis labelled "sequence — not to scale").
 - ZONE 3: Event detail boxes.
 - ZONE 4: Cause/effect annotation area.
 - ZONE 5: Compare-two-periods mini-table.
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept equal node spacing for unequal gaps on a scaled axis — 1492, 1607 and 1620 at equal intervals tells students the gaps are the same.
+- Accept events out of chronological order, or BCE dates run left to right as if larger numbers were later.
+- Let a ZONE 4 cause/effect annotation place the effect before its cause on the axis.
+- Fill an event detail box with a date the model produced rather than one taken from a source.
+
+✅ **DO:**
+- Compute the gap between each pair of consecutive events and check node spacing is proportional to it; where it cannot be (a very long span), label the axis "sequence — not to scale" or draw a break.
+- Check every date against a reference source and mark unconfirmed dates as [VERIFY]; sort them yourself, handling BCE/CE, and compare to the rendered order.
+- Recompute the period lengths used in the ZONE 5 comparison table from their start and end dates.

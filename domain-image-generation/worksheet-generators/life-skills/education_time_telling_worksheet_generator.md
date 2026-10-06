@@ -2,13 +2,23 @@
 title: "Time Telling Worksheet Generator"
 category: education
 description: "Generate life-skills worksheets for analog/digital time telling and schedule interpretation."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - life-skills
   - time-telling
   - routines
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Time Telling Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 clock labelled or keyed as 3:30 whose hour hand points straight at the 3 — at half past, the hour hand sits halfway between 3 and 4, and image models default to the on-the-hour position.
+- Pass a clock face that has hands of equal length, 11 or 13 numerals, or numerals out of sequence; it reads as "a clock" at a glance and cannot be read by a child.
+- Leave the ZONE 4 "draw the hands" clocks with hands already drawn — the model tends to finish every clock on the page.
+- Pair a ZONE 5 activity with a time that contradicts it (breakfast at 7:00 p.m.) or omit a.m./p.m. where the activity depends on it.
+
+✅ **DO:**
+- For every rendered ZONE 3 clock, read the minute hand, then check the hour hand's position: it moves 30° per hour plus 0.5° per minute, so at :15, :30 and :45 it must sit a quarter, half and three quarters of the way to the next numeral.
+- Count the numerals 1–12 and the minute marks (60 ticks, or 12 five-minute marks) on each face, and confirm the minute hand is visibly the longer one.
+- Work each ZONE 6 schedule question yourself by subtracting the times on the mini timeline, including any that cross an hour boundary, and compare to the intended answer.

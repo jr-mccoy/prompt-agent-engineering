@@ -94570,7 +94570,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate black-and-white arithmetic fluency worksheets aligned to grade-level operations and fact families.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "math",
         "worksheet",
@@ -94579,7 +94589,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94610,7 +94620,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate educational bingo worksheets with printable call-card support and monochrome-safe board layout.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "specialized-formats",
         "worksheet",
@@ -94619,7 +94639,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94650,7 +94670,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate civics worksheets focused on rights, responsibilities, government structure, and participation in community life.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "social-studies",
         "worksheet",
@@ -94659,7 +94689,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94730,7 +94760,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate student-friendly crossword worksheets with clue scaffolds and black-and-white-safe grid formatting.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "specialized-formats",
         "worksheet",
@@ -94739,7 +94779,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94750,7 +94790,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate culture-and-society worksheets emphasizing traditions, perspectives, artifacts, and respectful comparison practices.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "social-studies",
         "worksheet",
@@ -94759,7 +94809,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94770,7 +94820,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate cut-and-paste worksheet layouts with safe cut guides, sorting mats, and black-and-white-ready pieces.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "specialized-formats",
         "worksheet",
@@ -94779,7 +94839,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94790,7 +94850,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate introductory economics worksheets on needs vs wants, goods/services, producers/consumers, and simple decision-making.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "social-studies",
         "worksheet",
@@ -94799,7 +94869,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94830,7 +94900,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate single-page flip-book worksheet templates with fold/cut guidance and sequenced learning tabs.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "specialized-formats",
         "worksheet",
@@ -94839,7 +94919,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94850,7 +94930,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate fraction worksheets with visual models, equivalence, and operations suited to grade level.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "math",
         "worksheet",
@@ -94859,7 +94949,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94870,7 +94960,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate geometry worksheets with labeled shapes, angle tasks, and perimeter/area practice zones.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "math",
         "worksheet",
@@ -94879,7 +94979,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94910,7 +95010,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate printable graphic organizer worksheets (Venn, T-chart, sequence, cause/effect) with explicit structure labels.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "specialized-formats",
         "worksheet",
@@ -94919,7 +95029,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94950,7 +95060,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate music worksheets that classify instruments into strings, woodwinds, brass, percussion, and keyboard families.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -94959,7 +95079,7 @@
         "classification"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94990,7 +95110,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate map-skills worksheets using compass rose, scale, legend, and coordinate/grid practice.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "social-studies",
         "worksheet",
@@ -94999,7 +95129,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95030,7 +95160,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate one-page word-problem worksheets with clear contexts, workspace, and answer lines.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "math",
         "worksheet",
@@ -95039,7 +95179,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95050,7 +95190,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate life-skills worksheets for coin/bill recognition, counting money, and everyday purchase reasoning.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95059,7 +95209,7 @@
         "practical-math"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95090,7 +95240,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate nature-journal worksheet pages with observation frames, sketch boxes, and reflection prompts.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "science",
         "worksheet",
@@ -95099,7 +95259,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95110,7 +95270,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate number-sense worksheets focused on place value, comparison, ordering, and number lines.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "math",
         "worksheet",
@@ -95119,7 +95289,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95210,7 +95380,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate music worksheets for note values, rests, counting beats, and simple rhythm reading tasks.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95219,7 +95399,7 @@
         "note-values"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95230,7 +95410,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate science classification worksheets (sort, compare, categorize) using student-friendly datasets.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "science",
         "worksheet",
@@ -95239,7 +95429,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95250,7 +95440,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate diagram-based science worksheets with label banks, arrows, and structured observation prompts.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "science",
         "worksheet",
@@ -95259,7 +95459,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95270,7 +95470,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate experiment-planning/data-collection worksheets for classroom investigations.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "science",
         "worksheet",
@@ -95279,7 +95489,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95370,7 +95580,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate life-skills worksheets for analog/digital time telling and schedule interpretation.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "worksheet",
         "printable",
@@ -95379,7 +95599,7 @@
         "routines"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95390,7 +95610,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate timeline worksheets that sequence events, annotate causes/effects, and compare periods.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "social-studies",
         "worksheet",
@@ -95399,7 +95629,7 @@
         "printable"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95450,7 +95680,17 @@
       "domain": "image-generation",
       "category": "education",
       "description": "Generate curriculum-aligned word search worksheets with clear clue banks and student answer lines.",
-      "techniques": [],
+      "techniques": [
+        "SV-05",
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "specialized-formats",
         "worksheet",
@@ -95459,7 +95699,7 @@
         "literacy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },

@@ -2,13 +2,23 @@
 title: "Word Search Worksheet Generator"
 category: education
 description: "Generate curriculum-aligned word search worksheets with clear clue banks and student answer lines."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - specialized-formats
   - worksheet
   - word-search
   - printable
   - literacy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Word Search Worksheet Generator
@@ -128,3 +138,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a grid because the word bank is printed and the grid is full of letters — image models fill grids with random letters and rarely embed the listed words.
+- Ignore unintended rude or offensive words that random letter fill can form across rows, columns or diagonals.
+- Pass words placed backward or diagonally when the ZONE 2 directions allow only horizontal and vertical.
+- Let a word's spelling in the bank differ from its spelling in the grid.
+
+✅ **DO:**
+- Find every word-bank entry in the rendered grid and record its start cell and direction; if any is missing, build the grid in a word-search generator and have the model render only the page.
+- Scan every row, column and diagonal in both directions for unintended words before printing.
+- Count grid rows and columns and confirm the letters align in straight lines, so a word can be circled.

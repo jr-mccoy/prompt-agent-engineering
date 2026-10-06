@@ -2,13 +2,23 @@
 title: "Money Basics Worksheet Generator"
 category: education
 description: "Generate life-skills worksheets for coin/bill recognition, counting money, and everyday purchase reasoning."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - life-skills
   - money
   - practical-math
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Money Basics Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 2 reference strip that labels every coin correctly but draws the coins scaled by value — in US currency the dime is the smallest coin and the nickel is larger than the penny, so value-sized drawings teach the reverse.
+- Let the image model invent denominations the currency does not issue (a 30¢ coin, a $3 bill) or mix ¢, $, £ and € symbols on one page because the intake never named a currency.
+- Trust a ZONE 4 "count the total" item because coins are pictured beside an answer line — the model often draws five coins where the prompt asked for four, and the printed picture then has a different total from the key.
+- Write a ZONE 5 "enough / not enough" scenario where the money exactly equals the price without deciding beforehand whether "exactly enough" counts as enough.
+
+✅ **DO:**
+- Fix the currency (country and the coins and bills currently in circulation) before generating and name it in the prompt; mark any coin design or size detail you have not confirmed as [VERIFY].
+- Count every coin and bill in each rendered ZONE 3–5 picture, multiply by face value, and add the total by hand; any item whose picture total differs from the intended answer is regenerated or corrected in a layout tool.
+- Check that the ZONE 6 challenge has exactly one correct answer using only operations in scope for the grade — making change, for example, needs subtraction with regrouping.

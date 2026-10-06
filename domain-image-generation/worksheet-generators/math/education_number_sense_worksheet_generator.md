@@ -2,13 +2,23 @@
 title: "Number Sense Worksheet Generator"
 category: education
 description: "Generate number-sense worksheets focused on place value, comparison, ordering, and number lines."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - math
   - worksheet
   - number-sense
   - place-value
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Number Sense Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 4 number line whose ticks are unevenly spaced or whose labels skip or repeat (0, 10, 20, 40) — it looks like a number line and cannot be used to place a number.
+- Pass a ZONE 2 place-value chart with columns out of order (tens to the left of hundreds) or a missing column for the intake number range.
+- Print a ZONE 5 expanded-form pair that does not sum to its standard form (405 = 400 + 50) or a zero placeholder dropped from a numeral.
+- Include equal numbers in compare items when only > and < are taught, or duplicate values in an ordering list.
+
+✅ **DO:**
+- Measure the spacing between ticks on each rendered number line and confirm every labelled interval is the same size; then locate each target number and check it falls where the answer says.
+- Add the parts of every expanded form and check each compare symbol in the key against the actual values.
+- Check every number on the page sits inside the intake number range.

@@ -2,13 +2,23 @@
 title: "Arithmetic Practice Worksheet Generator"
 category: education
 description: "Generate black-and-white arithmetic fluency worksheets aligned to grade-level operations and fact families."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - math
   - worksheet
   - arithmetic
   - fluency
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Arithmetic Practice Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assume the ZONE 2 worked sample is right because it is neatly typeset — one wrong sample answer teaches the wrong procedure to every student who copies it.
+- Accept items that drift outside the intake number range or operation focus: a 3-digit problem on a within-20 page, a subtraction with a negative result for grade 1, or a division with a remainder when remainders are not yet taught.
+- Pass vertical problems whose digits are not right-aligned by place value; the column looks like an addition problem but the regrouping no longer works.
+- Meet the requested problem count by repeating the same fact several times in ZONE 3.
+
+✅ **DO:**
+- Solve every item in ZONES 2, 3, 4 and 6 from the rendered page and compare each result to the intended answer key; one mismatch means the page is not done.
+- Check each operand against the intake number range and operation, and count distinct problems against the requested problem count.
+- Read each numeral on the rendered page against the source list, since in-image text is where a 7 becomes a 1 or a digit is dropped.

@@ -2,13 +2,23 @@
 title: "Math Word Problems Worksheet Generator"
 category: education
 description: "Generate one-page word-problem worksheets with clear contexts, workspace, and answer lines."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - math
   - worksheet
   - word-problems
   - applied-math
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Math Word Problems Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write a problem that is missing a quantity the answer needs ("Sam has some apples…") or carries an extra number the grade is not practising ignoring.
+- Accept a problem whose solution needs an operation above the intake operation mix — multiplication in a grade 1 add/subtract set, or a fractional answer in a whole-number set.
+- Let the ZONE 5 equation strip show an equation that does not model the story (12 − 5 for a "how many altogether" problem).
+- Allow quantities that cannot happen in the scenario: 2.5 children, a negative number of marbles, a price to a fraction of a cent.
+
+✅ **DO:**
+- Solve each problem using only the printed text, listing every operation used, and compare the operation list to the intake operation mix.
+- Read every numeral and unit in ZONES 3–4 on the rendered page against your source problem text, since the image model can turn a 15 into a 16.
+- Check that each problem's answer is a whole, non-negative, realistic quantity for its context before the answer line is accepted.
