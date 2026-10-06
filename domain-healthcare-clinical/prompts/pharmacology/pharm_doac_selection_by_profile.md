@@ -67,12 +67,12 @@ Senior internist / cardiologist / hematologist writing the DOAC prescription wit
      - Post-orthopedic VTE prophylaxis: 10 mg daily.
    - **Dabigatran (AFib):** 150 mg PO BID; 75 mg BID if CrCl 15–30. Avoid if CrCl <15.
      - 80% renal elimination — least suitable for renal impairment of the four.
-   - **Edoxaban (AFib):** 60 mg PO daily; 30 mg daily if CrCl 15–50, weight ≤60 kg, or strong P-gp inhibitor.
+   - **Edoxaban (AFib):** 60 mg PO daily; 30 mg daily if CrCl 15–50 (US AF label); the EU label also reduces for weight ≤60 kg or certain P-gp inhibitors [VERIFY: current edoxaban label for your jurisdiction].
      - **Do NOT use edoxaban for AFib if CrCl >95** (ENGAGE AF post-hoc showed reduced efficacy at supratherapeutic clearance).
      - VTE: 60 mg daily (or 30 mg with adjustment criteria).
 
 3. **Account for weight extremes.**
-   - **Low body weight (<60 kg):** apixaban dose reduction trigger; edoxaban dose reduction; rivaroxaban no specific reduction but bleeding risk higher.
+   - **Low body weight (<60 kg):** apixaban dose reduction trigger; edoxaban dose reduction (EU label, and US VTE label — not a US AF criterion); rivaroxaban no specific reduction but bleeding risk higher.
    - **High body weight (>120 kg or BMI >40):** ISTH 2021 guidance accepted DOACs for VTE in obese; preferred apixaban or rivaroxaban given more obesity data. For AFib in extreme obesity, ongoing debate; trough levels can be checked at specialty centers. Warfarin remains an option in patients >150 kg with extra-large body habitus.
 
 4. **Drug–drug interactions.**
@@ -86,7 +86,7 @@ Senior internist / cardiologist / hematologist writing the DOAC prescription wit
    - **Apixaban**: strong dual P-gp + CYP3A4 inhibitor (azole) → reduce to 2.5 mg BID for AFib; avoid with strong inducer.
    - **Rivaroxaban**: same — avoid with strong CYP3A4 inhibitors / inducers.
    - **Dabigatran**: P-gp interactions only (no CYP); P-gp inhibitor (dronedarone, ketoconazole, verapamil) → reduce dose to 75 mg BID if CrCl 30–50; avoid combination if CrCl <30.
-   - **Edoxaban**: strong P-gp inhibitor → reduce dose to 30 mg daily.
+   - **Edoxaban**: certain P-gp inhibitors → reduce dose to 30 mg daily under the US VTE and EU labels, not the US AF label [VERIFY: current edoxaban label for your jurisdiction].
    - **NSAIDs, aspirin, P2Y12:** additive bleeding risk; minimize concomitant use; if dual or triple therapy needed (post-PCI), limit duration per AUGUSTUS/PIONEER AF-PCI data.
 
 5. **Indication-specific selection.**
@@ -183,27 +183,27 @@ FOLLOW-UP:
 
 ## Worked Example
 
-**Input:** 78-year-old woman, ABW 54 kg, SCr 1.6 (CrCl 28), AFib with CHA₂DS₂-VASc 6 (prior stroke 2 years ago), on amiodarone, no major bleeding history, mild dyspepsia. No mechanical valve. Wants to start anticoagulation.
+**Input:** 78-year-old woman, ABW 54 kg, SCr 1.6 (CrCl 25 by Cockcroft-Gault: (140 − 78) × 54 ÷ (72 × 1.6) × 0.85), AFib with CHA₂DS₂-VASc 6 (prior stroke 2 years ago), on amiodarone, no major bleeding history, mild dyspepsia. No mechanical valve. Wants to start anticoagulation.
 
 **Output:**
 
 ```
 PATIENT SNAPSHOT:
-- 78 y F, 54 kg, CrCl 28, AFib CHA₂DS₂-VASc 6 with prior CVA, on amiodarone (CYP3A4 + P-gp inhibitor), mild dyspepsia. No prior GI bleed.
+- 78 y F, 54 kg, CrCl 25, AFib CHA₂DS₂-VASc 6 with prior CVA, on amiodarone (CYP3A4 + P-gp inhibitor), mild dyspepsia. No prior GI bleed.
 
 DOAC SELECTION:
 - **Apixaban 2.5 mg PO BID** (dose-reduction criteria met: age ≥80? close — age 78 + weight ≤60 kg + SCr ≥1.5 → 2 of 3 criteria triggered, **reduce to 2.5 mg BID**).
 
 RATIONALE:
 - Indication: AFib stroke prevention; high stroke risk (CHA₂DS₂-VASc 6 with prior CVA).
-- Renal: CrCl 28 — apixaban appropriate (dabigatran less safe at CrCl <30, rivaroxaban acceptable but dose 15 mg daily).
+- Renal: CrCl 25 — apixaban appropriate (dabigatran less safe at CrCl <30, rivaroxaban acceptable but dose 15 mg daily).
 - Weight: 54 kg → low body weight criterion met for apixaban dose reduction.
 - Drug interactions: amiodarone is a mild-moderate P-gp inhibitor — apixaban package insert does not mandate further reduction beyond the criteria-based reduction; clinically often kept at 2.5 mg BID for caution.
 - Bleeding profile: apixaban has lowest ICH and GI bleed rates of DOACs in ARISTOTLE.
 - Dyspepsia: dabigatran has highest dyspepsia rate (~10%); apixaban tolerated better.
 
 CONTRAINDICATIONS REASSESSED:
-- No mechanical valve, no rheumatic MS, no APS, not pregnant, CrCl 28 (above HD threshold).
+- No mechanical valve, no rheumatic MS, no APS, not pregnant, CrCl 25 (above HD threshold).
 
 DRUG–DRUG INTERACTIONS:
 - Amiodarone (CYP3A4 + P-gp mild inhibitor) — apixaban dose already at reduced 2.5 mg BID; no further adjustment required.
@@ -211,7 +211,7 @@ DRUG–DRUG INTERACTIONS:
 - No SSRI, no rifampin, no azole, no protease inhibitor on current list.
 
 MONITORING:
-- CrCl at 1, 3, 6 months and then every 6 months (CrCl 28 — close to dose-reduction threshold; will not change apixaban dosing further as currently at min, but if CrCl <15 or HD, reassess).
+- CrCl at 1, 3, 6 months and then every 6 months (CrCl 25 — close to dose-reduction threshold; will not change apixaban dosing further as currently at min, but if CrCl <15 or HD, reassess).
 - LFTs yearly.
 - Hemoglobin yearly.
 - Bleeding-screen and adherence at each visit.
@@ -232,9 +232,9 @@ WHEN TO CHANGE OR DISCONTINUE:
 
 WHY NOT [ALTERNATIVES]:
 - Warfarin: still very reasonable in this patient; would be acceptable with INR target 2–3. DOAC chosen for predictable PK and reduced ICH rate.
-- Dabigatran: 80% renal clearance; CrCl 28 close to threshold and dyspepsia history.
-- Rivaroxaban: 15 mg daily at CrCl 28 acceptable; daily dosing favorable for adherence; bleeding rates higher than apixaban especially GI; reasonable alternative.
-- Edoxaban: 30 mg daily for CrCl 15–50 and weight ≤60 kg; reasonable alternative.
+- Dabigatran: 80% renal clearance; CrCl 25 is below 30 and dyspepsia history.
+- Rivaroxaban: 15 mg daily at CrCl 25 acceptable; daily dosing favorable for adherence; bleeding rates higher than apixaban especially GI; reasonable alternative.
+- Edoxaban: 30 mg daily for CrCl 15–50 (weight ≤60 kg is an additional EU-label criterion); reasonable alternative.
 
 FOLLOW-UP:
 - 1 month: tolerability, dyspepsia, bleeding signs.

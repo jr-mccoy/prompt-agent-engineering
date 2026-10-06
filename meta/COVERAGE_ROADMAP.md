@@ -1312,6 +1312,7 @@ Quality work, not new coverage: no new subject and no new file. Three targets, i
 | 23 | 6 (+5 vendored copies) | `domain-professional-writing`: the last six prompts without FPP (`business_writing_principles.md` and five `content-production/` generators), in the domain's numbered layout; the vendored copies in `portable-prompt-system/` re-synced. Fixed: `business_writing_principles.md`'s own word and number counts (twelve → eleven words, 43 → 44, four → five checkable numbers) and a leftover "$/mid" placeholder. All 80 professional-writing prompts now carry FPP | No case or probe changes against batch 22 |
 | C-A | 30 | **Corrections, part A:** care plans (14) and perianesthesia drills (16) — the flagged worked-example and fact errors, each fixed from the file's own data or a long-standing standard, or neutralised with `[VERIFY: source]` (see "Corrections log" below) | No case or probe changes |
 | C-B | 27 | **Corrections, part B:** lab interpretation and pathophysiology (12) and workups / specialty / coding / care gaps (15) | No case or probe changes |
+| C-C | 25 | **Corrections, part C:** pharmacology (12) and the addiction, paediatric, syncope, hyperkalemia and pathophysiology prompts (13), including three safety fixes: unvaccinated children get a *lower* workup threshold, echo before stress testing in exertional syncope, and precipitated withdrawal follows buprenorphine given after a full agonist | No case or probe changes |
 
 **Merges in batch 1** (recorded in `meta/REORG_MAP.tsv`; references repointed by `apply_reorg_map.py`):
 

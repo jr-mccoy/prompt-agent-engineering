@@ -94,7 +94,7 @@ Note that cannabis, stimulants, sedatives, opioids, tobacco, alcohol, hallucinog
 **Withdrawal risk (substance-specific):**
 - Alcohol: CIWA-Ar, history of seizures / DTs, benzodiazepine co-use, comorbidity
 - Benzodiazepines: life-threatening withdrawal; plan taper, never abrupt
-- Opioids: COWS severity, precipitated withdrawal risk if recent buprenorphine dose
+- Opioids: COWS severity, precipitated withdrawal risk if buprenorphine (or naltrexone) is given after recent full-agonist use, especially fentanyl
 - Stimulants, cannabis: generally medically safe but psychiatric severity matters
 
 **Overdose risk:**
@@ -127,7 +127,7 @@ Reference ASAM 4th edition criteria if possible.
 **Alcohol Use Disorder — MAUD:**
 - **Naltrexone (oral or LAI):** first-line for most; avoid in active opioid use or severe liver disease
 - **Acamprosate:** preferred in hepatic disease; after abstinence achieved
-- **Disulfuril:** selected patients with supervised adherence
+- **Disulfiram:** selected patients with supervised adherence
 
 **Other substances:**
 - Tobacco: varenicline, NRT, bupropion
@@ -200,7 +200,7 @@ OUD:
 - Initial dose + titration plan
 
 AUD:
-- Naltrexone / acamprosate / disulfuram / none — [rationale]
+- Naltrexone / acamprosate / disulfiram / none — [rationale]
 - Initial dose + plan
 
 Other (tobacco, stimulants, etc.): [as applicable]

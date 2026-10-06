@@ -187,7 +187,7 @@ PENETRANCE / EXPRESSIVITY:
 DIFFERENTIATION FROM RELATED CFTR VARIANTS (mutation classes drive therapy choice):
 - Class I (no protein — nonsense / frameshift, e.g., G542X, W1282X): NMD eliminates mRNA → no protein. Modulators fail because there's nothing to correct. Strategy: read-through agents (ataluren — limited efficacy), splice modulators, ASOs, gene therapy.
 - Class II (folding / trafficking — ΔF508 is the prototype): protein made but doesn't reach membrane. Strategy: correctors (tezacaftor, elexacaftor) to rescue trafficking, plus potentiator to open the channel once at membrane.
-- Class III (gating — G551D, "Celtic mutation"): protein at membrane but channel won't open. Potentiator alone (ivacaftor) sufficient — ivacaftor monotherapy approved for ~38 gating variants.
+- Class III (gating — G551D, "Celtic mutation"): protein at membrane but channel won't open. Potentiator alone (ivacaftor) sufficient — ivacaftor monotherapy approved for a label-defined set of gating and other responsive variants [VERIFY: current ivacaftor label].
 - Class IV (conductance — R117H): reduced channel current. Often milder phenotype, sometimes presenting as CBAVD or late pulmonary disease.
 - Class V (reduced quantity — splice variants): less mRNA / protein. Often mild.
 - Class VI (reduced stability at membrane): protein turns over quickly.

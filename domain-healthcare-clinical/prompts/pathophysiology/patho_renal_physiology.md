@@ -138,7 +138,7 @@ NORMAL FUNCTION OF AFFECTED SEGMENT (Gitelman, DCT):
 
 NAMED TRANSPORTERS / CHANNELS:
 - NCC (SLC12A3): loss-of-function mutation in Gitelman → reduced Na and Cl reabsorption in DCT.
-- TRPV5 (DCT Ca channel): expression and activity *increase* in response to NCC loss — paradoxical hypocalciuria in Gitelman.
+- TRPV5 (DCT Ca channel): proposed to increase activity with NCC loss — one of two competing explanations for the paradoxical hypocalciuria in Gitelman (see CAUSAL CHAIN step 6).
 - TRPM6 (DCT Mg channel): expression decreases with NCC loss / DCT cell remodeling → magnesium wasting.
 - ROMK and ENaC in downstream collecting duct: more Na delivery, more aldosterone (volume-stimulated) → enhanced K secretion → hypokalemia.
 
@@ -148,7 +148,7 @@ CAUSAL CHAIN:
 3. Aldosterone-driven ENaC activity in collecting duct increases Na reabsorption with H+ and K+ secretion → hypokalemia + metabolic alkalosis.
 4. Distal Na delivery is high (because DCT is not reabsorbing it normally), enabling continued K secretion via ROMK → renal K wasting.
 5. DCT cell hypertrophy and remodeling secondary to chronic NCC loss → reduced TRPM6 → magnesium wasting → hypomagnesemia.
-6. Paradoxical hypocalciuria: when NCC is blocked, downstream Na/Ca exchange in DCT shifts; more Ca is reabsorbed via TRPV5 (and less Ca delivered downstream where there is no major reabsorption pathway). Mechanism analogous to thiazide-induced hypocalciuria, used clinically to reduce Ca stones.
+6. Paradoxical hypocalciuria [mechanism debated]: (a) proposed distal mechanism — reduced NaCl entry through NCC enhances transcellular Ca reabsorption via TRPV5 in the DCT; (b) competing explanation — volume contraction increases proximal Na and passive paracellular Ca reabsorption, so less Ca reaches the distal nephron. The same debate applies to thiazide-induced hypocalciuria, used clinically to reduce Ca stones.
 
 CLINICAL & LAB PATTERN EXPLAINED:
 - Hypokalemia: aldosterone-driven distal K secretion + high distal Na delivery + magnesium-dependent ROMK regulation (low Mg removes inhibition of ROMK → more K wasting).

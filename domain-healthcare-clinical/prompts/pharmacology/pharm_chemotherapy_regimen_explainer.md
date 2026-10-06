@@ -77,12 +77,12 @@ Senior medical oncologist explaining the regimen to a colleague or trainee, nami
 
 4. **List expected acute toxicities and prevention.**
    - **Nausea / vomiting:** classify regimen as high-emetogenic (e.g., cisplatin, AC), moderately, low, or minimally. Premedications:
-     - High emetogenic: NK1 antagonist (aprepitant or fosaprepitant or rolapitant) + 5-HT3 antagonist (ondansetron, palonosetron) + dexamethasone + olanzapine (5 mg PO daily ×4 days per NEPA / TRIPLE THERAPY).
+     - High emetogenic: NK1 antagonist (aprepitant or fosaprepitant or rolapitant) + 5-HT3 antagonist (ondansetron, palonosetron) + dexamethasone + olanzapine (5 mg PO daily ×4 days) [VERIFY: current ASCO / NCCN antiemesis guideline].
      - Moderate: 5-HT3 + dexamethasone ± NK1.
      - Low: 5-HT3 single agent.
      - Breakthrough: prochlorperazine, lorazepam, olanzapine.
    - **Hypersensitivity / infusion reactions:**
-     - Taxanes (paclitaxel): dexamethasone 20 mg PO 12 + 6 h before + diphenhydramine 50 mg IV + ranitidine 50 mg IV 30 min before; nab-paclitaxel does not need.
+     - Taxanes (paclitaxel): dexamethasone 20 mg PO 12 + 6 h before + diphenhydramine 50 mg IV + an IV H2-receptor antagonist 30 min before (ranitidine was withdrawn from the US market; substitute and dose per protocol [VERIFY: current paclitaxel label / institutional protocol]); nab-paclitaxel does not need.
      - Carboplatin: rare hypersensitivity (1st cycle low risk; rises with cumulative exposure); have rescue plan.
      - Rituximab: pre-meds + slow first infusion; cytokine release syndrome.
      - Cetuximab: severe IRR — pre-meds diphenhydramine.
@@ -138,7 +138,7 @@ Senior medical oncologist explaining the regimen to a colleague or trainee, nami
 
 ❌ **DON'T:**
 - Fill per-agent mg/m² or AUC values from memory as "the" regimen dose; they depend on protocol version, indication and organ function — tag each `[VERIFY: treating protocol / current label]`.
-- Attribute a supportive-care practice to a trial that did not test it (olanzapine antiemetic credited to NEPA), or list a withdrawn premedication (ranitidine).
+- Attribute a supportive-care practice to a trial that did not test it, or list a premedication that has been withdrawn from the market.
 - Leave `DOSE MODIFICATION RULES` without organ-function triggers: carboplatin via Calvert GFR, capecitabine via CrCl, irinotecan via bilirubin.
 - Assign an emetogenic class without naming the combination's most emetogenic agent and day.
 
@@ -276,7 +276,7 @@ EXPECTED ACUTE TOXICITIES:
   - Cumulative chronic: at ≥800 mg/m² total — dose reduce / hold / "stop and go" strategy.
 - **Cetuximab rash:** acneiform on day 7–14, peaks at cycles 2–3.
   - Prevention: skin moisturizer, sunscreen SPF ≥30; consider prophylactic doxycycline 100 mg BID and topical hydrocortisone (STEPP-style); reduce severity by ~50%.
-- **Cetuximab infusion reaction:** dexa + dipenhydramine; if severe, abort and switch to panitumumab (fully human, lower IRR).
+- **Cetuximab infusion reaction:** dexa + diphenhydramine; if severe, abort and switch to panitumumab (fully human, lower IRR).
 - **Hypomagnesemia:** monitor Mg every cycle; replete; aim Mg >1.6.
 - **Coronary vasospasm (5-FU):** rare; if chest pain, stop infusion, EKG, consider switch to raltitrexed if recurrent.
 
@@ -293,7 +293,7 @@ DOSE MODIFICATION RULES:
 - **Diarrhea grade ≥3:** hold; reduce 5-FU 20%.
 - **Oxaliplatin neuropathy grade ≥2 sustained between cycles:** drop oxaliplatin dose by 25%; if grade 3 → hold oxaliplatin, continue 5-FU/LV + cetuximab; consider re-introduction after recovery ("stop and go").
 - **Cetuximab severe IRR:** stop; switch to panitumumab (no premeds, lower IRR).
-- **Cetuximab grade ≥3 rash:** hold; resume at reduced dose once ≤grade 2.
+- **Cetuximab grade ≥3 rash:** hold; resume once improved, at the same or a reduced dose depending on occurrence number [VERIFY: current cetuximab product label].
 
 MONITORING SCHEDULE:
 - CBC + CMP every cycle (D1).

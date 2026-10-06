@@ -138,7 +138,7 @@ SPECIFIC MOLECULES: Gastric parietal cell H+/K+-ATPase pumps H+ into lumen and K
 
 RENAL MACHINERY ENGAGED:
 - Proximal tubule HCO3 reabsorption is normally complete; here it is overwhelmed at higher serum HCO3 — but volume contraction triggers RAAS, increases proximal Na reabsorption (with HCO3), and aldosterone-driven distal Na reabsorption with H+ secretion → kidneys actively retain HCO3 instead of dumping it. This is why the alkalosis is *maintained* even after vomiting stops: chloride-depletion plus volume contraction prevent renal correction.
-- Distal nephron alpha-intercalated cells continue to secrete H+ via H+-ATPase and H+/K+-ATPase under aldosterone stimulus; this produces the paradoxical aciduria (urine pH 5.5 despite serum alkalosis) because the aldosterone-driven Na/H+ exchange is volume-defending, not pH-defending. Hypokalemia further drives H+ secretion (cells trade K for H+ across basolateral membrane in alpha-IC, so K depletion accelerates H+ secretion).
+- Distal nephron alpha-intercalated cells continue to secrete H+ via H+-ATPase and H+/K+-ATPase under aldosterone stimulus; this produces the paradoxical aciduria (urine pH 5.5 despite serum alkalosis) because the aldosterone-driven distal Na reabsorption and H+ secretion is volume-defending, not pH-defending. Hypokalemia further drives H+ secretion (K shifts out of tubular cells and H+ moves in, producing intracellular acidosis that stimulates H+ secretion and ammoniagenesis; apical H+/K+-ATPase in alpha-IC reclaims K in exchange for secreted H+).
 - Urine Cl <10 is the diagnostic signature of "saline-responsive" metabolic alkalosis: kidneys are conserving every Cl ion they can reach because the body is Cl-depleted. Urine Cl >20 would indicate "saline-resistant" causes (mineralocorticoid excess, severe K depletion, current diuretic use).
 
 RESPIRATORY MACHINERY ENGAGED:
@@ -161,7 +161,7 @@ TRAJECTORY:
 - Untreated: K continues to fall (renal wasting under sustained aldosterone), alkalosis persists or worsens, risk of arrhythmia and tetany rises. PaCO2 cannot rise much further before hypoxemia drives ventilation back up.
 - Treated correctly: 
   1. NS resuscitation provides Cl and volume → suppresses RAAS, distal Na/H+ exchange winds down, kidneys can excrete HCO3.
-  2. KCl repletion (oral or IV, with 40 mEq IV via central line or up to 10 mEq/hr peripheral) replaces both K and Cl.
+  2. KCl repletion (oral or IV; IV rate limits differ for peripheral vs central access [VERIFY: institutional potassium-replacement protocol]) replaces both K and Cl.
   3. Once volume is restored and Cl repleted, urine Cl rises and HCO3 spills out in urine → serum HCO3 normalizes over 24–48 hours.
   4. Address the obstruction (NG decompression, definitive surgical or endoscopic management).
   5. Avoid further loss with anti-emetics or NG suction balanced with replacement of NG output (NG output is essentially HCl + KCl in water, replace with NS + KCl in similar volume).

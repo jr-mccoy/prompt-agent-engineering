@@ -57,7 +57,7 @@ Senior endocrinologist / inpatient diabetes specialist writing a prescriptive re
    - **Steroid-induced hyperglycemia:** depends on steroid dose; rough guide for prednisone equivalent — add 0.1 units/kg/day per 10 mg prednisone (peak need ~6 h after morning dose).
    - **DKA/HHS transition:** TDD ≈ 0.5–0.7 units/kg/day; transition to subcutaneous with overlap (basal insulin 1–2 h *before* stopping IV insulin drip).
    - **Pregnancy (gestational and pre-existing):** rising requirements through trimester 2 and 3 (1st trimester 0.7 u/kg/day → 3rd trimester 1.0 u/kg/day); titrate aggressively to fasting <95, 1-hour postprandial <140 or 2-hour <120.
-   - **Hospital basal-bolus in T2DM** (per RABBIT-2): 0.4 units/kg/day if A1c <8% or BG <200, 0.5 if A1c 8–10%, hold 0.1 if AKI / elderly / risk of hypoglycemia.
+   - **Hospital basal-bolus in T2DM** (per RABBIT-2, strata set by admission glucose, not A1c): 0.4 units/kg/day if admission BG ≤200, 0.5 if admission BG >200, hold 0.1 if AKI / elderly / risk of hypoglycemia.
 
 2. **Split TDD into basal and prandial.**
    - **Basal-bolus** (T1DM and intensified T2DM): 50% basal, 50% prandial (split ~equally across 3 meals).
@@ -69,7 +69,7 @@ Senior endocrinologist / inpatient diabetes specialist writing a prescriptive re
    - **Basal:**
      - Glargine U-100 (Lantus, Basaglar, Semglee): 24h once daily; peak modest at 6–8 h.
      - Glargine U-300 (Toujeo): flatter, longer (~36 h); less hypoglycemia; smaller injection volume.
-     - Detemir (Levemir): ~12–20 h; usually BID for full coverage.
+     - Detemir (Levemir): ~12–20 h; usually BID for full coverage. [VERIFY: current formulary — US availability of insulin detemir]
      - Degludec (Tresiba): ultra-long-acting (>42 h); flexible timing day-to-day; lowest nocturnal hypoglycemia rates (DEVOTE).
      - NPH: intermediate (~12 h, peak at 4–8 h); BID; cheap; risk of mid-day and nocturnal hypoglycemia from peaks. Useful in steroid-induced hyperglycemia (peak aligns with prednisone effect when given AM with steroid).
    - **Prandial / rapid:**
@@ -103,7 +103,7 @@ Senior endocrinologist / inpatient diabetes specialist writing a prescriptive re
    - **CKD/ESRD:** reduce TDD by 25% at GFR 10–50, 50% at GFR <10; insulin clearance reduced — more hypoglycemia. Continue insulin on dialysis day; some patients need basal reduction.
    - **Hepatic impairment:** reduce TDD by 20–30%; gluconeogenesis impaired → less endogenous glucose; more hypoglycemia.
    - **Concurrent non-insulin therapy:** GLP-1 RA (semaglutide, dulaglutide, liraglutide) — reduce mealtime insulin 30–50% on initiation; SGLT2i (empagliflozin, dapagliflozin) — reduce basal 10–20%, monitor for euglycemic DKA in T1DM (off-label / cautious).
-   - **Pregnancy:** rapidly escalating doses; tighter targets; avoid SGLT2i and GLP-1 RA; lispro / aspart / detemir / NPH are FDA category B for established safety; degludec less data but increasingly used.
+   - **Pregnancy:** rapidly escalating doses; tighter targets; avoid SGLT2i and GLP-1 RA; lispro / aspart / detemir / NPH have the most established pregnancy safety data (summarize the current PLLR label narrative; detemir [VERIFY: current formulary]); degludec less data but increasingly used.
 
 7. **Pre-mortem the regimen for hypoglycemia and patient feasibility.**
    - Patients with hypoglycemia unawareness or recurrent severe hypoglycemia: loosen targets (A1c 7.5–8.0% or higher), use degludec (lowest nocturnal hypoglycemia), CGM with predictive low-glucose alerts.

@@ -124,8 +124,8 @@ Senior pulmonologist or primary care prescriber building the inhaler regimen wit
 ❌ **DON'T:**
 - Assign a GINA step or GOLD group when exacerbation count, eosinophils or CAT/mMRC were not supplied; write "not assessable" and name the missing input.
 - Call an ICS dose "medium" or "high" without converting the product and µg/puff to the GINA dose-category table.
-- Credit a biologic with covering a comorbidity that is not among its labelled indications (e.g., allergic rhinitis vs nasal polyps).
-- Name a device or brand presentation without checking it is marketed where the patient is (Symbicort Turbuhaler is not sold in the US).
+- Credit a biologic with covering a comorbidity that is not among its labelled indications (check the comorbidity against the label's indication list, not the drug's mechanism).
+- Name a device or brand presentation without checking it is marketed where the patient is (some DPI presentations are not sold in every country).
 
 ✅ **DO:**
 - Pair every step, group or biologic-eligibility claim with the input value and threshold that justifies it (eos 320 ≥300; FeNO 55 ≥25; 3 exacerbations ≥2).
@@ -197,20 +197,20 @@ PATIENT SNAPSHOT:
 - Current: fluticasone 220 µg BID (medium-dose ICS) + albuterol prn — insufficient.
 
 REGIMEN (transition to GINA Step 4 Track 1 MART preferred):
-- **Maintenance + reliever: budesonide-formoterol 160/4.5 µg (Symbicort DPI Turbuhaler or pMDI)** — **2 puffs BID** + **as-needed for symptoms (max 12 puffs/day)** — MART approach.
-- **Consider biologic add-on**: given eosinophilic phenotype + ≥3 exacerbations/year + ongoing OCS need, the patient qualifies for **dupilumab 200 mg SC q2 weeks** (loading dose 400 mg) — covers both T2-high features (eos + FeNO + atopic) and rhinitis comorbidity.
+- **Maintenance + reliever: budesonide-formoterol 160/4.5 µg (Symbicort pMDI; DPI Turbuhaler only where marketed — not sold in the US [VERIFY: local formulary])** — **2 puffs BID** + **as-needed for symptoms (max 12 puffs/day)** — MART approach.
+- **Consider biologic add-on**: given eosinophilic phenotype + ≥3 exacerbations/year + ongoing OCS need, the patient qualifies for **dupilumab 200 mg SC q2 weeks** (loading dose 400 mg) — matches the T2-high features (eos + FeNO + atopic); allergic rhinitis is not a labelled dupilumab indication and is treated separately (see comorbidity adjustments).
   - Alternatives: mepolizumab 100 mg SC q4 weeks (eosinophilic), benralizumab 30 mg SC q4 weeks ×3 then q8 weeks, tezepelumab 210 mg SC q4 weeks (broad).
 - **Discontinue albuterol as routine reliever** under MART; albuterol available for severe acute episodes only.
 
 RATIONALE:
 - MART preferred per GINA: addresses inflammation at the time of symptom escalation, reduces severe exacerbations vs SABA-only reliever.
 - Step 4 upgrade given current uncontrolled status on medium-dose ICS.
-- Biologic indication: severe eosinophilic and atopic asthma not controlled on step 4–5; reduces exacerbations and OCS use; dupilumab particularly favorable given comorbid allergic rhinitis.
-- Spacer for pMDI if patient prefers pMDI; DPI Turbuhaler reasonable given normal inspiratory flow.
+- Biologic indication: severe eosinophilic and atopic asthma not controlled on step 4–5; reduces exacerbations and OCS use; dupilumab fits the combined eos + FeNO elevation.
+- Spacer for pMDI; DPI Turbuhaler only where marketed and if inspiratory flow is adequate (flow not assessed in input).
 
 DEVICE & TECHNIQUE NOTES:
-- Symbicort Turbuhaler: load, deep forceful inhalation, hold 5–10s. Rinse mouth after each use.
-- If poor inspiratory flow: switch to Symbicort pMDI with spacer.
+- Symbicort pMDI with spacer: slow steady inhalation, hold 5–10s. Rinse mouth after each use.
+- Symbicort Turbuhaler (where marketed, adequate inspiratory flow): load, deep forceful inhalation, hold 5–10s.
 - Reinforce technique at every visit; demonstrate.
 
 COMORBIDITY ADJUSTMENTS:

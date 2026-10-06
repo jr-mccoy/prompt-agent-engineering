@@ -67,19 +67,19 @@ Senior cardiology or critical care attending teaching hemodynamics at the bedsid
    - **RV failure from PE:** PVR rises acutely from clot burden + hypoxic vasoconstriction; RV cannot generate enough pressure → RV dilates → septum bows leftward → impairs LV filling → systemic hypotension. CVP high, PCWP normal or low, RV pressure-overloaded on echo.
 
 5. **Predict associated findings.**
-   - Mixed venous oxygen saturation (SvO2): falls when CO is low (more O2 extracted per mL blood); high in distributive shock (microvascular shunting); high in severe MR (oxygenated blood passes through).
+   - Mixed venous oxygen saturation (SvO2): falls when CO is low (more O2 extracted per mL blood); high in distributive shock (microvascular shunting); high with a left-to-right shunt such as post-MI VSD (oxygenated LV blood enters the RV/PA sample).
    - Lactate: rises when O2 delivery < O2 demand at tissue level.
    - JVP: rises with elevated CVP (RV failure, tamponade, tricuspid disease, volume overload).
    - Crackles: pulmonary edema from elevated PCWP.
    - Cool extremities: high SVR (vasoconstriction).
    - Warm extremities: low SVR (sepsis early).
-   - Pulse pressure: narrow in low CO with high SVR; wide in AR, severe AS post-AVR, or high-output states.
+   - Pulse pressure: narrow in low CO with high SVR; narrow in severe AS; wide in AR or high-output states.
 
 6. **Predict effect of each intervention.**
    - Volume: increases preload. Helps hypovolemic and right heart-limited states; worsens cardiogenic and HFpEF if PCWP already high.
    - Norepinephrine: increases SVR (alpha-1) and modestly contractility (beta-1). Raises BP, raises afterload (caution in cardiogenic), raises preload via venoconstriction.
    - Epinephrine: beta-1 inotropy + beta-2 vasodilation at lower dose, alpha-1 vasoconstriction at higher dose. Raises CO; arrhythmogenic.
-   - Dobutamine: beta-1 inotropy + beta-2 vasodilation. Raises CO, lowers SVR. First-line in cardiogenic shock without severe hypotension.
+   - Dobutamine: beta-1 inotropy + beta-2 vasodilation. Raises CO, lowers SVR. Used for low-output states when BP permits [VERIFY: current ACC/AHA / SCAI cardiogenic shock guidance on first-line agent].
    - Milrinone: PDE3 inhibitor → cAMP rises in myocyte (inotropy) and vascular smooth muscle (vasodilation). Lowers PVR and SVR; useful in RV failure and pulmonary hypertension. Not first-line in shock because of hypotension; long t½ (~2.5 h, longer in renal failure).
    - Vasopressin: V1 vasoconstriction (independent of catecholamine pathway). Useful adjunct in vasodilatory shock.
    - Diuresis: reduces preload. Helps congestion; can drop CO if patient is preload-dependent.
@@ -130,7 +130,7 @@ COMMITTED MANAGEMENT REASONING:
 
 ## Worked Example
 
-**Input:** A 65 y/o M with massive submassive PE (saddle thrombus on CTA). BP 92/64, HR 118, satting 88% on 4 L NC. Echo: severely dilated and hypokinetic RV with septal bowing into LV in diastole, McConnell's sign (apical RV sparing with mid free-wall hypokinesis), small underfilled LV. CVP 18, lactate 3.4. Should we give fluids? Start norepinephrine? Inotrope?
+**Input:** A 65 y/o M with submassive PE (saddle thrombus on CTA). BP 92/64, HR 118, satting 88% on 4 L NC. Echo: severely dilated and hypokinetic RV with septal bowing into LV in diastole, McConnell's sign (apical RV sparing with mid free-wall hypokinesis), small underfilled LV. CVP 18, lactate 3.4. Should we give fluids? Start norepinephrine? Inotrope?
 
 **Output:**
 
@@ -149,7 +149,7 @@ DETERMINANT WALK:
 PRESSURE-VOLUME LOGIC:
 - The RV is on the descending limb of its function curve. More preload = worse RV function = more septal bowing = even less LV filling = more shock. This is the classic "fluid worsens RV failure" trap.
 - The LV is volume-depleted relative to its capacity but you cannot fill it via systemic venous loading because the RV cannot pass that volume forward through high PVR.
-- LV coronary perfusion depends on (aortic diastolic pressure − LVEDP); systemic hypotension reduces RV coronary perfusion (RV is perfused throughout the cardiac cycle in normal states, but during pressure overload becomes systolic-only like the LV) → RV ischemia → worse contractility → spiral.
+- LV coronary perfusion depends on (aortic diastolic pressure − LVEDP); systemic hypotension reduces RV coronary perfusion (RV is perfused throughout the cardiac cycle in normal states, but during pressure overload its perfusion becomes predominantly diastolic, like the LV) → RV ischemia → worse contractility → spiral.
 
 PREDICTED ASSOCIATED FINDINGS:
 - SvO2: low (high O2 extraction from low forward CO).
@@ -175,6 +175,6 @@ COMMITTED MANAGEMENT REASONING:
 2. Start norepinephrine immediately to restore aortic root pressure and rescue RV coronary perfusion. Target MAP ≥65; many would target 70–75 to compensate for elevated RAP.
 3. Add dobutamine 2.5–5 mcg/kg/min for RV inotropic support if MAP rescued but CO/perfusion still inadequate.
 4. Activate PERT / pulmonary embolism response team. Decision between systemic thrombolysis vs catheter-directed vs surgical embolectomy depends on bleeding risk, center capability, and clinical trajectory. Hemodynamic instability with submassive features and progression toward massive supports thrombolysis.
-5. Give therapeutic anticoagulation (heparin infusion) immediately unless thrombolysis is imminent — the heparin bridge runs concurrently in many centers; coordinate with thrombolysis plan.
+5. Give therapeutic anticoagulation (heparin infusion) immediately unless thrombolysis is imminent — whether heparin runs concurrently with or is paused during thrombolysis depends on the lytic regimen; coordinate with thrombolysis plan [VERIFY: alteplase product label / current CHEST or ESC PE guideline].
 6. Avoid intubation if at all possible. Use HFNC or non-rebreather. Reserve intubation for failure of oxygenation despite all measures, with ICU/PERT team prepared for arrest.
 ```

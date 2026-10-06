@@ -90,7 +90,7 @@ Senior neurologist / epileptologist writing the AED prescription with titration 
      - Folic acid 4 mg/day pre-conception and throughout pregnancy for women on AEDs.
      - Monitor lamotrigine levels closely in pregnancy — estrogen induces UGT glucuronidation, lowers lamotrigine levels; dose increases often required during pregnancy and decrease postpartum.
    - **Oral contraceptive interaction:**
-     - **Enzyme-inducing AEDs** (carbamazepine, phenytoin, phenobarbital, primidone, oxcarbazepine, topiramate >200 mg, eslicarbazepine, rufinamide) **reduce OCP efficacy** — recommend ≥50 µg ethinyl estradiol formulation or non-oral contraception (IUD, depot, etonogestrel implant — note implants also reduced efficacy with inducers).
+     - **Enzyme-inducing AEDs** (carbamazepine, phenytoin, phenobarbital, primidone, oxcarbazepine, topiramate >200 mg, eslicarbazepine, rufinamide) **reduce OCP efficacy** — choose a contraceptive method not dependent on hormone levels that inducers lower (e.g., IUD), and do not rely on a higher-dose ethinyl estradiol pill without checking guidance [VERIFY: current CDC US MEC / FSRH guidance on contraception with enzyme-inducing drugs] (note etonogestrel implants also have reduced efficacy with inducers).
      - **Non-inducing:** levetiracetam, lamotrigine, valproate, gabapentin, pregabalin, lacosamide, brivaracetam, zonisamide, ethosuximide. Lamotrigine note: estrogen-containing OCP lowers lamotrigine levels by ~50% — adjust dose during cycles.
    - **HIV ART / immunosuppressants:** avoid enzyme-inducing AEDs (interact with protease inhibitors, NNRTIs, integrase inhibitors, tacrolimus, sirolimus, cyclosporine). Levetiracetam, lacosamide, gabapentin, pregabalin preferred.
    - **Bone health:** chronic enzyme-inducing AEDs and valproate associated with bone loss; supplement vitamin D, calcium, DEXA in long-term users.
@@ -101,7 +101,7 @@ Senior neurologist / epileptologist writing the AED prescription with titration 
    - **Lamotrigine:** very slow titration to avoid SJS/TEN.
      - Without valproate, without enzyme inducer: 25 mg daily ×2 weeks → 50 mg daily ×2 weeks → 100 mg daily ×1 week → 150–200 mg daily.
      - With valproate (inhibits glucuronidation; raises lamotrigine levels): 25 mg every other day ×2 weeks → 25 mg daily ×2 weeks → 50 mg daily; target 100–200 mg/day.
-     - With enzyme inducer (carbamazepine, phenytoin): start 50 mg daily ×2 weeks → 100 mg BID; higher target dose 300–500 mg/day.
+     - With enzyme inducer (carbamazepine, phenytoin): start 50 mg daily ×2 weeks → 100 mg/day in 2 divided doses (50 mg BID) ×2 weeks → then titrate gradually to the higher target dose 300–500 mg/day [VERIFY: current lamotrigine label].
    - **Oxcarbazepine:** 300 mg BID start → titrate to 600 mg BID over 2 weeks; monitor sodium (hyponatremia).
    - **Lacosamide:** 50 mg BID start → 100 mg BID after 1 week; max 400 mg/day.
    - **Topiramate:** 25 mg daily, increase 25–50 mg/week to 100–200 mg BID. Watch cognitive effects, paresthesias, kidney stones, glaucoma.
@@ -249,8 +249,8 @@ PATIENT EDUCATION:
 
 FOLLOW-UP:
 - 2-week phone check (titration adherence, rash, mood).
-- 6-week visit (after reaching 100 mg/day): seizure log, side effects, considered up-titration.
-- 8 weeks: at 200 mg/day target.
+- 6-week visit (100 mg/day reached in week 5; 200 mg/day begins week 6): seizure log, side effects, considered up-titration.
+- 8 weeks: 2 weeks at the 200 mg/day target (reached week 6).
 - 3 months: reassess seizure freedom and need for higher dose.
 - Pre-pregnancy planning visit when she's ready.
 

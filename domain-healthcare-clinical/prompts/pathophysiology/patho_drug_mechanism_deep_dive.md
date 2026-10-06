@@ -157,7 +157,7 @@ DOWNSTREAM SIGNALING:
 - Intermediate (days): increased Na delivery to macula densa → tubuloglomerular feedback → afferent arteriole vasoconstriction → reduced intraglomerular pressure → reduced hyperfiltration. Volume contraction modestly lowers BP.
 - Delayed (weeks–months): chronic glucosuria reduces caloric load, weight loss; metabolic shift toward fatty acid oxidation and ketogenesis; cardiac and renal benefit beyond glucose-lowering (mechanisms include reduced cardiac workload, improved myocardial energetics with ketone utilization, reduced inflammation, reduced glomerular hyperfiltration).
 
-CELLULAR EFFECT: PCT cells reabsorb less Na and glucose. Distal nephron compensates partially via SGLT1 upregulation but not fully. Adipocyte and hepatocyte shift toward fatty acid oxidation as systemic insulin/glucagon ratio falls slightly.
+CELLULAR EFFECT: PCT cells reabsorb less Na and glucose. Late proximal tubule (S3 segment) compensates partially via SGLT1 but not fully. Adipocyte and hepatocyte shift toward fatty acid oxidation as systemic insulin/glucagon ratio falls slightly.
 
 TISSUE/ORGAN EFFECT:
 - Kidney: glucosuria 50–100 g/day, mild osmotic diuresis, reduced GFR initially (3–5 mL/min) followed by long-term renal protection
@@ -168,7 +168,7 @@ PHARMACOKINETICS (compact):
 - Absorption: ~78% oral bioavailability, no significant food effect
 - Distribution: ~86% protein bound, Vd ~74 L
 - Metabolism: primarily UGT2B7 / UGT1A3 / UGT1A8/9 glucuronidation; minimal CYP involvement
-- Elimination: ~41% urinary, ~54% fecal; t1/2 ~12 hours; once-daily dosing
+- Elimination: ~54% urinary, ~41% fecal; t1/2 ~12 hours; once-daily dosing
 - Renal impairment: efficacy falls with eGFR; not effective for glucose-lowering at eGFR <30 historically, though cardiac/renal benefit retained at lower thresholds
 
 THERAPEUTIC EFFECTS (each from chain):
@@ -183,15 +183,15 @@ ON-TARGET ADVERSE EFFECTS:
 - UTI: mild increase, mostly uncomplicated; severe urosepsis rare
 - Volume depletion / hypotension: osmotic diuresis, especially if combined with loop diuretic or in elderly
 - Initial eGFR dip (3–5 mL/min): from afferent vasoconstriction; not nephrotoxicity; reverses on discontinuation
-
-OFF-TARGET ADVERSE EFFECTS:
-- Euglycemic DKA: this is the focus question. Mechanism:
+- Euglycemic DKA: this is the focus question. On-target — the chain starts at SGLT2 inhibition. Mechanism:
   1. SGLT2 inhibition lowers glucose without raising insulin (insulin-independent mechanism). The pancreas senses lower glucose → reduces insulin secretion. Patient's exogenous insulin doses are often reduced too.
   2. Lower insulin level → adipocyte lipolysis disinhibited → free fatty acids rise → hepatic ketogenesis activated.
   3. Glucagon also rises modestly (alpha-cell SGLT2 effects + reduced insulin braking).
   4. Result: ketogenesis runs unopposed despite normal-range glucose because the urinary glucose loss masks the catabolic state.
   - Clinically: AGMA + ketonemia + glucose often <250 (sometimes <200). Easy to miss because clinicians anchor on glucose to suspect DKA.
   - Triggers that tip patients in: surgery, fasting, infection, alcohol, insulin reduction, very-low-carb diets. Hold the SGLT2 inhibitor 3–4 days before elective surgery.
+
+OFF-TARGET ADVERSE EFFECTS:
 - Fournier gangrene: rare necrotizing fasciitis of the perineum — likely from genital infection severity in vulnerable patients
 - Lower limb amputation (canagliflozin signal, less so empagliflozin): mechanism uncertain; possibly volume contraction in patients with PAD
 - Bone fracture risk (canagliflozin, less empagliflozin): Ca/phosphate/PTH shifts
@@ -205,7 +205,7 @@ INTERACTIONS:
 
 RESISTANCE / LOSS-OF-EFFECT:
 - Glucose-lowering effect attenuates as eGFR falls (less filtered glucose to inhibit reabsorption of)
-- SGLT1 upregulation in distal tubule provides modest compensation
+- SGLT1 in the late proximal tubule (S3 segment) provides modest compensation
 
 REVERSAL / ANTIDOTE:
 - No specific antidote. Glucosuria persists for ~3 days after discontinuation due to slow recovery of SGLT2 turnover. Hold for 3–4 days pre-op or in suspected euglycemic DKA.

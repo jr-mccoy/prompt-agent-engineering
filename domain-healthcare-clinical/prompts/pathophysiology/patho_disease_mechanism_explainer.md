@@ -186,5 +186,5 @@ THERAPEUTIC TARGETS (each mapped to a chain step):
 - IV fluids → reverses osmotic-diuresis volume loss, dilutes hyperglycemia, restores tissue perfusion, lowers counter-regulatory hormone surge
 - Potassium replacement → replaces total-body K deficit unmasked once insulin drives K back into cells; failing to replace → fatal arrhythmia mid-treatment
 - Trigger management → infection workup and treatment, MI workup, etc., because the trigger continues driving counter-regulatory hormones until controlled
-- Bicarbonate is rarely indicated → the acidosis self-corrects as ketoacids are metabolized once insulin resumes; bicarbonate adds risk of paradoxical CSF acidosis and hypokalemia. Reserve for pH <6.9 with hemodynamic compromise.
+- Bicarbonate is rarely indicated → the acidosis self-corrects as ketoacids are metabolized once insulin resumes; bicarbonate adds risk of paradoxical CSF acidosis and hypokalemia. Reserve for severe acidemia below the guideline pH threshold [VERIFY: current ADA hyperglycemic-crises consensus — the threshold has differed between editions].
 ```

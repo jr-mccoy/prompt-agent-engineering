@@ -80,10 +80,10 @@ Senior hospitalist / antimicrobial stewardship pharmacist writing the IV-to-PO c
    - **Non-antimicrobial common conversions:**
      - **PPIs:** pantoprazole 40 mg IV = 40 mg PO daily.
      - **Furosemide:** PO bioavailability ~50%; IV 20 mg ≈ PO 40 mg.
-     - **Levothyroxine:** PO dose ~25% higher than IV.
+     - **Levothyroxine:** IV and PO doses are not interchangeable (incomplete PO absorption); IV:PO ratio [VERIFY: current levothyroxine injection product label].
      - **Phenytoin:** fosphenytoin IV / phenytoin PO 1:1 in PE units; monitor levels.
      - **Levetiracetam, valproic acid, lacosamide:** 1:1 IV:PO.
-     - **β-blockers:** metoprolol IV 5 mg ≈ PO 25 mg (rough).
+     - **β-blockers:** metoprolol IV and PO are not 1:1 (first-pass metabolism); ratios differ between references [VERIFY: current metoprolol label / institutional conversion table].
      - **Diltiazem:** IV drip → PO conversion = (rate mg/h × 3 + 3) × 10 (approximate); titrate to HR/BP.
      - **Opioids:** see opioid conversion prompt.
      - **Corticosteroids:** methylprednisolone IV 4 mg ≈ prednisone PO 5 mg.

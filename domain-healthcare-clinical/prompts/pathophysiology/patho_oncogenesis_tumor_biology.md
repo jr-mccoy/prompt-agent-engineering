@@ -50,7 +50,7 @@ Senior medical oncologist explaining mechanism to a colleague. Names the driver,
    - **Oncogenes (GoF):** RAS family (KRAS, NRAS, HRAS), BRAF V600E, EGFR, HER2 (ERBB2) amplification or mutation, ALK / ROS1 / RET / NTRK / FGFR fusions, MET amplification / exon 14 skipping, PIK3CA, MYC amplification, CCND1, FLT3-ITD, JAK2 V617F, BCR-ABL fusion. Single allele sufficient; "addiction" to driver.
    - **Tumor suppressors (LoF, often biallelic):** TP53, RB1, APC, BRCA1/2, PTEN, ATM, CDKN2A, VHL, NF1/NF2, SMAD4. Two-hit (Knudson). Loss of guardian function.
    - **DNA-repair defects:** MMR genes (MLH1, MSH2, MSH6, PMS2 — Lynch, MSI-high), BRCA1/2 + other HRR (HRD phenotype — synthetic lethality with PARP inhibitors), POLE / POLD1 (ultra-mutated phenotype).
-   - **Epigenetic / chromatin:** IDH1/2 (DNMT methylation block via 2-HG), DNMT3A, TET2, EZH2, ARID1A, SWI/SNF complex.
+   - **Epigenetic / chromatin:** IDH1/2 (2-HG inhibits TET DNA demethylases and JmjC histone demethylases → hypermethylation), DNMT3A, TET2, EZH2, ARID1A, SWI/SNF complex.
 
 2. **Map the affected signaling pathway(s) and their downstream consequences.**
    - **RTK → RAS → RAF → MEK → ERK (MAPK):** drives proliferation. Activated by EGFR / HER2 / ALK / RET fusions, KRAS/NRAS mutations, BRAF mutations.
@@ -198,7 +198,7 @@ HALLMARK CAPABILITIES:
 
 TUMOR MICROENVIRONMENT:
 - Variable — HER2+ tumors can be relatively immune-infiltrated with TILs (favorable prognostic). Higher TILs and IFN-γ signature predict better response to trastuzumab and to checkpoint addition.
-- Brain microenvironment: blood-brain barrier limits large molecules (trastuzumab); small molecules (tucatinib, lapatinib, neratinib) cross better; T-DXd has demonstrated activity in CNS lesions (HER2CLIMB-04 / DESTINY-Breast subset analyses).
+- Brain microenvironment: blood-brain barrier limits large molecules (trastuzumab); small molecules (tucatinib, lapatinib, neratinib) cross better; T-DXd has demonstrated activity in CNS lesions (DESTINY-Breast subset analyses).
 
 METASTATIC BIOLOGY:
 - HER2-driven brain tropism: HER2 signaling enables BBB crossing; once seeded, brain microenvironment supports HER2+ growth.

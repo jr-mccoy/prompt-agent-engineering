@@ -83,7 +83,7 @@ Senior psychiatrist writing the antipsychotic prescription with explicit rationa
    - **Pregnancy:** lowest-risk choices — olanzapine, quetiapine, haloperidol; avoid paliperidone if possible. Discuss risks/benefits; relapse risk often outweighs.
    - **Smoking (CYP1A2 inducer):** olanzapine and clozapine levels lower in smokers; dose adjusts on cessation.
    - **Akathisia or prior TD:** avoid high-potency D2 blockers; prefer clozapine, low-dose quetiapine, pimavanserin if applicable.
-   - **Treatment-resistant schizophrenia (failure of ≥2 adequate trials):** **clozapine** — only FDA-approved for TRS; requires REMS for ANC monitoring (weekly ×6 months, biweekly ×6 months, monthly thereafter).
+   - **Treatment-resistant schizophrenia (failure of ≥2 adequate trials):** **clozapine** — only FDA-approved for TRS; requires ANC monitoring per the current label (schedule historically weekly ×6 months, biweekly ×6 months, monthly thereafter; REMS status changed in 2025) [VERIFY: current clozapine product label].
 
 4. **First-episode psychosis nuances.**
    - Lower doses than chronic; greater response and side-effect sensitivity.
@@ -114,13 +114,13 @@ Senior psychiatrist writing the antipsychotic prescription with explicit rationa
    - Ziprasidone: 80–160 mg/day with food (absorption requires fat).
    - Lurasidone: 40–160 mg/day with food (≥350 kcal).
    - Lumateperone: 42 mg/day.
-   - Clozapine: titrate slowly 12.5 mg → 25 mg → 50 mg/day per week to 300–450 mg/day; max 900 mg.
+   - Clozapine: start 12.5 mg and titrate in daily (not weekly) increments of 25–50 mg/day toward 300–450 mg/day; max 900 mg [VERIFY: current clozapine label titration schedule].
    - Haloperidol: 5–20 mg/day for schizophrenia; 0.25–2 mg for delirium / agitation in elderly.
 
 7. **Monitoring (APA / ADA consensus for SGAs).**
    - **Baseline:** weight/BMI, waist circumference, fasting glucose, lipids, BP, EKG (QTc for ziprasidone, haloperidol IV), prolactin if symptomatic, ANC for clozapine, AIMS (abnormal involuntary movement scale) for TD.
    - **Follow-up:** weight monthly ×3, then quarterly; glucose / lipids at 12 weeks, then yearly (more often if metabolic syndrome or weight gain); AIMS every 6 months.
-   - **Clozapine REMS:** weekly ANC ×6 months, biweekly ×6 months, monthly thereafter; cardiac monitoring (myocarditis), seizure risk, constipation/ileus, sialorrhea.
+   - **Clozapine ANC monitoring** (per current label; REMS status changed in 2025 [VERIFY: current clozapine product label]): weekly ANC ×6 months, biweekly ×6 months, monthly thereafter; cardiac monitoring (myocarditis), seizure risk, constipation/ileus, sialorrhea.
 
 8. **Switching strategies.**
    - **Direct switch** (same class, similar receptor profile): start new agent, stop old agent.
@@ -169,7 +169,7 @@ CONTRAINDICATIONS / WARNINGS:
 MONITORING:
 - Baseline: weight, BMI, waist, fasting glucose, lipid panel, BP, EKG (if QTc-prolonging), prolactin if symptomatic, AIMS, CBC for clozapine
 - Follow-up: weight monthly ×3, then quarterly; metabolic labs 12 weeks, then yearly; AIMS every 6 months
-- Clozapine: REMS-mandated ANC schedule
+- Clozapine: ANC schedule per current label [VERIFY: current clozapine product label]
 
 LAI CONSIDERATIONS (if applicable):
 - Oral test dose [days] before LAI
@@ -215,19 +215,19 @@ SELECTED REGIMEN:
 
 RATIONALE:
 - **First-episode psychosis** — lower doses, greater side-effect sensitivity, favor lower-metabolic-risk SGA.
-- **Aripiprazole** partial D2 agonist + 5-HT1A partial agonist + 5-HT2A antagonist: low metabolic risk, no significant QTc, no prolactin elevation (lowers prolactin), good evidence for first-episode (CAFE trial subset), reasonable acceptability.
+- **Aripiprazole** partial D2 agonist + 5-HT1A partial agonist + 5-HT2A antagonist: low metabolic risk, no significant QTc, no prolactin elevation (lowers prolactin), good evidence for first-episode, reasonable acceptability.
 - **Smoker:** CYP1A2 induced — aripiprazole metabolism not strongly CYP1A2 (mostly CYP3A4 + 2D6), unaffected.
 - **Family support, lives at home:** adherence likely feasible with oral; consider LAI conversion if relapse occurs.
 - **Avoided:** olanzapine and clozapine (metabolic), ziprasidone (food requirement, QTc concern), risperidone (prolactin and EPS).
 
 CONTRAINDICATIONS / WARNINGS:
 - No dementia.
-- No QTc concern.
+- No known cardiac history (per input); baseline QTc [not provided — obtain] before calling QTc "no concern".
 - Akathisia possible — counsel and monitor.
 - Activating effects possible — morning dosing.
 
 MONITORING:
-- Baseline: weight 73 kg, BMI 23, waist circumference, fasting glucose 92, A1c 5.4, lipids (LDL 110, HDL 48, TG 95), BP 122/78, EKG with QTc 412, AIMS done.
+- Baseline: BMI 23 (per input); weight, waist circumference, fasting glucose, A1c, lipids, BP, EKG/QTc, AIMS [not provided — obtain].
 - Follow-up: weight at 4, 8, 12 weeks then quarterly; metabolic labs at 12 weeks, then yearly.
 - AIMS every 6 months.
 - Akathisia screen each visit.

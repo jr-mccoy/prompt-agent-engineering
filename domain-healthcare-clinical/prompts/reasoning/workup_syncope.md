@@ -92,7 +92,7 @@ Work up the syncopal patient: confirm transient loss of consciousness with spont
 7. **Targeted workup based on suspicion.**
    - Suspected arrhythmia, normal ECG: telemetry; if intermittent and concerning, 24–48 h Holter, 14–30 day patch monitor (Zio), or implantable loop recorder for unexplained syncope with high recurrence risk.
    - Suspected structural: echocardiogram (AS, HCM, EF, RV strain).
-   - Exertional syncope: stress test, echo, cardiology — consider HCM, AS, ischemia.
+   - Exertional syncope: echo first to exclude severe AS / obstructive HCM; stress test only after those are excluded; cardiology — consider HCM, AS, ischemia.
    - Suspected PE: Wells/PERC, d-dimer, CTPA.
    - Suspected dissection: CTA chest/abdomen/pelvis.
    - Suspected vascular brain event: CT/MRI brain — but pure syncope without focal deficit rarely needs head imaging; reserve for trauma, focal deficit, or atypical features.
@@ -188,7 +188,7 @@ ECG:
 - No bifascicular block, QTc normal, no ischemia.
 
 RISK SCORES:
-- CSRS: predisposition vasovagal 0, heart disease (presumed AS) +1, SBP normal 0, troponin neg 0, axis 0, QRS 0, QTc 0, ED diagnosis cardiac +2 = +3 → MEDIUM-HIGH risk.
+- CSRS: predisposition vasovagal 0, history of heart disease 0 (HTN/hyperlipidemia only; the murmur and presumed AS are suspected at this visit, not known prior disease — input's "?+1" not scored), SBP normal 0, troponin neg 0, axis 0, QRS 0, QTc 0, ED diagnosis cardiac +2 = +2 → MEDIUM risk (band 1 to 3).
 - SFSR: abnormal ECG (LVH with strain) → positive → admit/observe.
 
 DIFFERENTIAL (ranked):

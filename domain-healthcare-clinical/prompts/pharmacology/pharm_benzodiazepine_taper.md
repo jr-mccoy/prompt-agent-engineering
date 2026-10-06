@@ -208,8 +208,8 @@ PATIENT SNAPSHOT:
 CONVERSION TO LONG-HALF-LIFE AGENT:
 - Lorazepam 3 mg/day = diazepam ~15 mg/day equivalent.
 - Convert over 1 week:
-  - Day 1–3: lorazepam 0.5 mg TID + diazepam 5 mg qHS.
-  - Day 4–7: lorazepam 0.5 mg BID + diazepam 5 mg AM + 5 mg qHS.
+  - Day 1–3: lorazepam 1 mg AM + 1 mg noon + diazepam 5 mg qHS (replaces bedtime lorazepam) — 10 + 5 = 15 mg/day diazepam-equivalent.
+  - Day 4–7: lorazepam 0.5 mg BID + diazepam 5 mg AM + 5 mg qHS — 5 + 10 = 15 mg/day diazepam-equivalent.
   - Day 8 onward: diazepam 5 mg BID + 5 mg qHS (15 mg/day total).
 - Allow 1–2 weeks at stable diazepam dose before starting taper to confirm equivalence.
 

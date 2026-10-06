@@ -78,10 +78,10 @@ Senior endocrinologist explaining axis logic to a colleague. Names the hormones,
      - Then ACTH to separate dependent vs independent.
      - If ACTH-dependent (pituitary vs ectopic): high-dose dexamethasone suppression — pituitary microadenomas typically retain some feedback and suppress >50%; ectopic tumors do not. CRH stimulation — pituitary increases ACTH/cortisol, ectopic typically does not. Pituitary MRI; inferior petrosal sinus sampling (IPSS) when pituitary MRI normal or ambiguous (central-to-peripheral ACTH gradient ≥2 baseline / ≥3 after CRH = pituitary source).
    - **Adrenal insufficiency workup:**
-     - 8 AM cortisol + ACTH: cortisol <3 = AI; >18 = unlikely.
-     - ACTH (cosyntropin) stimulation test 250 µg IV/IM, measure cortisol at 30 and 60 min — peak <18 µg/dL = AI. Adrenal in primary AI cannot respond regardless; in chronic secondary AI, adrenal has atrophied and also fails to respond (but ACTH baseline is low not high → distinguishes from primary).
+     - 8 AM cortisol + ACTH: cortisol <3 = AI; >18 = unlikely [VERIFY: assay-specific cutoffs / current Endocrine Society guideline].
+     - ACTH (cosyntropin) stimulation test 250 µg IV/IM, measure cortisol at 30 and 60 min — peak <18 µg/dL = AI [VERIFY: peak cutoff is assay-specific]. Adrenal in primary AI cannot respond regardless; in chronic secondary AI, adrenal has atrophied and also fails to respond (but ACTH baseline is low not high → distinguishes from primary).
      - Aldosterone, renin, and electrolytes also tested in primary AI (low aldo, high renin, hyperK, hypoNa — mineralocorticoid deficiency); secondary AI typically preserves aldosterone (RAAS intact).
-   - **Acromegaly workup:** IGF-1 elevated for age/sex; GH suppression test (75 g oral glucose; GH should suppress to <1 ng/mL; not suppressed = acromegaly). Pituitary MRI.
+   - **Acromegaly workup:** IGF-1 elevated for age/sex; GH suppression test (75 g oral glucose; GH should suppress to <1 ng/mL [VERIFY: GH nadir cutoff is assay-specific / current Endocrine Society guideline]; not suppressed = acromegaly). Pituitary MRI.
    - **Hyperaldosteronism workup:**
      - Aldosterone-to-renin ratio (ARR) screen. Plasma aldosterone (PAC) high + plasma renin activity (PRA) suppressed → primary aldosteronism likely.
      - Confirmatory: saline infusion test or oral salt loading — failure to suppress aldosterone confirms.
@@ -90,7 +90,7 @@ Senior endocrinologist explaining axis logic to a colleague. Names the hormones,
      - Water deprivation test or copeptin response to hypertonic saline. Central DI = low ADH (low copeptin), responds to desmopressin; nephrogenic DI = high ADH (high copeptin), does not respond to desmopressin.
 
 5. **Predict the biochemical pattern and recognize "inappropriate" results.**
-   - "Inappropriately normal" is often more diagnostic than overtly abnormal. A normal TSH with low FT4 = secondary hypothyroidism. Normal LH with profoundly low testosterone = secondary hypogonadism. Normal ACTH with markedly elevated cortisol = Cushing's disease (the absence of suppression is the abnormality).
+   - "Inappropriately normal" is often more diagnostic than overtly abnormal. A normal TSH with low FT4 = secondary hypothyroidism. Normal LH with profoundly low testosterone = secondary hypogonadism. Normal ACTH with markedly elevated cortisol = ACTH-dependent Cushing's syndrome (the absence of suppression is the abnormality); pituitary (Cushing's disease) vs ectopic still needs dynamic testing or IPSS.
 
 6. **Tie to treatment rationale.**
    - **Primary failure → hormone replacement:**
@@ -183,7 +183,7 @@ LOCALIZATION:
 DYNAMIC TEST RATIONALE:
 - **High-dose dexamethasone suppression test (8 mg overnight, or 2 mg q6h × 48h):** pituitary corticotroph adenomas typically retain some glucocorticoid feedback at high doses → cortisol suppresses by >50% from baseline. Ectopic ACTH tumors typically do not suppress.
 - **CRH stimulation test:** pituitary adenomas respond with ≥35% increase in ACTH and ≥20% increase in cortisol; ectopic sources usually do not respond.
-- **Inferior petrosal sinus sampling (IPSS):** gold-standard discriminator when MRI is normal or shows a small lesion, or when biochemistry is ambiguous. Bilateral catheterization with simultaneous central + peripheral ACTH at baseline and after CRH. Central-to-peripheral ACTH gradient ≥2:1 baseline or ≥3:1 after CRH = pituitary source. The 6 mm MRI lesion may or may not be the active adenoma; IPSS is often recommended even with positive imaging when adenoma is <6 mm or pre-test probability is uncertain. Right-vs-left gradient on IPSS also helps lateralize for surgery.
+- **Inferior petrosal sinus sampling (IPSS):** gold-standard discriminator when MRI is normal or shows a small lesion, or when biochemistry is ambiguous. Bilateral catheterization with simultaneous central + peripheral ACTH at baseline and after CRH. Central-to-peripheral ACTH gradient ≥2:1 baseline or ≥3:1 after CRH = pituitary source. The 6 mm MRI lesion may or may not be the active adenoma; IPSS is often recommended even with positive imaging when adenoma is <6 mm or pre-test probability is uncertain [VERIFY: lesion-size threshold in current Endocrine Society / Pituitary Society Cushing's guidance]. Right-vs-left gradient on IPSS also helps lateralize for surgery.
 
 ETIOLOGIES AT THIS LEVEL (most likely first):
 1. **Cushing's disease (pituitary corticotroph microadenoma)** — clinically consistent, MRI supportive, ACTH-dependent biochemistry.
@@ -195,7 +195,7 @@ IMAGING / FURTHER WORKUP:
 - Pituitary MRI with thin-section dynamic post-gadolinium imaging if not already done.
 - Chest CT and abdominal/pelvic imaging to exclude ectopic source (small cell, bronchial carcinoid).
 - 68Ga-DOTATATE PET/CT if ectopic source suspected — sensitive for neuroendocrine tumors.
-- IPSS recommended given lesion is small (6 mm); definitive central source confirmation before surgery.
+- IPSS: the 6 mm lesion sits at, not below, the <6 mm threshold stated above, so the size rule alone does not mandate IPSS; decide on concordance of dynamic tests and pre-test probability, and use IPSS if they are discordant or equivocal.
 - DEXA for bone density (Cushing's drives rapid bone loss).
 - Baseline glucose / HbA1c, BP, lipids, weight/BMI, mood / cognitive screen, infection / wound-healing review.
 
@@ -205,7 +205,7 @@ WHY THE BIOCHEMICAL PATTERN IS WHAT IT IS:
 - All the clinical features (central obesity, moon facies, plethora, striae, easy bruising, proximal weakness, glucose intolerance, hypertension via mineralocorticoid receptor cross-occupation and vascular effects, depression / cognitive change, osteoporosis, hypokalemia in severe cases) are downstream consequences of chronic supraphysiologic cortisol.
 
 TREATMENT RATIONALE:
-- **First-line: transsphenoidal pituitary surgery** by an experienced pituitary neurosurgeon, after IPSS confirms central source and ideally lateralizes. Selective adenomectomy: cure rates 70–85% for microadenomas in expert centers.
+- **First-line: transsphenoidal pituitary surgery** by an experienced pituitary neurosurgeon, after the central source is confirmed (dynamic tests ± IPSS, which can also help lateralize). Selective adenomectomy: cure rates 70–85% for microadenomas in expert centers.
 - **Adjunctive if surgery incomplete or contraindicated / awaiting surgery / persistent disease:**
   - Steroidogenesis inhibitors: ketoconazole 200–400 mg PO BID (titrate; monitor LFTs — hepatotoxicity, QT interaction); metyrapone (blocks 11β-hydroxylase — accumulates 11-deoxycortisol, increases androgens); osilodrostat (newer 11β-hydroxylase inhibitor, oral, monitor electrolytes and QTc); mitotane (adrenolytic, slower onset, used in ACC).
   - Pituitary-directed: pasireotide (somatostatin receptor 5 agonist — reduces ACTH from corticotroph; significant hyperglycemia adverse effect, often precipitates or worsens diabetes); cabergoline (D2 agonist, modest efficacy in subset).
@@ -217,7 +217,7 @@ EXPECTED TREATMENT EFFECT ON LABS:
 - Within 24–48 h of successful transsphenoidal adenomectomy: AM cortisol drops to <2 µg/dL — this profound transient hypocortisolism is the *expected* sign of cure (the autonomous source is gone and the normal pituitary remains suppressed).
 - Patients require hydrocortisone replacement for months (typically 6–12 months) until HPA axis recovers; some require lifelong replacement.
 - ACTH gradually normalizes; cortisol axis testing every 3–6 months until recovery confirmed (morning cortisol >10–12 µg/dL or normal ACTH-stimulation test).
-- If post-op AM cortisol stays >5 µg/dL → residual / recurrent disease likely.
+- If post-op AM cortisol stays >5 µg/dL → residual / recurrent disease likely. [VERIFY: post-op and recovery cortisol cutoffs are assay-specific / current Endocrine Society guideline]
 
 MONITORING:
 - Post-op: AM cortisol daily for first week, hydrocortisone replacement, sodium and glucose monitoring (DI risk for ~3–7 days post-op — central DI from posterior pituitary trauma).

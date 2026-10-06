@@ -158,19 +158,24 @@ THIS PATIENT:
 
 FEVER CONSIDERATIONS BY AGE:
   Neonate (0-28 days) + fever ≥ 38°C:
-    → ALWAYS requires full sepsis workup (blood, urine, CSF)
-    → Admit for empiric antibiotics pending cultures
+    → Sepsis workup (blood, urine; CSF and admission criteria differ
+      by age band within the first 28 days)
+    → Default: admit for empiric antibiotics pending cultures
+      [VERIFY: current AAP febrile infant guideline (2021, 8-60 days) / local protocol]
     → Do NOT attribute fever to viral illness in this age group
 
   Infant 29-60 days + fever ≥ 38°C:
     → High-risk features → full workup and admit
     → Low-risk (well-appearing, normal labs) → may observe closely
-    → Use validated criteria (Rochester, Philadelphia, Step-by-Step)
+    → Use a validated pathway (current AAP guideline, or older Rochester,
+      Philadelphia, Step-by-Step criteria)
+      [VERIFY: current AAP febrile infant guideline / local protocol]
 
   Infant 3-36 months + fever:
     → Source-dependent workup
     → UTI common — obtain UA/culture (especially if < 24 months)
-    → If unvaccinated: higher threshold for workup
+    → If unvaccinated or incompletely vaccinated: LOWER threshold for
+      workup (occult bacteremia risk is higher)
 
   Child > 36 months + fever:
     → Source-directed evaluation
@@ -268,7 +273,7 @@ Antipyretics:
 Antibiotics (common):
   Amoxicillin (standard): 25 mg/kg/dose BID or 15 mg/kg/dose TID
     This patient: [X] mg/dose
-  Amoxicillin (high-dose AOM): 45 mg/kg/dose BID (max 3g/day)
+  Amoxicillin (high-dose AOM): 45 mg/kg/dose BID (max daily dose [VERIFY: product label / current pediatric dosing reference / AAP AOM guideline])
     This patient: [X] mg/dose
   Amoxicillin-clavulanate (high-dose): 45 mg/kg/dose BID of amoxicillin component
     This patient: [X] mg/dose
@@ -488,7 +493,7 @@ Verify all dosing against current pediatric references
 
 ### Neonatal Considerations
 - Neonates are physiologically unique: immature liver/kidney function, different drug distribution, temperature instability
-- Fever in neonate (≥ 38°C) = full sepsis workup, no exceptions
+- Fever in neonate (≥ 38°C) = sepsis workup; extent (CSF, admission) by age band [VERIFY: current AAP febrile infant guideline / local protocol]
 - Jaundice: assess with nomogram, know phototherapy thresholds by age in hours
 - Always consider congenital conditions that present in the first weeks
 

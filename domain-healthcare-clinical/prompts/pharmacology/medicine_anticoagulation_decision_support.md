@@ -126,7 +126,7 @@ Recommend a specific agent with specific dose:
 
 ### Step 5: Define Duration and Stopping Rule
 
-- **AF:** indefinite while CHA₂DS₂-VASc remains ≥ threshold; annual reassessment of bleeding risk
+- **AF:** indefinite while the stroke-risk score remains at or above the treatment threshold of the guideline cited (state the score version and the sex-specific threshold used) [VERIFY: current ACC/AHA/ACCP/HRS or ESC AF guideline]; annual reassessment of bleeding risk
 - **Provoked VTE with transient major provocation:** 3 months
 - **Unprovoked VTE:** extended indefinite with periodic reassessment; weigh bleeding risk and recurrence prediction
 - **Cancer-associated VTE:** as long as cancer active
@@ -255,7 +255,7 @@ SAFETY CHECKLIST
 
 **End-stage renal disease / dialysis:** Evidence for DOACs evolving; warfarin has historically been standard but trials have challenged it. Hematology / cardiology input recommended.
 
-**Pregnancy:** Warfarin contraindicated in first trimester; LMWH is standard. DOACs contraindicated in pregnancy and breastfeeding.
+**Pregnancy:** Warfarin is teratogenic (embryopathy risk greatest in the first trimester, with fetal risk later in pregnancy as well) and is generally avoided; LMWH is standard. Mechanical valves in pregnancy are managed by specialists under a separate regimen [VERIFY: current ACC/AHA valvular heart disease guideline / warfarin label]. DOACs contraindicated in pregnancy and breastfeeding.
 
 **Obesity (BMI >40 or weight >120 kg):** Apixaban and rivaroxaban have reassuring data; dabigatran and edoxaban have less. Check current ISTH guidance.
 

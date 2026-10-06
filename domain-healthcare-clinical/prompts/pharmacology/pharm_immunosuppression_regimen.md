@@ -90,7 +90,7 @@ Senior transplant nephrologist / hepatologist / cardiologist / pulmonologist / r
      - **Plasmapheresis + IVIG**: desensitization protocols, antibody-mediated rejection.
 
 4. **Autoimmune-disease regimens (specific patterns).**
-   - **SLE — lupus nephritis induction:** mycophenolate 2–3 g/day or cyclophosphamide (Euro-Lupus 500 mg q2wk ×6; NIH high-dose monthly); add glucocorticoid; consider belimumab + voclosporin (NEPTUNE / AURORA).
+   - **SLE — lupus nephritis induction:** mycophenolate 2–3 g/day or cyclophosphamide (Euro-Lupus 500 mg q2wk ×6; NIH high-dose monthly); add glucocorticoid; consider adding belimumab (BLISS-LN) or voclosporin (AURORA).
    - **ANCA vasculitis induction:** rituximab 375 mg/m² weekly ×4 or 1 g ×2 (RAVE, RITUXVAS); + steroid (avacopan can replace high-dose steroid in select cases).
    - **MS:** ocrelizumab (anti-CD20), natalizumab, fingolimod, dimethyl fumarate, glatiramer, IFN-β, alemtuzumab, cladribine.
    - **RA:** methotrexate first-line + folic acid; TNF inhibitor or other biologic as add-on; JAKi.
@@ -117,13 +117,13 @@ Senior transplant nephrologist / hepatologist / cardiologist / pulmonologist / r
    - Skin cancer screening yearly (squamous cell most common; melanoma higher risk); sun protection essential.
    - PTLD (EBV-driven) — high index of suspicion for lymphadenopathy, fever, unusual lymphocytosis; monitor EBV PCR in EBV-mismatched recipients.
    - Cervical cancer (HPV); colon (per usual screening); prostate; breast.
-   - Latent HBV: HCC surveillance every 6 months.
+   - Chronic HBV (HBsAg+) in a guideline-defined risk group, or cirrhosis: HCC surveillance every 6 months [VERIFY: current AASLD HCC surveillance guidance].
 
 8. **Drug-drug interactions.**
    - **CYP3A4 inhibitors increase CNI / mTOR levels:** azoles (fluconazole, itraconazole, voriconazole, posaconazole), macrolides (clarithromycin, erythromycin), diltiazem, verapamil, grapefruit, ritonavir / Paxlovid (nirmatrelvir-ritonavir contraindicated with tacrolimus / cyclosporine / sirolimus without expert management).
    - **CYP3A4 inducers decrease levels:** rifampin, phenytoin, carbamazepine, phenobarbital, St. John's wort.
    - **Allopurinol + azathioprine:** XO inhibition → azathioprine accumulation → severe myelosuppression. Reduce azathioprine to 25% if needed; better to switch to mycophenolate.
-   - **TMP-SMX:** raises tacrolimus, additive nephrotoxicity, hyperkalemia.
+   - **TMP-SMX:** minimal effect on tacrolimus levels (not a CYP3A4 inhibitor); trimethoprim adds hyperkalemia and blocks tubular creatinine secretion (SCr rise that can mimic nephrotoxicity).
    - **NSAIDs:** additive nephrotoxicity; avoid.
 
 9. **Rejection management.**
@@ -143,7 +143,7 @@ Senior transplant nephrologist / hepatologist / cardiologist / pulmonologist / r
 ✅ **DO:**
 - Show each weight-based dose as mg/kg × weight = mg/day and how it is split and rounded to capsule strength.
 - For every prophylaxis line, list agent, renal-adjusted dose, start and stop date, and the D/R serostatus input that sets the duration.
-- Reconcile the regimen with itself: the interaction, vaccine (e.g., household rotavirus) and pregnancy statements in the reasoning steps must match the worked example.
+- Reconcile the regimen with itself: the interaction, vaccine and pregnancy statements in the reasoning steps must match the worked example.
 - Check mycophenolate contraception wording for female and male patients against the current label `[VERIFY: current label / REMS]`.
 
 ## Output Format
@@ -241,7 +241,7 @@ INFECTION PROPHYLAXIS:
 
 VACCINATION STATUS:
 - Confirm pre-transplant: pneumococcal (PCV20), influenza (annual), Hepatitis B series, HPV if age-eligible, Tdap, Shingrix (inactivated).
-- Post-transplant: annual influenza, COVID updates, pneumococcal boosters; no live vaccines (no MMR, no oral polio, no rotavirus contact in household, no yellow fever).
+- Post-transplant: annual influenza, COVID updates, pneumococcal boosters; no live vaccines for the patient (no MMR, no oral polio, no yellow fever); household contacts may receive live vaccines except oral polio, with rotavirus precautions (patient avoids infant diaper contact after a household rotavirus dose) [VERIFY: current ACIP / IDSA guidance].
 
 MALIGNANCY SURVEILLANCE:
 - Annual full-body skin exam by dermatologist; sunscreen, hat, sun-protective behavior.
