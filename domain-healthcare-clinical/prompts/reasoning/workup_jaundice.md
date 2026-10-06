@@ -14,8 +14,20 @@ tags:
   - gi
   - diagnostic-workup
   - jaundice
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -127,6 +139,21 @@ Work up the jaundiced patient: classify hyperbilirubinemia (indirect vs direct),
    - Nutrition: fat-soluble vitamin (A, D, E, K) supplementation in chronic cholestasis.
    - Avoid hepatotoxins; cap acetaminophen at ≤2 g/day in chronic liver disease.
    - Vaccinate hepatitis A and B in non-immune patients with chronic liver disease.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report "× ULN" multiples or an R-factor using upper limits you assumed; without the reporting lab's ULN for ALT and ALP, write "R-factor not computable".
+- Treat a raised ALP as hepatic without a GGT (or 5′-nucleotidase) — bone disease, adolescence and pregnancy (placental ALP) raise it too.
+- Settle on Gilbert syndrome from a single unconjugated value without a normal CBC, reticulocyte count, LDH, haptoglobin and transaminases.
+- Accept a non-dilated duct on one RUQ ultrasound as excluding a stone or early obstruction when the enzyme pattern is cholestatic.
+- Leave acute liver failure off the list because the bilirubin is modest — check the INR and mental status every time.
+
+✅ **DO:**
+- Recompute the direct fraction (direct ÷ total × 100) and the R-factor from the supplied values and ULNs, and show both.
+- Compute the Maddrey discriminant function only when the control PT is supplied — 4.6 × (patient PT − control PT) + total bilirubin (mg/dL) — and state which input was missing otherwise.
+- In a pregnant patient, place ICP, AFLP and HELLP in the differential according to the supplied gestational age, not by name-checking all three.
+- Trace each prednisolone, antibiotic, vitamin K and antipruritic dose to an order or the label `[VERIFY: label/formulary]`, with hepatic and renal adjustment stated.
 
 ## Output Format
 

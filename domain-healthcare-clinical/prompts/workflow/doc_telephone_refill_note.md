@@ -14,8 +14,20 @@ tags:
   - telephone-encounter
   - refill
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -52,6 +64,19 @@ The clinician handling and documenting the asynchronous encounter.
 7. **Flag when async is not appropriate.** If the request can't be safely handled by phone/refill (symptoms needing exam, monitoring overdue for a high-risk drug, controlled-substance early refill), document the conversion to a visit rather than forcing an async decision.
 
 8. **Keep it concise but complete** — every element that makes the decision safe and auditable, nothing more.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Turn "no symptoms" into specific negatives ("no dizziness, cough or edema") — each named negative claims a question was asked.
+- Supply frequency, quantity, refill count or pharmacy that the request did not state.
+- Present safety-net thresholds ("call if home BP > 150/90") as standard values; they are the clinician's choice — `[threshold per clinician]`.
+- Call monitoring "current" because a lab exists, without comparing its date with the interval required for that drug.
+
+✅ **DO:**
+- Compute elapsed time from today's date — months since the last visit and since each monitoring lab — and write the number, not just "overdue".
+- Check that the bridge supply lasts until the scheduled lab draw and visit (supply days ≥ days to follow-up); for a controlled substance, compute last fill date + days supplied vs today and record the PDMP check date or that it was not done.
+- Confirm the allergy list and current medication list were in DATA REVIEWED before an approval is documented.
 
 ## Output Format
 

@@ -19,10 +19,22 @@ related_prompts:
   - medicine_clinical_decision_support
   - medicine_clinical_history_elicitation
   - medicine_emergency_triage_decision_support
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Psychiatric Assessment Support
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide structured psychiatric assessment reasoning including mental status examination organization, psychiatric review of systems, suicide and violence risk assessment, capacity evaluation, and safety planning to support clinicians in medical and psychiatric settings.
 
@@ -474,6 +486,23 @@ SAFETY PLAN
    - Medications: [Action taken — secured, limited supply]
    - Other means: [Action taken]
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill MSE fields with normal defaults ("linear, goal-directed", "insight fair") for domains the input never describes — write "not assessed".
+- Mark a C-SSRS item "No" when the question was not asked; "not asked" and "denied" are different answers.
+- Derive the suicide risk level by counting ticked risk and protective boxes instead of applying the Step 2 criteria to the ideation, intent, plan and behavior findings.
+- Record "Has capacity — all 4 criteria met" without an evidence line for each criterion tied to the specific decision.
+- List a diagnosis as "DSM-5 criteria met" without the symptom count and duration, or before intoxication, withdrawal and delirium are addressed.
+
+✅ **DO:**
+- Trace each risk and protective factor to its source (patient, collateral, chart) and when it was obtained, and check the disposition matches the risk-level rule; explain any mismatch.
+- State involuntary-hold criteria, duty-to-warn duties and minor-consent rules as jurisdiction-specific `[VERIFY: local law/policy]`, and note that the crisis numbers listed are US services.
+- Adjust for population: assess adolescents privately, screen older adults for delirium with the CAM, and in pregnancy or postpartum consider postpartum psychosis and medication safety with obstetric input.
+- Present medical-clearance labs as the facility's protocol `[VERIFY: facility protocol]`, not a universal panel.
 
 ---
 

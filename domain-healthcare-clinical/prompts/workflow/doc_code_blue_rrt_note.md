@@ -14,8 +14,20 @@ tags:
   - code-blue
   - rapid-response
   - resuscitation
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -53,6 +65,19 @@ Code team leader or documenting clinician writing the event note immediately aft
 7. **Document the post-event plan** for survivors: disposition (ICU), post-arrest care (targeted temperature consideration, post-ROSC ECG, labs, pressors), and family communication.
 
 8. **List the team and confirm accuracy.** Record who ran and participated in the code. Times and doses must be accurate; do not reconstruct details not known.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Supply the algorithm's usual dose, energy or device detail where the input named only the action — "calcium gluconate" does not become "1 g", "shock" does not become "200 J biphasic", "intubated" does not become "confirmed by capnography"; write `[dose/energy not recorded]`.
+- Add a drug to the timeline because it belongs to the treatment bundle (bicarbonate alongside calcium and insulin for hyperkalemia) when the recorder did not log it.
+- Re-time interventions to textbook spacing — an epinephrine or amiodarone dose given earlier or later than the ACLS algorithm suggests is recorded at the minute it was given; the deviation is a quality-review fact, not an error to correct.
+- Describe post-ROSC neurologic status ("comatose", "following commands") that the input did not report — targeted temperature management eligibility in the plan hangs on it.
+
+✅ **DO:**
+- Reconcile the timeline mechanically before signing: every timed event in the input appears once in RESUSCITATION TIMELINE, times are in ascending order, and the counts of shocks, epinephrine doses and pulse checks match the input; recompute onset-to-ROSC (or total duration to termination) from the two clock times.
+- Mark approximate or reconstructed times as such ("~03:20 per recorder") and leave unknown times blank — an exact-looking minute is a medicolegal claim.
+- Carry every result still outstanding at the end of the event (labs drawn at onset, ABG, cultures) and the allergy status into POST-EVENT PLAN, so the receiving ICU team inherits them.
 
 ## Output Format
 

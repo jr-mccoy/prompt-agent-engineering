@@ -2,13 +2,19 @@
 title: "Oncology Case Framer for Tumor Board Presentation"
 category: medicine
 description: "Structure a new cancer case for multidisciplinary tumor board — staging, molecular profile, treatment options with evidence, patient factors, and the decision question for the board."
+techniques:
+  - ST-01
+  - ST-03
+  - RP-01
+  - QA-05
+  - DP-04
 tags:
   - medicine
   - oncology
   - tumor-board
   - multidisciplinary
   - case-presentation
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
   - domain-healthcare-clinical/prompts/medicine_goals_of_care_conversation_guide.md
@@ -16,6 +22,18 @@ related_prompts:
 ---
 
 # Oncology Case Framer for Tumor Board Presentation
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help a presenting clinician structure a cancer case for multidisciplinary tumor board — so the board can answer a specific decision question within the time allotted. Covers staging, molecular/biomarker profile, performance status, treatment options with guideline anchors, and the explicit question being asked of the board.
 
@@ -235,6 +253,23 @@ Follow-up to board: _____________
 **Progression on current therapy:** Clarify whether this is true progression, pseudoprogression (immunotherapy), or post-treatment change. Restaging interpretation matters.
 
 **Goals-of-care transition candidates:** If best supportive care is a realistic option, frame it as a first-class choice, not a fallback. See `medicine_goals_of_care_conversation_guide.md`.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill an option's Evidence or Expected benefit slot with a trial name, hazard ratio or median survival you cannot trace to a supplied source — write `[VERIFY: trial/source]` instead.
+- Quote an NCCN/ESMO evidence category or guideline year from memory because the Guideline slot demands one.
+- Copy the stated stage group into the header without checking it against the supplied T, N and M, or drop the c / p / yp prefix that says how it was staged.
+- Record a biomarker as "negative" when it was not tested, was tested on insufficient tissue, or used an assay not validated for that indication.
+- Tick the TRIAL SCREEN boxes when no open-trial list or eligibility criteria were supplied.
+
+✅ **DO:**
+- Recompute the stage group from the T, N and M elements (plus grade and biomarkers where the named AJCC edition uses a prognostic stage) and flag any discordance with the stated stage.
+- Check each option against the supplied ECOG, organ-function values and biomarker results, naming the specific value that makes the patient eligible or not.
+- For patients of reproductive potential, add pregnancy status and a fertility-preservation discussion to Patient-specific weighting before any gonadotoxic option is listed.
+- State genetics-referral, palliative-care and trial-referral criteria as institutional policy `[VERIFY: local policy]`.
 
 ---
 

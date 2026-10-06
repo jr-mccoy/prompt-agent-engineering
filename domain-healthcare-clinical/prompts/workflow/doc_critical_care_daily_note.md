@@ -15,8 +15,20 @@ tags:
   - critical-care
   - icu
   - systems-based-note
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -60,6 +72,19 @@ Intensivist rounding and documenting the daily ICU note.
 6. **Each system gets an assessment and a today-action,** with named drugs/doses and explicit weaning or escalation decisions. Don't carry forward settings that the data says should change (wean FiO2, narrow antibiotics, de-escalate pressors).
 
 7. **Keep it current** — ICU notes are high-stakes and frequently copy-forwarded; reflect today's data, not yesterday's.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Populate Lines/tubes/drains, code status, prophylaxis agents or "afebrile" from what an ICU patient usually has — a central line, arterial line or Foley that was not in today's input becomes a line-day and CLABSI/CAUTI audit error.
+- Advance line days and antibiotic day by incrementing yesterday's note instead of counting from a dated start; an off-by-one antibiotic day mis-times the stop date.
+- Write "AKI improving", "Cr improving" or "K repleted" when only one value or no value was supplied — a trajectory needs two dated values.
+- Mark a DAILY GOALS item "yes" (SBT candidacy, lines to remove) when the criteria behind it — FiO2/PEEP, vasopressor dose, mental status off sedation — were not in the input.
+
+✅ **DO:**
+- Recompute every derived number from its inputs and show it: P/F = PaO2 ÷ FiO2 (as a fraction), net balance = in − out, weight-based drip rate in the stated units (mcg/kg/min vs mcg/min); with a metabolic acidosis on the ABG, check the PaCO2 against Winter's formula (1.5 × HCO3 + 8 ± 2) before writing "compensated".
+- Check that every drip in OBJECTIVE carries agent, rate and units and reappears in its system's plan with a direction (wean, titrate, stop, continue).
+- List every culture or result still pending in the ID (or relevant system) plan together with what will change when it returns; count pending items in the input and in the note.
 
 ## Output Format
 

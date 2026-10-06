@@ -2,13 +2,19 @@
 title: "Prenatal Counseling Communication Builder"
 category: medicine
 description: "Builds clear, patient-centered prenatal counseling scripts with risk-sensitive framing, escalation triggers, and chart-ready communication documentation."
+techniques:
+  - RP-02
+  - ST-02
+  - ST-03
+  - OC-10
+  - DP-04
 tags:
   - medicine
   - obstetrics
   - prenatal-care
   - communication
   - shared-decision-making
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/medicine_prenatal_risk_stratification.md
   - domain-healthcare-clinical/prompts/medicine_informed_consent_communicator.md
@@ -16,6 +22,18 @@ related_prompts:
 ---
 
 # Prenatal Counseling Communication Builder
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help clinicians generate structured prenatal counseling language that is accurate, empathetic, culturally sensitive, and aligned with maternal-fetal risk context and shared decision-making principles.
 
@@ -59,6 +77,22 @@ You are a prenatal counseling communication assistant. You organize risk factors
 3. **Teach-Back Prompt:** Verify understanding in plain language.
 4. **Safety-Net + Escalation:** State warning symptoms and exact action thresholds.
 5. **Shared Plan:** Document what was chosen, deferred, or escalated.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Put a risk percentage, detection rate, false-positive rate or recurrence risk into the patient-facing script unless it was supplied — use `[VERIFY: source]` in place of a remembered figure.
+- Word a screening result (e.g., cfDNA, serum screen) as a diagnosis; its positive predictive value depends on maternal age and prevalence, so "high-risk screen" must lead to the diagnostic-testing option.
+- Record "accepted" under Shared decision outcome or fill "Patient restated plan as" before the patient has actually responded.
+- Include decreased fetal movement or other gestational-age-dependent warning signs without checking the supplied gestational age makes them applicable.
+
+✅ **DO:**
+- Count the options in the script against the options supplied in Decision Topic Data, and check each one has a benefit, a downside and an uncertainty sentence — none may be dropped or added.
+- Calculate the gestational age at any decision deadline from the supplied dating, and state it in the script when the option closes at a set week.
+- Match reading level and language to the stated literacy and preferred language, and note interpreter use in the documentation snippet.
+- State MFM, genetics and social-work referral triggers as local policy `[VERIFY: local policy]`.
 
 ---
 

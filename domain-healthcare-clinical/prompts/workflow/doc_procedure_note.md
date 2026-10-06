@@ -14,8 +14,20 @@ tags:
   - procedure-note
   - bedside-procedures
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -53,6 +65,19 @@ Proceduralist documenting immediately after a bedside procedure.
 7. **State the confirmatory plan and immediate status** — post-line CXR ordered/reviewed, patient tolerated procedure, hemodynamics. For central lines, the line is not "usable" until placement is confirmed and pneumothorax excluded where applicable; document that.
 
 8. **Don't fabricate.** Attempts, EBL, and complications must match reality; the note is a medicolegal record.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Add the anesthetic concentration, antiseptic agent, anatomic landmarks, "all ports aspirated and flushed", "no arterial puncture" or "hemodynamics unchanged" when the operator did not report them.
+- Write "attending present at bedside" when the input says only "supervised" or "aware" — physical presence is a teaching-physician and billing claim.
+- State catheter depth at the skin, needle gauge or volume removed from typical values — these are read later to judge malposition and re-accumulation.
+
+✅ **DO:**
+- Check the confirmation chain for the procedure type: central line — the venous-confirmation method (ultrasound wire-in-vein, manometry or blood gas) and whether the CXR is ordered or reviewed with tip position; thoracentesis/paracentesis — volume removed; LP — opening pressure with patient position.
+- Count specimens and match each to a study sent; a fluid study listed without an order, or an order without a specimen, is flagged.
+- When the confirmatory study is ordered but not yet reviewed, state the device's usability as pending and carry the study as an open result for handoff.
+- Match CONSENT to the input exactly (informed vs emergent/implied) and record the reason implied consent applied.
 
 ## Output Format
 

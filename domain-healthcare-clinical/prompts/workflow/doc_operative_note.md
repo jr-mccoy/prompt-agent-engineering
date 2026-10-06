@@ -14,8 +14,20 @@ tags:
   - operative-note
   - surgery
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -55,6 +67,19 @@ Operating surgeon dictating the operative note immediately after the case.
 7. **State complications explicitly** — including "none." A note that omits the complication field is incomplete.
 
 8. **Close with patient condition and disposition** — tolerated the procedure, extubated/condition, transferred to PACU/ICU. Do not embellish or document steps not performed; the note must match the operation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Expand the dictated technique into standard steps the surgeon did not state — time-out, retrieval bag, "doubly clipped", energy device, fascial closure — each is a claim about what was done in this operation.
+- Upgrade terse inputs into fuller claims: "general anesthesia" → "general endotracheal", "counts correct" → "correct ×2", or an unstated "extubated in the OR, to PACU stable".
+- Add negative findings ("no bile duct injury", "no aberrant anatomy") or "informed consent obtained" that the input does not contain — both carry medicolegal weight.
+- Fill FLUIDS / URINE OUTPUT with "adequate"; write `[per anesthesia record — value not provided]`.
+
+✅ **DO:**
+- Audit the mandated fields one by one — pre/post-op diagnosis, procedure, surgeon/assistants, anesthesia, indication, findings, specimens, implants, EBL, fluids/UOP, drains, counts, complications, disposition — and confirm each is either sourced from the input or explicitly marked not provided.
+- Check that the PROCEDURE(S) PERFORMED line matches the DESCRIPTION exactly (e.g., "with cholangiogram" only if a cholangiogram step is described), because the coder assigns CPT from it — the note never states a code itself.
+- Copy implant type, size, lot and serial exactly as supplied, and when pre- and post-op diagnoses or the approach differ, confirm a FINDINGS sentence explains why.
 
 ## Output Format
 

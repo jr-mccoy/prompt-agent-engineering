@@ -14,8 +14,20 @@ tags:
   - consult-note
   - specialty
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -51,6 +63,19 @@ Consulting specialist attending writing the note the primary team will act on.
 7. **State what the consultant will do vs. what the primary team should do,** and the follow-up plan (will continue to follow, sign-off, available for questions). Clarify ownership to prevent gaps.
 
 8. **Answer the question that was asked.** If the question is unanswerable as posed or the consult reveals a different priority, say so explicitly and reframe — don't silently answer a different question.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "labs within acceptable range", "no thrombus" or a TSH result in DATA REVIEWED when no values or report text were supplied — the section lists only studies actually reviewed, with their values and dates.
+- Report a named risk-score total (CHA2DS2-VASc, HAS-BLED, Wells) without its itemized components, or score an item from assumption (counting "vascular disease" with no documented MI, PAD or aortic plaque).
+- Give a recommendation dose for an agent with dose-adjustment criteria (DOACs, renally cleared drugs) without the age, weight, creatinine/CrCl and interacting drugs that select it — state the missing datum: "apixaban, dose per label criteria `[VERIFY: weight and creatinine needed]`".
+- Let RECOMMENDATIONS order a test "if not done" while DATA REVIEWED describes the same test as normal — the contradiction shows one of them was invented.
+
+✅ **DO:**
+- Recompute every named score item by item from the input and show the arithmetic (e.g., HTN 1 + DM 1 + age 65–74 1 + TIA 2 = 5); a total that does not equal its items blocks the note.
+- Count the numbered recommendations and check each has an owner in FOLLOW-UP / OWNERSHIP (consultant vs primary team) and traces to a statement in ASSESSMENT.
+- Check that ASSESSMENT answers the REASON FOR CONSULTATION literally (e.g., "rate control, not rhythm control"; "anticoagulate: yes") before anything else is written, and that allergies and current antithrombotic exposure from the referral data were checked against each drug recommended.
 
 ## Output Format
 

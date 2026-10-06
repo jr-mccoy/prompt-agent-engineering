@@ -14,8 +14,20 @@ tags:
   - electrolytes
   - critical-care
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -109,6 +121,21 @@ Work up hyperkalemia: confirm the value, identify ECG manifestations, treat acut
    - K ≥6.5 with ECG changes → ICU monitoring, treat aggressively, often dialysis if oliguric.
    - K 5.5–6.5 without ECG changes — depends on cause; admission for cause workup if unstable; outpatient management for known stable CKD with adjustment.
    - Discharge with K-binder if applicable, repeat K in 24–48 h, follow-up.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "no hemolysis flag" on the CONFIRMATION line when the lab report supplied no hemolysis index — say "hemolysis index not reported; repeat plasma K pending".
+- Read an ECG as "no hyperkalemic changes" from T-wave shape alone; PR, P-wave amplitude, QRS width and rate must each be compared with the patient's prior tracing, and a normal ECG does not make the measured K safe.
+- Fill the ACUTE MANAGEMENT dose slots by copying this prompt's reference doses when the patient's weight, renal function or starting glucose were not supplied.
+- Settle on "decreased excretion" because CKD is listed while the inputs that point to shift or load (CK, LDH, uric acid, phosphate, recent transfusion, pH) were never reviewed — rhabdomyolysis and tumor lysis are separate emergencies.
+- Report a TTKG when urine osm is not above serum osm, or when the urine and serum samples were drawn at different times.
+
+✅ **DO:**
+- Recompute the anion gap from the supplied Na, Cl and HCO3 (worked example: 138 − 105 − 19 = 14) and judge it against the reporting lab's range before calling the acidosis non-gap or gap.
+- Trace every agent, dose, route and interval to the prescriber's order, the product label or the local hyperkalemia protocol; mark the rest `[VERIFY: label/protocol]`.
+- Count the timed K and glucose rechecks against each shift agent's onset and duration — a plan with shift agents but no removal step or recheck before the shift wears off is incomplete.
+- When a K-raising or rate-slowing drug is continued, state the reason against the presenting heart rate and rhythm.
 
 ## Output Format
 

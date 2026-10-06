@@ -20,10 +20,22 @@ related_prompts:
   - medicine_drug_interaction_checker
   - medicine_patient_education_adapter
   - medicine_emergency_triage_decision_support
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Pediatric Clinical Reasoning
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide age-adapted clinical reasoning for pediatric patients from neonates through adolescents, integrating weight-based medication dosing, developmental milestone assessment, age-specific differential diagnosis modification, age-appropriate vital sign interpretation, and guidance on communicating with parents/guardians and pediatric patients.
 
@@ -364,6 +376,23 @@ WITH PEDIATRIC PATIENTS (age-appropriate):
   - HEADSS assessment: Home, Education, Activities, Drugs, Sexuality, Suicide/depression
   - Confidentiality: Explain what will and won't be shared with parents
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Run the dosing table on a Broselow or age-formula weight without labeling every resulting dose "estimated weight", or on a weight recorded in pounds without converting it.
+- Fill the Volume column when the product concentration was not supplied — mg are not mL.
+- Write "Below max: Y" without comparing the calculated dose with both the per-dose and per-day maximum and the adult maximum.
+- Flag HR or RR as abnormal from the age table without noting fever, crying or sleep at the time of measurement, or call a value "normal for age" from a single reading.
+- Judge a preterm infant's milestones or growth against chronological age, or quote a percentile without naming the growth chart used.
+
+✅ **DO:**
+- Recompute every dose in the table: mg/kg × kg = mg, then mg ÷ (mg/mL) = mL, and show both lines next to the max-dose check.
+- Recompute the hypotension threshold (70 + 2 × age in years, for ages 1–10) and the Holliday-Segar rate from this patient's age and weight, showing the arithmetic.
+- Compute corrected age as chronological age minus (40 − gestational age in weeks) when the infant was born preterm, and use it for milestones and growth.
+- State febrile-infant pathway, admission and referral criteria as `[VERIFY: current AAP guideline/local protocol]`, and in adolescents carry a pregnancy result before teratogenic drugs or imaging.
 
 ---
 

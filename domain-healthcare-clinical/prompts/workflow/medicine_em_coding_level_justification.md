@@ -2,19 +2,37 @@
 title: "E/M Coding Level Justification Advisor"
 category: medicine
 description: "Structured support for selecting and justifying outpatient and inpatient E/M service levels under the 2021/2023 AMA guidelines — medical decision making (MDM) or time-based."
+techniques:
+  - ST-02
+  - ST-03
+  - DS-01
+  - CM-02
+  - QA-01
 tags:
   - medicine
   - coding
   - documentation
   - E-M-services
   - revenue-cycle
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
   - domain-healthcare-clinical/prompts/medicine_prior_authorization_letter.md
 ---
 
 # E/M Coding Level Justification Advisor
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help clinicians select the correct Evaluation & Management (E/M) service level (99202–99205 / 99212–99215 for outpatient; 99221–99223, 99231–99233 for inpatient; 99238–99239 discharge) under the 2021 AMA guidelines for outpatient and 2023 extension to inpatient, using either medical decision making (MDM) or total time. Provide the documentation justification that supports the chosen level.
 
@@ -261,6 +279,21 @@ SAFETY / COMPLIANCE CHECKLIST
 **Prolonged services (99417 / G2212):** Applicable when total time exceeds the highest level's time by a defined threshold — check current rules.
 
 **Telehealth and audio-only:** Parity rules and coding differ by payer and may change. Verify current guidance.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Count a lab panel as several unique tests (a CMP is one unique test, identified by its CPT code), or count a test ordered at this encounter again when its result is reviewed at the next one.
+- Assign the encounter type from the request label — "new patient" requires no professional service from the same specialty and subspecialty in the same group within 3 years; mis-typing moves the code to the wrong family.
+- Credit "decision regarding hospitalization" when admission was never actually weighed, or "SDOH limiting management" from a social-history line that changed nothing in the plan.
+- Write DOCUMENTATION LANGUAGE TO ADD for work the note does not show was done — that turns a gap into retroactive upcoding.
+
+✅ **DO:**
+- Build the tally before naming a code: each MDM element → the exact note sentence that supports it → its level; apply 2-of-3 mechanically and show it; for the time path, sum minutes per listed activity on the date of service, excluding separately reported services, and compare with the current-year threshold (`[VERIFY: current AMA time table]`).
+- Check the data-element counting against the current AMA E/M definitions of Categories 1–3 before relying on the matrix in this file (`[VERIFY: data table against current AMA guideline]`).
+- When the supported level is lower than the level requested, output the lower code and name the missing element — the code itself is assigned by the rendering clinician or certified coder.
 
 ---
 

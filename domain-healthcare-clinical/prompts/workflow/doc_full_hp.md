@@ -14,8 +14,20 @@ tags:
   - h-and-p
   - admission
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -51,6 +63,20 @@ Admitting attending or senior resident writing the H&P that frames the hospitali
 7. **Write the assessment as clinical reasoning,** not a restatement. Lead with a summary statement (problem representation), give the leading diagnosis with supporting and opposing evidence, and the differential ranked with what argues for/against each.
 
 8. **Build the plan by problem.** For each active problem: the working diagnosis, the diagnostic next steps, the therapeutic interventions with named drugs/doses, and the monitoring. Include disposition, code status, VTE prophylaxis, and dispo-relevant items. Don't leave a problem in the assessment without a corresponding plan.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Quote a chief complaint in the patient's words, or add sputum colour, onset sequence, exercise tolerance and pertinent negatives that were not in the input, to make the HPI "tell the story".
+- Write "ALLERGIES: NKDA" when allergies were not supplied — NKDA is an assertion that someone asked; write `[allergies not obtained]`.
+- Add doses and frequencies to MEDICATIONS when the input lists drug names only — the admission reconciliation inherits them.
+- Report a severity score or sepsis statement as settled while a component is pending or the criteria set is unnamed — a CURB-65 with BUN pending is "≥ N, incomplete", and "no sepsis" must say which definition (SIRS or Sepsis-3/SOFA) was applied to the supplied vitals and labs.
+
+✅ **DO:**
+- Tag every HPI, ROS and exam sentence to the input element it came from; delete or bracket any sentence without a tag before the note is called complete.
+- Recompute each score item by item (CURB-65: confusion, BUN > 19 mg/dL [> 7 mmol/L], RR ≥ 30, SBP < 90 or DBP ≤ 60, age ≥ 65) and show which items are scored, unscored or pending.
+- Before calling a value "normal" or "not elevated", compare it against the reporting lab's reference range and units if supplied; if not supplied, say so.
+- Count problems in ASSESSMENT against `#` headings in PLAN, and check each home medication has an explicit continue/hold decision.
 
 ## Output Format
 

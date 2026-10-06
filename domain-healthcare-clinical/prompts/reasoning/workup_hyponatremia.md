@@ -14,8 +14,20 @@ tags:
   - electrolytes
   - critical-care
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -93,6 +105,21 @@ Work up hyponatremia: rule out pseudo- and translocational hyponatremia, classif
    - **MDMA / marathon runner:** acute polydipsia + ADH stimulation → severe acute hyponatremia. Treat with 3% saline if symptomatic.
    - **Postoperative hyponatremia:** common from hypotonic IVF + nausea-driven ADH; use isotonic IVF in postop period.
    - **Hyperglycemia:** correct sodium for glucose, treat hyperglycemia, sodium normalizes.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Label VOLUME STATUS from a single sign or a BUN/Cr ratio; name the exam findings and orthostatic numbers supplied, and write "indeterminate" when they conflict.
+- Read UNa <20 as "extrarenal loss" in a patient taking a thiazide or loop diuretic, or after saline was given — the UNa branch is uninterpretable without the timing of the last dose or infusion.
+- Call SIADH while TSH or cortisol is unmeasured or a diuretic is still on board; an untested axis is "not yet excluded", not "normal".
+- Write a 24-h correction cap without the time-stamped starting Na and the count of ODS risk factors present in the inputs.
+- Leave potassium replacement out of the correction arithmetic — K given raises serum Na and counts toward the cap.
+
+✅ **DO:**
+- Recompute calculated osmolality (2 × Na + glucose/18 + BUN/2.8, in mg/dL units) and the osmolar gap against the measured value; recompute glucose-corrected Na and name the correction factor used.
+- For each IV fluid, show the Adrogué–Madias arithmetic with the patient's own weight, the TBW fraction chosen for sex and age, and the infusate Na.
+- Trace every bolus volume, infusion rate and dDAVP dose to the clinician's order or the local hyponatremia protocol `[VERIFY: current guideline]`.
+- Treat a rising urine output after volume repletion as a trigger to draw the next Na early, and say so in CORRECTION PLAN.
 
 ## Output Format
 

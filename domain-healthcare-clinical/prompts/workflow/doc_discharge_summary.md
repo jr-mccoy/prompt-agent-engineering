@@ -14,8 +14,20 @@ tags:
   - discharge-summary
   - care-transitions
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -52,6 +64,19 @@ Attending or senior resident writing the discharge summary the receiving clinici
 7. **Include patient-facing instructions and warning signs** — activity, diet, wound care, and the specific symptoms that should prompt return.
 
 8. **Don't fabricate course or results.** If something is uncertain or wasn't resolved, say so. The summary must reflect what actually happened.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "PENDING RESULTS: None" while the input still lists a culture, sensitivity, final read or pathology as preliminary — a "None" here is the false completion most likely to be acted on.
+- Give discharge drugs a dose, frequency or "complete through" date from the usual regimen when the input names only the drug; the reconciliation then reads as a prescription nobody wrote.
+- Import presenting values (admission SpO2, WBC, imaging findings) from another note or from the typical presentation when this summary's input does not contain them.
+- Leave allergies out because the template has no allergy line — add one, sourced from the input or written `[allergies not provided — confirm before discharge]`.
+
+✅ **DO:**
+- Do the duration arithmetic: total antibiotic days = inpatient days on therapy + outpatient days, and the "complete through" date is counted from the first dose; the stated course length must agree everywhere it appears (HOSPITAL COURSE, MEDICATIONS, prior progress-note plan).
+- Reconcile the home list against the discharge list one drug at a time — every difference appears under CHANGES with a reason, every unchanged home drug appears as continued, and the count of home drugs accounted for equals the count supplied.
+- Check each follow-up line has who, when and purpose, and each pending item names an owner and the action the result triggers.
 
 ## Output Format
 

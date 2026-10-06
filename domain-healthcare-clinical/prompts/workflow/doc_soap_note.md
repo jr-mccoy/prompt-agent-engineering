@@ -14,8 +14,20 @@ tags:
   - soap-note
   - progress-note
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -47,6 +59,19 @@ Treating clinician rounding and documenting the daily note that drives today's d
 5. **Update the housekeeping:** lines/tubes/drains (and whether any can come out), VTE prophylaxis, dispo trajectory, code status if changed. These prevent the most common omissions.
 
 6. **Keep it current and honest.** Don't reproduce stale exam findings or a fully-negative ROS that wasn't reassessed. Document the day, not the template.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write patient-reported statements ("feels significantly better", "no dyspnea walking to the bathroom") when the input gives no patient report — S is the patient's voice, not an inference from improved vitals.
+- Fill I/O, "devices: peripheral IV only" or a net-balance figure that today's input does not contain.
+- Report Tmax equal to the current temperature unless the 24-hour maximum was supplied.
+- Change an antibiotic course length or stop date from the previous plan without saying it changed and why.
+
+✅ **DO:**
+- Compute hospital day and antibiotic day from the admission and first-dose dates, not by adding one to yesterday's note.
+- Back every "down", "improved" or "resolving" with two dated values (WBC 16.2 → 9.8); with only one value, report it without a trend word.
+- Compare today's plan with yesterday's item by item — each continued, changed or stopped with a reason, none vanishing silently — and keep "no growth at 48 h" listed as pending until the culture is final.
 
 ## Output Format
 

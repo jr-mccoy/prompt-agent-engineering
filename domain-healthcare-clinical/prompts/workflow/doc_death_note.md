@@ -14,8 +14,20 @@ tags:
   - death-note
   - pronouncement
   - end-of-life
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -52,6 +64,19 @@ Clinician performing and documenting the pronouncement.
 7. **Address disposition items:** whether the case is reportable to the medical examiner/coroner (unexpected, unnatural, or statutorily required deaths), whether autopsy was discussed with the family and their decision, and whether the organ/tissue donation organization was notified (often required by regulation regardless of candidacy).
 
 8. **Remain factual and respectful.** No speculation about cause beyond what is known; the note records the pronouncement and process, not a forensic conclusion.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the "[period]" of observation with a customary duration, name pulse sites (carotid, femoral) or add "bilaterally" to the pupil finding when the input gives no such detail — the pronouncement examination is the legal substance of the note.
+- Record a notification time ("attending notified at 14:40"), a chaplain visit or an autopsy conversation that the input does not contain.
+- Default "Medical examiner/coroner: Not reportable" because the death was expected — reportability follows jurisdiction-specific criteria (recent fall or fracture, surgery within a statutory window, injury, custody); check the input for them or write `[confirm against local ME criteria]`.
+- Use the time the nurse called or the time of examination as TIME OF DEATH when the input gives a separate pronouncement time.
+
+✅ **DO:**
+- Reconcile the clock times in order — called ≤ examined ≤ pronounced ≤ notifications — each traced to the input; an out-of-order sequence is flagged to the clinician, not smoothed.
+- Check that DISPOSITION answers all three items (ME/coroner, autopsy, organ/tissue donation agency) with the source of each answer; an absent one reads `[not documented]`.
+- Confirm the code status in CONTEXT matches the input (DNR/comfort care vs full code after failed resuscitation); after a failed resuscitation, reference the code note's time and do not re-narrate the arrest.
 
 ## Output Format
 

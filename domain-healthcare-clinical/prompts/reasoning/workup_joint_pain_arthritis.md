@@ -14,8 +14,20 @@ tags:
   - orthopedics
   - infectious-disease
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -113,6 +125,21 @@ Work up joint pain: classify inflammatory vs mechanical, monoarticular vs oligo/
    - Address comorbidities (cardiovascular risk elevated in RA, SLE, SpA).
    - Physical therapy, joint protection, weight management.
    - For OA: weight loss, exercise, physical therapy, topical NSAIDs preferred over oral, intra-articular steroid for flare, joint replacement for severe.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mark septic arthritis "excluded" because urate or CPP crystals were seen — crystals and infection coexist, so the culture stays "pending" in SEPTIC SCREEN until it resulted.
+- Assign a synovial category (non-inflammatory / inflammatory / septic) without quoting the count and % PMN, or from a scant, clotted or bloody sample without noting the count may be unreliable.
+- Write "seronegative" when RF, anti-CCP or HLA-B27 was never sent — "not tested" is a different finding from "negative".
+- Declare urate-lowering therapy indicated without flares per year, tophi, CKD stage and urolithiasis taken from the inputs.
+- Treat a normal serum urate drawn during a flare as evidence against gout.
+
+✅ **DO:**
+- Check the synovial fluid line by line — cell count, differential, Gram stain, culture, crystal shape and birefringence — and list any test not sent as a gap before ranking.
+- Write a septic-arthritis pretest estimate only after listing which Step 2 risk factors the input shows as present, absent or not asked.
+- Recompute each weight-based antibiotic dose from the patient's actual weight and renal function, and trace it to the local dosing nomogram or label `[VERIFY: current guideline/label]`.
+- Check pregnancy status before methotrexate, leflunomide or later-pregnancy NSAIDs, and adjust colchicine and NSAID choices for age, eGFR and interacting drugs from the medication list.
 
 ## Output Format
 

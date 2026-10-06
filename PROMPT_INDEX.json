@@ -83646,7 +83646,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83671,7 +83671,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83696,7 +83696,7 @@
         "jaundice"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83721,7 +83721,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83746,7 +83746,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83771,7 +83771,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83796,7 +83796,7 @@
         "syncope"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83821,7 +83821,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84447,7 +84447,7 @@
         "clinical-notes"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84472,7 +84472,7 @@
         "quality"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84522,7 +84522,7 @@
         "resuscitation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84548,7 +84548,7 @@
         "systems-based-note"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84573,7 +84573,7 @@
         "end-of-life"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84598,7 +84598,7 @@
         "clinical-notes"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84648,7 +84648,7 @@
         "clinical-notes"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84673,7 +84673,7 @@
         "clinical-notes"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84724,7 +84724,7 @@
         "clinical-notes"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84850,7 +84850,7 @@
         "clinical-notes"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84900,7 +84900,7 @@
         "clinical-notes"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -85936,7 +85936,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured support for selecting and justifying outpatient and inpatient E/M service levels under the 2021/2023 AMA guidelines — medical decision making (MDM) or time-based.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "DS-01",
+        "CM-02",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "coding",
@@ -85945,7 +85951,7 @@
         "revenue-cycle"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
         "domain-healthcare-clinical/prompts/medicine_prior_authorization_letter.md"
@@ -86278,7 +86284,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structure a new cancer case for multidisciplinary tumor board — staging, molecular profile, treatment options with evidence, patient factors, and the decision question for the board.",
-      "techniques": [],
+      "techniques": [
+        "ST-01",
+        "ST-03",
+        "RP-01",
+        "QA-05",
+        "DP-04"
+      ],
       "keywords": [
         "medicine",
         "oncology",
@@ -86287,7 +86299,7 @@
         "case-presentation"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
         "domain-healthcare-clinical/prompts/medicine_goals_of_care_conversation_guide.md",
@@ -86317,7 +86329,7 @@
         "developmental"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_differential_diagnosis_generator",
         "medicine_drug_interaction_checker",
@@ -86363,7 +86375,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured postpartum symptom triage support with red-flag recognition, escalation pathways, and documentation-ready outputs for clinical teams.",
-      "techniques": [],
+      "techniques": [
+        "RP-01",
+        "ST-42",
+        "ST-03",
+        "OC-10",
+        "DP-04"
+      ],
       "keywords": [
         "medicine",
         "obstetrics",
@@ -86372,7 +86390,7 @@
         "patient-safety"
       ],
       "difficulty": "",
-      "updated": "2026-05-05",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_emergency_triage_decision_support.md",
         "domain-healthcare-clinical/prompts/medicine_handoff_communication.md",
@@ -86387,7 +86405,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Builds clear, patient-centered prenatal counseling scripts with risk-sensitive framing, escalation triggers, and chart-ready communication documentation.",
-      "techniques": [],
+      "techniques": [
+        "RP-02",
+        "ST-02",
+        "ST-03",
+        "OC-10",
+        "DP-04"
+      ],
       "keywords": [
         "medicine",
         "obstetrics",
@@ -86396,7 +86420,7 @@
         "shared-decision-making"
       ],
       "difficulty": "",
-      "updated": "2026-05-05",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_prenatal_risk_stratification.md",
         "domain-healthcare-clinical/prompts/medicine_informed_consent_communicator.md",
@@ -86411,7 +86435,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured antepartum risk assessment — identifying maternal, obstetric, and fetal risks, assigning level-of-care, and planning surveillance and intervention points.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "ST-43",
+        "DP-04",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "obstetrics",
@@ -86420,7 +86450,7 @@
         "risk-stratification"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
         "domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md",
@@ -86466,7 +86496,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured drafting of prior authorization requests and denial appeals — medical necessity language, guideline citations, failed-therapy history, and patient-specific justification.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "RT-05",
+        "QA-05",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "prior-authorization",
@@ -86475,7 +86511,7 @@
         "documentation"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_em_coding_level_justification.md",
         "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
@@ -86490,7 +86526,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Build a payer-ready prior authorization packet by mapping captured clinical data to each payer decision criterion, separating objective facts from recommendation language, and surfacing documentation gaps.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "RT-05",
+        "QA-05",
+        "QA-08"
+      ],
       "keywords": [
         "medicine",
         "prior-authorization",
@@ -86498,7 +86540,7 @@
         "clinical-documentation"
       ],
       "difficulty": "",
-      "updated": "2026-05-05",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_prior_authorization_letter.md",
         "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
@@ -86558,7 +86600,7 @@
         "mental-status-exam"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_clinical_decision_support",
         "medicine_clinical_history_elicitation",
@@ -86694,7 +86736,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured assessment of substance use disorders with DSM-5-TR criteria, withdrawal risk stratification, MOUD/MAUD eligibility, harm reduction, and treatment planning — non-stigmatizing, evidence-based.",
-      "techniques": [],
+      "techniques": [
+        "RP-01",
+        "ST-02",
+        "ST-03",
+        "DP-04",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "addiction-medicine",
@@ -86703,7 +86751,7 @@
         "harm-reduction"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_psychiatric_assessment_support.md",
         "domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md",
@@ -86733,7 +86781,7 @@
         "peri-operative"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-04",
+      "updated": "2026-10-06",
       "related_prompts": [
         "medicine_clinical_decision_support",
         "medicine_drug_interaction_checker",
