@@ -20,7 +20,7 @@ tags:
   - geometric
   - line-art
   - print-ready
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - adult_coloring_page_intricate.md
@@ -251,6 +251,20 @@ Negative: `"shading, grayscale, gray, color, gradient, solid black, fill, asymme
 
 ### Problem: It rendered a photo of a coloring book
 **Add:** `"This IS the page, flat and straight-on. No book, no desk, no shadow, no 3D."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass "EXACT N-fold" by counting the outer petal ring alone — models often draw the requested N on the rim and drift to another count (7, 10, 12) in the inner rings or the center motif.
+- Treat a design as symmetric because it looks balanced at full-page view — mirrored-but-not-rotated wedges, one wedge with an extra dot or loop, or unevenly spaced motifs within a ring all read as "symmetric" at a glance.
+- Accept "perfectly centered" because the mandala sits mid-page left to right — on a portrait letter page the vertical position is where centering usually slips.
+
+✅ **DO:**
+- Count the motif repeats ring by ring from the center outward and write each count down; every ring must equal N or an exact multiple of N.
+- Duplicate the layer, rotate the copy 360/N degrees about the design center (45° for 8-fold, 30° for 12-fold), and set the blend mode to Difference — any line that does not cancel is a broken wedge.
+- Measure the white space from the circle's edge to all four page edges in pixels; left must equal right and top must equal bottom.
 
 ---
 

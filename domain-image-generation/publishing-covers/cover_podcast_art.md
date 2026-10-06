@@ -17,7 +17,7 @@ tags:
   - series-consistency
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/publishing-covers/cover_album_art.md
@@ -152,6 +152,21 @@ CONSTRAINTS:
 2. "Series drift — episode 4's title bar shifted. Restore the locked template position/color from episode 1."
 3. "Too busy as a tile — strip secondary detail, keep the one central device."
 4. "Tagline is hurting legibility at small size — remove it or shrink the device to make room."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Quote the 1400–3000 px, RGB, and JPEG/PNG figures to the user as settled — Apple, Spotify, and other directories each publish their own artwork rules, including file-size caps and content restrictions, and revise them [VERIFY: current Apple Podcasts and Spotify show artwork requirements].
+- Pass the series template because episode 1 looks right — over several episodes the title bar, color band, or device position drifts a few pixels at a time, which shows when covers sit together in the episode list.
+- Generate a guest's portrait for the variable zone from a name — the model produces a plausible stranger or a near-likeness, and either one misrepresents the guest; use a photo the guest supplied or approved.
+- Read "legible at ~55 px" as "distinct at ~55 px" — in a category full of bold red-and-black tiles, a new show can be readable and still look like an established one.
+
+✅ **DO:**
+- Downscale to 55×55 px with a standard resampling filter and read the title from that file, then repeat at 300×300 px and beside the category's top shows.
+- Overlay each new episode cover on episode 1 in Difference blend mode; any shift in the locked title bar or band shows as a bright edge.
+- Check the show title on the cover against the feed's show title exactly, including case and punctuation.
 
 ---
 

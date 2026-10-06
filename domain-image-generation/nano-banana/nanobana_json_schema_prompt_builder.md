@@ -16,7 +16,7 @@ tags:
   - structured-prompting
   - reusable
   - google
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/NANO_BANANA_GUIDE.md
   - domain-image-generation/gpt-image-2/gptimage2_meta_prompt_builder.md
@@ -258,6 +258,22 @@ Store schemas in your project repo. Track changes to prompt structure separately
 2. "Add a new variable for [field] — it needs to change between generations."
 3. "The failure_conditions don't catch [specific drift] — add a condition for it."
 4. "The reference_allocation is for Nano Banana 2 but I'm using Pro — update the slot layout."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat "valid JSON" as proof the model uses every field — the JSON is read as prompt text, and a field it does not act on is dropped silently; `_meta`, `version` and `author` never reach the image as instructions.
+- Ship a variable that no field references — in the Example, `ACCENT_COLOR` is documented in `_meta.variables` but no `{{ACCENT_COLOR}}` appears in the body, so the batch loop substitutes nothing and every "variation" gets the same colour.
+- Pass "Nesting depth is 3 levels or fewer" by counting top-level sections — `reference_allocation.slots.obj_1.take` and `_meta.variables.ENVIRONMENT.examples` sit at depth 4.
+- Assume `reference_allocation` assigns images — slot labels in the text do nothing unless the request passes the images in that order and number.
+- Tick the Must Not on API-level parameters while `constraints.quality` and both `model` fields carry them; rule 4 of the meta-prompt asks for `quality`, so state which rule wins instead of passing both.
+
+✅ **DO:**
+- After substitution, `json.loads` each filled prompt and search it for leftover `{{`; a value containing a double quote breaks the JSON when the `str.replace` loop inserts it raw, so escape values with `json.dumps(value)[1:-1]`.
+- Cross-check variables both ways: every `{{NAME}}` in the body has a `_meta.variables` entry using rule 2's keys (`default_value`, `example_values` — the Example uses `default`/`examples`), and every entry is used at least once.
+- Prove each field is live with a one-field A/B: change only that field, regenerate with the same references, and keep the field only if the image changes as expected.
 
 ---
 

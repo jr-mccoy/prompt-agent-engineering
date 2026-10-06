@@ -14,7 +14,7 @@ tags:
   - multi-reference
   - scene-generation
   - google
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/NANO_BANANA_GUIDE.md
   - domain-image-generation/gpt-image-2/gptimage2_character_consistency_anchor.md
@@ -190,6 +190,21 @@ When generating multiple scenes with the same character:
 2. "The face shape has narrowed compared to the references — restore facial proportions to match Character Image 2."
 3. "The style has drifted toward photorealism — restore to the canonical [STYLE] from the reference pack."
 4. "The distinctive [mark/scar/feature] is missing — it must be visible in every scene."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "passed in CHARACTER slots" because the prompt text labels the images C1–C4 — labels assign nothing; per the allocation table in NANO_BANANA_GUIDE.md §5, character roles are slots 11–14 on Nano Banana 2 and 7–11 on Pro, so check where the request actually places each image.
+- Load a [SCENE REF] that contains people, or a Style 2 rendering exemplar showing a different character, without an IGNORE for those figures — their faces and outfits bleed into [CHARACTER NAME].
+- Use a Char 5 expression reference whose face is not [CHARACTER NAME] (a stock "surprised" face) — it competes with C1 for the face role and wins on the features it shows.
+- Judge "Output face matches references" on a thumbnail, or against the previous scene's output — drift that compounds frame to frame looks continuous when each scene is compared only with its neighbour.
+
+✅ **DO:**
+- Score the output against the CHARACTER BIBLE line by line — hair colour and parting, eye colour, each distinctive mark and which side it sits on, outfit garment by garment — and list pass/fail per line; one fail is identity drift however close the overall likeness.
+- Compare at matched scale with C1 and C2 from the original pack: crop the output face to the reference's size before judging.
+- Count the images in the request against the model's character-slot limit and confirm no two claim the same role (two front faces, or a full-body that also carries an outfit change).
 
 ---
 

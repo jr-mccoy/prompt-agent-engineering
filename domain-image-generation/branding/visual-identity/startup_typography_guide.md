@@ -15,7 +15,7 @@ tags:
   - visual-identity
   - branding
   - design-system
-updated: "2025-12-15"
+updated: "2026-10-06"
 ---
 
 # Startup Typography Guide
@@ -170,7 +170,7 @@ Ask these questions one at a time:
 ✓ Use weights to create contrast, not font changes
 ✓ Allow adequate white space around text blocks
 ✓ Test readability at actual usage sizes
-✓ Use proper typographic quotes ("") not straight quotes ("")
+✓ Use proper typographic quotes (“ ” and ‘ ’) not straight quotes (" and ')
 
 ### Don'ts
 ✗ Mix more than 2-3 typefaces
@@ -266,6 +266,20 @@ module.exports = {
 }
 ```
 ```
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the Available Weights table with 300–800 by default — some suggested families ship a single weight (Archivo Black and Bebas Neue on Google Fonts), and a missing weight renders as browser faux-bold.
+- Fill Licensing and Character Set from memory — "Open source" or "Cyrillic: Yes" written without checking the distribution page is a guessed fact, and web, app-embedding and logo/modification rights are licensed separately.
+- Recommend a family that breaks the user's own Technical constraints — Satoshi, for example, is distributed through Fontshare, so it fails "must be Google Fonts".
+- Keep the template's sample heading sizes (3.052rem, 2.441rem … the 1.250 ratio) under a different chosen Scale Ratio.
+- Let the export pipeline straighten the typographic quotes the Do's list asks for — CMS fields, Markdown converters and some web-font subsets replace “ ” with " on the way out; check the rendered page, not the source.
+
+✅ **DO:**
+- Open each family's distribution page and record actual weights, italics, script coverage and licence name (e.g., SIL OFL 1.1) with the URL; mark anything not confirmed there [VERIFY].
+- Recompute every size row as base × ratio^n and px = rem × 16 (at 1.333, H1 at n = 5 is 4.209rem / 67.34px); a row that does not reproduce from the stated ratio is wrong.
+- Before handing over the self-hosted @font-face block, confirm the licence permits self-hosting [VERIFY] — Adobe Fonts, for instance, are normally served through a web-project kit rather than as files you host.
 
 ## Expected Output
 

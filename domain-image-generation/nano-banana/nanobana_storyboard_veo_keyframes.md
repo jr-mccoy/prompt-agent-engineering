@@ -17,7 +17,7 @@ tags:
   - keyframes
   - video
   - google
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/NANO_BANANA_GUIDE.md
   - domain-image-generation/VIDEO_GENERATION_GUIDE.md
@@ -182,6 +182,21 @@ CONSTRAINTS:
 2. "Character's hair color shifted between panels 2 and 4 — restore to [exact color] matching panel 1."
 3. "The color grade is inconsistent — panels 5-6 are warmer than 1-4. Normalize to the grade in panel 1."
 4. "Panel 6 (hero frame) is cropped too tight — the camera needs room to pull back in the video segment."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass "same character" on face and hair while screen direction flips — a subject walking left-to-right in panel 2 and right-to-left in panel 3 of one action crosses the 180° line, and Veo will animate a reversal.
+- Overlook props and wardrobe that change with no beat to motivate it: the cup changes hands, the jacket goes from open to zipped, the watch moves wrists, the bag disappears.
+- Call start and end frames ready because the poses differ while the background layout, key-light side or time of day also shifted — Veo interpolates all of it, so the room morphs mid-shot.
+- Crop cells straight out of the grid without checking their shape: a 3×2 grid on a 2048×2048 canvas gives cells of about 683×1024 px — portrait 2:3, not a 16:9 video frame.
+
+✅ **DO:**
+- Build a continuity table with one row per panel — facing and travel direction, props and which hand holds them, wardrobe state, key-light side, time-of-day cues — and treat any change between adjacent rows not explained by a panel beat as a break to fix before the production pass.
+- Choose canvas and grid so each cell matches the video's aspect (a 2×2 grid at 3840×2160 yields 1920×1080 16:9 cells) and crop at exact cell coordinates so no gutter pixels enter a keyframe.
+- Check each crop's pixel size against Veo's current input requirements [VERIFY: current Veo input spec] and regenerate a key panel as a single full-frame image when the crop falls short.
 
 ---
 

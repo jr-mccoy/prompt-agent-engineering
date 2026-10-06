@@ -17,7 +17,7 @@ tags:
   - thumbnail
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/publishing-covers/cover_fiction_book.md
@@ -148,6 +148,21 @@ CONSTRAINTS:
 2. "Cover blends into the white store background — add a darker defined edge or frame."
 3. "Too busy at small size — strip secondary detail; keep one bold focal element."
 4. "Push contrast: the [HEX] on [HEX] combination is too low-contrast to pop in a grid."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Present the 2560 × 1600, 1000 px minimum, and 50 MB figures above as current — KDP has revised its ebook cover requirements before, and a rejection arrives only after the cover is "done" [VERIFY: current KDP ebook cover guidelines].
+- Resize the 1024×1536 render straight to 1600×2560: the source is 1.5:1 and the target 1.6:1, so a plain resize stretches the type about 6.7% vertically and a crop trims about 6% of the width — re-check the 8% safe inset after that conversion, not before it.
+- Treat "~150 px tall" as the only store size; the same cover shows in search results, carousels, and also-bought rows at different sizes on phone, e-reader, and desktop [VERIFY: current Kindle store display sizes].
+- Pass cover text that differs from the KDP details-page entry — a title, subtitle, or author name that doesn't match the metadata exactly can be flagged at review [VERIFY: KDP cover/metadata matching rules].
+
+✅ **DO:**
+- Downscale the final 1600×2560 file to 94×150 px, place it in a grid beside the top-ranked covers in the category, and read the title from there.
+- Copy title, subtitle, author, and series name from the KDP details form and compare them with the cover character by character, case included.
+- Open the final file's properties and confirm pixel dimensions, RGB color mode, and format against the verified spec before upload.
 
 ---
 

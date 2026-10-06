@@ -23,7 +23,7 @@ tags:
   - halloween
   - line-art
   - print-ready
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - themed_coloring_set.md
@@ -263,6 +263,21 @@ Negative: `"shading, grayscale, gray, color, gradient, solid black, fill, realis
 
 ### Problem: Shading/fills appear
 **Add:** `"Every area stays pure white. NO gray, NO shading, NO solid black fill."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass "Recognizable holiday/seasonal motifs for [holiday]" because the page looks festive — check that each motif belongs to the holiday named; models blend traditions (Christmas stockings on a Hanukkah page, Halloween bats among Easter chicks) or borrow symbols from a neighboring culture.
+- Trust a symbol with a fixed form or count without checking it: a Hanukkah menorah (hanukkiah) has nine branches, not the Temple menorah's seven, and a Lunar New Year zodiac animal must be the one for that specific year.
+- Stop at "spelled exactly" for the greeting — also look for words the input never contained, such as an added year, an unrequested "Happy", or a second greeting on a banner.
+- Clear "no trademarked characters" just because no name appears — a reindeer with a glowing red nose or a snowman in a specific film's outfit can still read as a licensed character.
+
+✅ **DO:**
+- For any holiday outside the template table, take the motif list from a source within that tradition and check each drawn symbol against it, not against a general sense of the holiday's mood.
+- Read the hollow greeting back letter by letter against the input string, including apostrophes (Valentine's) and capitals, and confirm every letter's outline is closed so it can be colored.
+- Zoom to 100% on decorative fills (snow speckle, ornament patterns, pumpkin ribs, candy stripes) — tiny solid dots and seeds are where forbidden black fills hide.
 
 ---
 

@@ -15,7 +15,7 @@ tags:
   - visual-identity
   - branding
   - design-system
-updated: "2025-12-15"
+updated: "2026-10-06"
 ---
 
 # Startup Color Palette Generator
@@ -218,7 +218,7 @@ Ask these questions one at a time:
 |---------|-------|---------|
 | Primary button | Primary 500 | Hover: Primary 700 |
 | Secondary button | Gray 100 | Hover: Gray 200 |
-| Links | Primary 600 | Hover: Primary 800 |
+| Links | Primary 700 | Hover: Primary 900 |
 | Navigation background | White | Active: Gray 50 |
 | Footer | Gray 900 | Text: White |
 
@@ -238,6 +238,20 @@ Ask these questions one at a time:
 - 30% Secondary: [Primary brand color]
 - 10% Accent: [Accent color for emphasis]
 ```
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the WCAG table's "X.XX:1" cells with plausible ratios or tick ✓ from how the swatches look — a ratio not computed from the two hex values is invented.
+- Round up to a pass (4.47:1 fails AA body text at 4.5:1), or apply one threshold to every row — large text and UI component boundaries use 3:1, AAA body text 7:1.
+- Reference a token the scale never defines: every Application Guide entry (Primary 500/700/900, Gray 50/900) must have a row in its variations table, or its hex value gets made up in the CSS.
+- Present CMYK and "Nearest Pantone match" as derived values — a formula RGB→CMYK conversion ignores the print profile, and a Pantone number recalled from memory is a guess.
+- Write "performs well" under Color Blindness Considerations without having simulated the palette.
+
+✅ **DO:**
+- Compute every ratio from the hex values with the WCAG 2.x relative-luminance formula (linearise each sRGB channel; L = 0.2126R + 0.7152G + 0.0722B; ratio = (L1 + 0.05)/(L2 + 0.05)) and recompute at least two rows independently before marking ✓/✗.
+- Confirm each tint scale is monotonic — relative luminance falls strictly from 50 to 900 for primary, secondary and gray — or the light/dark labels are false.
+- Run success, warning, error and info through deuteranopia and protanopia simulation; if success and error collapse, require an icon or label alongside colour, and mark Pantone/CMYK values [VERIFY: printer's profile / Pantone guide].
 
 ## Expected Output
 

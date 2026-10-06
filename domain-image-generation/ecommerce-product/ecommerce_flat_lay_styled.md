@@ -18,7 +18,7 @@ tags:
   - props
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/ecommerce-product/README.md
   - domain-image-generation/ecommerce-product/ecommerce_lifestyle_in_context.md
@@ -140,6 +140,21 @@ CONSTRAINTS:
 3. "The color story is broken by [off-palette item] — swap it for something in the [COLOR STORY] palette."
 4. "Move the arrangement so the [FRAME RESERVE] corner is clean for a logo overlay."
 5. "Switch from organic to knolling — align everything to right angles with even spacing."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assume the props read as styling — in a top-down layout, and especially in knolling, every item looks like a "what's in the box" shot, so a buyer can reasonably expect the spoon and napkin to arrive.
+- Trust relative sizes because the arrangement looks balanced — the model resizes product and props for composition, so coffee beans, a spoon, or a phone placed for context can make the product read larger or smaller than it is.
+- Pass "True 90° overhead" on impression; a lid, tray, or book whose opposite edges converge means the camera is tilted.
+- Overlook text the model put on props — a notebook, magazine, or packet often carries a made-up brand name or pseudo-words that look like real branding at listing size.
+
+✅ **DO:**
+- Draw guide lines along two opposite edges of each rectangular item; if they are not parallel, regenerate.
+- Compare the product's pixel size with a prop of known real size (a teaspoon, a coffee bean) and check the ratio against the product's real dimensions.
+- List every prop and mark it "ships with product" or "styling only"; remove or replace anything a buyer could mistake for an included item.
 
 ---
 

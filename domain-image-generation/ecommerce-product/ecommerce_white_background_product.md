@@ -18,7 +18,7 @@ tags:
   - catalog
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/ecommerce-product/README.md
   - domain-image-generation/ecommerce-product/ecommerce_variant_grid.md
@@ -137,6 +137,22 @@ CONSTRAINTS:
 3. "The product fills only ~65% of the frame — tighten so it fills 80–85% with even margins."
 4. "There's a soft highlight blowing out on the [surface] — reduce the key light intensity so detail holds."
 5. "The on-pack text is slightly warped on the curved surface — restore it flat and legible."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "Background is true #FFFFFF" by eye — 250,250,250 and a faint warm cast around the contact shadow both look white on screen and both fail an automated purity check.
+- Treat this file's fill percentage, shadow allowance, and ≥1600px figure as the marketplace's current rule; main-image requirements differ by marketplace and category and change over time [VERIFY: current marketplace image requirements].
+- Pass the render as the product because it matches `[PRODUCT]` and `[PRODUCT COLOR]` — a text-only render is a plausible bottle, not this SKU's closure, seams, or proportions, and a main image that differs from what ships misrepresents the listing.
+- Keep on-pack marks the model added — a recycling symbol, a CE/FCC/UL-style badge, or a "BPA FREE" line asserts a certification or claim the real product may not hold.
+- Upscale a 1024px render past 1600px and call zoom compliance done; the added pixels are interpolated and the label smears when a buyer zooms in.
+
+✅ **DO:**
+- Sample pixel values at all four corners, along each edge, and just outside the contact shadow; every background sample must read 255,255,255, and a threshold view at 254 exposes any off-white halo.
+- Eyedropper an evenly lit, neutral area of the product and compare it with a calibrated photo or physical swatch of the real SKU, not only with the `[PRODUCT COLOR]` hex.
+- Overlay the render on a reference photo of the actual unit and check silhouette, closure, seam lines, and label placement before it goes live.
 
 ---
 

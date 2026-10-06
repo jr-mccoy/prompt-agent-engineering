@@ -20,7 +20,7 @@ tags:
   - kdp
   - self-publishing
   - marketing
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - coloring_book_kdp_interior.md
@@ -249,6 +249,22 @@ Negative: `"3d book, book mockup, shelf, hand holding, page curl, spine, perspec
 
 ### Problem: Text runs off the edge
 **Add:** `"Keep all text at least 0.25 inch inside every edge (safe zone)."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Check "readable at thumbnail size" on the full-size file — thin display serifs, outline-only lettering and text over busy pattern disappear at about 200 px wide.
+- Tick the subtitle as "correctly spelled" when its claim is wrong — "50 Relaxing Mandalas" must match the interior's real design count, and an age range must match the interior's line weight.
+- Treat the 8.75 x 11.25 in front as an upload-ready KDP cover — paperbacks take a single wrap (back + spine + front) sized by page count and paper, and ebooks use a different pixel spec [VERIFY: current KDP spec].
+- Tick "converted to CMYK" because the colour mode was switched — saturated RGB greens, blues and pinks fall outside the print gamut and print dull.
+- Put licensed characters, brand logos, or a font without commercial-print rights on a cover sold on Amazon; being on-theme is not permission.
+
+✅ **DO:**
+- Downscale the finished cover to 200 px wide and read the title, subtitle and author line from that copy; any word you hesitate on fails.
+- Measure the safe zone in pixels on the 2625 x 3375 canvas: text sits at least 113 px from every canvas edge (37.5 px bleed + 75 px safe margin) — re-measure after any upscale from the model's native size.
+- Soft-proof against the printer's CMYK profile and compare title-to-background contrast before and after; replace hues that collapse.
 
 ---
 

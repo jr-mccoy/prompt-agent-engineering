@@ -15,7 +15,7 @@ tags:
   - visual-identity
   - design-system
   - branding
-updated: "2025-12-15"
+updated: "2026-10-06"
 ---
 
 # Startup Illustration Style Guide
@@ -242,6 +242,20 @@ Before publishing any illustration:
 - File formats: [SVG, PNG, etc.]
 - Folder structure: [Organization system]
 ```
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the Style Attributes Scale and the Do's/Don'ts with lines a reviewer cannot test ("keep it friendly", "stay on brand") — they read like rules but constrain nothing.
+- Write "Stroke weight: consistent" or tick "Line weights are consistent" with no number — without a px value at a stated artboard size, the Quality Checklist line cannot fail.
+- Fill the Diversity Standards skin-tone palette with brand colours or a two- or three-step range; a palette that cannot draw the people it claims to represent passes the checklist only on paper.
+- Codify an "admired" reference so closely (same proportions, same signature colour technique) that the guide describes another company's illustration system.
+- Claim small-size Adaptation for Social Media without stating the smallest size it was judged at.
+
+✅ **DO:**
+- Give every Quality Checklist line a measurable anchor elsewhere in the guide — a stroke width in px at a stated artboard size, a hex list, a head-to-body ratio, a minimum display size — and delete any line that has none.
+- Test each Do/Don't against two items from Example Illustrations Needed: if both could satisfy or violate it equally, the rule is too vague to keep.
+- For each admired reference, record one trait this guide deliberately does differently, so differentiation is written down rather than assumed.
 
 ## Expected Output
 

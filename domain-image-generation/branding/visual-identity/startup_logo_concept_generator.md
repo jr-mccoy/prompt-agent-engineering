@@ -15,7 +15,7 @@ tags:
   - visual-identity
   - branding
   - design
-updated: "2025-12-15"
+updated: "2026-10-06"
 ---
 
 # Startup Logo Concept Generator
@@ -229,6 +229,20 @@ For each concept, provide:
 See companion prompt: [startup_logo_image_prompt.md]
 These concepts can be translated into image generation prompts for initial exploration.
 ```
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pad the 8–12 count with concepts that share one construction and differ only in palette or category label — a colour swap is a variant, not a concept.
+- Score "Differentiation: 4/5" without naming the competitor marks it was compared against; with no comparison set, the number is invented.
+- Claim a Hidden Meaning or negative-space trick that the shapes in the Visual Description do not actually produce.
+- Answer "Works at small sizes: Yes" or describe Favicon potential for a mark built on fine detail, thin strokes, or a long name.
+- Let a concept drift toward one of the logos the user said they admire, or build a wordmark's Distinctive Element by altering a commercial typeface whose licence may forbid modification or logo use.
+
+✅ **DO:**
+- For each pair of concepts, write the one structural difference (category, primary form, construction method); any pair without one is merged.
+- Describe each concept as it would render at 16×16 px in one colour; if the distinctive element is lost, set Scalability to "Needs versions".
+- Close every Risks block with "Trademark clearance not performed — [VERIFY: knockout search in USPTO/EUIPO for the relevant classes, plus a reverse image search, before adoption]".
 
 ## Expected Output
 

@@ -22,7 +22,7 @@ tags:
   - style-consistency
   - line-art
   - print-ready
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - coloring_book_kdp_interior.md
@@ -261,6 +261,21 @@ Negative: `"shading, grayscale, gray, color, gradient, solid black, fill, realis
 
 ### Problem: Background scenery creeps in inconsistently
 **Add:** `"Use the locked framing on every page: [your framing]. No extra background."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Run the per-page FINAL VALIDATION CHECK and call the set done — every page can pass alone while page 1 uses 3 pt lines and page 9 uses 2 pt, or early pages have 8 regions and later ones 25.
+- Judge "reads as one cohesive collection" by scrolling through full-size pages one at a time; drift in line weight, subject size, and border style only shows when pages sit side by side.
+- Assume the PAGE slots were honored — models merge two similar subjects (hen with chicks becomes a duck), repeat a subject, or swap in an on-theme subject that was never listed.
+- Skim the later pages of a long run: after several clean pages the eye stops catching the one page where a gray ground shadow or a solid black eye fill crept in.
+
+✅ **DO:**
+- Measure stroke width in pixels at the same feature (the outer silhouette) on every page and tabulate it; reject any page outside a tolerance set before generating (e.g. ±2 px of the locked weight).
+- Lay all pages out as one contact sheet at equal scale and compare subject size within the margins, border, and ground-line treatment across the row.
+- Check PAGE n against SUBJECT LIST entry n, in writing, before naming or ordering the files.
 
 ---
 

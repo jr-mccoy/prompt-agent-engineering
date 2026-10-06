@@ -17,7 +17,7 @@ tags:
   - typography
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/publishing-covers/cover_fiction_book.md
@@ -145,6 +145,21 @@ CONSTRAINTS:
 2. "Cover feels generic — commit harder to [TONE] via [type choice / single accent color]."
 3. "Too busy — strip the motif and let the typography carry the cover on a solid [HEX] field."
 4. "Thumbnail test: title doesn't survive at 200×300 px — increase weight and size."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assume the rendered subtitle is the one supplied — long multi-line subtitles lose small words ("of", "the", "and"), break mid-phrase, or get paraphrased into a stronger promise ("Double Your Revenue" for "Grow Your Revenue").
+- Pass a supplied `[SUBTITLE]` that promises more than the book delivers — "The Proven 30-Day System" on a collection of essays misleads buyers even when it is spelled perfectly.
+- Let `[MOTIF]` make claims the text does not: a rising-arrow chart implies financial results, a stethoscope implies clinical authority, a crest implies institutional affiliation.
+- Treat a `[CREDENTIAL]` as verified because the user supplied it — "Bestselling Author" or "Award-Winning" needs a specific list or award the author can document before it goes on the cover.
+
+✅ **DO:**
+- Count the words in the rendered subtitle and compare them with the input word for word, then check line breaks keep phrases intact.
+- Hold the subtitle against the table of contents or manuscript summary and confirm the book makes each claim it states.
+- Measure the cap height of title, subtitle, author, and credential in pixels and confirm each is smaller than the line above it.
 
 ---
 

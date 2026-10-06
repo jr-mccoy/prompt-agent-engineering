@@ -8,9 +8,9 @@
 
 **Total Indexed Artifacts:** 6165
 
-**Artifacts with Frontmatter:** 5283
+**Artifacts with Frontmatter:** 5284
 
-**Artifacts without Frontmatter:** 882
+**Artifacts without Frontmatter:** 881
 
 ---
 
@@ -3611,7 +3611,7 @@
 | [Coloring Book KDP Interior Page](domain-image-generation/coloring-book/coloring_book_kdp_interior.md) | image-generation/coloring-book | ST-01, ST-02, ST-03, SV-11, SV-13 | coloring-book, image-generation, kdp, self-publishing, print-on-demand | Generate a KDP-ready coloring book interior page with correct trim, bleed, and gutter margins, singl... |
 | [Educational Coloring Page (Letter / Number / Fact ](domain-image-generation/coloring-book/educational_coloring_page.md) | image-generation/coloring-book | ST-01, ST-02, ST-03, SV-05, SV-11 | coloring-book, image-generation, educational, early-childhood, worksheet | Generate a coloring page that teaches while it colors — a big colorable letter, number, shape, sight... |
 | [Holiday / Seasonal Coloring Page (Template-Driven)](domain-image-generation/coloring-book/holiday_seasonal_coloring_page.md) | image-generation/coloring-book | ST-01, ST-02, ST-03, SV-11, SV-12 | coloring-book, image-generation, holiday, seasonal, christmas | Template-driven generator for holiday and seasonal coloring pages (Christmas, Halloween, Easter, Val... |
-| [Image to Children's Coloring Book Page](domain-image-generation/coloring-book/image_to_coloring_book_page.md) | image-generation/coloring-book | — | book, coloring, image, model, notes | ``` TASK: Transform the uploaded image into a CHILDREN'S COLORING BOOK PAGE. |
+| [Image to Children's Coloring Book Page](domain-image-generation/coloring-book/image_to_coloring_book_page.md) | image-generation/coloring-book | SV-11, SV-13, SV-14, SV-15, SV-16 | coloring-book, image-generation, kids-coloring, line-art, print-ready | Convert an uploaded image (photo, illustration, artwork) into a printable children's coloring book p... |
 | [Kids Coloring Page - Simple Bold Outlines](domain-image-generation/coloring-book/kids_coloring_page_simple.md) | image-generation/coloring-book | ST-01, ST-02, ST-03, SV-11, SV-13 | coloring-book, image-generation, kids-coloring, toddler, bold-outlines | Generate a simple, bold, thick-outline coloring page for young children (ages 2-6) with large open a... |
 | [Mandala Pattern Coloring Page (Radial Symmetry)](domain-image-generation/coloring-book/mandala_pattern_page.md) | image-generation/coloring-book | ST-01, ST-02, ST-03, SV-11, SV-13 | coloring-book, image-generation, mandala, radial-symmetry, geometric | Generate a symmetric mandala coloring page with controllable radial symmetry (4/6/8/12/16-fold) and ... |
 | [Themed Coloring Set / Series (Consistent Style)](domain-image-generation/coloring-book/themed_coloring_set.md) | image-generation/coloring-book | ST-01, ST-02, ST-03, SV-11, SV-12 | coloring-book, image-generation, themed-set, series, style-consistency | Template-driven generator for a SET of coloring pages on a theme (animals, vehicles, holidays, ocean... |
@@ -6517,7 +6517,7 @@
 
 ---
 
-## Prompts Without Frontmatter (882)
+## Prompts Without Frontmatter (881)
 
 These prompts need frontmatter metadata added:
 
@@ -7393,7 +7393,6 @@ These prompts need frontmatter metadata added:
 - `domain-image-generation/IMAGE_GENERATION_GUIDE.md` - Image Generation Prompt Guide
 - `domain-image-generation/IMAGE_PROMPTING_GUIDE.md` - Comprehensive Image Prompting Guide
 - `domain-image-generation/VIDEO_GENERATION_GUIDE.md` - Video Generation Prompt Guide
-- `domain-image-generation/coloring-book/image_to_coloring_book_page.md` - Image to Children's Coloring Book Page
 - `domain-product-management/templates/prd_template.md` - Product Requirements Document (PRD) Template
 - `domain-prompt-engineering/evaluation/prompt_lifecycle_assessment.md` - Prompt Lifecycle Assessment
 - `domain-prompt-engineering/evaluation/repository_review_reflection.md` - Repository Review & Reflection Prompt

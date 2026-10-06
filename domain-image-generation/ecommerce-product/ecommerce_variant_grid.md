@@ -20,7 +20,7 @@ tags:
   - swatches
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/ecommerce-product/README.md
   - domain-image-generation/ecommerce-product/ecommerce_white_background_product.md
@@ -157,6 +157,21 @@ CONSTRAINTS:
 3. "The product appears slightly larger in cell 5 — equalize scale across all cells."
 4. "The lighting is harder in the right column — normalize key direction and intensity across the whole grid."
 5. "Remove the variant name text that appeared in the gutters — the grid should have no labels."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assume cell order follows `[VARIANT LIST]` — the model can swap two close colorways (Midnight and Forest at low saturation), so the cell later labeled "Midnight" in the selector shows the Forest product.
+- Pass "All listed variants present" by counting filled cells — when the layout has more cells than variants (3×2 for five colors), the model fills the spare cell with an invented colorway or a near-duplicate shade.
+- Treat matching the list's hex as matching the product — a brand-sheet hex often differs from the dyed fabric or anodized finish the buyer receives, so the grid can be correct to the input and wrong to the SKU.
+- Apply "same scale in every cell" to a size grid without thought — S, M, and L then look identical, or the model exaggerates the steps; size differences must be proportional to the real dimensions.
+
+✅ **DO:**
+- Eyedropper each cell's product at the same evenly lit spot, write the value beside the cell's position, and map every cell to a variant name in writing before captions or selector labels are attached.
+- Compare each variant's sampled color with a calibrated photo or physical swatch of that real SKU, not only with the list.
+- Confirm the cell count equals the variant count and each variant appears exactly once.
 
 ---
 

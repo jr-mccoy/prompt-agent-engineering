@@ -17,7 +17,7 @@ tags:
   - e-commerce
   - composite
   - google
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/NANO_BANANA_GUIDE.md
   - domain-image-generation/gpt-image-2/gptimage2_product_hero_shot.md
@@ -236,6 +236,22 @@ CONSTRAINTS:
 3. "The material finish appears glossy in the side view but matte in the front — normalize to [correct finish]."
 4. "Panels 2 and 6 show nearly the same angle — replace panel 6 with a [bottom/detail/back] view."
 5. "The product appears larger in panel 4 than in panel 1 — equalize scale across all panels."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass "the same object in every panel" on matching colour and finish while port count, button positions or seam lines differ between panels.
+- Accept a panel that no reference supports — the default prompt supplies O1–O5 (front, back, three-quarter, top, detail) yet the ANGLES list asks for a 90° side profile, so that panel is invented geometry; note too that the allocation table's Obj 3 is the left side while the prompt's O3 is the three-quarter view.
+- Accept plausible-looking back-panel regulatory marks, serial labels or port icons — the model draws compliance-style symbols it cannot read, and a fabricated mark on an e-commerce listing is worse than a plain panel.
+- Count the 512px screening pass as a logo check — at that size a garbled logo and a correct one look the same.
+- Miss the Obj 9 scale object (hand, coin, phone) leaking into the composite as an extra prop.
+
+✅ **DO:**
+- For each panel, name the reference image that supplies its geometry; a panel with no source is removed or given a dedicated reference before production.
+- Check handedness against O1–O4: a mirrored panel keeps every feature but on the wrong side, and a reversed logo is the quickest tell.
+- Count ports, buttons, LEDs and screws per panel against the reference showing that face, and re-check logo spelling only on the production-resolution render.
 
 ---
 

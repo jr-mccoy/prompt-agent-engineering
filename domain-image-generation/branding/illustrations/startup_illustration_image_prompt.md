@@ -18,7 +18,7 @@ tags:
   - nano-banana
   - dall-e
   - midjourney
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../../IMAGE_MODEL_SELECTION_GUIDE.md
   - ../../GPT_IMAGE_2_GUIDE.md
@@ -385,6 +385,20 @@ Always specify:
 ### Change Mood
 "Same illustration but change mood from [current] to [new]"
 ```
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call a set consistent because every prompt carries the same Style Lock-in Phrases — identical words still yield drifting stroke weight, character proportions and palette across separate generations; consistency is a property of the images, not the prompts.
+- Accept "Using only [color1], [color2], [color3]" as honoured when the render adds off-palette tints or background hues, or accept "no gradients" on a Flat/Minimal render that has quietly sprouted soft shading.
+- Tick "diverse representation" because the phrase is in the prompt while the generated people share one face shape, body type and skin tone.
+- Pass a Product/Tech scene whose device screen shows gibberish UI text or a recognisable third-party app interface.
+- Fill "Matching the aesthetic of [reference]" with a named living illustrator or another company's illustration system — the result is derivative of someone else's identity, not a brand style.
+
+✅ **DO:**
+- Eyedropper 10–20 points across each render and map each to the nearest specified hex; any hue that maps to none of them (other than skin tones the brief allows) is a palette break to fix in the prompt.
+- Lay the set side by side at one display size and compare three measurables — stroke weight on a shared element, characters' head-to-body ratio, background treatment — and regenerate outliers instead of averaging them in.
+- On Isometric renders, check that receding edges run at the stated 30° and parallel edges stay parallel; stray vanishing points are the failure that reads fine at a glance.
 
 ## Expected Output
 

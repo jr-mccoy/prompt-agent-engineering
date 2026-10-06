@@ -4,8 +4,8 @@
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
     "total_indexed_artifacts": 6165,
-    "artifacts_with_frontmatter": 5283,
-    "artifacts_without_frontmatter": 882,
+    "artifacts_with_frontmatter": 5284,
+    "artifacts_without_frontmatter": 881,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -15,8 +15,8 @@
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
     "total_prompts": 6165,
-    "prompts_with_frontmatter": 5283,
-    "prompts_without_frontmatter": 882
+    "prompts_with_frontmatter": 5284,
+    "prompts_without_frontmatter": 881
   },
   "prompts": [
     {
@@ -95713,7 +95713,7 @@
         "google"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/NANO_BANANA_GUIDE.md",
         "domain-image-generation/gpt-image-2/gptimage2_character_consistency_anchor.md",
@@ -95849,7 +95849,7 @@
         "print-ready"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "kids_coloring_page_simple.md",
@@ -95886,7 +95886,7 @@
         "marketing"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "coloring_book_kdp_interior.md",
@@ -95923,7 +95923,7 @@
         "line-art"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "coloring_book_cover.md",
@@ -95964,7 +95964,7 @@
         "print-ready"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "kids_coloring_page_simple.md",
@@ -96003,7 +96003,7 @@
         "print-ready"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "themed_coloring_set.md",
@@ -96019,24 +96019,27 @@
       "title": "Image to Children's Coloring Book Page",
       "domain": "image-generation",
       "category": "image-generation/coloring-book",
-      "description": "``` TASK: Transform the uploaded image into a CHILDREN'S COLORING BOOK PAGE.",
-      "techniques": [],
-      "keywords": [
-        "book",
-        "coloring",
-        "image",
-        "model",
-        "notes",
-        "openai",
-        "page",
-        "primary",
-        "prompt",
-        "specific"
+      "description": "Convert an uploaded image (photo, illustration, artwork) into a printable children's coloring book page — black line art on a pure white background, ready for printing and coloring.",
+      "techniques": [
+        "SV-11",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "coloring-book",
+        "image-generation",
+        "kids-coloring",
+        "line-art",
+        "print-ready"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-image-generation/coloring-book/kids_coloring_page_simple.md",
@@ -96066,7 +96069,7 @@
         "print-ready"
       ],
       "difficulty": "beginner",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "adult_coloring_page_intricate.md",
@@ -96103,7 +96106,7 @@
         "print-ready"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "adult_coloring_page_intricate.md",
@@ -96141,7 +96144,7 @@
         "print-ready"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../IMAGE_GENERATION_GUIDE.md",
         "coloring_book_kdp_interior.md",
@@ -96465,7 +96468,7 @@
         "google"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/NANO_BANANA_GUIDE.md",
         "domain-image-generation/gpt-image-2/gptimage2_dense_text_infographic.md"
@@ -96695,7 +96698,7 @@
         "google"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/NANO_BANANA_GUIDE.md",
         "domain-image-generation/gpt-image-2/gptimage2_meta_prompt_builder.md"
@@ -96896,7 +96899,7 @@
         "nano-banana"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/ecommerce-product/README.md",
         "domain-image-generation/ecommerce-product/ecommerce_white_background_product.md",
@@ -96930,7 +96933,7 @@
         "nano-banana"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/ecommerce-product/README.md",
         "domain-image-generation/ecommerce-product/ecommerce_white_background_product.md",
@@ -96964,7 +96967,7 @@
         "nano-banana"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/ecommerce-product/README.md",
         "domain-image-generation/ecommerce-product/ecommerce_lifestyle_in_context.md",
@@ -97000,7 +97003,7 @@
         "nano-banana"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/ecommerce-product/README.md",
         "domain-image-generation/ecommerce-product/ecommerce_white_background_product.md",
@@ -97034,7 +97037,7 @@
         "nano-banana"
       ],
       "difficulty": "beginner",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/ecommerce-product/README.md",
         "domain-image-generation/ecommerce-product/ecommerce_variant_grid.md",
@@ -97094,7 +97097,7 @@
         "google"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/NANO_BANANA_GUIDE.md",
         "domain-image-generation/gpt-image-2/gptimage2_product_hero_shot.md",
@@ -97126,7 +97129,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/publishing-covers/cover_podcast_art.md",
@@ -97158,7 +97161,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/publishing-covers/cover_ebook_kdp.md",
@@ -97191,7 +97194,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/publishing-covers/cover_fiction_book.md",
@@ -97224,7 +97227,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/publishing-covers/cover_fiction_book.md",
@@ -97257,7 +97260,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/publishing-covers/cover_album_art.md",
@@ -97596,7 +97599,7 @@
         "google"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/NANO_BANANA_GUIDE.md",
         "domain-image-generation/VIDEO_GENERATION_GUIDE.md",
@@ -98473,7 +98476,7 @@
         "midjourney"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../../IMAGE_MODEL_SELECTION_GUIDE.md",
         "../../GPT_IMAGE_2_GUIDE.md",
@@ -98507,7 +98510,7 @@
         "midjourney"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../../IMAGE_MODEL_SELECTION_GUIDE.md",
         "../../GPT_IMAGE_2_GUIDE.md",
@@ -98538,7 +98541,7 @@
         "branding"
       ],
       "difficulty": "intermediate",
-      "updated": "2025-12-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98564,7 +98567,7 @@
         "design-system"
       ],
       "difficulty": "intermediate",
-      "updated": "2025-12-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98590,7 +98593,7 @@
         "design"
       ],
       "difficulty": "intermediate",
-      "updated": "2025-12-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98619,7 +98622,7 @@
         "midjourney"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "../../IMAGE_MODEL_SELECTION_GUIDE.md",
         "../../GPT_IMAGE_2_GUIDE.md",
@@ -98650,7 +98653,7 @@
         "design-system"
       ],
       "difficulty": "intermediate",
-      "updated": "2025-12-15",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },

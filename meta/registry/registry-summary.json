@@ -36,8 +36,8 @@
   },
   "by_metadata_completeness": {
     "degraded": 2,
-    "full": 5736,
-    "minimal": 153
+    "full": 5737,
+    "minimal": 152
   },
   "by_provenance_origin": {
     "adapted": 577,
@@ -55,7 +55,7 @@
   },
   "diagnostics_by_code": {
     "frontmatter_parse_failed": 2,
-    "no_frontmatter": 97,
+    "no_frontmatter": 96,
     "reorg_relation_on_non_resource": 6,
     "tombstone": 56
   },

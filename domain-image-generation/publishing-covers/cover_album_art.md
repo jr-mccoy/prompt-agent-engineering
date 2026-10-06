@@ -17,7 +17,7 @@ tags:
   - typography
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/publishing-covers/cover_podcast_art.md
@@ -142,6 +142,21 @@ CONSTRAINTS:
 2. "Thumbnail fail — at 150 px the focal element is unreadable. Simplify to one bold subject."
 3. "Type fights the image — shrink the artist/title and move to a [corner] so the image leads."
 4. "Push the [REFERENCE ERA] aesthetic harder via [texture / grain / color treatment]."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Clear the text-free path because no title was rendered — check signage, graffiti, book spines, and clothing in the scene for pseudo-letters the model drew in.
+- Let an intentionally stylized name be "fixed": an all-lowercase artist name, a deliberate misspelling, or a symbol standing in for a letter must render exactly as supplied, so compare against the release metadata, not standard spelling.
+- Rely on the Distributor spec block in this file — minimum sizes, file limits, color profile, and content bans (URLs, social handles, pricing, blurriness, text that doesn't match the release metadata) vary by distributor and change [VERIFY: current distributor artwork requirements].
+- Accept a photographic cover whose face resembles a recognizable real person — likeness drift is common when `[REFERENCE ERA]` names a scene tied to particular artists.
+
+✅ **DO:**
+- Reverse-image-search the final cover and compare it with the best-known covers of `[REFERENCE ERA]`; if subject, layout, and palette all line up with one, change at least the focal element.
+- Downscale the 3000×3000 file to 150×150 px and view it in a grid of other covers in the genre; the focal element must be identifiable without zooming.
+- Check artist and title on the cover against the exact strings entered in the distribution form, character by character.
 
 ---
 
