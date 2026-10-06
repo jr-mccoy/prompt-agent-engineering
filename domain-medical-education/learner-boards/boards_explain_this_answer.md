@@ -196,7 +196,7 @@ DKA initial management sequence — fluids first, then insulin after potassium i
 >>> DISTRACTOR WALK
 
 A) SQ basal insulin (glargine) — wrong for acute DKA management; basal coverage is given later in the transition phase, not at presentation. Engineered trap is option C, not A.
-B) Bicarb IV push — wrong; current guidelines reserve bicarb for pH < 6.9, not 7.18. Premature intervention.
+B) Bicarb IV push — wrong; bicarb is reserved for severe acidemia below a guideline pH cutoff that 7.18 does not approach [VERIFY: pH cutoff in current ADA hyperglycemic-crises consensus]. Premature intervention.
 C) IV insulin infusion — *the engineered trap*. Insulin without prior fluid resuscitation worsens intracellular potassium shift in a volume-depleted patient and can drop K+ dangerously. Correct *second* step (after fluids and K+ check), not first.
 D) 0.9% NS IV bolus — correct. Fluid resuscitation comes first in DKA, especially with signs of volume depletion.
 
@@ -208,7 +208,7 @@ Failure mode: priority/sequence error. You knew insulin is part of DKA managemen
 
 >>> RESTUDY TARGET
 
-20–30 min on the DKA algorithm — specifically the *order* of interventions: NS bolus → check K+ → start insulin (once K+ ≥ 3.3) → add dextrose when glucose ~ 200 → transition. Resource: First Aid CK Endo / Online MedEd DKA video. Re-do this question in 3 days.
+20–30 min on the DKA algorithm — specifically the *order* of interventions: NS bolus → check K+ → start insulin (once K+ is above the guideline floor) → add dextrose when glucose falls to the guideline threshold → transition [VERIFY: potassium floor and dextrose threshold in current ADA hyperglycemic-crises consensus]. Resource: First Aid CK Endo / Online MedEd DKA video. Re-do this question in 3 days.
 
 >>> CONFIDENCE CALIBRATION
 

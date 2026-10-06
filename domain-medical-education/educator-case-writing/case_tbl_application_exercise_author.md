@@ -212,7 +212,7 @@ Specific: pick 1 of 4 anticoag plans.
 Simultaneous: card reveal at min 20.
 
 >>> STEM
-A 72M with new AF (CHADS-VASc 4, HAS-BLED 3), admitted with pneumonia and AKI (Cr 0.9 → 2.4, anuric × 6h). BP 138/82, K 5.4. Cardiology consult recommends anticoagulation. Pharmacist asks for your plan.
+A 72M with new AF (CHADS-VASc 4, HAS-BLED 3), admitted with pneumonia and AKI (Cr 0.9 → 2.4, anuric × 6h). BP 138/82, K 5.4. Cardiology consult recommends anticoagulation. Hospital protocol permits apixaban in AKI with dose modification. Pharmacist asks for your plan.
 
 Q: Best initial anticoagulation plan?
 A. Apixaban 2.5 mg BID
@@ -221,7 +221,7 @@ C. Warfarin bridged with UFH
 D. Hold anticoagulation until AKI resolves
 
 >>> OPTION TAGS (facilitator)
-A — RIGHT. Apixaban 2.5 mg BID is the dose-reduction option, but reasoning here is dose adjustment for AKI is uncertain; the discriminator is anticoag in AKI is poorly studied — the *defensible* choice depends on extent of renal function. Use as the right answer if the case stipulates we accept apixaban with AKI dose modification per institutional protocol. (Facilitator: surface the data gap — this is the teaching point.)
+A — RIGHT. Apixaban 2.5 mg BID is the dose-reduction option, but reasoning here is dose adjustment for AKI is uncertain; the discriminator is anticoag in AKI is poorly studied — the *defensible* choice depends on extent of renal function. Keyed as the right answer because the stem stipulates that hospital protocol permits apixaban in AKI with dose modification [VERIFY: current apixaban product label dose-reduction criteria and the institution's protocol]. (Facilitator: surface the data gap — this is the teaching point.)
 B — Anchoring: standard AF dose; wrong because doesn't account for AKI.
 C — Premature closure / algorithm misapplication: warfarin bridge is a 2010s algorithm; not standard in 2025 for new AF (bleeding risk > benefit in HAS-BLED 3).
 D — Algorithm misapplication: holding is reasonable if hemodynamic instability or pre-bleed; question is whether AKI alone justifies holding when CHADS-VASc 4.

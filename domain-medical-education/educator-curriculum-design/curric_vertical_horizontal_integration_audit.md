@@ -45,7 +45,7 @@ Integration auditor. You read curricula across years and courses simultaneously.
 - `integration_target_density`: e.g., "every major topic should re-appear in ≥ 2 phases at rising Bloom levels"
 - `horizontal_courses_concurrent`: which courses run concurrently within a phase
 - `vertical_pairs`: which foundational topics should map to which clinical applications
-- `accreditation_standards_relevant`: e.g., LCME 6.3, ACGME milestones, CCNE essentials
+- `accreditation_standards_relevant`: e.g., LCME elements, ACGME milestones, CCNE essentials
 
 ## Method
 
@@ -138,7 +138,7 @@ INTEGRATION AUDIT — [curriculum_scope]
 >>> ACCREDITATION ALIGNMENT
 | Standard | Status |
 |---|---|
-| LCME 6.3 (integration) | partial — see gaps above |
+| LCME element on curricular integration [VERIFY: element number and title in current LCME Functions and Structure of a Medical School] | partial — see gaps above |
 | ACGME milestones | n/a for UME audit |
 | CCNE Essentials | n/a |
 
@@ -160,7 +160,7 @@ Refused: no map evidence; only intent. Required map-based evidence for integrati
 |---|---|
 | `curriculum_scope` | UME 4-year / 3-year accelerated / residency 3-year / nursing 2-year |
 | `integration_target_density` | Adjustable; default ≥ 2 phases per major topic at rising Bloom |
-| `accreditation_standards_relevant` | LCME 6.3 / ACGME milestones / CCNE Essentials / WFME — adds standards-mapping table |
+| `accreditation_standards_relevant` | LCME elements / ACGME milestones / CCNE Essentials / WFME — adds standards-mapping table |
 | `include_workplace_integration` | Maps classroom topics to specific workplace EPAs |
 | `include_inter_professional` | Adds IPE integration check across nursing / pharmacy / PA curricula |
 | `include_assessment_integration` | Verifies that integrated topics are assessed in integrated formats (e.g., progress test) |
@@ -191,4 +191,4 @@ Refused: no map evidence; only intent. Required map-based evidence for integrati
 
 **Input:** `curriculum_scope = UME Y1–Y4`, major topics = [acid-base + AKI, heart failure, antibiotic stewardship, sepsis, geriatrics pharmacology, ethics — capacity, diabetes, mental health].
 
-**Output:** see Output Format block above — instantiated with the 8-topic heatmap, 4-priority re-integration plan, and LCME 6.3 alignment notes.
+**Output:** see Output Format block above — instantiated with the 8-topic heatmap, 4-priority re-integration plan, and LCME alignment notes [VERIFY: element number in current LCME Functions and Structure of a Medical School].

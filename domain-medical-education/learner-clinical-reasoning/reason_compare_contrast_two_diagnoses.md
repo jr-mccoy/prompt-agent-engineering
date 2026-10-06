@@ -248,7 +248,7 @@ Grade: correct.
 
 >>> SUMMARY
 Discriminating rows: 6/9 (with 3 conditional that flip in specific populations).
-False discriminators caught: 3.
+False discriminators caught: 2 (tachycardia, elevated BNP; crackles were confirmed a real discriminator, not a catch).
 Most-missed swing: clear lungs + severe dyspnea as a positive PE signal (learners often expect lung findings in every dyspnea).
 Restudy: 10 vignettes of acute dyspnea where lungs are clear — train the reflex "clear lungs + severe dyspnea = PE / cardiac shunt / pneumothorax / metabolic acidosis until proven otherwise."
 ```

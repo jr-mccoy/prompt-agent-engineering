@@ -113,7 +113,7 @@ Considered: [omitting fiction contract | "let's see who sinks" framing | promisi
 
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
-| Orientation "can / can't" lines that add capabilities not in `manikin_capability` (input lists breath sounds; script promises "breath/heart sounds") | Trace every can and can't item to the `manikin_capability` input; anything not listed is said as "ask us" rather than promised, so a learner does not lose time listening for a sign the manikin cannot produce |
+| Orientation "can / can't" lines that add capabilities not in `manikin_capability` (promising a sound or sign the input never lists) | Trace every can and can't item to the `manikin_capability` input; anything not listed is said as "ask us" rather than promised, so a learner does not lose time listening for a sign the manikin cannot produce |
 | A fiction contract that is present but names no actual limitation ("the manikin can't do everything a person does") | Name at least one specific limitation that matters in today's scenarios (no skin color change, no real urine output, pupils fixed) and how that information will be supplied instead |
 | Confidentiality and recording promises the program cannot keep ("only faculty in this session will see it," "no grades") written from `recording` and `session_type` alone | Check each promise against the program's actual recording-retention, access, and assessment policy `[VERIFY: institutional simulation recording / data policy]`; state only what is confirmed, and say plainly if footage or participation feeds any evaluation |
 | A pause word that is also a clinical phrase learners may say in role ("time out" during a procedure) | Choose a pause word that cannot occur in the scenario's own dialogue, and say it once in the pre-brief exactly as it must be said |
@@ -150,7 +150,7 @@ Level/Team: MS3 pairs   Type: formative   Environment: lab   Recording: yes   Sc
 
 >>> ORIENTATION
 - Environment: monitor here, code cart there (sim cart — sim meds labeled), phone to 'call' a consultant.
-- Manikin can: palpable pulses, breath/heart sounds, speak through us. Can't: make real urine — we'll tell you the output.
+- Manikin can: palpable pulses, breath sounds, speak through us. Can't: make real urine — we'll tell you the output. Anything not on this list — ask us.
 - Info: vitals on the monitor; labs/imaging by asking us; talk to the patient and we'll answer in role.
 - Sim meds are labeled SIMULATION — not for any real use.
 

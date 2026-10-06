@@ -101,10 +101,10 @@ CLO N [...]
 >>> ASSESSMENT PLAN × LO ALIGNMENT
 | Assessment | Type | Items | LO coverage |
 |---|---|---|---|
-| Midterm MCQ | Summative | 50 | CLO1 ×15, CLO2 ×12, CLO3 ×15, CLO4 ×0 — GAP |
-| Final MCQ | Summative | 80 | CLO1 ×20, CLO2 ×20, CLO3 ×20, CLO4 ×0 — GAP |
+| Midterm MCQ | Summative | 50 | CLO1 ×15, CLO2 ×12, CLO3 ×15, CLO4 ×0 — GAP; 8 items unmapped |
+| Final MCQ | Summative | 80 | CLO1 ×20, CLO2 ×20, CLO3 ×20, CLO4 ×0 — GAP; 20 items unmapped |
 | OSCE station 3 | Summative | 1 station | CLO3 |
-| Reflective essay | Formative | 1 essay | CLO5 (evaluation) |
+| Reflective essay | Formative | 1 essay | CLO2 (evaluation) |
 | Progress test | Formative | 60 | longitudinal |
 | Mini-CEX (clerkship-integrated) | Formative | 4 forms | CLO1, CLO3 |
 
@@ -116,7 +116,7 @@ CLO N [...]
 | No orphan sessions | pass | — |
 | Bloom progression appropriate | pass | — |
 | No redundant Bloom × LO combos | pass | (mild redundancy CLO2 × Application acceptable as deliberate practice) |
-| Assessment items all tied to CLOs | fail | "case-presentation rating" not tied to any CLO — drop or remap |
+| Assessment items all tied to CLOs | fail | "case-presentation rating", 8 midterm MCQ items and 20 final MCQ items not tied to any CLO — drop or remap |
 
 >>> COVERAGE GAP RESOLUTION
 | Gap | Resolution |
@@ -124,6 +124,7 @@ CLO N [...]
 | CLO4 has 0 sessions | Author 1 session in Wk 5 (format: flipped TBL, 2 h) targeting CLO4 — see curric_session_blueprint_designer.md |
 | CLO4 has 0 assessment items | Author 5 MCQs at analysis level for final exam |
 | Orphan rating "case presentation rating" | Either remap to CLO1 (communication subdomain) or remove from grade |
+| 8 midterm + 20 final MCQ items unmapped | Tag each item to a CLO or retire it before the blueprint hand-off |
 
 >>> PROGRESSION CHECK
 | CLO | Bloom | First appearance (week) | Final appearance | OK? |
@@ -164,7 +165,7 @@ Replaced with: explicit Wk-5 session author task + final-exam item-author task b
 
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
-| Assessment rows whose per-CLO item counts do not add up to the Items column (15 + 12 + 15 + 0 = 42 listed against a 50-item midterm), hiding where the remaining items point | Recompute every row of ASSESSMENT PLAN × LO ALIGNMENT: per-CLO counts must sum to the item total, and any remainder is reported as unmapped items or as a CLO missing from the row |
+| Assessment rows whose per-CLO item counts do not add up to the Items column, hiding where the remaining items point | Recompute every row of ASSESSMENT PLAN × LO ALIGNMENT: per-CLO counts must sum to the item total, and any remainder is reported as unmapped items or as a CLO missing from the row |
 | A coverage matrix drafted separately from the session inventory, so "Sessions covering" lists a session whose inventory row tags different CLOs | Build the CLO × session matrix by inverting the SESSION INVENTORY table, then confirm each listed session carries that CLO in its "Covers CLO(s)" cell and that "# sessions" equals the length of the list |
 | Counting a CLO as covered because a session is tagged to it, although none of that session's SLOs decompose the CLO's behavior | For each coverage claim, quote the session LO that advances the CLO; a tag with no matching SLO is recorded as a coverage gap |
 | Bloom levels in the coverage matrix assigned by session format (small group = Analysis, lecture = Application) instead of from the SLO verbs and conditions | Read each Bloom level off the SLO's action verb and condition; format shows only an opportunity for that level |
@@ -183,6 +184,6 @@ Replaced with: explicit Wk-5 session author task + final-exam item-author task b
 
 ## Worked Example (compact)
 
-**Input:** `course_name = "MS2 Cardiology Block"`, `total_weeks = 4`, `total_hours = 40`, `course_LOs = 6 CLOs (CLO1 ABG/acid-base inappropriate for cardio; replaced with 6 cardio-specific)`, `competency_framework = AAMC Core EPAs`, sessions: 8 lectures + 4 flipped TBL + 2 small groups + 1 simulation + 1 SP encounter + assessments: midterm MCQ + final MCQ + OSCE.
+**Input:** `course_name = "MS2 Cardiology Block"`, `total_weeks = 12`, `total_hours = 40`, `course_LOs = 4 cardio-specific CLOs`, `competency_framework = AAMC Core EPAs`, sessions: 8 lectures + 4 flipped TBL + 2 small groups + 1 simulation + 1 SP encounter + assessments: midterm MCQ + final MCQ + OSCE.
 
 **Output:** see Output Format block above — instantiated with the cardio-block map, coverage audit revealing CLO4 (arrhythmia interpretation) gap, and explicit fill-in action.

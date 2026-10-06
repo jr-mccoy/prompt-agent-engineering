@@ -135,7 +135,7 @@ Narration (verbatim, ~250 words): "[...]"
 [On screen: 3 bullets + download icon]
 Narration (verbatim): "Recap: [bullet 1] [bullet 2] [bullet 3]. Download the one-page summary below. Next, apply this to a case in [next-module link] or bring it to in-class application."
 
-[Buffer 09:15–09:30]
+[Buffer 09:15–09:45]
 
 >>> ONE-PAGE SUMMARY (downloadable PDF — content brief)
 Title: [...]
@@ -189,7 +189,7 @@ Replaced with: this microlecture on imaging only; companion microlecture on anti
 
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
-| A TIMELINE that ends short of or past the target (e.g., buffer closing at 09:30 for a 10-minute module) while the header claims "within ±15 s" | Recompute the closing timestamp and each segment's length against `target_minutes`; a 30-second shortfall fails the ±15 s rule and is fixed in the script, not relabelled as buffer |
+| A TIMELINE that ends short of or past the target (e.g., a closing timestamp 30 s or more away from `target_minutes`) while the header claims "within ±15 s" | Recompute the closing timestamp and each segment's length against `target_minutes`; a 30-second shortfall fails the ±15 s rule and is fixed in the script, not relabelled as buffer |
 | Narration marked "~250 words" whose scripted text, once written, runs well outside what a 2-minute block holds | Count the words actually scripted in each content block against the 200–300 range and trim or extend before the timeline is called final |
 | Check questions answerable by reading the content slide that is still on screen, so the pause tests recognition rather than retrieval | Specify in the on-screen cue that the content slide clears before each check question, and confirm the answer is not visible in the question frame |
 | Numeric imaging or diagnostic criteria (a diameter cut-off, a wall-thickness value) narrated as settled fact without a source | Tag each numeric criterion in the narration and the one-page summary with its source type and [VERIFY: current radiology reference or guideline] |

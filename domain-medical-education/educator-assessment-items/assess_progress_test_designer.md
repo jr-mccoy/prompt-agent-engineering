@@ -178,7 +178,7 @@ ACCREDITOR REPORT
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
 | Presenting the expected-p ladder (e.g., 0.60 → 0.90) as if it were normative data | Label the ladder `assumed` until the first administration, then replace it with observed p by level; trajectory flags are raised only against observed baselines |
-| Exposure rules that contradict the anchor rotation (items retire after 3 administrations, but anchors are refreshed every 4) | Trace one anchor item through the schedule and count its administrations against the retire-after-N rule; also check anchors + carried-over items + new items = items per administration |
+| Exposure rules that contradict the anchor rotation (a retire-after-N rule alongside an anchor refresh interval longer than N administrations) | Trace one anchor item through the schedule and count its administrations against the retire-after-N rule; also check anchors + carried-over items + new items = items per administration |
 | Ticking "equating method feasible at sample size" without stating how many examinees sit each administration | Write the examinee N per administration and per level and compare it with the method's stated range (CINEG 200–500; IRT-linking ≥ 1000); a cohort split across four levels can leave each level below range |
 | An advisor early-warning flag ("Δ < 0 across 2 consecutive administrations") that fires on measurement noise | Compute the standard error of the difference from score reliability and flag only drops larger than about 1.96 × SE(Δ); state that rule in the advisor report |
 | Filling dean or accreditor "national benchmark" fields with an estimated comparator | Leave benchmark fields `n/a — no comparator supplied` unless benchmark data is an input |
@@ -216,7 +216,7 @@ Levels: MS1–MS4   Admins: 2/yr   Items: 200 MCQ   Framework: AAMC Core EPAs   
 
 >>> EQUATING PLAN
 CINEG with 40 anchor items (20%) shared between consecutive administrations.
-Anchor rotation: 40 anchors per admin; 20 of those carry to next admin; refresh full anchor set every 4 admins.
+Anchor rotation: 40 anchors per admin; 20 of those carry to next admin; refresh full anchor set every 3 admins (no anchor exceeds the retire-after-3 rule).
 Drift check: anchor Δp threshold 0.10.
 
 >>> EXPOSURE PROTECTION

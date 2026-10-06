@@ -247,9 +247,9 @@ N4: "Cath available in 60 min at this center. Transfer cath > 120 min. Time of o
   D. Wait and reassess. → Outcome C.
 
 >>> OUTCOMES
-A: reperfusion within window, clean. (Paths: 1, 3, 5)
-B: reperfusion but delayed; re-route to remediation node on transfer-vs-lyse decision rule. (Path 4)
-C: failed reperfusion. (Path 6 + any kill-switch reset that fails again)
+A: reperfusion within window, clean. (Paths: 1, 4)
+B: reperfusion but delayed; re-route to remediation node on transfer-vs-lyse decision rule. (Paths: 2, 3)
+C: failed reperfusion. (Path 5 + any kill-switch reset that fails again)
 
 >>> COVERAGE MAP
 | Node | LO |

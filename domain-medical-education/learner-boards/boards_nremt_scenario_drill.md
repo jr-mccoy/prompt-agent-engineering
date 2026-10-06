@@ -165,7 +165,7 @@ Learner: "Confirm scene safety with security — anyone else inside? — request
 
 Simulator: Security confirms only the patient inside, clear sight lines. PD ETA 4 min. You enter and find a male approx 30, supine on floor, slow shallow breathing, cyanotic lips. Used syringe near hand.
 
-Learner: "Primary survey — A: patent but snoring; B: shallow, ~6/min; C: weak radial pulse, skin cool diaphoretic. Open airway with head-tilt-chin-lift; bag-mask 15L O2 at appropriate rate; partner attach pulse ox + monitor. Glucometer."
+Learner: "Primary survey — A: patent but snoring; B: shallow, ~6/min; C: weak radial pulse, skin cool diaphoretic. Open airway with head-tilt-chin-lift; bag-mask 15L O2 at appropriate rate; partner attach pulse ox + monitor. Glucometer. Check pupils."
 
 Simulator: pulse ox 76% pre-BVM, rising to 92% with BVM. BG 96. HR 56. BP 96/58. RR (with assist) 12. Pupils pinpoint.
 

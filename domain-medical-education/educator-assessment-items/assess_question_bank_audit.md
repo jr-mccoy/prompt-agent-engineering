@@ -211,6 +211,7 @@ QUESTION BANK AUDIT — IM Clerkship Bank — N=540 — Last review: 19 mo ago
 
 >>> CLASSIFICATION SUMMARY
 Keep: 268   Refresh: 132   Retire: 140   Replace: 32
+(268 + 132 + 140 = 540. Retire 140 = 14 orphaned-fact + 6 equity + 109 cluster duplicates + 11 [reason not provided — name each before sign-off].)
 
 >>> TOP-10 ACTIONS
 1. Retire 14 orphaned-fact items.

@@ -131,7 +131,7 @@ Considered: ["see more patients" | treating it as a knowledge gap | giving the a
 |---|---|
 | Naming a "dominant failure" from one think-aloud on one complaint, when reasoning performance is case-specific and a single case cannot separate a stable pattern from an unfamiliar presentation | State how many cases and which complaints the localization rests on; with fewer than two cases across different presentations, label it provisional and use CP1 to collect the second sample |
 | Concluding "knowledge present" because the learner answered cued questions ("What are the features of ACS?") correctly | Check knowledge by uncued retrieval: ask for the differential for the complaint before naming any candidate; correct answers after prompting show recognition, not knowledge available at the bedside |
-| Goal and re-assessment fractions the plan cannot generate, such as a "≥ 8/10 cases" standard judged on three terminal think-alouds | Recompute: the observed cases in the re-assessment window must meet or exceed the standard's denominator; multiply scheduled observed cases per week by weeks before writing the fraction |
+| Goal and re-assessment fractions the plan cannot generate, such as an "x/10 cases" standard judged on fewer than ten re-assessment cases | Recompute: the observed cases in the re-assessment window must meet or exceed the standard's denominator; multiply scheduled observed cases per week by weeks before writing the fraction |
 | Scoring re-assessment cases on whether the final diagnosis was right, so a learner who anchored early and happened to be correct passes | Score the reasoning moves on each case (differential breadth before commitment, a stated diagnostic time-out, disconfirming data named), independently of the final answer |
 | Localization written as a trait ("is a premature closer", "anchoring personality") instead of an observed event | Record what was observed and when ("committed to costochondritis in the first minute of the [date] think-aloud; asked no exertional history"); branches beyond this plan follow program policy [VERIFY: institutional policy] |
 
@@ -174,7 +174,7 @@ G2: Demonstrate a diagnostic time-out (state disconfirming data + one alternativ
 Each case: learner verbalizes DDx + one-liner → faculty asks "what would change your mind?" → logs the move (e.g., "always state a can't-miss alternative before committing").
 
 >>> CHECKPOINTS + RE-ASSESSMENT
-CP1 (wk 3): observed think-aloud → go/adjust. Terminal (wk 5–6): 3 observed think-aloud cases scored for breadth + closure-resistance. Standard: can't-miss-inclusive DDx + accurate problem rep on ≥ 8/10.
+CP1 (wk 3): observed think-aloud → go/adjust. Terminal (wk 5–6): 3 observed think-aloud cases scored for breadth + closure-resistance. Standard: can't-miss-inclusive DDx + accurate problem rep on ≥ 8 of the last 10 observed cases (4 observed cases/wk from CP1 yields ≥ 10 by wk 6), the 3 terminal think-alouds included.
 Branches: meets → release w/ monitoring; partial → extend; fails → clerkship director review.
 
 >>> DOCUMENTATION NOTE

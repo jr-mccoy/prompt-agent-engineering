@@ -161,7 +161,7 @@ Single PANCE-testable fact: treat clinically based on EM in endemic area — ser
 [1] Epidemiology anchor: northeast / upper midwest / Pacific NW US in late spring–early fall; outdoor exposure (camping, hiking, yard work). Endemic-area exposure is in every PANCE stem.
 [2] Classic presentation: "expanding annular erythematous lesion with central clearing, > 5 cm in diameter, ± malaise, fatigue, myalgia, low-grade fever" (target lesion).
 [3] Dead-giveaway: EM lesion in endemic area within 3–30 days of outdoor exposure. Serology has high false-negative in this window and is NOT required.
-[4] First-line management: doxycycline 100 mg po BID × 10 days (adults, non-pregnant, ≥ 8yo). Pregnancy or < 8yo: amoxicillin or cefuroxime.
+[4] First-line management: doxycycline 100 mg po BID × 10 days (adults, non-pregnant). Pregnancy: amoxicillin or cefuroxime. Children: age limits for doxycycline per current guideline [VERIFY: IDSA/AAN/ACR 2020 Lyme guideline / AAP Red Book].
 [5] Board trap: serology-first ("send ELISA before treating"). EM in endemic exposure = clinical diagnosis; serology delays treatment and is often falsely negative early.
 
 >>> PANCE-STYLE VIGNETTE

@@ -182,13 +182,13 @@ Single highest-yield discipline: [...]
 
 ## Worked Example (compact)
 
-**Input:** exam_type = `USMLE-Step-1`, test_date = `in 6 weeks`, dedicated_days = `42`, baseline = `NBME 25 = 198`, target = `230`, daily_hours = `9 sustained for a week previously`, constraints = `8h sleep non-negotiable; partner shares dog-walking; one religious observance day per week (no studying)`, resources = `UWorld 15% complete, Anking deck 60% mature, FA 2025, Pathoma, Sketchy micro+pharm, NBME 26-31, UWSA1/2`, weak = `biostats, biochem, anti-microbial pharm`, strong = `cardio, renal, repro`, risk = `balanced`.
+**Input:** exam_type = `USMLE-Step-1`, test_date = `in 6 weeks`, dedicated_days = `42`, baseline = `NBME 25 = 198`, target = `230 on NBME practice forms (Step 1 itself is reported Pass/Fail; exam goal = Pass)`, daily_hours = `9 sustained for a week previously`, constraints = `8h sleep non-negotiable; partner shares dog-walking; one religious observance day per week (no studying)`, resources = `UWorld 15% complete, Anking deck 60% mature, FA 2025, Pathoma, Sketchy micro+pharm, NBME 26-31, UWSA1/2`, weak = `biostats, biochem, anti-microbial pharm`, strong = `cardio, renal, repro`, risk = `balanced`.
 
 **Output (excerpt):**
 
 ```
 DEDICATED STUDY SCHEDULE — USMLE-Step-1
-Test date: in 6 weeks   Dedicated days: 42   Baseline: 198   Target: 230   Risk: balanced
+Test date: in 6 weeks   Dedicated days: 42   Baseline: 198   Target: 230 (NBME practice form; exam outcome Pass)   Risk: balanced
 Daily hours realistic: 9 (sustainable)   Sleep floor: 8h
 
 >>> CONSTRAINTS

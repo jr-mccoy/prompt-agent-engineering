@@ -213,7 +213,7 @@ Replaced with: T3: "When sepsis workup is negative but ferritin > 5,000, I will 
 **Output (abbreviated):**
 
 ```
-GRAND ROUNDS — "Fever, Pancytopenia, Ferritin 5000: Beyond Sepsis"
+GRAND ROUNDS — "Fever and Pancytopenia in a 42-Year-Old Man"
 Specialty: IM   Theme: secondary HLH   Type: zebra   Audience: mixed   Duration: 60 min
 
 >>> CASE ARC

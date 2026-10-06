@@ -63,7 +63,8 @@ COMLEX tutor. You produce the recall page, deliver one COMLEX-style item, wait f
 
 4. **Contraindications (NE-04 good vs bad calibration).**
    - **Absolute**: lock to known absolutes (HVLA in vertebral artery insufficiency or Down syndrome with atlantoaxial instability for upper c-spine; HVLA over Chiari, fracture, malignancy in segment; lymphatic pump over abdominal aortic aneurysm or active infection at site).
-   - **Relative**: anticoagulation, osteoporosis, acute herniated disc, recent surgery, RA at upper c-spine.
+   - **Relative**: anticoagulation, osteoporosis, acute herniated disc, recent surgery.
+   - **RA at upper c-spine**: texts differ on absolute vs relative — pick one classification, use it on the page and in the teardown, and do not key an item on the label [VERIFY: program's OPP reference text].
 
 5. **COMLEX-style vignette + 4 options.** Build NBME/COMLEX-style stem. Lead-in per `vignette_lead_in`. Distractors include common look-alikes from neighboring dysfunctions.
 
@@ -156,8 +157,8 @@ Trap audit: [the specific COMLEX-style trap — usually contraindication missed 
 |---|---|
 | Naming a dysfunction with C2–C7 same-side coupling at a segment that does not follow it (OA, AA), or swapping Fryette Type I and Type II in the thoracolumbar spine | Before filling the TART table, check the named dysfunction against that segment's coupled-motion rule (OA rotation and sidebending opposite, AA mainly rotation, C2–C7 same side, Type I vs Type II for T/L) and reject a name the segment cannot produce |
 | A vignette keyed as single-best-answer where two options survive — e.g., muscle energy and articulatory both defensible for upper-cervical dysfunction in RA | Answer the vignette blind from the stem alone and write the stem fact that eliminates each non-keyed option; if an option survives with no such fact, rewrite the stem or replace the option before delivery |
-| Classifying a contraindication as absolute in one section and relative in another (RA upper-cervical instability appears both ways), then keying the item on that label | Use one classification across the page and the teardown; where osteopathic texts disagree, say so and do not key an item on the contested label [VERIFY: current NBOME COMLEX blueprint and the program's OPP reference text] |
-| A modality row or teardown that keeps a mid-sentence self-correction ("into the barrier ... no — into freedom") | Settle the counterstrain or ME position first and state it once; then re-read every modality row's direction words (barrier vs freedom, toward vs away) against the dysfunction's free motion |
+| Classifying a contraindication as absolute in one section and relative in another (the same condition listed under both headings), then keying the item on that label | Use one classification across the page and the teardown; where osteopathic texts disagree, say so and do not key an item on the contested label [VERIFY: current NBOME COMLEX blueprint and the program's OPP reference text] |
+| A modality row or teardown that keeps a mid-sentence self-correction (a direction stated, retracted and restated in one line) | Settle the counterstrain or ME position first and state it once; then re-read every modality row's direction words (barrier vs freedom, toward vs away) against the dysfunction's free motion |
 | Viscerosomatic levels or Chapman's points given from memory as one fixed range | Present the range with its source and mark it `[VERIFY: viscerosomatic chart in the program's OPP text]` — published ranges differ by a segment or two |
 
 ## Verification Checklist
@@ -200,11 +201,11 @@ Single testable fact: name a dysfunction by its FREE motion. The TART restrictio
 | HVLA | direct | operator | localize to C2; engage extension + R rotation + R sidebend barrier; thrust in low-amplitude rotation |
 | ME | direct | patient | engage barrier; patient isometric contraction toward freedom (~3–5 sec, 20% effort), relax, take up new slack ×3–5 |
 | MFR (direct) | direct | operator | engage tissue barriers in all 3 planes; load until release |
-| CS | indirect | operator | find tender point, position into ease (flex + R rotation/sidebending... no — into FREEDOM: flex + L rotation + L sidebend), hold 90s, slow return |
+| CS | indirect | operator | find tender point, position into ease (FREEDOM: flex + L rotation + L sidebend), hold 90s, slow return |
 
 >>> CONTRAINDICATIONS
 
-Absolute (HVLA upper c-spine): vertebrobasilar insufficiency, Down syndrome (AAI), Klippel-Feil, RA c-spine instability, Chiari, fracture, malignancy in segment, acute disc herniation with neurologic deficit.
+Absolute (HVLA upper c-spine; classification used on this page — texts differ for RA [VERIFY: program's OPP reference text]): vertebrobasilar insufficiency, Down syndrome (AAI), Klippel-Feil, RA c-spine instability, Chiari, fracture, malignancy in segment, acute disc herniation with neurologic deficit.
 Relative: anticoagulation, osteoporosis, prior whiplash, headache with vertigo on extension/rotation.
 
 >>> COMLEX-STYLE VIGNETTE
@@ -226,12 +227,12 @@ D) Articulatory technique to C2 with passive extension under traction
 
 Correct answer: B
 
-Discriminating finding: "rheumatoid arthritis" plus "upper cervical dysfunction" — HVLA upper c-spine in RA is a relative-to-absolute contraindication due to atlantoaxial instability risk. ME engages the barrier safely with patient-active contraction.
+Discriminating finding: "rheumatoid arthritis" plus "upper cervical dysfunction" — HVLA upper c-spine in RA is classed absolute on this page (texts differ) due to atlantoaxial instability risk. ME engages the barrier safely with patient-active contraction.
 
 A) Wrong. HVLA in RA c-spine is contraindicated due to AAI risk. Trap.
 B) Correct. ME engages the barrier; safe in RA.
 C) Wrong. CS positions into FREEDOM (flexion + L rotation + L sidebending), not into the barrier. Position described would worsen.
 D) Wrong. Articulatory traction in upper c-spine in RA carries the same risk; not first-line in this patient.
 
-Trap audit: A — HVLA in an absolute/relative contraindication patient. Single most common COMLEX OMT trap. Always read patient comorbidities before choosing HVLA.
+Trap audit: A — HVLA in a patient with a contraindication (classed absolute on this page). Single most common COMLEX OMT trap. Always read patient comorbidities before choosing HVLA.
 ```

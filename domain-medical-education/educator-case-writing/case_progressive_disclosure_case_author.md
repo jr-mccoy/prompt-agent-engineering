@@ -242,17 +242,17 @@ S3 sick contact + viral URI history — pulls toward viral DDx if not weighed ag
 >>> EVOLUTION TABLE (per group)
 | Stage | Commit | Next data | Changed? | Why |
 |---|---|---|---|---|
-| 1 | "fever in returning Kenya traveler, no malaria prophylaxis, no localizing source" | + exam splenomegaly | refined | added splenomegaly anchor |
+| 1 | "fever in returning Kenya traveler, no localizing source" | + exam splenomegaly | refined | added splenomegaly anchor |
 | 2 | [malaria, typhoid, viral hepatitis vs mono] | + Plt 95, transaminitis | refined ranking | thrombocytopenia ↑ malaria |
 | 3 | thick + thin smear | smear + (Pf 1.5%) | confirmed | discriminator hit |
-| 4 | revise: Pf malaria, uncomplicated | severity criteria | committed Pf-uncomplicated path | parasitemia < 5%, no organ dysfunction |
+| 4 | revise: Pf malaria, severity not yet assessed | severity criteria | classified uncomplicated | parasitemia < 5%, no organ dysfunction |
 | 5 | artemether-lumefantrine, 24-h smear + clinical reassess, return precautions | n/a | n/a | n/a |
 
 >>> MODEL TRAJECTORY
-S1: "A young adult with 5d fever returning from 3-wk rural Kenya without antimalarial prophylaxis."
+S1: "A young adult with 5d fever and headache returning from 3-wk rural Kenya, no localizing source."
 S2: malaria (high prior given Kenya + no prophylaxis) > typhoid > viral hepatitis; mono and viral URI displaced by travel context.
 S3: thick + thin smear ± RDT; CBC + LFTs + UA done.
-S4: P. falciparum uncomplicated by parasitemia + no organ dysfunction; revised because smear is the discriminating test.
+S4: P. falciparum malaria, severity still to be assessed (parasitemia 1.5% so far; organ-function data arrive at S5); revised because smear is the discriminating test.
 S5: artemether-lumefantrine PO (if available + tolerating PO), 24-h reassess parasitemia + clinical; safety net: any neuro change, oliguria, jaundice → ED.
 
 >>> ANTI-CUEING
