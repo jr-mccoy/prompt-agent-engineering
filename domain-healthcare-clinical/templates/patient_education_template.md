@@ -1,4 +1,35 @@
+---
+title: "Patient Education Material Template"
+category: healthcare-clinical/templates
+description: "Fill-in template for creating patient education content matched to the patient's health literacy, with prioritized key messages, concrete action steps, warning signs, and teach-back questions."
+techniques:
+  - ST-01
+  - RP-02
+  - CM-02
+  - ST-03
+  - QA-01
+difficulty: intermediate
+tags:
+  - patient-education
+  - health-literacy
+  - patient-communication
+  - teaching
+updated: "2026-10-06"
+---
+
 # Patient Education Material Template
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > Copy this template when creating patient education content.
 > Customize placeholders marked with [BRACKETS].
@@ -179,6 +210,25 @@ Diabetes can be managed. Take your medicine, check your blood sugar, and call yo
 
 **Teach-back:** "Before you go home, can you tell me: What will you do if your blood sugar is too high?"
 ```
+
+---
+
+## False-Positive Prevention
+
+When filling this template:
+
+❌ **DON'T:**
+- Replace a warning-sign placeholder such as "Blood sugar over [number] or under [number]" with typical values; call-back thresholds are this patient's prescriber targets and come from the order or care plan.
+- Put a guideline name you have not opened into "Clinical Accuracy Source", or leave that slot as placeholder text and still tick "Medically accurate (verified by source)".
+- Write timed action steps (dose times, glucose-check schedule, dressing-change frequency) that are not on the patient's actual discharge orders or medication list.
+- Tick "Reading level appropriate" by impression; one undefined word such as "hyperglycemia" or "titrate" breaks a 6th-grade target even when sentences are short.
+- Simplify the everyday analogy until it says something false about how the condition or medicine works.
+
+✅ **DO:**
+- Run a readability score (Flesch-Kincaid or equivalent) on the finished text and record the grade beside "Reading level target"; count the key messages (5 or fewer) and confirm each numbered step holds one action.
+- Trace every medication name, dose, frequency and phone number in the handout to the discharge medication list or the clinic's own contact sheet; leave a `[VERIFY: ...]` blank rather than inventing one.
+- Check the "Call your doctor" and "Go to the ER" lists against the named source for this condition, covering both directions where the condition has them (for diabetes, low as well as high blood sugar).
+- Make sure the teach-back questions test key message #1 and the warning signs, not a minor point.
 
 ---
 

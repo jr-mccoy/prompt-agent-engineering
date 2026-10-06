@@ -8,9 +8,9 @@
 
 **Total Indexed Artifacts:** 6165
 
-**Artifacts with Frontmatter:** 5299
+**Artifacts with Frontmatter:** 5309
 
-**Artifacts without Frontmatter:** 866
+**Artifacts without Frontmatter:** 856
 
 ---
 
@@ -3245,16 +3245,16 @@
 | [Clinical Decision Support Reasoner](domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md) | healthcare-clinical/reasoning | ST-01, RT-02, DS-02, QA-01, QA-20 | clinical-decision-support, evidence-based-medicine, risk-benefit, shared-decision-making, guidelines | Provide structured, evidence-graded clinical reasoning for a treatment decision — guideline recommen... |
 | [Clinical History Elicitation Assistant](domain-healthcare-clinical/prompts/reasoning/medicine_clinical_history_elicitation.md) | healthcare-clinical/reasoning | ST-01, ST-02, RT-02, QA-01, QA-20 | history-taking, clinical-interview, opqrst, review-of-systems, decision-support | Guide systematic patient history-taking through structured, one-question-at-a-time sequences (OPQRST... |
 | [Differential Diagnosis Generator](domain-healthcare-clinical/prompts/reasoning/medicine_differential_diagnosis_generator.md) | healthcare-clinical/reasoning | ST-01, RT-02, DS-02, QA-01, QA-20 | differential-diagnosis, clinical-reasoning, decision-support, diagnostic-workup, cant-miss | Generate a probability-ranked differential diagnosis from a clinical presentation, with supporting/r... |
-| [Antimicrobial Timeout Template](domain-healthcare-clinical/templates/antimicrobial_timeout_template.md) | healthcare-clinical/templates | — | accountability, antimicrobial, data, decision, diagnostic | > 48–72 hour antimicrobial timeout template to improve stewardship, safety, and treatment precision. |
-| [Care Transition Template](domain-healthcare-clinical/templates/care_transition_template.md) | healthcare-clinical/templates | — | admission, care, clinical, during, information | > Copy this template for creating structured care transition plans. |
-| [Clinical Decision Support Template](domain-healthcare-clinical/templates/clinical_decision_support_template.md) | healthcare-clinical/templates | — | acknowledgment, analysis, application, clinical, context | > Copy this template when creating clinical decision support requests. |
-| [Clinical Handoff Communication Template](domain-healthcare-clinical/templates/handoff_communication_template.md) | healthcare-clinical/templates | — | assessment, background, communication, handoff, identifiers | > Copy this template for creating standardized clinical handoff communications. |
-| [Cross-Cover Signout Template](domain-healthcare-clinical/templates/cross_cover_signout_template.md) | healthcare-clinical/templates | — | action, clinical, context, cover, cross | > Structured overnight/weekend cross-cover signout to reduce errors and clarify contingency planning... |
-| [Discharge Summary Template](domain-healthcare-clinical/templates/discharge_summary_template.md) | healthcare-clinical/templates | — | condition, course, data, discharge, exam | > Standardized template for inpatient discharge documentation to support safe transitions of care. |
-| [Goals of Care Family Meeting Template (v2)](domain-healthcare-clinical/templates/goals_of_care_family_meeting_template_v2.md) | healthcare-clinical/templates | — | care, clinical, data, decisions, family | > Structured goals-of-care documentation template emphasizing values alignment, safety, and clear ac... |
-| [Patient Education Material Template](domain-healthcare-clinical/templates/patient_education_template.md) | healthcare-clinical/templates | — | audience, clinical, content, education, maximum | > Copy this template when creating patient education content. |
-| [Psychiatric Assessment Template](domain-healthcare-clinical/templates/psychiatric_assessment_template.md) | healthcare-clinical/templates | — | assessment, chief, complaint, history, identifiers | > Copy this template for creating structured psychiatric assessments. |
-| [Tumor Board Case Summary Template](domain-healthcare-clinical/templates/tumor_board_case_summary_template.md) | healthcare-clinical/templates | — | board, case, clinical, current, data | > Multidisciplinary cancer case summary template for coordinated diagnostic and treatment planning. |
+| [Antimicrobial Timeout Template](domain-healthcare-clinical/templates/antimicrobial_timeout_template.md) | healthcare-clinical/templates | NE-03, ST-42, OC-03, DS-40, QA-01 | antimicrobial-stewardship, antibiotics, infectious-disease, medication-safety, documentation | Fill-in 48–72 hour antimicrobial timeout template to improve stewardship, safety, and treatment prec... |
+| [Care Transition Template](domain-healthcare-clinical/templates/care_transition_template.md) | healthcare-clinical/templates | NE-03, ST-05, OC-03, DS-40, QA-01 | care-transitions, discharge-planning, medication-reconciliation, readmission-prevention, patient-family-education | Copy-ready template for structured care transition plans covering hospital discharge, facility trans... |
+| [Clinical Decision Support Template](domain-healthcare-clinical/templates/clinical_decision_support_template.md) | healthcare-clinical/templates | NE-03, CM-01, RT-05, QA-04, OC-03 | clinical-decision-support, evidence-based-medicine, shared-decision-making, medication-safety | Copy-ready template for clinical decision support requests: a PICO clinical question, structured pat... |
+| [Clinical Handoff Communication Template](domain-healthcare-clinical/templates/handoff_communication_template.md) | healthcare-clinical/templates | DS-01, ST-03, ST-04, OC-03, QA-01 | handoff, sbar, patient-safety, clinical-documentation, care-team-communication | Fill-in template for standardized clinical handoff communications based on the SBAR framework, with ... |
+| [Cross-Cover Signout Template](domain-healthcare-clinical/templates/cross_cover_signout_template.md) | healthcare-clinical/templates | NE-03, OC-04, OC-03, DS-40, QA-01 | handoff-communication, handoff, patient-safety, safety-escalation | Structured overnight/weekend cross-cover signout template to reduce errors and clarify contingency p... |
+| [Discharge Summary Template](domain-healthcare-clinical/templates/discharge_summary_template.md) | healthcare-clinical/templates | NE-03, ST-42, OC-03, DS-40, QA-01 | discharge-summary, care-transitions, clinical-documentation, medication-reconciliation | Standardized fill-in template for inpatient discharge documentation to support safe transitions of c... |
+| [Goals of Care Family Meeting Template (v2)](domain-healthcare-clinical/templates/goals_of_care_family_meeting_template_v2.md) | healthcare-clinical/templates | NE-03, ST-42, NE-10, DS-40, QA-01 | goals-of-care, palliative-care, serious-illness, shared-decision-making, documentation | Structured goals-of-care family meeting documentation template emphasizing values alignment, safety,... |
+| [Patient Education Material Template](domain-healthcare-clinical/templates/patient_education_template.md) | healthcare-clinical/templates | ST-01, RP-02, CM-02, ST-03, QA-01 | patient-education, health-literacy, patient-communication, teaching | Fill-in template for creating patient education content matched to the patient's health literacy, wi... |
+| [Psychiatric Assessment Template](domain-healthcare-clinical/templates/psychiatric_assessment_template.md) | healthcare-clinical/templates | ST-03, OC-03, RT-02, DS-06, QA-04 | psychiatry, mental-status-exam, risk-assessment, mental-health, clinical-documentation | Fill-in template for structured psychiatric assessments following the standard psychiatric evaluatio... |
+| [Tumor Board Case Summary Template](domain-healthcare-clinical/templates/tumor_board_case_summary_template.md) | healthcare-clinical/templates | ST-03, OC-03, RT-02, QA-01 | tumor-board, oncology, multidisciplinary, cancer-staging, clinical-documentation | Fill-in multidisciplinary cancer case summary template for tumor board review, covering diagnostic s... |
 | [Clinical Documentation Assistant](domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md) | healthcare-clinical/workflow | ST-01, ST-02, RT-02, QA-01, QA-20 | clinical-documentation, soap-note, discharge-summary, compliance, care-team-communication | Structure clinical notes (H&P, SOAP progress notes, discharge summaries, procedure notes) for comple... |
 | [Antibiotic Stewardship Advisor](domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md) | medicine | RT-05, ST-02, DS-06, RT-02, QA-02 | medicine, antibiotics, stewardship, infectious-disease, antimicrobial-resistance | Antimicrobial stewardship decision support covering empiric selection, de-escalation, duration optim... |
 | [Anticoagulation Decision Support Reasoner](domain-healthcare-clinical/prompts/pharmacology/medicine_anticoagulation_decision_support.md) | medicine | ST-02, DS-02, CM-02, ST-03, QA-01 | medicine, cardiology, hematology, anticoagulation, stroke-prevention | Structured reasoning for anticoagulation initiation, agent selection, duration, and periprocedural m... |
@@ -6517,7 +6517,7 @@
 
 ---
 
-## Prompts Without Frontmatter (866)
+## Prompts Without Frontmatter (856)
 
 These prompts need frontmatter metadata added:
 
@@ -7367,16 +7367,6 @@ These prompts need frontmatter metadata added:
 - `domain-agentic-resources/skills/web-development/ui-designer/assets/vibe_design_template.md` - Vibe Design Template
 - `domain-engineering-workflows/workflows/android_jetpack_compose_debug.md` - Android Jetpack Compose Debugging & Root Cause Fix
 - `domain-healthcare-clinical/_archive/EXPANSION_ROADMAP_v1_safety_framing.md` - Healthcare Clinical Domain Expansion Roadmap (Weeks 1–7)
-- `domain-healthcare-clinical/templates/antimicrobial_timeout_template.md` - Antimicrobial Timeout Template
-- `domain-healthcare-clinical/templates/care_transition_template.md` - Care Transition Template
-- `domain-healthcare-clinical/templates/clinical_decision_support_template.md` - Clinical Decision Support Template
-- `domain-healthcare-clinical/templates/cross_cover_signout_template.md` - Cross-Cover Signout Template
-- `domain-healthcare-clinical/templates/discharge_summary_template.md` - Discharge Summary Template
-- `domain-healthcare-clinical/templates/goals_of_care_family_meeting_template_v2.md` - Goals of Care Family Meeting Template (v2)
-- `domain-healthcare-clinical/templates/handoff_communication_template.md` - Clinical Handoff Communication Template
-- `domain-healthcare-clinical/templates/patient_education_template.md` - Patient Education Material Template
-- `domain-healthcare-clinical/templates/psychiatric_assessment_template.md` - Psychiatric Assessment Template
-- `domain-healthcare-clinical/templates/tumor_board_case_summary_template.md` - Tumor Board Case Summary Template
 - `domain-idea-to-product/PIPELINE_OVERVIEW.md` - Pipeline Overview
 - `domain-product-management/templates/prd_template.md` - Product Requirements Document (PRD) Template
 - `domain-prompt-engineering/evaluation/prompt_lifecycle_assessment.md` - Prompt Lifecycle Assessment

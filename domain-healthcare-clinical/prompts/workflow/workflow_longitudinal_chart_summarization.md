@@ -15,8 +15,20 @@ tags:
   - chart-summarization
   - ehr
   - handoff
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -50,6 +62,19 @@ Senior attending picking up an unfamiliar complex patient, building the mental m
 7. **Capture goals/code status/advance directives** if documented — especially for inpatient or transfer summaries.
 
 8. **Note data quality caveats.** If the record is internally contradictory (two different EFs, conflicting allergy lists) or has gaps (no notes for a 2-year window), say so rather than papering over it. Do not invent continuity that the record does not support.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Produce a synopsis from a description of the chart ("~6 years of records available") when the records themselves were not supplied — every problem, dose and date in it would be invented.
+- Carry a dose forward from an older note when a later note changed it; a superseded dose in MEDICATIONS is the commonest copy-forward error in multi-year summaries.
+- Draw a trajectory arrow ("EF 30% → 40%") between values without the date and source of each end, or across different modalities as if they were comparable.
+- List a current drug next to a current eGFR without flagging a dose the label adjusts at that level — flag it `[VERIFY: label renal dosing]`; do not change it.
+
+✅ **DO:**
+- Give every value in KEY RESULTS and every "last objective data" in ACTIVE PROBLEMS its date and source document, then recount that each dated value appears in the input.
+- Check each "stopped for intolerance" entry against the current list so a same-class re-prescribe is flagged, not summarized.
+- Write "allergy lists consistent" in DATA CAVEATS only after comparing every allergy list in the supplied notes; otherwise state how many lists were compared.
 
 ## Output Format
 

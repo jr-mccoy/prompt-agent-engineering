@@ -13,8 +13,20 @@ tags:
   - patient-education
   - after-visit-summary
   - health-literacy
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -50,6 +62,19 @@ The clinician writing the takeaway the patient will actually read at home — cl
 7. **Control reading level and tone.** Short sentences, common words, no unexplained abbreviations, active voice, second person. Respect the patient — accessible is not condescending. Honor language and literacy inputs.
 
 8. **Stay faithful to the clinical plan.** Do not soften a serious finding into vagueness, and do not introduce instructions the encounter didn't include. If the plan is serious, the summary should be clear about it without inducing panic.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Add a number to CALL US OR GO TO THE ER IF ("blood sugar over 300") or a named panel to TESTS AND REFERRALS ("A1c, kidney function, cholesterol") when the plan only said "labs first"; specifics the clinician never chose read as orders.
+- Build "Medicines that stay the same" from the drugs mentioned in the visit narrative instead of a reconciled medication list — a chronic medicine left off that line reads to the patient as an unspoken STOP.
+- Tie a warning sign to a single value when the patient's own regimen can make that value misleading (on an SGLT2 inhibitor, ketoacidosis can occur at near-normal glucose); send that wording back to the clinician.
+- Call the reading-level target met because sentences are short while terms like "A1c" or "low-dose CT" stay unexplained.
+
+✅ **DO:**
+- Reconcile the START/STOP/CHANGE lines one-to-one with the encounter's medication changes: same drug, dose and frequency, none extra and none missing.
+- Check every date, interval and "who will call you" statement against the plan; where the plan is silent, write `[office to confirm]` instead of "within 1 week".
+- Read the plan back against the finished AVS: every plan item appears in it, and every AVS instruction traces to a plan item.
 
 ## Output Format
 

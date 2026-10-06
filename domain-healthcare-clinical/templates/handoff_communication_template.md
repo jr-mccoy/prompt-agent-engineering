@@ -1,4 +1,36 @@
+---
+title: "Clinical Handoff Communication Template"
+category: healthcare-clinical/templates
+description: "Fill-in template for standardized clinical handoff communications based on the SBAR framework, with critical safety information, medications, lines and devices, contingency plans, and read-back verification."
+techniques:
+  - DS-01
+  - ST-03
+  - ST-04
+  - OC-03
+  - QA-01
+difficulty: intermediate
+tags:
+  - handoff
+  - sbar
+  - patient-safety
+  - clinical-documentation
+  - care-team-communication
+updated: "2026-10-06"
+---
+
 # Clinical Handoff Communication Template
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > Copy this template for creating standardized clinical handoff communications.
 > Based on SBAR framework with healthcare-specific extensions.
@@ -229,6 +261,25 @@
 **R - Recommendation:**
 "I think we need to [specific action]. Are you available to [request]?"
 ```
+
+---
+
+## False-Positive Prevention
+
+When filling this template:
+
+❌ **DON'T:**
+- Copy the Allergies table, Code Status or Isolation Precautions forward from the previous shift's handoff; a carried-over "Full Code" or empty allergy row still satisfies the "critical safety information included" checklist line while being stale.
+- Draw a Trend arrow (↑ ↓ →) from a single set of vitals; an arrow needs at least two timed values, otherwise write "single value".
+- Fill the "Action if Abnormal" column with a potassium, troponin or glucose cutoff from memory; use the ordered parameter, or write `per provider order` / `per facility protocol`.
+- Compute "Last Given / Next Due" from the scheduled frequency; held, refused or late doses make that arithmetic wrong.
+- Drop an ordered-but-unresulted lab, image or consult because the Follow-Up Items table only shows two rows.
+
+✅ **DO:**
+- Reconcile every Critical Medications row against the MAR, every Lines/Drains row against the current LDA record, and the allergy list against the chart's allergy field, not against the last handoff.
+- Count pending items: each lab, imaging study and consult ordered and not yet resulted in the chart must appear in Follow-Up Items or Outstanding Consultations, so the two counts match.
+- Check the restraint "Order expires" time and the suicide-precaution level against the active order, and re-time them if the order was renewed this shift.
+- Mark any field you could not confirm as `[not verified — source]` instead of leaving a plausible default ticked.
 
 ---
 

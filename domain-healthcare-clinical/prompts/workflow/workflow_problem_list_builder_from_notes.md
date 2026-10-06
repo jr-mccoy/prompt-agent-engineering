@@ -14,8 +14,20 @@ tags:
   - problem-list
   - documentation
   - ehr
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -49,6 +61,19 @@ Attending cleaning up an inherited problem list that has accreted duplicates and
 7. **Link complications to their root** where the relationship is clinically meaningful (diabetic nephropathy under diabetes; AFib with the relevant anticoagulation consideration noted). This preserves the reasoning, not just the labels.
 
 8. **Flag reconciliation actions** — entries you merged, retired, added, or up-specified — so the clinician can review the changes rather than trust a silent rewrite. Note anything ambiguous that needs chart confirmation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign an ICD-10 code by matching the problem label; a code is inferred, not assigned, until its specificity (type, stage, acuity, linkage) is documented — and combination-code conventions (hypertension with heart failure and/or CKD, diabetes with CKD) can replace separate codes. Mark such codes `[CODER TO VERIFY]`.
+- Add a descriptor the notes do not contain to make an entry look complete — NYHA class, "attributed to diabetes + HTN", "at goal" — each needs a source line or is removed.
+- Retire a problem as resolved because recent notes stop mentioning it; silence in the notes is not resolution.
+- Stage CKD from a single eGFR or from values less than three months apart.
+
+✅ **DO:**
+- Quote, for every ACTIVE and UP-SPECIFIED entry, the note, date and value that supports it (for a CKD stage: at least two eGFRs ≥3 months apart).
+- Recount the existing list: every original entry appears exactly once in the output as kept, merged, retired or ambiguous, and every ADDED entry has a source.
+- Route the coded list through a certified coder or the current ICD-10-CM Official Guidelines before it is used for billing.
 
 ## Output Format
 

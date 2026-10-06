@@ -4,8 +4,8 @@
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
     "total_indexed_artifacts": 6165,
-    "artifacts_with_frontmatter": 5299,
-    "artifacts_without_frontmatter": 866,
+    "artifacts_with_frontmatter": 5309,
+    "artifacts_without_frontmatter": 856,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -15,8 +15,8 @@
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
     "total_prompts": 6165,
-    "prompts_with_frontmatter": 5299,
-    "prompts_without_frontmatter": 866
+    "prompts_with_frontmatter": 5309,
+    "prompts_without_frontmatter": 856
   },
   "prompts": [
     {
@@ -84422,7 +84422,7 @@
         "health-literacy"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84497,7 +84497,7 @@
         "ehr"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84623,7 +84623,7 @@
         "handoff"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84699,7 +84699,7 @@
         "handoff"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84749,7 +84749,7 @@
         "health-literacy"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84774,7 +84774,7 @@
         "care-gaps"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84799,7 +84799,7 @@
         "ehr"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84825,7 +84825,7 @@
         "prognosis"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -84875,7 +84875,7 @@
         "care-coordination"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -85473,24 +85473,25 @@
       "title": "Antimicrobial Timeout Template",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> 48–72 hour antimicrobial timeout template to improve stewardship, safety, and treatment precision.",
-      "techniques": [],
-      "keywords": [
-        "accountability",
-        "antimicrobial",
-        "data",
-        "decision",
-        "diagnostic",
-        "fields",
-        "flag",
-        "follow",
-        "mandatory",
-        "reassessment"
+      "description": "Fill-in 48–72 hour antimicrobial timeout template to improve stewardship, safety, and treatment precision: reassess cultures, source control and clinical response, then continue, narrow, escalate, switch to PO or stop with a documented end date and owner.",
+      "techniques": [
+        "NE-03",
+        "ST-42",
+        "OC-03",
+        "DS-40",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "antimicrobial-stewardship",
+        "antibiotics",
+        "infectious-disease",
+        "medication-safety",
+        "documentation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/templates/care_transition_template.md",
@@ -85498,24 +85499,25 @@
       "title": "Care Transition Template",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> Copy this template for creating structured care transition plans.",
-      "techniques": [],
-      "keywords": [
-        "admission",
-        "care",
-        "clinical",
-        "during",
-        "information",
-        "medication",
-        "medications",
-        "patient",
-        "reconciliation",
-        "started"
+      "description": "Copy-ready template for structured care transition plans covering hospital discharge, facility transfers, and post-acute transitions — medication reconciliation, discharge services, follow-up, pending results, teach-back and readmission risk.",
+      "techniques": [
+        "NE-03",
+        "ST-05",
+        "OC-03",
+        "DS-40",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "care-transitions",
+        "discharge-planning",
+        "medication-reconciliation",
+        "readmission-prevention",
+        "patient-family-education"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/templates/clinical_decision_support_template.md",
@@ -85523,24 +85525,24 @@
       "title": "Clinical Decision Support Template",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> Copy this template when creating clinical decision support requests.",
-      "techniques": [],
-      "keywords": [
-        "acknowledgment",
-        "analysis",
-        "application",
-        "clinical",
-        "context",
-        "decision",
-        "example",
-        "instructions",
-        "patient",
-        "question"
+      "description": "Copy-ready template for clinical decision support requests: a PICO clinical question, structured patient context, analysis instructions with risk-benefit tables and shared decision-making points, and an explicit uncertainty acknowledgment.",
+      "techniques": [
+        "NE-03",
+        "CM-01",
+        "RT-05",
+        "QA-04",
+        "OC-03"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "clinical-decision-support",
+        "evidence-based-medicine",
+        "shared-decision-making",
+        "medication-safety"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/templates/handoff_communication_template.md",
@@ -85548,23 +85550,25 @@
       "title": "Clinical Handoff Communication Template",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> Copy this template for creating standardized clinical handoff communications.",
-      "techniques": [],
-      "keywords": [
-        "assessment",
-        "background",
-        "communication",
-        "handoff",
-        "identifiers",
-        "patient",
-        "recommendation",
-        "situation",
-        "template"
+      "description": "Fill-in template for standardized clinical handoff communications based on the SBAR framework, with critical safety information, medications, lines and devices, contingency plans, and read-back verification.",
+      "techniques": [
+        "DS-01",
+        "ST-03",
+        "ST-04",
+        "OC-03",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "handoff",
+        "sbar",
+        "patient-safety",
+        "clinical-documentation",
+        "care-team-communication"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/templates/cross_cover_signout_template.md",
@@ -85572,24 +85576,24 @@
       "title": "Cross-Cover Signout Template",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> Structured overnight/weekend cross-cover signout to reduce errors and clarify contingency planning.",
-      "techniques": [],
-      "keywords": [
-        "action",
-        "clinical",
-        "context",
-        "cover",
-        "cross",
-        "data",
-        "fields",
-        "flag",
-        "high",
-        "liner"
+      "description": "Structured overnight/weekend cross-cover signout template to reduce errors and clarify contingency planning: if-then watchers, hard stops, time-critical items, and owned follow-up with closed-loop read-back.",
+      "techniques": [
+        "NE-03",
+        "OC-04",
+        "OC-03",
+        "DS-40",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "handoff-communication",
+        "handoff",
+        "patient-safety",
+        "safety-escalation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/templates/discharge_summary_template.md",
@@ -85597,24 +85601,24 @@
       "title": "Discharge Summary Template",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> Standardized template for inpatient discharge documentation to support safe transitions of care.",
-      "techniques": [],
-      "keywords": [
-        "condition",
-        "course",
-        "data",
-        "discharge",
-        "exam",
-        "fields",
-        "flag",
-        "hospital",
-        "mandatory",
-        "medications"
+      "description": "Standardized fill-in template for inpatient discharge documentation to support safe transitions of care: problem-oriented hospital course, discharge medications, pending tests, return precautions and owned follow-up.",
+      "techniques": [
+        "NE-03",
+        "ST-42",
+        "OC-03",
+        "DS-40",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "discharge-summary",
+        "care-transitions",
+        "clinical-documentation",
+        "medication-reconciliation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/templates/goals_of_care_family_meeting_template_v2.md",
@@ -85622,24 +85626,25 @@
       "title": "Goals of Care Family Meeting Template (v2)",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> Structured goals-of-care documentation template emphasizing values alignment, safety, and clear accountability.",
-      "techniques": [],
-      "keywords": [
-        "care",
-        "clinical",
-        "data",
-        "decisions",
-        "family",
-        "fields",
-        "flag",
-        "goals",
-        "mandatory",
-        "meeting"
+      "description": "Structured goals-of-care family meeting documentation template emphasizing values alignment, safety, and clear accountability: capacity and surrogate, prognosis and uncertainty shared, values and tradeoffs, code status and treatment-intensity decisions, and owned follow-up.",
+      "techniques": [
+        "NE-03",
+        "ST-42",
+        "NE-10",
+        "DS-40",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "goals-of-care",
+        "palliative-care",
+        "serious-illness",
+        "shared-decision-making",
+        "documentation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/templates/patient_education_template.md",
@@ -85647,24 +85652,24 @@
       "title": "Patient Education Material Template",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> Copy this template when creating patient education content.",
-      "techniques": [],
-      "keywords": [
-        "audience",
-        "clinical",
-        "content",
-        "education",
-        "maximum",
-        "messages",
-        "output",
-        "patient",
-        "requirements",
-        "structure"
+      "description": "Fill-in template for creating patient education content matched to the patient's health literacy, with prioritized key messages, concrete action steps, warning signs, and teach-back questions.",
+      "techniques": [
+        "ST-01",
+        "RP-02",
+        "CM-02",
+        "ST-03",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "patient-education",
+        "health-literacy",
+        "patient-communication",
+        "teaching"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/templates/psychiatric_assessment_template.md",
@@ -85672,24 +85677,25 @@
       "title": "Psychiatric Assessment Template",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> Copy this template for creating structured psychiatric assessments.",
-      "techniques": [],
-      "keywords": [
-        "assessment",
-        "chief",
-        "complaint",
-        "history",
-        "identifiers",
-        "illness",
-        "information",
-        "patient",
-        "present",
-        "psychiatric"
+      "description": "Fill-in template for structured psychiatric assessments following the standard psychiatric evaluation format, with integrated suicide, violence and capacity assessment, mental status examination, and disposition planning.",
+      "techniques": [
+        "ST-03",
+        "OC-03",
+        "RT-02",
+        "DS-06",
+        "QA-04"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "psychiatry",
+        "mental-status-exam",
+        "risk-assessment",
+        "mental-health",
+        "clinical-documentation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/templates/tumor_board_case_summary_template.md",
@@ -85697,24 +85703,24 @@
       "title": "Tumor Board Case Summary Template",
       "domain": "healthcare-clinical",
       "category": "healthcare-clinical/templates",
-      "description": "> Multidisciplinary cancer case summary template for coordinated diagnostic and treatment planning.",
-      "techniques": [],
-      "keywords": [
-        "board",
-        "case",
-        "clinical",
-        "current",
-        "data",
-        "diagnostic",
-        "fields",
-        "flag",
-        "mandatory",
-        "prior"
+      "description": "Fill-in multidisciplinary cancer case summary template for tumor board review, covering diagnostic summary, staging, prior treatment, red-flag safety constraints, and follow-up accountability for coordinated diagnostic and treatment planning.",
+      "techniques": [
+        "ST-03",
+        "OC-03",
+        "RT-02",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "tumor-board",
+        "oncology",
+        "multidisciplinary",
+        "cancer-staging",
+        "clinical-documentation"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md",

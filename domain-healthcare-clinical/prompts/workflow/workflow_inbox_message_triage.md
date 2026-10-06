@@ -14,8 +14,20 @@ tags:
   - inbox
   - triage
   - ehr
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -51,6 +63,19 @@ Attending clearing your inbox at end of clinic, with a low threshold for escalat
 6. **Draft the action for each item** so it's executable: the refill approved or denied with reason, the result letter, the nurse instruction, the call-back script. A triage that doesn't reduce downstream work is incomplete.
 
 7. **Verification pass.** Re-scan the EMERGENT and URGENT tiers: is anything misclassified down? Confirm no critical result was sorted as routine. State explicitly if any item is ambiguous and needs human eyes on the full chart.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Draft a renal-dose, hold or resume instruction (gabapentin, K-retaining agents, anticoagulants) from a recalled number; use the label or formulary value or write `[VERIFY: label renal dosing at this CrCl]` — label renal tables are keyed to CrCl, not the eGFR the result shows.
+- Treat a single critical value as confirmed without checking the input for a spurious cause (hemolyzed or delayed specimen), or dismiss it as artifact without ordering the repeat.
+- Approve an item in ROUTINE while another item in the batch may be the same patient and changes the decision; resolve identity by MRN/DOB, never by name or drug.
+- Fill TRIAGE VERIFICATION with "re-scanned, no misclassification" as boilerplate.
+
+✅ **DO:**
+- Count items in versus items out: the total across EMERGENT, URGENT, ROUTINE, FYI/DELEGATE and AMBIGUOUS equals the batch size, or a message has been dropped.
+- For each EMERGENT and URGENT line, name the trigger that put it there — the value with units and the reporting lab's critical flag, or the symptom phrase quoted from the message.
+- Label a result with no prior value supplied "single value — no trend available" instead of "improved" or "stable".
 
 ## Output Format
 

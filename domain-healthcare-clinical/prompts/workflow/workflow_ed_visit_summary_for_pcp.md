@@ -14,8 +14,20 @@ tags:
   - care-transitions
   - emergency-medicine
   - handoff
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -48,6 +60,19 @@ Emergency medicine attending writing the courtesy note you would want to receive
 6. **Surface incidental findings** discovered during the workup that have nothing to do with the presenting complaint but need longitudinal follow-up (pulmonary nodule on CT, elevated calcium, thyroid nodule). These are the highest-liability items because no one is assigned to them.
 
 7. **Keep it short and skimmable.** A PCP triages dozens of these. The summary fails if it reproduces the ED note instead of distilling it. Do not fabricate results or follow-up not supported by the encounter.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pad WHY THEY WENT HOME with reassuring negatives the ED course never recorded ("ambulated without desaturation", "no effusion", "CBC/BMP unremarkable") — a disposition rationale assembled from plausible exclusions reads as safe and is unsupported.
+- Write "None pending — all studies finalized in ED" because no pending list was supplied; a missing list is not an empty one (blood cultures, radiology over-reads and send-out labs are the usual stragglers).
+- Attach a surveillance interval or risk category to an incidental finding from memory; if the radiology report gives no recommendation, write the interval as `[VERIFY: current Fleischner / ACR incidental-findings guidance]`.
+- Promote a symptomatic discharge to a named diagnosis in the ED DIAGNOSIS line because every test came back negative.
+
+✅ **DO:**
+- Trace every entry in WORKUP HIGHLIGHTS, TREATMENTS GIVEN and RETURN PRECAUTIONS to a line of the ED input; anything without a source is deleted or tagged `[not in ED record]`.
+- Recount pending items against the ED orders: each culture, send-out and preliminary read appears in PENDING RESULTS with an expected date and a named owner, or the line reads "pending status not supplied — confirm with ED".
+- Say whether each incidental-finding interval is the radiologist's own recommendation or guideline-derived, so the PCP knows which one to reconcile.
 
 ## Output Format
 

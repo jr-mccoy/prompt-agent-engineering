@@ -14,8 +14,20 @@ tags:
   - pre-visit-planning
   - primary-care
   - care-gaps
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -52,6 +64,19 @@ Primary care attending doing the night-before chart review that makes the next d
 7. **Integrate new information received since last visit** — ED visits, specialist recommendations, abnormal results — and turn each into an agenda item.
 
 8. **Produce a ranked agenda** so that if the visit runs short, the highest-yield items are covered first. Do not pad with items the record doesn't support; if data is missing to plan an item, say what to obtain.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mark a screening "overdue" or "meets criteria" from a recalled eligibility rule; name the rule (age band, pack-years, quit window, interval) and tag it `[VERIFY: current USPSTF / ACIP]`, because these criteria are revised.
+- Treat an item as not done because its result is absent from the supplied chart — outside records and ED documents are often missing; write "completion not documented" rather than re-ordering it.
+- Copy last visit's status ("HTN controlled") into CHRONIC PROBLEM AGENDA without a data point from the current interval.
+- Put a test in LABS DUE that was already resulted since the last visit, or leave out the monitoring lab a recently started drug requires.
+
+✅ **DO:**
+- Show the arithmetic for each CARE GAPS TO CLOSE line — last-done date, interval, visit date → due or overdue — and recompute age and pack-years from the input.
+- Cross-walk RANKED VISIT AGENDA against CARRY-FORWARD and NEW SINCE LAST VISIT: every item in those two sections is either on the agenda or explicitly deferred with a reason.
+- Send any agenda item that depends on an unknown (eGFR for a metformin decision, the outside fall work-up) to DATA NEEDED TO COMPLETE PLANNING instead of assuming a normal default.
 
 ## Output Format
 

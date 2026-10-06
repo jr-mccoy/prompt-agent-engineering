@@ -14,8 +14,20 @@ tags:
   - referral
   - consultation
   - care-coordination
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -49,6 +61,19 @@ Referring attending writing the consult you would want to receive — specific e
 6. **Set urgency honestly.** Stat means the patient is unstable or a time-critical decision hinges on the answer. Most consults are routine; mislabeling everything stat erodes the signal. State the timeframe in which the answer is useful.
 
 7. **Pre-empt the predictable follow-up question.** Experienced consultants always ask one thing back (the med list, the last imaging, the goals of care). Include it up front.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill FOCUSED CONTEXT or RELEVANT DATA with vitals, labs, last-dose times or pertinent negatives ("no NSAID use", "no stigmata of liver disease") the referring clinician did not supply — the consultant will act on them as documented.
+- State a calculated score (CHA2DS2-VASc, HAS-BLED, RCRI) without its components; a number the consultant cannot rebuild from the listed history invites a wrong anticoagulation or clearance decision.
+- List standard-of-care steps under ALREADY DONE (PPI started, anticoagulant held, type and screen) because they are what usually happens, not because they were documented.
+- Set SETTING to "routine" or "stat" from the diagnosis alone when the stability data behind it were not given.
+
+✅ **DO:**
+- Recompute every score from the supplied history (age band, sex, each listed comorbidity) and print the components beside it; if they are not supplied, write `[components not supplied]` instead of a number.
+- Give each RELEVANT DATA item its date and trace it to the input; data the consultant will need but that is not yet available goes under ANTICIPATED FOLLOW-UP as "not yet available".
+- Read the request from the consultant's side: if the CONSULT QUESTION cannot be answered from the data in the request, name the missing datum.
 
 ## Output Format
 

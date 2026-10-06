@@ -1,4 +1,36 @@
+---
+title: "Care Transition Template"
+category: healthcare-clinical/templates
+description: "Copy-ready template for structured care transition plans covering hospital discharge, facility transfers, and post-acute transitions — medication reconciliation, discharge services, follow-up, pending results, teach-back and readmission risk."
+techniques:
+  - NE-03
+  - ST-05
+  - OC-03
+  - DS-40
+  - QA-01
+difficulty: intermediate
+tags:
+  - care-transitions
+  - discharge-planning
+  - medication-reconciliation
+  - readmission-prevention
+  - patient-family-education
+updated: "2026-10-06"
+---
+
 # Care Transition Template
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > Copy this template for creating structured care transition plans.
 > Covers hospital discharge, facility transfers, and post-acute transitions.
@@ -288,3 +320,20 @@
 - Post-discharge call is strongly recommended for ALL patients, required for high-risk
 - This template complements `medicine_care_coordination_transitions.md`
 - For shift-to-shift handoffs, use `handoff_communication_template.md` instead
+
+---
+
+## False-Positive Prevention
+
+When filling this template:
+
+❌ **DON'T:**
+- Fill Pre-Admission Medications from the previous discharge or the outpatient list without checking it against the patient, caregiver or pharmacy fill history — a copied-forward list carries drugs the patient already stopped.
+- Tick every Medication Reconciliation Verification box while the Changed and Stopped tables are empty; a ticked "All changes intentional and documented" next to empty tables usually means the comparison was never made.
+- Leave the template's pre-printed defaults standing as if they were orders — "Within 7 days" in Follow-Up Appointments, an oxygen flow rate, "[X visits/week]" home-health frequencies.
+- Leave Pending Results blank when admission cultures, pathology or send-out labs exist, or carry "NKDA" into Allergies from triage without the current allergy record.
+
+✅ **DO:**
+- Recount the medication tables: each pre-admission drug appears in the Discharge Medication List or in Stopped with a reason, and each new or changed drug appears in the discharge list at the same dose and frequency.
+- Check that the ticked Readmission Risk level agrees with the risk factors ticked beneath it, and that the high-risk interventions block is completed whenever the level is High.
+- Date the Functional Status entries and compare them with a documented pre-admission baseline, not with the patient's state on admission.
