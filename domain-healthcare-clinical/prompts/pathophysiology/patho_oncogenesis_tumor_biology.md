@@ -15,8 +15,20 @@ tags:
   - targeted-therapy
   - immunotherapy
   - mechanism
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -99,6 +111,20 @@ Senior medical oncologist explaining mechanism to a colleague. Names the driver,
    - Histologic transformation: NSCLC to small cell, NSCLC to squamous on EGFR-TKI, NEPC from CRPC.
    - Pharmacologic: efflux pump (MDR1), reduced uptake, target loss.
    - Microenvironmental / immune-mediated resistance to checkpoint inhibitors: β2-microglobulin loss (MHC-I loss), JAK1/2 loss-of-function (IFN-γ signaling loss → no PD-L1 upregulation needed → no checkpoint vulnerability).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill `KEY MOLECULAR PROFILE` from what the tumor type usually carries; drivers, fusion partners, PD-L1, MSI/MMR and HER2 category come only from the user's pathology or sequencing report.
+- Mix scoring systems when claiming eligibility — PD-L1 TPS vs CPS, MSI by PCR vs MMR by IHC, HER2 IHC 0/1+/2+/3+ with or without ISH. A therapy line built on the wrong assay reads as correct.
+- Attach a trial acronym, survival gain in months, or response rate to a regimen unless you are sure of the trial and its population; otherwise describe the evidence type ("phase III, first-line, HER2-positive").
+- Present `SEQUENCING / DURATION` as a fixed standard; line order changes with approvals and guideline updates — `[VERIFY: current NCCN/ESMO guideline and label]`.
+- State a metastatic-tropism or resistance mediator as settled when the support is preclinical or correlative.
+
+✅ **DO:**
+- For every agent in `THERAPY MAPPED TO MECHANISM`, write the triplet drug → molecular target → the specific alteration or assay result in the input that makes the patient eligible; count the agents with no matching biomarker and remove or flag each one.
+- Trace each signaling arrow (receptor → adaptor → kinase → transcriptional effect) to a source type, and tag mechanisms shown only in cell lines or mouse models as preclinical.
+- Check that each item in `EXPECTED RESISTANCE` fits the drug class it is attached to (an on-target kinase mutation explains TKI escape, not antibody-drug-conjugate payload resistance) and that the "next-line agent" named actually acts on that mechanism.
 
 ## Output Format
 

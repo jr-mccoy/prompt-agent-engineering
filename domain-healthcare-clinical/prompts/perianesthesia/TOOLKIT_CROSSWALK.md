@@ -1,4 +1,35 @@
+---
+title: "Toolkit Crosswalk — Library Drill ↔ Clinical Source of Truth"
+category: healthcare-clinical/perianesthesia
+description: "Maps each PACU learner drill, primer, and rehearsal to the educator-toolkit or nursing seed artifact that supplies its clinical facts, so learner prompts point to one source of truth instead of restating clinical content."
+techniques:
+  - OC-12
+  - OC-03
+  - CM-03
+  - AG-38
+difficulty: beginner
+tags:
+  - pacu
+  - crosswalk
+  - orientation
+  - nursing
+updated: "2026-10-06"
+---
+
 # Toolkit Crosswalk — Library Drill ↔ Clinical Source of Truth
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **The boundary made concrete.** This library authors the **learner's side** (drills, primers, rehearsals, self-assessment, the progression spine). It does **not** re-state clinical content — doses, thresholds, complication scaffolds, drug monographs, population specifics, curriculum design, and the preceptor's evaluation lifecycle all live in the **educator toolkit** (`domain-healthcare-clinical/prompts/perianesthesia/`) or in the **nursing seed prompts** (`domain-healthcare-clinical/prompts/nursing/`). This document is the single map from each learner prompt to the artifact that supplies its clinical facts.
 
@@ -151,6 +182,23 @@ Four `see_also_toolkit` targets are toolkit Wave-4 artifacts planned but not yet
 | `pacu_aspan_competency_domain_crosswalk` | *(superseded by this file + `COMPETENCY_PROGRESSION_MAP.md`)* |
 
 > A few library prompts reference toolkit `*_meta` visual/planning artifacts (`pacu_aldrete_score_visual_meta`, `pacu_dermatome_block_level_meta`, `pacu_escalation_who_to_call_meta`, `pacu_handoff_sbar_visual_meta`) named in `BUILD_PLAN.md` §6. Where a named meta-artifact is not present in the current toolkit build, treat it as a planned visual companion; the library drill stands alone until it lands (same non-blocking rule).
+
+---
+
+## False-Positive Prevention
+
+When applying this document to route a drill to its clinical source:
+
+❌ **DON'T:**
+- Treat a row as proof that its target exists. Several targets are marked pending, some `*_meta` companions are not yet built, and the `BUILD_PLAN.md` sections cited here may not resolve in this repository.
+- Follow a row to the toolkit and then copy the clinical fact into the learner drill; the crosswalk row still looks correct while the single-source rule it enforces is broken.
+- Assume a target covers the drill's full clinical need because its name matches — a generic complication generator standing in for a pending airway-teaching artifact covers less than the drill asks.
+- Repair an unresolved name by picking the nearest-sounding file; a near-match routes the learner to the wrong clinical content with full confidence.
+
+✅ **DO:**
+- Resolve each target before relying on it: confirm the file exists under `clinical-and-educator/`, `prompts/nursing/`, or the named skill directory, and list every name that does not resolve instead of guessing.
+- Check that a drill and its target share a competency domain and stage in `COMPETENCY_PROGRESSION_MAP.md`; a target from a different domain is a mis-route even if the file exists.
+- For a pending target, use the documented fallback and state the gap in the drill's output, so the learner knows which clinical facts still come from facility material.
 
 ---
 

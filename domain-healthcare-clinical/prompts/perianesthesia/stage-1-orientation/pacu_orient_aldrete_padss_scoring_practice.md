@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, DS-06, RT-02, QA-04, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_recovery_one_liner_drill.md
   - pacu_orient_outbound_sbar_report_rehearsal.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Aldrete / PADSS Scoring & Trending — Practice Drill
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A scoring-practice drill, not live clinical decision support. Score and discharge real patients per your facility's protocol and preceptor.
 >
@@ -87,6 +100,20 @@ One coaching point: [...]
 | `tool` | Switch Phase 1 (Aldrete) vs ambulatory (PADSS) |
 | `checks` | More time points to practice trending |
 | `mode` | `score-it` vs. `why-is-it-stalled` (diagnose the limiting category) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mark Consistency Y when the point is right but the stated reason is a cue from another category (arousal used to justify the respiration point); the reason must match that category's descriptor on the pasted tool.
+- Report a total before every category on the pasted tool is scored; a total from three of five categories reads as a low score rather than an incomplete one.
+- State a sum added in your head; the tutor's arithmetic is a checkable claim.
+- Fill in a discharge cutoff, the maximum total, or "usual" point values when the tool was not pasted — stop at Method step 1 and ask for it.
+- Read a total that reached threshold as ready while one category fell (consciousness rose, oxygenation dropped); trend is read per category, not only on the total.
+
+✅ **DO:**
+- Recompute the total from the listed category points, and confirm the number of scored categories equals the number on the pasted tool, before writing "Total".
+- Quote the pasted tool's descriptor beside each category point so a reviewer can see the cue-to-descriptor match.
+- Compare check 1 and check 2 category by category and name every category that moved, in either direction.
 
 ## Verification Checklist
 

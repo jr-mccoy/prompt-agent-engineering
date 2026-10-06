@@ -15,8 +15,20 @@ tags:
   - mechanism
   - antimicrobials
   - virulence
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -104,6 +116,20 @@ Senior infectious disease specialist explaining mechanism to a colleague. Names 
    - When intracellular: choose agent with intracellular penetration (macrolide for Legionella, rifampin for TB, etc.).
    - When immune evasion via capsule: vaccinate (asplenic), consider longer therapy.
    - When latent reactivation: chronic suppression (acyclovir, HIV ART, anti-TB INH for latent).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill `Empiric: [class, agent, dose, route, duration]` with doses, intervals, drug-level targets or course lengths from memory. They depend on current IDSA/society guidance, the label, local antibiogram and the patient's renal function — use the clinician's value or `[VERIFY: current guideline/label/formulary]`.
+- Attach a toxin's action to the wrong molecular target or to the wrong component of a two-part toxin; long virulence-factor lists are where a mislabeled mediator passes unnoticed.
+- Write the `Targeted on cultures` line as if susceptibilities were known when the user supplied none — say what result would select between the options.
+- Name a trial by first author or a guideline by year unless you are sure of it; otherwise name the source type ("randomized trial in retained-implant PJI").
+- Recommend an agent without checking the host factors the user gave: β-lactam allergy history, eGFR, pregnancy, QT-prolonging co-medications, and the CYP-induction interactions of rifamycins.
+
+✅ **DO:**
+- Trace each link adhesin → invasion → toxin/evasion → clinical feature to a named source type, and mark which links are established in human infection and which come only from animal or in-vitro models.
+- Check every agent left in `ANTIMICROBIAL STRATEGY` against the supplied allergy list, renal function and medication list, and list what was checked under it; an agent whose check could not be run because data were missing is flagged, not kept silently.
+- Confirm that each `WHY ALTERNATE AGENTS WOULD FAIL` claim names the specific vulnerability from the mechanism sections above (biofilm, intracellular niche, inoculum effect, tissue penetration) rather than a general preference.
 
 ## Output Format
 

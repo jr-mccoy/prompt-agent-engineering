@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-01, ST-02, ED-02, RT-02, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_week1_expectations_map.md
   - pacu_foundations_vocabulary_acronym_builder.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # What Is PACU? — The Beginner's Mental Model
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** This is a study/orientation primer, not live clinical decision support. For any real patient, follow your preceptor, charge nurse, provider, and facility protocol.
 
@@ -98,6 +111,19 @@ Confidence self-rating (1–5) that I could explain PACU to a friend: [ ]
 | `prior_experience` | Reframes what transfers vs. what's new (e.g., ICU nurses know monitors, not emergence arcs) |
 | `facility_type` | Ambulatory centers weight Phase 2 / discharge readiness more heavily |
 | `depth` | `orientation` (default, plain) vs. `enriched` (adds the "why" behind each pipeline change) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Draw the pipeline as one fixed route; an inpatient commonly moves from Phase 1 to an inpatient unit, an ambulatory patient through Phase 2 to home, and some patients to critical care — a single arrow chain passes "complete pipeline" and misplaces Phase 2.
+- Equate Phase 2 with a step-down unit, or define either phase by time or score; the phases differ by focus of care, and step-down is a unit level.
+- State as universal a responsibility the facility assigns — who writes or meets PACU discharge criteria, who decides bed readiness.
+- Let the three anchor questions require knowledge the primer never covered; they then test recall the learner does not have.
+
+✅ **DO:**
+- Check the pipeline against `facility_type`: ambulatory → through Phase 2 to home; hospital main OR → inpatient route, plus the Phase 2 route if the facility uses it.
+- Check the core-job sentence keeps all four verbs (receive, recognize, intervene within scope, escalate); a memorable sentence that drops escalation fails.
+- Check each who's-who line runs both ways — what the role hands the nurse and what the nurse hands back.
 
 ## Verification Checklist
 

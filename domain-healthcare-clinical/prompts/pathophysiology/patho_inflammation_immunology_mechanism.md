@@ -16,8 +16,20 @@ tags:
   - autoimmune
   - biologics
   - mechanism
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -86,6 +98,20 @@ Senior immunologist / rheumatologist explaining mechanism to a colleague. Names 
    - **Complement inhibition (eculizumab, ravulizumab — anti-C5):** PNH, aHUS, generalized myasthenia gravis (AChR+), NMOSD.
 
 6. **Explain why the targeted therapy works in the disease it works in, and why it does not work (or causes harm) in adjacent diseases.** Tie back to the dominant axis in step 3.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign `DOMINANT IMMUNE AXIS` from the textbook label for the disease when the user's own biomarkers (eosinophil count, IgE, IFN signature, complement, autoantibody pattern) point to a different or mixed axis.
+- Explain why a biologic fails with a structural claim about the molecule — Fc present or absent, which receptor subunit, which JAK — that you have not checked; a wrong molecular reason makes a true clinical observation look proven.
+- Quote EASI-75, PASI-90, ACR50 or adverse-event percentages as single round numbers; they differ by trial, dose, timepoint and monotherapy vs combination, so give the trial and population or describe the effect qualitatively.
+- Promote case reports of paradoxical reactions into a settled cytokine-shift mechanism.
+
+✅ **DO:**
+- Before writing what each drug blocks in `THERAPEUTIC INTERVENTION POINTS`, check its actual target against the label: ligand vs receptor, which subunit (p40 vs p19, IL-4Rα, IL-5 vs IL-5Rα), soluble receptor vs antibody.
+- Tag each arrow trigger → sensor → cytokine → effector cell → tissue damage as established in human disease, shown only in animal or in-vitro models, or proposed; an untagged arrow is treated as proposed.
+- Check every "why X fails or worsens disease" line against the axis assigned in step 3 — the failure must follow from that axis. If one drug works in two diseases you placed on opposite axes, revisit the axis assignment instead of adding an ad-hoc explanation.
+- Mark indications, boxed warnings and pre-biologic screening (TB, hepatitis B) as `[VERIFY: current label]`.
 
 ## Output Format
 

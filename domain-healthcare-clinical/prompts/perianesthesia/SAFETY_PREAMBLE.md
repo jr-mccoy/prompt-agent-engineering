@@ -1,4 +1,36 @@
+---
+title: "PACU Educator Toolkit — Shared Safety Preamble"
+category: healthcare-clinical/perianesthesia
+description: "The shared safety preamble for every perianesthesia artifact: what the toolkit is and is not, the non-negotiable content rules (no invented doses, thresholds, protocols, sources or scope), and the verification checklist before use."
+techniques:
+  - OC-10
+  - CM-02
+  - OC-09
+  - CM-09
+  - QA-01
+difficulty: intermediate
+tags:
+  - pacu
+  - safety
+  - patient-safety
+  - nursing
+updated: "2026-10-06"
+---
+
 # PACU Educator Toolkit — Shared Safety Preamble
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Scope:** This preamble applies to every skill, prompt, image meta-prompt, and orchestrator
 artifact in `domain-healthcare-clinical/prompts/perianesthesia/`. Individual artifacts carry a one-line safety reminder that
@@ -67,6 +99,22 @@ Image meta-prompts produce **layout-and-rendering** instructions, not sources of
 Image models are not anatomically or numerically reliable. Every clinical structure, label, value,
 and relationship in a generated image must be supplied by the user from an expert-verified source
 and checked by a qualified reviewer before any instructional use.
+
+## False-Positive Prevention
+
+When applying this document, the failure is an artifact that *looks* compliant with §2 and §6 while breaking them:
+
+❌ **DON'T:**
+- Count `per provider order` or `per facility protocol` in the body as compliance when the same artifact fills the slot elsewhere — a worked example, quiz answer key, rationale, image label, table footnote or "typical value" aside that supplies the number.
+- Accept a citation because it has the right shape ("*Drain's*, Ch. N: Title"). A chapter title or number that does not exist in the named edition passes a skim of §2 rule 4 on form alone.
+- Tick "safety reminder line present" when it appears only at the end, inside a collapsed section, or in the generator prompt but not in the generated artifact.
+- Let passive voice hide who acts ("naloxone is given", "the airway is secured", "the infusion is titrated") — scope inflation that never names the nurse still fails rule 5.
+- Treat escalation as "by role" when the role comes attached to an invented pager number, response time or activation criterion.
+
+✅ **DO:**
+- Run §6 as a search, not a read-through: scan the whole artifact — examples, answer keys, image prompts, tables, alt text — for digits and units (mg, mcg, mL, /min, /h, %, °, mmHg, score values) and account for every hit (a chapter or stage number is allowed; a dose, rate or cut-off is not).
+- Check each cited chapter against the table of contents of the named edition; if it cannot be checked, replace it with "source not verified" rather than keeping the closest-sounding title.
+- For each clinical action verb, name the actor; any action that needs a provider order must say `per provider order` beside it.
 
 ## 6. Verification checklist before use
 

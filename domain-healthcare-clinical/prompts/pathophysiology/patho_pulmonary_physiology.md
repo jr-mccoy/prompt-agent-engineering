@@ -15,8 +15,20 @@ tags:
   - physiology
   - mechanism
   - gas-exchange
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -82,6 +94,20 @@ Senior pulmonary / critical-care physician reasoning at the bedside. Names the m
    - **Neuromuscular blockade (cisatracurium):** reduces patient–ventilator asynchrony, reduces oxygen consumption, controls intra-thoracic pressure profile. Older data (ACURASYS) suggested mortality benefit in severe ARDS; ROSE trial did not replicate — use selectively for severe asynchrony or refractory hypoxemia, not routinely.
    - **Recruitment maneuver:** temporary high CPAP / sustained inflation to reopen atelectatic regions. ART trial showed harm with aggressive recruitment + decremental PEEP titration — generally avoid; gentle recruitment may help individual patients but not standard.
    - **ECMO (VV-ECMO):** for refractory hypoxemia despite optimal lung-protective ventilation, prone, NMB, and inhaled vasodilators. EOLIA / Bayesian re-analysis support VV-ECMO in severe ARDS. VV bypasses lung gas exchange; allows ultra-protective ventilation; VA for combined cardiac failure.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Plug values into the alveolar gas equation without checking their form: FiO2 as a fraction not a percent, PaO2 and PaCO2 in mmHg not kPa, and barometric pressure adjusted when the patient is at altitude.
+- Report a shunt fraction as a percentage from a bedside rule of thumb as though it were measured; without mixed-venous data it is an estimate, and the estimate must be arithmetically consistent with the PaO2 you started from.
+- Call a gradient "Bohr" or "Enghoff" dead space when only end-tidal CO2 is available — PaCO2 − PetCO2 is a different quantity and should be named as such.
+- Quote trial entry criteria (prone positioning, ECMO), driving-pressure or plateau targets, or inhaled-vasodilator ppm from memory; write the clinician's value or `[VERIFY: current guideline]`.
+- Label hypoxemia "shunt" or "V/Q mismatch" without a documented response to a change in FiO2.
+
+✅ **DO:**
+- Recompute and show each number in `GAS EXCHANGE ASSESSMENT` and `LUNG MECHANICS` from the inputs: PAO2 = FiO2 × (Patm − 47) − PaCO2/0.8, A–a, P/F, Cstat = Vt / (Pplat − PEEP), ΔP. Check that the stated Vt in mL/kg matches the predicted body weight from the supplied height and sex.
+- Check the acid-base line against compensation math: expected HCO3 for acute vs chronic respiratory acidosis from the PaCO2 change, and say which one the measured HCO3 fits.
+- Tie each prediction under `PREDICTED RESPONSE TO` back to the mechanism named in `DOMINANT MECHANISM(S) OF HYPOXEMIA`, and flag predictions that depend on an unmeasured property such as recruitability or RV function.
 
 ## Output Format
 

@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-01, RT-02, DS-06, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_emergence_respiratory_physiology.md
   - pacu_foundations_monitoring_and_scores_primer.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Hemodynamics of Emergence — Post-Op BP, HR, and Rhythm Swings
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study primer, not live clinical decision support. Real hemodynamic management follows your preceptor, provider order, and facility protocol.
 
@@ -88,6 +101,20 @@ Pattern I'd most likely misread: [ ]
 | `patterns` | Focus one pattern in depth |
 | `reversible_first` | Emphasize cause-hunting before pharmacology |
 | `depth` | `orientation` (default) vs. `enriched` (adds preload/afterload mechanism) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let a reused category list land under the wrong direction — residual vasodilation listed as a cause of hypertension, or pain as a cause of bradycardia — the list looks complete and points the learner at the wrong fix.
+- Omit bleeding/volume loss from the hypotension list; a list of comfort and temperature causes passes "reversible causes first" while missing the cause nursing measures cannot fix.
+- Offer the same cause renamed as a mimic pair ("pain vs. discomfort"); a real mimic reaches the same reading through a different mechanism with a different fix.
+- Name a rhythm and attach a meaning or a drug to it, or call one benign; the rhythm block stops at "change recognized, escalated".
+- Slip a number in as a percentage change from baseline, a "baseline ±" band, or a target in the worked example.
+
+✅ **DO:**
+- For each pattern, check every cause on the reversible list reappears in a cause → check → action → escalate chain; a cause listed but never checked is decoration.
+- Confirm each "Maps to toolkit" file exists in clinical-and-educator/ (e.g., `pacu_post_op_hypertension.md`) before naming it.
+- Check that "escalate" in each chain says when (trend persisting after the fixable causes are addressed) and to which role.
 
 ## Verification Checklist
 

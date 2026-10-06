@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-01, RT-02, DS-06, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_anesthesia_pharmacology_map.md
   - pacu_foundations_anesthesia_types_primer.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Emergence Respiratory Physiology — Why Airways Get Into Trouble
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study primer, not live clinical decision support. Real airway events are managed by your preceptor, the anesthesia provider, and facility protocol.
 
@@ -92,6 +105,19 @@ My shakiest mechanism right now: [ ]
 | `focus` | Drill one mechanism family in depth |
 | `link_to_events` | Toggle the crosswalk to named toolkit complications |
 | `depth` | `orientation` (default) vs. `enriched` (adds reversal-agent mechanism from the pharmacology map) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write a chain with a reversed or invented arrow — e.g., NPPE causing laryngospasm, when NPPE follows forceful breathing against a closed airway — a reversed chain still has every slot filled.
+- Offer a falling saturation as the cue-before-classic-signs for hypoventilation in a patient on supplemental oxygen; saturation can stay reassuring while CO₂ climbs, so that cue is a late sign.
+- Collapse laryngospasm, bronchospasm and NPPE into one "can't move air" entry with a shared response; the mimics block needs a different mechanism and a different bedside discriminator for each (stridor or no air movement vs. wheeze vs. frothy secretions after an obstructed effort).
+- Present the nearest-sounding toolkit file as the mechanism's source — the worked example points residual NMB at the OIRD file as a "cousin"; say it is a cousin, not the residual-paralysis source.
+
+✅ **DO:**
+- Read each chain left to right and check every arrow is cause → effect; mark any arrow you could not defend to an anesthesia provider `[VERIFY: Drain's / Core Curriculum]`.
+- Check each within-scope response uses only the role-line verbs (observe, position, oxygen per order, stimulate, prepare, assist, escalate); reword anything beyond them as "assist the provider with" or `per provider order`.
+- When `focus = all`, count the chains produced against the five mechanism families in the Method and name any missing.
 
 ## Verification Checklist
 

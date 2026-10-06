@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ST-03, ED-02, DS-06, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_self_assessment_blueprint.md
   - pacu_growth_remediation_pathway.md
@@ -27,6 +27,19 @@ references:
 ---
 
 # PACU Learning Objectives by Stage — Bloom's-Calibrated, Recognize → Teach
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** An objectives-writing and calibration tool, not live clinical decision support and not a graded curriculum. It helps *you* set the right cognitive target for your stage; the official curriculum, objectives, and evaluation belong to your educator (see the toolkit's orientation/curriculum suite).
 
@@ -88,6 +101,19 @@ Practice with: [matching stage drills/rehearsals]
 | `domains = safety-critical` | Objectives for airway/CV/pharm/handoff/safety only |
 | `stage = 4` | Shift to Create/Teach objectives (teach-back, debrief, QI, appraisal) |
 | `granularity` | One terminal objective per domain vs several enabling sub-objectives |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mark `Bloom's level: … calibrated` because the verb appears on a Bloom's list for that level. Verbs such as "assess", "evaluate" and "manage" span levels and, in a PACU objective, often span scope too; classify by what the learner actually does under the stated condition.
+- Let a number back in through the condition or standard ("given a saturation of N", "within N minutes of arrival", "Aldrete of N") while the verb passes the scope check.
+- Swap a provider-scope verb for a soft synonym that keeps the provider decision ("determine the reversal agent", "select the antiemetic", "adjust the drip") and call it reframed.
+- Label a Stage-4 objective Create/Teach when it is an Apply objective performed in front of a junior; teaching requires the learner to design or run the teaching, with teach-back.
+
+✅ **DO:**
+- Read the cell, not the stage: pull the expected level for each domain × stage from the master grid before writing (Thermoregulation and Nausea/PONV are already Independent at S1, so a Stage-1 "with cues" objective there is pitched too low).
+- Read every objective back as a preceptor would: could the behavior be seen on one shift or one drill? If the condition only exists in a written quiz, the "observable condition" slot is filled in name only — rewrite it.
+- Check each pasted objective's rewrite against the original's intent, so calibration changes the level without silently changing what is being learned.
 
 ## Verification Checklist
 

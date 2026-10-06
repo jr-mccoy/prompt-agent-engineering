@@ -15,8 +15,20 @@ tags:
   - mechanism
   - precision-medicine
   - inheritance
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -81,6 +93,20 @@ Senior medical geneticist / molecular medicine specialist explaining mechanism t
    - **Allele-specific silencing (ASO, siRNA):** patisiran / vutrisiran (RNAi targeting TTR mRNA) for ATTR amyloidosis. Inotersen / eplontersen (ASO) for same. Reduces production of the misfolding protein.
    - **CRISPR-based gene editing:** casgevy (exa-cel) for sickle cell and β-thalassemia — edits BCL11A enhancer in HSCs to reactivate fetal hemoglobin. Approved 2023–2024.
    - **Downstream pathway correction:** if direct gene targeting unavailable, target the pathway. Mavacamten (cardiac myosin inhibitor) in HCM — reduces actin-myosin crossbridge in sarcomere, useful regardless of specific MYH7 variant. Statins in familial hypercholesterolemia (LDLR variants) — upregulate LDLR transcription; PCSK9 inhibitors when LDLR partial loss leaves some receptor for PCSK9 inhibitor to amplify.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the `VARIANT:` slot with an HGVS string (c./p. notation, exon number) that the user did not supply; a correctly formatted but invented c. coordinate is a fabricated fact that looks like precision.
+- Build a confident phenotype chain on a variant the user's report classifies as VUS or likely benign — the chain then "explains" a phenotype the variant may not cause.
+- Derive `INHERITANCE PATTERN` from the molecular class alone (LoF → recessive) when the gene is haploinsufficient or has both dominant and recessive families.
+- Put one number in `Penetrance estimate (if known): [%]` when published estimates vary by cohort, sex, age and ascertainment; give a range with its source type, or write `unknown`.
+- List responsive-variant sets, exon-skipping eligibility or approved indications for a targeted therapy from memory — these labels change; mark `[VERIFY: current label]`.
+
+✅ **DO:**
+- Walk the chain variant type → protein effect → expressing cell type → feature and name the evidence type behind each arrow (functional study, lab report/ClinVar, review, label); a feature in `PHENOTYPE EXPLAINED` with no matching tissue in `CELLULAR & TISSUE PATHOLOGY` is unexplained, not explained.
+- Recompute the recurrence risks in `CASCADE-SCREENING & FAMILY IMPLICATIONS` from the stated inheritance and the parents' actual genotypes, instead of copying the autosomal-recessive 25/50/25 split onto a dominant, X-linked, imprinted or mitochondrial case.
+- Route cascade testing and reproductive options to genetic counseling, and say which family members the inheritance pattern actually puts at risk.
 
 ## Output Format
 

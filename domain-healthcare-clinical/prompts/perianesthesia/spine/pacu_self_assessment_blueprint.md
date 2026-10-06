@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ST-03, ED-02, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_growth_remediation_pathway.md
   - pacu_learning_objectives_by_stage.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # PACU Self-Assessment Blueprint — What Evidence Proves Each Competency
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A self-assessment blueprint, not live clinical decision support and not the official evaluation. It tells *you* what evidence would prove a competency so you can gather it honestly; your preceptor, educator, and facility make the formal competency and sign-off decisions.
 
@@ -87,6 +100,20 @@ Collectible gaps (what rep/artifact closes each): [...]
 | `bar` | Raise to `Independent-under-load` or `Proficient` for a stricter or later-stage audit |
 | `evidence_type_filter` | Require only `direct-observation` + `artifact` (drop self-report) for a rigorous pre-evaluation pass |
 | `stage` | Run a Stage-4 version for charge/preceptor readiness evidence |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Grade a descriptor MET when the "My evidence" line restates the descriptor ("I can run the recognize→act→escalate chain") instead of naming one specific recent instance — what was seen, what the learner did, who saw it.
+- Let a `self-report-with-example` instance carry MET on a descriptor tagged `direct-obs`; when the evidence supplied is weaker than the type the descriptor demands, the grade is PARTIAL until the stronger evidence exists.
+- Paraphrase a bar or misconception from memory when `COMPETENCY_PROGRESSION_MAP.md` was not supplied — every grade under an invented bar looks rigorous and measures nothing.
+- Let the AGGREGATE read as a readiness verdict or a percentage ("80% competent", "ready for sign-off"); it is a count of evidence, not a score the facility uses.
+
+✅ **DO:**
+- Recount the AGGREGATE from the per-domain grades before writing it: Met + Partial + Not-yet must equal the number of domains audited, and every Not-yet must reappear under Collectible gaps.
+- Quote the map cell (stage column × domain row) beside each Bar; if the map is unavailable, write `bar: [confirm from COMPETENCY_PROGRESSION_MAP.md]` and mark that domain's grade provisional.
+- Fill "Misconception check" with the behavior in the instance that showed the trap present or absent, not a bare Y/N.
+- Check that the highest-leverage gap is a rep or artifact a preceptor could actually observe, and that its route names a drill or pathway file that exists in the toolkit.
 
 ## Verification Checklist
 

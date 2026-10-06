@@ -16,8 +16,20 @@ tags:
   - potassium
   - calcium
   - mechanism
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -58,6 +70,19 @@ Senior nephrologist or internal medicine attending teaching mechanism. Names the
    - ECG changes if applicable (peaked T in hyperK; long QT in hypoCa, hypoMg, hypoK; U waves in hypoK)
 
 7. **Therapeutic logic.** Map each treatment to which step in the chain it interrupts or replaces.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write a transporter chain whose molecule names are all real but whose arrows are wrong — ADH acting via V1 to insert AQP2, aldosterone "opening ROMK" directly, PTH reabsorbing phosphate. A correct cast of transporters in the wrong order still reads as mastery.
+- Fill `BROKEN STEP` with the diagnosis ("SIADH", "TLS") instead of the specific failed element of the loop named in `REGULATORY AXIS`.
+- Explain a Ca, phos or Mg value without its units (mg/dL vs mmol/L) or, for calcium, without asking whether it is total or ionized and what the albumin is.
+- Put a Ca × phos product cut-off, urine-output target, insulin/dextrose amount or calcium-salt dose into `TREATMENT MAPPED TO MECHANISM` from memory; use the clinician's value or `[VERIFY: current guideline/label/formulary]`.
+
+✅ **DO:**
+- Trace every numbered link in `CAUSAL CHAIN` to a named source type (renal physiology text, product label, guideline, review) and to a molecule already listed in `NAMED TRANSPORTER / CHANNEL CHAIN`; a link with neither is cut or marked `[unverified step]`.
+- Before explaining hypocalcemia, compute albumin-corrected calcium from the supplied albumin (or request ionized Ca); before explaining hyperkalemia, state whether hemolysis or pseudohyperkalemia has been excluded.
+- Test the chain against the user's other values: if a supplied number moves opposite to what `PREDICTED ASSOCIATED FINDINGS` says (e.g. dilute urine when the chain needs high ADH), report that the mechanism does not fit rather than bending it.
 
 ## Output Format
 

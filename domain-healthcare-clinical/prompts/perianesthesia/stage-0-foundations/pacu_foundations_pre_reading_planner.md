@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, RT-02, QA-04, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_week1_expectations_map.md
   - pacu_foundations_vocabulary_acronym_builder.md
@@ -27,6 +27,19 @@ references:
 ---
 
 # Pre-Reading Planner — Sequence Your Beginner Reading Before Day 1
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study-planning tool, not clinical decision support and not a source of clinical facts. It sequences *real, named references you supply or own* — it does not invent content or citations.
 
@@ -89,6 +102,19 @@ Reading supplements orientation — it does not replace it.
 | `time_budget` | Scales block size / total scope |
 | `case_mix` | Reprioritizes topics toward the learner's caseload |
 | `prior_experience` | Compresses familiar foundations |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the source column with a plausible chapter number or title for Drain's or the Core Curriculum; the "(confirm #)" placeholder in the worked example must survive into the real plan until the learner has the book open.
+- Accept every learner-named source as a reference work — a vendor in-service handout, a blog, or a misremembered title can end up as Tier 1 reading.
+- Let block estimates that each look reasonable add up to more than the weekly `time_budget`.
+- Describe what the facility orientation packet or unit protocols contain; their contents are the learner's to report, not the planner's to assume.
+
+✅ **DO:**
+- Sum the "Est. time" column per week and compare it with `time_budget`; move blocks to NOT YET until the total fits.
+- Check tier order against the dependency rule: no recovery-domain block is scheduled before the physiology or pharmacology block it depends on.
+- Check each recall question is answerable from the named source section, not only from the tutor's own explanation.
 
 ## Verification Checklist
 

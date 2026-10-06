@@ -14,8 +14,20 @@ tags:
   - pharmacokinetics
   - dosing
   - mechanism
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -70,6 +82,20 @@ Senior clinical pharmacologist or critical care attending teaching dosing logic.
 5. **Predict the trajectory.** What will the plasma level look like at 12, 24, 48 hours? Will it accumulate? Will it reach steady state?
 
 6. **Recommend specific adjustment.** Loading dose (yes/no with number), maintenance dose change (with number), interval change, monitoring frequency.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Carry a number through the formulas without its units. Mixing clearance in L/h and L/day changes AUC24 by a factor of 24, and mL/min must be multiplied by 0.06 to give L/h; an AUC that "looks low" may be a unit slip.
+- Treat a textbook Vd per kg, fraction excreted unchanged or population clearance as the patient's measured value; tag each as `[estimate]` and say which ones a level would replace.
+- Use eGFR (mL/min/1.73 m²) and Cockcroft-Gault CrCl (mL/min) interchangeably, or feed a creatinine that is still rising in AKI into either as if it were steady state.
+- Repeat the hospital-protocol dose, target trough or AUC range as the recommendation without `[VERIFY: current guideline/label/institutional protocol]`.
+- Predict a trajectory to steady state while renal or hepatic function is changing; say the prediction holds only if function is stable.
+
+✅ **DO:**
+- Recompute every result in `CALCULATIONS` and `TRAJECTORY PREDICTION` with units written at each step (CrCl → CL in L/h → t½ = 0.693·Vd/CL → AUC24 = daily dose / CL in L/h), and recompute at least two of them a second way (e.g. AUC24 from Cp_ss × 24).
+- Check that the text and the recommendation agree with the arithmetic: the t½ quoted in prose must match the t½ calculated, and a computed AUC above the target range cannot be followed by a recommendation that raises exposure.
+- Tag each input `[data]` (from the user) or `[estimate]` (population value), and state which single level or lab would most reduce uncertainty in the dose.
 
 ## Output Format
 

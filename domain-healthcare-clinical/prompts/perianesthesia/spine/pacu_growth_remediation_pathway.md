@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, DS-06, ED-02, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_self_assessment_blueprint.md
   - pacu_learning_objectives_by_stage.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # PACU Growth & Remediation Pathway — "I Stalled — How Do I Recover?"
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A learner-side, **non-punitive** growth planner, not live clinical decision support and not a formal remediation decision. It helps *you* diagnose a stall and build a recovery plan; any official remediation plan is designed with your preceptor and educator (see the toolkit's `pacu_orientee_remediation_plan`).
 
@@ -92,6 +105,20 @@ Reassess: [when] | Take it to preceptor/educator if: [condition — esp. safety-
 | `depth = quick` | One-cause, one-step micro-plan for a single fumble |
 | `escalate_bias` | Lower the flip-trigger threshold when the stalled domain is safety-critical |
 | `mode = pre-signoff` | Frame the plan around closing a specific sign-off gap |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Choose the `Primary` cause because the map's misconception for the cell matched. A predicted trap being present does not make it the primary cause; the learner's `evidence` has to point there.
+- Write a `route to:` target that looks like a library filename but does not exist — a plausibly named `pacu_orient_*` or `pacu_indep_*` drill is an invented route that the learner will fail to find.
+- Accept a `moved when:` signal that cannot be observed ("feel more confident") or that carries a clinical number ("before saturation falls below N"); the signal is an observable behavior, number-free.
+- Mark `Map misconception … present? Y` without quoting the misconception text from the matching cell of `COMPETENCY_PROGRESSION_MAP.md`.
+- Recast a systems or pacing factor (assignment mix, unclear expectations) as a learner skill gap so the plan stays learner-actionable.
+
+✅ **DO:**
+- Resolve every `route to:` name against the stage directories or `TOOLKIT_CROSSWALK.md` before output; if it does not resolve, write "ask preceptor for the matching drill" instead of guessing a near-match.
+- When the stalled domain is a ⚠ row in the map, confirm the flip-trigger names the preceptor or educator and a concrete condition; a safety-critical stall with a vague trigger fails this check.
+- Check each step's `moved when:` signal against the waypoint text of the stalled cell, so the signal tests the thing the map says arriving looks like.
 
 ## Verification Checklist
 

@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, RT-02, DS-06, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_hemodynamics_of_emergence.md
   - pacu_foundations_monitoring_and_scores_primer.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Comfort Basics — Pain, PONV, and Thermoregulation
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study primer, not live clinical decision support. Real comfort management follows your preceptor, provider order, and facility protocol.
 
@@ -86,6 +99,19 @@ Domain I feel least ready to assess: [ ]
 | `domains` | Focus one comfort domain |
 | `patient_note` | Population overlays (peds/geri) |
 | `show_interactions` | Toggle the cross-domain interaction map |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Record a self-reported pain score for a patient still too sedated to give one; a number in that slot is filler, and the behavioral-cue line has to carry the assessment.
+- List PONV mimics that leave out the dangerous ones — nausea from hypotension or hypoxia looks like ordinary PONV, gets an antiemetic per order, and the cause goes unchecked.
+- Treat all shivering as hypothermia; shivering in a patient who is not cold, or with fever, points elsewhere, so the rigors mimic needs an escalation line, not just a label.
+- Name specific antiemetics, analgesics or warming-device settings as "the usual"; a drug name chosen by the tutor implies a regimen the provider did not order.
+
+✅ **DO:**
+- Trace each arrow in the interaction section (cold → shivering → oxygen demand, BP, pain; pain → BP, nausea) and confirm it is a physiologic link, not two things that merely happen together.
+- When `patient_note` is given, check it changes the assessment method for that population (behavioral pain cues for a child, faster heat loss in an older adult) rather than being appended as a sentence.
+- Confirm each escalation trigger reads as "plan not working on reassessment" or a safety concern routed to a role, never as a score or temperature.
 
 ## Verification Checklist
 

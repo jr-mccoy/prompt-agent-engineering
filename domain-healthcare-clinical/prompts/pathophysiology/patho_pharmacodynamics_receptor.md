@@ -15,8 +15,20 @@ tags:
   - pharmacodynamics
   - mechanism
   - signaling
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -72,6 +84,20 @@ Senior clinical pharmacologist explaining mechanism to a colleague — names the
    - Co-administration of full agonist with partial agonist of the same receptor: net effect is determined by receptor occupancy and efficacy ratios. Buprenorphine + fentanyl: buprenorphine blunts fentanyl analgesia.
    - Allosteric + orthosteric: benzodiazepine + alcohol both act on GABA-A but at different sites; effects are *supra-additive* because allosteric potentiation amplifies the alcohol-driven orthosteric drive.
    - Antagonist + agonist at the same receptor: standard pharmacologic blockade (β-blocker blunting epinephrine); reversed by raising agonist concentration enough to overcome antagonism (relevant in anaphylaxis on β-blocker — may need glucagon to bypass β-receptor and act via direct cAMP).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill `Affinity (Kd/Ki)` and `Intrinsic activity (α)` with precise values from memory; Ki and α differ by assay, tissue, species, radioligand and reference agonist. Give the source type with the number, or a qualitative ranking ("higher affinity than…").
+- Mislabel the binding site — calling an allosteric modulator orthosteric, or a channel blocker an antagonist of the ligand — because the ceiling and interaction arguments that follow inherit the error.
+- Turn a ceiling at one receptor into a safety statement about the patient; co-ingested sedatives, alcohol and gabapentinoids act elsewhere.
+- Write rescue doses, induction withdrawal-score thresholds or perioperative dose changes as fixed numbers — use the clinician's value or `[VERIFY: current guideline/label]`.
+- Explain a clinical difference by biased agonism or receptor reserve when the only support is cell-assay data.
+
+✅ **DO:**
+- Check that the numbers agree with the story: the drug said to resist displacement must be the one with the lower Ki and slower off-rate, and the drug said to have a ceiling must have the lower Emax. Recheck the direction of every "tighter", "more potent", "higher efficacy" comparison.
+- Trace each arrow under `DOWNSTREAM SIGNALING` to the G-protein class listed in step 4 and confirm the sign (Gi → ↓cAMP, Gs → ↑cAMP, Gq → IP3/DAG); a Gi receptor drawn as raising cAMP is a reversed step.
+- Label each claim as human data (PET occupancy, clinical trial, overdose series) or in-vitro pharmacology; any step in `WHY THIS PRODUCES THE OBSERVED CLINICAL EFFECT` that rests only on in-vitro data is marked as a mechanistic hypothesis.
 
 ## Output Format
 

@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, RT-02, QA-04, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_what_is_pacu.md
   - pacu_foundations_pre_reading_planner.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # Week 1 Expectations Map — What to Expect and How Not to Drown
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study/orientation planning tool, not clinical decision support. Your actual orientation schedule and expectations are set by your educator and preceptor.
 
@@ -92,6 +105,19 @@ My biggest worry, reframed: [ ]
 | `prior_experience` | Adjusts what's novel vs. familiar |
 | `known_worries` | Directly addresses the learner's specific anxieties |
 | `tone` | `reassuring` (default) vs. `brisk` |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Put educator milestones in "Success this week" ("take two patients by Friday", "get signed off on…"); they read as promises the learner cannot keep on their own.
+- Answer the "I'll freeze" worry by saying a new nurse won't have to act; the counter is a concrete first action (call for help, bring the equipment, know where it is), not dismissal.
+- Pad "Speak up now" with soft items while leaving out the safety triggers — patient looks wrong, breathing sounds change, I am unsure.
+- Describe one facility's week 1 (number of shadow days, how many preceptors, first-patient timing) as how orientation goes.
+
+✅ **DO:**
+- Match the overwhelm traps to `known_worries` and check that at least one counter answers the worry in the learner's own words.
+- Check each success item depends on the learner's own action (with the preceptor present where the item says so) and could be done within a shift; reword any that depend on someone else's decision.
+- Check the off-shift plan against the learner's stated experience and load — a cadence that is gone by day 3 fails the anti-cramming test.
 
 ## Verification Checklist
 

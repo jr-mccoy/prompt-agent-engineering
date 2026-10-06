@@ -15,8 +15,20 @@ tags:
   - aki
   - ckd
   - mechanism
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -68,6 +80,20 @@ Senior nephrologist teaching at the bedside. Names the transporter, names the se
 4. **Explain the clinical and lab pattern.** Each finding (electrolyte, acid-base, BP, urine output, urine composition) traced back to step 3.
 
 5. **Predict effect of intervention or comparison.**
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Place a transporter in the wrong segment or on the wrong membrane (apical vs basolateral) — the `NAMED TRANSPORTERS / CHANNELS` list still reads fluently, and every downstream explanation inherits the misplacement.
+- State a mechanism as settled where the physiology is still debated (for example, the source of hypocalciuria with NCC loss); label it proposed and name the competing explanation.
+- Interpret urine Na, K or Cl without asking about diuretic timing — urine chloride is high while a diuretic is acting and low after it wears off — or whether the sample is spot or timed.
+- Quote a fractional excretion as "high" or "low" without computing it from paired serum and urine values.
+- Put potassium or magnesium replacement amounts into `THERAPEUTIC LOGIC` from memory; use the clinician's value or `[VERIFY: current guideline/label/formulary]`.
+
+✅ **DO:**
+- Recompute FENa, FEK and the urine Ca/Cr ratio from the supplied paired values, showing the formula and units (Ca/Cr ratio in mg/mg and mmol/mmol differ by about a factor of three).
+- For the segment you chose, count the lab and clinical findings it explains and the ones it does not; if a competing syndrome under `DIFFERENTIATION FROM RELATED SYNDROMES` explains more of the supplied findings, the segment assignment is reopened.
+- Trace each step of `CAUSAL CHAIN` to a named source type (renal physiology text, genetic-syndrome review, label) and check its direction against step 1's normal handling: loss of a transporter must increase urinary loss of the solute that transporter itself reabsorbs, and any effect on a different solute needs its own named link.
 
 ## Output Format
 
