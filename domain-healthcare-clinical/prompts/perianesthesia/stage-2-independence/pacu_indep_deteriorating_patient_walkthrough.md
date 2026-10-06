@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_escalation_decision_drill.md
   - pacu_indep_run_bay_solo_simulation.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Deteriorating Patient — Progressive-Disclosure Integrative Walkthrough
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A reasoning walkthrough, not live clinical decision support. It rehearses *how you think* as a patient declines; real deterioration is managed at the bedside with your team.
 
@@ -86,6 +99,19 @@ One coaching point: [...]
 | `stages` | More stages = more reassess-and-adjust reps |
 | `resolve_early` | Occasionally let it resolve to punish over-escalation-by-reflex |
 | `case_seed` | Target a comorbidity mix the learner finds hard |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Slip a value into a stage cue by relative phrasing ("saturation a few points under the usual line," "pressure down by a fixed fraction") — a disguised number is still an invented threshold; describe the behavior and the direction of the trend.
+- Count the mimics as "held across systems" when both sit in the same system (residual sedation and opioid hypoventilation are both sedation-respiratory) — the label says two systems, the content says one.
+- Fill "Earliest window I should have escalated" from the converged answer (hindsight) instead of from the cues that were on the table at that stage.
+- Put a cause-specific treatment in the convergence bundle (a fluid bolus, a vasopressor, a reversal agent) as if nurse-initiated; it is prepare/assist `per provider order`.
+
+✅ **DO:**
+- Tag each hypothesis and mimic with its system and confirm at least two distinct systems at every stage before scoring "≥2 mimics held."
+- Re-read each stage's cue set in isolation and check that the claimed earliest escalation window is defensible from those cues alone.
+- Check every flip-trigger names a change in an observable cue that a later reveal could actually show; "if it gets worse" is not a trigger.
 
 ## Verification Checklist
 

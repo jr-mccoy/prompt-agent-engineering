@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_normal_vs_deviation_drill.md
   - pacu_orient_recovery_deviation_script_builder.md
@@ -31,6 +31,19 @@ references:
 ---
 
 # PACU NGN Clinical-Judgment Drill — Unfolding Post-Op Case
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** An exam-style study drill, not live clinical decision support. Real recovery decisions belong to you at the bedside with your preceptor.
 
@@ -85,6 +98,19 @@ One coaching point (weakest step): [...]
 | `item_type` | Rotate NGN item shapes for exam familiarity |
 | `stages` | More stages = more evaluate-and-adjust reps |
 | `distractor_density` | Raise provider-scope distractors to train scope discipline |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Publish a bowtie or matrix row where two options are each defensible as the single best answer (e.g., "reposition airway" and "stimulate patient" for a drowsy, shallow-breathing stage) and then key only one.
+- Key an answer that depends on a value the stage text never gives — if the deciding fact is a threshold `per facility protocol`, the learner cannot select it from the cues.
+- Write the stage-2 reveal after seeing the learner's action so that `Evaluation: Y` is guaranteed; the unfolding must be fixed before the learner answers.
+- Score evaluation of an oxygenation-only improvement as "ventilation better" — supplemental O2 can hide hypoventilation, so arousal and respiratory effort trends must carry the judgment.
+
+✅ **DO:**
+- For every item, try to argue a second option as correct; if a qualified PACU nurse could, rewrite the stem cues or convert the item to select-all-that-apply before scoring.
+- Check that each cue keyed "relevant" and each cue keyed "noise" appears verbatim in the stage text the learner saw.
+- Map each of the six CJMM steps to the specific item part that tests it; a step with no item part is unscored, not `Y`.
 
 ## Verification Checklist
 

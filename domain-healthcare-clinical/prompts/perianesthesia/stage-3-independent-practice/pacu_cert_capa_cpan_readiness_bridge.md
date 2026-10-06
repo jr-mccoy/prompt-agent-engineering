@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, DS-06, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_cert_weak_area_self_diagnostic.md
   - pacu_cert_spaced_repetition_deck_builder.md
@@ -31,6 +31,19 @@ references:
 ---
 
 # CAPA/CPAN Readiness Bridge — Decide When to Sit, Then Route Into the Exam-Prep Suite
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A decision-and-routing aid, not the certification authority. Eligibility rules, blueprint weights, exam dates, and requirements come from **ABPANC's official source** — the learner pastes those; this tool never invents or reproduces them.
 
@@ -92,6 +105,19 @@ Final week → pacu_capa_cpan_final_week_review.md
 | `exam` | CAPA, CPAN, or both — adjusts the fit discussion and routing |
 | `horizon` | Sit-soon vs build-then-sit planning |
 | `strict_eligibility` | Force eligibility to be confirmed at the ABPANC source before a GO |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the readiness read with a blueprint domain percentage, item count, passing standard, clinical-hour requirement, fee, or testing window from memory — anything not in the pasted ABPANC text is written `[VERIFY: current ABPANC blueprint]` or `[VERIFY: current ABPANC eligibility]`.
+- Mark Eligibility "Y" because the learner says "I meet the hours" without pasting the requirement — that is `CONFIRM AT SOURCE`, and a GO resting on it is conditional.
+- Argue CAPA-vs-CPAN fit from a remembered content outline; with no pasted blueprint scope, the fit statement is limited to the learner's Phase I vs Phase II/ambulatory practice mix and says so.
+- Give GO when the learner's weak areas fall in the heaviest-weighted domains of the pasted blueprint without naming that overlap as the main risk.
+
+✅ **DO:**
+- Trace each input behind the GO / NOT-YET call to its source — eligibility to a pasted ABPANC line, breadth to `practice_profile`, weak-area load to the diagnostic output — and list any input with no source as an assumption.
+- Check every routed prompt against the `clinical-and-educator/` listing (the five `pacu_capa_cpan_*` files) before printing the route; never route to an unbuilt filename.
+- Tie the re-check date and the "sit in ~N months" runway to the learner's stated `logistics`, not to a study duration presented as a standard.
 
 ## Verification Checklist
 

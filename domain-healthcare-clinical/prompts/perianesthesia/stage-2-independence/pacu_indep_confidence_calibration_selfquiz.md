@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_signoff_readiness_self_capstone.md
   - pacu_indep_cueing_decay_self_tracker.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # Confidence Calibration Self-Quiz — Confidence vs Demonstrated Competence
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A self-assessment aid, not live clinical decision support or an official evaluation. It calibrates *your read of yourself*; the formal sign-off decision belongs to your preceptor and educator.
 
@@ -81,6 +94,19 @@ One coaching point: [...]
 | `domains` | Subset to focus a session on weak areas |
 | `evidence_required` | Off for a quick gut-check; on before sign-off |
 | `paired_mode` | Compare self-ratings against a recent preceptor note (learner-held) to test calibration |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mark a row "aligned" because both tokens read `independent` when the cited example shows a preceptor prompt, a co-managed response, or a with-cues rep — the Demonstrated token comes from the example, not from the learner's summary of it.
+- Let the PROFILE or coaching point say or imply "ready for sign-off" because most rows are aligned or under-confident; this quiz measures how accurate the self-read is, and readiness is graded in the capstone.
+- Count an example from a previous unit or role (an ICU airway rescue before orientation) as demonstrated PACU independence without labelling it as prior-setting evidence.
+- Clear a safety-critical over-gap because the learner lowers their confidence token mid-session — relabelling closes the gap on paper while the missing unprompted rep is still missing.
+
+✅ **DO:**
+- Re-derive each Demonstrated token from its example (who prompted, what was done unaided), recompute the gap direction from the two tokens, and list any row where your token differs from the learner's.
+- Screen the over-gap list against every ⚠ row of `COMPETENCY_PROGRESSION_MAP.md` that was rated, so an over-gap in pharmacology/reversal or handoff is not missed while airway gets the attention.
+- Count rows against `domains` requested: a domain left unrated is reported as "not rated," never folded into "well-calibrated"; with `evidence_required = off`, title the profile "gut-check — unevidenced."
 
 ## Verification Checklist
 

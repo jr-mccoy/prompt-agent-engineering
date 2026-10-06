@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ST-03, ED-02, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_confidence_calibration_selfquiz.md
   - pacu_indep_cueing_decay_self_tracker.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Sign-Off Readiness — Self-Administered Capstone Against the Competency Map
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A self-assessment capstone, not live clinical decision support and not the official sign-off. It shows *you* where you stand against the map; your preceptor and educator make the actual sign-off decision.
 
@@ -85,6 +98,20 @@ One coaching point (highest-leverage gap): [...]
 | `domains` | Run a partial capstone on a subset mid-orientation |
 | `bar` | Raise to `independent-safe-under-load` for a stricter check |
 | `stress_layer` | Add an injected event to a domain to test independence under pressure |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Grade a domain MET from the learner's level token when the evidence text shows the rep was prompted, co-managed, or done in another unit — the grade follows the example, not the self-rating.
+- Treat "can state the recognize→act-in-scope→escalate-by-role chain" as the demonstrated rep; stating the chain passes the stress-check line only, and the domain stays not-yet until it is done unaided.
+- Print "safety-critical domains met" unless each of the five ⚠ map domains (airway/respiratory, cardiovascular/hemodynamic, pharmacology/reversal, handoff & communication, safety & escalation) has its own MET grade and stress-check line in this run.
+- Put an item in the not-yet list that is not one of the 14 map domains (a sub-skill, an "under-load" variant) — it cannot be reconciled with the preceptor's map; name the parent domain and the sub-skill inside it.
+- Issue `ready to propose sign-off` because the met count is high; the verdict rule is gated on the ⚠ domains, not on the total.
+
+✅ **DO:**
+- Recount AGGREGATE from the per-domain lines: met + not-yet must equal the domains graded, and write n/14 only when all 14 were graded in this run.
+- Show the verdict rule mechanically — list the five ⚠ domains with their grades, then the verdict that follows; if any ⚠ domain was not graded, the verdict is "insufficient evidence — grade [domain] first."
+- Check each item in the evidence packet appears, at the same level, in the per-domain lines above it.
 
 ## Verification Checklist
 

@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, ED-02, DS-06, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_reflective_journal.md
   - pacu_orient_question_log_and_spaced_review.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Daily Debrief Self-Prep — Get the Most From the Preceptor Debrief
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A preparation aid, not live clinical decision support. It readies you for a learning conversation; it does not direct patient care.
 
@@ -88,6 +101,19 @@ Please watch/coach: [...]
 | `hard_moment` | Deep-prep a tough event for a safe debrief |
 | `feedback_target` | Focus the whole prep on one growth edge |
 | `tone` | `wins-first` after a rough shift to keep it constructive |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a `+` or `Δ` that names a trait or a feeling ("I was organized", "I felt rushed") as a moment — a moment has a patient phase, a task, and what the learner actually did.
+- Fill the uncertainty map or hard-moment block with plausible PACU events the learner never mentioned (a stalled discharge score, a delayed call) so the prep looks complete.
+- Label the hard moment "advocacy-inquiry" when it is a self-verdict ("I messed up the escalation") with a question mark added — the observation half must describe an action, not a judgment.
+- Answer the hard-moment question inside the prep (e.g., supply when a trend "should" have been escalated) — that answer is the preceptor's, routed to `per facility protocol`.
+
+✅ **DO:**
+- Before handing it over, trace every `+`, `Δ`, uncertainty and hard-moment line back to `shift_highlights`, `hard_moment`, or the journal entry; strike lines with no source, then count two `+`, two `Δ`, one feedback target.
+- Pull `QUESTIONS TO RAISE` only from the log as it stands; if it is empty, write "none logged" rather than generating likely questions.
+- Check that `MY ASK FOR NEXT SHIFT` is a yes/no request (autonomy on a named task, a checkpoint at a named moment), not the feedback target restated.
 
 ## Verification Checklist
 

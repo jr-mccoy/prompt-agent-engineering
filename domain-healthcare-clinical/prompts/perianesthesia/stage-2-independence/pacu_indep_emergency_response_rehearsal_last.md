@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, RT-02, RT-05, DS-06, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_emergency_response_rehearsal_airway.md
   - pacu_indep_emergency_response_rehearsal_oird.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Emergency Rehearsal — LAST Recognition & Nurse Role in the Response
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** An emergency rehearsal, not live clinical decision support. Doses, lipid-emulsion protocol, and thresholds are **per your facility protocol** — paste your unit's real material; this rehearses *your role*, not the orders.
 
@@ -87,6 +100,19 @@ One coaching point: [...]
 | `block_type` | Match the unit's regional caseload |
 | `mimic_pressure` | Add a convincing mimic to train the discriminator |
 | `team_size` | Solo-first-responder vs full-team assist |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Credit "Recognized early" for saying "possible LAST" out loud when the learner stops there — the pass needs the two parallel first moves too: help called by role, and the LAST/lipid kit plus code cart sent for.
+- State a lipid-emulsion bolus, infusion rate, or maximum, or a local-anesthetic dose limit, even when the learner asks "what's the max?" — each is `per facility protocol` / `per provider order`, and the rehearsal says so.
+- Treat an absent neuro prodrome as reassurance; LAST can present with cardiovascular signs first, so a scenario that skips the prodrome must still reach "possible LAST" on the CV drift plus the block exposure.
+- Mark "Used facility protocol not invented numbers" Y when only the protocol's *location* was pasted and the learner then recited values from memory.
+
+✅ **DO:**
+- Check the "because" in "possible LAST because…" cites the local-anesthetic exposure from `block_type` and at least one presented cue; a recognition that cites neither is a guess.
+- Check each dismissed mimic against the block context — high/total spinal needs a neuraxial or a block with neuraxial spread, so after a peripheral block the learner must say why it is unlikely rather than just list it.
+- Scan the finished output for mL, mg, per-kg, or minute tokens; any present must be a `per facility protocol` pointer or be removed.
 
 ## Verification Checklist
 

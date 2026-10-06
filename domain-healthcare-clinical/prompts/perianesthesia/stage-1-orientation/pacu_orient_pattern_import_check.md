@@ -15,7 +15,7 @@ target_users:
   - new-graduate-nurse
 techniques: [ST-02, RT-02, DS-06, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_shift_structure_card.md
   - pacu_orient_daily_debrief_selfprep.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Prior-Unit Pattern-Import Check — What Misfires in PACU
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A reflection-and-self-assessment aid, not live clinical decision support. Validate any practice change with your preceptor.
 
@@ -86,6 +99,19 @@ The one import to fix first: [...]
 | `prior_setting` | Tailors the classic imports for that background |
 | `focus` | Deep-dive one domain (e.g., escalation threshold) |
 | `mode` | `surface` (find them) vs. `verify` (test a suspected import) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Populate `IMPORTED HABITS` with stereotypes of the `prior_setting` the learner never reported — a suggested habit is a question to the learner, not a finding about them.
+- Justify a re-tune by "PACU uses a tighter interval / a lower trigger" and then supply the number; the difference is real, the value is `per facility protocol`.
+- Present a genuinely transferable habit (ICU-level airway vigilance, ED-tempo reassessment) as a misfire to reach the ≥2 look-alike count.
+- State scope differences between units as fact ("in PACU you may not…") when scope comes from the learner's own unit competency validation.
+
+✅ **DO:**
+- Mark each habit `learner-named` or `suggested — confirm?`, and verify every suggested habit was confirmed before it reaches the verdict table.
+- Check the top-priority import is one already listed under `DANGEROUS IMPORTS`, not a new item introduced in the last line.
+- Trace each PACU reason to one of the three named differences (dynamic emergence, minutes-to-hours timeline, discharge-readiness goal) or to a learner-supplied difference; a reason that cites neither is unsupported.
 
 ## Verification Checklist
 

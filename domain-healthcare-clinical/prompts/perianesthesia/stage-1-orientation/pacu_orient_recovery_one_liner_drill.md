@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, DS-06, RT-02, ED-02, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_shift_structure_card.md
   - pacu_orient_outbound_sbar_report_rehearsal.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # Recovery One-Liner + Problem List — Compression Drill
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study drill, not live clinical decision support. Build real patient summaries with your preceptor.
 
@@ -84,6 +97,19 @@ One coaching point: [...]
 | `element_focus` | Deep-drill one slot (e.g., watch-item precision) |
 | `rounds` | Multiple patients to build speed |
 | `mode` | `build` (learner writes) vs. `critique` (learner fixes a bloated one-liner) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass a one-liner that drops or collapses the anesthetic type ("under spinal" when the case was spinal + sedation) — the anesthetic decides the watch-item, so a smooth sentence without it still fails the pressure test.
+- Grade compression `tight` on word count; a short one-liner with no trajectory is `thin`.
+- Add a problem because it is common for the surgery (PONV after laparoscopy) when the input gives no sign or risk factor for it — that is padding to reach 2–4.
+- Let `Could a receiver act on this? Y` stand without naming the action the receiver would take.
+
+✅ **DO:**
+- Label each phrase of the one-liner with its slot from Method step 1 (descriptor, surgery/anesthesia category, trajectory, watch-item); any unlabeled slot means `Thin slot` is not `none`.
+- Trace every problem-list and `LEFT OUT` entry to the input case, and check that nothing in the case is missing from both lists.
+- Confirm the one-liner's watch-item is problem #1 or explicitly linked to one.
 
 ## Verification Checklist
 

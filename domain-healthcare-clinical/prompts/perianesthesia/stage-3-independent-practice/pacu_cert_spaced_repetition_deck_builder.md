@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, DS-06, ED-02, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_cert_capa_cpan_readiness_bridge.md
   - pacu_cert_weak_area_self_diagnostic.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Spaced-Repetition Deck Builder — Maintain a PACU Deck for Certification and Practice
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study-system aid, not live clinical decision support. Cards hold *verified* knowledge for recall practice; any facility-specific number stays a `per facility / per order` pointer, and cards never substitute for a current order or policy.
 
@@ -86,6 +99,19 @@ Feed-in: [...] | Prune/promote rule: [...] | Facility-value re-verify cadence: [
 | `weighting` | Shift toward pure blueprint (cert push) or pure gaps (practice retention) |
 | `schedule` | Tighten tracks near an exam date |
 | `handoff` | Route formatting to the toolkit flashcard-deck-builder skill for a polished artifact |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Encode a facility-specific value on a card back (a discharge-score cut-off, a reassess interval, a reversal dose, a warming target) because "my unit uses it" — it stops being true at the next policy revision or the next facility; the back says `per facility protocol` and names where to look it up.
+- Accept `[verified]` on a back whose Source field is empty or reads "facility ref" with no document named; verified without a source is unverified.
+- Weight the deck toward "blueprint-heavy" domains using weights recalled rather than pasted — mark them `[VERIFY: current ABPANC blueprint]` and weight by personal gaps until the blueprint is pasted.
+- Pass a card as "one concept" when its back is a multi-step response chain; split it, or the hit/miss log cannot tell which step was missed.
+
+✅ **DO:**
+- Scan every front and back for digits and units before export: numbers may appear in the SCHEDULE intervals, never on a card face, and each clinical quantity is a `per facility / per order` pointer.
+- Count the cards with an empty or unnamed Source; the deck is not ready to schedule until that count is zero.
+- Re-check each card tagged Safety-critical: Y against its back — a card whose back is recognize-and-escalate keeps the tight track; one that has drifted into treatment detail is rewritten to the nurse's role first.
 
 ## Verification Checklist
 

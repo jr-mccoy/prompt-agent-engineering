@@ -87693,7 +87693,7 @@
       "title": "Calling Report to the Floor — Outbound SBAR Rehearsal",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A communication rehearsal, not live clinical decision support. Give real report per your facility's handoff standard with your preceptor.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -87714,7 +87714,7 @@
         "report"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_inbound_handoff_receiving_rehearsal.md",
         "pacu_orient_recovery_one_liner_drill.md",
@@ -87728,7 +87728,7 @@
       "title": "Common PACU Rhythms — Recognize-and-Escalate Drill (Nurse Scope)",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> ⚠ Scope banner: This drill trains rhythm recognition and escalation at nurse scope — \"is this the baseline, a benign change, or a dangerous change, and who do I call?\" It is not 12-lead mastery or dysrhythmia diagnosis/management. Rhythm interpretation for treatment belongs to the provider.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -87749,7 +87749,7 @@
         "rhythm"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_hemodynamic_event_recognition_drill.md",
         "pacu_orient_abg_in_recovery_drill.md",
@@ -87763,7 +87763,7 @@
       "title": "Daily Debrief Self-Prep — Get the Most From the Preceptor Debrief",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A preparation aid, not live clinical decision support. It readies you for a learning conversation; it does not direct patient care.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -87784,7 +87784,7 @@
         "role"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_reflective_journal.md",
         "pacu_orient_question_log_and_spaced_review.md",
@@ -87798,7 +87798,7 @@
       "title": "Hemodynamic Event Recognition — Hypotension / Hypertension / Dysrhythmia",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A recognition drill, not live clinical decision support. Manage real hemodynamics with your preceptor, provider order, and facility protocol.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -87820,7 +87820,7 @@
         "pacu"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_recovery_deviation_script_builder.md",
         "pacu_orient_rhythm_recognition_drill.md",
@@ -87834,7 +87834,7 @@
       "title": "Medication-Administration Safety Self-Check — PACU Rehearsal",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A safety rehearsal, not live clinical decision support. Give real medications per order, facility policy, and your preceptor.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "CM-02",
@@ -87855,7 +87855,7 @@
         "role"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_recovery_deviation_script_builder.md",
         "pacu_orient_hemodynamic_event_recognition_drill.md",
@@ -87869,7 +87869,7 @@
       "title": "Normal Emergence vs Deviation — Recognition Drill",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A recognition drill, not live clinical decision support. Judge real emergence at the bedside with your preceptor and escalate any concern by role.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -87891,7 +87891,7 @@
         "pacu"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_recovery_deviation_script_builder.md",
         "pacu_orient_respiratory_event_recognition_drill.md",
@@ -87905,7 +87905,7 @@
       "title": "Orientation Reflective Journal — Shift & Week Debrief (Learner Side)",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A reflection aid, not live clinical decision support. It processes experiences after the fact — it does not direct real-time care.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -87925,7 +87925,7 @@
         "role"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_daily_debrief_selfprep.md",
         "pacu_orient_question_log_and_spaced_review.md",
@@ -87939,7 +87939,7 @@
       "title": "PACU NGN Clinical-Judgment Drill — Unfolding Post-Op Case",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: An exam-style study drill, not live clinical decision support. Real recovery decisions belong to you at the bedside with your preceptor.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -87961,7 +87961,7 @@
         "output"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_normal_vs_deviation_drill.md",
         "pacu_orient_recovery_deviation_script_builder.md",
@@ -87975,7 +87975,7 @@
       "title": "PACU Shift Structure Card — The Orientee's Default Flow",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A study-and-rehearsal aid, not live clinical decision support. Your real shift flow follows your preceptor, charge nurse, and facility protocol.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-01",
         "ST-02",
@@ -87996,7 +87996,7 @@
         "shift"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_prioritization_rule_drill.md",
         "pacu_orient_inbound_handoff_receiving_rehearsal.md",
@@ -88011,7 +88011,7 @@
       "title": "Prior-Unit Pattern-Import Check — What Misfires in PACU",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A reflection-and-self-assessment aid, not live clinical decision support. Validate any practice change with your preceptor.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -88031,7 +88031,7 @@
         "pattern"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_shift_structure_card.md",
         "pacu_orient_daily_debrief_selfprep.md",
@@ -88045,7 +88045,7 @@
       "title": "Question Log + Spaced Review — Turn 'I Didn't Know' Into Retained Knowledge",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A study-system aid, not live clinical decision support. During a shift, get real answers from your preceptor/provider — this system processes them afterward.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "DS-06",
@@ -88065,7 +88065,7 @@
         "question"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_reflective_journal.md",
         "pacu_orient_recovery_deviation_script_builder.md",
@@ -88079,7 +88079,7 @@
       "title": "Receiving the Inbound Anesthesia Handoff — Rehearsal",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A communication rehearsal, not live clinical decision support. Confirm real handoff details with the giving provider and your preceptor.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -88100,7 +88100,7 @@
         "receiving"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_shift_structure_card.md",
         "pacu_orient_recovery_one_liner_drill.md",
@@ -88114,7 +88114,7 @@
       "title": "Recovery One-Liner + Problem List — Compression Drill",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A study drill, not live clinical decision support. Build real patient summaries with your preceptor.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "DS-06",
@@ -88135,7 +88135,7 @@
         "pacu"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_shift_structure_card.md",
         "pacu_orient_outbound_sbar_report_rehearsal.md",
@@ -88149,7 +88149,7 @@
       "title": "Recovery-Deviation Script Builder — 5-Slot Recognition Scaffold",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A study scaffold, not live clinical decision support. Manage real events with your preceptor, provider, and facility protocol.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "DS-06",
@@ -88170,7 +88170,7 @@
         "recovery"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_normal_vs_deviation_drill.md",
         "pacu_orient_respiratory_event_recognition_drill.md",
@@ -88185,7 +88185,7 @@
       "title": "Respiratory Event Recognition — Laryngospasm vs Bronchospasm vs NPPE vs OIRD",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A recognition drill, not live clinical decision support. Real respiratory events are emergencies — call for help and escalate by role while acting within scope.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -88207,7 +88207,7 @@
         "recognition"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_recovery_deviation_script_builder.md",
         "pacu_orient_normal_vs_deviation_drill.md",
@@ -88221,7 +88221,7 @@
       "title": "Two-Patient Prioritization Rule — Scenario Drill",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-1-orientation",
-      "description": "> Boundary: A study-and-practice drill, not live clinical decision support. Prioritize real patients with your preceptor and charge nurse.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -88243,7 +88243,7 @@
         "role"
       ],
       "difficulty": "beginner",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_orient_shift_structure_card.md",
         "pacu_orient_normal_vs_deviation_drill.md",
@@ -88257,7 +88257,7 @@
       "title": "Charting Under Load — Documenting an Eventful Recovery, Rehearsal",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: A documentation rehearsal, not live clinical decision support and not a facility template. Chart in your real EHR per facility policy; this rehearses completeness and timing, not the form fields.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -88279,7 +88279,7 @@
         "rehearsal"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_run_bay_solo_simulation.md",
         "pacu_indep_deteriorating_patient_walkthrough.md",
@@ -88293,7 +88293,7 @@
       "title": "Confidence Calibration Self-Quiz — Confidence vs Demonstrated Competence",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: A self-assessment aid, not live clinical decision support or an official evaluation. It calibrates your read of yourself; the formal sign-off decision belongs to your preceptor and educator.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -88314,7 +88314,7 @@
         "role"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_signoff_readiness_self_capstone.md",
         "pacu_indep_cueing_decay_self_tracker.md",
@@ -88328,7 +88328,7 @@
       "title": "Cueing-Decay Self-Tracker — With-Cues → Independent, Domain by Domain",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: A self-tracking aid, not live clinical decision support or an official evaluation. It measures how much prompting you still need; the sign-off decision belongs to your preceptor and educator.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -88349,7 +88349,7 @@
         "role"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_confidence_calibration_selfquiz.md",
         "pacu_indep_signoff_readiness_self_capstone.md",
@@ -88363,7 +88363,7 @@
       "title": "Deteriorating Patient — Progressive-Disclosure Integrative Walkthrough",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: A reasoning walkthrough, not live clinical decision support. It rehearses how you think as a patient declines; real deterioration is managed at the bedside with your team.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -88385,7 +88385,7 @@
         "role"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_escalation_decision_drill.md",
         "pacu_indep_run_bay_solo_simulation.md",
@@ -88399,7 +88399,7 @@
       "title": "Emergency Rehearsal — Airway Crisis (Laryngospasm / Can't-Ventilate), Nurse Role",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: An emergency rehearsal, not live clinical decision support. It rehearses the nurse's role in an airway crisis; airway rescue is provider-led. Follow your facility's airway protocol.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -88421,7 +88421,7 @@
         "rehearsal"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_emergency_response_rehearsal_oird.md",
         "pacu_indep_emergency_response_rehearsal_last.md",
@@ -88435,7 +88435,7 @@
       "title": "Emergency Rehearsal — LAST Recognition & Nurse Role in the Response",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: An emergency rehearsal, not live clinical decision support. Doses, lipid-emulsion protocol, and thresholds are per your facility protocol — paste your unit's real material; this rehearses your role, not the orders.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -88457,7 +88457,7 @@
         "rehearsal"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_emergency_response_rehearsal_airway.md",
         "pacu_indep_emergency_response_rehearsal_oird.md",
@@ -88471,7 +88471,7 @@
       "title": "Emergency Rehearsal — Opioid-Induced Respiratory Depression & Naloxone-Assist, Nurse Role",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: An emergency rehearsal, not live clinical decision support. Naloxone dosing, titration, and re-dose timing are per order / per facility protocol — paste your unit's material; this rehearses your role, not the orders.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -88493,7 +88493,7 @@
         "rehearsal"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_emergency_response_rehearsal_airway.md",
         "pacu_indep_escalation_decision_drill.md",
@@ -88507,7 +88507,7 @@
       "title": "Escalate / Watch / Routine — Escalation-Decision Drill",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: A decision drill, not live clinical decision support. It trains the judgment of when to escalate; the real call is made at the bedside with your team.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -88529,7 +88529,7 @@
         "pacu"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_deteriorating_patient_walkthrough.md",
         "pacu_indep_two_patient_prioritization_stress_drill.md",
@@ -88543,7 +88543,7 @@
       "title": "Prep for the Sign-Off Conversation — Learner-Side Evidence Self-Inventory",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: A preparation aid, not live clinical decision support and not the evaluation itself. It helps you walk in prepared; the sign-off decision and its criteria belong to your preceptor and educator.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ED-02",
@@ -88564,7 +88564,7 @@
         "prep"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_signoff_readiness_self_capstone.md",
         "pacu_indep_confidence_calibration_selfquiz.md",
@@ -88578,7 +88578,7 @@
       "title": "Prioritization Under Pressure — Multi-Bay Stress Drill",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: A decision drill, not live clinical decision support. It sharpens the rule you apply; real triage happens at the bedside with your team.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RT-02",
@@ -88600,7 +88600,7 @@
         "prioritization"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_run_bay_solo_simulation.md",
         "pacu_indep_escalation_decision_drill.md",
@@ -88614,7 +88614,7 @@
       "title": "Run the Bay Solo — Table-Top Assignment Simulation",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: A table-top simulation, not live clinical decision support. Run a real assignment with your preceptor still available; this rehearses the load, not the patient.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "RP-02",
@@ -88636,7 +88636,7 @@
         "run"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_two_patient_prioritization_stress_drill.md",
         "pacu_indep_deteriorating_patient_walkthrough.md",
@@ -88650,7 +88650,7 @@
       "title": "Sign-Off Readiness — Self-Administered Capstone Against the Competency Map",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-2-independence",
-      "description": "> Boundary: A self-assessment capstone, not live clinical decision support and not the official sign-off. It shows you where you stand against the map; your preceptor and educator make the actual sign-off decision.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "ST-03",
@@ -88672,7 +88672,7 @@
         "role"
       ],
       "difficulty": "advanced",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_indep_confidence_calibration_selfquiz.md",
         "pacu_indep_cueing_decay_self_tracker.md",
@@ -88721,7 +88721,7 @@
       "title": "CAPA/CPAN Readiness Bridge — Decide When to Sit, Then Route Into the Exam-Prep Suite",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-3-independent-practice",
-      "description": "> Boundary: A decision-and-routing aid, not the certification authority. Eligibility rules, blueprint weights, exam dates, and requirements come from ABPANC's official source — the learner pastes those; this tool never invents or reproduces them.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "DS-06",
@@ -88740,7 +88740,7 @@
         "pacu"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_cert_weak_area_self_diagnostic.md",
         "pacu_cert_spaced_repetition_deck_builder.md",
@@ -88892,7 +88892,7 @@
       "title": "Spaced-Repetition Deck Builder — Maintain a PACU Deck for Certification and Practice",
       "domain": "healthcare-clinical",
       "category": "pacu-learning/stage-3-independent-practice",
-      "description": "> Boundary: A study-system aid, not live clinical decision support. Cards hold verified knowledge for recall practice; any facility-specific number stays a `per facility / per order` pointer, and cards never substitute for a current order or policy.",
+      "description": "> Medical disclaimer — read before use. This prompt is an educational aid for > licensed perianesthesia clinicians and their educators — not clinical decision > support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is not medical advice and is not for",
       "techniques": [
         "ST-02",
         "DS-06",
@@ -88912,7 +88912,7 @@
         "repetition"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-07-16",
+      "updated": "2026-10-06",
       "related_prompts": [
         "pacu_cert_capa_cpan_readiness_bridge.md",
         "pacu_cert_weak_area_self_diagnostic.md",

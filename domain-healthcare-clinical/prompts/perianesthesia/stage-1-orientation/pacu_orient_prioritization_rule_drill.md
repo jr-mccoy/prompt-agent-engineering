@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_shift_structure_card.md
   - pacu_orient_normal_vs_deviation_drill.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Two-Patient Prioritization Rule — Scenario Drill
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study-and-practice drill, not live clinical decision support. Prioritize real patients with your preceptor and charge nurse.
 
@@ -87,6 +100,19 @@ One coaching point: [...]
 | `difficulty` | `stress` adds a third bay + a distracting non-urgent task |
 | `patients` | 3-way sort to practice a real assignment |
 | `surgical_mix` | Scenarios drawn from the learner's actual case types |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Make the "correct" patient correct only because of a cue that first appears in the teardown and was absent from the one-liners the learner saw.
+- Score `Right reason: Y` when the learner picked the right bay by a non-ladder rule ("older", "arrived first", "louder").
+- Label a pair `orientation` when both patients carry an airway/breathing threat — that is a `stress` pair and the scorecard misreports difficulty.
+- Reuse the quiet-sleepy-vs-loud-pain template every round; the learner then scores by template-matching, not by applying the ladder.
+
+✅ **DO:**
+- Before revealing, assign each patient a ladder rung from the one-liner text alone and record it; the teardown must cite that same rung for the winner.
+- Across rounds, rotate which rung decides the call and check the scorecard names the deciding rung each time.
+- Verify the higher-priority action line states both the within-scope move and the role escalated to, in that order.
 
 ## Verification Checklist
 

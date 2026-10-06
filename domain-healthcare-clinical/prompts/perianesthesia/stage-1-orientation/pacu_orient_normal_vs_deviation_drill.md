@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_recovery_deviation_script_builder.md
   - pacu_orient_respiratory_event_recognition_drill.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Normal Emergence vs Deviation — Recognition Drill
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A recognition drill, not live clinical decision support. Judge real emergence at the bedside with your preceptor and escalate any concern by role.
 
@@ -88,6 +101,19 @@ One coaching point: [...]
 | `base_rate` | Raise deviation frequency for a high-stakes review session |
 | `domain_focus` | Isolate one domain's expected arc |
 | `mode` | `call-it` vs. `explain-why-normal` (justify the reassuring cues) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Run `base_rate = mostly-normal` and still generate mostly deviations because they are more interesting to write — the over-call error then never gets trained.
+- Accept a "discriminating cue" that is the classic sign itself (desaturation, unresponsiveness, frank hypotension) relabeled as early.
+- Write a vignette whose correct call depends on facts the learner was not given (time since arrival, the anesthetic, the pre-op baseline) and then score the learner's call as a miss.
+- Credit `Watch-closer` every round as the safe answer; a learner who never commits to normal or deviation-escalate is hedging, a third error beside over-call and miss.
+
+✅ **DO:**
+- Tally calls across all rounds against the vignettes' true labels; report the normal/deviation mix you actually generated and any run of identical calls.
+- Check each mimic pair shares the same surface phrase word-for-word and differs only in the discriminating cue.
+- Anchor the expected arc to the vignette's anesthetic type — slow motor return after a spinal is the expected arc, while the same slowness after general anesthesia is not.
 
 ## Verification Checklist
 

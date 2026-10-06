@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, DS-06, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_daily_debrief_selfprep.md
   - pacu_orient_question_log_and_spaced_review.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # Orientation Reflective Journal — Shift & Week Debrief (Learner Side)
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A reflection aid, not live clinical decision support. It processes experiences after the fact — it does not direct real-time care.
 
@@ -85,6 +98,19 @@ Confidence: [ ]   Demonstrated: [ ]   Gap? [over/under/aligned]
 | `scope` | `week` aggregates several shifts into a trend |
 | `anchor_moment` | Reflect on a specific hard event (pairs with the debrief self-prep) |
 | `tone` | `wins-first` on a rough week to protect momentum |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Judge an entry by length or competency vocabulary — a long reflection full of domain terms can lack the moment, and a two-line entry can satisfy every block.
+- Fill `Demonstrated` in the confidence-vs-competence block with the tool's own estimate of the learner's skill; it comes only from evidence the learner reports (what they did, preceptor feedback).
+- Write `Check: supported? Y` when nothing in `Happened` backs the interpretation.
+- Tag `I acted: independently` when the moment as told includes preceptor prompting, or assign a domain because a keyword ("airway") appears in a moment that was about communication.
+
+✅ **DO:**
+- Confirm `THE MOMENT` names when it happened, who was involved by role, and what the learner did — all three — before running the later blocks.
+- Check the transferable lesson follows from the observation line, not the interpretation, and that `filed to` names a log or deck that actually exists.
+- For `week` scope, verify any trend claim cites at least two dated entries.
 
 ## Verification Checklist
 

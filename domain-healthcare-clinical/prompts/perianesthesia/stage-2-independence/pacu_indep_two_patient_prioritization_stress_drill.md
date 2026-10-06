@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_run_bay_solo_simulation.md
   - pacu_indep_escalation_decision_drill.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Prioritization Under Pressure — Multi-Bay Stress Drill
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A decision drill, not live clinical decision support. It sharpens the *rule* you apply; real triage happens at the bedside with your team.
 
@@ -84,6 +97,19 @@ One coaching point: [...]
 | `trap` | On trains signal-over-volume; off builds fluency |
 | `rounds` | More rounds under time pressure builds automaticity |
 | `flavor` | Weight demands toward airway vs hemodynamic vs flow to target a weak domain |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Build a trap round where the quiet demand carries no cue that would rank it first; if the dangerous item is undetectable from its description, the "correct" order is a guess the driver imposes.
+- Accept a first move justified with the rule's words ("airway first") when the item chosen has no airway, circulation, or trajectory cue in its description.
+- Let the learner delegate the quietly declining patient to a tech or another nurse's glance so they can handle the loud demand themselves — that inverts the rule while the ranking line still looks right.
+- Score "Delegation/deferral explicit" Y when a deferred item has no named role or no reassess per facility attached.
+
+✅ **DO:**
+- Before revealing, label every demand with its tier from its stated cues (airway/circulation/trajectory · task · convenience) and compare the learner's order to those labels; where two items share the top tier, say so and score the reasoning, not the sequence.
+- Check that the cost-of-misorder reveal names the specific cue that would have gone unwatched, drawn from that round's description.
+- Confirm across rounds that the trap is not always the same shape (family, phone) so the learner is ranking cues, not learning the driver's pattern.
 
 ## Verification Checklist
 

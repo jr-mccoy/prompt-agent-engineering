@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, RT-02, RT-05, DS-06, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_emergency_response_rehearsal_oird.md
   - pacu_indep_emergency_response_rehearsal_last.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Emergency Rehearsal — Airway Crisis (Laryngospasm / Can't-Ventilate), Nurse Role
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** An emergency rehearsal, not live clinical decision support. It rehearses the nurse's role in an airway crisis; airway rescue is provider-led. Follow your facility's airway protocol.
 >
@@ -91,6 +104,19 @@ One coaching point: [...]
 | `trigger` | Vary the precipitant (secretions, stimulation, recent extubation) |
 | `mimic_pressure` | Add bronchospasm/NPPE cues to sharpen discrimination |
 | `after_risk` | Toggle post-obstruction NPPE to train continued surveillance |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Score "Recognized early" Y when the learner names laryngospasm but does not, in the same answer, state the first maneuvers and the call for airway help by role — a correct label with no actions is a quiz answer, not a passed rehearsal.
+- Answer "what will the provider give?" with a named rescue drug and amount; the reply is `per provider order` and a pointer to the toolkit complication artifacts, and positive-pressure support carries no pressure, flow, or device setting either.
+- Credit a mimic as "discriminated" because it was listed; bronchospasm, NPPE, or OIRD is discriminated only when a presented cue (or its absence) is cited against it.
+- Mark "Anticipated after-risk" Y for a passing mention of NPPE without a stated watch — which cue, reassess per facility, and who is told after the airway is secured.
+
+✅ **DO:**
+- Order the learner's moves exactly as they said them and check the call for airway help comes with or before the first jaw-thrust; a call that appears only after "if that doesn't work" scores N on parallel timing.
+- Map each Y on the score line to a quoted learner action; a Y with no matching quote reverts to N.
+- Scan the output for any dose, pressure, flow, or interval token before release; every one must read `per provider order` or `per facility protocol`.
 
 ## Verification Checklist
 

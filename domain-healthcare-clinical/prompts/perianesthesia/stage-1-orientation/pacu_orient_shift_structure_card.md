@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-01, ST-02, DS-06, RT-02, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_prioritization_rule_drill.md
   - pacu_orient_inbound_handoff_receiving_rehearsal.md
@@ -32,6 +32,19 @@ references:
 ---
 
 # PACU Shift Structure Card — The Orientee's Default Flow
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study-and-rehearsal aid, not live clinical decision support. Your real shift flow follows your preceptor, charge nurse, and facility protocol.
 
@@ -88,6 +101,19 @@ Phase I'm least sure of right now: [ ]
 | `focus` | Zoom to one phase for deep rehearsal |
 | `prior_background` | Add a "what transfers / what to re-tune" note per phase |
 | `depth` | `orientation` (default) vs. `enriched` (adds pre-arrival prep detail) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Make a "This phase ends when:" cue look concrete by giving it a number (a discharge score, a minute count, a saturation value) — an end-cue is an observable state; any cut-off behind it is `per facility protocol`.
+- Fill the "Deepens into (drill):" slot with a plausible filename that does not exist in `stage-1-orientation/` — a dead link makes the card read as a complete table of contents when it is not.
+- Add a phase, sub-step, or monitoring task the seed card does not contain because it sounds like good practice; matching phase *names* to the seed card does not make the content under them seed-derived.
+- Write a "what transfers" note for an ICU/ED background that carries over that unit's independent actions (titrating, adjusting a device) as if the PACU orientee may do the same — transfer notes are habits to re-tune, not scope.
+
+✅ **DO:**
+- Trace each phase line back to the seed card (`nursing_pacu_shift_structure.md`) and mark anything the learner added as "my addition," so the card never passes off a personal habit as the standard flow.
+- Check every drill filename against `related_prompts` and the `stage-1-orientation/` listing before printing it; where none fits, write `[no Stage-1 drill yet]` rather than a guess.
+- Read the finished card as a day-1 orientee would: if a phase's end-cue cannot be observed at the bedside without a number, rewrite it as a behavior, and confirm the escalate-always marks sit on the assessment-deviation and stalled-discharge-score phases only.
 
 ## Verification Checklist
 
