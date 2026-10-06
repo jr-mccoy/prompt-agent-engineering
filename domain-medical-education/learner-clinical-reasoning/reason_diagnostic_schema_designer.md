@@ -23,7 +23,7 @@ tags:
   - tree-of-thoughts
   - framework-application
   - active-recall
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
   - domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md
@@ -141,6 +141,16 @@ Restudy target: [one specific node, named]
 | `stress_test_cases` | Number and mix (typical / red-flag / atypical) |
 | `require_red_flag_per_branch` | If `true` (default), each branch needs at least one red-leaf flag if any exist for that problem |
 | `include_pediatric_branch` | Adds a pediatric branch for adult-default schemas where the differential genuinely shifts |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Leaves the learner named in the build transcript vanishing from the final schema with no prune note (vocal cord dysfunction, hemothorax, arrhythmia) | Diff the build transcript against the final schema leaf by leaf; every leaf dropped or moved gets a PRUNE line with its reason |
+| A catch-all branch ("systemic", "other") that makes the tree look collectively exhaustive and slips a second framework into an anatomic schema | Name what the catch-all holds and flag it as a framework exception, or move its leaves onto anatomic branches; do not cite it as proof of exhaustiveness |
+| RED tags that disagree between sections (RED LEAVES lists severe metabolic acidosis; FINAL SCHEMA leaves it untagged), or a branch with no red leaf because none was considered (life-threatening asthma on lower airway) | Cross-check the RED LEAVES list against the tags in FINAL SCHEMA; for any branch without a red leaf, name the can't-miss entity that was considered and why it does not qualify |
+| Recording a stress-test result as "Partial" when the learner reached the leaf only after a prompt | Score first pass only — pass or fail — and record the prompted revision on a separate line |
+| Leaf anchors that cross into another branch's mechanism (sepsis anchored on "lung injury", which the parenchyma branch owns) while the MECE check reads "yes" | Read each anchor against the branch it sits on; an anchor naming another branch's mechanism is an unresolved overlap and goes to PRUNE |
 
 ## Verification Checklist
 

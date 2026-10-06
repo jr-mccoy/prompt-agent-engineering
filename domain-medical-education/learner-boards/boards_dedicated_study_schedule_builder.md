@@ -25,7 +25,7 @@ tags:
   - schedule
   - planning
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_explain_this_answer.md
   - domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md
@@ -156,6 +156,16 @@ Single highest-yield discipline: [...]
 | `risk_tolerance` | aggressive (6.5d/wk) / balanced (6d) / conservative (5–5.5d) |
 | `parallel_clerkship` | If still rotating, modify daily hours and shift to weekend-heavy plan |
 | `comeback_from_failed_attempt` | Add re-take protocol with emphasis on failed-content review |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A daily template whose blocks and breaks exceed `daily_hours_realistic`, or whose sleep window overlaps the last block | Add up every block's start–end time and confirm the study total equals `daily_hours_realistic` with the sleep floor and fixed commitments still intact; then count calendar days (diagnostic + study + off + buffer + taper) and confirm they equal `dedicated_days_available` |
+| Weekly Q-bank coverage targets the daily question count cannot reach (40 questions a day will not move a multi-thousand-item bank from 15% to 85% in four weeks) | Recompute each coverage target as starting % + (questions/day × study days ÷ bank size), using the learner's real bank size [VERIFY: current item count for the learner's Q-bank]; change the target, never the arithmetic |
+| A score trajectory that lands exactly on the target while gaining faster per week than the rate the method itself states | Project the curve from baseline at the stated per-week gain; if it falls short, print the shortfall in the trajectory line and fire the gap flag instead of bending the curve to meet the goal |
+| Buffer days counted as present because the word "buffer" appears, with no slot on the calendar | Give each buffer day a date or week slot in the week-by-week cadence and count them there, not in the narrative |
+| Targets, score scales and practice-form names written as if current — a three-digit goal for an exam that now reports pass/fail, or a retired self-assessment form | Check the exam's current score reporting and the self-assessments still offered before naming targets or forms [VERIFY: current USMLE / NBOME / NCSBN / NCCPA / NABP / NREMT score-reporting policy and self-assessment catalogue] |
 
 ## Verification Checklist
 

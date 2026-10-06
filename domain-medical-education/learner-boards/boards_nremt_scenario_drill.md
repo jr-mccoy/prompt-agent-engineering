@@ -20,7 +20,7 @@ tags:
   - field-scenario
   - protocol
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_usmle_step3_ccs_walkthrough.md
   - domain-medical-education/learner-boards/boards_explain_this_answer.md
@@ -121,6 +121,16 @@ Single highest-yield improvement: [...]
 | `partner_availability` | Solo response / standard 2-person / fly-car |
 | `night_or_dispatch_overlay` | Adds hazard or limited info |
 | `multi_patient_overlay` | Mass-casualty triage; START algorithm scored |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Crediting a critical-action line for an assessment the simulator volunteered — e.g., "Focused exam — pupils" ticked when the learner never said they checked pupils | Credit a line only when the transcript holds the learner's own words for that action; put the quote and time beside the ✓, and mark ✗ when the finding came from the simulator unprompted |
+| Scorecard times that do not match the transcript clock (a drug credited at one minute when the transcript gives it before a five-minute advance) | Rebuild each ✓ time from the transcript's time stamps, then recount the "Required: N/N" and adjunct tallies from the lines themselves |
+| Patient state that improves on a timer rather than after the intervention — oxygenation recovering before ventilations start, mental status clearing before the drug could act by that route | Return each improvement only after the action that causes it and at a plausible onset for the route used; with no action, hold or worsen the state |
+| Treating doses and sequences that match `protocol_constraints` as NREMT-correct | Keep two labels — local-protocol adherence, and what the national exam expects at this cert level [VERIFY: current NREMT exam content outline, National EMS Scope of Practice Model and National Model EMS Clinical Guidelines] — and flag where they differ |
+| "Critical fails: none" written without walking the critical criteria | Check the run against each critical criterion on the current skill sheet for this cert level [VERIFY: current NREMT psychomotor skill sheets] and list any criterion the scenario never tested |
 
 ## Verification Checklist
 

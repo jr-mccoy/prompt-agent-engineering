@@ -22,7 +22,7 @@ tags:
   - teamstepps
   - crisis-resource-management
   - teamwork
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md
   - domain-medical-education/educator-simulation-design/sim_confederate_script_author.md
@@ -121,6 +121,16 @@ Considered: [a solo-solvable design | a stereotyped role] — Rejected: [reason]
 | `difficulty` | Harder = layered stressors (asymmetry + interruption), faster timers |
 | `add_handoff` | Inserts a structured handoff (I-PASS/SBAR) as a graded transition |
 | `leader_designation` | Pre-assigned leader vs. emergent leadership changes the role-clarity objective |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Labeling a transition "coordination-required" when any single role can trigger it (e.g., State 2 advances "if RN **or** pharmacy" challenges the order) or when State 1 is solvable by the physician alone | Run a removal test: delete each profession in turn and walk the state machine; if the scenario still advances unchanged without a role, that role is a prop at that state — redesign so its unique information or action is needed somewhere |
+| A teamwork objective that is actually performed by a confederate (pharmacy is the CUS objective's actor but "may be confederate"), so the team is rated on a scripted behavior | Check every LO-T against the learner roster; an objective whose actor is a confederate is rewritten so the learner's response to that confederate is what gets rated |
+| A teamwork rating frame with a single "Observed? [ ]" box per behavior when the objective says "on every drug order" — one check-back ticks the box | Rate with a denominator: count opportunities (drug orders given, safety concerns raised) and record successes out of opportunities, attributed to the role that performed them |
+| Bundle components and allergy cross-reactivity facts written from memory and audited "verified" (fixed fluid volumes, which beta-lactams to avoid) | Check each against the current edition of the named guideline `[VERIFY: current Surviving Sepsis Campaign guideline; local antimicrobial allergy policy]` and phrase recommendations at the strength the source gives them |
+| Passing the anti-stereotype guard because no role contains loaded adjectives, while every non-physician role only "holds" a fact and every decision sits with the resident | For each profession, name one decision it makes or changes in the run (RT selects the oxygen-support step, pharmacy substitutes the agent), not only information it carries |
 
 ## Verification Checklist
 

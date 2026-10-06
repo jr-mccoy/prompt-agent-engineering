@@ -21,7 +21,7 @@ tags:
   - osteopathic
   - high-yield
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_usmle_step1_concept_drill.md
   - domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md
@@ -149,6 +149,16 @@ Trap audit: [the specific COMLEX-style trap — usually contraindication missed 
 | `vignette_lead_in` | Diagnosis / technique / contraindication / TART |
 | `pediatric_or_pregnancy_overlay` | Adds peds or pregnancy-specific cautions |
 | `viscerosomatic_pair` | Anchor to a paired viscerosomatic reflex (e.g., T1–T4 cardiac, T5–T9 GI upper) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Naming a dysfunction with C2–C7 same-side coupling at a segment that does not follow it (OA, AA), or swapping Fryette Type I and Type II in the thoracolumbar spine | Before filling the TART table, check the named dysfunction against that segment's coupled-motion rule (OA rotation and sidebending opposite, AA mainly rotation, C2–C7 same side, Type I vs Type II for T/L) and reject a name the segment cannot produce |
+| A vignette keyed as single-best-answer where two options survive — e.g., muscle energy and articulatory both defensible for upper-cervical dysfunction in RA | Answer the vignette blind from the stem alone and write the stem fact that eliminates each non-keyed option; if an option survives with no such fact, rewrite the stem or replace the option before delivery |
+| Classifying a contraindication as absolute in one section and relative in another (RA upper-cervical instability appears both ways), then keying the item on that label | Use one classification across the page and the teardown; where osteopathic texts disagree, say so and do not key an item on the contested label [VERIFY: current NBOME COMLEX blueprint and the program's OPP reference text] |
+| A modality row or teardown that keeps a mid-sentence self-correction ("into the barrier ... no — into freedom") | Settle the counterstrain or ME position first and state it once; then re-read every modality row's direction words (barrier vs freedom, toward vs away) against the dysfunction's free motion |
+| Viscerosomatic levels or Chapman's points given from memory as one fixed range | Present the range with its source and mark it `[VERIFY: viscerosomatic chart in the program's OPP text]` — published ranges differ by a segment or two |
 
 ## Verification Checklist
 

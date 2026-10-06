@@ -26,7 +26,7 @@ tags:
   - question-explanation
   - active-recall
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_usmle_step1_concept_drill.md
   - domain-medical-education/learner-boards/boards_usmle_step2ck_vignette_drill.md
@@ -144,6 +144,16 @@ Note: [...]
 | `prior_misses_on_topic` | If supplied, escalate restudy from review to deep-restudy |
 | `batch_mode` | Accept 5 items at once and produce a consolidated teardown |
 | `paste_explanation_critique` | If learner pastes UWorld/USMLE-Rx explanation, critique it for accuracy |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Inferring the key when `correct_answer` is missing and stating it with the same certainty as a supplied key — or silently overriding a supplied key | Solve the item blind before looking at `learner_answer`; if your key disagrees with the supplied one or hinges on a guideline threshold, say so on the Correct-answer line instead of quietly picking a side |
+| A "verbatim" discriminating fact stitched from several stem phrases, or with values reworded ("glucose 480" for "glucose 480 mg/dL") | String-match the quoted phrase against the echoed stem character for character; when the swing needs several data points, quote each one separately |
+| Distractor-walk thresholds recited from memory — bicarbonate pH cutoff, potassium floor before insulin, glucose level for adding dextrose — that the latest consensus may have moved | Tag each numeric threshold with its source and edition and check it against the guideline the exam currently follows [VERIFY: e.g., current ADA hyperglycemic-crises consensus]; if the key depends on a superseded threshold, flag the item as outdated |
+| Building the explanation on a derived lab (anion gap, corrected sodium, osmolality) taken on trust from the stem | Recompute the derived value from the stem's own numbers (e.g., AG = Na − (Cl + HCO3)) before naming it as discriminating |
+| Naming the failure mode (anchoring, knowledge gap) from the chosen letter alone | With only a letter, present the failure mode as a hypothesis and ask one question about the learner's reasoning; commit to a label once their reasoning is on the page |
 
 ## Verification Checklist
 

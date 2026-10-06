@@ -21,7 +21,7 @@ tags:
   - clinical-judgment
   - safety
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_nclex_rn_select_all_that_apply.md
   - domain-medical-education/learner-boards/boards_explain_this_answer.md
@@ -110,6 +110,16 @@ Highest-yield restudy target: [...]
 | `time_pressure` | Affects teardown framing |
 | `delegation_overlay` | Adds RN/LPN/UAP scope dimension to the ranking |
 | `dual_unstable` | Two unstable patients — learner must rank by which is *most* unstable |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| An item where a second option can be argued first on the stem as written — e.g., a patient on an insulin drip with no potassium given, competing with a desaturating post-op patient | For each non-keyed option, write the single added finding that would make it first, then confirm the stem rules that finding out; if a careful reader could supply it, add the datum that excludes it |
+| Teardown positions 2–4 resting on data the stem never gave ("stable vitals (presumed)") | Rank only on what each one-liner states; if a position needs a vital or lab, add it to the option or label that part of the ranking as a teaching order |
+| Anchor labels attached by habit — "ABCs" on an option with no airway, breathing or circulation finding, "unexpected" on a finding the diagnosis predicts | Tie every anchor to a quoted word in that option (e.g., "SpO2 88%" → Breathing); remove any anchor with no quoted finding behind it |
+| Presenting the full 1st–4th ranking as if the exam keyed it | The exam keys only the first choice: mark positions 2–4 as rationale, and align the item with the current test plan and clinical judgment model [VERIFY: current NCSBN NCLEX-RN Test Plan and NCJMM] |
+| Delegation-overlay rankings that assume one state's LPN/UAP scope | Base delegation answers on the national guidance the exam uses [VERIFY: current NCSBN/ANA National Guidelines for Nursing Delegation] and note that state practice acts can differ |
 
 ## Verification Checklist
 

@@ -22,7 +22,7 @@ tags:
   - pharmacokinetics
   - compounding
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_explain_this_answer.md
   - domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_flashcard_set.md
@@ -125,6 +125,16 @@ Highest-yield restudy target: [...]
 | `series_mode` | Run a series of 5 items, scaling difficulty |
 | `MTM_overlay` | Add medication therapy management framing |
 | `dose-titration` | Multi-step item with reassessment |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Calling the learner's wrong number a "missed conversion" without back-solving it | Divide the learner's answer by the correct one: a ratio of 1000, 60, 1/60 or TBW/IBW identifies the slip; any other ratio (e.g., 11.7 ÷ 13.125 ≈ 0.89) is not a unit error, and the callout must say "cause not identified — show me your setup" |
+| Delivering a stem whose key was computed once, in one direction | Before delivery, recompute the key by a second route (stepwise mcg/min → mg/h → mL/h against the single dimensional-analysis chain) and redo every product shown in Steps 3–4; the item ships only when both routes agree |
+| Rounding intermediates (concentration, CrCl, ke) and carrying the rounded value forward, or leaving the rounding rule unstated so two answers (13.1 vs 13 mL/h) are both defensible | Carry full precision until Step 5, round once, and put the rounding instruction in the stem [VERIFY: current NABP NAPLEX competency statements and the institution's rounding policy] |
+| Renal-dose or aminoglycoside items that leave the weight basis implicit, so TBW, IBW and AdjBW give three "correct" keys | Name in the stem which weight and which CrCl equation the item expects, compute IBW from the stated height with the formula shown, and check the key against that choice only |
+| Ratio-strength, percent-strength or alligation answers that look right but break the definition (1:1000 read as 1 mg per 1000 mL; alligation parts that do not sum to the final quantity) | Convert ratio and percent strengths back to g/mL as a check, and confirm (parts × strengths) ÷ total parts equals the target strength before revealing the answer |
 
 ## Verification Checklist
 

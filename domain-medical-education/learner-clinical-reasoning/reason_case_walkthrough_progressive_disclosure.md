@@ -24,7 +24,7 @@ tags:
   - case-conference
   - reasoning-evolution
   - single-question-pacing
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md
   - domain-medical-education/learner-clinical-reasoning/reason_ddx_practice_session.md
@@ -147,6 +147,16 @@ Restudy: [the specific update behavior to drill]
 | `include_red_herring_stage` | One stage contains a misleading datum (e.g., a positive UA in an elderly confused patient who actually has SDH) |
 | `time_per_stage_seconds` | Soft cap for realism |
 | `include_team_handoff_stage` | One stage adds "now you're handing off — what's your sign-out one-liner?" |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A reveal that leaks a later stage's datum (anticoagulant use given in the HPI stage before the PMH stage), so the next stage's "unchanged" is an artifact of the leak | Before stage 1, list every datum with the one stage it belongs to; at each reveal, check that only that stage's items are shown |
+| Evolution-table cells filled in by the tutor for a stage where the learner gave no update | Fill each cell only from the learner's words at that stage; where they gave none, write "not updated" and count it as a missed update |
+| Grading confidence as "appropriate" because the leading diagnosis proved right in the end | Judge confidence against the data revealed by that stage, not the outcome — would the same confidence be sound if the final diagnosis had been different? |
+| A red-herring stage where the tutor credits a response current guidance argues against — e.g., "treat the UTI in parallel" for bacteriuria with no urinary symptoms or fever in a confused older adult | Check the management credited at the red-herring stage against current guidance [VERIFY: current IDSA asymptomatic bacteriuria guideline]; the red herring should teach the learner not to act on it |
+| A carry-forward "reasoning-evolution pattern" asserted from a single case | Call it an observation from this case, cite the stage numbers it rests on, and say what a second case would have to show to make it a pattern |
 
 ## Verification Checklist
 

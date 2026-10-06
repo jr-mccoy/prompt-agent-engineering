@@ -22,7 +22,7 @@ tags:
   - pearls
   - facilitation
   - reflective-practice
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_debrief_advocacy_inquiry.md
   - domain-medical-education/educator-simulation-design/sim_debrief_plus_delta_facilitation.md
@@ -114,6 +114,16 @@ Considered: [skipping Reactions to save time | directive lecture where a frame e
 | `team_composition` | Interprofessional → add a role-perspective round in Description; team process change in Summary |
 | `primary_gaps` | Determines number and approach of Analysis blocks |
 | `setting` | In-situ → add a systems/LST readout in Summary |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A TIME BUDGET whose phases look proportioned but do not add up to `debrief_time`, or an Analysis block packed with more seed questions than its minutes allow | Sum the four phase minutes against `debrief_time`, check each against its percentage band, then divide Analysis minutes by the total number of seed questions — under ~2 minutes per seed means cut gaps or seeds, not the Reactions phase |
+| Writing anticipated gaps into the Description "Target" as if they happened ("agree epi was given ~3 min after shock onset") when `observed_performance` was templated | Tag each Description target and gap `[observed]` or `[anticipated]`; anticipated ones carry a placeholder for the run-sheet time and are dropped if the team did not show the behavior |
+| An approach-selection justification that restates the approach's definition ("focused facilitation — there is a frame to explore") without naming the evidence | Justify each selected approach with the specific observed cue — a learner remark, a hesitation, a repeated action — that points to a frame, a knowledge gap, or likely insight |
+| A GAP mapped to an objective the scenario never elicited, so the Analysis "covers" an objective that had no observable behavior | Check every `[→ objective]` against the objectives in `scenario_summary` and against `observed_performance`; a gap with no matching behavior moves to the Summary as a transfer note or is dropped |
+| Directive-teaching content (drug sequence, check-back wording) given a FIDELITY CHECK status of "verified" because the source name is filled in | Mark a teaching point verified only after reading it against the named source's current edition; otherwise status = `[VERIFY: source + year]` |
 
 ## Verification Checklist
 

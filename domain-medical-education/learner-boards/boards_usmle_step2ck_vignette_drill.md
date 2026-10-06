@@ -22,7 +22,7 @@ tags:
   - next-best-step
   - clinical-management
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_usmle_step1_concept_drill.md
   - domain-medical-education/learner-boards/boards_usmle_step3_ccs_walkthrough.md
@@ -127,6 +127,16 @@ Highest-yield restudy target: [...]
 | `time_pressure` | Affects teardown framing for board-day pacing |
 | `serial_difficulty` | Run two consecutive items, second one one level harder |
 | `bilateral_lead_in` | Pair a "most likely dx" item with a "next best step" on the same stem to test layered reasoning |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Keying an item to one guideline era when the current guideline endorses two of the options — e.g., stress testing and coronary CT angiography both recommended for stable chest pain at intermediate–high risk | Solve the item blind against the current guideline [VERIFY: current ACC/AHA chest-pain and chronic coronary disease guidelines] and list every option it endorses for this patient; if more than one survives, add the stem datum that excludes the extras (exercise capacity, ECG interpretability, renal function, known CAD) |
+| Applying "what this lead-in rewards" as a slogan (least invasive first) when the stem holds a feature that overrides it | Scan the stem for instability, high-risk features or contraindications before writing the rule; if one is present, the rule changes and the teardown says why |
+| Asserting a pretest-probability category in the teardown ("intermediate-to-high") with no calculation behind it | Name the tool or table used to assign the category and the stem values fed into it; if the stem lacks a needed value, add it |
+| Distractor "would be correct for" lines that mix criteria from two tests (indications for stress imaging attributed to CT angiography) | Check each home-condition claim against the same guideline section used to key the item |
+| A `pertinent_findings_to_lock` entry that never makes it into the stem, or is contradicted by another sentence | Count each locked finding in the final stem — every one present, none contradicted — before delivering the item |
 
 ## Verification Checklist
 

@@ -111299,7 +111299,7 @@
         "rubric"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md",
         "domain-medical-education/educator-rubrics-wba/assess_dops_rubric_author.md",
@@ -111362,7 +111362,7 @@
         "safety-critical"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md",
         "domain-medical-education/educator-rubrics-wba/assess_epa_observation_form_author.md",
@@ -111393,7 +111393,7 @@
         "supervision-level"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md",
         "domain-medical-education/educator-rubrics-wba/assess_dops_rubric_author.md",
@@ -111425,7 +111425,7 @@
         "workplace-based-assessment"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-rubrics-wba/assess_epa_observation_form_author.md",
         "domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md",
@@ -111551,7 +111551,7 @@
         "workplace-based-assessment"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md",
         "domain-medical-education/educator-rubrics-wba/assess_narrative_rating_anchor_writer.md",
@@ -111582,7 +111582,7 @@
         "assessment"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md",
         "domain-medical-education/educator-rubrics-wba/assess_dops_rubric_author.md",
@@ -111614,7 +111614,7 @@
         "rubric"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-18",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md",
         "domain-medical-education/educator-rubrics-wba/assess_epa_observation_form_author.md",
@@ -111677,7 +111677,7 @@
         "reflective-practice"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_debrief_guide_pearls.md",
         "domain-medical-education/educator-simulation-design/sim_debrief_plus_delta_facilitation.md",
@@ -111708,7 +111708,7 @@
         "scenario-design"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md",
         "domain-medical-education/educator-simulation-design/sim_multidisciplinary_team_scenario.md",
@@ -111739,7 +111739,7 @@
         "INACSL"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_low_fidelity_scenario_author.md",
         "domain-medical-education/educator-simulation-design/sim_vital_sign_trajectory_designer.md",
@@ -111772,7 +111772,7 @@
         "patient-safety"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md",
         "domain-medical-education/educator-simulation-design/sim_multidisciplinary_team_scenario.md",
@@ -111803,7 +111803,7 @@
         "INACSL"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md",
         "domain-medical-education/educator-simulation-design/sim_pre_brief_psychological_safety_script.md",
@@ -111835,7 +111835,7 @@
         "teamwork"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md",
         "domain-medical-education/educator-simulation-design/sim_confederate_script_author.md",
@@ -111897,7 +111897,7 @@
         "reflective-practice"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_debrief_advocacy_inquiry.md",
         "domain-medical-education/educator-simulation-design/sim_debrief_plus_delta_facilitation.md",
@@ -111929,7 +111929,7 @@
         "facilitation"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_debrief_guide_pearls.md",
         "domain-medical-education/educator-simulation-design/sim_debrief_advocacy_inquiry.md",
@@ -111991,7 +111991,7 @@
         "briefing"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md",
         "domain-medical-education/educator-simulation-design/sim_debrief_guide_pearls.md",
@@ -112053,7 +112053,7 @@
         "state-based-design"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-29",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md",
         "domain-medical-education/educator-simulation-design/sim_confederate_script_author.md",
@@ -112117,7 +112117,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_usmle_step1_concept_drill.md",
         "domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md",
@@ -112148,7 +112148,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_explain_this_answer.md",
         "domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md",
@@ -112206,7 +112206,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_usmle_step1_concept_drill.md",
         "domain-medical-education/learner-boards/boards_usmle_step2ck_vignette_drill.md",
@@ -112299,7 +112299,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_explain_this_answer.md",
         "domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_flashcard_set.md",
@@ -112331,7 +112331,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_nclex_rn_select_all_that_apply.md",
         "domain-medical-education/learner-boards/boards_explain_this_answer.md"
@@ -112362,7 +112362,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_nclex_prioritization_drill.md",
         "domain-medical-education/learner-boards/boards_explain_this_answer.md",
@@ -112394,7 +112394,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_usmle_step3_ccs_walkthrough.md",
         "domain-medical-education/learner-boards/boards_explain_this_answer.md"
@@ -112425,7 +112425,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_usmle_step2ck_vignette_drill.md",
         "domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md",
@@ -112488,7 +112488,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_usmle_step2ck_vignette_drill.md",
         "domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md",
@@ -112521,7 +112521,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_usmle_step1_concept_drill.md",
         "domain-medical-education/learner-boards/boards_usmle_step3_ccs_walkthrough.md",
@@ -112585,7 +112585,7 @@
         "calibration"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md",
         "domain-medical-education/learner-clinical-reasoning/reason_ddx_practice_session.md",
@@ -112616,7 +112616,7 @@
         "single-question-pacing"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md",
         "domain-medical-education/learner-clinical-reasoning/reason_ddx_practice_session.md",
@@ -112709,7 +112709,7 @@
         "active-recall"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md",
         "domain-medical-education/learner-clinical-reasoning/reason_diagnostic_schema_designer.md",
@@ -112740,7 +112740,7 @@
         "llm-as-judge"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md",
         "domain-medical-education/learner-clinical-reasoning/reason_diagnostic_schema_designer.md",
@@ -112772,7 +112772,7 @@
         "active-recall"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md",
         "domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md",

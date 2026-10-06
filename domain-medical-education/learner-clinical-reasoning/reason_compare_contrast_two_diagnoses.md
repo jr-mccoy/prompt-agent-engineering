@@ -24,7 +24,7 @@ tags:
   - discriminator
   - swing-feature
   - active-recall
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
   - domain-medical-education/learner-clinical-reasoning/reason_diagnostic_schema_designer.md
@@ -155,6 +155,16 @@ Restudy: [...]
 | `include_population_caveat` | If `true`, each swing feature gets a "this only swings in [population]" caveat |
 | `include_treatment_response_row` | Whether the matrix includes treatment-response (omit if untreated comparison) |
 | `stress_test_count` | Number of vignettes (default 2) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A "false discriminators caught" count that includes a feature the catch list confirmed as a real discriminator | Recount the summary from the sections above: catches = entries actually reclassified; discriminating rows = matrix rows classed `discriminator` |
+| Swing features tagged "large" with no LR behind the tag, or a cluster of findings given one magnitude as if it were a single test | Give the source type for each magnitude tag or downgrade it to "unquantified"; tag a cluster only when an LR for that cluster exists `[VERIFY: source]` |
+| An anchor that misstates the severity class it names (e.g., "submassive" PE described as hemodynamic compromise) while stress-test vitals drift toward the other class | Define the class by its criteria (e.g., intermediate-risk PE: RV dysfunction or troponin rise without sustained hypotension) [VERIFY: current ESC / AHA PE risk classification] and check the stress-test vitals against that threshold |
+| Stress-test vignettes built only from one column's features, so they test recognition rather than discrimination | Put at least one overlap-section feature in each vignette and check that the swing features, not the surrounding typical features, carry the decision |
+| Counting the treatment-response row toward "Discriminating rows" when the matrix is meant for the bedside at presentation | Report treatment response as a post-hoc swing, separate from the presentation count, and keep it out of the bedside heuristic |
 
 ## Verification Checklist
 

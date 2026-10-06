@@ -23,7 +23,7 @@ tags:
   - ranked-ddx
   - rubric-graded
   - llm-as-judge
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
   - domain-medical-education/learner-clinical-reasoning/reason_diagnostic_schema_designer.md
@@ -135,6 +135,16 @@ Next-session focus: [...]
 | `revise_once` | Enables learning loop |
 | `rubric_weights` | Custom axis weights (e.g., heavier can't-miss for ED context) |
 | `include_red_herring_feature` | Tutor seeds one feature that points to a wrong diagnosis; tests whether learner anchors on it |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Scoring Can't-miss 2 when a red leaf sits in the bottom half of the list (PE at #4 of 5) — the checklist's own top-half rule fails it | Apply the rule by position: count the entries, mark the cut (top 2 of 5), and score 0 or 1 if any red leaf for this presentation falls below it |
+| Re-scoring only the axes a revision targeted and carrying the old scores forward for the rest | Re-score all five axes on the revised list and re-add the total; a revision that dropped its "tied to" links cannot keep Reasoning = 2 |
+| Crediting Reasoning for links to features that do not discriminate (relief with nitroglycerin used to tie an entry to ACS) | For each "tied to" feature, check that it shifts likelihood for that entry; credit the links that discriminate and note the ones that do not |
+| A session mean built from post-revision scores only, which hides how the learner did unaided | Report the attempt-1 mean and the revised mean separately, and name the weakest axis from attempt 1 |
+| In `learner-case` mode, presenting the tutor-canonical DDx as the answer for a real patient | Label it a teaching comparison, leave management out of it, and route questions about the learner's actual patient to their supervising clinician |
 
 ## Verification Checklist
 

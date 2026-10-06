@@ -21,7 +21,7 @@ tags:
   - advocacy-inquiry
   - good-judgment
   - reflective-practice
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_debrief_guide_pearls.md
   - domain-medical-education/educator-simulation-design/sim_debrief_plus_delta_facilitation.md
@@ -106,6 +106,16 @@ Considered: [a leading question or a judgment-stripped niceness] — Rejected: [
 | `likely_frames` | More frames → more follow-up branches |
 | `emotional_loading` | High → lead with a brief normalize before advocacy |
 | `convert_to_self_assessment` | Offers a self-assessment opener first, advocacy-inquiry as fallback |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Adding minute marks or quoted words to the Observation that are not in `what_was_observed`, because time-anchored advocacy reads as more credible | Use only the times, sequence, and words given in `what_was_observed`; if no times were recorded, state the order of events without numbers |
+| Judging the action before confirming the scenario actually presented the cue at that moment (e.g., the mannequin's hypotension or wheeze was not programmed until minute 3) | Check the observation against the scenario run sheet or video timeline first; if the cue appeared late, the advocacy is about scenario design or cue recognition, not delay |
+| Follow-up questions that pass the "no 'don't you think'" test but still have one answer the facilitator already holds ("Where does antihistamine actually sit in the sequence?") | Test each inquiry: could the learner's answer tell you something you do not already know about their frame? If not, label it a brief directive teaching move rather than inquiry |
+| Pre-filling "Frame shift confirmed? Yes" and the learner-articulated takeaway in a guide written before the debrief happens | Leave the CLOSE as an observable criterion ("learner states the trigger for IM epinephrine without prompting"); it is answered in the room, not by the author |
+| Dose, route, or site corrections in a Frame C branch written from memory and marked "verified" | Quote the dose/route only as given in the current anaphylaxis guideline the program uses `[VERIFY: current WAO / national resuscitation council anaphylaxis guidance, adult vs paediatric]`, and list it as its own FIDELITY CHECK row |
 
 ## Verification Checklist
 

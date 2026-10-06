@@ -22,7 +22,7 @@ tags:
   - inter-rater-reliability
   - narrative-rating
   - assessment
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md
   - domain-medical-education/educator-rubrics-wba/assess_dops_rubric_author.md
@@ -147,6 +147,16 @@ Conditions: 30-min rater calibration with 2 worked-example vignettes; second-rat
 | `setting` | Replacement anchors reflect setting (ED disposition vs outpatient continuity vs OR teamwork) |
 | `target_kappa` | Higher targets force more specific anchors (especially for safety-critical) |
 | `preserve_structure` | If `no`, prompt outputs restructure recommendation |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Sweeping only the original anchors, so replacements that smuggle in new judgment words ("focused," "relevant," "correct technique," "clear") pass as observable | Run the step-1 adjective sweep a second time over the replacement anchors themselves; any replacement that would be flagged by the sweep goes back through step 2 |
+| A rejection log that does not match the anchored rubric — flagged phrases with no log row, or log rows whose replacement text differs from what appears in the band | Count: the number of phrases flagged in each domain's Adjective sweep must equal that domain's rows in the REJECTION LOG, and each row's replacement phrasing must appear word-for-word in the corresponding band |
+| Replacements that are observable but measure a different construct than the domain heading (e.g., a "Clinical judgment" Sup band built on "communicates uncertainty to the patient," which belongs to Communication) | For each replacement, name the domain a third party would file the behavior under; if it is not this domain, move it or restate it so the domain's construct is preserved when `preserve_structure = yes` |
+| Trading an adjective for an unmeasurable number (e.g., "maintains eye contact ≥ 70% of encounter") that reads precise but cannot be scored live | Keep a number only if a rater can count or time it during a real-time observation without video; otherwise replace it with a presence/absence behavior |
+| Wording the INTER-RATER FEASIBILITY line as if agreement had been shown | State it as a prediction conditional on rater training; actual κ requires a pilot of paired ratings on the same encounters, and the output names how many pairs the program should collect before claiming the target |
 
 ## Verification Checklist
 

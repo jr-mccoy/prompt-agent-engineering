@@ -21,7 +21,7 @@ tags:
   - select-all-that-apply
   - clinical-judgment
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_nclex_prioritization_drill.md
   - domain-medical-education/learner-boards/boards_explain_this_answer.md
@@ -131,6 +131,16 @@ Single highest-yield improvement: [...]
 | `scope_overlay` | Adds RN vs LPN vs UAP scope dimension |
 | `delegation_overlay` | Adds delegation-to-UAP language as a trap |
 | `cultural_overlay` | Adds cultural-competence consideration |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Marking an option wrong only because another option is "more of a priority" — single-best-answer logic in a format where each option is scored on its own | Judge every option as a standalone true/false statement against the stem: an incorrect option must be wrong by itself (harmful, out of scope, or with the wrong timing written into it); if it is not, it is correct and joins the key |
+| Keyed options that share a pattern the learner can game — all correct ones open with "Anticipate…", the wrong ones carry absolutes or "as the priority" | Before delivery, scan the options for repeated opening verbs, length, absolutes and qualifiers, and vary the phrasing so the key cannot be found without the content |
+| An NGN partial-credit score computed by counting right decisions (5/6) rather than the scoring rule for select-all items | Recompute with the +/- rule (+1 per correct selection, −1 per incorrect selection, floor 0, maximum = number of correct options; 4 right plus 1 wrong selected = 3/4) and confirm the rule at the source [VERIFY: current NCSBN NGN scoring rules] |
+| Rationales built on an older protocol or a drug choice current guidance has de-emphasized (e.g., which potassium binder, and when) | Check each keyed and unkeyed rationale against current guidance and labeling [VERIFY: current hyperkalemia guideline], and write one independent justification per option — six options, six reasons, none relying on another option |
+| Choosing the correct count first and bending options to fit it | Settle the clinical facts, then count how many options are true; if the count falls outside 2–4, rewrite an option rather than relabel it |
 
 ## Verification Checklist
 

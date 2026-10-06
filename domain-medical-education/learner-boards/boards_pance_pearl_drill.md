@@ -20,7 +20,7 @@ tags:
   - pearls
   - high-yield
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_usmle_step2ck_vignette_drill.md
   - domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md
@@ -118,6 +118,16 @@ Trap audit: [name the failure mode]
 | `depth` | core / extended |
 | `forced_distractor_topic` | Override default board trap |
 | `paired_vignette` | Run two stems on the same topic, different lead-ins |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Pearl 4 carrying a drug, duration or age/pregnancy restriction the current guideline has revised (e.g., the under-8 doxycycline restriction for short courses) | Check the first-line agent, dose, duration and population exclusions against the current named guideline and write its year on the card [VERIFY: e.g., current IDSA/AAN/ACR Lyme guideline]; then confirm the keyed vignette option uses the same dose and duration as Pearl 4 |
+| Filling the "Dead-giveaway lab/imaging" slot with a clinical finding because no test locks the diagnosis | If no lab or image locks it, write "no confirmatory test at this stage — diagnosis is clinical" in Pearl 3 rather than inventing a test or relabeling a sign |
+| Quoting Pearl 2 as "exact PANCE phrasing", or teaching the classic picture as the usual one (central clearing in erythema migrans, which many lesions lack) | Label quoted phrases as typical stem language, not NCCPA wording, and add a line when the classic form is the minority presentation |
+| Distractor rationales ("reserved for …") that state the wrong option's indications from memory | Check each distractor's "would be correct for" claim against the same guideline used for Pearl 4, so the card and the teardown cannot contradict each other |
+| Assuming a topic is on the blueprint, or treating recertification as a single proctored exam | Confirm the topic and task area against the current blueprint and recertification format [VERIFY: current NCCPA PANCE content blueprint and PANRE / PANRE-LA format], then solve the vignette blind, without the card, and check exactly one option survives |
 
 ## Verification Checklist
 

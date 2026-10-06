@@ -22,7 +22,7 @@ tags:
   - workplace-based-assessment
   - rubric
   - safety-critical
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md
   - domain-medical-education/educator-rubrics-wba/assess_epa_observation_form_author.md
@@ -181,6 +181,16 @@ Replaced with: step-by-step + overall.
 | `framework_basis` | ACGME milestones / RCS UK / RCPSC / NCSBN — adjusts anchor language and competency mapping |
 | `include_team_dynamics` | Adds team-communication and closed-loop element (e.g., for codes / RSI) |
 | `include_consent` | Adds informed-consent observation step (for elective procedures) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| An auto-fail rule that names a step absent from the step checklist, or a step flagged "Safety-critical: yes" with no matching auto-fail rule | Cross-match before shipping: list every step flagged safety-critical and every numbered auto-fail rule; the two lists must pair one-to-one and match the user's `safety_critical_steps` (the IJ CVL example must show 5 and 5) |
+| Leaving it undefined whether a safety-critical step rated "done-with-coaching" counts as "missed or incorrect" | State the rule explicitly on the form (e.g., "assessor had to prompt wire visualization → auto-fail applies"); otherwise two raters score the same coached step as pass and fail and the κ ≥ 0.85 target is unreachable |
+| A safety-critical step quietly rated NA (e.g., post-line CXR in `simulation`) so the auto-fail screen passes by omission | Permit NA on a safety-critical step only where the `setting` removes it, and print the substitute behavior to observe (e.g., "verbalizes need for CXR before non-emergent use") |
+| Step behaviors, needle-guidance technique, or source-audit citations recalled from memory and marked "verified" | Draft step anchors from the institution's procedure policy or named consensus statement and set source-audit status to `[VERIFY: procedural standard + year]` until the author has the document open; an unconfirmed citation is listed as unverified, not dropped silently |
+| Calibration Example B ships with an overall rating outside 1–3 or with "Auto-fail: no" beside a skipped safety-critical step | Re-score both appendix narratives against the auto-fail rules first, then the 9-point bands: any auto-fail forces Overall into 1–3, and Example A must trigger none |
 
 ## Verification Checklist
 

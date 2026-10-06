@@ -23,7 +23,7 @@ tags:
   - likelihood-ratio
   - evidence-based-medicine
   - calibration
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
   - domain-medical-education/learner-clinical-reasoning/reason_ddx_practice_session.md
@@ -143,6 +143,16 @@ Restudy target: [the specific step or named LR concept]
 | `force_decision_threshold` | Enforces threshold naming before testing |
 | `include_clinical_decision_rule` | Forces a CDR (Wells, PERC, HEAT, NEXUS, etc.) per vignette |
 | `population_caveat_probe` | Each vignette includes adversarial probe on population vs. study population mismatch |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A session summary that scores "math N/N" when the tutor, not the learner, did the computation | Score only steps the learner performed; a step the tutor worked "for practice" is recorded as `not attempted`, not as correct |
+| Multiplying LRs from correlated findings (CSF glucose ratio × neutrophil predominance) as if independent, or quoting an unsourced "combined LR" | Apply one LR per independent test, or use an LR published for the combined profile with its source type; otherwise state that the combined effect is unquantified |
+| Quoting an LR whose test definition does not match the vignette — a d-dimer cutoff in the wrong units (FEU vs DDU), an age-adjusted cutoff, or a value derived where postpartum state or anticoagulation changes the test's behavior | Match the LR's assay, cutoff and source population to the vignette before using it, and give the source type (meta-analysis, rational clinical examination review, guideline table) `[VERIFY: source]` |
+| Grading the learner's action as correct on "clinical correctness" when it contradicts the thresholds they named in Step 2 | Compare the action with the stated test and treat thresholds; if clinical override is right, grade it as a threshold revision and name what the thresholds missed |
+| Posttest numbers copied into the Canonical and Summary lines without rechecking | Recompute every posttest (odds = p/(1−p); × LR; p = odds/(1+odds)) and confirm Step 4, Canonical and Summary show the same value to one decimal |
 
 ## Verification Checklist
 

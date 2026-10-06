@@ -22,7 +22,7 @@ tags:
   - psychological-safety
   - fiction-contract
   - briefing
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md
   - domain-medical-education/educator-simulation-design/sim_debrief_guide_pearls.md
@@ -108,6 +108,16 @@ Considered: [omitting fiction contract | "let's see who sinks" framing | promisi
 | `recording` | Recorded → detailed recording-use + access statement |
 | `team_composition` | Interprofessional → add flattening-hierarchy norm + role-respect statement |
 | `environment` | In-situ → add abort protocol + real-patient-priority statement (bridges to in-situ design) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Orientation "can / can't" lines that add capabilities not in `manikin_capability` (input lists breath sounds; script promises "breath/heart sounds") | Trace every can and can't item to the `manikin_capability` input; anything not listed is said as "ask us" rather than promised, so a learner does not lose time listening for a sign the manikin cannot produce |
+| A fiction contract that is present but names no actual limitation ("the manikin can't do everything a person does") | Name at least one specific limitation that matters in today's scenarios (no skin color change, no real urine output, pupils fixed) and how that information will be supplied instead |
+| Confidentiality and recording promises the program cannot keep ("only faculty in this session will see it," "no grades") written from `recording` and `session_type` alone | Check each promise against the program's actual recording-retention, access, and assessment policy `[VERIFY: institutional simulation recording / data policy]`; state only what is confirmed, and say plainly if footage or participation feeds any evaluation |
+| A pause word that is also a clinical phrase learners may say in role ("time out" during a procedure) | Choose a pause word that cannot occur in the scenario's own dialogue, and say it once in the pre-brief exactly as it must be said |
+| Counting "Everyone okay to start?" plus silence as a comprehension and consent check | Ask one learner to repeat the pause word and how to get labs or vitals; offer a private route to step out (speak to faculty before the first scenario) so consent does not depend on objecting in front of the group |
 
 ## Verification Checklist
 
