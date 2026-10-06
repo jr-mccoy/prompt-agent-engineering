@@ -157,13 +157,13 @@ Q: Which cells release renin, and in response to which three sensors?
 > "JG cells. Afferent arteriole stretch, macula densa, beta-1 sympathetic."
 Grade: correct.
 
-Q [escalating]: Renin converts angiotensinogen to which product, and what is the substrate?
+Q: Renin converts angiotensinogen to which product, and what is the substrate?
 > "Angiotensin I from angiotensinogen, which is made in the liver."
-Grade: correct.
+Grade: correct — streak 2 → escalate.
 
-Q: Which enzyme on which surface converts AT-I to AT-II, and what else does this enzyme degrade?
+Q [escalating]: Which enzyme on which surface converts AT-I to AT-II, and what else does this enzyme degrade?
 > "ACE on lung endothelium; also degrades bradykinin."
-Grade: correct — two correct in a row, escalate.
+Grade: correct — streak 3 → escalate.
 
 Q [deeper]: AT-II acts on which receptor subtype to mediate vasoconstriction, and what's the second messenger?
 > "AT1 receptor, Gq, IP3/DAG, increases intracellular calcium."
@@ -192,7 +192,7 @@ Q: What feedback signal *rises* when AT-II falls, and what is the lab consequenc
 Grade: correct.
 
 >>> CHAIN SUMMARY
-Canonical: ↓ perfusion → renin (JG) → AT-I (liver) → AT-II (ACE, lung) → AT1R-Gq → vasoconstriction + aldosterone (ZG) → Na/water retention; feedback via baroreceptor, macula densa, AT-II short loop.
+Canonical: ↓ perfusion → renin (JG) acts on angiotensinogen (liver) → AT-I (plasma) → AT-II (ACE, lung) → AT1R-Gq → vasoconstriction + aldosterone (ZG) → Na/water retention; feedback via baroreceptor, macula densa, AT-II short loop.
 Perturbed (ACEi): same upstream; AT-II ↓ → less vasoconstriction, less aldosterone → ↓ Na retention, ↑ K, possible ↑ Cr if efferent tone was AT-II-dependent; bradykinin ↑ → cough, angioedema.
 Marked corrections at step 1 (initial trigger).
 Uncertainty noted: none — clean run after the opening correction.

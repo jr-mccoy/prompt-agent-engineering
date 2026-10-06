@@ -189,7 +189,7 @@ Daughter: "Mom, you missed your pills three days last week and you couldn't reme
 Learner: "Funke — thank you, I'll come back to you for examples. Mrs. Adesina, what's your sense — has anything felt different to you?"
 Mrs. Adesina: "(thinks) ... maybe a little slower. But I'm 82 — that's normal, isn't it?"
 Learner: "It can be — I want to do a quick test that takes a few minutes and gives us better information than guessing. Is that OK?"
-[Mini-Cog: registers 3 words, draws clock 4/5 errors with hands, recalls 1 of 3 at delay]
+[Mini-Cog: registers 3 words; recalls 1 of 3 at delay (recall 1/3); clock abnormal — hands misplaced (clock 0/2); total 1/5 — screen positive, not a diagnosis [VERIFY: Mini-Cog scoring guide for cut-off]]
 Learner: "Thank you. Let me also ask about your day-to-day. Who handles the pills at home?"
 Mrs. Adesina: "I do — but it's confusing now."
 Learner: "And shopping, cooking, paying bills?"
@@ -218,8 +218,8 @@ Learner: "I understand. And I want to share — that medicine is one that, in ou
 
 >>> SCORECARD — Geriatric scaffold
 
-[✓] Cognitive screen — Mini-Cog performed and scored
-[✓] ADL — bathing, dressing not directly asked (~)
+[✓] Cognitive screen — Mini-Cog performed and scored (1/5)
+[✗] ADL — 0 of ≥ 2 probed (bathing, dressing not directly asked)
 [✓] IADL — meds, finances, shopping probed
 [~] Fall risk — gait/orthostatics not probed
 [✓] Med review + Beers-class flag (lorazepam)

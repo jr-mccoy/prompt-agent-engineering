@@ -166,7 +166,7 @@ Special features: IF shows full-house pattern (IgG > IgM > IgA, C3, C1q) in mesa
 Negatives: No crescents; no segmental scarring; no thrombi.
 
 Q1: Tissue?  > "Glomerulus — diffuse proliferative GN."  Grade: correct.
-Q2: Cell origin of "wire loops"?  > "Subendothelial immune complex deposits thickening the capillary wall."  Grade: correct.
+Q2: Location / structure producing "wire loops"? (defining feature is not cell-derived — Q2 reworded)  > "Subendothelial immune complex deposits thickening the capillary wall."  Grade: correct.
 Q3: Diagnosis?  > "Lupus nephritis class IV."  Grade: correct.
 Q4: Correlate?  > "Treat with steroids + cyclophosphamide or MMF; monitor anti-dsDNA and C3/C4."  Grade: correct.
 
@@ -204,10 +204,10 @@ Grade: correct.
 
 >>> SLIDE 4
 Tissue source: 70 y/o man with rapidly rising creatinine over 2 weeks, hematuria.
-Stain / magnification: H&E 200×; PAS; silver.
+Stain / magnification: H&E 200×; PAS; silver; IF (IgG, IgA, IgM, C3).
 Architectural pattern: Crescents in > 50% of glomeruli (cellular crescents, some fibrocellular).
 Cellular features: Compressed glomerular tufts; proliferation in Bowman's space.
-Special features: IF negative or pauci-immune pattern.
+Special features: IF shows no or only trace glomerular staining for immunoglobulins and C3.
 Negatives: No immune deposits.
 
 Q1: Tissue?  > "Glomerulus — crescentic GN, pauci-immune."  Grade: correct.

@@ -202,7 +202,7 @@ Learner: "Maya, how have things been at home? At school? Anything else going on 
 >>> SCORECARD — Adolescent scaffold (HEEADSSS, in private)
 
 [✓] Home   [✓] Education   [~] Eating   [✓] Activities
-[✗] Drugs   [✗] Sexuality   [✓] Suicide/Mood   [~] Safety
+[✓] Drugs   [✓] Sexuality   [✓] Suicide/Mood   [~] Safety
 
 >>> SCORECARD — Hidden-concern surfacing
 
@@ -218,5 +218,5 @@ Learner: "Maya, how have things been at home? At school? Anything else going on 
 
 >>> COACHING
 
-Single highest-yield improvement: HEEADSSS Drugs and Sexuality are the two domains adolescents are most likely to disclose in only if asked directly and matter-of-factly. You ran out of time. Faster handoff on the medical history with mom (3 min, not 6) buys the runway to finish HEEADSSS. The medical complaint is real; the disclosure that changes the plan lives in those domains.
+Single highest-yield improvement: HEEADSSS Eating and Safety were only partially covered. With three months of abdominal pain, Eating (meal skipping, restriction, weight change) links straight back to the chief complaint, and Safety is where a disclosure that changes the plan can sit — ask both directly and matter-of-factly before ending private time. The medical complaint is real; finish the screen that frames it.
 ```

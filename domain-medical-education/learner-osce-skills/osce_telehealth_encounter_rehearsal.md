@@ -186,7 +186,7 @@ Learner: "Good — that's called blanching. Can you show me your right arm too, 
 
 >>> SCORECARD — Tech-triage opening
 
-[✓] Audio + video
+[✗] Audio + video — video fixed (lighting) but no explicit audio check ("can you hear me clearly?") in the transcript
 [✓] Identity verified
 [✓] Location verified
 [✓] Privacy check
@@ -211,5 +211,5 @@ Learner: "Good — that's called blanching. Can you show me your right arm too, 
 
 >>> COACHING
 
-Single highest-yield improvement: explicitly verbalize when you're moving to the keyboard or chart ("I'm pulling up your chart for one second, I'm still listening"). The longest silence in this encounter was 18 seconds during typing — patient adapted, but on a less-tech-comfortable SP that would have read as disengagement.
+Single highest-yield improvement: explicitly verbalize when you're moving to the keyboard or chart ("I'm pulling up your chart for one second, I'm still listening"). An unannounced silence while you type reads, over video, as disengagement — especially to a less tech-comfortable SP.
 ```

@@ -176,7 +176,7 @@ Learner: "Sorry — I should've explained. A polyp is a small growth on the lini
 
 >>> SCORECARD — Five elements
 
-[✓] Capacity (no concern raised, none required)
+[n/a] Capacity (decision_capacity_consideration = none; no capacity talk needed)
 [✓] Disclosure (nature, risk, benefit, alternatives, no-tx — all named)
 [✓] Comprehension (teach-back was substantive)
 [✓] Voluntariness (offered time, did not push)
@@ -185,8 +185,8 @@ Learner: "Sorry — I should've explained. A polyp is a small growth on the lini
 >>> SCORECARD — Mandatory disclosure audit
 
 [disclosed]            Perforation (with rate)
-[disclosed]            Post-polypectomy bleeding (with rate)
-[disclosed]            Missed lesion
+[disclosed — rate unconfirmed]  Post-polypectomy bleeding (learner said "similar range" to perforation; check the rate before crediting [VERIFY: specialty-society guidance / institutional consent form] — a materially wrong rate scores partially disclosed)
+[disclosed]            Missed lesion (learner's "~5%" [VERIFY: source])
 [disclosed]            Sedation risk
 [partially disclosed]  Prep tolerability (mentioned cramping; did not name dehydration or electrolyte issues)
 

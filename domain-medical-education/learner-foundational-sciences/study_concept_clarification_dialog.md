@@ -140,7 +140,7 @@ CONCEPT CLARIFICATION — what an anion gap actually is
 Target level: MS3   Format: narrative
 
 PRIOR ATTEMPT: "the unmeasured anions in the blood, like lactate"
-THE PRECISE ERROR: Treating "unmeasured anion" as the *cause* rather than the *consequence* of charge balance arithmetic. The gap is a calculation artifact — it tells you that a non-chloride anion is present, but the anion itself (lactate, ketones, etc.) is what *makes* the gap, not what the gap *is*.
+THE PRECISE ERROR: No error — the attempt is substantively right. Missing piece: the gap is a *calculated* number (Na − (Cl + HCO3)), so it is normally non-zero (albumin, phosphate and sulfate fill it at baseline); an added anion such as lactate or ketones is what *raises* it above that baseline.
 
 >>> EXPLANATION
 

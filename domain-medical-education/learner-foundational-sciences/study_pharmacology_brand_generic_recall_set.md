@@ -133,16 +133,17 @@ B2  ...
 BRAND–GENERIC RECALL — Statins (HMG-CoA reductase inhibitors)
 Market: US   Top N: 7   Combos: yes   OTC: no
 Class stem: "-statin"
+Ranking source: [VERIFY: prescription-volume source, year] — ranks numbered for the top 5 only; remaining members listed as secondary frequency
 
 | # | Generic | Brand (primary) | Brand (alternates) | Notes |
 |---|---|---|---|---|
 | 1 | atorvastatin | Lipitor | — | Most-prescribed statin in US; generic 2011 |
 | 2 | rosuvastatin | Crestor | — | High-intensity dose-equivalent; generic 2016 |
-| 3 | simvastatin | Zocor | — | Older; CYP3A4 interactions limit dose |
-| 4 | pravastatin | Pravachol | — | Hydrophilic; preferred with cyclosporine |
+| 3 | simvastatin | Zocor | — | Older |
+| 4 | pravastatin | Pravachol | — | Memory hook: PRAVachol — PRAVastatin |
 | 5 | lovastatin | Mevacor | Altoprev (ER) | First statin approved (1987) |
-| 6 | fluvastatin | Lescol | Lescol XL | Lower-potency; less interaction |
-| 7 | pitavastatin | Livalo | Zypitamag | Newer; minimal CYP interactions |
+| 2° | fluvastatin | Lescol | Lescol XL | Secondary frequency (unranked) |
+| 2° | pitavastatin | Livalo | Zypitamag | Secondary frequency (unranked); newer |
 
 >>> DECK CARDS
 
@@ -174,5 +175,5 @@ B7  Livalo → pitavastatin
 |---|---|
 | Caduet | amlodipine + atorvastatin |
 | Vytorin | ezetimibe + simvastatin |
-| Liptruzet | ezetimibe + atorvastatin |
+| Liptruzet (discontinued in US; still seen on old medication lists) | ezetimibe + atorvastatin |
 ```

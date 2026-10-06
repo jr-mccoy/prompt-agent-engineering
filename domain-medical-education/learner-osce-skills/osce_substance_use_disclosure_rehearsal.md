@@ -175,7 +175,7 @@ Learner: "Mr. Petrov — at every wellness visit I ask everyone about alcohol an
 SP: "Most weeks, four or five days."
 Learner: "And on a day when you do drink, how many standard drinks would you say?"
 SP: "Maybe four. Sometimes five if I'm out with friends."
-[learner notes 4–5 days × 4–5 drinks = positive AUDIT-C]
+[learner notes 4–5 days × 4–5 drinks — above the low-risk limits cited below; AUDIT-C heavy-episode item not asked, so no AUDIT-C score is computed]
 Learner: "I appreciate you being direct. Where you're at — that's above the limit we consider low-risk for men, which is up to 14 drinks a week or 4 in a day. I'm not telling you that to worry you; I want to be honest with you about the data so you can make a decision that fits your life. What's your sense of where you'd want to be with this?"
 SP: "Honestly — I've been thinking about it. My doctor before you didn't seem to care."
 Learner: "There are a few directions people go — some cut back, some take a break, some quit entirely; we can also use medication that takes the edge off cravings. Where do you want to start? Anything you've tried before that worked or didn't?"
@@ -184,7 +184,7 @@ Learner: "There are a few directions people go — some cut back, some take a br
 >>> SCORECARD — Screen
 
 [✓] Normalizing pre-statement
-[✓] AUDIT-C framing (not named explicitly but used)
+[~] Validated tool — AUDIT-C items 1–2 asked (frequency, typical quantity); heavy-episode item not asked; tool not named — no AUDIT-C score or screen result
 [✓] Standard-drink anchored
 [✓] Frequency neutral
 [✓] Quantity neutral
@@ -193,7 +193,7 @@ Learner: "There are a few directions people go — some cut back, some take a br
 
 [✓] Feedback against limit (14/week, 4/day for men)
 [✓] Responsibility ("your decision," "fit your life")
-[✓] Advice (offered without sermon)
+[~] Advice — no explicit recommendation sentence ("as your doctor, I'd recommend...") in the transcript
 [✓] Menu (cut back / break / quit / medication)
 [✓] Empathy + self-efficacy
 [n/a] Withdrawal risk (not applicable)
@@ -201,8 +201,8 @@ Learner: "There are a few directions people go — some cut back, some take a br
 >>> SCORECARD — Refer to Treatment
 
 [~] Appropriate level named (not yet specific in this excerpt)
-[~] Resource not yet routed
-[~] Follow-up not yet scheduled
+[✗] Resource not yet routed
+[✗] Follow-up not yet scheduled
 
 >>> SCORECARD — Language audit
 

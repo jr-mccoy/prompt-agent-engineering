@@ -185,10 +185,10 @@ Learner picks: B.   Grade: correct — A is the classic miss on boards.
 ATRA → interrupts step 1 by displacing corepressors, restoring differentiation.
 Arsenic trioxide → degrades PML-RARα directly, triggers apoptosis.
 Cryoprecipitate / fibrinogen replacement → corrects hyperfibrinolysis-driven consumption (no chain step alone, downstream rescue).
-Idarubicin/cytarabine → conventional cytotoxic, mapped to bulk blast reduction.
+Cytotoxic chemotherapy (whether and which agent depends on risk group) → conventional cytotoxic, mapped to bulk blast reduction [VERIFY: current NCCN / ELN APL guideline].
 Treatment that does not map cleanly: dexamethasone — used for *differentiation syndrome*, which is itself a chain consequence of step 1 reversal. Add step 1a: differentiation releases inflammatory cytokines → capillary leak.
 
 >>> CHAIN STATUS
-Complete after adding step 1a (differentiation syndrome).
+Multiple gaps — 4 learner-built links (trigger, links 1–3) plus tutor-supplied step 1a, below the `subspecialty` minimum of ≥ 10 links; continue drilling (e.g., the DIC and fibrinolysis cascades by named factor) before marking Complete.
 Highest-yield restudy: PML-RARα → corepressor recruitment → maturation arrest mechanism.
 ```

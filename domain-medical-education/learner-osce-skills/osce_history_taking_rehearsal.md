@@ -191,7 +191,7 @@ SP: "Yeah, kinda down my left arm but I figured I slept on it funny last night."
 [✓] Exertional onset   — "walked up the stairs and it got worse"
 [✓] Radiation          — "down my left arm"
 [✗] Diaphoresis        — never asked
-[✗] Prior similar      — never asked
+[~] Prior similar      — covered only by a leading question ("you've never had this before, right?")
 
 >>> SCORECARD — Behavior
 
@@ -204,5 +204,5 @@ Plan signposting:        no
 
 >>> COACHING
 
-Single highest-yield improvement: open the encounter with one minute of pure listening (1–2 open questions, no interruption) before pivoting to closed. You missed prior-similar and diaphoresis — both would have shifted the disposition from "probably MSK" to "rule out ACS." The minimizing SP buried the lead; open questions surface it.
+Single highest-yield improvement: open the encounter with one minute of pure listening (1–2 open questions, no interruption) before pivoting to closed. You missed diaphoresis and reached prior-similar only through a leading question — both gaps would have shifted the disposition from "probably MSK" to "rule out ACS." The minimizing SP buried the lead; open questions surface it.
 ```

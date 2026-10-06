@@ -196,7 +196,7 @@ Branch 2 — Level:
 > "Subcortical."  Q: Why not cortex?  > "Face/arm/leg equal weakness, no cortical signs (no aphasia, neglect, gaze preference), pure motor — sounds like a lacunar syndrome."
 Grade: correct.
 
-[Progressive disclosure: "Imaging shows a small DWI bright lesion in the posterior limb of the left internal capsule."]
+[Progressive disclosure: "Now examiner adds: visual fields full; graphesthesia and stereognosis intact in the right hand." (imaging held for the confirmatory step)]
 
 Branch 3:
 > "Posterior limb of the internal capsule, lenticulostriate territory (deep branches of M1 MCA)."
@@ -212,7 +212,7 @@ Adversarial check:
 Grade: correct.
 
 Canonical answer: Pure motor lacunar syndrome, posterior limb of internal capsule, left lenticulostriate territory.
-Confirmatory test: MRI with DWI (often shows the lacune); MRA / CTA for large-vessel screen; long-term BP control, statin, antiplatelet.
+Confirmatory test: MRI with DWI (often shows the lacune); MRA / CTA for large-vessel screen.
 
 >>> SUMMARY
 Branch accuracy: lateralization 2/2   level 2/2   specific 2/2   lesion type 2/2

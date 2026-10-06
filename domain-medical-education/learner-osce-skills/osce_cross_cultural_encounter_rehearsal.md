@@ -244,5 +244,5 @@ Count: 6 of 8 (pass)
 
 >>> COACHING
 
-Single highest-yield improvement: ask the name of the leaves the abuela grows, document them, and check for an interaction (some traditional plants — e.g., nopal, sábila — have real metformin and hypoglycemia interactions). Respecting the explanatory model is a substantive clinical move, not a courtesy.
+Single highest-yield improvement: you asked the name of the leaves the abuela grows — now document that name in the record and check it for an interaction before metformin starts (some traditional plants — e.g., nopal, sábila — may add to glucose lowering [VERIFY: interaction database]). Respecting the explanatory model is a substantive clinical move, not a courtesy.
 ```

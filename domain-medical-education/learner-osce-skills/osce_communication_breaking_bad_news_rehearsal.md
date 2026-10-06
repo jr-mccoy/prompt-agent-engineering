@@ -185,7 +185,7 @@ SP: "(quiet, looking at the floor) ... what if I just had it cut out next week a
 [✓] P — Perception        — "what you understood from our last visit"
 [✓] I — Invitation        — "is now a good time...someone you'd want with you"
 [✓] K — Knowledge         — warning shot: yes; headline: "The biopsy showed cancer in the breast — invasive ductal carcinoma." Plain, one sentence, pause held.
-[~] E — Emotion           — NURSE elements: N (named the shock implicitly), S (support implied). U/R/E not explicit.
+[~] E — Emotion           — NURSE elements: N ("I know this is a shock"). U/R/S/E not used.
 [~] S — Strategy          — staging tests named; explicit next-72h plan + follow-up missing
 
 >>> SCORECARD — Failure modes
@@ -201,10 +201,10 @@ SP: "(quiet, looking at the floor) ... what if I just had it cut out next week a
 N — "I know this is a shock"
 U — not used
 R — not used
-S — "we" framing implied
+S — not used
 E — not used ("what's the hardest part of this for you?")
 
 >>> COACHING
 
-Single highest-yield improvement: NURSE — name and explore. You held the silence well and your headline was clean, but after she said "I can't do chemo, I have kids," the next move is not "let me explain the treatment options" — it's *exploring* what those kids mean in this moment ("tell me about them"). The treatment plan can wait two minutes; that opening cannot.
+Single highest-yield improvement: NURSE — name and explore. You held the silence well and your headline was clean, but after she said "I have two kids — I can't do chemo," the next move is not to explain treatment options — it's *exploring* what those kids mean in this moment ("tell me about them"). The treatment plan can wait two minutes; that opening cannot.
 ```
