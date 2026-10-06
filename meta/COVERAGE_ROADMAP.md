@@ -1313,6 +1313,7 @@ Quality work, not new coverage: no new subject and no new file. Three targets, i
 | C-A | 30 | **Corrections, part A:** care plans (14) and perianesthesia drills (16) — the flagged worked-example and fact errors, each fixed from the file's own data or a long-standing standard, or neutralised with `[VERIFY: source]` (see "Corrections log" below) | No case or probe changes |
 | C-B | 27 | **Corrections, part B:** lab interpretation and pathophysiology (12) and workups / specialty / coding / care gaps (15) | No case or probe changes |
 | C-C | 25 | **Corrections, part C:** pharmacology (12) and the addiction, paediatric, syncope, hyperkalemia and pathophysiology prompts (13), including three safety fixes: unvaccinated children get a *lower* workup threshold, echo before stress testing in exertional syncope, and precipitated withdrawal follows buprenorphine given after a full agonist | No case or probe changes |
+| C-D | 29 | **Corrections, part D:** acute care and triage (14) and workflow, templates and nursing (15), including the nurse-initiated 30 mL/kg bolus in the handbook creator's "GOOD" example (now notify the provider and bolus per order or protocol), complete laryngospasm moved to Tier 1, TEG direction and pelvic-binder position, and LBBB alone no longer listed as a STEMI equivalent | No case or probe changes |
 
 **Merges in batch 1** (recorded in `meta/REORG_MAP.tsv`; references repointed by `apply_reorg_map.py`):
 

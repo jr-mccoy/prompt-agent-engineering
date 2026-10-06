@@ -113,19 +113,19 @@ TRIAGE VERIFICATION: [confirmation that emergent/urgent tiers were re-scanned; a
 ```
 === EMERGENT (act now) ===
 - Item 1 (sugar 350-400, nausea, dyspnea, T2DM): Picture concerning for DKA/HHS — hyperglycemia + nausea + tachypnea. ROUTE: Provider/RN to CALL PATIENT NOW. ACTION: Directive — "Do not reply by portal. Call patient immediately; if confirmed nausea + labored breathing with these glucoses, advise ED now for ketone/anion-gap evaluation. Do not manage async."
-- Item 2 (K 6.5, CKD on lisinopril + spironolactone): Critical hyperkalemia. ROUTE: Provider call. ACTION: Call patient to assess symptoms, hold lisinopril AND spironolactone, advise same-day ECG and recheck — ED if any weakness/palpitations or if repeat draw confirms and patient symptomatic. Flag both K-retaining agents for discontinuation pending recheck.
+- Item 2 (K 6.5, CKD on lisinopril + spironolactone): Critical hyperkalemia. ROUTE: Provider call. ACTION: Call patient now, hold lisinopril AND spironolactone, and advise ED now for ECG and repeat potassium — a critical value is not deferred to an outpatient recheck or made conditional on symptoms [VERIFY: local critical-potassium protocol]. Flag both K-retaining agents for discontinuation pending recheck.
 
 === URGENT (same day) ===
-- Item 6 (gabapentin renal dosing, eGFR 25): ROUTE: Provider answer to pharmacy. ACTION: At eGFR 15–29, gabapentin max ~300 mg/day, typically dosed once daily; reduce from any standard regimen. Confirm indication and current dose before finalizing.
+- Item 6 (gabapentin renal dosing, eGFR 25): ROUTE: Provider answer to pharmacy. ACTION: Renal dose reduction required — calculate CrCl (label renal tables are keyed to CrCl, not eGFR) and give the label's dose range for that CrCl [VERIFY: gabapentin product label renal dosing at this CrCl]. Confirm indication and current dose before finalizing.
 
 === ROUTINE (days) ===
-- Item 3 (lisinopril refill, stable, BP 126/78): ROUTE: Provider approve. ACTION: Approve 90-day refill — BUT note potential link to Item 2 (different patient; verify not same chart). Document last BP.
+- Item 3 (lisinopril refill, stable, BP 126/78): ROUTE: Provider approve. ACTION: Approve 90-day refill only after confirming by MRN/DOB that this is not the Item 2 patient; if it is the same patient, do not refill — lisinopril is on hold per Item 2. Document last BP.
 - Item 5 (A1c 6.8, improved): ROUTE: RN result letter. ACTION: Release with reassurance — "A1c improved to 6.8, continue current plan, recheck in 6 months."
 
 === FYI / DELEGATE ===
 - Item 4 (gym form): ROUTE: Front desk / forms queue. ACTION: Forward for standard form-completion workflow; no clinical decision.
 
-AMBIGUOUS — NEEDS FULL CHART REVIEW: None, though confirm Items 2 and 3 are not the same patient before approving the lisinopril refill.
+AMBIGUOUS — NEEDS FULL CHART REVIEW: None beyond the Item 2/3 identity check — the batch does not state whether they are the same patient; confirm by MRN/DOB before acting on the lisinopril refill.
 
 TRIAGE VERIFICATION: Re-scanned emergent/urgent tiers. Two emergent items (DKA-concern message, critical K) both involve symptoms or critical values requiring a phone call, not an async reply — correctly escalated. No critical result was sorted as routine.
 ```

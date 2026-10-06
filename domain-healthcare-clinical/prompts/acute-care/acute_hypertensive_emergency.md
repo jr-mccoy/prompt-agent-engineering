@@ -87,7 +87,7 @@ Distinguish hypertensive emergency (severe HTN with acute end-organ damage) from
    - **Acute ischemic stroke:**
      - If candidate for tPA: lower BP to ≤185/110 before thrombolysis with labetalol or nicardipine. Do not delay tPA for BP control.
      - If not candidate for tPA: permissive hypertension up to 220/120 unless other indication to lower (BP often falls spontaneously after stroke).
-     - Post-thrombectomy: lower target (140/90) if successful recanalization.
+     - Post-thrombectomy: target per current guideline; recent trials of more intensive lowering after successful recanalization did not show benefit and some showed harm [VERIFY: current AHA/ASA stroke guideline].
 
    - **Acute hemorrhagic stroke (ICH):**
      - INTERACT2 / ATACH-II: lowering SBP to ~140 (acute target 140–160) is safe and may improve hematoma expansion outcomes.

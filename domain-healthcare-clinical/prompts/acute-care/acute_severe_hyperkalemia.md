@@ -62,7 +62,7 @@ Treat severe or symptomatic hyperkalemia with the three-step paradigm: stabilize
    - **Caution in digoxin toxicity:** historically taught to avoid; current evidence suggests slow IV calcium is acceptable — risk of "stone heart" appears overstated. If digoxin toxicity suspected, give digoxin-specific antibody (DigiFab) too.
 
 4. **Step 2 — Shift K intracellularly (within 15–30 min).**
-   - **Insulin + glucose:** regular insulin 10 units IV + dextrose 25 g IV (50 mL D50). Onset 15 min, duration 4–6 h. Lowers K by ~0.6–1.0 mEq/L. Watch for hypoglycemia at 1–4 h, especially in renal failure (delayed insulin clearance) — give 10 units IV with 50 g D50 (D50W 100 mL) in moderate-to-severe AKI/ESRD if glucose <250.
+   - **Insulin + glucose:** regular insulin 10 units IV + dextrose 25 g IV (50 mL D50). Onset 15 min, duration 4–6 h. Lowers K by ~0.6–1.0 mEq/L. Watch for hypoglycemia at 1–4 h, especially in renal failure (delayed insulin clearance). In moderate-to-severe AKI/ESRD with glucose <250, one approach is 10 units IV with 50 g dextrose (D50W 100 mL); reduced insulin-dose regimens are also used — choose per facility protocol [VERIFY: facility hyperkalemia protocol / current guideline].
    - **Albuterol nebulized 10–20 mg** (4–8 standard nebs back to back). Beta-2 agonist drives K into cells via Na/K-ATPase. Onset 30 min, lowers K by 0.5–1.0 mEq/L. Effects additive with insulin. Caution: tachycardia, tremor.
    - **Sodium bicarbonate IV:** only useful if metabolic acidosis is contributing. Slow onset, modest K-lowering. 50–100 mEq IV over 10–20 min in patients with significant metabolic acidosis. Not first-line in chronic dialysis hyperK without acidosis.
 
@@ -84,7 +84,7 @@ Treat severe or symptomatic hyperkalemia with the three-step paradigm: stabilize
    - Treat acidosis (bicarbonate, ventilation if respiratory acidosis component).
    - Tumor lysis: rasburicase, fluids, dialysis.
    - Rhabdomyolysis: aggressive IV fluids (NS at 200–300 mL/h targeting UOP 200–300 mL/h), watch for compartment syndrome.
-   - Adrenal insufficiency (hyporeninemic-hypoaldo / type 4 RTA in DM): fludrocortisone if applicable.
+   - Adrenal insufficiency, or hyporeninemic hypoaldosteronism (type 4 RTA, common in DM): fludrocortisone if applicable.
    - Missed dialysis: dialyze.
    - Dietary review: K-rich foods, salt substitutes (KCl), supplements.
 
@@ -160,7 +160,7 @@ STEP 2 — SHIFT (within 15 min):
 - Regular insulin 10 units IV + D50 25 g IV (50 mL).
   - In ESRD, insulin clearance is delayed and hypoglycemia risk extends 2–6 hours; consider continuous D5 or D10 infusion after the bolus, glucose checks q1h.
 - Albuterol 10–20 mg nebulized (4–8 standard nebs back-to-back) over 15–30 min.
-- Sodium bicarbonate is unlikely to help here unless ABG shows significant acidosis — check VBG; if HCO3 <18, give 50–100 mEq IV over 15 min.
+- Sodium bicarbonate is unlikely to help here unless ABG shows significant acidosis — check VBG; if it shows significant metabolic acidosis (the step-4 criterion), give 50–100 mEq IV over 15 min.
 
 STEP 3 — REMOVE:
 - Hemodialysis is definitive. Notify nephrology immediately; arrange emergent HD.

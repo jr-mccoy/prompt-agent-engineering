@@ -174,7 +174,7 @@ Provide decision support by:
 
 **Demographics:** 67M, 80kg
 
-**Primary Condition:** CAP - moderate severity (CURB-65 = 2)
+**Primary Condition:** CAP - severity [not provided] (CURB-65: only the age point is derivable; confusion, urea, respiratory rate and blood pressure [not provided])
 
 **Comorbidities:**
 - COPD - moderate, on tiotropium
@@ -204,7 +204,7 @@ Provide decision support by:
 When filling this template:
 
 ❌ **DON'T:**
-- Put a severity score in Primary Condition without its components — "CURB-65 = 2" in the example above can be rebuilt only for the age point; confusion, urea, respiratory rate and blood pressure must be listed for the score to be checkable.
+- Put a severity score in Primary Condition without its components — a CURB-65 total that can be rebuilt only for the age point is not checkable; confusion, urea, respiratory rate and blood pressure must be listed.
 - Fill the Reference Range column from a textbook instead of the reporting lab's own range and units.
 - Leave Weight blank, or Allergies as "details unclear", and then ask for dosing or an antibiotic choice — the answer will silently assume a weight, a renal function or a reaction type.
 - Accept NNT/% and Evidence Quality cells in the returned Risk-Benefit tables that carry no citation; each number needs a source or `[VERIFY: source]`.

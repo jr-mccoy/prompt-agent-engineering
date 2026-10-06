@@ -46,7 +46,7 @@ Manage a patient with acute coronary syndrome (STEMI, NSTEMI, or unstable angina
 ## Reasoning Steps
 
 1. **Classify ACS subtype.**
-   - **STEMI:** ST elevation ≥1 mm in ≥2 contiguous leads (≥2 mm in V2-V3 for men <40, ≥1.5 mm women, ≥2.5 mm men <40). New LBBB with concerning clinical picture (Sgarbossa criteria for STEMI-equivalent in pre-existing LBBB or paced rhythm: concordant ST elevation ≥1 mm, concordant ST depression V1–V3, or excessively discordant ST elevation ≥5 mm). Posterior MI: ST depression V1–V3 with tall R waves, confirm with V7–V9.
+   - **STEMI:** ST elevation ≥1 mm in ≥2 contiguous leads (≥2 mm in V2-V3 for men ≥40, ≥1.5 mm women, ≥2.5 mm men <40). New LBBB with concerning clinical picture (Sgarbossa criteria for STEMI-equivalent in pre-existing LBBB or paced rhythm: concordant ST elevation ≥1 mm, concordant ST depression V1–V3, or excessively discordant ST elevation ≥5 mm). Posterior MI: ST depression V1–V3 with tall R waves, confirm with V7–V9.
    - **NSTEMI:** elevated troponin without persistent ST elevation. ECG may show ST depression, T-wave inversion, or be normal.
    - **Unstable angina:** ischemic symptoms without troponin elevation. Increasingly rare with high-sensitivity troponin (hsTn detects nearly all true ischemia).
 
@@ -63,7 +63,7 @@ Manage a patient with acute coronary syndrome (STEMI, NSTEMI, or unstable angina
      - **Prasugrel 60 mg load** — avoid in age ≥75, weight <60 kg, prior stroke/TIA. Often given after coronary anatomy known.
      - **Clopidogrel 600 mg load** — alternative; lower potency. Used if ticagrelor/prasugrel contraindicated, or in fibrinolysis era.
    - **Anticoagulant:**
-     - **Heparin (UFH) 60 units/kg IV bolus (max 4000), then infusion 12 units/kg/h (max 1000/h)** to aPTT 1.5–2× control.
+     - **Heparin (UFH) 60 units/kg IV bolus (max 4000), then infusion 12 units/kg/h (max 1000/h)** to aPTT 1.5–2× control — this is the regimen used with fibrinolysis; the bolus for primary PCI is weight-based per a different regimen [VERIFY: current ACC/AHA STEMI/ACS guideline and cath lab protocol for the primary-PCI UFH bolus].
      - Bivalirudin 0.75 mg/kg bolus + 1.75 mg/kg/h infusion alternative, often used in cath lab.
      - Enoxaparin 1 mg/kg SC q12h alternative; 30 mg IV bolus + 1 mg/kg SC for STEMI fibrinolysis (per ExTRACT-TIMI 25).
    - **Statin: atorvastatin 80 mg PO** load on arrival (high-intensity).
@@ -169,7 +169,7 @@ POST-ACUTE / SECONDARY PREVENTION:
 
 ## Worked Example
 
-**Input:** 58 y/o M, smoker, presenting with 45 minutes of crushing substernal chest pain. BP 138/82, HR 92, SpO2 98%. ECG: ST elevation 3 mm V1-V4 with reciprocal ST depression in II, III, aVF. Troponin pending. PCI center available, door-to-balloon achievable in 60 minutes. Aspirin allergy: none. PMH: HTN. Cr 0.9.
+**Input:** 58 y/o M, smoker, presenting with 45 minutes of crushing substernal chest pain. BP 138/82, HR 92, SpO2 98%. ECG: ST elevation 3 mm V1-V4 with reciprocal ST depression in II, III, aVF. Troponin pending. PCI center available, door-to-balloon achievable in 60 minutes. Aspirin allergy: none. PMH: HTN. Weight 70 kg. Cr 0.9.
 
 **Output:**
 
@@ -188,7 +188,7 @@ ANTIPLATELETS:
   - If concerns about CABG (unlikely given STEMI plan for PCI), some centers defer P2Y12 until anatomy known.
 
 ANTICOAGULATION:
-- Heparin 60 units/kg IV bolus = 4200, capped at 4000 IV. Then infusion 12 units/kg/h ≈ 840 units/h, titrated to aPTT 1.5–2× control. Cath lab will continue or switch to bivalirudin per their protocol.
+- Heparin IV bolus, weight-based on 70 kg, per the primary-PCI UFH regimen [VERIFY: current ACC/AHA STEMI/ACS guideline and cath lab protocol]. (The step-3 regimen of 60 units/kg = 4200, capped at 4000, then 12 units/kg/h ≈ 840 units/h is the fibrinolysis regimen and is not the primary-PCI bolus.) Cath lab will continue or switch to bivalirudin per their protocol.
 - Bivalirudin alternative if used.
 
 ANTI-ISCHEMIC:

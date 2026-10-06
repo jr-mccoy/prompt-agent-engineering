@@ -141,7 +141,8 @@ Specific ask. Examples:
 
 If a provider does not respond or the response does not match the severity:
 - State your concern more explicitly: "I am very worried about this patient. I need you to come now."
-- Invoke chain of command: charge nurse → house supervisor → attending → rapid response / code
+- Invoke chain of command: charge nurse → house supervisor → attending
+- Call a rapid response / code at any point the patient meets calling criteria (per facility protocol) — it runs in parallel with the chain, not after it
 - Nurses are empowered and obligated to escalate — patient safety over comfort of hierarchy
 
 ### Step 6: Capture
@@ -204,7 +205,7 @@ If inadequate response:
 2. Charge nurse
 3. House supervisor / nurse manager
 4. Attending physician / hospitalist
-5. Rapid response / code
+At ANY step: rapid response / code if calling criteria are met (per facility protocol) — do not wait for the chain
 
 READ-BACK & CLOSE-LOOP
 ----------------------

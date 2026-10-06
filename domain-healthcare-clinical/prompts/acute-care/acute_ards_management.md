@@ -56,7 +56,7 @@ Manage a patient with ARDS using lung-protective ventilation, PEEP titration, pr
 
 3. **PEEP titration.**
    - **ARDSNet PEEP-FiO2 tables.** Lower-PEEP table for mild ARDS, higher-PEEP table for moderate-severe.
-     - Higher-PEEP table examples: FiO2 0.4 → PEEP 10; FiO2 0.6 → PEEP 14; FiO2 0.8 → PEEP 16; FiO2 1.0 → PEEP 18–24.
+     - Read the PEEP for the current FiO2 from the published row of the table chosen; the lower and higher tables pair FiO2 and PEEP differently [VERIFY: ARDSNet lower/higher PEEP-FiO2 tables].
    - **Best-PEEP titration:** find PEEP that maximizes compliance or minimizes driving pressure at the same Vt.
    - **PEEP and hemodynamics:** higher PEEP raises intrathoracic pressure → reduces preload → may drop BP. Echo for RV strain.
 
@@ -165,7 +165,7 @@ MONITORING:
 
 ## Worked Example
 
-**Input:** Day 2 in the ICU. 45 y/o M, 178 cm, intubated for severe COVID-19 ARDS. Currently: VC-AC, Vt 410 mL (6 mL/kg PBW 68 kg), RR 22, PEEP 12, FiO2 80%. Pplat 28, driving pressure 16. ABG: pH 7.27, PaCO2 56, PaO2 58, HCO3 25. P/F 73. Hemodynamics stable on no pressors. Echo: normal LV, mildly dilated RV with preserved function.
+**Input:** Day 2 in the ICU. 45 y/o M, 172 cm, intubated for severe COVID-19 ARDS. Currently: VC-AC, Vt 410 mL (6 mL/kg PBW 68 kg), RR 22, PEEP 12, FiO2 80%. Pplat 28, driving pressure 16. ABG: pH 7.27, PaCO2 56, PaO2 58, HCO3 25. P/F 73. Hemodynamics stable on no pressors. Echo: normal LV, mildly dilated RV with preserved function.
 
 **Output:**
 
@@ -177,7 +177,7 @@ VENT SETTINGS (current → adjusted):
 - Mode: VC-AC (continue).
 - Vt: 410 mL = 6 mL/kg PBW. Driving pressure 16 (above target). Reduce Vt to 5 mL/kg PBW = 340 mL; recheck Pplat and DP.
 - RR: increase to 26 to maintain minute ventilation as Vt drops; permissive hypercapnia acceptable to pH 7.20.
-- PEEP: increase to 14–16 per ARDSNet higher-PEEP table at FiO2 0.8. Reassess driving pressure at higher PEEP — if DP improves with higher PEEP, that PEEP is recruitable; if DP worsens, that PEEP is overdistention.
+- PEEP: increase to the ARDSNet higher-PEEP table value for FiO2 0.8 [VERIFY: ARDSNet higher PEEP-FiO2 table]. Reassess driving pressure at higher PEEP — if DP improves with higher PEEP, that PEEP is recruitable; if DP worsens, that PEEP is overdistention.
 - FiO2: target SpO2 88–94%, accept lower-end target to limit oxygen toxicity.
 - Pplat target: <30 (currently 28; closer to limit at higher PEEP — drives Vt reduction).
 - Driving pressure target: <15.

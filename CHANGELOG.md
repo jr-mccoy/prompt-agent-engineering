@@ -72,6 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Corrections, part A (30 files).** Pre-existing errors flagged during the FPP pass, fixed or `[VERIFY]`-tagged in care plans and perianesthesia drills; logged per file in the roadmap's corrections log.
   - **Corrections, part B (27 files).** Interpretation, pathophysiology, workup, pre-op, E/M coding and care-gap prompts.
   - **Corrections, part C (25 files).** Pharmacology selection prompts and specialty/pathophysiology prompts, including three safety fixes (paediatric workup threshold, syncope test order, precipitated-withdrawal direction).
+  - **Corrections, part D (29 files).** Acute-care, triage, workflow, template and nursing prompts, including safety fixes in the nursing handbook creator and PACU prioritisation card.
 - **Routing follow-up on the 22 open regression misses** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6). No query, label, threshold, floor or case changed, and no tag was added.
   - **Engine:** a record's native `name` is no longer indexed when it repeats the title. Only agentic resources carry one (703 of 711 are the title verbatim), so they were matching their title twice where a prompt matches once. Three unit tests in `pae-engine/tests/test_lexical.py`; `pae-engine/docs/search-routing.md` updated.
   - **Effect:** router scope@1 84.6% → 85.2% (case 092 now routes `pricing` to `business-strategy`); R@1 75.0%, MRR 0.800 and kind@1 97.7% unchanged. No other case moves, and flat BM25 still does not lead the shipped ranker.

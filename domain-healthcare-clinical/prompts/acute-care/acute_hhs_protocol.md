@@ -82,7 +82,7 @@ Manage HHS with fluid resuscitation as the primary intervention, cautious insuli
 
 10. **Resolution criteria.**
     - Mental status improved to baseline.
-    - Osmolality <320.
+    - Osmolality below the resolution threshold named in the current guideline (the diagnostic cut-off of 320 is not a resolution target) [VERIFY: current ADA/consensus HHS guideline].
     - Glucose <250 and trending stable.
     - Hemodynamics normal.
 
@@ -100,8 +100,8 @@ Manage HHS with fluid resuscitation as the primary intervention, cautious insuli
 
 ❌ **DON'T:**
 - Report an osmolality without saying whether it is measured, calculated total (including BUN) or effective; the worked example's "osm 348" and the effective value from its Na and glucose (about 336) are different measures.
-- Keep a pure-HHS label when the computed anion gap is raised without explaining it; the worked example gives 138 − (96 + 22) = 20 with a low beta-hydroxybutyrate, so name lactate, uremia or a mixed picture.
-- Defer a renal decision ("recheck Cr — if eGFR <30") when the inputs already allow it; age, weight and creatinine are enough to compute CrCl now.
+- Keep a pure-HHS label when the computed anion gap is raised without explaining it; when beta-hydroxybutyrate is low, name lactate, uremia or a mixed picture.
+- Defer a renal dosing decision to a later recheck when the inputs already allow it; age, weight and creatinine are enough to compute CrCl now.
 - Apply the 0.5 units/kg/day TDD to an elderly patient with AKI without stating whether a lower starting dose was considered.
 - Declare the hourly osmolality fall on target from glucose values alone; sodium rises as glucose falls, so both must enter the recomputation.
 
@@ -134,7 +134,7 @@ VOLUME RESUSCITATION:
 INSULIN:
 - Start 0.05 units/kg/h after volume given and K >3.3
 - Reduce to 0.025 units/kg/h when glucose 250–300
-- Continue until osm <320 and patient mentating
+- Continue until osm below guideline resolution threshold [VERIFY: current ADA/consensus HHS guideline] and patient mentating
 
 POTASSIUM:
 - [strategy based on initial K]
@@ -167,6 +167,7 @@ PITFALLS:
 
 ```
 SEVERITY: Severe HHS (glucose 1080, osm 348, altered mentation, hypotension, AKI). Likely precipitated by pneumonia (RLL infiltrate, +LE/nitrite UA so concurrent UTI possible too) and medication noncompliance.
+ANION GAP: 138 − (96 + 22) = 20, raised. Beta-hydroxybutyrate 0.8 and lactate 2.0 do not account for it; consider uremic acidosis (BUN 78, Cr 2.4) and a mixed HHS–DKA picture. Recheck AG and beta-hydroxybutyrate with each BMP.
 DISPOSITION: ICU.
 
 INITIAL ORDERS:
@@ -192,7 +193,7 @@ INSULIN:
 - Start regular insulin IV at 0.05 units/kg/h = 4 units/h. No bolus.
 - Goal glucose drop 50–75 mg/dL/h. Faster drop → reduce insulin rate or add D5 earlier.
 - When glucose 250–300: reduce insulin to 0.025 units/kg/h = 2 units/h, ensure D5 in fluids.
-- Continue infusion until osm <320 and patient mentating.
+- Continue infusion until osmolality is below the guideline resolution threshold (not the diagnostic cut-off of 320) [VERIFY: current ADA/consensus HHS guideline] and patient mentating.
 
 POTASSIUM:
 - K 4.8 currently — no replacement needed at this moment.
@@ -208,7 +209,7 @@ TRIGGER WORKUP:
 - Pancreatitis: lipase pending.
 
 VTE PROPHYLAXIS:
-- LMWH (enoxaparin 40 mg SC daily) or UFH 5000 units SC q8h once volume-restored. HHS is prothrombotic (hyperviscosity, immobility, infection). Recheck Cr — if eGFR <30, use UFH SC for prophylaxis.
+- CrCl (Cockcroft-Gault) = (140 − 78) × 75 / (72 × 2.4) ≈ 27 mL/min — below 30, so UFH 5000 units SC q8h once volume-restored rather than enoxaparin 40 mg SC daily. HHS is prothrombotic (hyperviscosity, immobility, infection). Recompute CrCl as Cr changes.
 
 MONITORING:
 - Fingerstick q1h.
@@ -221,7 +222,7 @@ MONITORING:
 
 TRANSITION TO SUBCUTANEOUS:
 - Anticipate 24–48 h to full resolution.
-- Once eating and stable, calculate TDD ~0.5 units/kg/day = 37.5 units; start basal-bolus:
+- Once eating and stable, step 11 gives TDD ~0.5 units/kg/day = 37.5 units; at age 78 with AKI, consider a lower starting TDD [VERIFY: current ADA inpatient guidance for older adults and renal impairment]. Basal-bolus split at 37.5 units (scale down proportionally if a lower TDD is chosen):
   - Glargine 18 units SC q evening.
   - Lispro 6 units SC with each meal.
 - Overlap drip with first long-acting by 1–2 h.

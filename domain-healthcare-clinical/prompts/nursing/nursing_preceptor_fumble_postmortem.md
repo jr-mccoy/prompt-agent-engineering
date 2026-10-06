@@ -40,7 +40,7 @@ related_prompts:
 > **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
 > **not yet reviewed by a licensed clinician.**
 
-**Objective:** Run a structured, no-blame analysis of a specific orientee fumble (not a near-miss with patient harm — that follows the facility's formal safety-event pathway — but a notable performance miss during orientation). The post-mortem reconstructs the timeline, maps contributing factors, identifies the most tractable root cause, and commits to one concrete change for next shift. The goal is learning, not punishment.
+**Objective:** Run a structured, no-blame analysis of a specific orientee fumble (not a harm event or a near-miss — those follow the facility's formal safety-event pathway first, with this post-mortem run alongside only as a learning exercise — but a notable performance miss during orientation). The post-mortem reconstructs the timeline, maps contributing factors, identifies the most tractable root cause, and commits to one concrete change for next shift. The goal is learning, not punishment.
 
 **Important Disclaimer:** This tool is for orientation-development use only. If the fumble involved patient harm, a near-miss with potential harm, a medication error, or any event requiring institutional reporting, follow the facility's formal safety-event / incident-reporting pathway first. The post-mortem can be run in parallel as a learning exercise, but it does not replace required reporting.
 

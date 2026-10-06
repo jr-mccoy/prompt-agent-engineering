@@ -151,7 +151,7 @@ TIME ZERO ACTIONS (first 5 min):
 PHASE 1 — Eclampsia-specific (immediate):
 - Magnesium sulfate 4 g IV bolus over 15–20 min, then 2 g/h continuous infusion. Goal: serum Mg 4–7 mEq/L.
 - If seizure continues despite mag bolus: lorazepam 4 mg IV may be added. But the priority intervention is magnesium.
-- BP control: labetalol 20 mg IV, may repeat 40 mg q10 min (max 300 mg total). Goal SBP <160, DBP <110, MAP not dropped abruptly to avoid placental hypoperfusion.
+- BP control: labetalol 20 mg IV, then 40 mg if not controlled at 10 min, with further escalation and the cumulative maximum per protocol [VERIFY: current ACOG guidance on acute-onset severe hypertension in pregnancy]. Goal SBP <160, DBP <110, MAP not dropped abruptly to avoid placental hypoperfusion.
 
 PHASE 2 (20–40 min) — Second-line AED if magnesium fails:
 - Levetiracetam 60 mg/kg IV = 4500 mg (max) over 10 min. Preferred AED in pregnancy.
@@ -175,7 +175,7 @@ DISPOSITION: Labor and delivery / OB-ICU. Continuous cEEG if seizures persist po
 
 PITFALLS TO AVOID:
 - Defaulting to lorazepam first in a pregnant seizing patient — magnesium is first-line for eclampsia and should not be delayed for benzodiazepine.
-- Aggressive BP reduction below MAP 100–105 → placental hypoperfusion and fetal compromise.
+- Aggressive or abrupt BP reduction below the guideline target → placental hypoperfusion and fetal compromise [VERIFY: current ACOG guidance on acute-onset severe hypertension in pregnancy].
 - Missing HELLP syndrome — must check platelets, LDH, haptoglobin, smear; HELLP changes management and delivery urgency.
 - Failing to deliver: persistent eclampsia despite magnesium and BP control = delivery indicated, gestational age permitting and after maternal stabilization.
 - Not continuing magnesium for 24 hours postpartum (eclamptic seizures can occur up to 6 weeks postpartum but most within 48 h after delivery).

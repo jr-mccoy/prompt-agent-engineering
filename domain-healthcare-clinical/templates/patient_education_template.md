@@ -45,9 +45,9 @@ updated: "2026-10-06"
 
 **Patient Profile:**
 - Age range: [e.g., adults 40-70, pediatric parents, elderly]
-- Health literacy: [Limited / Adequate / Proficient]
-  - Limited = 6th grade reading level, avoid medical jargon
-  - Adequate = 8th-9th grade, can understand with explanation
+- Health literacy: [Limited / Adequate / Proficient] (health literacy is the ability to find, understand and use health information — not the same as reading grade; set the writing target separately below)
+  - Limited = write at a 6th-grade reading level target, avoid medical jargon
+  - Adequate = write at an 8th-9th grade target, can understand with explanation
   - Proficient = Can handle standard medical information
 
 **Language Considerations:**
@@ -152,7 +152,7 @@ Include questions to verify understanding:
 
 **Patient Profile:**
 - Age: Adults 45-65
-- Health literacy: Limited (6th grade)
+- Health literacy: Limited (writing target: 6th-grade reading level)
 - Timing: New diagnosis, overwhelmed
 - Language: English
 
@@ -185,6 +185,7 @@ Your medicine helps your body use sugar better.
 
 **Call your doctor if:**
 - Blood sugar over [number] or under [number]
+- You have signs of low blood sugar - shaky, sweaty, fast heartbeat, very hungry, or confused [VERIFY: low-blood-sugar steps from this patient's care plan - depends on their medicine]
 - You feel sick for more than 2 days
 - You have questions about your medicine
 

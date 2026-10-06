@@ -78,7 +78,7 @@ Senior critical care attending or emergency medicine attending titrating pressor
    - Wean once underlying cause controlled (source control in sepsis, revascularization in cardiogenic, drainage in obstructive). Reduce one agent at a time, vasopressin last (rebound hypotension common when removed before norepi is at low dose).
 
 6. **Access and monitoring.**
-   - Central venous access for infusions >0.1 mcg/kg/min norepi, all epinephrine and vasopressin infusions, and most cardiogenic shock pressors. Peripheral lines for short-term lower-dose norepi (recent literature shows safe up to 0.1 mcg/kg/min for ≤4–6 hours in well-functioning antecubital IVs).
+   - Central venous access for higher-dose or prolonged norepi and most cardiogenic shock pressors. Peripheral lines for short-term lower-dose norepi in well-functioning antecubital IVs; the dose and time limits, and whether epinephrine or vasopressin may run peripherally, are per facility protocol [VERIFY: current guideline / facility peripheral vasopressor protocol].
    - Arterial line for accurate MAP and serial blood gases.
    - Echo (POCUS) repeatedly to reassess preload, RV function, LV function, pericardial effusion.
    - Daily reassessment: shock state may evolve (cardiogenic shock from sepsis-induced cardiomyopathy can develop in patient who was distributive on admission).
@@ -154,7 +154,7 @@ SECOND AGENT (if needed):
 
 THIRD AGENT (if needed):
 - Threshold: persistent hypotension despite norepi + vasopressin.
-- Drug: epinephrine 0.05 mcg/kg/min titrated up, OR angiotensin II 5–20 ng/kg/min for catecholamine-refractory vasoplegia. Methylene blue 1–2 mg/kg IV bolus once for refractory vasoplegia is reasonable in selected patients.
+- Drug: epinephrine 0.05 mcg/kg/min titrated up, OR angiotensin II starting 20 ng/kg/min, titrated per label [VERIFY: product label], for catecholamine-refractory vasoplegia. Methylene blue 1–2 mg/kg IV bolus once for refractory vasoplegia is reasonable in selected patients.
 
 ADJUNCTS:
 - Hydrocortisone 50 mg IV q6h (or 200 mg/day continuous) once on second pressor — reduces vasopressor duration in septic shock.

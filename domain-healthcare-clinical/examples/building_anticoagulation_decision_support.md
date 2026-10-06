@@ -105,7 +105,7 @@ updated: "2026-10-06"
 
 **Guidelines to Reference:**
 - 2023 AHA/ACC/HRS Atrial Fibrillation Guidelines
-- 2020 ESC Atrial Fibrillation Guidelines
+- 2024 ESC Atrial Fibrillation Guidelines
 - NICE Atrial Fibrillation Guidelines
 
 **Treatment Options:**
@@ -247,10 +247,10 @@ updated: "2026-10-06"
 |-------|-------------|------------|
 | CrCl >50 | Any DOAC | All are effective |
 | CrCl 30-50 | Apixaban or rivaroxaban | Better studied in moderate CKD |
-| CrCl 15-30 | Apixaban | Only DOAC with data here |
+| CrCl 15-30 | A DOAC whose label gives a dose for this range [VERIFY: current product labels] | Pivotal trials largely excluded this range; data are limited for every DOAC |
 | CrCl <15 | Warfarin (or apixaban with caution) | Limited DOAC data |
 | High GI bleed risk | Apixaban | Lower GI bleeding than other DOACs |
-| CAD/recent ACS | Rivaroxaban 2.5mg BID + aspirin | COMPASS trial |
+| CAD/recent ACS | Individualized OAC-plus-antiplatelet regimen and duration [VERIFY: current ACC/AHA AF and ACS guidelines] | COMPASS excluded patients needing anticoagulation, so its rivaroxaban 2.5mg BID + aspirin regimen does not apply to AF |
 | Cost concerns | Generic warfarin | Significantly less expensive |
 
 ### 5. Compare Treatment Options
@@ -259,11 +259,11 @@ updated: "2026-10-06"
 
 *Apixaban 5mg BID (or 2.5mg BID if criteria met)*
 - Pros: Reduced ICH vs. warfarin, no INR monitoring, more predictable effect
-- Cons: Cost, no single reliable reversal agent (andexanet alfa expensive)
+- Cons: Cost; specific factor Xa reversal (andexanet alfa) is expensive and availability varies, 4F-PCC otherwise [VERIFY: current label/formulary]
 - Dosing criteria for 2.5mg: ≥2 of (age ≥80, weight ≤60kg, Cr ≥1.5)
 
 *Rivaroxaban 20mg daily (or 15mg if CrCl 15-50)*
-- Pros: Once daily dosing, established reversal
+- Pros: Once daily dosing; reversal options are the same as for apixaban (factor Xa inhibitor)
 - Cons: Higher GI bleeding, must take with food
 
 **Option B: Warfarin**

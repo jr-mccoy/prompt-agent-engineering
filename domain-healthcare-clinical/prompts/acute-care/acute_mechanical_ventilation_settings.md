@@ -80,7 +80,7 @@ Senior critical care attending or anesthesiologist setting the vent at the bedsi
 
 7. **Set inspiratory time / I:E ratio.**
    - Default I:E 1:2 for normal lungs.
-   - 1:1 or inverse ratio (1:1.5) in ARDS to improve oxygenation (longer inspiratory time for alveolar recruitment).
+   - 1:1.5 to 1:1 in ARDS to improve oxygenation (longer inspiratory time for alveolar recruitment).
    - Prolonged expiration (1:3 to 1:5) in obstructive disease to prevent air trapping.
 
 8. **Check plateau pressure (Pplat).** Inspiratory hold on the vent.
@@ -189,7 +189,7 @@ ESCALATION TRIGGERS:
 - P/F <150 after 12–24 h on optimal settings → prone positioning 16 h/day (PROSEVA).
 - Patient-vent dyssynchrony despite RASS −4 → cisatracurium infusion 48 h.
 - Refractory hypoxemia despite prone + paralysis → inhaled pulmonary vasodilator (iNO 20 ppm or inhaled epoprostenol).
-- Refractory hypoxemia (P/F <80 sustained) or refractory hypercapnia (pH <7.15) → consider VV-ECMO; transfer to ECMO center if not on-site.
+- Refractory hypoxemia (P/F <80 sustained) or refractory hypercapnia (pH <7.25 despite RR 35 and Pplat ≤32, EOLIA criteria) → consider VV-ECMO; transfer to ECMO center if not on-site.
 - If RV strain develops: lower PEEP cautiously, consider iNO, prone helps RV by reducing PVR.
 
 SEDATION:

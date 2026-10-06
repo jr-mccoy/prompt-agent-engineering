@@ -79,7 +79,7 @@ Activate massive transfusion protocol (MTP), deliver balanced products, treat tr
 7. **Goal-directed transfusion once labs / TEG available.**
    - **TEG/ROTEM** guides specific component replacement:
      - Prolonged R time / CT (clotting time) → factor deficiency → FFP (or PCC).
-     - Reduced K time / CFT or alpha angle → fibrinogen deficiency → cryoprecipitate or fibrinogen concentrate (target fibrinogen >150–200 in active bleeding, >200 in obstetric hemorrhage).
+     - Prolonged K time / CFT or reduced alpha angle → fibrinogen deficiency → cryoprecipitate or fibrinogen concentrate (target fibrinogen >150–200 in active bleeding, >200 in obstetric hemorrhage).
      - Reduced MA / MCF → platelet deficiency or dysfunction → platelets.
      - Lysis at 30 min (LY30) >3% → fibrinolysis → TXA.
    - Lab-based targets when TEG unavailable:
@@ -176,12 +176,12 @@ SOURCE: Likely intraabdominal (RUQ FAST positive — liver/spleen) AND pelvic (o
 
 INITIAL ORDERS:
 - Activate MTP via blood bank — pack 1 (6 pRBC + 6 FFP + 1 platelets) en route now.
-- Pelvic binder placed at the iliac crests (most common error: placed too high).
+- Pelvic binder placed at the greater trochanters (most common error: placed too high, over the iliac crests).
 - Two 16G PIVs minimum; place IO if delay. Consider central access (IJ or subclavian) for ongoing volume and pressors if needed.
 - O-negative pRBC ×2 immediately if crossmatched not yet ready (this patient is male — O-positive is acceptable to conserve O-neg supply).
 - Type and crossmatch sent.
 - Labs already drawn; add ABG, BMP, repeat CBC q1h initially, ionized Ca now and after every 4 units pRBC.
-- TEG/ROTEM if available — at 1.4 INR with low fibrinogen, expect early need for cryo.
+- TEG/ROTEM if available — at 1.4 INR with fibrinogen 180 (above the <150 cryo trigger, low end of the 150–200 active-bleeding target), expect early need for cryo.
 - Foley placed (output marker, exclude urethral injury first if blood at meatus or scrotal hematoma).
 - NG after intubation if not yet performed.
 - Telemetry + arterial line.
@@ -198,12 +198,12 @@ CALCIUM:
 ANTICOAGULANT REVERSAL: not applicable.
 
 HEMODYNAMIC TARGETS:
-- SBP 80–90, MAP 65 — permissive hypotension since GCS 14 and no signs of severe TBI yet.
-- If GCS drops or pupillary changes develop, raise SBP target ≥110 to maintain CPP and obtain head CT urgently.
+- SBP ≥110, MAP ≥80 — blunt mechanism (motorcycle vs car) with GCS 14 and no head CT yet, so head injury is not excluded; per step 2, penetrating-trauma permissive hypotension (SBP 80–90, MAP 65) does not apply.
+- Obtain head CT as soon as the patient can travel; reassess the target with the trauma team once TBI is excluded or confirmed. If GCS drops or pupillary changes develop, treat as TBI.
 - Avoid crystalloid beyond initial 1 L if any. Switch fully to blood products.
 
 GOAL-DIRECTED THRESHOLDS:
-- Fibrinogen 180 borderline; with ongoing bleeding, will fall fast. Pre-empt with cryo 10 units in pack 2.
+- Fibrinogen 180: above the <150 cryo trigger, but at the low end of the 150–200 active-bleeding target (step 7); with ongoing bleeding, will fall fast. Pre-empt with cryo 10 units in pack 2.
 - Platelets 220 currently fine; will fall with dilution.
 - INR 1.4 will worsen; FFP at 1:1 will partly correct.
 - Recheck CBC, INR, fibrinogen, ionized Ca q1h while transfusing.

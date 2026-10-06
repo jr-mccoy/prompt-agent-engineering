@@ -59,12 +59,12 @@ Manage acute upper or lower GI bleeding: localize, resuscitate, risk-stratify, g
    - **Hgb 8 g/dL** for active CAD or stable angina (per AABB).
    - **Hgb 9 g/dL** historically in massive hemorrhage / unstable patients — but balanced products (1:1:1) are the better framework for active hemorrhage rather than Hgb-driven.
    - Platelets <50 with active bleeding → transfuse.
-   - INR >1.5–2 with active bleeding → FFP, vitamin K, or PCC (if on warfarin or in liver disease).
+   - INR >1.5–2 with active bleeding → FFP, vitamin K, or PCC (if on warfarin). In cirrhosis, INR does not reflect bleeding risk and INR-driven correction is not routinely recommended in variceal bleeding [VERIFY: Baveno VII / current AASLD guidance].
 
 4. **Risk stratify upper GI bleed.**
    - **Glasgow-Blatchford score** (admission, no endoscopy needed): score 0 → outpatient management acceptable; score >0 → admit and endoscope.
    - **Rockall score** (post-endoscopy): mortality and rebleed prediction.
-   - **AIMS65** (mortality): albumin <3, INR >1.5, altered mental status, SBP <90, age >65.
+   - **AIMS65** (mortality): albumin <3, INR >1.5, altered mental status, SBP ≤90, age ≥65.
 
 5. **Pharmacologic therapy (upper).**
    - **PPI:** pantoprazole 80 mg IV bolus, then 8 mg/h infusion × 72 h, OR pantoprazole 40 mg IV BID. Reduces rebleeding after high-risk lesions on endoscopy.
@@ -171,7 +171,7 @@ PITFALLS:
 ```
 LOCALIZATION: Upper GI bleed (hematemesis).
 SUSPECTED SOURCE: Variceal hemorrhage. Cirrhosis with known large unbanded varices and acute hematemesis with hemodynamic instability — variceal bleed is the working diagnosis until endoscopy confirms or refutes.
-SEVERITY: Hemodynamically unstable (HR 124, SBP <90), high-risk (cirrhosis, coagulopathy, thrombocytopenia, lactate elevated). Glasgow-Blatchford very high.
+SEVERITY: Hemodynamically unstable (HR 124, SBP <90), high-risk (cirrhosis, coagulopathy, thrombocytopenia, lactate elevated). Glasgow-Blatchford 16: BUN 42 mg/dL ≈ 15 mmol/L → 4; Hgb 7.2 (male, <10) → 6; SBP 88 (<90) → 3; HR 124 (≥100) → 1; hepatic disease → 2; melena, syncope, cardiac failure not reported → 0.
 
 RESUSCITATION:
 - 2 large-bore PIVs (16G).
@@ -182,8 +182,8 @@ RESUSCITATION:
 TRANSFUSION:
 - Hgb 7.2 with active variceal bleed and hemodynamic instability — transfuse pRBC. Restrictive Hgb 7 threshold from Villanueva still applies; do not over-transfuse (raises portal pressure). Goal Hgb ~7–8 g/dL during active bleed.
 - Platelets 65 with active bleed → transfuse 1 dose apheresis platelets (target >50, ideally >70 for endoscopic procedures).
-- INR 1.8 with active bleed → vitamin K 10 mg IV; FFP 2–4 units (limit volume due to portal pressure concerns); 4F-PCC 25–50 units/kg may be more efficient for INR correction without volume load (use cautiously in cirrhosis — hypercoagulability balance).
-- Note: cirrhosis has "rebalanced hemostasis"; INR does not predict bleeding well, but in active bleeding, correct what you can without overloading.
+- INR 1.8: no FFP, vitamin K or PCC for the INR alone — patient is not on warfarin, and in cirrhosis INR-driven correction is not routinely recommended in variceal bleeding (FFP volume also raises portal pressure) [VERIFY: Baveno VII / current AASLD guidance].
+- Note: cirrhosis has "rebalanced hemostasis"; INR does not predict bleeding well. Any product beyond pRBC needs a specific stated reason in this patient.
 
 PHARMACOTHERAPY:
 - Octreotide 50 mcg IV bolus NOW, then 50 mcg/h continuous infusion for 3–5 days (splanchnic vasoconstriction reduces portal pressure).
@@ -209,7 +209,7 @@ DISPOSITION:
 WORKUP:
 - CBC, INR/PTT, fibrinogen, BMP, LFT (full panel for cirrhosis assessment), lactate, type and cross.
 - ABG / VBG.
-- ECG and troponin (elderly, hemodynamically unstable — demand ischemia possible).
+- ECG and troponin (hemodynamically unstable — demand ischemia possible).
 - CXR (aspiration assessment).
 - MELD-Na for severity / prognosis.
 - Ascites: paracentesis with cell count and culture if any concern for SBP (cirrhotic with GI bleed has high SBP rate — that is why ceftriaxone is given empirically).

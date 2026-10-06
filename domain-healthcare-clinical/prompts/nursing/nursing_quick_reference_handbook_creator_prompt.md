@@ -375,9 +375,9 @@ For stable patients moving to lower acuity or going home:
 - [ ] [Specific patient ability demonstrated]
 
 **Example for PACU to Floor:**
-- [ ] Aldrete score ≥9 (or equivalent discharge scoring)
-- [ ] Stable vital signs x30 minutes (define "stable")
-- [ ] Pain <4/10 with ordered regimen
+- [ ] Aldrete score (or equivalent discharge scoring) at the pass mark per facility protocol
+- [ ] Stable vital signs for the interval per facility protocol (define "stable")
+- [ ] Pain controlled to the level per facility protocol with ordered regimen
 - [ ] No active bleeding (define "active")
 - [ ] Able to move all extremities (if applicable)
 - [ ] Received handoff from anesthesia
@@ -491,13 +491,13 @@ For stable patients moving to lower acuity or going home:
 - Person-first language ("patient with diabetes" not "diabetic patient")
 
 **Abbreviation Rules:**
-- Use only JCAHO/TJC-approved abbreviations
+- Use only abbreviations on your facility's approved list (The Joint Commission publishes an official "Do Not Use" list, not an approved list)
 - Define all abbreviations on first use (create legend if >10 abbreviations)
 - Never use prohibited abbreviations (U for units, MS for morphine, etc.)
 - When space-limited, use standard medical abbreviations with legend
 
 **Precision Requirements:**
-- Always include specific numbers ("Hold if HR <60 bpm" not "Hold if bradycardic")
+- Always include specific numbers ("Hold if HR <60 bpm" not "Hold if bradycardic"), each tagged with its source (see False-Positive Prevention); for PACU entries write `per provider order` / `per facility protocol` instead of a dose or threshold
 - Always include units (mg, mL, mmHg, bpm, mL/kg/hr)
 - Use ranges appropriately ("SBP 90-140 mmHg" or "SBP <90 mmHg")
 - Specify who to notify ("Call provider" vs "Call anesthesia" vs "Call rapid response")
@@ -548,6 +548,8 @@ For stable patients moving to lower acuity or going home:
 
 ### **PACU / Post-Anesthesia Care Units:**
 
+**Doses and thresholds:** follow `../perianesthesia/SAFETY_PREAMBLE.md` — every dose reads `per provider order` and every vital-sign, lab or discharge-score threshold reads `per facility protocol`. This overrides the Precision Requirements, the Dose columns and the numeric examples elsewhere in this prompt.
+
 **Include these setting-specific elements:**
 
 1. **Anesthesia Considerations:**
@@ -562,8 +564,8 @@ For stable patients moving to lower acuity or going home:
    - Troubleshooting for monitors and pumps
 
 3. **Discharge/Transfer Criteria:**
-   - Include Aldrete score or equivalent scoring system
-   - Specific vital sign stability criteria (duration and ranges)
+   - Include Aldrete score or equivalent scoring system (pass mark `per facility protocol`)
+   - Specific vital sign stability criteria (duration and ranges `per facility protocol`)
    - Pain control requirements for discharge
    - Phase 1 → Phase 2 → Floor/Home progression
 
@@ -796,7 +798,7 @@ This is critically important and often skipped. Include findings that:
    - BAD: "Is blood pressure okay?"
    
 3. **Action boxes:** Clear directive with who does what
-   - GOOD: "Start 30mL/kg crystalloid bolus, notify provider STAT"
+   - GOOD: "**Notify provider STAT**; start IV fluid bolus only per provider order / per facility protocol"
    - BAD: "Treat hypotension"
 
 4. **Maximum 5 levels deep:** More than 5 decision points becomes unusable at bedside
@@ -1029,7 +1031,7 @@ Before finalizing any quick reference entry, verify all of the following:
 - [ ] Common errors section included to prevent near-misses
 
 **PROFESSIONALISM (Quality Standards):**
-- [ ] Only JCAHO/TJC-approved abbreviations used
+- [ ] Only facility-approved abbreviations used; none from The Joint Commission's official "Do Not Use" list
 - [ ] Medical jargon defined or avoided in patient sections
 - [ ] Language is direct and action-oriented (imperatives: "Assess", "Monitor", "Administer")
 - [ ] Tone is professional and confident (not tentative or apologetic)
@@ -1210,9 +1212,9 @@ Generate the complete quick reference clinical handbook entry following the exac
    - Pocket: 400-600 words
 
 5. **Ensure clinical accuracy**:
-   - All medication doses verified
+   - All medication doses verified against a supplied source (PACU entries: `per provider order`)
    - All lab values with units
-   - All red flags with specific numbers
+   - All red flags with specific numbers, each sourced (PACU entries: `per facility protocol`)
    - All actions with who to notify
    - Timeframes included for reassessment
 

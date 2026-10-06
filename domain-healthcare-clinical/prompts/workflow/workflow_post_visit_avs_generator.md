@@ -66,7 +66,7 @@ The clinician writing the takeaway the patient will actually read at home — cl
 ## False-Positive Prevention
 
 ❌ **DON'T:**
-- Add a number to CALL US OR GO TO THE ER IF ("blood sugar over 300") or a named panel to TESTS AND REFERRALS ("A1c, kidney function, cholesterol") when the plan only said "labs first"; specifics the clinician never chose read as orders.
+- Add a number to CALL US OR GO TO THE ER IF (a glucose cutoff) or a named panel to TESTS AND REFERRALS when the plan only said "labs first"; specifics the clinician never chose read as orders.
 - Build "Medicines that stay the same" from the drugs mentioned in the visit narrative instead of a reconciled medication list — a chronic medicine left off that line reads to the patient as an unspoken STOP.
 - Tie a warning sign to a single value when the patient's own regimen can make that value misleading (on an SGLT2 inhibitor, ketoacidosis can occur at near-normal glucose); send that wording back to the clinician.
 - Call the reading-level target met because sentences are short while terms like "A1c" or "low-dose CT" stay unexplained.
@@ -132,15 +132,15 @@ WHAT YOU NEED TO DO:
 5. Schedule your lung scan (a low-dose CT). This is recommended because of your past smoking.
 
 TESTS AND REFERRALS WE ORDERED:
-- Colonoscopy, mammogram, and a low-dose chest CT for lung cancer screening. Our staff will call you to schedule. If you don't hear from us in 1 week, please call.
-- Blood work (A1c, kidney function, cholesterol) — do this before your next visit.
+- Colonoscopy, mammogram, and a low-dose chest CT for lung cancer screening. Our staff will call you to schedule. If you don't hear from us within [office to confirm], please call.
+- Blood tests [office to confirm which tests] — do these before your next visit.
 
 YOUR NEXT VISIT:
 - In about 3 months, to recheck your diabetes and blood pressure and review your test results.
 
 CALL US OR GO TO THE ER IF:
 - You feel dizzy or faint, especially when standing up.
-- Your blood sugar is very high (over 300) with nausea or trouble breathing.
+- [Clinician to confirm wording: ketoacidosis warning for dapagliflozin — nausea, vomiting, belly pain or trouble breathing can be serious even when blood sugar is normal or only a little high, so this warning is not tied to a sugar number.]
 - You have swelling of your face, lips, or tongue, or trouble breathing after the new medicine — go to the ER.
 - You have a fall or new chest pain.
 

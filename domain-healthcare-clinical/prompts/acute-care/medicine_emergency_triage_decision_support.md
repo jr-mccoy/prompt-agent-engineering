@@ -119,9 +119,9 @@ If ANY "Yes" → ESI Level 1: RESUSCITATION
 
 | Condition | Key Indicators | Time Window |
 |-----------|---------------|-------------|
-| STEMI | Chest pain + ST elevation or LBBB | Door-to-balloon < 90 min |
-| Stroke | Focal deficit + known onset time | Door-to-needle < 60 min |
-| Sepsis | Infection + ≥2 SIRS criteria or qSOFA ≥ 2 | 1-hour bundle |
+| STEMI | Chest pain + ST elevation or STEMI-equivalent (e.g., LBBB or paced rhythm meeting Sgarbossa criteria; LBBB alone is not) | Door-to-balloon < 90 min |
+| Stroke | Focal deficit + known onset time | Door-to-needle ≤ 60 min; stricter targets (e.g., ≤ 45 min, as in the sibling stroke prompt) are used by quality programs [VERIFY: current AHA/ASA stroke guideline / Target: Stroke] |
+| Sepsis | Infection + ≥2 SIRS criteria or positive screen per facility sepsis tool (qSOFA is not recommended as a single screening tool) [VERIFY: current Surviving Sepsis Campaign guideline] | 1-hour bundle |
 | Trauma | Mechanism + instability | Immediate surgical eval |
 | Ruptured AAA | Abdominal/back pain + hypotension + pulsatile mass | Immediate OR |
 | Tension pneumothorax | Absent breath sounds + hypotension + JVD | Immediate decompression |
@@ -159,8 +159,12 @@ If ANY criteria met → ESI Level 2: EMERGENT
 RESOURCE PREDICTION
 ===================
 How many resources will this patient need?
-(Labs, imaging, IV fluids, IV medications, specialty consults,
- procedures = each counts as 1 resource)
+(Count resource TYPES, not individual tests: all labs = 1; ECG/X-rays = 1;
+ CT/MRI/US = 1; IV fluids = 1; IV/IM/nebulized medications = 1;
+ specialty consult = 1; simple procedure = 1; complex procedure = 2.
+ Not resources: history/exam, point-of-care tests, saline lock,
+ PO medications, prescription refills, simple splints.
+ [VERIFY: ESI Implementation Handbook])
 
 Resources predicted:
 - [ ] ≥ 2 resources → ESI Level 3

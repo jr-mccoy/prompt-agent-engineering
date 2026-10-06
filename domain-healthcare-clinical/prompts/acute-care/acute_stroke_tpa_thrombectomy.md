@@ -92,14 +92,14 @@ For a patient with suspected acute ischemic stroke, decide on IV thrombolysis (a
      - Nicardipine infusion 5 mg/h, titrate up by 2.5 mg/h q5–15 min (max 15 mg/h).
      - Clevidipine infusion 1–2 mg/h titrated.
    - During and after tPA (first 24 h): keep BP <180/105.
-   - Post-thrombectomy: BP target individualized; in successful recanalization, lower targets (e.g., <140/90) may improve outcomes (BP-TARGET trial showed benefit of <130 SBP post-thrombectomy in some analyses). In unsuccessful recanalization or large established infarct, allow permissive hypertension (<180/105).
+   - Post-thrombectomy: BP target individualized [VERIFY: current AHA/ASA stroke guideline]; after successful recanalization, intensive lowering has not shown benefit (BP-TARGET was neutral) and some trials found harm (ENCHANTED2/MT, OPTIMAL-BP). In unsuccessful recanalization or large established infarct, allow permissive hypertension (<180/105).
 
 6. **Thrombolytic dose.**
    - **Alteplase 0.9 mg/kg IV (max 90 mg).** 10% as bolus over 1 min, remainder over 60 min.
    - **Tenecteplase 0.25 mg/kg IV bolus (max 25 mg)** — single bolus, increasingly preferred (non-inferior or superior in LVO; faster administration; AcT and EXTEND-IA TNK trials).
 
 7. **Thrombectomy eligibility (LVO).**
-   - **Standard window (0–6 h):** ICA, M1, basilar, sometimes M2 with disabling deficit. ASPECTS ≥6 on CT. Pre-stroke mRS 0–1.
+   - **Standard window (0–6 h):** ICA, M1, basilar, sometimes M2 with disabling deficit. ASPECTS ≥6 on CT (classic criterion; large-core trials have extended benefit to selected patients with lower ASPECTS [VERIFY: current AHA/ASA stroke guideline]). Pre-stroke mRS 0–1.
    - **Late window (6–24 h):** DAWN/DEFUSE-3 criteria — perfusion mismatch (small core, large penumbra). Core typically <70 mL, mismatch ratio >1.8.
    - Both tPA and thrombectomy can be done together (do not skip tPA waiting for thrombectomy if both indicated and time permits).
 
@@ -190,7 +190,7 @@ ELIGIBILITY:
 - Thrombectomy: indicated. Left M1 occlusion, NIHSS 18, ASPECTS 9, within 6-h window, pre-stroke functional status independent (assumed).
 
 BP MANAGEMENT:
-- BP 192/108 — would block tPA (>185/110). For thrombectomy, do not over-correct because some perfusion is being maintained by collaterals; aim 140–180 systolic pre-procedure. Post-recanalization, lower target (<140 SBP) per BP-TARGET-style protocols.
+- BP 192/108 — would block tPA (>185/110). For thrombectomy, do not over-correct because some perfusion is being maintained by collaterals; aim 140–180 systolic pre-procedure. Post-recanalization target per current guideline / local protocol [VERIFY: current AHA/ASA stroke guideline] — intensive lowering has not shown benefit and some trials found harm.
 - Labetalol 10 mg IV now, may repeat. Or nicardipine infusion at 5 mg/h titrated.
 - Avoid dropping too fast; target SBP 160–180 for now.
 
@@ -208,7 +208,7 @@ MONITORING (post-procedure):
 - Neuro ICU.
 - Neuro checks q15 min × 2 h, then q30 min × 6 h, q1h × 16 h.
 - 24-hour CT or MRI to assess hemorrhagic transformation.
-- BP target post-recanalization: <140/90 if recanalization successful (TICI 2b-3); if unsuccessful, allow permissive HTN <180/105.
+- BP target post-recanalization: if recanalization successful (TICI 2b-3), per current guideline / local protocol [VERIFY: current AHA/ASA stroke guideline], avoiding intensive lowering; if unsuccessful, allow permissive HTN <180/105.
 
 CONCURRENT:
 - Etiology: known AFib on apixaban. Restart anticoagulation timing depends on infarct size — typically 4–14 days for moderate/large infarct. Bridge with aspirin 81 mg starting 24 h post-procedure if no hemorrhage on imaging.

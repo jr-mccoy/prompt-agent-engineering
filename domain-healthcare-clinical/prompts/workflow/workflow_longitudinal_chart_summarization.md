@@ -106,7 +106,7 @@ DATA CAVEATS: [contradictions, gaps, low-confidence items]
 
 ## Worked Example
 
-**Input:** New-patient handoff. 71 y/o M transferring care; ~6 years of records available. Reason: establishing with new PCP.
+**Input:** New-patient handoff. 71 y/o M transferring care; ~6 years of records pasted in full (progress notes, discharge summaries, cardiology notes, medication lists, labs, echo reports — not reproduced here for length; every value in the output is taken from them). Reason: establishing with new PCP.
 
 **Output:**
 
@@ -127,7 +127,7 @@ MEDICATIONS (current, by indication):
 - Spironolactone 25 mg daily — HFrEF
 - Atorvastatin 80 mg daily — CAD secondary prevention
 - Aspirin 81 mg daily — CAD
-- Metformin 1000 mg BID — T2DM
+- Metformin 1000 mg BID — T2DM (flag: current eGFR 38 — label renal dosing applies at this level; dose not changed in summary `[VERIFY: label renal dosing]`)
 - Recent changes: dapagliflozin added 2024; ARB switched to sacubitril/valsartan 2024.
 - Intolerances/ADRs on record: lisinopril → cough (2021), discontinued.
 
@@ -149,5 +149,5 @@ HISTORICAL CONTEXT:
 
 GOALS / CODE STATUS: Full code per 2025 note; no advance directive on file.
 
-DATA CAVEATS: No records for a ~14-month gap (2022–2023) when patient was out of state; medication reconciliation at first visit advised. Allergy list consistent across notes.
+DATA CAVEATS: No records for a ~14-month gap (2022–2023) when patient was out of state; medication reconciliation at first visit advised. Allergy lists consistent after comparing every allergy list in the supplied notes.
 ```

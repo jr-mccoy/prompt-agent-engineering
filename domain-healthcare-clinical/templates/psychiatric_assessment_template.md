@@ -219,7 +219,7 @@ updated: "2026-10-06"
 
 **Homicidal Ideation:** [ ] Denied [ ] Present — Target: [X] Plan: [X]
 **Risk Level:** [ ] High [ ] Moderate [ ] Low
-**Duty to Warn Triggered:** [ ] No [ ] Yes — Action: [X]
+**Duty to Warn Triggered** (duty to warn/protect is jurisdiction-specific — mandatory, permissive or absent depending on where you practise; apply your local law and institutional policy)**:** [ ] No [ ] Yes — Action: [X]
 
 ---
 
@@ -284,7 +284,7 @@ updated: "2026-10-06"
 
 **Follow-Up:**
 - [ ] Outpatient appointment: [Provider, Date]
-- [ ] Crisis resources provided: 988, Crisis Text Line
+- [ ] Crisis resources provided: [local crisis line(s) — e.g., 988 and Crisis Text Line in the US; use local services elsewhere]
 - [ ] Reassess at: [Time/trigger]
 
 ---

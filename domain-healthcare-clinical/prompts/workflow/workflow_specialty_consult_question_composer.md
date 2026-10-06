@@ -113,20 +113,21 @@ CONSULT QUESTION: In a stable patient with an acute upper GI bleed on apixaban, 
 
 CONSULT TYPE: Procedural + management.
 
-DECISION THIS ENABLES: We will schedule EGD per your timing recommendation and follow your anticoagulation plan; AFib stroke risk (CHA2DS2-VASc 4) makes the resume-timing decision the crux.
+DECISION THIS ENABLES: We will schedule EGD per your timing recommendation and follow your anticoagulation plan; AFib stroke risk (CHA2DS2-VASc `[components not supplied]`) makes the resume-timing decision the crux.
 
 FOCUSED CONTEXT:
-- 64 y/o M, melena x1 day, no hematemesis. Hemodynamically stable now (HR 78, BP 124/72) after 2 U PRBC. No NSAID use, no prior ulcer or varices known. No stigmata of chronic liver disease.
+- 64 y/o M, melena (duration [not provided]). Hemodynamically stable after 2 U PRBC (current vitals [not provided]). NSAID use, prior ulcer or varices, liver disease: [not provided].
 
 RELEVANT DATA (with dates):
-- Hgb 13.0 (baseline, 1 mo ago) → 8.5 on admission → 9.2 post-transfusion (today).
-- Apixaban 5 mg BID, last dose ~18 h ago. Cr 1.0, normal LFTs, platelets 210, INR not applicable (DOAC).
-- AFib, CHA2DS2-VASc 4, HAS-BLED 3.
+- Hgb 13 → 8.5 (dates [not provided]); post-transfusion Hgb [not provided].
+- Apixaban for AFib (dose, last-dose time [not provided]). Cr, LFTs, platelets [not provided].
+- AFib; CHA2DS2-VASc and HAS-BLED `[components not supplied]` — age 64 is the only component in the request.
 
 ALREADY DONE:
-- 2 U PRBC, IV PPI infusion started, apixaban held, type & screen active, NPO.
+- 2 U PRBC.
+- PPI, apixaban hold, type & screen, NPO status: [not provided — confirm before sending].
 - No EGD yet.
 
 ANTICIPATED FOLLOW-UP (answered up front):
-- Code status: full. No DOAC reversal given (stable, controllable). Goals: would like to resume stroke prophylaxis as early as bleeding risk allows given high CHA2DS2-VASc. Last apixaban dose timed above.
+- Code status: [not provided]. DOAC reversal given or not: [not provided]. Goals: referring team would like to resume stroke prophylaxis as early as bleeding risk allows. Last apixaban dose time: [not provided] — the consultant will ask; add before sending.
 ```
