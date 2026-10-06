@@ -1,7 +1,7 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-10-06:** **Waves 1–12 shipped (§6); quality backfill in progress (§6).**
-- **Quality backfill (2026-10-06):** raising the weakest existing prompts: the `domain_writing_*` stubs, missing False-Positive Prevention sections, and missing frontmatter or technique metadata, in batches of about 30 files (§6).
+**Status as of 2026-10-06:** **Waves 1–12 shipped (§6); quality backfill shipped (§6).**
+- **Quality backfill (2026-10-06, shipped):** raised the weakest existing prompts to the house standard. The 24 `domain_writing_*` stubs were rewritten (21) or merged (3); every prompt in the eight target domains now has a False-Positive Prevention section, frontmatter and `techniques`; errors found in worked examples were corrected and logged in [`QUALITY_BACKFILL_CORRECTIONS.md`](QUALITY_BACKFILL_CORRECTIONS.md); stale `related_prompts` were repaired. Routing held throughout (§6).
 - **Wave 12 (2026-10-05):** 11 prompts finishing biblical-studies Phase 3C: a pastoral Scripture-selection layer (`pastoral-scripture/`, 5, selection only, with crisis and abuse routing), Jewish–Christian dialogue (`jewish-christian-dialogue/`, 3) and digital study tools (`learner-self-study/`, 3), plus 7 routing cases (§6).
 - **Wave 11 (2026-10-05):** 22 professional-facing prompts building all eight planned `domain-parenting/family-support-professional/` subfolders (intake, coaching, documentation, groups, referral, home visiting, foster/kinship/adoption, culturally responsive practice), each non-diagnostic with jurisdiction-aware reporting steps, plus 9 routing cases (§6).
 - **Wave 10 (2026-10-04):** technique hygiene (13 undefined codes remapped in 110 files, a CI check on every prompt's `techniques:` list) and agentic-resource depth (7 skills, 4 agents, 4 commands, 4 personas; 3 one-skill categories folded into real ones).
@@ -1255,7 +1255,7 @@ about Mark 2 "ESTABLISHED"; it now separates the established context from the co
 **Left for later:** the two misses above, and the deferred Phase 3C remainder (youth apologetics,
 intergenerational worship).
 
-### Quality backfill: raising the weakest existing prompts (2026-10-06, in progress)
+### Quality backfill: raising the weakest existing prompts (2026-10-06, shipped)
 
 Quality work, not new coverage: no new subject and no new file. Three targets, in priority order:
 
@@ -1336,6 +1336,11 @@ and `domain-presentations/` name them as the customer-facing writing step. Each 
 it is distinct from. One defect was fixed on the way: the investment-proposal worked example labelled
 its scenarios "8% relative" while computing 20%, and its 3-year ROI left out the license renewals
 (700% → ~287%).
+
+
+**Outcome.** 765 files changed in 35 commits against base `4804bc1`, with the §9 checklist run after every batch. An audit of the eight target domains (image-generation 161, presentations 42, advertising 22, medical-education 213, healthcare-clinical 372, deep-analysis 21, conversation-practice 14, professional-writing 80) finds **0 prompts without a False-Positive Prevention section, frontmatter or `techniques`**. The one exception is `domain-healthcare-clinical/_archive/EXPANSION_ROADMAP_v1_safety_framing.md`, an archived planning note rather than a prompt. Every healthcare-clinical prompt carries the review-status disclaimer, and the perianesthesia prompts carry their toolkit's variant. Routing against base: R@1, R@3, R@5, MRR, scope@1 and kind@1 are unchanged across all 221 cases. What did move: 17 cases reorder the 2nd or 3rd scope in their route; case 213 goes from weak to ambiguous, its top-1 switching between two parenting prompts, with no recall change; the realtor-listing probe gains a rank-2 hit (the rewritten listing stub); and duplicate-cluster leaks fall from 28 to 27.
+
+**Corrections log.** The FPP reviewers read each file in full and flagged errors in the prompts themselves, mostly in worked examples. Those errors were not fixed silently inside the FPP batches. They went through separate correction passes (C-A to C-J), and each flag was decided as rejected, fixed from the file's own data, fixed as an uncontroversial fact, or neutralised with `[VERIFY: source]`. No dose or threshold was supplied from memory. Every decision, the safety-relevant ones first, plus the defects left open for a clinician, is in [`QUALITY_BACKFILL_CORRECTIONS.md`](QUALITY_BACKFILL_CORRECTIONS.md). That log supports a licensed reviewer's audit; it does not replace one, and the healthcare-clinical review-status line stays "not yet reviewed by a licensed clinician".
 
 ## 7. Explicitly not gaps / deferred
 
