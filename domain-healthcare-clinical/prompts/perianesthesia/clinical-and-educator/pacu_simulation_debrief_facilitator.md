@@ -18,11 +18,11 @@ techniques:
   - DS-06
 difficulty: advanced
 related_prompts:
-  - prompts/pacu_simulation_scenario_builder.md
-  - prompts/pacu_unfolding_case_study.md
-  - prompts/pacu_emergency_drill_designer.md
-  - prompts/pacu_preceptor_debrief.md
-  - prompts/pacu_preceptor_approach_guide.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_unfolding_case_study.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergency_drill_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - INACSL Healthcare Simulation Standards of Best Practice (Debriefing)

@@ -15,9 +15,9 @@ tags:
   - clinical-documentation
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_prior_authorization_letter.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
-  - domain-healthcare-clinical/prompts/medicine_em_coding_level_justification.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_prior_authorization_letter.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_em_coding_level_justification.md
 ---
 
 # Prior Authorization Packet Builder

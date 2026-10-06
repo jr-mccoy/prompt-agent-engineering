@@ -18,11 +18,10 @@ tags:
   - pocket-card
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
-  - domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_handoff_script.md
-  - domain-productivity/deep-work/deepwork_end_of_block_context_capture.md
 ---
 
 # PACU Phase 1 Shift Structure Card

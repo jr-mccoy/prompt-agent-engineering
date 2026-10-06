@@ -20,7 +20,7 @@ related_prompts:
   - pacu_solo_near_miss_good_catch_reflection.md
   - pacu_solo_personal_reference_builder.md
   - pacu_solo_monthly_growth_review.md
-  - pacu_orient_recovery_deviation_script_builder.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_recovery_deviation_script_builder.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_question_log_builder.md
 references:

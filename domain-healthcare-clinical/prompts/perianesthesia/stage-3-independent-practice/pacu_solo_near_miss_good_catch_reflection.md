@@ -19,7 +19,7 @@ updated: "2026-10-06"
 related_prompts:
   - pacu_solo_new_pattern_capture_log.md
   - pacu_solo_monthly_growth_review.md
-  - pacu_orient_daily_debrief_selfprep.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_daily_debrief_selfprep.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md
 references:

@@ -18,7 +18,7 @@ related_prompts:
   - pacu_grow_charge_resource_nurse_readiness.md
   - pacu_grow_becoming_preceptor_self_prep.md
   - pacu_grow_qi_project_starter.md
-  - pacu_solo_monthly_growth_review.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-3-independent-practice/pacu_solo_monthly_growth_review.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md
 references:

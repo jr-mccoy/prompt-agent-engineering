@@ -16,9 +16,9 @@ tags:
   - harm-reduction
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_psychiatric_assessment_support.md
-  - domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/specialty/medicine_psychiatric_assessment_support.md
+  - domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
 ---
 
 # SUD Assessment & Treatment Planning Advisor

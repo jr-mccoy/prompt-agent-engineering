@@ -16,10 +16,10 @@ techniques:
   - DS-06
 difficulty: beginner
 related_prompts:
-  - ../../domain-healthcare-clinical/prompts/nursing_quick_reference_handbook_creator_prompt.md
-  - ../../domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
-  - prompts/pacu_topic_primer.md
-  - prompts/pacu_complication_deep_dive.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_quick_reference_handbook_creator_prompt.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md
 references:
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)
   - ASPAN Standards of Perianesthesia Nursing Practice

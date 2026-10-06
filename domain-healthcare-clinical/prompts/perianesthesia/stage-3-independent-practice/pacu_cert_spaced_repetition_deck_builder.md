@@ -20,7 +20,7 @@ related_prompts:
   - pacu_cert_capa_cpan_readiness_bridge.md
   - pacu_cert_weak_area_self_diagnostic.md
   - pacu_solo_personal_reference_builder.md
-  - pacu_orient_question_log_and_spaced_review.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_question_log_and_spaced_review.md
 see_also_toolkit:
   - domain-agentic-resources/skills/non-coding/healthcare/pacu-flashcard-deck-builder/
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_practice_question_generator.md

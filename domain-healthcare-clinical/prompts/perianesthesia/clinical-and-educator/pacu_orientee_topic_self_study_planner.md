@@ -18,10 +18,10 @@ techniques:
   - DS-06
 difficulty: beginner
 related_prompts:
-  - prompts/pacu_self_directed_learning_module_designer.md
-  - prompts/pacu_orientee_question_log_builder.md
-  - prompts/pacu_orientee_reflective_journal_prompts.md
-  - prompts/pacu_topic_primer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_self_directed_learning_module_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_question_log_builder.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_reflective_journal_prompts.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)

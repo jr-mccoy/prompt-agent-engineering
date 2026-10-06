@@ -15,9 +15,9 @@ tags:
   - appropriateness-criteria
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_incidental_findings_management.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_lab_diagnostic_interpreter.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/interpretation/medicine_lab_diagnostic_interpreter.md
 ---
 
 # Imaging Study Ordering Rationale Advisor

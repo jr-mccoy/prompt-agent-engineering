@@ -10219,9 +10219,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10255,9 +10255,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10291,9 +10291,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10327,9 +10327,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10363,9 +10363,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10399,9 +10399,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10435,9 +10435,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10471,9 +10471,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10507,9 +10507,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10543,9 +10543,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10579,9 +10579,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10615,9 +10615,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10651,9 +10651,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10687,9 +10687,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10723,9 +10723,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10759,9 +10759,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -10795,9 +10795,9 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
-        "domain-presentations/visual-planning/visual_frontier_map.md",
-        "domain-presentations/visual-planning/visual_qa_harness.md",
-        "domain-presentations/visual-planning/visual_workflow_router.md"
+        "domain-presentations/visual-planning/visualplan_capability_frontier_map.md",
+        "domain-presentations/visual-planning/visualplan_visual_qa_harness.md",
+        "domain-presentations/visual-planning/visualplan_modality_router.md"
       ],
       "has_frontmatter": true
     },
@@ -58442,7 +58442,7 @@
         "domain-deep-analysis/deepthink_problem_analysis.md",
         "domain-deep-analysis/deepthink_plan.md",
         "domain-deep-analysis/deepthink_design.md",
-        "domain-decision-making/decisioning_blind_spot_identifier.md",
+        "domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
         "domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md",
         "domain-productivity/validation/validation_adversarial_mini_check.md",
         "domain-prompt-engineering/evaluation/correctness_pre_mortem.md"
@@ -58730,7 +58730,7 @@
         "domain-deep-analysis/deepthink_plan.md",
         "domain-deep-analysis/deepthink_design.md",
         "domain-prompt-engineering/goal-orientation/goalorientation_right_problem_diagnostic.md",
-        "domain-decision-making/decisioning_blind_spot_identifier.md",
+        "domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
         "domain-productivity/validation/validation_adversarial_mini_check.md",
         "domain-prompt-engineering/evaluation/correctness_pre_mortem.md"
       ],
@@ -80720,8 +80720,8 @@
       "difficulty": "intermediate",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
-        "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md"
+        "domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md"
       ],
       "has_frontmatter": true
     },
@@ -80748,8 +80748,8 @@
       "difficulty": "intermediate",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
-        "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md"
+        "domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md"
       ],
       "has_frontmatter": true
     },
@@ -80776,9 +80776,9 @@
       "difficulty": "intermediate",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md",
-        "domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md",
-        "domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md"
+        "domain-healthcare-clinical/prompts/communication/medicine_care_coordination_transitions.md",
+        "domain-healthcare-clinical/prompts/care-plans/medicine_chronic_disease_management_planner.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md"
       ],
       "has_frontmatter": true
     },
@@ -85809,9 +85809,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
-        "domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md",
-        "domain-healthcare-clinical/prompts/medicine_surgical_preoperative_assessment.md"
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md",
+        "domain-healthcare-clinical/prompts/specialty/medicine_surgical_preoperative_assessment.md"
       ],
       "has_frontmatter": true
     },
@@ -85959,8 +85959,8 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
-        "domain-healthcare-clinical/prompts/medicine_prior_authorization_letter.md"
+        "domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md",
+        "domain-healthcare-clinical/prompts/workflow/medicine_prior_authorization_letter.md"
       ],
       "has_frontmatter": true
     },
@@ -86081,9 +86081,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
-        "domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md",
-        "domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md"
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md",
+        "domain-healthcare-clinical/prompts/care-plans/medicine_chronic_disease_management_planner.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md"
       ],
       "has_frontmatter": true
     },
@@ -86110,9 +86110,9 @@
       "difficulty": "advanced",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_handoff_communication.md",
-        "domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md"
+        "domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md",
+        "domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md",
+        "domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md"
       ],
       "has_frontmatter": true
     },
@@ -86139,9 +86139,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_incidental_findings_management.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
-        "domain-healthcare-clinical/prompts/medicine_lab_diagnostic_interpreter.md"
+        "domain-healthcare-clinical/prompts/reasoning/medicine_incidental_findings_management.md",
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md",
+        "domain-healthcare-clinical/prompts/interpretation/medicine_lab_diagnostic_interpreter.md"
       ],
       "has_frontmatter": true
     },
@@ -86169,9 +86169,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_imaging_ordering_rationale.md",
-        "domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md"
+        "domain-healthcare-clinical/prompts/reasoning/medicine_imaging_ordering_rationale.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md",
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md"
       ],
       "has_frontmatter": true
     },
@@ -86260,9 +86260,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md",
-        "domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md",
-        "domain-healthcare-clinical/prompts/medicine_renal_hepatic_dose_adjustment.md"
+        "domain-healthcare-clinical/prompts/communication/medicine_care_coordination_transitions.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_renal_hepatic_dose_adjustment.md"
       ],
       "has_frontmatter": true
     },
@@ -86319,9 +86319,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
-        "domain-healthcare-clinical/prompts/medicine_goals_of_care_conversation_guide.md",
-        "domain-healthcare-clinical/prompts/medicine_literature_synthesizer.md"
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_goals_of_care_conversation_guide.md",
+        "domain-healthcare-clinical/prompts/education/medicine_literature_synthesizer.md"
       ],
       "has_frontmatter": true
     },
@@ -86410,9 +86410,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_emergency_triage_decision_support.md",
-        "domain-healthcare-clinical/prompts/medicine_handoff_communication.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md"
+        "domain-healthcare-clinical/prompts/acute-care/medicine_emergency_triage_decision_support.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md",
+        "domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md"
       ],
       "has_frontmatter": true
     },
@@ -86440,9 +86440,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_prenatal_risk_stratification.md",
-        "domain-healthcare-clinical/prompts/medicine_informed_consent_communicator.md",
-        "domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md"
+        "domain-healthcare-clinical/prompts/specialty/medicine_prenatal_risk_stratification.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_informed_consent_communicator.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md"
       ],
       "has_frontmatter": true
     },
@@ -86470,9 +86470,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
-        "domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md",
-        "domain-healthcare-clinical/prompts/medicine_preventive_care_screening_advisor.md"
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md",
+        "domain-healthcare-clinical/prompts/care-plans/medicine_chronic_disease_management_planner.md",
+        "domain-healthcare-clinical/prompts/care-plans/medicine_preventive_care_screening_advisor.md"
       ],
       "has_frontmatter": true
     },
@@ -86531,9 +86531,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_em_coding_level_justification.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md"
+        "domain-healthcare-clinical/prompts/workflow/medicine_em_coding_level_justification.md",
+        "domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md",
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md"
       ],
       "has_frontmatter": true
     },
@@ -86560,9 +86560,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_prior_authorization_letter.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md",
-        "domain-healthcare-clinical/prompts/medicine_em_coding_level_justification.md"
+        "domain-healthcare-clinical/prompts/workflow/medicine_prior_authorization_letter.md",
+        "domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md",
+        "domain-healthcare-clinical/prompts/workflow/medicine_em_coding_level_justification.md"
       ],
       "has_frontmatter": true
     },
@@ -86649,9 +86649,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_handoff_communication.md",
-        "domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_documentation.md"
+        "domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_care_coordination_transitions.md",
+        "domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md"
       ],
       "has_frontmatter": true
     },
@@ -86680,9 +86680,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_medication_reconciliation.md",
-        "domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md"
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_medication_reconciliation.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md",
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md"
       ],
       "has_frontmatter": true
     },
@@ -86711,9 +86711,9 @@
       "difficulty": "advanced",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_emergency_triage_decision_support.md",
-        "domain-healthcare-clinical/prompts/medicine_antibiotic_stewardship_advisor.md",
-        "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md"
+        "domain-healthcare-clinical/prompts/acute-care/medicine_emergency_triage_decision_support.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md"
       ],
       "has_frontmatter": true
     },
@@ -86741,9 +86741,9 @@
       "difficulty": "advanced",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md",
-        "domain-healthcare-clinical/prompts/medicine_emergency_triage_decision_support.md",
-        "domain-healthcare-clinical/prompts/medicine_icu_daily_goals_checklist.md"
+        "domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md",
+        "domain-healthcare-clinical/prompts/acute-care/medicine_emergency_triage_decision_support.md",
+        "domain-healthcare-clinical/prompts/acute-care/medicine_icu_daily_goals_checklist.md"
       ],
       "has_frontmatter": true
     },
@@ -86771,9 +86771,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_psychiatric_assessment_support.md",
-        "domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md"
+        "domain-healthcare-clinical/prompts/specialty/medicine_psychiatric_assessment_support.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md",
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md"
       ],
       "has_frontmatter": true
     },
@@ -86861,9 +86861,9 @@
       "difficulty": "advanced",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_icu_daily_goals_checklist.md",
-        "domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md",
-        "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md"
+        "domain-healthcare-clinical/prompts/acute-care/medicine_icu_daily_goals_checklist.md",
+        "domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md",
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md"
       ],
       "has_frontmatter": true
     },
@@ -86921,9 +86921,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_medication_reconciliation.md",
-        "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md",
-        "domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md"
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_medication_reconciliation.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md"
       ],
       "has_frontmatter": true
     },
@@ -86952,11 +86952,10 @@
       "difficulty": "intermediate",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
-        "domain-healthcare-clinical/prompts/nursing_preceptor_independence_rubric.md",
-        "domain-healthcare-clinical/prompts/nursing_orientee_pattern_import_check.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_preceptor_independence_rubric.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_orientee_pattern_import_check.md",
         "domain-engineering-workflows/workflows/engineering_post_mortem_root_cause_ladder.md",
-        "domain-engineering-workflows/done-definition/done_definition_gate_incident_postmortem.md",
         "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md"
       ],
       "has_frontmatter": true
@@ -86986,12 +86985,11 @@
       "difficulty": "advanced",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
-        "domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md",
-        "domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md",
-        "domain-healthcare-clinical/prompts/nursing_orientee_pattern_import_check.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_pacu_shift_structure.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_orientee_pattern_import_check.md",
         "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_competency_self_assessment.md",
-        "domain-engineering-workflows/done-definition/done_definition_gate_incident_postmortem.md",
         "domain-personal-development/prompts/goals/goals_skill_breakdown_blueprint.md"
       ],
       "has_frontmatter": true
@@ -87022,10 +87020,10 @@
       "difficulty": "intermediate",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
-        "domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md",
         "domain-productivity/validation/validation_adversarial_mini_check.md",
-        "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md"
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md"
       ],
       "has_frontmatter": true
     },
@@ -87054,10 +87052,8 @@
       "difficulty": "intermediate",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md",
         "domain-productivity/validation/validation_adversarial_mini_check.md",
-        "domain-productivity/deep-work/workflow_weekly_reflection.md",
-        "domain-business-strategy/organization/organization_end_of_day_reconciliation.md",
         "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md"
       ],
       "has_frontmatter": true
@@ -87112,9 +87108,9 @@
       "difficulty": "",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/medicine_handoff_communication.md",
-        "domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md",
-        "domain-healthcare-clinical/prompts/nursing_clinical_assessment_framework.md"
+        "domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md",
+        "domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_clinical_assessment_framework.md"
       ],
       "has_frontmatter": true
     },
@@ -87143,9 +87139,9 @@
       "difficulty": "beginner",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md",
-        "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
-        "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_pacu_shift_structure.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md",
         "domain-decision-making/decisioning_resource_constrained_solver.md"
       ],
       "has_frontmatter": true
@@ -87175,11 +87171,10 @@
       "difficulty": "beginner",
       "updated": "2026-10-06",
       "related_prompts": [
-        "domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
-        "domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md",
-        "domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md",
-        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_handoff_script.md",
-        "domain-productivity/deep-work/deepwork_end_of_block_context_capture.md"
+        "domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_handoff_script.md"
       ],
       "has_frontmatter": true
     },
@@ -88372,7 +88367,7 @@
       "related_prompts": [
         "pacu_indep_run_bay_solo_simulation.md",
         "pacu_indep_deteriorating_patient_walkthrough.md",
-        "pacu_orient_aldrete_padss_scoring_practice.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_aldrete_padss_scoring_practice.md"
       ],
       "has_frontmatter": true
     },
@@ -88407,7 +88402,7 @@
       "related_prompts": [
         "pacu_indep_signoff_readiness_self_capstone.md",
         "pacu_indep_cueing_decay_self_tracker.md",
-        "pacu_orient_reflective_journal.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_reflective_journal.md"
       ],
       "has_frontmatter": true
     },
@@ -88442,7 +88437,7 @@
       "related_prompts": [
         "pacu_indep_confidence_calibration_selfquiz.md",
         "pacu_indep_signoff_readiness_self_capstone.md",
-        "pacu_orient_reflective_journal.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_reflective_journal.md"
       ],
       "has_frontmatter": true
     },
@@ -88478,7 +88473,7 @@
       "related_prompts": [
         "pacu_indep_escalation_decision_drill.md",
         "pacu_indep_run_bay_solo_simulation.md",
-        "pacu_orient_recovery_deviation_script_builder.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_recovery_deviation_script_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -88514,7 +88509,7 @@
       "related_prompts": [
         "pacu_indep_emergency_response_rehearsal_oird.md",
         "pacu_indep_emergency_response_rehearsal_last.md",
-        "pacu_orient_respiratory_event_recognition_drill.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_respiratory_event_recognition_drill.md"
       ],
       "has_frontmatter": true
     },
@@ -88586,7 +88581,7 @@
       "related_prompts": [
         "pacu_indep_emergency_response_rehearsal_airway.md",
         "pacu_indep_escalation_decision_drill.md",
-        "pacu_orient_respiratory_event_recognition_drill.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_respiratory_event_recognition_drill.md"
       ],
       "has_frontmatter": true
     },
@@ -88622,7 +88617,7 @@
       "related_prompts": [
         "pacu_indep_deteriorating_patient_walkthrough.md",
         "pacu_indep_two_patient_prioritization_stress_drill.md",
-        "pacu_orient_hemodynamic_event_recognition_drill.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_hemodynamic_event_recognition_drill.md"
       ],
       "has_frontmatter": true
     },
@@ -88693,7 +88688,7 @@
       "related_prompts": [
         "pacu_indep_run_bay_solo_simulation.md",
         "pacu_indep_escalation_decision_drill.md",
-        "pacu_orient_prioritization_rule_drill.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_prioritization_rule_drill.md"
       ],
       "has_frontmatter": true
     },
@@ -88799,8 +88794,8 @@
       "related_prompts": [
         "pacu_solo_monthly_growth_review.md",
         "pacu_cert_weak_area_self_diagnostic.md",
-        "pacu_indep_emergency_response_rehearsal_last.md",
-        "pacu_indep_emergency_response_rehearsal_airway.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-2-independence/pacu_indep_emergency_response_rehearsal_last.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-2-independence/pacu_indep_emergency_response_rehearsal_airway.md"
       ],
       "has_frontmatter": true
     },
@@ -88902,7 +88897,7 @@
       "related_prompts": [
         "pacu_solo_new_pattern_capture_log.md",
         "pacu_solo_monthly_growth_review.md",
-        "pacu_orient_daily_debrief_selfprep.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_daily_debrief_selfprep.md"
       ],
       "has_frontmatter": true
     },
@@ -88937,7 +88932,7 @@
         "pacu_solo_near_miss_good_catch_reflection.md",
         "pacu_solo_personal_reference_builder.md",
         "pacu_solo_monthly_growth_review.md",
-        "pacu_orient_recovery_deviation_script_builder.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_recovery_deviation_script_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -89006,7 +89001,7 @@
         "pacu_cert_capa_cpan_readiness_bridge.md",
         "pacu_cert_weak_area_self_diagnostic.md",
         "pacu_solo_personal_reference_builder.md",
-        "pacu_orient_question_log_and_spaced_review.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_question_log_and_spaced_review.md"
       ],
       "has_frontmatter": true
     },
@@ -89289,7 +89284,7 @@
       "related_prompts": [
         "pacu_grow_becoming_preceptor_self_prep.md",
         "pacu_grow_teaching_recovery_concept.md",
-        "pacu_solo_near_miss_good_catch_reflection.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-3-independent-practice/pacu_solo_near_miss_good_catch_reflection.md"
       ],
       "has_frontmatter": true
     },
@@ -89361,7 +89356,7 @@
       "related_prompts": [
         "pacu_grow_journal_club_participation.md",
         "pacu_grow_qi_project_starter.md",
-        "pacu_solo_personal_reference_builder.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-3-independent-practice/pacu_solo_personal_reference_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -89539,7 +89534,7 @@
         "pacu_grow_charge_resource_nurse_readiness.md",
         "pacu_grow_becoming_preceptor_self_prep.md",
         "pacu_grow_qi_project_starter.md",
-        "pacu_solo_monthly_growth_review.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/stage-3-independent-practice/pacu_solo_monthly_growth_review.md"
       ],
       "has_frontmatter": true
     },
@@ -89636,10 +89631,10 @@
       "difficulty": "beginner",
       "updated": "2026-04-16",
       "related_prompts": [
-        "../../domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md",
-        "../../domain-healthcare-clinical/prompts/medicine_handoff_communication.md",
-        "prompts/pacu_red_flag_card.md",
-        "prompts/pacu_preceptor_debrief.md"
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md"
       ],
       "has_frontmatter": true
     },
@@ -89699,11 +89694,11 @@
       "difficulty": "intermediate",
       "updated": "2026-04-16",
       "related_prompts": [
-        "../../domain-healthcare-clinical/prompts/medicine_adverse_event_analyzer.md",
-        "../../domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md",
-        "prompts/pacu_topic_primer.md",
-        "prompts/pacu_red_flag_card.md",
-        "prompts/pacu_simulation_scenario_builder.md"
+        "domain-healthcare-clinical/prompts/quality/medicine_adverse_event_analyzer.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -90059,11 +90054,11 @@
       "difficulty": "intermediate",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_topic_primer.md",
-        "prompts/pacu_complication_deep_dive.md",
-        "prompts/pacu_medication_profile.md",
-        "prompts/pacu_unfolding_case_study.md",
-        "prompts/pacu_simulation_scenario_builder.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_medication_profile.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_unfolding_case_study.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -90089,10 +90084,10 @@
       "difficulty": "beginner",
       "updated": "2026-04-16",
       "related_prompts": [
-        "../../domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md",
-        "../../domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md",
-        "prompts/pacu_red_flag_card.md",
-        "prompts/pacu_complication_deep_dive.md"
+        "domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_pacu_shift_structure.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md"
       ],
       "has_frontmatter": true
     },
@@ -90122,10 +90117,10 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_capa_cpan_weak_area_diagnostic.md",
-        "prompts/pacu_capa_cpan_practice_question_generator.md",
-        "prompts/pacu_capa_cpan_test_strategy_coach.md",
-        "prompts/pacu_capa_cpan_final_week_review.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_weak_area_diagnostic.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_practice_question_generator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_test_strategy_coach.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_final_week_review.md"
       ],
       "has_frontmatter": true
     },
@@ -90153,9 +90148,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_capa_cpan_blueprint_aligned_study_plan.md",
-        "prompts/pacu_capa_cpan_weak_area_diagnostic.md",
-        "prompts/pacu_capa_cpan_test_strategy_coach.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_blueprint_aligned_study_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_weak_area_diagnostic.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_test_strategy_coach.md"
       ],
       "has_frontmatter": true
     },
@@ -90185,8 +90180,8 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_capa_cpan_blueprint_aligned_study_plan.md",
-        "prompts/pacu_capa_cpan_weak_area_diagnostic.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_blueprint_aligned_study_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_weak_area_diagnostic.md"
       ],
       "has_frontmatter": true
     },
@@ -90214,9 +90209,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_capa_cpan_blueprint_aligned_study_plan.md",
-        "prompts/pacu_capa_cpan_practice_question_generator.md",
-        "prompts/pacu_capa_cpan_final_week_review.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_blueprint_aligned_study_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_practice_question_generator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_final_week_review.md"
       ],
       "has_frontmatter": true
     },
@@ -90245,8 +90240,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_capa_cpan_blueprint_aligned_study_plan.md",
-        "prompts/pacu_capa_cpan_practice_question_generator.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_blueprint_aligned_study_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_practice_question_generator.md"
       ],
       "has_frontmatter": true
     },
@@ -90273,11 +90268,11 @@
       "difficulty": "intermediate",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_preceptor_approach_guide.md",
-        "prompts/pacu_peer_preceptor_360_feedback.md",
-        "prompts/pacu_orientee_evaluation_meta_prompt.md",
-        "prompts/pacu_preceptor_debrief.md",
-        "prompts/pacu_preceptor_writing_orientee_evaluation.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_peer_preceptor_360_feedback.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md"
       ],
       "has_frontmatter": true
     },
@@ -90306,9 +90301,9 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientation_skill_acquisition_timeline.md",
-        "prompts/pacu_preceptor_orientation_pacing_diagnostic.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_orientation_pacing_diagnostic.md"
       ],
       "has_frontmatter": true
     },
@@ -90337,9 +90332,9 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientation_skill_acquisition_timeline.md",
-        "prompts/pacu_orientee_evaluation_meta_prompt.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md"
       ],
       "has_frontmatter": true
     },
@@ -90369,14 +90364,14 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_first_day_packet.md",
-        "prompts/pacu_orientation_first_week_plan.md",
-        "prompts/pacu_orientee_weekly_learning_plan.md",
-        "prompts/pacu_orientation_skill_acquisition_timeline.md",
-        "prompts/pacu_background_specific_pathway_adapter.md",
-        "prompts/pacu_orientation_surgical_mix_mapper.md",
-        "prompts/pacu_orientation_simulation_calendar_designer.md",
-        "prompts/pacu_orientee_evaluation_meta_prompt.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_first_day_packet.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_first_week_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_background_specific_pathway_adapter.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_surgical_mix_mapper.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_simulation_calendar_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md"
       ],
       "has_frontmatter": true
     },
@@ -90403,8 +90398,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientee_weekly_learning_plan.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md"
       ],
       "has_frontmatter": true
     },
@@ -90431,9 +90426,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientee_weekly_learning_plan.md",
-        "prompts/pacu_preceptor_debrief.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md"
       ],
       "has_frontmatter": true
     },
@@ -90460,9 +90455,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientee_weekly_learning_plan.md",
-        "prompts/pacu_preceptor_debrief.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md"
       ],
       "has_frontmatter": true
     },
@@ -90490,12 +90485,12 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_simulation_scenario_builder.md",
-        "prompts/pacu_simulation_debrief_facilitator.md",
-        "prompts/pacu_skill_drill_designer.md",
-        "prompts/pacu_emergency_drill_designer.md",
-        "prompts/pacu_unfolding_case_study.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_skill_drill_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergency_drill_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_unfolding_case_study.md"
       ],
       "has_frontmatter": true
     },
@@ -90524,10 +90519,10 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientee_weekly_learning_plan.md",
-        "prompts/pacu_preceptor_orientation_pacing_diagnostic.md",
-        "prompts/pacu_orientee_evaluation_meta_prompt.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_orientation_pacing_diagnostic.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md"
       ],
       "has_frontmatter": true
     },
@@ -90555,9 +90550,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientee_weekly_learning_plan.md",
-        "prompts/pacu_orientation_topic_sequencing_optimizer.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_topic_sequencing_optimizer.md"
       ],
       "has_frontmatter": true
     },
@@ -90585,10 +90580,10 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientation_skill_acquisition_timeline.md",
-        "prompts/pacu_preceptor_orientation_pacing_diagnostic.md",
-        "prompts/pacu_orientation_surgical_mix_mapper.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_orientation_pacing_diagnostic.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_surgical_mix_mapper.md"
       ],
       "has_frontmatter": true
     },
@@ -90616,9 +90611,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientation_first_week_plan.md",
-        "prompts/pacu_orientee_question_log_builder.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_first_week_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_question_log_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -90646,10 +90641,10 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientation_first_day_packet.md",
-        "prompts/pacu_orientee_weekly_learning_plan.md",
-        "prompts/pacu_preceptor_debrief.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_first_day_packet.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md"
       ],
       "has_frontmatter": true
     },
@@ -90675,9 +90670,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientee_reflective_journal_prompts.md",
-        "prompts/pacu_orientee_topic_self_study_planner.md",
-        "prompts/pacu_preceptor_debrief.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_reflective_journal_prompts.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_topic_self_study_planner.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md"
       ],
       "has_frontmatter": true
     },
@@ -90704,9 +90699,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientee_question_log_builder.md",
-        "prompts/pacu_orientee_topic_self_study_planner.md",
-        "prompts/pacu_competency_self_assessment.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_question_log_builder.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_topic_self_study_planner.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_competency_self_assessment.md"
       ],
       "has_frontmatter": true
     },
@@ -90733,10 +90728,10 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_self_directed_learning_module_designer.md",
-        "prompts/pacu_orientee_question_log_builder.md",
-        "prompts/pacu_orientee_reflective_journal_prompts.md",
-        "prompts/pacu_topic_primer.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_self_directed_learning_module_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_question_log_builder.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_reflective_journal_prompts.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md"
       ],
       "has_frontmatter": true
     },
@@ -90763,11 +90758,11 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientation_first_week_plan.md",
-        "prompts/pacu_orientation_skill_acquisition_timeline.md",
-        "prompts/pacu_preceptor_debrief.md",
-        "prompts/pacu_self_directed_learning_module_designer.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_first_week_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_self_directed_learning_module_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -90794,11 +90789,11 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_curriculum_designer.md",
-        "prompts/pacu_orientation_skill_acquisition_timeline.md",
-        "prompts/pacu_preceptor_orientation_pacing_diagnostic.md",
-        "prompts/pacu_preceptor_debrief.md",
-        "prompts/pacu_orientee_evaluation_meta_prompt.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_orientation_pacing_diagnostic.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md"
       ],
       "has_frontmatter": true
     },
@@ -90827,11 +90822,11 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientation_skill_acquisition_timeline.md",
-        "prompts/pacu_orientation_topic_sequencing_optimizer.md",
-        "prompts/pacu_background_specific_pathway_adapter.md",
-        "prompts/pacu_preceptor_debrief.md",
-        "prompts/pacu_orientee_evaluation_meta_prompt.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_topic_sequencing_optimizer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_background_specific_pathway_adapter.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md"
       ],
       "has_frontmatter": true
     },
@@ -90860,10 +90855,10 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "prompts/pacu_orientee_weekly_learning_plan.md",
-        "prompts/pacu_topic_primer.md",
-        "prompts/pacu_complication_deep_dive.md",
-        "prompts/pacu_orientee_question_log_builder.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_question_log_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -90889,8 +90884,8 @@
       "difficulty": "beginner",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_topic_primer.md",
-        "prompts/pacu_handoff_script.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_handoff_script.md"
       ],
       "has_frontmatter": true
     },
@@ -91134,11 +91129,11 @@
       "difficulty": "intermediate",
       "updated": "2026-04-16",
       "related_prompts": [
-        "../../domain-healthcare-clinical/prompts/nursing_medication_administration_safety.md",
-        "../../domain-healthcare-clinical/prompts/medicine_medication_reconciliation.md",
-        "prompts/pacu_topic_primer.md",
-        "prompts/pacu_red_flag_card.md",
-        "prompts/pacu_complication_deep_dive.md"
+        "domain-healthcare-clinical/prompts/nursing/nursing_medication_administration_safety.md",
+        "domain-healthcare-clinical/prompts/pharmacology/medicine_medication_reconciliation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md"
       ],
       "has_frontmatter": true
     },
@@ -91274,12 +91269,12 @@
       "difficulty": "intermediate",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_topic_primer.md",
-        "prompts/pacu_complication_deep_dive.md",
-        "prompts/pacu_medication_profile.md",
-        "prompts/pacu_patient_education_sheet.md",
-        "prompts/pacu_emergence_agitation_deescalation.md",
-        "prompts/pacu_simulation_scenario_builder.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_medication_profile.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_patient_education_sheet.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergence_agitation_deescalation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -91309,12 +91304,12 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_topic_primer.md",
-        "prompts/pacu_complication_deep_dive.md",
-        "prompts/pacu_medication_profile.md",
-        "prompts/pacu_handoff_script.md",
-        "prompts/pacu_simulation_scenario_builder.md",
-        "prompts/pacu_unfolding_case_study.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_medication_profile.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_handoff_script.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_unfolding_case_study.md"
       ],
       "has_frontmatter": true
     },
@@ -91343,12 +91338,12 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_topic_primer.md",
-        "prompts/pacu_complication_deep_dive.md",
-        "prompts/pacu_medication_profile.md",
-        "prompts/pacu_emergence_agitation_deescalation.md",
-        "prompts/pacu_simulation_scenario_builder.md",
-        "prompts/pacu_unfolding_case_study.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_medication_profile.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergence_agitation_deescalation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_unfolding_case_study.md"
       ],
       "has_frontmatter": true
     },
@@ -91374,12 +91369,12 @@
       "difficulty": "intermediate",
       "updated": "2026-04-16",
       "related_prompts": [
-        "../../domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md",
-        "../../domain-healthcare-clinical/prompts/nursing_preceptor_fumble_postmortem.md",
-        "prompts/pacu_preceptor_approach_guide.md",
-        "prompts/pacu_preceptor_writing_orientee_evaluation.md",
-        "prompts/pacu_competency_self_assessment.md",
-        "prompts/pacu_preceptor_difficult_conversation_guide.md"
+        "domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_preceptor_fumble_postmortem.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_competency_self_assessment.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_difficult_conversation_guide.md"
       ],
       "has_frontmatter": true
     },
@@ -91408,12 +91403,12 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_preceptor_approach_guide.md",
-        "prompts/pacu_preceptor_writing_orientee_evaluation.md",
-        "prompts/pacu_peer_preceptor_360_feedback.md",
-        "prompts/pacu_preceptor_calibration_facilitator.md",
-        "prompts/pacu_competency_self_assessment.md",
-        "prompts/pacu_preceptor_debrief.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_peer_preceptor_360_feedback.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_calibration_facilitator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_competency_self_assessment.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md"
       ],
       "has_frontmatter": true
     },
@@ -91442,12 +91437,12 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_preceptor_writing_orientee_evaluation.md",
-        "prompts/pacu_preceptor_difficult_conversation_guide.md",
-        "prompts/pacu_preceptor_approach_guide.md",
-        "prompts/pacu_orientee_evaluation_meta_prompt.md",
-        "prompts/pacu_preceptor_debrief.md",
-        "prompts/pacu_preceptor_calibration_facilitator.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_difficult_conversation_guide.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_calibration_facilitator.md"
       ],
       "has_frontmatter": true
     },
@@ -91476,12 +91471,12 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_orientee_evaluation_meta_prompt.md",
-        "prompts/pacu_preceptor_writing_orientee_evaluation.md",
-        "prompts/pacu_preceptor_debrief.md",
-        "prompts/pacu_preceptor_calibration_facilitator.md",
-        "prompts/pacu_preceptor_difficult_conversation_guide.md",
-        "prompts/pacu_orientee_remediation_plan.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_calibration_facilitator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_difficult_conversation_guide.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_remediation_plan.md"
       ],
       "has_frontmatter": true
     },
@@ -91510,11 +91505,11 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_orientee_evaluation_meta_prompt.md",
-        "prompts/pacu_preceptor_approach_guide.md",
-        "prompts/pacu_preceptor_writing_orientee_evaluation.md",
-        "prompts/pacu_peer_preceptor_360_feedback.md",
-        "prompts/pacu_preceptor_difficult_conversation_guide.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_peer_preceptor_360_feedback.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_difficult_conversation_guide.md"
       ],
       "has_frontmatter": true
     },
@@ -91543,10 +91538,10 @@
       "difficulty": "intermediate",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_orientee_evaluation_meta_prompt.md",
-        "prompts/pacu_preceptor_writing_orientee_evaluation.md",
-        "prompts/pacu_preceptor_calibration_facilitator.md",
-        "prompts/pacu_preceptor_approach_guide.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_calibration_facilitator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md"
       ],
       "has_frontmatter": true
     },
@@ -91575,11 +91570,11 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_preceptor_approach_guide.md",
-        "prompts/pacu_preceptor_writing_orientee_evaluation.md",
-        "prompts/pacu_orientee_remediation_plan.md",
-        "prompts/pacu_preceptor_debrief.md",
-        "prompts/pacu_preceptor_calibration_facilitator.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_remediation_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_calibration_facilitator.md"
       ],
       "has_frontmatter": true
     },
@@ -91608,13 +91603,13 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_orientee_evaluation_meta_prompt.md",
-        "prompts/pacu_preceptor_approach_guide.md",
-        "prompts/pacu_peer_preceptor_360_feedback.md",
-        "prompts/pacu_preceptor_calibration_facilitator.md",
-        "prompts/pacu_orientee_remediation_plan.md",
-        "prompts/pacu_competency_self_assessment.md",
-        "prompts/pacu_preceptor_difficult_conversation_guide.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_peer_preceptor_360_feedback.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_calibration_facilitator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_remediation_plan.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_competency_self_assessment.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_difficult_conversation_guide.md"
       ],
       "has_frontmatter": true
     },
@@ -91640,10 +91635,10 @@
       "difficulty": "beginner",
       "updated": "2026-04-16",
       "related_prompts": [
-        "../../domain-healthcare-clinical/prompts/nursing_quick_reference_handbook_creator_prompt.md",
-        "../../domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md",
-        "prompts/pacu_topic_primer.md",
-        "prompts/pacu_complication_deep_dive.md"
+        "domain-healthcare-clinical/prompts/nursing/nursing_quick_reference_handbook_creator_prompt.md",
+        "domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md"
       ],
       "has_frontmatter": true
     },
@@ -91672,11 +91667,11 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_simulation_scenario_builder.md",
-        "prompts/pacu_simulation_debrief_facilitator.md",
-        "prompts/pacu_red_flag_card.md",
-        "prompts/pacu_complication_deep_dive.md",
-        "prompts/pacu_skill_drill_designer.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_skill_drill_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -91704,11 +91699,11 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_simulation_scenario_builder.md",
-        "prompts/pacu_unfolding_case_study.md",
-        "prompts/pacu_emergency_drill_designer.md",
-        "prompts/pacu_preceptor_debrief.md",
-        "prompts/pacu_preceptor_approach_guide.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_unfolding_case_study.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergency_drill_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md"
       ],
       "has_frontmatter": true
     },
@@ -91737,11 +91732,11 @@
       "difficulty": "advanced",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_simulation_debrief_facilitator.md",
-        "prompts/pacu_unfolding_case_study.md",
-        "prompts/pacu_emergency_drill_designer.md",
-        "prompts/pacu_complication_deep_dive.md",
-        "prompts/pacu_quick_quiz_generator.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_unfolding_case_study.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergency_drill_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_quick_quiz_generator.md"
       ],
       "has_frontmatter": true
     },
@@ -91770,11 +91765,11 @@
       "difficulty": "intermediate",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_simulation_scenario_builder.md",
-        "prompts/pacu_simulation_debrief_facilitator.md",
-        "prompts/pacu_emergency_drill_designer.md",
-        "prompts/pacu_red_flag_card.md",
-        "prompts/pacu_complication_deep_dive.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergency_drill_designer.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md"
       ],
       "has_frontmatter": true
     },
@@ -91803,11 +91798,11 @@
       "difficulty": "intermediate",
       "updated": "2026-04-16",
       "related_prompts": [
-        "prompts/pacu_simulation_scenario_builder.md",
-        "prompts/pacu_simulation_debrief_facilitator.md",
-        "prompts/pacu_complication_deep_dive.md",
-        "prompts/pacu_quick_quiz_generator.md",
-        "prompts/pacu_topic_primer.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_quick_quiz_generator.md",
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md"
       ],
       "has_frontmatter": true
     },
@@ -92919,7 +92914,7 @@
         "domain-deep-analysis/deepthink_problem_analysis.md",
         "domain-deep-analysis/deepthink_plan.md",
         "domain-deep-analysis/deepthink_design.md",
-        "domain-decision-making/decisioning_blind_spot_identifier.md",
+        "domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
         "domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md",
         "domain-productivity/validation/validation_adversarial_mini_check.md",
         "domain-prompt-engineering/evaluation/correctness_pre_mortem.md"
@@ -93028,7 +93023,7 @@
         "domain-deep-analysis/deepthink_plan.md",
         "domain-deep-analysis/deepthink_design.md",
         "domain-prompt-engineering/goal-orientation/goalorientation_right_problem_diagnostic.md",
-        "domain-decision-making/decisioning_blind_spot_identifier.md",
+        "domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md",
         "domain-productivity/validation/validation_adversarial_mini_check.md",
         "domain-prompt-engineering/evaluation/correctness_pre_mortem.md"
       ],
@@ -140547,7 +140542,7 @@
       "difficulty": "advanced",
       "updated": "2026-04-08",
       "related_prompts": [
-        "domain-creative-writing/writing_voice_development.md",
+        "domain-creative-writing/craft-tools/writing_voice_development.md",
         "domain-business-strategy/startup/copy/startup_tone_of_voice.md"
       ],
       "has_frontmatter": true

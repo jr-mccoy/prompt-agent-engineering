@@ -16,8 +16,8 @@ tags:
   - clinical-documentation
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
 ---
 
 # SLP Dysphagia Documentation Support

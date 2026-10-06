@@ -17,11 +17,11 @@ techniques:
   - DS-06
 difficulty: intermediate
 related_prompts:
-  - ../../domain-healthcare-clinical/prompts/nursing_medication_administration_safety.md
-  - ../../domain-healthcare-clinical/prompts/medicine_medication_reconciliation.md
-  - prompts/pacu_topic_primer.md
-  - prompts/pacu_red_flag_card.md
-  - prompts/pacu_complication_deep_dive.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_medication_administration_safety.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_medication_reconciliation.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md
 references:
   - Drain's PeriAnesthesia Nursing Practice (7th ed.) — pharmacology chapters
   - ASPAN Standards of Perianesthesia Nursing Practice

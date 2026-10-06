@@ -17,9 +17,9 @@ tags:
   - VTE
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md
-  - domain-healthcare-clinical/prompts/medicine_surgical_preoperative_assessment.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md
+  - domain-healthcare-clinical/prompts/specialty/medicine_surgical_preoperative_assessment.md
 ---
 
 # Anticoagulation Decision Support Reasoner

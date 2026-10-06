@@ -19,11 +19,11 @@ techniques:
   - DS-06
 difficulty: advanced
 related_prompts:
-  - prompts/pacu_simulation_scenario_builder.md
-  - prompts/pacu_simulation_debrief_facilitator.md
-  - prompts/pacu_red_flag_card.md
-  - prompts/pacu_complication_deep_dive.md
-  - prompts/pacu_skill_drill_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_skill_drill_designer.md
 references:
   - MHAUS (Malignant Hyperthermia Association of the United States) — current MH protocol
   - AAAAI / WAO anaphylaxis guidelines

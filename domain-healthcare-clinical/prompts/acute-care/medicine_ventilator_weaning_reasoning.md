@@ -17,9 +17,9 @@ tags:
   - respiratory-therapy
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_icu_daily_goals_checklist.md
-  - domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_icu_daily_goals_checklist.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
 ---
 
 # Ventilator Weaning Clinical Reasoning

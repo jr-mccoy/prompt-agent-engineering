@@ -15,9 +15,9 @@ tags:
   - documentation-quality
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_handoff_communication.md
-  - domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md
+  - domain-healthcare-clinical/prompts/communication/medicine_care_coordination_transitions.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
 ---
 
 # Referral Quality Optimizer

@@ -15,9 +15,9 @@ tags:
   - communication
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_handoff_communication.md
-  - domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md
-  - domain-healthcare-clinical/prompts/nursing_clinical_assessment_framework.md
+  - domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_clinical_assessment_framework.md
 ---
 
 # Nursing SBAR Clinical Escalation Framework

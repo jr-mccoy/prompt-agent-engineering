@@ -16,10 +16,10 @@ techniques:
   - DS-06
 difficulty: beginner
 related_prompts:
-  - ../../domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md
-  - ../../domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md
-  - prompts/pacu_red_flag_card.md
-  - prompts/pacu_complication_deep_dive.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_pacu_shift_structure.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md
 references:
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)
   - ASPAN Standards of Perianesthesia Nursing Practice

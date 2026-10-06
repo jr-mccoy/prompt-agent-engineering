@@ -18,9 +18,9 @@ tags:
   - pocket-card
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md
-  - domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_pacu_shift_structure.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
   - domain-decision-making/decisioning_resource_constrained_solver.md
 ---
 

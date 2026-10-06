@@ -16,12 +16,12 @@ techniques:
   - DS-06
 difficulty: intermediate
 related_prompts:
-  - ../../domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
-  - ../../domain-healthcare-clinical/prompts/nursing_preceptor_fumble_postmortem.md
-  - prompts/pacu_preceptor_approach_guide.md
-  - prompts/pacu_preceptor_writing_orientee_evaluation.md
-  - prompts/pacu_competency_self_assessment.md
-  - prompts/pacu_preceptor_difficult_conversation_guide.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_fumble_postmortem.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_competency_self_assessment.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_difficult_conversation_guide.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - Benner, P. — From Novice to Expert (behavioral anchors for cueing levels)

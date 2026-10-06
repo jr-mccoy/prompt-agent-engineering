@@ -20,14 +20,14 @@ techniques:
   - DS-06
 difficulty: advanced
 related_prompts:
-  - prompts/pacu_orientation_first_day_packet.md
-  - prompts/pacu_orientation_first_week_plan.md
-  - prompts/pacu_orientee_weekly_learning_plan.md
-  - prompts/pacu_orientation_skill_acquisition_timeline.md
-  - prompts/pacu_background_specific_pathway_adapter.md
-  - prompts/pacu_orientation_surgical_mix_mapper.md
-  - prompts/pacu_orientation_simulation_calendar_designer.md
-  - prompts/pacu_orientee_evaluation_meta_prompt.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_first_day_packet.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_first_week_plan.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_background_specific_pathway_adapter.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_surgical_mix_mapper.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_simulation_calendar_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)

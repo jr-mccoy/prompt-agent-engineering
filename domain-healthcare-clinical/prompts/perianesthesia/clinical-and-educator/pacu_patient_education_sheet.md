@@ -16,8 +16,8 @@ techniques:
   - DS-06
 difficulty: beginner
 related_prompts:
-  - prompts/pacu_topic_primer.md
-  - prompts/pacu_handoff_script.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_handoff_script.md
 references:
   - Drain's PeriAnesthesia Nursing Practice (7th ed.) — discharge teaching
   - ASPAN Standards of Perianesthesia Nursing Practice — patient education

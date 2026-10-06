@@ -20,8 +20,8 @@ updated: "2026-10-06"
 related_prompts:
   - pacu_solo_monthly_growth_review.md
   - pacu_cert_weak_area_self_diagnostic.md
-  - pacu_indep_emergency_response_rehearsal_last.md
-  - pacu_indep_emergency_response_rehearsal_airway.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-2-independence/pacu_indep_emergency_response_rehearsal_last.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-2-independence/pacu_indep_emergency_response_rehearsal_airway.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_simulation_calendar_designer.md
 references:

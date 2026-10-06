@@ -16,9 +16,9 @@ tags:
   - case-presentation
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_goals_of_care_conversation_guide.md
-  - domain-healthcare-clinical/prompts/medicine_literature_synthesizer.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/communication/medicine_goals_of_care_conversation_guide.md
+  - domain-healthcare-clinical/prompts/education/medicine_literature_synthesizer.md
 ---
 
 # Oncology Case Framer for Tumor Board Presentation

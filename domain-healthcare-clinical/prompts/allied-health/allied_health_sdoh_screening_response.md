@@ -16,9 +16,9 @@ tags:
   - care-coordination
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md
-  - domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md
-  - domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md
+  - domain-healthcare-clinical/prompts/communication/medicine_care_coordination_transitions.md
+  - domain-healthcare-clinical/prompts/care-plans/medicine_chronic_disease_management_planner.md
+  - domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md
 ---
 
 # SDOH Screening Response Framework

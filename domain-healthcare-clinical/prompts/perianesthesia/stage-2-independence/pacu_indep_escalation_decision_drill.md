@@ -19,7 +19,7 @@ updated: "2026-10-06"
 related_prompts:
   - pacu_indep_deteriorating_patient_walkthrough.md
   - pacu_indep_two_patient_prioritization_stress_drill.md
-  - pacu_orient_hemodynamic_event_recognition_drill.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_hemodynamic_event_recognition_drill.md
 see_also_seed:
   - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
 see_also_toolkit:

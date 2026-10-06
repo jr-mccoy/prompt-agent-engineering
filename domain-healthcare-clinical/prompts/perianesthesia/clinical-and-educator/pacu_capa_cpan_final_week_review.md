@@ -18,9 +18,9 @@ techniques:
   - ED-02
 difficulty: beginner
 related_prompts:
-  - prompts/pacu_capa_cpan_blueprint_aligned_study_plan.md
-  - prompts/pacu_capa_cpan_weak_area_diagnostic.md
-  - prompts/pacu_capa_cpan_test_strategy_coach.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_blueprint_aligned_study_plan.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_weak_area_diagnostic.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_test_strategy_coach.md
 references:
   - ABPANC official exam policies (user verifies)
 ---

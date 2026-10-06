@@ -19,8 +19,8 @@ techniques:
   - ED-02
 difficulty: intermediate
 related_prompts:
-  - prompts/pacu_capa_cpan_blueprint_aligned_study_plan.md
-  - prompts/pacu_capa_cpan_practice_question_generator.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_blueprint_aligned_study_plan.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_practice_question_generator.md
 references:
   - ABPANC official exam blueprint (current edition — user pastes in domains)
   - ASPAN Core Curriculum for PeriAnesthesia Nursing Practice

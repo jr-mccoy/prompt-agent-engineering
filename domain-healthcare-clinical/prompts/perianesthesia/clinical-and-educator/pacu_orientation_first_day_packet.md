@@ -18,9 +18,9 @@ techniques:
   - DS-06
 difficulty: beginner
 related_prompts:
-  - prompts/pacu_orientation_curriculum_designer.md
-  - prompts/pacu_orientation_first_week_plan.md
-  - prompts/pacu_orientee_question_log_builder.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_first_week_plan.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_question_log_builder.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - ASPAN Core Curriculum for PeriAnesthesia Nursing Practice

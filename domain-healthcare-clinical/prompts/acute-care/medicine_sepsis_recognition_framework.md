@@ -18,9 +18,9 @@ tags:
   - early-warning
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_emergency_triage_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_antibiotic_stewardship_advisor.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_emergency_triage_decision_support.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
 ---
 
 # Sepsis Recognition & Early Management Framework

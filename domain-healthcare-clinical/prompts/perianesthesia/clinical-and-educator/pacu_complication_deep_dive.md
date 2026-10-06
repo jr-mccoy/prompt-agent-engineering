@@ -17,11 +17,11 @@ techniques:
   - DS-06
 difficulty: intermediate
 related_prompts:
-  - ../../domain-healthcare-clinical/prompts/medicine_adverse_event_analyzer.md
-  - ../../domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
-  - prompts/pacu_topic_primer.md
-  - prompts/pacu_red_flag_card.md
-  - prompts/pacu_simulation_scenario_builder.md
+  - domain-healthcare-clinical/prompts/quality/medicine_adverse_event_analyzer.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md
 references:
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)
   - ASPAN Standards of Perianesthesia Nursing Practice

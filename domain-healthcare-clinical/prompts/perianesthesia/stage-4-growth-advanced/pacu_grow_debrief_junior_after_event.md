@@ -19,7 +19,7 @@ updated: "2026-10-06"
 related_prompts:
   - pacu_grow_becoming_preceptor_self_prep.md
   - pacu_grow_teaching_recovery_concept.md
-  - pacu_solo_near_miss_good_catch_reflection.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-3-independent-practice/pacu_solo_near_miss_good_catch_reflection.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md

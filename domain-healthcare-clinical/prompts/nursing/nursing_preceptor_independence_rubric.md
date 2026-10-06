@@ -18,12 +18,11 @@ tags:
   - preceptor
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
-  - domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md
-  - domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md
-  - domain-healthcare-clinical/prompts/nursing_orientee_pattern_import_check.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_pacu_shift_structure.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_orientee_pattern_import_check.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_competency_self_assessment.md
-  - domain-engineering-workflows/done-definition/done_definition_gate_incident_postmortem.md
   - domain-personal-development/prompts/goals/goals_skill_breakdown_blueprint.md
 ---
 

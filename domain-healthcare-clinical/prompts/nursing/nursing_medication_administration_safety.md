@@ -15,9 +15,9 @@ tags:
   - patient-safety
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_medication_reconciliation.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
-  - domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_medication_reconciliation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md
 ---
 
 # Nursing Medication Administration Safety Check

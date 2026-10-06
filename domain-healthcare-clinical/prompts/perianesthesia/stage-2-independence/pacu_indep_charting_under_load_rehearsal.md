@@ -20,7 +20,7 @@ updated: "2026-10-06"
 related_prompts:
   - pacu_indep_run_bay_solo_simulation.md
   - pacu_indep_deteriorating_patient_walkthrough.md
-  - pacu_orient_aldrete_padss_scoring_practice.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_aldrete_padss_scoring_practice.md
 see_also_seed:
   - domain-healthcare-clinical/prompts/nursing/nursing_clinical_assessment_framework.md
 references:

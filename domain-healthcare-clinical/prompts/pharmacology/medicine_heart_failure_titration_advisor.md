@@ -16,9 +16,9 @@ tags:
   - titration
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md
-  - domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/care-plans/medicine_chronic_disease_management_planner.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md
 ---
 
 # Heart Failure GDMT Titration Advisor

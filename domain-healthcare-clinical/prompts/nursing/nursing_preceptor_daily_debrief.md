@@ -18,10 +18,8 @@ tags:
   - orientee-development
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
   - domain-productivity/validation/validation_adversarial_mini_check.md
-  - domain-productivity/deep-work/workflow_weekly_reflection.md
-  - domain-business-strategy/organization/organization_end_of_day_reconciliation.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md
 ---
 

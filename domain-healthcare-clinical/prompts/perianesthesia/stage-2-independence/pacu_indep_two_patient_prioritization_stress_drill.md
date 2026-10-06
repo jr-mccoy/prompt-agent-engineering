@@ -19,7 +19,7 @@ updated: "2026-10-06"
 related_prompts:
   - pacu_indep_run_bay_solo_simulation.md
   - pacu_indep_escalation_decision_drill.md
-  - pacu_orient_prioritization_rule_drill.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_prioritization_rule_drill.md
 see_also_seed:
   - domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md
 see_also_toolkit:

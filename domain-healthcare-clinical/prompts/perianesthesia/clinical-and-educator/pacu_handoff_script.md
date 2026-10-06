@@ -17,10 +17,10 @@ techniques:
   - DS-06
 difficulty: beginner
 related_prompts:
-  - ../../domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
-  - ../../domain-healthcare-clinical/prompts/medicine_handoff_communication.md
-  - prompts/pacu_red_flag_card.md
-  - prompts/pacu_preceptor_debrief.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_red_flag_card.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md
 references:
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)
   - ASPAN Standards of Perianesthesia Nursing Practice — transfer of care

@@ -16,9 +16,9 @@ tags:
   - patient-safety
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_handoff_communication.md
-  - domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
 ---
 
 # ICU Daily Goals Checklist

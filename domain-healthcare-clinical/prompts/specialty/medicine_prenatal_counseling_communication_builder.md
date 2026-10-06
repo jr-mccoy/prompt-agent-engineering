@@ -16,9 +16,9 @@ tags:
   - shared-decision-making
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_prenatal_risk_stratification.md
-  - domain-healthcare-clinical/prompts/medicine_informed_consent_communicator.md
-  - domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md
+  - domain-healthcare-clinical/prompts/specialty/medicine_prenatal_risk_stratification.md
+  - domain-healthcare-clinical/prompts/communication/medicine_informed_consent_communicator.md
+  - domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md
 ---
 
 # Prenatal Counseling Communication Builder

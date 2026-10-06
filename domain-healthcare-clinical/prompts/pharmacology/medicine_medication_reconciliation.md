@@ -16,9 +16,9 @@ tags:
   - pharmacy
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md
-  - domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md
-  - domain-healthcare-clinical/prompts/medicine_renal_hepatic_dose_adjustment.md
+  - domain-healthcare-clinical/prompts/communication/medicine_care_coordination_transitions.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_renal_hepatic_dose_adjustment.md
 ---
 
 # Medication Reconciliation Framework

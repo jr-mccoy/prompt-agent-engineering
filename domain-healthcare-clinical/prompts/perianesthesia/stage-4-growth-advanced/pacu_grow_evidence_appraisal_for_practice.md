@@ -18,7 +18,7 @@ updated: "2026-10-06"
 related_prompts:
   - pacu_grow_journal_club_participation.md
   - pacu_grow_qi_project_starter.md
-  - pacu_solo_personal_reference_builder.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-3-independent-practice/pacu_solo_personal_reference_builder.md
 see_also_toolkit: []
 references:
   - "ASPAN Standards of Perianesthesia Nursing Practice (current edition)"

@@ -20,12 +20,12 @@ techniques:
   - DS-06
 difficulty: intermediate
 related_prompts:
-  - prompts/pacu_topic_primer.md
-  - prompts/pacu_complication_deep_dive.md
-  - prompts/pacu_medication_profile.md
-  - prompts/pacu_patient_education_sheet.md
-  - prompts/pacu_emergence_agitation_deescalation.md
-  - prompts/pacu_simulation_scenario_builder.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_medication_profile.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_patient_education_sheet.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergence_agitation_deescalation.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md
 references:
   - Drain's PeriAnesthesia Nursing Practice (7th ed.) — geriatric chapters
   - ASPAN Standards of Perianesthesia Nursing Practice — geriatric population

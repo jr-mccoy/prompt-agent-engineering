@@ -16,9 +16,9 @@ tags:
   - communication
 updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_imaging_ordering_rationale.md
-  - domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_imaging_ordering_rationale.md
+  - domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
 ---
 
 # Incidental Imaging Findings Management Advisor

@@ -19,7 +19,7 @@ updated: "2026-10-06"
 related_prompts:
   - pacu_indep_confidence_calibration_selfquiz.md
   - pacu_indep_signoff_readiness_self_capstone.md
-  - pacu_orient_reflective_journal.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_reflective_journal.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md
 references:

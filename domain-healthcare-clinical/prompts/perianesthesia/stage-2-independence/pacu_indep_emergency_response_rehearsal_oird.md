@@ -19,7 +19,7 @@ updated: "2026-10-06"
 related_prompts:
   - pacu_indep_emergency_response_rehearsal_airway.md
   - pacu_indep_escalation_decision_drill.md
-  - pacu_orient_respiratory_event_recognition_drill.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_respiratory_event_recognition_drill.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_opioid_induced_respiratory_depression.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_drug_naloxone.md
