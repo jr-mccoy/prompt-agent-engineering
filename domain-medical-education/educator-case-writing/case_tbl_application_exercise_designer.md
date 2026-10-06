@@ -18,9 +18,9 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - ../meded_pbl_case_writer.md
-  - ../meded_nbme_style_mcq_writer.md
-  - ../meded_flipped_classroom_module_designer.md
+  - domain-medical-education/educator-case-writing/case_pbl_author.md
+  - domain-medical-education/educator-assessment-items/assess_nbme_style_mcq_writer.md
+  - domain-medical-education/educator-curriculum-design/curric_flipped_classroom_module_designer.md
 ---
 
 # Team-Based Learning Application Exercise Designer

@@ -25,9 +25,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_h_and_p_writing_practice.md
-  - ./learner_oral_presentation_practice.md
-  - ../discipline-specific/learner_pharmacy_therapeutics_soap_practice.md
+  - domain-medical-education/learner-clinical-rotation/study_h_and_p_writing_practice.md
+  - domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md
+  - domain-medical-education/profession-specific/pharmacy/pharmacy_therapeutics_soap_practice.md
 ---
 
 # SOAP Note Writing Practice for Health-Professions Learners

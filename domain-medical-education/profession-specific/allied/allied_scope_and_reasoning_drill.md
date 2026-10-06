@@ -25,9 +25,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ../clinical-skills/learner_soap_note_writing_practice.md
-  - ../clinical-skills/learner_history_taking_rehearsal.md
-  - ../clinical-prep/learner_pre_clinic_patient_prep.md
+  - domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md
+  - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
+  - domain-medical-education/learner-clinical-rotation/study_pre_clinic_patient_prep.md
 ---
 
 # Allied-Health Scope & Reasoning Drill for Allied-Health Learners

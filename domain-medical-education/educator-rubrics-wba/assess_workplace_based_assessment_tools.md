@@ -20,7 +20,7 @@ tags:
 updated: "2026-05-15"
 related_prompts:
   - domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md
-  - domain-medical-education/feedback-remediation/meded_milestone_narrative_writer.md
+  - domain-medical-education/educator-rubrics-wba/assess_milestone_narrative_writer.md
   - domain-medical-education/educator-remediation/remed_learner_feedback_composer.md
 ---
 

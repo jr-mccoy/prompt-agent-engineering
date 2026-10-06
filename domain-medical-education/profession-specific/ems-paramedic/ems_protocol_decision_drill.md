@@ -24,9 +24,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ../procedures-emergencies/learner_code_algorithm_rehearsal.md
-  - ../procedures-emergencies/learner_critical_event_recognition_drill.md
-  - ../clinical-prep/learner_handoff_practice.md
+  - domain-medical-education/learner-procedures/study_code_algorithm_rehearsal.md
+  - domain-medical-education/learner-procedures/study_critical_event_recognition_drill.md
+  - domain-medical-education/learner-clinical-rotation/study_handoff_practice.md
 ---
 
 # EMS Protocol Decision Drill for EMS Learners

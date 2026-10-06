@@ -20,7 +20,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_flipped_classroom_module_designer.md
   - domain-medical-education/educator-curriculum-design/curric_faculty_development_module_designer.md
-  - domain-medical-education/teaching-methods/meded_tbl_application_exercise_designer.md
+  - domain-medical-education/educator-case-writing/case_tbl_application_exercise_designer.md
 ---
 
 # Lecture Redesign Planner

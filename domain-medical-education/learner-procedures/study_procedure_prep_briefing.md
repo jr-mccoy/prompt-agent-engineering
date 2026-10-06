@@ -25,9 +25,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_simulation_pre_briefing.md
-  - ./learner_critical_event_recognition_drill.md
-  - ../clinical-skills/learner_physical_exam_checklist_generator.md
+  - domain-medical-education/learner-procedures/study_simulation_pre_briefing.md
+  - domain-medical-education/learner-procedures/study_critical_event_recognition_drill.md
+  - domain-medical-education/learner-osce-skills/osce_physical_exam_checklist_generator.md
 ---
 
 # Procedure Prep Briefing for Health-Professions Learners

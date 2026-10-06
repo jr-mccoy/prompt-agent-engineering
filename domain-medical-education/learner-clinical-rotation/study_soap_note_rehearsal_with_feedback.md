@@ -28,7 +28,7 @@ related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_hp_admission_note_rehearsal.md
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
   - domain-medical-education/learner-clinical-rotation/study_preround_prep_script.md
-  - domain-medical-education/learner-clinical-rotation/study_post_procedure_note_rehearsal.md
+  - domain-medical-education/learner-procedures/study_post_procedure_note_rehearsal.md
 ---
 
 ## Objective

@@ -26,9 +26,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_history_taking_rehearsal.md
-  - ./learner_physical_exam_checklist_generator.md
-  - ./learner_oral_presentation_practice.md
+  - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
+  - domain-medical-education/learner-osce-skills/osce_physical_exam_checklist_generator.md
+  - domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md
 ---
 
 # OSCE Station Self-Rehearsal for Health-Professions Learners

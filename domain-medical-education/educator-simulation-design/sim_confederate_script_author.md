@@ -25,7 +25,7 @@ updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md
   - domain-medical-education/educator-simulation-design/sim_multidisciplinary_team_scenario.md
-  - domain-medical-education/educator-osce-sp-design/osce_sp_scenario_author.md
+  - domain-medical-education/educator-case-writing/case_standardized_patient_author.md
 ---
 
 ## Objective

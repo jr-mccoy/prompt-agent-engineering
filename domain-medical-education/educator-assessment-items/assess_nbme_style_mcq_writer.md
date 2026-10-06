@@ -18,7 +18,7 @@ tags:
   - assessment
 updated: "2026-05-15"
 related_prompts:
-  - domain-medical-education/teaching-methods/meded_tbl_application_exercise_designer.md
+  - domain-medical-education/educator-case-writing/case_tbl_application_exercise_designer.md
   - domain-medical-education/educator-assessment-items/assess_oral_exam_case_designer.md
   - domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md
 ---

@@ -18,9 +18,9 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - domain-medical-education/teaching-methods/meded_pbl_case_writer.md
+  - domain-medical-education/educator-case-writing/case_pbl_author.md
   - domain-medical-education/educator-curriculum-design/curric_preceptor_teaching_script_writer.md
-  - domain-medical-education/teaching-methods/meded_debriefing_guide_designer.md
+  - domain-medical-education/educator-simulation-design/sim_debriefing_guide_designer.md
 ---
 
 # Small-Group Facilitation Guide for Clinical Educators

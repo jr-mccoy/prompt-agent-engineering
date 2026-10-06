@@ -26,8 +26,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_pathophysiology_chain_builder.md
-  - ./learner_pharmacology_mechanism_explainer.md
+  - domain-medical-education/learner-foundational-sciences/study_pathophysiology_chain_builder.md
+  - domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_explainer.md
 ---
 
 # Physiology Concept Clarifier for Health-Professions Learners

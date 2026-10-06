@@ -24,7 +24,6 @@ tags:
 updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md
-  - domain-healthcare-clinical/prompts/nursing/preceptor_orientee_feedback_session.md
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_judgment_ngn_drill.md
 ---
 

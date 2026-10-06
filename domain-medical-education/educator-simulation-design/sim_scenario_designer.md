@@ -18,9 +18,9 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - ../meded_debriefing_guide_designer.md
-  - ../meded_standardized_patient_scenario_writer.md
-  - ../meded_progressive_disclosure_case_designer.md
+  - domain-medical-education/educator-simulation-design/sim_debriefing_guide_designer.md
+  - domain-medical-education/educator-case-writing/case_standardized_patient_author.md
+  - domain-medical-education/educator-case-writing/case_progressive_disclosure_designer.md
 ---
 
 # Simulation Scenario Designer

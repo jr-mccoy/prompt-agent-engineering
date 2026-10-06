@@ -26,9 +26,9 @@ tags:
   - mental-rehearsal
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_code_algorithm_rehearsal.md
-  - ./learner_procedure_prep_briefing.md
-  - ./learner_critical_event_recognition_drill.md
+  - domain-medical-education/learner-procedures/study_code_algorithm_rehearsal.md
+  - domain-medical-education/learner-procedures/study_procedure_prep_briefing.md
+  - domain-medical-education/learner-procedures/study_critical_event_recognition_drill.md
 ---
 
 # Simulation Pre-Briefing for Health-Professions Learners

@@ -27,8 +27,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_physiology_concept_clarifier.md
-  - ../clinical-reasoning/learner_illness_script_builder.md
+  - domain-medical-education/learner-foundational-sciences/study_physiology_concept_clarifier.md
+  - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
 ---
 
 # Pathophysiology Chain Builder for Health-Professions Learners

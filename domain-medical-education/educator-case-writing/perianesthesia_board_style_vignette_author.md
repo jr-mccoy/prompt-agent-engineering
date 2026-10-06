@@ -52,8 +52,7 @@ related_prompts:
   - domain-medical-education/educator-case-writing/case_tbl_application_exercise_author.md
   - domain-medical-education/educator-case-writing/case_oral_exam_case_author.md
   - domain-medical-education/learner-boards/boards_nclex_rn_select_all_that_apply.md
-  - domain-medical-education/perianesthesia/perianesthesia_pacu_scenario_builder.md
-  - domain-medical-education/perianesthesia/perianesthesia_competency_assessment_blueprint.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md
 ---
 
 # Perianesthesia Board-Style Vignette Author

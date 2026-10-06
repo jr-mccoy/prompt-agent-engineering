@@ -22,9 +22,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ../clinical-skills/learner_soap_note_writing_practice.md
-  - ../clinical-skills/learner_history_taking_rehearsal.md
-  - ../exam-prep/learner_qbank_session_debriefer.md
+  - domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md
+  - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
+  - domain-medical-education/learner-boards/boards_qbank_session_debriefer.md
 ---
 
 # Nursing Care Plan Practice for Nursing Learners

@@ -18,9 +18,9 @@ tags:
   - medical-education
 updated: "2026-05-15"
 related_prompts:
-  - ../meded_pbl_case_writer.md
-  - ../meded_virtual_patient_case_builder.md
-  - ../meded_debriefing_guide_designer.md
+  - domain-medical-education/educator-case-writing/case_pbl_author.md
+  - domain-medical-education/educator-case-writing/case_virtual_patient_builder.md
+  - domain-medical-education/educator-simulation-design/sim_debriefing_guide_designer.md
 ---
 
 # Progressive Disclosure Clinical Case Designer

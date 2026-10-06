@@ -26,9 +26,9 @@ tags:
   - retrieval-practice
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_spaced_repetition_deck_generator.md
-  - ./learner_weekly_study_review.md
-  - ../exam-prep/learner_qbank_session_debriefer.md
+  - domain-medical-education/learner-study-systems/study_spaced_repetition_deck_generator.md
+  - domain-medical-education/learner-study-systems/study_weekly_review.md
+  - domain-medical-education/learner-boards/boards_qbank_session_debriefer.md
 ---
 
 # Study Plan Designer for Health-Professions Learners

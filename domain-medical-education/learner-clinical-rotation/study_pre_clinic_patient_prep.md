@@ -23,8 +23,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_pre_rounding_prep.md
-  - ../clinical-skills/learner_history_taking_rehearsal.md
+  - domain-medical-education/learner-clinical-rotation/study_pre_rounding_prep.md
+  - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
 ---
 
 # Pre-Clinic Patient Prep Scaffold for Health-Professions Learners

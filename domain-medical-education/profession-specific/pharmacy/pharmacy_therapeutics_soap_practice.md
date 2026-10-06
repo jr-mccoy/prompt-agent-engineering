@@ -23,9 +23,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ../foundational-sciences/learner_pharmacology_mechanism_explainer.md
-  - ../clinical-skills/learner_soap_note_writing_practice.md
-  - ../exam-prep/learner_board_style_question_review.md
+  - domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_explainer.md
+  - domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md
+  - domain-medical-education/learner-boards/boards_style_question_review.md
 ---
 
 # Pharmacy Therapeutics SOAP Practice for Pharmacy Learners

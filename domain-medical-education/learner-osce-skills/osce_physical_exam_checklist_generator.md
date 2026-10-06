@@ -24,8 +24,8 @@ tags:
   - checklist
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_osce_self_rehearsal.md
-  - ./learner_history_taking_rehearsal.md
+  - domain-medical-education/learner-osce-skills/osce_self_rehearsal.md
+  - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
 ---
 
 # Physical Exam Checklist Generator for Health-Professions Learners

@@ -20,7 +20,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-medical-education/educator-assessment-items/assess_nbme_style_mcq_writer.md
   - domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md
-  - domain-medical-education/feedback-remediation/meded_milestone_narrative_writer.md
+  - domain-medical-education/educator-rubrics-wba/assess_milestone_narrative_writer.md
 ---
 
 # Oral Exam Case Designer

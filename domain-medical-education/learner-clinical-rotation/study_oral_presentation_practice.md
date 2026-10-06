@@ -27,9 +27,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ../clinical-reasoning/learner_problem_representation_rehearsal.md
-  - ./learner_soap_note_writing_practice.md
-  - ./learner_h_and_p_writing_practice.md
+  - domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md
+  - domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md
+  - domain-medical-education/learner-clinical-rotation/study_h_and_p_writing_practice.md
 ---
 
 # Oral Presentation Practice for Health-Professions Learners

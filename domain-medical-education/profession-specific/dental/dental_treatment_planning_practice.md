@@ -23,9 +23,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ../clinical-skills/learner_oral_presentation_practice.md
-  - ../clinical-skills/learner_history_taking_rehearsal.md
-  - ../clinical-skills/learner_osce_self_rehearsal.md
+  - domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md
+  - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
+  - domain-medical-education/learner-osce-skills/osce_self_rehearsal.md
 ---
 
 # Dental Treatment Planning Practice for Dental Learners

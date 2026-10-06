@@ -109936,7 +109936,7 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "domain-medical-education/teaching-methods/meded_tbl_application_exercise_designer.md",
+        "domain-medical-education/educator-case-writing/case_tbl_application_exercise_designer.md",
         "domain-medical-education/educator-assessment-items/assess_oral_exam_case_designer.md",
         "domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md"
       ],
@@ -110000,7 +110000,7 @@
       "related_prompts": [
         "domain-medical-education/educator-assessment-items/assess_nbme_style_mcq_writer.md",
         "domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md",
-        "domain-medical-education/feedback-remediation/meded_milestone_narrative_writer.md"
+        "domain-medical-education/educator-rubrics-wba/assess_milestone_narrative_writer.md"
       ],
       "has_frontmatter": true
     },
@@ -110350,9 +110350,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../meded_progressive_disclosure_case_designer.md",
-        "../meded_small_group_facilitation_guide.md",
-        "../meded_tbl_application_exercise_designer.md"
+        "domain-medical-education/educator-case-writing/case_progressive_disclosure_designer.md",
+        "domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md",
+        "domain-medical-education/educator-case-writing/case_tbl_application_exercise_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -110413,9 +110413,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../meded_pbl_case_writer.md",
-        "../meded_virtual_patient_case_builder.md",
-        "../meded_debriefing_guide_designer.md"
+        "domain-medical-education/educator-case-writing/case_pbl_author.md",
+        "domain-medical-education/educator-case-writing/case_virtual_patient_builder.md",
+        "domain-medical-education/educator-simulation-design/sim_debriefing_guide_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -110444,9 +110444,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../meded_osce_station_designer.md",
-        "../meded_learner_feedback_composer.md",
-        "../meded_clinical_skills_checklist_designer.md"
+        "domain-medical-education/educator-simulation-design/sim_osce_station_designer.md",
+        "domain-medical-education/educator-remediation/remed_learner_feedback_composer.md",
+        "domain-medical-education/educator-rubrics-wba/assess_clinical_skills_checklist_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -110506,9 +110506,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../meded_pbl_case_writer.md",
-        "../meded_nbme_style_mcq_writer.md",
-        "../meded_flipped_classroom_module_designer.md"
+        "domain-medical-education/educator-case-writing/case_pbl_author.md",
+        "domain-medical-education/educator-assessment-items/assess_nbme_style_mcq_writer.md",
+        "domain-medical-education/educator-curriculum-design/curric_flipped_classroom_module_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -110537,9 +110537,9 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../meded_progressive_disclosure_case_designer.md",
-        "../meded_simulation_scenario_designer.md",
-        "../meded_pbl_case_writer.md"
+        "domain-medical-education/educator-case-writing/case_progressive_disclosure_designer.md",
+        "domain-medical-education/educator-simulation-design/sim_scenario_designer.md",
+        "domain-medical-education/educator-case-writing/case_pbl_author.md"
       ],
       "has_frontmatter": true
     },
@@ -110606,8 +110606,8 @@
         "curric_residency_curriculum_mapper.md",
         "curric_epa_implementation_designer.md",
         "curric_program_competency_framework_acgme.md",
-        "../../../../domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md",
-        "../../../../domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md"
+        "domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md",
+        "domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md"
       ],
       "has_frontmatter": true
     },
@@ -110704,7 +110704,7 @@
         "curric_cbme_implementation_program.md",
         "curric_residency_curriculum_mapper.md",
         "curric_program_competency_framework_acgme.md",
-        "../../../../domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md"
+        "domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md"
       ],
       "has_frontmatter": true
     },
@@ -110765,7 +110765,7 @@
       "updated": "2026-05-15",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_lecture_redesign_planner.md",
-        "domain-medical-education/teaching-methods/meded_tbl_application_exercise_designer.md",
+        "domain-medical-education/educator-case-writing/case_tbl_application_exercise_designer.md",
         "domain-medical-education/educator-curriculum-design/curric_faculty_development_module_designer.md"
       ],
       "has_frontmatter": true
@@ -110796,8 +110796,8 @@
       "updated": "2026-05-15",
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md",
-        "domain-medical-education/teaching-methods/meded_pbl_case_writer.md",
-        "domain-medical-education/education/medicine_literature_synthesizer.md"
+        "domain-medical-education/educator-case-writing/case_pbl_author.md",
+        "domain-healthcare-clinical/prompts/education/medicine_literature_synthesizer.md"
       ],
       "has_frontmatter": true
     },
@@ -110892,7 +110892,7 @@
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_flipped_classroom_module_designer.md",
         "domain-medical-education/educator-curriculum-design/curric_faculty_development_module_designer.md",
-        "domain-medical-education/teaching-methods/meded_tbl_application_exercise_designer.md"
+        "domain-medical-education/educator-case-writing/case_tbl_application_exercise_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -110954,7 +110954,7 @@
       "related_prompts": [
         "domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md",
         "domain-medical-education/educator-remediation/remed_learner_feedback_composer.md",
-        "domain-medical-education/meded_faculty_development_module_designer.md"
+        "domain-medical-education/educator-curriculum-design/curric_faculty_development_module_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -110987,7 +110987,7 @@
         "curric_cbme_implementation_program.md",
         "curric_residency_curriculum_mapper.md",
         "curric_epa_implementation_designer.md",
-        "../../../../domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md"
+        "domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -111021,7 +111021,7 @@
         "curric_cbme_implementation_program.md",
         "curric_epa_implementation_designer.md",
         "curric_program_competency_framework_acgme.md",
-        "../../../../domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md"
+        "domain-education-teaching/program/curriculum-design/program_curriculum_map_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -111114,9 +111114,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "domain-medical-education/teaching-methods/meded_pbl_case_writer.md",
+        "domain-medical-education/educator-case-writing/case_pbl_author.md",
         "domain-medical-education/educator-curriculum-design/curric_preceptor_teaching_script_writer.md",
-        "domain-medical-education/teaching-methods/meded_debriefing_guide_designer.md"
+        "domain-medical-education/educator-simulation-design/sim_debriefing_guide_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -111585,8 +111585,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "domain-medical-education/assessment-tools/meded_osce_station_designer.md",
-        "domain-medical-education/feedback-remediation/meded_milestone_narrative_writer.md",
+        "domain-medical-education/educator-simulation-design/sim_osce_station_designer.md",
+        "domain-medical-education/educator-rubrics-wba/assess_milestone_narrative_writer.md",
         "domain-medical-education/educator-rubrics-wba/assess_workplace_based_assessment_tools.md"
       ],
       "has_frontmatter": true
@@ -111775,7 +111775,7 @@
       "updated": "2026-05-15",
       "related_prompts": [
         "domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md",
-        "domain-medical-education/feedback-remediation/meded_milestone_narrative_writer.md",
+        "domain-medical-education/educator-rubrics-wba/assess_milestone_narrative_writer.md",
         "domain-medical-education/educator-remediation/remed_learner_feedback_composer.md"
       ],
       "has_frontmatter": true
@@ -111838,7 +111838,7 @@
       "related_prompts": [
         "domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md",
         "domain-medical-education/educator-simulation-design/sim_multidisciplinary_team_scenario.md",
-        "domain-medical-education/educator-osce-sp-design/osce_sp_scenario_author.md"
+        "domain-medical-education/educator-case-writing/case_standardized_patient_author.md"
       ],
       "has_frontmatter": true
     },
@@ -111994,9 +111994,9 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../meded_standardized_patient_scenario_writer.md",
-        "../meded_clinical_skills_checklist_designer.md",
-        "../meded_assessment_rubric_builder.md"
+        "domain-medical-education/educator-case-writing/case_standardized_patient_author.md",
+        "domain-medical-education/educator-rubrics-wba/assess_clinical_skills_checklist_designer.md",
+        "domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -112150,9 +112150,9 @@
       "difficulty": "advanced",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../meded_debriefing_guide_designer.md",
-        "../meded_standardized_patient_scenario_writer.md",
-        "../meded_progressive_disclosure_case_designer.md"
+        "domain-medical-education/educator-simulation-design/sim_debriefing_guide_designer.md",
+        "domain-medical-education/educator-case-writing/case_standardized_patient_author.md",
+        "domain-medical-education/educator-case-writing/case_progressive_disclosure_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -112214,8 +112214,8 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_distractor_analysis_drill.md",
-        "./learner_qbank_session_debriefer.md"
+        "domain-medical-education/learner-boards/boards_distractor_analysis_drill.md",
+        "domain-medical-education/learner-boards/boards_qbank_session_debriefer.md"
       ],
       "has_frontmatter": true
     },
@@ -112304,8 +112304,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_board_style_question_review.md",
-        "../clinical-reasoning/learner_differential_diagnosis_drill.md"
+        "domain-medical-education/learner-boards/boards_style_question_review.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md"
       ],
       "has_frontmatter": true
     },
@@ -112395,8 +112395,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_board_style_question_review.md",
-        "../study-planning/learner_spaced_repetition_deck_generator.md"
+        "domain-medical-education/learner-boards/boards_style_question_review.md",
+        "domain-medical-education/learner-study-systems/study_spaced_repetition_deck_generator.md"
       ],
       "has_frontmatter": true
     },
@@ -112584,9 +112584,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_board_style_question_review.md",
-        "./learner_distractor_analysis_drill.md",
-        "../study-planning/learner_study_plan_designer.md"
+        "domain-medical-education/learner-boards/boards_style_question_review.md",
+        "domain-medical-education/learner-boards/boards_distractor_analysis_drill.md",
+        "domain-medical-education/learner-study-systems/study_plan_designer.md"
       ],
       "has_frontmatter": true
     },
@@ -112806,9 +112806,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_differential_diagnosis_drill.md",
-        "./learner_problem_representation_rehearsal.md",
-        "./learner_illness_script_builder.md"
+        "domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -112929,9 +112929,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_illness_script_builder.md",
-        "./learner_clinical_reasoning_schema_practice.md",
-        "./learner_hypothesis_driven_workup_drill.md"
+        "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_schema_practice.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_hypothesis_driven_workup_drill.md"
       ],
       "has_frontmatter": true
     },
@@ -113021,9 +113021,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_differential_diagnosis_drill.md",
-        "./learner_clinical_reasoning_schema_practice.md",
-        "./learner_clinical_case_walkthrough.md"
+        "domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_schema_practice.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_clinical_case_walkthrough.md"
       ],
       "has_frontmatter": true
     },
@@ -113209,9 +113209,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_differential_diagnosis_drill.md",
-        "./learner_hypothesis_driven_workup_drill.md",
-        "../clinical-skills/learner_osce_self_rehearsal.md"
+        "domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_hypothesis_driven_workup_drill.md",
+        "domain-medical-education/learner-osce-skills/osce_self_rehearsal.md"
       ],
       "has_frontmatter": true
     },
@@ -113269,9 +113269,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_soap_note_writing_practice.md",
-        "./learner_oral_presentation_practice.md",
-        "../clinical-reasoning/learner_problem_representation_rehearsal.md"
+        "domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md",
+        "domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md"
       ],
       "has_frontmatter": true
     },
@@ -113364,8 +113364,8 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../clinical-skills/learner_oral_presentation_practice.md",
-        "./learner_pre_rounding_prep.md"
+        "domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md",
+        "domain-medical-education/learner-clinical-rotation/study_pre_rounding_prep.md"
       ],
       "has_frontmatter": true
     },
@@ -113550,9 +113550,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../clinical-reasoning/learner_problem_representation_rehearsal.md",
-        "./learner_soap_note_writing_practice.md",
-        "./learner_h_and_p_writing_practice.md"
+        "domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md",
+        "domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md",
+        "domain-medical-education/learner-clinical-rotation/study_h_and_p_writing_practice.md"
       ],
       "has_frontmatter": true
     },
@@ -113610,8 +113610,8 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_pre_rounding_prep.md",
-        "../clinical-skills/learner_history_taking_rehearsal.md"
+        "domain-medical-education/learner-clinical-rotation/study_pre_rounding_prep.md",
+        "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md"
       ],
       "has_frontmatter": true
     },
@@ -113637,9 +113637,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_pre_clinic_patient_prep.md",
-        "./learner_handoff_practice.md",
-        "../clinical-skills/learner_oral_presentation_practice.md"
+        "domain-medical-education/learner-clinical-rotation/study_pre_clinic_patient_prep.md",
+        "domain-medical-education/learner-clinical-rotation/study_handoff_practice.md",
+        "domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md"
       ],
       "has_frontmatter": true
     },
@@ -113703,7 +113703,7 @@
         "domain-medical-education/learner-clinical-rotation/study_hp_admission_note_rehearsal.md",
         "domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md",
         "domain-medical-education/learner-clinical-rotation/study_preround_prep_script.md",
-        "domain-medical-education/learner-clinical-rotation/study_post_procedure_note_rehearsal.md"
+        "domain-medical-education/learner-procedures/study_post_procedure_note_rehearsal.md"
       ],
       "has_frontmatter": true
     },
@@ -113729,9 +113729,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_h_and_p_writing_practice.md",
-        "./learner_oral_presentation_practice.md",
-        "../discipline-specific/learner_pharmacy_therapeutics_soap_practice.md"
+        "domain-medical-education/learner-clinical-rotation/study_h_and_p_writing_practice.md",
+        "domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md",
+        "domain-medical-education/profession-specific/pharmacy/pharmacy_therapeutics_soap_practice.md"
       ],
       "has_frontmatter": true
     },
@@ -113790,8 +113790,8 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_physiology_concept_clarifier.md",
-        "../study-planning/learner_spaced_repetition_deck_generator.md"
+        "domain-medical-education/learner-foundational-sciences/study_physiology_concept_clarifier.md",
+        "domain-medical-education/learner-study-systems/study_spaced_repetition_deck_generator.md"
       ],
       "has_frontmatter": true
     },
@@ -114034,8 +114034,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_microbiology_bug_drill.md",
-        "./learner_physiology_concept_clarifier.md"
+        "domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drill.md",
+        "domain-medical-education/learner-foundational-sciences/study_physiology_concept_clarifier.md"
       ],
       "has_frontmatter": true
     },
@@ -114063,8 +114063,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_immunology_concept_clarifier.md",
-        "./learner_pharmacology_mechanism_explainer.md"
+        "domain-medical-education/learner-foundational-sciences/study_immunology_concept_clarifier.md",
+        "domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_explainer.md"
       ],
       "has_frontmatter": true
     },
@@ -114182,8 +114182,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_physiology_concept_clarifier.md",
-        "../clinical-reasoning/learner_illness_script_builder.md"
+        "domain-medical-education/learner-foundational-sciences/study_physiology_concept_clarifier.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -114270,9 +114270,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_pathophysiology_chain_builder.md",
-        "./learner_microbiology_bug_drill.md",
-        "../discipline-specific/learner_pharmacy_therapeutics_soap_practice.md"
+        "domain-medical-education/learner-foundational-sciences/study_pathophysiology_chain_builder.md",
+        "domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drill.md",
+        "domain-medical-education/profession-specific/pharmacy/pharmacy_therapeutics_soap_practice.md"
       ],
       "has_frontmatter": true
     },
@@ -114330,8 +114330,8 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_pathophysiology_chain_builder.md",
-        "./learner_pharmacology_mechanism_explainer.md"
+        "domain-medical-education/learner-foundational-sciences/study_pathophysiology_chain_builder.md",
+        "domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_explainer.md"
       ],
       "has_frontmatter": true
     },
@@ -114674,9 +114674,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_history_taking_rehearsal.md",
-        "./learner_physical_exam_checklist_generator.md",
-        "./learner_oral_presentation_practice.md"
+        "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md",
+        "domain-medical-education/learner-osce-skills/osce_physical_exam_checklist_generator.md",
+        "domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md"
       ],
       "has_frontmatter": true
     },
@@ -114735,8 +114735,8 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_osce_self_rehearsal.md",
-        "./learner_history_taking_rehearsal.md"
+        "domain-medical-education/learner-osce-skills/osce_self_rehearsal.md",
+        "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md"
       ],
       "has_frontmatter": true
     },
@@ -114956,9 +114956,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_critical_event_recognition_drill.md",
-        "./learner_simulation_pre_briefing.md",
-        "../clinical-skills/learner_osce_self_rehearsal.md"
+        "domain-medical-education/learner-procedures/study_critical_event_recognition_drill.md",
+        "domain-medical-education/learner-procedures/study_simulation_pre_briefing.md",
+        "domain-medical-education/learner-osce-skills/osce_self_rehearsal.md"
       ],
       "has_frontmatter": true
     },
@@ -115017,8 +115017,8 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_code_algorithm_rehearsal.md",
-        "../clinical-reasoning/learner_differential_diagnosis_drill.md"
+        "domain-medical-education/learner-procedures/study_code_algorithm_rehearsal.md",
+        "domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md"
       ],
       "has_frontmatter": true
     },
@@ -115173,9 +115173,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_simulation_pre_briefing.md",
-        "./learner_critical_event_recognition_drill.md",
-        "../clinical-skills/learner_physical_exam_checklist_generator.md"
+        "domain-medical-education/learner-procedures/study_simulation_pre_briefing.md",
+        "domain-medical-education/learner-procedures/study_critical_event_recognition_drill.md",
+        "domain-medical-education/learner-osce-skills/osce_physical_exam_checklist_generator.md"
       ],
       "has_frontmatter": true
     },
@@ -115234,9 +115234,9 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_code_algorithm_rehearsal.md",
-        "./learner_procedure_prep_briefing.md",
-        "./learner_critical_event_recognition_drill.md"
+        "domain-medical-education/learner-procedures/study_code_algorithm_rehearsal.md",
+        "domain-medical-education/learner-procedures/study_procedure_prep_briefing.md",
+        "domain-medical-education/learner-procedures/study_critical_event_recognition_drill.md"
       ],
       "has_frontmatter": true
     },
@@ -115523,8 +115523,8 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_study_plan_designer.md",
-        "../exam-prep/learner_high_yield_topic_compressor.md"
+        "domain-medical-education/learner-study-systems/study_plan_designer.md",
+        "domain-medical-education/learner-boards/boards_high_yield_topic_compressor.md"
       ],
       "has_frontmatter": true
     },
@@ -115585,9 +115585,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_spaced_repetition_deck_generator.md",
-        "./learner_weekly_study_review.md",
-        "../exam-prep/learner_qbank_session_debriefer.md"
+        "domain-medical-education/learner-study-systems/study_spaced_repetition_deck_generator.md",
+        "domain-medical-education/learner-study-systems/study_weekly_review.md",
+        "domain-medical-education/learner-boards/boards_qbank_session_debriefer.md"
       ],
       "has_frontmatter": true
     },
@@ -115679,8 +115679,8 @@
       "difficulty": "beginner",
       "updated": "2026-05-15",
       "related_prompts": [
-        "./learner_study_plan_designer.md",
-        "../exam-prep/learner_qbank_session_debriefer.md"
+        "domain-medical-education/learner-study-systems/study_plan_designer.md",
+        "domain-medical-education/learner-boards/boards_qbank_session_debriefer.md"
       ],
       "has_frontmatter": true
     },
@@ -115720,8 +115720,7 @@
         "domain-medical-education/educator-case-writing/case_tbl_application_exercise_author.md",
         "domain-medical-education/educator-case-writing/case_oral_exam_case_author.md",
         "domain-medical-education/learner-boards/boards_nclex_rn_select_all_that_apply.md",
-        "domain-medical-education/perianesthesia/perianesthesia_pacu_scenario_builder.md",
-        "domain-medical-education/perianesthesia/perianesthesia_competency_assessment_blueprint.md"
+        "domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md"
       ],
       "has_frontmatter": true
     },
@@ -115753,9 +115752,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../clinical-skills/learner_soap_note_writing_practice.md",
-        "../clinical-skills/learner_history_taking_rehearsal.md",
-        "../clinical-prep/learner_pre_clinic_patient_prep.md"
+        "domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md",
+        "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md",
+        "domain-medical-education/learner-clinical-rotation/study_pre_clinic_patient_prep.md"
       ],
       "has_frontmatter": true
     },
@@ -115880,9 +115879,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../clinical-skills/learner_oral_presentation_practice.md",
-        "../clinical-skills/learner_history_taking_rehearsal.md",
-        "../clinical-skills/learner_osce_self_rehearsal.md"
+        "domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md",
+        "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md",
+        "domain-medical-education/learner-osce-skills/osce_self_rehearsal.md"
       ],
       "has_frontmatter": true
     },
@@ -115977,9 +115976,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../procedures-emergencies/learner_code_algorithm_rehearsal.md",
-        "../procedures-emergencies/learner_critical_event_recognition_drill.md",
-        "../clinical-prep/learner_handoff_practice.md"
+        "domain-medical-education/learner-procedures/study_code_algorithm_rehearsal.md",
+        "domain-medical-education/learner-procedures/study_critical_event_recognition_drill.md",
+        "domain-medical-education/learner-clinical-rotation/study_handoff_practice.md"
       ],
       "has_frontmatter": true
     },
@@ -116104,7 +116103,6 @@
       "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md",
-        "domain-healthcare-clinical/prompts/nursing/preceptor_orientee_feedback_session.md",
         "domain-medical-education/profession-specific/nursing/prof_rn_clinical_judgment_ngn_drill.md"
       ],
       "has_frontmatter": true
@@ -116134,9 +116132,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../clinical-skills/learner_soap_note_writing_practice.md",
-        "../clinical-skills/learner_history_taking_rehearsal.md",
-        "../exam-prep/learner_qbank_session_debriefer.md"
+        "domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md",
+        "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md",
+        "domain-medical-education/learner-boards/boards_qbank_session_debriefer.md"
       ],
       "has_frontmatter": true
     },
@@ -116385,9 +116383,9 @@
       "difficulty": "intermediate",
       "updated": "2026-05-15",
       "related_prompts": [
-        "../foundational-sciences/learner_pharmacology_mechanism_explainer.md",
-        "../clinical-skills/learner_soap_note_writing_practice.md",
-        "../exam-prep/learner_board_style_question_review.md"
+        "domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_explainer.md",
+        "domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md",
+        "domain-medical-education/learner-boards/boards_style_question_review.md"
       ],
       "has_frontmatter": true
     },

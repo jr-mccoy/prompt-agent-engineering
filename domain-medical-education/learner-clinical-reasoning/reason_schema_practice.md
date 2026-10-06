@@ -27,9 +27,9 @@ tags:
   - cognitive-organization
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_differential_diagnosis_drill.md
-  - ./learner_problem_representation_rehearsal.md
-  - ./learner_illness_script_builder.md
+  - domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md
+  - domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md
+  - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
 ---
 
 # Clinical Reasoning Schema Practice for Health-Professions Learners

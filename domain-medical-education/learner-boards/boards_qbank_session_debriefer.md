@@ -27,9 +27,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_board_style_question_review.md
-  - ./learner_distractor_analysis_drill.md
-  - ../study-planning/learner_study_plan_designer.md
+  - domain-medical-education/learner-boards/boards_style_question_review.md
+  - domain-medical-education/learner-boards/boards_distractor_analysis_drill.md
+  - domain-medical-education/learner-study-systems/study_plan_designer.md
 ---
 
 # Qbank Session Debriefer for Health-Professions Learners

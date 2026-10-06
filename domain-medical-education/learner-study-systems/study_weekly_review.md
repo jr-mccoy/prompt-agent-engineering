@@ -25,8 +25,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_study_plan_designer.md
-  - ../exam-prep/learner_qbank_session_debriefer.md
+  - domain-medical-education/learner-study-systems/study_plan_designer.md
+  - domain-medical-education/learner-boards/boards_qbank_session_debriefer.md
 ---
 
 # Weekly Study Review for Health-Professions Learners

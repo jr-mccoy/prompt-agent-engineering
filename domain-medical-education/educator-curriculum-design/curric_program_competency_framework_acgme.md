@@ -22,7 +22,7 @@ related_prompts:
   - curric_cbme_implementation_program.md
   - curric_residency_curriculum_mapper.md
   - curric_epa_implementation_designer.md
-  - ../../../../domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
+  - domain-education-teaching/program/curriculum-design/program_competency_framework_designer.md
 ---
 
 # Program Competency Framework (ACGME Six Core Competencies)
