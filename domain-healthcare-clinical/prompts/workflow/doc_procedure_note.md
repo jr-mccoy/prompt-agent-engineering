@@ -103,7 +103,7 @@ CONFIRMATION & POST-PROCEDURE:
 
 ## Worked Example
 
-**Input:** Right internal jugular central venous catheter placement. Indication: need for vasopressors in septic shock, poor peripheral access. Consent: emergent, implied (patient obtunded), attending aware. Operator resident, supervised by ICU attending. Local lidocaine. Ultrasound-guided, single attempt, triple-lumen catheter, good venous blood return, wire visualized in vein. Sterile barrier precautions. No complications. Post-line CXR ordered.
+**Input:** Right internal jugular central venous catheter placement. Indication: need for vasopressors in septic shock, poor peripheral access. Consent: emergent, implied (patient obtunded), attending aware. Operator resident, supervised by ICU attending. Time-out performed (patient, procedure, right IJ site). Local 1% lidocaine. Full sterile barrier precautions (cap, mask, sterile gown and gloves, full-body drape); chlorhexidine prep, allowed to dry. Ultrasound-guided: right IJ patent, compressible, lateral to carotid. Single attempt, dark non-pulsatile venous blood return, wire visualized in vein, wire removed intact; triple-lumen catheter; all ports aspirated and flushed. Catheter secured, sterile dressing; depth at skin not recorded. EBL minimal. No complications — no arterial puncture, no air aspiration. Hemodynamics unchanged during procedure. Post-line CXR ordered.
 
 **Output:**
 
@@ -111,12 +111,12 @@ CONFIRMATION & POST-PROCEDURE:
 PROCEDURE: Right internal jugular central venous catheter (triple-lumen) placement.
 INDICATION: Septic shock requiring central access for vasopressor administration; inadequate peripheral access.
 CONSENT: Emergent procedure; patient obtunded — implied consent. Attending of record aware and supervising.
-OPERATOR: Resident / SUPERVISING ATTENDING: ICU attending (present at bedside).
+OPERATOR: Resident / SUPERVISING ATTENDING: ICU attending (supervising; physical presence not documented).
 ANESTHESIA/SEDATION: Local 1% lidocaine at the insertion site.
 TIME-OUT: Performed — patient identity, procedure, and site (right IJ) verified prior to start.
 
 TECHNIQUE:
-Full sterile barrier precautions were used (cap, mask, sterile gown and gloves, full-body drape). The right neck was prepped with chlorhexidine and allowed to dry. Under real-time ultrasound guidance, the right internal jugular vein was identified, patent, and compressible, lateral to the carotid artery. The vein was accessed on the first attempt with the introducer needle, with return of non-pulsatile dark venous blood. The guidewire was advanced with the wire visualized within the vein by ultrasound. The needle was removed, the tract dilated, and a triple-lumen catheter advanced over the wire; the wire was removed in its entirety. All ports aspirated blood and flushed without resistance. The catheter was secured at the appropriate depth and a sterile dressing applied.
+Full sterile barrier precautions were used (cap, mask, sterile gown and gloves, full-body drape). The right neck was prepped with chlorhexidine and allowed to dry. Under real-time ultrasound guidance, the right internal jugular vein was identified, patent, and compressible, lateral to the carotid artery. The vein was accessed on the first attempt with the introducer needle, with return of non-pulsatile dark venous blood. The guidewire was advanced with the wire visualized within the vein by ultrasound. The needle was removed, the tract dilated, and a triple-lumen catheter advanced over the wire; the wire was removed in its entirety. All ports aspirated blood and flushed without resistance. The catheter was secured (depth at skin not recorded) and a sterile dressing applied.
 
 SPECIMENS: None.
 ESTIMATED BLOOD LOSS: Minimal.

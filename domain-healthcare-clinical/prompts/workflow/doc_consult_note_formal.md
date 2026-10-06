@@ -105,7 +105,7 @@ FOLLOW-UP / OWNERSHIP:
 
 ## Worked Example
 
-**Input:** Cardiology consulted by Medicine. 72 y/o M admitted for pneumonia, found to have new-onset atrial fibrillation with RVR (HR 130s) on telemetry, now 110s after initial metoprolol. Question: rate vs. rhythm strategy and anticoagulation. History: palpitations x2 days, no prior AFib, HTN, diabetes, prior TIA 3 years ago. No prior cardiac history, no chest pain. Exam: irregularly irregular, no murmur, no heart failure signs. ECG: AFib, no pre-excitation, no ischemia. Echo (today): EF 55%, mild LA enlargement, no valvular disease. CHA2DS2-VASc: HTN(1), DM(1), age 65-74(1), prior TIA(2) = 5.
+**Input:** Cardiology consulted by Medicine. 72 y/o M admitted for pneumonia, found to have new-onset atrial fibrillation with RVR (HR 130s) on telemetry, now 110s after initial metoprolol. Question: rate vs. rhythm strategy and anticoagulation. History: palpitations x2 days, no prior AFib, HTN, diabetes, prior TIA 3 years ago. No prior cardiac history, no chest pain, no syncope, no dyspnea beyond his pneumonia. Allergies: NKDA. Not on any antiplatelet or anticoagulant. Exam: irregularly irregular, no murmur, no S3, JVP not elevated, no peripheral edema; lungs with crackles consistent with his pneumonia. No lab values supplied with the consult request. ECG: AFib, no pre-excitation, no ischemia. Echo (today): EF 55%, mild LA enlargement, no valvular disease. CHA2DS2-VASc: HTN(1), DM(1), age 65-74(1), prior TIA(2) = 5.
 
 **Output:**
 
@@ -114,22 +114,22 @@ CONSULTATION NOTE — Cardiology
 REASON FOR CONSULTATION: Consulted by Medicine for new-onset atrial fibrillation with rapid ventricular response in the setting of pneumonia — rate-vs-rhythm strategy and anticoagulation recommendations.
 
 FOCUSED HISTORY:
-72 y/o M admitted with community-acquired pneumonia, now with new-onset atrial fibrillation. Reports 2 days of palpitations, no prior documented AFib. No chest pain, dyspnea beyond his pneumonia, syncope, or prior cardiac history. PMH notable for hypertension, type 2 diabetes, and a TIA 3 years ago (relevant to thromboembolic risk). The AFib is most likely precipitated by the acute infection/inflammatory state.
+72 y/o M admitted with community-acquired pneumonia, now with new-onset atrial fibrillation. Reports 2 days of palpitations, no prior documented AFib. No chest pain, dyspnea beyond his pneumonia, syncope, or prior cardiac history. PMH notable for hypertension, type 2 diabetes, and a TIA 3 years ago (relevant to thromboembolic risk). NKDA; no current antiplatelet or anticoagulant. The AFib is most likely precipitated by the acute infection/inflammatory state.
 
 FOCUSED EXAM:
 Irregularly irregular rhythm, rate ~110 after initial beta-blockade. No murmurs, no S3, JVP not elevated, lungs with pneumonia findings, no peripheral edema — no signs of decompensated heart failure.
 
 DATA REVIEWED:
 - ECG: Atrial fibrillation, ventricular rate ~110s, no pre-excitation/delta wave, no acute ischemic changes.
-- Echocardiogram (today): EF 55% (preserved), mild left atrial enlargement, no significant valvular disease, no thrombus reported.
-- Labs: electrolytes, thyroid function (recommend TSH if not done), within acceptable range.
+- Echocardiogram (today): EF 55% (preserved), mild left atrial enlargement, no significant valvular disease.
+- Labs: no values supplied for review — electrolytes, Mg, creatinine, weight and TSH not available (see recommendations 2–4).
 
 ASSESSMENT (Cardiology):
 New-onset atrial fibrillation, most likely secondary to the acute illness (pneumonia) — a common reversible precipitant. Hemodynamically stable, no pre-excitation, preserved EF, no decompensated heart failure. For a stable patient with likely illness-triggered AFib, a rate-control strategy is preferred initially; rhythm control is not urgently indicated and many patients convert as the acute illness resolves. Thromboembolic risk is high: CHA2DS2-VASc = 5 (HTN 1, DM 1, age 65–74 1, prior TIA 2) — anticoagulation is clearly indicated regardless of rate/rhythm strategy.
 
 RECOMMENDATIONS:
 1. Rate control: metoprolol tartrate 25 mg PO BID, titrate to a resting HR <110; transition to metoprolol succinate once stable. Avoid AV-nodal blockade pitfalls — no contraindication here (preserved EF, no pre-excitation).
-2. Anticoagulation: start apixaban 5 mg PO BID (CHA2DS2-VASc 5; high stroke risk, prior TIA). No mechanical valve or severe mitral stenosis, so a DOAC is appropriate over warfarin. Confirm renal function and weight for dosing.
+2. Anticoagulation: start apixaban PO BID, dose per label dose-reduction criteria `[VERIFY: weight and serum creatinine needed — not supplied; age 72]` (CHA2DS2-VASc 5; high stroke risk, prior TIA). No mechanical valve or severe mitral stenosis, so a DOAC is appropriate over warfarin.
 3. Treat the precipitant: full treatment of pneumonia; correct hypoxia, electrolytes (keep K >4, Mg >2).
 4. Obtain TSH to exclude thyrotoxic contribution if not already done.
 5. No urgent cardioversion indicated (stable, AFib >48h/unknown duration, anticoagulation just starting). If rhythm control is later pursued, anticoagulate ≥3 weeks first or perform TEE-guided cardioversion.

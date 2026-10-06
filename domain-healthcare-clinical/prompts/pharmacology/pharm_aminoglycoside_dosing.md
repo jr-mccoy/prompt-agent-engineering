@@ -79,7 +79,7 @@ Senior infectious disease pharmacist / physician writing the aminoglycoside orde
    - **Extended-interval amikacin:** 15–20 mg/kg AdjBW IV q24h (higher than gent/tob because amikacin MICs are higher).
    - **Traditional gentamicin / tobramycin:**
      - 1.5–2 mg/kg IV q8h with normal renal function. Adjust interval q12h (CrCl 40–60), q24h (CrCl <40).
-   - **Enterococcal endocarditis synergy gentamicin:** 1 mg/kg AdjBW IV q8h × 2 weeks (per AHA). Aim peak ~3–5 mg/L, trough <1 mg/L.
+   - **Enterococcal endocarditis synergy gentamicin:** 1 mg/kg AdjBW IV q8h; duration per current endocarditis guideline [VERIFY: current AHA/ESC endocarditis guideline — gentamicin synergy duration for enterococcal IE]. Aim peak 3–4 mg/L, trough <1 mg/L (same synergy targets as step 5).
 
 4. **Level monitoring — extended-interval.**
    - **Hartford nomogram (7 mg/kg):** draw a single level 6–14 h after start of first infusion (the "Hartford nomogram zone" defines next dose interval).
@@ -100,7 +100,7 @@ Senior infectious disease pharmacist / physician writing the aminoglycoside orde
 6. **Duration.**
    - Empiric gram-negative coverage: discontinue at 48–72 h once cultures de-escalate to a single-class agent if not needed for synergy.
    - Pseudomonas pneumonia: typically 5–7 days adjunct; some use entire course depending on monotherapy considerations.
-   - Endocarditis synergy: 2 weeks of gentamicin in viridans strep with high MIC, 2 weeks for enterococcal, longer for some streptococci or staph (newer AHA guidance reduced gent use due to nephrotoxicity).
+   - Endocarditis synergy: 2 weeks of gentamicin in viridans strep with high MIC; enterococcal duration per current guideline [VERIFY: current AHA/ESC endocarditis guideline]; longer for some streptococci or staph (newer AHA guidance reduced gent use due to nephrotoxicity).
    - Pyelonephritis: 5–7 days; UTI shorter.
    - Long courses (>7–10 days): increase nephro- and ototoxicity risk; reassess necessity, consider alternatives.
 
@@ -190,7 +190,7 @@ SELF-CHECK:
 ```
 PATIENT SNAPSHOT:
 - 71 y M, ABW 102 kg, IBW 73 kg, AdjBW = 73 + 0.4(102 − 73) = 85 kg.
-- SCr 1.4, CrCl 51 (Cockcroft-Gault).
+- SCr 1.4, CrCl recomputed (Cockcroft-Gault, male) with IBW 73 kg: (140 − 71) × 73 / (72 × 1.4) = 5037 / 100.8 ≈ 50 mL/min (input stated 51). With AdjBW 85 kg ≈ 58 mL/min — both in the 40–59 band → q36h. (ABW 102 kg would give ≈ 70 mL/min and wrongly move the interval to q24h.)
 - Indication: severe pyelonephritis, suspected gram-neg sepsis, empiric coverage.
 - On vancomycin → additive nephrotoxicity risk; weigh need carefully.
 - Baseline hearing intact per history.
@@ -234,7 +234,7 @@ ALTERNATIVES:
 SELF-CHECK:
 - Weight: AdjBW 85 kg used (patient obese, ABW > 1.2 × IBW). ✓
 - mg/kg: 7 mg/kg matches Hartford. ✓
-- Interval q36h matches CrCl 51. ✓
+- Interval q36h matches CrCl ≈50 (IBW) / ≈58 (AdjBW), both in the 40–59 band. ✓
 - Level at 8 h scheduled. ✓
 - Nephrotoxicity monitoring active. ✓
 - Stop trigger at 48–72 h pending cultures. ✓

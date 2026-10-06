@@ -104,7 +104,7 @@ Code status: [...]
 
 ## Worked Example
 
-**Input:** Hospital Day 3, CAP patient from prior example. Overnight: afebrile x24h, weaned to room air, cough improving, ate breakfast. Tmax 37.2, HR 78–88, BP 120s–130s/70s–80s, RR 16, SpO2 95% RA. WBC down 16.2 → 9.8. Blood cultures no growth at 48h; sputum culture growing Strep pneumoniae sensitive to ceftriaxone. Glucose 140s–180s on sliding scale. Exam: lungs improved air entry, fewer crackles.
+**Input:** Hospital Day 3, CAP patient from prior example (on ceftriaxone + azithromycin, enoxaparin 40 mg SC daily; code status full, unchanged). Overnight: afebrile x24h, weaned to room air, cough improving (less frequent, less productive), ate breakfast. Patient says he feels "much better"; no dyspnea at rest or walking to the bathroom; no new complaints. T 36.9 this AM, Tmax 37.2, HR 78–88, BP 120s–130s/70s–80s, RR 16, SpO2 95% RA. I/O: net even, adequate urine output. Peripheral IV only, no drips. WBC down 16.2 → 9.8. Blood cultures no growth at 48h; sputum culture growing Strep pneumoniae sensitive to ceftriaxone. Glucose 140s–180s on sliding scale. Exam: comfortable, no distress; lungs improved air entry bilaterally, fewer right basilar crackles, no wheeze; heart RRR.
 
 **Output:**
 
@@ -112,14 +112,14 @@ Code status: [...]
 Medicine Progress Note — Hospital Day 3
 
 S (Subjective):
-Patient reports feeling significantly better. Afebrile overnight, cough less frequent and less productive, no dyspnea at rest or with ambulation to the bathroom. Tolerated breakfast. No new complaints.
+Patient reports feeling "much better." Afebrile overnight, cough less frequent and less productive, no dyspnea at rest or with ambulation to the bathroom. Tolerated breakfast. No new complaints.
 
 O (Objective):
-- Vitals: T 37.2 (Tmax 37.2), HR 78–88, BP 120s–130s/70s–80s, RR 16, SpO2 95% on room air (weaned off O2).
+- Vitals: T 36.9 (Tmax 37.2), HR 78–88, BP 120s–130s/70s–80s, RR 16, SpO2 95% on room air (weaned off O2).
 - I/O: adequate urine output, net even.
-- Devices/Drips: none; peripheral IV only.
+- Devices/Drips: no drips; peripheral IV only.
 - Exam: General — comfortable, no distress. Pulmonary — improved air entry bilaterally, fewer right basilar crackles, no wheeze. Cardiac — RRR.
-- New results: WBC down 16.2 → 9.8 (resolving leukocytosis). Blood cultures no growth at 48h. Sputum culture: Streptococcus pneumoniae, sensitive to ceftriaxone. Glucose 140s–180s on sliding scale.
+- New results: WBC down 16.2 → 9.8 (resolving leukocytosis). Blood cultures no growth at 48h (not yet final — still pending). Sputum culture: Streptococcus pneumoniae, sensitive to ceftriaxone. Glucose 140s–180s on sliding scale.
 
 A (Assessment):
 68 y/o M with CAP, clinically improving — afebrile, off oxygen, downtrending WBC, culture-confirmed pneumococcal pneumonia sensitive to current therapy. On trajectory toward discharge.
@@ -133,5 +133,5 @@ P (Plan, by problem):
 Lines/tubes/drains: PIV — remove with IV-to-PO conversion.
 VTE prophylaxis: Continue enoxaparin 40 mg SC daily; D/C with discharge once ambulatory.
 Dispo: Anticipate discharge tomorrow on oral antibiotics with PCP follow-up in 1 week.
-Code status: Full.
+Code status: Full (unchanged).
 ```

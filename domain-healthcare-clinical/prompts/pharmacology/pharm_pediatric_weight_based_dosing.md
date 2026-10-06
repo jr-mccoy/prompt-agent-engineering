@@ -62,7 +62,7 @@ Senior pediatrician / pediatric pharmacist / pediatric hospitalist / neonatologi
 2. **Choose dosing strategy.**
    - **Weight-based (mg/kg or units/kg):** most common in pediatrics; uses actual body weight.
    - **Body surface area (BSA, m²):** chemotherapy, some immunosuppressants, some monoclonal antibodies. Mosteller formula: BSA = √[(height_cm × weight_kg) / 3600].
-   - **Age-based:** for some emergency drugs (epinephrine 0.01 mg/kg IM/IV; never to exceed 0.3 mg in pediatrics, 0.5 mg in adolescents/adults).
+   - **Age-based:** for some emergency drugs (epinephrine 0.01 mg/kg IM for anaphylaxis, never to exceed 0.3 mg in pediatrics, 0.5 mg in adolescents/adults; IV/IO cardiac-arrest dosing is also 0.01 mg/kg but capped at 1 mg per dose per PALS — the IM cap does not apply).
    - **Fixed-dose by age or weight band:** vaccines, some antibiotics, syrup formulations dispensed by mL based on age.
 
 3. **Apply age- and developmental-stage pharmacokinetic principles.**
@@ -111,7 +111,7 @@ Senior pediatrician / pediatric pharmacist / pediatric hospitalist / neonatologi
    - Vancomycin neonatal dosing: 10–15 mg/kg/dose q8–24h depending on PMA / SCr.
    - Bilirubin-displacing drugs (ceftriaxone in neonates — avoid in first 30 days, especially with concurrent calcium; sulfonamides — kernicterus).
    - Chloramphenicol — gray baby syndrome from glucuronidation deficiency.
-   - Codeine — never in pediatrics post-2017 FDA warning (CYP2D6 polymorphism); avoid in lactating mothers.
+   - Codeine — contraindicated in children <12 years and in those <18 years after tonsillectomy/adenoidectomy (2017 FDA action; CYP2D6 ultrarapid metabolism); avoid in adolescents with obesity, obstructive sleep apnea or severe lung disease; avoid in lactating mothers.
 
 7. **Liquid formulation considerations.**
    - State concentration: e.g., amoxicillin 250 mg/5 mL → 10 kg child needs 80 mg/kg/day = 800 mg/day = 400 mg BID = 8 mL BID.
@@ -141,7 +141,7 @@ Senior pediatrician / pediatric pharmacist / pediatric hospitalist / neonatologi
 ## False-Positive Prevention
 
 ❌ **DON'T:**
-- Reuse a mL volume after changing products; 6.25 mL is 500 mg of a 400 mg/5 mL suspension but 750 mg of a 600 mg/5 mL one.
+- Reuse a mL volume after changing products; the same volume delivers 50% more drug from a 600 mg/5 mL suspension than from a 400 mg/5 mL one, so recompute mL whenever the concentration changes.
 - Apply one adult cap to every indication or route; caps differ (high-dose amoxicillin, IM vs IV epinephrine, IV arrest dosing).
 - Present a guideline's treat/observe criteria with a threshold it does not use (AAP "severe" AOM is fever ≥39 °C, not 38.5 °C).
 - Estimate weight from age outside resuscitation, or omit the weight and its date from the order.
@@ -223,7 +223,7 @@ PATIENT SNAPSHOT:
 - 18-month-old female, weight 11 kg (measured today), no allergies, no chronic medical conditions, no prior antibiotic in last 30 days.
 
 INDICATION:
-- Acute otitis media (AOM), moderate (TM bulging, fever 38.5°C); meets criteria for antibiotic treatment per AAP 2013 guidelines (age <2 with bilateral or moderate-severe symptoms; this patient has bulging TM + fever ≥38.5°C → treat).
+- Acute otitis media (AOM), non-severe (TM bulging, fever 38.5°C — below the AAP severe-AOM threshold of ≥39°C). Per AAP 2013, age 6–23 months: antibiotics if severe or bilateral; unilateral non-severe → antibiotics or observation by shared decision. Laterality: [not provided] — this order assumes bilateral AOM or a shared decision to treat; confirm before prescribing.
 
 DRUG SELECTED:
 - **Amoxicillin** (first-line for AOM per AAP; covers Strep pneumoniae, non-typeable H. influenzae beta-lactamase-negative, M. catarrhalis).
@@ -256,14 +256,14 @@ MONITORING:
 
 CALCULATION SELF-CHECK:
 - Weight: 11 kg (measured today). ✓
-- Dose: 90 mg/kg/day = 990 mg/day; per dose 500 mg BID. ✓
-- Daily total: 990 mg < adult max 3 g/day. ✓
+- Dose: 90 mg/kg/day = 990 mg/day; rounded to 500 mg BID = 1000 mg/day ≈ 91 mg/kg/day (within range). ✓
+- Daily total: 1000 mg < adult max 3 g/day. ✓
 - Concentration: 400 mg/5 mL → 6.25 mL per dose. ✓
 - Frequency: BID appropriate. ✓
 - High-alert: not applicable (oral amoxicillin not on high-alert list).
 
 WHEN TO ESCALATE:
-- No improvement in 48–72 h: switch to amoxicillin-clavulanate 90 mg/kg/day of amoxicillin component (use ES-600 = 600 mg amoxicillin + 42.9 mg clavulanate per 5 mL); 6.25 mL PO BID.
+- No improvement in 48–72 h: switch to amoxicillin-clavulanate 90 mg/kg/day of amoxicillin component (use ES-600 = 600 mg amoxicillin + 42.9 mg clavulanate per 5 mL): 990 mg/day ÷ 2 = 495 mg/dose ÷ 120 mg/mL = 4.125 mL → **4.1 mL PO BID** (≈492 mg/dose ≈ 89 mg/kg/day). Do not carry over the 6.25 mL amoxicillin volume — at 600 mg/5 mL that would be 750 mg/dose ≈ 136 mg/kg/day.
 - Severe allergy or beta-lactam intolerance: cefdinir 14 mg/kg/day PO daily (max 600 mg) ×10 days; or ceftriaxone IM 50 mg/kg ×3 days if oral not tolerated.
 - Recurrent AOM (≥3 in 6 months or ≥4 in 12 months): ENT referral for tympanostomy tubes consideration.
 

@@ -80,11 +80,11 @@ Senior infectious disease pharmacist / physician writing the vancomycin order wi
    - Draw **peak** (1–2 h after end of infusion, at distribution-equilibrated time) and **trough** (≤30 min before next dose) at presumed steady state (third or fourth dose).
    - Compute elimination rate constant: **ke = ln(peak / trough) / Δt** (Δt = time between peak and trough samples).
    - Half-life: **t½ = 0.693 / ke**.
-   - Extrapolate peak and trough back to true Cmax (just after distribution complete) and forward to Cmin (immediately before dose):
+   - Extrapolate peak and trough back to true Cmax (end of infusion) and forward to Cmin (immediately before dose):
      - **Cmax (true)** = peak / e^(−ke × Δt_peak), where Δt_peak is time from end of infusion to peak draw (usually 1 h).
      - **Cmin (true)** = trough × e^(−ke × Δt_trough), where Δt_trough is time from trough draw to next dose.
    - Compute AUC for one dosing interval:
-     - **AUC_infusion** = (Cmax + Cprior-end-of-infusion) × infusion duration / 2
+     - **AUC_infusion** = (Cmin + Cmax) × infusion duration / 2 (linear trapezoid from the start-of-infusion trough to the end-of-infusion peak)
      - **AUC_elimination** = (Cmax − Cmin) / ke
      - **AUC_τ** = AUC_infusion + AUC_elimination
      - **AUC24** = AUC_τ × (24 / τ), where τ is dosing interval.
@@ -121,7 +121,7 @@ Senior infectious disease pharmacist / physician writing the vancomycin order wi
    - Show the maintenance dose and interval with CrCl basis.
    - Specify level timing (peak, trough, or both) and assay turnaround expectation.
    - Specify SCr and BUN monitoring frequency.
-   - Specify red flags for stopping or adjusting (AKI defined per KDIGO: SCr increase ≥0.3 mg/dL or 1.5× baseline within 48 h).
+   - Specify red flags for stopping or adjusting (AKI defined per KDIGO: SCr increase ≥0.3 mg/dL within 48 h, or ≥1.5× baseline within the prior 7 days).
 
 ## False-Positive Prevention
 
@@ -170,7 +170,8 @@ DOSE-ADJUSTMENT RULES (after first level):
 - If AUC 400–600: continue current regimen
 - If AUC >600: decrease dose by 25% OR lengthen interval (e.g., q8h → q12h); re-check after 24–48 h
 - If AUC >800: hold dose, recheck level, reduce dose by 30–50%
-- If SCr increases ≥0.3 mg/dL or 1.5× baseline: hold dose, evaluate for AKI, dose-adjust per new CrCl
+- Before ordering any change, predict new AUC = current AUC × (new mg/day ÷ current mg/day); if it still lands outside 400–600, revise the step
+- If SCr increases ≥0.3 mg/dL within 48 h or ≥1.5× baseline within 7 days (KDIGO): hold dose, evaluate for AKI, dose-adjust per new CrCl
 
 SPECIAL POPULATION ADJUSTMENT:
 - [Obesity / pregnancy / augmented renal clearance / HD / CRRT specific notes applied]
@@ -213,9 +214,9 @@ LOADING DOSE:
 - 25 mg/kg × 88 kg = 2200 mg → round to **2250 mg IV ×1**, infuse over 2.5 h (about 1 h per 1000 mg, conservative for infusion-reaction prevention).
 
 MAINTENANCE DOSE (initial):
-- CrCl 84 → 15–20 mg/kg ABW q12h.
-- 17.5 mg/kg × 88 = 1540 mg → round to **1500 mg IV q12h** starting 12 h after loading dose end.
-- Total daily 3000 mg/day.
+- CrCl 84 → band suggests 15–20 mg/kg ABW q12h (15 mg/kg × 88 = 1320 → 1250 mg; 17.5 mg/kg → 1500 mg), but the population AUC estimate below puts both above target (1500 mg q12h ≈ 758; 1250 mg q12h ≈ 631 mg·h/L).
+- Dose chosen from the AUC estimate instead: **1000 mg IV q12h** (11.4 mg/kg/dose) starting 12 h after loading dose end.
+- Total daily 2000 mg/day.
 
 LEVEL MONITORING PLAN:
 - Two-level kinetic monitoring (Bayesian preferred if institutional software available, e.g., InsightRx; otherwise two-level first-order):
@@ -227,14 +228,13 @@ LEVEL MONITORING PLAN:
 EXPECTED AUC AT THIS DOSE (population estimate):
 - Vd ≈ 0.7 L/kg × 88 = 62 L.
 - CL_vanco ≈ CrCl × 0.79 (population estimate) = 84 × 0.79 = 66 mL/min = 3.96 L/h.
-- Steady-state AUC24 = Total daily dose / CL = 3000 mg / 3.96 L/h = ~758 mg·h/L → above target; reduce maintenance dose at the time of first level if confirmed.
-- Note: at CrCl 84 with q12h dosing, 15 mg/kg might be a better initial choice; will recalibrate after first level.
+- Steady-state AUC24 = Total daily dose / CL = 2000 mg / 3.96 L/h ≈ 505 mg·h/L → within 400–600 target. (3000 mg/day would give ~758 — above target, so not started.)
+- Population estimate only `[VERIFY: institutional nomogram / Bayesian software]`; will recalibrate after first level.
 
 DOSE-ADJUSTMENT RULES AFTER FIRST AUC:
-- AUC 400–600: continue 1500 mg IV q12h.
-- AUC <400: increase to 1750 mg IV q12h.
-- AUC 600–800: reduce to 1250 mg IV q12h.
-- AUC >800: hold next dose, recheck level, restart at 1000 mg IV q12h.
+- AUC 400–600: continue 1000 mg IV q12h.
+- AUC <400 or 600–800: new mg/day = 2000 × (500 ÷ measured AUC24), rounded to the nearest 250 mg per q12h dose; confirm predicted AUC (measured AUC × new mg/day ÷ 2000) lands in 400–600 before ordering. E.g., measured 350 → 2857 mg/day → 1500 mg q12h → predicted 525 ✓; measured 700 → 1429 mg/day → 750 mg q12h → predicted 525 ✓.
+- AUC >800: hold next dose, recheck level, then restart using the same proportional rule from the new level.
 - Recheck after dose change at 48–72 h.
 
 CONCURRENT NEPHROTOXIN MANAGEMENT:
@@ -254,8 +254,8 @@ WHEN TO STOP OR SWITCH:
 
 CALCULATION SELF-CHECK:
 - Loading dose 2250 mg = 25.6 mg/kg ABW. Within 25–35 range. Below 3 g cap. ✓
-- Maintenance 1500 mg q12h = 17 mg/kg q12h. Within 15–20 range. ✓
-- Daily total 3000 mg = 34 mg/kg/day. Above the conservative 30 mg/kg/day mark; expected AUC ~750 by population estimate — will adjust after first level. Acceptable starting point given indication severity and ABW; plan to reduce based on level.
+- Maintenance 1000 mg q12h = 11.4 mg/kg q12h — below the 15–20 mg/kg CrCl band; deviation accepted because the population AUC estimate governs (band doses predict 631–758 mg·h/L). ✓
+- Daily total 2000 mg = 22.7 mg/kg/day; expected AUC ≈ 505 mg·h/L by population estimate — within 400–600. ✓
 - CrCl 84, CrCl-band q12h. ✓
 - No active nephrotoxins. ✓
 - Bayesian or two-level monitoring scheduled. ✓

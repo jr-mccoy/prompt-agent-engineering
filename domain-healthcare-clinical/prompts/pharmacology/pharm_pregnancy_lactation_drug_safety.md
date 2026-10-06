@@ -58,7 +58,7 @@ Senior obstetrician / maternal-fetal medicine specialist / clinical pharmacist e
    - **Pre-implantation (≤2 weeks post-conception, ~ weeks 1–2 from LMP):** "all or none" — major teratogen exposure either causes loss or no apparent harm; minimal teratogenic concern for surviving pregnancy.
    - **Embryogenesis (weeks 3–10 post-conception, weeks 5–12 LMP):** highest teratogenic susceptibility — organogenesis. Most structural malformations originate here.
    - **Fetal period (week 11 LMP onward):** structural anomalies less common; growth restriction, functional impairment, and CNS toxicity possible.
-   - **Late pregnancy / peripartum:** consider neonatal effects (NICU complications from SSRIs, neonatal abstinence from opioids, hypoglycemia from sulfonylureas, magnesium effect on neonate, beta-blocker neonatal hypoglycemia/bradycardia, NSAIDs after 30 weeks — fetal ductus arteriosus closure and oligohydramnios).
+   - **Late pregnancy / peripartum:** consider neonatal effects (NICU complications from SSRIs, neonatal abstinence from opioids, hypoglycemia from sulfonylureas, magnesium effect on neonate, beta-blocker neonatal hypoglycemia/bradycardia, NSAIDs from 20 weeks — fetal renal dysfunction and oligohydramnios per the 2020 FDA warning — and after 30 weeks — premature ductus arteriosus closure).
    - **FDA letter categories (A/B/C/D/X)** discontinued in 2015; replaced by Pregnancy and Lactation Labeling Rule (PLLR) requiring narrative summaries — providers must look up current label and use registry/database data rather than category letters.
 
 3. **Use authoritative data sources for specific drug-pregnancy questions.**
@@ -79,7 +79,7 @@ Senior obstetrician / maternal-fetal medicine specialist / clinical pharmacist e
      - **Vitamin A high-dose** (>10,000 IU).
      - **Warfarin** (warfarin embryopathy — nasal hypoplasia, stippled epiphyses, CNS abnormalities, miscarriage; **first-trimester avoid**; high-dose mechanical valve patients sometimes continue with risk acceptance).
      - **ACE inhibitors / ARBs / direct renin inhibitors** (fetal renal dysgenesis, oligohydramnios, skull hypoplasia — second/third trimester worst).
-     - **NSAIDs after 30 weeks** (premature ductus arteriosus closure, oligohydramnios).
+     - **NSAIDs from 20 weeks** (fetal renal dysfunction / oligohydramnios, 2020 FDA warning) **and after 30 weeks** (premature ductus arteriosus closure).
      - **Statins** (avoid; recent data more reassuring but routine use not recommended).
      - **Tetracyclines after 15 weeks** (tooth/bone staining, growth inhibition).
      - **Fluoroquinolones** (cartilage concerns; avoid except for serious infection).
@@ -140,7 +140,7 @@ Senior obstetrician / maternal-fetal medicine specialist / clinical pharmacist e
    - **Pregnancy with depression:** continue SSRI; sertraline preferred; avoid paroxetine if possible (especially first trimester); discuss balance vs maternal relapse risk.
    - **Pregnancy with diabetes:** insulin preferred; metformin acceptable (data accumulating); avoid sulfonylureas (hypoglycemia); GLP-1 RA and SGLT2i contraindicated.
    - **Pregnancy with hypothyroidism on levothyroxine:** continue and increase dose ~25% (often by adding 2 extra weekly tablets day-of-week); monitor TSH every 4 weeks until 20 weeks, then every 4–6 weeks; target lower TSH per trimester.
-   - **Pregnancy with VTE:** LMWH (enoxaparin) therapeutic dose throughout pregnancy; switch to LMWH near term and adjust around delivery.
+   - **Pregnancy with VTE:** LMWH (enoxaparin) therapeutic dose throughout pregnancy; near term, plan the peripartum regimen (some centers convert to UFH) and adjust around delivery [VERIFY: current ACOG / ASH guidance on VTE in pregnancy].
 
 7. **Counsel and document.**
    - Risk-benefit conversation: severity of untreated disease, available data on drug in pregnancy, alternative options, residual uncertainty.
@@ -197,7 +197,7 @@ MONITORING:
 - Levels and dose adjustments (lamotrigine, levothyroxine, LMWH)
 
 PERIPARTUM / DELIVERY PLANNING:
-- Avoid NSAIDs in third trimester
+- Avoid NSAIDs from 20 weeks (FDA warning)
 - Anticoagulation around delivery (switch warfarin → LMWH at 36 weeks; hold LMWH 24 h before induction or planned cesarean)
 - AED level adjustments
 - Magnesium / preeclampsia plan if indicated
@@ -244,9 +244,10 @@ RECOMMENDATION:
 - **Switch to lamotrigine or levetiracetam** as soon as feasible — even at 8 weeks, reducing dose-time exposure of valproate may reduce cognitive/behavioral outcomes (the brain continues to develop).
 - Cross-taper plan:
   - **Lamotrigine** (preferred given good response in prior pregnancy):
-    - Start lamotrigine 25 mg PO daily ×2 weeks → 50 mg ×2 weeks → 100 mg daily ×1 week → 100 mg BID (200 mg/day target).
-    - **With valproate present**: lamotrigine titration MUST be slower (valproate inhibits UGT glucuronidation → raises lamotrigine levels): start 25 mg every other day ×2 weeks → 25 mg daily ×2 weeks → 50 mg daily; check level when stable.
-    - **Once lamotrigine therapeutic** (~weeks 4–6), start tapering valproate slowly: 1000 → 750 → 500 → 250 → off over 4–8 weeks. (Slower taper if any seizure activity emerges.)
+    - Standard titration *without* valproate (does NOT apply while valproate is on board): 25 mg PO daily ×2 weeks → 50 mg ×2 weeks → 100 mg daily ×1 week → 100 mg BID (200 mg/day target).
+    - **With valproate present**: lamotrigine titration MUST be slower (valproate inhibits UGT glucuronidation → raises lamotrigine levels): start 25 mg every other day ×2 weeks → 25 mg daily ×2 weeks → 50 mg daily → keep escalating in the label's valproate-coadministration steps until the 200 mg/day target is reached (50 mg/day is not a therapeutic endpoint) [VERIFY: lamotrigine product label — titration with valproate and conversion from valproate]; check level when stable.
+    - **Once lamotrigine is at its target dose and level** (this takes longer than the standard titration — not a fixed week count), start tapering valproate slowly: 1000 → 750 → 500 → 250 → off over 4–8 weeks. (Slower taper if any seizure activity emerges.)
+    - As valproate is withdrawn its UGT inhibition is lost and lamotrigine levels fall — increase lamotrigine during the taper per the label conversion schedule and levels, not at a fixed 200 mg/day.
     - Final lamotrigine target ~300–500 mg/day in pregnancy due to UGT induction by estrogen; levels usually need increase over second trimester.
   - **Alternative: levetiracetam** 500 mg BID → 1000 mg BID over 1–2 weeks (less interaction with valproate; more rapid switch possible). Switch valproate down gradually as before.
 - **Folic acid 4 mg PO daily** (high-dose, started now — though NTD window passed for this pregnancy, supplementation continues for ongoing organogenesis).
@@ -263,7 +264,7 @@ MONITORING:
 PERIPARTUM / DELIVERY PLANNING:
 - Continue lamotrigine through labor and postpartum.
 - **Rapidly reduce lamotrigine dose postpartum** (within 1–2 weeks back to pre-pregnancy dose) — clearance falls quickly postpartum and supratherapeutic levels cause toxicity (dizziness, ataxia, sometimes rash).
-- Vitamin K 10 mg IM to newborn (standard; AEDs not specifically a vitamin K trigger but routine).
+- Vitamin K 1 mg IM to newborn (standard 0.5–1 mg; AEDs not specifically a vitamin K trigger but routine).
 - Pediatric neurology if any concerns at delivery.
 
 NEONATAL CONSIDERATIONS:

@@ -143,7 +143,7 @@ Clinical signs of infection:
   [ ] Fever (> 38.0°C) or hypothermia (< 36.0°C)
   [ ] Localizing symptoms (cough, dysuria, wound erythema, etc.)
   [ ] Elevated WBC or left shift
-  [ ] Elevated procalcitonin (> 0.25 suggests bacterial infection)
+  [ ] Elevated procalcitonin (> 0.25 ng/mL [= µg/L] suggests bacterial infection; confirm the reporting lab's units)
   [ ] Positive cultures from a sterile site
 
 COMMON MIMICS (not infection):
@@ -267,8 +267,8 @@ HIGH RISK (avoid penicillins):
   - Serum sickness
   - Drug reaction with eosinophilia (DRESS)
   → Use: Non-beta-lactam alternatives
-  → Cross-reactivity with carbapenems: < 1% (generally safe)
-  → Monobactams (aztreonam): No cross-reactivity
+  → Anaphylaxis (IgE-mediated) history: cross-reactivity with carbapenems < 1% — may be used with caution when needed; monobactams (aztreonam): no cross-reactivity with penicillins
+  → SJS/TEN, DRESS, serum sickness (severe non-IgE reactions): the IgE cross-reactivity figures above do not apply — avoid beta-lactams, including carbapenems, unless cleared by allergy [VERIFY: current AAAAI/ACAAI drug-allergy practice parameter]
 
 DELABELING OPPORTUNITY:
   ~90% of reported penicillin allergies are not true allergies
@@ -333,7 +333,7 @@ Patient eligible for PO switch when ALL of the following are met:
 
 HIGH-BIOAVAILABILITY ORAL OPTIONS:
 (These achieve IV-equivalent levels orally)
-  - Fluoroquinolones (levofloxacin, ciprofloxacin, moxifloxacin): ~100% bioavailability
+  - Fluoroquinolones: levofloxacin ~100%, moxifloxacin ~90%, ciprofloxacin ~70–80% bioavailability
   - Linezolid: 100% bioavailability
   - Metronidazole: ~100% bioavailability
   - TMP-SMX: ~100% bioavailability
@@ -344,7 +344,7 @@ HIGH-BIOAVAILABILITY ORAL OPTIONS:
 COMMON IV-TO-PO SWITCHES:
   Ceftriaxone IV → Cephalexin PO or amoxicillin-clavulanate PO (based on sensitivity)
   Ampicillin-sulbactam IV → Amoxicillin-clavulanate PO
-  Ciprofloxacin IV → Ciprofloxacin PO (same dose, same levels)
+  Ciprofloxacin IV → Ciprofloxacin PO (oral bioavailability ~70–80%, so the PO dose is higher than the IV dose, e.g., 400 mg IV ≈ 500 mg PO [VERIFY: product label])
   Metronidazole IV → Metronidazole PO (same dose, same levels)
   Vancomycin IV → Linezolid PO or TMP-SMX PO or doxycycline PO (based on indication and sensitivity)
 ```
@@ -388,7 +388,7 @@ Bone and joint infections:
 
 PROCALCITONIN-GUIDED DURATION:
   If available, procalcitonin can guide antibiotic discontinuation:
-  - PCT < 0.25: Consider stopping antibiotics
+  - PCT < 0.25 ng/mL (= µg/L): Consider stopping antibiotics
   - PCT decrease > 80% from peak: Consider stopping
   - Recheck every 48-72 hours
 ```
@@ -477,7 +477,7 @@ Verify with local antibiogram and current guidelines
 ### Renal Dosing
 - Always check renal dosing for: Vancomycin, aminoglycosides, carbapenems, fluoroquinolones, TMP-SMX
 - Vancomycin requires therapeutic drug monitoring (trough or AUC-guided dosing)
-- Nitrofurantoin: Avoid if GFR < 30 (ineffective, not dangerous)
+- Nitrofurantoin: Avoid if GFR < 30 (inadequate urinary concentration → treatment failure, and accumulation increases toxicity risk, e.g., peripheral neuropathy) [VERIFY: current product label / AGS Beers Criteria for the CrCl threshold]
 
 ### Antimicrobial Resistance Stewardship
 - Narrow spectrum is ALWAYS preferred over broad spectrum when effective

@@ -126,7 +126,7 @@ DAILY GOALS CHECKLIST:
 
 ## Worked Example
 
-**Input:** ICU Day 2, septic shock from pneumonia, intubated. Overnight: weaning norepinephrine, lactate cleared 4.2 → 1.6, started enteral feeds. Vitals MAP 70–78, HR 88–96. Norepinephrine down to 0.04 mcg/kg/min, propofol 25 mcg/kg/min. Vent: AC/VC, FiO2 0.4, PEEP 8, Vt 6 mL/kg, last ABG 7.36/40/92. UOP improving, net +1.2L. WBC 14 down from 19. Cultures: blood pending, sputum gram-positive cocci. On ceftriaxone+azithromycin day 2. Glucose 150s.
+**Input:** ICU Day 2, septic shock from pneumonia, intubated. Overnight: weaning norepinephrine, lactate cleared 4.2 → 1.6, started enteral feeds (tolerating), no other events. Vitals Tmax 37.6, MAP 70–78, HR 88–96. Norepinephrine down to 0.04 mcg/kg/min, propofol 25 mcg/kg/min. Vent: AC/VC, set RR 18, FiO2 0.4, PEEP 8, Vt 6 mL/kg, last ABG 7.36/40/92. Not yet assessed off sedation. UOP improving, net +1.2L. Cr 1.9 yesterday → 1.5 today; K 3.4 yesterday, repleted, 4.0 today. WBC 14 down from 19; Hgb and platelets unchanged from yesterday. Cultures: blood pending, sputum gram-positive cocci. On ceftriaxone+azithromycin day 2. Glucose 150s. Lines (all placed ICU day 1): right IJ central line, arterial line, ETT, Foley. Prophylaxis: enoxaparin, PPI. Code status: full code per family; family meeting planned.
 
 **Output:**
 
@@ -138,30 +138,30 @@ ONE-LINER: Adult with septic shock secondary to community-acquired pneumonia, in
 Hemodynamically improving overnight with successful down-titration of norepinephrine. Lactate cleared from 4.2 to 1.6. Enteral nutrition initiated and tolerated. No new fevers or events.
 
 OBJECTIVE:
-- Vitals: MAP 70–78, HR 88–96, afebrile. 
+- Vitals: MAP 70–78, HR 88–96, Tmax 37.6.
 - Drips: norepinephrine 0.04 mcg/kg/min (weaning); propofol 25 mcg/kg/min.
 - Vent: AC/VC, FiO2 0.40, PEEP 8, Vt 6 mL/kg (lung-protective), RR set 18. ABG 7.36/40/92.
 - I/O: net +1.2 L over 24h; urine output improving.
-- Labs: WBC 14 (down from 19), lactate 1.6 (cleared), Cr improving, K repleted.
+- Labs: WBC 14 (down from 19), lactate 1.6 (cleared from 4.2), Cr 1.5 (from 1.9), K 4.0 after repletion (from 3.4), Hgb/platelets unchanged.
 - Lines/tubes/drains: right IJ central line (day 2), arterial line (day 2), ETT, Foley.
 - Antibiotics: ceftriaxone + azithromycin, day 2.
 
 ASSESSMENT & PLAN (by system):
 NEURO: Sedated on propofol, target RASS −1 to 0. → Begin daily sedation awakening trial this morning; assess for extubation readiness; CAM-ICU screen.
 CV: Septic shock resolving, norepinephrine weaning. → Continue weaning to off as MAP tolerates ≥65; reassess fluid status (net positive, avoid further large positive balance).
-RESP: Pneumonia/early sepsis-related; oxygenation good (P/F ~230 on FiO2 0.4). → Wean FiO2 toward 0.3; perform spontaneous breathing trial today given improving picture and low pressor requirement; if passes and mentating off sedation, extubate.
+RESP: Pneumonia/early sepsis-related; oxygenation good (P/F ~230 on FiO2 0.4). → Wean FiO2 toward 0.3; screen for spontaneous breathing trial after this morning's awakening trial (FiO2 0.4/PEEP 8 and low-dose norepinephrine recorded; mental status off sedation not yet assessed); if SBT passed and mentating off sedation, extubate.
 GI/NUTRITION: Enteral feeds started and tolerated. → Advance to goal rate; continue.
-RENAL/FLUIDS/LYTES: AKI improving with resuscitation; UOP up. → Target even-to-net-negative balance now that shock resolving; continue electrolyte repletion.
-HEME: Stable. → Continue VTE prophylaxis (enoxaparin/SCDs).
+RENAL/FLUIDS/LYTES: AKI improving with resuscitation (Cr 1.9 → 1.5); UOP up. → Target even-to-net-negative balance now that shock resolving; continue electrolyte repletion.
+HEME: Hgb/platelets unchanged. → Continue VTE prophylaxis (enoxaparin).
 ID: CAP with septic shock; sputum gram-positive cocci. → Continue ceftriaxone + azithromycin; narrow per culture/sensitivities when finalized; blood cultures pending; plan 5–7 day course; reassess azithromycin once atypicals excluded.
 ENDO: Glucose 150s. → Insulin protocol, target 140–180.
 
 DAILY GOALS CHECKLIST:
 - Sedation target/awakening: RASS −1 to 0; awakening trial this AM.
-- SBT candidacy: yes — perform today.
+- SBT candidacy: screen after awakening trial — mental status off sedation not yet assessed.
 - Lines to remove: reassess arterial line and central line need as pressors wean off.
 - VTE prophylaxis: enoxaparin. / GI prophylaxis: PPI while intubated.
 - Nutrition: enteral, advancing to goal. / Glycemic target: 140–180.
 - Mobility: out of bed/PT once extubated.
-- Code status/goals: full code; confirm with family.
+- Code status/goals: full code per family; family meeting planned.
 ```

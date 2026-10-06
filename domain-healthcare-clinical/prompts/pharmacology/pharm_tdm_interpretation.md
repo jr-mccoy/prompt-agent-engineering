@@ -101,7 +101,7 @@ Senior clinical pharmacist / physician interpreting the level and writing the do
    - **Vancomycin:** AUC24/MIC 400–600 (serious MRSA); trough 15–20 if no AUC monitoring (older standard).
    - **Aminoglycosides extended-interval:** peak >16 mg/L (gent/tob), >56 mg/L (amikacin); trough <1 (gent/tob), <5 (amikacin).
    - **Aminoglycosides traditional:** peak 5–10 mg/L (gent/tob), 25–35 (amikacin); trough <2 (gent/tob), <8 (amikacin).
-   - **Digoxin:** 0.5–0.9 ng/mL for heart failure (lower toxicity than older 0.8–2.0); 1.5–2 ng/mL for rate control AFib if needed; toxicity >2.0.
+   - **Digoxin:** 0.5–0.9 ng/mL for heart failure (lower toxicity than older 0.8–2.0); higher levels have been used for AFib rate control if needed [VERIFY: current AF guideline — digoxin target range]; toxicity >2.0.
    - **Lithium:** acute mania 0.8–1.2 mEq/L; maintenance 0.6–0.8; toxicity >1.5; severe >2.0.
    - **Phenytoin (total):** 10–20 µg/mL (free 1–2 µg/mL).
    - **Valproate:** 50–100 µg/mL (some up to 125).
@@ -141,7 +141,7 @@ Senior clinical pharmacist / physician interpreting the level and writing the do
 
 ❌ **DON'T:**
 - Run the proportional formula (current × target / measured) on a level drawn before steady state, inside the distribution phase, or for a nonlinear drug; the arithmetic looks exact and the new dose is wrong.
-- Let the DOSE ADJUSTMENT regimen disagree with the calculation printed beneath it — e.g. a "0.0625 mg every other day" order next to a line that computes 0.0625 mg/day.
+- Let the DOSE ADJUSTMENT regimen disagree with the calculation printed beneath it — e.g. an every-other-day order next to a line that computes a daily dose; convert both to mg/day before comparing.
 - Compare a level to a range in different units without showing the conversion (ng/mL vs nmol/L, µg/mL vs µmol/L), or accept a reported value with no units.
 - Take the target range from memory when the indication changes it (digoxin in HF vs AF, lithium acute vs maintenance, tacrolimus by organ and months post-transplant); use the input's target or `[VERIFY: indication-specific range]`.
 - Read a total phenytoin or valproate level as "therapeutic" when albumin or renal function is abnormal and no correction or free level is shown.
@@ -215,7 +215,7 @@ SELF-CHECK:
 
 ```
 DRUG / INDICATION:
-- Digoxin for AFib rate control / HFrEF; target 0.5–0.9 ng/mL (HFrEF), or ≤1.5 for AFib rate control.
+- Digoxin for AFib rate control / HFrEF; target 0.5–0.9 ng/mL (HFrEF range applies because the patient has HFrEF; an AF-only range is not used here [VERIFY: current ACC/AHA/HFSA guidance]).
 
 LEVEL:
 - 2.4 ng/mL, drawn 12 h post last dose.
@@ -233,17 +233,17 @@ PATIENT PK CONTEXT:
 - Hypokalemia, hypomagnesemia, hypercalcemia would worsen toxicity at same level — current K 5.1 paradoxically less arrhythmogenic but reflects toxicity.
 
 INTERPRETATION:
-- **Supratherapeutic / toxic.** 2.4 ng/mL exceeds both HFrEF target (0.5–0.9) and AFib target (≤1.5).
+- **Supratherapeutic / toxic.** 2.4 ng/mL exceeds the HFrEF target (0.5–0.9) and the >2.0 toxicity threshold.
 - Clinical signs consistent: nausea, anorexia, fatigue, hyperkalemia.
 - Mechanism: dose appropriate for normal renal function is excessive with CrCl 35; accumulation over 4 weeks.
 
 DOSE ADJUSTMENT:
 - **Hold digoxin** for 48–72 h.
 - **Restart at lower dose: 0.0625 mg PO every other day** (i.e., 0.0625 mg every 48 h, or alternatively 0.125 mg twice weekly with dose every 3–4 days), reflecting CrCl 35.
-- Calculation: target trough ~1 ng/mL; current 2.4 → reduce by factor 2.4 = ~58%; new dose ≈ 0.5 × current daily dose = 0.0625 mg/day (or 0.125 mg every other day). Given CrCl 35, half-dose every 48 h is conservative and matches AHA/HFSA recommendation.
+- Calculation (linear, at steady state): current 0.125 mg/day; target 0.6–0.9 ng/mL (within the HFrEF range) → new daily dose = 0.125 × (0.6 to 0.9) ÷ 2.4 = 0.031–0.047 mg/day. Ordered 0.0625 mg every 48 h = 0.031 mg/day → predicted level ≈ 0.6 ng/mL ✓ (twice-weekly 0.125 mg = 0.036 mg/day → ≈0.7 ng/mL ✓). Note 0.0625 mg daily would predict ≈1.2 ng/mL — above target.
 
 NEXT LEVEL:
-- Recheck digoxin level **5–7 days after restart at new dose** (allows clearance of accumulated drug + reach new steady state).
+- Recheck digoxin level **5–7 days after restart** to confirm decline, and again at new steady state ≈ 4–5 half-lives later (≈2–3 weeks with the ~3–4 day CKD half-life stated above).
 - BMP at 48 h and at next office visit to confirm K and Cr trend.
 
 CLINICAL RESPONSE & TOXICITY:
@@ -252,7 +252,7 @@ CLINICAL RESPONSE & TOXICITY:
 - Correct hypokalemia / hypomagnesemia if present; in current case K 5.1 → no supplementation.
 
 WHEN TO ESCALATE:
-- Symptomatic bradycardia, hemodynamic instability, life-threatening arrhythmia, refractory hyperkalemia (K >5.5 with arrhythmia), or ingestion >10 mg → **digoxin-immune Fab (DigiFab)**: dose = (serum digoxin × weight × 0.0056) → number of vials; or empiric 10–20 vials for unknown ingestion. Watch for rebound after Fab clearance.
+- Symptomatic bradycardia, hemodynamic instability, life-threatening arrhythmia, refractory hyperkalemia (K >5.5 with arrhythmia), or ingestion >10 mg → **digoxin-immune Fab (DigiFab)**: body load (mg) = serum digoxin (ng/mL) × weight (kg) × 0.0056; vials = body load ÷ 0.5 mg bound per vial (round up) [VERIFY: DigiFab product label]; or empiric 10–20 vials for unknown ingestion. Watch for rebound after Fab clearance.
 - Worsening AKI: hold digoxin entirely; reconsider need.
 
 SELF-CHECK:

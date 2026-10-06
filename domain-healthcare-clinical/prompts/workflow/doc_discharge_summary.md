@@ -113,7 +113,7 @@ PATIENT INSTRUCTIONS:
 
 ## Worked Example
 
-**Input:** CAP patient, ready for discharge HD4. Admitted for CAP/COPD, culture-confirmed pneumococcal pneumonia, treated with ceftriaxone+azithromycin, narrowed to oral amoxicillin, clinically resolved, off O2. Metformin held during admission, resumed. Blood cultures finalized no growth; sputum final pending speciation confirmation already known. Follow-up PCP 1 week. Lives home with spouse, independent.
+**Input:** CAP patient, ready for discharge HD4. Admitted for CAP/COPD: presented with fever, cough, hypoxia (SpO2 88% RA), RLL consolidation on CXR, WBC 16.2, procalcitonin elevated. Treated with ceftriaxone+azithromycin from HD1. Blood cultures finalized no growth; sputum culture growing S. pneumoniae sensitive to ceftriaxone — final report with full susceptibility panel still pending. Azithromycin stopped and ceftriaxone narrowed to oral amoxicillin (dose not stated); team set a 7-day total antibiotic course counted from the first ceftriaxone dose on HD1, the upper end of the 5–7 days planned on HD3. Afebrile by HD2, weaned to room air by HD3; clinically resolved, SpO2 95% RA, WBC 9.8. COPD: no exacerbation, no steroids; tiotropium continued with PRN nebs. T2DM: metformin held during admission with sliding-scale insulin, resumed, glucose stable. HTN: lisinopril continued, BP controlled. No procedures or consults. Home meds: tiotropium 18 mcg inhaled daily, lisinopril 20 mg daily, metformin 1000 mg BID. Allergies: NKDA. Current smoker. Follow-up PCP 1 week. Lives home with spouse, independent and ambulatory; no home services needed.
 
 **Output:**
 
@@ -121,23 +121,26 @@ PATIENT INSTRUCTIONS:
 ADMISSION DATE / DISCHARGE DATE: [admit] / [discharge, HD4]
 ADMISSION DIAGNOSIS: Community-acquired pneumonia with hypoxia, COPD.
 DISCHARGE DIAGNOSIS(ES): Pneumococcal community-acquired pneumonia (Streptococcus pneumoniae), resolved; COPD; type 2 diabetes mellitus; hypertension.
+ALLERGIES: NKDA.
 
 HOSPITAL COURSE (by problem):
-# Community-acquired pneumonia: Presented with fever, cough, and hypoxia (88% RA); CXR showed RLL consolidation; WBC 16.2; procalcitonin elevated. Started on ceftriaxone + azithromycin. Blood cultures no growth; sputum culture grew S. pneumoniae sensitive to ceftriaxone. Azithromycin discontinued; transitioned to oral amoxicillin to complete a 7-day total course. Afebrile by HD2, weaned to room air by HD3, WBC normalized to 9.8. Resolved at discharge.
+# Community-acquired pneumonia: Presented with fever, cough, and hypoxia (88% RA); CXR showed RLL consolidation; WBC 16.2; procalcitonin elevated. Started on ceftriaxone + azithromycin (HD1). Blood cultures no growth (final); sputum culture growing S. pneumoniae sensitive to ceftriaxone (final susceptibility report pending). Azithromycin discontinued; transitioned to oral amoxicillin to complete a 7-day total course counted from the first ceftriaxone dose on HD1 (HD3 plan had been 5–7 days; set at 7 days). Afebrile by HD2, weaned to room air by HD3, WBC normalized to 9.8. Resolved at discharge.
 # COPD: No acute exacerbation requiring steroids; continued maintenance tiotropium with PRN nebs.
-# T2DM: Metformin held during acute illness, managed with sliding-scale insulin; metformin resumed at discharge with stable glucoses.
+# T2DM: Metformin held during acute illness, managed with sliding-scale insulin; metformin resumed before discharge with stable glucoses.
 # HTN: Continued home lisinopril, controlled throughout.
 Procedures: None.
 Consults: None.
 
 DISCHARGE MEDICATIONS (with changes flagged):
-- Amoxicillin 875 mg PO BID to complete through [date] (7-day total course) — STARTED for pneumonia.
+- Amoxicillin PO [dose and frequency not stated in input — prescriber to specify; VERIFY: current ATS/IDSA CAP guideline, final susceptibilities and product label] to complete through [date of day 7, counted from first ceftriaxone dose on HD1] (7-day total course) — STARTED for pneumonia.
 - Tiotropium 18 mcg inhaled daily — continued.
 - Lisinopril 20 mg daily — continued.
 - Metformin 1000 mg BID — RESUMED (held inpatient during acute illness).
 - CHANGES: STARTED amoxicillin (finish course); ceftriaxone/azithromycin were inpatient only and STOPPED at discharge; metformin resumed.
 
-PENDING RESULTS AT DISCHARGE (with owner): None — blood cultures finalized (no growth), sputum culture finalized (S. pneumoniae, sensitivities reported). No open results.
+PENDING RESULTS AT DISCHARGE (with owner):
+- Sputum culture final report (S. pneumoniae; full susceptibility panel) — expected [date not stated] — owner: [not named in input — assign before discharge: discharging team or PCP] — action: if not susceptible to amoxicillin, contact patient and change antibiotic.
+- Blood cultures: finalized, no growth (not pending).
 
 FOLLOW-UP:
 - PCP in 1 week — confirm clinical resolution, repeat exam, ensure antibiotic course completed; address tobacco cessation and pneumococcal/influenza vaccination status.

@@ -110,7 +110,7 @@ DISPOSITION: [patient condition, extubation, transfer location]
 
 ## Worked Example
 
-**Input:** Laparoscopic cholecystectomy. Preop dx: acute cholecystitis. Postop dx: same. Surgeon Dr. X, assist resident. General anesthesia. Indication: ultrasound-confirmed cholecystitis with gallstones, failed medical management. Findings: distended, inflamed gallbladder with stones, no CBD dilation, critical view of safety achieved. Technique: 4-port laparoscopic, cystic duct and artery clipped and divided, gallbladder dissected from liver bed, removed via umbilical port. EBL minimal (<25 mL). No drains. Counts correct. No complications. Specimen gallbladder to path.
+**Input:** Laparoscopic cholecystectomy. Preop dx: acute cholecystitis. Postop dx: same. Surgeon Dr. X, assist resident. General endotracheal anesthesia. Indication: ultrasound-confirmed cholecystitis with gallstones, failed medical management; informed consent (risks, benefits, alternatives) obtained and on chart. Findings: distended, inflamed gallbladder with multiple stones, no CBD dilation, normal biliary anatomy, critical view of safety achieved before dividing any structure, no bile duct injury. Technique: supine; time-out performed; prepped and draped sterile; pneumoperitoneum via umbilical port, 4-port laparoscopic under direct vision; gallbladder retracted cephalad, hepatocystic triangle dissected to critical view; cystic duct and artery each doubly clipped and divided; gallbladder dissected from liver bed with electrocautery, liver bed hemostatic; removed in retrieval bag via umbilical port; ports removed under vision, umbilical fascia closed, skin closed, sterile dressings. EBL minimal (<25 mL). Fluids/UOP not dictated (on anesthesia record). No drains. Counts correct x2. No complications. Specimen gallbladder to path. Extubated in OR, to PACU stable.
 
 **Output:**
 
@@ -126,12 +126,12 @@ FINDINGS:
 Distended, acutely inflamed gallbladder containing multiple stones. No common bile duct dilation. Critical view of safety was clearly achieved prior to division of any structures. No evidence of bile duct injury or aberrant anatomy.
 
 DESCRIPTION OF PROCEDURE:
-The patient was identified, brought to the OR, and placed supine. A surgical time-out was performed confirming patient, procedure, and site. General anesthesia was induced. The abdomen was prepped and draped in standard sterile fashion. Pneumoperitoneum was established via the umbilical port using standard technique, and a 4-port laparoscopic approach was established under direct visualization. The gallbladder was retracted cephalad. The hepatocystic triangle was dissected and the critical view of safety was obtained, clearly identifying the cystic duct and cystic artery. Both were doubly clipped and divided. The gallbladder was dissected free from the liver bed using electrocautery, with attention to hemostasis. The gallbladder was placed in a retrieval bag and removed through the umbilical port. Hemostasis of the liver bed was confirmed. The ports were removed under direct visualization, pneumoperitoneum was released, and the fascial defect at the umbilicus was closed. Skin incisions were closed and sterile dressings applied.
+The patient was placed supine. A surgical time-out was performed. General endotracheal anesthesia was induced. The abdomen was prepped and draped in standard sterile fashion. Pneumoperitoneum was established via the umbilical port, and a 4-port laparoscopic approach was established under direct visualization. The gallbladder was retracted cephalad. The hepatocystic triangle was dissected and the critical view of safety was obtained, clearly identifying the cystic duct and cystic artery. Both were doubly clipped and divided. The gallbladder was dissected free from the liver bed using electrocautery; the liver bed was hemostatic. The gallbladder was placed in a retrieval bag and removed through the umbilical port. The ports were removed under direct visualization and the umbilical fascia was closed. Skin incisions were closed and sterile dressings applied.
 
 SPECIMENS: Gallbladder sent to pathology.
 IMPLANTS/DEVICES: None.
 ESTIMATED BLOOD LOSS: Minimal (<25 mL).
-FLUIDS / URINE OUTPUT: Per anesthesia record; adequate.
+FLUIDS / URINE OUTPUT: [per anesthesia record — value not provided].
 DRAINS: None.
 COUNTS: Sponge, instrument, and needle counts correct x2.
 COMPLICATIONS: None.

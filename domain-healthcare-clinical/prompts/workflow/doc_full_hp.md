@@ -123,7 +123,7 @@ VTE prophylaxis: [...]
 
 ## Worked Example
 
-**Input:** 68 y/o M, admitted from ED with 3 days of productive cough, fever, dyspnea. PMH COPD, HTN, T2DM. Meds: tiotropium, lisinopril, metformin. Smoker 40 pack-years. Vitals T 38.9, HR 108, BP 142/84, RR 24, SpO2 88% on RA → 94% on 2L. Exam: ill-appearing, right basilar crackles, no wheeze at rest. Labs: WBC 16.2 (neutrophil-predominant), lactate 1.8, glucose 244, Cr 1.0. CXR: right lower lobe consolidation. Procalcitonin elevated.
+**Input:** 68 y/o M, admitted from ED with 3 days of productive cough, fever, dyspnea. Patient: "coughing and short of breath for 3 days." Began with coryza, then yellow-green sputum and right-sided pleuritic chest pain; dyspnea now after one flight of stairs (baseline unlimited). Positive for fever and chills. Denies hemoptysis, orthopnea, PND, leg swelling, chest pressure at rest, abdominal pain, dysuria. PMH COPD, HTN, T2DM. PSH none. Meds: tiotropium 18 mcg inhaled daily, lisinopril 20 mg daily, metformin 1000 mg BID. Allergies: NKDA (confirmed with patient). FHx non-contributory. Current smoker, 40 pack-years; lives with spouse; independent in ADLs. Vitals T 38.9, HR 108, BP 142/84, RR 24, SpO2 88% on RA → 94% on 2L. Exam: ill-appearing, mild respiratory distress, alert and oriented; right basilar crackles, no wheeze at rest, no accessory muscle use; tachycardic, regular, no murmur; no edema. Labs: WBC 16.2 (neutrophil-predominant), lactate 1.8, glucose 244, Cr 1.0 (reference ranges not supplied). BUN not resulted. CXR: right lower lobe consolidation. Procalcitonin elevated. Code status: full code, confirmed with patient.
 
 **Output:**
 
@@ -136,7 +136,7 @@ HPI:
 PAST MEDICAL HISTORY: COPD, hypertension, type 2 diabetes mellitus.
 PAST SURGICAL HISTORY: None reported.
 MEDICATIONS: Tiotropium 18 mcg inhaled daily; lisinopril 20 mg daily; metformin 1000 mg BID.
-ALLERGIES: NKDA.
+ALLERGIES: NKDA (confirmed with patient).
 FAMILY HISTORY: Non-contributory to current presentation.
 SOCIAL HISTORY: 40 pack-year smoker, currently smoking; lives with spouse; independent in ADLs.
 
@@ -150,15 +150,15 @@ PHYSICAL EXAM:
 - Extremities: No edema.
 
 DATA:
-- Labs: WBC 16.2 (neutrophil-predominant) — leukocytosis; glucose 244; Cr 1.0 (normal); lactate 1.8 (not elevated); procalcitonin elevated (supports bacterial etiology).
+- Labs: WBC 16.2 (neutrophil-predominant) — leukocytosis; glucose 244; Cr 1.0 and lactate 1.8 (lab reference ranges not supplied — confirm against reporting lab); BUN not resulted; procalcitonin elevated (supports bacterial etiology).
 - Imaging: CXR — right lower lobe consolidation.
 
 ASSESSMENT:
-68 y/o M smoker with COPD presenting with fever, focal consolidation, leukocytosis, and hypoxia — community-acquired pneumonia. CURB-65: confusion no, BUN (pending exact), RR 24 (≥30 no), BP not hypotensive, age ≥65 yes → at least 1–2 points; admit appropriate given hypoxia requiring O2. No features of sepsis (lactate normal, hemodynamically stable). Hyperglycemia likely stress/illness-related.
+68 y/o M smoker with COPD presenting with fever, focal consolidation, leukocytosis, and hypoxia — community-acquired pneumonia. CURB-65: confusion no (0), BUN not resulted (unscored), RR 24 (≥30 no, 0), BP 142/84 (0), age ≥65 yes (1) → ≥1, incomplete pending BUN; admit appropriate given hypoxia requiring O2. Sepsis screen: meets SIRS criteria (T 38.9, HR 108, RR 24, WBC 16.2) with a suspected pulmonary source; Sepsis-3 SOFA not calculable from supplied data (no ABG/PaO2, platelets or bilirubin) — new hypoxemia requiring O2 may represent respiratory organ dysfunction. Normotensive, lactate 1.8 — no features of septic shock on supplied data. [VERIFY: sepsis definition applied and lactate cutoff against Sepsis-3 / current Surviving Sepsis Campaign guideline and local sepsis protocol.] Hyperglycemia likely stress/illness-related.
 
 PLAN (by problem):
 # Community-acquired pneumonia
-- Dx: blood cultures x2 before antibiotics, sputum culture, respiratory viral panel, repeat CXR if not improving.
+- Dx: blood cultures x2 before antibiotics, sputum culture, respiratory viral panel, BUN to complete CURB-65, repeat CXR if not improving.
 - Tx: ceftriaxone 1 g IV daily + azithromycin 500 mg IV/PO daily (CAP, admitted non-ICU). Reassess de-escalation with cultures.
 - Monitoring: continuous pulse oximetry, titrate O2 to SpO2 ≥92%, trend WBC and clinical response.
 # COPD
@@ -169,6 +169,6 @@ PLAN (by problem):
 - Continue lisinopril; monitor in setting of acute illness.
 
 Dispo: Medicine floor with telemetry/continuous pulse ox.
-Code status: Full (confirm with patient).
+Code status: Full code (confirmed with patient).
 VTE prophylaxis: Enoxaparin 40 mg SC daily.
 ```

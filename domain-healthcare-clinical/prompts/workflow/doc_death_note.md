@@ -110,22 +110,22 @@ DISPOSITION:
 
 ## Worked Example
 
-**Input:** 84 y/o F with metastatic pancreatic cancer, transitioned to comfort-focused care 3 days ago, DNR/DNAR. On a morphine infusion for comfort. Family at bedside. Nurse called clinician at 14:32 reporting patient appeared to have stopped breathing. Examined at 14:35. Found unresponsive, no respirations over 2 minutes, no heart sounds or pulses over 1 minute, pupils fixed. Pronounced 14:37. Attending notified. Family present. Death expected/natural from known terminal illness — not ME-reportable. Autopsy declined by family. Organ procurement organization notified per hospital policy; not a donation candidate given metastatic malignancy.
+**Input:** 84 y/o F with metastatic pancreatic cancer, transitioned to comfort-focused care 3 days ago, DNR/DNAR. On a morphine infusion for comfort; per nursing, declining over the past days and appearing comfortable without distress. Family at bedside. Nurse called clinician at 14:32 reporting patient appeared to have stopped breathing. No resuscitation attempted (DNR). Examined at 14:35. Found unresponsive, no respirations over 2 minutes, no heart sounds or pulses over 1 minute, pupils fixed. Pronounced 14:37. Attending notified at 14:40. Family present. Death expected/natural from known terminal illness — not ME-reportable. Autopsy declined by family. Organ procurement organization notified per hospital policy; not a donation candidate given metastatic malignancy.
 
 **Output:**
 
 ```
 DEATH NOTE
 
-CONTEXT: 84 y/o F with metastatic pancreatic adenocarcinoma, transitioned to comfort-focused care 3 days prior with DNR/DNAR status, on a morphine infusion for symptom control. Death was anticipated as a natural progression of her terminal illness.
+CONTEXT: 84 y/o F with metastatic pancreatic cancer, transitioned to comfort-focused care 3 days prior with DNR/DNAR status, on a morphine infusion for symptom control. Death was anticipated as a natural progression of her terminal illness.
 
 CALLED TO EVALUATE: 14:32 | EXAMINED: 14:35.
 
 PRONOUNCEMENT EXAMINATION:
 - Unresponsive to verbal and tactile/noxious stimuli.
-- No spontaneous respirations observed over 2 minutes of continuous observation.
-- No heart sounds on auscultation; no palpable carotid or femoral pulses over 1 minute.
-- Pupils fixed and non-reactive bilaterally.
+- No spontaneous respirations observed over 2 minutes of observation.
+- No heart sounds on auscultation; no palpable pulses over 1 minute [pulse sites not recorded].
+- Pupils fixed.
 
 TIME OF DEATH: 14:37.
 
@@ -134,10 +134,10 @@ TERMINAL EVENTS: Patient had been declining over the preceding days on comfort-f
 NOTIFICATIONS:
 - Attending physician notified at 14:40.
 - Family was present at the bedside at the time of death.
-- Spiritual care offered to the family.
+- Spiritual care: [not documented].
 
 DISPOSITION:
-- Medical examiner/coroner: Not reportable — expected natural death from a known terminal illness.
+- Medical examiner/coroner: Not reportable per clinician (input) — expected natural death from a known terminal illness [confirm against local ME criteria].
 - Autopsy: Discussed with family; declined.
 - Organ/tissue donation: Organ procurement organization notified per hospital policy; patient not a candidate given metastatic malignancy.
 ```

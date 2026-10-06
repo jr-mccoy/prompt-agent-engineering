@@ -108,7 +108,7 @@ TEAM PRESENT: [code leader + roles]
 
 ## Worked Example
 
-**Input:** Code blue, telemetry floor, monitored patient found pulseless. Onset 03:14, team arrived 03:15. Initial rhythm VF. CPR started 03:14. Shock 200 J at 03:15, epinephrine 1 mg IV 03:16, CPR continued; 03:17 rhythm check still VF, shock 200 J, amiodarone 300 mg IV 03:18; 03:19 still VF, shock, CPR; epinephrine 1 mg 03:21; 03:23 rhythm organized, pulse present — ROSC. Post-ROSC BP 96/58, intubated during code at 03:20. K returned 6.8 from labs drawn at start; calcium gluconate and insulin/D50 given 03:22. Transferred ICU.
+**Input:** Code blue, telemetry floor, monitored patient found pulseless, unresponsive and apneic. Onset 03:14, team arrived 03:15. Initial rhythm VF. CPR started and pads placed 03:14. Hs/Ts considered: hyperkalemia, hypoxia, acidosis; labs drawn at onset. Shock 200 J biphasic at 03:15, epinephrine 1 mg IV 03:16, CPR continued; 03:17 rhythm check still VF, shock 200 J biphasic, amiodarone 300 mg IV 03:18; 03:19 still VF, shock, CPR; intubated 03:20, placement confirmed by waveform capnography; epinephrine 1 mg IV 03:21; K returned 6.8 from labs drawn at onset; calcium gluconate 1 g IV and regular insulin 10 units IV + D50 given 03:22; 03:23 rhythm organized, pulse present — ROSC. Post-ROSC BP 96/58; not following commands post-ROSC. Remaining onset labs pending. Allergies per chart: NKDA. Wife notified by phone of the event and ICU transfer. Transferred ICU. Team: code leader (documenting), airway/anesthesia, compressions rotation, pharmacy, bedside RN, recorder.
 
 **Output:**
 
@@ -120,31 +120,32 @@ TRIGGER: Monitored patient on telemetry found pulseless; telemetry showed ventri
 INITIAL ASSESSMENT:
 - Unresponsive, pulseless, not breathing.
 - Initial rhythm: ventricular fibrillation (shockable).
-- Reversible causes considered: hyperkalemia (recent illness/renal), hypoxia, acidosis; labs drawn at onset.
+- Reversible causes considered: hyperkalemia, hypoxia, acidosis; labs drawn at onset.
 
 RESUSCITATION TIMELINE:
-03:14 — Pulselessness confirmed; high-quality CPR initiated. Pads placed.
+03:14 — Pulselessness confirmed; CPR initiated. Pads placed.
 03:15 — Rhythm VF → defibrillation 200 J (biphasic); CPR resumed immediately.
 03:16 — Epinephrine 1 mg IV; CPR continued.
-03:17 — Rhythm check: VF persists → defibrillation 200 J; CPR resumed.
+03:17 — Rhythm check: VF persists → defibrillation 200 J (biphasic); CPR resumed.
 03:18 — Amiodarone 300 mg IV bolus; CPR continued.
-03:19 — Rhythm check: VF persists → defibrillation 200 J; CPR resumed.
-03:20 — Endotracheal intubation performed; tube confirmed by capnography; ventilation continued.
+03:19 — Rhythm check: VF persists → defibrillation [energy not recorded]; CPR resumed.
+03:20 — Endotracheal intubation performed; placement confirmed by waveform capnography; ventilation continued.
 03:21 — Epinephrine 1 mg IV (second dose); CPR continued.
-03:22 — Stat K returned 6.8 → calcium gluconate 1 g IV, regular insulin 10 units IV + D50, sodium bicarbonate given for presumed hyperkalemic contribution.
+03:22 — K 6.8 (labs drawn at onset; time resulted not recorded) → calcium gluconate 1 g IV, regular insulin 10 units IV + D50 [D50 volume not recorded].
 03:23 — Rhythm check: organized rhythm with palpable pulse — ROSC achieved.
 
-REVERSIBLE CAUSES ADDRESSED: Hyperkalemia (K 6.8) — calcium gluconate, insulin/dextrose, bicarbonate. Hypoxia — secured airway.
+REVERSIBLE CAUSES ADDRESSED: Hyperkalemia (K 6.8) — calcium gluconate, insulin/dextrose. Hypoxia — secured airway.
 
 OUTCOME:
-- ROSC at 03:23. Post-ROSC BP 96/58, intubated and ventilated, organized rhythm on monitor. Total arrest-to-ROSC interval ~9 minutes.
+- ROSC at 03:23. Post-ROSC BP 96/58, intubated and ventilated, organized rhythm on monitor; not following commands post-ROSC. Total arrest-to-ROSC interval 9 minutes (03:14 → 03:23).
 
 POST-EVENT PLAN:
 - Transfer to ICU for post-arrest care.
 - Post-ROSC 12-lead ECG, repeat BMP/VBG, recheck K and treat ongoing hyperkalemia (consider dialysis if refractory/renal failure).
-- Hemodynamic support: norepinephrine for MAP ≥65 as needed; targeted temperature management consideration per post-arrest protocol given comatose state.
+- Hemodynamic support: norepinephrine for MAP ≥65 as needed; targeted temperature management consideration per post-arrest protocol given patient not following commands post-ROSC.
 - Identify and treat hyperkalemia etiology.
-- Family notified of the event and ICU transfer.
+- Outstanding: remaining labs drawn at onset (pending) — ICU team to follow. Allergies: NKDA (per chart).
+- Wife notified by phone of the event and ICU transfer.
 
 TEAM PRESENT: Code team leader (documenting), airway/anesthesia, compressions rotation, pharmacy, bedside RN, recorder.
 ```

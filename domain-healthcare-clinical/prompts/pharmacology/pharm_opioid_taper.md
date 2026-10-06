@@ -114,8 +114,8 @@ Senior pain-medicine, addiction-medicine, or primary-care physician writing the 
 ## False-Positive Prevention
 
 ❌ **DON'T:**
-- Publish a `TAPER SCHEDULE` whose later steps exceed the stated rate; a step from 70 to 50 mg/day oxycodone is a 29% cut, not 5–10%.
-- Leave visible recalculation scratch ("wait, let's recompute") or two different totals in `PATIENT SNAPSHOT`.
+- Publish a `TAPER SCHEDULE` whose later steps exceed the stated rate; a fixed-mg step becomes a larger percentage as the dose falls, so each step must be recomputed as a % of the current dose.
+- Leave visible recalculation scratch or two different totals in `PATIENT SNAPSHOT`.
 - Use an MME factor without naming the conversion source, or a dose that requires a tablet strength the product does not come in.
 - Add gabapentin or another CNS depressant as an adjunct without stating the respiratory-depression interaction with opioids and the renal dose limit.
 
@@ -189,7 +189,7 @@ FOLLOW-UP:
 
 ```
 PATIENT SNAPSHOT:
-- 54 y M, oxycodone CR 40 BID + IR 10 q6h prn (4×/d) = 60 mg CR + 40 mg IR = 100 mg/day oxycodone = 150 MME/day (using MME factor 1.5 for oxycodone). Note: if reported 120 mg/day with all 4 IR + 80 mg CR = wait, let's recompute: oxycodone CR 40 mg BID = 80 mg + IR 10 q6h × 4 = 40 mg → total 120 mg/day = 180 MME/day. (Confirming 180 MME/day.)
+- 54 y M, oxycodone CR 40 mg BID (80 mg) + IR 10 mg q6h prn × 4/day (40 mg) = 120 mg/day oxycodone = 180 MME/day (using MME factor 1.5 for oxycodone).
 - 8 years on chronic opioid therapy. Function declining. UDS clean. No OUD.
 - Sertraline-treated mild depression.
 
@@ -197,16 +197,16 @@ PATH SELECTION:
 - **Dose reduction** path (no OUD, declining function on current dose, patient consents).
 - Multimodal alternatives optimized in parallel.
 
-TAPER SCHEDULE (5–10% every 4 weeks, individualized):
+TAPER SCHEDULE (5–10% every 4 weeks, individualized; >1 year on therapy meets this file's "slower" criterion, so later steps are kept near 5–7% and drop to 5% if withdrawal or mood worsens):
 - **Month 0–1:** current regimen (180 MME/day); engage in adjuncts and alternatives.
 - **Month 1–2:** **reduce IR by 10 mg/day** — IR 10 mg q8h prn (3×/d max) = 30 mg IR; total 110 mg/day oxycodone = 165 MME/day (8% reduction).
 - **Month 2–3:** **reduce IR further** — IR 10 mg q12h prn (2×/d) = 20 mg IR; total 100 mg = 150 MME/day.
-- **Month 3–4:** **reduce CR** — oxycodone CR 30 mg AM + 40 mg PM = 70 mg CR + 20 mg IR = 90 mg/day = 135 MME/day.
-- **Month 4–5:** CR 30 mg BID = 60 mg CR + 20 mg IR = 80 mg/day = 120 MME/day.
-- **Month 5–6:** CR 20 mg AM + 30 mg PM + IR 10 mg BID prn = 50 + 20 = 70 mg/day = 105 MME/day.
-- **Month 6–7:** CR 20 mg BID + IR 10 mg daily prn = 40 + 10 = 50 mg/day = 75 MME/day.
-- **Month 7–8:** CR 10 mg AM + 20 mg PM + IR 10 mg prn = 30 + 10 = 40 mg/day = 60 MME/day. Reassess goal.
-- **Months 8–12 and beyond:** continue 5–10% monthly reductions if patient consents and function holds.
+- **Month 3–4:** **reduce CR** — oxycodone CR 30 mg AM + 40 mg PM = 70 mg CR + 20 mg IR = 90 mg/day = 135 MME/day (10% reduction).
+- **Month 4–5:** CR 30 mg AM + 40 mg PM + IR 5 mg TID prn = 70 + 15 = 85 mg/day = 127.5 MME/day (5.6% reduction).
+- **Month 5–6:** CR 30 mg BID + IR 10 mg BID prn = 60 + 20 = 80 mg/day = 120 MME/day (5.9% reduction).
+- **Month 6–7:** CR 30 mg BID + IR 5 mg TID prn = 60 + 15 = 75 mg/day = 112.5 MME/day (6.25% reduction).
+- **Month 7–8:** CR 30 mg BID + IR 10 mg daily prn = 60 + 10 = 70 mg/day = 105 MME/day (6.7% reduction). Reassess goal.
+- **Months 8–12 and beyond:** continue 5–10% monthly reductions (each step recomputed as a % of the current dose) if patient consents and function holds.
 - Reassessment at each step: function, withdrawal severity, pain, mood, suicidality. Pause if needed.
 
 WITHDRAWAL ADJUNCTS:
