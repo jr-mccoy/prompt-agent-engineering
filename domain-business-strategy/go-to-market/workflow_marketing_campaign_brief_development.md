@@ -15,7 +15,7 @@ tags:
   - positioning
   - channel-mix
   - metrics
-updated: "2026-08-28"
+updated: "2026-10-06"
 related_prompts:
   - domain-business-strategy/go-to-market/workflow_marketing_content_performance_analysis.md
 ---
@@ -47,6 +47,7 @@ Team: [Available resources]
 Geography: [Markets to cover]
 Must-Use Channels: [Any required platforms]
 Brand Guidelines: [Link or key restrictions]
+Presented to: [Internal team / Client — if you are an agency or consultant presenting this strategy to a client, name the decision the client must make from it (approve budget, pick a channel mix, sign off on targets)]
 
 ### REQUIRED OUTPUT FORMAT
 

@@ -325,3 +325,6 @@ domain-agentic-resources/skills/ai-native-rollouts/README.md	domain-agentic-reso
 domain-agentic-resources/skills/review-prompt/SKILL.md	domain-agentic-resources/skills/llm-application-dev/review-prompt/SKILL.md
 domain-agentic-resources/skills/vibe-coding-rescue/SKILL.md	domain-agentic-resources/skills/developer-tools/vibe-coding-rescue/SKILL.md
 domain-agentic-resources/skills/vibe-coding-rescue/README.md	domain-agentic-resources/skills/developer-tools/vibe-coding-rescue/README.md
+domain-professional-writing/domain-specific/domain_writing_attorney_discovery.md	DELETED merged-into:domain-legal/discovery/legal_discovery_response_objections.md
+domain-professional-writing/domain-specific/domain_writing_physician_soap.md	DELETED merged-into:domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
+domain-professional-writing/domain-specific/domain_writing_marketing_campaign.md	DELETED merged-into:domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md

@@ -11,6 +11,7 @@ pae_08dn01gz4ws2	merged_into	pae_txmdtq7yjnym	resource	meta/REORG_MAP.tsv
 pae_0dd163pbspkb	superseded_by	pae_8vm5kbge47hs	resource	meta/REORG_MAP.tsv
 pae_0e4r34k5deqb	previous_path	domain-discipleship/after-harm/discipleship_after_a_mentor_is_removed.md	path	meta/REORG_MAP.tsv
 pae_0f4q4gm46k98	superseded_by	pae_m81r991bj7ff	resource	meta/REORG_MAP.tsv
+pae_0jr8xneskfa5	merged_into	pae_ey41p1f2rshs	resource	meta/REORG_MAP.tsv
 pae_0rywm8vrv9w8	previous_path	domain-business-strategy/go-to-market/workflow_sales_discovery_call_preparation.md	path	meta/REORG_MAP.tsv
 pae_0rywm8vrv9w8	previous_path	domain-engineering-workflows/workflows/workflow_sales_discovery_call_preparation.md	path	meta/REORG_MAP.tsv
 pae_0tdj10jvk5bw	superseded_by	pae_jf5dhdb3p3w4	resource	meta/REORG_MAP.tsv
@@ -126,6 +127,7 @@ pae_a7r48mr3eh6h	previous_path	domain-psychology/populations/perinatal/psycholog
 pae_ab77enm8vwmw	copy_of	pae_h7fg838k6cpx	resource	meta/VENDORED.tsv
 pae_afc7xjnznsck	previous_path	domain-engineering-workflows/ai-patterns/ai_pattern_engineering_manager_stance.md	path	meta/REORG_MAP.tsv
 pae_at5p7zh68hxh	previous_path	domain-discipleship/curriculum-architecture/discipleship_multiplication_governance_and_material_drift.md	path	meta/REORG_MAP.tsv
+pae_axd2fkb1ny3y	merged_into	pae_zpfk4j29f6ct	resource	meta/REORG_MAP.tsv
 pae_b14qxxqpjgs7	copy_of	pae_1c1qwcwqy4d9	resource	meta/VENDORED.tsv
 pae_b5075fa97raz	previous_path	domain-business-strategy/organization/organization_knowledge_base_gap_analysis.md	path	meta/REORG_MAP.tsv
 pae_b65rhkm0aa71	previous_path	domain-agentic-resources/skills/review-prompt/SKILL.md	path	meta/REORG_MAP.tsv
@@ -366,3 +368,4 @@ pae_zqfpmgd78g8e	merged_into	pae_1fwfr2warbec	resource	techniques/MASTER_TECHNIQ
 pae_zrf2fa7c3erq	previous_path	domain-business-strategy/startup/solo_dev_weekly_operating_rhythm.md	path	meta/REORG_MAP.tsv
 pae_zs2xn23gejd7	previous_path	domain-decision-making/decisioning_competitive_intelligence_scanner.md	path	meta/REORG_MAP.tsv
 pae_zx82cm8dpr5v	previous_path	domain-personal-development/prompts/productivity/productivity_focus_ritual_design.md	path	meta/REORG_MAP.tsv
+pae_zxs2nge5b0a8	merged_into	pae_tha3hwz2pd91	resource	meta/REORG_MAP.tsv

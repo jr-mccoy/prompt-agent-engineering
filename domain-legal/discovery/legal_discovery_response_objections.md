@@ -17,12 +17,11 @@ tags:
   - rule-34
   - rule-33
   - rule-36
-updated: "2026-05-08"
+updated: "2026-10-06"
 related_prompts:
   - domain-legal/discovery/legal_document_request_drafter.md
   - domain-legal/discovery/legal_interrogatory_drafter.md
   - domain-legal/discovery/legal_meet_and_confer_letter.md
-  - domain-professional-writing/domain-specific/domain_writing_attorney_discovery.md
 ---
 
 **Purpose:** Produce defensible discovery responses — RFPs, interrogatories, and RFAs — that comply with Rule 34/33/36 specificity-of-objection requirements, preserve grounds, signal what is being withheld, and avoid the boilerplate-objection traps that get sustained against the responder.
@@ -36,11 +35,13 @@ related_prompts:
 - **Court / venue and rule set:** [Federal / state]
 - **Discovery to which we are responding:** [RFPs / Interrogatories / RFAs — paste each request and its number]
 - **Client (responder):** [Plaintiff / defendant]
+- **Case background and client position:** [Two or three sentences: claims, defenses, and which facts are contested — so each response is drafted against the theory of the case]
 - **Position on each request:** [Objection grounds, partial response, full response, withholding, RFA admit/deny/qualify/lack-of-knowledge]
 - **Privilege concerns:** [Attorney-client, work product, common-interest, state-specific privileges]
 - **ESI / proportionality issues:** [Burden, accessibility, source]
 - **Confidentiality / protective order status:** [In place / pending]
 - **Documents being produced:** [Bates ranges by request, if known]
+- **Facts and documents behind each answer:** [For each interrogatory, the facts the client has confirmed and the documents that support them; mark anything not yet confirmed with the client]
 - **What we want preserved or signaled:** [E.g., reservation of rights to supplement, objection to definitions, scope dispute]
 
 ---
@@ -64,6 +65,7 @@ related_prompts:
 - Deny an RFA evasively. A non-responsive denial can be sanctioned and used to shift fees under Rule 37(c)(2).
 - Claim privilege without committing to a privilege log under Rule 26(b)(5).
 - Refuse to answer an interrogatory by directing to "documents already produced" without specifying Bates ranges sufficient under Rule 33(d).
+- Narrow an interrogatory answer by omission to avoid an unhelpful admission. The answer is verified under oath; limit scope through a stated, specific objection, and answer fully within what remains. Any fact the client has not confirmed is flagged for confirmation before verification, not drafted as if confirmed.
 
 ---
 

@@ -1,3 +1,27 @@
+---
+title: "Executive Proposal Template (BLUF Format)"
+category: professional-writing/business-writing
+description: "Fill-in template for a budget request, headcount ask, or initiative approval: BLUF request and recommendation, one-page executive summary, investment and return tables with confidence, sensitivity, alternatives including do-nothing, and next steps — the reusable skeleton behind the proposal writer."
+techniques:
+  - ST-03
+  - NE-11
+  - QA-04
+  - DS-06
+difficulty: intermediate
+tags:
+  - executive-proposal
+  - bluf
+  - budget-request
+  - business-case
+  - roi-payback
+  - proposal-template
+updated: "2026-10-06"
+related_prompts:
+  - domain-professional-writing/business-writing/business_writing_proposal.md
+  - domain-professional-writing/business-writing/business_writing_executive_brief.md
+  - domain-professional-writing/business-writing/business_writing_investment_proposal_example.md
+---
+
 # Executive Proposal Template (BLUF Format)
 
 > Copy this template for budget requests, initiative approvals, and strategic recommendations.
@@ -11,7 +35,7 @@
 **Prepared for:** [Decision maker(s) - name and role]
 **Prepared by:** [Your name and role]
 **Date:** [Date]
-**Decision Requested By:** [Date - create urgency]
+**Decision Requested By:** [Date — tied to a real deadline: budget cycle, contract expiry, vendor price hold. If none exists, say so]
 
 ---
 
@@ -223,3 +247,29 @@ Before submitting:
 - [ ] Executive summary stands alone (1 page max)
 - [ ] Numbers have sources
 - [ ] Tone is confident but not arrogant
+- [ ] Every figure in the BLUF and executive summary recomputes from the tables beneath it
+
+---
+
+## False-Positive Prevention
+
+The template makes a weak case *look* finished: every box can be filled while the case underneath
+is unsupported. Before submitting, check for these:
+
+1. **A return table with no baseline source.** "Current: 18% churn" must say where 18% came from
+   (system, period). A projected value against an unsourced baseline is a guess with two decimals.
+2. **"Confidence: High" on a single estimate.** High confidence needs a measured baseline *and* a
+   comparable precedent (a pilot, a vendor case at a similar company you can name). One of the two
+   is Medium; neither is Low.
+3. **ROI and payback that disagree.** Recompute both from the Investment and Expected Return tables:
+   payback (months) = total investment ÷ monthly net benefit. If the summary's numbers don't come out
+   of the tables, the reviewer will find it first.
+4. **A sensitivity table where every row approves.** If even the conservative case clears the bar
+   comfortably, say what assumption would have to fail for the proposal to lose money — that is the
+   number leadership will probe.
+5. **A straw-man "Do Nothing" row.** Do-nothing has a real cost and a real benefit (cash kept,
+   attention kept). If its consequences are written as catastrophe, the alternatives table stops
+   being evidence.
+6. **Manufactured urgency.** "Why Now" must name a dated forcing event. Pressure without one reads as
+   salesmanship and spends credibility the next proposal will need.
+7. **Risks without owners.** A mitigation nobody owns is a hope; each row names who acts and when.

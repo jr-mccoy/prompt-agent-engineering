@@ -104,7 +104,7 @@ class GenerationTests(unittest.TestCase):
 
     def test_tombstones_are_deprecated_and_metadata_only(self):
         tombstones = [r for r in self.result.records if r["lifecycle"] == "tombstone"]
-        self.assertEqual(len(tombstones), 53)
+        self.assertEqual(len(tombstones), 56)
         for record in tombstones:
             self.assertEqual(record["governance"]["maturity"], "deprecated")
             self.assertEqual(record["serving_policy"]["value"], "metadata_only")
@@ -145,9 +145,9 @@ class GenerationTests(unittest.TestCase):
         summary = self.result.summary
         self.assertEqual(summary["by_kind_live"], {
             "agent": 168, "command": 156, "persona": 57,
-            "prompt": 4763, "skill": 358, "technique": 336,
+            "prompt": 4760, "skill": 358, "technique": 336,
         })
-        self.assertEqual(summary["by_kind_tombstone"], {"prompt": 53})
+        self.assertEqual(summary["by_kind_tombstone"], {"prompt": 56})
         self.assertEqual(summary["total_records"], 5891)
 
     def test_summary_matches_the_records(self):

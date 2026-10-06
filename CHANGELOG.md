@@ -42,6 +42,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Covered by 8 new unit tests.
 
 ### Changed
+- **Quality backfill, batch 1: the `domain_writing_*` stubs** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6, "Quality backfill").
+  - **21 stubs rewritten to the house standard** in `domain-professional-writing/domain-specific/`. Each now has frontmatter, a "Not this prompt if" naming its nearest neighbour, delimited inputs, a method with a verify step, an output format, a verification checklist, a profession-specific False-Positive Prevention section, one coherent worked example, and techniques used. Code, tax, clinical, platform and MLS rules are `[VERIFY]` slots, never stated from memory.
+  - **3 stubs merged** into stronger neighbours and recorded in `meta/REORG_MAP.tsv`: attorney discovery responses → `legal_discovery_response_objections.md`, physician SOAP → `medicine_clinical_documentation.md` (gains an outpatient office-visit variant and the review-status disclaimer), marketing campaign → `workflow_marketing_campaign_brief_development.md`.
+  - **Frontmatter and FPP** added to `business_writing_executive_proposal_template.md` and `business_writing_investment_proposal_example.md`. The worked example's arithmetic was corrected: its scenario labels didn't match its math, and its 3-year ROI ignored license renewals.
+  - Pinned registry counts updated in `scripts/pae_registry/tests/` (prompt 4760, tombstones 56, merged-into 18). Routing metrics are unchanged over all 221 cases.
 - **Routing follow-up on the 22 open regression misses** ([`meta/COVERAGE_ROADMAP.md`](meta/COVERAGE_ROADMAP.md) §6). No query, label, threshold, floor or case changed, and no tag was added.
   - **Engine:** a record's native `name` is no longer indexed when it repeats the title. Only agentic resources carry one (703 of 711 are the title verbatim), so they were matching their title twice where a prompt matches once. Three unit tests in `pae-engine/tests/test_lexical.py`; `pae-engine/docs/search-routing.md` updated.
   - **Effect:** router scope@1 84.6% → 85.2% (case 092 now routes `pricing` to `business-strategy`); R@1 75.0%, MRR 0.800 and kind@1 97.7% unchanged. No other case moves, and flat BM25 still does not lead the shipped ranker.

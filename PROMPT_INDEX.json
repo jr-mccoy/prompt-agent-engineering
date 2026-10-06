@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated": "2026-10-05",
+    "generated": "2026-10-06",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 6168,
-    "artifacts_with_frontmatter": 5238,
-    "artifacts_without_frontmatter": 930,
+    "total_indexed_artifacts": 6165,
+    "artifacts_with_frontmatter": 5261,
+    "artifacts_without_frontmatter": 904,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -14,9 +14,9 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 6168,
-    "prompts_with_frontmatter": 5238,
-    "prompts_without_frontmatter": 930
+    "total_prompts": 6165,
+    "prompts_with_frontmatter": 5261,
+    "prompts_without_frontmatter": 904
   },
   "prompts": [
     {
@@ -51102,7 +51102,7 @@
         "metrics"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-08-28",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-business-strategy/go-to-market/workflow_marketing_content_performance_analysis.md"
       ],
@@ -85706,11 +85706,12 @@
         "care-team-communication"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-07",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_history_elicitation.md",
         "domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md",
-        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md"
+        "domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md",
+        "domain-healthcare-clinical/prompts/workflow/medicine_em_coding_level_justification.md"
       ],
       "has_frontmatter": true
     },
@@ -102140,12 +102141,11 @@
         "rule-36"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-legal/discovery/legal_document_request_drafter.md",
         "domain-legal/discovery/legal_interrogatory_drafter.md",
-        "domain-legal/discovery/legal_meet_and_confer_letter.md",
-        "domain-professional-writing/domain-specific/domain_writing_attorney_discovery.md"
+        "domain-legal/discovery/legal_meet_and_confer_letter.md"
       ],
       "has_frontmatter": true
     },
@@ -137478,24 +137478,29 @@
       "title": "Executive Proposal Template (BLUF Format)",
       "domain": "professional-writing",
       "category": "professional-writing/business-writing",
-      "description": "> Copy this template for budget requests, initiative approvals, and strategic recommendations.",
-      "techniques": [],
-      "keywords": [
-        "bluf",
-        "bottom",
-        "business",
-        "executive",
-        "investment",
-        "line",
-        "opportunity",
-        "problem",
-        "proposal",
-        "proposed"
+      "description": "Fill-in template for a budget request, headcount ask, or initiative approval: BLUF request and recommendation, one-page executive summary, investment and return tables with confidence, sensitivity, alternatives including do-nothing, and next steps — the reusable skeleton behind the proposal writer.",
+      "techniques": [
+        "ST-03",
+        "NE-11",
+        "QA-04",
+        "DS-06"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "executive-proposal",
+        "bluf",
+        "budget-request",
+        "business-case",
+        "roi-payback",
+        "proposal-template"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-professional-writing/business-writing/business_writing_proposal.md",
+        "domain-professional-writing/business-writing/business_writing_executive_brief.md",
+        "domain-professional-writing/business-writing/business_writing_investment_proposal_example.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/business-writing/business_writing_meeting_notes.md",
@@ -137684,24 +137689,28 @@
       "title": "Worked Example: Building an Investment Proposal",
       "domain": "professional-writing",
       "category": "professional-writing/business-writing",
-      "description": "> This example demonstrates the complete process of creating an executive proposal for a technology investment.",
-      "techniques": [],
-      "keywords": [
-        "analysis",
-        "business",
-        "classification",
-        "context",
-        "determine",
-        "example",
-        "from",
-        "investment",
-        "know",
-        "need"
+      "description": "End-to-end worked example of turning a vague ask ($150K for a customer analytics platform) into an executive investment proposal: classify the task, analyse the audience, quantify the business case with a recomputable ROI, anticipate objections, and assemble the prompt — with the arithmetic traps that sink such proposals called out.",
+      "techniques": [
+        "ST-01",
+        "NE-11",
+        "QA-02",
+        "QA-04"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "worked-example",
+        "investment-proposal",
+        "business-case",
+        "roi-payback",
+        "executive-proposal"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-professional-writing/business-writing/business_writing_executive_proposal_template.md",
+        "domain-professional-writing/business-writing/business_writing_proposal.md",
+        "domain-professional-writing/business-writing/business_writing_executive_brief.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/content-production/content_long_form_script.md",
@@ -138554,497 +138563,667 @@
     {
       "path": "domain-professional-writing/domain-specific/domain_writing_amazon_fba.md",
       "filename": "domain_writing_amazon_fba.md",
-      "title": "Amazon FBA Seller - Product Description",
+      "title": "Amazon FBA Seller Listing Copy — Substantiated Claims, Clean Keywords, Bullets That Convert",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm listing a product on Amazon.",
-      "techniques": [],
-      "keywords": [
-        "amazon",
-        "domain",
-        "fba",
-        "prompt",
-        "writing"
+      "description": "Write an Amazon product listing (title, five bullets, description, backend search terms) from the seller's spec sheet and evidence: every claim traced to a document, restricted health/antimicrobial/'FDA approved' claims removed or held, keywords placed for accuracy rather than stuffed, and marketplace limits marked for verification. Distinct from scoring a finished description (quality_slop_product_description) and from own-site page copy (copywriting skill).",
+      "techniques": [
+        "RT-23",
+        "SV-15",
+        "DS-32",
+        "QA-26"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "amazon-fba",
+        "amazon-listing",
+        "product-listing-copy",
+        "listing-bullets",
+        "backend-search-terms",
+        "claim-substantiation",
+        "write-my-amazon-listing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-professional-writing/content-quality/quality_slop_product_description.md",
+        "domain-image-generation/ecommerce-product/ecommerce_white_background_product.md",
+        "domain-agentic-resources/skills/marketing/copywriting/SKILL.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/domain-specific/domain_writing_architect_proposal.md",
       "filename": "domain_writing_architect_proposal.md",
-      "title": "Architect - Project Proposal",
+      "title": "Architect RFP Response — Scored to the Evaluation Criteria, Commitments with Conditions",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm an architect responding to an RFP.",
-      "techniques": [],
-      "keywords": [
-        "architect",
-        "domain",
-        "prompt",
-        "proposal",
-        "writing"
+      "description": "Write an architecture firm's RFP response that follows the client's evaluation criteria and weights, states schedule and cost commitments with the approvals and consultants they depend on, describes each portfolio project at the firm's actual role, and replaces unsupported ROI with a method. The writing step cited by client-services-studio's architect vertical; distinct from general services proposals (business_writing_client_engagement_proposal).",
+      "techniques": [
+        "DT-05",
+        "CM-03",
+        "RT-23",
+        "QA-20"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_attorney_discovery.md",
-      "filename": "domain_writing_attorney_discovery.md",
-      "title": "Attorney - Discovery Responses",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a commercial litigation attorney drafting responses to interrogatories. Audience is opposing counsel and potentially a judge.",
-      "techniques": [],
       "keywords": [
-        "attorney",
-        "discovery",
-        "domain",
-        "notes",
-        "prompt",
-        "usage",
-        "writing"
+        "architect-proposal",
+        "rfp-response",
+        "architecture-firm",
+        "design-services-proposal",
+        "public-sector-rfp",
+        "respond-to-an-rfp"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-professional-writing/business-writing/business_writing_client_engagement_proposal.md",
+        "client-services-studio/prompts/stage-5-proposal-and-sow.md",
+        "domain-professional-writing/business-writing/business_writing_proposal.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/domain-specific/domain_writing_cpa_tax_strategy.md",
       "filename": "domain_writing_cpa_tax_strategy.md",
-      "title": "CPA - Tax Strategy Letter",
+      "title": "CPA Year-End Tax Strategy Letter — Eligible Strategies, Save-vs-Defer, Dated Actions",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm a CPA writing a year-end tax planning letter to a business client.",
-      "techniques": [],
+      "description": "Draft a CPA's year-end tax strategy letter to a business client: each recommendation tied to the client facts that make it eligible, its effect labelled as permanent saving or deferral, the cash it costs, a dated owner-assigned action list, and every threshold or deadline either from the CPA's inputs or marked [VERIFY]. Writes the letter from analysis already done — distinct from building the projection (finance_multi_year_tax_projection) or researching an uncertain position (legal_tax_research_memo).",
+      "techniques": [
+        "NE-13",
+        "NE-11",
+        "DS-40",
+        "QA-04",
+        "QA-20"
+      ],
       "keywords": [
         "cpa",
-        "domain",
-        "prompt",
-        "strategy",
-        "tax",
-        "writing"
+        "tax-strategy-letter",
+        "year-end-tax-planning",
+        "client-advisory-letter",
+        "small-business-tax",
+        "explain-tax-strategy-to-client"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-finance/tax-planning/finance_multi_year_tax_projection.md",
+        "domain-finance/tax-planning/finance_entity_structure_tax_comparison.md",
+        "domain-legal/tax/legal_tax_research_memo.md",
+        "client-services-studio/verticals/cpa/README.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/domain-specific/domain_writing_cto_strategy_memo.md",
       "filename": "domain_writing_cto_strategy_memo.md",
-      "title": "CTO - Engineering Strategy Memo",
+      "title": "CTO Engineering Strategy Memo — Explicit Bets, What Stops, Headcount Priced Against the Roadmap",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm a CTO writing a strategic memo. Audience is engineering leadership and executive team.",
-      "techniques": [],
+      "description": "Write a CTO's multi-quarter engineering strategy memo for the executive team and engineering leadership: a measured diagnosis, two to four bets each paired with what engineering will stop or refuse, capacity math that names the roadmap items the investment displaces, and milestones with revisit triggers. Distinct from a single-decision executive brief or narrative memo, and from an RFC that asks other teams to adopt one technical change.",
+      "techniques": [
+        "NE-13",
+        "DP-04",
+        "NE-11",
+        "DP-13",
+        "QA-02"
+      ],
       "keywords": [
         "cto",
-        "domain",
-        "memo",
-        "prompt",
-        "strategy",
-        "writing"
+        "engineering-strategy",
+        "strategy-memo",
+        "technical-strategy",
+        "engineering-headcount-request",
+        "platform-investment",
+        "what-to-stop-doing"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_counselor_recommendation.md",
-      "filename": "domain_writing_counselor_recommendation.md",
-      "title": "College Counselor - Student Recommendation Letter",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a high school counselor writing a college recommendation letter.",
-      "techniques": [],
-      "keywords": [
-        "counselor",
-        "domain",
-        "prompt",
-        "recommendation",
-        "writing"
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-professional-writing/business-writing/business_writing_executive_brief.md",
+        "domain-decision-making/documentation/decisiondoc_narrative_memo_bezos.md",
+        "domain-professional-writing/domain-specific/domain_writing_engineer_rfc.md",
+        "domain-software-engineering/analysis/evolution/evolution_technical_debt_estimation.md"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_dentist_treatment_plan.md",
-      "filename": "domain_writing_dentist_treatment_plan.md",
-      "title": "Dentist - Treatment Plan Letter",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a dentist writing a treatment plan letter to a patient.",
-      "techniques": [],
-      "keywords": [
-        "dentist",
-        "domain",
-        "plan",
-        "prompt",
-        "treatment",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_electrician_panel.md",
-      "filename": "domain_writing_electrician_panel.md",
-      "title": "Electrician - Panel Upgrade Proposal",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm an electrician writing a proposal for an electrical panel upgrade.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "electrician",
-        "panel",
-        "prompt",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_engineer_design_doc.md",
-      "filename": "domain_writing_engineer_design_doc.md",
-      "title": "Engineer - Technical Design Doc",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a software engineer writing a design doc for a significant technical project. Audience is the engineering team and tech leads.",
-      "techniques": [],
-      "keywords": [
-        "design",
-        "doc",
-        "domain",
-        "engineer",
-        "prompt",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_founder_investor_update.md",
-      "filename": "domain_writing_founder_investor_update.md",
-      "title": "Entrepreneur - Investor Update",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a founder writing a monthly/quarterly update to investors.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "founder",
-        "investor",
-        "prompt",
-        "update",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_physician_soap.md",
-      "filename": "domain_writing_physician_soap.md",
-      "title": "Family Physician - SOAP Notes",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a family physician documenting a patient visit. This needs SOAP note format for insurance purposes.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "notes",
-        "physician",
-        "prompt",
-        "soap",
-        "usage",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_financial_advisor_report.md",
-      "filename": "domain_writing_financial_advisor_report.md",
-      "title": "Financial Advisor - Quarterly Portfolio Report",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a financial advisor writing a quarterly portfolio review for a client.",
-      "techniques": [],
-      "keywords": [
-        "advisor",
-        "domain",
-        "financial",
-        "prompt",
-        "report",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_contractor_remodel.md",
-      "filename": "domain_writing_contractor_remodel.md",
-      "title": "General Contractor - Remodel Estimate",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a general contractor writing an estimate for a remodeling project.",
-      "techniques": [],
-      "keywords": [
-        "contractor",
-        "domain",
-        "prompt",
-        "remodel",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_hvac_estimate.md",
-      "filename": "domain_writing_hvac_estimate.md",
-      "title": "HVAC Contractor - Estimate",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm an HVAC contractor writing a professional estimate for a homeowner. I just completed a site inspection.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "estimate",
-        "hvac",
-        "notes",
-        "prompt",
-        "usage",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_sales_strategy.md",
-      "filename": "domain_writing_sales_strategy.md",
-      "title": "Head of Sales - Sales Strategy Document",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a Head of Sales writing a strategy document for the sales organization. Audience is sales team and executive leadership.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "prompt",
-        "sales",
-        "strategy",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_insurance_comparison.md",
-      "filename": "domain_writing_insurance_comparison.md",
-      "title": "Insurance Agent - Policy Comparison",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm an insurance agent writing a policy comparison for a client.",
-      "techniques": [],
-      "keywords": [
-        "comparison",
-        "domain",
-        "insurance",
-        "prompt",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
-    },
-    {
-      "path": "domain-professional-writing/domain-specific/domain_writing_landscaper_proposal.md",
-      "filename": "domain_writing_landscaper_proposal.md",
-      "title": "Landscaper - Backyard Renovation Proposal",
-      "domain": "professional-writing",
-      "category": "professional-writing/domain-specific",
-      "description": "``` I'm a landscaper writing a proposal for a backyard renovation.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "landscaper",
-        "prompt",
-        "proposal",
-        "writing"
-      ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/domain-specific/domain_writing_consultant_executive_summary.md",
       "filename": "domain_writing_consultant_executive_summary.md",
-      "title": "Management Consultant - Executive Summary",
+      "title": "Consultant Executive Summary — Recommendation First, Every Finding Traced to the Analysis",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm a strategy consultant writing an executive summary for a detailed analysis. Audience is C-suite.",
-      "techniques": [],
-      "keywords": [
-        "consultant",
-        "domain",
-        "executive",
-        "prompt",
-        "summary",
-        "writing"
+      "description": "Write a management consultant's executive summary of a completed analysis for the C-suite: a committed recommendation with its number, range and confidence in the first paragraph, three or four findings each traced to a section of the analysis, the condition that would reverse the advice, and implementation considerations that respect what the engagement scoped. Distinct from the engagement proposal (this is the summary artifact, a component of the deliverable) and from an internal one-page decision brief.",
+      "techniques": [
+        "ST-46",
+        "QA-26",
+        "QA-20",
+        "QA-04"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "management-consultant",
+        "executive-summary",
+        "consulting-deliverable",
+        "c-suite-recommendation",
+        "findings-and-recommendation",
+        "strategy-consulting"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-professional-writing/business-writing/business_writing_client_engagement_proposal.md",
+        "domain-professional-writing/business-writing/business_writing_executive_brief.md",
+        "domain-decision-making/documentation/decisiondoc_one_pager.md"
+      ],
+      "has_frontmatter": true
     },
     {
-      "path": "domain-professional-writing/domain-specific/domain_writing_marketing_campaign.md",
-      "filename": "domain_writing_marketing_campaign.md",
-      "title": "Marketing Consultant - Campaign Strategy",
+      "path": "domain-professional-writing/domain-specific/domain_writing_dentist_treatment_plan.md",
+      "filename": "domain_writing_dentist_treatment_plan.md",
+      "title": "Dentist Treatment Recommendation Letter — Phased Sequence, Real Alternatives, Estimates Pending Predetermination",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm a marketing consultant presenting a campaign strategy.",
-      "techniques": [],
-      "keywords": [
-        "campaign",
-        "domain",
-        "marketing",
-        "prompt",
-        "writing"
+      "description": "Draft a dentist's letter explaining a recommended course of treatment to a patient: findings in plain words with tooth names, care sequenced disease-control first with elective items kept separate, a reasonable alternative for each item (including monitoring, extraction, or specialist referral), what may happen if care is delayed stated factually, and a cost-and-insurance estimate labelled as pending predetermination with annual-maximum effects shown. For licensed dentists writing to real patients — distinct from treatment-planning practice for dental learners (dental_treatment_planning_practice) and from the consent conversation itself (medicine_informed_consent_communicator).",
+      "techniques": [
+        "DS-06",
+        "NE-16",
+        "NE-27",
+        "QA-04",
+        "QA-20"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "dentist",
+        "dental-treatment-plan-letter",
+        "patient-letter",
+        "treatment-options",
+        "dental-insurance-estimate",
+        "explain-dental-work-to-patient"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-medical-education/profession-specific/dental/dental_treatment_planning_practice.md",
+        "domain-healthcare-clinical/prompts/communication/medicine_informed_consent_communicator.md",
+        "domain-healthcare-clinical/templates/patient_education_template.md",
+        "domain-professional-writing/domain-specific/domain_writing_veterinarian_surgery.md"
+      ],
+      "has_frontmatter": true
     },
     {
-      "path": "domain-professional-writing/domain-specific/domain_writing_plumber_repiping.md",
-      "filename": "domain_writing_plumber_repiping.md",
-      "title": "Plumber - Repiping Estimate",
+      "path": "domain-professional-writing/domain-specific/domain_writing_electrician_panel.md",
+      "filename": "domain_writing_electrician_panel.md",
+      "title": "Electrician Panel Upgrade Proposal — Observed Hazards, Load Calculation, Outage Day Spelled Out",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm a plumber writing an estimate for a repiping project.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "plumber",
-        "prompt",
-        "repiping",
-        "writing"
+      "description": "Write the homeowner-facing proposal for an electrical panel or service upgrade: each hazard stated as an observation with its location, mechanism and urgency, the service size justified by a load calculation (and the cheaper alternative tested against it), utility and permit steps marked for AHJ verification, and the power-off day described honestly — distinct from building the bid number (trades_bid_estimate_with_contingency) and from a whole-house remodel estimate that carries electrical work inside it.",
+      "techniques": [
+        "ST-42",
+        "ST-46",
+        "NE-11",
+        "QA-20"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "electrician",
+        "panel-upgrade",
+        "service-upgrade-proposal",
+        "ev-charger-capacity",
+        "load-calculation",
+        "do-i-need-a-200-amp-panel",
+        "safety-without-scare-tactics"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-specialized-fields/trades/trades_bid_estimate_with_contingency.md",
+        "domain-specialized-fields/trades/trades_change_order_pricing_notice.md",
+        "domain-professional-writing/domain-specific/domain_writing_contractor_remodel.md",
+        "domain-professional-writing/domain-specific/domain_writing_hvac_estimate.md"
+      ],
+      "has_frontmatter": true
     },
     {
-      "path": "domain-professional-writing/domain-specific/domain_writing_realtor_listing.md",
-      "filename": "domain_writing_realtor_listing.md",
-      "title": "Real Estate Agent - Property Listing",
+      "path": "domain-professional-writing/domain-specific/domain_writing_engineer_design_doc.md",
+      "filename": "domain_writing_engineer_design_doc.md",
+      "title": "Engineer Design Doc — Implementation-Level Design, Real Alternatives, Success Criteria That Can Fail",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm a real estate agent writing a listing description.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "listing",
-        "prompt",
-        "realtor",
-        "writing"
+      "description": "Write a software design doc for the engineers who will build and operate one system: goals and non-goals, data model and contracts, a failure path for every dependency, alternatives stated as their advocates would state them, a phased rollout with a rollback for each phase, tests mapped to risks, and success criteria with baselines. Distinct from an RFC, which asks other teams for a decision and runs a comment period.",
+      "techniques": [
+        "CM-03",
+        "QA-24",
+        "DP-07",
+        "DS-02",
+        "QA-09"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "design-doc",
+        "software-engineer",
+        "technical-design",
+        "system-design-document",
+        "alternatives-considered",
+        "rollout-and-rollback",
+        "write-a-design-doc"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-professional-writing/domain-specific/domain_writing_engineer_rfc.md",
+        "domain-agentic-resources/skills/backend-development/architecture-decision-records/SKILL.md",
+        "domain-deep-analysis/deepthink_design.md",
+        "domain-professional-writing/business-writing/business_writing_prd_document.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/domain-specific/domain_writing_engineer_rfc.md",
       "filename": "domain_writing_engineer_rfc.md",
-      "title": "Senior Software Engineer - RFC Document",
+      "title": "Engineer RFC — Cross-Team Decision Request, Comment Period, Sign-Off, and Recorded Dissent",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm a principal engineer writing an RFC. Audience is engineering team and product leadership.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "engineer",
-        "notes",
-        "prompt",
-        "rfc",
-        "usage",
-        "writing"
+      "description": "Write a principal or senior engineer's RFC that asks several teams for one technical decision: the decision in a sentence, a non-engineer summary with cost and what slips, what each affected team must do, real alternatives, known objections with responses, open questions split by whether they block the decision, and a comment period with named approvers and a dissent record. Distinct from a design doc, which details how one team builds a system it owns.",
+      "techniques": [
+        "CM-09",
+        "NE-23",
+        "NE-14",
+        "QA-09",
+        "NE-27"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "rfc",
+        "request-for-comments",
+        "principal-engineer",
+        "cross-team-decision",
+        "technical-proposal",
+        "sign-off",
+        "disagree-and-commit"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-professional-writing/domain-specific/domain_writing_engineer_design_doc.md",
+        "domain-agentic-resources/skills/backend-development/architecture-decision-records/SKILL.md",
+        "domain-decision-making/documentation/decisiondoc_options_memo.md",
+        "domain-professional-writing/domain-specific/domain_writing_cto_strategy_memo.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_financial_advisor_report.md",
+      "filename": "domain_writing_financial_advisor_report.md",
+      "title": "Financial Advisor Quarterly Portfolio Report — Net Returns, Fair Benchmark, Goal Progress",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Draft a financial advisor's quarterly portfolio letter to a client: net- and gross-of-fee returns over fixed standard periods against the benchmark in the client's IPS, dollar change split into contributions and investment result, plain explanation of what drove the gap, progress against the client's own goal, and outlook written as conditions-to-watch with every forward-looking line flagged for the firm's compliance review. Distinct from reviewing the portfolio's construction (finance_portfolio_construction_review) or checking a recommendation process (finance_reg_bi_fiduciary_check).",
+      "techniques": [
+        "NE-15",
+        "NE-11",
+        "DD-05",
+        "QA-04",
+        "QA-20"
+      ],
+      "keywords": [
+        "financial-advisor",
+        "quarterly-portfolio-report",
+        "client-review-letter",
+        "performance-vs-benchmark",
+        "wealth-management",
+        "explain-portfolio-performance"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-finance/investing-research/finance_portfolio_construction_review.md",
+        "domain-finance/regulatory-compliance/finance_reg_bi_fiduciary_check.md",
+        "domain-finance/personal-finance-planning/finance_retirement_projection_model.md",
+        "domain-finance/personal-finance-planning/finance_asset_allocation_glidepath.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_founder_investor_update.md",
+      "filename": "domain_writing_founder_investor_update.md",
+      "title": "Founder Investor Update — Stable Metric Definitions, Bad News Up Top, Runway With Committed Costs",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Write a founder's monthly or quarterly update to existing investors: metrics on definitions held constant from the last update (with any change restated), the period's worst news in the first lines, runway computed on burn that includes committed hires, a check against what the last update promised, and asks specific enough to act on. Distinct from a fundraising pitch to new investors and from a board deck.",
+      "techniques": [
+        "DS-02",
+        "NE-11",
+        "DS-06",
+        "NE-17"
+      ],
+      "keywords": [
+        "founder",
+        "investor-update",
+        "monthly-investor-update",
+        "quarterly-investor-letter",
+        "startup-runway",
+        "shareholder-update",
+        "startup-metrics"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-presentations/narrative-delivery/presentation_investor_pitch_narrative.md",
+        "domain-finance/treasury-capital-markets/finance_liquidity_runway_covenant_analysis.md",
+        "domain-professional-writing/business-writing/business_writing_status_report.md",
+        "domain-presentations/powerpoint_board_deck.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_contractor_remodel.md",
+      "filename": "domain_writing_contractor_remodel.md",
+      "title": "General Contractor Remodel Estimate — Required, Recommended, Optional Work with Allowances and Exclusions Visible",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Write the customer-facing remodel estimate a general contractor hands a homeowner: scope split into required, recommended and optional items each tied to a finding, allowances with their basis, exclusions and concealed-condition handling in plain view, permits marked for AHJ verification, and an honest disruption schedule — distinct from building the bid number (trades_bid_estimate_with_contingency) and from pricing a mid-job change (trades_change_order_pricing_notice).",
+      "techniques": [
+        "ST-40",
+        "ST-46",
+        "CM-03",
+        "QA-01"
+      ],
+      "keywords": [
+        "general-contractor",
+        "remodel-estimate",
+        "kitchen-remodel",
+        "renovation-quote",
+        "allowances-and-exclusions",
+        "explain-estimate-to-homeowner",
+        "not-an-upsell"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-specialized-fields/trades/trades_bid_estimate_with_contingency.md",
+        "domain-specialized-fields/trades/trades_change_order_pricing_notice.md",
+        "domain-professional-writing/domain-specific/domain_writing_architect_proposal.md",
+        "domain-legal/contracts-transactional/legal_sow_drafter.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_hvac_estimate.md",
+      "filename": "domain_writing_hvac_estimate.md",
+      "title": "HVAC Contractor Estimate — Root Cause from Inspection, Sizing from Load Calculation, Quotes Compared by Scope",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Write the homeowner-facing HVAC estimate after a site inspection: the comfort or bill complaint traced to inspection findings, equipment size stated only from a load calculation, competing quotes compared line by line rather than disparaged, no invented savings or rebates, and manufacturer versus workmanship warranty separated — also usable as the estimate section inside a client-services-studio Stage 5 proposal; distinct from building the bid number (trades_bid_estimate_with_contingency).",
+      "techniques": [
+        "RT-09",
+        "NE-16",
+        "NE-13",
+        "QA-26"
+      ],
+      "keywords": [
+        "hvac-contractor",
+        "hvac-estimate",
+        "ac-replacement-quote",
+        "load-calculation",
+        "compare-hvac-quotes",
+        "upstairs-too-hot",
+        "system-sizing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-specialized-fields/trades/trades_bid_estimate_with_contingency.md",
+        "client-services-studio/verticals/hvac/README.md",
+        "client-services-studio/prompts/stage-5-proposal-and-sow.md",
+        "domain-professional-writing/domain-specific/domain_writing_electrician_panel.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_sales_strategy.md",
+      "filename": "domain_writing_sales_strategy.md",
+      "title": "Head of Sales Strategy Document — Segment Choices, Ramp-Adjusted Capacity, Quotas That Reconcile to the Number",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Write a Head of Sales's annual or half-year sales strategy for the sales team and executives: a segment baseline from CRM data, priorities including the segment being deprioritised, ramp-adjusted capacity against the plan number, quotas and territories recomputed to reconcile with plan plus over-assignment, pipeline requirements derived from the team's own win rates, and metrics with exact definitions. Distinct from a single-account plan, a period forecast call, and marketing go-to-market strategy.",
+      "techniques": [
+        "NE-11",
+        "QA-15",
+        "RT-23",
+        "DS-02",
+        "RP-02"
+      ],
+      "keywords": [
+        "head-of-sales",
+        "sales-strategy",
+        "sales-capacity-planning",
+        "quota-setting",
+        "territory-design",
+        "pipeline-coverage",
+        "annual-sales-kickoff-document"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-sales-customer/sales/sales_strategic_account_plan.md",
+        "domain-sales-customer/sales/sales_forecast_commit_review.md",
+        "domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md",
+        "domain-business-strategy/startup/monetization_pricing_strategy.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_insurance_comparison.md",
+      "filename": "domain_writing_insurance_comparison.md",
+      "title": "Insurance Agent Policy Comparison Letter — Form-Level Coverage, Claim Scenarios, Client Priorities",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Draft an insurance agent's or broker's client-facing comparison of quoted policies: coverage read from the policy forms and endorsements rather than the declarations page or carrier summary, quotes normalised to the same limits, deductible structure, sublimits and valuation basis (ACV vs replacement cost) shown through what the client pays in realistic claims, gaps no quote covers, and a recommendation tied to the client's stated priorities. Presents quotes already received — distinct from building the submission (insurance_commercial_submission_builder) or deciding whether to remarket (insurance_renewal_remarketing_plan).",
+      "techniques": [
+        "RT-05",
+        "RT-02",
+        "NE-11",
+        "NE-16",
+        "QA-20"
+      ],
+      "keywords": [
+        "insurance-agent",
+        "policy-comparison",
+        "compare-insurance-quotes",
+        "homeowners-insurance",
+        "deductible-vs-premium",
+        "acv-vs-replacement-cost",
+        "client-quote-presentation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-specialized-fields/insurance/insurance_renewal_remarketing_plan.md",
+        "domain-specialized-fields/insurance/insurance_commercial_submission_builder.md",
+        "domain-finance/risk-management/finance_business_insurance_coverage_review.md",
+        "domain-finance/personal-finance-planning/finance_insurance_needs_analysis.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_landscaper_proposal.md",
+      "filename": "domain_writing_landscaper_proposal.md",
+      "title": "Landscaper Backyard Renovation Proposal — Site Conditions, Phased Options, Plant Establishment Aftercare",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Write the client-facing backyard renovation proposal a landscaper hands a homeowner: design choices tied to measured site conditions (soil, drainage, grade, sun, access), phased options that each work on their own and in a buildable order, seasonal timing and weather movement stated, ground-condition and spoil assumptions priced, and a plant guarantee conditional on written aftercare — also the writing step for client-services-studio's landscaper vertical; distinct from building the bid number (trades_bid_estimate_with_contingency).",
+      "techniques": [
+        "CM-02",
+        "DP-23",
+        "NE-11",
+        "QA-18"
+      ],
+      "keywords": [
+        "landscaper",
+        "landscape-proposal",
+        "backyard-renovation",
+        "patio-and-planting",
+        "drainage-problem-yard",
+        "phased-landscaping",
+        "plant-guarantee"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-specialized-fields/trades/trades_bid_estimate_with_contingency.md",
+        "client-services-studio/verticals/landscaper/README.md",
+        "client-services-studio/prompts/stage-5-proposal-and-sow.md",
+        "domain-productivity/home-life/home_seasonal_maintenance_calendar.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_plumber_repiping.md",
+      "filename": "domain_writing_plumber_repiping.md",
+      "title": "Plumber Repiping Estimate — Repipe vs Continued Repairs, Disruption by Day, Split Warranties",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Write the homeowner-facing whole-house repipe estimate: the recommendation grounded in leak history, cut samples and flow readings rather than house age; full, partial and keep-repairing options compared on the homeowner's own repair costs; water-off hours and wall openings listed by day and room; and pipe-manufacturer warranty kept separate from the plumber's workmanship — distinct from building the bid number (trades_bid_estimate_with_contingency) and from a repipe discovered mid-remodel (trades_change_order_pricing_notice).",
+      "techniques": [
+        "RT-08",
+        "NE-27",
+        "RP-02",
+        "QA-01"
+      ],
+      "keywords": [
+        "plumber",
+        "repiping-estimate",
+        "whole-house-repipe",
+        "galvanized-pipe-replacement",
+        "pex-vs-copper",
+        "keep-getting-leaks",
+        "water-off-during-repipe"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-specialized-fields/trades/trades_bid_estimate_with_contingency.md",
+        "domain-specialized-fields/trades/trades_change_order_pricing_notice.md",
+        "domain-professional-writing/domain-specific/domain_writing_contractor_remodel.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_realtor_listing.md",
+      "filename": "domain_writing_realtor_listing.md",
+      "title": "Realtor Listing Remarks — Record-Sourced Facts, Fair-Housing-Clean Language, MLS-Ready",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Write MLS public remarks and portal copy for one residential listing: every square-footage, lot, and year-built figure traced to the public record, the property described instead of the buyer, steering phrases swept and replaced, and MLS field rules marked for local verification. Distinct from setting the price (realestate_comparative_market_analysis) and from listing images (advertising_real_estate_property).",
+      "techniques": [
+        "RT-23",
+        "SV-15",
+        "DP-04",
+        "QA-18"
+      ],
+      "keywords": [
+        "realtor-listing",
+        "mls-public-remarks",
+        "listing-description",
+        "fair-housing-language",
+        "real-estate-agent",
+        "write-a-home-listing"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-specialized-fields/real-estate/realestate_comparative_market_analysis.md",
+        "domain-advertising/advertising_real_estate_property.md",
+        "domain-specialized-fields/real-estate/realestate_inspection_report_triage.md"
+      ],
+      "has_frontmatter": true
+    },
+    {
+      "path": "domain-professional-writing/domain-specific/domain_writing_counselor_recommendation.md",
+      "filename": "domain_writing_counselor_recommendation.md",
+      "title": "School Counselor College Recommendation Letter — Sourced Anecdotes, Consented Context",
+      "domain": "professional-writing",
+      "category": "professional-writing/domain-specific",
+      "description": "Draft a high school counselor's college recommendation letter in which every strength is carried by a sourced anecdote, comparisons rest on school data rather than 'top 1%', sensitive context appears only as far as the student consented, and no sentence could be pasted into another student's letter. Distinct from a grant letter of support (science_letter_of_support_drafter) and from attorney-guided expert letters (legal_eb1_extraordinary_ability_petition).",
+      "techniques": [
+        "ST-46",
+        "RT-05",
+        "CM-09",
+        "QA-18"
+      ],
+      "keywords": [
+        "counselor-recommendation",
+        "college-recommendation-letter",
+        "school-counselor",
+        "college-admissions",
+        "student-consent",
+        "write-a-letter-of-recommendation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-science/grants-funding/science_letter_of_support_drafter.md",
+        "domain-legal/immigration/legal_eb1_extraordinary_ability_petition.md",
+        "domain-professional-writing/writing/writing_unsourced_claim_disposition.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/domain-specific/domain_writing_veterinarian_surgery.md",
       "filename": "domain_writing_veterinarian_surgery.md",
-      "title": "Veterinarian - Surgery Recommendation",
+      "title": "Veterinarian Surgery Recommendation Letter — Diagnosis, Real Alternatives, Recovery Burden, Estimate Range",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm a veterinarian writing a surgery recommendation letter for a pet owner.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "prompt",
-        "surgery",
-        "veterinarian",
-        "writing"
+      "description": "Draft a veterinarian's letter recommending surgery to a pet owner: the diagnosis and how it was made, why surgery is preferred, every reasonable alternative (other procedures, specialist referral, conservative care) compared without guilt, outcomes with and without surgery using only the veterinarian's own figures, the home-care burden of recovery made concrete, and an estimate range with inclusions, exclusions, and pet-insurance status. Distinct from human informed-consent conversations (medicine_informed_consent_communicator) and from animal research protocols (science_animal_protocol_iacuc_drafter).",
+      "techniques": [
+        "NE-07",
+        "NE-10",
+        "NE-16",
+        "DS-40",
+        "QA-20"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "veterinarian",
+        "surgery-recommendation-letter",
+        "pet-owner-letter",
+        "vet-surgery-estimate",
+        "treatment-alternatives",
+        "should-my-dog-have-surgery"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-healthcare-clinical/prompts/communication/medicine_informed_consent_communicator.md",
+        "domain-professional-writing/domain-specific/domain_writing_dentist_treatment_plan.md",
+        "domain-healthcare-clinical/templates/patient_education_template.md",
+        "domain-science/bench-and-wetlab/science_animal_protocol_iacuc_drafter.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/domain-specific/domain_writing_wedding_planner.md",
       "filename": "domain_writing_wedding_planner.md",
-      "title": "Wedding Planner - Client Proposal",
+      "title": "Wedding Planner Client Proposal — Defined Services, a Budget That Adds Up, Vision as Decisions",
       "domain": "professional-writing",
       "category": "professional-writing/domain-specific",
-      "description": "``` I'm a wedding planner writing a proposal for a couple.",
-      "techniques": [],
-      "keywords": [
-        "domain",
-        "planner",
-        "prompt",
-        "wedding",
-        "writing"
+      "description": "Write a wedding planner's proposal to a couple: their vision translated into concrete decisions, services defined tightly enough to prevent scope disputes (what 'day-of' covers, who pays vendors, overtime), a category budget recomputed against their total with a contingency, and the planner's fee and payment schedule. Distinct from general services proposals (business_writing_client_engagement_proposal) and from drafting the contract itself (legal_sow_drafter).",
+      "techniques": [
+        "DD-02",
+        "CM-03",
+        "NE-11",
+        "QA-20"
       ],
-      "difficulty": "",
-      "updated": "",
-      "related_prompts": [],
-      "has_frontmatter": false
+      "keywords": [
+        "wedding-planner",
+        "wedding-proposal",
+        "event-planning-proposal",
+        "day-of-coordination",
+        "wedding-budget",
+        "write-a-proposal-for-a-couple"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
+      "related_prompts": [
+        "domain-professional-writing/business-writing/business_writing_client_engagement_proposal.md",
+        "domain-legal/contracts-transactional/legal_sow_drafter.md",
+        "domain-legal/contracts-transactional/legal_payment_terms_and_late_fee_review.md"
+      ],
+      "has_frontmatter": true
     },
     {
       "path": "domain-professional-writing/journalism/journalism_investigative_project_plan.md",

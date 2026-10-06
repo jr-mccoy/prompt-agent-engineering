@@ -1,6 +1,7 @@
 # Coverage Roadmap: Subject-Matter Gaps Across the Prompt Corpus
 
-**Status as of 2026-10-05:** **Waves 1–12 shipped (§6).**
+**Status as of 2026-10-06:** **Waves 1–12 shipped (§6); quality backfill in progress (§6).**
+- **Quality backfill (2026-10-06):** raising the weakest existing prompts: the `domain_writing_*` stubs, missing False-Positive Prevention sections, and missing frontmatter or technique metadata, in batches of about 30 files (§6).
 - **Wave 12 (2026-10-05):** 11 prompts finishing biblical-studies Phase 3C: a pastoral Scripture-selection layer (`pastoral-scripture/`, 5, selection only, with crisis and abuse routing), Jewish–Christian dialogue (`jewish-christian-dialogue/`, 3) and digital study tools (`learner-self-study/`, 3), plus 7 routing cases (§6).
 - **Wave 11 (2026-10-05):** 22 professional-facing prompts building all eight planned `domain-parenting/family-support-professional/` subfolders (intake, coaching, documentation, groups, referral, home visiting, foster/kinship/adoption, culturally responsive practice), each non-diagnostic with jurisdiction-aware reporting steps, plus 9 routing cases (§6).
 - **Wave 10 (2026-10-04):** technique hygiene (13 undefined codes remapped in 110 files, a CI check on every prompt's `techniques:` list) and agentic-resource depth (7 skills, 4 agents, 4 commands, 4 personas; 3 one-skill categories folded into real ones).
@@ -1253,6 +1254,54 @@ about Mark 2 "ESTABLISHED"; it now separates the established context from the co
 
 **Left for later:** the two misses above, and the deferred Phase 3C remainder (youth apologetics,
 intergenerational worship).
+
+### Quality backfill: raising the weakest existing prompts (2026-10-06, in progress)
+
+Quality work, not new coverage: no new subject and no new file. Three targets, in priority order:
+
+1. The 24 stub prompts in `domain-professional-writing/domain-specific/` (`domain_writing_*`, ~30
+   lines: a "Source" line and one fill-in prompt) are expanded to the house structure, or merged into
+   a stronger neighbour that already does the same job for the same reader.
+2. A **False-Positive Prevention** section is added wherever it is missing in `domain-image-generation`
+   (all 161), `domain-presentations` (34 of 42), `domain-advertising` (17 of 22),
+   `domain-medical-education` (125 of 213), `domain-healthcare-clinical` (259 of 372) and
+   `domain-deep-analysis` (17 of 21). `domain-science` keeps its own "Floor (per README)" structure and is
+   left alone.
+3. Missing frontmatter or `techniques:` metadata is added in `domain-conversation-practice` (7 of 14),
+   `domain-presentations` (14), `domain-professional-writing` (26), `domain-image-generation` (92) and
+   `domain-deep-analysis` (11).
+
+**Rules held in every batch.**
+- Each FPP section names the traps *that* prompt's output is prone to, in its subject's vocabulary,
+  and includes at least one concrete check (recompute, count, trace to an input). A script flags any
+  FPP sentence shared between two files in a batch; none has been shipped.
+- The domain's own FPP layout wins (numbered in `deep-analysis` and `advertising`, ❌/✅ elsewhere).
+- Technique IDs come only from `### XX-NN:` headings in the catalogue;
+  `validate_technique_catalog.py` passes with 0 errors.
+- Every healthcare-clinical prompt touched carries the domain's medical disclaimer and a
+  **Review status: … AI only (2026-10-06)** line.
+- New frontmatter keeps the file's existing H1 as its title, so search does not shift.
+- Search indexes only frontmatter fields, so an FPP section cannot move a routing result; new
+  frontmatter can. Every batch is compared case by case (221 cases) and on the 27 §2 probes against
+  base commit `4804bc1`.
+
+| Batch | Files | What changed | Routing vs base |
+|---|---|---|---|
+| 1 | 24 stubs + 2 | 21 `domain_writing_*` stubs rewritten to Tier 1 (objective, distinct-from neighbour, delimited inputs, method with a verify step, output format, verification, FPP, one coherent example, techniques); 3 merged; frontmatter + FPP on `business_writing_executive_proposal_template.md` and `business_writing_investment_proposal_example.md` | All metrics unchanged (R@1 73.2%, MRR 0.781, scope@1 84.9%). No gold rank moves. Ten cases change only below the scored positions (3rd routed scope, or case 106's no-route top hit); case 213 goes weak → ambiguous (no expected status). One probe gains the realtor listing at rank 2 (`comparative market analysis for a listing`), with its top hit unchanged |
+
+**Merges in batch 1** (recorded in `meta/REORG_MAP.tsv`; references repointed by `apply_reorg_map.py`):
+
+| Stub | Merged into | What was carried over |
+|---|---|---|
+| `domain_writing_attorney_discovery.md` | `domain-legal/discovery/legal_discovery_response_objections.md` | Case-background and facts-per-answer inputs; a Must Not against narrowing a verified interrogatory answer by omission |
+| `domain_writing_physician_soap.md` | `domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md` | An outpatient office-visit SOAP variant; codes are the clinician's, never inferred; E/M level routed to the coding prompt. The file now carries the review-status disclaimer |
+| `domain_writing_marketing_campaign.md` | `domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md` | A "presented to" constraint for agencies and consultants presenting to a client |
+
+The other 21 stay where they are, because `client-services-studio/verticals/`, `domain-specialized-fields/`
+and `domain-presentations/` name them as the customer-facing writing step. Each now states the neighbour
+it is distinct from. One defect was fixed on the way: the investment-proposal worked example labelled
+its scenarios "8% relative" while computing 20%, and its 3-year ROI left out the license renewals
+(700% → ~287%).
 
 ## 7. Explicitly not gaps / deferred
 
