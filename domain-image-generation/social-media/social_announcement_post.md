@@ -20,7 +20,7 @@ tags:
   - cta
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/social-media/README.md
   - domain-image-generation/social-media/social_quote_graphic.md
@@ -160,6 +160,22 @@ If any figure, code, date, or CTA differs from the text above, the output is INC
 3. "The headline isn't dominant enough — increase its size and emphasize [KEY FIGURE]."
 4. "Layout is crowded — drop secondary detail to one line and add breathing room."
 5. "Date text is too close to the edge — increase inset to ≥8% for crop safety."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass the date line because its digits match `[DETAIL]` — "Saturday, June 14" is right only in a year when June 14 is a Saturday, and a weekday typed wrong in the brief renders "verbatim" just as faithfully.
+- Read the promo code in the display face and call it verbatim — O/0, I/1/l, S/5 and B/8 can be indistinguishable in a condensed or stencil font, and shoppers type what they see.
+- Take a date "verified" by Nano Banana Pro's search grounding for a brand's own sale or a local event — grounding tends to surface a previous year's edition or a similarly named event; the organizer's calendar is the source.
+- Approve the hierarchy while the copy contradicts itself — "30% Off Everything" over terms that exclude categories, or a `[KEY FIGURE]` of 30% beside a code that gives 25%.
+- Treat the `[PLATFORM + RATIO]` pixel sizes in this file as current; feed crops and preview ratios change [VERIFY: current platform spec].
+
+✅ **DO:**
+- Compute the weekday of every date for its year with a calendar or a date function, before generating and again on the render.
+- Type the code exactly as it appears in the render into a test checkout and confirm it applies the advertised discount.
+- Downscale the post to about 375 px wide (a phone feed column) and confirm the key figure, date and CTA still read without zooming.
 
 ---
 

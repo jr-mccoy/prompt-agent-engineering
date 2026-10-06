@@ -2,12 +2,21 @@
 title: "Customer Success Health Model Visualization Prompt"
 category: customer-success
 description: "Generate a structured, no-UI visualization prompt optimized for customer success decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Customer Success Health Model Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Show a single health score or red/amber/green status in ZONE 2 without its component signals and their weights — an unweighted score looks authoritative while nobody can audit it.
+- Invent "at risk" cut-offs (e.g., "score < 60") that the risk flags in the intake never defined.
+- Put real account names, logos, or ARR figures on the image when the intake supplied only segments.
+- Let the ZONE 3 lifecycle chart show per-stage account counts that do not add up to the segment total.
+
+✅ **DO:**
+- Require each health signal to arrive with its weight and data source; print the weights beside the components and confirm they sum to 100%.
+- Recompute one sample account's score from the rendered weights and signal values; a mismatch with the intake score means the model is wrong.
+- Leave ZONE 4 playbook names as "[Playbook — from intake]" placeholders when a risk flag arrived without a named response.

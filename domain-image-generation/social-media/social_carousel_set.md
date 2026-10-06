@@ -19,7 +19,7 @@ tags:
   - typography
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/social-media/README.md
   - domain-image-generation/social-media/social_quote_graphic.md
@@ -154,6 +154,21 @@ If this slide's template differs from the rest of the set, or any copy differs f
 3. "Slide 2 dropped a word — re-render its body 100% verbatim: \"[slide 2 body]\"."
 4. "The background hex shifted between slides — normalize all slides to [background hex]."
 5. "The cover doesn't relate visually to the content slides — apply the same grid and type scale."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Trust the "[n]/[SLIDE COUNT]" indicators because each slide shows one — a slide regenerated after the set grew from 7 to 8 keeps "4/7", and it is easy to number the cover on some slides' count and not others'.
+- Pass "one idea per slide" while the list breaks — a cover promising "5 mistakes" over four mistake slides, "Mistake 3" appearing before "Mistake 2" after reordering, or a body sentence that stops at the end of slide 3 and never resumes on slide 4.
+- Judge template consistency by swiping through the slides; a 10–20 px shift of the logo or slide number is invisible one slide at a time and obvious when the post is swiped quickly.
+- Mix 4:5 and 1:1 slides in one set — Instagram crops every slide to the first slide's ratio, so content placed for the other ratio loses its margins [VERIFY: current platform spec].
+
+✅ **DO:**
+- Write the final posted order as a list and check each slide's indicator, list number and headline against its position, with the total equal to the number of files uploaded.
+- Record the pixel x/y of the logo, slide-number indicator and footer handle on every slide; all slides must match the cover's values.
+- Read the body copy of all slides consecutively as one text and compare it with `[SLIDE COPY]`, so a dropped or duplicated line at a slide break shows up.
 
 ---
 

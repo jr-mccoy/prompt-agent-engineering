@@ -2,12 +2,21 @@
 title: "Analyst Storyboard Visualization Prompt"
 category: analyst
 description: "Generate a structured, no-UI visualization prompt optimized for analyst decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Analyst Storyboard Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 2 trend line drawn smoother or steeper than the KPI series in the intake — the model rounds off dips and exaggerates slopes, and the chart still tells a plausible story.
+- Let a bar chart in ZONE 2 start its value axis above zero; the truncated baseline magnifies small gaps between comparison groups.
+- Let the ZONE 1 metric name or units drift from the intake's metric definition ("weekly active users" rendered as "MAU", "net revenue" as "revenue").
+- Fill the ZONE 5 confidence score with a figure the analyst never gave — "82% confidence" is invented precision, not a layout element.
+
+✅ **DO:**
+- Write every data point, unit, and the time window into the generated prompt verbatim; if the intake lacks driver values, render ZONE 3 as labelled placeholders ("Driver 1 — value pending").
+- After rendering, read each point or bar against the y-axis ticks and compare it to the intake series, and confirm the ZONE 3 ranking order equals the order of the intake contributions.
+- List every number and metric label on the image beside the intake field it came from; anything with no source is removed before the visual is shared.

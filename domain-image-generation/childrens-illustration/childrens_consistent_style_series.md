@@ -17,7 +17,7 @@ tags:
   - character-consistency
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/childrens-illustration/childrens_book_illustration_spread.md
   - domain-image-generation/childrens-illustration/childrens_character_design_sheet.md
@@ -155,6 +155,21 @@ When drift appears:
 3. "Detail density crept up and crowded the text-safe area — return to the anchor's lower detail density."
 4. "`[CHARACTER NAME]`'s hair hue shifted — restore the exact hex from the bible across all later spreads."
 5. "The lighting direction flipped — restore the anchor's consistent key-light direction."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat "Full style guide + character bible restated in every spread prompt" as evidence about the pictures — it shows the prompts were consistent, not that the renders were.
+- Judge drift by comparing each spread with the one before it; a palette that warms slightly every spread passes every side-by-side pair and is far off the anchor by spread 12.
+- Fix only the spread where a re-anchor check found drift — drift seen at spread 10 usually started earlier, so spreads 6–9 may carry it too.
+- Overlook scale drift: the character slowly grows against the same door, bed, or parent across the book while face and outfit stay on-model.
+
+✅ **DO:**
+- Keep a per-spread table: the hex of three fixed samples (the character's hair, the main outfit color, one background wash), the key-light side, and the character's height relative to a recurring object; compare every row with the anchor's row, not with its neighbor.
+- When a checkpoint finds drift, step back through earlier spreads until one matches the anchor, and regenerate everything after it from the original anchor and pack.
+- Before sign-off, read the whole book as a printed dummy or PDF at actual size with real page turns, where a style break between facing spreads shows.
 
 ---
 

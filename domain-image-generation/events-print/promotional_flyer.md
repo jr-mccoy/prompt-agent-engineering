@@ -17,7 +17,7 @@ tags:
   - typography
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/events-print/event_poster.md
@@ -165,6 +165,21 @@ CONSTRAINTS:
 2. "Details block is crammed — give it more breathing room and align it on a clean grid."
 3. "Two CTAs are splitting attention — keep only the primary one; demote the other to fine print."
 4. "Pull all text ≥0.25 in inside the trim — price is currently too close to the bleed."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass a savings claim because both prices render verbatim — "Was $80, now $40 — 60% off" carries every digit correctly and is still wrong; the supplied copy can contain the arithmetic error.
+- Print the `[CTA]` example's (555) number or example.com — they are placeholders, and a flyer printed with them passes every spelling check while sending customers nowhere.
+- Treat the QR square as done because no QR pattern appears — check that the word "placeholder" or a label did not print, and that the square is large enough for a real code plus its quiet zone.
+- Accept the fine print because a line of small text is present — at small sizes models render pseudo-letters that look like a disclaimer from arm's length.
+
+✅ **DO:**
+- Recompute every percentage, "save $X" and bundle price from the stated prices before generating.
+- From the printed proof, dial the phone number, type the URL exactly as printed, and scan the inserted QR with two different phone camera apps at arm's length.
+- Read the fine print word for word on a proof printed at actual size and compare it with `[FINE PRINT]`; anything unreadable at that size is set in an editor instead.
 
 ---
 

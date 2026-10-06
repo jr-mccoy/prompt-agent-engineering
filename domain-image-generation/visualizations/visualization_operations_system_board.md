@@ -2,12 +2,21 @@
 title: "Operations System Board Visualization Prompt"
 category: operations
 description: "Generate a structured, no-UI visualization prompt optimized for operations decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Operations System Board Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the ZONE 1 SLA target be restated in a different unit or statistic (p95 shown as an average, business hours shown as calendar hours).
+- Accept a ZONE 2 swimlane that moves a step into the wrong team's lane or drops a handoff — the flow still reads cleanly.
+- Render ZONE 3 queue depths, cycle times, or utilization gauges with values the intake never supplied.
+- Let the ZONE 4 escalation tree add tiers, on-call roles, or time-to-escalate thresholds beyond the stated escalation rules.
+
+✅ **DO:**
+- Count the handoffs listed in the intake and the lane-crossing arrows on the image; the two numbers must match.
+- Walk the escalation tree from trigger to final tier, comparing each threshold and owner with the escalation rules.
+- Render throughput indicators without numerals (labelled "[value from ops data]") when the intake carries no measured figures.

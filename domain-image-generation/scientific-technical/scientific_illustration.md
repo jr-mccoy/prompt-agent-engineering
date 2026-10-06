@@ -17,7 +17,7 @@ tags:
   - anti-fabrication
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/scientific-technical/technical_exploded_diagram.md
   - domain-image-generation/scientific-technical/data_visualization_chart_image.md
@@ -142,6 +142,21 @@ This is an UNVERIFIED draft. Flag any structure the model is uncertain about for
 3. "The rendered labels are misspelled/misplaced — switch to numbered callouts so I can add verified labels in post."
 4. "The palette isn't colorblind-safe — switch to a colorblind-safe palette for publication."
 5. "There is speculative shading that reads as real structure — flatten it; show only confirmed structures."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat "the structure is present" as "the structure is right" — four mitochondria where the source shows a population, five digits where there should be four, an extra rib or vertebra; repeated structures pass a glance because the shape is familiar.
+- Accept a callout whose leader line ends between two structures or on the neighbour; the callout count still equals the structure list, so the labels line of the checklist passes while the key mislabels.
+- Pass a mirrored figure — left/right laterality, molecular chirality, or coiling direction reversed — because everything else matches.
+- Treat Google Search grounding, or a resemblance to a familiar textbook plate, as the cited source for the ground truth.
+
+✅ **DO:**
+- Require each `[GROUND TRUTH STRUCTURE LIST]` entry to cite its source (atlas or textbook edition plus figure/page), then check structure counts, relative sizes, and label spellings against that source rather than against memory.
+- Follow every numbered leader line to its endpoint and write down the structure it touches; the resulting key must map one-to-one onto the structure list.
+- Confirm orientation cues (anterior/posterior, left/right, scale bar if shown) match `[VIEW/ORIENTATION]`.
 
 ---
 

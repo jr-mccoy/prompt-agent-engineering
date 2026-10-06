@@ -18,7 +18,7 @@ tags:
   - typography
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/events-print/event_poster.md
@@ -148,6 +148,22 @@ CONSTRAINTS:
 2. "Info block is buried in the art — pull date/venue/tickets into a clean legible band."
 3. "Spot-color violation — gradients appeared; flatten to the [N] requested screen-print colors."
 4. "Push the [ART AESTHETIC] harder — add [halftone / registration offset / riso grain]."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call the headliner "dominant" because it is the biggest shape — psychedelic, metal and blackletter treatments can make a name the largest element and still unreadable to someone who does not already know it.
+- Assume a numeric date reads one way everywhere — "11.04" is 11 April in most of Europe and November 4 in the US, and an abbreviated weekday ("FRI") beside it can be wrong for either reading.
+- Take `[SUPPORT ACTS]` as final billing — lineups change between announcement and print, and order is often contractual; confirm the order and spellings with the promoter's current lineup.
+- Count the spot colors from the palette you specified — anti-aliased edges, halftone dots and a drawn "overprint" where two inks overlap add tones that each need another screen.
+- Miss genre decoration the model adds as text: "ALL AGES", "21+", "NO COVER", fake ticket stubs or setlists are invented terms even when they suit the style.
+
+✅ **DO:**
+- Index the final art to exactly N colors and compare it with the original in Difference mode; any visible change means more than N inks.
+- Have someone who does not know the band read the headliner and the date from about 3 m away on a printed proof.
+- List every word on the poster and match each one to a line in the EXACT TEXT block; anything without a match comes out.
 
 ---
 

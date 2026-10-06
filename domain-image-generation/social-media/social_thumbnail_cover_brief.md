@@ -17,7 +17,7 @@ tags:
   - image-generation
   - packaging
   - visual
-updated: "2026-05-27"
+updated: "2026-10-06"
 related_prompts:
   - domain-professional-writing/content-production/content_seo_title_description.md
   - domain-professional-writing/content-production/content_long_form_script.md
@@ -98,6 +98,22 @@ no extra or misspelled text, no stock logos. [repeat top 2 bans]
 
 ### Variant Levers
 3 quick swaps to A/B test (e.g., subject expression, color, text placement).
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "Focal hierarchy + contrast hold up at small (feed) size" from the wording of the brief — contrast is a property of a render; the brief only asks for it.
+- Write on-image text that promises more than the content delivers ("I Made $10K in a Week" on a video about trying to); it can pass every Verification line and still mislead viewers into a click.
+- Place on-image text in the bottom-right corner of a video thumbnail, where YouTube overlays the duration badge [VERIFY: current platform spec].
+- Bundle two or more changes into one Variant Lever — if the expression, color and text position all change, an A/B result cannot say which one moved the click rate.
+- Paste the `NEGATIVE:` line unchanged into a model that has its own syntax for exclusions (Midjourney's `--no`, a separate negative-prompt field) — there, "no watermark" sits in the positive prompt and can draw one in.
+
+✅ **DO:**
+- Before calling the brief final, get one test render from it (or tell the user to run one), downscale it to about 168×94 px (a sidebar thumbnail), and confirm the subject and every on-image word read at that size.
+- Check each on-image word against the script or content outline and keep only claims the piece actually makes.
+- When reference thumbnails are supplied, list what the brief borrows from each and drop any combination that would read as a copy of one creator's design.
 
 ---
 

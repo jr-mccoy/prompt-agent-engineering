@@ -20,7 +20,7 @@ tags:
   - safe-zone
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/social-media/README.md
   - domain-image-generation/social-media/social_announcement_post.md
@@ -150,6 +150,21 @@ CONSTRAINTS:
 3. "The hook is hard to read over the photo — add/strengthen the scrim behind it and boost contrast."
 4. "The focal subject is in the bottom UI zone — raise it into the safe band."
 5. "The hook lost a word — re-render verbatim: \"[HOOK TEXT]\"."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat "top ~14%, bottom ~20%" as the whole UI map — TikTok and Reels stack like/comment/share buttons down the right edge, and each app moves its overlays between releases [VERIFY: current platform spec].
+- Check the safe band on the 1024×1536 render: that is 2:3, not 9:16, so scaling to 1920 px tall makes it 1280 px wide and the export crops 100 px from each side — or, scaled to 1080 wide, leaves 300 px of height to invent.
+- Assume the cover is seen only full-screen — on the profile grid a reel cover is shown as a centered crop, and a highlight cover as a small circle, so a hook placed high in the safe band can vanish from both [VERIFY: current platform spec].
+- Call the hook "legible at a glance" from the full-resolution file viewed on a monitor.
+
+✅ **DO:**
+- On the final 1080×1920 export, lay a mask over y 0–269 px and y 1536–1920 px plus the right-hand action-button column, and confirm no hook letter or focal feature sits under it.
+- Crop a copy to the platform's grid preview ratio and another to a circle, and check that the hook, or at least the focal subject, survives each.
+- View the export on a phone at full screen for about one second, then name the hook from memory; if you cannot, enlarge or shorten it.
 
 ---
 

@@ -2,12 +2,21 @@
 title: "Strategy Option Matrix Visualization Prompt"
 category: strategy
 description: "Generate a structured, no-UI visualization prompt optimized for strategy decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Strategy Option Matrix Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the model fill ZONE 2 cells with scores, ticks, or Harvey balls for criteria the intake did not score.
+- Accept a ZONE 3 sensitivity panel showing ranges or swing values nobody computed.
+- Let ZONE 5 name a preferred path that contradicts the matrix scores or the stated recommendation lens.
+- Leave the ZONE 4 heatmap's colour scale unlabelled, so a red cell cannot be decoded.
+
+✅ **DO:**
+- Recompute each option's weighted total from the rendered criterion scores and weights; it must equal the intake figure, and the preferred path must follow from it.
+- Check each option against the stated constraints; an option that violates one is marked as excluded, not ranked.
+- Keep ZONE 5 trigger conditions worded as the intake wrote them, thresholds included.

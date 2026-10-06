@@ -94486,7 +94486,16 @@
       "domain": "image-generation",
       "category": "analyst",
       "description": "Generate a structured, no-UI visualization prompt optimized for analyst decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -94494,7 +94503,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94505,7 +94514,16 @@
       "domain": "image-generation",
       "category": "customer-success",
       "description": "Generate a structured, no-UI visualization prompt optimized for customer success decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -94513,7 +94531,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -94524,7 +94542,16 @@
       "domain": "image-generation",
       "category": "designer",
       "description": "Generate a structured, no-UI visualization prompt optimized for designer decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -94532,7 +94559,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95443,7 +95470,16 @@
       "domain": "image-generation",
       "category": "educator",
       "description": "Generate a structured, no-UI visualization prompt optimized for educator decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -95451,7 +95487,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95462,7 +95498,16 @@
       "domain": "image-generation",
       "category": "engineering",
       "description": "Generate a structured, no-UI visualization prompt optimized for engineering decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -95470,7 +95515,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95481,7 +95526,16 @@
       "domain": "image-generation",
       "category": "executive",
       "description": "Generate a structured, no-UI visualization prompt optimized for executive decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -95489,7 +95543,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95500,7 +95554,16 @@
       "domain": "image-generation",
       "category": "founder",
       "description": "Generate a structured, no-UI visualization prompt optimized for founder decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -95508,7 +95571,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95519,7 +95582,16 @@
       "domain": "image-generation",
       "category": "hr",
       "description": "Generate a structured, no-UI visualization prompt optimized for hr decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -95527,7 +95599,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -95744,7 +95816,7 @@
         "nano-banana"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/childrens-illustration/childrens_book_illustration_spread.md",
         "domain-image-generation/childrens-illustration/childrens_consistent_style_series.md",
@@ -95778,7 +95850,7 @@
         "storybook"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/childrens-illustration/childrens_character_design_sheet.md",
         "domain-image-generation/childrens-illustration/childrens_consistent_style_series.md",
@@ -95813,7 +95885,7 @@
         "nano-banana"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/childrens-illustration/childrens_book_illustration_spread.md",
         "domain-image-generation/childrens-illustration/childrens_character_design_sheet.md",
@@ -96179,7 +96251,7 @@
         "nano-banana"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/comic-sequential/manga_style_panel.md",
         "domain-image-generation/comic-sequential/webtoon_vertical_strip.md",
@@ -96214,7 +96286,7 @@
         "nano-banana"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/comic-sequential/comic_panel_page.md",
         "domain-image-generation/comic-sequential/webtoon_vertical_strip.md",
@@ -96248,7 +96320,7 @@
         "gpt-image-2"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/comic-sequential/comic_panel_page.md",
         "domain-image-generation/comic-sequential/manga_style_panel.md",
@@ -96340,7 +96412,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/events-print/event_poster.md",
@@ -96373,7 +96445,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/events-print/promotional_flyer.md",
@@ -96406,7 +96478,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/events-print/event_poster.md",
@@ -96528,7 +96600,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/merch-print-on-demand/tshirt_graphic.md",
@@ -96562,7 +96634,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/merch-print-on-demand/tshirt_graphic.md",
@@ -96596,7 +96668,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md",
         "domain-image-generation/merch-print-on-demand/sticker_design.md",
@@ -97293,7 +97365,7 @@
         "gpt-image-2"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/scientific-technical/scientific_illustration.md",
         "domain-image-generation/scientific-technical/technical_exploded_diagram.md",
@@ -97326,7 +97398,7 @@
         "nano-banana"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/scientific-technical/technical_exploded_diagram.md",
         "domain-image-generation/scientific-technical/data_visualization_chart_image.md",
@@ -97358,7 +97430,7 @@
         "nano-banana"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/scientific-technical/scientific_illustration.md",
         "domain-image-generation/scientific-technical/data_visualization_chart_image.md",
@@ -97394,7 +97466,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/social-media/README.md",
         "domain-image-generation/social-media/social_quote_graphic.md",
@@ -97429,7 +97501,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/social-media/README.md",
         "domain-image-generation/social-media/social_quote_graphic.md",
@@ -97466,7 +97538,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/social-media/README.md",
         "domain-image-generation/social-media/social_quote_graphic.md",
@@ -97499,7 +97571,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/social-media/README.md",
         "domain-image-generation/social-media/social_carousel_set.md",
@@ -97535,7 +97607,7 @@
         "nano-banana-pro"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-23",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/social-media/README.md",
         "domain-image-generation/social-media/social_announcement_post.md",
@@ -97568,7 +97640,7 @@
         "visual"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-27",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-professional-writing/content-production/content_seo_title_description.md",
         "domain-professional-writing/content-production/content_long_form_script.md"
@@ -97706,7 +97778,16 @@
       "domain": "image-generation",
       "category": "marketing",
       "description": "Generate a structured, no-UI visualization prompt optimized for marketing decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -97714,7 +97795,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98218,7 +98299,16 @@
       "domain": "image-generation",
       "category": "operations",
       "description": "Generate a structured, no-UI visualization prompt optimized for operations decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -98226,7 +98316,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98662,7 +98752,16 @@
       "domain": "image-generation",
       "category": "product-management",
       "description": "Generate a structured, no-UI visualization prompt optimized for product management decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -98670,7 +98769,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98681,7 +98780,16 @@
       "domain": "image-generation",
       "category": "program-management",
       "description": "Generate a structured, no-UI visualization prompt optimized for program management decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -98689,7 +98797,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98700,7 +98808,16 @@
       "domain": "image-generation",
       "category": "researcher",
       "description": "Generate a structured, no-UI visualization prompt optimized for researcher decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -98708,7 +98825,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -98925,7 +99042,16 @@
       "domain": "image-generation",
       "category": "strategy",
       "description": "Generate a structured, no-UI visualization prompt optimized for strategy decision workflows.",
-      "techniques": [],
+      "techniques": [
+        "SV-11",
+        "SV-12",
+        "SV-13",
+        "SV-14",
+        "SV-15",
+        "SV-16",
+        "SV-17",
+        "SV-18"
+      ],
       "keywords": [
         "visualization",
         "no-ui",
@@ -98933,7 +99059,7 @@
         "strategy"
       ],
       "difficulty": "",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },

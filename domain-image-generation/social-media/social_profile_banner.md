@@ -21,7 +21,7 @@ tags:
   - safe-zone
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/social-media/README.md
   - domain-image-generation/social-media/social_quote_graphic.md
@@ -157,6 +157,21 @@ CONSTRAINTS:
 3. "On mobile the tagline would get cropped — pull all text into the central safe zone."
 4. "Text contrast is weak — strengthen the scrim or switch text to [higher-contrast hex]."
 5. "The tagline lost a word — re-render verbatim: \"[TAGLINE]\"."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Quote the platform table's sizes and safe zones as current — LinkedIn company, Facebook and YouTube have all changed banner specs and crop behavior before [VERIFY: current platform spec].
+- Check the safe zone on the 3:1 render and then export to LinkedIn's 4:1 — scaling a 1536×512 render to 1584 px wide gives 528 px of height, so 132 px (25%) is cropped away after the check was made.
+- Trust "keep content centered" for Facebook — the 1640×856 upload (about 1.9:1) shows as roughly 820×312 on desktop (about 2.6:1), so desktop trims the top and bottom while mobile trims the sides; text has to survive both.
+- Mark the `[AVATAR CORNER]` clear from a guess at where the avatar sits — its size and offset differ between desktop and the mobile app, and on X the bottom band can also carry profile UI.
+
+✅ **DO:**
+- On the exported YouTube file, measure the tagline and logo bounding boxes and confirm both sit within x 507–2053 and y 509–931 px, the centered 1546×423 area.
+- Upload the banner (or use the platform's own preview) and screenshot the profile on desktop and on a phone; look for text under the avatar or cut by the edge in both.
+- Run every safe-zone check on the file at final platform dimensions, after the resize and crop, never on the model's native-size render.
 
 ---
 

@@ -2,12 +2,21 @@
 title: "Educator Concept Scaffold Visualization Prompt"
 category: educator
 description: "Generate a structured, no-UI visualization prompt optimized for educator decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Educator Concept Scaffold Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept ZONE 3 definitions the model rewrote — a "plain-language" paraphrase can quietly become wrong ("plants get their food from the soil" in place of the educator's wording).
+- Let the ZONE 2 cause/effect chain carry a reversed arrow or a skipped step; it looks complete while teaching the very misconception ZONE 4 is meant to correct.
+- Let ZONE 4 state the misconception more prominently than its correction, or present a misconception that is not on the intake list.
+- Accept ZONE 5 quick-check items with no answer key from the educator, or items that test vocabulary absent from the bank.
+
+✅ **DO:**
+- Paste the educator's exact definitions into the prompt and diff each rendered definition against them word for word.
+- Check the ZONE 1 grade band against the intake learner level, and that the reading level of all rendered text fits that band.
+- Answer each ZONE 5 question using only what the image shows; any question the image cannot answer is cut.

@@ -16,7 +16,7 @@ tags:
   - accuracy
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/scientific-technical/scientific_illustration.md
   - domain-image-generation/scientific-technical/data_visualization_chart_image.md
@@ -140,6 +140,21 @@ This is an UNVERIFIED draft. An engineer must verify parts, counts, orientation,
 3. "Fastener count is wrong — show exactly `[count]` of `[fastener]`."
 4. "The rendered callout numbers are scrambled — switch to clean numbered markers; I'll add the key in post."
 5. "Parts overlap and the explosion is unreadable — increase even spacing along the assembly axis."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass an explosion because every part is present when the parts sit in the wrong sequence along the `[ASSEMBLY AXIS]` (washer outside the nut, spring above the cap) — the count check succeeds and the assembly is impossible.
+- Let rendered part numbers, SKUs, or "P/N" codes appear; callout markers 1–N are positional keys, and anything resembling a manufacturer part number is invented.
+- Count fasteners by visible instances only — occluded screws get missed and ghosted duplicates along alignment lines get double-counted.
+- Accept an asymmetric part (chamfer, keyed tab, thread handedness, spring taper) flipped end-for-end, or reference photos of a different product revision as proof of resemblance.
+
+✅ **DO:**
+- Walk the explosion from one end of the axis and write down the parts in rendered order; that sequence must equal the `[PARTS LIST]` order, and each adjacent pair must match a `[FIT RELATIONSHIPS]` entry.
+- Tally every instance of each part and fastener, including partly hidden ones, against its ×count.
+- Check the parts list and `[REFERENCE PHOTOS]` against the same BOM / spec revision before generating.
 
 ---
 

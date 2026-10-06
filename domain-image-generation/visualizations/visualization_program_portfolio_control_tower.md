@@ -2,12 +2,21 @@
 title: "Program Portfolio Control Tower Visualization Prompt"
 category: program-management
 description: "Generate a structured, no-UI visualization prompt optimized for program management decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Program Portfolio Control Tower Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the model infer a workstream's RAG colour in ZONE 2 from its description — a green cell the program manager never set is fabricated assurance.
+- Accept a ZONE 4 risk register showing probability × impact scores or risk counts that are not in the intake.
+- Let the ZONE 5 queue include workstreams that have not breached the stated intervention thresholds, or omit ones that have.
+- Draw ZONE 3 milestone markers with dates or dependency links the workstream plans do not contain.
+
+✅ **DO:**
+- Require a status signal per workstream in the intake; any workstream without one renders grey with "status not reported".
+- Apply the intervention thresholds to each workstream's status signals yourself and confirm ZONE 5 lists exactly the ones that breach.
+- Count the rows in the ZONE 2 grid against the workstreams named in the portfolio scope.

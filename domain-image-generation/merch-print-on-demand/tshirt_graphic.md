@@ -18,7 +18,7 @@ tags:
   - screen-print
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/merch-print-on-demand/sticker_design.md
@@ -147,6 +147,22 @@ CONSTRAINTS:
 2. "Color-count violation — flatten gradients/shadows down to the [COLOR COUNT] flat spot colors for screen-print."
 3. "The art disappears on [GARMENT COLOR] — add a clean knockout/outline for contrast."
 4. "Subject is cropped too close to the edge — re-center with a clean margin inside the print area."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Equate `[COLOR COUNT]` with the number of screens — on a dark `[GARMENT COLOR]` a white underbase is an extra screen, and a design color that matches the shirt should be a knockout, not ink.
+- Clear "no drop shadow on transparent output" while a haze of 1–20% alpha pixels surrounds the art; DTG printers lay underbase under partial alpha, which shows as a faint box or halo on the shirt.
+- Tick "sized for the print area" from composition alone — an 11×14 in print at 300 DPI needs 3300×4200 px, and a 1024 px-wide render stretched to 11 in is about 93 DPI [VERIFY: POD provider spec].
+- Pass a slogan tee because it has no logo — phrases are registered as trademarks for clothing too, and a team catchphrase or brand tagline gets a listing removed.
+- Judge contrast against `[GARMENT COLOR]` from the hex swatch; heather and colored fabrics absorb ink differently from a screen color.
+
+✅ **DO:**
+- Count inks plus any underbase and confirm the total with the printer before calling the color limit met.
+- Select pixels with alpha between 1 and 254 more than a few pixels from the art's edge and delete them before upload.
+- Search the exact slogan in the trademark register for the selling market (USPTO, EUIPO) in clothing class 25, and preview the art on the provider's own mockup for the chosen garment color.
 
 ---
 

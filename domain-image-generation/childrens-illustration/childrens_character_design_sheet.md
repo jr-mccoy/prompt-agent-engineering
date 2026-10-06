@@ -16,7 +16,7 @@ tags:
   - character-consistency
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/childrens-illustration/childrens_book_illustration_spread.md
   - domain-image-generation/childrens-illustration/childrens_consistent_style_series.md
@@ -145,6 +145,21 @@ For the expression strip on Nano Banana, generate a 4-panel head-and-shoulders g
 3. "The distinctive `[mark]` is missing in the three-quarter view — it must appear in every view."
 4. "Panel styles differ — unify all panels to the canonical `[STYLE]`."
 5. "Expressions read too adult/intense — soften to friendly, age-appropriate `[EXPRESSIONS]`."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass "identical scale on a shared baseline" when the figures are the same height but the head-to-body ratio differs — three-quarter and side views often get a larger head than the front view.
+- Tick "distinctive mark visible in every view" when it is on the wrong side — the model mirrors views, so left-cheek freckles show on the right cheek in the three-quarter view, or appear in a right profile where they should be hidden.
+- Let the back view become canon unchecked — the bible rarely says what the back of the hair or the outfit looks like, so the model invents a ponytail, buttons or a pocket that every later spread then inherits.
+- Treat the expression strip as done because four faces are present — two can read the same, and the face shape or eye color can shift between expressions.
+
+✅ **DO:**
+- Measure head height and full height in pixels in each view and check the ratio against `[SCALE NOTE]` (1:3.5 means the head is about 29% of total height).
+- Write down which side each distinctive mark is on, then confirm it appears on that side, or is correctly hidden, in every view.
+- Count fingers and toes in each view and compare them across views; show the expression strip to someone without labels and ask them to name each face.
 
 ---
 

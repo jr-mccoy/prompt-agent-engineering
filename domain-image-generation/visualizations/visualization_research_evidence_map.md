@@ -2,12 +2,21 @@
 title: "Research Evidence Map Visualization Prompt"
 category: researcher
 description: "Generate a structured, no-UI visualization prompt optimized for researcher decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Research Evidence Map Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let node size, line weight, or colour intensity in ZONE 3 imply evidence strength without a stated scale in the legend — readers take a large circle as strong evidence.
+- Accept citations, author–year tags, sample sizes, or effect sizes the model invented to fill the evidence matrix.
+- Let ZONE 4 resolve a contradiction the evidence leaves open, or drop the minority finding to make the synthesis tidy.
+- Show ZONE 2 method steps that the studies did not actually use.
+
+✅ **DO:**
+- Encode evidence confidence on one explicit scale with its legend (e.g., high / moderate / low), taken from the intake's evidence-confidence field.
+- Trace every citation on the image to a source the researcher supplied, checking author, year, and n; an untraceable citation is removed, not "corrected".
+- Count the contradictions listed in the intake and confirm the same number appear in ZONE 4.

@@ -18,7 +18,7 @@ tags:
   - cut-line
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/merch-print-on-demand/tshirt_graphic.md
@@ -138,6 +138,22 @@ CONSTRAINTS:
 2. "The silhouette has thin tendrils that won't cut — simplify the outline into a clean closed shape."
 3. "Keyline is uneven/broken — make the white border uniform thickness all the way around."
 4. "Subject too small — scale it up to fill the print area with a clean margin."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call the keyline "unbroken" from the preview — where an ear, tail, speech-bubble point or letter touches the border, the white band often narrows to a few pixels, and a cut path offset from that contour slices into the art.
+- Trust the checkerboard preview as proof of a clean transparent background — a faint halo of partly transparent pixels, or stray specks away from the subject, gets traced by the provider's contour tool as extra cut islands.
+- Count a gap between subject parts (between an arm and the body, inside a letter "O") as cut-out — most die-cut paths follow the outer edge only, so those gaps print as filled border or background [VERIFY: POD provider spec].
+- Size the border, thinnest line, and smallest text by proportion alone; at a 2–3 in finished size, "~6% of subject width" can fall under the provider's minimums [VERIFY: POD provider spec].
+- Approve "bold, saturated" `[PALETTE]` hexes on screen alone — neon pinks, electric blues and acid greens sit outside what most sticker printers' CMYK inks reach and arrive noticeably duller; check them with the provider's color profile first.
+
+✅ **DO:**
+- Threshold the alpha channel at 50% and count connected shapes: exactly one, with no specks outside it.
+- Scale the file to the finished sticker size at the provider's DPI and measure, in pixels, the narrowest point of the keyline and the narrowest neck of the silhouette.
+- Draw an offset path at the provider's cut offset around the threshold shape and confirm it stays inside the keyline everywhere.
 
 ---
 

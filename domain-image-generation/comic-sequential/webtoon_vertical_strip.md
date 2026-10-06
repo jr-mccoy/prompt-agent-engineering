@@ -17,7 +17,7 @@ tags:
   - extreme-aspect-ratio
   - nano-banana
   - gpt-image-2
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/comic-sequential/comic_panel_page.md
   - domain-image-generation/comic-sequential/manga_style_panel.md
@@ -147,6 +147,22 @@ Stitch all beats vertically (top→bottom) into the final tall strip externally,
 3. "The color grade shifted halfway down — restore the uniform `[COLOR GRADE]` for the lower beats."
 4. "`[CHARACTER NAME]` drifted in the third beat — restore identity from the reference pack."
 5. "The subject is crowding the right edge and gets cut off on a phone — pull it inward with edge breathing room."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Judge `[SCROLL PACING]` from the whole strip shrunk to fit a monitor — a gap that looks like a long pause in overview may be under half a phone screen once the strip is scaled to the reader's width.
+- Stitch gpt-image-2 segments without measuring the joins — each segment carries its own top and bottom whitespace, so a planned gap can come out twice as tall, and the background tone often steps at the seam.
+- Assume the strip arrives as one image — platforms ask for uploads cut into slices of limited height, and a face or balloon zone split across a slice edge can load in two pieces [VERIFY: current platform spec].
+- Pass the speech-safe areas without checking scroll order: a reply's zone that sits above the line it answers is read first.
+- Upscale a 512-px-wide Nano Banana 2 strip to the platform's canvas width and call the line art final without inspecting it at 100%; a 1.5× or larger upscale softens small faces and thin lines.
+
+✅ **DO:**
+- Scale the stitched strip to the platform's canvas width [VERIFY: current platform spec], view it on a phone at reading speed, and measure each gap in screen heights against the planned pacing.
+- At every stitch line, sample the background hex just above and below and measure the gutter height across the seam.
+- List the `[DIALOGUE MAP]` lines in speaking order and confirm each zone sits lower in the scroll than the previous one.
 
 ---
 

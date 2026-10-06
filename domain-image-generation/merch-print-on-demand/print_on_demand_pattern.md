@@ -18,7 +18,7 @@ tags:
   - print-on-demand
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/merch-print-on-demand/tshirt_graphic.md
@@ -136,6 +136,22 @@ CONSTRAINTS:
 2. "There's a dead zone in the [region] — redistribute motifs for even all-over coverage at [DENSITY]."
 3. "It rendered a border/frame — remove it; the artwork must bleed off all four edges."
 4. "Scale is off for [PRODUCT] — make the motif [larger/smaller] relative to the tile."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass the seam test on a 2×2 repeat viewed whole — a 1–2 px color step or a motif that rejoins a few pixels off-line only shows at 100% zoom along the joins.
+- Run the seam test only on the 1024×1024 render; upscalers and resamplers treat the image edge as a boundary, so a tile that was seamless before upscaling can carry a seam afterward.
+- Read `[LAYOUT]` = half-drop as satisfied by a square tile that looks staggered — unless the provider offers a half-drop repeat, it repeats the file as a straight block, and the stagger has to tile as a block too [VERIFY: POD provider spec].
+- Count "one consistent background color" from the eye — a field that drifts from #F4E9D8 in one corner to #F1E5D2 in another prints as a faint checkerboard once repeated.
+- State tile size, DPI, or repeat scale for `[PRODUCT]` from memory [VERIFY: POD provider spec].
+
+✅ **DO:**
+- Offset the final, upscaled tile by exactly half its width and half its height with wrap-around (an Offset filter) so the original edges meet in a cross at the center, and inspect that cross at 100%.
+- Sample the background hex at the four corners and the center of the tile; all five must match.
+- Tile 4×4 at the physical size the product prints at and look for a grid rhythm from one standout motif; if one shows, move or vary it.
 
 ---
 
