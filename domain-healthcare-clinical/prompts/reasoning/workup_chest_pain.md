@@ -14,8 +14,20 @@ tags:
   - emergency-medicine
   - diagnostic-workup
   - chest-pain
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -85,6 +97,21 @@ Work up undifferentiated chest pain in an adult patient: rule out the five life-
    - Moderate HEART → observation unit, serial troponin, stress or CTCA before discharge.
    - High HEART or positive troponin → admit, cardiology, treat as NSTEMI pathway.
    - Document specific reasoning if discharging chest pain.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the working diagnosis outrun the troponin algorithm — write "suspected NSTEMI pending [time-point] troponin" until the 0-h rule-in value or the delta is in hand.
+- Describe ECG changes as "dynamic" from a single tracing; dynamic means a change between timed ECGs or against a prior.
+- Print a HEART, GRACE or TIMI tier without its item values, or reach a tier with a risk factor that is not in the input.
+- Mark PERC negative before judging pretest probability low, or while any of its eight items is unverified.
+- Write mg/kg or renally adjusted anticoagulant doses without a weight and creatinine in the input — "CrCl appears normal" with no creatinine is invented.
+
+✅ **DO:**
+- Recompute each score from its items: HEART (each component and the troponin as a multiple of that assay's ULN), Wells, ADD-RS, and age-adjusted D-dimer (age × 10 in the assay's units, FEU vs DDU).
+- Name the troponin assay and take its algorithm cutoffs from the input or `[VERIFY: assay-specific cutoffs]`, then state rule-out / observe / rule-in from the 0-h value and the delta.
+- For each of the five life threats, record the finding or test that excluded it, or the test still pending.
+- Schedule repeat troponin and ECG by clock time relative to the first draw and symptom onset, and state the decision each result triggers.
 
 ## Output Format
 

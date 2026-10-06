@@ -15,8 +15,20 @@ tags:
   - drug-mechanism
   - supportive-care
   - toxicity-management
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -121,6 +133,20 @@ Senior medical oncologist explaining the regimen to a colleague or trainee, nami
    - Oral care.
    - Hydration goals.
    - Schedule adherence; impact of delays.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill per-agent mg/m² or AUC values from memory as "the" regimen dose; they depend on protocol version, indication and organ function — tag each `[VERIFY: treating protocol / current label]`.
+- Attribute a supportive-care practice to a trial that did not test it (olanzapine antiemetic credited to NEPA), or list a withdrawn premedication (ranitidine).
+- Leave `DOSE MODIFICATION RULES` without organ-function triggers: carboplatin via Calvert GFR, capecitabine via CrCl, irinotecan via bilirubin.
+- Assign an emetogenic class without naming the combination's most emetogenic agent and day.
+
+✅ **DO:**
+- Compute BSA (Mosteller) from the supplied height and weight, then each dose as mg/m² × BSA; for carboplatin, AUC × (GFR + 25) with the GFR cap stated.
+- Multiply cycle length by planned cycles and check that the restaging interval and total weeks in `CYCLE STRUCTURE` agree.
+- Confirm each biomarker prerequisite (RAS/BRAF/MSI for anti-EGFR, HER2, DPYD, UGT1A1) against the input; mark "not provided" rather than assuming wild-type.
+- Keep a running cumulative dose for anthracyclines, bleomycin and oxaliplatin across planned cycles and compare it to the limit you cite.
 
 ## Output Format
 

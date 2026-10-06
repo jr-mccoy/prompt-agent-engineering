@@ -16,8 +16,20 @@ tags:
   - drug-monitoring
   - dosing
   - pharmacokinetics
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -124,6 +136,21 @@ Senior clinical pharmacist / physician interpreting the level and writing the do
    - Interpretation: in target / sub / supra; clinical correlation; PK factors considered.
    - Action: continue, increase, decrease, hold, switch.
    - Re-check timing and method.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Run the proportional formula (current × target / measured) on a level drawn before steady state, inside the distribution phase, or for a nonlinear drug; the arithmetic looks exact and the new dose is wrong.
+- Let the DOSE ADJUSTMENT regimen disagree with the calculation printed beneath it — e.g. a "0.0625 mg every other day" order next to a line that computes 0.0625 mg/day.
+- Compare a level to a range in different units without showing the conversion (ng/mL vs nmol/L, µg/mL vs µmol/L), or accept a reported value with no units.
+- Take the target range from memory when the indication changes it (digoxin in HF vs AF, lithium acute vs maintenance, tacrolimus by organ and months post-transplant); use the input's target or `[VERIFY: indication-specific range]`.
+- Read a total phenytoin or valproate level as "therapeutic" when albumin or renal function is abnormal and no correction or free level is shown.
+
+✅ **DO:**
+- Recompute before signing: new daily dose = current daily dose × target ÷ measured (linear drugs only); convert the proposed regimen back to mg/day, confirm it equals the computed figure, and state the level it predicts.
+- Time NEXT LEVEL from the patient's adjusted half-life (≈4–5 half-lives after the change, using the renally or hepatically prolonged t½ you stated), not the normal-function value.
+- Carry units through any antidote calculation (e.g. digoxin-immune Fab: body load in mg → vials via the label's per-vial binding capacity) and check the result is in vials, not mg.
+- Copy draw time and last-dose time from the input into LEVEL; if either is missing, label the level "timing unverified" and request it instead of assuming a trough.
 
 ## Output Format
 

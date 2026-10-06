@@ -16,8 +16,20 @@ tags:
   - immunosuppression
   - prophylaxis
   - drug-monitoring
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -119,6 +131,20 @@ Senior transplant nephrologist / hepatologist / cardiologist / pulmonologist / r
    - Biopsy-confirmed: Banff classification.
    - Cell-mediated: methylprednisolone 500–1000 mg IV ×3; if steroid-resistant, ATG.
    - Antibody-mediated: plasmapheresis + IVIG + rituximab ± bortezomib + steroid.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Present tacrolimus trough bands as universal; they depend on organ, induction, assay and center protocol and must be labelled `per center protocol`.
+- Assert that a drug "raises tacrolimus" without the mechanism; TMP-SMX's problem is hyperkalemia and blocked creatinine secretion, not CYP3A4 inhibition.
+- Give valganciclovir, TMP-SMX or acyclovir doses without a renal adjustment from the patient's current CrCl, which shifts weekly after transplant.
+- Cite a trial acronym for a regimen it did not test, or write "vaccines complete" when vaccination history was not supplied.
+
+✅ **DO:**
+- Show each weight-based dose as mg/kg × weight = mg/day and how it is split and rounded to capsule strength.
+- For every prophylaxis line, list agent, renal-adjusted dose, start and stop date, and the D/R serostatus input that sets the duration.
+- Reconcile the regimen with itself: the interaction, vaccine (e.g., household rotavirus) and pregnancy statements in the reasoning steps must match the worked example.
+- Check mycophenolate contraception wording for female and male patients against the current label `[VERIFY: current label / REMS]`.
 
 ## Output Format
 

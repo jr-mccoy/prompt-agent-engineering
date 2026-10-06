@@ -14,8 +14,20 @@ tags:
   - emergency-medicine
   - diagnostic-workup
   - headache
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -108,6 +120,20 @@ Work up the patient presenting with headache: identify red-flag (SNNOOP10) featu
     - CGRP monoclonal antibodies (erenumab 70/140 mg SC monthly, fremanezumab, galcanezumab, eptinezumab IV) for ≥4 migraine days/month with disability or failed orals.
     - OnabotulinumtoxinA 155 units q12 wks for chronic migraine (≥15 days/month with ≥8 migrainous).
     - Lifestyle: sleep regularity, hydration, regular meals, identifying triggers, exercise, magnesium 400 mg, riboflavin 400 mg, CoQ10 100 mg TID.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Cite CT sensitivity for SAH as excluding hemorrhage without the conditions it depends on: time from onset to scan, scanner generation, who read it, and hematocrit.
+- Mark the Ottawa SAH rule positive or negative before confirming its inclusion criteria (alert, age ≥15, new severe non-traumatic headache peaking within 1 h) and listing each predictor found.
+- Call RBCs "clearing" without the tube 1 and tube 4 counts, or xanthochromia absent when the tap was done within ~12 h of onset or read by eye only.
+- Settle on a primary headache diagnosis at a first presentation; ICHD-3 needs attack counts, so a first attack is "probable" at most.
+- Write weight-based meningitis doses without a weight in the input; use the provider order or `[VERIFY: weight and renal function]`.
+
+✅ **DO:**
+- Count SNNOOP10 hits from the input and cite the finding for each; features outside the list (e.g. vomiting) go under "other features", not into the count.
+- For each thunderclap cause, name its confirmatory test and whether it is done: SAH (CT ± LP or CTA), CVT (CTV/MRV), RCVS (CTA, repeated if early-negative), dissection (CTA/MRA neck), apoplexy (pituitary MRI).
+- In pregnancy or postpartum, state the gestational or postpartum day and compare BP with the severe-range thresholds of the current obstetric protocol `[VERIFY: ACOG/local protocol]`.
 
 ## Output Format
 

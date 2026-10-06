@@ -15,8 +15,20 @@ tags:
   - oncology
   - diagnostic-workup
   - fever
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -93,6 +105,20 @@ Work up classic fever of unknown origin (FUO): document fever per definition, st
 7. **Documentation and follow-up.**
    - Most FUO eventually diagnoses (60–80%); ~10–20% remain undiagnosed and often resolve spontaneously.
    - If undiagnosed and stable: stop workup, monitor outpatient, repeat history/exam every visit.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "classic FUO" without checking each definition element against the input: a measured temperature with its site, the duration, and the specific Stage 1 tests actually completed.
+- Call a CRP, ESR or ferritin "mild" or "marked" without its units and the reporting lab's reference range — CRP in mg/L and mg/dL differ tenfold.
+- Count a negative IGRA, a negative TTE, or blood cultures drawn on antibiotics as excluding TB, endocarditis or bacteremia.
+- Pad the plan with repeat serologies that were already negative unless a new clinical feature justifies them.
+- Present a PET-avid pattern as diagnostic when several entities share it (large-vessel uptake from vasculitis, atherosclerosis or infection); tissue or criteria must confirm.
+
+✅ **DO:**
+- Map every Stage 1 test to its result in the input (positive / negative / not done) so the gaps, not the completed tests, drive Stage 2.
+- For each can't-miss category — infection (endocarditis, TB, abscess), lymphoma or solid tumor, vasculitis, HLH — name the test that addressed it and what is still open.
+- Apply named criteria by count (HLH, Yamaguchi, modified Duke): list each criterion met with its value and compare the total to the threshold, citing the criteria version or `[VERIFY: current criteria]`.
 
 ## Output Format
 

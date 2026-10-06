@@ -15,8 +15,20 @@ tags:
   - anticoagulation
   - doac
   - drug-selection
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -103,6 +115,20 @@ Senior internist / cardiologist / hematologist writing the DOAC prescription wit
    - Cost: brand-name DOACs expensive; generic dabigatran available; insurance / 90-day supply / manufacturer assistance.
 
 8. **Document the plan.**
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Quote a CrCl that the supplied age, weight, SCr and sex do not produce (wrong weight, missing 0.85 female factor); every dose band downstream inherits the error.
+- Transfer reduction criteria across indications or jurisdictions — apixaban's AF age/weight/SCr rule does not govern VTE, and edoxaban's weight and P-gp criteria differ between US and EU AF labels.
+- Mark an interaction "no adjustment needed" without naming the pathway (P-gp, CYP3A4 or both) and what the label says for that pair.
+- Tick "Pregnancy: no" or "Triple-positive APS: no" in `CONTRAINDICATIONS REASSESSED` when the input never stated it, or omit Child-Pugh class when hepatic disease is listed.
+
+✅ **DO:**
+- Recompute Cockcroft-Gault from the inputs ((140 − age) × weight ÷ (72 × SCr), × 0.85 if female), show the result, and dose from the label table `[VERIFY: current label]`.
+- Write the dose-reduction criteria as a yes/no list with the input value beside each before stating "N of 3 met".
+- Classify every co-medication by P-gp/CYP3A4 effect and strength and record the resulting dose action.
+- Confirm the named reversal agent is stocked locally `[VERIFY: local formulary]` before listing it in counseling.
 
 ## Output Format
 

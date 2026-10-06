@@ -15,8 +15,20 @@ tags:
   - bipolar
   - antipsychotic
   - prescribing
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -114,6 +126,20 @@ Senior psychiatrist writing the antipsychotic prescription with explicit rationa
    - **Direct switch** (same class, similar receptor profile): start new agent, stop old agent.
    - **Cross-taper**: gradually reduce old while titrating new over 1–4 weeks; preferred for receptor-profile differences (e.g., olanzapine → aripiprazole, because anticholinergic withdrawal can cause cholinergic rebound).
    - **Plateau then cross-taper**: titrate new agent to therapeutic dose, then taper old agent — minimizes relapse risk.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Populate baseline `MONITORING` with weight, glucose, lipid or QTc values the input never gave — write "[not provided — obtain]" instead of plausible numbers.
+- Write a `Titration` whose increments, followed literally, cannot reach the stated range in the stated time (clozapine steps "per week" vs per day).
+- Cite a named trial as evidence for an agent that trial did not study, or state a monitoring mandate (clozapine REMS, ANC schedule) as current without checking — it changed in 2025 `[VERIFY: current label]`.
+- Call QTc "no concern" from a single baseline interval without listing other QT-prolonging drugs and K/Mg.
+
+✅ **DO:**
+- Simulate the titration day by day or week by week and confirm the target is reached when the plan says it is.
+- Take LAI loading doses, oral-overlap days and injection intervals from the specific product label, not from the class summary.
+- Apply renal and hepatic limits from the input (paliperidone and lurasidone need CrCl-based dosing; several agents cap in hepatic impairment).
+- State the expected level change when smoking starts or stops for CYP1A2 substrates (olanzapine, clozapine) and when to recheck.
 
 ## Output Format
 

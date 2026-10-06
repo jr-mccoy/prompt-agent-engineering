@@ -15,8 +15,20 @@ tags:
   - opioid-taper
   - chronic-pain
   - safety
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -98,6 +110,20 @@ Senior pain-medicine, addiction-medicine, or primary-care physician writing the 
 
 9. **Avoid forced tapers.**
    - CDC 2022 explicitly cautions against forced rapid tapers in chronic-pain patients (associated with overdose and suicide); engage patient in shared decision-making; pause if needed.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Publish a `TAPER SCHEDULE` whose later steps exceed the stated rate; a step from 70 to 50 mg/day oxycodone is a 29% cut, not 5–10%.
+- Leave visible recalculation scratch ("wait, let's recompute") or two different totals in `PATIENT SNAPSHOT`.
+- Use an MME factor without naming the conversion source, or a dose that requires a tablet strength the product does not come in.
+- Add gabapentin or another CNS depressant as an adjunct without stating the respiratory-depression interaction with opioids and the renal dose limit.
+
+✅ **DO:**
+- For every step, show total mg/day, MME/day and % reduction from the previous step, and check each against the declared rate before finalizing.
+- Check that the months in the schedule add up to the stated taper length and that every step is followed by a reassessment visit.
+- Base path selection on the DSM-5 criteria counted from the input (name which criteria were met); with fewer than 2, say so.
+- Size clonidine, gabapentin and other adjuncts to the supplied renal function and blood pressure `[VERIFY: current label / formulary]`.
 
 ## Output Format
 

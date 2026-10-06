@@ -82865,7 +82865,7 @@
         "drug-interactions"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82891,7 +82891,7 @@
         "drug-interactions"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82916,7 +82916,7 @@
         "prescribing"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82942,7 +82942,7 @@
         "prescribing"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82968,7 +82968,7 @@
         "withdrawal"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -82994,7 +82994,7 @@
         "toxicity-management"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83020,7 +83020,7 @@
         "adrenal-insufficiency"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83046,7 +83046,7 @@
         "drug-selection"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83072,7 +83072,7 @@
         "discharge-planning"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83099,7 +83099,7 @@
         "drug-monitoring"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83125,7 +83125,7 @@
         "prescribing"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83153,7 +83153,7 @@
         "outpatient"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83180,7 +83180,7 @@
         "safety"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83206,7 +83206,7 @@
         "safety"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83233,7 +83233,7 @@
         "safety"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83287,7 +83287,7 @@
         "prescribing"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83340,7 +83340,7 @@
         "pharmacokinetics"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83367,7 +83367,7 @@
         "critical-care"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83393,7 +83393,7 @@
         "abdominal-pain"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83418,7 +83418,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83444,7 +83444,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83469,7 +83469,7 @@
         "anemia"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83494,7 +83494,7 @@
         "chest-pain"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83519,7 +83519,7 @@
         "diagnostic-workup"
       ],
       "difficulty": "advanced",
-      "updated": "2026-09-24",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83545,7 +83545,7 @@
         "dyspnea"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83571,7 +83571,7 @@
         "fever"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83596,7 +83596,7 @@
         "headache"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -83621,7 +83621,7 @@
         "hematuria"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-08",
+      "updated": "2026-10-06",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -86117,7 +86117,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured decision support for selecting the right imaging study, applying appropriateness criteria, and documenting ordering rationale.",
-      "techniques": [],
+      "techniques": [
+        "ST-01",
+        "ST-02",
+        "RT-02",
+        "CM-02",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "radiology",
@@ -86125,7 +86131,7 @@
         "appropriateness-criteria"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_incidental_findings_management.md",
         "domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md",
@@ -86140,7 +86146,13 @@
       "domain": "healthcare-clinical",
       "category": "medicine",
       "description": "Structured approach to incidentalomas — applying society follow-up guidelines (Fleischner, ACR), communicating appropriately with patients, and documenting a defensible plan.",
-      "techniques": [],
+      "techniques": [
+        "ST-02",
+        "ST-03",
+        "RT-02",
+        "CM-02",
+        "QA-01"
+      ],
       "keywords": [
         "medicine",
         "radiology",
@@ -86149,7 +86161,7 @@
         "communication"
       ],
       "difficulty": "",
-      "updated": "2026-04-15",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-healthcare-clinical/prompts/medicine_imaging_ordering_rationale.md",
         "domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md",

@@ -16,8 +16,20 @@ tags:
   - neonatology
   - pharmacology
   - safety
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -125,6 +137,20 @@ Senior pediatrician / pediatric pharmacist / pediatric hospitalist / neonatologi
     - Max-dose check.
     - Concentration / mL conversion.
     - Monitoring plan.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Reuse a mL volume after changing products; 6.25 mL is 500 mg of a 400 mg/5 mL suspension but 750 mg of a 600 mg/5 mL one.
+- Apply one adult cap to every indication or route; caps differ (high-dose amoxicillin, IM vs IV epinephrine, IV arrest dosing).
+- Present a guideline's treat/observe criteria with a threshold it does not use (AAP "severe" AOM is fever ≥39 °C, not 38.5 °C).
+- Estimate weight from age outside resuscitation, or omit the weight and its date from the order.
+
+✅ **DO:**
+- Recompute the full chain for each product: mg/day = mg/kg/day × kg; mg/dose = mg/day ÷ doses; mL = mg/dose ÷ (mg per mL of THAT product); then reverse it from the final rounded mL back to mg/kg/day and confirm it is in range.
+- For neonates, compute PMA (GA at birth + postnatal weeks) and pick the matching row of the dosing table; for renal dosing, compute bedside Schwartz eGFR from the supplied height and SCr.
+- Check each dose against the route- and indication-specific maximum in a pediatric reference `[VERIFY: Lexicomp / Harriet Lane / current label]`.
+- State the rounding error as a percentage when rounding to a deliverable volume, and re-round if it exceeds 10%.
 
 ## Output Format
 

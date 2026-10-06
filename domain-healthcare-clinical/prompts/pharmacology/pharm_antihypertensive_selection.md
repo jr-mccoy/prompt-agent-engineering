@@ -14,8 +14,20 @@ tags:
   - hypertension
   - pharmacology
   - prescribing
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -97,6 +109,20 @@ Senior internist / cardiologist / nephrologist writing the prescription with exp
    - Diuretic: BMP at 2–4 weeks (Na, K, Mg, uric acid).
    - β-blocker: HR, asthma, fatigue, sexual function.
    - CCB: edema check at 2–4 weeks; dose reduction or addition of RAAS blocker often resolves edema.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Blend two guidelines into one `TARGET BP` (e.g., "<130/80, KDIGO <120") without naming the source and the measurement method (standardized office vs routine) the number assumes.
+- Write "none" under `CONTRAINDICATIONS / CAUTIONS` when K, SCr, UACR or pregnancy potential were never supplied — an unmeasured value is a gap, not a clearance.
+- Let `WHEN TO ESCALATE` cite a dose (e.g., lisinopril 40 mg) that `TITRATION SCHEDULE` never reaches.
+- Carry a heart-failure dose ceiling (weight-based carvedilol, sacubitril/valsartan steps) into a hypertension order, or a pairing called "synergistic" or "hazardous" with no mechanism stated.
+
+✅ **DO:**
+- Turn each lab trigger into an absolute number from the supplied baseline (in the worked example a 30% SCr rise from 1.05 is 1.37 mg/dL) and state the K value that holds the drug.
+- List every escalation step in order and check that each dose it references appears earlier in the titration ladder.
+- Map each compelling indication to the input finding that triggers it (UACR value, EF, MI history) and drop any class whose trigger is absent.
+- Check start and maximum doses against the hypertension indication on the label and renal suitability at the supplied eGFR `[VERIFY: current label / formulary]`.
 
 ## Output Format
 

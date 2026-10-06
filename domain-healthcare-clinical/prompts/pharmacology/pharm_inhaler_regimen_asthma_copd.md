@@ -15,8 +15,20 @@ tags:
   - copd
   - inhalers
   - prescribing
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -106,6 +118,20 @@ Senior pulmonologist or primary care prescriber building the inhaler regimen wit
    - Written asthma action plan (green/yellow/red zones).
    - COPD exacerbation plan: when to start prednisone (40 mg PO daily ×5 days) and antibiotic (amoxicillin-clav, azithromycin, or doxycycline for 5 days for increased sputum purulence).
    - Reassess control / exacerbations every 1–3 months when titrating; every 3–6 months when stable.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign a GINA step or GOLD group when exacerbation count, eosinophils or CAT/mMRC were not supplied; write "not assessable" and name the missing input.
+- Call an ICS dose "medium" or "high" without converting the product and µg/puff to the GINA dose-category table.
+- Credit a biologic with covering a comorbidity that is not among its labelled indications (e.g., allergic rhinitis vs nasal polyps).
+- Name a device or brand presentation without checking it is marketed where the patient is (Symbicort Turbuhaler is not sold in the US).
+
+✅ **DO:**
+- Pair every step, group or biologic-eligibility claim with the input value and threshold that justifies it (eos 320 ≥300; FeNO 55 ≥25; 3 exacerbations ≥2).
+- Recalculate total daily ICS (µg/puff × puffs × doses/day) and the MART daily maximum, and check both against the current product label `[VERIFY: current GINA / GOLD / label]`.
+- Take biologic loading dose, maintenance dose and interval from the label for the chosen indication.
+- Match the chosen device to the inspiratory-flow and coordination information in the input; if none was given, say flow was not assessed.
 
 ## Output Format
 

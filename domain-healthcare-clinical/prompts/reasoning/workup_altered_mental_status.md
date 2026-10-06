@@ -15,8 +15,20 @@ tags:
   - critical-care
   - delirium
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -102,6 +114,21 @@ Work up altered mental status (AMS) in the adult: stabilize airway/circulation, 
     - Stable AMS with identified treatable cause → ward.
     - Resolved AMS with clear etiology and outpatient follow-up plan → discharge with caregiver and warning signs.
     - Document baseline mental status comparison and decision-maker involvement.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pin delirium on a positive urinalysis in an older adult while other AEIOU TIPS items still lack results — bacteriuria is common and often asymptomatic; list what remains unexcluded.
+- Write a weight-based fluid or drug volume (e.g. mL/kg bolus) using a weight that is not in the input; print "weight needed" or name its source.
+- Justify CT head with a risk factor the patient does not have (anticoagulation absent from the medication list, trauma not reported); every indication must trace to the input.
+- Treat one normal glucose, SpO2 or temperature as excluding that cause in a fluctuating presentation without its time stamp.
+- Rule out nonconvulsive status without an EEG, or Wernicke because the full triad is absent.
+
+✅ **DO:**
+- Score CAM item by item (acute onset/fluctuation, inattention, disorganized thinking, altered level of consciousness) with the observed finding for each before writing "delirium".
+- Recompute qSOFA and any sepsis or fluid trigger from the actual numbers (SBP, RR, mental status, lactate value) and state which thresholds were and were not met.
+- Record the source of baseline cognition (collateral name/role, prior test and date) and compare today's exam against it.
+- Set a reassessment point for the working diagnosis at which lack of improvement triggers LP, EEG or MRI.
 
 ## Output Format
 

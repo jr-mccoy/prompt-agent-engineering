@@ -15,8 +15,20 @@ tags:
   - anxiety
   - prescribing
   - drug-interactions
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -111,6 +123,19 @@ Senior psychiatrist (or primary care physician comfortable with psychopharmacolo
    - 6–8 weeks: adequate trial assessment; if inadequate, optimize dose or switch.
    - Once stable: every 3 months; longer for maintenance phase.
    - For first episode: continue 6–9 months after remission; for recurrent: indefinite if ≥3 episodes or persistent residual symptoms.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Copy a step-2 range into `Starting dose` / `Target dose` as this patient's order; hepatic impairment (duloxetine), reduced CrCl (venlafaxine, desvenlafaxine) and CYP2D6 inhibition by the new or old agent change it — tag any number not taken from the input or the label `[VERIFY: current label / formulary]`.
+- Issue a `SWITCH PLAN` whose day numbers are anchored to two different "Day 1"s (start of taper vs start of new drug), or whose taper steps never reach 0 mg of the old drug.
+- Grade a serotonin-syndrome or interaction risk "low" or "high" without naming the mechanism (additive 5-HT reuptake inhibition, MAO inhibition, CYP inhibition raising the partner's level).
+- Write an FDA letter category ("Category C") in `PREGNANCY COUNSELING`; summarize the label's PLLR narrative and registry data instead.
+
+✅ **DO:**
+- Rebuild the switch on one day-count before finalizing: a row per day range with the dose of BOTH drugs, a check that the old drug's last row is 0 mg, and an MAOI washout that equals the stated days (5 weeks after fluoxetine).
+- Trace every "failed" or "adequate trial" label to the input dose and duration against the step-4 definition; when duration is missing, write "adequacy unknown".
+- Screen the full concurrent list, including OTC and supplements (St. John's wort, tramadol, triptans, linezolid), against the selected agent and record each flagged pair with its mechanism.
 
 ## Output Format
 

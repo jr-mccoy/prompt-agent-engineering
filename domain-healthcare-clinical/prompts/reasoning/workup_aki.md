@@ -14,8 +14,20 @@ tags:
   - critical-care
   - aki
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -108,6 +120,20 @@ Work up acute kidney injury: confirm and stage by KDIGO, classify into pre-renal
    - Stage 3, oliguria, hemodynamic instability, RRT need → ICU.
    - Stage 1–2 with stable cause and improving → ward.
    - Outpatient AKI: rare, requires close follow-up with nephrology and labs in 24–72 h.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Stage by urine output in mL/kg/h when the weight or the collection hours were not supplied — show the arithmetic or stage by creatinine alone.
+- Call the injury pre-renal on FENa <1% alone; a low FENa also occurs in contrast and pigment nephropathy, early obstruction and sepsis-associated AKI.
+- Use an admission creatinine that is already elevated as the "baseline"; a wrong referent under-stages the injury.
+- Attribute a low bicarbonate to AKI without computing the anion gap (Na − [Cl + HCO3]) and, if raised, weighing lactate, ketones, toxic alcohols and metformin.
+- State a drug hold/restart rule as a creatinine number when the label uses eGFR; write `[VERIFY: label eGFR threshold]`.
+
+✅ **DO:**
+- Recompute each derived index from raw values: Cr ÷ baseline (stage), BUN/Cr, FENa = (UNa × PCr)/(PNa × UCr) × 100 and FEUrea; if a raw value is missing, print "not computable" rather than echoing a supplied percentage.
+- Confirm a pre-renal label by its confirmatory step — creatinine falling within 24–72 h of restored perfusion — and, if it does not fall, re-classify as intrinsic and repeat the sediment.
+- Pair renal ultrasound with a bladder scan or post-void residual before calling post-renal excluded, since early or volume-depleted obstruction may show no hydronephrosis.
 
 ## Output Format
 

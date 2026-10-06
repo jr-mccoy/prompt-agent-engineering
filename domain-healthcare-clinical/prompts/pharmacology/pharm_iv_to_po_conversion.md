@@ -15,8 +15,20 @@ tags:
   - pharmacology
   - inpatient
   - discharge-planning
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -98,6 +110,20 @@ Senior hospitalist / antimicrobial stewardship pharmacist writing the IV-to-PO c
 
 6. **Write the order.**
    - Hold IV order. Start PO order with specific drug, dose, frequency. Plan duration. Specify monitoring. Document rationale.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Apply 1:1 conversion just because the drug is on the "highly bioavailable" list; enteral tube feeds, cations and gastric pH change absorption for ciprofloxacin, phenytoin and itraconazole.
+- State a non-antimicrobial IV:PO ratio (metoprolol, levothyroxine, furosemide) from memory; these ratios vary between references `[VERIFY: current label / formulary]`.
+- Call the course "standard duration" without adding IV days and PO days per agent and naming the guideline the total is compared against.
+- Write the PO dose without renal adjustment at the patient's CrCl, or "confirm category" for pregnancy instead of reading the PLLR narrative.
+
+✅ **DO:**
+- Tabulate days of therapy per agent (IV days + PO days = total) and compare each total to the indication's recommended duration.
+- Trace each `READINESS CHECK` line to a specific input vital, lab or observation; any line without one is "not documented", not "yes".
+- Match the PO agent's spectrum to the culture result, or, when cultures are negative, to the empiric targets the IV regimen covered.
+- Screen the discharge list for chelating cations, QT-prolonging co-medications and warfarin for the chosen oral agent.
 
 ## Output Format
 

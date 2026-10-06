@@ -2,12 +2,18 @@
 title: "Imaging Study Ordering Rationale Advisor"
 category: medicine
 description: "Structured decision support for selecting the right imaging study, applying appropriateness criteria, and documenting ordering rationale."
+techniques:
+  - ST-01
+  - ST-02
+  - RT-02
+  - CM-02
+  - QA-01
 tags:
   - medicine
   - radiology
   - imaging
   - appropriateness-criteria
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/medicine_incidental_findings_management.md
   - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
@@ -15,6 +21,18 @@ related_prompts:
 ---
 
 # Imaging Study Ordering Rationale Advisor
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help clinicians select the most appropriate imaging study for a clinical question, apply evidence-based appropriateness criteria (ACR, ESR), weigh radiation / contrast / cost / yield trade-offs, and generate documentation that justifies the order for peer review, prior authorization, and medicolegal purposes.
 
@@ -179,6 +197,23 @@ SAFETY CHECKLIST
 **Incidentaloma risk:** If the modality is high-yield for incidental findings, flag that the ordering clinician should have a plan for follow-up (see `medicine_incidental_findings_management.md`).
 
 **Prior authorization:** Tailor the documentation rationale so that the clinical question, failed prior management, and expected impact on management are explicit.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill "Basis:" with an ACR AC variant number, rating or year you cannot confirm; give the topic and write `[VERIFY: current ACR AC variant and rating]`.
+- Put an mSv figure under "Radiation dose" without labelling it a typical effective-dose range for that protocol rather than this patient's dose.
+- Tick "Renal function reviewed" or "Pregnancy status addressed" when the input holds no eGFR value with its date or no hCG result — the box records data, not that the topic was mentioned.
+- Name a protocol whose phase does not answer the restated question (e.g. a single portal venous phase for a question that needs arterial or excretory imaging).
+- Quote a rating from the wrong ACR variant (adult vs pediatric, pregnant, initial vs after a non-diagnostic ultrasound).
+
+✅ **DO:**
+- Trace each SAFETY CHECKLIST box to a named input value (eGFR and date, hCG result, prior reaction and its severity, implant model and MR-conditional status); leave the box unchecked and list it under missing inputs when the value is absent.
+- Check that DOCUMENTATION RATIONALE names the same modality, contrast and protocol as RECOMMENDED STUDY.
+- For the lower-radiation alternative, state which result would still force escalation to the higher-dose study, so "safer" is not just a first step that delays the same scan.
+- Name the findings that set the pretest probability behind any "no imaging" or "low yield" call.
 
 ---
 

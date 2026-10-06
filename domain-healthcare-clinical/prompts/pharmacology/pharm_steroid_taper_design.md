@@ -15,8 +15,20 @@ tags:
   - corticosteroids
   - taper
   - adrenal-insufficiency
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -98,6 +110,21 @@ Senior internist / rheumatologist / endocrinologist writing the steroid taper wi
    - Symptoms: fatigue, malaise, myalgia, arthralgia, mood symptoms when tapering despite normal cortisol production.
    - Slow taper rate temporarily; reassure; symptoms usually self-limited.
    - Distinguish from true AI (low cortisol + clinical signs) and disease relapse (return of original disease symptoms).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Print a TAPER SCHEDULE whose week labels disagree with the interval you wrote beside them (e.g. "1 mg every 2 months" listed at 4-week steps), or a "Total course" that is not the week of the last listed step.
+- Fill the HPA-testing line with an 8 AM cortisol or cosyntropin cutoff from memory; cutoffs depend on the assay — use the reporting lab's or the endocrine guideline's value, or write `[VERIFY: assay-specific cutoff]`.
+- Carry two different HPA-suppression classes for the same patient (one in PATIENT SNAPSHOT, another in the stress-dose plan) without stating which dose × duration fact changed it.
+- Attach a trial, guideline or regulatory approval to a rule (burst without taper, steroid-sparing agent) unless it is the actual source; name the source type instead.
+- Default to "low risk" when the input omits total duration or earlier courses — mark the class provisional and name the missing datum.
+
+✅ **DO:**
+- Recompute the taper to its endpoint before output: list every step as (start week, dose), check each decrement and interval against the increments stated in step 4, and confirm the final step reaches the stated endpoint (off or physiologic dose) at the stated total duration.
+- Convert any non-prednisone steroid to prednisone-equivalent and show the line (e.g. dexamethasone 4 mg ≈ prednisone 27 mg) so risk class and increments apply to the right number.
+- Tie each "if criteria met" item (bisphosphonate, PJP prophylaxis, PPI) to the criterion and the input value that meets it, or write "not met — [value]".
+- Take stress-dose and steroid-sparing doses from the provider order or label, or flag them `[VERIFY: current guideline/label]`.
 
 ## Output Format
 

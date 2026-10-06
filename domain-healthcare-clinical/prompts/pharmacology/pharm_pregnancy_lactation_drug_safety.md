@@ -16,8 +16,20 @@ tags:
   - lactation
   - teratogenicity
   - prescribing
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -135,6 +147,20 @@ Senior obstetrician / maternal-fetal medicine specialist / clinical pharmacist e
    - Document shared decision.
    - Provide MotherToBaby fact sheet or equivalent.
    - Multi-specialty input (maternal-fetal medicine, neurology, cardiology, rheumatology, oncology as relevant).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Translate a PLLR narrative back into a letter grade as shorthand ("effectively Category X"); state the label's risk summary and data source instead.
+- Quote a malformation or neurodevelopmental percentage without the background rate, dose band and registry or study behind it.
+- Write neonatal or maternal doses (e.g., newborn vitamin K, folic acid) from memory; a ten-fold slip reads as routine `[VERIFY: current guideline / label]`.
+- Use an NSAID gestational cutoff without checking the current FDA warning (oligohydramnios from 20 weeks; ductal closure later).
+
+✅ **DO:**
+- Express every exposure time in both LMP weeks and post-conception weeks, and state whether it overlaps embryogenesis or neural-tube closure.
+- Recompute any cross-taper on one calendar: weekly doses of both drugs, checking that the new drug actually reaches its stated target — including the increase lamotrigine needs as valproate's UGT inhibition is withdrawn.
+- For lactation, give the relative infant dose from LactMed and adjust the judgement for infant age, prematurity and renal maturity.
+- Tag each risk statement with its source type (PLLR label section, pregnancy registry, LactMed, MotherToBaby, ACOG).
 
 ## Output Format
 

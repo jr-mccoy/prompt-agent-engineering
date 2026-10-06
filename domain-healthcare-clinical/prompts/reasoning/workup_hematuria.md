@@ -14,8 +14,20 @@ tags:
   - nephrology
   - diagnostic-workup
   - hematuria
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -95,6 +107,20 @@ Work up hematuria: confirm true blood, distinguish glomerular vs urologic source
 9. **Surveillance.**
    - Persistent unexplained microhematuria after negative workup: repeat UA in 12 months; if recurrent or progressive, repeat workup, especially if new risk factors or transition to gross.
    - Document workup completion and recommendations clearly.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign the AUA tier from one criterion; check every criterion (age/sex, pack-years, RBC/HPF, gross-hematuria history, other risk factors), let the highest tier win, and place boundary values (exactly 30 pack-years, exactly 25 RBC/HPF) by the guideline's own inequality.
+- Accept a dipstick positive as hematuria without microscopy RBC/HPF, or a single microscopy taken during infection, menses, exercise or after catheterization as persistent hematuria.
+- Write "no phenazopyridine, rifampin, beets" or "no occupational exposure" when the input did not report them.
+- Quote a malignancy percentage for the patient without the source population it comes from.
+- Close the evaluation after cystoscopy alone when the upper tract was not imaged, or after imaging alone when cystoscopy was indicated.
+
+✅ **DO:**
+- Recount RBC/HPF on every UA supplied, note which specimens were properly collected, and confirm the microscopy threshold is met before staging risk.
+- Show the criterion → tier mapping against the current guideline table `[VERIFY: AUA/SUFU microhematuria guideline, current edition]`.
+- Trace the glomerular vs non-glomerular call to the sediment report (dysmorphic RBCs, casts) and UPCR; if microscopy was automated without morphology, call the source undetermined.
 
 ## Output Format
 

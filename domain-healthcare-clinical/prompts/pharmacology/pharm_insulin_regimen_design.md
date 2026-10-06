@@ -17,8 +17,20 @@ tags:
   - dosing
   - inpatient
   - outpatient
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -99,6 +111,20 @@ Senior endocrinologist / inpatient diabetes specialist writing a prescriptive re
    - Variable schedule: prefer degludec (flexible timing) over glargine/detemir.
    - Cost: glargine U-100 has biosimilars (Basaglar, Semglee); 70/30 NPH-regular cheapest; degludec, U-300, GLP-1 RA expensive.
    - Self-management capability: assess injection technique, math comprehension, CGM literacy, social/financial supports.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick `CALCULATION CHECK` by restating the formulas; it passes only when the patient's numbers are plugged in and the parts add back to TDD.
+- Attribute a u/kg multiplier to a study whose strata were defined differently (RABBIT-2 starting doses were set by admission glucose, not A1c).
+- Leave TDD unadjusted when the input gives a reduced eGFR or hepatic impairment, or call an insulin "Category B" instead of summarizing its PLLR label.
+- Order a product that may be off the market or formulary (insulin detemir in the US) without `[VERIFY: current formulary]`.
+
+✅ **DO:**
+- Recompute: TDD = weight × u/kg; basal + prandial totals = TDD; ICR = 500 ÷ TDD; CF = 1800 ÷ TDD; then run one worked meal and one correction with real numbers.
+- Check that the hypoglycemia rule in `TITRATION RULES` and the one in `HYPOGLYCEMIA SAFETY` give the same action for the same glucose value.
+- With an SGLT2 inhibitor on board, specify blood β-hydroxybutyrate as the preferred ketone test, since urine strips can under-read early ketoacidosis.
+- Express any U-500 or other concentrated insulin in units with the matching pen or syringe named, never in mL alone.
 
 ## Output Format
 

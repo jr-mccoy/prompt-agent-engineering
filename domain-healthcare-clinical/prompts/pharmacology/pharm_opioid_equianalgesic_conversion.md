@@ -16,8 +16,20 @@ tags:
   - opioids
   - dosing
   - safety
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -98,6 +110,20 @@ Senior palliative-care / pain-medicine physician writing the conversion order, a
    - Sedation review: continue benzodiazepine only after explicit risk/benefit; consider taper.
    - Driving / operating machinery: counsel against during initial 5–7 days or after dose increase.
    - Follow-up: 1 week initially, then 2–4 week intervals; PDMP check, urine drug screen, function review.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mix conversion sources within one calculation (CDC MME factor for fentanyl, the label's patch table, the 2:1 rule) or take a factor from memory when the source revised it (tramadol 0.1 vs 0.2).
+- Label the plan "25% cross-tolerance reduction" when the patch strength chosen actually delivers a much larger reduction.
+- Choose the smaller reduction when this file's own 50% criteria (>200 MME/day, older age, renal impairment, sedation) are met, without saying why.
+- Round to a patch strength without confirming that strength is stocked `[VERIFY: local formulary]`.
+
+✅ **DO:**
+- Recompute in `SELF-CHECK`: old MME, new scheduled MME, actual reduction = 1 − (new ÷ old); the stated percentage must match.
+- Add up every opioid available at once during the bridge (scheduled patch plus all prn agents at their maximum frequency) and report the worst-case daily MME.
+- Apply renal and hepatic dose reductions to the breakthrough agent at the supplied eGFR, not only to the scheduled agent.
+- Write the conversion source and version beside each factor used so a pharmacist can re-derive the number.
 
 ## Output Format
 

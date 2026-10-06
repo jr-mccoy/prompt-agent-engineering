@@ -14,8 +14,20 @@ tags:
   - internal-medicine
   - diagnostic-workup
   - anemia
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -130,6 +142,21 @@ Work up the anemic adult: classify by MCV (microcytic, normocytic, macrocytic) a
     - Cardiac disease, ACS, cardiac surgery: <8 (some <7 per trials including FOCUS, MINT debated).
     - Active bleeding, hemodynamic instability: clinical, transfuse to symptoms and ongoing loss.
     - Premedication for known reactions; ABO type and screen mandatory; informed consent.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call the anemia "hypoproliferative" from the raw retic % — compute the reticulocyte index; if only Hgb is supplied, state the estimated Hct and label it estimated.
+- Read a "normal" ferritin as excluding iron deficiency when inflammation, liver disease or CKD is present, or accept a borderline B12 as the cause without MMA.
+- Get the direction of a transfusion comparison wrong — write the threshold, the patient's value and "above" or "below" in that order.
+- Stop at "iron deficiency" without a cause; in men and postmenopausal women the can't-miss source is GI malignancy, and a remote or incomplete colonoscopy is not a negative workup.
+- Assign a single cause to a normal MCV when mixed deficiency (iron plus B12/folate) can average it out — check RDW and the smear.
+
+✅ **DO:**
+- Recompute each index from the input: RI = retic % × (Hct/45) ÷ maturation factor; TSAT = serum iron ÷ TIBC × 100; confirm each matches the classification printed.
+- Name the confirmatory step behind each label: IDA → bleeding source found; B12 → MMA; hemolysis → LDH, haptoglobin, indirect bilirubin and smear together; marrow failure → smear review or marrow.
+- At the follow-up you schedule, state the expected response (retic rise, Hgb change) and the action if it is absent (adherence, malabsorption, ongoing loss, wrong diagnosis).
+- Cite a trial only for the question it tested, and take iron, B12 and ESA doses from the label or `[VERIFY: label]`.
 
 ## Output Format
 

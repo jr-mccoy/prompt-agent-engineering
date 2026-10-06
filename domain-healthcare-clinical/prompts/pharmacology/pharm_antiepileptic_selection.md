@@ -15,8 +15,20 @@ tags:
   - seizures
   - prescribing
   - drug-interactions
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -119,6 +131,20 @@ Senior neurologist / epileptologist writing the AED prescription with titration 
    - If seizures persist on adequate dose / level: switch to second monotherapy or add second AED.
    - Drug-resistant epilepsy (failure of 2 adequately tried AEDs at target dose) → epilepsy center referral for surgical evaluation, vagal nerve stimulation, RNS, ketogenic diet.
    - Switching: cross-taper over 4–6 weeks; titrate new AED to target dose before tapering off old one.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pick the lamotrigine ladder labelled "without valproate" when the medication list holds valproate, an enzyme inducer, or an estrogen-containing contraceptive — the schedule looks complete but the exposure is wrong.
+- Fill `Target dose` or a level range from memory; levetiracetam, gabapentin, pregabalin and topiramate need a CrCl-based dose, and target ranges are lab- and label-specific `[VERIFY: current label / formulary]`.
+- Tick "OCP-compatible" in `RATIONALE` while stating only one direction of a two-way interaction (inducers lower contraceptive exposure; estrogen lowers lamotrigine).
+- Quote a malformation percentage without the registry it came from and the dose band it applies to.
+
+✅ **DO:**
+- Count the titration out week by week, note the week each step begins, and make every `FOLLOW-UP` visit land on the week its stated dose is actually reached.
+- Calculate CrCl from the supplied age, weight and SCr before any renal adjustment; if one is missing, write "renal adjustment not assessed".
+- For each co-medication (contraceptive, warfarin/DOAC, tacrolimus, antiretrovirals) state direction and mechanism (CYP3A4 or UGT induction, glucuronidation inhibition).
+- Confirm HLA-B*15:02 status was supplied before carbamazepine or oxcarbazepine in at-risk ancestry; otherwise mark the test as pending, not negative.
 
 ## Output Format
 

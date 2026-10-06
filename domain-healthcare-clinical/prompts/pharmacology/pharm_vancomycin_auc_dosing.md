@@ -16,8 +16,20 @@ tags:
   - pharmacokinetics
   - dosing
   - critical-care
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -110,6 +122,21 @@ Senior infectious disease pharmacist / physician writing the vancomycin order wi
    - Specify level timing (peak, trough, or both) and assay turnaround expectation.
    - Specify SCr and BUN monitoring frequency.
    - Specify red flags for stopping or adjusting (AKI defined per KDIGO: SCr increase ≥0.3 mg/dL or 1.5× baseline within 48 h).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Print an AUC24 without the values that produced it (dose, τ, CL or ke, both concentrations and their clock times); a number inside 400–600 proves nothing if its derivation is hidden.
+- Start a regimen whose own population estimate falls outside 400–600 mg·h/L without either changing the dose or stating why the deviation is accepted.
+- Compute CrCl with a weight, SCr, age or sex that differs from PATIENT SNAPSHOT, or with a weight type (ABW / IBW / AdjBW) other than the one named for dosing.
+- Treat a two-level AUC as final when the levels straddle a dialysis session, a dose change or a moving SCr — label it provisional.
+- Default an HD or CRRT patient to a high-flux or fixed-effluent schedule when the input does not give the dialyzer or effluent rate; ask for it.
+
+✅ **DO:**
+- Recompute every CALCULATION SELF-CHECK line from the input: mg/kg = dose ÷ weight; AUC24 = mg/day ÷ CL (L/h); ke, t½, Cmax, Cmin, AUC_τ and AUC24 in order, with units at each step.
+- Check the adjustment table scales into range: predicted new AUC ≈ current AUC × (new mg/day ÷ current mg/day); any proposed step that still lands above 600 or below 400 must be revised.
+- Label population PK coefficients (CL as a fraction of CrCl, Vd in L/kg) as estimates `[VERIFY: institutional nomogram / Bayesian software]`.
+- Name the AKI definition used in the hold rule and apply its exact SCr change and time window.
 
 ## Output Format
 

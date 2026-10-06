@@ -15,8 +15,20 @@ tags:
   - emergency-medicine
   - diagnostic-workup
   - dyspnea
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -100,6 +112,20 @@ Work up the dyspneic patient: triage acute respiratory failure, separate cardiac
     - Stable hypoxia requiring O2, IV diuresis, IV antibiotics → ward.
     - Resolved symptoms with treatable outpatient cause → discharge with close follow-up.
     - Always document oxygen requirement at discharge and ambulation SpO2 if applicable.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Diagnose decompensated heart failure without naming its precipitant (ischemia, arrhythmia, nonadherence, infection, NSAIDs or other drugs, uncontrolled BP, renal decline) — the label alone misses the treatable trigger.
+- Write "troponin negative — no ischemia" from one value; ACS as the trigger needs serial troponin per the assay's algorithm.
+- Read a natriuretic peptide against a cutoff without saying whether it is a rule-out or rule-in threshold, which peptide and assay, and which confounders (AF, CKD, age, obesity) are present.
+- Enter "B-lines expected" or "plethoric IVC expected" under findings — an unperformed POCUS is not a finding.
+- Write diuretic doses or urine-output targets that cannot be traced to the home dose in the input, the label or a named protocol, or that mix mL/h and L/day.
+
+✅ **DO:**
+- Show the IV loop-diuretic calculation from the stated home oral dose and multiplier (e.g. home furosemide 40 mg PO × 2.5 = 100 mg IV); if the home dose is absent, say so.
+- Compute PaO2/FiO2 or the A–a gradient from the blood gas and the delivered FiO2 when grading hypoxemia; SpO2 on nasal cannula alone does not grade it.
+- Name the confirmatory check for the working diagnosis — weight, net balance, symptoms and creatinine at a stated reassessment time — and the result that would reopen PE, pneumonia or tamponade.
 
 ## Output Format
 
