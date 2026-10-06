@@ -1,3 +1,23 @@
+---
+title: "Conversation Simulator: Master Prompt Template"
+category: conversation-practice
+description: "A two-phase prompt template for practising productive conversations about AI with skeptical family members or colleagues: role-play with any character variant inserted in the slot, then a coaching debrief on \"END SIMULATION\" scored across moral foundations, augmentation framing, scarcity vs abundance, beta tester framing, and curiosity as the goal."
+techniques:
+  - OC-08
+  - CM-02
+  - DS-01
+  - ST-03
+difficulty: intermediate
+tags:
+  - roleplay
+  - simulation
+  - coaching
+  - difficult-conversations
+  - persuasion
+  - ai-adoption
+updated: "2026-10-06"
+---
+
 # Conversation Simulator: Master Prompt Template
 
 **Source:** CONVERSATIONAL_SIMULATOR_PROMPTS.md
@@ -54,3 +74,12 @@ Keep feedback direct and actionable—no generic praise.
 ## Usage Notes
 
 This master template provides the structure for any conversation simulation. Insert any character variant in the designated slot. The feedback framework evaluates performance across five dimensions: moral foundations, augmentation framing, scarcity/abundance thinking, beta tester framing, and curiosity as the goal.
+
+## False-Positive Prevention
+
+1. **Thin slot fill.** A variant that is only a name and a stance ("Bob, hates AI") leaves "bring up your specific concerns naturally" with nothing to draw on, so the model improvises generic objections. Fill the slot with the four parts the existing personas carry: concrete grievances from the character's own experience, unstated underlying values, a conversational style, and a DIFFICULTY line that says what success looks like.
+2. **Undetectable values.** The MORAL FOUNDATIONS check scores whether the user found values the character never states. Tie each listed value to at least one concern bullet the character will voice, or the debrief is grading a guessing game.
+3. **Conversion as the default win.** The overall assessment ("more curious or more entrenched?") must be judged against the variant's own success line; where a variant says success is mutual respect, a debrief that rewards agreement teaches the wrong goal.
+4. **Framework box-ticking.** Credit AUGMENTATION VS AUTOMATION or BETA TESTER FRAMING only for a user turn that actually made the reframe and the character's reply to it, not because the word "tool" or "improving" appeared once.
+5. **Invented authority in either phase.** The character and the coach both stay inside facts the variant or the user supplied; no statistics, studies, incidents or improvement rates added to sound informed. A claim worth checking is named in the debrief as something to look up, not settled.
+6. **Verify before sending the debrief.** Count the user's turns; confirm every quote in "did well" and "missed opportunities" appears verbatim in the transcript; for "what shifted", cite the character line that changed position. Fewer than 4 exchanges, or no such line, means the answer is "too short to tell" or "nothing shifted", and a character who simply went quiet counts as nothing shifted.

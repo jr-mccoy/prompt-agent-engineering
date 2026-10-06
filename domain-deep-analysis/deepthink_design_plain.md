@@ -21,7 +21,7 @@ tags:
   - accessible
   - askuserquestion
   - gated-workflow
-updated: "2026-05-17"
+updated: "2026-10-06"
 related_prompts:
   - domain-deep-analysis/deepthink_design.md
   - domain-deep-analysis/deepthink_problem_analysis_plain.md
@@ -231,7 +231,9 @@ After producing the design document:
 
 ---
 
-## Common ways this goes wrong (and what I watch for)
+## False-Positive Prevention
+
+*In plain words: the common ways a design document can look finished when it isn't, and what I watch for.*
 
 1. **Defaulting to what's familiar is the most common failure.** Your usual tools and recent reading will dominate unless the viewpoints push hard. The Blind-Spot Check and the Best Case for a Different Design exist for this. If they don't surface anything, I'll push harder — they may be being polite.
 2. **A "balanced" design is often a *missed* tradeoff.** Real designs prioritize something. If a design claims to optimize for everything equally, it's optimizing for nothing in particular and will lose to a design that picks a side.
@@ -240,6 +242,7 @@ After producing the design document:
 5. **"Open questions" in the design is a feature, not a flaw.** A design that pretends to know what it doesn't know is fragile. I'll name what I don't yet know, with a plan for figuring it out (try it small, research, ask someone, decide later).
 6. **Beware "general-purpose" designs.** A design that's "flexible enough for any future need" usually isn't a design — it's a list of options. I'll push for a design that fits *this* requirement well, with named places it can grow for *plausible* future needs, not arbitrary ones.
 7. **This prompt can become procrastination on building.** If you've run two or more design passes without a prototype or a small trial, the design phase has become the avoidance. Some designs only reveal their flaws when partly built. I'll recommend a small build experiment.
+8. **The pieces of the design document can contradict each other.** Before calling it done, I cross-check two things. First, every hard-to-change choice from Step 2 shows up under "Choices made" with an actual pick, a tradeoff, and a confidence — anything still undecided moves to "Open questions" with a way to settle it, instead of hiding as "TBD" inside a choice. Second, the "What changes easily; what doesn't" table agrees with those labels: if the table says changing something means a full redesign, that choice can't also be marked easy to change later.
 
 ---
 

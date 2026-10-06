@@ -1,3 +1,21 @@
+---
+title: "Conversation Simulator: Maya - The Cynical Zoomer"
+category: conversation-practice
+description: "Persona for the conversation simulator: Maya, a nonprofit worker in her mid-twenties with generational concerns about climate, economic fairness, AI art as theft, and tech-industry broken promises. Practise engaging her concerns on their merits without condescending or using a \"wise elder\" tone."
+techniques:
+  - AG-01
+  - CM-01
+  - CM-02
+difficulty: intermediate
+tags:
+  - roleplay
+  - simulation
+  - ai-adoption
+  - ai-art
+  - career
+updated: "2026-10-06"
+---
+
 # Conversation Simulator: Maya - The Cynical Zoomer
 
 **Source:** CONVERSATIONAL_SIMULATOR_PROMPTS.md
@@ -39,3 +57,12 @@ DIFFICULTY: Medium—requires generational empathy and avoiding the "wise elder"
 ## Usage Notes
 
 Maya represents generational concerns about climate, economic fairness, and tech industry broken promises. She's more persuadable than she seems, but only if you take her concerns seriously without condescending. Avoid the "wise elder" tone.
+
+## False-Positive Prevention
+
+1. **Instant ally.** Maya is more persuadable than she seems, but sharing her worry about climate does not close her argument about data center energy. Common ground opens the door; she still wants the energy question answered.
+2. **Slang-and-eye-roll straw man.** She is sardonic, not shallow, and has read the critiques. Her lines carry arguments (broken Silicon Valley promises, extraction by older generations, friends losing freelance gigs), not just attitude.
+3. **Energy and theft figures from nowhere.** The persona does not quote data center power draw, water per prompt or court rulings on AI art to sound informed, and the coach does not "fix" the user's claims with equally unsourced numbers; any disputed figure is marked unverified in the debrief.
+4. **Good content, condescending tone.** A user line can be accurate and still be "wise elder" ("when you've been working longer you'll see..."). Check for it even in turns whose substance was strong, since that tone is her stated failure mode.
+5. **"AI art is theft" sidestepped.** If the user steered around it and she moved on, it is unresolved; the debrief lists it as an unaddressed concern, not a point won.
+6. **Verify generational empathy from pairs.** Quote each user turn that referred to age, generation, career prospects or "your future," pair it with Maya's reply, and score generational empathy from those pairs rather than the overall warmth of the exchange.

@@ -1,6 +1,7 @@
 ---
 name: deepthink-design
 description: Start a deep, multi-perspective design session to work through what to build (a system, feature, structure, or process). Drives the model through Frame → Decompose into design dimensions → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is a design spec with documented tradeoffs, named load-bearing assumptions, and explicit open questions.
+techniques: [RT-02, RT-07, CM-02, QA-02, QA-04]
 version: "1.0.0"
 category: deep-analysis
 tags: [deep-analysis, design, architecture, multi-perspective, tradeoff-analysis, specification, gated-workflow]
@@ -55,6 +56,12 @@ This command inherits shared behavior from [`domain-deep-analysis/BACKBONE.md`](
 5. **Continue phase-by-phase.** Each phase ends with the gate mechanism defined in `BACKBONE.md`. Never run multiple phases in one output.
 
 6. **At the FINAL GATE in Phase 5,** suggest `/deepthink-plan` to schedule the build, or recommend a small build experiment if the design has open questions that prototyping would resolve faster than further analysis.
+
+## False-Positive Prevention
+
+1. **Designing when the real question is whether to build.** If Phase 1 surfaces "should we build this at all?" or a build-vs-buy fork, a spec produced here pre-empts that choice — switch to `/deepthink-decision`. If the design already exists and the ask is scheduling, switch to `/deepthink-plan`; if the ask is judging an existing design, switch to `/deepthink-evaluation`.
+2. **GATE 2 passed without the load-bearing set confirmed.** Which dimensions are load-bearing decides where Phases 3 and 4 spend effort. If the user's reply did not address it, ask that one question before running perspectives.
+3. **A spec missing required fields.** Before the final gate, confirm each load-bearing dimension carries *Choice*, *Why*, *Tradeoff accepted*, *Confidence*, and *Reversibility*, and that the spec includes stated and implicit constraints, assumptions labeled tested / reasonable / untested, the what-changes-easily table, the risk register, and *Open questions* each with a resolution plan.
 
 ## Success Criteria
 

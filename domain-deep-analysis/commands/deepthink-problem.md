@@ -1,6 +1,7 @@
 ---
 name: deepthink-problem
 description: Start a deep, multi-perspective analysis of a problem or open-ended question. Drives the model through Frame → Decompose → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is a diagnosis with leverage points and calibrated confidence — not a recommendation, not a plan.
+techniques: [RT-02, CM-02, QA-01, QA-02, QA-04]
 version: "1.0.0"
 category: deep-analysis
 tags: [deep-analysis, problem-framing, multi-perspective, diagnosis, critical-thinking, gated-workflow]
@@ -52,6 +53,12 @@ This command inherits shared behavior from [`domain-deep-analysis/BACKBONE.md`](
 4. **Continue phase-by-phase.** Each phase ends with the gate mechanism defined in `BACKBONE.md`. Never run multiple phases in a single output.
 
 5. **At the FINAL GATE in Phase 5,** offer follow-on commands (`/deepthink-decision`, `/deepthink-plan`, `/deepthink-design`) when relevant.
+
+## False-Positive Prevention
+
+1. **Diagnosing when the user needs an answer to act on.** If the real ask is "which should I pick", "how do I get there", or "what should we build", a diagnosis will look complete and still leave the user stuck — switch to `/deepthink-decision`, `/deepthink-plan`, or `/deepthink-design`. Judging an existing artifact belongs in `/deepthink-evaluation`.
+2. **A reframe adopted without the user choosing it.** If the GATE 1 message proposes a revealed framing and then proceeds on it, the user never chose between stated and revealed. Phase 2 waits until the user picks one.
+3. **A synthesis that slides into advice or drops a field.** Before the final gate, confirm the output has the confirmed *Question*, a *Diagnosis* with no "you should", 3–5 *Leverage points* each with confidence, *Load-bearing assumptions* written as conditionals, perspective-sourced surprises, the *Stress-test verdict*, and a *Confidence summary* naming the cheapest verification for each low-confidence claim. A "next steps" list means the output has drifted into decision or plan territory.
 
 ## Success Criteria
 

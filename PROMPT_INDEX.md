@@ -8,9 +8,9 @@
 
 **Total Indexed Artifacts:** 6165
 
-**Artifacts with Frontmatter:** 5261
+**Artifacts with Frontmatter:** 5269
 
-**Artifacts without Frontmatter:** 904
+**Artifacts without Frontmatter:** 896
 
 ---
 
@@ -2174,13 +2174,13 @@
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
 | [Conversation Practice Simulator — Multi-Scenario R](domain-conversation-practice/conversation_practice_simulator.md) | conversation-practice | ST-01, CM-02, RP-02, DS-01, QA-01 | roleplay, conversation-practice, difficult-conversations, simulation, coaching | A configurable framework where the model role-plays the other party in a hard conversation — staying... |
-| [Conversation Simulator: Diane - The Principled Edu](domain-conversation-practice/conversation_sim_diane_principled_educator.md) | conversation-practice | — | character, conversation, diane, educator, instructions | Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your ... |
-| [Conversation Simulator: Frank - The Privacy Hawk](domain-conversation-practice/conversation_sim_frank_privacy_hawk.md) | conversation-practice | — | character, conversation, frank, hawk, instructions | Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your ... |
-| [Conversation Simulator: Jennifer - The Skeptical I](domain-conversation-practice/conversation_sim_jennifer_skeptical_insider.md) | conversation-practice | — | character, conversation, insider, instructions, jennifer | Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your ... |
-| [Conversation Simulator: Marcus - The Displaced Wor](domain-conversation-practice/conversation_sim_marcus_displaced_worker.md) | conversation-practice | — | character, conversation, displaced, instructions, marcus | Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your ... |
-| [Conversation Simulator: Master Prompt Template](domain-conversation-practice/conversation_sim_master_template.md) | conversation-practice | — | conversation, instructions, master, notes, prompt | This is the full prompt template with a slot for any character variant. Use this to structure practi... |
-| [Conversation Simulator: Maya - The Cynical Zoomer](domain-conversation-practice/conversation_sim_maya_cynical_zoomer.md) | conversation-practice | — | character, conversation, cynical, instructions, maya | Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your ... |
-| [Conversation Simulator: Pastor James - The Moral T](domain-conversation-practice/conversation_sim_pastor_james_moral_traditionalist.md) | conversation-practice | — | character, conversation, instructions, james, moral | Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your ... |
+| [Conversation Simulator: Diane - The Principled Edu](domain-conversation-practice/conversation_sim_diane_principled_educator.md) | conversation-practice | AG-01, CM-01, CM-02 | roleplay, simulation, ai-adoption, education, academic-integrity | Persona for the conversation simulator: Diane, a recently retired high school English teacher with p... |
+| [Conversation Simulator: Frank - The Privacy Hawk](domain-conversation-practice/conversation_sim_frank_privacy_hawk.md) | conversation-practice | AG-01, CM-01, CM-02 | roleplay, simulation, ai-adoption, privacy, difficult-conversations | Persona for the conversation simulator: Frank, a retired accountant with structural concerns about p... |
+| [Conversation Simulator: Jennifer - The Skeptical I](domain-conversation-practice/conversation_sim_jennifer_skeptical_insider.md) | conversation-practice | AG-01, CM-01, CM-02 | roleplay, simulation, ai-adoption, vendor-evaluation, persuasion | Persona for the conversation simulator: Jennifer, a marketing director whose company's expensive AI ... |
+| [Conversation Simulator: Marcus - The Displaced Wor](domain-conversation-practice/conversation_sim_marcus_displaced_worker.md) | conversation-practice | AG-01, CM-01, CM-02 | roleplay, simulation, automation, workforce, empathy | Persona for the conversation simulator: Marcus, a paralegal whose hours were cut after his firm adop... |
+| [Conversation Simulator: Master Prompt Template](domain-conversation-practice/conversation_sim_master_template.md) | conversation-practice | OC-08, CM-02, DS-01, ST-03 | roleplay, simulation, coaching, difficult-conversations, persuasion | A two-phase prompt template for practising productive conversations about AI with skeptical family m... |
+| [Conversation Simulator: Maya - The Cynical Zoomer](domain-conversation-practice/conversation_sim_maya_cynical_zoomer.md) | conversation-practice | AG-01, CM-01, CM-02 | roleplay, simulation, ai-adoption, ai-art, career | Persona for the conversation simulator: Maya, a nonprofit worker in her mid-twenties with generation... |
+| [Conversation Simulator: Pastor James - The Moral T](domain-conversation-practice/conversation_sim_pastor_james_moral_traditionalist.md) | conversation-practice | AG-01, CM-01, CM-02 | roleplay, simulation, ai-adoption, ethics, theology | Persona for the conversation simulator: Pastor James, who has led a Baptist church for 25 years and ... |
 | [Language Conversation Sim — Master Template With C](domain-conversation-practice/conversation_lang_sim_master_template.md) | conversation-practice | OC-08, CM-01, RP-02, AG-04, QA-01 | language-learning, role-play, CEFR, corrective-feedback, speaking-practice | The base template every language conversation sim in this domain plugs into: slots for target langua... |
 | [Language Sim — CEFR Can-Do Scenarios With Pass / N](domain-conversation-practice/conversation_lang_sim_cefr_can_do_scenarios.md) | conversation-practice | QA-11, RT-05, CM-03, QA-04 | language-learning, CEFR, can-do-statements, speaking-assessment, role-play | Pick 2–4 specific CEFR can-do descriptors at a target level, build a role-play scenario for each in ... |
 | [Language Sim — Native-Speed Listening: Fillers, Fa](domain-conversation-practice/conversation_lang_sim_native_speed_listening.md) | conversation-practice | CM-01, ST-16, QA-11, QA-04 | language-learning, listening, authentic-input, clarification-strategies, role-play | The partner speaks as natives actually do: fillers, false starts, reduced and elided forms written a... |
@@ -2307,17 +2307,17 @@
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
-| [/deepthink-decision](domain-deep-analysis/commands/deepthink-decision.md) | deep-analysis | — | deep-analysis, decision-making, multi-perspective, tradeoff-analysis, reversibility | Start a deep, multi-perspective analysis of a hard decision. Drives the model through Frame → Decomp... |
-| [/deepthink-decision-plain](domain-deep-analysis/commands/deepthink-decision-plain.md) | deep-analysis | — | deep-analysis, decision-making, multi-perspective, tradeoff-analysis, plain-english | A plain-English version of /deepthink-decision, written for non-technical users. Same five-step rigo... |
-| [/deepthink-design](domain-deep-analysis/commands/deepthink-design.md) | deep-analysis | — | deep-analysis, design, architecture, multi-perspective, tradeoff-analysis | Start a deep, multi-perspective design session to work through what to build (a system, feature, str... |
-| [/deepthink-design-plain](domain-deep-analysis/commands/deepthink-design-plain.md) | deep-analysis | — | deep-analysis, design, architecture, multi-perspective, tradeoff-analysis | A plain-English version of /deepthink-design, written for non-technical users. Same five-step rigor ... |
-| [/deepthink-evaluation](domain-deep-analysis/commands/deepthink-evaluation.md) | deep-analysis | — | deep-analysis, evaluation, review, critique, evidence-assessment | Start a deep, multi-perspective evaluation of an existing artifact, proposal, plan, design, document... |
-| [/deepthink-evaluation-plain](domain-deep-analysis/commands/deepthink-evaluation-plain.md) | deep-analysis | — | deep-analysis, evaluation, review, critique, evidence-assessment | Start a plain-English, deep, multi-perspective evaluation of an existing artifact, proposal, plan, d... |
-| [/deepthink-plan](domain-deep-analysis/commands/deepthink-plan.md) | deep-analysis | — | deep-analysis, planning, strategy, multi-perspective, dependencies | Start a deep, multi-perspective planning session to work through how to get from here to a defined g... |
-| [/deepthink-plan-plain](domain-deep-analysis/commands/deepthink-plan-plain.md) | deep-analysis | — | deep-analysis, planning, strategy, multi-perspective, plain-english | A plain-English version of /deepthink-plan, written for non-technical users. Same five-step rigor as... |
-| [/deepthink-problem](domain-deep-analysis/commands/deepthink-problem.md) | deep-analysis | — | deep-analysis, problem-framing, multi-perspective, diagnosis, critical-thinking | Start a deep, multi-perspective analysis of a problem or open-ended question. Drives the model throu... |
-| [/deepthink-problem-plain](domain-deep-analysis/commands/deepthink-problem-plain.md) | deep-analysis | — | deep-analysis, problem-framing, multi-perspective, diagnosis, plain-english | A plain-English version of /deepthink-problem, written for non-technical users. Same five-step rigor... |
-| [Deep-Think Backbone](domain-deep-analysis/BACKBONE.md) | deep-analysis | — | BACKBONE, analysis, behavior, conditional, fallback | This file is the single source of truth for behavior shared across every deep-think scope: problem a... |
+| [/deepthink-decision](domain-deep-analysis/commands/deepthink-decision.md) | deep-analysis | RT-02, CM-02, QA-02, QA-04, QA-09 | deep-analysis, decision-making, multi-perspective, tradeoff-analysis, reversibility | Start a deep, multi-perspective analysis of a hard decision. Drives the model through Frame → Decomp... |
+| [/deepthink-decision-plain](domain-deep-analysis/commands/deepthink-decision-plain.md) | deep-analysis | RT-02, CM-02, QA-02, QA-04, QA-09 | deep-analysis, decision-making, multi-perspective, tradeoff-analysis, plain-english | A plain-English version of /deepthink-decision, written for non-technical users. Same five-step rigo... |
+| [/deepthink-design](domain-deep-analysis/commands/deepthink-design.md) | deep-analysis | RT-02, RT-07, CM-02, QA-02, QA-04 | deep-analysis, design, architecture, multi-perspective, tradeoff-analysis | Start a deep, multi-perspective design session to work through what to build (a system, feature, str... |
+| [/deepthink-design-plain](domain-deep-analysis/commands/deepthink-design-plain.md) | deep-analysis | RT-02, RT-07, CM-02, QA-02, QA-04 | deep-analysis, design, architecture, multi-perspective, tradeoff-analysis | A plain-English version of /deepthink-design, written for non-technical users. Same five-step rigor ... |
+| [/deepthink-evaluation](domain-deep-analysis/commands/deepthink-evaluation.md) | deep-analysis | RT-02, CM-02, QA-01, QA-02, QA-04 | deep-analysis, evaluation, review, critique, evidence-assessment | Start a deep, multi-perspective evaluation of an existing artifact, proposal, plan, design, document... |
+| [/deepthink-evaluation-plain](domain-deep-analysis/commands/deepthink-evaluation-plain.md) | deep-analysis | RT-02, CM-02, QA-01, QA-02, QA-04 | deep-analysis, evaluation, review, critique, evidence-assessment | Start a plain-English, deep, multi-perspective evaluation of an existing artifact, proposal, plan, d... |
+| [/deepthink-plan](domain-deep-analysis/commands/deepthink-plan.md) | deep-analysis | RT-02, RT-07, CM-02, QA-02, QA-04 | deep-analysis, planning, strategy, multi-perspective, dependencies | Start a deep, multi-perspective planning session to work through how to get from here to a defined g... |
+| [/deepthink-plan-plain](domain-deep-analysis/commands/deepthink-plan-plain.md) | deep-analysis | RT-02, RT-07, CM-02, QA-02, QA-04 | deep-analysis, planning, strategy, multi-perspective, plain-english | A plain-English version of /deepthink-plan, written for non-technical users. Same five-step rigor as... |
+| [/deepthink-problem](domain-deep-analysis/commands/deepthink-problem.md) | deep-analysis | RT-02, CM-02, QA-01, QA-02, QA-04 | deep-analysis, problem-framing, multi-perspective, diagnosis, critical-thinking | Start a deep, multi-perspective analysis of a problem or open-ended question. Drives the model throu... |
+| [/deepthink-problem-plain](domain-deep-analysis/commands/deepthink-problem-plain.md) | deep-analysis | RT-02, CM-02, QA-01, QA-02, QA-04 | deep-analysis, problem-framing, multi-perspective, diagnosis, plain-english | A plain-English version of /deepthink-problem, written for non-technical users. Same five-step rigor... |
+| [Deep-Think Backbone](domain-deep-analysis/BACKBONE.md) | deep-analysis | AG-40, QA-08, RP-03, QA-02 | deep-analysis, multi-perspective, askuserquestion, gated-workflow | The single source of truth for behavior shared across every deep-analysis scope: the five phases, ga... |
 | [Deep-Think (Plain English): Making a Hard Decision](domain-deep-analysis/deepthink_decision_plain.md) | deep-analysis/decision | RT-02, CM-02, QA-02, QA-04, QA-09 | deep-analysis, decision-making, multi-perspective, tradeoff-analysis, plain-english | A plain-English version of the deep-think decision system, written for non-technical users. Same fiv... |
 | [Deep-Think: Decision](domain-deep-analysis/deepthink_decision.md) | deep-analysis/decision | RT-02, CM-02, QA-02, QA-04, QA-09 | deep-analysis, decision-making, multi-perspective, tradeoff-analysis, reversibility | A multi-phase, multi-perspective decision-making system for working through hard choices with an AI ... |
 | [Deep-Think (Plain English): Designing What to Buil](domain-deep-analysis/deepthink_design_plain.md) | deep-analysis/design | RT-02, RT-07, CM-02, QA-02, QA-04 | deep-analysis, design, architecture, multi-perspective, tradeoff-analysis | A plain-English version of the deep-think design system, written for non-technical users. Same five-... |
@@ -6517,7 +6517,7 @@
 
 ---
 
-## Prompts Without Frontmatter (904)
+## Prompts Without Frontmatter (896)
 
 These prompts need frontmatter metadata added:
 
@@ -7365,14 +7365,6 @@ These prompts need frontmatter metadata added:
 - `domain-agentic-resources/skills/web-development/ui-designer/assets/app_overview_generator.md` - App Overview Generator
 - `domain-agentic-resources/skills/web-development/ui-designer/assets/design_system.md` - 色彩调色板
 - `domain-agentic-resources/skills/web-development/ui-designer/assets/vibe_design_template.md` - Vibe Design Template
-- `domain-conversation-practice/conversation_sim_diane_principled_educator.md` - Conversation Simulator: Diane - The Principled Educator
-- `domain-conversation-practice/conversation_sim_frank_privacy_hawk.md` - Conversation Simulator: Frank - The Privacy Hawk
-- `domain-conversation-practice/conversation_sim_jennifer_skeptical_insider.md` - Conversation Simulator: Jennifer - The Skeptical Insider
-- `domain-conversation-practice/conversation_sim_marcus_displaced_worker.md` - Conversation Simulator: Marcus - The Displaced Worker
-- `domain-conversation-practice/conversation_sim_master_template.md` - Conversation Simulator: Master Prompt Template
-- `domain-conversation-practice/conversation_sim_maya_cynical_zoomer.md` - Conversation Simulator: Maya - The Cynical Zoomer
-- `domain-conversation-practice/conversation_sim_pastor_james_moral_traditionalist.md` - Conversation Simulator: Pastor James - The Moral Traditionalist
-- `domain-deep-analysis/BACKBONE.md` - Deep-Think Backbone
 - `domain-engineering-workflows/workflows/android_jetpack_compose_debug.md` - Android Jetpack Compose Debugging & Root Cause Fix
 - `domain-healthcare-clinical/_archive/EXPANSION_ROADMAP_v1_safety_framing.md` - Healthcare Clinical Domain Expansion Roadmap (Weeks 1–7)
 - `domain-healthcare-clinical/examples/building_anticoagulation_decision_support.md` - Worked Example: Building Anticoagulation Decision Support

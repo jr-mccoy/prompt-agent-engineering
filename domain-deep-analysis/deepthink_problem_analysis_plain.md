@@ -21,7 +21,7 @@ tags:
   - accessible
   - askuserquestion
   - gated-workflow
-updated: "2026-05-17"
+updated: "2026-10-06"
 related_prompts:
   - domain-deep-analysis/deepthink_problem_analysis.md
   - domain-deep-analysis/deepthink_decision_plain.md
@@ -211,7 +211,9 @@ After producing the summary:
 
 ---
 
-## Common ways this goes wrong (and what I watch for)
+## False-Positive Prevention
+
+*In plain words: the common ways a diagnosis can sound right when it isn't, and what I watch for.*
 
 1. **"Deep" output that's actually just wide.** Six viewpoints with five paragraphs each can sound impressive while saying nothing new. The test: does each viewpoint produce a claim that makes you say, "Huh, I wouldn't have thought of that"? If not, I'll push for sharper.
 2. **Your original framing is often right.** I'll only suggest reframing when there's a real gap that would point the whole analysis the wrong way.
@@ -220,6 +222,7 @@ After producing the summary:
 5. **Imagining failure can become defensive.** If every failure mode I generate is "what if you're wrong," I'm not doing my job. I'll push for failure modes that come from outside your control.
 6. **Long ≠ deep.** A short, clear summary with three honest confidence labels beats a six-page summary full of medium-confidence hedging.
 7. **This prompt can become procrastination.** If you've run the same problem through this prompt more than twice without changing anything, the prompt has become the avoidance. I'll flag that and point you to `/deepthink-decision-plain`.
+8. **A convincing story is not the same as a finding.** If you shared real material — messages, numbers, notes, a timeline of what happened — then every claim under "High confidence" has to point back to something in it. Before I finish, I go down that list one claim at a time and name what it rests on; any claim that is only my reasoning, with nothing you gave me behind it, drops to medium confidence at most, and I say so out loud.
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: deepthink-problem-plain
 description: A plain-English version of /deepthink-problem, written for non-technical users. Same five-step rigor as the original, with simpler language and friendlier check-ins. Drives the model through Frame → Break Down → Multiple Viewpoints → Stress-Test → Sum Up, using AskUserQuestion at every check-in. Result is an honest diagnosis with places you could push to learn more or change the situation, and how confident the answer is.
+techniques: [RT-02, CM-02, QA-01, QA-02, QA-04]
 version: "1.0.0"
 category: deep-analysis
 tags: [deep-analysis, problem-framing, multi-perspective, diagnosis, plain-english, non-technical, accessible, gated-workflow]
@@ -52,6 +53,12 @@ This command inherits shared behavior from [`domain-deep-analysis/BACKBONE.md`](
 4. **Continue step-by-step.** Each step ends with the gate mechanism defined in `BACKBONE.md`. Never run multiple steps in a single output.
 
 5. **At the final check-in in Step 5,** offer follow-on commands (`/deepthink-decision-plain`, `/deepthink-plan-plain`, `/deepthink-design-plain`) when relevant.
+
+## False-Positive Prevention
+
+1. **Asking "why" when you actually need to choose, plan, or build.** If what you really want is "which one should I pick", "how do I get there", or "what should I set up", a diagnosis will feel complete and still leave you stuck — switch to `/deepthink-decision-plain`, `/deepthink-plan-plain`, or `/deepthink-design-plain`. To get something that already exists judged, use `/deepthink-evaluation-plain`.
+2. **Me picking the framing for you.** If I suggest a different way to see your question at the first check-in, I wait for you to say which one to use — yours or mine — instead of quietly going with mine.
+3. **A summary that turns into advice or skips a part.** Before the final check-in, I make sure it has the question we agreed on, a diagnosis with no "you should," 3–5 places to push each with a confidence label, what the picture rests on written as if/then, what the viewpoints surfaced, the stress-test verdict, and the confidence lists. If a to-do list has crept in, the summary has drifted into decision or plan territory.
 
 ## Success Criteria
 

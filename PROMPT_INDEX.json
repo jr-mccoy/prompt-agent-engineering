@@ -4,8 +4,8 @@
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
     "total_indexed_artifacts": 6165,
-    "artifacts_with_frontmatter": 5261,
-    "artifacts_without_frontmatter": 904,
+    "artifacts_with_frontmatter": 5269,
+    "artifacts_without_frontmatter": 896,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -15,8 +15,8 @@
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
     "total_prompts": 6165,
-    "prompts_with_frontmatter": 5261,
-    "prompts_without_frontmatter": 904
+    "prompts_with_frontmatter": 5269,
+    "prompts_without_frontmatter": 896
   },
   "prompts": [
     {
@@ -54385,24 +54385,24 @@
       "title": "Conversation Simulator: Diane - The Principled Educator",
       "domain": "conversation-practice",
       "category": "conversation-practice",
-      "description": "Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your skeptical relative. Have a natural conversation (aim for 4-8 exchanges). When you're ready for feedback, type \"END SIMULATION\" and the AI will break character and coach you.",
-      "techniques": [],
-      "keywords": [
-        "character",
-        "conversation",
-        "diane",
-        "educator",
-        "instructions",
-        "notes",
-        "principled",
-        "profile",
-        "prompt",
-        "sim"
+      "description": "Persona for the conversation simulator: Diane, a recently retired high school English teacher with principled objections to AI (students' AI-generated essays, hallucinations, environmental impact, job displacement). Practise a productive conversation that earns her respect rather than dismissing her concerns.",
+      "techniques": [
+        "AG-01",
+        "CM-01",
+        "CM-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "roleplay",
+        "simulation",
+        "ai-adoption",
+        "education",
+        "academic-integrity",
+        "hallucination"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-conversation-practice/conversation_sim_frank_privacy_hawk.md",
@@ -54410,24 +54410,23 @@
       "title": "Conversation Simulator: Frank - The Privacy Hawk",
       "domain": "conversation-practice",
       "category": "conversation-practice",
-      "description": "Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your skeptical relative. Have a natural conversation (aim for 4-8 exchanges). When you're ready for feedback, type \"END SIMULATION\" and the AI will break character and coach you.",
-      "techniques": [],
-      "keywords": [
-        "character",
-        "conversation",
-        "frank",
-        "hawk",
-        "instructions",
-        "notes",
-        "privacy",
-        "profile",
-        "prompt",
-        "sim"
+      "description": "Persona for the conversation simulator: Frank, a retired accountant with structural concerns about privacy and corporate power (training on data without consent, black-box decisions, AI assistants as surveillance). Success is earning mutual respect by acknowledging legitimate concerns, not changing his mind.",
+      "techniques": [
+        "AG-01",
+        "CM-01",
+        "CM-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "roleplay",
+        "simulation",
+        "ai-adoption",
+        "privacy",
+        "difficult-conversations"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-conversation-practice/conversation_sim_jennifer_skeptical_insider.md",
@@ -54435,24 +54434,23 @@
       "title": "Conversation Simulator: Jennifer - The Skeptical Insider",
       "domain": "conversation-practice",
       "category": "conversation-practice",
-      "description": "Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your skeptical relative. Have a natural conversation (aim for 4-8 exchanges). When you're ready for feedback, type \"END SIMULATION\" and the AI will break character and coach you.",
-      "techniques": [],
-      "keywords": [
-        "character",
-        "conversation",
-        "insider",
-        "instructions",
-        "jennifer",
-        "notes",
-        "profile",
-        "prompt",
-        "sim",
-        "skeptical"
+      "description": "Persona for the conversation simulator: Jennifer, a marketing director whose company's expensive AI tools mostly gather dust and who can smell vendor hype. Practise winning her over with specific, practical examples and concrete use cases rather than buzzwords or grand visions.",
+      "techniques": [
+        "AG-01",
+        "CM-01",
+        "CM-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "roleplay",
+        "simulation",
+        "ai-adoption",
+        "vendor-evaluation",
+        "persuasion"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-conversation-practice/conversation_sim_marcus_displaced_worker.md",
@@ -54460,24 +54458,23 @@
       "title": "Conversation Simulator: Marcus - The Displaced Worker",
       "domain": "conversation-practice",
       "category": "conversation-practice",
-      "description": "Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your skeptical relative. Have a natural conversation (aim for 4-8 exchanges). When you're ready for feedback, type \"END SIMULATION\" and the AI will break character and coach you.",
-      "techniques": [],
-      "keywords": [
-        "character",
-        "conversation",
-        "displaced",
-        "instructions",
-        "marcus",
-        "notes",
-        "profile",
-        "prompt",
-        "sim",
-        "usage"
+      "description": "Persona for the conversation simulator: Marcus, a paralegal whose hours were cut after his firm adopted AI for document review, with kids nearing college and a mortgage. Practise responding with genuine empathy and acknowledgment of his situation rather than optimistic talking points about future job creation.",
+      "techniques": [
+        "AG-01",
+        "CM-01",
+        "CM-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "roleplay",
+        "simulation",
+        "automation",
+        "workforce",
+        "empathy"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-conversation-practice/conversation_sim_master_template.md",
@@ -54485,22 +54482,25 @@
       "title": "Conversation Simulator: Master Prompt Template",
       "domain": "conversation-practice",
       "category": "conversation-practice",
-      "description": "This is the full prompt template with a slot for any character variant. Use this to structure practice conversations about AI with skeptical personas.",
-      "techniques": [],
-      "keywords": [
-        "conversation",
-        "instructions",
-        "master",
-        "notes",
-        "prompt",
-        "sim",
-        "template",
-        "usage"
+      "description": "A two-phase prompt template for practising productive conversations about AI with skeptical family members or colleagues: role-play with any character variant inserted in the slot, then a coaching debrief on \"END SIMULATION\" scored across moral foundations, augmentation framing, scarcity vs abundance, beta tester framing, and curiosity as the goal.",
+      "techniques": [
+        "OC-08",
+        "CM-02",
+        "DS-01",
+        "ST-03"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "roleplay",
+        "simulation",
+        "coaching",
+        "difficult-conversations",
+        "persuasion",
+        "ai-adoption"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-conversation-practice/conversation_sim_maya_cynical_zoomer.md",
@@ -54508,24 +54508,23 @@
       "title": "Conversation Simulator: Maya - The Cynical Zoomer",
       "domain": "conversation-practice",
       "category": "conversation-practice",
-      "description": "Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your skeptical relative. Have a natural conversation (aim for 4-8 exchanges). When you're ready for feedback, type \"END SIMULATION\" and the AI will break character and coach you.",
-      "techniques": [],
-      "keywords": [
-        "character",
-        "conversation",
-        "cynical",
-        "instructions",
-        "maya",
-        "notes",
-        "profile",
-        "prompt",
-        "sim",
-        "usage"
+      "description": "Persona for the conversation simulator: Maya, a nonprofit worker in her mid-twenties with generational concerns about climate, economic fairness, AI art as theft, and tech-industry broken promises. Practise engaging her concerns on their merits without condescending or using a \"wise elder\" tone.",
+      "techniques": [
+        "AG-01",
+        "CM-01",
+        "CM-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "roleplay",
+        "simulation",
+        "ai-adoption",
+        "ai-art",
+        "career"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-conversation-practice/conversation_sim_pastor_james_moral_traditionalist.md",
@@ -54533,24 +54532,24 @@
       "title": "Conversation Simulator: Pastor James - The Moral Traditionalist",
       "domain": "conversation-practice",
       "category": "conversation-practice",
-      "description": "Pick this persona and copy the prompt into Claude, ChatGPT, or Gemini. The AI will roleplay as your skeptical relative. Have a natural conversation (aim for 4-8 exchanges). When you're ready for feedback, type \"END SIMULATION\" and the AI will break character and coach you.",
-      "techniques": [],
-      "keywords": [
-        "character",
-        "conversation",
-        "instructions",
-        "james",
-        "moral",
-        "notes",
-        "pastor",
-        "profile",
-        "prompt",
-        "sim"
+      "description": "Persona for the conversation simulator: Pastor James, who has led a Baptist church for 25 years and is skeptical of AI on spiritual and philosophical grounds (what makes humans special, deception and deepfakes, AI companions replacing community). Practise engaging his ethical concerns with humility and depth rather than arguments about efficiency.",
+      "techniques": [
+        "AG-01",
+        "CM-01",
+        "CM-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "roleplay",
+        "simulation",
+        "ai-adoption",
+        "ethics",
+        "theology",
+        "deepfakes"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-conversation-practice/conversation_lang_sim_master_template.md",
@@ -58079,7 +58078,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "Start a deep, multi-perspective analysis of a hard decision. Drives the model through Frame → Decompose options & criteria → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is a recommendation with rationale, calibrated confidence, reversibility, and observable tripwires.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "CM-02",
+        "QA-02",
+        "QA-04",
+        "QA-09"
+      ],
       "keywords": [
         "deep-analysis",
         "decision-making",
@@ -58100,7 +58105,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "A plain-English version of /deepthink-decision, written for non-technical users. Same five-step rigor as the original, with simpler language and friendlier check-ins. Drives the model through Frame → Break Down options & criteria → Multiple Viewpoints → Stress-Test → Sum Up, using AskUserQuestion at every check-in. Result is an honest recommendation with reasoning, confidence, how-hard-to-undo, and warning signs.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "CM-02",
+        "QA-02",
+        "QA-04",
+        "QA-09"
+      ],
       "keywords": [
         "deep-analysis",
         "decision-making",
@@ -58123,7 +58134,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "Start a deep, multi-perspective design session to work through what to build (a system, feature, structure, or process). Drives the model through Frame → Decompose into design dimensions → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is a design spec with documented tradeoffs, named load-bearing assumptions, and explicit open questions.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "RT-07",
+        "CM-02",
+        "QA-02",
+        "QA-04"
+      ],
       "keywords": [
         "deep-analysis",
         "design",
@@ -58145,7 +58162,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "A plain-English version of /deepthink-design, written for non-technical users. Same five-step rigor as the original, with simpler language and friendlier check-ins. Drives the model through Frame → Break Down design choices → Multiple Viewpoints → Stress-Test → Sum Up, using AskUserQuestion at every check-in. Result is a design document with the choices made, the tradeoffs accepted honestly, and the open questions named out loud.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "RT-07",
+        "CM-02",
+        "QA-02",
+        "QA-04"
+      ],
       "keywords": [
         "deep-analysis",
         "design",
@@ -58169,7 +58192,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "Start a deep, multi-perspective evaluation of an existing artifact, proposal, plan, design, document, or output. Drives the model through Frame → Decompose criteria & evidence → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is an evaluation report with criteria, weighted findings, evidence gaps, pass/revise/reject recommendation, confidence, and reviewer caveats.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "CM-02",
+        "QA-01",
+        "QA-02",
+        "QA-04"
+      ],
       "keywords": [
         "deep-analysis",
         "evaluation",
@@ -58191,7 +58220,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "Start a plain-English, deep, multi-perspective evaluation of an existing artifact, proposal, plan, design, document, or output. Drives the model through Frame → Decompose criteria & evidence → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is an evaluation report with criteria, weighted findings, evidence gaps, pass/revise/reject recommendation, confidence, and reviewer caveats.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "CM-02",
+        "QA-01",
+        "QA-02",
+        "QA-04"
+      ],
       "keywords": [
         "deep-analysis",
         "evaluation",
@@ -58213,7 +58248,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "Start a deep, multi-perspective planning session to work through how to get from here to a defined goal. Drives the model through Frame → Decompose into milestones & dependencies → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is a sequenced plan with risks, tripwires, and abort conditions.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "RT-07",
+        "CM-02",
+        "QA-02",
+        "QA-04"
+      ],
       "keywords": [
         "deep-analysis",
         "planning",
@@ -58235,7 +58276,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "A plain-English version of /deepthink-plan, written for non-technical users. Same five-step rigor as the original, with simpler language and friendlier check-ins. Drives the model through Frame → Break Down milestones & dependencies → Multiple Viewpoints → Stress-Test → Sum Up, using AskUserQuestion at every check-in. Result is a sequenced plan with named risks, warning signs, and clear stop-the-whole-thing conditions.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "RT-07",
+        "CM-02",
+        "QA-02",
+        "QA-04"
+      ],
       "keywords": [
         "deep-analysis",
         "planning",
@@ -58258,7 +58305,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "Start a deep, multi-perspective analysis of a problem or open-ended question. Drives the model through Frame → Decompose → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is a diagnosis with leverage points and calibrated confidence — not a recommendation, not a plan.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "CM-02",
+        "QA-01",
+        "QA-02",
+        "QA-04"
+      ],
       "keywords": [
         "deep-analysis",
         "problem-framing",
@@ -58279,7 +58332,13 @@
       "domain": "deep-analysis",
       "category": "deep-analysis",
       "description": "A plain-English version of /deepthink-problem, written for non-technical users. Same five-step rigor as the original, with simpler language and friendlier check-ins. Drives the model through Frame → Break Down → Multiple Viewpoints → Stress-Test → Sum Up, using AskUserQuestion at every check-in. Result is an honest diagnosis with places you could push to learn more or change the situation, and how confident the answer is.",
-      "techniques": [],
+      "techniques": [
+        "RT-02",
+        "CM-02",
+        "QA-01",
+        "QA-02",
+        "QA-04"
+      ],
       "keywords": [
         "deep-analysis",
         "problem-framing",
@@ -58301,24 +58360,23 @@
       "title": "Deep-Think Backbone",
       "domain": "deep-analysis",
       "category": "deep-analysis",
-      "description": "This file is the single source of truth for behavior shared across every deep-think scope: problem analysis, decision, plan, design, evaluation, and any future scope. Scope prompts may specialize the domain work, examples, output artifact, and scope-specific perspectives, but they inherit this backb",
-      "techniques": [],
-      "keywords": [
-        "BACKBONE",
-        "analysis",
-        "behavior",
-        "conditional",
-        "fallback",
-        "five",
-        "gate",
-        "mandatory",
-        "perspective",
-        "phases"
+      "description": "The single source of truth for behavior shared across every deep-analysis scope: the five phases, gate behavior and I/O fallback, the mandatory perspective roster, scope-conditional perspective candidates, and anti-procrastination guidance. Scope prompts may extend the backbone and never override it.",
+      "techniques": [
+        "AG-40",
+        "QA-08",
+        "RP-03",
+        "QA-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "deep-analysis",
+        "multi-perspective",
+        "askuserquestion",
+        "gated-workflow"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-deep-analysis/deepthink_decision_plain.md",
@@ -58346,7 +58404,7 @@
         "gated-workflow"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-17",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-deep-analysis/deepthink_decision.md",
         "domain-deep-analysis/deepthink_problem_analysis_plain.md",
@@ -58418,7 +58476,7 @@
         "gated-workflow"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-17",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-deep-analysis/deepthink_design.md",
         "domain-deep-analysis/deepthink_problem_analysis_plain.md",
@@ -58488,7 +58546,7 @@
         "gated-workflow"
       ],
       "difficulty": "beginner",
-      "updated": "2026-06-30",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-deep-analysis/deepthink_problem_analysis.md",
         "domain-deep-analysis/deepthink_decision.md",
@@ -58524,7 +58582,7 @@
         "gated-workflow"
       ],
       "difficulty": "advanced",
-      "updated": "2026-06-30",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-deep-analysis/deepthink_problem_analysis.md",
         "domain-deep-analysis/deepthink_decision.md",
@@ -58561,7 +58619,7 @@
         "gated-workflow"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-17",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-deep-analysis/deepthink_plan.md",
         "domain-deep-analysis/deepthink_problem_analysis_plain.md",
@@ -58633,7 +58691,7 @@
         "gated-workflow"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-17",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-deep-analysis/deepthink_problem_analysis.md",
         "domain-deep-analysis/deepthink_decision_plain.md",

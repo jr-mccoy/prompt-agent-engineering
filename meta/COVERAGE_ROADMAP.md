@@ -1288,14 +1288,15 @@ Quality work, not new coverage: no new subject and no new file. Three targets, i
 | Batch | Files | What changed | Routing vs base |
 |---|---|---|---|
 | 1 | 24 stubs + 2 | 21 `domain_writing_*` stubs rewritten to Tier 1 (objective, distinct-from neighbour, delimited inputs, method with a verify step, output format, verification, FPP, one coherent example, techniques); 3 merged; frontmatter + FPP on `business_writing_executive_proposal_template.md` and `business_writing_investment_proposal_example.md` | All metrics unchanged (R@1 73.2%, MRR 0.781, scope@1 84.9%). No gold rank moves. Ten cases change only below the scored positions (3rd routed scope, or case 106's no-route top hit); case 213 goes weak → ambiguous (no expected status). One probe gains the realtor listing at rank 2 (`comparative market analysis for a listing`), with its top hit unchanged |
+| 2 | 24 | `domain-deep-analysis` (17): FPP in the numbered domain layout for the five plain companions and `deepthink_evaluation` (the four older plain companions already carried a plain copy under "Common ways this goes wrong", now titled FPP with one verification item added); frontmatter + FPP on `BACKBONE.md`; `techniques` + a 3-item wrapper-level FPP on the 10 slash commands. `domain-conversation-practice` (7): frontmatter + persona-specific FPP on the persona template and the six AI-skeptic personas | Metrics unchanged. Two new descriptions pulled cases 208/214 into a 2nd/3rd routed scope on incidental words ("24-year-old", "seriously", "but … not"); reworded, and both are back to base. Case 138 rank 70 → 69 |
 
 **Merges in batch 1** (recorded in `meta/REORG_MAP.tsv`; references repointed by `apply_reorg_map.py`):
 
 | Stub | Merged into | What was carried over |
 |---|---|---|
-| `domain_writing_attorney_discovery.md` | `domain-legal/discovery/legal_discovery_response_objections.md` | Case-background and facts-per-answer inputs; a Must Not against narrowing a verified interrogatory answer by omission |
-| `domain_writing_physician_soap.md` | `domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md` | An outpatient office-visit SOAP variant; codes are the clinician's, never inferred; E/M level routed to the coding prompt. The file now carries the review-status disclaimer |
-| `domain_writing_marketing_campaign.md` | `domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md` | A "presented to" constraint for agencies and consultants presenting to a client |
+| `domain_writing_attorney_discovery` (stub, deleted) | `domain-legal/discovery/legal_discovery_response_objections.md` | Case-background and facts-per-answer inputs; a Must Not against narrowing a verified interrogatory answer by omission |
+| `domain_writing_physician_soap` (stub, deleted) | `domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md` | An outpatient office-visit SOAP variant; codes are the clinician's, never inferred; E/M level routed to the coding prompt. The file now carries the review-status disclaimer |
+| `domain_writing_marketing_campaign` (stub, deleted) | `domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md` | A "presented to" constraint for agencies and consultants presenting to a client |
 
 The other 21 stay where they are, because `client-services-studio/verticals/`, `domain-specialized-fields/`
 and `domain-presentations/` name them as the customer-facing writing step. Each now states the neighbour

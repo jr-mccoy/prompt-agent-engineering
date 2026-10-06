@@ -1,3 +1,21 @@
+---
+title: "Deep-Think Backbone"
+category: deep-analysis
+description: "The single source of truth for behavior shared across every deep-analysis scope: the five phases, gate behavior and I/O fallback, the mandatory perspective roster, scope-conditional perspective candidates, and anti-procrastination guidance. Scope prompts may extend the backbone and never override it."
+techniques:
+  - AG-40
+  - QA-08
+  - RP-03
+  - QA-02
+difficulty: advanced
+tags:
+  - deep-analysis
+  - multi-perspective
+  - askuserquestion
+  - gated-workflow
+updated: "2026-10-06"
+---
+
 # Deep-Think Backbone
 
 This file is the single source of truth for behavior shared across every deep-think scope: problem analysis, decision, plan, design, evaluation, and any future scope. Scope prompts may specialize the domain work, examples, output artifact, and scope-specific perspectives, but they inherit this backbone.
@@ -127,3 +145,11 @@ Not allowed:
 - Adding a scope-specific "exception to the backbone" without updating this file or explicitly documenting why the backbone itself must change.
 
 If a future scope appears to need an exception, update `BACKBONE.md` first or explain why the deep-think family should intentionally diverge.
+
+## False-Positive Prevention
+
+1. **A roster run as ritual.** Six lenses that each restate one concern in different words are one lens with six headings. If two lenses' *Unique contribution* lines could be swapped without loss, one of them has not run — redo it from its own function sentence. When every lens agrees, name the assumption they share; agreement that all flows from one premise is a single data point, not six.
+2. **A gate marked passed that the user never answered.** Writing "assuming this looks right, moving to Phase 2" under the gate question, or reading silence or an off-topic reply as a yes, is a skipped gate presented as a passed one. Before each phase transition, point to the specific user message that answered the gate just asked or explicitly authorized continuing; if there is none, re-ask instead of proceeding.
+3. **Gate options that all lead to the same next step.** Four `AskUserQuestion` options that differ only in wording make the gate decorative. Each option must map to a different next action (proceed, revise a named element, loop back, stop or switch scope); the implicit **Other** path does not count as one of them.
+4. **Anti-procrastination firing on the wrong evidence.** The avoidance flag needs a count of prior passes on the *same* decision, plan, design, or object — reported by the user or visible in the conversation — not a sense that the topic sounds familiar. It misfires the other way when each re-run is reworded enough to look new. When it fires, name the concrete smallest reversible test or the named missing evidence; "just act" is not a remedy.
+5. **A renamed lens that has lost its function.** Friendlier names are allowed, but a "future-self" that only forecasts upside, or an "affected party" that speaks for the user, has kept the label and dropped the job. Map every renamed or compressed lens back to its function sentence in the mandatory roster above before counting it as run.
