@@ -17,7 +17,7 @@ tags:
   - consistency
   - style-guide
   - reusable-context
-updated: "2026-05-27"
+updated: "2026-10-06"
 related_prompts:
   - domain-professional-writing/content-production/content_long_form_script.md
   - domain-professional-writing/content-production/content_short_form_hook_bank.md
@@ -103,6 +103,25 @@ Bulleted.
 
 ### `<voice_bible>` (paste-ready block)
 A compact, self-contained version to prepend to other content prompts.
+
+---
+
+## False-Positive Prevention
+
+1. **Rules can each be testable and still collide.** "Short, punchy sentences" beside "explain
+   every mechanism fully", or a banned phrase that turns up in a PASS line of the Voice Test —
+   each rule passes its own check while the bible as a whole cannot be followed.
+2. **A quote in the Example column must show the trait.** Any sentence lifted from
+   `<voice_samples>` fills the cell; only one that would read wrong if the rule were reversed is
+   evidence.
+3. **One sample is not a channel voice.** A humour style found in one of five samples is an
+   outlier. State how many samples show each trait and mark single-sample traits optional.
+4. **The paste-ready block can drift from the full bible.** Compression drops a banned item or
+   softens a rule, and the short block is the only version other prompts ever see.
+5. **Verify against the samples:** run every operational rule and banned item against each
+   `<voice_samples>` text and each PASS/FAIL sentence — if a sample the user called "right"
+   breaks a rule, say whether the rule or the sample is wrong; then diff the paste-ready block
+   against the Do/Don't and Banned lists item by item.
 
 ---
 

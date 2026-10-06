@@ -16,7 +16,7 @@ tags:
   - hooks
   - shorts
   - reels
-updated: "2026-05-27"
+updated: "2026-10-06"
 related_prompts:
   - domain-professional-writing/content-production/content_long_form_script.md
   - domain-professional-writing/content-production/content_repurpose_one_to_many.md
@@ -90,6 +90,24 @@ One line: what the viewer gets if they stay.
 
 ### Top 3 to Test
 Ranked, with a one-line rationale each (e.g., matches audience belief, novel angle).
+
+---
+
+## False-Positive Prevention
+
+1. **A number added for punch is an invented statistic.** "93% of creators get this wrong" can
+   pass the payoff column because the topic matches; the figure still has no source. A numbered
+   promise ("3 fixes") must match the count the content delivers.
+2. **"Payoff supported?" needs a location.** Mark it yes only when you can point to the moment in
+   `<content_summary>` that pays the hook; "the short is about this topic" does not support "the
+   trick nobody tells you".
+3. **Interchangeable hooks are filler.** If a hook would work unchanged on another video in the
+   niche ("This changes everything about productivity"), it carries no specific promise.
+4. **Ten angle labels do not make ten angles.** Hooks can wear different labels in the Angle
+   column while making the same claim in the same shape — that defeats the A/B purpose.
+5. **Verify the bank:** swap a different topic from the same niche into each hook — if it still
+   reads true, rewrite it; compare the first three words across hooks to catch repeated
+   structures; for every digit or named claim, name the `<content_summary>` line it comes from.
 
 ---
 

@@ -15,7 +15,7 @@ tags:
   - clarity
   - editing
   - reference
-updated: "2026-06-07"
+updated: "2026-10-06"
 related_prompts:
   - domain-professional-writing/business-writing/business_writing_executive_brief.md
   - domain-professional-writing/business-writing/business_writing_status_report.md
@@ -79,7 +79,7 @@ The CFO cannot act on "connection pool saturation" — they can act on "outages,
 > We evaluated three vendors over six weeks. Vendor A had strong support but a higher price. Vendor B was cheapest but lacked SOC 2. Vendor C was mid-priced with good compliance. After weighing these factors and consulting the security team, we recommend Vendor C.
 
 **After:**
-> **Recommendation: select Vendor C** ($/mid, SOC 2 compliant). Rationale below.
+> **Recommendation: select Vendor C** (mid-priced, SOC 2 compliant). Rationale below.
 > - Vendor A: best support, but 30% over budget.
 > - Vendor B: cheapest, but no SOC 2 — disqualifying.
 > - Vendor C: mid-price, full compliance — the only option that clears both bars.
@@ -102,7 +102,7 @@ The "after" version puts the decision where a scanning reader hits it first and 
 **After:**
 > The product team will redesign the onboarding flow by March 15.
 
-Who decided? Who acts? By when? The "before" answers none of these; the "after" answers all three in twelve words.
+Who decided? Who acts? By when? The "before" answers none of these; the "after" answers all three in eleven words.
 
 **Failure mode it guards against — *the agentless sentence.*** Writing that describes things happening with no one making them happen — "mistakes were made," "it is recommended," "improvements will be pursued." It feels safe because it commits no one, which is exactly why it produces no action and dodges accountability.
 
@@ -114,7 +114,7 @@ Who decided? Who acts? By when? The "before" answers none of these; the "after" 
 
 **Why it matters:** Concision is not brevity for its own sake — a one-page memo can be bloated and a five-page analysis can be tight. It means every word earns its place. Wordiness taxes the reader's attention and, worse, hides the signal: padding makes it harder to find the one sentence that matters. The most common bloat is the warm-up ("I wanted to reach out to let you know that..."), the throat-clearing qualifier ("it's worth noting that," "as you may be aware"), and the redundant pair ("each and every," "first and foremost"). Concision is a *serving* principle: it exists to make Clarity and Structure visible by removing what obscures them.
 
-**Before** (43 words):
+**Before** (44 words):
 > I just wanted to quickly reach out and let you know that, at this point in time, we are currently in the process of working towards a resolution of the issue that was previously identified, and we will keep you posted on any developments.
 
 **After** (11 words):
@@ -156,7 +156,7 @@ The "before" hides behind passive constructions and the deadening cliché "any i
 **After:**
 > The new caching layer cut median page-load time from 2.1s to 0.6s (measured over 10,000 requests in the week after launch). Support tickets about slowness fell from ~15/week to 2/week over the same period.
 
-The "after" replaces two adjectives ("dramatically," "much happier") with four checkable numbers. A reader can now believe it — or audit it.
+The "after" replaces two adjectives ("dramatically," "much happier") with five checkable numbers. A reader can now believe it — or audit it.
 
 **Failure mode it guards against — *the confident assertion.*** Strong adjectives standing in for measurement: "significant," "dramatic," "robust," "best-in-class." They feel persuasive to write and persuade no careful reader. When you reach for an intensifier, reach for a number instead.
 
@@ -195,6 +195,27 @@ The "before" is four true facts with no relationship; the reader has to assemble
 The "before" is what thinking-on-the-page sounds like — hedged, hooded, decision-free. Revision found the actual recommendation buried inside it and cut everything that wasn't load-bearing.
 
 **Failure mode it guards against — *send-the-draft.*** Treating the first version as the deliverable because it's done and you're busy. It's the most common cause of unclear business writing — not lack of skill, but lack of a second pass. Build the second pass into the schedule, or the first eight principles never get applied.
+
+---
+
+## False-Positive Prevention
+
+1. **A principle is passed by the draft, not by the writer's intent.** "Purpose ✓" because the
+   writer knows what they want is a tick, not a test; the check is whether the draft's own opening
+   sentence states the outcome, the reader, and the ask.
+2. **Surface markers are not compliance.** Headings do not make a document Structured if the
+   recommendation still sits in section four; numbers do not make it Evidenced if they do not
+   support the claim beside them; active voice with a vague actor ("the team will look into it")
+   still fails Clarity.
+3. **Fixing a symptom can pass the downstream line.** Cutting 30% satisfies Concision while the
+   Purpose defect survives untouched — re-run Purpose and Audience after any large cut.
+4. **The before/after pairs are illustrations, not templates.** Pasting "That's on us" into a draft
+   where the writer's team was not at fault satisfies the Tone line by pattern and creates a new
+   honesty problem.
+5. **Verify against the actual draft:** for each of the nine, quote the sentence of the draft that
+   passes or fails it; a principle with no quoted line is unchecked, not passed. For Concision,
+   count words before and after; for Evidence, list each claim that matters beside the number,
+   source, or owner that supports it.
 
 ---
 
