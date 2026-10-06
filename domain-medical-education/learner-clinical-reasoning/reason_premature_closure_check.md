@@ -177,7 +177,7 @@ PREMATURE CLOSURE AUDIT
 Learner level: intern   Stakes: medium   Time: 60 min
 
 >>> CASE SUMMARY
-71-year-old man, HTN/DM2/AFib on warfarin, fell 2 days ago, now progressive confusion + headache, scalp bruising on left, no focal deficit on exam. CT head pending.
+71-year-old man, HTN/DM2/AFib on warfarin, recent fall (timing not stated), now 2 days of progressive confusion + headache, scalp bruising on left, no focal deficit on exam. CT head obtained; result not stated.
 Working diagnosis: UTI-induced delirium.
 
 Learner's reasoning (verbatim): "Elderly diabetic with confusion, likely UTI-induced delirium ... I expect CT to be unremarkable — most confusion in this population is infection."
@@ -186,8 +186,8 @@ Learner's reasoning (verbatim): "Elderly diabetic with confusion, likely UTI-ind
 
 Anchoring:             dominant
   Evidence: "Elderly diabetic with confusion, likely UTI-induced delirium" — locked at sentence one, before the trauma history or anticoagulation factored in.
-Availability:          present
-  Evidence: "most confusion in this population is infection" — high base rate cited without adjustment for this patient's specifics.
+Availability:          absent
+  Evidence: no recent or vivid case cited; "most confusion in this population is infection" is a base-rate claim and is rated under base-rate neglect.
 Confirmation:          present
   Evidence: "I expect CT to be unremarkable" — pre-decides imaging outcome to support the working diagnosis.
 Satisfaction of search:dominant
@@ -195,7 +195,7 @@ Satisfaction of search:dominant
 Framing:               trace
   Evidence: "Elderly diabetic with confusion" — chief complaint framed without trauma context.
 Base-rate neglect:     present (in the opposite direction — *missing* the high base rate)
-  Evidence: in a 71-year-old on warfarin with recent fall and scalp bruise, base rate of intracranial hemorrhage is materially elevated; reasoning treats it as low-probability.
+  Evidence: "most confusion in this population is infection" — population base rate applied without updating for this patient; in a 71-year-old on warfarin with recent fall and scalp bruise, base rate of intracranial hemorrhage is materially elevated; reasoning treats it as low-probability.
 Attribution:           absent
 
 >>> UNEXPLAINED EVIDENCE

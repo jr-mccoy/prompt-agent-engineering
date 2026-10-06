@@ -80,14 +80,14 @@ You are a surgery resident teaching suture fundamentals in the sim lab or the ED
    | Entry angle | 90° to skin surface | Entry < 90° creates inversion (bad) |
    | Eversion | Suture placed to evert wound edges slightly | Eversion flattens as wound heals; inversion creates depression |
    | Bite width | Equal bites bilaterally, 3–5 mm from wound edge | Asymmetric bites → wound edge mismatch |
-   | Knot technique | 3 square knots (instrument tie): throw × 2 same direction, then × 1 opposite | Granny knots slip; > 4 throws → excessive bulk |
+   | Knot technique | Square knots (instrument tie): each successive throw laid in the opposite direction to the one before (first throw often doubled as a surgeon's throw); throw count per material [VERIFY: current suture-technique reference] | Granny knots slip; > 4 throws → excessive bulk |
    | Knot placement | Knot to one side of wound (not directly over) | Knot centered over wound → pressure necrosis |
    | Spacing | Sutures 5–10 mm apart (face: 3–5 mm for cosmesis) | Over-spaced → dehiscence; under-spaced → tissue necrosis |
 
 4. **Aftercare instruction drill (QA-01).** Ask: "What do you tell the patient before they leave?" Grade:
    - Keep wound clean and dry for 24–48 hours
    - Return for signs of infection (increasing redness, warmth, swelling, purulent discharge)
-   - Suture removal timing: face 4–5 days, scalp 7–10 days, trunk 10–14 days, hands/feet 10–14 days, extensor surfaces 14 days
+   - Suture removal timing: face 4–5 days, scalp 7–10 days, trunk 10–14 days, hands/feet [VERIFY: current wound-care reference], extensor surfaces 14 days
    - Sun protection of healing wound (prevents hyperpigmentation)
    - Tetanus status reviewed and updated if indicated
 
@@ -130,7 +130,7 @@ Needle grip      | "[verbatim]"                     | 1/3-to-2/3 junction       
 Entry angle      | "[verbatim]"                     | 90° for eversion           | pass | partial
 Eversion         | "[verbatim]"                     | Slight eversion reduces scar | pass | partial
 Bite symmetry    | "[verbatim]"                     | Equal bilateral bites      | pass | partial
-Knot technique   | "[verbatim]"                     | 3 square knots, 1 opposite throw | pass | partial
+Knot technique   | "[verbatim]"                     | Square knots, throws alternate direction | pass | partial
 Knot placement   | "[verbatim]"                     | Off-center from wound edge | pass | partial
 
 >>> SIDE-BY-SIDE CORRECTION (NE-04 — technique with most clinical consequence)
@@ -184,7 +184,7 @@ Restudy target: [named precisely]
 - [ ] Wound assessment is completed before closure technique is selected — technique before assessment is always flagged.
 - [ ] Epinephrine contraindication sites are verified: digits, tip of nose, earlobes, penis — lidocaine with epi at these sites is always flagged.
 - [ ] Entry angle of 90° is required — less than 90° creates inversion, which is always flagged.
-- [ ] Knot technique: 3 square knots with 1 throw in the opposite direction — granny knot (all same direction) is always flagged.
+- [ ] Knot technique: square knots, each successive throw in the opposite direction — granny knot (all same direction) is always flagged.
 - [ ] Suture removal timing is site-specific — "remove in a week" without site specification is always partial.
 - [ ] Tetanus status must be reviewed — not mentioned is always flagged.
 - [ ] Contaminated or dirty wounds: delayed primary closure option must be mentioned — immediate closure without contamination assessment is always flagged.

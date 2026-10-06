@@ -157,7 +157,7 @@ Status: [healthy / sparse / dense] — [one-line interpretation].
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
 | Turning a source statement into a ranking claim ("Diagnosis: X" becomes "Best initial test?") that still carries a valid `[src: ¶N]` | Compare each front against its paragraph: ranking words (best, first-line, most specific) appear only if the source uses them |
-| Scoring 12/12 on a card whose back holds two facts ("Beta blockade, then surgical resection") | Count the facts on each back; more than one makes Atomic = 0, so split the card |
+| Scoring 12/12 on a card whose back holds two facts ("X, then Y") | Count the facts on each back; more than one makes Atomic = 0, so split the card |
 | Treating source-faithful as current — an older edition's test of choice or drug of choice ships unflagged | Keep the card faithful, but add `[VERIFY: current guideline]` to Number and First-step cards when the cited edition may be superseded |
 | Density computed from an estimated word count | Count the words in `source_text` and recompute cards ÷ words × 1000 before writing the Status line |
 | One TSV mixing cloze and basic notes, with cloze lines carrying an empty Back field | Split the import by note type and check every line's tab count matches that note type's fields |
@@ -193,28 +193,31 @@ Source: First Aid 2025, p. 354   Level: MS2   Target: 8   Format: mixed
   e4 [decision: imaging AFTER biochemical confirmation]
   e5 [first-step: alpha block before beta block]
   e6 [trigger / red flag: never beta-block first]
+  e7 [sequence: surgical resection after alpha then beta blockade]
 
 >>> DECK
 | # | Element | Pattern | Front | Back | Score | Src |
 |---|---|---|---|---|---|---|
 | 1 | e1 | A | Pheochromocytoma in one sentence? | Catecholamine-secreting tumor of adrenal medulla chromaffin cells | 12/12 | ¶1 |
 | 2 | e2 | G cloze | The 5 P's of pheo: {{c1::paroxysmal HTN, palpitations, pallor, perspiration, pain (headache)}} | (cloze) | 11/12 | ¶1 |
-| 3 | e3 | F | Best initial diagnostic test for pheo? | 24-hr urinary fractionated metanephrines | 12/12 | ¶1 |
+| 3 | e3 | F | Diagnostic test for pheo? | 24-hr urinary fractionated metanephrines | 12/12 | ¶1 |
 | 4 | e3 | F | Sensitivity of 24-hr metanephrines for pheo? | > 90% | 12/12 | ¶1 |
 | 5 | e4 | E | When to image in suspected pheo? | After biochemical confirmation (not before) | 12/12 | ¶1 |
 | 6 | e5 | E | First pharmacologic step in pheo management? | Alpha blockade (phenoxybenzamine) | 12/12 | ¶1 |
-| 7 | e5 | E | Step after alpha block in pheo? | Beta blockade, then surgical resection | 12/12 | ¶1 |
+| 7 | e5 | E | Step after alpha block in pheo? | Beta blockade | 12/12 | ¶1 |
 | 8 | e6 | D | Why never beta-block pheo first? | Unopposed alpha → hypertensive crisis | 12/12 | ¶1 |
 
->>> ANKI IMPORT
+>>> ANKI IMPORT — Basic note type (Front<TAB>Back<TAB>Tags)
 Pheochromocytoma in one sentence?	Catecholamine-secreting tumor of adrenal medulla chromaffin cells	pheo,def
-The 5 P's of pheo: {{c1::paroxysmal HTN, palpitations, pallor, perspiration, pain (headache)}}		pheo,clinical
-Best initial diagnostic test for pheo?	24-hr urinary fractionated metanephrines	pheo,dx
+Diagnostic test for pheo?	24-hr urinary fractionated metanephrines	pheo,dx
 Sensitivity of 24-hr metanephrines for pheo?	> 90%	pheo,dx,number
 When to image in suspected pheo?	After biochemical confirmation (not before)	pheo,sequence
 First pharmacologic step in pheo management?	Alpha blockade (phenoxybenzamine)	pheo,tx
-Step after alpha block in pheo?	Beta blockade, then surgical resection	pheo,tx
+Step after alpha block in pheo?	Beta blockade	pheo,tx
 Why never beta-block pheo first?	Unopposed alpha → hypertensive crisis	pheo,red-flag
+
+>>> ANKI IMPORT — Cloze note type (Text<TAB>Tags)
+The 5 P's of pheo: {{c1::paroxysmal HTN, palpitations, pallor, perspiration, pain (headache)}}	pheo,clinical
 
 >>> REJECTED CARDS
 REJECT 1
@@ -237,8 +240,9 @@ REJECT 3
 | e4 | 5 |
 | e5 | 6, 7 |
 | e6 | 8 |
+| e7 | (skipped — target count of 8 reached; one-line card candidate if the target rises) |
 
 >>> DENSITY
-Source ≈ 85 words. Cards = 8. Density = 94/1000 words.
+Source ≈ 60 words. Cards = 8. Density ≈ 133/1000 words.
 Status: dense (above 14/1000) but acceptable because source is a high-yield summary, not prose.
 ```

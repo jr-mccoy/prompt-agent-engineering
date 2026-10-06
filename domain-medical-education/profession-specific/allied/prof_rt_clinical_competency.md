@@ -190,9 +190,9 @@ Single highest-yield improvement:
 |---|---|
 | Keying a complication answer that the injected data contradict (unilateral diminished breath sounds + hypotension + rising peak pressure is the tension-PTX signature) | Re-read the state change and confirm it points to only the keyed cause; teaching a delay for imaging in an unstable suspected tension PTX needs `[VERIFY: current ATLS / ACLS guidance]` |
 | ABG and vent numbers that look plausible but don't fit together | Check pH ≈ 6.1 + log(HCO3 ÷ (0.03 × PaCO2)), Vt ÷ height-derived PBW, and that the PaCO2 direction matches the minute-ventilation change |
-| Ticking critical actions from scenario background ("ETT verified: Y at intubation") rather than from learner selections | Performed ✓ requires a learner selection or statement; otherwise ☐ with "not tested" |
+| Ticking critical actions from scenario background (e.g., marking tube placement verified because the patient was intubated earlier) rather than from learner selections | Performed ✓ requires a learner selection or statement; otherwise ☐ with "not tested" |
 | An IG list full of interventions (raise RR, raise FiO2) scored as information requests | Keep IG to data requests and move therapeutic changes to DM so helpful/harmful scoring measures the right skill |
-| Scorecard remarks that contradict the learner's own picks ("missed breath-sound assessment" after IG 7 was chosen) | Cross-check every scorecard comment against the selection list before output |
+| Scorecard remarks that contradict the learner's own picks (calling an assessment "missed" when the learner selected it) | Cross-check every scorecard comment against the selection list before output |
 
 ## Verification Checklist
 
@@ -243,7 +243,7 @@ Pre-decision data:
 
 Results:
   2 (HELPFUL): Expiratory flow waveform shows flow not returning to zero before next breath — auto-PEEP confirmed.
-  5 (HELPFUL — diagnostic): Apnea trial causes BP to rise from 100/60 to 132/80 within 15 sec, then falls again after vent resumed — pathognomonic for auto-PEEP causing dynamic hyperinflation and reduced venous return.
+  5 (HELPFUL — diagnostic): Apnea trial causes BP to rise from 100/60 to 132/80 within 15 sec, then falls again after vent resumed — strongly supports auto-PEEP causing dynamic hyperinflation and reduced venous return.
   7 (HELPFUL): Bilateral wheezing, no asymmetry — no tension PTX.
   8 (NEUTRAL): CXR normal post-intubation; no PTX confirmed.
 
@@ -276,7 +276,7 @@ Results:
 
 >>> COMPLICATION (engineered)
 
-After your changes, vent settings are now: RR 10, Vt 500, PEEP 5, I:E 1:4, FiO2 0.50. 5 min later, BP dropped to 80/45, ETCO2 spiked to 78, SpO2 88%, plateau now 28, peak 50. Bilateral breath sounds remain present but more diminished on left.
+After your changes, vent settings are now: RR 10, Vt 500, PEEP 5, I:E 1:4, FiO2 0.50. 5 min later, BP dropped to 80/45, ETCO2 spiked to 78, SpO2 88%, plateau now 28, peak 50. Breath sounds remain bilateral and symmetric but more diminished throughout; trachea midline; expiratory flow again fails to return to zero before the next breath.
 
 >>> ADDITIONAL DECISION (post-complication)
 i) Disconnect from vent for 15 sec apnea test, re-attach with same settings
@@ -285,15 +285,15 @@ iii) Increase FiO2 to 1.0
 iv) Recheck breath sounds + obtain stat CXR before any intervention
 
 [learner picks ii]
-HARMFUL — no PTX confirmed; breath sounds are bilateral but diminished from hyperinflation. Decompression of un-needed PTX site introduces iatrogenic injury.
+NOT INDICATED (harmful if performed) — the state change does not show the tension-PTX signature: breath sounds are symmetric, trachea midline, and the expiratory waveform again shows air-trapping. Decompressing a chest that has no PTX introduces iatrogenic injury.
 
-[correct choice: i + iv in sequence — apnea trial confirms or excludes auto-PEEP as cause; CXR confirms or excludes PTX before invasive action]
+[correct choice: i — the brief disconnect is both diagnostic and therapeutic for auto-PEEP; reassess breath sounds during it. If BP does not recover on disconnect, or asymmetric breath sounds / tracheal deviation appear, treat as tension PTX and decompress without waiting for a CXR [VERIFY: current ATLS / ACLS guidance]. Option iv is a trap: in an unstable patient, holding all intervention for imaging delays treatment.]
 
 >>> SCORECARD
 
 NBRC content mapping:
-  Category I (Data Evaluation): 4/5 — recognized auto-PEEP from waveform + apnea test; missed early step of patient assessment for breath-sound symmetry as confirmatory.
-  Category II (Troubleshooting): 4/5 — appropriately disrupted vent cycle to diagnose; mis-attributed late hypotension to PTX without confirming.
+  Category I (Data Evaluation): 4/5 — recognized auto-PEEP from waveform + apnea test and checked breath-sound symmetry (IG 7); misread the post-complication exam, which lacked the tension-PTX signature.
+  Category II (Troubleshooting): 4/5 — appropriately disrupted vent cycle to diagnose; attributed late hypotension to PTX although the exam did not show the tension-PTX signature.
   Category III (Intervention): 4/5 — first round of decisions optimal; mistake at complication round.
   TOTAL: 12/15
 
@@ -302,18 +302,18 @@ DM scoring: 3 optimal first round; 1 harmful second round.
 
 >>> CRITICAL-ACTIONS AUDIT
 
-  ETT verified: Y at intubation
+  ETT verified: ☐ not tested (no learner selection addressed tube position)
   Hypoxemia (SpO2 < 85): N
   Auto-PEEP recognized: Y at minute 5 of scenario
   Vent change → reassessment: Y after first round
   Patient comfort/synchrony assessed: Y
-  PTX needle decompression without confirmation: Y — FLAG (would be harmful)
+  PTX needle decompression without the tension-PTX signature: Y — FLAG (would be harmful)
 
-Auto-fail triggered: No — but flagged for needle decompression without confirmation. This counts as a Category II troubleshooting deduction, not auto-fail (no actual PTX present and intervention was not yet performed in the scenario logic).
+Auto-fail triggered: No — but flagged for needle decompression without the tension-PTX signature. This counts as a Category II troubleshooting deduction, not auto-fail (no actual PTX present and intervention was not yet performed in the scenario logic).
 
 >>> DEBRIEF
 
-What went well: Excellent recognition of auto-PEEP using the apnea trial — that's the gold-standard diagnostic move and you used it as a CONFIRMATION rather than as an empiric maneuver. First-round management (RR ↓, I:E ↑, continuous bronchodilator) was textbook ARDSnet-adjacent for obstructive lung disease.
+What went well: Excellent recognition of auto-PEEP using the apnea trial — that's the gold-standard diagnostic move and you used it as a CONFIRMATION rather than as an empiric maneuver. First-round management (RR ↓, I:E ↑, continuous bronchodilator) was a textbook obstructive-lung-disease strategy (prolonged expiratory time, permissive hypercapnia).
 
-Single highest-yield improvement: when hypotension recurs after vent optimization in a severe asthma patient, DON'T leap to needle decompression. Re-verify auto-PEEP with another apnea trial first — auto-PEEP can re-develop quickly. Tension PTX in an intubated asthma patient is real and serious, but it has *physical exam signs* (asymmetric breath sounds, tracheal deviation) — confirm before decompressing. The apnea-trial + CXR sequence costs you 60–90 seconds and prevents iatrogenic PTX.
+Single highest-yield improvement: when hypotension recurs after vent optimization in a severe asthma patient, read the exam before acting. Here breath sounds were symmetric and the waveform showed air-trapping again — re-verify auto-PEEP with a brief disconnect first; auto-PEEP can re-develop quickly. Tension PTX in an intubated asthma patient is real and serious, and it is a clinical diagnosis with *physical exam signs* (asymmetric breath sounds, tracheal deviation): when those signs are present in an unstable patient, decompress without waiting for imaging [VERIFY: current ATLS guidance]. When they are absent, the disconnect costs seconds and prevents iatrogenic PTX.
 ```

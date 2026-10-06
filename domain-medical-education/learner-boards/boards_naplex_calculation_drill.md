@@ -130,7 +130,7 @@ Highest-yield restudy target: [...]
 
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
-| Calling the learner's wrong number a "missed conversion" without back-solving it | Divide the learner's answer by the correct one: a ratio of 1000, 60, 1/60 or TBW/IBW identifies the slip; any other ratio (e.g., 11.7 ÷ 13.125 ≈ 0.89) is not a unit error, and the callout must say "cause not identified — show me your setup" |
+| Calling the learner's wrong number a "missed conversion" without back-solving it | Divide the learner's answer by the correct one: a ratio of 1000, 60, 1/60 or TBW/IBW identifies the slip; any other ratio (e.g., a learner answer about 0.9× the key) is not a unit error, and the callout must say "cause not identified — show me your setup" |
 | Delivering a stem whose key was computed once, in one direction | Before delivery, recompute the key by a second route (stepwise mcg/min → mg/h → mL/h against the single dimensional-analysis chain) and redo every product shown in Steps 3–4; the item ships only when both routes agree |
 | Rounding intermediates (concentration, CrCl, ke) and carrying the rounded value forward, or leaving the rounding rule unstated so two answers (13.1 vs 13 mL/h) are both defensible | Carry full precision until Step 5, round once, and put the rounding instruction in the stem [VERIFY: current NABP NAPLEX competency statements and the institution's rounding policy] |
 | Renal-dose or aminoglycoside items that leave the weight basis implicit, so TBW, IBW and AdjBW give three "correct" keys | Name in the stem which weight and which CrCl equation the item expects, compute IBW from the stated height with the formula shown, and check the key against that choice only |
@@ -200,7 +200,7 @@ Step 5 — round / format:
 
 >>> PITFALL CALLOUT
 
-Most common error on this question type: forgetting to convert (a) mcg ↔ mg or (b) min ↔ h. Both conversions are necessary in the same problem. The answer you gave (11.7 mL/h) reflects a missed factor — likely a single conversion error.
+Most common error on this question type: forgetting to convert (a) mcg ↔ mg or (b) min ↔ h. Both conversions are necessary in the same problem. The answer you gave (11.7 mL/h) is about 0.89× the key — not a factor of 1000 or 60, so it is not a missed unit conversion. Cause not identified — show me your setup.
 
 Specifically: write the dimensional-analysis chain *with the conversion factors as fractions and cancel units as you go*. If your "mcg" doesn't end up canceling with "mg," you missed a factor of 1000. If your "min" doesn't end up canceling with "h," you missed a factor of 60.
 

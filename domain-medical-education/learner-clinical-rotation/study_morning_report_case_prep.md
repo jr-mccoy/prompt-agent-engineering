@@ -157,19 +157,19 @@ Restudy target: [named precisely]
 
 ## Worked Example (compact)
 
-**Case (auto-generated):** 34F with sudden-onset severe headache ("worst of my life"), 10/10, with neck stiffness and photophobia. No fever. BP 148/92. CT head negative for hemorrhage. Neuro exam: intact except Kernig's and Brudzinski's signs positive.
+**Case (auto-generated):** 34F with sudden-onset severe headache ("worst of my life"), 10/10, with neck stiffness and photophobia. No fever. BP 148/92. Time from headache onset to CT: [not provided]. CT head negative for hemorrhage. Neuro exam: intact except Kernig's and Brudzinski's signs positive. LP: xanthochromia present.
 
 **Layer structure (learner):**
 - Layer 1: 34F with sudden severe headache — audience differentiates SAH vs. migraine vs. meningitis
-- Layer 2: CT negative, but Kernig's and Brudzinski's positive — pivot away from SAH toward meningitis
-- Layer 3: Final dx bacterial meningitis; LP confirmed; missed dx: SAH (requires LP), viral meningitis
+- Layer 2: CT negative, afebrile, Kernig's and Brudzinski's positive — meningeal signs occur in both SAH and meningitis, so they do not pivot; thunderclap onset without fever keeps SAH ranked high, and the LP is the pivot
+- Layer 3: LP shows xanthochromia; final dx CT-negative SAH; missed dx to discuss: bacterial and viral meningitis (why meningeal signs did not favor them)
 
 **Differential table (learner):**
 
 | Item | Supporting | Against | Rank | Eliminated by |
 |---|---|---|---|---|
-| Bacterial meningitis | Kernig's, neck stiffness | No fever | High | LP: cell count, glucose, culture |
-| SAH | Thunderclap onset | CT negative | Medium | LP: xanthochromia at 12h |
-| Viral meningitis | Meningeal signs, no fever | Kernig's severity | Medium | LP: WBC pattern, glucose |
+| SAH | Thunderclap onset, meningeal signs, no fever | CT negative | High | LP: no xanthochromia and no RBCs (timing from onset matters [VERIFY: current AHA/ASA aneurysmal SAH guideline]) |
+| Bacterial meningitis | Neck stiffness, Kernig's/Brudzinski's | No fever; instantaneous onset | Low | LP: cell count, glucose, culture |
+| Viral meningitis | Meningeal signs, photophobia | No fever; instantaneous onset | Low | LP: WBC pattern, glucose |
 
-**Audit:** All three items have supporting and arguing-against findings. Layer 2 correctly identifies CT-negative-but-signs-positive as the pivot. Teaching point: "A negative CT does not exclude bacterial meningitis or SAH — LP is mandatory when meningeal signs are present." Grade: generalizable + evidence-anchored (consistent with IDSA meningitis guidelines). **PASS.**
+**Audit:** All three items have supporting and arguing-against findings, and each rank follows its row's balance. Final dx (SAH) was on the pre-confirmation differential, ranked high; Layer 3 resolves its strongest against-finding (negative CT) with the LP. Layer 2 correctly declines to pivot on meningeal signs. Gap: time from onset to CT is not stated, and it decides whether a negative CT still needs LP — the presenter must obtain it. Teaching point: "Meningeal signs do not separate SAH from meningitis, and a negative CT does not by itself exclude SAH — whether LP is still required depends on time from onset to CT [VERIFY: current AHA/ASA aneurysmal SAH guideline / ACEP clinical policy on CT timing and LP]." Grade: generalizable + evidence-anchored once the guideline edition is verified. Verdict: differential quality complete; reasoning transparency moderate — CT timing not stated.

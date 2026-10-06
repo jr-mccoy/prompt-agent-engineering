@@ -187,4 +187,10 @@ Restudy target: [named precisely, e.g., "distinguish 5-Whys layer 2 from layer 3
 1. Remove "daily" as default frequency for methotrexate in discharge order templates — assign to EHR team; measure as zero daily-methotrexate discharges at 30 days.
 2. Add pharmacist verification requirement for high-alert medication frequency changes at discharge — assign to pharmacy director; measure as 100% audit compliance within 60 days.
 
-**Verdict:** Causation map reaches system level. Both recommendations are specific, actionable, assigned, and measurable. **PASS.**
+**Defense-layer check:** discharge order template → recommendation 1; pharmacist verification at discharge → recommendation 2; outpatient pharmacy dispensing → no recommendation — open gap: add one, or state why it is out of scope.
+
+**Verdict:**
+- Timeline: partial — entries carry relative labels only ("Inpatient," "Discharge," "Day 5 post-discharge"), no timestamps; the sentinel event is not marked; "dispensed without frequency flag" is an inference with no source tagged.
+- Causation depth: reaches system level.
+- Recommendation quality: 2/2 specific, actionable, and assigned; #2 is only partially measurable ("100% audit compliance" names no denominator or data source); the outpatient-pharmacy layer has no recommendation.
+- Restudy target: timestamp every timeline entry and mark the sentinel event before building the causation map; then map every failed defense layer to a recommendation.

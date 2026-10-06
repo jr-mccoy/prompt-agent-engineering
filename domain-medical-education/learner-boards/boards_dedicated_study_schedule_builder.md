@@ -207,20 +207,20 @@ Sleep: 22:30–06:30.
 >>> WEEK-BY-WEEK CADENCE
 
 Week 1 — Establish rhythm; weak-area attack (biostats, biochem).
-  UWorld coverage target by end of week: 25%
+  UWorld coverage target by end of week: 15% + (40 × 6 = 240 Qs) ÷ bank size [VERIFY: current UWorld Step 1 item count]
   NBME planned: NBME 26 (Sunday alternate; do not break observance day)
   Off / light: religious observance day; build in walk + nap
 
 Week 2 — Continue weak-area attack (antimicrobial pharm); push UWorld %.
-  UWorld coverage target: 45%
+  UWorld coverage target: 15% + 480 ÷ bank size
   NBME planned: NBME 27
 
 Week 3 — Switch to timed mixed. Begin integration drills.
-  UWorld coverage target: 65%
+  UWorld coverage target: 15% + 720 ÷ bank size
   NBME planned: NBME 28
 
 Week 4 — All timed. Strong-area review only if NBME shows regression.
-  UWorld coverage target: 85% (first pass)
+  UWorld coverage target: 15% + 960 ÷ bank size — 40 Qs/day will not finish a first pass in 4 weeks; reaching ~85% needs (0.70 × bank size ÷ 24 study days) Qs/day, so raise Block A or accept the lower coverage.
   NBME planned: NBME 29
 
 Week 5 — Second-pass UWorld misses-only. UWSA1.
@@ -234,15 +234,15 @@ Week 6 — Taper. UWSA2 at start. NBME 31 mid-week.
 
 >>> TRACKING METRICS
 
-UWorld first-pass %:    target by week 4 → 85%
-NBME score trajectory:  198 → ~205 (wk1) → ~212 (wk2) → ~218 (wk3) → ~222 (wk4) → ~226 (wk5) → ~228–230 (wk6).
-  (Gains taper; if wk3 NBME is < 210, trigger fires.)
+UWorld coverage:        target by week 4 → 15% + 960 ÷ bank size
+NBME score trajectory:  198 → ~200–201 (wk1) → ~201–204 (wk2) → ~203–207 (wk3) → ~204–210 (wk4) → ~206–213 (wk5) → ~207–216 (wk6), at the method's 1.5–3 points/week.
+  GAP FLAG: the projection lands 14–23 points short of 230. Decide now — lower the target, extend dedicated, or accept the shortfall; the week-3 trigger below (< 210) is expected to fire on this curve.
 Anking retention:        ≥ 85% throughout.
 
 >>> ABORT / CATCH-UP TRIGGERS
 
 If week-3 NBME < 210 → reduce target to 225, add one full rest day to week 4, drop Pathoma re-watches.
-If UWorld first-pass < 50% by end of week 2 → cut Sketchy re-watches; reallocate Block C hours to Q-bank.
+If UWorld coverage at end of week 2 is below the week-2 target (15% + 480 ÷ bank size) → cut Sketchy re-watches; reallocate Block C hours to Q-bank.
 If sleep < 7h for 3 consecutive nights → mandatory half-day, no study after 16:00 that day.
 If at day 35 (one week out) the score gap is > 10 below target → optional defer-test conversation with deans / advisor.
 

@@ -163,11 +163,11 @@ Component check: anchor [Y, weak], temporal [N], qualifiers [N — "moved to the
 Socratic prompt: "You said 'probably appendicitis.' I asked for the *syndrome*, not the diagnosis. What is this *syndrome*?"
 
 Attempt 2: > "24-year-old woman with acute periumbilical-to-RLQ pain — acute RLQ pain syndrome."
-Component check: anchor [Y], temporal [Y], qualifiers [Y, partial], syndrome [Y]. Word count: 18.
+Component check: anchor [Y], temporal [Y], qualifiers [Y, partial], syndrome [Y]. Word count: 10.
 Socratic prompt: "Add one more semantic qualifier from the case that changes the schema's pretest."
 
 Attempt 3: > "Previously healthy 24-year-old woman with 8 hours of progressive migratory periumbilical-to-RLQ pain with peritoneal signs — acute RLQ pain in a young woman."
-Component check: all four passing. Word count: 25.
+Component check: all four passing. Word count: 22.
 
 Passing one-liner: "Previously healthy 24-year-old woman with 8 hours of progressive migratory periumbilical-to-RLQ pain with peritoneal signs — acute RLQ pain in a young woman."
 Schema activated: learner says "acute RLQ pain in a young woman of reproductive age."
@@ -180,9 +180,13 @@ Attempt 1: > "72-year-old smoker with shortness of breath and weight loss — pr
 Prompt: "Drop the diagnosis. Give me the syndrome. Also: 'shortness of breath' is the patient's word — what's the semantic qualifier?"
 
 Attempt 2: > "72-year-old man, 60 pack-year smoking history, with subacute progressive dyspnea on exertion, dry cough, weight loss, and unilateral pleural-effusion signs — subacute dyspnea with constitutional symptoms in an older smoker."
-Component check: all four passing. Word count: 30.
+Component check: anchor [N — omits COPD on home O2, the PMH item that most reshapes this dyspnea schema], temporal [Y], qualifiers [Y], syndrome [Y]. Word count: 29.
+Prompt: "Which item in his history changes your pretest for this dyspnea most — and is it in your anchor?"
 
-Passing one-liner: "72-year-old man with 60 pack-year smoking history with subacute progressive exertional dyspnea, dry cough, weight loss, and right-sided pleural-effusion exam findings — subacute dyspnea with constitutional symptoms in an older smoker."
+Attempt 3: > "72-year-old man with home-O2 COPD and 60 pack-years, with subacute progressive exertional dyspnea, dry cough, weight loss, and right pleural-effusion signs — subacute dyspnea with constitutional symptoms in an older smoker."
+Component check: all four passing. Word count: 30 (hyphenated terms = 1 word).
+
+Passing one-liner: "72-year-old man with home-O2 COPD and 60 pack-years, with subacute progressive exertional dyspnea, dry cough, weight loss, and right pleural-effusion signs — subacute dyspnea with constitutional symptoms in an older smoker."
 Schema activated: "subacute dyspnea + constitutional symptoms in an older smoker" → lung cancer with malignant effusion, TB, chronic empyema, lymphoma, mesothelioma if asbestos history.
 
 >>> SESSION REFLECTION

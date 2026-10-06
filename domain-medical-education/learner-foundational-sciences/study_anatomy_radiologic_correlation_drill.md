@@ -137,26 +137,26 @@ Integration vignette: [single-finding → predict adjacent slice]
 ```
 RADIOLOGIC CORRELATION DRILL
 Region: chest   Pair: CXR (PA) + chest CT
-Slice anchor: PA chest radiograph, axial CT at the carina (≈ T5)
+Slice anchor: PA chest radiograph, axial CT at the carina (≈ T4–T6; shifts with respiration and body habitus)
 Learner level: MS3   Structures: 6
-Order: 1. Trachea/main bronchi  2. Aortic arch  3. Pulmonary trunk  4. Azygos vein arch  5. Esophagus  6. Vertebral body
+Order: 1. Trachea/main bronchi  2. Ascending aorta  3. Pulmonary trunk  4. Azygos vein arch  5. Esophagus  6. Vertebral body
 
 >>> STRUCTURE 1 of 6: Trachea / main bronchi at the carina
 
 A. Surface: On a standing patient, what surface landmark approximates the carina, and how do you reach it from the manubrium?
    → [learner response]
-   → Grade: correct if names sternal angle (angle of Louis) ≈ T4/T5, junction of manubrium and body of sternum.
+   → Grade: correct if names sternal angle (angle of Louis), junction of manubrium and body of sternum, level with the T4/T5 disc (carina within the same reconciled T4–T6 range).
 
 B. Plain film (PA CXR): Where does the carina appear, and what is the normal range of the carinal angle?
    → [learner response]
-   → Grade: correct if locates carina at the T5–T6 level, behind heart shadow, with carinal angle 40–80°.
+   → Grade: correct if locates carina within the T4–T6 range, projected over the upper mediastinum above the cardiac silhouette, with carinal angle 40–80°.
 
 C. Cross-section (axial CT at carina): How do you distinguish the right main bronchus from the left at this slice? What anterior structure crosses near it?
    → [learner response]
    → Grade: correct if names: right main bronchus more vertical and wider; ascending aorta anterior, descending aorta left-posterior; SVC right-anterior.
 
-Combined grade: partial — surface and plain film correct; CT distinction confused right vs left bronchus angles.
+Combined grade: partial — surface and plain film correct; CT distinction confused right vs left bronchus angles. (Rule used: two views right and one wrong is not "all three correct" and not "≥ 2 views wrong," so it is graded partial.)
 Correction: Right main bronchus angle from midline ≈ 25°, left ≈ 45° (FB aspiration favors right).
 
->>> STRUCTURE 2 of 6: Aortic arch ...
+>>> STRUCTURE 2 of 6: Ascending aorta ...
 ```

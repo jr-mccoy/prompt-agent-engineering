@@ -187,4 +187,4 @@ Restudy target: [named precisely]
 - NNH not mentioned: fail — 1 additional UTI per 20 treated
 - No applicability statement: fail — no mention of whether learner's DM patients match the study population
 
-**Corrected bottom line:** "In adults with T2DM and HbA1c 8–10%, drug X reduces CV death or MI by 6% absolute risk (NNT = 17 over 3 years, HR 0.64). However, UTI risk increases (NNH = 20). Before prescribing, confirm your patient matches study criteria — patients with advanced CKD were excluded — and weigh UTI risk individually."
+**Corrected bottom line:** "In adults with T2DM and HbA1c 8–10%, drug X reduces CV death or MI by 6% absolute risk (NNT = 17 over 3 years, HR 0.64). However, UTI risk increases (NNH = 20). Before prescribing, confirm your patient matches study criteria — exclusion criteria [not reported in supplied text] — and weigh UTI risk individually."

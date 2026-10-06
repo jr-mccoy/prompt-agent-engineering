@@ -104,7 +104,7 @@ Learner: [...]   Service: [...]
 ☐ Med without diagnosis: none
 ☑ Level-of-care mismatch: Plan says "floor bed" but HPI describes SBP 220 with end-organ symptoms
 
->>> SIDE-BY-SIDE CORRECTION (Physical Exam — score 3/11)
+>>> SIDE-BY-SIDE CORRECTION (Physical Exam — partial; missing required elements: [count])
 
 LEARNER VERSION                         | CORRECTED VERSION
 ----------------------------------------|--------------------------------------------------

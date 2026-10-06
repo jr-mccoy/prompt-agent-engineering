@@ -140,7 +140,7 @@ Next-session focus: [...]
 
 | ❌ Common Mistake | ✅ Correct Approach |
 |---|---|
-| Scoring Can't-miss 2 when a red leaf sits in the bottom half of the list (PE at #4 of 5) — the checklist's own top-half rule fails it | Apply the rule by position: count the entries, mark the cut (top 2 of 5), and score 0 or 1 if any red leaf for this presentation falls below it |
+| Scoring Can't-miss 2 when a red leaf sits in the bottom half of the list — the checklist's own top-half rule fails it | Apply the rule by position: count the entries, mark the cut (top 2 of 5), and score 0 or 1 if any red leaf for this presentation falls below it |
 | Re-scoring only the axes a revision targeted and carrying the old scores forward for the rest | Re-score all five axes on the revised list and re-add the total; a revision that dropped its "tied to" links cannot keep Reasoning = 2 |
 | Crediting Reasoning for links to features that do not discriminate (relief with nitroglycerin used to tie an entry to ACS) | For each "tied to" feature, check that it shifts likelihood for that entry; credit the links that discriminate and note the ones that do not |
 | A session mean built from post-revision scores only, which hides how the learner did unaided | Report the attempt-1 mean and the revised mean separately, and name the weakest axis from attempt 1 |
@@ -181,10 +181,10 @@ Learner DDx (attempt 1):
 Rubric scoring:
   Breadth:            1   note: 4/5 entries on cardiovascular schema; could include musculoskeletal or pericardial.
   Ranking:            2   note: NSTEMI on top is correct given EKG changes.
-  Can't-miss:         2   note: dissection and PE both surfaced and tagged.
+  Can't-miss:         1   note: dissection and PE both surfaced and tagged, but at #3 and #4 — below the top-half cut (top 2 of 5).
   Reasoning:          2   note: every entry tied to specific features.
   Closure resistance: 1   note: stable angina and NSTEMI are near-duplicates on the same branch — one slot wasted.
-  Total: 8 / 10
+  Total: 7 / 10
 
 Adversarial probe:
   "What about pericarditis? What feature argues for / against?"
@@ -200,10 +200,13 @@ Revised DDx (after learner sees rubric):
 
   Stable angina dropped (redundant with NSTEMI/UA on this acuity).
 
-Rubric (revision):
+Rubric (revision — all five axes re-scored):
   Breadth: 2 (added pericarditis from a different mechanism class)
+  Ranking: 2 (NSTEMI/UA still correctly on top)
+  Can't-miss: 1 (dissection now #2, but PE at #3 is still below the top-2-of-5 cut)
+  Reasoning: 1 (revised entries carry no "tied to" links; only pericarditis is justified, in the probe answer)
   Closure resistance: 2 (now genuinely competing options)
-  Total: 10 / 10   Δ: +2
+  Total: 8 / 10   Δ: +1
 
 Tutor-canonical DDx (top 5):
   1. ACS (NSTEMI / UA)        — EKG depressions + classic features + risk factors. Trop, serial EKG, dual antiplatelet, statin, cath team aware.
@@ -212,10 +215,10 @@ Tutor-canonical DDx (top 5):
   4. Pericarditis              — if pleuritic / positional appear; ESR/CRP, echo for effusion.
   5. Esophageal spasm / GERD   — diagnosis of exclusion after rule-out of ACS.
 
-Restudy target: closure resistance — when two of your top entries are on the same branch with the same acuity, you've wasted a slot. Use the slot on a different mechanism.
+Restudy target: can't-miss — dissection and PE were surfaced and tagged in both attempts but sat below the top-half cut; a red leaf belongs in the top half of the list, not just on it.
 
 >>> SESSION SUMMARY
-Mean rubric (final): 10/10 after revision.   Weakest axis pre-revision: closure resistance.
-Pattern: learner has solid ranking and can't-miss instinct; tends to fill the DDx with near-duplicates from the same schema branch.
+Mean rubric: attempt 1 7/10; after revision 8/10.   Weakest axis: can't-miss (1 in both attempts).
+Pattern: learner has solid ranking and surfaces can't-miss entries but ranks them low; tends to fill the DDx with near-duplicates from the same schema branch.
 Next-session focus: cross-schema DDx — when chest pain DDx should span cardiac, vascular, pulmonary, GI, MSK, psychiatric, and pericardial in 5 slots.
 ```

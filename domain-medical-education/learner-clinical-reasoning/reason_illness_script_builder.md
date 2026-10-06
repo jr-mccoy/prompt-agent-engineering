@@ -142,7 +142,7 @@ Restudy target: [the specific gap, named]
 | Frequency tags (`pathognomonic`, `classic`) assigned by how memorable a feature is rather than how often or how specifically it occurs | Reserve `pathognomonic` for features effectively absent in every listed neighbor, and tag any frequency claim you cannot attribute [VERIFY: source] rather than upgrading it |
 | Grading the Time course slot "correct" because the right words appear while the windows (rebleed peak, vasospasm days) are off | Check each numeric time window the learner gives against a named reference type (review article, specialty guideline) before marking the slot correct |
 | A FINAL SCRIPT that quietly gains or loses features compared with the graded slot-by-slot build | Diff the FINAL SCRIPT line by line against the graded slots and tutor corrections; any feature with no graded origin is removed or sent back as a new slot question |
-| A "most discriminating feature" defense that restates the feature or points to a test instead of explaining the separation | The one-sentence defense must name the neighbor it separates from and why that neighbor rarely shows it; embedded workup steps (e.g., LP after a negative CT) are tagged [VERIFY: current guideline edition] |
+| A "most discriminating feature" defense that restates the feature or points to a test instead of explaining the separation | The one-sentence defense must name the neighbor it separates from and why that neighbor rarely shows it; embedded workup steps (e.g., whether a negative first test needs a confirmatory second test) are tagged [VERIFY: current guideline edition] |
 
 ## Verification Checklist
 
@@ -198,11 +198,11 @@ vs. RCVS: both thunderclap; RCVS often recurrent thunderclaps over days, trigger
 Predisposing:   age 40–60, female > male, HTN, smoking, family hx aneurysm, ADPKD, EDS-IV/Marfan, cocaine
 Pathophys:      saccular aneurysm at Circle of Willis branch point ruptures → arterial blood in subarachnoid space
 Time course:    thunderclap, peak < 1 min; rebleed peak first 24 h; vasospasm d3–14; hydrocephalus early or late
-Key features:   worst-ever headache (classic), LOC at onset (common), meningismus (common, hours), CN III palsy (classic w/ PCom), sentinel HA (occasional), low-grade fever (occasional)
+Key features:   worst-ever headache (classic), LOC at onset (common), meningismus (common, hours), CN III palsy (classic w/ PCom), sentinel HA (occasional)
 Discriminators: vs. migraine — time-to-peak < 1 min, first/worst
                 vs. meningitis — instantaneous onset, fever absent or delayed
                 vs. RCVS — recurrence pattern, vasoactive triggers, angiographic segmental vasoconstriction
-Most discriminating feature: time-to-peak < 1 min (sensitivity for SAH among thunderclap headaches is the question CT and LP are designed to answer).
+Most discriminating feature: time-to-peak < 1 min — separates SAH from migraine and bacterial meningitis, which build over minutes to hours and rarely peak instantly (it does not separate SAH from RCVS; recurrence pattern and angiography do that).
 
 >>> SCORECARD
 Slot 1: partial — missed family hx / ADPKD / connective tissue / sympathomimetics
@@ -210,6 +210,6 @@ Slot 2: complete
 Slot 3: complete
 Slot 4: complete
 Slot 5: complete
-Most likely slot to fail clinically: slot 1 (missed risk factors → lower pretest, miss the LP-after-negative-CT decision)
+Most likely slot to fail clinically: slot 1 (missed risk factors → lower pretest, under-pursue workup after a negative CT [VERIFY: current AHA/ASA aneurysmal SAH guideline / ACEP clinical policy on CT timing and LP])
 Restudy target: SAH risk factors beyond HTN and smoking.
 ```

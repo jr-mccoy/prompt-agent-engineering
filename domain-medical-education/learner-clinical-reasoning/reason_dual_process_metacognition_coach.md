@@ -237,7 +237,7 @@ For-and-against on "panic":
 
 Test that would change dx:
   - EKG with rhythm strip *during* episode (if obtainable)
-  - D-dimer + risk-stratify for PE given flight episode; if positive in any pretest above test-threshold → CTPA
+  - Risk-stratify for PE first (clinical decision rule) given flight episode; if pretest probability is not high → D-dimer, CTPA if positive; if pretest probability is high → CTPA directly (skip D-dimer)
   - TSH
   - Holter or event monitor if EKG unrevealing
   - Echocardiogram if PE worked up

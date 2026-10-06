@@ -149,11 +149,13 @@ Substrate → Product: NH3 (from amino acid catabolism) + CO2 → urea (excreted
 
 | # | Substrate→Product | Enzyme (cofactor) | IEM (gene) | Inheritance | Accumulates | Missing | Clinical | Lab signature | Management | RUSP? |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | NH3 + CO2 + 2 ATP → carbamoyl phosphate | CPS1 (N-acetylglutamate as activator) | CPS1 deficiency (CPS1) | AR | Ammonia, glutamine | Carbamoyl-P | Neonatal hyperammonemic coma | ↑↑ ammonia, ↓ BUN, normal orotic acid, ↑ glutamine, low citrulline | Protein restriction, sodium phenylbutyrate/benzoate, arginine; liver transplant | No (not on most RUSPs) |
-| 2 | Carbamoyl-P + ornithine → citrulline | OTC | OTC deficiency (OTC) | X-linked | Ammonia, *carbamoyl-P leaks to cytosol → orotic acid* | Citrulline | Neonatal coma (males); episodic in heterozygous females | ↑↑ ammonia, **↑ orotic acid** in urine, low citrulline | Same as CPS1 + arginine | No |
-| 3 | Citrulline + aspartate → argininosuccinate | ASS (argininosuccinate synthetase) | Citrullinemia type I (ASS1) | AR | Citrulline, ammonia | Argininosuccinate | Neonatal hyperammonemia | ↑↑ citrulline plasma + ↑ ammonia | Protein restriction, scavengers, arginine; liver transplant | Yes |
-| 4 | Argininosuccinate → arginine + fumarate | ASL (argininosuccinate lyase) | ASA-uria (ASL) | AR | Argininosuccinate | Arginine | Hyperammonemia + trichorrhexis nodosa hair | ↑ argininosuccinate in urine, ↑ ammonia | Same approach | Yes |
-| 5 | Arginine → ornithine + urea | Arginase (ARG1) | Argininemia (ARG1) | AR | Arginine | Urea (mild ↑ NH3) | Spastic diplegia, seizures, less neonatal coma than other UCDs | ↑ arginine plasma, mild ↑ ammonia | Protein restriction, scavengers | Yes |
+| 1 | NH3 + CO2 + 2 ATP → carbamoyl phosphate | CPS1 (N-acetylglutamate as activator) | CPS1 deficiency (CPS1) | AR | Ammonia, glutamine | Carbamoyl-P | Neonatal hyperammonemic coma | ↑↑ ammonia, ↓ BUN, normal orotic acid, ↑ glutamine, low citrulline | Protein restriction, sodium phenylbutyrate/benzoate, arginine; liver transplant | Not listed |
+| 2 | Carbamoyl-P + ornithine → citrulline | OTC | OTC deficiency (OTC) | X-linked | Ammonia, *carbamoyl-P leaks to cytosol → orotic acid* | Citrulline | Neonatal coma (males); episodic in heterozygous females | ↑↑ ammonia, **↑ orotic acid** in urine, low citrulline | Protein restriction, sodium phenylbutyrate/benzoate, arginine or citrulline supplementation [VERIFY: current urea cycle disorder management guideline]; liver transplant | Not listed |
+| 3 | Citrulline + aspartate → argininosuccinate | ASS (argininosuccinate synthetase) | Citrullinemia type I (ASS1) | AR | Citrulline, ammonia | Argininosuccinate | Neonatal hyperammonemia | ↑↑ citrulline plasma + ↑ ammonia | Protein restriction, scavengers, arginine; liver transplant | Core |
+| 4 | Argininosuccinate → arginine + fumarate | ASL (argininosuccinate lyase) | ASA-uria (ASL) | AR | Argininosuccinate | Arginine | Hyperammonemia + trichorrhexis nodosa hair | ↑ argininosuccinate in urine, ↑ ammonia | Same approach | Core |
+| 5 | Arginine → ornithine + urea | Arginase (ARG1) | Argininemia (ARG1) | AR | Arginine | Urea (mild ↑ NH3) | Spastic diplegia, seizures, less neonatal coma than other UCDs | ↑ arginine plasma, mild ↑ ammonia | Protein restriction, scavengers | Secondary |
+
+RUSP column: core / secondary / not listed on the single federal Recommended Uniform Screening Panel [VERIFY: current HRSA RUSP list]; state panels vary and are not the RUSP.
 
 REGULATED / RATE-LIMITING STEP: Step 1 — CPS1 — allosterically activated by N-acetylglutamate (NAG); NAG synthase deficiency mimics CPS1 deficiency.
 
@@ -163,16 +165,16 @@ Q1 (reverse): Newborn day 3 with vomiting, lethargy, hyperammonemia. Urine oroti
 > "OTC."
 Grade: correct.
 
-Q2 (forward): A boy with episodic hyperammonemia and trichorrhexis nodosa hair (brittle, fragile) — what's the enzyme and what accumulates?
-> "ASL deficiency. Argininosuccinate accumulates."
+Q2 (forward): ASL deficiency — what accumulates, and what hair finding is characteristic?
+> "Argininosuccinate accumulates. Trichorrhexis nodosa (brittle, fragile hair)."
 Grade: correct.
 
-Q3 (reverse): Hyperammonemia + low citrulline + low orotic acid — proximal block, which enzyme?
+Q3 (reverse): Hyperammonemia + low citrulline + normal orotic acid — proximal block, which enzyme?
 > "CPS1 (or NAGS deficiency)."
 Grade: correct — orotic acid normal because carbamoyl-P never accumulates to leak.
 
-Q4 (forward): A patient comes in with mild ammonia elevation, normal citrulline, but very high arginine. What's the diagnosis and what is the cardinal pediatric neurologic feature?
-> "Argininemia. Spastic diplegia."
+Q4 (forward): Arginase 1 deficiency — which amino acid is elevated in plasma, and what is the cardinal pediatric neurologic feature?
+> "Arginine. Spastic diplegia."
 Grade: correct.
 
 Q5 (reverse): Hyperammonemia + ↑↑ citrulline. Which enzyme?

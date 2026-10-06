@@ -190,10 +190,10 @@ Restudy target: [e.g., "Practice closed-loop confirmation for every drug order �
 **Scenario:** 68F found unresponsive on the medical floor. Monitor shows VF. Team present: nurse (Jane), tech (Mark), intern (Alex), pharmacist (Sam).
 
 **Learner arrival:** "Mark, start compressions now. Jane, get on the airway with BVM. Alex, establish IV and draw up meds. Sam, you're recording — call out every 2 minutes."
-**Audit:** All 4 roles assigned with names and tasks. Leader at foot of bed. **PASS.**
+**Audit:** All 4 roles assigned with names and tasks. **PASS.** Leader position: not observable — the transcript does not state where the leader stands.
 
 **Rhythm check at 2 min:** "Everyone stop — check rhythm. Still VF. Charge to 200J biphasic. Mark, Jane, Alex — everyone clear of the patient? Clear — shock."
-**Audit:** Rhythm check timing correct. Defibrillation energy correct. Safety check verbal ("everyone clear") before shock. **PASS.**
+**Audit:** Defibrillation energy correct. Safety check verbal ("everyone clear") before shock. **FLAG — first shock delayed:** the arrest began in monitored VF, so the leader should have called for the defibrillator on arrival and shocked as soon as it was ready, not waited for the first 2-minute rhythm check. **FLAG — no compressor swap:** the 2-minute check is the point to rotate compressors; Mark is still compressing and no swap was called.
 
 **Drug order:** "Give epi."
-**Audit:** Open-loop failure — not addressed to Alex, no dose stated, no read-back. Should be: "Alex, give epinephrine 1mg IV now." / "Epinephrine 1mg going in." / "Confirmed — epi in."
+**Audit:** Open-loop failure — not addressed to Alex, no dose stated, no read-back. **Timing error:** this order follows the first shock; in a shockable rhythm epinephrine is given after the second shock. Should be, after the second shock: "Alex, give epinephrine 1mg IV now." / "Epinephrine 1mg going in." / "Confirmed — epi in."

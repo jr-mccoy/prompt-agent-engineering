@@ -165,7 +165,7 @@ If learner has run this teardown ≥ 3 times with same primary error type → es
 ## Worked Example (compact)
 
 **Input:**
-- `question_stem`: "A 67-year-old man with COPD on home O2 presents with 3 days of progressive dyspnea, productive cough with green sputum, and low-grade fever. He uses albuterol nebs at home. Vitals: HR 108, RR 24, sat 86% on his usual 2 L NC, BP 138/86. Exam: distant breath sounds, prolonged expiration, scattered rhonchi, no JVD. Which of the following is the most appropriate INITIAL management step?"
+- `question_stem`: "A 67-year-old man with COPD on home O2 presents with 3 days of progressive dyspnea, productive cough with green sputum, and low-grade fever. He uses albuterol nebs at home. Vitals: HR 108, RR 24, sat 90% on his usual 2 L NC, BP 138/86. Exam: distant breath sounds, prolonged expiration, scattered rhonchi, no JVD. Which of the following is the most appropriate INITIAL management step?"
 - `answer_choices`: A) Increase home O2 to 4 L NC; B) Administer nebulized albuterol/ipratropium; C) Start non-invasive positive-pressure ventilation (BiPAP); D) Administer IV methylprednisolone; E) Start IV ceftriaxone + azithromycin
 - `learner_choice`: D
 - `correct_choice`: B
@@ -178,18 +178,18 @@ If learner has run this teardown ≥ 3 times with same primary error type → es
 EXPLAIN MY MISTAKE — single-question teardown
 Learner level: MS4
 
-Question stem (one-line): 67M with COPD on home O2 with 3 days progressive dyspnea, productive cough, low-grade fever, HR 108, RR 24, sat 86% on usual O2.
+Question stem (one-line): 67M with COPD on home O2 with 3 days progressive dyspnea, productive cough, low-grade fever, HR 108, RR 24, sat 90% on usual O2.
 Actual question being asked: most appropriate INITIAL management step.
 Choices: A) ↑ O2 to 4 L; B) nebulized albuterol/ipratropium; C) BiPAP; D) IV methylprednisolone; E) abx.
 Learner picked: D (methylprednisolone).
 Correct: B (nebulized albuterol/ipratropium).
 
 >>> CANONICAL REASONING CHAIN
-Step A: COPD exacerbation, hypoxic but not in extremis, ambulatory baseline; QUESTION = INITIAL step.
+Step A: COPD exacerbation, sat already within the 88–92% target on home O2, not in extremis, ambulatory baseline; QUESTION = INITIAL step.
 Step B: Schema = COPD exacerbation management — bronchodilators, steroids, antibiotics, oxygen, NIPPV, monitor.
 Step C: Candidates ordered by acuity: bronchodilators (immediate) → titrated O2 to sat 88–92% → systemic steroids → antibiotics if green sputum / increased volume / mechanical ventilation → NIPPV if respiratory failure → IMV if NIPPV fails.
 Step D: Discriminator = "INITIAL." Bronchodilators are first-line and act in minutes. Steroids and antibiotics are critical but slower-onset and not first.
-Step E: B matches "initial." D, E, C are also indicated but not initial. A is wrong because over-oxygenation can worsen hypercapnia.
+Step E: B matches "initial." D, E, C are also indicated but not initial. A is wrong because sat 90% is already within the 88–92% target; raising O2 further risks over-oxygenation and worsening hypercapnia.
 
 >>> BROKEN STEP
 Broke at: Step D (discrimination on "INITIAL" qualifier) with secondary at Step A (didn't isolate the literal question).
