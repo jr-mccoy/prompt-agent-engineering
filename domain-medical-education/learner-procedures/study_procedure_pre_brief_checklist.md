@@ -23,7 +23,7 @@ tags:
   - patient-safety
   - procedure-prep
   - universal-protocol
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-procedures/study_central_line_lp_checklist_drill.md
   - domain-medical-education/learner-procedures/study_intubation_sequence_drill.md
@@ -133,6 +133,16 @@ Restudy target: [named precisely]
 | `setting = ED` | Emergent consent waiver documentation is acceptable; brief is compressed to 60 seconds |
 | `setting = OR` | Three-phase timeout (before anesthesia, before incision, before leaving OR) replaces single brief |
 | `bailout_drill` | Present a scenario mid-procedure where the procedure must be aborted — learner states the abort call and escalation step |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Presenting all 7 elements as Joint Commission Universal Protocol requirements | Say which elements belong to the Universal Protocol (pre-procedure verification, site marking, time-out) and which are teaching additions such as the bailout plan; mark both `[VERIFY: current Joint Commission UP and institutional policy]` |
+| Mixing grade labels (`fail` beside `complete / partial / missing`) so the N/7 tally cannot be reproduced | Use only the three method labels, then recompute `Pre-brief: N/7 elements complete` by counting `complete` rows |
+| Crediting element 4 (site / side / level) because the scenario mentions imaging, though the learner never stated the site | Score element evidence from the learner's words only; scenario facts the learner did not say are `missing` |
+| Auto-generated coagulation values presented as a safe-to-proceed threshold, then used to grade the learner | Treat thresholds (platelets, INR) as procedure- and guideline-specific; tag `[VERIFY: current SIR periprocedural guidance / local policy]` and do not grade the learner on a number you invented |
+| A corrected brief whose bailout names an escalation service that does not perform that rescue in the stated setting | Check that the backup named in the model brief actually does the fallback procedure in that setting (e.g., who performs image-guided LP locally); otherwise write `[VERIFY: local service]` |
 
 ## Verification Checklist
 

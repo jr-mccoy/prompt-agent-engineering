@@ -23,7 +23,7 @@ tags:
   - acpe
   - rotation-evaluation
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/pharmacy/prof_pharm_pgy1_residency_eval.md
   - domain-medical-education/profession-specific/pharmacy/prof_pharm_journal_club_critique_rubric.md
@@ -177,6 +177,16 @@ Experiential coordinator (if remediation triggered): __________ Date: ____
 | `epa_set` | Selects which EPAs to log on this rotation |
 | `setting_constraints` | Adjusts which interventions are within rotation scope |
 | `failing_threshold_required` | Toggles the explicit failing threshold block |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| EPA rows named in convenient paraphrase and presented as the AACP Core EPAs, and the ACPE outcomes cited to a Standards edition that may have been superseded | Copy EPA titles from the AACP Core EPA document and cite the ACPE Standards edition currently in force for the school `[VERIFY: current ACPE Standards and AACP Core EPA list]`; label any program-specific activity as such, not as an EPA |
+| EPA logbook "met" because the encounter count reached the minimum, when most entries were logged at O or CON | Count only entries at or above the entrustment level the minimum requires (e.g., "5 at IS"), and show both numbers — total logged and logged at the required level |
+| Failing triggers in the tool that disagree with Method step 6 — a logbook shortfall that is "incomplete with make-up" in one place and "fail" in another, or triggers that appear only in the example (a final case presentation) | Line up each trigger in the output against Method step 6 and resolve every mismatch in consequence (fail / incomplete / committee review) before the tool is released |
+| PLAN and IMPLEMENT anchors built on institution-specific protocols (AUC-based vancomycin dosing, pharmacist anticoagulation protocols) written as if every APPE site has them | Name the protocol as "site protocol, if present" and give an anchor that still works at a site without collaborative-practice authority |
+| Highest-level (PI) anchors that say "without revision", which a preceptor ticks after one clean note | Require the evidence line to cite several reviewed documents or encounters before a PI rating, and keep "insufficient observation" available instead of a default level |
 
 ## Verification Checklist
 

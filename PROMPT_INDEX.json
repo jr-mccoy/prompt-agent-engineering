@@ -114420,7 +114420,7 @@
         "learner-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-osce-skills/osce_communication_breaking_bad_news_rehearsal.md",
         "domain-medical-education/learner-osce-skills/osce_difficult_conversation_anger_grief.md",
@@ -114576,7 +114576,7 @@
         "learner-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md",
         "domain-medical-education/learner-osce-skills/osce_focused_physical_exam_checklist.md",
@@ -114667,7 +114667,7 @@
         "learner-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-osce-skills/osce_motivational_interviewing_rehearsal.md",
         "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md",
@@ -114699,7 +114699,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md",
         "domain-medical-education/learner-osce-skills/osce_focused_physical_exam_checklist.md",
@@ -114857,7 +114857,7 @@
         "resuscitation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-13",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-procedures/study_acls_algorithm_drill.md",
         "domain-medical-education/learner-procedures/study_pals_algorithm_drill.md",
@@ -115013,7 +115013,7 @@
         "universal-protocol"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-13",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-procedures/study_central_line_lp_checklist_drill.md",
         "domain-medical-education/learner-procedures/study_intubation_sequence_drill.md",
@@ -115135,7 +115135,7 @@
         "wound-care"
       ],
       "difficulty": "beginner",
-      "updated": "2026-05-13",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-procedures/study_procedure_pre_brief_checklist.md",
         "domain-medical-education/learner-procedures/study_post_procedure_note_rehearsal.md",
@@ -115199,7 +115199,7 @@
         "study-system"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-study-systems/study_lecture_slide_to_study_guide.md",
         "domain-medical-education/learner-study-systems/study_retrieval_practice_drill_designer.md",
@@ -115233,7 +115233,7 @@
         "exam-prep"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-study-systems/study_spaced_repetition_schedule_designer.md",
         "domain-medical-education/learner-study-systems/study_retrieval_practice_drill_designer.md",
@@ -115331,7 +115331,7 @@
         "study-system"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-study-systems/study_flashcard_deck_builder.md",
         "domain-medical-education/learner-study-systems/study_lecture_slide_to_study_guide.md",
@@ -115425,7 +115425,7 @@
         "fsrs"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-study-systems/study_flashcard_deck_builder.md",
         "domain-medical-education/learner-study-systems/study_dedicated_period_schedule_builder.md",
@@ -115487,7 +115487,7 @@
         "triage"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-study-systems/study_dedicated_period_schedule_builder.md",
         "domain-medical-education/learner-study-systems/study_spaced_repetition_schedule_designer.md",
@@ -115520,7 +115520,7 @@
         "extraction"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-study-systems/study_flashcard_deck_builder.md",
         "domain-medical-education/learner-study-systems/study_lecture_slide_to_study_guide.md",
@@ -115654,7 +115654,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/allied/prof_pt_npte_drill.md",
         "domain-medical-education/profession-specific/allied/prof_rt_clinical_competency.md",
@@ -115685,7 +115685,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/allied/prof_ot_nbcot_drill.md",
         "domain-medical-education/profession-specific/allied/prof_rt_clinical_competency.md",
@@ -115719,7 +115719,7 @@
         "educator-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/allied/prof_pt_npte_drill.md",
         "domain-medical-education/profession-specific/allied/prof_ot_nbcot_drill.md"
@@ -115782,7 +115782,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_explain_this_answer.md",
         "domain-medical-education/profession-specific/allied/prof_pt_npte_drill.md"
@@ -115814,7 +115814,7 @@
         "educator-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_nremt_scenario_drill.md",
         "domain-medical-education/profession-specific/ems-paramedic/prof_ems_run_call_critique.md",
@@ -115880,7 +115880,7 @@
         "educator-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/ems-paramedic/prof_ems_field_scenario_drill.md",
         "domain-medical-education/profession-specific/ems-paramedic/prof_ems_nremt_scenario_author.md"
@@ -115911,7 +115911,7 @@
         "educator-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/ems-paramedic/prof_ems_field_scenario_drill.md",
         "domain-medical-education/learner-boards/boards_nremt_scenario_drill.md"
@@ -115942,7 +115942,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_nclex_rn_select_all_that_apply.md",
         "domain-medical-education/learner-boards/boards_nclex_prioritization_drill.md",
@@ -115973,7 +115973,7 @@
         "educator-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md",
         "domain-healthcare-clinical/prompts/nursing/preceptor_orientee_feedback_session.md",
@@ -116036,7 +116036,7 @@
         "educator-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/nursing/prof_rn_concept_map_designer.md",
         "domain-medical-education/profession-specific/nursing/prof_rn_preceptor_orientation_plan.md"
@@ -116068,7 +116068,7 @@
         "educator-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/nursing/prof_rn_clinical_judgment_ngn_drill.md",
         "domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md",
@@ -116100,7 +116100,7 @@
         "educator-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/pa/prof_pa_pance_blueprint_drill.md",
         "domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md"
@@ -116130,7 +116130,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/learner-boards/boards_pance_pearl_drill.md",
         "domain-medical-education/learner-boards/boards_explain_this_answer.md",
@@ -116162,7 +116162,7 @@
         "educator-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/pharmacy/prof_pharm_pgy1_residency_eval.md",
         "domain-medical-education/profession-specific/pharmacy/prof_pharm_journal_club_critique_rubric.md",
@@ -116193,7 +116193,7 @@
         "educator-tool"
       ],
       "difficulty": "advanced",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/pharmacy/prof_pharm_appe_evaluation.md",
         "domain-medical-education/profession-specific/pharmacy/prof_pharm_journal_club_critique_rubric.md"
@@ -116224,7 +116224,7 @@
         "learner-tool"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-05-12",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-medical-education/profession-specific/pharmacy/prof_pharm_pgy1_residency_eval.md",
         "domain-healthcare-clinical/prompts/education/medicine_literature_synthesizer.md"

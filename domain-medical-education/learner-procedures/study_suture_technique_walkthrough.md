@@ -23,7 +23,7 @@ tags:
   - surgical-skills
   - procedural-skills
   - wound-care
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-procedures/study_procedure_pre_brief_checklist.md
   - domain-medical-education/learner-procedures/study_post_procedure_note_rehearsal.md
@@ -168,6 +168,16 @@ Restudy target: [named precisely]
 | `anatomy_site = face` | Cosmetic standards emphasized: 6-0 nylon, early removal (4–5 days), precise eversion, minimal tissue trauma |
 | `contaminated_wound` | Learner must select delayed primary closure — immediate suturing is flagged as increasing infection risk |
 | `epi_trap` | Wound is on a finger — learner must identify epinephrine as contraindicated at digital sites |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Counting wound-assessment items that `wound_description` supplied ("neurovascular intact") as items the learner assessed | Only learner statements earn `pass`; recount `Wound assessment: N/7` from the learner column alone |
+| Grading a material choice for a site with no row in the material table (finger, dorsum of hand, over a joint) by silently using the nearest row | Name the row used for comparison and tag the verdict `[VERIFY: current wound-care reference]` when the site has no row |
+| Ticking Knot technique because the learner said "square knot" while describing every throw in the same direction | Grade the described throw sequence, not the label; also count the throws described, since monofilament nylon often needs more than three throws to hold |
+| Writing `correct: N days` for suture removal as one number recalled from memory | Quote the range from the site row in the aftercare list; for a site not listed, give no number and mark it `[VERIFY]` |
+| Dropping Spacing (Method step 9) because the 8-row technique audit has no row for it | If spacing was described wrongly, name it in `Most important error`; before output, recompute N/7, N/8 and N/5 from the grade columns |
 
 ## Verification Checklist
 

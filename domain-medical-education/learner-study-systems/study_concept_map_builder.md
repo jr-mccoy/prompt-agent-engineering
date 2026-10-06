@@ -25,7 +25,7 @@ tags:
   - integration
   - synthesis
   - study-system
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_lecture_slide_to_study_guide.md
   - domain-medical-education/learner-study-systems/study_retrieval_practice_drill_designer.md
@@ -161,6 +161,16 @@ Q3 (cross-link): Why does treating [X] also affect [Y]? — Answer: [cross-link 
 | `output_dot_graph` | Adds Graphviz block for tool rendering |
 | `compare_to_existing_map` | If learner pastes their own map, render a diff (missing nodes, weak verbs, missed cross-links) |
 | `embed_in_anki` | Generate Anki cards keyed to cross-link edges (one card per cross-link) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Filling the Integrity audit's `Nodes total` and `Edges total` from the `target_depth` estimate | Count outline IDs and edge-list rows directly; any ID used only in the pathophys chain or cross-links (e.g., a lettered sub-node) must be added to the outline or removed |
+| Counting a link between two children of the same parent toward `cross_link_target_count` | Compare the ID prefixes of both endpoints: a shared parent prefix (3.3 ↔ 3.4) is a sibling link and does not count |
+| Reporting the chain as "4 hops" by counting nodes | Count the arrows: four hops need four labeled edges and five nodes |
+| Writing `Vague-verb edges: none` because no banned word appears, while off-vocabulary verbs ("prevents", "shares mechanism with") and free-text endpoints slipped in | Test each edge's verb for membership in the locked 8 (or `relationship_vocab`) and each endpoint for being a numbered node |
+| A fluent `(why: ...)` note on a cross-link that states the wrong discriminating value (the urine sodium direction in SIADH, for example) | Check each discriminator against the lab pattern it claims; any threshold number carries a source type or `[VERIFY: source]` |
 
 ## Verification Checklist
 

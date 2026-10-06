@@ -26,7 +26,7 @@ tags:
   - chapter
   - retrieval-practice
   - extraction
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_flashcard_deck_builder.md
   - domain-medical-education/learner-study-systems/study_lecture_slide_to_study_guide.md
@@ -151,6 +151,16 @@ Status: [healthy / sparse / dense] — [one-line interpretation].
 | `include_image_occlusion` | Adds spec block for figures (text-only spec; learner builds in Anki) |
 | `auto_tag` | Tag cards by paragraph / topic / pattern for Anki filtering |
 | `include_inclusion_reason` | Add a one-line "why this card?" for each card (audit aid) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Turning a source statement into a ranking claim ("Diagnosis: X" becomes "Best initial test?") that still carries a valid `[src: ¶N]` | Compare each front against its paragraph: ranking words (best, first-line, most specific) appear only if the source uses them |
+| Scoring 12/12 on a card whose back holds two facts ("Beta blockade, then surgical resection") | Count the facts on each back; more than one makes Atomic = 0, so split the card |
+| Treating source-faithful as current — an older edition's test of choice or drug of choice ships unflagged | Keep the card faithful, but add `[VERIFY: current guideline]` to Number and First-step cards when the cited edition may be superseded |
+| Density computed from an estimated word count | Count the words in `source_text` and recompute cards ÷ words × 1000 before writing the Status line |
+| One TSV mixing cloze and basic notes, with cloze lines carrying an empty Back field | Split the import by note type and check every line's tab count matches that note type's fields |
 
 ## Verification Checklist
 

@@ -27,7 +27,7 @@ tags:
   - sustainability
   - metacognition
   - triage
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_dedicated_period_schedule_builder.md
   - domain-medical-education/learner-study-systems/study_spaced_repetition_schedule_designer.md
@@ -176,6 +176,16 @@ If affect axis is red AND ≥ 3 burnout-warning patterns AND not improving by Da
 | `include_partner_check` | If partner/family available, adds a "ask one person who sees you" outside-view check |
 | `force_rest_day` | Override that mandates a full rest day Day 1 regardless of axis scores |
 | `mental_health_history` | If history of depression/anxiety, lowers escalation threshold to ≥ 2 patterns |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Scoring an axis red from the overall impression when the input sits in another band (11 h/day falls in the 8–12 Yellow band) | Re-score each axis by placing the logged value in the band table, then re-total; the Refusal check and severity band depend on those scores |
+| Ticking burnout-warning patterns by inference ("implied by 1 h/wk"), with quotes the learner never wrote, or by filing cognitive complaints under Somatic signals | Each [X] cites the learner's own words from `affect_log` or `proximate_concern`; recount `Count present` from cited items only |
+| Firing the Refusal check with an axis outside its trigger (adding nutrition to sleep + exercise + study) | Fire it only when those three axes are all 0; a rest day justified by ≥3 patterns is stated as that rule instead |
+| Deferring the counselor task to Day 7 when affect is already red | Affect red puts a student health / EAP / counselor session on this week's plan; the Day 7 escalation is for non-improvement, not a substitute |
+| A plan that looks complete although the logs mention suicidal thoughts, chest pain, or another clinical symptom | Route those to student health, a clinician, or crisis resources before any study scheduling; this prompt triages study load, not health conditions |
 
 ## Verification Checklist
 

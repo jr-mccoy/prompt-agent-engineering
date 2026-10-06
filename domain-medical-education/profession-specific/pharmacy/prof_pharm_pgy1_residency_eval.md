@@ -22,7 +22,7 @@ tags:
   - ashp
   - quarterly-evaluation
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/pharmacy/prof_pharm_appe_evaluation.md
   - domain-medical-education/profession-specific/pharmacy/prof_pharm_journal_club_critique_rubric.md
@@ -168,6 +168,16 @@ RPD (if NI rating present at Q3 or summative): __________ Date: ____
 | `evaluation_type` | Formative is informational; summative triggers narrative requirement |
 | `customized_objectives_present` | Adds program-specific objective block |
 | `failing_threshold_required` | Surfaces non-progression triggers |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Objective numbers and "verbatim" objective text written from memory, which may follow a superseded edition of the ASHP PGY1 standard | Take each R/E number and its wording from the program's current ASHP PGY1 competency areas, goals, and objectives document `[VERIFY: ASHP PGY1 standard edition in force]`; if the text is not in hand, write the number plus "[objective text to paste]" rather than a paraphrase dressed as verbatim |
+| NI / SP / ACH / ACHR definitions and who may assign each (preceptor vs RPD) stated as ASHP's, when the program's evaluation software and policy set them | Present the scale definitions as "per program policy and evaluation platform `[VERIFY]`", and confirm the export target (PharmAcademic or another system) before claiming the layout matches its fields |
+| ACH or "ahead" awarded from an aggregate statement ("30+ med recs, 2 minor gaps") with no dated case, so the rating looks evidenced but cannot be audited | Every ACH/ACHR needs at least one dated, case-identified observation in the evidence list; a summary count can support it but cannot stand alone |
+| Non-progression trigger (> 25% NI at Q3) declared met or not met by impression | Count required objectives in the resident's plan, count those rated NI, and show the percentage; the trigger line cites both numbers |
+| Evidence bullets with a single date that describe several events ("on three separate days"), or a trajectory note that disagrees with the rating and the quarter's expected level | Give each event its own date; then check rating vs "Expected at Qn" and confirm the trajectory word (on-track / ahead / behind) follows from that comparison |
 
 ## Verification Checklist
 

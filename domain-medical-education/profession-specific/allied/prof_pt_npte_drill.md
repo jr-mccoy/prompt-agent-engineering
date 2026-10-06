@@ -19,7 +19,7 @@ tags:
   - physical-therapy
   - dpt
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/allied/prof_ot_nbcot_drill.md
   - domain-medical-education/profession-specific/allied/prof_rt_clinical_competency.md
@@ -129,6 +129,16 @@ Single highest-yield improvement: [...]
 | `option_count` | Always 4 for NPTE |
 | `population_overlay` | Pediatric (developmental milestones), geriatric (osteoporosis precautions), pregnancy (hemodynamic considerations) |
 | `comorbidity_overlay` | Adds complicating factor that changes the right answer (e.g., uncontrolled HTN changes acceptable exercise intensity) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A teardown "would be correct for" scenario that is itself clinically wrong (resistance-only training as the entry exercise in severe HFrEF) | Check each alternative scenario against a named source type; if no real scenario makes the distractor right, rewrite it |
+| Target heart rates that mix methods (percent of test peak HR vs heart-rate reserve) without saying which | State the method and recompute, e.g. HRR = (peak − rest) × % + rest; mark intensity ranges `[VERIFY: current ACSM guidelines edition]` |
+| Accepting a `setting` value that is not in the input list (e.g., `outpatient-cardiac-rehab`) | Check `setting` against the input options and name the nearest valid value or the added one in the header |
+| Citing FSBPT system categories, task areas, or weightings from memory as the current blueprint | Tag blueprint wording `[VERIFY: current FSBPT NPTE content outline]` |
+| Declaring the item single-best because the key was written first | Answer the stem cold before the teardown; if a second option is defensible, revise the stem data or the distractor |
 
 ## Verification Checklist
 

@@ -19,7 +19,7 @@ tags:
   - occupational-therapy
   - otpf
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/allied/prof_pt_npte_drill.md
   - domain-medical-education/profession-specific/allied/prof_rt_clinical_competency.md
@@ -144,6 +144,16 @@ Single highest-yield improvement: [...]
 | `learner_level` | Adjusts difficulty |
 | `engineered_trap` | Names specific failure mode |
 | `setting_overlay` | Acute changes resource availability (no time for a full COPM); home health changes context; school-based changes goal-writing format (IEP-aligned) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Keying the longest, most compound option (several "AND" clauses) so the answer is findable without reading the stem | Compare option word counts and make the key one intervention of similar length to the distractors |
+| A distractor that is also defensible as occupation-based (an adaptive device that enables the stated occupation) | Solve the item blind from the stem alone before writing the teardown; if two options survive, change the stem or the distractor |
+| Asserting hip precautions, weight-bearing status, or timelines without the surgical approach or protocol | Put the approach and surgeon's protocol in the stem, or tag precaution claims `[VERIFY: surgeon protocol]` |
+| Labelling the item with one OTPF-4 domain while the keyed answer actually works through another (context / environment modification) | Check the header domain against what the key changes and relabel if they differ |
+| Stating NBCOT format facts (option counts, CST scoring, what the exam "consistently rewards") from memory | Mark them `[VERIFY: current NBCOT exam content outline / candidate handbook]` |
 
 ## Verification Checklist
 

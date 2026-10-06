@@ -27,7 +27,7 @@ tags:
   - onenote
   - second-brain
   - study-system
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_flashcard_deck_builder.md
   - domain-medical-education/learner-study-systems/study_lecture_slide_to_study_guide.md
@@ -180,6 +180,16 @@ Verdict: [survives / breaks → redesign]
 | `existing_volume` | High volume (≥ 1,000 notes) → include a migration plan + lossy-import warning |
 | `include_anki_bridge` | If true, append rule for routing `#stage/spaced-rep` to Anki via plugin / manual |
 | `force_minimal` | Forces the 3-folder fallback regardless of inputs (for users who self-identify as over-engineerers) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A tag total computed from the three axis lists while other sections introduce more tags (a variant spelling like `#use/board`, an ad-hoc diagnosis tag) | Recount the tags named anywhere in the output, variants included; the total must match the TAG TAXONOMY line and stay within the cap |
+| Linking examples that use notes (`Hyponatremia.md`, `SIADH.md`) with no place in the STRUCTURE tree | Give every note named in LINKING or SETUP a path within three layers, or change the example to notes that exist in the tree |
+| Graceful-degradation inbox counts and minutes chosen to sound reassuring | Derive them as notes per week × weeks skipped × minutes per note, and say plainly if the result breaks the CAPACITY VERDICT's review-time hard rule |
+| Calling a feature built in when it is a community plugin, paid tier, or platform-limited (Templater, Dataview, offline sync) | Mark plugins and paid features as such and tag version-dependent claims `[VERIFY: current tool documentation]` |
+| A first-60-minute checklist whose step minutes don't sum to 60 | Add the step minutes before output and trim or merge steps until they sum to 60 |
 
 ## Verification Checklist
 

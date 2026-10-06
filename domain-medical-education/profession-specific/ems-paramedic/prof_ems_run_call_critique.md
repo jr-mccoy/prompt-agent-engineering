@@ -23,7 +23,7 @@ tags:
   - critique
   - quality-improvement
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/ems-paramedic/prof_ems_field_scenario_drill.md
   - domain-medical-education/profession-specific/ems-paramedic/prof_ems_nremt_scenario_author.md
@@ -184,6 +184,16 @@ SYSTEMS — issues beyond this provider:
 | `severity_concerns` | Focuses model attention on flagged items |
 | `pediatric_overlay` | Adds weight-based dosing audit, age-appropriate vitals |
 | `obstetric_overlay` | Adds maternal-fetal pair documentation audit |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| "Quote evidence" cells filled with a paraphrase or a plausible PCR line that is not in `pcr_text` | Every quoted string must be findable verbatim in the pasted PCR or artifact; if you cannot find it, write NOT DOCUMENTED rather than reconstructing what the medic probably wrote |
+| Counting an undocumented step as "performed but not charted" because the other findings suggest it happened | That failure-mode row requires proof from a second source (radio transcript, monitor strip, OLMC log); with only the PCR, an uncharted action is "not documented" and is scored as not done |
+| Structured-field audit ticked ☑ while a component is missing or impossible — an absent in-service time, a GCS whose E/V/M parts contradict the narrative ("oriented" with V4) | Recompute each documented score from its components and against the narrative, and check the time sequence against the full list in Method step 2 — dispatch through in-service — before ticking |
+| Hindsight grading — a good `outcome_known` raises A3/A4, a bad one lowers them, for decisions the provider made without that information | Score each decision on what the PCR shows the provider knew at that time stamp; use the outcome only in the "what could have changed outcome" lens, labelled as such |
+| Protocol steps or thresholds cited from general knowledge when `protocol_set` does not contain them, then scored as "unjustified deviation" | Label the protocol cell `[general national standard — not in supplied protocol]` and do not score a deviation from a standard the agency has not adopted |
 
 ## Verification Checklist
 

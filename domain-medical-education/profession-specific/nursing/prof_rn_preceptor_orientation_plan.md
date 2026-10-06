@@ -21,7 +21,7 @@ tags:
   - orientation
   - residency
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md
   - domain-healthcare-clinical/prompts/nursing/preceptor_orientee_feedback_session.md
@@ -179,6 +179,16 @@ Orientee: [responsibilities — self-disclosure of difficulties, completion of a
 | `unit_specific_high_acuity_competencies` | Replaces generic competencies with unit-defining ones |
 | `gate_structure` | Weekly vs biweekly vs midpoint-only |
 | `failing_pathway_required` | Toggles step 1–4 escalation branch |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Gate criteria that demand more of an event than the week-by-week table ever schedules (two codes as primary RN when the table schedules one), so the gate looks criterion-referenced but no one can pass it | Sum each gated count across the table's weeks up to that gate and confirm the table offers at least that many opportunities; do the same for the "≥ 3 successful performances" independent sign-off rule on every competency |
+| Required counts for events the unit cannot schedule — codes, withdrawals of life support, CRRT starts, trauma activations — written as if they will occur | Mark census-dependent counts "if available" and give the substitute (simulation, case review, alternate assignment) and who decides it, so an orientee is not failed by unit census |
+| Shift totals that do not reconcile — "full caseload ×6 shifts" in a two-week block, or didactic hours that exceed the shift time available that week | Recompute shifts as `precepted_shifts_per_week` × weeks in the row and check every "×N shifts" and didactic-hour figure against it |
+| Escalation timings, HR notification, PIP and termination steps written as this employer's process | Mark each step `[VERIFY: hospital HR policy / collective bargaining agreement / residency program policy]`; the plan proposes the sequence, it does not assert the employer's due process |
+| Benner stages pinned to calendar weeks ("weeks 7+ = competent") and used to justify a gate | Use Benner as a description of the behaviors you expect, and set each gate from the observable criteria in that gate — not from the week number alone |
 
 ## Verification Checklist
 

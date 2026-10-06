@@ -22,7 +22,7 @@ tags:
   - team-leadership
   - closed-loop-communication
   - resuscitation
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-procedures/study_acls_algorithm_drill.md
   - domain-medical-education/learner-procedures/study_pals_algorithm_drill.md
@@ -163,6 +163,16 @@ Restudy target: [e.g., "Practice closed-loop confirmation for every drug order �
 | `conflict_injection` | A team member disagrees with a drug decision mid-code — tests assertive directive communication under challenge |
 | `family_present` | Learner must manage a family member entering the room during resuscitation — assign a team member immediately |
 | `termination_only` | Skip the active code; drill only the termination decision and family notification — trains the hardest moment |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Passing a 2-minute rhythm check as correct when the arrest began in monitored VF and the first shock was delayed for a full CPR cycle | For a shockable rhythm on arrival, check whether the leader called a shock as soon as the defibrillator was ready; grade against `[VERIFY: current AHA ACLS adult cardiac arrest algorithm]` |
+| Grading drug timing on whether epinephrine or amiodarone was named, not on where in the sequence it was ordered | Build a timeline of shocks and 2-minute cycles from the transcript and place each drug order on it; grade timing against the current algorithm's position for that rhythm |
+| Accepting "Charge to 200J biphasic" as the only correct energy | Accept the device's manufacturer-recommended energy; flag a specific joule number as `[VERIFY: device]` rather than marking another value as an energy error |
+| Awarding PASS on a 2-minute block in which no compressor swap or leader position is stated | Mark leader position and compressor swap `not observable` unless the transcript states them; a PASS needs the words |
+| Overall closed-loop grade written from impression after the first order | Recompute `N/N orders with full loop` by counting the per-order blocks; the total must equal the number of orders in the transcript |
 
 ## Verification Checklist
 

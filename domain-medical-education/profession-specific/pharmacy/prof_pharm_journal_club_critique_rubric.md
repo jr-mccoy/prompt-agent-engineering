@@ -23,7 +23,7 @@ tags:
   - rubric
   - educator-tool
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/pharmacy/prof_pharm_pgy1_residency_eval.md
   - domain-healthcare-clinical/prompts/education/medicine_literature_synthesizer.md
@@ -166,6 +166,16 @@ Gap: __ → discussion focus: [over-confidence on which axis | under-confidence 
 | `repeat_required_below` | Customizable (defaults to 60%) |
 | `weight_overlay` | PGY2 specialty residencies often weight statistical literacy higher |
 | `ebm_tool_overlay` | If program requires use of named appraisal tool (Cochrane RoB 2, GRADE, AMSTAR), add a sub-rubric block |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| An axis scored 4 (or 3) because the presentation was strong overall, when the evidence line does not show the behavior the 4-anchor names | For each axis, quote the evidence next to the anchor text it is scored at; if any clause of that anchor (e.g., "positions critique relative to expert commentary") has no matching evidence, score the level below |
+| Learner's NNT/NNH accepted as "calculated correctly" because a number and a time frame were stated | Recompute it from the trial's event rates: NNT = 1 / ARR, rounded up, over the trial's follow-up period — and confirm the ARR came from the primary outcome, not a component or subgroup |
+| Preceptor feedback that itself states a statistical direction or ranking as settled (per-protocol always biases one way; one statistic "most often changes interpretation") | Tie each claim about bias direction to the trial's actual drop-out pattern and design, and present contested tools such as the fragility index as one check among several, not as the decisive one |
+| A failure-mode audit row adjusted by an undefined mechanism ("deduction lifted"), or the same lapse both counted in the audit and deducted on an axis without saying so | Keep the audit as counts only; state once whether audit counts affect axis scores, and apply that rule to every row the same way |
+| Self-assessment gap reported as a total difference with the axis attribution guessed | Record learner and preceptor scores per axis and compute the gap per axis; name the axis with the largest gap only from those numbers |
 
 ## Verification Checklist
 

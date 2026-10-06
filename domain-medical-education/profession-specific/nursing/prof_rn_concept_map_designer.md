@@ -23,7 +23,7 @@ tags:
   - nursing-process
   - learner-tool
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_judgment_ngn_drill.md
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md
@@ -175,6 +175,16 @@ Total: [X/8]
 | `cross_links_required` | Forces relational thinking, not flat lists |
 | `population_overlay` | Pediatric (caregiver education prominent); OB (maternal + fetal); psych (safety + therapeutic communication prominent) |
 | `complexity_overlay` | Add comorbidities to force cross-system reasoning |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| PES "aeb" clauses and the center node's medication list filled with vitals, exam findings, doses, or allergies that are not in `patient_summary`, so every node looks fully evidenced | Trace each aeb cue, med, and allergy back to `patient_summary`; anything not there is labelled `[assumed for illustration]` or replaced with "[obtain: …]" — in critique mode, flag the same in the learner's map rather than rewarding it |
+| NANDA labels written from memory and ticked "NANDA-valid" | Check each label and its risk/actual form against the NANDA-I edition the program uses `[VERIFY: current NANDA-I edition]` — labels have been renamed between editions; a risk diagnosis takes risk factors, not aeb |
+| Cross-link arrows whose direction contradicts the priority rationale (B "influences" A while the rationale says B is a consequence of A) | Read each arrow and its mechanism against the priority rationale paragraph; the upstream node in the arrow must be the one the rationale treats as the driver |
+| An intervention filed as "dependent" or "independent" by default when the category turns on a standing order or a unit protocol (oxygen titration, fluid restriction) | State the condition for the category ("independent if covered by unit O2 protocol; otherwise dependent"), and in critique mode do not mark the learner wrong for the other defensible filing |
+| Critique-grid score of 2 on SMART outcomes because the sentence contains a number and a timeframe | Score 2 only if the named indicator can actually be measured in that timeframe on this `setting`'s documentation cadence; recompute the grid total from the four axis scores |
 
 ## Verification Checklist
 

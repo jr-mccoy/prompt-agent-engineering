@@ -23,7 +23,7 @@ tags:
   - abg
   - learner-tool
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/allied/prof_pt_npte_drill.md
   - domain-medical-education/profession-specific/allied/prof_ot_nbcot_drill.md
@@ -183,6 +183,16 @@ Single highest-yield improvement:
 | `complication_engineered` | Mid-scenario twist (auto-PEEP, tension PTX, dyssynchrony, accidental extubation) |
 | `decision_count` | 3–6 for CSE — adjusts complexity |
 | `protocol_overlay` | ARDSnet for ARDS; APRV for refractory; permissive hypercapnia for severe asthma |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Keying a complication answer that the injected data contradict (unilateral diminished breath sounds + hypotension + rising peak pressure is the tension-PTX signature) | Re-read the state change and confirm it points to only the keyed cause; teaching a delay for imaging in an unstable suspected tension PTX needs `[VERIFY: current ATLS / ACLS guidance]` |
+| ABG and vent numbers that look plausible but don't fit together | Check pH ≈ 6.1 + log(HCO3 ÷ (0.03 × PaCO2)), Vt ÷ height-derived PBW, and that the PaCO2 direction matches the minute-ventilation change |
+| Ticking critical actions from scenario background ("ETT verified: Y at intubation") rather than from learner selections | Performed ✓ requires a learner selection or statement; otherwise ☐ with "not tested" |
+| An IG list full of interventions (raise RR, raise FiO2) scored as information requests | Keep IG to data requests and move therapeutic changes to DM so helpful/harmful scoring measures the right skill |
+| Scorecard remarks that contradict the learner's own picks ("missed breath-sound assessment" after IG 7 was chosen) | Cross-check every scorecard comment against the selection list before output |
 
 ## Verification Checklist
 

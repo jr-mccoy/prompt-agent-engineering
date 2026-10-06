@@ -27,7 +27,7 @@ tags:
   - schedule
   - sm-2
   - fsrs
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_flashcard_deck_builder.md
   - domain-medical-education/learner-study-systems/study_dedicated_period_schedule_builder.md
@@ -158,6 +158,16 @@ Verdict: [acceptable / not acceptable — recommend horizon extension or new-car
 | `exam_or_milestone_date` | Forces frontloading + taper; output includes a 21-day pre-exam taper plan |
 | `learner_history` | If lapsing already, plan starts with a 5-day freeze and re-baseline |
 | `include_subdeck_priority` | Sorts which tags get suspended first |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Quoting an exponential half-life curve as "the FSRS formula" | In FSRS, stability is the interval at which recall probability falls to 90%, and recent versions use a power-law forgetting curve; name the FSRS version and mark the formula `[VERIFY: current FSRS / Anki manual]` |
+| Forecast `Minutes` that cannot be reproduced from the stated seconds per review, or that leave out new-card time and the existing deck's own reviews | Recompute at least two rows as (reviews × sec/review + new × sec/new) ÷ 60, using the average mix stated in ASSUMPTIONS |
+| Declaring the overload fix (`reduce new_cards_target`) successful without re-running the minutes | Recompute the adjusted daily minutes including new-card time; if they still exceed `daily_time_budget_min`, say so and add a second lever |
+| Writing trigger thresholds in mismatched units (backlog in reviews vs budget in minutes) | Convert with the stated time per review so each trigger compares like with like, and show the conversion |
+| A stress-test recovery period that is asserted rather than computed | Recovery days = backlog ÷ (recovery reviews per day − reviews still falling due); confirm the recovery-day minutes fit the budget |
 
 ## Verification Checklist
 

@@ -21,7 +21,7 @@ tags:
   - clinical-judgment
   - cjmm
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_nclex_rn_select_all_that_apply.md
   - domain-medical-education/learner-boards/boards_nclex_prioritization_drill.md
@@ -137,6 +137,16 @@ Single highest-yield improvement: [...]
 | `setting` | Clinical context (changes priority frameworks — ED uses ABCs primary, psych uses safety-environment, OB uses maternal-fetal pair) |
 | `engineered_distraction` | Adds a confounder cue or competing hypothesis |
 | `population_overlay` | Pediatric / geriatric / pregnancy-specific physiology adjustments |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Matrix row or bowtie wing whose key reads "A or B" or "all plausible", then the learner's pick of one of those is scored 0 | Before delivering, solve every row blind from the case tab alone; any row with two defensible columns gets its finding rewritten (or dropped) so exactly one column is keyed — and the teardown scores the learner against that single key |
+| A finding that fits none of the column hypotheses forced into a column ("irrelevant" keyed as Pain) to keep the grid full | Every row must be a cue that discriminates between the column hypotheses; replace a non-discriminating finding with one that does, or add an explicit "not consistent with any" column if the format allows |
+| Item stem cites data the case tab never showed (a prior BP, a trend value, a prior lab), so the cue looks present but the learner could not have found it | List every number and finding the item and key rely on, and confirm each appears in the rendered tab with time and units |
+| Scoring rule, pass thresholds, or "silent in X% of cases" figures presented as NCSBN fact | Name the scoring model (0/1, +/−, dyad, triad) as the format's published NGN rule `[VERIFY: current NCSBN NGN scoring documentation]`; do not state per-item pass percentages NCSBN does not publish, and source or remove prevalence statistics in the coaching |
+| `item_format` label that does not match the mechanics delivered (one pick per row labelled "multiple-response") | Check the format name against its response rule — one selection per row is matrix multiple-choice; multiple per row is matrix multiple-response — and score with that format's rule |
 
 ## Verification Checklist
 

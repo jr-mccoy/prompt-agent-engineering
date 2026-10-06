@@ -22,7 +22,7 @@ tags:
   - pcr
   - learner-tool
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_nremt_scenario_drill.md
   - domain-medical-education/profession-specific/ems-paramedic/prof_ems_run_call_critique.md
@@ -164,6 +164,16 @@ TOTAL: __/20
 | `online_medical_control_available` | Toggles OLMC contact mechanic |
 | `case_clock_minutes` | Adjusts realism of timing |
 | `complications` | Engineered mid-run twists |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Patient state that improves on cue — SpO2 climbs while RR is still agonal and no ventilation is given, or HR/BP stay flat through a deterioration | Before returning each patient state, check that RR, SpO2, HR, BP, and LOC move in the direction the last intervention or untreated mechanism would drive them; if the learner did nothing, the numbers must not get better |
+| Run clock that says T=22:00 for a sequence whose own per-step times (primary survey, IV, packaging, an OLMC-ordered observation period) cannot fit | Add up the elapsed time of the actions actually taken and compare to the latest time stamp and to any observation window you modeled; stretch the clock or shorten the claim |
+| Critical-actions row ticked ☑ because the learner *named* the action, without a time stamp or a returned finding | Tick a row only when the transcript shows a time and a result for it (a glucose value, a vitals set); otherwise mark ☐ or "stated, not shown" |
+| Doses in `protocol_constraints` or the debrief (naloxone, epi, dextrose) and the scope of a `cert_level` treated as universal | Use the doses exactly as the learner's `protocol_constraints` state them; anything added from memory gets `[VERIFY: local protocol / current NREMT and AHA edition]`, and scope is "per NREMT pattern — confirm with state/regional protocol" |
+| Scorecard axis scored on the learner's PCR or handoff when the learner never submitted one, or evidence cited for an action that is not in the transcript | Score A5 only against text the learner produced; for each axis, quote the learner line or time stamp — if none exists, the axis cannot be above what the transcript proves |
 
 ## Verification Checklist
 

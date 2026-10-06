@@ -23,7 +23,7 @@ tags:
   - eor
   - arc-pa
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/pa/prof_pa_pance_blueprint_drill.md
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md
@@ -177,6 +177,16 @@ Program-designated clinical coordinator (if remediation triggered): __________ D
 | `procedural_logbook_required` | Toggles logbook section |
 | `setting` | OR-heavy rotations weight procedural skills; ED rotations weight rapid decision-making; primary care weights longitudinal management |
 | `population_overlay` | Peds adds growth/development; OB adds maternal-fetal; geri adds polypharmacy and functional assessment |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| EOR exposure table populated with plausible ED or clinic complaints, or a log count, and labelled "PAEA blueprint" | List only topics you can map to the current PAEA EOR blueprint for this rotation `[VERIFY: current PAEA EOR blueprint and topic list]`; anything program-added is labelled "program addition", not blueprint |
+| EOR pass line written as a raw percent ("< 70") for an exam that reports scaled scores, or a probation rule stated as if it were ARC-PA's | Express the EOR threshold in the units the exam reports, and attribute every threshold and probation rule to "program policy `[VERIFY]`" unless you can cite the specific ARC-PA standard |
+| Entrustment anchors for knowledge-type domains that describe how much the student knows rather than how much supervision the preceptor needs | Read each anchor and ask: does it say who is in the room and who acts? For Medical Knowledge, anchor the supervision level to a task (presenting a differential the preceptor then acts on vs. acts on without re-checking) |
+| End-of-rotation rating inferred from one shift or one encounter and ticked as IS or AP | Require the evidence line to cite at least two dated encounters for any rating above DS, and allow "insufficient observation" rather than forcing a level |
+| Remediation trigger thresholds that differ between sections — "logbook incomplete" in one block, "< 80% of minimums" in another — so the same logbook passes in one place and triggers in another | Collect every numeric threshold (EOR cut, logbook minimums, case minimums) into one list and confirm each appears with the same value everywhere it is used |
 
 ## Verification Checklist
 

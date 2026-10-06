@@ -19,7 +19,7 @@ tags:
   - panre
   - nccpa-blueprint
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_pance_pearl_drill.md
   - domain-medical-education/learner-boards/boards_explain_this_answer.md
@@ -129,6 +129,16 @@ Single highest-yield improvement: [...]
 | `option_count` | 4 vs 5 options |
 | `population_overlay` | Pediatric, geriatric, pregnancy-specific |
 | `setting_overlay` | Outpatient vs inpatient vs ED — changes resource availability and what "next step" means |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Keyed option that bundles several actions ("give X, give Y, and transfer"), so it wins on completeness and length — and one bundled step may be wrong for this stem's findings | Key a single action where the task area is "next step"; if a bundle is unavoidable, check every element against the stem's data (territory, BP, contraindications) and give the distractors matching length and structure |
+| `engineered_trap` from the input mapped to a different option in the teardown, or the trap label describing the opposite reflex from the one the option tests | Before writing the teardown, name which option embodies the requested trap; the "Engineered trap" line must point to that letter and describe the same failure mode the input named |
+| Time-window or dose arithmetic in the stem and justification that adds intervals which run in parallel, or leaves out time already elapsed | Lay out the timeline from first medical contact: elapsed time, door-in-door-out, transport, team readiness. Recompute the total, and state the guideline window `[VERIFY: current ACC/AHA guideline]` before declaring the keyed option inside it |
+| A blueprint cell named in the header while the item actually tests a different task (a "clinical intervention" item that is only answerable by recognizing the diagnosis) | Cover the options and ask what cognitive step the lead-in demands; if a learner who already has the diagnosis still has to choose, the cell is right — if naming the diagnosis answers the item, re-tag the task area |
+| Content categories, task areas, or blueprint percentages quoted from memory | Use the category and task names from the current NCCPA PANCE blueprint `[VERIFY: current NCCPA content blueprint]`; do not state blueprint weights unless taken from that document |
 
 ## Verification Checklist
 

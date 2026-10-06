@@ -25,7 +25,7 @@ tags:
   - caregiver
   - communication
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
   - domain-medical-education/learner-osce-skills/osce_focused_physical_exam_checklist.md
@@ -148,6 +148,16 @@ Single highest-yield improvement: [...]
 | `non_verbal_child` | Child non-verbal (developmental, autism, sedation, illness) — tests caregiver-and-observe technique |
 | `custody_complication` | Other parent disagrees; consent + confidentiality test |
 | `interpreter_required` | Add language gap — adds another role |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Scoring a HEEADSSS box ✗ while the bracketed transcript summary records the adolescent's answer for that domain (or ✓ for a domain never asked) | Reconcile every HEEADSSS box with the transcript: a recorded disclosure means the domain was asked; count domains asked and check the count matches the ✓ tally |
+| Crediting the confidentiality statement as complete when its list of exceptions is the model's guess for every jurisdiction | Score that the learner stated limits before screening; mark the specific exceptions (reproductive health, substance use, reportable abuse) `[VERIFY: local minor-consent and reporting law]` |
+| Ticking a named safety item (firearm storage, car seat orientation, pool) because the learner asked "is the home safe?" | Tick only the hazard the learner named; a global safety question earns ✓ on none of the sub-items |
+| Recording `0` for every failure mode because nothing stood out | Scan each learner turn addressed to the caregiver while the child was present and verbal; a `0` means you checked those turns, so list the turn numbers you scanned when the count is challenged |
+| Merging two age bands' scaffold items for a child at a band edge (24 months, 5–6, 11–12 years) so more boxes can be ticked | Pick one band from `child_age`, state it in the header, and grade only that band's items |
 
 ## Verification Checklist
 

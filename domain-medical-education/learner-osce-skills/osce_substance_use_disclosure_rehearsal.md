@@ -26,7 +26,7 @@ tags:
   - stigma
   - communication
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_motivational_interviewing_rehearsal.md
   - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
@@ -141,6 +141,16 @@ Single highest-yield improvement: [...]
 | `adolescent_overlay` | Use CRAFFT; confidentiality limits |
 | `pregnancy_overlay` | Heightened stakes + different referral pathway (MAT in pregnancy) |
 | `prior_treatment_history` | Affects readiness + intervention shape |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Scoring "Validated tool used" ✓ and calling the screen positive when the learner asked only two of the three AUDIT-C questions (the heavy-episode item skipped) | List which tool items were actually asked; an incomplete tool is `~`, and no tool score or screen result is computed from it |
+| Quoting low-risk drinking limits or standard-drink sizes from memory as the feedback benchmark | Name the benchmark's source (NIAAA, national guideline) and tag numbers `[VERIFY: current guideline]`; drink and unit definitions differ by country, so state which one the case uses |
+| SP disclosing the full locked pattern even after the learner used a stigmatizing term, because the model defaults to cooperative answers | Check the SP's first quantity answer against `disclosure_threshold`: after stigmatizing wording it should be lower than the locked pattern, and the Gap line should show that difference |
+| Reporting the Disclosure accuracy Gap as `accurate` by eyeballing two ranges | Recompute weekly totals on both sides (days/week × drinks/day, low and high end) and report the numeric difference in drinks/week |
+| Ticking FRAMES Advice or Self-efficacy because the feedback and menu were good | Advice needs an explicit recommendation sentence; self-efficacy needs a sentence affirming the patient's capability — quote each or score `~` |
 
 ## Verification Checklist
 

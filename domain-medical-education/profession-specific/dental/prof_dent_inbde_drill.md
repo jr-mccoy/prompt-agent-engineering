@@ -21,7 +21,7 @@ tags:
   - dds
   - dmd
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_explain_this_answer.md
   - domain-medical-education/profession-specific/allied/prof_pt_npte_drill.md
@@ -151,6 +151,16 @@ Single highest-yield improvement: [...]
 | `option_count` | Always 4 for INBDE |
 | `pediatric_overlay` | Weight-based dosing + behavioral management considerations |
 | `medical_complexity_overlay` | Adds medical comorbidity that changes the right answer (anticoag, immunosuppression, bisphosphonates → MRONJ risk) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Patient box "complete" because every field has text, but the deciding datum (INR value, allergy, bisphosphonate route/duration) is absent or contradicts another field | Before writing options, list the one or two box fields the keyed answer depends on and confirm each is present, numeric where it must be, and consistent with the history and exam lines |
+| Keyed option is the only one that hedges or lists every safeguard, so it wins on length and completeness, not on the integration | Compare option word counts and parallel structure; trim the key or pad distractors until a test-wise learner who skipped the patient box could not pick it |
+| "Adjacent patient profile" written for each distractor, yet the distractor is also defensible for *this* patient | Solve the item blind from the patient box alone; if a second option survives, change the box datum that separates them or rewrite the option |
+| Risk scores, half-lives, INR thresholds, and dose figures stated from memory with a confident integration line | Recompute any score from the box's own components and name the score correctly; mark threshold, pharmacokinetic, and dose figures `[VERIFY: current ADA/ACC or dental pharmacology reference]` |
+| Integration rule restates the keyed answer for this patient ("continue warfarin") and gets ticked as a principle | Test the rule against one distractor's adjacent profile — a real principle should predict that the distractor is correct there |
 
 ## Verification Checklist
 

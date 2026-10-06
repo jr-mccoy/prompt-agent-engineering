@@ -25,7 +25,7 @@ tags:
   - tele-exam
   - communication
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
   - domain-medical-education/learner-osce-skills/osce_focused_physical_exam_checklist.md
@@ -136,6 +136,16 @@ Single highest-yield improvement: [...]
 | `interpreter_required` | Adds a third party on the call |
 | `patient_low_tech_literacy` | SP cannot find share-screen or rotate camera without guidance |
 | `private_setting_compromised` | Partner present — tests sensitive-topic adaptation |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Ticking "Audio + video confirmed" when the learner only fixed the lighting | Require an explicit audio check exchange ("can you hear me clearly?") in the transcript; video-only troubleshooting is `✗` on this line |
+| Scoring telehealth consent ✓ from a leading yes/no ("you're consenting to this?") with nothing disclosed | Credit consent when the learner names at least one limit of the modality (exam limits, privacy, option of in-person care); mark the required content `[VERIFY: state and payer consent rules]` |
+| Grading the close on a specific POS code or modifier (02 vs 10, 95 vs 93) the model recalls but cannot confirm | Score only that the learner intended to document the modality; tag any code `[VERIFY: current CMS / payer telehealth rules]` — these change year to year |
+| Writing patient-performed findings ("blanching confirmed") in the scorecard as if they were clinician-observed exam results | Label self-exam results as patient-reported via video and credit the instruction quality, not a diagnostic conclusion |
+| Coaching that cites a timing or count ("18-second silence") that appears nowhere in the transcript | Trace every number in Coaching to a bracketed tech event in the transcript before output; delete it if it cannot be traced |
 
 ## Verification Checklist
 

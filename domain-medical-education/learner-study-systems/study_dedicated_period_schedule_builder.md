@@ -27,7 +27,7 @@ tags:
   - nclex
   - boards
   - exam-prep
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_spaced_repetition_schedule_designer.md
   - domain-medical-education/learner-study-systems/study_retrieval_practice_drill_designer.md
@@ -187,6 +187,16 @@ Test day: minimal
 | `commitments` | Reduces available days; output names the days lost |
 | `include_call_compression` | If learner has a call week, output integrates a lighter call-week template |
 | `force_minimum_sleep` | Default 7 h; cannot be overridden below 6.5 h |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Accepting a three-digit `target_score` for an exam that now reports pass/fail (USMLE Step 1, COMLEX Level 1) | Name the reporting change and rebuild the goal around practice-form pass likelihood; mark how practice forms report scores now as `[VERIFY: current NBME / NBOME score reporting]` |
+| Converting budget hours into question counts with a per-question time that doesn't reproduce the hours | Recompute: questions × minutes per question ÷ 60 must equal the Qbank allocation, and review time per miss must fit inside the review-of-misses hours |
+| Labelling the daily template "10 h study" when the study blocks add up to less | Add the block minutes (breaks and meals excluded) and compare the sum with `daily_hours_available`; resize blocks or relabel |
+| Week-by-week mocks that differ from the Mock cadence table, or two Phase 2 mocks less than 7 days apart | Check that every mock in Week-by-week appears in the table with a date, and that adjacent Phase 2 dates are 7–10 days apart |
+| Naming practice-form products or form numbers from memory | Use the form type (NBME self-assessment, official free practice set, qbank self-assessment) unless the learner supplied the name; tag specific form names `[VERIFY: current offerings]` |
 
 ## Verification Checklist
 

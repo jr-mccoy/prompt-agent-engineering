@@ -22,7 +22,7 @@ tags:
   - ems
   - skill-station
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/ems-paramedic/prof_ems_field_scenario_drill.md
   - domain-medical-education/learner-boards/boards_nremt_scenario_drill.md
@@ -219,6 +219,16 @@ The hidden mechanism was [...]. Critical criterion #[X] is the highest-leverage 
 | `examiner_script_detail_level` | Adjusts how much examiner discretion is needed |
 | `population_overlay` | Pediatric scenarios add weight-based dosing fail traps |
 | `mass_casualty_overlay` | Adds START triage critical criteria |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A finding labeled "distractor" that is actually the decisive clue (a true contraindication or the key history item), so the packet both hides and fails on it | Keep two labels: *distractor* (sounds significant, changes nothing — its resolution says why) and *critical clue* (changes management — tie it to a numbered critical criterion). Each planted item gets exactly one |
+| Critical criterion whose wording does not match the fail trap it is supposed to catch, or that the rationale block later calls optional | For every automatic-fail path in the distractors and branch triggers, quote the critical criterion number it fires; then read the rationale block and confirm nothing there downgrades a criterion the audit table enforces |
+| Vital-sign columns that look like a trajectory but whose clock cannot happen — arrival at the facility before transport time allows, or a response faster than the drug's onset | Lay the scenario clock end to end (on-scene steps + stated transport minutes) and check each time point in the table, including the last, against it and against `time_limit_minutes` |
+| A criterion only a single examiner could score ("adequately assesses"), passing as NREMT-format because it is phrased pass/fail | Rewrite each criterion as an observable action plus a time or a stated value, so two examiners watching the same run would mark it the same |
+| Drug thresholds, oxygen targets, and contraindication windows stated as fixed exam facts | Mark each with `[VERIFY: current AHA ACS guidance / NREMT skill sheet / local protocol]`, and say in the rationale block where a protocol-variable item makes a criterion step-scored rather than fail |
 
 ## Verification Checklist
 
