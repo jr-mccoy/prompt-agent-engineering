@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept a funnel where a later stage count exceeds an earlier one; the funnel still draws, the numbers are impossible unless the stages are not nested, and then it is not a funnel.
+- Let a printed stage-to-stage conversion % disagree with the two counts it sits between.
+- Let bar widths taper evenly for looks, which hides the stage where the real drop-off happens.
+- Let the model add stage names (an "MQL → SQL" step) or counts for stages the intake did not report.
+
+✅ **DO:**
+- Check counts never increase stage to stage, recompute each conversion as stage n+1 ÷ stage n, and recompute overall conversion as last ÷ first.
+- Confirm the stage flagged as the leak has the lowest conversion or the largest absolute loss, and say on the slide which test was used.
+- Measure two bar widths and check their ratio matches the ratio of their counts.
+- Count stages against the intake; a stage without a count renders as "[count pending]" at a fixed neutral width.

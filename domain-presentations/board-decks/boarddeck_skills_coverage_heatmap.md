@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept shading that disagrees with the printed proficiency level, or levels with no definition (what does a 3 mean?).
+- Let the model shade cells for people or skills that were never assessed, or invent named individuals.
+- Trust a bus-factor or "coverage gap" callout read off the colours instead of counted from the levels.
+- Present the heatmap as team capability when the intake is a self-assessment; the label must say which.
+
+✅ **DO:**
+- For each skill column, count the people at or above the intake's proficiency threshold and compare the count with the coverage or bus-factor callout.
+- Use discrete levels with a printed legend, and check that equal levels in different rows share a shade.
+- Render unassessed cells as "—", with a legend entry "not assessed", not as the lowest shade.
+- Count people and skills against the intake.

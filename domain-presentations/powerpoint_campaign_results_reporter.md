@@ -1,3 +1,23 @@
+---
+title: "8. Campaign Results Reporter"
+category: presentations
+description: "Transform marketing analytics from multiple channels into an executive-ready performance presentation with clear ROI analysis, optimization recommendations, and data-driven budget allocation guidance."
+techniques:
+  - ST-03
+  - DS-02
+  - DS-19
+  - RP-02
+  - QA-04
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - campaign-results
+  - marketing-roi
+  - budget-allocation
+updated: "2026-10-06"
+---
+
 # 8. Campaign Results Reporter
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -80,6 +100,15 @@ OPTIMIZATION RECOMMENDATIONS:
 VALIDATION:
 Show thumbnails, verify ROI calculation accuracy, confirm actionability of recommendations
 ```
+
+## False-Positive Prevention
+
+1. **Channel credit that is an attribution artifact.** "Paid social drove $1.2M" is a last-touch result if the analytics export is last-touch. Name the attribution model on every slide that credits revenue to a channel, and never rank channels credited under different models side by side.
+2. **Channel rows that don't sum to the dashboard.** Spend, conversions, and revenue on Channel Performance must add up to the Performance Dashboard totals; multi-touch conversions counted once per channel are the usual leak.
+3. **Confidence intervals added to satisfy the constraint.** An interval with no sample size or variance behind it is decoration. If the data cannot support one, say so and show the observed range across the previous periods supplied, labelled as such.
+4. **CAC and payback on mismatched windows.** Dividing this month's spend by customers who came from last quarter's campaigns flatters efficiency. Pair spend and acquired-customer cohorts by period and state the window.
+5. **A reallocation recommendation built on one period.** Cutting a channel because of a single weak month is not data-driven; without the previous-period comparison the recommendation is tagged [Illustrative].
+6. **Verify:** recompute ROI, CAC, and conversion rate for at least two channels from the raw Spend / Conversions / Revenue columns, and check each Budget Performance variance equals actual spend minus channel budget in the budget spreadsheet.
 
 ## Usage Notes
 

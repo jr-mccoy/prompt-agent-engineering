@@ -1,3 +1,23 @@
+---
+title: "9. Financial Storyteller"
+category: presentations
+description: "Transform Excel financial data into a narrative-driven performance analysis presentation that explains what happened, why it happened, and what actions are needed for executive decision-making."
+techniques:
+  - ST-03
+  - RT-05
+  - RT-09
+  - RP-02
+  - QA-04
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - financial-storytelling
+  - variance-analysis
+  - budget-vs-actual
+updated: "2026-10-06"
+---
+
 # 9. Financial Storyteller
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -69,6 +89,15 @@ FINANCIAL ANALYSIS DEPTH:
 VALIDATION:
 Show thumbnails, verify financial accuracy, confirm narrative coherence and actionability
 ```
+
+## False-Positive Prevention
+
+1. **Root causes written to fit the variance.** "Revenue beat on strong enterprise demand" is a story until the strategic context memo or the segment data shows it. With no driver in the inputs, write "driver not identified in the data".
+2. **A bridge that does not close.** On any revenue or cash bridge, the opening value plus each component must equal the closing value; an "other" bar larger than any named driver means the explanation is incomplete, and the slide says so.
+3. **A Cash Flow & Runway headline the plotted series contradicts.** "Burn is improving" needs a trend in the chart, not one good month inside a rising line.
+4. **Runway on a flattering basis.** State whether runway uses the latest month's burn, a trailing average, or the forecast, and use the same basis as the previous period's results.
+5. **Top variances ranked by percentage.** A 40% swing on a small line can push a 6% payroll miss off Key Variance Explanations; rank the top three by absolute amount.
+6. **Verify:** recompute gross margin, burn rate, and runway from the Excel rows, and match each variance on Key Variance Explanations line by line to the Budget vs Actual comparison.
 
 ## Usage Notes
 

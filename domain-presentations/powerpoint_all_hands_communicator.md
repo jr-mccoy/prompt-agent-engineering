@@ -1,3 +1,23 @@
+---
+title: "11. All-Hands Communicator"
+category: presentations
+description: "Create a company-wide all-hands presentation that builds employee engagement through transparent performance communication, strategic direction, and organizational updates with consistent leadership messaging."
+techniques:
+  - ST-03
+  - OC-08
+  - RP-02
+  - NE-14
+  - CM-02
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - all-hands
+  - internal-communications
+  - employee-engagement
+updated: "2026-10-06"
+---
+
 # 11. All-Hands Communicator
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -75,6 +95,15 @@ ENGAGEMENT STRATEGIES:
 VALIDATION:
 Show thumbnails, verify message consistency, confirm employee engagement and transparency balance
 ```
+
+## False-Positive Prevention
+
+1. **Recognition slots filled to look balanced.** Team Highlights and Culture & Development invite one name per department. Name only people and teams that appear in the organizational-changes or recognition input; a department with nothing supplied gets no entry, not a plausible one.
+2. **Softened metrics that no longer trace.** Making a figure "employee-appropriate" means rounding or omitting it, never re-estimating it. Each number on Company Performance states its period and comes straight from the performance data.
+3. **A challenges bullet that is a win in disguise.** "Learning from a fast-growth quarter" passes the tone check and fails transparency. Each challenge names what came in worse than planned, and by how much where the input says.
+4. **Known departures left out to keep the mood up.** If the organizational-changes input lists departures or restructuring that staff already know about, flag the omission to the presenter instead of silently dropping it.
+5. **Q&A Framework answers that commit leadership.** A drafted answer must not promise headcount, compensation, or timing that the strategic updates document does not contain; mark such answers "[leadership to confirm]".
+6. **Verify before showing thumbnails:** match every name on the recognition and new-hire slides against the input lists, and every Looking Forward priority against the strategic updates document. Remove or flag anything unmatched.
 
 ## Usage Notes
 

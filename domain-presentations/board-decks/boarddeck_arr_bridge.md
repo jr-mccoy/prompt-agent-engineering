@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Pass checklist line 2 because the slide has a waterfall shape: a bridge whose opening ARR + new + expansion − contraction − churn does not land on the closing bar is wrong however clean it looks.
+- Let the model size the step bars by eye; a churn bar drawn taller than the expansion bar when the labels say the reverse misleads faster than the label corrects.
+- Read "realistic business placeholders" as licence for the model to supply the opening ARR, the new-logo figure or a net-retention callout; an unsourced dollar figure on an ARR bridge gets minuted as fact.
+- Accept extra steps the intake never listed (reactivation, FX, price uplift) added so the bridge looks complete.
+
+✅ **DO:**
+- Before generating, write the bridge into the prompt as signed values from the intake and confirm opening + Σ(steps) = closing to the unit printed; if it does not reconcile, fix the data, not the picture.
+- After generating, transcribe every figure off the rendered image and diff it against the intake: image models mis-draw digits ($4.2M becomes $4.7M) even when given the value.
+- Re-add the transcribed bars yourself and check bar heights rank in the same order as their values; confirm opening and closing bars carry the period dates the title claims.
+- Render any step the user did not size as an outline-only bar labelled "[Expansion — data pending]" with no number.

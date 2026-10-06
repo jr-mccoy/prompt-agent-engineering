@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Count the slide done because it has KPI tiles, a risk list and an Ask box when the Zone 1 takeaway is backed by no figure on the slide.
+- Let the model fill KPI tiles with plausible board metrics (ARR, NRR, burn, runway) the user never listed, or invent the vs-plan deltas beside them.
+- Accept delta arrows and colours that ignore the metric's direction of good; rising burn shown green is the classic.
+- Accept a generic Ask ("support the plan") when the user stated a specific decision, amount or date.
+
+✅ **DO:**
+- Recompute every vs-plan and vs-prior delta from the two intake values and check its sign, arrow direction and colour against whether that metric should rise or fall.
+- Count KPI tiles against the KPIs supplied; drop any extra tile, or label a planned-but-unreported one "[KPI — pending]".
+- Trace the Zone 1 takeaway to a specific number on the slide; if none supports it, rewrite the takeaway.
+- Check the Ask box carries the user's decision verbatim, with its amount and deadline.

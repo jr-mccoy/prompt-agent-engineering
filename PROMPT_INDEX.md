@@ -8,9 +8,9 @@
 
 **Total Indexed Artifacts:** 6165
 
-**Artifacts with Frontmatter:** 5269
+**Artifacts with Frontmatter:** 5283
 
-**Artifacts without Frontmatter:** 896
+**Artifacts without Frontmatter:** 882
 
 ---
 
@@ -4686,20 +4686,20 @@
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
-| [1. Corporate Style Extractor](domain-presentations/powerpoint_corporate_style_extractor.md) | presentations | — | corporate, extractor, notes, powerpoint, prompt | ``` jsx `textSYSTEM PROMPT: CORPORATE STYLE EXTRACTOR |
-| [11. All-Hands Communicator](domain-presentations/powerpoint_all_hands_communicator.md) | presentations | — | all, communicator, hands, notes, powerpoint | ``` jsx SYSTEM PROMPT: ALL-HANDS COMMUNICATOR |
-| [2. Corporate Style Applicator](domain-presentations/powerpoint_corporate_style_applicator.md) | presentations | — | applicator, corporate, notes, powerpoint, prompt | ``` jsx textSYSTEM PROMPT: CORPORATE STYLE APPLICATOR |
-| [3. Enterprise Deck Architect](domain-presentations/powerpoint_enterprise_deck_architect.md) | presentations | — | architect, deck, enterprise, notes, powerpoint | ``` jsx textSYSTEM PROMPT: ENTERPRISE DECK ARCHITECT |
-| [8. Campaign Results Reporter](domain-presentations/powerpoint_campaign_results_reporter.md) | presentations | — | campaign, notes, powerpoint, prompt, reporter | ``` jsx SYSTEM PROMPT: CAMPAIGN RESULTS REPORTER |
-| [9. Financial Storyteller](domain-presentations/powerpoint_financial_storyteller.md) | presentations | — | financial, notes, powerpoint, prompt, storyteller | ``` jsx SYSTEM PROMPT: FINANCIAL STORYTELLER |
-| [Board Deck Generator](domain-presentations/powerpoint_board_deck.md) | presentations | — | board, deck, notes, powerpoint, prompt | ``` SYSTEM PROMPT: BOARD DECK GENERATOR |
-| [Competitive Battle Card Deck](domain-presentations/powerpoint_competitive_battle_card.md) | presentations | — | battle, card, competitive, notes, powerpoint | ``` SYSTEM PROMPT: COMPETITIVE BATTLE CARD DECK |
-| [Crisis Management Deck](domain-presentations/powerpoint_crisis_management.md) | presentations | — | crisis, management, notes, powerpoint, prompt | ``` SYSTEM PROMPT: CRISIS MANAGEMENT DECK |
-| [Deck Assembly & Validation](domain-presentations/powerpoint_deck_assembly_validation.md) | presentations | — | assembly, deck, notes, powerpoint, prompt | ``` SYSTEM PROMPT: DECK ASSEMBLY & VALIDATION |
-| [Product Launch Presentation](domain-presentations/powerpoint_product_launch.md) | presentations | — | launch, notes, powerpoint, product, prompt | ``` SYSTEM PROMPT: PRODUCT LAUNCH PRESENTATION |
-| [Product Roadmap Presentation](domain-presentations/powerpoint_product_roadmap.md) | presentations | — | notes, powerpoint, product, prompt, roadmap | ``` SYSTEM PROMPT: PRODUCT ROADMAP PRESENTATION |
-| [Quarterly Business Review Builder](domain-presentations/powerpoint_quarterly_business_review.md) | presentations | — | business, notes, powerpoint, prompt, quarterly | ``` SYSTEM PROMPT: QUARTERLY BUSINESS REVIEW BUILDER |
-| [Status Report Generator](domain-presentations/powerpoint_status_report.md) | presentations | — | notes, powerpoint, prompt, report, status | ``` SYSTEM PROMPT: STATUS REPORT GENERATOR |
+| [1. Corporate Style Extractor](domain-presentations/powerpoint_corporate_style_extractor.md) | presentations | ST-02, OC-02, DS-26 | presentations, powerpoint, corporate-style, style-guide, style-extraction | Extract basic corporate style elements (brand colors as hex codes, title and body fonts, logo positi... |
+| [11. All-Hands Communicator](domain-presentations/powerpoint_all_hands_communicator.md) | presentations | ST-03, OC-08, RP-02, NE-14, CM-02 | presentations, powerpoint, all-hands, internal-communications, employee-engagement | Create a company-wide all-hands presentation that builds employee engagement through transparent per... |
+| [2. Corporate Style Applicator](domain-presentations/powerpoint_corporate_style_applicator.md) | presentations | CM-02, RT-11, QA-01 | presentations, powerpoint, corporate-style, style-guide, brand-consistency | Apply a corporate style JSON (colors, fonts, logo position, margins) to new PowerPoint generation th... |
+| [3. Enterprise Deck Architect](domain-presentations/powerpoint_enterprise_deck_architect.md) | presentations | DT-01, DS-19, ST-03 | presentations, powerpoint, deck-planning, chunking, multi-source-synthesis | Plan the structure and chunking strategy for a multi-source data presentation: the one-sentence stor... |
+| [8. Campaign Results Reporter](domain-presentations/powerpoint_campaign_results_reporter.md) | presentations | ST-03, DS-02, DS-19, RP-02, QA-04 | presentations, powerpoint, campaign-results, marketing-roi, budget-allocation | Transform marketing analytics from multiple channels into an executive-ready performance presentatio... |
+| [9. Financial Storyteller](domain-presentations/powerpoint_financial_storyteller.md) | presentations | ST-03, RT-05, RT-09, RP-02, QA-04 | presentations, powerpoint, financial-storytelling, variance-analysis, budget-vs-actual | Transform Excel financial data into a narrative-driven performance analysis presentation that explai... |
+| [Board Deck Generator](domain-presentations/powerpoint_board_deck.md) | presentations | ST-03, OC-08, CM-02, RT-05, QA-01 | presentations, powerpoint, board-deck, executive-presentation, board-meeting | Generate an executive board presentation covering financial performance against plan, strategic prio... |
+| [Competitive Battle Card Deck](domain-presentations/powerpoint_competitive_battle_card.md) | presentations | ST-03, DS-19, RT-05, QA-05 | presentations, powerpoint, battle-card, competitive-intelligence, objection-handling | Synthesize competitive intelligence research into a battle card presentation for sales teams, with c... |
+| [Crisis Management Deck](domain-presentations/powerpoint_crisis_management.md) | presentations | ST-03, OC-08, DS-19, QA-04 | presentations, powerpoint, crisis-management, crisis-communication, scenario-analysis | Synthesize crisis-related data from multiple sources into a controlled executive response presentati... |
+| [Deck Assembly & Validation](domain-presentations/powerpoint_deck_assembly_validation.md) | presentations | QA-11, QA-08, ST-03 | presentations, powerpoint, deck-validation, cross-slide-consistency, quality-gate | Review separately generated slide chunks for consistency and readiness (narrative flow, numbers cons... |
+| [Product Launch Presentation](domain-presentations/powerpoint_product_launch.md) | presentations | ST-03, OC-08, NE-14, AG-12 | presentations, powerpoint, product-launch, go-to-market, launch-readiness | Build a go-to-market launch presentation that coordinates internal teams and external stakeholders a... |
+| [Product Roadmap Presentation](domain-presentations/powerpoint_product_roadmap.md) | presentations | ST-03, DS-06, RP-02, CM-02 | presentations, powerpoint, product-roadmap, engineering-capacity, stakeholder-alignment | Convert product planning data into a visual roadmap presentation that aligns stakeholders on priorit... |
+| [Quarterly Business Review Builder](domain-presentations/powerpoint_quarterly_business_review.md) | presentations | ST-03, RT-02, RT-09, CM-02 | presentations, powerpoint, quarterly-business-review, qbr, trend-analysis | Convert quarterly performance data into a business review presentation with trend analysis against p... |
+| [Status Report Generator](domain-presentations/powerpoint_status_report.md) | presentations | ST-03, ST-42, RP-02, DS-40 | presentations, powerpoint, status-report, project-status, rag-status | Transform project tracking data into a stakeholder update presentation that communicates progress, i... |
 | [ARR Bridge Slide Visual](domain-presentations/board-decks/boarddeck_arr_bridge.md) | presentations/board-decks/imag | SV-11, SV-12, SV-13, SV-14, SV-15 | board-deck, executive-presentation, image-generation, slide-visual, 16:9 | Constraint-locked image prompt for a board-deck ARR bridge visual in 16:9 format. |
 | [Build vs Buy Slide Visual](domain-presentations/board-decks/boarddeck_build_vs_buy.md) | presentations/board-decks/imag | SV-11, SV-12, SV-13, SV-14, SV-15 | board-deck, executive-presentation, image-generation, slide-visual, 16:9 | Constraint-locked image prompt for a board-deck build-vs-buy analysis visual in 16:9 format. |
 | [Capacity Planning Grid Slide Visual](domain-presentations/board-decks/boarddeck_capacity_planning_grid.md) | presentations/board-decks/imag | SV-11, SV-12, SV-13, SV-14, SV-15 | board-deck, executive-presentation, image-generation, slide-visual, 16:9 | Constraint-locked image prompt for a board-deck capacity planning grid visual in 16:9 format. |
@@ -6517,7 +6517,7 @@
 
 ---
 
-## Prompts Without Frontmatter (896)
+## Prompts Without Frontmatter (882)
 
 These prompts need frontmatter metadata added:
 
@@ -7394,20 +7394,6 @@ These prompts need frontmatter metadata added:
 - `domain-image-generation/IMAGE_PROMPTING_GUIDE.md` - Comprehensive Image Prompting Guide
 - `domain-image-generation/VIDEO_GENERATION_GUIDE.md` - Video Generation Prompt Guide
 - `domain-image-generation/coloring-book/image_to_coloring_book_page.md` - Image to Children's Coloring Book Page
-- `domain-presentations/powerpoint_all_hands_communicator.md` - 11. All-Hands Communicator
-- `domain-presentations/powerpoint_board_deck.md` - Board Deck Generator
-- `domain-presentations/powerpoint_campaign_results_reporter.md` - 8. Campaign Results Reporter
-- `domain-presentations/powerpoint_competitive_battle_card.md` - Competitive Battle Card Deck
-- `domain-presentations/powerpoint_corporate_style_applicator.md` - 2. Corporate Style Applicator
-- `domain-presentations/powerpoint_corporate_style_extractor.md` - 1. Corporate Style Extractor
-- `domain-presentations/powerpoint_crisis_management.md` - Crisis Management Deck
-- `domain-presentations/powerpoint_deck_assembly_validation.md` - Deck Assembly & Validation
-- `domain-presentations/powerpoint_enterprise_deck_architect.md` - 3. Enterprise Deck Architect
-- `domain-presentations/powerpoint_financial_storyteller.md` - 9. Financial Storyteller
-- `domain-presentations/powerpoint_product_launch.md` - Product Launch Presentation
-- `domain-presentations/powerpoint_product_roadmap.md` - Product Roadmap Presentation
-- `domain-presentations/powerpoint_quarterly_business_review.md` - Quarterly Business Review Builder
-- `domain-presentations/powerpoint_status_report.md` - Status Report Generator
 - `domain-product-management/templates/prd_template.md` - Product Requirements Document (PRD) Template
 - `domain-prompt-engineering/evaluation/prompt_lifecycle_assessment.md` - Prompt Lifecycle Assessment
 - `domain-prompt-engineering/evaluation/repository_review_reflection.md` - Repository Review & Reflection Prompt

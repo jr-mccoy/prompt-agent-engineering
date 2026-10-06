@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept a two-column comparison that looks balanced when the weighted totals do not follow from criterion score × weight, or the weights shown do not sum to 100%.
+- Compare a multi-year build cost against a one-year vendor licence; the cost bars sit side by side and look comparable while measuring different horizons.
+- Let the model fill in a vendor name, a licence quote or an engineering headcount estimate the intake lacked; an invented "$180K/yr" becomes the anchor in the next negotiation.
+- Let the Zone 1 recommendation chip say "Buy" while the Zone 2 scores favour Build.
+
+✅ **DO:**
+- Recompute each option's weighted total from the visible scores and weights, confirm the weights total 100%, and check the recommendation names the higher-scoring option or prints the override reason the user gave.
+- Check both cost figures state the same horizon and the same inclusions (build: engineering, maintenance, opportunity cost; buy: licence, integration, switching) as the intake defines them.
+- Count criterion rows on the slide against the intake list and remove any row the model added.
+- Render any unpriced option as "[quote pending]" rather than a number.

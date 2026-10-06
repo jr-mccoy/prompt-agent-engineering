@@ -1,3 +1,23 @@
+---
+title: "Board Deck Generator"
+category: presentations
+description: "Generate an executive board presentation covering financial performance against plan, strategic priorities, and the specific board decisions requiring approval, with every financial figure traced to the source Excel data."
+techniques:
+  - ST-03
+  - OC-08
+  - CM-02
+  - RT-05
+  - QA-01
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - board-deck
+  - executive-presentation
+  - board-meeting
+updated: "2026-10-06"
+---
+
 # Board Deck Generator
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -58,6 +78,15 @@ INPUT EXAMPLE:
 VALIDATION:
 Show thumbnails, verify corporate style compliance, confirm decision clarity
 ```
+
+## False-Positive Prevention
+
+1. **A headline the chart does not show.** "Margins expanded on cost discipline" above a revenue-only chart asserts a conclusion the slide cannot support. Each headline must be readable off the chart or table beneath it; otherwise add the supporting series or weaken the headline.
+2. **Executive Summary drifting from slides 2–3.** Summary figures get rounded and restated by hand. Every number on slide 1 must equal its counterpart on Financial Performance or Key Metrics Dashboard, on the same basis (actual vs plan) and period.
+3. **A bold variance with an invented cause.** Bold type satisfies the >5% rule; the explanation is what the board reads. Where the strategic memo gives no cause, write "cause not supplied — owner to explain" rather than a plausible one.
+4. **A Board Decisions entry that is a discussion topic.** "Discuss hiring plan" is not an approval. Each decision states the motion as the board would vote it, the amount or scope, and the deadline from the agenda.
+5. **Milestones achieved against a moved goalpost.** A milestone reported as achieved must match its wording in the previous board deck; one re-scoped since then is shown as re-scoped.
+6. **Verify:** recompute each total and variance on Financial Performance from the source Excel rows, and list any figure you could not trace instead of presenting it.
 
 ## Usage Notes
 

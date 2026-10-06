@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept a ranked order that does not follow from Reach × Impact × Confidence ÷ Effort (or the intake's ICE formula).
+- Mix up the two E's: RICE Effort (lower is better) against ICE Ease (higher is better); reading one as the other inverts the ranking.
+- Let the model fill reach, impact, confidence or effort for initiatives the user only named.
+- Mix confidence as 80 in one row and 0.8 in another; the scores look plausible and are off by 100×.
+
+✅ **DO:**
+- Recompute every score from its displayed components, re-sort, and confirm the slide's order matches.
+- Check each column states its unit and scale (reach per quarter, impact 0.25–3, confidence %, effort person-months).
+- Put any initiative missing a component below the ranked list as "[unscored — missing Confidence]", not inside it.
+- Count rows against the intake list.

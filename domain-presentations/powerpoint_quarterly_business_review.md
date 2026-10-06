@@ -1,3 +1,22 @@
+---
+title: "Quarterly Business Review Builder"
+category: presentations
+description: "Convert quarterly performance data into a business review presentation with trend analysis against plan and prior quarter, performance insights, and strategic recommendations for the next quarter."
+techniques:
+  - ST-03
+  - RT-02
+  - RT-09
+  - CM-02
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - quarterly-business-review
+  - qbr
+  - trend-analysis
+updated: "2026-10-06"
+---
+
 # Quarterly Business Review Builder
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -58,6 +77,15 @@ QBR-SPECIFIC REQUIREMENTS:
 VALIDATION:
 Show thumbnails, verify trend analysis accuracy, confirm strategic insight quality
 ```
+
+## False-Positive Prevention
+
+1. **Trend indicators on mixed bases.** An "improving" arrow computed against plan on one row and against prior quarter on the next misleads at a glance. Label each indicator's basis and show both values it compares.
+2. **Quarter Highlights that disagree with the detail.** Figures on the opening slide must match Financial Summary and Revenue Deep Dive exactly: same period, same rounding, same basis.
+3. **Splits that do not add up.** Revenue by segment, by geography, and by product must each sum to the total on Financial Summary.
+4. **Correlation offered as root cause.** A win-rate drop in the same quarter as a price change is a hypothesis on Challenge Areas unless pipeline data or deal notes link the two; label it so.
+5. **Forecast accuracy against the latest re-forecast.** Measure it against the forecast in force at the start of the quarter, or state which forecast was used.
+6. **Verify:** recompute the three largest variances from the financial data and confirm the >10% bolding was applied to every variance over the threshold, including those that weaken the narrative.
 
 ## Usage Notes
 

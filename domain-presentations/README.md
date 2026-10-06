@@ -56,7 +56,7 @@ domain-presentations/
 - `presentation_keynote_talk_arc.md` — one disputable idea, audience belief shift, structure choice, minute budget at speaking pace
 - `presentation_qa_hostile_question_prep.md` — room map, scored question bank (incl. hostile and loaded), honest answers, red lines, hostile rehearsal
 - `presentation_speaker_notes_rehearsal_coach.md` — cue-based notes and four scored rehearsal runs with a stop rule
-- New files carry full Tier-1 frontmatter; the root `powerpoint_*` generators historically do not
+- Every prompt carries frontmatter and a False-Positive Prevention section; the root `powerpoint_*` generators gained theirs in the 2026-10 quality backfill
 
 ### Board-Deck Image Visuals (`board-decks/`)
 - 16:9 locked outputs (1920 x 1080) for executive slides

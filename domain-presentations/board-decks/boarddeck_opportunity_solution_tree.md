@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept solutions hanging straight from the outcome, skipping the opportunity layer, or an "opportunity" that is a solution in disguise ("need a mobile app").
+- Let the model write customer pain points or experiment results ("+12% activation") the intake did not contain; that fabricates research evidence.
+- Balance the tree to three opportunities × three solutions by inventing nodes.
+- Colour an experiment as validated when the user reported it as planned or running.
+
+✅ **DO:**
+- Count nodes per level against the intake and trace each edge to the parent the intake names.
+- Read each opportunity as a customer need or pain and each solution as something the team would build; move any that sit in the wrong layer.
+- Match experiment status colours to the intake status; a missing result renders as "[result pending]".
+- Check the root outcome metric matches the intake's wording, baseline and target.

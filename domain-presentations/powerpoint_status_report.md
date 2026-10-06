@@ -1,3 +1,22 @@
+---
+title: "Status Report Generator"
+category: presentations
+description: "Transform project tracking data into a stakeholder update presentation that communicates progress, identifies risks, and drives accountability for next steps and decision-making."
+techniques:
+  - ST-03
+  - ST-42
+  - RP-02
+  - DS-40
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - status-report
+  - project-status
+  - rag-status
+updated: "2026-10-06"
+---
+
 # Status Report Generator
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -75,6 +94,15 @@ STAKEHOLDER COMMUNICATION:
 VALIDATION:
 Show thumbnails, verify status accuracy, confirm action item clarity and accountability
 ```
+
+## False-Positive Prevention
+
+1. **Green by default.** A workstream set green because nobody reported a problem has no evidence behind it. Derive each RAG status from the tracking data (deliverables done vs planned, milestone forecast vs baseline, spend vs budget) and state the rule; a workstream with no update is shown as "no data", not green.
+2. **"On track" without the baseline date.** Each milestone on Milestone Timeline shows its baseline date beside the current forecast; if it was re-baselined, say when, so on track cannot mean "on track to the new date".
+3. **Percent complete from closed tasks.** 80% of tasks closed with the hardest one still open is not 80% complete. Weight completion by effort or deliverable, and say how the percentage was computed.
+4. **Stale risks carried forward as current.** A risk shown as "mitigation in place" needs the date that mitigation was last updated in the risk log; an entry not touched since the previous report is marked stale.
+5. **Owners invented to satisfy the accountability rule.** Names and deadlines on Stakeholder Actions come from the communication log or issue log; where none is recorded, write "owner needed".
+6. **Verify:** confirm the overall health on Project Overview is no better than the worst critical-path status and agrees with the blockers on Issue Resolution; an overall green beside a red critical-path milestone is a contradiction to fix before showing thumbnails.
 
 ## Usage Notes
 

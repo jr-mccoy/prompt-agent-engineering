@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept two axes that are not independent ("economic growth" against "customer budgets"); two quadrants become implausible while the 2×2 still looks symmetrical.
+- Let an axis run from "good" to "bad" instead of across a real uncertainty, which makes one quadrant the best case by construction.
+- Let the model invent scenario names, probabilities or revenue impacts for the quadrants.
+- Accept quadrant probabilities that, where shown, do not total 100%.
+
+✅ **DO:**
+- Test independence: for each quadrant, state one plausible world in which both poles hold; if any quadrant fails, the axes are correlated and need replacing before rendering.
+- Check each scenario sits at the pole combination the intake assigns it, and that both ends of each axis are labelled.
+- Add up any displayed probabilities; an impact the user has not estimated renders as "[impact not estimated]".
+- Trace each quadrant's signpost or implication to the intake text.

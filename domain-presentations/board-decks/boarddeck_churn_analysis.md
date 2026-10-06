@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Plot logo churn and revenue churn on one axis, or label a net figure "churn" when expansion is offsetting losses; the trend line reads fine and tells a different story.
+- Accept churn-reason shares totalling more than 100% unless the intake says reasons were multi-select and the slide says so.
+- Let the model supply churned-account counts, segment names or a "top reason: pricing" bar when the user gave no reason codes.
+- Set a monthly churn rate beside an annualised one as if they were the same measure.
+
+✅ **DO:**
+- Recompute the churn rate for at least two periods from churned ÷ starting accounts (or starting ARR, per the intake's definition) and match each to its label.
+- Check that segment-level churned counts add to the total and reason shares add to 100%.
+- Match every period and segment label to the intake; a missing period renders as a labelled gap "[no data]", not an interpolated point.
+- Print a footnote that names the measure (logo, gross revenue or net revenue retention) and the period basis.

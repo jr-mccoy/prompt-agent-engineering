@@ -4,8 +4,8 @@
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
     "total_indexed_artifacts": 6165,
-    "artifacts_with_frontmatter": 5269,
-    "artifacts_without_frontmatter": 896,
+    "artifacts_with_frontmatter": 5283,
+    "artifacts_without_frontmatter": 882,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
     "deprecated_aliases": {
@@ -15,8 +15,8 @@
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
     "total_prompts": 6165,
-    "prompts_with_frontmatter": 5269,
-    "prompts_without_frontmatter": 896
+    "prompts_with_frontmatter": 5283,
+    "prompts_without_frontmatter": 882
   },
   "prompts": [
     {
@@ -131643,21 +131643,23 @@
       "title": "1. Corporate Style Extractor",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` jsx `textSYSTEM PROMPT: CORPORATE STYLE EXTRACTOR",
-      "techniques": [],
-      "keywords": [
-        "corporate",
-        "extractor",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "style",
-        "usage"
+      "description": "Extract basic corporate style elements (brand colors as hex codes, title and body fonts, logo position, layout spacing) from a corporate PowerPoint (.pptx) file into a simple JSON for replication.",
+      "techniques": [
+        "ST-02",
+        "OC-02",
+        "DS-26"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "corporate-style",
+        "style-guide",
+        "style-extraction"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_all_hands_communicator.md",
@@ -131665,21 +131667,25 @@
       "title": "11. All-Hands Communicator",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` jsx SYSTEM PROMPT: ALL-HANDS COMMUNICATOR",
-      "techniques": [],
-      "keywords": [
-        "all",
-        "communicator",
-        "hands",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage"
+      "description": "Create a company-wide all-hands presentation that builds employee engagement through transparent performance communication, strategic direction, and organizational updates with consistent leadership messaging.",
+      "techniques": [
+        "ST-03",
+        "OC-08",
+        "RP-02",
+        "NE-14",
+        "CM-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "all-hands",
+        "internal-communications",
+        "employee-engagement"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_corporate_style_applicator.md",
@@ -131687,21 +131693,23 @@
       "title": "2. Corporate Style Applicator",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` jsx textSYSTEM PROMPT: CORPORATE STYLE APPLICATOR",
-      "techniques": [],
-      "keywords": [
-        "applicator",
-        "corporate",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "style",
-        "usage"
+      "description": "Apply a corporate style JSON (colors, fonts, logo position, margins) to new PowerPoint generation through the html2pptx workflow, with explicit failure conditions for off-palette colors, undersized fonts, and border boxes.",
+      "techniques": [
+        "CM-02",
+        "RT-11",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "corporate-style",
+        "style-guide",
+        "brand-consistency"
+      ],
+      "difficulty": "beginner",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_enterprise_deck_architect.md",
@@ -131709,21 +131717,23 @@
       "title": "3. Enterprise Deck Architect",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` jsx textSYSTEM PROMPT: ENTERPRISE DECK ARCHITECT",
-      "techniques": [],
-      "keywords": [
-        "architect",
-        "deck",
-        "enterprise",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage"
+      "description": "Plan the structure and chunking strategy for a multi-source data presentation: the one-sentence story, total slide count, chunk boundaries for separate generation, and the key data each chunk needs.",
+      "techniques": [
+        "DT-01",
+        "DS-19",
+        "ST-03"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "deck-planning",
+        "chunking",
+        "multi-source-synthesis"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_campaign_results_reporter.md",
@@ -131731,21 +131741,25 @@
       "title": "8. Campaign Results Reporter",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` jsx SYSTEM PROMPT: CAMPAIGN RESULTS REPORTER",
-      "techniques": [],
-      "keywords": [
-        "campaign",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "reporter",
-        "results",
-        "usage"
+      "description": "Transform marketing analytics from multiple channels into an executive-ready performance presentation with clear ROI analysis, optimization recommendations, and data-driven budget allocation guidance.",
+      "techniques": [
+        "ST-03",
+        "DS-02",
+        "DS-19",
+        "RP-02",
+        "QA-04"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "campaign-results",
+        "marketing-roi",
+        "budget-allocation"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_financial_storyteller.md",
@@ -131753,20 +131767,25 @@
       "title": "9. Financial Storyteller",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` jsx SYSTEM PROMPT: FINANCIAL STORYTELLER",
-      "techniques": [],
-      "keywords": [
-        "financial",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "storyteller",
-        "usage"
+      "description": "Transform Excel financial data into a narrative-driven performance analysis presentation that explains what happened, why it happened, and what actions are needed for executive decision-making.",
+      "techniques": [
+        "ST-03",
+        "RT-05",
+        "RT-09",
+        "RP-02",
+        "QA-04"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "financial-storytelling",
+        "variance-analysis",
+        "budget-vs-actual"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_board_deck.md",
@@ -131774,20 +131793,25 @@
       "title": "Board Deck Generator",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` SYSTEM PROMPT: BOARD DECK GENERATOR",
-      "techniques": [],
-      "keywords": [
-        "board",
-        "deck",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage"
+      "description": "Generate an executive board presentation covering financial performance against plan, strategic priorities, and the specific board decisions requiring approval, with every financial figure traced to the source Excel data.",
+      "techniques": [
+        "ST-03",
+        "OC-08",
+        "CM-02",
+        "RT-05",
+        "QA-01"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "board-deck",
+        "executive-presentation",
+        "board-meeting"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_competitive_battle_card.md",
@@ -131795,21 +131819,24 @@
       "title": "Competitive Battle Card Deck",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` SYSTEM PROMPT: COMPETITIVE BATTLE CARD DECK",
-      "techniques": [],
-      "keywords": [
-        "battle",
-        "card",
-        "competitive",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage"
+      "description": "Synthesize competitive intelligence research into a battle card presentation for sales teams, with clear positioning, differentiation messaging, and objection handling for major competitors.",
+      "techniques": [
+        "ST-03",
+        "DS-19",
+        "RT-05",
+        "QA-05"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "battle-card",
+        "competitive-intelligence",
+        "objection-handling"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_crisis_management.md",
@@ -131817,20 +131844,24 @@
       "title": "Crisis Management Deck",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` SYSTEM PROMPT: CRISIS MANAGEMENT DECK",
-      "techniques": [],
-      "keywords": [
-        "crisis",
-        "management",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage"
+      "description": "Synthesize crisis-related data from multiple sources into a controlled executive response presentation with clear scenarios and an immediate action plan.",
+      "techniques": [
+        "ST-03",
+        "OC-08",
+        "DS-19",
+        "QA-04"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "crisis-management",
+        "crisis-communication",
+        "scenario-analysis"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_deck_assembly_validation.md",
@@ -131838,21 +131869,23 @@
       "title": "Deck Assembly & Validation",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` SYSTEM PROMPT: DECK ASSEMBLY & VALIDATION",
-      "techniques": [],
-      "keywords": [
-        "assembly",
-        "deck",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "usage",
-        "validation"
+      "description": "Review separately generated slide chunks for consistency and readiness (narrative flow, numbers consistent across slides, corporate style) and return a pass/fail validation report with the issues to fix.",
+      "techniques": [
+        "QA-11",
+        "QA-08",
+        "ST-03"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "deck-validation",
+        "cross-slide-consistency",
+        "quality-gate"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_product_launch.md",
@@ -131860,20 +131893,24 @@
       "title": "Product Launch Presentation",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` SYSTEM PROMPT: PRODUCT LAUNCH PRESENTATION",
-      "techniques": [],
-      "keywords": [
-        "launch",
-        "notes",
-        "powerpoint",
-        "product",
-        "prompt",
-        "usage"
+      "description": "Build a go-to-market launch presentation that coordinates internal teams and external stakeholders around a new product or feature release, with clear success metrics and an execution plan.",
+      "techniques": [
+        "ST-03",
+        "OC-08",
+        "NE-14",
+        "AG-12"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "product-launch",
+        "go-to-market",
+        "launch-readiness"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_product_roadmap.md",
@@ -131881,20 +131918,24 @@
       "title": "Product Roadmap Presentation",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` SYSTEM PROMPT: PRODUCT ROADMAP PRESENTATION",
-      "techniques": [],
-      "keywords": [
-        "notes",
-        "powerpoint",
-        "product",
-        "prompt",
-        "roadmap",
-        "usage"
+      "description": "Convert product planning data into a visual roadmap presentation that aligns stakeholders on priorities, timeline, and resource allocation for the next 6-12 months.",
+      "techniques": [
+        "ST-03",
+        "DS-06",
+        "RP-02",
+        "CM-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "product-roadmap",
+        "engineering-capacity",
+        "stakeholder-alignment"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_quarterly_business_review.md",
@@ -131902,21 +131943,24 @@
       "title": "Quarterly Business Review Builder",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` SYSTEM PROMPT: QUARTERLY BUSINESS REVIEW BUILDER",
-      "techniques": [],
-      "keywords": [
-        "business",
-        "notes",
-        "powerpoint",
-        "prompt",
-        "quarterly",
-        "review",
-        "usage"
+      "description": "Convert quarterly performance data into a business review presentation with trend analysis against plan and prior quarter, performance insights, and strategic recommendations for the next quarter.",
+      "techniques": [
+        "ST-03",
+        "RT-02",
+        "RT-09",
+        "CM-02"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "quarterly-business-review",
+        "qbr",
+        "trend-analysis"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/powerpoint_status_report.md",
@@ -131924,20 +131968,24 @@
       "title": "Status Report Generator",
       "domain": "presentations",
       "category": "presentations",
-      "description": "``` SYSTEM PROMPT: STATUS REPORT GENERATOR",
-      "techniques": [],
-      "keywords": [
-        "notes",
-        "powerpoint",
-        "prompt",
-        "report",
-        "status",
-        "usage"
+      "description": "Transform project tracking data into a stakeholder update presentation that communicates progress, identifies risks, and drives accountability for next steps and decision-making.",
+      "techniques": [
+        "ST-03",
+        "ST-42",
+        "RP-02",
+        "DS-40"
       ],
-      "difficulty": "",
-      "updated": "",
+      "keywords": [
+        "presentations",
+        "powerpoint",
+        "status-report",
+        "project-status",
+        "rag-status"
+      ],
+      "difficulty": "intermediate",
+      "updated": "2026-10-06",
       "related_prompts": [],
-      "has_frontmatter": false
+      "has_frontmatter": true
     },
     {
       "path": "domain-presentations/board-decks/boarddeck_arr_bridge.md",
@@ -131964,7 +132012,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -131997,7 +132045,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132030,7 +132078,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132063,7 +132111,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132096,7 +132144,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132129,7 +132177,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132162,7 +132210,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132195,7 +132243,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132228,7 +132276,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132261,7 +132309,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132294,7 +132342,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132327,7 +132375,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132360,7 +132408,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132393,7 +132441,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132426,7 +132474,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132459,7 +132507,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132492,7 +132540,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132525,7 +132573,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132558,7 +132606,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",
@@ -132591,7 +132639,7 @@
         "16:9"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-04-21",
+      "updated": "2026-10-06",
       "related_prompts": [
         "domain-image-generation/IMAGE_GENERATION_GUIDE.md",
         "domain-image-generation/infographic_meta_prompt.md",

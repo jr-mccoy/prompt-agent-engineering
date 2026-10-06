@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept a coverage ratio that is not pipeline ÷ remaining quota for the period shown (or ÷ full target, if the intake defines it that way).
+- Stack weighted and unweighted pipeline in one bar.
+- Show a sales-velocity figure whose four inputs (open opportunities, win rate, average deal size, cycle length) do not reproduce it.
+- Let the model supply quota, stage values, win rates or a "3× coverage" benchmark line the user never gave.
+
+✅ **DO:**
+- Recompute coverage for each period from the displayed pipeline and quota gap, and check the ratio against its label and threshold colour.
+- Recompute velocity = opportunities × win rate × average deal size ÷ cycle days from the displayed inputs.
+- Check stage segments add up to the pipeline total in each bar.
+- Draw a benchmark line only if the intake supplies one; a missing quota renders as "[quota pending]".

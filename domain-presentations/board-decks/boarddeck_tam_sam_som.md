@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Draw SOM larger than its share of SAM, or scale the nested circles by radius so the market looks bigger than its numbers.
+- Accept SAM > TAM or SOM > SAM in the labels, or SAM drawn outside TAM.
+- Let the model supply market sizes ("$12B TAM") or an analyst-firm source the user did not provide; a fabricated citation is worse than a missing one.
+- Mix top-down and bottom-up figures, or annual revenue and multi-year totals, without labelling which is which.
+
+✅ **DO:**
+- Recompute SAM ÷ TAM and SOM ÷ SAM, then check that the circle areas (not radii) keep those ratios.
+- Trace each figure to an intake value with its source or method; a missing tier renders as "[TAM — sizing pending]".
+- Check all three figures share one year and currency.
+- Where the intake gives a bottom-up SOM, recompute accounts × annual contract value and match it to the label.
