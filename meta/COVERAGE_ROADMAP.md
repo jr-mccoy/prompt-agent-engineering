@@ -1342,6 +1342,35 @@ its scenarios "8% relative" while computing 20%, and its 3-year ROI left out the
 
 **Corrections log.** The FPP reviewers read each file in full and flagged errors in the prompts themselves, mostly in worked examples. Those errors were not fixed silently inside the FPP batches. They went through separate correction passes (C-A to C-J), and each flag was decided as rejected, fixed from the file's own data, fixed as an uncontroversial fact, or neutralised with `[VERIFY: source]`. No dose or threshold was supplied from memory. Every decision, the safety-relevant ones first, plus the defects left open for a clinician, is in [`QUALITY_BACKFILL_CORRECTIONS.md`](QUALITY_BACKFILL_CORRECTIONS.md). That log supports a licensed reviewer's audit; it does not replace one, and the healthcare-clinical review-status line stays "not yet reviewed by a licensed clinician".
 
+### Roadmap close-out: small leftovers (2026-10-08, shipped)
+
+Five small items left open by earlier waves and domain roadmaps. One new prompt; everything else edits existing files.
+
+| # | Item | Source | What shipped |
+|---|---|---|---|
+| 1 | Handoff duplication | Wave 4 "Left for later" | The audit pass had already cut most of it. The last restated trigger lists are gone: in `chatbot_design_error_handling_patterns.md` and `chatbot_design_enterprise_customer_service.md`, the handoff step and the output block are now one-line pointers to `chatbot_design_human_agent_handoff.md`. The handoff prompt's "Not this prompt if" now says so |
+| 2 | Human half of agent-mediated negotiation | `domain-negotiation/EXPANSION_ROADMAP.md` Wave 2 | **New:** `channels/negotiation_human_intermediary.md` (broker, recruiter or agent). It covers who pays them and whom they owe, an incentive map, the marginal split on the next increment (computed only from the user's own engagement terms, with no commission norms from memory), a tell / tell-as-a-rule / keep disclosure plan, an instruction brief with three authority tiers and verbatim reporting, an audit plan, and the response to a push to accept. It follows the domain's house style (reasoning block, six `##` headings, 9 steps ending in an adversarial check, 8-item FPP, no Example section). The AI-agent sibling and `negotiation_authority_mandate_limits.md` now point to it |
+| 3 | `career/` refresh | `domain-personal-development/EXPANSION_ROADMAP.md` Wave 2 | All 17 AI-role assessments were checked. 12 were updated with 26 inline `[VERIFY: …]` markers. Named tools became categories or dated examples; claims like "now mandatory", "high demand" and "a PhD is effectively mandatory" became checks. No figure was supplied from memory. 5 had nothing stale. **None retired**: each still serves a distinct background. The folder README gains a refresh-status section and a corrected techniques table |
+| 4 | Education maintenance backlog | `domain-education-teaching/meta/MAINTENANCE_BACKLOG.md` | All 12 items ticked. Exit tickets: a separate Teacher Copy / Answer Key step, and the plain-text layout is now recommended rather than required. Flashcards: a fact-check rule ("flag, don't guess") and card counts that override the example's length; the example grew from 14 to 19 cards so it obeys its own ranges. The flashcard file is now `learner/memory-and-recall/learn_flashcard_generator.md` (REORG_MAP). Rubric builder: assessment-type routing up front, one merged essay/performance step, explicit student-copy and data-analysis steps, and essay-prompt design criteria. Socratic facilitator: novice scaffolds (three required), a teacher cheat sheet, and a pre-seminar written response that novices must complete. Per the backlog's Definition of Done, each prompt gains a revised abridged example and an "Output Contract Checks" list. Frontmatter is unchanged apart from `updated` |
+| 5 | Account-health expansion fold | `domain-sales-customer/EXPANSION_ROADMAP.md` Wave 3 | `cs_account_health.md`'s Expansion Opportunity Analysis and its upsell/cross-sell list became a three-line pointer. The prompt now reports expansion *signals* only; sizing, sequencing and pitching go to `sales/sales_strategic_account_plan.md` |
+
+**Duplicate check.** Item 2 is the only new file. `pae search` across seven phrasings found no prompt that covers being represented by a commissioned intermediary. The nearest neighbours each get a boundary line in its "When NOT to use": the AI-agent sibling, the counterpart-approval prompt, `realestate_buyer_offer_strategy` (the offer package), the third-party facilitator and `domain-legal/` (legal duties).
+
+**Routing, case by case against base `08a983f`** (221 cases plus the 27 §2 probes and 15 task probes):
+- R@1 73.2%, R@5 85.0%, MRR 0.781, router scope@1 84.9% and duplicate-cluster leaks (27) are all unchanged. The shipped BM25F still leads flat BM25 (R@1 73.2% vs 72.5%).
+- **The one case movement:** case 148's gold moves from rank 14 to 15, below every scored cut-off.
+- **One mid-build regression, fixed:** the first draft of the new prompt took rank 1 on case 155 (an AI agent filing expense reports), matching on incidental words ("through", "human", "without") in its title, description and tags. Those words were removed, and case 155 is back to its base ranking.
+- **Probes:** "negotiate through a broker or recruiter" goes from `weak` (top hit: a data-broker removal letter) to `matched` on the new prompt. "principal agent problem negotiation intermediary" now ranks the new prompt first and the AI sibling second. Plain queries about a recruiter asking for current pay, or a broker's commission, rank it first. One `realtor-advice` tag lifted "my realtor keeps pushing me to accept the first offer" to rank 2, with no case change.
+- **Honest miss:** "my real estate agent is negotiating for me" still routes to `specialized-fields` (the buyer-offer prompt). It was not tuned further, because adding real-estate vocabulary would pull at that domain's cases.
+- Items 1, 3, 4 and 5 change no indexed field except `updated` and `related_prompts`, neither of which is searched.
+
+**Left for later:**
+- The career assessments' "Techniques Used" bodies mislabel several IDs against the master index (e.g. RT-01 called "Role/Expertise Priming"). This is a technique-hygiene item.
+- Converting `career/` to the Tier-1 template, or extending it to non-AI roles, stays open, and so does a maintainer check of whether the standalone prompt-engineer title is still posted.
+- The flashcard prompt's "When NOT to Use" (and some `learner/` siblings) still name pre-rename filenames.
+- The flashcard example's new biology cards and the rubric-builder example are AI-authored; a teacher should review them.
+- The §9 step `python3 -m unittest discover -s tests` runs 0 tests: `tests/` holds no Python test modules, at base as now.
+
 ## 7. Explicitly not gaps / deferred
 
 | Subject | Why not now |

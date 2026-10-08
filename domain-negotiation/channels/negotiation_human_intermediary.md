@@ -18,6 +18,7 @@ tags:
   - agent-incentives
   - commission-conflict
   - my-agent-wants-me-to-accept
+  - realtor-advice
   - recruiter-negotiating-for-me
   - working-with-a-broker
 updated: "2026-10-08"

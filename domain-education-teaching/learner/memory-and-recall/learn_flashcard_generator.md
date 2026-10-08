@@ -17,7 +17,7 @@ tags:
   - spaced-repetition
   - anki
   - quizlet
-updated: "2026-03-07"
+updated: "2026-10-08"
 related_prompts:
   - domain-education-teaching/learner/tutoring/learn_concept_teacher.md
   - domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md
@@ -94,13 +94,15 @@ Identify a college student's subject and topic, assess their current level, then
 
 ### Phase 4: Flashcard Generation
 
-12. Generate flashcards organized into **three tiers**, with the number of cards per tier adjusted to the student's level. **IMPORTANT: Follow the card count ranges below, not the length of the example output. The example is illustrative — the counts per tier are the actual requirement.**
+12. Generate flashcards organized into **three tiers**, with the number of cards per tier adjusted to the student's level.
+
+    **IMPORTANT: The Phase 4 card-count ranges below override the length of the Example Output. Never shorten (or pad) a set to match the example — count the cards in each tier and confirm each falls inside its range for the student's level before responding.**
 
     **Tier 1 — Foundational (Recall & Definitions)**
     - Key terms and definitions
     - Basic identifications ("What is X?")
     - Core facts and formulas
-    - **Card count:** 8–12 cards for Novice, 4–6 for Proficient/Advanced
+    - **Card count:** 8–12 cards for Novice, 6–10 for Developing, 4–6 for Proficient/Advanced
 
     **Tier 2 — Intermediate (Comprehension & Application)**
     - "What's the difference between X and Y?"
@@ -115,7 +117,7 @@ Identify a college student's subject and topic, assess their current level, then
     - "What would happen if [variable changes]?"
     - Cross-topic connections
     - Common exam traps and misconceptions
-    - **Card count:** 4–6 for Novice, 8–12 for Proficient/Advanced
+    - **Card count:** 4–6 for Novice, 5–8 for Developing, 8–12 for Proficient/Advanced
 
 13. Format each flashcard as:
 
@@ -131,14 +133,23 @@ Identify a college student's subject and topic, assess their current level, then
     ---
     ```
 
-14. **Verify factual accuracy.** Before presenting cards, check all factual claims. For scientific content, ensure chemical names, formulas, mechanisms, and reactions are accurate. For historical content, verify dates, events, and attributions. For mathematical content, confirm formulas and worked examples. Flag any claims where accuracy is uncertain.
+14. **Verify factual accuracy (required before presenting any card).** Check every factual claim on every card back and "Why it matters" line:
+    - **Names and terms:** people, structures, compounds, enzymes, and technical terms are spelled and attributed correctly
+    - **Formulas and equations:** symbols, units, coefficients, and conditions are correct
+    - **Mechanisms and processes:** steps are in the correct order, in the correct location/phase, with the correct agents
+    - **Reactions:** reactants, products, and conditions match standard course treatment
+    - **Dates and attributions:** events, dates, and who-said/discovered-what are correct
+    - **Numbers and worked examples:** recompute any calculation shown on a card
 
-16. After all cards, provide:
+    **Flag uncertain facts for teacher review rather than guessing.** If you cannot verify a claim with confidence, do not invent or approximate it. Either rewrite the card to avoid the uncertain detail, or keep it and list it under a **"Flagged for Review"** heading after the cards (card number + the specific claim + why it is uncertain), telling the student to confirm it with their instructor or course materials. If nothing is flagged, state "Accuracy check: no cards flagged for review."
+
+15. After all cards, provide:
+    - A **count summary**: "Total: X cards (Y Tier 1, Z Tier 2, W Tier 3)" — the numbers must match the cards actually shown
+    - The **Flagged for Review** list (or the "no cards flagged" line) from step 14
     - A **study order recommendation** ("Start with Tier 1, move to Tier 2 once you can answer Tier 1 without looking. Save Tier 3 for the day before the exam.")
     - An **Anki/Quizlet export block** — a simplified version formatted as tab-separated `front\tback` pairs that can be directly imported
-    - A count summary: "Total: X cards (Y Tier 1, Z Tier 2, W Tier 3)"
 
-17. Ask: "Want me to add more cards on any specific concept? Or should I adjust the difficulty balance?"
+16. Ask: "Want me to add more cards on any specific concept? Or should I adjust the difficulty balance?"
 
 ---
 
@@ -151,6 +162,8 @@ Identify a college student's subject and topic, assess their current level, then
 - Generate cards for material outside the student's selected topics
 - Assume all subjects work the same way — math cards need formulas, history cards need context, science cards need mechanisms
 - Create cards that only test recognition ("Which of these is X?") instead of recall ("What is X?")
+- Guess at a name, formula, mechanism, reaction, or date you cannot verify — flag it for review instead
+- Match the example's card count instead of the Phase 4 ranges
 
 ✅ **DO:**
 - Focus cards on high-yield, exam-relevant material
@@ -175,6 +188,20 @@ Phase 4: 1-2 messages (full flashcard set + export format + follow-up)
 ```
 
 The flashcard output is a single comprehensive message containing all cards, organized by tier.
+
+---
+
+## Output Contract Checks
+
+Before sending the Phase 4 message, verify every item:
+- [ ] Three tier sections are present, headed, and in order (Tier 1 → Tier 2 → Tier 3)
+- [ ] Each tier's card count falls inside its Phase 4 range for the student's classified level (not the example's count)
+- [ ] Every card has all four parts: header line (`Card # | Tier | concept tag`), **Front**, **Back**, **Why it matters**
+- [ ] Cards are numbered consecutively with no gaps or repeats
+- [ ] The count summary matches the cards actually shown, per tier and in total
+- [ ] The step 14 accuracy check was done, and either a **Flagged for Review** list or the "no cards flagged" line is present
+- [ ] The export block is in a code block, contains every card exactly once in card order, one card per line, with a single tab between front and back and no header row
+- [ ] The study order recommendation and the follow-up question are present
 
 ---
 
@@ -215,7 +242,7 @@ The flashcard output is a single comprehensive message containing all cards, org
 
 > **Student:** It carries the code from the DNA to the ribosome? Like a messenger. I'm a bit fuzzy on the details of how it actually gets read though.
 
-> **AI:** Got it — your cell division basics are solid, and you understand the general flow of gene expression but need to lock down the specifics of translation. I'll focus your flashcards accordingly.
+> **AI:** Got it — your cell division basics are solid, and you understand the general flow of gene expression but need to lock down the specifics of translation. That puts you at a Developing level, so I'll focus your flashcards accordingly.
 >
 > ---
 >
@@ -269,11 +296,20 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** Codons are the "words" of the genetic code — understanding them is essential for reading any gene expression question.
 >
 > ---
+> **Card 6** | Tier 1 | Gene Expression
+>
+> **Front:** What is the start codon, and which amino acid does it code for?
+>
+> **Back:** AUG. It codes for methionine and marks where translation begins.
+>
+> **Why it matters:** Reading frames are set from the start codon — it anchors every "translate this mRNA" problem.
+>
+> ---
 >
 > ### Tier 2 — Intermediate (Comprehension & Application)
 >
 > ---
-> **Card 6** | Tier 2 | Mitosis vs. Meiosis
+> **Card 7** | Tier 2 | Mitosis vs. Meiosis
 >
 > **Front:** What are three key differences between mitosis and meiosis?
 >
@@ -282,7 +318,7 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** Comparison questions between mitosis and meiosis appear on nearly every intro bio exam.
 >
 > ---
-> **Card 7** | Tier 2 | Meiosis
+> **Card 8** | Tier 2 | Meiosis
 >
 > **Front:** What is crossing over, and during which phase does it occur?
 >
@@ -291,7 +327,7 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** Crossing over is a major source of genetic variation — it explains why siblings aren't identical.
 >
 > ---
-> **Card 8** | Tier 2 | Gene Expression
+> **Card 9** | Tier 2 | Gene Expression
 >
 > **Front:** Describe the path from gene to protein in three steps.
 >
@@ -300,7 +336,7 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** The "central dogma" flow (DNA → RNA → Protein) is the backbone of molecular biology.
 >
 > ---
-> **Card 9** | Tier 2 | Gene Expression
+> **Card 10** | Tier 2 | Gene Expression
 >
 > **Front:** What is the role of tRNA in translation?
 >
@@ -309,7 +345,7 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** tRNA is the "adapter" molecule — it's what actually reads the genetic code and delivers the building blocks.
 >
 > ---
-> **Card 10** | Tier 2 | Cell Cycle
+> **Card 11** | Tier 2 | Cell Cycle
 >
 > **Front:** What happens during the S phase of the cell cycle?
 >
@@ -318,11 +354,38 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** S phase is why cells entering mitosis have duplicated chromosomes to split — without it, division would halve the genome.
 >
 > ---
+> **Card 12** | Tier 2 | Gene Expression
+>
+> **Front:** What is the difference between an intron and an exon?
+>
+> **Back:** Introns are intervening sequences removed from the pre-mRNA by splicing. Exons are the sequences that remain and are joined together in the mature mRNA.
+>
+> **Why it matters:** Mixing up which one is removed is a classic exam error — and the distinction sets up alternative splicing later.
+>
+> ---
+> **Card 13** | Tier 2 | Gene Expression
+>
+> **Front:** An mRNA codon reads 5'-AUG-3'. What is the matching tRNA anticodon?
+>
+> **Back:** 3'-UAC-5' (written 5'→3' as CAU). The anticodon is complementary and antiparallel to the codon.
+>
+> **Why it matters:** Codon-anticodon pairing questions test both base-pairing rules and strand direction at once.
+>
+> ---
+> **Card 14** | Tier 2 | Mitosis
+>
+> **Front:** What happens during anaphase of mitosis?
+>
+> **Back:** Sister chromatids separate and are pulled to opposite poles of the cell by the spindle microtubules.
+>
+> **Why it matters:** Anaphase is the moment the duplicated chromosomes actually divide — the event most often shown in microscope-ID questions.
+>
+> ---
 >
 > ### Tier 3 — Advanced (Analysis & Synthesis)
 >
 > ---
-> **Card 11** | Tier 3 | Meiosis
+> **Card 15** | Tier 3 | Meiosis
 >
 > **Front:** Explain two mechanisms by which meiosis generates genetic diversity.
 >
@@ -331,7 +394,7 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** This is why sexual reproduction produces unique offspring — a common essay question.
 >
 > ---
-> **Card 12** | Tier 3 | Gene Expression
+> **Card 16** | Tier 3 | Gene Expression
 >
 > **Front:** A mutation changes one DNA base in a gene. Name three possible outcomes and which is most/least severe.
 >
@@ -340,7 +403,7 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** Mutation types are tested constantly — knowing the spectrum from silent to nonsense lets you predict protein impact.
 >
 > ---
-> **Card 13** | Tier 3 | Mitosis vs. Meiosis
+> **Card 17** | Tier 3 | Mitosis vs. Meiosis
 >
 > **Front:** If a cell with 46 chromosomes undergoes meiosis but crossing over does NOT occur, are the resulting gametes genetically identical? Why or why not?
 >
@@ -349,7 +412,7 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** This tests whether you understand that crossing over and independent assortment are SEPARATE mechanisms — a common exam trap.
 >
 > ---
-> **Card 14** | Tier 3 | Gene Expression
+> **Card 18** | Tier 3 | Gene Expression
 >
 > **Front:** Why is mRNA processing (5' cap, poly-A tail, splicing) necessary before translation in eukaryotes?
 >
@@ -358,8 +421,19 @@ The flashcard output is a single comprehensive message containing all cards, org
 > **Why it matters:** "Why does processing matter?" is a higher-order question that tests understanding beyond memorizing the steps.
 >
 > ---
+> **Card 19** | Tier 3 | Meiosis
 >
-> **Total: 14 cards** (5 Tier 1, 5 Tier 2, 4 Tier 3)
+> **Front:** Compare the gametes produced when nondisjunction occurs in meiosis I versus meiosis II.
+>
+> **Back:** Meiosis I (homologs fail to separate): all four gametes are abnormal — two with an extra chromosome (n+1), two missing one (n−1). Meiosis II (sister chromatids fail to separate in one cell): two gametes are normal (n), one is n+1, and one is n−1.
+>
+> **Why it matters:** This tests whether you can track chromosomes through both divisions — a common synthesis question that links meiosis to aneuploidy.
+>
+> ---
+>
+> **Total: 19 cards** (6 Tier 1, 8 Tier 2, 5 Tier 3)
+>
+> **Accuracy check:** no cards flagged for review.
 >
 > **Study order:** Master Tier 1 first (aim for 100% recall without flipping). Then drill Tier 2. Save Tier 3 for 1–2 days before the exam — these are the questions that separate A's from B's.
 >
@@ -375,15 +449,20 @@ The flashcard output is a single comprehensive message containing all cards, org
 > Define transcription in one sentence.	Transcription is the process of copying a gene's DNA sequence into mRNA, carried out by RNA polymerase in the nucleus.
 > Define translation in one sentence.	Translation is the process of reading mRNA codons at the ribosome to assemble a chain of amino acids into a protein.
 > What is a codon?	A sequence of three mRNA nucleotides that codes for one specific amino acid (or a stop signal). 64 possible codons.
+> What is the start codon, and which amino acid does it code for?	AUG — codes for methionine and marks where translation begins.
 > What are three key differences between mitosis and meiosis?	(1) Mitosis = 1 division, meiosis = 2. (2) Mitosis → 2 diploid, meiosis → 4 haploid. (3) Mitosis → identical, meiosis → genetically unique.
 > What is crossing over, and during which phase does it occur?	Exchange of DNA segments between homologous chromosomes during Prophase I of meiosis.
 > Describe the path from gene to protein in three steps.	(1) Transcription: DNA → mRNA. (2) RNA processing: cap, tail, splice. (3) Translation: mRNA → protein at ribosome.
 > What is the role of tRNA in translation?	tRNA carries amino acids to the ribosome; its anticodon pairs with mRNA codons to ensure correct amino acid placement.
 > What happens during the S phase of the cell cycle?	DNA replication — each chromosome is duplicated into sister chromatids joined at the centromere.
+> What is the difference between an intron and an exon?	Introns are removed by splicing; exons remain and are joined in the mature mRNA.
+> An mRNA codon reads 5'-AUG-3'. What is the matching tRNA anticodon?	3'-UAC-5' (CAU written 5'→3') — complementary and antiparallel.
+> What happens during anaphase of mitosis?	Sister chromatids separate and are pulled to opposite poles by spindle microtubules.
 > Explain two mechanisms by which meiosis generates genetic diversity.	(1) Crossing over in Prophase I swaps alleles. (2) Independent assortment in Metaphase I randomizes chromosome distribution.
 > A mutation changes one DNA base. Name three possible outcomes.	(1) Silent — same amino acid (least severe). (2) Missense — different amino acid (varies). (3) Nonsense — stop codon, truncated protein (most severe).
 > If meiosis occurs without crossing over, are gametes identical?	No — independent assortment still randomizes maternal/paternal chromosome distribution.
 > Why is mRNA processing necessary before translation in eukaryotes?	5' cap protects/aids recognition, poly-A tail stabilizes, splicing removes introns — without it, mRNA is degraded or non-functional.
+> Compare nondisjunction in meiosis I vs. meiosis II.	Meiosis I: all four gametes abnormal (two n+1, two n−1). Meiosis II: two normal, one n+1, one n−1.
 > ```
 >
 > Want me to add more cards on any specific concept, or adjust the difficulty balance?
