@@ -18,12 +18,12 @@ techniques:
   - ED-02
 difficulty: intermediate
 related_prompts:
-  - prompts/pacu_orientation_curriculum_designer.md
-  - prompts/pacu_simulation_scenario_builder.md
-  - prompts/pacu_simulation_debrief_facilitator.md
-  - prompts/pacu_skill_drill_designer.md
-  - prompts/pacu_emergency_drill_designer.md
-  - prompts/pacu_unfolding_case_study.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_scenario_builder.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_skill_drill_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergency_drill_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_unfolding_case_study.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - INACSL Standards of Best Practice Simulation

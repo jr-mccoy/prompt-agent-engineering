@@ -15,8 +15,20 @@ tags:
   - risk-stratification
   - population-health
   - prognosis
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -48,6 +60,19 @@ Attending producing the risk assessment that justifies a disposition or intensit
 6. **Translate the tier into management intensity.** A high readmission risk → intensive transitional care (early follow-up, med reconciliation, home health, telephonic check-in). A high deterioration score → higher level of care or increased monitoring frequency. Tie each mitigation to a driver.
 
 7. **Verification pass on the numbers.** Re-check that the inputs map correctly to the score and that the tier and its published outcome estimate are stated accurately. Flag any input you were unsure of. For decisions hinging on a threshold (admit vs. discharge), make the threshold logic explicit.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report a score as an approximate range ("score ≈ X–Y") that the tool's point table may not produce; a point table yields discrete totals, so give the total for each plausible input.
+- Map a raw input straight to points without the tool's conversion table — LACE converts the Charlson index to points non-linearly, and CHA2DS2-VASc scores age in bands.
+- Quote the event rate attached to a tier from memory; cite the derivation or validation study or write `[VERIFY: published tier estimate]`.
+- Count a factor twice — once inside the score and again as an upward GESTALT CALIBRATION — when the tool already includes it.
+
+✅ **DO:**
+- Recompute the total from the component points listed in INPUTS USED and confirm it equals SCORE / TIER, showing the addition.
+- For each MISSING input, score it at its lowest and highest possible value; if the tier changes between them, the verdict is "tier indeterminate pending [input]".
+- Confirm the patient falls inside the tool's derivation population and setting (medical vs. surgical, adult, inpatient) and say so in INSTRUMENT.
 
 ## Output Format
 
@@ -88,12 +113,12 @@ INSTRUMENT: LACE index (Length of stay, Acuity, Comorbidity, ED visits) — vali
 INPUTS USED:
 - L (length of stay 5 days): 4 points.
 - A (acute/emergent admission): 3 points.
-- C (Charlson comorbidity — HF, diabetes, CKD): ~3–4 points.
+- C (Charlson comorbidity — HF, diabetes, CKD): Charlson index 2–5 (HF 1; diabetes 1, or 2 if end-organ damage is coded; renal disease 0 or 2 depending on whether the CKD meets Charlson's moderate–severe renal definition) → LACE C points 2, 3 or 5 (index ≥4 scores 5; there is no 4-point C value).
 - E (ED visits in prior 6 mo = 2): 2 points.
-- Approximate LACE ≈ 12–13.
-- MISSING/ESTIMATED: exact Charlson tally depends on full comorbidity coding; range stated.
+- LACE total = 4 + 3 + C + 2 = 11 (C=2), 12 (C=3) or 14 (C=5).
+- MISSING/ESTIMATED: exact Charlson tally depends on full comorbidity coding; scored at each plausible value.
 
-SCORE / TIER: LACE ~12–13 → HIGH risk tier (LACE ≥10 indicates high readmission risk; expected 30-day readmission/death substantially above baseline).
+SCORE / TIER: LACE 11, 12 or 14 → HIGH risk tier at every plausible Charlson value (LACE ≥10 indicates high readmission risk; expected 30-day readmission/death substantially above baseline).
 
 DRIVERS:
 - Non-modifiable: age 78, multimorbidity (HF + DM + CKD), prior admission pattern.
@@ -111,5 +136,5 @@ MANAGEMENT INTENSITY (mitigations tied to drivers):
 
 DECISION SUPPORTED: Discharge is appropriate (euvolemic) BUT mandates a high-intensity transitional-care bundle, not routine follow-up. Without it, readmission risk is unacceptably high.
 
-VERIFICATION: LACE components mapped to provided data; score placed in the published high-risk tier (≥10). Charlson exact points flagged as range-dependent. Gestalt adjustment (upward) justified by factors LACE omits, stated explicitly rather than altering the score.
+VERIFICATION: LACE components mapped to provided data; score placed in the published high-risk tier (≥10). Charlson scored at each plausible value (totals 11 / 12 / 14) — tier is HIGH at all of them, so the verdict does not depend on the missing coding. Gestalt adjustment (upward) justified by factors LACE omits, stated explicitly rather than altering the score.
 ```

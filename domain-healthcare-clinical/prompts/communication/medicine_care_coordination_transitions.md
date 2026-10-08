@@ -20,10 +20,22 @@ related_prompts:
   - medicine_drug_interaction_checker
   - medicine_clinical_documentation
   - medicine_patient_education_adapter
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Care Coordination and Transitions
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide structured frameworks for care transitions and multidisciplinary team coordination including discharge planning, post-acute care transitions, medication reconciliation at transitions, follow-up planning, and team coordination to reduce preventable harm during the high-risk transition period.
 
@@ -349,6 +361,22 @@ READMISSION RISK MITIGATION:
 
 ---
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mark "Reconciliation verified: Yes" after comparing the discharge list with the inpatient MAR — the check is against the verified pre-admission list, and formulary substitutions not switched back (inpatient valsartan for home losartan) become duplicates at home.
+- List a "Held" medication without a restart date and the person who decides it — anticoagulants, antihypertensives and diabetes agents held peri-procedure are the usual silent omissions.
+- Write "Pending results: none" because the summary template had no pending tests, or name a pending result without a responsible clinician and a contact route.
+- Record "Teach-back completed" without the topics covered and the patient's or caregiver's own words for at least the medication changes and the warning signs.
+- Set READMISSION RISK from impression — it must follow the readmission risk factors actually ticked, or the named tool and score used.
+
+✅ **DO:**
+- Line up the pre-admission, inpatient-change and discharge tables row by row and count: every pre-admission drug appears as continued, changed, stopped or held, and every discharge drug traces to one of those rows.
+- Check that every FOLLOW-UP SCHEDULE row marked "Scheduled: Y" has a date, time and location, and that each CRITICAL FOLLOW-UP item appears in the discharge summary sent to the receiving provider.
+- Confirm allergies, code status and high-risk-medication instructions appear in every receiving-provider communication (discharge summary, SNF transfer orders, verbal handoff), not only in one of them.
+
+---
+
 ## Output Format
 
 ```
@@ -465,8 +493,7 @@ Verify and individualize — care transitions require team coordination
 ## Process Guidelines
 
 ### The Transition Is the Danger Zone
-- 20% of patients experience adverse events within 3 weeks of discharge
-- 50% of those are medication-related and potentially preventable
+- A substantial share of patients (roughly one in five in a frequently cited cohort) experience adverse events in the weeks after discharge, many of them medication-related and some preventable `[VERIFY: Forster et al., Ann Intern Med 2003, and current post-discharge adverse-event data]`
 - The first 48-72 hours post-discharge are highest risk
 - Proactive follow-up (calling the patient) is more effective than reactive
 

@@ -23,7 +23,7 @@ tags:
   - nursing-process
   - learner-tool
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_judgment_ngn_drill.md
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md
@@ -53,13 +53,13 @@ Concept-map designer / clinical instructor. You build to nursing-process discipl
 
 ### Build mode
 
-1. **Lock the priority frame (CM-02).** Order the nursing diagnoses by `priority_framework`. Top of map = highest-priority dx (e.g., Impaired Gas Exchange before Activity Intolerance for CHF).
+1. **Lock the priority frame (CM-02).** Order the nursing diagnoses by `priority_framework`. Top of map = highest-priority dx (e.g., Impaired Gas Exchange before Activity Intolerance [VERIFY: label in the program's NANDA-I edition] for CHF).
 
 2. **Center node + medical anchor (RT-06).** Single line: patient identifier + chief medical dx + 2–3 pathophysiology drivers in plain language ("LV systolic dysfunction → pulmonary congestion + reduced CO + neurohormonal activation").
 
 3. **Build each nursing dx node (DS-29 NANDA pattern).**
    - PES format: `Problem (NANDA label)` r/t `Etiology` aeb `Signs/symptoms`.
-   - Example: "Excess Fluid Volume r/t compromised regulatory mechanism (HF) aeb +3 LE edema, weight gain 4 kg in 3 days, crackles bilateral bases, JVD."
+   - Example: "Excess Fluid Volume [VERIFY: label in the program's NANDA-I edition] r/t compromised regulatory mechanism (HF) aeb +3 LE edema, weight gain 4 kg in 3 days, crackles bilateral bases, JVD."
    - Avoid: medical diagnoses as nursing diagnoses ("CHF" is not a nursing dx); vague labels ("alteration in comfort").
 
 4. **For each nursing dx, populate four sub-nodes (DT-05):**
@@ -176,11 +176,21 @@ Total: [X/8]
 | `population_overlay` | Pediatric (caregiver education prominent); OB (maternal + fetal); psych (safety + therapeutic communication prominent) |
 | `complexity_overlay` | Add comorbidities to force cross-system reasoning |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| PES "aeb" clauses and the center node's medication list filled with vitals, exam findings, doses, or allergies that are not in `patient_summary`, so every node looks fully evidenced | Trace each aeb cue, med, and allergy back to `patient_summary`; anything not there is labelled `[assumed for illustration]` or replaced with "[obtain: …]" — in critique mode, flag the same in the learner's map rather than rewarding it |
+| NANDA labels written from memory and ticked "NANDA-valid" | Check each label and its risk/actual form against the NANDA-I edition the program uses `[VERIFY: current NANDA-I edition]` — labels have been renamed between editions; a risk diagnosis takes risk factors, not aeb |
+| Cross-link arrows whose direction contradicts the priority rationale (B "influences" A while the rationale says B is a consequence of A) | Read each arrow and its mechanism against the priority rationale paragraph; the upstream node in the arrow must be the one the rationale treats as the driver |
+| An intervention filed as "dependent" or "independent" by default when the category turns on a standing order or a unit protocol (oxygen titration, fluid restriction) | State the condition for the category ("independent if covered by unit O2 protocol; otherwise dependent"), and in critique mode do not mark the learner wrong for the other defensible filing |
+| Critique-grid score of 2 on SMART outcomes because the sentence contains a number and a timeframe | Score 2 only if the named indicator can actually be measured in that timeframe on this `setting`'s documentation cadence; recompute the grid total from the four axis scores |
+
 ## Verification Checklist
 
 - [ ] Center node names patient + medical dx + ≥ 2 pathophysiology drivers in plain language.
 - [ ] Every nursing diagnosis is NANDA-valid (not a medical diagnosis, not vague).
-- [ ] Every nursing dx is in PES format with all three components.
+- [ ] Every actual nursing dx is in PES format with all three components; risk diagnoses name risk factors instead of s/sx.
 - [ ] Each nursing dx has all four sub-nodes (assessments, 3 intervention categories, outcome).
 - [ ] Independent / collaborative / dependent interventions are correctly categorized (no "administer Lasix" under independent).
 - [ ] Outcomes are SMART — measurable, time-bound, with a named indicator.
@@ -191,7 +201,7 @@ Total: [X/8]
 
 ## Worked Example (compact)
 
-**Input:** mode = `build`, patient_summary = `72M, new CHF exacerbation, EF 30%, BNP 1850, +3 LE edema, IV furosemide running. PMH HTN, T2DM, AFib on apixaban.`, setting = `step-down`, learner_level = `nursing-student-final-semester`, nanda_count = 4, priority_framework = `ABCs`, cross_links_required = 2.
+**Input:** mode = `build`, patient_summary = `72M, new CHF exacerbation, EF 30%, BNP 1850, +3 LE edema, JVD to angle of jaw, weight ↑ 4 kg in 3 days, SpO2 89% RA, RR 26, crackles to mid-lung fields, dyspnea on exertion, SOB with ambulation < 20 ft with HR 88 → 118. PMH HTN, T2DM, AFib on apixaban. Meds: furosemide 40 mg IV q6h, lisinopril 10 mg PO daily, metoprolol succ 25 mg PO daily, apixaban 5 mg PO BID, metformin 500 mg BID. NKDA.`, setting = `step-down`, learner_level = `nursing-student-final-semester`, nanda_count = 4, priority_framework = `ABCs`, cross_links_required = 2.
 
 **Output (excerpt):**
 
@@ -228,11 +238,11 @@ Allergies: NKDA
   Outcome:
     "Patient will maintain SpO2 ≥ 92% on ≤ 2L NC within 24 hr as evidenced by hourly SpO2 documentation."
 
-═══ Priority 2: Excess Fluid Volume r/t compromised regulatory mechanism (HF) aeb +3 LE edema, JVD to angle of jaw, weight ↑ 4 kg in 3 days
+═══ Priority 2: Excess Fluid Volume [VERIFY: label in the program's NANDA-I edition] r/t compromised regulatory mechanism (HF) aeb +3 LE edema, JVD to angle of jaw, weight ↑ 4 kg in 3 days
   [sub-nodes populated: daily weight at 0600 same scale; strict I&O; fluid restriction 1500 mL; sodium ≤ 2 g; furosemide IV; daily BMP for K+]
   Outcome: "Patient will demonstrate weight loss of ≥ 1 kg in 24 hr as evidenced by 0600 daily weight."
 
-═══ Priority 3: Activity Intolerance r/t imbalance between O2 supply and demand aeb SOB with ambulation < 20 ft, HR rise from 88 → 118 with ambulation
+═══ Priority 3: Activity Intolerance [VERIFY: label in the program's NANDA-I edition] r/t imbalance between O2 supply and demand aeb SOB with ambulation < 20 ft, HR rise from 88 → 118 with ambulation
   [sub-nodes populated]
 
 ═══ Priority 4: Risk for Bleeding r/t anticoagulant therapy (apixaban)
@@ -243,8 +253,8 @@ Allergies: NKDA
 Excess Fluid Volume → exacerbates → Impaired Gas Exchange
   Mechanism: pulmonary venous pressure ↑ → transudation into alveoli → reduced gas exchange surface area.
 
-Activity Intolerance → influences → Impaired Gas Exchange
-  Mechanism: ambulation increases O2 demand at a time when supply is already compromised; both planning and pacing decisions live at this junction.
+Impaired Gas Exchange → influences → Activity Intolerance
+  Mechanism: O2 supply is already compromised, so the added O2 demand of ambulation outstrips it; both planning and pacing decisions live at this junction.
 
 >>> PRIORITY RATIONALE
 

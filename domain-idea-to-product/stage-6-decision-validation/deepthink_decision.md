@@ -22,7 +22,7 @@ related_prompts:
   - domain-deep-analysis/deepthink_problem_analysis.md
   - domain-deep-analysis/deepthink_plan.md
   - domain-deep-analysis/deepthink_design.md
-  - domain-decision-making/decisioning_blind_spot_identifier.md
+  - domain-decision-making/decisioning_blind_spot_mirror_see_what_im_missing.md
   - domain-decision-making/decisioning_comprehensive_rapid_tradeoff_analyzer.md
   - domain-productivity/validation/validation_adversarial_mini_check.md
   - domain-prompt-engineering/evaluation/correctness_pre_mortem.md

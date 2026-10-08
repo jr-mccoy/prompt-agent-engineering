@@ -15,11 +15,11 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_confidence_calibration_selfquiz.md
   - pacu_indep_signoff_readiness_self_capstone.md
-  - pacu_orient_reflective_journal.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_reflective_journal.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md
 references:
@@ -28,6 +28,19 @@ references:
 ---
 
 # Cueing-Decay Self-Tracker — With-Cues → Independent, Domain by Domain
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A self-tracking aid, not live clinical decision support or an official evaluation. It measures how much prompting you still need; the sign-off decision belongs to your preceptor and educator.
 
@@ -85,6 +98,19 @@ One coaching point: [...]
 | `entry_scope` | `week` smooths noise into a cleaner trend |
 | `cue_taxonomy` | Expand cue types to diagnose *why* prompting persists |
 | `paired_mode` | Reconcile with preceptor's independence-rubric notes (learner-held) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "decaying→independent (3 shifts unprompted)" unless `history` holds three logged entries for that domain — a remembered streak is not a trend.
+- Log `cue: none` when the preceptor stepped in without speaking (took over a task, repositioned the patient, silenced and re-checked a monitor) — a non-verbal takeover is a cue, usually a safety-catch.
+- Count a shift where the domain did not come up as an unprompted entry; absence of practice is not absence of cueing.
+- Read a cue that changed type from safety-catch to technique as decay when the domain then went unpractised for a stretch — the shift in type may be time away, not growth.
+
+✅ **DO:**
+- Recompute every trend label from the dated `history` rows and show the entries it rests on (date, level, cue type); a label with fewer than the entries it claims is downgraded to "insufficient entries."
+- Classify a domain as regressing whenever a safety-catch cue reappears after a no-cue entry, even if the latest level token is higher.
+- Reconcile domain names to the 14 map domains before trending — "airway" and "airway-respiratory" logged separately split one trend into two flat ones.
 
 ## Verification Checklist
 

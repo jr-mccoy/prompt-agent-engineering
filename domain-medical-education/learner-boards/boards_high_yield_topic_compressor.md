@@ -25,8 +25,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_board_style_question_review.md
-  - ../study-planning/learner_spaced_repetition_deck_generator.md
+  - domain-medical-education/learner-boards/boards_style_question_review.md
+  - domain-medical-education/learner-study-systems/study_spaced_repetition_deck_generator.md
 ---
 
 # High-Yield Topic Compressor for Health-Professions Learners

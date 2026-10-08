@@ -14,8 +14,20 @@ tags:
   - inbox
   - triage
   - ehr
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -51,6 +63,19 @@ Attending clearing your inbox at end of clinic, with a low threshold for escalat
 6. **Draft the action for each item** so it's executable: the refill approved or denied with reason, the result letter, the nurse instruction, the call-back script. A triage that doesn't reduce downstream work is incomplete.
 
 7. **Verification pass.** Re-scan the EMERGENT and URGENT tiers: is anything misclassified down? Confirm no critical result was sorted as routine. State explicitly if any item is ambiguous and needs human eyes on the full chart.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Draft a renal-dose, hold or resume instruction (gabapentin, K-retaining agents, anticoagulants) from a recalled number; use the label or formulary value or write `[VERIFY: label renal dosing at this CrCl]` — label renal tables are keyed to CrCl, not the eGFR the result shows.
+- Treat a single critical value as confirmed without checking the input for a spurious cause (hemolyzed or delayed specimen), or dismiss it as artifact without ordering the repeat.
+- Approve an item in ROUTINE while another item in the batch may be the same patient and changes the decision; resolve identity by MRN/DOB, never by name or drug.
+- Fill TRIAGE VERIFICATION with "re-scanned, no misclassification" as boilerplate.
+
+✅ **DO:**
+- Count items in versus items out: the total across EMERGENT, URGENT, ROUTINE, FYI/DELEGATE and AMBIGUOUS equals the batch size, or a message has been dropped.
+- For each EMERGENT and URGENT line, name the trigger that put it there — the value with units and the reporting lab's critical flag, or the symptom phrase quoted from the message.
+- Label a result with no prior value supplied "single value — no trend available" instead of "improved" or "stable".
 
 ## Output Format
 
@@ -88,19 +113,19 @@ TRIAGE VERIFICATION: [confirmation that emergent/urgent tiers were re-scanned; a
 ```
 === EMERGENT (act now) ===
 - Item 1 (sugar 350-400, nausea, dyspnea, T2DM): Picture concerning for DKA/HHS — hyperglycemia + nausea + tachypnea. ROUTE: Provider/RN to CALL PATIENT NOW. ACTION: Directive — "Do not reply by portal. Call patient immediately; if confirmed nausea + labored breathing with these glucoses, advise ED now for ketone/anion-gap evaluation. Do not manage async."
-- Item 2 (K 6.5, CKD on lisinopril + spironolactone): Critical hyperkalemia. ROUTE: Provider call. ACTION: Call patient to assess symptoms, hold lisinopril AND spironolactone, advise same-day ECG and recheck — ED if any weakness/palpitations or if repeat draw confirms and patient symptomatic. Flag both K-retaining agents for discontinuation pending recheck.
+- Item 2 (K 6.5, CKD on lisinopril + spironolactone): Critical hyperkalemia. ROUTE: Provider call. ACTION: Call patient now, hold lisinopril AND spironolactone, and advise ED now for ECG and repeat potassium — a critical value is not deferred to an outpatient recheck or made conditional on symptoms [VERIFY: local critical-potassium protocol]. Flag both K-retaining agents for discontinuation pending recheck.
 
 === URGENT (same day) ===
-- Item 6 (gabapentin renal dosing, eGFR 25): ROUTE: Provider answer to pharmacy. ACTION: At eGFR 15–29, gabapentin max ~300 mg/day, typically dosed once daily; reduce from any standard regimen. Confirm indication and current dose before finalizing.
+- Item 6 (gabapentin renal dosing, eGFR 25): ROUTE: Provider answer to pharmacy. ACTION: Renal dose reduction required — calculate CrCl (label renal tables are keyed to CrCl, not eGFR) and give the label's dose range for that CrCl [VERIFY: gabapentin product label renal dosing at this CrCl]. Confirm indication and current dose before finalizing.
 
 === ROUTINE (days) ===
-- Item 3 (lisinopril refill, stable, BP 126/78): ROUTE: Provider approve. ACTION: Approve 90-day refill — BUT note potential link to Item 2 (different patient; verify not same chart). Document last BP.
+- Item 3 (lisinopril refill, stable, BP 126/78): ROUTE: Provider approve. ACTION: Approve 90-day refill only after confirming by MRN/DOB that this is not the Item 2 patient; if it is the same patient, do not refill — lisinopril is on hold per Item 2. Document last BP.
 - Item 5 (A1c 6.8, improved): ROUTE: RN result letter. ACTION: Release with reassurance — "A1c improved to 6.8, continue current plan, recheck in 6 months."
 
 === FYI / DELEGATE ===
 - Item 4 (gym form): ROUTE: Front desk / forms queue. ACTION: Forward for standard form-completion workflow; no clinical decision.
 
-AMBIGUOUS — NEEDS FULL CHART REVIEW: None, though confirm Items 2 and 3 are not the same patient before approving the lisinopril refill.
+AMBIGUOUS — NEEDS FULL CHART REVIEW: None beyond the Item 2/3 identity check — the batch does not state whether they are the same patient; confirm by MRN/DOB before acting on the lisinopril refill.
 
 TRIAGE VERIFICATION: Re-scanned emergent/urgent tiers. Two emergent items (DKA-concern message, critical K) both involve symptoms or critical values requiring a phone call, not an async reply — correctly escalated. No critical result was sorted as routine.
 ```

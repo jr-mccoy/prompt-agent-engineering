@@ -14,8 +14,20 @@ tags:
   - internal-medicine
   - diagnostic-workup
   - anemia
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -76,7 +88,7 @@ Work up the anemic adult: classify by MCV (microcytic, normocytic, macrocytic) a
      - Postmenopausal women and men: GI source until proven otherwise → EGD and colonoscopy. Capsule endoscopy if both negative. Celiac serology (anti-tTG IgA + total IgA) in iron-refractory IDA.
      - Athletes, blood donors, malabsorption (post-bariatric, atrophic gastritis, H. pylori).
    - **Treatment:**
-     - **Oral iron**: ferrous sulfate 325 mg (65 mg elemental) every other day or daily on empty stomach with vitamin C. Every-other-day dosing (per IRONOUT and other studies) is at least as effective and better tolerated due to hepcidin physiology.
+     - **Oral iron**: ferrous sulfate 325 mg (65 mg elemental) every other day or daily on empty stomach with vitamin C. Every-other-day dosing (per iron-absorption studies [VERIFY: source trials]) is at least as effective and better tolerated due to hepcidin physiology.
      - Reticulocytosis at 5–10 days; Hgb increase ~1 g/dL/2–3 weeks. Continue 3–6 months after Hgb normalized to replete stores.
      - **IV iron** (ferric carboxymaltose 750 mg ×2, ferric derisomaltose 1000 mg single dose, iron sucrose) for: oral intolerance, malabsorption, ongoing loss, CKD, IBD, post-bariatric, severe anemia needing rapid replacement, anemia of pregnancy (2nd/3rd trimester).
      - Treat underlying cause (lesion, H. pylori eradication, celiac diet).
@@ -127,9 +139,24 @@ Work up the anemic adult: classify by MCV (microcytic, normocytic, macrocytic) a
 
 12. **Transfusion thresholds.**
     - General hospitalized patient: Hgb <7.
-    - Cardiac disease, ACS, cardiac surgery: <8 (some <7 per trials including FOCUS, MINT debated).
+    - Cardiac disease, ACS, cardiac surgery: <8; the threshold in acute MI is debated (MINT) — cite each trial only for the population and thresholds it tested [VERIFY: current AABB transfusion guideline; MINT and FOCUS populations/arms].
     - Active bleeding, hemodynamic instability: clinical, transfuse to symptoms and ongoing loss.
     - Premedication for known reactions; ABO type and screen mandatory; informed consent.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call the anemia "hypoproliferative" from the raw retic % — compute the reticulocyte index; if only Hgb is supplied, state the estimated Hct and label it estimated.
+- Read a "normal" ferritin as excluding iron deficiency when inflammation, liver disease or CKD is present, or accept a borderline B12 as the cause without MMA.
+- Get the direction of a transfusion comparison wrong — write the threshold, the patient's value and "above" or "below" in that order.
+- Stop at "iron deficiency" without a cause; in men and postmenopausal women the can't-miss source is GI malignancy, and a remote or incomplete colonoscopy is not a negative workup.
+- Assign a single cause to a normal MCV when mixed deficiency (iron plus B12/folate) can average it out — check RDW and the smear.
+
+✅ **DO:**
+- Recompute each index from the input: RI = retic % × (Hct/45) ÷ maturation factor; TSAT = serum iron ÷ TIBC × 100; confirm each matches the classification printed.
+- Name the confirmatory step behind each label: IDA → bleeding source found; B12 → MMA; hemolysis → LDH, haptoglobin, indirect bilirubin and smear together; marrow failure → smear review or marrow.
+- At the follow-up you schedule, state the expected response (retic rise, Hgb change) and the action if it is absent (adherence, malabsorption, ongoing loss, wrong diagnosis).
+- Cite a trial only for the question it tested, and take iron, B12 and ESA doses from the label or `[VERIFY: label]`.
 
 ## Output Format
 
@@ -170,7 +197,7 @@ DISPOSITION:
 
 ```
 SEVERITY:
-- Hgb 8.4 — moderate. No hemodynamic instability. Symptomatic. Below transfusion threshold for cardiac comorbidity (none here); not yet at general threshold of 7.
+- Hgb 8.4 — moderate. No hemodynamic instability. Symptomatic. Threshold 8 (cardiac comorbidity — not applicable, none here): 8.4 is above it. General threshold 7: 8.4 is above it.
 
 CLASSIFICATION:
 - Microcytic (MCV 76), elevated RDW.

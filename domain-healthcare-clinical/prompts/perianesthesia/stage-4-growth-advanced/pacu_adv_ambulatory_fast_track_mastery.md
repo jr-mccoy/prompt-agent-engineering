@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_adv_complex_population_mastery.md
   - pacu_adv_high_acuity_recovery_reasoning.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Ambulatory Fast-Track Mastery — PADSS Discharge Judgment & Convert-to-Admit Triggers
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A judgment drill, not live clinical decision support. Discharge criteria, PADSS scoring, and fast-track pathways are **per facility policy** (learner-pasted). This trains *discharge-readiness judgment and convert-to-admit recognition* — the disposition decision follows facility criteria and the provider.
 
@@ -90,6 +103,19 @@ One coaching point: [...]
 | `case_seed` | Match the unit's ambulatory case mix |
 | `hidden_flag` | Bury a convert trigger behind passing numbers |
 | `logistics` | Vary escort/home-support to stress the go-home safety check |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write a PADSS item score, total, or pass cut-off when `facility_policy` was not pasted — CRITERIA SCORE then reads "cannot score: policy not pasted".
+- Score a criterion "pass" from one reading while JUDGMENT BEYOND THE SCORE calls the same symptom plateaued; the score and the trajectory must cite the same data points.
+- Tick `Escort [Y]` because an escort is on the schedule, or `Teach-back understood [Y]` when teaching was deferred or given to a still-symptomatic or sedated patient.
+- Name a discharge analgesic or antiemetic with a dose or frequency in DISCHARGE TEACHING — `per provider order` only.
+
+✅ **DO:**
+- Verify the score line by line: map each pasted criterion to the case finding used to score it; a criterion with no finding is "not yet assessable", never pass.
+- Check internal consistency: if any CONVERT-TO-ADMIT red flag is present, the disposition line cannot read "discharge", whatever the score.
+- Word the disposition as a nursing hold-and-escalate to the provider, not as a nurse-made admit or discharge decision.
 
 ## Verification Checklist
 

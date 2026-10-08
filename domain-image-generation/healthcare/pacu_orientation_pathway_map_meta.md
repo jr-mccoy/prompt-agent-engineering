@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-05-15"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -101,3 +110,18 @@ VALIDATION CHECKLIST:
 - New-grad pathway: identical template, longer pacing, fewer "compressed" theme bands.
 - ICU-transfer pathway: shorter early-foundation bands, expanded mid-orientation PACU-distinctive bands.
 - Vertical / portrait variant: rotate axis 90° for narrow-wall display.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept evaluation diamonds at weeks the model picked — models space markers evenly; three input events mean exactly three diamonds, at the input weeks.
+- Let the ≤ 5-word band label change meaning while shortening a theme — "Supervised full assignment" compressed to "Full assignment" reads as unsupervised practice the curriculum did not grant.
+- Read the "Final sign-off" callout as naming who signs; a callout that adds an approver or criterion invents a facility rule the footer routes to the orientation program.
+- Pass "theme band per week" when the teal / amber choice was the model's — the inputs, not the renderer, mark which weeks are transition or high-load.
+
+✅ **DO:**
+- Tabulate each week from the image — tick label, band color, band text, circle letter, marker yes/no — and compare row by row with the curriculum-designer output; ticks should number N + 1 (Wk 0 to Wk N).
+- Set every shortened band label beside its source theme and replace any word that widens scope with the source wording.
+- Count red on the canvas: only evaluation-diamond borders may be red, so a red band, circle or label is a rendering error.

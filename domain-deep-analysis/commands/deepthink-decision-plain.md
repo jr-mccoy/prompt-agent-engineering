@@ -1,6 +1,7 @@
 ---
 name: deepthink-decision-plain
 description: A plain-English version of /deepthink-decision, written for non-technical users. Same five-step rigor as the original, with simpler language and friendlier check-ins. Drives the model through Frame → Break Down options & criteria → Multiple Viewpoints → Stress-Test → Sum Up, using AskUserQuestion at every check-in. Result is an honest recommendation with reasoning, confidence, how-hard-to-undo, and warning signs.
+techniques: [RT-02, CM-02, QA-02, QA-04, QA-09]
 version: "1.0.0"
 category: deep-analysis
 tags: [deep-analysis, decision-making, multi-perspective, tradeoff-analysis, plain-english, non-technical, accessible, gated-workflow]
@@ -52,6 +53,12 @@ This command inherits shared behavior from [`domain-deep-analysis/BACKBONE.md`](
 4. **Continue step-by-step.** Each step ends with the gate mechanism defined in `BACKBONE.md`. Never run multiple steps in a single output.
 
 5. **At the final check-in in Step 5,** offer the follow-on (`/deepthink-plan-plain`) when relevant.
+
+## False-Positive Prevention
+
+1. **Using this when you aren't really choosing yet.** If you can't name two options — even "do nothing" counts as the second — or what you really want to know is *why* something keeps happening, switch to `/deepthink-problem-plain` first. If you've already chosen and want the steps, switch to `/deepthink-plan-plain`.
+2. **Moving on without a real answer at a check-in.** "Sure, whatever you think" at the Step 2 check-in doesn't tell me which criteria are make-or-break. I'll ask again more simply instead of picking for you.
+3. **A recommendation with pieces missing.** Before the final check-in, I make sure the summary has all of it: the option I recommend, why (tied to your make-or-break criteria), what you're giving up, how hard it is to undo, 2–4 warning signs with a time frame, how confident I am and what would flip it, and the strongest challenge. If one is missing, Step 5 isn't finished.
 
 ## Success Criteria
 

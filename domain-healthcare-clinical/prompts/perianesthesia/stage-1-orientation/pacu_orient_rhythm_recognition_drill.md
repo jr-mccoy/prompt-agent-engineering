@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_hemodynamic_event_recognition_drill.md
   - pacu_orient_abg_in_recovery_drill.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # Common PACU Rhythms — Recognize-and-Escalate Drill (Nurse Scope)
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **⚠ Scope banner:** This drill trains **rhythm recognition and escalation at nurse scope** — "is this the baseline, a benign change, or a dangerous change, and who do I call?" It is **not** 12-lead mastery or dysrhythmia diagnosis/management. Rhythm interpretation for treatment belongs to the provider.
 >
@@ -87,6 +100,19 @@ One coaching point: [...]
 | `rhythm_family` | Isolate one family for repetition |
 | `patient_cues` | Flip stability to show how the *same strip* changes urgency |
 | `mode` | `sort-urgency` vs. `stable-or-not` fast triage |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Describe a strip in words that fit two families ("irregular and fast" fits several atrial rhythms and sinus with frequent ectopy) and then mark one family as the only right answer.
+- Call a rhythm `baseline` when no pre-op or intra-op rhythm was supplied — without it the line reads "baseline unknown → treat as new and escalate."
+- Score `Stability-first: Y` because a stability line exists when the urgency word was already assigned in the RECOGNIZE block above it.
+- Add intervals, rates, or other ECG criteria to make the word-description feel realistic.
+
+✅ **DO:**
+- Read the output top-down and confirm the first urgency label appears only after the patient's perfusion, arousal, and symptom cues are recorded.
+- For `dangerous-wide/absent` rounds, include artifact (shivering, movement, a lead off) as a mimic at least once and check the routing says check the patient and leads before calling it.
+- Check each mimic pair uses the same rhythm description with opposite urgency, the difference coming only from the patient cues.
 
 ## Verification Checklist
 

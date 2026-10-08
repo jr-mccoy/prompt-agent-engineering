@@ -18,7 +18,7 @@ tags:
   - dynamic-paneling
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/comic-sequential/comic_panel_page.md
   - domain-image-generation/comic-sequential/webtoon_vertical_strip.md
@@ -144,6 +144,21 @@ Assemble panels into the dynamic layout externally in [READING DIRECTION] order.
 3. "The dynamic paneling made the order ambiguous between panels 3 and 4 — adjust gutter angles so the eye clearly moves to the next panel."
 4. "The eye style drifted from `[MANGA SUBSTYLE]` — restore the canonical face/eye style."
 5. "`[CHARACTER NAME]`'s hair lost its solid black — restore solid-black hair with tone highlights."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept right-to-left because the prompt listed the panels in RTL order — what decides the read is the gutter structure: if a vertical gutter runs the full height of the page, readers go down the right-hand column before crossing, whatever the beat order said.
+- Fix a left-to-right page by mirroring it — the parting, a scar on one cheek, the sword hand and any lettered signage all flip, so the page reads RTL while every character is off-model.
+- Take dotted texture as screentone — models often draw a soft gray gradient with a dot pattern laid over it, which looks right on screen and turns into gray mush or moiré when printed or resized.
+- Pass "no lettering/SFX rendered" while kana-like strokes are worked into speed lines or impact bursts.
+
+✅ **DO:**
+- Have a reader who knows manga read the page cold and call out the panel sequence; compare it with the `[BEAT SHEET]` order.
+- Convert a copy to 1-bit black and white with no dithering; real screentone stays as discrete dots and solid blacks, while a painted gradient collapses into blotches.
+- After any direction change, check every side-specific trait in the bible against each panel, and regenerate rather than flip.
 
 ---
 

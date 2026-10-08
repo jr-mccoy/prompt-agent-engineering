@@ -20,7 +20,7 @@ tags:
   - style-guide
 updated: "2026-04-08"
 related_prompts:
-  - domain-creative-writing/writing_voice_development.md
+  - domain-creative-writing/craft-tools/writing_voice_development.md
   - domain-business-strategy/startup/copy/startup_tone_of_voice.md
 ---
 

@@ -2,12 +2,21 @@
 title: "Marketing Funnel Diagnostics Visualization Prompt"
 category: marketing
 description: "Generate a structured, no-UI visualization prompt optimized for marketing decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Marketing Funnel Diagnostics Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 2 funnel in which a later stage shows more volume than an earlier one, or in which stage widths are drawn for symmetry rather than volume.
+- Let a conversion rate use a different denominator than the intake (stage-to-stage versus top-of-funnel) while keeping the same label.
+- Show ZONE 3 channel shares that sum to more or less than 100%, or that reflect an attribution model the team did not choose.
+- Label a ZONE 4 drop-off with a cause the funnel data does not show.
+
+✅ **DO:**
+- Recompute each stage conversion rate from the intake volumes and compare it to the rendered percentage; confirm volumes never increase from one stage to the next.
+- State the attribution model and date range in the source-note zone, and add up the channel shares before accepting the image.
+- Phrase drop-off annotations as observed rate changes unless the intake supplies a diagnosed cause.

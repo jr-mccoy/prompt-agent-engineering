@@ -14,8 +14,20 @@ tags:
   - emergency-medicine
   - diagnostic-workup
   - syncope
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -80,7 +92,7 @@ Work up the syncopal patient: confirm transient loss of consciousness with spont
 7. **Targeted workup based on suspicion.**
    - Suspected arrhythmia, normal ECG: telemetry; if intermittent and concerning, 24–48 h Holter, 14–30 day patch monitor (Zio), or implantable loop recorder for unexplained syncope with high recurrence risk.
    - Suspected structural: echocardiogram (AS, HCM, EF, RV strain).
-   - Exertional syncope: stress test, echo, cardiology — consider HCM, AS, ischemia.
+   - Exertional syncope: echo first to exclude severe AS / obstructive HCM; stress test only after those are excluded; cardiology — consider HCM, AS, ischemia.
    - Suspected PE: Wells/PERC, d-dimer, CTPA.
    - Suspected dissection: CTA chest/abdomen/pelvis.
    - Suspected vascular brain event: CT/MRI brain — but pure syncope without focal deficit rarely needs head imaging; reserve for trauma, focal deficit, or atypical features.
@@ -99,6 +111,21 @@ Work up the syncopal patient: confirm transient loss of consciousness with spont
    - **AS / HCM:** valvular intervention (TAVR/SAVR), septal myectomy/alcohol septal ablation, myosin inhibitor (mavacamten) for obstructive HCM.
 
 10. **Driving and activity restrictions.** Counsel per local jurisdiction; common: no driving for 1 month after unexplained syncope, longer if cardiac cause without intervention. Document the conversation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Score the CSRS "history of heart disease" item from a murmur or a diagnosis suspected at this visit — it scores known prior disease — and do not invent tiers between the published bands (e.g., "medium-high").
+- Accept "QTc normal" without the correction formula and the heart rate it was corrected at; Bazett overcorrects at fast rates.
+- Order exercise stress testing for exertional syncope before echocardiography has excluded severe aortic stenosis or obstructive HCM.
+- Call orthostatics negative when the standing reading was taken only once or before 3 minutes.
+- Apply CSRS or SFSR outside the adult ED populations they were derived in (e.g., children) without saying so.
+
+✅ **DO:**
+- Recompute the CSRS item by item, writing each item's value and its input source, re-add the total and map it to the published tier band.
+- When raw QT and RR intervals are supplied, recompute the QTc yourself and name the formula used.
+- Recompute the orthostatic change (supine minus standing SBP, DBP and HR) and compare it with the definition in Step 2.
+- State driving restrictions as `[VERIFY: local licensing regulation]`, and carry a pregnancy result for patients of reproductive age.
 
 ## Output Format
 
@@ -161,7 +188,7 @@ ECG:
 - No bifascicular block, QTc normal, no ischemia.
 
 RISK SCORES:
-- CSRS: predisposition vasovagal 0, heart disease (presumed AS) +1, SBP normal 0, troponin neg 0, axis 0, QRS 0, QTc 0, ED diagnosis cardiac +2 = +3 → MEDIUM-HIGH risk.
+- CSRS: predisposition vasovagal 0, history of heart disease 0 (HTN/hyperlipidemia only; the murmur and presumed AS are suspected at this visit, not known prior disease — input's "?+1" not scored), SBP normal 0, troponin neg 0, axis 0, QRS 0, QTc 0, ED diagnosis cardiac +2 = +2 → MEDIUM risk (band 1 to 3).
 - SFSR: abnormal ECG (LVH with strain) → positive → admit/observe.
 
 DIFFERENTIAL (ranked):

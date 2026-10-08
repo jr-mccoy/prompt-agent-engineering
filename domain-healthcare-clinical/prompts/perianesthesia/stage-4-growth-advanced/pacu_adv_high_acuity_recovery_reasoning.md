@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_adv_hemodynamic_instability_reasoning.md
   - pacu_adv_difficult_airway_recovery.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # High-Acuity Recovery Reasoning — Thinking Through the Complex, Unstable Recovery
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A reasoning drill, not live clinical decision support. It sharpens *how the proficient nurse thinks* through a stacked recovery; real unstable patients are managed at the bedside with the team.
 
@@ -87,6 +100,19 @@ One coaching point: [...]
 | `mode` | `anticipatory` trains foresight; `reactive` trains composure under a surprise |
 | `case_seed` | Target the acuity mix the learner sees least |
 | `curveball` | Inject a late risk that wasn't in the original picture |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Rank the RISK PICTURE without stating likelihood and consequence separately for each risk; a single ranked list hides which factor drove the order.
+- Put a late sign (desaturation, a low BP reading) in the ANTICIPATION early-cue slot; the slot needs the precursor that comes before it.
+- Answer `other risks still held? Y` in STRESS TEST without restating each held risk and its current watch.
+- Word an escalation trigger as an invented threshold ("SBP below X") — triggers are trends or `per facility protocol` values.
+
+✅ **DO:**
+- Verify completeness: every comorbidity and procedural factor in `case_seed` maps to at least one listed risk, or is noted as considered-and-not-ranked with a reason.
+- Count rows: the risks listed equal `active_risks`, and each has its own WATCH-AND-ACT row with monitor, interval, in-scope action, and trigger all filled.
+- Check that every top-2 risk's mimic carries a stated discriminator (e.g., rousability + trend for sleep vs hypoventilation).
 
 ## Verification Checklist
 

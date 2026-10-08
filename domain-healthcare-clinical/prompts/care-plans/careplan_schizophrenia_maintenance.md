@@ -15,8 +15,20 @@ tags:
   - schizophrenia
   - antipsychotic
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -47,7 +59,7 @@ Psychiatrist managing schizophrenia maintenance.
 3. **Long-acting injectable (LAI):** strongly consider for nonadherence, relapse history, or patient preference — reduces relapse/rehospitalization. Options: paliperidone palmitate (monthly, q3-month, q6-month), aripiprazole monthly, risperidone. Overlap oral as labeled when starting.
 
 4. **Adequate trial:** therapeutic dose × 6 weeks. After **two adequate antipsychotic trials** without adequate response → **treatment-resistant schizophrenia → clozapine** (the only agent with superior efficacy here; underused).
-   - Clozapine requires REMS/ANC monitoring (agranulocytosis), and monitoring for myocarditis, seizures, constipation/ileus, metabolic effects, sedation, hypersalivation. Titrate slowly.
+   - Clozapine requires ANC monitoring per the current label (agranulocytosis) — US REMS requirements changed in 2025 `[VERIFY: current clozapine label / FDA REMS status]` — and monitoring for myocarditis, seizures, constipation/ileus, metabolic effects, sedation, hypersalivation. Titrate slowly.
 
 5. **Metabolic monitoring** (atypicals): weight/BMI/waist, blood pressure each visit; fasting glucose/A1c and lipids at baseline, 12 weeks, then annually; intervene early (metformin, agent switch, lifestyle).
 
@@ -58,6 +70,20 @@ Psychiatrist managing schizophrenia maintenance.
 8. **Psychosocial:** assertive community treatment / case management, supported employment, family psychoeducation, CBT for psychosis, cognitive remediation, social-skills training — improve function and reduce relapse.
 
 9. **Monitor:** symptoms/relapse signs, adherence, metabolic, movement, prolactin if symptomatic, QTc as indicated, clozapine ANC per protocol.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Count a trial as "adequate" because the drug name appears in the history — each needs a therapeutic dose, ≥6 weeks at that dose and evidence of adherence (LAI, pill count, level), as in the TRRIP consensus criteria; otherwise label it "adequacy unconfirmed".
+- Reuse one LAI start regimen across products — aripiprazole monohydrate, aripiprazole lauroxil, paliperidone palmitate (deltoid loading) and olanzapine pamoate (post-injection observation) all start differently; take it from the clinician's order or `[VERIFY: product label]`.
+- Write "metabolic monitoring in place" when the plan lists a schedule but no baseline weight, waist, BP, fasting glucose/A1c and lipids with dates.
+- State the clozapine monitoring scheme from memory or apply one ANC cutoff to every patient — benign ethnic neutropenia/Duffy-null phenotype changes the thresholds, and US monitoring requirements changed in 2025 `[VERIFY: current clozapine label]`.
+- Leave the dose unaddressed when smoking status changes (quitting, a smoke-free admission) — CYP1A2 induction falls and clozapine/olanzapine levels rise.
+
+✅ **DO:**
+- Build a trials table from the input — agent, maximum dose, weeks at dose, adherence evidence, response, adverse effect — and make the clozapine recommendation cite the rows that qualify.
+- Check that every relapse the plan attributes to nonadherence has evidence in the input (missed fills, missed injections, patient report, level) rather than being inferred from the relapse itself.
+- Before a QT-prolonging agent or combination, quote the QTc value and date, and check the list for clozapine-level interactions (fluvoxamine, ciprofloxacin) whenever clozapine is on the pathway.
 
 ## Output Format
 

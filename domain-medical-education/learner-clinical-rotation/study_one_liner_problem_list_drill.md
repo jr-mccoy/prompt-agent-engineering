@@ -23,7 +23,7 @@ tags:
   - oral-presentation
   - documentation
   - clinical-reasoning
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
   - domain-medical-education/learner-clinical-rotation/study_soap_note_rehearsal_with_feedback.md
@@ -144,6 +144,16 @@ Restudy target: [the specific skill named precisely]
 | `speed_drill` | Set a 90-second clock; learner must produce both the one-liner and problem list under time pressure |
 | `learner_level = MS3` | Background criterion is held to 1–2 items max; at MS3, over-inclusion of background is the primary error |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Printing a Length grade from an estimated word count, so a draft is logged several words longer or shorter than it is | Count the words of the quoted sentence before grading and print the count; apply the bands as written — ≤30 pass, 31–50 borderline, >50 fail |
+| Declaring "all 5 criteria pass" on a revision that dropped the background item driving today's plan (an uncontrolled comorbidity, a lab rise from baseline) | Before passing, list the vignette's abnormal findings and confirm each appears in the one-liner or on the active problem list |
+| Using grade values the rubric doesn't define ("partial" on a pass/fail criterion) | Keep to `pass / fail / N/A` per criterion; if a criterion is half-met, it fails and the guiding question names the missing half |
+| Calling a learner's problem a "fabrication" when only an excerpt of the vignette was checked | Search the full `patient_vignette` before using the fabrication label; if the item is absent, quote the vignette section that should have contained it |
+| Accepting lab-derived problems (AKI, DKA, hyperkalemia) because the label sounds right | Recompute the qualifying delta or ratio from the vignette's numbers and state the definition used [VERIFY: KDIGO or relevant criteria] before the problem stays on the list |
+
 ## Verification Checklist
 
 - [ ] One-liner template is given to the learner before they draft — not used as a post-hoc grading secret.
@@ -165,14 +175,16 @@ Restudy target: [the specific skill named precisely]
 - Age/sex: pass
 - Background: fail — 3 diagnoses listed, none distinguished by severity (HFpEF not named, CKD stage not named)
 - Chief syndrome: fail — "trouble breathing and swollen legs" = verbatim symptoms, not syndrome language ("acute decompensated heart failure" is the syndrome)
-- Acuity modifier: partial — weight gain duration mentioned but clinical acuity not framed
-- Length: fail — 48 words
+- Acuity modifier: fail — weight gain duration mentioned but clinical acuity not framed (half-met = fail)
+- Length: borderline — 39 words
 
 **Guiding question:** "You've described what the patient is feeling. What is the clinical syndrome that unifies dyspnea, edema, weight gain, and BNP 1240?"
 
 **Learner v2:** "71M with HFpEF and CKD3 presenting with acute decompensated heart failure — 8 lb gain, BNP 1240, CXR with pulmonary edema."
 
-**Audit v2:** All 5 criteria pass. 22 words. **PASS.**
+**Audit v2:** Age/sex pass; Background fail — dropped DM2 and the abnormal findings driving today's plan (glucose 310; creatinine 2.1 from baseline 1.6); Chief syndrome pass; Acuity modifier pass; Length pass — 20 words. Status after v2: CORRECTED.
+
+**Corrected one-liner (tutor):** "71M with HFpEF, CKD3, and DM2 presenting with acute decompensated heart failure — 8 lb gain, BNP 1240, CXR pulmonary edema — with creatinine 2.1 (baseline 1.6) and glucose 310." (28 words.) Rule: every abnormal finding in the vignette must appear in the one-liner or on the active problem list.
 
 **Problem list (learner):** chest pain, acute CHF, CKD, diabetes, high blood sugar
 

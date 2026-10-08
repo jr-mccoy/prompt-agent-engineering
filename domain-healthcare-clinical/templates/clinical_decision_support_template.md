@@ -1,4 +1,35 @@
+---
+title: "Clinical Decision Support Template"
+category: healthcare-clinical/templates
+description: "Copy-ready template for clinical decision support requests: a PICO clinical question, structured patient context, analysis instructions with risk-benefit tables and shared decision-making points, and an explicit uncertainty acknowledgment."
+techniques:
+  - NE-03
+  - CM-01
+  - RT-05
+  - QA-04
+  - OC-03
+difficulty: intermediate
+tags:
+  - clinical-decision-support
+  - evidence-based-medicine
+  - shared-decision-making
+  - medication-safety
+updated: "2026-10-06"
+---
+
 # Clinical Decision Support Template
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > Copy this template when creating clinical decision support requests.
 > Customize placeholders marked with [BRACKETS].
@@ -143,7 +174,7 @@ Provide decision support by:
 
 **Demographics:** 67M, 80kg
 
-**Primary Condition:** CAP - moderate severity (CURB-65 = 2)
+**Primary Condition:** CAP - severity [not provided] (CURB-65: only the age point is derivable; confusion, urea, respiratory rate and blood pressure [not provided])
 
 **Comorbidities:**
 - COPD - moderate, on tiotropium
@@ -165,6 +196,23 @@ Provide decision support by:
 
 **Preferences:** Wants to avoid hospitalization if safe
 ```
+
+---
+
+## False-Positive Prevention
+
+When filling this template:
+
+❌ **DON'T:**
+- Put a severity score in Primary Condition without its components — a CURB-65 total that can be rebuilt only for the age point is not checkable; confusion, urea, respiratory rate and blood pressure must be listed.
+- Fill the Reference Range column from a textbook instead of the reporting lab's own range and units.
+- Leave Weight blank, or Allergies as "details unclear", and then ask for dosing or an antibiotic choice — the answer will silently assume a weight, a renal function or a reaction type.
+- Accept NNT/% and Evidence Quality cells in the returned Risk-Benefit tables that carry no citation; each number needs a source or `[VERIFY: source]`.
+
+✅ **DO:**
+- Before sending, give every value in Relevant Labs/Imaging a date and unit, and compute any score the clinical question depends on from components listed in the request.
+- Mark unknown Patient Context fields "unknown" instead of deleting them, so the Uncertainty Acknowledgment section can name them.
+- Check each guideline the response cites for organization, year and version against the current published edition before acting on it.
 
 ---
 

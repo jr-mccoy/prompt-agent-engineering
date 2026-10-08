@@ -1,3 +1,21 @@
+---
+title: "Deck Assembly & Validation"
+category: presentations
+description: "Review separately generated slide chunks for consistency and readiness (narrative flow, numbers consistent across slides, corporate style) and return a pass/fail validation report with the issues to fix."
+techniques:
+  - QA-11
+  - QA-08
+  - ST-03
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - deck-validation
+  - cross-slide-consistency
+  - quality-gate
+updated: "2026-10-06"
+---
+
 # Deck Assembly & Validation
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -50,6 +68,15 @@ OUTPUT:
 SIMPLE FOCUS:
 Check basics only. Don't overthink it.
 ```
+
+## False-Positive Prevention
+
+1. **PASS because the slide count matches the plan.** Every planned slide existing says nothing about what it claims. For each slide's headline claim and figure, name the source data or the chunk that established it; a claim with no traceable source goes under ISSUES TO FIX.
+2. **"Data consistent across slides" ticked from a spot check.** List every figure that appears on more than one slide (executive summary, body, appendix) and compare all occurrences for value, period, and basis, not just the first pair you notice.
+3. **Bridges and breakdowns checked by label, not arithmetic.** Waterfall components, segment splits, and percentage breakdowns must sum to the stated total within rounding.
+4. **Narrative flow judged from slide titles.** Read across each chunk boundary: a recommendation in a later chunk that rests on a finding no earlier chunk made is a break even when the titles read smoothly.
+5. **"Clear recommendations" with no owner or date.** An action item lacking either is an issue, however crisp its wording.
+6. **"Check basics only" read as permission to skip a check.** The simple focus limits scope to the five checklist lines; a line you did not actually check is marked "not checked", never ticked, and STATUS cannot be "Ready for delivery" while one is.
 
 ## Usage Notes
 

@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Re-base the colour scale per cohort row or per deck version: later cohorts turn greener and the heatmap implies retention improved when only the scale moved.
+- Fill the lower-right triangle; cohorts that have not reached month N have no month-N value, and a full rectangle is an invented future.
+- Let the model supply cohort sizes or month-N percentages for cohorts the intake did not include.
+- Accept a logo-retention row that rises after month 0 or does not start at 100%; that is possible only for revenue retention, and the slide must say which it shows.
+
+✅ **DO:**
+- Fix one absolute scale (e.g. 0–100% with stated breakpoints), print the legend, and check that two cells with the same value in different rows share a colour.
+- Count filled cells per row: a cohort aged N periods has exactly N + 1 cells, and the rest stay blank.
+- Spot-check at least three cells against the intake table, including the newest cell on the diagonal edge.
+- Test any "retention improving" takeaway by comparing same-age cells across cohorts in the intake numbers, not by reading colours.

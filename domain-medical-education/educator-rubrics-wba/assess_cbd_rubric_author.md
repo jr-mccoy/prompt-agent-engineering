@@ -21,7 +21,7 @@ tags:
   - clinical-reasoning
   - workplace-based-assessment
   - rubric
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md
   - domain-medical-education/educator-rubrics-wba/assess_dops_rubric_author.md
@@ -222,6 +222,16 @@ Replaced with: "States ACS phenotype with risk modifiers and explains discrimina
 | `framework_basis` | Anchors map to ACGME / RCPSC / CanMEDS as needed |
 | `include_team_communication` | Adds domain for IPE / team-based care if case involved handoff or consults |
 | `include_patient_safety_focus` | Adds an explicit error / near-miss probe and rubric domain |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Passing the refusal-guard sweep because "understands" / "appreciates" / "shows insight" are absent, while anchors still use synonyms ("grasps," "is comfortable with," "has a solid command of") | Treat the sweep as a property check, not a word search: for every band anchor, name the probe (P1–P6) whose answer or the listed `case_artifacts_available` element whose text would supply its evidence; an anchor with no source is rewritten |
+| Documentation anchors that require evidence the assessor never reviewed (e.g., "completed same-day," "no copy-forward errors" when only the discharge summary is in `case_artifacts_available`) | Mark such anchors "not assessable this CBD" or drop the element; the Documentation rating is only as valid as the chart artifacts actually circled in the header |
+| Probe "Expected (Sat band)" content that embeds a guideline-specific right answer from memory (troponin interval, anticoagulant dose, disposition threshold) | Tag each case-specific clinical standard in an expected response `[VERIFY: current society guideline]` and list it in the source-fidelity audit with status "unverified" until the author confirms the edition — never pre-fill "verified" |
+| Calibration worked examples whose stated expected ratings do not match the scenario text (e.g., a scenario describing explicit pretest probability scored Reasoning 5, or an Overall of 6 beside domain ratings of 5) | Re-score Worked Examples A and B blind against the band anchors before finalizing: each expected domain rating must sit in the band whose anchor wording the scenario actually describes, and the Overall must be defensible from those domain ratings |
+| Probe count that fits the `time_budget_minutes` knob while the per-probe time caps do not | Sum the per-probe time caps plus the "Time in feedback" allowance and confirm the total is ≤ `time_budget_minutes`; trim P6 or P4 rather than shrinking caps below what the expected response needs |
 
 ## Verification Checklist
 

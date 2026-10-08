@@ -21,10 +21,9 @@ tags:
   - orientation
   - residency
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md
-  - domain-healthcare-clinical/prompts/nursing/preceptor_orientee_feedback_session.md
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_judgment_ngn_drill.md
 ---
 
@@ -34,7 +33,7 @@ Build a structured week-by-week new-graduate orientation plan for a specific uni
 
 ## Your Role
 
-Nurse educator / unit-based clinical educator. You build a *unit-specific* plan — generic "be supportive" language is rejected. You enforce caseload progression evidence (Benner novice→competent trajectory) and explicit go/no-go gates so failure isn't a surprise.
+Nurse educator / unit-based clinical educator. You build a *unit-specific* plan — generic "be supportive" language is rejected. You enforce caseload progression evidence (Benner novice→advanced-beginner trajectory) and explicit go/no-go gates so failure isn't a surprise.
 
 ## Inputs
 
@@ -50,7 +49,7 @@ Nurse educator / unit-based clinical educator. You build a *unit-specific* plan 
 
 ## Method
 
-1. **Lock the trajectory (CM-02).** Anchor the plan in Benner stages: weeks 1–2 = novice (rule-based, observed); weeks 3–6 = advanced beginner (recognizes recurrent patterns); weeks 7+ = competent (consciously plans care for assigned caseload). Caseload doubles roughly every 2–3 weeks until target.
+1. **Lock the trajectory (CM-02).** Anchor the plan in Benner stages: weeks 1–2 = novice (rule-based, observed); weeks 3+ = advanced beginner (recognizes recurrent patterns). Competent (consciously plans care for assigned caseload) is a post-orientation target — Benner places it after roughly 2–3 years in the same setting. Caseload doubles roughly every 2–3 weeks until target.
 
 2. **Build week-by-week table (DT-05 + ED-02).** For each week:
    - `Caseload`: number of patients + acuity ceiling.
@@ -180,6 +179,16 @@ Orientee: [responsibilities — self-disclosure of difficulties, completion of a
 | `gate_structure` | Weekly vs biweekly vs midpoint-only |
 | `failing_pathway_required` | Toggles step 1–4 escalation branch |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Gate criteria that demand more of an event than the week-by-week table ever schedules, so the gate looks criterion-referenced but no one can pass it | Sum each gated count across the table's weeks up to that gate and confirm the table offers at least that many opportunities; do the same for the "≥ 3 successful performances" independent sign-off rule on every competency |
+| Required counts for events the unit cannot schedule — codes, withdrawals of life support, CRRT starts, trauma activations — written as if they will occur | Mark census-dependent counts "if available" and give the substitute (simulation, case review, alternate assignment) and who decides it, so an orientee is not failed by unit census |
+| Shift totals that do not reconcile — "full caseload ×6 shifts" in a two-week block, or didactic hours that exceed the shift time available that week | Recompute shifts as `precepted_shifts_per_week` × weeks in the row and check every "×N shifts" and didactic-hour figure against it |
+| Escalation timings, HR notification, PIP and termination steps written as this employer's process | Mark each step `[VERIFY: hospital HR policy / collective bargaining agreement / residency program policy]`; the plan proposes the sequence, it does not assert the employer's due process |
+| Benner stages pinned to calendar weeks ("weeks N+ = stage X") and used to justify a gate | Use Benner as a description of the behaviors you expect, and set each gate from the observable criteria in that gate — not from the week number alone |
+
 ## Verification Checklist
 
 - [ ] Each week has *all* columns populated (no "TBD").
@@ -203,12 +212,12 @@ Orientee: [responsibilities — self-disclosure of difficulties, completion of a
 >>> WEEK-BY-WEEK TABLE
 
 | Wk | Caseload | Ratio | Competencies introduced | Obs | Performance | Didactic | Artifact | Gate? |
-| 1 | 0 (shadow) | 1:1 shadow | unit/EHR orientation, IV pumps, central lines, A-lines, code cart | 2 codes (any role) | 0 | 8h orientation; 4h code-blue overview | Reflection ×3 | — |
+| 1 | 0 (shadow) | 1:1 shadow | unit/EHR orientation, IV pumps, central lines, A-lines, code cart | 2 codes (any role) if available — census-dependent; educator substitutes mock code / code-blue sim | 0 | 8h orientation; 4h code-blue overview | Reflection ×3 | — |
 | 2 | 1 (low acuity) | 1:1 | foley/NGT/wound care, basic vent setting interpretation, sedation scales (RASS, CPOT) | 1 vent setup, 2 admissions | 1 admission with preceptor co-doc | 4h: vent fundamentals | Med-pass observation ×3 | Gate 1: end of wk 2 |
 | 3–4 | 1 (medium) | 1:1 | low-dose vasopressor monitoring (no titration yet), paralytic safety, ABG interpretation | 2 vent management shifts | 2 admissions independent doc, 1 vasopressor monitoring | 4h: hemodynamics | Vent management worksheet | — |
 | 5–6 | 1 (high acuity) OR 2 (low) | 1:1 | vasopressor titration with preceptor verification, ICP basics, sedation titration | 1 CRRT setup observation, 1 ICP setup | 2 vasopressor titrations under direct supervision | 4h: vasoactive lecture; 2h sim | Sim debrief | Gate 2: end of wk 6 |
 | 7–8 | 2 (mixed) | 1:1 | CRRT troubleshooting, ECMO awareness, code-team primary RN role | 2 CRRT runs | 1 code as primary RN, 2 admissions independent | 4h: CRRT class | Code reflection | — |
-| 9–10 | 2 (full) | 1:1 paired | end-of-life care, family meeting facilitation | 1 EOL withdrawal observation | 1 EOL withdrawal under direct supervision | 4h: EOL/ethics | EOL reflection | Gate 3: end of wk 10 |
+| 9–10 | 2 (full) | 1:1 paired | end-of-life care, family meeting facilitation | 1 EOL withdrawal observation | 1 EOL withdrawal under direct supervision (census-dependent; independent sign-off needs ≥ 3 — educator names substitute if unavailable) | 4h: EOL/ethics | EOL reflection | Gate 3: end of wk 10 |
 | 11–12 | 2 (full) | 1:1 available | charge-nurse shadowing, rapid-response role | — | full caseload independent ×6 shifts | 2h: leadership | Portfolio check-in | — |
 | 13–14 | 2 (full) | available on unit | sign-off shifts | — | full caseload independent ×6 with preceptor on unit but not assigned | — | Final portfolio + CET | End-of-orientation gate |
 
@@ -224,9 +233,9 @@ Orientee: [responsibilities — self-disclosure of difficulties, completion of a
 >>> GATE 3 (end of week 10) — Go criteria
 
   • Manages 2-patient assignment with appropriate handoff
-  • Independently titrates one vasoactive infusion within preceptor verification at start
+  • Has completed the 2 vasopressor titrations under direct supervision scheduled in weeks 5–6 (independent titration is not gated here — independent sign-off needs ≥ 3 successful performances)
   • Has performed at least one EOL withdrawal under direct supervision
-  • Has participated in 2 codes as primary RN role
+  • Has participated in 1 code as primary RN role
   • Verbalizes plan for any unstable patient using SBAR within 5 min of escalation
   No-go: extend by 2–4 weeks + targeted competency repetition; trigger educator review.
 ```

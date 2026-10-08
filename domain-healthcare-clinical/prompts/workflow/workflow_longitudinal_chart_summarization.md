@@ -15,8 +15,20 @@ tags:
   - chart-summarization
   - ehr
   - handoff
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -51,6 +63,19 @@ Senior attending picking up an unfamiliar complex patient, building the mental m
 
 8. **Note data quality caveats.** If the record is internally contradictory (two different EFs, conflicting allergy lists) or has gaps (no notes for a 2-year window), say so rather than papering over it. Do not invent continuity that the record does not support.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Produce a synopsis from a description of the chart ("~6 years of records available") when the records themselves were not supplied — every problem, dose and date in it would be invented.
+- Carry a dose forward from an older note when a later note changed it; a superseded dose in MEDICATIONS is the commonest copy-forward error in multi-year summaries.
+- Draw a trajectory arrow ("EF 30% → 40%") between values without the date and source of each end, or across different modalities as if they were comparable.
+- List a current drug next to a current eGFR without flagging a dose the label adjusts at that level — flag it `[VERIFY: label renal dosing]`; do not change it.
+
+✅ **DO:**
+- Give every value in KEY RESULTS and every "last objective data" in ACTIVE PROBLEMS its date and source document, then recount that each dated value appears in the input.
+- Check each "stopped for intolerance" entry against the current list so a same-class re-prescribe is flagged, not summarized.
+- Write "allergy lists consistent" in DATA CAVEATS only after comparing every allergy list in the supplied notes; otherwise state how many lists were compared.
+
 ## Output Format
 
 ```
@@ -81,7 +106,7 @@ DATA CAVEATS: [contradictions, gaps, low-confidence items]
 
 ## Worked Example
 
-**Input:** New-patient handoff. 71 y/o M transferring care; ~6 years of records available. Reason: establishing with new PCP.
+**Input:** New-patient handoff. 71 y/o M transferring care; ~6 years of records pasted in full (progress notes, discharge summaries, cardiology notes, medication lists, labs, echo reports — not reproduced here for length; every value in the output is taken from them). Reason: establishing with new PCP.
 
 **Output:**
 
@@ -102,7 +127,7 @@ MEDICATIONS (current, by indication):
 - Spironolactone 25 mg daily — HFrEF
 - Atorvastatin 80 mg daily — CAD secondary prevention
 - Aspirin 81 mg daily — CAD
-- Metformin 1000 mg BID — T2DM
+- Metformin 1000 mg BID — T2DM (flag: current eGFR 38 — label renal dosing applies at this level; dose not changed in summary `[VERIFY: label renal dosing]`)
 - Recent changes: dapagliflozin added 2024; ARB switched to sacubitril/valsartan 2024.
 - Intolerances/ADRs on record: lisinopril → cough (2021), discontinued.
 
@@ -124,5 +149,5 @@ HISTORICAL CONTEXT:
 
 GOALS / CODE STATUS: Full code per 2025 note; no advance directive on file.
 
-DATA CAVEATS: No records for a ~14-month gap (2022–2023) when patient was out of state; medication reconciliation at first visit advised. Allergy list consistent across notes.
+DATA CAVEATS: No records for a ~14-month gap (2022–2023) when patient was out of state; medication reconciliation at first visit advised. Allergy lists consistent after comparing every allergy list in the supplied notes.
 ```

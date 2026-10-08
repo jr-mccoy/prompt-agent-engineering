@@ -24,7 +24,7 @@ tags:
   - premature-closure
   - metacognition
   - self-audit
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_dual_process_metacognition_coach.md
   - domain-medical-education/learner-clinical-reasoning/reason_ddx_practice_session.md
@@ -140,6 +140,16 @@ Single restudy target for this learner: [the named bias mode + how to drill it]
 | `require_counter_ddx_size` | Floor on counter-DDx entries (default 2, max 4) |
 | `require_kill_switch_test` | Force the kill-switch question to be answerable by a specific test result, not a judgment call |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Quoting a real phrase but filing it under the wrong mode (a base-rate statement rated as "availability"), so the rating looks evidenced but names the wrong bias | Test each quote against that mode's one-line definition in Method step 2; if it fits a different mode better, move it there instead of rating both |
+| Rating most of the seven modes `present` to look thorough, turning one closure error into a list of biases | `absent` is a full rating — a mode is `present` only when its quote could not be explained by a mode already rated; expect two or three live modes, not seven |
+| The three-sentence restatement adds facts the paste doesn't contain (when the fall happened, whether the CT is resulted) | Check every fact in the case summary against `case_summary`; anything not in the paste is written "not stated" and can't anchor a bias rating |
+| Listing "unexplained evidence" the working diagnosis can in fact produce, inflating the case against it | For each listed feature, say in one clause why the working diagnosis cannot produce it; drop features it plausibly explains |
+| Counter-DDx entries that account for none of the unexplained features but are added because they're dangerous | Map each counter-DDx entry to the unexplained features it covers; an entry that covers none moves to a "must exclude regardless" line, and the kill-switch datum is checked to actually discriminate the top counter-diagnosis |
+
 ## Verification Checklist
 
 - [ ] Each bias rating is paired with a specific quoted phrase or named omission from the learner's reasoning. No "you might have been anchored."
@@ -167,7 +177,7 @@ PREMATURE CLOSURE AUDIT
 Learner level: intern   Stakes: medium   Time: 60 min
 
 >>> CASE SUMMARY
-71-year-old man, HTN/DM2/AFib on warfarin, fell 2 days ago, now progressive confusion + headache, scalp bruising on left, no focal deficit on exam. CT head pending.
+71-year-old man, HTN/DM2/AFib on warfarin, recent fall (timing not stated), now 2 days of progressive confusion + headache, scalp bruising on left, no focal deficit on exam. CT head obtained; result not stated.
 Working diagnosis: UTI-induced delirium.
 
 Learner's reasoning (verbatim): "Elderly diabetic with confusion, likely UTI-induced delirium ... I expect CT to be unremarkable — most confusion in this population is infection."
@@ -176,8 +186,8 @@ Learner's reasoning (verbatim): "Elderly diabetic with confusion, likely UTI-ind
 
 Anchoring:             dominant
   Evidence: "Elderly diabetic with confusion, likely UTI-induced delirium" — locked at sentence one, before the trauma history or anticoagulation factored in.
-Availability:          present
-  Evidence: "most confusion in this population is infection" — high base rate cited without adjustment for this patient's specifics.
+Availability:          absent
+  Evidence: no recent or vivid case cited; "most confusion in this population is infection" is a base-rate claim and is rated under base-rate neglect.
 Confirmation:          present
   Evidence: "I expect CT to be unremarkable" — pre-decides imaging outcome to support the working diagnosis.
 Satisfaction of search:dominant
@@ -185,7 +195,7 @@ Satisfaction of search:dominant
 Framing:               trace
   Evidence: "Elderly diabetic with confusion" — chief complaint framed without trauma context.
 Base-rate neglect:     present (in the opposite direction — *missing* the high base rate)
-  Evidence: in a 71-year-old on warfarin with recent fall and scalp bruise, base rate of intracranial hemorrhage is materially elevated; reasoning treats it as low-probability.
+  Evidence: "most confusion in this population is infection" — population base rate applied without updating for this patient; in a 71-year-old on warfarin with recent fall and scalp bruise, base rate of intracranial hemorrhage is materially elevated; reasoning treats it as low-probability.
 Attribution:           absent
 
 >>> UNEXPLAINED EVIDENCE

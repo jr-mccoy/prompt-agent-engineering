@@ -18,7 +18,7 @@ tags:
   - weighted-criteria
   - askuserquestion
   - gated-workflow
-updated: "2026-06-30"
+updated: "2026-10-06"
 related_prompts:
   - domain-deep-analysis/deepthink_problem_analysis.md
   - domain-deep-analysis/deepthink_decision.md
@@ -224,6 +224,17 @@ Options:
 - Treat missing evidence as proof of a defect unless the criterion requires that evidence to exist.
 - Give a high-confidence recommendation when load-bearing evidence is unavailable.
 - Optimize for politeness over review usefulness. Strengths and defects both need evidence.
+
+---
+
+## False-Positive Prevention
+
+1. **Taste dressed as a defect.** A criticism that would vanish if a different competent reviewer wrote the report ("I'd structure this differently", "the tone feels informal") is a preference, not a defect. Before an item enters *Defects / Risks*, name the criterion and the Phase 2 "what good looks like" marker it violates; preference-only items belong in *Reviewer caveats*.
+2. **A strong weighted total can hide a failed gate.** An object rated 82% overall that fails a gating criterion is a revise or reject, not a pass. Derive the recommendation gates-first, then weights, and state that rule in the *Rationale* so the reader can see which one decided it.
+3. **Criteria reverse-engineered from the object.** Criteria proposed after reading the artifact drift toward what it already does well or badly, so the rubric ratifies the first impression. Each criterion and weight must trace to the purpose and stakes confirmed at GATE 1; a criterion that exists only because the object happens to have that feature gets flagged at GATE 2.
+4. **Paraphrase passed off as observed evidence.** "Observed" means the user can open the object at a quoted line, section, or figure and see the property claimed. A summary that reads stronger than the source is inference and must carry that label.
+5. **A sensitivity check that only moves the light criteria.** Shifting weight between two minor criteria and declaring the recommendation "stable" proves nothing. Run the 10–20 point shift on the two highest-weighted criteria and on any criterion that sits within one rating step of a gate.
+6. **Verify the report against its own table before finalizing.** Recompute any overall score from the *Rating* × *Weight* columns; confirm every row marked *Gating?* states pass or fail; map each item in *Defects / Risks* to a criterion row in section 2; and confirm each *Missing Evidence* item names the recommendation it could change. An item that maps to nothing is either an unlisted criterion or an unsupported opinion — fix the table or drop the item.
 
 ---
 

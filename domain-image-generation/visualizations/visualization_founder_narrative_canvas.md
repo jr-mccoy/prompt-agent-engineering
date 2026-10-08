@@ -2,12 +2,21 @@
 title: "Founder Narrative Canvas Visualization Prompt"
 category: founder
 description: "Generate a structured, no-UI visualization prompt optimized for founder decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Founder Narrative Canvas Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let traction figures, market-size numbers, or customer logos appear anywhere on the canvas when the founder supplied none — they make the narrative look investor-ready while being invented.
+- Accept a ZONE 3 flywheel that closes a loop the founder only hopes exists; drawing an assumption as a closed arrow cycle presents it as proven.
+- Let ZONE 4 milestones acquire specific months or quarters beyond those the founder stated.
+- Present ZONE 5 assumption tests that carry no success criterion.
+
+✅ **DO:**
+- Instruct the model to draw every untested loop link as a dashed arrow labelled "assumption", so ZONE 3 shows which edges are evidenced.
+- Cross-check ZONE 5 against the growth loop: each dashed link has a matching assumption test, and each test names its pass/fail signal.
+- Inventory all numerals on the rendered canvas and trace each to the founder's intake; untraceable ones are deleted, not softened into "~".

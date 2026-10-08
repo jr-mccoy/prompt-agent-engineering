@@ -22,7 +22,7 @@ tags:
   - psychological-safety
   - fiction-contract
   - briefing
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md
   - domain-medical-education/educator-simulation-design/sim_debrief_guide_pearls.md
@@ -109,6 +109,16 @@ Considered: [omitting fiction contract | "let's see who sinks" framing | promisi
 | `team_composition` | Interprofessional → add flattening-hierarchy norm + role-respect statement |
 | `environment` | In-situ → add abort protocol + real-patient-priority statement (bridges to in-situ design) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Orientation "can / can't" lines that add capabilities not in `manikin_capability` (promising a sound or sign the input never lists) | Trace every can and can't item to the `manikin_capability` input; anything not listed is said as "ask us" rather than promised, so a learner does not lose time listening for a sign the manikin cannot produce |
+| A fiction contract that is present but names no actual limitation ("the manikin can't do everything a person does") | Name at least one specific limitation that matters in today's scenarios (no skin color change, no real urine output, pupils fixed) and how that information will be supplied instead |
+| Confidentiality and recording promises the program cannot keep ("only faculty in this session will see it," "no grades") written from `recording` and `session_type` alone | Check each promise against the program's actual recording-retention, access, and assessment policy `[VERIFY: institutional simulation recording / data policy]`; state only what is confirmed, and say plainly if footage or participation feeds any evaluation |
+| A pause word that is also a clinical phrase learners may say in role ("time out" during a procedure) | Choose a pause word that cannot occur in the scenario's own dialogue, and say it once in the pre-brief exactly as it must be said |
+| Counting "Everyone okay to start?" plus silence as a comprehension and consent check | Ask one learner to repeat the pause word and how to get labs or vitals; offer a private route to step out (speak to faculty before the first scenario) so consent does not depend on objecting in front of the group |
+
 ## Verification Checklist
 
 - [ ] Basic assumption stated sincerely.
@@ -133,26 +143,26 @@ Level/Team: MS3 pairs   Type: formative   Environment: lab   Recording: yes   Sc
 "Before we start: we believe everyone here is smart, capable, cares about your patients, and wants to get better. We're going to treat each other that way."
 
 >>> FICTION CONTRACT
-"This isn't a real patient and the manikin can't do everything a person does. We'll tell you what it can do — and we're asking you to treat it as real anyway, make real decisions out loud, and we'll meet you there."
+"This isn't a real patient and the manikin can't do everything a person does — for example, it can't make real urine, so when you ask for urine output we'll tell you the number. We'll tell you what it can do — and we're asking you to treat it as real anyway, make real decisions out loud, and we'll meet you there."
 
 >>> CONFIDENTIALITY
-"What happens in this room stays in this room. We don't talk about each other's performance outside. We're recording only for our debrief; faculty in this session are the only ones who'll see it."
+"What happens in this room stays in this room. We don't talk about each other's performance outside. We're recording only for our debrief; faculty in this session are the only ones who'll see it." [VERIFY: institutional simulation recording / data policy — retention, who can access footage]
 
 >>> ORIENTATION
 - Environment: monitor here, code cart there (sim cart — sim meds labeled), phone to 'call' a consultant.
-- Manikin can: palpable pulses, breath/heart sounds, speak through us. Can't: make real urine — we'll tell you the output.
+- Manikin can: palpable pulses, breath sounds, speak through us. Can't: make real urine — we'll tell you the output. Anything not on this list — ask us.
 - Info: vitals on the monitor; labs/imaging by asking us; talk to the patient and we'll answer in role.
 - Sim meds are labeled SIMULATION — not for any real use.
 
 >>> OBJECTIVES + ERROR FRAMING
-"Today is practice. The point is to think out loud and try things. Errors here are expected and completely safe — that's exactly what we'll learn from in the debrief. No grades."
+"Today is practice. The point is to think out loud and try things. Errors here are expected and completely safe — that's exactly what we'll learn from in the debrief. No grades." [VERIFY: program assessment policy — confirm neither participation nor footage feeds any evaluation]
 
 >>> ROLES, LOGISTICS, CONSENT
-Roles: one leads, one assists; you'll switch each scenario. Timing: ~12 min each + debrief. Pause word: "time out." Breaks between scenarios.
-Check: "What questions do you have? Everyone okay to start?"
+Roles: one leads, one assists; you'll switch each scenario. Timing: ~12 min each + debrief. Pause word: "sim pause" — say it exactly like that and everything stops. Breaks between scenarios.
+Check: "What questions do you have? [Learner name], can you tell us the pause word and how you'd get labs or vitals?" Then: "If anyone would rather step out or talk first, come find me privately before scenario 1 — no explanation needed."
 
 >>> HONESTY GUARD
-Truthful: formative, not graded; recording for debrief only; not a trap.
+Truthful: formative, not graded; recording for debrief only (both pending the policy VERIFY checks above); not a trap.
 
 >>> REJECTED
 Considered: skipping orientation to "keep it realistic." Rejected: causes equipment-confusion failures + raises anxiety in first-timers. Replaced with: full orientation.

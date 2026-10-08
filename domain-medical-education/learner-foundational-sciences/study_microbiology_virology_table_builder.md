@@ -22,7 +22,7 @@ tags:
   - vaccine
   - pathogenesis
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drug_grid.md
   - domain-medical-education/learner-foundational-sciences/study_immunology_cascade_explainer.md
@@ -96,6 +96,16 @@ Learner level: [...]   Reference frame: ICTV + CDC/WHO vaccine schedule
 | `add_microscopy_findings` | Adds column for owl's eye (CMV), Negri bodies (rabies), Cowdry A (HSV/VZV), etc. |
 | `pregnancy_overlay` | Adds column flagging teratogenic viruses (rubella, CMV, parvo B19, ZIKV) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Receptor column filled with the viral ligand, or with a receptor on the wrong cell type (EBV gp42 binds HLA class II on B cells; it is not the epithelial entry route) | Keep host receptor and viral ligand distinct; pair each receptor with the cell it sits on and mark uncertain entries `[VERIFY: virology text]` |
+| Pathogenesis cells reading "Lytic + latent" when the Method allows one mechanism per virus | Count the mechanisms in each Pathogenesis cell; keep the defining one and move the other to Syndromes if it matters clinically |
+| Non-antiviral entries in the Antivirals column (immunoglobulin, rituximab, ART for KS) passing because a drug name is present | Admit only agents that act on the virus itself; immunoglobulin or immunotherapy goes in a footnote |
+| Vaccine products and schedule ages stated from memory after a schedule change or product withdrawal | Check the Vaccine column against the current CDC schedule and put its year in the header `[VERIFY: CDC schedule, year]` |
+| Baltimore group inferred from "DNA virus" alone (HBV is Group VII, not I) | Derive the group from replication strategy and cross-check it against the Genome cell on every row |
+
 ## Verification Checklist
 
 - [ ] Every cell populated. No row with missing genome/structure.
@@ -119,13 +129,13 @@ Learner level: clinical   Reference: ICTV + CDC
 
 | Virus | Family | Baltimore | Genome | Structure | Receptor / Target | Pathogenesis | Syndromes | Microscopy | Antivirals | Vaccine |
 |---|---|---|---|---|---|---|---|---|---|---|
-| HSV-1 (HHV-1) | Herpesviridae | I (dsDNA) | dsDNA, linear | Icosahedral, enveloped | HVEM, nectin-1 → epithelial → trigeminal ganglion latency | Lytic + latent in sensory ganglion | Orolabial herpes, herpetic gingivostomatitis, keratitis, encephalitis (temporal lobe) | Cowdry A intranuclear inclusions; Tzanck (multinucleated giant cells) | Acyclovir, valacyclovir, famciclovir; foscarnet for resistant | None |
-| HSV-2 (HHV-2) | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | HVEM, nectin → genital epithelium → sacral ganglion latency | Lytic + latent | Genital herpes, neonatal HSV, meningitis (Mollaret) | Same as HSV-1 | Acyclovir, valacyclovir, famciclovir | None |
-| VZV (HHV-3) | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | Skin epithelium, DRG latency | Lytic + latent in DRG | Varicella (primary), zoster (reactivation), postherpetic neuralgia, Ramsay-Hunt | Cowdry A inclusions; multinucleated cells | Acyclovir, valacyclovir; IVIG for immunocompromised exposed | Live attenuated (varicella, ages 12–15 mo & 4–6 y); recombinant subunit Shingrix (≥50 y, 2-dose) |
-| EBV (HHV-4) | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | CD21 (CR2) on B cells; epithelial entry via gp350/gp42 | Latent in B cells; transforming (oncogenic) | Mono, Burkitt lymphoma, nasopharyngeal carcinoma, PTLD, Hodgkin association | Atypical lymphocytes (Downey cells, CD8+); EBER ISH in tissue | None routine; rituximab for PTLD targets B cells | None |
+| HSV-1 (HHV-1) | Herpesviridae | I (dsDNA) | dsDNA, linear | Icosahedral, enveloped | HVEM, nectin-1 → epithelial → trigeminal ganglion latency | Latent in sensory (trigeminal) ganglion | Orolabial herpes, herpetic gingivostomatitis, keratitis, encephalitis (temporal lobe) | Cowdry A intranuclear inclusions; Tzanck (multinucleated giant cells) | Acyclovir, valacyclovir, famciclovir; foscarnet for resistant | None |
+| HSV-2 (HHV-2) | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | HVEM, nectin → genital epithelium → sacral ganglion latency | Latent in sacral ganglion | Genital herpes, neonatal HSV, meningitis (Mollaret) | Same as HSV-1 | Acyclovir, valacyclovir, famciclovir | None |
+| VZV (HHV-3) | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | Skin epithelium, DRG latency | Latent in DRG | Varicella (primary), zoster (reactivation), postherpetic neuralgia, Ramsay-Hunt | Cowdry A inclusions; multinucleated cells | Acyclovir, valacyclovir (post-exposure immunoglobulin: see note) | Live attenuated (varicella, ages 12–15 mo & 4–6 y); recombinant subunit Shingrix (≥50 y, 2-dose) |
+| EBV (HHV-4) | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | CD21 (CR2) on B cells (viral gp350), HLA class II co-receptor on B cells (viral gp42); epithelial entry uses other receptors [VERIFY: virology text] | Latent in B cells; transforming (oncogenic) | Mono, Burkitt lymphoma, nasopharyngeal carcinoma, PTLD, Hodgkin association | Atypical lymphocytes (Downey cells, CD8+); EBER ISH in tissue | None routine (rituximab for PTLD: see note) | None |
 | CMV (HHV-5) | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | Multiple cellular receptors; PDGFRα on fibroblasts | Latent in monocytes; lytic in many tissues | Mono (heterophile-neg), congenital (SNHL, periventricular calcifications), retinitis in AIDS, transplant CMV disease | Owl's-eye intranuclear inclusion + cytoplasmic inclusions | Ganciclovir, valganciclovir; foscarnet, cidofovir; letermovir prophylaxis post-HCT | None |
 | HHV-6 / HHV-7 | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | CD46 (HHV-6A), CD134 (HHV-6B); CD4 (HHV-7) | Latent in T cells | Roseola infantum (sixth disease) with high fever then rash; post-transplant reactivation | — | Ganciclovir, foscarnet (HHV-6 disease in HCT) | None |
-| KSHV (HHV-8) | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | Heparan sulfate / DC-SIGN; B cells, endothelial | Latent + oncogenic (vIL-6, vCyclin) | Kaposi sarcoma, primary effusion lymphoma, multicentric Castleman disease | Spindle cells with slit-like vascular spaces | No specific antiviral; ART for HIV-associated KS; rituximab for Castleman | None |
+| KSHV (HHV-8) | Herpesviridae | I | dsDNA, linear | Icosahedral, enveloped | Heparan sulfate / DC-SIGN; B cells, endothelial | Oncogenic (vIL-6, vCyclin) | Kaposi sarcoma, primary effusion lymphoma, multicentric Castleman disease | Spindle cells with slit-like vascular spaces | — (no specific antiviral; see note) | None |
 
 >>> CONFUSABLE-PAIR APPENDIX
 - EBV vs. CMV mono: EBV is heterophile-positive (Monospot), atypical lymphocytes, splenomegaly; CMV is heterophile-negative mono, more common in older / immunocompromised.
@@ -137,4 +147,5 @@ Learner level: clinical   Reference: ICTV + CDC
 >>> NOTE ON GAPS
 - EBV vaccine: candidates in development; none currently licensed.
 - HHV-6/7 receptors continue to be characterized; CD46 (6A) vs. CD134 (6B) given as canonical.
+- Not antivirals (kept out of the Antivirals column): VZV post-exposure immunoglobulin (VariZIG) for high-risk exposed persons [VERIFY: current CDC/ACIP guidance]; rituximab (B-cell depletion) for EBV PTLD and HHV-8 Castleman; ART treats HIV, not HHV-8, in HIV-associated KS.
 ```

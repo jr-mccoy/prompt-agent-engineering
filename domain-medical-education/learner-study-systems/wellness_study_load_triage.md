@@ -27,7 +27,7 @@ tags:
   - sustainability
   - metacognition
   - triage
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_dedicated_period_schedule_builder.md
   - domain-medical-education/learner-study-systems/study_spaced_repetition_schedule_designer.md
@@ -177,6 +177,16 @@ If affect axis is red AND ≥ 3 burnout-warning patterns AND not improving by Da
 | `force_rest_day` | Override that mandates a full rest day Day 1 regardless of axis scores |
 | `mental_health_history` | If history of depression/anxiety, lowers escalation threshold to ≥ 2 patterns |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Scoring an axis red from the overall impression when the input sits in another band (a logged value inside the Yellow band scored Red) | Re-score each axis by placing the logged value in the band table, then re-total; the Refusal check and severity band depend on those scores |
+| Ticking burnout-warning patterns by inference ("implied by" a log value), with quotes the learner never wrote, or by filing cognitive complaints under Somatic signals | Each [X] cites the learner's own words from `affect_log` or `proximate_concern`; recount `Count present` from cited items only |
+| Firing the Refusal check with an axis outside its trigger (adding a fourth axis to sleep + exercise + study) | Fire it only when those three axes are all 0; a rest day justified by ≥3 patterns is stated as that rule instead |
+| Deferring the counselor task to Day 7 when affect is already red | Affect red puts a student health / EAP / counselor session on this week's plan; the Day 7 escalation is for non-improvement, not a substitute |
+| A plan that looks complete although the logs mention suicidal thoughts, chest pain, or another clinical symptom | Route those to student health, a clinician, or crisis resources before any study scheduling; this prompt triages study load, not health conditions |
+
 ## Verification Checklist
 
 - [ ] All 7 axes scored 0/1/2 with the evidence column populated.
@@ -208,10 +218,10 @@ Concern: score declining + cannot focus pm. Non-neg: exam in 21 days.
 | Exercise     | 0 | 0/wk |
 | Nutrition    | 0 | skipping lunch most days |
 | Social-rec   | 0 | 1 h/wk |
-| Study hours  | 0 | 11 h × 12 d (overload) |
+| Study hours  | 1 | 11 h × 12 d (heavy; 8–12 Yellow band) |
 | Scoring      | 0 | UW% 64→58 |
 | Affect       | 0 | flat, dread |
-| TOTAL        | 0/14 | critical |
+| TOTAL        | 1/14 | critical |
 
 >>> BINDING CONSTRAINT(S)
 Primary: recovery deficit (sleep + exercise red, sustained).
@@ -219,21 +229,21 @@ Secondary: cognitive fatigue from overload — diminishing returns past hour 8.
 NOT the cause: insufficient study hours. The decline is despite high hours, not because hours are low. Adding hours will make it worse.
 
 >>> BURNOUT-WARNING PATTERNS
-[X] Anhedonic studying (dread, "going through motions")
-[X] Calorie-skipping rationalization
-[X] Sleep compression ("I'll sleep after exam")
-[X] Recovery resentment (implied by 1 h/wk)
+[X] Anhedonic studying (affect_log: "flat, dreading UWorld in mornings")
+[ ] Calorie-skipping rationalization (skipping lunch is logged, but no rationalization stated — counted on the Nutrition axis)
+[ ] Sleep compression (short sleep is logged, but no catch-up rationale stated — counted on the Sleep axis)
+[ ] Recovery resentment (not stated; 1 h/wk is counted on the Social-rec axis)
 [ ] Cynicism toward field (not stated)
-[X] Somatic signals (cannot focus pm = cognitive)
+[ ] Somatic signals (not stated; "can't focus past noon" is cognitive, not somatic)
 [ ] Self-comparison loops (not stated)
-Count: 5 → mandatory rest day Day 1.
+Count: 1 → below the ≥ 3 threshold; no mandatory rest day.
 
 >>> REFUSAL CHECK
-FAIL — sleep + exercise + study + nutrition all red. Day 1 = full rest day. No bargaining.
+PASS — study is Yellow (11 h/d sits in the 8–12 band), so sleep + exercise + study are not all red. The plan still caps hours because recovery is the binding constraint.
 
 >>> 14-DAY TRIAGE
 Week 1 (CUT LOAD)
-  D1 (today): no study. 8 h sleep tonight. Eat 3 meals. 30-min walk. Call one person you like.
+  D1 (today): 6 h study cap. 8 h sleep tonight. Eat 3 meals. 30-min walk. Call one person you like. Book a 30-min student health / EAP / counselor session for this week (affect is red).
   D2: baseline 6 h study only (2 UW blocks of 40 timed + 1 review block). 8 h sleep target.
   D3: same. Add 20-min cardio.
   D4: 6 h. Same recovery floor.
@@ -251,8 +261,8 @@ Only after: sleep ≥ 7 h × 5 nights AND ≥ 3 cardio sessions / wk. Otherwise 
 >>> PREDICTED TRAJECTORY
 D3: first focus improvement.
 D7: first UW% stabilization.
-D14: expect UW% to recover to ~62 baseline; if score is what was there before fatigue set in, the deficit was recovery, not knowledge.
+D14: expect UW% to recover toward the pre-decline 64%; if score is what was there before fatigue set in, the deficit was recovery, not knowledge.
 
 >>> ESCALATION
-Affect axis red + 5 patterns. If affect doesn't lift by D7, schedule student health visit this week. Action item, not optional.
+Affect axis red → the 30-min student health / EAP / counselor session is booked in Week 1 (D1), not deferred to D7. Action item, not optional. The D7 escalation rule needs ≥ 3 patterns (count is 1), so re-check affect and patterns at D7.
 ```

@@ -1,6 +1,7 @@
 ---
 name: deepthink-plan-plain
 description: A plain-English version of /deepthink-plan, written for non-technical users. Same five-step rigor as the original, with simpler language and friendlier check-ins. Drives the model through Frame → Break Down milestones & dependencies → Multiple Viewpoints → Stress-Test → Sum Up, using AskUserQuestion at every check-in. Result is a sequenced plan with named risks, warning signs, and clear stop-the-whole-thing conditions.
+techniques: [RT-02, RT-07, CM-02, QA-02, QA-04]
 version: "1.0.0"
 category: deep-analysis
 tags: [deep-analysis, planning, strategy, multi-perspective, plain-english, non-technical, accessible, gated-workflow]
@@ -53,6 +54,12 @@ This command inherits shared behavior from [`domain-deep-analysis/BACKBONE.md`](
 4. **Continue step-by-step.** Each step ends with the gate mechanism defined in `BACKBONE.md`. Never run multiple steps in a single output.
 
 5. **At the final check-in in Step 5,** offer follow-ons (convert to a task tracker; re-run after the first milestone) as relevant.
+
+## False-Positive Prevention
+
+1. **Planning when the goal isn't settled.** If we can't describe what "done" looks like in a way you could actually see, or you're still deciding whether to go for it, switch to `/deepthink-decision-plain`. If the open question is what to build or set up rather than when, switch to `/deepthink-design-plain`.
+2. **Going ahead after the time check said it won't fit.** If the Step 1 capacity check showed the goal doesn't fit your available time, "ok, continue" isn't enough. I'll ask directly — cut something, move the deadline, or go ahead knowing the risk — and write your answer into the plan.
+3. **A plan with missing pieces.** Before the final check-in, every milestone needs a how-you'll-know-it's-done sign, an owner, rough effort, what it depends on, its biggest risk, and a date. The plan also needs the must-finish-first chain, warning signs and stop-the-whole-thing conditions listed separately, the capacity check with the 30%-slower buffer, both confidence ratings, and a re-planning checkpoint.
 
 ## Success Criteria
 

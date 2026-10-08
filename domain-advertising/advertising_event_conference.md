@@ -20,12 +20,12 @@ tags:
   - event
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Events** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,22 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **A full lineup grid can announce people who never agreed.** "Grid + slot numbering present"
+   passes when speaker slots carry well-known names or sponsor slots carry recognisable brands.
+   Render only speakers and sponsors the intake marks as confirmed; leave the rest out, not filled.
+2. **Date, city, and venue are copied, not completed.** A model turns "[DATE]" into a plausible
+   date, and a wrong date on a printed poster means a reprint. Use the intake's exact wording,
+   including year, and the time zone for an online or hybrid event.
+3. **Scarcity and pricing lines are offers.** "Early bird ends Friday", "Only 50 passes left",
+   "Sold out last year", and ticket-tier prices appear only as supplied.
+4. **Attendance figures need an edition.** "5,000+ attendees" or "200 speakers" is used only when
+   intake gives it and says which year's event it describes.
+5. **Verify before handing over:** write a two-column list, each rendered string (event name, date,
+   location, tier prices, speaker names, sponsor names, CTA) beside the intake answer it copies, and
+   check no model variant abbreviates, reorders, or reformats the date.
 
 ## Output Format
 

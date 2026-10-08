@@ -17,15 +17,27 @@ tags:
   - PACU
   - specialty-transition
   - cognitive-load
-updated: "2026-04-16"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
-  - domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md
   - domain-productivity/validation/validation_adversarial_mini_check.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
 ---
 
 # Nursing Orientee Pattern-Import Self-Check
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help a nurse who is transitioning between specialties notice — before committing to an action — whether her clinical reasoning is native to the current setting or imported from a prior one. The tool is a three-beat metacognitive pause that interrupts automatic pattern-matching long enough to ask: "Does this schema actually fit here?" It is designed to be run silently, in real time, in under 10 seconds.
 
@@ -90,7 +102,7 @@ These are the most frequently observed imports, not a complete list. The precept
 
 | Import | How It Looks in PACU | Why It Misfires | What PACU Needs Instead |
 |--------|---------------------|-----------------|------------------------|
-| Trajectory thinking | Interpreting a post-op BP drop as a declining trajectory → emotional escalation, comfort-measure instinct | PACU patients are expected to be transiently abnormal. A BP drop in PACU is usually pharmacologic (anesthesia wearing off, vasodilator effects) — not a trajectory signal. | Trend against post-anesthesia norms, not against a baseline-decline narrative. Reassess in 5 min. If it resolves, it was expected. |
+| Trajectory thinking | Interpreting a post-op BP drop as a declining trajectory → emotional escalation, comfort-measure instinct | PACU patients are often transiently abnormal, so a decline narrative is the wrong schema — but a post-op BP drop is not presumed benign: bleeding and hypovolemia are ruled out before it is attributed to residual anesthetic or vasodilator effects. | Find the cause, then decide: check for bleeding (dressing, drains, under the patient), volume status, residual anesthetic/opioid effect and hypothermia; trend against post-anesthesia norms, not a baseline-decline narrative. Reassess per facility protocol; escalate to anesthesia per facility protocol if it persists or a cause such as bleeding is found. |
 | Patient-centered pace | Spending extended time at bedside providing presence and emotional support to one patient | PACU turnover is fast. Extended presence with one patient means the next patient arrives with no one prepped. | Presence is compressed — brief orientations, quick reassurance, then move to the next task. Emotional support happens in the gaps, not as the primary mode. |
 | Family-as-primary-unit | Defaulting to family communication and comfort as a high priority | In hospice, family is the care unit. In PACU, the patient's physiology is the priority; family communication is Tier 4. | Communicate with family after the patient is stable, not during active recovery management. |
 | Comfort-first instinct | Prioritizing comfort measures over monitoring or assessment | In hospice, comfort is the goal. In PACU, physiologic stability is the goal; comfort follows. | Pain and nausea are Tier 3, not Tier 1. Treat them — but after airway and hemodynamics are confirmed. |
@@ -195,6 +207,22 @@ IMPORTS THAT ARE STRENGTHS HERE
 **When the self-check becomes reflexive:** The card has done its job when the orientee starts naming imports in the debrief before you ask Q3. That usually happens around week 3–4. She'll say, "I caught myself going into hospice trajectory mode on the hip patient and stopped." That's the signal to fade the card.
 
 **Orientees who resist the tool:** If she perceives it as criticism of her prior work, revisit the framing. Emphasize: "I'm not saying hospice nursing was wrong. I'm saying PACU is a different operating system, and your brain is still running both. This helps you switch."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill "MY TOP 3 IMPORTS TO WATCH" from the generic tables above when the debrief log holds no matching instance — a plausible import list is still a guess.
+- Label an action an "import" when the trigger the orientee named is a physiologic change that warrants action in PACU too; a falling BP is not "hospice trajectory thinking" just because a hospice nurse noticed it.
+- Write a "What PACU Needs Instead" cell that treats a vital-sign change as expected without first naming the reversible causes to rule out (bleeding, hypovolemia, residual anesthetic or opioid effect, hypothermia).
+- Print a vital-sign interval or cut-off on the card as PACU fact; per `../perianesthesia/SAFETY_PREAMBLE.md`, those are `per facility protocol`.
+
+✅ **DO:**
+- For each of the Top 3, cite the debrief date and the orientee's own words that showed the import; drop any entry without a log line behind it.
+- Read every "Why It Misfires" and "What PACU Needs Instead" cell as a reviewer would: if following it could delay escalation of a real deterioration, rewrite it as "find the cause, then decide" and name the role to escalate to.
+- Check that each strength-import is tied to a specific PACU situation (emergence agitation, family communication after a bad outcome) rather than a general compliment.
+- Time the finished three beats aloud with the orientee once; if they run past 10 seconds, cut words until they don't.
 
 ---
 

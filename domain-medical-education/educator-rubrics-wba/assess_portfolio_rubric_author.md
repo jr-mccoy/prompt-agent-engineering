@@ -22,7 +22,7 @@ tags:
   - reflective-writing
   - cbme
   - rubric
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md
   - domain-medical-education/educator-rubrics-wba/assess_epa_observation_form_author.md
@@ -204,6 +204,16 @@ Replaced with: "≥ 6 Mini-CEX/CBD across ≥ 3 settings + EPA observations at t
 | `reflective_writing_weight` | Adjustable — programs prioritizing reflection may weight Level-3-or-above as a hard pass gate |
 | `include_self_assessment` | Adds learner self-rating column for triangulation |
 | `include_360_aggregate` | Brings MSF aggregate into the portfolio as one evidence stream |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A synthesis decision table whose rows overlap or leave gaps (e.g., "≥ 3 dimensions at 3+" for Ready still allows two dimensions at 1, which also triggers Not ready) | Enumerate test profiles across the five 1–4 dimension scores plus reflective median and professionalism flag — at minimum all-3s, one 1 with four 4s, two 2s, three 2s, and a Level 1 reflective median — and confirm each maps to exactly one status; add precedence ("any Not-ready trigger overrides") where it does not |
+| One artifact counted toward several competencies so sufficiency looks met (a single Mini-CEX credited to patient care, communication, and professionalism) | State whether an artifact may count for more than one competency; when sufficiency is scored, tally unique artifacts per competency row and show the count |
+| Currency scored from upload or submission dates, so a backlog uploaded this month passes the `submission_window` | Score currency on the date of the observed encounter or completed project, not the upload timestamp |
+| Rating a reflective entry Level 3 or 4 because it names a framework (I-PASS, PDSA) or mentions "literature" | For each per-entry rating, quote the sentence that meets each element of the level's anchor (contributing factor, specific change, examined assumption); a named framework without a stated causal link stays at Level 2 |
+| Threshold numbers (ITE ≥ 30th percentile, ≥ 6 Mini-CEX) and level labels presented as literature-derived with "verified" status | Mark locally chosen thresholds "program decision" and confirm the four reflective band labels match the cited taxonomy's own level wording `[VERIFY: reflection-level source text]` before the audit row is marked verified |
 
 ## Verification Checklist
 

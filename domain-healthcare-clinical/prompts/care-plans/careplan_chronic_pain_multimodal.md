@@ -15,8 +15,20 @@ tags:
   - chronic-pain
   - opioid-stewardship
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -60,6 +72,21 @@ Pain medicine or primary care attending managing chronic non-cancer pain.
 7. **Address comorbid mental health and sleep** — untreated depression/anxiety/insomnia amplify pain.
 
 8. **Monitor:** function (not just pain), adherence, side effects, opioid metrics (MME, PDMP, UDS) when applicable, mood, goal progress; reassess regularly.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Compute total MME with one conversion factor for every opioid — methadone's ratio changes with dose, transdermal fentanyl and buprenorphine do not convert simply, and MME is a stewardship estimate, not an equianalgesic switching table.
+- Write a functional goal as "improve function" or "reduce pain" — it must name an activity, a baseline and a measure (PEG score, walking distance, workdays) taken from the input.
+- Layer gabapentinoid titration onto a regimen that already has an opioid and a benzodiazepine without stating the additive respiratory-depression risk and the lower start it implies.
+- Use the input eGFR as the creatinine clearance that gabapentin, pregabalin and duloxetine labels dose by; in older or low-weight patients the two diverge.
+- Express a taper as "10%/month" without saying 10% of which dose — the original and the current dose give different schedules.
+
+✅ **DO:**
+- Recompute daily MME from each opioid's strength and doses per day in the input, show the arithmetic, and name the conversion table used `[VERIFY: CDC 2022 conversion table]`.
+- Check each non-opioid against the input comorbidities before it enters the plan: NSAIDs against renal, cardiac, GI-bleed and anticoagulant history; TCAs against age, QT and falls; duloxetine against hepatic disease and serotonergic co-medication.
+- Record PDMP review and naloxone status as facts from the input, or as "not documented" — never as done.
+- Map each pain component to the mechanism class that justifies its drug, so no agent appears without a mechanism it targets.
 
 ## Output Format
 

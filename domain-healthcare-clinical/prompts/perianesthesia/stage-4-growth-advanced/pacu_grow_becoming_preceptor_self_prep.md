@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-01, ED-02, DS-06, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_grow_teaching_recovery_concept.md
   - pacu_grow_debrief_junior_after_event.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Becoming a Preceptor — Readiness & the Mindset Shift from Doer to Teacher
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A self-preparation aid for the nurse stepping into precepting, not a preceptor certification or a substitute for your facility's preceptor program. The formal preceptor role, its tools, and orientee evaluation belong to the educator toolkit and your unit's process — this readies *you* to enter that role.
 
@@ -86,6 +99,19 @@ Edge: [...] | Action: [...]
 | `emphasis` | Weight toward mindset shifts vs clinical-floor readiness |
 | `first_time` | First-time precepting vs refining an existing style |
 | `learner_type` | Prep for a new grad vs an experienced-nurse-new-to-PACU orientee |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mark `Ready to teach from [Y]` on tenure or "own all common case types" alone; the clinical floor needs named recent instances for the case types the orientee will see, including rehearsed low-frequency emergencies.
+- Treat the mindset-shift self-ratings as a readiness verdict — they are a self-perception baseline, and the facility preceptor program decides who precepts.
+- Write a catch plan that relies on willpower ("I'll try not to jump in"); a catch plan is a pre-agreed signal, rule, or pause.
+- Leave "Hold the line when" as a category ("anything unsafe"); name the concrete steps — two-identifier medication checks, airway interventions, high-alert medications, the escalation call.
+
+✅ **DO:**
+- Verify the clinical floor by counting instances: each case type marked Y or mostly needs at least one recent independent instance named by type (no patient identifiers); a case type with zero instances becomes not-yet for that area.
+- Map every worry in `concerns` to a doer reflex or the growth edge; a concern left unmapped is a gap in the output.
+- Seek one outside data point — feedback from a nurse you informally taught, or from the educator — before treating any self-rating as more than a baseline.
 
 ## Verification Checklist
 

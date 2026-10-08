@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept a RACI with two A's on a row, or none; an orderly letter grid hides split or missing accountability.
+- Accept a row with no R: nobody is doing the work.
+- Let the model fill every cell with a letter to look complete, or invent role names, people or activities the user did not list; an empty cell means "not involved" and is information.
+- Trust a legend without checking it defines C (consulted, two-way) and I (informed, one-way) the right way round.
+
+✅ **DO:**
+- Count letters per row: exactly one A and at least one R; list the row numbers that fail before calling the slide done.
+- Transcribe the rendered grid and compare it cell by cell with the intake matrix.
+- Count rows and role columns against the intake; an assignment the user has not settled renders as "?" with a legend entry "[unassigned]".
+- Check any headline about ownership ("CFO owns pricing") against the A in that row.

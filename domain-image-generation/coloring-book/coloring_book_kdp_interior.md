@@ -21,7 +21,7 @@ tags:
   - print-on-demand
   - interior-page
   - line-art
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - coloring_book_cover.md
@@ -34,7 +34,7 @@ related_prompts:
 
 **Purpose:** Generate a single interior page formatted for Amazon KDP (or comparable print-on-demand) coloring books — correct trim size, bleed, and gutter/outer margins, single-sided printing guidance, and a locked style spec so every page across the book looks like it belongs to the same title.
 
-**Format / Dimensions:** Most common KDP coloring trim is **8.5" x 11"**. With full bleed, the document size becomes **8.75" x 11.25"** (adds 0.125" bleed on the three outer edges). Interior at 300 DPI. Pure black line art, no color, no grayscale.
+**Format / Dimensions:** Most common KDP coloring trim is **8.5" x 11"**. With full bleed, the document size becomes **8.625" x 11.25"** (adds 0.125" bleed on the three outer edges: one side edge, top and bottom) [VERIFY: current KDP spec]. Interior at 300 DPI. Pure black line art, no color, no grayscale.
 
 **See Also:**
 - [IMAGE_GENERATION_GUIDE.md](../IMAGE_GENERATION_GUIDE.md) — the 8 core print techniques
@@ -50,7 +50,7 @@ related_prompts:
 |---|---|---|
 | Trim size | 8.5" x 11" | The final cut page |
 | Bleed | 0.125" on outer edges | Only if art runs to the edge |
-| Doc size with bleed | 8.75" x 11.25" | 8.5 + 0.125 (one outer) + 0.125... see note |
+| Doc size with bleed | 8.625" x 11.25" | width 8.5 + 0.125 (outer edge only); height 11 + 0.125 + 0.125 — see note |
 | Outer/top/bottom safe margin | 0.25" minimum from trim | Keep all line art inside |
 | Gutter (inside/binding) margin | 0.375" for <150 pages; more as page count grows | Binding eats the inner edge |
 | Resolution | 300 DPI | KDP minimum for print |
@@ -256,6 +256,21 @@ Negative: `"shading, grayscale, gray, color, gradient, solid black, fill, text, 
 
 ### Problem: Generated a two-page spread or a 3D book photo
 **Add:** `"ONE single flat page only. Not a spread. Not a photo of a book. Straight-on, no shadow."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- State trim, bleed, gutter or margin values from memory as current KDP rules, or copy the standalone-cover bleed size (8.75 x 11.25, bleed on all four edges) onto an interior page, whose binding edge takes no bleed (8.625 x 11.25) [VERIFY: current KDP spec].
+- Choose the gutter from the number of designs — leaving every art page's back blank roughly doubles the printed page count, which can move the book into a wider-gutter row of KDP's table.
+- Tick "line weight matches the book style lock" because the STYLE LOCK text was byte-identical — renders still vary, and a 1.5 pt lock should measure about 6 px at 300 DPI on every page.
+- Assume every art page lands on a recto — a title page, front matter, or an odd number of blanks flips parity and puts the 0.625 in clearance on the wrong edge.
+
+✅ **DO:**
+- Measure clearance in pixels on the 2550 x 3300 file: first black pixel at least 188 px from the left edge (0.625 in) and 150 px from the top, bottom and right (0.5 in); swap left and right for any verso page.
+- Measure stroke width in three places on each page and compare with the first approved page; regenerate any page more than about 1 px off the locked weight.
+- After assembling the interior PDF, list the page number of every art page, confirm all are odd (recto), then read the gutter from KDP's current table for the final page count [VERIFY: current KDP spec].
 
 ---
 

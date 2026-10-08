@@ -16,14 +16,27 @@ tags:
   - discharge-summary
   - compliance
   - care-team-communication
-updated: "2026-06-07"
+updated: "2026-10-06"
 related_prompts:
   - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_history_elicitation.md
   - domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md
   - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_em_coding_level_justification.md
 ---
 
 # Clinical Documentation Assistant
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** clinical content and doses reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help structure clinical notes (H&P, progress notes, discharge summaries, procedure notes) ensuring completeness, appropriate medical terminology, compliance with documentation requirements, and readability for all members of the care team.
 
@@ -31,6 +44,7 @@ related_prompts:
 
 **When to use:**
 - Structuring an H&P, SOAP progress note, discharge summary, procedure note, or consult/transfer note.
+- Writing up an outpatient office visit as a SOAP note, with the diagnosis codes the clinician has assigned (see the Outpatient Office-Visit SOAP Variant below).
 - Checking a note for completeness, required elements, and care-team readability.
 - Organizing raw clinical information into a standardized, compliant format.
 - Teaching documentation structure and compliance elements to learners.
@@ -386,6 +400,37 @@ Code Status: [Unchanged / Discussed]
 [Author], [Credentials] | [Time]
 Attending: [Name] - [Reviewed/Attestation]
 ```
+
+### Outpatient Office-Visit SOAP Variant
+
+Use for a primary-care or specialty clinic visit rather than a hospital day. The structure changes
+because there is no "overnight" interval: the visit is anchored on the chief complaint and the reason
+the patient came in today.
+
+```
+OFFICE VISIT NOTE — [Date] — [Clinic]
+
+S: CC: [in the patient's words]
+   HPI: [onset, location, duration, character, aggravating/relieving factors, timing, severity — only the elements the clinician obtained]
+   Pertinent PMH / meds / allergies / social history: [as supplied]
+   ROS: [systems actually reviewed; do not template a full negative ROS]
+
+O: Vitals: [as measured]   Exam: [systems examined]   Results reviewed today: [labs, imaging, POC tests]
+
+A: [Clinician's assessment, problem by problem]
+   Diagnosis codes: [ICD-10-CM code(s) AS ASSIGNED BY THE CLINICIAN — or `[code to be assigned by clinician/coder]`]
+
+P: [Per problem: tests ordered, medications started/changed with dose as written by the clinician, referrals]
+   Patient education provided: [what was discussed]   Follow-up / return precautions: [interval and triggers]
+```
+
+- **Codes are the clinician's, never inferred.** Do not derive an ICD-10-CM code from the narrative;
+  place the clinician's code or a placeholder. Specificity requests ("laterality not documented")
+  go back to the clinician as questions.
+- **"Insurance-friendly" means the record truthfully supports medical necessity** — what was
+  assessed and why each order was needed — never adding elements, severity or complexity that did
+  not occur. Service-level (E/M) selection is a separate task:
+  `medicine_em_coding_level_justification.md`, verified by the clinician or a certified coder.
 
 ---
 

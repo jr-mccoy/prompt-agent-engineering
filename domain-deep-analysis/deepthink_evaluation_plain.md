@@ -19,7 +19,7 @@ tags:
   - weighted-criteria
   - askuserquestion
   - gated-workflow
-updated: "2026-06-30"
+updated: "2026-10-06"
 related_prompts:
   - domain-deep-analysis/deepthink_problem_analysis.md
   - domain-deep-analysis/deepthink_decision.md
@@ -225,6 +225,19 @@ Options:
 - Treat missing evidence as proof of a defect unless the criterion requires that evidence to exist.
 - Give a high-confidence recommendation when load-bearing evidence is unavailable.
 - Optimize for politeness over review usefulness. Strengths and defects both need evidence.
+
+---
+
+## False-Positive Prevention
+
+*In plain words: the common ways a review can look fair and thorough when it isn't, and what I watch for.*
+
+1. **"I'd have done it differently" is not a problem.** If another sensible reviewer might shrug at it — say, "I'd put the budget section first" — it's my taste, not a flaw. Something only goes under *Problems / Risks* if I can name which criterion it breaks and what "good" looked like for that criterion back in Step 2. Taste goes under *Reviewer caveats*.
+2. **A good overall score can hide a must-pass failure.** A grant application that scores well on everything but misses the funder's eligibility rule should not pass. I check the must-pass (gating) criteria first and the weighted score second, and I say in the rationale which of the two decided it.
+3. **Making up the yardstick after looking at the thing.** If I pick the criteria after reading what you sent, I tend to pick whatever it already does well or badly, and the review just confirms my first impression. Each criterion should come from what the thing is *for* and what's at stake, as you confirmed in Step 1; if one only exists because of something the thing happens to contain, I'll point that out at the second check-in.
+4. **My summary is not the same as what it says.** When I call something "observed," you should be able to open the document, plan, or output and find the exact line, section, or number I mean. If I'm describing it more strongly than it's written, that's my inference, and I'll label it that way.
+5. **"Would it change if we cared about things differently?" has to be tested where it matters.** Nudging the weights on two minor criteria and calling the recommendation "steady" is a fake test. I shift the weight on the two criteria that count most, and on anything that's close to failing a must-pass line.
+6. **Before I hand you the report, I check it against its own table.** I redo any overall score from the ratings and weights, confirm every must-pass row says pass or fail, match each item in *Problems / Risks* to a criterion row, and make sure each *Missing evidence* item says which recommendation it could change. Anything that doesn't match a row is either a criterion I forgot to list or an opinion without support — I'll add the row or remove the item.
 
 ---
 

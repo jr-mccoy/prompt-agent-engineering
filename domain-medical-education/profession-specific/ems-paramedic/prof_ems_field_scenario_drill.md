@@ -22,7 +22,7 @@ tags:
   - pcr
   - learner-tool
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_nremt_scenario_drill.md
   - domain-medical-education/profession-specific/ems-paramedic/prof_ems_run_call_critique.md
@@ -65,7 +65,7 @@ Dispatcher (initial call), scene environment (hazards, bystanders, weather, surf
 
 5. **Run complications.** Inject complications at scenario-realistic moments (en-route deterioration at minute 12; ED diversion at minute 20).
 
-6. **Handoff (RT-03).** When arriving at receiving facility, prompt learner for radio report (give-aways patrol: MIST or SBAR — Mechanism / Injuries / Signs / Treatment, or SBAR for medical). Then prompt for bedside handoff to receiving nurse/MD.
+6. **Handoff (RT-03).** When arriving at receiving facility, prompt learner for radio report (format: MIST for trauma — Mechanism / Injuries / Signs / Treatment — or SBAR for medical). Then prompt for bedside handoff to receiving nurse/MD.
 
 7. **PCR draft (ST-03).** After clearing the call, prompt learner to draft a chronological PCR. Score against: completeness (subjective, OPQRST, vitals trends, all interventions with times and dosages, response, medication ordered by, signature, refusal documentation if relevant), defensibility (no editorializing, no assumptions, supports clinical decisions made).
 
@@ -165,6 +165,16 @@ TOTAL: __/20
 | `case_clock_minutes` | Adjusts realism of timing |
 | `complications` | Engineered mid-run twists |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Patient state that improves on cue — SpO2 climbs while RR is still agonal and no ventilation is given, or HR/BP stay flat through a deterioration | Before returning each patient state, check that RR, SpO2, HR, BP, and LOC move in the direction the last intervention or untreated mechanism would drive them; if the learner did nothing, the numbers must not get better |
+| Run clock whose latest time stamp is too early for a sequence whose own per-step times (primary survey, IV, packaging, an OLMC-ordered observation period) cannot fit | Add up the elapsed time of the actions actually taken and compare to the latest time stamp and to any observation window you modeled; stretch the clock or shorten the claim |
+| Critical-actions row ticked ☑ because the learner *named* the action, without a time stamp or a returned finding | Tick a row only when the transcript shows a time and a result for it (a glucose value, a vitals set); otherwise mark ☐ or "stated, not shown" |
+| Doses in `protocol_constraints` or the debrief (naloxone, epi, dextrose) and the scope of a `cert_level` treated as universal | Use the doses exactly as the learner's `protocol_constraints` state them; anything added from memory gets `[VERIFY: local protocol / current NREMT and AHA edition]`, and scope is "per NREMT pattern — confirm with state/regional protocol" |
+| Scorecard axis scored on the learner's PCR or handoff when the learner never submitted one, or evidence cited for an action that is not in the transcript | Score A5 only against text the learner produced; for each axis, quote the learner line or time stamp — if none exists, the axis cannot be above what the transcript proves |
+
 ## Verification Checklist
 
 - [ ] Dispatch is realistic: incomplete info, third-party caller bias, scene hazards possible.
@@ -201,7 +211,7 @@ T=4:00 — Arrived. PD on scene at door. Coffee shop manager waving you in. Rest
 
 T=5:00 — Airway: patent with snoring (positional). Breathing: shallow, RR 6, agonal pattern. Circulation: weak radial pulse, regular, ~80. Pinpoint pupils. No response to sternal rub. SpO2 reading 78%.
 
-[learner: "Reposition for airway, OPA if tolerated, BVM at 12/min with 100% O2, partner draw up naloxone 0.4mg IV slowly, IV access antecubital, glucose check"]
+[learner: "Reposition for airway, OPA if tolerated, BVM at rescue-breathing rate [VERIFY: current AHA adult BLS rate for respiratory arrest with a pulse] with 100% O2, partner draw up naloxone 0.4mg IV slowly, IV access antecubital, glucose check"]
 
 T=7:30 — OPA tolerated. BVM oxygenation effective; chest rise good. SpO2 climbing 78 → 85 → 92. IV 18g R AC obtained on first attempt. Glucose 92. Naloxone 0.4mg IV being titrated.
 
@@ -217,7 +227,7 @@ T=11:00 — Patient sits up rapidly, agitated, tries to swing at partner. Pulls 
 
 T=14:00 — Patient A&O × 4 by your assessment but minimizes risk: "I just used a small amount, I'm fine." Becomes calmer with rapport. You explain resedation risk plainly.
 T=16:00 — OLMC contacted. OLMC supports your capacity assessment but recommends extended on-scene observation for 30 min minimum and offers naloxone take-home kit before departure.
-T=22:00 — Patient remains alert, RR 16, SpO2 96% RA, ambulatory. Signs refusal AMA after capacity assessment, risks/benefits, and harm-reduction discussion documented.
+T=46:00 — (clock stretched past case_clock_minutes to cover the 30-min OLMC observation window from T=16:00.) Patient remains alert, RR 16, SpO2 96% RA, ambulatory. Signs refusal AMA after capacity assessment, risks/benefits, and harm-reduction discussion documented.
 
 >>> RADIO REPORT (not delivered to receiving — refusal in field)
 
@@ -256,5 +266,5 @@ PCR contradicts radio: N/A
 
 >>> DEBRIEF
 
-Single highest-yield improvement: when an OD patient refuses transport after naloxone reversal, the resedation risk window matches naloxone's half-life (30–90 min depending on opioid) — your 30-min observation honored that, but the discharge plan should include a *named* responsible adult and explicit instructions on what to do if resedation occurs. Consider adding "called and confirmed sister will stay with patient for 4 hr" as a documented element.
+Single highest-yield improvement: when an OD patient refuses transport after naloxone reversal, the resedation risk comes from naloxone's half-life (roughly 30–90 min) being shorter than the opioid's duration of action — your 30-min observation honored that, but the discharge plan should include a *named* responsible adult and explicit instructions on what to do if resedation occurs. Consider adding "called and confirmed sister will stay with patient for 4 hr" as a documented element.
 ```

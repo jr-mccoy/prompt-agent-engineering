@@ -22,7 +22,7 @@ tags:
   - clinical-reasoning
   - commit-then-reveal
   - case-conference
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_pbl_case_author.md
   - domain-medical-education/educator-case-writing/case_morning_report_case_author.md
@@ -168,6 +168,16 @@ Replaced with: ...
 | `assessment_aligned_to` | Style commits to match shelf / NCLEX / NAPLEX expected outputs |
 | `include_metacog_prompt` | Final stage adds a "what did you commit at S2 vs S4 — what changed your mind?" reflection |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Model-trajectory commits that cite data not yet revealed at that stage (an S2 ranking justified by an S3 platelet count) | For each model commit, list the facts it uses and the stage each was revealed in; any fact from a later stage is removed from that commit |
+| A labelled "pivot" that only confirms the diagnosis the model trajectory already ranked first | Compare the pivot data with the model's prior ranking: if the top choice does not change, it is confirmation — redesign so the pivot discriminates between the top two the learner is likely to hold |
+| A red herring placed after the stage where it was first disclosed, or after the model trajectory has already discarded it | Put the distractor in the stage immediately before the commit it is meant to test, and check that the model commit at that stage weighs it explicitly |
+| Pre-filling the reasoning-evolution table with an imagined learner's commits and treating it as assessment evidence | Ship the evolution table blank for learner use; any filled example is labelled model reference and kept out of the assessment artifact |
+| S5 and model-trajectory management lines (severity cut-offs, setting of care, drug choice) written from memory and later used as the answer key | Mark each treatment line `[VERIFY: current CDC / WHO guidance]` or the relevant body unless a source was supplied |
+
 ## Verification Checklist
 
 - [ ] Every stage has exactly one commit type.
@@ -202,14 +212,14 @@ Time: 5 min.
 Anti-cueing: don't say "good" or "what about parasites" between commits.
 
 >>> S2 — "History + Exam"
-Data: Drank tap water occasionally; ate street food. No mosquito bites recalled. No malaria prophylaxis taken. Recent contact with a sick cousin. T 39.1, BP 110/68, HR 96, SpO2 99%. Mild splenomegaly. No rash. No neck stiffness.
+Data: Drank tap water occasionally; ate street food. No mosquito bites recalled. No malaria prophylaxis taken. Recent contact with a sick cousin (viral URI 2 wk ago). T 39.1, BP 110/68, HR 96, SpO2 99%. Mild splenomegaly. No rash. No neck stiffness.
+DISTRACTOR: Sick contact = "cousin had viral URI 2 wk ago" — easy to anchor as viral.
 COMMIT: Top 3 DDx ranked, with one-sentence justification each.
 Time: 7 min.
 Anti-cueing: don't preview S3 labs.
 
 >>> S3 — "Initial Labs"
 Data: Hgb 13.5. WBC 6.2. Plt 95 (mild thrombocytopenia). AST 60. ALT 70. Total bili 1.2. UA neg. CXR clear. RDT for malaria pending.
-DISTRACTOR: Sick contact = "cousin had viral URI 2 wk ago" — easy to anchor as viral.
 COMMIT: Next test + reason in 1 sentence.
 Time: 7 min.
 
@@ -219,7 +229,7 @@ COMMIT: Revise top-3 DDx AND name what specifically caused the revision.
 Time: 8 min.
 
 >>> S5 — "Plan + Safety Net"
-Data: Pt stable, no severe-malaria criteria currently (parasitemia < 5%, no AKI, no neuro). Outpatient vs admit?
+Data: Pt stable, no severe-malaria criteria currently (parasitemia < 5%, no AKI, no neuro) [VERIFY: current CDC / WHO malaria treatment guidance]. Outpatient vs admit?
 COMMIT: 3-line plan including drug + 24-h reassessment plan + safety net (when to return).
 Time: 10 min.
 
@@ -227,23 +237,23 @@ Time: 10 min.
 S4 introduces P. falciparum. Anchoring DDx (typhoid, viral, mononucleosis) must be re-ranked. Discriminator: smear positivity. Learners who said "rule out parasites" early but never named falciparum specifically should be probed: "what would your plan be in 30 min vs 24 h?"
 
 >>> DISTRACTOR
-S3 sick contact + viral URI history — pulls toward viral DDx if not weighed against Africa travel + thrombocytopenia + transaminitis.
+S2 sick contact + viral URI history — pulls toward viral DDx at the S2 ranking if not weighed against Kenya travel + no prophylaxis + splenomegaly.
 
->>> EVOLUTION TABLE (per group)
+>>> EVOLUTION TABLE — MODEL REFERENCE (illustrative fill for instructors; ship blank for learner use; not assessment evidence)
 | Stage | Commit | Next data | Changed? | Why |
 |---|---|---|---|---|
-| 1 | "fever in returning Kenya traveler, no malaria prophylaxis, no localizing source" | + exam splenomegaly | refined | added splenomegaly anchor |
+| 1 | "fever in returning Kenya traveler, no localizing source" | + exam splenomegaly | refined | added splenomegaly anchor |
 | 2 | [malaria, typhoid, viral hepatitis vs mono] | + Plt 95, transaminitis | refined ranking | thrombocytopenia ↑ malaria |
 | 3 | thick + thin smear | smear + (Pf 1.5%) | confirmed | discriminator hit |
-| 4 | revise: Pf malaria, uncomplicated | severity criteria | committed Pf-uncomplicated path | parasitemia < 5%, no organ dysfunction |
-| 5 | artemether-lumefantrine, 24-h smear + clinical reassess, return precautions | n/a | n/a | n/a |
+| 4 | revise: Pf malaria, severity not yet assessed | severity criteria | classified uncomplicated | parasitemia < 5%, no organ dysfunction [VERIFY: current CDC / WHO malaria treatment guidance] |
+| 5 | artemether-lumefantrine [VERIFY: current CDC / WHO malaria treatment guidance], 24-h smear + clinical reassess, return precautions | n/a | n/a | n/a |
 
 >>> MODEL TRAJECTORY
-S1: "A young adult with 5d fever returning from 3-wk rural Kenya without antimalarial prophylaxis."
+S1: "A young adult with 5d fever and headache returning from 3-wk rural Kenya, no localizing source."
 S2: malaria (high prior given Kenya + no prophylaxis) > typhoid > viral hepatitis; mono and viral URI displaced by travel context.
 S3: thick + thin smear ± RDT; CBC + LFTs + UA done.
-S4: P. falciparum uncomplicated by parasitemia + no organ dysfunction; revised because smear is the discriminating test.
-S5: artemether-lumefantrine PO (if available + tolerating PO), 24-h reassess parasitemia + clinical; safety net: any neuro change, oliguria, jaundice → ED.
+S4: P. falciparum malaria, severity still to be assessed (parasitemia 1.5% so far; organ-function data arrive at S5); revised because smear is the discriminating test.
+S5: artemether-lumefantrine PO [VERIFY: current CDC / WHO malaria treatment guidance] (if available + tolerating PO), 24-h reassess parasitemia + clinical; safety net: any neuro change, oliguria, jaundice → ED.
 
 >>> ANTI-CUEING
 "OK, you've committed; here's what came next."

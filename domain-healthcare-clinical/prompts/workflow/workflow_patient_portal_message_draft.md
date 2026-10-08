@@ -14,8 +14,20 @@ tags:
   - patient-communication
   - portal
   - health-literacy
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -50,6 +62,19 @@ The clinician replying at the end of the day — efficient, but with a low thres
 7. **Don't overstep async limits.** New prescriptions for controlled substances, complex dose changes, or anything needing an exam generally shouldn't be finalized by message — note when to route to a visit instead.
 
 8. **Verification pass.** Re-read the draft against the chart: is every clinical statement accurate, is the channel appropriate, and is there a safety net? Flag if the message needs the full chart or a colleague's eyes before sending.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Put a dose, hold instruction or numeric threshold in the DRAFT REPLY that came from general knowledge rather than the chart or the clinician — "hold today's dose" or "call if your BP is above 160" is an order, so mark it `[CLINICIAN TO CONFIRM]` until it is one.
+- Fill CHART CHECK with "confirmed" when the result, med list or allergy list was not supplied; say what was available and what was not.
+- Write a safety net of generic symptoms when the message concerns a specific drug or condition — the escalation signs must be the ones that drug or condition produces.
+- Let clinical vocabulary ("orthostatic", "BMP", "titrate") survive into the patient-facing draft because the content is accurate.
+
+✅ **DO:**
+- Trace each clinical statement in the draft to the patient's message or a named chart element (drug, dose, start date, result value); a statement with no source is removed.
+- Quote the phrase from the patient's message that drove the CHANNEL JUDGMENT; if any red-flag phrase is present, "async OK" is not an available answer.
+- Make each safety-net threshold something the patient can measure at home (BP, pulse, glucose, weight) and state how to reach care after hours.
 
 ## Output Format
 

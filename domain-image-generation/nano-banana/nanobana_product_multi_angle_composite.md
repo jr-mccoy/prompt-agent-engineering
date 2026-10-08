@@ -17,7 +17,7 @@ tags:
   - e-commerce
   - composite
   - google
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/NANO_BANANA_GUIDE.md
   - domain-image-generation/gpt-image-2/gptimage2_product_hero_shot.md
@@ -72,16 +72,16 @@ related_prompts:
 |------|------|-------|---------------------|
 | Obj 1 | Front view | Straight-on front, neutral lighting | Shape outline, logo, front details |
 | Obj 2 | Back view | Straight-on back | Back panel, ports, labels, regulatory marks |
-| Obj 3 | Left side | 90° left profile | Side thickness, button placement, profile shape |
-| Obj 4 | Right side | 90° right profile | Side details, port locations |
-| Obj 5 | Three-quarter front | 45° front-left or front-right | Depth, front-to-side transition, 3D form |
-| Obj 6 | Three-quarter back | 45° back-left or back-right | Back-to-side transition |
-| Obj 7 | Top-down | Directly overhead | Top surface, footprint shape |
-| Obj 8 | Detail shot | Close-up of key feature | Texture, finish quality, small details |
+| Obj 3 | Three-quarter front | 45° front-left or front-right | Depth, front-to-side transition, 3D form |
+| Obj 4 | Top-down | Directly overhead | Top surface, footprint shape |
+| Obj 5 | Detail shot | Close-up of key feature | Texture, finish quality, small details |
+| Obj 6 | Side (left or right) | 90° profile of the side the composite shows | Side thickness, button placement, profile shape |
+| Obj 7 | Opposite side | 90° profile of the other side | Side details, port locations |
+| Obj 8 | Three-quarter back | 45° back-left or back-right | Back-to-side transition |
 | Obj 9 | Scale reference | Product next to a known object | Real-world size impression |
 | Obj 10 | (Available) | Packaging, accessory, or second detail | Supporting context |
 
-**You don't need all 10.** For most products, 4–6 references (front, back, three-quarter, top, detail) are sufficient. Use additional slots only when the product has complex geometry or multiple key features.
+**You don't need all 10.** For most products, 4–6 references (front, back, three-quarter, top, detail, side) are sufficient; the production prompt below passes Obj 1–6 in this order as O1–O6. Use additional slots only when the product has complex geometry or multiple key features.
 
 ---
 
@@ -111,7 +111,11 @@ Object Images 1–[N]: Product reference photos for [PRODUCT NAME].
   TAKE: texture, finish, micro-details at this feature.
   IGNORE: surrounding context.
 
-[Add O6–O10 as needed for additional angles or details.]
+- Image O6 (side): 90° [left/right] profile.
+  TAKE: side thickness, button placement, profile shape.
+  IGNORE: background.
+
+[Add O7–O10 as needed for additional angles or details.]
 
 PRODUCT IDENTITY — [PRODUCT NAME]:
 1. Material: [primary material, finish — matte/glossy/brushed/textured]
@@ -133,7 +137,7 @@ Each panel shows the product at the same scale relative to the frame.
 ANGLES (one per panel):
 1) Front — straight-on, product centered
 2) Three-quarter — 45° showing front and [left/right] side
-3) Side profile — 90° showing thickness and side details
+3) Side profile — 90° [left/right], showing thickness and side details
 4) Back — straight-on back panel
 5) Top-down — overhead showing footprint
 6) Detail — close-up of [KEY FEATURE]
@@ -162,7 +166,6 @@ CONSTRAINTS:
 - If the lighting direction is inconsistent between panels, the output is INCORRECT.
 - Same product scale in every panel — don't make one angle appear larger than another.
 - No text, labels, or annotations in the composite.
-- Quality: "high"
 ```
 
 ---
@@ -207,7 +210,6 @@ STYLE:
 CONSTRAINTS:
 - Product identity lock: shape, finish, color, logo from references.
 - If any product detail differs from references, the output is INCORRECT.
-- Quality: "high"
 ```
 
 ---
@@ -236,6 +238,22 @@ CONSTRAINTS:
 3. "The material finish appears glossy in the side view but matte in the front — normalize to [correct finish]."
 4. "Panels 2 and 6 show nearly the same angle — replace panel 6 with a [bottom/detail/back] view."
 5. "The product appears larger in panel 4 than in panel 1 — equalize scale across all panels."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass "the same object in every panel" on matching colour and finish while port count, button positions or seam lines differ between panels.
+- Accept a panel that no reference supports — if the ANGLES list asks for a view that no O-reference shows, that panel is invented geometry; and if the prompt's O-numbers drift from the allocation table's slot order, a TAKE/IGNORE block describes the wrong image.
+- Accept plausible-looking back-panel regulatory marks, serial labels or port icons — the model draws compliance-style symbols it cannot read, and a fabricated mark on an e-commerce listing is worse than a plain panel.
+- Count the 512px screening pass as a logo check — at that size a garbled logo and a correct one look the same.
+- Miss the Obj 9 scale object (hand, coin, phone) leaking into the composite as an extra prop.
+
+✅ **DO:**
+- For each panel, name the reference image that supplies its geometry; a panel with no source is removed or given a dedicated reference before production.
+- Check handedness against O1–O4 and O6: a mirrored panel keeps every feature but on the wrong side, and a reversed logo is the quickest tell.
+- Count ports, buttons, LEDs and screws per panel against the reference showing that face, and re-check logo spelling only on the production-resolution render.
 
 ---
 

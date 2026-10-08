@@ -1,6 +1,7 @@
 ---
 name: deepthink-evaluation
 description: Start a deep, multi-perspective evaluation of an existing artifact, proposal, plan, design, document, or output. Drives the model through Frame → Decompose criteria & evidence → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is an evaluation report with criteria, weighted findings, evidence gaps, pass/revise/reject recommendation, confidence, and reviewer caveats.
+techniques: [RT-02, CM-02, QA-01, QA-02, QA-04]
 version: "1.0.0"
 category: deep-analysis
 tags: [deep-analysis, evaluation, review, critique, evidence-assessment, weighted-criteria, gated-workflow]
@@ -54,6 +55,12 @@ This command inherits shared behavior from [`domain-deep-analysis/BACKBONE.md`](
 5. **Continue phase-by-phase.** Each phase ends with the gate mechanism defined in `BACKBONE.md`. Never run multiple phases in one output.
 
 6. **At the FINAL GATE in Phase 5,** offer `/deepthink-plan` if the user wants to turn required revisions into an execution plan, or offer to re-run evaluation when new evidence is supplied.
+
+## False-Positive Prevention
+
+1. **Evaluating something that does not exist yet, or using one review to choose.** If the "object" is an idea or outline the user still has to produce, the report grades a hypothetical — switch to `/deepthink-design` or `/deepthink-plan`. If the user is picking between candidates, evaluate each here and then run `/deepthink-decision`; a pass/revise/reject on one object is not a ranking.
+2. **GATE 2 confirmed before the user saw the weights.** Weights and gating marks decide the verdict. If the gate message listed criteria without percentages or gate marks, the user's "looks right" does not cover them — show the full table and ask again.
+3. **A report missing one of the seven sections.** Before the final gate, check for: object and review boundary; the criteria table with weights and gating marks; evidence-backed strengths; defects/risks with severity; missing evidence; a pass/revise/reject (or mapped) recommendation with required revisions or conditions; and confidence with reviewer caveats. Missing evidence folded into the defects list counts as a missing section.
 
 ## Success Criteria
 

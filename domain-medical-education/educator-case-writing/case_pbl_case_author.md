@@ -23,7 +23,7 @@ tags:
   - tutor-guide
   - learning-objectives
   - small-group-teaching
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_tbl_application_exercise_author.md
   - domain-medical-education/educator-case-writing/case_virtual_patient_script_author.md
@@ -157,6 +157,16 @@ Replaced with: [...]
 | `include_pre_reading` | Adds a list of 2–4 pre-readings that should be done before session 1 |
 | `include_meta_cognition_prompt` | Adds a final trigger asking the group to reflect on their reasoning |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Knowledge-check items or stop rules resting on facts the case never released (for instance, a KC premised on diuretic use for a patient whose history lists only ibuprofen, or a stop rule that expects rhabdomyolysis when no CK was given) | Trace every premise in each KC item and stop rule back to the stem or an earlier trigger; any premise without a source line is added to a trigger or removed |
+| A trigger whose "information released" repeats data already given (a PaCO2 shown in T1 and released again in T2), so it surfaces nothing new | Keep a cumulative list of released data and diff each trigger against it; a trigger must add at least one datum its LO needs |
+| A trigger tagged to one LO whose stop rule requires another LO's skill, so the single-objective rule passes on the label only | Read each stop rule and name the skill it demands; if that skill belongs to a different LO, split the trigger or rewrite the stop rule |
+| A KC item that hands over the computed value its LO asks learners to compute (giving the anion gap in an item for an LO that requires calculating it) | Check each KC item's Bloom level against its LO tag: if the LO says Apply/compute, the item supplies raw values only |
+| Derived values in triggers (anion gap, Winters' expected PaCO2, FeNa) that the released raw numbers do not reproduce | Recompute each derived value from the released raw numbers and correct whichever side is wrong before the tutor guide quotes it |
+
 ## Verification Checklist
 
 - [ ] Each LO is behavior-anchored and Bloom-tagged.
@@ -232,7 +242,7 @@ T4 — Type C (failed intervention)
 >>> KC (4 items)
 KC1 [LO1]: pH 7.28, PaCO2 28, HCO3 13. AG 23. Diagnosis? → AGMA.
 KC2 [LO2]: HCO3 14. Expected PaCO2 by Winters? → 1.5×14+8 = 29 ± 2.
-KC3 [LO3]: Muddy casts + FeUrea 60% on diuretics → ATN (FeNa unreliable; FeUrea is the relevant index).
+KC3 [LO3]: Muddy brown casts + FeUrea 60% → ATN (FeUrea > 50% argues against a pre-renal state; it is the index to reach for when diuretics make FeNa unreliable — this patient took ibuprofen, not a diuretic).
 KC4 [LO4]: AKI + K 5.8 + hypovolemia. Best fluid? → Justify (LR vs NS vs balanced + K precautions).
 
 >>> SOURCE-FIDELITY AUDIT

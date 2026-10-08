@@ -21,9 +21,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_pre_clinic_patient_prep.md
-  - ./learner_handoff_practice.md
-  - ../clinical-skills/learner_oral_presentation_practice.md
+  - domain-medical-education/learner-clinical-rotation/study_pre_clinic_patient_prep.md
+  - domain-medical-education/learner-clinical-rotation/study_handoff_practice.md
+  - domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md
 ---
 
 # Pre-Rounding Prep Scaffold for Health-Professions Learners

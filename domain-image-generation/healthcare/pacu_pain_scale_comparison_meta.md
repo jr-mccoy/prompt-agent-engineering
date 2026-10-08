@@ -5,7 +5,16 @@ target_models:
   - nano-banana
   - dall-e-3
   - midjourney
-updated: "2026-04-14"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -100,3 +109,18 @@ CONTENT (use these exact scale facts, confirm against cited sources — do not i
 
 - Pediatric-only version — drop CPOT, add revised FLACC age ranges per Drain's or Core Curriculum peds chapter.
 - Language-accessible version — keep NRS and FACES; call out language-independence of FACES.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the "Typical range" column with mild / moderate / severe bands or a "treat above" number — the CONTENT block gives score spans only, and a band split is an action threshold.
+- Let "reassess per facility interval" turn into a minute value in the amber-striped Reassess cell.
+- Take the CONTENT block as verified because it says "confirm against cited sources" — no source is cited in the prompt, so the reviewer must name one before the facts count as checked.
+- Accept FLACC's five categories or CPOT's four indicators with a renamed, merged or missing item; the stacked list still looks complete.
+
+✅ **DO:**
+- Recompute each total from the rendered key: five FLACC categories at 0–2 must give the 0–10 shown, four CPOT indicators at 0–2 must give 0–8; count 11 NRS ticks and 6 FACES glyphs.
+- Search the Typical range and Reassess columns for any numeral beyond the scale spans in CONTENT; anything extra is removed.
+- Record the reference work and chapter the educator actually checked for each scale on the print file before posting.

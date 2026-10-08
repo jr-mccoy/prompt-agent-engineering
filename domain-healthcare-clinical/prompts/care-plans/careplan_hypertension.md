@@ -15,8 +15,20 @@ tags:
   - hypertension
   - care-plan
   - chronic-disease
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -62,6 +74,21 @@ Internist or cardiologist managing hypertension longitudinally.
 8. **Secondary workup** when resistant, young (<30), abrupt onset, or features: aldosterone/renin ratio (primary aldosteronism — common, underdiagnosed), renal artery imaging (renovascular), metanephrines (pheo), TSH, OSA screen, Cushing features, coarctation.
 
 9. **Monitor:** BMP within 1–2 weeks of ACEi/ARB/MRA start or change; home BP log; UACR/eGFR; address lifestyle (DASH, sodium <1.5–2.3 g, weight, alcohol, activity).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Stage without naming the guideline — ACC/AHA 2017 and ESC 2024 draw the stage and "elevated" lines differently `[VERIFY: guideline in local use]`.
+- Compare a home or ambulatory average directly with an office threshold; out-of-office thresholds are lower equivalents, not the same numbers.
+- Average a home log without checking the protocol (seated, rested, duplicate morning and evening readings over several days, first day discarded).
+- Apply the general <130/80 target to pregnancy, frailty or symptomatic orthostasis without the population-specific target and a standing BP.
+- Start an ACEi/ARB in someone who could become pregnant without documenting contraception counselling, or start a thiazide without a plan to recheck Na, K, urate and glucose.
+
+✅ **DO:**
+- Recompute the home or ABPM average from the readings given and state how many readings were included.
+- Before using RESISTANT PATHWAY, confirm each of the three agents is at maximal tolerated dose, one is a diuretic, adherence was checked by a stated method (pill count, fill history, drug levels), and BP was measured out of office.
+- Check every added agent against the input labs and history — K and creatinine for RAAS/MRA, gout for thiazides, heart rate for beta-blockers or non-DHP CCBs.
+- When ordering an aldosterone/renin ratio, list the drugs on the patient's list that distort it and the potassium at sampling.
 
 ## Output Format
 

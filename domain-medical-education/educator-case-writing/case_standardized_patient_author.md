@@ -18,9 +18,9 @@ tags:
   - sp-training
 updated: "2026-05-15"
 related_prompts:
-  - ../meded_osce_station_designer.md
-  - ../meded_learner_feedback_composer.md
-  - ../meded_clinical_skills_checklist_designer.md
+  - domain-medical-education/educator-simulation-design/sim_osce_station_designer.md
+  - domain-medical-education/educator-remediation/remed_learner_feedback_composer.md
+  - domain-medical-education/educator-rubrics-wba/assess_clinical_skills_checklist_designer.md
 ---
 
 # Standardized Patient Scenario Writer

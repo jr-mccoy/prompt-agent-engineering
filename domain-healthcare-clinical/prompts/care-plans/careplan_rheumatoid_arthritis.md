@@ -15,8 +15,20 @@ tags:
   - rheumatoid-arthritis
   - dmard
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -53,6 +65,20 @@ Rheumatologist managing rheumatoid arthritis.
 7. **Health maintenance:** vaccinations (influenza, pneumococcal, COVID, recombinant zoster, hepatitis B; non-live during immunosuppression), cardiovascular risk management (RA is an independent CV risk amplifier), bone health (steroid + disease), cancer screening, smoking cessation (worsens RA and biologic response), pregnancy-compatible regimen planning (avoid methotrexate/leflunomide — switch and washout).
 
 8. **Monitor:** disease-activity score at each visit (treat-to-target), CBC/LFTs/renal on methotrexate/leflunomide (e.g., q2–4 weeks initially then q8–12 weeks), lipids on tocilizumab/JAK, infection surveillance, TB reactivation vigilance.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let a methotrexate dose appear anywhere in the plan without "once weekly" and the day of the week — "methotrexate 15 mg" with an empty frequency, or a folic-acid line that reads as if methotrexate is daily, is the classic fatal transcription error.
+- Compare DAS28-ESR at one visit with DAS28-CRP at the next, or apply one cutoff set to both — DAS28-CRP runs lower on the same joints; keep the index constant or use CDAI.
+- Read a normalised CRP/ESR on tocilizumab, sarilumab or a JAK inhibitor as remission — these drugs suppress acute-phase reactants directly; judge response on joint counts and CDAI.
+- Write "cleared for biologic" on a negative IGRA and "HBV negative" when the input gives no anti-HBc result — anti-HBc-positive, HBsAg-negative patients can reactivate, notably on rituximab.
+- Recommend a JAK inhibitor without quoting the age, smoking status and CV/VTE/malignancy history from the input that the Step 4 safety caveat depends on.
+
+✅ **DO:**
+- Recompute the activity score from components when they are supplied — CDAI = SJC28 + TJC28 + patient global (0–10) + evaluator global (0–10) — and check the category against the cutoffs for that index `[VERIFY: ACR-endorsed cutoffs]`.
+- Trace the methotrexate start to eGFR, ALT/AST, CBC, alcohol intake and pregnancy plan in the input, and scan the list for trimethoprim(-sulfamethoxazole) before finalising the dose `[VERIFY: renal dosing per label]`.
+- Fill the pre-biologic screen as a value table — IGRA (date), HBsAg, anti-HBc, anti-HCV, chest imaging if IGRA positive, vaccine dates — and leave any missing row visibly blank.
 
 ## Output Format
 

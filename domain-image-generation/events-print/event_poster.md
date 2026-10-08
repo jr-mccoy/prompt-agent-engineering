@@ -17,7 +17,7 @@ tags:
   - bleed
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/events-print/promotional_flyer.md
@@ -45,7 +45,7 @@ related_prompts:
 ## Inputs
 
 - `[EVENT NAME]` — verbatim headline, exact case
-- `[DATE]` — verbatim ("Saturday, October 12, 2026")
+- `[DATE]` — verbatim ("Saturday, October 10, 2026")
 - `[TIME]` — verbatim ("7:30 PM – 10:00 PM")
 - `[VENUE]` — verbatim name + address
 - `[SUBHEAD / DESCRIPTION]` — optional verbatim one-liner
@@ -150,6 +150,21 @@ CONSTRAINTS:
 2. "Date block isn't scannable — group date/time/venue tighter and increase their size."
 3. "Text is too close to the edge — pull everything ≥0.25 in inside the trim so the printer's bleed cut is safe."
 4. "Quiet zone behind the headline is too busy — calm that area so the event name reads."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Trust a weekday/date pair because it came from the organizer — a wrong pair ("Saturday, October 12, 2026" is a Monday) renders "verbatim" and still sends people on the wrong day.
+- Pass the venue line because it matches what the organizer typed — a former venue name, a wrong suite or hall number, or the right street in the wrong city all pass a verbatim check.
+- Clear "no invented sponsor logos" while the model draws a logo-like mark beside a real sponsor's name, or print a sponsor whose placement has not been confirmed in writing.
+- Check the safe area on the 1024×1536 (2:3) render when the trim is 18×24 in (3:4) — fitting it crops about 171 px (11%) of the height, so a date line that cleared the margin can land in the trim.
+
+✅ **DO:**
+- Look up which day of the week `[DATE]` falls on (e.g. `date -d 2026-10-10 +%A` prints Saturday) and send any mismatch back to the organizer before generating.
+- Read the date, time and venue off the upscaled print file at 100% zoom and compare each line with the venue's own listing and the ticket page, not with the brief.
+- Ask the printer for a proof with trim and safe lines drawn and check every text block against those lines.
 
 ---
 

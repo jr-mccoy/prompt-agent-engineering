@@ -2,20 +2,38 @@
 title: "Incidental Imaging Findings Management Advisor"
 category: medicine
 description: "Structured approach to incidentalomas — applying society follow-up guidelines (Fleischner, ACR), communicating appropriately with patients, and documenting a defensible plan."
+techniques:
+  - ST-02
+  - ST-03
+  - RT-02
+  - CM-02
+  - QA-01
 tags:
   - medicine
   - radiology
   - incidentaloma
   - follow-up
   - communication
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_imaging_ordering_rationale.md
-  - domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_imaging_ordering_rationale.md
+  - domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
 ---
 
 # Incidental Imaging Findings Management Advisor
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help clinicians work up, follow up, and communicate incidental imaging findings (pulmonary nodules, adrenal/thyroid/renal/hepatic lesions, ovarian cysts, pituitary incidentalomas, aortic ectasia, etc.) using society-published criteria, while avoiding both underworkup and cascading low-yield testing.
 
@@ -120,7 +138,7 @@ Prior imaging: [present/absent + comparison]
 CLASSIFICATION
 --------------
 Framework: [Society + year]
-Category / risk tier: [e.g., Bosniak IIF, Fleischner 4a, TI-RADS TR4]
+Category / risk tier: [e.g., Bosniak IIF, Lung-RADS 4A (screening CT only), TI-RADS TR4]
 Estimated malignancy risk: [%, with range if applicable]
 Confidence: [High / Moderate / Low]
 
@@ -194,6 +212,23 @@ SAFETY CHECKLIST
 **Pediatric incidental findings:** Specific frameworks differ (pediatric Fleischner does not apply). Use pediatric radiology input.
 
 **Findings on non-diagnostic studies:** Screening CTs, trauma scans, and pre-op studies may have incomplete characterization — the first step may be dedicated imaging rather than surveillance.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign a category from a framework outside its population (Fleischner is not for screening CTs, patients under 35, known primary cancer or immunosuppression; Lung-RADS is for screening CTs only) or mix one framework's category labels into another's.
+- Fill "Estimated malignancy risk" with a percentage the cited framework does not print for that exact category; if it gives none, say so.
+- Score a tier on features the report never described (TI-RADS points without echogenic foci or margin, an adrenal "lipid-rich adenoma" without unenhanced HU) — that tier is a guess.
+- Compare a size to a threshold without stating which measurement the framework uses (longest axis vs mean of axes) and which one the report gave.
+- Write a surveillance interval or stopping rule that does not belong to the category assigned two lines above.
+
+✅ **DO:**
+- Rebuild the tier from the framework's own inputs: list each required feature with the report's value, and turn any missing feature into a "dedicated imaging / radiology addendum needed" step instead of falling to the lower tier.
+- Compute growth from the prior study before calling a finding stable: size change in mm and months elapsed, from the dated prior measurement.
+- Check that the FOLLOW-UP TASK due date equals the report date plus the interval in the plan, and that the note language and the patient-facing explanation give the same interval and next step.
+- State the framework edition and year, with `[VERIFY: current edition]` where a newer version may exist.
 
 ---
 

@@ -2,12 +2,21 @@
 title: "HR Org and Growth Map Visualization Prompt"
 category: hr
 description: "Generate a structured, no-UI visualization prompt optimized for hr decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # HR Org and Growth Map Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the model fill org boxes with invented names, titles, or headcounts — a populated chart looks finished but describes a team that does not exist.
+- Render reporting lines that differ from the intake structure (a dotted line turned solid, a manager placed over the wrong band).
+- Put identifiable personal data on an image headed for shared docs — names beside performance ratings, leave status, compensation, or "flight risk" labels.
+- Let the ZONE 3 ladder skip or merge levels the leveling model defines, or show promotion timelines the intake never stated.
+
+✅ **DO:**
+- Default to role-family labels and level codes rather than people; add names only when the intake explicitly approves them for the stated audience.
+- Count boxes per band and levels per ladder against the intake, and trace each reporting line from report to manager.
+- Show ZONE 4 hiring headcounts only from the approved hiring priorities, with "requisition pending" placeholders for unconfirmed roles.

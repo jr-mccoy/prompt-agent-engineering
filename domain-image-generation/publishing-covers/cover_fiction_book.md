@@ -16,7 +16,7 @@ tags:
   - typography
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_MODEL_SELECTION_GUIDE.md
   - domain-image-generation/publishing-covers/cover_ebook_kdp.md
@@ -143,6 +143,21 @@ CONSTRAINTS:
 2. "Genre isn't reading as [GENRE] — push the palette toward [direction] and adjust the central image to [more specific motif]."
 3. "Author name is fighting the title — drop it to [smaller %] and move it to [opposite corner]."
 4. "Test thumbnail: at 200×300 px the title blurs. Increase weight / contrast / size."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Proofread the title as a word — check it glyph by glyph: tightly set "rn" reads as "m", diacritics (é, ñ, ø) get dropped, curly apostrophes turn straight, and an unusually spelled author name gets "corrected" to the common spelling.
+- Accept "Genre reads instantly" on the creator's own read — a cozy mystery in a thriller's dark palette, or a romantasy stripped of its romance cues, sells to the wrong readers; compare against current bestsellers in the exact subcategory.
+- Let `[COMP TITLES]` produce a lookalike — matching a comp's focal image, layout, and type treatment together can confuse buyers and draw an infringement complaint even when no single element is copied.
+- Squint at the full-size file and call the 200×300 px test passed; only a file actually downscaled to that size tests it.
+
+✅ **DO:**
+- Compare the rendered title and author with the input one character at a time, including punctuation, spacing, and case.
+- Reverse-image-search the final cover and set it in a grid beside the comp titles; if a buyer could mistake one for the other, change the focal image or the type.
+- Check the render's aspect ratio against `[TRIM]` before final art — a 1024×1536 render is 0.667 wide-to-tall while a 5.5×8.5 in trim is 0.647, so the print file will crop or pad; confirm the title survives, and take spine and wrap sizes from the printer's current calculator, since they depend on page count and paper [VERIFY].
 
 ---
 

@@ -20,12 +20,12 @@ tags:
   - travel
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Travel** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,22 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **Amenities shown are amenities promised.** An infinity pool, private beach, spa, or balcony view
+   makes "escape + comfort" vivid and passes the form checklist while describing a property that does
+   not have them. List the actual amenities and room type from intake and depict only those.
+2. **The destination must be the destination.** A generic tropical shoreline for a city hotel, or a
+   recognisable landmark from another place, misstates location; ask what is genuinely visible
+   from or near the property.
+3. **Package text is an offer.** "All-inclusive", "free breakfast", "from $199/night", "kids stay
+   free", and travel-window dates are copied from intake or left out.
+4. **Ratings need a source.** Star classifications, review scores, and award badges appear only as
+   supplied, with the issuing source and year.
+5. **Verify before handing over:** match each amenity and view named in the Final Image Prompt to
+   the intake amenity list, then check every rate, date, and inclusion string against intake
+   verbatim, including inside each model variant's negative and positive prompts.
 
 ## Output Format
 

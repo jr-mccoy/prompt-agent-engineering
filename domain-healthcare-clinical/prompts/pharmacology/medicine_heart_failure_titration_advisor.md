@@ -2,20 +2,38 @@
 title: "Heart Failure Guideline-Directed Medical Therapy Titration Advisor"
 category: medicine
 description: "Structured support for titrating the four pillars of HFrEF therapy (ARNI/ACEi/ARB, beta blocker, MRA, SGLT2i) with attention to barriers, hemodynamics, and patient factors."
+techniques:
+  - ST-02
+  - DT-05
+  - DS-06
+  - CM-02
+  - QA-01
 tags:
   - medicine
   - cardiology
   - heart-failure
   - GDMT
   - titration
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md
-  - domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/care-plans/medicine_chronic_disease_management_planner.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md
 ---
 
 # Heart Failure GDMT Titration Advisor
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Support clinicians titrating guideline-directed medical therapy (GDMT) for heart failure with reduced ejection fraction (HFrEF), applying the four-pillar approach (ARNI/ACEi/ARB, evidence-based beta blocker, MRA, SGLT2 inhibitor) with explicit attention to barriers, target doses, and patient-specific factors.
 
@@ -225,6 +243,22 @@ SAFETY CHECKLIST
 **Frailty / limited life expectancy:** GDMT goals shift toward symptom burden and hospitalization avoidance; consider which pillars deliver the most benefit given remaining life.
 
 **HFmrEF (EF 41–49%) and HFpEF (EF ≥50%):** SGLT2i has strong evidence across the spectrum. MRA and ARNI/ARB have mixed/selective benefit — do not apply HFrEF logic uniformly.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the `Target dose` column from memory; targets come from the guideline table the plan cites (AHA/ACC/HFSA, with year) or carry `[VERIFY: current guideline/label]`, and `% of target` is computed only against a sourced target.
+- Write the `PRE-CHANGE CHECK` and back-off thresholds (SBP, HR, K+, creatinine rise) as universal facts; they are the prescriber's or local protocol's values, or are marked `[VERIFY]` — the self-check line "specified numerically" is not met by an invented number.
+- Count a pillar as in place for a non-evidence-based beta blocker (metoprolol tartrate, atenolol) or for an MRA currently held for hyperkalemia.
+- Drop the eGFR and K+ limits on MRA and SGLT2i initiation, or the ≥36-hour ACEi washout, when the next step is an MRA start or an ARNI switch.
+- Flag a hyperkalemia interaction without its mechanism (additive RAAS blockade, potassium supplements, trimethoprim's ENaC blockade).
+
+✅ **DO:**
+- Recompute `% of target` for each pillar (current daily dose ÷ cited target daily dose × 100) and confirm `Pillars complete` and `Pillars at target dose` match the audit rows.
+- Read the Cr and K+ trend from the inputs before calling a barrier "apparent"; a single value with no prior is reported as "trend unknown".
+- Confirm exactly one pillar changes in `NEXT STEP`, and that `WHAT IS DELIBERATELY NOT CHANGED` accounts for every other pillar.
 
 ---
 

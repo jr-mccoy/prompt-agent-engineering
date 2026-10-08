@@ -2,13 +2,23 @@
 title: "Cut-and-Paste Worksheet Generator"
 category: education
 description: "Generate cut-and-paste worksheet layouts with safe cut guides, sorting mats, and black-and-white-ready pieces."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - specialized-formats
   - worksheet
   - cut-and-paste
   - sorting
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Cut-and-Paste Worksheet Generator
@@ -128,3 +138,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept ZONE 4 pieces larger than the ZONE 3 targets they belong in, or targets drawn in a different shape from their pieces.
+- Place dashed cut lines so that cutting out the piece bank also cuts into the sorting mat on the same page.
+- Print more pieces than targets, or a piece that fits two bins, without saying so in the ZONE 2 directions.
+
+✅ **DO:**
+- Measure each piece against its target on the rendered page: the piece must be slightly smaller than the target on every side so it can be glued inside the box.
+- Cut a printed test copy along the ZONE 4 dashed lines and confirm ZONE 3 is left intact and every piece is large enough for the grade to trim.
+- Sort the pieces yourself and confirm each has one target; count pieces against targets.

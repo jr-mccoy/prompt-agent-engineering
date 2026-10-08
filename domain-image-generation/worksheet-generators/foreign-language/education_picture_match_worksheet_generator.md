@@ -2,13 +2,23 @@
 title: "Picture Match Foreign Language Worksheet Generator"
 category: education
 description: "Generate beginner foreign-language worksheets where learners match target-language words to pictures and categories."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - foreign-language
   - vocabulary
   - picture-match
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Picture Match Foreign Language Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Trust a ZONE 2 noun's article because the ending looks regular — la mano is feminine despite the -o, el agua takes el though it is feminine, and das Mädchen is neuter.
+- Mix regional variants in one word bank: Spain's el ordenador and coche against Latin America's la computadora and carro; use the variant the course textbook teaches.
+- Accept rendered words without checking diacritics — image models strip accents and tildes, and ano is not año.
+- Place a word in a ZONE 4 category sort where it belongs to two categories, or use a picture that names to a different target word (glass vs cup).
+
+✅ **DO:**
+- Check every noun's article, gender, and spelling against a dictionary entry for the course's variant, not from memory.
+- Zoom on every diacritic in the rendered word bank and labels and compare them with the source list character by character.
+- Name each ZONE 3 and ZONE 5 picture in the target language without looking at the bank; if you produce another word, replace the picture.

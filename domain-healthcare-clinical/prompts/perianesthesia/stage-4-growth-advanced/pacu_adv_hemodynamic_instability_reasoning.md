@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_adv_high_acuity_recovery_reasoning.md
   - pacu_adv_complex_population_mastery.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Hemodynamic Instability Reasoning — Shock Differentiation & Vasoactive-Support Awareness
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A reasoning drill, not live clinical decision support. Vasoactive agents, targets, and titration are **per order and facility protocol** (learner-pasted). This trains *how to differentiate the instability and support in scope* — the diagnosis and orders are the provider's.
 
@@ -93,6 +106,19 @@ One coaching point: [...]
 | `reversible_hidden` | Bury a reversible cause (e.g., positioning, full bladder) to reward the first-pass checks |
 | `mimic_pressure` | Make two mechanisms equally plausible to force differentiation |
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the fill/pump/tone cues with values the case never gave (MAP, CVP, lactate, urine output); describe the trend in the vitals that were supplied.
+- Let the escalation SBAR's A line claim "reversible checks done" when REVERSIBLE-CAUSE-FIRST lists a check with no recorded result.
+- Drop the obstructive picture from the held pictures because it is uncommon; if the case gives sudden hypotension with a new respiratory change, it stays on the list.
+- Name a specific vasoactive agent, concentration, or rate in ANTICIPATED SUPPORT — agent choice and dosing are the provider's (`per provider order`).
+
+✅ **DO:**
+- Verify the SBAR against the case: every reading, time point, and "tried in scope" item in it must appear in the case or the reversible-cause sweep; when no values were supplied, write "values per monitor".
+- Check that ANTICIPATED SUPPORT matches the leading picture — preparing fluids for a leading cardiogenic picture without flagging fluid caution fails `Prepared right support`.
+- In `on-support`, record the re-escalation trigger as a direction of change (falling response despite the current order), not a number.
+
 ## Verification Checklist
 
 - [ ] ≥2 **working pictures** held; no premature single label (nurse scope).
@@ -109,7 +135,7 @@ One coaching point: [...]
 **Output (excerpt):**
 ```
 Pattern read: leading = hypovolemic/distributive mix — low fill signals + warm-ish periphery; vs cardiogenic (would expect pump-failure cues + history). Held both.
-Reversible-first: confirm positioning, O2, check for ongoing blood/fluid loss and full bladder, assess pain, review rhythm — before calling it refractory.
+Reversible-first: confirm positioning, O2, check for ongoing blood/fluid loss and bladder status [VERIFY: whether bladder distension belongs on a hypotension sweep — Drain's PeriAnesthesia Nursing, current edition], assess pain, review rhythm — before calling it refractory.
 Anticipated support: likely fluids per order; prepare access, fluids, and have vasoactive setup ready per order if the provider escalates — no dose stated.
 Escalation SBAR: "S: BP trending down over two cycles. B: post-major-abdominal, general. A: looks hypovolemic/distributive, reversible checks done. R: concerned about ongoing loss — requesting eval and orders now."
 Coaching point: your sharpest line was doing the reversible sweep first — it's what makes the SBAR credible and speeds the provider's decision.

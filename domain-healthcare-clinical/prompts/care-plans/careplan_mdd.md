@@ -15,8 +15,20 @@ tags:
   - depression
   - care-plan
   - chronic-disease
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -59,6 +71,21 @@ Psychiatrist or primary care attending managing depression with measurement-base
 8. **Duration & discontinuation:** continue 4–9 months after remission for a first episode; indefinite for recurrent (≥3 episodes) or chronic. Taper slowly to avoid discontinuation syndrome (especially paroxetine, venlafaxine).
 
 9. **Monitor:** PHQ-9, emergent SI (especially early/under-25), activation/mania switch, metabolic (if antipsychotic augmentation), QT (citalopram >40 mg caution), serotonin syndrome with combinations, adherence.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Count an adequate trial from the start date — the clock runs from when the therapeutic dose was reached, and a trial cut short by non-adherence is not a failed trial.
+- Read response or remission from a single PHQ-9 total, or take a falling total as reassurance while item 9 is still positive.
+- Carry a dose cap or QT caution across populations unchanged — citalopram's maximum is lower in older adults and CYP2C19 poor metabolisers, and SSRIs add hyponatraemia and bleeding risk with diuretics or anticoagulants.
+- Switch or combine serotonergic drugs without the washout the outgoing drug requires (fluoxetine's long half-life; any MAOI).
+- Write a C-SSRS risk level unless the C-SSRS items were actually scored from the input.
+
+✅ **DO:**
+- Recompute PHQ-9 change as (baseline − current) / baseline and state response or remission against the plan's own definitions.
+- Count a prior trial only if agent, dose, duration and adherence are all in the input; label others "inadequately characterised" before calling the episode treatment-resistant.
+- Record the bipolar screen's method (instrument or history items) and any family history of bipolar disorder that raises switch risk.
+- Check each augmenting agent against its own monitoring (lithium levels with renal/thyroid; metabolic panel for antipsychotics; seizure threshold for bupropion) before adding it.
 
 ## Output Format
 

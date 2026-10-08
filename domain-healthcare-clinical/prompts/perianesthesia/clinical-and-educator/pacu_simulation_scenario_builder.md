@@ -19,11 +19,11 @@ techniques:
   - DS-06
 difficulty: advanced
 related_prompts:
-  - prompts/pacu_simulation_debrief_facilitator.md
-  - prompts/pacu_unfolding_case_study.md
-  - prompts/pacu_emergency_drill_designer.md
-  - prompts/pacu_complication_deep_dive.md
-  - prompts/pacu_quick_quiz_generator.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_unfolding_case_study.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_emergency_drill_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_quick_quiz_generator.md
 references:
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)
   - ASPAN Standards of Perianesthesia Nursing Practice

@@ -15,8 +15,20 @@ tags:
   - allergy
   - safety
   - naranjo
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -38,7 +50,7 @@ Senior clinical pharmacist / allergist / internist evaluating the ADR and writin
 
 ## Reasoning Steps
 
-1. **Compute Naranjo Adverse Drug Reaction Probability Scale** (10 questions, each +1, 0, or −1, total range −4 to +13):
+1. **Compute Naranjo Adverse Drug Reaction Probability Scale** (10 questions, each scored between −1 and +2 as listed below, total range −4 to +13):
 
    1. Are there previous conclusive reports on this reaction? Yes (+1), No (0), Unknown (0).
    2. Did the adverse event appear after the suspected drug was administered? Yes (+2), No (−1), Unknown (0).
@@ -85,7 +97,7 @@ Senior clinical pharmacist / allergist / internist evaluating the ADR and writin
      - Desensitization protocols for IgE-mediated allergy to essential drugs (e.g., penicillin desensitization for syphilis in pregnancy, aspirin desensitization for cardioprotection in AERD).
 
 6. **Cross-reactivity considerations.**
-   - **β-lactams:** historic cross-reactivity penicillin → cephalosporin overstated (~1–2%). For mild/moderate reactions to penicillin, most cephalosporins (especially 3rd–5th generation) are acceptable. For severe IgE reactions, allergy testing or use of structurally distinct β-lactam (aztreonam — not cross-reactive with most penicillins except ceftazidime). Carbapenems have <1% cross-reactivity even in true penicillin allergy.
+   - **β-lactams:** historic cross-reactivity penicillin → cephalosporin overstated (~1–2%). For mild/moderate reactions to penicillin, most cephalosporins (especially 3rd–5th generation) are acceptable. For severe IgE reactions, allergy testing or use of structurally distinct β-lactam (aztreonam — negligible cross-reactivity with penicillins; it shares an identical side chain with the cephalosporin ceftazidime, so avoid aztreonam in ceftazidime allergy). Carbapenems have <1% cross-reactivity even in true penicillin allergy.
    - **Sulfa:** sulfonamide antibiotics (sulfamethoxazole) and sulfonamide non-antibiotics (sulfonylureas, thiazides, furosemide, celecoxib, sumatriptan) — cross-reactivity is rare clinically (different molecular structure beyond sulfa group). True allergy to sulfa antibiotic does not preclude use of non-antibiotic sulfas in most cases.
    - **NSAIDs:** AERD (aspirin-exacerbated respiratory disease) cross-reacts among COX-1 NSAIDs; COX-2 selective (celecoxib) usually tolerated.
    - **Iodinated contrast:** no cross-reactivity with shellfish iodine ("iodine allergy" misconception); some cross-reactivity among contrast agents — choose non-ionic low-osmolar agent and premedicate (steroid + diphenhydramine) if prior moderate reaction.
@@ -104,6 +116,20 @@ Senior clinical pharmacist / allergist / internist evaluating the ADR and writin
    - Same class allowed for Type A / pharmacologic effect with dose adjustment if no better option.
    - Cross-reactivity check.
    - Patient counseling on documented allergy and reaction; carry MedicAlert.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Score items 3 or 5 as if de-challenge had already worked or the alternative-cause workup were negative; a pending answer scores 0 ("Unknown"), the TOTAL is reported as provisional, and the score it would reach on each pending result is stated separately.
+- Score item 1 ("previous conclusive reports") +1 from recall; name the source type (label, case series, pharmacovigilance database) or score it Unknown.
+- Report a TOTAL without re-adding the ten item scores and checking it lies within −4 to +13.
+- Assign a Gell-Coombs type or a named syndrome from the rash pattern while ignoring a latency that does not fit the expected window; state the mismatch rather than smoothing it over.
+- Give the alternative agent a dose and duration from memory — it carries the source or `[VERIFY: current label / formulary]` and is checked against renal and hepatic function, age and pregnancy status.
+
+✅ **DO:**
+- Print each item's answer (Yes / No / Unknown) beside its points so a reviewer can re-score, and recompute the sum before mapping it to Definite / Probable / Possible / Doubtful.
+- Give the structural basis for each cross-reactivity statement (shared R1 side chain, sulfonylarylamine group, ester vs amide linkage) instead of "cross-reactive" alone.
+- Before naming the reaction type, list the alternative causes in the input and the result that would rule each one out.
 
 ## Output Format
 
@@ -181,17 +207,17 @@ SUSPECT DRUG & REACTION:
 - Alternative explanations: viral infection (CMV, EBV, HHV-6 — HHV-6 reactivation common in DRESS), autoimmune flare. Send EBV/CMV/HHV-6 PCR for completeness; clinical pattern still favors DRESS.
 
 NARANJO SCORE:
-1. Previous conclusive reports of TMP-SMX causing DRESS? Yes (+1).
+1. Previous conclusive reports of TMP-SMX causing DRESS? Yes (+1) — source type: product label / published case series [VERIFY: current label].
 2. Adverse event appeared after drug administration? Yes (+2).
-3. Improved when drug discontinued (still in progress; will assess)? Pending — given likely yes upon stopping → +1 if resolves.
+3. Improved when drug discontinued? Pending (de-challenge in progress) → Unknown (0); would score +1 if it resolves.
 4. Reappeared with rechallenge? Unknown (not done) (0).
-5. Alternative causes? Workup pending, but pattern fits DRESS more than viral. Tentatively No (+2). Adjust if viral PCR positive.
+5. Alternative causes? Viral PCR workup pending (pattern fits DRESS more than viral) → Unknown (0); would score +2 if workup negative, −1 if positive.
 6. Placebo control? Unknown (0).
 7. Drug detected at toxic concentrations? Not assessed; therapeutic dosing (0).
 8. Dose-response? Not applicable for hypersensitivity (0).
 9. Similar prior reaction to sulfa? Unknown (0).
 10. Objective confirmation? Yes — eosinophilia, transaminitis, rash documented (+1).
-TOTAL: 7 (assuming de-challenge improves and viral causes negative) → **Probable ADR (5–8)**.
+TOTAL (provisional): 1 + 2 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 1 = 4 → **Possible ADR (1–4)**. If de-challenge improves (+1) and the viral workup is negative (+2), the score would reach 7 → Probable (5–8). Clinical management (stop drug, treat as DRESS) does not wait on the score.
 
 MECHANISM CLASSIFICATION:
 - **Rawlins-Thompson Type B (idiosyncratic / immune-mediated).**

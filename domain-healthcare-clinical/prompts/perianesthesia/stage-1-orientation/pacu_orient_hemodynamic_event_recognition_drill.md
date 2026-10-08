@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_recovery_deviation_script_builder.md
   - pacu_orient_rhythm_recognition_drill.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Hemodynamic Event Recognition — Hypotension / Hypertension / Dysrhythmia
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A recognition drill, not live clinical decision support. Manage real hemodynamics with your preceptor, provider order, and facility protocol.
 
@@ -90,6 +103,19 @@ One coaching point: [...]
 | `surgical_context` | Bleeding-risk cases raise the hypovolemia lens |
 | `mode` | `cause-hunt` vs. `escalate-or-watch` decision framing |
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Score `Reversible-first: Y` because a cause list sits above the cause map when a pressor, a fluid bolus, or an antihypertensive is already named in the trend narrative, the mimic text, or the coaching point.
+- Count a mimic pair whose halves need the same response ("hypovolemia vs bleeding" is one cause twice) — a pair counts only when the fix or the urgency differs.
+- List a reversible cause that cannot produce the presented direction of BP and HR change just to lengthen the list; padding reads as thoroughness.
+- Turn "falling" or "rising" into a numeric cut-off or a pressure target to make the escalation trigger feel concrete — it stays `per facility protocol` / `per provider order`.
+
+✅ **DO:**
+- Check every cause-map row: could the item in "what I check" actually confirm or exclude that cause (dressing/drain output for bleeding, bladder assessment for retention)? A row whose check cannot discriminate scores N.
+- Read `Scope-safe [Y/N]` against every verb in the output, including mimic and coaching lines — "titrate", "start", "bolus", "give" without `per provider order` makes it N.
+- For a dysrhythmia round, confirm the output stops at recognize + patient stability + escalate and hands off to the rhythm drill without naming a treatment.
+
 ## Verification Checklist
 
 - [ ] Reversible causes listed **before** any pharmacologic framing.
@@ -106,7 +132,7 @@ One coaching point: [...]
 **Output (excerpt):**
 ```
 Trend: BP trending down across checks with rising heart rate and pale, cool cues.
-Reversible causes first: hypovolemia/bleeding, residual vasodilation, hypoventilation, pain-then-vagal.
+Reversible causes first: hypovolemia/bleeding, residual vasodilation (set aside: hypoventilation and a vagal response — neither fits a falling BP with a rising HR).
 Cause map: hypovolemia → check dressing/drain output, perfusion cues, trend → within scope: position, ensure IV access/fluids per order, monitor closely → escalate to provider now given the bleeding context.
 Mimics: falling BP from ongoing bleeding (needs source control/escalation) vs from residual vasodilation (often improves as anesthetic wears) — same reading, very different urgency.
 Coaching point: in a bleeding-risk case, a downward BP trend with a rising HR is escalate-now, not watch-and-wait.

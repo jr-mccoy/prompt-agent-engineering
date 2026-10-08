@@ -14,8 +14,20 @@ tags:
   - care-gaps
   - preventive-care
   - quality
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -48,6 +60,19 @@ Primary care attending running the panel-management pass that catches what react
 6. **Respect appropriateness, not just eligibility.** Flag where a guideline default may not apply — limited life expectancy, patient who has declined, screening that exceeds the upper age limit. Surface these as "consider whether still indicated," not blind orders.
 
 7. **Prioritize and make each gap actionable.** Rank by clinical impact (an overdue diabetic eye exam in poorly controlled diabetes outranks a slightly-overdue Tdap). For each gap, give the closing action: the order, the referral, the vaccine, the lab.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Classify an item with an unknown date as "overdue" — it is "unconfirmed" and belongs under GAPS DUE TO MISSING DATA; mixing the two inflates the overdue count.
+- Quote vaccine eligibility ages or series rules (RSV, pneumococcal) from memory — immunization schedules change yearly; name the schedule year or write `[VERIFY: current ACIP schedule]`.
+- Clear the CONSIDER WHETHER STILL INDICATED section with a functional-status or life-expectancy judgement ("good functional status") that the input did not supply.
+- Drive sex-specific screening from the recorded sex alone without the organ history that changes it (hysterectomy, mastectomy, gender-affirming surgery).
+
+✅ **DO:**
+- Recompute each Status from dates: today minus last-done date against the interval, stated in months or years overdue (colonoscopy 11 years ago on a 10-year interval = about 1 year overdue; any last-done date beyond its interval is "overdue" by the excess, never merely "due").
+- Count active conditions and high-risk drugs against CHRONIC-DISEASE MONITORING lines — each needs at least one, or a stated reason it has none.
+- Check each item appears in exactly one section and every open gap carries an ACTION.
 
 ## Output Format
 
@@ -90,12 +115,12 @@ SCREENING:
 - Diabetic retinal exam — Last: unknown | Due: annual (ADA, more important with A1c 8.3) | Status: overdue/unconfirmed → ACTION: order/refer ophthalmology, confirm prior.
 - Colorectal cancer — Last: colonoscopy 11 yr ago (normal) | Due: 10-yr interval → overdue → ACTION: order colonoscopy or FIT.
 - Lung cancer (low-dose CT) — Meets USPSTF criteria (age 50–80, 20+ pack-years, quit <15 yr) | Status: due → ACTION: order LDCT, counsel.
-- Mammography — Last: 3 yr ago | Due: biennial (USPSTF) → due/slightly overdue → ACTION: order screening mammogram.
+- Mammography — Last: 3 yr ago | Due: biennial (USPSTF) → overdue by about 1 yr → ACTION: order screening mammogram.
 - Osteoporosis (DXA) — Never done; recommended for women ≥65 | Status: due → ACTION: order DXA.
 
 IMMUNIZATIONS:
 - Pneumococcal — Status: unknown → ACTION: confirm; give age-/condition-appropriate series if not documented.
-- RSV — Age-eligible (≥60, shared decision) → ACTION: offer.
+- RSV — Status: unknown; eligibility at 67 (age band and risk conditions such as diabetes) per current ACIP schedule [VERIFY: current ACIP RSV recommendation] → ACTION: confirm prior dose; offer if eligible.
 - Shingles (RZV) — Age ≥50, status unknown → ACTION: confirm/give 2-dose series.
 - Influenza — up to date (last fall) → confirm current season.
 - Tdap/Td — confirm last booster within 10 yr.

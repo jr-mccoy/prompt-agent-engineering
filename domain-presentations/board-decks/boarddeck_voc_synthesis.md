@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Let the model write customer quotes; an invented verbatim is fabricated evidence even when it sounds typical.
+- Accept theme counts larger than the number of interviews or responses, or percentages that do not follow from count ÷ n.
+- Attach quotes to named customers or logos the intake did not authorise.
+- Colour a theme as negative or positive with no sentiment coding in the intake.
+
+✅ **DO:**
+- Diff every quote on the slide character by character against the intake; image models paraphrase and drop words.
+- Recompute each theme's share as mentions ÷ n and print n on the slide.
+- Check the theme ranking follows the counts, and count themes against the intake.
+- Render a theme without a chosen quote as "[quote — pending selection]".

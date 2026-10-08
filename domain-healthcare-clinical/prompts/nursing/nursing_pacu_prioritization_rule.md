@@ -16,15 +16,27 @@ tags:
   - clinical-decision
   - cognitive-load
   - pocket-card
-updated: "2026-04-16"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/nursing_pacu_shift_structure.md
-  - domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_pacu_shift_structure.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
   - domain-decision-making/decisioning_resource_constrained_solver.md
 ---
 
 # PACU Phase 1 Prioritization Rule Card
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Give a PACU orientee a default decision hierarchy for when two or more clinical demands compete for her attention at the same time. The card replaces the paralysis of "everything is urgent" with a repeatable stack: handle the higher-tier item first, delegate or defer the lower-tier item, and never let documentation displace clinical care.
 
@@ -56,7 +68,7 @@ Tier 1 through Tier 6, highest to lowest. When two demands from different tiers 
 ---
 
 **TIER 1 — LIFE THREAT (act immediately, nothing waits)**
-- Airway obstruction or loss of airway patency
+- Airway obstruction or loss of airway patency (including complete laryngospasm)
 - Apnea or respiratory arrest
 - Cardiac arrest / pulseless
 - Anaphylaxis
@@ -70,7 +82,7 @@ Tier 1 through Tier 6, highest to lowest. When two demands from different tiers 
 - Significant desaturation (SpO₂ trending below unit threshold despite intervention)
 - Hemodynamic instability (hypotension, bradycardia, tachycardia outside recovery norms)
 - Acute mental status change (not explained by expected emergence)
-- Laryngospasm (partial or complete)
+- Partial laryngospasm (complete laryngospasm is airway obstruction — Tier 1)
 - Suspected malignant hyperthermia signs
 
 *Rule: Stabilize before anything else. Delegate Tier 3–6 tasks. Call anesthesia or rapid response per unit protocol.*
@@ -78,7 +90,7 @@ Tier 1 through Tier 6, highest to lowest. When two demands from different tiers 
 ---
 
 **TIER 3 — ACTIVE SYMPTOM MANAGEMENT (act within 5–10 minutes)**
-- Uncontrolled pain (patient reporting ≥7/10 or exhibiting distress)
+- Uncontrolled pain (pain score above the unit threshold per facility protocol, or patient exhibiting distress)
 - Active vomiting or severe nausea unresponsive to initial treatment
 - Significant hypothermia or shivering
 - Acute urinary retention causing distress
@@ -124,7 +136,7 @@ Tier 1 through Tier 6, highest to lowest. When two demands from different tiers 
 
 | Scenario | Rule |
 |----------|------|
-| **New patient arriving + current patient needs pain med** | If pain med takes ≤2 min (push dose), medicate first, then receive. If it requires titration, delegate receipt to backup RN, manage pain, then take over. |
+| **New patient arriving + current patient needs pain med** | Receive the new patient (Tier 2–3 potential: airway and hemodynamics not yet assessed) — this outranks Tier 3 pain. Ask the backup RN or charge nurse to give the ordered analgesia (per provider order) meanwhile; if no one is available, call the charge nurse rather than leave the arrival unassessed. |
 | **Two patients: one desatting, one in pain** | Desaturation wins (Tier 2 > Tier 3). Call for help for the pain patient, manage the airway. |
 | **Surgeon calling + patient is actively vomiting** | Patient wins. Tell the surgeon you'll call back in 5 minutes, or ask charge to take the call. |
 | **New patient arriving + you haven't finished charting the last one** | Receive the new patient (Tier 2–3 potential). Chart the prior patient in the gap after initial assessment. |
@@ -141,11 +153,11 @@ PACU PRIORITIZATION RULE — POCKET CARD
 ========================================
 
 TIER 1 — LIFE THREAT → Act NOW. Call for help while acting.
-  Airway loss | Apnea | Arrest | Anaphylaxis | Massive hemorrhage
+  Airway loss (incl. complete laryngospasm) | Apnea | Arrest | Anaphylaxis | Massive hemorrhage
   → Nothing else happens until this is resolved.
 
 TIER 2 — ACUTE INSTABILITY → Act within minutes. Delegate everything else.
-  Desaturation | Hemodynamic instability | Acute MS change | Laryngospasm
+  Desaturation | Hemodynamic instability | Acute MS change | Partial laryngospasm
   → Stabilize. Call anesthesia / rapid response.
 
 TIER 3 — ACTIVE SYMPTOMS → Act within 5–10 min. Treat before charting.
@@ -207,6 +219,22 @@ THE ONE RULE
 **Delegation discomfort:** Orientees — especially those from settings where they worked alone (jail nursing, home hospice) — may be uncomfortable delegating. The card explicitly names delegation as a tool, not a failure. Reinforce this in preceptor conversations.
 
 **When two Tier 1 events happen simultaneously:** Call a code / rapid response. This is not a prioritization problem — it is a staffing problem. The card does not solve staffing; it tells the orientee to get help.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill tier examples with numeric triggers (an SpO₂ cut-off, a pain score, a temperature) — the card's own "below unit threshold" wording is the model, and per `../perianesthesia/SAFETY_PREAMBLE.md` the value is `per facility protocol`.
+- Rank an event by its mild form when its worst form belongs higher: list the severe form in the tier its physiology demands (an obstructed airway is Tier 1), so it never waits behind anything.
+- Write a collision row whose verdict contradicts the tier stack or another row — for example, two rows involving the same kind of demand that give opposite sequences.
+- Put RN-initiated drug actions on the card (an antiemetic "per standing order") unless the user supplied that standing order for this unit.
+
+✅ **DO:**
+- Cross-check every collision row: name the tier of each competing demand and confirm the verdict follows "higher tier wins" or the same-tier rule.
+- Check each delegation target the card names against the staffing inputs; a backup RN or tech who does not exist on this unit makes the rule unusable.
+- Walk each collision scenario the user listed through the finished card and confirm it resolves to one action without the preceptor's input.
+- Confirm the Tier 1–2 escalation names a role (anesthesia, rapid response, charge nurse) and routes the trigger criteria to facility policy.
 
 ---
 

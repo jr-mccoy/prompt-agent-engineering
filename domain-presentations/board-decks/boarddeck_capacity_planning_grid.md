@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept utilisation cells whose percentage is not demand ÷ capacity for that team-quarter, or whose green/amber/red band disagrees with the threshold the intake set.
+- Trust a "total headcount" or "short 6 FTE in Q3" callout without summing the column it describes.
+- Let the model populate FTE counts, planned hires or extra quarters to make every cell coloured; a fully filled grid looks finished precisely because the gaps were invented.
+- Put FTE rows and hours or story-point rows under one colour scale.
+
+✅ **DO:**
+- Recompute demand ÷ capacity for at least three cells, including the reddest, and check each against its printed % and band.
+- Sum every quarter column and compare it with the column total and with the gap figure quoted in Zone 1.
+- Count teams (rows) and quarters (columns) against the intake; a cell with no input renders neutral grey as "[not provided]", never inside a colour band.
+- Confirm the capacity gap the takeaway names is the worst cell actually shown.

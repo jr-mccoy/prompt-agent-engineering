@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, RT-02, DS-06, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_anesthesia_pharmacology_map.md
   - pacu_foundations_emergence_respiratory_physiology.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Anesthesia Types Primer — GA, MAC, Regional, Neuraxial
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study primer, not live clinical decision support. Any real recovery plan follows your preceptor, provider, and facility protocol.
 
@@ -91,6 +104,20 @@ My weakest of the four right now: [ ]
 | `types_to_cover` | Focus on one family at a time |
 | `surgical_context` | Weights examples toward the learner's actual case mix |
 | `depth` | `orientation` (default) vs. `enriched` (adds the mechanism link to the pharmacology map) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill "Recovery signature" with the definition reworded ("GA: unconscious → wakes up"); it occupies the slot but tells the nurse nothing to anticipate.
+- Rate MAC as the low-risk row of the grid; sedation can deepen into the same airway and drive problems as GA, so a MAC row with a minimal airway watch is false reassurance.
+- Give neuraxial and peripheral regional blocks the same surveillance — sympathetic/hemodynamic and urinary concerns follow neuraxial, while limb protection and pain on block regression follow peripheral blocks — two near-identical rows fail the grid without tripping any single line.
+- Beyond the ban on block levels as numbers, keep out regression times, motor-return criteria and "ready to ambulate when" rules; each is a facility or provider criterion.
+
+✅ **DO:**
+- Read the CONTRAST GRID column by column and confirm no two rows share both the same dominant domain and the same emergence description.
+- Check each watch-for's cue is observable in the PACU bay and its escalation names a role, and count the watch-fors per type covered.
+- Tie the recognition line to the type named in report and the `surgical_context` given, not to a generic patient.
+- Route any block-assessment or motor-return criterion to `per facility protocol` and the anesthesia provider.
 
 ## Verification Checklist
 

@@ -24,7 +24,7 @@ tags:
   - alphabet
   - line-art
   - print-ready
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - kids_coloring_page_simple.md
@@ -270,6 +270,22 @@ Negative: `"shading, grayscale, gray, color, gradient, solid black, fill, realis
 
 ### Problem: Shading/fills appear
 **Add:** `"Every area, including inside the letters, stays pure white. NO gray, NO shading, NO solid black fill."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat a correctly spelled caption as a correct page — a "3" with four balloons, or a "petal" label whose leader line ends on a sepal, passes the spelling check and teaches the wrong thing.
+- Pair a letter with a picture whose first sound is not the sound being taught ("K is for Knife", "E is for Eagle" on a short-e page) — the word starts with the letter but the phonics lesson fails.
+- Accept letterforms the child is not taught — double-story "a" and "g" in the caption or tracing row when the class writes single-story manuscript forms, or a backward "3" or "S".
+- Check closure on the letter's outer contour only — the counters inside hollow A, B, e, 8 and 0 are separate regions that also bleed if open.
+- Use a licensed cartoon character as the matching picture; it is recognisable, and it is not yours to print.
+
+✅ **DO:**
+- Count every countable object on number pages against the numeral; on fact pages, check each label against a reputable reference diagram and trace each leader line to its endpoint.
+- Say the picture word aloud and confirm its first phoneme matches the letter's target sound before generating.
+- Measure strokes at 300 DPI: 3–5 pt for the concept and picture is about 12.5–21 px, and 2–3 pt caption outlines about 8–12.5 px; anything thinner fails "Bold child-friendly line weights".
 
 ---
 

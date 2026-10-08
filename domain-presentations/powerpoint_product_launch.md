@@ -1,3 +1,22 @@
+---
+title: "Product Launch Presentation"
+category: presentations
+description: "Build a go-to-market launch presentation that coordinates internal teams and external stakeholders around a new product or feature release, with clear success metrics and an execution plan."
+techniques:
+  - ST-03
+  - OC-08
+  - NE-14
+  - AG-12
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - product-launch
+  - go-to-market
+  - launch-readiness
+updated: "2026-10-06"
+---
+
 # Product Launch Presentation
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -70,6 +89,15 @@ CROSS-FUNCTIONAL ALIGNMENT:
 VALIDATION:
 Show thumbnails, verify launch coordination completeness, confirm success metric clarity
 ```
+
+## False-Positive Prevention
+
+1. **Market size that cannot be rebuilt.** The Market Opportunity figure must show its build (segments × customers × price) from the market analysis input; a top-down number with no build is tagged [Illustrative].
+2. **A small beta presented as market validation.** Five glowing quotes from a twelve-account beta are not demand evidence. Report beta size and the usage metric next to every testimonial on Customer Validation.
+3. **Competitor gaps with no source date.** "Only we offer X" on Competitive Positioning needs a source and as-of date; the competitor may have shipped X since the market analysis was written.
+4. **Quotes and logos used without consent.** Name or quote a customer only where the customer validation data records permission.
+5. **"Ready" assigned to dependencies nobody reported on.** On Launch Timeline, each cross-functional dependency (sales training, support documentation, engineering readiness) carries an owner and a reported status; no status means "unknown".
+6. **Verify:** confirm every Success Metrics target has a baseline and a named measurement source, and that each bolded launch date, revenue target, and adoption goal carries the same value on every slide where it recurs.
 
 ## Usage Notes
 

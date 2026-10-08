@@ -24,7 +24,7 @@ tags:
   - root-cause
   - question-review
   - boards-prep
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_premature_closure_check.md
   - domain-medical-education/learner-clinical-reasoning/reason_dual_process_metacognition_coach.md
@@ -140,6 +140,16 @@ If learner has run this teardown ≥ 3 times with same primary error type → es
 | `pattern_history` | Optional log of prior teardowns to detect repeating error types |
 | `time_budget_minutes` | Cap on restudy task (default 30) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Treating `correct_choice` as beyond question, so a learner who picked a defensible option is "diagnosed" with an error that isn't one | Solve the item blind from the stem before reading the key; if a second option is also defensible or the key rests on a superseded guideline, report an item-quality flag beside the classification rather than forcing a learner error |
+| Writing Step D's discriminator from memory when no `rationale_provided` was supplied, then grading the learner against it as if it were the source's rationale | Label a self-generated chain as the tutor's reasoning and tag any treatment-order or threshold claim in it [VERIFY: current guideline or question-bank rationale] |
+| Choosing the error type by impression, then finding a quote that roughly fits | Let the quoted phrase decide: a content-gap quote asserts a wrong fact, a test-taking quote shows the question word ignored, a bias quote shows contrary stem data passed over — if the quote shows none of these, quote more of the reasoning before classifying |
+| Firing the pattern-check escalation ("third time this month") with no logged history | Escalate only when `pattern_history` is supplied, and print the count of prior teardowns sharing this primary type; otherwise write "no history supplied" |
+| A Step E that explains why the key wins but dismisses the other options with reasons the stem contradicts | Before sending, check that Step E rejects every non-keyed option with a reason traceable to a stem detail (a vital sign, a qualifier, the literal question word); a rejection that conflicts with the stem means the chain needs repair |
+
 ## Verification Checklist
 
 - [ ] Question setup restated in one sentence; the *actual question being asked* is identified separately from the stem.
@@ -155,7 +165,7 @@ If learner has run this teardown ≥ 3 times with same primary error type → es
 ## Worked Example (compact)
 
 **Input:**
-- `question_stem`: "A 67-year-old man with COPD on home O2 presents with 3 days of progressive dyspnea, productive cough with green sputum, and low-grade fever. He uses albuterol nebs at home. Vitals: HR 108, RR 24, sat 86% on his usual 2 L NC, BP 138/86. Exam: distant breath sounds, prolonged expiration, scattered rhonchi, no JVD. Which of the following is the most appropriate INITIAL management step?"
+- `question_stem`: "A 67-year-old man with COPD on home O2 presents with 3 days of progressive dyspnea, productive cough with green sputum, and low-grade fever. He uses albuterol nebs at home. Vitals: HR 108, RR 24, sat 90% on his usual 2 L NC, BP 138/86. Exam: distant breath sounds, prolonged expiration, scattered rhonchi, no JVD. Which of the following is the most appropriate INITIAL management step?"
 - `answer_choices`: A) Increase home O2 to 4 L NC; B) Administer nebulized albuterol/ipratropium; C) Start non-invasive positive-pressure ventilation (BiPAP); D) Administer IV methylprednisolone; E) Start IV ceftriaxone + azithromycin
 - `learner_choice`: D
 - `correct_choice`: B
@@ -168,18 +178,18 @@ If learner has run this teardown ≥ 3 times with same primary error type → es
 EXPLAIN MY MISTAKE — single-question teardown
 Learner level: MS4
 
-Question stem (one-line): 67M with COPD on home O2 with 3 days progressive dyspnea, productive cough, low-grade fever, HR 108, RR 24, sat 86% on usual O2.
+Question stem (one-line): 67M with COPD on home O2 with 3 days progressive dyspnea, productive cough, low-grade fever, HR 108, RR 24, sat 90% on usual O2.
 Actual question being asked: most appropriate INITIAL management step.
 Choices: A) ↑ O2 to 4 L; B) nebulized albuterol/ipratropium; C) BiPAP; D) IV methylprednisolone; E) abx.
 Learner picked: D (methylprednisolone).
 Correct: B (nebulized albuterol/ipratropium).
 
 >>> CANONICAL REASONING CHAIN
-Step A: COPD exacerbation, hypoxic but not in extremis, ambulatory baseline; QUESTION = INITIAL step.
+Step A: COPD exacerbation, sat already within the 88–92% target on home O2, not in extremis, ambulatory baseline; QUESTION = INITIAL step.
 Step B: Schema = COPD exacerbation management — bronchodilators, steroids, antibiotics, oxygen, NIPPV, monitor.
 Step C: Candidates ordered by acuity: bronchodilators (immediate) → titrated O2 to sat 88–92% → systemic steroids → antibiotics if green sputum / increased volume / mechanical ventilation → NIPPV if respiratory failure → IMV if NIPPV fails.
 Step D: Discriminator = "INITIAL." Bronchodilators are first-line and act in minutes. Steroids and antibiotics are critical but slower-onset and not first.
-Step E: B matches "initial." D, E, C are also indicated but not initial. A is wrong because over-oxygenation can worsen hypercapnia.
+Step E: B matches "initial." D, E, C are also indicated but not initial. A is wrong because sat 90% is already within the 88–92% target; raising O2 further risks over-oxygenation and worsening hypercapnia.
 
 >>> BROKEN STEP
 Broke at: Step D (discrimination on "INITIAL" qualifier) with secondary at Step A (didn't isolate the literal question).

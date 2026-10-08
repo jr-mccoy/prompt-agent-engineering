@@ -18,7 +18,7 @@ tags:
   - speech-bubbles
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/comic-sequential/manga_style_panel.md
   - domain-image-generation/comic-sequential/webtoon_vertical_strip.md
@@ -155,6 +155,22 @@ If the character/style/grade drifts from other panels, the panel is incorrect.
 3. "The color grade warmed up in the bottom row — restore the uniform `[COLOR GRADE]`."
 4. "`[CHARACTER NAME]`'s outfit color changed in panel 5 — restore the default outfit from the reference pack."
 5. "Gutters are uneven — make all gutters `[GUTTER]` width and the borders consistent."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call the reading order "unambiguous" for an irregular `[LAYOUT]` without tracing it — a tall panel spanning two rows on the left pulls the eye down the column instead of across the row.
+- Pass a bubble-safe area that is calm but in the wrong place — in a two-speaker panel, the first speaker must sit left of or above the second so the balloons can read in order, and a tail to the speaker must not cross another character's face.
+- Tick "adjacent panels differ by a shot-size step" from the `[BEAT SHEET]` labels; the render can show two medium shots where the sheet said medium then close-up.
+- Clear "character on-model" while characters swap screen sides between panels of the same conversation — faces match the bible, but the scene breaks the 180-degree line.
+- Assemble Nano Banana panels rendered at one aspect ratio into cells of another; cropping a portrait render into a near-square cell can cut away the reserved balloon zone at the top.
+
+✅ **DO:**
+- Number the panels on a copy of the page the way a first-time reader would, then compare that order with the `[BEAT SHEET]`.
+- For each `[DIALOGUE MAP]` entry, draw the balloon zone and a straight tail to the speaker's mouth on an overlay; any crossing or out-of-order pair is a recomposition.
+- Classify each panel's shot size from the render, and note each character's side of frame per panel before signing off.
 
 ---
 

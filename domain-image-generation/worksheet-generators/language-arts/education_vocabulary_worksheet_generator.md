@@ -2,13 +2,23 @@
 title: "Vocabulary Worksheet Generator"
 category: education
 description: "Generate vocabulary practice worksheets including definitions, context clues, and usage tasks."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - language-arts
   - worksheet
   - vocabulary
   - context-clues
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Vocabulary Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept ZONE 2 syllable marks because each word is split; models break at arbitrary letters, so check every break.
+- Let a ZONE 3 definition use the target word or its root (generous: being generous).
+- Write a ZONE 4 context sentence where another bank word also fits.
+- Use a definition sense different from the one the ZONE 4 sentence uses (bank as money vs river edge).
+
+✅ **DO:**
+- Try every bank word in each ZONE 4 sentence; exactly one should fit.
+- Match each definition's sense against the sentence where the word is used.
+- Verify syllable breaks against a dictionary's hyphenation points.

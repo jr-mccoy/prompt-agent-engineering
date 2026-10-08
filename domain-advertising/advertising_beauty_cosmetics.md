@@ -20,12 +20,12 @@ tags:
   - beauty
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Beauty** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,25 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **Retouched skin is an efficacy claim.** Poreless skin, erased lines, or a before/after split
+   shows what the product supposedly does; the form checklist passes on the product name while the
+   face makes the claim. Ask for natural visible skin texture unless the user supplies a result
+   direction, and route any depicted result to `campaign/adcampaign_claims_compliance_review.md`.
+2. **The skin-tone range must match the shade range.** Faces across tones the line does not cover
+   overstate it; a single tone for a broad line understates it. Ask how many shades and which
+   undertones actually ship before describing models.
+3. **Label and badge text invents itself.** "Dermatologist tested", "cruelty-free", "clean",
+   "SPF 50", "clinically shown", and "93% saw results" are each a claim a model will happily letter
+   onto a bottle; render one only as written in intake.
+4. **A plausible bottle can be a fictional product.** A generic jar with an invented brand name or
+   ingredient list passes the anti-mockup rules and still shows something nobody sells; label text
+   comes from intake or the label stays blank.
+5. **Verify before handing over:** go slot by slot through the Final Image Prompt, tagging each
+   rendered string with its intake field and each depicted face with its stated texture and tone
+   instruction. An untagged string, or a face with no retouching instruction, fails.
 
 ## Output Format
 

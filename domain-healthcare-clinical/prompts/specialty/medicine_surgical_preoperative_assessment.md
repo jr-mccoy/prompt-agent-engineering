@@ -19,10 +19,22 @@ related_prompts:
   - medicine_clinical_decision_support
   - medicine_drug_interaction_checker
   - medicine_handoff_communication
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Surgical Pre-operative Assessment
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide a structured pre-operative assessment and surgical risk stratification framework covering cardiac risk assessment, pulmonary risk evaluation, peri-operative medication management, and pre-operative optimization recommendations to support safe surgical planning.
 
@@ -118,8 +130,12 @@ REVISED CARDIAC RISK INDEX (RCRI / Lee Index):
     1 risk factor: ~6.0% MACE risk
     2 risk factors: ~10.1% MACE risk
     ≥ 3 risk factors: ~15%+ MACE risk
+    (Source of this risk-estimate set must be named before quoting it — these are not
+     Lee's original derivation figures [VERIFY: source, e.g. 2017 Canadian Cardiovascular
+     Society perioperative guideline, and which set the institution uses])
 
-ACS/AHA STEPWISE ALGORITHM (2014 Guidelines):
+ACC/AHA STEPWISE ALGORITHM (2014 guideline — a newer edition may supersede it
+[VERIFY: current ACC/AHA perioperative cardiovascular guideline, 2024 edition]):
   1. Is the surgery emergent?
      [ ] Yes → Proceed to surgery with perioperative risk mitigation
      [ ] No → Continue to Step 2
@@ -230,13 +246,16 @@ HOLD BEFORE SURGERY:
   [ ] Metformin: Hold day of surgery (restart when eating and renal function stable)
   [ ] SGLT2 inhibitors: Hold 3-4 days before surgery (risk of euglycemic DKA)
   [ ] Sulfonylureas: Hold day of surgery (hypoglycemia risk)
-  [ ] GLP-1 receptor agonists: Hold 1 week before surgery (gastric motility concerns)
+  [ ] GLP-1 receptor agonists: Hold vs continue per current peri-operative guidance — the earlier
+      "hold weekly agents 1 week before" advice has changed (gastric motility / aspiration concerns)
+      [VERIFY: current ASA / multisociety GLP-1 RA peri-operative guidance]
   [ ] Insulin: Reduce basal by 20-25% night before; hold mealtime insulin day of surgery
       Perioperative glucose target: 140-180 mg/dL (avoid < 70 and > 250)
 
   Anticoagulants:
   [ ] Warfarin: Stop 5 days before surgery (INR target < 1.5 for most procedures)
-      Bridge with LMWH: Only if HIGH thrombotic risk (mechanical valve, recent VTE < 3 months,
+      Bridge with LMWH: Only if HIGH thrombotic risk (mechanical valve with high-risk features —
+        not every mechanical valve [VERIFY: current ACC/AHA valvular heart disease guideline], recent VTE < 3 months,
         high-risk thrombophilia)
       Most patients do NOT need bridging
   [ ] DOACs:
@@ -248,7 +267,7 @@ HOLD BEFORE SURGERY:
       Primary prevention: Stop 7-10 days before
       Secondary prevention (CAD, stents): CONTINUE unless bleeding risk very high
       Bare-metal stent < 30 days or DES < 6 months: DO NOT STOP aspirin
-  [ ] Clopidogrel / prasugrel / ticagrelor: Stop 5-7 days before
+  [ ] Clopidogrel / ticagrelor: Stop 5 days before; prasugrel: Stop 7 days before
       Exception: Recent stent — consult cardiology before stopping
 
   Other:
@@ -305,6 +324,22 @@ FRAILTY (in elderly patients):
   [ ] Frail → Significantly increased risk of complications, prolonged recovery
       → Consider: Prehabilitation, goals-of-care discussion, modified surgical approach
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick the RCRI "High-risk surgery" item for every procedure marked "Elevated risk (≥ 1%)" in the input — the RCRI item counts only intraperitoneal, intrathoracic or suprainguinal vascular surgery, so an orthopedic or head/neck case can be elevated-risk with that RCRI item unticked.
+- Score the RCRI diabetes item for diet- or oral-agent-treated diabetes, or record "≥ 4 METs" for a patient who was never asked the stair question or cannot climb for a non-cardiac reason (the joint being replaced) — that capacity is "Unknown", which routes to Step 5, not to "Proceed".
+- Write a DOAC hold interval from the generic line when no CrCl was supplied, or compute it from eGFR — the renal tiers are Cockcroft-Gault CrCl from age, weight and creatinine; without them write `[CrCl needed — VERIFY: hold interval against current perioperative guidance]`.
+- Apply the adult framework unchanged to pregnant patients (aspiration, VTE and drug-hold rules differ; obstetric anesthesia input needed), to children (RCRI and STOP-BANG are not validated there), or to dialysis patients, whose creatinine item is automatically positive and whose real questions are dialysis timing and pre-operative potassium.
+
+✅ **DO:**
+- Recompute every score from its ticked items before it reaches the summary: list the RCRI items and confirm the count equals "[X]/6" and that the quoted MACE percentage is the one on that score's row (`[VERIFY: which RCRI risk-estimate set the institution uses]`); count STOP-BANG yes-answers out of 8 and report unasked items as unknown, not as "no".
+- Trace every drug in "Continue" and "Hold" to the supplied medication list — none added, none dropped — and convert each hold into a calendar date counted back from the surgery date, including weekly GLP-1 agonists and SGLT2 inhibitors (`[VERIFY: current GLP-1 peri-operative guidance — it has changed]`).
+- For any stent, record type and implantation date and compute months elapsed before writing an antiplatelet line; if either is missing the line reads "cardiology input required", not a default.
+- Label ASA class "provisional — assigned by anesthesia", and mark "Recommendation: Proceed" conditional whenever a Step 2 active-cardiac-condition box was left unanswered rather than answered "no".
 
 ---
 
@@ -381,7 +416,8 @@ Verify with anesthesiology and surgical team
 
 ### Patients on Anticoagulation for Mechanical Heart Valves
 - Higher risk of thrombosis if anticoagulation interrupted
-- Usually requires bridging with LMWH or IV heparin
+- Bridging with LMWH or IV heparin depends on valve position, valve type and thromboembolic
+  risk factors — not every mechanical valve requires it [VERIFY: current ACC/AHA valvular heart disease guideline]
 - Consult cardiology for management
 
 ### Morbid Obesity

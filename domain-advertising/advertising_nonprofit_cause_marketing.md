@@ -20,12 +20,12 @@ tags:
   - nonprofit
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Nonprofit** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,24 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **Beneficiary imagery can misrepresent the people served.** A generated child in distress, a
+   generic "poverty" scene, or a region the charity does not work in passes every form line and
+   misstates both the need and the people. Ask whom the organisation serves and how its own policy
+   portrays them; default to depictions that preserve dignity, and avoid any face read as a real,
+   identifiable beneficiary unless the organisation holds consent for that image.
+2. **"Impact per contribution" invites exact ratios.** "$1 = 10 meals" or "50,000 children helped"
+   appear only as stated in intake, with the source and period behind the number.
+3. **Giving terms are claims.** "Tax-deductible", "gifts matched 2x until Dec 31", and charity
+   rating badges are rendered only as supplied; deductibility varies by jurisdiction and is a
+   question for counsel, not asserted here.
+4. **Partner logos imply endorsement.** Corporate sponsors and partner agencies appear only when
+   intake confirms the partnership and permission.
+5. **Verify before handing over:** for each depicted person, name the intake answer or consent that
+   permits the depiction; then match every impact number, deadline, and match ratio to intake
+   verbatim. A person or figure with no source fails.
 
 ## Output Format
 

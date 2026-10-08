@@ -18,8 +18,8 @@ tags:
   - performance-descriptors
 updated: "2026-05-15"
 related_prompts:
-  - domain-medical-education/assessment-tools/meded_osce_station_designer.md
-  - domain-medical-education/feedback-remediation/meded_milestone_narrative_writer.md
+  - domain-medical-education/educator-simulation-design/sim_osce_station_designer.md
+  - domain-medical-education/educator-rubrics-wba/assess_milestone_narrative_writer.md
   - domain-medical-education/educator-rubrics-wba/assess_workplace_based_assessment_tools.md
 ---
 

@@ -15,8 +15,20 @@ tags:
   - emergency-medicine
   - diagnostic-workup
   - dyspnea
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -59,7 +71,7 @@ Work up the dyspneic patient: triage acute respiratory failure, separate cardiac
    - Often normal in PE.
 
 4. **Cardiac ischemia/heart failure workup.**
-   - **BNP/NT-proBNP:** BNP <100 pg/mL or NT-proBNP age-adjusted (<450 if <50, <900 if 50–75, <1800 if >75) makes acute heart failure unlikely; high values confirm. Obesity lowers BNP; renal failure and afib raise it.
+   - **BNP/NT-proBNP:** BNP <100 pg/mL makes acute heart failure unlikely. The NT-proBNP age-adjusted values (450 if <50, 900 if 50–75, 1800 if >75) are rule-in thresholds, not rule-out; the NT-proBNP rule-out cutoff is a separate, lower, age-independent value [VERIFY: current ESC/ACC heart-failure guideline and assay insert — NT-proBNP rule-out cutoff]; high values confirm. Obesity lowers BNP; renal failure and afib raise it.
    - Echocardiogram for EF, valvular function, RV strain, pericardial effusion.
    - ECG: ischemic changes, RV strain pattern, AFib with RVR (precipitant of HF), low voltage with electrical alternans (effusion/tamponade).
    - Troponin if any concern for ACS-driven HF.
@@ -100,6 +112,20 @@ Work up the dyspneic patient: triage acute respiratory failure, separate cardiac
     - Stable hypoxia requiring O2, IV diuresis, IV antibiotics → ward.
     - Resolved symptoms with treatable outpatient cause → discharge with close follow-up.
     - Always document oxygen requirement at discharge and ambulation SpO2 if applicable.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Diagnose decompensated heart failure without naming its precipitant (ischemia, arrhythmia, nonadherence, infection, NSAIDs or other drugs, uncontrolled BP, renal decline) — the label alone misses the treatable trigger.
+- Write "troponin negative — no ischemia" from one value; ACS as the trigger needs serial troponin per the assay's algorithm.
+- Read a natriuretic peptide against a cutoff without saying whether it is a rule-out or rule-in threshold, which peptide and assay, and which confounders (AF, CKD, age, obesity) are present.
+- Enter "B-lines expected" or "plethoric IVC expected" under findings — an unperformed POCUS is not a finding.
+- Write diuretic doses or urine-output targets that cannot be traced to the home dose in the input, the label or a named protocol, or that mix mL/h and L/day.
+
+✅ **DO:**
+- Show the IV loop-diuretic calculation from the stated home oral dose and multiplier (e.g. home furosemide 40 mg PO × 2.5 = 100 mg IV); if the home dose is absent, say so.
+- Compute PaO2/FiO2 or the A–a gradient from the blood gas and the delivered FiO2 when grading hypoxemia; SpO2 on nasal cannula alone does not grade it.
+- Name the confirmatory check for the working diagnosis — weight, net balance, symptoms and creatinine at a stated reassessment time — and the result that would reopen PE, pneumonia or tamponade.
 
 ## Output Format
 
@@ -158,7 +184,7 @@ DIFFERENTIAL (ranked):
 
 KEY TESTS:
 - BNP 2400 confirms HF.
-- Troponin negative — no concomitant ischemia.
+- Troponin negative ×1 — a single value does not exclude ischemia as the trigger; repeat serial troponin per the assay's algorithm.
 - Echo to reassess EF, valves, RV, look for new regional wall motion abnormality.
 - BMP, magnesium, CBC, coags (INR on warfarin), TSH (AFib precipitants).
 - ABG if worsening — currently SpO2 acceptable on NC.
@@ -166,7 +192,7 @@ KEY TESTS:
 
 WORKING DIAGNOSIS / TREATMENT:
 - Acute decompensated heart failure with congestion, AFib with RVR contribution, cardiorenal syndrome.
-- Furosemide IV: 2.5× home oral dose IV; if naive, 40–80 mg IV bolus then drip 5–20 mg/h or repeat boluses. Monitor urine output (target 1 L/h initially, then ≥3 L net negative/day). Per DOSE trial, high-dose IV bolus and continuous infusion equivalent.
+- Furosemide IV: 2.5× home oral dose IV (home dose not provided — obtain it); if naive, 40–80 mg IV bolus then drip 5–20 mg/h or repeat boluses. Monitor urine output and net balance against the targets of a named diuretic-response protocol [VERIFY: current ESC/HFA diuretic-response protocol — urine-output / urine-sodium targets]. Per DOSE trial, high-dose IV bolus and continuous infusion equivalent.
 - Add metolazone 5–10 mg PO 30 min before furosemide if diuretic resistance; replete K and Mg aggressively (target K 4–5, Mg >2).
 - Hold home BB if frank decompensation or hypotension; otherwise continue at reduced dose (do not stop abruptly per OPTIMIZE-HF).
 - ACE/ARB/ARNI: continue or restart once euvolemic and renal function stable; sacubitril-valsartan preferred per PARADIGM-HF if tolerated.

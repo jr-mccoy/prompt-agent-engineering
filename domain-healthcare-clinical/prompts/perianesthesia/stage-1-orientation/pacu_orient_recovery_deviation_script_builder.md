@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, DS-06, RT-02, RT-05, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_normal_vs_deviation_drill.md
   - pacu_orient_respiratory_event_recognition_drill.md
@@ -31,6 +31,19 @@ references:
 ---
 
 # Recovery-Deviation Script Builder — 5-Slot Recognition Scaffold
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study scaffold, not live clinical decision support. Manage real events with your preceptor, provider, and facility protocol.
 
@@ -90,6 +103,20 @@ Filed to my deck as: [tag]
 | `depth` | `enriched` adds mechanism/pathophys grounding |
 | `mode` | `build` vs. `recall` (learner reconstructs a stored script from memory) |
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill Slot 4 with the textbook presentation relabeled as "early" (frank desaturation, silence, collapse) so the slot is complete but teaches nothing new.
+- Choose Slot 5 mimics that are rarely confused with the event at the bedside — easy mimics make the discrimination look sharp.
+- Give Slot 3 a precision the source does not support ("within N minutes"); time-course stays at phase level (emergence, mid-recovery, near discharge).
+- Write a Slot 2 mechanism that restates the event's name or runs cause and effect backwards; it must explain why the Slot 4 cues appear.
+- Print `Grounded in: [source]` when the slots came from general knowledge rather than the pasted `source_material`.
+
+✅ **DO:**
+- Test each Slot 4 cue against Slot 2: a cue the mechanism cannot produce has probably been borrowed from a mimic — move or delete it.
+- Check every Slot 5 discriminator is observable by the nurse (a sound, an effort pattern, a timing relationship), not a result that needs a provider-ordered test.
+- When `source_material` is pasted, tag each slot `from source` or `general` and make the header agree with the tags.
+
 ## Verification Checklist
 
 - [ ] All five slots populated; **cues precede classic signs** in Slot 4.
@@ -109,7 +136,7 @@ Slot 1: light anesthesia/airway irritation on emergence, secretions, recent airw
 Slot 2: reflexive vocal-cord closure narrows/blocks the airway.
 Slot 3: classically at/just after emergence and airway stimulation.
 Slot 4 (cues first): a high-pitched crowing/stridor-like sound, paradoxical/see-saw chest-abdomen movement, falling air movement — before frank silence.
-Slot 5: laryngospasm vs bronchospasm (wheeze, longer expiratory phase) vs NPPE (frothy secretions, desaturation after obstruction relieved).
+Slot 5: laryngospasm vs bronchospasm (wheeze, longer expiratory phase) vs NPPE (frothy secretions, desaturation usually soon after obstruction is relieved, sometimes delayed).
 Action band: call for help, position/support airway and apply O2 within scope, assist the provider, prepare emergency airway equipment; reassess continuously; escalate to provider/anesthesia immediately.
 Coaching point: the crowing sound and see-saw movement are your earliest tell — act on the sound, don't wait for silence.
 ```

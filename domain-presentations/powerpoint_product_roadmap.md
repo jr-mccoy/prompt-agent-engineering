@@ -1,3 +1,22 @@
+---
+title: "Product Roadmap Presentation"
+category: presentations
+description: "Convert product planning data into a visual roadmap presentation that aligns stakeholders on priorities, timeline, and resource allocation for the next 6-12 months."
+techniques:
+  - ST-03
+  - DS-06
+  - RP-02
+  - CM-02
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - product-roadmap
+  - engineering-capacity
+  - stakeholder-alignment
+updated: "2026-10-06"
+---
+
 # Product Roadmap Presentation
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -64,6 +83,15 @@ AUDIENCE CUSTOMIZATION:
 VALIDATION:
 Show thumbnails, verify timeline realism, confirm customer impact clarity
 ```
+
+## False-Positive Prevention
+
+1. **"On track" with no baseline date.** A release shown as on track states the date it was first committed to; a date that has moved since the last roadmap is drawn as moved, with the original date visible.
+2. **A timeline that overruns capacity.** Placing items on the Roadmap Overview is a capacity claim. Sum the effort estimates in each period and compare them with sprint velocity × sprints available from the capacity plan; an overfilled period is flagged, not drawn as feasible.
+3. **Priority scores relabelled as revenue impact.** Request counts and priority scores are not revenue. Rank by revenue impact only from the feedback data's revenue field; otherwise rank by what the data does hold and say which.
+4. **Dates on unestimated work.** Backlog items without an effort estimate, or with an unresolved dependency, go in a "not yet scheduled" band instead of on the timeline.
+5. **Tentative items dated in the customer-facing version.** Sales and customers read a date as a commitment; omit dates for anything the strategy document marks tentative.
+6. **Verify:** check that each Priority Features item exists in the backlog with an estimate, and that each dependency on Risk Mitigation appears in the backlog's dependencies field.
 
 ## Usage Notes
 

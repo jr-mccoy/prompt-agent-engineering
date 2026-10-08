@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, RT-02, DS-06, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_hemodynamics_of_emergence.md
   - pacu_foundations_emergence_respiratory_physiology.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Monitoring & Scores Primer — Reading the Monitors, Aldrete/PADSS Basics
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study primer, not live clinical decision support. Actual scoring thresholds and discharge criteria are set by your facility; read real monitors with your preceptor.
 >
@@ -91,6 +104,19 @@ The parameter I understand least: [ ]
 | `scope` | Focus monitors, Aldrete, or PADSS alone |
 | `facility_tool` | Use the learner's real scoring sheet for examples |
 | `depth` | `orientation` (default) vs. `enriched` (adds the physiology behind each parameter) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Recite Aldrete or PADSS point values, points per category, the maximum total, or a "typical" discharge total — even framed as "commonly used" — the original and modified versions differ and facilities localize both.
+- List the original Aldrete categories (color) when the learner's tool is the modified version (oxygen saturation), or the reverse; a category list that does not match the pasted sheet looks right and teaches the wrong form.
+- Give a monitor row only one meaning ("SpO₂ falling = needs more oxygen"); a change can be probe position, motion or poor perfusion at the site as well as physiology, and the row should say to check the patient before the number.
+- Present a parameter the learner's unit may not monitor routinely as standard PACU monitoring.
+
+✅ **DO:**
+- When `facility_tool` is pasted, line the ALDRETE and PADSS category lists up against it word for word and report any category on one that is missing from the other.
+- Check each "Beginner trap" cell names a specific way the number misleads (lag, artifact, cycling interval, supplemental oxygen masking hypoventilation), not a general "don't rely on monitors".
+- Confirm which phase each tool is used in against the pasted tool or the learner's unit, not from the primer's default alone.
 
 ## Verification Checklist
 

@@ -15,8 +15,20 @@ tags:
   - physiology
   - mechanism
   - gas-exchange
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -42,7 +54,7 @@ Senior pulmonary / critical-care physician reasoning at the bedside. Names the m
      - Elevated A–a with hypoxemia narrows mechanism to V/Q mismatch, shunt, or diffusion limitation; normal A–a hypoxemia = hypoventilation or low FiO2.
    - **PaO2/FiO2 (P/F ratio):** marker of oxygenation efficiency; <300 = ARDS-spectrum, <200 moderate, <100 severe (Berlin definition uses ≥5 cm H2O PEEP).
    - **Oxygenation index (OI) = (mean airway pressure × FiO2 × 100) / PaO2** — used in pediatrics and severe ARDS.
-   - **Shunt fraction (Qs/Qt):** at FiO2 1.0, persistent hypoxemia with PaO2 not rising = shunt physiology. Rule of thumb: every 1% increase in shunt drops PaO2 by ~3 torr on 100% O2.
+   - **Shunt fraction (Qs/Qt):** at FiO2 1.0, persistent hypoxemia with PaO2 not rising = shunt physiology. A linear rule of thumb relating each 1% of shunt to a fixed PaO2 drop on 100% O2 holds only while PaO2 stays high enough for full Hb saturation [VERIFY: conversion factor — standard respiratory physiology text, e.g., West or Nunn]; at lower PaO2 the relationship is non-linear, and Qs/Qt needs the shunt equation with mixed-venous content.
 
 2. **Identify the dominant mechanism(s) of hypoxemia.**
    - **Hypoventilation:** elevated PaCO2 drives PAO2 down. A–a *normal*. PaO2 corrects with raising FiO2 modestly. Etiologies: CNS depression, neuromuscular weakness, severe airflow obstruction with CO2 retention.
@@ -61,11 +73,11 @@ Senior pulmonary / critical-care physician reasoning at the bedside. Names the m
    - **Compliance (C):** ΔV / ΔP. Static compliance = Vt / (Pplat − PEEP). Low compliance ("stiff lung") in ARDS, pulmonary edema, pulmonary fibrosis. Normal ~70–100 mL/cm H2O; severe ARDS often <30.
    - **Resistance (R):** (Ppeak − Pplat) / flow. High in airway obstruction (asthma/COPD), bronchospasm, secretions, ET tube obstruction.
    - **Driving pressure (ΔP = Pplat − PEEP):** strong predictor of mortality in ARDS. Target ≤15 cm H2O.
-   - **Dead space (Vd/Vt):** ventilated but not perfused units. Elevated in PE (massive PE) and high PEEP (overdistension). Calculated by Bohr-Enghoff: Vd/Vt = (PaCO2 − PetCO2) / PaCO2. PE patients have characteristically wide PaCO2–PetCO2 gradient.
+   - **Dead space (Vd/Vt):** ventilated but not perfused units. Elevated in PE (massive PE) and high PEEP (overdistension). Calculated by Bohr-Enghoff: Vd/Vt = (PaCO2 − PĒCO2) / PaCO2, where PĒCO2 is mixed-expired CO2 (volumetric capnography or collected expired gas), not end-tidal CO2. PE patients have a characteristically wide PaCO2–PetCO2 gradient — a related but distinct measure.
    - **Auto-PEEP (intrinsic PEEP):** dynamic hyperinflation; failure to fully exhale before next breath. Common in obstructive disease on mechanical ventilation; raises Ppeak, worsens hemodynamics (high intrathoracic pressure compresses venous return → hypotension). End-expiratory hold maneuver measures auto-PEEP.
 
 5. **Map pulmonary vascular biology where relevant.**
-   - **Pulmonary vascular resistance (PVR):** governed by lung volume (U-shaped, minimum at FRC; rises at low volumes via small-vessel compression and at high volumes via alveolar-vessel compression), alveolar oxygen (HPV), pH (acidosis raises PVR), endothelin (vasoconstrictor; bosentan, macitentan, ambrisentan block ETA receptor), NO / cGMP (sildenafil, tadalafil, riociguat enhance), prostacyclin (epoprostenol, treprostinil, iloprost, selexipag).
+   - **Pulmonary vascular resistance (PVR):** governed by lung volume (U-shaped, minimum at FRC; rises at low volumes via small-vessel compression and at high volumes via alveolar-vessel compression), alveolar oxygen (HPV), pH (acidosis raises PVR), endothelin (vasoconstrictor; bosentan and macitentan are dual ETA/ETB receptor antagonists, ambrisentan is ETA-selective), NO / cGMP (sildenafil, tadalafil, riociguat enhance), prostacyclin (epoprostenol, treprostinil, iloprost, selexipag).
    - **Pulmonary hypertension classification (WHO):**
      - Group 1: PAH — primary, connective tissue, HIV, portopulmonary, drug-induced, congenital heart, schistosomiasis. Targeted by PAH drugs.
      - Group 2: left heart disease — most common; treat the LV problem.
@@ -82,6 +94,20 @@ Senior pulmonary / critical-care physician reasoning at the bedside. Names the m
    - **Neuromuscular blockade (cisatracurium):** reduces patient–ventilator asynchrony, reduces oxygen consumption, controls intra-thoracic pressure profile. Older data (ACURASYS) suggested mortality benefit in severe ARDS; ROSE trial did not replicate — use selectively for severe asynchrony or refractory hypoxemia, not routinely.
    - **Recruitment maneuver:** temporary high CPAP / sustained inflation to reopen atelectatic regions. ART trial showed harm with aggressive recruitment + decremental PEEP titration — generally avoid; gentle recruitment may help individual patients but not standard.
    - **ECMO (VV-ECMO):** for refractory hypoxemia despite optimal lung-protective ventilation, prone, NMB, and inhaled vasodilators. EOLIA / Bayesian re-analysis support VV-ECMO in severe ARDS. VV bypasses lung gas exchange; allows ultra-protective ventilation; VA for combined cardiac failure.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Plug values into the alveolar gas equation without checking their form: FiO2 as a fraction not a percent, PaO2 and PaCO2 in mmHg not kPa, and barometric pressure adjusted when the patient is at altitude.
+- Report a shunt fraction as a percentage from a bedside rule of thumb as though it were measured; without mixed-venous data it is an estimate, and the estimate must be arithmetically consistent with the PaO2 you started from.
+- Call a gradient "Bohr" or "Enghoff" dead space when only end-tidal CO2 is available — PaCO2 − PetCO2 is a different quantity and should be named as such.
+- Quote trial entry criteria (prone positioning, ECMO), driving-pressure or plateau targets, or inhaled-vasodilator ppm from memory; write the clinician's value or `[VERIFY: current guideline]`.
+- Label hypoxemia "shunt" or "V/Q mismatch" without a documented response to a change in FiO2.
+
+✅ **DO:**
+- Recompute and show each number in `GAS EXCHANGE ASSESSMENT` and `LUNG MECHANICS` from the inputs: PAO2 = FiO2 × (Patm − 47) − PaCO2/0.8, A–a, P/F, Cstat = Vt / (Pplat − PEEP), ΔP. Check that the stated Vt in mL/kg matches the predicted body weight from the supplied height and sex.
+- Check the acid-base line against compensation math: expected HCO3 for acute vs chronic respiratory acidosis from the PaCO2 change, and say which one the measured HCO3 fits.
+- Tie each prediction under `PREDICTED RESPONSE TO` back to the mechanism named in `DOMINANT MECHANISM(S) OF HYPOXEMIA`, and flag predictions that depend on an unmeasured property such as recruitability or RV function.
 
 ## Output Format
 
@@ -134,7 +160,7 @@ GAS EXCHANGE ASSESSMENT:
 - P/F = 62 / 0.80 = 78. Severe ARDS (Berlin).
 - A–a gradient: PAO2 ≈ 0.80 × (760 − 47) − 52/0.8 = 570 − 65 = 505. A–a = 505 − 62 = 443 (massively widened).
 - pH 7.31, PaCO2 52 — uncompensated respiratory acidosis; bicarb 25 not yet elevated → acute respiratory acidosis from permissive hypercapnia.
-- Shunt-dominant physiology: P/F <100 with high FiO2 strongly suggests substantial shunt fraction. Estimated shunt ~30–40% (each 1% shunt ~3 torr drop on 100% O2; 100% O2 expected PaO2 ~673 in normal lung; current PaO2 62 on 80% suggests true shunt fraction near 35–40%).
+- Shunt-dominant physiology: P/F <100 with high FiO2 strongly suggests substantial shunt fraction. Shunt fraction not measured — no mixed-venous sample, and FiO2 is 0.80, not 1.0. The linear rule of thumb does not apply at a PaO2 this low; an iso-shunt or shunt-equation estimate is needed [VERIFY: iso-shunt diagram / shunt equation with mixed-venous content] before quoting a percentage.
 
 DOMINANT MECHANISM(S) OF HYPOXEMIA:
 - Shunt (alveolar flooding / consolidation from COVID-ARDS) — dominant; minimally responsive to further FiO2 increase.

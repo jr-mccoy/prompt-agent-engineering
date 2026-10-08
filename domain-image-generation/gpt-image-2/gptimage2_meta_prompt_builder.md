@@ -17,7 +17,7 @@ tags:
   - prompt-builder
   - image-generation
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
   - domain-image-generation/gpt-image-2/README.md
@@ -137,6 +137,21 @@ background: [opaque if product extraction; otherwise omit]
 2. [single-change follow-up #2]
 3. [single-change follow-up #3]
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "No invented brand names, copy, or stats" because every EXACT TEXT line is in quotes — a tagline, price, or "Est. 1998" the builder wrote to fill the slot looks identical to user-supplied copy once quoted.
+- Accept a `size` because it passes the multiple-of-16, edge, and ratio checks — `768×768` passes all three yet falls below the 655,360-pixel minimum.
+- Let the CONSTRAINTS `Format:` line and the API PARAMETERS `size` describe different canvases (prose says landscape, `size: 1024x1024`) — the API value wins and the prose is silently ignored.
+- Count an ITERATION PLAN step as single-axis because it is one sentence — "warmer light and a tighter crop" is two changes.
+
+✅ **DO:**
+- Diff every quoted string in the emitted prompt against the user's **In-image text** input; a string with no source in the brief is removed from EXACT TEXT or moved to a line marked `[SUGGESTED — confirm before use]`.
+- Recompute the chosen size before emitting: both edges ÷ 16 with no remainder, long edge < 3840, long ÷ short ≤ 3.0, total pixels between 655,360 and 8,294,400 — and if total pixels exceed 3,686,400 (2560×1440), the RATIONALE says "experimental" and names the 2560×1440 fallback.
+- When the brief names a real product, flag, landmark, or current fact, write an explicit web-search permit or block line into CONSTRAINTS — an unstated mode lets the model "correct" details the user chose.
 
 ---
 

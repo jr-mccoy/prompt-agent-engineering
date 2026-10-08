@@ -16,8 +16,20 @@ tags:
   - perioperative
   - anticoagulation
   - bridging
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -41,8 +53,8 @@ Senior internist / hospitalist / hematology consultant writing the periprocedura
 
 1. **Classify thromboembolic risk.**
    - **High risk (annual TE risk >10%):**
-     - Mechanical mitral valve, any position.
-     - Mechanical aortic valve with additional risk factors (older caged-ball/tilting disc; AFib; prior stroke/TIA; LV dysfunction; ≥2 of: AFib, prior TE, hypercoagulable, EF <30, mechanical aortic valve in mitral position).
+     - Any mechanical mitral valve.
+     - Mechanical aortic valve with additional risk factors (older caged-ball/tilting-disc prosthesis; AFib; prior stroke/TIA; LV dysfunction; hypercoagulable state) [VERIFY: current CHEST perioperative antithrombotic guideline — mechanical-valve risk tiers].
      - AFib with CHA₂DS₂-VASc ≥7, OR recent (<3 mo) stroke/TIA, OR mitral stenosis.
      - VTE within prior 3 months; active malignancy with recent VTE.
      - Antiphospholipid syndrome (triple-positive).
@@ -82,7 +94,7 @@ Senior internist / hospitalist / hematology consultant writing the periprocedura
 
 4. **For warfarin interruption: hold + bridge decision.**
    - **Hold warfarin 5 days before procedure** (4 days if INR target is 2.0–3.0 and the patient runs closer to 2.0; 5 days if target 2.5–3.5 or higher baseline INR; 6 days in elderly with slow clearance).
-   - Check INR day of procedure: target ≤1.5 for most surgeries (often ≤1.2 for neuraxial).
+   - Check INR day of procedure: target ≤1.5 for most surgeries (neuraxial: INR normalized per ASRA [VERIFY: current ASRA regional-anesthesia anticoagulation guideline]).
    - **Bridging decision (BRIDGE trial, 2015):**
      - **High thromboembolic risk:** **bridge** with LMWH (enoxaparin 1 mg/kg SC q12h or 1.5 mg/kg q24h; some use UFH IV for mechanical mitral valves).
      - **Moderate risk:** individualize; often **do not bridge** unless additional risk factors. BRIDGE showed no benefit and ↑ bleeding from bridging in AFib without high TE risk.
@@ -96,10 +108,10 @@ Senior internist / hospitalist / hematology consultant writing the periprocedura
 5. **For DOAC interruption: timing based on PK (PAUSE study).**
    - PAUSE simplified DOAC periprocedural management for AFib — no bridging needed for most.
    - **Apixaban / Edoxaban / Rivaroxaban** (factor Xa inhibitors):
-     - **Low bleeding risk:** hold for 1 day (last dose 2 days before procedure for q12h apixaban; 1 day prior for q24h rivaroxaban/edoxaban). Many protocols simplify: omit DOAC the day before and the day of procedure.
-     - **High bleeding risk:** hold for 2 days (skip 2 doses for q12h, last dose 3 days before procedure for q24h).
+     - **Low bleeding risk:** hold for 1 day (last dose on D−2 for both q12h apixaban and q24h rivaroxaban/edoxaban; no DOAC on D−1 or the day of procedure).
+     - **High bleeding risk:** hold for 2 days (last dose on D−3; no DOAC on D−2, D−1 or the day of procedure — 4 skipped doses for q12h, 2 for q24h).
      - Resume **24 hours after low-bleeding-risk procedure**; **48–72 hours after high-bleeding-risk procedure**.
-   - **Dabrigatran** (direct thrombin inhibitor; renal elimination 80%):
+   - **Dabigatran** (direct thrombin inhibitor; renal elimination 80%):
      - **CrCl ≥80:** hold 1 day for low-bleeding-risk; 2 days for high.
      - **CrCl 50–79:** hold 1–2 days low; 2–3 days high.
      - **CrCl 30–49:** hold 2 days low; 4 days high.
@@ -113,11 +125,11 @@ Senior internist / hospitalist / hematology consultant writing the periprocedura
    - **Antiphospholipid syndrome (triple-positive):** bridge with therapeutic-dose LMWH; high recurrent thrombosis risk.
    - **Recent PCI with DES:** dual antiplatelet therapy considerations override anticoagulant bridging in most cases — consult interventional cardiology; minimize elective surgery within 6–12 months of DES.
    - **Neuraxial anesthesia (epidural, spinal):** specific timing per ASRA guidelines.
-     - Warfarin: INR ≤1.4 for placement; remove catheter after INR ≤1.5.
+     - Warfarin: INR normalized before placement [VERIFY: current ASRA guideline — INR threshold]; remove catheter after INR ≤1.5.
      - UFH IV: stop 4–6h before, normal aPTT.
      - LMWH therapeutic dose: hold 24h before placement / catheter removal.
      - LMWH prophylactic dose: hold 12h before.
-     - DOACs: hold 3 days for therapeutic dose, 24h for prophylactic dabigatran.
+     - Factor Xa inhibitors: hold 3 days for therapeutic dose. Dabigatran: longer, CrCl-dependent hold — do not apply the Xa-inhibitor interval [VERIFY: current ASRA guideline — dabigatran neuraxial interval by CrCl].
    - **Emergency / urgent surgery:** reversal agents.
      - Warfarin: 4-factor PCC (Kcentra) 25–50 units/kg + IV vitamin K 5–10 mg.
      - Dabigatran: idarucizumab 5 g IV.
@@ -133,6 +145,21 @@ Senior internist / hospitalist / hematology consultant writing the periprocedura
    - State the day-by-day schedule starting D-7 through D+7.
    - State the criteria for each step (e.g., "last enoxaparin dose at 0800 day before procedure").
    - State contingencies (urgent surgery → reversal; INR not at target → delay).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Carry a CHA₂DS₂-VASc (or other thrombotic-risk) total from the referral into `Risk class` without re-adding its components from the stated history; one missed point (an age band, a prior stroke/TIA counting 2) can move a patient between tiers.
+- Decide `Bridge: [yes / no]` before both tiers are recomputed from the inputs — the thromboembolic class and the procedural bleeding class each cite the factor that set them.
+- Write DOAC hold and resume days from a remembered protocol; count the doses skipped and the hours from last dose to procedure, and check them against the published PAUSE schedule for that agent, CrCl and bleeding class `[VERIFY: current guideline]`.
+- State LMWH, UFH, reversal-agent or vitamin K doses from memory — each carries its label or nomogram source or `[VERIFY: current label / formulary]`, and enoxaparin is checked against CrCl and body weight.
+- Classify the procedure in one bleeding tier and then schedule resumption by the other; resume timing follows the class the plan adopted.
+
+✅ **DO:**
+- Recompute the score line by line (C, H, A₂, D, S₂, V, A, Sc) from the patient's history and print the sum; if it differs from the score given in the input, use the recomputed value and flag the difference.
+- Reconcile the day-by-day calendar with itself: last-dose day, number of skipped doses and resumption day must agree with `PROCEDURAL BLEEDING RISK` and with any neuraxial timing in the plan.
+- For each antiplatelet, state the mechanism behind its hold interval (irreversible COX-1 or P2Y12 inhibition lasting the platelet lifespan vs reversible ticagrelor binding) and check stent timing before advising a hold.
+- Recheck the renal inputs before setting DOAC timing — dabigatran's hold lengthens as CrCl falls.
 
 ## Output Format
 
@@ -164,15 +191,15 @@ For warfarin interruption with bridging:
 - D−4: no anticoagulation; INR will drift down
 - D−3: start LMWH enoxaparin [dose] SC q[interval] starting AM
 - D−2: continue LMWH BID
-- D−1: morning LMWH dose; last LMWH dose at 0800 D−1 if q12h; if q24h enoxaparin, last dose D−2 morning; check INR D−1
-- Day of procedure: INR target ≤1.5 (≤1.2 for neuraxial); hold all LMWH; proceed
+- D−1: last LMWH dose ~24 h before procedure (0800 D−1, omitting the evening dose if q12h; the D−1 morning dose if q24h) [VERIFY: CHEST 2022 — size of final pre-procedure LMWH dose]; check INR D−1
+- Day of procedure: INR target ≤1.5 (neuraxial: normalized per ASRA [VERIFY: current ASRA guideline]); hold all LMWH; proceed
 - D0 evening or D+1: resume warfarin at maintenance dose
 - D+1 (24h post-op for low-bleeding-risk procedure) OR D+2–3 for high-bleeding-risk: resume LMWH bridge
 - Continue LMWH until INR therapeutic on 2 consecutive measurements; then stop LMWH
 
 For DOAC interruption (PAUSE protocol):
-- D−2 (high bleeding risk) or D−1 (low bleeding risk): last DOAC dose
-- D−1 (low bleed) or D−1/0 (high bleed): no DOAC
+- D−3 (high bleeding risk) or D−2 (low bleeding risk): last DOAC dose
+- D−1 (low bleed) or D−2 and D−1 (high bleed): no DOAC
 - Day of procedure: no DOAC
 - D+1 (24h post low-bleed) or D+2–3 (high-bleed): resume DOAC at usual dose
 - No bridging required for most AFib
@@ -204,18 +231,18 @@ FOLLOW-UP:
 
 ## Worked Example
 
-**Input:** 72-year-old man with AFib (CHA₂DS₂-VASc 5: HTN, DM, age, prior TIA 4 years ago, vascular disease) on apixaban 5 mg BID, CrCl 64. Scheduled for laparoscopic cholecystectomy (low-to-moderate bleeding risk) in 5 days. No recent bleeding. ASA 81 mg daily for CAD.
+**Input:** 72-year-old man with AFib (referral states CHA₂DS₂-VASc 5; history: HTN, DM, age 72, prior TIA 4 years ago, vascular disease) on apixaban 5 mg BID, CrCl 64. Scheduled for laparoscopic cholecystectomy (low-to-moderate bleeding risk) in 5 days. No recent bleeding. ASA 81 mg daily for CAD.
 
 **Output:**
 
 ```
 PATIENT SNAPSHOT:
-- 72y M, AFib + CHA₂DS₂-VASc 5 (prior TIA 4 y ago, not within 3 months); apixaban 5 mg BID; CrCl 64.
-- Lap chole — typically classified as low–moderate bleeding risk (single-port low; multi-port slightly higher); we will treat as low-to-moderate per PAUSE high-bleeding-risk threshold.
+- 72y M, AFib + CHA₂DS₂-VASc recomputed = 6 (H 1 + D 1 + A 65–74 1 + S₂ prior TIA 2 + V 1); referral stated 5 — difference flagged, recomputed value used. Prior TIA 4 y ago, not within 3 months; apixaban 5 mg BID; CrCl 64.
+- Lap chole — typically classified as low–moderate bleeding risk (single-port low; multi-port slightly higher); we will plan using the PAUSE high-bleeding-risk schedule for added margin.
 - ASA 81 mg for CAD.
 
 THROMBOEMBOLIC RISK STRATIFICATION:
-- AFib with CHA₂DS₂-VASc 5, but TIA was 4 years ago (not within 3 months) — **moderate** TE risk per BRIDGE/CHEST framework. Not high risk.
+- AFib with CHA₂DS₂-VASc 6 (5–6 band), and TIA was 4 years ago (not within 3 months) — **moderate** TE risk per BRIDGE/CHEST framework. Not high risk.
 
 PROCEDURAL BLEEDING RISK:
 - Laparoscopic cholecystectomy: low–moderate bleeding risk per PAUSE (high-bleed if intra-abdominal hemorrhage anticipated; standard lap chole reasonably treated as low–moderate, individual surgeon may classify higher). For this plan, treat as **moderate-to-high** to be safe given peritoneal cavity work.
@@ -226,30 +253,33 @@ BRIDGING DECISION:
 
 DAY-BY-DAY PLAN (PAUSE protocol, high-bleeding-risk threshold for added margin):
 
-- D−2 (Wednesday): take morning apixaban 5 mg; **skip evening dose.**
+- D−3 (Tuesday): take apixaban 5 mg morning and evening; **evening dose is the last pre-procedure dose.**
+- D−2 (Wednesday): **no apixaban any time of day.**
 - D−1 (Thursday): **no apixaban any time of day.**
 - Day of surgery (Friday): no apixaban; proceed with surgery.
-- D+1 (Saturday, ~48 h post last dose, ~24 h post-op): if hemostasis adequate and no drainage / bleeding concerns, **resume apixaban 5 mg BID** with evening dose.
-- D+2 onward: continue apixaban 5 mg BID as before.
+- D+1 (Saturday): no apixaban.
+- D+2 (Sunday, ~48 h post-op): if hemostasis adequate and no drainage / bleeding concerns, **resume apixaban 5 mg BID**; surgeon may defer to D+3 (~72 h).
+- Thereafter: continue apixaban 5 mg BID as before.
 
 ALTERNATIVE (if procedural team classifies as definitively low bleeding risk):
-- D−1 morning: last apixaban dose; skip evening.
+- D−2 evening: last apixaban dose.
+- D−1: no apixaban.
 - Day of procedure: no apixaban.
-- D+1 morning: resume apixaban.
+- D+1 (~24 h post-op): resume apixaban.
 
 ASPIRIN MANAGEMENT:
 - ASA 81 mg for secondary prevention CAD: **continue** through the perioperative period (overall mortality and CV-event benefit of continued ASA outweighs small additive bleeding for most non-CNS, non-spinal surgery). Confirm with surgical team.
 - If surgical team requires hold: 5 days off (ASA effect persists for platelet life, ~7–10 days), then resume D+1.
 
 URGENT/EMERGENT REVERSAL CONTINGENCY:
-- If massive intraoperative or post-op bleeding: andexanet alfa per nomogram (high-dose if last apixaban dose <8h prior and dose ≥5 mg; low-dose if last dose >8h or <5 mg). If andexanet unavailable: 4F-PCC 50 units/kg.
+- If massive intraoperative or post-op bleeding: andexanet alfa per nomogram (high-dose if last apixaban dose <8h prior and dose >5 mg; low-dose if last dose ≥8h or dose ≤5 mg — this patient's 5 mg dose falls in the low-dose band) [VERIFY: andexanet alfa product label and current availability]. If andexanet unavailable: 4F-PCC 50 units/kg.
 - Tranexamic acid 1 g IV for adjunct.
 - Surgical re-exploration as needed.
 
 MONITORING:
 - Renal function (BUN/Cr) day before surgery (apixaban dosing CrCl-sensitive; baseline 64 acceptable).
 - Bleeding signs post-op: surgical site, drain output, hemoglobin, urine, melena.
-- Re-establish therapeutic anticoagulation by D+2 in most cases — apixaban steady state within 3 days.
+- Re-establish therapeutic anticoagulation on resumption (D+2, or D+3 if surgeon defers) — apixaban steady state within 3 days.
 
 WHEN TO ESCALATE:
 - Bleeding requiring transfusion or reoperation: hold apixaban, andexanet/PCC, surgical management; reassess timing of resumption based on hemostasis.

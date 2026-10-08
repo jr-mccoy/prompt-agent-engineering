@@ -14,8 +14,20 @@ tags:
   - care-transitions
   - emergency-medicine
   - handoff
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -48,6 +60,19 @@ Emergency medicine attending writing the courtesy note you would want to receive
 6. **Surface incidental findings** discovered during the workup that have nothing to do with the presenting complaint but need longitudinal follow-up (pulmonary nodule on CT, elevated calcium, thyroid nodule). These are the highest-liability items because no one is assigned to them.
 
 7. **Keep it short and skimmable.** A PCP triages dozens of these. The summary fails if it reproduces the ED note instead of distilling it. Do not fabricate results or follow-up not supported by the encounter.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pad WHY THEY WENT HOME with reassuring negatives the ED course never recorded ("ambulated without desaturation", "no effusion", "CBC/BMP unremarkable") — a disposition rationale assembled from plausible exclusions reads as safe and is unsupported.
+- Write "None pending — all studies finalized in ED" because no pending list was supplied; a missing list is not an empty one (blood cultures, radiology over-reads and send-out labs are the usual stragglers).
+- Attach a surveillance interval or risk category to an incidental finding from memory; if the radiology report gives no recommendation, write the interval as `[VERIFY: current Fleischner / ACR incidental-findings guidance]`.
+- Promote a symptomatic discharge to a named diagnosis in the ED DIAGNOSIS line because every test came back negative.
+
+✅ **DO:**
+- Trace every entry in WORKUP HIGHLIGHTS, TREATMENTS GIVEN and RETURN PRECAUTIONS to a line of the ED input; anything without a source is deleted or tagged `[not in ED record]`.
+- Recount pending items against the ED orders: each culture, send-out and preliminary read appears in PENDING RESULTS with an expected date and a named owner, or the line reads "pending status not supplied — confirm with ED".
+- Say whether each incidental-finding interval is the radiologist's own recommendation or guideline-derived, so the PCP knows which one to reconcile.
 
 ## Output Format
 
@@ -85,7 +110,7 @@ RETURN PRECAUTIONS GIVEN TO PATIENT: [brief]
 
 ## Worked Example
 
-**Input:** 58 y/o F, ED visit for pleuritic chest pain and dyspnea. PERC-positive so D-dimer ordered → elevated → CTA chest. CTA negative for PE. Incidental 7 mm RUL pulmonary nodule noted. Troponin negative x2, ECG sinus. Discharged. History of HTN on amlodipine; 30-pack-year smoker.
+**Input:** 58 y/o F, ED visit 06/18/2026 for 1 day of pleuritic chest pain and dyspnea. PERC-positive so D-dimer ordered → elevated → CTA chest. CTA negative for PE. Incidental 7 mm solid RUL pulmonary nodule noted; the radiology report gives no follow-up recommendation. Troponin negative x2, ECG sinus without ischemic changes. NSAID given in ED with symptom relief. Discharged on PRN ibuprofen; return precautions given for worsening dyspnea, syncope, unilateral leg swelling, or fever. No pending-results list supplied. History of HTN on amlodipine; 30-pack-year current smoker.
 
 **Output:**
 
@@ -94,31 +119,30 @@ PATIENT / DATE OF ED VISIT: 58 y/o F — ED visit 06/18/2026
 CHIEF COMPLAINT: Pleuritic chest pain + dyspnea, 1 day.
 
 WHY THEY WENT HOME:
-- PE excluded by negative CTA chest. ACS excluded by two negative troponins and non-ischemic ECG. Hemodynamically stable, ambulated without desaturation. No effusion or pneumonia on imaging. Safe for outpatient management with the single open item below.
+- PE excluded by negative CTA chest. ACS excluded by two negative troponins and non-ischemic ECG. Discharged for outpatient management with the open items below.
 
-ED DIAGNOSIS: Pleuritic chest pain, likely musculoskeletal/viral — no PE, no ACS, no pneumonia. Symptomatic discharge; no confirmed diagnosis established.
+ED DIAGNOSIS: Pleuritic chest pain — no PE, no ACS. Symptomatic discharge; no confirmed diagnosis established.
 
 WORKUP HIGHLIGHTS:
 - CTA chest: NEGATIVE for PE. Incidental 7 mm solid nodule, right upper lobe.
 - Troponin negative x2; ECG normal sinus, no ischemic changes.
 - D-dimer elevated (the reason CTA was done).
-- CBC/BMP unremarkable.
 
 TREATMENTS GIVEN: NSAID in ED with symptom relief.
 
 MEDICATION CHANGES: None to chronic meds. Advised PRN ibuprofen for pleuritic pain.
 
-PENDING RESULTS (with owner): None pending — all studies finalized in ED.
+PENDING RESULTS (with owner): Pending status not supplied — confirm with ED (final radiology read and any send-outs).
 
 PCP ACTION ITEMS (ranked):
-1. **Pulmonary nodule follow-up (highest priority).** 7 mm solid nodule in a 58 y/o with 30-pack-year smoking history is intermediate risk. Per Fleischner, repeat low-dose chest CT at 6–12 months. PCP to order and track — no one else is assigned.
+1. **Pulmonary nodule follow-up (highest priority).** 7 mm solid nodule in a 58 y/o with 30-pack-year smoking history; the radiology report gives no recommendation, so risk category and CT interval(s) are guideline-derived: `[VERIFY: current Fleischner / ACR incidental-findings guidance]`. PCP to order and track — no one else is assigned.
 2. Address tobacco cessation; also confirm patient is enrolled in lung cancer screening (meets USPSTF criteria independent of this nodule).
 3. Reassess chest pain at follow-up if persistent; consider MSK vs. other if not resolving.
 
 ALREADY ARRANGED: None.
 
 INCIDENTAL FINDINGS NEEDING FOLLOW-UP:
-- 7 mm RUL solid pulmonary nodule → repeat CT 6–12 months (Fleischner, intermediate risk given smoking history).
+- 7 mm RUL solid pulmonary nodule → interval `[VERIFY: current Fleischner / ACR incidental-findings guidance]` (guideline-derived; no radiologist recommendation in report).
 
 RETURN PRECAUTIONS GIVEN TO PATIENT: Return for worsening dyspnea, syncope, unilateral leg swelling, or fever.
 ```

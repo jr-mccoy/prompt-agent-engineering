@@ -18,7 +18,7 @@ tags:
   - nano-banana
   - dall-e
   - midjourney
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../../IMAGE_MODEL_SELECTION_GUIDE.md
   - ../../GPT_IMAGE_2_GUIDE.md
@@ -325,6 +325,20 @@ Add these modifiers to customize prompts:
 - "Soft gray background #F3F4F6"
 - "Transparent background" (limited support)
 ```
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Judge legibility on the 1024×1024 render or by zooming out the browser — zooming hides what downsampling destroys; strokes and gaps under ~2 px vanish at launcher size.
+- Count four concepts as four directions when they share one silhouette and differ only in fill colour or gradient — fill each shape solid black and compare the outlines.
+- Accept "no text" because the prompt says it while the render carries pseudo-letters inside the symbol, a fake notification badge, or a faint watermark.
+- Keep a render with baked-in rounded corners, a drop shadow, or a checkerboard "transparent" background — iOS applies its own corner mask (double rounding), and Platform Requirements rule out transparency.
+- Treat a striking result as original: models reproduce shapes from well-known icons in the same store category, and no resemblance check has happened just because nobody asked for one.
+
+✅ **DO:**
+- Downsample the finalist (resize, not crop) to the smallest sizes in the current Apple and Android icon tables — on the order of 40–48 px [VERIFY: current platform icon specs] — and view each at 100% on a light and a dark wallpaper; the concept passes only if its core shape is still identifiable there.
+- For Android, overlay the adaptive-icon safe zone (the centred 66 dp circle of the 108 dp canvas) and confirm nothing essential falls outside it, since launchers mask to circles, squircles and teardrops.
+- Line the shortlist up beside the top 5–10 icons in the same App Store / Play category, note any that could be mistaken for an existing one, and run a reverse image search on the finalist before briefing a designer.
 
 ## Expected Output
 

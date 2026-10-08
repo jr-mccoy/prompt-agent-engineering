@@ -2,20 +2,38 @@
 title: "Social Determinants of Health Screening Response Framework"
 category: allied_health
 description: "Structured workflow for responding to positive SDOH screens — triage by urgency, match to resources, warm handoff, documentation, and closed-loop follow-up."
+techniques:
+  - ST-02
+  - DS-06
+  - ST-03
+  - QA-01
+difficulty: intermediate
 tags:
   - allied-health
   - social-work
   - case-management
   - SDOH
   - care-coordination
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_care_coordination_transitions.md
-  - domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md
-  - domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md
+  - domain-healthcare-clinical/prompts/communication/medicine_care_coordination_transitions.md
+  - domain-healthcare-clinical/prompts/care-plans/medicine_chronic_disease_management_planner.md
+  - domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md
 ---
 
 # SDOH Screening Response Framework
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Support clinicians, social workers, case managers, and community health workers in responding to a positive social determinants of health (SDOH) screen — triaging urgency (from safety emergencies to slower-burn barriers), matching patients to appropriate resources, executing warm handoffs, documenting in a way that is both protective and useful, and closing the loop.
 
@@ -299,6 +317,21 @@ SAFETY CHECKLIST
 **Veterans:** VA benefits, veteran-specific housing programs, benefits enrollment through VSOs.
 
 **Justice-involved patients:** Reentry services, Medicaid suspension/reinstatement, medication continuity at release, probation-compatible appointment scheduling.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill RESOURCE MATCHING with organization names, addresses, phone numbers, hours or hotline numbers that the user or a local directory did not supply — an invented shelter or number reads concrete and fails the patient when they call.
+- Apply a Z-code from a different social domain than the positive screen (e.g., a homelessness code for food insecurity), or one more specific than the screen supports.
+- State eligibility ("qualifies for SNAP", "eligible for NEMT") as fact when income, household size or insurance were not provided; write "likely eligible — confirm [criterion]".
+- List an item under WARM HANDOFFS COMPLETED when only a referral or handout was given.
+
+✅ **DO:**
+- Count the positive domains in the screen and confirm each appears in URGENCY TRIAGE with an action, a documented patient decline, or a deferred plan with a date.
+- Check each Z-code against the specific positive domain and the patient's situation, and mark the subcode `[VERIFY: current ICD-10-CM]`.
+- Confirm the PATIENT-FACING SUMMARY contains only resources that appear in RESOURCE MATCHING and is written in the preferred language recorded in the input.
 
 ---
 

@@ -26,9 +26,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_illness_script_builder.md
-  - ./learner_clinical_reasoning_schema_practice.md
-  - ./learner_hypothesis_driven_workup_drill.md
+  - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
+  - domain-medical-education/learner-clinical-reasoning/reason_schema_practice.md
+  - domain-medical-education/learner-clinical-reasoning/reason_hypothesis_driven_workup_drill.md
 ---
 
 # Differential Diagnosis Drill for Health-Professions Learners

@@ -2,13 +2,23 @@
 title: "Science Experiments Worksheet Generator"
 category: education
 description: "Generate experiment-planning/data-collection worksheets for classroom investigations."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - science
   - worksheet
   - experiments
   - scientific-method
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Science Experiments Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 4 procedure that lists steps but omits the safety line the age needs: goggles for any splash, an adult for a heat source, "do not taste" for food-like materials.
+- Include a material unsafe for the grade (open flame, bleach, small parts for kindergarten) because it makes a vivid result.
+- Let the ZONE 3 variables table list two independent variables, or place the measured (dependent) variable in the controlled column.
+- Print a ZONE 5 data table with no units in its headers, or with a number of trial rows different from the procedure.
+
+✅ **DO:**
+- Walk each procedure step and ask what could hurt a child of this age; confirm a matching safety instruction appears beside that step and that the intake's lab safety emphasis is stated in words.
+- Check the ZONE 1 investigation question changes the same independent variable the ZONE 3 table names and measures the same dependent variable the data table records.
+- Match ZONE 5 columns and rows to the measurements and trials the procedure actually produces.

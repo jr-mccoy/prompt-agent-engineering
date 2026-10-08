@@ -22,7 +22,7 @@ tags:
   - next-best-step
   - clinical-management
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_usmle_step1_concept_drill.md
   - domain-medical-education/learner-boards/boards_usmle_step3_ccs_walkthrough.md
@@ -128,6 +128,16 @@ Highest-yield restudy target: [...]
 | `serial_difficulty` | Run two consecutive items, second one one level harder |
 | `bilateral_lead_in` | Pair a "most likely dx" item with a "next best step" on the same stem to test layered reasoning |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Keying an item to one guideline era when the current guideline endorses two of the options — e.g., stress testing and coronary CT angiography both recommended for stable chest pain at intermediate–high risk | Solve the item blind against the current guideline [VERIFY: current ACC/AHA chest-pain and chronic coronary disease guidelines] and list every option it endorses for this patient; if more than one survives, add the stem datum that excludes the extras (exercise capacity, ECG interpretability, renal function, known CAD) |
+| Applying "what this lead-in rewards" as a slogan (least invasive first) when the stem holds a feature that overrides it | Scan the stem for instability, high-risk features or contraindications before writing the rule; if one is present, the rule changes and the teardown says why |
+| Asserting a pretest-probability category in the teardown ("intermediate-to-high") with no calculation behind it | Name the tool or table used to assign the category and the stem values fed into it; if the stem lacks a needed value, add it |
+| Distractor "would be correct for" lines that mix criteria from two tests (indications for stress imaging attributed to CT angiography) | Check each home-condition claim against the same guideline section used to key the item |
+| A `pertinent_findings_to_lock` entry that never makes it into the stem, or is contradicted by another sentence | Count each locked finding in the final stem — every one present, none contradicted — before delivering the item |
+
 ## Verification Checklist
 
 - [ ] Stem is one paragraph, NBME shape; no editorializing.
@@ -163,21 +173,21 @@ D) Reassurance and follow-up in 6 months
 
 >>> TEARDOWN
 
-Correct answer: A
+Correct answer: A (keyed) — CCTA (B) may be an equally endorsed first-line test at this pretest probability [VERIFY: current ACC/AHA chest-pain and chronic coronary disease guidelines]; if so, add a stem datum that excludes it or rekey.
 
 Lead-in type: next-best-step.
 What this lead-in rewards: lowest-cost / least-invasive test that answers the clinical question and is appropriate for the *pretest probability*.
 
-Single discriminating fact: "chest pressure brought on by walking uphill or climbing two flights of stairs ... resolved by sitting down ... no symptoms at rest" — classic stable angina, intermediate-to-high pretest probability, resting ECG normal, no high-risk features.
+Single discriminating fact: "chest pressure brought on by walking uphill or climbing two flights of stairs ... resolved by sitting down ... no symptoms at rest" — classic stable angina, resting ECG normal, no high-risk features. Pretest probability: read from a named table (e.g., the Diamond-Forrester-derived pretest-probability table) using the stem's values — age 58, male, exertional chest pressure relieved by rest — rather than asserted [VERIFY: category from the pretest-probability table in the current ACC/AHA chest-pain guideline].
 
 Option-by-option:
-A) Correct. Exercise treadmill stress testing is the first-line noninvasive functional test for a patient with stable angina, intermediate-to-high pretest probability, and an interpretable resting ECG. Provides functional + prognostic data and triages who actually needs cath.
-B) Coronary CT angiography would be appropriate for a *low-to-intermediate* pretest probability patient with an uninterpretable resting ECG or inability to exercise. Not the next step here.
+A) Correct (keyed). Exercise treadmill stress testing is a noninvasive functional test for a patient with stable angina, the pretest probability read from that table, and an interpretable resting ECG. Provides functional + prognostic data and triages who actually needs cath.
+B) Coronary CT angiography — its place relative to stress testing at this pretest probability is guideline-dependent [VERIFY: current ACC/AHA chest-pain guideline]; the item as written does not exclude it.
 C) Cardiac catheterization is correct *after* a positive stress test (or for acute coronary syndrome / high-risk features). It is the trap distractor — skips stress testing and rewards "more is better."
 D) Reassurance is incorrect for an exertional chest-pressure syndrome with cardiac risk factors.
 
 Trap audit:
-Designed trap was option C. Failure mode: jumping past the appropriate noninvasive step to a definitive invasive test. NBME items consistently reward functional testing first in stable angina with intermediate-to-high pretest probability — this is the classic Step 2 CK "next-best-step" pattern.
+Designed trap was option C. Failure mode: jumping past the appropriate noninvasive step to a definitive invasive test. NBME items consistently reward noninvasive testing first in stable angina with intermediate-to-high pretest probability — this is the classic Step 2 CK "next-best-step" pattern.
 
 Highest-yield restudy target: stable angina algorithm — when to choose exercise treadmill vs stress imaging vs CCTA vs invasive cath, anchored to pretest probability + ECG interpretability + exercise capacity.
 ```

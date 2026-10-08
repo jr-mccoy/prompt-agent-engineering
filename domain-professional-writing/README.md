@@ -11,7 +11,7 @@ Professional writing prompts for various fields:
 1. **Business Writing** - Executive briefs, status reports, proposals, PRDs, post-mortems, SOPs, technical docs
 2. **Content Quality** - 19 evaluators that score a finished draft by document type
 3. **Content Production** - 8 generators for channel content (scripts, hooks, SEO, repurposing, voice bible, podcast outlines and host interview prep, video shot lists), paired with the evaluators above: generate here, score there
-4. **Domain-Specific** - CPAs, attorneys, contractors, real estate agents, and 20+ more professions
+4. **Domain-Specific** - Client-facing documents by profession: CPAs, financial advisors, contractors and trades, real estate agents, engineers, founders, and more
 5. **Writing** - Essays, narratives, structured documents, news articles, interview features
 6. **Journalism** - The newsroom work around a story: editor's desk edit, source verification log, investigative project plan
 7. **Translation** - Human translation craft: translator brief and glossary, MQM-style quality review, transcreation of creative copy
@@ -45,14 +45,14 @@ domain-professional-writing/
 
 | Subdirectory | Count | Description |
 |--------------|-------|-------------|
-| `domain-specific/` | 24 | Professional field prompts |
+| `domain-specific/` | 21 | Client- and stakeholder-facing documents by profession (`domain_writing_*`). Three stubs were merged into stronger neighbours in the 2026-10 quality backfill: attorney discovery responses → `domain-legal/discovery/legal_discovery_response_objections.md`, physician SOAP note → `domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md`, marketing campaign → `domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md` |
 | `business-writing/` | 14 | Executive brief, status report, proposal (general, executive template, client engagement, investment example), PRD, post-mortem, SOP, technical doc, meeting notes, engagement case study, testimonial/referral request, nine principles |
 | `content-quality/` | 19 | `quality_slop_*` evaluators by document type (moved here from `domain-productivity/validation/`) |
 | `content-production/` | 8 | `content_*` generators for channel content: long-form script, short-form hook bank, SEO title/description, one-to-many repurposing, series/channel voice bible, podcast episode outline (rundown + show notes), podcast host interview prep, video shot list and pre-production |
 | `writing/` | 12 | General writing prompts, including the newsletter issue writer, an inverted-pyramid news article writer, and an interview-transcript-to-feature writer with quote-fidelity rules |
 | `journalism/` | 3 | `journalism_*`: editor's story desk edit (fairness table, legal-risk flags held for a media lawyer), source verification log (people, documents, images, sourcing terms, corrections trail), investigative project plan (hypothesis, kill signals, records/data plan, no-surprises letter) |
 | `translation/` | 3 | `translation_*`, human translation (not software localization): project brief and glossary, MQM-style quality review with severity scoring, transcreation brief for slogans and campaign lines |
-| **Total** | **83** | |
+| **Total** | **80** | |
 
 > `business-documents/` was removed: all nine files were a stale pre-frontmatter
 > mirror of `business-writing/`, whose versions are roughly twice as long.
@@ -61,15 +61,16 @@ domain-professional-writing/
 
 ## Professional Fields Covered
 
-The `domain-specific/` directory includes prompts for:
+The `domain-specific/` directory holds one prompt per profession and document:
 
-- **Financial:** CPAs, Financial Advisors, Tax Professionals
-- **Legal:** Attorneys, Paralegals, Legal Assistants
-- **Real Estate:** Agents, Property Managers, Appraisers
-- **Healthcare:** Medical Writers, Healthcare Administrators
-- **Trades:** Contractors, Electricians, Plumbers
-- **Consulting:** Management Consultants, IT Consultants
-- And many more...
+- **Financial and insurance:** CPA year-end tax planning letter, financial advisor quarterly review, insurance policy comparison
+- **Trades and home services:** contractor remodel estimate, electrical panel upgrade, HVAC estimate, plumbing repipe, landscape proposal
+- **Healthcare-adjacent:** dental treatment plan letter, veterinary surgery recommendation
+- **Technology and leadership:** CTO strategy memo, engineering design doc, RFC, sales strategy, founder investor update
+- **Client services:** consultant executive summary, architect RFP proposal, wedding planner proposal
+- **Listings and letters:** Amazon product listing, real estate listing, school counselor recommendation
+
+Each one names its nearest neighbour elsewhere in the repository under "Not this prompt if".
 
 ---
 

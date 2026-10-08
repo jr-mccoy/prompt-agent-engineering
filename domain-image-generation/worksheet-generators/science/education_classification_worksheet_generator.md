@@ -2,13 +2,23 @@
 title: "Science Classification Worksheet Generator"
 category: education
 description: "Generate science classification worksheets (sort, compare, categorize) using student-friendly datasets."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - science
   - worksheet
   - classification
   - sorting
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Science Classification Worksheet Generator
@@ -121,3 +131,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept ZONE 4 categories that overlap — "animals that fly" and "birds" leave the penguin and the bat with no single correct column, so the key marks a defensible answer wrong.
+- Use everyday categories as if they were scientific ones: a spider as an insect, a whale as a fish, a mushroom as a plant.
+- Let a ZONE 3 item card show a drawing that is ambiguous once photocopied (a seal that could be a sea lion, a moth that could be a butterfly) when the sorting rule depends on that difference.
+
+✅ **DO:**
+- Test every ZONE 3 item against every category rule and confirm exactly one rule admits it; rewrite the rule or drop the item if two do, or none.
+- Check each item's category against a grade-appropriate reference and mark boundary cases you cannot settle as [VERIFY] before printing the key.
+- Count the item cards against the intake number of sorting items.

@@ -20,12 +20,12 @@ tags:
   - premium
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Premium Service** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,21 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **Luxury props imply inclusions.** A private jet, yacht, chauffeured car, or estate backdrop
+   looks like "white-glove excellence" and passes the form checklist while promising things the
+   service does not provide. List what the client actually receives and depict only that.
+2. **Exclusivity lines are factual claims.** "By invitation only", "ten clients a year",
+   "award-winning", and press-outlet logos ("As seen in…") appear only as supplied, with the source.
+3. **Price-on-request must stay on request.** A model fills an empty price slot with "From $5,000";
+   if intake gives no price, the ad carries none.
+4. **Gold seals read as awards.** Crests, laurels, and gilt medallions used as decoration look like
+   honours received; use plain typographic devices unless the user supplies a real award mark.
+5. **Verify before handing over:** list every depicted object that could be read as part of the
+   service and confirm each appears in the intake inclusions; then match every rendered string,
+   including any monogram, to an intake answer verbatim.
 
 ## Output Format
 

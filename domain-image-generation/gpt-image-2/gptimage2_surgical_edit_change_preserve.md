@@ -14,7 +14,7 @@ tags:
   - image-edit
   - change-preserve
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
 ---
@@ -186,6 +186,21 @@ If the first edit drifts:
 1. **Tighten the preserve list.** Re-run with explicit enumeration of whatever drifted.
 2. **Reduce the change scope.** "Replace ONLY the front of the hoodie, not the sleeves" — sometimes splitting helps.
 3. **Restate the failure condition** with the specific drift you observed.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat the cheat-sheet row for the edit type as the whole PRESERVE list — it is a floor; details specific to this input (the label on the mug, the number of books in the stack, text on a background sign) drift unless named.
+- Judge "everything else unchanged" from a side-by-side glance — with `input_fidelity` unavailable the whole frame is regenerated, and small objects, counts, fine text, and texture shift without drawing the eye.
+- Pass an object removal because the object's area looks clean — its shadow, reflection in glass or a mirror, or an occlusion seam can remain elsewhere in the frame.
+- Assume the translated string you supplied is correct because it rendered verbatim — the edit checks rendering, not translation.
+
+✅ **DO:**
+- Before writing PRESERVE, inventory the input image — every object, every piece of visible text, every countable group — and carry the image-specific items into the list alongside the cheat-sheet row.
+- Diff the output against the original input (flicker toggle or difference overlay at the same size), not against the previous turn; every changed region outside the CHANGE target is drift to name in the next PRESERVE.
+- Confirm the output dimensions equal the input's — a different `size` crops or extends the frame and moves everything.
 
 ---
 

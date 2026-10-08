@@ -2,19 +2,37 @@
 title: "Prior Authorization Packet Builder"
 category: medicine
 description: "Build a payer-ready prior authorization packet by mapping captured clinical data to each payer decision criterion, separating objective facts from recommendation language, and surfacing documentation gaps."
+techniques:
+  - ST-02
+  - ST-03
+  - RT-05
+  - QA-05
+  - QA-08
 tags:
   - medicine
   - prior-authorization
   - utilization-management
   - clinical-documentation
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_prior_authorization_letter.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
-  - domain-healthcare-clinical/prompts/medicine_em_coding_level_justification.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_prior_authorization_letter.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_em_coding_level_justification.md
 ---
 
 # Prior Authorization Packet Builder
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Assemble a complete prior-authorization packet that directly answers payer approval criteria and clearly distinguishes objective clinical facts from clinician recommendation statements.
 
@@ -121,6 +139,21 @@ related_prompts:
 **Provisional Language (Do Not Submit Until Complete):**
 "Current documentation does not yet satisfy all payer criteria. Additional records are being gathered to support medical necessity and criterion-level compliance."
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Paraphrase the payer's wording in the "Criterion exact text" column — a paraphrase can make an unmet criterion look met; copy it verbatim.
+- Mark "Evidence Found? Y" because a related item exists (the drug is on the medication list) when the criterion demands a dose, a minimum duration or documented failure — that is Partial at best.
+- Fill ICD-10, CPT, HCPCS, J-code or NDC fields by inferring them from the diagnosis or drug name; codes come from the input or read `[code to be assigned]`.
+- Let interpretive words ("refractory", "failed", "severe") into the Factual Summary unless they quote a dated chart source.
+
+✅ **DO:**
+- Count discrete criteria in the policy text — splitting compound ones ("A and B") — and confirm the Decision Map has exactly that many rows.
+- Check each prior-treatment trial against the criterion's minimum by date arithmetic (start and stop dates → weeks on therapy), not by a stated duration.
+- Compare the turnaround deadline and any denial-history dates with today's date and flag a packet that cannot meet them.
 
 ---
 

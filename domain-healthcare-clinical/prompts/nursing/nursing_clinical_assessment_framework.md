@@ -20,10 +20,22 @@ related_prompts:
   - nursing_quick_reference_handbook_creator_prompt
   - medicine_clinical_history_elicitation
   - medicine_handoff_communication
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Nursing Clinical Assessment Framework
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide a nursing-specific systematic assessment framework covering comprehensive head-to-toe assessment, focused assessments by chief complaint, nursing diagnosis formulation using the NANDA framework, and individualized care plan development that reflects nursing scope of practice and nursing-specific interventions.
 
@@ -379,6 +391,23 @@ R — RECOMMENDATION:
 
   "Is there anything else you'd like me to do in the meantime?"
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write a nursing diagnosis "AEB" defining characteristics the user never supplied — the template's sample evidence (guarding, grimacing, JVD, crackles) is a menu, not data about this patient.
+- Produce a GOAL that fits "measurable, time-bound" in form but measures a parameter the assessment never captured, such as a pain target with no baseline score or a wound goal with no measured size.
+- Copy a Braden, Morse or GCS total into the summary without its component scores, or carry forward a total whose parts do not add up.
+- Call a system "WNL" or a patient "stable" from one set of vitals when no baseline or trend was given.
+- Drop allergies, code status or isolation from the OUTPUT header because the input left them blank — a blank is a gap to flag, not a field to omit.
+
+✅ **DO:**
+- Map each nursing diagnosis to at least one supplied finding by system; list any diagnosis with no supporting finding as "Risk for" or "to assess", never as an actual diagnosis.
+- Recount every scored tool from its components (GCS E + V + M, the six Braden subscales, the Morse items) before writing the total.
+- Check each goal against its diagnosis: the outcome measure must be a parameter recorded in ASSESSMENT SUMMARY, with a baseline value drawn from the input.
+- Write institution-specific cut-points and intervals (fall-risk level, Braden risk band, repositioning or neuro-check frequency) as `per facility protocol` unless the user supplied them.
 
 ---
 

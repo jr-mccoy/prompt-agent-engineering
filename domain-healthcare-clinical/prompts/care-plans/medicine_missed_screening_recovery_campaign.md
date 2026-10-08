@@ -18,10 +18,22 @@ related_prompts:
   - medicine_preventive_care_screening_advisor
   - medicine_care_coordination_transitions
   - medicine_quality_improvement
-updated: "2026-05-05"
+updated: "2026-10-06"
 ---
 
 # Missed Screening Recovery Campaign
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Recover overdue preventive screening completion (e.g., breast, cervical, colorectal, lung) through criteria-based campaign prioritization, structured outreach workflows, and measurable execution reporting.
 
@@ -118,6 +130,22 @@ For these, pause automated scripting and route to clinician/team protocol.
 - Offer scheduling options and barrier support.
 - Do not counsel on risks/benefits beyond approved script.
 - Escalate medical questions to clinician callback queue.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Compute days_overdue from one generic interval — the due date depends on the modality last completed (FIT, stool-DNA, colonoscopy and mammography each carry a different interval) `[VERIFY: USPSTF/local policy intervals]`; a patient with a recent colonoscopy is not overdue for lacking a FIT.
+- Keep patients on the worklist whose chart shows an exclusion (total colectomy, hysterectomy with cervix removed, bilateral mastectomy, aged out, hospice) or a screening completed elsewhere and captured only in scanned records or claims.
+- Treat a "prior abnormal" patient as a screening recall — a positive FIT or abnormal mammogram awaiting diagnostic follow-up is a clinical tracking item; set CLINICAL_REVIEW_NEEDED = YES and keep it out of the reminder cadence.
+- Mark LDCT eligibility from age and "smoker" alone — eligibility needs pack-years and years since quitting, which campaign extracts rarely carry; flag the gap.
+- Let the completion-rate denominator drift (scheduled vs reached vs assigned) between campaign weeks without saying so.
+
+✅ **DO:**
+- For each row, rebuild days_overdue as campaign report date − (last completed date + modality interval) and confirm it meets the campaign's overdue definition before assigning a tier.
+- Show the six criterion points behind each priority_score and confirm the tier band; recount the Output C numerators from the outreach_status column of Output A.
+- Run the "Eligibility revalidated" checklist line against the exclusions above and record what was checked, rather than ticking it because the patient was on the extract.
 
 ---
 

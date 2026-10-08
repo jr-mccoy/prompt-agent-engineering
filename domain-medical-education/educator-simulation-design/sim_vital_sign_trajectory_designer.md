@@ -21,7 +21,7 @@ tags:
   - vital-signs
   - manikin-programming
   - state-based-design
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md
   - domain-medical-education/educator-simulation-design/sim_confederate_script_author.md
@@ -119,6 +119,17 @@ Considered: [impossible value or perverse reward] — Rejected: [reason] — Rep
 | `patient_profile` | Pediatric/elderly/comorbid shifts baselines, dose math, and tolerance |
 | `add_distractor_vital` | Adds a misleading vital (e.g., transient SpO2 artifact) to test interpretation |
 | `combine_actions` | Models additive/synergistic effects of two correct actions |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Ticking the determinism audit "confirmed" in one line while rows of the branch-logic table were never traced | Walk every time × condition row of the branch-logic table through its curve and write the direction of change for HR, BP and SpO2 beside it; a row without a traced direction is unaudited, not confirmed |
+| Vitals that are each human-possible but do not move together — SpO2 climbing while RR, airway signs and O2 delivery are unchanged, or BP recovering while HR and perfusion stay frozen | Change linked parameters as a set: name the mechanism behind each segment's change (preload, contractility, ventilation, O2 delivery) and confirm every vital that mechanism touches moves in a plausible direction |
+| Manikin programming values that drift from the trajectory table (a segment sets one BP while the post-action curve shows another at the same minute) | Copy segment values from the trajectory table, then compare each segment's starting values with the table row at its transition time — any mismatch is a transcription error the operator will run |
+| Dose math that multiplies correctly but uses the wrong concentration or unit (1 mg/mL vs 0.1 mg/mL epinephrine, mg vs mcg, a per-kg factor applied to a fixed-dose IM drug) | Recompute every dose line from weight, dose and stated concentration through to the volume drawn up, and check it against the route-specific dose in the current guideline [VERIFY: current WAO / AAAAI-ACAAI anaphylaxis parameter or AHA/ERC edition] |
+| A source-fidelity row marked "verified" with only a society acronym, or onset and effect-size numbers given with no source at all | Give the reference and its edition or year for each dose, onset and magnitude claim; anything still recalled from memory keeps `[VERIFY]` and its status reads "unverified" |
+| Baseline rows that continue past arrest (vitals at later minutes with no ROSC branch to reach them) | End the untreated curve at arrest or add an explicit resuscitation/ROSC branch; every row after an arrest must be reachable from a named condition in the branch table |
 
 ## Verification Checklist
 

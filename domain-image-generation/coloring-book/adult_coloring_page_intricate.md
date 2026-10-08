@@ -19,7 +19,7 @@ tags:
   - zentangle
   - line-art
   - print-ready
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - kids_coloring_page_simple.md
@@ -229,6 +229,21 @@ Negative: `"shading, grayscale, gray, color, gradient, solid black, fill, realis
 
 ### Problem: Watermark / signature / title text appears
 **Add:** `"No text, no signature, no watermark, no page number anywhere."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Judge "all outlines closed" at fit-to-screen zoom — on 1–1.5 pt lines a 1–2 px gap is invisible there, yet it is exactly where marker colour floods into the neighbouring region.
+- Pass stipple clusters or dense micro-hatching as "outlined pattern fills" — at arm's length they read as grey tone, which is the shading the page bans.
+- Tick "300 DPI (2550 x 3300 px)" because the file was enlarged to that size — an upscaled 1024-px render gains pixels, not line detail, and its fine lines soften toward grey.
+- Accept "intricate, dense" when many enclosed regions are smaller than a gel-pen tip can fill, or check the 0.5 in margin before the render has been reframed from its native aspect (often 2:3) to 8.5:11.
+
+✅ **DO:**
+- Flood-fill test on the final-size file: bucket-fill 10–15 regions, including the smallest, with tolerance near zero; any fill that escapes its region marks a gap to close or a re-roll.
+- Measure stroke widths in pixels — at 300 DPI, 1 pt ≈ 4.2 px and 1.5 pt ≈ 6.3 px; strokes of 1–2 px are hairlines that break up in print.
+- On the reframed page, confirm ≥150 px of pure white from each edge, and count regions under about 24 px (≈2 mm) across — if they dominate, ask for fewer, larger motifs.
 
 ---
 

@@ -2,20 +2,38 @@
 title: "Postpartum Warning Signs Triage Support"
 category: medicine
 description: "Structured postpartum symptom triage support with red-flag recognition, escalation pathways, and documentation-ready outputs for clinical teams."
+techniques:
+  - RP-01
+  - ST-42
+  - ST-03
+  - OC-10
+  - DP-04
 tags:
   - medicine
   - obstetrics
   - postpartum
   - triage
   - patient-safety
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_emergency_triage_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_handoff_communication.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_emergency_triage_decision_support.md
+  - domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
 ---
 
 # Postpartum Warning Signs Triage Support
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help clinicians or care teams quickly triage postpartum warning signs, identify urgent/emergent patterns, and produce safe, communication-ready next-step guidance.
 
@@ -76,6 +94,23 @@ Trigger for concerning but currently stable presentations requiring near-term re
 
 ### 4) Routine Follow-up with Safety Net
 Only when no red flags and risk profile is low, with explicit return precautions.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign "Routine" when risk-factor fields are blank — an unasked field is "unknown" in RISK FACTOR PROFILE, not "none".
+- Triage an elevated home BP without the actual readings, whether they were repeated, and the cuff used; severe-range thresholds come only from the facility protocol `[VERIFY: local protocol]`.
+- Downgrade headache, visual change or epigastric pain because the patient had no hypertension in pregnancy or is already discharged — postpartum preeclampsia can first appear after discharge.
+- Write "heavy bleeding" without the pad count per hour and the time span the caller reported.
+- Fill "Patient teach-back" or "Escalation notifications completed" in the documentation snippet when the input does not say they happened.
+
+✅ **DO:**
+- Map each reported symptom to the triage level whose trigger it meets and assign the highest level triggered; then check that no item under CURRENT WARNING SIGNS meets a higher level than the one assigned.
+- Recompute the postpartum day from the delivery date and the encounter date rather than accepting the caller's estimate.
+- Note lactation status beside any medication advice and check compatibility against a lactation reference `[VERIFY: lactation reference]`.
+- State the escalation destination and who is notified as local pathway `[VERIFY: local policy]`, not as a universal rule.
 
 ---
 

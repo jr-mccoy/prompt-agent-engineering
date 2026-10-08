@@ -15,11 +15,11 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, ED-02, DS-06, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_grow_becoming_preceptor_self_prep.md
   - pacu_grow_teaching_recovery_concept.md
-  - pacu_solo_near_miss_good_catch_reflection.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-3-independent-practice/pacu_solo_near_miss_good_catch_reflection.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Debrief a Junior After an Event — Running a Learning Debrief for a Newer Nurse
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A facilitation-rehearsal aid, not an incident review, disclosure, or evaluation. Formal event reporting and competency evaluation go through facility channels and the toolkit's preceptor tools — this rehearses *how you run a learning conversation* that helps a junior grow.
 
@@ -88,6 +101,20 @@ Self-critique (my facilitation): [one improvement]
 | `safety_stakes` | `high` forces practicing the plain-but-kind safety statement |
 | `emotion` | Debrief a shaken junior (more safety-setting) vs a defensive one (more inquiry) |
 | `depth` | Quick hallway plus/delta vs full advocacy-inquiry debrief |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write the junior's answer into "→ [their frame]" when neither `event` nor `junior_context` supplies it; an invented frame makes the advocacy-inquiry look done when the question was never asked — leave it as the question to put to them.
+- Turn the SAFETY POINT into a numeric rule ("escalate when RR falls below X"); the lesson is the cue and the action, with any threshold `per facility protocol`.
+- Promise blanket confidentiality ("this stays between us") — it passes the safety-setting line but contradicts CLOSE + ROUTE when the event is reportable; say what stays in the learning conversation and what may still need a facility report.
+- Call plus/delta "co-built" when every item came from the facilitator's script; at least one item should originate in the junior's own answer.
+- Carry names of other staff or patient identifiers from the `event` text into the script.
+
+✅ **DO:**
+- Check `safety_stakes` before finishing: when it is `high`, the SAFETY POINT slot must hold a plainly stated lesson — an empty or softened slot fails even if every other checklist line is met.
+- Trace each delta and takeaway to a specific action in the `event` description; a takeaway about something that did not happen is a generic lesson, not a debrief.
+- Keep the self-critique about the facilitation (order, inquiry, tone), not a second review of the junior's clinical performance.
 
 ## Verification Checklist
 

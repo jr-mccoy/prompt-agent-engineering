@@ -14,8 +14,20 @@ tags:
   - ards
   - mechanical-ventilation
   - ecmo
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -44,7 +56,7 @@ Manage a patient with ARDS using lung-protective ventilation, PEEP titration, pr
 
 3. **PEEP titration.**
    - **ARDSNet PEEP-FiO2 tables.** Lower-PEEP table for mild ARDS, higher-PEEP table for moderate-severe.
-     - Higher-PEEP table examples: FiO2 0.4 → PEEP 10; FiO2 0.6 → PEEP 14; FiO2 0.8 → PEEP 16; FiO2 1.0 → PEEP 18–24.
+     - Read the PEEP for the current FiO2 from the published row of the table chosen; the lower and higher tables pair FiO2 and PEEP differently [VERIFY: ARDSNet lower/higher PEEP-FiO2 tables].
    - **Best-PEEP titration:** find PEEP that maximizes compliance or minimizes driving pressure at the same Vt.
    - **PEEP and hemodynamics:** higher PEEP raises intrathoracic pressure → reduces preload → may drop BP. Echo for RV strain.
 
@@ -94,6 +106,21 @@ Manage a patient with ARDS using lung-protective ventilation, PEEP titration, pr
     - ICU-acquired weakness: minimize paralytic duration, early mobility when feasible.
     - Pulmonary follow-up post-discharge for residual fibrosis, exercise capacity.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a PBW written in the input or the worked example without recomputing it from height and sex; an error there propagates into every Vt figure in VENT SETTINGS.
+- Quote a PEEP for a given FiO2 from memory and attribute it to "the higher-PEEP table"; the ARDSNet lower and higher tables pair FiO2 and PEEP differently, so cite the row `[VERIFY: ARDSNet PEEP/FiO2 table]`.
+- Grade Berlin severity from a P/F ratio obtained on PEEP <5 cmH2O, or from opacities whose cardiogenic cause has not been addressed.
+- Mark prone positioning or VV-ECMO "indicated" from a single ABG; PROSEVA and EOLIA criteria include hours on optimized settings, and the output must show that duration.
+- Fill ETIOLOGIC TREATMENT with a steroid without naming which regimen applies (COVID vs non-COVID ARDS) and the day of illness relative to the late-steroid window.
+
+✅ **DO:**
+- Recompute P/F (PaO2 ÷ FiO2 as a fraction), driving pressure (Pplat − PEEP) and each Vt in mL from PBW, and show the arithmetic beside the setting.
+- After any proposed Vt or PEEP change, state that Pplat and driving pressure must be remeasured; a target counts as met only once a new measured value is entered.
+- Check permissive hypercapnia against the supplied ABG and against contraindications present in the inputs (raised ICP, RV dysfunction on echo) before accepting it.
+- Tie each rescue step to an input finding (documented dyssynchrony, P/F still below threshold after proning) instead of listing the whole rescue ladder.
+
 ## Output Format
 
 ```
@@ -138,7 +165,7 @@ MONITORING:
 
 ## Worked Example
 
-**Input:** Day 2 in the ICU. 45 y/o M, 178 cm, intubated for severe COVID-19 ARDS. Currently: VC-AC, Vt 410 mL (6 mL/kg PBW 68 kg), RR 22, PEEP 12, FiO2 80%. Pplat 28, driving pressure 16. ABG: pH 7.27, PaCO2 56, PaO2 58, HCO3 25. P/F 73. Hemodynamics stable on no pressors. Echo: normal LV, mildly dilated RV with preserved function.
+**Input:** Day 2 in the ICU. 45 y/o M, 172 cm, intubated for severe COVID-19 ARDS. Currently: VC-AC, Vt 410 mL (6 mL/kg PBW 68 kg), RR 22, PEEP 12, FiO2 80%. Pplat 28, driving pressure 16. ABG: pH 7.27, PaCO2 56, PaO2 58, HCO3 25. P/F 73. Hemodynamics stable on no pressors. Echo: normal LV, mildly dilated RV with preserved function.
 
 **Output:**
 
@@ -150,7 +177,7 @@ VENT SETTINGS (current → adjusted):
 - Mode: VC-AC (continue).
 - Vt: 410 mL = 6 mL/kg PBW. Driving pressure 16 (above target). Reduce Vt to 5 mL/kg PBW = 340 mL; recheck Pplat and DP.
 - RR: increase to 26 to maintain minute ventilation as Vt drops; permissive hypercapnia acceptable to pH 7.20.
-- PEEP: increase to 14–16 per ARDSNet higher-PEEP table at FiO2 0.8. Reassess driving pressure at higher PEEP — if DP improves with higher PEEP, that PEEP is recruitable; if DP worsens, that PEEP is overdistention.
+- PEEP: increase to the ARDSNet higher-PEEP table value for FiO2 0.8 [VERIFY: ARDSNet higher PEEP-FiO2 table]. Reassess driving pressure at higher PEEP — if DP improves with higher PEEP, that PEEP is recruitable; if DP worsens, that PEEP is overdistention.
 - FiO2: target SpO2 88–94%, accept lower-end target to limit oxygen toxicity.
 - Pplat target: <30 (currently 28; closer to limit at higher PEEP — drives Vt reduction).
 - Driving pressure target: <15.

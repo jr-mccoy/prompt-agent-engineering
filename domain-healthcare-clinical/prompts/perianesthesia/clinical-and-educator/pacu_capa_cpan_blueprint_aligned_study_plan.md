@@ -20,10 +20,10 @@ techniques:
   - DS-06
 difficulty: intermediate
 related_prompts:
-  - prompts/pacu_capa_cpan_weak_area_diagnostic.md
-  - prompts/pacu_capa_cpan_practice_question_generator.md
-  - prompts/pacu_capa_cpan_test_strategy_coach.md
-  - prompts/pacu_capa_cpan_final_week_review.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_weak_area_diagnostic.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_practice_question_generator.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_test_strategy_coach.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_final_week_review.md
 references:
   - ABPANC official exam blueprint (current edition — user pastes in domains and weights)
   - ASPAN Core Curriculum for PeriAnesthesia Nursing Practice

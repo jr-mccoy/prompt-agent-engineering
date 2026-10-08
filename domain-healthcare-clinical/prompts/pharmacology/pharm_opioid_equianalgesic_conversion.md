@@ -16,8 +16,20 @@ tags:
   - opioids
   - dosing
   - safety
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -47,7 +59,7 @@ Senior palliative-care / pain-medicine physician writing the conversion order, a
      - **Hydromorphone IV/SC**: 1.5 mg ≈ 30 mg PO morphine (factor 20)
      - **Oxymorphone PO**: 10 mg ≈ 30 mg PO morphine (factor 3)
      - **Tapentadol PO**: 75 mg ≈ 30 mg PO morphine (factor 0.4; conservative)
-     - **Tramadol PO**: 300 mg ≈ 30 mg PO morphine (factor 0.1; very rough; metabolism CYP2D6-dependent)
+     - **Tramadol PO**: factor 0.1 in the CDC 2016 table (300 mg ≈ 30 mg PO morphine); the CDC 2022 guideline revised the factor upward (0.2) — name the source used (very rough; metabolism CYP2D6-dependent) [VERIFY: CDC 2022 Clinical Practice Guideline MME conversion table]
      - **Codeine PO**: 200 mg ≈ 30 mg PO morphine (factor 0.15; CYP2D6 ultra-rapid metabolizers convert more rapidly to morphine — pediatric warning)
      - **Fentanyl transdermal patch (µg/h)**: 25 µg/h patch ≈ 50–100 mg/day oral morphine (CDC table uses 25 µg/h = 60–134 MME/day, midpoint ~100; many use 25 µg/h ≈ 50 MME conservative; methods vary)
      - **Buprenorphine TD patch (Butrans 5 µg/h)**: 5 µg/h ≈ 10–15 mg/day oral morphine (conservative); buprenorphine has unique pharmacology (high-affinity partial agonist) — direct conversion is approximate and often replaced by induction protocols.
@@ -98,6 +110,20 @@ Senior palliative-care / pain-medicine physician writing the conversion order, a
    - Sedation review: continue benzodiazepine only after explicit risk/benefit; consider taper.
    - Driving / operating machinery: counsel against during initial 5–7 days or after dose increase.
    - Follow-up: 1 week initially, then 2–4 week intervals; PDMP check, urine drug screen, function review.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mix conversion sources within one calculation (CDC MME factor for fentanyl, the label's patch table, the 2:1 rule) or take a factor from memory when the source revised it (tramadol 0.1 vs 0.2).
+- Label the plan "25% cross-tolerance reduction" when the patch strength chosen actually delivers a much larger reduction.
+- Choose the smaller reduction when this file's own 50% criteria (>200 MME/day, older age, renal impairment, sedation) are met, without saying why.
+- Round to a patch strength without confirming that strength is stocked `[VERIFY: local formulary]`.
+
+✅ **DO:**
+- Recompute in `SELF-CHECK`: old MME, new scheduled MME, actual reduction = 1 − (new ÷ old); the stated percentage must match.
+- Add up every opioid available at once during the bridge (scheduled patch plus all prn agents at their maximum frequency) and report the worst-case daily MME.
+- Apply renal and hepatic dose reductions to the breakthrough agent at the supplied eGFR, not only to the scheduled agent.
+- Write the conversion source and version beside each factor used so a pharmacist can re-derive the number.
 
 ## Output Format
 
@@ -167,14 +193,13 @@ CHOICE OF NEW AGENT:
 
 CONVERSION CALCULATION:
 Step 1: total daily MME = 240 MME/day.
-Step 2: Convert to transdermal fentanyl using CDC table — 100 MME/day ≈ 25 µg/h. So 240 MME/day ≈ 50–75 µg/h (conservative midrange).
-   - Bracket: 50 µg/h represents lower-end conservative conversion; 75 µg/h represents direct equianalgesic.
-Step 3: Apply 25% cross-tolerance reduction (somnolence and inadequate pain suggest poor pain control but also developing side effects → moderate reduction):
-   - 50 µg/h × 0.75 = ~37 µg/h → round to **37 µg/h or 50 µg/h patch**. Given somnolence and CKD, start at **37 µg/h** patch (available — Duragesic 37.5 µg/h not common; standard patches are 12, 25, 50, 75, 100 µg/h; use combination — one 25 µg/h + one 12 µg/h = 37 µg/h).
-   - Reasonable alternative: start at **25 µg/h** patch (more conservative; reduces somnolence risk, allows clear breakthrough use, and faster titration upward at week 1 if needed). For elderly CKD patient with somnolence, **start 25 µg/h patch**.
+Step 2: Convert to transdermal fentanyl using one conversion throughout — 100 MME/day ≈ 25 µg/h [VERIFY: fentanyl TD product-label conversion table; do not mix with other MME tables]. So 240 MME/day × 25/100 = 60 µg/h equianalgesic.
+Step 3: Apply **50%** cross-tolerance reduction — this file's 50% criteria are met: >200 MME/day (240), age 74, renal impairment (eGFR 38), and poorly controlled pain with somnolence:
+   - 60 µg/h × 0.5 = 30 µg/h → round down to the nearest standard strength (12, 25, 50, 75, 100 µg/h) given somnolence and CKD: **start 25 µg/h patch**.
+   - Actual reduction (same conversion): 25 µg/h ≈ 100 MME/day → 1 − 100/240 ≈ 58% (50% planned; the extra comes from rounding down to an available strength).
 Step 4: Breakthrough dose:
-   - 25 µg/h patch ≈ ~60–100 MME/day. Take midpoint ~80 MME/day for breakthrough sizing.
-   - 10–15% of scheduled MME for breakthrough → ~8–12 MME = oxycodone IR ~5–8 mg or morphine IR 4–8 mg. In CKD, prefer **hydromorphone IR 2 mg PO q4h prn** (avoid morphine for metabolites; oxycodone could continue but rotation is the point).
+   - Scheduled ≈ 100 MME/day (same conversion as Step 2); 10–15% → ~10–15 MME.
+   - In CKD, prefer **hydromorphone IR 2 mg PO q4h prn** (= 8 MME, ≈8% of scheduled — deliberately at/below the low end of the 10–20% band given somnolence, age and eGFR 38; increase if breakthrough relief is inadequate). Avoid morphine for metabolites; oxycodone could continue but rotation is the point.
 
 NEW REGIMEN:
 - **Fentanyl transdermal patch 25 µg/h, apply q72h** (rotate site, apply to hairless clean skin).
@@ -182,7 +207,7 @@ NEW REGIMEN:
 - Bridge to patch onset: continue **oxycodone IR 10 mg PO q4h prn** for the first 24 hours after patch placement (fentanyl reaches steady state in ~24–48 h); then transition entirely to hydromorphone IR for breakthrough.
 
 CROSS-TOLERANCE RATIONALE:
-- 25% reduction applied: high MME baseline + side effects (somnolence) + CKD argued for caution; 25% conservative reduction balanced with the patient's actual pain control needs.
+- 50% reduction applied (actual ≈58% after rounding to the 25 µg/h strength): baseline >200 MME/day, age 74, eGFR 38, and somnolence with poorly controlled pain all meet this file's 50% criteria; breakthrough use will guide upward titration.
 
 MONITORING:
 - Daily phone or home-visit check during first 3–5 days for somnolence, respiratory rate (target ≥10), pain score (target ≤4/10 rest, function-based for activity), constipation, nausea.
@@ -205,8 +230,8 @@ WHY NOT:
 - Buprenorphine TD: would require additional washout and induction; not the best fit for acute conversion of cancer pain at this MME.
 
 SELF-CHECK:
-- New scheduled regimen MME (fentanyl 25 µg/h ≈ 60–100 MME/day, conservative 60) vs prior 240 MME/day → ~75% reduction including cross-tolerance + selected lower-end patch dose. Substantial reduction; expect breakthrough use to gauge whether titrate to 50 µg/h patch at next visit.
-- Breakthrough hydromorphone 2 mg q4h prn = 12 mg/day max = 48 MME/day (at factor 4); if all doses used, total daily MME ~108. Still less than prior 240 — appropriate buffer for tolerance + side-effect resolution.
+- New scheduled regimen MME (fentanyl 25 µg/h ≈ 100 MME/day by the Step 2 conversion) vs prior 240 MME/day → actual reduction 1 − 100/240 ≈ 58%, matching the planned 50% plus rounding down. (Tables that put 25 µg/h as low as 60 MME/day would make this a 75% reduction — another reason to track breakthrough use and consider titrating to a higher patch strength at next visit.)
+- Breakthrough hydromorphone 2 mg q4h prn = 12 mg/day max = 48 MME/day (at factor 4); if all doses used, total daily MME ~148. Still less than prior 240 — appropriate buffer for tolerance + side-effect resolution.
 - Renal-friendly choices: fentanyl + hydromorphone (both acceptable in CKD).
 - Naloxone prescribed: yes.
 - Bowel regimen: yes (senna + PEG).

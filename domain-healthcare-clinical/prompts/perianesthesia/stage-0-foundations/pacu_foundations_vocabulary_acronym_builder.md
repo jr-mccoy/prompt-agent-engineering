@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, RT-02, QA-04, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_what_is_pacu.md
   - pacu_foundations_anesthesia_pharmacology_map.md
@@ -27,6 +27,19 @@ references:
 ---
 
 # PACU Vocabulary & Acronym Builder — Build Your Personal Glossary
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study/vocabulary tool, not clinical decision support. Confirm any clinical meaning against your facility's usage and references.
 
@@ -86,6 +99,19 @@ Terms I still can't define without looking: [ ]
 | `starter_scope` | `core` (highest-frequency terms) vs. `full` (all domains) |
 | `deck_format` | Table for scanning, flashcards for retrieval |
 | `add_pronunciation` | Optionally add how to say hard terms |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Give one confident expansion for an acronym with two live meanings in this setting — MAC (monitored anesthesia care / minimum alveolar concentration), RRT (rapid response team / renal replacement therapy) — it passes "every acronym expanded" and is wrong for the sentence the learner heard.
+- Define a `unit_term` from what the phrase sounds like and mark it "Confirm locally? = no"; every inferred meaning stays "yes" until the preceptor confirms it.
+- Mark a protocol-tied term (a discharge-pathway label, an alert or team name) as general vocabulary; that hides a facility rule inside the glossary.
+- Let the "why it matters" hook carry what the definition column kept out — an onset window, a score cut-off, a drug amount.
+
+✅ **DO:**
+- Count flashcards against table rows: every row has a front/back and every card traces back to a row.
+- File an ambiguous acronym under each domain where it is used, with the meaning stated for that domain.
+- Check the self-quiz seed draws only from terms not listed in `known_terms`.
 
 ## Verification Checklist
 

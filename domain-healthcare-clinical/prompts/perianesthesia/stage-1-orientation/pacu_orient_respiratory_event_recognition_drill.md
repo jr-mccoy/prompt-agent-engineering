@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_recovery_deviation_script_builder.md
   - pacu_orient_normal_vs_deviation_drill.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Respiratory Event Recognition — Laryngospasm vs Bronchospasm vs NPPE vs OIRD
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A recognition drill, not live clinical decision support. Real respiratory events are emergencies — call for help and escalate by role while acting within scope.
 
@@ -91,6 +104,19 @@ One coaching point: [...]
 | `mode` | `single-deep` for a full recognition script of one event |
 | `difficulty` | Add an atypical/overlapping presentation |
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the discriminator table with a cue shared by all four events (desaturation, distress) in the "separating discriminator" column — a cue present in every row separates nothing.
+- Write a vignette that carries the name-giving cue of one event plus a cue of another, so two calls are defensible, and then score only one correct.
+- Read a quieting airway as improvement: in laryngospasm, loss of the crowing sound can mean complete obstruction, so silence must be scored as escalation, not resolution.
+- Give all four events the same routing line — if the first moves do not differ, the discrimination did not drive action.
+
+✅ **DO:**
+- For each pair in play, check the stated discriminator is present in one event and absent in the other; repeat for every pair, not just the called event.
+- Verify the learner's `Cue you used` appears in the vignette text as written.
+- Check timing entries are anchored to events (emergence, opioid administration, relief of obstruction), never to clock minutes.
+
 ## Verification Checklist
 
 - [ ] Discrimination is **cue-first**, before classic signs.
@@ -108,9 +134,9 @@ One coaching point: [...]
 ```
 Vignette: crowing/stridor-like sound on emergence, see-saw chest movement, falling air movement.
 Call: laryngospasm — cue = the crowing sound + see-saw effort at emergence.
-Discriminator: laryngospasm = upper-airway cord closure *during* obstruction; NPPE = frothy secretions and respiratory distress *after* an obstruction is relieved (the negative-pressure aftermath).
+Discriminator: laryngospasm = upper-airway cord closure *during* obstruction; NPPE = frothy secretions and respiratory distress, usually soon *after* an obstruction is relieved but sometimes during it or delayed (the negative-pressure aftermath).
 Routing: call for help, position and support airway, apply O2, assist provider, prepare emergency airway equipment; escalate immediately; reassess continuously.
-Coaching point: timing separates them — laryngospasm is the obstruction; NPPE is the sequela after it clears.
+Coaching point: timing separates them — laryngospasm is the obstruction; NPPE is the sequela, typically after it clears and sometimes late — keep watching after the airway opens.
 ```
 
 > Safety reminder: A drill only — recognition is not diagnosis; real respiratory events are emergencies: call for help and escalate by role at once.

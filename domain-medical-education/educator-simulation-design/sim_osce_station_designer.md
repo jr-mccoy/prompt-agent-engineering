@@ -18,9 +18,9 @@ tags:
   - competency-assessment
 updated: "2026-05-15"
 related_prompts:
-  - ../meded_standardized_patient_scenario_writer.md
-  - ../meded_clinical_skills_checklist_designer.md
-  - ../meded_assessment_rubric_builder.md
+  - domain-medical-education/educator-case-writing/case_standardized_patient_author.md
+  - domain-medical-education/educator-rubrics-wba/assess_clinical_skills_checklist_designer.md
+  - domain-medical-education/educator-rubrics-wba/assess_rubric_builder.md
 ---
 
 # OSCE Station Designer

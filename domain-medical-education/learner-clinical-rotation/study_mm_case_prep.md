@@ -22,7 +22,7 @@ tags:
   - patient-safety
   - systems-thinking
   - adverse-event
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_morning_report_case_prep.md
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
@@ -143,6 +143,16 @@ Restudy target: [named precisely, e.g., "distinguish 5-Whys layer 2 from layer 3
 | `learner_level = MS3` | Causation map is pre-scaffolded with 5-Whys prompts; learner fills in each layer |
 | `no_blame_only` | Skip recommendation grading; run only the language audit — trains no-blame framing in isolation |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Marking a recommendation "Measurable: Yes" because a number appears ("100% audit compliance") with no denominator, audit method, or date | Measurable means numerator, denominator, data source, and review date are all named; a bare percentage is `partial` |
+| Grading the timeline `complete` when entries are undated or are inferences ("pharmacy dispensed without a flag") written as observed facts | Count the timestamped entries and tag each with its source (chart, pharmacy log, interview, inferred); untimed or inferred steps hold the grade at `partial` |
+| Labelling every contributing factor "system" so the case passes the no-blame check, erasing a genuine individual factor | Run the categorization rule from Method step 2 on each factor separately and record the result; a case with zero individual factors after that test is fine, but one with zero because nobody tested is not |
+| Role labels in a small program ("the night intern," "the discharging attending") that identify a person as surely as a name | Replace roles with the process step ("at discharge order entry") whenever the role maps to one identifiable person |
+| One recommendation per root cause on paper, while a second failed defense layer (e.g., the outpatient pharmacy) has none | List every defense layer the error passed through and map each to a recommendation or an explicit "no recommendation — reason"; count both lists before the self-check |
+
 ## Verification Checklist
 
 - [ ] Timeline is graded before the causation map — facts must be established before causes are assigned.
@@ -177,4 +187,10 @@ Restudy target: [named precisely, e.g., "distinguish 5-Whys layer 2 from layer 3
 1. Remove "daily" as default frequency for methotrexate in discharge order templates — assign to EHR team; measure as zero daily-methotrexate discharges at 30 days.
 2. Add pharmacist verification requirement for high-alert medication frequency changes at discharge — assign to pharmacy director; measure as 100% audit compliance within 60 days.
 
-**Verdict:** Causation map reaches system level. Both recommendations are specific, actionable, assigned, and measurable. **PASS.**
+**Defense-layer check:** discharge order template → recommendation 1; pharmacist verification at discharge → recommendation 2; outpatient pharmacy dispensing → no recommendation — open gap: add one, or state why it is out of scope.
+
+**Verdict:**
+- Timeline: partial — entries carry relative labels only ("Inpatient," "Discharge," "Day 5 post-discharge"), no timestamps; the sentinel event is not marked; "dispensed without frequency flag" is an inference with no source tagged.
+- Causation depth: reaches system level.
+- Recommendation quality: 2/2 specific, actionable, and assigned; #2 is only partially measurable ("100% audit compliance" names no denominator or data source); the outpatient-pharmacy layer has no recommendation.
+- Restudy target: timestamp every timeline entry and mark the sentinel event before building the causation map; then map every failed defense layer to a recommendation.

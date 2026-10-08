@@ -15,8 +15,20 @@ tags:
   - renal
   - liver
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -60,7 +72,7 @@ Senior internist or hospitalist reading the panel with the chart open.
 5. **BUN/Cr → renal evaluation.**
    - Calculate eGFR (CKD-EPI 2021).
    - Compare to baseline. AKI definitions (KDIGO): Cr increase ≥0.3 mg/dL within 48h, or ≥1.5× baseline within 7 days, or UOP <0.5 mL/kg/hr for ≥6h.
-   - Stage AKI: 1 (1.5–1.9× baseline), 2 (2–2.9×), 3 (≥3× or Cr ≥4 with acute increase ≥0.5 or initiation of RRT).
+   - Stage AKI: 1 (1.5–1.9× baseline), 2 (2–2.9×), 3 (≥3× or Cr ≥4.0 or initiation of RRT).
    - Categorize:
      - **Prerenal:** BUN/Cr >20, FENa <1% (off diuretics), FEUrea <35% (on diuretics), bland sediment. Causes: volume depletion, decreased effective circulating volume (CHF, cirrhosis), hypotension, ACE/ARB/NSAID-induced.
      - **Intrinsic:** FENa >2%, abnormal sediment.
@@ -102,6 +114,14 @@ ACTION:
 3. [follow-up timing]
 ```
 
+## False-Positive Prevention
+
+- **Corrected calcium computed in mixed units.** Recompute it and show the arithmetic: Ca (mg/dL) + 0.8 × (4 − albumin g/dL), or in SI Ca (mmol/L) + 0.02 × (40 − albumin g/L). In critical illness, CKD, or very low albumin the correction is unreliable, so ask for ionized calcium before calling it normal.
+- **Ratios and cut-offs applied to SI results without converting.** Convert creatinine µmol/L ÷ 88.4, urea mmol/L × 2.8 (to BUN mg/dL), and glucose mmol/L × 18 before using a BUN/Cr >20, a glucose-corrected sodium, or any mg/dL threshold in this prompt. Judge each analyte against the reporting lab's range, not the defaults written here.
+- **eGFR and AKI stage given as if the creatinine were stable.** CKD-EPI assumes steady state and overestimates function while creatinine is rising, so label it. State the KDIGO criterion that was met with the ratio to a baseline actually supplied; with no baseline, say AKI vs CKD is undetermined rather than staging it.
+- **Hyponatremia labelled "hypotonic" without a measured osmolality.** Compute the glucose-corrected Na (+2.4 per 100 mg/dL above 100) and ask for serum osmolality before ruling out pseudohyponatremia or a hypertonic cause.
+- **Correction rate and potassium judged from a single draw.** Calculate the Na change per hour from the timestamps of successive results, not "per 24 h" by assumption. Before acting on a high K, check for a hemolyzed sample, extreme leukocytosis or thrombocytosis, or a whole-blood gas K being compared with serum.
+
 ## Worked Example
 
 **Input:** 76 y/o F, 3 days vomiting and poor PO intake, history of HTN on lisinopril/HCTZ. BP 92/58 (baseline 142/82), HR 108, weight 60 kg. Today: Na 128, K 2.9, Cl 88, HCO3 30, BUN 48, Cr 1.8 (baseline 0.9), glucose 96, Ca 8.8, albumin 3.2, AST 24, ALT 22, ALP 88, total bili 0.6.
@@ -110,7 +130,7 @@ ACTION:
 
 ```
 GLUCOSE: 96 — normal.
-SODIUM: 128 — hyponatremia. Vitals (HR 108, BP drop from 142 → 92) and history (vomiting, poor PO) → hypovolemic hyponatremia with concurrent ADH-driven free water retention. Hypotonic on physiology. Will correct with isotonic resuscitation but watch rate.
+SODIUM: 128 — hyponatremia. Vitals (HR 108, BP drop from 142 → 92) and history (vomiting, poor PO) → hypovolemic hyponatremia with concurrent ADH-driven free water retention. Tonicity not established — serum osmolality not provided; glucose 96 needs no correction, so a hypertonic cause is unlikely, but send serum osm before excluding pseudohyponatremia. Will correct with isotonic resuscitation but watch rate.
 POTASSIUM: 2.9 — hypokalemia. Cause is multifactorial: vomiting (gastric H+ loss with secondary HCO3 retention drives K into cells; renal K wasting from contraction alkalosis), HCTZ (chronic), poor intake. Replace K and Mg.
 ACID-BASE: HCO3 30, no ABG provided. Anion gap = 128 − (88 + 30) = 10 → normal. Pattern: contraction alkalosis from vomiting + diuretic. Consistent with HCO3 30.
 RENAL: Cr 1.8 from baseline 0.9 = 2× → AKI stage 2. BUN/Cr = 27 → consistent with prerenal. eGFR (CKD-EPI) ~30 mL/min/1.73m² acutely. ACE inhibitor + diuretic + volume depletion is the classic triple hit driving prerenal AKI.
@@ -118,7 +138,7 @@ CALCIUM: 8.8 measured, albumin 3.2 → corrected = 8.8 + 0.8 × (4 − 3.2) = 9.
 LIVER: Within normal limits.
 ALBUMIN: 3.2 — mildly low, consistent with acute illness / poor intake. No protein gap concern.
 
-PATTERN: Volume-depleted elderly woman with hypovolemic hypotonic hyponatremia, hypokalemic contraction alkalosis, and prerenal AKI driven by vomiting + ACE inhibitor + thiazide.
+PATTERN: Volume-depleted elderly woman with hypovolemic hyponatremia (presumed hypotonic; serum osm pending), hypokalemic contraction alkalosis, and prerenal AKI driven by vomiting + ACE inhibitor + thiazide.
 
 ACTION:
 1. Hold lisinopril and HCTZ. Resume only after Cr returns to baseline and a different regimen is selected (ACE/diuretic combo is high-risk in this patient).
@@ -126,5 +146,5 @@ ACTION:
 3. Replace K: 40 mEq KCl PO once now (if tolerating PO) or 10 mEq/hr IV peripheral if NPO. Recheck K with next BMP. Replace Mg empirically with 2 g IV magnesium sulfate.
 4. Workup vomiting cause: focused history (med changes, dietary, infection, abdominal pain). If persistent, consider AXR / CT abdomen for obstruction; lipase if epigastric pain.
 5. Watch UOP. Foley if mental status declines or output unclear. Repeat BMP in 6 hours.
-6. Anticipate K rising rapidly with volume replacement and aldosterone suppression — recheck before further K supplementation.
+6. K may rise as volume repletion lowers aldosterone-driven renal K loss and the alkalosis corrects — recheck K before each further supplement rather than assuming the deficit persists.
 ```

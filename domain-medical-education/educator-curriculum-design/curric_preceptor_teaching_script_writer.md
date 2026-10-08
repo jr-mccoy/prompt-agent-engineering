@@ -20,7 +20,7 @@ updated: "2026-05-15"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md
   - domain-medical-education/educator-remediation/remed_learner_feedback_composer.md
-  - domain-medical-education/meded_faculty_development_module_designer.md
+  - domain-medical-education/educator-curriculum-design/curric_faculty_development_module_designer.md
 ---
 
 # Preceptor Teaching Script Writer

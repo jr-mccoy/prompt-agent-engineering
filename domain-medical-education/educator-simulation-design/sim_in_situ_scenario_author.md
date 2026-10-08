@@ -23,7 +23,7 @@ tags:
   - latent-safety-threats
   - systems-testing
   - patient-safety
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md
   - domain-medical-education/educator-simulation-design/sim_multidisciplinary_team_scenario.md
@@ -120,6 +120,16 @@ Considered: [...] — Rejected: [reason] — Replaced with: [...]
 | `objectives_systems` | More LST targets → larger capture grid + longer systems readout |
 | `unit` | Determines which real equipment/paths/stock are probed |
 | `add_equipment_failure_probe` | Inserts a deliberate gap (e.g., empty O2 tank) to test detection — only with leadership consent |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| An LST probe that measures the sim substitute instead of the unit's own system (cart completeness checked on the staged sim cart; time-to-defibrillator timed from wherever faculty parked it) — the grid fills with a "result" about nothing real | For each systems objective, state whether the item measured is the live system or a sim stand-in; if it is a stand-in, redesign the probe so the real item is inspected or timed without being removed or used (e.g., charge RN opens the real cart drawer and reports contents) |
+| LST defect thresholds (≤ 3 min to defibrillator, ≤ 2 min paging) written as if they were published standards | Give each threshold's source — unit policy, a named in-hospital resuscitation quality metric `[VERIFY: metric + year]`, or "unit-chosen" — so a "defect" in the action register can be defended to unit leadership |
+| A post-sim sweep recorded as done because someone was named, with nothing counted | Issue a numbered sim-supply manifest (each labeled vial, syringe, pad set) before the run and reconcile count-out against count-back after it; any mismatch blocks closing the run and is logged |
+| Anchoring the scenario to live systems — the real bedside monitor, overhead "code" page, central telemetry — without saying how those signals are marked as simulation | List every live system the run touches and the method that tells real responders and remote monitoring it is a sim (pre-notification, sim prefix on the page, monitor in demo mode); an unmarked live signal is a no-go item |
+| ACLS steps in the state flow (shock timing, epinephrine interval, rhythm checks) written from memory and audited "verified" | Lift the steps from the current AHA adult cardiac arrest algorithm `[VERIFY: current AHA ACLS edition]` and match them to the unit's own code policy before the audit row is closed |
 
 ## Verification Checklist
 

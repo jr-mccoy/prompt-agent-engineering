@@ -22,7 +22,7 @@ tags:
   - abcd
   - smart
   - curriculum-design
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_lecture_outline_designer.md
   - domain-medical-education/educator-curriculum-design/curric_session_blueprint_designer.md
@@ -151,6 +151,16 @@ Replaced with: "Given an ABG with clinical context, the MS2 student will identif
 | `assessment_alignment` | Constrains which LOs are realistic; if only MCQ available, evaluation-level LOs may not be assessable |
 | `competency_framework` | Drives mapping format and code style |
 | `include_psychomotor_or_affective` | Adds Simpson psychomotor or Krathwohl affective taxonomy LOs |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A degree such as "≥ 90% accuracy on a 6-item MCQ" accepted without checking its raw meaning: 90% of 6 is 5.4, so the actual bar is 6 of 6 | Convert every percentage degree into the raw count on the named instrument and state it ("6 of 6 items"); if the conversion changes the intended stringency, change the item count or the percentage |
+| A SMART row stamped "pass × 5" for an LO that has drifted off `content_topic` (an AKI-differentiation LO inside an acid-base session) and passes Relevant only because it maps to some EPA | Judge Relevant against the input topic and instructional time as well as the mapped competency, and give a few words of justification per SMART letter instead of a bare pass |
+| Bloom level read off the verb alone when the condition reduces the task to recall (e.g., "identify" a disorder the stem already names) | Assign the level from the cognitive operation the condition and degree demand: state what the learner must do with the given data, then choose the level that operation belongs to |
+| A competency code that looks plausible but is not in the named framework, or a number paired with another code's title | Look up each code and title in the framework edition the user named; if that text was not supplied, tag the mapping [VERIFY: framework edition] |
+| A condition or degree that embeds a clinical cut-off or formula tolerance recalled from memory (an expected-compensation margin, a lab range) | Name the source type for any numeric clinical criterion inside an LO, or move the number into the assessment key where it can be checked [VERIFY: source] |
 
 ## Verification Checklist
 

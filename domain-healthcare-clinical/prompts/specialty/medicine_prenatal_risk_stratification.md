@@ -2,20 +2,38 @@
 title: "Prenatal Risk Stratification Advisor"
 category: medicine
 description: "Structured antepartum risk assessment — identifying maternal, obstetric, and fetal risks, assigning level-of-care, and planning surveillance and intervention points."
+techniques:
+  - ST-02
+  - ST-03
+  - ST-43
+  - DP-04
+  - QA-01
 tags:
   - medicine
   - obstetrics
   - maternal-fetal-medicine
   - prenatal-care
   - risk-stratification
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_chronic_disease_management_planner.md
-  - domain-healthcare-clinical/prompts/medicine_preventive_care_screening_advisor.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/care-plans/medicine_chronic_disease_management_planner.md
+  - domain-healthcare-clinical/prompts/care-plans/medicine_preventive_care_screening_advisor.md
 ---
 
 # Prenatal Risk Stratification Advisor
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help clinicians perform structured antepartum risk assessment — identifying maternal medical, obstetric, and fetal risk factors, assigning appropriate level of care, and constructing a surveillance and intervention plan that is neither over- nor under-intensive for the specific pregnancy.
 
@@ -78,7 +96,7 @@ Walk through each bucket, listing what is present:
 ### Step 2: Apply Screening & Prevention Decisions
 
 Key early decisions driven by risk:
-- **Aspirin for preeclampsia prevention:** 81–162 mg daily starting 12–28w in patients with ≥1 high-risk or ≥2 moderate-risk factors (USPSTF / ACOG)
+- **Aspirin for preeclampsia prevention:** low-dose aspirin daily (dose as stated in the current USPSTF / ACOG recommendation) starting 12–28w in patients with ≥1 high-risk or ≥2 moderate-risk factors (USPSTF / ACOG) [VERIFY: current USPSTF / ACOG low-dose aspirin statement — dose]
 - **Early GDM screening:** BMI, prior GDM, PCOS, family history — screen at first prenatal visit
 - **Cervical length surveillance / progesterone:** prior spontaneous preterm birth
 - **Low-dose heparin / antepartum AC:** history of VTE, thrombophilia, antiphospholipid syndrome — with specialist input
@@ -163,7 +181,7 @@ Basis: [AAP/ACOG LOC guidance + year]
 
 EARLY DECISIONS
 ---------------
-[ ] Aspirin prophylaxis: [yes — 81/162 mg starting GA / no — rationale]
+[ ] Aspirin prophylaxis: [yes — dose per current USPSTF/ACOG statement, starting GA / no — rationale]
 [ ] Early GDM screen: [yes / no]
 [ ] Cervical length surveillance: [yes — start GA / no]
 [ ] Antepartum anticoagulation: [yes — agent / no / specialist-dependent]
@@ -236,7 +254,7 @@ SAFETY CHECKLIST
 
 **Multiple gestation:** Chorionicity determines surveillance (monochorionic-diamniotic requires 16w-onset q2w ultrasound for TTTS). Assign level of care accordingly.
 
-**Placenta accreta spectrum risk (prior CS + placenta previa):** Refer to Level IV center with accreta team; early MFM consultation.
+**Placenta accreta spectrum risk (prior CS + placenta previa):** Refer to a higher-level center with an accreta team, at the level of maternal care named by current guidance [VERIFY: current ACOG/SMFM placenta accreta spectrum consensus and AAP/ACOG Levels of Maternal Care]; early MFM consultation.
 
 **Pre-existing diabetes (T1 / T2):** Target A1c goals, nephropathy/retinopathy screen, aspirin prophylaxis eligibility, early delivery planning.
 
@@ -247,6 +265,23 @@ SAFETY CHECKLIST
 **Psychiatric conditions:** Medication continuation vs. adjustment is usually best made with psychiatric input — untreated maternal depression / anxiety carries its own risk.
 
 **Prior stillbirth / loss:** Higher-intensity surveillance and mental health support; plan for delivery earlier in term.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "Aspirin eligibility reviewed" without naming each high- and moderate-risk factor found in the inputs; the count, not the checkbox, decides eligibility.
+- Take the aspirin dose, start window or factor list from memory — cite the current USPSTF/ACOG statement `[VERIFY: current guideline]`.
+- Date the pregnancy by LMP when a first-trimester ultrasound was supplied without applying the redating rule `[VERIFY: ACOG dating criteria]`.
+- Write a surveillance plan for twins while chorionicity is unknown — mark the plan provisional and make chorionicity the first open item.
+- Treat race or ethnicity as a biological cause of risk; it marks exposure to structural factors and must not replace a measured clinical finding.
+
+✅ **DO:**
+- Recompute the gestational age at every surveillance and delivery anchor from the confirmed EDD, and check the dates agree across SURVEILLANCE PLAN and DELIVERY PARAMETERS.
+- Recompute BMI from the supplied weight and height before using it as a GDM or preeclampsia factor.
+- Check that the overall risk tier names the specific inventory items driving it, and that the level of care matches those items' capability needs.
+- State age-specific cut-offs (adolescent, advanced maternal age) with their source, and MFM or specialist consult thresholds as local policy `[VERIFY: local policy]`.
 
 ---
 

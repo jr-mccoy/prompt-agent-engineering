@@ -17,11 +17,11 @@ techniques:
   - DS-06
 difficulty: intermediate
 related_prompts:
-  - prompts/pacu_orientation_curriculum_designer.md
-  - prompts/pacu_orientation_skill_acquisition_timeline.md
-  - prompts/pacu_preceptor_orientation_pacing_diagnostic.md
-  - prompts/pacu_preceptor_debrief.md
-  - prompts/pacu_orientee_evaluation_meta_prompt.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_orientation_pacing_diagnostic.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
 ---

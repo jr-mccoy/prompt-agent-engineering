@@ -18,10 +18,10 @@ techniques:
   - ED-02
 difficulty: intermediate
 related_prompts:
-  - prompts/pacu_orientation_curriculum_designer.md
-  - prompts/pacu_orientation_skill_acquisition_timeline.md
-  - prompts/pacu_preceptor_orientation_pacing_diagnostic.md
-  - prompts/pacu_orientation_surgical_mix_mapper.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_orientation_pacing_diagnostic.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_surgical_mix_mapper.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)

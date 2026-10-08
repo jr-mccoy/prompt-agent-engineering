@@ -16,7 +16,7 @@ tags:
   - metadata
   - titles
   - discovery
-updated: "2026-05-27"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/social-media/social_thumbnail_cover_brief.md
   - domain-professional-writing/content-production/content_long_form_script.md
@@ -96,6 +96,27 @@ Comma-separated, ordered by relevance.
 
 ### Top 2 to Test
 Ranked, one-line rationale each.
+
+---
+
+## False-Positive Prevention
+
+1. **Limits come from the input, not from memory.** Use the title/description limit the user
+   supplied; if none was given, write `[VERIFY: current platform limit]` rather than quoting a
+   figure. Search results also truncate by display width, so a title under the character cap can
+   still cut off before its keyword.
+2. **"Truthful to content? Yes" is a claim, not a tick.** A numbered title ("7 ways…") needs seven
+   in the content; a superlative ("the fastest…") needs a comparison the content actually makes;
+   a curiosity title needs the reveal to be in the piece, not implied by it.
+3. **Search-volume figures are not in the input.** Do not annotate titles, keywords or tags with
+   monthly searches, difficulty scores, or "high-volume" labels unless the user supplied keyword
+   tool data. Tag order is a relevance judgment; say so.
+4. **Stuffing hides in variants.** "budget travel, budget travel tips, travel on a budget, cheap
+   budget travel" is one term four times; count stems, not exact strings.
+5. **Verify before handing over:** recount the Chars column for every title and the description
+   (spaces included) against the supplied limit; count occurrences of the primary keyword stem
+   across description and tags; for each title, quote the line of `<content_summary>` that pays it
+   off — a title with no quotable line comes out of the table.
 
 ---
 

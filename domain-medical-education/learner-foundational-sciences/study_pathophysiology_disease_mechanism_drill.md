@@ -22,7 +22,7 @@ tags:
   - drill
   - reasoning
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_physiology_pathway_walkthrough.md
   - domain-medical-education/learner-foundational-sciences/study_biochem_pathway_clinical_correlation.md
@@ -118,6 +118,16 @@ Highest-yield restudy: [the specific molecule / step the learner missed]
 | `adversarial_count` | 1–3 adversarial probes |
 | `require_therapeutic_mapping` | If `true` (default), every major therapy must be mapped or chain is incomplete |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| CHAIN STATUS "Complete" when the link count is below the `depth` setting (subspecialty ≥ 10) | Count the numbered links the learner produced; "Complete" requires that count to meet `depth` and every traced finding to cite a link number |
+| Clinical-finding traces written by the tutor and presented as learner-built | Mark each trace learner-produced or tutor-supplied; tutor-supplied traces count as chain gaps for scoring |
+| Supportive or replacement therapies counted as "mapped" through a loose phrase ("downstream rescue") | A mapping cites a step number; therapies that replace a consumed product without interrupting a step are listed as supportive, not mapped |
+| Accepting a named mediator without checking the direction of its effect (activates vs. inhibits, consumes vs. lyses) | Grade the verb as well as the noun: molecule, cell of action, and direction must all be right for `correct` |
+| Regimen-level answers (induction combinations, chemotherapy backbones) graded against what the tutor remembers | Keep therapeutic mapping at the mechanism level; tag any named regimen `[VERIFY: current NCCN / ELN guideline]` |
+
 ## Verification Checklist
 
 - [ ] Trigger is identified at molecule / mutation / exposure / organism level — not "the disease starts."
@@ -175,10 +185,10 @@ Learner picks: B.   Grade: correct — A is the classic miss on boards.
 ATRA → interrupts step 1 by displacing corepressors, restoring differentiation.
 Arsenic trioxide → degrades PML-RARα directly, triggers apoptosis.
 Cryoprecipitate / fibrinogen replacement → corrects hyperfibrinolysis-driven consumption (no chain step alone, downstream rescue).
-Idarubicin/cytarabine → conventional cytotoxic, mapped to bulk blast reduction.
+Cytotoxic chemotherapy (whether and which agent depends on risk group) → conventional cytotoxic, mapped to bulk blast reduction [VERIFY: current NCCN / ELN APL guideline].
 Treatment that does not map cleanly: dexamethasone — used for *differentiation syndrome*, which is itself a chain consequence of step 1 reversal. Add step 1a: differentiation releases inflammatory cytokines → capillary leak.
 
 >>> CHAIN STATUS
-Complete after adding step 1a (differentiation syndrome).
+Multiple gaps — 4 learner-built links (trigger, links 1–3) plus tutor-supplied step 1a, below the `subspecialty` minimum of ≥ 10 links; continue drilling (e.g., the DIC and fibrinolysis cascades by named factor) before marking Complete.
 Highest-yield restudy: PML-RARα → corepressor recruitment → maturation arrest mechanism.
 ```

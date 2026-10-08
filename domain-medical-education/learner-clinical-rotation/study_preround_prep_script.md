@@ -23,7 +23,7 @@ tags:
   - presentation-prep
   - workflow
   - inpatient
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
   - domain-medical-education/learner-clinical-rotation/study_soap_note_rehearsal_with_feedback.md
@@ -133,6 +133,16 @@ Next skill to drill: [specify]
 | `learner_level` | MS3 gets explicit data-source prompts (where to find I&O); intern gets the synthesis step timed; resident gets efficiency benchmarks |
 | `problem_count` | 1–3 active problems for drill; 4+ for advanced efficiency session |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A "Data gather: N/6 complete" total that counts `partial` steps as complete | Recompute the total from the six step grades — only `complete` counts — and list which steps were partial or missed beside the number |
+| Filling the "Finding" lines with chart data the learner never retrieved, so the tally reads as if they found it | Keep "Finding (chart)" separate from "Learner said"; a step is `complete` only when the learner's own words contain the finding |
+| Flagging AKI, hypoxemia, or tachycardia from a single number without the definition's time window or the patient's own baseline and target | Recompute the delta and ratio against the stated baseline and window [VERIFY: KDIGO criteria], and judge SpO₂ against the patient's target range (e.g., COPD) before calling it a change |
+| Asserting a population ranking ("the #1 pre-rounding error at intern level") to justify the scorecard pitfall | Name the pitfall as this learner's observed miss on this run; any claim about how common it is gets a source or is dropped |
+| Auto-generated overnight events whose interventions contradict the patient's own targets or problem list | Check each injected event against the admission diagnosis and stated targets before the drill starts, so the learner is graded on the data, not on a scenario artifact |
+
 ## Verification Checklist
 
 - [ ] Vital sign trend (not just current value) is named in the output.
@@ -148,7 +158,7 @@ Next skill to drill: [specify]
 
 **Input:** patient_scenario = `62F with COPD exacerbation, HD3, on IV steroids and q4h albuterol nebulizers. Active problems: COPD exacerbation, HFpEF, HTN`, overnight_events = `[auto-generate]`, learner_level = `intern`, service = `medicine`, time_available = `15 min`.
 
-**Auto-generated overnight events:** Patient called nursing at 2 AM for dyspnea. SpO₂ dropped to 88% on 2L NC → up-titrated to 4L. HR ranged 94–112 (baseline 78–84). AM creatinine 1.6 (baseline 1.1 yesterday). CXR ordered by overnight team — prelim read pending.
+**Auto-generated overnight events:** Patient called nursing at 2 AM for dyspnea. SpO₂ dropped to 85% on 2L NC → up-titrated to 4L. HR ranged 94–112 (baseline 78–84). AM creatinine 1.6 (baseline 1.1 yesterday). CXR ordered by overnight team — prelim read pending.
 
 **Output (excerpt):**
 
@@ -159,7 +169,7 @@ Service: medicine   Learner: intern   Time budget: 15 min
 >>> DATA-GATHER TALLY
 
 Step A — Vitals:   partial
-  Finding: SpO₂ nadir 88% at 2 AM, HR 94–112 trending up from baseline 78–84
+  Finding: SpO₂ nadir 85% at 2 AM, HR 94–112 trending up from baseline 78–84
   Learner said: "Vitals weren't great overnight, O2 went down."
   Grade note: Named the event but missed the HR trend. Trend direction is the signal — "went down" is not enough.
 
@@ -169,7 +179,7 @@ Step C — Labs (delta):   complete
 
 Step D — Imaging:   missed
   Finding: CXR ordered, prelim read pending — learner did not check
-  Grade note: Always check for pending reads from the overnight team. Missing this is the #1 prerounding error at intern level.
+  Grade note: Always check for pending reads from the overnight team. Missing it was this learner's observed miss on this run.
 
 >>> OVERNIGHT SUMMARY PARAGRAPH
 
@@ -184,8 +194,8 @@ Problem 2: HFpEF — Cr ↑0.5 in 24h, net I&O not reported → obtain I&O befor
 Problem 3: HTN — no overnight change → continue current regimen
 
 >>> SCORECARD
-Data gather: 4/6 steps complete (missed imaging check, incomplete I&O)
+Data gather: 3/6 steps complete (A partial — HR trend missed; B partial — I&O incomplete; D missed — pending CXR read)
 Summary paragraph: partial
-Most common pre-rounding error at intern level: pending imaging not flagged
+Pre-rounding error observed this run: pending imaging not flagged
 Next skill to drill: systematic pending-results sweep before leaving the workroom
 ```

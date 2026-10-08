@@ -19,10 +19,10 @@ techniques:
   - DS-06
 difficulty: intermediate
 related_prompts:
-  - prompts/pacu_orientee_weekly_learning_plan.md
-  - prompts/pacu_topic_primer.md
-  - prompts/pacu_complication_deep_dive.md
-  - prompts/pacu_orientee_question_log_builder.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_topic_primer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_question_log_builder.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)

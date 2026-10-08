@@ -16,16 +16,27 @@ tags:
   - organization
   - cognitive-load
   - pocket-card
-updated: "2026-04-16"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
-  - domain-healthcare-clinical/prompts/nursing_pacu_prioritization_rule.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_pacu_prioritization_rule.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_handoff_script.md
-  - domain-productivity/deep-work/deepwork_end_of_block_context_capture.md
 ---
 
 # PACU Phase 1 Shift Structure Card
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Give a PACU orientee a default "how I run a shift" template that she carries until the flow becomes automatic. The card imposes organizational structure externally so it doesn't have to be held in working memory — freeing cognitive bandwidth for clinical thinking. It is not a protocol or a policy; it is a personal scaffold for how to move through a shift without losing track of where you are.
 
@@ -249,6 +260,22 @@ END OF SHIFT
 **Multiple patients simultaneously:** The card assumes one patient at a time for simplicity. Once she's managing two bays, the prioritization rule card becomes the primary tool; this one shifts to background.
 
 **Call shifts and off-hours:** Add a "call-shift addendum" line if applicable: who is the backup anesthesia provider, where are emergency supplies, what's the rapid-response process after hours.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Compress "Vitals q5 min (or per your unit's standard)" into a bare "Vitals q5 min" on the pocket card — a dropped hedge turns a default into a stated standard, which `../perianesthesia/SAFETY_PREAMBLE.md` routes to `per facility protocol`.
+- Treat the handoff "Confirm:" line as complete when it has no slot for a regional block or catheter, reversal-agent timing, intraoperative fluids and blood loss, or results still pending.
+- State a passing Aldrete or equivalent score on the discharge line; the line names the tool, and the value is `per facility protocol`.
+- Fill the unit-specific inputs (EMR fields, backup coverage, call-shift contacts) with plausible defaults the user never gave.
+
+✅ **DO:**
+- Line up each pocket-card line against its framework phase and confirm every hedge, role and "per unit" qualifier survived the compression.
+- Count the handoff items on the card against the unit's own handoff tool when the user supplies it; when not supplied, leave a `[unit handoff tool]` placeholder instead of inventing a list.
+- Check that every action on the card is within PACU RN scope as written, and phrase anything that needs an order as `per provider order`.
+- Confirm each "Don't skip" anchor targets the phase's highest-harm drop (airway, reassessment) rather than whichever task is easiest to check off.
 
 ---
 

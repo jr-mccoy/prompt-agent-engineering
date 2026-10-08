@@ -2,12 +2,21 @@
 title: "Engineering Architecture Brief Visualization Prompt"
 category: engineering
 description: "Generate a structured, no-UI visualization prompt optimized for engineering decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Engineering Architecture Brief Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept components in ZONE 2 the system does not have — image models add a load balancer, cache, or message queue because architecture diagrams usually include one.
+- Let data-flow arrows point the wrong way or join services that never talk; a two-headed arrow on a one-way integration passes a skim.
+- Render SLO, latency, or throughput figures in ZONE 3 that the non-functional requirements did not state.
+- Use vendor logos or product names (a specific broker's logo for "event bus") the intake never named.
+
+✅ **DO:**
+- Enumerate every component and every directed edge (source → target, protocol) in the prompt; after rendering, count boxes and arrows and compare them to those lists — counts and directions must match exactly.
+- Mark services outside the system boundary as external in both intake and image, and check the boundary line encloses only in-scope components.
+- Attach each ZONE 4 failure mode to a named component on the map; a failure mode attached to nothing is fabricated.

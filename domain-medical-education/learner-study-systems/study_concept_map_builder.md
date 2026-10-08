@@ -25,7 +25,7 @@ tags:
   - integration
   - synthesis
   - study-system
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_lecture_slide_to_study_guide.md
   - domain-medical-education/learner-study-systems/study_retrieval_practice_drill_designer.md
@@ -162,6 +162,16 @@ Q3 (cross-link): Why does treating [X] also affect [Y]? — Answer: [cross-link 
 | `compare_to_existing_map` | If learner pastes their own map, render a diff (missing nodes, weak verbs, missed cross-links) |
 | `embed_in_anki` | Generate Anki cards keyed to cross-link edges (one card per cross-link) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Filling the Integrity audit's `Nodes total` and `Edges total` from the `target_depth` estimate | Count outline IDs and edge-list rows directly; any ID used only in the pathophys chain or cross-links (e.g., a lettered sub-node) must be added to the outline or removed |
+| Counting a link between two children of the same parent toward `cross_link_target_count` | Compare the ID prefixes of both endpoints: a shared parent prefix (e.g., n.3 ↔ n.4 under the same n) is a sibling link and does not count |
+| Reporting the chain as "4 hops" by counting nodes | Count the arrows: four hops need four labeled edges and five nodes |
+| Writing `Vague-verb edges: none` because no banned word appears, while off-vocabulary verbs (any verb not in the locked list) and free-text endpoints slipped in | Test each edge's verb for membership in the locked 8 (or `relationship_vocab`) and each endpoint for being a numbered node |
+| A fluent `(why: ...)` note on a cross-link that states the wrong discriminating value (the urine sodium direction in SIADH, for example) | Check each discriminator against the lab pattern it claims; any threshold number carries a source type or `[VERIFY: source]` |
+
 ## Verification Checklist
 
 - [ ] Root node has a one-sentence scope.
@@ -200,6 +210,7 @@ Node 0: Hyponatremia — serum Na < 135 mEq/L; workup driven by volume status + 
       - 2.1.2 Extra-renal loss (GI, skin)
     - 2.2 Euvolemic
       - 2.2.1 SIADH
+        - 2.2.1.1 Free water retention (ADH-driven)
       - 2.2.2 Hypothyroidism
       - 2.2.3 Adrenal insufficiency
     - 2.3 Hypervolemic
@@ -210,6 +221,7 @@ Node 0: Hyponatremia — serum Na < 135 mEq/L; workup driven by volume status + 
     - 3.1 By chronicity (acute < 48 h vs chronic)
     - 3.2 By severity (asymptomatic, mild sx, severe sx)
     - 3.3 Correction rate (≤ 8 mEq/24 h chronic)
+      - 3.3.1 Over-rapid correction
     - 3.4 ODS risk
   - 4 Diagnostics
     - 4.1 Serum osm
@@ -222,20 +234,19 @@ Node 0: Hyponatremia — serum Na < 135 mEq/L; workup driven by volume status + 
 2.1 —is treated with→ "isotonic saline"
 2.2.1 —is a type of→ 2.2
 2.3.1 —is treated with→ "fluid + Na restriction + diuresis"
-3.3 —prevents→ 3.4
+3.3.1 —causes→ 3.4
 ...
 
->>> CROSS-LINKS (3+)
-2.1.1 —shares mechanism with→ 2.2.1 (both can present with low urine Na; diuretics complicate)
+>>> CROSS-LINKS (3)
+2.1.1 —discriminates from→ 2.2.1 (both can present with high urine Na, so UNa alone does not separate them; volume status does — diuretics complicate)
 2.3.1 —discriminates from→ 2.2.1 (CHF: high BNP, edema; SIADH: euvolemic, normal BNP)
-4.3 —discriminates between→ 2.1 vs 2.2 (UNa < 20 → extra-renal vs UNa > 40 → SIADH/renal)
-3.3 —cross-links to→ 3.4 (rapid correction → ODS)
+2.1.2 —is diagnosed by→ 4.3 (UNa < 20 → extra-renal vs UNa > 40 → SIADH/renal)
 
 >>> PATHOPHYS CHAIN (≥ 4 hops)
-2.2.1 (SIADH) → causes → 2.2.1.a (free water retention) → causes → 0 (dilutional ↓Na) → corrected too fast → 3.4 (ODS)
+2.2.1 (SIADH) → causes → 2.2.1.1 (free water retention) → causes → 0 (dilutional ↓Na) → precedes → 3.3.1 (over-rapid correction) → causes → 3.4 (ODS)
 
 >>> INTEGRITY AUDIT
-- Nodes: 23   Edges: 28   Cross-links: 4 (target 3 — met)
+- Nodes: 29   Edges: 28   Cross-links: 3 (target 3 — met)
 - Orphan nodes: none
 - Vague-verb edges: none
 - Pathophys chain: 4 hops ✓
@@ -243,5 +254,5 @@ Node 0: Hyponatremia — serum Na < 135 mEq/L; workup driven by volume status + 
 >>> TEST-THE-MAP QUESTIONS
 Q1 (pathophys chain): How does SIADH cause ODS? → SIADH → free H2O retention → dilutional ↓Na → over-rapid correction → ODS.
 Q2 (discriminator): How distinguish CHF-hyponatremia from SIADH? → Volume status (hypervolemic vs euvolemic), BNP, UNa pattern; cross-link 2.3.1 ↔ 2.2.1.
-Q3 (cross-link): Why does urine Na pattern matter for discriminating 2.1 vs 2.2? → Cross-link 4.3 → 2.1 vs 2.2: low UNa = extra-renal hypovolemic; high UNa = SIADH or renal loss.
+Q3 (cross-link): Why does urine Na pattern matter for discriminating 2.1 vs 2.2? → Cross-link 2.1.2 → 4.3: low UNa = extra-renal hypovolemic; high UNa = SIADH or renal loss.
 ```

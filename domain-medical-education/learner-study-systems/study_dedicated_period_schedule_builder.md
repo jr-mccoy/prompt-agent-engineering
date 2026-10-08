@@ -27,7 +27,7 @@ tags:
   - nclex
   - boards
   - exam-prep
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_spaced_repetition_schedule_designer.md
   - domain-medical-education/learner-study-systems/study_retrieval_practice_drill_designer.md
@@ -145,7 +145,7 @@ Week 6 (Phase 3 + taper): see 7-day taper
 |---|---|---|---|---|
 | 1 | end W1 | NBME 30 | baseline + 0–5 | if + 5 maintain plan; if 0 review block strategy |
 | 2 | mid W3 | UWSA 1 | baseline + 5–10 | if flat reassess weak areas |
-| 3 | mid W4 | NBME free 150 | target − 10 | adjust phase 3 emphasis |
+| 3 | mid W4 | NBME self-assessment (new form) | target − 10 | adjust phase 3 emphasis |
 | 4 | D-7 | NBME free 150 | target − 5 to + 5 | proceed to taper |
 
 >>> SCORE TRAJECTORY
@@ -188,6 +188,16 @@ Test day: minimal
 | `include_call_compression` | If learner has a call week, output integrates a lighter call-week template |
 | `force_minimum_sleep` | Default 7 h; cannot be overridden below 6.5 h |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Accepting a three-digit `target_score` for an exam that now reports pass/fail (USMLE Step 1, COMLEX Level 1) | Name the reporting change and rebuild the goal around practice-form pass likelihood; mark how practice forms report scores now as `[VERIFY: current NBME / NBOME score reporting]` |
+| Converting budget hours into question counts with a per-question time that doesn't reproduce the hours | Recompute: questions × minutes per question ÷ 60 must equal the Qbank allocation, and review time per miss must fit inside the review-of-misses hours |
+| Labelling the daily template "10 h study" when the study blocks add up to less | Add the block minutes (breaks and meals excluded) and compare the sum with `daily_hours_available`; resize blocks or relabel |
+| Week-by-week mocks that differ from the Mock cadence table, or two Phase 2 mocks less than 7 days apart | Check that every mock in Week-by-week appears in the table with a date, and that adjacent Phase 2 dates are 7–10 days apart |
+| Naming practice-form products or form numbers from memory | Use the form type (NBME self-assessment, official free practice set, qbank self-assessment) unless the learner supplied the name; tag specific form names `[VERIFY: current offerings]` |
+
 ## Verification Checklist
 
 - [ ] Sanity check fires before any schedule is built; fails are named explicitly.
@@ -210,16 +220,17 @@ Test day: minimal
 
 ```
 DEDICATED SCHEDULE — USMLE Step 1
-Weeks: 6   Daily: 10 h   Target: 240   Baseline: 218   Qbank: UWorld
+Weeks: 6   Daily: 10 h   Target: 240 (practice-form; exam is pass/fail)   Baseline: 218   Qbank: UWorld
 Weak: biochem, pharm-cardio, path-renal   Commit: wedding D22   Sleep: 7 h
 
 >>> SANITY CHECK
-OK. 6 weeks × 6 days × 10 h × 0.85 = 306 h. Realistic delta target 218 → 240 (+22) in 6 weeks is on the upper end but feasible at this hour count.
+OK on hours: 6 weeks × 6 days × 10 h × 0.85 = 306 h.
+FLAG — score reporting: USMLE Step 1 has reported pass/fail only since 2022, so there is no 240 exam score to target. The 218 → 240 figures below are read as practice-form scores, and the exam goal is a pass with margin on practice forms [VERIFY: current NBME / NBOME score reporting — practice-form scale and passing standard]. A practice-form delta of 218 → 240 (+22) in 6 weeks is on the upper end but feasible at this hour count.
 Wedding D22 → that day = 0 study, surrounding 2 days at 50%. Adjusted: ~290 h effective.
 
 >>> BUDGET (290 effective h)
-Qbank: 116 h (≈ 2,640 UWorld Qs at 90 sec each + reviewing 2,640 ≈ 5 min/Q means review dominates)
-Review of misses: 73 h
+Qbank: 116 h (≈ 2,640 UWorld Qs × 90 sec = 66 h answering; 116 h allows ≈ 2.6 min per Q including explanation reading)
+Review of misses: 73 h (at ≈ 5 min per miss this covers ≈ 875 misses, ≈ 33% of 2,640 — reviewing every Q at 5 min would need 220 h)
 Weak-area targeted: 58 h
 Mock exams: 29 h
 Buffer: 14 h
@@ -227,12 +238,12 @@ Buffer: 14 h
 >>> WEEK-BY-WEEK
 W1 (Phase 1, foundation): biochem subject pass + 40 UW Qs/day tutor. End W1: NBME 28 baseline (already done).
 W2 (Phase 1→2): pharm-cardio + path-renal pass. 40 Qs/day, switching to timed mid-week. Mock: NBME 29 end W2.
-W3 (Phase 2): mixed UWorld 40 timed + 40 tutor daily. Targeted micro / immuno review afternoons. Mid-W3 mock: UWSA 1.
-W4 (Phase 2): mixed 80 Qs/d (2 timed blocks). Weak-area sweeps Sun. WEDDING D22 — 0 study; D21/D23 at 50%. End-W4 mock: NBME free 150.
-W5 (Phase 3): random mixed-timed blocks. 2 NBME forms across the week.
+W3 (Phase 2): mixed UWorld 40 timed + 40 tutor daily. Targeted micro / immuno review afternoons. End-W3 mock: UWSA 1.
+W4 (Phase 2): mixed 80 Qs/d (2 timed blocks). Weak-area sweeps Sun. WEDDING D22 — 0 study; D21/D23 at 50%. End-W4 mock: NBME self-assessment (new form).
+W5 (Phase 3): random mixed-timed blocks. No additional mock — next is D-7.
 W6 (Phase 3 + taper): NBME free 150 D-7. Taper begins. Exam end W6.
 
->>> DAILY TEMPLATE (10 h study)
+>>> DAILY TEMPLATE (≈ 10 h study: 70 + 90 + 90 + 120 + 90 + 150 = 610 min)
 07:30 wake + 30 min cardio (3×/wk)
 08:30 Block 1 — UW 40 Q timed (70 min)
 10:00 Review of misses (90 min)
@@ -241,20 +252,22 @@ W6 (Phase 3 + taper): NBME free 150 D-7. Taper begins. Exam end W6.
 13:30 lunch + 20-min nap (60)
 14:30 Block 3 — Anki + weak-area concept (120 min)
 16:30 break (30)
-17:00 Block 4 — light review (60–90)
-18:30 hard stop. Dinner, decompress, sleep by 23:30 for 7 h.
+17:00 Block 4 — light review (90)
+18:30 dinner + decompress (60)
+19:30 Block 5 — weak-area review / Anki catch-up (150 min)
+22:00 hard stop. Wind down, sleep by 23:30 for 7 h.
 
 >>> MOCK CADENCE
 | Mock | When | Form | Expect | Rule |
 |---|---|---|---|---|
 | 1 | (already done) | NBME 28 | 218 | baseline |
 | 2 | end W2 | NBME 29 | 222–227 | if < 222 reassess Phase 1 coverage |
-| 3 | mid W3 | UWSA 1 | 225–235 | if < 225 cut new-content; double review |
-| 4 | end W4 | NBME free 150 | 230–238 | adjust phase 3 emphasis |
-| 5 | D-7 | NBME free 150 | 235–243 | proceed to taper if ≥ 235 |
+| 3 | end W3 | UWSA 1 | 225–235 | if < 225 cut new-content; double review |
+| 4 | end W4 | NBME self-assessment (new form) [VERIFY: current offerings] | 230–238 | adjust phase 3 emphasis |
+| 5 | D-7 | NBME free 150 [VERIFY: current offerings] | 235–243 | proceed to taper if ≥ 235 |
 
 >>> SCORE TRAJECTORY
-218 → 224 (end W2) → 230 (end W3) → 235 (end W4) → 240 (D-7) → 240 (exam).
+218 → 224 (end W2) → 230 (end W3) → 235 (end W4) → 240 (D-7) → Pass (exam; Step 1 is pass/fail).
 
 >>> ABORTS
 A–E as above; if Mock 3 < 225 → cut new-content week, shift to all-review + NBME-form drill.

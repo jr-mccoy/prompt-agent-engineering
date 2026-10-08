@@ -27,8 +27,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_study_plan_designer.md
-  - ../exam-prep/learner_high_yield_topic_compressor.md
+  - domain-medical-education/learner-study-systems/study_plan_designer.md
+  - domain-medical-education/learner-boards/boards_high_yield_topic_compressor.md
 ---
 
 # Spaced Repetition Deck Generator for Health-Professions Learners

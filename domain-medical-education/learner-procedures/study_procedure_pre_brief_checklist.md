@@ -23,7 +23,7 @@ tags:
   - patient-safety
   - procedure-prep
   - universal-protocol
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-procedures/study_central_line_lp_checklist_drill.md
   - domain-medical-education/learner-procedures/study_intubation_sequence_drill.md
@@ -91,7 +91,7 @@ Learner: [...]   Setting: [...]
 4   | Site / side / level | complete | "Right IJ confirmed by ultrasound"       | —
 5   | Equipment          | partial  | "We have the kit"                         | Individual items not named; suction status not confirmed
 6   | Sterile field      | complete | "I am sterile operator; nurse is non-sterile assistant" | —
-7   | Bailout plan       | fail     | [not stated]                              | No abort trigger and no escalation contact named
+7   | Bailout plan       | missing  | [not stated]                              | No abort trigger and no escalation contact named
 
 >>> TIMEOUT SIMULATION
 
@@ -134,11 +134,21 @@ Restudy target: [named precisely]
 | `setting = OR` | Three-phase timeout (before anesthesia, before incision, before leaving OR) replaces single brief |
 | `bailout_drill` | Present a scenario mid-procedure where the procedure must be aborted — learner states the abort call and escalation step |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Presenting all 7 elements as Joint Commission Universal Protocol requirements | Say which elements belong to the Universal Protocol (pre-procedure verification, site marking, time-out) and which are teaching additions such as the bailout plan; mark both `[VERIFY: current Joint Commission UP and institutional policy]` |
+| Mixing grade labels (`fail` beside `complete / partial / missing`) so the N/7 tally cannot be reproduced | Use only the three method labels, then recompute `Pre-brief: N/7 elements complete` by counting `complete` rows |
+| Crediting element 4 (site / side / level) because the scenario mentions imaging, though the learner never stated the site | Score element evidence from the learner's words only; scenario facts the learner did not say are `missing` |
+| Auto-generated coagulation values presented as a safe-to-proceed threshold, then used to grade the learner | Treat thresholds (platelets, INR) as procedure- and guideline-specific; tag `[VERIFY: current SIR periprocedural guidance / local policy]` and do not grade the learner on a number you invented |
+| A corrected brief whose bailout names an escalation service that does not perform that rescue in the stated setting | Check that the backup named in the model brief actually does the fallback procedure in that setting (e.g., who performs image-guided LP locally); otherwise write `[VERIFY: local service]` |
+
 ## Verification Checklist
 
 - [ ] All 7 elements are scored; none are skipped even if the learner's brief is mostly complete.
 - [ ] Consent is always checked — "assumed" is never acceptable for an elective procedure.
-- [ ] Bailout plan is mandatory for every procedure; no bailout = automatic fail on element 7.
+- [ ] Bailout plan is mandatory for every procedure; no bailout = element 7 scored `missing`, always.
 - [ ] Equipment check is procedure-specific — generic "we have the kit" is always partial.
 - [ ] Timeout simulation is run separately from the full brief and scored on all 5 items.
 - [ ] The most dangerous gap is named — not "incomplete brief" but "no abort criterion means the team will not know when to stop."
@@ -146,17 +156,17 @@ Restudy target: [named precisely]
 
 ## Worked Example (compact)
 
-**Procedure:** Lumbar puncture. **Scenario (auto-generated):** 28F with severe headache, fever, and neck stiffness. Platelets 142, INR 1.1. CT head negative. Neurology on board.
+**Procedure:** Lumbar puncture. **Scenario (auto-generated):** 28F (Jane Smith, DOB 03/12/1998) with severe headache, fever, and neck stiffness. Platelets 142, INR 1.1. CT head negative. Neurology on board.
 
 **Learner brief:** "Okay we're doing an LP on this patient. She agreed to it. We have the tray. I'll be doing the procedure."
 
 **Audit:**
-- Element 1 (identity): fail — no two-identifier confirmation
+- Element 1 (identity): missing — no two-identifier confirmation
 - Element 2 (indication): partial — "doing an LP" without stating indication or urgency (emergent for suspected meningitis)
 - Element 3 (consent): partial — "she agreed" without confirming chart documentation or risks discussed
-- Element 4 (site/level): fail — not mentioned
+- Element 4 (site/level): missing — not mentioned
 - Element 5 (equipment): partial — "tray" mentioned; manometer, positioning, sterile drape not named
 - Element 6 (sterile field): partial — "I'll be doing" without naming assistant role
-- Element 7 (bailout): fail — not stated
+- Element 7 (bailout): missing — not stated
 
-**Corrected brief (verbatim model):** "Patient is Jane Smith, DOB 03/12/1997 — confirmed. Indication: LP for suspected bacterial meningitis, emergent. Consent documented; risks of headache, bleeding, and infection discussed. Site: interspace L3-L4, patient in lateral decubitus. Equipment: LP tray with manometer, sterile drape — all present and checked. I am the sterile operator; Sarah is non-sterile assistant and documenter. Bailout: if three attempts are unsuccessful, stop and call neurology for image-guided LP. Allergies: NKDA. Ready to proceed."
+**Corrected brief (verbatim model):** "Patient is Jane Smith, DOB 03/12/1998 — confirmed. Indication: LP for suspected bacterial meningitis, emergent. Consent documented; risks of headache, bleeding, and infection discussed. Site: interspace L3-L4, patient in lateral decubitus. Equipment: LP tray with manometer, sterile drape — all present and checked. I am the sterile operator; Sarah is non-sterile assistant and documenter. Bailout: if three attempts are unsuccessful, stop and request image-guided LP from the service that performs it here [VERIFY: local service — commonly radiology / interventional radiology]. Allergies: NKDA. Ready to proceed."

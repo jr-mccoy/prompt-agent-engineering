@@ -1,4 +1,36 @@
+---
+title: "Psychiatric Assessment Template"
+category: healthcare-clinical/templates
+description: "Fill-in template for structured psychiatric assessments following the standard psychiatric evaluation format, with integrated suicide, violence and capacity assessment, mental status examination, and disposition planning."
+techniques:
+  - ST-03
+  - OC-03
+  - RT-02
+  - DS-06
+  - QA-04
+difficulty: advanced
+tags:
+  - psychiatry
+  - mental-status-exam
+  - risk-assessment
+  - mental-health
+  - clinical-documentation
+updated: "2026-10-06"
+---
+
 # Psychiatric Assessment Template
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > Copy this template for creating structured psychiatric assessments.
 > Based on the standard psychiatric evaluation format with risk assessment integration.
@@ -187,7 +219,7 @@
 
 **Homicidal Ideation:** [ ] Denied [ ] Present — Target: [X] Plan: [X]
 **Risk Level:** [ ] High [ ] Moderate [ ] Low
-**Duty to Warn Triggered:** [ ] No [ ] Yes — Action: [X]
+**Duty to Warn Triggered** (duty to warn/protect is jurisdiction-specific — mandatory, permissive or absent depending on where you practise; apply your local law and institutional policy)**:** [ ] No [ ] Yes — Action: [X]
 
 ---
 
@@ -252,7 +284,7 @@
 
 **Follow-Up:**
 - [ ] Outpatient appointment: [Provider, Date]
-- [ ] Crisis resources provided: 988, Crisis Text Line
+- [ ] Crisis resources provided: [local crisis line(s) — e.g., 988 and Crisis Text Line in the US; use local services elsewhere]
 - [ ] Reassess at: [Time/trigger]
 
 ---
@@ -273,3 +305,22 @@
 - If patient lacks capacity, document the specific criteria not met
 - Cultural considerations should inform the assessment approach
 - This template complements `medicine_psychiatric_assessment_support.md`
+
+---
+
+## False-Positive Prevention
+
+When filling this template:
+
+❌ **DON'T:**
+- Fill Mental Status Examination rows with normal-sounding defaults ("Linear", "Good / Good", "AH: denies") for domains that were not observed or asked; an unexamined domain is "not assessed", not normal.
+- Tick a Risk Level whose Rationale does not name the checked risk and protective factors that drove it; "Low" beside a checked "Prior attempt" and "Access to lethal means" with no reasoning reads as complete and is not.
+- Mark Access to Firearms "No" when nobody asked, or when the only informant is the patient during an involuntary evaluation; use "Unknown" and record who answered.
+- Fill the Capacity "Evidence" column by restating the criterion ("understands") instead of what the patient said or did, or carry a determination made for another decision onto this one.
+- Enter Medications plan doses from typical ranges; they come from the prescriber's order, with interactions, QTc and pregnancy status checked separately.
+
+✅ **DO:**
+- Cross-check the MSE Thought Content row (SI/HI) against the Current Ideation boxes and the Homicidal Ideation line; all three must agree and be supported by quotes in the HPI.
+- Trace each Suicide Attempt History and Hospitalizations row to a source (patient, a named informant, or a record) listed under Informants.
+- Confirm "Duty to Warn Triggered" against your jurisdiction's statute and institutional policy before ticking either box.
+- Count before signing: every ticked Safety Measure has a matching active order, and the outpatient appointment has a provider and a date rather than "TBD".

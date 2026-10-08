@@ -14,7 +14,7 @@ tags:
   - branding
   - batch-generation
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
   - domain-image-generation/branding/visual-identity
@@ -115,6 +115,21 @@ client.images.generate(
 1. "Variation 2 was closest — push it more [minimal / decorative / geometric]. Drop the [specific element]."
 2. "Use a [serif / sans / display] wordmark instead of the current face."
 3. "Tighten the negative space between the icon and the wordmark by ~20%."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Count `n=4` as four design directions because four files came back — variations that differ only in color or wordmark weight are one concept, not four.
+- Treat "readable at favicon size (32×32 px)" as satisfied because the prompt says it — the model renders at 1024×1024 and never sees the small size.
+- Certify the wordmark from one correct output; each of the four images spells "[BRAND NAME]" independently, and an icon substituted for a letter (a bean for the "O") can make the word read differently.
+- Read "original, non-infringing" in the brief as clearance — a simple geometric mark can still sit close to a registered mark in the same category.
+
+✅ **DO:**
+- Downscale every variation to 32×32 and 16×16 and reject any whose silhouette or wordmark stops reading.
+- Proofread the wordmark in each of the four outputs letter by letter against the `[BRAND NAME]` input, and measure padding: the logo's bounding box leaves at least 154 px (15% of 1024) clear on every side.
+- Before a variation goes on the shortlist, run a reverse-image and trademark-register search in the brand's category; if not done, label it "clearance not checked" rather than presenting it as usable.
 
 ---
 

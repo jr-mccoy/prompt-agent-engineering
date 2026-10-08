@@ -14,8 +14,20 @@ tags:
   - problem-list
   - documentation
   - ehr
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -49,6 +61,19 @@ Attending cleaning up an inherited problem list that has accreted duplicates and
 7. **Link complications to their root** where the relationship is clinically meaningful (diabetic nephropathy under diabetes; AFib with the relevant anticoagulation consideration noted). This preserves the reasoning, not just the labels.
 
 8. **Flag reconciliation actions** — entries you merged, retired, added, or up-specified — so the clinician can review the changes rather than trust a silent rewrite. Note anything ambiguous that needs chart confirmation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign an ICD-10 code by matching the problem label; a code is inferred, not assigned, until its specificity (type, stage, acuity, linkage) is documented — and combination-code conventions (hypertension with heart failure and/or CKD, diabetes with CKD) can replace separate codes. Mark such codes `[CODER TO VERIFY]`.
+- Add a descriptor the notes do not contain to make an entry look complete — a functional class, an attributed cause, a "controlled" or "at goal" judgement — each needs a source line or is removed.
+- Retire a problem as resolved because recent notes stop mentioning it; silence in the notes is not resolution.
+- Stage CKD from a single eGFR or from values less than three months apart.
+
+✅ **DO:**
+- Quote, for every ACTIVE and UP-SPECIFIED entry, the note, date and value that supports it (for a CKD stage: at least two eGFRs ≥3 months apart).
+- Recount the existing list: every original entry appears exactly once in the output as kept, merged, retired or ambiguous, and every ADDED entry has a source.
+- Route the coded list through a certified coder or the current ICD-10-CM Official Guidelines before it is used for billing.
 
 ## Output Format
 
@@ -84,13 +109,13 @@ RECONCILIATION ACTIONS (for clinician review):
 RECONCILED PROBLEM LIST (prioritized):
 
 ACTIVE:
-1. HFrEF, EF 35% (I50.22, chronic systolic HF) — echo on file; on GDMT, NYHA II.
+1. HFrEF, EF 35% (I50.22, chronic systolic HF) — EF 35% per notes; on GDMT. NYHA class not documented.
 2. Type 2 diabetes mellitus with diabetic CKD (E11.22) — A1c 8.1; links to CKD below.
    - Diabetic nephropathy / albuminuria (urine ACR 220).
-3. CKD stage 3b (N18.32, eGFR 36–39) — persistent across visits; attributed to diabetes + HTN.
+3. CKD stage 3b (N18.32, eGFR 36–39) — persistent across visits.
 4. Anemia of CKD vs. iron deficiency (D63.1 / D50.9) — Hgb 10.8, low iron sat, ferritin 40; no GI source identified. Likely mixed; iron studies favor iron-deficient component.
-5. Essential hypertension (I10) — currently controlled.
-6. Hyperlipidemia (E78.5) — LDL 70 on statin, at goal for this risk profile.
+5. Hypertensive heart and chronic kidney disease with heart failure (I13.0 [CODER TO VERIFY]; ICD-10-CM presumes the hypertension–HF and hypertension–CKD links, so I10 is not used here; sequence with I50.22 and N18.32) — BP currently controlled.
+6. Hyperlipidemia (E78.5) — LDL 70 on statin.
 
 SURVEILLANCE / HISTORICAL-RELEVANT: None.
 
@@ -99,7 +124,7 @@ RESOLVED (retired from active):
 
 RECONCILIATION ACTIONS (for clinician review):
 - MERGED: "CHF" + "Heart failure" → single entry "HFrEF, EF 35%."
-- UP-SPECIFIED: "Diabetes" → "T2DM with diabetic CKD"; "CKD" → "CKD stage 3b (eGFR 36–39)"; "Anemia" → "anemia of CKD vs. iron deficiency."
+- UP-SPECIFIED: "Diabetes" → "T2DM with diabetic CKD"; "CKD" → "CKD stage 3b (eGFR 36–39)"; "Hypertension" → "hypertensive heart and CKD with HF" (combination code); "Anemia" → "anemia of CKD vs. iron deficiency."
 - ADDED (present but unlisted): Diabetic nephropathy/albuminuria (ACR 220) was not on the list but is documented and links the diabetes-CKD relationship.
 - RETIRED: UTI (resolved, stale).
 - AMBIGUOUS / NEEDS CONFIRMATION: Anemia etiology is mixed (CKD vs. iron deficiency) — confirm whether GI workup was completed before finalizing the code; ferritin 40 with CKD is not reliably "iron replete," so iron-deficiency component is plausible and may warrant treatment.

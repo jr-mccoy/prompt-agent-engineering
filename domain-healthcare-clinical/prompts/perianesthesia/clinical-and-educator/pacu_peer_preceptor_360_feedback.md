@@ -19,10 +19,10 @@ techniques:
   - DS-06
 difficulty: intermediate
 related_prompts:
-  - prompts/pacu_orientee_evaluation_meta_prompt.md
-  - prompts/pacu_preceptor_writing_orientee_evaluation.md
-  - prompts/pacu_preceptor_calibration_facilitator.md
-  - prompts/pacu_preceptor_approach_guide.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_calibration_facilitator.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - SBI feedback model (Center for Creative Leadership)

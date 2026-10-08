@@ -21,7 +21,7 @@ tags:
   - bold-outlines
   - line-art
   - print-ready
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - adult_coloring_page_intricate.md
@@ -238,6 +238,20 @@ Negative: `"shading, grayscale, gray, color, gradient, fill, thin lines, intrica
 
 ### Problem: It rendered a photo of a coloring book
 **Add:** `"This IS the page, flat and straight-on. No book, no desk, no shadow, no 3D."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "Outlines very thick (4-6 pt)" from a fit-to-window preview — downscaling makes 2 pt strokes look bold; at 300 DPI, 4 pt is about 17 px and 6 pt about 25 px, so measure a stroke on the full-size file.
+- Count only the big shapes for "5-12 large colorable regions" — eyes, nostrils, wheel hubs, and the gap between an arm and the body each enclose a region of their own, and a toddler with a chunky crayon cannot color a pea-sized one.
+- Accept the interiors as white because they look white — models lay a faint paper tone or a pale gray blush on cheeks that prints as a visible tint on a home inkjet.
+
+✅ **DO:**
+- Paint-bucket flood-fill every region in an image editor; a fill that leaks into a neighbor or the background marks a gap the "fully closed" line missed at screen zoom.
+- Number the regions as you fill them, check the total against 5-12, and confirm the smallest spans roughly 300 px (1 inch at 300 DPI).
+- Apply a 50% threshold and compare with the original: any area that changes beyond the anti-aliased line edges was gray, not black or white.
 
 ---
 

@@ -16,19 +16,30 @@ tags:
   - root-cause-analysis
   - learning
   - PACU
-updated: "2026-04-16"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/nursing_preceptor_daily_debrief.md
-  - domain-healthcare-clinical/prompts/nursing_preceptor_independence_rubric.md
-  - domain-healthcare-clinical/prompts/nursing_orientee_pattern_import_check.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_daily_debrief.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_preceptor_independence_rubric.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_orientee_pattern_import_check.md
   - domain-engineering-workflows/workflows/engineering_post_mortem_root_cause_ladder.md
-  - domain-engineering-workflows/done-definition/done_definition_gate_incident_postmortem.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_complication_deep_dive.md
 ---
 
 # Nursing Orientee Fumble Post-Mortem
 
-**Objective:** Run a structured, no-blame analysis of a specific orientee fumble (not a near-miss with patient harm — that follows the facility's formal safety-event pathway — but a notable performance miss during orientation). The post-mortem reconstructs the timeline, maps contributing factors, identifies the most tractable root cause, and commits to one concrete change for next shift. The goal is learning, not punishment.
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
+
+**Objective:** Run a structured, no-blame analysis of a specific orientee fumble (not a harm event or a near-miss — those follow the facility's formal safety-event pathway first, with this post-mortem run alongside only as a learning exercise — but a notable performance miss during orientation). The post-mortem reconstructs the timeline, maps contributing factors, identifies the most tractable root cause, and commits to one concrete change for next shift. The goal is learning, not punishment.
 
 **Important Disclaimer:** This tool is for orientation-development use only. If the fumble involved patient harm, a near-miss with potential harm, a medication error, or any event requiring institutional reporting, follow the facility's formal safety-event / incident-reporting pathway first. The post-mortem can be run in parallel as a learning exercise, but it does not replace required reporting.
 
@@ -270,6 +281,23 @@ FILED IN: [preceptor development notes / NOT formal evaluation record]
 **When to escalate beyond post-mortem:** If a fumble reveals a safety-critical gap (e.g., failure to recognize airway compromise, medication-error pattern, chronic documentation inaccuracy), the post-mortem produces the learning but the rubric and facility safety processes handle the decision. Do not let "we did a post-mortem" substitute for the formal processes those gaps require.
 
 **The orientee runs the post-mortem on herself:** Around week 5, start letting her lead the Five Whys with you as a sounding board. When she can run her own post-mortems, that is a metacognition gate passing in real time.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the timeline with exact minute-markers that neither the orientee, the monitor trend nor the EMR can supply — a guessed time reads as a recorded one.
+- Enter "Formal reporting status: not required" for an event that reached the patient, involved a medication, or could have caused harm.
+- Stop the Five Whys at a personal attribute ("she was careless", "she forgot") — that is a label, not a root cause.
+- Tick all six contributing-factor boxes to look thorough when only one or two carried load.
+- Write a clinical "right action" into "Cues available" with a cut-off or dose that came from memory rather than the unit's protocol or the provider's order.
+
+✅ **DO:**
+- Tag each timeline entry with its source — monitor trend, EMR timestamp, witness, or orientee recall — and keep recall-only entries visibly separate.
+- Test the root cause by removal: had it been absent, would the fumble plausibly not have happened? If the answer is no, keep asking why.
+- Check that the ONE CHANGE addresses the stated root cause and that "How we'll know it happened" names something the preceptor can observe next shift.
+- Before filing, reread the document for identifiers (name, MRN, room, date of birth, or a rare procedure plus a date).
 
 ---
 

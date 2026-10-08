@@ -15,8 +15,20 @@ tags:
   - acid-base
   - electrolytes
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -68,9 +80,9 @@ Senior ICU attending interpreting a gas at the bedside.
    - >2.0: concurrent metabolic alkalosis (mixed AGMA + metabolic alkalosis)
 
 6. **Oxygenation (if relevant).**
-   - A-a gradient = PAO2 − PaO2 = [FiO2 × (Patm − 47) − PaCO2/0.8] − PaCO2 (room air sea level: 150 − PaCO2/0.8 − PaO2)
+   - A-a gradient = PAO2 − PaO2 = [FiO2 × (Patm − 47) − PaCO2/0.8] − PaO2 (room air sea level: 150 − PaCO2/0.8 − PaO2)
    - Normal A-a ≈ (Age/4) + 4. Elevated → V/Q mismatch, shunt, diffusion defect.
-   - P/F ratio = PaO2/FiO2. <300 ALI, <200 ARDS (Berlin), <100 severe ARDS.
+   - P/F ratio = PaO2/FiO2. Berlin ARDS categories (with PEEP/CPAP ≥5 cm H2O): ≤300 mild, ≤200 moderate, ≤100 severe. (The older AECC "<300 ALI" label is not a Berlin category.)
 
 7. **Etiology.** Marry the acid-base picture to the clinical context. "AG 26 with lactate 8 in a hypotensive febrile patient" → septic shock with lactic acidosis. "AG 22 with ketones, glucose 480, pH 7.18" → DKA. "Vomiting + low Cl + high HCO3 + paradoxical aciduria" → contraction alkalosis.
 
@@ -100,6 +112,14 @@ ACTION:
 - [labs / imaging to obtain]
 ```
 
+## False-Positive Prevention
+
+- **"Internally consistent" stated without the arithmetic.** Show [H+] = 24 × PaCO2 / HCO3 and the pH it implies; the analyzer's calculated HCO3 agrees with its own pH by construction, so compare against the measured BMP HCO3 drawn at the same time. For the A–a gradient, compute PAO2 from FiO2, Patm and PaCO2/0.8, then subtract the measured PaO2.
+- **Compensation called adequate or inadequate by eye.** Recompute Winter's (1.5 × HCO3 + 8 ± 2) or the acute/chronic respiratory rule from the reported values and print expected vs observed. Convert a PaCO2 reported in kPa (× 7.5) first, and do not apply arterial rules to a venous PCO2 without saying so.
+- **Anion gap judged against a textbook 8–12 instead of the reporting lab's range.** Ion-selective analyzers run lower and some labs include K in the gap; use that lab's reference. The 2.5 × (4 − albumin) correction assumes g/dL, so convert albumin reported in g/L (35 g/L = 3.5 g/dL) before correcting.
+- **Delta-delta built from mismatched numbers.** Use the albumin-corrected gap and the same BMP HCO3 in both the gap and the ratio, recompute it from components, and treat a ratio near a cut-off (0.9–1.1, 1.9–2.1) as indeterminate rather than proof of a hidden second disorder.
+- **ACTION doses and drip rates written without the inputs they depend on.** Insulin, potassium, and bicarbonate entries need the patient's weight, the current K, and urine output from the input; otherwise write `[per provider order]` and `[VERIFY: current DKA/HHS guideline]`.
+
 ## Worked Example
 
 **Input:** 24 y/o F, T1DM, presenting with vomiting and abdominal pain x 1 day. Vitals: HR 128, BP 92/60, RR 28, T 37.6. Labs: Na 134, K 5.4, Cl 95, HCO3 8, BUN 32, Cr 1.4, glucose 612, albumin 4.0, lactate 1.8, beta-hydroxybutyrate 6.2. ABG on RA: pH 7.12, PaCO2 22, PaO2 102, HCO3 7, SaO2 98%.
@@ -126,7 +146,7 @@ ACTION:
 - Insulin drip at 0.1 units/kg/hr after K confirmed >3.3; do NOT bolus insulin
 - K replacement: K is 5.4 now but will fall fast — add 20–40 mEq KCl per liter once K <5.2 and urine output adequate
 - Recheck BMP, glucose, VBG q1–2h. Anticipate K, phosphate, Mg drops
-- Transition to subcutaneous insulin only when AG closes (<12), HCO3 ≥18, pH ≥7.30, and patient eating; overlap drip and SC by 1–2 hours
+- Transition to subcutaneous insulin only when DKA resolution criteria are met [VERIFY: current ADA/consensus DKA resolution criteria — the gap, HCO3, pH and ketone cut-offs differ between guideline versions] and the patient is eating; overlap drip and SC by 1–2 hours
 - Hourly RR and mental status check — rising PaCO2 with falling pH means imminent respiratory failure; have airway plan ready
 - Search for trigger: infection screen (UA, CXR, blood cultures), missed insulin dose history, new MI in older patients
 ```

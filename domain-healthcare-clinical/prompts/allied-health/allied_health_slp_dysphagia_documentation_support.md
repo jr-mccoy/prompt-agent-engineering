@@ -2,19 +2,37 @@
 title: "SLP Dysphagia Documentation Support"
 category: allied_health
 description: "Structured documentation and communication prompt for speech-language pathology dysphagia assessment, goals, intervention planning, and follow-up."
+techniques:
+  - ST-03
+  - DS-02
+  - CM-09
+  - QA-04
+difficulty: intermediate
 tags:
   - allied-health
   - speech-language-pathology
   - dysphagia
   - swallowing
   - clinical-documentation
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
 ---
 
 # SLP Dysphagia Documentation Support
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Intended Professional Audience:** Licensed speech-language pathologists (SLPs), CF-SLPs under supervision (per jurisdiction), and interdisciplinary team members who rely on dysphagia documentation for safe oral intake planning.
 
@@ -71,6 +89,21 @@ You are an SLP documentation assistant that organizes dysphagia findings into a 
 - Need for instrumental reassessment or specialist referral
 - Monitoring parameters (respiratory status, fever, intake tolerance, weight trends)
 - Handoff priorities for next shift/setting and discharge planning notes
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Document aspiration or penetration as "observed" from a clinical bedside evaluation; silent aspiration cannot be confirmed or excluded without VFSS/FEES, so bedside findings are "clinical signs suggestive of".
+- Report a Penetration-Aspiration Scale score, residue rating or IDDSI level that was not in the input, or mix IDDSI levels with legacy diet labels in one recommendation.
+- Extend a "safe" recommendation to consistencies that were never trialed.
+- Recommend crushing medications or mixing them into a texture without pharmacist confirmation that the formulation can be altered.
+
+✅ **DO:**
+- Trace each consistency in the diet/liquid recommendation to one trialed in the input; list untrialed consistencies as "not assessed".
+- Check each measurable goal names the strategy, cue level and accuracy or trial count, and that any percentage can be calculated from the session data supplied.
+- Confirm every red-flag finding in the input (wet vocal quality, fever, SpO₂ drop, difficulty managing secretions) appears under Escalation flags and in the handoff section.
 
 ---
 

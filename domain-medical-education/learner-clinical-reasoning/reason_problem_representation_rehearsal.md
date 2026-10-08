@@ -23,7 +23,7 @@ tags:
   - one-liner
   - semantic-qualifiers
   - active-recall
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_semantic_qualifier_drill.md
   - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
@@ -116,6 +116,16 @@ Next-session focus: [the specific component to drill]
 | `enforce_word_count` | Hard cap on one-liner length (default 30 words) |
 | `forbid_qualifier_list` | Custom list of vague phrasings to reject ("kind of," "started feeling," "a little") |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Reporting a word count by estimate, so a 10-word attempt is logged as 18 or a 31-word one slips under the cap | Count the words of the exact sentence before printing the number, using one stated rule for hyphenated terms (e.g., "24-year-old" = 1), and apply that rule to every attempt |
+| Printing a "Passing one-liner" that the tutor quietly polished, then crediting the learner for it | The passing one-liner is the learner's final attempt verbatim; any tutor rewording is labeled "modeled" and the case is scored as modeled, not passed |
+| Marking qualifiers `Y` because two adjectives appear, even when they are raw patient words or a single axis said twice | Name the axis each qualifier occupies (temporal, distribution, character…); credit only qualifiers on two different axes that come from the vignette |
+| Passing the anchor when it omits a comorbidity that reshapes the schema (home-O2 COPD, anticoagulation, immunosuppression) | Before passing the anchor, list the vignette's PMH items that would change pretest probability for the schema and confirm the anchor carries the strongest one |
+| A syndrome label that is the diagnosis renamed or a single exam finding, accepted because it is not the disease name | Check the label against the named schema: it must admit at least three competing diagnoses that the case has not yet excluded |
+
 ## Verification Checklist
 
 - [ ] Every passing one-liner contains all four components (anchor, temporal, qualifiers, syndrome) and ≤ 30 words.
@@ -153,11 +163,11 @@ Component check: anchor [Y, weak], temporal [N], qualifiers [N — "moved to the
 Socratic prompt: "You said 'probably appendicitis.' I asked for the *syndrome*, not the diagnosis. What is this *syndrome*?"
 
 Attempt 2: > "24-year-old woman with acute periumbilical-to-RLQ pain — acute RLQ pain syndrome."
-Component check: anchor [Y], temporal [Y], qualifiers [Y, partial], syndrome [Y]. Word count: 18.
+Component check: anchor [Y], temporal [Y], qualifiers [Y, partial], syndrome [Y]. Word count: 10.
 Socratic prompt: "Add one more semantic qualifier from the case that changes the schema's pretest."
 
 Attempt 3: > "Previously healthy 24-year-old woman with 8 hours of progressive migratory periumbilical-to-RLQ pain with peritoneal signs — acute RLQ pain in a young woman."
-Component check: all four passing. Word count: 25.
+Component check: all four passing. Word count: 22.
 
 Passing one-liner: "Previously healthy 24-year-old woman with 8 hours of progressive migratory periumbilical-to-RLQ pain with peritoneal signs — acute RLQ pain in a young woman."
 Schema activated: learner says "acute RLQ pain in a young woman of reproductive age."
@@ -170,9 +180,13 @@ Attempt 1: > "72-year-old smoker with shortness of breath and weight loss — pr
 Prompt: "Drop the diagnosis. Give me the syndrome. Also: 'shortness of breath' is the patient's word — what's the semantic qualifier?"
 
 Attempt 2: > "72-year-old man, 60 pack-year smoking history, with subacute progressive dyspnea on exertion, dry cough, weight loss, and unilateral pleural-effusion signs — subacute dyspnea with constitutional symptoms in an older smoker."
-Component check: all four passing. Word count: 30.
+Component check: anchor [N — omits COPD on home O2, the PMH item that most reshapes this dyspnea schema], temporal [Y], qualifiers [Y], syndrome [Y]. Word count: 29.
+Prompt: "Which item in his history changes your pretest for this dyspnea most — and is it in your anchor?"
 
-Passing one-liner: "72-year-old man with 60 pack-year smoking history with subacute progressive exertional dyspnea, dry cough, weight loss, and right-sided pleural-effusion exam findings — subacute dyspnea with constitutional symptoms in an older smoker."
+Attempt 3: > "72-year-old man with home-O2 COPD and 60 pack-years, with subacute progressive exertional dyspnea, dry cough, weight loss, and right pleural-effusion signs — subacute dyspnea with constitutional symptoms in an older smoker."
+Component check: all four passing. Word count: 30 (hyphenated terms = 1 word).
+
+Passing one-liner: "72-year-old man with home-O2 COPD and 60 pack-years, with subacute progressive exertional dyspnea, dry cough, weight loss, and right pleural-effusion signs — subacute dyspnea with constitutional symptoms in an older smoker."
 Schema activated: "subacute dyspnea + constitutional symptoms in an older smoker" → lung cancer with malignant effusion, TB, chronic empyema, lymphoma, mesothelioma if asbestos history.
 
 >>> SESSION REFLECTION

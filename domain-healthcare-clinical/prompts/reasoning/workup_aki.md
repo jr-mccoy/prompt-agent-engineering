@@ -14,8 +14,20 @@ tags:
   - critical-care
   - aki
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -80,7 +92,7 @@ Work up acute kidney injury: confirm and stage by KDIGO, classify into pre-renal
    - Renal biopsy — for GN, AIN unresponsive to drug withdrawal, unexplained intrinsic AKI; coordinate with nephrology.
 
 4. **Specific syndromes — rapid recognition.**
-   - **Hepatorenal syndrome:** advanced cirrhosis, oliguria, urine Na <10, no improvement after 2 days of albumin 1 g/kg + diuretic withdrawal. Type 1 (rapid, Cr doubles to >2.5 in 2 weeks) requires terlipressin (or norepinephrine + albumin) and transplant referral. Type 2 (slower) — outpatient management with vasoconstrictors and volume.
+   - **Hepatorenal syndrome:** advanced cirrhosis, oliguria, urine Na <10, no improvement after 2 days of albumin 1 g/kg + diuretic withdrawal. HRS-AKI (formerly "type 1"; diagnose by current criteria rather than the older Cr-doubling definition [VERIFY: current ICA / AASLD hepatorenal syndrome criteria]) requires terlipressin (or norepinephrine + albumin) and transplant referral. The slower, chronic form (formerly "type 2") — outpatient management with vasoconstrictors and volume [VERIFY: current ICA / AASLD terminology and management].
    - **Cardiorenal syndrome:** worsening renal function in setting of HF; diuresis often improves; do not under-treat decompensated HF for fear of Cr rise.
    - **Abdominal compartment syndrome:** measured intra-abdominal pressure ≥20 mmHg; decompression may be needed.
    - **Contrast-associated AKI:** Cr rise within 48–72 h of iodinated contrast; usually self-limited; pre-hydrate (NS or LR 1 mL/kg/h × 12 h before/after) high-risk patients.
@@ -108,6 +120,20 @@ Work up acute kidney injury: confirm and stage by KDIGO, classify into pre-renal
    - Stage 3, oliguria, hemodynamic instability, RRT need → ICU.
    - Stage 1–2 with stable cause and improving → ward.
    - Outpatient AKI: rare, requires close follow-up with nephrology and labs in 24–72 h.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Stage by urine output in mL/kg/h when the weight or the collection hours were not supplied — show the arithmetic or stage by creatinine alone.
+- Call the injury pre-renal on FENa <1% alone; a low FENa also occurs in contrast and pigment nephropathy, early obstruction and sepsis-associated AKI.
+- Use an admission creatinine that is already elevated as the "baseline"; a wrong referent under-stages the injury.
+- Attribute a low bicarbonate to AKI without computing the anion gap (Na − [Cl + HCO3]) and, if raised, weighing lactate, ketones, toxic alcohols and metformin.
+- State a drug hold/restart rule as a creatinine number when the label uses eGFR; write `[VERIFY: label eGFR threshold]`.
+
+✅ **DO:**
+- Recompute each derived index from raw values: Cr ÷ baseline (stage), BUN/Cr, FENa = (UNa × PCr)/(PNa × UCr) × 100 and FEUrea; if a raw value is missing, print "not computable" rather than echoing a supplied percentage.
+- Confirm a pre-renal label by its confirmatory step — creatinine falling within 24–72 h of restored perfusion — and, if it does not fall, re-classify as intrinsic and repeat the sediment.
+- Pair renal ultrasound with a bladder scan or post-void residual before calling post-renal excluded, since early or volume-depleted obstruction may show no hydronephrosis.
 
 ## Output Format
 
@@ -152,8 +178,9 @@ DISPOSITION:
 
 ```
 STAGING:
-- Cr 1.4 → 2.8 (2× baseline) and oliguria <0.5 mL/kg/h × >12 h.
-- KDIGO Stage 2 AKI.
+- Cr 1.4 → 2.8 (2.0× baseline) → KDIGO Stage 2 by creatinine.
+- UOP 200 mL over 12 h ≈ 17 mL/h; weight [not provided], so mL/kg/h not computed — UOP criterion not applied.
+- KDIGO Stage 2 AKI (by creatinine).
 
 CATEGORIZATION:
 - Predominantly pre-renal (FENa 0.6%, FEUrea 28%, BUN/Cr ratio 21, dry exam, low PO intake) plus likely contributions from contrast, NSAID, and ACE inhibitor.
@@ -173,7 +200,7 @@ ETIOLOGY (ranked):
 
 WORKUP NEXT STEPS:
 - Hold and discontinue ibuprofen and lisinopril.
-- Hold metformin (lactic acidosis risk in AKI; resume when Cr <1.5 stable).
+- Hold metformin (lactic acidosis risk in AKI; resume once renal function is stable and eGFR is above the label threshold [VERIFY: label eGFR threshold]).
 - Recheck UA, retain sediment if Cr fails to improve (re-evaluate for ATN).
 - BMP q6–12 h, strict I/O, daily weights.
 - Serial renal US not needed unless new oliguria.
@@ -194,7 +221,7 @@ RRT INDICATION:
 
 DISPOSITION:
 - Continue ward admission with close monitoring.
-- Cr expected to peak 3–7 days; recovery if pre-renal predominates.
+- If pre-renal predominates, Cr should start falling within 24–72 h of restored perfusion (Step 2); if it does not, re-classify as intrinsic (ATN / contrast-associated) and repeat the sediment.
 - Nephrology consultation if not improving in 48–72 h or progresses to Stage 3.
 - Discharge planning: renal-friendly med list (no NSAIDs, careful re-introduction of ACE inhibitor only after Cr stable), patient education on hydration and avoidance of OTC NSAIDs, primary care follow-up within 1 week with repeat BMP.
 ```

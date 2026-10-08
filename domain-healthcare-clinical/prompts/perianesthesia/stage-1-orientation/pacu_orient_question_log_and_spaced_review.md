@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, DS-06, ED-02, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_reflective_journal.md
   - pacu_orient_recovery_deviation_script_builder.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # Question Log + Spaced Review — Turn "I Didn't Know" Into Retained Knowledge
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study-system aid, not live clinical decision support. During a shift, get real answers from your preceptor/provider — this system processes them afterward.
 
@@ -82,6 +95,19 @@ Persistent misses → next-shift ask: [...]
 | `source` | Enforce source-per-answer strictly (anti-fabrication) |
 | `mode` | `capture` vs. `review` session |
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Draft `Answer(back)` from general knowledge and tag it `Source: preceptor` — with no learner-reported answer the back reads `[UNANSWERED — ask preceptor/provider]` and the item stays off the schedule.
+- Build a card whose back is a number (a reassess interval, an amount, a score cut-off); the back says `per facility protocol` plus the learner-pasted reference wording.
+- Merge two concepts on one card ("why watch longer after reversal, and what to monitor") — a hit on one half masks a miss on the other.
+- Promote an item to mastered after a single hit, or put a safety-critical miss back on the standard track.
+
+✅ **DO:**
+- Count raw questions in against items out; every dropped question needs a stated reason (duplicate, merged, still unanswered).
+- Recompute each `next review` date from the entry date and the interval track the learner set before showing the schedule.
+- When a learner-supplied answer and the cited facility reference disagree, flag the conflict for the preceptor instead of choosing one.
+
 ## Verification Checklist
 
 - [ ] Every item's answer has a **real source** — no answer is invented.
@@ -97,7 +123,7 @@ Persistent misses → next-shift ask: [...]
 
 **Output (excerpt):**
 ```
-Item(front): Why keep watching after NMB reversal?  | Answer(back): risk of re-emergence of weakness / re-sedation depending on agent and timing — [verified with preceptor + facility reference] | Source: preceptor + facility monograph | Domain: pharmacology-reversal | Safety-critical: Y.
+Item(front): Why keep watching after NMB reversal?  | Answer(back): risk of recurarization (re-emergence of weakness) depending on agent and timing — [verified with preceptor + facility reference] | Source: preceptor + facility monograph | Domain: pharmacology-reversal | Safety-critical: Y.
 Spaced schedule: next shift → 3 days → ~1 week (tight track, safety-critical).
 Active recall: attempted from memory, hit; re-spaced to 1 week.
 Rollup: persistent miss elsewhere → next-shift ask: "walk me through our re-sedation watch protocol."

@@ -14,8 +14,20 @@ tags:
   - laboratory
   - mechanism
   - reasoning
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -57,6 +69,20 @@ Senior internist or subspecialty fellow explaining mechanism at the bedside. The
 5. **Predict an associated lab.** A real mechanism predicts other labs that should also be off. State at least one. If the predicted lab is normal, the mechanism is probably wrong.
 
 6. **Distinguish from same-direction abnormality with different mechanism.** Why this is THIS mechanism and not an alternative — what other lab pattern would tell you it was the alternative.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Start the chain before checking that the abnormality is real: hemolyzed or delayed samples for K, pseudohyponatremia from lipids or paraprotein, hyperglycemic dilution of Na, drip-arm contamination. A fluent mechanism for an artifact is the most convincing wrong answer this prompt can give.
+- Read a value against a generic range when the reporting lab's reference range and units were supplied; use theirs.
+- List labs under `PREDICTED ASSOCIATED LABS` that the user never gave, then write "confirms" next to them — a prediction is not a result.
+- Call a value "normal", "stable" or "improving" from a single result when the question is about a trend.
+- Write "Therefore [committed answer]" when the discriminating labs are missing; that cell gets INSUFFICIENT EVIDENCE plus the single cheapest test that would decide it.
+
+✅ **DO:**
+- Recompute every derived number before using it, showing arithmetic and units: calculated serum osmolality (2×Na + glucose/18 + BUN/2.8 in US units), glucose-corrected Na, anion gap, albumin-corrected Ca.
+- Check each "If this were [alternative], [lab] would be…" line against the values actually supplied; count the labs that fit the chosen mechanism and the ones that contradict it, and if any contradict, downgrade the answer and say which value breaks it.
+- Trace each step of `CAUSAL CHAIN` to a named source type and confirm that no mediator appears in the chain that is absent from `NORMAL HOMEOSTATIC LOOP`.
 
 ## Output Format
 

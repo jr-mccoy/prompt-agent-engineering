@@ -23,7 +23,7 @@ tags:
   - eor
   - arc-pa
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/pa/prof_pa_pance_blueprint_drill.md
   - domain-medical-education/profession-specific/nursing/prof_rn_clinical_evaluation_tool.md
@@ -51,7 +51,7 @@ PA program assessment-faculty / clinical coordinator. You write to ARC-PA (Accre
 ## Method
 
 1. **Lock the framework (CM-02).** Select the competency set:
-   - **PAEA Core:** Medical Knowledge, Interpersonal & Communication Skills, Patient Care (Clinical & Technical), Professionalism, Practice-Based Learning & Improvement, Systems-Based Practice — 6 domains.
+   - **PAEA Core:** Medical Knowledge, Interpersonal & Communication Skills, Patient Care (Clinical & Technical), Professionalism, Practice-Based Learning & Improvement, Systems-Based Practice — 6 domains [VERIFY: current Competencies for the PA Profession (2021 revision) / PAEA Core Competencies domain list].
    - **NCCPA:** maps similarly but uses slightly different language.
    - **Program-defined:** preceptor pastes the program's 4–8 domain list.
 
@@ -178,6 +178,16 @@ Program-designated clinical coordinator (if remediation triggered): __________ D
 | `setting` | OR-heavy rotations weight procedural skills; ED rotations weight rapid decision-making; primary care weights longitudinal management |
 | `population_overlay` | Peds adds growth/development; OB adds maternal-fetal; geri adds polypharmacy and functional assessment |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| EOR exposure table populated with plausible ED or clinic complaints, or a log count, and labelled "PAEA blueprint" | List only topics you can map to the current PAEA EOR blueprint for this rotation `[VERIFY: current PAEA EOR blueprint and topic list]`; anything program-added is labelled "program addition", not blueprint |
+| EOR pass line written as a raw percent ("< 70") for an exam that reports scaled scores, or a probation rule stated as if it were ARC-PA's | Express the EOR threshold in the units the exam reports, and attribute every threshold and probation rule to "program policy `[VERIFY]`" unless you can cite the specific ARC-PA standard |
+| Entrustment anchors for knowledge-type domains that describe how much the student knows rather than how much supervision the preceptor needs | Read each anchor and ask: does it say who is in the room and who acts? For Medical Knowledge, anchor the supervision level to a task (presenting a differential the preceptor then acts on vs. acts on without re-checking) |
+| End-of-rotation rating inferred from one shift or one encounter and ticked as IS or AP | Require the evidence line to cite at least two dated encounters for any rating above DS, and allow "insufficient observation" rather than forcing a level |
+| Remediation trigger thresholds that differ between sections — a qualitative rule in one block, a percentage in another — so the same logbook passes in one place and triggers in another | Collect every numeric threshold (EOR cut, logbook minimums, case minimums) into one list and confirm each appears with the same value everywhere it is used |
+
 ## Verification Checklist
 
 - [ ] Entrustment scale has 5 named levels with one-line definitions.
@@ -214,15 +224,15 @@ Evidence: __________
 ═══ Domain 2: Medical Knowledge
 
 Rotation-specific anchors (EOR-aligned):
-  O: Verbalizes broad differential without prompted refinement.
-  CON: Identifies top 3 diagnoses with preceptor prompting on rare/dangerous can't-miss.
-  DS: Independently generates focused differential covering can't-miss diagnoses for chief complaint.
-  IS: Risk-stratifies (HEART, PERC, Wells, NEXUS) appropriately; selects targeted workup.
-  AP: Anticipates next steps; recognizes when standard workup is insufficient.
+  O: Listens to the preceptor's differential; preceptor makes every diagnostic decision.
+  CON: Offers top 3 diagnoses; preceptor adds the rare/dangerous can't-miss diagnoses and directs the workup.
+  DS: Presents a focused differential covering can't-miss diagnoses for the chief complaint; preceptor reviews it in real time before any workup is ordered.
+  IS: Risk-stratifies (HEART, PERC, Wells, NEXUS) and proposes targeted workup; preceptor verifies briefly before orders are placed.
+  AP: Anticipates next steps and recognizes when standard workup is insufficient; preceptor reviews afterward and acts on the plan without re-checking.
 
 Mid-rotation expected: DS    End-of-rotation expected: IS
 
->>> EOR BLUEPRINT EXPOSURE AUDIT (PAEA EM EOR)
+>>> EOR BLUEPRINT EXPOSURE AUDIT (PAEA EM EOR) [VERIFY: current PAEA EM EOR blueprint and topic list]
 
 | Topic | Min | Seen | Co-mgd | Indep | Notes |
 | Chest pain (incl ACS r/o) | 5 | __ | __ | __ | |
@@ -233,8 +243,8 @@ Mid-rotation expected: DS    End-of-rotation expected: IS
 | Pediatric fever | 2 | __ | __ | __ | |
 | Psychiatric presentation | 2 | __ | __ | __ | |
 | Toxicology / overdose | 2 | __ | __ | __ | |
-| Stroke (incl tPA window) | 1 | __ | __ | __ | |
-| EKG interpretation logged | 20 | __ | __ | __ | |
+| Stroke (incl tPA window) | 2 | __ | __ | __ | |
+| EKG interpretation logged (program addition, not blueprint) | 20 | __ | __ | __ | |
 
 >>> PROCEDURAL LOGBOOK
 
@@ -249,9 +259,9 @@ Mid-rotation expected: DS    End-of-rotation expected: IS
 >>> REMEDIATION TRIGGERS
 
 Triggered if any of:
-  • EOR exam < 70 (program threshold)
+  • EOR exam below the program's scaled-score cut [VERIFY: program policy]
   • Any "O" rating at end in Patient Care or Medical Knowledge
-  • Logbook < 80% of required minimums
+  • Logbook incomplete at end of rotation (any required minimum not met)
   • Safety event (med error / disposition error caught by preceptor)
   • Documented professionalism concern
 ```

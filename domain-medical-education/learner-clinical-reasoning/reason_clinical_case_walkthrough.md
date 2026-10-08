@@ -28,9 +28,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_differential_diagnosis_drill.md
-  - ./learner_hypothesis_driven_workup_drill.md
-  - ../clinical-skills/learner_osce_self_rehearsal.md
+  - domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md
+  - domain-medical-education/learner-clinical-reasoning/reason_hypothesis_driven_workup_drill.md
+  - domain-medical-education/learner-osce-skills/osce_self_rehearsal.md
 ---
 
 # Self-Paced Clinical Case Walkthrough for Health-Professions Learners

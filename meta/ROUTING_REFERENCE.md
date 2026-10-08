@@ -1177,7 +1177,7 @@ When users need help with **non-coding tasks**, first determine the domain:
 
 ### Specialized Professional Fields
 - **Legal, trades, real estate** → `domain-specialized-fields/` guide hub (finance and psychology are now their own top-level domains: `domain-finance/`, `domain-psychology/`; sales and customer work → `domain-sales-customer/`)
-  - **Professional writing by field** → `domain-professional-writing/domain-specific/` (24 `domain_writing_*` prompts)
+  - **Professional writing by field** → `domain-professional-writing/domain-specific/` (21 `domain_writing_*` prompts)
   - Files cover: CPAs, veterinarians, attorneys, contractors, realtors, HVAC, plumbers, electricians, wedding planners, and more
   - **Domain guide:** [domain-specialized-fields/](../domain-specialized-fields/)
 

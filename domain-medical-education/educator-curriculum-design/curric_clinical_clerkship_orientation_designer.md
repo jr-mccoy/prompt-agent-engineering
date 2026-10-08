@@ -22,7 +22,7 @@ tags:
   - onboarding
   - clinical-rotation
   - expectations
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_course_map_builder.md
   - domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md
@@ -279,6 +279,16 @@ Replaced with: dedicated 15-min in-person walkthrough + verbatim reporting paths
 | `program_specific_resources` | Plugs in actual institutional URLs, templates, ombuds |
 | `include_inter_professional` | Adds IPE orientation block with concurrent learners from other professions |
 | `include_telehealth_setup` | Adds video / privacy / equipment setup for telehealth components |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Filling reporting-path URLs, phone numbers, the ombuds contact or the 24-h support line with plausible-looking values when `safety_reporting_paths` was incomplete, then ticking "Safety + reporting paths walked through" | Trace every URL, number and office name in SAFETY + REPORTING PATHS to the supplied input; anything not supplied stays a visible placeholder tagged [VERIFY: institutional policy] and blocks shipping under the refusal guard |
+| Populating the Dose column of the high-yield medication table from general knowledge, so the orientation becomes an unofficial dosing reference for students | Write "per institutional formulary / order set" in the Dose column unless the clerkship supplied checked values, and name the source beside any value that remains |
+| Pass/fail thresholds, WBA counts or per-EPA entrustment levels that sound standard but appear nowhere in `assessment_rubric` or `EPA_target_list` | Match every number in WRITTEN ASSESSMENT CRITERIA and the Supervision block to an input value; a gap is flagged to the clerkship director, not filled in |
+| A day-1 timetable whose blocks have drifted from the Method's allocations (lunch cut to 45 min, meet-team merged with the tour) and a pre-reading list whose time estimates exceed the 2-hour cap | Recompute: subtract each block's start from its end and compare with the Method allocation, add up the pre-reading minutes, and place the mid-rotation meeting at the week nearest 50% of `rotation_duration_weeks` |
+| SOURCE-FIDELITY AUDIT row "Duty-hours rules — verified" when the hours text was recalled rather than copied from `hours_policy` | Mark a policy row verified only when the WRITTEN EXPECTATIONS wording is copied from the supplied policy; limits recalled from memory are tagged [VERIFY: current ACGME/institutional policy] |
 
 ## Verification Checklist
 

@@ -17,8 +17,8 @@ techniques:
   - ED-02
 difficulty: intermediate
 related_prompts:
-  - prompts/pacu_orientation_curriculum_designer.md
-  - prompts/pacu_orientee_weekly_learning_plan.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_curriculum_designer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_weekly_learning_plan.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)

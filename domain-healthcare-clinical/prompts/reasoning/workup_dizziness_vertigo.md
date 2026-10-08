@@ -14,7 +14,7 @@ tags:
   - emergency-medicine
   - vertigo
   - diagnostic-workup
-updated: "2026-09-24"
+updated: "2026-10-06"
 ---
 
 > **Medical disclaimer — read before use.** This prompt is a decision-support and
@@ -114,6 +114,21 @@ Work up the dizzy patient: classify by timing/triggers (TiTrATE), apply HINTS+ i
     - Any concern for posterior stroke → admit to stroke service, urgent imaging, neurology.
     - BPPV resolved with Epley → home with return precautions; Brandt-Daroff exercises are not routinely needed after a successful repositioning maneuver.
     - Recurrent or refractory vertigo without diagnosis → ENT/neuro-otology referral.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report "peripheral HINTS" unless every component was peripheral (abnormal HIT, direction-fixed horizontal nystagmus, no skew) and hearing was tested; one central component makes the pattern central.
+- Call nystagmus direction-fixed without recording it in primary, left and right gaze — the change may appear only on gaze away from the fast phase.
+- Diagnose BPPV from the history alone; record the Dix-Hallpike or supine roll result with nystagmus direction, latency and duration.
+- Label Ménière disease or vestibular migraine on a first episode — both require recurrent episodes meeting the criteria counts.
+- Fold cerebellar signs (dysmetria, truncal ataxia) into the HINTS result; report them as separate findings.
+
+✅ **DO:**
+- Write each HINTS+ component as an observation (side of the corrective saccade, nystagmus direction by gaze position, which eye deviates on cover test, hearing test method) and derive the pattern from those entries.
+- Grade gait separately; inability to stand or walk unaided in AVS calls for imaging even when HINTS reads peripheral.
+- Count episodes and durations against the diagnostic criteria (Ménière attack number and length, audiometric documentation) before applying the label.
+- Anchor any thrombolysis or thrombectomy statement to the documented last-known-well time; if onset is uncertain, say so.
 
 ## Output Format
 

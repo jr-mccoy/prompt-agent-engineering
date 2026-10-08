@@ -22,7 +22,7 @@ tags:
   - rubric
   - pre-licensure
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/nursing/prof_rn_concept_map_designer.md
   - domain-medical-education/profession-specific/nursing/prof_rn_preceptor_orientation_plan.md
@@ -34,7 +34,7 @@ Build a single-rotation clinical evaluation tool (CET) that an instructor can us
 
 ## Your Role
 
-Nursing assessment-faculty / curriculum designer. You write the CET to NLN-style accreditation expectations and Bondy-derived anchor logic (1955 Bondy scale carried forward in modern pre-licensure tools). You produce instructor-facing language, not learner-facing language.
+Nursing assessment-faculty / curriculum designer. You write the CET to NLN-style accreditation expectations and Bondy-derived anchor logic (1983 Bondy scale carried forward in modern pre-licensure tools). You produce instructor-facing language, not learner-facing language.
 
 ## Inputs
 
@@ -152,6 +152,16 @@ Course coordinator (if rating < 3): __________ Date: ____
 | `failing_anchor_required` | Surfaces the due-process line |
 | `population_overlay` | Adds population-specific competency rows (peds: weight-based dosing; OB: maternal-fetal monitoring; psych: therapeutic communication + safety) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Adjacent level descriptors that differ only in a frequency adverb ("occasional" vs "frequent" prompting), so the matrix passes the "behavioral" check but two instructors cannot separate a 3 from a 4 | For each adjacent pair (5/4, 4/3, 3/2, 2/1), name the one action an instructor would see at one level and not the other; if the only difference is an adverb, add a countable marker (cues per med pass, errors self-caught vs caught by faculty) |
+| A Marginal (2) descriptor that describes an unsafe act, contradicting the scale's "safe only with continuous supervision" and the row's critical safety element | Place every descriptor that involves an uncaught error or a missed critical safety element at level 1, and recheck that the row's critical-element rule ("drops to 2 or below") agrees with where those behaviors sit |
+| Required artifact or observation count that the rotation cannot supply — more observed passes or concept maps than `weeks_in_rotation` and the clinical-day schedule allow | Multiply clinical days by realistic observations per day and confirm each row's required artifacts fit; otherwise the N/O-on-artifact failure trigger fails students for the schedule, not for performance |
+| Failing threshold and due-process steps (warning, learning contract, coordinator sign-off) written as if they were this program's policy | Present the threshold as a proposed criterion and mark due-process steps `[VERIFY: program clinical evaluation and progression policy]`; do not assert what the program's handbook requires |
+| Mid- and end-of-rotation expected levels set to 3 → 4 by default for every row | Set expected levels per row from `learner_level` and how often that competency is actually practiced on this unit; a row practiced rarely may keep the same expected level, with the reason stated |
+
 ## Verification Checklist
 
 - [ ] Rating scale has 5 anchor levels + N/O, each with one-line definition.
@@ -181,7 +191,7 @@ Level descriptors:
   5 — Independent: Performs full 6 rights independently; identifies medication errors before administration; recalculates high-alert meds independently; teaches patient about new meds in plain language without prompting.
   4 — Supervised: Performs 6 rights with occasional faculty cue; correctly identifies meds requiring independent dual verification; calculates doses correctly; provides patient education with minimal prompting.
   3 — Assisted: Performs 6 rights with frequent faculty prompting; needs cue to perform independent dose calculation; can verbalize rationale but does not initiate teaching.
-  2 — Marginal: Misses one of the 6 rights without faculty intervention; relies on faculty for dose calculation; cannot identify high-alert medications without prompting.
+  2 — Marginal: Completes all 6 rights only under continuous faculty supervision (omissions caught by faculty before administration); relies on faculty for dose calculation; cannot identify high-alert medications without prompting.
   1 — Dependent (unsafe): Attempts administration without verification; calculation errors not self-caught; would administer wrong dose without faculty intercept.
 
 Mid-rotation expected: 3    End-of-rotation expected: 4

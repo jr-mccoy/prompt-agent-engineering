@@ -23,7 +23,7 @@ related_prompts:
   - curric_cbme_implementation_program.md
   - curric_residency_curriculum_mapper.md
   - curric_program_competency_framework_acgme.md
-  - ../../../../domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
+  - domain-education-teaching/program/outcomes-assessment/program_competency_assessment_evidence_design.md
 ---
 
 # EPA Implementation Designer

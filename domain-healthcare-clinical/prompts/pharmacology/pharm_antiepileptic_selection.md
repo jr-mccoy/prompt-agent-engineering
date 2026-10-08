@@ -15,8 +15,20 @@ tags:
   - seizures
   - prescribing
   - drug-interactions
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -78,7 +90,7 @@ Senior neurologist / epileptologist writing the AED prescription with titration 
      - Folic acid 4 mg/day pre-conception and throughout pregnancy for women on AEDs.
      - Monitor lamotrigine levels closely in pregnancy — estrogen induces UGT glucuronidation, lowers lamotrigine levels; dose increases often required during pregnancy and decrease postpartum.
    - **Oral contraceptive interaction:**
-     - **Enzyme-inducing AEDs** (carbamazepine, phenytoin, phenobarbital, primidone, oxcarbazepine, topiramate >200 mg, eslicarbazepine, rufinamide) **reduce OCP efficacy** — recommend ≥50 µg ethinyl estradiol formulation or non-oral contraception (IUD, depot, etonogestrel implant — note implants also reduced efficacy with inducers).
+     - **Enzyme-inducing AEDs** (carbamazepine, phenytoin, phenobarbital, primidone, oxcarbazepine, topiramate >200 mg, eslicarbazepine, rufinamide) **reduce OCP efficacy** — choose a contraceptive method not dependent on hormone levels that inducers lower (e.g., IUD), and do not rely on a higher-dose ethinyl estradiol pill without checking guidance [VERIFY: current CDC US MEC / FSRH guidance on contraception with enzyme-inducing drugs] (note etonogestrel implants also have reduced efficacy with inducers).
      - **Non-inducing:** levetiracetam, lamotrigine, valproate, gabapentin, pregabalin, lacosamide, brivaracetam, zonisamide, ethosuximide. Lamotrigine note: estrogen-containing OCP lowers lamotrigine levels by ~50% — adjust dose during cycles.
    - **HIV ART / immunosuppressants:** avoid enzyme-inducing AEDs (interact with protease inhibitors, NNRTIs, integrase inhibitors, tacrolimus, sirolimus, cyclosporine). Levetiracetam, lacosamide, gabapentin, pregabalin preferred.
    - **Bone health:** chronic enzyme-inducing AEDs and valproate associated with bone loss; supplement vitamin D, calcium, DEXA in long-term users.
@@ -89,7 +101,7 @@ Senior neurologist / epileptologist writing the AED prescription with titration 
    - **Lamotrigine:** very slow titration to avoid SJS/TEN.
      - Without valproate, without enzyme inducer: 25 mg daily ×2 weeks → 50 mg daily ×2 weeks → 100 mg daily ×1 week → 150–200 mg daily.
      - With valproate (inhibits glucuronidation; raises lamotrigine levels): 25 mg every other day ×2 weeks → 25 mg daily ×2 weeks → 50 mg daily; target 100–200 mg/day.
-     - With enzyme inducer (carbamazepine, phenytoin): start 50 mg daily ×2 weeks → 100 mg BID; higher target dose 300–500 mg/day.
+     - With enzyme inducer (carbamazepine, phenytoin): start 50 mg daily ×2 weeks → 100 mg/day in 2 divided doses (50 mg BID) ×2 weeks → then titrate gradually to the higher target dose 300–500 mg/day [VERIFY: current lamotrigine label].
    - **Oxcarbazepine:** 300 mg BID start → titrate to 600 mg BID over 2 weeks; monitor sodium (hyponatremia).
    - **Lacosamide:** 50 mg BID start → 100 mg BID after 1 week; max 400 mg/day.
    - **Topiramate:** 25 mg daily, increase 25–50 mg/week to 100–200 mg BID. Watch cognitive effects, paresthesias, kidney stones, glaucoma.
@@ -119,6 +131,20 @@ Senior neurologist / epileptologist writing the AED prescription with titration 
    - If seizures persist on adequate dose / level: switch to second monotherapy or add second AED.
    - Drug-resistant epilepsy (failure of 2 adequately tried AEDs at target dose) → epilepsy center referral for surgical evaluation, vagal nerve stimulation, RNS, ketogenic diet.
    - Switching: cross-taper over 4–6 weeks; titrate new AED to target dose before tapering off old one.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pick the lamotrigine ladder labelled "without valproate" when the medication list holds valproate, an enzyme inducer, or an estrogen-containing contraceptive — the schedule looks complete but the exposure is wrong.
+- Fill `Target dose` or a level range from memory; levetiracetam, gabapentin, pregabalin and topiramate need a CrCl-based dose, and target ranges are lab- and label-specific `[VERIFY: current label / formulary]`.
+- Tick "OCP-compatible" in `RATIONALE` while stating only one direction of a two-way interaction (inducers lower contraceptive exposure; estrogen lowers lamotrigine).
+- Quote a malformation percentage without the registry it came from and the dose band it applies to.
+
+✅ **DO:**
+- Count the titration out week by week, note the week each step begins, and make every `FOLLOW-UP` visit land on the week its stated dose is actually reached.
+- Calculate CrCl from the supplied age, weight and SCr before any renal adjustment; if one is missing, write "renal adjustment not assessed".
+- For each co-medication (contraceptive, warfarin/DOAC, tacrolimus, antiretrovirals) state direction and mechanism (CYP3A4 or UGT induction, glucuronidation inhibition).
+- Confirm HLA-B*15:02 status was supplied before carbamazepine or oxcarbazepine in at-risk ancestry; otherwise mark the test as pending, not negative.
 
 ## Output Format
 
@@ -223,8 +249,8 @@ PATIENT EDUCATION:
 
 FOLLOW-UP:
 - 2-week phone check (titration adherence, rash, mood).
-- 6-week visit (after reaching 100 mg/day): seizure log, side effects, considered up-titration.
-- 8 weeks: at 200 mg/day target.
+- 6-week visit (100 mg/day reached in week 5; 200 mg/day begins week 6): seizure log, side effects, considered up-titration.
+- 8 weeks: 2 weeks at the 200 mg/day target (reached week 6).
 - 3 months: reassess seizure freedom and need for higher dose.
 - Pre-pregnancy planning visit when she's ready.
 

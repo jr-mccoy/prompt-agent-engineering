@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Let bets land in quadrants by the model's sense of "high return" rather than the coordinates the user scored.
+- Scale bubbles by radius: a bet with twice the investment drawn with twice the radius shows four times the area.
+- Let the model invent bet names, dollar allocations or expected-return figures, or add a bet so each quadrant has one.
+- Trust a total-allocation callout without checking it against the bubbles and the stated budget envelope.
+
+✅ **DO:**
+- Place each bet from its intake scores against the stated axis midpoints, and re-check every bet within a tenth of a boundary.
+- Sum the displayed allocations and compare them with the total callout and the budget envelope.
+- Pick two bubbles and check their area ratio equals their investment ratio.
+- Count bubbles against the intake; an unscored bet goes in Zone 3 as "[unscored]", not on the matrix.

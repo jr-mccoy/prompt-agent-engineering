@@ -2,6 +2,12 @@
 title: "Anticoagulation Decision Support Reasoner"
 category: medicine
 description: "Structured reasoning for anticoagulation initiation, agent selection, duration, and periprocedural management across atrial fibrillation, VTE, and mechanical valve indications."
+techniques:
+  - ST-02
+  - DS-02
+  - CM-02
+  - ST-03
+  - QA-01
 tags:
   - medicine
   - cardiology
@@ -9,14 +15,26 @@ tags:
   - anticoagulation
   - stroke-prevention
   - VTE
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_drug_interaction_checker.md
-  - domain-healthcare-clinical/prompts/medicine_surgical_preoperative_assessment.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_drug_interaction_checker.md
+  - domain-healthcare-clinical/prompts/specialty/medicine_surgical_preoperative_assessment.md
 ---
 
 # Anticoagulation Decision Support Reasoner
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Support clinicians reasoning through anticoagulation decisions: whether to anticoagulate, which agent, what dose, how long, and how to manage around procedures — across atrial fibrillation, venous thromboembolism, mechanical valves, and related indications.
 
@@ -108,7 +126,7 @@ Recommend a specific agent with specific dose:
 
 ### Step 5: Define Duration and Stopping Rule
 
-- **AF:** indefinite while CHA₂DS₂-VASc remains ≥ threshold; annual reassessment of bleeding risk
+- **AF:** indefinite while the stroke-risk score remains at or above the treatment threshold of the guideline cited (state the score version and the sex-specific threshold used) [VERIFY: current ACC/AHA/ACCP/HRS or ESC AF guideline]; annual reassessment of bleeding risk
 - **Provoked VTE with transient major provocation:** 3 months
 - **Unprovoked VTE:** extended indefinite with periodic reassessment; weigh bleeding risk and recurrence prediction
 - **Cancer-associated VTE:** as long as cancer active
@@ -237,7 +255,7 @@ SAFETY CHECKLIST
 
 **End-stage renal disease / dialysis:** Evidence for DOACs evolving; warfarin has historically been standard but trials have challenged it. Hematology / cardiology input recommended.
 
-**Pregnancy:** Warfarin contraindicated in first trimester; LMWH is standard. DOACs contraindicated in pregnancy and breastfeeding.
+**Pregnancy:** Warfarin is teratogenic (embryopathy risk greatest in the first trimester, with fetal risk later in pregnancy as well) and is generally avoided; LMWH is standard. Mechanical valves in pregnancy are managed by specialists under a separate regimen [VERIFY: current ACC/AHA valvular heart disease guideline / warfarin label]. DOACs contraindicated in pregnancy and breastfeeding.
 
 **Obesity (BMI >40 or weight >120 kg):** Apixaban and rivaroxaban have reassuring data; dabigatran and edoxaban have less. Check current ISTH guidance.
 
@@ -246,6 +264,22 @@ SAFETY CHECKLIST
 **Active cancer:** Cancer-associated VTE has its own agent hierarchy — GI/GU cancers tilt toward LMWH; apixaban/rivaroxaban/edoxaban acceptable for many others.
 
 **Left atrial appendage occlusion:** Alternative for AF patients with long-term anticoagulation contraindication — requires electrophysiology / cardiology input.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report `CHA₂DS₂-VASc: [value]` or `HAS-BLED: [value]` without the component-by-component tally; a total that cannot be re-added from the listed comorbidities, age band and sex is a fabricated score.
+- Fill `Dose: [specific dose + frequency]` from memory; the dose and each dose-reduction criterion (age, weight, serum creatinine, CrCl) come from the current label for that agent and indication, or carry `[VERIFY: current label / formulary]`.
+- Apply AF dose-reduction criteria to a VTE indication, or the reverse — the same DOAC has different labelled regimens by indication.
+- List an entry under `DRUG INTERACTIONS TO CHECK` with a magnitude ("major") but no mechanism; say whether it is CYP3A4/P-gp inhibition or induction, additive platelet inhibition, or another pathway, because the management differs.
+- Fill `Guideline basis: [name + year + recommendation class]` with a class or year you cannot confirm; name the guideline and mark `[VERIFY: recommendation class]`.
+
+✅ **DO:**
+- Recompute CrCl by Cockcroft-Gault from the supplied age, weight, sex and serum creatinine, state the weight used, and confirm the dose line sits in the label bracket for that value.
+- Check pregnancy status, hepatic function (Child-Pugh if cirrhotic) and platelet count against the chosen agent before ticking the safety checklist; a blank input is listed as missing, not assumed normal.
+- When the recomputed stroke and bleeding estimates are close, put "equivocal" in `Net clinical benefit` and name the single datum that would decide it.
 
 ---
 

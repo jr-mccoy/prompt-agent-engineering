@@ -26,7 +26,7 @@ tags:
   - cognitive-assessment
   - polypharmacy
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_history_taking_rehearsal.md
   - domain-medical-education/learner-osce-skills/osce_pediatric_caregiver_interview_rehearsal.md
@@ -154,6 +154,16 @@ Single highest-yield improvement: [...]
 | `decision_maker` | patient / shared / activated-DPOA |
 | `goals_of_care_window` | If `open`, expect ACP entry; if `acute_inappropriate`, learner should NOT push |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Reporting a short cognitive screen in a format the tool does not use ("clock 4/5 errors") | Score per the tool's own scheme (Mini-Cog: recall 0–3 + clock 0 or 2 = /5), recompute the total, and state the cut-off `[VERIFY: tool scoring guide]`; a positive screen is not a diagnosis |
+| A ✓ whose own parenthetical admits the item was not done ("ADL — bathing, dressing not directly asked") | Make the symbol agree with the evidence; count the ADLs and IADLs actually probed in the transcript (≥ 2 each) |
+| Sensory or decision-role lines ticked with no transcript turn behind them | Each ✓ points to a quoted learner line; without one it is ✗ |
+| Taper schedules or "safer" replacement drugs credited from memory | Credit the Beers flag itself; tag any taper or substitute `[VERIFY: AGS Beers Criteria, current edition]` rather than grading it correct |
+| Handing a task to the caregiver before the patient has agreed to it | Check the order of address within that turn: the patient's consent comes before the caregiver's assignment |
+
 ## Verification Checklist
 
 - [ ] Patient and caregiver lines clearly separated.
@@ -179,7 +189,7 @@ Daughter: "Mom, you missed your pills three days last week and you couldn't reme
 Learner: "Funke — thank you, I'll come back to you for examples. Mrs. Adesina, what's your sense — has anything felt different to you?"
 Mrs. Adesina: "(thinks) ... maybe a little slower. But I'm 82 — that's normal, isn't it?"
 Learner: "It can be — I want to do a quick test that takes a few minutes and gives us better information than guessing. Is that OK?"
-[Mini-Cog: registers 3 words, draws clock 4/5 errors with hands, recalls 1 of 3 at delay]
+[Mini-Cog: registers 3 words; recalls 1 of 3 at delay (recall 1/3); clock abnormal — hands misplaced (clock 0/2); total 1/5 — screen positive, not a diagnosis [VERIFY: Mini-Cog scoring guide for cut-off]]
 Learner: "Thank you. Let me also ask about your day-to-day. Who handles the pills at home?"
 Mrs. Adesina: "I do — but it's confusing now."
 Learner: "And shopping, cooking, paying bills?"
@@ -208,8 +218,8 @@ Learner: "I understand. And I want to share — that medicine is one that, in ou
 
 >>> SCORECARD — Geriatric scaffold
 
-[✓] Cognitive screen — Mini-Cog performed and scored
-[✓] ADL — bathing, dressing not directly asked (~)
+[✓] Cognitive screen — Mini-Cog performed and scored (1/5)
+[✗] ADL — 0 of ≥ 2 probed (bathing, dressing not directly asked)
 [✓] IADL — meds, finances, shopping probed
 [~] Fall risk — gait/orthostatics not probed
 [✓] Med review + Beers-class flag (lorazepam)

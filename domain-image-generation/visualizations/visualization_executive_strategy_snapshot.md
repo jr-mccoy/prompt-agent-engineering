@@ -2,12 +2,21 @@
 title: "Executive Strategy Snapshot Visualization Prompt"
 category: executive
 description: "Generate a structured, no-UI visualization prompt optimized for executive decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Executive Strategy Snapshot Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let ZONE 4 KPIs be rounded, re-labelled, or restated ("$4.73M" → "~$5M", "net revenue retention" → "retention") — a cleaner number on an executive page is a different number.
+- Place initiatives on the ZONE 2 impact/effort matrix by the model's judgement when the intake gave no scores; quadrant position reads as an assessment someone made.
+- Assign ZONE 5 owners by guessing from job titles, or list decision asks the executive never raised.
+- Show both a target and an actual for a KPI when the intake supplied only one of them.
+
+✅ **DO:**
+- Require a numeric impact and effort score (or an explicit quadrant) per initiative; without them, render the matrix axes beside an unscored initiative list.
+- Read each KPI value, unit, and period on the rendered scoreboard back against the intake line by line; any mismatch, however small, fails the image.
+- Confirm the ZONE 3 sequence honours the intake dependencies — nothing is scheduled ahead of something it depends on.

@@ -24,7 +24,7 @@ tags:
   - decision-tree
   - tree-of-thoughts
   - if-then-branching
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_diagnostic_schema_designer.md
   - domain-medical-education/learner-clinical-reasoning/reason_bayesian_pretest_posttest_drill.md
@@ -141,6 +141,16 @@ Learner accuracy on replay: [...]
 | `time_pressure_per_decision_seconds` | Soft cap for realism |
 | `include_disposition_decision` | Force final disposition node (ICU / floor / OR / transfer / discharge) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Stating doses, infusion ranges, and per-hour mortality figures from memory so the tree looks authoritative | Tag every dose, titration range, and outcome statistic with its source type, and mark anything not checked [VERIFY: current Surviving Sepsis Campaign / ACLS / drug-reference edition] |
+| Padding a node's 2–4 count with strawman branches whose trigger is "never appropriate," then reporting "Branches without triggers: none" | Count a never-appropriate option as a labeled teaching foil, not a branch; a node passes only with at least two branches that a real trigger could select |
+| A "Current state" line that already names the next step (e.g., "pending CT" right before asking about imaging), so the learner's correct answer is cued | Write the state from vitals, labs, and interventions only, and reread it before asking: if it contains the expected answer, rewrite it |
+| Revealed results whose physiology doesn't hang together (MAP rising while lactate, HR, and pressor dose move in contradictory directions) | Before revealing, check that each revealed vital and lab moves in a direction the chosen branch can produce within the stated time window |
+| Reporting adversarial-replay accuracy as a fraction that doesn't match the decisions listed as changed | Recount: the denominator of "Learner accuracy on replay" must equal the number of decisions in "Decisions that change," and unchanged decisions belong only in the "stay the same" list |
+
 ## Verification Checklist
 
 - [ ] End-state goal stated explicitly at the start. The tree steers toward it.
@@ -173,15 +183,15 @@ Q: First decision now?
 Grade: correct — abx are the most time-sensitive intervention. Bonus: cultures *before* abx if obtainable without delay; ≤ 45 min is acceptable, but do not let cultures delay abx in shock.
 
 Branches enumerated:
-  [a] Broad-spectrum abx covering gram-negative UTI source (e.g., piperacillin-tazobactam 4.5 g IV, plus consider vancomycin if MRSA risk or instrumentation).
+  [a] Broad-spectrum abx covering gram-negative UTI source (e.g., piperacillin-tazobactam 4.5 g IV, plus consider vancomycin, weight-based dose [VERIFY: current IDSA/ASHP vancomycin dosing guideline or institutional protocol], if MRSA risk or instrumentation).
       Trigger: shock without identified pathogen, urinary source clinically.
-      Consequence-if-wrong (omit abx or narrow): mortality +7–10% per hour delay.
+      Consequence-if-wrong (omit abx or narrow): mortality rises with each hour of delay [VERIFY: current Surviving Sepsis Campaign guideline for the cited magnitude].
       Recovery: broaden if no improvement at hour 6 culture-pending; tailor at hour 24–48 with cultures.
-  [b] Cultures-first only (no abx for an hour while waiting for culture draw).
-      Trigger: never appropriate in shock.
+  [foil — not counted as a branch] Cultures-first only (no abx for an hour while waiting for culture draw).
+      Why it fails: no trigger selects it in shock.
       Consequence: mortality increase.
       Recovery: send cultures fast, give abx now.
-  [c] Narrow-spectrum abx (e.g., cefazolin).
+  [b] Narrow-spectrum abx (e.g., cefazolin).
       Trigger: known sensitive organism only.
       Consequence: undertreated resistant organism.
       Recovery: broaden empirically.
@@ -210,7 +220,7 @@ Branches:
 Commit: [a]   Reveal: norepi started at 0.1 µg/kg/min; MAP up to 66 in 20 min; lactate 3.6.
 
 >>> DECISION POINT 3
-Current state: MAP 66 on norepi 0.1; lactate trending; pending CT abdomen/pelvis to confirm source.
+Current state: MAP 66 on norepi 0.1; lactate 3.6 (down from 4.0); urinary source suspected but not confirmed.
 
 Q: Next decision?
 > "Source control — confirm urinary source vs. obstruction. Imaging."
@@ -246,19 +256,17 @@ Septic shock (urosepsis suspected), hour 1, MAP 58, lactate 4.2
 
 >>> AUDIT
 Missing decisions: cortisol consideration in pressor-refractory shock not surfaced (acceptable for intern level; flag for next time).
-Branches without triggers: none.
+Branches without triggers: none (the Decision 1 cultures-first option is a labeled teaching foil, not a branch; each node keeps ≥ 2 trigger-selectable branches).
 Vague consequences: none.
 Recovery branches missing: none.
 
 >>> ADVERSARIAL REPLAY
 Changed variable: patient is 78 with HFrEF EF 25%.
 Decisions that change:
-  - Decision 1 (abx): unchanged.
   - Decision 2 (fluids before pressor): much more cautious; consider smaller boluses (250–500 mL) with dynamic re-assessment; earlier pressor.
-  - Decision 3 (imaging + source control): unchanged.
   - New decision: monitor for fluid-overload; bedside echo to guide fluid responsiveness.
-Decisions that stay the same: timing of abx, choice of pressor, need for source control, disposition.
-Learner accuracy on replay: 3/3 changes correctly identified.
+Decisions that stay the same: Decision 1 (timing and choice of abx), choice of pressor, Decision 3 (imaging + source control), disposition.
+Learner accuracy on replay: 2/2 changes correctly identified.
 
 >>> RESTUDY TARGET
 Dynamic measures of fluid responsiveness in patients with reduced LV systolic function — passive leg raise, IVC collapsibility, stroke-volume variation. This decision point will recur every time there's shock + chronic HFrEF.

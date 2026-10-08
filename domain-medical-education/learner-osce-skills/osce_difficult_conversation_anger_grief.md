@@ -26,7 +26,7 @@ tags:
   - anger
   - communication
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_communication_breaking_bad_news_rehearsal.md
   - domain-medical-education/learner-osce-skills/osce_substance_use_disclosure_rehearsal.md
@@ -141,6 +141,16 @@ Single highest-yield improvement: [...]
 | `system_failure_known` | If `true`, SP knows the system failed and will hammer accountability; learner cannot deny without lying |
 | `closure_with_action_item` | Forces named follow-up (M&M, patient relations, hospital review) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| ✓ on "Named the specific emotion" with an "implicitly" note, while the coaching says the emotion was never named | The evidence quote must contain the emotion word; implicit naming is `~`, and scorecard and coaching must agree |
+| An opening affect or deltas that ignore the Method's rules (anger opens at 8; each trigger moves ±1–2) | Recompute the trajectory from the annotated turns (opening, each delta with its trigger, peak, closing) and check every trigger is on the escalate or de-escalate list |
+| Crediting the underlying need when the SP volunteered it after calming, not because the learner asked or reflected | Quote the learner line that drew the need out; if the SP offered it unprompted, score `~` |
+| "Did not promise an outcome" ✓ while the learner made commitments outside their role ("I'll personally find out the minute-by-minute") | List each commitment and check it is deliverable from the learner's stated relationship to the event |
+| Fewer baits fired than planned, with "Declined the bait" still scored ✓ | Count baits fired against `bait_attempts` and score "declined" across all of them, not only the first |
+
 ## Verification Checklist
 
 - [ ] Affect trajectory recorded numerically per turn, not vibes.
@@ -160,21 +170,21 @@ Single highest-yield improvement: [...]
 **Output (excerpt):**
 
 ```
-SP [affect 9]: "Are you the doctor? Where is the doctor who was here last night? My father died alone in your hallway."
+SP [affect 8]: "Are you the doctor? Where is the doctor who was here last night? My father died alone in your hallway."
 Learner: "I'm Dr. Patel — I just came on shift. I'm so sorry. I'd like to hear what happened from you."
-SP [affect 8, de-escalated 1]: "He came in at 8pm with chest pain. The nurse said it was anxiety. I called at midnight, they said he was waiting. At 2am they called me back to say he had coded."
+SP [affect 7, de-escalated 1]: "He came in at 8pm with chest pain. The nurse said it was anxiety. I called at midnight, they said he was waiting. At 2am they called me back to say he had coded."
 Learner: "(holds silence ~6 seconds) ... waiting six hours, being told it was anxiety, and then a call at 2am. I'm so sorry."
-SP [affect 7]: "Don't you people have any idea what that does to a family?"
+SP [affect 6]: "Don't you people have any idea what that does to a family?"
 [bait — system attack]
 Learner: "I do. And I won't pretend I know yet exactly what happened — I wasn't here. What I can promise you is that I will sit with you for as long as you need right now, and I'll personally find out the minute-by-minute. Would you want to walk through it with me when we know more, or hear it from the doctor who was here?"
-SP [affect 5]: "(crying) ... I want to know if he was alone. I want to know if anyone told him I was coming."
+SP [affect 4]: "(crying) ... I want to know if he was alone. I want to know if anyone told him I was coming."
 Learner: "(holds silence) ... Of course. Those are the questions I'd want answered too. Let me find that out."
 [...]
 
 >>> SCORECARD — De-escalation moves
 
 [✓] Acknowledged emotion before content
-[✓] Named specific emotion (implicitly — "waiting six hours...told it was anxiety...call at 2am")
+[~] Named specific emotion (implicitly only — "waiting six hours...told it was anxiety...call at 2am"; no emotion word used)
 [✓] Held silence at least once (twice)
 [✓] Declined bait ("don't you people have any idea")
 [✓] Apology of empathy ("I'm so sorry")
@@ -194,9 +204,9 @@ Learner: "(holds silence) ... Of course. Those are the questions I'd want answer
 
 >>> SCORECARD — Affect trajectory
 
-Opening:       9
-Peak:          9 (opening)
-Closing:       5
+Opening:       8
+Peak:          8 (opening)
+Closing:       4
 Direction:     down
 
 >>> SCORECARD — Closing

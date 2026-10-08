@@ -22,7 +22,7 @@ tags:
   - drill
   - clinical-correlate
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_anatomy_radiologic_correlation_drill.md
   - domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md
@@ -112,6 +112,16 @@ Integrative question: [a single question that requires combining ≥2 structures
 | `language_of_correlate` | `imaging` / `surgical` / `bedside-exam` / `trauma` — the genre of correlate asked |
 | `vary_question_phrasing` | If `true`, no two Q1s use the same opening verb across the drill |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Labeling the structure list with an ordering principle it doesn't follow (announced "lateral→medial," with the most lateral structure listed last) | Before locking the list, check each position against the stated principle and against a standard mnemonic or atlas plate for that region |
+| Filling the Q2 "neurovascular" slot with something else (an insertion site, an action) so the cycle looks complete | Check each question asks what its slot label says; a Q2 with no artery, vein, lymphatic, or nerve in it doesn't count as asked |
+| Grading `correct` when the learner gets the structure right but the relation backwards (medial for lateral, superficial for deep) | Grade spatial relations on direction as well as name — a reversed relation is `incorrect`, because it's the error that matters at the bedside |
+| Mixing roof, floor, and contents of a space in one list, so a boundary structure is drilled as if it were contained | Tag each listed structure as boundary, roof/floor, or content, and pitch Q1 to match that role |
+| A summary score that doesn't add up to the questions actually asked | Check that correct + partial + incorrect equals 3 × the number of structures drilled, and that `depth = comprehensive` lists more structures than a survey (5–8) would |
+
 ## Verification Checklist
 
 Before returning the drill, confirm:
@@ -126,29 +136,30 @@ Before returning the drill, confirm:
 
 ## Worked Example (compact)
 
-**Input:** region = `cubital fossa`, learner_level = `MS2`, depth = `comprehensive`, time_budget_minutes = `15`, scenario = none.
+**Input:** region = `cubital fossa`, learner_level = `MS2`, depth = `survey`, time_budget_minutes = `15`, scenario = none.
 
-**Output (excerpt — first structure only):**
+**Output (excerpt — structure 2 only):**
 
 ```
 ANATOMY DRILL — cubital fossa
-Learner level: MS2   Depth: comprehensive   Time budget: 15 min
-Structures (lateral→medial in fossa contents): 1. Biceps tendon  2. Brachial artery  3. Median nerve  4. Median cubital vein (roof)  5. Bicipital aponeurosis  6. Radial nerve (deep, splits to superficial branch + posterior interosseous)
+Learner level: MS2   Depth: survey   Time budget: 15 min
+Structures — contents (lateral→medial): 1. Radial nerve (deep, splits to superficial branch + posterior interosseous)  2. Biceps tendon  3. Brachial artery  4. Median nerve
+           — roof (superficial→deep): 5. Median cubital vein  6. Bicipital aponeurosis
 
->>> DRILLING STRUCTURE 1 of 6: Biceps tendon
+>>> DRILLING STRUCTURE 2 of 6: Biceps tendon (content)
 
-Q1 (location): What forms the lateral boundary of the cubital fossa, and where does the biceps tendon sit relative to the brachial artery?
+Q1 (location): Where does the biceps tendon sit relative to the brachial artery in the fossa?
 [learner responds]
-Grade: partial — "lateral boundary = brachioradialis" is correct; "biceps tendon lies lateral to the brachial artery in the fossa" is the piece you missed.
+Grade: partial — named the brachial artery as its neighbour but not the direction; the biceps tendon lies lateral to the brachial artery.
 
-Q2 (neurovascular): Insertion of the biceps tendon and its branch from the musculocutaneous nerve — name the insertion site and the cutaneous continuation of the musculocutaneous nerve.
+Q2 (neurovascular): Which nerve supplies the biceps brachii, whose tendon this is?
 [learner responds]
 Grade: correct.
 
-Q3 (clinical correlate): A distal biceps tendon rupture produces what deformity, and which one functional loss is most prominent — flexion or supination?
+Q3 (clinical correlate): After a distal biceps tendon rupture, which functional loss is most prominent — flexion or supination strength?
 [learner responds]
 Grade: correct — supination strength loss > flexion (brachialis preserves most flexion).
 
->>> DRILLING STRUCTURE 2 of 6: Brachial artery
+>>> DRILLING STRUCTURE 3 of 6: Brachial artery (content)
 ...
 ```

@@ -14,7 +14,7 @@ tags:
   - composite
   - image-edit
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
   - domain-image-generation/gpt-image-2/gptimage2_character_consistency_anchor.md
@@ -90,7 +90,7 @@ IGNORE: background, clothing, lighting.
 Image 2 — ROLE: subject identity (body / pose).
 Description: [one sentence].
 TAKE: body shape, posture, height, hand position.
-IGNORE: clothing, background.
+IGNORE: face, clothing, background, lighting.
 
 Image 3 — ROLE: garment.
 Description: [one sentence].
@@ -100,7 +100,7 @@ IGNORE: the model wearing it, the photo's lighting.
 Image 4 — ROLE: scene / environment.
 Description: [one sentence].
 TAKE: setting, props, depth, architectural details.
-IGNORE: any people in it, any garments visible.
+IGNORE: any people in it, any garments visible, its lighting.
 
 Image 5 — ROLE: lighting (MASTER).
 Description: [one sentence].
@@ -155,6 +155,21 @@ If the face from Image 1 is altered in any way, the output is incorrect. If ligh
 1. "The subject's face has drifted from Image 1 — restore it to exactly match Image 1, preserving everything else from this current composite."
 2. "Lighting on the subject's face doesn't match Image 5 — re-cast it from the same direction with the same softness."
 3. "The garment from Image 3 is rendering too saturated — reduce saturation to match Image 6's color grade."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assume roles are disjoint because each image has one ROLE line — a body/pose reference (Image 2) contains a face; if its IGNORE list drops `face` when you adapt the template, two references both supply identity and the output face blends them.
+- Pass the "exactly one lighting MASTER" check while a scene reference (Image 4) carries strong light of its own and its IGNORE list omits `its lighting` — a competing light source produces the double shadows the Forbidden list names.
+- Approve the composite because each ingredient is recognizable — a face that looks "like" Image 1 may be part Image 2's person.
+- Fill all 16 slots because the allocation table has 16 rows — every extra reference that shares an attribute with another is a new conflict.
+
+✅ **DO:**
+- Before sending, build a role matrix (rows = images; columns = face, body, garment, scene, lighting, color grade): each column has exactly one TAKE, and every other image that visibly contains that attribute lists it under IGNORE.
+- After generation, compare the output face with both Image 1 and any other reference that shows a face; resemblance to the second person means the identity conflict leaked.
+- Check scale against a fixed object in Image 4 (a door is about 2 m tall) and shadow direction on the subject against Image 5.
 
 ---
 

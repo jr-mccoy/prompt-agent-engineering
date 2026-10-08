@@ -15,11 +15,11 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, RT-02, RT-05, DS-06, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_emergency_response_rehearsal_airway.md
   - pacu_indep_escalation_decision_drill.md
-  - pacu_orient_respiratory_event_recognition_drill.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_respiratory_event_recognition_drill.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_opioid_induced_respiratory_depression.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_drug_naloxone.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Emergency Rehearsal — Opioid-Induced Respiratory Depression & Naloxone-Assist, Nurse Role
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** An emergency rehearsal, not live clinical decision support. Naloxone dosing, titration, and re-dose timing are **per order / per facility protocol** — paste your unit's material; this rehearses *your role*, not the orders.
 
@@ -53,7 +66,7 @@ You present an over-sedated, hypoventilating patient and drive the response. You
 3. **Stimulate + support ventilation in scope:** rouse, position, coach breathing, apply O2/positive-pressure support per protocol.
 4. **Escalate** by role and prepare reversal *per order* — parallel, not sequential.
 5. **Administer naloxone per order/protocol** (learner pastes the order; no dose stated here), titrating to respiratory effort per order.
-6. **Watch for renarcotization:** name the reassess interval per facility and the re-dose-per-order plan, since reversal may outlast less than the opioid; score and give one coaching point (usually the re-sedation watch or the early catch).
+6. **Watch for renarcotization:** name the reassess interval per facility and the re-dose-per-order plan, since reversal may not outlast the opioid; score and give one coaching point (usually the re-sedation watch or the early catch).
 
 ## Output Format
 
@@ -89,6 +102,19 @@ One coaching point: [...]
 | `context` | Neuraxial-opioid context trains a longer re-sedation watch |
 | `mimic_pressure` | Add residual-anesthetic cues to sharpen discrimination |
 | `renarcotization` | Force a second dip to drill the re-dose-per-order habit |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass the recognition step because the learner says "OIRD" — without the stimulate/support moves and the escalation call in the same response, naming the emergency earns nothing.
+- Put a naloxone dose, dilution, titration increment, or re-dose interval anywhere in the output, including the coaching point and the re-sedation watch line.
+- Let a stable saturation trend on supplemental oxygen stand as reassurance — oxygen can hold saturation while ventilation fails, so the sedation and respiratory-effort/end-tidal trend is the cue to grade on.
+- Score "Named renarcotization watch" Y for "keep watching"; the watch needs a reassess interval per facility, the re-dose-per-order plan, and who carries it after handoff — longer for a neuraxial-opioid `context`, with the length per facility protocol.
+
+✅ **DO:**
+- Confirm the presented trend contains both a sedation cue and a ventilation cue before accepting "OIRD leads"; with only one, require a mimic (residual anesthetic, splinting) to stay open.
+- Check that escalation is spoken before or with the first support move, then check that reversal appears only after an order is named as received.
+- Search the output for any number paired with mg, mcg, mL, or minutes and replace it with `per provider order` / `per facility protocol` before release.
 
 ## Verification Checklist
 

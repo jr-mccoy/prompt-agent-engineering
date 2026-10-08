@@ -15,11 +15,11 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_solo_new_pattern_capture_log.md
   - pacu_solo_monthly_growth_review.md
-  - pacu_orient_daily_debrief_selfprep.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_daily_debrief_selfprep.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_simulation_debrief_facilitator.md
 references:
@@ -28,6 +28,19 @@ references:
 ---
 
 # Near-Miss / Good-Catch Reflection — Blameless, Learning-First Debrief of Your Own Practice
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A personal reflection aid, not an incident report, disclosure, or peer-review substitute. Report events through your facility's real safety-reporting channels; this tool helps *you* learn from what happened, it does not replace required reporting.
 
@@ -91,6 +104,20 @@ Formal report via facility channel? [Y/N — routed]
 | `lens` | Emphasize the near-miss (what almost failed) or the good-catch (what to repeat) |
 | `depth` | Quick 3-line process vs full layered debrief |
 | `link` | Feed the durable change straight into the monthly growth review |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the DEFENSE LAYERS "Held" slot with a safeguard the narrative never mentions (barcode scan, pharmacy double-check) because it is a typical layer.
+- Let CONTRIBUTING CONDITIONS restate the error itself ("almost hung the wrong bag"); a condition is a precursor — load, label design, interruption, handoff gap.
+- Choose a DURABLE CHANGE that depends on someone else (relabeling, staffing); that is a system recommendation for the facility report, not a change the learner controls.
+- Mark `Formal report … Y — routed` because reporting was mentioned; Y means the learner states the report was or will be filed and names the channel.
+- Put patient identifiers (name, MRN, room, exact time) in this personal reflection — it is not a protected safety report.
+
+✅ **DO:**
+- Trace every line in EVENT, DEFENSE LAYERS, and CONTRIBUTING CONDITIONS to a sentence in `narrative`, `catch_point`, or `context`; delete or ask about anything without a source.
+- Check the event type against the sequence: if harm reached the patient, it is not a near-miss — reframe it and route it to the facility's event process.
+- Test the durable change against the narrative: it must act at or before the step where the miss began, not downstream of the catch point.
 
 ## Verification Checklist
 

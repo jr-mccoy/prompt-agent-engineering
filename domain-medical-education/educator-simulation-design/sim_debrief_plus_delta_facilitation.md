@@ -21,7 +21,7 @@ tags:
   - plus-delta
   - rapid-cycle
   - facilitation
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_debrief_guide_pearls.md
   - domain-medical-education/educator-simulation-design/sim_debrief_advocacy_inquiry.md
@@ -109,6 +109,16 @@ Considered: [accepting a vague delta | generic praise | using plus-delta on a he
 | `learner_level` | Junior → more concrete skill deltas; senior → may still warrant escalation |
 | `escalation_check` | If flagged → switches recommendation to deeper framework |
 | `add_team_round` | Adds a team-process plus and delta separate from individual skills |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Ticking the DEPTH GUARD "yes" because the important gap appears somewhere in the delta table, though the row's next-time behavior addresses a different problem | Name the most consequential gap from `observed_performance` first, then point to the one delta row whose next-time behavior would change that exact gap; if none does, the answer is "no — flagged" |
+| A plus that names a skill area ("good vein selection") rather than an action, so it passes the no-generic-praise rule on a skim | Rewrite each plus as an action the learner could repeat on the next cycle ("palpated and chose a straight forearm vein before tourniquet release") |
+| More pluses and deltas than the `debrief_time` rule allows (e.g., two deltas in a sub-5-minute micro-debrief) | Count the plus and delta items against the Variation Hooks rule for the stated minutes and confirm the TIME BUDGET minutes sum to `debrief_time` |
+| A FIT STATEMENT that says "no heavy affect" based on the case type alone | Cite the `escalation_check` value and add a live switch condition ("if a learner is visibly upset or a frame issue surfaces, stop and move to PEARLS / advocacy-inquiry") |
+| Next-time behaviors that are observable but encode a technique detail (flush volume, patency-confirmation method) from memory | Check each clinical next-time behavior against the program's skills checklist or institutional procedure policy `[VERIFY: local IV insertion policy]` before the FIDELITY CHECK row is marked verified |
 
 ## Verification Checklist
 

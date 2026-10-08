@@ -14,8 +14,20 @@ tags:
   - oncology
   - infectious-disease
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -132,6 +144,20 @@ Work up palpable lymphadenopathy: characterize node properties (location, size, 
    - Concerning features in children: supraclavicular, fixed, hard, >2 cm, growing despite antibiotics, B-symptoms, hepatosplenomegaly, cytopenia.
    - Common infections: EBV, CMV, cat scratch, mycobacterial.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Label constitutional symptoms "B-symptoms" unless each meets its own definition — a weight loss in kg without a baseline weight cannot be called ≥10%, and "low-grade fevers" without a measured temperature cannot satisfy the fever criterion.
+- Call the adenopathy "generalized" when the involved stations are contiguous, or when the other stations were never examined.
+- Apply the adult 1 cm cut-off to a child, to inguinal or submandibular nodes, or to a size that was estimated by palpation rather than measured.
+- Report a node as "reactive" on ultrasound hilum features or an FNA alone when it meets a prompt-biopsy trigger.
+
+✅ **DO:**
+- Recompute percentage weight loss as kg lost ÷ baseline kg × 100 over the stated interval; when the baseline is missing, write "weight criterion unverifiable".
+- Check each Step 8 biopsy trigger against the inputs and list the ones that fired with the finding that fired them, quoted.
+- Compare LDH and the smear findings to the reporting lab's ranges, not to remembered values.
+- Before contrast CT or PET-CT in a patient of reproductive age, carry a pregnancy result into the plan; in children, apply the pediatric thresholds in Step 9.
+
 ## Output Format
 
 ```
@@ -187,7 +213,9 @@ LOCALIZED vs GENERALIZED:
 - Generalized (right supraclavicular + right cervical + left axillary).
 
 CONSTITUTIONAL / B-SYMPTOMS:
-- All three present: drenching night sweats, weight loss ≥10%, low-grade fevers (B-symptoms).
+- Drenching night sweats × 6 weeks — meets the night-sweats B-symptom.
+- Weight loss 5 kg, interval and baseline weight not provided — weight criterion unverifiable (cannot be called ≥10% without a baseline).
+- "Occasional low-grade fevers" without a measured temperature — fever criterion unverifiable; document measured temperatures.
 
 EXPOSURES / RISK FACTORS:
 - None concerning. EBV remote past infection (IgG+, IgM−). HIV negative.
@@ -224,7 +252,7 @@ STAGE 2 / BIOPSY:
 WORKING DIAGNOSIS / TREATMENT:
 - Working: lymphoma (Hodgkin most likely) with constitutional symptoms — needs tissue diagnosis.
 - Hold any empiric steroids until tissue obtained (steroids alter pathology).
-- Maintain hydration; allopurinol 300 mg daily before treatment to reduce tumor lysis risk.
+- Maintain hydration; no allopurinol before tissue diagnosis (allopurinol is itself a cause of drug-induced adenopathy/DRESS — Step 5). Tumor lysis prophylaxis is decided by oncology at treatment start, by TLS risk. [VERIFY: current TLS risk-stratification / prophylaxis guidance]
 - Hematology/oncology referral within 1 week.
 
 DISPOSITION:

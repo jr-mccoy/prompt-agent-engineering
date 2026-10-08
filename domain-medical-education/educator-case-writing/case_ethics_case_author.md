@@ -24,7 +24,7 @@ tags:
   - moral-distress
   - case-writing
   - multi-perspective
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_oral_exam_case_author.md
   - domain-medical-education/educator-case-writing/case_mm_case_author.md
@@ -220,6 +220,16 @@ Replaced with: ...
 | `include_clinician_moral_distress_block` | Default true; can disable for legal-focused sessions |
 | `decision_count` | 2 minimum; 3 when the case has a non-obvious third path |
 | `align_to_AMA_or_ACP_or_ANA_code` | Maps deliberation back to a professional code's relevant section |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A precise outcome figure in the Medical Indications box ("CPR survival to discharge < 5%") with no source | Source every number in the four boxes or write `[VERIFY: source]`; learners will quote it during deliberation, so an invented prognosis figure tilts the case toward one decision |
+| Professional-code section numbers and legal generalisations ("wife has precedence in most jurisdictions") asserted while `include_legal_overlay = false` | Check that each cited code section actually says what it is cited for; surrogate-hierarchy claims are statute-specific, so write `[VERIFY: state surrogate statute]` or "consult local counsel" |
+| Two "defensible" decisions where one is a strawman, or where Decision A's endpoint is simply Decision B after a delay, so the false-consensus check passes in name only | Steelman each decision: write the strongest objection a thoughtful clinician would raise, and confirm the value each decision subordinates is one the other decision protects; if both protect the same value, they are one decision |
+| Concessions that all move toward the attending's view, producing consensus through the concession slots | Read the concessions as a set: at least one must cost the clinical team something, and each non-negotiable must collide with at least one other voice |
+| Facilitator segments that do not fit their slot (five 5-minute voices inside a 20-minute window) | Sum per-voice minutes within each segment and all segments across the session, and confirm the total equals `duration_min` |
 
 ## Verification Checklist
 

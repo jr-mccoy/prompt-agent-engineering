@@ -23,7 +23,7 @@ tags:
   - history-and-physical
   - documentation
   - inpatient
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-rotation/study_soap_note_rehearsal_with_feedback.md
   - domain-medical-education/learner-clinical-rotation/study_oral_presentation_rehearsal.md
@@ -104,7 +104,7 @@ Learner: [...]   Service: [...]
 ☐ Med without diagnosis: none
 ☑ Level-of-care mismatch: Plan says "floor bed" but HPI describes SBP 220 with end-organ symptoms
 
->>> SIDE-BY-SIDE CORRECTION (Physical Exam — score 3/11)
+>>> SIDE-BY-SIDE CORRECTION (Physical Exam — partial; missing required elements: [count])
 
 LEARNER VERSION                         | CORRECTED VERSION
 ----------------------------------------|--------------------------------------------------
@@ -130,6 +130,16 @@ Minimum required additions before co-sign:
 | `learner_level = MS2` | Rubric is teaching mode — each missing item explains *why* it matters clinically |
 | `learner_level = intern` | Rubric is efficiency mode — flags redundancy and padding as deficiencies |
 | `auto_generate_with_pitfalls` | Vignette includes an omitted surgical history, a medication allergy not in allergies section, and a PE finding inconsistent with the A&P |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Scoring a section `complete` because its heading and some text are present (Medications listed, but dose or frequency missing on some entries) | Count the required fields per entry — e.g., name/dose/route/frequency for each medication, all five vital signs — and score `complete` only when every entry has every field |
+| Logging an `omission` for data the vignette never contained, so the learner is penalized for not inventing it | Before recording an omission, confirm the datum is in `clinical_vignette`; if it isn't, record "not in source — ask the patient" instead of an error |
+| Ticking cross-reference boxes as clean ("none") without showing what was compared | For each of the four cross-reference questions, list what was compared (e.g., "5 meds checked against 4 diagnoses"; "each antibiotic in the plan checked against the allergy list") |
+| Choosing the "weakest section" by impression and attaching an invented numeric score to it | Pick the weakest section by the count of missing required elements and print that count; sections are scored `complete / partial / missing`, not out of 11 |
+| A verdict of `stand-alone complete` while a vignette-to-note discrepancy (a listed allergy, a scar, a home med) never reached the note | Before the verdict, walk the vignette line by line and tick off where each datum landed in the draft; any datum with no home blocks `stand-alone complete` |
 
 ## Verification Checklist
 

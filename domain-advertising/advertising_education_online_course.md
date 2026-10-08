@@ -20,12 +20,12 @@ tags:
   - education
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Education** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,23 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **"Clear outcomes" is where statistics get invented.** "92% job placement", "+$20K salary", and
+   "4.9★ from 3,000 learners" are what a model places under this key message. Quote an outcome
+   only from intake with its source and cohort period; otherwise state it in words, without numbers.
+2. **Credentials must be the one awarded.** A certificate graphic, university crest, accreditation
+   seal, or employer-partner logo implies recognition; show it only when supplied, and make the
+   certificate name the credential the course actually grants.
+3. **Urgency text is a fact claim.** Start dates, "only 12 seats left", early-bird prices, and
+   enrolment deadlines are copied from intake or left out.
+4. **Depicted graduates and instructors imply real people.** Do not caption figures with names,
+   job titles, or employers, and do not show a "graduate" in an employer's branded workplace.
+5. **Verify before handing over:** collect every digit sequence and every proper noun in the Final
+   Image Prompt and its variants and find each in the intake answers; then read the credential named
+   on any certificate against the Product/Offer field word for word. One miss fails the prompt,
+   even with every form line ticked.
 
 ## Output Format
 

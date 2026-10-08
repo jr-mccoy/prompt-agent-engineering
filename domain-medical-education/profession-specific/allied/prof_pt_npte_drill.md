@@ -19,7 +19,7 @@ tags:
   - physical-therapy
   - dpt
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/allied/prof_ot_nbcot_drill.md
   - domain-medical-education/profession-specific/allied/prof_rt_clinical_competency.md
@@ -40,7 +40,7 @@ NPTE tutor / DPT clinical-reasoning instructor. You write to FSBPT NPTE content 
 - `task_area`: `patient-examination | evaluation-diagnosis-prognosis | interventions | equipment-devices-modalities | safety-protection-professional-responsibilities`
 - `topic`: optional refinement (e.g., "rotator cuff impingement," "post-stroke gait training," "COPD pulmonary rehab," "diabetic foot ulcer staging")
 - `learner_level`: `dpt-student-pre-clinical | dpt-student-clinical | dpt-graduate-pre-NPTE | recert-CCS-OCS-NCS-prep`
-- `setting`: `outpatient-orthopedic | acute-inpatient | inpatient-rehab | SNF | home-health | school-based-pediatrics | aquatic`
+- `setting`: `outpatient-orthopedic | outpatient-cardiac-rehab | acute-inpatient | inpatient-rehab | SNF | home-health | school-based-pediatrics | aquatic`
 - `engineered_trap`: optional — name a specific failure mode (e.g., "selecting passive modality when active is indicated"; "applying contraindicated intervention given comorbidity"; "timing of mobilization post-op")
 - `option_count`: integer 4 (NPTE standard)
 
@@ -130,6 +130,16 @@ Single highest-yield improvement: [...]
 | `population_overlay` | Pediatric (developmental milestones), geriatric (osteoporosis precautions), pregnancy (hemodynamic considerations) |
 | `comorbidity_overlay` | Adds complicating factor that changes the right answer (e.g., uncontrolled HTN changes acceptable exercise intensity) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A teardown "would be correct for" scenario that is itself clinically wrong (an alternative patient or stage for which no standard source supports the distractor) | Check each alternative scenario against a named source type; if no real scenario makes the distractor right, rewrite it |
+| Target heart rates that mix methods (percent of test peak HR vs heart-rate reserve) without saying which | State the method and recompute, e.g. HRR = (peak − rest) × % + rest; mark intensity ranges `[VERIFY: current ACSM guidelines edition]` |
+| Accepting a `setting` value that is not in the input list | Check `setting` against the input options and name the nearest valid value or the added one in the header |
+| Citing FSBPT system categories, task areas, or weightings from memory as the current blueprint | Tag blueprint wording `[VERIFY: current FSBPT NPTE content outline]` |
+| Declaring the item single-best because the key was written first | Answer the stem cold before the teardown; if a second option is defensible, revise the stem data or the distractor |
+
 ## Verification Checklist
 
 - [ ] Cell explicitly named: `system × task × topic` cited in header AND tested by lead-in.
@@ -159,9 +169,9 @@ A 64-year-old man with a recent NSTEMI 4 weeks ago is referred to phase II cardi
 Which of the following is the MOST appropriate exercise prescription for this patient's first phase II session?
 
 A) Treadmill at 85% of age-predicted maximal HR (220 − age = 156, target 132 bpm) for 30 minutes
-B) Treadmill at 70% of HR achieved on his graded exercise test (target 82 bpm) plus rate of perceived exertion (RPE) 11–13/20 on Borg, for 20–30 minutes with 5 min warm-up and cool-down
-C) Cycle ergometer at maximal effort to symptom-limited endpoint, 30 minutes
-D) Resistance training only at 80% of 1-RM, 3 sets of 10, no aerobic component
+B) Treadmill at 70% of his exercise-test peak HR (target 83 bpm) with RPE 11–13/20, 20–30 minutes
+C) Cycle ergometer at maximal effort to a symptom-limited endpoint, 30 minutes continuous
+D) Resistance training only at 80% of 1-RM, 3 sets of 10 repetitions, with no aerobic component
 
 >>> Choose A–D.
 
@@ -175,7 +185,7 @@ Clinical reasoning: Patient on beta-blocker — age-predicted max HR is invalid.
 | A | N | A patient NOT on beta-blocker who completed a symptom-limited test confirming no ischemia at high heart rates |
 | B | Y | (correct) — phase II rehab patient on beta-blocker with baseline-test reference HR available |
 | C | N | A symptom-limited cardiopulmonary exercise test in a research or pre-cardiac-surgery setting (not phase II therapeutic exercise) |
-| D | N | A patient with severely impaired aerobic capacity (e.g., heart failure with EF <20%) where resistance training is the entry intervention before adding aerobic — and even then, 80% of 1-RM is too high; 40–60% is typical |
+| D | N | A healthy, strength-trained adult without cardiac disease on a strength-focused training block — never as the sole prescription in cardiac rehab, where aerobic exercise is the foundation and resistance training is an adjunct at lower intensity [VERIFY: current AACVPR / ACSM guidelines] |
 
 Engineered trap: A — tests "use HR formula reflexively even with beta-blocker on board." This is the highest-frequency cardiac-rehab error in NPTE-prep banks.
 

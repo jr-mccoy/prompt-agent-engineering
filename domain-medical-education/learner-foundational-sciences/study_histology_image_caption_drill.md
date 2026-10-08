@@ -23,7 +23,7 @@ tags:
   - cytology
   - foundational-science
   - drill
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_anatomy_radiologic_correlation_drill.md
   - domain-medical-education/learner-foundational-sciences/study_microbiology_virology_table_builder.md
@@ -127,6 +127,17 @@ Highest-yield restudy: [the specific morphologic feature]
 | `add_age_sex` | Adds demographic clue per slide |
 | `include_microbiology_slides` | Adds infectious agents on stains (acid-fast for AFB, GMS for fungi, Warthin-Starry for spirochetes) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A Special-features line that states the pattern name ("pauci-immune," "full-house") that is itself the Q3 answer | Describe raw observations (which immunoglobulins and complement stain, where, how strongly) and let the learner name the pattern |
+| Findings from a preparation the Stain line never listed (IF or EM results on a slide prepared as H&E / PAS / silver only) | Cross-check every special feature against the Stain / magnification line; each finding must come from a listed preparation |
+| Tissue-source history that names the disease ahead of the morphology (malar rash + proteinuria), so the learner identifies by history | Cover the Tissue source line and check that the remaining five lines still separate the diagnosis from its closest distractor |
+| Crediting a non-cellular answer (deposits, matrix) to "Cell of origin of the defining feature?" | When the defining feature is not cell-derived, reword Q2 for that slide (location or structure) rather than grade a mismatched answer `correct` |
+| Treatment correlates graded correct from memory (induction regimens, biologic choices) | Grade Q4 at the level of the correlate's category; tag any named regimen `[VERIFY: current KDIGO / society guideline]` |
+| A DRILL SUMMARY whose per-axis scores were written, not counted | Recount each axis tally from the slide-by-slide grades (partial ≠ correct) before naming the weakest axis |
+
 ## Verification Checklist
 
 - [ ] No slide names the diagnosis in the vignette. The point is to make the learner identify it.
@@ -155,7 +166,7 @@ Special features: IF shows full-house pattern (IgG > IgM > IgA, C3, C1q) in mesa
 Negatives: No crescents; no segmental scarring; no thrombi.
 
 Q1: Tissue?  > "Glomerulus — diffuse proliferative GN."  Grade: correct.
-Q2: Cell origin of "wire loops"?  > "Subendothelial immune complex deposits thickening the capillary wall."  Grade: correct.
+Q2: Location / structure producing "wire loops"? (defining feature is not cell-derived — Q2 reworded)  > "Subendothelial immune complex deposits thickening the capillary wall."  Grade: correct.
 Q3: Diagnosis?  > "Lupus nephritis class IV."  Grade: correct.
 Q4: Correlate?  > "Treat with steroids + cyclophosphamide or MMF; monitor anti-dsDNA and C3/C4."  Grade: correct.
 
@@ -193,10 +204,10 @@ Grade: correct.
 
 >>> SLIDE 4
 Tissue source: 70 y/o man with rapidly rising creatinine over 2 weeks, hematuria.
-Stain / magnification: H&E 200×; PAS; silver.
+Stain / magnification: H&E 200×; PAS; silver; IF (IgG, IgA, IgM, C3).
 Architectural pattern: Crescents in > 50% of glomeruli (cellular crescents, some fibrocellular).
 Cellular features: Compressed glomerular tufts; proliferation in Bowman's space.
-Special features: IF negative or pauci-immune pattern.
+Special features: IF shows no or only trace glomerular staining for immunoglobulins and C3.
 Negatives: No immune deposits.
 
 Q1: Tissue?  > "Glomerulus — crescentic GN, pauci-immune."  Grade: correct.

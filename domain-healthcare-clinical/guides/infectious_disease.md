@@ -1,4 +1,33 @@
+---
+title: "Infectious Disease Guide"
+category: healthcare-clinical/guides
+description: "Infectious disease routing guide: trigger phrases, the existing prompts to route first, when not to use this guide, and the required safety cautions, stewardship guardrails and escalation boundaries."
+techniques:
+  - CM-03
+  - CM-09
+  - DS-36
+  - IT-26
+difficulty: intermediate
+tags:
+  - infectious-disease
+  - antibiotics
+  - escalation
+updated: "2026-10-06"
+---
+
 # Infectious Disease Guide
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Trigger Phrases
 
@@ -42,3 +71,17 @@ Do **not** use this guide as primary routing when:
 - Force explicit checks for allergies, renal/hepatic function, drug interactions, and pregnancy/lactation when relevant.
 - Include stewardship guardrails: reassess at 24–72 hours, narrow by cultures, justify duration.
 - Escalate to urgent ID/emergency care when severe infection signals, diagnostic uncertainty with deterioration, or high-risk host factors are present.
+
+## False-Positive Prevention
+
+When using this guide:
+
+❌ **DON'T:**
+- Take a prompt-map path at face value; sepsis recognition now lives under `prompts/acute-care/` and stewardship under `prompts/pharmacology/`, so confirm every path before routing.
+- Accept an empiric regimen from the routed prompt that was chosen without the local antibiogram or the patient's prior cultures; "covers the likely organisms" is not a check.
+- Read a positive culture as infection without the specimen type, its collection time relative to the first antibiotic dose, and contaminant likelihood (e.g. one coagulase-negative staphylococcus bottle out of two).
+
+✅ **DO:**
+- Check that the output names a reassessment point inside this guide's 24–72 h window and the culture result that would trigger narrowing.
+- Verify the allergy entry carries its reaction type, and that renal or hepatic dose adjustments are computed from values actually supplied.
+- Confirm any stated duration of therapy has a source-control status and a named day 1.

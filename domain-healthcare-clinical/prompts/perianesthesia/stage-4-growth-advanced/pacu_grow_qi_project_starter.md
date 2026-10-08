@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-05, ED-02, DS-06, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_grow_evidence_appraisal_for_practice.md
   - pacu_grow_journal_club_participation.md
@@ -27,6 +27,19 @@ references:
 ---
 
 # QI Project Starter — Framing a Unit Quality-Improvement Question for PACU
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A project-framing aid, not a data-analysis or approval tool. Baseline data, targets, and any protocol change come from your facility's real data and its QI/governance process — this structures *how to frame a starter QI question*, it does not supply numbers or authorize change.
 
@@ -86,6 +99,20 @@ Route to: facility QI/governance | Biggest risk: [...] → de-risk: [...]
 | `scope` | Keep it PDSA-sized; expand only after a successful first test |
 | `data_ready` | With baseline vs placeholder trains honest measurement framing |
 | `stakeholder` | Add buy-in planning for a change others must adopt |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Put a percentage, minute count or rate into the aim or the baseline because "measurable" seems to demand one; without `facility_data`, the aim carries `[target from facility baseline]` and the baseline reads "not yet measured".
+- Name a metric without its operational definition — "discharge delay" is not measurable until "criteria met" and "departure" are defined as timestamps someone actually records.
+- Offer a medication or protocol change (a different PONV prophylaxis regimen, a new discharge-score cut-off) as a change idea a nurse-led PDSA can test; that is a provider/governance change and is routed, not piloted.
+- Report that a handful-of-patients PDSA shows the change "works"; the Study step records what was learned, not an effect.
+- Put a process measure in the outcome slot (e.g., "% pre-alerted").
+
+✅ **DO:**
+- Check the three measures are three different things: outcome = the patient or flow result, process = whether the change was done, balancing = a plausible harm somewhere else.
+- Confirm every number in the output either appears in the pasted `facility_data` or is a labelled placeholder.
+- Size the first PDSA in people, shifts and patients, and confirm it is smaller than the population the aim covers.
 
 ## Verification Checklist
 

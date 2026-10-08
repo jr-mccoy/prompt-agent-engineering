@@ -2,6 +2,15 @@
 title: "Clinical Decision Algorithm / Triage Flowchart - Image Generation Prompt"
 category: medical-education
 description: "Template-driven image generation prompt for creating a clinical decision algorithm or triage flowchart with decision nodes and yes/no branches, where the user supplies every node, criterion, and branch from expert-verified sources"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - clinical-algorithm
@@ -11,7 +20,7 @@ tags:
   - diagram
   - education
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 ---
 
 # Clinical Decision Algorithm / Triage Flowchart - Image Generation Prompt
@@ -246,6 +255,21 @@ This prompt applies the 8 core techniques from [IMAGE_GENERATION_GUIDE.md](../IM
 6. **Physical Context Anchoring** — "protocol poster / pocket reference / slide for [audience]" sets density, flow direction, and the not-a-substitute-for-judgment disclaimer.
 7. **Deliverables Locking** — EXACTLY ONE IMAGE, locked orientation/dimensions and top-to-bottom flow.
 8. **Validation Checklist** — final self-audit including node count, branch-label, and threshold-integrity checks.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Read matching node and connection counts as proof of routing — seven nodes and six arrows can still carry a YES label floating at a diamond's vertex where it could belong to either outgoing arrow.
+- Let a comparator or unit drift while the digits stay put: "≥" printed as ">", "< 90" as "≤ 90", °C as °F, "/min" dropped. The FINAL VALIDATION CHECK line "No numeric threshold altered" passes on the digits alone.
+- Let the model close a gap in your logic: a DECISION node with only one listed exit gets a plausible second branch, and an invented branch is labeled exactly like a real one.
+- Accept shortened node text — "Can the patient cough, speak, or breathe?" printed as "Can the patient cough?" changes the decision criterion while still looking like NODE 2.
+
+✅ **DO:**
+- Lint the CONN list before generating: each DECISION node has exactly its intended labeled exits, each non-terminal node has an exit, and every node is reachable from START.
+- After generating, trace every path from START to a terminal on a print and write it as node numbers plus branch labels (e.g., 1-2-NO-4-5-YES-6); the set of paths must equal the set derived from the CONN list.
+- Read each threshold as one token — comparator, number, unit — against the source protocol, and check each terminal's urgency fill, since an emergent disposition in routine green is a misroute in color.
 
 ---
 

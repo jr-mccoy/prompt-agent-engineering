@@ -14,8 +14,20 @@ tags:
   - shock
   - vasopressor
   - hemodynamics
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -66,10 +78,23 @@ Senior critical care attending or emergency medicine attending titrating pressor
    - Wean once underlying cause controlled (source control in sepsis, revascularization in cardiogenic, drainage in obstructive). Reduce one agent at a time, vasopressin last (rebound hypotension common when removed before norepi is at low dose).
 
 6. **Access and monitoring.**
-   - Central venous access for infusions >0.1 mcg/kg/min norepi, all epinephrine and vasopressin infusions, and most cardiogenic shock pressors. Peripheral lines for short-term lower-dose norepi (recent literature shows safe up to 0.1 mcg/kg/min for ≤4–6 hours in well-functioning antecubital IVs).
+   - Central venous access for higher-dose or prolonged norepi and most cardiogenic shock pressors. Peripheral lines for short-term lower-dose norepi in well-functioning antecubital IVs; the dose and time limits, and whether epinephrine or vasopressin may run peripherally, are per facility protocol [VERIFY: current guideline / facility peripheral vasopressor protocol].
    - Arterial line for accurate MAP and serial blood gases.
    - Echo (POCUS) repeatedly to reassess preload, RV function, LV function, pericardial effusion.
    - Daily reassessment: shock state may evolve (cardiogenic shock from sepsis-induced cardiomyopathy can develop in patient who was distributive on admission).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Give a mcg/kg/min dose without the weight it assumes, or convert it to mL/h without the bag concentration — the bedside rate depends on both and neither may be guessed.
+- Write a dose in the wrong unit for its agent (vasopressin per kg, angiotensin II in mcg); a mis-unit line reads plausibly in a list of catecholamine doses.
+- Present an escalation threshold (the norepinephrine dose that triggers vasopressin, a peripheral-line dose or time limit) as a fixed rule; these differ between guidelines and units and belong as `per facility protocol` or `[VERIFY: current guideline]`.
+- Commit SHOCK CATEGORY to one type when the supplied echo, CVP or SvO2 data conflict — name the mixed picture and the measurement that would separate it.
+
+✅ **DO:**
+- Check each agent's dose in its native unit (norepinephrine/epinephrine mcg/kg/min, vasopressin units/min, angiotensin II ng/kg/min) against the product label starting dose, tagged `[VERIFY: product label]`.
+- Recompute derived inputs and flag mismatches: fluid volume given versus 30 mL/kg × stated weight, and MAP versus the reported SBP/DBP.
+- Tie each THRESHOLD line to an observed value from the input (current dose, MAP, lactate trend, time on the agent) rather than "if needed".
 
 ## Output Format
 
@@ -129,7 +154,7 @@ SECOND AGENT (if needed):
 
 THIRD AGENT (if needed):
 - Threshold: persistent hypotension despite norepi + vasopressin.
-- Drug: epinephrine 0.05 mcg/kg/min titrated up, OR angiotensin II 5–20 ng/kg/min for catecholamine-refractory vasoplegia. Methylene blue 1–2 mg/kg IV bolus once for refractory vasoplegia is reasonable in selected patients.
+- Drug: epinephrine 0.05 mcg/kg/min titrated up, OR angiotensin II starting 20 ng/kg/min, titrated per label [VERIFY: product label], for catecholamine-refractory vasoplegia. Methylene blue 1–2 mg/kg IV bolus once for refractory vasoplegia is reasonable in selected patients.
 
 ADJUNCTS:
 - Hydrocortisone 50 mg IV q6h (or 200 mg/day continuous) once on second pressor — reduces vasopressor duration in septic shock.

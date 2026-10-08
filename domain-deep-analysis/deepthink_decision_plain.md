@@ -20,7 +20,7 @@ tags:
   - accessible
   - askuserquestion
   - gated-workflow
-updated: "2026-05-17"
+updated: "2026-10-06"
 related_prompts:
   - domain-deep-analysis/deepthink_decision.md
   - domain-deep-analysis/deepthink_problem_analysis_plain.md
@@ -213,7 +213,9 @@ After producing the recommendation:
 
 ---
 
-## Common ways this goes wrong (and what I watch for)
+## False-Positive Prevention
+
+*In plain words: the common ways a recommendation can look solid when it isn't, and what I watch for.*
 
 1. **Running a full analysis on an easy-to-undo decision is theater.** If you can just try it and revise cheaply, the cost of analysis is bigger than the cost of trying. Step 1 should catch this — if so, I'll switch to "try the smallest reversible version, then re-evaluate."
 2. **Your gut is data, not bias.** People often have good intuition they can't fully explain. My job is to *test* it, not override it. If the analysis lines up with your gut and the viewpoints don't surface a real objection, that's a real "go."
@@ -222,6 +224,7 @@ After producing the recommendation:
 5. **Warning signs have to be observable.** "If things go badly" is not a warning sign. "If weekly active users drop below 200 by week 6" is. If I can't write one you'd notice in weeks, the decision may be too early to make.
 6. **This prompt can become procrastination.** If you've run the same decision through this prompt twice without acting, the prompt has become the avoidance. I'll flag it and recommend acting on the smaller reversible test.
 7. **High confidence requires both agreement *and* tested assumptions.** Lots of viewpoints agreeing with each other while resting on a shaky assumption is medium confidence at best.
+8. **The final recommendation can quietly drift away from your answers.** Before I hand it over, I line it up against what you told me at the check-ins: the make-or-break criteria under "Why this is the recommendation" must be the ones you picked in Step 2, and the recommended option must come from the set you confirmed in Step 1. If I've slipped in a criterion you never chose, or recommended an option we never discussed, I'll either fix it or say plainly why it changed.
 
 ---
 

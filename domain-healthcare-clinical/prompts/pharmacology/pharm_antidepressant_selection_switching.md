@@ -15,8 +15,20 @@ tags:
   - anxiety
   - prescribing
   - drug-interactions
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -55,7 +67,7 @@ Senior psychiatrist (or primary care physician comfortable with psychopharmacolo
      - **Vortioxetine** 10–20 mg PO daily: multimodal (5-HT3 antagonist, 5-HT7 antagonist, 5-HT1A partial agonist, 5-HT1B partial agonist, 5-HT reuptake inhibitor); cognitive benefits reported; lower sexual dysfunction than SSRI.
      - **Vilazodone** 20–40 mg PO daily (5-HT1A partial agonist + SRI); take with food for absorption.
    - **TCAs (less first-line; useful in pain, migraine prophylaxis, refractory MDD):** amitriptyline, nortriptyline 25–150 mg; sedating, anticholinergic, cardiac (QTc), overdose risk.
-   - **MAOIs (refractory MDD, atypical depression):** phenelzine 15 mg TID → 60–90 mg/d; tranylcypromine 10 mg BID → 30–60 mg/d; selegiline TD (Emsam) 6–12 mg/24h. Tyramine-restricted diet at non-TD doses. Requires 14-day washout from most other serotonergic agents (5 weeks from fluoxetine due to its long half-life).
+   - **MAOIs (refractory MDD, atypical depression):** phenelzine 15 mg TID → 60–90 mg/d; tranylcypromine 10 mg BID → 30–60 mg/d; selegiline TD (Emsam) 6–12 mg/24h. Tyramine-restricted diet with oral MAOIs and with selegiline TD above 6 mg/24h (label does not require it at 6 mg/24h). Requires 14-day washout from most other serotonergic agents (5 weeks from fluoxetine due to its long half-life).
    - **Esketamine intranasal** (Spravato 56–84 mg twice weekly initial → weekly → every 2 weeks): treatment-resistant MDD (≥2 failed trials); REMS program; monitor BP and dissociation post-dose.
 
 3. **Match drug to patient profile.**
@@ -111,6 +123,19 @@ Senior psychiatrist (or primary care physician comfortable with psychopharmacolo
    - 6–8 weeks: adequate trial assessment; if inadequate, optimize dose or switch.
    - Once stable: every 3 months; longer for maintenance phase.
    - For first episode: continue 6–9 months after remission; for recurrent: indefinite if ≥3 episodes or persistent residual symptoms.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Copy a step-2 range into `Starting dose` / `Target dose` as this patient's order; hepatic impairment (duloxetine), reduced CrCl (venlafaxine, desvenlafaxine) and CYP2D6 inhibition by the new or old agent change it — tag any number not taken from the input or the label `[VERIFY: current label / formulary]`.
+- Issue a `SWITCH PLAN` whose day numbers are anchored to two different "Day 1"s (start of taper vs start of new drug), or whose taper steps never reach 0 mg of the old drug.
+- Grade a serotonin-syndrome or interaction risk "low" or "high" without naming the mechanism (additive 5-HT reuptake inhibition, MAO inhibition, CYP inhibition raising the partner's level).
+- Write an FDA letter category ("Category C") in `PREGNANCY COUNSELING`; summarize the label's PLLR narrative and registry data instead.
+
+✅ **DO:**
+- Rebuild the switch on one day-count before finalizing: a row per day range with the dose of BOTH drugs, a check that the old drug's last row is 0 mg, and an MAOI washout that equals the stated days (5 weeks after fluoxetine).
+- Trace every "failed" or "adequate trial" label to the input dose and duration against the step-4 definition; when duration is missing, write "adequacy unknown".
+- Screen the full concurrent list, including OTC and supplements (St. John's wort, tramadol, triptans, linezolid), against the selected agent and record each flagged pair with its mechanism.
 
 ## Output Format
 
@@ -190,7 +215,7 @@ DIFFERENTIAL CONSIDERATIONS:
 
 OPTIONS WEIGHED:
 1. **Optimize sertraline first** — try 150 mg, then 200 mg before switching. Counterargument: sexual dysfunction and weight gain already established; unlikely to remit at higher dose. PHQ-9 response is partial after 8 weeks — adequate trial criteria. Patient has expressed preference to switch.
-2. **Switch to bupropion XL** — addresses both side-effect concerns (no sexual dysfunction, weight neutral / loss); reasonable pregnancy safety (Category C; large registry data without major teratogenic signal); monotherapy in MDD has decent evidence. Caveat: less effective for anxiety; not indicated if she also has GAD features.
+2. **Switch to bupropion XL** — addresses both side-effect concerns (no sexual dysfunction, weight neutral / loss); reasonable pregnancy safety (label pregnancy narrative and large registry data without major teratogenic signal); monotherapy in MDD has decent evidence. Caveat: less effective for anxiety; not indicated if she also has GAD features.
 3. **Switch to vortioxetine** — lower sexual dysfunction rate than SSRIs (still some); weight neutral; cognitive benefits reported; pregnancy data more limited; cost can be high.
 4. **Augment with bupropion** rather than switch (sertraline + bupropion 150 mg XL) — addresses residual symptoms and may counteract sexual side effects of sertraline. Reasonable next step before full switch; patient could try this for 4–6 weeks.
 5. **Add aripiprazole 2–5 mg** — strong augmentation evidence but weight, metabolic, EPS risks.
@@ -199,10 +224,11 @@ CHOSEN PLAN:
 - **Switch to bupropion XL.** Rationale: side-effect mismatch with sertraline is patient-priority concern; bupropion addresses both sexual dysfunction and weight; reasonable pregnancy safety profile; patient has not had inadequate response to prior bupropion. Will discuss option 4 (augmentation) as alternative if she prefers to keep sertraline; for this plan, proceed with switch.
 
 SWITCH PLAN:
-- **Sertraline 100 mg daily → 50 mg daily × 7 days → 25 mg daily × 7 days → stop.** (Sertraline t½ ~26 h; discontinuation syndrome less marked than paroxetine/venlafaxine; modest taper still recommended.)
-- **Day 1 of bupropion**: start **bupropion XL 150 mg PO daily AM** (avoid PM dosing due to insomnia risk) overlapping with last week of sertraline taper at 25 mg.
-- Day 14: stop sertraline. Continue bupropion XL 150 mg.
-- Day 14–28: assess tolerability; if adequate, up-titrate to **bupropion XL 300 mg PO daily AM**.
+- **Sertraline 100 mg daily → 50 mg daily × 7 days → 25 mg daily × 7 days → stop.** (Sertraline t½ ~26 h; discontinuation syndrome less marked than paroxetine/venlafaxine; modest taper still recommended.) Day numbers below count from Day 1 = first day of sertraline 50 mg.
+- Days 1–7: sertraline 50 mg daily; no bupropion yet.
+- Days 8–14: sertraline 25 mg daily. **Day 8**: start **bupropion XL 150 mg PO daily AM** (avoid PM dosing due to insomnia risk), overlapping with this last week of sertraline taper.
+- Day 15: sertraline 0 mg (last dose Day 14). Continue bupropion XL 150 mg.
+- Days 15–28: assess tolerability; if adequate, up-titrate to **bupropion XL 300 mg PO daily AM** at the 4-week visit.
 - No specific washout (no MAOI, no high-risk serotonergic agent involved). Monitor for serotonin syndrome briefly during overlap (low risk with sertraline + bupropion).
 
 SEROTONIN SYNDROME SURVEILLANCE:
@@ -214,14 +240,14 @@ DISCONTINUATION SYNDROME:
 - Bupropion does not cause meaningful discontinuation syndrome.
 
 PREGNANCY COUNSELING:
-- Bupropion is reasonable in pregnancy (FDA category C; reassuring registry data; not a strong teratogen); benefits of treating MDD in pregnancy typically outweigh risks of untreated depression (relapse rates high in untreated, fetal effects of untreated maternal MDD).
+- Bupropion is reasonable in pregnancy (label pregnancy narrative; reassuring registry data; not a strong teratogen); benefits of treating MDD in pregnancy typically outweigh risks of untreated depression (relapse rates high in untreated, fetal effects of untreated maternal MDD).
 - Sertraline is the most-studied SSRI in pregnancy with favorable profile — would also be reasonable if patient elects to stay on SSRI or if bupropion doesn't work.
 - Avoid paroxetine (cardiac defect signal).
 - Folic acid 400–800 µg daily pre-conception and through pregnancy.
 - Engage perinatal psychiatry early in pregnancy planning.
 
 EXPECTED TIMELINE:
-- Week 1–2: bupropion overlap; sertraline taper; monitor for anxiety/insomnia from bupropion activation.
+- Week 1–2: sertraline taper; bupropion overlap in week 2; monitor for anxiety/insomnia from bupropion activation.
 - Week 4: full bupropion dose; tolerability + initial response.
 - Week 6–8: adequate trial; PHQ-9 reassessment; aim for remission (PHQ-9 ≤4).
 - If inadequate at week 8: consider adding sertraline back (bupropion + SSRI combination) or switching to vortioxetine or SNRI.

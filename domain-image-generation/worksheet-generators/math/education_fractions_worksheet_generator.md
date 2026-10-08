@@ -2,13 +2,23 @@
 title: "Fractions Worksheet Generator"
 category: education
 description: "Generate fraction worksheets with visual models, equivalence, and operations suited to grade level."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - math
   - worksheet
   - fractions
   - equivalence
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Fractions Worksheet Generator
@@ -121,3 +131,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 circle labelled "fourths" whose slices are visibly different sizes, or a bar with 3 of 5 parts shaded and labelled 3/4 — the label passes a skim while the picture teaches unequal parts as equal.
+- Set ZONE 4 comparison items on models of different-sized wholes (half of a long bar beside half of a short bar) without stating that the wholes are the same.
+- Print an "equivalent" pair that is not equivalent (2/3 = 4/9) or a ZONE 5 answer left unsimplified when the key expects lowest terms.
+
+✅ **DO:**
+- Measure each partitioned model on the rendered page — parts must be equal in area — then count shaded parts and total parts and match them to the numerator and denominator printed beside it.
+- Cross-multiply every ZONE 4 equivalence and comparison pair and recompute every ZONE 5 operation, reducing to the form the answer key uses.
+- Confirm the ZONE 6 application item states its whole and that the parts are equal ("a pizza cut into 8 equal slices"); if the image model cannot draw equal parts reliably, draw the models in a layout tool.

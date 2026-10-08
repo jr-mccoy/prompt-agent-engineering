@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-04-14"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -100,3 +109,18 @@ VALIDATION CHECKLIST:
 
 - Peds version — add weight-based caveat in footer and replace Aldrete with Modified Aldrete or Steward Score per facility.
 - Ambulatory / same-day surgery version — add a second "Phase 2 → Home" horizontal below the first, stacked.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Read the minute windows written into the template (~5–15, ~10–30, ~60–120) as facility-approved — they are unsourced estimates, and on a wall timeline they read as targets the safety reminder says do not govern care.
+- Let "SpO2 per goal" or "Aldrete or facility criteria met" render with a number attached.
+- Accept "first dose titrated" printed as a nursing step with no order language; it must read as titration per provider order.
+- Pass the zone strip when amber is drawn as a fixed band over 60+ minutes — amber applies only "if not yet meeting criteria", and a fixed band implies every patient past an hour is in a watch state.
+
+✅ **DO:**
+- Decide with the unit educator, before generating, whether minute ticks appear at all; if kept, label the axis "typical; varies" and source the windows, or replace them with `per facility protocol`.
+- Measure each milestone circle's position against its tick and confirm the six callouts run Airway → Pain → Nausea → Mobility → Criteria → Transfer.
+- Search every callout for numerals — only the tick labels and educator-approved windows may appear.

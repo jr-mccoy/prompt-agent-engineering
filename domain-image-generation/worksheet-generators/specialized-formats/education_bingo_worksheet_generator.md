@@ -2,13 +2,23 @@
 title: "Bingo Practice Worksheet Generator"
 category: education
 description: "Generate educational bingo worksheets with printable call-card support and monochrome-safe board layout."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - specialized-formats
   - worksheet
   - bingo
   - review-game
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Bingo Practice Worksheet Generator
@@ -128,3 +138,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat a set of cards as valid because each card is full — if the cards are copies, or two share an entire row, column or diagonal, those students win on the same call.
+- Repeat a term within one card, or put a term in a cell that never appears on the ZONE 5 call list, which makes that cell unwinnable.
+- Write a call-list clue that matches two different cells, so the student cannot know which one to mark.
+
+✅ **DO:**
+- Count the ZONE 4 bank: a 5x5 card with a free centre needs at least 24 distinct terms, and more if several cards must differ.
+- Compare every row, column and diagonal across all cards for identical sets of terms, and check no term repeats on a card.
+- Cross-check each cell term against the call list and confirm it appears there exactly once, with a clue that fits no other term.

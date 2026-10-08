@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, ED-01, DS-06, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_grow_becoming_preceptor_self_prep.md
   - pacu_grow_debrief_junior_after_event.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # Teaching a Recovery Concept — Structure a Bedside Micro-Teach for a Junior Nurse
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A teaching-rehearsal aid, not clinical content authoring or live decision support. Clinical facts, doses, and thresholds stay **per facility/order** and are sourced from the toolkit's clinical library — this rehearses *how you teach one concept*, not what the numbers are.
 
@@ -83,6 +96,20 @@ One thing to tighten: [...]
 | `concept` | Range from a cue-recognition idea to a why-mechanism concept |
 | `learner_level` | New grad (more anchoring) vs experienced-new-to-PACU (transfer focus) |
 | `teachback_style` | Explain-back vs apply-to-a-variant |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Build a monitoring threshold, sedation-scale level or oxygen setting into the one-sentence takeaway to make it concrete; the takeaway is a cue and an action, and the number stays `per facility protocol`.
+- Write "from the toolkit's clinical library" without naming the file, or name one that is not there; point to an existing clinical-and-educator artifact (for example the topic primer or the relevant population file) or to the facility protocol.
+- Teach a mechanism in the Concept slot with a step skipped or reversed (e.g., presenting desaturation as the cause of the falling effort); the causal order must match the referenced clinical file.
+- Record "Passed? Y" when the junior only repeated the takeaway word for word.
+- Record "One concept? Y" while the so-what slips in a second idea.
+
+✅ **DO:**
+- Write the teach-back pass criterion (what the junior must name or apply) before they answer, then compare their answer with it.
+- Count the distinct clinical claims across Hook / Concept / So-what; more than one core claim means the teach covers two concepts.
+- Check the Concept slot's claim against the cited clinical file before the micro-teach is reused with another junior.
 
 ## Verification Checklist
 

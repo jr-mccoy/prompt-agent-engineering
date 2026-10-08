@@ -16,8 +16,20 @@ tags:
   - crohns
   - ulcerative-colitis
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -58,6 +70,21 @@ Gastroenterologist managing IBD.
 7. **Health maintenance:** colorectal cancer surveillance colonoscopy (dysplasia surveillance in long-standing colitis), bone health (steroid exposure), vaccinations (non-live), VTE awareness during flares, smoking cessation (Crohn's — smoking worsens; UC differs), nutrition/iron, mental health, dermatologic/ophthalmologic extraintestinal manifestations.
 
 8. **Monitor:** symptoms + calprotectin/CRP, endoscopy at intervals, drug levels, infection surveillance, side effects.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Describe extent and severity in free text — use Montreal location/behaviour (with perianal modifier) for Crohn's and Montreal extent plus a named activity score for UC (Mayo; Truelove-Witts for acute severe UC; HBI/CDAI for Crohn's), computed from the supplied findings.
+- Carry a biologic dose from memory — check each infliximab induction and maintenance mg/kg and interval against the label for the indication, including the maintenance dose, which is easy to confuse with an escalated dose.
+- Combine a thiopurine with anti-TNF in a young male without stating the hepatosplenic T-cell lymphoma consideration and the methotrexate alternative.
+- Choose a JAK inhibitor or S1P modulator without its label sequencing and boxed-warning screen (prior TNF exposure where required, age, cardiovascular and VTE risk; conduction and macular checks for S1P).
+- Read faecal calprotectin against another assay's cutoff, or call remission on a single value.
+
+✅ **DO:**
+- Before induction, verify each screen is a result, not an order: IGRA, HBsAg/anti-HBc/anti-HBs, varicella immunity, TPMT/NUDT15 before a thiopurine, pregnancy status before methotrexate.
+- Give drug-level targets only from the reporting lab's ranges or tagged `[VERIFY: AGA therapeutic drug monitoring guidance]`, and record that each level is a trough.
+- Compute the colorectal surveillance start date from the onset date and extent, and flag primary sclerosing cholangitis as surveillance-changing.
+- Check every treat-to-target endpoint has a date and a measurement method before calling the monitoring plan complete.
 
 ## Output Format
 
@@ -101,8 +128,8 @@ INDUCTION:
 - Short course systemic/budesonide only if needed for symptom bridge — induction, not maintenance.
 
 MAINTENANCE:
-- Continue infliximab maintenance (8 mg/kg q8w, dose-optimize by levels).
-- Combine with an immunomodulator (thiopurine — after TPMT/NUDT15, or methotrexate) to reduce anti-drug antibodies and improve durability in this high-risk patient.
+- Continue infliximab maintenance (5 mg/kg q8w, dose-optimize by levels).
+- Combine with an immunomodulator (thiopurine — after TPMT/NUDT15, or methotrexate) to reduce anti-drug antibodies and improve durability in this high-risk patient. Young male: thiopurine + anti-TNF carries hepatosplenic T-cell lymphoma risk — discuss it and consider methotrexate as the combination partner.
 - No reliance on 5-ASA (ineffective for moderate-severe Crohn's).
 
 PRE-BIOLOGIC SCREENING:

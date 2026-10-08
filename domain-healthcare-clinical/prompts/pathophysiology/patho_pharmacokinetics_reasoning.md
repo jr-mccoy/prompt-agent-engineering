@@ -14,8 +14,20 @@ tags:
   - pharmacokinetics
   - dosing
   - mechanism
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -38,7 +50,7 @@ Senior clinical pharmacologist or critical care attending teaching dosing logic.
 2. **Walk ADME for this drug.**
    - **Absorption:** route, oral bioavailability (F), food effect, transporters at gut wall (P-gp, BCRP), first-pass metabolism in gut wall and liver. If IV, F = 1.
    - **Distribution:**
-     - Volume of distribution (Vd): low (~0.1–0.3 L/kg, plasma-bound) for highly protein-bound drugs (warfarin, valproate); intermediate (~0.5–1 L/kg, total body water) for hydrophilic drugs (aminoglycosides, vancomycin partly); high (>2 L/kg, lipophilic, tissue-distributed) for amiodarone (~60 L/kg), digoxin (~7 L/kg), tricyclics
+     - Volume of distribution (Vd): low (~0.1–0.3 L/kg, plasma-bound) for highly protein-bound drugs (warfarin, valproate); intermediate (~0.5–1 L/kg, total body water) for hydrophilic drugs (vancomycin partly); aminoglycosides are hydrophilic but confined mainly to extracellular water (~0.25–0.3 L/kg); high (>2 L/kg, lipophilic, tissue-distributed) for amiodarone (~60 L/kg), digoxin (~7 L/kg), tricyclics
      - Protein binding: % bound, albumin vs alpha-1-acid glycoprotein, displaceable in hypoalbuminemia
      - Tissue penetration: CSF (lipophilicity, P-gp), prostate, lung, biofilm
      - Loading dose: LD = Vd × Cp_target / F. Required when steady state is far away and rapid effect needed.
@@ -70,6 +82,20 @@ Senior clinical pharmacologist or critical care attending teaching dosing logic.
 5. **Predict the trajectory.** What will the plasma level look like at 12, 24, 48 hours? Will it accumulate? Will it reach steady state?
 
 6. **Recommend specific adjustment.** Loading dose (yes/no with number), maintenance dose change (with number), interval change, monitoring frequency.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Carry a number through the formulas without its units. Mixing clearance in L/h and L/day changes AUC24 by a factor of 24, and mL/min must be multiplied by 0.06 to give L/h; an AUC that "looks low" may be a unit slip.
+- Treat a textbook Vd per kg, fraction excreted unchanged or population clearance as the patient's measured value; tag each as `[estimate]` and say which ones a level would replace.
+- Use eGFR (mL/min/1.73 m²) and Cockcroft-Gault CrCl (mL/min) interchangeably, or feed a creatinine that is still rising in AKI into either as if it were steady state.
+- Repeat the hospital-protocol dose, target trough or AUC range as the recommendation without `[VERIFY: current guideline/label/institutional protocol]`.
+- Predict a trajectory to steady state while renal or hepatic function is changing; say the prediction holds only if function is stable.
+
+✅ **DO:**
+- Recompute every result in `CALCULATIONS` and `TRAJECTORY PREDICTION` with units written at each step (CrCl → CL in L/h → t½ = 0.693·Vd/CL → AUC24 = daily dose / CL in L/h), and recompute at least two of them a second way (e.g. AUC24 from Cp_ss × 24).
+- Check that the text and the recommendation agree with the arithmetic: the t½ quoted in prose must match the t½ calculated, and a computed AUC above the target range cannot be followed by a recommendation that raises exposure.
+- Tag each input `[data]` (from the user) or `[estimate]` (population value), and state which single level or lab would most reduce uncertainty in the dose.
 
 ## Output Format
 
@@ -120,7 +146,7 @@ ADME WALK:
 - Absorption / F: IV, F = 1.
 - Distribution / Vd / protein binding: Vd ~0.7 L/kg → 60 × 0.7 = 42 L. Protein binding ~50% (variable, falls in hypoalbuminemia and renal failure).
 - Metabolism: not significantly metabolized.
-- Elimination / CL / t½: ~90% renal (glomerular filtration). CL roughly tracks CrCl. Cockcroft-Gault for this patient: CrCl = (140 − 78) × 60 × 0.85 / (72 × 1.4) = 31 mL/min. t½ in patients with normal renal function ~6–8 h; rises to 24–40+ h in CKD; can be much longer in oliguric AKI. Half-life here estimated ~18–24 h.
+- Elimination / CL / t½: ~90% renal (glomerular filtration). CL roughly tracks CrCl. Cockcroft-Gault for this patient: CrCl = (140 − 78) × 60 × 0.85 / (72 × 1.4) = 31 mL/min. t½ in patients with normal renal function ~6–8 h; rises to 24–40+ h in CKD; can be much longer in oliguric AKI. Half-life here estimated ≈16 h (calculated below from Vd and CL) [estimate].
 
 CALCULATIONS:
 - Vd: 0.7 L/kg × 60 kg = 42 L
@@ -137,17 +163,17 @@ PATIENT-SPECIFIC ADJUSTMENT:
 
 TRAJECTORY PREDICTION:
 - After 25 mg/kg load: peak (post-distribution, ~2 h post-infusion) ~30–35 mg/L.
-- After 15 mg/kg q12h: trough at 12 h after first maintenance dose ~16–20 mg/L if function stable.
-- By 48 h: at this CL, drug accumulates. Trough likely 20–25 mg/L if maintained at q12h dosing.
-- AUC at steady state: AUC24 ≈ Daily dose / CL. Daily dose 30 mg/kg = 1800 mg. CL ≈ 31 × 0.06 × 24 = 44.6 L/24h. AUC24 ≈ 40 mg·h/L. Target for serious MRSA infection is AUC24/MIC 400–600 (assuming MIC 1) → AUC 400–600. Underdosed if MIC 1; overdosed if MIC 0.5.
+- After 15 mg/kg (900 mg) q12h, one-compartment estimate with ke = 0.693/15.6 ≈ 0.044 h⁻¹ (12-h decay factor ≈ 0.59) [estimate]: trough at 12 h after first maintenance dose ≈ 25 mg/L if function stable.
+- By 48 h: drug accumulates further — trough ≈ 28–29 mg/L, approaching a steady-state trough ≈ 30 mg/L if maintained at q12h dosing.
+- AUC at steady state: AUC24 ≈ Daily dose / CL (CL in L/h). Daily dose 30 mg/kg = 1800 mg. CL ≈ 31 mL/min × 0.06 = 1.86 L/h. AUC24 ≈ 1800 / 1.86 ≈ 968 mg·h/L. Cross-check: Cp_ss average ≈ 968 / 24 ≈ 40 mg/L. Target for serious MRSA infection is AUC24/MIC 400–600 (assuming MIC 1) → AUC 400–600. **Overdosed** — the standard q12h regimen gives an AUC far above target.
 - The single-trough approach is inferior to AUC-based monitoring here. Recommend AUC.
 
 DOSING RECOMMENDATION:
 - Loading dose: 25 mg/kg = 1500 mg IV over 90 min (slow infusion to avoid red man syndrome). Yes — load is appropriate; do not skip just because of CKD. The load fills Vd and is independent of CL.
-- Maintenance dose: 15 mg/kg q24h initially (1000 mg q24h rounded, or 750 q12h with two-level AUC monitoring). Standard q12h is too frequent for this CL.
+- Maintenance dose: 15 mg/kg q24h initially (1000 mg q24h rounded → AUC24 ≈ 1000 / 1.86 ≈ 538 mg·h/L, within target [estimate]). 750 mg q12h would give ≈ 806 — above target. Standard q12h is too frequent for this CL.
 - Monitoring:
   - Bayesian AUC dosing using one or two levels — preferred. Get level around 4–6 h post-loading-dose end and trough before second dose; calculate AUC24, target 400–600 for MRSA bacteremia.
-  - If trough-only: target trough 15–20 mg/L for serious MRSA infection. Draw before 4th dose if dosing q12h, or before 2nd dose if dosing q24h (sooner because t½ is long).
+  - If trough-only monitoring is unavoidable: the older 15–20 mg/L trough target is no longer the recommended primary target for serious MRSA infection — use AUC where possible [VERIFY: current IDSA/ASHP vancomycin therapeutic-monitoring consensus]. Draw before 4th dose if dosing q12h, or before 2nd dose if dosing q24h (sooner because t½ is long).
   - Daily SCr to track renal function. Hold or extend interval if Cr rises ≥50% from baseline.
   - Source control + repeat blood cultures q48h until clear; total 2–6 weeks of therapy depending on complications.
 ```

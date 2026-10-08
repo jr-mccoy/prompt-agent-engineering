@@ -15,11 +15,11 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_deteriorating_patient_walkthrough.md
   - pacu_indep_two_patient_prioritization_stress_drill.md
-  - pacu_orient_hemodynamic_event_recognition_drill.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_hemodynamic_event_recognition_drill.md
 see_also_seed:
   - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
 see_also_toolkit:
@@ -29,6 +29,19 @@ references:
 ---
 
 # Escalate / Watch / Routine — Escalation-Decision Drill
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A decision drill, not live clinical decision support. It trains the *judgment* of when to escalate; the real call is made at the bedside with your team.
 
@@ -85,6 +98,19 @@ One coaching point (miscalibration direction): [...]
 | `credibility_mode` | Add a recently-cried-wolf frame to train precise SBAR |
 | `count` | Longer sets build calibration data across a session |
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a flip-trigger phrased as "worsens" or "doesn't improve" — it must name which cue changes and in which direction (a new symptom, arousal drop, no response to the comfort measure).
+- Write a flip-trigger as a vital-sign number ("pressure above X"); where the unit uses numeric call parameters, the trigger reads `per facility protocol` / `per provider order`.
+- Let the "Why" cite a reversible cause the vignette's own cues argue against (a cause whose defining symptom the vignette says is absent) — the justification must fit the cues as written.
+- Accept an SBAR headline that names the concern but drops the trend ("BP is high" instead of "BP trending up over two checks despite…"); a headline without the trajectory reads as a one-off value.
+
+✅ **DO:**
+- Recount the set score from the per-vignette lines: tally correct tiers and watches carrying a flip-trigger, and confirm both match the SET SCORE line before printing it.
+- State the deciding cue behind your own key for each vignette, so a learner's disputed call is scored against a stated reason rather than an unexplained answer.
+- Check each opposite-call check names a specific cue that is present or absent; "not escalate because it's fine" is not a check.
+
 ## Verification Checklist
 
 - [ ] Each call is justified by **trend + reversibility**, with an opposite-call check.
@@ -101,7 +127,7 @@ One coaching point (miscalibration direction): [...]
 **Output (excerpt):**
 ```
 Vignette: post-op patient's blood pressure trending up over two checks, awake, comfortable, no other change.
-Call: watch. Why: isolated upward BP trend, reversible causes likely (pain/anxiety/bladder), no end-organ or airway signs — not escalate yet. Opposite-call check: not routine because it's a trend not a one-off; not escalate because no danger signs.
+Call: watch. Why: isolated upward BP trend, reversible causes still to check (bladder, anxiety — pain unlikely, patient comfortable), no end-organ or airway signs — not escalate yet. Opposite-call check: not routine because it's a trend not a one-off; not escalate because no danger signs.
 Watch → flip-trigger: further rise, new symptom (headache, chest, neuro change), or no response to comfort measures → escalate to provider. Reassess per facility.
 Cost reveal: escalating now = noise/credibility cost; ignoring as routine = missing a climbing trend.
 Coaching point: your tiering was right — you tend to under-define flip-triggers; always attach the specific thing that would flip a watch.

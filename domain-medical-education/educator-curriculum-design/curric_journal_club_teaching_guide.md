@@ -19,8 +19,8 @@ tags:
 updated: "2026-05-15"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md
-  - domain-medical-education/teaching-methods/meded_pbl_case_writer.md
-  - domain-medical-education/education/medicine_literature_synthesizer.md
+  - domain-medical-education/educator-case-writing/case_pbl_author.md
+  - domain-healthcare-clinical/prompts/education/medicine_literature_synthesizer.md
 ---
 
 # Journal Club Teaching Guide Designer

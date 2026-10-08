@@ -1,3 +1,25 @@
+---
+title: "Image to Children's Coloring Book Page"
+category: image-generation/coloring-book
+description: "Convert an uploaded image (photo, illustration, artwork) into a printable children's coloring book page — black line art on a pure white background, ready for printing and coloring."
+techniques:
+  - SV-11
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+difficulty: beginner
+tags:
+  - coloring-book
+  - image-generation
+  - kids-coloring
+  - line-art
+  - print-ready
+updated: "2026-10-06"
+---
+
 # Image to Children's Coloring Book Page
 
 **Source:** Prompting Guides Repository
@@ -167,6 +189,19 @@ Output: A single black-and-white line art coloring page.
 - **Output:** Black line art on white background, ready for printing and coloring
 - **Target Audience:** Children ages 4-10
 - **Print Size:** 8.5 x 11 inches at 300 DPI
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "Subject is clearly recognizable" because it is still a dog or a girl — conversion routinely swaps in a generic cartoon face, turns floppy ears pricked, drops glasses, a gap tooth, or a scar, and adds a collar, bow, or extra toes the photo never had.
+- Let "simplify complex details" erase what identifies this particular pet or person: a dog's patches are color in the photo, so unless their boundaries survive as outlines the page loses them entirely.
+- Accept a near line-for-line trace of a professional portrait, a film still, or licensed character art as a "simplification" — the page is then a copy of someone else's copyrighted image.
+- Carry over text, logos, or characters printed on clothing or toys in the photo; they convert cleanly to outlines and put a brand mark on the page.
+
+✅ **DO:**
+- Before converting, list the source's identifying features (ear and nose shape, markings, glasses, hairstyle, accessories, number of people or animals, visible limbs) and tick each one in the output; anything present in the page but absent from the photo also fails.
+- Confirm the uploaded image is the user's own photo or one they hold a license for before printing copies or selling the page.
+- Show the page to someone who knows the subject but has not seen the source photo; if they cannot name who or what it is, the "recognizable" line fails.
 
 ## Techniques Used
 

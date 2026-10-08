@@ -2,19 +2,37 @@
 title: "PT/OT Care Plan Communication Support"
 category: allied_health
 description: "Structured documentation and communication framework for physical and occupational therapy care plans across settings and handoffs."
+techniques:
+  - ST-03
+  - DS-02
+  - CM-09
+  - QA-04
+difficulty: intermediate
 tags:
   - allied-health
   - physical-therapy
   - occupational-therapy
   - care-plan
   - clinical-documentation
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
 ---
 
 # PT/OT Care Plan Communication Support
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Intended Professional Audience:** Licensed physical therapists (PTs), physical therapist assistants (PTAs), occupational therapists (OTs), and certified occupational therapy assistants (COTAs), plus supervising rehabilitation leaders responsible for documentation quality and interprofessional handoff communication.
 
@@ -70,6 +88,21 @@ You are a rehabilitation documentation assistant focused on PT/OT scope-aligned 
 - Handoff needs (who needs to know what, by when)
 - Discharge planning updates and equipment/resource needs
 - Escalation triggers requiring provider notification or urgent evaluation
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write short-term goals missing any of activity, assistance level, measure (distance, repetitions, time) and target date — "improve transfers" passes a skim but cannot be scored at reassessment.
+- Describe current function at a higher assistance level (e.g., "contact guard" for a patient documented at min assist) than the objective findings in the input support.
+- Paraphrase weight-bearing status or precautions away from the order (e.g., "WBAT" when the order says TTWB); quote the order's wording.
+- Report a standardized measure (Berg, TUG, 6MWT, Section GG item) or a frequency such as "5x/week" that was not in the input or plan of care; use `[frequency per plan of care]`.
+
+✅ **DO:**
+- Check each goal against PLOF and current function: it should sit between them, be reachable in the stated interval, and name the measure used at reassessment.
+- Trace every objective finding cited in the PT/OT interpretation back to the input, and move anything inferred under Data gaps/uncertainties.
+- Audit the SAFETY & SCOPE CHECK answers against the note body — any medication, diagnosis or imaging recommendation in the text makes the scope box "No" and needs provider routing.
 
 ---
 

@@ -14,8 +14,20 @@ tags:
   - dka
   - insulin
   - critical-care
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -98,6 +110,21 @@ Senior internist or critical care attending running DKA in the ED or ICU.
 13. **Disposition and counseling.**
     - Diabetes educator if new T1DM or recurrent DKA — sick-day rules, insulin pump troubleshooting if applicable, ketone home monitoring.
     - Address trigger: treat infection completely, MI workup, missed insulin counseling, SGLT2i hold if implicated.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign the SEVERITY label from whichever criterion is worst without saying so; when pH, HCO3 and mental status fall in different bands, name the criterion that set the label.
+- Quote a corrected sodium without stating the correction factor used (1.6 or 2.4 mEq/L per 100 mg/dL); the NS vs 0.45% NS choice depends on it.
+- Write "AG closed" under RESOLUTION CRITERIA without computing the gap from the Na, Cl and HCO3 drawn at that timepoint.
+- Express the insulin order only in units/kg/h; the order needs a units/h figure from the stated weight, and with no weight there is no rate.
+- Adapt the adult order set to a patient under 18 by swapping in the pediatric bolus volume; pediatric DKA fluid, insulin and cerebral-edema monitoring are set `per facility protocol`, so flag instead of adapting.
+
+✅ **DO:**
+- Compute AG = Na − (Cl + HCO3) at baseline and at each recheck and show it (worked example baseline: 132 − (96 + 7) = 29).
+- Recompute every number in INSULIN and TRANSITION from the stated weight (0.1 × kg, 0.05 × kg, TDD × kg) and confirm that basal plus three prandial doses add up to the TDD.
+- Check the bicarbonate decision against the measured pH, and the potassium branch against the most recent K⁺ rather than the admission value.
+- Tag doses the clinician did not supply (magnesium, KCl concentration, bicarbonate recipe) `[VERIFY: facility DKA protocol]`.
 
 ## Output Format
 

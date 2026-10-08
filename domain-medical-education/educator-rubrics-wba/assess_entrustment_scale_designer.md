@@ -22,7 +22,7 @@ tags:
   - cbme
   - epa
   - workplace-based-assessment
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-rubrics-wba/assess_epa_observation_form_author.md
   - domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md
@@ -202,6 +202,16 @@ Replaced with: observable supervisor behaviors: "supervisor reviews differential
 | `safety_critical_overlay` | Program-specific events that trigger downgrades |
 | `include_summative_committee_rule` | Adds a competency committee rubric for using the scale at decision points |
 | `include_specialty_specialization` | Adapts wording (e.g., surgery EPAs may merge L4/L5; primary care may add a continuity-cohort element) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Adjacent levels whose indicator lists could both be ticked for the same encounter (e.g., "supervisor reviews plan" at L3 and "supervisor reviews completed encounter" at L4 with no stated timing) — the boundary looks defined but is not | For each adjacent pair (L1/L2 … L4/L5), name the one supervisor action that is present at one level and absent at the other (before vs after the decision; in room vs reachable); if no indicator discriminates, the boundary is undefined and the refusal guard fires |
+| A transition rule that contradicts the stated variance limit (e.g., "no dissenting Level-2-or-below rating in window" when the method says no single dissenting rater blocks a transition) | Read the transition rules and the dissent rule side by side and resolve every conflict in favor of one explicit rule the committee can quote at appeal |
+| A target table that cannot be reached on the program's own clock — a PGY3-end Level 5 target paired with an L4→L5 rule needing ≥ 6 months of observations plus 12 adverse-event-free months | Walk one on-track learner through each `learner_levels × epa` row: confirm targets are non-decreasing across stages, routine ≥ complex in every row, and the time-window minimums in the transition and overlay rules fit inside the stage duration |
+| Program-chosen thresholds (observation counts, 90-day windows, overlay caps) cited to a published paper in the source-fidelity audit, or overlay consequences ("reset to Level 2 + formal remediation") stated as settled policy | Label locally chosen numbers "program decision" in the audit; tag remediation and reset consequences `[VERIFY: institutional CCC / GME due-process policy]` |
+| Rater-training κ targets carried over for elements this scale does not contain (e.g., "≥ 0.85 for safety-critical step ratings" on a supervision scale with no step ratings) | Every κ target names an item that exists on this scale; delete or re-point any target with no matching rating field |
 
 ## Verification Checklist
 

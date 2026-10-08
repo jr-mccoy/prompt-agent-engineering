@@ -14,8 +14,20 @@ tags:
   - emergency-medicine
   - diagnostic-workup
   - chest-pain
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -67,7 +79,7 @@ Work up undifferentiated chest pain in an adult patient: rule out the five life-
 
 6. **Aortic dissection: ADD-RS + d-dimer.**
    - **Aortic Dissection Detection Risk Score (ADD-RS):** 0–3 categories (predisposing conditions, pain features, exam features). 0 = low; 1 = intermediate; ≥2 = high.
-   - ADD-RS 0 + d-dimer <500 ng/mL FEU = sensitive rule-out (ADvISED study).
+   - Low ADD-RS + d-dimer <500 ng/mL FEU = sensitive rule-out; take the ADD-RS cut-off from the validating study, not from memory [VERIFY: ADvISED study / current ESC aortic guideline — ADD-RS scores validated for the d-dimer rule-out].
    - ADD-RS ≥1 or any clinical concern → CTA chest/abdomen/pelvis (or TEE if unstable). Type A → emergent surgery; Type B → BP and HR control (esmolol or labetalol IV, target SBP 100–120 and HR <60), ICU.
 
 7. **Ancillary patterns.**
@@ -85,6 +97,21 @@ Work up undifferentiated chest pain in an adult patient: rule out the five life-
    - Moderate HEART → observation unit, serial troponin, stress or CTCA before discharge.
    - High HEART or positive troponin → admit, cardiology, treat as NSTEMI pathway.
    - Document specific reasoning if discharging chest pain.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the working diagnosis outrun the troponin algorithm — write "suspected NSTEMI pending [time-point] troponin" until the 0-h rule-in value or the delta is in hand.
+- Describe ECG changes as "dynamic" from a single tracing; dynamic means a change between timed ECGs or against a prior.
+- Print a HEART, GRACE or TIMI tier without its item values, or reach a tier with a risk factor that is not in the input.
+- Mark PERC negative before judging pretest probability low, or while any of its eight items is unverified.
+- Write mg/kg or renally adjusted anticoagulant doses without a weight and creatinine in the input — "CrCl appears normal" with no creatinine is invented.
+
+✅ **DO:**
+- Recompute each score from its items: HEART (each component and the troponin as a multiple of that assay's ULN), Wells, ADD-RS, and age-adjusted D-dimer (age × 10 in the assay's units, FEU vs DDU).
+- Name the troponin assay and take its algorithm cutoffs from the input or `[VERIFY: assay-specific cutoffs]`, then state rule-out / observe / rule-in from the 0-h value and the delta.
+- For each of the five life threats, record the finding or test that excluded it, or the test still pending.
+- Schedule repeat troponin and ECG by clock time relative to the first draw and symptom onset, and state the decision each result triggers.
 
 ## Output Format
 
@@ -130,7 +157,7 @@ PLAN:
 
 ```
 LIFE-THREAT SCREEN:
-- ACS: active workup — pressure pain with radiation, diaphoresis, dynamic ECG changes, elevated hsTn. Most likely NSTEMI.
+- ACS: active workup — pressure pain with radiation, diaphoresis, ischemic ECG changes on a single tracing, elevated hsTn (single value). Suspected NSTEMI pending 1-h hsTn.
 - Dissection: ADD-RS 0 (no predisposing condition, no tearing, no pulse/BP differential). Low concern; no CTA at this time.
 - PE: no pleuritic component, no hypoxia, no tachycardia >100, no risk factors elicited; PERC negative if confirmed (need to verify no estrogen, no recent surgery). PE not pursued unless clinical evolution.
 - Pneumothorax: clear CXR, normal breath sounds.
@@ -143,17 +170,17 @@ ECG INTERPRETATION:
 - Compare to prior if available; serial ECGs q15–30 min while symptomatic.
 
 INITIAL LABS / IMAGING:
-- hs-cTnT 0-h: 28 ng/L (elevated, 2× ULN). Repeat at 1 h (ESC 0/1-h algorithm) — delta ≥5 ng/L = rule-in NSTEMI.
+- hs-cTnT 0-h: 28 ng/L (elevated, 2× ULN) — below the 0-h rule-in value of 52 ng/L, so observe zone. Repeat at 1 h (ESC 0/1-h algorithm) — delta ≥5 ng/L = rule-in NSTEMI.
 - CXR: clear, no widened mediastinum, no pneumothorax.
 - BMP, CBC, lipid panel, lactate. BNP if heart failure features.
 - D-dimer not indicated (PE pretest low and ACS already established).
 
 RISK STRATIFICATION:
 - HEART: History 2 (highly suspicious), ECG 2 (significant ST deviation), Age 1 (45–64), Risk factors 2 (≥3: HTN, DM, smoking, dyslipidemia), Troponin 1 (1–3× ULN). Total 8 = HIGH RISK.
-- This is NSTEMI by current data.
+- Suspected NSTEMI pending the 1-h hsTn delta; HEART tier is high regardless.
 
 WORKING DIFFERENTIAL:
-1. NSTEMI (most likely) — typical presentation, dynamic ECG, elevated hsTn, multiple risk factors.
+1. Suspected NSTEMI (most likely, pending 1-h hsTn) — typical presentation, ischemic ECG changes (dynamic only if serial ECGs change), elevated hsTn, multiple risk factors.
 2. Unstable angina — less likely now that hsTn elevated.
 3. Type 2 MI from demand — possible but no obvious trigger (no sepsis, anemia, tachyarrhythmia).
 
@@ -165,7 +192,7 @@ PLAN:
 - Metoprolol tartrate 12.5–25 mg PO once stable, no contraindications (no shock, no severe asthma, no high-degree block).
 - Sublingual NTG 0.4 mg q5 min × 3 for active pain; IV NTG infusion if persistent.
 - Continuous telemetry, repeat ECG q15 min while symptomatic, repeat hsTn at 1 h.
-- Cardiology consult — early invasive strategy (within 24 h) given GRACE likely >140, dynamic ECG, hsTn rise.
+- Cardiology consult — early invasive strategy (within 24 h) if NSTEMI is confirmed by the 1-h delta; compute GRACE from its items before using it; document whether serial ECGs show dynamic change.
 - Disposition: admit to telemetry/CCU pending cath.
 - Echocardiogram before or after cath for EF.
 - Initiate secondary prevention discussion (DAPT, statin, BB, ACE/ARB, smoking cessation, cardiac rehab, BP/DM/lipid optimization) prior to discharge.

@@ -19,11 +19,11 @@ techniques:
   - DS-06
 difficulty: advanced
 related_prompts:
-  - prompts/pacu_orientee_evaluation_meta_prompt.md
-  - prompts/pacu_preceptor_approach_guide.md
-  - prompts/pacu_preceptor_writing_orientee_evaluation.md
-  - prompts/pacu_peer_preceptor_360_feedback.md
-  - prompts/pacu_preceptor_difficult_conversation_guide.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_writing_orientee_evaluation.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_peer_preceptor_360_feedback.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_difficult_conversation_guide.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - Rater-bias and small-N calibration literature (organizational behavior)

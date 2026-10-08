@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-05-15"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -120,3 +129,18 @@ Same layout, with these substitutions:
 - Pediatric SBAR variant: add age-banded weight-based cue ("weight known? confirm if peds-dose patient"); explicitly defer dosing to "per provider order."
 - Ambulatory PACU outbound variant: add escort + transport readiness cues.
 - Bilingual variant: add Spanish-language version of panel labels (use validated medical Spanish source; do not auto-translate).
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Rely on checklist item 4 ("no invented numbers") as the model's own attestation — a filler cue such as a blood-loss volume in Background or a pain target in Recommendation can sit in a panel the model has just certified.
+- Pass the outbound side as "same layout" when it reuses inbound cues ("Receiving from OR", "Pre-op vitals baseline") under the amber band — the color check passes and the content faces the wrong direction.
+- Let "discharge-readiness criteria status per facility protocol" render as a named score with a cut-off.
+- Accept a card that silently dropped the facility-specific SBAR elements pasted in INPUTS; the four S/B/A/R panels still look complete without them.
+
+✅ **DO:**
+- Keep a cue inventory per side — 14 inbound (S 3, B 3, A 5, R 3) and 14 outbound (S 3, B 3, A 4, R 4), plus any facility additions — and tick each rendered cue against it; extra cues are deleted, missing ones regenerated.
+- Search both sides for numerals: inbound may show only the "30" from "next 30 min"; outbound should show none.
+- Confirm each side's escalation cue names roles only, and that the outbound side names the receiving role rather than an individual.

@@ -22,7 +22,7 @@ tags:
   - assessment-planning
   - coverage
   - content-validity
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md
   - domain-medical-education/educator-assessment-items/assess_question_bank_audit.md
@@ -158,6 +158,16 @@ Required action: author 2 items per gap-audit table.
 | `competency_framework` | ACGME (US residency), CanMEDS (Canadian), AAMC EPAs (UME), NCSBN (NCLEX), NCCPA (PA), NAPLEX (pharmacy) |
 | `include_difficulty_targets` | Adds target p per cell (e.g., easier for foundational, harder for evaluation) |
 | `include_practice_distribution_data` | If available (e.g., NBME practice data), aligns weights to real-world frequencies |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Passing the cognitive-distribution check because the Application column lands in 50–60% while another Bloom column (often Evaluation) holds 0 items in every row | Check each Bloom column against its own band from Method step 3; a column total of 0 against a non-zero band is a fail unless the blueprint states why that level is out of scope for this item type |
+| Rounding each row independently so the % weights, row totals, TOTAL row and `total_items` stop agreeing | Recompute before sign-off: row total = weight × `total_items`; each row's cells sum to its total; each column sums to its TOTAL cell; the grand total equals `total_items`. When weight × N is not an integer, state the rounding rule used |
+| Filling "Instructional hours" and "Frequency" in the weight-rationale table with plausible numbers when no course schedule or practice data was supplied | Take hours only from a supplied schedule; otherwise write `[not supplied — faculty judgment]` so the rationale does not look evidence-based when it is not |
+| Reporting "Cell actual" and GAP/orphan verdicts as if items exist when the input was a plan with no item list | Without an item list, label the Actual column `planned`; a GAP or orphan finding is real only when counted against actual mapped items |
+| Deriving `total_items` from `time_budget_minutes` with the MCQ constant alone on a mixed-format test | Multiply each item type's count in `item_type_mix` by its own pacing constant (short-answer is 4–6 min, not 1.25) and confirm the summed minutes fit the time budget |
 
 ## Verification Checklist
 

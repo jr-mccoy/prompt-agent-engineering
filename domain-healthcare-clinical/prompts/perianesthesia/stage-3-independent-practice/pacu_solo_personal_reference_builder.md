@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, DS-06, ED-02, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_solo_new_pattern_capture_log.md
   - pacu_cert_spaced_repetition_deck_builder.md
@@ -28,6 +28,19 @@ references:
 ---
 
 # Personal Reference Builder — Turn Accumulated Notes Into a PACU Quick-Reference You Trust
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study/organization aid, not a clinical protocol or a source of truth. Your personal reference **never overrides** facility policy, orders, or a provider; every clinical value in it stays `per facility / per order` and points back to the authoritative source.
 
@@ -80,6 +93,20 @@ New captures enter via: [...] | Stale re-check cadence: [...] | Facility-value r
 | `organize_by` | Switch the top-level structure (domain / event / patient-type / task) |
 | `source_rule` | Strict source-linking on/off (keep on for anything clinical) |
 | `format` | Skeleton for a card, a phone note, or a printable one-pager |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report TRIAGE RESULT counts that can't be reconciled with the input — the worked example's 14 + 6 + 8 cannot be checked against "12 phone notes + question-log answers + 4 scripts" until the question-log count is stated.
+- Accept a source pointer because it names a document ("facility OIRD policy"); it counts only if the learner checked the entry against that document's current version.
+- Strip the number from an entry but leave its meaning ("re-dose after the usual window") — the entry still asserts a value and belongs in VERIFICATION GAPS.
+- Drop a note as "know cold" when it covers a low-frequency/high-risk event (LAST, MH, airway rescue); route it to the annual refresh planner instead.
+- Merge two notes that disagree without flagging the conflict for verification.
+
+✅ **DO:**
+- Reconcile the arithmetic before emitting: kept + merged-away + dropped = total raw notes, with the items listed per bucket so the count can be audited.
+- Scan the finished skeleton for any digit next to a drug, vital sign, score, or time; each must become a `per facility protocol` / `per provider order` pointer or move to the gap list.
+- Give each source pointer a "last verified" date so the maintenance rule has something to check.
 
 ## Verification Checklist
 

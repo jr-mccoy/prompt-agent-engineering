@@ -17,7 +17,7 @@ tags:
   - gpt-image-2
   - nano-banana
   - storybook
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/childrens-illustration/childrens_character_design_sheet.md
   - domain-image-generation/childrens-illustration/childrens_consistent_style_series.md
@@ -160,6 +160,21 @@ If the text-safe area is cluttered, a face sits in the gutter, or the style/char
 3. "The contrast in the text-safe zone is too high — lower it so dark body text will remain legible."
 4. "The style reads more [digital/cartoon] than the book's canonical [watercolor] — restore the canonical [STYLE]."
 5. "This page feels static — add a directional cue (gaze, gesture, leading line) that pulls the eye toward the page turn."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Call the text-safe area "correctly sized for the copy" because it looks roomy — 60 words at picture-book type sizes can need far more height than a soft patch of sky, and the zone's size only means something at final trim.
+- Clear "age-appropriate" from the main character alone; background details fail it too — a knife left on a counter, a dog baring teeth, coins or marbles within a toddler's reach on board-book art, a child alone at the water's edge.
+- Check the gutter on the 1536×1024 (1.5:1) render — an 8×10 in portrait book spreads to 16×10 in (1.6:1), and a 10×8 in landscape book to 20×8 in (2.5:1), which keeps only about 614 of the 1024 px of height, so the gutter and trim land somewhere else after the crop.
+- Accept hands at a glance — six fingers, fused fingers, or a five-finger hand on a character the bible draws with four are routine in generated spreads and obvious to a child reading closely.
+
+✅ **DO:**
+- Set the real `[MANUSCRIPT TEXT]` in the publisher's typeface and size over the art cropped to final trim; it must fit inside the zone with margin, and dark body text must keep at least 4.5:1 contrast against the zone's darkest pixel.
+- Count the fingers on every visible hand and compare each with the bible's convention.
+- On the cropped file, draw the gutter line and trim, then mark every face, hand and key prop within the printer's gutter allowance [VERIFY: printer's gutter and binding spec].
 
 ---
 

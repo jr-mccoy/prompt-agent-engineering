@@ -17,7 +17,7 @@ tags:
   - anti-fabrication
   - nano-banana
   - gpt-image-2
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/scientific-technical/scientific_illustration.md
   - domain-image-generation/scientific-technical/technical_exploded_diagram.md
@@ -142,6 +142,21 @@ If any value, label, tick, or title differs from the supplied data, or proportio
 3. "A data label was invented/changed — render the labels verbatim as supplied."
 4. "It rendered in 3D and distorts the comparison — switch to flat 2D."
 5. "For this chart accuracy is decision-bearing — abandon the image model and render it in [matplotlib/D3/spreadsheet] instead, using this image only as a style reference."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Take a correct data label as proof of correct plotting — the model can print "42" above a bar drawn to 35, and the verbatim-label line of the checklist passes while the geometry misstates the value.
+- Accept error bars, confidence bands, significance asterisks, or "n =" annotations when `[EXACT DATA]` carried no uncertainty values; they turn a decorative chart into an apparent statistical result.
+- Pass a bar chart whose value axis starts above zero, or a log axis drawn with evenly spaced linear ticks, just because every tick label matches `[AXES SPEC]`.
+- Let a line chart's curve add peaks, dips, or smoothing between the supplied points, or a pie chart show slice percentages that do not sum to 100%.
+
+✅ **DO:**
+- Measure in pixels: locate two labelled ticks on the value axis, derive pixels-per-unit, convert each bar top / point / slice angle (value ÷ total × 360°) back to a number, and flag any that deviates from `[EXACT DATA]` by more than ~2% of the axis range.
+- Read one known value per series off the image to confirm the legend colour → series mapping was not swapped.
+- Render uncertainty marks only from supplied SD / SE / CI values, with the interval type named in the caption.
 
 ---
 

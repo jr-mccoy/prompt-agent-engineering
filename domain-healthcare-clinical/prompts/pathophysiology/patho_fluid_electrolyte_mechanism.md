@@ -16,8 +16,20 @@ tags:
   - potassium
   - calcium
   - mechanism
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -58,6 +70,19 @@ Senior nephrologist or internal medicine attending teaching mechanism. Names the
    - ECG changes if applicable (peaked T in hyperK; long QT in hypoCa, hypoMg, hypoK; U waves in hypoK)
 
 7. **Therapeutic logic.** Map each treatment to which step in the chain it interrupts or replaces.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write a transporter chain whose molecule names are all real but whose arrows are wrong — ADH acting via V1 to insert AQP2, aldosterone "opening ROMK" directly, PTH reabsorbing phosphate. A correct cast of transporters in the wrong order still reads as mastery.
+- Fill `BROKEN STEP` with the diagnosis ("SIADH", "TLS") instead of the specific failed element of the loop named in `REGULATORY AXIS`.
+- Explain a Ca, phos or Mg value without its units (mg/dL vs mmol/L) or, for calcium, without asking whether it is total or ionized and what the albumin is.
+- Put a Ca × phos product cut-off, urine-output target, insulin/dextrose amount or calcium-salt dose into `TREATMENT MAPPED TO MECHANISM` from memory; use the clinician's value or `[VERIFY: current guideline/label/formulary]`.
+
+✅ **DO:**
+- Trace every numbered link in `CAUSAL CHAIN` to a named source type (renal physiology text, product label, guideline, review) and to a molecule already listed in `NAMED TRANSPORTER / CHANNEL CHAIN`; a link with neither is cut or marked `[unverified step]`.
+- Before explaining hypocalcemia, compute albumin-corrected calcium from the supplied albumin (or request ionized Ca); before explaining hyperkalemia, state whether hemolysis or pseudohyperkalemia has been excluded.
+- Test the chain against the user's other values: if a supplied number moves opposite to what `PREDICTED ASSOCIATED FINDINGS` says (e.g. dilute urine when the chain needs high ADH), report that the mechanism does not fit rather than bending it.
 
 ## Output Format
 
@@ -103,7 +128,7 @@ REGULATORY AXIS:
 - K: normally maintained by renal ROMK secretion under aldosterone control, and by insulin- and beta-2-adrenergic-driven Na/K-ATPase shifts of K into cells.
 - Phos: normally regulated by PTH and FGF23 inhibiting NaPi-IIa/IIc in proximal tubule, and by calcitriol-driven gut absorption.
 - Ca: PTH/calcitriol loop with bone, gut, kidney.
-- UA: produced from purine catabolism (xanthine → hypoxanthine → uric acid via xanthine oxidase); excreted renally.
+- UA: produced from purine catabolism (hypoxanthine → xanthine → uric acid, both steps via xanthine oxidase); excreted renally.
 
 BROKEN STEP: Massive intracellular contents released into circulation simultaneously overwhelm renal excretion. The kidney is the rate-limiter for K, phos, and UA, and AKI from intratubular precipitates and volume issues makes it worse.
 
@@ -116,7 +141,7 @@ NAMED TRANSPORTER / CHANNEL CHAIN:
   - K: ROMK and BK channel secretion in collecting duct cannot keep pace with the load; aldosterone effect maximal
   - Phos: NaPi-IIa transporter is already maximally suppressed by FGF23 and PTH but reabsorption is not zero; filtered phos load exceeds excretion capacity
   - UA: at acid urine pH, uric acid (pKa ~5.4) precipitates in tubules as uric acid crystals → intratubular obstruction → AKI
-  - Calcium phosphate co-precipitates in tissues and renal tubules when (Ca × phos) > 70 → contributes to AKI and to the hypocalcemia (Ca consumed in precipitates)
+  - Calcium phosphate co-precipitates in tissues and renal tubules when the Ca × phos product is high [VERIFY: threshold — current TLS guideline] → contributes to AKI and to the hypocalcemia (Ca consumed in precipitates)
 - AKI from intratubular obstruction (uric acid + Ca-phos crystals) and renal vasoconstriction further reduces excretion of K, phos, UA → positive feedback worsens TLS.
 
 CAUSAL CHAIN:
@@ -128,12 +153,12 @@ CAUSAL CHAIN:
 
 PREDICTED ASSOCIATED FINDINGS:
 - Other electrolytes: low Ca (consumed in Ca-phos precipitates and bound by phos), Mg sometimes shifts; LDH high (massive cell turnover marker)
-- Volume status: usually well-hydrated if pre-treated (TLS prophylaxis includes IV fluids targeting urine output 3 mL/kg/hr); hypovolemia worsens AKI
+- Volume status: usually well-hydrated if pre-treated (TLS prophylaxis includes IV fluids with a urine-output target [VERIFY: current TLS guideline / per provider order]); hypovolemia worsens AKI
 - Acid-base: lactic acidosis if very heavy tumor burden and ischemia; may have AGMA from accumulated organic anions in AKI
 - ECG: peaked T waves from hyperkalemia; prolonged QT from hypocalcemia. Risk of fatal arrhythmia with K >6.5 and concurrent hypoCa is real.
 
 TREATMENT MAPPED TO MECHANISM:
-- IV fluids (NS at 3 mL/kg/hr targeting urine output 3 mL/kg/hr) → dilutes precipitates, increases tubular flow, promotes excretion of K, phos, UA. Single most important intervention.
+- IV fluids (rate and urine-output target [VERIFY: current TLS guideline / per provider order]) → dilutes precipitates, increases tubular flow, promotes excretion of K, phos, UA. Single most important intervention.
 - Rasburicase (recombinant urate oxidase) → converts uric acid to allantoin (much more soluble) → drops UA within hours; prevents and treats uric acid nephropathy. Avoid in G6PD deficiency (causes hemolysis).
 - Allopurinol (xanthine oxidase inhibitor) → blocks xanthine → urate conversion. Used for prevention; less effective once UA already elevated because it does not break down existing UA. May allow xanthine to accumulate and precipitate.
 - Hyperkalemia: calcium gluconate 1 g IV for membrane stabilization; insulin 10 U + D50 to drive K into cells (Na/K-ATPase activation); albuterol nebulizer (beta-2 → Na/K-ATPase activation); avoid bicarbonate as monotherapy (limited K effect, may worsen Ca-phos precipitation). Ultimately, removal via dialysis if severe.

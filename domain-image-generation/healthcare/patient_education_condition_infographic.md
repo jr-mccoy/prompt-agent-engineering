@@ -2,6 +2,15 @@
 title: "Patient Education Condition Infographic - Image Generation Prompt"
 category: medical-education
 description: "Template-driven image generation prompt for a plain-language patient handout explaining a medical condition (what it is, symptoms, when to seek help). Low-health-literacy friendly: large type, simple icons, high contrast. The model renders clinician-supplied content only."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - patient-education
@@ -10,7 +19,7 @@ tags:
   - handout
   - plain-language
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - ./patient_discharge_instructions_visual.md
@@ -347,6 +356,21 @@ Not recommended for accurate dense text.
 
 ### Problem: Red 'When to get help' zone is not prominent
 **Add:** `"The red help zone must be the most visually dominant block on the page, with the largest warning text."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let a frequency or certainty word fall off — "Sometimes: headaches" printed as "Headaches", "can quietly damage" as "damages", "Sudden weakness" as "Weakness"; each line still maps to its SYMPTOM, definition or WARNING slot while its meaning has changed.
+- Let a pictogram make a claim its label does not: a distressed face beside "Most people feel nothing at all", or a pill bottle beside a diet point.
+- Accept any number, dose or target the fill did not contain ("take 10 mg daily", "keep it under 130/80"); this handout is general education, carries no dose text, and must not read as a prescription.
+- Take a clinician's approval of the fill as approval of the output — what printed can differ (a paraphrased line, reordered treatment steps, a missing warning sign), so sign-off is given on the rendered handout.
+
+✅ **DO:**
+- List every qualifier word in the fill (sometimes, often, most, may, can, sudden, very) and tick each one off on the printed handout.
+- Cover the text and name what each pictogram shows; an icon must say the same thing as the label beside it.
+- Record the approved source and its review date for each fact, and score the rendered text — not the fill you typed — for reading grade level.
 
 ---
 

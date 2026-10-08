@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, ST-01, DS-06, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_inbound_handoff_receiving_rehearsal.md
   - pacu_orient_recovery_one_liner_drill.md
@@ -31,6 +31,19 @@ references:
 ---
 
 # Calling Report to the Floor — Outbound SBAR Rehearsal
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A communication rehearsal, not live clinical decision support. Give real report per your facility's handoff standard with your preceptor.
 
@@ -90,6 +103,19 @@ One coaching point: [...]
 | `report_type` | `escalation` reorders SBAR so the concern leads |
 | `destination` | ICU/step-down raises the assessment detail; ambulatory adds discharge-teaching handoff |
 | `receiver` | `busy` (interrupts, wants it fast) vs. `thorough` |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Credit an SBAR element because its label holds a placeholder: a Background of "per chart" with no anesthesia type category, nothing managed, and no lines/drains is an empty B.
+- Let the report read complete while it drops a pending item — an outstanding result, a first void not yet achieved, the time of the last analgesic or antiemetic per record, or an allergy.
+- Accept "stable and meeting discharge criteria" in S when A shows the score still trending toward the facility threshold; the headline must match the assessment.
+- Score an `escalation` report as reordered when S only says "there's a concern" and the concern itself is still buried in A.
+
+✅ **DO:**
+- Before scoring `Complete`, count the six assessment domains from Method step 3 in A, each with a direction-of-change word; fewer than six is N.
+- Compare every receiver Q&A answer against B and A — an answer that introduces a fact the report never stated means the report omitted it, so `Complete` is N.
+- Check each "Escalate if" condition is something the floor nurse can observe at the bedside, not a value only PACU or the provider holds.
 
 ## Verification Checklist
 

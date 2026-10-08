@@ -14,7 +14,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-01, RT-02, QA-04, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_what_is_pacu.md
   - pacu_foundations_monitoring_and_scores_primer.md
@@ -27,6 +27,19 @@ references:
 ---
 
 # Starter Concept Map — Build Your First "Typical Post-Op Patient"
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A study/organizing tool, not clinical decision support. It structures *your* understanding — real assessments and priorities are set with your preceptor.
 
@@ -91,6 +104,19 @@ Node I'm least sure about: [ ]
 | `patient_archetype` | Swap the central case (keep it simple at Stage 0) |
 | `domains_to_include` | Focus a subset for a first pass |
 | `format` | Outline for speed, node-link for relationships |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write a node's content for the learner and present the map as learner-built; the map looks complete while the building — the learning step — never happened.
+- Accept a cross-link that is co-occurrence ("pain and PONV both happen after surgery") rather than mechanism (pain → sympathetic surge → BP rise).
+- Let unit practice into a node ("every patient gets…", "our discharge score is…"); a v1 map holds general recovery logic, with local rules marked `per facility protocol`.
+- Let the time axis become a list of locations; each stage must say what dominates the nurse's attention there.
+
+✅ **DO:**
+- Check each domain node has all four links (assess → cue-level deviation → within-scope response → escalate to a role); a node missing one becomes an uncertainty node, not a guess.
+- Test every cross-link by asking "through what mechanism?"; if the learner cannot answer, move it to uncertainty nodes.
+- Check the escalation role differs sensibly by node instead of one generic "call someone" everywhere, with the actual chain left to facility policy.
 
 ## Verification Checklist
 

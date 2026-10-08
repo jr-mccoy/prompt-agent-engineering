@@ -20,7 +20,7 @@ tags:
   - accessible
   - askuserquestion
   - gated-workflow
-updated: "2026-05-17"
+updated: "2026-10-06"
 related_prompts:
   - domain-deep-analysis/deepthink_plan.md
   - domain-deep-analysis/deepthink_problem_analysis_plain.md
@@ -214,7 +214,9 @@ After producing the plan:
 
 ---
 
-## Common ways this goes wrong (and what I watch for)
+## False-Positive Prevention
+
+*In plain words: the common ways a plan can look ready to follow when it isn't, and what I watch for.*
 
 1. **Overcommitment is the #1 failure mode.** Plans almost always overestimate capacity. If a plan fits *exactly* into your available time, it's already over capacity. The Step 1 reality check and the Step 4 30%-slower check exist for this.
 2. **Clean main chain can hide messy side risks.** A plan with a tidy must-finish-first chain but ten parallel soft dependencies often fails not on the main chain but on a parallel that wasn't watched. Step 2 will name the parallel risks too.
@@ -223,6 +225,7 @@ After producing the plan:
 5. **A plan is not a strategy.** If Step 1 reveals you haven't actually decided what you're trying to do, I'll stop and recommend `/deepthink-decision-plain` first. Planning toward an undecided goal is wasted output.
 6. **"How will we know it's working?" should be answerable for every milestone.** If a milestone has no observable signal, it's not really a milestone — it's a deadline-shaped wish.
 7. **Re-planning is normal.** I'll build in a re-planning checkpoint after the first major milestone. The plan that survives contact with reality unchanged is usually the plan that wasn't really tested.
+8. **The numbers in a plan can look right without adding up.** Before I hand it over, I do the arithmetic again from the milestones themselves: add up every milestone's "Rough effort," add 30%, and compare the total to the time per week you told me you have — the "Capacity check" line must match that sum, not a figure I estimated separately. I also walk the dates: each milestone lands after the ones it depends on, and the last one lands on or before your deadline. If either check fails, the plan goes back to Step 2 instead of out the door.
 
 ---
 

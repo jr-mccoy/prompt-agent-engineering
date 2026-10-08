@@ -23,7 +23,7 @@ tags:
   - vocabulary
   - active-recall
   - foundational-skill
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md
   - domain-medical-education/learner-clinical-reasoning/reason_illness_script_builder.md
@@ -132,6 +132,16 @@ Restudy target: [the axis pair the learner needs to drill]
 | `time_per_item` | Soft cap to push speed (e.g., 20 seconds) |
 | `domain_focus` | Restrict to e.g., pain / dyspnea / weakness / cognitive-mental / pediatric-symptoms |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Grading a pole `correct` when the quote gives no evidence for it (e.g., "chronic-progressive" when no duration is stated) | Credit a pole only if a word in the raw quote supports it; an axis the quote leaves open is graded "not stated," and a learner who fills it in gets `partial` |
+| Filing a qualifier under the wrong axis in the tutor's own calibration or model answer (a positional modifier listed as "character") | Before drilling, check every axis label in the calibration and expected answers against the session's qualifier inventory |
+| Writing a grade label that contradicts the rubric's own definitions (a wrong-axis answer graded `partial`) | Apply the three-level rubric literally — wrong axis or smuggled diagnosis is `incorrect` — and name the rule invoked in the one-line grade |
+| Per-axis scorecard tallies that don't match the items actually drilled | Recompute each axis N/N from the item grades: the denominator is the number of items where that axis was in play, and the denominators should sum to the qualifiers attempted |
+| An adversarial item whose "correct" axis rests on a cue that isn't in the quote | Confirm the bait item's quote contains the discriminating words ("comes and goes," "gives out without pain") that justify the expected axis; otherwise it tests guessing, not listening |
+
 ## Verification Checklist
 
 - [ ] Qualifier inventory is named explicitly before drilling. No surprise axes.
@@ -163,7 +173,7 @@ Functional: limits activity (Y/N), wakes from sleep (Y/N)
 
 >>> CALIBRATION
 Good: "I've had a bad headache for the last 6 weeks that gets worse when I lean forward."
-→ temporal: subacute (6 wk); character: positional (worse leaning forward); functional: present but not specified.
+→ temporal: subacute (6 wk); modifying factors: positional (worse leaning forward); functional: present but not specified.
 Bad: "I've had a bad headache for the last 6 weeks that gets worse when I lean forward."
 → "Chronic headache, severe." (Wrong-temporal: 6 wk is subacute, not chronic. Missing-axis: dropped the positional qualifier, which is the schema-activating piece.)
 
@@ -179,7 +189,7 @@ Grade: correct.
 
 [3, adversarial] "I'm so tired I can't keep up. My legs feel heavy after a few blocks and I have to stop. It's not pain — it's that they just give out."
 > [learner: weakness, exertional]
-Grade: partial — wrong axis. The patient says "tired," "heavy," and "give out without pain." This is the claudication-vs-asthenia axis, not the true-motor-weakness axis. Vascular claudication and neurogenic claudication live here; true motor weakness (UMN/LMN/NMJ/muscle) is elsewhere.
+Grade: incorrect — wrong axis (rubric: wrong axis = incorrect). The patient says "tired," "heavy," and "give out without pain." This is the claudication-vs-asthenia axis, not the true-motor-weakness axis. Vascular claudication and neurogenic claudication live here; true motor weakness (UMN/LMN/NMJ/muscle) is elsewhere.
 
 [4] "I get this burning, electric pain shooting down the back of my right leg from my buttock to my calf. Worse when I sit, better when I walk."
 > [learner: character: burning + electric (neuropathic); distribution: dermatomal-pattern, right-sided; modifying: worse sitting, better walking]
@@ -187,10 +197,10 @@ Grade: correct — bonus: the "worse-sitting" qualifier flips against typical lu
 
 [5] "I've been short of breath when I walk more than half a block. I'm fine sitting. At night I have to use three pillows or I wake up gasping."
 > [learner: temporal: chronic-progressive; modifying: exertional + orthopnea + PND; functional: limits activity, wakes from sleep]
-Grade: correct.
+Grade: partial — temporal not stated: the quote gives no duration or trajectory, so "chronic-progressive" is unsupported; modifying and functional correct.
 
 >>> SCORECARD
-Per-axis accuracy: temporal 4/4   distribution 3/3   character 4/4   modifying 5/5   functional 4/4
-Most-confused axis: motor-weakness vs. claudication-vs-asthenia (1/1 missed on first try).
+Per-axis accuracy: temporal 2/3   severity 2/2   distribution 2/2   character 1/1   modifying 4/4   functional 1/1   weakness-type (motor vs. claudication vs. asthenia) 0/1
+Most-confused axis: motor-weakness vs. claudication-vs-asthenia (0/1 — item 3 graded incorrect).
 Restudy target: paired axes for "weakness" — true motor weakness (UMN/LMN/NMJ/muscle), fatigue/asthenia, claudication (vascular vs. neurogenic). Different schemas, different workups.
 ```

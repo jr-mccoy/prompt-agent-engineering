@@ -1,3 +1,21 @@
+---
+title: "2. Corporate Style Applicator"
+category: presentations
+description: "Apply a corporate style JSON (colors, fonts, logo position, margins) to new PowerPoint generation through the html2pptx workflow, with explicit failure conditions for off-palette colors, undersized fonts, and border boxes."
+techniques:
+  - CM-02
+  - RT-11
+  - QA-01
+difficulty: beginner
+tags:
+  - presentations
+  - powerpoint
+  - corporate-style
+  - style-guide
+  - brand-consistency
+updated: "2026-10-06"
+---
+
 # 2. Corporate Style Applicator
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -41,6 +59,15 @@ FAILURE CONDITIONS:
 VALIDATION:
 Show thumbnail before completion. Verify style compliance.
 ```
+
+## False-Positive Prevention
+
+1. **Compliance judged from the thumbnail.** A thumbnail can look on-brand while a fill uses a near-miss hex (#0067CC for #0066CC). Compare the colour values written into the slide, not the picture.
+2. **Silent font fallback reported as applied.** When the specified font is unavailable, rendering may substitute another. Confirm the font name in the generated file matches the JSON and report any substitution.
+3. **Auto-resize landing in the 16–18pt gap.** Shrinking text avoids the "below 16pt" failure yet still breaks the 18pt minimum. Any text set between 16pt and 18pt is a violation to report, not a fix.
+4. **Content split to meet the three-bullet cap.** Pushing a fourth bullet onto an unlabelled continuation slide passes the count and breaks the argument; flag content that does not fit instead.
+5. **Logo placed by assumption on layouts the JSON never covered.** If the JSON gives one position, note which slide layouts (title, section divider) used it without evidence that the template does.
+6. **Verify:** list every colour value used in the output and diff it against the JSON `colors` array; a tint or shade of a brand colour that is not in the array still fails.
 
 ## Usage Notes
 

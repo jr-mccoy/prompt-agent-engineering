@@ -15,8 +15,20 @@ tags:
   - lipids
   - prevention
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -60,6 +72,21 @@ Cardiologist or primary care attending managing lipids for ASCVD prevention.
 7. **Lp(a):** measure once; if elevated, intensify LDL lowering and risk-factor control (no approved Lp(a)-specific therapy yet outside trials).
 
 8. **Monitor:** lipid panel per above; baseline ALT; check for myopathy symptoms (routine CK not needed unless symptomatic); avoid in pregnancy.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Quote an LDL goal without naming its framework — ACC/AHA uses thresholds for adding non-statin therapy, ESC/EAS uses targets such as <55 mg/dL; a plan mixing them reads authoritative and is internally inconsistent.
+- Report 10-year risk not computed from this patient's inputs, or interchange Pooled Cohort Equations and PREVENT results — they give different numbers for the same person.
+- Trust a calculated LDL when triglycerides are high or LDL is very low; Friedewald underestimates there — say which method the lab used.
+- Uptitrate a statin without checking interacting drugs that cap its dose (simvastatin with amlodipine, diltiazem or amiodarone; gemfibrozil with any statin).
+- Ignore populations whose starting doses or targets differ: Asian ancestry (rosuvastatin exposure), age >75, CKD, heterozygous FH in children, pregnancy planning.
+
+✅ **DO:**
+- Recompute % LDL reduction from the untreated baseline in the input, not the last on-treatment value, and say so if no untreated baseline exists.
+- Derive non-HDL-C (total cholesterol − HDL) and compare it with the same framework's non-HDL goal when triglycerides are elevated.
+- Re-derive the risk tier from its inputs (event type and date, diabetes, CKD, FH features, risk enhancers, CAC) and list any that are missing.
+- Check each add-on's eligibility against its label and payer criteria `[VERIFY: label]` before writing it as the next step.
 
 ## Output Format
 

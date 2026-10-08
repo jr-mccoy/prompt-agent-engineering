@@ -1,3 +1,22 @@
+---
+title: "Competitive Battle Card Deck"
+category: presentations
+description: "Synthesize competitive intelligence research into a battle card presentation for sales teams, with clear positioning, differentiation messaging, and objection handling for major competitors."
+techniques:
+  - ST-03
+  - DS-19
+  - RT-05
+  - QA-05
+difficulty: intermediate
+tags:
+  - presentations
+  - powerpoint
+  - battle-card
+  - competitive-intelligence
+  - objection-handling
+updated: "2026-10-06"
+---
+
 # Competitive Battle Card Deck
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -80,6 +99,15 @@ ACTIONABLE SALES GUIDANCE:
 VALIDATION:
 Show thumbnails, verify competitive accuracy, confirm sales actionability and professional positioning
 ```
+
+## False-Positive Prevention
+
+1. **Rumour entered as a competitor fact.** A price or roadmap item one rep heard in one deal is not a profile fact. Every competitor claim carries its source and the date it was observed; hearsay is labelled "field report, unverified" or dropped.
+2. **Stale head-to-head rows.** Feature and pricing comparisons go out of date with each competitor release. A row whose source predates the competitor's latest release (or the cut-off date the user gives) is marked "re-check", not shown as current.
+3. **A comparison grid built from our feature list only.** Rows drawn from our own spec show the competitor missing everything we have and hide what they have that we lack. Build rows from both products' feature sets.
+4. **Win reasons read off the outcome.** Do not credit a differentiator because the deal was won; quote the reason recorded in the win/loss data or customer feedback.
+5. **Reference customers without permission.** Name a customer under Reference Customers only if the inputs confirm it was won from that competitor and that permission to reference exists.
+6. **Verify:** trace every bolded competitor weakness to a dated source in the inputs, count the ones you cannot trace, and remove them before building the Battle Card Summary.
 
 ## Usage Notes
 

@@ -25,8 +25,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_microbiology_bug_drill.md
-  - ./learner_physiology_concept_clarifier.md
+  - domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drill.md
+  - domain-medical-education/learner-foundational-sciences/study_physiology_concept_clarifier.md
 ---
 
 # Immunology Concept Clarifier for Health-Professions Learners

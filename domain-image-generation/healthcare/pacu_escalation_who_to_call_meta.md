@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-05-15"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -129,3 +138,18 @@ VALIDATION CHECKLIST:
 - Pocket card 8.5x5.5: drop secondary roles column; primary role only.
 - Ambulatory PACU variant: replace some scenarios (e.g., wound bleeding → "early discharge concern").
 - Bilingual variant: add Spanish for role labels (use validated medical Spanish source).
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Search only the role column for digits — models tuck "ext." or pager-style numbers into the secondary-role column, the legend or the footer, and checklist item 6 gets ticked from a glance at column 2.
+- Treat the default role mapping as this unit's chain; "CRNA or anesthesiologist on call" versus "Anesthesiologist on call now" encodes who is called first, which differs between facilities — the defaults are an educator's draft, not policy.
+- Pass a row's urgency band because it is colored: the prompt never assigns scenarios to teal, amber or red, so every band is the model's own triage call.
+- Accept added activation criteria — a vital-sign trigger beside "Rapid response / Code team", or "per facility activation" dropped for space — which turns a role label into an invented protocol.
+
+✅ **DO:**
+- Add an approved urgency level to each scenario in the input list before generating; after rendering, compare band color to that list row by row.
+- Search the whole canvas — title, rows, legend, footer — for numerals: the default text contains none, so the expected count is zero.
+- Count rendered rows against the scenario list (14 by default) and confirm none was merged, dropped or shifted so that its role pairing moved to a neighbouring row.

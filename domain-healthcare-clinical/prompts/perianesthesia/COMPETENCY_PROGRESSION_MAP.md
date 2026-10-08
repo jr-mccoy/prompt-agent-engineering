@@ -1,4 +1,36 @@
+---
+title: "PACU RN Competency Progression Map"
+category: healthcare-clinical/perianesthesia
+description: "Stage × competency-domain grid for the PACU learning library: the expected performance level, the waypoint, and the classic misconception for each perianesthesia competency domain across the five journey stages."
+techniques:
+  - ST-05
+  - ST-47
+  - ST-42
+  - OC-03
+  - AG-09
+difficulty: intermediate
+tags:
+  - pacu
+  - competency
+  - orientation
+  - nursing
+updated: "2026-10-06"
+---
+
 # PACU RN Competency Progression Map
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **The spine of the library.** Every prompt declares a `journey_stage` and one or more `competency_domains`; this map is where those two axes meet. It states, for each of the **14 ASPAN perianesthesia competency domains** across the **5 journey stages**, the **expected performance level**, the **waypoint** (what "arriving" at that cell looks like), and the **classic misconception** that stalls a learner there.
 
@@ -168,6 +200,24 @@ Each domain below gives, per stage: the **waypoint** (what arriving looks like) 
 | Cross into clinical content for a domain | `TOOLKIT_CROSSWALK.md` maps each domain/drill to the toolkit artifact that supplies the clinical facts |
 
 > **One source of truth.** This map names *levels and behaviors*; it never states clinical numbers. When a cell references a clinical fact (an agent's recovery signature, a complication's cues), the fact lives in the educator toolkit or in facility material — see `TOOLKIT_CROSSWALK.md`. The map points; it does not restate.
+
+---
+
+## False-Positive Prevention
+
+When applying this document — in a prompt's frontmatter, a self-assessment, an objectives set, or a remediation plan:
+
+❌ **DON'T:**
+- Read a cell's *expected* level as the learner's *actual* level. Filling a learner's grid with "Independent" because they are in S2 produces a profile that looks complete and contains no evidence.
+- Treat a ⚠ row reaching **Independent** at S2 as a sign-off; the map says where the bar is, and the sign-off is the preceptor's and facility's.
+- Add a number while adapting a waypoint ("reassesses every N minutes", "scores N or above") — the waypoints are number-free by design, and any interval or score cut-off is `per facility protocol`.
+- Attribute the domain list or a cell to ASPAN by section number in a generated artifact unless that section has been checked against the current ASPAN standards; the grid is this library's organizing scheme.
+- Paraphrase a waypoint into provider scope (S4 "vasoactive-support awareness" becoming "titrates pressors").
+
+✅ **DO:**
+- When a prompt or output cites a level, look it up by exact row × column in the master grid and count mismatches; a mismatch is fixed in the citing artifact, not by editing the map to fit.
+- Check that every `competency_domains` value in a library prompt's frontmatter matches one of the 14 row names in the master grid, and list any that do not.
+- Accept a claimed level only with an observed behavior that matches the cell's waypoint text, per `spine/pacu_self_assessment_blueprint.md`.
 
 ---
 

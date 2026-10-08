@@ -20,12 +20,12 @@ tags:
   - automotive
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Automotive** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,27 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **A ticked checklist can still show the wrong car.** "Interview inputs reflected accurately"
+   passes because the model name is in the headline while the rendered vehicle has another trim,
+   body style, wheel design, or paint colour. Name the advertised configuration (model year, trim,
+   colour, wheels) in the prompt; if intake said only "vehicle launch", ask for it.
+2. **Offer figures are never filled by the model.** A blank offer slot comes back as "$299/mo",
+   "0.9% APR", or "$0 down". Payment, APR, term, and mileage text is copied from intake or the slot
+   is removed; a supplied offer goes to `campaign/adcampaign_claims_compliance_review.md` for its
+   disclosure questions, not treated as finished here.
+3. **Ratings and awards are claims, not ornament.** Safety-rating stars, "Best in Class", award
+   seals, and manufacturer or dealer logos appear only when the user supplies them.
+4. **Scenes imply capability.** Rock-crawling terrain, a towed trailer, or a racetrack backdrop says
+   what the vehicle can do; use one only when the key message and the configuration support it.
+5. **Plates and badges carry text too.** Licence plates stay blank; trim badges on the body must
+   read the advertised trim or be omitted.
+6. **Verify before handing over:** list every string the prompt and each model variant asks to be
+   rendered (headline, offer, CTA, plate, badge, disclaimer) and match each character-for-character
+   to an intake answer; then compare the vehicle description to the intake configuration field by
+   field. Any unmatched string or attribute fails, whatever the form checklist says.
 
 ## Output Format
 

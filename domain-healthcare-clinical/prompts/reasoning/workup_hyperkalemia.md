@@ -14,8 +14,20 @@ tags:
   - electrolytes
   - critical-care
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -58,7 +70,7 @@ Work up hyperkalemia: confirm the value, identify ECG manifestations, treat acut
    - **Step 3: Removal:**
      - **Loop diuretic (furosemide 40–80 mg IV)** if patient produces urine and has volume; avoid in volume depletion.
      - **Sodium polystyrene sulfonate (Kayexalate) 15–60 g PO** — slow onset hours; concerns about colonic necrosis especially in postop and bowel disease; many institutions avoid.
-     - **Patiromer 8.4–25.2 g PO** or **sodium zirconium cyclosilicate (SZC) 5–10 g PO TID up to 48 h** — newer agents, faster onset (1–2 h for SZC), better tolerated.
+     - **Patiromer 8.4–25.2 g PO** or **sodium zirconium cyclosilicate (SZC) 10 g PO TID up to 48 h** [VERIFY: product label — acute-phase and maintenance doses] — newer agents, faster onset (1–2 h for SZC), better tolerated.
      - **Hemodialysis** for severe / refractory / oliguric / ESRD: definitive removal. Indications: K ≥6.5 with refractory ECG changes, anuric/oliguric AKI, severe acidosis, ESRD without urine output. Notify nephrology immediately.
 
 4. **Cause categorization.**
@@ -87,7 +99,7 @@ Work up hyperkalemia: confirm the value, identify ECG manifestations, treat acut
    - CK if rhabdo suspected.
    - LDH, uric acid if tumor lysis.
    - Urinalysis, urine K, urine Na, urine osmolality.
-   - **TTKG = (UK × Sosm) / (SK × Uosm).** Useful when urine osm > serum osm. TTKG <5 in hyperkalemia suggests hypoaldosteronism. (Now considered less reliable; clinical interpretation supplements.)
+   - **TTKG = (UK × Sosm) / (SK × Uosm).** Useful when urine osm > serum osm. A low TTKG in hyperkalemia suggests hypoaldosteronism [VERIFY: TTKG cutoff against current nephrology reference — published cutoffs differ]. (Now considered less reliable; clinical interpretation supplements.)
    - Fractional excretion of K may be more useful in modern practice.
    - Aldosterone and renin if adrenal cause suspected.
    - Cortisol, ACTH stim if adrenal insufficiency suspected.
@@ -109,6 +121,21 @@ Work up hyperkalemia: confirm the value, identify ECG manifestations, treat acut
    - K ≥6.5 with ECG changes → ICU monitoring, treat aggressively, often dialysis if oliguric.
    - K 5.5–6.5 without ECG changes — depends on cause; admission for cause workup if unstable; outpatient management for known stable CKD with adjustment.
    - Discharge with K-binder if applicable, repeat K in 24–48 h, follow-up.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assert on the CONFIRMATION line that hemolysis was excluded when the lab report supplied no hemolysis index — say "hemolysis index not reported; repeat plasma K pending".
+- Read an ECG as "no hyperkalemic changes" from T-wave shape alone; PR, P-wave amplitude, QRS width and rate must each be compared with the patient's prior tracing, and a normal ECG does not make the measured K safe.
+- Fill the ACUTE MANAGEMENT dose slots by copying this prompt's reference doses when the patient's weight, renal function or starting glucose were not supplied.
+- Settle on "decreased excretion" because CKD is listed while the inputs that point to shift or load (CK, LDH, uric acid, phosphate, recent transfusion, pH) were never reviewed — rhabdomyolysis and tumor lysis are separate emergencies.
+- Report a TTKG when urine osm is not above serum osm, or when the urine and serum samples were drawn at different times.
+
+✅ **DO:**
+- Recompute the anion gap from the supplied Na, Cl and HCO3 (worked example: 138 − 105 − 19 = 14) and judge it against the reporting lab's range before calling the acidosis non-gap or gap.
+- Trace every agent, dose, route and interval to the prescriber's order, the product label or the local hyperkalemia protocol; mark the rest `[VERIFY: label/protocol]`.
+- Count the timed K and glucose rechecks against each shift agent's onset and duration — a plan with shift agents but no removal step or recheck before the shift wears off is incomplete.
+- When a K-raising or rate-slowing drug is continued, state the reason against the presenting heart rate and rhythm.
 
 ## Output Format
 
@@ -152,7 +179,7 @@ DISPOSITION:
 
 ```
 CONFIRMATION:
-- K 7.2, no hemolysis flag, ECG changes corroborate true hyperkalemia.
+- K 7.2; hemolysis index not reported; repeat plasma K pending. ECG changes corroborate true hyperkalemia.
 
 ECG:
 - Peaked T waves, PR prolongation, mild QRS widening, bradycardia → severe hyperK with cardiac involvement. Treat now.
@@ -172,12 +199,12 @@ CAUSE WORKUP:
 - Acidosis (HCO3 19, pH 7.31) shifting K out of cells.
 - No tumor lysis features (LDH/uric acid/phos to confirm).
 - No rhabdomyolysis suggested (check CK).
-- No hemolysis.
+- Hemolysis not assessed (hemolysis index not reported).
 
 MEDICATION REVIEW:
 - HOLD lisinopril.
 - HOLD spironolactone.
-- Continue metoprolol succinate (HFrEF benefit; minor K contribution).
+- HOLD metoprolol succinate while HR 52 with PR prolongation (rate-slowing, and beta-blockade impairs K shift into cells); reassess restarting for HFrEF benefit once K, rate and conduction have normalized.
 - Avoid NSAIDs, salt substitutes.
 
 DEFINITIVE TREATMENT:

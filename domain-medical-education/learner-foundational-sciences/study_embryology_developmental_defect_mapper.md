@@ -20,7 +20,7 @@ tags:
   - congenital-anomalies
   - teratology
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_genetics_inheritance_pedigree_drill.md
   - domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md
@@ -96,6 +96,16 @@ Weeks are [post-fertilization | LMP]. Convert to LMP by adding 2 weeks if needed
 | `include_syndromic_associations` | Adds VACTERL, CHARGE, DiGeorge, etc. |
 | `add_inheritance_pattern_overlap` | Adds column for genetic syndromes underlying step failures (e.g., trisomy 18 with neural tube defects) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Week column post-fertilization while imaging/screen timings ("visible on US ≥ 12 weeks") are copied in obstetric (LMP) weeks | Tag every week-number in every column with its basis; convert screen and imaging timings to the declared basis or label them "(LMP)" |
+| Filling the Critical-signal column with a familiar molecule (SHH, BMP, FGF) on every row so no cell looks empty | Name a molecule only where its role in that step is established; otherwise name the tissue interaction and add `[VERIFY: embryology text]` |
+| Filing a malformation under a step whose failure does not produce it (spina bifida occulta is a vertebral-arch defect, not a neural-fold fusion failure) | Read each row as "Failure mode → Malformation" and check the cause produces the effect; if the defect arises in a neighboring tissue (sclerotome, mesoderm), say so or move it |
+| Attributing a raised MS-AFP / amniotic AChE to skin-covered lesions | Check open vs. closed for every lesion carrying an AFP entry; only defects that expose neural tissue or meninges to amniotic fluid raise it |
+| Padding past the coverage rule with neural-crest or syndromic entities that belong to another process map | Count the named malformations against the 5–8 canonical rule, and confirm each distractor pair names a step that appears as a table row |
+
 ## Verification Checklist
 
 - [ ] Time basis declared once and used consistently.
@@ -119,14 +129,14 @@ Time basis: post-fertilization   Window: weeks 3–4
 | # | Week | Normal event | Critical signal / structure | Failure mode | Malformation | Presentation | Imaging / screen | Syndromes | Teratogens |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | 3 | Notochord induces overlying ectoderm → neural plate | SHH from notochord; BMP antagonists (noggin, chordin) | Failure of induction (rare in isolation) | Total dysraphism — incompatible with life | Severe; non-viable | — | — | — |
-| 2 | 3–4 | Neural plate folds → neural folds → fusion at the midline begins thoracically and proceeds bidirectionally | Cytoskeletal apical constriction; Pax3 | Failure of fusion anywhere along the tube | Spina bifida occulta (mildest, no protrusion); meningocele; myelomeningocele | Tuft of hair, dimple, dermal sinus (occulta); CSF-filled sac (meningocele); neural tissue exposed (myelo) | ↑ MS-AFP + ↑ amniotic AChE; US shows splayed posterior elements, "lemon" and "banana" signs on cranial US in Chiari II | Trisomy 13/18 association in some; isolated multifactorial more common | Valproate, carbamazepine; folate deficiency; methotrexate |
-| 3 | 4 | Anterior neuropore closes (~day 25 post-fertilization) | Same; HOX expression in rostral neural tube | Failure to close anterior neuropore | Anencephaly | Absent cranial vault and brain above brainstem; usually polyhydramnios; non-viable | ↑↑ MS-AFP; visible on US ≥ 12 weeks | Trisomy 18; amniotic band sequence | Folate deficiency; aminopterin; methotrexate |
+| 2 | 3–4 | Neural plate folds → neural folds → fusion at the midline begins thoracically and proceeds bidirectionally | Cytoskeletal apical constriction; Pax3 | Failure of fusion anywhere along the tube | Meningocele; myelomeningocele (spina bifida occulta — tuft of hair, dimple — is a vertebral-arch/sclerotome defect with a closed neural tube, not a fusion failure of this step) | CSF-filled sac, usually skin-covered (meningocele); neural tissue exposed (myelo) | ↑ MS-AFP + ↑ amniotic AChE when open (neural tissue exposed); US shows splayed posterior elements, "lemon" and "banana" signs on cranial US in Chiari II | Trisomy 13/18 association in some; isolated multifactorial more common | Valproate, carbamazepine; folate deficiency; methotrexate |
+| 3 | 4 | Anterior neuropore closes (~day 25 post-fertilization) | Same; HOX expression in rostral neural tube | Failure to close anterior neuropore | Anencephaly | Absent cranial vault and brain above brainstem; usually polyhydramnios; non-viable | ↑↑ MS-AFP; visible on US ≥ 12 weeks (LMP) | Trisomy 18; amniotic band sequence | Folate deficiency; aminopterin; methotrexate |
 | 4 | 4 | Posterior neuropore closes (~day 28) | Same; secondary neurulation forms caudal cord by cavitation | Failure to close posterior neuropore | Open spina bifida (myelomeningocele typically lumbosacral) | Neural placode at skin surface, paraplegia, neurogenic bladder, hydrocephalus often (Chiari II) | ↑ MS-AFP, ↑ AChE; US shows defect + Chiari II features | Often isolated; sometimes part of broader spectrum | Folate deficiency (single most actionable); valproate |
 | 5 | 4–7 | Neural crest cell delamination from dorsal neural tube and migration | Wnt, BMP, Pax3, Sox10 | Failure of NCC migration to a destination | Hirschsprung disease (gut), DiGeorge (3rd/4th arch), Waardenburg (pigmentation/hearing), Treacher Collins (craniofacial) | Specific to each: aganglionic megacolon; conotruncal heart defect + hypocalcemia + thymic aplasia; heterochromia + sensorineural deafness | Variable | DiGeorge (22q11.2 deletion); Waardenburg AD; Treacher Collins (TCOF1) | Isotretinoin (NCC migration); alcohol (FAS includes NCC derivatives) |
 
 >>> DISTRACTOR (COMMONLY CONFUSED PAIRS)
 - Anencephaly vs. encephalocele: anencephaly = anterior neuropore fails to close → absent calvarium and brain above brainstem; encephalocele = neural tube closes but mesoderm fails to form overlying cranium, brain herniates through a skull defect. Different step (closure vs. skull formation), different MS-AFP behavior.
-- Spina bifida occulta vs. meningocele vs. myelomeningocele: occulta = no protrusion, often only skin marker; meningocele = meninges herniate, neural tissue intact; myelomeningocele = neural tissue herniates → neurologic deficits. MS-AFP elevated only when open (myelo or meningocele).
+- Spina bifida occulta vs. meningocele vs. myelomeningocele: occulta = no protrusion, often only skin marker; meningocele = meninges herniate, neural tissue intact; myelomeningocele = neural tissue herniates → neurologic deficits. MS-AFP elevated only when open (neural tissue or meninges exposed — typically myelomeningocele; meningoceles are usually skin-covered and AFP is typically normal).
 - "Chiari I" (tonsillar descent only, often acquired/asymptomatic) vs. "Chiari II" (brainstem + tonsils + 4th ventricle herniation, almost always with myelomeningocele).
 - Holoprosencephaly (failure of prosencephalon to cleave) vs. anencephaly (failure of anterior neuropore closure) — both midline brain malformations but different steps and signals (SHH vs. closure).
 - Waardenburg vs. Hirschsprung — both can involve PAX3 / SOX10; can co-occur (Waardenburg type 4 = Hirschsprung + pigmentation/hearing).

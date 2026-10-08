@@ -14,8 +14,20 @@ tags:
   - hypertension
   - pharmacology
   - prescribing
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -45,8 +57,8 @@ Senior internist / cardiologist / nephrologist writing the prescription with exp
    - **Hypertensive emergency:** reduce MAP ~25% in first hour, then 160/100 over next 2–6 h, then normal over 24–48 h (faster in aortic dissection and eclampsia).
 
 2. **Identify compelling indications (Class I / IIa indications that drive class choice).**
-   - **HFrEF (EF ≤40%):** ACEi or ARB + β-blocker (carvedilol, metoprolol succinate, bisoprolol) + MRA (spironolactone, eplerenone) + ARNI (sacubitril/valsartan) when stable + SGLT2i (dapagliflozin or empagliflozin) — these are also antihypertensive.
-   - **HFpEF:** SGLT2i (empagliflozin, dapagliflozin), spironolactone, ARNI (post-PARAGON: benefit signal in lower EF subgroup), diuretics; avoid CCBs negative inotropic (verapamil, diltiazem).
+   - **HFrEF (EF ≤40%):** ACEi or ARB + β-blocker (carvedilol, metoprolol succinate, bisoprolol) + MRA (spironolactone, eplerenone) + ARNI (sacubitril/valsartan) when stable + SGLT2i (dapagliflozin or empagliflozin) — these are also antihypertensive; avoid negative-inotropic non-DHP CCBs (verapamil, diltiazem).
+   - **HFpEF:** SGLT2i (empagliflozin, dapagliflozin), spironolactone, ARNI (post-PARAGON: benefit signal in lower EF subgroup), diuretics.
    - **Post-MI / CAD:** β-blocker + ACEi (or ARB); add MRA if HFrEF post-MI.
    - **Stable angina:** β-blocker first-line for symptoms + BP; CCB (amlodipine, diltiazem) addition or alternative; nitrates.
    - **AFib (rate control + HTN):** β-blocker or non-DHP CCB (diltiazem, verapamil — avoid in HFrEF).
@@ -74,7 +86,7 @@ Senior internist / cardiologist / nephrologist writing the prescription with exp
    - **ARB:** losartan 50 mg PO daily → 100 mg; valsartan 80–320 mg/d; olmesartan 20–40 mg/d; telmisartan 40–80 mg/d (longest t½). Generally cough/angioedema lower than ACEi.
    - **CCB (dihydropyridine):** amlodipine 5 mg PO daily → 10 mg; nifedipine ER 30–90 mg PO daily; felodipine 5–10 mg/d. Pedal edema (dose-dependent); flushing, headache early.
    - **CCB (non-DHP):** diltiazem ER 180 mg PO daily → 360 mg; verapamil ER 180–480 mg/d. Bradycardia, AV block, constipation (verapamil > diltiazem). Avoid in HFrEF.
-   - **Thiazide / thiazide-like:** chlorthalidone 12.5–25 mg PO daily (preferred — longer t½, better outcomes); hydrochlorothiazide 12.5–50 mg/d; indapamide 1.25–2.5 mg/d. Hypokalemia, hyponatremia, hyperuricemia, ↑ lipids, glucose. Loop diuretic (furosemide) used when GFR <30 (thiazides lose effect).
+   - **Thiazide / thiazide-like:** chlorthalidone 12.5–25 mg PO daily (longer t½; whether it gives better outcomes than HCTZ is contested [VERIFY: current ACC/AHA hypertension guideline]); hydrochlorothiazide 12.5–50 mg/d; indapamide 1.25–2.5 mg/d. Hypokalemia, hyponatremia, hyperuricemia, ↑ lipids, glucose. Loop diuretic (furosemide) traditionally used when GFR <30; thiazide-type efficacy at low GFR is debated [VERIFY: current KDIGO / ACC/AHA guidance].
    - **β-blocker:** carvedilol 6.25 mg PO BID → 25 mg BID (50 mg BID for >85 kg); metoprolol succinate 25–200 mg PO daily; bisoprolol 2.5–10 mg/d; atenolol 25–100 mg/d (less preferred for primary HTN per LIFE; cardio-selectivity decreases at high doses). Asthma — prefer cardioselective at low dose if needed.
    - **MRA:** spironolactone 25–50 mg PO daily; eplerenone 25–50 mg BID. K and SCr monitoring; gynecomastia with spironolactone; eplerenone more selective.
    - **α-blocker:** doxazosin 1 mg qHS → 4–8 mg; useful for BPH symptoms; orthostatic hypotension; not first-line for HTN per ALLHAT (worse HF outcomes).
@@ -97,6 +109,20 @@ Senior internist / cardiologist / nephrologist writing the prescription with exp
    - Diuretic: BMP at 2–4 weeks (Na, K, Mg, uric acid).
    - β-blocker: HR, asthma, fatigue, sexual function.
    - CCB: edema check at 2–4 weeks; dose reduction or addition of RAAS blocker often resolves edema.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Blend two guidelines into one `TARGET BP` (e.g., "<130/80, KDIGO <120") without naming the source and the measurement method (standardized office vs routine) the number assumes.
+- Write "none" under `CONTRAINDICATIONS / CAUTIONS` when K, SCr, UACR or pregnancy potential were never supplied — an unmeasured value is a gap, not a clearance.
+- Let `WHEN TO ESCALATE` cite a dose (e.g., a maximum ACEi dose) that `TITRATION SCHEDULE` never reaches.
+- Carry a heart-failure dose ceiling (weight-based carvedilol, sacubitril/valsartan steps) into a hypertension order, or a pairing called "synergistic" or "hazardous" with no mechanism stated.
+
+✅ **DO:**
+- Turn each lab trigger into an absolute number from the supplied baseline (in the worked example a 30% SCr rise from 1.05 is 1.37 mg/dL) and state the K value that holds the drug.
+- List every escalation step in order and check that each dose it references appears earlier in the titration ladder.
+- Map each compelling indication to the input finding that triggers it (UACR value, EF, MI history) and drop any class whose trigger is absent.
+- Check start and maximum doses against the hypertension indication on the label and renal suitability at the supplied eGFR `[VERIFY: current label / formulary]`.
 
 ## Output Format
 
@@ -180,6 +206,7 @@ TITRATION SCHEDULE:
 - Up-titrate lisinopril to 20 mg if home BP still >130/80 and K/SCr acceptable.
 - Up-titrate amlodipine to 10 mg if needed.
 - Add chlorthalidone 12.5–25 mg PO daily if still above goal after lisinopril 20 mg + amlodipine 10 mg.
+- Up-titrate lisinopril to 40 mg and chlorthalidone to 25 mg if still above goal and K/SCr/Na acceptable.
 - 4th-line: spironolactone 25 mg daily (resistant HTN strategy).
 
 MONITORING:

@@ -1,4 +1,35 @@
+---
+title: "Discharge Summary Template"
+category: healthcare-clinical/templates
+description: "Standardized fill-in template for inpatient discharge documentation to support safe transitions of care: problem-oriented hospital course, discharge medications, pending tests, return precautions and owned follow-up."
+techniques:
+  - NE-03
+  - ST-42
+  - OC-03
+  - DS-40
+  - QA-01
+difficulty: intermediate
+tags:
+  - discharge-summary
+  - care-transitions
+  - clinical-documentation
+  - medication-reconciliation
+updated: "2026-10-06"
+---
+
 # Discharge Summary Template
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > Standardized template for inpatient discharge documentation to support safe transitions of care.
 
@@ -92,3 +123,20 @@
 
 **Discharge Summary Signed:** [Date/Time]
 ```
+
+---
+
+## False-Positive Prevention
+
+When filling this template:
+
+❌ **DON'T:**
+- Build Clinical Course by Problem from the admission H&P or a copied-forward progress note, so the course reads as day 2 rather than the day of discharge.
+- Fill Focused Discharge Exam with a normal template exam that was not performed on the discharge day, or Latest Key Vitals/Labs with undated values or the word "stable".
+- Write "None" in Pending Tests at Discharge by default; leave it unanswered until the outstanding orders have been checked.
+- Answer Medication Reconciliation Completed "Yes" while home medications that were discontinued have no "Stopped" row in the medications table.
+
+✅ **DO:**
+- Reconcile the dates: every procedure and lab date falls between Admission Date and Discharge Date, the length of stay recomputes from them, and every follow-up date is after discharge.
+- Account for each home medication in the Medications at Discharge table as continued, changed or stopped, with the reason in the Indication or Patient Instructions column.
+- Take Allergies and Serious Reactions from the current allergy record with reaction types, and check every drug started during the stay against it.

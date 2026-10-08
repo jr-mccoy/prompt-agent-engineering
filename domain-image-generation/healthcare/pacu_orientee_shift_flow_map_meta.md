@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-05-15"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -106,3 +115,18 @@ VALIDATION CHECKLIST:
 - Ambulatory PACU variant: replace "Handoff out" with "Discharge to escort"; add Phase 2 stage.
 - Single-tier focus: a 4-callout version for just one week tier (less crowded).
 - Vertical / portrait variant for narrow walls.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat the callouts as content you supplied: the prompt gives stage names and tier legends but no callout text, so up to 18 callout sentences are the model's invention — and they still satisfy "max 1 callout per stage per tier".
+- Accept Wk 6–N callouts that name tasks needing a provider order or a validation the orientee lacks (titrating, discharging on own authority); "independent under coverage" in the legend does not widen scope.
+- Pass "six stage boxes connected by arrows" after the facility pasted extra stages — a dropped pre-op holding handoff leaves a flow that looks complete.
+- Let a callout's anchor line land on the neighbouring stage; the text then describes the wrong phase of the shift.
+
+✅ **DO:**
+- Write the callout text first — a stage × tier table from the orientation curriculum — paste it into the prompt, and diff each rendered callout against the table; anything not in the table is deleted.
+- Count: stage boxes equal 6 plus any facility stages, arrows equal boxes minus one, and each callout's anchor ends on the stage the table names.
+- Have the preceptor confirm every Wk 6–N callout against the orientee's documented competencies before the map is posted.

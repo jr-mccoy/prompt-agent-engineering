@@ -2,6 +2,15 @@
 title: "PACU Receiving Algorithm Infographic - Image Generation Prompt"
 category: medical-education
 description: "Image generation prompt for creating a medical pocket card infographic covering the first 15 minutes of PACU patient receiving protocol"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - infographic
@@ -10,7 +19,7 @@ tags:
   - pacu
   - nursing
   - image-generation
-updated: "2026-01-28"
+updated: "2026-10-06"
 ---
 
 # PACU Receiving Algorithm Infographic - Image Generation Prompt
@@ -60,8 +69,7 @@ PHYSICAL SIZE & CANVAS
 ================================================
 
 Size:
-- 5 inches wide x 8 inches tall (landscape when rotated for viewing)
-- Wait - correction: 8 inches wide x 5 inches tall (landscape)
+- 8 inches wide x 5 inches tall (landscape)
 - Resolution: 2400 x 1500 px at 300 DPI
 - Edge-to-edge artwork (this IS the printed content)
 
@@ -130,8 +138,8 @@ Text (white):
 - Header: "STABILIZATION GOALS (By 15 Minutes)" in bold, 12pt
 - 7 checkbox items in 9pt:
   1. Airway maintained without intervention
-  2. SpO2 94% or higher on 4L NC or less (or baseline)
-  3. BP/HR within 20% of baseline
+  2. SpO2 at goal on supplemental O2 per facility protocol (or baseline)
+  3. BP/HR within range of baseline per facility protocol
   4. Patient following commands
   5. Pain assessed, treatment initiated
   6. Surgical site checked, stable
@@ -158,7 +166,7 @@ Two branches:
 - YES path: Green checkmark, "Continue", arrow down
 - NO path: Red X, red alert box containing:
   "CALL ANESTHESIA NOW"
-  "Jaw thrust, suction, O2 via NRB 15L"
+  "Jaw thrust, suction, O2 via NRB per order"
 
 Below flow, numbered checklist "DO FIRST - In order:":
 1. Airway - Confirm patent, position head, apply O2 per orders
@@ -205,12 +213,12 @@ Normal: Clear, no snoring
 Abnormal-Act: Stridor/obstruction - jaw thrust, call anesthesia
 
 Card 2 - Breathing:
-Normal: RR 10-20, SpO2 94% or higher
-Abnormal-Act: RR below 8 or SpO2 below 92% - stimulate, O2 up, call anesthesia
+Normal: RR and SpO2 within facility protocol range
+Abnormal-Act: RR or SpO2 below facility protocol threshold - stimulate, O2 up, call anesthesia
 
 Card 3 - Circulation:
-Normal: SBP within 20% baseline, HR 60-100
-Abnormal-Act: SBP below 90 or above 180, HR below 50 or above 120 - fluid/meds per order, call provider
+Normal: SBP and HR within facility protocol range of baseline
+Abnormal-Act: SBP or HR outside facility protocol limits - fluid/meds per order, call provider
 
 Card 4 - LOC:
 Normal: Rousable, follows commands
@@ -226,7 +234,7 @@ Below cards, "ALSO CHECK:" with checkboxes:
 - Drains functioning - note output
 - Pain level (when patient can respond)
 - Nausea (treat early per orders)
-- Temperature - warming if below 36C
+- Temperature - warming per facility protocol
 
 ================================================
 COLUMN 4 CONTENT: VITALS & DOCUMENTATION (ONGOING)
@@ -261,11 +269,11 @@ Alert 1:
 - Do This Now: Jaw thrust, suction, call anesthesia STAT
 
 Alert 2:
-- If You See: SpO2 below 90% not improving with O2
+- If You See: SpO2 below protocol threshold, not improving with O2
 - Do This Now: Bag-mask ready, call anesthesia STAT
 
 Alert 3:
-- If You See: SBP below 80 or unresponsive to fluids
+- If You See: SBP below protocol threshold or unresponsive to fluids
 - Do This Now: Trendelenburg, call anesthesia + surgeon
 
 Alert 4:
@@ -471,6 +479,21 @@ The main prompt above is optimized for these models. Key elements:
 **Environment:** Clinical PACU bay, potentially dim lighting, high-stress situations
 **Access Pattern:** Quick glance for confirmation, detailed scan for unfamiliar scenarios
 **Lifecycle:** Laminated card worn on badge or kept in pocket
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the `per facility protocol` slots (Card 2–3 ranges, Alert 2–3 triggers, the stabilization goals, warming, NRB flow) from memory or a textbook — earlier versions of this prompt printed author-chosen numbers there, which the perianesthesia SAFETY_PREAMBLE bans; only a value from the facility's own policy, with its source, may replace a slot.
+- Take a clean pass on FINAL VALIDATION CHECK as content approval: all 11 lines test layout and color, none tests a clinical string, so a mistyped saturation or blood-pressure figure goes through.
+- Accept "5 equal-width columns" when Column 5 shows five of six alerts, or Column 3's five cards collapsed into four — the grid passes and content is gone.
+- Run the Simplified Prompt and keep whatever it renders: it names "6 emergency alerts" and "The Big 5 checks" but supplies none of their text, so every alert and check on that card is invented.
+
+✅ **DO:**
+- Before generating, either keep every `per facility protocol` / `per order` slot as written or replace it with the facility's value and its policy source; the clinician reviewer signs that content list, not the image, and a rendered numeral that is not on the list fails the card.
+- After rendering, count each block — 4 DO FIRST items, 6 handoff rows, 5 assessment cards, 6 ALSO CHECK items, 4 chart items, 6 alerts, 7 goals — and diff each string against the approved list; a numeral missing from the list fails the card.
+- Confirm order qualifiers survived the 9pt cells — "apply O2 per orders", "fluid/meds per order", "treat early per orders", "then treat per orders" — since they are the first words a model trims.
 
 ---
 

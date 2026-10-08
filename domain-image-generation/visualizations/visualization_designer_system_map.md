@@ -2,12 +2,21 @@
 title: "Designer System Map Visualization Prompt"
 category: designer
 description: "Generate a structured, no-UI visualization prompt optimized for designer decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Designer System Map Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 2 flow map that adds, merges, or reorders journey stages — a tidy loop or an extra "delight" step looks like good design but describes a different journey.
+- Let ZONE 3 show pain points that no research finding or intake note supports; generic pains ("confusing onboarding") pattern-matched from typical products read as insights.
+- Render the persona cue with an invented name, age, quote, or photo-like face when the intake gave only a role.
+- Let arrows imply state transitions the component inventory cannot produce, such as a back-path the product lacks.
+
+✅ **DO:**
+- Number the intake journey stages, then check the rendered flow shows the same count in the same order, with each arrow matching a stated transition.
+- Tag each pain point and opportunity with its intake source (study, ticket theme, stakeholder) inside the prompt; untagged ones render as placeholders.
+- Keep ZONE 5 in the intake's priority order; with no ranking supplied, render "Priority: TBD" instead of a ranked list.

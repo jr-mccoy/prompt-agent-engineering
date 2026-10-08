@@ -15,8 +15,20 @@ tags:
   - infection
   - hematuria
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -37,7 +49,7 @@ Senior internist or nephrologist reading the UA with the chart open.
 
 1. **Specimen quality.** >5 squamous epithelial cells/HPF or >10⁵ mixed flora suggests contamination; recommend clean recollection or catheter sample before committing to a pathology call.
 
-2. **Concentration check.** Specific gravity (1.005–1.030) and pH (4.5–8.0). Fixed SG ~1.010 suggests inability to concentrate (CKD, ATN). Alkaline pH with WBC + nitrite-negative could mean *Proteus* or other urea-splitter; persistent alkaline pH with stones suggests RTA type 1 or struvite.
+2. **Concentration check.** Specific gravity (1.005–1.030) and pH (4.5–8.0). Fixed SG ~1.010 suggests inability to concentrate (CKD, ATN). Alkaline pH with WBC could mean *Proteus* (nitrite-positive, see step 3) or another urea-splitter; persistent alkaline pH with stones suggests RTA type 1 or struvite.
 
 3. **Infection lane.**
    - **LE positive + nitrite positive + pyuria (>10 WBC/HPF) + bacteriuria** → UTI. Nitrite-positive specifically indicates Enterobacterales (E. coli, Klebsiella, Proteus). Nitrite-negative does not exclude UTI (Enterococcus, Staph saprophyticus, Pseudomonas don't reduce nitrate).
@@ -96,6 +108,14 @@ ACTION:
 - [follow-up]
 ```
 
+## False-Positive Prevention
+
+- **Microscopy counts compared across reporting systems.** Manual microscopy reports cells per HPF and casts per LPF, while automated flow analyzers report cells/µL with their own cut-offs. Apply the reporting lab's range, and do not test a per-µL value against ">10 WBC/HPF".
+- **A dipstick protein grade read as daily excretion.** The grade is a concentration, so 2+ at SG 1.030 and 2+ at SG 1.005 differ greatly. Before calling nephrotic range, quantify with UPCR or a 24-hour collection and confirm its unit (g/g equals mg/mg; mg/mmol ≈ mg/g ÷ 8.84).
+- **Dipstick blood with no RBCs labelled pigment by default.** RBCs lyse in dilute or alkaline urine and in a delayed specimen, and menstrual blood contaminates. Check SG, pH, specimen age, and menses before naming myoglobin or hemoglobin, and ask for CK and hemolysis labs to confirm.
+- **A syndrome named when its defining elements were not measured.** Before writing nephritic, nephrotic, or pyelonephritis, list each defining element with its source value from the input (casts actually seen, quantified protein, serum albumin, fever or flank pain). A 4+ dipstick plus edema is not a measured nephrotic syndrome.
+- **ACTION drugs suggested without the checks they require.** An ACE inhibitor or ARB needs pregnancy status in anyone who could be pregnant, plus K and creatinine, and an antibiotic choice needs renal function and local resistance. If those are not in the input, list them as prerequisites and write doses as `[per provider order]`.
+
 ## Worked Example
 
 **Input:** 32 y/o F, 1 week of facial swelling, frothy urine, BP 158/96. Clean catch UA: SG 1.020, pH 6.0, LE neg, nitrite neg, blood 3+, protein 4+, glucose neg, ketones neg. Micro: 25 RBC/HPF (dysmorphic), 2 WBC/HPF, 5 RBC casts/LPF, no bacteria, no squamous cells. UPCR pending.
@@ -114,7 +134,7 @@ ACTION:
 - BMP now, repeat in 24h to track creatinine trajectory
 - Quantify protein: UPCR or 24-hour urine protein
 - Serologies: C3, C4, ANA, anti-dsDNA, ANCA (MPO, PR3), anti-GBM, ASO, hepatitis B and C
-- BP control: ACE inhibitor (lisinopril 10 mg daily) if creatinine stable and K acceptable — also reduces proteinuria
+- BP control: ACE inhibitor (e.g., lisinopril, dose [per provider order]) — also reduces proteinuria. Prerequisites before starting: pregnancy excluded (pregnancy status not provided — urine/serum hCG now; ACE inhibitors are contraindicated in pregnancy), creatinine stable, K acceptable
 - Nephrology consult today; biopsy likely indicated within days if creatinine rising or proteinuria nephrotic-range
 - If rapidly progressive (creatinine rising over hours-to-days), this is a renal emergency — biopsy and empiric pulse steroids while results pending after consult agreement
 ```

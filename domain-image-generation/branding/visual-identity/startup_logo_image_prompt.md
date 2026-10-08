@@ -18,7 +18,7 @@ tags:
   - nano-banana
   - dall-e
   - midjourney
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../../IMAGE_MODEL_SELECTION_GUIDE.md
   - ../../GPT_IMAGE_2_GUIDE.md
@@ -243,6 +243,20 @@ structure and style"
 ### Scale Test
 "Same logo optimized for small sizes, simplified for favicon/app icon"
 ```
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Proofread the rendered [company name] as a word — a swapped, doubled or dropped letter still reads correctly at a glance, and some "letters" are near-glyphs that only resemble them.
+- Accept "clean vector aesthetic" and "scalable design" because the render looks flat — every output is a raster with anti-aliased edges and often hidden noise or texture.
+- Slot the Add Color Variation or Different Style Same Concept iterations into Concept 2 and 3 as if they were new concepts.
+- Treat "single color [color]" as met when the mark contains two tones, a highlight, or a soft gradient.
+- Shortlist a mark on looks alone — image models regurgitate famous marks (swooshes, bitten fruit, interlocking rings), and "Trademark-safe original design" in Important Limitations is a requirement the prompt cannot guarantee.
+
+✅ **DO:**
+- Spell the rendered name back letter by letter against the brief, including case and spacing; any mismatch fails the render regardless of style.
+- Threshold each finalist to pure black-and-white and view it at 32 px and at billboard width; a mark that needs gradients or hairlines to read fails the Scale Test before designer time is spent.
+- Reverse-image-search each finalist and write "resemblance and trademark search not yet done [VERIFY]" into the designer brief in Next Steps.
 
 ## Expected Output
 

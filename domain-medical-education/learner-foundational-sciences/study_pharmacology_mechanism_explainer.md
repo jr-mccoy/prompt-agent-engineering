@@ -26,9 +26,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_pathophysiology_chain_builder.md
-  - ./learner_microbiology_bug_drill.md
-  - ../discipline-specific/learner_pharmacy_therapeutics_soap_practice.md
+  - domain-medical-education/learner-foundational-sciences/study_pathophysiology_chain_builder.md
+  - domain-medical-education/learner-foundational-sciences/study_microbiology_bug_drill.md
+  - domain-medical-education/profession-specific/pharmacy/pharmacy_therapeutics_soap_practice.md
 ---
 
 # Pharmacology Mechanism Explainer for Health-Professions Learners

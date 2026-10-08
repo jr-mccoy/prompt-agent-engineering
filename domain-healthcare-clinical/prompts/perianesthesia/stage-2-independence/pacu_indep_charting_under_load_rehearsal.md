@@ -16,11 +16,11 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, ST-03, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_run_bay_solo_simulation.md
   - pacu_indep_deteriorating_patient_walkthrough.md
-  - pacu_orient_aldrete_padss_scoring_practice.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_aldrete_padss_scoring_practice.md
 see_also_seed:
   - domain-healthcare-clinical/prompts/nursing/nursing_clinical_assessment_framework.md
 references:
@@ -29,6 +29,19 @@ references:
 ---
 
 # Charting Under Load — Documenting an Eventful Recovery, Rehearsal
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A documentation rehearsal, not live clinical decision support and not a facility template. Chart in your real EHR per facility policy; this rehearses *completeness and timing*, not the form fields.
 
@@ -88,6 +101,20 @@ One coaching point (weakest anchor): [...]
 | `detail` | `medico-legal-strict` raises the completeness/timing bar |
 | `event` | Match the event type the learner documents least well |
 | `interruption` | Inject a second demand mid-charting to train late-but-accurate reconstruction |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill t1–t4 with clock times or minute gaps the learner did not paste — a tidy invented timeline reads as contemporaneous and is exactly what a chart review would find indefensible.
+- Tick "Notification" in the completeness sweep when the entry names the role but omits the time, what was communicated, or the response received; one of four parts is not the anchor.
+- Write a medication line (reversal or otherwise) with a drug amount, route, or repeat the learner did not supply — "given per order" with the order as received is the entry; anything more is a fabricated order.
+- Accept a routine vital-sign set charted later as the "reassessment" for an action; the anchor is a reassessment linked to that action.
+- Pass the facts-not-conclusions check because one label ("overdosed") was removed while another diagnostic label outside nursing scope ("aspirated," "anaphylactic") remains.
+
+✅ **DO:**
+- Sort every entry by its time-per-record and check the sequence is possible: concern before notification, notification before the order received, order before administration, reassessment after each action.
+- For each of the five anchors, quote the line in the learner's draft that satisfies it; an anchor with no quotable line is marked missing, not partial.
+- Label a reconstructed entry as a late entry per the pasted facility documentation policy instead of back-timing it; if no policy was pasted, say the field mapping is unverified.
 
 ## Verification Checklist
 

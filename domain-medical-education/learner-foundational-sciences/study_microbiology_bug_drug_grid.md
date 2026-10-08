@@ -24,7 +24,7 @@ tags:
   - infectious-disease
   - empiric-therapy
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_microbiology_virology_table_builder.md
   - domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_flashcard_set.md
@@ -103,6 +103,16 @@ STEWARDSHIP NOTES
 | `penicillin_allergy_overlay` | If true, add allergy-adapted alternative per cell |
 | `mrsa_prevalence` | `low | moderate | high` — shifts empiric vanc/linezolid inclusion |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A cell's PIT line and a divergence callout giving different thresholds or agents for the same bug (e.g., the MIC at which amoxicillin fails) | Cross-read every callout against its source cell; check any breakpoint against the current CLSI table `[VERIFY: CLSI M100 edition]` |
+| Coverage statements ("X doesn't cover S. aureus") that contradict the spectrum written in the drug-class footnote | Check each covers / doesn't-cover claim against the footnote's spectrum line; resolve any disagreement before the grid is used |
+| Footnote claims that hold for one agent but are written for the whole class (renal vs. hepatic dose adjustment across all beta-lactams) | Write dose-adjustment cues per agent, not per class |
+| Doses, durations, and resistance percentages written from memory under the guideline named in the Reference frame line | Trace each EMP dose and DUR anchor to a section of the cited guideline `[VERIFY: current IDSA/ATS edition]`; percentages carry source and year or become qualitative ("rising," "region-dependent") |
+| Writing `—` to dodge a cell where the organism does cause the syndrome but the regimen is uncertain | Reserve `—` for "does not cause this syndrome"; an uncertain regimen is written with a `[VERIFY: ID reference]` tag |
+
 ## Verification Checklist
 
 - [ ] No empty cells. If a bug doesn't cause that syndrome, write `—` not a guess.
@@ -129,18 +139,18 @@ NOT COVERED HERE: aspiration with anaerobes, HCAP/HAP, fungal, TB.
 
 | Organism \ Syndrome | Outpatient CAP | Ward CAP | ICU CAP | Post-influenza |
 |---|---|---|---|---|
-| Streptococcus pneumoniae | EMP: amoxicillin 1 g TID or doxycycline if no comorbid<br>DEF: PCN-S — penicillin / amoxicillin<br>DUR: 5 days uncomplicated<br>PIT: PCN-R serotypes rising; if MIC > 2 use ceftriaxone | EMP: ceftriaxone + macrolide (or doxycycline)<br>DEF: ceftriaxone or amoxicillin if susceptible<br>DUR: 5–7 days<br>PIT: macrolide resistance now ~30% — don't monotherapy outpatient empirically | EMP: ceftriaxone + azithromycin (or levofloxacin)<br>DEF: per susceptibility<br>DUR: 7–10 days; bacteremic 14<br>PIT: meningitis seeding if bacteremic — LP if suspicion | EMP: as ward/ICU + cover S. aureus including MRSA<br>DEF: per susceptibility<br>DUR: 7–10 days<br>PIT: streptococcal post-flu less common than staph but still occurs |
-| Staphylococcus aureus (MSSA) | EMP: not typical outpatient CAP<br>DEF: cefazolin / nafcillin / oxacillin<br>DUR: 14 days from clinical improvement; longer if bacteremic<br>PIT: vancomycin underperforms in MSSA bacteremia — switch to cefazolin once MSSA confirmed | EMP: ceftriaxone + macrolide doesn't cover S. aureus; add nafcillin or cefazolin if suspected<br>DEF: cefazolin<br>DUR: 14 days<br>PIT: rapid cavitary necrosis with PVL+ strains | EMP: add vancomycin or linezolid until MRSA excluded<br>DEF: cefazolin if MSSA<br>DUR: 14 days; longer with empyema<br>PIT: same — narrow as soon as MSSA confirmed | EMP: cover MRSA empirically (vanc or linezolid)<br>DEF: per susceptibility<br>DUR: 14+ days<br>PIT: post-flu S. aureus mortality high — empiric MRSA coverage warranted |
+| Streptococcus pneumoniae | EMP: amoxicillin 1 g TID or doxycycline if no comorbid<br>DEF: PCN-S — penicillin / amoxicillin<br>DUR: 5 days uncomplicated<br>PIT: PCN-R serotypes rising; amoxicillin vs. ceftriaxone choice follows the non-meningeal MIC breakpoint [VERIFY: CLSI M100 edition] | EMP: ceftriaxone + macrolide (or doxycycline)<br>DEF: ceftriaxone or amoxicillin if susceptible<br>DUR: 5–7 days<br>PIT: macrolide resistance now ~30% — don't monotherapy outpatient empirically | EMP: ceftriaxone + azithromycin (or levofloxacin)<br>DEF: per susceptibility<br>DUR: 7–10 days; bacteremic 14<br>PIT: meningitis seeding if bacteremic — LP if suspicion | EMP: as ward/ICU + cover S. aureus including MRSA<br>DEF: per susceptibility<br>DUR: 7–10 days<br>PIT: pneumococcus remains a major post-flu pathogen alongside S. aureus — keep pneumococcal coverage [VERIFY: ATS/IDSA CAP guideline] |
+| Staphylococcus aureus (MSSA) | EMP: not typical outpatient CAP<br>DEF: cefazolin / nafcillin / oxacillin<br>DUR: 14 days from clinical improvement; longer if bacteremic<br>PIT: vancomycin underperforms in MSSA bacteremia — switch to cefazolin once MSSA confirmed | EMP: ceftriaxone + macrolide (ceftriaxone has MSSA activity; no MRSA coverage); narrow to cefazolin or nafcillin once MSSA confirmed<br>DEF: cefazolin<br>DUR: 14 days<br>PIT: rapid cavitary necrosis with PVL+ strains | EMP: add vancomycin or linezolid until MRSA excluded<br>DEF: cefazolin if MSSA<br>DUR: 14 days; longer with empyema<br>PIT: same — narrow as soon as MSSA confirmed | EMP: cover MRSA empirically (vanc or linezolid)<br>DEF: per susceptibility<br>DUR: 14+ days<br>PIT: post-flu S. aureus mortality high — empiric MRSA coverage warranted |
 | Mycoplasma pneumoniae | EMP: doxycycline or azithromycin<br>DEF: same<br>DUR: 5 days<br>PIT: macrolide-R Mycoplasma reported in Asia and emerging US; doxy is safer empiric | EMP: macrolide / doxy alongside beta-lactam<br>DEF: macrolide / doxy<br>DUR: 5–7 days<br>PIT: cold agglutinin hemolysis (rare) | EMP: levofloxacin covers atypicals + typicals<br>DEF: same<br>DUR: 7–10 days<br>PIT: ICU CAP rarely Mycoplasma alone | — |
 | Legionella pneumophila | EMP: macrolide (rare outpatient unless severe) or fluoroquinolone<br>DEF: levofloxacin > azithromycin<br>DUR: 7–10 days<br>PIT: urinary antigen detects serogroup 1 only | EMP: as outpatient<br>DEF: same<br>DUR: 10–14 days if immunocompromised<br>PIT: hyponatremia, transaminitis are clue findings | EMP: levofloxacin (preferred) or azithromycin<br>DEF: same<br>DUR: 14–21 days<br>PIT: hot tubs / cooling towers — outbreak history matters | — |
 
 HIGH-YIELD DIVERGENCE CALLOUTS
 - MSSA bacteremic pneumonia: empiric vancomycin, but definitive should be *cefazolin or nafcillin* (vancomycin worse outcomes).
-- Pneumococcus with MIC > 2: amoxicillin still works for non-CNS infection; meningitis requires ceftriaxone + vanc empirically.
+- Pneumococcus with reduced penicillin susceptibility: non-CNS and CNS breakpoints differ — high-dose amoxicillin remains usable for non-CNS infection only below the non-meningeal breakpoint [VERIFY: CLSI M100 edition]; meningitis requires ceftriaxone + vanc empirically.
 - Post-flu pneumonia: don't omit MRSA coverage empirically.
 
 DRUG CLASS FOOTNOTES
-- Beta-lactams (amoxicillin, ceftriaxone, cefazolin, nafcillin): spectrum mostly gram-positive plus depending on agent; signature toxicity rash, rare seizure with carbapenems; dose-adjust ceftriaxone in cirrhosis not renal; interaction with warfarin via gut flora.
+- Beta-lactams (amoxicillin, ceftriaxone, cefazolin, nafcillin): spectrum mostly gram-positive plus depending on agent; signature toxicity rash, rare seizure at high doses in renal impairment; renal dose-adjust amoxicillin and cefazolin, ceftriaxone and nafcillin generally not renally adjusted [VERIFY: product label]; interaction with warfarin via gut flora.
 - Macrolides (azithromycin): atypicals + S. pneumoniae (with rising resistance); signature QT prolongation, GI motility (motilin agonism); hepatic metabolism; CYP3A4 interactions (less with azithro than erythromycin).
 - Tetracyclines (doxycycline): broad atypical + gram-positive + some gram-negative; signature photosensitivity, esophagitis, pediatric tooth staining (now relaxed for short courses); no major renal dose adjust; chelates with cations.
 - Fluoroquinolones (levofloxacin, moxifloxacin): broad typical + atypical; signature tendinopathy, aortic dissection risk, QT, dysglycemia, C. diff; renal adjust levofloxacin; many interactions including chelation, warfarin, QT-prolonging drugs.

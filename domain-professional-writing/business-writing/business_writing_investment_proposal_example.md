@@ -1,3 +1,26 @@
+---
+title: "Worked Example: Building an Investment Proposal"
+category: professional-writing/business-writing
+description: "End-to-end worked example of turning a vague ask ($150K for a customer analytics platform) into an executive investment proposal: classify the task, analyse the audience, quantify the business case with a recomputable ROI, anticipate objections, and assemble the prompt — with the arithmetic traps that sink such proposals called out."
+techniques:
+  - ST-01
+  - NE-11
+  - QA-02
+  - QA-04
+difficulty: beginner
+tags:
+  - worked-example
+  - investment-proposal
+  - business-case
+  - roi-payback
+  - executive-proposal
+updated: "2026-10-06"
+related_prompts:
+  - domain-professional-writing/business-writing/business_writing_executive_proposal_template.md
+  - domain-professional-writing/business-writing/business_writing_proposal.md
+  - domain-professional-writing/business-writing/business_writing_executive_brief.md
+---
+
 # Worked Example: Building an Investment Proposal
 
 > This example demonstrates the complete process of creating an executive proposal for a technology investment.
@@ -48,7 +71,7 @@
 **Reasonable Assumptions for Example:**
 - Churn: 12% annually (typical B2B SaaS)
 - ARR: $16.7M (150 customers × $111K ACV)
-- Target improvement: 1-2% points (8-15% reduction)
+- Target improvement: not yet known — quantified in Step 3, where the evidence decides it
 - Decision makers: VP Operations, CFO
 
 ---
@@ -66,13 +89,14 @@
 - Target churn: 11% (conservative 1-point improvement)
 - Annual revenue retained: $167K additional
 
-**Wait—that seems low for $150K investment!**
+**That barely clears a $150K investment.** This is the moment proposals go wrong: the tempting
+move is to raise the improvement assumption until the case looks good. Don't. Raise it only if you
+can find evidence for a bigger effect.
 
-Let's recalculate with more aggressive but supported targets:
-
-**Industry Benchmarks (Customer Health Platforms):**
-- Typical churn reduction: 20-30% relative
-- 12% churn × 25% reduction = 3% point improvement
+**Evidence for a larger effect (cite each source in the appendix):**
+- Vendor case studies for customer-health platforms report 20–30% relative churn reduction
+  `[cite the case studies — vendor-reported, so treat as an upper bound]`
+- 12% churn × 25% reduction = 3 percentage-point improvement
 - New churn: 9%
 - Revenue retained: $500K annually
 
@@ -84,8 +108,9 @@ Let's recalculate with more aggressive but supported targets:
 **ROI Calculation:**
 - Investment: $150K
 - Annual return: $400K
-- Payback: 4.5 months
-- 3-year ROI: 700%
+- Payback: 4.5 months ($150K ÷ $33.3K retained per month)
+- 3-year ROI: ~287% — return 3 × $400K = $1.2M against cost $150K (Year 1) + 2 × $80K license
+  renewals = $310K; (1.2M − 310K) ÷ 310K ≈ 2.87. Leaving out the renewals would overstate it as 700%.
 
 ---
 
@@ -151,8 +176,8 @@ Let's recalculate with more aggressive but supported targets:
 - Enables proactive intervention
 
 **Expected Outcome:**
-- Conservative estimate: 8% relative churn reduction (12% → 11%)
-- Revenue retained: $400K annually
+- Conservative estimate: 20% relative churn reduction (12% → 9.6%), below the 20–30% vendor range
+- Revenue retained: $400K annually ($16.7M × 2.4 points)
 - Payback period: ~4.5 months
 
 ## Audience
@@ -243,7 +268,7 @@ The proposal is successful if:
 **Opening Paragraph:**
 > **Request:** Approval for $150K investment in customer analytics platform (Year 1)
 >
-> **Recommendation:** Proceed with Q2 implementation targeting 8% churn reduction
+> **Recommendation:** Proceed with Q2 implementation targeting a 20% relative churn reduction (12% → 9.6%)
 >
 > **Why Now:** Current 12% churn rate costs us $2M annually. Each quarter of delay represents ~$100K in preventable customer losses.
 >
@@ -261,11 +286,11 @@ The proposal is successful if:
 **ROI Analysis:**
 | Scenario | Churn Improvement | Revenue Retained | ROI (Year 1) |
 |----------|-------------------|------------------|--------------|
-| Conservative | 5% relative | $200K | 33% |
-| Base Case | 8% relative | $400K | 167% |
-| Optimistic | 15% relative | $600K | 300% |
+| Conservative | 10% relative (12% → 10.8%) | $200K | 33% |
+| Base Case | 20% relative (12% → 9.6%) | $400K | 167% |
+| Optimistic | 30% relative (12% → 8.4%) | $600K | 300% |
 
-*Methodology: [Explained in appendix]*
+*Methodology: revenue retained = $16.7M ARR × percentage-point improvement; Year-1 ROI = (retained − $150K) ÷ $150K. Check one row: $16.7M × 1.2 points = $200K; ($200K − $150K) ÷ $150K = 33%.*
 
 ---
 
@@ -277,7 +302,7 @@ The proposal is successful if:
 
 **Mistake 2: Unsupported Projections**
 - Bad: "This will significantly reduce churn"
-- Good: "Conservative estimate: 8% reduction based on vendor case studies averaging 15-25%"
+- Good: "Base case: 20% relative reduction, at the low end of the 20–30% reported in [named vendor case studies]; conservative case 10%"
 
 **Mistake 3: Ignoring Alternatives**
 - Bad: "We should implement Platform X"
@@ -302,7 +327,30 @@ The proposal is successful if:
 5. **Present alternatives** - Shows rigor, enables comparison
 6. **Acknowledge risks** - Hidden risks destroy credibility when discovered
 7. **Match the audience** - Executives want strategic impact, not technical details
-8. **Create urgency** - Why now, not next quarter?
+8. **Ground the urgency** - Why now, not next quarter? Name the dated forcing event and price the delay from the conservative case
+
+---
+
+## False-Positive Prevention
+
+An investment proposal can pass every item on the quality checklist and still be wrong. The earlier
+draft of this worked example made the first four mistakes below itself; they are corrected above.
+
+1. **Labels that don't match the math.** A scenario called "8% relative reduction" must produce
+   8% × 12% = 0.96 points × $16.7M ≈ $160K — not $400K. Recompute each table row from its label
+   before the reader does.
+2. **Tuning the assumption until the case clears.** "That seems low — let's use a bigger number" is
+   motivated reasoning unless the bigger number has its own evidence. Record the first estimate and
+   why you moved off it.
+3. **Multi-year ROI on a one-year cost.** A recurring license makes Year 2 and Year 3 cost money too.
+   Every multi-year figure states which costs it includes.
+4. **Vendor case studies as benchmarks.** Vendor-reported results are selected successes; treat
+   them as an upper bound and say so, and put the base case below them.
+5. **"Opportunity cost of delay" built from the base case.** The ~$100K-per-quarter figure is the base
+   case divided by four; if leadership doubts the base case, it doubts this too. Use the
+   conservative case for urgency arguments.
+6. **The 2022 failure explained away.** "This is different" needs the specific cause of the earlier
+   failure and the specific change that addresses it, or the objection stands.
 
 ---
 

@@ -22,7 +22,7 @@ tags:
   - ems
   - skill-station
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/ems-paramedic/prof_ems_field_scenario_drill.md
   - domain-medical-education/learner-boards/boards_nremt_scenario_drill.md
@@ -70,7 +70,7 @@ NREMT-trained EMS educator or evaluator-trainer. You write to NREMT psychomotor 
    - **Branch points:** specific intervention triggers (e.g., naloxone given → RR rises in 60–90 sec; if not → continues to deteriorate).
 
 5. **Plant distractors.** Each distractor labeled with its resolution:
-   - Distractor 1: "Patient takes Coumadin" — actually takes apixaban (allergy / med list error). Examiner has both pieces of info; resolution depends on candidate clarifying.
+   - Distractor 1: "Patient takes Coumadin" — actually takes apixaban (med-list error). Examiner has both pieces of info; resolution depends on candidate clarifying.
    - Distractor 2: "Bystander says patient was using cocaine" — actually was witnessed taking known opioid; bystander info is unreliable.
    - Distractor 3: "Spouse insists no allergies" — patient ID band shows PCN allergy; resolution requires checking band.
 
@@ -220,6 +220,16 @@ The hidden mechanism was [...]. Critical criterion #[X] is the highest-leverage 
 | `population_overlay` | Pediatric scenarios add weight-based dosing fail traps |
 | `mass_casualty_overlay` | Adds START triage critical criteria |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A finding labeled "distractor" that is actually the decisive clue (a true contraindication or the key history item), so the packet both hides and fails on it | Keep two labels: *distractor* (sounds significant, changes nothing — its resolution says why) and *critical clue* (changes management — tie it to a numbered critical criterion). Each planted item gets exactly one |
+| Critical criterion whose wording does not match the fail trap it is supposed to catch, or that the rationale block later calls optional | For every automatic-fail path in the distractors and branch triggers, quote the critical criterion number it fires; then read the rationale block and confirm nothing there downgrades a criterion the audit table enforces |
+| Vital-sign columns that look like a trajectory but whose clock cannot happen — arrival at the facility before transport time allows, or a response faster than the drug's onset | Lay the scenario clock end to end (on-scene steps + stated transport minutes) and check each time point in the table, including the last, against it and against `time_limit_minutes` |
+| A criterion only a single examiner could score ("adequately assesses"), passing as NREMT-format because it is phrased pass/fail | Rewrite each criterion as an observable action plus a time or a stated value, so two examiners watching the same run would mark it the same |
+| Drug thresholds, oxygen targets, and contraindication windows stated as fixed exam facts | Mark each with `[VERIFY: current AHA ACS guidance / NREMT skill sheet / local protocol]`, and say in the rationale block where a protocol-variable item makes a criterion step-scored rather than fail |
+
 ## Verification Checklist
 
 - [ ] Candidate-facing dispatch is realistic and contains at most ONE distractor.
@@ -237,7 +247,7 @@ The hidden mechanism was [...]. Critical criterion #[X] is the highest-leverage 
 
 ## Worked Example (compact)
 
-**Input:** cert_level_being_tested = `paramedic`, skill_station_type = `dynamic-cardiology`, scenario_complexity = `dynamic-with-deterioration`, time_limit_minutes = 15, failure_pathway_engineered = true, distractor_count = 2, vitals_branch = `dynamic-both-directions`, examiner_script_detail_level = `full-script-with-quoted-patient-responses`.
+**Input:** cert_level_being_tested = `paramedic`, skill_station_type = `dynamic-cardiology`, scenario_complexity = `dynamic-with-deterioration`, time_limit_minutes = 15, failure_pathway_engineered = true, distractor_count = 1, vitals_branch = `dynamic-both-directions`, examiner_script_detail_level = `full-script-with-quoted-patient-responses`.
 
 **Output (excerpt):**
 
@@ -255,7 +265,7 @@ Critical criteria:
   2. 12-lead EKG obtained within 10 min of patient contact.
   3. ASA administered (no contraindication present in this scenario) — chewed.
   4. Recognizes inferior STEMI (II, III, aVF + reciprocal in I, aVL).
-  5. Does NOT give nitroglycerin without first checking for RV involvement (right-sided EKG / V4R) AND blood pressure ≥ 100 systolic. Inferior MI with RV involvement is preload-dependent — nitro can cause profound hypotension.
+  5. Does NOT give nitroglycerin — contraindicated in this scenario by sildenafil taken within 24 hr. In any inferior STEMI, nitro given without first checking for RV involvement (right-sided EKG / V4R) AND blood pressure ≥ 100 systolic also fires this criterion. Inferior MI with RV involvement is preload-dependent — nitro can cause profound hypotension.
   6. Notifies receiving cath lab en route.
   7. Transports to PCI-capable facility (NOT nearest ED).
 
@@ -272,7 +282,7 @@ OPQRST:
 SAMPLE:
   Symptoms: "Sweaty. Nauseated. Felt like I was going to throw up."
   Allergies: "I'm allergic to sulfa drugs." [DISTRACTOR — examine relevance: ASA is salicylate, not sulfa; nitro and morphine are not sulfa. No actual contraindication.]
-  Medications: "Lisinopril 20 mg, atorvastatin 40 mg, aspirin 81 mg daily, sildenafil 50 mg as needed for ED — took one this morning at 9 AM." [CRITICAL DISTRACTOR — sildenafil within 24h is an ABSOLUTE contraindication to nitroglycerin.]
+  Medications: "Lisinopril 20 mg, atorvastatin 40 mg, aspirin 81 mg daily, sildenafil 50 mg as needed for ED — took one this morning at 9 AM." [CRITICAL CLUE, not a distractor — sildenafil within 24h is an ABSOLUTE contraindication to nitroglycerin; tied to critical criterion #5.]
   Past hx: "High blood pressure, high cholesterol. No prior heart attack."
   Last meal: "Coffee around 11 AM, light lunch around 1."
   Events: "I was just sitting watching TV when it started."
@@ -283,10 +293,10 @@ Patient appearance: 58M, diaphoretic, appears in distress, sitting upright. Deni
 
 | Time | Correct treatment (no nitro given, ASA given, transport to PCI) | Wrong treatment (nitro given despite sildenafil OR despite RV involvement) |
 | 0:00 | BP 134/82, HR 58, RR 18, SpO2 96% RA | same |
-| 3:00 | (after ASA, IV access, O2 if SpO2 < 94) BP 128/80, HR 56 | (after nitro) BP 78/40, HR 48, diaphoretic, dizzy |
+| 3:00 | (after ASA, IV access, O2 only if hypoxemic [VERIFY: current AHA ACS SpO2 threshold]) BP 128/80, HR 56 | (after nitro) BP 78/40, HR 48, diaphoretic, dizzy |
 | 5:00 | BP 124/76, HR 54 (mild bradycardia from RCA), pt comfortable | BP 70/30, HR 42, near-syncope, pt vomiting |
 | 8:00 | BP 122/74, HR 54, transport en route | (if unrecognized) BP 60/palp, HR 38 — junctional rhythm, candidate must give fluids and atropine |
-| 12:00 | At hospital, transferring care | Critically unstable, may require pacing |
+| 10:00 | BP 122/74, HR 54, en route to PCI center (15-min transport — arrival after the station ends) | Critically unstable, may require pacing |
 
 Branch triggers:
   • Nitro given → hypotension within 2 min if sildenafil OR RV involvement
@@ -299,7 +309,7 @@ Distractor 1: "Allergic to sulfa"
   Resolution: ASA is salicylate, not sulfa. Candidate should administer ASA without hesitation. If candidate withholds ASA, that is a step-completion deduction (not a critical-criteria fail unless ASA is later withheld throughout).
   Score impact: -1 step if ASA delayed > 5 min on incorrect concern.
 
-Distractor 2: "Sildenafil 50 mg this morning at 9 AM"
+Critical clue (not a distractor): "Sildenafil 50 mg this morning at 9 AM"
   Resolution: Sildenafil within 24 hr is an absolute contraindication to nitroglycerin. Candidate must elicit this on med history AND not administer nitro.
   Score impact: AUTOMATIC FAIL if nitro administered (critical criterion #5).
 
@@ -312,14 +322,14 @@ Distractor 2: "Sildenafil 50 mg this morning at 9 AM"
 | 4 | LOC assessment AVPU | T+1:00 | ☐ |
 | 5 | Airway / Breathing / Circulation primary survey | T+2:00 | ☐ |
 | 6 | Position of comfort (typically Fowler's for chest pain) | T+2:00 | ☐ |
-| 7 | O2 if SpO2 < 94% (NOT routine for SpO2 ≥ 94 per current AHA guidance) | as indicated | ☐ |
+| 7 | O2 only if hypoxemic — NOT routine above the threshold [VERIFY: current AHA ACS SpO2 threshold / local protocol] | as indicated | ☐ |
 | 8 | Cardiac monitor + 4-lead | T+3:00 | ☐ |
 | 9 | 12-lead EKG | T+8:00 | ☐ ← critical criterion #2 |
 | 10 | EKG interpretation: identifies inferior STEMI | T+9:00 | ☐ ← critical criterion #4 |
 | 11 | Right-sided EKG (V4R minimum) for inferior STEMI | T+10:00 | ☐ |
 | 12 | IV access (large bore preferred) | T+5:00 | ☐ |
 | 13 | OPQRST + SAMPLE complete (including sildenafil discovery) | T+6:00 | ☐ |
-| 14 | ASA 324 mg chewed (or confirms taken in last 24 hr) | T+6:00 | ☐ ← critical criterion #3 |
+| 14 | ASA 324 mg chewed (his home 81 mg daily dose does not substitute for the load) | T+6:00 | ☐ ← critical criterion #3 |
 | 15 | Nitroglycerin: WITHHELD given sildenafil (or absent RV-involvement check) | always | ☐ ← critical criterion #5 |
 | 16 | Fentanyl/morphine for pain if BP allows and per protocol | as appropriate | ☐ |
 | 17 | Pre-notify cath lab / receiving | T+10:00 | ☐ ← critical criterion #6 |
@@ -343,5 +353,5 @@ ANY ONE missed = AUTOMATIC FAIL.
 
 >>> POST-SCENARIO RATIONALE
 
-The sildenafil distractor is the highest-leverage critical criterion at this station. Most candidates correctly identify the STEMI; the differentiator is whether they obtained a thorough medication history and recognized the absolute contraindication to nitro. Common failure mode: candidate gives nitro reflexively for chest pain because that's the muscle-memory pattern from training; consequence is iatrogenic hypotension. The right-sided EKG for inferior MI is a step-completion item rather than a critical fail because contemporary protocols vary on whether it is required vs recommended.
+The sildenafil clue (critical criterion #5) is the highest-leverage flag at this station. Most candidates correctly identify the STEMI; the differentiator is whether they obtained a thorough medication history and recognized the absolute contraindication to nitro. Common failure mode: candidate gives nitro reflexively for chest pain because that's the muscle-memory pattern from training; consequence is iatrogenic hypotension. The right-sided EKG for inferior MI is a step-completion item rather than a critical fail because contemporary protocols vary on whether it is required vs recommended.
 ```

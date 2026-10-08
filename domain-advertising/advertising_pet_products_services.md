@@ -20,12 +20,12 @@ tags:
   - pet
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Pet** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,22 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **The animal shown defines the product's market.** Cat food beside a dog, small-breed kibble with
+   a large dog, or a puppy for a senior formula passes form checks and misleads buyers. Name species,
+   size, and life stage from intake; ask if only "pet food" was given.
+2. **"Healthy happy pets" drifts into health claims.** "Vet recommended", "supports joint health",
+   "grain-free", and "improves coat in 30 days" are rendered only as written in intake.
+3. **Service scenes must match services offered.** A grooming salon shown with surgical scrubs and
+   exam tables, or a trainer shown with agility equipment they do not use, overstates the business;
+   depict only services listed in intake.
+4. **Appointment offers need terms.** "First visit free", prices, and booking deadlines come from
+   intake or stay out.
+5. **Verify before handing over:** check the animal described in the Final Image Prompt against the
+   intake species, size, and life stage, then match each rendered string, including pack and bag
+   text, to intake verbatim. A breed or claim the intake never named fails.
 
 ## Output Format
 

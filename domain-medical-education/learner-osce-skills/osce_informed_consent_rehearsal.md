@@ -24,7 +24,7 @@ tags:
   - shared-decision-making
   - communication
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-osce-skills/osce_communication_breaking_bad_news_rehearsal.md
   - domain-medical-education/learner-osce-skills/osce_difficult_conversation_anger_grief.md
@@ -135,6 +135,16 @@ Single highest-yield improvement: [...]
 | `time_pressure` | Shorter station forces prioritization of the highest-stakes risks |
 | `prior_complication_in_family` | SP names a relative who had a bad outcome — tests reframing |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Marking a `mandatory_disclosures` item `disclosed` because the learner attached a number to it, without checking whether the number is right | Compare each quoted rate with a named source type (specialty-society guidance, the institution's procedure consent form) and tag any figure you cannot confirm `[VERIFY: source]`; a materially wrong rate scores `partially disclosed` |
+| Letting the SP's teach-back paraphrase contain facts the learner never said — the model holds the locked case, so its paraphrase drifts toward the answer key | Build the SP paraphrase only from learner turns; a risk the learner omitted is absent from the paraphrase, and Comprehension cannot be ✓ for it |
+| Ticking Voluntariness, Documentation / agreement, or Decision capacity on the overall feel of the encounter | Each ✓ in the five-element block cites a learner quote; with `decision_capacity_consideration = none` and no capacity talk, the line is `n/a`, not ✓ |
+| Accepting generic "bleeding" or "infection" as covering a procedure-specific item (post-polypectomy bleeding, post-LP headache, warfarin-related ICH) | Credit the item only when the learner names the procedure-specific event or its timing; generic risk words earn `partially disclosed` |
+| Shipping a Mandatory disclosure audit with fewer lines than the input list, so a dropped item reads as "nothing missed" | Before output, count the `mandatory_disclosures` entries and confirm the audit has exactly that many lines, each pointing to a transcript turn or marked `not disclosed` |
+
 ## Verification Checklist
 
 - [ ] Five elements scored separately, not bundled.
@@ -166,7 +176,7 @@ Learner: "Sorry — I should've explained. A polyp is a small growth on the lini
 
 >>> SCORECARD — Five elements
 
-[✓] Capacity (no concern raised, none required)
+[n/a] Capacity (decision_capacity_consideration = none; no capacity talk needed)
 [✓] Disclosure (nature, risk, benefit, alternatives, no-tx — all named)
 [✓] Comprehension (teach-back was substantive)
 [✓] Voluntariness (offered time, did not push)
@@ -175,8 +185,8 @@ Learner: "Sorry — I should've explained. A polyp is a small growth on the lini
 >>> SCORECARD — Mandatory disclosure audit
 
 [disclosed]            Perforation (with rate)
-[disclosed]            Post-polypectomy bleeding (with rate)
-[disclosed]            Missed lesion
+[disclosed — rate unconfirmed]  Post-polypectomy bleeding (learner said "similar range" to perforation; check the rate before crediting [VERIFY: specialty-society guidance / institutional consent form] — a materially wrong rate scores partially disclosed)
+[disclosed]            Missed lesion (learner's "~5%" [VERIFY: source])
 [disclosed]            Sedation risk
 [partially disclosed]  Prep tolerability (mentioned cramping; did not name dehydration or electrolyte issues)
 

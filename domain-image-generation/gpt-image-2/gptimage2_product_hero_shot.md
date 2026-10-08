@@ -14,7 +14,7 @@ tags:
   - ecommerce
   - hero-shot
   - openai
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/GPT_IMAGE_2_GUIDE.md
 ---
@@ -94,6 +94,20 @@ If any label text is misspelled or any extra props appear, the output is incorre
 1. "Tighten the framing — the product should fill 70% of the frame instead of 60%."
 2. "Soften the key light — the highlight on the upper edge is too bright."
 3. "Adjust the brand palette: the [secondary color] should read more [warmer / cooler / more saturated]."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass the label because the brand name is spelled right — the model fills empty label area with plausible microcopy (net weight, "12 FL OZ", ingredients, a barcode with digits, certification seals) that was never in `[LABEL TEXT]`.
+- Accept the product's shape as correct because it matches the `[PRODUCT]` words — a plausible canister is not this SKU's canister, and a product-page hero showing the wrong cap, seam, or label layout misrepresents the item sold.
+- Pass the contact shadow because one exists — check that it falls away from the upper-left key light, not toward it.
+
+✅ **DO:**
+- Transcribe every glyph visible on the product and compare it with `[LABEL TEXT]`; any string not in the input (including fine print and seals) fails the image.
+- Eyedropper-sample the label's primary and secondary areas and compare them with the `[BRAND PALETTE]` hex values — "close by eye" is not the specified color.
+- For a real product page, compare the render side by side with a photo of the physical product, or pass that photo as a reference via the edits endpoint, before publishing.
 
 ---
 

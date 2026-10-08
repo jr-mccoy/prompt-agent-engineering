@@ -2,13 +2,23 @@
 title: "Culture and Society Worksheet Generator"
 category: education
 description: "Generate culture-and-society worksheets emphasizing traditions, perspectives, artifacts, and respectful comparison practices."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - social-studies
   - worksheet
   - culture
   - society
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Culture and Society Worksheet Generator
@@ -128,3 +138,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let one costume, food or festival stand for an entire culture in the ZONE 3 source panel, as if every member practises it.
+- Accept rendered illustrations of people with exaggerated features or caricatured dress; the page passes the "neutral phrasing" check while the pictures stereotype.
+- Describe living traditions in the past tense, or label them "strange" or "exotic" against the students' own as the unmarked "normal".
+- Attribute one culture's tradition or artifact to a neighbouring one, or let the model invent an artifact that has no real source.
+
+✅ **DO:**
+- Check every source-panel claim and artifact against a source from within the culture (a museum, cultural organisation or community publication); mark unconfirmed details as [VERIFY].
+- Inspect each drawn person and object on the rendered page for caricature, and replace any image you would not show to a member of that culture.
+- Check that each ZONE 4 compare/contrast row compares the same category for both sides (a holiday with a holiday), not a modern practice against a historical one.

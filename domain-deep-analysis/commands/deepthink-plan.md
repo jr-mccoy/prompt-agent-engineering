@@ -1,6 +1,7 @@
 ---
 name: deepthink-plan
 description: Start a deep, multi-perspective planning session to work through how to get from here to a defined goal. Drives the model through Frame → Decompose into milestones & dependencies → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is a sequenced plan with risks, tripwires, and abort conditions.
+techniques: [RT-02, RT-07, CM-02, QA-02, QA-04]
 version: "1.0.0"
 category: deep-analysis
 tags: [deep-analysis, planning, strategy, multi-perspective, dependencies, sequencing, gated-workflow]
@@ -55,6 +56,12 @@ This command inherits shared behavior from [`domain-deep-analysis/BACKBONE.md`](
 5. **Continue phase-by-phase.** Each phase ends with the gate mechanism defined in `BACKBONE.md`. Never run multiple phases in one output.
 
 6. **At the FINAL GATE in Phase 5,** suggest re-running this command after the first major milestone to update the plan with what was learned.
+
+## False-Positive Prevention
+
+1. **Planning toward a goal that is not chosen or not observable.** If Phase 1 cannot state an observable end state, or the user is still weighing whether to pursue the goal at all, any milestones produced are a plan-shaped wish — switch to `/deepthink-decision`. If the open question is what the thing should look like rather than when it gets done, switch to `/deepthink-design`.
+2. **GATE 1 passed over a failed capacity check.** When the rough capacity check says the goal does not fit, a bare "proceed" does not resolve it. Ask explicitly whether to cut scope, extend the deadline, or proceed knowingly, and record the answer in the plan's capacity line.
+3. **A plan missing required fields.** Before the final gate, confirm every milestone has an observable signal, owner, effort estimate, dependencies, risk, and date; and that the plan contains the critical path, tripwires and abort conditions as separate lists, a capacity check that includes the 30% slippage buffer, confidence in both deadline and full scope, and a named re-planning checkpoint.
 
 ## Success Criteria
 

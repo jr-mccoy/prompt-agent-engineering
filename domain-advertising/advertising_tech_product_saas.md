@@ -20,12 +20,12 @@ tags:
   - tech
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **SaaS** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,22 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **Abstract product visuals still show features.** The anti-UI rules block screenshots, but an
+   illustrated workflow can depict automations, AI assistants, or integrations the product lacks.
+   Name the features shown from intake; ask which ones are generally available, not on the roadmap.
+2. **Integration icons claim compatibility.** Third-party app icons orbiting the logo say "works
+   with"; include one only when intake lists the integration and supplies the mark.
+3. **"Ship faster" gets a multiplier.** "3x faster", "save 10 hours a week", and "99.99% uptime"
+   appear only as quoted in intake with their source.
+4. **Trial terms attach themselves to the CTA.** Models extend "Start free trial" with "14 days",
+   "no credit card", or "free forever plan"; render the CTA exactly as intake gives it. Customer
+   logos and security-compliance badges likewise need supplied files.
+5. **Verify before handing over:** list every feature, integration, metric, logo, and badge the
+   Final Image Prompt and each model variant ask to be shown, and tick each against intake; then
+   confirm the CTA string is identical in every variant.
 
 ## Output Format
 

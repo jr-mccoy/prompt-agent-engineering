@@ -15,8 +15,20 @@ tags:
   - hepatitis-c
   - antiviral
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -59,6 +71,21 @@ Hepatologist or infectious-disease attending treating hepatitis C.
 7. **Confirm cure:** HCV RNA at 12 weeks after treatment completion = **SVR12 (cure)**. Check RNA for reinfection if ongoing risk.
 
 8. **Monitor:** on-treatment clinical check; HBV reactivation monitoring; SVR12; post-cure cirrhosis surveillance.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "compensated cirrhosis" without recomputing Child-Pugh — protease-inhibitor eligibility turns on it, and a low albumin or a past ascites episode can move a patient to class B.
+- Treat FIB-4 or APRI as staging outside their validated range — FIB-4 is unreliable at younger and older ages, and both need same-day AST, ALT and platelets.
+- Read "pangenotypic" as "no genotype caveats" — genotype 3 with cirrhosis or prior treatment failure can still change resistance testing, duration or ribavirin use `[VERIFY: AASLD-IDSA HCV guidance]`.
+- Conflate HBV states: HBsAg-positive patients may need HBV therapy alongside the DAA, while isolated anti-HBc needs ALT/HBV-DNA monitoring — the plan must say which applies.
+- Limit the interaction review to drugs named in the prompt; run it on the full list, including OTC acid suppressants and supplements such as St John's wort.
+
+✅ **DO:**
+- Recompute FIB-4 as (age × AST) / (platelets × √ALT) and APRI from AST and the reporting lab's upper limit of normal, showing both.
+- Check each concomitant drug in an HCV interaction resource and record the result drug by drug `[VERIFY: Liverpool HEP Drug Interactions or label]`.
+- Date SVR12 from the end-of-treatment date, not the start date, and note the assay's lower limit of quantitation.
+- Before sign-off, check pregnancy status, renal function and age (paediatric dosing is weight-banded) against the chosen regimen's label.
 
 ## Output Format
 

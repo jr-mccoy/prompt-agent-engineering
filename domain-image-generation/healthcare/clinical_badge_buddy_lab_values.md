@@ -2,6 +2,15 @@
 title: "Clinical Badge Buddy - Lab Value Normal Ranges"
 category: medical-education
 description: "Image generation prompt for creating printable clinician badge buddy reference cards for common laboratory value normal ranges (CBC, BMP/CMP, coags, ABG, cardiac markers)"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - clinician
@@ -11,7 +20,7 @@ tags:
   - laboratory
   - reference-card
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - ./nursing_badge_buddy_critical_drips.md
@@ -432,6 +441,21 @@ Negative prompt: `"badge, lanyard, clip, holder, 3d, mockup, photo, gradient, sh
 
 ### Problem: Only one image generated
 **Add:** `"Generate EXACTLY 2 images. NOT 1. NOT 3. EXACTLY 2 separate images."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass a range because it looks roughly normal: K "3.5-5.5" for "3.5-5.0", Cr "0.6-1.8" for "0.6-1.3" or INR "0.8-1.2" for "0.8-1.1" all survive a clinician's skim.
+- Let the model mix unit systems — glucose and calcium in mg/dL vs mmol/L, Hgb in g/dL vs g/L, Mg in mg/dL vs mmol/L. A correct number beside the wrong unit is a wrong range that looks correctly typeset.
+- Overlook glyph-level drift: a dropped decimal point, "<" turned into ">" on the LIPIDS or BNP lines, an en-dash inside a range read as a minus sign.
+- Accept Hgb, Hct, HDL or ESR lines whose "(F)" / "(M)" qualifiers were swapped or dropped — the numbers match the source but now belong to the other sex.
+
+✅ **DO:**
+- Proof every analyte line on a 100%-scale print as six fields — analyte, lower bound, upper bound, unit, comparator, sex/population qualifier — against your LIS reference table, and count lines per box against your fill (the example front card carries 24).
+- Confirm, analyte by analyte, that the printed unit is the unit your lab reports results in, so a reader holding a patient's result up to the card compares like with like.
+- Record which LIS reference-table version (or pull date) the fill came from, so "verified" points at one specific table rather than at memory.
 
 ---
 

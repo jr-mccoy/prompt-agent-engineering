@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, DS-06, QA-04, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_grow_becoming_preceptor_self_prep.md
   - pacu_grow_code_rrt_participation_growth.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Charge / Resource-Nurse Readiness — Self-Assess for Flow, Triage & Staffing Awareness
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A self-assessment aid for a nurse considering a charge/resource role, not a role appointment or a substitute for your facility's charge competency process. Staffing ratios, acuity tools, and assignment authority are **per facility** — this readies *your* thinking, it does not confer the role.
 
@@ -87,6 +100,20 @@ Gap: [...] | Build action: [...] | Feeds into: [development plan]
 | `emphasis` | Weight toward flow/triage vs resource-for-others |
 | `unit_context` | High-acuity/high-volume raises the systems bar |
 | `stage` | "Considering it" vs "starting soon" changes urgency of the gap action |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Turn the five 4-token self-ratings into an overall "ready / not ready for charge" verdict; charge readiness is established by the facility's charge competency process and observed performance, never inferred from self-rating.
+- Accept `Independent` on a charge competency when the evidence slot is empty or describes own-assignment work (the worked example's pressure/conflict = Independent cites nothing).
+- Infer cross-bay triage from triaging your own two patients; only instances where you re-prioritized or re-assigned across other nurses' patients count.
+- State a nurse-to-patient ratio, acuity-tool cut-off, or assignment rule from general knowledge; the FACILITY LAYER lists them by name only.
+- Rate resource-for-others highly because colleagues ask you questions; it also requires an instance where you escalated further when the problem exceeded you.
+
+✅ **DO:**
+- Audit each token before naming the gap: a rating above With Cues needs at least one instance where you acted for the unit without the charge nurse prompting; otherwise downgrade it, label it "unevidenced", and recheck which competency is weakest.
+- Name who could corroborate each rating (current charge nurse, manager, educator) and mark ratings uncorroborated until someone does.
+- Make the gap's build action produce observable evidence (a shadowed charge shift, a supervised relief shift) that one of those corroborators can see, so the next self-assessment rests on more than self-report.
 
 ## Verification Checklist
 

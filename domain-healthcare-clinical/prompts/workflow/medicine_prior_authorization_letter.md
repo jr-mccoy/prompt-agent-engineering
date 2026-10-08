@@ -2,20 +2,38 @@
 title: "Prior Authorization & Appeal Letter Drafter"
 category: medicine
 description: "Structured drafting of prior authorization requests and denial appeals — medical necessity language, guideline citations, failed-therapy history, and patient-specific justification."
+techniques:
+  - ST-02
+  - ST-03
+  - RT-05
+  - QA-05
+  - QA-01
 tags:
   - medicine
   - prior-authorization
   - appeals
   - medical-necessity
   - documentation
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_em_coding_level_justification.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_em_coding_level_justification.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
 ---
 
 # Prior Authorization & Appeal Letter Drafter
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help clinicians and their teams draft clear, evidence-anchored prior authorization requests and denial appeals that meet payer medical-necessity criteria, document failed prior therapy where required, and cite the guidelines that support the requested service or medication.
 
@@ -272,6 +290,21 @@ Peer-to-peer requested: [yes / no / standing]
 **Medicaid:** State-specific criteria; managed Medicaid may differ from fee-for-service.
 
 **External review:** If internal appeals exhausted, state / federal external review may be available. Include patient-facing information about this right.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Invent a trial name, journal, year, effect size, recommendation class/level or compendia page to fill the EVIDENCE AND GUIDELINE SUPPORT slots — unsupplied citations stay as `[VERIFY: citation]`.
+- Fill NPI, TIN, member ID, DOB or an auth reference with plausible-looking numbers.
+- Restate the denial reason in your own words or rebut a reason the payer did not cite — quote the denial letter's text for each "Cited reason".
+- State an appeal deadline or urgent-review window from general knowledge; it is computed from the denial date and the plan's own stated window.
+
+✅ **DO:**
+- Trace every dose, date, duration and outcome in PRIOR THERAPIES AND OUTCOMES to a dated note listed under ATTACHMENTS, and confirm the number of therapies in the letter equals the number supplied.
+- Recompute the requested quantity (dose × frequency × duration = units) and check it against the label maximum and the stated reassessment point.
+- In INTERNAL WORKING NOTES, confirm each payer criterion maps to a named section of the letter; a criterion with no section is a gap, not an omission to smooth over.
 
 ---
 

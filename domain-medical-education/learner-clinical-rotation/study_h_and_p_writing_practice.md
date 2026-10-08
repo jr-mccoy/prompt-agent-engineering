@@ -22,9 +22,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_soap_note_writing_practice.md
-  - ./learner_oral_presentation_practice.md
-  - ../clinical-reasoning/learner_problem_representation_rehearsal.md
+  - domain-medical-education/learner-clinical-rotation/study_soap_note_writing_practice.md
+  - domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md
+  - domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md
 ---
 
 # Admission H&P Writing Practice for Health-Professions Learners

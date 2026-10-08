@@ -14,8 +14,20 @@ tags:
   - soap-note
   - progress-note
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -48,6 +60,19 @@ Treating clinician rounding and documenting the daily note that drives today's d
 
 6. **Keep it current and honest.** Don't reproduce stale exam findings or a fully-negative ROS that wasn't reassessed. Document the day, not the template.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write patient-reported statements ("feels significantly better", "no dyspnea walking to the bathroom") when the input gives no patient report — S is the patient's voice, not an inference from improved vitals.
+- Fill I/O, "devices: peripheral IV only" or a net-balance figure that today's input does not contain.
+- Report Tmax equal to the current temperature unless the 24-hour maximum was supplied.
+- Change an antibiotic course length or stop date from the previous plan without saying it changed and why.
+
+✅ **DO:**
+- Compute hospital day and antibiotic day from the admission and first-dose dates, not by adding one to yesterday's note.
+- Back every "down", "improved" or "resolving" with two dated values (WBC 16.2 → 9.8); with only one value, report it without a trend word.
+- Compare today's plan with yesterday's item by item — each continued, changed or stopped with a reason, none vanishing silently — and keep "no growth at 48 h" listed as pending until the culture is final.
+
 ## Output Format
 
 ```
@@ -79,7 +104,7 @@ Code status: [...]
 
 ## Worked Example
 
-**Input:** Hospital Day 3, CAP patient from prior example. Overnight: afebrile x24h, weaned to room air, cough improving, ate breakfast. Tmax 37.2, HR 78–88, BP 120s–130s/70s–80s, RR 16, SpO2 95% RA. WBC down 16.2 → 9.8. Blood cultures no growth at 48h; sputum culture growing Strep pneumoniae sensitive to ceftriaxone. Glucose 140s–180s on sliding scale. Exam: lungs improved air entry, fewer crackles.
+**Input:** Hospital Day 3, CAP patient from prior example (on ceftriaxone + azithromycin, enoxaparin 40 mg SC daily; code status full, unchanged). Overnight: afebrile x24h, weaned to room air, cough improving (less frequent, less productive), ate breakfast. Patient says he feels "much better"; no dyspnea at rest or walking to the bathroom; no new complaints. T 36.9 this AM, Tmax 37.2, HR 78–88, BP 120s–130s/70s–80s, RR 16, SpO2 95% RA. I/O: net even, adequate urine output. Peripheral IV only, no drips. WBC down 16.2 → 9.8. Blood cultures no growth at 48h; sputum culture growing Strep pneumoniae sensitive to ceftriaxone. Glucose 140s–180s on sliding scale. Exam: comfortable, no distress; lungs improved air entry bilaterally, fewer right basilar crackles, no wheeze; heart RRR.
 
 **Output:**
 
@@ -87,14 +112,14 @@ Code status: [...]
 Medicine Progress Note — Hospital Day 3
 
 S (Subjective):
-Patient reports feeling significantly better. Afebrile overnight, cough less frequent and less productive, no dyspnea at rest or with ambulation to the bathroom. Tolerated breakfast. No new complaints.
+Patient reports feeling "much better." Afebrile overnight, cough less frequent and less productive, no dyspnea at rest or with ambulation to the bathroom. Tolerated breakfast. No new complaints.
 
 O (Objective):
-- Vitals: T 37.2 (Tmax 37.2), HR 78–88, BP 120s–130s/70s–80s, RR 16, SpO2 95% on room air (weaned off O2).
+- Vitals: T 36.9 (Tmax 37.2), HR 78–88, BP 120s–130s/70s–80s, RR 16, SpO2 95% on room air (weaned off O2).
 - I/O: adequate urine output, net even.
-- Devices/Drips: none; peripheral IV only.
+- Devices/Drips: no drips; peripheral IV only.
 - Exam: General — comfortable, no distress. Pulmonary — improved air entry bilaterally, fewer right basilar crackles, no wheeze. Cardiac — RRR.
-- New results: WBC down 16.2 → 9.8 (resolving leukocytosis). Blood cultures no growth at 48h. Sputum culture: Streptococcus pneumoniae, sensitive to ceftriaxone. Glucose 140s–180s on sliding scale.
+- New results: WBC down 16.2 → 9.8 (resolving leukocytosis). Blood cultures no growth at 48h (not yet final — still pending). Sputum culture: Streptococcus pneumoniae, sensitive to ceftriaxone. Glucose 140s–180s on sliding scale.
 
 A (Assessment):
 68 y/o M with CAP, clinically improving — afebrile, off oxygen, downtrending WBC, culture-confirmed pneumococcal pneumonia sensitive to current therapy. On trajectory toward discharge.
@@ -108,5 +133,5 @@ P (Plan, by problem):
 Lines/tubes/drains: PIV — remove with IV-to-PO conversion.
 VTE prophylaxis: Continue enoxaparin 40 mg SC daily; D/C with discharge once ambulatory.
 Dispo: Anticipate discharge tomorrow on oral antibiotics with PCP follow-up in 1 week.
-Code status: Full.
+Code status: Full (unchanged).
 ```

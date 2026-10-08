@@ -22,7 +22,7 @@ tags:
   - deliberate-practice
   - mastery-learning
   - simulation
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-remediation/remed_return_to_clinical_duty_plan.md
   - domain-medical-education/educator-simulation-design/sim_low_fidelity_scenario_author.md
@@ -114,6 +114,16 @@ Considered: [clearing on hours/volume | skipping the at-standard sim gate | rela
 | `resources` | Limited simulators → adjust scheduling, not the mastery standard |
 | `time_window` | Mastery learning is criterion- not time-based; short window → more intensive scheduling |
 | `add_cognitive_component` | If step-knowledge is a deficit, pairs with a brief knowledge module before psychomotor drilling |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A checklist percentage that cannot be recomputed (not-applicable steps handled inconsistently in the denominator, or the global rating blended into the checklist score) | Recompute each run from the item-level sheet as steps passed ÷ applicable steps, shown as a fraction, with the global rating reported separately and each mandatory-pass step listed on its own line |
+| Counting a run as "at standard" when faculty prompted a step mid-run, so the consecutive count includes cued performances | Log every prompt or hands-on intervention during a scored run; a prompted mandatory-pass step makes the run non-qualifying and resets the consecutive count |
+| A BREAKDOWN LOCALIZATION whose Score column holds words ("fail", "low") because the evidence was narrative rather than scored attempts | When only narrative evidence exists, score a baseline attempt on the named checklist first and record the failing step numbers before localizing |
+| A mastery cut-off, global-rating floor or value of N invented when `mastery_standard` was not supplied | Take the passing standard from the instrument's published standard-setting or the program's stated value; anything else is tagged [VERIFY: source] |
+| Rep counts and session frequencies that exceed the trainer and faculty time listed in `resources` | Multiply reps × minutes per rep × sessions for each sub-skill and compare with available simulator and faculty hours before setting benchmark dates |
 
 ## Verification Checklist
 

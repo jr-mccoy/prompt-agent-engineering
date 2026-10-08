@@ -23,7 +23,7 @@ tags:
   - workplace-based-assessment
   - cbme
   - supervision-level
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md
   - domain-medical-education/educator-rubrics-wba/assess_dops_rubric_author.md
@@ -187,6 +187,16 @@ Replaced with: "Articulates 3-item differential with weights and discriminating 
 | `context_modifiers` | Form explicitly notes context-specific entrustment; same learner may be level 4 in routine and level 2 in complex |
 | `include_summative_recommendation` | Adds a "would you recommend for advancement to next supervision phase?" item |
 | `include_co-activity_log` | If EPA requires N entrustments before progression, links to log |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Filling the EPA DEFINITION block with a remembered paraphrase and calling it "verbatim from the framework" | Copy the supplied `epa_definition` character-for-character; if the input is empty, leave the slot as `[VERIFY: official EPA text — AAMC Core EPA guide / specialty EPA document]` rather than composing one |
+| Nested competency codes (PC1, MK2, ICS1) that look official but are invented or from a superseded milestone set | Take codes only from the named specialty's current Milestones document; any code you cannot trace to it is marked `[VERIFY: specialty Milestones edition]` in the NESTED COMPETENCIES table |
+| An `expected_entrustment_at_level` whose number and label disagree (e.g., "level 4 / direct supervision available" when this scale defines Level 4 as reactive indirect supervision) | Before writing the ENTRUSTMENT DECISION block, check the target's number against the scale's own level definitions and compute gap-from-target against the target for the context recorded (routine vs complex), not a single generic target |
+| Calibration scenarios whose clinical content is the model of correct practice but uses dated criteria (e.g., "severe sepsis" and qSOFA as the deterioration screen in Worked Example A) | Check each calibration utterance against the current version of the guideline it implies `[VERIFY: current Surviving Sepsis Campaign / local early-warning protocol]` — raters will treat the example as the standard |
+| Form wording that lets one observation read as a progression decision ("entrusted at Level 4") | Label the decision "entrustment level observed in this context, this encounter"; progression belongs to the program's transition rule and the competency committee, and the form says so |
 
 ## Verification Checklist
 

@@ -27,9 +27,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_differential_diagnosis_drill.md
-  - ./learner_clinical_reasoning_schema_practice.md
-  - ./learner_clinical_case_walkthrough.md
+  - domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md
+  - domain-medical-education/learner-clinical-reasoning/reason_schema_practice.md
+  - domain-medical-education/learner-clinical-reasoning/reason_clinical_case_walkthrough.md
 ---
 
 # Hypothesis-Driven Workup Drill for Health-Professions Learners

@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_adv_high_acuity_recovery_reasoning.md
   - pacu_adv_hemodynamic_instability_reasoning.md
@@ -33,6 +33,19 @@ references:
 ---
 
 # Complex-Population Mastery — Synthesizing Peds / Geri / OB / Bariatric / Cardiac Recovery Reasoning
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A synthesis-reasoning drill, not live clinical decision support. Population-specific parameters, weights, and thresholds are **per facility/order** (learner-pasted). This trains *expert-level population reasoning* — the clinical content lives in the toolkit's Population-Specialty Library, referenced here, not restated.
 
@@ -96,6 +109,20 @@ One coaching point: [...]
 | `depth` | `shift` builds the re-tune habit; `compare` sharpens discriminators |
 | `blend` | Combine two populations (e.g., geriatric + cardiac) for real-world complexity |
 | `curveball` | Present a finding that's normal in one population, alarming in another |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill DEFAULTS TO RE-TUNE with a specific value (weight-based amount, positioning angle, monitoring frequency, fluid volume) — "specifics: toolkit population file" is the only allowed content, and pediatric reasoning never carries a weight-based number.
+- Offer a CUE RE-READ that is a population stereotype ("older adults are always confused after surgery") instead of a cue whose meaning changes, with the standard-adult comparison filled in.
+- In `blend` mode, list both populations' top risks side by side without stating how they interact (e.g., geriatric frailty compounding cardiac reserve).
+- Reason as if pregnancy/lactation status, renal or hepatic impairment, or OSA severity were absent just because the case seed didn't mention them — ask, or mark them unknown.
+- Score `Pointed specifics to toolkit not invented [Y]` when the toolkit file was named but not opened.
+
+✅ **DO:**
+- Before scoring, open the named toolkit population file and confirm each risk shift, cue re-read, and trigger appears there — or label it as the learner's own inference to verify.
+- Check that the population-specific escalation trigger is a change from the patient's baseline or trend, not an absolute value.
+- Recheck the five SCORE items against the sections above them; a Y needs a filled section.
 
 ## Verification Checklist
 

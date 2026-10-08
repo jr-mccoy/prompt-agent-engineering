@@ -15,8 +15,20 @@ tags:
   - parkinsons
   - movement-disorder
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -64,6 +76,20 @@ Neurologist/movement-disorder specialist managing Parkinson's disease.
 
 8. **Monitor:** motor response and fluctuations, impulse-control disorders (ask explicitly with agonists), orthostatics, cognition, mood, weight/swallow, medication timing adherence.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Add a COMT inhibitor or MAO-B inhibitor for wearing-off and leave each levodopa dose unchanged when peak-dose dyskinesia is already recorded — both prolong levodopa effect and can worsen dyskinesia, so the plan must say which dose comes down.
+- Add rasagiline or selegiline without scanning the full list for meperidine, tramadol, methadone, dextromethorphan and serotonergic antidepressants `[VERIFY: current label]`.
+- Record "orthostatic hypotension addressed" after adding midodrine or droxidopa without a supine-BP check and without naming which dopaminergic, alpha-blocker or antihypertensive is contributing.
+- Describe the fluctuation type (end-of-dose wearing-off vs delayed-on vs unpredictable on–off) or its timing beyond what the input or motor diary states — each type has a different fix.
+- Write any step that stops levodopa abruptly (NPO, admission, "hold all PD meds") — abrupt withdrawal risks parkinsonism-hyperpyrexia; route NPO or peri-operative dosing to the clinician `[per facility protocol]`.
+
+✅ **DO:**
+- Rebuild the current regimen as a clock-time table (each dose, mg, relation to protein-heavy meals) and recompute total daily levodopa before and after the change; when an agonist, COMT or MAO-B inhibitor is added, state the levodopa-equivalent daily dose and the conversion source used `[VERIFY: LEDD table]`.
+- Check the DRUGS TO AVOID line against every route by which a dopamine blocker could reach the patient: PRN antiemetics, ED/inpatient order sets (metoclopramide, prochlorperazine, promethazine, haloperidol) and other prescribers' lists.
+- Before keeping or adding a dopamine agonist, look for an impulse-control screen in the input; if none, list the specific questions (gambling, spending, sexual behaviour, binge eating, punding) instead of writing "no ICD".
+
 ## Output Format
 
 ```
@@ -103,7 +129,7 @@ PITFALLS:
 DIAGNOSIS / STAGE / FLUCTUATIONS: PD 5 years, H-Y 3, wearing-off + mild peak-dose dyskinesia.
 
 MOTOR THERAPY:
-- Wearing-off: add a COMT inhibitor (opicapone 50 mg qhs or entacapone 200 mg with each levodopa dose) to extend each dose; and/or shorten interval to QID. Add rasagiline 1 mg as adjunct option.
+- Wearing-off: add a COMT inhibitor (opicapone 50 mg qhs or entacapone 200 mg with each levodopa dose) to extend each dose; and/or shorten interval to QID. Add rasagiline 1 mg as adjunct option. Peak-dose dyskinesia is already present, so if a COMT or MAO-B inhibitor is added, reduce each individual levodopa dose at the same time (amount per prescriber) — both prolong levodopa effect and can worsen dyskinesia.
 - Avoid adding a dopamine agonist — age 72 + cognitive complaints → high risk of hallucinations/impulse-control/orthostasis. Optimize levodopa-based therapy instead.
 - Peak dyskinesia: extended-release amantadine (also helps), and/or slightly reduce each levodopa dose while keeping frequency.
 

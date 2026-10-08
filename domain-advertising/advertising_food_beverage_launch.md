@@ -20,12 +20,12 @@ tags:
   - food
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Food & Beverage** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,22 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **The hero dish must be what the customer receives.** "Flavor and immediacy" pushes the model
+   toward heaped portions, extra toppings, garnish, and ingredients the item does not contain. List
+   the actual components and serving size from intake; if intake gave only "menu launch", ask.
+2. **Dietary and sourcing labels are product claims.** "Vegan", "gluten-free", "organic",
+   "keto", "no added sugar", and "locally sourced" get added as friendly badges; render each only
+   when intake states it.
+3. **Nutrition numbers never come from the model.** Calories, grams of protein, and caffeine
+   content are copied from the product's own data or omitted.
+4. **Price and timing lines are offers.** "$9.99 combo", "Today only", and "New on the menu
+   Friday" appear only as supplied; packaging text, flavour names included, is copied verbatim.
+5. **Verify before handing over:** compare the food described in the Final Image Prompt with the
+   intake component list item by item (nothing added, nothing upsized), then check that every
+   rendered string, on packaging and in headline slots alike, matches an intake answer exactly.
 
 ## Output Format
 

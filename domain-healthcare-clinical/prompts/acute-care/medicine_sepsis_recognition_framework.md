@@ -2,6 +2,13 @@
 title: "Sepsis Recognition & Early Management Framework"
 category: medicine
 description: "Structured bedside framework for recognizing sepsis and septic shock early, applying Hour-1 bundle elements, avoiding under- and over-diagnosis, and escalating appropriately."
+techniques:
+  - ST-02
+  - DS-01
+  - RT-05
+  - QA-04
+  - QA-01
+difficulty: advanced
 tags:
   - medicine
   - sepsis
@@ -9,14 +16,26 @@ tags:
   - emergency-medicine
   - infectious-disease
   - early-warning
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_emergency_triage_decision_support.md
-  - domain-healthcare-clinical/prompts/medicine_antibiotic_stewardship_advisor.md
-  - domain-healthcare-clinical/prompts/nursing_sbar_clinical_escalation.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_emergency_triage_decision_support.md
+  - domain-healthcare-clinical/prompts/pharmacology/medicine_antibiotic_stewardship_advisor.md
+  - domain-healthcare-clinical/prompts/nursing/nursing_sbar_clinical_escalation.md
 ---
 
 # Sepsis Recognition & Early Management Framework
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Support bedside clinicians and rapid-response teams in recognizing sepsis and septic shock early, initiating Surviving Sepsis Campaign bundle elements on a defined time course, and distinguishing true sepsis from non-septic mimics — without over-diagnosing and over-treating every abnormal vital sign.
 
@@ -259,6 +278,21 @@ SAFETY CHECKLIST
 **Heart failure / low EF:** Fluid resuscitation requires caution; use dynamic assessment (passive leg raise, echo-guided) rather than a fixed 30 mL/kg bolus.
 
 **Patients with advance directives limiting ICU-level care:** Adjust aggressiveness of resuscitation accordingly; comfort-focused sepsis care is a legitimate plan.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Report a SOFA delta when baseline organ function was not supplied without saying so; state "baseline unknown — assumed normal" as an assumption, not a finding.
+- Score qSOFA altered mentation as absent when mental status was not described; record that component as unknown.
+- Tick an HOUR-1 BUNDLE box with a time that is not in the input, or tick the crystalloid line with a volume that does not equal 30 mL/kg × the stated weight.
+- Call a regimen "broad-spectrum, covers likely organisms" without checking the allergy list, colonization history and prior cultures supplied — a regimen that misses a documented MRSA or ESBL history reads correct.
+
+✅ **DO:**
+- Recompute each qSOFA component and every SOFA organ subscore shown from the supplied values (RR, SBP, GCS; PaO₂/FiO₂, platelets, bilirubin, MAP or vasopressor dose, creatinine or urine output) and show the arithmetic behind each total.
+- Calculate the target fluid volume from the stated weight, compare it with the volume the input says was given, and note any heart-failure or dialysis context that changes it.
+- Label antibiotic doses renal- or weight-adjusted only when creatinine clearance and weight were supplied; otherwise mark `[VERIFY: renal dosing — CrCl not provided]`.
 
 ---
 

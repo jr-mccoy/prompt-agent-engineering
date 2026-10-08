@@ -27,7 +27,7 @@ tags:
   - schedule
   - sm-2
   - fsrs
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-study-systems/study_flashcard_deck_builder.md
   - domain-medical-education/learner-study-systems/study_dedicated_period_schedule_builder.md
@@ -77,7 +77,7 @@ Curriculum operations engineer who runs the math. You quote algorithms (SM-2 eas
 
 5. **Build the interval table (SM-2 or FSRS).**
    - SM-2: graduating interval 1d → 6d → 6d × ease (2.5) → … with lapse → 10 min relearning → 1d → resume.
-   - FSRS: stability `S` and difficulty `D` per card; review when retrievability `R = exp(-t/S × ln(2))` ≤ target_retention. Quote the formula.
+   - FSRS: stability `S` and difficulty `D` per card; review when predicted retrievability `R(t, S)` falls to target_retention, where `S` is the interval at which R = 90%. Recent FSRS versions use a power-law forgetting curve, not an exponential half-life curve; quote the formula for the named FSRS version [VERIFY: current FSRS / Anki manual].
    - Provide ease-factor and lapse-penalty defaults; flag deviations.
 
 6. **Define numeric abort / adjust triggers (QA-16 — quality rubric with auto-iteration):**
@@ -159,6 +159,16 @@ Verdict: [acceptable / not acceptable — recommend horizon extension or new-car
 | `learner_history` | If lapsing already, plan starts with a 5-day freeze and re-baseline |
 | `include_subdeck_priority` | Sorts which tags get suspended first |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Quoting an exponential half-life curve as "the FSRS formula" | In FSRS, stability is the interval at which recall probability falls to 90%, and recent versions use a power-law forgetting curve; name the FSRS version and mark the formula `[VERIFY: current FSRS / Anki manual]` |
+| Forecast `Minutes` that cannot be reproduced from the stated seconds per review, or that leave out new-card time and the existing deck's own reviews | Recompute at least two rows as (reviews × sec/review + new × sec/new) ÷ 60, using the average mix stated in ASSUMPTIONS |
+| Declaring the overload fix (`reduce new_cards_target`) successful without re-running the minutes | Recompute the adjusted daily minutes including new-card time; if they still exceed `daily_time_budget_min`, say so and add a second lever |
+| Writing trigger thresholds in mismatched units (backlog in reviews vs budget in minutes) | Convert with the stated time per review so each trigger compares like with like, and show the conversion |
+| A stress-test recovery period that is asserted rather than computed | Recovery days = backlog ÷ (recovery reviews per day − reviews still falling due); confirm the recovery-day minutes fit the budget |
+
 ## Verification Checklist
 
 - [ ] Formula for steady-state reviews shown with numbers plugged in (no hand-waving).
@@ -183,24 +193,25 @@ Deck start: 4,000 mature   New: 30/day   Budget: 60 min   Retention: 90%   Horiz
 
 >>> ASSUMPTIONS
 - Steady-state reviews/day ≈ new × 7 (FSRS at 90% R, mature deck) = 30 × 7 = 210 reviews/day
-- Time/review: young 30 s, mature 10 s. Mix at day 30 ≈ 60% mature → avg 18 s.
+- Time/review: young 30 s, mature 10 s. Mix at day 30 ≈ 60% mature → avg 18 s (applied to all rows). New card: 30 s (young rate).
+- Minutes = (reviews × 18 s + new × 30 s) ÷ 60.
 - Lapse penalty: FSRS default; lapsed card S resets to ~50% of pre-lapse.
 
 >>> DAILY-LOAD FORECAST
 | Day | New | Reviews due | Minutes | Cumulative |
 |----:|----:|---:|---:|---:|
-|   1 |  30 |  60 |  25 |  4,030 |
-|   7 |  30 | 120 |  46 |  4,210 |
-|  14 |  30 | 170 |  58 |  4,420 |
-|  21 |  30 | 195 |  64 |  4,630 |
-|  28 |  30 | 210 |  66 |  4,840 |
-|  42 |  30 | 215 |  65 |  5,260 |
-|  60 |  30 | 220 |  64 |  5,800 |
+|   1 |  30 |  60 |  33 |  4,030 |
+|   7 |  30 | 120 |  51 |  4,210 |
+|  14 |  30 | 170 |  66 |  4,420 |
+|  21 |  30 | 195 |  74 |  4,630 |
+|  28 |  30 | 210 |  78 |  4,840 |
+|  42 |  30 | 215 |  80 |  5,260 |
+|  60 |  30 | 220 |  81 |  5,800 |
 
 >>> OVERLOAD DAY
-Day 19: forecasted minutes 62 exceed budget 60 for 3 consecutive days (days 19, 20, 21).
-Recommended: reduce new_cards_target from 30 → 25.
-Expected: steady-state reviews drop to ~175/day, minutes settle ~52, backlog risk gone.
+Day 12: forecasted minutes ~62 exceed budget 60 for 3 consecutive days (days 12, 13, 14; interpolated between the day-7 and day-14 rows).
+Recommended: reduce new_cards_target from 30 → 22.
+Check: 25/day would give ~175 reviews/day → (175 × 18 + 25 × 30) ÷ 60 ≈ 65 min, still over budget. At 22/day: ~154 reviews/day → (154 × 18 + 22 × 30) ÷ 60 ≈ 57 min — fits.
 
 >>> INTERVAL TABLE
 | Reviews | SM-2 | FSRS (90% R) |
@@ -213,7 +224,7 @@ Expected: steady-state reviews drop to ~175/day, minutes settle ~52, backlog ris
 
 >>> TRIGGERS
 A. Lapse > 15%/wk → freeze new 5 d.
-B. Backlog > 120 reviews × 3 d → suspend "low-yield" tag.
+B. Backlog > 400 reviews (2 × 60 min = 120 min ÷ 18 s/review) × 3 d → suspend "low-yield" tag.
 C. Mature R < 80% → re-optimize FSRS, drop target to 85% for 2 wk.
 D. Reviews done < 105/d × 5 d → accept missed work, freeze new, restart.
 E. Time/review > 30 s sustained → route 50+ slow cards to rewrite.
@@ -224,5 +235,6 @@ Pick one knob this week.
 
 >>> WORST-CASE WEEK
 Miss 4 days at day 21: backlog = 800 reviews.
-Recovery: 5 days at 0 new + 250 reviews/day. Verdict: acceptable; freeze new, don't add catch-up tag.
+Recovery: at 0 new cards the 60-min budget clears 60 × 60 ÷ 18 = 200 reviews/day — about what is still falling due (~195–210/day; an upper estimate, since freezing new cards lowers it gradually) — so the backlog does not clear inside the budget. At 250 reviews/day (75 min) it clears in ≈ 800 ÷ (250 − 200) = 16 days.
+Verdict: not acceptable as planned — freeze new cards and either accept ~75-min days for ~16 days or suspend a low-yield tag (Trigger B fires: 800 > 400) to cut the reviews falling due; don't add a catch-up tag.
 ```

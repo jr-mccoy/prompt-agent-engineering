@@ -15,8 +15,20 @@ tags:
   - diabetes
   - care-plan
   - chronic-disease
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -55,6 +67,20 @@ Endocrinologist or primary care attending managing T2DM longitudinally, writing 
 7. **Complication surveillance bundle:** annual dilated retinal exam, annual UACR + eGFR, monofilament foot exam each visit, lipid panel, BP target <130/80, statin per ASCVD risk, ACEi/ARB if albuminuric.
 
 8. **Lifestyle and vaccines:** MNT referral, ≥150 min/week activity, smoking cessation; pneumococcal, annual influenza, hepatitis B, COVID per schedule.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Label CKD from one eGFR or one UACR — both need persistence (>3 months); report the KDIGO G and A categories together (eGFR 52 + UACR 340 mg/g = G3a/A3) rather than "CKD" alone.
+- Add a GLP-1 RA or tirzepatide without checking for personal/family medullary thyroid carcinoma or MEN2, prior pancreatitis, and current retinopathy grade (rapid A1c lowering with semaglutide has been linked to retinopathy worsening).
+- Add an SGLT2i without checking for prior DKA, a very-low-carbohydrate diet, or features of insulin deficiency (LADA, pancreatogenic diabetes) — the euglycaemic-DKA counselling line is not the same as screening for it.
+- Present the "expected A1c drop" of a combination as a sum of single-agent effects; SGLT2i glycaemic effect shrinks as eGFR falls, so label the figure an estimate.
+- Leave the metformin dose unchanged across an eGFR band change; state the band and the label action for it `[VERIFY: metformin label]`.
+
+✅ **DO:**
+- Trace each organ-protective agent to the input finding that triggers it (the dated ASCVD event, HF type and EF, eGFR and UACR values), and each eGFR-dependent line (metformin, SGLT2i initiation, sulfonylurea, finerenone) to the current eGFR with its date.
+- Check the visit-by-visit schedule against each titration interval: no GLP-1 RA step sooner than the label interval, and the BMP after SGLT2i/ACEi changes actually placed in a visit row.
+- When a sulfonylurea or insulin is reduced or stopped, write the expected glucose effect and the fingerstick/CGM check that will catch a rebound.
 
 ## Output Format
 

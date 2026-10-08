@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept a win rate that is not wins ÷ (wins + losses), or that silently counts no-decisions as losses.
+- Let the model invent competitor names, loss reasons or deal counts.
+- Accept rows where wins + losses do not equal the deal count shown for that segment or competitor.
+- Colour a 100% win rate green on n = 2 with no sample size printed.
+
+✅ **DO:**
+- Recompute each row's win rate from its counts, and sum the rows to the totals.
+- Print n in each cell and flag any cell below the intake's minimum sample.
+- Take competitor names and reason labels from the intake only; an uncoded reason renders as "[reason not coded]".
+- Check the headline's top loss reason against the reason counts.

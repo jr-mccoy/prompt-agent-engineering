@@ -22,7 +22,7 @@ tags:
   - multi-source-feedback
   - rater-group
   - workplace-based-assessment
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-rubrics-wba/assess_minicex_rubric_author.md
   - domain-medical-education/educator-rubrics-wba/assess_narrative_rating_anchor_writer.md
@@ -183,7 +183,7 @@ Narrative (optional): "Anything else you'd like to share?"
 - Narrative comments released only when ≥ N respondents in group.
 - Identifying language paraphrased before release (e.g., "the night-float nurse on cards last month" → "a colleague during night shift").
 - Aggregation lag ≥ 6 weeks after last response.
-- Patient and family responses released only if total responses ≥ 8 and ≥ 10 respectively.
+- Patient and family numeric summaries released only if responses ≥ 8 and ≥ 5 respectively; narrative comments only at ≥ 10 and ≥ 8 (the RATER-GROUP MAP values).
 
 >>> BIAS GUARDS
 - No demographic items from raters that could enable re-identification.
@@ -220,6 +220,16 @@ Replaced with: patient form focuses on communication, listening, respect, plain 
 | `minimum_raters_per_group` | Adjustable to program size; lower thresholds increase risk of identification |
 | `language_versions` | Patient form translated; cultural review for each |
 | `include_open_text_only_option` | Some programs want narrative-only feedback from certain groups (e.g., allied health) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Per-group thresholds that differ between the RATER-GROUP MAP, the inputs, and the ANONYMITY PROTOCOL (for instance, a family minimum of 5 in the map but a different family release number in the protocol) | Build one threshold table and copy from it: for every rater group, the minimum-rater number and the narrative-release number must be identical wherever they appear, and narrative-release ≥ minimum-rater |
+| An item that sits under a vantage-appropriate domain label but asks for something that group cannot witness (e.g., a pharmacist rating whether the learner "double-checks high-risk dosing without prompting") | For each item, name the interaction in which that rater group would see the behavior; if you cannot name one, reword to what they do see ("asks me to verify high-risk doses before ordering") or move the item to a group that can |
+| Asserting the patient form is "≤ 6th-grade reading level" because the items look short | Run a readability formula (e.g., Flesch-Kincaid grade) on the patient and family item text and report the computed grade beside the form; revise any item that pushes it over the target |
+| Aggregation that averages N/A responses as low scores, or folds the self-rating into the group means | Report per-item n alongside each mean, exclude N/A from the denominator, and show self-ratings as a separate column compared against others' ratings |
+| Citing a source for minimum-rater thresholds whose recommended numbers the form does not use (e.g., a review cited for "8–25 raters" beside faculty ≥ 4), or marking "Bias guards" done because the bullet text is present | Either align the thresholds to the cited range or label them "program decision (feasibility) — below published recommendation"; for the bias audit, list the items actually reworded, or state "audit pending before deployment" |
 
 ## Verification Checklist
 

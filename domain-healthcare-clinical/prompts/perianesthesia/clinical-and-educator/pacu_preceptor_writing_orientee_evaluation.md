@@ -19,13 +19,13 @@ techniques:
   - DS-06
 difficulty: advanced
 related_prompts:
-  - prompts/pacu_orientee_evaluation_meta_prompt.md
-  - prompts/pacu_preceptor_approach_guide.md
-  - prompts/pacu_peer_preceptor_360_feedback.md
-  - prompts/pacu_preceptor_calibration_facilitator.md
-  - prompts/pacu_orientee_remediation_plan.md
-  - prompts/pacu_competency_self_assessment.md
-  - prompts/pacu_preceptor_difficult_conversation_guide.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_approach_guide.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_peer_preceptor_360_feedback.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_calibration_facilitator.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_remediation_plan.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_competency_self_assessment.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_difficult_conversation_guide.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - Drain's PeriAnesthesia Nursing Practice (7th ed.)

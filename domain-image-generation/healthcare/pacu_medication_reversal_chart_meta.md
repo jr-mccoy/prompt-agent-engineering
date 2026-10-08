@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-04-14"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -95,3 +104,18 @@ VALIDATION CHECKLIST (must pass before returning):
 
 - Pediatric version — same structure, add Weight-Based footer ("all peds doses are weight-based, per order") and flag succinylcholine additional peds cautions.
 - Sugammadex-only facility version — simplify Row 3 to single reversal agent and expand Watch-For to include residual block if sugammadex dose is insufficient per TOF.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Clear checklist item 3 by scanning only for mg, mcg and mL — a dose or timing can also surface as a bare decimal, a per-kg figure, a repeat interval or a duration of action, all of which the SAFETY_PREAMBLE bans.
+- Accept a Watch For cell that lost its resedation or recurarization line to fit the row; the preamble requires duration-mismatch risk on reversal material, and a tidy row without it passes every layout check.
+- Accept agents or pairings the prompt did not list — a rescue drug added to the succinylcholine row, or sugammadex shown against a non-steroidal NMBA once the "(steroidal NMBAs)" qualifier is cut.
+- Let "per source" in the etomidate cell be "resolved" into an author, year or guideline name the model made up.
+
+✅ **DO:**
+- Transcribe all 24 cells (6 rows × 4 columns) from the rendered poster and diff them against the ROW 1–6 text; any added drug, pairing or figure fails the poster even if the layout passes.
+- Search the full canvas, subtitle and footer included, for numerals — the row text contains none, so the poster should contain none.
+- Have a pharmacist or anesthesia provider review pairings and watch-fors against the facility formulary before posting; record reviewer and date on the print file.

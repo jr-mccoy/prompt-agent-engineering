@@ -26,7 +26,7 @@ tags:
   - question-explanation
   - active-recall
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_usmle_step1_concept_drill.md
   - domain-medical-education/learner-boards/boards_usmle_step2ck_vignette_drill.md
@@ -145,6 +145,16 @@ Note: [...]
 | `batch_mode` | Accept 5 items at once and produce a consolidated teardown |
 | `paste_explanation_critique` | If learner pastes UWorld/USMLE-Rx explanation, critique it for accuracy |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Inferring the key when `correct_answer` is missing and stating it with the same certainty as a supplied key — or silently overriding a supplied key | Solve the item blind before looking at `learner_answer`; if your key disagrees with the supplied one or hinges on a guideline threshold, say so on the Correct-answer line instead of quietly picking a side |
+| A "verbatim" discriminating fact stitched from several stem phrases, or with values reworded ("glucose 480" for "glucose 480 mg/dL") | String-match the quoted phrase against the echoed stem character for character; when the swing needs several data points, quote each one separately |
+| Distractor-walk thresholds recited from memory — bicarbonate pH cutoff, potassium floor before insulin, glucose level for adding dextrose — that the latest consensus may have moved | Tag each numeric threshold with its source and edition and check it against the guideline the exam currently follows [VERIFY: e.g., current ADA hyperglycemic-crises consensus]; if the key depends on a superseded threshold, flag the item as outdated |
+| Building the explanation on a derived lab (anion gap, corrected sodium, osmolality) taken on trust from the stem | Recompute the derived value from the stem's own numbers (e.g., AG = Na − (Cl + HCO3)) before naming it as discriminating |
+| Naming the failure mode (anchoring, knowledge gap) from the chosen letter alone | With only a letter, present the failure mode as a hypothesis and ask one question about the learner's reasoning; commit to a label once their reasoning is on the page |
+
 ## Verification Checklist
 
 - [ ] Question is echoed exactly as supplied; no rewriting.
@@ -181,12 +191,14 @@ DKA initial management sequence — fluids first, then insulin after potassium i
 
 >>> DISCRIMINATING FACT
 
-"glucose 480, bicarb 9, pH 7.18, anion gap 28, beta-hydroxybutyrate elevated, BP 105/70, HR 116, RR 28 with deep fast breathing" — this is DKA with significant volume depletion (tachycardia, normotensive on lower end). The first step is fluid resuscitation before insulin.
+Primary swing: "HR 116" and "BP 105/70" — volume depletion (tachycardia, normotensive on lower end). The first step is fluid resuscitation before insulin.
+
+Contributing (each quoted separately): "glucose 480 mg/dL", "bicarbonate 9", "anion gap 28", "beta-hydroxybutyrate elevated", "ABG pH 7.18", "RR 28 with deep, fast breathing" — these establish DKA; they do not by themselves decide the first step.
 
 >>> DISTRACTOR WALK
 
 A) SQ basal insulin (glargine) — wrong for acute DKA management; basal coverage is given later in the transition phase, not at presentation. Engineered trap is option C, not A.
-B) Bicarb IV push — wrong; current guidelines reserve bicarb for pH < 6.9, not 7.18. Premature intervention.
+B) Bicarb IV push — wrong; bicarb is reserved for severe acidemia below a guideline pH cutoff that 7.18 does not approach [VERIFY: pH cutoff in current ADA hyperglycemic-crises consensus]. Premature intervention.
 C) IV insulin infusion — *the engineered trap*. Insulin without prior fluid resuscitation worsens intracellular potassium shift in a volume-depleted patient and can drop K+ dangerously. Correct *second* step (after fluids and K+ check), not first.
 D) 0.9% NS IV bolus — correct. Fluid resuscitation comes first in DKA, especially with signs of volume depletion.
 
@@ -198,7 +210,7 @@ Failure mode: priority/sequence error. You knew insulin is part of DKA managemen
 
 >>> RESTUDY TARGET
 
-20–30 min on the DKA algorithm — specifically the *order* of interventions: NS bolus → check K+ → start insulin (once K+ ≥ 3.3) → add dextrose when glucose ~ 200 → transition. Resource: First Aid CK Endo / Online MedEd DKA video. Re-do this question in 3 days.
+20–30 min on the DKA algorithm — specifically the *order* of interventions: NS bolus → check K+ → start insulin (once K+ is above the guideline floor) → add dextrose when glucose falls to the guideline threshold → transition [VERIFY: potassium floor and dextrose threshold in current ADA hyperglycemic-crises consensus]. Resource: First Aid CK Endo / Online MedEd DKA video. Re-do this question in 3 days.
 
 >>> CONFIDENCE CALIBRATION
 

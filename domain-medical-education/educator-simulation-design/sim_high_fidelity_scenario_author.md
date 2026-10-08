@@ -23,7 +23,7 @@ tags:
   - state-based-design
   - scenario-flow
   - INACSL
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_low_fidelity_scenario_author.md
   - domain-medical-education/educator-simulation-design/sim_vital_sign_trajectory_designer.md
@@ -141,6 +141,16 @@ Considered: [a state transition that violated determinism, or an unsafe shortcut
 | `difficulty` | Harder = faster deterioration timers, a distractor confederate, an ambiguous early presentation |
 | `manikin_capability` | Hybrid/standardized-patient shifts some physiology to confederate report |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A DETERMINISM GUARD line that says "Confirmed" while an exit trigger lets a correct action advance the patient into a worse state (for instance, "time +2 min OR learner verbalizes anaphylaxis concern → State 2 shock") | Trace every exit trigger, not just the anticipated errors: for each state, list each named action and timer with its destination state; any correct action whose destination is a worse state is a violation — rewrite it to the timer alone or to a branch where the correct action slows progression |
+| State snapshots that drop parameters or move them independently (RR or T missing from State 3; HR, BP, and SpO2 changing in directions the mechanism does not produce) | Fill every vital in every state, then read each parameter across states against the mechanism and the treatment just given — e.g., after IM epinephrine plus fluids, HR and BP should change together toward baseline; an unexplained jump is either justified in a note or corrected |
+| State timers and expected-action windows that cannot fit the stated `duration` once the deterioration branch runs | Add the timers along the longest path (start → miss state) and the shortest path (start → resolution) and confirm both end inside `duration` with time left for the expected actions in each state |
+| Manikin programming notes that call for signs the chosen `manikin_capability` cannot produce (stridor sounds, skin color change, urticaria on a mid-tier model) | Check each programmed sign against the stated capability; anything it cannot render moves to moulage or a confederate report line, and the cue's timing is written into that confederate's script |
+| Doses and protocol steps in objectives and states (epinephrine dose and site, repeat interval) entered from memory and audited as "verified" | Each dose or step cites the current edition of the named guideline `[VERIFY: current WAO / national anaphylaxis guideline edition]`; the source-fidelity row stays `[verify before use]` until checked |
+
 ## Verification Checklist
 
 - [ ] 3–5 objectives, each tagged clinical/CRM and tied to an observable state moment.
@@ -176,11 +186,11 @@ STATE 1 — Early reaction
   Entry: scenario start (tech reports "rash starting").
   Expected: recognize evolving reaction, stop contrast, assess ABCs, call RN, get help.
   Errors → consequence: treats as "just hives," gives only antihistamine → progresses to State 2 regardless (antihistamine does not halt anaphylaxis).
-  Exit: time +2 min OR learner verbalizes anaphylaxis concern → State 2.
+  Exit: time +2 min without IM epinephrine → State 2; IM epinephrine given in State 1 → State 3 (early treatment is rewarded, never punished).
 
 STATE 2 — Anaphylactic shock
   Physiology: HR 124 / BP 78/40 / RR 26 / SpO2 90% / audible wheeze, stridor onset.
-  Entry: progression from State 1.
+  Entry: State 1 timer expired without epinephrine.
   Expected: IM epinephrine 0.3–0.5 mg lateral thigh, high-flow O2, supine + legs up, IV crystalloid bolus, reassess.
   Errors → consequence: IV push epi at IM dose, or antihistamine/steroid only → no improvement, continued deterioration toward State 4.
   Exit: IM epi given + fluids started → State 3 (improving); no epi by +4 min → State 4 (peri-arrest).

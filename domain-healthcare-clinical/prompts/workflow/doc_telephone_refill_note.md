@@ -14,8 +14,20 @@ tags:
   - telephone-encounter
   - refill
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -53,6 +65,19 @@ The clinician handling and documenting the asynchronous encounter.
 
 8. **Keep it concise but complete** — every element that makes the decision safe and auditable, nothing more.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Turn "no symptoms" into specific negatives ("no dizziness, cough or edema") — each named negative claims a question was asked.
+- Supply frequency, quantity, refill count or pharmacy that the request did not state.
+- Present safety-net thresholds ("call if home BP > 150/90") as standard values; they are the clinician's choice — `[threshold per clinician]`.
+- Call monitoring "current" because a lab exists, without comparing its date with the interval required for that drug.
+
+✅ **DO:**
+- Compute elapsed time from today's date — months since the last visit and since each monitoring lab — and write the number, not just "overdue".
+- Check that the bridge supply lasts until the scheduled lab draw and visit (supply days ≥ days to follow-up); for a controlled substance, compute last fill date + days supplied vs today and record the PDMP check date or that it was not done.
+- Confirm the allergy list and current medication list were in DATA REVIEWED before an approval is documented.
+
 ## Output Format
 
 ```
@@ -78,7 +103,7 @@ FOLLOW-UP & SAFETY NET:
 
 ## Worked Example
 
-**Input:** Pharmacy refill request for atorvastatin 40 mg and lisinopril 20 mg. Patient is a 61 y/o M with HTN and hyperlipidemia. Chart: last seen 14 months ago; last lipid panel and CMP 14 months ago; last BP at that visit 132/80. No labs since. Patient reached by phone, feeling well, no symptoms, checks home BP averaging 130s/80s.
+**Input:** Pharmacy refill request for atorvastatin 40 mg daily and lisinopril 20 mg daily. Patient is a 61 y/o M with HTN and hyperlipidemia. Chart: last seen 14 months ago; last lipid panel and CMP 14 months ago; last BP at that visit 132/80. No labs since. Allergy list: NKDA; medication list: atorvastatin and lisinopril only. Patient reached by phone, feeling well, no symptoms, checks home BP averaging 130s/80s.
 
 **Output:**
 
@@ -91,11 +116,11 @@ REASON: Refill requests for atorvastatin 40 mg daily and lisinopril 20 mg daily.
 
 DATA REVIEWED:
 - Last seen: 14 months ago. Last lipid panel and CMP (including K and Cr): 14 months ago. No labs since — monitoring overdue.
-- Last office BP 132/80; patient reports home BP averaging 130s/80s, feeling well, no symptoms (no dizziness, cough, or edema).
-- Current relevant meds: atorvastatin 40 mg, lisinopril 20 mg.
+- Last office BP 132/80; patient reports home BP averaging 130s/80s, feeling well, no symptoms.
+- Current relevant meds: atorvastatin 40 mg daily, lisinopril 20 mg daily (only medications on list). Allergies: NKDA.
 
 ASSESSMENT/DECISION:
-- Patient stable and asymptomatic but overdue for an office visit and routine monitoring (lipids, CMP for K/Cr on an ACE inhibitor) by >12 months. Not appropriate to continue indefinite refills without monitoring, but a gap in therapy is also undesirable for BP and lipid control. Decision: approve a short bridge and require labs + visit before further refills.
+- Patient stable and asymptomatic but overdue for an office visit and routine monitoring (lipids, CMP for K/Cr on an ACE inhibitor) — 14 months since the last visit and the last labs. Not appropriate to continue indefinite refills without monitoring, but a gap in therapy is also undesirable for BP and lipid control. Decision: approve a short bridge and require labs + visit before further refills.
 
 ACTION TAKEN:
 - Approved a 30-day supply of atorvastatin 40 mg and lisinopril 20 mg (no further refills) to [pharmacy].
@@ -104,5 +129,5 @@ ACTION TAKEN:
 
 FOLLOW-UP & SAFETY NET:
 - Patient advised to complete labs and attend the follow-up visit to continue medications beyond the 30-day bridge.
-- Advised to call sooner for dizziness, lightheadedness, new cough, leg swelling, or home BP readings persistently >150/90 or <100 systolic with symptoms.
+- Advised to call sooner for dizziness, lightheadedness, new cough, leg swelling, or home BP readings persistently above or below [threshold per clinician].
 ```

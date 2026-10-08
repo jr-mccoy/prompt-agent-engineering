@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept a GO verdict while any gate the intake marks as blocking is red or amber.
+- Let the model default gates to green, or invent sign-off names and dates.
+- Accept test pass rates, open-bug counts or coverage percentages the user did not report.
+- Trust a "11/12 gates passed" summary without counting the grid.
+
+✅ **DO:**
+- Count gates by status, match the count to the summary, and apply the intake's go/no-go rule mechanically to set the verdict.
+- Check each status colour against the intake; a gate with no reported status renders grey as "[status not reported]", never green.
+- Check the release name, version and target date match the intake exactly.
+- Take gate owners from the intake only.

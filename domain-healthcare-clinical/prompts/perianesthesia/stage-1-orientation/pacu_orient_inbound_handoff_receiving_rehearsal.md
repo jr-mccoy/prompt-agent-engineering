@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, RT-02, DS-06, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_shift_structure_card.md
   - pacu_orient_recovery_one_liner_drill.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Receiving the Inbound Anesthesia Handoff — Rehearsal
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A communication rehearsal, not live clinical decision support. Confirm real handoff details with the giving provider and your preceptor.
 
@@ -44,7 +57,7 @@ You play the giving provider delivering a handoff (sometimes complete, sometimes
 
 - `case_type` (optional): drives the handoff content the learner receives.
 - `gap_mode` (default `on`): inject one missing/ambiguous element for the learner to catch.
-- `structure` (default I-PASS-style; accept the learner's facility framework if pasted).
+- `structure` (default: the structured anesthesia-to-PACU sequence in Method step 1; accept the learner's facility framework, e.g. I-PASS, if pasted).
 
 ## Method
 
@@ -88,6 +101,19 @@ One coaching point: [...]
 | `gap_mode` | Off for confidence-building; on to train gap-catching |
 | `case_type` | Tailor to the unit's real surgical mix |
 | `speed` | `deliberate` vs. `rushed` (train listening under a hurried handoff) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Credit `Read-back complete: Y` when the learner echoed the provider fluently but skipped one of the four safety-critical items (airway plan, allergies per record, lines/drains, watch-item).
+- With `gap_mode = on`, inject the gap and then let the provider script answer it later in the same handoff — `Gap caught` then scores Y without the learner having asked.
+- Treat "reversal given" or "no allergies noted" as closed items when the learner never asked the timing or confirmed the source; *mentioned* is not *confirmed*.
+- Accept a watch-item that fits any PACU patient ("watch vitals", "watch the airway") without a link to this case's anesthetic type, procedure, or what was given.
+
+✅ **DO:**
+- After each round, write down which element was deliberately withheld and check the `GAP CHECK` line names that same element; catching a different, reasonable gap is still a miss on the injected one.
+- Verify `FIRST ACTIONS` follow from the stated watch-item (an airway watch → suction, O2 source, positioning ready) rather than a default arrival checklist.
+- In `rushed` speed, confirm the narrative shows the gap question asked while the provider is still at the bedside, not reconstructed afterward.
 
 ## Verification Checklist
 

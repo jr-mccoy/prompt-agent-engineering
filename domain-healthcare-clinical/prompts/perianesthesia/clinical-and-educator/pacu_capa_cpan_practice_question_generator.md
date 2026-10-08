@@ -20,8 +20,8 @@ techniques:
   - DS-06
 difficulty: advanced
 related_prompts:
-  - prompts/pacu_capa_cpan_blueprint_aligned_study_plan.md
-  - prompts/pacu_capa_cpan_weak_area_diagnostic.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_blueprint_aligned_study_plan.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_capa_cpan_weak_area_diagnostic.md
 references:
   - ABPANC official exam blueprint (current edition — user pastes in domains)
   - ASPAN Core Curriculum for PeriAnesthesia Nursing Practice

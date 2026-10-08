@@ -23,7 +23,7 @@ tags:
   - high-yield
   - nbme-style
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_usmle_step2ck_vignette_drill.md
   - domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md
@@ -143,6 +143,16 @@ Most testable feature on this topic: [...]
 | `force_neighbor_topic` | Override default distractor neighbors |
 | `include_vignette` | If `false`, output ends at six-angle block |
 | `bilingual_glossary` | Append 5 terms in another language for IMG context |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| An Angle 5 swing feature that is also true of the neighbor (both are A-B exotoxins, both ADP-ribosylate) and so cannot separate them | For each neighbor, state the swing feature and confirm it is absent or opposite in that neighbor; if only the clinical context differs, name context as the swing |
+| A vignette that repeats the Angle 4 buzzwords word for word, so a mechanism question is answered by matching phrases rather than reasoning | Write the stem one step removed from the buzzword list (describe the finding rather than naming it) and check that answering needs the core fact, not recognition of a phrase printed above |
+| `paired`-style mnemonics or analogies that encode a wrong link (a letter mapped to the wrong toxin target or G-protein) | Decode each mnemonic back into its facts and compare every fact with Angles 1–6; drop any mnemonic with a letter that does not map |
+| Angle 6 lab or culture details listed from memory (colony color, hemolysis pattern, test names) that read right but are inaccurate | Limit Angle 6 to the clue a standard Step 1 review source states and mark anything else `[VERIFY: source]` |
+| Assuming a topic or emphasis is tested without checking the outline | Confirm the topic sits in the current outline [VERIFY: current USMLE Step 1 Content Outline and specifications], then answer the vignette blind and write one elimination reason per distractor; ship it only if exactly one option survives |
 
 ## Verification Checklist
 

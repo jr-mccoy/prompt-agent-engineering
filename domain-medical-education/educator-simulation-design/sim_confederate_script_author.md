@@ -21,11 +21,11 @@ tags:
   - embedded-participant
   - standardized-role
   - scenario-design
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md
   - domain-medical-education/educator-simulation-design/sim_multidisciplinary_team_scenario.md
-  - domain-medical-education/educator-osce-sp-design/osce_sp_scenario_author.md
+  - domain-medical-education/educator-case-writing/case_standardized_patient_author.md
 ---
 
 ## Objective
@@ -114,6 +114,16 @@ Considered: [a "gotcha" line or an answer-giving rescue] — Rejected: [reason] 
 | `affect` | Anxious / angry / withdrawn / calm changes default lines and cue thresholds |
 | `add_phone_role` | Converts to a telephone consultant with a will-agree/won't-agree decision tree |
 | `language` | Adds an interpreter-mediated variant with release timing through the interpreter |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Classifying a fact as never-reveal (or burying it behind one exact trigger question) when a `learner_objectives_touched` item cannot be met without it — the matrix looks controlled but the objective is unreachable | For each objective touched, list the held facts the learner needs to meet it and confirm each is volunteered or only-on-ask; for every only-on-ask fact, write 2–3 alternative learner phrasings that also release it so the confederate does not withhold on wording |
+| Standardized or holding lines that state clinical facts not in `held_information` (a vital sign, a medication, a timeline detail) because they make the line sound realistic | Trace every clinical fact in every line — not just the matrix rows — back to `held_information` or the scenario's state sheet, and match numbers and timings exactly; delete or rewrite any line with no source |
+| An escalation cue table whose "Probes objective" column names objectives the confederate was never given (e.g., "situation awareness" when the inputs list only history-gathering and empathy) | Each cue row cites an objective copied from `learner_objectives_touched`; a cue with no matching objective is removed or the objective list is amended explicitly |
+| De-escalation triggers left to the actor's judgment ("gives empathic acknowledgment"), so two confederates respond differently to the same learner | Give one verbatim example that counts and one near-miss that does not (e.g., "I understand" said while typing vs. eye contact plus naming the worry), so the response is repeatable across actors |
+| Marking the FIDELITY AUDIT "verified" against a source-of-truth sheet that was never supplied | Status stays "pending — scenario sheet not provided" until the sheet exists; list each fact the confederate may state as its own audit row |
 
 ## Verification Checklist
 

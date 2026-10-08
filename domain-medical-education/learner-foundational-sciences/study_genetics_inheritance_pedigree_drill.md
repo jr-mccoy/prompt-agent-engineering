@@ -24,7 +24,7 @@ tags:
   - recurrence-risk
   - bayesian
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_biochem_pathway_clinical_correlation.md
   - domain-medical-education/learner-foundational-sciences/study_embryology_developmental_defect_mapper.md
@@ -87,7 +87,7 @@ Learner level: [...]   Bayesian: [yes/no]   Consanguinity: [yes/no]
 Legend: I = generation 1, etc. ■/● = affected male/female; □/○ = unaffected; (c) = known carrier.
 
 Pedigree:
-I-1 □  =  I-2 ○ (c)
+I-1 □ (c)  =  I-2 ○ (c)
                 |
 II-1 ●   II-2 □   II-3 ○   II-4 ■
 
@@ -97,7 +97,7 @@ Grade: [...]
 
 Q2: II-3 marries an unrelated, unaffected man (general population carrier frequency 1/50). What is the recurrence risk for their first child?
 > [learner]
-Grade: [...]    Work expected: II-3 carrier prob = 2/3 (given unaffected from carrier × non-carrier? actually from AR mating Aa × aa? — show work] → joint risk = ...
+Grade: [...]    Work expected: II-3 carrier prob = 2/3 (unaffected child of Aa × Aa) × partner carrier prob 1/50 × 1/4 (affected if both carriers) → 1/300
 
 Q3: Name a disease consistent.
 > [learner]
@@ -107,13 +107,13 @@ Grade: [...]
 
 Pedigree: ...
 
-Q (Bayesian): Mother's brother had Duchenne. Mother is the only daughter. She has had 3 unaffected sons. What is her posterior carrier probability?
+Q (Bayesian): Mother's brother had Duchenne; her own mother (maternal grandmother) is an obligate carrier (she also has an affected brother). Mother is the only daughter. She has had 3 unaffected sons. What is her posterior carrier probability?
 > [learner]
 Grade — expected work:
-  Prior carrier prob (mother of affected brother): 2/3 (her mother is obligate carrier; mother got X from mom; 50/50 each from grandmother, but conditioned on having an affected brother and assuming grandmother is obligate carrier — refine).
+  Prior carrier prob (daughter of an obligate carrier): 1/2 (she received one of her mother's two X chromosomes).
   Likelihood 3 unaffected sons | carrier = (1/2)^3 = 1/8
   Likelihood 3 unaffected sons | not carrier = 1
-  Posterior odds = (2/3 × 1/8) : (1/3 × 1) = 1/12 : 1/3 = 1 : 4 → posterior carrier prob ≈ 1/5 (0.20).
+  Posterior odds = (1/2 × 1/8) : (1/2 × 1) = 1/16 : 1/2 = 1 : 8 → posterior carrier prob = 1/9 (≈ 0.111).
 
 >>> CASE 3 ... (ambiguous, NE-04)
 
@@ -137,6 +137,16 @@ Highest-yield restudy: [the axis the learner is weakest on]
 | `include_uncertain_paternity` | Adds the question "what would alter your interpretation?" |
 | `include_mitochondrial` | Adds a case showing maternal-only transmission |
 | `include_anticipation` | Adds a trinucleotide repeat expansion case (HD, fragile X, myotonic dystrophy) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Question premises that contradict the drawn pedigree (an individual drawn ● and later called ■; asking about mtDNA transmission through a daughter of an affected father) | Before posing Q1–Q3, read each individual's sex and affected status off the drawing and check every question's premise against it |
+| Asserting a Bayesian prior (2/3 vs. 1/2) that does not match the grandmother's stated carrier status | Derive the prior from the drawn relatives, then recompute prior × conditional → joint → normalized posterior, and confirm the fraction and decimal agree (e.g., 1/9 ≈ 0.111) |
+| Labeling a woman an obligate carrier because she has one affected son | Reserve "obligate" for pedigree proof (two affected sons, or an affected son plus an affected maternal relative); otherwise compute her carrier risk and note the new-mutation possibility |
+| Accepting a final fraction within ±5% when the shown work contains offsetting errors | Grade each line of work; a right number reached through a wrong conditional probability is `partial`, not `correct` |
+| Using disease incidence as the partner's carrier frequency | When the input gives incidence (q²), derive carrier frequency ≈ 2q and show the Hardy-Weinberg step before multiplying |
 
 ## Verification Checklist
 
@@ -187,7 +197,7 @@ Grade: correct.
 
 >>> CASE 2 (X-linked recessive, Bayesian)
 
-Maternal grandmother is obligate carrier (had affected son with Duchenne).
+Maternal grandmother is an obligate carrier (she has an affected son with Duchenne and an affected brother).
 Consultand's mother (proband's mother) is sister of affected uncle; mother of proband has 3 unaffected sons.
 
 Q (Bayesian): What is the proband's mother's posterior carrier risk?
@@ -202,9 +212,9 @@ Grade: correct (≈ 0.111).
 
 I-1 □  =  I-2 ●
               |
-II-1 ●  II-2 ●  II-3 ●
+II-1 ■  II-2 ●  II-3 ●
 
-II-1 ■  =  II-2-spouse ○
+II-1 ■  =  II-4 ○ (married in)
               |
 III-1 □  III-2 ○  III-3 □
 
@@ -212,7 +222,7 @@ Q1: Pattern, with one distinguishing feature?
 > "Mitochondrial — affected mother transmits to all children; affected father (II-1) transmits to none of his children."
 Grade: correct.
 
-Q2: Recurrence risk for III-2's children if she is clinically affected?
+Q2: Recurrence risk for the children of II-2 (an affected woman)?
 > "Variable — heteroplasmy makes severity unpredictable, but all her children inherit the mitochondrial DNA. Effective recurrence: 100% inheritance, expressed severity uncertain."
 Grade: correct.
 

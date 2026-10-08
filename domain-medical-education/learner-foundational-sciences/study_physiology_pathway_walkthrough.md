@@ -22,7 +22,7 @@ tags:
   - pathway
   - mechanism
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md
   - domain-medical-education/learner-foundational-sciences/study_biochem_pathway_clinical_correlation.md
@@ -117,6 +117,16 @@ Uncertainty noted: [any step where the learner was clearly guessing — flag, do
 | `force_loop_closure` | If `true` (default), pathway must end with explicit feedback step |
 | `clinical_anchor` | Tie the perturbation to a specific clinical scenario (e.g., "post-hemorrhage hypotension") |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A chain summary that attaches a product to the wrong site (e.g., "AT-I (liver)" — the liver makes angiotensinogen; AT-I forms in plasma) | Check every parenthetical location in CHAIN SUMMARY against the transcript turn that established it |
+| A perturbed chain listing effects never drilled (↑ K, ↓ Na retention) as if co-built | Mark tutor-added links in the summary; only drilled steps count as learner-built |
+| `[escalating]` tags placed by feel | Annotate each grade with the running streak (e.g., "streak 2 → escalate") so the escalation rule can be audited line by line |
+| `correct` for an answer whose elements point in mixed directions (e.g., "afferent arteriole stretch" when the trigger is *reduced* stretch) | Grade the direction of every element; one wrong direction makes the grade `partial` |
+| `detailed` granularity (10–14 steps) satisfied by counting arrows in the summary | Count learner-answered steps in the transcript against the granularity range |
+
 ## Verification Checklist
 
 - [ ] Tutor asks *one* question per turn. Never two questions stacked.
@@ -147,13 +157,13 @@ Q: Which cells release renin, and in response to which three sensors?
 > "JG cells. Afferent arteriole stretch, macula densa, beta-1 sympathetic."
 Grade: correct.
 
-Q [escalating]: Renin converts angiotensinogen to which product, and what is the substrate?
+Q: Renin converts angiotensinogen to which product, and what is the substrate?
 > "Angiotensin I from angiotensinogen, which is made in the liver."
-Grade: correct.
+Grade: correct — streak 2 → escalate.
 
-Q: Which enzyme on which surface converts AT-I to AT-II, and what else does this enzyme degrade?
+Q [escalating]: Which enzyme on which surface converts AT-I to AT-II, and what else does this enzyme degrade?
 > "ACE on lung endothelium; also degrades bradykinin."
-Grade: correct — two correct in a row, escalate.
+Grade: correct — streak 3 → escalate.
 
 Q [deeper]: AT-II acts on which receptor subtype to mediate vasoconstriction, and what's the second messenger?
 > "AT1 receptor, Gq, IP3/DAG, increases intracellular calcium."
@@ -182,7 +192,7 @@ Q: What feedback signal *rises* when AT-II falls, and what is the lab consequenc
 Grade: correct.
 
 >>> CHAIN SUMMARY
-Canonical: ↓ perfusion → renin (JG) → AT-I (liver) → AT-II (ACE, lung) → AT1R-Gq → vasoconstriction + aldosterone (ZG) → Na/water retention; feedback via baroreceptor, macula densa, AT-II short loop.
+Canonical: ↓ perfusion → renin (JG) acts on angiotensinogen (liver) → AT-I (plasma) → AT-II (ACE, lung) → AT1R-Gq → vasoconstriction + aldosterone (ZG) → Na/water retention; feedback via baroreceptor, macula densa, AT-II short loop.
 Perturbed (ACEi): same upstream; AT-II ↓ → less vasoconstriction, less aldosterone → ↓ Na retention, ↑ K, possible ↑ Cr if efferent tone was AT-II-dependent; bradykinin ↑ → cough, angioedema.
 Marked corrections at step 1 (initial trigger).
 Uncertainty noted: none — clean run after the opening correction.

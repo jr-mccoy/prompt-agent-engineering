@@ -2,13 +2,23 @@
 title: "Pattern Recognition Worksheet Generator"
 category: education
 description: "Generate early-childhood pattern recognition worksheets with AB, AAB, and ABB visual sequences."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - early-childhood
   - patterns
   - logic
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Pattern Recognition Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 row labeled AAB because the label is right; the rendered sequence may read AABAB or break mid-unit, so the next item is ambiguous.
+- Let the A and B elements differ only by size or a small detail (two near-identical stars), which disappears on a photocopy.
+- Include two ZONE 4 options that both continue a valid pattern, such as the correct shape and the same shape at a different size.
+- Let the model fill the blank slot it was asked to leave empty, so the answer is printed on the page.
+
+✅ **DO:**
+- Transcribe each rendered row as letters (A, A, B, A, A, B, ___) from the image, not the prompt; confirm at least two full repeats appear before the blank and name the expected next item.
+- Confirm exactly one ZONE 4 option equals that expected item and every other option breaks the pattern.
+- Check the ZONE 2 completed example uses different pictures from every ZONE 3 row, so it models the method without printing a row's answer.

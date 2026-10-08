@@ -245,13 +245,13 @@ licensed CPA or tax professional for advice specific to your situation."
 
 | Field | Key Considerations | Sample Prompts |
 |-------|-------------------|----------------|
-| **Legal** | Jurisdiction matters, attorney review required, precise terminology | `domain_writing_attorney_discovery.md` |
+| **Legal** | Jurisdiction matters, attorney review required, precise terminology | `domain-legal/discovery/legal_discovery_response_objections.md` |
 | **Finance** | Not investment advice, individual circumstances vary, disclosures required | `domain_writing_financial_advisor_report.md`, `domain_writing_cpa_tax_strategy.md` |
 | **Trades/Construction** | Site conditions can change estimates, permits may be required, contingency sized to named unknowns | This domain: `trades/`; writing: `domain_writing_contractor_remodel.md`, `domain_writing_hvac_estimate.md`, `domain_writing_electrician_panel.md` |
 | **Real Estate** | Market data changes rapidly, state regulations vary, due diligence required | This domain: `real-estate/`; writing: `domain_writing_realtor_listing.md` |
 | **Insurance** | Issued policy wording governs, claim-handling rules vary by jurisdiction, coverage decided by licensed adjusters and counsel | This domain: `insurance/`; writing: `domain_writing_insurance_comparison.md` |
 | **Professional Services** | Independence decided under the governing code by the firm's independence partner; firm figures are management information | This domain: `professional-services/`; engagement cycle: `client-services-studio/` |
-| **Marketing/Sales** | Audience targeting, conversion metrics, campaign tracking | `domain_writing_marketing_campaign.md`, `domain_writing_sales_strategy.md` |
+| **Marketing/Sales** | Audience targeting, conversion metrics, campaign tracking | `domain-business-strategy/go-to-market/workflow_marketing_campaign_brief_development.md`, `domain_writing_sales_strategy.md` |
 | **Healthcare-Adjacent** | Not medical advice, professional oversight required | `domain_writing_veterinarian_surgery.md`, `domain_writing_dentist_treatment_plan.md` |
 
 > **Note:** `domain_writing_*` prompts are in `domain-professional-writing/domain-specific/`; `real-estate/`, `trades/`, `insurance/` and `professional-services/` are in this domain.

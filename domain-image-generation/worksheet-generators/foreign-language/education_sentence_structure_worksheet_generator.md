@@ -2,13 +2,23 @@
 title: "Sentence Structure Foreign Language Worksheet Generator"
 category: education
 description: "Generate beginner foreign-language sentence-structure worksheets with word-order practice and scaffolded sentence building."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - foreign-language
   - sentence-structure
   - grammar
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Sentence Structure Foreign Language Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Key a ZONE 3 unscramble strip to one order when the language allows more: German verb-second accepts both Heute spiele ich Fussball and Ich spiele heute Fussball.
+- Label the ZONE 2 pattern guide subject + verb + object for a structure that is not, such as German verb-final subordinate clauses or French object pronouns before the verb (Je le mange).
+- Accept ZONE 4 frames whose keyed answer breaks agreement (la casa blanco) or whose verb is conjugated for a different subject than the frame shows.
+- Leave the capital letter on the first strip and the period on the last — the order is then solved by punctuation, not structure.
+
+✅ **DO:**
+- Solve each rendered unscramble and list every grammatical ordering; either accept them all in the key or add a constraint that leaves one.
+- Check every ZONE 4 answer for gender, number, and person agreement with the words around the blank.
+- Compare the ZONE 5 word bank to the strips so every word a model sentence needs is present and spelled with its diacritics.

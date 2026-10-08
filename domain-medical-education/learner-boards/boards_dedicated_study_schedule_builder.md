@@ -25,7 +25,7 @@ tags:
   - schedule
   - planning
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_explain_this_answer.md
   - domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md
@@ -157,6 +157,16 @@ Single highest-yield discipline: [...]
 | `parallel_clerkship` | If still rotating, modify daily hours and shift to weekend-heavy plan |
 | `comeback_from_failed_attempt` | Add re-take protocol with emphasis on failed-content review |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A daily template whose blocks and breaks exceed `daily_hours_realistic`, or whose sleep window overlaps the last block | Add up every block's start–end time and confirm the study total equals `daily_hours_realistic` with the sleep floor and fixed commitments still intact; then count calendar days (diagnostic + study + off + buffer + taper) and confirm they equal `dedicated_days_available` |
+| Weekly Q-bank coverage targets the daily question count cannot reach (40 questions a day will not move a multi-thousand-item bank from 15% to 85% in four weeks) | Recompute each coverage target as starting % + (questions/day × study days ÷ bank size), using the learner's real bank size [VERIFY: current item count for the learner's Q-bank]; change the target, never the arithmetic |
+| A score trajectory that lands exactly on the target while gaining faster per week than the rate the method itself states | Project the curve from baseline at the stated per-week gain; if it falls short, print the shortfall in the trajectory line and fire the gap flag instead of bending the curve to meet the goal |
+| Buffer days counted as present because the word "buffer" appears, with no slot on the calendar | Give each buffer day a date or week slot in the week-by-week cadence and count them there, not in the narrative |
+| Targets, score scales and practice-form names written as if current — a three-digit goal for an exam that now reports pass/fail, or a retired self-assessment form | Check the exam's current score reporting and the self-assessments still offered before naming targets or forms [VERIFY: current USMLE / NBOME / NCSBN / NCCPA / NABP / NREMT score-reporting policy and self-assessment catalogue] |
+
 ## Verification Checklist
 
 - [ ] Daily hours match what learner has actually sustained, not aspirational.
@@ -172,13 +182,13 @@ Single highest-yield discipline: [...]
 
 ## Worked Example (compact)
 
-**Input:** exam_type = `USMLE-Step-1`, test_date = `in 6 weeks`, dedicated_days = `42`, baseline = `NBME 25 = 198`, target = `230`, daily_hours = `9 sustained for a week previously`, constraints = `8h sleep non-negotiable; partner shares dog-walking; one religious observance day per week (no studying)`, resources = `UWorld 15% complete, Anking deck 60% mature, FA 2025, Pathoma, Sketchy micro+pharm, NBME 26-31, UWSA1/2`, weak = `biostats, biochem, anti-microbial pharm`, strong = `cardio, renal, repro`, risk = `balanced`.
+**Input:** exam_type = `USMLE-Step-1`, test_date = `in 6 weeks`, dedicated_days = `42`, baseline = `NBME 25 = 198`, target = `230 on NBME practice forms (Step 1 itself is reported Pass/Fail; exam goal = Pass)`, daily_hours = `9 sustained for a week previously`, constraints = `8h sleep non-negotiable; partner shares dog-walking; one religious observance day per week (no studying)`, resources = `UWorld 15% complete, Anking deck 60% mature, FA 2025, Pathoma, Sketchy micro+pharm, NBME 26-31, UWSA1/2`, weak = `biostats, biochem, anti-microbial pharm`, strong = `cardio, renal, repro`, risk = `balanced`.
 
 **Output (excerpt):**
 
 ```
 DEDICATED STUDY SCHEDULE — USMLE-Step-1
-Test date: in 6 weeks   Dedicated days: 42   Baseline: 198   Target: 230   Risk: balanced
+Test date: in 6 weeks   Dedicated days: 42   Baseline: 198   Target: 230 (NBME practice form; exam outcome Pass)   Risk: balanced
 Daily hours realistic: 9 (sustainable)   Sleep floor: 8h
 
 >>> CONSTRAINTS
@@ -196,43 +206,48 @@ Sleep: 22:30–06:30.
 
 >>> WEEK-BY-WEEK CADENCE
 
+Calendar check: 2 diagnostic + 28 study + 6 off + 2 buffer + 3 taper + test day = 42 days.
+
 Week 1 — Establish rhythm; weak-area attack (biostats, biochem).
-  UWorld coverage target by end of week: 25%
+  Days 1–2: diagnostic + plan finalization (NBME 25 teardown by discipline and system; lock Block C weak-area pairings). 4 study days follow.
+  UWorld coverage target by end of week: 15% + (40 × 4 = 160 Qs) ÷ bank size [VERIFY: current UWorld Step 1 item count]
   NBME planned: NBME 26 (Sunday alternate; do not break observance day)
   Off / light: religious observance day; build in walk + nap
 
 Week 2 — Continue weak-area attack (antimicrobial pharm); push UWorld %.
-  UWorld coverage target: 45%
+  UWorld coverage target: 15% + 400 ÷ bank size
   NBME planned: NBME 27
 
 Week 3 — Switch to timed mixed. Begin integration drills.
-  UWorld coverage target: 65%
+  Buffer day 1 (catch-up or rest) — 5 study days this week.
+  UWorld coverage target: 15% + 600 ÷ bank size
   NBME planned: NBME 28
 
 Week 4 — All timed. Strong-area review only if NBME shows regression.
-  UWorld coverage target: 85% (first pass)
+  UWorld coverage target: 15% + 840 ÷ bank size — 40 Qs/day will not finish a first pass in 4 weeks; reaching ~85% needs (0.70 × bank size ÷ 21 study days) Qs/day, so raise Block A or accept the lower coverage.
   NBME planned: NBME 29
 
 Week 5 — Second-pass UWorld misses-only. UWSA1.
+  Buffer day 2 (catch-up or rest) — 5 study days this week.
   NBME planned: NBME 30 mid-week + UWSA1 weekend
 
-Week 6 — Taper. UWSA2 at start. NBME 31 mid-week.
-  Test day −3: UWSA2 or NBME 31
+Week 6 — Taper. UWSA2 at start (2 study days + off day before the taper).
+  Test day −3: NBME 31
   Test day −2: review teardowns only, light Anki
   Test day −1: NO new content; personal high-yield notes only; sleep regularized
   Test day: protein breakfast, FA neuro / biostats glance, exam.
 
 >>> TRACKING METRICS
 
-UWorld first-pass %:    target by week 4 → 85%
-NBME score trajectory:  198 → ~205 (wk1) → ~212 (wk2) → ~218 (wk3) → ~222 (wk4) → ~226 (wk5) → ~228–230 (wk6).
-  (Gains taper; if wk3 NBME is < 210, trigger fires.)
+UWorld coverage:        target by week 4 → 15% + 840 ÷ bank size
+NBME score trajectory:  198 → ~200–201 (wk1) → ~201–204 (wk2) → ~203–207 (wk3) → ~204–210 (wk4) → ~206–213 (wk5) → ~207–216 (wk6), at the method's 1.5–3 points/week.
+  GAP FLAG: the projection lands 14–23 points short of 230. Decide now — lower the target, extend dedicated, or accept the shortfall; the week-3 trigger below (< 210) is expected to fire on this curve.
 Anking retention:        ≥ 85% throughout.
 
 >>> ABORT / CATCH-UP TRIGGERS
 
 If week-3 NBME < 210 → reduce target to 225, add one full rest day to week 4, drop Pathoma re-watches.
-If UWorld first-pass < 50% by end of week 2 → cut Sketchy re-watches; reallocate Block C hours to Q-bank.
+If UWorld coverage at end of week 2 is below the week-2 target (15% + 400 ÷ bank size) → cut Sketchy re-watches; reallocate Block C hours to Q-bank.
 If sleep < 7h for 3 consecutive nights → mandatory half-day, no study after 16:00 that day.
 If at day 35 (one week out) the score gap is > 10 below target → optional defer-test conversation with deans / advisor.
 

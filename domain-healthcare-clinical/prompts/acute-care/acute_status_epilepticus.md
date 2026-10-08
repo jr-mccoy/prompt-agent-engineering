@@ -14,8 +14,20 @@ tags:
   - status-epilepticus
   - critical-care
   - antiepileptic
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -77,6 +89,19 @@ Manage convulsive status epilepticus with timed, sequenced pharmacotherapy and c
 
 8. **Documentation and signout.** Time stamps for each medication and observed effect. cEEG at the bedside. Plan for tapering anesthetic with cEEG monitoring.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill a PHASE line with a weight-based total computed from an assumed weight; when weight is absent, give the mg/kg figure and the maximum and leave the total as `[weight needed]`.
+- Write a second-line agent that the input's comorbidities rule out under the Step 4 selection rules (e.g., valproate with hepatic disease or pregnancy, fosphenytoin with a prolonged QT) — the line looks standard and is wrong for this patient.
+- Record "seizure terminated" in PHASE 3 or DISPOSITION once visible convulsions stop under paralysis or anesthesia; without a cEEG result in the input, the output says "electrographic status unknown".
+- Present the phase time bands (5–20, 20–40, 40+ min) as this patient's elapsed times when the seizure onset time was not supplied.
+
+✅ **DO:**
+- Recompute every weight-based dose from the stated weight, cap it at the listed maximum and show the arithmetic (e.g., levetiracetam 60 mg/kg × 75 kg = 4500 mg, which equals the cap).
+- For each reversible cause in CONCURRENT WORKUP (glucose, sodium, pregnancy/postpartum status, alcohol or isoniazid exposure), state whether supplied data rule it in, rule it out, or leave it pending.
+- Tag each drug, magnesium and antihypertensive dose and each anesthetic infusion rate `[VERIFY: current label/formulary]` unless it came from the clinician's order or local protocol.
+
 ## Output Format
 
 ```
@@ -126,7 +151,7 @@ TIME ZERO ACTIONS (first 5 min):
 PHASE 1 — Eclampsia-specific (immediate):
 - Magnesium sulfate 4 g IV bolus over 15–20 min, then 2 g/h continuous infusion. Goal: serum Mg 4–7 mEq/L.
 - If seizure continues despite mag bolus: lorazepam 4 mg IV may be added. But the priority intervention is magnesium.
-- BP control: labetalol 20 mg IV, may repeat 40 mg q10 min (max 300 mg total). Goal SBP <160, DBP <110, MAP not dropped abruptly to avoid placental hypoperfusion.
+- BP control: labetalol 20 mg IV, then 40 mg if not controlled at 10 min, with further escalation and the cumulative maximum per protocol [VERIFY: current ACOG guidance on acute-onset severe hypertension in pregnancy]. Goal SBP <160, DBP <110, MAP not dropped abruptly to avoid placental hypoperfusion.
 
 PHASE 2 (20–40 min) — Second-line AED if magnesium fails:
 - Levetiracetam 60 mg/kg IV = 4500 mg (max) over 10 min. Preferred AED in pregnancy.
@@ -150,7 +175,7 @@ DISPOSITION: Labor and delivery / OB-ICU. Continuous cEEG if seizures persist po
 
 PITFALLS TO AVOID:
 - Defaulting to lorazepam first in a pregnant seizing patient — magnesium is first-line for eclampsia and should not be delayed for benzodiazepine.
-- Aggressive BP reduction below MAP 100–105 → placental hypoperfusion and fetal compromise.
+- Aggressive or abrupt BP reduction below the guideline target → placental hypoperfusion and fetal compromise [VERIFY: current ACOG guidance on acute-onset severe hypertension in pregnancy].
 - Missing HELLP syndrome — must check platelets, LDH, haptoglobin, smear; HELLP changes management and delivery urgency.
 - Failing to deliver: persistent eclampsia despite magnesium and BP control = delivery indicated, gestational age permitting and after maternal stabilization.
 - Not continuing magnesium for 24 hours postpartum (eclamptic seizures can occur up to 6 weeks postpartum but most within 48 h after delivery).

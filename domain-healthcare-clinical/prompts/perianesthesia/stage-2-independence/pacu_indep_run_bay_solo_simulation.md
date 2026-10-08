@@ -16,7 +16,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, RT-02, RT-05, DS-06, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_two_patient_prioritization_stress_drill.md
   - pacu_indep_deteriorating_patient_walkthrough.md
@@ -31,6 +31,19 @@ references:
 ---
 
 # Run the Bay Solo — Table-Top Assignment Simulation
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A table-top simulation, not live clinical decision support. Run a real assignment with your preceptor still available; this rehearses the load, not the patient.
 
@@ -88,6 +101,19 @@ One coaching point (weakest link): [...]
 | `event` | `two` overlapping events trains true divided attention |
 | `phase_pressure` | Off to isolate event handling; on to force triage |
 | `case_mix` | Match the unit's real surgical mix |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Score "Kept the whole bay in view" Y when the learner accounts for the un-tended patient only after you ask about them.
+- Hand watching of a Phase I patient's airway to a role the unit may not allow to do it (an unlicensed tech, a family member) — who may watch whom is per facility policy, and the plan must say "per facility policy" when delegating.
+- Let the injected event resolve on the learner's first in-scope action; if it never needs escalating, "Escalation timed right" cannot be scored and a Y there is empty.
+- Accept "hold the admission" or "ask charge to assign elsewhere" without who is told, by what role, and when the decision is revisited.
+
+✅ **DO:**
+- Before scoring, list every patient in the bay and, for the event window, write who had eyes on each; any patient with no named watcher fails the whole-bay line.
+- Check the injected event's first cue is one the learner's stated routine plan would have caught at its next reassessment; if the plan would have missed it, coach the plan, not just the response.
+- Confirm each patient's described status in the case mix uses cues/behaviors only — scan for numbers, scores, or vitals before injecting the event.
 
 ## Verification Checklist
 

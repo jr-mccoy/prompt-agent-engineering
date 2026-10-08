@@ -21,7 +21,7 @@ tags:
   - image-generation
   - model-guide
   - prompting
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_PROMPTING_GUIDE.md
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
@@ -558,6 +558,24 @@ Restart from a clean base prompt when:
 
 - Always describe each reference by **index AND role** (`Image 3 = lighting reference`).
 - If the model still ignores a reference, restate it in the CONSTRAINTS section: `Apply the lighting from Image 3 to the entire composition.`
+
+---
+
+## False-Positive Prevention
+
+When applying this guide, its numbers are the part most likely to be wrong by the time you use them. The traps:
+
+❌ **DON'T:**
+- Quote the Section 1 and Section 3 figures (edge < 3840 px, 655,360–8,294,400 total pixels, up to 16 references, the 2560 × 1440 experimental line, the Tier 1–5 rate limits) as permanent — they describe snapshot `gpt-image-2-2026-04-21` and community findings as of May 2026.
+- Pass the checklist line "No `input_fidelity` parameter" on this guide's word alone; whether the API ignores, rejects or re-enables it is a property of the current API, not of this page.
+- Read Section 6.3's "17+ references … outperforms 2" as licence to send more images than the 16-image cap stated in Section 1 — the same claim appears in this repo's Nano Banana notes and is not a gpt-image-2 limit.
+- Take a web-search trigger phrase ("Verify [fact] before rendering") as proof that the rendered flag, roster or product shape is current; the image does not show what, if anything, was looked up.
+- Assume `n=4` returned four usable variants, or that the requested `size` was honoured, because the call succeeded.
+
+✅ **DO:**
+- Check every limit you quote in a prompt or in code against the current OpenAI model page for gpt-image-2 [VERIFY: current OpenAI docs], and note the check date beside the guide's April 2026 snapshot.
+- Read the pixel dimensions of each returned image and the number of images in the response, and compare both with the `size` and `n` you sent.
+- Check each fact-bearing element a web-search prompt produced (flag, roster, product detail) against a source you open yourself.
 
 ---
 

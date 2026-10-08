@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RT-02, RT-05, DS-06, QA-04, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_adv_high_acuity_recovery_reasoning.md
   - pacu_adv_malignant_hyperthermia_recognition.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Difficult-Airway Recovery — Surveillance & Re-Obstruction Risk After a Hard Airway
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A surveillance-reasoning drill, not live clinical decision support. Extubation criteria, airway-cart contents, and thresholds are **per your facility protocol** (learner-pasted). This rehearses *what to watch and when to escalate* — the airway is managed by the provider.
 
@@ -92,6 +105,19 @@ One coaching point: [...]
 | `airway_history` | Match the unit's difficult-airway case types |
 | `mimic_pressure` | Add a convincing residual-NMB picture to train the discriminator |
 | `edema_evolution` | Let edema develop late to punish early relaxation of surveillance |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Add facts to RISK FROM HANDOFF that `airway_history` doesn't contain (device used, number of attempts, edema grade); a missing detail is a question back to the anesthesia provider.
+- Fill "Pre-staged" with airway-cart contents from memory — contents and location come from the pasted facility checklist, or the output says they were not pasted.
+- Score `Escalated on early cue [Y]` when the named trigger was desaturation; on supplemental oxygen, SpO2 falls late.
+- Let the mimic discrimination become a precondition for escalating — new stridor is escalated now, whatever the leading mimic.
+
+✅ **DO:**
+- Trace every red flag and escalation trigger to something the nurse can observe at the bedside (sound, voice, work of breathing, trend); remove any that needs a provider exam or instrumentation.
+- Confirm the escalation line names both the provider and the airway-team pathway exactly as the pasted protocol words them.
+- Check that each mimic's discriminator ends in an in-scope nursing action (position, oxygen per order, call), not a treatment decision.
 
 ## Verification Checklist
 

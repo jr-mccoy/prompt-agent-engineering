@@ -24,7 +24,7 @@ tags:
   - case-conference
   - reasoning-evolution
   - single-question-pacing
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-clinical-reasoning/reason_problem_representation_rehearsal.md
   - domain-medical-education/learner-clinical-reasoning/reason_ddx_practice_session.md
@@ -148,6 +148,16 @@ Restudy: [the specific update behavior to drill]
 | `time_per_stage_seconds` | Soft cap for realism |
 | `include_team_handoff_stage` | One stage adds "now you're handing off — what's your sign-out one-liner?" |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A reveal that leaks a later stage's datum (a medication or history item that belongs to a later stage shown early), so the next stage's "unchanged" is an artifact of the leak | Before stage 1, list every datum with the one stage it belongs to; at each reveal, check that only that stage's items are shown |
+| Evolution-table cells filled in by the tutor for a stage where the learner gave no update | Fill each cell only from the learner's words at that stage; where they gave none, write "not updated" and count it as a missed update |
+| Grading confidence as "appropriate" because the leading diagnosis proved right in the end | Judge confidence against the data revealed by that stage, not the outcome — would the same confidence be sound if the final diagnosis had been different? |
+| A red-herring stage where the tutor credits a response current guidance argues against — e.g., treatment credited for an incidental lab finding the patient has no matching symptoms or signs for | Check the management credited at the red-herring stage against current guidance [VERIFY: current IDSA asymptomatic bacteriuria guideline]; the red herring should teach the learner not to act on it |
+| A carry-forward "reasoning-evolution pattern" asserted from a single case | Call it an observation from this case, cite the stage numbers it rests on, and say what a second case would have to show to make it a pattern |
+
 ## Verification Checklist
 
 - [ ] Four artifacts updated at every stage. No stage skipped.
@@ -181,24 +191,24 @@ Learner updates:
 Grade: solid breadth at low confidence; appropriate.
 
 >>> STAGE 2 — HPI
-Revealed: Family says he "fell" 2 days ago after standing up too fast from the couch; hit head on the corner of the coffee table. Since then, progressively more confused, mild headache he can't articulate well, no obvious focal weakness. PMH per family: HTN, AFib on warfarin, mild cognitive impairment baseline.
+Revealed: Family says he "fell" 2 days ago after standing up too fast from the couch; hit head on the corner of the coffee table. Since then, progressively more confused, mild headache he can't articulate well, no obvious focal weakness.
 
 Learner updates:
-  PR: 71M, AFib on warfarin, post-fall with head impact, subacute progressive confusion + headache.
+  PR: 71M, post-fall with head impact, subacute progressive confusion + headache.
   DDx: 1) Subdural hematoma, 2) Intracerebral hemorrhage, 3) Delirium from infection (still on list).
   Leading: SDH, medium.
-  Next step: STAT non-contrast CT head, INR, glucose, hold warfarin, prepare reversal if hemorrhage.
+  Next step: STAT non-contrast CT head, glucose, coags; ask about anticoagulant / antiplatelet use.
 Grade: correct major update — SDH now leads.
 
 >>> STAGE 3 — PMH / SH / FH
-Revealed: Confirmed HTN, AFib on warfarin (INR target 2–3), MCI baseline, no diabetes, no prior strokes, lives with daughter, no etoh, no smoking. Recent flu vaccine, no new medications.
+Revealed: HTN, AFib on warfarin (INR target 2–3), MCI baseline, no diabetes, no prior strokes, lives with daughter, no etoh, no smoking. Recent flu vaccine, no new medications.
 
 Learner updates:
-  PR: unchanged.
+  PR: 71M, AFib on warfarin, post-fall with head impact, subacute progressive confusion + headache.
   DDx: unchanged.
   Leading: SDH, medium (could nudge to medium-high if INR is supratherapeutic).
-  Next step: unchanged from stage 2.
-Grade: appropriate; PMH confirmed risk profile.
+  Next step: as stage 2 + INR, hold warfarin, prepare reversal if hemorrhage.
+Grade: appropriate; anticoagulation added to the risk profile.
 
 >>> STAGE 4 — Vitals + exam
 Revealed: BP 168/92, HR 78 (irregular, controlled), RR 16, sat 97%, T 37.0. Alert but oriented only to person. No fluent aphasia. Slight left pronator drift on outstretched arms. No fever. Mild bruise on right side of forehead. Cranial nerves grossly intact.
@@ -215,9 +225,9 @@ Revealed: UA: positive nitrites, positive leukocyte esterase, 50 WBC. CBC normal
 
 Learner updates:
   PR: same.
-  DDx: SDH (high) AND incidental UTI (likely).
+  DDx: SDH (high) AND incidental bacteriuria (no urinary symptoms or fever reported).
   Leading: SDH, high. (Resists red-herring shift to "delirium from UTI.")
-  Next step: CT head first; treat UTI in parallel; reverse warfarin if hemorrhage on CT.
+  Next step: CT head first; reverse warfarin if hemorrhage on CT; do not act on the UA alone — antibiotic decision per guidance [VERIFY: current IDSA asymptomatic bacteriuria guideline].
 Grade: red-herring resistance — correct. The UTI does not explain the *focal sign*; learner correctly does not let it override.
 
 Tutor probe (was prepared in case learner drifted): "Why don't you treat the UTI and observe?" — Not used because learner held.
@@ -229,24 +239,24 @@ Learner updates:
   PR: same.
   DDx: SDH confirmed.
   Leading: SDH, high (confirmed).
-  Next step: NS consult; reverse warfarin urgently (PCC 4-factor + vitamin K); BP control; admit ICU; treat UTI with appropriate antibiotic (will not interfere with reversal).
+  Next step: NS consult; reverse warfarin urgently (PCC 4-factor + vitamin K); BP control; admit ICU; UA finding not acted on without urinary symptoms or systemic signs [VERIFY: current IDSA asymptomatic bacteriuria guideline].
 Grade: complete.
 
 >>> STAGE 7 — Response to first intervention
 Revealed: Reversal given, NS recommends close observation, no immediate surgery; INR 1.3 at 4 h; mental status improving over 12 h; left arm drift resolves.
 
 >>> STAGE 8 — Outcome
-Confirmed: Right-sided acute SDH from fall in anticoagulated patient. Observed without surgery. UTI treated with PO antibiotic. Discharged in 4 days with neurology / NS follow-up; warfarin restart deferred 2 weeks pending repeat imaging.
+Confirmed: Right-sided acute SDH from fall in anticoagulated patient. Observed without surgery. Bacteriuria: antibiotic decision per current guidance [VERIFY: current IDSA asymptomatic bacteriuria guideline]. Discharged in 4 days with neurology / NS follow-up; warfarin restart deferred 2 weeks pending repeat imaging.
 
 >>> REASONING-EVOLUTION TABLE
 
 | Stage | PR | DDx top 3 | Leading + conf | Next | Δ |
 |---|---|---|---|---|---|
 | 1 | confusion x 2 days, 71M | delirium-inf / stroke / med | delirium-inf, low | broad workup | initial |
-| 2 | post-fall, anticoagulated, conf + HA | SDH / ICH / delirium-inf | SDH, medium | STAT CT, INR, reverse if hemo | major update — added trauma+AC |
-| 3 | same | same | SDH, medium | same | confirmed PMH |
+| 2 | post-fall, head impact, conf + HA | SDH / ICH / delirium-inf | SDH, medium | STAT CT, coags, ask re anticoagulants | major update — added trauma |
+| 3 | + anticoagulated (warfarin) | same | SDH, medium | + INR, hold warfarin, reverse if hemo | added AC |
 | 4 | + focal sign | SDH / ICH / delirium-inf | SDH, high | expedite CT | escalated on focal sign |
-| 5 | same | SDH + incidental UTI | SDH, high | CT first, treat UTI parallel | red herring resisted |
+| 5 | same | SDH + incidental bacteriuria | SDH, high | CT first; UA not acted on | red herring resisted |
 | 6 | same | SDH confirmed | SDH, high | reverse + ICU + NS | confirmation |
 | 7 | same | same | SDH, high | reversal | response confirms |
 

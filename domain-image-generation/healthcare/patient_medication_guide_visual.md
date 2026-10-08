@@ -2,6 +2,15 @@
 title: "Patient Medication Guide Visual - Image Generation Prompt"
 category: medical-education
 description: "Template-driven image generation prompt for a 'how to take your medication' visual handout (dose, timing, with/without food, side effects, missed dose). Low-health-literacy friendly: large type, simple icons, high contrast. The model renders clinician-supplied content only."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - patient-education
@@ -10,7 +19,7 @@ tags:
   - handout
   - plain-language
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - ./patient_education_condition_infographic.md
@@ -368,6 +377,21 @@ Not recommended for exact doses.
 
 ### Problem: 3D mockup / rounded corners / gradients
 **Add:** `"This IS the flat printed page. Sharp 90-degree corners only. Solid fills only. No device, hand, shadow, or gradient."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass a page whose parts disagree: "1 tablet, 2 times a day" above a time row with three "Yes" icons, or "Take with a meal" beside a Bedtime dose. Every string is verbatim and the page still gives two schedules.
+- Accept a banner that dropped a formulation suffix or paired the wrong brand — "Metformin" for "Metformin ER", or an immediate-release brand name on an extended-release product — the strength still matches and the timing advice no longer does.
+- Let the missed-dose lines default to the stock "as soon as you remember / skip if almost time" wording; the model has seen it countless times and may print it over a drug-specific instruction.
+- Let a warning-triangle icon migrate onto the "What you might notice" list, where it tells the reader an expected side effect is an emergency.
+
+✅ **DO:**
+- Check the page for internal agreement: the count of "Yes" time slots equals the frequency in the big dose statement, and the food column agrees with the time labels.
+- Proof name, strength, formulation, dose and frequency character by character on a 100%-scale print against the label on the dispensed bottle and the prescription sig; dose text appears only where it was copied from that order.
+- Scan the rendered text for prescriber abbreviations (BID, PRN, PO, qHS) and score its reading grade level.
 
 ---
 

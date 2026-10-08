@@ -23,7 +23,7 @@ tags:
   - blameless
   - quality-improvement
   - case-writing
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_grand_rounds_case_author.md
   - domain-medical-education/educator-case-writing/case_morning_report_case_author.md
@@ -179,6 +179,16 @@ Replaced with: "Establish auto-page rule for lactate > 4 to the on-call ICU atte
 | `include_qi_register` | Default true; required for QI committee audience |
 | `align_to_TJC_or_AHRQ` | Adds Joint Commission / AHRQ taxonomy tags |
 | `near_miss_emphasis` | If event_type = near-miss, highlight what worked and surface latent risk before it manifests |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| "Info available at the time" cells holding facts that only became known later (a lactate result, a fatigue judgment made in review) | For each timeline row, check that every entry in the info column carries a timestamp at or before that row's time; anything later moves to the row where it became known |
+| Contributory-factor rows completed with details absent from the event record (comorbidities, coverage-list size) so every Vincent category looks filled | Trace each factor to a timeline row or the supplied incident report; an undocumented category reads "not documented — ask the reviewing team," not an invented detail |
+| Marking the Cognitive axis "Y" for anchoring or satisfaction-of-search inferred from the bad outcome | Mark a named bias "Y" only when the record shows the reasoning (a note, a documented plan); otherwise write "possible — hypothesis for discussion" |
+| Role labels combined with unit, shift and date window that still point to one person in a small program | Test the role + time + location combination: if it narrows to one individual, widen whichever element identifies them |
+| Register actions that close no named latent condition, or metrics that count the activity (huddles held) rather than the failure (time from first deterioration to lactate) | Pair actions with latent conditions one to one — every condition has an action, every action a condition — and check each metric measures the failure mode the condition produced |
 
 ## Verification Checklist
 

@@ -20,7 +20,7 @@ tags:
   - pearls
   - high-yield
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_usmle_step2ck_vignette_drill.md
   - domain-medical-education/learner-boards/boards_high_yield_topic_blitz.md
@@ -119,6 +119,16 @@ Trap audit: [name the failure mode]
 | `forced_distractor_topic` | Override default board trap |
 | `paired_vignette` | Run two stems on the same topic, different lead-ins |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Pearl 4 carrying a drug, duration or age/pregnancy restriction the current guideline has revised (e.g., the under-8 doxycycline restriction for short courses) | Check the first-line agent, dose, duration and population exclusions against the current named guideline and write its year on the card [VERIFY: e.g., current IDSA/AAN/ACR Lyme guideline]; then confirm the keyed vignette option uses the same dose and duration as Pearl 4 |
+| Filling the "Dead-giveaway lab/imaging" slot with a clinical finding because no test locks the diagnosis | If no lab or image locks it, write "no confirmatory test at this stage — diagnosis is clinical" in Pearl 3 rather than inventing a test or relabeling a sign |
+| Quoting Pearl 2 as "exact PANCE phrasing", or teaching the classic picture as the usual one (central clearing in erythema migrans, which many lesions lack) | Label quoted phrases as typical stem language, not NCCPA wording, and add a line when the classic form is the minority presentation |
+| Distractor rationales ("reserved for …") that state the wrong option's indications from memory | Check each distractor's "would be correct for" claim against the same guideline used for Pearl 4, so the card and the teardown cannot contradict each other |
+| Assuming a topic is on the blueprint, or treating recertification as a single proctored exam | Confirm the topic and task area against the current blueprint and recertification format [VERIFY: current NCCPA PANCE content blueprint and PANRE / PANRE-LA format], then solve the vignette blind, without the card, and check exactly one option survives |
+
 ## Verification Checklist
 
 - [ ] All five pearl shapes present in order; none skipped or merged.
@@ -149,9 +159,9 @@ Single PANCE-testable fact: treat clinically based on EM in endemic area — ser
 >>> FIVE PEARLS
 
 [1] Epidemiology anchor: northeast / upper midwest / Pacific NW US in late spring–early fall; outdoor exposure (camping, hiking, yard work). Endemic-area exposure is in every PANCE stem.
-[2] Classic presentation: "expanding annular erythematous lesion with central clearing, > 5 cm in diameter, ± malaise, fatigue, myalgia, low-grade fever" (target lesion).
-[3] Dead-giveaway: EM lesion in endemic area within 3–30 days of outdoor exposure. Serology has high false-negative in this window and is NOT required.
-[4] First-line management: doxycycline 100 mg po BID × 10 days (adults, non-pregnant, ≥ 8yo). Pregnancy or < 8yo: amoxicillin or cefuroxime.
+[2] Classic presentation: "expanding annular erythematous lesion with central clearing, > 5 cm in diameter, ± malaise, fatigue, myalgia, low-grade fever" (typical stem language, not NCCPA wording). Note: central clearing is the minority form — most EM lesions are uniformly erythematous; do not require clearing to make the diagnosis.
+[3] Dead-giveaway: no confirmatory test at this stage — diagnosis is clinical (EM in endemic area within 3–30 days of outdoor exposure). Serology has high false-negative in this window and is NOT required.
+[4] First-line management: doxycycline 100 mg po BID × 10 days (adults, non-pregnant). Pregnancy: amoxicillin or cefuroxime. Children: age limits for doxycycline per current guideline [VERIFY: IDSA/AAN/ACR 2020 Lyme guideline / AAP Red Book].
 [5] Board trap: serology-first ("send ELISA before treating"). EM in endemic exposure = clinical diagnosis; serology delays treatment and is often falsely negative early.
 
 >>> PANCE-STYLE VIGNETTE
@@ -178,7 +188,7 @@ Anchor pearl: #4 (first-line management).
 A) Wrong — serology delays treatment and has high false-negative rate at this stage. Classic PANCE trap (Pearl #5).
 B) Correct.
 C) Wrong — represents a missed diagnosis treated as contact dermatitis.
-D) Wrong — IV ceftriaxone is reserved for early-disseminated (carditis with high-grade AV block, neurologic Lyme, late Lyme arthritis refractory to po). Overshoot.
+D) Wrong — IV ceftriaxone is reserved for selected disseminated or late manifestations (e.g., early-disseminated carditis with high-grade AV block; late Lyme arthritis refractory to oral therapy); which neurologic manifestations need IV rather than oral therapy is guideline-dependent [VERIFY: current IDSA/AAN/ACR Lyme guideline]. Overshoot.
 
 Trap audit: option A is the engineered serology-first trap; the failure mode is treating early-localized Lyme like a laboratory-confirmed diagnosis. PANCE rewards clinical diagnosis in the EM scenario.
 ```

@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-01, ST-02, ED-02, RT-02, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_week1_expectations_map.md
   - pacu_foundations_vocabulary_acronym_builder.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # What Is PACU? — The Beginner's Mental Model
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** This is a study/orientation primer, not live clinical decision support. For any real patient, follow your preceptor, charge nurse, provider, and facility protocol.
 
@@ -48,7 +61,7 @@ You are an orientation coach building the learner's first map of the territory. 
 
 ## Method
 
-1. **Locate PACU in the pipeline.** Walk the patient journey: pre-op → OR → **PACU (Phase 1)** → Phase 2 / step-down → floor or discharge home. Name what changes at each handoff.
+1. **Locate PACU in the pipeline.** Walk the patient journey: pre-op → OR → **PACU (Phase 1)** → an inpatient unit (floor, step-down or critical care) or Phase 2 → discharge home. Name what changes at each handoff.
 2. **Define Phase 1 vs Phase 2 plainly.** Phase 1 = the immediate, intensive recovery from anesthesia (airway, hemodynamics, emergence). Phase 2 = readiness for discharge/self-care. State the shift in focus, not numbers.
 3. **Introduce the cast of characters** by *role and what they hand you*: anesthesia provider (CRNA/anesthesiologist) who gives report, surgeon, charge nurse, transport, floor/receiving nurse, family. Escalation is always **by role**, never a name or number.
 4. **State the nurse's core job** in one sentence the learner can memorize: *receive the patient safely, recognize deviations from normal recovery early, intervene within scope, and escalate to the right role at the right time.*
@@ -62,7 +75,7 @@ WHAT IS PACU — MY MENTAL MODEL
 Prior experience: [...]   Facility type: [...]
 
 >>> THE PIPELINE (where PACU sits)
-pre-op → OR → PACU Phase 1 → [Phase 2 / step-down] → floor or home
+pre-op → OR → PACU Phase 1 → [inpatient unit (floor / step-down / critical care) | Phase 2 → home]
 At each arrow, what changes: [one line each]
 
 >>> PHASE 1 vs PHASE 2 (in my own words)
@@ -99,6 +112,19 @@ Confidence self-rating (1–5) that I could explain PACU to a friend: [ ]
 | `facility_type` | Ambulatory centers weight Phase 2 / discharge readiness more heavily |
 | `depth` | `orientation` (default, plain) vs. `enriched` (adds the "why" behind each pipeline change) |
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Draw the pipeline as one fixed route; an inpatient commonly moves from Phase 1 to an inpatient unit, an ambulatory patient through Phase 2 to home, and some patients to critical care — a single arrow chain passes "complete pipeline" and misplaces Phase 2.
+- Equate Phase 2 with a step-down unit, or define either phase by time or score; the phases differ by focus of care, and step-down is a unit level.
+- State as universal a responsibility the facility assigns — who writes or meets PACU discharge criteria, who decides bed readiness.
+- Let the three anchor questions require knowledge the primer never covered; they then test recall the learner does not have.
+
+✅ **DO:**
+- Check the pipeline against `facility_type`: ambulatory → through Phase 2 to home; hospital main OR → inpatient route, plus the Phase 2 route if the facility uses it.
+- Check the core-job sentence keeps all four verbs (receive, recognize, intervene within scope, escalate); a memorable sentence that drops escalation fails.
+- Check each who's-who line runs both ways — what the role hands the nurse and what the nurse hands back.
+
 ## Verification Checklist
 
 - [ ] Every acronym (PACU, CRNA, OR) is defined on first use.
@@ -115,7 +141,7 @@ Confidence self-rating (1–5) that I could explain PACU to a friend: [ ]
 **Output (excerpt):**
 ```
 >>> THE PIPELINE
-pre-op → OR → PACU Phase 1 → step-down → floor
+pre-op → OR → PACU Phase 1 → floor (step-down or critical care if the patient needs that level)
 - pre-op→OR: patient goes under anesthesia; I don't see this part yet.
 - OR→PACU: the anesthesia provider brings the patient still emerging and hands me report — this is my starting line.
 - PACU→floor: I hand off a stabilized, recovered patient with a clear report.

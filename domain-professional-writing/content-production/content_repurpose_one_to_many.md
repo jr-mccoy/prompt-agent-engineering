@@ -17,7 +17,7 @@ tags:
   - distribution
   - atomization
   - multi-platform
-updated: "2026-05-27"
+updated: "2026-10-06"
 related_prompts:
   - domain-professional-writing/content-production/content_long_form_script.md
   - domain-professional-writing/content-production/content_short_form_hook_bank.md
@@ -95,6 +95,28 @@ Suggested order/cadence + one line on why.
 
 ### Open Items
 Every `[UNVERIFIED]` flag carried over, plus any atom too thin to stand alone.
+
+---
+
+## False-Positive Prevention
+
+1. **Compression drifts toward overstatement.** A thread post turns "engagement rose in our three
+   test accounts" into "this doubles engagement". Every derivative keeps the source's qualifiers
+   (sample, condition, timeframe, hedge) or drops the claim; no new number is not the same as no
+   new meaning.
+2. **Platform limits recalled from memory are guesses.** Character caps, carousel slide counts,
+   maximum clip length and hashtag rules change; unless the user supplied the limit, write
+   `[VERIFY: current platform spec]` beside the asset instead of asserting a number.
+3. **"Stands alone" can mean "orphaned".** Deleting "as I said in the video" can also delete the
+   context that made a fact true (which year, which market, which test). Restore that context
+   inside the asset.
+4. **A filled Asset → Atom Map is not proof of fidelity.** Listing atom #3 beside a Short does not
+   mean the Short says what atom #3 says. A quote trimmed for length is no longer exact; mark the
+   cut with an ellipsis or drop the quotation marks.
+5. **Trace each claim back before posting:** for every derivative, mark each factual claim and
+   quote, find its sentence in `<source_piece>`, and confirm the derivative is not stronger,
+   broader, or more certain; count the `[UNVERIFIED]` flags in the source and in Open Items (the
+   counts must match); measure each asset against the limit the user supplied.
 
 ---
 

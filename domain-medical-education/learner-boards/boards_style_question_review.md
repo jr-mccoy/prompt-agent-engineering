@@ -30,8 +30,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_distractor_analysis_drill.md
-  - ./learner_qbank_session_debriefer.md
+  - domain-medical-education/learner-boards/boards_distractor_analysis_drill.md
+  - domain-medical-education/learner-boards/boards_qbank_session_debriefer.md
 ---
 
 # Board-Style Question Review for Health-Professions Learners

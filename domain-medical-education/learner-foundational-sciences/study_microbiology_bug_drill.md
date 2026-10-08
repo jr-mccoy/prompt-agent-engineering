@@ -27,8 +27,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_immunology_concept_clarifier.md
-  - ./learner_pharmacology_mechanism_explainer.md
+  - domain-medical-education/learner-foundational-sciences/study_immunology_concept_clarifier.md
+  - domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_explainer.md
 ---
 
 # Microbiology Bug Drill for Health-Professions Learners

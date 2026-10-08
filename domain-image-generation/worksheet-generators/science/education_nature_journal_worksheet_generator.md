@@ -2,13 +2,23 @@
 title: "Nature Journal Worksheet Generator"
 category: education
 description: "Generate nature-journal worksheet pages with observation frames, sketch boxes, and reflection prompts."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - science
   - worksheet
   - nature-journal
   - observation
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Nature Journal Worksheet Generator
@@ -121,3 +131,15 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 sketch box the model has filled with its own drawing, or a ZONE 2 checklist already ticked — the page looks finished and leaves the student nothing to observe.
+- Fill the ZONE 2 observation checklist with organisms or events not found in the intake ecosystem and season (snowfall on a summer desert page, maple seeds on a tropical page).
+- Print a "wonder" example in ZONE 4 that is really a statement of fact, which models a non-question for the student.
+
+✅ **DO:**
+- Check each checklist entry against the intake ecosystem/season and the school's region; mark any entry you cannot confirm locally as [VERIFY].
+- Confirm on the rendered page that the sketch box, both ZONE 4 columns and the ZONE 5 lines are blank, and count the writing lines against the intake writing length target.
+- Check the ZONE 1 weather fields use the units the class uses (°F or °C) and leave room to write them.

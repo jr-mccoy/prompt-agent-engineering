@@ -15,8 +15,20 @@ tags:
   - ckd
   - care-plan
   - chronic-disease
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -59,6 +71,21 @@ Nephrologist or internist managing CKD longitudinally.
 6. **Cardiovascular risk:** statin (most CKD patients are high-risk), BP, smoking, aspirin per indication.
 
 7. **Monitor:** eGFR/UACR/K/HCO3 cadence by stage; CBC, Ca/Phos/PTH; vaccinate (influenza, pneumococcal, hepatitis B — important pre-dialysis).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Stage from one eGFR — CKD requires abnormality persisting >3 months, and a stage is G plus A; "G3b" without an albuminuria category is half a stage.
+- Mix albuminuria units — UACR in mg/g and mg/mmol differ (KDIGO treats 30 mg/g as ≈3 mg/mmol), so a category read from the wrong unit is off by a whole A-step.
+- Dose renally cleared drugs from eGFR when the label specifies Cockcroft-Gault creatinine clearance, or from an indexed eGFR in a very large or very small patient.
+- Conflate initiation and continuation gates: SGLT2i, finerenone and metformin each set different eGFR (and, for finerenone, potassium) thresholds for starting versus continuing `[VERIFY: product label]`.
+- Call an eGFR fall after RAAS or SGLT2i initiation "progression" without comparing it to the pre-drug baseline and the expected haemodynamic dip.
+
+✅ **DO:**
+- Name the eGFR equation (race-free CKD-EPI 2021 in the US) and recompute it from creatinine, age and sex when raw values are given; adult equations do not apply to children.
+- List every potassium-raising agent in the plan (ACEi/ARB, MRA, finerenone, trimethoprim, NSAIDs) and give each start its own K recheck date.
+- Before quoting an ESA, list TSAT and ferritin with dates, and state that the haemoglobin target is a ceiling, not normal.
+- Check the lab cadence against the patient's G/A risk cell rather than writing one interval for everyone `[VERIFY: KDIGO monitoring-frequency grid]`.
 
 ## Output Format
 

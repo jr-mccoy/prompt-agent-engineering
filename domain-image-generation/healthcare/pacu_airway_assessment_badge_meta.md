@@ -4,7 +4,16 @@ category: pacu/image-generation
 target_models:
   - nano-banana
   - dall-e-3
-updated: "2026-04-14"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
+updated: "2026-10-06"
 tags:
   - pacu
   - image-generation
@@ -100,3 +109,18 @@ VALIDATION CHECKLIST (must pass before returning):
 
 - Peds version — adjust MONITORS row (EtCO2 + trend), add weight-based caveat.
 - Post-thyroid airway card — add neck swelling / voice change / subcutaneous emphysema as a first-screen escalation.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Pass checklist item 3 ("5 stacked red-stripe rows") when Side B ROW 1 now shows a saturation number — "SpO2 < threshold per protocol" is exactly the phrase an image model "completes" with a plausible cut-off.
+- Read Side B's call targets (anesthesia, rapid response, code criteria, emergency airway pathway) as this unit's airway-emergency chain because they rendered cleanly; which team is called first, and when, is local policy the card must not decide.
+- Count "6 labeled boxes" on Side A as done when the 7pt bullets were truncated or merged at badge size — a box can keep its title and lose two of its three bullets.
+- Accept an ACT box or Side B row that gained a device or flow (an "NRB", a litre figure) — oxygen delivery specifics are per provider order, and the template names neither.
+
+✅ **DO:**
+- Print at true 3.375 × 2.125 size, then tick each of the 17 Side A bullets and 5 Side B rows against the prompt text string by string.
+- Scan both sides for numerals: the only digits allowed are the "2" in SpO2, EtCO2 and O2 — any other figure is a fabricated threshold and fails the card.
+- Have the unit's anesthesia lead or educator confirm Side B's row order and roles against local airway policy; record reviewer and date on the print file, not on the card.

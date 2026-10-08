@@ -26,8 +26,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_code_algorithm_rehearsal.md
-  - ../clinical-reasoning/learner_differential_diagnosis_drill.md
+  - domain-medical-education/learner-procedures/study_code_algorithm_rehearsal.md
+  - domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md
 ---
 
 # Critical Event Recognition Drill for Health-Professions Learners

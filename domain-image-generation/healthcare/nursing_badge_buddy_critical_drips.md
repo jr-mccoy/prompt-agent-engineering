@@ -2,6 +2,15 @@
 title: "Nursing Badge Buddy - Critical Care Drips"
 category: medical-education
 description: "Image generation prompt for creating printable nursing badge buddy reference cards for ICU/critical care medication drips"
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - nursing
@@ -11,7 +20,7 @@ tags:
   - critical-care
   - vasopressors
   - image-generation
-updated: "2026-01-28"
+updated: "2026-10-06"
 ---
 
 # Nursing Badge Buddy - Critical Care Drips
@@ -160,17 +169,17 @@ BOX 1:
 LEVOPHED (norepinephrine)
 8 mg/250 mL
 BP greater than HR effect
-Start: 0.05
-Titrate: 0.02 q3 min
+Start: 0.05 mcg/kg/min
+Titrate: 0.02 mcg/kg/min q3 min
 Max: 1 mcg/kg/min
-First line septic/cardiogenic/hypovolemic shock
+First line septic/cardiogenic shock
 
 BOX 2:
 EPINEPHRINE
 10 mg/250 mL
 Increases BP and HR
-Start: 0.05
-Titrate: 0.05 q3 min
+Start: 0.05 mcg/kg/min
+Titrate: 0.05 mcg/kg/min q3 min
 Max: 2 mcg/kg/min
 Low dose = HR greater than BP
 
@@ -178,21 +187,22 @@ BOX 3:
 NEOSYNEPHRINE (phenylephrine)
 50 mg/250 mL
 Increases BP only
-Start: 0.5
-Titrate: 0.1 q3 min
+Start: 0.5 mcg/kg/min
+Titrate: 0.1 mcg/kg/min q3 min
 Max: 3 mcg/kg/min
 May cause bradycardia
 
 BOX 4:
 VASOPRESSIN
 Increases BP
+[VERIFY: fixed dose vs. titratable range per institutional drip protocol / current Surviving Sepsis Campaign guideline]
 Fixed: 0.01-0.03 units/min
 (No titration)
 
 BOX 5:
 DOPAMINE
 400 mg/250 mL D5W
-Renal: 0.5-3
+[VERIFY: units for the dose bands below per institutional drip protocol / pharmacy smart-pump library]
 HR>BP: 3-10
 BP&HR: 10-20
 
@@ -219,7 +229,7 @@ INTUBATED PATIENTS ONLY
 
 BOX 2:
 PRECEDEX (dexmedetomidine)
-Start: 0.2
+Start: 0.2 mcg/kg/hr
 Max: 1.4 mcg/kg/hr
 Watch for Bradycardia
 Watch for Hypotension
@@ -240,6 +250,7 @@ Max: 15 mg/hr
 BOX 5:
 LIDOCAINE
 V-fib / pulseless V-tach
+[VERIFY: bolus dose and push rate per current ACLS / AHA guideline]
 Bolus: 1 mg/kg / 2 min
 Maintenance: 1-4 mg/min
 
@@ -264,6 +275,7 @@ FINAL VALIDATION CHECK
 - No rounded corners
 - No UI or mockup styling
 - Optimized for instant badge-level glance
+- Every dose line printed exactly as assigned, unit included
 ```
 
 ---
@@ -287,21 +299,21 @@ CRITICAL RULES:
 
 IMAGE 1 - FRONT (Vasopressors):
 Header: "CRITICAL DRIPS - Quick Reference - FRONT" (navy blue)
-Box 1: Levophed - 8mg/250mL, Start 0.05, Max 1
-Box 2: Epinephrine - 10mg/250mL, Start 0.05, Max 2
-Box 3: Neosynephrine - 50mg/250mL, Start 0.5, Max 3
-Box 4: Vasopressin - Fixed 0.01-0.03 units/min
-Box 5: Dopamine - 400mg/250mL, Renal/HR/BP dosing
-Box 6: Cardene - 5-15mg/hr, Max 15
+Box 1: Levophed - 8mg/250mL, Start 0.05 mcg/kg/min, Max 1 mcg/kg/min
+Box 2: Epinephrine - 10mg/250mL, Start 0.05 mcg/kg/min, Max 2 mcg/kg/min
+Box 3: Neosynephrine - 50mg/250mL, Start 0.5 mcg/kg/min, Max 3 mcg/kg/min
+Box 4: Vasopressin - Fixed 0.01-0.03 units/min [VERIFY: fixed dose vs. titratable range per institutional drip protocol / current Surviving Sepsis Campaign guideline]
+Box 5: Dopamine - 400mg/250mL, HR/BP dosing
+Box 6: Cardene - 5-15mg/hr, Max 15mg/hr
 Footer: "Verify orders before administration" (navy blue)
 
 IMAGE 2 - BACK (Sedation/Antiarrhythmics):
 Header: "CRITICAL DRIPS - Quick Reference - BACK" (navy blue)
 Box 1: Propofol - 5-50 mcg/kg/min, intubated only
-Box 2: Precedex - Start 0.2, Max 1.4
+Box 2: Precedex - Start 0.2 mcg/kg/hr, Max 1.4 mcg/kg/hr
 Box 3: Amiodarone - Bolus 150mg, then 1mg/min x 6hr
 Box 4: Cardizem - 5-15mg/hr for A-fib
-Box 5: Lidocaine - Bolus 1mg/kg, Maint 1-4mg/min
+Box 5: Lidocaine - Bolus 1mg/kg [VERIFY: bolus dose and push rate per current ACLS / AHA guideline], Maint 1-4mg/min
 Box 6: Cleviprex - 2-21mg/hr
 Footer: "Verify orders before administration" (navy blue)
 
@@ -329,17 +341,17 @@ See [IMAGE_GENERATION_GUIDE.md](../IMAGE_GENERATION_GUIDE.md) for detailed expla
 
 ## Medication Content Reference
 
-### VASOPRESSORS (Goal: MAP 65-75 or SBP 90-100)
+### VASOPRESSORS (Goal: MAP/SBP target per provider order [VERIFY: current Surviving Sepsis Campaign guideline / institutional protocol])
 
 | Drug | Concentration | Effect | Start | Titrate | Max |
 |------|---------------|--------|-------|---------|-----|
-| **Levophed** (norepinephrine) | 8mg/250mL | BP > HR | 0.05 mcg/kg/min | 0.02 q3min | 1 mcg/kg/min |
-| **Epinephrine** | 10mg/250mL | BP & HR | 0.05 mcg/kg/min | 0.05 q3min | 2 mcg/kg/min |
-| **Neosynephrine** (phenylephrine) | 50mg/250mL | BP only | 0.5 mcg/kg/min | 0.1 q3min | 3 mcg/kg/min |
-| **Vasopressin** | - | BP | 0.01-0.03 units/min (fixed) | - | - |
-| **Dopamine** | 400mg/250mL D5W | Varies | Renal: 0.5-3 | HR>BP: 3-10 | BP&HR: 10-20 |
+| **Levophed** (norepinephrine) | 8mg/250mL | BP > HR | 0.05 mcg/kg/min | 0.02 mcg/kg/min q3min | 1 mcg/kg/min |
+| **Epinephrine** | 10mg/250mL | BP & HR | 0.05 mcg/kg/min | 0.05 mcg/kg/min q3min | 2 mcg/kg/min |
+| **Neosynephrine** (phenylephrine) | 50mg/250mL | BP only | 0.5 mcg/kg/min | 0.1 mcg/kg/min q3min | 3 mcg/kg/min |
+| **Vasopressin** | - | BP | 0.01-0.03 units/min (fixed) [VERIFY: fixed dose vs. titratable range per institutional drip protocol / current Surviving Sepsis Campaign guideline] | - | - |
+| **Dopamine** [VERIFY: dose-band units per institutional drip protocol / pharmacy smart-pump library] | 400mg/250mL D5W | HR>BP: 3-10; BP&HR: 10-20 | - | - | - |
 
-### ANTIHYPERTENSIVES (Goal: SBP<180, DBP<105)
+### ANTIHYPERTENSIVES (Goal: indication-specific BP target per provider order [VERIFY: current AHA/ASA or AHA/ACC guideline for the indication])
 
 | Drug | Start | Range | Max |
 |------|-------|-------|-----|
@@ -351,7 +363,7 @@ See [IMAGE_GENERATION_GUIDE.md](../IMAGE_GENERATION_GUIDE.md) for detailed expla
 | Drug | Concentration | Dosing | Notes |
 |------|---------------|--------|-------|
 | **Propofol** (Diprivan) | 10mg/mL | 5-50 mcg/kg/min (max 100 w/ MD order) | INTUBATED ONLY |
-| **Precedex** (dexmedetomidine) | - | Start 0.2, Max 1.4 mcg/kg/hr | Can cause bradycardia & hypotension |
+| **Precedex** (dexmedetomidine) | - | Start 0.2 mcg/kg/hr, Max 1.4 mcg/kg/hr | Can cause bradycardia & hypotension |
 
 ### ANTIARRHYTHMICS
 
@@ -359,7 +371,7 @@ See [IMAGE_GENERATION_GUIDE.md](../IMAGE_GENERATION_GUIDE.md) for detailed expla
 |------|------------|--------|
 | **Amiodarone** | Various | Bolus: 150mg/10min, then 1mg/min x 6hr, then 0.5mg/min x 18hr |
 | **Cardizem** (diltiazem) | A-fib, A-flutter, SVT | 5-15mg/hr, Max 15mg/hr |
-| **Lidocaine** | V-fib, pulseless V-tach | Bolus: 1mg/kg/2min, Maint: 1-4mg/min |
+| **Lidocaine** | V-fib, pulseless V-tach | Bolus: 1mg/kg/2min [VERIFY: bolus dose and push rate per current ACLS / AHA guideline], Maint: 1-4mg/min |
 
 ---
 
@@ -414,6 +426,36 @@ The main prompt above is optimized for these models. Key elements:
 
 ### Problem: Only one image generated
 **Add:** `"Generate EXACTLY 2 images. NOT 1. NOT 3. EXACTLY 2 separate images."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Treat a unitless line as complete. A start, titration-step or dose-band line printed with no unit lets the reader — or a model tidying the box — supply mcg/min, mcg/kg/min or mg/hr from habit; an unresolved `[VERIFY: ...]` tag is the same gap.
+- Use the Medication Content Reference tables as the check: they were written alongside this prompt, not pulled from your pharmacy's standard concentrations or smart-pump library.
+- Let sound-alike pairs pass at 8 pt — CARDENE and CARDIZEM sit on opposite cards, PRECEDEX and PROPOFOL share one, and a generic in parentheses can attach to the wrong brand ("CARDIZEM (nicardipine)").
+- Miss a dropped "/kg" on a Max line: for a 70 kg patient, "1 mcg/min" printed in place of "1 mcg/kg/min" is a 70-fold change in the ceiling.
+- Read the footer "Verify orders before administration" as the card's verification; it asks the nurse to check the order, not anyone to check the card.
+
+✅ **DO:**
+- Before generating, rewrite every number in the BOX assignments as value + unit + rate basis from your institution's drip standards, so no line depends on the reader's assumption.
+- After generating, check all 12 boxes on a 100%-scale print against the smart-pump drug library — brand, generic, concentration and diluent, start, titration step and interval, max — and confirm each box has the same line count as its assignment.
+- File the proof copy initialled by the pharmacist who maintains the pump library, with the library version it was checked against, so a library update tells you which cards to reprint.
+
+---
+
+## Verification Checklist (Before Printing)
+
+- [ ] Every drug, concentration and diluent, start, titration step and interval, and max cross-checked against **your institution's drip standards / pharmacy smart-pump drug library** before printing
+- [ ] Every dose line carries value + unit + rate basis (mcg/kg/min vs. mcg/min vs. mg/hr vs. units/min); no unitless line and no dropped "/kg"
+- [ ] Every `[VERIFY: ...]` tag resolved from the institutional source and removed from the BOX assignments before generating
+- [ ] Brand and generic paired correctly on every box (CARDENE = nicardipine, CARDIZEM = diltiazem; PRECEDEX vs. PROPOFOL distinct) and legible at print size
+- [ ] No dose, unit, or line invented, dropped, or altered by the image model (box-by-box comparison of all 12 boxes on a 100%-scale print; line counts match the assignments)
+- [ ] Footer present: "Verify orders before administration"
+- [ ] Card dated and labeled with the pump-library version it was checked against so it can be retired when the library changes
+- [ ] Two images, landscape, 2x3 grid, flat print artwork, no gradients/shadows/rounded corners
+- [ ] Reviewed and initialled by the pharmacist who maintains the pump library before distribution
 
 ---
 

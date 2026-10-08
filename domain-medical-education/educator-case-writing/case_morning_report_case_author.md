@@ -22,7 +22,7 @@ tags:
   - resident-education
   - reasoning
   - chief-resident
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-case-writing/case_grand_rounds_case_author.md
   - domain-medical-education/educator-case-writing/case_mm_case_author.md
@@ -172,6 +172,16 @@ Replaced with: "R1, name the top 3 of your DDx in 30 sec, ranked by what you'd t
 | `align_to_milestones` | Adds ACGME milestone tag per pillar |
 | `include_pre_session_reading` | Adds 1 article assigned 24h ahead |
 | `format_for_async_post` | Adds a written-summary block for residents who missed |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Urine indices or other computed values (FeNa, FeUrea, anion gap) released as results without the raw values that produce them | Release the raw inputs (urine and plasma Na, urea, creatinine) in the stage, recompute the index, and confirm it matches the stated result before the pivot depends on it |
+| Pushback prompts that carry the discriminator before the pivot ("What does HCTZ do to your urine indices?" at Interaction 1) | Read each pushback line against the S4 pivot finding; a prompt that names the discriminating fact before S4 is a leak — replace it with a library move that names nothing ("What did you assume?") |
+| Chair-script blocks too short for what they contain (a 5-minute interaction plus stage presentation in a 6-minute block) | For each block, add presentation time, interaction minutes and the 60-second synthesis, compare with the block length, and confirm the blocks total `duration_min` |
+| Audit rows that cite a category ("recent guidelines", "case series") rather than a named source but are marked Verified Y | Mark Y only when the row names a specific document; otherwise write the source type with `[VERIFY]` and keep the claim out of the pillars |
+| A system/quality pillar asserted in the S6 note but not produced by any event in the stages | Trace P3 to the stage event that shows the process failure; if none exists, add it to the case or swap P3 for the decision-under-uncertainty pillar |
 
 ## Verification Checklist
 

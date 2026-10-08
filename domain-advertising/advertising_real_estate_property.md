@@ -20,12 +20,12 @@ tags:
   - real
   - campaign-creative
   - print-ready
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
-  - domain-presentations/visual-planning/visual_frontier_map.md
-  - domain-presentations/visual-planning/visual_qa_harness.md
-  - domain-presentations/visual-planning/visual_workflow_router.md
+  - domain-presentations/visual-planning/visualplan_capability_frontier_map.md
+  - domain-presentations/visual-planning/visualplan_visual_qa_harness.md
+  - domain-presentations/visual-planning/visualplan_modality_router.md
 ---
 
 **Objective:** Generate a high-compliance advertising image prompt for **Real Estate** campaigns using an interview-first workflow and strict print/screen output constraints.
@@ -106,6 +106,24 @@ The generated prompt must end with a checklist confirming:
 - No UI/mockup styling.
 - No gradients/shadows (repeated).
 - Deliverable count and dimensions are exact.
+
+## False-Positive Prevention
+
+1. **A generated home is not the listed home.** The model adds an ocean view, a pool, an extra
+   storey, or a renovated kitchen, and the checklist still passes. Describe only features from the
+   listing; ask whether the image will be presented as the property or as illustrative, and say so
+   in the prompt.
+2. **People imagery can signal a preferred buyer.** Showing only one kind of household, age group,
+   or ethnicity, or text such as "perfect for young families", is a fair-housing-sensitive choice.
+   Default to property-only imagery and raise people imagery as a question for counsel through
+   `campaign/adcampaign_claims_compliance_review.md`; do not state the rule.
+3. **Listing facts are copied, never estimated.** Price, square footage, beds and baths, lot size,
+   address, and listing number come from intake verbatim.
+4. **Agent and brokerage details are regulated text.** Agent names, licence numbers, and brokerage
+   logos appear only as supplied; "Sold in 3 days" style proof needs its source.
+5. **Verify before handing over:** compare each feature in the Final Image Prompt (rooms, view,
+   pool, garage, storeys) with the listing data, then match every number and name to intake
+   exactly. A feature or figure the listing lacks fails.
 
 ## Output Format
 

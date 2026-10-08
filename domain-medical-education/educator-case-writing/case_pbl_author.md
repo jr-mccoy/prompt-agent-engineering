@@ -18,9 +18,9 @@ tags:
   - competency-alignment
 updated: "2026-05-15"
 related_prompts:
-  - ../meded_progressive_disclosure_case_designer.md
-  - ../meded_small_group_facilitation_guide.md
-  - ../meded_tbl_application_exercise_designer.md
+  - domain-medical-education/educator-case-writing/case_progressive_disclosure_designer.md
+  - domain-medical-education/educator-curriculum-design/curric_small_group_facilitation_guide.md
+  - domain-medical-education/educator-case-writing/case_tbl_application_exercise_designer.md
 ---
 
 # Problem-Based Learning Case Writer

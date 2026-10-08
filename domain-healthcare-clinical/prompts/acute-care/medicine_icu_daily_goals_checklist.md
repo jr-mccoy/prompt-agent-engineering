@@ -2,20 +2,38 @@
 title: "ICU Daily Goals Checklist"
 category: medicine
 description: "Structured ICU daily goals framework for multidisciplinary rounds, risk mitigation, and explicit day-level care planning."
+techniques:
+  - ST-03
+  - DS-02
+  - DS-06
+  - QA-04
+difficulty: advanced
 tags:
   - medicine
   - critical-care
   - icu
   - daily-rounds
   - patient-safety
-updated: "2026-05-05"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_handoff_communication.md
-  - domain-healthcare-clinical/prompts/medicine_sepsis_recognition_framework.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_documentation.md
+  - domain-healthcare-clinical/prompts/communication/medicine_handoff_communication.md
+  - domain-healthcare-clinical/prompts/acute-care/medicine_sepsis_recognition_framework.md
+  - domain-healthcare-clinical/prompts/workflow/medicine_clinical_documentation.md
 ---
 
 # ICU Daily Goals Checklist
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Help ICU teams run consistent, high-reliability daily rounds by translating overnight data into explicit goals for the next 24 hours, highlighting safety gaps, and clarifying escalation triggers.
 
@@ -89,6 +107,21 @@ Escalate immediately to attending/rapid response/consult service for any of:
 - New major hemorrhage or suspected ischemia
 - Rapidly rising lactate, anuria, severe acidemia, or hyperkalemia
 - Goals-of-care conflict requiring urgent family/ethics discussion
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "Goal:" lines that restate the problem ("optimize oxygenation", "improve renal function") — a goal with no number, deadline or owning discipline passes a skim but cannot be scored at evening rounds.
+- Fill RASS, MAP, SpO₂, glycemic or transfusion targets with generic values when the unit protocol was not provided; write `per facility protocol`.
+- Tick a SAFETY BUNDLE box such as "VTE prophylaxis appropriate" because an agent appears on the medication list; appropriateness depends on current platelets, bleeding and renal function, which must be in the input.
+- State antibiotic day numbers or device dwell days that were not supplied or that disagree with the dates given.
+
+✅ **DO:**
+- Pair each daily goal with the overnight trend it targets (e.g., norepinephrine 0.04 → 0.08, lactate 2.9 → 3.8) and check the goal moves that number in the right direction within 24 hours.
+- Recompute derived values from the inputs — urine output in mL/kg/hr from volume, hours and weight; P/F from PaO₂ and FiO₂; creatinine fold-change from baseline — and name the inputs used.
+- Count that every active problem has a goal, an escalation trigger and a reassessment time, and list any problem missing one.
 
 ---
 

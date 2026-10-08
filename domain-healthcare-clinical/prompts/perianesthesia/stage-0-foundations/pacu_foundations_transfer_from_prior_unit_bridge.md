@@ -14,7 +14,7 @@ target_users:
   - new-graduate-nurse
 techniques: [ST-02, ED-02, RT-02, QA-04, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_foundations_what_is_pacu.md
   - pacu_foundations_week1_expectations_map.md
@@ -27,6 +27,19 @@ references:
 ---
 
 # Transfer-From-Prior-Unit Bridge — What Carries Over, What to Unlearn
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A reflective self-assessment tool, not clinical decision support. Whether a prior-unit habit is safe in PACU is confirmed with your preceptor, not assumed.
 
@@ -85,6 +98,19 @@ The habit I'm most at risk of importing wrongly: [ ]
 | `prior_unit` | Selects the transfer/unlearn profile |
 | `years_experience` | Deeper reflexes may need more deliberate re-tuning |
 | `depth` | `orientation` (default) vs. `enriched` (adds mechanism for why a habit misfires) |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Build the profile from the prior-unit stereotype when the learner gave strengths and worries; a cardiac-surgery ICU nurse and a medical ICU nurse bring different emergence exposure, and a stereotyped list reads as tailored when it isn't.
+- File a habit under "actively unlearn" when PACU practice on it varies by facility (standing-order use, who adjusts which infusion); it belongs in re-tuning with a preceptor question.
+- Write a preceptor question that answers itself ("Should I escalate early? Yes."); the question must stay open on the local reality.
+- Credit a strength the learner did not claim and the prior unit does not usually build, such as airway-rescue fluency for a med-surg nurse.
+
+✅ **DO:**
+- Tag each item as learner-supplied or profile-inferred, and check every profile-inferred item against the stated `prior_unit` and `years_experience`.
+- Check each mimic warning names a concrete prior-unit situation and the PACU situation it gets mistaken for.
+- Confirm the watch-list holds only reflexes already listed under re-tuning or unlearn; nothing new should appear first in the summary.
 
 ## Verification Checklist
 

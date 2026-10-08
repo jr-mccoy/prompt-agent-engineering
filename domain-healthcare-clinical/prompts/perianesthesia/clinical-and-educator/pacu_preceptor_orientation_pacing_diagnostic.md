@@ -19,11 +19,11 @@ techniques:
   - ED-02
 difficulty: advanced
 related_prompts:
-  - prompts/pacu_orientation_skill_acquisition_timeline.md
-  - prompts/pacu_orientation_topic_sequencing_optimizer.md
-  - prompts/pacu_background_specific_pathway_adapter.md
-  - prompts/pacu_preceptor_debrief.md
-  - prompts/pacu_orientee_evaluation_meta_prompt.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_skill_acquisition_timeline.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientation_topic_sequencing_optimizer.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_background_specific_pathway_adapter.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_evaluation_meta_prompt.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
   - Benner, P. — From Novice to Expert

@@ -25,8 +25,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_board_style_question_review.md
-  - ../clinical-reasoning/learner_differential_diagnosis_drill.md
+  - domain-medical-education/learner-boards/boards_style_question_review.md
+  - domain-medical-education/learner-clinical-reasoning/reason_differential_diagnosis_drill.md
 ---
 
 # Distractor Analysis Drill for Health-Professions Learners

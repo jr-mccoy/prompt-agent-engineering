@@ -15,8 +15,20 @@ tags:
   - ards
   - copd
   - asthma
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -68,7 +80,7 @@ Senior critical care attending or anesthesiologist setting the vent at the bedsi
 
 7. **Set inspiratory time / I:E ratio.**
    - Default I:E 1:2 for normal lungs.
-   - 1:1 or inverse ratio (1:1.5) in ARDS to improve oxygenation (longer inspiratory time for alveolar recruitment).
+   - 1:1.5 to 1:1 in ARDS to improve oxygenation (longer inspiratory time for alveolar recruitment).
    - Prolonged expiration (1:3 to 1:5) in obstructive disease to prevent air trapping.
 
 8. **Check plateau pressure (Pplat).** Inspiratory hold on the vent.
@@ -92,6 +104,21 @@ Senior critical care attending or anesthesiologist setting the vent at the bedsi
 12. **Sedation and analgesia targets.**
    - RASS −2 to 0 ideal; deeper only when needed (paralysis, severe ARDS, raised ICP).
    - Daily SAT (sedation interruption) and SBT (spontaneous breathing trial) when conditions allow.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Multiply mL/kg by a PBW from the wrong-sex formula, or by actual weight; confirm the formula matches the sex in the input before computing Vt.
+- Label an I:E of 1:1.5 or 1:1 "inverse ratio"; inverse ratio means inspiration longer than expiration (e.g. 1.5:1), and the label written must match the number set.
+- Report a PEEP chosen by severity band as "per ARDSNet table"; either name the table and FiO2 row or call it a severity-based starting estimate.
+- Write an ECMO hypercapnia trigger without its source; the pH cut-off must match the cited criteria (EOLIA) and the sibling ARDS management prompt.
+- Accept a Pplat taken without an inspiratory hold, or during active patient effort, as meeting the <30 cmH2O target.
+
+✅ **DO:**
+- Recompute PBW and Vt (mL/kg × PBW) from the stated height and sex, show the arithmetic, and state how the set Vt was rounded.
+- Compute minute ventilation (Vt × RR) for the proposed settings and compare it with the pre-intubation picture; a low Vt without a matching RR rise predicts a PaCO2 climb.
+- For obstructive indications, record auto-PEEP measured on an expiratory hold before calling the I:E adequate.
+- Tag sedative starting doses `[VERIFY: facility sedation protocol]` unless the clinician supplied them.
 
 ## Output Format
 
@@ -141,7 +168,7 @@ PBW: 45.5 + 0.91 × (165 − 152.4) = 45.5 + 11.5 = 57 kg.
 MODE: Volume control / AC. Lung-protective Vt enforcement is the priority.
 Vt: 6 mL/kg PBW × 57 = 342 mL → set 340 mL.
 RR: 22 (compensate for low Vt; minute ventilation goal preserves CO2 clearance).
-PEEP: 14 cmH2O initially (severe ARDS, ARDSNet higher-PEEP table).
+PEEP: 14 cmH2O initially (severity-based starting estimate for severe ARDS, step 5 band 14–20 — not an ARDSNet table row; re-titrate against the named table and current FiO2).
 FiO2: 100% start; titrate down to SpO2 88–94% as tolerated.
 I:E: 1:1.5 (slightly prolonged inspiratory time for recruitment).
 
@@ -162,7 +189,7 @@ ESCALATION TRIGGERS:
 - P/F <150 after 12–24 h on optimal settings → prone positioning 16 h/day (PROSEVA).
 - Patient-vent dyssynchrony despite RASS −4 → cisatracurium infusion 48 h.
 - Refractory hypoxemia despite prone + paralysis → inhaled pulmonary vasodilator (iNO 20 ppm or inhaled epoprostenol).
-- Refractory hypoxemia (P/F <80 sustained) or refractory hypercapnia (pH <7.15) → consider VV-ECMO; transfer to ECMO center if not on-site.
+- Refractory hypoxemia (P/F <80 sustained) or refractory hypercapnia (pH <7.25 despite RR 35 and Pplat ≤32, EOLIA criteria) → consider VV-ECMO; transfer to ECMO center if not on-site.
 - If RV strain develops: lower PEEP cautiously, consider iNO, prone helps RV by reducing PVR.
 
 SEDATION:

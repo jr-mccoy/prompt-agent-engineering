@@ -15,8 +15,20 @@ tags:
   - diabetes
   - type-1
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -54,6 +66,20 @@ Endocrinologist managing T1DM, writing a regimen the patient and team can follow
 9. **Technology:** consider CGM for all; automated insulin delivery (hybrid closed-loop) for time-in-range and hypoglycemia reduction.
 
 10. **Surveillance:** annual TSH, celiac screen if symptoms, annual UACR/eGFR and dilated retina after 5 years duration, lipid panel, BP <130/80, foot exam.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Derive ICR (500 rule) or CF (1800 rule) from a weight-based TDD estimate when the actual TDD — basal plus average daily bolus from the pump or CGM-linked report — is available; the two can differ widely.
+- Apply the standard TIR >70% / TBR <4% goals to pregnancy (tighter 63–140 mg/dL range) or to older/high-risk adults (TIR >50%, TBR <1%) `[VERIFY: International Consensus on Time in Range]`.
+- Treat TIR/TBR as representative when the CGM report covers <14 days or <70% sensor wear.
+- Mix units — the 1800 rule is for mg/dL (the mmol/L equivalent is 100 ÷ TDD); state the unit next to every CF, target and alert.
+- Invent device settings — on some CGMs the urgent-low alarm is fixed (e.g., 55 mg/dL) rather than user-set; use the device's documented options.
+
+✅ **DO:**
+- Show the dosing arithmetic: TDD = basal + mean daily bolus → ICR = 500 ÷ TDD, CF = 1800 ÷ TDD; compare each derived value with the current setting and say whether the post-meal and post-correction CGM traces support moving it.
+- Map each proposed change to one AGP time block and its finding (overnight lows → basal; pre-lunch highs → breakfast ICR), and confirm no change adds insulin to a block where the input shows lows.
+- Count hypoglycaemia by level from the input (level 1 <70, level 2 <54 mg/dL, level 3 needing assistance) before writing the hypoglycaemia plan; a level 3 event changes the target and the AID discussion.
 
 ## Output Format
 
@@ -96,7 +122,7 @@ ADJUSTMENTS THIS VISIT:
 TARGETS: A1c <7%, TIR >70%, TBR <4% (currently 6% — too many lows).
 
 INSULIN REGIMEN:
-- TDD ~ 0.6 u/kg historically (~40 u). Current basal 28 is high relative to bolus → likely overbasalized, driving overnight lows.
+- Actual TDD = basal 28 + mean daily bolus [not provided — pull from pen/meter log or CGM-linked report]. Weight-based cross-check only: 0.6 u/kg × 65 kg ≈ 39 u, of which basal 28 would be ~72% (vs ~50% expected) → likely overbasalized, driving overnight lows.
 - Basal: reduce glargine 28 → 24 units; consider switch to degludec for flatter profile and exercise forgiveness, or split-dose glargine. Move dose timing review.
   - Better: verify with overnight CGM after reduction; basal correct when fasting trace flat.
 - Prandial: aspart. Pre-lunch highs suggest breakfast ICR too weak — tighten breakfast ICR 1:10 → 1:8; keep lunch/dinner 1:10 pending data.
@@ -105,7 +131,7 @@ INSULIN REGIMEN:
 
 CGM / MONITORING:
 - Review CGM AGP every 2 weeks during titration.
-- Set low alert 80, urgent-low 70.
+- Set low alert 80; urgent-low per the device's documented options (fixed at 55 mg/dL on some CGMs).
 
 HYPOGLYCEMIA PLAN:
 - Glucagon current — confirm not expired.

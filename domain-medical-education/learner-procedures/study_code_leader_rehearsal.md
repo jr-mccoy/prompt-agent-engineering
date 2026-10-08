@@ -22,7 +22,7 @@ tags:
   - team-leadership
   - closed-loop-communication
   - resuscitation
-updated: "2026-05-13"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-procedures/study_acls_algorithm_drill.md
   - domain-medical-education/learner-procedures/study_pals_algorithm_drill.md
@@ -164,6 +164,16 @@ Restudy target: [e.g., "Practice closed-loop confirmation for every drug order �
 | `family_present` | Learner must manage a family member entering the room during resuscitation — assign a team member immediately |
 | `termination_only` | Skip the active code; drill only the termination decision and family notification — trains the hardest moment |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Passing a 2-minute rhythm check as correct when the arrest began in monitored VF and the first shock was delayed for a full CPR cycle | For a shockable rhythm on arrival, check whether the leader called a shock as soon as the defibrillator was ready; grade against `[VERIFY: current AHA ACLS adult cardiac arrest algorithm]` |
+| Grading drug timing on whether epinephrine or amiodarone was named, not on where in the sequence it was ordered | Build a timeline of shocks and 2-minute cycles from the transcript and place each drug order on it; grade timing against the current algorithm's position for that rhythm |
+| Accepting "Charge to 200J biphasic" as the only correct energy | Accept the device's manufacturer-recommended energy; flag a specific joule number as `[VERIFY: device]` rather than marking another value as an energy error |
+| Awarding PASS on a 2-minute block in which no compressor swap or leader position is stated | Mark leader position and compressor swap `not observable` unless the transcript states them; a PASS needs the words |
+| Overall closed-loop grade written from impression after the first order | Recompute `N/N orders with full loop` by counting the per-order blocks; the total must equal the number of orders in the transcript |
+
 ## Verification Checklist
 
 - [ ] All 4 required roles are assigned in the opening 60 seconds — not assigned is always flagged.
@@ -180,10 +190,10 @@ Restudy target: [e.g., "Practice closed-loop confirmation for every drug order �
 **Scenario:** 68F found unresponsive on the medical floor. Monitor shows VF. Team present: nurse (Jane), tech (Mark), intern (Alex), pharmacist (Sam).
 
 **Learner arrival:** "Mark, start compressions now. Jane, get on the airway with BVM. Alex, establish IV and draw up meds. Sam, you're recording — call out every 2 minutes."
-**Audit:** All 4 roles assigned with names and tasks. Leader at foot of bed. **PASS.**
+**Audit:** All 4 roles assigned with names and tasks. **PASS.** Leader position: not observable — the transcript does not state where the leader stands.
 
 **Rhythm check at 2 min:** "Everyone stop — check rhythm. Still VF. Charge to 200J biphasic. Mark, Jane, Alex — everyone clear of the patient? Clear — shock."
-**Audit:** Rhythm check timing correct. Defibrillation energy correct. Safety check verbal ("everyone clear") before shock. **PASS.**
+**Audit:** Defibrillation energy correct. Safety check verbal ("everyone clear") before shock. **FLAG — first shock delayed:** the arrest began in monitored VF, so the leader should have called for the defibrillator on arrival and shocked as soon as it was ready, not waited for the first 2-minute rhythm check. **FLAG — no compressor swap:** the 2-minute check is the point to rotate compressors; Mark is still compressing and no swap was called.
 
 **Drug order:** "Give epi."
-**Audit:** Open-loop failure — not addressed to Alex, no dose stated, no read-back. Should be: "Alex, give epinephrine 1mg IV now." / "Epinephrine 1mg going in." / "Confirmed — epi in."
+**Audit:** Open-loop failure — not addressed to Alex, no dose stated, no read-back. **Timing error:** this order follows the first shock; in a shockable rhythm epinephrine is given after the second shock. Should be, after the second shock: "Alex, give epinephrine 1mg IV now." / "Epinephrine 1mg going in." / "Confirmed — epi in."

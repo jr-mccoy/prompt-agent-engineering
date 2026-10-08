@@ -14,8 +14,20 @@ tags:
   - cxr
   - chest
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -82,9 +94,17 @@ IMPRESSION:
 3. [incidental] — [follow-up if needed]
 ```
 
+## False-Positive Prevention
+
+- **Image findings written that the input never described.** When the input is a text description rather than the image, every line under LUNGS, PLEURA, and HEART/MEDIASTINUM must trace to a phrase in that description; a region not described is "not described", not "unremarkable". Before signing, match each output finding to its source phrase.
+- **Cardiomegaly called from the cardiothoracic ratio on an AP or supine film.** The >50% rule is for a PA view; AP magnification inflates it. Report a CTR only when both widths were measured on a PA film, and otherwise state that heart size cannot be assessed on this view.
+- **"No pneumothorax" or "no effusion" on a supine film.** Air collects anteriorly and at the bases (deep sulcus sign) and fluid layers as a diffuse veil. State the limitation and the study that would answer it (upright or decubitus film, ultrasound, CT).
+- **Tube and line positions given as if the landmarks were confirmed.** ETT distance to the carina moves with neck flexion and magnification, so state whether the carina is visible. For a central line, describe the vessel course as well as the tip level; a left-sided line can end in a persistent left SVC or an artery.
+- **"New", "unchanged", or "stable" stated without a dated prior.** Use these words only after a named comparison study, and check Fleischner eligibility (incidental nodule, adult, no known cancer or immunocompromise) before applying its pathway.
+
 ## Worked Example
 
-**Input:** 68 y/o M, 3 days dyspnea and orthopnea, h/o HFrEF EF 25%, on furosemide 40 BID. AP portable CXR. No prior available today.
+**Input:** 68 y/o M, 3 days dyspnea and orthopnea, h/o HFrEF EF 25%, on furosemide 40 BID. AP portable CXR, described as: semi-erect AP portable; 8 posterior ribs visible; no lines or tubes; bilateral perihilar interstitial opacities with peribronchial cuffing; upper-lobe vascular redistribution; Kerley B lines at the bases; no focal consolidation; small bilateral effusions, R > L, blunting both costophrenic angles; enlarged cardiac silhouette; mediastinum not widened, aortic knob unremarkable; no pneumothorax seen; no acute osseous abnormality; bowel gas unremarkable, no free air. No prior available today.
 
 **Output:**
 
@@ -93,12 +113,12 @@ TECHNIQUE: AP portable, semi-erect. Adequate inspiration (8 posterior ribs). No 
 LINES/TUBES: None.
 LUNGS: Bilateral perihilar interstitial opacities with peribronchial cuffing. Cephalization of pulmonary vasculature. Kerley B lines at the bases. No focal consolidation.
 PLEURA: Small bilateral pleural effusions, R > L, blunting both costophrenic angles.
-HEART/MEDIASTINUM: Cardiomegaly, CT ratio ~0.6. Mediastinum not widened. Aortic knob unremarkable.
+HEART/MEDIASTINUM: Enlarged cardiac silhouette, but heart size cannot be reliably assessed on an AP film (the CTR >50% rule is for PA views); no CTR reported. Mediastinum not widened. Aortic knob unremarkable.
 BONES/SOFT TISSUE: No acute osseous abnormality.
 UPPER ABDOMEN: Bowel gas pattern unremarkable. No free air.
 
 IMPRESSION:
-1. Cardiogenic pulmonary edema with bilateral pleural effusions in the setting of known HFrEF — IV diuresis (furosemide 80 mg IV now, double the home oral dose), strict I&Os, daily weights, BMP and BNP, telemetry. Consider non-invasive ventilation if hypoxic or work of breathing significant.
-2. Cardiomegaly — consistent with known cardiomyopathy; no new finding.
+1. Cardiogenic pulmonary edema with bilateral pleural effusions in the setting of known HFrEF — IV diuresis (furosemide 80 mg IV now — the same number of mg as the 80 mg/day total home oral dose, not double it; IV furosemide is more bioavailable than oral, so the effective dose is higher [VERIFY: current ACC/AHA/HFSA heart failure guideline on IV loop-diuretic dosing relative to the home dose]), strict I&Os, daily weights, BMP and BNP, telemetry. Consider non-invasive ventilation if hypoxic or work of breathing significant.
+2. Enlarged cardiac silhouette — consistent with known cardiomyopathy, but not measurable on an AP film; confirm on a PA film or echo if it would change management. No prior for comparison.
 3. No pneumothorax, no focal consolidation to suggest superimposed pneumonia.
 ```

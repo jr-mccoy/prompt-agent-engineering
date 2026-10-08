@@ -15,8 +15,20 @@ tags:
   - stemi
   - nstemi
   - critical-care
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -34,7 +46,7 @@ Manage a patient with acute coronary syndrome (STEMI, NSTEMI, or unstable angina
 ## Reasoning Steps
 
 1. **Classify ACS subtype.**
-   - **STEMI:** ST elevation ≥1 mm in ≥2 contiguous leads (≥2 mm in V2-V3 for men <40, ≥1.5 mm women, ≥2.5 mm men <40). New LBBB with concerning clinical picture (Sgarbossa criteria for STEMI-equivalent in pre-existing LBBB or paced rhythm: concordant ST elevation ≥1 mm, concordant ST depression V1–V3, or excessively discordant ST elevation ≥5 mm). Posterior MI: ST depression V1–V3 with tall R waves, confirm with V7–V9.
+   - **STEMI:** ST elevation ≥1 mm in ≥2 contiguous leads (≥2 mm in V2-V3 for men ≥40, ≥1.5 mm women, ≥2.5 mm men <40). New LBBB with concerning clinical picture (Sgarbossa criteria for STEMI-equivalent in pre-existing LBBB or paced rhythm: concordant ST elevation ≥1 mm, concordant ST depression V1–V3, or excessively discordant ST elevation ≥5 mm). Posterior MI: ST depression V1–V3 with tall R waves, confirm with V7–V9.
    - **NSTEMI:** elevated troponin without persistent ST elevation. ECG may show ST depression, T-wave inversion, or be normal.
    - **Unstable angina:** ischemic symptoms without troponin elevation. Increasingly rare with high-sensitivity troponin (hsTn detects nearly all true ischemia).
 
@@ -51,7 +63,7 @@ Manage a patient with acute coronary syndrome (STEMI, NSTEMI, or unstable angina
      - **Prasugrel 60 mg load** — avoid in age ≥75, weight <60 kg, prior stroke/TIA. Often given after coronary anatomy known.
      - **Clopidogrel 600 mg load** — alternative; lower potency. Used if ticagrelor/prasugrel contraindicated, or in fibrinolysis era.
    - **Anticoagulant:**
-     - **Heparin (UFH) 60 units/kg IV bolus (max 4000), then infusion 12 units/kg/h (max 1000/h)** to aPTT 1.5–2× control.
+     - **Heparin (UFH) 60 units/kg IV bolus (max 4000), then infusion 12 units/kg/h (max 1000/h)** to aPTT 1.5–2× control — this is the regimen used with fibrinolysis; the bolus for primary PCI is weight-based per a different regimen [VERIFY: current ACC/AHA STEMI/ACS guideline and cath lab protocol for the primary-PCI UFH bolus].
      - Bivalirudin 0.75 mg/kg bolus + 1.75 mg/kg/h infusion alternative, often used in cath lab.
      - Enoxaparin 1 mg/kg SC q12h alternative; 30 mg IV bolus + 1 mg/kg SC for STEMI fibrinolysis (per ExTRACT-TIMI 25).
    - **Statin: atorvastatin 80 mg PO** load on arrival (high-intensity).
@@ -99,6 +111,21 @@ Manage a patient with acute coronary syndrome (STEMI, NSTEMI, or unstable angina
    - SGLT2 inhibitor if T2DM, CKD, or HF.
    - Eplerenone after STEMI with EF <40% + HF or DM (EPHESUS).
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the ANTICOAGULATION line with a weight-based heparin or enoxaparin number when the input gives no weight; write `[weight needed]` rather than back-filling a typical adult weight.
+- Label the tracing STEMI or STEMI-equivalent without naming the exact criterion the supplied ECG meets (lead-group ST threshold for the patient's sex and age, Sgarbossa element, posterior pattern confirmed on V7–V9, De Winter morphology).
+- Write a door-to-balloon or door-to-needle figure as "achievable" from a default; it must come from the onset time and the local PCI capability given in Inputs.
+- Load a P2Y12 inhibitor in NSTEMI on the STEMI branch without stating whether angiography is planned within 24 h, since step 5 changes the timing on that fact.
+- Copy the secondary-prevention drug and dose lines into the order set as given; tag each `[VERIFY: current label/formulary]` and adjust to the supplied eGFR and K⁺.
+
+✅ **DO:**
+- Recompute every weight-based dose from the stated weight and show which cap was applied (UFH bolus and infusion caps, tenecteplase weight band).
+- Trace each ANTI-ISCHEMIC entry to a contraindication check against the inputs: right-sided leads before nitrates in inferior MI, PDE-5 inhibitor use, shock, AV block and asthma before a beta-blocker.
+- For NSTEMI, show the GRACE score with its components, or mark it "not calculable — missing [item]", before assigning an invasive-timing tier.
+- Recompute CrCl from age, weight, sex and creatinine when only creatinine is given, then check the enoxaparin interval and fondaparinux choice against it.
+
 ## Output Format
 
 ```
@@ -142,7 +169,7 @@ POST-ACUTE / SECONDARY PREVENTION:
 
 ## Worked Example
 
-**Input:** 58 y/o M, smoker, presenting with 45 minutes of crushing substernal chest pain. BP 138/82, HR 92, SpO2 98%. ECG: ST elevation 3 mm V1-V4 with reciprocal ST depression in II, III, aVF. Troponin pending. PCI center available, door-to-balloon achievable in 60 minutes. Aspirin allergy: none. PMH: HTN. Cr 0.9.
+**Input:** 58 y/o M, smoker, presenting with 45 minutes of crushing substernal chest pain. BP 138/82, HR 92, SpO2 98%. ECG: ST elevation 3 mm V1-V4 with reciprocal ST depression in II, III, aVF. Troponin pending. PCI center available, door-to-balloon achievable in 60 minutes. Aspirin allergy: none. PMH: HTN. Weight 70 kg. Cr 0.9.
 
 **Output:**
 
@@ -161,7 +188,7 @@ ANTIPLATELETS:
   - If concerns about CABG (unlikely given STEMI plan for PCI), some centers defer P2Y12 until anatomy known.
 
 ANTICOAGULATION:
-- Heparin 60 units/kg IV bolus = 4200, capped at 4000 IV. Then infusion 12 units/kg/h ≈ 840 units/h, titrated to aPTT 1.5–2× control. Cath lab will continue or switch to bivalirudin per their protocol.
+- Heparin IV bolus, weight-based on 70 kg, per the primary-PCI UFH regimen [VERIFY: current ACC/AHA STEMI/ACS guideline and cath lab protocol]. (The step-3 regimen of 60 units/kg = 4200, capped at 4000, then 12 units/kg/h ≈ 840 units/h is the fibrinolysis regimen and is not the primary-PCI bolus.) Cath lab will continue or switch to bivalirudin per their protocol.
 - Bivalirudin alternative if used.
 
 ANTI-ISCHEMIC:

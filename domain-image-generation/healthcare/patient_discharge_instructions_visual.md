@@ -2,6 +2,15 @@
 title: "Patient Discharge Instructions Visual Sheet - Image Generation Prompt"
 category: medical-education
 description: "Template-driven image generation prompt for a visual discharge-instructions handout (medications, activity, follow-up, and warning signs / when to call). Low-health-literacy friendly: large type, simple icons, high contrast. The model renders clinician-supplied content only."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - medical
   - patient-education
@@ -10,7 +19,7 @@ tags:
   - handout
   - plain-language
   - image-generation
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - ../IMAGE_GENERATION_GUIDE.md
   - ./patient_education_condition_infographic.md
@@ -364,6 +373,21 @@ Not recommended for exact doses/dates.
 
 ### Problem: 3D mockup / rounded corners / gradients
 **Add:** `"This IS the flat printed page. Sharp 90-degree corners only. Solid fills only. No device, hand, shadow, or gradient."`
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Let the three MED rows silently truncate a longer reconciliation — a fourth or fifth medicine, or the stopped home medicines, simply vanish and the sheet still looks complete.
+- Accept a schedule that lost its qualifier: "every 6 hours as needed for pain" printed as "every 6 hours" turns a PRN into a scheduled dose, and a dropped "until all are gone" shortens an antibiotic course.
+- Pass a verbatim activity line placed in the wrong column — "Drive while taking pain medicine" under the green "You CAN" heading is faithful text and dangerous advice.
+- Trust well-formed digits: "(555) 123-4567" → "(555) 132-4567", "10:00 AM" → "10:00 PM", "100.4 F (38 C)" re-converted — each still looks like a valid phone number, time or temperature.
+
+✅ **DO:**
+- Proof the printed sheet against the signed discharge order and medication reconciliation, not against your own fill; copy dose text character for character from the order, and confirm the number of medicines shown equals the number reconciled (or that the sheet says where the rest are listed).
+- Read every phone number digit by digit against the clinic directory, and confirm the follow-up date, weekday and time match the booked appointment.
+- Check that no line contradicts another order in the chart (shower timing vs the wound-care order, lifting limit vs the therapy note), and score the printed text's reading grade level.
 
 ---
 

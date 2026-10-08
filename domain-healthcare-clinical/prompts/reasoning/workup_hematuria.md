@@ -14,8 +14,20 @@ tags:
   - nephrology
   - diagnostic-workup
   - hematuria
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -57,7 +69,7 @@ Work up hematuria: confirm true blood, distinguish glomerular vs urologic source
 
 4. **Workup urologic hematuria — apply AUA microhematuria risk stratification.**
 
-   - **Low risk:** female <50, male <40, never smoker, ≤25 pack-years, 3–10 RBC/hpf on a single UA, no risk factors. Recommend repeat UA in 6 months OR cystoscopy + renal US (shared decision).
+   - **Low risk:** female <50, male <40, never smoker or <10 pack-years, 3–10 RBC/hpf on a single UA, no risk factors. Recommend repeat UA in 6 months OR cystoscopy + renal US (shared decision).
    - **Intermediate risk:** female 50–59, male 40–59, 10–30 pack-years, 11–25 RBC/hpf on single UA OR 3–25 RBC/hpf on a repeat UA after a low-risk negative initial. Recommend cystoscopy AND renal US.
    - **High risk:** female ≥60, male ≥60, >30 pack-years, >25 RBC/hpf, gross hematuria, prior gross hematuria, irritative voiding symptoms with risk factors. Recommend cystoscopy AND CT urography (multiphase CT with contrast).
 
@@ -95,6 +107,20 @@ Work up hematuria: confirm true blood, distinguish glomerular vs urologic source
 9. **Surveillance.**
    - Persistent unexplained microhematuria after negative workup: repeat UA in 12 months; if recurrent or progressive, repeat workup, especially if new risk factors or transition to gross.
    - Document workup completion and recommendations clearly.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign the AUA tier from one criterion; check every criterion (age/sex, pack-years, RBC/HPF, gross-hematuria history, other risk factors), let the highest tier win, and place boundary values (exactly 30 pack-years, exactly 25 RBC/HPF) by the guideline's own inequality.
+- Accept a dipstick positive as hematuria without microscopy RBC/HPF, or a single microscopy taken during infection, menses, exercise or after catheterization as persistent hematuria.
+- Write "no phenazopyridine, rifampin, beets" or "no occupational exposure" when the input did not report them.
+- Quote a malignancy percentage for the patient without the source population it comes from.
+- Close the evaluation after cystoscopy alone when the upper tract was not imaged, or after imaging alone when cystoscopy was indicated.
+
+✅ **DO:**
+- Recount RBC/HPF on every UA supplied, note which specimens were properly collected, and confirm the microscopy threshold is met before staging risk.
+- Show the criterion → tier mapping against the current guideline table `[VERIFY: AUA/SUFU microhematuria guideline, current edition]`.
+- Trace the glomerular vs non-glomerular call to the sediment report (dysmorphic RBCs, casts) and UPCR; if microscopy was automated without morphology, call the source undetermined.
 
 ## Output Format
 
@@ -151,7 +177,7 @@ CLASSIFICATION:
 - No flank pain, no LUTS prominent → consider bladder source highest priority.
 
 RISK STRATIFICATION (AUA):
-- HIGH RISK: gross hematuria, age ≥60, ≥30 pack-year smoking history. Mandates cystoscopy + CT urography regardless.
+- HIGH RISK: gross hematuria, age ≥60. Smoking 30 pack-years falls in the intermediate band (10–30), not the high band (>30); the tier is high regardless. Mandates cystoscopy + CT urography.
 
 GLOMERULAR WORKUP:
 - Trace protein, no casts, no dysmorphic RBC; UPCR 0.2 — minimal proteinuria.

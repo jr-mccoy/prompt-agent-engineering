@@ -17,7 +17,7 @@ tags:
   - verbatim-text
   - gpt-image-2
   - nano-banana-pro
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/social-media/README.md
   - domain-image-generation/social-media/social_carousel_set.md
@@ -153,6 +153,22 @@ If any character of the quote or attribution differs from the text above, the ou
 3. "Text contrast is weak against the gradient — darken the background or switch text to [higher-contrast hex]."
 4. "Text is too close to the bottom edge — increase the inset to ≥8% for crop safety."
 5. "Tighten the line breaks so the quote reads in [N] balanced lines."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept `[ATTRIBUTION]` as correct because it rendered verbatim — lines credited to Einstein, Twain, Lincoln, Gandhi or Maya Angelou are often misattributed, or are paraphrases the person never said in that form, and a flawless card spreads the error under your brand.
+- Proof the quote against the version that circulates online; popular copies drift in word order and wording from what was actually said or written.
+- Overlook the quotation marks themselves — models sometimes render the prompt's own wrapping quotes, giving doubled marks, or drop the opening one; decide whether marks are part of the design and check their glyphs.
+- Pass the line breaks because every word is present — a lone word on the last line, or a name split across lines ("Maya / Angelou"), changes the emphasis the quote carries.
+- Tag an @handle beside the attribution before confirming it is that person's own account rather than a fan, parody or lookalike.
+
+✅ **DO:**
+- Trace the quote to a primary source (book with page, speech transcript, dated interview) or a dedicated quote-verification reference; if none turns up, tell the user and offer "Attributed to …" or a different quote.
+- Count the words in the rendered quote and compare them in order against the primary-source wording, not against the brief alone.
+- For song lyrics, poems or passages from recent books, confirm the brand has the right to reproduce the excerpt before posting.
 
 ---
 

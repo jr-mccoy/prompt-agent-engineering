@@ -27,9 +27,9 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ./learner_critical_event_recognition_drill.md
-  - ./learner_simulation_pre_briefing.md
-  - ../clinical-skills/learner_osce_self_rehearsal.md
+  - domain-medical-education/learner-procedures/study_critical_event_recognition_drill.md
+  - domain-medical-education/learner-procedures/study_simulation_pre_briefing.md
+  - domain-medical-education/learner-osce-skills/osce_self_rehearsal.md
 ---
 
 # Code Algorithm Rehearsal for Health-Professions Learners

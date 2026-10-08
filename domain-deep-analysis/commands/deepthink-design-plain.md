@@ -1,6 +1,7 @@
 ---
 name: deepthink-design-plain
 description: A plain-English version of /deepthink-design, written for non-technical users. Same five-step rigor as the original, with simpler language and friendlier check-ins. Drives the model through Frame → Break Down design choices → Multiple Viewpoints → Stress-Test → Sum Up, using AskUserQuestion at every check-in. Result is a design document with the choices made, the tradeoffs accepted honestly, and the open questions named out loud.
+techniques: [RT-02, RT-07, CM-02, QA-02, QA-04]
 version: "1.0.0"
 category: deep-analysis
 tags: [deep-analysis, design, architecture, multi-perspective, tradeoff-analysis, plain-english, non-technical, accessible, gated-workflow]
@@ -54,6 +55,12 @@ This command inherits shared behavior from [`domain-deep-analysis/BACKBONE.md`](
 4. **Continue step-by-step.** Each step ends with the gate mechanism defined in `BACKBONE.md`. Never run multiple steps in a single output.
 
 5. **At the final check-in in Step 5,** offer the follow-on (`/deepthink-plan-plain`) when relevant.
+
+## False-Positive Prevention
+
+1. **Designing something you haven't decided to build.** If Step 1 shows the real question is "should we do this at all?", switch to `/deepthink-decision-plain`. If the design is settled and you need dates and steps, switch to `/deepthink-plan-plain`; if you want an existing setup judged, switch to `/deepthink-evaluation-plain`.
+2. **Treating "looks good" as agreement on the hard-to-change choices.** The second check-in is where you tell me which choices would be painful to undo later. If your answer didn't say, I'll ask that one thing before the viewpoints round.
+3. **A design document with holes.** Before the final check-in, each hard-to-change choice must show what I picked, why, the tradeoff, how confident I am, and whether it's hard or easy to change later — plus the constraints list, the assumptions, the what-changes-easily table, the risk list, and open questions each with a way to settle them.
 
 ## Success Criteria
 

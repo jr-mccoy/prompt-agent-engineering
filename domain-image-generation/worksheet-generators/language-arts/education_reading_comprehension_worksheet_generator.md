@@ -2,13 +2,23 @@
 title: "Reading Comprehension Worksheet Generator"
 category: education
 description: "Generate reading-comprehension worksheets with passage, text-dependent questions, and evidence lines."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - language-arts
   - worksheet
   - reading-comprehension
   - close-reading
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Reading Comprehension Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill the lexile slot with an invented number; a Lexile measure comes only from the official analyzer, so write "not measured" if you did not run it.
+- Judge grade fit from short sentences alone; rare multi-syllable vocabulary raises difficulty that sentence length hides.
+- Label a ZONE 4 item "inferential" when its answer is stated verbatim, or "literal" when it needs outside knowledge.
+- Leave ZONE 5 "paragraph __" lines when the render merged paragraphs or dropped their numbers.
+
+✅ **DO:**
+- Compute Flesch-Kincaid Grade Level on the passage text (0.39 x words/sentence + 11.8 x syllables/word - 15.59) and compare it with the intake grade; treat scores for passages under 100 words as rough.
+- Answer each question from the rendered passage only and note the paragraph; rewrite any question answerable without reading the passage.
+- Transcribe the rendered passage and diff it against the source text, since long blocks lose or garble words.

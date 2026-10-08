@@ -22,7 +22,7 @@ tags:
   - active-learning
   - learning-objectives
   - faculty-teaching
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_learning_objective_author.md
   - domain-medical-education/educator-curriculum-design/curric_flipped_classroom_module_designer.md
@@ -181,6 +181,16 @@ Replaced with: split into 2 × 10-min blocks with ARS break.
 | `pre_class_resources` | If pre-readings exist, opens with knowledge-check on pre-work; spends less time on basics |
 | `speaker_experience` | Junior speaker → fuller speaker notes; experienced → outline only |
 | `include_microlecture_link` | Adds embedded microlecture videos for sections that can be flipped |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Passing "Any passive block > active_learning_cadence" by measuring content blocks only, while the passive opening (hook, LO slide, agenda) runs straight into Block 1 | Measure passive intake from the last active moment: opening plus Block 1 is one passive run, and if it exceeds `active_learning_cadence` the first ARS question moves earlier |
+| Checking only the final timestamp against `time_minutes` while segments overlap or leave gaps, or a closing slot holds four ARS items with reveals in a few minutes | Recompute each segment's duration from its start and end stamps, sum them, and check that every timed activity (ARS reveal, think-pair-share phases) physically fits its slot |
+| A knowledge check whose item count differs from the LO count (four KC items for three LOs), or a KC item tagged to one LO that tests a detail taught in another block | Count LOs and KC items, then pair them one-to-one by quoting the LO behavior each item measures |
+| ARS "Expected distribution" percentages invented and presented as if drawn from data | Label the distribution a prediction, make it sum to 100, and omit it when the presenter has no prior-run data to base it on |
+| Clinical-content row of the SOURCE-FIDELITY AUDIT marked "verified" for time windows, drug choices or doses written into slide briefs from memory | Mark clinical rows verified only against a guideline the user named or supplied; otherwise tag each slide carrying the number [VERIFY: current guideline edition] |
 
 ## Verification Checklist
 

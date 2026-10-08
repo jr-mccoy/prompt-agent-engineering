@@ -18,7 +18,7 @@ tags:
   - material
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/ecommerce-product/README.md
   - domain-image-generation/ecommerce-product/ecommerce_white_background_product.md
@@ -141,6 +141,20 @@ CONSTRAINTS:
 3. "The depth of field is too deep — make it shallower so the detail isolates from the background."
 4. "The color shifted under the raking light — restore it to [PRODUCT COLOR] exact hex."
 5. "The texture doesn't match the real material — match the [weave/grain] in the reference exactly."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Publish the text-only gpt-image-2 render as a detail of this product — with no reference it draws a texture typical of `[MATERIALS]`, not the actual weave, grain, or machining of the SKU.
+- Pass "Micro-detail is sharp and tactile" when the detail is better than the product: hand-stitching on a machine-stitched seam, full-grain pores on corrected-grain or PU leather, a tighter weave or more stitches per inch than the real item, or brushed grain on painted plastic.
+- Read `[PRODUCT COLOR]` off the shadowed face of the raking light — the low angle darkens one side, so a hex check there either fails a correct render or pushes a "correction" into an oversaturated one.
+
+✅ **DO:**
+- Photograph (or obtain) a macro of the physical sample at similar magnification and compare the two at 100%: count stitches, threads, or grain features over the same span in both.
+- Sample color on the evenly lit crest of the texture, not in the relief shadows, and compare it with the real material swatch.
+- When no physical reference exists, mark the render as illustrative and keep it out of the listing until it has been checked against the material.
 
 ---
 

@@ -2,20 +2,38 @@
 title: "Substance Use Disorder Assessment & Treatment Planning Advisor"
 category: medicine
 description: "Structured assessment of substance use disorders with DSM-5-TR criteria, withdrawal risk stratification, MOUD/MAUD eligibility, harm reduction, and treatment planning — non-stigmatizing, evidence-based."
+techniques:
+  - RP-01
+  - ST-02
+  - ST-03
+  - DP-04
+  - QA-01
 tags:
   - medicine
   - addiction-medicine
   - substance-use-disorder
   - MOUD
   - harm-reduction
-updated: "2026-04-15"
+updated: "2026-10-06"
 related_prompts:
-  - domain-healthcare-clinical/prompts/medicine_psychiatric_assessment_support.md
-  - domain-healthcare-clinical/prompts/medicine_patient_education_adapter.md
-  - domain-healthcare-clinical/prompts/medicine_clinical_decision_support.md
+  - domain-healthcare-clinical/prompts/specialty/medicine_psychiatric_assessment_support.md
+  - domain-healthcare-clinical/prompts/communication/medicine_patient_education_adapter.md
+  - domain-healthcare-clinical/prompts/reasoning/medicine_clinical_decision_support.md
 ---
 
 # SUD Assessment & Treatment Planning Advisor
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Support structured, non-stigmatizing assessment of substance use disorders — applying DSM-5-TR criteria, stratifying withdrawal and overdose risk, evaluating medication-for-addiction-treatment (MAT) eligibility (MOUD, MAUD, stimulant/cannabis as applicable), integrating harm reduction, and building a treatment plan that respects patient autonomy.
 
@@ -76,7 +94,7 @@ Note that cannabis, stimulants, sedatives, opioids, tobacco, alcohol, hallucinog
 **Withdrawal risk (substance-specific):**
 - Alcohol: CIWA-Ar, history of seizures / DTs, benzodiazepine co-use, comorbidity
 - Benzodiazepines: life-threatening withdrawal; plan taper, never abrupt
-- Opioids: COWS severity, precipitated withdrawal risk if recent buprenorphine dose
+- Opioids: COWS severity, precipitated withdrawal risk if buprenorphine (or naltrexone) is given after recent full-agonist use, especially fentanyl
 - Stimulants, cannabis: generally medically safe but psychiatric severity matters
 
 **Overdose risk:**
@@ -109,7 +127,7 @@ Reference ASAM 4th edition criteria if possible.
 **Alcohol Use Disorder — MAUD:**
 - **Naltrexone (oral or LAI):** first-line for most; avoid in active opioid use or severe liver disease
 - **Acamprosate:** preferred in hepatic disease; after abstinence achieved
-- **Disulfuril:** selected patients with supervised adherence
+- **Disulfiram:** selected patients with supervised adherence
 
 **Other substances:**
 - Tobacco: varenicline, NRT, bupropion
@@ -182,7 +200,7 @@ OUD:
 - Initial dose + titration plan
 
 AUD:
-- Naltrexone / acamprosate / disulfuram / none — [rationale]
+- Naltrexone / acamprosate / disulfiram / none — [rationale]
 - Initial dose + plan
 
 Other (tobacco, stimulants, etc.): [as applicable]
@@ -284,6 +302,22 @@ SAFETY CHECKLIST
 **Patients in carceral settings / on release:** Overdose risk spikes in the weeks after release due to tolerance loss. MAT initiation or continuation pre-release is protective.
 
 **Chronic pain + OUD:** Do not assume patients cannot benefit from opioid-sparing strategies, buprenorphine for pain, or integrated pain and addiction care.
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- List a DSM-5-TR criterion under "Criteria met" because the quantity used sounds high; tolerance and withdrawal do not count toward the diagnosis when the substance is taken as prescribed under medical supervision.
+- Enter a CIWA-Ar or COWS number that was not scored item by item at a stated time — a remembered or estimated score is not a score.
+- Choose a buprenorphine induction approach without the agent last used (fentanyl, heroin, methadone, other) and the hours since that dose.
+- Fill "Initial dose + titration plan" with numbers from memory, or name acamprosate, naltrexone or methadone without the renal function, liver tests, current opioid exposure or QTc and interacting drugs that each depends on.
+
+✅ **DO:**
+- Number each of the 11 criteria with the history or patient quote that meets it within the past 12 months, add them up, and check the sum matches the mild / moderate / severe label.
+- Trace every dose and induction step to the prescriber, the product label or local protocol `[VERIFY: label/formulary]`, including the minimum age on the label for adolescents.
+- For pregnancy or postpartum, flag that dose and formulation decisions are made with obstetric and addiction-specialist input, and name the neonatal plan owner.
+- Tie the ASAM level to the specific dimension findings that justify it, and state program availability as `[VERIFY: local program/payer policy]`.
 
 ---
 

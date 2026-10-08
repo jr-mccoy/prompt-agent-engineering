@@ -16,7 +16,7 @@ tags:
   - search-grounding
   - data-visualization
   - google
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/NANO_BANANA_GUIDE.md
   - domain-image-generation/gpt-image-2/gptimage2_dense_text_infographic.md
@@ -184,6 +184,23 @@ CONSTRAINTS:
 2. "Section 3's chart labels overlap — increase spacing or reduce font size."
 3. "The source attribution is too small to read on mobile — increase to 10pt minimum."
 4. "The color contrast between data bars and background fails WCAG AA — darken the bar color."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Tick "All data values verified via search grounding" because `google_search` was enabled — the tool being on does not show which value came from which source, and the image can render a number grounding never returned.
+- Accept a "Sources:" strip whose outlet names look right but do not appear in the response's grounding metadata; source names rendered in the image are image text, not citations.
+- Let "[approximate]" relative rankings drive a bar chart — bar lengths then encode values nobody sourced (the Example's monthly-active-user and API-volume figures are rarely published by vendors).
+- Present a "2026" title over figures grounded on older articles; the year in the headline is not the date of the data.
+- Let grounding overwrite numbers the user supplied in [DATA POINTS] — the guide's rule is not to let the model override your data.
+
+✅ **DO:**
+- Build a value ledger before sign-off — rendered value → grounded source URL from the response metadata → value at source → source date — and turn any rendered value without a complete row into [VERIFY] or remove it.
+- Read every rendered number digit by digit against the ledger (unit, decimal point, M vs B); rendering errors survive even when grounding was right.
+- Measure bar lengths in px and divide by their values; ratios that disagree by more than a few percent fail "Chart/graph proportions accurately reflect the data".
+- Count the [VERIFY] flags the ledger says should appear and confirm the render did not replace any with a plausible number.
 
 ---
 

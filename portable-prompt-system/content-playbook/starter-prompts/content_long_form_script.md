@@ -17,7 +17,7 @@ tags:
   - long-form
   - retention
   - voiceover
-updated: "2026-05-27"
+updated: "2026-10-06"
 related_prompts:
   - domain-professional-writing/content-production/content_series_channel_bible.md
   - domain-professional-writing/content-production/content_short_form_hook_bank.md
@@ -102,6 +102,28 @@ Table: segment → retention device → why it holds the viewer.
 
 ### Open Items
 Bulleted list of every `[UNVERIFIED]` flag and any source gaps to fill.
+
+---
+
+## False-Positive Prevention
+
+1. **Retention lore is a statistic too.** Lines such as "most viewers leave in the first
+   30 seconds" or "audiences remember stories 20x better" read as framing, not facts, so they
+   slip past the source check. If `<source_material>` does not contain the figure, it carries
+   `[UNVERIFIED — human check]` like any other number.
+2. **The Retention Map records design intent, not performance.** The "why it holds the viewer"
+   column is a hypothesis about a device; do not phrase it as measured retention or attach
+   percentages unless the user supplied analytics.
+3. **A hook can pass the ≤2-sentence check and still be a broken promise.** "The one mistake that
+   sank X" opens a loop; if no segment of the body names that mistake, the script fails its own
+   job. Each hook alternate must have a payoff segment too, or it is not a real alternate.
+4. **Paraphrase can manufacture causation.** Source says A happened, then B; the script says
+   "A caused B". The nouns trace to the source while the relationship does not.
+5. **Verify before delivering:** list every number, name, date, quote, and causal word
+   ("because", "led to", "so") in the script and write beside each the `<source_material>`
+   passage it came from or its `[UNVERIFIED]` flag; for the chosen hook and both alternates,
+   write the timestamp of the segment that closes the loop; compute length from the actual word
+   count at a stated words-per-minute rate, not by eye.
 
 ---
 

@@ -2,12 +2,21 @@
 title: "Product Roadmap Alignment Visualization Prompt"
 category: product-management
 description: "Generate a structured, no-UI visualization prompt optimized for product management decision workflows."
+techniques:
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - visualization
   - no-ui
   - diagram
   - strategy
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Product Roadmap Alignment Visualization Prompt
@@ -103,3 +112,16 @@ FINAL VALIDATION CHECKLIST (must pass before finalizing)
 - Merge overlapping concepts when needed, but do not exceed five primary zones.
 - Prefer concise labels and explicit directional flow arrows.
 - If intake is ambiguous, request clarification before generation.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Put dates, sprint numbers, or quarter boundaries on the ZONE 2 timeline that the intake's release windows did not give — a precise date on a roadmap reads as a commitment.
+- Let theme bars be stretched or aligned to look evenly paced when the release windows overlap or leave gaps.
+- Show ZONE 4 outcome metrics with targets or guardrail thresholds the PM never set.
+- Render ZONE 5 readiness items as already ticked.
+
+✅ **DO:**
+- Map each theme to its intake release window and measure each bar's start and end against the timeline axis.
+- Check every ZONE 3 dependency arrow against the intake list, and confirm no dependent theme begins before its prerequisite ends.
+- Leave readiness items unticked by default, ticking only those the intake reports as done.

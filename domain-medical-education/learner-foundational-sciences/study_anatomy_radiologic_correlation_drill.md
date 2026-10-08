@@ -23,7 +23,7 @@ tags:
   - correlation
   - imaging
   - drill
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_anatomy_concept_drill.md
   - domain-medical-education/learner-foundational-sciences/study_neuroanatomy_lesion_localization_drill.md
@@ -108,6 +108,16 @@ Integration vignette: [single-finding → predict adjacent slice]
 | `add_pathology` | If `true`, one in three structures is drilled in the diseased state instead of normal |
 | `include_contrast_phase` | `none` / `arterial` / `portal venous` / `delayed` — affects expected appearance |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Locking a structure list that includes structures not present on the anchored slice (an arch-level vessel on a carina-level cut) | Before locking, confirm each structure is visible at the stated axial level; one that isn't is swapped out or drilled at its own named level |
+| Quoting vertebral levels that drift across the three views (T4/5 at the surface, T5 on the anchor, T5–T6 on film) as if each were exact | Give one reconciled level range for the structure across all three views, and note that respiration and body habitus shift it |
+| Placing a structure "behind" or "over" a shadow it doesn't overlap on the stated projection | Check the projection geometry: on the named view (PA, lateral, AP supine), would that structure project over the shadow you cite? If not, name the shadow it does project over |
+| Assigning a combined grade the rubric doesn't define (two views right, one wrong) by intuition | Apply the correct/partial/incorrect definitions literally, and when a pattern falls between them, state the rule you used in the grade line |
+| Normal ranges and angles (carinal angle, bronchial take-off angles) given from memory as grading thresholds | Tag each numeric normal you grade against with its reference type [VERIFY: radiology anatomy reference], and accept answers inside the published range rather than a single remembered number |
+
 ## Verification Checklist
 
 - [ ] Every structure receives all three views (surface, film, cross-section). No view is skipped.
@@ -127,26 +137,26 @@ Integration vignette: [single-finding → predict adjacent slice]
 ```
 RADIOLOGIC CORRELATION DRILL
 Region: chest   Pair: CXR (PA) + chest CT
-Slice anchor: PA chest radiograph, axial CT at the carina (≈ T5)
+Slice anchor: PA chest radiograph, axial CT at the carina (≈ T4–T6; shifts with respiration and body habitus)
 Learner level: MS3   Structures: 6
-Order: 1. Trachea/main bronchi  2. Aortic arch  3. Pulmonary trunk  4. Azygos vein arch  5. Esophagus  6. Vertebral body
+Order: 1. Trachea/main bronchi  2. Ascending aorta  3. Pulmonary trunk  4. Azygos vein arch  5. Esophagus  6. Vertebral body
 
 >>> STRUCTURE 1 of 6: Trachea / main bronchi at the carina
 
 A. Surface: On a standing patient, what surface landmark approximates the carina, and how do you reach it from the manubrium?
    → [learner response]
-   → Grade: correct if names sternal angle (angle of Louis) ≈ T4/T5, junction of manubrium and body of sternum.
+   → Grade: correct if names sternal angle (angle of Louis), junction of manubrium and body of sternum, level with the T4/T5 disc (carina within the same reconciled T4–T6 range).
 
 B. Plain film (PA CXR): Where does the carina appear, and what is the normal range of the carinal angle?
    → [learner response]
-   → Grade: correct if locates carina at the T5–T6 level, behind heart shadow, with carinal angle 40–80°.
+   → Grade: correct if locates carina within the T4–T6 range, projected over the upper mediastinum above the cardiac silhouette, with carinal angle 40–80°.
 
 C. Cross-section (axial CT at carina): How do you distinguish the right main bronchus from the left at this slice? What anterior structure crosses near it?
    → [learner response]
    → Grade: correct if names: right main bronchus more vertical and wider; ascending aorta anterior, descending aorta left-posterior; SVC right-anterior.
 
-Combined grade: partial — surface and plain film correct; CT distinction confused right vs left bronchus angles.
+Combined grade: partial — surface and plain film correct; CT distinction confused right vs left bronchus angles. (Rule used: two views right and one wrong is not "all three correct" and not "≥ 2 views wrong," so it is graded partial.)
 Correction: Right main bronchus angle from midline ≈ 25°, left ≈ 45° (FB aspiration favors right).
 
->>> STRUCTURE 2 of 6: Aortic arch ...
+>>> STRUCTURE 2 of 6: Ascending aorta ...
 ```

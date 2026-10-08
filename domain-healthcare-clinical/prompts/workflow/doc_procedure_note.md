@@ -14,8 +14,20 @@ tags:
   - procedure-note
   - bedside-procedures
   - clinical-notes
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -54,6 +66,19 @@ Proceduralist documenting immediately after a bedside procedure.
 
 8. **Don't fabricate.** Attempts, EBL, and complications must match reality; the note is a medicolegal record.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Add the anesthetic concentration, antiseptic agent, anatomic landmarks, "all ports aspirated and flushed", "no arterial puncture" or "hemodynamics unchanged" when the operator did not report them.
+- Write "attending present at bedside" when the input says only "supervised" or "aware" — physical presence is a teaching-physician and billing claim.
+- State catheter depth at the skin, needle gauge or volume removed from typical values — these are read later to judge malposition and re-accumulation.
+
+✅ **DO:**
+- Check the confirmation chain for the procedure type: central line — the venous-confirmation method (ultrasound wire-in-vein, manometry or blood gas) and whether the CXR is ordered or reviewed with tip position; thoracentesis/paracentesis — volume removed; LP — opening pressure with patient position.
+- Count specimens and match each to a study sent; a fluid study listed without an order, or an order without a specimen, is flagged.
+- When the confirmatory study is ordered but not yet reviewed, state the device's usability as pending and carry the study as an open result for handoff.
+- Match CONSENT to the input exactly (informed vs emergent/implied) and record the reason implied consent applied.
+
 ## Output Format
 
 ```
@@ -78,7 +103,7 @@ CONFIRMATION & POST-PROCEDURE:
 
 ## Worked Example
 
-**Input:** Right internal jugular central venous catheter placement. Indication: need for vasopressors in septic shock, poor peripheral access. Consent: emergent, implied (patient obtunded), attending aware. Operator resident, supervised by ICU attending. Local lidocaine. Ultrasound-guided, single attempt, triple-lumen catheter, good venous blood return, wire visualized in vein. Sterile barrier precautions. No complications. Post-line CXR ordered.
+**Input:** Right internal jugular central venous catheter placement. Indication: need for vasopressors in septic shock, poor peripheral access. Consent: emergent, implied (patient obtunded), attending aware. Operator resident, supervised by ICU attending. Time-out performed (patient, procedure, right IJ site). Local 1% lidocaine. Full sterile barrier precautions (cap, mask, sterile gown and gloves, full-body drape); chlorhexidine prep, allowed to dry. Ultrasound-guided: right IJ patent, compressible, lateral to carotid. Single attempt, dark non-pulsatile venous blood return, wire visualized in vein, wire removed intact; triple-lumen catheter; all ports aspirated and flushed. Catheter secured, sterile dressing; depth at skin not recorded. EBL minimal. No complications — no arterial puncture, no air aspiration. Hemodynamics unchanged during procedure. Post-line CXR ordered.
 
 **Output:**
 
@@ -86,12 +111,12 @@ CONFIRMATION & POST-PROCEDURE:
 PROCEDURE: Right internal jugular central venous catheter (triple-lumen) placement.
 INDICATION: Septic shock requiring central access for vasopressor administration; inadequate peripheral access.
 CONSENT: Emergent procedure; patient obtunded — implied consent. Attending of record aware and supervising.
-OPERATOR: Resident / SUPERVISING ATTENDING: ICU attending (present at bedside).
+OPERATOR: Resident / SUPERVISING ATTENDING: ICU attending (supervising; physical presence not documented).
 ANESTHESIA/SEDATION: Local 1% lidocaine at the insertion site.
 TIME-OUT: Performed — patient identity, procedure, and site (right IJ) verified prior to start.
 
 TECHNIQUE:
-Full sterile barrier precautions were used (cap, mask, sterile gown and gloves, full-body drape). The right neck was prepped with chlorhexidine and allowed to dry. Under real-time ultrasound guidance, the right internal jugular vein was identified, patent, and compressible, lateral to the carotid artery. The vein was accessed on the first attempt with the introducer needle, with return of non-pulsatile dark venous blood. The guidewire was advanced with the wire visualized within the vein by ultrasound. The needle was removed, the tract dilated, and a triple-lumen catheter advanced over the wire; the wire was removed in its entirety. All ports aspirated blood and flushed without resistance. The catheter was secured at the appropriate depth and a sterile dressing applied.
+Full sterile barrier precautions were used (cap, mask, sterile gown and gloves, full-body drape). The right neck was prepped with chlorhexidine and allowed to dry. Under real-time ultrasound guidance, the right internal jugular vein was identified, patent, and compressible, lateral to the carotid artery. The vein was accessed on the first attempt with the introducer needle, with return of non-pulsatile dark venous blood. The guidewire was advanced with the wire visualized within the vein by ultrasound. The needle was removed, the tract dilated, and a triple-lumen catheter advanced over the wire; the wire was removed in its entirety. All ports aspirated blood and flushed without resistance. The catheter was secured (depth at skin not recorded) and a sterile dressing applied.
 
 SPECIMENS: None.
 ESTIMATED BLOOD LOSS: Minimal.

@@ -15,11 +15,11 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, RP-02, RT-02, RT-05, DS-06, QA-01]
 difficulty: advanced
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_emergency_response_rehearsal_oird.md
   - pacu_indep_emergency_response_rehearsal_last.md
-  - pacu_orient_respiratory_event_recognition_drill.md
+  - domain-healthcare-clinical/prompts/perianesthesia/stage-1-orientation/pacu_orient_respiratory_event_recognition_drill.md
 see_also_toolkit:
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_negative_pressure_pulmonary_edema.md
   - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_bronchospasm.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Emergency Rehearsal — Airway Crisis (Laryngospasm / Can't-Ventilate), Nurse Role
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** An emergency rehearsal, not live clinical decision support. It rehearses the nurse's role in an airway crisis; airway rescue is provider-led. Follow your facility's airway protocol.
 >
@@ -92,6 +105,19 @@ One coaching point: [...]
 | `mimic_pressure` | Add bronchospasm/NPPE cues to sharpen discrimination |
 | `after_risk` | Toggle post-obstruction NPPE to train continued surveillance |
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Score "Recognized early" Y when the learner names laryngospasm but does not, in the same answer, state the first maneuvers and the call for airway help by role — a correct label with no actions is a quiz answer, not a passed rehearsal.
+- Answer "what will the provider give?" with a named rescue drug and amount; the reply is `per provider order` and a pointer to the toolkit complication artifacts, and positive-pressure support carries no pressure, flow, or device setting either.
+- Credit a mimic as "discriminated" because it was listed; bronchospasm, NPPE, or OIRD is discriminated only when a presented cue (or its absence) is cited against it.
+- Mark "Anticipated after-risk" Y for a passing mention of NPPE without a stated watch — which cue, reassess per facility, and who is told after the airway is secured.
+
+✅ **DO:**
+- Order the learner's moves exactly as they said them and check the call for airway help comes with or before the first jaw-thrust; a call that appears only after "if that doesn't work" scores N on parallel timing.
+- Map each Y on the score line to a quoted learner action; a Y with no matching quote reverts to N.
+- Scan the output for any dose, pressure, flow, or interval token before release; every one must read `per provider order` or `per facility protocol`.
+
 ## Verification Checklist
 
 - [ ] Recognition uses **early obstruction cues**, before deep desaturation.
@@ -110,7 +136,7 @@ One coaching point: [...]
 Cues: high-pitched stridor then silent effortful see-saw breathing with a falling sat trend right after suctioning stimulated the patient.
 Discrimination: laryngospasm leads (stimulus-triggered glottic closure) vs bronchospasm (would expect wheeze/expiratory) vs NPPE (usually follows a resolved obstruction).
 First maneuvers + call: stop stimulation, reposition/jaw-thrust, apply positive-pressure support per protocol, suction ready — while calling anesthesia/provider by role and sending for airway equipment.
-Prepare/assist: ready reversal/emergency meds per order; assist provider; then watch for NPPE after it breaks. Reassess per facility.
+Prepare/assist: ready emergency meds per order; assist provider; then watch for NPPE after it breaks. Reassess per facility.
 Coaching point: your maneuvers were right but sequential — call for help in the same breath as the first jaw-thrust, not after it fails.
 ```
 

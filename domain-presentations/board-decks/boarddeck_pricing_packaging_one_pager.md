@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept tier columns where a higher tier silently drops a feature included below it, or where the check marks contradict the intake feature list.
+- Accept an annual price that is not monthly × 12 × (1 − stated annual discount).
+- Let the model invent prices, tier names, discount rates or competitor price anchors; a printed price on a board slide is read as decided.
+- Accept a "Most popular" or "Recommended" badge the user did not ask for.
+
+✅ **DO:**
+- Transcribe every price on the slide and recompute the annual, monthly and per-seat figures from each other.
+- Walk the feature rows tier by tier and confirm inclusion only ever increases unless the intake states an exception.
+- Count tiers and feature rows against the intake; an unset price renders as "[price TBD]".
+- Check the value metric printed (per seat, per usage unit) matches the intake for every tier.

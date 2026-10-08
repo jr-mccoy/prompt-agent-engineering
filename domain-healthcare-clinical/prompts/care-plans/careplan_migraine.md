@@ -15,8 +15,20 @@ tags:
   - migraine
   - headache
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -61,6 +73,21 @@ Neurologist or primary care attending managing migraine.
 
 9. **Monitor:** headache diary (days/month, acute-med days), preventive response at 8–12 weeks, side effects, overuse pattern.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "episodic" or "chronic" from the monthly headache-day count alone — ICHD-3 chronic migraine also needs >3 months of that pattern and ≥8 days/month with migraine features; if the input lacks duration or migraine-day counts, write `[ICHD-3 class incomplete — need 3-month diary]`.
+- Clear medication overuse because each drug class sits under its own cutoff — triptan days and NSAID days taken on *different* days add up, and ≥10 combined days/month across more than one class meets the overuse criterion `[VERIFY: ICHD-3 8.2]`.
+- Choose the preventive "by comorbidity" and miss the contraindication the same patient carries: propranolol with asthma, candesartan/valproate/topiramate without effective contraception, amitriptyline in an older adult with conduction disease.
+- Tick "contraception counselled" for topiramate when the method is an estrogen-containing pill — at higher doses topiramate can reduce hormonal-contraceptive efficacy `[VERIFY: current label]`.
+- Fill gepant or CGRP-antibody dose slots from memory — rimegepant has separate acute and every-other-day preventive regimens and eptinezumab is an IV infusion; use the clinician's order or `[VERIFY: current label]`.
+
+✅ **DO:**
+- Convert every frequency in the input to days/month and show it (e.g., "triptan ~3 days/week ≈ 13 days/month") before stating overuse status; compare that number with the threshold for the class actually used, not with the "≤2 days/week" counselling cap.
+- List each prior preventive as agent / dose reached / weeks at that dose / outcome, and count it as a "failure" toward CGRP payer criteria only when all four fields are in the input; otherwise label it "trial adequacy unknown".
+- Name the vascular history the triptan decision rests on (CAD, stroke/TIA, BP value, aura type) as found in the input; if a field is missing, say so instead of writing "no vascular contraindication".
+- Tie each teratogenic preventive line to the pregnancy-plan and contraception fields in the input, and write the stop-before-conception step into MONITORING.
+
 ## Output Format
 
 ```
@@ -93,7 +120,7 @@ PITFALLS:
 **Output:**
 
 ```
-PATTERN: episodic (10 days/mo, high disability). Acute-medication use ~3 days/week — approaching medication-overuse territory.
+PATTERN: episodic (10 days/mo, high disability). Triptan use ~3 days/week ≈ 13 days/month — already at the triptan overuse threshold (≥10 days/month). Note 13 triptan days exceeds the 10 headache days reported — reconcile with a diary.
 
 ACUTE THERAPY:
 - Continue sumatriptan 100 mg (no vascular contraindication) + naproxen for severe attacks; treat early.
@@ -107,7 +134,7 @@ PREVENTION DECISION + AGENT:
 - Give an 8-week trial at target dose before judging.
 - If ≥2 oral preventives fail/intolerable → CGRP mAb (e.g., galcanezumab) or atogepant.
 
-MEDICATION-OVERUSE PLAN: monitor closely; if MOH develops, withdraw overused agent and bridge with the preventive.
+MEDICATION-OVERUSE PLAN: triptan days already meet the overuse threshold — bring them below it as the preventive takes effect; if MOH is diagnosed, withdraw overused agent and bridge with the preventive.
 
 LIFESTYLE / TRIGGERS: regular sleep/meals/hydration, consistent caffeine, exercise, trigger diary; treat depression (the chosen preventive can do double duty).
 

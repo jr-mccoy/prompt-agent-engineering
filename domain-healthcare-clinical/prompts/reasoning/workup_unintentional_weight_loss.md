@@ -14,8 +14,20 @@ tags:
   - geriatrics
   - oncology
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -119,6 +131,21 @@ Work up unintentional weight loss in adults: confirm true weight loss, screen th
    - Social work for food insecurity, home meal delivery, financial assistance.
    - Dental evaluation.
    - Physical therapy for sarcopenia.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Compute the percentage from patient-recalled weights when chart weights exist, or ignore edema, ascites or a different scale that can mask or mimic loss.
+- Read a low albumin or prealbumin as proof of malnutrition when CRP or ESR is raised — both fall with inflammation.
+- Mark age-appropriate cancer screening "current" without the date and modality of the last test.
+- Treat a negative FIT, normal CXR or normal tumor marker as excluding malignancy.
+- Rank depression low because no screen was done; a PHQ-9 must have a supplied score to count.
+
+✅ **DO:**
+- Recompute loss as (baseline − current) ÷ baseline × 100 and the interval in months, and state whether it meets the ≥5% in 6–12 months threshold from those numbers.
+- Classify any anemia by MCV and iron studies before naming a GI source.
+- For older adults, mark each MEALS ON WHEELS item "assessed" or "not assessed" rather than listing the mnemonic.
+- Trace every drug dose (mirtazapine, megestrol, iron) to the label with age, renal and hepatic adjustment `[VERIFY: label]`.
 
 ## Output Format
 

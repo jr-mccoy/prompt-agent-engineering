@@ -2,13 +2,23 @@
 title: "Matching Assessment Worksheet Generator"
 category: education
 description: "Generate matching assessment worksheets with clearly paired columns and ambiguity-resistant formatting."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - assessment
   - worksheet
   - matching
   - assessment
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Matching Assessment Worksheet Generator
@@ -128,3 +138,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept ZONE 3 and ZONE 4 as finished when both columns hold the same number of entries — the last pair is then answered by elimination; add one or two Column B extras unless the intake rules them out.
+- Let two Column B entries both fit one Column A prompt ("makes its own food" next to both producer and plant), even when each looks like a clean definition on its own.
+- Print a Column B entry on the same row as its correct Column A partner, so the student can read across instead of recalling.
+- Trust the rendered letter labels in Column B — a skipped or repeated letter (A, B, C, C, E) leaves a ZONE 5 pair that points at nothing.
+
+✅ **DO:**
+- Build the key as a full grid of Column A rows against Column B entries and mark every defensible match; each row must hold exactly one mark and each extra must hold none.
+- Check the key's letter-number pairs against the rendered page rather than the prompt text, since the model may reorder rows or relabel entries.
+- When Column B uses pictures, name each one cold at print size; a picture that could be named two ways (frog or toad, cup or mug) is ambiguous and needs replacing.

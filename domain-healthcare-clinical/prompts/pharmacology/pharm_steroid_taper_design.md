@@ -15,8 +15,20 @@ tags:
   - corticosteroids
   - taper
   - adrenal-insufficiency
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -28,8 +40,8 @@ Design a steroid taper that minimizes both disease flare and HPA-axis-related co
 - Current steroid (prednisone-equivalent dose, duration of therapy, formulation, route)
 - Disease activity markers (CRP, ESR, clinical scoring, organ function)
 - HPA suppression risk:
-  - **High risk:** >20 mg prednisone/day for >3 weeks; any dose >10 mg/day for >3 weeks for many guidelines; multiple short courses with inadequate recovery between; Cushingoid features.
-  - **Intermediate:** physiologic-or-supraphysiologic dose for 3 days–3 weeks.
+  - **High risk:** >20 mg prednisone/day for >3 weeks; multiple short courses with inadequate recovery between; Cushingoid features. (Some guidelines set a lower dose threshold for this class [VERIFY: current Endocrine Society / ESE guideline on glucocorticoid-induced adrenal insufficiency].)
+  - **Intermediate:** 5–20 mg/day prednisone equivalent for >3 weeks, not meeting a high-risk criterion.
   - **Low:** <3 weeks of any dose; <5 mg/day prednisone equivalent regardless of duration.
 - Comorbidities: diabetes, osteoporosis, peptic ulcer/GI bleed risk, glaucoma, infection (latent TB, hepatitis), psychiatric history, cardiovascular
 - Age, frailty, pregnancy
@@ -51,7 +63,7 @@ Senior internist / rheumatologist / endocrinologist writing the steroid taper wi
    - Physiologic glucocorticoid replacement ≈ 15–25 mg hydrocortisone/day = 5 mg prednisone/day.
 
 3. **Match taper rate to indication and disease activity.**
-   - **Asthma / COPD exacerbation, short course:** 40 mg prednisone PO daily ×5 days for asthma (no taper needed per SMART/REDUCE); 40 mg × 5 days for COPD (no taper). Discontinue, not taper, after ≤2 weeks.
+   - **Asthma / COPD exacerbation, short course:** 40 mg prednisone PO daily ×5 days for asthma (no taper needed for a short burst); 40 mg × 5 days for COPD (REDUCE trial; no taper). Discontinue, not taper, after ≤2 weeks.
    - **Acute allergic / anaphylaxis-related course:** taper over 7–14 days if dose was high; often no taper for short courses.
    - **PMR:** start prednisone 12.5–25 mg/day; once symptoms resolved (often within 1 month), taper by 2.5 mg every 2–4 weeks to 10 mg; then by 1 mg every 1–2 months to off; full course typically 1–2 years.
    - **GCA:** prednisone 40–60 mg/day (1 mg/kg) for uncomplicated; 60–80 mg or pulse methylprednisolone 1 g IV ×3 days for visual involvement. Taper after symptom control: reduce by 10 mg every 2 weeks to 20 mg, then by 2.5 mg every 2–4 weeks to 10 mg, then by 1 mg every 1–2 months. Total 1–2 years. Add tocilizumab to spare steroids (GiACTA).
@@ -98,6 +110,21 @@ Senior internist / rheumatologist / endocrinologist writing the steroid taper wi
    - Symptoms: fatigue, malaise, myalgia, arthralgia, mood symptoms when tapering despite normal cortisol production.
    - Slow taper rate temporarily; reassure; symptoms usually self-limited.
    - Distinguish from true AI (low cortisol + clinical signs) and disease relapse (return of original disease symptoms).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Print a TAPER SCHEDULE whose week labels disagree with the interval you wrote beside them (e.g. an interval stated in months listed at shorter week steps), or a "Total course" that is not the week of the last listed step.
+- Fill the HPA-testing line with an 8 AM cortisol or cosyntropin cutoff from memory; cutoffs depend on the assay — use the reporting lab's or the endocrine guideline's value, or write `[VERIFY: assay-specific cutoff]`.
+- Carry two different HPA-suppression classes for the same patient (one in PATIENT SNAPSHOT, another in the stress-dose plan) without stating which dose × duration fact changed it.
+- Attach a trial, guideline or regulatory approval to a rule (burst without taper, steroid-sparing agent) unless it is the actual source; name the source type instead.
+- Default to "low risk" when the input omits total duration or earlier courses — mark the class provisional and name the missing datum.
+
+✅ **DO:**
+- Recompute the taper to its endpoint before output: list every step as (start week, dose), check each decrement and interval against the increments stated in step 4, and confirm the final step reaches the stated endpoint (off or physiologic dose) at the stated total duration.
+- Convert any non-prednisone steroid to prednisone-equivalent and show the line (e.g. dexamethasone 4 mg ≈ prednisone 27 mg) so risk class and increments apply to the right number.
+- Tie each "if criteria met" item (bisphosphonate, PJP prophylaxis, PPI) to the criterion and the input value that meets it, or write "not met — [value]".
+- Take stress-dose and steroid-sparing doses from the provider order or label, or flag them `[VERIFY: current guideline/label]`.
 
 ## Output Format
 
@@ -156,7 +183,7 @@ FOLLOW-UP:
 ```
 PATIENT SNAPSHOT:
 - 72 y F, PMR, 2 weeks on prednisone 15 mg/day (supraphysiologic) with good response; no GCA features.
-- HPA suppression risk: low–intermediate (15 mg ×2 weeks; tapers planned to physiologic over months — adequate axis maintenance likely).
+- HPA suppression risk: low now (15 mg ×2 weeks = <3 weeks); becomes intermediate at week 3 (5–20 mg/day for >3 weeks) because the planned course continues for months — stress-dose plan applies from then.
 - Comorbidities: osteopenia (DEXA T −1.8), no DM, no PUD.
 
 TAPER SCHEDULE (typical PMR; total course usually 12–24 months):
@@ -168,12 +195,12 @@ TAPER SCHEDULE (typical PMR; total course usually 12–24 months):
 - **Week 24 → Week 32:** **prednisone 7 mg PO daily.**
 - **Week 32 → Week 40:** **prednisone 6 mg PO daily.**
 - **Week 40 → Week 48:** **prednisone 5 mg PO daily** (physiologic equivalent; consider HPA assessment).
-- **Week 48 onward:** reduce by **1 mg every 2 months** to off (52, 56, 60, 64, 68, 72 weeks). Total course ≈ 1.5 years.
+- **Week 48 onward:** reduce by **1 mg every 2 months** (8 weeks) to off: 4 mg week 48, 3 mg week 56, 2 mg week 64, 1 mg week 72, off week 80. Total course ≈ 82 weeks from diagnosis (≈1.5 years).
 
 KEY TRANSITIONS:
 - 15 → 10: at week 12.
-- 10 → 5: weeks 16–48 (slow taper to avoid relapse).
-- 5 → 0: by ~week 72 (1 mg every 2 months).
+- 10 → 5: weeks 12–40 (slow taper to avoid relapse).
+- 5 → 0: by week 80 (1 mg every 2 months).
 - HPA-axis test (8 AM cortisol) at 5 mg daily if any AI symptoms or before complete discontinuation.
 
 DISEASE-ACTIVITY MONITORING:
@@ -183,8 +210,8 @@ DISEASE-ACTIVITY MONITORING:
 - Trigger for prompt evaluation: new headache, jaw claudication, visual symptoms, scalp tenderness — concern for GCA → urgent assessment, temporal artery biopsy.
 
 HPA-AXIS / STRESS-DOSE PLAN:
-- HPA suppression likely once on chronic >3 weeks of supraphysiologic prednisone.
-- Stress-dose rules once on ≥3 months of any dose ≥5 mg:
+- HPA suppression presumed from week 3 onward (intermediate class: 5–20 mg/day for >3 weeks; class changes from low because duration crosses 3 weeks).
+- Stress-dose rules from week 3 until HPA recovery is confirmed:
   - **Mild illness:** double daily dose for 2–3 days.
   - **Moderate stress / minor surgery:** hydrocortisone 50 mg IV/IM pre-procedure single dose.
   - **Major surgery / sepsis:** hydrocortisone 100 mg IV bolus + 50 mg IV q6h × 24–48 h, then taper.
@@ -217,5 +244,5 @@ FOLLOW-UP:
 
 CONTINGENCIES:
 - Steroid-sparing agent: methotrexate 7.5–15 mg PO/SC weekly + folic acid 1 mg daily if recurrent flares prevent taper below 7.5 mg.
-- IL-6 inhibitor (sarilumab; tocilizumab) approved for steroid-resistant PMR (2023).
+- IL-6 inhibitor: sarilumab is FDA-approved (2023) for PMR with inadequate response to corticosteroids or inability to taper; tocilizumab is used off-label for PMR [VERIFY: current product labels].
 ```

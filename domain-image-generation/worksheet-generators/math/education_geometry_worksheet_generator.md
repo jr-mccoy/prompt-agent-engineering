@@ -2,13 +2,23 @@
 title: "Geometry Worksheet Generator"
 category: education
 description: "Generate geometry worksheets with labeled shapes, angle tasks, and perimeter/area practice zones."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - math
   - worksheet
   - geometry
   - shapes
   - printable
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Geometry Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 figure labelled "square" that renders as a rectangle, or a corner marked as a right angle that is visibly obtuse.
+- Pass a rectangle labelled 4 cm × 6 cm that is drawn longer on its 4 cm side; the labels look complete but the figure contradicts them.
+- Use "trapezoid" without checking which definition the class uses — under the exclusive definition a figure with two pairs of parallel sides is not a trapezoid, so the key can mark a correct student wrong.
+- Let the ZONE 4 measurement table compute perimeter or area from dimensions different from those labelled on the figure.
+
+✅ **DO:**
+- Measure each rendered figure: side-length ratios must match the labelled lengths and every marked angle must match its label within a few degrees; add "not drawn to scale" only when that is intended and stated in the directions.
+- Recompute every perimeter and area in ZONE 4 from the labelled measures, checking units (cm for perimeter, cm² for area).
+- Count the ZONE 5 grid squares along each side and confirm they are equal-sized and countable, since students will use them to construct figures to a measure.

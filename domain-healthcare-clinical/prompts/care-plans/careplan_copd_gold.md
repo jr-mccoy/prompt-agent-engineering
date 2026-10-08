@@ -15,8 +15,20 @@ tags:
   - copd
   - inhalers
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -63,6 +75,21 @@ Pulmonologist or primary care attending managing COPD.
 8. **Rescue inhaler:** SABA (albuterol) or SABA/SAMA PRN for all.
 
 9. **Monitor:** symptom scores, exacerbation frequency, inhaler technique each visit, eosinophils, bone health on ICS, comorbid CVD.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Derive the ABE group from the airflow grade — the group comes from symptoms (mMRC or CAT) and exacerbation history; FEV1 % predicted gives the separate 1–4 grade.
+- Count a flare managed with extra albuterol as an exacerbation; only moderate (steroids/antibiotics) or severe (hospitalisation) events move a patient to group E.
+- Report mMRC and CAT as if they always agree; state which instrument assigned the group when they disagree.
+- Use an eosinophil count drawn during an exacerbation or on systemic corticosteroids as the ICS decision value.
+- Add azithromycin or roflumilast without their own screens: QTc, hearing and non-tuberculous mycobacteria for azithromycin; weight, psychiatric history and hepatic function for roflumilast.
+
+✅ **DO:**
+- Confirm the spirometry is post-bronchodilator and recompute FEV1/FVC from the reported values before writing the GOLD grade.
+- Choose a device the patient can actually use (inspiratory flow, dexterity, spacer) and record the technique check as observed or not observed.
+- Qualify long-term oxygen from a resting room-air value taken when clinically stable, state whether it is SpO2 or PaO2, and set the reassessment date.
+- Before finalising INHALER PLAN, cross-check new agents against the current list for duplicated classes (two LAMAs, a LABA in two devices) and check LAMA against urinary-retention and angle-closure glaucoma history.
 
 ## Output Format
 

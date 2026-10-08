@@ -24,7 +24,7 @@ tags:
   - t-cell
   - socratic
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_physiology_pathway_walkthrough.md
   - domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md
@@ -124,6 +124,16 @@ Highest-yield restudy: [one specific molecule or interaction the learner whiffed
 | `require_therapeutic_mapping` | Default true; if false, omit final Q |
 | `include_negative_regulator` | If true, also drill the brake step (CTLA-4, PD-1, complement regulators DAF/CD59/factor H/I) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Grading a therapeutic `correct` when its target lies outside the named cascade (anakinra at IL-1R in a TLR4 drill) | Check that the drug's target is a numbered step in the co-built summary; a drug acting on a parallel or downstream pathway is `partial`, with the in-cascade step named |
+| Treating a specific-sounding answer as correct because it names an entity (e.g., "TLR4 signals through TRIF only") | Specificity is not correctness: check the named molecule's role and its position in the sequence before grading |
+| `detailed` granularity (≥ 10 steps) claimed when the learner answered six questions and the tutor filled the rest into the summary | Count learner-produced steps; mark tutor-supplied links in the CASCADE SUMMARY so it does not credit what was never elicited |
+| A real immunodeficiency paired with the wrong susceptibility class (viral infections for a pyogenic-bacteria defect) | The pathogen class must follow from the failed step; grade the infection named, not only the syndrome name |
+| Investigational agents presented as clinical therapeutics in the mapping | State approval status for every drug named; trial-stage agents are labeled as such and checked `[VERIFY: current label]` |
+
 ## Verification Checklist
 
 - [ ] Every step names a specific entity. No "the complement cascade activates."
@@ -183,14 +193,15 @@ Grade: correct — MyD88 / IRAK4 deficiency.
 >>> THERAPEUTIC MAPPING
 Q: Name a clinically used inhibitor at any step.
 > "IL-1 axis: anakinra blocks IL-1R, which feeds the same MyD88 pathway."
-Grade: correct — and also bortezomib (proteasome inhibitor blocks IκBα degradation), TLR4-targeted eritoran reached phase III for sepsis (not approved).
+Grade: partial — anakinra's target (IL-1R) signals through MyD88 but is a parallel receptor, not a step in the LPS → TLR4 cascade. In-cascade example: bortezomib (proteasome inhibitor; blocks IκBα degradation; approved for myeloma, not for this use). TLR4-targeted eritoran reached phase III for sepsis (not approved).
 
 >>> CASCADE SUMMARY
-LPS → LBP → CD14 → TLR4-MD2 dimer → TIR domain → split:
-  • MyD88 → IRAK4 → IRAK1 → TRAF6 → TAK1 → IKK → IκBα phosphorylation/degradation → NF-κB (p50/p65) nuclear translocation → pro-inflammatory cytokines (TNF, IL-6, IL-1β)
+(† = tutor-supplied in the anchor or question stem; all other links learner-named — ≥ 10 across Q1–Q6, meeting `detailed`)
+LPS† → LBP → CD14† → TLR4-MD2† dimer → TIR domain† → split:
+  • MyD88 → IRAK4 → IRAK1 → TRAF6 → TAK1 → IKK → IκBα phosphorylation/degradation → NF-κB (p50/p65) nuclear translocation → pro-inflammatory cytokines (TNF, IL-6, IL-1β)†
   • TRIF → TBK1 → IRF3 → IFN-β
 Failure point at MyD88 → severe pyogenic infections (IRAK4/MyD88 deficiency).
-Therapeutic interrupting downstream cytokine: anakinra at IL-1R (shared MyD88 user).
+Therapeutic interrupting step (IκBα proteasomal degradation): bortezomib (tutor-supplied; learner's anakinra acts on the parallel IL-1R pathway).
 
 Highest-yield restudy: TRIF-only signaling by TLR3 (dsRNA) vs. TLR4's dual adaptor use.
 ```

@@ -27,8 +27,8 @@ tags:
   - learner-self-study
 updated: "2026-05-15"
 related_prompts:
-  - ../clinical-skills/learner_oral_presentation_practice.md
-  - ./learner_pre_rounding_prep.md
+  - domain-medical-education/learner-clinical-rotation/study_oral_presentation_practice.md
+  - domain-medical-education/learner-clinical-rotation/study_pre_rounding_prep.md
 ---
 
 # Handoff Practice for Health-Professions Learners

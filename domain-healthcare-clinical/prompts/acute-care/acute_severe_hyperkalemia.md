@@ -14,8 +14,20 @@ tags:
   - hyperkalemia
   - critical-care
   - dialysis
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -50,7 +62,7 @@ Treat severe or symptomatic hyperkalemia with the three-step paradigm: stabilize
    - **Caution in digoxin toxicity:** historically taught to avoid; current evidence suggests slow IV calcium is acceptable — risk of "stone heart" appears overstated. If digoxin toxicity suspected, give digoxin-specific antibody (DigiFab) too.
 
 4. **Step 2 — Shift K intracellularly (within 15–30 min).**
-   - **Insulin + glucose:** regular insulin 10 units IV + dextrose 25 g IV (50 mL D50). Onset 15 min, duration 4–6 h. Lowers K by ~0.6–1.0 mEq/L. Watch for hypoglycemia at 1–4 h, especially in renal failure (delayed insulin clearance) — give 10 units IV with 50 g D50 (D50W 100 mL) in moderate-to-severe AKI/ESRD if glucose <250.
+   - **Insulin + glucose:** regular insulin 10 units IV + dextrose 25 g IV (50 mL D50). Onset 15 min, duration 4–6 h. Lowers K by ~0.6–1.0 mEq/L. Watch for hypoglycemia at 1–4 h, especially in renal failure (delayed insulin clearance). In moderate-to-severe AKI/ESRD with glucose <250, one approach is 10 units IV with 50 g dextrose (D50W 100 mL); reduced insulin-dose regimens are also used — choose per facility protocol [VERIFY: facility hyperkalemia protocol / current guideline].
    - **Albuterol nebulized 10–20 mg** (4–8 standard nebs back to back). Beta-2 agonist drives K into cells via Na/K-ATPase. Onset 30 min, lowers K by 0.5–1.0 mEq/L. Effects additive with insulin. Caution: tachycardia, tremor.
    - **Sodium bicarbonate IV:** only useful if metabolic acidosis is contributing. Slow onset, modest K-lowering. 50–100 mEq IV over 10–20 min in patients with significant metabolic acidosis. Not first-line in chronic dialysis hyperK without acidosis.
 
@@ -72,7 +84,7 @@ Treat severe or symptomatic hyperkalemia with the three-step paradigm: stabilize
    - Treat acidosis (bicarbonate, ventilation if respiratory acidosis component).
    - Tumor lysis: rasburicase, fluids, dialysis.
    - Rhabdomyolysis: aggressive IV fluids (NS at 200–300 mL/h targeting UOP 200–300 mL/h), watch for compartment syndrome.
-   - Adrenal insufficiency (hyporeninemic-hypoaldo / type 4 RTA in DM): fludrocortisone if applicable.
+   - Adrenal insufficiency, or hyporeninemic hypoaldosteronism (type 4 RTA, common in DM): fludrocortisone if applicable.
    - Missed dialysis: dialyze.
    - Dietary review: K-rich foods, salt substitutes (KCl), supplements.
 
@@ -81,6 +93,20 @@ Treat severe or symptomatic hyperkalemia with the three-step paradigm: stabilize
    - Repeat K at 1, 2, 4, 6 h after treatment.
    - Glucose q1h × 4 after insulin (rebound hypoglycemia).
    - Anticipate K rebound after insulin/albuterol effects wear off if no removal step taken.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Fill STEP 1 with calcium when the input shows neither an ECG change nor the dialysis-patient K ≥6.5 indication — a fully populated three-step template looks thorough but gives a drug without its stated trigger.
+- Write calcium, insulin, dextrose, albuterol or bicarbonate amounts into the order set from memory; take them from the clinician's order set, the product label or local formulary, or mark `[VERIFY: current label/formulary]`.
+- List furosemide under REMOVE for an anuric or oliguric patient, or a binder as the removal step when the Step 6 dialysis criteria are met — the slot is filled but no potassium leaves the body today.
+- Report the sample as "not hemolyzed", or cite an HCO3 value to justify bicarbonate, when the lab comment or blood gas was not supplied.
+
+✅ **DO:**
+- Trace every value on the SEVERITY line (K, QRS width, PR, rhythm, symptoms) and the glucose behind the dextrose decision to the input; write `[not provided]` for anything missing instead of inferring it.
+- Re-derive the severity tier from the supplied K and ECG against the Step 2 bands and confirm the order set matches it — calcium only when its indication is met, DIALYSIS marked "indicated" only with the Step 6 criterion named.
+- State the patient's urine output and dialysis access beside the REMOVE choice so the reader can see the route is usable.
+- Record the renal-function basis for the length of the glucose-check window (the template uses q1h × 4; the ESRD example uses q1h × 6).
 
 ## Output Format
 
@@ -134,7 +160,7 @@ STEP 2 — SHIFT (within 15 min):
 - Regular insulin 10 units IV + D50 25 g IV (50 mL).
   - In ESRD, insulin clearance is delayed and hypoglycemia risk extends 2–6 hours; consider continuous D5 or D10 infusion after the bolus, glucose checks q1h.
 - Albuterol 10–20 mg nebulized (4–8 standard nebs back-to-back) over 15–30 min.
-- Sodium bicarbonate is unlikely to help here unless ABG shows significant acidosis — check VBG; if HCO3 <18, give 50–100 mEq IV over 15 min.
+- Sodium bicarbonate is unlikely to help here unless ABG shows significant acidosis — check VBG; if it shows significant metabolic acidosis (the step-4 criterion), give 50–100 mEq IV over 15 min.
 
 STEP 3 — REMOVE:
 - Hemodialysis is definitive. Notify nephrology immediately; arrange emergent HD.

@@ -18,7 +18,7 @@ tags:
   - secondary-image
   - gpt-image-2
   - nano-banana
-updated: "2026-06-23"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/ecommerce-product/README.md
   - domain-image-generation/ecommerce-product/ecommerce_white_background_product.md
@@ -148,6 +148,21 @@ CONSTRAINTS:
 3. "The ambient light is shifting the product color — correct it back to [PRODUCT COLOR] exact hex."
 4. "The hand looks uncanny — replace it with a clean natural grip or crop to just the product on the surface."
 5. "The vibe feels too cluttered/staged — simplify to 1 supporting prop and let the scene breathe."
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept the scale cue because one is present — the model sizes the product to suit the composition, so a 750ml bottle can sit in a hand like a 1.5L one, and the cue then misstates the very size it was added to show.
+- Pass "≤2 supporting props" without asking whether a buyer would think they ship with the product — a charging pad beside earbuds, a cushion on the chair, or batteries next to a toy read as included.
+- Judge `[PRODUCT COLOR]` relative to the scene — under golden-hour or warm window light the product can look right against its surroundings while its pixels sit well off the SKU's real color.
+- Clear "no uncanny faces" and skip the hand: count the fingers and check that the grip could physically hold the product's weight and shape.
+
+✅ **DO:**
+- Measure the product and a known reference at the same depth (counter edge, adult hand, a standard mug) in pixels and confirm their ratio matches the real-world dimensions within about 10%.
+- Check every prop against the box contents list and swap any that could pass as an accessory for one plainly not sold with the product.
+- Sample the product in a neutrally lit spot and compare it with a photo of the real SKU taken under daylight-balanced light.
 
 ---
 

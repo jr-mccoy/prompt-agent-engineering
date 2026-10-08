@@ -2,13 +2,23 @@
 title: "Rhythm and Notes Worksheet Generator"
 category: education
 description: "Generate music worksheets for note values, rests, counting beats, and simple rhythm reading tasks."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - music
   - rhythm
   - note-values
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Rhythm and Notes Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a 4/4 bar containing a half note, a quarter note, two eighths and another quarter — 4.5 beats; the notation looks valid while the bar is overfilled.
+- Pass glyphs the image model has blurred: an open note head drawn filled (half becomes quarter), a dot lost from a dotted half, a flag added to a quarter note.
+- Confuse the whole rest (hangs below the line) with the half rest (sits on the line) in ZONE 2 or the practice rows.
+- Print a ZONE 5 compose-a-measure constraint that cannot be satisfied with the symbols in the key (fill a 3/4 bar using only half notes).
+
+✅ **DO:**
+- Count beats in every bar on the rendered page, note by note and rest by rest, and confirm each bar totals the time signature (4 beats in 4/4, 3 in 3/4, 2 in 2/4).
+- Check the beat numbers written under notes in ZONE 3 and the answers to both ZONE 6 items against your own count.
+- Compare each glyph used in ZONES 3–6 with the ZONE 2 symbol key and confirm no symbol appears that the key does not teach.

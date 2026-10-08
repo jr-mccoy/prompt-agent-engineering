@@ -23,7 +23,7 @@ tags:
   - drug-class
   - flashcards
   - recall
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_pharmacology_mechanism_flashcard_set.md
 ---
@@ -103,6 +103,16 @@ B2  ...
 | `add_pronunciation` | Adds phonetic spelling column (useful for nursing students) |
 | `add_class_marker_suffix` | Adds reminder line listing the stem identifier (e.g., "-statin," "-pril," "-sartan," "-olol") |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Numbering ranks 6–N exactly when frequency data beyond the top few were never checked | Name the ranking source and data year in the header `[VERIFY: prescription-volume source, year]`; unverified members go under "secondary frequency," unnumbered |
+| Listing discontinued brands or combination products as currently marketed | Check each brand's marketing status (Drugs@FDA or the stated market's regulator); keep a withdrawn name only with a "discontinued" note, since it still turns up on old medication lists |
+| Generic-availability years written from memory to fill the Notes column | Include a year only if it was checked; otherwise leave it out rather than estimate |
+| A deck whose card count or pairings do not match the table | Recount: cards = 2 × table rows (+ any high-frequency alternates), and every brand in section B maps to the same generic as in the table |
+| Notes that drift into mechanism, interaction, or monitoring claims the Objective excludes | Keep Notes to name-recall aids; clinical content belongs in the mechanism flashcard set, where it is checked |
+
 ## Verification Checklist
 
 - [ ] Members are ranked by frequency, not alphabetical, unless the user explicitly asks alphabetical.
@@ -123,16 +133,17 @@ B2  ...
 BRAND–GENERIC RECALL — Statins (HMG-CoA reductase inhibitors)
 Market: US   Top N: 7   Combos: yes   OTC: no
 Class stem: "-statin"
+Ranking source: [VERIFY: prescription-volume source, year] — ranks numbered for the top 5 only; remaining members listed as secondary frequency
 
 | # | Generic | Brand (primary) | Brand (alternates) | Notes |
 |---|---|---|---|---|
 | 1 | atorvastatin | Lipitor | — | Most-prescribed statin in US; generic 2011 |
 | 2 | rosuvastatin | Crestor | — | High-intensity dose-equivalent; generic 2016 |
-| 3 | simvastatin | Zocor | — | Older; CYP3A4 interactions limit dose |
-| 4 | pravastatin | Pravachol | — | Hydrophilic; preferred with cyclosporine |
+| 3 | simvastatin | Zocor | — | Older |
+| 4 | pravastatin | Pravachol | — | Memory hook: PRAVachol — PRAVastatin |
 | 5 | lovastatin | Mevacor | Altoprev (ER) | First statin approved (1987) |
-| 6 | fluvastatin | Lescol | Lescol XL | Lower-potency; less interaction |
-| 7 | pitavastatin | Livalo | Zypitamag | Newer; minimal CYP interactions |
+| 2° | fluvastatin | Lescol | Lescol XL | Secondary frequency (unranked) |
+| 2° | pitavastatin | Livalo | Zypitamag | Secondary frequency (unranked); newer |
 
 >>> DECK CARDS
 
@@ -164,5 +175,5 @@ B7  Livalo → pitavastatin
 |---|---|
 | Caduet | amlodipine + atorvastatin |
 | Vytorin | ezetimibe + simvastatin |
-| Liptruzet | ezetimibe + atorvastatin |
+| Liptruzet (discontinued in US; still seen on old medication lists) | ezetimibe + atorvastatin |
 ```

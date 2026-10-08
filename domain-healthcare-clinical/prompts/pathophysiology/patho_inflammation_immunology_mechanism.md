@@ -16,8 +16,20 @@ tags:
   - autoimmune
   - biologics
   - mechanism
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -69,7 +81,7 @@ Senior immunologist / rheumatologist explaining mechanism to a colleague. Names 
    - Loss of tolerance and break-down of regulatory cell suppression (Treg dysfunction in autoimmunity, IPEX syndrome from FOXP3 loss).
 
 5. **Map the mechanistic intervention point of each available therapy.**
-   - **Anti-TNF (etanercept, infliximab, adalimumab, golimumab, certolizumab):** block TNF signaling on tissue and immune cells. Effective in RA, AS, PsA, psoriasis, IBD. Etanercept is a soluble TNFR fusion; infliximab and adalimumab are full IgG1 mAbs (cell-killing via Fc → effective in granulomatous disease; etanercept is ineffective in granulomatous Crohn's because no Fc effector).
+   - **Anti-TNF (etanercept, infliximab, adalimumab, golimumab, certolizumab):** block TNF signaling on tissue and immune cells. Effective in RA, AS, PsA, psoriasis, IBD. Etanercept is a soluble TNFR2–IgG1 Fc fusion protein (it does carry an Fc); infliximab and adalimumab are full IgG1 mAbs. The monoclonals are effective in Crohn's and granulomatous disease while etanercept is not; proposed reasons include differences in binding transmembrane TNF, reverse signaling and killing of TNF-bearing cells, but the mechanism is not settled.
    - **Anti-IL-6 (tocilizumab — anti-IL-6R; sarilumab):** RA, giant cell arteritis, CAR-T cytokine release syndrome. Drops CRP, hepcidin, fever, acute-phase response.
    - **Anti-IL-1 (anakinra — IL-1Ra; canakinumab — anti-IL-1β; rilonacept — IL-1 trap):** autoinflammatory syndromes (CAPS, FMF, Still's disease), gout flare, recurrent pericarditis.
    - **Anti-IL-17 (secukinumab, ixekizumab — anti-IL-17A; bimekizumab — anti-IL-17A/F):** psoriasis, PsA, AS. Ineffective or worsens IBD (loss of IL-17 at gut barrier → dysbiosis and inflammation).
@@ -86,6 +98,20 @@ Senior immunologist / rheumatologist explaining mechanism to a colleague. Names 
    - **Complement inhibition (eculizumab, ravulizumab — anti-C5):** PNH, aHUS, generalized myasthenia gravis (AChR+), NMOSD.
 
 6. **Explain why the targeted therapy works in the disease it works in, and why it does not work (or causes harm) in adjacent diseases.** Tie back to the dominant axis in step 3.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign `DOMINANT IMMUNE AXIS` from the textbook label for the disease when the user's own biomarkers (eosinophil count, IgE, IFN signature, complement, autoantibody pattern) point to a different or mixed axis.
+- Explain why a biologic fails with a structural claim about the molecule — Fc present or absent, which receptor subunit, which JAK — that you have not checked; a wrong molecular reason makes a true clinical observation look proven.
+- Quote EASI-75, PASI-90, ACR50 or adverse-event percentages as single round numbers; they differ by trial, dose, timepoint and monotherapy vs combination, so give the trial and population or describe the effect qualitatively.
+- Promote case reports of paradoxical reactions into a settled cytokine-shift mechanism.
+
+✅ **DO:**
+- Before writing what each drug blocks in `THERAPEUTIC INTERVENTION POINTS`, check its actual target against the label: ligand vs receptor, which subunit (p40 vs p19, IL-4Rα, IL-5 vs IL-5Rα), soluble receptor vs antibody.
+- Tag each arrow trigger → sensor → cytokine → effector cell → tissue damage as established in human disease, shown only in animal or in-vitro models, or proposed; an untagged arrow is treated as proposed.
+- Check every "why X fails or worsens disease" line against the axis assigned in step 3 — the failure must follow from that axis. If one drug works in two diseases you placed on opposite axes, revisit the axis assignment instead of adding an ad-hoc explanation.
+- Mark indications, boxed warnings and pre-biologic screening (TB, hepatitis B) as `[VERIFY: current label]`.
 
 ## Output Format
 
@@ -142,9 +168,9 @@ EFFECTOR MECHANISM OF TISSUE DAMAGE:
 - Psoriasis: IL-17A/F act on keratinocytes → CXCL1/2/8 (neutrophil recruitment, Munro microabscesses), antimicrobial peptides, S100 proteins (DAMPs amplifying feedback), proliferation. IL-22 → epidermal acanthosis. TNF amplifies endothelial adhesion and recruitment.
 
 THERAPEUTIC INTERVENTION POINTS:
-- Dupilumab (anti-IL-4Rα): blocks both IL-4 and IL-13 signaling (they share IL-4Rα in the type II receptor complex). Interrupts Th2 effector cytokines at their receptor. Dramatic effect in AD (EASI-75 60–70%), asthma (eosinophilic), EoE, prurigo nodularis. Ineffective in psoriasis because the dominant axis is Th17, not Th2 — blocking IL-4/13 leaves IL-17/23 untouched. Rare reports of paradoxical psoriasiform lesions on dupilumab — proposed mechanism: Th2 suppression unmasks latent Th17 drive.
-- Secukinumab / ixekizumab (anti-IL-17A) and bimekizumab (anti-IL-17A/F): block neutrophilic axis at the effector cytokine. Highly effective in plaque psoriasis (PASI-90 ~70–90%), PsA, AS. Ineffective and sometimes worsens AD because Th17 contributes only a small share of AD pathology, while IL-17 is needed at mucosal barriers for fungal and S. aureus defense — blocking it worsens candidiasis and IBD.
-- Ustekinumab (anti-IL-12/IL-23 p40) and risankizumab (anti-IL-23 p19): upstream of Th17. Effective in psoriasis, PsA, Crohn's, UC. Risankizumab achieves PASI-90 ~75%.
+- Dupilumab (anti-IL-4Rα): blocks both IL-4 and IL-13 signaling (they share IL-4Rα in the type II receptor complex). Interrupts Th2 effector cytokines at their receptor. Marked effect in AD (EASI-75 rates vary by trial, timepoint and monotherapy vs combination with topical steroids [VERIFY: pivotal trial data / product label]), asthma (eosinophilic), EoE, prurigo nodularis. Ineffective in psoriasis because the dominant axis is Th17, not Th2 — blocking IL-4/13 leaves IL-17/23 untouched. Rare reports of paradoxical psoriasiform lesions on dupilumab — proposed mechanism: Th2 suppression unmasks latent Th17 drive.
+- Secukinumab / ixekizumab (anti-IL-17A) and bimekizumab (anti-IL-17A/F): block neutrophilic axis at the effector cytokine. Highly effective in plaque psoriasis (PASI-90 rates differ between agents, trials and timepoints [VERIFY: pivotal trial data / product labels]), PsA, AS. Ineffective and sometimes worsens AD because Th17 contributes only a small share of AD pathology, while IL-17 is needed at mucosal barriers for fungal and S. aureus defense — blocking it worsens candidiasis and IBD.
+- Ustekinumab (anti-IL-12/IL-23 p40) and risankizumab (anti-IL-23 p19): upstream of Th17. Effective in psoriasis, PsA, Crohn's, UC. Risankizumab achieves high PASI-90 rates in its pivotal trials [VERIFY: trial, population and timepoint].
 - Anti-TNF: effective in both psoriasis and IBD because TNF amplifies both Th17 and the broader inflammatory network; partial effect in AD because TNF is not a primary AD driver.
 
 WHY DUPILUMAB FAILS IN PSORIASIS:

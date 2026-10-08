@@ -23,7 +23,7 @@ tags:
   - tree-of-thoughts
   - stroke
   - foundational-science
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-foundational-sciences/study_anatomy_concept_drill.md
   - domain-medical-education/learner-foundational-sciences/study_pathophysiology_disease_mechanism_drill.md
@@ -116,6 +116,17 @@ Highest-yield restudy: [the branch the learner was weakest on, with the named an
 | `include_imaging` | Adds CT/MR findings as a fifth-branch confirmation |
 | `include_NIHSS_score` | Forces learner to compute or interpret NIHSS for stroke cases |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A vignette whose findings cannot come from one lesion (or silently need two) | Trace each finding to its structure before posing; the canonical answer must account for every finding, with any intended red herring declared in the answer key |
+| Progressive disclosure that answers the next branch (imaging showing the lesion site before Branch 3) | Disclose an exam finding that tests the current localization; hold imaging for the confirmatory step |
+| Accepting "right" at Branch 1 without fixing whether it means side of lesion or side of deficit | Require both (e.g., "right medulla, left body") and grade each |
+| Cranial-nerve laterality signs written into the vignette from memory (uvula, tongue, jaw deviation, pupil) | Check the direction of each deviation against the lesion side before the vignette is shown |
+| An etiology ("cardioembolic") stated as the canonical answer when the vignette supports only a mechanism class | Grade etiology as a hypothesis; the canonical answer marks it "suspected" and names the test that would settle it |
+| An NIHSS figure in the vignette that the described deficits do not produce | If a score is given, recompute it item by item from the stated exam before the learner sees it |
+
 ## Verification Checklist
 
 - [ ] Every vignette names time course (acute / subacute / chronic) and at least one motor, sensory, or cranial-nerve finding. No purely psychiatric or vague vignettes.
@@ -185,7 +196,7 @@ Branch 2 — Level:
 > "Subcortical."  Q: Why not cortex?  > "Face/arm/leg equal weakness, no cortical signs (no aphasia, neglect, gaze preference), pure motor — sounds like a lacunar syndrome."
 Grade: correct.
 
-[Progressive disclosure: "Imaging shows a small DWI bright lesion in the posterior limb of the left internal capsule."]
+[Progressive disclosure: "Now examiner adds: visual fields full; graphesthesia and stereognosis intact in the right hand." (imaging held for the confirmatory step)]
 
 Branch 3:
 > "Posterior limb of the internal capsule, lenticulostriate territory (deep branches of M1 MCA)."
@@ -201,7 +212,7 @@ Adversarial check:
 Grade: correct.
 
 Canonical answer: Pure motor lacunar syndrome, posterior limb of internal capsule, left lenticulostriate territory.
-Confirmatory test: MRI with DWI (often shows the lacune); MRA / CTA for large-vessel screen; long-term BP control, statin, antiplatelet.
+Confirmatory test: MRI with DWI (often shows the lacune); MRA / CTA for large-vessel screen.
 
 >>> SUMMARY
 Branch accuracy: lateralization 2/2   level 2/2   specific 2/2   lesion type 2/2

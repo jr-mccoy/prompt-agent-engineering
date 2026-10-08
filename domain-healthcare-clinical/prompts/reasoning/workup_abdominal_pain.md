@@ -15,8 +15,20 @@ tags:
   - gi
   - diagnostic-workup
   - abdominal-pain
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -113,6 +125,21 @@ Work up acute abdominal pain in the adult: identify surgical abdomen and vascula
    - Surgical abdomen / vascular emergency / hemodynamic instability → OR / IR / ICU.
    - Mild diverticulitis, controlled biliary colic, resolved nephrolithiasis, treated UTI → discharge with follow-up.
    - Indeterminate workup, persistent pain, abnormal labs → observation / admission with serial exams.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Close the differential on the quadrant pattern while a can't-miss cause for that patient is untested — inferior MI with epigastric/RUQ pain in an older or diabetic patient, lower-lobe pneumonia, DKA, ectopic pregnancy in anyone of reproductive potential.
+- Print an Alvarado (or AAS) total without the item-by-item points from the supplied findings; a score assembled from findings not in the input is fabricated.
+- Treat a normal lactate, lipase or single LFT panel as excluding mesenteric ischemia, pancreatitis or a common-duct stone — each needs its confirmatory study or trend.
+- Assign a Tokyo, Hinchey or BISAP grade without naming which grade criteria were checked and their values.
+- Write antibiotic or analgesic doses without renal function and allergy status from the input; use the provider order, the label or `[VERIFY: renal dose / local antibiogram]`.
+
+✅ **DO:**
+- Recount every score: criterion, its points, the input finding that earns it, and the sum — then compare to the total you printed.
+- For each "excluded" or "unlikely" line, name the test and its value that excluded it; if none was done, write "not yet excluded — [test]".
+- Record hCG result (or why not applicable) before choosing imaging in a patient with reproductive potential.
+- Before any discharge disposition, check that every can't-miss diagnosis has a documented negative result or a stated reason it does not apply.
 
 ## Output Format
 

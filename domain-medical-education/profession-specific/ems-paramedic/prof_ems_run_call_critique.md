@@ -23,7 +23,7 @@ tags:
   - critique
   - quality-improvement
   - educator-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/profession-specific/ems-paramedic/prof_ems_field_scenario_drill.md
   - domain-medical-education/profession-specific/ems-paramedic/prof_ems_nremt_scenario_author.md
@@ -111,7 +111,7 @@ Protocol set: [...]
 | Field | Present | Quality | Notes |
 | Demographics complete | ☐ | __ | __ |
 | Allergies, meds, PMH | ☐ | __ | __ |
-| All times present (dispatch, en-route, on-scene, contact, departed, arrived, transferred) | ☐ | __ | __ |
+| All times present (dispatch, en-route, on-scene, contact, departed, arrived, transferred, in-service) | ☐ | __ | __ |
 | Initial vitals | ☐ | __ | __ |
 | Reassessment vitals (q5 unstable / q15 stable) | ☐ | __ | __ |
 | Interventions with time, dose, route, response | ☐ | __ | __ |
@@ -185,6 +185,16 @@ SYSTEMS — issues beyond this provider:
 | `pediatric_overlay` | Adds weight-based dosing audit, age-appropriate vitals |
 | `obstetric_overlay` | Adds maternal-fetal pair documentation audit |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| "Quote evidence" cells filled with a paraphrase or a plausible PCR line that is not in `pcr_text` | Every quoted string must be findable verbatim in the pasted PCR or artifact; if you cannot find it, write NOT DOCUMENTED rather than reconstructing what the medic probably wrote |
+| Counting an undocumented step as "performed but not charted" because the other findings suggest it happened | That failure-mode row requires proof from a second source (radio transcript, monitor strip, OLMC log); with only the PCR, an uncharted action is "not documented" and is scored as not done |
+| Structured-field audit ticked ☑ while a component is missing or impossible — a missing time in the sequence, a GCS whose E/V/M parts contradict the narrative's orientation or command-following | Recompute each documented score from its components and against the narrative, and check the time sequence against the full list in Method step 2 — dispatch through in-service — before ticking |
+| Hindsight grading — a good `outcome_known` raises A3/A4, a bad one lowers them, for decisions the provider made without that information | Score each decision on what the PCR shows the provider knew at that time stamp; use the outcome only in the "what could have changed outcome" lens, labelled as such |
+| Protocol steps or thresholds cited from general knowledge when `protocol_set` does not contain them, then scored as "unjustified deviation" | Label the protocol cell `[general national standard — not in supplied protocol]` and do not score a deviation from a standard the agency has not adopted |
+
 ## Verification Checklist
 
 - [ ] Every score axis has a *quoted* PCR snippet as evidence (or explicitly "NOT DOCUMENTED").
@@ -209,8 +219,8 @@ SYSTEMS — issues beyond this provider:
 
 Demographics: ☑ complete (age 66, F, weight estimated 75kg)
 Allergies/meds/PMH: ☑ allergies NKDA; meds atorvastatin, lisinopril, ASA 81; PMH HTN, hyperlipidemia
-Times: ☑ all present — dispatch 0843, en-route 0844, on-scene 0851, contact 0852, departed 0907, arrived 0925, transferred 0928
-Initial vitals: ☑ BP 168/94, HR 78 reg, RR 16, SpO2 97 RA, glucose 142, GCS 13 (E4 V4 M5)
+Times: ☑ all present — dispatch 0843, en-route 0844, on-scene 0851, contact 0852, departed 0907, arrived 0925, transferred 0928, in-service 0941
+Initial vitals: ☑ BP 168/94, HR 78 reg, RR 16, SpO2 97 RA, glucose 142, GCS 15 (E4 V5 M6)
 Reassessment: ☑ vitals at 0905, 0918 — appropriate for stable patient
 Interventions: ☑ IV 18g L AC at 0902, NS lock; cardiac monitor sinus; 12-lead EKG at 0903 documented as no acute ST changes
 Crew sigs: ☑
@@ -224,9 +234,9 @@ Objective: "Pt seated upright in chair. Awake. Right facial droop. Slurred speec
   ✓ FAST + extended modified Cincinnati assessment.
   ✗ NIHSS not documented as a score (scattered findings present but no calculated score). Per protocol, NIHSS within 15 min of contact required.
 
-Assessment: "Acute ischemic stroke, suspected LVO based on cortical findings (gaze, neglect not assessed in PCR), within tPA window."
+Assessment: "Acute ischemic stroke, suspected LVO based on cortical findings, within tPA window."
   ✓ Recognized stroke alert criteria.
-  ✗ Cortical signs (gaze deviation, neglect) not assessed or documented.
+  ✗ Cortical signs (gaze deviation, neglect) not assessed or documented — the PCR cites cortical findings but records none.
 
 Plan: "Stroke alert called via radio at 0902. Transport to Comprehensive Stroke Center per protocol. Family member with phone accompanying."
   ✓ Correct destination per protocol.
@@ -238,20 +248,20 @@ Reassessment: "0918 — no change in neuro exam. BP 162/90."
 >>> PROTOCOL ADHERENCE TABLE
 
 | Decision | Protocol | Adherence | Evidence |
-| Stroke recognition | FAST positive → stroke alert | Followed | "FAST + slurred speech + arm drift" |
+| Stroke recognition | FAST positive → stroke alert | Followed | "Right facial droop. Slurred speech but oriented. Right arm drift downward when held outstretched." |
 | NIHSS within 15 min | Required | Unjustified deviation | NOT DOCUMENTED as a calculated score |
-| Cortical assessment for LVO | Required if suspecting LVO | Skipped | "gaze deviation, neglect not assessed" |
+| Cortical assessment for LVO | Required if suspecting LVO | Skipped | NOT DOCUMENTED |
 | Glucose check | Required (rule out mimics) | Followed | "glucose 142" |
-| LKW documented | Required | Followed | "LKW 0830" |
+| LKW documented | Required | Followed | "Last known well 0830." |
 | Pre-notification of receiving | Required | Followed | "Stroke alert called via radio at 0902" |
 | Family with phone | Recommended | Followed | "Family member with phone accompanying" |
-| Transport mode | Ground appropriate (within 30 min of CSC) | Followed | implicit |
+| Transport mode | Ground vs air [general national standard — not in supplied protocol] | Not scored (no supplied standard) | departed 0907, arrived 0925 (structured times) |
 
 >>> FAILURE-MODE AUDIT
 
 Chart-vs-reality drift: 0 (no ancillary artifacts to compare)
 Retrospective rationalization: 0
-Critical action performed but not charted: 1 (NIHSS likely assessed informally — full FAST+ findings present — but not documented as a score)
+Critical action performed but not charted: 0 (no second source to prove it; NIHSS is scored as not documented — see protocol table)
 Charted intervention without indication: 0
 Missing reassessment after intervention: 0
 Refusal documentation incomplete: N/A
@@ -286,5 +296,5 @@ SYSTEMS:
 
 >>> SINGLE HIGHEST-YIELD TAKEAWAY
 
-NIHSS as a documented score (not just FAST findings) is the single most-leveraged change. The receiving stroke team uses your NIHSS for treatment-decision time-stamping in their own protocol, and a documented EMS NIHSS often enters the case-presentation slide for thrombectomy outcomes. Your assessment likely *was* sufficient — but if it's not charted as a score, it doesn't contribute to the time-to-treatment metric the comprehensive stroke center reports. Carry the sheet, use it, document it.
+NIHSS as a documented score (not just FAST findings) is the single most-leveraged change. The receiving stroke team uses your NIHSS for treatment-decision time-stamping in their own protocol, and a documented EMS NIHSS often enters the case-presentation slide for thrombectomy outcomes. Your scattered findings cover several NIHSS items — but if it's not charted as a score, it doesn't contribute to the time-to-treatment metric the comprehensive stroke center reports. Carry the sheet, use it, document it.
 ```

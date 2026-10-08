@@ -1,3 +1,22 @@
+---
+title: "Crisis Management Deck"
+category: presentations
+description: "Synthesize crisis-related data from multiple sources into a controlled executive response presentation with clear scenarios and an immediate action plan."
+techniques:
+  - ST-03
+  - OC-08
+  - DS-19
+  - QA-04
+difficulty: advanced
+tags:
+  - presentations
+  - powerpoint
+  - crisis-management
+  - crisis-communication
+  - scenario-analysis
+updated: "2026-10-06"
+---
+
 # Crisis Management Deck
 
 **Source:** POWERPOINT_BUILDING_PROMPT_SYSTEM.md
@@ -55,6 +74,15 @@ CRISIS-SPECIFIC REQUIREMENTS:
 VALIDATION:
 Show thumbnails, verify tone appropriateness for crisis communication, confirm actionability
 ```
+
+## False-Positive Prevention
+
+1. **Unconfirmed facts stated as established.** Early timelines mix confirmed events with reports and media claims. Tag every statement on Crisis Definition and Current Impact as confirmed (with its source in the timeline document) or unconfirmed; unconfirmed items never appear as headline facts.
+2. **Remedies promised before legal has cleared them.** Customer credits, refunds, admissions of fault, and regulator-facing statements on Recommended Action or Communication Plan are marked "pending legal review" unless the inputs record legal sign-off.
+3. **"Controlled response" framing that overstates containment.** The framing rule governs tone, not facts. If the timeline's current status is ongoing, the deck says ongoing, not resolved.
+4. **Conflicting viewpoints "reconciled" by dropping one.** When leadership emails disagree, show the disagreement and who decides it on Scenario Analysis rather than keeping only the view that suits the recommendation.
+5. **Impact ranges with nothing behind them.** A range on revenue or cost impact must come from the financial impact data or stated assumptions; show the assumption next to the figure.
+6. **Verify:** cross-check each date and figure on Crisis Definition and Current Impact against the timeline document and the financial impact sheet, and each media claim against the stakeholder communication log.
 
 ## Usage Notes
 

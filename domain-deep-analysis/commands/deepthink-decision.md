@@ -1,6 +1,7 @@
 ---
 name: deepthink-decision
 description: Start a deep, multi-perspective analysis of a hard decision. Drives the model through Frame → Decompose options & criteria → Multi-perspective (BACKBONE.md mandatory roster + scope-specific additions) → Stress-test → Synthesize, using AskUserQuestion at every phase gate. Terminal artifact is a recommendation with rationale, calibrated confidence, reversibility, and observable tripwires.
+techniques: [RT-02, CM-02, QA-02, QA-04, QA-09]
 version: "1.0.0"
 category: deep-analysis
 tags: [deep-analysis, decision-making, multi-perspective, tradeoff-analysis, reversibility, gated-workflow]
@@ -55,6 +56,12 @@ This command inherits shared behavior from [`domain-deep-analysis/BACKBONE.md`](
 5. **Continue phase-by-phase.** Each phase ends with the gate mechanism defined in `BACKBONE.md`. Never run multiple phases in one output.
 
 6. **At the FINAL GATE in Phase 5,** offer `/deepthink-plan` if the user accepts the recommendation and wants to schedule execution.
+
+## False-Positive Prevention
+
+1. **Running a decision on something that is not yet a choice.** If the user still cannot name two options after the "what does not doing it look like" prompt, or the real ask is "why does this keep happening", a recommendation here is a guess wearing a confidence label — switch to `/deepthink-problem`. If the option is already chosen and the ask is how to execute it, switch to `/deepthink-plan`.
+2. **A hedged gate reply read as a pick.** "Maybe, I guess" at GATE 2 does not confirm which criteria are load-bearing. Restate the options and wait rather than proceeding on the most convenient reading.
+3. **A Phase 5 output that names an option but is not this command's artifact.** Before the final gate, confirm every required field is present: a named option under *Recommendation*, *Rationale* per load-bearing criterion, *What this gives up*, *Reversibility* (classification, cost to reverse, smaller test), 2–4 *Tripwires* each with a timeframe, *Confidence calibration* including what would flip it, and the steel-manned *Strongest objection*. Any gap means Phase 5 is not done.
 
 ## Success Criteria
 

@@ -15,8 +15,20 @@ tags:
   - benzodiazepine
   - taper
   - withdrawal
-updated: "2026-05-12"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -111,6 +123,20 @@ Senior psychiatrist / addiction-medicine specialist / primary care physician wit
 
 9. **Document the schedule and reassessment plan.**
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Present one equivalence (e.g., lorazepam 1 mg = diazepam 5 mg) as fixed; published tables differ up to two-fold, so name the table used and treat the converted dose as a starting estimate.
+- Write a crossover where the daily diazepam-equivalent silently drops or jumps between day blocks.
+- List `REASSESSMENT MILESTONES` (50% point, 5 mg/day, off) at weeks that do not follow from the step sizes and intervals in `TAPER SCHEDULE`.
+- Default to diazepam in an older adult or hepatic impairment without noting desmethyldiazepam accumulation; glucuronidated agents (lorazepam, oxazepam) may be the safer taper vehicle.
+
+✅ **DO:**
+- Tabulate every step with daily dose, % reduction from the previous step and cumulative week; confirm each dose is deliverable with available tablets or the 1 mg/mL solution and that the last row reads "off".
+- Total the diazepam-equivalent for each crossover day block and show the sum next to it.
+- Check the list for CYP3A4/2C19 inhibitors that raise diazepam (fluvoxamine, fluconazole) and for opioids, alcohol or gabapentinoids that add respiratory depression.
+- Size gabapentin or other renally cleared adjuncts to the patient's CrCl `[VERIFY: current label / formulary]`.
+
 ## Output Format
 
 ```
@@ -182,8 +208,8 @@ PATIENT SNAPSHOT:
 CONVERSION TO LONG-HALF-LIFE AGENT:
 - Lorazepam 3 mg/day = diazepam ~15 mg/day equivalent.
 - Convert over 1 week:
-  - Day 1–3: lorazepam 0.5 mg TID + diazepam 5 mg qHS.
-  - Day 4–7: lorazepam 0.5 mg BID + diazepam 5 mg AM + 5 mg qHS.
+  - Day 1–3: lorazepam 1 mg AM + 1 mg noon + diazepam 5 mg qHS (replaces bedtime lorazepam) — 10 + 5 = 15 mg/day diazepam-equivalent.
+  - Day 4–7: lorazepam 0.5 mg BID + diazepam 5 mg AM + 5 mg qHS — 5 + 10 = 15 mg/day diazepam-equivalent.
   - Day 8 onward: diazepam 5 mg BID + 5 mg qHS (15 mg/day total).
 - Allow 1–2 weeks at stable diazepam dose before starting taper to confirm equivalence.
 

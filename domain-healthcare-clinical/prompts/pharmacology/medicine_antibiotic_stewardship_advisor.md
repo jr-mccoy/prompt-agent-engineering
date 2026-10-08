@@ -19,10 +19,22 @@ related_prompts:
   - medicine_drug_interaction_checker
   - medicine_clinical_decision_support
   - medicine_literature_synthesizer
-updated: "2026-03-04"
+updated: "2026-10-06"
 ---
 
 # Antibiotic Stewardship Advisor
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 **Objective:** Provide antimicrobial stewardship decision support including empiric antibiotic selection based on suspected source and patient factors, de-escalation guidance when culture results return, duration-of-therapy optimization, IV-to-PO conversion criteria, allergy assessment, and antibiogram interpretation to promote appropriate antibiotic use and combat antimicrobial resistance.
 
@@ -131,7 +143,7 @@ Clinical signs of infection:
   [ ] Fever (> 38.0°C) or hypothermia (< 36.0°C)
   [ ] Localizing symptoms (cough, dysuria, wound erythema, etc.)
   [ ] Elevated WBC or left shift
-  [ ] Elevated procalcitonin (> 0.25 suggests bacterial infection)
+  [ ] Elevated procalcitonin (> 0.25 ng/mL [= µg/L] suggests bacterial infection; confirm the reporting lab's units)
   [ ] Positive cultures from a sterile site
 
 COMMON MIMICS (not infection):
@@ -255,8 +267,8 @@ HIGH RISK (avoid penicillins):
   - Serum sickness
   - Drug reaction with eosinophilia (DRESS)
   → Use: Non-beta-lactam alternatives
-  → Cross-reactivity with carbapenems: < 1% (generally safe)
-  → Monobactams (aztreonam): No cross-reactivity
+  → Anaphylaxis (IgE-mediated) history: cross-reactivity with carbapenems < 1% — may be used with caution when needed; monobactams (aztreonam): no cross-reactivity with penicillins
+  → SJS/TEN, DRESS, serum sickness (severe non-IgE reactions): the IgE cross-reactivity figures above do not apply — avoid beta-lactams, including carbapenems, unless cleared by allergy [VERIFY: current AAAAI/ACAAI drug-allergy practice parameter]
 
 DELABELING OPPORTUNITY:
   ~90% of reported penicillin allergies are not true allergies
@@ -321,7 +333,7 @@ Patient eligible for PO switch when ALL of the following are met:
 
 HIGH-BIOAVAILABILITY ORAL OPTIONS:
 (These achieve IV-equivalent levels orally)
-  - Fluoroquinolones (levofloxacin, ciprofloxacin, moxifloxacin): ~100% bioavailability
+  - Fluoroquinolones: levofloxacin ~100%, moxifloxacin ~90%, ciprofloxacin ~70–80% bioavailability
   - Linezolid: 100% bioavailability
   - Metronidazole: ~100% bioavailability
   - TMP-SMX: ~100% bioavailability
@@ -332,7 +344,7 @@ HIGH-BIOAVAILABILITY ORAL OPTIONS:
 COMMON IV-TO-PO SWITCHES:
   Ceftriaxone IV → Cephalexin PO or amoxicillin-clavulanate PO (based on sensitivity)
   Ampicillin-sulbactam IV → Amoxicillin-clavulanate PO
-  Ciprofloxacin IV → Ciprofloxacin PO (same dose, same levels)
+  Ciprofloxacin IV → Ciprofloxacin PO (oral bioavailability ~70–80%, so the PO dose is higher than the IV dose, e.g., 400 mg IV ≈ 500 mg PO [VERIFY: product label])
   Metronidazole IV → Metronidazole PO (same dose, same levels)
   Vancomycin IV → Linezolid PO or TMP-SMX PO or doxycycline PO (based on indication and sensitivity)
 ```
@@ -376,10 +388,27 @@ Bone and joint infections:
 
 PROCALCITONIN-GUIDED DURATION:
   If available, procalcitonin can guide antibiotic discontinuation:
-  - PCT < 0.25: Consider stopping antibiotics
+  - PCT < 0.25 ng/mL (= µg/L): Consider stopping antibiotics
   - PCT decrease > 80% from peak: Consider stopping
   - Recheck every 48-72 hours
 ```
+
+---
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Copy a dose and interval from the Step 2 tables into `Agent(s): [Drug, dose, route, frequency]` as if verified; each regimen in the output names the label or guideline it was checked against, or carries `[VERIFY: current label / formulary]` — the tables are a reasoning aid, not the label.
+- Write "N/A" in `Renal adjustment` when the input gives a CrCl/GFR or a dialysis modality, and don't call a regimen appropriate before checking hepatic impairment, age and pregnancy against it (fluoroquinolones, tetracyclines, TMP-SMX near term).
+- Fill `MRSA / Pseudomonas / ESBL risk: [Low/High]` from the infection type alone; every "High" cites the risk-factor checkbox or prior culture that set it.
+- Tick "Drug interaction concern" with a severity label and no mechanism ("major with warfarin"); name the mechanism (CYP2C9 inhibition by sulfamethoxazole, additive QT prolongation, chelation of oral fluoroquinolones by polyvalent cations) or leave the alert unticked.
+- Present a resistance rate as "local" when the input says `Local Antibiogram Available: No`; regional or national figures are labelled as such.
+
+✅ **DO:**
+- Reconcile each recommended agent with the allergy input: state the reaction type supplied and the cross-reactivity basis used; an unknown reaction type is reported as unknown, not treated as low risk.
+- Recompute total duration from the start date in `Current Antibiotics` (days given + days planned) and compare it with the Step 6 duration for the stated source.
+- Tie every de-escalation target to a named organism and its reported S/I/R; while cultures are pending, write the target as conditional.
+- Read procalcitonin and other labs with the reporting lab's units and reference range before applying a Step 1 or Step 6 cut-off.
 
 ---
 
@@ -448,7 +477,7 @@ Verify with local antibiogram and current guidelines
 ### Renal Dosing
 - Always check renal dosing for: Vancomycin, aminoglycosides, carbapenems, fluoroquinolones, TMP-SMX
 - Vancomycin requires therapeutic drug monitoring (trough or AUC-guided dosing)
-- Nitrofurantoin: Avoid if GFR < 30 (ineffective, not dangerous)
+- Nitrofurantoin: Avoid if GFR < 30 (inadequate urinary concentration → treatment failure, and accumulation increases toxicity risk, e.g., peripheral neuropathy) [VERIFY: current product label / AGS Beers Criteria for the CrCl threshold]
 
 ### Antimicrobial Resistance Stewardship
 - Narrow spectrum is ALWAYS preferred over broad spectrum when effective

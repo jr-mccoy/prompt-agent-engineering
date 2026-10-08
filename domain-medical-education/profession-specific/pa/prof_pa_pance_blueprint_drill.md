@@ -19,7 +19,7 @@ tags:
   - panre
   - nccpa-blueprint
   - learner-tool
-updated: "2026-05-12"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/learner-boards/boards_pance_pearl_drill.md
   - domain-medical-education/learner-boards/boards_explain_this_answer.md
@@ -130,6 +130,16 @@ Single highest-yield improvement: [...]
 | `population_overlay` | Pediatric, geriatric, pregnancy-specific |
 | `setting_overlay` | Outpatient vs inpatient vs ED — changes resource availability and what "next step" means |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| Keyed option that bundles several actions ("give X, give Y, and transfer"), so it wins on completeness and length — and one bundled step may be wrong for this stem's findings | Key a single action where the task area is "next step"; if a bundle is unavoidable, check every element against the stem's data (territory, BP, contraindications) and give the distractors matching length and structure |
+| `engineered_trap` from the input mapped to a different option in the teardown, or the trap label describing the opposite reflex from the one the option tests | Before writing the teardown, name which option embodies the requested trap; the "Engineered trap" line must point to that letter and describe the same failure mode the input named |
+| Time-window or dose arithmetic in the stem and justification that adds intervals which run in parallel, or leaves out time already elapsed | Lay out the timeline from first medical contact: elapsed time, door-in-door-out, transport, team readiness. Recompute the total, and state the guideline window `[VERIFY: current ACC/AHA guideline]` before declaring the keyed option inside it |
+| A blueprint cell named in the header while the item actually tests a different task (a "clinical intervention" item that is only answerable by recognizing the diagnosis) | Cover the options and ask what cognitive step the lead-in demands; if a learner who already has the diagnosis still has to choose, the cell is right — if naming the diagnosis answers the item, re-tag the task area |
+| Content categories, task areas, or blueprint percentages quoted from memory | Use the category and task names from the current NCCPA PANCE blueprint `[VERIFY: current NCCPA content blueprint]`; do not state blueprint weights unless taken from that document |
+
 ## Verification Checklist
 
 - [ ] Blueprint cell explicitly named: `category × task` cited in header AND tested by the lead-in.
@@ -160,7 +170,7 @@ A 62-year-old man presents to the emergency department with 1 hour of substernal
 
 Which of the following is the most appropriate next step in management?
 
-A) Administer aspirin 325 mg chewed, give sublingual nitroglycerin, and arrange immediate transfer to the PCI-capable center
+A) Administer aspirin 325 mg chewed and arrange immediate transfer to the PCI-capable center
 B) Administer tenecteplase IV bolus and admit to the ICU
 C) Order a stat echocardiogram to confirm wall-motion abnormality before transfer
 D) Administer aspirin 325 mg chewed and obtain a stat troponin before deciding on transfer
@@ -171,7 +181,7 @@ E) Initiate heparin drip and consult cardiology by phone for medical management
 >>> TEARDOWN
 
 Correct: A
-Justification: STEMI within PCI window (door-to-balloon ≤ 90 min if at PCI-capable; first-medical-contact-to-balloon ≤ 120 min if transfer required). PCI is feasible here within the 120-min window (25 min transport + 45 min setup = 70 min) — PCI is preferred over thrombolytics.
+Justification: STEMI within PCI window (door-to-balloon ≤ 90 min if at PCI-capable; first-medical-contact-to-balloon ≤ 120 min if transfer required). PCI is feasible here within the 120-min window: the cath team's 45-min setup runs in parallel with transfer, so the binding interval is door-in-door-out at this ED + 25 min transport + time to device, counted from first medical contact [VERIFY: current ACC/AHA STEMI guideline windows] — PCI is preferred over thrombolytics.
 
 | Opt | Correct? | If WRONG, what scenario it would be correct for |
 |---|---|---|
@@ -181,7 +191,7 @@ Justification: STEMI within PCI window (door-to-balloon ≤ 90 min if at PCI-cap
 | D | N | Troponin is helpful for NSTEMI / unstable angina decision-making but should NOT delay reperfusion in STEMI; EKG diagnosis is sufficient |
 | E | N | Heparin + medical management is for NSTEMI without high-risk features OR for STEMI patients with absolute contraindication to both PCI and lytics |
 
-Engineered trap: D — tests "treatment before diagnosis" / "wait for confirmation" reflex. Troponin will be drawn but should not delay door-to-needle/balloon decision in a STEMI by EKG.
+Engineered trap: B — tests the "treatment before diagnosis" reflex: giving thrombolytics without first checking PCI availability. Here PCI is reachable within the window, so lytics are the wrong reperfusion choice.
 
 >>> BLUEPRINT-CELL TAKEAWAY
 
@@ -189,5 +199,5 @@ For STEMI, the reperfusion algorithm is decided at door: PCI within 120 min of F
 
 >>> COACHING
 
-Single highest-yield improvement: PANCE clinical-intervention cells reward *time-pressured action* over confirmatory testing when the diagnosis is already established by initial assessment. The trap option (D — wait for troponin) is what an over-cautious learner picks. Read the EKG description carefully: 3 mm ST elevation in two contiguous leads = STEMI = act, don't confirm.
+Single highest-yield improvement: PANCE clinical-intervention cells reward *time-pressured action* over confirmatory testing when the diagnosis is already established by initial assessment. Option D (wait for troponin) is what an over-cautious learner picks. Read the EKG description carefully: 3 mm ST elevation in two contiguous leads = STEMI = act, don't confirm.
 ```

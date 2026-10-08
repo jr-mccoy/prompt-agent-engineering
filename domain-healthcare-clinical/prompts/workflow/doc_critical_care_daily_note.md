@@ -15,8 +15,20 @@ tags:
   - critical-care
   - icu
   - systems-based-note
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -61,6 +73,19 @@ Intensivist rounding and documenting the daily ICU note.
 
 7. **Keep it current** — ICU notes are high-stakes and frequently copy-forwarded; reflect today's data, not yesterday's.
 
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Populate Lines/tubes/drains, code status, prophylaxis agents or "afebrile" from what an ICU patient usually has — a central line, arterial line or Foley that was not in today's input becomes a line-day and CLABSI/CAUTI audit error.
+- Advance line days and antibiotic day by incrementing yesterday's note instead of counting from a dated start; an off-by-one antibiotic day mis-times the stop date.
+- Write "AKI improving", "Cr improving" or "K repleted" when only one value or no value was supplied — a trajectory needs two dated values.
+- Mark a DAILY GOALS item "yes" (SBT candidacy, lines to remove) when the criteria behind it — FiO2/PEEP, vasopressor dose, mental status off sedation — were not in the input.
+
+✅ **DO:**
+- Recompute every derived number from its inputs and show it: P/F = PaO2 ÷ FiO2 (as a fraction), net balance = in − out, weight-based drip rate in the stated units (mcg/kg/min vs mcg/min); with a metabolic acidosis on the ABG, check the PaCO2 against Winter's formula (1.5 × HCO3 + 8 ± 2) before writing "compensated".
+- Check that every drip in OBJECTIVE carries agent, rate and units and reappears in its system's plan with a direction (wean, titrate, stop, continue).
+- List every culture or result still pending in the ID (or relevant system) plan together with what will change when it returns; count pending items in the input and in the note.
+
 ## Output Format
 
 ```
@@ -101,7 +126,7 @@ DAILY GOALS CHECKLIST:
 
 ## Worked Example
 
-**Input:** ICU Day 2, septic shock from pneumonia, intubated. Overnight: weaning norepinephrine, lactate cleared 4.2 → 1.6, started enteral feeds. Vitals MAP 70–78, HR 88–96. Norepinephrine down to 0.04 mcg/kg/min, propofol 25 mcg/kg/min. Vent: AC/VC, FiO2 0.4, PEEP 8, Vt 6 mL/kg, last ABG 7.36/40/92. UOP improving, net +1.2L. WBC 14 down from 19. Cultures: blood pending, sputum gram-positive cocci. On ceftriaxone+azithromycin day 2. Glucose 150s.
+**Input:** ICU Day 2, septic shock from pneumonia, intubated. Overnight: weaning norepinephrine, lactate cleared 4.2 → 1.6, started enteral feeds (tolerating), no other events. Vitals Tmax 37.6, MAP 70–78, HR 88–96. Norepinephrine down to 0.04 mcg/kg/min, propofol 25 mcg/kg/min. Vent: AC/VC, set RR 18, FiO2 0.4, PEEP 8, Vt 6 mL/kg, last ABG 7.36/40/92. Not yet assessed off sedation. UOP improving, net +1.2L. Cr 1.9 yesterday → 1.5 today; K 3.4 yesterday, repleted, 4.0 today. WBC 14 down from 19; Hgb and platelets unchanged from yesterday. Cultures: blood pending, sputum gram-positive cocci. On ceftriaxone+azithromycin day 2. Glucose 150s. Lines (all placed ICU day 1): right IJ central line, arterial line, ETT, Foley. Prophylaxis: enoxaparin, PPI. Code status: full code per family; family meeting planned.
 
 **Output:**
 
@@ -113,30 +138,30 @@ ONE-LINER: Adult with septic shock secondary to community-acquired pneumonia, in
 Hemodynamically improving overnight with successful down-titration of norepinephrine. Lactate cleared from 4.2 to 1.6. Enteral nutrition initiated and tolerated. No new fevers or events.
 
 OBJECTIVE:
-- Vitals: MAP 70–78, HR 88–96, afebrile. 
+- Vitals: MAP 70–78, HR 88–96, Tmax 37.6.
 - Drips: norepinephrine 0.04 mcg/kg/min (weaning); propofol 25 mcg/kg/min.
 - Vent: AC/VC, FiO2 0.40, PEEP 8, Vt 6 mL/kg (lung-protective), RR set 18. ABG 7.36/40/92.
 - I/O: net +1.2 L over 24h; urine output improving.
-- Labs: WBC 14 (down from 19), lactate 1.6 (cleared), Cr improving, K repleted.
+- Labs: WBC 14 (down from 19), lactate 1.6 (cleared from 4.2), Cr 1.5 (from 1.9), K 4.0 after repletion (from 3.4), Hgb/platelets unchanged.
 - Lines/tubes/drains: right IJ central line (day 2), arterial line (day 2), ETT, Foley.
 - Antibiotics: ceftriaxone + azithromycin, day 2.
 
 ASSESSMENT & PLAN (by system):
 NEURO: Sedated on propofol, target RASS −1 to 0. → Begin daily sedation awakening trial this morning; assess for extubation readiness; CAM-ICU screen.
 CV: Septic shock resolving, norepinephrine weaning. → Continue weaning to off as MAP tolerates ≥65; reassess fluid status (net positive, avoid further large positive balance).
-RESP: Pneumonia/early sepsis-related; oxygenation good (P/F ~230 on FiO2 0.4). → Wean FiO2 toward 0.3; perform spontaneous breathing trial today given improving picture and low pressor requirement; if passes and mentating off sedation, extubate.
+RESP: Pneumonia/early sepsis-related; oxygenation good (P/F ~230 on FiO2 0.4). → Wean FiO2 toward 0.3; screen for spontaneous breathing trial after this morning's awakening trial (FiO2 0.4/PEEP 8 and low-dose norepinephrine recorded; mental status off sedation not yet assessed); if SBT passed and mentating off sedation, extubate.
 GI/NUTRITION: Enteral feeds started and tolerated. → Advance to goal rate; continue.
-RENAL/FLUIDS/LYTES: AKI improving with resuscitation; UOP up. → Target even-to-net-negative balance now that shock resolving; continue electrolyte repletion.
-HEME: Stable. → Continue VTE prophylaxis (enoxaparin/SCDs).
+RENAL/FLUIDS/LYTES: AKI improving with resuscitation (Cr 1.9 → 1.5); UOP up. → Target even-to-net-negative balance now that shock resolving; continue electrolyte repletion.
+HEME: Hgb/platelets unchanged. → Continue VTE prophylaxis (enoxaparin).
 ID: CAP with septic shock; sputum gram-positive cocci. → Continue ceftriaxone + azithromycin; narrow per culture/sensitivities when finalized; blood cultures pending; plan 5–7 day course; reassess azithromycin once atypicals excluded.
 ENDO: Glucose 150s. → Insulin protocol, target 140–180.
 
 DAILY GOALS CHECKLIST:
 - Sedation target/awakening: RASS −1 to 0; awakening trial this AM.
-- SBT candidacy: yes — perform today.
+- SBT candidacy: screen after awakening trial — mental status off sedation not yet assessed.
 - Lines to remove: reassess arterial line and central line need as pressors wean off.
 - VTE prophylaxis: enoxaparin. / GI prophylaxis: PPI while intubated.
 - Nutrition: enteral, advancing to goal. / Glycemic target: 140–180.
 - Mobility: out of bed/PT once extubated.
-- Code status/goals: full code; confirm with family.
+- Code status/goals: full code per family; family meeting planned.
 ```

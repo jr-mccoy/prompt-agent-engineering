@@ -21,7 +21,7 @@ tags:
   - quality-control
   - coverage
   - aging
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-assessment-items/assess_mcq_nbme_style_author.md
   - domain-medical-education/educator-assessment-items/assess_item_analysis_review.md
@@ -127,7 +127,7 @@ Keep: [N]   Refresh: [N]   Retire: [N]   Replace (to author): [N]
 1. Retire item 0112 (orphaned-fact, lead-in not closed) — major flaw.
 2. Retire item 0214 (stereotype) — equity flaw.
 3. Refresh item 0277 (outdated sepsis bundle).
-4. Refresh items 0021/0301/0344 → consolidate to one (0099).
+4. Retire items 0021/0301/0344 (cluster duplicates) → consolidate to survivor 0099.
 5. Author 2 new items for Renal × Analysis × Med knowledge (LO-04 area).
 6. Author 1 new item for Endo × Application × Patient care (LO-29).
 7. Refresh items with absolute-term flaws (10 items listed).
@@ -157,6 +157,16 @@ None of the items currently classified "keep" was passed without flaw + source r
 | `stake_level` | High-stakes raises retire thresholds for any flaw; formative tolerates more refresh-instead-of-retire |
 | `aging_window_months` | Default 24 months for guideline review; tighter for fast-moving areas (e.g., infectious disease, oncology) |
 
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| A classification summary whose counts do not reconcile with the bank or with the stated retire reasons | Show the arithmetic: keep + refresh + retire = `bank_size`; retire = orphaned-fact + equity + cluster duplicates + any other named reason; replace ≤ retire |
+| Reporting flaw-class totals for the whole bank ("all N items reviewed") when only an excerpt of items was supplied | Count only items actually read; label anything else `estimated from N sampled items` or `INSUFFICIENT — items not supplied` |
+| Pattern-matched cluing flags: "absolute term" raised on "always" inside a patient's quoted words, "longest option is key" where the key is two words longer than comparable distractors | Confirm each flag against the item text: quote the offending phrase, and for length flags give character counts for the key and the longest distractor |
+| Aging verdicts made from the citation year alone, so an old citation with an unchanged recommendation is flagged and a recent one with a changed threshold passes | Compare the specific drug, dose or threshold in the item with the matching recommendation in `current_guidelines_basis`; write `[VERIFY]` when that text was not supplied |
+| Grouping items into a redundancy cluster by shared topic label when they test different decisions | Apply `redundancy_threshold` literally: for each non-survivor, name the single field (age, one lab value) on which it differs from the survivor; items with a different lead-in or decision stay separate |
+
 ## Verification Checklist
 
 - [ ] Coverage delta computed per blueprint cell.
@@ -172,7 +182,7 @@ None of the items currently classified "keep" was passed without flaw + source r
 
 ## Worked Example (compact)
 
-**Input:** `bank_name = "IM Clerkship Bank"`, `bank_size = 540`, last review 19 months ago, `redundancy_threshold = "vignettes differing only in patient age or single lab value"`, `current_guidelines_basis = "ACC/AHA 2023, ADA 2024, KDIGO 2024, Surviving Sepsis 2021, Sanford 2025"`.
+**Input:** `bank_name = "IM Clerkship Bank"`, `bank_size = 540`, bank export supplied (all 540 items with stem, options, key and cited sources), last review 19 months ago, `redundancy_threshold = "vignettes differing only in patient age or single lab value"`, `current_guidelines_basis = "ACC/AHA 2023, ADA 2024, KDIGO 2024, Surviving Sepsis 2021, Sanford 2025"`.
 
 **Output (excerpt):**
 
@@ -186,7 +196,7 @@ QUESTION BANK AUDIT — IM Clerkship Bank — N=540 — Last review: 19 mo ago
 | Renal × Analysis | 18 | 9 | under |
 | Heme × Evaluation | 6 | 0 | zero |
 
->>> ITEM-QUALITY FLAW SWEEP (excerpt — 540 items reviewed)
+>>> ITEM-QUALITY FLAW SWEEP (excerpt — all 540 items in the supplied export read)
 | Flaw class | Count |
 |---|---|
 | Longest-option-is-key | 41 |
@@ -201,6 +211,7 @@ QUESTION BANK AUDIT — IM Clerkship Bank — N=540 — Last review: 19 mo ago
 
 >>> CLASSIFICATION SUMMARY
 Keep: 268   Refresh: 132   Retire: 140   Replace: 32
+(268 + 132 + 140 = 540. Retire 140 = 14 orphaned-fact + 6 equity + 109 cluster duplicates + 11 [reason not provided — name each before sign-off].)
 
 >>> TOP-10 ACTIONS
 1. Retire 14 orphaned-fact items.

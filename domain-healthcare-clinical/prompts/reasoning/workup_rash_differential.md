@@ -14,8 +14,20 @@ tags:
   - emergency-medicine
   - infectious-disease
   - diagnostic-workup
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -55,7 +67,7 @@ Work up the patient with rash: prioritize identification of life-threatening der
 
    - **Toxic shock syndrome (staphylococcal or streptococcal):** fever, hypotension, diffuse macular erythroderma (sunburn-like) with later desquamation (palms/soles), multiorgan involvement. Streptococcal often with deep tissue infection. Source control (remove tampon, packing; debride necrotizing soft tissue infection); vancomycin + clindamycin (toxin suppression) + piperacillin-tazobactam; IVIG for severe streptococcal TSS.
 
-   - **Rocky Mountain spotted fever:** fever, headache, myalgia followed by petechial rash starting on wrists/ankles spreading centripetally to palms/soles. Tick exposure in endemic areas. Mortality high if untreated. **Empiric doxycycline 100 mg PO/IV BID** at any age (including children) — do not wait for confirmation. Other rickettsial illnesses similar approach.
+   - **Rocky Mountain spotted fever:** fever, headache, myalgia followed by rash starting on wrists/ankles, spreading centripetally to the trunk and often involving palms/soles; becomes petechial later. Tick exposure in endemic areas. Mortality high if untreated. **Empiric doxycycline 100 mg PO/IV BID** at any age (including children) — do not wait for confirmation. Other rickettsial illnesses similar approach.
 
    - **Disseminated intravascular coagulation / purpura fulminans:** widespread purpura with sepsis. Treat underlying sepsis; supportive (FFP, cryo, platelets) if bleeding.
 
@@ -107,7 +119,7 @@ Work up the patient with rash: prioritize identification of life-threatening der
      - SLE (malar rash sparing nasolabial folds), subacute cutaneous LE, dermatomyositis (Gottron papules, heliotrope rash, shawl sign), porphyria cutanea tarda, drug photosensitivity.
 
    - **Targetoid lesions:**
-     - Erythema multiforme: typical 3-zone target, often HSV-triggered; minor mucosal in EM major.
+     - Erythema multiforme: typical 3-zone target, often HSV-triggered; EM minor has little or no mucosal involvement, EM major involves mucosa.
      - Distinguish from SJS by pattern (atypical targets, mucosa, sloughing).
 
 3. **Targeted workup.**
@@ -123,6 +135,21 @@ Work up the patient with rash: prioritize identification of life-threatening der
    - Severe non-life-threatening with systemic features → admission, dermatology consult.
    - Stable rash with reassuring exam → outpatient with dermatology follow-up.
    - Provide patient with photographs of expected evolution, return precautions (mucosal, skin sloughing, fever, hemodynamic symptoms).
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Dismiss SJS/TEN because no skin has sloughed yet, or classify it from erythematous BSA — the SJS / overlap / TEN bands refer to detached or detachable skin, which must be estimated separately.
+- Name a culprit drug by its class reputation without its start (and stop) date relative to rash onset in DRUG / EXPOSURE TIMELINE.
+- Record purpura as "palpable", "non-blanching" or "absent" unless the input reports that exam finding.
+- Present a SCORTEN or RegiSCAR total as complete when items are missing (bicarbonate, glucose, BUN, eosinophil count, biopsy).
+- Write adult epinephrine, acyclovir or doxycycline doses for a child whose weight was not given.
+
+✅ **DO:**
+- Recompute the absolute eosinophil count as WBC × eosinophil fraction (worked example: 14 × 0.22 ≈ 3.1 × 10⁹/L) instead of reading the percentage alone; do the same for atypical lymphocytes.
+- List each SCORTEN or RegiSCAR item with its source value or "missing", taking item weights from the published tool `[VERIFY: tool reference]`.
+- Trace every "supported" or "excluded" entry in LIFE-THREAT SCREEN to a specific finding in the input.
+- Check pregnancy status before systemic agents and flag VZV in pregnancy as listed in Step 1.
 
 ## Output Format
 

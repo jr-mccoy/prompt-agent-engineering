@@ -17,9 +17,9 @@ techniques:
   - ED-02
 difficulty: beginner
 related_prompts:
-  - prompts/pacu_orientee_reflective_journal_prompts.md
-  - prompts/pacu_orientee_topic_self_study_planner.md
-  - prompts/pacu_preceptor_debrief.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_reflective_journal_prompts.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_orientee_topic_self_study_planner.md
+  - domain-healthcare-clinical/prompts/perianesthesia/clinical-and-educator/pacu_preceptor_debrief.md
 references:
   - ASPAN Standards of Perianesthesia Nursing Practice
 ---

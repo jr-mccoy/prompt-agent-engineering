@@ -2,13 +2,23 @@
 title: "Calendar and Routines Worksheet Generator"
 category: education
 description: "Generate life-skills worksheets for calendar literacy, sequencing routines, and planning weekly tasks."
+techniques:
+  - SV-05
+  - SV-11
+  - SV-12
+  - SV-13
+  - SV-14
+  - SV-15
+  - SV-16
+  - SV-17
+  - SV-18
 tags:
   - worksheet
   - printable
   - life-skills
   - calendar
   - routines
-updated: "2026-04-21"
+updated: "2026-10-06"
 ---
 
 # Calendar and Routines Worksheet Generator
@@ -121,3 +131,16 @@ CONTENT LOCK
 - Keep all decorative elements functional and monochrome.
 - Do not add branding, mascots, or classroom logos.
 - Prioritize print clarity for school photocopiers.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Accept a ZONE 3 grid because it has seven columns and dates; the first of the month must fall on the right weekday for the stated year (October 1, 2026 is a Thursday) and the month must have its true number of days.
+- Use a Sunday-start grid when the class calendar starts on Monday, which changes every "first day of the week" answer.
+- Pass misspelled day or month names in the ZONE 2 bank (Wensday, Febuary) because the bank looks complete.
+- Key a single order for ZONE 4 routine steps when two orders are defensible (brush teeth before or after breakfast).
+
+✅ **DO:**
+- Compare the rendered grid with a real calendar for the stated month and year, date by date.
+- Answer every ZONE 3 question from the rendered grid, including ones that cross a month boundary.
+- Keep only ZONE 4 steps whose order is forced, and check the key against them.

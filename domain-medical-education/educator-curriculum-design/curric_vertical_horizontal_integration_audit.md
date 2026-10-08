@@ -22,7 +22,7 @@ tags:
   - vertical-integration
   - horizontal-integration
   - audit
-updated: "2026-05-18"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-curriculum-design/curric_course_map_builder.md
   - domain-medical-education/educator-curriculum-design/curric_clinical_clerkship_orientation_designer.md
@@ -45,7 +45,7 @@ Integration auditor. You read curricula across years and courses simultaneously.
 - `integration_target_density`: e.g., "every major topic should re-appear in ≥ 2 phases at rising Bloom levels"
 - `horizontal_courses_concurrent`: which courses run concurrently within a phase
 - `vertical_pairs`: which foundational topics should map to which clinical applications
-- `accreditation_standards_relevant`: e.g., LCME 6.3, ACGME milestones, CCNE essentials
+- `accreditation_standards_relevant`: e.g., LCME elements, ACGME milestones, CCNE essentials
 
 ## Method
 
@@ -95,6 +95,9 @@ INTEGRATION AUDIT — [curriculum_scope]
 | Antibiotic stewardship | App (path) | App (pharm) | App (clinical) | App | spiral re-encounter but Bloom-flat |
 | Sepsis | (none) | App | Analysis | Eval | weak Y1 foundation |
 | Ethics — capacity | App | (none) | App | (none) | gaps in 2 of 4 phases |
+| Geriatrics pharmacology | [not provided] | [not provided] | [not provided] | [not provided] | not audited — no map supplied |
+| Diabetes | [not provided] | [not provided] | [not provided] | [not provided] | not audited vertically — no map supplied (Y2 horizontal silo below) |
+| Mental health | [not provided] | [not provided] | [not provided] | [not provided] | not audited — no map supplied |
 
 >>> VERTICAL-INTEGRATION AUDIT
 | Foundational topic | Clinical re-encounter found? | Bloom rise? | Status |
@@ -123,22 +126,22 @@ INTEGRATION AUDIT — [curriculum_scope]
 >>> GAP + REDUNDANCY SUMMARY
 | Issue | Count | Example | Action |
 |---|---|---|---|
-| Siloed-late (no Y4 re-encounter) | 5 topics | Acid-base + AKI | Add Y4 elective module or AHC integration day |
-| Bloom-flat re-encounters | 4 topics | Antibiotic stewardship | Add Analysis-level case in Y3 or Y4 |
-| No foundational scaffold | 3 topics | Geriatrics pharmacology | Add Y1 foundations module |
+| Siloed-late (no Y4 re-encounter) | 1 topic | Acid-base + AKI | Add Y4 elective module or AHC integration day |
+| Bloom-flat re-encounters | 1 topic | Antibiotic stewardship | Add Analysis-level case in Y3 or Y4 |
+| No foundational scaffold | 1 topic | Sepsis (no Y1 encounter) | Add Y1 foundations module |
 | Horizontal silos (Y3) | many | IM ↔ Surgery clerkships not cross-referencing | Implement shared cases across clerkships |
 
 >>> RE-INTEGRATION PLAN (priority order)
 1. Add Y4 acid-base / AKI re-encounter case at Analysis level (1 session + portfolio entry).
 2. Add Y4 Analysis-level antibiotic stewardship case (Bloom rise from App-flat).
 3. Implement shared cases across IM and Surgery clerkships (≥ 4 shared cases over 12 wk).
-4. Author Y1 geriatrics-pharmacology foundations module.
+4. Author Y1 sepsis foundations module (pathophysiology scaffold for the Y2 encounter).
 5. Add Y2 diabetes cross-reference in path + clinical med during pharm week.
 
 >>> ACCREDITATION ALIGNMENT
 | Standard | Status |
 |---|---|
-| LCME 6.3 (integration) | partial — see gaps above |
+| LCME element on curricular integration [VERIFY: element number and title in current LCME Functions and Structure of a Medical School] | partial — see gaps above |
 | ACGME milestones | n/a for UME audit |
 | CCNE Essentials | n/a |
 
@@ -160,10 +163,20 @@ Refused: no map evidence; only intent. Required map-based evidence for integrati
 |---|---|
 | `curriculum_scope` | UME 4-year / 3-year accelerated / residency 3-year / nursing 2-year |
 | `integration_target_density` | Adjustable; default ≥ 2 phases per major topic at rising Bloom |
-| `accreditation_standards_relevant` | LCME 6.3 / ACGME milestones / CCNE Essentials / WFME — adds standards-mapping table |
+| `accreditation_standards_relevant` | LCME elements / ACGME milestones / CCNE Essentials / WFME — adds standards-mapping table |
 | `include_workplace_integration` | Maps classroom topics to specific workplace EPAs |
 | `include_inter_professional` | Adds IPE integration check across nursing / pharmacy / PA curricula |
 | `include_assessment_integration` | Verifies that integrated topics are assessed in integrated formats (e.g., progress test) |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| GAP + REDUNDANCY counts (e.g., "N topics siloed-late") that cannot be reproduced from the heatmap, which shows fewer rows with that status | List every counted topic by name and confirm each carries the same status in the heatmap; recount from the heatmap before issuing the summary |
+| Heatmap cells filled from course names or the topic inventory ("App (path)") rather than from the LO verbs in `lo_session_assessment_maps` | Record each cell from the highest-level LO verb found in that phase's map and cite the session ID; a cell with no traceable LO is left blank, not inferred |
+| Treating co-scheduling (pathology, pharmacology and clinical medicine in the same weeks) as horizontal integration | Require a cross-reference in the maps (a shared case, linked LOs or a joint assessment item); concurrent timing alone is recorded as "co-timed, not integrated" |
+| Accepting as "map evidence" a matrix the audit itself reconstructed from `topic_inventory`, which only restates the curriculum's intent in table form | Count as evidence only maps that came from course owners (session IDs, LOs, assessment items); a reconstructed table is a hypothesis to confirm, and the refusal guard still applies |
+| Accreditation element numbers and titles quoted from memory, such as the element cited for curricular integration | Check each element number and title against the current standards document the user named; if it was not supplied, tag the row [VERIFY: current LCME/ACGME/CCNE standards edition] |
 
 ## Verification Checklist
 
@@ -181,4 +194,4 @@ Refused: no map evidence; only intent. Required map-based evidence for integrati
 
 **Input:** `curriculum_scope = UME Y1–Y4`, major topics = [acid-base + AKI, heart failure, antibiotic stewardship, sepsis, geriatrics pharmacology, ethics — capacity, diabetes, mental health].
 
-**Output:** see Output Format block above — instantiated with the 8-topic heatmap, 4-priority re-integration plan, and LCME 6.3 alignment notes.
+**Output:** see Output Format block above — instantiated with the 8-topic heatmap (3 topics marked [not provided] pending their maps), 5-priority re-integration plan, and LCME alignment notes [VERIFY: element number in current LCME Functions and Structure of a Medical School].

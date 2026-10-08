@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, CM-02, DS-06, QA-04, QA-01]
 difficulty: beginner
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_orient_recovery_deviation_script_builder.md
   - pacu_orient_hemodynamic_event_recognition_drill.md
@@ -30,6 +30,19 @@ references:
 ---
 
 # Medication-Administration Safety Self-Check — PACU Rehearsal
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A safety rehearsal, not live clinical decision support. Give real medications per order, facility policy, and your preceptor.
 >
@@ -88,6 +101,19 @@ One coaching point: [...]
 | `drug_class` | Rotate high-alert classes for their specific pauses |
 | `mode` | `post-event-review` turns it into a blameless safety debrief |
 | `curveball` | Inject an order-no-longer-fits scenario to train the re-check |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Mark `Order verified: Y` because the scenario asserts an order exists — the check is whether its indication still matches the `context` given (a pain order against a deepening sedation trend fails it).
+- Tick the rights row because all eight labels are printed; a right with no stated source (order/MAR, two patient identifiers, allergy per record) is an empty template slot.
+- Name a specific drug, its onset or duration, or a reassess interval when only `drug_class` was supplied — the drug is the order's, the interval is `per facility protocol`.
+- Copy the opioid round's pause onto a different class: monitoring-before-giving and the re-sedation watch must each match the class actually in play.
+
+✅ **DO:**
+- Before scoring, scan the output for any number, unit, or rate; each one must be text the learner pasted from the order or a facility reference, otherwise replace it with `per provider order`.
+- For reversal-agent rounds, check the close-the-loop line keeps surveillance going after the first good response (duration mismatch), not just "reassess the effect" once.
+- In `curveball` mode, confirm the answer pauses and escalates to the prescriber instead of proceeding with a nurse-adjusted amount or timing.
 
 ## Verification Checklist
 

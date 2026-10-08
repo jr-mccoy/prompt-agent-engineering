@@ -22,7 +22,7 @@ tags:
   - task-trainer
   - scenario-design
   - INACSL
-updated: "2026-05-29"
+updated: "2026-10-06"
 related_prompts:
   - domain-medical-education/educator-simulation-design/sim_high_fidelity_scenario_author.md
   - domain-medical-education/educator-simulation-design/sim_pre_brief_psychological_safety_script.md
@@ -124,6 +124,16 @@ Considered: [over-built element, e.g., a deterioration trajectory] — Rejected:
 | `group_format` | Circuit format adds a reset/turnover note between learners |
 | `time_available` | <8 min → drop the error branch; ≥12 min → add a second decision |
 | `add_distractor` | Inserts one realistic but irrelevant stimulus to test prioritization |
+
+## False-Positive Prevention
+
+| ❌ Common Mistake | ✅ Correct Approach |
+|---|---|
+| LO-to-checklist arrows that exist on paper but point at lines measuring something else (LO1 "perform confirmation steps" mapped to C1 "verifies order + patient ID") | For each checklist line, write the LO it measures and confirm the line's behavior is that LO's behavior; at summative stakes every LO needs at least one line that tests it directly, and every ★ line must be a genuine safety step |
+| A checklist line credited for saying a step ("States radiographic confirmation is the standard") when the LO asks the learner to perform or decide it | Tag each line `perform` or `verbalize` and match the tag to the LO's verb; a verbalize line cannot be the only evidence for a perform objective |
+| A stall cue or standardized error response that hands over the answer as a yes/no question ("Auscultation alone — is that sufficient per policy?"), so a ★ line is then ticked after cueing | Write cues that redirect attention without naming the correct step, and state on the checklist how a cued completion is scored at summative stakes (e.g., cued ★ item = not done) |
+| Thresholds and confirmation methods (aspirate pH cut-off, radiograph as the initial check) marked "verified" against "institutional policy" that was never supplied | Status stays `[VERIFY: local NG/feeding-tube policy + national guidance in use]` until the actual policy is cited; these methods differ between jurisdictions and institutions |
+| A station that fits `time_available` only if the learner never pauses and the circuit reset takes no time | Time the correct-path actions at a novice pace, add the debrief hook minutes and the reset/turnover note, and confirm the total is within `time_available`; if not, apply the < 8 min rule and drop the error branch |
 
 ## Verification Checklist
 

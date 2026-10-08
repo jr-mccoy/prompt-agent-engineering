@@ -15,8 +15,20 @@ tags:
   - stroke
   - secondary-prevention
   - care-plan
-updated: "2026-06-19"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -55,6 +67,20 @@ Vascular neurologist or internist managing stroke secondary prevention.
 6. **Risk factors:** diabetes control (consider pioglitazone in insulin-resistant non-diabetic stroke — IRIS; or GLP-1/SGLT2i), smoking cessation, OSA screening, weight, activity, alcohol.
 
 7. **Monitor:** BP log, lipids, bleeding, AF surveillance if cryptogenic, carotid follow-up, medication adherence.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Assign a TOAST mechanism (or "cryptogenic/ESUS") while vessel imaging, echocardiography or cardiac monitoring is still pending — mark it "provisional" and keep the AF-surveillance line.
+- Call a carotid stenosis "symptomatic" without matching its side to the infarct territory, or quote a percentage without the method (NASCET-equivalent on CTA/angiography vs duplex velocity band).
+- Start short-course DAPT for a "minor stroke" with NIHSS >3, or for a TIA whose ABCD2 was never calculated.
+- Write an anticoagulation start day from the 1-3-6-12 rule without the infarct-size category and the haemorrhagic-transformation result from imaging; newer trial data (ELAN, TIMING) support earlier DOAC starts `[VERIFY: current guideline]`.
+- Assume clopidogrel response when CYP2C19 loss-of-function status is known — CHANCE-2 used ticagrelor-aspirin in carriers `[VERIFY]`.
+
+✅ **DO:**
+- Recompute ABCD2 from the input and show the sum: age ≥60 (1); BP ≥140/90 (1); unilateral weakness (2) or speech disturbance without weakness (1); duration ≥60 min (2) or 10–59 min (1); diabetes (1).
+- Date every time-limited line: DAPT start date + 21 (or 90) days = the stated stop date; CEA target date within 14 days of the event date in the input.
+- Trace each target (BP, LDL) to the guideline or trial it comes from and to the patient's current value, so the gap is a computed number, not a restated goal.
 
 ## Output Format
 

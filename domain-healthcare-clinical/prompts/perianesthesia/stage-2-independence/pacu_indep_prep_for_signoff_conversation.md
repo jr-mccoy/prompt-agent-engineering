@@ -15,7 +15,7 @@ target_users:
   - experienced-nurse-new-to-pacu
 techniques: [ST-02, ED-02, RT-02, DS-06, QA-01]
 difficulty: intermediate
-updated: "2026-07-16"
+updated: "2026-10-06"
 related_prompts:
   - pacu_indep_signoff_readiness_self_capstone.md
   - pacu_indep_confidence_calibration_selfquiz.md
@@ -29,6 +29,19 @@ references:
 ---
 
 # Prep for the Sign-Off Conversation — Learner-Side Evidence Self-Inventory
+
+> **Medical disclaimer — read before use.** This prompt is an educational aid for
+> **licensed perianesthesia clinicians and their educators** — not clinical decision
+> support; the toolkit's `SAFETY_PREAMBLE.md` governs. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 > **Boundary:** A preparation aid, not live clinical decision support and not the evaluation itself. It helps *you* walk in prepared; the sign-off decision and its criteria belong to your preceptor and educator.
 
@@ -88,6 +101,20 @@ One coaching point (least-ready part): [...]
 | `focus` | `gap-heavy` rehearses discussing weaknesses without defensiveness |
 | `feedback_difficulty` | Escalate the hypothetical critique to train composure |
 | `source_self_assessments` | Pull directly from capstone/calibration for grounded evidence |
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Polish a with-cues example into "unaided" while drafting the strengths list — the retelling must keep the level recorded in the capstone or tracker.
+- Let the opening line or the self gut-check say "I'm ready to be signed off"; that is a verdict, and this inventory only carries the capstone's self-verdict wording forward.
+- Write a gap "plan" that restates the gap ("get stronger on regional") — a plan names the rep, who observes it, and when.
+- List a ⚠ domain (airway/respiratory, hemodynamic, pharmacology/reversal, handoff, safety-escalation) under strengths when its best example was cued; it belongs under gaps.
+- Rehearse feedback only on a critique mild enough to paraphrase without discomfort; the `gap-heavy` focus is there to rehearse the one that stings.
+
+✅ **DO:**
+- Trace every strength and gap line to a row in the supplied capstone/calibration/tracker output; mark any line with no source row "verbal only — no record."
+- Diff the gap list against the capstone's not-yet list: every not-yet domain appears, none dropped to make the conversation easier.
+- If no `source_self_assessments` were supplied, head the inventory "unsourced — build evidence first" and point to the capstone before the conversation.
 
 ## Verification Checklist
 

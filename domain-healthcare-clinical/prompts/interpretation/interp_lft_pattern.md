@@ -15,8 +15,20 @@ tags:
   - lfts
   - jaundice
   - interpretation
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -102,6 +114,14 @@ ACTION:
 - [transfer / consult criteria]
 ```
 
+## False-Positive Prevention
+
+- **R factor computed with assumed upper limits of normal.** ALT ULNs differ widely between labs, and ALP runs higher in adolescents and in pregnancy. Use the reporting lab's ULN for each, print the numbers in (ALT/ULN) ÷ (ALP/ULN), and if the ULNs were not supplied, label the R factor provisional. For suspected drug injury, take R from the first panel at recognition, not a later draw.
+- **Raised ALP with normal GGT called bone disease by default.** Check for pregnancy (placental ALP) and adolescent growth first, and do not use a raised GGT alone as proof of cholestasis; alcohol and enzyme-inducing drugs raise it.
+- **Severity scores calculated in the wrong units or from the wrong clotting value.** Maddrey uses PT seconds minus the lab's control PT, not the INR, and bilirubin in mg/dL (µmol/L ÷ 17.1). The King's College creatinine criterion is >3.4 mg/dL (300 µmol/L). List each input with its unit and the lab's control value before stating a score or whether a criterion is met.
+- **Acetaminophen level read on the wrong scale or the wrong clock.** Levels come in µg/mL, mg/L, or µmol/L (1 µg/mL ≈ 6.6 µmol/L), and the nomogram needs a known single ingestion time. When the time is estimated or the ingestion was staggered, say so rather than plotting it.
+- **Normal or mildly raised aminotransferases used to exclude chronic liver disease.** Cirrhosis and MASLD/NAFLD can have a normal ALT; check platelets, albumin, INR, imaging, or a fibrosis score from the input before writing "no significant liver disease".
+
 ## Worked Example
 
 **Input:** 28 y/o F, found obtunded by roommate. Empty acetaminophen bottle nearby; estimated ingestion ~28 hours ago. Vitals: BP 102/64, HR 102, RR 18, T 37.1, alert but confused (oriented x1). Today: AST 4820, ALT 5210, ALP 110, total bili 3.8 (direct 2.6), albumin 3.4, INR 3.2, glucose 62, Cr 1.7, lactate 4.0. Acetaminophen level 18 (28 hours post-ingestion). No prior liver disease.
@@ -114,10 +134,10 @@ R FACTOR: (5210 / 40) / (110 / 120) = 130 / 0.92 ≈ 142 → far above 5.
 MAGNITUDE: >100× ULN aminotransferases — classic massive hepatocellular injury.
 SYNTHETIC FUNCTION: INR 3.2 (impaired), albumin 3.4 (preserved acutely as expected). Hypoglycemia (62) is a synthetic-failure marker — gluconeogenic capacity gone.
 SEVERITY: Acute liver failure — INR ≥1.5 + encephalopathy + no preexisting disease.
-  - King's College criteria for acetaminophen: arterial pH <7.30 OR (INR >6.5 + Cr >3.4 + grade III–IV encephalopathy). Currently does not meet, but trajectory is what matters; reassess every 4–6 hours.
+  - King's College criteria for acetaminophen: arterial pH <7.30 OR (INR >6.5 + Cr >3.4 + grade III–IV encephalopathy). Arterial pH [not provided] — obtain an ABG now. The triad is not met (INR 3.2, Cr 1.7). Lactate 4.0 may meet the modified (lactate-added) King's College criterion [VERIFY: lactate cut-off and its timing relative to fluid resuscitation — current KCC / AASLD ALF guidance]. Trajectory is what matters; reassess every 4–6 hours.
 
 DIFFERENTIAL:
-1. Acetaminophen-induced acute liver failure — ingestion history, time course, magnitude of aminotransferases, hypoglycemia, coagulopathy, encephalopathy. Acetaminophen level 18 at 28 hours is misleadingly low because it is post-distribution; use Rumack-Matthew nomogram only for single acute ingestion <24 hours, not here.
+1. Acetaminophen-induced acute liver failure — ingestion history, time course, magnitude of aminotransferases, hypoglycemia, coagulopathy, encephalopathy. Acetaminophen level 18 at 28 hours is misleadingly low because most of the drug has already been metabolized and eliminated; a low level this late does not exclude severe toxicity; use Rumack-Matthew nomogram only for single acute ingestion <24 hours, not here.
 2. Less likely: acute viral hepatitis, ischemic hepatitis (no documented hypotension), autoimmune flare. Check anyway given severity.
 
 ACTION:

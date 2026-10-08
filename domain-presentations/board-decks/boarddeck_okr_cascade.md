@@ -18,7 +18,7 @@ tags:
   - image-generation
   - slide-visual
   - "16:9"
-updated: "2026-04-21"
+updated: "2026-10-06"
 related_prompts:
   - domain-image-generation/IMAGE_GENERATION_GUIDE.md
   - domain-image-generation/infographic_meta_prompt.md
@@ -85,3 +85,17 @@ FINAL VALIDATION CHECKLIST:
 
 If any gradient, drop shadow, rounded-corner card UI, or software screenshot style appears, the output is incorrect.
 ```
+
+## False-Positive Prevention (MUST follow)
+
+❌ **DON'T:**
+- Accept a connector from a team KR to a company objective it does not move, just because the tree lines are tidy.
+- Render an activity ("launch onboarding v2") as a key result with a baseline and target the model made up.
+- Let the model invent targets ("40% → 60%"), owners or extra teams so each branch has the same number of children.
+- Show a progress % that is not (current − baseline) ÷ (target − baseline).
+
+✅ **DO:**
+- Trace every connector to the parent the intake names, and count nodes per level against the intake.
+- Recompute progress for at least two KRs from their baseline, current value and target.
+- Render a missing target as "[target TBD]" and a missing owner as "[owner TBD]".
+- Check there are no orphan KRs and no objective without a KR unless the intake says so.

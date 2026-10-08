@@ -14,8 +14,20 @@ tags:
   - hemorrhage
   - critical-care
   - endoscopy
-updated: "2026-05-08"
+updated: "2026-10-06"
 ---
+
+> **Medical disclaimer — read before use.** This prompt is a decision-support and
+> teaching aid for **licensed clinicians**. It is **not medical advice** and is not for
+> patients to diagnose or treat themselves. Drug doses, thresholds and guideline
+> references in it and in its worked example may be incomplete, outdated or wrong:
+> verify each one against the current guideline, the product label and your local
+> formulary, and follow your institution's protocols. It does not replace examination
+> or clinical judgment. **Medical emergency: call your local emergency number (911 in
+> the US).**
+>
+> **Review status:** AI-assisted content, reviewed by AI only (2026-10-06);
+> **not yet reviewed by a licensed clinician.**
 
 ## Objective
 
@@ -46,13 +58,13 @@ Manage acute upper or lower GI bleeding: localize, resuscitate, risk-stratify, g
    - **Restrictive: Hgb 7 g/dL** in stable non-variceal upper GI bleed (Villanueva trial — restrictive better than liberal).
    - **Hgb 8 g/dL** for active CAD or stable angina (per AABB).
    - **Hgb 9 g/dL** historically in massive hemorrhage / unstable patients — but balanced products (1:1:1) are the better framework for active hemorrhage rather than Hgb-driven.
-   - Platelets <50 with active bleeding → transfuse.
-   - INR >1.5–2 with active bleeding → FFP, vitamin K, or PCC (if on warfarin or in liver disease).
+   - Platelets with active bleeding → transfuse below the threshold in current guidance for the bleed type (non-variceal vs cirrhotic/variceal) [VERIFY: current ACG / ESGE non-variceal guidance; Baveno VII / current AASLD guidance for cirrhosis].
+   - INR >1.5–2 with active bleeding → FFP, vitamin K, or PCC (if on warfarin). In cirrhosis, INR does not reflect bleeding risk and INR-driven correction is not routinely recommended in variceal bleeding [VERIFY: Baveno VII / current AASLD guidance].
 
 4. **Risk stratify upper GI bleed.**
    - **Glasgow-Blatchford score** (admission, no endoscopy needed): score 0 → outpatient management acceptable; score >0 → admit and endoscope.
    - **Rockall score** (post-endoscopy): mortality and rebleed prediction.
-   - **AIMS65** (mortality): albumin <3, INR >1.5, altered mental status, SBP <90, age >65.
+   - **AIMS65** (mortality): albumin <3, INR >1.5, altered mental status, SBP ≤90, age ≥65.
 
 5. **Pharmacologic therapy (upper).**
    - **PPI:** pantoprazole 80 mg IV bolus, then 8 mg/h infusion × 72 h, OR pantoprazole 40 mg IV BID. Reduces rebleeding after high-risk lesions on endoscopy.
@@ -93,6 +105,21 @@ Manage acute upper or lower GI bleeding: localize, resuscitate, risk-stratify, g
     - Beta-blocker (carvedilol or nadolol) for variceal patients.
     - Endoscopic surveillance for variceal patients per guidelines.
     - Re-evaluate antiplatelet/anticoagulant indications and consider GI prophylaxis.
+
+## False-Positive Prevention
+
+❌ **DON'T:**
+- Write "Glasgow-Blatchford very high" or "AIMS65 high" under SEVERITY without scoring each item from the supplied BUN, Hgb, SBP, HR and history.
+- Fill the TRANSFUSION line with FFP or PCC for a cirrhotic variceal bleed just because INR is above the step-3 cut-off; state the specific reason for any product beyond pRBC in that patient.
+- Settle LOCALIZATION as lower from hematochezia while HR/BP show instability, without saying whether an upper source has been excluded.
+- Leave the reversal slot as "not applicable" when the med list shows an antiplatelet or anticoagulant, or name an agent when none is listed.
+- Read the first Hgb as the measure of blood loss; in acute hemorrhage it under-reads until equilibration, so report it with its timepoint and trend.
+
+✅ **DO:**
+- Score Glasgow-Blatchford item by item (BUN converted to mmol/L if reported in mg/dL, Hgb by sex band, SBP, HR, melena, syncope, hepatic disease, cardiac failure) and show the total; the worked example's inputs sum to 16.
+- Name which threshold branch the TRANSFUSION target came from (stable non-variceal, active CAD, active hemorrhage with ratio-based replacement).
+- Check that ENDOSCOPY TIMING agrees with the localization and variceal suspicion stated earlier in the same output.
+- Tag octreotide, PPI and antibiotic durations `[VERIFY: current guideline/formulary]` when the clinician has not supplied a local order set.
 
 ## Output Format
 
@@ -144,7 +171,7 @@ PITFALLS:
 ```
 LOCALIZATION: Upper GI bleed (hematemesis).
 SUSPECTED SOURCE: Variceal hemorrhage. Cirrhosis with known large unbanded varices and acute hematemesis with hemodynamic instability — variceal bleed is the working diagnosis until endoscopy confirms or refutes.
-SEVERITY: Hemodynamically unstable (HR 124, SBP <90), high-risk (cirrhosis, coagulopathy, thrombocytopenia, lactate elevated). Glasgow-Blatchford very high.
+SEVERITY: Hemodynamically unstable (HR 124, SBP <90), high-risk (cirrhosis, coagulopathy, thrombocytopenia, lactate elevated). Glasgow-Blatchford 16: BUN 42 mg/dL ≈ 15 mmol/L → 4; Hgb 7.2 (male, <10) → 6; SBP 88 (<90) → 3; HR 124 (≥100) → 1; hepatic disease → 2; melena, syncope, cardiac failure not reported → 0.
 
 RESUSCITATION:
 - 2 large-bore PIVs (16G).
@@ -154,9 +181,9 @@ RESUSCITATION:
 
 TRANSFUSION:
 - Hgb 7.2 with active variceal bleed and hemodynamic instability — transfuse pRBC. Restrictive Hgb 7 threshold from Villanueva still applies; do not over-transfuse (raises portal pressure). Goal Hgb ~7–8 g/dL during active bleed.
-- Platelets 65 with active bleed → transfuse 1 dose apheresis platelets (target >50, ideally >70 for endoscopic procedures).
-- INR 1.8 with active bleed → vitamin K 10 mg IV; FFP 2–4 units (limit volume due to portal pressure concerns); 4F-PCC 25–50 units/kg may be more efficient for INR correction without volume load (use cautiously in cirrhosis — hypercoagulability balance).
-- Note: cirrhosis has "rebalanced hemostasis"; INR does not predict bleeding well, but in active bleeding, correct what you can without overloading.
+- Platelets 65 with active bleed: transfuse only against the current guidance threshold for cirrhotic/variceal bleeding or a stated endoscopic-procedure requirement, and record that reason [VERIFY: Baveno VII / current AASLD guidance; local transfusion protocol].
+- INR 1.8: no FFP, vitamin K or PCC for the INR alone — patient is not on warfarin, and in cirrhosis INR-driven correction is not routinely recommended in variceal bleeding (FFP volume also raises portal pressure) [VERIFY: Baveno VII / current AASLD guidance].
+- Note: cirrhosis has "rebalanced hemostasis"; INR does not predict bleeding well. Any product beyond pRBC needs a specific stated reason in this patient.
 
 PHARMACOTHERAPY:
 - Octreotide 50 mcg IV bolus NOW, then 50 mcg/h continuous infusion for 3–5 days (splanchnic vasoconstriction reduces portal pressure).
@@ -182,7 +209,7 @@ DISPOSITION:
 WORKUP:
 - CBC, INR/PTT, fibrinogen, BMP, LFT (full panel for cirrhosis assessment), lactate, type and cross.
 - ABG / VBG.
-- ECG and troponin (elderly, hemodynamically unstable — demand ischemia possible).
+- ECG and troponin (hemodynamically unstable — demand ischemia possible).
 - CXR (aspiration assessment).
 - MELD-Na for severity / prognosis.
 - Ascites: paracentesis with cell count and culture if any concern for SBP (cirrhotic with GI bleed has high SBP rate — that is why ceftriaxone is given empirically).
