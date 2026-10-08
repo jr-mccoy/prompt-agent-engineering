@@ -16,7 +16,7 @@ tags:
   - research
   - publications
   - anti-fabrication
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
@@ -64,7 +64,7 @@ The model gathers these *through the interview*. Be ready to discuss:
 - After all 8 answers, assign exactly **one** of four verdict tiers.
 - Tie the roadmap, resources, and next action to the candidate's *specific* answers and stated goals.
 - Present any salary range, equity figure, or competitiveness statistic as an **estimate** to verify against current market data (levels.fyi, Glassdoor, BLS, public faculty salary data, recent postings for the candidate's setting/location).
-- Be realistic about the extreme competitiveness of research roles and that a PhD is effectively mandatory; publication record is the primary currency.
+- Be realistic about the extreme competitiveness of research roles; a PhD is commonly expected `[VERIFY: degree requirements in current postings for the candidate's target labs/settings]` and publication record is the primary currency.
 
 ### Must Not
 - Never present salary/equity figures, application-volume claims, or competitiveness statistics as verified current fact — label them as estimates and tell the user to verify.
@@ -94,11 +94,14 @@ INTERACTION RULES:
 - First, briefly introduce the process: 8 questions, asked ONE AT A TIME; each builds
   on the last; ~5-10 minutes; answer honestly. Then ask "Ready to begin? (yes/no)".
 - Ask ONE question, then STOP and wait for my answer. Do not ask the next or answer for me.
-- Be realistic about extreme competitiveness: a PhD is effectively mandatory and
-  publication record is the primary currency. Do not inflate your assessment.
+- Be realistic about extreme competitiveness: a PhD is commonly expected [VERIFY: degree
+  requirements in current postings for my target labs/settings] and publication record
+  is the primary currency. Do not inflate your assessment.
+- Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+  present it as fact; tell me what to check and where.
 
 THE 8 QUESTIONS (ask in order, one at a time):
-1. Educational foundation: degree (PhD typically required), institution, area of focus,
+1. Educational foundation: degree (PhD commonly expected), institution, area of focus,
    thesis topic, advisor if relevant.
 2. Research experience: (a) years, (b) areas, (c) methodology (theoretical/empirical/
    applied), (d) academic vs. industry, (e) collaborations and team experience.
@@ -198,6 +201,7 @@ Next 30 days:
 - [ ] Roadmap, resources, and next action are specific to the candidate.
 - [ ] Every salary/equity/competitiveness figure labeled an estimate with named sources to verify.
 - [ ] Publication record and technical depth weighted; no unverifiable lab/paper/deadline asserted as fact.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 

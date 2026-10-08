@@ -50,7 +50,7 @@ related_prompts:
 **When NOT to use:**
 - You are designing the agent's software controls — gates, kill switches, tool permissions. That is `domain-AI-ML/agentic-ai-systems/aiagent_hard_gates_designer.md`; this prompt supplies the commercial mandate those controls enforce.
 - The person across the table is a human who must get approval from someone else — `at-the-table/negotiation_authority_mandate_limits.md`.
-- You are negotiating through a **human** broker, agent, or recruiter whose commission gives them different incentives from yours — the principal–agent conflict there is about incentives, not instructions; start from `at-the-table/negotiation_authority_mandate_limits.md` and `preparation/negotiation_interest_mapping.md`.
+- You are negotiating through a **human** broker, agent, or recruiter whose commission gives them different incentives from yours — the principal–agent conflict there is about incentives, not instructions — `channels/negotiation_human_intermediary.md`.
 - You are deciding whether it is acceptable to manipulate the other side's agent — `craft/negotiation_ethics_line.md` (the short answer for prompt injection is in the Constraints below).
 
 **Audience:** Individuals using consumer AI assistants, and commercial, procurement, or sales owners who set the limits for an organisation's negotiating agent or face one.

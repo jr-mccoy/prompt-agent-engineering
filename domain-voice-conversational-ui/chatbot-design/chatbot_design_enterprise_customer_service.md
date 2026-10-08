@@ -17,7 +17,7 @@ tags:
   - ticket-management
   - csat
   - support-automation
-updated: "2026-03-19"
+updated: "2026-10-08"
 ---
 
 # Enterprise Customer Service Chatbot Design
@@ -63,8 +63,7 @@ updated: "2026-03-19"
    - Confirmation: Show ticket details before submission
    - Follow-up: How user checks ticket status via the bot
 
-5. **Define Agent Handoff Protocol**
-   Summarize tier routing: Tier 3 intents go straight to a human; Tier 1–2 intents escalate on explicit request, repeated failure, or negative sentiment, routed to the matching agent group → design the transfer itself with `chatbot_design_human_agent_handoff.md`.
+5. **Agent Handoff** — Tier 3 intents (step 2) go to a human; every other trigger, the transfer type and the context packet are specified in `chatbot_design_human_agent_handoff.md`, not here.
 
 6. **Design CSAT and Metrics Framework**
    - In-conversation CSAT: Quick survey after resolution (1-5 or thumbs up/down)
@@ -126,8 +125,8 @@ updated: "2026-03-19"
 | FAQ DB | Q&A pairs | Weekly | Semantic |
 | Product docs | Technical specs | On release | Hybrid |
 
-### Agent Handoff Flow
-[Tier → escalation trigger → agent group summary] → design the transfer itself with `chatbot_design_human_agent_handoff.md`.
+### Agent Handoff
+See `chatbot_design_human_agent_handoff.md`.
 
 ### Metrics Dashboard
 | Metric | Target | Alert Threshold |

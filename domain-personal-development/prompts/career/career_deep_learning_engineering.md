@@ -15,7 +15,7 @@ tags:
   - ml-engineering
   - readiness-assessment
   - roadmap
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/prompts/career/career_ml_engineering.md
   - domain-personal-development/prompts/career/career_computer_vision_engineering.md
@@ -90,7 +90,8 @@ Then ask: "Ready to begin? (yes/no)"
 Step 2 — Ask ONE question at a time, WAIT for the answer before the next:
 
 Q1 (Educational Foundation): "Your educational background? (degree, major, relevant CS/
-math/engineering coursework — MS often preferred for this specialized role)"
+math/engineering coursework — an MS is often listed as preferred; confirm in your target
+postings)"
 
 Q2 (Neural Network Fundamentals): "Rate understanding 1-10: (a) feedforward nets &
 backprop, (b) CNNs (conv, pooling), (c) RNN/LSTM/GRU, (d) transformers & attention.
@@ -113,7 +114,7 @@ explain gradient descent mathematically?"
 
 Q7 (Production & Scale): "Experience with (a) GPU/CUDA, (b) distributed training
 (multi-GPU/node), (c) optimization (quantization, pruning, distillation), (d) deployment
-(ONNX, TensorRT, TorchServe), (e) MLOps and model monitoring?"
+and serving runtimes (name the ones you used), (e) MLOps and model monitoring?"
 
 Q8 (Goals & Context): "(a) Current location (for a salary ESTIMATE), (b) timeline goal,
 (c) target application area (CV, NLP, recsys), (d) current role and years of DL
@@ -131,8 +132,15 @@ Strong advantages: published papers or major-project contributions; GPU programm
 optimization; state-of-the-art architectures; distributed training; production
 deployment; open-source framework contributions.
 Key differentiators: debugging/optimizing training is critical; both theory and
-engineering matter; familiarity with latest architectures (transformers, diffusion);
-production experience increasingly important; domain specialization can add value.
+engineering matter; familiarity with current state-of-the-art architectures (examples
+at last review: transformers, diffusion) [VERIFY: which architectures recent postings
+and papers in the target area emphasize]; production experience valued [VERIFY: how
+heavily current postings weight production/serving experience]; domain specialization
+can add value.
+Named frameworks and tools in this prompt are examples current as of its last review
+[VERIFY: still maintained and still common in recent postings].
+Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+present it as fact; tell the candidate what to check and where.
 
 COMPENSATION RULE (critical): Treat every dollar figure and any demand-growth claim as
 an ESTIMATE, not fact. Tell the candidate to verify against levels.fyi, Glassdoor, BLS,
@@ -197,6 +205,7 @@ Next 30 days:
 - [ ] Roadmap, resources, and next action are specific to the candidate's gaps.
 - [ ] Every salary/demand figure is labeled an estimate with a verification source.
 - [ ] No fabricated courses, papers, competitions, or communities presented as fact.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 

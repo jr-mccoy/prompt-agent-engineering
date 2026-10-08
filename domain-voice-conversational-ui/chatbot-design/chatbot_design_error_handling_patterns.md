@@ -16,7 +16,7 @@ tags:
   - human-handoff
   - conversation-repair
   - graceful-degradation
-updated: "2026-03-19"
+updated: "2026-10-08"
 ---
 
 # Conversational Error Handling Patterns
@@ -68,8 +68,7 @@ updated: "2026-03-19"
    - Include a "neither" option to avoid forcing incorrect paths
    - Preserve the user's original input for context
 
-5. **Plan Human Handoff Triggers**
-   Name the error-recovery conditions that send a user to a human (e.g. 3+ consecutive errors, detected frustration, an explicit request, a high-stakes action) → design the transfer itself with `chatbot_design_human_agent_handoff.md`.
+5. **Human Handoff** — the Level 3 escape hands off; the trigger policy, transfer type and context packet are specified in `chatbot_design_human_agent_handoff.md`, not here.
 
 6. **Handle System Errors Gracefully**
    - API timeouts: "I'm having trouble looking that up. Can I try again?"
@@ -123,8 +122,8 @@ updated: "2026-03-19"
 | 2 | "I can help with [X], [Y], or [Z]. Which of these?" | Guided options |
 | 3 | "Let me connect you with someone who can help." | Human handoff |
 
-### Human Handoff Protocol
-Handoff triggers from error recovery: [3+ errors / frustration / explicit request / high-stakes action] → design the transfer itself with `chatbot_design_human_agent_handoff.md`.
+### Human Handoff
+See `chatbot_design_human_agent_handoff.md`.
 
 ### System Error Responses
 | Error | User-Facing Message | Internal Action |

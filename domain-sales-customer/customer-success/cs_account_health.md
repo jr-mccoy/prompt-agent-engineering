@@ -15,10 +15,11 @@ tags:
   - churn-risk
   - retention
   - renewal
-updated: "2026-09-24"
+updated: "2026-10-08"
 related_prompts:
   - domain-sales-customer/customer-success/cs_onboarding_plan.md
   - domain-sales-customer/sales/sales_pipeline_risk_assessment.md
+  - domain-sales-customer/sales/sales_strategic_account_plan.md
 ---
 
 # Account Health Assessment & Risk Identification
@@ -30,7 +31,7 @@ related_prompts:
 ## Prompt
 
 ```
-You are a customer success strategist conducting account health reviews to prevent churn and identify expansion opportunities.
+You are a customer success strategist conducting account health reviews to prevent churn and flag expansion signals.
 
 ### TASK
 Analyze the customer account data below and provide a comprehensive health assessment with action plans.
@@ -240,12 +241,6 @@ Pricing & Value Alignment:
 - Discounts Applied: [%]
 - Value Perception: [Expensive/Fair/Bargain based on customer feedback]
 
-Expansion Potential:
-- Unused Features: [Features they don't use but could benefit from]
-- Additional Users: [Potential to add X more users based on Y]
-- Upsell Products: [Other products relevant to their needs]
-- Cross-sell Opportunities: [Related products they don't have]
-
 Contraction Risk:
 - [ ] Requesting to reduce seats
 - [ ] Talking about budget cuts
@@ -307,46 +302,8 @@ Value Reinforcement:
 - ROI Calculation: [Updated business case]
 - Roadmap Preview: [Upcoming features that address their needs]
 
-### EXPANSION OPPORTUNITY ANALYSIS
-
-**Expansion Potential: [$X] - [Low/Medium/High]**
-
-Expansion Pathways:
-
-**1. Add Users**
-- Current: [X] users
-- Potential: [Y] additional users based on [Evidence]
-- ARR Impact: [$Z]
-- Timing: [Quarter to target]
-- Pitch: [Why they should add users now]
-
-**2. Upgrade Tier/Add Features**
-- Current Plan: [Tier]
-- Recommended: [Higher tier or add-on features]
-- Additional Value: [What they get]
-- ARR Impact: [$Z]
-- Timing: [Quarter to target]
-- Pitch: [Tie to goals they have]
-
-**3. Cross-Sell Related Product**
-- Current Products: [List]
-- Recommended: [Product]
-- Use Case: [How it helps them]
-- ARR Impact: [$Z]
-- Timing: [Quarter to target]
-- Pitch: [Tie to current challenges]
-
-Total Expansion Opportunity: [$X]
-
-Expansion Readiness:
-- [ ] High product satisfaction
-- [ ] Achieving business goals
-- [ ] Budget availability indicated
-- [ ] Champion can advocate internally
-- [ ] Executive sponsor supportive
-
-Expansion Blockers:
-- [ ] [Specific blocker] - Mitigation: [How to address]
+### EXPANSION
+Not sized or pitched here: this prompt is a diagnosis. Report expansion signals only — the Expansion Indicators under Business Value Realization and the Green Lights under Financial & Contract Health. To size, sequence and pitch expansion, use domain-sales-customer/sales/sales_strategic_account_plan.md.
 
 ### ACTION PLAN
 
@@ -517,13 +474,13 @@ Scenario 2: Customer becomes advocate
 
 ## Usage Notes
 
-- **Purpose:** Assess customer account health across multiple dimensions to prevent churn and identify expansion opportunities
+- **Purpose:** Assess customer account health across multiple dimensions to prevent churn and flag expansion signals
 - **Job Family:** Customer Success / Account Management
 - **Workflow Stage:** Regular account health reviews (monthly/quarterly)
 - **Key Features:**
   - Five-dimension health scoring (Adoption/Value/Engagement/Support/Financial)
   - Churn probability assessment with risk factors and mitigation plans
-  - Expansion pathway identification (users/features/cross-sell)
+  - Expansion signals only; sizing and sequencing → `sales_strategic_account_plan.md`
   - Stakeholder relationship mapping with sentiment tracking
   - Benchmarking against peer accounts
   - Renewal strategy with 90-day timeline

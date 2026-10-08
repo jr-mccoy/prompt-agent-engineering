@@ -104,7 +104,7 @@ prompt-agent-engineering/
 ├── domain-ideation/                # Divergent + convergent ideation: 100 ideas, SCAMPER, crazy eights, analogy mining, kill list, dot voting (12)
 ├── domain-risk/                    # Risk practice: register, FMEA, heat map, tail-risk scan, dependency chains, non-technical threat model, AAR (7)
 ├── domain-policy/                  # Policy analysis (9 flat + public-administration/ 6): options memo, problem framing, stakeholder/coalition map, implementation feasibility, regulatory impact analysis, program evaluation design, rulemaking comment letter, bill analysis, cross-jurisdiction comparison
-├── domain-negotiation/             # Negotiation practitioner library (54 across 8 subdirs): preparation/ (10), at-the-table/ (7), channels/ (5, incl. AI-agent-mediated), multi-party/ (4), after-the-deal/ (4), contexts/ (14), difficult-conversations/ (5, own prefix), craft/ (5, incl. analytics scorecard)
+├── domain-negotiation/             # Negotiation practitioner library (55 across 8 subdirs): preparation/ (10), at-the-table/ (7), channels/ (6, incl. AI-agent-mediated and human intermediary), multi-party/ (4), after-the-deal/ (4), contexts/ (14), difficult-conversations/ (5, own prefix), craft/ (5, incl. analytics scorecard)
 ├── domain-psy-ops/                 # Cognitive security: influence analysis & manipulation defense (41 across 6 subdirs, ANALYTIC/DEFENSIVE ONLY): technique-analysis/ (7), influence-operations/ (7), personal-defense/ (7, safety-gated), organizational-red-team/ (4), counter-messaging/ (4), case-studies-taxonomies/ (3)
 ├── domain-written-advocacy/        # LAYPERSON self-advocacy letters — cancellations, refunds, data deletion, warranty, hardship, appeals (35 across 7 subdirs): cross-cutting/ (6), accounts-and-billing/ (5), privacy-and-data/ (5), products-and-warranty/ (4), financial-hardship/ (6), insurance-and-medical/ (4), institutions-and-records/ (5). Non-adversarial sibling of domain-legal/personal-self-advocacy/
 ├── domain-sales-customer/          # A deal, pipeline, customer account or support queue (17): sales/ (qualification, outbound plan, mutual close plan, forecast commit, discovery call, pipeline risk, win/loss, strategic account plan), customer-success/ (QBR, renewal risk, account health, onboarding, feedback routing loop), support/ (ticket triage, escalation response, KB article from tickets, incident status update). Outbound COPY → skills/marketing/; marketing strategy → business-strategy/go-to-market/ (ADR-0043)
@@ -646,12 +646,12 @@ When users need **help with tasks** (not asking for new prompts), map their requ
   - Example: "Frame a policy problem before generating options" → `policy_problem_framing.md`
   - Example: "Map stakeholders / coalitions / blockers / swing actors" → `policy_stakeholder_coalition_map.md`
   - Example: "Assess implementation feasibility (authority, capacity, funding, failure modes)" → `policy_implementation_feasibility.md`
-### Negotiation (Practitioner Library — 46 prompts across 8 subdirectories)
+### Negotiation (Practitioner Library — 55 prompts across 8 subdirectories)
 - **Negotiation as a working discipline across the full arc** → `domain-negotiation/` — see [README](../domain-negotiation/README.md). **Entry point:** run `preparation/negotiation_prep_depth_triage.md` first; it scores the negotiation into one of four prep tiers and emits an ordered prompt sequence, so the domain is consumed by tier rather than exhaustively.
 - **Convention:** the domain keeps one `negotiation_` prefix across all subdirectories (the `domain-legal/` precedent), with the single exception of `difficult-conversations/difficultconvo_*.md`, a distinct audience track for relationship-primary conversations where the goal is to be understood rather than to claim value. `uncertainty: ambiguity` is a domain invariant. One prompt (`channels/negotiation_cross_cultural.md`) carries the domain's only explicit guard: it refuses to generate or accept generalizations about how people of a nationality, ethnicity, or region negotiate.
   - **Preparation** → `preparation/` (10): prep-depth triage, BATNA, leverage audit (eight sources, not just alternatives), interest mapping, package/MESO design, opening offer, concession ladder, counterpart simulation, information plan, rehearsal
   - **At the table** → `at-the-table/` (7): live question sequencing, reading signals & testing bluffs, hard-bargainer defense, impasse diagnosis (five types), authority & mandate limits, emotional flooding, closing & final concession
-  - **Channels** → `channels/` (4): written/async, counter-offer email, remote & video, cross-cultural
+  - **Channels** → `channels/` (6): written/async, counter-offer email, remote & video, cross-cultural, AI-agent-mediated, human intermediary (broker, recruiter, agent)
   - **Multi-party** → `multi-party/` (4): coalition alignment, team roles, coalition defense, third-party facilitation (the repo's only neutral-role prompt)
   - **After the deal** → `after-the-deal/` (4): deal debrief, implementation & relationship, renegotiating a live agreement, no-deal recovery
   - **Contexts** → `contexts/` (8): salary/raise, vendor buy-side, freelance rates, sales objections, equity split, internal budget, customer escalation, major purchase
@@ -1539,7 +1539,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
   - **Professional-services firm operations (utilization, fixed-fee overruns, staffing, independence)** → `domain-specialized-fields/professional-services/` (`proserv_*`). The engagement lifecycle → `domain-business-strategy/client-services/` and `client-services-studio/`; law-firm conflicts → `domain-legal/ethics-professional-conduct/`.
   - **Maintenance and reliability** → `domain-operations/quality-safety/ops_preventive_maintenance_program.md`, `ops_repeat_failure_reliability_analysis.md`.
   - **Self-scope work friction and meaning** → `domain-personal-development/prompts/`: `emotional-fitness/emotionalfitness_money_beliefs_and_avoidance.md` (money beliefs, not budgets → `domain-finance/`), `stakeholder/stakeholder_peer_conflict_navigation.md`, `stakeholder/stakeholder_reorg_navigation.md`, `identity/identity_meaning_sources_and_legacy_map.md`.
-  - **Negotiation analytics and AI-agent negotiation** → `domain-negotiation/craft/negotiation_analytics_scorecard.md`, `channels/negotiation_ai_agent_mediated.md`.
+  - **Negotiation analytics and AI-agent negotiation** → `domain-negotiation/craft/negotiation_analytics_scorecard.md`, `channels/negotiation_ai_agent_mediated.md`. The human counterpart (a broker, recruiter, or agent paid differently from you) → `channels/negotiation_human_intermediary.md` (2026-10-08).
   - **Student success (institution side)** → `domain-education-teaching/program/student-success/`; parent-teacher conferences and multilingual family outreach → `instructor/reporting-communication/`.
   - **Parenting (Wave 7):** family structure (kinship, foster, solo, LGBTQ+-parented), tech and AI chatbots, identity and culture, parent capacity, academics, mental health and behaviour (incl. a child's suicide talk, ages 6–12), neurodivergence (tics, 2e, DCD) → the matching `domain-parenting/caregiver-facing/` folders.
   - **Parenting: transitions, safety, health/sleep/feeding** → `domain-parenting/caregiver-facing/transitions-events/`, `safety-risk/`, `health-body-sleep-feeding/`. Online grooming → `domain-psy-ops/` youth manipulation guide.
@@ -1941,7 +1941,7 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Constituent casework and response system" | `domain-policy/public-administration/policy_constituent_casework_system.md` |
 | "Agency performance measures" | `domain-policy/public-administration/policy_agency_performance_measures.md` |
 | "Staff brief before a council or board meeting" | `domain-policy/public-administration/policy_public_meeting_staff_brief.md` |
-| **Negotiation (46 prompts, 8 subdirs)** | **Use `domain-negotiation/` — see [README](../domain-negotiation/README.md). Start with `preparation/negotiation_prep_depth_triage.md`, which routes by prep tier.** |
+| **Negotiation (55 prompts, 8 subdirs)** | **Use `domain-negotiation/` — see [README](../domain-negotiation/README.md). Start with `preparation/negotiation_prep_depth_triage.md`, which routes by prep tier.** |
 | "How much prep does this negotiation even need?" | `domain-negotiation/preparation/negotiation_prep_depth_triage.md` |
 | "BATNA / reservation point / ZOPA" | `domain-negotiation/preparation/negotiation_batna_analysis.md` |
 | "My BATNA is weak so I have no leverage" | `domain-negotiation/preparation/negotiation_leverage_audit.md` |
@@ -1963,6 +1963,8 @@ The domain's largest subdirectory, organized as a **build pipeline** — see [RE
 | "Write a counter-offer message" | `domain-negotiation/channels/negotiation_counteroffer_email.md` |
 | "Negotiating over video / remote" | `domain-negotiation/channels/negotiation_remote_video_channel.md` |
 | "Cross-cultural negotiation (no stereotypes — asks rather than asserts)" | `domain-negotiation/channels/negotiation_cross_cultural.md` |
+| "Let an AI assistant negotiate for me / I'm facing a chatbot" | `domain-negotiation/channels/negotiation_ai_agent_mediated.md` |
+| "My agent / broker / recruiter is negotiating for me — can I trust their advice?" | `domain-negotiation/channels/negotiation_human_intermediary.md` |
 | "Three-plus parties: coalitions and concession sequencing" | `domain-negotiation/multi-party/negotiation_multi_party_alignment.md` |
 | "Our side has three people — who says what?" | `domain-negotiation/multi-party/negotiation_team_negotiation_roles.md` |
 | "They've aligned into a bloc against me" | `domain-negotiation/multi-party/negotiation_coalition_defense.md` |

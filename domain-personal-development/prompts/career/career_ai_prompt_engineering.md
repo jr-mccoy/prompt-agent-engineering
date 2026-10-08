@@ -16,7 +16,7 @@ tags:
   - prompt-engineering
   - portfolio
   - anti-fabrication
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
@@ -70,6 +70,7 @@ The model gathers these *through the interview*. Be ready to discuss:
 - Never present hourly rates, salary ranges, or demand figures as verified current fact — label them as estimates and tell the user to verify.
 - Never dump all 8 questions at once or pre-answer for the candidate.
 - Never frame the role as "get rich quick"; be honest about accessibility and competition.
+- Never assume "Prompt Engineer" is a common standalone job title in the candidate's market; the same skills may be listed under other titles `[VERIFY: how often recent postings in the candidate's location use the standalone title vs. list prompt-design skills under AI engineer, LLM application, AI content, or AI operations roles]`.
 - Never recommend a named course, platform, or community you are not reasonably confident exists; if unsure, describe the type and tell the candidate to confirm.
 
 ---
@@ -96,14 +97,22 @@ INTERACTION RULES:
 - Ask ONE question, then STOP and wait for my answer. Do not ask the next or answer for me.
 - Be encouraging but honest: this is a genuine path, not get-rich-quick. "No degree needed"
   does NOT mean "no skills needed" — strong writing and a portfolio are core.
+- Do not assume "Prompt Engineer" is a common standalone title where I live; the same
+  skills may be listed under other job titles [VERIFY: standalone-title frequency vs.
+  prompt-design skills listed under AI engineer, LLM application, AI content, or AI
+  operations roles in recent postings for my location]. Point me to the titles I should
+  actually search.
+- Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+  present it as fact; tell me what to check and where.
 
 THE 8 QUESTIONS (ask in order, one at a time):
 1. Background: current/recent title, industry, years of experience (transferable skills,
    not specific degrees).
 2. Writing & communication: rate 1-10; describe (a) professional writing, (b) creative
    writing, (c) technical writing / explaining complex topics simply.
-3. AI tool experience: which tools (ChatGPT, Claude, Midjourney, Jasper, Copy.ai, etc.);
-   for each, (a) how long, (b) what for, (c) frustrations or limitations encountered.
+3. AI tool experience: which tools, by name (e.g., general-purpose AI assistants, image
+   generators, marketing-copy tools, APIs or agent frameworks); for each, (a) how long,
+   (b) what for, (c) frustrations or limitations encountered.
 4. Prompt crafting: have you built detailed prompts for better outputs? Share (a) a
    complex prompt you created, (b) the problem you solved, (c) how you refined it.
 5. Problem-solving: a time you had to communicate a complex request to get the result
@@ -190,6 +199,7 @@ Next 30 days:
 - [ ] Roadmap, resources, and next action are specific to the candidate and portfolio-focused.
 - [ ] Every rate/salary/demand figure labeled an estimate with named sources to verify.
 - [ ] Writing strength and proof-of-work weighted in the verdict; no get-rich-quick framing.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 

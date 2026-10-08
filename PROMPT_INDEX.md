@@ -4,11 +4,11 @@
 >
 > For classified counts with stated membership rules, see [`meta/REPOSITORY_FACTS.json`](meta/REPOSITORY_FACTS.json). Normalized resource kinds are planned for the PAE Registry and do not exist yet — see [`ROADMAP.md`](ROADMAP.md).
 
-**Generated:** 2026-10-06
+**Generated:** 2026-10-08
 
-**Total Indexed Artifacts:** 6165
+**Total Indexed Artifacts:** 6166
 
-**Artifacts with Frontmatter:** 5309
+**Artifacts with Frontmatter:** 5310
 
 **Artifacts without Frontmatter:** 856
 
@@ -4218,7 +4218,7 @@
 
 ## Negotiation
 
-**Total:** 54 prompts
+**Total:** 55 prompts
 
 | Title | Category | Techniques | Keywords | Description |
 |-------|----------|------------|----------|-------------|
@@ -4237,6 +4237,7 @@
 | [Counter-Offer Message — Structure the Written Coun](domain-negotiation/channels/negotiation_counteroffer_email.md) | negotiation/channels | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, counteroffer, email, written, justification | Draft the written counter-offer: the message that accepts what is agreed, moves what is not, and jus... |
 | [Cross-Cultural Negotiation — Surface the Dimension](domain-negotiation/channels/negotiation_cross_cultural.md) | negotiation/channels | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, cross-cultural, assumptions, context, inquiry | Prepare for a negotiation across cultural or organizational contexts without substituting stereotype... |
 | [Remote and Video Negotiation — Recover What the Ch](domain-negotiation/channels/negotiation_remote_video_channel.md) | negotiation/channels | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, remote, video, channel, process | Negotiate over video or phone with the channel's losses accounted for. Video strips overlapping turn... |
+| [When a Broker, Recruiter, or Agent Negotiates for ](domain-negotiation/channels/negotiation_human_intermediary.md) | negotiation/channels | CM-09, NE-11, NE-20, GT-11, RT-02 | negotiation, intermediary, principal-agent, broker, recruiter | Negotiate by way of a person who represents you — a listing or buyer's agent, a business or insuranc... |
 | [Written and Async Negotiation — What Belongs in Wr](domain-negotiation/channels/negotiation_written_async_message.md) | negotiation/channels | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, written, async, email, record | Negotiate in email, messages, and documents without the losses the channel imposes. Decides what bel... |
 | [Customer Escalation Concession — What to Give, Wha](domain-negotiation/contexts/negotiation_customer_escalation_concession.md) | negotiation/contexts | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, customer, escalation, concession, precedent | An unhappy customer wants something. Separates the legitimate remedy from the escalation premium, pr... |
 | [Freelance and Consulting Rate Conversation — Defen](domain-negotiation/contexts/negotiation_freelance_rate_conversation.md) | negotiation/contexts | ST-01, ST-02, RT-02, DS-01, CM-02 | negotiation, freelance, rates, pricing, scope | Hold a rate live, once it is set. Covers stating the number without apologizing, responding to the d... |

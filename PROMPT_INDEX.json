@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated": "2026-10-06",
+    "generated": "2026-10-08",
     "schema_version": 1,
     "index_semantics": "mixed_artifacts",
-    "total_indexed_artifacts": 6165,
-    "artifacts_with_frontmatter": 5309,
+    "total_indexed_artifacts": 6166,
+    "artifacts_with_frontmatter": 5310,
     "artifacts_without_frontmatter": 856,
     "domains": 48,
     "canonical_facts": "meta/REPOSITORY_FACTS.json",
@@ -14,8 +14,8 @@
       "prompts_without_frontmatter": "artifacts_without_frontmatter",
       "prompts": "top-level array of indexed artifacts (mixed kinds)"
     },
-    "total_prompts": 6165,
-    "prompts_with_frontmatter": 5309,
+    "total_prompts": 6166,
+    "prompts_with_frontmatter": 5310,
     "prompts_without_frontmatter": 856
   },
   "prompts": [
@@ -61326,7 +61326,7 @@
         "evaluation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-07",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-education-teaching/instructor/assessment-design/teaching_portfolio_assessment_designer.md",
         "domain-education-teaching/instructor/assessment-design/teaching_diagnostic_quiz_knowledge_map.md",
@@ -62326,7 +62326,7 @@
         "critical-thinking"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-07",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-education-teaching/instructor/explanation-craft/teaching_analogy_engine.md",
         "domain-education-teaching/instructor/explanation-craft/teaching_visual_memory_architect.md",
@@ -63462,7 +63462,7 @@
         "checks-for-understanding"
       ],
       "difficulty": "beginner",
-      "updated": "2026-03-07",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-education-teaching/instructor/response-cycle/teaching_preassessment_designer.md",
         "domain-education-teaching/instructor/response-cycle/teaching_reteach_intervention_planner.md",
@@ -66349,7 +66349,7 @@
         "quizlet"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-03-07",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-education-teaching/learner/tutoring/learn_concept_teacher.md",
         "domain-education-teaching/learner/self-assessment/learn_knowledge_tester.md",
@@ -117307,6 +117307,65 @@
       }
     },
     {
+      "path": "domain-negotiation/channels/negotiation_human_intermediary.md",
+      "filename": "negotiation_human_intermediary.md",
+      "title": "When a Broker, Recruiter, or Agent Negotiates for You — Incentive Misalignment, What to Tell Them, and How to Instruct and Audit Them",
+      "domain": "negotiation",
+      "category": "negotiation/channels",
+      "description": "Negotiate by way of a person who represents you — a listing or buyer's agent, a business or insurance broker, an agency recruiter, a talent or sports agent. Map how they are paid and who else pays or relies on them, compute what the next increment of price is worth to them versus you, decide what they need to know and what you keep back, write an instruction brief with authority limits and reporting rules, and audit their effort and advice while keeping the relationship. Counters the most common intermediary failure: treating your representative's advice to accept as neutral expertise, when their pay rewards closing fast more than closing well.",
+      "techniques": [
+        "CM-09",
+        "NE-11",
+        "NE-20",
+        "GT-11",
+        "RT-02"
+      ],
+      "keywords": [
+        "negotiation",
+        "intermediary",
+        "principal-agent",
+        "broker",
+        "recruiter",
+        "agent-incentives",
+        "commission-conflict",
+        "my-agent-wants-me-to-accept",
+        "recruiter-negotiating-for-me",
+        "working-with-a-broker"
+      ],
+      "difficulty": "advanced",
+      "updated": "2026-10-08",
+      "related_prompts": [
+        "domain-negotiation/channels/negotiation_ai_agent_mediated.md",
+        "domain-negotiation/at-the-table/negotiation_authority_mandate_limits.md",
+        "domain-negotiation/preparation/negotiation_information_plan.md"
+      ],
+      "has_frontmatter": true,
+      "reasoning": {
+        "styles": [
+          "strategic",
+          "quantitative",
+          "adversarial",
+          "systems"
+        ],
+        "stakes": "high",
+        "horizon": "variable",
+        "uncertainty": "ambiguity",
+        "evidence_quality": "sparse",
+        "domain_complexity": "cross_domain",
+        "collaboration": "solo_or_pair",
+        "output_format": "structured",
+        "user_role": [
+          "individual",
+          "executive",
+          "founder"
+        ],
+        "mode": [
+          "plan",
+          "audit"
+        ]
+      }
+    },
+    {
       "path": "domain-negotiation/channels/negotiation_written_async_message.md",
       "filename": "negotiation_written_async_message.md",
       "title": "Written and Async Negotiation — What Belongs in Writing, and What It Costs You",
@@ -129976,7 +130035,7 @@
         "anti-fabrication"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/career-transformation/career_90_day_repositioning_plan.md",
         "domain-personal-development/career-transformation/career_role_structural_vulnerability.md",
@@ -130006,7 +130065,7 @@
         "freelancing"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/career-transformation/career_90_day_repositioning_plan.md",
         "domain-personal-development/career-transformation/career_residual_skills_inventory.md",
@@ -130036,7 +130095,7 @@
         "roadmap"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/prompts/career/career_product_adoption_cs.md",
         "domain-personal-development/career-transformation/career_90_day_repositioning_plan.md",
@@ -130066,7 +130125,7 @@
         "roadmap"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/prompts/career/career_conversational_ai_ux.md",
         "domain-personal-development/career-transformation/career_90_day_repositioning_plan.md",
@@ -130096,7 +130155,7 @@
         "entry-level"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/career-transformation/career_90_day_repositioning_plan.md",
         "domain-personal-development/career-transformation/career_residual_skills_inventory.md",
@@ -130157,7 +130216,7 @@
         "anti-fabrication"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/career-transformation/career_90_day_repositioning_plan.md",
         "domain-personal-development/career-transformation/career_residual_skills_inventory.md",
@@ -130219,7 +130278,7 @@
         "anti-fabrication"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/career-transformation/career_90_day_repositioning_plan.md",
         "domain-personal-development/career-transformation/career_residual_skills_inventory.md",
@@ -130250,7 +130309,7 @@
         "anti-fabrication"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/career-transformation/career_90_day_repositioning_plan.md",
         "domain-personal-development/career-transformation/career_residual_skills_inventory.md",
@@ -130311,7 +130370,7 @@
         "roadmap"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/prompts/career/career_ml_engineering.md",
         "domain-personal-development/prompts/career/career_deep_learning_engineering.md",
@@ -130342,7 +130401,7 @@
         "roadmap"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/prompts/career/career_ml_engineering.md",
         "domain-personal-development/prompts/career/career_computer_vision_engineering.md",
@@ -130373,7 +130432,7 @@
         "roadmap"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/prompts/career/career_deep_learning_engineering.md",
         "domain-personal-development/prompts/career/career_computer_vision_engineering.md",
@@ -130404,7 +130463,7 @@
         "roadmap"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-06-19",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-personal-development/prompts/career/career_ml_engineering.md",
         "domain-personal-development/prompts/career/career_deep_learning_engineering.md",
@@ -162603,10 +162662,11 @@
         "renewal"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-09-24",
+      "updated": "2026-10-08",
       "related_prompts": [
         "domain-sales-customer/customer-success/cs_onboarding_plan.md",
-        "domain-sales-customer/sales/sales_pipeline_risk_assessment.md"
+        "domain-sales-customer/sales/sales_pipeline_risk_assessment.md",
+        "domain-sales-customer/sales/sales_strategic_account_plan.md"
       ],
       "has_frontmatter": true
     },
@@ -185145,7 +185205,7 @@
         "graceful-degradation"
       ],
       "difficulty": "intermediate",
-      "updated": "2026-03-19",
+      "updated": "2026-10-08",
       "related_prompts": [],
       "has_frontmatter": true
     },
@@ -185173,7 +185233,7 @@
         "support-automation"
       ],
       "difficulty": "advanced",
-      "updated": "2026-03-19",
+      "updated": "2026-10-08",
       "related_prompts": [],
       "has_frontmatter": true
     },

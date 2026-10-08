@@ -358,7 +358,7 @@ pre-sweep cut these candidates. Each already has an owner:
 - news fact-check: three existing fact-checkers;
 - generic language role-play, error-correction debrief and pronunciation drill: `domain-education-teaching/learner/language/`;
 - voice-of-customer synthesis: `skills/marketing/customer-research`;
-- standalone upsell map: the expansion section in `cs_account_health`.
+- standalone upsell map: the expansion section in `cs_account_health` (since moved to `sales_strategic_account_plan`; the health prompt has pointed there since the 2026-10-08 close-out).
 
 The user chose to build the borderline humanities and language-sim candidates.
 Each one states exactly what it is distinct from.
@@ -452,8 +452,8 @@ The contractor-dispute letter was also dropped, because `advocacy_service_nonper
 **Cleanup, committed separately:** the `presentations` dedupe (8 retired copies) and the `decision-making` rehome (5 moves).
 
 **Left for later:**
-- The bot-to-human handoff prompt expands steps that already exist in two older chatbot prompts. Those could be trimmed to a pointer.
-- No prompt scores human support agents' calls. The transcript QA rubric covers bot conversations only.
+- ~~The bot-to-human handoff prompt expands steps that already exist in two older chatbot prompts. Those could be trimmed to a pointer.~~ **Done** (audit pass, finished in the 2026-10-08 close-out below): both older prompts' handoff step and output block are now one-line pointers.
+- ~~No prompt scores human support agents' calls. The transcript QA rubric covers bot conversations only.~~ **Done** in the audit pass: `support/support_agent_interaction_qa_scorecard.md`.
 
 
 Wave 4 covers §3C, plus these items:
@@ -743,7 +743,7 @@ agency side; ≠ Wave 6 `policy_public_comment_letter`), `constituent_casework_s
 | Home | Files | Nearest neighbour (distinct from) |
 |---|---|---|
 | `domain-personal-development/prompts/` (4) | `emotional-fitness/emotionalfitness_money_beliefs_and_avoidance`, `stakeholder/stakeholder_peer_conflict_navigation`, `stakeholder/stakeholder_reorg_navigation`, `identity/identity_meaning_sources_and_legacy_map` | `finance_net_worth_cashflow_diagnostic` (the numbers), `stakeholder_visibility_and_credit`, `lifetransition_navigating_new_role`, `identity_purpose_reignition` |
-| `domain-negotiation/` (2) | `craft/negotiation_analytics_scorecard`, `channels/negotiation_ai_agent_mediated` | `negotiation_post_negotiation_debrief` (one deal), `negotiation_authority_mandate_limits`. The roadmap's human-broker half stays open. |
+| `domain-negotiation/` (2) | `craft/negotiation_analytics_scorecard`, `channels/negotiation_ai_agent_mediated` | `negotiation_post_negotiation_debrief` (one deal), `negotiation_authority_mandate_limits`. The roadmap's human-broker half followed in the 2026-10-08 close-out (`channels/negotiation_human_intermediary`). |
 | `domain-education-teaching/` (5) | new `program/student-success/`: `program_first_year_advising_touchpoint_model`, `program_at_risk_student_outreach_plan`, `program_retention_persistence_data_review`; `instructor/reporting-communication/`: `teaching_parent_teacher_conference_prep`, `teaching_multilingual_family_outreach` | `program_early_warning_system_designer`, `teaching_parent_communication_composer` |
 | `domain-operations/quality-safety/` (2) | `ops_preventive_maintenance_program`, `ops_repeat_failure_reliability_analysis` | `ops_oee_loss_analysis`, `risk_fmea_analysis` |
 | `domain-specialized-fields/professional-services/` (4, new), prefix `proserv_` | `utilization_realization_review`, `fixed_fee_overrun_diagnosis`, `engagement_staffing_plan`, `independence_conflict_check` | `services_capacity_and_utilization_planner` (solo practice), `finance_engagement_profitability_postcalc` (after close), `legal_conflicts_check_memo` (law firms) |
@@ -777,8 +777,8 @@ first-year advising model took its slot.
   tags predate the query file, so this is shared everyday phrasing.
 
 **Left for later:** the misses above; the negotiation roadmap's human-broker
-item; `domain-parenting/family-support-professional/` (8 planned subfolders, not
-yet scheduled in any wave).
+item (**done** in the 2026-10-08 close-out); `domain-parenting/family-support-professional/`
+(8 planned subfolders; **done** in Wave 11).
 
 ### Wave 8: second set of absent subjects — shipped (36 prompts, 13 cases, 2026-10-03)
 

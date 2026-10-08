@@ -41,7 +41,7 @@ seconds of picking up, and nobody is stranded when no agent is available.
 **Not this prompt if:**
 - You are designing the whole customer-service bot (intents, KB, tickets) →
   `domain-voice-conversational-ui/chatbot-design/chatbot_design_enterprise_customer_service.md`
-  — its handoff step is the summary this prompt expands.
+  — its handoff step is a one-line pointer to this prompt.
 - You are designing no-match and reprompt behaviour →
   `chatbot_design_error_handling_patterns.md`.
 - An autonomous AI agent needs a human's approval mid-task →

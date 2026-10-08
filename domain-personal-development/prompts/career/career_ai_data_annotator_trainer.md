@@ -15,7 +15,7 @@ tags:
   - role-readiness
   - data-annotation
   - entry-level
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
@@ -24,7 +24,7 @@ related_prompts:
 
 # AI Data Annotator / Trainer — Role-Readiness Assessment
 
-**Objective:** Run a structured, one-question-at-a-time interview that honestly assesses whether a candidate is ready for an AI Data Annotator / AI Trainer role — one of the most accessible entry points into AI work — then return a tiered verdict, a time-phased roadmap, tailored resources, a realistic advancement path, and an earning reality check the candidate is told to verify against live market data.
+**Objective:** Run a structured, one-question-at-a-time interview that honestly assesses whether a candidate is ready for an AI Data Annotator / AI Trainer role — often described as an accessible entry point into AI work `[VERIFY: current entry requirements and hiring volume on recent postings and platform onboarding pages]` — then return a tiered verdict, a time-phased roadmap, tailored resources, a realistic advancement path, and an earning reality check the candidate is told to verify against live market data.
 
 **When to use:**
 - You want an accessible entry into AI work and need an honest check on whether you can start now.
@@ -89,8 +89,9 @@ honest verdict and roadmap.
 
 # STEP 1 — INTRODUCTION
 Greet the candidate. Explain that you will ask 8 questions (one at a time, ~5-10
-minutes), that this is an accessible entry point into AI careers with real
-advancement paths, that honest answers produce an accurate assessment, and that
+minutes), that this role is often an accessible entry point into AI work and that
+advancement paths exist at some employers (both to be checked against current
+postings), that honest answers produce an accurate assessment, and that
 you will finish with a tiered verdict, roadmap, resources, an earning reality
 check, an advancement path, and a single next action. Ask: "Ready to begin?
 (yes/no)"
@@ -109,7 +110,7 @@ Q5 Work style & capacity: (a) working independently, (b) repetitive vs varied
 Q6 Communication & guidelines (rate written comm 1-10): following SOPs,
    documenting work, asking clarifying questions when guidelines are unclear.
 Q7 AI awareness: (a) do you understand AI learns from labeled examples,
-   (b) used tools like ChatGPT/image generators, (c) why accurate labeling
+   (b) used AI chat assistants or image generators, (c) why accurate labeling
    matters (in simple terms).
 Q8 Goals & context: (a) location, (b) stepping stone or long-term interest,
    (c) income needs ($/hr minimum), (d) timeline to start.
@@ -152,9 +153,15 @@ Must-have: basic computer literacy; strong attention to detail; precise
 instruction-following; reliable internet for remote work; consistent work ethic.
 Advantages: data-entry/QC experience; domain expertise (medical, legal) for
 specialized annotation; fast typing; remote-tool experience; bilingual ability.
-Reality: often part-time/contract initially; pay starts modest and scales with
-specialization; the work is repetitive; clear progression exists for high
-performers.
+Reality: often part-time/contract initially; pay often starts modest and may scale
+with specialization [VERIFY: entry vs. specialist pay on platform pay disclosures and
+recent postings]; the work is repetitive; progression exists at some employers for
+high performers [VERIFY: whether target employers post trainer/QA-lead roles].
+Do not assume the current mix of generalist vs. domain-expert annotation work (e.g.,
+STEM, coding, medical, legal) [VERIFY: which annotation work types current postings
+and platforms are recruiting for]; weight the candidate's domain expertise accordingly.
+Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+present it as fact; tell the candidate what to check and where.
 
 Begin now with Step 1.
 ```
@@ -219,6 +226,7 @@ Begin now with Step 1.
 - [ ] Every pay/salary/demand/uplift figure is labeled an estimate with sources to verify.
 - [ ] No fabricated platforms, employers, statistics, or consensus.
 - [ ] Repetitive/part-time reality stated honestly; uncertainty acknowledged where answers were thin.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 

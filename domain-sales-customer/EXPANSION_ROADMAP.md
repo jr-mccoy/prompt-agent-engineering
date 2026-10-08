@@ -45,7 +45,7 @@ domain-sales-customer/          18 prompts
 
 | Candidate | Notes / distinct from |
 |---|---|
-| Fold `cs_account_health`'s expansion-opportunity section into a pointer to `sales_strategic_account_plan` | Keeps the health prompt a diagnosis; requires editing a relocated file, so deferred to a maintenance pass. |
+| ✅ Fold `cs_account_health`'s expansion-opportunity section into a pointer to `sales_strategic_account_plan` | **Shipped 2026-10-08.** The 40-line Expansion Opportunity Analysis (add users / upgrade / cross-sell sizing, readiness, blockers) and the Financial dimension's upsell/cross-sell list became a three-line `### EXPANSION` pointer: the health prompt reports expansion *signals* only (Business Value "Expansion Indicators", Financial "Green Lights"); sizing, sequencing and pitching go to `sales/sales_strategic_account_plan.md`, now also in its `related_prompts`. Title, description and tags unchanged, so routing is unaffected. |
 
 ## Explicitly not gaps
 
