@@ -70,7 +70,7 @@ decides, whoever holds it.
 
 | Directory | Files | Holds |
 |---|---|---|
-| [`domain-negotiation/`](domain-negotiation/) | 56 | Preparation, at-the-table, channels, multi-party, after-the-deal, contexts, difficult conversations, craft |
+| [`domain-negotiation/`](domain-negotiation/) | 57 | Preparation, at-the-table, channels, multi-party, after-the-deal, contexts, difficult conversations, craft |
 | [`domain-decision-making/`](domain-decision-making/) | 40 | Decision frameworks, scenario planning, tradeoff analysis, decision documentation |
 | [`domain-reasoning-craft/`](domain-reasoning-craft/) | 42 | Reasoning moves, forecasting, systems thinking, epistemics |
 | [`domain-psy-ops/`](domain-psy-ops/) | 43 | Cognitive security: influence analysis and manipulation defense (analytic/defensive only) |

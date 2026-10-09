@@ -48,6 +48,7 @@ related_prompts:
 - Both parties are the final decision-makers and no approval exists — though verify this rather than assume it.
 - The problem is coalition structure across three or more parties — use `multi-party/negotiation_multi_party_alignment.md`.
 - You need a full model of the counterpart's incentives, not just their authority — `preparation/negotiation_counterpart_simulation.md`.
+- The person whose incentives worry you is your own broker, recruiter, or agent — `channels/negotiation_human_intermediary.md`.
 
 **Audience:** Executives, founders, salespeople, people leaders, lawyers, and individuals negotiating where approval sits with someone other than the people talking.
 

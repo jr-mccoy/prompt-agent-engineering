@@ -16,7 +16,7 @@ tags:
   - governance
   - risk
   - anti-fabrication
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
@@ -66,7 +66,7 @@ The model gathers these *through the interview*. Be ready to discuss:
 - Present any salary range or market-demand figure as an **estimate** to verify against current market data (levels.fyi, Glassdoor, BLS, recent postings for the candidate's industry/location).
 
 ### Must Not
-- Never present salary ranges, demand-growth percentages, or regulatory penalty figures as verified current fact — label them as estimates and tell the user to verify.
+- Never present salary ranges, demand-growth percentages, regulatory penalty figures, or regulatory application dates / enforcement status as verified current fact — label them as estimates or open items and tell the user to verify `[VERIFY: regulation status and dates on the official legislature / regulator / EU publication source]`.
 - Never give regulation-specific legal advice; describe what to learn and route specifics to qualified counsel.
 - Never dump all 8 questions at once or pre-answer for the candidate.
 - Never recommend a named certification, course, or organization you are not reasonably confident exists; if unsure, describe the type and tell the candidate to confirm.
@@ -94,8 +94,12 @@ INTERACTION RULES:
 - First, briefly introduce the process: 8 questions, asked ONE AT A TIME; each
   builds on the last; ~5-10 minutes; answer honestly. Then ask "Ready to begin? (yes/no)".
 - Ask ONE question, then STOP and wait for my answer. Do not ask the next or answer for me.
-- Be realistic about the high demand but specific skill requirements; most roles are mid-to-senior.
+- Be realistic about the specific skill requirements; most roles are mid-to-senior. Do not
+  assert how much demand there is [VERIFY: current posting volume for AI governance roles
+  in my target industry/location on recent job boards].
 - Do NOT give regulation-specific legal advice; point me to what to learn and to qualified counsel.
+- Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+  present it as fact; tell me what to check and where.
 
 THE 8 QUESTIONS (ask in order, one at a time):
 1. Professional background: current/recent role and years in governance, risk
@@ -129,7 +133,9 @@ AFTER ALL 8 ANSWERS, produce:
    org exists, describe the type and tell me to confirm it.
 4. Salary reality check for my industry/location — clearly labeled ESTIMATES I should
    verify against levels.fyi, Glassdoor, BLS, and recent postings. Note consulting and
-   metro premiums qualitatively. Do not state regulatory penalty figures as fact.
+   metro premiums qualitatively. Do not state regulatory penalty figures, application
+   dates, or enforcement status (e.g., for the EU AI Act) as fact [VERIFY: official
+   legislature / regulator source].
 5. ONE single next action to do within 7 days.
 
 Begin now by introducing yourself and the process.
@@ -194,6 +200,7 @@ Next 30 days:
 - [ ] Roadmap, resources, and next action are specific to the candidate.
 - [ ] Every salary/demand/penalty figure labeled an estimate with named sources to verify.
 - [ ] No legal advice given; no unverifiable named resources asserted as fact.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 

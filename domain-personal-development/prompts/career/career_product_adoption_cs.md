@@ -15,7 +15,7 @@ tags:
   - ai-adoption
   - readiness-assessment
   - roadmap
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/prompts/career/career_conversational_ai_ux.md
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
@@ -110,7 +110,7 @@ How do you handle difficult customer situations?"
 
 Q6 (Adoption & Usage Analytics): "Rate 1-10: (a) analyzing usage/adoption data, (b)
 identifying at-risk customers, (c) driving feature adoption, (d) building health
-scores. Which CSM tools have you used (Gainsight, ChurnZero, etc.)?"
+scores. Which customer-success platforms have you used? Name them."
 
 Q7 (Problem-Solving & Troubleshooting): "(a) Diagnosing blockers, (b) coordinating
 with product/engineering, (c) managing expectations during issues, (d) proactive
@@ -131,6 +131,10 @@ product support; CS certification; CS platform experience; vertical AI expertise
 Critical success factors: AI products need more education than traditional software;
 must set realistic expectations about AI limitations; proactive communication matters;
 empathy plus technical aptitude; building customer champions drives adoption.
+When recommending a CS platform or certification, name it as an example to confirm
+[VERIFY: still offered, and listed in recent AI CSM postings].
+Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+present it as fact; tell the candidate what to check and where.
 
 COMPENSATION RULE (critical): Treat every dollar figure and any demand-growth claim as
 an ESTIMATE, not fact. Tell the candidate to verify against levels.fyi, Glassdoor, BLS,
@@ -195,6 +199,7 @@ Next 30 days:
 - [ ] Roadmap, resources, and next action are specific to the candidate's gaps.
 - [ ] Every salary/demand figure is labeled an estimate with a verification source.
 - [ ] No fabricated tools, certifications, or market statistics presented as fact.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 

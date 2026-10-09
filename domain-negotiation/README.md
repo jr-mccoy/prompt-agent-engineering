@@ -1,8 +1,8 @@
 # Domain: Negotiation
 
-Negotiation as a working discipline, across the whole arc: what you do before you walk in, what you do once it starts, what happens in the medium the conversation actually travels through, how it changes with three or more parties, and what you owe the agreement after it is signed. The 54 prompts here treat negotiation as a set of specific, drillable decisions rather than a temperament — where to anchor and why, which concession buys what, which of five impasses you are actually in, what a counterpart's behaviour does and does not reveal, and when no deal is the correct outcome.
+Negotiation as a working discipline, across the whole arc: what you do before you walk in, what you do once it starts, what happens in the medium the conversation actually travels through, how it changes with three or more parties, and what you owe the agreement after it is signed. The 55 prompts here treat negotiation as a set of specific, drillable decisions rather than a temperament — where to anchor and why, which concession buys what, which of five impasses you are actually in, what a counterpart's behaviour does and does not reveal, and when no deal is the correct outcome.
 
-The domain spans the lifecycle. **Before:** size the preparation, derive the walkaway, map interests, build the packages, design the concession ladder, model the counterpart (`preparation/`). **During:** question, read signals, defend against coercion, break the deadlock, handle the emotional layer, close (`at-the-table/`). **Through a medium:** written, async, remote, and across contexts whose norms you have not established (`channels/`). **With more parties:** coordinate your own side, face a bloc, or run a negotiation you are not a party to (`multi-party/`). **After:** debrief, implement, reopen, or recover from no deal (`after-the-deal/`). Then the named specializations (`contexts/`), the relationship-primary track where the goal is to be understood rather than to win (`difficult-conversations/`), and the layer that makes any of it compound (`craft/`).
+The domain spans the lifecycle. **Before:** size the preparation, derive the walkaway, map interests, build the packages, design the concession ladder, model the counterpart (`preparation/`). **During:** question, read signals, defend against coercion, break the deadlock, handle the emotional layer, close (`at-the-table/`). **Through a medium:** written, async, remote, across contexts whose norms you have not established, and through someone else — an AI agent or a human broker, recruiter, or agent (`channels/`). **With more parties:** coordinate your own side, face a bloc, or run a negotiation you are not a party to (`multi-party/`). **After:** debrief, implement, reopen, or recover from no deal (`after-the-deal/`). Then the named specializations (`contexts/`), the relationship-primary track where the goal is to be understood rather than to win (`difficult-conversations/`), and the layer that makes any of it compound (`craft/`).
 
 Users are executives, founders, salespeople, people leaders, lawyers, project leads, and individuals heading into anything with material stakes — salary, contract, term sheet, vendor renewal, partnership split, property, lease, insurance claim, medical bill, severance, license, or dissolution. The domain assumes you will negotiate more than once, and that the second time should go better than the first.
 
@@ -35,7 +35,7 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 |---|---|---|
 | `preparation/` | Everything before the conversation: prep-depth triage, BATNA, leverage beyond BATNA, interests, packages and MESOs, opening anchor, concession ladder, counterpart model, information plan, rehearsal | 10 |
 | `at-the-table/` | Live moves: question sequencing, reading signals and testing bluffs, hard-bargainer defense, impasse diagnosis, authority and mandate, emotional flooding, closing | 7 |
-| `channels/` | The medium: written and async, the counter-offer message, remote and video, negotiating across contexts whose norms you have not established, and negotiating through or against an AI agent | 5 |
+| `channels/` | The medium: written and async, the counter-offer message, remote and video, negotiating across contexts whose norms you have not established, negotiating through or against an AI agent, and negotiating through a human broker, recruiter, or agent | 6 |
 | `multi-party/` | Three or more: coalition mapping and sequencing, your own team's roles, facing an aligned bloc, and running a negotiation you are not a party to | 4 |
 | `after-the-deal/` | Post-signature: deal debrief, implementation and relationship, renegotiating a live agreement, no-deal recovery | 4 |
 | `contexts/` | Named specializations that cross-link upstream rather than restating theory: salary, employer-side hiring offers, vendor buy-side, freelance rates, sales objections, equity splits, internal budget, customer escalation, major purchases, landlord and lease, insurance claims, medical bills, severance, licensing | 14 |
@@ -80,6 +80,7 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 | `negotiation_remote_video_channel.md` | Recover the turn-taking, silence meaning, caucus, and shared artifacts the channel removes |
 | `negotiation_cross_cultural.md` | Surface the dimensions on which norms vary, then ask — never assert generalizations about people |
 | `negotiation_ai_agent_mediated.md` | Delegate to an AI agent (mandate, walk-away as a rule, act / confirm / never tiers, disclosure, input quarantine) or face one (probe its band, escalate to a human); reconcile every commitment before it binds |
+| `negotiation_human_intermediary.md` | Negotiate through a broker, recruiter, or agent: who pays them, the marginal split on the next increment, tell / tell-as-a-rule / keep, an instruction brief with authority and verbatim reporting rules, and an audit that checks without accusing |
 
 ### multi-party/
 
@@ -164,6 +165,7 @@ Users are executives, founders, salespeople, people leaders, lawyers, project le
 | "It's over video and it keeps falling flat" | `channels/negotiation_remote_video_channel.md` |
 | "I don't know how they expect this to work" | `channels/negotiation_cross_cultural.md` |
 | "I want an AI assistant to negotiate this for me" / "I'm haggling with a chatbot" | `channels/negotiation_ai_agent_mediated.md` |
+| "My agent keeps telling me to take the offer" / "the recruiter wants my numbers" | `channels/negotiation_human_intermediary.md` |
 | "Four parties and I don't know who to talk to first" | `multi-party/negotiation_multi_party_alignment.md` |
 | "Three of us are going in — who says what?" | `multi-party/negotiation_team_negotiation_roles.md` |
 | "They've all lined up against me" | `multi-party/negotiation_coalition_defense.md` |

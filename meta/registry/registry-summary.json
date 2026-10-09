@@ -1,12 +1,12 @@
 {
   "by_eval_status": {
-    "unknown": 5891
+    "unknown": 5892
   },
   "by_kind": {
     "agent": 168,
     "command": 156,
     "persona": 57,
-    "prompt": 4816,
+    "prompt": 4817,
     "skill": 358,
     "technique": 336
   },
@@ -14,7 +14,7 @@
     "agent": 168,
     "command": 156,
     "persona": 57,
-    "prompt": 4760,
+    "prompt": 4761,
     "skill": 358,
     "technique": 336
   },
@@ -23,35 +23,35 @@
   },
   "by_license_status": {
     "inherited": 598,
-    "resolved": 5237,
+    "resolved": 5238,
     "unresolved": 56
   },
   "by_lifecycle": {
-    "live": 5835,
+    "live": 5836,
     "tombstone": 56
   },
   "by_maturity": {
     "deprecated": 65,
-    "experimental": 5826
+    "experimental": 5827
   },
   "by_metadata_completeness": {
     "degraded": 2,
-    "full": 5762,
+    "full": 5763,
     "minimal": 127
   },
   "by_provenance_origin": {
     "adapted": 577,
-    "project_native": 5229,
+    "project_native": 5230,
     "unknown": 56,
     "vendored": 29
   },
   "by_review_status": {
-    "unknown": 5891
+    "unknown": 5892
   },
   "by_serving_policy": {
     "metadata_only": 67,
     "safety_gated": 1534,
-    "standard": 4290
+    "standard": 4291
   },
   "diagnostics_by_code": {
     "frontmatter_parse_failed": 2,
@@ -69,7 +69,7 @@
       "skill_bundle_attachment": 65,
       "toolkit_documentation": 4
     },
-    "file_backed_candidates": 5499
+    "file_backed_candidates": 5500
   },
   "quality_assertions_by_scheme": {
     "guard-level": 84,
@@ -93,5 +93,5 @@
       "ST-26"
     ]
   },
-  "total_records": 5891
+  "total_records": 5892
 }

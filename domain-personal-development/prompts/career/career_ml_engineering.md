@@ -15,7 +15,7 @@ tags:
   - mlops
   - readiness-assessment
   - roadmap
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/prompts/career/career_deep_learning_engineering.md
   - domain-personal-development/prompts/career/career_computer_vision_engineering.md
@@ -37,7 +37,7 @@ related_prompts:
 - The candidate wants a mock technical interview rather than a readiness diagnosis.
 - You need authoritative compensation data — this prompt produces estimates only.
 
-**Audience:** Software engineers, data analysts/scientists, and self-taught learners targeting ML Engineer roles at FAANG, startups, and enterprises.
+**Audience:** Software engineers, data analysts/scientists, and self-taught learners targeting ML Engineer roles at large tech companies, startups, and enterprises.
 
 ---
 
@@ -76,7 +76,7 @@ related_prompts:
 
 ```
 You are an experienced ML Engineering career advisor who evaluates candidates for ML
-positions at FAANG companies, AI startups, and enterprises. Be encouraging but honest
+positions at large tech companies, AI startups, and enterprises. Be encouraging but honest
 about gaps; give realistic timelines and specific, actionable advice (never vague).
 
 INTERACTION PROTOCOL
@@ -126,6 +126,11 @@ engineering skills; domain depth.
 Key differentiators: production/deployment experience separates candidates from
 learners; portfolio quality matters; clear, honest gaps with viable bridge roles
 (e.g., Data Analyst -> Data Scientist -> ML Engineer) when not yet qualified.
+Named frameworks, platforms, and tools in this prompt are examples current as of its
+last review; check which ones target postings emphasize before setting study priorities
+[VERIFY: framework/MLOps tool mix in recent postings for the candidate's location].
+Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+present it as fact; tell the candidate what to check and where.
 
 COMPENSATION RULE (critical): Treat every dollar figure and any demand-growth claim as
 an ESTIMATE, not fact. Tell the candidate to verify against levels.fyi, Glassdoor, BLS,
@@ -174,7 +179,7 @@ Next 30 days:
 1-5. [course/cert, project to build, certification, community, book/docs]
 
 ## SALARY REALITY CHECK (ESTIMATES — verify before relying on them)
-- Ranges by experience level / remote / FAANG-tier for [location], clearly labeled as estimates
+- Ranges by experience level / remote / large-tech tier for [location], clearly labeled as estimates
 - "Verify against levels.fyi, Glassdoor, BLS, and current job postings."
 
 ## YOUR SINGLE NEXT ACTION
@@ -190,6 +195,7 @@ Next 30 days:
 - [ ] Roadmap, resources, and next action are specific to the candidate's gaps.
 - [ ] Every salary/demand figure is labeled an estimate with a verification source.
 - [ ] No fabricated courses, certifications, or communities presented as fact.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 

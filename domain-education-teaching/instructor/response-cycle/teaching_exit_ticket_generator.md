@@ -16,7 +16,7 @@ tags:
   - formative-assessment
   - exit-tickets
   - checks-for-understanding
-updated: "2026-03-07"
+updated: "2026-10-08"
 related_prompts:
   - domain-education-teaching/instructor/response-cycle/teaching_preassessment_designer.md
   - domain-education-teaching/instructor/response-cycle/teaching_reteach_intervention_planner.md
@@ -126,9 +126,9 @@ Good for younger students, ELL students, or quick sorting:
 
 ### Step 3: Create the Student-Facing Exit Ticket
 
-**Important:** The student-facing ticket must NOT include answers, answer keys, or misconception labels. Keep all scoring information in a separate **Teacher Copy Only** section (see Step 4). Students should see only the questions and response spaces.
+**Important:** The student-facing ticket must NOT include answers, answer keys, exemplars, look-fors, or misconception labels. Keep all scoring information in the separate **Teacher Copy / Answer Key** section (Step 4). Students should see only the learning target, the questions, response spaces, and the confidence check — the ticket must be printable on its own without any editing.
 
-**Exit Ticket Template (suggested format — adapt layout as needed for your context):**
+**Exit Ticket Template (recommended format, not mandatory):** The plain-text layout below is a suggestion. Any structurally equivalent alternative — Markdown headings with a numbered list, a simple table, or a layout suited to your print/LMS tool — is acceptable. Do not spend effort reproducing borders or box characters exactly.
 
 ```
 EXIT TICKET — [Date]
@@ -150,7 +150,18 @@ Learning Target: [Target in student language]
 
 The exact formatting (boxes, borders, spacing) is flexible — the key requirements are: (1) learning target is visible, (2) questions are clearly numbered with response space, and (3) a confidence self-assessment is included.
 
-### Step 4: Data Analysis Plan
+### Step 4: Create the Teacher Copy / Answer Key
+
+Produce a **separate** section, headed **"Teacher Copy / Answer Key — do not distribute"**, placed *after* the student ticket and visually divided from it (e.g., a horizontal rule or page-break note). It must include, for every item on the student ticket:
+
+| Item | Correct Answer / Exemplar | Misconception Behind Each Distractor or Common Error | Look-Fors (Got It / Almost / Not Yet) |
+|------|---------------------------|------------------------------------------------------|----------------------------------------|
+| 1 | [Answer] | [Distractor → misconception it reveals] | [What each pile looks like for this item] |
+
+- Item numbers must match the student ticket exactly.
+- Never copy answer-key content back into the student ticket, and never interleave the two (no "Answer:" lines under student questions).
+
+### Step 5: Data Analysis Plan
 
 **Quick Sort Method (recommended for 25+ students):**
 
@@ -181,11 +192,59 @@ Results Analysis
 
 ## Output Format
 
-Structure the exit ticket package as:
-1. **Exit Ticket** (student-facing, print-ready)
-2. **Answer Key with Misconception Notes** (teacher reference)
-3. **Data Analysis Template** (quick-sort instructions)
-4. **Instructional Response Plan** (what to do with each pile)
+Structure the exit ticket package as four clearly headed sections, in this order:
+1. **Exit Ticket** (student-facing, print-ready — Step 3; no answers anywhere in it)
+2. **Teacher Copy / Answer Key** (teacher reference with misconception notes — Step 4; separated from the ticket)
+3. **Data Analysis Template** (quick-sort instructions and recording sheet — Step 5)
+4. **Instructional Response Plan** (what to do with each pile — Step 5 decision tree)
+
+---
+
+## Example (abridged)
+
+*Input: Grade 5 Math · Adding fractions with unlike denominators · Apply · 3 minutes · Mixed · Misconception: adding numerators and denominators.*
+
+**1. Exit Ticket**
+
+```
+EXIT TICKET — [Date]          Name: ____________
+Learning Target: I can add fractions with different denominators.
+
+1. What is 1/3 + 1/4?
+   A) 2/7     B) 7/12     C) 2/12     D) 5/12
+
+2. Maya says 1/2 + 1/3 = 2/5. Is she right? Explain how you know.
+   ________________________________________
+   ________________________________________
+
+3. How confident are you?
+   □ Got it   □ Almost   □ Need help
+```
+
+---
+
+**2. Teacher Copy / Answer Key — do not distribute**
+
+| Item | Correct Answer / Exemplar | Misconception Behind Each Distractor / Common Error | Look-Fors |
+|------|---------------------------|-----------------------------------------------------|-----------|
+| 1 | **B) 7/12** (4/12 + 3/12) | A) 2/7 — added numerators and denominators · C) 2/12 — found a common denominator but did not rename the numerators · D) 5/12 — renamed only one fraction | Got It: B · Almost: D · Not Yet: A or C |
+| 2 | No. 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Also, 2/5 is less than 1/2, so it cannot be the sum of 1/2 and something more. | "Yes" with no reasoning; correct "No" but sum left as 2/6 | Got It: correct sum or benchmark reasoning · Almost: "No" with partial work · Not Yet: agrees with Maya |
+
+**3. Data Analysis Template** — Sort into Got It / Almost / Not Yet using the look-fors; tally how many students chose A or C on Item 1 (the add-across misconception).
+
+**4. Instructional Response Plan** — Apply the Step 5 decision tree; students who chose A on Item 1 *and* agreed with Maya form tomorrow's small reteach group using fraction strips.
+
+---
+
+## Output Contract Checks
+
+Before returning the package, verify every item:
+- [ ] All four sections are present, headed, and in the order listed in Output Format
+- [ ] The **Exit Ticket** contains no answers, exemplars, look-fors, distractor labels, or misconception notes
+- [ ] The **Teacher Copy / Answer Key** is a separate section after the ticket, labeled "do not distribute," and covers every ticket item with matching item numbers
+- [ ] Every MC distractor has a named misconception in the answer key
+- [ ] The ticket shows the learning target in student language, numbered questions with response space, and a confidence self-check (layout may differ from the suggested template)
+- [ ] Item count and length fit the stated time (2-5 minutes)
 
 ---
 

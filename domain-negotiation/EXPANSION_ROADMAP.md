@@ -1,5 +1,7 @@
 # Expansion Roadmap — `domain-negotiation/`
 
+**Update 2026-10-08 (roadmap close-out):** the human half of agent-mediated negotiation shipped as `channels/negotiation_human_intermediary.md`, taking the domain to **55 prompts** and closing that Wave 2 item.
+
 **Update 2026-10-03 (coverage Wave 7):** two Wave 2 items shipped — `craft/negotiation_analytics_scorecard.md` and `channels/negotiation_ai_agent_mediated.md` — taking the domain to **54 prompts**.
 
 **Status as of 2026-09-24:** ✅ **Wave 2 `contexts/` deepening shipped** — **5 new context prompts** (landlord and lease, insurance claim, medical bill, severance, licensing), plus `negotiation_hiring_offer_employer_side.md` (added 2026-09-22 by the coverage pass), take the domain to **52 prompts** and `contexts/` to **14**. The other Wave 2 items remain open — see [Wave 2](#wave-2--candidate-future-work) below.
@@ -15,10 +17,10 @@
 ## Shipped architecture
 
 ```
-domain-negotiation/                      54 prompts   ✓
+domain-negotiation/                      55 prompts   ✓
 ├── preparation/            10/10  ✓ (+7)   the work before you walk in
 ├── at-the-table/            7/7   ✓ (NEW)  live moves once it starts
-├── channels/                5/5   ✓ (NEW, +1 W7)  medium-specific: written, remote, cross-cultural, AI-agent-mediated
+├── channels/                6/6   ✓ (NEW, +1 W7, +1 2026-10-08)  medium-specific: written, remote, cross-cultural, AI-agent-mediated, human intermediary
 ├── multi-party/             4/4   ✓ (+3)   three or more parties, teams, facilitation
 ├── after-the-deal/          4/4   ✓ (NEW)  debrief, implement, reopen, recover
 ├── contexts/              14/14   ✓ (NEW, +6 since Wave 1)  named specializations of the general machinery
@@ -55,7 +57,7 @@ domain-negotiation/                      54 prompts   ✓
 | `negotiation_emotional_flooding_at_the_table.md` | Anger, walkouts, tears, and your own reactivity — de-escalate without conceding on substance |
 | `negotiation_closing_and_final_concession.md` | Recognize the close, structure the final concession, refuse the post-agreement nibble |
 
-### `channels/` (5) — all new
+### `channels/` (6) — all new
 
 | File | Description |
 |---|---|
@@ -64,6 +66,7 @@ domain-negotiation/                      54 prompts   ✓
 | `negotiation_remote_video_channel.md` | Video and phone: lost signal, turn-taking, silence that reads as disagreement, screen-share as an anchor |
 | `negotiation_cross_cultural.md` | **Strong guard required** — surfaces *dimensions* on which norms vary and prescribes asking, never asserting national-character generalizations as fact |
 | `negotiation_ai_agent_mediated.md` | **Wave 7.** Negotiating through or against an AI agent: mandate, authority tiers, disclosure, input quarantine, reconciliation before anything binds |
+| `negotiation_human_intermediary.md` | **2026-10-08.** Negotiating through a human broker, recruiter, or agent: who pays them and whom they owe, the marginal split computed from the user's own terms, what to tell them, an instruction brief, and an audit of effort and advice |
 
 ### `multi-party/` (4) — 1 relocated, 3 new
 
@@ -164,5 +167,5 @@ Each is a **specialization**, not a restatement. Every one cross-links upstream 
 
 - ✅ **Deepen `contexts/`** — **shipped 2026-09-24.** Five prompts built, each clearing the non-duplication table with its boundary stated in the prompt: `negotiation_landlord_rent_and_lease_renewal.md` (distinct from the tenant-rights prompts in `domain-legal/personal-self-advocacy/housing-landlord-tenant/`), `negotiation_insurance_claim_settlement.md` (amount on an accepted claim; denials route to `domain-written-advocacy/insurance-and-medical/advocacy_insurance_claim_denial_appeal.md`), `negotiation_medical_bill_reduction.md` (runs after `advocacy_medical_bill_dispute.md` and `advocacy_financial_assistance_charity_care_request.md`, not instead of them), `negotiation_severance_package.md` (employee-side, non-lawyer; the release routes to `domain-legal/employment-labor/legal_employment_offer_and_separation_package.md`), and `negotiation_licensing_ip_terms.md` (business terms before drafting; drafting routes to `legal_licensing_agreement_drafter.md`). No duplicates were found in the sweep. Root `CLAUDE.md` routing rows and the index regeneration (convention 11) are left to the integration pass.
 - ✅ **Negotiation analytics** — **shipped 2026-10-03** as `craft/negotiation_analytics_scorecard.md` (range capture, concession depth and reciprocity, value created, walk-away quality, process score kept separate; distinct from the single-deal `after-the-deal/negotiation_post_negotiation_debrief.md`).
-- ◐ **Agent-mediated negotiation** — **AI-agent half shipped 2026-10-03** as `channels/negotiation_ai_agent_mediated.md` (delegating to or facing an AI agent; agent software design stays in `domain-AI-ML/agentic-ai-systems/`). Still open: negotiating through a **human** broker, recruiter, or agent whose commission-driven interests diverge from yours.
+- ✅ **Agent-mediated negotiation** — **AI-agent half shipped 2026-10-03** as `channels/negotiation_ai_agent_mediated.md` (delegating to or facing an AI agent; agent software design stays in `domain-AI-ML/agentic-ai-systems/`). **Human half shipped 2026-10-08** as `channels/negotiation_human_intermediary.md`: negotiating through a broker, recruiter, or agent whose pay diverges from your interest — incentive map, marginal split from the user's own engagement terms (no commission norms from memory), disclosure per item, instruction brief, audit. Duplicate sweep: no existing prompt covered it; it states its boundary against the AI sibling, `at-the-table/negotiation_authority_mandate_limits.md` (the counterpart's approver), `realestate_buyer_offer_strategy.md` (the offer package) and `domain-legal/` (legal duties).
 - **Reciprocal cross-links** — deliberately deferred in Wave 1. Adjacent prompts in `domain-personal-development/`, `domain-legal/`, and `domain-business-strategy/` do not yet point back into the new subdirectories; the repo caps `related_prompts` at 3, so adding backlinks means displacing existing ones and should be a considered pass, not a sweep.

@@ -15,7 +15,7 @@ tags:
   - role-readiness
   - content-creation
   - freelancing
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
   - domain-personal-development/career-transformation/career_residual_skills_inventory.md
@@ -146,8 +146,11 @@ refine AI drafts to publication quality; brand-voice consistency; a portfolio.
 Advantages: SEO/content-marketing knowledge; niche domain expertise; multi-format
 range; proven high-performing content; content-strategy understanding.
 Reality: AI is a tool, not a substitute for skill; editing separates good creators
-from bad; portfolio quality outweighs years; niche specialization commands a
-premium.
+from bad; portfolio quality outweighs years; niche specialization may command a
+premium [VERIFY: niche vs. generalist rate gap in current freelance-platform rate data
+and recent postings].
+Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+present it as fact; tell the candidate what to check and where.
 
 Begin now with Step 1.
 ```
@@ -209,6 +212,7 @@ Begin now with Step 1.
 - [ ] Every rate/salary/demand figure is labeled an estimate with sources to verify.
 - [ ] No fabricated platforms, clients, statistics, or consensus.
 - [ ] Editing quality weighted over raw speed; uncertainty acknowledged where answers were thin.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 

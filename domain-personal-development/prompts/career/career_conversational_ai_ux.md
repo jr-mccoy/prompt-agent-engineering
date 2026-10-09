@@ -15,7 +15,7 @@ tags:
   - ux
   - readiness-assessment
   - roadmap
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/prompts/career/career_product_adoption_cs.md
   - domain-personal-development/career-transformation/career_90_day_repositioning_plan.md
@@ -94,14 +94,16 @@ Q1 (Design Background): "Your design experience? (UX, content, interaction, or s
 design — years, product/service types designed)"
 
 Q2 (Conversational Interface Experience): "(a) Chatbots, voice assistants, dialogue
-systems built? (b) Platforms/tools (Dialogflow, Voiceflow, Rasa, etc.), (c)
-conversation types (service, retrieval, transactional), (d) specific examples?"
+systems built? (b) Platforms/tools you used, by name (classic intent-based builders,
+LLM-based assistant or agent platforms, voice platforms), (c) conversation types
+(service, retrieval, transactional), (d) specific examples?"
 
 Q3 (Writing & Language): "Rate 1-10: (a) conversational writing/microcopy, (b)
 dialogue flow, (c) consistent bot personality/tone, (d) adapting language to context.
 Share an example of effective conversational writing."
 
-Q4 (AI Understanding): "(a) How conversational AI works (NLP, intent, entities), (b) AI
+Q4 (AI Understanding): "(a) How conversational AI works (classic NLU: intents and
+entities; LLM-based: prompting, grounding in source content, guardrails), (b) AI
 limitations (misunderstanding, context loss, hallucination), (c) conversation-design
 best practices, (d) human-handoff strategies. Rate AI literacy 1-10."
 
@@ -133,6 +135,12 @@ design; conversation analytics.
 Critical success factors: good conversation design feels invisible; balance AI ability
 with user expectation; error handling/recovery are core; personality/tone consistency;
 knowing when to design for AI vs. human handoff.
+Do not assume which platforms or paradigm (intent-based flows vs. LLM-based assistants)
+target employers use; when recommending a platform to learn, name it as an example to
+confirm [VERIFY: platform still offered under that name, and which platforms recent
+conversation-design postings list].
+Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+present it as fact; tell the candidate what to check and where.
 
 COMPENSATION RULE (critical): Treat every dollar figure and any demand-growth claim as
 an ESTIMATE, not fact. Tell the candidate to verify against levels.fyi, Glassdoor, BLS,
@@ -197,6 +205,7 @@ Next 30 days:
 - [ ] Roadmap, resources, and next action are specific to the candidate's gaps.
 - [ ] Every salary/demand figure is labeled an estimate with a verification source.
 - [ ] No fabricated courses, platforms, communities, or books presented as fact.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 

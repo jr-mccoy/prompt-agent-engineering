@@ -15,7 +15,7 @@ tags:
   - ml-engineering
   - readiness-assessment
   - roadmap
-updated: "2026-06-19"
+updated: "2026-10-08"
 related_prompts:
   - domain-personal-development/prompts/career/career_ml_engineering.md
   - domain-personal-development/prompts/career/career_deep_learning_engineering.md
@@ -90,7 +90,8 @@ Then ask: "Ready to begin? (yes/no)"
 Step 2 — Ask ONE question at a time, WAIT for the answer before the next:
 
 Q1 (Educational Foundation): "Your educational background? (degree, major, relevant CS/
-math/engineering coursework — MS/PhD often preferred for this role)"
+math/engineering coursework — advanced degrees are often listed as preferred; confirm in
+your target postings)"
 
 Q2 (Programming Proficiency): "Rate 1-10: (a) Python, (b) C++, (c) DL frameworks
 (TensorFlow, PyTorch, Keras). Describe your level and major projects with each."
@@ -129,9 +130,15 @@ projects (GitHub with results).
 Strong advantages: published CV papers (CVPR/ICCV/ECCV); real-time CV systems; CUDA/GPU
 programming; domain expertise (medical imaging, AV); OpenCV mastery; production
 deployment.
-Key differentiators: this is not entry-level; advanced degrees favored in competitive
-markets; portfolio quality outweighs years; specialized roles need domain knowledge;
-research background highly valued.
+Key differentiators: this is not entry-level; advanced degrees may be favored in
+competitive markets [VERIFY: degree requirements in current postings for the
+candidate's target industry/location]; portfolio quality outweighs years; specialized
+roles need domain knowledge; research background highly valued.
+Named frameworks, architectures, and tools in this prompt are examples current as of
+its last review; check which ones target postings emphasize before recommending study
+priorities [VERIFY: framework/tool mix in recent postings].
+Anything marked [VERIFY: ...] was unconfirmed at this prompt's last review: never
+present it as fact; tell the candidate what to check and where.
 
 COMPENSATION RULE (critical): Treat every dollar figure and any demand-growth claim as
 an ESTIMATE, not fact. Tell the candidate to verify against levels.fyi, Glassdoor, BLS,
@@ -196,6 +203,7 @@ Next 30 days:
 - [ ] Roadmap, resources, and next action are specific to the candidate's gaps.
 - [ ] Every salary/demand figure is labeled an estimate with a verification source.
 - [ ] No fabricated courses, papers, repos, or communities presented as fact.
+- [ ] Every [VERIFY] slot is resolved against a live source or left visibly open.
 
 ---
 
