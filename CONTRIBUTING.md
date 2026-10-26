@@ -200,7 +200,7 @@ Before submitting:
    python3 scripts/generate_prompt_index.py
    ```
 
-4. If you use [`pre-commit`](https://pre-commit.com/), `pre-commit run --all-files` runs the same checks (see [`.pre-commit-config.yaml`](.pre-commit-config.yaml)).
+4. If you use [`pre-commit`](https://pre-commit.com/), `pre-commit run --all-files` runs the same checks (see [`.pre-commit-config.yaml`](.pre-commit-config.yaml)). Run `pre-commit install` once and every commit is also scanned for hardcoded secrets by [gitleaks](https://github.com/gitleaks/gitleaks). Example keys in prompts must be placeholders (`${API_KEY}`, `<YOUR_API_KEY>`), never realistic-looking values; known-fake fixtures are baselined in [`.gitleaksignore`](.gitleaksignore).
 
 > CI enforces these on every PR (structure compliance, metadata validation, inventory counts), so running them locally first avoids round-trips.
 
