@@ -1,0 +1,23 @@
+# Gitleaks baseline: known-fake values in docs and test fixtures (placeholders,
+# truncated tokens, adversarial samples). Regenerate an entry with
+#   gitleaks dir . --report-format json --report-path - | jq -r '.[].Fingerprint'
+# and add only findings you have confirmed are not real credentials.
+ai-investment-research-toolkit/samples/adversarial/injected_filing.md:generic-api-key:14
+ai-investment-research-toolkit/skills/output-guard/scripts/egress_check.py:generic-api-key:132
+domain-agentic-resources/commands/documentation/doc_generate.md:curl-auth-header:540
+domain-agentic-resources/commands/other/doc_generate.md:curl-auth-header:540
+domain-agentic-resources/documentation/technique-analyses/skills/repomix_safe_mixer_analysis.md:generic-api-key:98
+domain-agentic-resources/documentation/technique-analyses/skills/repomix_safe_mixer_analysis.md:generic-api-key:277
+domain-agentic-resources/skills/developer-tools/repomix-safe-mixer/SKILL.md:generic-api-key:163
+domain-agentic-resources/skills/developer-tools/repomix-safe-mixer/references/common_secrets.md:generic-api-key:204
+domain-agentic-resources/skills/security/firebase-apk-scanner/references/vulnerabilities.md:generic-api-key:29
+domain-agentic-resources/skills/security/firebase-apk-scanner/references/vulnerabilities.md:generic-api-key:89
+domain-agentic-resources/skills/security/firebase-apk-scanner/references/vulnerabilities.md:generic-api-key:110
+domain-learning-coding/learning_backend_api_documentation.md:generic-api-key:179
+domain-software-engineering/analysis/security/security_api_testing.md:curl-auth-header:260
+domain-software-engineering/api/api_openapi_documentation.md:generic-api-key:456
+domain-software-engineering/cloud/gcp_cloud_run_backend.md:curl-auth-header:393
+domain-software-engineering/devops/devops_monitoring_observability.md:generic-api-key:122
+domain-software-engineering/mobile/ios/analysis/ios_cloud_backend_security_audit.md:stripe-access-token:394
+portable-prompt-system/techniques/security_checklist.md:generic-api-key:180
+techniques/security_checklist.md:generic-api-key:180
